@@ -8,26 +8,26 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 18e90e44da8b36dbc4824817c7f13bbe423a2c12
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6600444d5fb991bce0500c587cb66b9baefdd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386055"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>Como: Iniciar um aplicativo independente do .NET Framework com o criador de perfil para coletar dados de memória usando a linha de comando
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de memória.
 
  Uma sessão de criação de perfil tem três partes:
 
--   Iniciar o aplicativo usando o criador de perfil.
+- Iniciar o aplicativo usando o criador de perfil.
 
--   Coletar dados de criação de perfil.
+- Coletar dados de criação de perfil.
 
--   Encerrar a sessão de criação de perfil.
+- Encerrar a sessão de criação de perfil.
 
 > [!NOTE]
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
 ## <a name="start-the-application-with-the-profiler"></a>Iniciar o aplicativo com o criador de perfil
  Para iniciar um aplicativo de destino usando o criador de perfil, use as opções **VSPerfCmd.exe/start** e **/launch** para inicializar o criador de perfil e iniciar o aplicativo. Você pode especificar **/start** e **/launch** e suas opções respectivas em uma linha de comando.
@@ -52,7 +52,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
    | - | - |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
-
 
 3. Inicie o aplicativo de destino. Tipo:
 
@@ -79,7 +78,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
--   Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+- Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|
@@ -87,22 +86,22 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|Inicia (**/processon**) ou interrompe (**/processoff**) a coleta de dados para o processo especificado pela ID de processo (`PID`).|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** começa a coletar dados para o processo que é especificado pela `PID` (a ID do processo). **/detach** interrompe a coleta de dados para todos os processos.|
 
--   Também é possível usar a opção **VSPerfCmd.exe**[/mark](../profiling/mark.md) para inserir uma marca de criação de perfil no arquivo de dados. O comando **/mark** adiciona um identificador, um carimbo de data/hora e uma cadeia de caracteres de texto opcional definida pelo usuário. As marcas podem ser usadas para filtrar os dados.
+- Também é possível usar a opção **VSPerfCmd.exe**[/mark](../profiling/mark.md) para inserir uma marca de criação de perfil no arquivo de dados. O comando **/mark** adiciona um identificador, um carimbo de data/hora e uma cadeia de caracteres de texto opcional definida pelo usuário. As marcas podem ser usadas para filtrar os dados.
 
 ## <a name="end-the-profiling-session"></a>Encerrar a sessão de criação de perfil
  Para concluir uma sessão de criação de perfil, o criador de perfil deve ser desanexado de todos os processos analisados e o criador de perfil deve ser desligado explicitamente. É possível desanexar o criador de perfil de um aplicativo que foi analisado usando o método de amostragem ao fechar o aplicativo ou chamar a opção **VSPerfCmd /detach**. Depois, você chama a opção **VSPerfCmd /shutdown** para desligar o criador de perfil e fechar o arquivo de dados de criação de perfil. O comando **VSPerfClrEnv /off** limpa as variáveis de ambiente da criação de perfil.
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil
 
-1.  Realize uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino:
+1. Realize uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino:
 
-    -   Feche o aplicativo de destino.
+    - Feche o aplicativo de destino.
 
          - ou -
 
-    -   Digite **VSPerfCmd /detach**
+    - Digite **VSPerfCmd /detach**
 
-2.  Desligue o criador de perfil. Tipo:
+2. Desligue o criador de perfil. Tipo:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

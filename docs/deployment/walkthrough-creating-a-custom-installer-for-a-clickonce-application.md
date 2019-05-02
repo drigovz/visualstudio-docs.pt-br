@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceadc2458b6d380cc67062cf89cbea20541446c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 597d0a29e153659359d3a6591970750bfd4de770
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405740"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>Passo a passo: Criar um instalador personalizado para um aplicativo ClickOnce
 Qualquer aplicativo ClickOnce com base em um *.exe* arquivo pode ser instalado e atualizado por um instalador personalizado silenciosamente. Um instalador personalizado pode implementar a experiência do usuário personalizada durante a instalação, incluindo caixas de diálogo personalizadas para operações de segurança e manutenção. Para executar operações de instalação, o instalador personalizado usa o <xref:System.Deployment.Application.InPlaceHostingManager> classe. Este passo a passo demonstra como criar um instalador personalizado que instala silenciosamente um aplicativo ClickOnce.
@@ -32,11 +32,11 @@ Qualquer aplicativo ClickOnce com base em um *.exe* arquivo pode ser instalado e
 
 ### <a name="to-create-a-custom-clickonce-application-installer"></a>Para criar um instalador personalizado do aplicativo ClickOnce
 
-1.  Em seu aplicativo ClickOnce, adicione referências a Deployment e System.
+1. Em seu aplicativo ClickOnce, adicione referências a Deployment e System.
 
-2.  Adicionar uma nova classe ao seu aplicativo e especificar qualquer nome. Este passo a passo usa o nome `MyInstaller`.
+2. Adicionar uma nova classe ao seu aplicativo e especificar qualquer nome. Este passo a passo usa o nome `MyInstaller`.
 
-3.  Adicione o seguinte `Imports` ou `using` instruções na parte superior da sua nova classe.
+3. Adicione o seguinte `Imports` ou `using` instruções na parte superior da sua nova classe.
 
     ```vb
     Imports System.Deployment.Application
@@ -48,17 +48,17 @@ Qualquer aplicativo ClickOnce com base em um *.exe* arquivo pode ser instalado e
     using System.Windows.Forms;
     ```
 
-4.  Adicione os seguintes métodos à sua classe.
+4. Adicione os seguintes métodos à sua classe.
 
      Esses métodos chamam <xref:System.Deployment.Application.InPlaceHostingManager> métodos para baixar o manifesto de implantação, declarar permissões apropriadas, solicitará ao usuário permissão para instalar e, em seguida, baixar e instalar o aplicativo no cache do ClickOnce. Um instalador personalizado pode especificar que um aplicativo ClickOnce é previamente confiável, ou pode adiar a decisão de confiança a <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chamada de método. Esse código previamente relações de confiança do aplicativo.
 
     > [!NOTE]
-    >  As permissões atribuídas confiando previamente não podem exceder as permissões do código do instalador personalizado.
+    > As permissões atribuídas confiando previamente não podem exceder as permissões do código do instalador personalizado.
 
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.vb)]
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-installer-for-a-clickonce-application_1.cs)]
 
-5.  Para tentar a instalação do seu código, chame o `InstallApplication` método. Por exemplo, se você nomeou sua classe `MyInstaller`, você pode chamar `InstallApplication` da seguinte maneira.
+5. Para tentar a instalação do seu código, chame o `InstallApplication` método. Por exemplo, se você nomeou sua classe `MyInstaller`, você pode chamar `InstallApplication` da seguinte maneira.
 
     ```vb
     Dim installer As New MyInstaller()

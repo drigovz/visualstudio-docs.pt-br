@@ -1,14 +1,9 @@
 ---
 title: Utilitário CreatePkgDef | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - package definition
 - create pkgdef
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 492e34c92019de7f3c0921b853d103252e09b996
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 010ee75efd84f016b0eb68fa9f715102026a4678
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441486"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51782642"
 Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um arquivo. pkgdef para acompanhar o arquivo. dll. O arquivo. pkgdef contém todas as informações que, caso contrário, seriam gravadas no registro do sistema quando a extensão está instalada.  
   
 > [!NOTE]
->  A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria arquivos. pkgdef como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar a implantação. pkgdef.  
+> A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria arquivos. pkgdef como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar a implantação. pkgdef.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,7 +35,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
 ```  
   
 ## <a name="arguments"></a>Arguments  
- / out =`FileName`  
+ /out=`FileName`  
  Necessário. Define o nome do arquivo de saída. pkgdef para`FileName`.  
   
  /codebase  
@@ -58,8 +53,7 @@ CreatePkgDef /out=FileName [/codebase] [/assembly] AssemblyPath
  Os arquivos. pkgdef devem ser instalados em um dos seguintes locais: %localappdata%\Microsoft\Visual Studio\14.0\Extensions\ ou %vsinstalldir%\Common7\IDE\Extensions\\. Se a pasta de instalação é %localappdata%\Microsoft\Visual Studio\14.0\Extensions\\, a extensão será reconhecida pelo Visual Studio, mas será desabilitada por padrão. O usuário pode habilitar a extensão usando **extensões e atualizações**. Se a pasta de instalação é %vsinstalldir%\Common7\IDE\Extensions\\, a extensão está habilitada por padrão.  
   
 > [!NOTE]
->  O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.  
+> O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.  
   
 ## <a name="see-also"></a>Consulte também  
  [Utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)
-

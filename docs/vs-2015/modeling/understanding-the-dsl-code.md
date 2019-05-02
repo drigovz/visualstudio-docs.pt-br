@@ -1,36 +1,33 @@
 ---
 title: Noções básicas do código DSL | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, generated code
 ms.assetid: 8e5c10e4-6323-433e-b88a-5d3d92639030
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: afe6a273716ab5e531781634be959c80d30a9e26
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426951"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode ser usada para ler e atualizar instâncias da DSL no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.  
   
-## <a name="the-example-solution-component-diagrams"></a>A solução do exemplo: Diagramas de Componente  
+## <a name="the-example-solution-component-diagrams"></a>A solução de exemplo: Diagramas de componente  
  Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.  
   
 > [!NOTE]
->  O modelo DSL de diagramas de componente não está relacionado aos diagramas de componente UML que você pode criar usando o menu de arquitetura no Visual Studio. No **novo projeto** diálogo caixa, expanda **outros tipos/extensibilidades do projeto** e, em seguida, clique em **Designer de linguagem específica do domínio**.  
+> O modelo DSL de diagramas de componente não está relacionado aos diagramas de componente UML que você pode criar usando o menu de arquitetura no Visual Studio. No **novo projeto** diálogo caixa, expanda **outros tipos/extensibilidades do projeto** e, em seguida, clique em **Designer de linguagem específica do domínio**.  
   
  Pressione F5 e experimente, se ainda não estiver familiarizado com esse modelo de solução. Observe especificamente que é possível criar portas arrastando uma ferramenta de porta para um componente e que é possível conectar portas.  
   
@@ -50,28 +47,28 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
   
  É altamente recomendável não editar o código gerado diretamente, pois, as edições serão perdidas ao recompilar a solução. Ao invés, para personalizar a DSL:  
   
--   Ajuste os diversos parâmetros na Definição da DSL.  
+- Ajuste os diversos parâmetros na Definição da DSL.  
   
--   Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.  
+- Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.  
   
--   Define opções na Definição da DSL que causa com que o código gerado forneça ‘ganchos’ para o próprio código.  
+- Define opções na Definição da DSL que causa com que o código gerado forneça ‘ganchos’ para o próprio código.  
   
      Por exemplo, se você definir a **possui construtor personalizado** opção de uma classe de domínio e, em seguida, compile a solução, você verá mensagens de erro. Ao clicar duas vezes em uma dessas mensagens de erro, serão exibidos comentários sobre o código gerado que explicam o que o código personalizado deveria fornecer.  
   
--   Grave seus próprios modelos de texto para gerar código específico para o aplicativo. É possível usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a diversos projetos e, é possível criar modelos de projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir projetos que são inicializados com a própria estrutura de arquivos.  
+- Grave seus próprios modelos de texto para gerar código específico para o aplicativo. É possível usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a diversos projetos e, é possível criar modelos de projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para definir projetos que são inicializados com a própria estrutura de arquivos.  
   
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl  
  Os seguintes arquivos gerados são exibidos na **Dsl** projeto.  
   
- *{1&gt;yourdsl&lt;1* `Schema.xsd`  
+ *YourDsl* `Schema.xsd`  
   
- O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para a compilação (**bin**) directory. Quando você instala a DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que os arquivos de modelo podem ser validados. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).  
+ O esquema dos arquivos que contêm instâncias da DSL. Esse arquivo é copiado para a compilação (**bin**) directory. Quando você instala a DSL, você pode copiar esse arquivo para **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas** para que os arquivos de modelo podem ser validados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   
  Ao personalizar a serialização configurando opções no Gerenciador de DSL, o esquema será alterado de acordo. No entanto, se escrever seu próprio código de serialização, esse arquivo deixará de representar o esquema atual. Para obter mais informações, consulte [Personalizando o armazenamento de arquivos e a serialização XML](../modeling/customizing-file-storage-and-xml-serialization.md).  
   
  `ConnectionBuilders.cs`  
   
- Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *relacionamento*Builder, e *ConnectorTool*ConnectAction.  
+ Um compilador de conexão é uma classe que cria relações. É o código por trás de uma ferramenta de conexão. Esse arquivo contém um par de classes para cada ferramenta de conexão. Seus nomes são derivados dos nomes da ferramenta de conexão e de relação do domínio: *Relacionamento*Builder, e *ConnectorTool*ConnectAction.  
   
  (No exemplo de solução de componente, um dos compiladores de conexão é chamado ConnectionBuilder, isso é uma coincidência porque o nome da relação do domínio é Connection.)  
   
@@ -136,15 +133,15 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
   A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  Não é a mesma que a classe raiz do modelo.  
+> Não é a mesma que a classe raiz do modelo.  
   
- Fechamentos de Copiar e Excluir define quais outros elementos devem ser incluídos quando um elemento é copiado ou excluído. Você pode controlar esse comportamento, definindo a **propaga cópia** e **propaga exclusão** propriedades das funções em cada lado de cada relação. Se desejar determinar os valores dinamicamente, é possível gravar código para substituir os métodos das classes de Fechamento. Para obter mais informações, consulte [como: programa comportamento copiar e colar – redirecionamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
+ Fechamentos de Copiar e Excluir define quais outros elementos devem ser incluídos quando um elemento é copiado ou excluído. Você pode controlar esse comportamento, definindo a **propaga cópia** e **propaga exclusão** propriedades das funções em cada lado de cada relação. Se desejar determinar os valores dinamicamente, é possível gravar código para substituir os métodos das classes de Fechamento. Confira mais informações em [Como Programar o comportamento copiar e colar – redirecionamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
  `DomainModelResx.resx`  
   
  Isso contém cadeias de caracteres como as descrições de classes e propriedades do domínio, nomes de propriedade, etiquetas de caixa de ferramenta, mensagens de erro padrão e outras cadeias que podem ser exibidas ao usuário. Também contém ícones de ferramentas e imagens dos formatos de imagem.  
   
- Esse arquivo é associado ao assembly de compilação e fornece os valores padrão desses recursos. É possível localizar a DSL criando um assembly satélite que contém uma versão localizada dos recursos. Essa versão será usada quando a DSL for instalada em uma cultura que corresponde aos recursos localizados. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).  
+ Esse arquivo é associado ao assembly de compilação e fornece os valores padrão desses recursos. É possível localizar a DSL criando um assembly satélite que contém uma versão localizada dos recursos. Essa versão será usada quando a DSL for instalada em uma cultura que corresponde aos recursos localizados. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   
  `DomainRelationships.cs`  
   
@@ -347,15 +344,12 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.  
   
 > [!WARNING]
->  Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.  
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.  
   
- Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).  
+ Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Noções básicas sobre modelos, Classes e relações](../modeling/understanding-models-classes-and-relationships.md)   
  [Personalizando e estendendo uma linguagem específica de domínio](../modeling/customizing-and-extending-a-domain-specific-language.md)   
  [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402690"
 ---
 # <a name="allocation-hook-functions"></a>Funções de gancho da alocação
 Uma função de gancho de alocação, instalada usando [crtsetallochook](/cpp/c-runtime-library/reference/crtsetallochook), é chamado sempre que a memória é alocada, realocada ou liberada. Você pode usar esse tipo de gancho para muitas finalidades diferentes. Usá-lo para testar como um aplicativo trata situações de memória insuficiente, por exemplo, para examinar padrões de alocação ou registrar informações de alocação para análise posterior.
 
 > [!NOTE]
->  Lembre-se da restrição sobre as funções da biblioteca em tempo de execução C em uma função de gancho de alocação, descrita em [Ganchos de alocação e alocações de memória de tempo de execução C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
+> Lembre-se da restrição sobre as funções da biblioteca em tempo de execução C em uma função de gancho de alocação, descrita em [Ganchos de alocação e alocações de memória de tempo de execução C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
  Uma função de gancho de alocação deve ter um protótipo como o exemplo a seguir:
 

@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 4b46937e8b30dec1f9e2a78d181cd53692b7d1b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935354"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Passo a passo: Criar um processador de diretriz personalizado
 
@@ -331,7 +331,7 @@ End Property
             {
                 XmlDocument d = new XmlDocument();
 
-                using (XmlTextReader reader = new XmlTextReader(fileName))
+                using (XmlReader reader = XmlReader.Create(fileName))
                 {
                     try
                     {
@@ -581,7 +581,7 @@ End Property
 
                 Dim d As XmlDocument = New XmlDocument()
 
-                Using reader As XmlTextReader = New XmlTextReader(fileName)
+                Using reader As XmlReader = XmlReader.Create(fileName)
 
                     Try
                         d.Load(reader)
@@ -654,7 +654,6 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      A chave do Registro deverá ter os seguintes valores:
 
-
    | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
@@ -663,13 +662,11 @@ Nesta seção, você adiciona uma chave para o processador de diretriz personali
 
      Se você colocou o assembly no GAC, os valores deverão se parecer com o seguinte:
 
-
    | Nome | Tipo | Dados |
    |-|-|-|
    | (Padrão) | REG_SZ | (valor não definido) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Reinicie o Visual Studio.
 

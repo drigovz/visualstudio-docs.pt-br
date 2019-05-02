@@ -13,24 +13,23 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26e1670d5e67581ee61ec5517bedc4e8cfce1755
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8bfef86b8ea82077ba7fe3f753f9835c06c3380a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766234"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097343"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>Como compilar destinos específicos em soluções usando o MSBuild.exe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode usar MSBuild.exe para compilar destinos específicos de projetos específicos em uma solução.  
   
 ### <a name="to-build-a-specific-target-of-a-specific-project-in-a-solution"></a>Para criar um destino específico de um projeto específico em uma solução  
   
-1.  Na linha de comando, digite `MSBuild.exe <SolutionName>.sln`, em que `<SolutionName>` corresponde ao nome de arquivo da solução que contém o destino que você deseja executar.  
+1. Na linha de comando, digite `MSBuild.exe <SolutionName>.sln`, em que `<SolutionName>` corresponde ao nome de arquivo da solução que contém o destino que você deseja executar.  
   
-2.  Especifique o destino após o comutador **/t** no formato *ProjectName*:*TargetName*.  
+2. Especifique o destino após o comutador **/t** no formato *ProjectName*:*TargetName*.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir executa o destino `Rebuild` do projeto `NotInSlnFolder` e, em seguida, executa o destino `Clean` do projeto `InSolutionFolder`, que está localizado na pasta da solução `NewFolder`.  
@@ -42,5 +41,5 @@ msbuild SlnFolders.sln /t:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder:Clea
 ## <a name="see-also"></a>Consulte também  
  [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [ MSBuild](msbuild.md)  
+ [MSBuild](msbuild.md)  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)

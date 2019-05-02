@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864197"
 ---
 # <a name="task-class---internal-members"></a>Classe Task - membros internos
 Este artigo descreve os membros internos do <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe que ajudam você a implementar um depurador personalizado. Para obter informações gerais sobre essa classe, consulte o <xref:System.Threading.Tasks.Task> artigo de referência.
@@ -67,17 +67,17 @@ Este artigo descreve os membros internos do <xref:System.Threading.Tasks.Task?di
 ## <a name="remarks"></a>Comentários
  Os seguintes métodos internos são úteis para um mecanismo de depuração porque eles marcam da entrada <xref:System.Threading.Tasks.Task> a execução de código:
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Consulte também
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>

@@ -1,7 +1,7 @@
 ---
 title: Automatizar a instalação com um arquivo de resposta
 description: Saiba como criar um arquivo de resposta JSON que ajuda a automatizar a instalação do Visual Studio
-ms.date: 08/14/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58c8d580ace576f7b2a4512e5bc91f83529fba77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: eb822a275f55b8c0f833f0c284aba2fd663a27fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974443"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>Como definir as configurações em um arquivo de resposta
 
@@ -48,6 +50,8 @@ Você pode atualizar o arquivo `response.json` criado em uma pasta de layout off
 
 O arquivo `response.json` base em um layout deve ser semelhante ao exemplo a seguir, exceto que ele inclui o valor para o produto e o canal que você deseja instalar:
 
+::: moniker range="vs-2017"
+
 ```json
 {
   "installChannelUri": ".\\ChannelManifest.json",
@@ -58,11 +62,29 @@ O arquivo `response.json` base em um layout deve ser semelhante ao exemplo a seg
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise"
+}
+```
+
+::: moniker-end
+
 Quando você cria ou atualiza um layout, um arquivo response.template.json também é criado.  Esse arquivo contém todas as IDs de carga de trabalho, de componente e de idioma que podem ser usadas.  Esse arquivo é fornecido como um modelo para o qual todas poderiam ser incluídas em uma instalação personalizada.  Os administradores podem usar esse arquivo como um ponto de partida para um arquivo de resposta personalizado.  Basta remover as IDs para os itens que você não deseja instalar e salvá-las em seu próprio arquivo de resposta.  Não personalize o arquivo response.template.json, caso contrário, as alterações serão perdidas sempre que o layout for atualizado.
 
 ## <a name="example-layout-response-file-content"></a>Conteúdo de arquivo de resposta de layout de exemplo
 
 O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trabalho e componentes comuns e com os idiomas inglês e francês da interface do usuário. Você pode esse exemplo como um modelo; apenas altere as cargas de trabalho e os componentes para aqueles que você deseja instalar:
+
+::: moniker range="vs-2017"
 
 ```json
 {
@@ -95,8 +117,45 @@ O exemplo a seguir instalará o Visual Studio Enterprise com seis cargas de trab
 }
 ```
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```json
+{
+  "installChannelUri": ".\\ChannelManifest.json",
+  "channelUri": "https://aka.ms/vs/16/release/channel",
+  "installCatalogUri": ".\\Catalog.json",
+  "channelId": "VisualStudio.16.Release",
+  "productId": "Microsoft.VisualStudio.Product.Enterprise",
+
+  "installPath": "C:\\VS2019",
+  "quiet": false,
+  "passive": false,
+  "includeRecommended": true,
+  "norestart": false,
+
+  "addProductLang": [
+    "en-US",
+    "fr-FR"
+    ],
+
+    "add": [
+        "Microsoft.VisualStudio.Workload.ManagedDesktop",
+        "Microsoft.VisualStudio.Workload.Data",
+        "Microsoft.VisualStudio.Workload.NativeDesktop",
+        "Microsoft.VisualStudio.Workload.NetWeb",
+        "Microsoft.VisualStudio.Workload.Office",
+        "Microsoft.VisualStudio.Workload.Universal",
+        "Component.GitHub.VisualStudio"
+    ]
+}
+```
+
+::: moniker-end
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Consulte também
 
-* [IDs de carga de trabalho e de componente do Visual Studio 2017](workload-and-component-ids.md)
+* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)

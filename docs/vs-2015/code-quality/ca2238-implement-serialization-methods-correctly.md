@@ -1,14 +1,9 @@
 ---
 title: 'CA2238: Implementar métodos de serialização corretamente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementSerializationMethodsCorrectly
 - CA2238
@@ -20,24 +15,24 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3222deaeac97df8b954853f21eaff40a8244d8ca
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49864270"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657123"
 ---
-# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: implementar métodos de serialização corretamente
+# <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialização corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA2238: implementar métodos de serialização corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA2238: Implementar métodos de serialização corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).  
   
 |||  
 |-|-|  
 |NomeDoTipo|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |Categoria|Microsoft.Usage|  
-|Alteração Significativa|Quebrando - se o método é visível fora do assembly.<br /><br /> Não separável - se o método não é visível fora do assembly.|  
+|Alteração Significativa|Quebrando - se o método é visível fora do assembly.<br /><br /> Sem quebra - se o método não é visível fora do assembly.|  
   
 ## <a name="cause"></a>Causa  
  Um método que trata um evento de serialização não tem a assinatura, o tipo de retorno ou a visibilidade corretos.  
@@ -68,17 +63,16 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA2238
  [!code-vb[FxCop.Usage.SerializationEventHandlers#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Usage.SerializationEventHandlers/vb/FxCop.Usage.SerializationEventHandlers.vb#1)]  
   
 ## <a name="related-rules"></a>Regras relacionadas  
- [CA2236: chamar métodos de classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
+ [CA2236: Chamar métodos da classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)  
   
- [CA2240: implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)  
+ [CA2240: Implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)  
   
  [CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)  
   
- [CA2235: marcar todos os campos não serializáveis](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
+ [CA2235: Marcar todos os campos não serializáveis](../code-quality/ca2235-mark-all-non-serializable-fields.md)  
   
- [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
+ [CA2237: Marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)  
   
- [CA2239: fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
+ [CA2239: Fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)  
   
- [CA2120: proteger construtores de serialização](../code-quality/ca2120-secure-serialization-constructors.md)
-
+ [CA2120: Construtores de serialização segura](../code-quality/ca2120-secure-serialization-constructors.md)

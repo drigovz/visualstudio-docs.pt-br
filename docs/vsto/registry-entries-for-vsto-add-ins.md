@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447029"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas do registro para suplementos VSTO
   Quando você implanta o VSTO Add-ins que são criados usando o Visual Studio, você deve criar um conjunto específico de entradas do registro. Essas entradas de registro fornecem informações que permitem que o aplicativo do Microsoft Office descobrir e carregar o suplemento do VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "56612706"
  Para obter mais informações sobre como as entradas do registro são usadas durante o processo de carregamento de suplementos do VSTO, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Neste tópico, o texto *ID do suplemento* representa uma ID exclusiva para seu suplemento do VSTO. Por padrão, a ID é o nome do assembly do suplemento do VSTO.
+> Neste tópico, o texto *ID do suplemento* representa uma ID exclusiva para seu suplemento do VSTO. Por padrão, a ID é o nome do assembly do suplemento do VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registre-se suplementos do VSTO para o atual usuário versus todos os usuários
  Quando um suplemento do VSTO é instalado, podem ser registrada de duas maneiras:
@@ -78,7 +78,7 @@ ms.locfileid: "56612706"
 |**LoadBehavior**|REG_DWORD|Necessário. Um valor que especifica quando o aplicativo tenta carregar o suplemento do VSTO e o estado atual do VSTO Add-in (carregado ou descarregado).<br /><br /> Por padrão, essa entrada é definida como 3, que especifica que o suplemento do VSTO é carregado na inicialização. Para obter mais informações, consulte [valores LoadBehavior](#LoadBehavior). **Observação:**  Se um usuário desabilitar o suplemento do VSTO, essa ação modifica **LoadBehavior** o valor de **HKEY_CURRENT_USER** hive do registro. Para cada usuário, o valor da **LoadBehavior** valor no hive HKEY_CURRENT_USER substitui o padrão **LoadBehavior** definidos na **HKEY_LOCAL_MACHINE** hive.|
 |**Manifesto**|REG_SZ|Necessário. O caminho completo do manifesto de implantação para o suplemento do VSTO. O caminho pode ser um local no computador local, um compartilhamento de rede (UNC) ou um servidor Web (HTTP).<br /><br /> Se você usar o Windows Installer para implantar a solução, você deve adicionar o prefixo **file:///** para o **manifesto** caminho. Você também deve acrescentar a cadeia de caracteres  **&#124;vstolocal** (ou seja, o caractere de pipe **&#124;** seguido **vstolocal**) ao final desse caminho. Isso garante que sua solução seja carregada na pasta de instalação, em vez de cache do ClickOnce. Para obter mais informações, consulte [implantar uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Observação:**  Quando você cria um suplemento do VSTO no computador de desenvolvimento, Visual Studio anexa automaticamente os  **&#124;vstolocal** cadeia de caracteres para esta entrada do registro.|
 
-###  <a name="OutlookEntries"></a> Entradas do registro para regiões de formulário do Outlook
+### <a name="OutlookEntries"></a> Entradas do registro para regiões de formulário do Outlook
  Se você criar uma região de formulário personalizada em um suplemento do VSTO para Outlook, entradas de registro adicionais são usadas para registrar a região do formulário com o Outlook. Essas entradas são criadas sob uma chave do registro diferente para cada classe de mensagem que dá suporte a região do formulário. Essas chaves do registro estão no local a seguir, onde *raiz* é **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.
 
  *Raiz*\Software\Microsoft\Office\Outlook\FormRegions\\*classe message*
@@ -87,7 +87,7 @@ ms.locfileid: "56612706"
 
  Para obter mais informações sobre as entradas de registro de região de formulário, consulte [especificar o local de uma região de formulário em um formulário personalizado](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Para obter mais informações sobre regiões de formulário do Outlook, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="LoadBehavior"></a> Valores LoadBehavior
+## <a name="LoadBehavior"></a> Valores LoadBehavior
  O **LoadBehavior** entrada sob o *raiz*\Software\Microsoft\Office\\*nome do aplicativo*\Addins\\*suplemento ID* chave contém uma combinação bit a bit de valores que especificam o comportamento de tempo de execução do suplemento do VSTO. O bit de ordem mais baixo (valores 0 e 1) indica se o suplemento do VSTO é atualmente descarregado ou carregado. Outros bits indicam quando o aplicativo tenta carregar o suplemento do VSTO.
 
  Normalmente, o **LoadBehavior** entrada se destina a ser definido como 0, 3 ou 16 (em decimais) quando o suplemento do VSTO é instalado em computadores de usuários finais. Por padrão, o Visual Studio define o **LoadBehavior** entrada do seu suplemento do VSTO para 3, quando você compilar ou publicá-lo.

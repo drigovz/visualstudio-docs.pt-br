@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432155"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 Quando um VSPackage registra uma janela de ferramentas, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro de janela da ferramenta, consulte [ferramenta Windows no registro](../extensibility/tool-windows-in-the-registry.md)
@@ -34,7 +34,6 @@ HKEY_LOCAL_MACHINE\
             <Tool Window GUID>\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
-
 
 | Nome | Tipo | Dados | Descrição |
 |-----------------|-----------| - | - |

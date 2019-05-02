@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428993"
 ---
 # <a name="how-to-manage-editor-windows"></a>Como: Gerenciar janelas do editor
 
@@ -33,9 +33,9 @@ Uma instância de uma janela do editor pode ser dividida em dois modos de exibi�
 
 ### <a name="to-split-a-pane"></a>Para dividir um painel
 
-1.  Clique dentro da janela do editor para colocá-la em foco.
+1. Clique dentro da janela do editor para colocá-la em foco.
 
-2.  No menu **Janela**, selecione **Dividir**.
+2. No menu **Janela**, selecione **Dividir**.
 
      A área de edição é dividida em dois painéis separados por uma barra divisória. Você pode rolar esses painéis de forma independente para exibir e editar as diferentes partes do documento ativo ao mesmo tempo. Todas as alterações feitas em um painel são refletidas no outro.
 
@@ -44,7 +44,7 @@ Uma instância de uma janela do editor pode ser dividida em dois modos de exibi�
 
 ### <a name="to-return-to-single-pane-view"></a>Para retornar ao modo de exibição de painel único
 
--   No menu **Janela**, selecione **Remover Divisão**.
+- No menu **Janela**, selecione **Remover Divisão**.
 
 ## <a name="create-new-windows"></a>Criar novas janelas
 

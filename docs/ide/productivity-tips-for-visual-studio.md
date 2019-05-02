@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b2b2aca59fccee30f017c7679d16c7b32f23c44
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813875"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -24,7 +24,7 @@ Para saber mais sobre os atalhos de teclado comuns, confira [Dicas de teclado](.
 
 Escreva código mais rapidamente usando os seguintes recursos.
 
-- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, no **Visual Studio 2017 versão 15.6** e posterior, você pode escolher um comando para duplicar facilmente uma linha de código sem a necessidade de copiá-lo, reposicionar o cursor e, depois, colá-lo. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Você também pode expandir ou recolher uma seleção de texto escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Reduzir Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-** (disponível no **Visual Studio 2017 versão 15.5** e posterior).
+- **Usar comandos de conveniência**. O Visual Studio contém vários comandos para ajudar você a realizar tarefas comuns de edição mais rapidamente. Por exemplo, você pode escolher um comando para duplicar com facilidade uma linha de código sem precisar copiá-la, reposicionar o cursor e, em seguida, colá-la. Escolha **Editar** > **Duplicar** ou pressione **Ctrl**+**E**,**V**. Expanda ou recolha uma seleção de texto rapidamente escolhendo **Editar** > **Avançado** > **Expandir Seleção** ou **Editar** > **Avançado** > **Recolher Seleção** ou pressionando **Shift**+**Alt**+**=** ou **Shift**+**Alt**+**-**.
 
 - **Use o IntelliSense**. À medida que você inserir código no editor, informações do IntelliSense, como Membros da Lista, Informações do Parâmetro, Informações Rápidas, Ajuda de Assinatura e Completar Palavras, serão exibidas. Esses recursos dão suporte à correspondência difusa de texto; por exemplo, as listas de resultados para Membros da Lista incluem não só entradas que começam com os caracteres que você inseriu, como também entradas que contêm a combinação de caracteres em qualquer lugar de seus nomes. Para obter mais informações, confira [Usar o IntelliSense](../ide/using-intellisense.md).
 
@@ -66,13 +66,23 @@ Você pode procurar no IDE comandos, arquivos e opções, bem como filtrar o con
 
 - **Exiba apenas os erros que você deseja resolver**. Se você escolher o botão **Filtrar** na barra de ferramentas **Lista de Erros**, poderá reduzir o número de erros que aparecem na janela **Lista de Erros**. Você só pode exibir os erros em arquivos que estão abertos no editor, somente os erros no arquivo atual ou somente os erros no projeto atual. Você também pode pesquisar na janela **Lista de Erros** para localizar erros específicos.
 
-- **Localizar caixas de diálogo, comandos de menu e opções**. Na caixa de pesquisa [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md), insira palavras-chave ou frases para os itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir `new project`:
+- **Localizar caixas de diálogo, comandos de menu, opções e mais**. Na caixa de pesquisa, digite as palavras-chave ou frases dos itens que você está tentando localizar. Por exemplo, as seguintes opções aparecerão se você inserir **novo projeto**:
 
-    ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity_quicklaunch.png)
+   ::: moniker range="vs-2017"
 
-    O **Início Rápido** exibe links para a caixa de diálogo **Novo Projeto**, a caixa de diálogo **Adicionar Novo Item** e a página **Projetos e Soluções** na caixa de diálogo **Opções**, entre outros. Os resultados do Início Rápido também podem incluir arquivos de projeto e janelas de ferramenta.
+   ![Resultados do Início Rápido para "novo projeto"](../ide/media/productivity_quicklaunch.png)
 
-  A caixa de pesquisa **Início Rápido** é exibida no canto superior direito do IDE. (Alternativamente, pressione **Ctrl**+**Q** para acessá-la.)
+   O **Início Rápido** exibe links para criar um projeto, para adicionar um novo item a um projeto e para a página **Projetos e Soluções** na caixa de diálogo **Opções**, entre outros. Os resultados da pesquisa também podem incluir arquivos de projeto e janelas de ferramentas.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+   ![Resultados para o 'novo projeto'](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+
+   ::: moniker-end
+
+   Pressione **Ctrl**+**Q** para ir direto à caixa de pesquisa.
 
 ## <a name="debug-code"></a>Depurar o código
 
@@ -102,9 +112,19 @@ A depuração pode consumir muito tempo, mas as dicas a seguir podem ajudar a ac
 
 Você poderá acessar rapidamente o Prompt de Comando do Desenvolvedor ou outra ferramenta do Visual Studio se você fixá-la no menu Iniciar ou na barra de tarefas.
 
-1. No Windows Explorer, navegue até `%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools`.
+::: moniker range="vs-2017"
 
-1. Clique com botão direito do mouse ou abra o menu de contexto para o **Prompt de Comando do Desenvolvedor** e, em seguida, selecione **Fixar na tela inicial** ou **Fixar na barra de tarefas**.
+1. No Windows Explorer, procure *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2017\Visual Studio Tools*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. No Windows Explorer, procure *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*.
+
+::: moniker-end
+
+2. Clique com botão direito do mouse ou abra o menu de contexto para o **Prompt de Comando do Desenvolvedor** e, em seguida, selecione **Fixar na tela inicial** ou **Fixar na barra de tarefas**.
 
 ## <a name="manage-files-toolbars-and-windows"></a>Gerenciar arquivos, barras de ferramentas e janelas
 

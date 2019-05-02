@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892308"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
 
@@ -259,7 +259,6 @@ namespace MockLanguageExtension
         [BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
         internal static ContentTypeDefinition BarContentTypeDefinition;
 
-
         [Export]
         [FileExtension(".bar")]
         [ContentType("bar")]
@@ -297,6 +296,7 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. Clique com botão direito no arquivo JSON e selecione **propriedades**. Alterar o **Build** ação como "Content" e o "incluir em VSIX' propriedade como true.
 
 3. Implementar ConfigurationSections e retornar a lista de prefixos para as configurações definidas no arquivo JSON (no Visual Studio Code, ele seria mapeado para o nome da seção de configuração em Package. JSON):
@@ -319,6 +319,7 @@ Siga as etapas abaixo para adicionar suporte para as configurações para sua ex
     ```
 
     Amostra:
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

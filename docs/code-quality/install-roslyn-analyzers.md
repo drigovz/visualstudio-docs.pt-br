@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 738246e3c35ec5019dd0f793d86a5447bd7556fb
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820810"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analisadores do .NET Compiler Platform
 
@@ -24,18 +24,20 @@ O Visual Studio inclui um conjunto principal de plataforma do compilador .NET (*
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar os pacotes do NuGet analyzer
 
-1. Localize o pacote de analisador que você deseja instalar em www.nuget.org. Por exemplo, você talvez queira [instalar os analisadores FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para verificar seu código para problemas de segurança e desempenho, entre outros.
+1. Localize o pacote de analisador que você deseja instalar em www.nuget.org.
+
+   Por exemplo, você talvez queira [instalar os analisadores FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para verificar seu código para problemas de segurança e desempenho, entre outros. Ou, instale [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) para procurar problemas de estilo na Base de código.
 
 2. Instale o pacote no Visual Studio, usando o [Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou o [UI Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > A página www.nuget.org para cada pacote de analisador mostra o comando Colar na **Package Manager Console**. Há até mesmo um botão útil para copiar o texto na área de transferência.
-   >
-   > ![Página de NuGet.org mostrando o comando do Console do Gerenciador de pacotes](media/nuget-install-command.png)
 
    Os assemblies do analisador são instalados e aparecem na **Gerenciador de soluções** sob **referências** > **analisadores**.
 
 ## <a name="to-install-vsix-analyzers"></a>Para instalar analisadores VSIX
+
+::: moniker range="vs-2017"
 
 1. No Visual Studio, selecione **ferramentas** > **extensões e atualizações**.
 
@@ -43,6 +45,19 @@ O Visual Studio inclui um conjunto principal de plataforma do compilador .NET (*
 
    > [!NOTE]
    > Como alternativa, você pode localizar e baixar a extensão de analisador diretamente a partir [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. No Visual Studio, selecione **extensões** > **gerenciar extensões**.
+
+   O **gerenciar extensões** caixa de diálogo é aberta.
+
+   > [!NOTE]
+   > Como alternativa, você pode localizar e baixar a extensão de analisador diretamente a partir [Visual Studio Marketplace](https://marketplace.visualstudio.com).
+
+::: moniker-end
 
 2. Expandir **Online** no painel esquerdo e, em seguida, selecione **Visual Studio Marketplace**.
 
@@ -64,7 +79,17 @@ O Visual Studio inclui um conjunto principal de plataforma do compilador .NET (*
 
 8. Abra o Visual Studio novamente.
 
+::: moniker range="vs-2017"
+
 Se você deseja verificar se a extensão é instalada, selecione **ferramentas** > **extensões e atualizações**. No **extensões e atualizações** caixa de diálogo, selecione o **instalado** categoria à esquerda e, em seguida, pesquise a extensão pelo nome.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se você deseja verificar se a extensão é instalada, selecione **extensões** > **gerenciar extensões**. No **gerenciar extensões** caixa de diálogo, selecione o **instalado** categoria à esquerda e, em seguida, pesquise a extensão pelo nome.
+
+::: moniker-end
 
 ## <a name="next-steps"></a>Próximas etapas
 

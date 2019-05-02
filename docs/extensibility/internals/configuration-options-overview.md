@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415150"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 Projetos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode dar suporte a várias configurações que podem ser criadas, depurado, execução e/ou implantado. Uma configuração é um tipo de build descrito com um conjunto de propriedades, normalmente os comutadores de compilador e locais de arquivos nomeado. Por padrão, novas soluções contêm duas configurações, *Debug* e *versão*. Essas configurações podem ser aplicadas usando suas configurações padrão, ou modificado para atender às suas necessidades específicas de solução e/ou projeto. Alguns pacotes podem ser criados de duas maneiras: como um editor de ActiveX ou como um componente no local. Projetos não é necessário dar suporte a várias configurações, no entanto. Se houver apenas uma configuração disponível, essa configuração é mapeada em todas as configurações da solução.
@@ -36,7 +36,7 @@ Projetos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode da
 |*MyConfig*|N/D|\<Configurações de MyConfig Win64 >|
 
 > [!NOTE]
->  Não é possível criar uma *MyConfig* configuração de solução que exclui uma plataforma Win32, a menos que o projeto de destino não dá suporte para Win32.
+> Não é possível criar uma *MyConfig* configuração de solução que exclui uma plataforma Win32, a menos que o projeto de destino não dá suporte para Win32.
 
  Alterando a configuração ativa para uma solução seleciona o conjunto de configurações de projeto que é criado, execute, depurado ou implantado na solução. Por exemplo, se você alterar a configuração da solução ativa da *Release* para *depurar*, todos os projetos na solução são criados automaticamente com a configuração do projeto indicada no configuração de depuração da solução. Configurações de projeto também são nomeadas *depurar* , a menos que o usuário tiver feito alterações manuais no Gerenciador de configuração do ambiente.
 

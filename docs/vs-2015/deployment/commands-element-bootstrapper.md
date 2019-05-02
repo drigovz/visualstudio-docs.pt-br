@@ -1,14 +1,9 @@
 ---
 title: '&lt;Comandos&gt; elemento (Bootstrapper) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,13 +15,13 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 309f93658cee6663c2b5673c03c6621330e7fa39
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: af10c9e0b26a6ef2c8e7a98bc345b8e86017682b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276569"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926227"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Comandos&gt; elemento (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +76,7 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
 |`Reboot`|Opcional. Determina se o sistema deve ser reiniciado caso qualquer um dos pacotes retornar um código de saída de reinicialização. A lista a seguir mostra os valores válidos:<br /><br /> `Defer`. A reinicialização é adiada até que algum momento futuro.<br /><br /> `Immediate`. Faz com que uma reinicialização imediata se um dos pacotes retornou um código de saída de reinicialização.<br /><br /> `None`. Faz com que quaisquer solicitações de reinício a serem ignorados.<br /><br /> O padrão é `Immediate`.|  
   
 ## <a name="command"></a>Comando  
- O `Command` é um elemento filho do `Commands` elemento. Um `Commands` elemento pode ter um ou mais `Command` elementos. O elemento tem os seguintes atributos.  
+ O `Command` é um elemento filho do elemento `Commands`. Um `Commands` elemento pode ter um ou mais `Command` elementos. O elemento tem os seguintes atributos.  
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
@@ -213,7 +208,4 @@ O `Commands` elemento implementa testes descritos pelos elementos sob o `Install
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de pacote e produto](../deployment/product-and-package-schema-reference.md)   
- [\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)
-
-
-
+ [Elemento \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)

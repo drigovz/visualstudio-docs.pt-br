@@ -8,7 +8,7 @@
           href: overview-debug-interface-access-sdk.md
         - name: Consultando o arquivo .Pdb
           href: querying-the-dot-pdb-file.md
-    - name: Símbolos e marcações de símbolos
+    - name: Símbolos e marcas de símbolos
       href: symbols-and-symbol-tags.md
       items:
         - name: Locais de símbolos

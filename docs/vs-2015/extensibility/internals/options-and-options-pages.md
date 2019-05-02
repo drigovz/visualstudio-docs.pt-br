@@ -1,14 +1,9 @@
 ---
 title: Opções e páginas de opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], managed package framework support
 - managed package framework, Tools Options pages support
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 005aeceb328a24c8c90994b6b274dbddc6b874f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438951"
 ---
 # <a name="options-and-options-pages"></a>Opções e páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Clicando em **opções** sobre o **ferramentas** menu é aberto o **opções** c
 - <xref:System.ComponentModel.DescriptionAttribute> Determina a descrição da opção.  
   
   > [!NOTE]
-  >  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos na [exemplo de projeto gerenciado](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos na [exemplo de projeto gerenciado](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Considere o fragmento de código a seguir:  
   
@@ -91,5 +86,4 @@ Clicando em **opções** sobre o **ferramentas** menu é aberto o **opções** c
  O caminho do registro da propriedade de automação é determinado pela combinação <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, o word, AutomationProperties e as opções de página de categoria e o nome. Por exemplo, se a página de opções tem a categoria My Category, o nome de minha página de grade e o <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp e, em seguida, a propriedade de automação tem a chave do registro, HKEY_LOCAL_MACHINE\SOFTWARE\ Página de grade Category\My Microsoft\VisualStudio\8.0Exp\AutomationProperties\My.  
   
 > [!NOTE]
->  O nome canônico, minha página de grade Category.My, é o valor da subchave nome dessa chave.
-
+> O nome canônico, minha página de grade Category.My, é o valor da subchave nome dessa chave.

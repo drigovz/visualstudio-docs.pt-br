@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2ea2217614ed27a98281cce7a3d34b72f74ae803
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433013"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Enviando extensões do Visual Studio
 Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em outros computadores, compartilhá-lo com seus amigos e colegas de trabalho ou publicá-lo no Visual Studio Marketplace. Nesta seção, vamos explicar todas as coisas que você precisa fazer para publicar e manter sua extensão: trabalhar com arquivos. VSIX, publicação, localizando e atualizando.
@@ -53,8 +53,8 @@ Depois de concluir o desenvolvimento de sua extensão, você pode instalá-lo em
 |[Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)|Descreve os componentes de um pacote VSIX.|
 |[Modelo de projeto VSIX](../extensibility/vsix-project-template.md)|Fornece instruções passo a passo sobre como empacotar e publicar uma extensão.|
 |[Localizar pacotes VSIX](../extensibility/localizing-vsix-packages.md)|Explica como fornecer o texto localizado para o processo de instalação por meio de arquivos extension.vsixlangpack.|
-|[Como: Atualizar uma extensão](../extensibility/how-to-update-a-visual-studio-extension.md)|Descreve como atualizar uma extensão em seu sistema e como implantar uma atualização para uma extensão existente do Visual Studio.|
-|[Como: Adicionar uma dependência a um pacote VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Descreve como adicionar referências aos pacotes de implantação do VSIX.|
+|[Como: atualizar uma extensão](../extensibility/how-to-update-a-visual-studio-extension.md)|Descreve como atualizar uma extensão em seu sistema e como implantar uma atualização para uma extensão existente do Visual Studio.|
+|[Como: adicionar uma dependência a um pacote do VSIX](../extensibility/how-to-add-a-dependency-to-a-vsix-package.md)|Descreve como adicionar referências aos pacotes de implantação do VSIX.|
 |[Preparar extensões para a implantação do Windows Installer](../extensibility/preparing-extensions-for-windows-installer-deployment.md)|Explica como implantar sua extensão com o Windows Installer.|
 |[Assinar pacotes VSIX](../extensibility/signing-vsix-packages.md)|Explica como assinar pacotes VSIX.|
 |[Galerias privadas](../extensibility/private-galleries.md)|Explica como criar galerias privadas para extensões.|

@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Flask no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b3a333482590e284c5cbbc1ec44093a835c76db0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961717"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
 
@@ -77,6 +77,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
         app.run(HOST, PORT)
     ```
+
 6. A estrutura do seu projeto deve ser semelhante à da imagem a seguir:
 
     ![Estrutura do projeto após a refatoração do código](media/flask/step02-project-structure.png)

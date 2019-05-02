@@ -1,27 +1,22 @@
 ---
 title: Expor objetos do projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project objects, exposing
 - extensibility, project objects
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9c4af521a8c6044742d69a1d71dcf605145d600d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f40c523c058bf215cc4574b3aa4a2e038c833beb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51731419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044664"
 ---
 # <a name="exposing-project-objects"></a>Expondo objetos do projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Tipos de projeto personalizado podem fornecer objetos de automação para permit
   
 ### <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>Para contribuir com um objeto de VSPackage específico para um projeto  
   
-1.  Adicione as chaves apropriadas para o arquivo. pkgdef do VSPackage.  
+1. Adicione as chaves apropriadas para o arquivo. pkgdef do VSPackage.  
   
      Por exemplo, aqui estão as configurações. pkgdef para o projeto de linguagem C++:  
   
@@ -45,7 +40,7 @@ Tipos de projeto personalizado podem fornecer objetos de automação para permit
     "VCProjectEngineEventsObject"=""  
     ```  
   
-2.  Implementar o código no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como no exemplo a seguir.  
+2. Implementar o código no <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> método, como no exemplo a seguir.  
   
     ```cpp  
     STDMETHODIMP CVsPackage::GetAutomationObject(  
@@ -99,4 +94,3 @@ Tipos de projeto personalizado podem fornecer objetos de automação para permit
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>
-

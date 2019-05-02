@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f00ff0f794bec43a6d81bf4303488885d901bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950733"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como: Criar um adaptador de dados de diagnóstico
 
@@ -48,37 +48,25 @@ Use o seguinte procedimento para criar o adaptador de dados de diagnóstico que 
 
 Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo, incluindo um editor de configuração personalizado, confira [Projeto de exemplo para criar um adaptador de dados de diagnóstico](../test/quickstart-create-a-load-test-project.md).
 
-##  <a name="create-and-install-a-diagnostic-data-adapter"></a>Criar e instalar um adaptador de dados de diagnóstico
+## <a name="create-and-install-a-diagnostic-data-adapter"></a>Criar e instalar um adaptador de dados de diagnóstico
 
-### <a name="to-create-and-install-a-diagnostic-data-adapter"></a>Para criar e instalar um adaptador de dados de diagnóstico
-
-1. Criar uma nova biblioteca de classes.
-
-   1.  No menu **Arquivo**, selecione **Novo** e aponte para **Novo projeto**.
-
-   2.  De **Tipos de projeto**, selecione a linguagem a ser usada.
-
-   3.  Em **Modelos instalados do Visual Studio**, clique em **Biblioteca de Classes**.
-
-   4.  Digite um nome para o adaptador de dados de diagnóstico.
-
-   5.  Escolha **OK**.
+1. Crie um projeto de **Biblioteca de Classes**.
 
 2. Adicione o assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
 
-   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Escolha **OK**.
+   3. Escolha **OK**.
 
 3. Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
 
-   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Escolha **OK**.
+   3. Escolha **OK**.
 
 4. Adicione as seguintes instruções `using` para seu arquivo de classe:
 

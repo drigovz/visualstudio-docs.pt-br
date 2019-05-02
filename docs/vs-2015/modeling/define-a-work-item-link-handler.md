@@ -1,25 +1,22 @@
 ---
 title: Definir um manipulador de link de item de trabalho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: d52e0bbf-0166-4bb4-a2e3-cefed6188875
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7ce74627d1d2d48ab02e0b124fbc38949f1f76f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433122"
 ---
 # <a name="define-a-work-item-link-handler"></a>Definir um manipulador de link de item de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,39 +26,39 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 ## <a name="set-up-a-uml-extension-solution"></a>Configurar uma solução de extensão UML  
  Isso permitirá que você desenvolva manipuladores e, em seguida, distribuí-los a outros usuários. Você precisa configurar dois projetos do Visual Studio:  
   
--   Um projeto de biblioteca de classes que contém o código do manipulador de link.  
+- Um projeto de biblioteca de classes que contém o código do manipulador de link.  
   
--   Um projeto VSIX, que atua como um contêiner para instalação do comando. Se você quiser, você pode incluir outros componentes no mesmo VSIX.  
+- Um projeto VSIX, que atua como um contêiner para instalação do comando. Se você quiser, você pode incluir outros componentes no mesmo VSIX.  
   
 #### <a name="to-set-up-the-visual-studio-solution"></a>Para configurar a solução do Visual Studio  
   
-1.  Crie um projeto de biblioteca de classes, adicionando-lo a uma solução existente de VSIX, ou criar uma nova solução.  
+1. Crie um projeto de biblioteca de classes, adicionando-lo a uma solução existente de VSIX, ou criar uma nova solução.  
   
-    1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
+    1. No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, clique em **biblioteca de classes**.  
+    2. Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, clique em **biblioteca de classes**.  
   
-    3.  Definir **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.  
+    3. Definir **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.  
   
-    4.  Defina o projeto de nome e o local e clique em Okey.  
+    4. Defina o projeto de nome e o local e clique em Okey.  
   
-2.  A menos que sua solução já contenha um, crie um projeto VSIX.  
+2. A menos que sua solução já contenha um, crie um projeto VSIX.  
   
-    1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
+    1. Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2. Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
-3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
+3. Defina o projeto VSIX como o projeto de inicialização da solução.  
   
-    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
+    - No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
   
-4.  Na **vsixmanifest**, em **conteúdo**, adicione o projeto de biblioteca de classe como um componente de MEF.  
+4. Na **vsixmanifest**, em **conteúdo**, adicione o projeto de biblioteca de classe como um componente de MEF.  
   
-    1.  Sobre o **metadados** guia, defina um nome para o VSIX.  
+    1. Sobre o **metadados** guia, defina um nome para o VSIX.  
   
-    2.  Sobre o **instalar destinos** guia, defina as versões do Visual Studio como os destinos.  
+    2. Sobre o **instalar destinos** guia, defina as versões do Visual Studio como os destinos.  
   
-    3.  Sobre o **ativos** guia, escolha um **New**e, na caixa de diálogo, defina:  
+    3. Sobre o **ativos** guia, escolha um **New**e, na caixa de diálogo, defina:  
   
          **Tipo de** = **componente MEF**  
   
@@ -92,9 +89,9 @@ Você pode criar uma extensão de integração do Visual Studio que responde qua
 ### <a name="import-the-work-item-namespace"></a>Importar o Namespace de Item de trabalho  
  No seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] project **referências**, adicione referências aos assemblies a seguir:  
   
-- Microsoft  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
-- WorkItemTracking  
+- Microsoft.VisualStudio.TeamFoundation.WorkItemTracking.dll  
   
   No código do programa, importe os seguintes namespaces:  
   
@@ -155,41 +152,41 @@ namespace WorkItems
  Para fins de teste, execute o manipulador de link no modo de depuração.  
   
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
+> Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
 #### <a name="to-test-the-link-handler"></a>Para testar o manipulador de link  
   
-1.  Pressione **F5**, ou o **depurar** menu, escolha **iniciar depuração**.  
+1. Pressione **F5**, ou o **depurar** menu, escolha **iniciar depuração**.  
   
      Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado.  
   
-     **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não iniciar, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
+     **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não iniciar, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
   
-2.  Em experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.  
+2. Em experimental [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra ou crie um projeto de modelagem e abra ou crie um diagrama de modelagem.  
   
-3.  Crie um elemento de modelo, como a classe UML e defina seu nome.  
+3. Crie um elemento de modelo, como a classe UML e defina seu nome.  
   
-4.  O elemento com o botão direito e, em seguida, clique em **Criar Item de trabalho**.  
+4. O elemento com o botão direito e, em seguida, clique em **Criar Item de trabalho**.  
   
-    -   Se o submenu Mostrar **abrir Conexão do Team Foundation Server**, você precisará fechar o projeto, conecte-se para o TFS apropriado e reiniciar este procedimento.  
+    - Se o submenu Mostrar **abrir Conexão do Team Foundation Server**, você precisará fechar o projeto, conecte-se para o TFS apropriado e reiniciar este procedimento.  
   
-    -   Se o submenu Mostrar uma lista de tipos de item de trabalho, clique em um.  
+    - Se o submenu Mostrar uma lista de tipos de item de trabalho, clique em um.  
   
          Abre um novo formulário de item de trabalho.  
   
-5.  Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra `OnWorkItemCreated()` trabalhou.  
+5. Verifique se o título do item de trabalho é o mesmo que o elemento de modelo, se você tiver usado o código de exemplo na seção anterior. Isso demonstra `OnWorkItemCreated()` trabalhou.  
   
-6.  Preencha o formulário, salve e feche o item de trabalho.  
+6. Preencha o formulário, salve e feche o item de trabalho.  
   
-7.  Verifique se o item de trabalho agora está em vermelho. Isso demonstra `OnWorkItemLinked()` no código de exemplo.  
+7. Verifique se o item de trabalho agora está em vermelho. Isso demonstra `OnWorkItemLinked()` no código de exemplo.  
   
-     **Solução de problemas**: se os métodos do manipulador não executou, verifique se que:  
+     **Solução de problemas**: Se os métodos do manipulador não executou, verifique se:  
   
-    -   O projeto de biblioteca de classes está listado como um componente MEF na **conteúdo** lista **source.extensions.manifest** no projeto VSIX.  
+    - O projeto de biblioteca de classes está listado como um componente MEF na **conteúdo** lista **source.extensions.manifest** no projeto VSIX.  
   
-    -   Correto `Export` atributo é anexado a classe do manipulador, e a classe implementa `ILinkedWorkItemExtension`.  
+    - Correto `Export` atributo é anexado a classe do manipulador, e a classe implementa `ILinkedWorkItemExtension`.  
   
-    -   Os parâmetros de todos os `Import` e `Export` atributos são válidos.  
+    - Os parâmetros de todos os `Import` e `Export` atributos são válidos.  
   
 ## <a name="about-the-work-item-handler-code"></a>Sobre o código de manipulador de Item de trabalho  
   
@@ -224,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Para fazer com que esse exemplo funcione, você deve adicionar uma referência de projeto ao `System.Drawing.dll`e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. No entanto, essas adições não são necessárias para outras implementações do `OnWorkItemLinked`.  
+> Para fazer com que esse exemplo funcione, você deve adicionar uma referência de projeto ao `System.Drawing.dll`e importar o namespace `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. No entanto, essas adições não são necessárias para outras implementações do `OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Escutando a remoção do Link  
  `OnWorkItemRemoved` é chamado uma vez antes de cada link de item de trabalho que é excluído. Se um elemento de modelo for excluído, todos os links serão removidos.  
@@ -240,9 +237,9 @@ public void OnWorkItemRemoved
   
  Para usar o exemplo a seguir, adicione esses assemblies .NET às referências do projeto:  
   
--   DLL  
+- Microsoft.TeamFoundation.Client.dll  
   
--   Microsoft  
+- Microsoft.TeamFoundation.WorkItemTracking.Client.dll  
   
 ```  
   
@@ -304,6 +301,3 @@ element.AddReference(ReferenceConstants.WorkItem, linkString, true);
  [Anexar cadeias de caracteres de referência a elementos de modelo UML](../modeling/attach-reference-strings-to-uml-model-elements.md)   
  [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

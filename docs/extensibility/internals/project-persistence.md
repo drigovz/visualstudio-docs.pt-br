@@ -11,23 +11,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca9786183f2d814459e650c6018a99d7ee37f6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859707"
 ---
 # <a name="project-persistence"></a>Persistência de projeto
 Persistência é uma consideração de design chave para seu projeto. A maioria dos projetos usar itens de projeto que representam arquivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também oferece suporte a projetos cujos dados são não baseados em arquivo. Os arquivos de propriedade do projeto e o arquivo de projeto devem ser persistente. O IDE instrui o projeto para salvar a mesmo ou para um item de projeto.
 
- Modelos para projetos são passados para a fábrica de projeto. Os modelos devem dar suporte a inicialização de todos os itens de projeto acordo com os requisitos do tipo de projeto específico. Esses modelos podem posteriormente salvos como arquivos de projeto e gerenciados pelo IDE através da solução. Para obter mais informações, consulte [criação de projeto instâncias por usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluções](../../extensibility/internals/solutions.md).
+ Modelos para projetos são passados para a fábrica de projeto. Os modelos devem dar suporte a inicialização de todos os itens de projeto acordo com os requisitos do tipo de projeto específico. Esses modelos podem posteriormente salvos como arquivos de projeto e gerenciados pelo IDE através da solução. Para obter mais informações, consulte [criação de projeto instâncias por usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md) e [soluções](../../extensibility/internals/solutions-overview.md).
 
  Itens de projeto podem ser baseado em arquivo ou não se baseiam no arquivo:
 
--   Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em c#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.
+- Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em c#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.
 
--   Itens com base em arquivo não podem salvar os itens a um banco de dados ou o repositório.
+- Itens com base em arquivo não podem salvar os itens a um banco de dados ou o repositório.
 
 ## <a name="commit-models"></a>Modelos de confirmação
  Depois de decidir onde se encontram os itens de projeto, você deve escolher o modelo apropriado de confirmação. Por exemplo, em um modelo baseado em arquivo com arquivos locais, cada projeto pode ser salvo com autonomia. Em um modelo de repositório, você pode salvar vários itens em uma transação. Para obter mais informações, consulte [decisões de Design de tipo de projeto](../../extensibility/internals/project-type-design-decisions.md).
@@ -43,5 +43,5 @@ Persistência é uma consideração de design chave para seu projeto. A maioria 
  Os métodos no `IVsPersistHierarchyItem2` interface são usados para determinar se um item pode ser recarregado e, se o item pode ser, para recarregá-lo. Além disso, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método pode ser implementado para fazer com que itens alterados para serem descartados sem ser salvado.
 
 ## <a name="see-also"></a>Consulte também
-- [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Criar instâncias de projetos usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

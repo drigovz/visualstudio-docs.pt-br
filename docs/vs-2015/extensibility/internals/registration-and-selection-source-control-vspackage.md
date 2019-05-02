@@ -1,27 +1,22 @@
 ---
 title: Registro e seleção (VSPackage de controle do código-fonte) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, source control packages
 - source control packages, registration
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 caps.latest.revision: 35
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 636e70357c23059a505d657af0078653de413976
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 692f2a9f34edd41839179f7229e079ec8e791800
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764458"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928091"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage do controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUD
 ### <a name="registry-entries"></a>Entradas do registro  
  Um pacote de controle de origem precisa de três GUIDs privadas:  
   
-- GUID do pacote: Isso é o GUID do principal para o pacote que contém a implementação de controle do código-fonte (chamada ID_Package nesta seção).  
+- GUID do pacote: Esse é o GUID principal para o pacote que contém a implementação de controle do código-fonte (chamada ID_Package nesta seção).  
   
 - GUID de controle do código-fonte: Isso é um GUID para o controle de origem usado para registrar com o Stub de controle de origem Visual do Studio de VSPackage e também é usado como um contexto de interface do usuário do comando GUID. O serviço de controle do código-fonte GUID está registrado sob o GUID de controle do código-fonte. No exemplo, o GUID de controle do código-fonte é chamado ID_SccProvider.  
   
@@ -48,10 +43,10 @@ Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUD
   
 |Nome da chave|Entradas|  
 |--------------|-------------|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(padrão) = rg_sz: {ID_SccProvider}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(padrão) = rg_sz:\<nome amigável do pacote ><br /><br /> Serviço = rg_sz: {SID_SccPkgService}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(padrão) = rg_sz: #\<ID de recurso para o nome localizado ><br /><br /> Pacote = rg_sz: {ID_Package}|  
-|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Observe que o nome da chave `SourceCodeControl`, já é usado por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e não está disponível como uma opção para \<PackageName >.)|(padrão) = rg_sz: {ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\`|(default) = rg_sz:{ID_SccProvider}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\`|(padrão) = rg_sz:\<nome amigável do pacote ><br /><br /> Service = rg_sz:{SID_SccPkgService}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\               Name\`|(padrão) = rg_sz: #\<ID de recurso para o nome localizado ><br /><br /> Package = rg_sz:{ID_Package}|  
+|`HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SolutionPersistence\             <PackageName>\`<br /><br /> (Observe que o nome da chave `SourceCodeControl`, já é usado por [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e não está disponível como uma opção para \<PackageName >.)|(default) = rg_sz:{ID_Package}|  
   
 ## <a name="selecting-a-source-control-package"></a>Selecionando um pacote de controle do código-fonte  
  Vários de plug-ins baseados na API de plug-in de controle do código-fonte e os VSPackages pode ser registrados simultaneamente de controle de origem. O processo de selecionar um plug-in de controle do código-fonte ou VSPackage deve garantir que [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] carrega o plug-in ou VSPackage no momento apropriado e pode adiar o carregamento de componentes desnecessários até que eles sejam necessários. Além disso, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] deve remover toda interface do usuário de outros VSPackages inativos, incluindo itens de menu, caixas de diálogo e barras de ferramentas e exibir a interface do usuário para o Active Directory VSPackage.  
@@ -91,4 +86,3 @@ Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUD
  [Recursos](../../extensibility/internals/source-control-vspackage-features.md)   
  [Criando um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)   
  [VSPackages](../../extensibility/internals/vspackages.md)
-

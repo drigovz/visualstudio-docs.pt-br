@@ -1,14 +1,9 @@
 ---
 title: Refatoração (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 f1_keywords:
 - vs.csharp.refactoring.preview
 - vs.csharp.refactoring.issues
@@ -22,13 +17,13 @@ ms.assetid: a39e656a-f81f-4c87-b484-a23168ff1dfc
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: b4f74017a067d4681eb14ba4eb826df504497430
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49262308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444533"
 ---
 # <a name="refactoring-c"></a>Refatoração (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +32,17 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
   
  Visual c# fornece os seguintes comandos de refatoração sobre o **refatoração** menu:  
   
--   [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Refatoração Extrair método (C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refatoração Renomear (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refatoração Renomear (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Refatoração Encapsular campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Refatoração Encapsular campo (C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refatoração Extrair Interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refatoração Extrair Interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Refatoração Remover parâmetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Refatoração Remover parâmetros (C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Refatoração Reordenar parâmetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Refatoração Reordenar parâmetros (C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refatoração de multiprojeto  
  Visual Studio dá suporte a vários projetos de refatoração para projetos que estão na mesma solução. Todas as operações de refatoração que corrigir referências em arquivos corrigir essas referências a todos os projetos do mesmo idioma. Isso funciona para todas as referências de projeto a projeto. Por exemplo, se você tiver um aplicativo de console que faz referência a uma biblioteca de classes, quando você renomeia um tipo de biblioteca de classe (usando o `Rename` operação de refatoração), as referências ao tipo de biblioteca de classe no aplicativo de console também são atualizadas.  
@@ -59,7 +54,7 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
  Se o compilador não tem uma compreensão completa de seu programa, e é possível que o mecanismo de refatoração não pode atualizar todas as referências apropriadas, a caixa de diálogo de aviso é exibida. Essa caixa de diálogo de aviso também fornece uma oportunidade para que você possa visualizar seu código na **visualizar alterações** caixa de diálogo antes de confirmar as alterações.  
   
 > [!NOTE]
->  Se um método contém um erro de sintaxe (que indica o IDE com um sublinhado ondulado vermelho), o mecanismo de refatoração não atualizará todas as referências a um elemento dentro do método. O exemplo a seguir ilustra esse comportamento.  
+> Se um método contém um erro de sintaxe (que indica o IDE com um sublinhado ondulado vermelho), o mecanismo de refatoração não atualizará todas as referências a um elemento dentro do método. O exemplo a seguir ilustra esse comportamento.  
   
  Por padrão, se você executar uma operação de refatoração sem referência a visualização é alterado é detectado um erro de compilação em seu programa e o ambiente de desenvolvimento exibe essa caixa de diálogo de aviso.  
   
@@ -113,4 +108,4 @@ class Example
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o ambiente de desenvolvimento do Visual Studio para c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
- [Como restaurar snippets de refatoração C#](../ide/how-to-restore-csharp-refactoring-snippets.md)
+ [Como: restaurar snippets de refatoração de C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

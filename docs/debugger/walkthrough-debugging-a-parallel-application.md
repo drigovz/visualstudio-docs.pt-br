@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ecb3d7658cc89207551af7df875eba0b2c1e4f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: efd3ffb81d8ef1ad69a24acc277b8f5fe10df436
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62930739"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>Passo a passo: Depurando um aplicativo paralelo no Visual Studio (C#, Visual Basic, C++)
 
@@ -35,15 +35,15 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
  Este passo a passo ensina estas tarefas:
 
--   Como exibir as chamadas de pilhas de todos os threads em uma exibição.
+- Como exibir as chamadas de pilhas de todos os threads em uma exibição.
 
--   Como exibir a lista de instâncias de `System.Threading.Tasks.Task` que são criadas no seu aplicativo.
+- Como exibir a lista de instâncias de `System.Threading.Tasks.Task` que são criadas no seu aplicativo.
 
--   Como exibir as chamadas de pilhas de tarefas reais em vez de threads.
+- Como exibir as chamadas de pilhas de tarefas reais em vez de threads.
 
--   Como navegar até o código das janelas **Tarefas Paralelas** e **Pilhas Paralelas**.
+- Como navegar até o código das janelas **Tarefas Paralelas** e **Pilhas Paralelas**.
 
--   Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.
+- Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Este passo a passo pressupõe que **Just My Code** está habilitada (ela é habilitada por padrão em versões mais recentes do Visual Studio). No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.
@@ -62,40 +62,56 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-create-the-sample-project"></a>Para criar o projeto de exemplo
 
-1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+1. Abra o Visual Studio e crie um projeto.
 
-2. Selecione a **Visual c#**, **Visual Basic**, ou **Visual C++**. Para as linguagens gerenciadas, certifique-se de que [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] seja exibido na caixa da estrutura.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
 
-3. Sob **área de trabalho do Windows**, escolha **aplicativo de Console** e, em seguida, clique em **Okey**. Permaneça na configuração de depuração, que é o padrão.
+    - Para C# ou Visual Basic, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para o C# ou o Visual Basic. Na caixa de diálogo que aparece, escolha **Criar**.
+    - Para C++, escolha **criar novo projeto de aplicativo de Console** para C++. Na caixa de diálogo que aparece, escolha **Criar**.
 
-4. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
+    Em seguida, digite um nome ou use o nome padrão e clique em **criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
 
-5. Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.
+    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um aplicativo Visual Basic, sob **Visual Basic**, escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um C++ aplicativo, em **Visual C++** , escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
+
+    Em seguida, digite um nome ou use o nome padrão e clique em **Okey**.
+    ::: moniker-end
+
+    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+1. No projeto, abra o arquivo de código .cpp, .cs ou .vb. Exclua o conteúdo para criar um arquivo de código vazio.
+
+1. Cole o código a seguir para seu idioma escolhido no arquivo de código vazio.
 
    [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
    [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
    [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
 
-6. No menu **Arquivo**, clique em **Salvar tudo**.
+1. No menu **Arquivo**, clique em **Salvar tudo**.
 
-7. No menu **Compilar**, clique em **Recompilar Solução**.
+1. No menu **Compilar**, clique em **Recompilar Solução**.
 
     Observe que há quatro chamadas a `Debugger.Break` (`DebugBreak` no exemplo do C++). Em virtude disso, você não precisa inserir pontos de interrupção; a execução do aplicativo causará sua interrupção no depurador até quatro vezes.
 
-## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: exibição de Threads
+## <a name="using-the-parallel-stacks-window-threads-view"></a>Usando a janela Pilhas Paralelas: Modo de Exibição de Threads
  No menu **Depuração**, clique em **Iniciar Depuração**. Aguarde até que o primeiro ponto de interrupção seja atingido.
 
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Para exibir a pilha de chamadas de um único thread
 
-1.  No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**. Encaixe a janela **Threads** na parte inferior do Visual Studio.
+1. No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**. Encaixe a janela **Threads** na parte inferior do Visual Studio.
 
-2.  No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Pilha de Chamadas**. Encaixe a janela **Pilha de Chamadas** na parte inferior do Visual Studio.
+2. No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Pilha de Chamadas**. Encaixe a janela **Pilha de Chamadas** na parte inferior do Visual Studio.
 
-3.  Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm uma seta amarela. Quando você altera o thread atual, a pilha de chamadas é exibida na janela **Pilha de Chamadas**.
+3. Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm uma seta amarela. Quando você altera o thread atual, a pilha de chamadas é exibida na janela **Pilha de Chamadas**.
 
 #### <a name="to-examine-the-parallel-stacks-window"></a>Para examinar a janela Pilhas Paralelas
 
-1.  No menu **Depurar**, aponte para **Windows** e, em seguida, clique em **Pilhas Paralelas**. Verifique se **Threads** está selecionado na caixa no canto superior esquerdo.
+1. No menu **Depurar**, aponte para **Windows** e, em seguida, clique em **Pilhas Paralelas**. Verifique se **Threads** está selecionado na caixa no canto superior esquerdo.
 
      Usando o **pilhas paralelas** janela, você pode exibir várias pilhas de chamadas ao mesmo tempo em uma exibição. A ilustração a seguir mostra a **pilhas paralelas** acima da janela do **pilha de chamadas** janela.
 
@@ -115,7 +131,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Para retomar a execução até o segundo ponto de interrupção
 
-1.  Para retomar a execução até que o segundo ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**. A ilustração a seguir mostra a árvore do thread no segundo ponto de interrupção.
+1. Para retomar a execução até que o segundo ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**. A ilustração a seguir mostra a árvore do thread no segundo ponto de interrupção.
 
      ![Janela pilhas paralelas que mostra muitas ramificações](../debugger/media/pdb_walkthrough_2.png "PDB_Walkthrough_2")
 
@@ -147,7 +163,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para retomar a execução até o terceiro ponto de interrupção
 
-1.  Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
+1. Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
 
      Quando vários threads estão no mesmo método, mas o método não estava no início da pilha de chamadas, ele é exibido em caixas diferentes. Um exemplo no ponto de interrupção atual é S.L, que tem três threads e aparece em três caixas. Clique duas vezes em S.L.
 
@@ -161,23 +177,23 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      O menu de atalho da janela **Pilhas Paralelas** também tem os seguintes itens.
 
-    -   **Exibição hexadecimal** alterna os números nas dicas de ferramenta entre decimais e hexadecimais.
+    - **Exibição hexadecimal** alterna os números nas dicas de ferramenta entre decimais e hexadecimais.
 
-    -   **Configurações de símbolo** abrir as caixas de diálogo correspondente.
+    - **Configurações de símbolo** abrir as caixas de diálogo correspondente.
 
-    -   **Mostrar Threads na origem** alterna a exibição de marcadores de thread em seu código-fonte, que mostra o local de threads em seu código-fonte.
+    - **Mostrar Threads na origem** alterna a exibição de marcadores de thread em seu código-fonte, que mostra o local de threads em seu código-fonte.
 
-    -   **Mostrar Código Externo** exibe todos os registros, mesmo quando eles não estão no código do usuário. Tente verificar o diagrama se expande para acomodar os registros adicionais (que podem ser escurecidos porque você não tem símbolos para eles).
+    - **Mostrar Código Externo** exibe todos os registros, mesmo quando eles não estão no código do usuário. Tente verificar o diagrama se expande para acomodar os registros adicionais (que podem ser escurecidos porque você não tem símbolos para eles).
 
-2.  Na janela **Pilhas Paralelas**, verifique se a **Autorrolagem para Quadro de Pilha Atual** na barra de ferramentas está habilitada.
+2. Na janela **Pilhas Paralelas**, verifique se a **Autorrolagem para Quadro de Pilha Atual** na barra de ferramentas está habilitada.
 
      Quando houver diagramas grandes e você for para o próximo ponto de interrupção, talvez seja conveniente que o modo de exibição role até o registro de ativação ativo do thread atual; isto é, o thread que atingiu o ponto de interrupção primeiro.
 
-3.  Antes de continuar, na janela **Pilhas Paralelas**, role totalmente para a esquerda e para baixo.
+3. Antes de continuar, na janela **Pilhas Paralelas**, role totalmente para a esquerda e para baixo.
 
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para retomar a execução até o quarto ponto de interrupção
 
-1.  Para retomar a execução até que o quarto ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
+1. Para retomar a execução até que o quarto ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
 
      Observe como o modo de exibição rolou automaticamente até o local certo. Alterne os threads na janela **Threads** ou alterne registros de ativação na janela **Pilha de Chamadas** e observe como a exibição sempre rola automaticamente até o registro correto. Desabilite a opção **Autorrolagem para Quadro de Ferramenta Atual** e veja a diferença.
 
@@ -193,22 +209,22 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
      Você também pode exibir as pilhas na direção de cima para baixo em vez de na direção de baixo para cima clicando no menu **Ferramentas** e em **Opções** e selecionando ou desmarcando a opção no nó **Depuração**.
 
-2.  Antes de continuar no menu **Depurar**, clique em **Parar Depuração** para terminar a execução.
+2. Antes de continuar no menu **Depurar**, clique em **Parar Depuração** para terminar a execução.
 
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Usando a janela Tarefas Paralelas e o Modo de Exibição Tarefas na janela Pilhas Paralelas
  Recomendamos que você conclua os procedimentos anteriores antes de continuar.
 
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Para reiniciar o aplicativo até atingir o primeiro ponto de interrupção
 
-1.  No menu **Depurar**, clique em **Iniciar Depuração** e aguarde até que o primeiro ponto de interrupção seja atingido.
+1. No menu **Depurar**, clique em **Iniciar Depuração** e aguarde até que o primeiro ponto de interrupção seja atingido.
 
-2.  No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**. Encaixe a janela **Threads** na parte inferior do Visual Studio.
+2. No menu **Depurar**, aponte para **Janelas** e, em seguida, clique em **Threads**. Encaixe a janela **Threads** na parte inferior do Visual Studio.
 
-3.  No menu **Depurar**, aponte para **Janelas** e clique em **Pilha de Chamadas**. Encaixe a janela **Pilha de Chamadas** na parte inferior do Visual Studio.
+3. No menu **Depurar**, aponte para **Janelas** e clique em **Pilha de Chamadas**. Encaixe a janela **Pilha de Chamadas** na parte inferior do Visual Studio.
 
-4.  Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm a seta amarela. Quando você altera o thread atual, as outras janelas são atualizadas. Em seguida, examinaremos tarefas.
+4. Clique duas vezes em um thread na janela **Threads** para torná-lo atual. Os threads atuais têm a seta amarela. Quando você altera o thread atual, as outras janelas são atualizadas. Em seguida, examinaremos tarefas.
 
-5.  Sobre o **Debug** , aponte para **Windows**e, em seguida, clique em **tarefas**. A ilustração a seguir mostra a **tarefas** janela.
+5. Sobre o **Debug** , aponte para **Windows**e, em seguida, clique em **tarefas**. A ilustração a seguir mostra a **tarefas** janela.
 
      ![Quatro executando as tarefas na janela tarefas](../debugger/media/pdb_walkthrough_6.png "PDW_Walkthrough_6")
 
@@ -222,7 +238,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Para retomar a execução até o segundo ponto de interrupção
 
-1.  Para retomar a execução até que o segundo ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
+1. Para retomar a execução até que o segundo ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
 
      Anteriormente, o **Status** coluna mostrou todas as tarefas como ativo, mas agora duas tarefas estão bloqueadas. As tarefas podem ser bloqueadas por diversos motivos diferentes. Na coluna **Status**, passe o mouse sobre uma tarefa em espera para saber por que ela está bloqueada. Por exemplo, na ilustração, a tarefa 3 está aguardando a tarefa 4.
 
@@ -248,7 +264,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Para retomar a execução até o terceiro ponto de interrupção
 
-1.  Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
+1. Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**.
 
      Uma nova tarefa, tarefa 5, está sendo executada e a tarefa 4 está aguardando. Veja o motivo passando o mouse sobre a tarefa em espera na janela **Status**. No **pai** coluna, observe que a tarefa 4 é o pai da tarefa 5.
 
@@ -268,7 +284,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Para retomar a execução até o quarto ponto de interrupção
 
-1.  Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**. Clique no cabeçalho de coluna **ID** para classificar por ID. Você verá a ilustração a seguir.
+1. Para retomar a execução até que o terceiro ponto de interrupção seja atingido, no menu **Depurar**, clique em **Continuar**. Clique no cabeçalho de coluna **ID** para classificar por ID. Você verá a ilustração a seguir.
 
      ![Quatro estados na janela pilhas paralelas de tarefas](../debugger/media/pdb_walkthrough_10.png "PDB_Walkthrough_10")
 

@@ -1,14 +1,9 @@
 ---
 title: Elemento PromptForSaveOnCreation (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#PromptForSaveOnCreation
 helpviewer_keywords:
@@ -16,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 75174674-0c3c-4b57-b2fd-6ea8e817b67d
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6d6480df4d51e91f6953fcbb5c5c00542dac2d8e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e9e6ece0d683d08521a76286671c944e57206c6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725894"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926492"
 ---
 # <a name="promptforsaveoncreation-element-visual-studio-templates"></a>Elemento PromptForSaveOnCreation (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se o usuário é solicitado para um projeto local por meio de salvamento a **novo projeto** caixa de diálogo ao criar um projeto. Se esse elemento é definido como `true`, em seguida, o usuário é solicitado que você salve local; se `false`, em seguida, ele não será solicitado. (Ou seja, um projeto temporário é criado.)  
   
- \<VSTemplate >  
- \<TemplateData >  
+ \<VSTemplate>  
+ \<TemplateData>  
  \<PromptForSaveOnCreation>  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -62,7 +57,7 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
 ## <a name="remarks"></a>Comentários  
  `PromptForSaveOnCreation` é um elemento opcional. O valor padrão é `false`.  
   
- Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto no disco. Para obter mais informações, consulte [os projetos temporários NIB](http://msdn.microsoft.com/en-us/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
+ Projetos temporários são projetos que você pode criar e modificar sem salvar o conteúdo desse projeto no disco. Para obter mais informações, consulte [os projetos temporários NIB](http://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir define o valor da `PromptForSaveOnCreation` igual a `false`, que especifica para permitir que o projeto a ser criado como um projeto temporário.  
@@ -95,4 +90,3 @@ Especifica se o usuário é solicitado para um projeto local por meio de salvame
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

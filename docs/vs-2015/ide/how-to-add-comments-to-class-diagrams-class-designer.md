@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584433"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Como adicionar comentários a diagramas de classe (Designer de Classe)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Como: Adicionar comentários a diagramas de classe (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar formas de comentário para anotar os diagramas de classe. Uma forma de comentário tem uma propriedade, **Texto**, na qual você pode digitar texto. Formas de comentário existem apenas na superfície do diagrama, e não no código.  
@@ -33,11 +33,11 @@ Você pode usar formas de comentário para anotar os diagramas de classe. Uma fo
   
 ### <a name="to-add-a-comment"></a>Para adicionar um comentário  
   
-1.  Arraste um comentário da **Caixa de Ferramentas do Designer de Classe** para o diagrama de classe.  
+1. Arraste um comentário da **Caixa de Ferramentas do Designer de Classe** para o diagrama de classe.  
   
-2.  Clique na nova forma de comentário no diagrama e digite o texto desejado.  
+2. Clique na nova forma de comentário no diagrama e digite o texto desejado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)   
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)   
- [Como personalizar diagramas de classe (Designer de Classe)](../ide/how-to-customize-class-diagrams-class-designer.md)
+ [Como: personalizar diagramas de classe (Designer de Classe)](../ide/how-to-customize-class-diagrams-class-designer.md)

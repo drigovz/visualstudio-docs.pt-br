@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 624a2a735032342d4eb47e2393ecae3ea3247891
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f9fa341b781028db1836e963c99ae5069ce8fe18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54797288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433603"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Use o comando **CodeIndex** para gerenciar a indexação de código no Team Foun
  Para usar o comando **CodeIndex**, é necessário ser um membro do grupo de segurança **Team Foundation Administrators**. Consulte [Referência de permissões para o Team Foundation Server](http://msdn.microsoft.com/library/39997de5-b7fb-4777-b779-07de0543abe6).  
   
 > [!NOTE]
->  Mesmo que use credenciais administrativas para entrar, você deve abrir uma janela de prompt de comandos com privilégios elevados para executar esse comando. Você também deve executar esse comando a partir do nível de aplicativo para o Team Foundation.  
+> Mesmo que use credenciais administrativas para entrar, você deve abrir uma janela de prompt de comandos com privilégios elevados para executar esse comando. Você também deve executar esse comando a partir do nível de aplicativo para o Team Foundation.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -62,7 +62,7 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 ## <a name="examples"></a>Exemplos  
   
 > [!NOTE]
->  Os exemplos de empresas, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, lugares e eventos aqui mencionados são fictícios.  Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.  
+> Os exemplos de empresas, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, lugares e eventos aqui mencionados são fictícios.  Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.  
   
  Para ver o status e a configuração de indexação do código:  
   

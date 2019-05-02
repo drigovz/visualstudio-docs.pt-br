@@ -14,12 +14,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8278448c1b10062c3e030d763d1cf4e37f9cc7e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935406"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Ferramentas para detectar e gerenciar instâncias do Visual Studio
 
@@ -29,7 +31,7 @@ Há várias ferramentas que você pode usar para detectar instalações do Visua
 
 Tornamos várias ferramentas disponíveis que ajudarão você a detectar e gerenciar instâncias do Visual Studio instaladas em computadores cliente:
 
-* [VSWhere](https://github.com/microsoft/vswhere): um executável integrado ao Visual Studio ou disponível para distribuição separada que ajuda a encontrar o local de todas as instâncias do Visual Studio em um computador específico.
+* [vswhere](https://github.com/microsoft/vswhere): um executável integrado ao Visual Studio ou disponível para distribuição separada que ajuda a encontrar o local de todas as instâncias do Visual Studio em um computador específico.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell): Scripts do PowerShell que usam a API de Configuração de Instalação para identificar instâncias instaladas do Visual Studio.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples): Amostras do C# e C++ que apresentam como usar a API de Configuração de Instalação para consultar uma instalação existente.
 
@@ -37,25 +39,33 @@ Além disso, a [API de Configuração de Instalação](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Usar o vswhere.exe
 
-`vswhere.exe` é incluído automaticamente no Visual Studio 2017 versão 15.2 ou superior, ou pode ser baixado da [página de versões](https://github.com/Microsoft/vswhere/releases). Use o `vswhere -?` para obter informações de ajuda sobre a ferramenta. Como exemplo, este comando mostra todas as versões do Visual Studio, incluindo versões mais antigas do produto e pré-lançamentos e gera os resultados no formato JSON:
+`vswhere.exe` é automaticamente incluído no Visual Studio (a partir do Visual Studio 2017 versão 15.2 e posteriores), ou você pode baixá-lo [da página de versões do vswhere](https://github.com/Microsoft/vswhere/releases). Use o `vswhere -?` para obter informações de ajuda sobre a ferramenta. Como exemplo, este comando mostra todas as versões do Visual Studio, incluindo versões mais antigas do produto e pré-lançamentos e gera os resultados no formato JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
 
->[!TIP]
->Para obter mais informações sobre a instalação do Visual Studio 2017, confira [Arquivos de Instalação do Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Para obter mais informações sobre a instalação do Visual Studio 2017, confira [Arquivos de Instalação do Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+
+::: moniker-end
 
 ## <a name="editing-the-registry-for-a-visual-studio-instance"></a>A edição do Registro para uma instância do Visual Studio
 
-No Visual Studio de 2017, configurações do Registro são armazenadas em um local privado, o que permite várias instâncias lado a lado no mesmo computador com a mesma versão do Visual Studio.
+No Visual Studio, configurações do Registro são armazenadas em um local privado, o que permite várias instâncias lado a lado no mesmo computador com a mesma versão do Visual Studio.
 
 Como essas entradas não são armazenadas no Registro global, há instruções especiais para usar o Editor do Registro para fazer alterações nas configurações do Registro:
 
-1. Se você tiver uma instância do Visual Studio 2017 aberta, feche-a.
-2. Inicie o `regedit.exe`.
-3. Selecione o nó `HKEY_LOCAL_MACHINE`.
-4. No menu principal do Regedit, selecione **Arquivo -> Carregar Hive...** e selecione o arquivo de Registro privado, que é armazenado na pasta **AppData\Local**. Por exemplo:
+1. Se você tiver uma instância do Visual Studio aberta, feche-a.
+
+1. Inicie o `regedit.exe`.
+
+1. Selecione o nó `HKEY_LOCAL_MACHINE`.
+
+1. No menu principal do Regedit, selecione **Arquivo** > **Carregar Hive...** e selecione o arquivo de Registro privado, que é armazenado na pasta **AppData\Local**. Por exemplo:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
@@ -66,7 +76,7 @@ Como essas entradas não são armazenadas no Registro global, há instruções e
 Você precisará fornecer um nome de hive, que se tornará o nome do hive isolado. Depois de fazer isso, você poderá pesquisar o Registro no hive isolado que criou.
 
 > [!IMPORTANT]
-> Antes de iniciar o Visual Studio novamente, você deve descarregar a seção isolada que criou. Para fazer isso, selecione Arquivo -> Descarregar Hive no menu principal do Regedit. (Se você não fizer isso, o arquivo permanecerá bloqueado e o Visual Studio não poderá ser iniciado.)
+> Antes de iniciar o Visual Studio novamente, você deve descarregar a seção isolada que criou. Para fazer isso, selecione **Arquivo** > **Descarregar Hive** no menu principal do Regedit. (Se você não fizer isso, o arquivo permanecerá bloqueado e o Visual Studio não poderá ser iniciado.)
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

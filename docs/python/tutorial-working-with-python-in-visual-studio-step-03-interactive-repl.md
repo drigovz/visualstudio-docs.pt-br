@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Etapa 3 de um passo a passo básico das funcionalidades do Python no Visual Studio, abordando a janela REPL interativa do Python.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a1e4d87f86610fd009e3f8c07e8fd935e76abba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430803"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6773e73eaa4d6d53bbfa63e26b66f56553910444
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978322"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.
@@ -43,11 +43,11 @@ ms.locfileid: "54872255"
 
 #### <a name="to-set-the-time-out-value"></a>Para definir o valor de tempo limite
 
-1.  No registro, navegue até a seguinte chave:
+1. No registro, navegue até a seguinte chave:
 
      **HKEY_CURRENT_USER\Software\Microsoft\VSTA**
 
-2.  No **AddInTimeout** subchave, defina o valor de tempo limite em milissegundos.
+2. No **AddInTimeout** subchave, defina o valor de tempo limite em milissegundos.
 
      Se o **AddInTimeout** subchave não existir, crie-o como um DWORD.
 

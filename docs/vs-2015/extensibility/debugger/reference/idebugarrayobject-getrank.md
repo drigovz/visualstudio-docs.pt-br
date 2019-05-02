@@ -1,58 +1,51 @@
 ---
 title: IDebugArrayObject::GetRank | Microsoft Docs
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.date: 11/04/2016
+ms.topic: reference
 f1_keywords:
 - IDebugArrayObject::GetRank
 helpviewer_keywords:
 - IDebugArrayObject::GetRank method
 ms.assetid: 9948551a-e334-4ff6-979c-08dab633b9b6
-caps.latest.revision: 11
+author: gregvanl
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c6e20efe88e056b7cb780561ee2f1c3d5b057bb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: bf9700e2c3b29561229999506ed789a2e3d6e52e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51738838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423667"
 ---
 # <a name="idebugarrayobjectgetrank"></a>IDebugArrayObject::GetRank
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Obtém a classificação da matriz, ou seja, o número de dimensões.
 
-Obtém a classificação da matriz, ou seja, o número de dimensões.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT GetRank(   
-   DWORD* pdwRank  
-);  
-```  
-  
-```csharp  
-int GetRank(  
-   out uint pdwRank  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pdwRank`  
- [out] Retorna a classificação.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Use o [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) método para recuperar o tamanho de cada dimensão do objeto de matriz.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
+## <a name="syntax"></a>Sintaxe
 
+```cpp
+HRESULT GetRank( 
+   DWORD* pdwRank
+);
+```
+
+```csharp
+int GetRank(
+   out uint pdwRank
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pdwRank`
+
+ [out] Retorna a classificação.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Use o [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) método para recuperar o tamanho de cada dimensão do objeto de matriz.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

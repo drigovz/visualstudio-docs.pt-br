@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4dac34d2e568d5f487e06da89151fb91ebcc69f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415199"
 ---
 # <a name="expose-types-to-visual-designers"></a>Expor tipos aos designers visuais
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. As classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências além de suas dependências). Ele também pode ser necessário para designers visuais classes de acesso e tipos que são definidos nos arquivos gerados por ferramentas personalizadas.
@@ -27,19 +27,19 @@ ms.locfileid: "56629684"
  O sistema de projeto fornece suporte completo para o controle de alterações ao arquivo de saída de uma ferramenta personalizada, desde que essas alterações são o resultado da execução da ferramenta personalizada. Cada vez que a ferramenta personalizada é executada, um novo PE temporário é gerado e são enviadas notificações apropriadas para designers.
 
 > [!NOTE]
->  Porque o arquivo de geração de executáveis de programas temporários ocorre em segundo plano, sem erros são relatados para o usuário se a compilação falhará.
+> Porque o arquivo de geração de executáveis de programas temporários ocorre em segundo plano, sem erros são relatados para o usuário se a compilação falhará.
 
  Ferramentas personalizadas que tiram proveito do suporte de PE temporário devem seguir as regras a seguir:
 
--   **GeneratesDesignTimeSource** deve ser definido como 1 no registro.
+- **GeneratesDesignTimeSource** deve ser definido como 1 no registro.
 
      Nenhuma compilação do arquivo executável de programa ocorre sem essa configuração.
 
--   O código gerado deve estar no mesmo idioma em que a configuração do projeto global.
+- O código gerado deve estar no mesmo idioma em que a configuração do projeto global.
 
      O PE temporário é compilado, independentemente do que a ferramenta personalizada informa como a extensão solicitada na <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.DefaultExtension%2A> desde que **GeneratesDesignTimeSource** é definido como 1 no registro. A extensão não precisa ser *. vb*, *. CS*, ou *. jsl*; pode ser qualquer extensão.
 
--   O código gerado pela ferramenta personalizada deve ser válido, e ele deve compilar em seu próprio usando apenas o conjunto de referências presentes no projeto no momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina a execução.
+- O código gerado pela ferramenta personalizada deve ser válido, e ele deve compilar em seu próprio usando apenas o conjunto de referências presentes no projeto no momento <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator.Generate%2A> termina a execução.
 
      Quando um PE temporário é compilado, o único arquivo de origem fornecido ao compilador é a saída da ferramenta personalizada. Portanto, uma ferramenta personalizada que usa um PE temporário deve gerar arquivos de saída que podem ser compilados independentemente dos outros arquivos no projeto.
 

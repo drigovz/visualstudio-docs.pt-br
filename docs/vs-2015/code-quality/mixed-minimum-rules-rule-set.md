@@ -1,31 +1,25 @@
 ---
 title: Conjunto de regras de regras de mínimas misto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 50a327173bd1d5edac9a378e0251a50ce045a256
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831439"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653067"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus projetos do C++ que dão suporte a Common Language Runtime, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir essa regra definida em qualquer conjunto personalizado que você criar para seus projetos em C++ que dão suporte a Common Language Runtime.  
-
 
 |                                            Regra                                             |                                                  Descrição                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -65,7 +59,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                              [C6504](../code-quality/c6504.md)                              |                                              Nulo em não ponteiro                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               MustCheck em nulo                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      Tamanho do buffer em não ponteiro ou matriz                                      |
-|        [C6507](http://msdn.microsoft.com/en-us/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
+|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           Acesso para gravação na constante                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          Retorno usado em pré condição                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        Terminação nula em não ponteiro                                         |
@@ -76,13 +70,12 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                              [C6516](../code-quality/c6516.md)                              |                                          Nenhuma propriedade no atributo                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       Tamanho válido em buffer não legível                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     Tamanho gravável em buffer não gravável                                      |
-|        [C6519](http://msdn.microsoft.com/en-us/2b6326b0-0539-4d26-8fb1-720114933232)        |                  Anotação inválida: o valor da propriedade 'NeedsRelease' deve ser Sim ou Não                   |
-|        [C6521](http://msdn.microsoft.com/en-us/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
+|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           Tipo de cadeia de caracteres de tamanho inválido                                            |
-|        [C6523](http://msdn.microsoft.com/en-us/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
+|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Local inatingível da cadeia de caracteres inválido                                    |
-|        [C6526](http://msdn.microsoft.com/en-us/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
-|                              [C6527](../code-quality/c6527.md)                              |              Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void               |
+|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
+|                              [C6527](../code-quality/c6527.md)                              |              Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                              [C6540](../code-quality/c6540.md)                              | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |
 |                              [C6551](../code-quality/c6551.md)                              |                              Especificação de tamanho inválido: expressão não analisável                              |
@@ -97,18 +90,18 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                             [C28182](../code-quality/c28182.md)                             |         Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.          |
 |                             [C28202](../code-quality/c28202.md)                             |                                    Referência inválida para membro não estático                                     |
 |                             [C28203](../code-quality/c28203.md)                             |                                     Referência ambígua ao membro de classe.                                      |
-|                             [C28205](../code-quality/c28205.md)                             |                           \_Sucesso\_ ou \_On_failure\_ usado em um contexto ilegal                            |
+|                             [C28205](../code-quality/c28205.md)                             |                           \_Success\_ ou \_On_failure\_ usado em um contexto ilícito                            |
 |                             [C28206](../code-quality/c28206.md)                             |                                   O operando da esquerda aponta para um struct, use '->'                                   |
 |                             [C28207](../code-quality/c28207.md)                             |                                       O operando da esquerda é um struct, use '.'                                       |
 |                             [C28210](../code-quality/c28210.md)                             |                 Anotações para o contexto __on_failure não devem estar no pré-contexto explícito                  |
 |                             [C28211](../code-quality/c28211.md)                             |                                 Nome esperado do contexto estático para SAL_context                                  |
 |                             [C28212](../code-quality/c28212.md)                             |                                  Expressão de ponteiro esperada para anotação                                   |
-|                             [C28213](../code-quality/c28213.md)                             | O \_Use_decl_annotations\_ anotação deve ser usada para fazer referência, sem modificações, uma declaração prévia. |
+|                             [C28213](../code-quality/c28213.md)                             | A anotação \_Use_decl_annotations\_ deve ser usada para fazer referência, sem modificar, a uma declaração prévia. |
 |                             [C28214](../code-quality/c28214.md)                             |                                   Os nomes do parâmetro de atributo devem ser p1...p9                                   |
 |                             [C28215](../code-quality/c28215.md)                             |                    O typefix não pode ser aplicado a um parâmetro que já tem um typefix                    |
 |                             [C28216](../code-quality/c28216.md)                             |        A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.         |
 |                             [C28217](../code-quality/c28217.md)                             |            Para função, o número de parâmetros para anotação não corresponde ao encontrado no arquivo             |
-|                             [C28218](../code-quality/c28218.md)                             |             Para parâmetro de função, o parâmetro de anotação não corresponde ao encontrado no arquivo              |
+|                             [C28218](../code-quality/c28218.md)                             |             Para o parâmetro de função, o parâmetro da anotação não corresponde ao encontrado no arquivo              |
 |                             [C28219](../code-quality/c28219.md)                             |                 Membro de enumeração esperada para anotação do parâmetro na anotação                 |
 |                             [C28220](../code-quality/c28220.md)                             |                  Expressão inteira esperada para anotação do parâmetro na anotação                   |
 |                             [C28221](../code-quality/c28221.md)                             |                        Expressão de sequência de caracteres esperada para o parâmetro na anotação                         |
@@ -142,7 +135,6 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                             [C28254](../code-quality/c28254.md)                             |                               dynamic_cast<>() não tem suporte nas anotações                                |
 |                             [C28262](../code-quality/c28262.md)                             |                    Foi encontrado um erro de sintaxe na anotação na função, para anotação                     |
 |                             [C28263](../code-quality/c28263.md)                             |                 Foi encontrado um erro de sintaxe em uma anotação condicional na anotação intrínseca                 |
-|       [C28264](http://msdn.microsoft.com/en-us/bf6ea983-a06e-4752-a042-747a7dbf338c)        |                                    Os valores das listas de resultado devem ser constantes.                                     |
 |                             [C28267](../code-quality/c28267.md)                             |                    Foi encontrado um erro de sintaxe nas anotações da função.                    |
 |                             [C28272](../code-quality/c28272.md)                             |      A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função      |
 |                             [C28273](../code-quality/c28273.md)                             |                    Para função, os indícios são inconsistentes com a declaração da função                     |
@@ -152,21 +144,20 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                             [C28282](../code-quality/c28282.md)                             |                                    Cadeias de caracteres de formato devem estar em pré-condições                                    |
 |                             [C28285](../code-quality/c28285.md)                             |                                    Para função, erro de sintaxe no parâmetro                                    |
 |                             [C28286](../code-quality/c28286.md)                             |                                    Para função, erro de sintaxe perto do fim                                    |
-|                             [C28287](../code-quality/c28287.md)                             |                Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro não reconhecido)                |
-|                             [C28288](../code-quality/c28288.md)                             |                  Para função, erro de sintaxe na \_em\_() anotação (nome de parâmetro inválido)                   |
-|                             [C28289](../code-quality/c28289.md)                             |                Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro                |
+|                             [C28287](../code-quality/c28287.md)                             |                Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)                |
+|                             [C28288](../code-quality/c28288.md)                             |                  Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)                   |
+|                             [C28289](../code-quality/c28289.md)                             |                Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro                |
 |                             [C28290](../code-quality/c28290.md)                             |           a anotação para função contém mais Externos que o número real de parâmetros            |
 |                             [C28291](../code-quality/c28291.md)                             |                        pós null/notnull em deref nível 0 não tem sentido para a função.                        |
 |                             [C28300](../code-quality/c28300.md)                             |                            Operandos da expressão de tipos incompatíveis para o operador                             |
 |                             [C28301](../code-quality/c28301.md)                             |                               Não há anotações para a primeira declaração da função.                               |
-|                             [C28302](../code-quality/c28302.md)                             |                             Um extra \_Deref\_ operador foi encontrado na anotação.                              |
-|                             [C28303](../code-quality/c28303.md)                             |                           Um ambíguo \_Deref\_ operador foi encontrado na anotação.                            |
-|                             [C28304](../code-quality/c28304.md)                             |                     Um posicionado \_Notref\_ operador foi encontrado aplicado ao token.                      |
+|                             [C28302](../code-quality/c28302.md)                             |                             Foi encontrado um operador extra \_Deref\_ na anotação.                              |
+|                             [C28303](../code-quality/c28303.md)                             |                           Foi encontrado um operador ambíguo \_Deref\_ na anotação.                            |
+|                             [C28304](../code-quality/c28304.md)                             |                     Foi encontrado um operador \_Notref\_ posicionado inadequadamente aplicado ao token.                      |
 |                             [C28305](../code-quality/c28305.md)                             |                                Foi encontrado um erro durante a análise de um token.                                 |
 |                             [C28350](../code-quality/c28350.md)                             |                  A anotação descreve uma situação que não é aplicável condicionalmente.                   |
 |                             [C28351](../code-quality/c28351.md)                             |         A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.          |
-|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Tipos que possuem campos descartáveis devem ser descartáveis                             |
-|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Remova finalizadores vazios                                            |
+|  [CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)  |                             Tipos com campos descartáveis devem ser descartáveis                             |
+|                 [CA1821](../code-quality/ca1821-remove-empty-finalizers.md)                 |                                            Remover finalizadores vazios                                            |
 |          [CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)           |                                     Campos descartáveis devem ser descartados                                      |
-| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Sobrecarregar operador equals ao substituir ValueType.Equals&lt;2}&lt;1}                            |
-
+| [CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md) |                            Sobrecarregar operador equals ao substituir ValueType.Equals                            |

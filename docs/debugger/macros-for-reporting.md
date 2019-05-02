@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2c92424275a1dff69863b81fbf8567fbc4b84499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689285"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905549"
 ---
 # <a name="macros-for-reporting"></a>Macros para relatórios
 Para depuração, você pode usar o **rptn** e **rptfn** macros, definidas em CRTDBG. H, para substituir o uso de `printf` instruções. Você não precisa inclose-los no **#ifdef**s, porque eles desaparecem automaticamente na sua versão de compilação quando **Debug** não está definido.

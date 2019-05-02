@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602011"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436502"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Use o item de faixa de opções (XML), se você quiser personalizar a faixa de opções de forma que não é compatível com o item da faixa de opções (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/Ribbon-overview.md).
@@ -55,12 +55,12 @@ ms.locfileid: "56602011"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Definir o comportamento da faixa de opções personalizada
  Você pode responder a ações do usuário, como clicar em um botão na faixa de opções, criando *métodos de retorno de chamada*. Métodos de retorno de chamada são semelhantes a eventos em controles dos Windows Forms, mas eles são identificados por um atributo no XML do elemento de interface do usuário. Escrever métodos na classe da faixa de opções, e um controle chama o método que tem o mesmo nome que o valor do atributo. Por exemplo, você pode criar um método de retorno de chamada que é chamado quando um usuário clica em um botão na faixa de opções. Duas etapas são necessárias para criar um método de retorno de chamada:
 
--   Atribua um atributo a um controle no arquivo XML de faixa de opções que identifica um método de retorno de chamada em seu código.
+- Atribua um atributo a um controle no arquivo XML de faixa de opções que identifica um método de retorno de chamada em seu código.
 
--   Defina o método de retorno de chamada na classe da faixa de opções.
+- Defina o método de retorno de chamada na classe da faixa de opções.
 
 > [!NOTE]
->  O Outlook requer uma etapa adicional. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> O Outlook requer uma etapa adicional. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Para um passo a passo que demonstra como automatizar um aplicativo da faixa de opções, consulte [passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 
@@ -77,7 +77,7 @@ ms.locfileid: "56602011"
 
  Há muitos tipos diferentes de métodos de retorno de chamada que você pode atribuir aos controles da faixa de opções. Para obter uma lista completa dos métodos de retorno de chamada disponíveis para cada controle, consulte o artigo técnico [personalizar a interface do usuário da faixa de opções do Office (2007) para desenvolvedores (parte 3 de 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Definir métodos de retorno de chamada
+### <a name="CallBackMethods"></a> Definir métodos de retorno de chamada
  Defina seus métodos de retorno de chamada na classe da faixa de opções no arquivo de código da faixa de opções. Um método de retorno de chamada tem vários requisitos:
 
 - Ele deve ser declarado como público.
@@ -93,7 +93,7 @@ ms.locfileid: "56602011"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Referência do arquivo XML da faixa de opções
+## <a name="RibbonDescriptorFile"></a> Referência do arquivo XML da faixa de opções
  Você pode definir sua faixa de opções personalizada pela adição de elementos e atributos para o arquivo XML de faixa de opções. Por padrão, o arquivo XML de faixa de opções contém o XML a seguir.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602011"
 
  Os atributos no arquivo XML de faixa de opções e elementos de padrão são um pequeno subconjunto de elementos e atributos que estão disponíveis. Para obter uma lista completa dos atributos e elementos disponíveis, consulte o artigo técnico [personalizar a interface do usuário da faixa de opções do Office (2007) para desenvolvedores (parte 2 de 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Referência de classe da faixa de opções
+## <a name="RibbonExtensionClass"></a> Referência de classe da faixa de opções
  Visual Studio gera a classe da faixa de opções no arquivo de código da faixa de opções. Adicione os métodos de retorno de chamada para controles da faixa de opções para essa classe. Essa classe implementa o <xref:Microsoft.Office.Core.IRibbonExtensibility> interface.
 
  A tabela a seguir descreve os métodos padrão nessa classe.

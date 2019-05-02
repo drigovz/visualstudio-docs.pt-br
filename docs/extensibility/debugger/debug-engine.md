@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63ca18559b9a0e6ad1569f2e7e9f93980005cd86
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c49bbe85f24291c9a173bb513ebc3810148a26b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411286"
 ---
 # <a name="debug-engine"></a>Mecanismo de depuração
 Um mecanismo de depuração (DES) funciona com o sistema operacional ou interpretador para fornecer serviços de depuração, como avaliação de expressão, os pontos de interrupção e controle de execução. A Alemanha é responsável por monitorar o estado de um programa que está sendo depurado. Para fazer isso, o DE usa quaisquer métodos estão disponíveis para ele no tempo de execução com suporte, se da CPU ou de APIs fornecidas pelo tempo de execução.
@@ -23,13 +23,13 @@ Um mecanismo de depuração (DES) funciona com o sistema operacional ou interpre
  Por exemplo, o common language runtime (CLR) fornece mecanismos para monitorar um programa em execução por meio de interfaces ICorDebugXXX. A DE que dá suporte a CLR usa as interfaces de ICorDebugXXX apropriadas para manter o controle de um programa de código gerenciado que está sendo depurado. Ele se comunica as alterações de estado para o Gerenciador de depuração de sessão (SDM), que encaminha essas informações para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE.
 
 > [!NOTE]
->  Um mecanismo de depuração tem como alvo um tempo de execução específico, ou seja, o sistema em que o programa que está sendo depurado é executado. O CLR é o tempo de execução para código gerenciado e o tempo de execução do Win32 é para aplicativos nativos do Windows. Se o idioma que você cria pode direcionar um dos dois desses tempos de execução, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] já fornece mecanismos de depuração necessárias. Tudo o que você tem que implementar é um avaliador de expressão.
+> Um mecanismo de depuração tem como alvo um tempo de execução específico, ou seja, o sistema em que o programa que está sendo depurado é executado. O CLR é o tempo de execução para código gerenciado e o tempo de execução do Win32 é para aplicativos nativos do Windows. Se o idioma que você cria pode direcionar um dos dois desses tempos de execução, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] já fornece mecanismos de depuração necessárias. Tudo o que você tem que implementar é um avaliador de expressão.
 
 ## <a name="debug-engine-operation"></a>Operação do mecanismo de depuração
  Os serviços de monitoramento são implementados por meio DE interfaces e podem fazer com que o pacote de depuração para fazer a transição entre os modos operacionais diferentes. Para obter mais informações, consulte [modos operacionais](../../extensibility/debugger/operational-modes.md). Normalmente, há apenas uma implementação DE cada ambiente de tempo de execução.
 
 > [!NOTE]
->  Embora existam implementações DE separadas para o Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] compartilham um único DE.
+> Embora existam implementações DE separadas para o Transact-SQL e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)], VBScript e [!INCLUDE[jsprjscript](../../debugger/debug-interface-access/includes/jsprjscript_md.md)] compartilham um único DE.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Habilita depuração depuração mecanismos para executar uma das duas maneiras: no mesmo processo que o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] de shell ou no mesmo processo que o programa de destino que está sendo depurado. A segunda forma normalmente ocorre quando o processo que está sendo depurado é, na verdade, um script em execução em um interpretador. O mecanismo de depuração deve ter um conhecimento profundo do interpretador para monitorar o script. Nesse caso, o interpretador é, na verdade, um tempo de execução; mecanismos de depuração são para implementações de tempo de execução específico. Além disso, a implementação de um único DE pode ser dividida em limites de processo e de máquina (por exemplo, depuração remota).
 

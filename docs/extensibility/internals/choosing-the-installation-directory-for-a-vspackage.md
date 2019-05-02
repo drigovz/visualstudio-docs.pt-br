@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41a5016c528e754e452ee1248e85b705c41a44ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862039"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Escolha o diretório de instalação para um VSPackage
 Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do usuário. O local depende se o VSPackage é gerenciado ou não, seu esquema de controle de versão lado a lado e escolha do usuário.
@@ -47,16 +47,15 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do us
 
  O [gerenciar VSPackages](../../extensibility/managing-vspackages.md) artigo indica que as entradas do registro controlam onde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na verdade, o DLL de satélite procura um VSPackage. No entanto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta carregar uma DLL satélite em um subdiretório nomeado para um valor LCID, na seguinte ordem:
 
-1.  LCID de padrão (LCID do Visual Studio; por exemplo, *\1033* para inglês)
+1. LCID de padrão (LCID do Visual Studio; por exemplo, *\1033* para inglês)
 
-2.  LCID padrão com a subidioma padrão.
+2. LCID padrão com a subidioma padrão.
 
-3.  LCID padrão do sistema.
+3. LCID padrão do sistema.
 
-4.  Padrão do sistema LCID com subidioma o padrão.
+4. Padrão do sistema LCID com subidioma o padrão.
 
-5.  DOS EUA Inglês (*. \1033* ou *. \0x409*).
-
+5. DOS EUA Inglês (*. \1033* ou *. \0x409*).
 
 Se a sua DLL VSPackage inclui recursos e o **SatelliteDll\DllName** entrada de registro aponta para ela, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tentará carregá-los na ordem acima.
 

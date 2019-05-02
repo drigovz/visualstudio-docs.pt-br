@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 85a45da13594a6f204e91f93ddcee64acb29c493
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419386"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Como: Salvar documentos do Visio programaticamente
   Há várias maneiras de salvar documentos do Microsoft Office Visio:
@@ -35,12 +35,12 @@ ms.locfileid: "56618595"
 
 ### <a name="to-save-a-document"></a>Para salvar um documento
 
--   Chame o `Microsoft.Office.Interop.Visio.Document.Save` método da `Microsoft.Office.Tools.Visio.Document` classe de um documento que foi salvo anteriormente.
+- Chame o `Microsoft.Office.Interop.Visio.Document.Save` método da `Microsoft.Office.Tools.Visio.Document` classe de um documento que foi salvo anteriormente.
 
      Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
 
     > [!NOTE]
-    >  O `Microsoft.Office.Interop.Visio.Document.Save` método lança uma exceção se um novo documento do Visio ainda não foi salvo.
+    > O `Microsoft.Office.Interop.Visio.Document.Save` método lança uma exceção se um novo documento do Visio ainda não foi salvo.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#11)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#11](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#11)]
@@ -50,7 +50,7 @@ ms.locfileid: "56618595"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Para salvar o documento ativo do Visio com um novo nome
 
--   Chame o `Microsoft.Office.Interop.Visio.Document.SaveAs` método da `Microsoft.Office.Tools.Visio.Document` que você deseja salvar, usando um caminho totalmente qualificado, incluindo um nome de arquivo. Se um arquivo com esse nome já existe nessa pasta, ele será substituído silenciosamente.
+- Chame o `Microsoft.Office.Interop.Visio.Document.SaveAs` método da `Microsoft.Office.Tools.Visio.Document` que você deseja salvar, usando um caminho totalmente qualificado, incluindo um nome de arquivo. Se um arquivo com esse nome já existe nessa pasta, ele será substituído silenciosamente.
 
      Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618595"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Para salvar o documento com um novo nome e os argumentos especificados
 
--   Chame o `Microsoft.Office.Interop.Visio.Document.SaveAsEx` método da `Microsoft.Office.Tools.Visio.Document` que você deseja salvar, usando um caminho totalmente qualificado, incluindo um nome de arquivo. Se um arquivo com esse nome já existe nessa pasta, uma exceção é lançada.
+- Chame o `Microsoft.Office.Interop.Visio.Document.SaveAsEx` método da `Microsoft.Office.Tools.Visio.Document` que você deseja salvar, usando um caminho totalmente qualificado, incluindo um nome de arquivo. Se um arquivo com esse nome já existe nessa pasta, uma exceção é lançada.
 
      O exemplo de código a seguir salva o documento ativo com um novo nome, marca o documento como somente leitura e mostra o documento na lista de documentos usados recentemente. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618595"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo de código requer o seguinte:
 
--   Para salvar um documento que tem um novo nome, um diretório chamado `Test` devem estar localizados em de *Meus documentos* pasta (para o Windows XP e versões anteriores) ou o *documentos* pasta (para Windows Vista).
+- Para salvar um documento que tem um novo nome, um diretório chamado `Test` devem estar localizados em de *Meus documentos* pasta (para o Windows XP e versões anteriores) ou o *documentos* pasta (para Windows Vista).
 
 ## <a name="see-also"></a>Consulte também
 - [Soluções do Visio](../vsto/visio-solutions.md)

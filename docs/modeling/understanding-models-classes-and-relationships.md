@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386976"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -61,13 +61,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
  Para reorganizar o diagrama de definição de DSL, você pode:
 
--   Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.
+- Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.
 
--   Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.
+- Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.
 
--   Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.
+- Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.
 
--   Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.
+- Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.
 
 ## <a name="inheritance"></a>Herança
  Classes de domínio podem ser definidas usando a herança. Para criar uma derivação de herança, clique na ferramenta de herança, clique na classe derivada e, em seguida, clique na classe base. Um elemento de modelo tem todas as propriedades que são definidas em sua própria classe de domínio, juntamente com todas as propriedades herdadas da classe base. Ele também herda suas funções em relações.
@@ -93,7 +93,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
  Quando um modelo é salvo para o arquivo no formato XML, os elementos incorporados estão aninhados dentro de seus pais, a menos que você personalizou a serialização.
 
 > [!NOTE]
->  Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.
+> Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.
 
 ### <a name="embedding-rules"></a>Regras de incorporação
  Todos os elementos em um modelo de instância devem ser o destino de exatamente um link de incorporação, exceto para a raiz do modelo.

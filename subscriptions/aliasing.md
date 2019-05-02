@@ -7,12 +7,12 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 description: A entrada poderá falhar se forem usados aliases ou nomes amigáveis
 searchscope: VS Subscription
-ms.openlocfilehash: 2e552f2f7200235dafe0edf40e13dbc299f0d129
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ac3f9df365e0b7924b615c2ae8cbb70d93d04948
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841621"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946156"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-may-fail-when-using-aliases"></a>A entrada nas assinaturas do Visual Studio poderá falhar ao usar aliases
 
@@ -28,7 +28,7 @@ Os aliases podem ser encontrados quando a empresa tem um Serviço Online da Micr
 
 Como administrador, há duas opções para garantir que os assinantes entrem no [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) com sucesso.
 - A primeira opção (recomendada) é utilizar a conta de diretório como o endereço atribuído no VLSC (Volume Licensing Service Center). Confira a seção [Atribuir assinantes a uma conta de diretório](#assigning-subscribers-to-a-directory-account) neste artigo para obter mais detalhes.
-- A segunda opção (menos segura) é permitir que assinantes associem o endereço de email "Corporativo ou de Estudante" a uma conta "Pessoal" (também conhecido como MSA ou conta da Microsoft). Confira a seção [Definir uma conta corporativa ou de estudante como uma conta pessoal](#defining-a-work-or-school-account-as-a-personal-account ) neste artigo para obter mais detalhes.
+- A segunda opção (menos segura) é permitir que assinantes associem o endereço de email "Corporativo ou de Estudante" a uma conta "Pessoal" (também conhecido como MSA ou conta da Microsoft). Veja a seção [Definir uma conta corporativa ou de estudante como uma conta pessoal](#defining-a-work-or-school-account-as-a-personal-account) neste artigo para obter mais detalhes.
 
 > [!NOTE]
 > Depois que a empresa migrar para o novo [portal de gerenciamento](https://manage.visualstudio.com) de assinaturas do Visual Studio, você poderá aproveitar a nova experiência de administração, que permite que endereços de diretório e email sejam fornecidos como parte do perfil do assinante. Saiba mais sobre [a migração](https://support.microsoft.com/help/4013930/visual-studio-subscriptions-administrator-migration-details).
@@ -50,7 +50,6 @@ Siga estas etapas para adicionar um novo assinante com uma conta de diretório.
 
     > [!div class="mx-imgBorder"]
     > ![Menu de assinaturas](_img//vlsc/vlsc-subscriptions.png)
-
 
 3. Clique no **Número do Contrato** associado à assinatura do Visual Studio.
 
@@ -82,21 +81,23 @@ Siga as etapas abaixo para atualizar um assinante existente com uma conta de dir
 
 Como o Email de Boas-vindas não chegou ao assinante com êxito, copie e cole a mensagem abaixo em um email e envie-a ao assinante. Substitua %WORD% pelas informações apropriadas para cada assinante.
 
------------ Copiar Abaixo (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Olá, %SUBSCRIBER NAME%
+Hello %SUBSCRIBER NAME%
 
-Uma assinatura do Visual Studio foi atribuída a você. Visite https://my.visualstudio.com e faça logon com seu endereço %DIRECTORY ADDRESS% para ativar e acessar sua assinatura.
+You have been assigned a Visual Studio subscription. Please visit https://my.visualstudio.com, and log in with your %DIRECTORY ADDRESS% address to activate and access your subscription.
 
-Se houver problemas, contate a equipe de suporte (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Na parte inferior da página, selecione o seguinte:
-   - Suporte de Contas, Assinaturas e Cobrança
-   - Em Problema, escolha Suporte para entrada de conta
-   - Escolha o País apropriado
-   - Selecione a opção desejada de Suporte Assistido
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Encerrar Cópia -----------
+----------- End Copy -----------
+```
 
 ## <a name="defining-a-work-or-school-account-as-a-personal-account"></a>Definindo uma conta corporativa ou de estudante como uma conta pessoal
 
@@ -127,35 +128,37 @@ Depois que uma assinatura for atribuída ao assinante, ele receberá um email so
 
 No cenário descrito acima, o assinante receberá um "Email de Boas-vindas", mas devido ao alias, talvez não consiga entrar.  Você pode usar o texto abaixo para notificar o assinante das etapas acima e recomendar opções de suporte, se necessário.  Substitua %WORD% pelas informações apropriadas para cada assinante.
 
------------ Copiar Abaixo (Ctrl+C) -----------
+```
+----------- Copy Below (Ctrl+C) -----------
 
-Olá, %SUBSCRIBER NAME%
+Hello %SUBSCRIBER NAME%
 
-Você atribuiu uma assinatura do Visual Studio e pode ter sido direcionado para fazer logon em https://my.visualstudio.com pelo email de boas-vindas.  Embora esse seja o site correto para o consumo de benefícios, nossa organização exige que você realize algumas etapas adicionais para poder acessar o site.  Siga as instruções abaixo para ajudá-lo a criar uma "Conta da Microsoft" vinculada a nosso endereço de email corporativo.  Depois que essas etapas forem concluídas, você usará o endereço de email para acessar os benefícios de Assinatura.
-1. Visite https://my.visualstudio.com
+You have been assigned a Visual Studio subscription, and may have been directed to log into https://my.visualstudio.com based on your Welcome email.  While this is the correct website for consuming benefits, our organization requires you to take a few extra steps before you can access the site.  Please follow the below instructions to help you create a “Microsoft Account” that is tied to our corporate email address.  Once these steps are completed, you will use your email address to access the Subscription benefits.
+1. Visit https://my.visualstudio.com
 
-2. Clique em Criar nova Conta da Microsoft no lado direito
+2. Click Create new Microsoft Account on the right hand side
 
-3. Preencha o formulário:
-   - Use o endereço de email corporativo na caixa someone@example.com
-   - Insira uma senha
-   - Selecione a preferência promocional
-   - Clique em Avançar
+3. Complete the Form:
+   - Use your corporate email address in the someone@example.com box
+   - Enter a password
+   - Select your promotional preference
+   - Click Next
 
-4. Conclua as etapas de validação de conta
+4. Complete the account validation steps
 
-5. Se necessário, conclua o perfil do Visual Studio
+5. If necessary, complete the Visual Studio profile
 
-6. Agora você deve ver os benefícios
+6. You should now see your benefits
 
-Observação:  Ao visitar https://my.visualstudio.com no futuro, talvez você precise selecionar a conta que deseja usar (por exemplo, "Conta Corporativa ou de Estudante" ou "Conta Pessoal").  Depois de seguir as etapas acima, você precisará utilizar a opção "Conta Pessoal".
+Note:  When visiting https://my.visualstudio.com in the future, you may be prompted to select which account you’d like to use (e.g. “Work or School Account” or “Personal Account”).  After following the steps above, you will need to leverage the “Personal Account” option.
 
-Se houver problemas, contate a equipe de suporte (https://visualstudio.microsoft.com/subscriptions/support/).
+If you’re having trouble, please contact the support team (https://visualstudio.microsoft.com/subscriptions/support/).
 
-Na parte inferior da página, selecione o seguinte:
-   - Suporte de Contas, Assinaturas e Cobrança
-   - Em Problema, escolha Suporte para entrada de conta
-   - Escolha o País apropriado
-   - Selecione a opção desejada de Suporte Assistido
+At the bottom of the page, select the following:
+   - Accounts, Subscriptions, and Billing Support
+   - From Issue, choose Subscription sign in support
+   - Choose the appropriate Country
+   - Select the desired Assisted Support option
 
------------ Encerrar Cópia -----------
+----------- End Copy -----------
+```

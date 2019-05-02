@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7815f3b8788ac2fd3eaece89d6e2dbeeb49426d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bf6bc8ae841ad8ba0d3fd376176bdff2332fb958
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431997"
 ---
 # <a name="pf"></a>PF
 A opção de **PF** *VSPerfCmd.exe* define o evento de criação de perfil com amostragem para falhas da página e pode alterar o número de falhas da página em um intervalo de amostragem com o padrão de 10.
 
 > [!NOTE]
->  A **PF** não pode ser usada em sistemas de 64 bits.
+> A **PF** não pode ser usada em sistemas de 64 bits.
 
 A **PF** só pode ser usada em uma linha de comando que também contém a opção de **Inicialização** ou **Anexar**.
 

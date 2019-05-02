@@ -20,17 +20,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 58257921634e1afb89dfc0c012728523bc98a2ef
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d306ec78087ed53ceca44b15f2e184397217650
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54792883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584017"
 ---
 # <a name="xdcmake-task"></a>Tarefa XDCMake
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula a ferramenta de Documentação XML (xdcmake.exe), que mescla arquivos de comentário (.xdc) do documento XML com um arquivo .xml.  
   
  Um arquivo .xdc será criado quando comentários de documentação forem fornecidos no código-fonte do Visual C++ e compilados por meio da opção do compilador [/doc](http://msdn.microsoft.com/library/b54f7e2c-f28f-4f46-9ed6-0db09be2cc63). Para obter mais informações, consulte [Referência XDCMake](http://msdn.microsoft.com/library/14e65747-d000-4343-854b-8393bf01cbac), [Páginas de Propriedade da Ferramenta Geradora de Documento XML](http://msdn.microsoft.com/library/645912b5-197a-4c36-ba58-64df09444ca0) e a opção de ajuda de linha de comando (**/?**) para xdcmake.exe.  

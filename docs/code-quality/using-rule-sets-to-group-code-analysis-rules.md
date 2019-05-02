@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 701b178ea161884ef748008b1f933a53fc35a1cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c95b442835289265d197b6806c6d87fa051f2c1b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825078"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>Usar conjuntos de regras para agrupar regras de análise de código
 
-Quando você configura a análise de código no Visual Studio, você pode escolher entre uma lista dos internas *conjuntos de regra*. Um conjunto de regras se aplica a um projeto e é um agrupamento de código de regras de análise que identificam problemas direcionados e condições específicas para o projeto. Por exemplo, você pode aplicar um conjunto de regras que foi criado para examinar o código para as APIs disponíveis publicamente, ou apenas o mínimo recomendado de regras. Você também pode aplicar um conjunto de regras que inclui todas as regras.
+Quando você configura a análise de código no Visual Studio, você pode escolher entre uma lista dos internas *conjuntos de regra*. Um conjunto de regras é um agrupamento de regras de análise de código que identificam problemas direcionados e condições específicas para o projeto. Por exemplo, você pode aplicar um conjunto de regras que foi projetada para digitalizar o código para as APIs disponíveis publicamente. Você também pode aplicar um conjunto de regras que inclui todas as regras disponíveis.
 
 Você pode personalizar uma regra definida, adicionando ou excluindo regras ou alterando severidades de regra sejam exibidos como avisos ou erros na **Error List**. Conjuntos de regras personalizado podem atender uma necessidade para seu ambiente de desenvolvimento específico. Quando você personaliza um conjunto de regras, o editor de conjunto de regras fornece pesquisa e ferramentas para ajudá-lo no processo de filtragem.
 

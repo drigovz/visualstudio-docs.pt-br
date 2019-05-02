@@ -8,12 +8,12 @@ ms.assetid: 6832fe39-04d5-4d94-8a18-3e2730bad423
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8142e8d08cc34d3574539c195eab3443717f55a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fc0e9c9a8983d58b7b672be6c1cafb7360e25d28
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979296"
 ---
 # <a name="how-to-configure-aspnet-profiler-for-load-tests-using-test-settings-in-visual-studio"></a>Como: Configurar o criador de perfil do ASP.NET para testes de carga usando configurações de teste no Visual Studio
 
@@ -35,26 +35,26 @@ Para obter mais informações, confira [Como: Criar uma configuração de teste 
 
 Antes de executar as etapas neste procedimento, você deverá abrir as configurações de teste no Visual Studio e selecionar a página **Dados e Diagnósticos**.
 
-1.  Selecione a função a ser usada para coletar dados do criador de perfil do ASP.NET.
+1. Selecione a função a ser usada para coletar dados do criador de perfil do ASP.NET.
 
     > [!WARNING]
     > Essa função deve ser de um servidor Web.
 
-2.  Selecione **Criador de Perfil do ASP.NET** para permitir a coleta de dados de criação de perfil do ASP.NET e, então, escolha **Configurar**.
+2. Selecione **Criador de Perfil do ASP.NET** para permitir a coleta de dados de criação de perfil do ASP.NET e, então, escolha **Configurar**.
 
      A caixa de diálogo para configurar a coleta de dados de criação de perfil do ASP.NET é exibida.
 
-3.  Em **Intervalo de Amostragem do Criador de Perfil**, digite um valor que indique quantos ciclos de relógio da CPU sem interrupção aguardar entre as coletas de amostras de criação de perfil do ASP.NET.
+3. Em **Intervalo de Amostragem do Criador de Perfil**, digite um valor que indique quantos ciclos de relógio da CPU sem interrupção aguardar entre as coletas de amostras de criação de perfil do ASP.NET.
 
-4.  Para habilitar a criação de perfil de interação de camada, selecione **Habilitar Criação de Perfil de Interação de Camada**.
+4. Para habilitar a criação de perfil de interação de camada, selecione **Habilitar Criação de Perfil de Interação de Camada**.
 
      A criação de perfil de interação de camada conta o número de solicitações que são enviadas ao servidor Web para cada artefato (por exemplo, *MyPage.aspx* ou *CompanyLogo.gif*) e o tempo necessário para atender a cada solicitação. Além disso, a criação de perfil de interação de camada coleta quais conexões ADO.NET foram usadas como parte da solicitação de página, bem como quantas consultas e chamadas de procedimentos armazenados foram executadas como parte de uma prestação de serviços da solicitação.
 
      Dois conjuntos diferentes de informações de medição de tempo são coletados:
 
-    -   As informações de medição de tempo (Mín., Máx., Média e Total) para prestação de serviços de cada solicitação da Web.
+    - As informações de medição de tempo (Mín., Máx., Média e Total) para prestação de serviços de cada solicitação da Web.
 
-    -   As informações de medição de tempo (Mín., Máx., Média e Total) da execução de cada consulta.
+    - As informações de medição de tempo (Mín., Máx., Média e Total) da execução de cada consulta.
 
 Com o adaptador de dados de diagnóstico do criador de perfil do ASP.NET definido nas suas configurações de teste, você pode coletar dados de criação de perfil do ASP.NET no seu aplicativo Web ASP.NET.
 

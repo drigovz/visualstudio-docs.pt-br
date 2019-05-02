@@ -12,17 +12,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20df19f09dd31e428555831b98bfd0b3c9360233
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 93451d6d49082621df48c734de951e6a4bc7e281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059351"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>Como exibir uma lista de itens separada por vírgulas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]), às vezes, é útil exibir o conteúdo dessas listas de itens de uma maneira que seja fácil de ler. Ou, você pode ter uma tarefa que utiliza uma lista de itens separados por uma cadeia de caracteres do separador especial. Em ambos os casos, você pode especificar uma cadeia de caracteres do separador para uma lista de itens.  
   
 ## <a name="separating-items-in-a-list-with-commas"></a>Separando itens em uma lista com vírgulas  
@@ -42,7 +41,7 @@ Quando você trabalha com listas de itens no [!INCLUDE[vstecmsbuildengine](../in
   
 #### <a name="to-insert-a-comma-and-a-space-between-items"></a>Para inserir uma vírgula e um espaço entre itens  
   
--   Use a notação de item semelhante ao seguinte:  
+- Use a notação de item semelhante ao seguinte:  
   
      `@(TXTFile, ', ')`  
   

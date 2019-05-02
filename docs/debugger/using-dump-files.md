@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901745"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Arquivos de despejo no depurador do Visual Studio
 
@@ -39,27 +39,27 @@ Despejos de memória são usados principalmente para depurar problemas de máqui
 
 O depurador do Visual Studio pode salvar arquivos de despejo para código gerenciado ou nativo. Ele pode depurar arquivos de despejo criados pelo Visual Studio ou por outros aplicativos que salvam arquivos na *minidespejo* formato.
 
-##  <a name="BKMK_Requirements_and_limitations"></a> Requisitos e limitações
+## <a name="BKMK_Requirements_and_limitations"></a> Requisitos e limitações
 
--   Para depurar arquivos de despejo de computadores de 64 bits, o Visual Studio deve estar executando em um computador de 64 bits.
+- Para depurar arquivos de despejo de computadores de 64 bits, o Visual Studio deve estar executando em um computador de 64 bits.
 
--   O Visual Studio pode depurar arquivos de despejo de aplicativos nativos em dispositivos ARM. Ele também pode depurar despejos de aplicativos gerenciados em dispositivos ARM, mas somente no depurador nativo.
+- O Visual Studio pode depurar arquivos de despejo de aplicativos nativos em dispositivos ARM. Ele também pode depurar despejos de aplicativos gerenciados em dispositivos ARM, mas somente no depurador nativo.
 
--   Para depurar [modo de kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) arquivos de despejo ou usar o [SOS. dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) depuração extensão no Visual Studio, baixe as ferramentas de depuração para Windows no [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+- Para depurar [modo de kernel](/windows-hardware/drivers/debugger/kernel-mode-dump-files) arquivos de despejo ou usar o [SOS. dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) depuração extensão no Visual Studio, baixe as ferramentas de depuração para Windows no [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
--   Visual Studio não pode depurar arquivos de despejo salvos na antiga [despejo completo do usuário-modo](/windows/desktop/wer/collecting-user-mode-dumps) formato. Um despejo completo do modo de usuário não é o mesmo que um despejo com heap.
+- Visual Studio não pode depurar arquivos de despejo salvos na antiga [despejo completo do usuário-modo](/windows/desktop/wer/collecting-user-mode-dumps) formato. Um despejo completo do modo de usuário não é o mesmo que um despejo com heap.
 
--   Depurar arquivos de despejo de código otimizado pode ser confuso. Por exemplo, as funções embutidas do compilador podem resultar em pilhas de chamadas inesperadas, e outras otimizações podem alterar o tempo de vida de variáveis.
+- Depurar arquivos de despejo de código otimizado pode ser confuso. Por exemplo, as funções embutidas do compilador podem resultar em pilhas de chamadas inesperadas, e outras otimizações podem alterar o tempo de vida de variáveis.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Arquivos de despejo com ou sem heaps
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Arquivos de despejo com ou sem heaps
 
 Arquivos de despejo podem ou não ter informações de heap.
 
--   **Arquivos de despejo com heaps** contêm um instantâneo da memória do aplicativo, incluindo os valores das variáveis, no momento do despejo. O Visual Studio também salva os binários de módulos nativos carregados em um arquivo de despejo com um heap, o que pode tornar a depuração muito mais fácil. Visual Studio pode carregar símbolos de um arquivo de despejo com um heap, mesmo se ele não é possível localizar um aplicativo binário.
+- **Arquivos de despejo com heaps** contêm um instantâneo da memória do aplicativo, incluindo os valores das variáveis, no momento do despejo. O Visual Studio também salva os binários de módulos nativos carregados em um arquivo de despejo com um heap, o que pode tornar a depuração muito mais fácil. Visual Studio pode carregar símbolos de um arquivo de despejo com um heap, mesmo se ele não é possível localizar um aplicativo binário.
 
--   **Arquivos de despejo sem heaps** são muito menor do que despejos com heaps, mas o depurador deve carregar os binários de aplicativo para localizar informações de símbolo. Os binários carregados devem corresponder exatamente aqueles em execução durante a criação de despejo. Arquivos de despejo sem heaps salvar os valores das variáveis de pilha apenas.
+- **Arquivos de despejo sem heaps** são muito menor do que despejos com heaps, mas o depurador deve carregar os binários de aplicativo para localizar informações de símbolo. Os binários carregados devem corresponder exatamente aqueles em execução durante a criação de despejo. Arquivos de despejo sem heaps salvar os valores das variáveis de pilha apenas.
 
-##  <a name="BKMK_Create_a_dump_file"></a> Criar um arquivo de despejo
+## <a name="BKMK_Create_a_dump_file"></a> Criar um arquivo de despejo
 
 Enquanto você estiver depurando um processo no Visual Studio, você pode salvar um despejo de memória quando o depurador foi interrompido em um ponto de interrupção ou exceção.
 
@@ -76,7 +76,7 @@ Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio
 >[!NOTE]
 >Você pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o utilitário de linha de comando **Procdump** do [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de memória do processo com base em gatilhos ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) para obter informações sobre como usar outras ferramentas para criar arquivos de despejo.
 
-##  <a name="BKMK_Open_a_dump_file"></a> Abrir um arquivo de despejo
+## <a name="BKMK_Open_a_dump_file"></a> Abrir um arquivo de despejo
 
 1. No Visual Studio, selecione **arquivo** > **abra** > **arquivo**.
 
@@ -90,7 +90,7 @@ Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio
    - Para definir os locais de carregamento de símbolo, selecione **definir caminhos de símbolo**.
    - Para iniciar a depuração, selecione **depurar com somente gerenciado**, **depurar somente com nativo**, **depurar com misto**, ou **depurar com memória gerenciada**.
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar .exe,. PDB e arquivos de origem
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Localizar .exe,. PDB e arquivos de origem
 
 Para usar o total de recursos em um arquivo de despejo de depuração Visual Studio precisa de:
 

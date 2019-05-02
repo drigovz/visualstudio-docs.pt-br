@@ -2,7 +2,6 @@
 title: IScriptEntry::SetBody | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 993ffe59abb9458e1b400633430f708e7520599c
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 46ebccb57885480d34d79cbd27e99dc6a35b343d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787639"
 ---
 # <a name="iscriptentrysetbody"></a>IScriptEntry::SetBody
 Define o texto que está no corpo de uma `IScriptEntry` bloco de script ou um `IScriptScriptlet` scriptlet.  

@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, especificamente os recursos do modelo de pesquisas do Projeto Web do Django, como a personalização administrativa.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a8169dc759091bcc89da64a9676589e473bccf1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 93771033dd83ae988340ed355066992990f22f50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961796"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo de projeto Web Votações do Django
 

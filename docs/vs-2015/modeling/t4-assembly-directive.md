@@ -1,23 +1,20 @@
 ---
 title: T4 Diretiva de Assembly | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 44949749-ce3c-4fb5-8690-a17f1564ac2f
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 97e28347ba6985d99386647219f92aac9a221398
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 164f049b5ed1133acfd1f4e66f805b1510d29d5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411496"
 ---
 # <a name="t4-assembly-directive"></a>Diretiva de assembly T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +24,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
  Para obter uma visão geral da gravação de modelos de texto, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários para o **referências** de seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto.  
+> Você não precisa da diretiva `assembly` em um modelo de texto de tempo de execução (pré-processado). Em vez disso, adicione os assemblies necessários para o **referências** de seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto.  
   
 ## <a name="using-the-assembly-directive"></a>Usando a diretiva de assembly  
  A sintaxe da diretiva é a seguinte:  
@@ -69,7 +66,7 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
   
 - O assembly que contém seu DSL.  
   
-##  <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e o Visual Studio  
+## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e o Visual Studio  
  Macros do Visual Studio como $(SolutionDir) não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.  
   
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myLibFolder`:  
@@ -97,6 +94,3 @@ Em um modelo de texto de tempo de design do [!INCLUDE[vsprvs](../includes/vsprvs
   
 ## <a name="see-also"></a>Consulte também  
  [Diretiva de inclusão T4](../modeling/t4-include-directive.md)
-
-
-

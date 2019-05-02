@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebfe3efdb567930d931ab43d5cf2ce33713247f8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b71e4bc01ede7a77aced77a5e5527910457174f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399506"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código C++ usando o Visual Studio
 
@@ -35,25 +35,37 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **Desenvolvimento para desktop com C++**.
+::: moniker range=">=vs-2019"
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+É necessário ter o Visual Studio 2019 instalado e a carga de trabalho **Desenvolvimento para desktop com C++**.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **Desenvolvimento para desktop com C++**.
+
+::: moniker-end
+
+Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)  para instalá-lo gratuitamente.
+
+Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
+1. Abra o Visual Studio.
 
-2. Em **Visual C++**, escolha **Área de Trabalho do Windows** e escolha **Aplicativo de Console do Windows** no painel central.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **c++**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console**. Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C++**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console do Windows**. Depois, digite um nome como **MyDbgApp** e clique em **OK**.
+    ::: moniker-end
 
-    Se o modelo de projeto do **Aplicativo de Console do Windows** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
-
-3. Digite um nome como **get-started-debugging** e clique em **OK**.
+    Caso não veja o modelo de projeto **Aplicativo Console do Windows**, acesse **Ferramentas** > **Obter Ferramentas e Recursos**, que abre o Instalador do Visual Studio. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
     O Visual Studio cria o projeto.
 
-4. Em *get-started-debugging.cpp*, substitua o código a seguir
+1. Em *get-started-debugging.cpp*, substitua o código a seguir
 
     ```c++
     int main()
@@ -218,7 +230,7 @@ Geralmente, usamos atalhos de teclado aqui porque essa é uma boa maneira de exe
      ![Usar o recurso Executar até o Clique](../debugger/media/get-started-run-to-click-cpp.png "Executar até o Clique")
 
    > [!NOTE]
-   > O botão **Executar até o Clique** é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
+   > O botão **Executar com um Clique** está disponível no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] em diante. Se o botão de seta verde não for exibido, use **F11**, neste exemplo, para avançar o depurador até o lugar certo.
 
 2. Clique no botão **Executar até o Clique** ![Executar até o Clique](../debugger/media/dbg-tour-run-to-click.png "RunToClick").
 

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857968"
 ---
 # <a name="vsix-color-editor"></a>Editor de cores do VSIX
 A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar cores personalizadas para o Visual Studio. A ferramenta também pode gerar chaves de recurso de tema para que as cores podem ser usadas no código. Essa ferramenta é útil para fazer as cores para uma extensão do Visual Studio que dá suporte a temas. Essa ferramenta pode abrir arquivos. pkgdef e. XML. Temas do Studio Visual (arquivos .vstheme) podem ser usados com o Editor de cores do Visual Studio extensão, alterando a extensão de arquivo para. XML. Além disso, os arquivos de .vstheme podem ser importados para um arquivo. XML atual.
@@ -28,13 +28,13 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar c
 
  Um token de cor é composto por quatro elementos:
 
--   **Nome da categoria:** Um agrupamento lógico de um conjunto de cores. Use um nome de categoria existente se já houver cores que são específicas para o elemento desejado da interface do usuário ou grupo de elementos de interface do usuário.
+- **Nome da categoria:** Um agrupamento lógico de um conjunto de cores. Use um nome de categoria existente se já houver cores que são específicas para o elemento desejado da interface do usuário ou grupo de elementos de interface do usuário.
 
--   **Nome do token:** Define um nome descritivo para a cor de token e o token. Conjuntos incluem plano de fundo e nomes de token de primeiro plano (texto), bem como todos os seus estados e eles devem ser nomeados para que seja fácil identificar os pares e os estados que elas se aplicam.
+- **Nome do token:** Define um nome descritivo para a cor de token e o token. Conjuntos incluem plano de fundo e nomes de token de primeiro plano (texto), bem como todos os seus estados e eles devem ser nomeados para que seja fácil identificar os pares e os estados que elas se aplicam.
 
--   **Valores de cor (ou matizes):** Necessário para cada tema colorido. Sempre crie plano de fundo e texto cor valores em pares. As cores são combinadas para plano de fundo/primeiro plano para que a cor do texto (primeiro plano) é sempre legível em relação a cor do plano de fundo no qual ela é desenhada. Essas cores são vinculados e serão usadas juntas na interface do usuário. Se o plano de fundo não se destina para uso com o texto, não defina uma cor de primeiro plano.
+- **Valores de cor (ou matizes):** Necessário para cada tema colorido. Sempre crie plano de fundo e texto cor valores em pares. As cores são combinadas para plano de fundo/primeiro plano para que a cor do texto (primeiro plano) é sempre legível em relação a cor do plano de fundo no qual ela é desenhada. Essas cores são vinculados e serão usadas juntas na interface do usuário. Se o plano de fundo não se destina para uso com o texto, não defina uma cor de primeiro plano.
 
--   **Nome de cor do sistema:** Para uso em exibições de alto contraste.
+- **Nome de cor do sistema:** Para uso em exibições de alto contraste.
 
 ## <a name="how-to-use-the-tool"></a>Como usar a ferramenta
  Tanto quanto possível, e quando apropriado, as cores existentes do Visual Studio devem ser reutilizadas em vez de fazer novos. No entanto, para casos em que nenhuma cores apropriadas são definidas, cores personalizadas devem ser criadas para manter um tema de extensão compatível.

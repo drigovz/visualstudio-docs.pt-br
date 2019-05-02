@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be0d7246af3b43d76ee4531a426dab0af63e2aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553660"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a estender os recursos do Visual Studio ou integrar novos recursos no Visual Studio. Você pode distribuir suas extensões para outros usuários, bem como o Visual Studio Marketplace. Seguem algumas das maneiras em que você pode estender o Visual Studio:
@@ -54,7 +54,7 @@ O SDK do Visual Studio ajuda você a estender os recursos do Visual Studio ou in
  Aproveitar o [service e o catálogo de imagens](../extensibility/image-service-and-catalog.md) para gerenciamento de imagem grande e suporte para DPI alto e temas.
 
 ## <a name="find-and-install-existing-visual-studio-extensions"></a>Localizar e instalar extensões do Visual Studio existentes
- Você pode encontrar extensões do Visual Studio na **extensões e atualizações** caixa de diálogo na **ferramentas** menu. Para obter mais informações, consulte [localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Você também pode encontrar extensões no [Visual Studio marketplace](https://marketplace.visualstudio.com/)
+ Você pode encontrar extensões do Visual Studio na **extensões e atualizações** caixa de diálogo na **ferramentas** menu. Para obter mais informações, consulte [localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md). Você também pode encontrar extensões no [Visual Studio Marketplace](https://marketplace.visualstudio.com/)
 
 ## <a name="visual-studio-sdk-reference"></a>Referência do Visual Studio SDK
  Você pode encontrar a referência da API do SDK do Visual Studio em [referência de SDK do Visual Studio](../extensibility/visual-studio-sdk-reference.md).
@@ -67,16 +67,16 @@ O SDK do Visual Studio ajuda você a estender os recursos do Visual Studio ou in
 
  Você pode encontrar mais informações na [no blog do VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) e uma série de blogs escritos por MVPs da Microsoft:
 
--   [Extensões do Visual Studio favoritas](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Extensões do Visual Studio favoritas](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
--   [Extensibilidade do Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Extensibilidade do Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
--   [Estendendo o Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Estendendo o Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Consulte também
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [Como: Migrar projetos de extensibilidade para o Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
-- [PERGUNTAS FREQÜENTES: Convertendo suplementos em extensões VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
+- [Perguntas frequentes: Convertendo suplementos em extensões VSPackage](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md)
 - [Gerenciar vários threads em código gerenciado](../extensibility/managing-multiple-threads-in-managed-code.md)
 - [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)
 - [Adicionar comandos em barras de ferramentas](../extensibility/adding-commands-to-toolbars.md)

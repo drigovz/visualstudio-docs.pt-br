@@ -1,6 +1,6 @@
 ---
 title: Instalar agentes e controladores de teste
-ms.date: 10/24/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - configure test agents, test lab
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55cff84a4633b3b59d8167c0f460cbd96a98f04c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6597c47fd272beec2c82f7d4c2644291b168b5f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965408"
 ---
 # <a name="install-test-agents-and-test-controllers"></a>Instalar agentes e controladores de teste
 
@@ -24,7 +24,7 @@ Você também pode considerar mais fácil usar [o gerenciamento de compilação 
 
 ## <a name="system-requirements"></a>Requisitos do sistema
 
-A tabela a seguir mostra os requisitos de sistema para instalar o controlador de teste ou agente de teste para o Visual Studio 2017:
+A seguinte tabela mostra os requisitos do sistema para instalação do controlador de teste ou do agente de teste para o Visual Studio:
 
 | Item | Requisitos |
 | ---- | ------------ |
@@ -34,9 +34,9 @@ A tabela a seguir mostra os requisitos de sistema para instalar o controlador de
 
 ## <a name="install-the-test-controller-and-test-agents"></a>Instalar o controlador de teste e agentes de teste
 
-Você pode baixar agentes para Visual Studio 2017 em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Procure *Agents para Visual Studio 2017* e selecione *Agente* ou *Controlador*, em seguida, escolha *Download*. Execute o arquivo executável baixado para instalar o agente ou o controlador de teste.
+Baixe agentes para o Visual Studio em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?q=agents). Procure *Agents para Visual Studio 2019* e selecione *Agente* ou *Controlador*, depois escolha *Download*. Execute o arquivo executável baixado para instalar o agente ou o controlador de teste.
 
-Você pode baixar agentes para Visual Studio 2015 e Visual Studio 2013 pela página [downloads mais antigos](https://visualstudio.microsoft.com/vs/older-downloads/).
+Você pode baixar agentes para Visual Studio 2017, Visual Studio 2015 e Visual Studio 2013 pela página [downloads mais antigos](https://visualstudio.microsoft.com/vs/older-downloads/).
 
 Esses instaladores estão disponíveis como arquivos ISO para a instalação fácil em máquinas virtuais.
 

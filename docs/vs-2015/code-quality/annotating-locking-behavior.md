@@ -1,14 +1,9 @@
 ---
 title: Anotando o comportamento de bloqueio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Releases_nonreentrant_lock_
 - _Lock_kind_mutex_
@@ -37,13 +32,13 @@ ms.assetid: 07769c25-9b97-4ab7-b175-d1c450308d7a
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: f09b38ceb4a6824ec38f0d9206cf37e0f056ce28
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790754"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052383"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,11 +58,11 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
   
  Algumas regras de propriedade de thread para ter em mente:  
   
--   Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.  
+- Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.  
   
--   Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.  
+- Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.  
   
--   Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.  
+- Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.  
   
 ## <a name="locking-annotations"></a>Anotações de bloqueio  
  A tabela a seguir lista as anotações de bloqueio.  
@@ -123,6 +118,3 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
  [Funções intrínsecas](../code-quality/intrinsic-functions.md)   
  [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)   
  [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/p/?LinkId=251197)
-
-
-

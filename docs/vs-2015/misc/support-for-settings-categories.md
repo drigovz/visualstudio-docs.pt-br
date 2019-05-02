@@ -1,44 +1,39 @@
 ---
 title: Suporte para categorias de configurações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - settings, supporting with Visual Studio SDK
 - Visual Studio SDK, supporting settings
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
-manager: douge
-ms.openlocfilehash: 53abd3c9f35f16c2f2ae62e2c4f339a86477a8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49244927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436557"
 ---
 # <a name="support-for-settings-categories"></a>Suporte para categorias de configurações
-Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Sobre o **ferramentas** menu, clique em **Import and Export Settings** para iniciar o **Import and Export Settings Wizard**. O assistente oferece três opções: exportar, importar ou redefinir as configurações. Por exemplo, selecionando export, abre o **escolher configurações para exportar** página do assistente.  
   
  O controle de árvore no painel de navegação desta página lista as categorias. Uma categoria é um grupo de configurações relacionadas que aparecem como um "ponto de configurações personalizadas", ou seja, como uma caixa de seleção. Você pode usar essas caixas de seleção para selecionar as categorias para persistir em um arquivo .vsettings. O assistente permite que você nomeie o arquivo .vsettings e especifique seu caminho.  
   
 > [!NOTE]
->  As configurações são salvos ou restauradas como uma categoria e nomes de configuração individuais não são exibidos no assistente.  
+> As configurações são salvos ou restauradas como uma categoria e nomes de configuração individuais não são exibidos no assistente.  
   
  A estrutura de pacote gerenciado (MPF) dá suporte à criação de categorias de configurações com um mínimo de código adicional.  
   
--   Criar um VSPackage para fornecer um contêiner para a categoria Subclassificando o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+- Criar um VSPackage para fornecer um contêiner para a categoria Subclassificando o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
--   Criar a categoria em si, derivando-lo partir o <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
+- Criar a categoria em si, derivando-lo partir o <xref:Microsoft.VisualStudio.Shell.DialogPage> classe.  
   
--   Conectar-se os dois com o <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
+- Conectar-se os dois com o <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute>.  
   
 ## <a name="support-for-settings-categories"></a>Suporte para categorias de configurações  
  O <xref:Microsoft.VisualStudio.Shell.Package> classe oferece suporte para a criação de categorias. O <xref:Microsoft.VisualStudio.Shell.DialogPage> classe implementa uma categoria. A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage> oferece suas propriedades públicas para um usuário como uma categoria. Para obter mais informações, consulte [criar uma categoria de configurações](../extensibility/creating-a-settings-category.md).  
@@ -53,7 +48,7 @@ Uma categoria de configurações consiste em um grupo de opções que personaliz
  O caminho do registro da categoria de configurações é determinado pela combinação <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, o word, UserSettings, a categoria de configurações e o nome do ponto de configurações personalizadas. Os nomes da categoria de configurações e o ponto de configurações personalizadas são Unidos e separados por um caractere de sublinhado para formar o nome canônico não localizado, que aparece no registro. Por exemplo, se a categoria de configurações é "My Category", as configurações personalizadas do ponto de nome "My Settings" e o ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a categoria de configurações tem a chave do registro, HKEY_LOCAL Configurações de Category_My MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My.  
   
 > [!NOTE]
->  O nome canônico não aparece em uma interface de usuário (IU). Ele é usado para associar um nome legível com a categoria de configurações, muito parecido com um identificador programático (ProgID).  
+> O nome canônico não aparece em uma interface de usuário (IU). Ele é usado para associar um nome legível com a categoria de configurações, muito parecido com um identificador programático (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atributo de categoria de configurações  
  O <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina o mapeamento das categorias de pontos de configurações personalizadas em de **Import and Export Settings Wizard** associando uma categoria com o VSPackage que fornece a ele. Considere o fragmento de código a seguir:  
@@ -69,4 +64,4 @@ Uma categoria de configurações consiste em um grupo de opções que personaliz
  [Criando uma página de opções](../extensibility/creating-an-options-page.md)   
  [Exemplos de VSSDK](../misc/vssdk-samples.md)   
  [Estado de VSPackage](../misc/vspackage-state.md)   
- [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

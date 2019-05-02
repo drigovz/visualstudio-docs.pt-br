@@ -1,6 +1,6 @@
 ---
 title: 'Erro: Não é possível iniciar a depuração no servidor Web | Microsoft Docs'
-ms.date: 05/23/2017
+ms.date: 05/23/2018
 ms.topic: troubleshooting
 f1_keywords:
 - vs.debug.error.http
@@ -26,14 +26,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4c9d783fb68372e67f41eb84a1697ea3e1123b5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850105"
 ---
-# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: não foi possível iniciar a depuração no servidor Web
+# <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erro: Não é possível iniciar a depuração no servidor Web
 
 Quando você tenta depurar um aplicativo ASP.NET em execução em um servidor Web, você pode receber essa mensagem de erro: `Unable to start debugging on the Web server`.
 
@@ -51,7 +51,7 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 - [O servidor remoto retornou um erro](#server_error)
 - [Não foi possível iniciar a depuração do ASP.NET](#aspnet)
 - [O depurador não pode se conectar ao computador remoto](#cannot_connect)
-- [ Confira a ajuda para obter os erros de configuração comuns. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
+- [Consulte a Ajuda para erros comuns de configuração. Executando a página da Web fora do depurador pode fornecer mais informações.](#see_help)
 
 ## <a name="IISlist"></a> O IIS não lista um site que coincide com o lançamento url
 
@@ -61,7 +61,7 @@ O `Unable to start debugging on the Web server` mensagem é genérica. Normalmen
 
 ## <a name="web_server_config"></a> O servidor Web não foi configurado corretamente
 
-- Ver [erro: O servidor web não está configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Consulte [erro: O servidor web não está configurado corretamente](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Não é possível conectar-se para o servidor Web
 
@@ -104,7 +104,7 @@ Além disso, se você estiver usando um arquivo de HOSTS, verifique se que ele e
 
 - Se isso não funcionar ou se você estiver depurando remotamente, siga as etapas em [Verifique a configuração do IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Verifique a configuração do IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Verifique a configuração do IIS
 
 Depois de obter as etapas descritas aqui para resolver o problema e antes de tentar novamente a depuração, você também precisará redefinir o IIS. Você pode fazer isso abrindo um prompt de comando e digitando `iisreset`.
 

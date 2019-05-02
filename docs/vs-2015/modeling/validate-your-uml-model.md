@@ -1,12 +1,9 @@
 ---
 title: Validar o modelo UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML, constraints
 - UML, validation
@@ -14,13 +11,13 @@ ms.assetid: deed5092-c11d-4431-a801-1e866a103075
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fea958a20e5eee78f79f324ad19ef646f7920951
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437455"
 ---
 # <a name="validate-your-uml-model"></a>Validar o modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser con
 - **Comando de validação.** Para invocar a validação a qualquer momento, clique em **validar modelo UML** sobre o **arquitetura** menu.  
   
   > [!NOTE]
-  >  O comando será exibida apenas se as restrições de validação são instaladas.  
+  > O comando será exibida apenas se as restrições de validação são instaladas.  
   
 - **Sobre como salvar um modelo.** Restrições de validação podem ser aplicadas quando você salvar o modelo. A finalidade dessas restrições é certificar-se de que você não salvar um modelo que é inválido de acordo com a interpretação do seu projeto.  
   
@@ -52,29 +49,26 @@ Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser con
   
 #### <a name="to-install-a-visual-studio-extension"></a>Para instalar uma extensão do Visual Studio  
   
-1.  Clique duas vezes o **VSIX** arquivo no Windows Explorer (ou Explorador de arquivos).  
+1. Clique duas vezes o **VSIX** arquivo no Windows Explorer (ou Explorador de arquivos).  
   
-2.  Reiniciar qualquer instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que já está em execução.  
+2. Reiniciar qualquer instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que já está em execução.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Desabilitar e desinstalar as restrições de validação  
  Quando você quiser trabalhar com um modelo ao qual as restrições não se aplicam, você pode desativar temporariamente a extensão de que os contém. Dessa forma, você pode trabalhar com diferentes tipos de modelo em momentos diferentes, habilitando e desabilitando extensões diferentes.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Para desabilitar ou desinstalar uma extensão do Visual Studio  
   
-1.  Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **extensões e atualizações**.  
+1. Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **extensões e atualizações**.  
   
-2.  Junto com a extensão, clique em **desabilitar** para desabilitar temporariamente a extensão. Você pode habilitá-la novamente mais tarde, retornando para o **extensões e atualizações** janela.  
+2. Junto com a extensão, clique em **desabilitar** para desabilitar temporariamente a extensão. Você pode habilitá-la novamente mais tarde, retornando para o **extensões e atualizações** janela.  
   
      \- ou -  
   
      Clique em **desinstalação** para remover a extensão.  
   
-3.  Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)   
  [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)
-
-
-

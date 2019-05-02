@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e3a1340821dcbdb9e1b28192f0b798b458528f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e8927785ba6ca0dbe3daf6c402be776e8c9d8288
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400253"
 ---
 # <a name="idiasymbolgetlexicalparent"></a>IDiaSymbol::get_lexicalParent
 Recupera uma referência ao léxico pai do símbolo.
@@ -39,7 +39,7 @@ HRESULT get_lexicalParent ( 
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  O léxico pai de um símbolo é a função ou módulo de delimitador. Por exemplo, o léxico pai de um parâmetro de função ou variável local é a própria função enquanto o léxico pai da função é o módulo que é definido no.

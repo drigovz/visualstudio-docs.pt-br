@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74fb79db00a3e7366e91d3fb53a83f9deeb9a8a0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793475"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
 Você pode usar o comando **Localizar Todas as Referências** para localizar onde elementos de código específicos são referenciados em toda a base de código. O comando **Localizar Todas as Referências** está disponível no menu de contexto (acessado com o clique do botão direito do mouse) do elemento cujas referências você deseja localizar. Ou, se você estiver usando o teclado, pressione **Shift + F12**.
 
-Os resultados serão exibidos em uma janela de ferramentas chamada **referências de <element>**, em que *elemento* é o nome do item que você está procurando. Uma barra de ferramentas na janela **referências** permite que você:
+Os resultados serão exibidos em uma janela de ferramentas chamada **\<referências do elemento**, em que *elemento* é o nome do item que você está procurando. Uma barra de ferramentas na janela **referências** permite que você:
 - Altere o escopo da pesquisa em uma caixa de listagem suspensa. É possível optar por examinar apenas documentos alterados até a solução inteira.
 - Copie o item referenciado selecionado ao selecionar o botão **Copiar**.
 - Escolha os botões para acessar o local anterior ou seguinte na lista. Também é possível pressionar as teclas **F8** e **Shift + F8** para fazer isso.

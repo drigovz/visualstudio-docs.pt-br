@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4caf96c841b794a76a7aba35f9c8ca302de6e885
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdbf5fa21c8fcf9069db9a7348d4ed576fc342c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949586"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Como: Depurar XAML com o Designer de Fluxo de Trabalho
 
@@ -24,17 +24,17 @@ Fluxos de trabalho são definidos em termos de XAML. A representação de interf
 
 ## <a name="to-debug-workflow-xaml"></a>Para depurar o fluxo de trabalho XAML
 
-1.  Abra um projeto de fluxo de trabalho ou atividade no Visual Studio.
+1. Abra um projeto de fluxo de trabalho ou atividade no Visual Studio.
 
-2.  Definir um ponto de interrupção na atividade ou atividades que você deseja depurar, conforme descrito em [como: Definir pontos de interrupção em fluxos de trabalho](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
+2. Definir um ponto de interrupção na atividade ou atividades que você deseja depurar, conforme descrito em [como: Definir pontos de interrupção em fluxos de trabalho](../workflow-designer/how-to-set-breakpoints-in-workflows.md).
 
-3.  Clique com botão direito no arquivo. XAML que contém a definição de fluxo de trabalho e selecione **Exibir código**. Você verá um ponto de interrupção exibido na mesma linha da declaração de elemento XAML de atividade que você definir o ponto de interrupção sobre no modo design.
+3. Clique com botão direito no arquivo. XAML que contém a definição de fluxo de trabalho e selecione **Exibir código**. Você verá um ponto de interrupção exibido na mesma linha da declaração de elemento XAML de atividade que você definir o ponto de interrupção sobre no modo design.
 
-4.  Chamar o depurador, conforme descrito em [depurar fluxos de trabalho](debugging-workflows-with-the-workflow-designer.md).
+4. Chamar o depurador, conforme descrito em [depurar fluxos de trabalho](debugging-workflows-with-the-workflow-designer.md).
 
-5.  Quando a execução de código atinge um de seus pontos de interrupção, o elemento XAML associado com esse ponto de interrupção será realçado. Para mover para o próximo ponto de interrupção, use o **F10** ou **F11** chave.
+5. Quando a execução de código atinge um de seus pontos de interrupção, o elemento XAML associado com esse ponto de interrupção será realçado. Para mover para o próximo ponto de interrupção, use o **F10** ou **F11** chave.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Definir pontos de interrupção em fluxos de trabalho](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
+- [Como: definir pontos de interrupção em fluxos de trabalho](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [Depurar fluxos de trabalho](debugging-workflows-with-the-workflow-designer.md)

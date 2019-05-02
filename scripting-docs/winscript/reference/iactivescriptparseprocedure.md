@@ -2,7 +2,6 @@
 title: IActiveScriptParseProcedure | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78db05160adef51c414f4c4804f33d47812a9b38
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 5ed07ce5ed48abfb377dde5fc4d5dc128d881b4a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009192"
 ---
 # <a name="iactivescriptparseprocedure"></a>IActiveScriptParseProcedure
 Se o mecanismo de Script do Windows permite que o texto do código fonte para obter os procedimentos a serem adicionados ao script, ele implementa o `IActiveScriptParseProcedure` interface. Para linguagens de script interpretadas que não têm nenhum ambiente de criação independente, como o VBScript, isso fornece um mecanismo alternativo (diferente de `IActiveScriptParse` ou `IPersist`*) para adicionar os procedimentos de script ao namespace.  

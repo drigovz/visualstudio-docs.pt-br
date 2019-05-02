@@ -12,17 +12,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 317103b514a04ca149940513e4e70c2799037e62
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81f57fc6a4d21e1310fbb30d2b2dcaa826ad7685
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422624"
 ---
 # <a name="command-devenvexe"></a>/Command (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Executa o comando especificado depois de iniciar o IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="syntax"></a>Sintaxe  

@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_basetype | Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_baseType | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 5c69a241-a8d3-48ed-8b36-27463a196572
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08af047b1c4134c6da0aa5250bd9d5ded20d4a60
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: df922cbbe1c065f4df79fa62b7b4b0213dd7f487
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430319"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_baseType ( 
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="remarks"></a>Comentários  
  O tipo básico para um símbolo pode ser determinado pelo primeiro obter o tipo do símbolo e, em seguida, interrogar que retornado para o tipo base. Observe que alguns símbolos podem não ter um tipo base — por exemplo, um nome de estrutura.  
@@ -77,6 +72,3 @@ if (pType->get_type( &pBaseType ) == S_OK)
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Enumeração BasicType](../../debugger/debug-interface-access/basictype.md)   
  [IDiaSymbol::get_type](../../debugger/debug-interface-access/idiasymbol-get-type.md)
-
-
-

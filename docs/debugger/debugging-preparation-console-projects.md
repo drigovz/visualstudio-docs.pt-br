@@ -19,15 +19,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f94dcc62b829078fb8efc43ef92ddb203e1a1e32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852087"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: Projetos de Console (C#, C++, Visual Basic, F#)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação de depuração: Projetos de console (C#, C++, Visual Basic, F#)
 
-Preparar para depurar um projeto de console é semelhante à preparar para depurar um projeto do Windows, com algumas considerações adicionais. Para obter mais informações, consulte [aplicativos do Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), e [preparação de depuração:  Aplicativos do Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:
+Preparar para depurar um projeto de console é semelhante à preparar para depurar um projeto do Windows, com algumas considerações adicionais. Para obter mais informações, consulte [aplicativos do Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), e [preparação de depuração: Aplicativos (.NET) do Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:
 
 - C#, Visual Basic, e F# aplicativo de Console
 

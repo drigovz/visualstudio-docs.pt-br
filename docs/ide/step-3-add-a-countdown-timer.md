@@ -8,41 +8,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ac6ea6f45446b35d9b65d9665ede5b2e76b387e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d99987a16d0e4f6ff67e92fdb900600cd7943a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430759"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
 Na terceira parte deste tutorial, você adicionará um timer de contagem regressiva para controlar o número de segundos restantes até o término do teste.
 
 > [!NOTE]
->  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-add-a-countdown-timer"></a>Para adicionar um timer de contagem regressiva
 
-1.  Adicione uma variável de inteiro chamada **timeLeft**, exatamente como você fez no procedimento anterior. Seu código deve se parecer com o seguinte.
+1. Adicione uma variável de inteiro chamada **timeLeft**, exatamente como você fez no procedimento anterior. Seu código deve se parecer com o seguinte.
 
      [!code-vb[VbExpressTutorial3Step3#5](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_1.vb)]
      [!code-csharp[VbExpressTutorial3Step3#5](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_1.cs)]
 
      Agora você precisa de um método que realmente conte os segundos, assim como um timer, que gera um evento após a quantidade de tempo que você especificar.
 
-2.  Na janela de design, mova um controle de <xref:System.Windows.Forms.Timer> da categoria **Componentes** da **caixa de ferramentas** para seu formulário.
+2. Na janela de design, mova um controle de <xref:System.Windows.Forms.Timer> da categoria **Componentes** da **caixa de ferramentas** para seu formulário.
 
      O controle aparece na área cinza na parte inferior da janela de design.
 
-3.  No formulário, escolha o ícone **timer1** que você acabou de adicionar e defina sua propriedade **Interval** para **1000**.
+3. No formulário, escolha o ícone **timer1** que você acabou de adicionar e defina sua propriedade **Interval** para **1000**.
 
      Como o valor do intervalo é milissegundos, um valor de 1000 fará com que o evento de escala <xref:System.Windows.Forms.Timer.Tick> seja acionado a cada segundo.
 
-4.  No formulário, clique duas vezes no controle de **timer**, ou selecione-o e pressione a tecla **Enter**.
+4. No formulário, clique duas vezes no controle de **timer**, ou selecione-o e pressione a tecla **Enter**.
 
      O editor de códigos aparece e exibe o método para a marcação que o manipulador de eventos que você adicionou.
 
-5.  Adicione as seguintes instruções ao novo método do manipulador de eventos.
+5. Adicione as seguintes instruções ao novo método do manipulador de eventos.
 
      [!code-vb[VbExpressTutorial3Step3#6](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_2.vb)]
      [!code-csharp[VbExpressTutorial3Step3#6](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_2.cs)]
@@ -54,7 +54,7 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
      Você adicionou uma instrução de `if else`, que é como você informa os programas a tomar decisões. Uma instrução de `if else` se parece com o seguinte.
 
     > [!NOTE]
-    >  O exemplo a seguir é somente para ilustração – não o adicione ao seu projeto.
+    > O exemplo a seguir é somente para ilustração – não o adicione ao seu projeto.
 
     ```vb
     If (something that your program will check) Then
@@ -88,14 +88,14 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
      As pessoas realizando testes podem inserir números mais facilmente usando um controle <xref:System.Windows.Forms.NumericUpDown>, que é o motivo pelo qual você usa um controle desse tipo para as respostas dos problemas matemáticos. Todas as respostas possíveis são números inteiros de 0 a 100. Deixando os valores padrão das propriedades de **Minimum**, **Maximum** e **DecimalPlaces**, você garante que as pessoas realizando testes não possam inserir decimais, números negativos ou números muito altos. (Se você quiser permitir que as pessoas realizando testes digitem 3,141 mas não 3,1415, você pode definir a propriedade **DecimalPlaces** para 3.)
 
-6.  Adicione três linhas ao final do método de `StartTheQuiz()`, para que o código se pareça com o seguinte.
+6. Adicione três linhas ao final do método de `StartTheQuiz()`, para que o código se pareça com o seguinte.
 
      [!code-vb[VbExpressTutorial3Step3#7](../ide/codesnippet/VisualBasic/step-3-add-a-countdown-timer_4.vb)]
      [!code-csharp[VbExpressTutorial3Step3#7](../ide/codesnippet/CSharp/step-3-add-a-countdown-timer_4.cs)]
 
      Agora, quando seu teste for iniciado, a variável de **timeLeft** será definida para 30 e a propriedade **Text** do controle de **timeLabel** será definida para 30 segundos. O método <xref:System.Windows.Forms.Timer.Start> de controle do Temporizador inicia a contagem regressiva. (O teste não verifica a resposta ainda, isso acontece em seguida.)
 
-7.  Salve seu programa, execute-o e então escolha o botão **Iniciar** no formulário.
+7. Salve seu programa, execute-o e então escolha o botão **Iniciar** no formulário.
 
      O temporizador inicia a contagem regressiva. Quando o tempo se esgota, o teste termina e a resposta aparece. A ilustração a seguir mostra o teste em andamento.
 
@@ -103,6 +103,6 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, confira [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para ir para a próxima etapa do tutorial, confira [Etapa 4: Adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
 
--   Para retornar à etapa anterior do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).

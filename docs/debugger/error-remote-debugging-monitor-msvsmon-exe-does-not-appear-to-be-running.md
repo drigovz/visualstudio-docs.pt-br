@@ -1,5 +1,5 @@
 ---
-title: 'Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.'
+title: 'Erro: O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,21 +16,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82ad49dcd6369f0ef71068ed0238b45914072c
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 5dcd45cb64656b926b9c59efd7b6af14d2ec4c53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850659"
 ---
-# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: o Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
+# <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-msvsmonexe-does-not-appear-to-be-running-on-the-remote-computer"></a>Erro: O Monitor de Depuração Remota do Microsoft Visual Studio (MSVSMON.EXE) parece não estar sendo executado no computador remoto.
 Essa mensagem de erro significa que o Visual Studio não pôde localizar a instância correta do Visual Studio Remote Debugging Monitor no computador remoto. O Visual Studio Remote Debugging Monitor deve ser instalado para depuração remota funcione. Para obter informações sobre como baixar e configurar o depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md).
 
 > [!IMPORTANT]
->  Se você acredita ter recebido esta mensagem devido a um bug do produto, por favor [relate esse problema ao Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Se você precisar de mais ajuda, consulte [Fale conosco](../ide/talk-to-us.md) maneiras de entrar em contato com a Microsoft.
+> Se você acredita que recebeu essa mensagem devido a um bug do produto, por favor [relate esse problema ao Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md). Se você precisar de mais ajuda, consulte [Fale conosco](../ide/talk-to-us.md) maneiras de entrar em contato com a Microsoft.
 
 ## <a name="i-got-this-message-while-i-was-debugging-in-visual-studio-2010-or-earlier"></a>Recebi a seguinte mensagem enquanto eu estava depurando no Visual Studio 2010 ou anterior
- Se a versão do Visual Studio que você está usando é o Visual Studio 2010 ou anterior, você também poderá receber esse erro se o compartilhamento de arquivo e impressora não está habilitado. Para obter mais informações sobre esse problema, consulte a versão do Visual Studio 2010 desta documentação: [erro: O Microsoft Visual Studio Monitor de depuração remota (MSVSMON. EXE) parece não estar em execução no computador remoto. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
+ Se a versão do Visual Studio que você está usando é o Visual Studio 2010 ou anterior, você também poderá receber esse erro se o compartilhamento de arquivo e impressora não está habilitado. Para obter mais informações sobre esse problema, consulte a versão do Visual Studio 2010 desta documentação: [Erro: O Microsoft Visual Studio Monitor de depuração remota (MSVSMON. EXE) parece não estar em execução no computador remoto. -Visual Studio 2010](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/ms164726(v=vs.100))
 
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>Recebi a seguinte mensagem enquanto eu estava depurando localmente
  Se você estiver recebendo essa mensagem enquanto você estiver depurando localmente, o software antivírus ou um firewall de terceiros pode ser a causa. Visual Studio é um aplicativo de 32 bits, portanto, ele usa a versão de 64 bits do depurador remoto para depurar aplicativos de 64 bits. Os dois processos se comunicam usando a rede local no computador local. Nenhum tráfego deixa o computador, mas é possível que o software de segurança de terceiros pode bloquear a comunicação.
@@ -49,13 +49,13 @@ Essa mensagem de erro significa que o Visual Studio não pôde localizar a inst�
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>O depurador remoto está em execução em uma conta de usuário diferente
  Você pode resolver isso em uma das seguintes maneiras:
 
--   Você pode parar o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.
+- Você pode parar o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.
 
--   Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`
+- Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`
 
--   Você pode adicionar o usuário para permissões de usuário do depurador remoto (na janela do depurador remoto, **Ferramentas > permissões**).
+- Você pode adicionar o usuário para permissões de usuário do depurador remoto (na janela do depurador remoto, **Ferramentas > permissões**).
 
--   Se você não pode usar os métodos nas etapas anteriores, você pode permitir que qualquer usuário faça a depuração remota. Na janela do depurador remoto, vá para o **Ferramentas > Opções** caixa de diálogo. Quando você seleciona **sem autenticação**, em seguida, você pode verificar **permitem que qualquer usuário depure**. No entanto, você deve usar essa opção somente se você não tem escolha, ou se você estiver usando uma rede privada.
+- Se você não pode usar os métodos nas etapas anteriores, você pode permitir que qualquer usuário faça a depuração remota. Na janela do depurador remoto, vá para o **Ferramentas > Opções** caixa de diálogo. Quando você seleciona **sem autenticação**, em seguida, você pode verificar **permitem que qualquer usuário depure**. No entanto, você deve usar essa opção somente se você não tem escolha, ou se você estiver usando uma rede privada.
 
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>O firewall no computador remoto não permite conexões de entrada para o depurador remoto
  O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o firewall do Windows, consulte [configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).

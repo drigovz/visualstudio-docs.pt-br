@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e0b29d88387ccb2ed711f1a000bf7bb00a34dd01
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62870691"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Essa interface permite que a sessão de Gerenciador de depuração (SDM) notificar um processo que está anexando a ou desanexar do processo.
@@ -39,7 +39,7 @@ IDebugProcessEx2 : IUnknown
 
 ## <a name="notes-for-callers"></a>Observações para chamadores
 
--   As chamadas SDM [QueryInterface](/cpp/atl/queryinterface) em um `IDebugProcess2` interface para obter essa interface.
+- As chamadas SDM [QueryInterface](/cpp/atl/queryinterface) em um `IDebugProcess2` interface para obter essa interface.
 
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
  A tabela a seguir mostra os métodos de `IDebugProcessEx2`.

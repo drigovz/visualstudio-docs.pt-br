@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e3c9521389ce348a482f35ec95c9766edea49f5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631049"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977894"
 ---
 # <a name="password-protection-on-office-documents"></a>Proteção por senha em documentos do Office
   É possível definir uma senha em seus documentos do Microsoft Office Word e pastas de trabalho do Microsoft Office Excel, para que eles não podem ser abertos por alguém que sabe a senha. Esta opção é chamada **senha em aberto**.

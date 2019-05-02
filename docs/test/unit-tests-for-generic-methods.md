@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7a3305a12283072e39654833cabc609efa3f5bc2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788385"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 
@@ -28,20 +28,20 @@ Quando o Visual Studio gera um teste de unidade para uma classe genérica como `
 ## <a name="examples"></a>Exemplos
  Os exemplos a seguir ilustram testes de unidade para genéricos:
 
--   [Editar o código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
+- [Editar o código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
 
--   [Usar uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
+- [Usar uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
 
-###  <a name="EditingGeneratedTestCode"></a> Exemplo 1: Editando o código de teste gerado
+### <a name="EditingGeneratedTestCode"></a> Exemplo 1: Editando o código de teste gerado
  O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.
 
  O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.
 
  Este código ilustra dois métodos:
 
--   um método auxiliar de teste, `SizeOfLinkedListTestHelper<T>()`. Por padrão, um método auxiliar de teste tem "TestHelper" em seu nome.
+- um método auxiliar de teste, `SizeOfLinkedListTestHelper<T>()`. Por padrão, um método auxiliar de teste tem "TestHelper" em seu nome.
 
--   um método de teste, `SizeOfLinkedListTest()`. Cada método de teste é marcado com o atributo TestMethod.
+- um método de teste, `SizeOfLinkedListTest()`. Cada método de teste é marcado com o atributo TestMethod.
 
 #### <a name="generated-test-code"></a>Código de teste gerado
  O código de teste a seguir foi gerado por meio do método `SizeOfLinkedList()`. Como esse é o teste gerado não editado, ele deve ser modificado para testar corretamente o método SizeOfLinkedList.
@@ -73,22 +73,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Método auxiliar de teste
  O método auxiliar de teste executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 1 a 5.
 
-1.  Crie uma lista vinculada genérica.
+1. Crie uma lista vinculada genérica.
 
-2.  Acrescente quatro nós à lista vinculada. O tipo de dados do conteúdo desses nós é desconhecido.
+2. Acrescente quatro nós à lista vinculada. O tipo de dados do conteúdo desses nós é desconhecido.
 
-3.  Atribua o tamanho esperado da lista vinculada à variável `expected`.
+3. Atribua o tamanho esperado da lista vinculada à variável `expected`.
 
-4.  Compute o tamanho real da lista vinculada e atribua-a à variável `actual`.
+4. Compute o tamanho real da lista vinculada e atribua-a à variável `actual`.
 
-5.  Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.
+5. Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.
 
 ##### <a name="test-method"></a>Método de teste
  O método de teste é compilado para o código que é chamado quando você executa o teste chamado SizeOfLinkedListTest. Ele executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 6 e 7.
 
-1.  Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.
+1. Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.
 
-2.  Especifique `<char>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `char`.
+2. Especifique `<char>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `char`.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -117,8 +117,7 @@ public void SizeOfLinkedListTest()
 > [!NOTE]
 > Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, confira [Como: Depuração durante a execução de um teste em uma solução do ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
-
-###  <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: Usando uma restrição de tipo
+### <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: Usando uma restrição de tipo
  Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.
 
  A segunda seção mostra código do projeto de teste.

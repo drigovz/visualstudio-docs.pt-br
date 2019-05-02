@@ -8,12 +8,12 @@ ms.assetid: 47893b70-46f8-49dc-84bd-ec820178f683
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0901c16d4e467869768b3863a194ea524b5f9472
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 23d347d43918661ca65019862f476f1d636d5d06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117363"
 ---
 # <a name="install-third-party-unit-test-frameworks"></a>Instalar estruturas de teste de unidade de terceiros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
   
  **Requisitos**  
   
--   Visual Studio Enterprise, Visual Studio Professional  
+- Visual Studio Enterprise, Visual Studio Professional  
   
 ## <a name="acquiring-third-party-frameworks"></a>Aquisição de estruturas de terceiros  
  Você pode baixar e instalar diversas estruturas de teste de unidade de terceiros usando o Gerenciador de extensões do Visual Studio ou da Galeria do Visual Studio no site do MSDN. Estruturas também podem ser baixadas de outros sites, como o site da estrutura.  
@@ -42,7 +42,7 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
 ### <a name="installing-from-the-web"></a>Instalação da Web  
  Se você souber a estrutura em que você está interessado:  
   
-1. Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
+1. Abra [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 2. Digite o nome da estrutura na caixa **Localizar**.  
   
@@ -50,7 +50,7 @@ O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de tes
   
    Para procurar uma lista de estruturas juntamente com outras ferramentas de teste:  
   
-4. Abra [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=236267) no site do MSDN.  
+4. Abra [Visual Studio Marketplace](https://marketplace.visualstudio.com).  
   
 5. Escolha **Procurar**.  
   

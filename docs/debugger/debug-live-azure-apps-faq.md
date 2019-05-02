@@ -1,5 +1,5 @@
 ---
-title: Perguntas frequentes sobre depuração de instantâneos | Microsoft Docs
+title: Perguntas frequentes sobre depuração de instantâneo | Microsoft Docs
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,48 +10,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853319"
 ---
-# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes para instantâneo de depuração no Visual Studio
+# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
-Aqui está uma lista de perguntas que podem surgir durante a depuração de aplicativos dinâmicos do Azure usando o depurador de instantâneo.
+Veja a seguir uma lista de perguntas que podem surgir durante a depuração de aplicativos dinâmicos do Azure usando o Depurador de Instantâneos.
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>O que é o custo de desempenho de tirar um instantâneo?
+#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Qual é o custo de desempenho de capturar um instantâneo?
 
-Quando o depurador de instantâneo captura um instantâneo do seu aplicativo, ele é bifurcação de processo do aplicativo e suspender a cópia bifurcada. Quando você depura um instantâneo, você está depurando em relação a cópia bifurcada do processo. Esse processo leva apenas 10 a 20 milissegundos, mas não copia o heap completas do aplicativo. Em vez disso, ele copia apenas a tabela de página e define páginas para a cópia na gravação. Se algum dos objetos do seu aplicativo sobre a alteração de heap, as respectivas páginas de, em seguida, são copiadas. Portanto, cada instantâneo tem um pequeno custo de memória (na ordem de centenas de kilobytes para a maioria dos aplicativos).
+Quando o Depurador de Instantâneos captura um instantâneo do seu aplicativo, ele bifurca o processo do aplicativo e suspende a cópia bifurcada. Ao depurar um instantâneo, você o está depurando em relação à cópia bifurcada do processo. Esse processo leva apenas 10 a 20 milissegundos, mas não copia o heap completo do aplicativo. Em vez disso, copia apenas a tabela de página e define as páginas para cópia na gravação. Se algum dos objetos do seu aplicativo no heap for alterado, as respectivas páginas serão copiadas. Isso porque cada instantâneo tem um pequeno custo na memória (na ordem de centenas de kilobytes para a maioria dos aplicativos).
 
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>O que acontece se eu tiver um serviço de aplicativo do Azure expandido (várias instâncias do meu aplicativo)?
+#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>O que acontece se eu tiver um Serviço de Aplicativo do Azure expandido (várias instâncias do meu aplicativo)?
 
-Quando você tiver várias instâncias do seu aplicativo, os snappoints serão aplicadas a cada instância única. Somente o primeiro snappoint atingir com as condições especificadas cria um instantâneo. Se você tiver vários snappoints, instantâneos subsequentes são fornecidos pela mesma instância que criou o primeiro instantâneo. Logpoints enviadas para janela de saída mostrará apenas as mensagens de uma instância, enquanto logpoints enviados para os logs de aplicativo enviar mensagens de todas as instâncias.
+Quando você tiver várias instâncias do seu aplicativo, os snappoints serão aplicados a cada instância única. Somente o primeiro snappoint a atender às condições especificadas cria um instantâneo. Se você tiver vários snappoints, instantâneos posteriores serão provenientes da mesma instância que criou o primeiro instantâneo. Logpoints enviados para a janela de saída mostrarão apenas as mensagens de uma instância, enquanto logpoints enviados para os logs de aplicativo enviarão mensagens de todas as instâncias.
 
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Como o depurador de instantâneo carregar símbolos?
+#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Como o Depurador de Instantâneos carrega símbolos?
 
-O depurador de instantâneo requer que você tenha os símbolos correspondentes para seu aplicativo local ou implantado ao serviço de aplicativo do Azure. (PDBs inseridos no momento, não têm suporte.) O depurador de instantâneo automaticamente baixa símbolos de seu serviço de aplicativo do Azure. A partir do Visual Studio 2017 versão 15.2, implantando no serviço de aplicativo do Azure também implanta os símbolos do seu aplicativo.
+O Depurador de Instantâneos requer que você tenha os símbolos correspondentes para seu aplicativo no local ou implantados no Serviço de Aplicativo do Azure. (No momento, não há suporte para PDBs inseridos). O Depurador de Instantâneos baixa automaticamente os símbolos de seu Serviço de Aplicativo do Azure. A partir do Visual Studio 2017 versão 15.2, a implantação no Serviço de Aplicativo do Azure também faz a implantação dos símbolos do seu aplicativo.
 
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>O depurador de instantâneo funciona em compilações de versão do meu aplicativo?
+#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>O Depurador de Instantâneos funciona em builds de versão do meu aplicativo?
 
-Sim – o depurador de instantâneo destina-se para funcionar em builds de versão. Quando um snappoint for colocado em uma função, a função é recompilada para uma versão de depuração, tornando depurável. Quando você interrompe o depurador de instantâneo, as funções são retornadas ao seu build de versão.
+Sim, o Depurador de Instantâneos deve funcionar em builds de versão. Quando um snappoint for colocado em uma função, a função será recompilada para uma versão de depuração, tornando-o depurável. A interrupção do Depurador de Instantâneos retorna funções para a versão do build de versão.
 
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Logpoints pode causar efeitos colaterais no meu aplicativo de produção?
+#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Os logpoints pode causar efeitos colaterais no meu aplicativo de produção?
 
-Não - quaisquer mensagens de log que você adiciona ao seu aplicativo são avaliadas virtualmente. Eles não podem causar efeitos colaterais em seu aplicativo. No entanto, algumas propriedades nativas não podem ser acessadas com logpoints.
+Não. As mensagens de log que você adiciona ao seu aplicativo são avaliadas virtualmente. Elas não podem causar efeitos colaterais em seu aplicativo. No entanto, algumas propriedades nativas podem não ser acessíveis com logpoints.
 
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>O depurador de instantâneo funciona se meu servidor está sob carga?
+#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>O Depurador de Instantâneos funcionará se meu servidor estiver sob carga?
 
-Sim, a depuração de instantâneo pode trabalhar para servidores sob carga. O depurador de instantâneo limita e capturar instantâneos em situações em que há uma quantidade pequena de memória livre em seu servidor.
+Sim, a depuração de instantâneos pode funcionar em servidores sob carga. O Depurador de Instantâneos faz a restrição e não captura instantâneos em situações em que há uma quantidade pequena de memória livre em seu servidor.
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Como desinstalo o depurador de instantâneo?
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Como faço para desinstalar o Depurador de Instantâneos?
 
-Você pode desinstalar a extensão de site do depurador de instantâneos no serviço de aplicativo com as seguintes etapas:
+Você pode desinstalar a extensão de site do Depurador de Instantâneos no seu Serviço de Aplicativo com as seguintes etapas:
 
-1. Desativar seu aplicativo de serviço por meio do Gerenciador de nuvem no portal do Azure ou o Visual Studio.
-1. Navegue até o site do Kudu do serviço de aplicativo (ou seja, yourappservice. **SCM**. azurewebsites.net) e navegue até **extensões de Site**.
-1. Clique no X na extensão de site do depurador de instantâneos para removê-lo.
+1. Desative o Serviço de Aplicativo por meio do Cloud Explorer no Visual Studio ou no portal do Azure.
+1. Navegue até o site do Kudu do Serviço de Aplicativo (ou seja, seu serviçodeaplicativo.**scm**.azurewebsites.net) e vá até **Extensões de Site**.
+1. Clique no X na extensão de site do Depurador de Instantâneos para removê-lo.
+
+#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Por que as portas ficam abertas durante uma sessão do Depurador de Instantâneos?
+
+O Depurador de Instantâneos precisa abrir um conjunto de portas para depurar os instantâneos tirados no Azure. São as mesmas portas necessárias para depuração remota. [Encontre a lista de portas aqui](../debugger/remote-debugger-port-assignments.md).
 
 ## <a name="see-also"></a>Consulte também
 

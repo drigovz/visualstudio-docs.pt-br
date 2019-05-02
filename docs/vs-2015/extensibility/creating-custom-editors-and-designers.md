@@ -1,27 +1,22 @@
 ---
 title: Criar Designers e editores personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK]
 - editors [Visual Studio SDK], custom
 ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 324284a6cac44c995d652cce2f2e82a4c13702c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064382"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Criando designers e editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,31 +51,31 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio pode hospedar dif
 ## <a name="editor-design-decisions"></a>Decisões de Design do Editor  
  As seguintes perguntas de design ajudará você a escolher o tipo de editor melhor adequado para seu aplicativo:  
   
--   O aplicativo salvará seus dados em arquivos ou não? Se ele salvará seus dados em arquivos, eles será em um formato padrão ou personalizado?  
+- O aplicativo salvará seus dados em arquivos ou não? Se ele salvará seus dados em arquivos, eles será em um formato padrão ou personalizado?  
   
      Se você usar um formato de arquivo padrão, outros tipos de projeto, além de seu projeto será capazes de abrir e ler/gravar dados para eles. Se você usar um formato de arquivo personalizado, no entanto, somente o tipo de projeto será capaz de abrir e ler/gravar dados para eles.  
   
      Se seu projeto usa arquivos, você deve personalizar o editor padrão. Se seu projeto não usa arquivos, mas em vez disso, usa itens em um banco de dados ou em outro repositório, você deve criar um editor personalizado.  
   
--   O editor de que precisa para hospedar controles ActiveX?  
+- O editor de que precisa para hospedar controles ActiveX?  
   
      Se seu editor de hospedar controles ActiveX, em seguida, implementar um editor de ativação no local, conforme descrito na [ativação in-loco](../misc/in-place-activation.md). Se ele não hospedar controles ActiveX, em seguida, use um editor de incorporação simplificado, ou personalizar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor padrão.  
   
--   Seu editor oferecerá suporte a vários modos de exibição? Se você quiser que os modos de exibição do seu editor fiquem visíveis ao mesmo tempo como o editor padrão, você deve suportar vários modos de exibição.  
+- Seu editor oferecerá suporte a vários modos de exibição? Se você quiser que os modos de exibição do seu editor fiquem visíveis ao mesmo tempo como o editor padrão, você deve suportar vários modos de exibição.  
   
      Se seu editor precisa dar suporte a vários modos de exibição, os dados de documentos e objetos de exibição de documento para o editor devem ser objetos separados. Para obter mais informações, consulte [que dão suporte a várias exibições de documento](../extensibility/supporting-multiple-document-views.md).  
   
      Se seu editor dá suporte a vários modos de exibição, você planeja usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] implementação do buffer de texto do editor de núcleo (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objeto) para seu objeto de dados de documento? Ou seja, você deseja dar suporte a seu editor exibição lado a lado com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal? A capacidade de fazer isso é a base do designer de formulários do...  
   
--   Se você precisa para hospedar um editor externo, pode editor ser incorporado dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- Se você precisa para hospedar um editor externo, pode editor ser incorporado dentro de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
   
      Se ele pode ser inserido, você deve criar uma janela de host para o editor externo e, em seguida, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> método e defina o <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valor de enumeração para `DP_External`. Se o editor não pode ser inserido, o IDE criará automaticamente uma janela separada para ele.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Passo a passo: Criar um editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Passo a passo: Criar um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Explica como criar um editor personalizado.  
   
- [Passo a passo: Adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Passo a passo: Adicionar recursos a um Editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Explica como adicionar recursos a um editor personalizado.  
   
  [Inicialização do designer e configuração de metadados](../extensibility/designer-initialization-and-metadata-configuration.md)  
@@ -107,4 +102,3 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio pode hospedar dif
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>
-

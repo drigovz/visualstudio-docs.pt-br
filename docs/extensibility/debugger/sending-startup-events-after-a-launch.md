@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2f82ab0b28c1052a0d6a4cb0b2db7e6bbaaba8cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420590"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Enviar eventos de inicialização após uma inicialização
 Depois que o mecanismo de depuração (DES) é anexado ao programa, ele envia uma série de eventos de inicialização para a sessão de depuração.
@@ -31,7 +31,7 @@ Depois que o mecanismo de depuração (DES) é anexado ao programa, ele envia um
 - Evento complete uma carga, enviado quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado.
 
   > [!NOTE]
-  >  Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.
+  > Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.
 
 - Possível que outros threads criação e eventos de carregamento de módulo.
 

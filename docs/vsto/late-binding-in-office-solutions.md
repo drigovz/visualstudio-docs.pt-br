@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62224006d04e0a1e7447053e868dd9946f00c97e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583933"
 ---
 # <a name="late-binding-in-office-solutions"></a>Associação tardia em soluções do Office
   Alguns tipos de modelos de objetos de aplicativos do Office fornecem funcionalidade que está disponível por meio de recursos de associação tardia. Por exemplo, alguns métodos e propriedades podem retornar diferentes tipos de objetos, dependendo do contexto do aplicativo do Office, e alguns tipos podem expor diferentes métodos ou propriedades em contextos diferentes.

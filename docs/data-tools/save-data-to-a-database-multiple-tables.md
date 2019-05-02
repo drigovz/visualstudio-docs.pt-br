@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 945a04213ab902c17459eba6e418aeebea78f6d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565881"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -31,17 +31,15 @@ Você pode salvar os dados em seu aplicativo de volta no banco de dados chamando
 
 As tarefas ilustradas neste passo a passo incluem:
 
--   Criando um novo **aplicativo do Windows Forms** projeto.
+- Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
--   Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
+- Configurando os controles dos itens na [janela Data Sources](add-new-data-sources.md#data-sources-window). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Configurando os controles dos itens na [janela Data Sources](add-new-data-sources.md#data-sources-window). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.
 
--   Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.
+- Modificando alguns registros em cada tabela no conjunto de dados.
 
--   Modificando alguns registros em cada tabela no conjunto de dados.
-
--   Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
+- Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -63,21 +61,11 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="create-the-windows-forms-application"></a>Criar o aplicativo do Windows Forms
 
-A primeira etapa é criar uma **aplicativo do Windows Forms**. Atribuir um nome para o projeto é opcional durante esta etapa, mas vamos dar a ele um nome de nós será salvar o projeto mais tarde.
-
-1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
-
-2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
-
-3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
-
-4. Nomeie o projeto **UpdateMultipleTablesWalkthrough**e, em seguida, escolha **Okey**.
-
-     O projeto **UpdateMultipleTablesWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
+Criar um novo **aplicativo do Windows Forms** projeto para o C# ou o Visual Basic. Nomeie o projeto **UpdateMultipleTablesWalkthrough**.
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Sobre o **dados** menu, selecione **Show Data Sources**.
 
@@ -89,11 +77,11 @@ Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usand
 
 4. Sobre o **escolha sua Conexão de dados** tela, siga um destes procedimentos:
 
-    -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
+    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
          - ou -
 
-    -   Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.
+    - Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.
 
 5. Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.
 

@@ -1,25 +1,22 @@
 ---
 title: Vincular atualizações de modelo UML usando transações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API, transactions
 ms.assetid: a1df6c38-a3d1-4a3f-82bc-c8f363ab916e
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fb8bb5dfd5238871324b786f120d618d70f14b43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51800400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064824"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Vincular atualizações de modelo UML usando transações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Quando você define uma extensão para os designers UML no Visual Studio, você 
 ## <a name="to-group-changes-into-a-single-transaction"></a>Para agrupar alterações em uma única transação  
  Certifique-se de que as referências do projeto incluam esse assembly do .NET:  
   
- **Microsoft.VisualStudio.Modeling.Sdk. . dll de [versão]**  
+ **Microsoft.VisualStudio.Modeling.Sdk.[version].dll**  
   
  Dentro de sua classe, declare uma propriedade importada que tem o tipo <xref:Microsoft.VisualStudio.Modeling.ExtensionEnablement.ILinkedUndoContext>:  
   
@@ -65,15 +62,15 @@ Quando você define uma extensão para os designers UML no Visual Studio, você 
   
  Observe o seguinte:  
   
--   Você sempre deve incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado ao estado no início da transação.  
+- Você sempre deve incluir `Commit()` no final da transação. Se uma transação for descartada sem ser confirmada, a transação será revertida. Ou seja, o modelo será restaurado ao estado no início da transação.  
   
--   Se ocorrer uma exceção que não é capturada dentro da transação, a transação será revertida. É um padrão frequente para incluir a `using` bloco de transação dentro um `try…catch` bloco.  
+- Se ocorrer uma exceção que não é capturada dentro da transação, a transação será revertida. É um padrão frequente para incluir a `using` bloco de transação dentro um `try…catch` bloco.  
   
--   Você pode aninhar transações.  
+- Você pode aninhar transações.  
   
--   Você pode fornecer qualquer nome não em branco para `BeginTransaction()`.  
+- Você pode fornecer qualquer nome não em branco para `BeginTransaction()`.  
   
--   Somente o Store de modelo UML é afetado por essas transações. Modelagem de transações não afeta: variáveis, armazenamentos externos, como arquivos e bancos de dados, diagramas de camada e modelos de código.  
+- Somente o Store de modelo UML é afetado por essas transações. Modelagem de transações não afeta: variáveis, armazenamentos externos, como arquivos e bancos de dados, diagramas de camada e modelos de código.  
   
 ## <a name="example"></a>Exemplo  
   
@@ -115,6 +112,3 @@ Quando você define uma extensão para os designers UML no Visual Studio, você 
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)   
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)
-
-
-

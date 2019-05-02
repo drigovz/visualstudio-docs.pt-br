@@ -1,12 +1,9 @@
 ---
-title: 'Como: habilitar e desabilitar análise de solução completa para código gerenciado | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Habilitar e desabilitar análise de solução completa para código gerenciado | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - full solution analysis
 ms.assetid: 04315147-5792-47f0-8b5f-9ac8413c6a57
@@ -14,18 +11,18 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: af0aae4020182f6414d44a2004f98a6fc0df23ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: df06a17ecc093cf24a64e7c3aa11a096a61ee44f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49221865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436832"
 ---
-# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: habilitar e desabilitar análise de solução completa para código gerenciado
+# <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: Habilitar e desabilitar análise de solução completa para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-OBSERVAÇÃO]
->  Este tópico se aplica somente ao Visual Studio 2015 atualização 3 RC e posterior.  
+[OBSERVAÇÃO]
+> Este tópico se aplica somente ao Visual Studio 2015 atualização 3 RC e posterior.  
   
  *Análise de solução completa* é um recurso do Visual Studio que permite que você escolha se você vê problemas de análise de código somente em arquivos abertos de Visual c# ou Visual Basic em sua solução, ou em arquivos abertos e fechados, do Visual c# ou Visual Basic em sua solução.  
   
@@ -33,11 +30,11 @@ OBSERVAÇÃO]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Para ativar/desativar a análise de solução completa  
   
-1.  No menu principal do Visual Studio, escolha **ferramentas** &#124; **opções** para exibir a **opções** caixa de diálogo.  
+1. No menu principal do Visual Studio, escolha **ferramentas** &#124; **opções** para exibir a **opções** caixa de diálogo.  
   
-2.  No **opções** diálogo caixa, escolha **Editor de texto** &#124; **c#** ou **básica** &#124; **avançado**.  
+2. No **opções** diálogo caixa, escolha **Editor de texto** &#124; **c#** ou **básica** &#124; **avançado**.  
   
-3.  Selecione o **habilitar a análise de solução completa** caixa de seleção para habilitar a análise de solução completa, ou desmarque a caixa para desativá-lo. Escolha o **Okey** botão quando terminar.  
+3. Selecione o **habilitar a análise de solução completa** caixa de seleção para habilitar a análise de solução completa, ou desmarque a caixa para desativá-lo. Escolha o **Okey** botão quando terminar.  
   
      ![Habilite a caixa de seleção de análise de solução completa. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   
@@ -56,9 +53,6 @@ OBSERVAÇÃO]
  ![Suspendendo a análise de solução completa de texto de alerta](../code-quality/media/fsa-alert.png "FSA_Alert")  
   
 ## <a name="additional-details"></a>Detalhes adicionais  
- Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#.  
+ Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual C#.  
   
  Visual Studio Update 3 RC inclui um mecanismo de diagnóstico v2 de analisador de código aprimorada que reduz o uso de memória significativamente e diminui o tempo de CPU permanecer ocioso, mesmo se a análise de solução completa está habilitada.
-
-
-

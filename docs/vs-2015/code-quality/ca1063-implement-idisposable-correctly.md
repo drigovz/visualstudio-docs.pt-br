@@ -1,14 +1,9 @@
 ---
 title: 'CA1063: Implementar IDisposable corretamente | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - ImplementIDisposableCorrectly
 - CA1063
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 94d13514800bac80723031c6bba7920d28ac83e6
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 822ad7bea622400bfabd5a96a42d81ed4eabf0c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49877290"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081392"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,23 +59,23 @@ ms.locfileid: "49877290"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Examine seu código e determinar qual das seguintes resoluções corrigirá essa violação.
 
--   Remova IDisposable da lista de interfaces implementadas pelo {0} e substituir a implementação de Dispose da classe base em vez disso.
+- Remova IDisposable da lista de interfaces implementadas pelo {0} e substituir a implementação de Dispose da classe base em vez disso.
 
--   Remova o finalizador do tipo {0}, substitua Dispose (bool disposing) e coloque a lógica de finalização no caminho do código onde "disposing" é false.
+- Remova o finalizador do tipo {0}, substitua Dispose (bool disposing) e coloque a lógica de finalização no caminho do código onde "disposing" é false.
 
--   Remover {0}, substitua Dispose (bool disposing) e colocar a lógica de descarte no caminho do código onde "disposing" é true.
+- Remover {0}, substitua Dispose (bool disposing) e colocar a lógica de descarte no caminho do código onde "disposing" é true.
 
--   Certifique-se de que {0} é declarado como público e selado.
+- Certifique-se de que {0} é declarado como público e selado.
 
--   Renomear {0} como "Dispose" e certifique-se de que ele é declarado como público e selado.
+- Renomear {0} como "Dispose" e certifique-se de que ele é declarado como público e selado.
 
--   Certifique-se de que {0} é declarado como protegido, virtual e sem lacre.
+- Certifique-se de que {0} é declarado como protegido, virtual e sem lacre.
 
--   Modificar {0} para que ele chame Dispose (True), em seguida, chama GC. SuppressFinalize na instância do objeto atual ('this' ou 'Me' no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) e, em seguida, retorna.
+- Modificar {0} para que ele chame Dispose (True), em seguida, chama GC. SuppressFinalize na instância do objeto atual ('this' ou 'Me' no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) e, em seguida, retorna.
 
--   Modificar {0} para que ele chama Dispose (False) e, em seguida, retorna.
+- Modificar {0} para que ele chama Dispose (False) e, em seguida, retorna.
 
--   Se você estiver escrevendo uma classe de IDisposable raiz sem lacre, certifique-se de que a implementação de IDisposable segue o padrão descrito anteriormente nesta seção.
+- Se você estiver escrevendo uma classe de IDisposable raiz sem lacre, certifique-se de que a implementação de IDisposable segue o padrão descrito anteriormente nesta seção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
@@ -129,6 +124,3 @@ public class Resource : IDisposable
     }
 }
 ```
-
-
-

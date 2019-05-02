@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936843"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Como: Usar transações para atualizar o modelo
 Transações Certifique-se de que as alterações que foram feitas para o armazenamento são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Reverter uma transação
  Para garantir que o Store permanece no ou será revertido para seu estado antes da transação, você pode usar qualquer uma dessas táticas:
 
-1.  Gere uma exceção que não foi detectada dentro do escopo da transação.
+1. Gere uma exceção que não foi detectada dentro do escopo da transação.
 
-2.  Explicitamente reverta a transação:
+2. Explicitamente reverta a transação:
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

@@ -12,16 +12,16 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a1c9de1c65c5f3f780e6ea4374fa7d96f436f514
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960616"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
 
-O Visual Studio 2017 inclui o suporte aprimorado para a estrutura [Vue.js](https://vuejs.org/), o que melhora a experiência de desenvolvimento ao criar um aplicativo com o Vue.js, o JavaScript e o TypeScript.
+O Visual Studio é compatível com o desenvolvimento de aplicativos com a estrutura [Vue.js](https://vuejs.org/) em JavaScript ou TypeScript.
 
 Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.js no Visual Studio:
 
@@ -31,14 +31,19 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* É necessário ter o Visual Studio 2017 versão 15.8 Versão Prévia 3 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
+* É necessário ter o Visual Studio 2017 versão 15.8 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
 
     > [!IMPORTANT]
-    > Este artigo exige recursos que estão disponíveis apenas a partir do Visual Studio 2017 versão 15.8 Versão Prévia 3.
+    > Este artigo exige recursos que estão disponíveis apenas a partir do Visual Studio 2017 versão 15.8.
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+    ::: moniker range=">=vs-2019"
+    Se a versão necessária ainda não estiver instalada, instale o [Visual Studio de 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalá-lo gratuitamente.
+    ::: moniker-end
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
 * Para criar o projeto ASP.NET Core, é necessário ter instaladas as cargas de trabalho de desenvolvimento do ASP.NET e para a Web e de desenvolvimento multiplataforma do .NET Core.
 
@@ -63,9 +68,14 @@ Neste exemplo, você usará um aplicativo ASP.NET Core vazio (C#). No entanto, v
 
 #### <a name="create-an-empty-project"></a>Criar um projeto Vazio
 
-1. Abra o Visual Studio e escolha **Arquivo** > **Novo** > **Projeto** no menu principal.
+1. Abra o Visual Studio e crie um projeto.
 
-1. Em **Visual C#** > **Web**, escolha **Aplicativo Web ASP.NET Core** e, em seguida, clique em **OK**.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl+Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **Criar um novo projeto de Aplicativo Web ASP.NET Core**. Na caixa de diálogo que aparece, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **Visual C#** e escolha **Web**. No painel central, escolha **Aplicativo Web ASP.NET Core** e, em seguida, selecione **OK**.
+    ::: moniker-end
 
     Se o modelo de projeto **Aplicativo Web ASP.NET Core** não for exibido, instale as cargas de trabalho **desenvolvimento do ASP.NET e para a Web** e **Desenvolvimento do .NET Core** primeiro. Para instalar as cargas de trabalho, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Selecione as cargas de trabalho necessárias.
 
@@ -91,6 +101,9 @@ Para instalar o módulo npm vue-cli, abra um prompt de comando e digite `npm ins
 1. Vá para o prompt de comando e altere o diretório atual para a pasta raiz do projeto.
 
 1. Digite `vue init webpack ClientApp` e siga as etapas quando solicitado a responder perguntas adicionais.
+
+    > [!NOTE]
+    > Para arquivos *.vue*, você precisa usar o WebPack ou uma estrutura semelhante com um carregador para fazer a conversão. O TypeScript e o Visual Studio não sabem como compilar arquivos *.vue*. O mesmo é verdadeiro para agrupamento; o TypeScript não sabe como converter módulos ES2015 (ou seja, instruções `import` e `export`) em um arquivo único final *.js* a ser carregado no navegador. Novamente, o WebPack é a melhor opção. Para conduzir esse processo a partir do Visual Studio usando o MSBuild, você precisa começar com um modelo do Visual Studio. No momento, não há nenhum modelo do ASP.NET para desenvolvimento integrado do Vue.js.
 
 #### <a name="modify-the-webpack-configuration-to-output-the-built-files-to-wwwroot"></a>Modificar a configuração de webpack para gerar os arquivos compilados em wwwroot
 

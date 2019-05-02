@@ -1,14 +1,9 @@
 ---
 title: Interface de usuário de propriedades do projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project properties [Visual Studio], user interface
 - projects [Visual Studio SDK], properties UI
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: b6aec634-8533-476c-9ebd-36536a2288e2
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e295bff2f8398765f90c3fd537ca4f546208ce4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2b54c6ba8f3daefa53f00478c1d7e4573311cfb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51768288"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429152"
 ---
 # <a name="project-property-user-interface"></a>Interface do usuário de propriedades do projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,11 +41,11 @@ Um subtipo de projeto pode usar os itens no projeto **páginas de propriedade** 
   
 - Um subtipo de projeto pode determinar as CATIDs apropriados para os diversos objetos extensíveis do projeto base no tempo de execução, recuperando o seguinte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> valores:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2>  
   
   Para determinar as CATIDs do escopo do projeto, o subtipo de projeto recupera as propriedades acima para <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> do `VSITEMID``typedef`. Um subtipo de projeto talvez também queira controlar quais **páginas de propriedade** páginas da caixa de diálogo são exibidas para o projeto, configuração dependente e independentes da configuração. Alguns subtipos de projeto, talvez seja necessário remover páginas internas e adicionar a páginas específicas do subtipo de projeto. Para habilitar isso, as chamadas de projeto de cliente gerenciado a <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> método para as seguintes propriedades:  
   
@@ -64,5 +59,4 @@ Um subtipo de projeto pode usar os itens no projeto **páginas de propriedade** 
   
 ## <a name="see-also"></a>Consulte também  
  <xref:EnvDTE.IFilterProperties>   
- [Caixa de diálogo páginas de propriedades](http://msdn.microsoft.com/en-us/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)
-
+ [Caixa de diálogo páginas de propriedades](http://msdn.microsoft.com/4a3d34ac-ed03-45e8-ae60-a0e1aad300e4)

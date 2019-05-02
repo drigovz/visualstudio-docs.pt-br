@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 983b2939d652c20c3fbcb42dd8caded802495c8d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a415e55c263534ee4b29e5b45e24ad471d68fe0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817470"
 ---
 # <a name="how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables"></a>Como: Adicionar texto e formatação a células em tabelas do Word programaticamente
   Cada tabela consiste em uma coleção de células. Cada indivíduo <xref:Microsoft.Office.Interop.Word.Cell> objeto representa uma célula na tabela. Você pode se referir a cada célula de acordo com seu local na tabela. Este exemplo refere-se para a célula localizada na primeira linha e primeira coluna da tabela; adiciona texto à célula; e se aplica a formatação.
@@ -29,7 +29,7 @@ ms.locfileid: "56614643"
 
 ## <a name="to-add-text-and-formatting-to-cells"></a>Para adicionar texto e formatação a células
 
-1.  Fazer referência à célula por seu local na tabela, adicionar texto à célula e aplicar a formatação.
+1. Fazer referência à célula por seu local na tabela, adicionar texto à célula e aplicar a formatação.
 
      O exemplo de código a seguir pode ser usado em uma personalização no nível de documento. Para usar este exemplo, executá-la na `ThisDocument` classe em seu projeto.
 

@@ -1,26 +1,21 @@
 ---
 title: Sinalizadores de bit usados por comandos específicos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e8ea658e62ca2bcd3ca4d423f00a94f83f2a2086
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 43dc083812bc172fe4a9f80335742b3faab2e1f4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798177"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926593"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +45,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |Sinalizador|Valor|Descrição|  
 |----------|-----------|-----------------|  
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignore diferenças de maiusculas.|  
-|`SCC_DIFF_IGNORESPACE`|0x0004|Ignore as diferenças de espaço em branco. **Observação:** as `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` sinalizadores são sinalizadores de bit opcional.|  
+|`SCC_DIFF_IGNORESPACE`|0x0004|Ignore as diferenças de espaço em branco. **Observação:**  O `SCC_DIFF_IGNORECASE` e `SCC_DIFF_IGNORESPACE` sinalizadores são sinalizadores de bit opcional.|  
 |`SCC_DIFF_QD_CONTENTS`|0x0010|QD, comparando o conteúdo do arquivo inteiro.|  
 |`SCC_DIFF_QD_CHECKSUM`|0x0020|QD por soma de verificação.|  
 |`SCC_DIFF_QD_TIME`|0x0040|QD por carimbo de data/hora do arquivo.|  
@@ -85,7 +80,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
   
 |Sinalizador|Valor|Descrição|  
 |----------|-----------|-----------------|  
-|`SCC_GET_ALL`|0x00000001L|O IDE está passando a diretórios, arquivos não: obter todos os arquivos nesses diretórios.|  
+|`SCC_GET_ALL`|0x00000001L|O IDE está passando a diretórios, arquivos não: Obter todos os arquivos nesses diretórios.|  
 |`SCC_GET_RECURSIVE`|0x00000002L|O IDE está passando diretórios: Obtenha esses diretórios e todos os seus subdiretórios.|  
   
 ## <a name="noption-values"></a>Valores de nOption  
@@ -100,7 +95,7 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |`SCC_OPT_SCCCHECKOUTONLY`|0x00000005L|Desabilite o controle plug-in da interface do usuário check-out origem e não definir diretório de trabalho.|  
 |`SCC_OPT_SHARESUBPROJ`|0x00000006L|Adicione do sistema de controle de origem para especificar um diretório de trabalho. Tente compartilhar no projeto associado, se for um descendente direto.|  
   
-## <a name="dwval-bitflags"></a>dwVal sinalizadores de bit  
+## <a name="dwval-bitflags"></a>dwVal Bitflags  
  Esses sinalizadores são usados pela [SccSetOption](../extensibility/sccsetoption-function.md) no `dwVal` parâmetro.  
   
 |Sinalizador|Valor|Descrição|Usado pelo `nOption` valor|  
@@ -108,10 +103,9 @@ O comportamento de um número de funções em que a API de plug-in de controle d
 |`SCC_OPT_EQ_DISABLE`|0x00L|Suspende a atividade de fila de eventos.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_EQ_ENABLE`|0x01L|Habilita o log de fila de eventos.|`SCC_OPT_EVENTQUEUE`|  
 |`SCC_OPT_HCM_NO`|0L|(Padrão) Tenha o modo sem cancelar; plug-in deve fornecer se desejado.|`SCC_OPT_HASCANCELMODE`|  
-|`SCC_OPT_HCM_YES`|L 1|IDE manipula Cancelar.|`SCC_OPT_HASCANCELMODE`|  
+|`SCC_OPT_HCM_YES`|1L|IDE manipula Cancelar.|`SCC_OPT_HASCANCELMODE`|  
 |`SCC_OPT_SCO_NO`|0L|(Padrão) Okey para fazer check-out do plug-in da interface do usuário; diretório de trabalho é definido.|`SCC_OPT_SCCCHECKOUTONLY`|  
-|`SCC_OPT_SCO_YES`|L 1|Nenhum plug-in check-out da interface do usuário, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|  
+|`SCC_OPT_SCO_YES`|1L|Nenhum plug-in check-out da interface do usuário, nenhum diretório de trabalho.|`SCC_OPT_SCCCHECKOUTONLY`|  
   
 ## <a name="see-also"></a>Consulte também  
  [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
-

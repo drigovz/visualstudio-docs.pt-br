@@ -1,11 +1,8 @@
 ---
 title: Designer de atividade WriteLine | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.WriteLine.UI
@@ -13,13 +10,13 @@ ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 8fa22ecee8bf365b02dcce9e4bc5607bb3a9838b
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 591ecf53e04eaff115d45e1358f385a009ab29f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49280951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855234"
 ---
 # <a name="writeline-activity-designer"></a>Designer de atividade WriteLine
 O **WriteLine** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.WriteLine> atividade.  

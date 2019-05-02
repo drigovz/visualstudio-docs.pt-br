@@ -1,14 +1,9 @@
 ---
 title: A estrutura do Content_types] arquivo. XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - content_types
 - content types
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d5892ab545c41f7d58f0d097f3d27c90c090f0ff
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4117e028611c2ff64102a97579d17d72f50407e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736571"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430150"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>A estrutura do Content_types] arquivo. XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "51736571"
 Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Studio usa o arquivo [Content_Types]. XML para instalar o pacote, mas não instala o arquivo propriamente dito.  
   
 > [!NOTE]
->  Embora este tópico se aplica somente a [Content_Type]. XML arquivos que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do *Open Packaging Conventions (OPC)* padrão. Para obter mais informações, consulte [OPC: um novo padrão para empacotamento seus dados](http://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.  
+> Embora este tópico se aplica somente a [Content_Type]. XML arquivos que são usados em pacotes VSIX, o tipo de arquivo [Content_Types]. xml faz parte do *Open Packaging Conventions (OPC)* padrão. Para obter mais informações, consulte [OPC: Um novo padrão para empacotamento seus dados](http://go.microsoft.com/fwlink/?LinkID=148207) no site do MSDN.  
   
 ## <a name="attributes-and-elements"></a>Atributos e elementos  
  As seções a seguir descrevem o elemento raiz e seus atributos e elementos filho.  
@@ -75,16 +70,16 @@ Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Stud
 |---------------|-----------------|  
 |txt|texto/simples|  
 |pkgdef|texto/simples|  
-|xml|texto/xml|  
-|vsixmanifest|texto/xml|  
-|htm ou html|texto/html|  
-|RTF|aplicativo/rtf|  
-|PDF|aplicativo/pdf|  
-|GIF|imagem/gif|  
-|JPG ou jpeg|imagem/jpg|  
+|xml|text/xml|  
+|vsixmanifest|text/xml|  
+|htm ou html|text/html|  
+|rtf|aplicativo/rtf|  
+|pdf|aplicativo/pdf|  
+|gif|imagem/gif|  
+|JPG ou jpeg|image/jpg|  
 |TIFF|imagem/tiff|  
 |vsix|aplicativo/zip|  
-|ZIP|aplicativo/zip|  
+|zip|aplicativo/zip|  
 |DLL|application/octet-stream|  
 |todos os outros tipos de arquivo|application/octet-stream|  
   
@@ -108,6 +103,5 @@ Contém informações sobre os tipos de conteúdo de um pacote VSIX. Visual Stud
   
 ## <a name="see-also"></a>Consulte também  
  [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Referência de esquema 1.0 de extensão do VSIX](http://msdn.microsoft.com/en-us/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
+ [Referência de esquema 1.0 de extensão do VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)   
  [OPC: Um novo padrão para empacotar dados](http://go.microsoft.com/fwlink/?LinkID=148207)
-

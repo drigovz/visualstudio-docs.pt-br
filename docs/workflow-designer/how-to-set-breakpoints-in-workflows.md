@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7503d0b0bee201a9617e90966c9f75ac6333f228
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908433"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949508"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 
@@ -41,4 +41,4 @@ Um ponto de interrupção tem três estados: *Pendente*, *ligado*, e *erro*. Qua
 ## <a name="see-also"></a>Consulte também
 
 - [Fluxos de trabalho de depuração com o Designer de Fluxo de Trabalho](../workflow-designer/debugging-workflows-with-the-workflow-designer.md)
-- [Como: Depurar XAML com o Designer de fluxo de trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)
+- [Como: depurar XAML com o Designer de Fluxo de Trabalho](../workflow-designer/how-to-debug-xaml-with-the-workflow-designer.md)

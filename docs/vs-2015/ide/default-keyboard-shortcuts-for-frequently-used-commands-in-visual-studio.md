@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d1b7b2ed25c5712f548266955aae5e94866ad0e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437518"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos frequentes no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54770489"
 Você pode acessar comandos usados frequentemente no Visual Studio escolhendo estes atalhos de teclado padrão. Para obter uma lista completa de comandos que têm atalhos padrão, consulte [Default Keyboard Shortcuts (Atalhos de teclado padrão)](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
+> É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
 
  **Neste tópico**
 
@@ -31,7 +31,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |[Build](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_build)|[Editar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_edit)|[Projeto](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_project)|[Ferramentas](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_tools)|[Janela](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_window)|
 |[Depurar](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_debug)|[Arquivo](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_file)|[Refatoração](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_refactor)|[Exibir](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md#bkmk_view)||
 
-##  <a name="bkmk_build"></a> Build
+## <a name="bkmk_build"></a> Build
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -40,7 +40,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |Build.Compile|Ctrl+F7 [Global]|
 |Build.RunCodeAnalysisonSolution|Alt+F11 [Global]|
 
-##  <a name="bkmk_debug"></a> Depurar
+## <a name="bkmk_debug"></a> Depurar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -60,7 +60,7 @@ Você pode acessar comandos usados frequentemente no Visual Studio escolhendo es
 |Debug.StopDebugging|Shift+F5 [Global]|
 |Debug.ToggleBreakpoint|F9 [Global]|
 
-##  <a name="bkmk_edit"></a> Editar
+## <a name="bkmk_edit"></a> Editar
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -111,7 +111,7 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |Edit.WordDeleteToEnd|Ctrl+Delete [Editor de Texto]|
 |Edit.WordDeleteToStart|Ctrl+Backspace [Editor de Texto]|
 
-##  <a name="bkmk_file"></a> Arquivo
+## <a name="bkmk_file"></a> Arquivo
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -127,26 +127,26 @@ dit.SurroundWith|Ctrl+K, Ctrl+S [Global]|
 |File.SaveSelectedItems|Ctrl+S [Global]|
 |File.ViewinBrowser|Ctrl+Shift+W [Global]|
 
-##  <a name="bkmk_project"></a> Projeto
+## <a name="bkmk_project"></a> Projeto
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
 |Project.AddExistingItem|Shift+Alt+A [Global]|
 |Project.AddNewItem|Ctrl+Shift+A [Global]|
 
-##  <a name="bkmk_refactor"></a> Refatoração
+## <a name="bkmk_refactor"></a> Refatoração
 
 |Comando|Atalho de teclado [Contexto]|
 |-------------|-----------------------------------|
 |Refactor.ExtractMethod|Ctrl+R, Ctrl+M [Global]|
 
-##  <a name="bkmk_tools"></a> Ferramentas
+## <a name="bkmk_tools"></a> Ferramentas
 
 |Comando|Atalho de teclado [Contexto]|
 |-------------|-----------------------------------|
 |Tools.AttachtoProcess|Ctrl+Alt+P [Global]|
 
-##  <a name="bkmk_view"></a> Modo de Exibição
+## <a name="bkmk_view"></a> Modo de Exibição
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|
@@ -167,7 +167,7 @@ iew.TfsTeamExplorer|Ctrl+\\, Ctrl+M [Global]|
 |View.ViewCode|Entre [Diagrama de Classes]<br /><br /> ou F7 [Designer de Configurações]|
 |View.ViewDesigner|Shift+F7 [Modo Código-fonte do Editor de HTML]|
 
-##  <a name="bkmk_window"></a> Janela
+## <a name="bkmk_window"></a> Janela
 
 |Comandos|Atalhos de teclado [Contextos]|
 |--------------|-------------------------------------|

@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438406"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
+# <a name="how-to-create-a-basic-texture"></a>Como: Criar uma textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Editor de Imagens para criar uma textura básica.  
   
  Este documento demonstra essas atividades:  
   
--   Configurar o tamanho da textura  
+- Configurar o tamanho da textura  
   
--   Configurar a cor de primeiro plano e a cor da tela de fundo  
+- Configurar a cor de primeiro plano e a cor da tela de fundo  
   
--   Usar o canal alfa (transparência)  
+- Usar o canal alfa (transparência)  
   
--   Usar as ferramentas **Preenchimento** e **Elipse**  
+- Usar as ferramentas **Preenchimento** e **Elipse**  
   
--   Configurar propriedades de ferramenta  
+- Configurar propriedades de ferramenta  
   
 ## <a name="creating-a-basic-texture"></a>Criar uma textura básica  
  Você pode usar o Editor de Imagens para criar e modificar imagens e texturas para o seu jogo ou aplicativo.  
@@ -55,7 +55,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** e, em seguida, pressione e mantenha a tecla Shift pressionada e escolha qualquer ponto na imagem. Usar a tecla Shift faz com que o valor alfa da cor de preenchimento substitua a cor na imagem. Caso contrário, o valor alfa é usado para misturar a cor de preenchimento com a cor da imagem.  
   
    > [!IMPORTANT]
-   >  Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.  
+   > Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.  
   
 6. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Elipse**.  
   
@@ -70,7 +70,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 11. Usando a ferramenta **Elipse**, desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo mais facilmente, você pode pressionar e manter pressionada a tecla Shift enquanto desenha.  
   
     > [!NOTE]
-    >  As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    > As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 12. Altere a cor da tela de fundo. Defina **R** como `44`, **G** como `165`, **B** como `211` e **A** como `255`.  
   
@@ -88,7 +88,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
   
     ![A textura de destino de "alvo" concluída](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, consulte [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter mais informações, veja [Como: Criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de Imagens](../designers/image-editor.md)

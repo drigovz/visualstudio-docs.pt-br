@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 484a891c83796f58c7ed8d6053c51189b2448bb9
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: fd3d7ccc248785c127c1eaf34da8840f824e4195
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56449899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946931"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>Como: Salvar e abrir arquivos com codificação
 
@@ -26,13 +26,13 @@ Salve arquivos com uma codificação de caracteres específica para dar suporte 
 
 ## <a name="to-save-a-file-with-encoding"></a>Para salvar um arquivo com codificação
 
-1.  No menu **Arquivo**, escolha **Salvar Arquivo Como** e clique no botão suspenso ao lado do botão **Salvar**.
+1. No menu **Arquivo**, escolha **Salvar Arquivo Como** e clique no botão suspenso ao lado do botão **Salvar**.
 
      A caixa de diálogo **Opções de Salvamento Avançadas** é exibida.
 
-2.  Em **Codificação**, selecione a codificação a ser usada para o arquivo.
+2. Em **Codificação**, selecione a codificação a ser usada para o arquivo.
 
-3.  Opcionalmente, em **Terminações de linha**, selecione o formato para caracteres de final de linha.
+3. Opcionalmente, em **Terminações de linha**, selecione o formato para caracteres de final de linha.
 
      Essa opção é útil se você pretende trocar o arquivo com usuários de outro sistema operacional.
 
@@ -40,21 +40,21 @@ Salve arquivos com uma codificação de caracteres específica para dar suporte 
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>Para abrir um arquivo codificado que faz parte de um projeto
 
-1.  Em **Gerenciador de Soluções**, clique com o botão direito do mouse no arquivo e escolha **Abrir Com**.
+1. Em **Gerenciador de Soluções**, clique com o botão direito do mouse no arquivo e escolha **Abrir Com**.
 
-2.  Na caixa de diálogo **Abrir Com**, escolha o editor com o qual o arquivo será aberto.
+2. Na caixa de diálogo **Abrir Com**, escolha o editor com o qual o arquivo será aberto.
 
      Muitos editores do Visual Studio, como o editor de formulários, detectarão a codificação automaticamente e abrirão o arquivo de forma adequada. Se você escolher um editor que permite escolher uma codificação, a caixa de diálogo **Codificação** será exibida.
 
-3.  Na caixa de diálogo **Codificação**, selecione a codificação que o editor deverá usar.
+3. Na caixa de diálogo **Codificação**, selecione a codificação que o editor deverá usar.
 
 ## <a name="to-open-an-encoded-file-that-is-not-part-of-a-project"></a>Para abrir um arquivo codificado que não faz parte de um projeto
 
-1.  No menu **Arquivo**, aponte para **Abrir**, escolha **Arquivo** ou **Arquivo da Web** e, em seguida, selecione o arquivo a ser aberto.
+1. No menu **Arquivo**, aponte para **Abrir**, escolha **Arquivo** ou **Arquivo da Web** e, em seguida, selecione o arquivo a ser aberto.
 
-2.  Clique no botão suspenso ao lado do botão **Abrir** e escolha **Abrir Com**.
+2. Clique no botão suspenso ao lado do botão **Abrir** e escolha **Abrir Com**.
 
-3.  Siga as Etapas 2 e 3 do procedimento anterior.
+3. Siga as Etapas 2 e 3 do procedimento anterior.
 
 ## <a name="see-also"></a>Consulte também
 

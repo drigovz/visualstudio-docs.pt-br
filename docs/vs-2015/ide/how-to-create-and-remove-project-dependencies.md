@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422881"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Como criar e remover dependências de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
     A caixa de diálogo **Dependências do Projeto** é aberta.  
   
    > [!NOTE]
-   >  A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.  
+   > A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.  
   
 3. Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.  
   
@@ -49,18 +49,18 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
   
 ### <a name="to-remove-dependencies-from-projects"></a>Para remover dependências de projetos  
   
-1.  No Gerenciador de Soluções, selecione um projeto.  
+1. No Gerenciador de Soluções, selecione um projeto.  
   
-2.  No menu **Projeto**, escolha **Dependências do Projeto**.  
+2. No menu **Projeto**, escolha **Dependências do Projeto**.  
   
      A caixa de diálogo **Dependências do Projeto** é aberta.  
   
     > [!NOTE]
-    >  A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.  
+    > A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.  
   
-3.  Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.  
+3. Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.  
   
-4.  No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.  
+4. No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Compilando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

@@ -7,25 +7,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfc350305400a42565aa55fa5e29cc40286ed0c
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 7fccae7d42d9e8f99c78fd55f74466e2f83e5dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318765"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581774"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Dicas e truques de desempenho do Visual Studio
 
 As recomendações de desempenho do Visual Studio destinam-se a situações de baixa memória, o que podem ocorrer em casos raros. Nessas situações, é possível otimizar determinados recursos do Visual Studio que você talvez não esteja usando. As dicas a seguir não devem ser consideradas como as recomendações gerais.
 
 > [!NOTE]
-> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+> Se você estiver tendo dificuldades para usar o produto devido a problemas de memória, conte para nós pela [ferramenta de comentários](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="use-a-64-bit-os"></a>Usar um sistema operacional de 64 bits
 
 Se você atualizar seu sistema de uma versão de 32 bits do Windows para uma versão de 64 bits, expanda a quantidade de memória virtual disponível para o Visual Studio de 2 GB para 4 GB. Isso permite que o Visual Studio lide com cargas de trabalho significativamente maiores, mesmo sendo um processo de 32 bits.
 
-Para obter mais informações, consulte [Limites de memória](/windows/desktop/Memory/memory-limits-for-windows-releases#memory_limits) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
+Para obter mais informações, consulte [Limites de memória](/windows/desktop/Memory/memory-limits-for-windows-releases) e [Usar /LARGEADDRESSAWARE no Windows de 64 bits](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/).
 
 ## <a name="disable-automatic-file-restore"></a>Desabilitar a restauração de arquivo automática
 
@@ -41,9 +41,9 @@ Caso você desabilite a restauração automática de arquivos, uma maneira rápi
 
 - Para a funcionalidade **Ir para** general, selecione **Editar** > **Ir para** > **Ir para Todos** ou pressione **Ctrl**+**T**.
 
-- No Visual Studio 2017 versão 15.8 e posterior, você pode pular para o local da última edição em uma solução usando **Editar** > **Ir para** > **Ir para Local da Última Edição** ou pressionando **Ctrl**+**Shift**+**Backspace**.
+- Vá para a localização da última edição em uma solução usando **Editar** > **Ir para** > **Ir para Localização da Última Edição** ou pressionando **Ctrl**+**Shift**+**Backspace**.
 
-- No Visual Studio 2017 versão 15.8 e posteriores, use **Ir para Arquivo Recente** para ver uma lista de arquivos visitados recentemente em uma solução. Selecione **Editar** > **Ir para** > **Ir para Arquivo Recente** ou pressione **Ctrl**+**1**, **Ctrl**+**R**.
+- Use **Ir Para Arquivo Recente** para ver uma lista dos arquivos visitados recentemente em uma solução. Selecione **Editar** > **Ir para** > **Ir para Arquivo Recente** ou pressione **Ctrl**+**1**, **Ctrl**+**R**.
 
 ## <a name="configure-debugging-options"></a>Configurar as opções de depuração
 
@@ -105,7 +105,17 @@ Para obter mais informações sobre as considerações de desempenho do .NET Com
 
     Extensões são componentes de software adicionais acrescentados ao Visual Studio que fornecem uma funcionalidade nova ou estendem a funcionalidade existente. Extensões geralmente podem ser uma fonte de problemas de recursos de memória. Se você estiver tendo problemas de recursos de memória, tente desabilitar as extensões, uma por vez, para ver como ele afeta o cenário ou o fluxo de trabalho.
 
+   ::: moniker range="vs-2017"
+
     Para desabilitar as extensões, acesse **Ferramentas** > **Extensões e Atualizações** e desabilite uma extensão específica.
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2019"
+
+    Para desabilitar as extensões, acesse **Extensões** >  **Gerenciar Extensões** e desabilite uma extensão específica.
+
+   ::: moniker-end
 
 - **Desabilitar o XAML Designer**
 

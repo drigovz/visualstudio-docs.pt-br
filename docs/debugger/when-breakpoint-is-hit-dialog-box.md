@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d4cc3c2366ca20328f591b0661e8c2b3e5af1e45
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929198"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>Caixa de diálogo Ponto de Interrupção Quando Visitado
 Com essa caixa de diálogo, você pode personalizar a ação que ocorre quando um ponto de interrupção é atingido.

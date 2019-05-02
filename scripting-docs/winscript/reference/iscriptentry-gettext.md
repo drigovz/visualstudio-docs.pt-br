@@ -2,7 +2,6 @@
 title: IScriptEntry::GetText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7a01d6df1281a32fee435c80465f148fcc7436a3
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 24b314443644558b9900fc7d702dcd1b96a7cea4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787705"
 ---
 # <a name="iscriptentrygettext"></a>IScriptEntry::GetText
 Retorna o texto que corresponde do `IScriptEntry` bloco de script ou o código-fonte que está contido no `IScriptScriptlet` manipulador de eventos.  

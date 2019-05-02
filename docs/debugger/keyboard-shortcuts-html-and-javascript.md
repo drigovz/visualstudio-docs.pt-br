@@ -1,6 +1,6 @@
 ---
 title: (HTML e JavaScript) de atalhos de teclado | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -13,18 +13,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe25da9dd687eba011bd8e3cc2701cf154e0358
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4af3ddb3d04b3a864a26149f88fa15960d2c2b2d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905585"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>Atalhos de teclado (HTML e JavaScript)
 
+::: moniker range=">=vs-2019"
+ Atalhos de teclado no Visual Studio para depurar aplicativos Node. js no Visual Studio com o **desenvolvimento do Node. js** carga de trabalho instalada.
+::: moniker-end
+::: moniker range="vs-2017"
  Atalhos de teclado no Visual Studio para depurar aplicativos UWP usando HTML e JavaScript.
+::: moniker-end
 
 ## <a name="general-shortcuts"></a>Atalhos gerais
+
  Esses atalhos funcionam em todas as ferramentas para aplicativos UWP usando HTML e JavaScript.
 
 |Ação|Atalho|
@@ -35,6 +41,7 @@ ms.locfileid: "56697255"
 |Abrir o hub de Desempenho e Diagnóstico|Alt+F2|
 
 ## <a name="javascript-console-shortcuts"></a>Atalhos do Console do JavaScript
+
  Use estes atalhos na janela Console do JavaScript.
 
 |Ação|Atalho|
@@ -44,6 +51,7 @@ ms.locfileid: "56697255"
 |Alterar entre o modo de linha única e o modo de várias linhas|Ctrl+Alt+M|
 
 ## <a name="dom-explorer-shortcuts"></a>Atalhos do Explorador do DOM
+
  Use estes atalhos no Explorador do DOM.
 
 |Ação|Atalho|
@@ -56,5 +64,6 @@ ms.locfileid: "56697255"
 |Diminuir o valor de CSS escolhido em 1|Seta para Baixo|
 
 ## <a name="see-also"></a>Consulte também
-- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
-- [Guia de início rápido: depurar JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md)
+- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md)
+- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md?view=vs-2017)
+- [Início Rápido: Depurar em JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md?view=vs-2017)

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a8592bdbe08c70df96cf553ff5548a87704837a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440323"
 ---
 # <a name="chart-control"></a>Controle de gráfico
   O <xref:Microsoft.Office.Tools.Excel.Chart> controle é um objeto de gráfico que expõe eventos. Quando você adiciona um gráfico em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.Chart> do objeto que você pode programar diretamente sem ter que percorrer o modelo de objeto do Microsoft Office Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "56596328"
  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
->  Gráfico criado dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Gráfico criado dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="formatting"></a>Formatação
  Toda a formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Excel.Chart> também podem ser aplicadas a um <xref:Microsoft.Office.Tools.Excel.Chart> controle. Isso inclui as bordas, fontes, tipo de gráfico, linhas de grade, legenda e os rótulos de dados.
@@ -42,35 +42,35 @@ ms.locfileid: "56596328"
 ## <a name="events"></a>Eventos
  Os eventos a seguir estão disponíveis para o <xref:Microsoft.Office.Tools.Excel.Chart> controle:
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
+- <xref:Microsoft.Office.Tools.Excel.Chart.ActivateEvent>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.Chart.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Calculate>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Deactivate>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>
+- <xref:Microsoft.Office.Tools.Excel.Chart.DragOver>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>
+- <xref:Microsoft.Office.Tools.Excel.Chart.DragPlot>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseDown>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseMove>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>
+- <xref:Microsoft.Office.Tools.Excel.Chart.MouseUp>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.Resize>
+- <xref:Microsoft.Office.Tools.Excel.Chart.Resize>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>
+- <xref:Microsoft.Office.Tools.Excel.Chart.SelectEvent>
 
--   <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
+- <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
 ## <a name="see-also"></a>Consulte também
 - [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)

@@ -1,23 +1,20 @@
 ---
 title: Atualizando formas e conectores para refletir o modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 51eb2af9-00e7-4725-a87d-62fb4f39f444
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 93c079a5dc80b0a26e133258328fb7b5b9fb8d41
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107860"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Atualizando formas e conectores para refletir o modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Definir propriedades de mapa de formas para controlar a visibilidade de um decorador  
  Você pode controlar a visibilidade de um decorador sem precisar escrever o código do programa, ao configurar o mapeamento entre a forma e a classe de domínio na definição de DSL. Para mais informações, consulte os seguintes tópicos:  
   
--   [Como controlar a visibilidade de um decorador – redirecionamento](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Como: Controlar a visibilidade de um decorador – redirecionamento](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Expor a cor e estilo de uma forma como as propriedades  
  Na definição de DSL, clique com botão direito na classe de forma, aponte para **adicionar exposto**e, em seguida, clique em um dos itens, como **cor de preenchimento**.  
@@ -118,7 +115,7 @@ partial class MyLanguageDiagram
   
  Esse método pode ser usado para propriedades de domínio e os recursos de fora da store, como o tamanho da forma.  
   
-##  <a name="OnAssociatedProperty"></a> Use associatevaluewith () para atualizar outros recursos de uma forma  
+## <a name="OnAssociatedProperty"></a> Use associatevaluewith () para atualizar outros recursos de uma forma  
  Para alguns recursos de uma forma, como se ele tem uma sombra, ou o estilo de seta de um conector, não há nenhum método incorporado de expor o recurso como uma propriedade de domínio.  Alterações para esses recursos não estão sob o controle do sistema de transação. Portanto, não é apropriado para atualizá-los usando as regras, pois as regras não são invocadas quando o usuário executa o comando Desfazer.  
   
  Em vez disso, você pode atualizar esses recursos usando <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. No exemplo a seguir, o estilo de seta de um conector é controlado por um valor de uma propriedade de domínio na relação que exibe o conector:  
@@ -165,6 +162,3 @@ public partial class ArrowConnector // My connector class.
  `AssociateValueWith()` deve ser chamado uma vez para cada propriedade de domínio que você deseja registrar. Depois que tiver sido chamado, todas as alterações à propriedade especificada chamará `OnAssociatedPropertyChanged()` em quaisquer formas que apresentam o elemento de modelo da propriedade.  
   
  Não é necessário chamar `AssociateValueWith()` para cada instância. Embora InitializeResources é um método de instância, ele é chamado apenas uma vez para cada classe de forma.
-
-
-

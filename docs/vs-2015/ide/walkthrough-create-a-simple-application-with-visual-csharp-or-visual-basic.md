@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436819"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Instruções passo a passo: criar um aplicativo simples com o Visual C# ou o Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
  [Depurar e testar o aplicativo](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Este passo a passo se baseia no Visual Studio Professional, que oferece o modelo de aplicativo WPF no qual você criará o projeto. O Visual Studio Express para Windows Desktop também oferece esse modelo, mas o Visual Studio Express para Windows e Visual Studio Express for Web, não. Para obter informações introdutórias sobre como usar o Visual Studio Express para Windows, consulte o [Centro de Desenvolvedores de Aplicativos da Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Para obter informações introdutórias sobre como usar o Visual Studio Express para a Web, consulte [Introdução ao ASP.NET](http://www.asp.net/get-started). Além disso, sua edição do Visual Studio e as configurações que você usa determinam os nomes e os locais de alguns elementos da interface do usuário. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Este passo a passo se baseia no Visual Studio Professional, que oferece o modelo de aplicativo WPF no qual você criará o projeto. O Visual Studio Express para Windows Desktop também oferece esse modelo, mas o Visual Studio Express para Windows e Visual Studio Express for Web, não. Para obter informações introdutórias sobre como usar o Visual Studio Express para Windows, consulte o [Centro de Desenvolvedores de Aplicativos da Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Para obter informações introdutórias sobre como usar o Visual Studio Express para a Web, consulte [Introdução ao ASP.NET](http://www.asp.net/get-started). Além disso, sua edição do Visual Studio e as configurações que você usa determinam os nomes e os locais de alguns elementos da interface do usuário. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Configurar o IDE  
+## <a name="BKMK_ConfigureIDE"></a> Configurar o IDE  
  Ao iniciar o Visual Studio pela primeira vez, o Visual Studio solicita que você se conecte com uma MSA (Conta de Serviço da Microsoft), [Entrar no Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Você não precisa entrar e pode fazer isso mais tarde.  
   
  Ao iniciar o Visual Studio, é necessário escolher uma combinação de configurações que aplica um conjunto de personalizações predefinidas à IDE. Cada combinação de configurações foi desenvolvida para facilitar o desenvolvimento de aplicativos.  
@@ -69,7 +69,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
    O tema da cor usado para as imagens no restante deste passo a passo é o tema claro. Para obter mais informações sobre como personalizar o IDE, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Criar um aplicativo simples  
+## <a name="BKMK_CreateApp"></a> Criar um aplicativo simples  
   
 ### <a name="create-the-project"></a>Criar o projeto  
  Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma solução. Para este exemplo, você criará um projeto do WPF (Windows Presentation Foundation).  
@@ -109,7 +109,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
     O **Gerenciador de Soluções** mostra que o nome do arquivo agora é Greetings.xaml e, se você expandir o nó MainWindow.xaml (colocando o foco no nó e pressionando a tecla de seta para a direita), verá que o nome MainWindow.xaml.vb ou MainWindow.xaml.cs agora é Greetings.xaml.vb ou Greetings.xaml.cs. Esse arquivo de código é aninhado sob o nó do arquivo .xaml para mostrar que eles estão intimamente relacionados.  
   
    > [!WARNING]
-   >  Essa alteração causa um erro que você aprenderá a depurar e corrigir em uma etapa posterior.  
+   > Essa alteração causa um erro que você aprenderá a depurar e corrigir em uma etapa posterior.  
   
 2. No **Gerenciador de Soluções**, abra Greetings.xaml no modo de exibição de Designer (pressionando a tecla Enter enquanto o nó tem o foco) e selecione a barra de título da janela usando o mouse.  
   
@@ -199,7 +199,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
 ##### <a name="add-code-to-display-message-boxes"></a>Adicionar código a caixas de mensagem de exibição  
   
-1.  Na superfície de design, clique duas vezes no botão **Exibição**.  
+1. Na superfície de design, clique duas vezes no botão **Exibição**.  
   
      Greetings.xaml.vb ou Greetings.xaml.cs é aberto, com o cursor no evento Button_Click. Também é possível adicionar um manipulador de eventos de clique da seguinte maneira (se o código colado tiver um rabisco vermelho sob os nomes, isso significa que você provavelmente não selecionou os controles RadioButton na superfície de design nem os renomeou):  
   
@@ -220,7 +220,7 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
     }  
     ```  
   
-2.  No Visual Basic, insira o código a seguir:  
+2. No Visual Basic, insira o código a seguir:  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
     }  
     ```  
   
-3.  Salve o aplicativo.  
+3. Salve o aplicativo.  
   
-##  <a name="BKMK_DebugTest"></a> Depurar e testar o aplicativo  
+## <a name="BKMK_DebugTest"></a> Depurar e testar o aplicativo  
  Em seguida, você depurará o aplicativo para procurar erros e testar se ambas as caixas de mensagem são exibidas corretamente. As instruções a seguir descrevem como compilar e iniciar o depurador, mas, posteriormente, é possível ler [Compilando um aplicativo WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) e [Depurando o WPF](../debugger/debugging-wpf.md) para obter mais informações.  
   
 ### <a name="find-and-fix-errors"></a>Localizar e corrigir erros  
@@ -280,29 +280,29 @@ Ao concluir este passo a passo, você estará familiarizado com vários designer
   
 ##### <a name="to-add-breakpoints"></a>Para adicionar pontos de interrupção  
   
-1.  Abra Greetings.xaml.vb ou Greetings.xaml.cs e selecione a linha a seguir: `MessageBox.Show("Hello.")`  
+1. Abra Greetings.xaml.vb ou Greetings.xaml.cs e selecione a linha a seguir: `MessageBox.Show("Hello.")`  
   
-2.  Adicione um ponto de interrupção por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.  
+2. Adicione um ponto de interrupção por meio do menu selecionando **Depurar** e, em seguida, **Ativar/Desativar Ponto de Interrupção**.  
   
      ![Comando Ativar/Desativar Pontos de Interrupção no menu Depurar](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      Um círculo vermelho aparece ao lado da linha de código na margem da extrema esquerda da janela do editor.  
   
-3.  Selecione a linha a seguir: `MessageBox.Show("Goodbye.")`.  
+3. Selecione a linha a seguir: `MessageBox.Show("Goodbye.")`.  
   
-4.  Pressione a tecla F9 para adicionar um ponto de interrupção e depois pressione a tecla F5 para iniciar a depuração.  
+4. Pressione a tecla F9 para adicionar um ponto de interrupção e depois pressione a tecla F5 para iniciar a depuração.  
   
-5.  Na janela **Saudações**, escolha o botão de opção **Olá** e depois o botão **Exibição**.  
+5. Na janela **Saudações**, escolha o botão de opção **Olá** e depois o botão **Exibição**.  
   
      A linha `MessageBox.Show("Hello.")` é realçada em amarelo. Na parte inferior do IDE, as janelas Automáticos, Locais e Inspeção estão encaixadas juntas no lado esquerdo e as janelas Pilha de Chamadas, Pontos de Interrupção, Comando, Imediato e Saída estão encaixadas no lado direito.  
   
-6.  Na barra de menus, escolha **Depurar**, **Depuração Circular**.  
+6. Na barra de menus, escolha **Depurar**, **Depuração Circular**.  
   
      O aplicativo retomará a execução e uma caixa de mensagem com a palavra "Olá" será exibida.  
   
-7.  Escolha o botão **OK** na caixa de mensagem para fechá-la.  
+7. Escolha o botão **OK** na caixa de mensagem para fechá-la.  
   
-8.  Na janela **Saudações**, escolha o botão de opção **Até logo** e depois o botão **Exibição**.  
+8. Na janela **Saudações**, escolha o botão de opção **Até logo** e depois o botão **Exibição**.  
   
      A linha `MessageBox.Show("Goodbye.")` é realçada em amarelo.  
   

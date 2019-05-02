@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21497404d6cdad3f55bffd97fd0329d76418b313
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8fe194e11edf0a3f825303137b9bdcc755135eee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972987"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 
@@ -45,13 +45,13 @@ Para obter mais informações sobre a sintaxe de linha de comando *HlpCtntMgr.ex
 
 Requisitos:
 
--   Os computadores cliente devem ter acesso à Internet.
+- Os computadores cliente devem ter acesso à Internet.
 
--   Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
+- Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
 
 Restrições:
 
--   A fonte padrão para Ajuda ainda será online.
+- A fonte padrão para Ajuda ainda será online.
 
 ### <a name="example"></a>Exemplo
 
@@ -59,13 +59,13 @@ O exemplo a seguir instala o conteúdo do inglês para o Visual Studio para um c
 
 #### <a name="to-install-english-content-from-the-internet"></a>Para instalar o conteúdo em inglês da Internet
 
-1.  Escolha **Iniciar** e **Executar**.
+1. Escolha **Iniciar** e **Executar**.
 
-2.  Digite o seguinte:
+2. Digite o seguinte:
 
      `C:\Program Files (x86)\Microsoft Help Viewer\v2.3\hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us`
 
-3.  Pressione **ENTER**.
+3. Pressione **ENTER**.
 
 ## <a name="deploy-pre-installed-local-help-content-on-client-computers"></a>Implantar conteúdo pré-instalado de Ajuda local em computadores cliente
 
@@ -73,16 +73,16 @@ Você pode instalar um conjunto de conteúdo online em um computador, e então c
 
 Requisitos:
 
--   O computador em que você instala o conjunto de conteúdo deve ter acesso à Internet.
+- O computador em que você instala o conjunto de conteúdo deve ter acesso à Internet.
 
--   Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
+- Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.
 
     > [!TIP]
     > Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia **Gerenciar Conteúdo** no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../help-viewer/behavior-overrides.md).
 
 Restrições:
 
--   A fonte padrão para Ajuda ainda será online.
+- A fonte padrão para Ajuda ainda será online.
 
 ### <a name="create-the-content-set"></a>Crie o conjunto de conteúdo
 
@@ -104,23 +104,23 @@ Antes de criar o conjunto de conteúdo básico, primeiro você deve desinstalar 
 
 #### <a name="to-download-the-content"></a>Para baixar o conteúdo
 
-1.  No Help Viewer, escolha a guia **Gerenciar Conteúdo**.
+1. No Help Viewer, escolha a guia **Gerenciar Conteúdo**.
 
-2.  Em **Documentação Recomendada** ou **Documentação Disponível**, navegue até os conjuntos de documentação que você deseja baixar e, em seguida, escolha **Adicionar**.
+2. Em **Documentação Recomendada** ou **Documentação Disponível**, navegue até os conjuntos de documentação que você deseja baixar e, em seguida, escolha **Adicionar**.
 
-3.  Escolha **Atualizar**.
+3. Escolha **Atualizar**.
 
 Em seguida, você precisará empacotar o conteúdo para que ele seja implantado em computadores clientes.
 
 #### <a name="to-package-the-content"></a>Para criar um pacote com o conteúdo
 
-1.  Crie uma pasta para copiar o conteúdo para uma implantação posterior. Por exemplo: *C:\VSHelp*.
+1. Crie uma pasta para copiar o conteúdo para uma implantação posterior. Por exemplo: *C:\VSHelp*.
 
-2.  Abra *cmd.exe* com permissões de Administrador.
+2. Abra *cmd.exe* com permissões de Administrador.
 
-3.  Navegue até a pasta que você criou na etapa 1.
+3. Navegue até a pasta que você criou na etapa 1.
 
-4.  Digite o seguinte:
+4. Digite o seguinte:
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
@@ -128,11 +128,11 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
 
 ### <a name="deploy-the-content"></a>Implantar o conteúdo
 
-1.  Crie um compartilhamento de rede e copie o conteúdo da ajuda nesse local.
+1. Crie um compartilhamento de rede e copie o conteúdo da ajuda nesse local.
 
      Por exemplo, copie o conteúdo em *C:\VSHelp* para *\\\myserver\VSHelp*.
 
-2.  Crie um arquivo *.bat* para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações. Por exemplo:
+2. Crie um arquivo *.bat* para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações. Por exemplo:
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -140,7 +140,7 @@ Em seguida, você precisará empacotar o conteúdo para que ele seja implantado 
     if ERRORLEVEL 1 ECHO *** ERROR COPYING Help Library files to ProgramData (%ERRORLEVEL%)
     ```
 
-3.  Execute o arquivo *.bat* nos computadores locais em que você deseja instalar o conteúdo da Ajuda.
+3. Execute o arquivo *.bat* nos computadores locais em que você deseja instalar o conteúdo da Ajuda.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,14 +1,9 @@
 ---
 title: Função SccAdd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: daac15bbb7829d510db17ba02057a2dc86c55990
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432504"
 ---
 # <a name="sccadd-function"></a>Função SccAdd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +80,7 @@ SCCRTN SccAdd(
  O usual `fOptions` são substituídos aqui por uma matriz `pfOptions`, com um `LONG` opção especificação por arquivo. Isso ocorre porque o tipo de arquivo pode variar de um arquivo para o arquivo.  
   
 > [!NOTE]
->  Não é válido especificar ambos `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opções para o mesmo arquivo, mas ele é válido para especificar que nenhum dos dois. A configuração de nenhum dos dois é o mesmo que definir `SCC_FILETYPE_AUTO`, caso em que o controle de fonte este plug-in detecta automaticamente o tipo de arquivo.  
+> Não é válido especificar ambos `SCC_FILETYPE_TEXT` e `SCC_FILETYPE_BINARY` opções para o mesmo arquivo, mas ele é válido para especificar que nenhum dos dois. A configuração de nenhum dos dois é o mesmo que definir `SCC_FILETYPE_AUTO`, caso em que o controle de fonte este plug-in detecta automaticamente o tipo de arquivo.  
   
  Abaixo está a lista de sinalizadores usados no `pfOptions` matriz:  
   
@@ -102,4 +97,3 @@ SCCRTN SccAdd(
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)
-

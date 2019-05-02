@@ -1,27 +1,22 @@
 ---
 title: Obtendo informações de cores para colorização de texto e fonte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - text, coloring
 - font and color control [Visual Studio SDK], coloring
 ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 41fc6ac7ba20bc552ebdfde2cab69dd28867ee7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440125"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>Obtendo informações de cores para colorização de texto e fonte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
  A maioria das implementações que exibem texto coloridos serão precisa o `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` e associados a interfaces para as configurações de exibição de apresentação, recuperar e armazenar texto.  
   
 > [!NOTE]
->  Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é altamente recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de cor e de fonte](../extensibility/font-and-color-overview.md).  
+> Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é altamente recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de cor e de fonte](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Obtendo informações de cor e a fonte padrão  
  Todos os as **fontes e cores** configurações de qualquer janela de exibição de texto devem ser especificadas na **itens de exibição** de um **categoria**. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
@@ -53,5 +48,4 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>   
  [Usando fontes e texto](http://msdn.microsoft.com/library/d43640f3-da94-4df2-a29d-a9d021a1c069)   
  [Trabalhando com cor](http://msdn.microsoft.com/library/d34ff96f-241d-494f-abdd-13811ada8cd3)   
- [GDI (interface gráfica de dispositivo)](http://msdn.microsoft.com/en-us/7e1d4540-bb2e-4257-8eee-eee376acba83)
-
+ [GDI (interface gráfica de dispositivo)](http://msdn.microsoft.com/7e1d4540-bb2e-4257-8eee-eee376acba83)

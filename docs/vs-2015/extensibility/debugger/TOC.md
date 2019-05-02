@@ -32,7 +32,7 @@
 ### [Entrar no modo de interrupção](stepping-in-break-mode.md)
 ### [Avaliação de expressão no modo de interrupção](expression-evaluation-in-break-mode.md)
 ### [Tratamento de Exceção](exception-handling-visual-studio-sdk.md)
-## [Como depurar um mecanismo de depuração personalizado](how-to-debug-a-custom-debug-engine.md)
+## [Como: depurar um mecanismo de depuração personalizado](how-to-debug-a-custom-debug-engine.md)
 # [Introdução](getting-started-with-debugger-extensibility.md)
 ## [Roteiro para estender o depurador](roadmap-for-extending-the-debugger.md)
 ## [Componentes do depurador](debugger-components.md)
@@ -120,7 +120,7 @@
 ## [Estrutura AsyncTaskMethodBuilder](asynctaskmethodbuilder-structure-internal-members.md)
 ### [Propriedade ObjectIdForDebugger](asynctaskmethodbuilder-objectidfordebugger-property.md)
 ### [Campo m_builder](asynctaskmethodbuilder-m-builder-field.md)
-## [Estrutura AsyncTaskMethodBuilder<TResult>](asynctaskmethodbuilder-tresult-structure-internal-members.md)
+## [Estrutura AsyncTaskMethodBuilder\<TResult >](asynctaskmethodbuilder-tresult-structure-internal-members.md)
 ### [Propriedade ObjectIdForDebugger](asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)
 ### [Campo m_task](asynctaskmethodbuilder-tresult-m-task-field.md)
 ## [Estrutura AsyncVoidMethodBuilder](asyncvoidmethodbuilder-structure-internal-members.md)
@@ -128,4 +128,3 @@
 ### [Campo m_objectIdForDebugger](asyncvoidmethodbuilder-m-objectidfordebugger-field.md)
 # [Referência](reference/reference-visual-studio-debugging-apis.md)
 # [Amostras](visual-studio-debugging-samples.md)
-

@@ -1,12 +1,9 @@
 ---
 title: Gerar código em diagramas de classe UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates
 - vs.teamarch.logicalclassdiagram.shapes.properties.Templates.TextTransformationDataCollectionEditor
@@ -18,13 +15,13 @@ ms.assetid: 2790e64d-7728-4c2e-a4dd-4131e795f730
 caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a8108a552f21504714fea84bcb29194db4d947cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442424"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,11 +53,11 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
 2. Em um diagrama de classe ou no **Gerenciador de modelos UML**, selecionar os elementos do qual você deseja gerar código. É possível selecionar um dos seguintes:  
 
-   -   Um conjunto específico de elementos.  
+   - Um conjunto específico de elementos.  
 
-   -   Um pacote ou o modelo, para gerar código com base em seu conteúdo.  
+   - Um pacote ou o modelo, para gerar código com base em seu conteúdo.  
 
-   -   O diagrama, para selecionar todos os elementos no diagrama.  
+   - O diagrama, para selecionar todos os elementos no diagrama.  
 
 3. Abra o menu de atalho para o elemento selecionado e, em seguida, escolha **gerar código**.  
 
@@ -74,7 +71,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
    Alguns testes de validação são aplicados ao modelo para garantir que ele possa ser convertido no C#. Se esse teste falhar, uma mensagem de erro será exibida e a geração de código não será realizada. Se você tiver criado um comando de menu de validação, o código não será gerado para nenhum elemento com falha no comando de validação. Para obter mais informações, consulte [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Transformações de geração de código padrão  
+## <a name="default"></a> Transformações de geração de código padrão  
  Esta seção resume os resultados que são produzidos pela **gerar código** de comando, a menos que você personalize o comando. Para obter mais informações, consulte [Personalizando o comando gerar código](#custom).  
 
 - Um tipo do C# é gerado para cada tipo selecionado no modelo UML. Cada tipo é colocado em um arquivo separado código sob o **GeneratedCode** pasta.  
@@ -94,8 +91,8 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 |Classe|Classe|\<none > ou<br /><br /> Classe do C#|  
 |Interface|Interface|\<none > ou<br /><br /> Interface do C#|  
 |Enumeração|Enumeração|\<none > ou<br /><br /> Enum do C#|  
-|Representante|Classe|Representante do C#|  
-|Struct|Classe|Struct do C#|  
+|delegado|Classe|Representante do C#|  
+|Estrutura|Classe|Struct do C#|  
 
 #### <a name="to-set-a-stereotype-on-a-type-or-other-element"></a>Para definir um estereótipo em um tipo ou outro elemento  
 
@@ -104,7 +101,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 2. No **propriedades** janela, escolha a seta suspensa na **estereótipos** propriedade e, em seguida, selecione a caixa de seleção do estereótipo que você deseja aplicar.  
 
    > [!TIP]
-   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
+   > Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
 
 3. Expanda o **estereótipos** propriedade para ver as propriedades adicionais que podem ser definidas.  
 
@@ -129,7 +126,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
   Cada atributo e operação também tem propriedades de estereótipo que é possível definir. Se você não vir as propriedades em um novo atributo, execute **gerar código**.  
 
-##  <a name="custom"></a> Personalizando o comando gerar código  
+## <a name="custom"></a> Personalizando o comando gerar código  
  O **gerar código** funciona transformando os elementos de modelo usando um conjunto de modelos de texto de comando. Para obter mais informações sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Os modelos são especificados em um conjunto de *associações do modelo de texto*. Uma associação de modelo de texto Especifica o modelo que deve ser aplicado, onde a saída gerada deve ser colocada e outros parâmetros do **gerar código** comando.  
@@ -147,7 +144,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
  Mais de um modelo pode ser aplicado a um elemento de modelo. É possível gerar mais de um arquivo de cada elemento de modelo.  
 
 > [!NOTE]
->  As associações anexadas à raiz do modelo funcionam como padrões para todos os elementos no modelo. Para ver essas associações padrão, abra **Gerenciador de modelos UML**. Abra o menu de atalho do projeto de modelagem e, em seguida, escolha **definir geração de código**. Como alternativa, você pode selecionar a raiz do modelo no Gerenciador de modelos UML. Na janela Propriedades, escolha **[...]**  no **associações do modelo de texto** propriedade. As associações não aparecerá até que você tenha usado o **gerar código** comando pelo menos uma vez. As associações de modelo não podem ser anexadas a um diagrama.  
+> As associações anexadas à raiz do modelo funcionam como padrões para todos os elementos no modelo. Para ver essas associações padrão, abra **Gerenciador de modelos UML**. Abra o menu de atalho do projeto de modelagem e, em seguida, escolha **definir geração de código**. Como alternativa, você pode selecionar a raiz do modelo no Gerenciador de modelos UML. Na janela Propriedades, escolha **[...]**  no **associações do modelo de texto** propriedade. As associações não aparecerá até que você tenha usado o **gerar código** comando pelo menos uma vez. As associações de modelo não podem ser anexadas a um diagrama.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Para anexar associações do modelo de texto a um pacote ou a outro elemento de modelo  
 
@@ -167,7 +164,6 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
 4. Na caixa de diálogo, defina as propriedades da associação do modelo de texto.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descrição**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nome        |                                                                                                                                                                                                                                                  Um nome da associação. Para substituir uma associação herdada de um pacote ou de um modelo de conteúdo, use o mesmo nome da associação que você deseja substituir.                                                                                                                                                                                                                                                  |
@@ -177,10 +173,9 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
    |  Diretório de Destino  |                                                                                          A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usado somente na **diretório de destino** propriedade.                                                                                          |
    | Caminho do Arquivo de Modelo |                                                                                                                                                           O modelo que realizará a transformação.<br /><br /> É possível usar os modelos fornecidos ou criar os próprios. É possível encontrar os modelos fornecidos no seguinte local:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
-
 5. É possível anexar quantas associações a um elemento você quiser.  
 
-##  <a name="writing"></a> Gravando um modelo de texto  
+## <a name="writing"></a> Gravando um modelo de texto  
  É possível gravar os próprios modelos de texto. Os modelos de texto podem gerar códigos de programa ou qualquer outro tipo de arquivo de texto.  
 
  Recomendamos que você comece modificando cópias dos modelos padrão. É possível copiar os modelos dos seguintes locais:  
@@ -240,9 +235,6 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 - `<#= Expressions #>` são avaliados e convertidos em cadeias de caracteres.  
 
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de classe UML: Diretrizes](../modeling/uml-class-diagrams-guidelines.md)   
  [Gerar arquivos por meio de um modelo UML](../modeling/generate-files-from-a-uml-model.md)
-
-
-

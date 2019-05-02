@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9d8ab4be67ffd84406869c956f9046a53d6ec79
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: facf3cbeb6635324e74244983fcb33138ad64cfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812368"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>Como: Abrir pastas de trabalho de forma programática
   O <xref:Microsoft.Office.Interop.Excel.Workbooks> coleta no Microsoft Office Excel torna possível para trabalhar com todas as pastas de trabalho e para abrir pastas de trabalho.
@@ -27,7 +27,7 @@ ms.locfileid: "56611887"
 
 ## <a name="to-open-an-existing-workbook"></a>Para abrir uma pasta de trabalho existente
 
-1.  Use o <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> método da <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção, passando o caminho para a pasta de trabalho.
+1. Use o <xref:Microsoft.Office.Interop.Excel.Workbooks.Open%2A> método da <xref:Microsoft.Office.Interop.Excel.Workbooks> coleção, passando o caminho para a pasta de trabalho.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#2)]
      [!code-vb[Trin_VstcoreExcelAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#2)]
@@ -35,7 +35,7 @@ ms.locfileid: "56611887"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo de código requer o seguinte:
 
--   Uma pasta de trabalho chamada `YourWorkbook.xls` deve existir em um diretório chamado `Test` na unidade C.
+- Uma pasta de trabalho chamada `YourWorkbook.xls` deve existir em um diretório chamado `Test` na unidade C.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)

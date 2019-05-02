@@ -13,51 +13,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bab7e6717ee3216e513fed9bbe3b8c5f6295667
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445210"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 Uma linguagem específica de domínio (DSL) é criada usando uma solução do Visual Studio especializada.
 
 ## <a name="prerequisites"></a>Pré-requisitos
- Antes de iniciar este procedimento, você deve primeiro instalar esses componentes:
 
+Antes de iniciar este procedimento, instale esses componentes:
 
-| | |
-|-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkID=185579](http://go.microsoft.com/fwlink/?LinkID=185579) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkID=185580](http://go.microsoft.com/fwlink/?LinkID=185580) |
-| SDK de Visualização e Modelagem do Visual Studio | |
+- Visual Studio
+- SDK do Visual Studio (instalado como parte dos **desenvolvimento de extensões do Visual Studio** carga de trabalho)
+- Modelando o SDK (instalado como um componente do Visual Studio)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio
 
-#### <a name="to-create-a-domain-specific-language-solution"></a>Para criar uma solução de linguagem específica do domínio
+1. Iniciar o Assistente de DSL, criando um novo **Designer de linguagem específica do domínio** projeto.
 
-1. Inicie o assistente DSL.
+   > [!NOTE]
+   > De preferência, o nome que você escolhe para o projeto deve ser um Visual válido C# identificador porque ele pode ser usado para gerar código.
 
-   1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+   ::: moniker range="vs-2017"
 
-   2. A caixa de diálogo **Novo Projeto** é exibida.
+   ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
 
-   3. Sob **tipos de projeto**, expanda o **Other Project Types** nó e clique em **extensibilidade**.
-
-   4. Clique em **Designer de linguagem específica do domínio**.
-
-   5. No **nome** , digite um nome para a solução. Clique em **OK**.
-
-       O **Assistente de Designer de linguagem específica do domínio** é exibida.
-
-      > [!NOTE]
-      >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.
-
-      ![Criar caixa de diálogo DSL](../modeling/media/create_dsldialog.png)
+   ::: moniker-end
 
 2. Escolha um modelo DSL.
 
@@ -67,16 +54,16 @@ Uma linguagem específica de domínio (DSL) é criada usando uma solução do Vi
 
 3. Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.
 
-   -   Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no menu do SDK do Visual Studio.
+   - Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no menu do SDK do Visual Studio.
 
-   -   Se outra extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere a possibilidade de desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
+   - Se outra extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere a possibilidade de desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
 
 4. Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).
 
     O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.
 
    > [!NOTE]
-   >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.
+   > Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.
 
 ## <a name="settings"></a> As páginas do Assistente de Designer de DSL
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.
@@ -98,15 +85,15 @@ Digite uma nova extensão de arquivo.
 
  Se você vir uma lista de ferramentas ou pacotes, você deve fazer o seguinte:
 
--   Digite uma extensão de arquivo diferente.
+- Digite uma extensão de arquivo diferente.
 
      \- ou -
 
--   Redefina a instância Experimental do Visual Studio. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.
+- Redefina a instância Experimental do Visual Studio. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.
 
      \- ou -
 
--   Se uma extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-o. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
+- Se uma extensão do Visual Studio que usa esta extensão de arquivo tiver sido totalmente instalada em seu computador, desinstale-o. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.
 
 ### <a name="product-settings-page"></a>Página de configurações do produto
  **O que é o nome do produto que a nova linguagem específica de domínio pertence?**

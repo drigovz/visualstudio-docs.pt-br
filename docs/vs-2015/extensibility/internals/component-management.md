@@ -1,27 +1,22 @@
 ---
 title: Gerenciamento de componente | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 626717ed559257d04cb0bbcca3c76283aac22d63
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 56a110f382d0b182eed0ea1a95cd4dabf2877037
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090440"
 ---
 # <a name="component-management"></a>Gerenciamento de componentes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,27 +29,26 @@ Unidades de tarefas no instalador do Windows são chamadas de componentes do Win
   
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Diretrizes de criação de instalação para instalação lado a lado  
   
--   Arquivos de autor e chaves do registro que são compartilhadas entre versões em seus próprios componentes.  
+- Arquivos de autor e chaves do registro que são compartilhadas entre versões em seus próprios componentes.  
   
      Isso permite que você facilmente consumi-los na próxima versão. Por exemplo, as bibliotecas de tipos que são registradas globalmente, arquivo de extensões, outros itens registrados em HKEY_CLASSES_ROOT e assim por diante.  
   
--   Agrupe componentes compartilhados em módulos de mesclagem separado.  
+- Agrupe componentes compartilhados em módulos de mesclagem separado.  
   
      Isso ajuda a você autor corretamente para o lado a lado seguindo em frente.  
   
--   Instale arquivos compartilhados e chaves do registro, usando os mesmos componentes do Windows Installer entre versões.  
+- Instale arquivos compartilhados e chaves do registro, usando os mesmos componentes do Windows Installer entre versões.  
   
      Se você usar um componente diferente, arquivos e entradas do registro são desinstaladas quando um VSPackage de controle de versão é desinstalado, mas outra VSPackage ainda está instalado.  
   
--   Não misture os itens com controle de versão e compartilhados no mesmo componente.  
+- Não misture os itens com controle de versão e compartilhados no mesmo componente.  
   
      Isso torna impossível instalar itens compartilhados em um local global e os itens com controle de versão para locais isolados.  
   
--   Não tem chaves de registro compartilhadas que apontam para arquivos com controle de versão.  
+- Não tem chaves de registro compartilhadas que apontam para arquivos com controle de versão.  
   
      Se você fizer isso, as chaves compartilhadas serão substituídas quando outro VSPackage de controle de versão está instalada. Depois de remover a segunda versão, o arquivo ao qual a chave está apontando não existe mais.  
   
 ## <a name="see-also"></a>Consulte também  
  [Escolher entre VSPackages compartilhados e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Cenários de configuração do VSPackage](../../extensibility/internals/vspackage-setup-scenarios.md)
-

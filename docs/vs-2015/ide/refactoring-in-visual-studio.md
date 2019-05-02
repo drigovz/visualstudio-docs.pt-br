@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7d11fa85073c9bf1ed9657fbb47705953c7593d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5f98061cbc25bc4b4b7ef54a7027f40c9f780c6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772054"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540170"
 ---
 # <a name="refactoring-in-visual-studio"></a>Refatoração no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Refatoração é o processo de modificar o código para torná-lo mais fácil de
 
    Como a lógica da refatoração está intimamente associada à sintaxe de linguagem, cada serviço de linguagem no Visual Studio fornece suas próprias funcionalidades de refatoração. Para obter mais informações, consulte as seguintes páginas:
 
-### <a name="refactoring-in-c"></a>Refatoração no C#
+### <a name="refactoring-in-c"></a>Refatoração no C\#
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)
 
 ### <a name="refactoring-in-visual-basic"></a>Refatoração no Visual Basic
@@ -40,8 +40,8 @@ Refatoração é o processo de modificar o código para torná-lo mais fácil de
 ### <a name="refactoring-in-c"></a>Refatoração no C++
  [Escrevendo e refatorando código (C++)](http://msdn.microsoft.com/library/56ffb9e9-514f-41f4-a3cf-fd9ce2daf3b6)
 
-### <a name="refactoring-in-f"></a>Refatoração no F#
+### <a name="refactoring-in-f"></a>Refatoração no F\#
  O suporte à refatoração no F# é fornecido no [Visual F# Power Tools](https://visualstudiogallery.msdn.microsoft.com/136b942e-9f2c-4c0b-8bac-86d774189cff), uma extensão do Visual Studio de terceiros.
 
 ## <a name="see-also"></a>Consulte também
- [IDE do Visual Studio](../ide/visual-studio-ide.md) [escrevendo código no Editor de código e texto](../ide/writing-code-in-the-code-and-text-editor.md)
+ [IDE do Visual Studio](../ide/visual-studio-ide.md) [Como escrever código no editor de código e de texto](../ide/writing-code-in-the-code-and-text-editor.md)

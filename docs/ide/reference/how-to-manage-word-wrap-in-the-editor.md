@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789478"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como: Gerenciar a quebra automática de linha no editor
 
@@ -28,19 +28,19 @@ ms.locfileid: "55926262"
 
 ## <a name="to-set-word-wrap-preferences"></a>Para definir preferências de quebra automática de linha
 
-1.  No menu **Ferramentas**, selecione **Opções**.
+1. No menu **Ferramentas**, selecione **Opções**.
 
-2.  Na pasta **Editor de Texto**, escolha as opções **Gerais** na subpasta **Todas as Linguagens** para definir essa opção globalmente.
+2. Na pasta **Editor de Texto**, escolha as opções **Gerais** na subpasta **Todas as Linguagens** para definir essa opção globalmente.
 
      – ou —
 
      Escolha as opções **Gerais** na subpasta da linguagem na qual você está programando.
 
-3.  Em **Configurações**, marque ou desmarque a opção **Quebra automática de linha**.
+3. Em **Configurações**, marque ou desmarque a opção **Quebra automática de linha**.
 
      Quando a opção **Quebra automática de linha** estiver selecionada, a opção **Mostrar glifos visuais para quebra automática de linha** será habilitada.
 
-4.  Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.
+4. Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.
 
     > [!NOTE]
     > Essas setas de lembrete não são adicionadas ao código, elas são apenas para exibição.

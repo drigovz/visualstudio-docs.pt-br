@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6440dabdc1252440e68e424e94aa6534d63173e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 454e71026eeee3cbd76c95038ba59fb709b8d88f
+ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784200"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58193670"
 ---
 # <a name="security-bibliography"></a>Bibliografia de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "54784200"
 Veja a seguir os recursos selecionados disponíveis online e uma cópia impressa sobre o assunto de desenvolver aplicativos seguros e como configurar ambientes seguros:  
   
 ## <a name="microsoft-web-sites"></a>Sites da Microsoft  
- [Segurança da Microsoft](http://go.microsoft.com/fwlink/?LinkId=55529)  
+ [Segurança da Microsoft](https://www.microsoft.com/security)  
  Saiba como a Microsoft está trabalhando para ajudá-lo a manter seus aplicativos e sistemas seguros, desde a área de trabalho até sistemas de rede, com links para recursos de segurança para profissionais de TI, desenvolvedores e usuários domésticos.  
   
- [Recursos de segurança no MSDN](http://go.microsoft.com/fwlink/?LinkID=25440)  
+ [Recursos de segurança no MSDN](https://www.microsoft.com/msrc?rtc=1)  
  Documentação voltada para o desenvolvedor, exemplos de código, artigos técnicos e outros recursos para desenvolver aplicativos seguros.  
   
- [Segurança do Microsoft TechNet](http://go.microsoft.com/fwlink/?LinkId=67991)  
+ [Segurança do Microsoft TechNet](https://www.microsoft.com/securityengineering)  
  Contém ponteiros para as informações técnicas mais importantes sobre segurança para profissionais de TI e “usuários avançados”.

@@ -1,27 +1,22 @@
 ---
 title: Visão geral das opções de configuração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 44c5f424ec36d3c04403f62547920f59622208a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0b37d93adbd2accb7a12fb176ab15aafc6914190
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441519"
 ---
 # <a name="configuration-options-overview"></a>Visão geral das opções de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +38,7 @@ Projetos em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pode dar suporte a v
 |MyConfig|N/D|\<Configurações de MyConfig Win64 >|  
   
 > [!NOTE]
->  Você não pode criar uma configuração de solução "MyConfig" que exclui uma plataforma de "Win32", a menos que o projeto de que destino não oferece suporte para Win32.  
+> Você não pode criar uma configuração de solução "MyConfig" que exclui uma plataforma de "Win32", a menos que o projeto de que destino não oferece suporte para Win32.  
   
  Alterando a configuração ativa para uma solução seleciona o conjunto de configurações de projeto que são compiladas, executar, depurado ou implantado na solução. Por exemplo, se você alterar a configuração da solução ativa de versão para depuração, todos os projetos na solução são criados automaticamente com a configuração do projeto indicada na configuração de depuração da solução. Configurações de projeto geralmente também são nomeados de depuração, a menos que o usuário tiver feito alterações manuais no Gerenciador de configuração do ambiente.  
   
@@ -80,4 +75,3 @@ Interfaces de configuração
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>   
  [Configuração de projeto para criação](../../extensibility/internals/project-configuration-for-building.md)   
  [Configuração da solução](../../extensibility/internals/solution-configuration.md)
-

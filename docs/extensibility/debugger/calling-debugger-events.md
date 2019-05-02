@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27792aa1a8ca9edf1a85f4d607bbef926fb69027
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b4a727b078d55227b557621b673ea39b36d790f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890912"
 ---
 # <a name="call-debugger-events"></a>Chamar eventos do depurador
 Eventos em sessões de depuração ocorrerem em uma ordem específica.
@@ -23,21 +23,21 @@ Eventos em sessões de depuração ocorrerem em uma ordem específica.
 ## <a name="discussion"></a>Discussão
  Para entender o padrão de chamadas entre o mecanismo de depuração (DES) e o Gerenciador de sessão de depuração (SDM), o código a seguir representa a ordem de chamada dos eventos que ocorrem em uma sessão de depuração típica:
 
-1.  [Anexar e desanexar a um programa](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
+1. [Anexar e desanexar a um programa](../../extensibility/debugger/attaching-and-detaching-to-a-program.md)
 
-2.  [Iniciando o depurador](../../extensibility/debugger/launching-the-debugger.md)
+2. [Iniciando o depurador](../../extensibility/debugger/launching-the-debugger.md)
 
-3.  [Encerrar um programa](../../extensibility/debugger/terminating-a-program.md)
+3. [Encerrar um programa](../../extensibility/debugger/terminating-a-program.md)
 
-4.  [Criando um ponto de interrupção](../../extensibility/debugger/creating-a-breakpoint.md)
+4. [Criando um ponto de interrupção](../../extensibility/debugger/creating-a-breakpoint.md)
 
-5.  [Quando um ponto de interrupção é associado ou se tornar não associados](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
+5. [Quando um ponto de interrupção é associado ou se tornar não associados](../../extensibility/debugger/when-a-breakpoint-binds-or-becomes-unbound.md)
 
-6.  [Erros de ponto de interrupção](../../extensibility/debugger/breakpoint-errors.md)
+6. [Erros de ponto de interrupção](../../extensibility/debugger/breakpoint-errors.md)
 
-7.  [Atingindo um ponto de interrupção](../../extensibility/debugger/hitting-a-breakpoint.md)
+7. [Atingindo um ponto de interrupção](../../extensibility/debugger/hitting-a-breakpoint.md)
 
-8.  [Excluindo um ponto de interrupção](../../extensibility/debugger/deleting-a-breakpoint.md)
+8. [Excluindo um ponto de interrupção](../../extensibility/debugger/deleting-a-breakpoint.md)
 
 9. [Entrar no modo de interrupção](../../extensibility/debugger/entering-break-mode.md)
 

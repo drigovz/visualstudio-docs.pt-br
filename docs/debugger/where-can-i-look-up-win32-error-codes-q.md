@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebd2b4dd65fbcb957e13207cc5550a10b7870219
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 7299139d05a47c079e1aeb29f3b61433cff33bb6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929184"
 ---
 # <a name="where-can-i-look-up-win32-error-codes"></a>Onde posso pesquisar códigos de erro Win32?
 WINERROR.H no diretório INCLUDE da instalação do sistema padrão contém as definições do código de erro para as funções de API do Win32.
@@ -31,7 +31,6 @@ WINERROR.H no diretório INCLUDE da instalação do sistema padrão contém as d
  Você pode pesquisar um código de erro digitando o código na janela **Inspeção** ou na caixa de diálogo **QuickWatch**. Por exemplo:
 
 `0x80000004,hr`
-
 
 ## <a name="see-also"></a>Consulte também
 - [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)

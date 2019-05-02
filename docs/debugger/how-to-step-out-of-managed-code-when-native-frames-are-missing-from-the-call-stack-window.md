@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846941"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Como: Sair do código gerenciado quando quadros nativos estiverem ausentes na janela Pilha de Chamadas
 
@@ -39,9 +39,9 @@ Se seu código tiver quadros nativos invisíveis na janela **Pilha de Chamadas**
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Realizar Depuração Circular do código gerenciado quando os quadros nativos estiverem ausentes da exibição da pilha de chamadas
 
-1.  No código nativo, defina um ponto de interrupção do local depois da chamada para o código gerenciado.
+1. No código nativo, defina um ponto de interrupção do local depois da chamada para o código gerenciado.
 
-2.  No menu **Depurar**, escolha **Continuar**.
+2. No menu **Depurar**, escolha **Continuar**.
 
      Quando a chamada gerenciada for concluída, a execução será interrompida no ponto de interrupção no código nativo.
 

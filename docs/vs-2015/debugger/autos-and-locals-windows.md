@@ -1,13 +1,8 @@
 ---
 title: Autos e locais Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.autos
@@ -25,13 +20,13 @@ ms.assetid: bb6291e1-596d-4af0-9f22-5fd713d6b84b
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 51e62df0fb98a9c7b04b09b3e58fb52828e1bd5a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072845"
 ---
 # <a name="autos-and-locals-windows"></a>Autos e locais Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  Se você precisar de mais informações sobre depuração básica, consulte [Introdução ao depurador](../debugger/getting-started-with-the-debugger.md).  
   
 ## <a name="looking-at-objects-in-the-autos-and-locals-windows"></a>Examinando objetos nas janelas Autos e locais  
- Matrizes e objetos são exibidos nas janelas Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream> do objeto na **Locals** janela:  
+ Matrizes e objetos são exibidos nas janelas Autos e locais, como controles de árvore. Clique na seta à esquerda do nome da variável para expandir a exibição para mostrar os campos e propriedades. Aqui está um exemplo de uma <xref:System.IO.FileStream> do objeto na janela **Locals**:  
   
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
@@ -89,7 +84,7 @@ void main() {
   
  Você também pode ver os valores de retorno de funções e métodos em determinadas circunstâncias. Ver [valores de retorno de modo de exibição de chamadas de método](#bkmk_returnValue) abaixo.  
   
-##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método  
+## <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método  
  No código .NET e C++, você pode examinar valores de retorno ao passar sobre ou fora de uma chamada de método. Essa funcionalidade é útil quando o resultado de uma chamada de método não é armazenado em uma variável local, por exemplo, quando um método é usado como um parâmetro ou como um valor de retorno de outro método.  
   
  O código c# a seguir adiciona os valores de retorno das duas funções:  
@@ -138,14 +133,14 @@ private static int subtractVars(int i, int j)
   
  No entanto, você deve ter cuidado ao alterar valores. Estes são alguns problemas possíveis:  
   
--   Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor da `var1` e `var2`.  
+- Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor da `var1` e `var2`.  
   
      Expressões que alteram os dados são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), que pode produzir resultados inesperados se você não estiver ciente deles. Verifique se que você entende as consequências de tal alteração antes de você fazê-lo.  
   
--   Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inofensiva pode resultar em alterações em alguns bits menos significativos na variável de ponto flutuante.  
+- Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inofensiva pode resultar em alterações em alguns bits menos significativos na variável de ponto flutuante.  
   
 ## <a name="debug-location-toolbar"></a>Depurar barra de ferramentas de local  
- Você pode usar o **local de depuração** barra de ferramentas para selecionar a função desejada, thread ou processo. Defina um ponto de interrupção e iniciar a depuração. (Se você não vir essa barra de ferramentas, você pode habilitá-lo clicando em uma parte vazia da área de barra de ferramentas. Você deve ver uma lista das barras de ferramentas; Selecione **local de depuração**). Quando o ponto de interrupção é atingido, a execução é interrompida e você pode ver a barra de ferramentas do local de depuração, que é a linha inferior do gráfico a seguir:  
+ Você pode usar o **local de depuração** barra de ferramentas para selecionar a função desejada, thread ou processo. Definir um ponto de interrupção e iniciar a depuração. (Se você não vir essa barra de ferramentas, você pode habilitá-lo clicando em uma parte vazia da área de barra de ferramentas. Você deve ver uma lista das barras de ferramentas; Selecione **local de depuração**). Quando o ponto de interrupção é atingido, a execução é interrompida e você pode ver a barra de ferramentas do local de depuração, que é a linha inferior do gráfico a seguir:  
   
  ![DebugLocationToolbar](../debugger/media/debuglocationtoolbar.png "DebugLocationToolbar")  
   
@@ -153,8 +148,3 @@ private static int subtractVars(int i, int j)
   
 ## <a name="see-also"></a>Consulte também  
  [Janelas do depurador](../debugger/debugger-windows.md)
-
-
-
-
-

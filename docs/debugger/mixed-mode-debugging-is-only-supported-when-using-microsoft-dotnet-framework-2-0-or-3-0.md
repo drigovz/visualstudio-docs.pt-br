@@ -15,43 +15,43 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9edda3762d17dcdf7ec23505646e4b166b0ea91a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 827d3c5fcc625601019d6cbf61cdbf7c771b63b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929867"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>A depuração de modo misto só é suportada quando o Microsoft .NET Framework 2.0 ou 3.0 é usado
 As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem suporte à depuração de modo misto de processos de 64 bits. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.
 
  Para resolver esse problema, você pode:
 
--   Atualize seu projeto para usar o Microsoft .NET Framework 2.0 ou 3.0.
+- Atualize seu projeto para usar o Microsoft .NET Framework 2.0 ou 3.0.
 
--   Depure seu código gerenciado e nativo em sessões separadas de depuração.
+- Depure seu código gerenciado e nativo em sessões separadas de depuração.
 
--   Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.
+- Depure seu código misto como um processo de 32 bits, como descrito nos procedimentos a seguir.
 
 ### <a name="to-change-the-operating-system-to-32-bit-visual-basic-or-c"></a>Para alterar o sistema operacional para 32 bits (Visual Basic ou C#)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
 
-2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
+2. Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
 
-3.  Clique em **Plataforma** e, em seguida, selecione **x86** da lista de plataformas.
+3. Clique em **Plataforma** e, em seguida, selecione **x86** da lista de plataformas.
 
      Por padrão, os compiladores do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.
 
 ### <a name="to-change-the-operating-system-to-32-bit-cc"></a>Para alterar o sistema operacional para 32 bits (C/C++)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
 
      Nas Páginas de Propriedades, clique em **Plataforma** e selecione **Win32** na lista de plataformas.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
--   Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

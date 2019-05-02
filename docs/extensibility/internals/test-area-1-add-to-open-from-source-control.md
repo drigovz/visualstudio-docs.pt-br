@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 686c7fbfae76d9f4006664aff9f79848eba563f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429983"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: Adicionar ao / abrir do controle de origem
 Esse controle de origem plug-in de teste área abrange colocando soluções ou projetos sob controle do código-fonte e recuperá-los do controle de origem.
@@ -37,19 +37,19 @@ Esse controle de origem plug-in de teste área abrange colocando soluções ou p
 - Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], adicionar controle do código-fonte também está disponível no **arquivo**, **Add**, **projeto existente**; procure no [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] local.
 
   > [!NOTE]
-  >  Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.
+  > Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.
 
 ## <a name="expected-behavior"></a>Comportamento esperado
 
--   Para cada tipo de projeto com suporte, um usuário deve ser capaz de "Adicionar ao" e "Aberta do" controle de origem.
+- Para cada tipo de projeto com suporte, um usuário deve ser capaz de "Adicionar ao" e "Aberta do" controle de origem.
 
--   Quando um projeto é adicionado ao controle de origem, um correspondente \< *ProjectName*> vspscc (arquivo de dica de projeto) é criado. Ele contém informações de conexão e de lista do arquivo de exclusão. Não exclua esse arquivo porque ele contém informações específicas do projeto.
+- Quando um projeto é adicionado ao controle de origem, um correspondente \< *ProjectName*> vspscc (arquivo de dica de projeto) é criado. Ele contém informações de conexão e de lista do arquivo de exclusão. Não exclua esse arquivo porque ele contém informações específicas do projeto.
 
--   Quando uma solução é adicionada ao controle do código-fonte, um correspondente \< *SolutionName*> vssscc (triplo S) de arquivo é criado. O arquivo de texto contém informações de conexão e uma lista de arquivos de exclusão, semelhante ao arquivo de dica de projeto. Esse arquivo é temporário e existe somente no banco de dados de controle de origem.
+- Quando uma solução é adicionada ao controle do código-fonte, um correspondente \< *SolutionName*> vssscc (triplo S) de arquivo é criado. O arquivo de texto contém informações de conexão e uma lista de arquivos de exclusão, semelhante ao arquivo de dica de projeto. Esse arquivo é temporário e existe somente no banco de dados de controle de origem.
 
--   Quando uma solução é aberta do controle do código-fonte, uma \< *SolutionName*> .vsscc (double S) arquivo que existe somente no banco de dados de controle do código-fonte, é criado localmente em um arquivo temporário. Esse arquivo contém o caminho da pasta de solução de conexão para o arquivo de solução. Esse arquivo é temporário e a cópia local é excluída quando a operação de "Abrir do controle de origem" foi concluída.
+- Quando uma solução é aberta do controle do código-fonte, uma \< *SolutionName*> .vsscc (double S) arquivo que existe somente no banco de dados de controle do código-fonte, é criado localmente em um arquivo temporário. Esse arquivo contém o caminho da pasta de solução de conexão para o arquivo de solução. Esse arquivo é temporário e a cópia local é excluída quando a operação de "Abrir do controle de origem" foi concluída.
 
--   Depois que um projeto é adicionado ao controle de origem, você pode executar as ações de controle do código-fonte nele (Check-out, Get e assim por diante).
+- Depois que um projeto é adicionado ao controle de origem, você pode executar as ações de controle do código-fonte nele (Check-out, Get e assim por diante).
 
 ## <a name="test-cases"></a>Casos de teste
  Estes são os casos de teste específicos para adicionar aberto na área de teste de controle de origem de / para.

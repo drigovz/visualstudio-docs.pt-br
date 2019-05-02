@@ -1,5 +1,5 @@
 ---
-title: 'Como: especificar as configurações do depurador | Microsoft Docs'
+title: 'Como: Especificar configurações do depurador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,27 +19,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 347e16f519c90a9a11d4fde278030fe021d4860d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b109fd995f54ede3aa2c8a6381cb9e6296a6970
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847504"
 ---
-# <a name="how-to-specify-debugger-settings"></a>Como especificar configurações do depurador
+# <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
 No [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], você pode especificar várias configurações para o comportamento de depurador, inclusive como as variáveis são exibidas, se determinados avisos são apresentados, como os pontos de interrupção são definidos e como a interrupção afeta os programas em execução. Você especifica as configurações do depurador na caixa de diálogo **Opções**.
 
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador
 
-1.  No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas**, clique em **Opções**.
 
-2.  Na caixa de diálogo **Opções**, abra a pasta **Depuração**.
+2. Na caixa de diálogo **Opções**, abra a pasta **Depuração**.
 
-3.  Na pasta **Depuração**, escolha a categoria de opções que você deseja.
+3. Na pasta **Depuração**, escolha a categoria de opções que você deseja.
 
      As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).
 
-4.  Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
+4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.
 
 ## <a name="see-also"></a>Consulte também
 - [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)

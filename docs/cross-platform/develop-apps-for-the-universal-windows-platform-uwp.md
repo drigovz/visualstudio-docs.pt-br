@@ -4,17 +4,17 @@ ms.date: 10/24/2017
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.assetid: eac59cb6-f12e-4a77-9953-6d62b164a643
-author: stevehoag
-ms.author: shoag
+author: gewarren
+ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: f4f9e3bcaae3265214542dff5204894062d52504
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f0bd256f293cefc037a8950bdecd3615fad483f3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819555"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)
 
@@ -38,11 +38,25 @@ As ferramentas de desenvolvimento de Aplicativo Universal do Windows vêm com em
 
 Esta é a lista de software de que você precisa:
 
+::: moniker range="vs-2017"
+
 - [Windows 10](http://windows.microsoft.com/windows/downloads). O Visual Studio 2017 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/productinfo/vs2017-compatibility-vs) e [Requisitos de sistema](/visualstudio/productinfo/vs2017-system-requirements-vs) do Visual Studio.
 
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
+- [Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
 
      ![Carga de trabalho da UWP](media/uwp_workload.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Windows 10](http://windows.microsoft.com/windows/downloads). O Visual Studio 2019 dá suporte ao desenvolvimento de UWP somente no Windows 10. Para obter mais detalhes, confira [Direcionamento para plataformas](/visualstudio/releases/2019/compatibility/) e [Requisitos de sistema](/visualstudio/releases/2019/system-requirements/) do Visual Studio.
+
+- [Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). Você também precisará da carga de trabalho de desenvolvimento da Plataforma Universal do Windows opcional.
+
+     ![Carga de trabalho da UWP](media/uwp_workload.png)
+
+::: moniker-end
 
 Depois de instalar este software, você precisará habilitar o dispositivo Windows 10 para desenvolvimento. Consulte [Habilitar seu dispositivo para desenvolvimento](/windows/uwp/get-started/enable-your-device-for-development). Não é mais necessária uma licença de desenvolvedor para cada dispositivo Windows 10.
 

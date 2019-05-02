@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad4ddf0ff7e4fd2f315b47f8a7e2fddb604932e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575202"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Como: Copiar e colar formas em um documento do Visio de forma programática
   Programaticamente, você pode copiar formas em uma única página de um documento e colá-los em uma nova página no mesmo documento. Você pode optar por colá-los para o local padrão (o centro da janela ativa) ou para os mesmos locais de coordenadas que tiveram na página original.
@@ -28,7 +28,7 @@ ms.locfileid: "56604023"
 
 ### <a name="to-copy-shapes-to-the-center-of-another-page"></a>Para copiar formas para o Centro de outra página
 
--   O exemplo a seguir demonstra como copiar as formas da primeira página e colá-los para o centro da segunda página.
+- O exemplo a seguir demonstra como copiar as formas da primeira página e colá-los para o centro da segunda página.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#14)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#14](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#14)]
@@ -40,7 +40,7 @@ ms.locfileid: "56604023"
 
 ### <a name="to-copy-shapes-and-shape-locations-to-another-page"></a>Para copiar formas e locais de forma para outra página
 
--   O exemplo a seguir demonstra como copiar as formas da primeira página e o cola na segunda página com seus locais originais de coordenadas.
+- O exemplo a seguir demonstra como copiar as formas da primeira página e o cola na segunda página com seus locais originais de coordenadas.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#15)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#15](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#15)]

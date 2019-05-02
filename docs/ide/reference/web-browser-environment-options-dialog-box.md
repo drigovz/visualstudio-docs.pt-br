@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788948"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
+# <a name="options-dialog-box-environment--web-browser"></a>Caixa de diálogo Opções: Ambiente \> Navegador da Web
 
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.
 
@@ -50,11 +50,11 @@ Permite designar uma página de Pesquisa para o navegador da Web interno. Esse l
 
 Define o editor usado para abrir uma página da Web ao escolher **Exibir Fonte** na página do navegador da Web interno.
 
--   **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Editor de origem** Selecione para exibir a fonte no [editor](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.
+- **Editor de HTML** Selecione para exibir a fonte no [designer de HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Use esta seleção para editar a página da Web em um dos dois modos de exibição: O modo de exibição de Design ou o modo de exibição padrão de Origem baseada em texto.
 
--   **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
+- **Editor externo** Selecione para exibir a fonte em outro editor. Especifique o caminho de um editor escolhido, por exemplo, Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Opções do Internet Explorer
 

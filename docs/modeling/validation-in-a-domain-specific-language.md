@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: fcc35f74625b17762656451e598d131dfe85417e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913048"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385844"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -25,7 +25,7 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
  A validação é particularmente importante se você estiver escrevendo modelos de texto ou outras ferramentas que processam modelos dos seus usuários. A validação assegura que os modelos atendam as pré-condições presumidas por essas ferramentas.
 
 > [!WARNING]
->  Você também pode permitir que restrições de validação sejam definidas em extensões separadas para a sua DSL, com os comandos de menu e manipuladores de gestos de extensão. Os usuários podem optar por instalar essas extensões além da sua DSL. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).
+> Você também pode permitir que restrições de validação sejam definidas em extensões separadas para a sua DSL, com os comandos de menu e manipuladores de gestos de extensão. Os usuários podem optar por instalar essas extensões além da sua DSL. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
 ## <a name="running-validation"></a>Executando a validação
  Quando um usuário está editando um modelo, ou seja, uma instância da sua linguagem específica de domínio, as seguintes ações podem executar a validação:
@@ -48,19 +48,19 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
  Cada método de validação relata os erros que encontra.
 
 > [!NOTE]
->  Os métodos de validação relatam erros, mas não alteram o modelo. Se você quiser ajustar ou evitar certas alterações, consulte [alternativas de validação](#alternatives).
+> Os métodos de validação relatam erros, mas não alteram o modelo. Se você quiser ajustar ou evitar certas alterações, consulte [alternativas de validação](#alternatives).
 
 #### <a name="to-define-a-validation-constraint"></a>Para definir uma restrição de validação
 
 1. Habilitar a validação na **Editor \ validação** nó:
 
-   1.  Abra **Dsl\DslDefinition.dsl**.
+   1. Abra **Dsl\DslDefinition.dsl**.
 
-   2.  No DSL Explorer, expanda o **Editor** nó e selecione **validação**.
+   2. No DSL Explorer, expanda o **Editor** nó e selecione **validação**.
 
-   3.  Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.
+   3. Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.
 
-   4.  Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
+   4. Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
 
 2. Escreva definições de classe parciais para uma ou mais de suas classes de domínio ou relações de domínio. Escreva essas definições em um novo arquivo de código na **Dsl** projeto.
 
@@ -70,7 +70,7 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.
+   - Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.
 
 4. Adicione métodos de validação às classes. Cada método de validação pode ter qualquer nome, mas tem um parâmetro do tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 
@@ -310,7 +310,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```
 
 > [!NOTE]
->  Você pode prefixar um método com a quantidade de atributos `[ValidationMethod()]` você desejar. Você pode adicionar um método a categorias personalizadas e padrão.
+> Você pode prefixar um método com a quantidade de atributos `[ValidationMethod()]` você desejar. Você pode adicionar um método a categorias personalizadas e padrão.
 
  Para invocar a validação personalizada:
 

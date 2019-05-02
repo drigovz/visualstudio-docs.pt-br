@@ -1,14 +1,9 @@
 ---
 title: 'CA1721: Nomes de propriedade não devem corresponder a métodos get | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1721
 - PropertyNamesShouldNotMatchGetMethods
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6d2c9bec4d7bfc1059bde61f730c157e25a499bb
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 94d120a7656fc9270543ceeb57063124764c4bca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880411"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431195"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: os nomes de propriedade não devem corresponder a métodos get
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nomes de propriedades não devem corresponder a métodos get
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,7 +47,7 @@ ms.locfileid: "49880411"
  Não suprima um aviso nessa regra.
 
 > [!NOTE]
->  Esse aviso pode ser excluído se o método Get é causado pela implementação de interface IExtenderProvider.
+> Esse aviso pode ser excluído se o método Get é causado pela implementação de interface IExtenderProvider.
 
 ## <a name="example"></a>Exemplo
  O exemplo a seguir contém um método e propriedade que violam essa regra.
@@ -61,7 +56,4 @@ ms.locfileid: "49880411"
  [!code-vb[FxCop.Naming.GetMethod#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Naming.GetMethod/vb/FxCop.Naming.GetMethod.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1024: usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)
-
-
-
+ [CA1024: Usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)

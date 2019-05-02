@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e6b970fdda47bab704def8859cb3489bce13bcb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 73a15890dd35f341760561bbd730795e62b1478b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975705"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>Criar e limpar projetos e soluções no Visual Studio
 
@@ -42,44 +42,44 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 
-1.  No **Gerenciador de Soluções**, escolha ou abra a solução.
+1. No **Gerenciador de Soluções**, escolha ou abra a solução.
 
-2.  Na barra de menus, escolha **Compilar** e, em seguida, escolha um dos comandos a seguir:
+2. Na barra de menus, escolha **Compilar** e, em seguida, escolha um dos comandos a seguir:
 
-    -   Escolha **Compilar** ou **Compilar Solução** para compilar somente esses componentes e arquivos de projeto e componentes que foram alterados desde o build mais recente.
+    - Escolha **Compilar** ou **Compilar Solução** para compilar somente esses componentes e arquivos de projeto e componentes que foram alterados desde o build mais recente.
 
         > [!NOTE]
         > O comando **Compilar** torna-se **Compilar Solução** quando uma solução inclui mais de um projeto.
 
-    -   Escolha **Recompilar Solução** para "limpar" a solução e, em seguida, crie todos os arquivos de projeto e componentes.
+    - Escolha **Recompilar Solução** para "limpar" a solução e, em seguida, crie todos os arquivos de projeto e componentes.
 
-    -   Escolha **Limpar Solução** para excluir arquivos de saída e intermediários. Com apenas os arquivos de projeto e de componente restantes, novas instâncias dos arquivos de saída e intermediários podem ser criadas.
+    - Escolha **Limpar Solução** para excluir arquivos de saída e intermediários. Com apenas os arquivos de projeto e de componente restantes, novas instâncias dos arquivos de saída e intermediários podem ser criadas.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar ou recompilar um único projeto
 
-1.  No **Gerenciador de Soluções**, escolha ou abra o projeto.
+1. No **Gerenciador de Soluções**, escolha ou abra o projeto.
 
-2.  Na barra de menus, escolha **Compilar** e, em seguida, escolha **Compilar** *ProjectName* ou **Recompilar** *ProjectName*.
+2. Na barra de menus, escolha **Compilar** e, em seguida, escolha **Compilar** *ProjectName* ou **Recompilar** *ProjectName*.
 
-    -   Escolha **Compilar** *ProjectName* para compilar somente os componentes de projeto alterados desde o build mais recente.
+    - Escolha **Compilar** *ProjectName* para compilar somente os componentes de projeto alterados desde o build mais recente.
 
-    -   Escolha **Recompilar** *ProjectName* para "limpar" o projeto e, em seguida, compile os arquivos de projeto e todos os componentes do projeto.
+    - Escolha **Recompilar** *ProjectName* para "limpar" o projeto e, em seguida, compile os arquivos de projeto e todos os componentes do projeto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar apenas o projeto de inicialização e suas dependências
 
-1.  Na barra de menus, escolha **Ferramentas** > **Opções**.
+1. Na barra de menus, escolha **Ferramentas** > **Opções**.
 
-2.  Na caixa de diálogo **Opções**, expanda o nó **Projetos e Soluções** e, em seguida, escolha a página **Compilar e Executar**.
+2. Na caixa de diálogo **Opções**, expanda o nó **Projetos e Soluções** e, em seguida, escolha a página **Compilar e Executar**.
 
      A caixa de diálogo **Compilar e Executar** > **Projetos e Soluções** > **Opções** é aberta.
 
-3.  Marque a caixa de seleção **Compilar apenas projetos de inicialização e dependências ao Executar**.
+3. Marque a caixa de seleção **Compilar apenas projetos de inicialização e dependências ao Executar**.
 
      Quando essa caixa de seleção estiver marcada, somente o projeto de inicialização atual e suas dependências serão compilados quando você executar qualquer uma das seguintes etapas:
 
-    -   Na barra de menus, escolha **Depurar** > **Iniciar** (**F5**).
+    - Na barra de menus, escolha **Depurar** > **Iniciar** (**F5**).
 
-    -   Na barra de menus, escolha **Compilar** > **Compilar Solução** (**Ctrl**+**Shift**+**B**).
+    - Na barra de menus, escolha **Compilar** > **Compilar Solução** (**Ctrl**+**Shift**+**B**).
 
     Quando essa caixa de seleção estiver desmarcada, todos os projetos, suas dependências e os arquivos de solução serão compilados quando você executar um dos comandos anteriores. Por padrão, essa caixa de seleção está desmarcada.
 

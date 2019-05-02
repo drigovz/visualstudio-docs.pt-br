@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410103"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Associar atalhos de teclado aos itens de menu
 Para associar um atalho de teclado a um comando de menu personalizado, basta adicionar uma entrada para o *VSCT* arquivo para o pacote. Este tópico explica como mapear um atalho de teclado para um botão personalizado, o item de menu ou o comando da barra de ferramentas e como aplicar o mapeamento de teclado no editor padrão ou limite-o a um editor personalizado.
@@ -42,7 +42,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 4. Tente diferentes combinações de teclas até encontrar uma que não está mapeado.
 
    > [!NOTE]
-   >  Atalhos de teclado que usam **Alt** pode abrir um menu e não diretamente, executar um comando. Portanto, o **atalho usado atualmente por** caixa pode estar em branco quando você digita um atalho que inclui **Alt**. Você pode verificar o atalho não abre um menu ao fechar o **opções** caixa de diálogo e, em seguida, pressionando as teclas.
+   > Atalhos de teclado que usam **Alt** pode abrir um menu e não diretamente, executar um comando. Portanto, o **atalho usado atualmente por** caixa pode estar em branco quando você digita um atalho que inclui **Alt**. Você pode verificar o atalho não abre um menu ao fechar o **opções** caixa de diálogo e, em seguida, pressionando as teclas.
 
    O procedimento a seguir pressupõe que você tenha um VSPackage existente com um comando de menu. Se você precisar de ajuda para fazer isso, dê uma olhada [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -53,7 +53,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, basta adi
 2. Criar vazio `<KeyBindings>` seção após o `<Commands>` se ele não ainda estiver presente.
 
    > [!WARNING]
-   >  Para obter mais informações sobre associações de teclas, consulte [Keybinding](../extensibility/keybinding-element.md).
+   > Para obter mais informações sobre associações de teclas, consulte [Keybinding](../extensibility/keybinding-element.md).
 
     No `<KeyBindings>` seção, crie um `<KeyBinding>` entrada.
 

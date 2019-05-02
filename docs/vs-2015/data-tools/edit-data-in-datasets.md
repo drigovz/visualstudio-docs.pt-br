@@ -1,12 +1,9 @@
 ---
 title: Editar dados em conjuntos de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,18 +16,17 @@ ms.assetid: 50d5c580-fbf7-408f-be70-e63ac4f4d0eb
 caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 5a983b671b5c6b43009ad3cc32c2cb287977f05c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49949286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425380"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você edite os dados em tabelas de dados assim que você edite os dados em uma tabela em qualquer banco de dados. O processo pode incluir inserir, atualizar e excluir registros na tabela. Em um formulário de associação de dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infra-estrutura de ligação de dados lida com todos os controle de alterações para que as alterações podem ser enviadas no banco de dados mais tarde. Se você, por meio de programação, fazer edições em dados, e você pretende enviar essas alterações no banco de dados, você deve usar os objetos e métodos que fazem o controle de alterações para você.  
   
  Além de alterar os dados reais, você também pode consultar um <xref:System.Data.DataTable> para retornar linhas específicas de dados. Por exemplo, você pode consultar as linhas individuais, versões específicas de linhas (originais e propostas), linhas que foram alteradas ou linhas com erros.  
@@ -62,12 +58,12 @@ Você edite os dados em tabelas de dados assim que você edite os dados em uma t
   
 #### <a name="to-delete-records-from-a-data-table"></a>Para excluir registros de uma tabela de dados  
   
--   Chame o <xref:System.Data.DataRow.Delete%2A> método de um <xref:System.Data.DataRow>.  
+- Chame o <xref:System.Data.DataRow.Delete%2A> método de um <xref:System.Data.DataRow>.  
   
      Esse método não remove o registro fisicamente. Em vez disso, ele marca o registro para exclusão.  
   
     > [!NOTE]
-    >  Se você receber a propriedade count de um <xref:System.Data.DataRowCollection>, a contagem resultante inclui registros que foram marcados para exclusão. Para obter uma contagem precisa de registros que não são marcados para exclusão, você pode fazer um loop através da coleção examinando o <xref:System.Data.DataRow.RowState%2A> propriedade de cada registro. (Registros marcados para exclusão tem uma <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, você pode criar uma exibição de dados de um conjunto de dados que filtra com base em estado de linha e obter a propriedade de contagem a partir daí.  
+    > Se você receber a propriedade count de um <xref:System.Data.DataRowCollection>, a contagem resultante inclui registros que foram marcados para exclusão. Para obter uma contagem precisa de registros que não são marcados para exclusão, você pode fazer um loop através da coleção examinando o <xref:System.Data.DataRow.RowState%2A> propriedade de cada registro. (Registros marcados para exclusão tem uma <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, você pode criar uma exibição de dados de um conjunto de dados que filtra com base em estado de linha e obter a propriedade de contagem a partir daí.  
   
      O exemplo a seguir mostra como chamar o <xref:System.Data.DataRow.Delete%2A> método para marcar a primeira linha no `Customers` como excluído de tabela:  
   
@@ -81,13 +77,13 @@ Você edite os dados em tabelas de dados assim que você edite os dados em uma t
   
 - Cada linha de dados contém informações relacionadas à sua <xref:System.Data.DataRow.RowState%2A> (por exemplo, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, <xref:System.Data.DataRowState>, ou <xref:System.Data.DataRowState>).  
   
-- Cada linha de dados alterada contém várias versões dessa linha (<xref:System.Data.DataRowVersion>), a versão original (antes das alterações) e a versão atual (após alterações). Durante o período quando uma alteração fica pendente (o tempo em que você pode responder ao <xref:System.Data.DataTable.RowChanging> evento), uma terceira versão — a versão proposta — também está disponível. Para obter mais informações, consulte [como: obter versões específicas de um DataRow](../data-tools/how-to-get-specific-versions-of-a-datarow.md).  
+- Cada linha de dados alterada contém várias versões dessa linha (<xref:System.Data.DataRowVersion>), a versão original (antes das alterações) e a versão atual (após alterações). Durante o período quando uma alteração fica pendente (o tempo em que você pode responder ao <xref:System.Data.DataTable.RowChanging> evento), uma terceira versão — a versão proposta — também está disponível.
   
-  O <xref:System.Data.DataSet.HasChanges%2A> método de um conjunto de dados retorna `true` se foram feitas alterações no conjunto de dados. Depois de determinar a existam de linhas alteradas, você pode chamar o `GetChanges` método de um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> para retornar um conjunto de linhas alteradas. Para obter mais informações, consulte [como: recuperar linhas alteradas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+  O <xref:System.Data.DataSet.HasChanges%2A> método de um conjunto de dados retorna `true` se foram feitas alterações no conjunto de dados. Depois de determinar a existam de linhas alteradas, você pode chamar o `GetChanges` método de um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> para retornar um conjunto de linhas alteradas. Para obter mais informações, confira [Como: Recuperar linhas alteradas](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar se foram feitas alterações para todas as linhas  
   
--   Chamar o <xref:System.Data.DataSet.HasChanges%2A> linhas alteradas de método para verificar se há um conjunto de dados.  
+- Chamar o <xref:System.Data.DataSet.HasChanges%2A> linhas alteradas de método para verificar se há um conjunto de dados.  
   
      O exemplo a seguir mostra como verificar o valor de retorno de <xref:System.Data.DataSet.HasChanges%2A> método para detectar se há quaisquer linhas alteradas em um dataset chamado `NorthwindDataset1`:  
   
@@ -99,7 +95,7 @@ Você edite os dados em tabelas de dados assim que você edite os dados em uma t
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Para determinar quais tipos de alterações foram feitas em uma linha  
   
--   Passar uma <xref:System.Data.DataRowState> de valor para o <xref:System.Data.DataSet.HasChanges%2A> método.  
+- Passar uma <xref:System.Data.DataRowState> de valor para o <xref:System.Data.DataSet.HasChanges%2A> método.  
   
      O exemplo a seguir mostra como verificar um conjunto de dados chamado `NorthwindDataset1` para determinar se as novas linhas foram adicionadas a ele:  
   
@@ -109,10 +105,9 @@ Você edite os dados em tabelas de dados assim que você edite os dados em uma t
 ## <a name="to-locate-rows-that-have-errors"></a>Para localizar linhas com erros  
  Ao trabalhar com colunas individuais e linhas de dados, você poderá encontrar erros. Você pode verificar a `HasErrors` propriedade para determinar se existem erros em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou <xref:System.Data.DataRow>.  
   
-1.  Verifique o `HasErrors` propriedade para ver se há erros no conjunto de dados.  
+1. Verifique o `HasErrors` propriedade para ver se há erros no conjunto de dados.  
   
-2.  Se o `HasErrors` é de propriedade `true`, iterar por meio de coleções de tabelas e, em seguida, o através das linhas, para localizar a linha com o erro.  
+2. Se o `HasErrors` é de propriedade `true`, iterar por meio de coleções de tabelas e, em seguida, o através das linhas, para localizar a linha com o erro.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]
-

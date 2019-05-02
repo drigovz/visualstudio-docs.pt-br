@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793142"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115673"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compila e executa a solução ou o projeto especificado e, em seguida, fecha o IDE (ambiente de desenvolvimento integrado).  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -42,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>Comentários  
  Compila e executa o projeto ou a solução especificada de acordo com as configurações especificadas para a configuração da solução ativa. Essa opção minimiza o IDE enquanto o projeto ou a solução é executado, e fecha o IDE depois da conclusão da execução do projeto ou da solução.  
   
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
   
--   As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
+- As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo executa a solução `MySolution` em um IDE minimizado usando a configuração de implantação ativa e, em seguida, fecha o IDE.  

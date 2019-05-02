@@ -17,21 +17,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 806a2a2165dc604969e2bd8f35a0eb9c1cf07556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438764"
 ---
 # <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio
   Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário do Visio e são definidos na `Microsoft.Office.Interop.Visio` namespace.
 
  Este tópico fornece uma visão geral do modelo de objeto do Visio. Para obter informações sobre como usar o modelo de objeto do Visio para executar tarefas em projetos do Office, consulte os tópicos a seguir:
 
--   [Trabalhar com documentos do Visio](../vsto/working-with-visio-documents.md)
+- [Trabalhar com documentos do Visio](../vsto/working-with-visio-documents.md)
 
--   [Trabalhar com formas do Visio](../vsto/working-with-visio-shapes.md)
+- [Trabalhar com formas do Visio](../vsto/working-with-visio-shapes.md)
 
 ## <a name="understand-the-visio-object-model"></a>Entender o modelo de objeto do Visio
  O Visio fornece muitos objetos com os quais você pode interagir. Esses objetos são organizados em uma hierarquia que segue rigorosamente a interface do usuário. Na parte superior da hierarquia é o [Microsoft.Office.Interop.Visio.Application](/office/vba/api/Visio.Application) objeto. Este objeto representa a instância atual do Visio. O `Microsoft.Office.Interop.Visio.Application` objeto contém o `Microsoft.Office.Interop.Visio.Document` e `Microsoft.Office.Interop.Visio.Page` objetos, bem como a `Microsoft.Office.Interop.Visio.Documents` e `Microsoft.Office.Interop.Visio.Pages` coleções. Cada um desses objetos e coleções tem vários métodos e propriedades que você pode acessar para manipular e interagir com ele.
@@ -40,11 +40,11 @@ ms.locfileid: "56636704"
 
  As seções a seguir descrevem brevemente os objetos de nível superior e como eles interagem entre si. Esses objetos incluem os seguintes objetos:
 
--   Objeto de aplicativo
+- Objeto de aplicativo
 
--   Objeto de documento
+- Objeto de documento
 
--   Objeto Page
+- Objeto Page
 
 ### <a name="application-object"></a>Objeto de aplicativo
  O objeto Microsoft.Office.Interop.Visio.Application representa o aplicativo do Visio e é o pai de todos os outros objetos. Seus membros geralmente se aplicam para o Visio como um todo. Você pode usar as propriedades e métodos do Microsoft.Office.Interop.Visio.Application e o `Microsoft.Office.Interop.Visio.ApplicationSettings` objetos para controlar o ambiente do Visio.
@@ -67,7 +67,7 @@ ms.locfileid: "56636704"
  Todos os objetos e membros na referência de modelo de objeto do VBA correspondem aos tipos e membros no Visio assembly de interoperabilidade primário (PIA). Por exemplo, o `Document` objeto na referência de modelo de objeto do VBA corresponde ao tipo Microsoft.Office.Interop.Visio.Document no PIA do Visio. Embora a referência de modelo de objeto VBA fornece exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA essa referência para o Visual Basic ou Visual c#, se você quiser usá-los em um projeto de suplemento VSTO do Visio que você cria usando o Visual Studio.
 
 > [!NOTE]
->  Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do Visio.
+> Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do Visio.
 
  Para obter exemplos de código relacionadas e ferramentas adicionais para a criação de soluções do Visio, consulte [software development kit do Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

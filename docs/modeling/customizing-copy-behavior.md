@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d8572ecf95790fdc5f6e73ce0b137e5532c44bdc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414820"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem e visualização do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -232,7 +232,7 @@ Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-
  Muitos aspectos do comportamento de uma DSL em relação a copiar, colar, criação e exclusão de objetos são governados por uma instância de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplado ao diagrama. Você pode modificar o comportamento da sua DSL derivando sua própria classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e substituindo o <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> propriedade de sua classe de diagrama.
 
 > [!TIP]
->  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagrama de sequência para a operação de cópia](../modeling/media/dslcopyseqdiagram.png)
 
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Defina dois métodos em sua classe ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma, conector ou diagrama de destino.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma, conector ou diagrama de destino.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina o elemento de origem no destino.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina o elemento de origem no destino.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` é chamado para determinar o feedback que será dado ao usuário conforme o mouse se move pelo diagrama. Os parâmetros para o método são o elemento sobre o qual o mouse está passando, e os dados sobre a origem a partir da qual a operação de arrastar foi realizada. O usuário pode arrastar a partir de qualquer lugar na tela. Portanto, o objeto de origem pode ser de muitos tipos diferentes e pode ser serializado em diferentes formatos. Se a origem for um modelo DSL ou UML, o parâmetro de dados é a serialização de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. As operações de arrastar, copiar e da caixa de ferramentas usam o ElementGroupPrototypes para representar fragmentos de modelos.
@@ -555,8 +555,7 @@ namespace Company.MyDsl
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
-- [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [Personalizando o comportamento de exclusão](../modeling/customizing-deletion-behavior.md)
+- [Como: Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Exemplo: Exemplo de diagramas de circuito VMSDK&lt;5}{6&gt; http://go.microsoft.com/FWLINK/?LINKID=213879&lt;6}&lt;4](http://go.microsoft.com/fwlink/?LinkId=213879)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

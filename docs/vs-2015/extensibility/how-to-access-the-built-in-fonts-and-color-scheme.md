@@ -1,14 +1,9 @@
 ---
-title: 'Como: acessar o esquema de cores e fontes internas | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Acessar as fontes internas e o esquema de cores | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - fonts, accessing built-in
 - font and color control [Visual Studio SDK], categories
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b96cb16182447ca636ee363a2cf62a33dcd6823
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430920"
 ---
-# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Como: acessar o esquema de cores e fontes internas
+# <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Como: Acessar as fontes internas e o esquema de cores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
@@ -46,7 +41,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
     Esse GUID é usado para identificar exclusivamente uma categoria<strong>.</strong> Esta categoria reutiliza a especificação de cores e fontes de padrão do IDE.  
   
    > [!NOTE]
-   >  Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.  
+   > Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.  
   
 2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro do arquivo de recursos (. rc) do VSPackage, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.  
   
@@ -54,13 +49,13 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar uma categoria usando cores e fontes internas  
   
-1.  Construa um tipo especial de entrada de registro de categoria no seguinte local:  
+1. Construa um tipo especial de entrada de registro de categoria no seguinte local:  
   
      [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\*\<categoria >*]  
   
      *\<Categoria >* é o nome não localizado da categoria.  
   
-2.  Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:  
+2. Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:  
   
     |Nome|Tipo|Dados|Descrição|  
     |----------|----------|----------|-----------------|  
@@ -69,7 +64,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
     |NameID|REG_DWORD|ID|A ID de recurso de um nome de categoria localizáveis em VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|O GUID da implementação de VSPackage o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar o uso de cores e fontes fornecidas pelo sistema  
   
@@ -107,4 +102,3 @@ if (spPropCatContainer != NULL){
  [Obtendo informações de cores para colorização de texto e fonte](../extensibility/getting-font-and-color-information-for-text-colorization.md)   
  [Acessando configurações de cor e a fonte armazenada](../extensibility/accessing-stored-font-and-color-settings.md)   
  [Visão geral de cor e de fonte](../extensibility/font-and-color-overview.md)
-

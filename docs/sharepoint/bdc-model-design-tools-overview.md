@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb2f257feaa8faa6acf58c8e8763d15d08a1079e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7a2531f1cc6352a03acf0b3d6af82c35e47c2743
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387725"
 ---
 # <a name="bdc-model-design-tools-overview"></a>Visão geral de ferramentas de design de modelo BDC
   Você pode criar um modelo de conectividade de dados comerciais (BDC) usando o Designer de BDC, o **detalhes do método BDC** janela e o **BDC Explorer**.
@@ -63,13 +63,13 @@ ms.locfileid: "56596562"
  Conforme você escolher nós na **BDC Explorer**, as propriedades de cada nó que você escolher aparecem na **propriedades** janela. Muitas dessas propriedades correspondem aos atributos no arquivo de modelo. Você pode pesquisar o modelo, usando a caixa de pesquisa na parte superior do **BDC Explorer**.
 
 > [!NOTE]
->  O **BDC Explorer** não exibe identificadores, propriedades personalizadas, cadeias de caracteres localizadas, grupos de associação, ações, os descritores de filtro, listas de controle de ação e valores de parâmetro padrão.
+> O **BDC Explorer** não exibe identificadores, propriedades personalizadas, cadeias de caracteres localizadas, grupos de associação, ações, os descritores de filtro, listas de controle de ação e valores de parâmetro padrão.
 
 ### <a name="define-type-descriptors"></a>Defina os descritores de tipo
  Use o **BDC Explorer** para definir os descritores de tipo. O BDC Explorer permite que você definir um descritor de tipo de uma vez e, em seguida, reutilizar esse descritor de tipo em outro lugar no seu modelo. Para fazer isso, um descritor de tipo de copiar e colá-la em qualquer outro parâmetro ou descritor de tipo.
 
 > [!NOTE]
->  As alterações a um descritor de tipo original não afetam as cópias desse descritor de tipo.
+> As alterações a um descritor de tipo original não afetam as cópias desse descritor de tipo.
 
  Para obter mais informações, confira [Como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 

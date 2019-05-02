@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423818"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 A lista de configurações da solução para uma determinada solução é gerenciada pela caixa de diálogo Configurações da solução.
@@ -26,7 +26,7 @@ A lista de configurações da solução para uma determinada solução é gerenc
  Se o usuário cria uma nova configuração de solução chamada MyConfig2, Projeto1 associa sua configuração de depuração para a configuração da solução, por padrão. Por padrão, Projeto2 também associa sua configuração MyConfig2 para a configuração da solução.
 
 > [!NOTE]
->  Associação diferencia maiusculas de minúsculas.
+> Associação diferencia maiusculas de minúsculas.
 
  Quando o usuário seleciona o **seleção múltipla** item na lista suspensa de configuração, o ambiente exibe uma caixa de diálogo que fornece a lista de configurações disponíveis.
 
@@ -43,7 +43,7 @@ A lista de configurações da solução para uma determinada solução é gerenc
  Dependências do projeto determinam a ordem na qual os projetos são compilados. Use a guia de ordem de Build na caixa de diálogo para exibir a ordem exata em que projetos dentro de uma solução de build e use a guia dependências para modificar a ordem de compilação.
 
 > [!NOTE]
->  Projetos na lista que têm suas caixas de seleção marcadas, mas esmaecidos foram adicionados pelo ambiente devido a dependências explícitas especificadas pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces e não pode ser alterado. Por exemplo, adicionando uma referência de projeto de um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto a outro projeto automaticamente adiciona uma dependência de compilação que só pode ser removida, excluindo a referência. Não não possível selecionar projetos cujas caixas de seleção estão desmarcadas e aparecem esmaecidas porque isso geraria um loop de dependência (por exemplo, Projeto1 seria dependente Projeto2 e Projeto2 seria dependente Projeto1), que teria de paralisações da compilação.
+> Projetos na lista que têm suas caixas de seleção marcadas, mas esmaecidos foram adicionados pelo ambiente devido a dependências explícitas especificadas pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces e não pode ser alterado. Por exemplo, adicionando uma referência de projeto de um [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projeto a outro projeto automaticamente adiciona uma dependência de compilação que só pode ser removida, excluindo a referência. Não não possível selecionar projetos cujas caixas de seleção estão desmarcadas e aparecem esmaecidas porque isso geraria um loop de dependência (por exemplo, Projeto1 seria dependente Projeto2 e Projeto2 seria dependente Projeto1), que teria de paralisações da compilação.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processos de compilação incluem as operações de link que são invocadas com um único comando de compilação e a compilação típica. Também haverá suporte para dois outros processos de compilação: uma operação de limpeza para excluir todos os itens de saída de uma compilação anterior e uma verificação de atualização para determinar se um item de saída em uma configuração foi alterada.
 

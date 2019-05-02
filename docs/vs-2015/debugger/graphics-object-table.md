@@ -1,14 +1,9 @@
 ---
 title: Tabela de objeto gráfico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.graphics.datavisualizer
 - vs.graphics.objecttable
@@ -17,13 +12,13 @@ ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0ba3ce8aa0727471ff4385792d85659fa2d208dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86279ff4e1721007814163787bd9ed06edc9fb13
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809084"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929503"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +37,18 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
 ### <a name="graphics-object-table-format"></a>Formato da Tabela de Objetos Gráficos  
  A tabela de objetos exibe os objetos Direct3D e recursos que dão suporte ao quadro associado ao evento selecionado — por exemplo, estado objetos, buffers, sombreadores, texturas e outros recursos. Objetos que foram criados em um quadro anterior, mas não são usados durante o quadro capturado, são omitidos da tabela de objetos. Objetos que tenham sido destruídos pelo eventos anteriores durante o quadro capturado são omitidos nos eventos subsequentes. Objetos que não são definidos no D3D10Device ou D3D11DeviceContext são exibidos como texto cinza. Os objetos são exibidos em um formato de tabela.  
   
-|Coluna|Descrição|  
+|Column|Descrição|  
 |------------|-----------------|  
 |**Identificador**|O ID do objeto.|  
 |**Nome**|Informações específicas do aplicativo que foi definido no objeto usando a função Direct3D `SetPrivateData`, normalmente para fornecer informações adicionais de identificação sobre um objeto.|  
 |**Tipo**|O tipo de objeto.|  
-|**Active Directory**|Exibe "*" para um objeto que foi definido no D3D10Device ou D3D11DeviceContext durante o quadro capturado.<br /><br /> Isso corresponde aos objetos que são exibidos como texto cinza, mas fornece uma entrada de coluna que você pode usar para classificar a tabela de objetos.|  
+|**Ativo**|Exibe "*" para um objeto que foi definido no D3D10Device ou D3D11DeviceContext durante o quadro capturado.<br /><br /> Isso corresponde aos objetos que são exibidos como texto cinza, mas fornece uma entrada de coluna que você pode usar para classificar a tabela de objetos.|  
 |**Size**|O tamanho do objeto em bytes.|  
 |**Formatar**|O formato do objeto. Por exemplo, o formato de um objeto de textura ou o modelo de sombreador de um objeto sombreador.|  
 |**Largura**|A largura de um objeto de textura. Não se aplica a outros tipos de objeto.|  
 |**Altura**|A altura de um objeto de textura. Não se aplica a outros tipos de objeto.|  
-|**profundidade**|A profundidade de um objeto de textura 3D. Se uma textura não for 3D, o valor é 0. Não se aplica a outros tipos de objeto.|  
-|**MIPS**|O número de níveis de MIP que um objeto de textura possui. Não se aplica a outros tipos de objeto.|  
+|**Profundidade**|A profundidade de um objeto de textura 3D. Se uma textura não for 3D, o valor é 0. Não se aplica a outros tipos de objeto.|  
+|**Mips**|O número de níveis de MIP que um objeto de textura possui. Não se aplica a outros tipos de objeto.|  
 |**ArraySize**|O número de texturas em uma matriz de textura. O intervalo é de 1 a um limite superior definido pelo nível de recurso atual. Para um mapa de cubo, esse valor é 6 vezes o número de mapas de cubo na matriz.|  
 |**Amostras**|O número de multisamples por pixel.|  
   
@@ -80,7 +75,7 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
  No Direct3D 11 e Direct3D 10, o contexto de dispositivo (**contexto de dispositivo D3D11** ou **dispositivo D3D10**) objeto é particularmente importante porque ele contém as informações de estado mais importantes, estando vinculado a outros objetos de estado que são definidos no momento. Detalhes do contexto de dispositivo são exibidos em uma nova janela de documentos e cada categoria de informações é apresentada em sua própria guia. As alterações de contexto de dispositivo quando um novo evento é selecionado para refletir o estado atual do dispositivo.  
   
 ### <a name="buffer-object"></a>Objeto de buffer  
- Detalhes do objeto de buffer (Buffer D3D11 ou D3D10) são exibidos em uma nova janela de documento que apresenta o conteúdo de buffer em uma tabela e fornece uma interface para alterar como o conteúdo de buffer é exibido. O **buffer dados** tabela suporta copiar e colar para que você possa usar outra ferramenta — por exemplo, o Microsoft Excel — para examinar seu conteúdo. O conteúdo do buffer é interpretado de acordo com o valor da **formato** caixa de combinação, localizada acima a **buffer dados** tabela. Na caixa, você pode inserir um formato de dados compostos que consiste em tipos de dados listados na tabela a seguir. Por exemplo, "float int" exibe uma lista de estruturas que contêm um valor de ponto flutuante de 32 bits seguido por um valor inteiro com sinal de 32 bits. Formatos de dados compostos que você especificou são adicionados à caixa de combinação para uso posterior.  
+ Detalhes do objeto de buffer (Buffer D3D11 ou D3D10) são exibidos em uma nova janela de documento que apresenta o conteúdo de buffer em uma tabela e fornece uma interface para alterar como o conteúdo de buffer é exibido. A tabela de **dados do buffer** dá suporte a copiar e colar para que você possa usar outra ferramenta, como por exemplo, o Microsoft Excel, para examinar seu conteúdo. O conteúdo do buffer é interpretado de acordo com o valor da **formato** caixa de combinação, localizada acima da tabela de **dados do buffer**. Na caixa, você pode inserir um formato de dados compostos que consiste em tipos de dados listados na tabela a seguir. Por exemplo, "float int" exibe uma lista de estruturas que contêm um valor de ponto flutuante de 32 bits seguido por um valor inteiro com sinal de 32 bits. Formatos de dados compostos que você especificou são adicionados à caixa de combinação para uso posterior.  
   
  Você também pode alternar os **Mostrar deslocamentos** caixa de seleção para ocultar ou exibir o deslocamento de cada elemento do buffer.  
   
@@ -89,35 +84,32 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
 |**float**|Um valor de ponto flutuante de 32 bits.|  
 |**float2**|Um vetor que contém dois valores de ponto flutuante de 32 bits.|  
 |**float3**|Um vetor que contém três valores de ponto flutuante de 32 bits.|  
-|**FLOAT4**|Um vetor que contém quatro valores de ponto flutuante de 32 bits.|  
+|**float4**|Um vetor que contém quatro valores de ponto flutuante de 32 bits.|  
 |**byte**|Um valor inteiro com sinal de 8 bits.|  
-|**2 bytes**|Um valor inteiro com sinal de 16 bits.|  
-|**4 bytes**|Um valor inteiro com sinal de 32 bits. Mesmo que **int**.|  
-|**8 bytes**|Um valor inteiro com sinal de 64 bits. Mesmo que **int64**.|  
+|**2byte**|Um valor inteiro com sinal de 16 bits.|  
+|**4byte**|Um valor inteiro com sinal de 32 bits. O mesmo que **int**.|  
+|**8byte**|Um valor inteiro com sinal de 64 bits. O mesmo que **int64**.|  
 |**xbyte**|Um valor hexadecimal de 8 bits.|  
 |**x2byte**|Um valor hexadecimal de 16 bits.|  
-|**x4byte**|Um valor hexadecimal de 32 bits. Mesmo que **xint**.|  
-|**x8byte**|Um valor hexadecimal de 64 bits. Mesmo que **xint64**.|  
+|**x4byte**|Um valor hexadecimal de 32 bits. O mesmo que **xint**.|  
+|**x8byte**|Um valor hexadecimal de 64 bits. O mesmo que **xint64**.|  
 |**ubyte**|Um valor inteiro sem sinal de 8 bits.|  
 |**u2byte**|Um valor inteiro sem sinal de 16 bits.|  
-|**u4byte**|Um valor inteiro sem sinal de 32 bits. Mesmo que **uint**.|  
-|**u8byte**|Um valor inteiro sem sinal de 64 bits. Mesmo que **uint64**.|  
-|**metade**|Um valor de ponto flutuante de 16 bits.|  
-|**Semestre 2**|Um vetor que contém dois valores de ponto flutuante de 16 bits.|  
+|**u4byte**|Um valor inteiro sem sinal de 32 bits. O mesmo que **uint**.|  
+|**u8byte**|Um valor inteiro sem sinal de 64 bits. O mesmo que **uint64**.|  
+|**half**|Um valor de ponto flutuante de 16 bits.|  
+|**half2**|Um vetor que contém dois valores de ponto flutuante de 16 bits.|  
 |**half3**|Um vetor que contém três valores de ponto flutuante de 16 bits.|  
 |**half4**|Um vetor que contém quatro valores de ponto flutuante de 16 bits.|  
 |**double**|Um valor de ponto flutuante de 64 bits.|  
-|**int**|Um valor inteiro com sinal de 32 bits. Mesmo que **4byte**.|  
-|**int64**|Um valor inteiro com sinal de 64 bits. Mesmo que **8byte**.|  
-|**xint**|Um valor hexadecimal de 32 bits. Mesmo que **x4byte**.|  
-|**xint64**|Um valor hexadecimal de 64 bits. Mesmo que **x8byte**.|  
-|**uint**|Um valor inteiro sem sinal de 32 bits. Mesmo que **u4byte**.|  
-|**uint64**|Um valor inteiro sem sinal de 64 bits. Mesmo que **u8byte**.|  
+|**int**|Um valor inteiro com sinal de 32 bits. O mesmo que **4byte**.|  
+|**int64**|Um valor inteiro com sinal de 64 bits. O mesmo que **8byte**.|  
+|**xint**|Um valor hexadecimal de 32 bits. O mesmo que **x4byte**.|  
+|**xint64**|Um valor hexadecimal de 64 bits. O mesmo que **x8byte**.|  
+|**uint**|Um valor inteiro sem sinal de 32 bits. O mesmo que **u4byte**.|  
+|**uint64**|Um valor inteiro sem sinal de 64 bits. O mesmo que **u8byte**.|  
 |**bool**|Um valor booleano (`true` ou `false`). Cada valor booleano é representado por um valor de 32 bits.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Diagnóstico de gráficos (depuração de gráficos DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
- [Passo a passo: objetos ausentes devido ao estado do dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)
-
-
-
+ [Diagnóstico de Gráficos (depuração de gráficos DirectX)](../debugger/visual-studio-graphics-diagnostics.md)   
+ [Passo a passo: Objetos ausentes devido ao estado do dispositivo](../debugger/walkthrough-missing-objects-due-to-device-state.md)

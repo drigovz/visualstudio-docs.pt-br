@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1e47e8bea173298761e2a5170382ef2c4b32c6c5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 2c5163de342415113321b6bd2337cd75ff528f6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810768"
 ---
 # <a name="write-code-in-office-solutions"></a>Escrever código em soluções do Office
   Há alguns aspectos de escrever código em projetos do Office que são diferentes dos outros tipos de projetos no Visual Studio. Muitas dessas diferenças estão relacionadas à forma como os modelos de objeto do Office são expostos ao código gerenciado. Outras diferenças relacionadas ao design de projetos do Office.
@@ -63,9 +63,9 @@ ms.locfileid: "54864066"
 
  Como os tipos dos PIAs do Office correspondem aos tipos de modelos de objeto COM base em com, a maneira de usar esses tipos geralmente é diferente de outros tipos gerenciados. Por exemplo, a maneira de você chama métodos com parâmetros opcionais em um assembly de interoperabilidade primário do Office depende a linguagem de programação que você está usando em seu projeto. Para mais informações, consulte os seguintes tópicos:
 
--   [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md).
+- [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md).
 
--   [Associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md).
+- [Associação tardia em soluções do Office](../vsto/late-binding-in-office-solutions.md).
 
 ## <a name="program-model-of-office-projects"></a>Modelo do programa de projetos do Office
  Todos os projetos do Office incluem um ou mais classes geradas que fornecem o ponto de entrada para seu código. Essas classes também fornecem acesso ao modelo de objeto do aplicativo host e o acesso aos recursos, como painéis de ações e painéis de tarefas personalizados.
@@ -99,8 +99,11 @@ ms.locfileid: "54864066"
 ## <a name="program-with-visual-basic-vs-visual-c-in-office-solutions"></a>Programa com o Visual Basic vs. Visual c# em soluções do Office
  Você pode criar soluções do Office usando Visual Basic ou Visual c#. Como os modelos de objeto do Microsoft Office foram projetados para ser usado com o Microsoft Visual Basic for Applications (VBA), os desenvolvedores de Visual Basic podem trabalhar confortavelmente com os objetos expostos pelos aplicativos do Microsoft Office. Desenvolvedores do Visual c# podem usar a maioria dos mesmos recursos como os desenvolvedores de Visual Basic, mas há alguns casos em que eles devem escrever código adicional para usar os modelos de objeto do Office. Também há algumas diferenças entre os recursos básicos de programação no desenvolvimento do Office e o código gerenciado escrito em Visual Basic e c#.
 
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="key-differences-between-visual-basic-and-visual-c"></a>Principais diferenças entre o Visual Basic e Visual c#
- A tabela a seguir mostra as principais diferenças entre o Visual Basic e Visual c# no desenvolvimento do Office.
+<!-- markdownlint-enable MD003 MD020 -->
+
+A tabela a seguir mostra as principais diferenças entre o Visual Basic e Visual c# no desenvolvimento do Office.
 
 |Recurso|Descrição|Suporte ao Visual Basic|Suporte do Visual c#|
 |-------------|-----------------|--------------------------|------------------------|

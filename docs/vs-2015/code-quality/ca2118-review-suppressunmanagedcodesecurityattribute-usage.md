@@ -1,14 +1,9 @@
 ---
-title: 'CA2118: Revisar uso de SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
-ms.custom: ''
+title: 'CA2118: Revise o uso de SuppressUnmanagedCodeSecurityAttribute | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2118
 - ReviewSuppressUnmanagedCodeSecurityUsage
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6d4cee2d7758f467a13875f89a9534ceb0d883b5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49904473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059169"
 ---
-# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: revisar uso de SuppressUnmanagedCodeSecurityAttribute
+# <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -49,11 +44,11 @@ ms.locfileid: "49904473"
 
  A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou é um membro de um dos seguintes grupos:
 
--   Grupo de códigos de zona Meu computador
+- Grupo de códigos de zona Meu computador
 
--   Grupo de códigos do Microsoft forte nome
+- Grupo de códigos do Microsoft forte nome
 
--   Grupo de códigos do ECMA forte nome
+- Grupo de códigos do ECMA forte nome
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Examine cuidadosamente o código para garantir que esse atributo é absolutamente necessário. Se você não estiver familiarizado com a segurança do código gerenciado ou não compreende as implicações de segurança de usar esse atributo, remova-o do seu código. Se o atributo for necessário, você deve garantir que os chamadores não é possível usar seu código maliciosamente. Se seu código não tem permissão para executar código não gerenciado, esse atributo não tem nenhum efeito e deve ser removido.
@@ -77,7 +72,4 @@ ms.locfileid: "49904473"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](http://msdn.microsoft.com/en-us/cf255069-d85d-4de3-914a-e4625215a7c0) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
-
-
-
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

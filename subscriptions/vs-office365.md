@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do Office 365 incluído em algumas assinaturas do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 6d6fdcbe7ae5bb5182f7c123120d632a4221f642
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9f3df6923101bf5b8b4a2592460e96b57416c1c8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947381"
 ---
 # <a name="office-365-pro-plus-in-visual-studio-subscriptions"></a>Office 365 Pro Plus em Assinaturas do Visual Studio
 
@@ -48,7 +48,6 @@ Siga estas etapas para baixar e ativar o Office 365 Pro Plus:
 
 Se você planeja desenvolver aplicativos para o Office, convém ativar sua [Assinatura de Desenvolvedor do Office](vs-office-dev.md)
 
-
 ## <a name="eligibility"></a>Qualificação
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
@@ -63,14 +62,12 @@ Se você planeja desenvolver aplicativos para o Office, convém ativar sua [Assi
 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, MVP (Most Valuable Professional), RD (Diretor Regional), MCT Software & Services, Imagine e Microsoft Partner Network.*
 
-
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
-
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Para obter suporte técnico com qualquer componente do EMS, visite https://support.microsoft.com/allproducts e selecione o produto.
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obter suporte técnico com qualquer componente do EMS, visite https://support.microsoft.com/allproducts e selecione o produto.
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

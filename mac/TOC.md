@@ -1,7 +1,7 @@
 # [Visual Studio para Mac](index.yml)
-# [Tour do IDE](/visualstudio/mac/ide-tour/)
+# [Tour do IDE](ide-tour.md)
 
-# [Instalação](/visualstudio/mac/installation/)
+# [Instalação](installation.md)
 ## [Instalar e usar por trás de um firewall ou proxy](install-behind-a-firewall-or-proxy-server.md)
 ## [Instalar uma versão prévia](install-preview.md)
 ## [Atualizar](update.md)
@@ -13,7 +13,6 @@
 
 # [Personalizando o IDE](customizing-the-ide.md)
 ## [Estendendo o Visual Studio para Mac](extending-visual-studio-mac.md)
-
 
 # [Projetos e Soluções](projects-and-solutions.md)
 ## [Criando Novos Projetos](create-new-projects.md)
@@ -33,7 +32,7 @@
 ## [Bloquear Seleção](block-selection.md)
 ## [Temas do Editor](editor-themes.md)
 ## [EditorConfig](editorconfig.md)
-## [Atalhos comuns do teclado](keyboard-shortcuts.md)
+## [Atalhos de teclado padrão](keyboard-shortcuts.md)
 
 # [Depuração](debugging.md)
 ## [Visualizações de dados](data-visualizations.md)
@@ -77,3 +76,5 @@
 # [Solução de problemas](troubleshooting.md)
 ## [Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Relatar um problema](report-a-problem.md)
+## [Solução de problemas: Por que não posso ver todos os modelos?](troubleshooting-no-templates.md)
+## [Solução de problemas: Atualizador tem erros de recuperação de informações](updater-troubleshooting.md)

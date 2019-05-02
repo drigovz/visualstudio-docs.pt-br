@@ -1,11 +1,8 @@
 ---
 title: Usando o Designer de fluxo de trabalho de máquina de estado herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - StateFinalizationActivity activity
@@ -20,16 +17,16 @@ ms.assetid: 2cd21123-35c2-4eaf-82f6-86fce7a8f04d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 30eaf026d0558538c51b4cbda313e051348a5120
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 54469f2e255ff9ea726ea1b6c13abcb55c33252d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444117"
 ---
 # <a name="using-the-legacy-state-machine-workflow-designer"></a>Usando o computador de estado herdado Designer de Fluxo de Trabalho
-Quando você estiver criando um novo projeto de fluxo de trabalho de máquina de estado no [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode optar por usar o **aplicativo de Console do fluxo de trabalho de máquina de estado** ou o  **Biblioteca de fluxo de trabalho de máquina de estado** modelo de projeto herdados. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como: Criar estado de fluxo de trabalho de aplicativos de Console computador (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como: criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
+Quando você estiver criando um novo projeto de fluxo de trabalho de máquina de estado no [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo o [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou o [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode optar por usar o **aplicativo de Console do fluxo de trabalho de máquina de estado** ou o  **Biblioteca de fluxo de trabalho de máquina de estado** modelo de projeto herdados. Se você escolher um desses modelos de projeto do computador de estado, o designer do computador de estado é apresentado como a interface do usuário herdado do designer de fluxo de trabalho. Para obter informações sobre os modelos de projeto de máquina de estado herdado, consulte [como: Criar aplicativos de Console de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md) e [como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md).  
   
  Um fluxo de trabalho do computador de estado consiste em um conjunto de estados. Um estado denotado é como um estado inicial. Cada estado pode receber um determinado conjunto de eventos. Baseado em um evento, uma transição pode ser feita para outro estado. O fluxo de trabalho do computador de estado pode ter um estado final. Quando uma transição é feita ao estado final, o fluxo de trabalho completa.  
   
@@ -56,13 +53,13 @@ Quando você estiver criando um novo projeto de fluxo de trabalho de máquina de
  Quando você arrasta uma nova **StateActivity** para a superfície de design de fluxo de trabalho, você pode adicionar [EventDrivenActivity](http://go.microsoft.com/fwlink?LinkID=65029), [StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65044), [ StateFinalizationActivity](http://go.microsoft.com/fwlink?LinkID=65043), ou adicionais **StateActivity** atividades como filhos.  
   
 > [!CAUTION]
->  Quando você usa o designer de fluxo de trabalho de máquina de estado para criar fluxos de trabalho, você deve monitorar a estrutura do fluxo de trabalho que você está criando com o **Document Outline** janela modo de exibição. O modo de exibição da estrutura do fluxo de trabalho de máquina de estado de na **Document Outline** janela espelha o layout lógico de atividades no arquivo de marcação de fluxo de trabalho do modo de exibição. O layout físico das atividades de fluxo de trabalho como aparecem na superfície de design não pode espelhar o layout lógico de atividades no arquivo de marcação de fluxo de trabalho.  
+> Quando você usa o designer de fluxo de trabalho de máquina de estado para criar fluxos de trabalho, você deve monitorar a estrutura do fluxo de trabalho que você está criando com o **Document Outline** janela modo de exibição. O modo de exibição da estrutura do fluxo de trabalho de máquina de estado de na **Document Outline** janela espelha o layout lógico de atividades no arquivo de marcação de fluxo de trabalho do modo de exibição. O layout físico das atividades de fluxo de trabalho como aparecem na superfície de design não pode espelhar o layout lógico de atividades no arquivo de marcação de fluxo de trabalho.  
 >   
->  Para abrir o **Document Outline** janela diante a **exibição** , aponte para **Other Windows**e, em seguida, selecione **Document Outline**.  
+> Para abrir o **Document Outline** janela diante a **exibição** , aponte para **Other Windows**e, em seguida, selecione **Document Outline**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: criar aplicativos de Console de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
- [Como: criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
+ [Como: Criar aplicativos de Console de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-state-machine-workflow-console-applications-legacy.md)   
+ [Como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)](../workflow-designer/how-to-create-a-state-machine-workflow-library-legacy.md)   
  [Fluxos de trabalho de máquina de estado](http://go.microsoft.com/fwlink?LinkID=65016)   
  [Usando a atividade de StateActivity](http://go.microsoft.com/fwlink?LinkID=65083)   
  [Usando a atividade de StateInitializationActivity](http://go.microsoft.com/fwlink?LinkID=65006)   

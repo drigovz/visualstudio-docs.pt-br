@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dd56fc50dda1dcbc7eee01ebca8f1e789a839851
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822983"
 ---
 # <a name="build-multiple-projects-in-parallel-with-msbuild"></a>Criar vários projetos em paralelo com o MSBuild
 Você pode usar o MSBuild para criar vários projetos mais rápido, executando-os em paralelo. Para executar compilações em paralelo, você pode usar as seguintes configurações em um computador com processador de vários núcleos ou vários processadores:

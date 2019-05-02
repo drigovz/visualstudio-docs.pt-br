@@ -19,17 +19,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15a6f0d3a0a50068d05a96994cb01462f07f3258
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426107"
 ---
 # <a name="msbuild-task"></a>Tarefa MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de outro projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
 ## <a name="parameters"></a>Parâmetros  
@@ -69,7 +68,7 @@ Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de out
  O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, no entanto, fornece dois novos itens de metadados reservados, propriedades e AdditionalProperties, que fornecem uma maneira flexível para transmitir propriedades diferentes para diferentes projetos sendo criados usando a [tarefa do MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Esses novos itens de metadados são aplicáveis apenas para itens que passaram no atributo de projetos da [tarefa do MSBuild](../msbuild/msbuild-task.md).  
+> Esses novos itens de metadados são aplicáveis apenas para itens que passaram no atributo de projetos da [tarefa do MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Benefícios da Compilação Multiprocessador  
  Um dos principais benefícios de usar esses novos metadados ocorre quando você compila seus projetos em paralelo em um sistema com vários processadores. Os metadados permitem consolidar todos os projetos em uma única chamada da [tarefa do MSBuild](../msbuild/msbuild-task.md) sem ter que executar qualquer processamento em lotes ou tarefas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] condicionais. E quando você chama uma única [tarefa do MSBuild](../msbuild/msbuild-task.md), todos os projetos listados no atributo de projetos são criados em paralelo. (Apenas, no entanto, se o atributo `BuildInParallel=true` estiver presente na [tarefa do MSBuild](../msbuild/msbuild-task.md).) Para obter mais informações, consulte [Compilando vários projetos paralelamente](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
@@ -78,7 +77,7 @@ Compila projetos [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de out
  Um cenário comum é ao compilar vários arquivos de solução usando a [tarefa do MSBuild](../msbuild/msbuild-task.md), usar apenas configurações de build diferentes. Você pode querer compilar a solução a1 usando a configuração de depuração e compilar a solução a2 usando a configuração de versão. Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, esse arquivo de projeto seria semelhante ao seguinte:  
   
 > [!NOTE]
->  No exemplo a seguir, "…" representa arquivos adicionais da solução.  
+> No exemplo a seguir, "…" representa arquivos adicionais da solução.  
   
 ### <a name="aproj"></a>a.proj  
   

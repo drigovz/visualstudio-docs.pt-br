@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421687"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Esquemas e dados em personalizações no nível de documento XML
   **Importante** as informações que propus neste tópico sobre o Microsoft Word são desenvolver ou apresentadas exclusivamente para o uso e benefício de indivíduos e organizações que estão localizados fora dos Estados Unidos e seus territórios ou que estão usando o programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft antes de janeiro de 2010, quando a Microsoft removido uma implementação da funcionalidade específica relacionada para XML personalizado do Microsoft Word. Essas informações sobre o Microsoft Word não podem ser lidas ou usadas por indivíduos ou organizações nos Estados Unidos ou em seus territórios de quem estão usando ou desenvolver programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft depois de 10 de janeiro de 2010 ; Esses produtos não se comportará como produtos licenciados antes dessa data ou adquirido e licenciado para uso fora dos Estados Unidos.
@@ -33,32 +33,32 @@ ms.locfileid: "54875440"
  Expõe do Visual Studio mapeado elementos de esquema em personalizações no nível do documento como controles no modelo de programação. Para Excel, o Visual Studio adiciona suporte para associar os controles aos dados em bancos de dados, serviços da Web e objetos. Para o Word e Excel, o Visual Studio adiciona suporte para painéis de ações, que pode ser usado com um documento de esquema mapeado para criar uma experiência de usuário final avançado para suas soluções. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  É possível usar os esquemas XML com diversas partes em soluções do Excel.
+> É possível usar os esquemas XML com diversas partes em soluções do Excel.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Objetos criados quando esquemas são anexados a pastas de trabalho do Excel
  Quando você anexa um esquema para uma pasta de trabalho, Visual Studio automaticamente cria vários objetos e os adiciona ao seu projeto. Esses objetos não devem ser excluídos usando as ferramentas do Visual Studio, pois eles são gerenciados pelo Excel. Para excluí-los, remova os elementos mapeados a planilha ou desanexar o esquema, usando as ferramentas do Excel.
 
  Há dois objetos principais:
 
--   Esquema XML (arquivo XSD). Para cada esquema na pasta de trabalho, o Visual Studio adiciona um esquema para o projeto. Isso é exibido como um item de projeto com uma extensão XSD no **Gerenciador de soluções**.
+- Esquema XML (arquivo XSD). Para cada esquema na pasta de trabalho, o Visual Studio adiciona um esquema para o projeto. Isso é exibido como um item de projeto com uma extensão XSD no **Gerenciador de soluções**.
 
--   Com um tipo <xref:System.Data.DataSet> classe. Essa classe é criada com base no esquema. Essa classe de conjunto de dados é visível em **modo de exibição de classe**.
+- Com um tipo <xref:System.Data.DataSet> classe. Essa classe é criada com base no esquema. Essa classe de conjunto de dados é visível em **modo de exibição de classe**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objetos criados quando os elementos de esquema são mapeados para planilhas do Excel
  Quando você mapeia um elemento de esquema do **código-fonte XML** painel de tarefas para uma planilha, o Visual Studio automaticamente cria vários objetos e os adiciona ao seu projeto:
 
--   Controles. Para cada objeto mapeado na pasta de trabalho, uma <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle (para elementos de esquema não-repetição) ou um <xref:Microsoft.Office.Tools.Excel.ListObject> controle (para elementos do esquema de repetição) é criada no modelo de programação. O <xref:Microsoft.Office.Tools.Excel.ListObject> controle pode ser excluído apenas com a exclusão de objetos mapeados e os mapeamentos da pasta de trabalho. Para obter mais informações sobre controles, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
+- Controles. Para cada objeto mapeado na pasta de trabalho, uma <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle (para elementos de esquema não-repetição) ou um <xref:Microsoft.Office.Tools.Excel.ListObject> controle (para elementos do esquema de repetição) é criada no modelo de programação. O <xref:Microsoft.Office.Tools.Excel.ListObject> controle pode ser excluído apenas com a exclusão de objetos mapeados e os mapeamentos da pasta de trabalho. Para obter mais informações sobre controles, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Quando você cria um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mapeando um elemento de esquema não-repetição para a planilha, um <xref:System.Windows.Forms.BindingSource> é criado e o <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle está vinculado a <xref:System.Windows.Forms.BindingSource>. Você deve associar o <xref:System.Windows.Forms.BindingSource> a uma instância de fonte de dados que correspondem ao esquema mapeado para o documento, como uma instância do tipado <xref:System.Data.DataSet> classe que foi criada. Criar uma associação, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades, que são expostas na **propriedades** janela.
+- BindingSource. Quando você cria um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> mapeando um elemento de esquema não-repetição para a planilha, um <xref:System.Windows.Forms.BindingSource> é criado e o <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle está vinculado a <xref:System.Windows.Forms.BindingSource>. Você deve associar o <xref:System.Windows.Forms.BindingSource> a uma instância de fonte de dados que correspondem ao esquema mapeado para o documento, como uma instância do tipado <xref:System.Data.DataSet> classe que foi criada. Criar uma associação, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades, que são expostas na **propriedades** janela.
 
     > [!NOTE]
-    >  O <xref:System.Windows.Forms.BindingSource> não foi criado para <xref:Microsoft.Office.Tools.Excel.ListObject> objetos. Você deve associar manualmente o <xref:Microsoft.Office.Tools.Excel.ListObject> à fonte de dados, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades no **propriedades** janela.
+    > O <xref:System.Windows.Forms.BindingSource> não foi criado para <xref:Microsoft.Office.Tools.Excel.ListObject> objetos. Você deve associar manualmente o <xref:Microsoft.Office.Tools.Excel.ListObject> à fonte de dados, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades no **propriedades** janela.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Office mapeado esquemas e a janela de fontes de dados do Visual Studio
  A funcionalidade de esquema mapeado do Office e do Visual Studio **fontes de dados** janela pode ajudá-lo a apresentar dados em uma planilha do Excel para relatórios ou edição. Em ambos os casos, você pode arrastar elementos de dados para a planilha do Excel. Ambos os métodos criam controles que são dados vinculados por meio de um <xref:System.Windows.Forms.BindingSource> a uma fonte de dados, como um <xref:System.Data.DataSet> ou um serviço web.
 
 > [!NOTE]
->  Quando você mapeia um elemento de esquema repetido em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.ListObject>. O <xref:Microsoft.Office.Tools.Excel.ListObject> não é automaticamente associado a dados por meio de <xref:System.Windows.Forms.BindingSource>. Você deve associar manualmente o <xref:Microsoft.Office.Tools.Excel.ListObject> à fonte de dados, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades no **propriedades** janela.
+> Quando você mapeia um elemento de esquema repetido em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.ListObject>. O <xref:Microsoft.Office.Tools.Excel.ListObject> não é automaticamente associado a dados por meio de <xref:System.Windows.Forms.BindingSource>. Você deve associar manualmente o <xref:Microsoft.Office.Tools.Excel.ListObject> à fonte de dados, definindo o <xref:System.Windows.Forms.BindingSource.DataSource%2A> e <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriedades no **propriedades** janela.
 
  A tabela a seguir mostra algumas das diferenças entre os dois métodos.
 

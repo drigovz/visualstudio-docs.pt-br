@@ -1,14 +1,9 @@
 ---
 title: '&lt;trustInfo&gt; elemento (aplicativo ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 f1_keywords:
 - urn:schemas-microsoft-com:asm.v2#IPermission
 - urn:schemas-microsoft-com:asm.v2#PermissionSet
@@ -27,13 +22,13 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77915ddfe59361623aa5aee3048c6411c6c0c02c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49175559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420064"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicativo ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,28 +81,28 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="permissionset"></a>PermissionSet  
  Necessário. Esse elemento é um filho de `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Este elemento tem os seguintes atributos.  
   
--   `ID`  
+- `ID`  
   
      Necessário. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada na `defaultAssemblyRequest` e `assemblyRequest` atributos.  
   
--   `version`  
+- `version`  
   
      Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.  
   
 ## <a name="ipermission"></a>IPermission  
  Opcional. Esse elemento é um filho de `PermissionSet` elemento. O `IPermission` elemento totalmente identifica uma classe de permissão no [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. O `IPermission` elemento tem os seguintes atributos, mas pode ter atributos adicionais que correspondem às propriedades da classe de permissão. Para descobrir a sintaxe para uma permissão específica, consulte os exemplos listados no arquivo config.  
   
--   `class`  
+- `class`  
   
      Necessário. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Necessário. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true`, a concessão de permissão é incondicional. Se `false`, ou se esse atributo for indefinido, ele é restrito de acordo com os atributos de permissão específica definidos no `IPermission` marca. Execute as seguintes permissões:  
   
@@ -127,18 +122,18 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Opcional. Identifica o conjunto de permissões concedidas a todos os assemblies. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem o seguinte atributo.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Necessário. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Opcional. Identifica as permissões para um assembly específico. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem os seguintes atributos.  
   
--   `Name`  
+- `Name`  
   
      Necessário. Identifica o nome do assembly.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Necessário. Identifica a ID do conjunto de permissões que requer esse assembly. O conjunto de permissões é declarado no `PermissionSet` elemento.  
   
@@ -148,7 +143,7 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Opcional. Identifica o nível de segurança no qual o aplicativo solicita a ser executado. Esse elemento não tem filhos e tem os seguintes atributos.  
   
--   `Level`  
+- `Level`  
   
      Necessário. Indica que o nível de segurança do aplicativo está solicitando. Os possíveis valores são:  
   
@@ -160,7 +155,7 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
   
      [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos instalará apenas com um valor de `asInvoker`. Instalação com qualquer outro valor falhará.  
   
--   `uiAccess`  
+- `uiAccess`  
   
      Opcional. Indica se o aplicativo requer acesso aos elementos de interface do usuário protegido. Os valores são `true` ou `false`, e o padrão é false. Somente os aplicativos assinados devem ter um valor true.  
   
@@ -278,6 +273,3 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="see-also"></a>Consulte também  
  [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   
  [Manifesto de aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)
-
-
-

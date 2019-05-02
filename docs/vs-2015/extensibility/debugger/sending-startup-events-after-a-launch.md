@@ -1,26 +1,21 @@
 ---
 title: Enviar eventos de inicialização após uma inicialização | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], startup events
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0cc0642c085510e69fe7cd16abe195095c993219
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: caf36e6713e49bb1470cd720ba2d04f689abba43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436670"
 ---
 # <a name="sending-startup-events-after-a-launch"></a>Enviado eventos de inicialização após uma inicialização
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Depois que o mecanismo de depuração (DES) é anexado ao programa, ele envia um
 - Um evento de conclusão de carga, enviado quando o código é carregado e pronto para ser executado, mas antes de qualquer código é executado  
   
   > [!NOTE]
-  >  Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.  
+  > Quando esse evento é continuado, variáveis globais são inicializadas e executar rotinas de inicialização.  
   
 - Possível que outros threads criação e eventos de carregamento de módulo.  
   
@@ -53,4 +48,3 @@ Depois que o mecanismo de depuração (DES) é anexado ao programa, ele envia um
 ## <a name="see-also"></a>Consulte também  
  [Controle de execução](../../extensibility/debugger/control-of-execution.md)   
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)
-

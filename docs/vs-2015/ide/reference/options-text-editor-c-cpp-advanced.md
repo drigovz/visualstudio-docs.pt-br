@@ -15,23 +15,22 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d045957dde862d0552d8eeb4885f29957e420f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441407"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++.  
   
  Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e escolha **Avançado**.  
   
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Navegação  
  Você nunca deve escolher essas opções, exceto no caso raro em que uma solução é tão grande que a atividade de banco de dados consome uma quantidade inaceitável de recursos do sistema.  
@@ -74,19 +73,19 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
   
  Defina usando uma soma de qualquer uma das seguintes opções:  
   
--   0 – Nenhum  
+- 0 – Nenhum  
   
--   1 – Geral  
+- 1 – Geral  
   
--   2 – Ocioso  
+- 2 – Ocioso  
   
--   4 – WorkItem  
+- 4 – WorkItem  
   
--   8 – IntelliSense  
+- 8 – IntelliSense  
   
--   16 – ACPerf  
+- 16 – ACPerf  
   
--   32 – ClassView  
+- 32 – ClassView  
   
 ## <a name="fallback-location"></a>Localização de Fallback  
  A localização de fallback é onde os arquivos de suporte SDF e IntelliSense (por exemplo, iPCH) são colocados quando a localização principal (mesmo diretório que a solução) não é usado. Essa situação pode ocorrer se o usuário não tem as permissões para gravar no diretório da solução ou o diretório da solução está em um dispositivo lento. A localização de fallback padrão é no diretório temporário do usuário.  

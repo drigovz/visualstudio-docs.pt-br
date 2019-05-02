@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377660b32f8edbb26e8a062d55ee152132f7f587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965148"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Passo a passo: Implementar trechos de código
 Você pode criar trechos de código e incluí-los em uma extensão de editor para que os usuários da extensão podem adicioná-los para seu próprio código.
@@ -109,33 +109,33 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Para registrar os trechos de código para um GUID específico
 
-1.  Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [passo a passo: Exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).
+1. Abra o **CompletionTest** projeto. Para obter informações sobre como criar este projeto, consulte [passo a passo: Exibir preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md).
 
-2.  No projeto, adicione referências aos assemblies a seguir:
+2. No projeto, adicione referências aos assemblies a seguir:
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft.VisualStudio.TextManager.Interop.8.0
 
-    -   microsoft.msxml
+    - microsoft.msxml
 
-3.  No projeto, abra o **vsixmanifest** arquivo.
+3. No projeto, abra o **vsixmanifest** arquivo.
 
-4.  Certifique-se de que o **ativos** guia contém uma **VsPackage** tipo e que conteúdo **projeto** é definido como o nome do projeto.
+4. Certifique-se de que o **ativos** guia contém uma **VsPackage** tipo e que conteúdo **projeto** é definido como o nome do projeto.
 
-5.  Selecione o projeto CompletionTest e na janela Propriedades, defina **gerar arquivo de Pkgdef** à **verdadeiro**. Salvar o projeto.
+5. Selecione o projeto CompletionTest e na janela Propriedades, defina **gerar arquivo de Pkgdef** à **verdadeiro**. Salvar o projeto.
 
-6.  Adicionar um estático `SnippetUtilities` classe ao projeto.
+6. Adicionar um estático `SnippetUtilities` classe ao projeto.
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7.  Na classe SnippetUtilities, definir um GUID e dê a ele o valor que você usou na *SnippetsIndex.xml* arquivo.
+7. Na classe SnippetUtilities, definir um GUID e dê a ele o valor que você usou na *SnippetsIndex.xml* arquivo.
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8.  Adicione a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> para o `TestCompletionHandler` classe. Esse atributo pode ser adicionado a qualquer classe de público ou interno (não estático) no projeto. (Talvez você precise adicionar um `using` instrução para o namespace Microsoft.VisualStudio.Shell.)
+8. Adicione a <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> para o `TestCompletionHandler` classe. Esse atributo pode ser adicionado a qualquer classe de público ou interno (não estático) no projeto. (Talvez você precise adicionar um `using` instrução para o namespace Microsoft.VisualStudio.Shell.)
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
@@ -147,14 +147,14 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Para adicionar o comando Inserir trecho de código para o menu de atalho
 
-1.  Abra o `TestCompletionCommandHandler` arquivo de classe.
+1. Abra o `TestCompletionCommandHandler` arquivo de classe.
 
      Como essa classe implementa <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, você pode ativar o **Inserir trecho** comando o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método. Antes de habilitar o comando, verifique se esse método não está sendo chamado dentro de uma função de automação porque quando o **Inserir trecho** comando é clicado, ele exibe da interface de usuário do seletor de trecho de código (UI).
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2.  Compile e execute o projeto. Na instância experimental, abra um arquivo que tem o *zzz* extensão de nome de arquivo e, em seguida, clique duas vezes nele. O **Inserir trecho** comando deve aparecer no menu de atalho.
+2. Compile e execute o projeto. Na instância experimental, abra um arquivo que tem o *zzz* extensão de nome de arquivo e, em seguida, clique duas vezes nele. O **Inserir trecho** comando deve aparecer no menu de atalho.
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Implementar a expansão de trecho de código na interface do usuário de seletor de trecho de código
  Esta seção mostra como implementar a expansão de trecho de código para que o seletor de trecho de código da interface do usuário é exibido quando **Inserir trecho** é clicado no menu de atalho. Um trecho de código também é expandido quando um usuário digita o atalho de trecho de código e, em seguida, pressiona **guia**.
@@ -165,42 +165,42 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 
 #### <a name="to-implement-snippet-expansion"></a>Para implementar a expansão de trecho de código
 
-1.  Para o arquivo que contém o `TestCompletionCommandHandler` da classe, adicione o seguinte `using` instruções.
+1. Para o arquivo que contém o `TestCompletionCommandHandler` da classe, adicione o seguinte `using` instruções.
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2.  Verifique as `TestCompletionCommandHandler` implementam a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interface.
+2. Verifique as `TestCompletionCommandHandler` implementam a <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interface.
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3.  No `TestCompletionCommandHandlerProvider` classe, importe o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
+3. No `TestCompletionCommandHandlerProvider` classe, importe o <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4.  Adicione alguns campos particulares para as interfaces de expansão de código e o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+4. Adicione alguns campos particulares para as interfaces de expansão de código e o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5.  No construtor do `TestCompletionCommandHandler` de classe, defina os campos a seguir.
+5. No construtor do `TestCompletionCommandHandler` de classe, defina os campos a seguir.
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6.  Para exibir o seletor de trecho de código quando o usuário clica o **Inserir trecho** de comando, adicione o seguinte código para o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método. (Para tornar essa explicação mais legível, o `Exec()`código que é usado para preenchimento de declaração não é mostrado; em vez disso, os blocos de código são adicionados para o método existente.) Adicione o seguinte bloco de código após o código que verifica se há um caractere.
+6. Para exibir o seletor de trecho de código quando o usuário clica o **Inserir trecho** de comando, adicione o seguinte código para o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método. (Para tornar essa explicação mais legível, o `Exec()`código que é usado para preenchimento de declaração não é mostrado; em vez disso, os blocos de código são adicionados para o método existente.) Adicione o seguinte bloco de código após o código que verifica se há um caractere.
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7.  Se um trecho de código tem campos que podem ser navegados, a sessão de expansão é mantida em aberto até que a expansão explicitamente for aceito; Se o trecho de código não tem campos, a sessão é fechada e é retornada como `null` pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. No <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, após o seletor de trecho de código de interface do usuário que você adicionou na etapa anterior, adicione o seguinte código para lidar com navegação de trecho de código (quando o usuário pressiona **guia** ou **Shift** + **Guia** após a inserção de trecho de código).
+7. Se um trecho de código tem campos que podem ser navegados, a sessão de expansão é mantida em aberto até que a expansão explicitamente for aceito; Se o trecho de código não tem campos, a sessão é fechada e é retornada como `null` pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> método. No <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método, após o seletor de trecho de código de interface do usuário que você adicionou na etapa anterior, adicione o seguinte código para lidar com navegação de trecho de código (quando o usuário pressiona **guia** ou **Shift** + **Guia** após a inserção de trecho de código).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8.  Para inserir o trecho de código, quando o usuário digita o atalho correspondente e, em seguida, pressiona **guia**, adicione código para o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método. O método particular que insere o trecho de código será mostrado em uma etapa posterior. Adicione o seguinte código após o código de navegação que você adicionou na etapa anterior.
+8. Para inserir o trecho de código, quando o usuário digita o atalho correspondente e, em seguida, pressiona **guia**, adicione código para o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> método. O método particular que insere o trecho de código será mostrado em uma etapa posterior. Adicione o seguinte código após o código de navegação que você adicionou na etapa anterior.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -223,13 +223,13 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 ## <a name="build-and-test-code-snippet-expansion"></a>Compilar e testar a expansão de trecho de código
  Você pode testar se a expansão de trecho de código funciona em seu projeto.
 
-1.  Compile a solução. Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
+1. Compile a solução. Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
 
-2.  Abra um arquivo de texto e digite algum texto.
+2. Abra um arquivo de texto e digite algum texto.
 
-3.  Clique com botão direito em algum lugar no texto e, em seguida, clique em **Inserir trecho de código**.
+3. Clique com botão direito em algum lugar no texto e, em seguida, clique em **Inserir trecho de código**.
 
-4.  Seletor de trecho de interface do usuário deve aparecer com um pop-up que diz **campos de substituição de teste**. Clique duas vezes o pop-up.
+4. Seletor de trecho de interface do usuário deve aparecer com um pop-up que diz **campos de substituição de teste**. Clique duas vezes o pop-up.
 
      O trecho a seguir deve ser inserido.
 
@@ -240,10 +240,10 @@ Você pode criar trechos de código e incluí-los em uma extensão de editor par
 
      Não pressione **Enter** ou **Esc**.
 
-5.  Pressione **guia** e **Shift**+**guia** para alternar entre "first" e "segundo".
+5. Pressione **guia** e **Shift**+**guia** para alternar entre "first" e "segundo".
 
-6.  Aceite a inserção pressionando **Enter** ou **Esc**.
+6. Aceite a inserção pressionando **Enter** ou **Esc**.
 
-7.  Em uma parte diferente do texto, digite "teste" e, em seguida, pressione **guia**. Como "teste" é o atalho de trecho de código, o trecho de código deve ser inserido novamente.
+7. Em uma parte diferente do texto, digite "teste" e, em seguida, pressione **guia**. Como "teste" é o atalho de trecho de código, o trecho de código deve ser inserido novamente.
 
 ## <a name="next-steps"></a>Próximas etapas

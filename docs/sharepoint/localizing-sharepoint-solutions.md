@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 71d22bb6210bb515941ca00ebb8b8655a6c089e0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 90da60cb904ba6e3db2be3805256fcf4eb9122ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444353"
 ---
 # <a name="localize-sharepoint-solutions"></a>Localizar soluções do SharePoint
 
@@ -31,7 +31,7 @@ ms.locfileid: "56639915"
  Para localizar uma solução, você remove cadeias de caracteres codificadas do código e abstrai-as em arquivos de recurso. Um arquivo de recurso é um [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-com base em arquivo com um *resx* extensão. O arquivo de recurso contém as versões traduzidas das cadeias de caracteres usadas em sua solução. Para obter mais informações, consulte [recursos em aplicativos](http://go.microsoft.com/fwlink/?LinkID=155844).
 
 > [!NOTE]
->  Adicione recursos de cadeia de caracteres apenas para arquivos de recurso de solução do SharePoint. Embora o Editor de recursos permite que você adicione recursos de não cadeia de caracteres, os recursos de não cadeia de caracteres não são implantados no SharePoint.
+> Adicione recursos de cadeia de caracteres apenas para arquivos de recurso de solução do SharePoint. Embora o Editor de recursos permite que você adicione recursos de não cadeia de caracteres, os recursos de não cadeia de caracteres não são implantados no SharePoint.
 
 ## <a name="resource-files"></a>Arquivos de recurso
  Há três tipos de arquivos de recurso: padrão, neutralidade de idioma e específicos do idioma.
@@ -76,7 +76,7 @@ $Resources:String ID
  Defina as **tipo de implantação** propriedade de cada arquivo de recurso para **AppGlobalResource**. Isso faz com que os arquivos de recurso implantar na pasta App_GlobalResources, onde eles estão disponíveis para todas as páginas e controles ASPX na solução. A pasta App_GlobalResources está localizada em C:\inetpub\wwwroot\wss\VirtualDirectories\\< número da porta\>\App_GlobalResources.
 
 > [!NOTE]
->  Se você usar arquivos de recurso não globais, mova-os para a pasta de item de projeto para habilitar a propriedade de tipo de implantação e outras propriedades específicas do SharePoint.
+> Se você usar arquivos de recurso não globais, mova-os para a pasta de item de projeto para habilitar a propriedade de tipo de implantação e outras propriedades específicas do SharePoint.
 
  Arquivos de recurso de marcação ASPX também podem ser usados para localizar o código. Se você estiver usando os recursos para localizar o código, além de marcação ASPX, deixe a configuração de propriedade do Build Action de cada arquivo como recurso inserido para fazer com que o recurso seja compilado em um assembly satélite. No entanto, se você estiver usando os arquivos de recurso somente para localizar a marcação, você pode, opcionalmente, alterar Build Action ao conteúdo para impedir que o arquivo que está sendo compilado no assembly principal do aplicativo.
 

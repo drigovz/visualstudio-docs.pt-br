@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 283533b20614ea727be620669ea5ab66cf00e5ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62835768"
 ---
 # <a name="idiasymbolgetnumberofacceleratorpointertags"></a>IDiaSymbol::get_numberOfAcceleratorPointerTags
 Retorna o número de marcas de ponteiro de acelerador em uma função de stub do C++ AMP.
@@ -30,7 +30,7 @@ HRESULT get_numberOfAcceleratorPointerTags(
 #### <a name="parameters"></a>Parâmetros
  `count`
 
-[out] Um ponteiro para um `DWORD` que contém o número de acelerador de marcas de ponteiro em uma função de stub do C++ AMP.
+[out] Um ponteiro para um `DWORD` que contém o número de acelerador de marcas de ponteiro em um C++ função de stub AMP.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.

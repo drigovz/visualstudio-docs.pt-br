@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eceadf1b1bf82876a20027a9d29c8336e381d18d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434296"
 ---
 # <a name="cpu-and-windows-counters"></a>Contadores da CPU e do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,10 +28,10 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ## <a name="windows-counters"></a>Contadores do Windows  
  Os contadores do Windows fazem parte da Infraestrutura de Diagnóstico do Windows que fornece informações sobre o desempenho do sistema operacional, de um aplicativo, serviço ou driver. Os contadores do Windows dependem da configuração do computador atual e podem não estar disponíveis em outros computadores. Os contadores de desempenho do Windows são coletados em arquivos de dados de criação de perfil como marcas de criação de perfil, que podem ser então usadas para filtrar exibições e relatórios.  
@@ -104,24 +104,24 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Para exibir uma lista de contadores do Windows com suporte na plataforma atual  
   
-1.  No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
+1. No Gerenciador de Desempenho, clique com o botão direito do mouse na sessão de desempenho e clique em **Propriedades**.  
   
-2.  Clique em **Contadores do Windows**.  
+2. Clique em **Contadores do Windows**.  
   
-3.  Selecione **Coletar Contadores do Windows**.  
+3. Selecione **Coletar Contadores do Windows**.  
   
-4.  Na lista **Categoria de Contador**, selecione um grupo de contadores. O contador do Windows para o grupo é exibido na caixa de listagem.  
+4. Na lista **Categoria de Contador**, selecione um grupo de contadores. O contador do Windows para o grupo é exibido na caixa de listagem.  
   
-     **Observação:** Clique em **Cancelar** para retornar à configuração de coleta de contadores anterior.  
+     **Observação:** Clique em **Cancelar** para retornar à configuração anterior de coleta de contadores.  
   
 ### <a name="command-line"></a>Linha de Comando  
  Com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), é possível listar os contadores da CPU disponíveis em um computador por meio da linha de comando.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Para listar os contadores da CPU com suporte na plataforma atual  
   
-1.  Abra uma janela do prompt de comando.  
+1. Abra uma janela do prompt de comando.  
   
-2.  Tipo  
+2. Tipo  
   
      **\<Visual Studio Performance Tools Directory>\VSPerfCmd /querycounters**  
   
@@ -131,6 +131,6 @@ O Criador de Perfil do Visual Studio permite coletar dados de desempenho que for
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
- [Como escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)   
- [Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
- [Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)
+ [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)   
+ [Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md)

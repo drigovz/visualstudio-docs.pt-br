@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cdaa6cdd3275fa7fda8df33cbdb09a8edae158c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848761"
 ---
 # <a name="graphics-event-call-stack"></a>Pilha de chamadas de gráfico
 A pilha de chamadas do evento de gráficos no analisador de gráficos do Visual Studio o ajuda a mapear a relação entre eventos de gráficos problemático e código-fonte do seu aplicativo.
@@ -42,4 +42,4 @@ A pilha de chamadas do evento de gráficos no analisador de gráficos do Visual 
  Para entender o evento de gráficos selecionado, você pode precisar obter informações sobre os objetos Direct3D que estão associados ele. O **pilha de chamadas do evento de gráficos** janela fornece links para essas informações.
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)

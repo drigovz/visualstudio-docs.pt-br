@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 846dbee5f66fbdafa9a4b53bab3947ecb95b006c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813030"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Como: Exibir documentos em Visualizar impressão programaticamente
   Se sua solução gera um relatório, você talvez queira exibir o relatório para o usuário no modo de visualização de impressão.
@@ -29,14 +29,14 @@ ms.locfileid: "56602618"
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview
 
-1.  Chame o <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> método da <xref:Microsoft.Office.Tools.Word.Document> classe. Para usar este exemplo de código, executá-la na `ThisDocument` classe em seu projeto.
+1. Chame o <xref:Microsoft.Office.Tools.Word.Document.PrintPreview%2A> método da <xref:Microsoft.Office.Tools.Word.Document> classe. Para usar este exemplo de código, executá-la na `ThisDocument` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#13)]
      [!code-csharp[Trin_VstcoreWordAutomation#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#13)]
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview
 
-1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
+1. Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]
@@ -45,14 +45,14 @@ ms.locfileid: "56602618"
 
 ### <a name="to-display-a-document-in-print-preview-by-calling-the-printpreview-method"></a>Para exibir um documento em Visualizar impressão chamando o método PrintPreview
 
-1.  Chame o <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> método da <xref:Microsoft.Office.Interop.Word.Document> que você deseja visualizar. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
+1. Chame o <xref:Microsoft.Office.Interop.Word._Document.PrintPreview%2A> método da <xref:Microsoft.Office.Interop.Word.Document> que você deseja visualizar. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#13)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#13](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#13)]
 
 ### <a name="to-display-a-document-in-print-preview-by-setting-the-printpreview-property"></a>Para exibir um documento em Visualizar impressão, definindo a propriedade PrintPreview
 
-1.  Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
+1. Defina a <xref:Microsoft.Office.Interop.Word._Application.PrintPreview%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Application> do objeto para **true**.
 
      [!code-vb[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#14)]
      [!code-csharp[Trin_VstcoreWordAutomation#14](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#14)]

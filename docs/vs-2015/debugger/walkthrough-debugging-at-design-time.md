@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Depuração em tempo de Design | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,15 +22,15 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 4b6660bc4d9cf0073f1e18b0960c3fa9c0ae9c13
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51737778"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046143"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Instruções passo a passo: depurando na hora de design
+# <a name="walkthrough-debugging-at-design-time"></a>Passo a passo: Depuração em tempo de Design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina enquanto seu aplicativo não está em execução. Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de depuração em tempo de design.  
@@ -44,7 +39,7 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
   
 ### <a name="to-hit-breakpoints-from-the-immediate-window"></a>Para usar pontos de interrupção da janela Imediato  
   
-1.  Cole o seguinte código no aplicativo de console do Visual Basic:  
+1. Cole o seguinte código no aplicativo de console do Visual Basic:  
   
     ```  
     Module Module1  
@@ -68,19 +63,19 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
     End Module  
     ```  
   
-2.  Defina um ponto de interrupção na linha em que se lê `s="Add BreakPoint Here"`.  
+2. Defina um ponto de interrupção na linha em que se lê `s="Add BreakPoint Here"`.  
   
-3.  Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+3. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
   
-4.  Certifique-se de que o ponto de interrupção foi alcançado, e que a pilha de chamadas está correta.  
+4. Certifique-se de que o ponto de interrupção foi alcançado, e que a pilha de chamadas está correta.  
   
-5.  Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
+5. Sobre o **Debug** menu, clique em **continuar**e verificar se você estiver no modo de design.  
   
-6.  Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
+6. Digite o seguinte na **imediato** janela: `?MyFunction<enter>`  
   
-7.  Digite o seguinte na **imediato** janela: `?MySub<enter>`  
+7. Digite o seguinte na **imediato** janela: `?MySub<enter>`  
   
-8.  Verifique se o ponto de interrupção e examinar o valor da variável estática `i` no **Locals** janela. Deve ter o valor 3.  
+8. Verifique se o ponto de interrupção e examinar o valor da variável estática `i` no **Locals** janela. Deve ter o valor 3.  
   
 9. Verifique se a pilha de chamadas está correta.  
   
@@ -89,6 +84,3 @@ Você pode usar o Visual Studio **imediato** janela para executar uma função o
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)
-
-
-

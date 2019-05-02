@@ -1,30 +1,25 @@
 ---
 title: Registrando serviços | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - services, registering
 ms.assetid: c4ebac40-0374-4dda-948e-06fdda0e9c81
 caps.latest.revision: 8
-manager: douge
-ms.openlocfilehash: e5d8aa9e6652aa41e59d160c5cf25aacd3390572
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 64f2afa6e853978e919e466f91475bed1e8d698c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49219681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971284"
 ---
 # <a name="registering-services"></a>Registrando serviços
 Para dar suporte a carregamento sob demanda, um provedor de serviços deve registrar os seus serviços globais com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Durante o desenvolvimento, provedores de serviços gerenciados registrar serviços e substituições de serviço, adicionando atributos no código-fonte para pacotes e, em seguida, criando os pacotes no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Isso executa o utilitário RegPkg.exe no assembly resultante, o pacote de registro e preparação para implantação. Para obter mais informações, consulte [como: registrar um serviço](../misc/how-to-register-a-service.md).  
+ Durante o desenvolvimento, provedores de serviços gerenciados registrar serviços e substituições de serviço, adicionando atributos no código-fonte para pacotes e, em seguida, criando os pacotes no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE. Isso executa o utilitário RegPkg.exe no assembly resultante, o pacote de registro e preparação para implantação. Para obter mais informações, confira [Como: Registrar um serviço](../misc/how-to-register-a-service.md).  
   
  Provedores de serviço não gerenciado devem registrar os serviços que eles oferecem [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nos serviços de seção ou o serviço substituirá a seção do registro do sistema. O fragmento de arquivo. reg a seguir mostra como o serviço, SVsTextManager, pode ser registrado:  
   

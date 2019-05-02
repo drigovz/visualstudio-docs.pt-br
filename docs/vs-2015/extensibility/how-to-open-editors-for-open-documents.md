@@ -1,28 +1,23 @@
 ---
-title: 'Como: abrir editores para documentos abertos | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Abrir editores para documentos abertos | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], opening for open documents
 ms.assetid: 1a0fa49c-efa4-4dcc-bdc0-299b7052acdc
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4bb21def7e9d283c287c375bd9b8b4cc6bd30c3c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ae6e565e026ca49825a7b00a82e4e5c62a2f6c3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092325"
 ---
-# <a name="how-to-open-editors-for-open-documents"></a>Como: abrir editores para documentos abertos
+# <a name="how-to-open-editors-for-open-documents"></a>Como: Editores abertos para documentos abertos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Antes de um projeto é aberto em uma janela de documento, o projeto primeiro deve determinar se o arquivo já está aberto na janela do documento para outro editor. O arquivo pode ser qualquer um dos software em um editor específico do projeto ou um dos editores padrão registrado com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -53,14 +48,13 @@ Antes de um projeto é aberto em uma janela de documento, o projeto primeiro dev
   
 #### <a name="to-open-a-standard-editor-for-an-open-file"></a>Para abrir um editor padrão para um arquivo aberto  
   
-1.  Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
      Esse método primeiro verifica se o documento não ainda estiver aberto, chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Se o documento já estiver aberto, sua janela de editor é ressurgiu.  
   
-2.  Se o documento não estiver aberto, em seguida, conclua as etapas em [como: abrir editores padrão](../extensibility/how-to-open-standard-editors.md).  
+2. Se o documento não estiver aberto, em seguida, conclua as etapas em [como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
- [Como: abrir editores específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
- [Como abrir editores padrão](../extensibility/how-to-open-standard-editors.md)
-
+ [Como: Editores abertos específicos do projeto](../extensibility/how-to-open-project-specific-editors.md)   
+ [Como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md)

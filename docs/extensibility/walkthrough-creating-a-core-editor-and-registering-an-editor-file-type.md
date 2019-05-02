@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411029"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Passo a passo: Criar um editor de núcleo e registrar um tipo de arquivo do editor
 Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo quando um arquivo com o *.myext* extensão de nome de arquivo é carregado.
@@ -26,11 +26,11 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto do Visual Studio Package
  O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes nos **novo projeto** caixa de diálogo:
 
-1.  Sob **extensibilidade do Visual Basic**. O idioma padrão do projeto é o Visual Basic.
+1. Sob **extensibilidade do Visual Basic**. O idioma padrão do projeto é o Visual Basic.
 
-2.  Sob **c# extensibilidade**. O idioma padrão do projeto é c#.
+2. Sob **c# extensibilidade**. O idioma padrão do projeto é c#.
 
-3.  Sob **outros tipos de projetos extensibilidade**. O idioma padrão do projeto é C++.
+3. Sob **outros tipos de projetos extensibilidade**. O idioma padrão do projeto é C++.
 
 ### <a name="to-create-the-vspackage"></a>Para criar o VSPackage
 
@@ -325,7 +325,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
 3. Abra o **VSPackage.resx** do arquivo, adicione uma nova cadeia de caracteres, defina o nome como **101**e defina o valor como `IDS_EDITORNAME`. Essa etapa fornece o pacote com uma ID de recurso para acessar a cadeia de caracteres que você criou.
 
    > [!NOTE]
-   >  Se o **VSPackage.resx** arquivo contém outra cadeia de caracteres que o `name` atributo definido como **101**, substituir por outro valor numérico, exclusivo, aqui e nas etapas a seguir.
+   > Se o **VSPackage.resx** arquivo contém outra cadeia de caracteres que o `name` atributo definido como **101**, substituir por outro valor numérico, exclusivo, aqui e nas etapas a seguir.
 
 4. Na **Gerenciador de soluções**, abra o **MyPackagePackage.cs** arquivo.
 

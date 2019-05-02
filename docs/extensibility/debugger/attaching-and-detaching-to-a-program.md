@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b81ea271e1ab5d44337ce111e89d5624efd452d0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9fe89c6106ab1b411974e44bb05128b2bfc99fc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890768"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Anexar e desanexar a um programa
 Anexar o depurador requer o envio de sequência correta de métodos e eventos com os atributos apropriados.
@@ -31,11 +31,11 @@ Anexar o depurador requer o envio de sequência correta de métodos e eventos co
 
     Se `S_OK` for retornado, o DE deve ser carregado no mesmo processo que o SDM. O SDM executa as seguintes tarefas:
 
-   1.  Chamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações de mecanismo de.
+   1. Chamadas [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) para obter as informações de mecanismo de.
 
-   2.  Cria conjunta DE.
+   2. Cria conjunta DE.
 
-   3.  Chamadas [anexar](../../extensibility/debugger/reference/idebugengine2-attach.md).
+   3. Chamadas [anexar](../../extensibility/debugger/reference/idebugengine2-attach.md).
 
 2. O envia DE um [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) para o SDM com um `EVENT_SYNC` atributo.
 

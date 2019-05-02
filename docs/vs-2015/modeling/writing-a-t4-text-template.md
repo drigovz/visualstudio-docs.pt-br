@@ -1,12 +1,9 @@
 ---
 title: Gravando um modelo de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
@@ -15,13 +12,13 @@ ms.assetid: 94328da7-953b-4e92-9587-648543d1f732
 caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7aa5a216b9be48eae7f2905084f0c39109688d6c
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49897791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446719"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +100,7 @@ Hello!
  Você pode inserir um bloco de texto sempre que uma instrução `Write();` for permitida no código.  
   
 > [!NOTE]
->  Quando você inserir um bloco de texto dentro de uma instrução composta, como um loop ou condicional, sempre use chaves {...} para conter o bloco de texto.  
+> Quando você inserir um bloco de texto dentro de uma instrução composta, como um loop ou condicional, sempre use chaves {...} para conter o bloco de texto.  
   
 ### <a name="expression-control-blocks"></a>Blocos de controle de expressão  
  Um bloco de controle de expressão avalia uma expressão e a converte em uma cadeia de caracteres. Essa cadeia é inserida no arquivo de saída.  
@@ -116,7 +113,7 @@ Hello!
 <#= 2 + 3 #>  
 ```  
   
- Observe que o símbolo de abertura tem três caracteres "<#=".  
+ Observe que o símbolo de abertura tem três caracteres "< #=".  
   
  A expressão pode incluir qualquer variável que esteja no escopo. Por exemplo, este bloco imprime linhas com números:  
   
@@ -217,7 +214,7 @@ private void WriteSquareLine(int i)
   
  Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).  
   
-###  <a name="Include"></a> Incluindo código e texto  
+### <a name="Include"></a> Incluindo código e texto  
  A diretiva `include` insere o texto de outro arquivo de modelo. Por exemplo, esta diretiva insere o conteúdo de `test.txt`.  
   
  `<#@ include file="c:\test.txt" #>`  
@@ -267,7 +264,7 @@ Content of MyFile.txt is:
   
 ```  
   
- Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros Hosts de um modelo](http://msdn.microsoft.com/en-us/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+ Você também pode obter outros serviços fornecidos pelo host. Para obter mais informações, consulte [acessando o Visual Studio ou outros Hosts de um modelo](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>Modelos de texto em tempo de design executados em um AppDomain separado  
  Você deve estar ciente que uma [modelo de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) é executado em um AppDomain separado do aplicativo principal. Na maioria dos casos, isso não é importante, mas você pode descobrir restrições em certos casos complexos. Por exemplo, se você quiser passar dados dentro ou fora do modelo a partir de um serviço separado, o serviço deve fornecer uma API serializável.  
@@ -287,6 +284,3 @@ Content of MyFile.txt is:
 |Execute geração de texto fora do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|[Gerando arquivos com o utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)|  
 |Transforme dados na forma de uma linguagem específica do domínio.|[Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Grave processadores de diretivas para transformar suas próprias fontes de dados.|[Personalizando a transformação de texto T4](../modeling/customizing-t4-text-transformation.md)|
-
-
-

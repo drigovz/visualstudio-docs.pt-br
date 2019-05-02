@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5c264048887d3a1ba77d498784dc3e6cc4384159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440354"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
   Você pode especificar quais itens do Microsoft Office Outlook exibem uma região de formulário por meio da associação a região do formulário com a classe message de cada item. Por exemplo, se você deseja acrescentar uma região de formulário na parte inferior de um item de email, você pode associar a região do formulário com o `IPM.Note` classe de mensagem.
@@ -45,14 +45,14 @@ ms.locfileid: "56625524"
  Você também pode especificar os nomes das classes de mensagem personalizada. Classes de mensagem personalizada identificam formulários personalizados que você define no Outlook.
 
 > [!NOTE]
->  Para conhecer as regiões de formulário Substituir tudo e substituição, você pode especificar um novo nome de classe de mensagem personalizada. Você não precisa usar o nome de classe de mensagem de um formulário personalizado existente. O nome da classe de mensagem personalizada deve ser exclusivo. Uma maneira de garantir que o nome seja exclusivo é usar uma convenção de nomenclatura semelhante ao seguinte: \<*StandardMessageClassName*>.\< *Empresa*>.\< *MessageClassName*> (por exemplo: `IPM.Note.Contoso.MyMessageClass`).
+> Para conhecer as regiões de formulário Substituir tudo e substituição, você pode especificar um novo nome de classe de mensagem personalizada. Você não precisa usar o nome de classe de mensagem de um formulário personalizado existente. O nome da classe de mensagem personalizada deve ser exclusivo. Uma maneira de garantir que o nome seja exclusivo é usar uma convenção de nomenclatura semelhante ao seguinte: \<*StandardMessageClassName*>.\< *Empresa*>.\< *MessageClassName*> (por exemplo: `IPM.Note.Contoso.MyMessageClass`).
 
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associar uma região de formulário uma classe de mensagem do Outlook
  Há duas maneiras de associar uma região de formulário uma classe de mensagem:
 
--   Use o **nova região de formulário do Outlook** assistente.
+- Use o **nova região de formulário do Outlook** assistente.
 
--   Aplica atributos de classe.
+- Aplica atributos de classe.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Use o Assistente de nova região de formulário do Outlook
  Na página final do **nova região de formulário do Outlook** assistente, você pode selecionar as classes de mensagem padrão e digite os nomes das classes de mensagem personalizada que você deseja associar à região do formulário.
@@ -76,7 +76,7 @@ ms.locfileid: "56625524"
   O **nova região de formulário do Outlook** assistente valida o formato da entrada quando você clica em **concluir**.
 
 > [!NOTE]
->  O **nova região de formulário do Outlook** assistente não verifique se os nomes de classe de mensagem que você fornece estão corretos ou válido.
+> O **nova região de formulário do Outlook** assistente não verifique se os nomes de classe de mensagem que você fornece estão corretos ou válido.
 
  Quando você concluir o assistente, o **nova região de formulário do Outlook** assistente se aplica a atributos à classe de região do formulário que contém os nomes de classe de mensagem especificada. Você também pode aplicar esses atributos manualmente.
 
@@ -101,7 +101,7 @@ ms.locfileid: "56625524"
   Quando você compila o projeto, o Visual Studio valida o formato dos nomes de classe de mensagem.
 
 > [!NOTE]
->  Visual Studio não verifique se os nomes de classe de mensagem que você fornece estão corretos ou válido.
+> Visual Studio não verifique se os nomes de classe de mensagem que você fornece estão corretos ou válido.
 
 ## <a name="see-also"></a>Consulte também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)

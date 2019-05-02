@@ -3,20 +3,20 @@ title: Modelo de projeto do Serviço de Nuvem do Azure para Python
 description: O Visual Studio fornece modelos para serviços de nuvem do Azure escritos em Python, incluindo implantação de função, dependências e solução de problemas.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: aefb2ae530d5d48158faf1645b4d1eadd299aec6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a47ef2bc1b75985639d0c5eb43bba516ff9b8088
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785109"
 ---
 # <a name="azure-cloud-service-projects-for-python"></a>Projetos do serviço de nuvem do Azure para Python
 
@@ -24,7 +24,7 @@ O Visual Studio fornece modelos para ajudá-lo a começar a criar Serviços de N
 
 Um [serviço de nuvem](https://docs.microsoft.com/azure/cloud-services/) consiste em várias *funções de trabalho* e *funções web*, sendo que cada uma executa uma tarefa separada conceitualmente, mas pode ser replicada separadamente em máquinas virtuais, conforme necessário para colocação em escala. As funções web fornecem hospedagem para aplicativos Web de front-end. Quanto ao Python, qualquer estrutura Web que dá suporte ao WSGI pode ser usada para gravam um aplicativo desse tipo (com suporte no [Modelo de Projeto Web](python-web-application-project-templates.md)). As funções de trabalho destinam-se a processos de execução longa que não interagem diretamente com os usuários. Normalmente, elas usam pacotes dentro do pacote "azure", que é instalado com o [ `pip install azure` ](https://pypi.org/project/azure).
 
-Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
+Este artigo contém detalhes sobre o modelo de projeto e outros tipos de suporte no Visual Studio 2017 e posterior (as versões anteriores são semelhantes, mas com algumas diferenças). Para obter mais informações sobre como trabalhar com o Azure no Python, visite a [Central de desenvolvedores do Azure Python](https://docs.microsoft.com/python/azure/?view=azure-python/?view=azure-python).
 
 ## <a name="create-a-project"></a>Criar um projeto
 

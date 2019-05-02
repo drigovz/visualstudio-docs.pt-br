@@ -1,5 +1,5 @@
 ---
-title: Como adicionar, atualizar ou remover uma referência de WCF Data Services
+title: 'Como: Adicionar, atualizar ou remover uma referência do WCF Data Service'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 201f04852dea58d51cae10e98429f7b5f2bc6951
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402919"
 ---
-# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como adicionar, atualizar ou remover uma referência de serviço de dados do WCF
+# <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como: Adicionar, atualizar ou remover uma referência do WCF Data Service
 Um *referência de serviço* permite que um projeto para acessar um ou mais [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use o **adicionar referência de serviço** caixa de diálogo para pesquisar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] na solução atual, localmente, em uma rede local ou na Internet.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -30,24 +30,24 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
 
 ### <a name="to-add-a-reference-to-an-external-service"></a>Para adicionar uma referência para um serviço externo
 
-1.  Na **Gerenciador de soluções**, clique no nome do projeto ao qual você deseja adicionar o serviço e, em seguida, clique em **Add Service Reference**.
+1. Na **Gerenciador de soluções**, clique no nome do projeto ao qual você deseja adicionar o serviço e, em seguida, clique em **Add Service Reference**.
 
      O **adicionar referência de serviço** caixa de diálogo é exibida.
 
-2.  No **endereço** caixa, digite a URL para o serviço e, em seguida, clique em **vá** para procurar o serviço. Se o serviço implementar segurança de nome e a senha do usuário, você será solicitado um nome de usuário e senha.
+2. No **endereço** caixa, digite a URL para o serviço e, em seguida, clique em **vá** para procurar o serviço. Se o serviço implementar segurança de nome e a senha do usuário, você será solicitado um nome de usuário e senha.
 
     > [!NOTE]
-    >  Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.
+    > Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.
 
      Você também pode selecionar a URL do **endereço** lista, que armazena as URLs de 15 anteriores na qual os metadados de serviço válido foi encontrado.
 
      Uma barra de progresso exibe quando a pesquisa está sendo executada. Você pode parar a pesquisa a qualquer momento clicando **parar**.
 
-3.  No **Services** lista, expanda o nó para o serviço que você deseja usar e selecione um conjunto de entidades.
+3. No **Services** lista, expanda o nó para o serviço que você deseja usar e selecione um conjunto de entidades.
 
-4.  No **Namespace** , digite o namespace que você deseja usar para a referência.
+4. No **Namespace** , digite o namespace que você deseja usar para a referência.
 
-5.  Clique em **Okey** para adicionar a referência ao projeto.
+5. Clique em **Okey** para adicionar a referência ao projeto.
 
      Um cliente de serviço (proxy) é gerado e metadados que descrevem o serviço é adicionado para o *App. config* arquivo.
 
@@ -74,7 +74,7 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
 
 ### <a name="to-update-a-service-reference"></a>Para atualizar uma referência de serviço
 
--   Na **Gerenciador de soluções**, a referência de serviço com o botão direito e, em seguida, clique em **Update Service Reference**.
+- Na **Gerenciador de soluções**, a referência de serviço com o botão direito e, em seguida, clique em **Update Service Reference**.
 
      Uma caixa de diálogo de progresso exibe enquanto a referência é atualizada de seu local original e o cliente do serviço for gerado novamente para refletir quaisquer alterações nos metadados.
 
@@ -83,12 +83,12 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
 
 ### <a name="to-remove-a-service-reference"></a>Para remover uma referência de serviço
 
--   Na **Gerenciador de soluções**, a referência de serviço com o botão direito e, em seguida, clique em **excluir**.
+- Na **Gerenciador de soluções**, a referência de serviço com o botão direito e, em seguida, clique em **excluir**.
 
      O cliente do serviço será removido da solução e os metadados que descrevem o serviço serão removido do *App. config* arquivo.
 
     > [!NOTE]
-    >  Qualquer código que faz referência a referência de serviço deve ser removido manualmente.
+    > Qualquer código que faz referência a referência de serviço deve ser removido manualmente.
 
 ## <a name="see-also"></a>Consulte também
 

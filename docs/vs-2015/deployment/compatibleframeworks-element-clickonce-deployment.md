@@ -1,14 +1,9 @@
 ---
 title: '&lt;compatibleFrameworks&gt; elemento (implantação do ClickOnce) | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -19,13 +14,13 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 051fd3eea0ffab2a7c5f088538d7208c8286d1d6
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: fc6446f30f9429811c5382e0a49eca16b63cd9b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49176575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422960"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; elemento (implantação do ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +28,18 @@ ms.locfileid: "49176575"
 Identifica as versões do .NET Framework em que este aplicativo pode instalar e executar.  
   
 > [!NOTE]
->  [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) não oferece suporte a `compatibleFrameworks` elemento ao salvar um manifesto de aplicativo que já foi assinado com um certificado usando [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Em vez disso, você deve usar [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) não oferece suporte a `compatibleFrameworks` elemento ao salvar um manifesto de aplicativo que já foi assinado com um certificado usando [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Em vez disso, você deve usar [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ## <a name="syntax"></a>Sintaxe  
   
 ```  
 <compatibleFrameworks  
-      SupportUrl>   
+      SupportUrl>   
    <framework  
       targetVersion  
       profile  
       supportedRuntime  
-   />   
+   />   
 </ compatibleFrameworks>  
 ```  
   
@@ -82,6 +77,3 @@ Identifica as versões do .NET Framework em que este aplicativo pode instalar e 
   
 ## <a name="see-also"></a>Consulte também  
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)
-
-
-

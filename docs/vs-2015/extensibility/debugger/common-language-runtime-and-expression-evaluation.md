@@ -1,33 +1,28 @@
 ---
 title: Common Language Runtime e avaliação de expressão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, and common language runtime
 ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 85cf4d2029dc25dc993fcc32b89fdc60bd91171d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b75cb1b0604f3611c0e51c6f458939433d2a5470
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51779340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383523"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime e avaliação de expressão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Compiladores, como Visual Basic e c# (pronuncia-se C-sharp), que direcionam o tempo de execução de linguagem comum (CLR), produzem MSIL Microsoft Intermediate Language (), que é posterior compilados para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você pretende integrar a linguagem de programação proprietária ao IDE do Visual Studio, você pode optar por compilar para MSIL e, portanto, não precisa escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) que é capaz de avaliar expressões dentro do contexto de sua linguagem de programação.  
   
@@ -44,4 +39,3 @@ ms.locfileid: "51779340"
   
 ## <a name="see-also"></a>Consulte também  
  [Escrevendo um avaliador de expressão do CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

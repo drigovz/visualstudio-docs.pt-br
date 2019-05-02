@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975515"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Como: Criar um tipo que permite valor nulo no Designer de Classe
 
@@ -29,9 +29,9 @@ Um *tipo que permite valor nulo* é um tipo de valor que é estendido, para que 
 
 Os tipos que permitem valor nulo são instâncias da estrutura <xref:System.Nullable%601>. Cada instância de um tipo que permite valor nulo tem duas propriedades públicas somente leitura, `HasValue` e `Value`:
 
--   `HasValue` é do tipo `bool` e indica se a variável contém um valor definido. `True` significa que a variável contém um valor não nulo. É possível testar um valor definido usando uma instrução como `if (x.HasValue)` ou `if (y != null)`.
+- `HasValue` é do tipo `bool` e indica se a variável contém um valor definido. `True` significa que a variável contém um valor não nulo. É possível testar um valor definido usando uma instrução como `if (x.HasValue)` ou `if (y != null)`.
 
--   `Value` é do mesmo tipo que o tipo subjacente. Se `HasValue` for `True`, `Value` conterá um valor significativo. Se `HasValue` for `False`, o acesso a `Value` gerará uma exceção de operação inválida.
+- `Value` é do mesmo tipo que o tipo subjacente. Se `HasValue` for `True`, `Value` conterá um valor significativo. Se `HasValue` for `False`, o acesso a `Value` gerará uma exceção de operação inválida.
 
 Por padrão, ao declarar uma variável como um tipo que permite valor nulo, ela não terá nenhum valor definido (`HasValue` é `False`), além do valor padrão de seu tipo de valor subjacente.
 
@@ -43,26 +43,26 @@ Para obter mais informações sobre tipos que permitem valor nulo no C#, confira
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Para adicionar um tipo que permite valor nulo usando o Designer de Classe
 
-1.  No Diagrama de Classe, expanda uma classe existente ou crie uma classe.
+1. No Diagrama de Classe, expanda uma classe existente ou crie uma classe.
 
-2.  Para adicionar uma classe ao projeto, no menu **Diagrama de Classe**, clique em **Adicionar** > **Adicionar Classe**.
+2. Para adicionar uma classe ao projeto, no menu **Diagrama de Classe**, clique em **Adicionar** > **Adicionar Classe**.
 
-3.  Para expandir a forma da classe, no menu **Diagrama de Classe**, clique em **Expandir**.
+3. Para expandir a forma da classe, no menu **Diagrama de Classe**, clique em **Expandir**.
 
-4.  Selecione a forma da classe. No menu **Diagrama de Classe**, clique em **Adicionar** > **Campo**. Um novo campo que tem o nome padrão **Campo** será exibido na forma da classe e também na Janela **Detalhes da Classe**.
+4. Selecione a forma da classe. No menu **Diagrama de Classe**, clique em **Adicionar** > **Campo**. Um novo campo que tem o nome padrão **Campo** será exibido na forma da classe e também na Janela **Detalhes da Classe**.
 
-5.  Na coluna **Nome** da Janela **Detalhes da Classe** (ou na própria forma da classe), altere o nome do novo campo para um nome válido e significativo.
+5. Na coluna **Nome** da Janela **Detalhes da Classe** (ou na própria forma da classe), altere o nome do novo campo para um nome válido e significativo.
 
-6.  Na coluna **Tipo** da janela **Detalhes da Classe**, declare o tipo como um tipo que permite valor nulo, especificando o seguinte:
+6. Na coluna **Tipo** da janela **Detalhes da Classe**, declare o tipo como um tipo que permite valor nulo, especificando o seguinte:
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Para adicionar um tipo que permite valor nulo usando o Editor de Código
 
-1.  Adicione uma classe ao projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Adicionar Classe**.
+1. Adicione uma classe ao projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Adicionar Classe**.
 
-2.  No arquivo .cs ou .vb da nova classe, adicione um ou mais tipos que permitem valor nulo da nova classe à declaração de classe.
+2. No arquivo .cs ou .vb da nova classe, adicione um ou mais tipos que permitem valor nulo da nova classe à declaração de classe.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ Para obter mais informações sobre tipos que permitem valor nulo no C#, confira
     End Class
     ```
 
-3.  No Modo de Exibição de Classe, arraste o ícone da nova classe para a superfície de design do Designer de Classe. Uma forma de classe é exibida no diagrama de classe.
+3. No Modo de Exibição de Classe, arraste o ícone da nova classe para a superfície de design do Designer de Classe. Uma forma de classe é exibida no diagrama de classe.
 
-4.  Expanda os detalhes da forma de classe e mova o ponteiro do mouse sobre os membros da classe. A dica de ferramenta exibe a declaração de cada membro.
+4. Expanda os detalhes da forma de classe e mova o ponteiro do mouse sobre os membros da classe. A dica de ferramenta exibe a declaração de cada membro.
 
-5.  Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.
+5. Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.
 
 ## <a name="see-also"></a>Consulte também
 

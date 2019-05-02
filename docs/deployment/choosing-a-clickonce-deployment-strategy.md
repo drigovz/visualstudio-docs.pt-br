@@ -15,31 +15,31 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406672"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Escolher uma estratégia de implantação do ClickOnce
 Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]; a estratégia escolhida depende principalmente do tipo de aplicativo que você está implantando. As três estratégias de implantação são as seguintes:
 
--   Instalação da Web ou de um compartilhamento de rede
+- Instalação da Web ou de um compartilhamento de rede
 
--   Instalação de um CD
+- Instalação de um CD
 
--   Iniciação do aplicativo da Web ou de um compartilhamento de rede
+- Iniciação do aplicativo da Web ou de um compartilhamento de rede
 
     > [!NOTE]
-    >  Além de selecionar uma estratégia de implantação, talvez você também deseje selecionar uma estratégia para fornecer atualizações do aplicativo. Para obter mais informações, consulte [escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > Além de selecionar uma estratégia de implantação, talvez você também deseje selecionar uma estratégia para fornecer atualizações do aplicativo. Para obter mais informações, consulte [escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Instalar da Web ou de um compartilhamento de rede
  Quando você usa essa estratégia, o aplicativo é implantado em um servidor Web ou compartilhamento de arquivos de rede. Quando um usuário final desejar instalar o aplicativo, ele clicará em um ícone em uma página da Web ou clicará duas vezes em um ícone no compartilhamento de arquivos. O aplicativo é baixado e, em seguida, instalado e iniciado no computador do usuário final. Os itens são adicionados ao menu **Iniciar** e **Adicionar** ou **Remover Programas** no Painel de Controle.
 
  Como essa estratégia depende de conectividade de rede, ela funcionará melhor para aplicativos que serão implantados para usuários com acesso a uma rede local ou a uma conexão com a Internet de alta velocidade.
 
- Se você implantar o aplicativo da Web, poderá passar argumentos para o aplicativo quando ele for ativado por meio de uma URL. Para obter mais informações, consulte [como: recuperar informações de cadeia de caracteres de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Você não poderá passar argumentos para um aplicativo ativado ao usar qualquer um dos outros métodos descritos neste documento.
+ Se você implantar o aplicativo da Web, poderá passar argumentos para o aplicativo quando ele for ativado por meio de uma URL. Para obter mais informações, confira [Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Você não poderá passar argumentos para um aplicativo ativado ao usar qualquer um dos outros métodos descritos neste documento.
 
  Para habilitar essa estratégia de implantação em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], clique em **Da Web** ou **De um caminho UNC ou compartilhamento de arquivos** na página **Como Instalado** do Assistente de Publicação.
 
@@ -49,7 +49,7 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
  Esta estratégia é como a primeira, exceto que o aplicativo se comporta como um aplicativo Web. Quando o usuário clica em um link em uma página da Web (ou clica duas vezes em um ícone no compartilhamento de arquivos), o aplicativo é iniciado. Quando os usuários fecharem o aplicativo, ele não estará mais disponível em seus computadores locais; nada será adicionado ao menu **Iniciar** ou **Adicionar ou Remover Programas** no **Painel de Controle**.
 
 > [!NOTE]
->  Tecnicamente, o aplicativo será baixado e instalado em um cache de aplicativos no computador local, exatamente como um aplicativo Web é baixado no cache da Web. Como no cache da Web, os arquivos serão eventualmente removidos do cache de aplicativos. No entanto, a percepção do usuário é que o aplicativo está sendo executado da Web ou do compartilhamento de arquivos.
+> Tecnicamente, o aplicativo será baixado e instalado em um cache de aplicativos no computador local, exatamente como um aplicativo Web é baixado no cache da Web. Como no cache da Web, os arquivos serão eventualmente removidos do cache de aplicativos. No entanto, a percepção do usuário é que o aplicativo está sendo executado da Web ou do compartilhamento de arquivos.
 
  Essa estratégia funciona melhor para aplicativos que são usados com pouca frequência, por exemplo, uma ferramenta de benefícios de funcionários que é normalmente executada apenas uma vez por ano.
 
@@ -74,5 +74,5 @@ Há três estratégias diferentes para implantar um aplicativo [!INCLUDE[ndptecc
 ## <a name="see-also"></a>Consulte também
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Escolher uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Como: publicar um aplicativo ClickOnce com o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Como: Publicar um aplicativo ClickOnce com o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

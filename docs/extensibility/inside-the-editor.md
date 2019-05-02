@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861759"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 
@@ -202,19 +202,19 @@ A exibição de texto formata um <xref:Microsoft.VisualStudio.Text.ITextSnapshot
 
 Os recursos do editor são projetados para que a definição do recurso é separada da sua implementação. O editor inclui os seguintes recursos:
 
--   Classificadores e marcas
+- Classificadores e marcas
 
--   Adornos
+- Adornos
 
--   Projeção
+- Projeção
 
--   Estrutura de tópicos
+- Estrutura de tópicos
 
--   Associações de mouse e a chave
+- Associações de mouse e a chave
 
--   Operações e os primitivos
+- Operações e os primitivos
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Classificadores e marcas
 
@@ -262,7 +262,7 @@ Adornos incorporados são gráficos que fazem parte do modo de exibição de tex
 
 Pop-up adornos são gráficos que aparecem em uma pequena janela acima da exibição de texto, por exemplo, as dicas de ferramenta.
 
-###  <a name="projection"></a> Projeção
+### <a name="projection"></a> Projeção
 
 Projeção é uma técnica para a criação de um tipo diferente de buffer de texto que não armazena texto, mas em vez disso, combina texto dos outros buffers de texto. Por exemplo, um buffer de projeção pode ser usado para concatenar o texto de dois outros buffers e apresentará o resultado como se estivesse em apenas um buffer ou ocultar partes do texto em um buffer. Um buffer de projeção pode agir como um buffer de origem para outro buffer de projeção. Um conjunto de buffers que são relacionados por projeção pode ser construído para reorganizar o texto de várias maneiras diferentes. (Esse conjunto também é conhecido como um *grafo de buffer*.) O recurso de estrutura de tópicos de texto do Visual Studio é implementado por meio de um buffer de projeção para ocultar o texto recolhido e editor do Visual Studio para as páginas ASP.NET usa a projeção para oferecer suporte a idiomas incorporados como Visual Basic e c#.
 

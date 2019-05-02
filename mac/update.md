@@ -3,24 +3,24 @@ title: Atualizando o Visual Studio para Mac
 description: Instruções para atualizar o Visual Studio para Mac e acessar as versões prévias.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 6f60b32b66dc2c33a0ecbcd71f80fd613d273b64
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 8cadbeba73afadbffb32aeaca04ad3de4df8733b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827471"
 ---
 # <a name="update-visual-studio-for-mac"></a>Atualizar o Visual Studio para Mac
 
 O Visual Studio para Mac distribui as atualizações para o IDE e estruturas compatíveis regularmente. Essas atualizações podem incluir novos recursos, melhorias e correções de bugs.
 
-O Visual Studio para Mac fornece três canais para obter essas versões mais recentes:
+O Visual Studio para Mac fornece dois canais para obter essas versões mais recentes:
 
 * **Estável** –Fornece atualizações amplamente testadas. Esse canal é o recomendado para obter a melhor experiência de desenvolvimento.
-* **Beta** / **Alfa** – Fornece acesso antecipado às atualizações candidatas a lançamento no Canal Estável. Essas versões podem não ser confiáveis para uso diário.
+* **Versão prévia** – Fornece acesso antecipado às atualizações que são candidatas para liberação no Canal Estável. Essas versões podem não ser confiáveis para uso diário.
 
 ## <a name="checking-for-updates"></a>Verificar se há atualizações
 
@@ -51,6 +51,10 @@ Para começar a instalar as atualizações, selecione o botão **Reiniciar e ins
 ![Botão para começar a instalar as atualizações](media/update-image4.png)
 
 Dependendo dos componentes que precisam ser instalados, poderá ser necessário aceitar licenças adicionais ou inserir o nome de usuário e senha do administrador do computador.
+
+## <a name="troubleshooting"></a>Solução de problemas
+
+Se tiver problemas com o atualizador, siga as etapas no guia [Solução de problemas do atualizador](updater-troubleshooting.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,14 +1,9 @@
 ---
 title: Designer de manifesto do VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - VS.Sdk.VsixManifestEditor
 helpviewer_keywords:
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72639c3fbef6b8e297d9e81a7383b2ee8220d896
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 450d306718906c3b76bf05982594045e7fd215f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387565"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
  Para abrir o **Designer de manifesto do VSIX**, localize um arquivo vsixmanifest no **Gerenciador de soluções**e abra o arquivo. Se o arquivo não contém XML válido, o designer de manifesto não será aberto.  
   
 > [!NOTE]
->  Vsixmanifest é a saída para vsixmanifest quando o pacote é compilado.  
+> Vsixmanifest é a saída para vsixmanifest quando o pacote é compilado.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  O **Designer de manifesto do VSIX** contém quatro seções que correspondem a esses elementos de nível superior do esquema:  
@@ -71,7 +66,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   **Linguagem**  
   Especifica o idioma padrão para o pacote, que corresponde aos dados textuais no manifesto. O `Language` atributo segue a convenção de código localidade common language runtime (CLR) para assemblies de recursos, por exemplo, en-us, en, fr-fr. Por padrão, o valor é neutro; Isso significa que o pacote será executado em qualquer versão de idioma do Visual Studio.  
   
-  **licença**  
+  **License**  
   Especifica o arquivo de texto que contém a licença de usuário, caso haja algum.  
   
   **Ícone**  
@@ -80,7 +75,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   **Imagem de visualização**  
   Especifica o arquivo de gráficos (. png,. bmp,. JPEG,. ico) que contém a imagem de visualização a ser exibido no **Extension Manager**, se houver uma imagem de visualização. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, **Extension Manager** usa uma imagem padrão.  
   
-  **Marcas**  
+  **Tags**  
   Adiciona as marcas de texto a ser usado para dicas de pesquisa.  
   
   **Notas de Versão**  
@@ -128,7 +123,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
   
 - Microsoft.VisualStudio.Package  
   
-- Mefcomponent  
+- Microsoft.VisualStudio.MefComponent  
   
 - Microsoft.VisualStudio.ToolboxControl  
   
@@ -158,4 +153,3 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema 2.0 de extensão do VSIX](../extensibility/vsix-extension-schema-2-0-reference.md)   
  [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)
-

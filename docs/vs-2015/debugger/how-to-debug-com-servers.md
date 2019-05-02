@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar servidores COM | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar servidores COM | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.com
 dev_langs:
@@ -27,15 +22,15 @@ ms.assetid: 9f013c2b-0306-4b34-ba7f-d4445a874da1
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 527356ba788e7e69ba3e1542e3b98ead8efbf331
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51727199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088308"
 ---
-# <a name="how-to-debug-com-servers"></a>Como depurar servidores COM
+# <a name="how-to-debug-com-servers"></a>Como: Depurar servidores COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de problemas que nem sempre são fáceis de resolver.  
@@ -44,17 +39,14 @@ Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de proble
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Para depurar um aplicativo de servidor sem informações de contêiner  
   
-1.  Inicie a depuração do servidor como um aplicativo normal.  
+1. Inicie a depuração do servidor como um aplicativo normal.  
   
-2.  Defina pontos de interrupção como desejados.  
+2. Defina pontos de interrupção como desejados.  
   
-3.  Inicie o aplicativo de contêiner.  
+3. Inicie o aplicativo de contêiner.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)   
- [Como: depurar COM clientes e servidores usando a depuração RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
- [Servidor COM e a depuração de contêiner](../debugger/com-server-and-container-debugging.md)   
+ [Como: Depurar clientes e servidores COM usando a depuração RPC](../debugger/how-to-debug-com-clients-and-servers-using-rpc-debugging.md)   
+ [Depuração de servidor e contêiner COM](../debugger/com-server-and-container-debugging.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

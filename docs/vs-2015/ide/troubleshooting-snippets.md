@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7fe80ad6c3983b35f97071093428bf7f356292b0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f1a623d5ee5edee376819ad6c385aead5003f8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429002"
 ---
 # <a name="troubleshooting-snippets"></a>Solucionando problemas de snippets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,15 +29,15 @@ Normalmente, problemas com snippets de código IntelliSense são causados por do
   
 ### <a name="the-snippet-cannot-be-dragged-from-file-explorer-to-a-visual-studio-source-file"></a>O snippet não pode ser arrastado do Explorador de Arquivos para um arquivo de origem do Visual Studio  
   
--   Talvez o XML no arquivo de snippet esteja corrompido. O **Editor XML** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode localizar problemas na estrutura XML.  
+- Talvez o XML no arquivo de snippet esteja corrompido. O **Editor XML** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode localizar problemas na estrutura XML.  
   
--   Talvez o arquivo de snippet pode não estar em conformidade com o esquema de snippet. O **Editor XML** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode localizar problemas na estrutura XML.  
+- Talvez o arquivo de snippet pode não estar em conformidade com o esquema de snippet. O **Editor XML** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode localizar problemas na estrutura XML.  
   
 ### <a name="the-code-has-compiler-errors-that-are-not-highlighted"></a>O código tem erros de compilador que não estão realçados  
   
--   Talvez esteja faltando uma referência de projeto. Examine a documentação sobre o snippet. Se a referência não for encontrada no computador, será necessário instalá-la. Inserir um snippet deve adicionar ao projeto quaisquer referências necessárias. Se o snippet estiver sem as informações de referência, isso pode ser relatado ao criador do snippet como um erro.  
+- Talvez esteja faltando uma referência de projeto. Examine a documentação sobre o snippet. Se a referência não for encontrada no computador, será necessário instalá-la. Inserir um snippet deve adicionar ao projeto quaisquer referências necessárias. Se o snippet estiver sem as informações de referência, isso pode ser relatado ao criador do snippet como um erro.  
   
--   Talvez uma variável esteja indefinida. Variáveis indefinidas em um snippet devem ser realçadas. Caso contrário, isso pode ser relatado ao criador do snippet como um erro.  
+- Talvez uma variável esteja indefinida. Variáveis indefinidas em um snippet devem ser realçadas. Caso contrário, isso pode ser relatado ao criador do snippet como um erro.  
   
 ## <a name="see-also"></a>Consulte também  
  [Snippets de código](../ide/code-snippets.md)

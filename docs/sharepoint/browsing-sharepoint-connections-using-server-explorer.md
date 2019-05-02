@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c9f64e2cebf267e9be1773b37a5827c876961a0d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dfde37125b78e2ff8077712321b3a19816582cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387801"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>Procurar conexões do SharePoint usando o Gerenciador de servidores
   Agora você pode procurar conexões locais do SharePoint no **Gerenciador de servidores**. Ao usar essa técnica, você pode navegar através dos componentes de um site do SharePoint em seu sistema. Componentes do site do SharePoint, como definições de listas e tipos de conteúdo, são exibidos em um nó que é denominado **conexões do SharePoint** na exibição de árvore da **Gerenciador de servidores**. Para exibir **Gerenciador de servidores**, na barra de menus, escolha **exibição** > **Server Explorer**. Além de exibir os componentes do site do SharePoint, você pode remover itens, exibir suas propriedades ou atualizar a exibição de árvore usando comandos no menu de atalho.
 
 > [!IMPORTANT]
->  Para procurar um site do SharePoint, você deve ser um administrador do conjunto de sites do SharePoint, e você deve estar executando o Visual Studio como administrador do computador local. Caso contrário, o site será exibido na **Gerenciador de servidores**, mas você não pode expandir o nó. Para verificar se você for um administrador do conjunto de sites, abra o site em um navegador da web, abra o **ações do Site** menu, escolha **permissões de Site**e, em seguida, no **permissões: Site de equipe** , escolha o **os administradores de coleção de sites** comando da **gerenciar** grupo na faixa de opções. Seu nome será exibido na caixa de texto, se você for um administrador de conjunto de sites. Se o **administradores de coleção de sites** comando não aparece no grupo Gerenciar da faixa de opções, você não for um administrador para o conjunto de sites e você deve obter as permissões adequadas de administrador do site.
+> Para procurar um site do SharePoint, você deve ser um administrador do conjunto de sites do SharePoint, e você deve estar executando o Visual Studio como administrador do computador local. Caso contrário, o site será exibido na **Gerenciador de servidores**, mas você não pode expandir o nó. Para verificar se você for um administrador do conjunto de sites, abra o site em um navegador da web, abra o **ações do Site** menu, escolha **permissões de Site**e, em seguida, no **permissões: Site de equipe** , escolha o **os administradores de coleção de sites** comando da **gerenciar** grupo na faixa de opções. Seu nome será exibido na caixa de texto, se você for um administrador de conjunto de sites. Se o **administradores de coleção de sites** comando não aparece no grupo Gerenciar da faixa de opções, você não for um administrador para o conjunto de sites e você deve obter as permissões adequadas de administrador do site.
 
 ## <a name="server-explorer-nodes"></a>Nós do Gerenciador de servidor
  Todos os componentes de um site do SharePoint é representado por um nó na **Gerenciador de servidores** em modo de exibição de árvore **conexões do SharePoint**. Por exemplo, sites do SharePoint padrão incluem um tipo de conteúdo chamado discussão, que representa um tipo de discussão que exibe a **discussões** página do site do SharePoint. O tipo de conteúdo de discussão contém vários campos. Para exibir esses campos em **Gerenciador de servidores**, expanda o **ContentTypes** nó e, em seguida, o **discussão** nó. Em que ele são vários nós de campo, como título, assunto da discussão e corpo.

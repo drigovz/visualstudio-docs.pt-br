@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99df6eddcdd6f02e4cce8410762d3c0b9f00f29a
-ms.sourcegitcommit: 845442e2b515c3ca1e4e47b46cc1cef4df4f08d8
+ms.openlocfilehash: d09ad8644c30be76c38cf4b819d09ee1c470cb39
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/20/2019
-ms.locfileid: "56450315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793433"
 ---
 # <a name="create-applications-in-bidirectional-languages"></a>Criar aplicativos em idiomas bidirecionais
 
@@ -28,11 +28,11 @@ ms.locfileid: "56450315"
 
 ## <a name="types-of-applications-that-support-bidirectional-languages"></a>Tipos de aplicativos que dão suporte a idiomas bidirecionais
 
--  Aplicativos do Windows
+- Aplicativos do Windows
 
-   É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para obter mais informações, confira [Suporte bidirecional para aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/bidirectional-support-for-windows-forms-applications).
+   É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para obter mais informações, confira [Suporte bidirecional para aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
 
--  Aplicativos Web
+- Aplicativos Web
 
    Os serviços Web dão suporte ao recebimento e ao envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a essas funcionalidades bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para saber mais, confira [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
 

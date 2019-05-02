@@ -1,29 +1,24 @@
 ---
-title: 'Como: identificar símbolos em uma biblioteca | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Identificar símbolos em uma biblioteca | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Call Browser tool, identifying symbols in the library
 - Call Browser tool
 ms.assetid: 8fb0de61-71e7-42d1-8b41-2ad915474384
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 34b5480aebbe59ef9b023bf4350b2bdd35725c47
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f154c63940189f1a6035246fb7f72ec27be677f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786698"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116245"
 ---
-# <a name="how-to-identify-symbols-in-a-library"></a>Como: identificar símbolos em uma biblioteca
+# <a name="how-to-identify-symbols-in-a-library"></a>Como: Identificar símbolos em uma biblioteca
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Ferramentas de navegação de símbolo exibem exibições hierárquicas de símbolos. Os símbolos representam objetos, namespaces, classes, membros de classe e outros elementos de linguagem.  
@@ -61,7 +56,7 @@ N1
   
 #### <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obter canônico e apresentação de informações de formulários  
   
-1.  Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> .  
+1. Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> .  
   
      O Gerenciador de objeto chama esse método para obter a lista de nós contidos no caminho canônico do símbolo.  
   
@@ -84,12 +79,11 @@ N1
   
     ```  
   
-2.  Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> .  
+2. Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> .  
   
      O Gerenciador de objeto chama esse método para obter a lista de nós contidos no caminho do símbolo de apresentação.  
   
 ## <a name="see-also"></a>Consulte também  
  [Suporte a ferramentas de navegação de símbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)   
- [Como: registrar uma biblioteca com o Gerenciador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
- [Como expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
-
+ [Como: Registrar uma biblioteca com o Gerenciador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
+ [Como: Expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

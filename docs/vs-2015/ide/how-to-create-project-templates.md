@@ -17,38 +17,38 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a43fe714028b7211904a0bb993d2964bfe612ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416914"
 ---
-# <a name="how-to-create-project-templates"></a>Como criar modelos de projeto
+# <a name="how-to-create-project-templates"></a>Como: Criar modelos de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este procedimento permite criar um modelo usando o assistente de **Exportação de Modelo**, que empacota seu modelo em um arquivo .zip. Também é possível criar modelos no formato de arquivo VSIX para implantação aprimorada usando a extensão do Assistente para Exportação de Modelo, usando modelos incluídos no [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], ou você pode, ainda, criar modelos manualmente.  
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Para criar um modelo de projeto personalizado com o Assistente de Exportação de Modelo padrão  
   
-1.  Criar um projeto.  
+1. Criar um projeto.  
   
     > [!NOTE]
-    >  Use apenas caracteres identificadores válidos para nomear um projeto que será a origem de um modelo. Um modelo exportado de um projeto nomeado com caracteres inválidos pode causar erros de compilação em projetos futuros baseados no modelo. Para obter mais informações sobre caracteres identificadores válidos, consulte [Nomes de Elementos Declarados](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
+    > Use apenas caracteres identificadores válidos para nomear um projeto que será a origem de um modelo. Um modelo exportado de um projeto nomeado com caracteres inválidos pode causar erros de compilação em projetos futuros baseados no modelo. Para obter mais informações sobre caracteres identificadores válidos, consulte [Nomes de Elementos Declarados](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
-2.  Edite o projeto até que ele esteja pronto para ser exportado como um modelo.  
+2. Edite o projeto até que ele esteja pronto para ser exportado como um modelo.  
   
-3.  Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre substituição de parâmetro, consulte [como: Substituir parâmetros em um modelo.](../ide/how-to-substitute-parameters-in-a-template.md)  
+3. Conforme apropriado, edite os arquivos de código para indicar em que ponto a substituição de parâmetro deve ocorrer. Para obter mais informações sobre substituição de parâmetro, consulte [como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  No menu **Arquivo**, clique em **Exportar Modelo**. O assistente de **Exportação de Modelo** é aberto.  
+4. No menu **Arquivo**, clique em **Exportar Modelo**. O assistente de **Exportação de Modelo** é aberto.  
   
-5.  Clique em **Modelo de Projeto**.  
+5. Clique em **Modelo de Projeto**.  
   
-6.  Se você tiver mais de um projeto em sua solução atual, selecione os projetos que deseja exportar como um modelo.  
+6. Se você tiver mais de um projeto em sua solução atual, selecione os projetos que deseja exportar como um modelo.  
   
-7.  Clique em **Avançar**.  
+7. Clique em **Avançar**.  
   
-8.  Selecione um ícone e uma imagem de visualização para o modelo. Eles aparecerão na caixa de diálogo **Novo Projeto**.  
+8. Selecione um ícone e uma imagem de visualização para o modelo. Eles aparecerão na caixa de diálogo **Novo Projeto**.  
   
 9. Insira um nome e uma descrição para o modelo.  
   
@@ -58,4 +58,4 @@ Este procedimento permite criar um modelo usando o assistente de **Exportação 
   
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+ [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)

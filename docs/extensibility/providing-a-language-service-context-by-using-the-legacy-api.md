@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 66e8da821657dc1aefd8563f3826891cb75e1792
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62805956"
 ---
 # <a name="provide-a-language-service-context-by-using-the-legacy-api"></a>Fornecer um contexto de serviço de linguagem, usando a API herdada
 Há duas opções para um serviço de linguagem fornecer o contexto de usuário usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo: fornecer um contexto de marcador de texto, ou fornecer todo o contexto de usuário. As diferenças entre cada são descritas aqui.

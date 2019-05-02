@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b7538342cad63d820992fe699e65386f4f3c8e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db9aaeb48095b058abb0deefa342598eefeed1b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970210"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do Devenv
 
@@ -67,6 +67,7 @@ As seguintes opções de linha de comando apresentam o IDE e realizam a tarefa d
 |[/Command](command-devenv-exe.md)|Inicia o IDE e executa o comando especificado.<br /><br /> `devenv /command "nav https://docs.microsoft.com/"`|
 |[/DebugExe](debugexe-devenv-exe.md)|Carrega um executável C++ no controle do depurador. Esta opção não está disponível nos executáveis do Visual Basic ou C#. Para obter mais informações, consulte [Automatically start a process in the debugger (Iniciar automaticamente um processo no depurador)](../../debugger/debug-multiple-processes.md#BKMK_Automatically_start_an_process_in_the_debugger).<br /><br /> `devenv /debugexe mysln.exe`|
 |[/Diff](diff.md)|Compara dois arquivos. Usa quatro parâmetros: *SourceFile*, *TargetFile*, *SourceDisplayName* (opcional) e *TargetDisplayName* (opcional).<br /><br /> `devenv /diff File1 File2 Alias1 Alias2`|
+|[/DoNotLoadProjects](donotloadprojects-devenv-exe.md)|Abre a solução especificada sem carregar projetos.<br /><br /> `devenv /donotloadprojects mysln.sln`|
 |[/Edit](edit-devenv-exe.md)|Abre os arquivos especificados em uma instância em execução deste aplicativo. Se não houver nenhuma instância em execução, uma nova instância será iniciada com um layout de janela simplificado.<br /><br /> `devenv /edit File1 File2`|
 |[/LCID ou /L](lcid-devenv-exe.md)|Define o idioma padrão do IDE. Se a linguagem especificada não estiver incluída em sua instalação do Visual Studio, essa configuração será ignorada.<br /><br /> `devenv /l 1033`|
 |[/Log](log-devenv-exe.md)|Inicia o Visual Studio e registra toda a atividade no arquivo de log.<br /><br /> `devenv /log mylogfile.xml`|

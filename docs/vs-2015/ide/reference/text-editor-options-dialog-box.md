@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788093"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649063"
 ---
 # <a name="text-editor-options-dialog-box"></a>Caixa de diálogo Opções do Editor de Texto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 As opções do editor na caixa de diálogo **Opções** fornecem maneiras de personalizar a aparência e o comportamento do editor.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como alterar fontes e cores no editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Como: alterar fontes e cores no editor](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Explica como alterar as cores e as fontes do editor.  
   
- [Como gerenciar a quebra automática de linha no editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
+ [Como: gerenciar a quebra automática de linha no editor](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Explica as opções de quebra automática de linha.  
   
- [Como exibir números de linha no editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Como: exibir números de linha no editor](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Explica como ativar números de linha.  
   
- [Como exibir URLs como links no editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Como: exibir URLs como links no editor](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Explica como formatar URLs para que elas sejam exibidas como links.  
   
  [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)  

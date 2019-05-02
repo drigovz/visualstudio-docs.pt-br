@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427396"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Como: Importar uma página mestra ou tema
   Você pode dar o páginas no site do SharePoint uma aparência consistente, criando e usando páginas mestras e temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não fornece modelos para esses elementos, mas você pode criá-los no SharePoint Designer e, em seguida, importá-los para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [bloco de construção: Interface do usuário e páginas](http://go.microsoft.com/fwlink/?LinkID=182095) no site da Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Para importar uma página mestra ou tema
 
-1.  No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie ou abra um projeto do SharePoint.
+1. No [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie ou abra um projeto do SharePoint.
 
      Para obter informações sobre como criar um projeto do SharePoint, consulte [SharePoint modelos de item de projeto e projeto](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
+2. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-3.  No **Adicionar Novo Item** diálogo caixa, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3. No **Adicionar Novo Item** diálogo caixa, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
 
-4.  Na lista de modelos do SharePoint, escolha o **módulo** modelo e, em seguida, especifique um nome para o módulo.
+4. Na lista de modelos do SharePoint, escolha o **módulo** modelo e, em seguida, especifique um nome para o módulo.
 
      Um módulo contém arquivos (por exemplo, página mestra ou arquivos de tema) para implantação em um local que você especifica no SharePoint.
 
-5.  No módulo, exclua o arquivo padrão, que é chamado *txt*.
+5. No módulo, exclua o arquivo padrão, que é chamado *txt*.
 
-6.  Escolha o nó do módulo.
+6. Escolha o nó do módulo.
 
-7.  Na barra de menus, escolha **Project** > **Add Existing Item**e, em seguida, escolha o arquivo de tema ou página mestra.
+7. Na barra de menus, escolha **Project** > **Add Existing Item**e, em seguida, escolha o arquivo de tema ou página mestra.
 
      Arquivos de página mestra tem uma extensão. master e arquivos de tema têm uma extensão. thmx.
 
-8.  Se você tiver adicionado uma página mestra, altere sua **resolução de conflitos de implantação** definir como **automático** nas propriedades do módulo.
+8. Se você tiver adicionado uma página mestra, altere sua **resolução de conflitos de implantação** definir como **automático** nas propriedades do módulo.
 
     > [!NOTE]
-    >  Podem ocorrer erros se o nome da página mestra for igual ao nome de uma página mestra existente que está marcado como página padrão do mestre ou página mestra personalizada. Para obter informações sobre como resolver esse problema, consulte [passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Podem ocorrer erros se o nome da página mestra for igual ao nome de uma página mestra existente que está marcado como página padrão do mestre ou página mestra personalizada. Para obter informações sobre como resolver esse problema, consulte [passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. O módulo, abra *Elements. XML*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "56635144"
      Um valor de **Web** significa que a página mestra se aplica somente ao site que é especificado no momento no projeto. Um valor de **Site** significa que a página mestra se aplica à coleção de site atual, que inclui todos os subsites e web raiz. Não se aplicam os outros valores.
 
     > [!NOTE]
-    >  Como os temas se aplicam somente ao nível de coleção de sites, é recomendável que você não definir o escopo de um tema para qualquer coisa diferente de **Site**. Podem ocorrer erros se um tema é usado em um subsite.
+    > Como os temas se aplicam somente ao nível de coleção de sites, é recomendável que você não definir o escopo de um tema para qualquer coisa diferente de **Site**. Podem ocorrer erros se um tema é usado em um subsite.
 
 12. Na barra de menus, escolha **construir** > **implantar solução**.
 

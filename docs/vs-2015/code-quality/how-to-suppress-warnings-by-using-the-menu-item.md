@@ -1,14 +1,9 @@
 ---
-title: 'Como: suprimir avisos usando o Item de Menu | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Suprimir Avisos usando o Item de Menu | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - warnings, suppressing
 - code analysis, suppressing warnings
@@ -17,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1c756a5ab6516d78f5370622555898c98658e8b3
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426563"
 ---
-# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como suprimir avisos usando o item de menu
+# <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como: Suprimir avisos usando o item de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-OBSERVAÇÃO]
->  No código-fonte supressão não há suporte para projetos de site.  
+[OBSERVAÇÃO]
+> No código-fonte supressão não há suporte para projetos de site.  
   
  Você pode usar a janela de análise de código para suprimir avisos da análise de código. Suprimir um aviso não é igual a desabilitá-lo. Quando você suprime um aviso, ele se aplica somente a uma instância particular da violação. Outras violações do aviso mesmo ainda serão relatadas na janela lista de erros.  
   
@@ -38,16 +33,13 @@ OBSERVAÇÃO]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Para suprimir um aviso usando o item de menu  
   
-1.  Sobre o **Analyze** menu, escolha **Windows** e, em seguida, escolha **análise de código**.  
+1. Sobre o **Analyze** menu, escolha **Windows** e, em seguida, escolha **análise de código**.  
   
-2.  No **análise de código** janela, selecione suprimir o aviso.  
+2. No **análise de código** janela, selecione suprimir o aviso.  
   
-3.  Escolha ações e, em seguida, escolha **suprimir mensagem (NS)** e, em seguida, escolha **no código-fonte** ou **no arquivo de supressão do projeto**.  
+3. Escolha ações e, em seguida, escolha **suprimir mensagem (NS)** e, em seguida, escolha **no código-fonte** ou **no arquivo de supressão do projeto**.  
   
      O aviso específico é suprimido e o aviso é exibido na janela análise de código com um tachado.  
   
 > [!NOTE]
->  Supressões que não têm um destino aparecem no arquivo de supressão global.
-
-
-
+> Supressões que não têm um destino aparecem no arquivo de supressão global.

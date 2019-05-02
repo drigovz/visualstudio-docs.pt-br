@@ -2,7 +2,6 @@
 title: IDispatchEx::GetMemberProperties | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 51e01ef3fa6d5e0611875f6402b79e53f8c83cac
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: f607e06fe3c898a6839c0bbd2d51edee1f0ffb2c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54088186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000804"
 ---
 # <a name="idispatchexgetmemberproperties"></a>IDispatchEx::GetMemberProperties
 Recupera as propriedades do membro.  
@@ -98,6 +97,6 @@ BSTR bstrName;
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDispatchEx](../../winscript/reference/idispatchex-interface.md)   
+ [IDispatchEx Interface](../../winscript/reference/idispatchex-interface.md)   
  [IDispatchEx::GetDispID](../../winscript/reference/idispatchex-getdispid.md)   
  [IDispatchEx::GetNextDispID](../../winscript/reference/idispatchex-getnextdispid.md)

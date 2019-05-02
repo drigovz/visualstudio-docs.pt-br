@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9f535c1d79b1a37a5a25ff3e6f6d424eb4bc631d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439342"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos .tlb e resolve essas bibliotecas de tipo em locais no disco.  
   
 ## <a name="parameters"></a>Parâmetros  
@@ -47,10 +46,10 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos .tlb e r
 |`ResolvedAssemblyReferences`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica as referências do assembly resolvidas.|  
 |`ResolvedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica os arquivos totalmente qualificados no disco que correspondem aos locais físicos das bibliotecas de tipo que foram fornecidas como entrada para esta tarefa.|  
 |`ResolvedModules`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.|  
-|`SdkToolsPath`|Parâmetro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) opcional.<br /><br /> Se `ExecuteAsTool` for `true`, esse parâmetro deverá ser definido como o caminho de ferramentas do SDK para a versão da estrutura de destino.|  
-|`StateFile`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica o arquivo de cache dos carimbos de hora/hora de componente COM. Se não existir, cada execução regenerará todos os invólucros.|  
-|`TargetFrameworkVersion`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica a versão da estrutura de destino do projeto.<br /><br /> O padrão é `String.Empty`. o que significa que não há nenhuma filtragem para uma referência com base na estrutura de destino.|  
-|`TargetProcessorArchitecture`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica a arquitetura do processador de destino preferencial. Passado para o sinalizador de /machine tlbimp.exe após a tradução.<br /><br /> O valor do parâmetro deve ser um membro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
+|`SdkToolsPath`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]() opcional.<br /><br /> Se `ExecuteAsTool` for `true`, esse parâmetro deverá ser definido como o caminho de ferramentas do SDK para a versão da estrutura de destino.|  
+|`StateFile`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o arquivo de cache dos carimbos de hora/hora de componente COM. Se não existir, cada execução regenerará todos os invólucros.|  
+|`TargetFrameworkVersion`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica a versão da estrutura de destino do projeto.<br /><br /> O padrão é `String.Empty`. o que significa que não há nenhuma filtragem para uma referência com base na estrutura de destino.|  
+|`TargetProcessorArchitecture`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica a arquitetura do processador de destino preferencial. Passado para o sinalizador de /machine tlbimp.exe após a tradução.<br /><br /> O valor do parâmetro deve ser um membro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
 |`TypeLibFiles`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica o caminho do arquivo de biblioteca de tipo para referências COM. Itens incluídos nesse parâmetro podem conter metadados do item. Para obter mais informações, consulte a seção “Metadados do Item TypeLibFiles” abaixo.|  
 |`TypeLibNames`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os nomes da biblioteca de tipos a serem resolvidos. Itens incluídos nesse parâmetro devem conter alguns metadados do item. Para obter mais informações, consulte a seção “Metadados do Item TypeLibNames” abaixo.|  
 |`WrapperOutputDirectory`|Parâmetro `String` opcional.<br /><br /> O local no disco no qual o assembly de interoperabilidade gerado é colocado. Se esses metadados de item não forem especificados, a tarefa usará o caminho absoluto do diretório em que o arquivo de projeto está localizado.|  
@@ -66,17 +65,17 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos .tlb e r
 |`VersionMajor`|Metadados obrigatórios do item.<br /><br /> A versão principal da biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|  
 |`VersionMinor`|Metadados obrigatórios do item.<br /><br /> A versão secundária da biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa falhará.|  
 |`LocaleIdentifier`|Metadados opcionais do item.<br /><br /> O LCID (ID de localidade) da biblioteca de tipos. Isso é especificado como um valor de 32 bits que identifica o idioma humano preferido por um usuário, região ou aplicativo. Se esses metadados de item não forem especificados, a tarefa usará uma ID de localidade de “0”.|  
-|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
+|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
   
 ## <a name="typelibfiles-item-metadata"></a>Metadados de Item TypeLibFiles  
  A tabela a seguir descreve os metadados de item disponíveis para itens passados para o parâmetro `TypeLibFiles`.  
   
 |Metadados|Descrição|  
 |--------------|-----------------|  
-|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
+|`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
   
 > [!NOTE]
->  Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.  
+> Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.  
   
 ## <a name="remarks"></a>Comentários  
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Tarefa de Classe Base](../msbuild/task-base-class.md).  

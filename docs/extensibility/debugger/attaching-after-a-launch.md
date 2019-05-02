@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1b0a34505cf32e0e3fd4dc18bfeab4588856dba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409955"
 ---
 # <a name="attach-after-a-launch"></a>Anexar após uma inicialização
 Depois que um programa for iniciado, a sessão de depuração está pronta para anexar o mecanismo de depuração (DE) para esse programa.
@@ -23,12 +23,12 @@ Depois que um programa for iniciado, a sessão de depuração está pronta para 
 ## <a name="design-decisions"></a>Decisões de design
  Porque a comunicação é mais fácil dentro de um espaço de endereço compartilhado, você deve escolher entre duas abordagens de design: definir a comunicação entre a sessão de depuração e o DE. Ou então, defina a comunicação entre a Alemanha e o programa. Escolha entre os seguintes:
 
--   Se faz mais sentido para configurar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Esse design deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.
+- Se faz mais sentido para configurar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Esse design deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.
 
--   Se faz mais sentido para configurar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução cria conjunta DE. Esse design deixa o SDM em um espaço de endereço DE, o ambiente de tempo de execução e o programa juntos em outro. Esse design é típico de a DE que é implementada com um interpretador executar linguagens de script.
+- Se faz mais sentido para configurar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução cria conjunta DE. Esse design deixa o SDM em um espaço de endereço DE, o ambiente de tempo de execução e o programa juntos em outro. Esse design é típico de a DE que é implementada com um interpretador executar linguagens de script.
 
     > [!NOTE]
-    >  Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.
+    > Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.
 
 ## <a name="implementation"></a>Implementação
  Programaticamente, quando o Gerenciador de sessão de depuração (SDM) recebe primeiro a [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) o objeto que representa o programa a ser iniciado, ele chama o [anexar](../../extensibility/debugger/reference/idebugprogram2-attach.md) método, passando-lhe um [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objeto, que é posteriormente usado para passar eventos de depuração de volta para o SDM. O `IDebugProgram2::Attach` , em seguida, chama um método de [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. Para obter mais informações sobre como o SDM recebe o `IDebugProgram2` interface, consulte [notificar a porta](../../extensibility/debugger/notifying-the-port.md).

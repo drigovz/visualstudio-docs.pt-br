@@ -9,25 +9,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 75d1a9fc5ac7fa35afb53c89f5af016ed909d11e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e31d9c01ded7754fd10419f3fd0e18d9616a51eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814118"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 Ferramentas de linguagem específica do domínio (ferramentas DSL), que são hospedados no Visual Studio, permitem que você criar uma linguagem específica de domínio e, em seguida, gerar tudo o que os usuários devem ter para criar modelos que são baseados na linguagem.
 
  As ferramentas a seguir estão incluídas nas Ferramentas DSL:
 
--   um assistente de projeto que usa modelos de solução diferentes para ajudá-lo a começar a desenvolver sua linguagem específica de domínio.
+- um assistente de projeto que usa modelos de solução diferentes para ajudá-lo a começar a desenvolver sua linguagem específica de domínio.
 
--   um designer gráfico para criar e editar sua definição de linguagem específica de domínio.
+- um designer gráfico para criar e editar sua definição de linguagem específica de domínio.
 
--   um mecanismo de validação que verifica se a definição de linguagem específica de domínio está bem formada e exibe erros e avisos quando há problemas.
+- um mecanismo de validação que verifica se a definição de linguagem específica de domínio está bem formada e exibe erros e avisos quando há problemas.
 
--   um gerador de código que usa uma definição de linguagem específica de domínio como entrada e produz o código-fonte como saída.
+- um gerador de código que usa uma definição de linguagem específica de domínio como entrada e produz o código-fonte como saída.
 
 ## <a name="the-dsl-tools-solution"></a>A solução de Ferramentas DSL
  O Assistente de Designer Específico de Domínio fornece os seguintes modelos de solução:

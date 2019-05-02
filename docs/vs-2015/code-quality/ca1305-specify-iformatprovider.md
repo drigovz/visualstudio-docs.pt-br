@@ -1,14 +1,9 @@
 ---
 title: 'CA1305: Especificar IFormatProvider | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyIFormatProvider
 - CA1305
@@ -20,14 +15,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 084fd28106a3ac5af9a40d46cf687d4982f53690
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49834281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048095"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: especificar IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49834281"
 ## <a name="cause"></a>Causa
  Um método ou construtor chama um ou mais membros que têm sobrecargas que aceitam um <xref:System.IFormatProvider?displayProperty=fullName> parâmetro e o método ou construtor não chama a sobrecarga que utiliza o <xref:System.IFormatProvider> parâmetro. Essa regra ignora chamadas para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] métodos que são documentados como ignorando o <xref:System.IFormatProvider> parâmetro e, além disso, os seguintes métodos:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrição da Regra
  Quando um <xref:System.Globalization.CultureInfo?displayProperty=fullName> ou <xref:System.IFormatProvider> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membros escolhem a cultura padrão e a formatação com base em suposições que podem não estar corretas para seu código. Para certificar-se de que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
@@ -80,10 +75,7 @@ ms.locfileid: "49834281"
  **4/6/1900:12 12H15**
 **04/06/1900 12:15:12**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1304: especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+ [CA1304: Especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Consulte também
- [NIB: Usando a classe CultureInfo](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB: Usando a classe CultureInfo](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

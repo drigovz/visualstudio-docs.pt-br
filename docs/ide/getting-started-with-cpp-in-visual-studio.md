@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1d8647c7a5c35a405c2c54f7580b7b5b12c0cf18
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962693"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -26,7 +26,17 @@ Complete este guia de início rápido para se familiarizar com várias ferrament
 
 Você não precisa estar familiarizado com C++ para concluir este guia de início rápido, mas precisa conhecer um pouco de programação geral e de conceitos de depuração. A documentação do Visual Studio não ensina como programar em C++. Um bom guia para os recursos de aprendizagem de C++ é a página [Introdução](https://isocpp.org/get-started) no site de C++ da ISO.
 
-Para acompanhar, você precisará de uma cópia do Visual Studio 2017 versão 15.3 ou posterior, com a carga de trabalho **Desenvolvimento para a área de trabalho com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+::: moniker range="vs-2017"
+
+Para acompanhar, você precisará de uma cópia do Visual Studio 2017 com a carga de trabalho **Desenvolvimento para desktop com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para acompanhar, você precisará de uma cópia do Visual Studio 2019 com a carga de trabalho **Desenvolvimento para desktop com C++** instalada. Para obter um guia rápido de instalação, consulte [Install C++ support in Visual Studio](/cpp/build/vscpp-step-0-installation) (Suporte para a instalação de C++ no Visual Studio).
+
+::: moniker-end
 
 ## <a name="create-a-console-app"></a>Criar um aplicativo do console
 
@@ -42,9 +52,9 @@ Depois de abrir o Visual Studio, você poderá ver as três partes básicas do I
 
 ::: moniker range=">=vs-2019"
 
-Depois que você abrir o Visual Studio, a janela **Iniciar** será exibida primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento.
+Depois que você abrir o Visual Studio, a janela de início será exibida primeiro. Selecione **Continuar sem código** para abrir o ambiente de desenvolvimento.
 
-Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa **Início Rápido**, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
+Você verá as três partes básicas do IDE: janelas de ferramentas, menus e barras de ferramentas, além do espaço da janela principal. As janelas de ferramentas são encaixadas à esquerda e à direita da janela do aplicativo. A caixa de pesquisa, a barra de menus e a barra de ferramentas padrão estão na parte superior. Quando você carrega uma solução ou um projeto, os editores e designers são exibidos no espaço central da janela do aplicativo. Ao desenvolver um aplicativo, você passará a maior parte do seu tempo nessa área central.
 
 ::: moniker-end
 

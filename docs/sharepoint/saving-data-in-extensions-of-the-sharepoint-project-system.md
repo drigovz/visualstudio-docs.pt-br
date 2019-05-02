@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eba3f66e55c06efad2a540b1be7d3ad66ddfa3d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 52b04490a646c7ced27d4a2d7f2344e27cbbae8b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827239"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>Salvar os dados nas extensões do sistema de projeto do SharePoint
   Quando você estende o sistema de projeto do SharePoint, você pode salvar os dados de cadeia de caracteres que persiste depois que um projeto do SharePoint é fechado. Os dados são normalmente associados a um item de projeto específico ou com o projeto em si.
@@ -35,9 +35,9 @@ ms.locfileid: "56599669"
 ## <a name="save-data-that-is-associated-with-a-project"></a>Salvar os dados que está associados um projeto
  Quando você tem dados de nível de projeto, como o valor de uma propriedade que você adicionar a projetos do SharePoint, você pode salvar os dados para o arquivo de projeto (o *. csproj* arquivo ou *. vbproj* arquivo) ou a opção de usuário do projeto arquivo (a *. csproj* arquivo ou *. vbproj* arquivo). O arquivo que você optar por salvar os dados em depende de como você deseja que os dados a ser usado:
 
--   Se você deseja que os dados estejam disponíveis para todos os desenvolvedores que abrir o projeto do SharePoint, salve os dados para o arquivo de projeto. Este arquivo sempre é verificado bancos de dados de controle do código-fonte, para que os dados deste arquivo estão disponíveis para outros desenvolvedores que fazer check-out do projeto.
+- Se você deseja que os dados estejam disponíveis para todos os desenvolvedores que abrir o projeto do SharePoint, salve os dados para o arquivo de projeto. Este arquivo sempre é verificado bancos de dados de controle do código-fonte, para que os dados deste arquivo estão disponíveis para outros desenvolvedores que fazer check-out do projeto.
 
--   Se você deseja que os dados estejam disponíveis apenas para o desenvolvedor atual que abriu o projeto do SharePoint no Visual Studio, salve os dados para o arquivo de opção de usuário do projeto. Esse arquivo não é normalmente verificado bancos de dados de controle do código-fonte, para que os dados neste arquivo não estão disponíveis para outros desenvolvedores que fazer check-out do projeto.
+- Se você deseja que os dados estejam disponíveis apenas para o desenvolvedor atual que abriu o projeto do SharePoint no Visual Studio, salve os dados para o arquivo de opção de usuário do projeto. Esse arquivo não é normalmente verificado bancos de dados de controle do código-fonte, para que os dados neste arquivo não estão disponíveis para outros desenvolvedores que fazer check-out do projeto.
 
 ### <a name="save-data-to-the-project-file"></a>Salvar dados no arquivo de projeto
  Para salvar dados no arquivo de projeto, converter um <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> do objeto para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> do objeto e, em seguida, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> método. O exemplo de código a seguir demonstra como usar esse método para salvar o valor de uma propriedade de projeto para o arquivo de projeto. Para ver esse exemplo no contexto de um exemplo maior, consulte [como: Adicionar uma propriedade a projetos do SharePoint](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md).

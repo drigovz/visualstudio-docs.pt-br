@@ -1,30 +1,24 @@
 ---
-title: 'Como: criar um documento XML com base em um esquema XSD | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um documento XML com base em um esquema XSD | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 193b195f-e918-4c79-a1a1-8096a1433bde
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: bbecacc0729c936489c05d3bb59260341a08d314
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 623da37807e0fd61041bfeb9ab411ce0cb96d4b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091117"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como criar um documento XML baseado em um esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: Criar um documento XML baseado em um esquema XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em seu arquivo de esquema XML (XSD).  
   
  Você pode usar esta opção para os seguintes situações:  
@@ -49,9 +43,9 @@ O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em se
   
 ### <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para gerar um documento de instância XML baseado no arquivo XSD  
   
-1.  Siga as etapas em [como: criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.  
+2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.  
   
      Quando você selecionar essa opção, o arquivo PurchaseOrder.xml com o conteúdo XML de exemplo a seguir será gerado e aberto no Editor de XML:  
   
@@ -84,6 +78,3 @@ O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em se
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhando com os dados XML](../xml-tools/working-with-xml-data.md)
-
-
-

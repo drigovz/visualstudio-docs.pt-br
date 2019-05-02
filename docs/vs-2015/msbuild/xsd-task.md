@@ -21,29 +21,28 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c8e38959e9835ee26f283c59128749239178307
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778718"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114958"
 ---
 # <a name="xsd-task"></a>Tarefa XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arquivos de classe ou de esquema com base em uma origem.  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa **XSD**.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Parâmetro **String** opcional.  
   
      Uma lista de opções, conforme especificado na linha de comando. Por exemplo, "*/option1 /option2 /option#*". Use esse parâmetro para especificar opções não representadas por nenhum outro parâmetro da tarefa **XSD**.  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      Parâmetro **String** opcional.  
   
@@ -51,11 +50,11 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
      Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.  
   
-    -   **classes** - **/classes**  
+    - **classes** - **/classes**  
   
-    -   **dataset** - **/dataset**  
+    - **dataset** - **/dataset**  
   
--   **Linguagem**  
+- **Linguagem**  
   
      Parâmetro **String** opcional.  
   
@@ -63,25 +62,25 @@ Encapsula a ferramenta de definição de esquema XML (xsd.exe), a qual gera arqu
   
      Escolha **CS** (C#, que é o padrão), **VB** (Visual Basic) ou **JS** (JScript). Você também pode especificar um nome totalmente qualificado para uma classe que implementa `System.CodeDom.Compiler.CodeDomProvider Class`  
   
--   **Namespace**  
+- **Namespace**  
   
      Parâmetro **String** opcional.  
   
      Especifica o namespace de tempo de execução para os tipos gerados.  
   
--   **Sources**  
+- **Sources**  
   
      Parâmetro `ITaskItem[]` obrigatório.  
   
      Define uma matriz de itens de arquivo de origem do MSBuild que pode ser consumida e emitida por tarefas.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Parâmetro **Boolean** opcional.  
   
      Se `true`, impedirá a exibição da mensagem de direitos autorais e de número de versão quando a tarefa for iniciada.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Parâmetro **String** opcional.  
   

@@ -1,14 +1,9 @@
 ---
 title: Extrair Interface refatoração (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -20,13 +15,13 @@ ms.assetid: 7d0aa225-3b33-4331-9652-5a67cac6f3d0
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: e7c3af675155cf3d47d82457aadbfb6327895d4f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49279897"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116739"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refatoração Extrair Interface (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
   
 ### <a name="to-use-extract-interface"></a>Usar extrair Interface  
   
-1.  Crie um aplicativo de console chamado `ExtractInterface`e, em seguida, substitua `Program` com o código a seguir  
+1. Crie um aplicativo de console chamado `ExtractInterface`e, em seguida, substitua `Program` com o código a seguir  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -50,7 +45,7 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
     }  
     ```  
   
-2.  Com o cursor posicionado no `MethodB`e clique em **extrair Interface** sobre o **refatorar** menu.  
+2. Com o cursor posicionado no `MethodB`e clique em **extrair Interface** sobre o **refatorar** menu.  
   
      O **extrair Interface** caixa de diálogo é exibida.  
   
@@ -58,9 +53,9 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
   
      Você pode também com o botão direito do mouse, aponte para **refatorar**e, em seguida, clique em **extrair Interface** para exibir o **extrair Interface** caixa de diálogo.  
   
-3.  Clique em **Selecionar tudo**.  
+3. Clique em **Selecionar tudo**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
      Você verá o novo arquivo, IProtoA.cs e o código a seguir:  
   

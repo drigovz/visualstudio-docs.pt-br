@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569858"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome de metadados de item|Descrição|
 |---------------|-----------------|
 |Nome|Cadeia de caracteres opcional. O nome de exibição do componente.|
-|Guid|Cadeia de caracteres opcional. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Cadeia de caracteres opcional. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
-|VersionMinor|Cadeia de caracteres opcional. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
+|Guid|Cadeia de caracteres obrigatória. Um GUID para o componente, no formato {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Cadeia de caracteres obrigatória. A parte principal do número de versão do componente. Por exemplo, “5” se o número de versão completo for “5,46”.|
+|VersionMinor|Cadeia de caracteres obrigatória. A parte secundária do número de versão do componente. Por exemplo, “46” se o número de versão completo for “5,46”.|
 |LCID|Cadeia de caracteres opcional. O LocaleID do componente.|
 |WrapperTool|Cadeia de caracteres opcional. O nome da ferramenta wrapper usada no componente, por exemplo, “tlbimp”.|
 |Isolada|Booliano opcional. Especifica se o componente é um componente sem registro.|
@@ -76,11 +76,10 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 |Nome|Cadeia de caracteres opcional. O nome de exibição da referência.|
 |Projeto|Cadeia de caracteres opcional. Um GUID para a referência, no formato {12345678-1234-1234-1234-1234567891234}.|
 |Pacote|Cadeia de caracteres opcional. O caminho do arquivo de projeto que está sendo referenciado.|
-|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#Reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. Assume o padrão de `true`.|
+|ReferenceOutputAssembly|Booliano opcional. Se estiver definido como `false`, não inclui a saída do projeto referenciado como uma [referência](#reference) deste projeto, mas ainda garante que o outro projeto seja compilado antes desse. Assume o padrão de `true`.|
 
 ### <a name="compile"></a>Compilar
  Representa os arquivos de origem do compilador.
-
 
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
@@ -92,7 +91,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Representa os recursos a serem inseridos no assembly gerado.
-
 
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
@@ -108,7 +106,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Conteúdo
  Representa os arquivos não compilados no projeto, mas pode ser inserido ou publicado junto com ele.
 
-
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
@@ -123,7 +120,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="none"></a>Nenhum
  Representa arquivos que não devem ter função no processo de build.
-
 
 | Nome de metadados de item | Descrição |
 |-----------------------| - |

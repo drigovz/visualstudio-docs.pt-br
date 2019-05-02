@@ -1,26 +1,21 @@
 ---
 title: Criando tabela de comando XML (. Arquivos VSCT) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085890"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
  Quando você cria um novo VSPackage, executando o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modelo de pacote, o modelo gera um arquivo. VSCT com os elementos necessários para um comando de menu, a janela da ferramenta ou o editor personalizado, dependendo de suas seleções. Esse arquivo. VSCT, em seguida, pode ser modificado para atender aos requisitos de um VSPackage específico. Para obter exemplos de como modificar um arquivo. VSCT, consulte os exemplos [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).  
   
- Para criar um arquivo. VSCT em branco, consulte [como: criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criar, adicionar elementos, atributos e valores XML para o arquivo para descrever o layout do item de comando. Para um esquema XML detalhado, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+ Para criar um arquivo. VSCT em branco, consulte [como: Criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Depois de criar, adicionar elementos, atributos e valores XML para o arquivo para descrever o layout do item de comando. Para um esquema XML detalhado, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Diferenças entre arquivos. ctc e. VSCT  
  Enquanto o significado por trás de marcas XML em um arquivo. VSCT é os mesmos, como aqueles em que o agora preterido o formato de arquivo. CTC, sua implementação é um pouco diferente.  
@@ -71,7 +66,7 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
   
   O novo compilador, vsct.exe, compila arquivos. ctc e. VSCT. O compilador ctc.exe antigo, no entanto, não reconhece nem compilar arquivos. VSCT.  
   
-  Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Você pode usar o compilador vsct.exe para converter um arquivo CTO já existente em um arquivo. VSCT. Para obter mais informações sobre isso, consulte [como: Criar um. Arquivo VSCT de um existente. Arquivo CTO](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Os elementos do arquivo. VSCT  
  A tabela de comando tem a hierarquia e os elementos a seguir:  
@@ -105,29 +100,28 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
 ## <a name="vsct-file-design-guidelines"></a>. Diretrizes de Design do arquivo VSCT  
  Para desenvolver com êxito um arquivo. VSCT, siga estas diretrizes.  
   
--   Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.  
+- Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.  
   
--   Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.  
+- Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.  
   
--   Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.  
+- Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.  
   
--   Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.  
+- Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.  
   
--   Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.  
+- Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.  
   
--   Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
+- Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
   
--   Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [comandos elemento](../../extensibility/commands-element.md).  
+- Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [comandos elemento](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Notas de arquivo VSCT  
  Se você fizer alterações em um arquivo. VSCT depois de compilá-lo e colocá-lo em uma DLL de satélite nativo, você deve executar **devenv.exe /setup /nosetupvstemplates**. Isso força os recursos de VSPackage especificados no registro experimental para ser lidos novamente e o banco de dados interno que descreve [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] seja recriado.  
   
  Durante o desenvolvimento, é possível que vários projetos de VSPackage seja criado e registrado na seção do registro experimental que pode levar a bagunça confusa no IDE. Para corrigir isso, você pode redefinir o hive experimental para as configurações padrão para remover todos os VSPackages e as alterações que fez o IDE. Para redefinir o hive experimental, use a ferramenta de CreateExpInstance.exe que vem com o SDK do Visual Studio. Você pode encontrá-lo em  
   
- **% PROGRAMFILES (x86) %\Visual Studio \<versão > SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
+ **%PROGRAMFILES(x86)%\Visual Studio \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe**  
   
  Execute a ferramenta usando a linha de comando **CreateExpInstance /Reset**. Lembre-se de que essa ferramenta remove do hive experimental todos os os VSPackages registrados não são normalmente instalados com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
  [Ampliar menus e comandos](../../extensibility/extending-menus-and-commands.md)
-

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e398125f467f4e5211573e96cd53bc0bc8d6dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553724"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>Elemento WizardExtension (modelos do Visual Studio)
 Contém os elementos de registro para personalizar o Assistente de modelo.
@@ -91,4 +91,4 @@ Contém os elementos de registro para personalizar o Assistente de modelo.
 ## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

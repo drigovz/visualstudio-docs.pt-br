@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a336463a3a7d8003c949242ad2f295a76633c894
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972129"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Começar a programar personalizações no nível de documento para Excel
   Se você estiver apenas começando criar personalizações em nível de documento do Microsoft Office Excel usando o Visual Studio, aqui está o que você precisa saber.
@@ -44,11 +44,11 @@ ms.locfileid: "56603788"
 
  Para mais informações, consulte os seguintes tópicos:
 
--   [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)
+- [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)
 
--   [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
+- [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
 
--   [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)
+- [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a>Personalizar a interface do usuário do Excel
  A maioria das soluções do Microsoft Office modificar a interface do usuário (IU) do aplicativo do Office para fornecer aos usuários interagir com a solução de alguma maneira. Há muitas maneiras em que você pode modificar a interface do usuário do Excel usando uma personalização no nível de documento. Por exemplo, você pode adicionar controles à faixa de opções, ou você pode exibir um painel de ações. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).

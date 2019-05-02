@@ -1,11 +1,8 @@
 ---
 title: AddToCollection&lt;T&gt; Designer de atividade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.AddToCollection`1.UI
@@ -13,13 +10,13 @@ ms.assetid: f7fc0702-164e-4370-8946-bb2f9f9384b7
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 009f9f90c5cd22e5cf0da4240d008ce3dc1bb4ca
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4e63486ca7e057fdd1bfe0de73e44dc4951462e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49304416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977213"
 ---
 # <a name="addtocollectionlttgt-activity-designer"></a>AddToCollection&lt;T&gt; Designer de atividade
 O **AddToCollection\<T >** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.AddToCollection%601> atividade.  
@@ -45,6 +42,6 @@ O **AddToCollection\<T >** designer de atividade é usado para criar e configura
 ## <a name="see-also"></a>Consulte também  
  [coleção](../workflow-designer/collection-activity-designers.md)   
  [AddToCollection\<T > Designer de atividade](../workflow-designer/addtocollection-t-activity-designer.md)   
- [ClearCollection\<T >](../workflow-designer/clearcollection-t-activity-designer.md)   
- [ExistsInCollection\<T >](../workflow-designer/existsincollection-t-activity-designer.md)   
- [RemoveFromCollection\<T >](../workflow-designer/removefromcollection-t-activity-designer.md)
+ [ClearCollection\<T>](../workflow-designer/clearcollection-t-activity-designer.md)   
+ [ExistsInCollection\<T>](../workflow-designer/existsincollection-t-activity-designer.md)   
+ [RemoveFromCollection\<T>](../workflow-designer/removefromcollection-t-activity-designer.md)

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 50cafe4ef571034f496ec3e21a530c02b5d13a95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 782f5b422058d1564bde04251a92d95145f6edf3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567270"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 
@@ -28,25 +28,25 @@ Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Ca
 
 ## <a name="to-databind-a-lookup-control"></a>Vincular dados de um controle de pesquisa
 
-1.  Com o projeto aberto, abra o **fontes de dados** janela escolhendo **exibição** > **Other Windows** > **defontesdedados**.
+1. Com o projeto aberto, abra o **fontes de dados** janela escolhendo **exibição** > **Other Windows** > **defontesdedados**.
 
     > [!NOTE]
     > Tabelas de pesquisa requerem que as duas tabelas relacionadas ou objetos estejam disponíveis na **fontes de dados** janela. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 
-2.  Expanda os nós na **fontes de dados** janela até que você possa ver a tabela pai e todas as suas colunas e a tabela filho relacionada e todas as suas colunas.
+2. Expanda os nós na **fontes de dados** janela até que você possa ver a tabela pai e todas as suas colunas e a tabela filho relacionada e todas as suas colunas.
 
     > [!NOTE]
     > O nó da tabela filho é o nó que aparece como um nó filho expansível na tabela pai.
 
-3.  Altere o tipo subjacente da tabela filho para **detalhes** selecionando **detalhes** na lista de controle no nó da tabela filho. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+3. Altere o tipo subjacente da tabela filho para **detalhes** selecionando **detalhes** na lista de controle no nó da tabela filho. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
-4.  Localize o nó que relaciona as duas tabelas (o `CustomerID` nó no exemplo anterior). Altere seu tipo subjacente para um <xref:System.Windows.Forms.ComboBox> , selecionando **ComboBox** na lista de controle.
+4. Localize o nó que relaciona as duas tabelas (o `CustomerID` nó no exemplo anterior). Altere seu tipo subjacente para um <xref:System.Windows.Forms.ComboBox> , selecionando **ComboBox** na lista de controle.
 
-5.  Arraste o nó da tabela filho principal dos **fontes de dados** window para seu formulário.
+5. Arraste o nó da tabela filho principal dos **fontes de dados** window para seu formulário.
 
      Controles de ligação de dados (com rótulos descritivos) e uma ferramenta da faixa (<xref:System.Windows.Forms.BindingNavigator>) aparecem no formulário. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/create-and-configure-tableadapters.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes.
 
-6.  Agora, arraste o nó da tabela pai principal do **fontes de dados** janela diretamente para o controle de pesquisa (o <xref:System.Windows.Forms.ComboBox>).
+6. Agora, arraste o nó da tabela pai principal do **fontes de dados** janela diretamente para o controle de pesquisa (o <xref:System.Windows.Forms.ComboBox>).
 
      As associações de pesquisa agora são estabelecidas. Consulte a tabela a seguir para as propriedades específicas que foram definidas no controle.
 

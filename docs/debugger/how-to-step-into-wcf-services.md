@@ -1,5 +1,5 @@
 ---
-title: 'Como: intervir em serviços WCF | Microsoft Docs'
+title: 'Como: Intervir em serviços WCF | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,13 +17,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0fe025ed3050f25ec53175c543adfaf7cb48c506
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906436"
 ---
-# <a name="how-to-step-into-wcf-services"></a>Como intervir em serviços WCF
+# <a name="how-to-step-into-wcf-services"></a>Como: Intervir nos serviços WCF
 No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você pode entrar em um serviço WCF. Se o serviço WCF estiver na mesma solução do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que o cliente, você poderá usar pontos de interrupção no serviço WCF.
 
  Para que a depuração funcione, você deve ter a depuração habilitada no arquivo app.config ou Web.config. Para obter informações sobre como habilitar a depuração e limitações para entrar em serviços WCF, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).
@@ -43,4 +43,4 @@ No [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)], você 
 ## <a name="see-also"></a>Consulte também
 - [Depurando serviços WCF](../debugger/debugging-wcf-services.md)
 - [Limitações da depuração de WCF](../debugger/limitations-on-wcf-debugging.md)
-- [Como depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)
+- [Como: Depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)

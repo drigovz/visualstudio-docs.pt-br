@@ -1,30 +1,24 @@
 ---
 title: Caixa de diálogo de esquemas XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: f97bfca4623a826130e68a5399cc2ab86f784cbf
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 82247c2510d64f712cc4b703154ea16a4bb7e7e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899585"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647440"
 ---
 # <a name="xml-schemas-dialog-box"></a>A caixa de diálogo de esquemas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O **esquemas XML** caixa de diálogo é usada para selecionar quais esquemas XSD (linguagem) de definição de esquema XML para associar um documento XML. Você pode selecionar um esquema de cache do esquema, ou especificar um esquema que não está localizado no cache. Os esquemas selecionados são considerados parte de um conjunto de esquema. O esquema é usado para o IntelliSense e também validação de documento XML.  
   
  Você pode acessar o **esquemas XML** caixa de diálogo clicando o **esquemas** botão na janela Propriedades do documento, ou selecionando **esquemas** do **XML** menu.  
@@ -53,8 +47,5 @@ O **esquemas XML** caixa de diálogo é usada para selecionar quais esquemas XSD
   
 ## <a name="see-also"></a>Consulte também  
  [Componentes do Editor de XML](../xml-tools/xml-editor-components.md)   
- [Como: selecione os esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
+ [Como: Selecione os esquemas XML para usar](../xml-tools/how-to-select-the-xml-schemas-to-use.md)   
  [Cache de esquema](../xml-tools/schema-cache.md)
-
-
-

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110590"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Passo a passo: Criando uma bola de bilhar realística em 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
   
  Este documento demonstra essas atividades:  
   
--   Criando a aparência básica de uma bola de bilhar usando forma e textura.  
+- Criando a aparência básica de uma bola de bilhar usando forma e textura.  
   
--   Adicionando profundidade por meio do modelo de iluminação Lambert.  
+- Adicionando profundidade por meio do modelo de iluminação Lambert.  
   
--   Aprimorando a aparência básica usando realces especulares.  
+- Aprimorando a aparência básica usando realces especulares.  
   
--   Criando um senso de espaço refletindo o ambiente.  
+- Criando um senso de espaço refletindo o ambiente.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes e habilidades para concluir este passo a passo:  
   
--   Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.  
+- Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.  
   
--   Familiaridade com o Editor de Imagens em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Familiaridade com o Editor de Imagens em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
--   Familiaridade com o Designer de Sombreador em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+- Familiaridade com o Designer de Sombreador em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Criando a aparência básica com forma e textura  
  Em gráficos de computador, os elementos mais básicos de aparência são forma e cor. Uma simulação de computador, é comum usar um modelo 3D para representar a forma de um objeto real. O detalhe de cor é, então, aplicado para a superfície do modelo usando um mapa de textura.  
@@ -87,7 +87,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
   
 3. Aplique a textura que você criou no procedimento anterior ao configurar as propriedades de textura. Defina o valor da propriedade **Textura** do nó **Amostra de Textura** em **Texture1** e, em seguida, especifique o arquivo de textura usando a propriedade **Filename** do grupo de propriedades **Texture1** na mesma janela de propriedade.  
   
-   Para obter mais informações sobre como aplicar uma textura no seu sombreador, consulte [Como criar um sombreador de textura básica](../designers/how-to-create-a-basic-texture-shader.md).  
+   Para obter mais informações sobre como aplicar uma textura no sombreador, confira [Como: Criar um sombreador de textura básico](../designers/how-to-create-a-basic-texture-shader.md).  
   
    Sua bola de bilhar agora deve ser semelhante a esta:  
   
@@ -108,7 +108,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
   
 - Opcionalmente, você pode ajustar o comportamento da iluminação configurando a propriedade **MaterialDiffuse** do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.  
   
-  Para obter mais informações sobre como aplicar iluminação Lambert no seu sombreador, consulte [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Para obter mais informações sobre como aplicar a iluminação Lambert no sombreador, confira [Como: Criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   Com a iluminação Lambert aplicada, a bola de bilhar deve ser semelhante a esta:  
   
@@ -129,7 +129,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
   
 2. Opcionalmente, você pode ajustar a maneira que o realce especular se comporta ao configurar as propriedades especulares (**MaterialSpecular** e **MaterialSpecularPower**) do gráfico do sombreador. Para acessar as propriedades do gráfico do sombreador, escolha uma área vazia da superfície de design e, em seguida, localize a propriedade que você deseja acessar na janela **Propriedades**.  
   
-   Para obter mais informações sobre como aplicar iluminação especular no seu sombreador, consulte [Como criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).  
+   Para obter mais informações sobre como aplicar realces especulares no sombreador, confira [Como: Criar um sombreador Phong básico](../designers/how-to-create-a-basic-phong-shader.md).  
   
    Com a iluminação especular aplicada, sua bola de bilhar deve ser semelhante a esta:  
   
@@ -215,7 +215,7 @@ Este passo a passo demonstra como criar uma bola de bilhar realística em 3D usa
    Nesta imagem final, observe como os efeitos que você adicionou se unem para criar uma bola de bilhar muito convincente. A forma, a textura e a iluminação criam a aparência básica de um objeto 3D e os realces especulares e os reflexos tornam a bola de bilhar mais interessante e fazem com que ela pareça fazer parte do ambiente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Editor de imagens](../designers/image-editor.md)   

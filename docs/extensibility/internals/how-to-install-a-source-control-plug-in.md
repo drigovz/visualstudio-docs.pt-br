@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cedadf6cc19794c8e1251aef0b9f24c8a54fa788
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420520"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: Instalar um plug-in de controle do código-fonte
 Criando um controle de fonte plug-in envolve três etapas:
@@ -45,7 +45,7 @@ Criando um controle de fonte plug-in envolve três etapas:
    |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\SCCServerPath|*c:\vss\win32\ssscc.dll*|
 
    > [!NOTE]
-   >  SCCServerPath é o caminho completo para o plug-in do SourceSafe. O plug-in de controle de origem usará nomes diferentes de produto e da empresa, mas os mesmos caminhos de entrada de registro.
+   > SCCServerPath é o caminho completo para o plug-in do SourceSafe. O plug-in de controle de origem usará nomes diferentes de produto e da empresa, mas os mesmos caminhos de entrada de registro.
 
 2. As seguintes entradas de registro opcional podem ser usadas para modificar o comportamento do seu plug-in de controle de origem. Essas entradas ir na mesma subchave como **SccServerName** e **SccServerPath**.
 
@@ -62,7 +62,6 @@ Criando um controle de fonte plug-in envolve três etapas:
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
 
-
 3. Adicionar a subchave **SourceCodeControlProvider**, sob o **HKEY_LOCAL_MACHINE** chave no **SOFTWARE** subchave.
 
     Sob essa subchave, a entrada do registro **ProviderRegKey** é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nome da empresa\>\\< nome do produto \>*.
@@ -74,11 +73,11 @@ Criando um controle de fonte plug-in envolve três etapas:
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  O plug-in de controle de origem usará a mesma subchave e nomes de entrada, mas o valor será diferente.
+   > O plug-in de controle de origem usará a mesma subchave e nomes de entrada, mas o valor será diferente.
 
 4. Crie uma subchave denominada **InstalledSCCProviders** sob o **SourceCodeControlProvider** subchave e, em seguida, colocar uma entrada sob essa subchave.
 
-    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\<display name>** = *SOFTWARE\\< nome da empresa\> \\< nome do produto\>*.
+    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome de exibição\>** = *SOFTWARE\\< empresa nome da\>\\< nome do produto\>*.
 
     Por exemplo:
 
@@ -87,7 +86,7 @@ Criando um controle de fonte plug-in envolve três etapas:
    |HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\Microsoft Visual SourceSafe|SOFTWARE\Microsoft\SourceSafe|
 
    > [!NOTE]
-   >  Pode haver várias fonte plug-ins de controle registradas dessa forma. Isso é como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] localiza todos instalados plug-ins baseados na API de plug-in de controle do código-fonte.
+   > Pode haver várias fonte plug-ins de controle registradas dessa forma. Isso é como [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] localiza todos instalados plug-ins baseados na API de plug-in de controle do código-fonte.
 
 ## <a name="how-an-ide-locates-the-dll"></a>Como um IDE localiza a DLL
  O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE tem duas maneiras de localizar a fonte de DLL de plug-in de controle:
@@ -99,14 +98,14 @@ Criando um controle de fonte plug-in envolve três etapas:
   Para localizar a DLL da primeira forma, o IDE se parece sob o **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider** subchaves para a entrada **ProviderRegKey**. O valor desta entrada aponta para outra subchave. O IDE, em seguida, procura por uma entrada denominada **SccServerPath** nessa segunda subchave sob **HKEY_LOCAL_MACHINE**. O valor desta entrada aponta o IDE para a DLL.
 
 > [!NOTE]
->  O IDE não carregar DLLs de caminhos relativos (por exemplo, *.\NewProvider.DLL*). Especifique um caminho completo para a DLL (por exemplo, *c:\Providers\NewProvider.DLL*). Isso reforça a segurança do IDE, impedindo que o carregamento de DLLs de plug-in não autorizados ou delegadas.
+> O IDE não carregar DLLs de caminhos relativos (por exemplo, *.\NewProvider.DLL*). Especifique um caminho completo para a DLL (por exemplo, *c:\Providers\NewProvider.DLL*). Isso reforça a segurança do IDE, impedindo que o carregamento de DLLs de plug-in não autorizados ou delegadas.
 
  Para localizar a DLL da segunda forma, o IDE se parece sob o **HKEY_LOCAL_MACHINE\Software\SourceCodeControlProvider\InstalledSCCProviders** subchave para todas as entradas. Cada entrada tem um nome e um valor. O IDE exibirá uma lista desses nomes para o usuário. Quando o usuário escolhe um nome, o IDE localiza o valor para o nome selecionado que aponta para uma subchave. O IDE procurará uma entrada denominada **SccServerPath** nessa subchave sob **HKEY_LOCAL_MACHINE**. O valor desta entrada aponta o IDE para a DLL correta.
 
  Um plug-in de controle de origem precisa dar suporte a ambas as maneiras de localizar a DLL e, consequentemente, define **ProviderRegKey**, substituindo qualquer definição anterior. Mais importante, ele deve se adicionar à lista de **InstalledSccProviders** para que o usuário possa ter uma opção do qual plug-in de controle do código-fonte para usar.
 
 > [!NOTE]
->  Porque o **HKEY_LOCAL_MACHINE** chave é usada, o plug-in de controle do código-fonte apenas uma pode ser registrado como o controle de fonte padrão plug-in em um determinado computador (no entanto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite que os usuários determinar quais plug-in de controle do código-fonte eles querem usar, na verdade, para uma determinada solução). Durante o processo de instalação, verifique se um plug-in de controle de origem já estiver definido; Nesse caso, peça ao usuário se deseja ou não definir o controle de fonte de novos plug-in que está sendo instalado como o padrão. Durante a desinstalação, não remova outros subchaves do registro que são comuns a todos os fonte plug-ins de controle no **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; remover apenas a subchave de SCC específico.
+> Porque o **HKEY_LOCAL_MACHINE** chave é usada, o plug-in de controle do código-fonte apenas uma pode ser registrado como o controle de fonte padrão plug-in em um determinado computador (no entanto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite que os usuários determinar quais plug-in de controle do código-fonte eles querem usar, na verdade, para uma determinada solução). Durante o processo de instalação, verifique se um plug-in de controle de origem já estiver definido; Nesse caso, peça ao usuário se deseja ou não definir o controle de fonte de novos plug-in que está sendo instalado como o padrão. Durante a desinstalação, não remova outros subchaves do registro que são comuns a todos os fonte plug-ins de controle no **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider**; remover apenas a subchave de SCC específico.
 
 ## <a name="how-the-ide-detects-version-1213-support"></a>Como o IDE detecta o suporte à versão 1.2/1.3
  Como faz [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] detectar se uma funcionalidade de versão 1.2 e 1.3 do plug-in dá suporte à API de plug-in de controle do código-fonte? Para declarar a funcionalidade avançada, o plug-in de controle de origem deve implementar a função correspondente:

@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Saiba mais sobre a migração Open e Open License para o portal de administração de assinaturas do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821725"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Migração Open e Open License para o novo portal de administração de Assinaturas do Visual Studio
 
@@ -38,7 +38,6 @@ Para gerenciar assinaturas na [Portal de administração de assinaturas do Visua
 
 - Para gerenciarem assinaturas em nome dos clientes, os parceiros precisarão se registrar no portal de administração. As diversas maneiras de obter acesso estão listadas abaixo (semelhante ao processo de adicionar–abrir).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Parceiros existentes adicionando uma nova licença
 
 Isso se aplica aos parceiros que já têm acesso ao [Portal de administração de assinaturas do Visual Studio](https://manage.visualstudio.com), mas fizeram um pedido de licenças do Open License com assinaturas do Visual Studio que eles precisarão gerenciar.
@@ -48,7 +47,6 @@ Isso se aplica aos parceiros que já têm acesso ao [Portal de administração d
 - Ele selecionará o menu suspenso do contrato e rolará até a parte inferior em que há uma opção para **+Novo Open License**.
 
 - No painel pop-out, o parceiro insere o número de autorização, o número da licença, o endereço de email do cliente que está no contrato, seleciona a caixa de seleção e, em seguida, clica em **Enviar**.
-
 
 > [!NOTE]
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.
@@ -67,7 +65,6 @@ Isso se aplica a novos Parceiros fazendo novos pedidos de Open License, mas que 
 
 - O parceiro poderá gerenciar assinaturas para essa Open License.
 
-
 > [!NOTE]
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.
 
@@ -80,7 +77,6 @@ Esse cenário se aplica a novos Parceiros que já fizeram novos pedidos de Open 
 - É exibido um erro informando que ele não é um usuário reconhecido.
 
 - O parceiro precisará selecionar a opção de registro **Parceiros de OLP** e inserir o número de autorização, o número da licença, o endereço de email do cliente usado no pedido, selecionar a caixa de seleção e clicar em **Enviar**.
-
 
 > [!NOTE]
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.

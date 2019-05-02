@@ -12,12 +12,12 @@ ms.prod: .net-core
 ms.assetid: 2c119a5f-0272-48c0-8d6c-806196944aea
 ms.workload:
 - multiple
-ms.openlocfilehash: edcf47601007e3249c58dd8ad215c5ba1fd3bf83
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 97facaed877030dca4a6a2257147c4d92201ab55
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54998918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944920"
 ---
 # <a name="version-control-in-visual-studio"></a>Controle de Versão no Visual Studio
 
@@ -27,6 +27,7 @@ Os sistemas de controle de versão ajudam você a controlar as alterações de c
 
 Git é o sistema de controle de versão mais usado atualmente e está se tornando rapidamente o padrão para controle de versão. Git é um sistema de controle de versão distribuído, ou seja, sua cópia local do código é um repositório de controle da versão completa. Estes repositórios locais totalmente funcionais facilitam o trabalho offline ou remoto. Você confirma seu trabalho localmente e depois sincroniza sua cópia do repositório com a cópia no servidor. Esse paradigma é diferente do controle de versão centralizado, no qual os clientes devem sincronizar o código com um servidor antes de criar novas versões do código.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/devops/git/what-is-git">

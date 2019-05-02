@@ -21,17 +21,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd437be1dd61e05259bc13501d7b9b9aaa06e285
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438027"
 ---
 # <a name="properties-window"></a>Janela Propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use esta janela para exibir e alterar as propriedades de tempo de design e os eventos dos objetos selecionados localizados em editores e designers. Você também pode usar a janela **Propriedades** para editar e exibir as propriedades do arquivo, do projeto e da solução. Você pode encontrar a janela **Propriedades** no menu **Exibir**. Também pode abri-la pressionando F4 ou digitando **Propriedades** na janela **Início Rápido**.  
   
  A janela **Propriedades** exibe os diferentes tipos de campos de edição, dependendo das necessidades de uma determinada propriedade. Esses campos de edição incluem caixas de edição, listas suspensas e links a caixas de diálogo do editor personalizado. As propriedades mostradas em cinza são somente leitura.  
@@ -59,25 +58,25 @@ Use esta janela para exibir e alterar as propriedades de tempo de design e os ev
  Exibe os eventos de um objeto.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** só está disponível quando um formulário ou designer de controle está ativo no contexto de um projeto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Ao editar arquivos XAML, os eventos são exibidos em uma guia separada da janela Propriedades.  
+> Esse controle de barra de ferramentas da janela **Propriedades** só está disponível quando um formulário ou designer de controle está ativo no contexto de um projeto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Ao editar arquivos XAML, os eventos são exibidos em uma guia separada da janela Propriedades.  
   
  Mensagens  
  Lista todas as mensagens do Windows. Permite adicionar ou excluir funções especificadas do manipulador para as mensagens fornecidas para a classe selecionada.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Substituições  
  Lista todas as funções virtuais para a classe selecionada e permite adicionar ou excluir funções de substituição.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Painel de descrição  
  Mostra o tipo de propriedade e uma breve descrição da propriedade. Você pode ativar e desativar a descrição da propriedade usando o comando Descrição no menu de atalho.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** não está disponível ao editar arquivos XAML no designer.  
+> Esse controle de barra de ferramentas da janela **Propriedades** não está disponível ao editar arquivos XAML no designer.  
   
  Exibição de miniatura  
  Mostra uma representação visual do elemento selecionado no momento ao editar arquivos XAML no designer.  

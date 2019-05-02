@@ -8,21 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1289aa8da4bb61d8c5cae6ca79257291a14f8ce9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c17686ab0e14e483019416560c3fa06ce6aa3206
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987967"
 ---
 # <a name="xml-schema-designer"></a>Designer de Esquema XML
 
 O Designer de Esquema XML (Designer XSD) é uma ferramenta gráfica por meio da qual é possível visualizar um esquema definido em níveis distintos de abstração. Estes são os principais componentes do Designer XSD:
 
--   [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) lhe permite procurar e navegar na árvore de esquema XML e executar pesquisas.
+- [XML Schema Explorer](../xml-tools/xml-schema-explorer.md) lhe permite procurar e navegar na árvore de esquema XML e executar pesquisas.
 
--   O [exibição inicial](../xml-tools/start-view.md) é o ponto de partida para o Designer XSD; a partir da exibição inicial, você pode navegar para outros modos de exibição do Designer XSD e ver os detalhes de seu conjunto de esquema.
+- O [exibição inicial](../xml-tools/start-view.md) é o ponto de partida para o Designer XSD; a partir da exibição inicial, você pode navegar para outros modos de exibição do Designer XSD e ver os detalhes de seu conjunto de esquema.
 
--   O [modo de exibição gráfico](../xml-tools/graph-view.md) permite que você veja uma visão geral de um conjunto de esquema e as relações entre os nós do esquema.
+- O [modo de exibição gráfico](../xml-tools/graph-view.md) permite que você veja uma visão geral de um conjunto de esquema e as relações entre os nós do esquema.
 
--   O [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md) fornece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.
+- O [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md) fornece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.

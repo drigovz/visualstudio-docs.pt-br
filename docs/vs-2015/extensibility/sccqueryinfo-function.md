@@ -1,14 +1,9 @@
 ---
 title: Função SccQueryInfo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccQueryInfo
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a7093f712ab520502e36094ec571c0ee1a3ded18
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785073"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108432"
 ---
 # <a name="sccqueryinfo-function"></a>Função SccQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,15 +65,14 @@ SCCRTN SccQueryInfo(
   
  Ao usar essa função para fazer check-out de arquivos, observe o seguinte `MSSCCI` requisitos de status:  
   
--   `SCC_STATUS_OUTBYUSER` é definido quando o usuário atual fez check-out do arquivo.  
+- `SCC_STATUS_OUTBYUSER` é definido quando o usuário atual fez check-out do arquivo.  
   
--   `SCC_STATUS_CHECKEDOUT` não pode ser definida, a menos que `SCC_STATUS_OUTBYUSER` está definido.  
+- `SCC_STATUS_CHECKEDOUT` não pode ser definida, a menos que `SCC_STATUS_OUTBYUSER` está definido.  
   
--   `SCC_STATUS_CHECKEDOUT` só é definido quando o arquivo é extraído no diretório de trabalho designado.  
+- `SCC_STATUS_CHECKEDOUT` só é definido quando o arquivo é extraído no diretório de trabalho designado.  
   
--   Se o arquivo está com check-out do usuário atual em um diretório que não seja o diretório de trabalho `SCC_STATUS_OUTBYUSER` está definida, mas `SCC_STATUS_CHECKEDOUT` não é.  
+- Se o arquivo está com check-out do usuário atual em um diretório que não seja o diretório de trabalho `SCC_STATUS_OUTBYUSER` está definida, mas `SCC_STATUS_CHECKEDOUT` não é.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [Código de status do arquivo](../extensibility/file-status-code-enumerator.md)
-

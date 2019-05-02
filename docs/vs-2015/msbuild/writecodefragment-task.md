@@ -17,17 +17,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee0b819d0387ecbd0bec3a460bf3c63d3122b269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa9882d30a8483937f77da21bb4700d4899a68a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555472"
 ---
 # <a name="writecodefragment-task"></a>Tarefa WriteCodeFragment
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gera um arquivo de código temporário do fragmento de código gerado especificado. Não exclui o arquivo.  
   
 ## <a name="parameters"></a>Parâmetros  

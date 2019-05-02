@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001382"
 ---
 # <a name="the-text-template-transformation-process"></a>O processo de transformação de modelo de texto
 O processo de transformação do modelo de texto utiliza um arquivo de modelo de texto como entrada e gera um novo arquivo de texto como saída. Por exemplo, você pode usar modelos de texto para gerar o código Visual Basic ou c#, ou você pode gerar um relatório HTML.
@@ -34,22 +34,22 @@ O processo de transformação do modelo de texto utiliza um arquivo de modelo de
 ## <a name="the-engine"></a>O mecanismo
  O mecanismo recebe o modelo como uma cadeia de caracteres do host, que lida com todos os arquivos que são usados no processo de transformação. O mecanismo de, em seguida, solicita que o host para localizar quaisquer processadores de diretriz personalizados e outros aspectos do ambiente. O mecanismo, em seguida, compila e executa a classe de transformação gerada. O mecanismo retorna o texto gerado para o host, que normalmente salva o texto em um arquivo.
 
-## <a name="the-host"></a>O Host
+## <a name="the-host"></a>O host
  O host é responsável por qualquer coisa que se relaciona com o ambiente de fora do processo de transformação, incluindo o seguinte:
 
--   Localizando arquivos de texto e binários solicitados pelo mecanismo de ou em um processador de diretriz. O host pode pesquisar diretórios e cache de assembly global para localizar assemblies. O host pode localizar o código de processador de diretriz personalizado para o mecanismo. O host também pode localizar e ler arquivos de texto e retornar seus conteúdos como cadeias de caracteres.
+- Localizando arquivos de texto e binários solicitados pelo mecanismo de ou em um processador de diretriz. O host pode pesquisar diretórios e cache de assembly global para localizar assemblies. O host pode localizar o código de processador de diretriz personalizado para o mecanismo. O host também pode localizar e ler arquivos de texto e retornar seus conteúdos como cadeias de caracteres.
 
--   Fornecendo listas de assemblies padrão e namespaces que são usados pelo mecanismo para criar a classe de transformação gerada.
+- Fornecendo listas de assemblies padrão e namespaces que são usados pelo mecanismo para criar a classe de transformação gerada.
 
--   Desde que o domínio de aplicativo que é usado quando o mecanismo compila e executa a classe de transformação gerada. Um domínio de aplicativo separado é usado para proteger o aplicativo host de erros no código do modelo.
+- Desde que o domínio de aplicativo que é usado quando o mecanismo compila e executa a classe de transformação gerada. Um domínio de aplicativo separado é usado para proteger o aplicativo host de erros no código do modelo.
 
--   Gravar o arquivo de saída gerada.
+- Gravar o arquivo de saída gerada.
 
--   Definindo a extensão padrão para o arquivo de saída gerada.
+- Definindo a extensão padrão para o arquivo de saída gerada.
 
--   Tratamento de erros de transformação do modelo de texto. Por exemplo, o host pode exibir os erros na interface do usuário ou gravá-las em um arquivo. (No Visual Studio, os erros são exibidos na janela de mensagem de erro.)
+- Tratamento de erros de transformação do modelo de texto. Por exemplo, o host pode exibir os erros na interface do usuário ou gravá-las em um arquivo. (No Visual Studio, os erros são exibidos na janela de mensagem de erro.)
 
--   Se um usuário chamou uma diretiva sem fornecer um valor, fornecendo um valor de parâmetro necessário. O processador de diretriz pode especificar o nome da diretiva e o parâmetro e solicitar que o host para fornecer um valor padrão se ele tiver um.
+- Se um usuário chamou uma diretiva sem fornecer um valor, fornecendo um valor de parâmetro necessário. O processador de diretriz pode especificar o nome da diretiva e o parâmetro e solicitar que o host para fornecer um valor padrão se ele tiver um.
 
 ## <a name="directives-and-directive-processors"></a>Diretivas e processadores de diretriz
  Uma diretiva é um comando em seu modelo de texto. Ele fornece parâmetros para o processo de geração. Normalmente, as diretivas definem a origem e o tipo de modelo ou outra entrada e a extensão de nome de arquivo do arquivo de saída.

@@ -8,28 +8,28 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2897a94dca8210f5ebf11ab43b884108cc7171dd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fd8af04bc320201ad5f17613c850e0140eb2596b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430781"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
 
 > [!NOTE]
->  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para criar um problema aleatório de adição
 
-1.  No designer de formulário, escolha o formulário (**Form1**).
+1. No designer de formulário, escolha o formulário (**Form1**).
 
-2.  Na barra de menus, escolha **Exibir** > **Código**.
+2. Na barra de menus, escolha **Exibir** > **Código**.
 
      *Form1.cs* ou *Form1.vb* aparecerá, dependendo da linguagem de programação que você estiver usando, para que você possa exibir o código do formulário.
 
-3.  Crie um objeto de <xref:System.Random> adicionando uma instrução de `new` próximo à parte superior do código, como a seguir.
+3. Crie um objeto de <xref:System.Random> adicionando uma instrução de `new` próximo à parte superior do código, como a seguir.
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
@@ -40,17 +40,17 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      Logo você irá criar um método para verificar as respostas, de modo que seu teste use variáveis para armazenar os números aleatórios que gera para cada problema. Consulte [Variáveis](/dotnet/visual-basic/programming-guide/language-features/variables/index) ou [Tipos](/dotnet/csharp/programming-guide/types/index). Para usar variáveis corretamente, você deve declará-los, o que significa listar seus nomes e tipos de data.
 
-4.  Adicione duas variáveis de inteiro ao formulário e nomeie-as **addend1** e **addend2**.
+4. Adicione duas variáveis de inteiro ao formulário e nomeie-as **addend1** e **addend2**.
 
     > [!NOTE]
-    >  Uma variável inteira é conhecida como um int em C# ou como Integer no Visual Basic. Esse tipo de variável armazena um número positivo ou negativo de -2147483648 a 2147483647 e pode armazenar apenas números inteiros, não decimais.
+    > Uma variável inteira é conhecida como um int em C# ou como Integer no Visual Basic. Esse tipo de variável armazena um número positivo ou negativo de -2147483648 a 2147483647 e pode armazenar apenas números inteiros, não decimais.
 
      Use uma sintaxe semelhante para adicionar uma variável inteira como fez para adicionar o objeto random, desde que o código a seguir seja mostrado.
 
      [!code-csharp[VbExpressTutorial3Step2#2](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_2.cs)]
      [!code-vb[VbExpressTutorial3Step2#2](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_2.vb)]
 
-5.  Adicione um método chamado `StartTheQuiz()` que usa o método <xref:System.Random.Next> do objeto Random para mostrar os números aleatórios nos rótulos. Por fim, o `StartTheQuiz()` preencherá todos os problemas e iniciar o temporizador, adicione um comentário. A função deve se parecer com o seguinte.
+5. Adicione um método chamado `StartTheQuiz()` que usa o método <xref:System.Random.Next> do objeto Random para mostrar os números aleatórios nos rótulos. Por fim, o `StartTheQuiz()` preencherá todos os problemas e iniciar o temporizador, adicione um comentário. A função deve se parecer com o seguinte.
 
      [!code-csharp[VbExpressTutorial3Step2#3](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_3.cs)]
      [!code-vb[VbExpressTutorial3Step2#3](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_3.vb)]
@@ -62,7 +62,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
      Quando você inseri um ponto depois de um objeto, o IntelliSense exibe uma lista de membros do objeto, como propriedades, métodos e eventos.
 
     > [!NOTE]
-    >  Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Essa tela mostra o código Visual C#, mas o trabalho do IntelliSense a mesma maneira para Visual Basic.
+    > Quando você usa o método de `Next()` com o objeto de `Random`, como quando você chama `randomizer.Next(50)`, você obtém um número aleatório que é menor que 50 (de 0 a 49). Nesse exemplo, você chamou `randomizer.Next(51)`. Você usou 51 e não 50, portanto os dois números aleatórios serão adicionados a uma resposta entre 0 e 100. Se você passar 50 para o método de `Next()`, ele escolherá um número de 0 a 49, para que a resposta possível mais alta seja 98, não 100. Após as duas primeiras instruções no método serem executadas, cada uma das duas variáveis inteiras, **addend1** e **addend2**, conterá um número aleatório de 0 a 50. Essa tela mostra o código Visual C#, mas o trabalho do IntelliSense a mesma maneira para Visual Basic.
 
      Confira de perto estas instruções.
 
@@ -71,18 +71,18 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      As instruções definem propriedades **Text** de **plusLeftLabel** e **plusRightLabel** de modo que elas exibam os dois números aleatórios. Você deve usar o método de `ToString()` inteiro para converter números para texto. (Na programação, a cadeia de caracteres significa o texto. Os controles de rótulo exibem apenas texto, não números.
 
-6.  Na janela de design, clique duas vezes no botão **Iniciar** ou selecione-o e pressione a tecla **Enter**.
+6. Na janela de design, clique duas vezes no botão **Iniciar** ou selecione-o e pressione a tecla **Enter**.
 
      Quando um participante de teste escolhe esse botão, o teste deve iniciar, e você acabou de adicionar um manipulador de eventos de clique para implementar esse comportamento.
 
-7.  Adicione as duas instruções a seguir.
+7. Adicione as duas instruções a seguir.
 
      [!code-csharp[VbExpressTutorial3Step2#4](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_5.cs)]
      [!code-vb[VbExpressTutorial3Step2#4](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_5.vb)]
 
      A primeira instrução chama o novo método de `StartTheQuiz()`. A segunda instrução define a propriedade de **Enabled** do controle **startButton** para **False** de modo que a pessoa realizando o teste não pode escolher o botão durante um teste.
 
-8.  Salve seu código, execute-o e então escolha o botão **Iniciar**.
+8. Salve seu código, execute-o e então escolha o botão **Iniciar**.
 
      Um problema aleatório de adição aparece, conforme mostra a ilustração a seguir.
 
@@ -92,6 +92,6 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, confira [Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
+- Para ir para a próxima etapa do tutorial, confira [Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
 
--   Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

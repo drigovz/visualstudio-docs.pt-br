@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441286"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Para acessar a página **Segurança**, clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.  
@@ -39,9 +38,9 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
  Determina se as configurações de segurança estão habilitadas no tempo de design. Quando esta opção estiver desmarcada, todas as outras opções na página **Segurança** não ficarão disponíveis.  
   
 > [!NOTE]
->  Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.  
+> Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.  
   
- Quando seleciona a opção, você tem a escolha de selecionar um de dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.  
+ Quando seleciona essa opção, você tem a opção de selecionar um dos dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.  
   
  Por padrão, para projetos de Aplicativo de navegador da Web do WPF, essa opção fica selecionada.  
   
@@ -75,10 +74,10 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Como habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
- [Como definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Como definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Como: Habilitar configurações de segurança do ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Segurança e implantação do ClickOnce](../../deployment/clickonce-security-and-deployment.md)   
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md)

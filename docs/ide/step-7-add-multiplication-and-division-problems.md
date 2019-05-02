@@ -8,41 +8,41 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc9c1e28b86956c611d48d332c3444665a66de4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e60cb6c289fa582eb27137483f44b7557d4e426d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996323"
 ---
 # <a name="step-7-add-multiplication-and-division-problems"></a>Etapa 7: Adicionar problemas de multiplicação e divisão
 Na sétima parte deste tutorial, você adicionará problemas de multiplicação e de divisão, mas primeiro pense em como fazer essa alteração. Considere a etapa inicial, que envolve armazenar valores.
 
 ## <a name="to-add-multiplication-and-division-problems"></a>Para adicionar problemas de multiplicação e de divisão
 
-1.  Adicione mais quatro variáveis inteiras ao formulário.
+1. Adicione mais quatro variáveis inteiras ao formulário.
 
      [!code-vb[VbExpressTutorial3Step7#15](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_1.vb)]
      [!code-csharp[VbExpressTutorial3Step7#15](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_1.cs)]
 
-2.  Como você fez antes, modifique o método de `StartTheQuiz()` para preencher números aleatórios para os problemas de multiplicação e de divisão.
+2. Como você fez antes, modifique o método de `StartTheQuiz()` para preencher números aleatórios para os problemas de multiplicação e de divisão.
 
      [!code-vb[VbExpressTutorial3Step7#16](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_2.vb)]
      [!code-csharp[VbExpressTutorial3Step7#16](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_2.cs)]
 
-3.  Modifique o método de `CheckTheAnswer()` de modo que ele também verifique os problemas de multiplicação e de divisão.
+3. Modifique o método de `CheckTheAnswer()` de modo que ele também verifique os problemas de multiplicação e de divisão.
 
      [!code-vb[VbExpressTutorial3Step7#17](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_3.vb)]
      [!code-csharp[VbExpressTutorial3Step7#17](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_3.cs)]
 
      Não é possível inserir facilmente o sinal de multiplicação (×) e o sinal de divisão (÷) usando o teclado, então o Visual C# e o Visual Basic aceitam um asterisco (*) para multiplicação e uma barra (/) para divisão.
 
-4.  Altere a parte a mais recente do manipulador de eventos de escala <xref:System.Windows.Forms.Timer.Tick> do timer de modo que preencha a resposta correta quando o tempo de execução se esgotar.
+4. Altere a parte a mais recente do manipulador de eventos de escala <xref:System.Windows.Forms.Timer.Tick> do timer de modo que preencha a resposta correta quando o tempo de execução se esgotar.
 
      [!code-vb[VbExpressTutorial3Step7#23](../ide/codesnippet/VisualBasic/step-7-add-multiplication-and-division-problems_4.vb)]
      [!code-csharp[VbExpressTutorial3Step7#23](../ide/codesnippet/CSharp/step-7-add-multiplication-and-division-problems_4.cs)]
 
-5.  Salve e execute seu programa.
+5. Salve e execute seu programa.
 
      Os participantes de teste devem responder quatro problemas para concluir o teste, conforme mostrado na ilustração.
 
@@ -51,6 +51,6 @@ Na sétima parte deste tutorial, você adicionará problemas de multiplicação 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, confira [Etapa 8: Personalizar o teste](../ide/step-8-customize-the-quiz.md).
+- Para ir para a próxima etapa do tutorial, confira [Etapa 8: Personalizar o teste](../ide/step-8-customize-the-quiz.md).
 
--   Para retornar à etapa anterior do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).

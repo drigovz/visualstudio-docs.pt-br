@@ -1,26 +1,21 @@
 ---
 title: Usando o Store configurações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 421ae479d2c25fc6b01ae63083f18c2b1c55c69d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4b6c2810a81ada06152faea06e86a27f7907a643
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430106"
 ---
 # <a name="using-the-settings-store"></a>Usar o repositório de configurações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ Há dois tipos de repositórios de configurações:
 ## <a name="creating-the-example-project"></a>Criando o projeto de exemplo  
  Esta seção mostra como criar um projeto de extensão simples com um comando de menu para demonstração.  
   
-1.  Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto do VSIX chamado `SettingsStoreExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto do VSIX chamado `SettingsStoreExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
   
-2.  Agora, adicione um modelo de item de comando personalizado chamado **SettingsStoreCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **SettingsStoreCommand.cs**. Para obter mais informações sobre como criar um comando personalizado, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Agora, adicione um modelo de item de comando personalizado chamado **SettingsStoreCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **SettingsStoreCommand.cs**. Para obter mais informações sobre como criar um comando personalizado, consulte [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>Usando a configuração de configurações Store  
  Esta seção mostra como detectar e exibir as definições de configuração.  
@@ -84,12 +79,11 @@ Há dois tipos de repositórios de configurações:
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usar um editor do registro para verificar as definições de configuração  
   
-1.  Abra Regedit.exe.  
+1. Abra Regedit.exe.  
   
-2.  Navegue até HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Navegue até HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
-    >  Certifique-se de que você está vendo a chave que contém \14.0Exp_Config\ e não \14.0_Config\\. Quando você executa a instância experimental do Visual Studio, as configurações estão na seção do Registro "14.0Exp_Config".  
+    > Certifique-se de que você está vendo a chave que contém \14.0Exp_Config\ e não \14.0_Config\\. Quando você executa a instância experimental do Visual Studio, as configurações estão na seção do Registro "14.0Exp_Config".  
   
-3.  Expanda o nó \Installed Products\. Se a mensagem nas etapas anteriores for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: True**, em seguida, \Installed Products\ deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone. Se a mensagem estiver **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: False**, em seguida, \Installed Products\ não deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone.
-
+3. Expanda o nó \Installed Products\. Se a mensagem nas etapas anteriores for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: True**, em seguida, \Installed Products\ deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone. Se a mensagem for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: False**, em seguida, \Installed Products\ não deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone.

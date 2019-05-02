@@ -1,23 +1,20 @@
 ---
 title: Gerando código a partir de uma linguagem específica do domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e3706cc9-2afd-456a-a879-68425a248ebc
 caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5edc6e267957f08837399ae5c2e56bce3cc26cce
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 63e1b48a7582294c200b1e30147d85a9b26165d4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49231992"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927335"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Gerando código a partir de uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,11 +42,11 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] fornece uma maneira eficiente p
   
  Fornece informações básicas sobre a referência a linguagem específica de domínio em modelos de texto.  
   
- [Passo a passo: depurando um modelo (template) de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
+ [Passo a passo: Depurar um modelo de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)  
   
  Descreve como fazer a solução de problemas e depuração em um modelo de texto que se refere a uma linguagem específica de domínio.  
   
- [Passo a passo: conectando um host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
+ [Passo a passo: Conectar um host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)  
   
  Descreve como se conectar a um host personalizado para um processador de diretriz gerado.  
   
@@ -70,6 +67,3 @@ Microsoft [!INCLUDE[dsl](../includes/dsl-md.md)] fornece uma maneira eficiente p
  [Geração de código em um processo de build](../modeling/code-generation-in-a-build-process.md)  
   
  Leia este tópico se você estiver gerando arquivos de uma DSL em um servidor de compilação.
-
-
-

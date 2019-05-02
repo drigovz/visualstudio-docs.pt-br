@@ -1,25 +1,22 @@
 ---
 title: Adicionar propriedades personalizadas a diagramas de camada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, adding custom properties
 ms.assetid: 52b3ac25-d10b-4507-a1fe-209ccb4d2777
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 9024ccda38e6b261b29d808e6fafb7837776fc8c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d9db49c3aaaedde8676b4db2c5e798ad61782aed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430513"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Adicionar propriedades personalizadas a diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,22 +30,25 @@ Quando você escreve o código de extensão para diagramas de camada, você pode
  **Preparação inicial**  
   
 > [!IMPORTANT]
->  Para fazer com que as propriedades aparecerem, você deve fazer a seguinte alteração em cada computador onde você deseja que as propriedades da camada fiquem visíveis.  
+> Para fazer com que as propriedades aparecerem, você deve fazer a seguinte alteração em cada computador onde você deseja que as propriedades da camada fiquem visíveis.  
 > 
-> 1. Execute o bloco de notas usando **executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
->    2.  Dentro de `Content` elemento, adicione:  
+>  1. Execute o bloco de notas usando **executar como administrador**. Abrir `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`  
+>  
+>  2. Dentro de `Content` elemento, adicione:  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  Sob o **ferramentas do Visual Studio** seção do Visual Studio aplicativo menu Iniciar, abra **Prompt de comando do desenvolvedor**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. Sob o **ferramentas do Visual Studio** seção do Visual Studio aplicativo menu Iniciar, abra **Prompt de comando do desenvolvedor**.  
 > 
->    Digite:  
+>     Digite:  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Reinicie o Visual Studio.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Reinicie o Visual Studio.  
   
  **Verifique se que seu código está em um projeto VSIX**  
   
@@ -69,15 +69,15 @@ public class MyProperty
   
  Você pode definir propriedades em <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ou qualquer uma de suas classes derivadas, que incluem:  
   
--   `ILayerModel` -o modelo  
+- `ILayerModel` -o modelo  
   
--   `ILayer` -cada camada  
+- `ILayer` -cada camada  
   
--   `ILayerDependencyLink` -os links entre camadas  
+- `ILayerDependencyLink` -os links entre camadas  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Exemplo  
  O código a seguir é um descritor de propriedade personalizado típico. Ele define uma propriedade booleana no modelo de camada (`ILayerModel`) que permite ao usuário fornecer valores para um método de validação personalizada.  
@@ -167,6 +167,3 @@ namespace MyNamespace
   
 ## <a name="see-also"></a>Consulte também  
  [Estender diagramas de camada](../modeling/extend-layer-diagrams.md)
-
-
-

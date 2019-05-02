@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850168"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: execução de Transact-SQL encerrada sem depuração
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erro: A execução de Transact-SQL terminou sem depuração
 
 Esse erro ocorre quando você está tentando depurar um Transact-SQL ou procedimento SQLCLR e o depurador não recebe mensagens de depuração do SQL Server.
 
@@ -40,7 +40,7 @@ Há duas contas envolvidas:
 
   Para corrigir esse erro, talvez seja necessário:
 
-  - Verificar suas configurações de permissões. Para obter mais informações, consulte [como: definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Verificar suas configurações de permissões. Para obter mais informações, confira [Como: Definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
 
   - Verifique se a depuração do SQL está configurada corretamente.
 
@@ -49,6 +49,6 @@ Há duas contas envolvidas:
 ## <a name="see-also"></a>Consulte também
 
 - [Configuração de depuração de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Como: definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Como: Definir permissões do SQL Server para depuração](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Depuração remota](../debugger/remote-debugging.md)

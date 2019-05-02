@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57650bbe01a9d93b9847fd42075492c158d4db59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798634"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -44,7 +44,7 @@ A menos que não tenha feito nenhuma modificação no código compilado com êxi
 
 ![Lista de Erros e Saída do Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. (Ou ative os números de linha clicando na barra **Início Rápido** na parte superior direita, digitando "números de linha" nela e pressionando **Enter**. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha. Saiba como usar a barra **Início Rápido** e poupe muitos cliques na interface do usuário!)
+Clique na linha de erro na janela **Lista de Erros** e vá para a linha em que ocorre o erro. Ou ative os números de linha pressionando **Ctrl**+**Q**, digitando **números de linha** e, em seguida, escolhendo **Ativar ou desativar números de linha** nos resultados. Essa é a maneira mais rápida para acessar a caixa de diálogo **Opções**, em que é possível ativar os números de linha.
 
 ![Editor do Visual Studio com números de linha](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -74,7 +74,7 @@ Os analisadores de código procuram problemas comuns de código que podem levar 
 
 ### <a name="c-and-visual-basic-code-analysis"></a>Análise de código do C# e do Visual Basic
 
-O Visual Studio 2017 inclui um conjunto interno de [analisadores do .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examina o código C# e Visual Basic durante a digitação. Instale outros analisadores como uma extensão do Visual Studio, ou como um pacote NuGet. Se forem encontradas violações de regras, elas serão relatadas no editor de códigos como uma linha ondulada sob o código transgressor e na **Lista de Erros**.
+O Visual Studio inclui um conjunto interno de [analisadores do .NET Compiler Platform](../code-quality/roslyn-analyzers-overview.md) que examinam o código C# e Visual Basic durante a digitação. Instale outros analisadores como uma extensão do Visual Studio, ou como um pacote NuGet. Se forem encontradas violações de regras, elas serão relatadas no editor de códigos como uma linha ondulada sob o código transgressor e na **Lista de Erros**.
 
 ### <a name="c-code-analysis"></a>Análise de código C++
 
@@ -156,6 +156,6 @@ Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajud�
 
 ## <a name="see-also"></a>Consulte também
 
-- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
-- [Saiba mais sobre como usar o depurador](../debugger/debugger-feature-tour.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
+- [Saiba mais sobre como usar o depurador](../debugger/index.md)
 - [Gerar e corrigir um código](../ide/code-generation-in-visual-studio.md)

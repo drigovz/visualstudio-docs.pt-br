@@ -15,17 +15,16 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db76b86bd9a6f05ea6f36dc28c06d01692944e37
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 43f3a1c388a7b29fe83654d89b63e3fd304ebfa0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437248"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use a página **Aplicativo** do **Designer de Projeto** para especificar as propriedades e configurações de aplicativo do projeto.  
   
  Para acessar a página **Aplicativo**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Aplicativo**.  
@@ -51,7 +50,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
  Por padrão, o valor é o mesmo que a estrutura de destino selecionada na caixa de diálogo **Novo Projeto**.  
   
 > [!NOTE]
->  Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente na primeira vez em que a caixa de diálogo é aberta. Se você alterar posteriormente a estrutura de destino do projeto, será necessário selecionar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
+> Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente na primeira vez em que a caixa de diálogo é aberta. Se você alterar posteriormente a estrutura de destino do projeto, será necessário selecionar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
   
  Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -63,7 +62,7 @@ Use a página **Aplicativo** do **Designer de Projeto** para especificar as prop
  Se você especificar a opção **Arquivo WinMD**, os tipos poderão ser projetados em uma linguagem de programação do Windows Runtime. Ao empacotar a saída do projeto como um arquivo WinMD, é possível codificar um aplicativo em várias linguagens e ter interoperação de código como se você tivesse escrito tudo na mesma linguagem. É possível especificar esta opção para soluções que direcionam as bibliotecas do Windows Runtime, incluindo os aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Para obter mais informações, consulte [Criando componentes do Windows Runtime em C# e Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  O Windows Runtime pode projetar tipos para que eles sejam exibidos como objetos nativos em qualquer que os use. Por exemplo, aplicativos JavaScript que interagem com o Windows Runtime usam-no como um conjunto de objetos JavaScript e aplicativos C# usam a biblioteca como uma coleção de objetos .NET. Ao empacotar a saída do projeto como um arquivo WinMD, é possível usar a mesma tecnologia que o Windows Runtime usa.  
+> O Windows Runtime pode projetar tipos para que eles sejam exibidos como objetos nativos em qualquer que os use. Por exemplo, aplicativos JavaScript que interagem com o Windows Runtime usam-no como um conjunto de objetos JavaScript e aplicativos C# usam a biblioteca como uma coleção de objetos .NET. Ao empacotar a saída do projeto como um arquivo WinMD, é possível usar a mesma tecnologia que o Windows Runtime usa.  
   
  Para obter mais informações sobre a propriedade **Tipo de aplicativo**, consulte [/target (Opções do compilador do C#)](http://msdn.microsoft.com/library/a18bbd8e-bbf7-49e7-992c-717d0eb1f76f). Para obter informações sobre como acessar esta propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   

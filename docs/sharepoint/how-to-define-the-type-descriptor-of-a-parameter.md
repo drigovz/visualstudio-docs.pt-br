@@ -15,67 +15,67 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f28de400b417011b127b76c8813024f9721cc375
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971323"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Como: Definir o descritor de tipo de um parâmetro
   Um descritor de tipo contém propriedades que descrevem o tipo de dados de um parâmetro. Um descritor de tipo pode definir um campo, uma entidade ou uma coleção de entidades. Para obter mais informações, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-the-type-descriptor-of-a-parameter"></a>Para definir o descritor de tipo de um parâmetro
 
-1.  No **detalhes do método BDC** janela, escolha o descritor de tipo do parâmetro.
+1. No **detalhes do método BDC** janela, escolha o descritor de tipo do parâmetro.
 
-2.  Na barra de menus, escolha **modo de exibição**, **janela propriedades**.
+2. Na barra de menus, escolha **modo de exibição**, **janela propriedades**.
 
-3.  No **propriedades** janela, defina as propriedades do descritor de tipo.
+3. No **propriedades** janela, defina as propriedades do descritor de tipo.
 
      Os procedimentos a seguir descrevem como definir um descritor de tipo como uma coleção de entidade, entidade ou campo.
 
 ### <a name="to-define-a-field"></a>Para definir um campo
 
-1.  No **propriedades** janela, defina as **nome** propriedade do descritor de tipo para o nome de um campo no tipo que representa a entidade (por exemplo: **FirstName**).
+1. No **propriedades** janela, defina as **nome** propriedade do descritor de tipo para o nome de um campo no tipo que representa a entidade (por exemplo: **FirstName**).
 
-2.  Na lista de Avançar para o **TypeName** propriedade, escolha o tipo de dados apropriado (por exemplo, **Int32**).
+2. Na lista de Avançar para o **TypeName** propriedade, escolha o tipo de dados apropriado (por exemplo, **Int32**).
 
      Para obter informações sobre outros parâmetros opcionais, consulte [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).
 
 ### <a name="to-define-an-entity"></a>Para definir uma entidade
 
-1.  No **propriedades** janela, defina as **nome** propriedade para um nome que descreve a entidade (por exemplo: **Entre em contato com**).
+1. No **propriedades** janela, defina as **nome** propriedade para um nome que descreve a entidade (por exemplo: **Entre em contato com**).
 
-2.  Defina as **TypeName** propriedade para o nome totalmente qualificado do tipo que representa a entidade. Esse tipo pode ser uma classe em seu projeto, um tipo definido em um assembly que você faz referência na sua solução ou um tipo definido no modelo de objeto BDC.
+2. Defina as **TypeName** propriedade para o nome totalmente qualificado do tipo que representa a entidade. Esse tipo pode ser uma classe em seu projeto, um tipo definido em um assembly que você faz referência na sua solução ou um tipo definido no modelo de objeto BDC.
 
-    -   Para uma classe em seu projeto, escolha a seta para baixo ao lado de **TypeName** propriedade, escolha a **projeto atual** guia na caixa de diálogo que aparece e, em seguida, selecione a classe em seu projeto.
+    - Para uma classe em seu projeto, escolha a seta para baixo ao lado de **TypeName** propriedade, escolha a **projeto atual** guia na caixa de diálogo que aparece e, em seguida, selecione a classe em seu projeto.
 
          O nome totalmente qualificado inclui o namespace e o nome da classe seguido pelo nome do sistema LOB. O exemplo a seguir define o valor da **TypeName** propriedade a uma classe em seu projeto.
 
          `MyBDCNamespace.BdcModel1.Contact, BdcModel1`
 
-    -   Para um tipo localizado em um assembly em sua solução, o nome totalmente qualificado inclui o nome do tipo, o nome do assembly, o número de versão, cultura e token de chave pública.
+    - Para um tipo localizado em um assembly em sua solução, o nome totalmente qualificado inclui o nome do tipo, o nome do assembly, o número de versão, cultura e token de chave pública.
 
          O exemplo a seguir define o valor da **TypeName** propriedade para um tipo definido em um assembly que você faz referência na sua solução.
 
          `MyNamespace.Contact, myAssemblyName, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
-    -   Para um tipo definido no modelo de objeto de BDC, o nome totalmente qualificado inclui o namespace e o nome do tipo.
+    - Para um tipo definido no modelo de objeto de BDC, o nome totalmente qualificado inclui o namespace e o nome do tipo.
 
          O exemplo a seguir define o valor da **TypeName** propriedade para um tipo no modelo de objeto BDC.
 
          `Microsoft.BusinessData.Runtime.DynamicType`
 
-3.  No **detalhes do método BDC** , abra a lista que aparece para o descritor de tipo e, em seguida, escolha **editar**.
+3. No **detalhes do método BDC** , abra a lista que aparece para o descritor de tipo e, em seguida, escolha **editar**.
 
      O **BDC Explorer** janela é aberta.
 
-4.  No **BDC Explorer**, abra o menu de atalho do descritor de tipo e, em seguida, escolha **Adicionar descritor de tipo**.
+4. No **BDC Explorer**, abra o menu de atalho do descritor de tipo e, em seguida, escolha **Adicionar descritor de tipo**.
 
      Um novo descritor de tipo é adicionado como um filho ao descritor de tipo de entidade. Configure esse descritor de tipo como um campo.
 
-5.  Repita a etapa 4 para adicionar um descritor de tipo filho para cada campo da entidade.
+5. Repita a etapa 4 para adicionar um descritor de tipo filho para cada campo da entidade.
 
 ### <a name="to-define-a-collection-of-entities"></a>Para definir uma coleção de entidades
 

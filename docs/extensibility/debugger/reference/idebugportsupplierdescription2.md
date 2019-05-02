@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d5f210d3f0f8f2a9d28abee3d1956a3b4d09038a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918088"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
 Permite que o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] interface do usuário para exibir o texto dentro a **informações de transporte** seção o **anexar ao processo** caixa de diálogo.

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d35f8486ae85f0933d30b9587f2fc59652071a85
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859938"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 O manifesto de ferramenta de recursos é um aplicativo de console que utiliza uma lista de recursos de imagem (arquivos. png ou. XAML) e gera um arquivo de .imagemanifest que permite que essas imagens a serem usados com o serviço de imagem do Visual Studio. Além disso, essa ferramenta pode ser usada para adicionar imagens a um .imagemanifest existente. Essa ferramenta é útil para adicionar suportam a alto DPI e temas de imagem para uma extensão do Visual Studio. O arquivo .imagemanifest gerado deve ser incluído no e implantado como parte de uma extensão do Visual Studio (VSIX).
@@ -43,25 +43,25 @@ O manifesto de ferramenta de recursos é um aplicativo de console que utiliza um
 
  **Exemplos**
 
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest
 
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds
 
 ## <a name="notes"></a>Observações
 
--   A ferramenta só oferece suporte a arquivos. PNG e. XAML. Quaisquer outros tipos de arquivo de imagem ou serão ignorados. Um aviso será gerado para todos os tipos sem suporte encontrados ao analisar os recursos. Se nenhum suporte para imagens são encontradas quando termina a ferramenta de análise de recursos, um erro será gerado
+- A ferramenta só oferece suporte a arquivos. PNG e. XAML. Quaisquer outros tipos de arquivo de imagem ou serão ignorados. Um aviso será gerado para todos os tipos sem suporte encontrados ao analisar os recursos. Se nenhum suporte para imagens são encontradas quando termina a ferramenta de análise de recursos, um erro será gerado
 
--   Seguindo o formato sugerido para imagens PNG, a ferramenta definirá o valor de dimensão de tamanho/para o. PNG como o tamanho do formato especificado, mesmo se ele é diferente do que o tamanho da imagem real.
+- Seguindo o formato sugerido para imagens PNG, a ferramenta definirá o valor de dimensão de tamanho/para o. PNG como o tamanho do formato especificado, mesmo se ele é diferente do que o tamanho da imagem real.
 
--   O formato de largura/altura pode ser omitido para imagens PNG, mas a ferramenta lerá largura/altura da imagem real e usá-las para o valor de dimensão/tamanho da imagem.
+- O formato de largura/altura pode ser omitido para imagens PNG, mas a ferramenta lerá largura/altura da imagem real e usá-las para o valor de dimensão/tamanho da imagem.
 
--   Executar essa ferramenta na faixa de imagens várias vezes para o mesmo .imagemanifest resultará em entradas duplicadas de manifesto, porque a ferramenta tenta dividir a faixa de imagens em imagens independentes e adicioná-los para o manifesto existente.
+- Executar essa ferramenta na faixa de imagens várias vezes para o mesmo .imagemanifest resultará em entradas duplicadas de manifesto, porque a ferramenta tenta dividir a faixa de imagens em imagens independentes e adicioná-los para o manifesto existente.
 
--   Mesclando (omitindo /newGuids ou /newIds) deve ser feito somente para manifestos gerados por ferramenta. Manifestos que foram personalizados ou gerados por outros meios não podem ser mesclados corretamente.
+- Mesclando (omitindo /newGuids ou /newIds) deve ser feito somente para manifestos gerados por ferramenta. Manifestos que foram personalizados ou gerados por outros meios não podem ser mesclados corretamente.
 
--   Manifestos são gerados para assemblies nativos talvez precise ser editado manualmente após a geração de fazer com que os símbolos de ID corresponde ao recurso as IDs de arquivo. RC do assembly nativo.
+- Manifestos são gerados para assemblies nativos talvez precise ser editado manualmente após a geração de fazer com que os símbolos de ID corresponde ao recurso as IDs de arquivo. RC do assembly nativo.
 
 ## <a name="sample-output"></a>Saída de Exemplo
  **Manifesto de imagem simples**

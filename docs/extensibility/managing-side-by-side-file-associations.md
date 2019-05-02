@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907247"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gerenciar associações de arquivo lado a lado
 
@@ -51,7 +51,7 @@ Se você quiser vários VSPackages lado a lado para usar a mesma extensão, voc�
 
   **Linhas da tabela CustomAction que determinam a versão mais recente do Visual Studio**
 
-  |Ação|Tipo|Origem|Destino|
+  |Ação|Tipo|Source|Destino|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
@@ -81,9 +81,9 @@ Desinstalar um VSPackage que grava entradas do registro para associações de ar
 
 - Instrua o usuário a executar um reparo da versão do VSPackage que o usuário quer ter a associação de arquivo.
 
--   Fornece um programa executável separado que reescreve as entradas do registro apropriado.
+- Fornece um programa executável separado que reescreve as entradas do registro apropriado.
 
--   Forneça uma configuração Opções página ou caixa de diálogo que permite aos usuários escolher as associações de arquivo e recuperar as associações perdidas. Instrua os usuários para executá-lo após a desinstalação.
+- Forneça uma configuração Opções página ou caixa de diálogo que permite aos usuários escolher as associações de arquivo e recuperar as associações perdidas. Instrua os usuários para executá-lo após a desinstalação.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,14 +1,9 @@
 ---
 title: Metadados como origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: conceptual
 dev_langs:
 - CSharp
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 4945a07f-b3be-4f05-a587-fc29058aa8fa
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: wpickett
-ms.openlocfilehash: 8bcac8071d0cc76c29a5b9d0478727fea0b59901
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49232941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444598"
 ---
 # <a name="metadata-as-source"></a>Metadados como origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ ms.locfileid: "49232941"
 Metadados como origem permite que você exiba os metadados que aparece como código-fonte c# em um buffer somente leitura. Isso permite que uma exibição das declarações de tipos e membros (sem implementações). Você pode exibir metadados como origem, executando o **ir para definição** comando para tipos ou membros cujo código-fonte não está disponível no seu projeto ou solução.  
   
 > [!NOTE]
->  Quando você tenta executar o **ir para definição** de comando para tipos ou membros que são marcados como internos, o ambiente de desenvolvimento integrado (IDE) exibe seus metadados como origem, independentemente se o assembly de referência é um amigo ou não.  
+> Quando você tenta executar o **ir para definição** de comando para tipos ou membros que são marcados como internos, o ambiente de desenvolvimento integrado (IDE) exibe seus metadados como origem, independentemente se o assembly de referência é um amigo ou não.  
   
  Você pode exibir metadados como origem em qualquer Editor de códigos ou o **definição de código** janela.  
   

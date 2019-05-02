@@ -1,34 +1,31 @@
 ---
-title: 'Como: gerar modelos a partir de modelos usando sequências de Escape | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Gerar modelos a partir de modelos usando sequências de Escape | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, generating templates from templates
 ms.assetid: 4126156a-7cea-48b8-925e-7790806cfe6c
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd3a54c69b33e503908217b9d0d83c6f61c6380a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 4a3ddd7896732c5b87c5b6bd2032c27fffd96a41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49249400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546616"
 ---
-# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Como gerar modelos a partir de modelos usando sequências de escape
+# <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>Como: Gerar modelos com base em modelos usando sequências de escape
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode criar um modelo de texto que cria outro modelo de texto como sua saída de texto gerado. Para fazer isso, você deve usar sequências de escape para delinear as marcas do modelo de texto. Se você não usar sequências de escape, seu modelo de texto gerada terá um significado predefinido. Para obter mais informações sobre como usar sequências de escape em modelos de texto, consulte [usando sequências de Escape em modelos de texto](../modeling/using-escape-sequences-in-text-templates.md).  
   
 ### <a name="to-generate-a-text-template-from-within-a-text-template"></a>Para gerar um modelo de texto de dentro de um modelo de texto  
   
--   Use a barra invertida (\\) como um caractere de escape para produzir as marcas de marcação necessário dentro do modelo de texto para diretivas, instruções, expressões e classes de recursos em um arquivo de modelo de texto separado.  
+- Use a barra invertida (\\) como um caractere de escape para produzir as marcas de marcação necessário dentro do modelo de texto para diretivas, instruções, expressões e classes de recursos em um arquivo de modelo de texto separado.  
   
     ```  
     \<#@ directive \#>  
@@ -79,6 +76,3 @@ XmlDocument xDoc = new XmlDocument();
      }  
 #>  
 ```
-
-
-

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 34820bbfffa081080fb8fb7a4271a344e48b7919
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 1c0d5fe63cfcaf52dbbdf9ad34ce8d40e6134c2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401566"
 ---
 # <a name="idiasymbolgethasmanagedcode"></a>IDiaSymbol::get_hasManagedCode
 Recupera um sinalizador que indica se o módulo contém o código gerenciado.
@@ -39,7 +39,7 @@ HRESULT get_hasManagedCode(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  Essa propriedade está disponível do `SymTagCompilandDetails` tipo de símbolo (consulte [CompilandDetails](../../debugger/debug-interface-access/compilanddetails.md)).

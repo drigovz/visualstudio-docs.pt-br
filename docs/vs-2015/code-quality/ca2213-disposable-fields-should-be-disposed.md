@@ -1,14 +1,9 @@
 ---
-title: 'CA2213: Os campos descartáveis devem ser descartados | Microsoft Docs'
-ms.custom: ''
+title: 'CA2213: Campos descartáveis devem ser descartados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
 - CA2213
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b4e59dd35ab1f787dcaada5448443e35efc1f6c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d89e714ceb0a6d0e3d99be05f6c6936622c035ab
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49910480"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927569"
 ---
-# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: os campos descartáveis devem ser descartados
+# <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Campos descartáveis devem ser descartados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,7 +45,7 @@ ms.locfileid: "49910480"
  É seguro suprimir um aviso nessa regra, se você não é responsável por liberar os recursos mantidos pelo campo, ou se a chamada para <xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo `TypeA` que implementa <xref:System.IDisposable> (`FT` na discussão previosu).
+ O exemplo a seguir mostra um tipo `TypeA` que implementa <xref:System.IDisposable> (`FT` na discussão anterior).
 
  [!code-csharp[FxCop.Usage.IDisposablePattern#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.IDisposablePattern/cs/FxCop.Usage.IDisposablePattern.cs#1)]
 
@@ -61,6 +56,3 @@ ms.locfileid: "49910480"
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.IDisposable?displayProperty=fullName> [Padrão de descarte](http://msdn.microsoft.com/library/31a6c13b-d6a2-492b-9a9f-e5238c983bcb)
-
-
-

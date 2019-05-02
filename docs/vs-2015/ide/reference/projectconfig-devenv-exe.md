@@ -21,17 +21,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59a3ad19a6e2a51ec865f66721e35548323d20a3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4b956fb09681f6f4a1f916f4b108028f69f009cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785952"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044194"
 ---
 # <a name="projectconfig-devenvexe"></a>/ProjectConfig (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Especifica uma configuração de build do projeto a ser aplicada ao compilar, limpar, recompilar ou implantar o projeto nomeado no argumento `/project`.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -67,11 +66,11 @@ devenv SolutionName {/build|/clean|/rebuild|/deploy} SolnConfigName [/project Pr
   
 ## <a name="remarks"></a>Comentários  
   
--   Deve ser usado com a opção `/project` como parte de um comando `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.  
+- Deve ser usado com a opção `/project` como parte de um comando `devenv /build`, /`clean`, `/rebuild` ou `/deploy`.  
   
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
   
--   As informações de resumo para builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
+- As informações de resumo para builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo compila o projeto `CSharpConsoleApp`, usando a configuração de build do projeto `Debug` na configuração de solução `Debug` de `MySolution`.  

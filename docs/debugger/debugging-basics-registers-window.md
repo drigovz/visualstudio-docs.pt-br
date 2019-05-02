@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852274"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>Sobre a janela de registros no Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -46,9 +46,25 @@ A janela **Registros** só ficará disponível se a depuração do nível de end
 
  A janela **Registros** permite fazer mais do que apenas exibir o conteúdo de um registro. Quando você está no modo de interrupção em código nativo, pode clicar no conteúdo de um registro e editar o valor. Isso não é algo que você deve fazer aleatoriamente. A menos que você compreenda o registro que está editando, e os dados que ele contém, o resultado de uma edição descuidada provavelmente será uma falha de programa ou alguma outra consequência indesejada. Infelizmente, uma explicação detalhada dos conjuntos de registro dos vários processadores Intel e compatíveis com Intel vai além do escopo dessa breve introdução.
 
-## <a name="register-groups"></a>Registrar grupos
- Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito na janela **Registros**, verá um menu de atalho contendo uma lista de grupos que você pode exibir ou ocultar como achar melhor.
+## <a name="register-groups"></a>Grupos de registros
+
+Para reduzir a confusão, a janela **Registros** organiza os registros em grupos. Se você clicar com o botão direito na janela **Registros**, verá um menu de atalho contendo uma lista de grupos que você pode exibir ou ocultar como achar melhor.
+
+## <a name="register-flags"></a>Sinalizadores de registro
+
+Para os processadores Intel x86, você poderá ver os seguintes sinalizadores na **registra** janela. Durante uma sessão de depuração, você também pode editar esses sinalizadores.
+
+|Sinalizador|Definir o valor|
+|-|-|
+|Estouro|OV = 1|
+|Direção|UP = 1|
+|Interrupção|EI = 1|
+|logon|PL = 1|
+|Zero|ZR = 1|
+|Carry auxiliar|AC = 1|
+|Paridade|PE = 1|
+|Executar|CY = 1|
 
 ## <a name="see-also"></a>Consulte também
-- [Como usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
+- [Como: Usar a janela Registros](../debugger/how-to-use-the-registers-window.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ceb330756ea98961f420be6b148b7a295eee6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960444"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 
@@ -40,9 +40,7 @@ O método mais rápido de criar um validador é usar o modelo de projeto. Isso c
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>Para definir uma extensão usando um modelo de projeto
 
-1. Criar um projeto em uma nova solução, usando o **novo projeto** comando as **arquivo** menu.
-
-2. No **novo projeto** caixa de diálogo **projetos de modelagem**, selecione **extensão de validação do Designer de camada**.
+1. Criar um novo **extensão de validação do Designer de camada** projeto.
 
     O modelo cria um projeto que contém um pequeno exemplo.
 
@@ -52,14 +50,24 @@ O método mais rápido de criar um validador é usar o modelo de projeto. Isso c
    > - Edite as chamadas `LogValidationError` para remover os argumentos opcionais `errorSourceNodes` e `errorTargetNodes`.
    > - Se você usar as propriedades personalizadas, aplique a atualização mencionada em [adicionar propriedades personalizadas a diagramas de dependência](../modeling/add-custom-properties-to-layer-diagrams.md).
 
-3. Edite o código para definir a validação. Para obter mais informações, consulte [Programando a validação](#programming).
+2. Edite o código para definir a validação. Para obter mais informações, consulte [Programando a validação](#programming).
 
-4. Para testar a extensão, consulte [depurando a validação de camada](#debugging).
+3. Para testar a extensão, consulte [depurando a validação de camada](#debugging).
 
    > [!NOTE]
    > O método será chamado apenas em circunstâncias específicas, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [depurando a validação de camada](#debugging).
 
-5. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o *. VSIX* arquivo na *bin* directory. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, escolha **extensões e atualizações** sobre o **ferramentas** menu.
+::: moniker range="vs-2017"
+
+4. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o *. VSIX* arquivo na *bin* directory. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, escolha **extensões e atualizações** sobre o **ferramentas** menu.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Para instalar a extensão na instância principal do Visual Studio ou em outro computador, localize o *. VSIX* arquivo na *bin* directory. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalá-lo, escolha **gerenciar extensões** sobre o **extensões** menu.
+
+::: moniker-end
 
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adicionando um validador de camada a um VSIX separado
 
@@ -67,19 +75,17 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Para adicionar a validação de camada a um VSIX separado
 
-1.  Crie um projeto de biblioteca de classes em uma solução nova ou existente do Visual Studio. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, em seguida, clique em **biblioteca de classes**. Esse projeto conterá a classe de validação de camada.
+1. Crie um projeto de **Biblioteca de Classes**. Esse projeto conterá a classe de validação de camada.
 
-2.  Identifique ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**. Se você tiver que adicionar um projeto VSIX, siga estas etapas:
+2. Localizar ou criar uma **VSIX Project** em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**.
 
-    1.  No **novo projeto** diálogo caixa, escolha **Visual c#**, **extensibilidade**, **projeto VSIX**.
+3. Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.
 
-    2.  Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, **definir como projeto de inicialização**.
+4. Na **vsixmanifest**, em **ativos**, adicione o projeto de validação de camada como um componente de MEF:
 
-3.  Na **vsixmanifest**, em **ativos**, adicione o projeto de validação de camada como um componente de MEF:
+    1. Escolher **novo**.
 
-    1.  Escolher **novo**.
-
-    2.  No **adicionar novo ativo** caixa de diálogo, defina:
+    2. No **adicionar novo ativo** caixa de diálogo, defina:
 
          **Type** = **Microsoft.VisualStudio.MefComponent**
 
@@ -87,11 +93,11 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
          **Projeto** = *seu projeto de validador*
 
-4.  Você também deve adicioná-lo como uma validação de camada:
+5. Você também deve adicioná-lo como uma validação de camada:
 
-    1.  Escolher **novo**.
+    1. Escolher **novo**.
 
-    2.  No **adicionar novo ativo** caixa de diálogo, defina:
+    2. No **adicionar novo ativo** caixa de diálogo, defina:
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Isso não é uma das opções na lista suspensa. Você deve inseri-lo usando o teclado.
 
@@ -99,7 +105,7 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
          **Projeto** = *seu projeto de validador*
 
-5.  Volte para o projeto de validação de camada e adicione as seguintes referências de projeto:
+6. Volte para o projeto de validação de camada e adicione as seguintes referências de projeto:
 
     |**Referência**|**O que isso permite que você faça**|
     |-|-|
@@ -110,18 +116,16 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
     |System.ComponentModel.Composition|Defina o componente de validação usando Managed Extensibility Framework (MEF)|
     |Microsoft.VisualStudio.Modeling.Sdk.[version]|Definir as extensões de modelagem|
 
-6.  Copie o código de exemplo no final deste tópico para o arquivo de classe no projeto da biblioteca de validador para conter o código para a validação. Para obter mais informações, consulte [Programando a validação](#programming).
+7. Copie o código de exemplo no final deste tópico para o arquivo de classe no projeto da biblioteca de validador para conter o código para a validação. Para obter mais informações, consulte [Programando a validação](#programming).
 
-7.  Para testar a extensão, consulte [depurando a validação de camada](#debugging).
+8. Para testar a extensão, consulte [depurando a validação de camada](#debugging).
 
     > [!NOTE]
     > O método será chamado apenas em circunstâncias específicas, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [depurando a validação de camada](#debugging).
 
-8.  Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **. VSIX** arquivo na **bin** diretório do projeto VSIX. Copie-o no computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer.
+9. Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **. VSIX** arquivo na **bin** diretório do projeto VSIX. Copie-o no computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer.
 
-     Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.
-
-##  <a name="programming"></a> Validação de programação
+## <a name="programming"></a> Validação de programação
 
 Para definir uma extensão de validação de camada, você define uma classe que tem as seguintes características:
 
@@ -190,7 +194,7 @@ Cada nó e cada Link tem uma ou mais categorias que especificam o tipo de elemen
 
 Links de camadas para elementos no código possuem a categoria "Representa".
 
-##  <a name="debugging"></a> Validação de depuração
+## <a name="debugging"></a> Validação de depuração
 
 Para depurar a extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.
 
@@ -222,7 +226,7 @@ Sempre iniciar a instância experimental pressionando CTRL + F5 (**iniciar sem d
 
 Para instalar sua extensão de validação em um computador no qual uma versão adequada do Visual Studio está instalada, abra o arquivo VSIX no computador de destino.
 
-##  <a name="example"></a> Exemplo de código
+## <a name="example"></a> Exemplo de código
 
 ```csharp
 using System;

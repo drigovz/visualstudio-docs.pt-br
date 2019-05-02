@@ -1,7 +1,7 @@
 ---
 title: Solução de erros relacionados à rede ou ao proxy
 description: Encontre soluções para erros relacionados à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio por trás de um firewall ou um servidor proxy.
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -15,12 +15,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f33351245d35ef025d98b3dcf1c2c325fa1ca802
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968126"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -52,6 +54,8 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 - Se você quiser usar suas credenciais padrão com o proxy, poderá realizar as seguintes ações:
 
+::: moniker range="vs-2017"
+
   1. Localize **devenv.exe.config** (o arquivo de configuração devenv.exe) em: **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** ou em **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
   2. No arquivo de configuração, localize o bloco `<system.net>` e adicione esse código:
@@ -65,11 +69,28 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
       Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Para obter mais informações, confira as páginas [Elemento &lt;defaultProxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) e [Elemento &lt;proxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Para obter mais informações, confira as páginas [Elemento &lt;defaultProxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [Elemento &lt;proxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
 
-  -OU-
+::: moniker-end
 
-- Você também pode seguir as instruções na postagem no blog [How to connect through an authenticated Web Proxy](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/) (Como se conectar por meio de um Proxy Web autenticado), que mostra como adicionar código que permitirá que você use o proxy.
+::: moniker range="vs-2019"
+
+  1. Localize **devenv.exe.config** (o arquivo de configuração devenv.exe) em: **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** ou em **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
+
+  2. No arquivo de configuração, localize o bloco `<system.net>` e adicione esse código:
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Você deve inserir o endereço de proxy correto para sua rede na `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Para obter mais informações, confira as páginas [Elemento &lt;defaultProxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) e [Elemento &lt;proxy&gt; (configurações de rede)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erro: “A conexão subjacente foi fechada”
 
@@ -118,4 +139,4 @@ Habilite as conexões para as seguintes URLs:
 
 * [Instalar e usar o Visual Studio atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
-* [Instalar o Visual Studio 2017](install-visual-studio.md)
+* [Instalar o Visual Studio](install-visual-studio.md)

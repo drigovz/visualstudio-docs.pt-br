@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 24ee1588555d51c20989d782375b32e5874df878
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446615"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Passo a passo: Importar itens de um site do SharePoint existente
   Este passo a passo demonstra como importar itens de um site do SharePoint existente para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -36,9 +36,9 @@ ms.locfileid: "56841725"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.
+- Edições com suporte do [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] e do SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="customize-a-sharepoint-site"></a>Personalizar um site do SharePoint
  Neste exemplo, você criará e personalizar um subsite do SharePoint com a adição de uma nova coluna de site e criando outro subsite para uso posterior. Posteriormente, você irá exportar o subsite primeiro para um arquivo. wsp e, em seguida, importar a coluna de site personalizado para o subsite segundo usando o projeto de importação. wsp.
@@ -75,27 +75,27 @@ ms.locfileid: "56841725"
  Em seguida, obter um arquivo de instalação (. wsp) do SharePoint que contém os itens do SharePoint e os elementos que você deseja importar para seu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint. Se você ainda não tiver um arquivo. wsp, em seguida, você deve criar um de um site existente do SharePoint. Neste exemplo, você exportará o site do SharePoint padrão em um arquivo. wsp.
 
 > [!IMPORTANT]
->  Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
+> Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Para exportar um site do SharePoint existente
 
-1.  No site do SharePoint, escolha **configurações de Site** sobre o **ações do Site** guia para exibir a página de configurações do Site.
+1. No site do SharePoint, escolha **configurações de Site** sobre o **ações do Site** guia para exibir a página de configurações do Site.
 
-2.  No **ações do Site** seção da página Configurações do Site, escolha o **site Salvar como modelo** link.
+2. No **ações do Site** seção da página Configurações do Site, escolha o **site Salvar como modelo** link.
 
-3.  No **nome do arquivo** , digite **ExampleSite**e, nas **nome do modelo** , digite **Site de exemplo**.
+3. No **nome do arquivo** , digite **ExampleSite**e, nas **nome do modelo** , digite **Site de exemplo**.
 
-4.  Neste exemplo, deixe o **incluir conteúdo** caixa de seleção desmarcada.
+4. Neste exemplo, deixe o **incluir conteúdo** caixa de seleção desmarcada.
 
      Se você selecionar esta caixa, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] salva todas as listas e bibliotecas de documentos e seu conteúdo, o arquivo. wsp. Embora isso seja útil em algumas circunstâncias, não é necessário para este exemplo.
 
-5.  Quando a operação for concluída com êxito, escolha o **Galeria de soluções** link para exibir o arquivo. wsp.
+5. Quando a operação for concluída com êxito, escolha o **Galeria de soluções** link para exibir o arquivo. wsp.
 
      Para exibir a página da Galeria de soluções mais adiante, abra o **ações do Site** menu, escolha **configurações de Site**, escolha o **vá para configurações de site de nível superior** link no  **Site Collection Administration** seção e, em seguida, escolha o **soluções** link no **galerias** seção.
 
-6.  Na Galeria de soluções, escolha o **ExampleSite** link.
+6. Na Galeria de soluções, escolha o **ExampleSite** link.
 
-7.  No **Download de arquivo** diálogo caixa, escolha o **salvar** botão para salvar o arquivo em seu sistema local, por padrão, na pasta Downloads.
+7. No **Download de arquivo** diálogo caixa, escolha o **salvar** botão para salvar o arquivo em seu sistema local, por padrão, na pasta Downloads.
 
 ## <a name="import-the-wsp-file"></a>Importar o arquivo. wsp
  Agora que você tem um *. wsp* arquivo que contém um item que você deseja reutilizar (a coluna personalizada de site e teste de coluna), importe o *. wsp* arquivo para acessá-lo.
@@ -117,7 +117,7 @@ ms.locfileid: "56841725"
 6. No **especifique a nova origem do projeto** página, navegue até o local no sistema onde você salvou o *. wsp* arquivo anteriormente e, em seguida, selecione o **próxima** botão.
 
    > [!NOTE]
-   >  Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.
+   > Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.
 
 7. No **selecionar itens para importar** caixa, desmarque todas as caixas de seleção na lista, exceto **coluna teste**e, em seguida, escolha o **concluir** botão.
 
@@ -130,13 +130,13 @@ ms.locfileid: "56841725"
 
 ### <a name="to-deploy-the-project"></a>Para implantar o projeto
 
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], escolha o **F5** chave para implantar e executar o *. wsp* Importar projeto.
+1. Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], escolha o **F5** chave para implantar e executar o *. wsp* Importar projeto.
 
-2.  No site do SharePoint, abra o **ações do Site** menu e, em seguida, escolha **configurações de Site** para exibir a página de configurações do Site.
+2. No site do SharePoint, abra o **ações do Site** menu e, em seguida, escolha **configurações de Site** para exibir a página de configurações do Site.
 
-3.  No **galerias** , escolha o **colunas de Site** link.
+3. No **galerias** , escolha o **colunas de Site** link.
 
-4.  Role para baixo até a **colunas personalizadas** seção.
+4. Role para baixo até a **colunas personalizadas** seção.
 
      Observe que a coluna de site personalizadas que você importou primeiro site do SharePoint aparece na lista.
 

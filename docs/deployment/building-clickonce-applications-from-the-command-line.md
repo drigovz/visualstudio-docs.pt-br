@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5576a6d219a27ad51c096ee3ddb177b656b0552e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929167"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Compilar aplicativos ClickOnce usando a linha de comando
 No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], você pode compilar projetos da linha de comando, mesmo se eles são criados no ambiente de desenvolvimento integrado (IDE). Na verdade, você pode recompilar um projeto criado com [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] em outro computador que tem apenas o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] instalado. Isso permite que você reproduza uma compilação usando um processo automatizado, por exemplo, em uma compilação de central de laboratório ou usando scripts avançados técnicas além do escopo da criação do projeto em si.
@@ -35,27 +35,27 @@ No [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]
 
  O `/target:publish` comando informa ao MSBuild para invocar o destino de publicação. O destino de publicação depende do destino de build. Isso significa que a operação de publicação é um superconjunto da operação de compilação. Por exemplo, se você fez uma alteração em um dos seus arquivos de origem do Visual Basic ou c#, o assembly correspondente automaticamente ser recriado por operação de publicação.
 
- Para obter informações sobre como gerar uma completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a ferramenta de linha de comando Mage.exe para criar sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto, consulte [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Para obter informações sobre como gerar uma completa [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a ferramenta de linha de comando Mage.exe para criar sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifesto, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Criar e compilar um aplicativo ClickOnce básico com o MSBuild
 
 #### <a name="to-create-and-publish-a-clickonce-project"></a>Para criar e publicar um projeto do ClickOnce
 
-1. Clique em **novo projeto** da **arquivo** menu. A caixa de diálogo **Novo Projeto** é exibida.
+1. Abra o Visual Studio e crie um projeto.
 
-2. Selecione **aplicativo do Windows** e nomeie-o `CmdLineDemo`.
+    Escolha o **aplicativo de área de trabalho do Windows** modelo de projeto e nomeie o projeto `CmdLineDemo`.
 
-3. Dos **construir** menu, clique no **publicar** comando.
+1. Dos **construir** menu, clique no **publicar** comando.
 
     Essa etapa garante que o projeto está configurado corretamente para produzir um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação de aplicativos.
 
     O Assistente de Publicação será exibido.
 
-4. No Assistente de publicação, clique em **concluir**.
+1. No Assistente de publicação, clique em **concluir**.
 
     Visual Studio gera e exibe a página da Web padrão, chamada *Publish. htm*.
 
-5. Salve seu projeto e anote o local da pasta na qual ele está armazenado.
+1. Salve seu projeto e anote o local da pasta na qual ele está armazenado.
 
    As etapas acima criam um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] projeto que foi publicado pela primeira vez. Agora você pode reproduzir o build fora do IDE.
 
@@ -169,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
 - [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Passo a passo: implantar um aplicativo ClickOnce manualmente](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

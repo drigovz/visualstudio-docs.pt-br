@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418461"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Como: Criar um arquivo. VSCT
 
@@ -80,7 +80,7 @@ Você pode criar um XML com base em *VSCT* arquivo de uma tabela existente do co
     Essa ação cria um novo *VSCT* arquivo XML de origem de tabela de comando. Você pode compilar o arquivo usando *Vsct.exe*, o compilador VSCT, como você faria com qualquer outro *VSCT* arquivo.
 
    > [!NOTE]
-   >  Você pode melhorar a legibilidade do *VSCT* reformatar os comentários XML o arquivo.
+   > Você pode melhorar a legibilidade do *VSCT* reformatar os comentários XML o arquivo.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Você pode criar um XML com base em *VSCT* arquivo de um binário existente *CTO
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Para criar um arquivo. VSCT de um arquivo CTO já
 
-1.  Obter cópias do *CTO já* arquivo e correspondente *.ctsym* arquivo.
+1. Obter cópias do *CTO já* arquivo e correspondente *.ctsym* arquivo.
 
-2.  Coloque os arquivos no mesmo diretório que o *vsct.exe* compilador.
+2. Coloque os arquivos no mesmo diretório que o *vsct.exe* compilador.
 
-3.  No prompt de comando do Visual Studio, vá para o diretório que contém o *CTO já* e *.ctsym* arquivos.
+3. No prompt de comando do Visual Studio, vá para o diretório que contém o *CTO já* e *.ctsym* arquivos.
 
-4.  Tipo
+4. Tipo
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Você pode criar um XML com base em *VSCT* arquivo de um binário existente *CTO
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Para adicionar um arquivo. VSCT para compilação de projeto
 
-1.  Abra seu arquivo de projeto no editor. Se o projeto é carregado, você deve descarregá-lo pela primeira vez.
+1. Abra seu arquivo de projeto no editor. Se o projeto é carregado, você deve descarregá-lo pela primeira vez.
 
-2.  Adicionar um [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contém um `VSCTCompile` elemento, conforme mostrado no exemplo a seguir.
+2. Adicionar um [elemento ItemGroup](../../msbuild/itemgroup-element-msbuild.md) que contém um `VSCTCompile` elemento, conforme mostrado no exemplo a seguir.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Você pode criar um XML com base em *VSCT* arquivo de um binário existente *CTO
 
      O `ResourceName` elemento deve sempre ser definido como `Menus.ctmenu`.
 
-3.  Se o projeto contiver uma *. resx* do arquivo, adicione uma `EmbeddedResource` elemento que contém um `MergeWithCTO` elemento, conforme mostrado no exemplo a seguir:
+3. Se o projeto contiver uma *. resx* do arquivo, adicione uma `EmbeddedResource` elemento que contém um `MergeWithCTO` elemento, conforme mostrado no exemplo a seguir:
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Você pode criar um XML com base em *VSCT* arquivo de um binário existente *CTO
 
      Essa marcação deve ficar dentro de `ItemGroup` elemento que contém recursos inseridos.
 
-4.  Abra o arquivo de pacote, geralmente chamado  *\<ProjectName\>Package.cs* ou  *\<ProjectName\>Package.vb*, no editor.
+4. Abra o arquivo de pacote, geralmente chamado  *\<ProjectName\>Package.cs* ou  *\<ProjectName\>Package.vb*, no editor.
 
-5.  Adicionar um `ProvideMenuResource` atributo à classe de pacote, conforme mostrado no exemplo a seguir.
+5. Adicionar um `ProvideMenuResource` atributo à classe de pacote, conforme mostrado no exemplo a seguir.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

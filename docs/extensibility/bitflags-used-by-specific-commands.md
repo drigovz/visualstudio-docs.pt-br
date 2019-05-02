@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891681"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Sinalizadores de bit usados por comandos específicos
 O comportamento de um número de funções em que a API de plug-in de controle do código-fonte pode ser modificado, definindo um ou mais bits em um único valor. Esses valores são conhecidos como sinalizadores de bit. As vários sinalizadores de bit usados pela API de plug-in de controle de origem são detalhadas aqui, agrupados por função em que os utiliza.

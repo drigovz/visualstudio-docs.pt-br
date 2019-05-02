@@ -14,17 +14,16 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 066535309c7001c3f7a951f68321f7530a06ed05
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 99fb00ded29b9d0764f04d5062a7ee971954fbf7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433752"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use a página **Compilar** do **Designer de Projeto** para especificar as propriedades de configuração de build do projeto. Essa página se aplica somente a projetos do [!INCLUDE[csprcs](../../includes/csprcs-md.md)].  
   
  Para acessar a página **Build**, escolha um nó do projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Build**.  
@@ -35,7 +34,7 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
  As opções a seguir permitem selecionar a configuração e a plataforma a ser exibida ou modificada.  
   
 > [!NOTE]
->  Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, essas opções não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuração**  
  Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.  

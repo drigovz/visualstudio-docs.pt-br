@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5609844763a5bb9ece7aa45b558191cf974fefb0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2758dd6425e2bfb4505a1ee9e61d4966e3ba90b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808419"
 ---
 # <a name="start-view"></a>O modo de Início
 
@@ -25,7 +25,7 @@ O modo de início contém duas seções principais, o *marca d'água* e o **defi
 
 ## <a name="watermark"></a>Marca de agua
 
-O painel de marca d'água contém uma lista de links para todas as exibições do Designer XSD, Editor de XML, e **XML Schema Explorer**. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
+O painel de marca d'água contém uma lista de links para todas as exibições do Designer XSD, editor de XML, e **XML Schema Explorer**. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
 
 ## <a name="schema-set-details"></a>Detalhes do conjunto de esquemas
 

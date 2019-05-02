@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970660"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Como: Especificar a taxa de amostra para uma configuração de execução de teste de carga
 
@@ -36,19 +36,19 @@ Veja algumas diretrizes para taxas de amostragem:
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Para especificar a taxa de amostragem do contador de desempenho em uma configuração de execução
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na árvore de teste de carga, na pasta **Configurações de Execução**, escolha a configuração de execução para a qual deseja especificar a taxa de amostragem.
+2. Na árvore de teste de carga, na pasta **Configurações de Execução**, escolha a configuração de execução para a qual deseja especificar a taxa de amostragem.
 
-3.  No menu **Exibir**, selecione **Janela de Propriedades**.
+3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades da configuração de execução de carga são exibidas na janela **Propriedades**.
 
-4.  Na propriedade **Taxa de Amostragem**, insira um valor temporal que indique a frequência com que o teste de carga coletará dados de contador de desempenho.
+4. Na propriedade **Taxa de Amostragem**, insira um valor temporal que indique a frequência com que o teste de carga coletará dados de contador de desempenho.
 
-5.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Taxa de Amostragem**.
+5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Taxa de Amostragem**.
 
 ## <a name="see-also"></a>Consulte também
 

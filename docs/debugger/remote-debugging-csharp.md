@@ -3,7 +3,7 @@ title: Depuração remota de um C# ou o projeto do VB | Microsoft Docs
 ms.custom:
 - remotedebugging"=
 - seodec18
-ms.date: 08/14/2017
+ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
 - C++
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f88379af3ecfe9466fca72f756fd88e6794e9cb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408532"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto c# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, executar seu aplicativo.
@@ -71,7 +71,15 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
 
 5. Verifique se o **diretório de trabalho** caixa de texto está vazia.
 
-6. Escolher **usar computador remoto**e digite **MJO-DL:4022** na caixa de texto. (4022 é o número da porta mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
+6. Escolher **usar computador remoto**e digite **yourmachinename:port** na caixa de texto. (O número da porta é mostrado na janela do depurador remoto. O número da porta incrementa 2 em cada versão do Visual Studio).
+
+    Neste exemplo, use:
+    ::: moniker range=">=vs-2019"
+    **MJO-DL:4024** no Visual Studio de 2019
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    **MJO-DL:4022** no Visual Studio 2017
+    ::: moniker-end
 
 7. Certifique-se de que **habilitar a depuração de código nativo** não estiver selecionada.
 
@@ -82,7 +90,7 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
 10. Copie o arquivo executável que você acabou de criar do seu computador do Visual Studio para a pasta recém-criada no computador remoto.
 
     > [!CAUTION]
-    >  Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
+    > Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
 
     Você pode copiar o projeto manualmente, use Xcopy, Robocopy, Powershell ou outras opções.
 

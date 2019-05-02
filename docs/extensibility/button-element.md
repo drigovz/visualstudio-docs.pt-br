@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891694"
 ---
 # <a name="button-element"></a>Elemento button
 Define um elemento que o usuário pode interagir com o. Botões podem ser de tipos diferentes: Botão, botão de menu e SplitDropDown.

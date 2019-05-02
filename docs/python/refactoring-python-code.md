@@ -1,21 +1,21 @@
 ---
 title: Refatorar o código do Python
 description: O Visual Studio facilita o refatoração do código Python renomeando identificadores, extraindo métodos, adicionando importações e removendo importações não utilizadas.
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 244fbc87af508740e875ee73d948a2f37cce67c9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db1a551e20c597f98052471910bcb696c878675f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429802"
 ---
 # <a name="refactor-python-code"></a>Refatorar o código do Python
 

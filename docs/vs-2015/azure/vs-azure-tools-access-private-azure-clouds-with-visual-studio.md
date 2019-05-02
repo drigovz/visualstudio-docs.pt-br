@@ -1,8 +1,8 @@
 ---
-title: Acessando nuvens privadas do Azure com o Visual Studio | Microsoft Docs
+title: Acessando nuvens privadas do Azure
 description: Saiba como acessar recursos de nuvem privada usando o Visual Studio.
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: 9d733c8d-703b-44e7-a210-bb75874c45c8
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
@@ -11,38 +11,37 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/13/2017
 ms.author: ghogen
-ms.openlocfilehash: 216b85e0ebf42b79c388ce217d548f2dce3c86b6
-ms.sourcegitcommit: e481d0055c0724d20003509000fd5f72fe9d1340
+ms.openlocfilehash: ab0b6167a91f6cf6f5aecdcbcfb03bab62b96b6b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51001317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964117"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>Acessando nuvens privadas do Azure com o Visual Studio
 
-Por padrão, o Visual Studio dá suporte a pontos de extremidade REST de nuvem do Azure. Neste artigo, você aprenderá como usar o certificado da sua nuvem privada para acessar e interagir com a nuvem privada no Visual Studio.
+Por padrão, o Visual Studio dá suporte a pontos de extremidade REST de nuvem do Azure. Neste artigo, você aprende a usar o certificado da nuvem privada para acessar e interagir com a nuvem privada no Visual Studio.
 
-1. No portal do Azure para a nuvem privada, baixe o arquivo de configurações de publicação ou contate o administrador para um arquivo de configurações de publicação. (O arquivo tem a extensão `.publishsettings`.)
+1. No Portal do Azure da nuvem privada, faça o download do arquivo de configurações de publicação ou contate o administrador para obter um arquivo de configurações de publicação. (O arquivo tem a extensão `.publishsettings`.)
 
-1. No Visual Studio **Gerenciador de servidores**, clique com botão direito do **Azure** nó e selecione **gerenciar e filtrar assinaturas**.
+1. No **Gerenciador de Servidores** do Visual Studio, clique com o botão direito do mouse no nó **Azure** e selecione **Gerenciar e Filtrar Assinaturas**.
 
-    ![Comando gerenciar assinaturas](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
+    ![Comando Gerenciar assinaturas](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790778.png)
 
-1. No **gerenciar assinaturas do Microsoft Azure** caixa de diálogo, selecione o **certificados** guia e, em seguida, selecione **importação**.
+1. Na caixa de diálogo **Gerenciar Assinaturas do Microsoft Azure**, selecione a guia **Certificados** e, em seguida, **Importar**.
 
     ![Importação de certificados do Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790779.png)
 
-1. No **importar assinaturas do Microsoft Azure** caixa de diálogo, selecione **procurar**.
+1. Na caixa de diálogo **Importar Assinaturas do Microsoft Azure**, selecione **Procurar**.
 
-    ![Botão Procurar na caixa de diálogo Importar assinaturas do Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
+    ![Botão Procurar na caixa de diálogo Importar Assinaturas do Microsoft Azure](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/browse-button.png)
 
-1. No **aberto** caixa de diálogo, navegue até o diretório onde você salvou o arquivo de configurações de publicação, selecione o arquivo e, em seguida, selecione **abrir**.
+1. Na caixa de diálogo **Abrir**, procure o diretório em que você salvou o arquivo de configurações de publicação, selecione o arquivo e, em seguida, selecione **Abrir**.
 
-    ![Selecione o arquivo de configurações de publicação](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
+    ![Selecionar o arquivo de configurações de publicação](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/select-publish-settings-file.png)
 
-1. Quando retornado para o **importar assinaturas do Microsoft Azure** caixa de diálogo, selecione **importação**.
+1. Ao retornar para a caixa de diálogo **Importar Assinaturas do Microsoft Azure**, selecione **Importar**.
 
-    ![Importe o arquivo de configurações de publicação](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
+    ![Importar o arquivo de configurações de publicação](./media/vs-azure-tools-access-private-azure-clouds-with-visual-studio/IC790780.png)
 
-    Os certificados são importados do arquivo de configurações de publicação para o Visual Studio, e você agora pode interagir com os recursos de nuvem privada.
-
+    Os certificados são importados do arquivo de configurações de publicação para o Visual Studio, e agora é possível interagir com os recursos de nuvem privada.

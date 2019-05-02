@@ -17,20 +17,20 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0b8fc664ee47cd34ab984d1ac448b45c2f17c5b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762429"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443716"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como: Anexar e desanexar ferramentas de desempenho para processos em execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O criador de perfil pode ser usado para anexar ou desanexar de um processo em execução para facilitar a amostragem e a coleta de dados de desempenho. É possível usar esse método para criar o perfil de um processo quando você deseja evitar a coleta de dados sobre o tempo de carregamento do aplicativo ou para monitorar o desempenho de um processo após ele atingir um estado específico.  
   
 > [!NOTE]
->  As etapas a seguir se aplicam aos processos de anexar e desanexar de dentro do IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Para obter informações sobre como usar ferramentas de linha de comando, consulte [Criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obter informações sobre como criar o perfil de serviços, consulte [Criando o perfil de serviços](../profiling/command-line-profiling-of-services.md).  
+> As etapas a seguir se aplicam aos processos de anexar e desanexar de dentro do IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Para obter informações sobre como usar ferramentas de linha de comando, consulte [Criação de perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md). Para obter informações sobre como criar o perfil de serviços, consulte [Criando o perfil de serviços](../profiling/command-line-profiling-of-services.md).  
   
  Os processos que estão disponíveis para criação de perfil dependem das Permissões de acesso do usuário definidas por um administrador do computador. Uma conta de usuário pode, por exemplo, ter permissão para qualquer um dos seguintes:  
   
@@ -44,7 +44,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
 ### <a name="to-attach-to-a-running-process"></a>Para anexar a um processo em execução  
   
-1.  No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
+1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
      \- ou -  
   
@@ -52,13 +52,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
      É exibida a caixa de diálogo **Anexar Criador de Perfil a Processo**.  
   
-2.  Clique no nome do processo ao qual deseja anexar.  
+2. Clique no nome do processo ao qual deseja anexar.  
   
-3.  Clique em **Anexar**.  
+3. Clique em **Anexar**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Para desanexar de um processo em execução  
   
-1.  No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
+1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
      \- ou -  
   
@@ -66,13 +66,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
      É exibida a caixa de diálogo **Anexar Criador de Perfil a Processo**.  
   
-2.  Clique no nome da imagem da qual deseja desanexar.  
+2. Clique no nome da imagem da qual deseja desanexar.  
   
-3.  Clique em **Desanexar**.  
+3. Clique em **Desanexar**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Como iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Como: Iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

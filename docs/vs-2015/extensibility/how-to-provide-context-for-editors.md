@@ -1,28 +1,23 @@
 ---
-title: 'Como: fornecer contexto para editores | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Fornecer contexto para editores | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - provide context
 ms.assetid: 12df4d06-df6b-4eaf-a7bf-c83655a0c683
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 60ce6535375e79f7fef7fe25ef6a8381a02b0ad5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 11a98599a9812cd00650d113170ff55c01ac44db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435903"
 ---
-# <a name="how-to-provide-context-for-editors"></a>Como: fornecer contexto para editores
+# <a name="how-to-provide-context-for-editors"></a>Como: Fornecer contexto para editores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para um editor, o contexto está ativo somente quando o editor tem o foco ou imediatamente antes do foco foi movido para uma janela de ferramentas tinha o foco. Você pode fornecer contexto para um editor, fazendo o seguinte:  
@@ -37,50 +32,50 @@ Para um editor, o contexto está ativo somente quando o editor tem o foco ou ime
   
 ### <a name="to-create-a-context-bag-for-an-editor-or-a-designer"></a>Para criar um recipiente de contexto para um editor ou designer  
   
-1.  Chame `QueryService` em seu <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface para o <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> service.  
+1. Chame `QueryService` em seu <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface para o <xref:Microsoft.VisualStudio.Shell.Interop.SVsMonitorUserContext> service.  
   
      Um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext> interface será retornado.  
   
-2.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> método para criar um novo recipiente de contexto ou subcontexto.  
+2. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorUserContext.CreateEmptyContext%2A> método para criar um novo recipiente de contexto ou subcontexto.  
   
      Um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> interface será retornado.  
   
-3.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> método para adicionar atributos, as palavras-chave de pesquisa ou palavras-chave de F1 para o recipiente de contexto ou subcontexto.  
+3. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> método para adicionar atributos, as palavras-chave de pesquisa ou palavras-chave de F1 para o recipiente de contexto ou subcontexto.  
   
-4.  Se você estiver criando um recipiente de subcontexto, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> método para vincular o recipiente de subcontexto ao recipiente de contexto de pai.  
+4. Se você estiver criando um recipiente de subcontexto, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddSubcontext%2A> método para vincular o recipiente de subcontexto ao recipiente de contexto de pai.  
   
-5.  Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> para receber uma notificação quando o **ajuda dinâmica** janela está prestes a atualizar.  
+5. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> para receber uma notificação quando o **ajuda dinâmica** janela está prestes a atualizar.  
   
      Ter o **ajuda dinâmica** janela chamar seu editor quando ele estiver pronto para atualizar lhe dá a oportunidade de atraso até que a atualização ocorre como alterar o contexto. Isso pode melhorar o desempenho, porque ele permite que você atrasar a execução demorados algoritmos até que o tempo ocioso do sistema está disponível.  
   
 ### <a name="to-publish-the-context-bag-to-the-seid"></a>Para publicar o recipiente de contexto para o SEID  
   
-1.  Chamar `QueryService` sobre o <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> serviço para retornar um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interface.  
+1. Chamar `QueryService` sobre o <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> serviço para retornar um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interface.  
   
-2.  Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, especificando um identificador de elemento (`elementid` parâmetro) valor de SEID_UserContext para indicar que você está passando o contexto para o nível global.  
+2. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>, especificando um identificador de elemento (`elementid` parâmetro) valor de SEID_UserContext para indicar que você está passando o contexto para o nível global.  
   
-3.  Quando o editor ou designer fica ativa, os valores em seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> objeto são propagadas para a seleção global. Você só precisa concluir esse processo uma vez por sessão e, em seguida, armazenar o ponteiro para o contexto global criado quando você chamou <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
+3. Quando o editor ou designer fica ativa, os valores em seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> objeto são propagadas para a seleção global. Você só precisa concluir esse processo uma vez por sessão e, em seguida, armazenar o ponteiro para o contexto global criado quando você chamou <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A>.  
   
 ### <a name="to-maintain-the-context-bag"></a>Para manter o recipiente de contexto  
   
-1.  Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> para garantir que o **ajuda dinâmica** janela chama o editor ou designer antes que ela seja atualizada.  
+1. Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext> para garantir que o **ajuda dinâmica** janela chama o editor ou designer antes que ela seja atualizada.  
   
      Para cada pacote de contexto que chamou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AdviseUpdate%2A> depois que o recipiente de contexto é criado e implementou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate>, as chamadas IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> para notificar o provedor de contexto que o recipiente de contexto será atualizado. Você pode usar essa chamada para alterar os atributos e palavras-chave no recipiente de contexto e, em qualquer sacos subcontexto, antes de **ajuda dinâmica** janela atualização ocorrer.  
   
-2.  Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> no recipiente de contexto para indicar que o editor ou designer tem o novo contexto.  
+2. Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.SetDirty%2A> no recipiente de contexto para indicar que o editor ou designer tem o novo contexto.  
   
      Quando o **ajuda dinâmica** janela chamadas <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> para indicar que ele está sendo atualizado, o editor ou designer pode atualizar o contexto corretamente para o recipiente de contexto de pai e qualquer recipientes de subcontexto nesse momento.  
   
     > [!NOTE]
-    >  O `SetDirty` sinalizador é definido automaticamente como `true` sempre que o contexto é adicionado ou removido do recipiente de contexto. O **ajuda dinâmica** janela só chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> no conjunto de contexto se o `SetDirty` sinalizador é definido como `true`. Ele é redefinido para `false` após a atualização.  
+    > O `SetDirty` sinalizador é definido automaticamente como `true` sempre que o contexto é adicionado ou removido do recipiente de contexto. O **ajuda dinâmica** janela só chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> no conjunto de contexto se o `SetDirty` sinalizador é definido como `true`. Ele é redefinido para `false` após a atualização.  
   
-3.  Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> para adicionar contexto à coleção de contexto ativo ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> para remover o contexto.  
+3. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> para adicionar contexto à coleção de contexto ativo ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> para remover o contexto.  
   
 ## <a name="robust-programming"></a>Programação robusta  
  Se você estiver escrevendo seu próprio editor, você deve concluir todas as três dos procedimentos neste tópico para fornecer contexto para o editor.  
   
 > [!NOTE]
->  Para ativar corretamente uma janela do editor ou designer e certifique-se de que o roteamento de comando é atualizado corretamente, você deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> no componente para torná-lo a janela de foco.  
+> Para ativar corretamente uma janela do editor ou designer e certifique-se de que o roteamento de comando é atualizado corretamente, você deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> no componente para torná-lo a janela de foco.  
   
  O SEID é uma coleção de propriedades que são alteradas com base na seleção. Informações de SEID estão disponíveis por meio da seleção global. A seleção global é conectados com eventos disparados pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interface, e tem uma lista de tudo que está selecionado (editor atual, a janela de ferramentas atual, hierarquia atual e assim por diante).  
   
@@ -98,4 +93,3 @@ Para um editor, o contexto está ativo somente quando o editor tem o foco ou ime
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx>
-

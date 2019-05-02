@@ -23,45 +23,45 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba3a7c26f56b923b9286a5e2f290502f2765e2b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408425"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilando e limpando projetos e soluções no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, consulte [passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
+Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
->  A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 
-1.  No **Gerenciador de Soluções**, escolha ou abra a solução.
+1. No **Gerenciador de Soluções**, escolha ou abra a solução.
 
-2.  Na barra de menus, escolha **Compilar** e, em seguida, escolha um dos comandos a seguir:
+2. Na barra de menus, escolha **Compilar** e, em seguida, escolha um dos comandos a seguir:
 
-    -   Escolha **Compilar** ou **Compilar Solução** para compilar somente esses componentes e arquivos de projeto e componentes que foram alterados desde o build mais recente.
+    - Escolha **Compilar** ou **Compilar Solução** para compilar somente esses componentes e arquivos de projeto e componentes que foram alterados desde o build mais recente.
 
         > [!NOTE]
-        >  O comando **Compilar** torna-se **Compilar Solução** quando uma solução inclui mais de um projeto.
+        > O comando **Compilar** torna-se **Compilar Solução** quando uma solução inclui mais de um projeto.
 
-    -   Escolha **Recompilar Solução** para "limpar" a solução e, em seguida, crie todos os arquivos de projeto e componentes.
+    - Escolha **Recompilar Solução** para "limpar" a solução e, em seguida, crie todos os arquivos de projeto e componentes.
 
-    -   Escolha **Limpar Solução** para excluir arquivos de saída e intermediários. Com apenas os arquivos de projeto e de componente restantes, novas instâncias dos arquivos de saída e intermediários podem ser criadas.
+    - Escolha **Limpar Solução** para excluir arquivos de saída e intermediários. Com apenas os arquivos de projeto e de componente restantes, novas instâncias dos arquivos de saída e intermediários podem ser criadas.
 
 ## <a name="to-build-or-rebuild-a-single-project"></a>Para compilar ou recompilar um único projeto
 
-1.  No **Gerenciador de Soluções**, escolha ou abra o projeto.
+1. No **Gerenciador de Soluções**, escolha ou abra o projeto.
 
-2.  Na barra de menus, escolha **Compilar** e, em seguida, escolha **Compilar** _ProjectName_ ou **Recompilar** _ProjectName_.
+2. Na barra de menus, escolha **Compilar** e, em seguida, escolha **Compilar** _ProjectName_ ou **Recompilar** _ProjectName_.
 
-    -   Escolha **Compilar** _ProjectName_ para compilar somente os componentes de projeto alterados desde o build mais recente.
+    - Escolha **Compilar** _ProjectName_ para compilar somente os componentes de projeto alterados desde o build mais recente.
 
-    -   Escolha **Recompilar** _ProjectName_ para "limpar" o projeto e, em seguida, compile os arquivos de projeto e todos os componentes do projeto.
+    - Escolha **Recompilar** _ProjectName_ para "limpar" o projeto e, em seguida, compile os arquivos de projeto e todos os componentes do projeto.
 
 ## <a name="to-build-only-the-startup-project-and-its-dependencies"></a>Para compilar apenas o projeto de inicialização e suas dependências
 
@@ -97,17 +97,17 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
 
 ## <a name="to-compile-multiple-c-project-items"></a>Para compilar vários itens de projeto C++
 
-1.  Em **Gerenciador de Soluções**, escolha vários arquivos que possam ter ações compiladas, abra o menu de atalho para um desses arquivos e, em seguida, escolha **Compilar**.
+1. Em **Gerenciador de Soluções**, escolha vários arquivos que possam ter ações compiladas, abra o menu de atalho para um desses arquivos e, em seguida, escolha **Compilar**.
 
      Se os arquivos tiverem dependências, os arquivos serão compilados em ordem de dependência. A operação de compilação falhará se os arquivos exigirem um cabeçalho pré-compilado que não está disponível quando você compila. A operação de compilação usa a configuração de solução ativa atual.
 
 ## <a name="to-stop-a-build"></a>Para interromper um build
 
-1.  Execute uma das seguintes etapas:
+1. Execute uma das seguintes etapas:
 
-    -   Na barra de menus, escolha **Compilar**, **Cancelar**.
+    - Na barra de menus, escolha **Compilar**, **Cancelar**.
 
-    -   Escolha as teclas Ctrl + Break.
+    - Escolha as teclas Ctrl + Break.
 
 ## <a name="see-also"></a>Consulte também
- [Como: Exibir, salvar e configurar arquivos de Log de Build](../ide/how-to-view-save-and-configure-build-log-files.md) [obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md) [compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [De depuração e versão de configurações de projeto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [referência de build do C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) [soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)
+ [Como: Exibir, salvar e configurar arquivos de Log de Build](../ide/how-to-view-save-and-configure-build-log-files.md) [obtendo Logs de Build](../msbuild/obtaining-build-logs-with-msbuild.md) [compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [De depuração e versão de configurações de projeto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) [C /C++ referência de criação](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d) [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md) [soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)

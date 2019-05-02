@@ -1,14 +1,9 @@
 ---
-title: 'Como: habilitar e desabilitar editar e continuar | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Habilitar e desabilitar editar e continuar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -29,15 +24,15 @@ ms.assetid: fd961a1c-76fa-420d-ad8f-c1a6c003b0db
 caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5709b4bdae55c0ade6ca4559dcbaad8d66c0bbac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7d564162a92976037729c4ad638136d7c1e827c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438298"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue"></a>Como habilitar e desabilitar Editar e Continuar
+# <a name="how-to-enable-and-disable-edit-and-continue"></a>Como: Habilitar e desabilitar editem e continuar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode desabilitar ou habilitar editar e continuar na **opções** caixa de diálogo em tempo de design. Não é possível alterar essa configuração enquanto você está depurando.  
@@ -55,7 +50,7 @@ Você pode desabilitar ou habilitar editar e continuar na **opções** caixa de 
 3. Para habilitar, selecione a **habilitar editar e continuar** caixa de seleção. Para desabilitar, desmarque a caixa de seleção.  
   
    > [!NOTE]
-   >  Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](http://msdn.microsoft.com/en-us/7657ecab-e07e-4b1b-872d-f05d966be37e).  
+   > Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
 4. Clique em **OK**.  
   
@@ -63,6 +58,3 @@ Você pode desabilitar ou habilitar editar e continuar na **opções** caixa de 
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar](../debugger/edit-and-continue.md)
-
-
-

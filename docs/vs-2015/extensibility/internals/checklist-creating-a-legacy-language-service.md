@@ -1,42 +1,37 @@
 ---
 title: 'Lista de verificação: Criar um serviço de linguagem herdado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services
 - language services, native code
 ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 330270b34d55e88c883b9d8a6270b4abad02d9c1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3b79afe64aafac473d4fe5d22464998d0c2f0537
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437621"
 ---
-# <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: criando um serviço de linguagem herdado
+# <a name="checklist-creating-a-legacy-language-service"></a>Lista de verificação: Criando um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de linguagem para o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] editor de núcleo. Integre seu serviço de linguagem em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) na [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).  
   
 ## <a name="steps-for-creating-a-language-service"></a>Etapas para criar um serviço de linguagem  
   
-1.  Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
+1. Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>.  
   
-    -   O VSPackage, implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface para fornecer o serviço de linguagem.  
+    - O VSPackage, implementar o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> interface para fornecer o serviço de linguagem.  
   
-    -   Disponibilizar seu serviço de linguagem para o ambiente de desenvolvimento integrado (IDE) no seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação.  
+    - Disponibilizar seu serviço de linguagem para o ambiente de desenvolvimento integrado (IDE) no seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação.  
   
-2.  Implementar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface na classe de serviço de idioma principal.  
+2. Implementar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface na classe de serviço de idioma principal.  
   
      O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> interface é o ponto de partida de interação entre o editor principal e o serviço de linguagem.  
   
@@ -68,7 +63,7 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
     Comandos que devem ser tratados dependem os serviços que são fornecidos. Para obter mais informações, consulte [comandos importantes para filtros do serviço de linguagem](../../extensibility/internals/important-commands-for-language-service-filters.md).  
   
   > [!NOTE]
-  >  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
+  > O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
   
 - Conclusão da instrução  
   
@@ -116,7 +111,7 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
   
 - Estrutura de tópicos  
   
-   Há várias opções para dar suporte a estrutura de tópicos. Por exemplo, você pode dar suporte a **recolher para definições de** de comando, fornecer regiões controlado pelo editor de estrutura de tópicos ou suporte a regiões controlado pelo cliente. Para obter mais informações, consulte [como: fornecer expandido de estrutura de tópicos suporte em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
+   Há várias opções para dar suporte a estrutura de tópicos. Por exemplo, você pode dar suporte a **recolher para definições de** de comando, fornecer regiões controlado pelo editor de estrutura de tópicos ou suporte a regiões controlado pelo cliente. Para obter mais informações, confira [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md).  
   
 - Registro do serviço de linguagem  
   
@@ -126,11 +121,10 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
   
    Fornece contexto para o editor em uma das seguintes maneiras:  
   
-  -   Fornecer contexto para os marcadores de texto, Implementando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface.  
+  - Fornecer contexto para os marcadores de texto, Implementando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerContextProvider> interface.  
   
   Fornecer todo o contexto de usuário ao implementar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageContextProvider> interface.  
   
 ## <a name="see-also"></a>Consulte também  
  [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)   
  [Escrevendo um avaliador de expressão do CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-

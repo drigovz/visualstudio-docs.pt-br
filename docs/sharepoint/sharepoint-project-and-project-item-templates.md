@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a535f1b9051835f0a26ae62ca63cc30f289ddea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438991"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projeto do SharePoint e modelos de item de projeto
   As seções a seguir descrevem o projeto do SharePoint disponível e de item de projeto modelos e como eles são usados.
@@ -41,17 +41,17 @@ ms.locfileid: "56612914"
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 project
  O conteúdo de um *projeto do SharePoint 2010* estão incluídos em cada modelo de projeto do SharePoint. Contém um projeto do SharePoint 2010:
 
--   Um arquivo de projeto.
+- Um arquivo de projeto.
 
--   Uma página de propriedades do projeto.
+- Uma página de propriedades do projeto.
 
--   Um **referências** pasta listando todas as referências de assembly no projeto.
+- Um **referências** pasta listando todas as referências de assembly no projeto.
 
--   Um **recursos** pasta que contém uma *Feature* arquivo de configuração, usado para implantar recursos no servidor do SharePoint.
+- Um **recursos** pasta que contém uma *Feature* arquivo de configuração, usado para implantar recursos no servidor do SharePoint.
 
--   Um **pacote** pasta que contém uma *pacote* arquivo, usado para implantar a solução do SharePoint.
+- Um **pacote** pasta que contém uma *pacote* arquivo, usado para implantar a solução do SharePoint.
 
--   Um arquivo de snk (chave de nome forte) que é usado para assinar o assembly com um nome forte, para segurança aprimorada.
+- Um arquivo de snk (chave de nome forte) que é usado para assinar o assembly com um nome forte, para segurança aprimorada.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Web part do Silverlight do SharePoint 2010
  *Web Part do SharePoint 2010 Silverlight* projetos permitem que você a criar web parts para SharePoint que exibem os aplicativos do Silverlight. Quando você cria este projeto, você pode especificar se deseja adicionar um novo aplicativo Silverlight para ele ou fazer referência a um existente. Para obter mais informações, consulte [criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) e [passo a passo: Criar uma web part do Silverlight que exiba OData para o SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
@@ -74,13 +74,13 @@ ms.locfileid: "56612914"
  Uma **página do aplicativo (somente solução de Farm)** item permite que você projete um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página da web para um site do SharePoint. Páginas de aplicativos podem ser usadas somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, confira [Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md) e [tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkId=179434).
 
 ### <a name="business-data-connectivity-model-farm-solution-only"></a>Modelo de conectividade de dados corporativos (somente solução de farm)
- Um **modelo de conectividade de dados corporativos (somente solução de Farm)** item permite que você integrar dados de negócios no SharePoint. Dados de negócios podem vir de aplicativos de servidor back-end, como [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)], Siebel e o protocolo de anúncios de serviço (SAP). Modelos de conectividade de dados de negócios podem ser usados somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, confira [Como: Criar um modelo BDC](../sharepoint/how-to-create-a-bdc-model.md), [como: Use um arquivo de recurso para especificar nomes localizados, propriedades e permissões](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md), e [o que há de novo: Serviços corporativos de conectividade](http://go.microsoft.com/fwlink/?LinkId=179411).
+ Um **modelo de conectividade de dados corporativos (somente solução de Farm)** item permite que você integrar dados de negócios no SharePoint. Dados de negócios podem vir de aplicativos de servidor back-end, como [!INCLUDE[ssNoVersion](../sharepoint/includes/ssnoversion-md.md)], Siebel e o protocolo de anúncios de serviço (SAP). Modelos de conectividade de dados de negócios podem ser usados somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, confira [Como: Criar um modelo BDC](../sharepoint/how-to-create-a-bdc-model.md), [como: Use um arquivo de recurso para especificar nomes localizados, propriedades e permissões](../sharepoint/how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions.md), e [o que há de novo: Serviços corporativos de conectividade](/previous-versions/office/developer/sharepoint-2010/ee534979(v=office.14)).
 
 ### <a name="content-type"></a>Tipo de conteúdo
  *Tipo de conteúdo* itens permitem que você crie tipos de conteúdo personalizados com base em um tipo de conteúdo (base) existente como um documento, anúncio ou uma tarefa. Um tipo de conteúdo personalizado fornece os mesmos atributos e campos como o tipo de conteúdo base junto com quaisquer colunas de site (campos) que você definir. Por exemplo, você pode criar um tipo de conteúdo de contato personalizado com base no tipo de base entre em contato com conteúdo que vem no SharePoint. Você pode personalizar o tipo de conteúdo alterando as colunas de site existente ou adicionando mais colunas de site para aqueles que já está incluídos no tipo de conteúdo base.
 
 > [!NOTE]
->  Devido a uma limitação do SharePoint, você não pode criar um tipo de conteúdo de solução do farm com base em um tipo de conteúdo de solução de área restrita.
+> Devido a uma limitação do SharePoint, você não pode criar um tipo de conteúdo de solução do farm com base em um tipo de conteúdo de solução de área restrita.
 
  Para obter mais informações, confira [Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [bloco de construção: Tipo de conteúdo](http://go.microsoft.com/fwlink/?LinkId=179413).
 
@@ -109,7 +109,7 @@ ms.locfileid: "56612914"
  *Módulos* (não deve ser confundido com [!include[vbprvb](../sharepoint/includes/vbprvb-md.md)] módulos) contêm todos os arquivos que você deseja implantar para o servidor do SharePoint, como imagens ou notas. O item de projeto de módulo contém um **módulo** nó. O nó do módulo contém dois modelos de item de projeto: um arquivo de definição XML, que atua como um manifesto para o módulo, e um *txt* arquivo, um arquivo de espaço reservado. Para obter mais informações, consulte [uso de módulos para incluir arquivos na solução](../sharepoint/using-modules-to-include-files-in-the-solution.md) e [módulos](http://go.microsoft.com/fwlink/?LinkId=179425).
 
 ### <a name="sequential-workflow-farm-solution-only"></a>O fluxo de trabalho sequencial (somente solução de farm)
- Um *fluxo de trabalho sequencial* é uma série de etapas de lógica de negócios, executadas em sequência, até que a última etapa é concluída. Fluxos de trabalho sequenciais são usados para gerenciar os processos que envolvem itens como listas e documentos do SharePoint. Você pode criar fluxos de trabalho de nível de site (globais) ou (locais) no nível da lista de fluxos de trabalho, e você pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [soluções de fluxo de trabalho do SharePoint crie](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [que há de novo: Aprimoramentos de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=179418).
+ Um *fluxo de trabalho sequencial* é uma série de etapas de lógica de negócios, executadas em sequência, até que a última etapa é concluída. Fluxos de trabalho sequenciais são usados para gerenciar os processos que envolvem itens como listas e documentos do SharePoint. Você pode criar fluxos de trabalho de nível de site (globais) ou (locais) no nível da lista de fluxos de trabalho, e você pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [soluções de fluxo de trabalho do SharePoint crie](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [que há de novo: Aprimoramentos de fluxo de trabalho](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="silverlight-web-part"></a>Web part do Silverlight
  *Web part do Silverlight* itens de projeto permitem que você a criar web parts para SharePoint que exibem os aplicativos do Silverlight. Quando você adiciona esse item de projeto à sua solução, você pode escolher se deseja adicionar um novo aplicativo do Silverlight ou fazer referência a um existente mais tarde. Para obter mais informações, consulte [criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) e [passo a passo: Criar uma web part do Silverlight que exiba OData para o SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
@@ -129,7 +129,7 @@ ms.locfileid: "56612914"
   Depois de adicionar uma definição de site, você deve adicionar código e arquivos para apresentar a funcionalidade. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [criar definições de site do SharePoint](../sharepoint/creating-site-definitions-for-sharepoint.md) e [definições de Site e configurações](http://go.microsoft.com/fwlink/?LinkId=260554).
 
 ### <a name="state-machine-workflow-farm-solution-only"></a>Fluxo de trabalho de máquina de estado (somente solução de farm)
- Um *fluxo de trabalho de máquina de estado* é um conjunto de estados de lógica de negócios, transições e ações. As etapas em um fluxo de trabalho de máquina de estado não são executadas em sequência. em vez disso, eles são disparados por ações e os estados. Como um fluxo de trabalho sequencial, fluxos de trabalho de máquina de estado são associados a itens como listas e documentos do SharePoint. Mais uma vez, você pode criar fluxos de trabalho de nível de site (globais) ou (locais) no nível da lista de fluxos de trabalho. Você também pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [soluções de fluxo de trabalho do SharePoint crie](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [que há de novo: Aprimoramentos de fluxo de trabalho](http://go.microsoft.com/fwlink/?LinkId=179418).
+ Um *fluxo de trabalho de máquina de estado* é um conjunto de estados de lógica de negócios, transições e ações. As etapas em um fluxo de trabalho de máquina de estado não são executadas em sequência. em vez disso, eles são disparados por ações e os estados. Como um fluxo de trabalho sequencial, fluxos de trabalho de máquina de estado são associados a itens como listas e documentos do SharePoint. Mais uma vez, você pode criar fluxos de trabalho de nível de site (globais) ou (locais) no nível da lista de fluxos de trabalho. Você também pode selecionar se um fluxo de trabalho é iniciado automaticamente ou manualmente. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [soluções de fluxo de trabalho do SharePoint crie](../sharepoint/creating-sharepoint-workflow-solutions.md), [fluxos de trabalho no SharePoint Server 2010](http://go.microsoft.com/fwlink/?LinkId=260555), e [que há de novo: Aprimoramentos de fluxo de trabalho](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14)).
 
 ### <a name="user-control-farm-solution-only"></a>Controle de usuário (somente solução de farm)
  Um *controle de usuário* é um controle personalizado, reutilizável para o qual você pode adicionar outros controles do ASP.NET e controles do SharePoint. O controle de usuário pode ser adicionado a páginas de aplicativos e web parts executadas no SharePoint. Esse item de projeto pode ser usado somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, consulte [criação de controles de reutilizáveis para Web Parts ou páginas de aplicativo](http://go.microsoft.com/fwlink/?LinkId=226841).

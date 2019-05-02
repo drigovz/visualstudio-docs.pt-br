@@ -8,20 +8,21 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 1cfdf0e301ff4c2fdf997824a037eedcc9886081
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+monikerRange: vs-2017
+ms.openlocfilehash: 4b505b1a8669c0eff14e7afcdb88275cd1502f95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581231"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>Como instalar as Ferramentas do R para Visual Studio
 
 Neste artigo:
 
 - [Versões do Visual Studio com suporte](#supported-versions-of-visual-studio)
-- [Instalar as RTVS no Visual Studio 2017](#installing-rtvs-in-visual-studio-2017)
-- [Instalar as RTVS no Visual Studio 2015](#installing-rtvs-in-visual-studio-2015)
+- [Instalar as RTVS no Visual Studio 2017](#install-rtvs-in-visual-studio-2017)
+- [Instalar as RTVS no Visual Studio 2015](#install-rtvs-in-visual-studio-2015)
 - [Instalação offline](#offline-installation-of-visual-studio-and-rtvs)
 
 > [!Note]
@@ -29,7 +30,7 @@ Neste artigo:
 
 ## <a name="supported-versions-of-visual-studio"></a>Versões do Visual Studio com suporte
 
-Há suporte para as RTVS (Ferramentas do R para Visual Studio) no Windows nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto).
+Há suporte para as RTVS (Ferramentas do R para Visual Studio) no Windows nas edições Enterprise, Professional e Community (gratuita) do [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e [Visual Studio 2015 Atualização 3 (ou superior)](http://go.microsoft.com/fwlink/?LinkId=691129) (download direto).
 
 No momento, não há suporte para as RTVS no Visual Studio para Mac.
 
@@ -66,7 +67,7 @@ O Microsoft R Open e o CRAN R permitem várias versões lado a lado. O Microsoft
 Baixe as RTVS para Visual Studio 2015 em [https://aka.ms/rtvs-current](https://aka.ms/rtvs-current). As RTVS verificam se há uma versão adequada do Visual Studio e ajudam a instalar um interpretador de R, caso isso ainda não tenha sido feito.
 
 > [!Note]
-> O instalador autônomo das RTVS funciona apenas com o Visual Studio 2015; com o Visual Studio 2017, instale o suporte ao R por meio da [Carga de trabalho para Aplicativos de ciência de dados e análise](#installing-rtvs-in-visual-studio-2017) conforme descrito anteriormente.
+> O instalador autônomo das RTVS funciona apenas com o Visual Studio 2015; com o Visual Studio 2017, instale o suporte ao R por meio da [Carga de trabalho para Aplicativos de ciência de dados e análise](#install-rtvs-in-visual-studio-2017) conforme descrito anteriormente.
 
 As RTVS para Visual Studio 2015 estão instaladas em: `%ProgramFiles(x86)%\Microsoft Visual Studio 14\Common7\IDE\Extensions\Microsoft\R Tools for Visual Studio`
 

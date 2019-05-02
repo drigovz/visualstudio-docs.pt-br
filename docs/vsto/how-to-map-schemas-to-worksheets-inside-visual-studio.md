@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 80a19924aaf4fa0afe8e809006ada7fada0288f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428110"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Como: Mapear esquemas para planilhas dentro do Visual Studio
   Você pode mapear um esquema XML para uma planilha enquanto a planilha estiver aberta no Visual Studio. Você usa as mesmas ferramentas do Microsoft Office Excel que você usa quando a pasta de trabalho é aberta fora do Visual Studio. O projeto do Office cria os objetos de mesmos se você mapear o esquema para a planilha antes ou depois de criar sua solução do Excel.
@@ -30,32 +30,32 @@ ms.locfileid: "56637367"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  É possível usar os esquemas XML com diversas partes em soluções do Excel.
+> É possível usar os esquemas XML com diversas partes em soluções do Excel.
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Para mapear um esquema XML para uma planilha do Excel no Visual Studio
 
-1.  Abra o projeto de modelo ou a pasta de trabalho do Excel dentro do Visual Studio.
+1. Abra o projeto de modelo ou a pasta de trabalho do Excel dentro do Visual Studio.
 
-2.  Clique na planilha para mover o foco para o designer.
+2. Clique na planilha para mover o foco para o designer.
 
-3.  Na faixa de opções, clique no **desenvolvedor** guia.
+3. Na faixa de opções, clique no **desenvolvedor** guia.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  No **XML** , clique em **origem**.
+4. No **XML** , clique em **origem**.
 
      O **código-fonte XML** janela é aberta.
 
-5.  No **origem XML** janela, clique em **mapas XML**.
+5. No **origem XML** janela, clique em **mapas XML**.
 
      O **mapas XML** caixa de diálogo é aberta.
 
-6.  No **mapas XML** caixa de diálogo, clique em **Add**.
+6. No **mapas XML** caixa de diálogo, clique em **Add**.
 
-7.  Navegue até o arquivo de esquema, selecione-o e, em seguida, clique em **aberto**.
+7. Navegue até o arquivo de esquema, selecione-o e, em seguida, clique em **aberto**.
 
-8.  Clique em **OK**.
+8. Clique em **OK**.
 
      O esquema é representado na **código-fonte XML** janela. Em seu projeto, com um tipo <xref:System.Data.DataSet> é gerado com base no esquema e um <xref:System.Windows.Forms.BindingSource> é criado.
 

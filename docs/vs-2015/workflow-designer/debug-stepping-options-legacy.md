@@ -1,11 +1,8 @@
 ---
 title: Depurar passo a passo de opções (herdado) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - branch stepping
@@ -17,13 +14,13 @@ ms.assetid: 3e9e3041-68c7-4f16-9bd6-da5e5144744b
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: b7dfaa4fb659418c26d5aa0144fac4188ef4b16b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1f0761ba750146ce7f8cc52e6992dae689f7779
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49899377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976956"
 ---
 # <a name="debug-stepping-options-legacy"></a>Opções de avançar de depuração (legados)
 Este tópico descreve como depurar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que têm atividades simultâneas em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -40,4 +37,4 @@ Este tópico descreve como depurar aplicativos de [!INCLUDE[wf](../includes/wf-m
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando fluxos de trabalho herdado](../workflow-designer/debugging-legacy-workflows.md)   
- [Como alterar a opção de executar a depuração em etapas (herdado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)
+ [Como: alterar a opção de executar a depuração em etapas (herdado)](../workflow-designer/how-to-change-the-debug-stepping-option-legacy.md)

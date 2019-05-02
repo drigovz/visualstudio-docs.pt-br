@@ -1,6 +1,6 @@
 ---
-title: Usar e configurar os analisadores de Roslyn
-ms.date: 03/26/2018
+title: Gravidade da regra de analisador e supressão
+ms.date: 03/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code analysis, managed code
@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 887fb6101773a86d346215f558f10216ca4612b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821267"
 ---
-# <a name="configure-and-use-roslyn-analyzer-rules"></a>Configurar e usar regras do analisador Roslyn
+# <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
 Regras do analisador do .NET compiler Platform ("Roslyn"), ou *diagnóstico*, analisar seu código c# ou Visual Basic, conforme você digita. Cada diagnóstico tem um estado de gravidade e supressão de padrão que pode ser substituído para o seu projeto. Este artigo aborda a severidade de regra de configuração, usando conjuntos de regras e suprimindo violações.
 
@@ -46,12 +46,17 @@ Os ícones ao lado de cada diagnóstico na **Gerenciador de soluções** corresp
 
 ## <a name="rule-sets"></a>Conjuntos de regras
 
-Um [conjunto de regras](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) é um arquivo XML que armazena o estado de gravidade e supressão de diagnóstico individual. Conjuntos de regras se aplicam a um único projeto, e um projeto pode ter vários conjuntos de regras. Para exibir o conjunto no editor de regras Active Directory, clique com botão direito no **analisadores** nó no **Gerenciador de soluções** e selecione **do conjunto de regras ativo aberto**. Se esta for a primeira vez que você está acessando a regra definido, um arquivo chamado  *\<projectname > RuleSet* é adicionado ao projeto e aparece na **Gerenciador de soluções**.
+Um [conjunto de regras](../code-quality/using-rule-sets-to-group-code-analysis-rules.md) é um arquivo XML que armazena o estado de gravidade e supressão de diagnóstico individual.
 
 > [!NOTE]
-> Conjuntos de regras de incluem análise de código (binário) estático e regras do analisador Roslyn.
+> Conjuntos de regras podem incluir regras de análise estática de código (binário) e analisadores de Roslyn.
 
-Você pode alterar a regra ativa definido para um projeto na **análise de código** guia de propriedades de um projeto. Selecione a conjunto de regras de **executar este conjunto de regras** lista suspensa. Você também pode abrir a conjunto de regras do **análise de código** página de propriedades, selecionando **abrir**.
+Para editar a regra ativa definida no editor de conjunto de regras, clique com botão direito no **referências** > **analisadores** nó no **Gerenciador de soluções** e selecione **Abrir conjunto de regras ativo**. Se essa for a primeira vez em que você está editando o conjunto de regras, o Visual Studio faz com que uma cópia da regra padrão de arquivo de conjunto, nomeia  *\<projectname > RuleSet*e o adiciona ao seu projeto. Essa regra personalizada definida também torna-se a regra ativa definido para o projeto.
+
+Para alterar a regra ativa definido para um projeto, navegue até a **análise de código** guia de propriedades de um projeto. Selecione a conjunto de regras de lista sob **executar este conjunto de regras**. Para abrir o conjunto de regras, selecione **abrir**.
+
+> [!NOTE]
+> Projetos .NET core e .NET Standard não dão suporte os comandos de menu para conjuntos de regras **Gerenciador de soluções**, por exemplo, **do conjunto de regras ativo aberto**. Para especificar uma regra de não-padrão definida para um projeto .NET Core ou .NET Standard, manualmente [adicionar a **CodeAnalysisRuleSet** propriedade ao arquivo de projeto](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Você pode configurar as regras dentro da conjunto de regras no Visual Studio editor de interface do usuário do conjunto de regras.
 
 ## <a name="rule-severity"></a>Gravidade da regra
 
@@ -79,7 +84,7 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
 ![Arquivo de conjunto de regras no Gerenciador de soluções](media/ruleset-in-solution-explorer.png)
 
-### <a name="to-set-rule-severity-from-solution-explorer"></a>Para definir a gravidade da regra no Gerenciador de soluções
+### <a name="set-rule-severity-from-solution-explorer"></a>Definir a gravidade da regra no Gerenciador de soluções
 
 1. Na **Gerenciador de soluções**, expanda **referências** > **analisadores** (**dependências**  >  **Analisadores** para projetos .NET Core).
 
@@ -89,9 +94,9 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
    A gravidade da regra é salvo no arquivo de conjunto de regras ativo.
 
-### <a name="to-set-rule-severity-in-the-rule-set-file"></a>Definir regra de gravidade na regra definida arquivo
+### <a name="set-rule-severity-in-the-rule-set-file"></a>Severidade de conjunto de regras no arquivo de conjunto de regras
 
-1. Abra o conjunto de regras arquivo clicando duas vezes no **Gerenciador de soluções**, selecionando **abrir conjunto de regras de Active Directory** no menu de atalho do **analisadores** nó, ou selecionando **Aberto** na **análise de código** página de propriedades para o projeto.
+1. Abra o [conjunto de regras](analyzer-rule-sets.md) arquivo clicando duas vezes no **Gerenciador de soluções**, selecionando **abrir conjunto de regras de Active Directory** no menu de atalho do **analisadores** nó, ou selecionando **aberto** no **análise de código** página de propriedades para o projeto.
 
 1. Navegue até a regra, expandindo o seu assembly de contenção.
 
@@ -103,42 +108,42 @@ Você pode alterar a severidade de uma regra de **Gerenciador de soluções**, o
 
 Há várias maneiras de suprimir as violações de regra:
 
-- Para suprimir todas as violações atuais existentes, selecione **Analyze** > **executar análise de código e suprimir problemas ativos** na barra de menus. Isso é às vezes, chamado "linha de base".
+- Dos **analisar** menu
 
-- Para suprimir um diagnóstico de **Gerenciador de soluções**, defina sua gravidade como **None**.
+   Selecione **Analyze** > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais existentes. Isso é às vezes, chamado "linha de base".
 
-- Para suprimir um diagnóstico do editor de conjunto de regras, desmarque a caixa ao lado de seu nome ou definir **ação** à **None**.
+- De **Gerenciador de soluções**
 
-- Para suprimir um diagnóstico do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+**.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAxxxx** > **na fonte** ou **suprimir CAxxxx** > **no arquivo de supressão**.
+   Para suprimir uma violação na **Gerenciador de soluções**, defina a gravidade da regra como **None**.
+
+- Do **editor de conjunto de regras**
+
+   Para suprimir uma violação do editor de conjunto de regras, desmarque a caixa ao lado de seu nome ou definir **ação** à **None**.
+
+- Do **editor de códigos**
+
+   Para suprimir uma violação do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+**.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAXXXX** > **no código-fonte/no arquivo de supressão**.
 
    ![Suprimir o diagnóstico no menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
-- Para suprimir um diagnóstico do **lista de erros**, consulte [suprimir as violações da lista de erros](#suppress-violations-from-the-error-list).
+- Do **lista de erros**
 
-### <a name="suppress-violations-from-the-error-list"></a>Suprimir as violações da lista de erros
+   Você pode suprimir um ou vários diagnósticos do **lista de erros** selecionar aqueles que você deseja suprimir, e, em seguida, clicando com botão direito e selecionando **suprimir** > **Source/In em Arquivo de supressão**.
 
-Você pode suprimir um ou vários diagnósticos do **lista de erros** selecionar aqueles que você deseja suprimir, e, em seguida, clicando com botão direito e selecionando **suprimir** > **na origem**  ou **suprimir** > **no arquivo de supressão**.
+   - Se você suprimir **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do C# [aviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable Aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
 
-- Se você selecionar **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do c# [#pragma aviso](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou o Visual Basic [#Disable aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
+      ![Visualização de adição de aviso #pragma no arquivo de código](media/pragma-warning-preview.png)
 
-   ![Visualização de adição de aviso #pragma no arquivo de código](media/pragma-warning-preview.png)
+   - Se você selecionar **no arquivo de supressão**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que é adicionado ao arquivo supressões globais.
 
-- Se você selecionar **no arquivo de supressão**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que é adicionado ao arquivo supressões globais.
+      ![Visualização de adicionar o atributo SuppressMessage ao arquivo de supressão](media/preview-changes-in-suppression-file.png)
 
-   ![Visualização de adicionar o atributo SuppressMessage ao arquivo de supressão](media/preview-changes-in-suppression-file.png)
+   No **visualizar alterações** caixa de diálogo, selecione **aplicar**.
 
-No **visualizar alterações** caixa de diálogo, selecione **aplicar**.
-
-O **Error List** exibe diagnóstico ou regra violações, tanto em tempo de análise de código e compilação. Como o diagnóstico de compilação pode ser obsoleto, por exemplo, se você editou o código para corrigir a violação, mas ainda não tiver recriado, você não pode suprimir estes diagnósticos a partir de **lista de erros**. No entanto, o diagnóstico de análise em tempo real ou o IntelliSense, esteja sempre atualizado com as fontes atuais e pode ser suprimido do **Error List**. Se a opção de supressão está desabilitada no menu de contexto, ou de mouse, provavelmente porque você tem um ou mais diagnósticos em sua seleção de compilação. Para excluir o diagnóstico de build da sua seleção, alternar os **lista de erros** filtro de origem do **compilação + IntelliSense** para **Intellisense apenas**. Em seguida, selecione os diagnósticos que você deseja suprimir e prossiga conforme descrito anteriormente.
-
-![Filtro de origem de lista de erros no Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> Em um projeto .NET Core, se você adicionar uma referência a um projeto que tem os analisadores do NuGet, os analisadores são automaticamente adicionados ao projeto dependente muito. Para desabilitar esse comportamento, por exemplo, se o projeto dependente é um projeto de teste de unidade, marcar o pacote do NuGet como particular na *. csproj* ou *. vbproj* arquivo do projeto referenciado:
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Se você não vir as **suprimir** opção de menu na **Gerenciador de soluções**, provavelmente, a violação é proveniente de compilação e análise em tempo real não. O **Error List** exibe diagnóstico ou regra violações, tanto em tempo de análise de código e compilação. Como o diagnóstico de compilação pode ser obsoleto, por exemplo, se você editou o código para corrigir a violação, mas ainda não tiver recriado, você não pode suprimir estes diagnósticos a partir de **lista de erros**. Diagnóstico de análise em tempo real ou o IntelliSense, estão sempre atualizado com fontes atuais e pode ser suprimido do **Error List**. Para excluir *construir* alternar o diagnóstico da sua seleção, o **lista de erros** filtro de origem do **compilação + IntelliSense** para **Intellisense apenas**. Em seguida, selecione os diagnósticos que você deseja suprimir e prossiga conforme descrito anteriormente.
+   >
+   > ![Filtro de origem de lista de erros no Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Uso de linha de comando
 
@@ -164,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 A imagem a seguir mostra a saída de compilação de linha de comando desde a criação de um projeto que contém uma violação de regra do analisador:
 
 ![Saída do MSBuild com violação de regra](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Projetos dependentes
+
+Em um projeto .NET Core, se você adicionar uma referência a um projeto que tem os analisadores do NuGet, os analisadores são automaticamente adicionados ao projeto dependente muito. Para desabilitar esse comportamento, por exemplo, se o projeto dependente é um projeto de teste de unidade, marcar o pacote do NuGet como particular na *. csproj* ou *. vbproj* arquivo do projeto referenciado, definindo o **PrivateAssets** atributo:
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Consulte também
 

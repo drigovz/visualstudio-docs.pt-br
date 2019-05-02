@@ -1,6 +1,5 @@
 ---
-title: Funcionalidades avançadas do Visual Studio 2017
-titleSuffix: ''
+title: Recursos avançados
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: gewarren
@@ -8,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da502b2f527f811f20bbce299107cac20517048a
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793772"
 ---
-# <a name="features-of-visual-studio-2017"></a>Funcionalidades do Visual Studio 2017
+# <a name="features-of-visual-studio"></a>Funcionalidades do Visual Studio
 
 O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md) fornece uma introdução básica ao Visual Studio. Este artigo descreve os recursos que podem ser mais apropriados para desenvolvedores experientes ou aqueles que já estão familiarizados com o Visual Studio.
 
@@ -23,9 +22,19 @@ O artigo [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide
 
 O instalador modular do Visual Studio permite que você escolha e instale *cargas de trabalho*. As cargas de trabalho são grupos de recursos necessários para a linguagem de programação ou a plataforma de sua preferência. Essa estratégia ajuda a manter a superfície de instalação do Visual Studio menor, o que significa que ele é instalado e atualizado mais rapidamente também.
 
-Se você ainda não tiver instalado o Visual Studio 2017, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
 
-Para saber mais sobre como configurar o Visual Studio no sistema, consulte [Instalar o Visual Studio 2017](../install/install-visual-studio.md).
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+Para saber mais sobre como configurar o Visual Studio no sistema, confira [Instalar o Visual Studio](../install/install-visual-studio.md).
 
 ## <a name="create-cloud-enabled-apps-for-azure"></a>Criar aplicativos habilitados para a nuvem para o Azure
 
@@ -33,9 +42,13 @@ O Visual Studio oferece um pacote de ferramentas que permite criar aplicativos h
 
 ![Carga de trabalho de desenvolvimento do Azure](../data-tools/media/azure-development-workload.png)
 
+::: moniker range="vs-2017"
+
 Após instalar a carga de trabalho **desenvolvimento do Azure**, os seguintes modelos de **nuvem** para C# estarão disponíveis na caixa de diálogo **Novo Projeto**:
 
 ![Modelos de projeto de nuvem para Visual Studio](media/cloud-project-templates.png)
+
+::: moniker-end
 
 O [Cloud Explorer](/azure/vs-azure-tools-resources-managing-with-cloud-explorer) do Visual Studio permite exibir e gerenciar seus recursos de nuvem baseados no Azure dentro do Visual Studio. Esses recursos podem incluir máquinas virtuais, tabelas, bancos de dados SQL e mais. O **Cloud Explorer** mostra os recursos do Azure em todas as contas gerenciadas na assinatura do Azure à qual você está conectado. E se uma operação específica exigir o portal do Azure, o **Cloud Explorer** fornecerá links que direcionem você no portal para onde for necessário.
 
@@ -87,7 +100,7 @@ O **Pesquisador de Objetos do SQL Server** no Visual Studio fornece uma exibiç�
 
 ## <a name="debug-test-and-improve-your-code"></a>Depurar, testar e melhorar o código
 
-Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. As opções de depuração podem ser gerenciadas no próprio editor de códigos, para que você não precise sair do código. Para obter mais detalhes sobre a depuração no Visual Studio, consulte [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md).
+Quando você escrever o código, é necessário executá-lo e testá-lo para verificar o desempenho e se há bugs. O sistema de depuração de última geração do Visual Studio permite depurar o código em execução no projeto local, em um dispositivo remoto ou em um [emulador de dispositivo](../cross-platform/visual-studio-emulator-for-android.md). Você pode percorrer pelo código uma instrução por vez e inspecionar as variáveis conforme avança. Você pode definir pontos de interrupção que são atingidos somente quando uma determinada condição é verdadeira. As opções de depuração podem ser gerenciadas no próprio editor de códigos, para que você não precise sair do código. Para obter mais detalhes sobre a depuração no Visual Studio, confira [Primeiro acesso ao depurador](../debugger/debugger-feature-tour.md).
 
 Para saber mais sobre como melhorar o desempenho de seus aplicativos, confira a funcionalidade de [criação de perfil](../profiling/profiling-feature-tour.md) do Visual Studio.
 
@@ -99,13 +112,13 @@ Quando o aplicativo estiver pronto para ser implantado em usuários ou clientes,
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>Gerenciar seu código-fonte e colaborar com outros
 
-É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, consulte [Novos recursos do Git no Visual Studio 2017 (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
+É possível gerenciar o código-fonte em repositórios Git hospedados por qualquer provedor, incluindo o GitHub. Ou use o [Azure DevOps Services](/azure/devops/index) para gerenciar o código, bem como bugs e itens de trabalho de todo o projeto. Consulte [Introdução ao GIT e ao Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio) para obter mais informações sobre o gerenciamento de repositórios GIT no Visual Studio usando o Team Explorer. O Visual Studio também tem outros recursos de controle do código-fonte internos. Para saber mais sobre eles, confira [Novas funcionalidades do Git no Visual Studio (blog)](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/).
 
 Os Azure DevOps Services são serviços baseados em nuvem para planejar, hospedar, automatizar e implantar o software e habilitar a colaboração nas equipes. Os Azure DevOps Services dão suporte a repositórios Git (controle de versão distribuído) e ao Controle de Versão do Team Foundation (controle de versão centralizado). Eles dão suporte a pipelines de build e versão contínuos (CI/CD) de código armazenado em sistemas de controle de versão. O Azure DevOps Services também dá suporte a metodologias de desenvolvimento Agile, CMMI e Scrum.
 
 O TFS (Team Foundation Server) é o hub de gerenciamento do ciclo de vida do aplicativo para o Visual Studio. Ele habilita a participação de todos os envolvidos com o processo de desenvolvimento usando uma única solução. O TFS também é útil para gerenciar equipes e projetos heterogêneos.
 
-Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Abra o **Team Explorer** na caixa **Início Rápido** ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
+Se você tiver uma organização do Azure DevOps ou um Team Foundation Server na rede, conecte-se a ela por meio da janela **Team Explorer** no Visual Studio. Nessa janela você pode fazer check-in ou check-out de código no controle do código-fonte, gerenciar itens de trabalho, iniciar compilações e acessar salas da equipe e workspaces. Abra o **Team Explorer** na caixa de pesquisa ou no menu principal, em **Exibir** > **Team Explorer** ou em **Equipe** > **Gerenciar Conexões**.
 
 A imagem a seguir mostra a janela **Team Explorer** em uma solução hospedada no Azure DevOps Services.
 
@@ -127,4 +140,4 @@ Para saber mais sobre como estender o Visual Studio, consulte [Estender o IDE do
 
 - [Visão geral do IDE do Visual Studio](../get-started/visual-studio-ide.md)
 - [Novidades no Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
-- [Novidades no Visual Studio 2019 Versão Prévia](../ide/whats-new-visual-studio-2019.md)
+- [Novidades no Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

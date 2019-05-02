@@ -1,27 +1,22 @@
 ---
 title: Validar pontos de interrupção em um serviço de linguagem herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0868e516720fd32a445f60f05f345936d24d6d7a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f54dc683aa4287145a27e22d49397241b395f69f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093300"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validando pontos de interrupção em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,13 +27,13 @@ Um ponto de interrupção indica que a execução do programa deve parar em um p
   
 ## <a name="implementing-support-for-validating-breakpoints"></a>Implementação do suporte para validar os pontos de interrupção  
   
--   O <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método é dada a posição do ponto de interrupção. Sua implementação deve decidir se o local é válido e indicar isso retornando um intervalo de texto que identifica o código associado com a posição da linha que o ponto de interrupção.  
+- O <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método é dada a posição do ponto de interrupção. Sua implementação deve decidir se o local é válido e indicar isso retornando um intervalo de texto que identifica o código associado com a posição da linha que o ponto de interrupção.  
   
--   Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> se o local for válido, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se ele não é válido.  
+- Retornar <xref:Microsoft.VisualStudio.VSConstants.S_OK> se o local for válido, ou <xref:Microsoft.VisualStudio.VSConstants.S_FALSE> se ele não é válido.  
   
--   Se o ponto de interrupção é válido, o intervalo de texto é realçado, juntamente com o ponto de interrupção.  
+- Se o ponto de interrupção é válido, o intervalo de texto é realçado, juntamente com o ponto de interrupção.  
   
--   Se o ponto de interrupção for inválido, uma mensagem de erro será exibida na barra de status.  
+- Se o ponto de interrupção for inválido, uma mensagem de erro será exibida na barra de status.  
   
 ### <a name="example"></a>Exemplo  
  Este exemplo mostra uma implementação do <xref:Microsoft.VisualStudio.Package.LanguageService.ValidateBreakpointLocation%2A> método que chama o analisador para obter o trecho de código (se houver) no local especificado.  
@@ -107,4 +102,3 @@ namespace TestLanguagePackage
   
 ## <a name="see-also"></a>Consulte também  
  [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)
-

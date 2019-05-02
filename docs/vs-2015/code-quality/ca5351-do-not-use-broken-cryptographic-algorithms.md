@@ -1,24 +1,19 @@
 ---
 title: CA5351 Não usar algoritmos de criptografia | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 483f51b3-e186-4433-b48e-5ca24a9a9c94
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7067d1d08be6de121986c60ead67086a11548ea8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 780745e2b4213d8fdd130fe03cac292b233c5b0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49889809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430674"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 não use algoritmos de criptografia desfeitos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ ms.locfileid: "49889809"
 |Alteração Significativa|Não separável|  
   
 > [!NOTE]
->  Esse aviso foi atualizado pela última vez em novembro de 2015.  
+> Esse aviso foi atualizado pela última vez em novembro de 2015.  
   
 ## <a name="cause"></a>Causa  
  Funções de hash, como <xref:System.Security.Cryptography.MD5> e algoritmos de criptografia, como <xref:System.Security.Cryptography.DES> e <xref:System.Security.Cryptography.RC2> pode expor um risco significativo e pode resultar na exposição de informações confidenciais por meio de técnicas de ataque trivial, como ataques de força bruta e colisões de hash.  
@@ -52,9 +47,9 @@ ms.locfileid: "49889809"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Use opções criptograficamente mais fortes:  
   
--   Para o MD5, use hashes na [SHA-2](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382459.aspx) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
+- Para o MD5, use hashes na [SHA-2](https://msdn.microsoft.com/library/windows/desktop/aa382459.aspx) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).  
   
--   Para DES e RC2, use <xref:System.Security.Cryptography.Aes> criptografia.  
+- Para DES e RC2, use <xref:System.Security.Cryptography.Aes> criptografia.  
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  Não suprima um aviso nessa regra, a menos que é examinada por um especialista em criptografia.  

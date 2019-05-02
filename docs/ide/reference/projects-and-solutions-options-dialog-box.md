@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c129ed104ed11b7cd6c88a7b603956acf64cf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 21d101ff4cd8503935fceb72b5350a6ce0e1ce2e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969066"
 ---
 # <a name="projects-and-solutions-page-options-dialog-box"></a>Página de projetos e soluções, caixa de diálogo Opções
 
@@ -49,9 +49,13 @@ Quando estiverem desmarcados, os comandos do menu **Build**, como **Compilar Sol
 
 Quando essa opção estiver selecionada, a solução e todos os comandos que atuam em soluções sempre serão mostrados no IDE. Quando estiver desmarcada, todos os projetos serão criados como projetos independentes e você não verá a solução no Gerenciador de Soluções nem os comandos que atuam em soluções no IDE se a solução contiver apenas um projeto.
 
+::: moniker range="vs-2017"
+
 ### <a name="save-new-projects-when-created"></a>Salvar novos projetos quando criados
 
 Quando essa opção estiver selecionada, será possível especificar um local para o projeto na caixa de diálogo **Novo Projeto**. Quando estiver desmarcada, todos os novos projetos serão criados como projetos temporários. Quando você estiver trabalhando com projetos temporários, poderá criar e testar um projeto sem a necessidade de especificar um local de disco.
+
+::: moniker-end
 
 ### <a name="warn-user-when-the-project-location-is-not-trusted"></a>Avisar o usuário quando o local do projeto não é confiável
 
@@ -71,7 +75,7 @@ Quando selecionada, o Visual Studio exibe uma caixa de mensagem de confirmação
 
 ### <a name="reopen-documents-on-solution-load"></a>Reabrir documentos no carregamento da solução
 
-**Novo no Visual Studio 2017 versão 15.8 versão prévia 2 e posterior**
+**Introduzido no Visual Studio 2017 versão 15.8**
 
 Quando selecionada, os documentos que foram deixados abertos na última vez em que a solução foi fechada são abertos automaticamente quando a solução é aberta.
 
@@ -87,11 +91,11 @@ Especifica o local padrão em que o Visual Studio cria novos projetos e pastas d
 
 ### <a name="user-project-templates-location"></a>Local dos modelos de projeto do usuário
 
-Especifica o local padrão usado pela caixa de diálogo **Novo Projeto** para criar a lista de **Meus Modelos**. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica o local padrão que é usado para procurar modelos de projeto criados pelo usuário. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ### <a name="user-item-templates-location"></a>Local de modelos de item do usuário
 
-Especifica o local padrão usado pela caixa de diálogo **Adicionar Novo Item** para criar a lista de **Meus Modelos**. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
+Especifica o local padrão que é usado para procurar modelos de item criados pelo usuário. Para obter mais informações, confira [Como: Localizar e organizar modelos](../../ide/how-to-locate-and-organize-project-and-item-templates.md).
 
 ## <a name="see-also"></a>Consulte também
 

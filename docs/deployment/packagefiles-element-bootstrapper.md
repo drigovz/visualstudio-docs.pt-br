@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898705"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles&gt; elemento (bootstrapper)
 O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacotes de instalação executados como resultado do `Command` elemento.
@@ -52,7 +52,6 @@ O `PackageFiles` elemento contém `PackageFile` elementos, que definem os pacote
  O `PackageFile` um filho do elemento é o `PackageFiles` elemento. Um `PackageFiles` elemento deve ter pelo menos um `PackageFile` elemento.
 
  `PackageFile` tem os seguintes atributos.
-
 
 | Atributo | Descrição |
 |---------------| - |

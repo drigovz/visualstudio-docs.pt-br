@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dab79e4cbc9ab9b37a9052ee1337a5e9b94a6947
-ms.sourcegitcommit: 0342f99120fbd603b8f06f7e9166c39f2896827a
+ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/05/2019
-ms.locfileid: "55742450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929047"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -91,7 +91,7 @@ No Visual Studio, você pode criar pacotes de aplicativos para implantação na 
 
 - **UWP**: Empacote o aplicativo e implante-o usando itens de menu. Para saber mais, confira [Empacotar um aplicativo UWP usando o Visual Studio](/windows/uwp/packaging/packaging-uwp-apps).
 
-    ![Criar um pacote de aplicativos](../deployment/media/feature-tour-create-app-package.jpg)
+    ![Criar um pacote de aplicativo](../deployment/media/feature-tour-create-app-package.jpg)
 
 - **Área de Trabalho do Windows**: Realize a implantação na Microsoft Store usando a Ponte de Desktop no Visual Studio 2017 versão 15.4 e posterior. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
@@ -107,9 +107,9 @@ Se precisa de uma instalação mais complexa de um aplicativo da área de trabal
 
 - Um pacote de instalador baseado em MSI pode ser criado usando a [Extensão WiX Toolset do Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=RobMensching.WixToolsetVisualStudio2017Extension). Este é um conjunto de ferramentas de linha de comando.
 
-- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 (não compatível com a Community Edition). Observe que o InstallShield Limited Edition não está mais incluído no Visual Studio e não é compatível com o Visual Studio 2017: entre em contato com a [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para informações sobre a disponibilidade futura.
+- Um pacote do instalador EXE ou MSI pode ser criado usando o [InstallShield](https://www.flexerasoftware.com/producer/products/software-installation/installshield-software-installer/tab/requirements) da Flexera Software. O InstallShield pode ser usado com o Visual Studio 2017 e versões posteriores (não compatível com a Community Edition). Observe que o InstallShield Limited Edition não está mais incluído no Visual Studio e não é compatível com o Visual Studio 2017 e versões posteriores: entre em contato com a [Flexera Software](http://learn.flexerasoftware.com/content/IS-EVAL-InstallShield-Limited-Edition-Visual-Studio) para informações sobre a disponibilidade futura.
 
-- Um pacote do instalador EXE ou MSI pode ser criado usando um projeto de instalação (vdproj). Para usar essa opção, instale a [extensão de Projetos de Instalador do Visual Studio 2017](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
+- Um pacote do instalador EXE ou MSI pode ser criado usando um projeto de instalação (vdproj). Para usar essa opção, instale a [extensão de Projetos de Instalador do Visual Studio](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.MicrosoftVisualStudio2017InstallerProjects#overview).
 
 - Você também pode instalar os componentes de pré-requisitos para aplicativos de área de trabalho configurando um instalador genérico, que é conhecido como bootstrapper. Para obter mais informações, confira [Pré-requisitos de Implantação de aplicativos](../deployment/application-deployment-prerequisites.md).
 
@@ -127,7 +127,7 @@ Você pode usar Azure Pipelines para permitir a implantação contínua do seu a
 | --- | --- | --- |
 | **Aplicativo do Office** | Você pode publicar um suplemento do Office no Visual Studio. | [Implantar e publicar seu suplemento do Office](https://dev.office.com/docs/add-ins/publish/publish) |
 | **Serviço WCF ou OData** | Outros aplicativos podem usar os serviços RIA WCF que você implanta em um servidor Web. | [Desenvolvendo e implantando WCF Data Services](/dotnet/framework/data/wcf/developing-and-deploying-wcf-data-services) |
-| **LightSwitch** | O LightSwitch não é mais compatível com o Visual Studio 2017, mas ainda pode ser implantado no Visual Studio 2015 e anteriores. | [Implantando aplicativos LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
+| **LightSwitch** | O LightSwitch não é mais compatível desde o Visual Studio 2017, mas ainda pode ser implantado no Visual Studio 2015 e anteriores. | [Implantando aplicativos LightSwitch](https://msdn.microsoft.com/Library/4818d933-295c-4ecc-9148-7ad9ca28dcdb) |
 
 ## <a name="next-steps"></a>Próximas etapas
 

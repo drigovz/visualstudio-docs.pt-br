@@ -1,14 +1,9 @@
 ---
 title: Exemplo de demonstração | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - demo sample [Visual Studio ALM]
 - code analysis, samples
@@ -16,62 +11,62 @@ ms.assetid: 09e1b9f7-5916-4ed6-a001-5c2d7e710682
 caps.latest.revision: 23
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 2ca480078bf269e8af662d94910a5d337c13bcd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9e85944e93b952b8239015761e8fb364cb265291
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112098"
 ---
 # <a name="demo-sample"></a>Amostra de demonstração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Estes procedimentos a seguir mostram como criar o exemplo para [instruções passo a passo: Analisando código do C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Criam os procedimentos:  
+Os procedimentos a seguir mostram como criar a amostra para [Passo a passo: Analisando código C/C++ em busca de defeitos](../code-quality/walkthrough-analyzing-c-cpp-code-for-defects.md). Os procedimentos criam:  
   
 - Um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução chamada CppDemo.  
   
-- Um projeto de biblioteca estática denominada CodeDefects.  
+- Um projeto de biblioteca estática denominado CodeDefects.  
   
-- Um projeto de biblioteca estática denominada anotações.  
+- Um projeto de biblioteca estática denominado Anotações.  
   
   Os procedimentos também fornecem o código para os arquivos de cabeçalho e. cpp para as bibliotecas estáticas.  
   
-### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Crie a solução CppDemo e o projeto de CodeDefects  
+### <a name="create-the-cppdemo-solution-and-the-codedefects-project"></a>Criar a solução CppDemo e o projeto CodeDefects  
   
-1.  Clique o **arquivo** , aponte para **New**e, em seguida, clique em **novo projeto**.  
+1. Clique no menu **Arquivo**, aponte para **Novo** e clique em **Novo Projeto**.  
   
-2.  No **tipos de projeto** lista de árvore, expanda se o Visual C++ não é o idioma padrão no VS **outros idiomas**.  
+2. Na lista de árvore **Tipos de projeto**, se o Visual C++ não for o idioma padrão no VS, expanda **Outros Idiomas**.  
   
-3.  Expandir **Visual C++** e, em seguida, clique em **geral**.  
+3. Expanda **Visual C++** e, em seguida, clique em **Geral**.  
   
-4.  Na **modelos**, clique em **projeto vazio**.  
+4. Em **Modelos**, clique em **Projeto Vazio**.  
   
-5.  No **nome** caixa de texto, digite **CodeDefects**.  
+5. Na caixa de texto **Nome**, digite **CodeDefects**.  
   
-6.  Marque a caixa de seleção **Criar diretório para a solução**.  
+6. Marque a caixa de seleção **Criar diretório para a solução**.  
   
-7.  No **nome da solução** caixa de texto, digite **CppDemo**.  
+7. Na caixa de texto **Nome da Solução**, digite **CppDemo**.  
   
 ### <a name="configure-the-codedefects-project-as-a-static-library"></a>Configurar o projeto CodeDefects como uma biblioteca estática  
   
-1.  No Gerenciador de soluções, clique com botão direito **CodeDefects** e, em seguida, clique em **propriedades**.  
+1. No Gerenciador de Soluções, clique com o botão direito do mouse em **CodeDefects** e clique em **Propriedades**.  
   
-2.  Expandir **propriedades de configuração** e, em seguida, clique em **geral**.  
+2. Expanda **Propriedades de Configuração** e, em seguida, clique em **Geral**.  
   
-3.  No **gerais** , selecione o texto na coluna ao lado de **extensão de destino**e, em seguida, digite **. lib**.  
+3. Na lista **Geral**, selecione o texto na coluna ao lado de **Extensão de Destino** e, em seguida, digite **.lib**.  
   
-4.  Na **padrões de projeto**, clique na coluna ao lado de **tipo de configuração**e, em seguida, clique em **biblioteca estática (. lib)**.  
+4. Em **Padrões do Projeto**, clique na coluna ao lado de **Tipo de Configuração** e, em seguida, clique em **Biblioteca Estática (. lib)**.  
   
-### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Adicione o arquivo de cabeçalho e o código-fonte ao projeto CodeDefects  
+### <a name="add-the-header-and-source-file-to-the-codedefects-project"></a>Adicionar o arquivo de cabeçalho e o código-fonte ao projeto CodeDefects  
   
-1.  No Gerenciador de soluções, expanda **CodeDefects**, clique com botão direito **arquivos de cabeçalho**, clique em **Add**e, em seguida, clique em **Novo Item**.  
+1. No Gerenciador de Soluções, expanda **CodeDefects**, clique com o botão direito do mouse em **Arquivos de Cabeçalho**, clique em **Adicionar** e, em seguida, clique em **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, clique em **código**e, em seguida, clique em **arquivo de cabeçalho (. h)**.  
+2. Na caixa de diálogo **Adicionar Novo Item**, clique em **Código** e depois em **Arquivo de Cabeçalho (.h)**.  
   
-3.  No **nome** , digite **Bug.cpp** e, em seguida, clique em **adicionar**.  
+3. Na caixa **Nome**, digite **Bug.cpp** e clique em **Adicionar**.  
   
-4.  Copie o código a seguir e cole-o na **Bug.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie o código a seguir e cole-o na **Bug.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
   
     ```  
     #include <windows.h>  
@@ -93,13 +88,13 @@ Estes procedimentos a seguir mostram como criar o exemplo para [instruções pas
     const int ACCOUNT_DOMAIN_LEN = 128;  
     ```  
   
-5.  No Gerenciador de soluções, clique com botão direito **arquivos de origem**, aponte para **New**e, em seguida, clique em **Novo Item**.  
+5. No Gerenciador de Soluções, clique com o botão direito do mouse em **Arquivos de Origem**, aponte para **Novo** e clique em **Novo Item**.  
   
-6.  No **Adicionar Novo Item** caixa de diálogo, clique em **arquivo C++ (. cpp)**  
+6. Na caixa de diálogo **Adicionar Novo Item**, clique em **Arquivo C++ (.cpp)**  
   
-7.  No **nome** , digite **Bug.cpp** e, em seguida, clique em **adicionar**.  
+7. Na caixa **Nome**, digite **Bug.cpp** e clique em **Adicionar**.  
   
-8.  Copie o código a seguir e cole-o no arquivo Bug.h do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie o código a seguir e cole-o no arquivo Bug.h do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
   
     ```  
     #include <stdlib.h>  
@@ -159,33 +154,33 @@ Estes procedimentos a seguir mostram como criar o exemplo para [instruções pas
     }  
     ```  
   
-9. Clique o **arquivo** menu e clique **Salvar tudo**.  
+9. Clique no menu **Arquivo** e em **Salvar Tudo**.  
   
-### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Adicione o projeto de anotações e configurá-lo como uma biblioteca estática  
+### <a name="add-the-annotations-project-and-configure-it-as-a-static-library"></a>Adicionar o projeto Anotações e configurá-lo como uma biblioteca estática  
   
-1.  No Gerenciador de soluções, clique em **CppDemo**, aponte para **Add**e, em seguida, clique em **novo projeto**.  
+1. No Gerenciador de Soluções, clique em **CppDemo**, aponte para **Adicionar** e, em seguida, clique em **Novo Projeto**.  
   
-2.  No **adicionar novo projeto** diálogo caixa, expanda Visual C++, clique em **gerais**e, em seguida, clique em **projeto vazio**.  
+2. Na caixa de diálogo **Adicionar Novo Projeto**, expanda Visual C++, clique em **Geral** e, em seguida, clique em **Projeto Vazio**.  
   
-3.  No **nome** caixa de texto, digite **anotações**e, em seguida, clique em **adicionar**.  
+3. Na caixa de texto **Nome**, digite **Anotações** e clique em **Adicionar**.  
   
-4.  No Gerenciador de soluções, clique com botão direito **anotações** e, em seguida, clique em **propriedades**.  
+4. No Gerenciador de Soluções, clique com o botão direito do mouse em **Anotações** e clique em **Propriedades**.  
   
-5.  Expandir **propriedades de configuração** e, em seguida, clique em **geral**.  
+5. Expanda **Propriedades de Configuração** e, em seguida, clique em **Geral**.  
   
-6.  No **gerais** , selecione o texto na coluna ao lado de **extensão de destino**e, em seguida, digite **. lib**.  
+6. Na lista **Geral**, selecione o texto na coluna ao lado de **Extensão de Destino** e, em seguida, digite **.lib**.  
   
-7.  Na **padrões de projeto**, clique na coluna ao lado de **tipo de configuração**e, em seguida, clique em **biblioteca estática (. lib)**.  
+7. Em **Padrões do Projeto**, clique na coluna ao lado de **Tipo de Configuração** e, em seguida, clique em **Biblioteca Estática (. lib)**.  
   
-### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Adicionar o arquivo de cabeçalho e o arquivo de origem para o projeto de anotações  
+### <a name="add-the-header-file-and-source-file-to-the-annotations-project"></a>Adicionar o arquivo de cabeçalho e o arquivo de origem ao projeto Anotações  
   
-1.  No Gerenciador de soluções, expanda **anotações**, clique com botão direito **arquivos de cabeçalho**, clique em **Add**e, em seguida, clique em **Novo Item**.  
+1. No Gerenciador de Soluções, expanda **Anotações**, clique com o botão direito do mouse em **Arquivos de Cabeçalho**, clique em **Adicionar** e, em seguida, clique em **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, clique em **arquivo de cabeçalho (. h)**.  
+2. Na caixa de diálogo **Adicionar Novo Item**, clique em **Arquivo de Cabeçalho (.h)**.  
   
-3.  No **nome** , digite **annotations.h** e, em seguida, clique em **adicionar**.  
+3. Na caixa de texto **Nome**, digite **annotations.h** e clique em **Adicionar**.  
   
-4.  Copie o código a seguir e cole-o na **annotations.h** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+4. Copie o código a seguir e cole-o na **annotations.h** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -202,13 +197,13 @@ Estes procedimentos a seguir mostram como criar o exemplo para [instruções pas
   
     ```  
   
-5.  No Gerenciador de soluções, clique com botão direito **arquivos de origem**, aponte para **New**e, em seguida, clique em **Novo Item**.  
+5. No Gerenciador de Soluções, clique com o botão direito do mouse em **Arquivos de Origem**, aponte para **Novo** e clique em **Novo Item**.  
   
-6.  No **Adicionar Novo Item** caixa de diálogo, clique em **código** e, em seguida, clique em **arquivo C++ (. cpp)**  
+6. Na caixa de diálogo **Adicionar Novo Item**, clique em **Código** e depois em **Arquivo C++ (.cpp)**  
   
-7.  No **nome** , digite **annotations.cpp** e, em seguida, clique em **adicionar**.  
+7. Na caixa de texto **Nome**, digite **annotations.cpp** e clique em **Adicionar**.  
   
-8.  Copie o código a seguir e cole-o na **annotations.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
+8. Copie o código a seguir e cole-o na **annotations.cpp** arquivo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor.  
   
     ```  
     #include <CodeAnalysis/SourceAnnotations.h>  
@@ -237,7 +232,4 @@ Estes procedimentos a seguir mostram como criar o exemplo para [instruções pas
   
     ```  
   
-9. Clique o **arquivo** menu e clique **Salvar tudo**.
-
-
-
+9. Clique no menu **Arquivo** e em **Salvar Tudo**.

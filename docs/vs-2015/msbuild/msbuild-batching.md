@@ -12,17 +12,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2e2392c3b04ce7f81e023f449da890122946e3b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439371"
 ---
 # <a name="msbuild-batching"></a>Separação em lotes no MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tem a capacidade de dividir as listas de itens em categorias diferentes ou lotes com base nos metadados do item, além de executar um destino ou uma tarefa uma vez com cada lote.  
   
 ## <a name="task-batching"></a>Lote de tarefas  
@@ -31,7 +30,7 @@ ms.locfileid: "54770799"
  Especifique que você deseja que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] execute o processamento em lote com uma tarefa usando a notação %(*ItemMetaDataName*) em um dos atributos da tarefa. O exemplo a seguir divide a lista de itens `Example` em lotes com base no valor do item de metadados `Color` e passa cada um dos lotes para a tarefa `MyTask` separadamente.  
   
 > [!NOTE]
->  Se não houver referência à lista de itens em outro lugar nos atributos de tarefa ou se o nome dos metadados for ambíguo, você pode usar a notação %(*ItemCollection.ItemMetaDataName*) para qualificar totalmente o valor de metadados do item a ser usado para processamento em lotes.  
+> Se não houver referência à lista de itens em outro lugar nos atributos de tarefa ou se o nome dos metadados for ambíguo, você pode usar a notação %(*ItemCollection.ItemMetaDataName*) para qualificar totalmente o valor de metadados do item a ser usado para processamento em lotes.  
   
 ```  
 <Project  

@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleRuntimeError | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2a64bc0b3543af322ec092340026e4abdc7380f9
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: c2c9a8b15b5095ac346ba047d6668aada7647a31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54097312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412434"
 ---
 # <a name="idebugapplicationhandleruntimeerror"></a>IDebugApplication::HandleRuntimeError
 Faz com que o thread atual bloquear e envia uma notificação de erro para o IDE do depurador.  
@@ -67,7 +66,7 @@ HRESULT HandleRuntimeError(
  Um mecanismo de linguagem chama esse método no contexto de um thread que causa um erro de tempo de execução. Esse método faz com que o thread atual bloquear e envia uma notificação de erro a ser enviada para o IDE do depurador. Quando o IDE do depurador retoma o aplicativo, esse método retorna com a ação a ser executada.  
   
 > [!NOTE]
->  Enquanto estiver na falha de tempo de execução, o mecanismo de linguagem pode ser chamado pelo thread para executar tarefas, como enumerar os quadros de pilha ou avaliar expressões.  
+> Enquanto estiver na falha de tempo de execução, o mecanismo de linguagem pode ser chamado pelo thread para executar tarefas, como enumerar os quadros de pilha ou avaliar expressões.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugApplication](../../winscript/reference/idebugapplication-interface.md)   

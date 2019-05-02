@@ -25,24 +25,23 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 957e40a44c4f396fbd31b9062cfacddfd78cc8d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: efbdccf4d5774322b42a517831b22186103347b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430894"
 ---
 # <a name="mt-task"></a>Tarefa MT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula a Ferramenta de Manifesto da Microsoft, a mt.exe. Para obter mais informações, consulte “Mt.exe” no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa **MT**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.  
   
 > [!NOTE]
->  A documentação da mt.exe usa um hífen (**-**) como prefixo para opções de linha de comando, mas este tópico usa uma barra (**/**). Qualquer um desses prefixos é aceitável.  
+> A documentação da mt.exe usa um hífen (**-**) como prefixo para opções de linha de comando, mas este tópico usa uma barra (**/**). Qualquer um desses prefixos é aceitável.  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  

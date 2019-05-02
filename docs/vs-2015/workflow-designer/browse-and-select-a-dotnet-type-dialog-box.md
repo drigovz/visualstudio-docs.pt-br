@@ -1,11 +1,8 @@
 ---
 title: Procure e selecione uma caixa de diálogo de tipo de .NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - TypeBrowser.UI
@@ -14,45 +11,45 @@ ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 1bff5fccfbd4998e477043188c955e3446a45d69
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49192524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417560"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 No **propriedades** designers como o designer variável, quando você seleciona, caixas de diálogo ou janela **procurar tipos...** em uma lista de tipos de dados, é o **navegue e selecione um tipo .NET** caixa de diálogo (conhecida na forma abreviada, como o tipo "navegador"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.  
   
  Esta caixa de diálogo é empregada em um número de cenários do usuário, incluindo o seguinte:  
   
--   Ao definir o tipo de uma variável ou um argumento.  
+- Ao definir o tipo de uma variável ou um argumento.  
   
--   Ao selecionar um tipo para uma atividade genérico.  
+- Ao selecionar um tipo para uma atividade genérico.  
   
--   Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
+- Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
   
 > [!NOTE]
->  O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
+> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo  
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo  
   
-1.  No **nome do tipo** , digite o nome do tipo que você deseja usar.  
+1. No **nome do tipo** , digite o nome do tipo que você deseja usar.  
   
-2.  Realize um dos seguintes procedimentos:  
+2. Realize um dos seguintes procedimentos:  
   
-    -   Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique duas vezes o tipo para selecioná-lo.  
+    - Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique duas vezes o tipo para selecioná-lo.  
   
-    -   Tipo suficiente caracteres na **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo  
+    - Tipo suficiente caracteres na **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo  
   
-1.  No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.  
+1. No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.  
   
-2.  Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique no tipo para selecioná-lo para causar caixas suspensas aparecem.  
+2. Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique no tipo para selecioná-lo para causar caixas suspensas aparecem.  
   
      Selecione o tipo que você deseja usar para fechar o genérico caixas de lista suspensa e, em seguida, clique em **Okey**.  
   
@@ -66,9 +63,9 @@ No **propriedades** designers como o designer variável, quando você seleciona,
   
  Por exemplo:  
   
-1.  Digitação **operação** corresponde a <xref:System.OperationCanceledException> mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.  
+1. Digitação **operação** corresponde a <xref:System.OperationCanceledException> mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.  
   
-2.  Digitação **genérico** corresponde a <xref:System.GenericUriParser> mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.  
+2. Digitação **genérico** corresponde a <xref:System.GenericUriParser> mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo  
  Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .  

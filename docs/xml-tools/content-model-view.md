@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cad1b3087b1a7cd8b530ca659ad6c87868a3ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838564"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 
@@ -35,7 +35,7 @@ Quando um nó é selecionado na **espaço de trabalho** painel, ele é adicionad
 
 O modelo de conteúdo de um nó é representado por uma árvore gráfico expansível com elementos e atributos que aparecem como nós de árvore. Por padrão, somente um nível é expandido. Outras informações, como compositores, nomes de tipo, grupos, e outros contêineres é colocada em uma barra vertical (quando expandido) ao longo de elementos e atributos que incluem. Quando você clica duas vezes em uma barra vertical, transformações horizontal e recolhe de árvore. Quando você clica duas vezes em uma barra horizontal e vertical, transformações a árvore expande. Selecione a barra vertical seleciona todos os nós no contêiner. Os expansores são exibidos à direita de um nó se um elemento pode ser expandido ou recolhido.
 
-Se a superfície de design fica em branco, o Editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
+Se a superfície de design fica em branco, o editor de XML, o **XML Schema Explorer**, e a marca d'água são mostradas. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".
 
 ## <a name="breadcrumb-bar"></a>Barra de navegação estrutural
 
@@ -52,7 +52,7 @@ Quando você clique com botão direito um item na superfície de design ou **esp
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 |**Exibir documentação**|Mostra ou de anotação/documentação de oculta conteúdo do nó.|
 |**Exportar diagrama como imagem**|Salva a superfície de design para um arquivo XPS.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado na **XML Schema Explorer** também está selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 A tabela a seguir descreve as opções que estão disponíveis para o **espaço de trabalho** painel.
@@ -66,7 +66,7 @@ A tabela a seguir descreve as opções que estão disponíveis para o **espaço 
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e da superfície de design.|
 |**Gerar XML de exemplo**|Disponível somente para os elementos globais. Gerencia um arquivo XML de exemplo para o elemento global.|
 |**Selecionar tudo**|Seleciona todos os nós a **espaço de trabalho** painel.|
-|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor XML. O item selecionado na **XML Schema Explorer** também está selecionado no Editor de XML.|
+|**Exibir Código**|Abre o arquivo que contém o nó selecionado no editor de XML. O item selecionado na **XML Schema Explorer** também está selecionado no editor de XML.|
 |**Janela Propriedades**|Abre o **propriedades** janela (se não ainda estiver aberto). Esta janela exibe informações sobre o nó.|
 
 ## <a name="properties-window"></a>Janela de Propriedades
@@ -97,13 +97,13 @@ Você pode filtrar a superfície de design usando barras de rolagem ou mantendo 
 
 Desfazer/refaz o recurso é habilitado no modo de modelo de conteúdo para as seguintes ações:
 
--   Adicionando um único nó arrastando e soltando-se.
+- Adicionando um único nó arrastando e soltando-se.
 
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.
 
--   Adicionando a exibição de nós do início.
+- Adicionando a exibição de nós do início.
 
--   Excluindo única ou mais nós.
+- Excluindo única ou mais nós.
 
 ## <a name="zoom"></a>Aplicar Zoom
 
@@ -111,17 +111,17 @@ Zoom está disponível no canto inferior direito da exibição de modelo de cont
 
 O zoom pode ser controlado das seguintes maneiras:
 
--   Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição do modelo de conteúdo.
+- Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição do modelo de conteúdo.
 
--   Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
+- Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
 
 O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele ou usar **Ctrl** com a roda do mouse para aplicar zoom; em todos os outros momentos, é transparente.
 
 ## <a name="xml-editor-integration"></a>Integração do editor de XML
 
-Você pode alternar entre o **Designer XSD** e o Editor de XML usando o menu de atalho (contexto).
+Você pode alternar entre o **Designer XSD** e o editor de XML usando o menu de atalho (contexto).
 
-Se você fizer alterações no esquema definido no Editor XML as alterações serão sincronizadas no modo de modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
+Se você fizer alterações no esquema definido no editor de XML, que as alterações serão sincronizadas no modo de modelo de conteúdo. Para obter mais informações, consulte [integração com o editor de XML](../xml-tools/integration-with-xml-editor.md).
 
 ## <a name="see-also"></a>Consulte também
 

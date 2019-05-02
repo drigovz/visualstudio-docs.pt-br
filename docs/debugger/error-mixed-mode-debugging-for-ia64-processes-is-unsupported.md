@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f80cc0d38335679df413f104deadc8f9135ab765
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c4414651249aa7622e7f7be59e6150a4925f1b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850871"
 ---
-# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erro: a depuração do modo misto para processos IA64 não é suportada
+# <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erro: Não há suporte para a depuração de modo misto para processos IA64
 O depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não oferece suporte à depuração de código nativo misto e gerenciado em um processo baseado em Itanium.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
--   Crie uma versão de 32 bits do aplicativo para depuração.
+- Crie uma versão de 32 bits do aplicativo para depuração.
 
 ## <a name="see-also"></a>Consulte também
 - [Depuração remota](../debugger/remote-debugging.md)

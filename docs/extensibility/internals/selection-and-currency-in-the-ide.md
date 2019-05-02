@@ -13,19 +13,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0db376b57c6f581137b2bf48fbc5d354651a8ef6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 612549e9aceb7a9bad6da2a5388dedd277469bad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908785"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seleção e moeda no IDE
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) mantém informações sobre dos usuários objetos selecionados no momento usando a seleção *contexto*. Com o contexto de seleção, os VSPackages pode fazer parte de moeda de acompanhamento de duas maneiras:
 
--   Propagando as informações de moeda sobre os VSPackages ao IDE.
+- Propagando as informações de moeda sobre os VSPackages ao IDE.
 
--   Monitorando seleções ativa no momento dentro do IDE.
+- Monitorando seleções ativa no momento dentro do IDE.
 
 ## <a name="selection-context"></a>Contexto de seleção
  O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE globalmente mantém o controle de moeda IDE no seu próprio objeto de contexto de seleção global. A tabela a seguir mostra os elementos que compõem o contexto da seleção.
@@ -38,9 +38,9 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desen
 
  Além disso, o ambiente mantém duas listas globais:
 
--   Uma lista de identificadores de comando do Active Directory da interface do usuário
+- Uma lista de identificadores de comando do Active Directory da interface do usuário
 
--   Uma lista de tipos de elemento ativo no momento.
+- Uma lista de tipos de elemento ativo no momento.
 
 ### <a name="window-types-and-selection"></a>Seleção e tipos de janelas
  O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE organiza windows em dois tipos gerais:
@@ -58,9 +58,9 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desen
 ### <a name="events-and-currency"></a>Eventos e moeda
  Dois tipos de eventos podem ocorrer que afetam a noção do ambiente de moeda:
 
--   Eventos que são propagados para o nível global e alterar o contexto de seleção do quadro de janela. Exemplos desse tipo de evento incluem uma janela filho MDI que está sendo aberta, uma janela de ferramenta global que está sendo aberto ou uma janela de ferramentas do tipo de projeto que está sendo aberto.
+- Eventos que são propagados para o nível global e alterar o contexto de seleção do quadro de janela. Exemplos desse tipo de evento incluem uma janela filho MDI que está sendo aberta, uma janela de ferramenta global que está sendo aberto ou uma janela de ferramentas do tipo de projeto que está sendo aberto.
 
--   Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro de janela. Exemplos incluem alterar a seleção dentro DocObject ou alterar a seleção em uma janela do tipo de projeto.
+- Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro de janela. Exemplos incluem alterar a seleção dentro DocObject ou alterar a seleção em uma janela do tipo de projeto.
 
 ## <a name="see-also"></a>Consulte também
 - [Objetos do contexto de seleção](../../extensibility/internals/selection-context-objects.md)

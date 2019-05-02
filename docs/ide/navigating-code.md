@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d165cd25b6ef17c4603ab5c1c7c783edd85d8b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 792b3ccf09faf9983afcd72de9acc0f23540683d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62570056"
 ---
 # <a name="navigate-code"></a>Navegue pelos códigos
 
@@ -82,7 +82,7 @@ Ir Para tem os seguintes comandos que estão disponíveis no menu **Editar** em 
 
 - **Ir para arquivo** (**Ctrl**+**1**, **Ctrl**+**F**): Mover para o arquivo especificado na solução.
 
-- **Ir para arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): Mover para o arquivo visitado recentemente na solução especificado (novo no Visual Studio 2017 versão 15.8).
+- **Ir para arquivo recente** (**Ctrl**+**1**, **Ctrl**+**R**): Mova para o arquivo visitado recentemente especificado na solução.
 
 - **Ir para tipo** (**Ctrl**+**1**, **Ctrl**+**T**): Mover para o tipo especificado na solução.
 
@@ -105,7 +105,7 @@ Ir para Definição leva para a definição do elemento selecionado. Para saber 
 Entrada | Função
 ------------ | ---
 **Teclado** | Coloque o cursor de texto em algum lugar dentro do nome do tipo e pressione **F12**
-**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir para Definição** ou pressione **Ctrl** e clique no nome do tipo (novo no Visual Studio 2017 versão 15.4)
+**Mouse** | Clique com o botão direito do mouse no nome do tipo e selecione **Ir para definição** OU pressione **Ctrl** e clique no nome do tipo
 
 ## <a name="peek-definition"></a>Inspecionar Definição
 

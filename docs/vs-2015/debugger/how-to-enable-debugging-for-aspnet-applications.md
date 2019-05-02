@@ -1,14 +1,9 @@
 ---
-title: 'Como: habilitar a depuração para aplicativos ASP.NET | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Habilitar a depuração para aplicativos ASP.NET | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,15 +17,15 @@ ms.assetid: 3beed819-cece-4864-8184-bd410000973a
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c199e03af8a21b3134ae0e2afac7bd9b153be2f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059949"
 ---
-# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Instruções: habilitar a depuração para aplicativos ASP.NET
+# <a name="how-to-enable-debugging-for-aspnet-applications"></a>Como: Habilitar a depuração para aplicativos ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para habilitar a depuração, você deve habilitá-lo em ambos os **propriedades do projeto** página e no arquivo de Web. config do aplicativo.  
@@ -40,32 +35,32 @@ Para habilitar a depuração, você deve habilitá-lo em ambos os **propriedades
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Para habilitar a depuração ASP.NET nas propriedades de projeto (Visual Basic/C#)  
   
-1.  Na **Gerenciador de soluções**, o nome de um projeto Web com o botão direito e selecione **propriedades**.  
+1. Na **Gerenciador de soluções**, o nome de um projeto Web com o botão direito e selecione **propriedades**.  
   
-2.  Na página de propriedades do projeto, clique no **Web** guia.  
+2. Na página de propriedades do projeto, clique no **Web** guia.  
   
-3.  Sob **depuradores**, selecione o **ASP.NET** caixa de seleção.  
+3. Sob **depuradores**, selecione o **ASP.NET** caixa de seleção.  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Para habilitar a depuração no arquivo web.config  
   
-1.  Abra o arquivo web.config usando qualquer editor de texto ou analisador XML padrão.  
+1. Abra o arquivo web.config usando qualquer editor de texto ou analisador XML padrão.  
   
     > [!NOTE]  
     > No entanto, você não pode acessar o arquivo remotamente usando um navegador da Web. Por razões de segurança, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura o servidor IIS da Microsoft para ajudar a impedir o acesso direto do navegador aos arquivos Web.config. Se você tentar acessar um arquivo de configuração usando um navegador, receberá o erro de acesso HTTP 403 (proibido).  
   
-2.  Web.config é um arquivo XML e, assim, contém as seções aninhadas marcadas por aspas. Localize o elemento `configuration/system.web/compilation`. Se o elemento de compilação não existir, crie-o.  
+2. Web.config é um arquivo XML e, assim, contém as seções aninhadas marcadas por aspas. Localize o elemento `configuration/system.web/compilation`. Se o elemento de compilação não existir, crie-o.  
   
-3.  Se o elemento `compilation` não contiver um atributo `debug`, adicione o atributo ao elemento.  
+3. Se o elemento `compilation` não contiver um atributo `debug`, adicione o atributo ao elemento.  
   
-4.  Verifique se o valor do atributo `debug` está definido como `true`.  
+4. Verifique se o valor do atributo `debug` está definido como `true`.  
   
 O arquivo web.config deve parecer com o exemplo a seguir. Observe que pode haver seções entre a configuração e os elementos system.web  
   
--   seções de elementos entre a configuração e os elementos system.web  
+- seções de elementos entre a configuração e os elementos system.web  
   
--   seções de elementos entre system.web e os elementos de compilação  
+- seções de elementos entre system.web e os elementos de compilação  
   
--   Um elemento de compilação pode conter outros atributos e elementos  
+- Um elemento de compilação pode conter outros atributos e elementos  
   
 ## <a name="example"></a>Exemplo  
   
@@ -84,7 +79,7 @@ O arquivo web.config deve parecer com o exemplo a seguir. Observe que pode haver
 ```  
   
 ## <a name="robust-programming"></a>Programação robusta  
-O [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] detecta automaticamente todas as alterações nos arquivos Web.config e aplica novos parâmetros de configuração. Não é necessário reiniciar o computador ou reiniciar o servidor IIS para que as alterações entrem em vigor.  
+[!INCLUDE[vstecasp](../includes/vstecasp-md.md)] automaticamente detecta as alterações nos arquivos Web. config e aplica as novas definições de configuração. Não é necessário reiniciar o computador ou reiniciar o servidor IIS para que as alterações entrem em vigor.  
   
 Um site pode conter vários diretórios e subdiretórios virtuais, e arquivos Web.config podem existir em cada um. Os aplicativos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] herdam as configurações de arquivos Web.config em níveis mais altos no caminho da URL. Os arquivos de configuração hierárquicos permitem modificar configurações de vários aplicativos [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ao mesmo tempo, como, por exemplo, para todos os aplicativos abaixo deles na hierarquia. No entanto, se `debug` for definido em um arquivo mais baixo na hierarquia, ele substituirá o valor mais alto.  
   
@@ -94,8 +89,3 @@ Habilitar o modo de depuração afetará significativamente o desempenho do apli
   
 ## <a name="see-also"></a>Consulte também  
 [Depurando aplicativos ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)  
-  
-
-
-
-

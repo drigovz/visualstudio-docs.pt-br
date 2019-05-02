@@ -1,25 +1,22 @@
 ---
-title: 'Como: usar transações para atualizar o modelo | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar transações para atualizar o modelo | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e24436a5-7f97-401b-bc83-20d188d10d5b
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 50f9d491ed52098edb8a8ccd1a7b2f9c8834447e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236854"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085896"
 ---
-# <a name="how-to-use-transactions-to-update-the-model"></a>Como usar transações para atualizar o modelo
+# <a name="how-to-use-transactions-to-update-the-model"></a>Como: Usar transações para atualizar o modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Transações Certifique-se de que as alterações que foram feitas para o armazenamento são tratadas como um grupo. As alterações que são agrupadas podem ser confirmadas ou revertidas como uma única unidade.  
@@ -64,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Reverter uma transação  
  Para garantir que o Store permanece no ou será revertido para seu estado antes da transação, você pode usar qualquer uma dessas táticas:  
   
-1.  Gere uma exceção que não foi detectada dentro do escopo da transação.  
+1. Gere uma exceção que não foi detectada dentro do escopo da transação.  
   
-2.  Explicitamente reverta a transação:  
+2. Explicitamente reverta a transação:  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  
@@ -108,6 +105,3 @@ if (!this.Store.InUndoRedoOrRollback) {...}
 if (!this.Store.InSerializationTransaction) {...}  
   
 ```
-
-
-

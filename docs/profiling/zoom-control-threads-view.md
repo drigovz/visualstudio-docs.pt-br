@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960154"
 ---
 # <a name="zoom-control-threads-view"></a>Controle de zoom (exibição de threads)
 O controle de zoom é um controle deslizante que ajuda você a ampliar e reduzir a linha do tempo para que seja possível focar áreas de interesse específico. Uma vez que esse controle amplia o centro da exibição da linha do tempo, centralize a área de interesse antes de ampliá-la.

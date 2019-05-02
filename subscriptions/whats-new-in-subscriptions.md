@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969369"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -34,7 +34,6 @@ Adicionamos a nova funcionalidade para administradores de nuvem que facilita o g
 * [**Exportar**](/visualstudio/subscriptions/exporting-subscriptions): exporte uma lista de usuários e os detalhes de suas atribuições. Uma lista como essa é útil para acompanhar as datas de atribuições e de vencimento.
 
    ![Exportar uma lista de assinantes para o Excel usando o botão Exportar](media/export-subscriber-list-to-csv.png)
-
 
 * [**Editar em massa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit): edite as informações de assinatura de vários assinantes, em massa.
 

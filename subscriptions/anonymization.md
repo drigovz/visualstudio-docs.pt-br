@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Saiba como os dados de assinante são anonimizados quando o acesso às assinaturas é perdido.
 searchscope: VS Subscription
 ms.openlocfilehash: a4249aa2520df6e9c1870fec121de2fdb2135308
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946193"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Anonimização de informações de assinante do Visual Studio
 
@@ -32,7 +32,7 @@ Eventos que inutilizam uma assinatura para um assinante dispararão a anonimiza�
 | Todas as assinaturas                                                                                                                       | Uma conta do Azure Active Directory ou MSA (Conta da Microsoft) usada para entrar na assinatura está fechada | Imediatamente               |
 | Todas as assinaturas                                                                                                                       | Um assinante é removido do locatário associado à conta do Azure Active Directory                                | Imediatamente               |
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="faq"></a>Perguntas frequentes
 
 ### <a name="q--does-the-anonymization-of-the-subscribers-personal-information-cause-them-to-lose-access-to-the-subscription"></a>P:  A anonimização das informações pessoais do assinante fará com que ele perca o acesso à assinatura?
 R:  Nº  A anonimização é em resposta a um evento que ocasiona a perda de acesso à assinatura, mas não ocasiona a falta de acesso.

@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 304b61a7e0e11cf3b714fcc6f43855f5ded35713
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425843"
 ---
 # <a name="program-vsto-add-ins"></a>Suplementos do VSTO do programa
   Quando você estende um aplicativo do Microsoft Office, criando um suplemento do VSTO, você escreve código diretamente no `ThisAddIn` classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host do Microsoft Office, personalizando a interface do usuário (IU) do aplicativo e expor objetos no seu suplemento do VSTO para outras soluções do Office.
@@ -54,7 +54,7 @@ ms.locfileid: "56641410"
  Há dois manipuladores de eventos padrão no `ThisAddIn` classe. Para executar código quando o suplemento do VSTO é carregado, adicione código para o `ThisAddIn_Startup` manipulador de eventos. Para executar código antes que o suplemento do VSTO é descarregado, adicione código para o `ThisAddIn_Shutdown` manipulador de eventos. Para obter mais informações sobre esses manipuladores de eventos, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  No Outlook, por padrão o `ThisAddIn_Shutdown` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+> No Outlook, por padrão o `ThisAddIn_Shutdown` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Acessar o modelo de objeto do aplicativo host
  Para acessar o modelo de objeto do aplicativo host, use o `Application` campo do `ThisAddIn` classe. Esse campo retorna um objeto que representa a instância atual do aplicativo host. A tabela a seguir lista o tipo do valor de retorno para o `Application` campo em cada projeto de suplemento do VSTO.
@@ -91,21 +91,21 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  Para obter mais informações sobre os modelos de objeto de aplicativos específicos do Microsoft Office, consulte os tópicos a seguir:
 
--   [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)
+- [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)
 
--   [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
+- [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
 
--   [Visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)
+- [Visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)
 
--   [Soluções InfoPath](../vsto/infopath-solutions.md)
+- [Soluções InfoPath](../vsto/infopath-solutions.md)
 
--   [Soluções PowerPoint](../vsto/powerpoint-solutions.md)
+- [Soluções PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Soluções de projeto](../vsto/project-solutions.md)
+- [Soluções de projeto](../vsto/project-solutions.md)
 
--   [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
+- [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 
-###  <a name="AccessingDocuments"></a> Acessar um documento quando inicia o aplicativo do Office
+### <a name="AccessingDocuments"></a> Acessar um documento quando inicia o aplicativo do Office
  Nem todos os [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos de abrem um documento automaticamente quando você inicia e nenhum do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos abrem um documento quando você iniciá-los. Portanto, não adicione o código no `ThisAdd-In_Startup` se um documento a ser aberto exige que o código de manipulador de eventos. Em vez disso, adicione esse código para um evento que o aplicativo do Office emite quando um usuário cria ou abre um documento. Dessa forma, você pode garantir que um documento está aberto antes de seu código executa operações nela.
 
  O exemplo de código a seguir funciona com um documento do Word, somente quando o usuário cria um documento ou abrir um documento existente.

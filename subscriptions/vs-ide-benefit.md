@@ -1,23 +1,22 @@
 ---
 title: Benefício do IDE do Visual Studio na assinatura do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: cb959ebdfcdce74ebcd024529fd5fcf012a51ca8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420806"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Usando o benefício do Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Usar o benefício do Visual Studio 2019
 
 Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.
-
 
 ## <a name="activation-steps"></a>Etapas de ativação
 
@@ -29,7 +28,7 @@ Para baixar o IDE:
    > [!div class="mx-imgBorder"]
    > ![Bloco do Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Você será redirecionado à página de Resultados de download do Visual Studio Enterprise, da qual poderá baixar o IDE e obter uma chave do produto (Product Key) para ativá-lo. Também é possível solicitar uma chave do produto (Product Key) clicando no link azul **Obter Chave** ou solicitar uma chave mais tarde na página [Chaves do produto (Product Keys)](https://my.visualstudio.com/productkeys).
+3. Você será redirecionado à página de Resultados de download do Visual Studio, da qual poderá baixar o IDE e obter uma chave do produto (Product Key) para ativá-lo. Também é possível solicitar uma chave do produto (Product Key) clicando no link azul **Obter Chave** ou solicitar uma chave mais tarde na página [Chaves do produto (Product Keys)](https://my.visualstudio.com/productkeys).
 4. Na guia Detalhes da página Resultados do download:
    - Selecione a arquitetura desejada (x86, x64)
    - Selecione sua preferência de idioma.
@@ -53,9 +52,14 @@ Para baixar o IDE:
 
 13. Escolha seu tema preferencial e clique em **Iniciar Visual Studio**.
 
-14. A página de início será exibida.  Você está pronto para começar a usar o Visual Studio!
+14. O Visual Studio é aberto. Você está pronto para começar a usar o Visual Studio!
+
+    ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Começar a usar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
+    ::: moniker-end
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -72,12 +76,10 @@ Para baixar o IDE:
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-
 ## <a name="support-resources"></a>Recursos de suporte
--  Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
+- Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
     - Suporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Documentação](/visualstudio/)
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.

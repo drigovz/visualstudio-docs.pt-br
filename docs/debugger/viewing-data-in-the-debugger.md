@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929999"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Criar exibições personalizadas de dados no depurador do Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depurador fornece v�
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Criar exibições personalizadas de dados em janelas de variáveis e DataTips
 
- Muitas da [janelas do depurador](../debugger/debugger-windows.md), como o **Autos** e **Assista** windows, permitem que você inspecione variáveis. Você pode personalizar tipos como nativos, os objetos gerenciados, e seus próprios tipos são mostrados nas janelas de variáveis do depurador e no [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Para obter mais informações, consulte [criar exibições personalizadas de objetos nativos](../debugger/create-custom-views-of-native-objects.md) e [criar exibições personalizadas de objetos](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Muitas da [janelas do depurador](../debugger/debugger-windows.md), como o **Autos** e **Assista** windows, permitem que você inspecione variáveis. Você pode personalizar como C++ tipos de objetos gerenciados e seus próprios tipos são mostrados nas janelas de variáveis do depurador e, na [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Para obter mais informações, consulte [criar exibições personalizadas de C++ objetos](../debugger/create-custom-views-of-native-objects.md) e [criar exibições personalizadas de objetos](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Criar visualizadores personalizados
 

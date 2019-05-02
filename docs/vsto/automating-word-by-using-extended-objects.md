@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939545"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatizar o Word usando objetos estendidos
   Ao desenvolver soluções do Word no Visual Studio, você pode usar *hospedar itens* e *controle de host*s em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Word (ou seja, o modelo de objeto que é exposto pelo assembly de interoperabilidade primário para o Word), como o <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> objetos. Objetos estendidos se comportam como os objetos do Word se baseiam, mas adicionar eventos adicionais e recursos de ligação de dados para os objetos.
@@ -46,13 +46,13 @@ ms.locfileid: "56598259"
 
  Para obter mais informações sobre os controles de host que você pode usar em projetos do Word, consulte os tópicos a seguir:
 
--   [Controles de conteúdo](../vsto/content-controls.md)
+- [Controles de conteúdo](../vsto/content-controls.md)
 
--   [Controle de indicador](../vsto/bookmark-control.md)
+- [Controle de indicador](../vsto/bookmark-control.md)
 
--   [Controle XMLNode](../vsto/xmlnode-control.md)
+- [Controle XMLNode](../vsto/xmlnode-control.md)
 
--   [Controle XMLNodes](../vsto/xmlnodes-control.md)
+- [Controle XMLNodes](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md)

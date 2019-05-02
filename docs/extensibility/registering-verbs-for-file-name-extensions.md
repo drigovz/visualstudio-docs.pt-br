@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fc4083111d704859d07897bd3f54d4bca31d31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4a260f0458b6278abc6c515b616345463a0cafef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434721"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Registrar verbos para extensões de nome de arquivo
 Em geral, a associação de uma extensão de nome de arquivo com um aplicativo tem uma ação preferencial que ocorre quando um usuário clica duas vezes em um arquivo. Isso preferencial a ação é vinculada a um verbo, por exemplo aberto, que corresponde à ação.
@@ -38,7 +38,7 @@ Em geral, a associação de uma extensão de nome de arquivo com um aplicativo t
   Sempre que possível, registre um verbo padrão. A opção mais comum é o verbo Open. Use o verbo de edição somente se houver uma diferença clara entre a abertura do arquivo e editando o arquivo. Por exemplo, abrindo uma *. htm* arquivo exibe no navegador, enquanto a edição de um *. htm* arquivo inicia um editor de HTML. Verbos padrão estão localizados com a localidade do sistema operacional.
 
 > [!NOTE]
->  Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.
+> Ao registrar verbos padrão, não defina o valor padrão para a chave de abertura. O valor padrão contém a cadeia de caracteres de exibição no menu. O sistema operacional fornece essa cadeia de caracteres para verbos padrão.
 
  Arquivos de projeto devem ser registrados para iniciar uma nova instância da [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] quando um usuário abre o arquivo. O exemplo a seguir ilustra um registro de verbo padrão para um [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projeto.
 
@@ -109,7 +109,7 @@ Em geral, a associação de uma extensão de nome de arquivo com um aplicativo t
  O verbo padrão é a ação que é executada quando um usuário clica duas vezes em um arquivo no Windows Explorer. O verbo padrão é o verbo especificado como o valor padrão para o **HKEY_CLASSES_ROOT\\*progid*\Shell** chave. Se nenhum valor for especificado, o verbo padrão é o primeiro verbo especificado na **HKEY_CLASSES_ROOT\\*progid*\Shell** lista de chaves.
 
 > [!NOTE]
->  Se você planejar alterar o verbo padrão para uma extensão em uma implantação lado a lado, considere o impacto sobre a instalação e remoção. Durante a instalação, o valor padrão original será substituído.
+> Se você planejar alterar o verbo padrão para uma extensão em uma implantação lado a lado, considere o impacto sobre a instalação e remoção. Durante a instalação, o valor padrão original será substituído.
 
 ## <a name="see-also"></a>Consulte também
 - [Gerenciar associações de arquivo lado a lado](../extensibility/managing-side-by-side-file-associations.md)

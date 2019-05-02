@@ -1,12 +1,9 @@
 ---
 title: Geração de texto de tempo de execução com modelos de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Preprocessed Text Template project item
 - TextTemplatingFilePreprocessor custom tool
@@ -16,13 +13,13 @@ ms.assetid: 79b4b3c6-a9a7-4446-b6fd-e2388fc6b05f
 caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 75da17b32d3997121777f398a6663932c7d7143d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49920125"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411871"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Para criar um modelo de texto de tempo de execução  
   
-1.  No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Novo Item**.  
+1. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto de tempo de execução**. (No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] procure **Items\General comuns**.)  
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto de tempo de execução**. (No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] procure **Items\General comuns**.)  
   
-3.  Digite um nome para seu arquivo de modelo.  
+3. Digite um nome para seu arquivo de modelo.  
   
     > [!NOTE]
-    >  O nome do arquivo de modelo será ser usado como um nome de classe no código gerado. Portanto, ele não deve ter espaços ou pontuação.  
+    > O nome do arquivo de modelo será ser usado como um nome de classe no código gerado. Portanto, ele não deve ter espaços ou pontuação.  
   
-4.  Escolha **Adicionar**.  
+4. Escolha **Adicionar**.  
   
      Um novo arquivo é criado que tem a extensão **. TT**. Sua **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**. Ele contém as seguintes linhas:  
   
@@ -82,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para converter um arquivo de texto existente em um modelo de tempo de execução  
   
-1.  Incluir o arquivo em seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Item existente**.  
+1. Incluir o arquivo em seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Item existente**.  
   
-2.  O arquivo de conjunto **ferramentas personalizados** propriedade **TextTemplatingFilePreprocessor**. No Gerenciador de soluções, no menu de atalho do arquivo, escolha **propriedades**.  
+2. O arquivo de conjunto **ferramentas personalizados** propriedade **TextTemplatingFilePreprocessor**. No Gerenciador de soluções, no menu de atalho do arquivo, escolha **propriedades**.  
   
     > [!NOTE]
-    >  Se a propriedade já está definida, certifique-se de que se trata **TextTemplatingFilePreprocessor** e não **TextTemplatingFileGenerator**. Isso pode acontecer se você incluir um arquivo que já tenha a extensão **. TT**.  
+    > Se a propriedade já está definida, certifique-se de que se trata **TextTemplatingFilePreprocessor** e não **TextTemplatingFileGenerator**. Isso pode acontecer se você incluir um arquivo que já tenha a extensão **. TT**.  
   
-3.  Alterar a extensão de nome de arquivo para **. TT**. Embora esta etapa seja opcional, ele ajuda a evitar abrir o arquivo em um editor incorreto.  
+3. Alterar a extensão de nome de arquivo para **. TT**. Embora esta etapa seja opcional, ele ajuda a evitar abrir o arquivo em um editor incorreto.  
   
-4.  Remova a parte principal do nome do arquivo qualquer espaço ou pontuação. Por exemplo, "My Web Page.tt" seria incorreta, mas "MyWebPage.tt" está correto. O nome do arquivo será ser usado como um nome de classe no código gerado.  
+4. Remova a parte principal do nome do arquivo qualquer espaço ou pontuação. Por exemplo, "My Web Page.tt" seria incorreta, mas "MyWebPage.tt" está correto. O nome do arquivo será ser usado como um nome de classe no código gerado.  
   
-5.  Insira a seguinte linha no início do arquivo. Se você estiver trabalhando em um projeto do Visual Basic, substitua "C#" com "VB".  
+5. Insira a seguinte linha no início do arquivo. Se você estiver trabalhando em um projeto do Visual Basic, substitua "C#" com "VB".  
   
      `<#@ template language="C#" #>`  
   
@@ -292,7 +289,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 ### <a name="inheritance-between-run-time-text-templates"></a>Herança entre modelos de texto de tempo de execução  
  Você pode compartilhar conteúdo entre os modelos de tempo de execução ao escrever um modelo de classe base, que pode ser abstrato. Use o `inherits` parâmetro do `<@#template#>` diretiva para fazer referência a outra classe de modelo de tempo de execução.  
   
-#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: fragmentos em métodos de Base  
+#### <a name="inheritance-pattern-fragments-in-base-methods"></a>Padrão de herança: Fragmentos em métodos Base  
  O padrão usado no exemplo a seguir, observe os seguintes pontos:  
   
 - A classe base `SharedFragments` define os métodos dentro de blocos de recurso de classe `<#+ ... #>`.  
@@ -348,7 +345,7 @@ begin 1
 end 1  
 ```  
   
-#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: O texto no corpo de Base  
+#### <a name="inheritance-pattern-text-in-base-body"></a>Padrão de herança: Texto no corpo de Base  
  Nessa abordagem alternativa ao uso de herança do modelo, a maior parte do texto é definida no modelo de base. Modelos derivados fornecerem dados e fragmentos de texto que se ajustam o conteúdo de base.  
   
  **AbstractBaseTemplate1.tt:**  
@@ -431,7 +428,4 @@ End material for DerivedTemplate1.
 ## <a name="see-also"></a>Consulte também  
  [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)   
  [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)   
- [Noções básicas sobre T4: Modelos de texto pré-processado pelo {1&gt;{2&gt;oleg Sych](http://www.olegsych.com/2009/09/t4-preprocessed-text-templates/)
-
-
-
+ [Noções básicas sobre T4: Modelos de texto pré-processado pelo {1&gt;{2&gt;oleg Sych](https://github.com/olegsych/T4Toolbox)

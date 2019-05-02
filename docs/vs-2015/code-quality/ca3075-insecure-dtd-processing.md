@@ -1,26 +1,21 @@
 ---
 title: 'CA3075: Processamento de DTD inseguro | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 ms.assetid: 65798d66-7a30-4359-b064-61a8660c1eed
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8284f065a829ac7ecc29330fb8a9dad74e92690e
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49850160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425431"
 ---
-# <a name="ca3075-insecure-dtd-processing"></a>CA3075: processamento de DTD não seguro
+# <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento de DTD não seguro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -64,7 +59,7 @@ ms.locfileid: "49850160"
 
 - Desabilitar o processamento de DTD se você está lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriedade para **verdadeiro** .
 
-- Classe de XmlTextReader tem uma exigência de herança de confiança total. Ver [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.
+- Classe de XmlTextReader tem uma exigência de herança de confiança total. Ver [demandas de herança](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.
 
   .NET 4 e posterior
 
@@ -73,7 +68,7 @@ ms.locfileid: "49850160"
 - Certifique-se de que o método Load () usa uma instância de XmlReader em todos os casos de InnerXml.
 
 > [!NOTE]
->  Essa regra pode relatar falsos positivos em algumas instâncias de XmlSecureResolver válidas. Estamos trabalhando para resolver esse problema em meados de 2016.
+> Essa regra pode relatar falsos positivos em algumas instâncias de XmlSecureResolver válidas. Estamos trabalhando para resolver esse problema em meados de 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.
@@ -387,6 +382,3 @@ namespace TestNamespace
     }
 }
 ```
-
-
-

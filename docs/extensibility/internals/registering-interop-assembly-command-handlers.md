@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b07f018a35874e2ffc3f3be825abb227f2996aea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425466"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Registrando manipuladores de comando de assembly de interoperabilidade
 Registre um VSPackage com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , de modo que o ambiente de desenvolvimento integrado (IDE) encaminha seus comandos corretamente.
@@ -31,7 +31,7 @@ Registre um VSPackage com [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_m
  Um VSPackage que atua como um manipulador para a interface do usuário (IU)-comandos com base requer uma entrada de registro nomeada após o VSPackage `GUID`. Essa entrada de registro Especifica o local do arquivo de recurso de interface do usuário do VSPackage e do recurso de menu dentro desse arquivo. A entrada de registro está localizada em HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\*\<versão >* \Menus, onde  *\<versão >* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por exemplo 9.0.
 
 > [!NOTE]
->  O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é inicializado. Para obter mais informações sobre o caminho raiz, consulte [instalando VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
+> O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é inicializado. Para obter mais informações sobre o caminho raiz, consulte [instalando VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md).
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>A entrada de registro do recurso CTMENU
  A estrutura da entrada do registro é:
@@ -49,7 +49,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
  \<*Caminho para a DLL de recurso*>, \< *ID de recurso de Menu*>, \< *Menu versão*>
 
  A tabela a seguir descreve os campos de \< *informações sobre o recurso*>.
-
 
 | Elemento | Descrição |
 |---------------------------| - |

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 183a0774bf507fcf8bdf9abeea688bb1ea75b1bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5eebe6382d2aec13996c57ef76aba2e04512463f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909949"
 ---
 # <a name="how-to-identify-symbols-in-a-library"></a>Como: Identificar símbolos em uma biblioteca
 Ferramentas de navegação de símbolo exibem exibições hierárquicas de símbolos. Os símbolos representam objetos, namespaces, classes, membros de classe e outros elementos de linguagem.
@@ -50,10 +50,9 @@ N1
 
  Para obter as informações de formato de apresentação, as chamadas do Gerenciador de objeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> método.
 
-
 ## <a name="to-obtain-canonical-and-presentation-forms-information"></a>Para obter canônico e apresentação de informações de formulários
 
-1.  Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> .
+1. Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumCanonicalNodes%2A> .
 
      O Gerenciador de objeto chama esse método para obter a lista de nós contidos no caminho canônico do símbolo.
 
@@ -76,7 +75,7 @@ N1
 
     ```
 
-2.  Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> .
+2. Implementar o método de <xref:Microsoft.VisualStudio.Shell.Interop.IVsNavInfo.EnumPresentationNodes%2A> .
 
      O Gerenciador de objeto chama esse método para obter a lista de nós contidos no caminho do símbolo de apresentação.
 

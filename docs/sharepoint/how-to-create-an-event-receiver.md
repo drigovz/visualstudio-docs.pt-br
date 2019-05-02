@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 395fc5976f31fb2d465c57f036b3e5369aaa0c07
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bc42a92e1d7dcc73bb6bc0433da4e6a31d7fefb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966751"
 ---
 # <a name="how-to-create-an-event-receiver"></a>Como: Criar um receptor de eventos
   Criando *receptores de evento*, você pode responder quando um usuário interage com itens do SharePoint, como listas ou itens de lista. Por exemplo, o código em um receptor de evento pode ser disparado quando um usuário altera o calendário ou exclui um nome de uma lista de contatos. Ao seguir este tópico, você pode aprender como adicionar um receptor de eventos a uma instância de lista.
@@ -34,23 +34,23 @@ ms.locfileid: "54865093"
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>Para adicionar um receptor de eventos para a instância de lista
 
-1.  Abra o projeto que você criou na [passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
+1. Abra o projeto que você criou na [passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md).
 
-2.  Na **Gerenciador de soluções**, escolha o nó do projeto do SharePoint, que é chamado **clínica**.
+2. Na **Gerenciador de soluções**, escolha o nó do projeto do SharePoint, que é chamado **clínica**.
 
-3.  Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
+3. Na barra de menus, escolha **Projeto** > **Adicionar Novo Item**.
 
-4.  Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** item.
+4. Em um **Visual c#** ou **Visual Basic**, expanda o **SharePoint** nó e, em seguida, escolha o **2010** item.
 
-5.  No **modelos** painel, escolha **receptor de evento**, nomeie- **TestEventReceiver1**e, em seguida, escolha o **Okey** botão.
+5. No **modelos** painel, escolha **receptor de evento**, nomeie- **TestEventReceiver1**e, em seguida, escolha o **Okey** botão.
 
      O **Assistente para personalização do SharePoint** é exibida.
 
-6.  No **que tipo de receptor de eventos você deseja?** , escolha **eventos de Item de lista**.
+6. No **que tipo de receptor de eventos você deseja?** , escolha **eventos de Item de lista**.
 
-7.  No **qual item deve ser a origem do evento?** , escolha **pacientes (Clinic\Patients)**.
+7. No **qual item deve ser a origem do evento?** , escolha **pacientes (Clinic\Patients)**.
 
-8.  No **manipular os eventos a seguir** , selecione a caixa de seleção ao lado de **um item foi adicionado**e, em seguida, escolha o **concluir** botão.
+8. No **manipular os eventos a seguir** , selecione a caixa de seleção ao lado de **um item foi adicionado**e, em seguida, escolha o **concluir** botão.
 
      O arquivo de código para o novo receptor de evento contém um único método chamado `ItemAdded`. Na próxima etapa, você adicionará código para esse método, de modo que cada contato será denominado Scott Brown por padrão.
 

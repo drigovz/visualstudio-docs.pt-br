@@ -1,7 +1,7 @@
 ---
 title: As atribuições de porta do depurador remoto | Microsoft Docs
-ms.custom: H1Hack27Feb2017
-ms.date: 05/18/2017
+ms.custom: ''
+ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b167dad483fd0ba2ea202a1f17f6e2f02c76789d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903038"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
 O depurador remoto do Visual Studio pode ser executado como um aplicativo ou como um serviço em segundo plano. Quando ele é executado como um aplicativo, ele usa uma porta atribuída por padrão, da seguinte maneira:
-
+::: moniker range=">=vs-2019"
 - Visual Studio 2019: 4024
-
+::: moniker-end
 - Visual Studio 2017: 4022
 
 - Visual Studio 2015: 4020
@@ -32,7 +32,13 @@ O depurador remoto do Visual Studio pode ser executado como um aplicativo ou com
   Em outras palavras, o número da porta atribuída ao depurador remoto é incrementado por 2 para cada versão. Você pode definir um número de porta diferente da que você deseja. Explicaremos como definir os números de porta em uma seção posterior.
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 32 bits
+
+::: moniker range=">=vs-2019"
+ 4024 TCP (no Visual Studio de 2019) é a porta principal e é necessário para todos os cenários. Você pode configurar isso na linha de comando ou a janela do depurador remoto.
+::: moniker-end
+::: moniker range="vs-2017"
  TCP 4022 (no Visual Studio 2017) é a porta principal e é necessário para todos os cenários. Você pode configurar isso na linha de comando ou a janela do depurador remoto.
+::: moniker-end
 
  Na janela do depurador remoto, clique em **Ferramentas > Opções**e defina o número da porta TCP/IP.
 
@@ -41,14 +47,19 @@ O depurador remoto do Visual Studio pode ser executado como um aplicativo ou com
  Você pode encontrar o depurador remoto de linha de comando na Ajuda de depuração remota (pressione **F1** ou clique em **Ajuda > uso** na janela do depurador remoto).
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>A porta do depurador remoto em sistemas operacionais de 64 bits
+::: moniker range=">=vs-2019"
+ Quando a versão de 64 bits do depurador remoto é iniciada, ele usa principal da porta (4024) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto inicia uma versão de 32 bits do depurador remoto na porta 4025 (o número de porta principal incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usa 4024 e 4025 não é usado.
+::: moniker-end
+::: moniker range="vs-2017"
  Quando a versão de 64 bits do depurador remoto é iniciada, ele usa principal da porta (4022) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto inicia uma versão de 32 bits do depurador remoto na porta 4023 (o número de porta principal incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usa 4022 e 4023 não é usado.
+:::moniker-end
 
- Essa porta é configurável na linha de comando: **Msvsmon /wow64port \<número da porta >**.
+ Essa porta é configurável na linha de comando: **O msvsmon /wow64port \<número da porta >**.
 
 ## <a name="the-discovery-port"></a>A porta de descoberta
  UDP 3702 é usada para localizar instâncias em execução do depurador remoto na rede (por exemplo, o **encontrar** caixa de diálogo na **anexar ao processo** caixa de diálogo). Ele é usado apenas para a descoberta de uma máquina executando o depurador remoto, portanto, é opcional se você tiver alguma outra maneira de saber o nome do computador ou endereço IP do computador de destino. Esta é uma porta padrão para a descoberta, portanto, o número da porta não pode ser configurado.
 
- Se você não quiser habilitar a descoberta, você pode iniciar o msvsmon da linha de comando com a descoberta desabilitada: **Msvsmon /nodiscovery**.
+ Se você não quiser habilitar a descoberta, você pode iniciar o msvsmon da linha de comando com a descoberta desabilitada:  **O msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Portas do depurador remoto no Azure
  As seguintes portas são usadas pelo depurador remoto no Azure. As portas no serviço de nuvem são mapeadas para as portas na VM individual. Todas as portas são TCP.
@@ -57,6 +68,7 @@ O depurador remoto do Visual Studio pode ser executado como um aplicativo ou com
 |-|-|-|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Connector|30400|30398|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarder|31400|31398|
+|Microsoft.WindowsAzure.Plugins.RemoteDebugger.Forwarderx86|31401|31399|
 |Microsoft.WindowsAzure.Plugins.RemoteDebugger.FileUpload|32400|32398|
 
 ## <a name="see-also"></a>Consulte também

@@ -18,19 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e863b8a35d8ef0d5ced0a200d1033b3768df690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 39340e268d41207e9b054866ecebe613f7836347
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951277"
 ---
 # <a name="al-assembly-linker-task"></a>Tarefa AL (Assembly Linker)
 A tarefa AL encapsula *AL.exe*, uma ferramenta que é distribuída com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Essa ferramenta, o Assembly Linker, é usada para criar um assembly com um manifesto com base em um ou mais arquivos que são arquivos de recurso ou módulos. Compiladores e ambientes de desenvolvimento talvez já forneçam essas funcionalidades, então muitas vezes não é necessário usar essa tarefa diretamente. O Assembly Linker é mais útil para os desenvolvedores que precisam criar um único assembly com base em vários arquivos de componente, como aqueles que podem ser produzidos via desenvolvimento de linguagens mistas. Essa tarefa não combina os módulos em um único arquivo do assembly; os módulos individuais ainda deverão ser distribuídos e estar disponíveis para que o assembly resultante carregue corretamente. Para obter mais informações sobre o *AL.exe*, confira [Al.exe (Assembly Linker)](/dotnet/framework/tools/al-exe-assembly-linker).
 
 ## <a name="parameters"></a>Parâmetros
  A tabela a seguir descreve os parâmetros da tarefa `AL`.
-
 
 | Parâmetro | Descrição |
 |---------------------| - |

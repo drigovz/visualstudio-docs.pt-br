@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3e7139b92467c0b6622accce9530abf3e75fcea0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859605"
 ---
 # <a name="project-model-core-components"></a>Componentes principais do projeto modelo
 As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves descrições das interfaces e serviços identificados no modelo e as interfaces e os serviços associados a objetos específicos. Além disso, as tabelas de detalham sobre outras interfaces que são opcionais na criação do projeto e na manutenção dependendo dos requisitos do seu tipo de projeto específico.
@@ -101,7 +101,7 @@ As tabelas a seguir expandem o modelo de projeto. As tabelas presentes breves de
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
-- [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Não está em compilação: Usando Classes do projeto HierUtil7 para implementar um tipo de projeto (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [Suporte a ferramentas de navegação por símbolo](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)

@@ -16,17 +16,16 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0aa325aa016b95a0dac0047f4b6fe9ae67f52ecc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a0ce02a76d32a967e2c7e5f06818b5838337f9b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433673"
 ---
 # <a name="options-dialog-box--projects-and-solutions-build-and-run"></a>Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Nesta caixa de diálogo, você pode especificar o número máximo de projetos do Visual C++ ou do Visual C# que podem ser compilados ao mesmo tempo, determinados comportamentos de build padrão e algumas configurações de log de build. Para abrir a caixa de diálogo **Opções**, escolha **Ferramentas**, **Opções** na barra de menus. Para acessar esse conjunto de opções, expanda **Projetos e Soluções** e, em seguida, escolha **Compilar e Executar**.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
@@ -38,7 +37,7 @@ Nesta caixa de diálogo, você pode especificar o número máximo de projetos do
   
  **Ao Executar, quando os projetos estiverem desatualizados**  
  > [!NOTE]
->  Essa lista aplica-se somente a projetos [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Essa lista aplica-se somente a projetos [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Por padrão, uma mensagem será exibida se uma configuração de projeto estiver desatualizada quando você escolher a tecla F5 ou escolher **Depurar**, **Iniciar** na barra de menus. Você pode especificar se deseja compilar o projeto mesmo assim e se mensagem será exibida. Use esta opção para especificar se a mensagem é exibida e qual deve ser o comportamento de build se a mensagem não for exibida.  
   
@@ -55,7 +54,7 @@ Nesta caixa de diálogo, você pode especificar o número máximo de projetos do
  Se ocorrerem erros de build quando você inicia um build no menu **Build**, uma mensagem será exibida. Você pode especificar se deseja continuar iniciando o aplicativo e se a mensagem é exibida sempre que ocorrerem erros de build. Use esta opção para especificar se a mensagem é exibida e qual deve ser o comportamento se a mensagem não for exibida.  
   
 > [!NOTE]
->  Essa opção aplica-se apenas a [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projetos.  
+> Essa opção aplica-se apenas a [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projetos.  
   
  **Aviso para iniciar**  
  Exibe uma caixa de mensagem sempre que ocorrem erros de build.  
@@ -74,7 +73,7 @@ Nesta caixa de diálogo, você pode especificar o número máximo de projetos do
   
  **Detalhamento do arquivo de log de build do projeto no MSBuild**  
  > [!NOTE]
->  Essa opção se aplica somente a projetos do Visual C++.  
+> Essa opção se aplica somente a projetos do Visual C++.  
   
  Determina quanta informação é gravada no arquivo de log de build, que está localizado em \\...\\*ProjectName*\Debug\\*ProjectName*.log.  
   

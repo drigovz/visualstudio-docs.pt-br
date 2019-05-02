@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7661de324e2d2872491988c7b0fa637d0c318545
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560461"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga uma disciplina de bloqueio apropriada e use anotações de SAL.
@@ -55,11 +55,11 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
 
  Algumas regras de propriedade de thread para ter em mente:
 
--   Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.
+- Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.
 
--   Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.
+- Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.
 
--   Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.
+- Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.
 
 ## <a name="locking-annotations"></a>Anotações de bloqueio
  A tabela a seguir lista as anotações de bloqueio.
@@ -104,7 +104,6 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|
 |`_Interlocked_operand_`|O parâmetro de função anotado é o operando de destino de uma das várias funções Interlocked.  Os operandos devem ter propriedades adicionais específicas.|
 |`_Write_guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é modificada, a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr` é pelo menos um.|
-
 
 ## <a name="smart-lock-and-raii-annotations"></a>Smart Lock e RAII anotações
  Normalmente, fechaduras inteligentes encapsulam bloqueios nativos e gerenciar seu tempo de vida. A tabela a seguir lista as anotações que podem ser usadas com fechaduras inteligentes e RAII padrões com suporte de codificação `move` semântica.

@@ -1,22 +1,22 @@
 ---
 title: Visão geral do Visual Studio para desenvolvedores do Python
 titleSuffix: ''
-ms.date: 12/14/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 dev_langs:
 - Python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094a768f0b1b50e03bb445becb956e8e91a862da
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957401"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
@@ -29,6 +29,10 @@ Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias jan
 - O [**Gerenciador de Soluções**](../ide/solutions-and-projects-in-visual-studio.md) (parte superior direita) permite exibir, navegar e gerenciar os arquivos de código. O **Gerenciador de Soluções** pode ajudar a organizar o código agrupando os arquivos em [soluções e projetos](/visualstudio/get-started/tutorial-projects-solutions).
     - Ao lado do **Gerenciador de Soluções** estão os [**Ambientes do Python**](managing-python-environments-in-visual-studio.md), nos quais você gerencia os diferentes interpretadores do Python instalados no computador.
 
+    ::: moniker range=">=vs-2019"
+    - Também é possível abrir e executar código Python em uma pasta sem criar arquivos de projeto e solução do Visual Studio. Para obter mais informações, confira [Início Rápido: Abrir e executar código Python em uma pasta](quickstart-05-python-visual-studio-open-folder.md).
+    ::: moniker-end
+
 - A [janela do editor](../ide/writing-code-in-the-code-and-text-editor.md) (parte central), na qual você provavelmente passará a maior parte do tempo, exibe o conteúdo do arquivo. É nela que você [edita o código Python](editing-python-code-in-visual-studio.md), navega na estrutura de código e define pontos de interrupção durante as sessões de depuração. Com o Python, você também pode selecionar o código e pressionar Ctrl+Enter para executar o código em uma [janela de REPL interativo](python-interactive-repl-in-visual-studio.md).
 
 - A [Janela de Saída](../ide/reference/output-window.md) (parte central inferior) é o local em que o Visual Studio envia notificações, como mensagens de erro e de depuração, avisos, mensagens de status da publicação, entre outros. Cada fonte de mensagem tem uma guia própria.
@@ -40,7 +44,7 @@ Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias jan
 
 O Visual Studio está disponível para o Windows e o Mac; no entanto, o suporte ao Python está disponível apenas no Visual Studio para Windows.
 
-Há três edições do Visual Studio 2017 no Windows: Community, Professional e Enterprise. Veja [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/) para saber quais recursos são compatíveis com cada edição.
+Há três edições do Visual Studio no Windows: Community, Professional e Enterprise. Veja [Comparar IDEs do Visual Studio](https://visualstudio.microsoft.com/vs/compare/) para saber quais recursos são compatíveis com cada edição.
 
 ## <a name="popular-productivity-features"></a>Recursos de produtividade populares
 
@@ -64,11 +68,11 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Comando PyLint no menu de contexto em projetos do Python](media/code-pylint-command.png)
 
-- [Início Rápido](../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Caixa de pesquisa
 
-   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa **Início Rápido** é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, o **Início Rápido** fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
+   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, a caixa de pesquisa fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
 
-   ![Caixa de pesquisa Início Rápido no Visual Studio](media/tour-ide-quick-launch.png)
+   ![Caixa de pesquisa no Visual Studio](media/tour-ide-quick-launch.png)
 
 - Rabiscos e [Ações Rápidas](../ide/quick-actions.md)
 
@@ -83,6 +87,12 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
    ![Comandos de navegação de código](media/tour-ide-navigation-commands.png)
 
 ## <a name="powerful-features-for-python"></a>Funcionalidades avançadas do Python
+
+::: moniker range=">=vs-2019"
+- [Executar código sem um projeto](quickstart-05-python-visual-studio-open-folder.md)
+
+    A partir do Visual Studio 2019, você pode abrir uma pasta que contém o código Python para aproveitar recursos como IntelliSense e depuração sem precisar criar um projeto do Visual Studio para o código.
+::: moniker-end
 
 - [REPL Interativo do Python](python-interactive-repl-in-visual-studio.md)
 

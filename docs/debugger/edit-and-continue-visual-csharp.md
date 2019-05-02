@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851013"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
  Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.
@@ -36,8 +36,8 @@ ms.locfileid: "56685359"
 
  Quando Editar e Continuar estiver habilitado, as alterações com suporte são aplicadas automaticamente quando você usa um comando de execução do depurador, tal como **Continuar**, **Etapa** ou **Definir Próxima Instrução**, ou executa uma avaliação de função em uma janela de depuração.
 
- Para obter mais informações, consulte [como: usar Editar e continuar (c#)](../debugger/how-to-use-edit-and-continue-csharp.md).
+ Para obter mais informações, confira [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Como usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
+- [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
 - [Alterações de código suportadas (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)

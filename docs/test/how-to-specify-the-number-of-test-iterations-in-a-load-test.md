@@ -9,12 +9,12 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d35552ad224b038886bcb9dd44177b80b1536ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0d66b7f15bd1fb988c82cea934973e15cb4c6fe2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954508"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970699"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>Como: Especificar o número de iterações de teste em uma configuração de execução de teste de carga
 
@@ -29,19 +29,19 @@ Usando o **Editor de Teste de Carga**, você pode editar a propriedade **Iteraç
 
 ## <a name="to-specify-the-number-of-test-iterations-in-a-run-setting"></a>Para especificar o número de iterações de teste em uma configuração de execução
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** aparece e exibe a árvore de teste de carga.
 
-2.  Na árvore de teste de carga, na pasta **Configurações de Execução**, escolha uma configuração de execução.
+2. Na árvore de teste de carga, na pasta **Configurações de Execução**, escolha uma configuração de execução.
 
-3.  No menu **Exibição**, selecione a **Janela de Propriedades** para exibir as categorias e as propriedades da configuração de execução de carga.
+3. No menu **Exibição**, selecione a **Janela de Propriedades** para exibir as categorias e as propriedades da configuração de execução de carga.
 
-4.  Defina a propriedade **Usar iterações de teste** como **Verdadeiro**.
+4. Defina a propriedade **Usar iterações de teste** como **Verdadeiro**.
 
-5.  Na propriedade **Iterações de teste**, insira um número que indica o número de iterações de teste a serem executadas durante o teste de carga.
+5. Na propriedade **Iterações de teste**, insira um número que indica o número de iterações de teste a serem executadas durante o teste de carga.
 
-6.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Iterações de teste**.
+6. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Assim, você pode executar o teste de carga usando o novo valor de **Iterações de teste**.
 
 ## <a name="see-also"></a>Consulte também
 

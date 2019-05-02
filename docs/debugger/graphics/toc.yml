@@ -8,7 +8,7 @@
   href: capturing-graphics-information.md
 - name: Documentos de log de gráfico
   href: graphics-log-document.md
-- name: Análise de Quadros de Gráficos
+- name: Análise de quadro de gráficos
   href: graphics-frame-analysis.md
   items:
     - name: Variação de tamanho do visor 1x1
@@ -45,24 +45,24 @@
   href: hlsl-shader-debugger.md
 - name: Ferramenta de captura de linha de comando
   href: command-line-capture-tool.md
-- name: Exemplos de diagnóstico de gráficos
+- name: Exemplos de diagnóstico do gráfico
   href: graphics-diagnostics-examples.md
   items:
-    - name: 'Passo a passo: capturando informações de gráficos'
+    - name: 'Passo a passo: Capturando informações de gráficos'
       href: walkthrough-capturing-graphics-information.md
-    - name: 'Instruções passo a passo: capturando informações de gráfico de forma programática'
+    - name: 'Passo a passo: Como capturar informações de gráficos de forma programática'
       href: walkthrough-capturing-graphics-information-programmatically.md
-    - name: 'Instruções passo a passo: objetos ausentes devido ao estado do dispositivo'
+    - name: 'Passo a passo: Objetos ausentes devido ao estado do dispositivo'
       href: walkthrough-missing-objects-due-to-device-state.md
-    - name: 'Instruções passo a passo: objetos ausentes devido ao sombreamento de vértice'
+    - name: 'Passo a passo: Objetos ausentes devido ao sombreamento de vértice'
       href: walkthrough-missing-objects-due-to-vertex-shading.md
-    - name: 'Instruções passo a passo: objetos ausentes devido ao pipeline configurado incorretamente'
+    - name: 'Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline'
       href: walkthrough-missing-objects-due-to-misconfigured-pipeline.md
-    - name: 'Instruções passo a passo: depurando erros de renderização devido ao sombreamento'
+    - name: 'Passo a passo: Como depurar erros de renderização devido ao sombreamento'
       href: walkthrough-debugging-rendering-errors-due-to-shading.md
-    - name: 'Instruções passo a passo: usando diagnóstico de gráficos para depurar um sombreador computado'
+    - name: 'Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação'
       href: walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md
-    - name: Como alterar a máquina de reprodução de diagnóstico de gráficos
+    - name: 'Como: Alterar o computador de reprodução de Diagnóstico de Gráficos'
       href: how-to-change-the-graphics-diagnostics-playback-machine.md
 - name: Referência (captura programática)
   href: reference-programmatic-capture.md

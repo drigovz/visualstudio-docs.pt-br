@@ -7,14 +7,14 @@ ms.author: mblome
 manager: wpickett
 dev_langs:
 - CPP
-ms.openlocfilehash: 15877cbaed093eab2cf436ed5122c80b9e135800
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820901"
 ---
-# <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
+# <a name="use-the-c-core-guidelines-checkers"></a>Usar os verificadores de Diretrizes Principais do C++
 
 Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e as práticas recomendadas sobre como codificar em C++ criado pelos designers e especialistas em C++. Atualmente, o Visual Studio suporta um subconjunto dessas regras como parte de suas ferramentas de análise de código para C++. Os verificadores de diretrizes de núcleo são instalados por padrão no Visual Studio 2017 e Visual Studio de 2019 e estão [disponível como um pacote do NuGet para Visual Studio 2015](#vs2015_corecheck).
 
@@ -80,7 +80,7 @@ Conforme novas regras são adicionadas ao verificador de diretrizes de núcleo d
 Tópicos de referência para a maioria das regras estão sob [Visual Studio C++ Core verificar referência](code-analysis-for-cpp-corecheck.md).
 
 A partir do Visual Studio 2017 versão 15.3, os conjuntos de regra com suporte são:
-- **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário\<T > das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -153,29 +153,29 @@ O compilador Microsoft Visual C++ tem um suporte limitado para a GSL suprimir o 
 }
 ```
 
-## <a name="suppressing-analysis-by-using-command-line-options"></a>Suprimindo a análise, usando as opções de linha de comando
+## <a name="suppress-analysis-by-using-command-line-options"></a>Suprimir a análise, usando as opções de linha de comando
 
 Em vez de #pragmas, você pode usar as opções de linha de comando na página de propriedades do arquivo para suprimir avisos para um projeto ou um único arquivo. Por exemplo, para desabilitar o aviso 26400 para um arquivo:
 
 1. Clique no arquivo em **Gerenciador de soluções**
 
-2. Escolha **propriedades | C / C + + | Linha de comando**
+2. Escolha **propriedades | C /C++| Linha de comando**
 
 3. No **opções adicionais** janela, adicione `/wd26400`.
 
 Você pode usar a opção de linha de comando para desabilitar temporariamente todas as análises de código para um arquivo, especificando `/analyze-`. Isso produz o aviso *D9025 substituindo '/ANALYZE' com ' /ANALYZE -'*, que lembra você de habilitar a análise de código novamente mais tarde.
 
-## <a name="corecheck_per_file"></a> Habilitar o verificador de diretrizes do C++ Core nos arquivos de projeto específico
+## <a name="corecheck_per_file"></a> Habilitar o corretor de diretrizes do C++ Core nos arquivos de projeto específico
 
 Às vezes, pode ser útil para análise de código foco e ainda usar o IDE do Visual Studio. O cenário de exemplo a seguir pode ser usado para projetos grandes, para economizar tempo de compilação e para facilitar para filtrar os resultados:
 
 1. No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
-2. Para herdar essas variáveis, inicie o Visual Studio no shell de comando.
+2. Para herdar essas variáveis, abra o Visual Studio no shell de comando.
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
-6. Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
-7. Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado (PCH); Se o PCH compilado com as opções de projeto padrão, ele não será compatível.
+6. Escolher **C /C++opções de linha de \Command** e adicione `/analyze:plugin EspXEngine.dll`
+7. Desabilitar o uso de cabeçalho pré-compilado (**C /C++\Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado (PCH); Se o PCH compilado com as opções de projeto padrão, ele não será compatível.
 8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio

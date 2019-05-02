@@ -1,27 +1,22 @@
 ---
 title: Itens de coloração personalizados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - colorable items
 - language services, custom colorable items
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 272d16b9f5f8fb33b68c911c5e7bd27923f4c2db
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24a4db907ec859c6075c06956f86939047379897
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409366"
 ---
 # <a name="custom-colorable-items"></a>Itens personalizados que podem ser coloridos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
  Porque o IDE manipula substituições do usuário de itens de coloração na **fontes e cores** caixa de diálogo, você precisa apenas fornecer a cada item personalizado que pode ser colorido com um nome. Esse nome é o que aparece na **exibir itens** lista. Os itens de coloração aparecem em ordem alfabética. Para agrupar itens de coloração personalizados do seu serviço de linguagem, você pode começar cada nome com seu nome de idioma, por exemplo **NewLanguage - comentário** e **NewLanguage - palavra-chave**.  
   
 > [!CAUTION]
->  Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com a ferramenta CreateExpInstance, que é instalado com o SDK do Visual Studio, normalmente no diretório  
+> Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com a ferramenta CreateExpInstance, que é instalado com o SDK do Visual Studio, normalmente no diretório  
 >   
->  **C:\Program arquivos (x86) \Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
+> **C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin**  
 >   
->  Para redefinir o cache, chame `CreateExpInstance /Reset`. Para obter mais informações sobre CreateExpInstance, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
+> Para redefinir o cache, chame `CreateExpInstance /Reset`. Para obter mais informações sobre CreateExpInstance, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).  
   
  O primeiro item na sua lista de itens de coloração nunca é referenciado. O primeiro item corresponde a um índice do item que pode ser colorido 0, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] sempre fornece a cores de texto padrão e os atributos para aquele item. A maneira mais fácil de lidar com esse item não referenciado é fornecer um item que pode ser colorido de espaço reservado na sua lista como o primeiro item.  
   
@@ -76,5 +71,4 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
  [Coloração de sintaxe em editores personalizados](../../extensibility/syntax-coloring-in-custom-editors.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   
  [Implementando a coloração de sintaxe](../../extensibility/internals/implementing-syntax-coloring.md)   
- [Como usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
-
+ [Como: usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)

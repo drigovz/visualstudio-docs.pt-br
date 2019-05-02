@@ -1,27 +1,22 @@
 ---
 title: Parâmetro de Assembly de interoperabilidade do Visual Studio Marshaling | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting Visual Studio SDK interop assemblies
 - interop assemblies, parameter marshaling
 - interop assemblies, troubleshooting
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: e18667adb48f565f73acc14f5012f9c96283efe9
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49195007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436519"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parâmetro de Assembly de interoperabilidade do Visual Studio de Marshaling
 Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser chamado pelo código COM não gerenciado. Normalmente, os argumentos de método são transformados ou marshaling, automaticamente pelo marshaler de interoperabilidade. No entanto, às vezes, argumentos não podem ser transformados de uma maneira simples. Nesses casos, os parâmetros de protótipo do método de assembly de interoperabilidade são usados para corresponder ao máximo os parâmetros da função COM. Para obter mais informações, consulte [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -33,11 +28,11 @@ Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser cha
   
  A documentação de referência para cada método contém três seções relevantes:  
   
--   O [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] protótipo de função COM.  
+- O [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] protótipo de função COM.  
   
--   O protótipo do método de assembly de interoperabilidade.  
+- O protótipo do método de assembly de interoperabilidade.  
   
--   Uma lista de parâmetros COM e uma breve descrição de cada um.  
+- Uma lista de parâmetros COM e uma breve descrição de cada um.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Procure as diferenças entre os dois protótipos  
  A maioria dos problemas de interoperabilidade derivam de incompatibilidades entre a definição de um determinado tipo em uma interface COM e a definição do mesmo tipo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assemblies de interoperabilidade. Por exemplo, considere a diferença na capacidade de passar um `null` valor em um parâmetro [out]. Você deve examinar as diferenças entre os dois protótipos e considerar suas ramificações para os dados que está sendo passados.  
@@ -51,7 +46,7 @@ Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser cha
  Às vezes, uma interface COM gera uma `IUnknown` objeto e a interface COM, em seguida, passa como tipo `void **`. Essas interfaces são especialmente importantes porque se a variável for definida como [out] no IDL, em seguida, a `IUnknown` objeto é contado por referência com o `AddRef` método. Um vazamento de memória ocorre se o objeto não é manipulado corretamente.  
   
 > [!NOTE]
->  Um `IUnknown` objeto criado pela interface COM e retornados em uma variável [out] faz com que um vazamento de memória se não for explicitamente liberado.  
+> Um `IUnknown` objeto criado pela interface COM e retornados em uma variável [out] faz com que um vazamento de memória se não for explicitamente liberado.  
   
  Métodos gerenciados que lidar com esses objetos devem ser tratadas <xref:System.IntPtr> como um ponteiro para um `IUnknown` do objeto e, em seguida, chamar o <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> método para obter o objeto. O chamador deve, em seguida, converter o valor retornado para qualquer tipo é apropriado. Quando o objeto não é necessário, chame <xref:System.Runtime.InteropServices.Marshal.Release%2A> liberá-la.  
   
@@ -82,19 +77,19 @@ else
 ```  
   
 > [!NOTE]
->  Os métodos a seguir são conhecidos para transmitir `IUnknown` ponteiros do objeto como tipo <xref:System.IntPtr>. Tratá-los conforme descrito nesta seção.  
+> Os métodos a seguir são conhecidos para transmitir `IUnknown` ponteiros do objeto como tipo <xref:System.IntPtr>. Tratá-los conforme descrito nesta seção.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>Opcional [parâmetros out]  
  Procure os parâmetros que são definidos como [out] o tipo de dados (`int`, `object`e assim por diante) no COM a interface, mas que são definidos como matrizes do mesmo tipo de dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] protótipo do método de assembly de interoperabilidade.  
@@ -128,7 +123,7 @@ else
  Métodos gerenciados que chamam as interfaces desse tipo devem obter o primeiro elemento da matriz [out]. Esse elemento pode ser tratado como se fosse um `retval` retornar valor de interface COM correspondente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Marshaling de interoperabilidade](http://msdn.microsoft.com/en-us/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling de interoperabilidade](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
  [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
  [Solucionando problemas de interoperabilidade](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages gerenciados](../misc/managed-vspackages.md)

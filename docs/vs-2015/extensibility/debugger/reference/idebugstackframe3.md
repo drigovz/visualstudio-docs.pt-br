@@ -1,14 +1,9 @@
 ---
 title: IDebugStackFrame3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugStackFrame3
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 39af2f57-0a01-42b8-b093-b7fbc61e2909
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e09851f4cfd8418db8b11a08f0ba13a5a133b94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 43c5b3b9bbc5e09b41f346949c4ec788c3784786
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438158"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -57,12 +52,12 @@ IDebugStackFrame3 : IDebugStackFrame2
  Interceptando uma exceção, o depurador pode permitir que o usuário faça alterações para o estado do programa que está sendo depurado e, em seguida, retomar a execução no ponto onde a exceção foi lançada.  
   
 > [!NOTE]
->  Exceções interceptadas são permitidas apenas em código gerenciado, ou seja, em um programa que está sendo executado sob o tempo de execução do CLR (Common Language).  
+> Exceções interceptadas são permitidas apenas em código gerenciado, ou seja, em um programa que está sendo executado sob o tempo de execução do CLR (Common Language).  
   
  Um mecanismo de depuração indica que ele dá suporte a interceptação exceções definindo "metricExceptions" para um valor de 1 em tempo de execução, usando o `SetMetric` função. Para obter mais informações, consulte [auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md).  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -72,4 +67,3 @@ IDebugStackFrame3 : IDebugStackFrame2
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)   
  [Auxiliares do SDK para depuração](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
-

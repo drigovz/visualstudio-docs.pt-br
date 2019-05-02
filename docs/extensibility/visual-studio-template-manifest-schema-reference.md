@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa5d123048b819c2b0b92951582bd9348cbdbab6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108848"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
 Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman*) arquivos que são gerados para os modelos de projeto ou item do Visual Studio. O esquema também descreve o local e outras informações relevantes sobre o modelo.
@@ -28,15 +28,15 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
 
 ### <a name="attributes"></a>Atributos
 
--   **Versão**: Uma cadeia de caracteres que representa a versão do manifesto do modelo. Necessário.
+- **Versão**: Uma cadeia de caracteres que representa a versão do manifesto do modelo. Necessário.
 
--   **Localidade**: Uma cadeia de caracteres que representa a localidade ou localidades do manifesto do modelo. O valor da localidade se aplica a todos os modelos. Você deve usar um manifesto separado para cada localidade. Opcional.
+- **Localidade**: Uma cadeia de caracteres que representa a localidade ou localidades do manifesto do modelo. O valor da localidade se aplica a todos os modelos. Você deve usar um manifesto separado para cada localidade. Opcional.
 
 ### <a name="child-elements"></a>Elementos filho
 
--   **VSTemplateContainer** opcional.
+- **VSTemplateContainer** opcional.
 
--   **VSTemplateDir** opcional.
+- **VSTemplateDir** opcional.
 
 ### <a name="parent-element"></a>Elemento pai
  nenhuma.
@@ -49,9 +49,9 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
 
 ### <a name="child-elements"></a>Elementos filho
 
--   **RelativePathOnDisk**:  O caminho relativo do arquivo de modelo em disco. Esse local também define o posicionamento do modelo na árvore de modelo mostrado na **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e arquivos individuais, esse caminho se refere ao diretório que contém os arquivos de modelo. Para modelos implantados como uma *. zip* arquivo, esse caminho deve ser o caminho para o *. zip* arquivo.
+- **RelativePathOnDisk**:  O caminho relativo do arquivo de modelo em disco. Esse local também define o posicionamento do modelo na árvore de modelo mostrado na **novo projeto** ou **Novo Item** caixa de diálogo. Para modelos implantados como um diretório e arquivos individuais, esse caminho se refere ao diretório que contém os arquivos de modelo. Para modelos implantados como uma *. zip* arquivo, esse caminho deve ser o caminho para o *. zip* arquivo.
 
--   **VSTemplateHeader: Um [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que descreve o cabeçalho.
+- **VSTemplateHeader: Um [TemplateData](../extensibility/templatedata-element-visual-studio-templates.md) elemento que descreve o cabeçalho.
 
 ### <a name="parent-element"></a>Elemento pai
  **VSTemplateManifest**
@@ -66,13 +66,13 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
 
 ### <a name="child-elements"></a>Elementos filho
 
--   **RelativePath**: O caminho do modelo. Pode haver apenas uma entrada por caminho, portanto, a primeira delas será a vencedora para todos os manifestos.
+- **RelativePath**: O caminho do modelo. Pode haver apenas uma entrada por caminho, portanto, a primeira delas será a vencedora para todos os manifestos.
 
--   **LocalizedName**: Um **NameDescriptionIcon** elemento que especifica o nome localizado. Opcional.
+- **LocalizedName**: Um **NameDescriptionIcon** elemento que especifica o nome localizado. Opcional.
 
--   **SortOrder**: Uma cadeia de caracteres que especifica a ordem de classificação. Opcional.
+- **SortOrder**: Uma cadeia de caracteres que especifica a ordem de classificação. Opcional.
 
--   **ParentFolderOverrideName**: O nome substituído da pasta pai. Opcional. Este elemento tem um **nome** atributo, que é um valor de cadeia de caracteres que especifica o nome.
+- **ParentFolderOverrideName**: O nome substituído da pasta pai. Opcional. Este elemento tem um **nome** atributo, que é um valor de cadeia de caracteres que especifica o nome.
 
 ### <a name="parent-element"></a>Elemento pai
  **VSTemplateManifest**
@@ -82,9 +82,9 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
 
 ### <a name="attributes"></a>Atributos
 
--   **Pacote**: Um valor de cadeia de caracteres que especifica o pacote. Opcional.
+- **Pacote**: Um valor de cadeia de caracteres que especifica o pacote. Opcional.
 
--   **ID**: Um valor de cadeia de caracteres que especifica a ID. Opcional.
+- **ID**: Um valor de cadeia de caracteres que especifica a ID. Opcional.
 
 ### <a name="child-elements"></a>Elementos filho
  nenhuma.

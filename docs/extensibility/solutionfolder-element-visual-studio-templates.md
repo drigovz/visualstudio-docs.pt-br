@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4343515ad96c28c971a1cf2969a3ff9886965950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800191"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>Elemento SolutionFolder (modelos do Visual Studio)
 Agrupa projetos em modelos de vários projetos.
@@ -98,4 +98,4 @@ Agrupa projetos em modelos de vários projetos.
 ## <a name="see-also"></a>Consulte também
 - [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Como: Criar modelos multiprojetos](../ide/how-to-create-multi-project-templates.md)
+- [Como: Criar modelos de multiprojeto](../ide/how-to-create-multi-project-templates.md)

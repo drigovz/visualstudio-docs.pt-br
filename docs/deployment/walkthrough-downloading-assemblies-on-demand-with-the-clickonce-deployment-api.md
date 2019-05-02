@@ -16,25 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cadba0d6afd35303fd44eb0442bb8f4eb9aa8440
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 99d8804b5c6050665508a9a1a6edc8b37fe7ff0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405854"
 ---
-# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Fazer o Download de assemblies por demanda com a API de implantação do ClickOnce
+# <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixar assemblies sob demanda com a API de implantação do ClickOnce
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, você pode ter partes de seu aplicativo que são usados por um pequeno conjunto de seus usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime (CLR) requê-los.
 
 > [!NOTE]
->  Seu aplicativo precisará executar em confiança total para usar este procedimento.
+> Seu aplicativo precisará executar em confiança total para usar este procedimento.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Será necessário um dos seguintes componentes para concluir este passo a passo:
 
--   O SDK do Windows. O SDK do Windows pode ser baixado do Microsoft Download Center.
+- O SDK do Windows. O SDK do Windows pode ser baixado do Microsoft Download Center.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-the-projects"></a>Crie os projetos
 
@@ -100,17 +100,17 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando MageUI.exe
 
-1.  Usando o *MageUI.exe*, crie um manifesto de aplicativo, conforme descrito em [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:
+1. Usando o *MageUI.exe*, crie um manifesto de aplicativo, conforme descrito em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto do aplicativo:
 
-    -   Nomeie o manifesto do aplicativo `ClickOnceOnDemand`.
+    - Nomeie o manifesto do aplicativo `ClickOnceOnDemand`.
 
-    -   No **arquivos** página, o *ClickOnceLibrary.dll* de linha, defina a **tipo de arquivo** coluna a ser **nenhum**.
+    - No **arquivos** página, o *ClickOnceLibrary.dll* de linha, defina a **tipo de arquivo** coluna a ser **nenhum**.
 
-    -   No **arquivos** página, o *ClickOnceLibrary.dll* linha, digite `ClickOnceLibrary.dll` no **grupo** coluna.
+    - No **arquivos** página, o *ClickOnceLibrary.dll* linha, digite `ClickOnceLibrary.dll` no **grupo** coluna.
 
-2.  Usando o *MageUI.exe*, crie um manifesto de implantação, conforme descrito em [passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:
+2. Usando o *MageUI.exe*, crie um manifesto de implantação, conforme descrito em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Use as seguintes configurações para o manifesto de implantação:
 
-    -   Nomeie o manifesto de implantação `ClickOnceOnDemand`.
+    - Nomeie o manifesto de implantação `ClickOnceOnDemand`.
 
 ## <a name="testing-the-new-assembly"></a>Teste o novo assembly
 

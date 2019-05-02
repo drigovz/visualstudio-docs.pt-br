@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797925"
 ---
 # <a name="perftips"></a>PerfTips
 O depurador do Visual Studio *PerfTips* e as **Ferramentas de Diagnóstico** integradas ao depurador ajudam a monitorar e analisar o desempenho de seu aplicativo durante a depuração.
@@ -32,27 +32,27 @@ O depurador do Visual Studio *PerfTips* e as **Ferramentas de Diagnóstico** int
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   A linha do tempo **Eventos de Interrupção** marca os pontos de interrupção atingidos na sessão de depuração. Clique em um evento para selecioná-lo na lista de detalhes do **Depurador**.
+- A linha do tempo **Eventos de Interrupção** marca os pontos de interrupção atingidos na sessão de depuração. Clique em um evento para selecioná-lo na lista de detalhes do **Depurador**.
 
--   O gráfico **Utilização de CPU** mostra a alteração na utilização da CPU entre todos os núcleos de processador na sessão de depuração.
+- O gráfico **Utilização de CPU** mostra a alteração na utilização da CPU entre todos os núcleos de processador na sessão de depuração.
 
--   A lista **Eventos** do painel de detalhes **Depurador** inclui itens para cada evento de interrupção.
+- A lista **Eventos** do painel de detalhes **Depurador** inclui itens para cada evento de interrupção.
 
--   A coluna **Duração** de um evento de interrupção exibe o tempo decorrido entre o evento e o ponto de interrupção anterior.
+- A coluna **Duração** de um evento de interrupção exibe o tempo decorrido entre o evento e o ponto de interrupção anterior.
 
 ## <a name="turn-perftips-on-or-off"></a>Ativar ou desativar PerfTips
  Para habilitar ou desabilitar PerfTips:
 
-1.  No menu **Depurar**, escolha **Opções**.
+1. No menu **Depurar**, escolha **Opções**.
 
-2.  Marque ou desmarque **Mostrar tempo decorrido PerfTip durante a depuração**.
+2. Marque ou desmarque **Mostrar tempo decorrido PerfTip durante a depuração**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Ativar ou desativar a janela de Ferramentas de Diagnóstico
  Para habilitar ou desabilitar a janela de Ferramentas de Diagnóstico:
 
-1.  No menu **Depurar**, escolha **Opções**.
+1. No menu **Depurar**, escolha **Opções**.
 
-2.  Marque ou desmarque **Habilitar ferramentas de diagnóstico durante a depuração**.
+2. Marque ou desmarque **Habilitar ferramentas de diagnóstico durante a depuração**.
 
 ## <a name="see-also"></a>Consulte também
 - [Criação de perfis no Visual Studio](../profiling/index.md)

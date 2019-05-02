@@ -7,12 +7,12 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Saiba como integrar sua organização com êxito às Assinaturas do Visual Studio após a migração para o portal de administração.
 searchscope: VS Subscription
-ms.openlocfilehash: 3916fd762e9a2feaaa4892e4233d08a345db44a1
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008141"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Integração ao portal de administração das Assinaturas do Visual Studio após a migração de sua organização
 
@@ -24,9 +24,9 @@ No entanto, as assinaturas agora são gerenciadas por meio de um novo portal cha
 
 Você pode encontrar um dos vários cenários a seguir:
 
-1. [O contato principal não concluiu o processo de integração.](#Onboarding-not-completed-by-Primary-Contact)<sup>1</sup> 
-2. [O contato principal concluiu a integração, mas não o adicionou como administrador. Suas credenciais foram listadas no VLSC.](#Primary-Contact-did-not-provide-you-administrator-access) 
-3. [O contato principal concluiu a integração, mas não o adicionou como administrador. Suas credenciais não foram listadas no VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)  
+1. [O contato principal não concluiu o processo de integração.](#onboarding-not-completed-by-primary-contact)
+2. [O contato principal concluiu a integração, mas não o adicionou como administrador. Suas credenciais foram listadas no VLSC.](#primary-contact-did-not-provide-you-administrator-access)
+3. [O contato principal concluiu a integração, mas não o adicionou como administrador. Suas credenciais não foram listadas no VLSC.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> Se você for o contato principal ou de notificações e não tiver concluído o processo de integração, precisará seguir as etapas no cenário um para configurar a sua organização.
 

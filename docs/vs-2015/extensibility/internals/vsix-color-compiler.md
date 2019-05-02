@@ -1,21 +1,17 @@
 ---
 title: Compilador de cores do VSIX | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 19ca749b3ddd2190fd667ddb6c96c2a88c557999
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063667"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -114,8 +110,8 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |||  
 |-|-|  
 |**Atributo**|**Definição**|  
-|Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* a cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* a cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
-|Origem|[Obrigatório] O valor da cor em hexadecimal|  
+|Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* Um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
+|Source|[Obrigatório] O valor da cor em hexadecimal|  
   
  Todos os valores com suporte pela enumeração __VSCOLORTYPE são compatíveis com o esquema no atributo de tipo. No entanto, é recomendável que você use apenas CT_RAW e CT_SYSCOLOR.  
   
@@ -146,22 +142,22 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
 |Sem nome (arquivo. xml)|Isso é o primeiro parâmetro sem nome e é o caminho para o arquivo XML a ser convertido.|Necessária|  
-|Sem nome (arquivo. pkgdef)|Isso é o segundo parâmetro sem nome e é o caminho de saída para o arquivo. pkgdef gerado.<br /><br /> Padrão: \<XML Filename >. pkgdef|Opcional|  
+|Sem nome (arquivo. pkgdef)|Isso é o segundo parâmetro sem nome e é o caminho de saída para o arquivo. pkgdef gerado.<br /><br /> Padrão: \<XML Filename>.pkgdef|Opcional|  
 |/noLogo|Definir esse sinalizador interrompe as informações de produto e os direitos autorais de impressão.|Opcional|  
 |/?|Imprima informações de Ajuda.|Opcional|  
 |/help|Imprima informações de Ajuda.|Opcional|  
   
  **Exemplos**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   /NoLogo VsixColorCompiler D:\xml\colors.xml  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Observações  
   
--   Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.  
+- Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.  
   
--   Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.  
+- Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.  
   
 ## <a name="sample-output"></a>Saída de exemplo  
  O arquivo. pkgdef gerado pela ferramenta será semelhante ao abaixo de chaves:  
@@ -173,4 +169,3 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\TreeView]  
 "Data"=hex:38,00,00,00,0b,00,00,00,01,00,00,00,8e,f0,ec,92,13,8b,f4,4c,99,e9,ae,26,92,38,21,85,01,00,00,00,0a,00,00,00,42,61,63,6b,67,72,6f,75,6e,64,01,f5,f5,f5,ff,01,1e,1e,1e,ff  
 ```
-

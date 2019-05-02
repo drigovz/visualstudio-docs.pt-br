@@ -1,27 +1,22 @@
 ---
 title: Inicialização do Designer e configuração de metadados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - designers [Visual Studio SDK], initializing
 - designers [Visual Studio SDK], configuring metadata
 ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f5a4bbd24e571100dfc708d7c34f87b6c84adcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439052"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialização do designer e a configuração de metadados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +31,15 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
 ### <a name="customizing-initialization"></a>Personalizando a inicialização  
  Personalizar um designer, um componente ou uma superfície de design, envolve:  
   
-1.  Modificando metadados de designer e alterando efetivamente como um determinado <xref:System.Type> é acessado ou convertidos.  
+1. Modificando metadados de designer e alterando efetivamente como um determinado <xref:System.Type> é acessado ou convertidos.  
   
      Isso normalmente é feito por meio de <xref:System.Drawing.Design.UITypeEditor> ou <xref:System.ComponentModel.TypeConverter> mecanismos.  
   
      Por exemplo, quando <xref:System.Windows.Forms>-designers com base são inicializados, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ambiente modifica a <xref:System.Drawing.Design.UITypeEditor> para <xref:System.Web.UI.WebControls.Image> objetos usados com o designer para usar o Gerenciador de recursos para obter bitmaps em vez do sistema de arquivos.  
   
-2.  A integração com o ambiente, por exemplo, Assinando eventos ou a obtenção de informações de configuração do projeto. Você pode obter informações de configuração do projeto e assinar eventos, obtendo o <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
+2. A integração com o ambiente, por exemplo, Assinando eventos ou a obtenção de informações de configuração do projeto. Você pode obter informações de configuração do projeto e assinar eventos, obtendo o <xref:System.ComponentModel.Design.ITypeResolutionService> interface.  
   
-3.  Modificação do ambiente do usuário por meio da ativação apropriada **caixa de ferramentas** categorias ou restringindo a aplicabilidade do designer, aplicando uma instância da <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe para o designer.  
+3. Modificação do ambiente do usuário por meio da ativação apropriada **caixa de ferramentas** categorias ou restringindo a aplicabilidade do designer, aplicando uma instância da <xref:System.ComponentModel.ToolboxItemFilterAttribute> classe para o designer.  
   
 ### <a name="designer-initialization-by-a-vspackage"></a>Inicialização do designer por um VSPackage  
  Um VSPackage deve lidar com a inicialização do designer por:  
@@ -52,7 +47,7 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
 1. Criação de um objeto que implementa o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
    > [!NOTE]
-   >  O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
 2. Registrar a classe que implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> como fornecendo suporte para extensões do designer do VSPackage, aplicando as instâncias do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para a classe que fornece a implementação do VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -98,11 +93,10 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  No momento, a superfície de design somente dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, podemos estava tentando executar modificar uma propriedade, como o `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca seria exibido porque o designer, na verdade, nunca cria uma instância de `Color`. Definir o sinalizador global para `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.  
+> No momento, a superfície de design somente dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, podemos estava tentando executar modificar uma propriedade, como o `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca seria exibido porque o designer, na verdade, nunca cria uma instância de `Color`. Definir o sinalizador global para `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>   
  <xref:System.ComponentModel.ToolboxItemFilterType>   
  [Estendendo o suporte ao tempo de design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
-

@@ -9,34 +9,34 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098955"
 ---
-# <a name="how-to-export-a-shader"></a>Como exportar um sombreador
+# <a name="how-to-export-a-shader"></a>Como: Exportar um sombreador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador para exportar um sombreador da DGSL (Directed Graph Shader Language) para poder usá-lo em seu aplicativo.  
   
  Este documento demonstra esta atividade:  
   
--   Exportar um sombreador  
+- Exportar um sombreador  
   
 ## <a name="exporting-a-shader"></a>Exportar um sombreador  
  Depois de criar um sombreador usando o Designer de Sombreador é necessário exportá-lo em um formato que seja compreendido pela API de gráficos antes de usá-lo em seu aplicativo. Você pode exportar um sombreador de maneiras diferentes para atender a necessidades diferentes.  
   
 #### <a name="to-export-a-shader"></a>Para exportar um sombreador  
   
-1.  No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra uma arquivo do **Visual Shader Graph (.dgsl)**.  
+1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], abra uma arquivo do **Visual Shader Graph (.dgsl)**.  
   
-     Se você não tem um arquivo do **Visual Shader Graph (.dgsl)** para abrir, crie um conforme descrito em [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).  
+     Se você não tiver um arquivo **Visual Shader Graph (.dgsl)** para abrir, crie um conforme a descrição em [Como: Criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md).  
   
-2.  Na barra de ferramentas do **Designer de Sombreador**, escolha **Avançado**, **Exportar** e **Exportar como**. A caixa de diálogo **Exportar Sombreador** é exibida.  
+2. Na barra de ferramentas do **Designer de Sombreador**, escolha **Avançado**, **Exportar** e **Exportar como**. A caixa de diálogo **Exportar Sombreador** é exibida.  
   
-3.  Na lista suspensa **Salvar como tipo**, escolha o formato que você deseja exportar.  
+3. Na lista suspensa **Salvar como tipo**, escolha o formato que você deseja exportar.  
   
      Aqui estão os formatos que você pode escolher:  
   
@@ -49,8 +49,8 @@ Este documento demonstra como usar o Designer de Sombreador para exportar um som
      **Cabeçalho C++ (\*.h)**  
      Exporta o sombreador como um cabeçalho de estilo C que define uma matriz de bytes que contém o código de bytes HLSL. Essa opção pode fazer com que a depuração e correção do código com base em problemas do usuário final se tornem mais demoradas porque o aplicativo tem que ser recompilado para testar a correção. No entanto, como esta opção torna difícil, mas não impossível, a modificação do sombreador depois de ser implantado em um aplicativo, ela apresenta maior dificuldade para um usuário que deseja modificar o sombreador de formas indesejáveis.  
   
-4.  Na caixa de combinação **Nome de arquivo**, especifique um nome para o sombreador exportado e, em seguida, escolha o botão **Salvar**.  
+4. Na caixa de combinação **Nome de arquivo**, especifique um nome para o sombreador exportado e, em seguida, escolha o botão **Salvar**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
+ [Como: Criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)

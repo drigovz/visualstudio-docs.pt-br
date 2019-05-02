@@ -1,14 +1,9 @@
 ---
 title: A exibição de mensagens | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.externaltools.spyplus.messagesview
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3f896650d7979365346d493c5aac06340007cbb7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080573"
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +34,21 @@ Exibição de mensagens em Spy + +
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir um modo de exibição de mensagens para uma janela, processo ou thread  
   
-1.  Mover o foco para um [modo de exibição do Windows](../debugger/windows-view.md), [exibição de processos](../debugger/processes-view.md), ou [exibição de Threads](../debugger/threads-view.md) janela.  
+1. Mover o foco para um [modo de exibição do Windows](../debugger/windows-view.md), [exibição de processos](../debugger/processes-view.md), ou [exibição de Threads](../debugger/threads-view.md) janela.  
   
-2.  Localize o nó para o item cujas mensagens que você deseja examinar e selecioná-lo.  
+2. Localize o nó para o item cujas mensagens que você deseja examinar e selecioná-lo.  
   
-3.  Dos **Spy** menu, escolha **mensagens de Log**.  
+3. Dos **Spy** menu, escolha **mensagens de Log**.  
   
      O [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md) é aberta.  
   
-4.  Selecione as opções para a mensagem que você deseja exibir.  
+4. Selecione as opções para a mensagem que você deseja exibir.  
   
-5.  Pressione **Okey** para começar a mensagens de log.  
+5. Pressione **Okey** para começar a mensagens de log.  
   
      Um abre a janela de exibição de mensagens e um **mensagens** menu é adicionado à barra de ferramentas Spy + +. Dependendo das opções selecionadas, as mensagens inicia o streaming para a janela de exibição de mensagens ativa.  
   
-6.  Quando você ter mensagens suficientes, escolha **parar log** da **mensagens** menu.  
+6. Quando você ter mensagens suficientes, escolha **parar log** da **mensagens** menu.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Controlando a exibição de mensagens](../debugger/how-to-control-messages-view.md)  
@@ -89,6 +84,3 @@ Exibição de mensagens em Spy + +
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
  Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
-
-
-

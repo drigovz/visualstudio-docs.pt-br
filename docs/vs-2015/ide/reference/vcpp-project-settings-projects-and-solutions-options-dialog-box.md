@@ -19,24 +19,23 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d5d697cecfb30bc52f3386411a32a05718b0662
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 66110f6544bc19476bb4ecdfd6929fb4e26f0b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082428"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Esta caixa de diálogo permite que você defina configurações de projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] relacionadas ao log de build e tipos de arquivo de suporte.  
   
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.  
+2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.  
   
 ## <a name="build-customization-search-path"></a>Caminho de pesquisa de personalização do build  
  Especifica a lista de diretórios que contêm arquivos de .rules, que o ajudarão a definir regras de build para seus projetos.  

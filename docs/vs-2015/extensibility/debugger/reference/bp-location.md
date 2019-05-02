@@ -1,14 +1,9 @@
 ---
 title: BP_LOCATION | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - BP_LOCATION
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6e154fe6b1121855e50c32b342c3c11566cbcd03
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2a3e5f690a679118c7bb02c110d6e5d066a2bd0d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749104"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922153"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -97,7 +92,7 @@ public struct BP_LOCATION {
 ## <a name="remarks"></a>Comentários  
  Essa estrutura é um membro do [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.  
   
- [C# somente] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Procure abaixo da coluna da esquerda para a `bpLocationType` de valor, em seguida, procure em outras colunas para determinar o que cada `unionmemberX` membro representa e marshaling o `unionmemberX` adequadamente. Veja o exemplo de uma maneira de interpretar uma parte dessa estrutura em c#.  
+ [C# somente] O `unionmemberX` membros são interpretados de acordo com a tabela a seguir. Procure abaixo da coluna da esquerda para a `bpLocationType` de valor, em seguida, procure em outras colunas para determinar o que cada `unionmemberX` membro representa e marshaling o `unionmemberX` adequadamente. Veja o exemplo de uma maneira de interpretar uma parte dessa estrutura em C#.  
   
 |`bpLocationType`|`unionmember1`|`unionmember2`|`unionmember3`|`unionmember4`|  
 |----------------------|--------------------|--------------------|--------------------|--------------------|  
@@ -110,7 +105,7 @@ public struct BP_LOCATION {
 |`BPLT_RESOLUTION`|[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)|-|-|-|  
   
 ## <a name="example"></a>Exemplo  
- Este exemplo mostra como interpretar a `BP_LOCATION` estrutura em c# para o `BPLT_DATA_STRING` tipo. Esse tipo específico mostra como interpretar os quatro `unionmemberX` membros em todos os formatos possíveis (objeto de cadeia de caracteres e número).  
+ Este exemplo mostra como interpretar a `BP_LOCATION` estrutura em C# para o `BPLT_DATA_STRING` tipo. Esse tipo específico mostra como interpretar os quatro `unionmemberX` membros em todos os formatos possíveis (objeto de cadeia de caracteres e número).  
   
 ```csharp  
 using System;  
@@ -136,7 +131,7 @@ namespace MyPackage
 ```  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -152,4 +147,3 @@ namespace MyPackage
  [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md)   
  [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md)   
  [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md)
-

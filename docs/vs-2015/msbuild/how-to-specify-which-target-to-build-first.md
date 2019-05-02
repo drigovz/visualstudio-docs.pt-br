@@ -1,5 +1,5 @@
 ---
-title: Como especificar o destino a ser compilado primeiro | Microsoft Docs
+title: 'Como: Especificar o destino a ser compilado primeiro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076413"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Como especificar o destino a ser compilado primeiro
+# <a name="how-to-specify-which-target-to-build-first"></a>Como: Especificar qual destino será compilado primeiro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como o projeto é compilado. O mecanismo [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) compila o primeiro projeto e as dependências que localizar, a menos que o arquivo de projeto contenha um atributo `DefaultTargets`, um atributo `InitialTargets` ou que um destino seja especificado na linha de comando usando a opção **/target**.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Usar o atributo InitialTargets  
@@ -39,7 +38,7 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
   
 #### <a name="to-specify-more-than-one-initial-target"></a>Para especificar mais de um destino inicial  
   
--   Liste os destinos iniciais, separados por ponto e vírgula, no atributo `InitialTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
+- Liste os destinos iniciais, separados por ponto e vírgula, no atributo `InitialTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
   
      `<Project InitialTargets="Clean;Compile">`  
   
@@ -56,7 +55,7 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
   
 #### <a name="to-specify-more-than-one-default-target"></a>Para especificar mais de um destino padrão  
   
--   Liste os destinos padrão, separados por ponto e vírgula, no atributo `DefaultTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
+- Liste os destinos padrão, separados por ponto e vírgula, no atributo `DefaultTargets` do elemento `Project`. Por exemplo, para executar o destino `Clean` e, em seguida, o destino `Compile`, digite:  
   
      `<Project DefaultTargets="Clean;Compile">`  
   
@@ -65,17 +64,17 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
   
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Para usar primeiro um destino diferente do destino padrão  
   
--   Especifique o destino como o primeiro destino usando a opção de linha de comando **/target**. Por exemplo:  
+- Especifique o destino como o primeiro destino usando a opção de linha de comando **/target**. Por exemplo:  
   
      `msbuild file.proj /target:Clean`  
   
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Para usar primeiro vários destinos que sejam diferentes dos destinos padrão  
   
--   Liste os destinos, separados por ponto e vírgula ou por vírgulas, usando a opção de linha de comando **/target**. Por exemplo:  
+- Liste os destinos, separados por ponto e vírgula ou por vírgulas, usando a opção de linha de comando **/target**. Por exemplo:  
   
      `msbuild <file name>.proj /t:Clean;Compile`  
   
 ## <a name="see-also"></a>Consulte também
   [MSBuild](msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
- [Como limpar um build](../msbuild/how-to-clean-a-build.md)
+ [Como: Limpar um Build](../msbuild/how-to-clean-a-build.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be5afe96af1baa615e5000a6c1a19b543f3c89c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445332"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Como: Permitir que o código execute documentos code-behind com permissões restritas
   Você pode usar o recurso de gerenciamento de direitos de informação (IRM) do Microsoft Office para restringir as permissões para um documento ou pasta de trabalho. Por padrão, o código por trás de um documento do Microsoft Office Word restrito ou a pasta de trabalho do Microsoft Office Excel não é permitido para execução. Você pode alterar o padrão para que suas extensões de código gerenciado podem acessar o modelo de objeto e sua solução funcionará.
@@ -38,7 +38,7 @@ ms.locfileid: "56637653"
 2. Clique o **arquivo** guia, aponte para **preparar**, aponte para **Restringir permissão**e, em seguida, clique em **acesso restrito**.
 
    > [!NOTE]
-   >  No primeiro uso, você precisará instalar o cliente Windows Rights Management. Depois de instalar o cliente, talvez seja necessário repetir as etapas.
+   > No primeiro uso, você precisará instalar o cliente Windows Rights Management. Depois de instalar o cliente, talvez seja necessário repetir as etapas.
 
 3. No **permissão** caixa de diálogo, selecione **Restringir permissão neste documento**e, em seguida, clique em **mais opções**.
 

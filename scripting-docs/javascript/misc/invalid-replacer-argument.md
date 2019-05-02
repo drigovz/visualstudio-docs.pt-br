@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 640eefb53304de48e4ad2398a02910a1cff1b57d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 46e01a4e6bb989fad2da6f979c79b7aba13df63a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007308"
 ---
 # <a name="invalid-replacer-argument"></a>Argumento substituto inválido
 Foi feita uma tentativa para invocar `JSON.stringify` com um argumento que não é válido. O `replacer` argumento deve ser uma função ou uma matriz.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Alterar o `replacer` argumento para uma função ou uma matriz.  
+- Alterar o `replacer` argumento para uma função ou uma matriz.  
   
 ## <a name="example"></a>Exemplo  
  O código neste exemplo causa um erro de tempo de execução porque `memberfilter` é um objeto, em vez de uma função ou uma matriz.  

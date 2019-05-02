@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81c85adc3aaa3bedb92709ce59dd2192a6756473
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438808"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Como: Proteger planilhas programaticamente
   O recurso de proteção do Microsoft Office Excel ajuda a impedir que os usuários e o código modificar objetos em uma planilha. Por padrão, todas as células são bloqueadas após você ativa a proteção.
@@ -30,7 +30,7 @@ ms.locfileid: "56601233"
  Personalizações em nível de documento, você pode proteger planilhas usando o designer do Excel. Você também pode proteger uma planilha programaticamente no tempo de execução em qualquer tipo de projeto.
 
 > [!NOTE]
->  É possível adicionar controles dos Windows Forms a áreas de uma planilha que são protegidas.
+> É possível adicionar controles dos Windows Forms a áreas de uma planilha que são protegidas.
 
 ## <a name="use-the-designer"></a>Use o designer
 
@@ -44,7 +44,7 @@ ms.locfileid: "56601233"
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>Para permitir a edição em intervalos específicos
 
-1.  No **alterações** grupo da **revisão** , clique em **permitem que os usuários editem intervalos**.
+1. No **alterações** grupo da **revisão** , clique em **permitem que os usuários editem intervalos**.
 
      O **permitem que os usuários editem intervalos** caixa de diálogo é exibida. Você pode especificar intervalos sejam desbloqueados usando uma senha e os usuários podem editar intervalos sem uma senha.
 
@@ -53,14 +53,14 @@ ms.locfileid: "56601233"
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>Para proteger uma planilha por meio de código em uma personalização no nível de documento
 
-1.  Chamar o <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> método da planilha. Este exemplo pressupõe que você está trabalhando com uma planilha denominada `Sheet1`.
+1. Chamar o <xref:Microsoft.Office.Tools.Excel.Worksheet.Protect%2A> método da planilha. Este exemplo pressupõe que você está trabalhando com uma planilha denominada `Sheet1`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#27)]
      [!code-vb[Trin_VstcoreExcelAutomation#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#27)]
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-vsto-add-in"></a>Para proteger uma planilha usando código em um suplemento do VSTO
 
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> método da planilha ativa.
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Worksheet.Protect%2A> método da planilha ativa.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#17)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#17](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#17)]

@@ -11,12 +11,12 @@ caps.latest.revision: 28
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ab342c2d038a0021d94858de916e66456622adb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0fc24dc76e59a04b9485a71ba4dff44e0c7ba64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442804"
 ---
 # <a name="create-and-run-unit-tests-for-a-store-app-in-visual-studio"></a>Criar e executar testes de unidade para um aplicativo da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ ms.locfileid: "54794486"
 As ferramentas de teste de unidade do Visual Studio Express 2012 para Windows 8 foram projetadas para dar suporte a desenvolvedores e equipes que incorporam testes de unidade em suas práticas de desenvolvimento de software. Os testes de unidade dão aos desenvolvedores e testadores uma forma eficiente e sustentável de procurar erros lógicos nos métodos de classes nos projetos em Visual C#, Visual Basic e Visual C++.
 
 > [!NOTE]
->  Os tópicos nesta seção descrevem a funcionalidade do Visual Studio 2012 Express para Windows 8. O Visual Studio Ultimate, VS Premium e VS Professional fornecem recursos adicionais para teste de unidade.
+> Os tópicos nesta seção descrevem a funcionalidade do Visual Studio 2012 Express para Windows 8. O Visual Studio Ultimate, VS Premium e VS Professional fornecem recursos adicionais para teste de unidade.
 >
 > - No VS Ultimate, no VS Premium e no VS Professional você pode usar qualquer estrutura de teste de unidade de código aberto e de terceiros que tenha criado um adaptador complementar para o Gerenciador de Testes da Microsoft. Você também pode analisar e exibir informações de cobertura de código para seus testes com o VS Ultimate e o VS Premium.
->   -   O VS Ultimate permite a execução de testes depois de cada build. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.
->   -   **JavaScript**. O teste de unidade do JavaScript não está disponível no IDE do Visual Studio Express para Windows 8. No Visual Studio Professional, no Premium e no Ultimate, as estruturas de teste de unidade JavaScript estão disponíveis como extensões na Galeria do Visual Studio. Você também pode testar o código JavaScript usando uma das estruturas de testes de unidade JavaScript de terceiros independentes ou de código aberto.
+>   - O VS Ultimate permite a execução de testes depois de cada build. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.
+>   - **JavaScript**. O teste de unidade do JavaScript não está disponível no IDE do Visual Studio Express para Windows 8. No Visual Studio Professional, no Premium e no Ultimate, as estruturas de teste de unidade JavaScript estão disponíveis como extensões na Galeria do Visual Studio. Você também pode testar o código JavaScript usando uma das estruturas de testes de unidade JavaScript de terceiros independentes ou de código aberto.
 >
 >   Para obter mais informações, consulte [Executar o teste de unidade em seu código](../test/unit-test-your-code.md) na Biblioteca do MSDN.
 

@@ -1,30 +1,24 @@
 ---
 title: Integração de literais XML com XML Schema Explorer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 60b778ae46dbd44f85973f96baab6e474f60a1f7
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: b81351deb31ffa9c66838ba39eebd6d2a138003e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49295874"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654419"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>Integração de literais XML com XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Basic suporta literal XML, o que significa que você pode inserir fragmentos XML diretamente no seu código Visual Basic. Para obter mais informações, consulte [visão geral dos literais de XML](http://go.microsoft.com/fwlink/?LinkId=140325).  
   
  Se um arquivo XSD em seu projeto Visual Basic inclui uma literal XML, você pode exibir o esquema XML definido em XML Schema Explorer. Para exibir o conjunto de esquema associado a um literal XML, clique duas vezes em um nó XML em um literal XML ou uma importação de namespace XML e selecione **Mostrar no Schema Explorer**.  
@@ -38,7 +32,4 @@ Visual Basic suporta literal XML, o que significa que você pode inserir fragmen
  Esse recurso foi introduzido no Visual Studio 2008 SP1. Para assistir uma entrevista em que esse recurso é explicado em detalhes, consulte [entrevista de Channel 9: XML Schema Explorer no Visual Studio 2008 SP1](http://go.microsoft.com/fwlink/?LinkId=140183).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como usar o designer de esquema XML com literais XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)
-
-
-
+ [Como: usar o designer de esquema XML com literais do XML](../xml-tools/how-to-use-the-xml-schema-designer-with-xml-literals.md)

@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c93851445ff5c2c85bdfd18bf3a23270fdbc4a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445946"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Você pode gerar testes de unidade para métodos genéricos exatamente como fari
 ## <a name="examples"></a>Exemplos  
  Os exemplos a seguir ilustram testes de unidade para genéricos:  
   
--   [Edição do código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.  
+- [Edição do código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.  
   
--   [Usando uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.  
+- [Usando uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.  
   
-###  <a name="EditingGeneratedTestCode"></a> Exemplo 1: edição do código de teste gerado  
+### <a name="EditingGeneratedTestCode"></a> Exemplo 1: Editando o código de teste gerado  
  O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.  
   
  O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.  
   
  Este código ilustra dois métodos:  
   
--   um método auxiliar de teste, `SizeOfLinkedListTestHelper<T>()`. Por padrão, um método auxiliar de teste tem "TestHelper" em seu nome.  
+- um método auxiliar de teste, `SizeOfLinkedListTestHelper<T>()`. Por padrão, um método auxiliar de teste tem "TestHelper" em seu nome.  
   
--   um método de teste, `SizeOfLinkedListTest()`. Cada método de teste é marcado com o atributo TestMethod.  
+- um método de teste, `SizeOfLinkedListTest()`. Cada método de teste é marcado com o atributo TestMethod.  
   
 #### <a name="generated-test-code"></a>Código de teste gerado  
  O código de teste a seguir foi gerado por meio do método `SizeOfLinkedList()`. Como esse é o teste gerado não editado, ele deve ser modificado para testar corretamente o método SizeOfLinkedList.  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Método auxiliar de teste  
  O método auxiliar de teste executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 1 a 5.  
   
-1.  Crie uma lista vinculada genérica.  
+1. Crie uma lista vinculada genérica.  
   
-2.  Acrescente quatro nós à lista vinculada. O tipo de dados do conteúdo desses nós é desconhecido.  
+2. Acrescente quatro nós à lista vinculada. O tipo de dados do conteúdo desses nós é desconhecido.  
   
-3.  Atribua o tamanho esperado da lista vinculada à variável `expected`.  
+3. Atribua o tamanho esperado da lista vinculada à variável `expected`.  
   
-4.  Compute o tamanho real da lista vinculada e atribua-a à variável `actual`.  
+4. Compute o tamanho real da lista vinculada e atribua-a à variável `actual`.  
   
-5.  Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.  
+5. Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.  
   
 ##### <a name="test-method"></a>Método de Teste  
  O método de teste é compilado para o código que é chamado quando você executa o teste chamado SizeOfLinkedListTest. Ele executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 6 e 7.  
   
-1.  Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.  
+1. Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.  
   
-2.  Especifique `<char>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `char`.  
+2. Especifique `<char>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `char`.  
   
 ```  
   
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, consulte [Como depurar durante a execução de um teste em uma solução do ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+> Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, confira [Como: Depurar durante a execução de um teste em uma solução ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: usando uma restrição de tipo  
+### <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: Usando uma restrição de tipo  
  Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.  
   
  A segunda seção mostra código do projeto de teste.  

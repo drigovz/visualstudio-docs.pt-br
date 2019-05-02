@@ -1,14 +1,9 @@
 ---
 title: Referência de API da visualização simultânea | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f55e347b08f3813c21b651a1733c6c6a32597e9f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef86bcca5e7b8b6fa8f2b6c5e7a0efe86ab5ba17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117441"
 ---
 # <a name="visualizer-api-reference"></a>Referência de API do visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,20 +32,17 @@ As APIs do Visualizador são fornecidas para os usuários que quiserem escrever 
   
 ## <a name="in-this-section"></a>Nesta seção  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource?displayProperty=fullName>  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
- [Como: escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
+ [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   
+ [Como: Escrever um visualizador](../debugger/how-to-write-a-visualizer.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)
-
-
-

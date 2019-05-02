@@ -1,44 +1,39 @@
 ---
-title: 'Nova geração de projeto: Nos bastidores, parte 1 | Microsoft Docs'
-ms.custom: ''
+title: 'Geração de novo projeto: Nos bastidores, parte 1 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f1181cb3f84471727b181bb1ff91b69e8613b8a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792912"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054232"
 ---
-# <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: nos bastidores, Parte um
+# <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: Bastidores, parte um
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Jamais pensou em como criar seu próprio tipo de projeto? Se perguntar o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.  
   
  Existem várias tarefas que coordena a Visual Studio para você:  
   
--   Ele exibe uma árvore de todos os tipos de projeto disponíveis.  
+- Ele exibe uma árvore de todos os tipos de projeto disponíveis.  
   
--   Ele exibe uma lista de modelos de aplicativos para cada tipo de projeto e permite que você escolha um.  
+- Ele exibe uma lista de modelos de aplicativos para cada tipo de projeto e permite que você escolha um.  
   
--   Ele coleta informações sobre o projeto para o aplicativo, como nome do projeto e o caminho.  
+- Ele coleta informações sobre o projeto para o aplicativo, como nome do projeto e o caminho.  
   
--   Ele passa essas informações para a fábrica de projeto.  
+- Ele passa essas informações para a fábrica de projeto.  
   
--   Ele gera pastas e itens de projeto na solução atual.  
+- Ele gera pastas e itens de projeto na solução atual.  
   
 ## <a name="the-new-project-dialog-box"></a>Caixa de diálogo Novo projeto  
  Tudo começa quando você seleciona um tipo de projeto para um novo projeto. Vamos começar clicando **novo projeto** sobre o **arquivo** menu. O **novo projeto** caixa de diálogo for exibida, aparência semelhante a esta:  
@@ -97,7 +92,7 @@ devenv /installvstemplates
 ##### <a name="developeractivity"></a>DeveloperActivity  
  Se essa subchave estiver presente, a posição do nó raiz é controlada pela caixa de diálogo Configurações do desenvolvedor. Por exemplo,  
   
- REG_SZ DeveloperActivity VC #  
+ DeveloperActivity REG_SZVC#  
   
  indica que o Visual C# será um nó raiz se o Visual Studio estiver definido para [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] desenvolvimento. Caso contrário, ele será um nó filho do **outras linguagens**.  
   
@@ -121,14 +116,14 @@ devenv /installvstemplates
   
  Quando o **novo projeto** caixa de diálogo é aberta, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] percorre a pasta ProjectTemplates e recria a estrutura na **tipos de projeto** árvore com algumas alterações:  
   
--   O nó raiz na **tipos de projeto** árvore é determinado pelo modelo de aplicativo.  
+- O nó raiz na **tipos de projeto** árvore é determinado pelo modelo de aplicativo.  
   
--   O nome do nó pode ser localizado e pode conter caracteres especiais.  
+- O nome do nó pode ser localizado e pode conter caracteres especiais.  
   
--   A ordem de classificação pode ser alterada.  
+- A ordem de classificação pode ser alterada.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Localizando o nó raiz de um tipo de projeto  
- Quando o Visual Studio atravessa as pastas ProjectTemplates, ele abre todos os arquivos. zip e extrai todos os arquivos. vstemplate. Um arquivo. vstemplate usa XML para descrever um modelo de aplicativo. Para obter mais informações, consulte [nova geração de projeto: Under the Hood, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Quando o Visual Studio atravessa as pastas ProjectTemplates, ele abre todos os arquivos. zip e extrai todos os arquivos. vstemplate. Um arquivo. vstemplate usa XML para descrever um modelo de aplicativo. Para obter mais informações, consulte [nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  O \<ProjectType > marca determina o tipo de projeto para o aplicativo. Por exemplo, o arquivo \CSharp\SmartDevice\WindowsCE\1033\WindowsCE-EmptyProject.zip contém um arquivo de EmptyProject.vstemplate que possui essa marca:  
   
@@ -220,5 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
- [Nova geração de projeto: Nos bastidores, parte 2](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
-
+ [Nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

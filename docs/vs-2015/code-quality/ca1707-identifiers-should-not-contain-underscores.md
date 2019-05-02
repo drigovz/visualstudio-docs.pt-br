@@ -1,14 +1,9 @@
 ---
-title: 'CA1707: Os identificadores não devem conter sublinhados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1707: Identificadores não devem conter sublinhados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldNotContainUnderscores
 - CA1707
@@ -20,17 +15,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0aeea5c113ebebe33d4c371fed1a5c46da4e735e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 7973646aab545484287f5628eb0fa3cf3629db84
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49211062"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651939"
 ---
-# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: os identificadores não devem conter sublinhados
+# <a name="ca1707-identifiers-should-not-contain-underscores"></a>CA1707: Identificadores não devem conter sublinhados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1707: os identificadores não devem conter sublinhados](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1707: Identificadores não devem conter sublinhados](https://docs.microsoft.com/visualstudio/code-quality/ca1707-identifiers-should-not-contain-underscores).  
   
 |||  
 |-|-|  
@@ -54,7 +49,6 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1707
  Não suprima um aviso nessa regra.  
   
 ## <a name="related-rules"></a>Regras relacionadas  
- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
+ [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)  
   
- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

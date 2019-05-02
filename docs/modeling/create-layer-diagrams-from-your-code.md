@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421162"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Criar diagramas de dependência do código
 
@@ -43,13 +43,13 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 > [!NOTE]
 > Não há suporte para diagramas de dependência para projetos do .NET Core no Visual Studio.
 
-1.  Sobre o **arquitetura** menu, escolha **novo diagrama de dependência**.
+1. Sobre o **arquitetura** menu, escolha **novo diagrama de dependência**.
 
-2.  Sob **modelos**, escolha **diagrama de dependência**.
+2. Sob **modelos**, escolha **diagrama de dependência**.
 
-3.  Nomeie o diagrama.
+3. Nomeie o diagrama.
 
-4.  Na **adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente na solução.
+4. Na **adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente na solução.
 
      -ou-
 
@@ -58,7 +58,7 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
     > [!NOTE]
     > O diagrama de dependência deve existir dentro de um projeto de modelagem. Porém, é possível vinculá-lo a itens em qualquer lugar na solução.
 
-5.  Certifique-se de salvar o projeto de modelagem e o diagrama de dependência.
+5. Certifique-se de salvar o projeto de modelagem e o diagrama de dependência.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Arrastar e soltar, ou copiar e colar, de um mapa de código
 
@@ -101,19 +101,19 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 
  O número em uma camada indica o número de artefatos que estão associados à camada. No entanto, ao ler esse número, lembre-se do seguinte:
 
--   Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
+- Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
 
      Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.
 
--   Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
+- Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
 
 ## <a name="Managing"></a> Gerenciar links entre camadas e artefatos
 
-1.  No diagrama de dependência, abra o menu de atalho para a camada e, em seguida, escolha **Exibir Links**.
+1. No diagrama de dependência, abra o menu de atalho para a camada e, em seguida, escolha **Exibir Links**.
 
      **Gerenciador de camada** mostra os links de artefato para a camada selecionada.
 
-2.  Use as seguintes tarefas para gerenciar esses links:
+2. Use as seguintes tarefas para gerenciar esses links:
 
 |**To**|**No Gerenciador de camadas**|
 |-|-|
@@ -150,17 +150,17 @@ Antes de criar um diagrama de dependência, certifique-se de que sua solução t
 ## <a name="Codemaps"></a> Descubra padrões e as dependências em um mapa de código
  Durante a criação de diagramas de dependência, você também pode criar **mapas de código**. Esses diagramas podem ajudar você a descobrir padrões e as dependências, enquanto você explora o código. Use o Gerenciador de soluções, exibição de classe ou Pesquisador de objetos para explorar a assemblies, namespaces e classes – o que normalmente correspondem bem a camadas existentes. Para obter mais informações sobre mapas de código, consulte:
 
--   [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
-- [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
 - [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualizar código](../modeling/visualize-code.md)

@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d08a7eb20c01568b3501f16348eb19afdcaefa2c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444370"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Toolset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
 
 ## <a name="standard-toolset-configurations"></a>Configurações padrão do Conjunto de Ferramentas  
  O MSBuild 12.0 inclui os seguintes conjuntos de ferramentas padrão:  
-
 
 | ToolsVersion | Caminho do conjunto de ferramentas (conforme especificado na propriedade de build do MSBuildToolsPath ou MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|
@@ -59,7 +57,7 @@ Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e fe
  A propriedade do build `VisualStudioVersion` indica se um subconjunto de ferramentas se torna ativo. Por exemplo, um valor `VisualStudioVersion` de "12.0" especifica o subconjunto de ferramentas MSBuild 12.0. Para obter mais informações, consulte a seção de subconjuntos de ferramentas de [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).  
 
 > [!NOTE]
->  É recomendável que você evite a alteração dessas configurações. No entanto, você pode adicionar suas próprias configurações e definir as definições personalizadas do conjunto de ferramentas em todo o computador, conforme descrito na próxima seção.  
+> É recomendável que você evite a alteração dessas configurações. No entanto, você pode adicionar suas próprias configurações e definir as definições personalizadas do conjunto de ferramentas em todo o computador, conforme descrito na próxima seção.  
 
 ## <a name="custom-toolset-definitions"></a>Definições personalizadas do conjunto de ferramentas  
  Quando um conjunto de ferramentas padrão não atender a seus requisitos de build, você pode criar um conjunto de ferramentas personalizado. Por exemplo, você pode ter um cenário de laboratório de build que você deve ter um sistema separado para projetos de build [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Usando um conjunto de ferramentas personalizado, você pode atribuir valores personalizados para o `ToolsVersion` atributo ao criar projetos ou executar MSBuild.exe. Fazendo isso, você também pode usar a `$(MSBuildToolsPath)` propriedade para importar arquivos .targets do diretório, bem como definir suas próprias propriedades de conjunto de ferramentas personalizadas que podem ser usadas para qualquer projeto que usa esse conjunto de ferramentas.  
@@ -88,12 +86,12 @@ Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e fe
 ```  
 
 > [!NOTE]
->  Para ser lido corretamente, `<configSections>` deve ser a primeira subseção na seção `<configuration>`.  
+> Para ser lido corretamente, `<configSections>` deve ser a primeira subseção na seção `<configuration>`.  
 
  `ToolsetConfigurationSection` é uma seção de configuração personalizada que pode ser usada por qualquer hose de MSBuild para configuração personalizada. Se você usar um conjunto de ferramentas personalizado, um host não precisará fazer nada para inicializar o mecanismo de build, exceto fornecer as entradas de arquivo de configuração. Ao definir as entradas no Registro, você pode especificar conjuntos de ferramentas em todo o computador que se aplicam a MSBuild.exe, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e todos os hosts do MSBuild.  
 
 > [!NOTE]
->  Se um arquivo de configuração define as configurações para um `ToolsVersion` que já foi definido no Registro, as duas definições não são mescladas. A definição no arquivo de configuração tem precedência e as configurações no Registro para esse `ToolsVersion` são ignoradas.  
+> Se um arquivo de configuração define as configurações para um `ToolsVersion` que já foi definido no Registro, as duas definições não são mescladas. A definição no arquivo de configuração tem precedência e as configurações no Registro para esse `ToolsVersion` são ignoradas.  
 
  As seguintes propriedades são específicas para o valor de `ToolsVersion`, que é usado em projetos:  
 

@@ -8,16 +8,18 @@ author: gewarren
 ms.author: gewarren
 ms.workload:
 - multiple
-ms.openlocfilehash: 33c7650efe92ee57bd554d47f9883669a8f50268
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d18ca688c1eac02fc2b24c3f8cb0f9551e4939ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430285"
 ---
 # <a name="write-and-manage-code-using-visual-studio"></a>Escrever e gerenciar código usando o Visual Studio
 
 Saiba como usar o editor de código e outras ferramentas do Visual Studio para escrever, acessar, gerenciar e melhorar seu código.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -244,7 +246,7 @@ Crie seu primeiro aplicativo no Visual Studio.
         </a>
     </li>
     <li>
-        <a href="/visualstudio/ide/quickstart-uwp-csharp">
+        <a href="/visualstudio/get-started/csharp/tutorial-uwp">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">

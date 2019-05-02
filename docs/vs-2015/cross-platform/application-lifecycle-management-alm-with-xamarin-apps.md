@@ -8,17 +8,16 @@ ms.assetid: ff978cc2-5a25-46d6-921b-e51adaa65992
 caps.latest.revision: 16
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6f8d2a776b8867230bb618dfb0ce8b558c69619e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d524319eb31d3c51613894ad51470c718c9008e3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793805"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652754"
 ---
 # <a name="application-lifecycle-management-alm-with-xamarin-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados para Android, iOS e Windows usando C#, .NET e Visual Studio. O Xamarin permite que uma grande parte do código seja compartilhada entre plataformas, com apenas um pequeno percentual precisando ser específico da plataforma. Para obter mais informações sobre o Xamarin em si, consulte [Visual Studio e Xamarin](../cross-platform/visual-studio-and-xamarin.md).  
   
  Desenvolver aplicativos para plataformas modernas envolve muito mais atividades do que apenas escrever código. Essas atividades, conhecidas como DevOps (desenvolvimento + operações), abrangem o ciclo de vida completo do aplicativo e incluem trabalhos de planejando e acompanhando, elaboração e implementação de código, gerenciamento de um repositório de código-fonte, execução de compilações, gerenciamento de integrações contínuas e implantações, teste (incluindo testes de unidade e testes de interface do usuário), execução de várias formas de diagnóstico em ambientes de desenvolvimento e produção e monitoramento do desempenho do aplicativo e dos comportamentos do usuário em tempo real por meio de telemetria e análise.  
@@ -69,7 +68,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |[Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)|Sim||  
   
 ## <a name="build"></a>Build  
- Link de referência: **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Link de referência: **[Compilação](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  
@@ -112,7 +111,7 @@ O Xamarin permite criar aplicativos móveis de plataforma cruzada direcionados p
 |Carregar para a loja de aplicativos|Parcial|Estão disponíveis extensões que podem automatizar esse processo para algumas lojas de aplicativos.  Consulte [Extensões para Visual Studio Team Services](https://marketplace.visualstudio.com/VSTS); por exemplo, a [extensão para Google Play](https://marketplace.visualstudio.com/items?itemName=ms-vsclient.google-play).|  
   
 ## <a name="monitor-with-hockeyapp"></a>Monitorar com HockeyApp  
- Link de referência: **[Monitorar com HockeyApp](https://www.hockeyapp.net/features/)**  
+ Link de referência: **[Monitoramento com o HockeyApp](https://www.hockeyapp.net/features/)**  
   
 |Recurso|Tem suporte com o Xamarin|Comentários Adicionais|  
 |-------------|----------------------------|-------------------------|  

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a35630000c92e88c77039114313799b000d5ebbd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442445"
 ---
 # <a name="namedrange-control"></a>Controle NamedRange
   O <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é um intervalo que tem um nome exclusivo, expõe eventos e pode ser associado a dados. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
@@ -35,7 +35,7 @@ ms.locfileid: "56604113"
  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
->  Por padrão, criados dinamicamente intervalos nomeados não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Por padrão, criados dinamicamente intervalos nomeados não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  <xref:Microsoft.Office.Tools.Excel.NamedRange> controles somente podem consistir em intervalos de planilhas específicas. <xref:Microsoft.Office.Tools.Excel.NamedRange> controles não podem ter nomes relativos que se aplicam a todas as planilhas, e eles não podem consistir em intervalos que abrangem duas ou mais planilhas em uma pasta de trabalho (intervalos 3D).
 
@@ -55,21 +55,21 @@ ms.locfileid: "56604113"
 ## <a name="events"></a>Eventos
  Os eventos a seguir estão disponíveis para o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle:
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Change>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Deselected>
 
--   <xref:System.ComponentModel.Component.Disposed>
+- <xref:System.ComponentModel.Component.Disposed>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected>
 
--   <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
+- <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange>
 
 ## <a name="see-also"></a>Consulte também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)

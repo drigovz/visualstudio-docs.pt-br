@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0b5a95a4191a977144808bfb8888e282f7fce9
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 84874328c2f7a20a79370ff210eb51d966ec4648
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791650"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
@@ -59,7 +59,7 @@ Para obter informações sobre como acessar esta propriedade de forma programát
 
 Especifica a versão no .NET Framework que o aplicativo direciona. Essa opção pode ter valores diferentes dependendo de quais versões do .NET Framework estão instaladas em seu computador.
 
-O valor padrão corresponde à estrutura de destino especificada na caixa de diálogo **Novo projeto**.
+O valor padrão corresponde à estrutura de destino que você especificou quando criou o projeto.
 
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.

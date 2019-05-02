@@ -2,7 +2,6 @@
 title: IDebugApplicationThread110 Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 170b345bdb4587d1fd29c1f0f906df0157abd877
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: 44df7168c241c9a750354e1a603d6c5ba96dabd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440541"
 ---
 # <a name="idebugapplicationthread110-interface"></a>Interface IDebugApplicationThread110
 Fornece mais funcionalidade para o [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md) interface.  
   
 > [!IMPORTANT]
->  Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
+> Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  A interface `IDebugApplicationThread110` expõe os métodos a seguir.  

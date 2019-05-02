@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423208"
 ---
 # <a name="code-snippet-picker"></a>Seletor de snippet de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 O Editor de Códigos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece um **Seletor de Snippet de Código** que permite, com alguns cliques do mouse, inserir blocos de código prontos no documento ativo.  
   
  O procedimento para exibir o **Seletor de Snippet de Código** varia de acordo com a linguagem que você está usando.  
@@ -46,7 +45,7 @@ O Editor de Códigos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece 
   
 - SQL – Clique com o botão direito do mouse no local desejado no Editor de Códigos para exibir o menu de atalho e selecione **Inserir Snippet**.  
   
-  Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à **Lista de Pastas** que o **Seletor de Snippet de Código** examina em busca de arquivos de snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, consulte [Passo a passo: criando um snippet de código](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Na maioria das linguagens de desenvolvimento do Visual Studio, é possível usar o **Gerenciador de Snippets de Código** para adicionar pastas à **Lista de Pastas** que o **Seletor de Snippet de Código** examina em busca de arquivos de snippet XML. Você também pode criar seus próprios snippets para adicionar à lista. Para obter mais informações, confira [Passo a passo: Criando um trecho de código](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  Nome do Item  
@@ -59,4 +58,4 @@ O Editor de Códigos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece 
  [Melhores práticas para usar snippets de código](../../ide/best-practices-for-using-code-snippets.md)   
  [Snippets de código do Visual Basic IntelliSense](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Definindo indicadores no código](../../ide/setting-bookmarks-in-code.md)   
- [Como usar snippets de código Surround-with](../../ide/how-to-use-surround-with-code-snippets.md)
+ [Como: Usar snippets de código surround-with](../../ide/how-to-use-surround-with-code-snippets.md)

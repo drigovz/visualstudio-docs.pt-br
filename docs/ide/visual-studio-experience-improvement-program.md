@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbebdd92941fcc7873e59973303289a60496383f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a1e4f59b672049ee8148c94dbbf51e560e22c31e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581990"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Programa de Aperfeiçoamento da Experiência do Usuário do Visual Studio
 
@@ -25,14 +25,11 @@ O VSCEIP (Programa de Aperfeiçoamento da Experiência do Usuário do Visual Stu
 
 O VSCEIP está ativado por padrão. Você pode desligá-lo ou ativá-lo novamente seguindo estas instruções:
 
-1. Inicie o Visual Studio.
-
-1. No menu **Ajuda**, aponte para **Enviar Comentários** e, em seguida, selecione **Configurações**.
+1. No Visual Studio, escolha **Ajuda** > **Enviar Comentários** e selecione **Configurações**.
 
    A caixa de diálogo **Programa de Aperfeiçoamento da Experiência do Visual Studio** será aberta.
 
-1. Para recusar, selecione **Não, prefiro não participar** e, em seguida, selecione **OK**.
-   Para aceitar, selecione **Sim, desejo participar** e, em seguida, selecione **OK**.
+1. Para recusar, selecione **Não, prefiro não participar** e, em seguida, selecione **OK**. Para aceitar, selecione **Sim, desejo participar** e, em seguida, selecione **OK**.
 
    ![Caixa de diálogo Programa de Aperfeiçoamento da Experiência do Visual Studio](media/experience-improvement-program.png)
 
@@ -42,11 +39,26 @@ Se você instalar as [Ferramentas de Build do Visual Studio](https://visualstudi
 
 A chave do Registro e as configurações relevantes são as seguintes:
 
-Em um sistema operacional de 64 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**, em um sistema operacional de 32 bits, a chave é **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM** Quando a Política de Grupo está habilitada, a chave é **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+::: moniker range="vs-2017"
+
+- Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\15.0\SQM**
+- Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\15.0\SQM**
+- Quando a Política de Grupo está habilitada, Chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Em um sistema operacional de 64 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSCommon\16.0\SQM**
+- Em um sistema operacional de 32 bits, Chave = **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSCommon\16.0\SQM**
+- Quando a Política de Grupo está habilitada, Chave = **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM**
+
+::: moniker-end
 
 Entrada = **OptIn**
 
 Valor = (DWORD)
+
 - **0** é recusado (desligar o VSCEIP)
 - **1** é aceito (ativar o VSCEIP)
 
@@ -59,6 +71,6 @@ Para obter mais informações sobre as informações coletadas, processadas ou t
 
 * [Informações de diagnóstico coletadas pelo Visual Studio](diagnostic-data-collection.md)
 * [Fale conosco](../ide/talk-to-us.md)
-* [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio-2017.md)
+* [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)
 * [Comunidade de Desenvolvedores do Visual Studio](https://developercommunity.visualstudio.com/)
 * [Política de privacidade da Microsoft](https://privacy.microsoft.com/privacystatement)

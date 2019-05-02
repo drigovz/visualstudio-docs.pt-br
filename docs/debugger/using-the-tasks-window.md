@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b32dc6372a6ce4983e9bd11e05a4a662d0ad44ba
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54993004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901563"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>Usando a janela tarefas (C#, Visual Basic, C++)
 
@@ -68,7 +68,7 @@ As colunas na janela **Tarefas** mostram as informações a seguir.
  ![Menu de exibição de atalho na janela de tarefas](../debugger/media/parallel_tasks_contextmenu.png "Parallel_Tasks_ContextMenu")
 
 ## <a name="sorting-tasks"></a>Tarefas de classificação
- Para classificar as tarefas por critérios da coluna, clique no cabeçalho da coluna. Por exemplo, clicando o **ID** cabeçalho de coluna, você pode classificar as tarefas por ID da tarefa: E assim por diante. Para inverter a ordem de classificação, clique no cabeçalho da coluna novamente. A coluna e a ordem de classificação atuais estão indicadas por uma seta na coluna.
+ Para classificar as tarefas por critérios da coluna, clique no cabeçalho da coluna. Por exemplo, clicando o **ID** cabeçalho de coluna, você pode classificar as tarefas por ID da tarefa: 1,2,3,4,5 e assim por diante. Para inverter a ordem de classificação, clique no cabeçalho da coluna novamente. A coluna e a ordem de classificação atuais estão indicadas por uma seta na coluna.
 
 ## <a name="grouping-tasks"></a>Agrupando tarefas
  Você pode agrupar tarefas com base em qualquer coluna na exibição de lista. Por exemplo, ao clicar com o botão direito no cabeçalho da coluna **Status** e clicar em **Agrupar por**  > **[*Status*]**, você pode agrupar todas as tarefas que têm o mesmo status. Por exemplo, você pode ver rapidamente esperando tarefas para que você pode se concentrar em por que estão bloqueadas. Você também pode recolher um grupo que não é de interesse durante a sessão de depuração. Da mesma forma, você pode agrupar por outras colunas. Um grupo pode ser sinalizado ou ter a sinalização removida apenas clicando no botão ao lado do cabeçalho do grupo. A ilustração a seguir mostra a janela **Tarefas** no modo agrupado.

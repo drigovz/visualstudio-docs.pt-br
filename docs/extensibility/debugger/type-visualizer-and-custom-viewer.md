@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 219632bce50b6942d46e4061a3c7eaf8f70adfd5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864236"
 ---
 # <a name="type-visualizer-and-custom-viewer"></a>Visualizador de tipo e visualizador personalizado
 Um visualizador de tipo é um componente que exibe uma parte dos dados em um formato específico. O formato é totalmente até que implementa o visualizador, seja o usuário final ou um fornecedor de terceiros dos visualizadores.

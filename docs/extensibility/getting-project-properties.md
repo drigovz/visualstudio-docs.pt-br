@@ -1,6 +1,6 @@
 ---
 title: Obter propriedades do projeto | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 3/16/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - project properties, displaying in tool window
@@ -11,22 +11,24 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7344c94f12962d34b2f4c38b86e83b0cb6a5e588
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d6708759796639886d84a46003fbb894b988a714
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911955"
 ---
 # <a name="get-project-properties"></a>Obter propriedades do projeto
+
 Este passo a passo mostra como exibe as propriedades do projeto em uma janela de ferramenta.
 
 ## <a name="prerequisites"></a>Pré-requisitos
- A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
+
+A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ### <a name="to-create-a-vsix-project-and-add-a-tool-window"></a>Para criar um projeto VSIX e adicionar uma janela de ferramentas
 
-1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto do VSIX chamado `ProjectPropertiesExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c#** > **extensibilidade**.
+1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX, que irá conter os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projeto do VSIX chamado `ProjectPropertiesExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
 2. Adicionar uma janela de ferramentas, adicionando um modelo de item da janela de ferramenta personalizada denominado `ProjectPropertiesToolWindow`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **caixa de diálogo Adicionar Novo Item**, acesse **itens do Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da caixa de diálogo, altere o nome de arquivo para `ProjectPropertiesToolWindow.cs`. Para obter mais informações sobre como criar uma janela de ferramentas personalizada, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
@@ -34,7 +36,7 @@ Este passo a passo mostra como exibe as propriedades do projeto em uma janela de
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>Para exibir as propriedades do projeto em uma janela de ferramentas
 
-1.  No arquivo ProjectPropertiesToolWindowCommand.cs, adicione as seguintes instruções using.
+1. No arquivo ProjectPropertiesToolWindowCommand.cs, adicione as seguintes instruções using.
 
     ```csharp
     using EnvDTE;
@@ -42,9 +44,9 @@ Este passo a passo mostra como exibe as propriedades do projeto em uma janela de
 
     ```
 
-2.  Na *ProjectPropertiesToolWindowControl.xaml*, remova o botão existente e adicionar um modo de exibição de árvore da caixa de ferramentas. Você também pode remover o manipulador de eventos de clique a *ProjectPropertiesToolWindowControl.xaml.cs* arquivo.
+2. Na *ProjectPropertiesToolWindowControl.xaml*, remova o botão existente e adicionar um modo de exibição de árvore da caixa de ferramentas. Você também pode remover o manipulador de eventos de clique a *ProjectPropertiesToolWindowControl.xaml.cs* arquivo.
 
-3.  Na *ProjectPropertiesToolWindowCommand.cs*, use o `ShowToolWindow()` método para abrir o projeto e leia suas propriedades, em seguida, adicione as propriedades para o modo de exibição de árvore. O código para ShowToolWindow deve ser semelhante ao seguinte:
+3. Na *ProjectPropertiesToolWindowCommand.cs*, use o `ShowToolWindow()` método para abrir o projeto e leia suas propriedades, em seguida, adicione as propriedades para o modo de exibição de árvore. O código para ShowToolWindow deve ser semelhante ao seguinte:
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -91,10 +93,10 @@ Este passo a passo mostra como exibe as propriedades do projeto em uma janela de
     }
     ```
 
-4.  Compile o projeto e comece a depuração. A instância experimental deve aparecer.
+4. Compile o projeto e comece a depuração. A instância experimental deve aparecer.
 
-5.  Na instância experimental, abra um projeto.
+5. Na instância experimental, abra um projeto.
 
-6.  No **modo de exibição** > **Other Windows** clique em **ProjectPropertiesToolWindow**.
+6. No **modo de exibição** > **Other Windows** clique em **ProjectPropertiesToolWindow**.
 
-     Você deve ver o controle de árvore na janela da ferramenta junto com o nome do primeiro projeto e de todas as suas propriedades de projeto.
+  Você deve ver o controle de árvore na janela da ferramenta junto com o nome do primeiro projeto e de todas as suas propriedades de projeto.

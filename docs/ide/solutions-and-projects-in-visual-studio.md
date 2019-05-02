@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8302c517f28e32c154f688bd9f282070013f812
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d8373f13d3a7fc4280b383c534d0adba0b02a53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979635"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
@@ -64,7 +64,7 @@ O Visual Studio usa dois tipos de arquivos (*.sln* e *.suo*) para armazenar conf
 
 ## <a name="create-new-projects"></a>Criar novos projetos
 
-A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos são os que aparecem na caixa de diálogo **Novo Projeto** quando você escolhe **Arquivo** > **Novo** > **Projeto**. Para obter mais informações, confira [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
+A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos estão disponíveis na caixa de diálogo em que você cria um projeto (**Arquivo** > **Novo** > **Projeto**). Para obter mais informações, confira [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
 
 Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
 

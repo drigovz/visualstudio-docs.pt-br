@@ -1,14 +1,9 @@
 ---
 title: Inspeção e QuickWatch Windows | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.watch
 dev_langs:
@@ -28,13 +23,13 @@ ms.assetid: d5c18377-2a0e-4819-a645-407e24ccc58c
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: b171352475b6c0b3bc916d27ab4ba351e84be42b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51791664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444237"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Inspeção e QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,15 +54,15 @@ static void Main(string[] args)
   
  Você pode observar a uma variável na janela QuickWatch da seguinte maneira:  
   
-1.  Defina um ponto de interrupção a `a = a + b;` linha.  
+1. Defina um ponto de interrupção a `a = a + b;` linha.  
   
-2.  Inicie a depuração. Interrompe a execução no ponto de interrupção.  
+2. Inicie a depuração. Interrompe a execução no ponto de interrupção.  
   
-3.  Abrir o **QuickWatch** janela (com o botão direito em a, em seguida, escolha **depurar / QuickWatch**, ou **SHIFT + F9**). Você pode abrir a janela e adicionar a uma variável para o **expressão** janela, em seguida, clique em **reavaliar**. Você deve ver a uma variável na **valores** janela, com um valor de 2.  
+3. Abrir o **QuickWatch** janela (com o botão direito em a, em seguida, escolha **depurar / QuickWatch**, ou **SHIFT + F9**). Você pode abrir a janela e adicionar a uma variável para o **expressão** janela, em seguida, clique em **reavaliar**. Você deve ver a uma variável na **valores** janela, com um valor de 2.  
   
-4.  O **QuickWatch** janela é uma janela de caixa de diálogo modal, portanto, você não pode continuar a depuração, desde que ele está aberto. Você pode adicionar a variável para o **Watch** janela clicando **Adicionar inspeção**.  
+4. O **QuickWatch** janela é uma janela de caixa de diálogo modal, portanto, você não pode continuar a depuração, desde que ele está aberto. Você pode adicionar a variável para o **Watch** janela clicando **Adicionar inspeção**.  
   
-5.  Fechar o **QuickWatch** janela. Agora você pode continuar a depuração enquanto você observar o valor de **inspeção** janela  
+5. Fechar o **QuickWatch** janela. Agora você pode continuar a depuração enquanto você observar o valor de **inspeção** janela  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Observando as variáveis com a janela Inspeção  
  Você pode observar diversas variáveis com o **inspeção** janela. Por exemplo, se você tiver o seguinte código:  
@@ -117,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Atualizando valores de inspeção estão desatualizados  
+## <a name="bkmk_refreshWatch"></a> Atualizando valores de inspeção estão desatualizados  
  Em determinadas circunstâncias, você poderá ver um ícone de atualização (um círculo com duas setas, ou um círculo com duas linhas onduladas) quando uma expressão é avaliada na **inspeção** janela.  Por exemplo, se você tiver desativada de avaliação da propriedade (**Ferramentas / opções / depuração / habilitar a avaliação de propriedade e outras chamadas de função implícitas**), e você tem o código a seguir:  
   
 ```csharp  
@@ -148,7 +143,7 @@ static void Main(string[] args)
   
   Se você vir um ícone que é um círculo com duas linhas onduladas cordas, a expressão não foi avaliada devido à dependência potencial entre threads. Em outras palavras, a avaliar o código requer outros threads em seu aplicativo sejam executados temporariamente. Quando você está no modo de interrupção, todos os threads em seu aplicativo normalmente estão parados. Permitir que outros threads sejam executados temporariamente pode ter inesperado de efeitos sobre o estado do seu programa e faz com que o depurador ignorar eventos como pontos de interrupção e as exceções geradas nesses threads.  
   
-##  <a name="bkmk_sideEffects"></a> Efeitos colaterais e expressões  
+## <a name="bkmk_sideEffects"></a> Efeitos colaterais e expressões  
  Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliar a expressão a seguir altera o valor de `var1`:  
   
 ```  
@@ -167,7 +162,7 @@ var1 = var2
  Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável tiver saído do escopo. Em c# e Visual Basic, você pode criar IDs para instâncias específicas de tipos de referência de objeto e usá-los na janela de inspeção e em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
   
 > [!NOTE]
->  IDs de objeto criem referências fracas e não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.  
+> IDs de objeto criem referências fracas e não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.  
   
  No código a seguir cria um método de um `Person` usando uma variável local, mas você deseja descobrir o que o `Person`do nome está em um método diferente:  
   
@@ -207,20 +202,20 @@ public class Program
   
  Você pode adicionar uma referência a esse `Person` do objeto na **inspeção** janela da seguinte maneira:  
   
-1.  Defina um ponto de interrupção no código de algum tempo depois que o objeto foi criado.  
+1. Defina um ponto de interrupção no código de algum tempo depois que o objeto foi criado.  
   
-2.  Iniciar a depuração e quando a execução é interrompida no ponto de interrupção, localize a variável na **Locals** , clique duas vezes e selecione **criar ID de objeto**.  
+2. Iniciar a depuração e quando a execução é interrompida no ponto de interrupção, localize a variável na **Locals** , clique duas vezes e selecione **criar ID de objeto**.  
   
-3.  Você deve ver uma **$** além de um número no **locais** janela. Isso é a ID de objeto.  
+3. Você deve ver uma **$** além de um número no **locais** janela. Isso é a ID de objeto.  
   
-4.  Adicione a ID de objeto para a janela de observação.  
+4. Adicione a ID de objeto para a janela de observação.  
   
-5.  Defina um ponto de interrupção em que você deseja observar o comportamento do objeto.  No código acima, que seria no `DoSomething()` método.  
+5. Defina um ponto de interrupção em que você deseja observar o comportamento do objeto.  No código acima, que seria no `DoSomething()` método.  
   
-6.  Continuar a depuração, e quando a execução é interrompida na `DoSomething()` método, o **inspeção** janela exibe o `Person` objeto.  
+6. Continuar a depuração, e quando a execução é interrompida na `DoSomething()` método, o **inspeção** janela exibe o `Person` objeto.  
   
 > [!NOTE]
->  Se você deseja ver as propriedades do objeto, como `Person.Name` no exemplo acima, você deve habilitar avaliação de propriedade.  
+> Se você deseja ver as propriedades do objeto, como `Person.Name` no exemplo acima, você deve habilitar avaliação de propriedade.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Usando os registros na janela Watch (apenas C++)  
  Se você estiver depurando código nativo, você pode adicionar nomes de registro, como também os nomes de variáveis usando  **$ \<registrar nome >** ou  **@ \<registrar nome >**.  Para obter mais informações, consulte [pseudovariáveis](../debugger/pseudovariables.md).  
@@ -246,8 +241,3 @@ public class Program
   
 ## <a name="see-also"></a>Consulte também  
  [Janelas do depurador](../debugger/debugger-windows.md)
-
-
-
-
-

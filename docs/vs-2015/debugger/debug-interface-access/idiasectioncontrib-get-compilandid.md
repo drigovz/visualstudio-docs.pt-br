@@ -1,52 +1,42 @@
 ---
-title: 'Idiasectioncontrib:: Get_compilandid | Microsoft Docs'
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: IDiaSectionContrib::get_compilandId | Microsoft Docs
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSectionContrib::get_compilandId method
 ms.assetid: 71ef2e63-d095-42b6-88d8-626e3129f0d9
-caps.latest.revision: 12
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d61f929935d1ece7d2f22e946c073dc26d27d1a9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- multiple
+ms.openlocfilehash: 80a42cda74c5ca4bd2b5a4552787422b07b32287
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576640"
 ---
 # <a name="idiasectioncontribgetcompilandid"></a>IDiaSectionContrib::get_compilandId
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Recupera o identificador de compiland para a seção.
 
-Recupera o identificador de compiland para a seção.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_compilandId (   
-   DWORD* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna o identificador de compiland para a seção.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)
+## <a name="syntax"></a>Sintaxe
 
+```C++
+HRESULT get_compilandId ( 
+   DWORD* pRetVal
+);
+```
 
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
 
+[out] Retorna o identificador de compiland para a seção.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para essa propriedade. Caso contrário, retornará um código de erro.
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSectionContrib](../../debugger/debug-interface-access/idiasectioncontrib.md)

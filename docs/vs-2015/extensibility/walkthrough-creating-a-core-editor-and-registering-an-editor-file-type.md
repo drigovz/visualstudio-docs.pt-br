@@ -1,26 +1,21 @@
 ---
 title: 'Passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - walkthrough
 ms.assetid: 24d2bffd-a35c-46db-8515-fd60b884b7fb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1573709c7ef42e51454ca65103a6faeda78dcc1b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c791d991f797a9ccc581fa6d79b0400c17c84e0e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442267"
 ---
 # <a name="walkthrough-creating-a-core-editor-and-registering-an-editor-file-type"></a>Passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +28,25 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto de pacote do Visual Studio  
  O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes nos **novo projeto** caixa de diálogo:  
   
-1.  Sob a extensibilidade do Visual Basic. O idioma padrão do projeto é o Visual Basic.  
+1. Sob a extensibilidade do Visual Basic. O idioma padrão do projeto é o Visual Basic.  
   
-2.  Sob c# extensibilidade. O idioma padrão do projeto é c#.  
+2. Sob c# extensibilidade. O idioma padrão do projeto é c#.  
   
-3.  Em outra extensibilidade de tipos de projeto. O idioma padrão do projeto é C++.  
+3. Em outra extensibilidade de tipos de projeto. O idioma padrão do projeto é C++.  
   
 ### <a name="to-create-the-vspackage"></a>Para criar o VSPackage  
   
--   Inicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e crie um [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage nomeado `MyPackage`, conforme descrito na [passo a passo: Criando um VSPackage de comando de Menu](http://msdn.microsoft.com/en-us/d699c149-5d1e-47ff-94c7-e1222af02c32).  
+- Inicie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e crie um [!INCLUDE[csprcs](../includes/csprcs-md.md)] VSPackage nomeado `MyPackage`, conforme descrito na [passo a passo: Criar um VSPackage de comando de Menu](http://msdn.microsoft.com/d699c149-5d1e-47ff-94c7-e1222af02c32).  
   
 ### <a name="to-add-the-editor-factory"></a>Para adicionar a fábrica do editor  
   
-1.  Clique com botão direito do **MyPackage** do projeto, aponte para **Add** e, em seguida, clique em **classe**.  
+1. Clique com botão direito do **MyPackage** do projeto, aponte para **Add** e, em seguida, clique em **classe**.  
   
-2.  No **Adicionar Novo Item** diálogo caixa, certifique-se a **classe** modelo é selecionado, tipo `EditorFactory.cs` para o nome e, em seguida, clique **Add** para adicionar a classe ao seu projeto.  
+2. No **Adicionar Novo Item** diálogo caixa, certifique-se a **classe** modelo é selecionado, tipo `EditorFactory.cs` para o nome e, em seguida, clique **Add** para adicionar a classe ao seu projeto.  
   
      O arquivo EditorFactory.cs deve ser aberto automaticamente.  
   
-3.  Referencie os seguintes assemblies do seu código.  
+3. Referencie os seguintes assemblies do seu código.  
   
     ```vb  
     Imports System.Runtime.InteropServices  
@@ -74,7 +69,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
     ```  
   
-4.  Adicionar um GUID para o `EditorFactory` classe adicionando o `Guid` atributo imediatamente antes da declaração de classe.  
+4. Adicionar um GUID para o `EditorFactory` classe adicionando o `Guid` atributo imediatamente antes da declaração de classe.  
   
      Você pode gerar um novo GUID usando o programa guidgen.exe na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prompt de comando, ou clicando em **criar GUID** no **ferramentas** menu. O GUID usado aqui é apenas um exemplo; não usá-lo em seu projeto.  
   
@@ -86,7 +81,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
     [Guid("0eea3187-c5fa-48d4-aa72-b5eecd3b17b1")]   
     ```  
   
-5.  Na definição de classe, adicione duas variáveis particulares para conter o pacote pai e um provedor de serviços.  
+5. Na definição de classe, adicione duas variáveis particulares para conter o pacote pai e um provedor de serviços.  
   
     ```vb  
     Class EditorFactory  
@@ -103,7 +98,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
     ```  
   
-6.  Adicione um construtor de classe pública que assume um parâmetro de tipo <xref:Microsoft.VisualStudio.Shell.Package>:  
+6. Adicione um construtor de classe pública que assume um parâmetro de tipo <xref:Microsoft.VisualStudio.Shell.Package>:  
   
     ```vb  
     Public Sub New(ByVal parentPackage As Package)  
@@ -118,7 +113,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
     }  
     ```  
   
-7.  Modificar a `EditorFactory` declaração derivar de classe a <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.  
+7. Modificar a `EditorFactory` declaração derivar de classe a <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.  
   
     ```vb  
     Class EditorFactory Implements IVsEditorFacto  
@@ -129,7 +124,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
     ```  
   
-8.  Clique com botão direito <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, clique em **implementar Interface**e, em seguida, clique em **implementar Interface explicitamente**.  
+8. Clique com botão direito <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>, clique em **implementar Interface**e, em seguida, clique em **implementar Interface explicitamente**.  
   
      Isso adiciona os quatro métodos que devem ser implementados no <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.  
   
@@ -325,20 +320,20 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
 ### <a name="to-register-the-editor-factory"></a>Para registrar a fábrica do editor  
   
-1.  Na **Gerenciador de soluções**, clique duas vezes no arquivo Resources dll para abri-lo à tabela de cadeia de caracteres, em que a entrada **String1 é** selecionado.  
+1. Na **Gerenciador de soluções**, clique duas vezes no arquivo Resources dll para abri-lo à tabela de cadeia de caracteres, em que a entrada **String1 é** selecionado.  
   
-2.  Altere o nome do identificador para `IDS_EDITORNAME` e o texto a ser **MyPackage Editor.** Essa cadeia de caracteres será exibido como o nome do seu editor.  
+2. Altere o nome do identificador para `IDS_EDITORNAME` e o texto a ser **MyPackage Editor.** Essa cadeia de caracteres será exibido como o nome do seu editor.  
   
-3.  Abra o arquivo VSPackage.resx e adicione uma nova cadeia de caracteres, defina o nome como **101** e o valor a ser `IDS_EDITORNAME`. Isso fornece uma ID de recurso para acessar a cadeia de caracteres que você acabou de criar o pacote.  
+3. Abra o arquivo VSPackage.resx e adicione uma nova cadeia de caracteres, defina o nome como **101** e o valor a ser `IDS_EDITORNAME`. Isso fornece uma ID de recurso para acessar a cadeia de caracteres que você acabou de criar o pacote.  
   
     > [!NOTE]
-    >  Se o arquivo VSPackage.resx contém outra cadeia de caracteres que o `name` atributo definido como **101**, substitua a outro valor numérico, exclusivo, aqui e nas etapas a seguir.  
+    > Se o arquivo VSPackage.resx contém outra cadeia de caracteres que o `name` atributo definido como **101**, substitua a outro valor numérico, exclusivo, aqui e nas etapas a seguir.  
   
-4.  Na **Gerenciador de soluções**, abra o arquivo MyPackagePackage.cs.  
+4. Na **Gerenciador de soluções**, abra o arquivo MyPackagePackage.cs.  
   
      Esse é o arquivo de pacote principal.  
   
-5.  Adicione os seguintes atributos de usuário antes de `Guid` atributo.  
+5. Adicione os seguintes atributos de usuário antes de `Guid` atributo.  
   
     ```vb  
     <ProvideEditorFactoryAttribute(GetType(EditorFactory), 101)> _  
@@ -354,7 +349,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
      O <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> atributo associa a extensão de arquivo .myext sua fábrica de editor para que sempre que um arquivo com que a extensão será carregada, sua fábrica de editor é invocada.  
   
-6.  Adicione uma variável particular para o `MyPackage` classe, logo antes do construtor e dê a ele o tipo `EditorFactory`.  
+6. Adicione uma variável particular para o `MyPackage` classe, logo antes do construtor e dê a ele o tipo `EditorFactory`.  
   
     ```vb  
     Private editorFactory As EditorFactory  
@@ -364,7 +359,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
     private EditorFactory editorFactory;  
     ```  
   
-7.  Localizar o `Initialize` método (talvez você precise abrir o `Package Members` região oculta) e adicione o seguinte código após a chamada para `base.Initialize()`.  
+7. Localizar o `Initialize` método (talvez você precise abrir o `Package Members` região oculta) e adicione o seguinte código após a chamada para `base.Initialize()`.  
   
     ```vb  
     'Create our editor factory and register it.   
@@ -379,7 +374,7 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
   
     ```  
   
-8.  Compile o programa e verifique se que não existem erros.  
+8. Compile o programa e verifique se que não existem erros.  
   
      Esta etapa registra a fábrica do editor no hive do registro experimental para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Se você for solicitado a substituir o arquivo Resource h, clique em **Okey**.  
   
@@ -403,4 +398,3 @@ Este passo a passo demonstra como criar um VSPackage que inicia o [!INCLUDE[vspr
 ## <a name="see-also"></a>Consulte também  
  [Dentro do Editor de núcleo](../extensibility/inside-the-core-editor.md)   
  [Criando uma instância do editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)
-

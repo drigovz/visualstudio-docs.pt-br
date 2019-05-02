@@ -1,14 +1,9 @@
 ---
 title: Anotando estruturas e Classes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - _Field_size_bytes_part_
 - _Field_size_bytes_full_opt_
@@ -28,13 +23,13 @@ ms.assetid: b8278a4a-c86e-4845-aa2a-70da21a1dd52
 caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 965a823c658516edf247f6a99d23d189097b31f0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: df2e75bb3dd01d051d8fed29748e499f8f620128
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801455"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075383"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,23 +38,23 @@ Você pode anotar os membros de classe e struct usando anotações que atuam com
   
 ## <a name="struct-and-class-annotations"></a>Anotações de classe e struct  
   
--   `_Field_range_(low, high)`  
+- `_Field_range_(low, high)`  
   
      O campo está no intervalo (inclusivo) de `low` para `high`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= high)` aplicado ao objeto anotado usando as condições apropriadas de pré ou pós-implantação.  
   
--   `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
+- `_Field_size_(size)`, `_Field_size_opt_(size)`, `_Field_size_bytes_(size)`, `_Field_size_bytes_opt_(size)`  
   
      Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`.  
   
--   `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`  
   
      Um campo que tem um tamanho gravável em elementos (ou bytes) como especificado pelo `size`e o `count` desses elementos (bytes) que são legíveis.  
   
--   `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
+- `_Field_size_full_(size)`, `_Field_size_full_opt_(size)`, `_Field_size_bytes_full_(size)`, `_Field_size_bytes_full_opt_(size)`  
   
      Um campo que tem o tamanho legível e gravável em elementos (ou bytes) como especificado pelo `size`.  
   
--   `_Struct_size_bytes_(size)`  
+- `_Struct_size_bytes_(size)`  
   
      Um campo que tem o tamanho legível e gravável em elementos (ou bytes) como especificado pelo `size`.  
   
@@ -90,6 +85,3 @@ Você pode anotar os membros de classe e struct usando anotações que atuam com
  [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)   
  [Funções intrínsecas](../code-quality/intrinsic-functions.md)   
  [Práticas recomendadas e exemplos](../code-quality/best-practices-and-examples-sal.md)
-
-
-

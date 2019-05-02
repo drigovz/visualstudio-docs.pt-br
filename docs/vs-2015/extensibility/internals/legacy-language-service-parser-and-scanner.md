@@ -1,27 +1,22 @@
 ---
 title: Analisador de serviço de linguagem herdada e Scanner | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fd419c569a298afd37548fd7b85a23cad733e371
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 64f9a9f4d0785f033191ab527084f0dddb1ff104
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434370"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ namespace MyNamespace
   
 |Nome do token|Tipo de token|  
 |----------------|----------------|  
-|namespace, void público, de classe, int|keyword|  
+|namespace, class, public, void, int|keyword|  
 |=|operator|  
 |{ } ( ) ;|delimitador|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|identifier|  
@@ -73,7 +68,7 @@ namespace MyNamespace
  Ao contrário de um analisador que é usado como parte de um compilador (no qual os tokens são convertidos em alguma forma de código executável), um analisador de serviço de linguagem pode ser chamado por muitas razões diferentes e em muitos contextos diferentes. Como você pode implementar essa abordagem na <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe cabe a você. É importante ter em mente que o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método pode ser chamado em um thread em segundo plano.  
   
 > [!CAUTION]
->  O <xref:Microsoft.VisualStudio.Package.ParseRequest> estrutura contém uma referência para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Isso <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto não pode ser usado no thread de segundo plano. Na verdade, muitas das classes base MPF não podem ser usadas no thread de segundo plano. Isso inclui o <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes e qualquer outra classe que direta ou indiretamente se comunica com o modo de exibição.  
+> O <xref:Microsoft.VisualStudio.Package.ParseRequest> estrutura contém uma referência para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Isso <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto não pode ser usado no thread de segundo plano. Na verdade, muitas das classes base MPF não podem ser usadas no thread de segundo plano. Isso inclui o <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes e qualquer outra classe que direta ou indiretamente se comunica com o modo de exibição.  
   
  Esse analisador normalmente analisa a hora do arquivo a primeira de origem inteira ele é chamado ou quando a análise motivo, o valor de <xref:Microsoft.VisualStudio.Package.ParseReason> é fornecido. As chamadas subsequentes para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método lidar com uma pequena parte do código analisado e pode ser executado muito mais rapidamente, usando os resultados da operação de análise completa anterior. O <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método comunica os resultados da operação de análise por meio de <xref:Microsoft.VisualStudio.Package.AuthoringSink> e <xref:Microsoft.VisualStudio.Package.AuthoringScope> objetos. O <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto é usado para coletar informações por um motivo específico de análise, por exemplo, informações sobre os intervalos de chaves ou assinaturas de método que possuem listas de parâmetros correspondentes. O <xref:Microsoft.VisualStudio.Package.AuthoringScope> fornece coleções de declarações e assinaturas de método e também suporte para ir para avançada opção Editar (**ir para definição**, **ir para declaração**, **ir para Fazer referência a**).  
   
@@ -87,29 +82,29 @@ namespace MyNamespace
   
  Suponha que o serviço de linguagem dá suporte a chaves correspondentes.  
   
-1.  O usuário digita uma chave de fechamento (}).  
+1. O usuário digita uma chave de fechamento (}).  
   
-2.  A chave de abertura é inserido na posição do cursor no arquivo de origem e o cursor é avançado por um.  
+2. A chave de abertura é inserido na posição do cursor no arquivo de origem e o cursor é avançado por um.  
   
-3.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe é chamada com a chave de fechamento tipado.  
+3. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe é chamada com a chave de fechamento tipado.  
   
-4.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token na posição apenas antes da posição atual do cursor. Esse token corresponde da chave de fechamento tipada).  
+4. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token na posição apenas antes da posição atual do cursor. Esse token corresponde da chave de fechamento tipada).  
   
-    1.  O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obter todos os tokens na linha atual.  
+    1. O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método no <xref:Microsoft.VisualStudio.Package.Colorizer> objeto para obter todos os tokens na linha atual.  
   
-    2.  O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto com o texto da linha atual.  
+    2. O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto com o texto da linha atual.  
   
-    3.  O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> repetidamente o método chama o <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto para reunir todos os tokens a partir da linha atual.  
+    3. O <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> repetidamente o método chama o <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> método no <xref:Microsoft.VisualStudio.Package.IScanner> objeto para reunir todos os tokens a partir da linha atual.  
   
-    4.  O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método chama um método particular em de <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token que contém a posição desejada e passa na lista de tokens obtidos do <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.  
+    4. O <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método chama um método particular em de <xref:Microsoft.VisualStudio.Package.Source> classe para obter o token que contém a posição desejada e passa na lista de tokens obtidos do <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> método.  
   
-5.  O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método procura um sinalizador de token de gatilho de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token que é retornado o <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; ou seja, o token que representa a chave de fechamento).  
+5. O <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> método procura um sinalizador de token de gatilho de <xref:Microsoft.VisualStudio.Package.TokenTriggers> no token que é retornado o <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> método; ou seja, o token que representa a chave de fechamento).  
   
-6.  Se o gatilho do sinalizador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> for encontrado, o <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método o <xref:Microsoft.VisualStudio.Package.Source> classe é chamada.  
+6. Se o gatilho do sinalizador de <xref:Microsoft.VisualStudio.Package.TokenTriggers> for encontrado, o <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método o <xref:Microsoft.VisualStudio.Package.Source> classe é chamada.  
   
-7.  O <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia uma operação de análise com o valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Essa operação, por fim, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se a análise assíncrono está habilitado, essa chamada para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método ocorre em um thread em segundo plano.  
+7. O <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> método inicia uma operação de análise com o valor de motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Essa operação, por fim, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Se a análise assíncrono está habilitado, essa chamada para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método ocorre em um thread em segundo plano.  
   
-8.  Quando a operação de análise for concluída, um manipulador de conclusão interno (também conhecido como um método de retorno de chamada) chamado `HandleMatchBracesResponse` é chamado no <xref:Microsoft.VisualStudio.Package.Source> classe. Essa chamada é feita automaticamente pelo <xref:Microsoft.VisualStudio.Package.LanguageService> base classe, não pelo analisador.  
+8. Quando a operação de análise for concluída, um manipulador de conclusão interno (também conhecido como um método de retorno de chamada) chamado `HandleMatchBracesResponse` é chamado no <xref:Microsoft.VisualStudio.Package.Source> classe. Essa chamada é feita automaticamente pelo <xref:Microsoft.VisualStudio.Package.LanguageService> base classe, não pelo analisador.  
   
 9. O `HandleMatchBracesResponse` método obtém uma lista de intervalos da <xref:Microsoft.VisualStudio.Package.AuthoringSink> que é armazenado no objeto o <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto. (Um alcance é um <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> estrutura que especifica um intervalo de linhas e os caracteres no arquivo de origem.) Esta lista de intervalos geralmente contém dois intervalos, cada um para as chaves de abertura e fechamento.  
   
@@ -143,4 +138,3 @@ namespace MyNamespace
  [Visão geral do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-overview.md)   
  [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)   
  [Correspondência de chave em um serviço de linguagem herdado](../../extensibility/internals/brace-matching-in-a-legacy-language-service.md)
-

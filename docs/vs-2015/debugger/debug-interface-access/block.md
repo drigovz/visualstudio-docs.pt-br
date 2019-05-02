@@ -1,14 +1,9 @@
 ---
 title: Bloco | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,13 +14,13 @@ ms.assetid: 95b7b0c1-ecc9-405f-8456-5f9cfb866498
 caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 589c4f5a95a74be184cd047bf3ed66f5a4258674
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 84ef374a54470685dcfc0985f79fd2182513a3a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580473"
 ---
 # <a name="block"></a>Bloco
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,6 +48,3 @@ Cada bloco de código é identificado por um `SymTagBlock` símbolo. Símbolos d
  [Hierarquia lexical de tipos de símbolo](../../debugger/debug-interface-access/lexical-hierarchy-of-symbol-types.md)   
  [Enumeração LocationType](../../debugger/debug-interface-access/locationtype.md)   
  [Locais de símbolos](../../debugger/debug-interface-access/symbol-locations.md)
-
-
-

@@ -12,37 +12,37 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0beb86e3cb939a33a6b0fab3922b2a31a88a3307
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439249"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Como alterar o caso de texto no editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Como: Alterar maiusculas e minúsculas do texto no Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar comandos de menu ou atalhos de teclado para converter o padrão de maiúsculas e minúsculas do texto selecionado e deixar todas as letras maiúsculas ou todas as letras minúsculas.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedimento  
   
 #### <a name="to-switch-text-to-upper-case"></a>Para mudar o texto para letras maiúsculas  
   
-1.  Selecione o texto que deseja converter.  
+1. Selecione o texto que deseja converter.  
   
-2.  No menu **Editar**, selecione **Avançado**.  
+2. No menu **Editar**, selecione **Avançado**.  
   
-3.  Para converter texto e deixar todas as letras maiúsculas, escolha **Converter em Maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.  
+3. Para converter texto e deixar todas as letras maiúsculas, escolha **Converter em Maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.  
   
      – ou —  
   
      Para converter texto e deixar todas as letras minúsculas, escolha **Converter em Minúsculas** ou pressione **CTRL**+**U**.  
   
     > [!TIP]
-    >  Para reverter para a formatação anterior antes dessa alteração, selecione **Desfazer** no menu **Editar**.  
+    > Para reverter para a formatação anterior antes dessa alteração, selecione **Desfazer** no menu **Editar**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando o editor](../ide/customizing-the-editor.md)   

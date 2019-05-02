@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee61f388da8098c20c65be8859b336c1ab86bebd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910644"
 ---
 # <a name="add-project-and-project-item-templates"></a>Adicione o projeto e modelos de item de projeto
 Quando você cria seus próprios tipos de projeto, você deve fornecer suporte para adição de novos projetos e itens de projeto usando o padrão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] integrado caixas de diálogo (IDE) do ambiente de desenvolvimento. Os tópicos a seguir discutem as técnicas diferentes para adicionar projetos e itens de projeto.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603164"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446562"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Como: Excluir arquivos do build
 Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios como entradas para um build. No entanto, pode haver um arquivo no diretório ou um diretório em um conjunto aninhado de diretórios que você não deseja incluir como entrada para um build. Você pode excluir explicitamente esse arquivo ou diretório da lista de entradas. Também pode haver um arquivo em um projeto que você deseja incluir somente em determinadas condições. Você pode declarar explicitamente as condições sob as quais um arquivo é incluído em um build.
@@ -36,7 +36,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Para incluir todos os arquivos *.cs* ou *.vb*, exceto *Form2*
 
--   Use um dos atributos `Include` e `Exclude` a seguir:
+- Use um dos atributos `Include` e `Exclude` a seguir:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Para incluir todos os arquivos *.cs* ou *.vb*, exceto *Form2* e *Form3*
 
--   Use um dos atributos `Include` e `Exclude` a seguir:
+- Use um dos atributos `Include` e `Exclude` a seguir:
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Para incluir todos os arquivos *.jpg* em subdiretórios do diretório *Images*, exceto aqueles no diretório *Version2*
 
--   Use os atributos `Include` e `Exclude` a seguir:
+- Use os atributos `Include` e `Exclude` a seguir:
 
     ```xml
     <JPGFile
@@ -73,14 +73,14 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     ```
 
     > [!NOTE]
-    >  Você deve especificar o caminho para os dois atributos. Se você usar um caminho absoluto para especificar locais de arquivo no atributo `Include`, também é necessário usar um caminho absoluto no atributo `Exclude`. Se você usar um caminho relativo no atributo `Include`, também deverá usar um caminho relativo no atributo `Exclude`.
+    > Você deve especificar o caminho para os dois atributos. Se você usar um caminho absoluto para especificar locais de arquivo no atributo `Include`, também é necessário usar um caminho absoluto no atributo `Exclude`. Se você usar um caminho relativo no atributo `Include`, também deverá usar um caminho relativo no atributo `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Usar condições para excluir um arquivo ou um diretório das entradas para um build
  Se houver itens que você deseja incluir, por exemplo, em um build de depuração, mas não em um build de versão, você poderá usar o atributo `Condition` para especificar as condições sob as quais o item será incluído.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Para incluir o arquivo *Formula.vb* somente em builds de Versão
 
--   Use um atributo `Condition` semelhante ao seguinte:
+- Use um atributo `Condition` semelhante ao seguinte:
 
     ```xml
     <Compile
@@ -100,7 +100,7 @@ Em um arquivo de projeto, você pode usar curingas para incluir todos os arquivo
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

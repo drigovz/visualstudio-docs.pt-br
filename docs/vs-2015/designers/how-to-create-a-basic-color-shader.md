@@ -9,27 +9,27 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 59259d8186803d966e79f27012e6be6c22b47dd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414716"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Como criar um sombreador de cor básico
+# <a name="how-to-create-a-basic-color-shader"></a>Como: Criar um sombreador de cores básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed Graph Shader Language) para criar um sombreador de cor simples. Esse sombreador define a cor final em um valor de cor RGB constante.  
   
  Este documento demonstra essas atividades:  
   
--   Remover nós de um grafo  
+- Remover nós de um grafo  
   
--   Adicionar nós a um grafo  
+- Adicionar nós a um grafo  
   
--   Configurar propriedades de nó  
+- Configurar propriedades de nó  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="creating-a-flat-color-shader"></a>Criar um sombreador de cor simples  
  Você pode implementar um sombreador de cor simples gravando o valor de cor de uma constante de cor RGB na cor de saída final.  
@@ -51,7 +51,7 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um cubo.  
   
 > [!NOTE]
->  Na ilustração foi especificada uma cor laranja para demonstrar melhor o efeito do sombreador.  
+> Na ilustração foi especificada uma cor laranja para demonstrar melhor o efeito do sombreador.  
   
  ![Grafo de sombreador e seu resultado em um modelo 3D](../designers/media/digit-flat-color-effect.png "Digit-Flat-Color-Effect")  
   
@@ -59,6 +59,6 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

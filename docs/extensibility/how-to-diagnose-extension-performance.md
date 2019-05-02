@@ -8,12 +8,12 @@ ms.author: bertaygu
 manager: jillfra
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 2d9337b443fdaabe713f1708b2be9051c2f02b3c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3d8fb5de23cbc4664ea322a9149653598956aed7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863266"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>Medindo o impacto de extensão na inicialização
 
@@ -74,11 +74,11 @@ Usando o carregamento do pacote assíncrono e APIs de e/s assíncronas deve ter 
 
 Um dos padrões comuns na inicialização do pacote é inicializar serviços usados pelo ou fornecido por esse pacote no pacote `constructor` ou `initialize` método. Enquanto isso garante que serviços estão prontos para serem usados, também é possível adicionar um custo desnecessário para empacotar o carregamento se esses serviços não são usados imediatamente. Em vez disso, esses serviços devem ser inicializados sob demanda para minimizar o trabalho feito na inicialização do pacote.
 
-Para serviços globais fornecidos por um pacote, você pode usar `AddService` métodos que usam uma função lentamente inicializar o serviço apenas quando ele é solicitado por um componente. Para serviços usados dentro do pacote, você pode usar Lazy<T> ou AsyncLazy<T> para certificar-se de que os serviços são inicializados/consultada no primeiro uso.
+Para serviços globais fornecidos por um pacote, você pode usar `AddService` métodos que usam uma função lentamente inicializar o serviço apenas quando ele é solicitado por um componente. Para serviços usados dentro do pacote, você pode usar Lazy\<T > ou AsyncLazy\<T > para certificar-se de que os serviços são inicializados/consultada no primeiro uso.
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>Medir o impacto de auto carregado extensões usando o log de atividades
 
-A partir do Visual Studio 2017 atualização 3, log de atividades do Visual Studio agora contém entradas para o impacto no desempenho de pacotes durante o carregamento de solução e de inicialização. Para ver essas medidas, você precisa iniciar o Visual Studio com o parâmetro /log e abra *activitylog. XML* arquivo.
+A partir do Visual Studio 2017 atualização 3, log de atividades do Visual Studio agora contém entradas para o impacto no desempenho de pacotes durante o carregamento de solução e de inicialização. Para ver essas medidas, você precisa abrir o Visual Studio com o parâmetro /log e abra *activitylog. XML* arquivo.
 
 No log de atividades, as entradas estarão em fonte "Gerenciar desempenho do Visual Studio" em se parecerá com o exemplo a seguir:
 
@@ -141,9 +141,9 @@ Depois que você configurar seu ambiente do Visual Studio com a sua extensão in
 
 ![menu de coletar do perfview](media/perfview-collect-menu.png)
 
-As opções padrão fornecerá as pilhas de chamadas para o consumo de CPU, mas já que estamos interessados em tempo de bloqueio, bem, você também deve habilitar **tempo de Thread** pilhas. Depois que as configurações estiverem prontas que você pode clicar em **iniciar coleta** e inicie o Visual Studio depois que a gravação é iniciada.
+As opções padrão fornecerá as pilhas de chamadas para o consumo de CPU, mas já que estamos interessados em tempo de bloqueio, bem, você também deve habilitar **tempo de Thread** pilhas. Depois que as configurações estiverem prontas, você pode clicar em **iniciar coleta** e, em seguida, abra o Visual Studio após a gravação começa.
 
-Antes de parar a coleta, convém certificar-se de que o Visual Studio está totalmente inicializado, a janela principal está completamente visível e se sua extensão tem alguma interface do usuário que mostram automaticamente, eles também são visíveis. Depois que o Visual Studio é completamente carregado e sua extensão é inicializada, você pode interromper a gravação para analisar o rastreamento.
+Antes de parar a coleta, convém certificar-se de que o Visual Studio está totalmente inicializado, a janela principal está completamente visível e se sua extensão tem alguma interface do usuário que mostram automaticamente, eles também são visíveis. Quando o Visual Studio é completamente carregado e sua extensão é inicializada, você pode interromper a gravação para analisar o rastreamento.
 
 **Analisando um rastreamento com PerfView:**
 

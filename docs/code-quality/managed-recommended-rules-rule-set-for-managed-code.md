@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c07471290756acc74289a552fcafde746c020e71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823537"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de regras recomendadas gerenciado para código gerenciado
 Você pode usar a Microsoft Managed recomendado conjunto de regras para enfocar os problemas mais críticos no seu código gerenciado, inclusive falhas potenciais de segurança, falhas do aplicativo e outros erros importantes de lógica e design. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que você cria para seus projetos.

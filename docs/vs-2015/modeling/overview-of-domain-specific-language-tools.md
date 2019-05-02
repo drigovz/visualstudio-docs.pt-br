@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568350"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Visão geral das Ferramentas de Linguagem Específica do Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ As Ferramentas DSL (Ferramentas de Linguagem Específica de Domínio), que são 
   
  As ferramentas a seguir estão incluídas nas Ferramentas DSL:  
   
--   um assistente de projeto que usa modelos de solução diferentes para ajudá-lo a começar a desenvolver sua linguagem específica de domínio.  
+- um assistente de projeto que usa modelos de solução diferentes para ajudá-lo a começar a desenvolver sua linguagem específica de domínio.  
   
--   um designer gráfico para criar e editar sua definição de linguagem específica de domínio.  
+- um designer gráfico para criar e editar sua definição de linguagem específica de domínio.  
   
--   um mecanismo de validação que verifica se a definição de linguagem específica de domínio está bem formada e exibe erros e avisos quando há problemas.  
+- um mecanismo de validação que verifica se a definição de linguagem específica de domínio está bem formada e exibe erros e avisos quando há problemas.  
   
--   um gerador de código que usa uma definição de linguagem específica de domínio como entrada e produz o código-fonte como saída.  
+- um gerador de código que usa uma definição de linguagem específica de domínio como entrada e produz o código-fonte como saída.  
   
 ## <a name="the-dsl-tools-solution"></a>A solução de Ferramentas DSL  
  O Assistente de Designer Específico de Domínio fornece os seguintes modelos de solução:  

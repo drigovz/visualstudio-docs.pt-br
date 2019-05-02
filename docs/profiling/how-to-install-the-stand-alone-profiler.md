@@ -11,34 +11,34 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26d28825d03c6deeeaa0ee33ccf62620398e1d52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ac7a0ace5c4d6e31516d372baabec9883603300
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426838"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Como: Instalar o criador de perfil autônomo
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece uma linha de comando baseada no criador de perfil autônomo que pode ser executado sem instalar o IDE [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Essa situação ocorre quando um computador não tiver ou não puder ter um ambiente de desenvolvimento instalado. Por exemplo, você não deve instalar um ambiente de desenvolvimento em um servidor Web de produção.
 
 > [!NOTE]
->  Quando você está usando o criador de perfil autônomo para coletar dados de desempenho para um site ASP.NET, a ferramenta de linha de comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) é recomendada em vez da [VSPerfCmd](../profiling/vsperfcmd.md).
+> Quando você está usando o criador de perfil autônomo para coletar dados de desempenho para um site ASP.NET, a ferramenta de linha de comando [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) é recomendada em vez da [VSPerfCmd](../profiling/vsperfcmd.md).
 
 ### <a name="to-install-the-stand-alone-profiler"></a>Para instalar o criador de perfil autônomo
 
-1. Baixe as [Ferramentas de Desempenho do Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio-2017).
+1. Baixe as [Ferramentas de Desempenho do Visual Studio](https://visualstudio.microsoft.com/downloads/?q=performance+tools#performance-tools-for-visual-studio).
 
 1. Localize o instalador do perfil independente (*vs_standaloneprofiler.exe*) no qual você baixou as ferramentas de desempenho e execute-o.
 
 2. Adicione os caminhos para *vsintr.exe* e *msdis150.dll* ao caminho do sistema.
 
    > [!NOTE]
-   >  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+   > Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
 3. No prompt de comando, digite **VSInstr**.
 
    > [!NOTE]
-   >  Se as informações de uso para vsinstr.exe forem exibidas, tudo está configurado corretamente. Se você vir um erro que afirme vsinstr.exe ou uma de suas dependências não for encontrada, certifique-se de que você tenha seus caminhos configurados corretamente, conforme descrito na etapa 2.
+   > Se as informações de uso para vsinstr.exe forem exibidas, tudo está configurado corretamente. Se você vir um erro que afirme vsinstr.exe ou uma de suas dependências não for encontrada, certifique-se de que você tenha seus caminhos configurados corretamente, conforme descrito na etapa 2.
 
 4. Configure o servidor de símbolos definindo sua variável **NT_SYMBOL_PATH** como **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**
 
@@ -47,7 +47,7 @@ ms.locfileid: "56612771"
     **start %COMSPEC%**
 
    > [!NOTE]
-   >  Para obter instruções detalhadas sobre como configurar o pacote do servidor de símbolos, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).
+   > Para obter instruções detalhadas sobre como configurar o pacote do servidor de símbolos, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 6. Use a ferramenta [VSPerfReport](../profiling/vsperfreport.md) para serializar os símbolos no arquivo de dados (.vsp) de criação de perfil. Use a opção **VSPerfReport /summary:all /packsymbols**. Se você não tiver símbolos inseridos no arquivo de dados, certifique-se de que tenha o conjunto de variáveis de ambiente NT_SYMBOL_PATH.
 

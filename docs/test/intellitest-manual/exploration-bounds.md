@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: e5ee5d3e05af407f3011111e1dcad84487dd81fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ffa6908fe759f33ad1e82f2fd44975d6731cdf16
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978543"
 ---
 # <a name="exploration-bounds"></a>Limites de exploração
 
@@ -29,17 +29,17 @@ public partial class FooTest {...}
 
 * **Limites de resolução de restrição**
   * [MaxConstraintSolverTime](#maxconstraintsolvertime) – o número de segundos que o [solver de restrição](input-generation.md#constraint-solver) tem para descobrir entradas que farão com que um caminho de execução novo e diferente seja seguido.
-  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) – o tamanho em megabytes que o [solver de restrição](input-generation.md#constraint-solver) pode usar para descobrir as entradas.<p />
+  * [MaxConstraintSolverMemory](#maxconstraintsolvermemory) – o tamanho em megabytes que o [solver de restrição](input-generation.md#constraint-solver) pode usar para descobrir as entradas.
 * **Limites de caminho de exploração**
   * [MaxBranches](#maxbranches) – o número máximo de branches que podem ser seguidos ao longo de um único caminho de execução.
   * [MaxCalls](#maxcalls) – o número máximo de chamadas que podem ser feitas durante um único caminho de execução.
   * [MaxStack](#maxstack) – o tamanho máximo da pilha a qualquer momento durante um único caminho de execução, medido como o número de quadros de chamada ativa.
-  * [MaxConditions](#maxconditions) – o número máximo de condições sobre as entradas que podem ser verificadas durante um único caminho de execução.<p />
+  * [MaxConditions](#maxconditions) – o número máximo de condições sobre as entradas que podem ser verificadas durante um único caminho de execução.
 * **Limites de Exploração**
   * [MaxRuns](#maxruns) – o número máximo de execuções que serão tentadas durante uma exploração.
   * [MaxRunsWithoutNewTests](#maxrunswithoutnewtests) – o número máximo de execuções consecutivas sem um novo teste ser emitido.
   * [MaxRunsWithUniquePaths](#maxrunswithuniquepaths) – o número máximo de execuções com caminhos de execução exclusivos que serão tentadas durante uma exploração.
-  * [MaxExceptions](#maxexceptions) – o número máximo de exceções que podem ser encontradas para uma combinação de todos os caminhos de execução descobertos.<p />
+  * [MaxExceptions](#maxexceptions) – o número máximo de exceções que podem ser encontradas para uma combinação de todos os caminhos de execução descobertos.
 * **Configurações de geração de código de conjunto de testes**
   * [TestExcludePathBoundsExceeded](#testexcludepathboundsexceeded) – quando true, os caminhos de execução que excederem qualquer um dos limites de caminho ([MaxCalls](#maxcalls), [MaxBranches](#maxbranches), [MaxStack](#maxstack), [MaxConditions](#maxconditions)) serão ignorados.
   * [TestEmissionFilter](#testemissionfilter) – indica sob quais circunstâncias o IntelliTest deverá emitir testes.

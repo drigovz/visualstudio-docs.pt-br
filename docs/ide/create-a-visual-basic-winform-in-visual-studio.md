@@ -1,8 +1,10 @@
 ---
 title: Criar um aplicativo do Windows Forms com o Visual Basic
 description: Aprenda o passo a passo de como criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic.
-ms.date: 12/04/2017
-ms.topic: conceptual
+ms.date: 03/23/2019
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.devlang: vb
 author: TerryGLee
 ms.author: tglee
@@ -11,22 +13,37 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 113493489e62a991e56f626e613c4ef0d76c0250
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4619a56bfe052a1fb191af8edfd1cef8b376617b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976785"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>Criar um aplicativo do Windows Forms no Visual Studio com o Visual Basic
 
 Nesta introdução curta ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, você criará um aplicativo simples do Visual Basic que tem uma UI (interface do usuário) baseada no Windows.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+> [!NOTE]
+> Algumas das capturas de tela neste tutorial usam o tema escuro. Se você não estiver usando o tema escuro, mas quiser usá-lo, confira a página [Personalizar o IDE e o Editor do Visual Studio](../ide/quickstart-personalize-the-ide.md) para saber como.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, você criará um projeto de aplicativo do Visual Basic. O tipo de projeto inclui todos os arquivos de modelo que você precisará, mesmo sem adicionar nada.
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017.
 
@@ -38,6 +55,41 @@ Primeiro, você criará um projeto de aplicativo do Visual Basic. O tipo de proj
 
      ![Carga de trabalho do .NET Core no Instalador do Visual Studio](../ide/media/install-dot-net-desktop-env.png)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+   Depois de aplicar os filtros de linguagem de programação e de plataforma, escolha o modelo **Aplicativo do Windows Forms (.NET Framework)** e, em seguida, escolha **Avançar**.
+
+   ![Escolher o modelo do Visual Basic para o Aplicativo do Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)**, poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Em seguida, no Instalador do Visual Studio, escolha Escolher a carga de trabalho de **desenvolvimento de área de trabalho do .NET**.
+   > 
+   > ![Carga de trabalho do .NET Core no Instalador do Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *OláMundo* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+
+   ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'OláMundo'](../get-started/visual-basic/media/vs-2019/vb-name-your-winform-project-helloworld.png)
+
+   O Visual Studio abre seu novo projeto.
+
+::: moniker-end
+
 ## <a name="create-the-application"></a>Criar o aplicativo
 
 Depois de selecionar o modelo de projeto do Visual Basic e nomear seu arquivo, o Visual Studio abrirá um formulário para você. Um formulário é uma interface do usuário do Windows. Vamos criar um aplicativo “Olá, Mundo” ao adicionar controles ao formulário e, então, vamos executar o aplicativo.
@@ -48,16 +100,17 @@ Depois de selecionar o modelo de projeto do Visual Basic e nomear seu arquivo, o
 
      ![Clique na Caixa de Ferramentas para abrir a janela da Caixa de Ferramentas](../ide/media/vb-toolbox-toolwindow.png)
 
-     (Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta da barra de menus. Para fazer isso, clique em **Exibir** > **Caixa de Ferramentas**. Ou pressione **Ctrl**+**Alt**+**X**.)
+     Se você não encontrar a opção suspensa **Caixa de Ferramentas**, ela poderá ser aberta pressionando **Ctrl**+**Alt**+**X**.
 
 2. Clique no ícone **Fixar** para encaixar a janela **Caixa de Ferramentas**.
 
      ![Clique no ícone Fixar para fixar a janela Caixa de Ferramentas no IDE](../ide/media/vb-pin-the-toolbox-window.png)
+
 3. Clique no controle **Botão** e, em seguida, arraste-o para o formulário.
 
      ![Adicionar um botão no formulário](../ide/media/vb-add-a-button-to-form1.png)
 
-4. Na seção **Aparência** da janela **Propriedades**, digite `Click this` (Clique aqui), depois pressione **Enter**.
+4. Na seção **Aparência** (ou na seção **Fontes**) da janela **Propriedades**, digite `Click this`, depois pressione **Enter**.
 
      ![Adicionar texto no botão do formulário](../ide/media/vb-button-control-text.png)
 
@@ -81,7 +134,7 @@ Agora que adicionamos um controle de botão para criar uma ação, vamos adicion
 
       (Como alternativa, você pode expandir **Form1.vb** no **Gerenciador de Soluções** e, em seguida, clicar em **Form1**.)
 
-2. Na janela **Form1.vb**, entre as linhas **Private Sub** e **End Sub**, digite ou cole `lblHelloWorld.Text = "Hello World!"`.
+2. Na janela **Form1.vb**, entre a linha **Private Sub** e a linha **End Sub** (ou entre a linha **Public Class Form1** e a linha **End Class**), digite o código a seguir.
 
      ![Adicionar código ao formulário](../ide/media/vb-add-code-to-the-form.png)
 

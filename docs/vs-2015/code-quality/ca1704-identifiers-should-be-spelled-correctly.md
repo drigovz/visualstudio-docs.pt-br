@@ -1,14 +1,9 @@
 ---
-title: 'CA1704: Os identificadores devem ter grafia correta | Microsoft Docs'
-ms.custom: ''
+title: 'CA1704: Identificadores devem ter grafia correta | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1704
 - IdentifiersShouldBeSpelledCorrectly
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c1e31917356e3d55a7db38ba7aabc9258af1deb0
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: d77e5ffcb7cc6688ea07cd99760e79e8f92aeb43
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49827518"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926505"
 ---
-# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: os identificadores do recurso devem ter a ortografia correta
+# <a name="ca1704-identifiers-should-be-spelled-correctly"></a>CA1704: Identificadores devem ser escritos corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -56,13 +51,13 @@ ms.locfileid: "49827518"
   Por padrão, a versão em inglês (en) do verificador ortográfico é usada. Não há outros dicionários de idioma estão disponíveis atualmente.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, corrija a grafia da palavra ou adicionar a palavra a um dicionário personalizado chamado Customdictionary. Coloque o dicionário no diretório de instalação da ferramenta, o diretório do projeto, ou no diretório que está associado com a ferramenta sob o perfil do usuário (%USERPROFILE%\Application dados\\...). Para saber como adicionar um dicionário personalizado a um projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [como: personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+ Para corrigir uma violação dessa regra, corrija a grafia da palavra ou adicionar a palavra a um dicionário personalizado chamado Customdictionary. Coloque o dicionário no diretório de instalação da ferramenta, o diretório do projeto, ou no diretório que está associado com a ferramenta sob o perfil do usuário (%USERPROFILE%\Application dados\\...). Para saber como adicionar um dicionário personalizado a um projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
 
 - Adicione palavras que não devem causar uma violação no caminho de dicionário/palavras/reconhecido.
 
 - Adicione palavras que devem causar uma violação no caminho de dicionário/palavras/não reconhecida.
 
-- Adicione palavras que devem ser sinalizadas como obsoletas no caminho de dicionário/palavras/preterido. Consulte o tópico relacionado regra [CA1726: usar termos preferenciais](../code-quality/ca1726-use-preferred-terms.md)para obter mais informações.
+- Adicione palavras que devem ser sinalizadas como obsoletas no caminho de dicionário/palavras/preterido. Consulte o tópico relacionado regra [CA1726: Use termos preferenciais](../code-quality/ca1726-use-preferred-terms.md)para obter mais informações.
 
 - Adicione exceções às regras de maiusculas e minúsculas acrônimo para o caminho de dicionário/acrônimos/CasingExceptions.
 
@@ -95,20 +90,17 @@ ms.locfileid: "49827518"
  Suprima um aviso nessa regra somente se a palavra está intencionalmente incorreta e o word aplica-se a um conjunto limitado de biblioteca. Corretamente as palavras escritas de reduzem a curva de aprendizado que é necessária para novas bibliotecas de software.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2204: os literais devem ter a ortografia correta](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+ [CA2204: Literais devem ter grafia correta](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
 
- [CA1703: as cadeias de caracteres do recurso devem ter a ortografia correta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+ [CA1703: Cadeias de caracteres de recurso devem ter grafia correta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
 
- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+ [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
 
- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+ [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
- [CA1707: os identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+ [CA1707: Identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
 
- [CA1726: usar termos preferenciais](../code-quality/ca1726-use-preferred-terms.md)
+ [CA1726: Use termos preferenciais](../code-quality/ca1726-use-preferred-terms.md)
 
 ## <a name="see-also"></a>Consulte também
- [Como personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
-
-
-
+ [Como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)

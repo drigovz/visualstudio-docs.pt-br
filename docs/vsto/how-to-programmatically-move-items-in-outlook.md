@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812546"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Como: Mover itens no Outlook de forma programática
   Este exemplo move mensagens não lidas do **caixa de entrada** para uma pasta chamada **teste**. O exemplo só move as mensagens que tenham a palavra **teste** no `Subject` campo.
@@ -30,9 +30,9 @@ ms.locfileid: "56641618"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
--   Uma pasta de email do Outlook chamada **teste**.
+- Uma pasta de email do Outlook chamada **teste**.
 
--   Uma mensagem de email que chega com a palavra **teste** no `Subject` campo.
+- Uma mensagem de email que chega com a palavra **teste** no `Subject` campo.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com pastas](../vsto/working-with-folders.md)

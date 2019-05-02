@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7fd6d8c63d8b0b56af20ac1211802524336d06bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437577"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "54763108"
 Os projetos são os contêineres lógicos para tudo que é necessário para criar seu aplicativo. Quando você cria um projeto escolhendo **Arquivo &#124; Novo &#124; Projeto** no menu principal, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria uma solução para contê-lo. Em seguida, é possível adicionar projetos novos ou existentes à solução, se necessário. É possível criar projetos de arquivos de código existentes e criar projetos temporários (apenas .NET) que serão excluídos quando você não os quiser mais.  
   
 > [!NOTE]
->  As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As descrições deste tópico baseiam-se na edição Visual Studio Community. As caixas de diálogo e comandos de menu que você vê podem ser diferentes dos descritos aqui, dependendo de suas configurações ou da edição Visual Studio. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-project-from-an-installed-project-template"></a>Criar um projeto com base em um modelo de projeto instalado  
  **Arquivo &#124; Novo &#124; Projeto** no menu principal para exibir a caixa de diálogo Novo projeto. No painel esquerdo em **Mencionado &#124; Modelos**, escolha a linguagem de programação e plataforma ou tecnologia, em seguida, escolha um dos modelos disponíveis no painel central.  
@@ -42,7 +42,7 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
  Se você tiver uma coleção de arquivos de origem flexíveis, será possível criar facilmente um projeto que os contenha. Escolha **Arquivo &#124; Novo &#124;Projeto de Código Existente** para iniciar o **Assistente de Criação de Projeto de Arquivos de Código Existentes** e siga os prompts.  
   
 > [!TIP]
->  Essa opção funciona melhor para coleções de arquivos relativamente simples.  
+> Essa opção funciona melhor para coleções de arquivos relativamente simples.  
   
 ## <a name="create-a-temporary-project-c-and-visual-basic"></a>Criar um projeto temporário (C# e Visual Basic)  
  Trabalhando com projetos temporários, é possível criar e testar um projeto .NET sem especificar um local de disco. Quando você cria um projeto, basta selecionar um tipo e modelo de projeto e especificar um nome na caixa de diálogo **Novo Projeto**. A qualquer momento enquanto você está trabalhando com o projeto temporário, é possível salvá-lo ou descartá-lo.  
@@ -62,7 +62,7 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
 ## <a name="adding-single-files-at-the-solution-level"></a>Adicionando arquivos individuais no nível da solução  
  Às vezes, você pode ter um arquivo que vários projetos referenciam ou que contém dados de texto ou diversos que pertencem logicamente no nível da solução em vez de em um projeto específico.  Para adicionar um item individual a uma solução:  
   
-1.  Clique com botão direito do mouse no nó da solução em **Gerenciador de Soluções** e escolha **Adicionar &#124; Novo Item** ou **Adicionar &#124; Item Existente**.  
+1. Clique com botão direito do mouse no nó da solução em **Gerenciador de Soluções** e escolha **Adicionar &#124; Novo Item** ou **Adicionar &#124; Item Existente**.  
   
 ## <a name="creating-empty-solutions"></a>Criando soluções vazias  
  Embora um projeto deva residir em uma solução, é possível criar uma solução que não tem projetos.  
@@ -83,15 +83,15 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
  É possível excluir uma solução permanentemente, mas não usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Antes de excluir uma solução, mova os projetos que você pode deseja usar novamente em outra solução. Em seguida, use o Gerenciador de Arquivos para excluir o diretório que contém os arquivos de solução .sln e .suo.  
   
 > [!NOTE]
->  O arquivo .suo é um arquivo oculto que não é exibido nas configurações do Gerenciador de Arquivos padrão.  
+> O arquivo .suo é um arquivo oculto que não é exibido nas configurações do Gerenciador de Arquivos padrão.  
   
 ##### <a name="to-delete-a-solution"></a>Para excluir uma solução  
   
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução a ser excluída e selecione **Abrir pasta no Gerenciador de Arquivos**.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução a ser excluída e selecione **Abrir pasta no Gerenciador de Arquivos**.  
   
-2.  No Gerenciador de Arquivos, navegue um nível acima.  
+2. No Gerenciador de Arquivos, navegue um nível acima.  
   
-3.  Selecione o diretório que contém a solução e pressione Excluir.  
+3. Selecione o diretório que contém a solução e pressione Excluir.  
   
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   

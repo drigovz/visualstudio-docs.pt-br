@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 13dc1f44e329f35ad9871fe5969a65d4ad46e770
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55043759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851732"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -36,18 +36,18 @@ Implantação é automática quando você depura seu aplicativo do Visual Studio
 
 - Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP
  Implantar manualmente um aplicativo é simples:
 
-1.  Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
+1. Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
 
-2.  Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
+2. Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
 
      ![Executar no computador Local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  No menu **Compilar**, escolha **Implantar**
+3. No menu **Compilar**, escolha **Implantar**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
 
 **Pré-requisitos**
 
@@ -76,7 +76,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
     O **Conexão remota** caixa de diálogo exibe os dispositivos na sub-rede local e em qualquer dispositivo que está conectado diretamente ao computador do Visual Studio por um cabo Ethernet.
 
-   **Especificando o dispositivo remoto na página de projetos em JavaScript ou Visual C++**
+   **Especificar o dispositivo remoto em um Visual C++ página do projeto**
 
    ![C&#43; &#43; propriedades para depuração remota do projeto](../debugger/media/vsrun_cpp_projprop_remote.png "VSRUN_CPP_ProjProp_Remote")
 
@@ -92,7 +92,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
 10. Insira o nome de rede do dispositivo remoto na caixa **Computador Remoto** ou clique em **Localizar** para escolher o dispositivo na caixa de diálogo **Selecionar conexão de depurador remoto**.
 
-##  <a name="BKMK_Deployment_options"></a> Opções de implantação
+## <a name="BKMK_Deployment_options"></a> Opções de implantação
 
 Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.
 
@@ -104,15 +104,15 @@ Para remover a isenção de loopback de rede do aplicativo:
 
 - Sobre o C# e Visual Basic Depurar página de propriedades, desmarque a **permitir Loopback de rede** caixa de seleção.
 
-- Na página de propriedades JavaScript e depuração, defina o valor de **Permitir loopback de rede** como **Não**.
+- No C++ página de propriedade de depuração, defina a **permitir Loopback de rede** valor para **nenhum**.
 
-**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / Iniciar aplicativo (JavaScript e C++)**
+**Não iniciar, mas depurar meu código quando ele é iniciado (C# e Visual Basic) / Iniciar aplicativo (C++)**
 
 Para configurar a implantação para iniciar automaticamente uma sessão de depuração quando o aplicativo é iniciado:
 
 - Sobre o C# e a página de propriedades de depuração do Visual Basic, verifique o **não iniciar, mas depurar meu código quando ele é iniciado** caixa de seleção.
 
-- Na página de propriedades JavaScript e depuração, defina o valor de **Iniciar Aplicativo** como **Sim**.
+- No C++ página de propriedade de depuração, defina a **Iniciar aplicativo** de valor para **Sim**.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,14 +1,9 @@
 ---
 title: Função SccPopulateList | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: fccf5ba354a99eaef6968c5d5027e8540762af75
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446783"
 ---
 # <a name="sccpopulatelist-function"></a>Função SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +43,7 @@ SCCRTN SccPopulateList (
  pvContext  
  [in] A estrutura de contexto de plug-in de controle de origem.  
   
- Ncomando  
+ nCommand  
  [in] O comando de controle de origem que será aplicado a todos os arquivos a `lpFileNames` matriz (consulte [código do comando](../extensibility/command-code-enumerator.md) para obter uma lista de comandos possíveis).  
   
  nFiles  
@@ -86,7 +81,7 @@ SCCRTN SccPopulateList (
  O plug-in continua a chamar o `pfnPopulate` função, que adiciona e exclui os arquivos, até que ele for concluído e então retornará o `SccPopulateList` função. O IDE, em seguida, pode exibir sua lista. O `lpStatus` matriz representa todos os arquivos na lista original passada pelo IDE. O plug-in, preenche o status de todos esses arquivos, além de tomada de usa a função de retorno de chamada.  
   
 > [!NOTE]
->  Um plug-in de controle do código-fonte sempre tem a opção de simplesmente retornam imediatamente dessa função, deixando a lista como está. Se um plug-in implementa essa função, isso pode indicar isso definindo a `SCC_CAP_POPULATELIST` bitflag de recurso na primeira chamada para o [SccInitialize](../extensibility/sccinitialize-function.md). Por padrão, o plug-in deve sempre presumir que todos os itens sendo passados são arquivos. No entanto, se o IDE define a `SCC_PL_DIR` sinalizador no `fOptions` parâmetro, todos os itens que está sendo transmitidos devem ser considerados como diretórios. O plug-in deve adicionar todos os arquivos que pertencem nos diretórios. O IDE nunca passará uma mistura de arquivos e diretórios.  
+> Um plug-in de controle do código-fonte sempre tem a opção de simplesmente retornam imediatamente dessa função, deixando a lista como está. Se um plug-in implementa essa função, isso pode indicar isso definindo a `SCC_CAP_POPULATELIST` bitflag de recurso na primeira chamada para o [SccInitialize](../extensibility/sccinitialize-function.md). Por padrão, o plug-in deve sempre presumir que todos os itens sendo passados são arquivos. No entanto, se o IDE define a `SCC_PL_DIR` sinalizador no `fOptions` parâmetro, todos os itens que está sendo transmitidos devem ser considerados como diretórios. O plug-in deve adicionar todos os arquivos que pertencem nos diretórios. O IDE nunca passará uma mistura de arquivos e diretórios.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
@@ -94,4 +89,3 @@ SCCRTN SccPopulateList (
  [POPLISTFUNC](../extensibility/poplistfunc.md)   
  [Sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)   
  [Código de comando](../extensibility/command-code-enumerator.md)
-

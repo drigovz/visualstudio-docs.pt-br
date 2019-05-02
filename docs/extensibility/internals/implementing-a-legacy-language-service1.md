@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88db1e11286c022552419fa70bb6847d36035c36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2fe405ea62562a9e7eb90948d92fcd5075887c8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420492"
 ---
 # <a name="implementing-a-legacy-language-service"></a>Implementando um serviço de linguagem herdado
 Você pode usar classes do framework de pacote gerenciado (MPF) para implementar um serviço de linguagem herdada que dá suporte a uma ampla variedade de recursos, como realce de sintaxe, correspondência de chaves e preenchimento do IntelliSense.
@@ -23,7 +23,7 @@ Você pode usar classes do framework de pacote gerenciado (MPF) para implementar
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Visão geral do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-overview.md)
@@ -42,11 +42,11 @@ Você pode usar classes do framework de pacote gerenciado (MPF) para implementar
 
  Descreve os dois analisadores que são necessários para implementar todos os recursos de um serviço de linguagem usando o MPF.
 
-- [Passo a passo: Criar um serviço de linguagem herdado](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
+- [Passo a passo: criação de um serviço de linguagem herdado](../../extensibility/internals/walkthrough-creating-a-legacy-language-service.md)
 
  Fornece as etapas básicas que são necessários para implementar um serviço de linguagem MPF em um VSPackage.
 
-- [Passo a passo: Obtendo uma lista de trechos de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Passo a passo: obter uma lista de snippets de código instalados (implementação herdada)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  Demonstra as técnicas de recuperar uma lista de trechos de código instalado.
 

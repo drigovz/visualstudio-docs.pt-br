@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 595c5f326ba7af25f3b6517f9955db18056e38f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c129ddf016e02fe6c29d5cf63fe57ba07fbd4e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087970"
 ---
 # <a name="collecting-detailed-timing-data-by-using-instrumentation"></a>Coletando dados de tempo detalhados usando a instrumentação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ O método de instrumentação das Ferramentas de Criação [!INCLUDE[vsprvs](../
   
  É possível especificar o método de amostragem usando um dos seguintes procedimentos:  
   
--   Na primeira página do Assistente de Criação de Perfil, selecione **Instrumentação**.  
+- Na primeira página do Assistente de Criação de Perfil, selecione **Instrumentação**.  
   
--   Na barra de ferramentas do **Gerenciador de Desempenho**, na lista **Método**, clique em **Instrumentação**.  
+- Na barra de ferramentas do **Gerenciador de Desempenho**, na lista **Método**, clique em **Instrumentação**.  
   
--   Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Instrumentação**.  
+- Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Instrumentação**.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
  É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  

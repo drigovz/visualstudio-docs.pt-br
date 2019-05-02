@@ -1,14 +1,9 @@
 ---
 title: Escrever um avaliador de expressão de tempo de execução de linguagem comum | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators, tutorial
 - expression evaluation, samples
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: cfd368bb0302fec1fcf9fdd1f6e6e069377846ab
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 961a4d646a61fedda381f9451902b3bcdcc956d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435272"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>Escrevendo um avaliador de expressão do Common Language Runtime
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  O avaliador de expressão (EE) é a parte de um mecanismo de depuração (DES) que lida com a sintaxe e semântica da linguagem de programação que gerou o código que está sendo depurado. As expressões devem ser avaliadas dentro do contexto de uma linguagem de programação. Por exemplo, em alguns idiomas, a expressão "A + B" significa "a soma de A e b." Em outras linguagens, a mesma expressão pode significar "A ou B." Portanto, um separado EE deve ser escrito para cada linguagem de programação que gera o código de objeto a ser depurado no IDE do Visual Studio.  
   
@@ -61,4 +56,3 @@ ms.locfileid: "51783006"
   
 ## <a name="see-also"></a>Consulte também  
  [Extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

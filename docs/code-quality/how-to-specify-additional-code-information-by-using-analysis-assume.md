@@ -12,12 +12,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: badc2159085257f25a224a29cf1163b2b702fe60
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 25ce2a97acd248e546fdfab1a1b5c3f22e085f0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403113"
 ---
 # <a name="how-to-specify-additional-code-information-by-using-analysisassume"></a>Como: Especificar informações de código adicionais usando _Analysis_assume
 Você pode fornecer dicas para a ferramenta de análise de código para código C/C++ que ajudam no processo de análise e reduzir os avisos. Para fornecer informações adicionais, use a função a seguir:
@@ -29,7 +29,7 @@ Você pode fornecer dicas para a ferramenta de análise de código para código 
  A ferramenta de análise de código pressupõe que a condição representada pela expressão é verdadeira no ponto em que a função aparece e permanece verdadeira até que a expressão for alterada, por exemplo, por atribuição a uma variável.
 
 > [!NOTE]
->  `_Analysis_assume` não afeta a otimização de código. Fora a ferramenta de análise de código, `_Analysis_assume` é definido como inoperante.
+> `_Analysis_assume` não afeta a otimização de código. Fora a ferramenta de análise de código, `_Analysis_assume` é definido como inoperante.
 
 ## <a name="example"></a>Exemplo
  O seguinte código usa `_Analysis_assume` para corrigir o aviso de análise de código [C6388](../code-quality/c6388.md):

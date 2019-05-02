@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825065"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Use a janela de resultados de métricas de código
 
@@ -48,15 +48,15 @@ O **filtro** caixa suspensa contém os nomes das colunas de resultados. Quando u
 
 ### <a name="to-filter-the-code-metrics-results"></a>Para filtrar os resultados de métricas de código
 
-1.  Dos **filtro** , selecione o nome da coluna.
+1. Dos **filtro** , selecione o nome da coluna.
 
-2.  Na **Min**, digite o valor mínimo a ser exibido.
+2. Na **Min**, digite o valor mínimo a ser exibido.
 
-3.  Na **máx**, digite o valor máximo a ser exibido.
+3. Na **máx**, digite o valor máximo a ser exibido.
 
-4.  Clique o **Aplicar filtro** botão.
+4. Clique o **Aplicar filtro** botão.
 
-5.  Para ver os detalhes do resultado, expanda a árvore de hierarquia.
+5. Para ver os detalhes do resultado, expanda a árvore de hierarquia.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Adicionar, remover e reorganizar as colunas de dados
 
@@ -88,23 +88,23 @@ Para obter mais informações sobre os quadros de Azure itens de trabalho, consu
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para criar um item de trabalho com base em um resultado
 
-1.  Clique com botão direito o resultado.
+1. Clique com botão direito o resultado.
 
-2.  Aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar (**Bug**, **tarefa**e assim por diante).
+2. Aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar (**Bug**, **tarefa**e assim por diante).
 
-3.  Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
+3. Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
 
-4.  Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
+4. Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Para criar um bug com base em um resultado
 
-1.  Clique no resultado para selecioná-lo.
+1. Clique no resultado para selecioná-lo.
 
-2.  Clique o **Criar Item de trabalho** botão.
+2. Clique o **Criar Item de trabalho** botão.
 
-3.  Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
+3. Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
 
-4.  Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
+4. Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
 
 ## <a name="see-also"></a>Consulte também
 

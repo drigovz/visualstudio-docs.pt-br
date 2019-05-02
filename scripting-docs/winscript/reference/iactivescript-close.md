@@ -2,7 +2,6 @@
 title: IActiveScript::Close | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 886ab1c4c39cf7c64571862bfd28f2fbd1062694
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935673"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Faz com que o mecanismo de script abandonar a qualquer script carregado no momento, perder seu estado e liberar quaisquer ponteiros de interface, que ele tem a outros objetos, portanto, inserindo um estado fechado. Coletores de eventos, o texto do script executado imediatamente e chamadas de macro que já estão em andamento são concluídas antes das alterações de estado (use [IActiveScript:: Interruptscriptthread](../../winscript/reference/iactivescript-interruptscriptthread.md) para cancelar um thread em execução do script). Esse método deve ser chamado pelo host criando antes que a interface seja liberada para evitar problemas de referência circular.  

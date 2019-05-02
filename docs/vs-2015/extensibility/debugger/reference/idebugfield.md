@@ -1,14 +1,9 @@
 ---
 title: IDebugField | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugField
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: adecdd1c-b1b9-4027-92da-74cbe910636f
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 4feaec188bcfcfbca9f6484e162f1c3e6ad22d67
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ab95443f611c9cc6a1e74b2b5120047344a9857a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764985"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925532"
 ---
 # <a name="idebugfield"></a>IDebugField
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -70,7 +65,7 @@ weather stormy;
  Se um campo representa um símbolo ou tipo pode ser determinado chamando [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) e examinando a [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) resultado. Se o `FIELD_KIND_TYPE` bit estiver definido, o campo é um tipo e se o `FIELD_KIND_SYMBOL` bit estiver definido, ele é um símbolo.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: sh.h  
+ Header: sh.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -78,4 +73,3 @@ weather stormy;
   
 ## <a name="see-also"></a>Consulte também  
  [Interfaces de Provedor de Símbolos](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
-

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c50ba5ecd8ef8e7eda9bbf2df9fdfa43fac0b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806596"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 
@@ -102,11 +102,11 @@ Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale 
 
 Para ativar verificado estouro/estouro negativo aritmético em c#:
 
-1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
+1. Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 
-2.  Selecione a guia **Compilar** e clique em **Avançado**.
+2. Selecione a guia **Compilar** e clique em **Avançado**.
 
-3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
+3. Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967778"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Como: Preencher documentos com dados de serviços
 
@@ -33,21 +33,21 @@ O exemplo a seguir mostra como adicionar controles ligados a dados a documentos 
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Para popular um projeto de nível de documento com os dados de um serviço web
 
-1.  Abra o **fontes de dados** janela e criar uma fonte de dados de serviço para seu projeto. Para obter mais informações, consulte [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).
+1. Abra o **fontes de dados** janela e criar uma fonte de dados de serviço para seu projeto. Para obter mais informações, consulte [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md).
 
-2.  Arraste a tabela ou o campo desejado a **fontes de dados** janela ao documento.
+2. Arraste a tabela ou o campo desejado a **fontes de dados** janela ao documento.
 
      Um controle é criado no documento, um <xref:System.Windows.Forms.BindingSource> é criado que está associado à classe de objeto em seu projeto e classes são geradas para o serviço.
 
-3.  Em seu código, crie uma instância da classe de serviço da web conectado na etapa 1.
+3. Em seu código, crie uma instância da classe de serviço da web conectado na etapa 1.
 
-4.  Se houver propriedades que são necessárias para a comunicação com o serviço web, crie instâncias dessas propriedades.
+4. Se houver propriedades que são necessárias para a comunicação com o serviço web, crie instâncias dessas propriedades.
 
-5.  Criar e enviar uma solicitação de dados usando os métodos expostos pelo serviço da Web e quaisquer instâncias de propriedade criado na etapa 4.
+5. Criar e enviar uma solicitação de dados usando os métodos expostos pelo serviço da Web e quaisquer instâncias de propriedade criado na etapa 4.
 
      Os métodos que você usa dependem do serviço web oferece.
 
-6.  Atribuir a resposta de dados do serviço da web para o <xref:System.Windows.Forms.BindingSource.DataSource%2A> propriedade do <xref:System.Windows.Forms.BindingSource>.
+6. Atribuir a resposta de dados do serviço da web para o <xref:System.Windows.Forms.BindingSource.DataSource%2A> propriedade do <xref:System.Windows.Forms.BindingSource>.
 
 Quando você executa o projeto, os controles exibem o primeiro registro na fonte de dados. Você pode habilitar a rolagem pelos registros manipulando os eventos de moeda usando os objetos no <xref:System.Windows.Forms.BindingSource>.
 

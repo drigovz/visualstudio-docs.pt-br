@@ -14,21 +14,21 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a25f72fccfd072243d6d0fdfd1d311c1a3bb6f4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841437"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935393"
 ---
 # <a name="expected-catch"></a>'catch' esperado
 Você usou a manipulação de exceção **tente** bloquear, mas não escreveu associado **catch** instrução. A mecanismo de tratamento de exceção requer que o código que pode falhar, juntamente com o código que não deve ser executada se ocorrer uma exceção, ser encapsulados dentro de um **tente** bloco. As exceções são geradas de dentro de **tente** bloquear usando o **lançar** instrução e capturada fora o **tente** bloco com um ou mais **catch**as instruções.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Adicionar associado **catch** bloco.  
+- Adicionar associado **catch** bloco.  
   
--   Tente usar um **finalmente** bloquear em vez de uma **catch** bloco.  
+- Tente usar um **finalmente** bloquear em vez de uma **catch** bloco.  
   
 ## <a name="see-also"></a>Consulte também  
  [Try...... finally instrução catch](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   

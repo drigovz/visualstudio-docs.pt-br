@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12f232de6f758f5f1fcca28bcf1adf473e5e7153
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7554d3f89547701e1a7cad0280a1655450520586
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962373"
 ---
 # <a name="develop-code-in-visual-studio-without-projects-or-solutions"></a>Desenvolver código no Visual Studio sem projetos nem soluções
 
@@ -37,7 +37,7 @@ Você pode abrir o código no Visual Studio usando uma destas maneiras:
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-- Escolha o link **Abrir Pasta** na janela Iniciar.
+- Escolha o link **Abrir Pasta** na janela de início.
 ::: moniker-end
 
 - Se você for usuário de teclado, pressione **Ctrl**+**Shift**+**Alt**+**O** no Visual Studio.
@@ -103,7 +103,7 @@ Se a sua base de código contiver código Python ou JavaScript, não será neces
 
 ### <a name="codebases-that-contain-c-code"></a>As bases de código que contêm o código C++
 
-Para saber mais sobre como abrir o código C++ sem soluções ou projetos no Visual Studio, confira [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects).
+Para saber mais sobre como abrir o código C++ sem soluções ou projetos no Visual Studio, confira [Projetos de pasta aberta para C++](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="codebases-that-contain-a-visual-studio-project"></a>Bases de código que contém um projeto do Visual Studio
 
@@ -118,6 +118,6 @@ O texto do botão **Iniciar** muda para refletir que o projeto é o item de inic
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar as tarefas de depuração e build](../ide/customize-build-and-debug-tasks-in-visual-studio.md)
-- [Projetos de pasta aberta para C++](/cpp/ide/non-msbuild-projects)
-- [Projetos CMake em C++](/cpp/ide/cmake-tools-for-visual-cpp)
+- [Projetos de pasta aberta para C++](/cpp/build/open-folder-projects-cpp)
+- [Projetos CMake em C++](/cpp/build/cmake-projects-in-visual-studio)
 - [Escrevendo código no editor de código e texto](../ide/writing-code-in-the-code-and-text-editor.md)

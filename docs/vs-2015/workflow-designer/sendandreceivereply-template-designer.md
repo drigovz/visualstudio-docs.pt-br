@@ -1,11 +1,8 @@
 ---
 title: Designer de modelo de SendAndReceiveReply | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.ServiceModel.Activities.SendAndReceiveReply.UI
@@ -14,13 +11,13 @@ ms.assetid: 818a8c84-6593-416d-b016-1d91b85ffb68
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: e2b7ffb52979c0899949806ae97b562f76b0b3c9
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 689f3a57dc3de9bbe63b0ef69a969cac57a639c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49884947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948020"
 ---
 # <a name="sendandreceivereply-template-designer"></a>Designer do modelo de SendAndReceiveReply
 O **SendAndReceiveReply** modelo é usado para criar um par de pré-compilação configurado <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> as atividades dentro de um <xref:System.Activities.Statements.Sequence> atividade que são correlacionadas como parte de uma troca de mensagens de solicitação/resposta padrão no cliente.  
@@ -28,11 +25,11 @@ O **SendAndReceiveReply** modelo é usado para criar um par de pré-compilação
 ## <a name="the-sendandreceivereply-template"></a>O modelo de SendAndReceiveReply  
  Adicionando **SendAndReceiveReply** modelo faz três coisas além de criar o <xref:System.ServiceModel.Activities.Send> e <xref:System.ServiceModel.Activities.ReceiveReply> as atividades dentro de um <xref:System.Activities.Statements.Sequence> atividade:  
 
-1.  Configurar <xref:System.ServiceModel.Activities.Send.OperationName%2A>, propriedades de <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> de atividade de <xref:System.ServiceModel.Activities.Send> .  
+1. Configurar <xref:System.ServiceModel.Activities.Send.OperationName%2A>, propriedades de <xref:System.ServiceModel.Activities.Send.ServiceContractName%2A> de atividade de <xref:System.ServiceModel.Activities.Send> .  
 
-2.  Associa a propriedade de <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> de atividade de <xref:System.ServiceModel.Activities.ReceiveReply> a atividade de <xref:System.ServiceModel.Activities.Send> .  
+2. Associa a propriedade de <xref:System.ServiceModel.Activities.ReceiveReply.Request%2A> de atividade de <xref:System.ServiceModel.Activities.ReceiveReply> a atividade de <xref:System.ServiceModel.Activities.Send> .  
 
-3.  Cria <xref:System.ServiceModel.Activities.CorrelationHandle> como um variável na atividade pai.  
+3. Cria <xref:System.ServiceModel.Activities.CorrelationHandle> como um variável na atividade pai.  
 
 ### <a name="using-the-sendandreceivereply-template-designer"></a>Usando o designer do modelo de SendAndReceiveReply  
  O **SendAndReceiveReply** designer de atividade pode ser encontrado na **Messaging** categoria dos **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**  guia [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu, ou CTRL + ALT + X.)  
@@ -46,7 +43,6 @@ O **SendAndReceiveReply** modelo é usado para criar um par de pré-compilação
 ### <a name="properties-of-receivereply"></a>Propriedades de ReceiveReply  
  A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.ReceiveReply> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades e alguns podem ser editados na [!INCLUDE[wfd2](../includes/wfd2-md.md)]superfície do designer.  
 
-
 |                                 Nome da Propriedade                                 | Necessária |                                                                                                                                                                                                                                                                                                                                                        Uso                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |               <xref:System.Activities.Activity.DisplayName%2A>                |  False   |                                                                                                                                                                                            O nome amigável opcional de atividade de <xref:System.ServiceModel.Activities.ReceiveReply> . O padrão é ReceiveReplyForSend.<br /><br /> Embora o uso de um valor não padrão para <xref:System.Activities.Activity.DisplayName%2A> amigável não é necessário restrita, é uma prática recomendada usar um valor.                                                                                                                                                                                            |
@@ -58,7 +54,7 @@ O **SendAndReceiveReply** modelo é usado para criar um par de pré-compilação
 ## <a name="see-also"></a>Consulte também  
  [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)   
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)   
- [Receber](../workflow-designer/receive-activity-designer.md)   
+ [Receive](../workflow-designer/receive-activity-designer.md)   
  [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)   
  [Enviar](../workflow-designer/send-activity-designer.md)   
  [TransactedReceiveScope](../workflow-designer/transactedreceivescope-activity-designer.md)

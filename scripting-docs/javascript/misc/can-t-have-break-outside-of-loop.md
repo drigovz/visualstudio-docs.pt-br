@@ -14,12 +14,12 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 36551a1a70973409768b7971545c783b3621ffb6
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a02848230187eb465d56ed73e44380e4b043b117
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56839887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946622"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Não é possível ter 'break' fora do loop
 Você tentou usar o **quebra** palavra-chave fora de um loop. O **quebra** palavra-chave é usada para encerrar um loop ou `switch` instrução. Ele deve ser inserido no corpo de um loop ou `switch` instrução. No entanto, uma **rótulo** pode seguir a palavra-chave break.  
@@ -32,7 +32,7 @@ break labelname;
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Verifique se o **quebra** palavra-chave aparece dentro de uma instrução de loop ou opção de circunscrição.  
+- Verifique se o **quebra** palavra-chave aparece dentro de uma instrução de loop ou opção de circunscrição.  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução break](../../javascript/reference/break-statement-javascript.md)   

@@ -1,14 +1,9 @@
 ---
 title: Comandos de menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Spy++, menu commands
 - menu commands, Spy++
@@ -16,13 +11,13 @@ ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 84cca8631aaebb95345880847ee641bb7674086a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 640d4586d851be6f4335ed346e0e155acb4ae902
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51787753"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929411"
 ---
 # <a name="menu-commands"></a>Comandos de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +55,3 @@ Os tópicos da Ajuda nesta seção listam os comandos disponíveis nos menus Spy
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
  Inclui esta seção e seções que descrevem cada caixa de diálogo do Spy + +.
-
-
-

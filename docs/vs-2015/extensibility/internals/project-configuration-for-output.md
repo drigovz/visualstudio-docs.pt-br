@@ -1,26 +1,21 @@
 ---
 title: Configuração para a saída de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c23f9210175b848bfdf3ddab56776092e39212c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d14435917e982328220aa6b778d081a8837f0396
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740897"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443885"
 ---
 # <a name="project-configuration-for-output"></a>Configuração de projeto para saída
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Cada configuração pode dar suporte a um conjunto de processos de compilação 
  A construção desenvolvidos com a implementação de `IVsOutputGroup` permite que os projetos para saídas de grupo de acordo com o uso. Por exemplo, uma DLL pode ser agrupada com seu banco de dados do programa (PDB).  
   
 > [!NOTE]
->  Um arquivo PDB contiver informações de depuração e ele é criado quando a opção 'Gerar informações de depuração' é especificada ao criar o arquivo. dll ou .exe. Geralmente, o arquivo. PDB é gerado para configuração de projeto de depuração somente.  
+> Um arquivo PDB contiver informações de depuração e ele é criado quando a opção 'Gerar informações de depuração' é especificada ao criar o arquivo. dll ou .exe. Geralmente, o arquivo. PDB é gerado para configuração de projeto de depuração somente.  
   
  O projeto deve retornar o mesmo número de grupos para cada configuração com suporte, mesmo que o número de saídas contido dentro de um grupo pode variar de uma configuração para a configuração. Por exemplo, Matt do projeto DLL pode incluir mattd.dll e mattd.pdb na configuração de depuração, mas apenas incluir matt.dll na configuração de varejo.  
   
@@ -56,4 +51,3 @@ Grupos de saída
  [Configuração de projeto para criação](../../extensibility/internals/project-configuration-for-building.md)   
  [Objeto de configuração do projeto](../../extensibility/internals/project-configuration-object.md)   
  [Configuração da solução](../../extensibility/internals/solution-configuration.md)
-

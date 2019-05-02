@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 206b14a1cdab61d64354e134449149b70a030683
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c5326ef7aa66de124f3be5db96cf156b57cb339d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563644"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 Você pode depurar um aplicativo de 64 bits que está sendo executado no computador local ou em um computador remoto.
@@ -35,22 +35,22 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 ## <a name="debug-a-64-bit-application"></a>Depurar um aplicativo de 64 bits
  Para tentar depurar um aplicativo de 64 bits:
 
-1.  Crie uma solução do Visual Studio, por exemplo um console aplicativo c#.
+1. Crie uma solução do Visual Studio, por exemplo um console aplicativo c#.
 
-2.  Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, consulte [como: configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
+2. Defina a configuração para 64 bits usando o Configuration Manager. Para obter mais informações, confira [Como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
-3.  Neste ponto, a versão de 64 bits do depurador remoto (msvsmon.exe) inicia. Ele é executado, desde que a solução com a configuração de 64 bits está aberta.
+3. Neste ponto, a versão de 64 bits do depurador remoto (msvsmon.exe) inicia. Ele é executado, desde que a solução com a configuração de 64 bits está aberta.
 
-4.  Inicie a depuração. Você deve ter a mesma experiência assim como acontece com uma configuração de 32 bits. Se você obtiver erros, consulte a seção de solução de problemas abaixo.
+4. Inicie a depuração. Você deve ter a mesma experiência assim como acontece com uma configuração de 32 bits. Se você obtiver erros, consulte a seção de solução de problemas abaixo.
 
 ## <a name="troubleshooting-64-bit-debugging"></a>Solucionando problemas de depuração de 64 bits
- Você verá um erro: "uma operação de depuração de 64 bits está demorando mais do que o esperado." Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon.exe e levou muito tempo para o resultado da solicitação antes de voltar.
+ Você verá um erro: "Uma operação de depuração de 64 bits está demorando mais do que o esperado." Nesse caso, o Visual Studio enviou uma solicitação para a versão de 64 bits do msvsmon.exe e levou muito tempo para o resultado da solicitação antes de voltar.
 
  Há duas causas principais para este erro:
 
--   Você tem o software de segurança de rede instalado no computador que fez a pilha de rede seja pouco confiável e ele descartado pacotes ultrapassou o localhost. Tente desabilitar todos os softwares de segurança de rede e veja se isso resolve. Nesse caso, de relatório para o seu fornecedor de software de segurança de rede que o software está interferindo com o tráfego de localhost.
+- Você tem o software de segurança de rede instalado no computador que fez a pilha de rede seja pouco confiável e ele descartado pacotes ultrapassou o localhost. Tente desabilitar todos os softwares de segurança de rede e veja se isso resolve. Nesse caso, de relatório para o seu fornecedor de software de segurança de rede que o software está interferindo com o tráfego de localhost.
 
--   Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
+- Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. Para obter informações sobre como relatar um problema, consulte [como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também
 

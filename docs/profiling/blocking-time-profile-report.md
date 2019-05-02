@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777457"
 ---
 # <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:

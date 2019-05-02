@@ -1,6 +1,6 @@
 ---
 title: Carregar um subconjunto de projetos
-ms.date: 12/04/2018
+ms.date: 04/22/2019
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,18 +10,16 @@ author: gewarren
 ms.author: stsu
 manager: jillfra
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 2f7163ecda377d8fa8b7c27ed50dae4068d39600
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2612770b760bec70ec9ee6c679c47804d4e69f42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439832"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Soluções filtradas no Visual Studio
 
-**Novidades no Visual Studio 2019 Preview 1**
-
-Grandes equipes de desenvolvimento geralmente colaboram usando uma única solução grande com vários projetos. No entanto, os desenvolvedores individuais normalmente trabalham em um pequeno subconjunto desses projetos. Para melhorar o desempenho ao abrir soluções grandes, o Visual Studio 2019 Preview 1 introduz a *filtragem de solução*. A filtragem de soluções permite que você abra uma solução com apenas projetos seletivos carregados. Carregar um subconjunto de projetos em uma solução diminui a carga, o build e o tempo de execução de teste dessa solução e permite uma revisão mais focalizada.
+Grandes equipes de desenvolvimento geralmente colaboram usando uma única solução grande com vários projetos. No entanto, os desenvolvedores individuais normalmente trabalham em um pequeno subconjunto desses projetos. Para melhorar o desempenho ao abrir soluções grandes, o Visual Studio 2019 apresenta a *filtragem de solução*. A filtragem de soluções permite que você abra uma solução com apenas projetos seletivos carregados. Carregar um subconjunto de projetos em uma solução diminui a carga, o build e o tempo de execução de teste dessa solução e permite uma revisão mais focalizada.
 
 Os seguintes recursos estão disponíveis:
 
@@ -33,11 +31,15 @@ Os seguintes recursos estão disponíveis:
 
 ## <a name="open-a-filtered-solution"></a>Abrir uma solução filtrada
 
-Para abrir uma solução com apenas alguns dos seus projetos carregados, siga estas etapas:
+Você pode abrir uma solução sem carregar nenhum dos projetos diretamente na caixa de diálogo **Abrir projeto** ou por meio da [linha de comando](#command-line).
+
+### <a name="open-project-dialog"></a>Caixa de diálogo Abrir projeto
+
+Para abrir uma solução sem carregar nenhum dos projetos usando a caixa de diálogo **Abrir projeto**:
 
 1. Na barra de menus, escolha **Arquivo** > **Abrir** > **Projeto/Solução**.
 
-2. Na caixa de diálogo **Novo projeto**, selecione a solução e selecione **Não carregar projetos**.
+2. Na caixa de diálogo **Abrir Projeto**, selecione a solução e selecione **Não carregar projetos**.
 
    ![Caixa de diálogo Abrir projeto do Visual Studio com a opção não carregar projetos marcada](media/filtered-solutions/do-not-load-projects.png)
 
@@ -51,15 +53,31 @@ Para abrir uma solução com apenas alguns dos seus projetos carregados, siga es
 
    O Visual Studio lembrará de quais projetos estão carregados na próxima vez em que você abrir a solução localmente.
 
+### <a name="command-line"></a>Linha de comando
+
+(Novo no Visual Studio 2019 versão 16.1.)
+
+Para abrir uma solução sem carregar nenhum dos projetos a partir da linha de comando, use o botão [`/donotloadprojects`](../ide/reference/donotloadprojects-devenv-exe.md), como mostrado no exemplo a seguir:
+
+```cmd
+devenv /donotloadprojects MySln.sln
+```
+
 ## <a name="toggle-unloaded-project-visibility"></a>Ativar/desativar a visibilidade do projeto descarregado
 
 Você pode optar por ver todos os projetos na solução ou apenas aqueles carregados usando uma das seguintes opções no **Gerenciador de Soluções**:
 
 - Clique com o botão direito do mouse em sua solução e selecione **Mostrar Projetos Descarregados** ou **Ocultar Projetos Descarregados**.
 
-- Selecione o botão **Mostrar todos os arquivos** para ativar a visibilidade dos projetos descarregados.
+- Selecione o nó da solução para habilitar o botão **Mostrar todos os arquivos** e, em seguida, clique no botão para alternar a visibilidade dos projetos descarregados.
 
    ![Botão Mostrar Todos os Arquivos no Gerenciador de Soluções do Visual Studio](media/filtered-solutions/show-all-files.PNG)
+
+## <a name="load-project-dependencies"></a>Carregar dependências do projeto
+
+Em uma solução em que apenas os projetos selecionados foram carregados, talvez você não tenha todas as dependências de projeto de um determinado projeto carregadas. Use a opção de menu **Carregar dependências do projeto** para garantir que todos os projetos dos quais um projeto depende também sejam carregados. Clique com o botão direito do mouse em um ou mais projetos carregados no **Gerenciador de Soluções** e escolha **Carregar dependências do projeto**.
+
+![Carregar dependências do projeto no Visual Studio de 2019](media/filtered-solutions/load-project-dependencies.png)
 
 ## <a name="solution-filter-files"></a>Arquivos do filtro de solução
 

@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc39cde1a332e925f998a67ed261346320f18a3c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d82deb9c363c1a1bd587cc9a6e48c5d6bf2138bd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584043"
 ---
 # <a name="xmlpeek-task"></a>Tarefa XmlPeek
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Retorna os valores conforme especificado por uma consulta de XPath em um arquivo XML.  
   
 ## <a name="parameters"></a>Parâmetros  

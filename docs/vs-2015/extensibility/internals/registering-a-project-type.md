@@ -1,14 +1,9 @@
 ---
 title: Registro de um tipo de projeto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], new project registry entries
 - registry, new project types
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 38848e54f95cc3d78cf3bae2f32bd9827e98c5ac
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436625"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  No exemplo a seguir, as instruções de registro fornecem caminhos padrão e dados, onde aplicável, seguido por uma tabela que contém as entradas do script do registro para cada instrução. As tabelas fornecem as entradas de script e informações adicionais sobre as instruções.  
   
 > [!NOTE]
->  As seguintes informações de registro destina-se a ser um exemplo do tipo e finalidades das entradas nos scripts do registro que você escreverá para registrar o tipo de projeto. As entradas reais e seus usos podem variar com base nos requisitos específicos de seu tipo de projeto. Você deve revisar os exemplos disponíveis para encontrar uma que se assemelha ao tipo de projeto que você está desenvolvendo e, em seguida, examine o script de registro para que esse exemplo.  
+> As seguintes informações de registro destina-se a ser um exemplo do tipo e finalidades das entradas nos scripts do registro que você escreverá para registrar o tipo de projeto. As entradas reais e seus usos podem variar com base nos requisitos específicos de seu tipo de projeto. Você deve revisar os exemplos disponíveis para encontrar uma que se assemelha ao tipo de projeto que você está desenvolvendo e, em seguida, examine o script de registro para que esse exemplo.  
   
  Os exemplos a seguir são de HKEY_CLASSES_ROOT.  
   
@@ -229,7 +224,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
   
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
-|% CLSID_Package %|REG_SZ|`,1000,1`|O recurso para recuperar as informações de menu.|  
+|%CLSID_Package%|REG_SZ|`,1000,1`|O recurso para recuperar as informações de menu.|  
   
  Todos os exemplos a seguir estão localizados no registro sob a chave [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0Exp\NewProjectTemplates].  
   
@@ -272,7 +267,6 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  Isso significa que se você incluir um PROJECT_TYPE = a entrada do EF no arquivo. vsz, localiza o ambiente que seu. vsz arquivos no diretório ProductDir especificado anteriormente.  
   
 ## <a name="see-also"></a>Consulte também  
- [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)   
  [Criar instâncias de projetos usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)
-

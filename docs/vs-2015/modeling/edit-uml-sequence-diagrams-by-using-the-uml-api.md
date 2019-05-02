@@ -1,25 +1,22 @@
 ---
 title: Editar diagramas de sequência UML usando a API UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML activity diagrams, programming
 ms.assetid: 8cdd0203-85ef-4c62-9abc-da4cb26fa504
 caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f68cf87a7f45b906c6de43e0a837d49132b7a3e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442956"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Uma interação é uma sequência de mensagens entre um conjunto de linhas da vi
   
 ## <a name="basic-code"></a>Código básico  
   
-### <a name="namespace-imports"></a>Importações de Namespace  
+### <a name="namespace-imports"></a>Namespace imports  
  Você deve incluir o seguinte `using` instruções:  
   
 ```  
@@ -78,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Há dois tipos de diagramas de sequência: aqueles que são criados manualmente em um projeto de modelagem UML e aqueles que foram gerados por código do programa. Use o `UmlMode` ter propriedade para descobrir qual sequência de diagrama.  
   
 > [!NOTE]
->  Essa propriedade retorna false somente para diagramas de sequência gerado por meio do código usando o Visual Studio 2013 e versões anteriores. Isso inclui a sequência de código gerado diagramas migrados do 2013 e anteriores. Esta versão do Visual Studio não dá suporte a gerar novos diagramas de sequência.  
+> Essa propriedade retorna false somente para diagramas de sequência gerado por meio do código usando o Visual Studio 2013 e versões anteriores. Isso inclui a sequência de código gerado diagramas migrados do 2013 e anteriores. Esta versão do Visual Studio não dá suporte a gerar novos diagramas de sequência.  
   
  Por exemplo, se você quiser fazer um comando de menu que só é visível em diagramas de sequência UML, então o `QueryStatus()` método poderia incluir a instrução a seguir:  
   
@@ -256,6 +253,3 @@ cf.CreateInteractionOperand(cf.Operands.Last(), true);
  [Definir um personalizado item de caixa de ferramentas de modelagem](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

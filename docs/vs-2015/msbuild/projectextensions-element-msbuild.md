@@ -19,17 +19,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8241033be738e7f608f3a83531d6fde52e9361
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0afc4f73ed287f753acf87bd0b112e6f5303e996
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62551242"
 ---
 # <a name="projectextensions-element-msbuild"></a>Elemento ProjectExtensions (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] contenham informações não [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Tudo dentro de um elemento `ProjectExtensions` será ignorado por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
  \<Project>  
@@ -47,10 +46,10 @@ Permite que arquivos de projeto [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild
  As seções a seguir descrevem atributos, elementos filho e elementos pai.  
   
 ### <a name="attributes"></a>Atributos  
- Nenhuma  
+ Nenhum  
   
 ### <a name="child-elements"></a>Elementos filho  
- Nenhuma  
+ Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
   

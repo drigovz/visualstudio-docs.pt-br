@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938043"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -77,9 +77,9 @@ Clique com o botão direito do mouse em **Pacotes** para acessar o menu de conte
 
 ![Menu Pacotes](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Adicionar pacotes** –Abre a janela para adicionar mais pacotes ao projeto.
-*   **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
-*   **Restaurar** – Baixa todos os pacotes ausentes (sem atualizar os pacotes existentes para as versões mais recentes).
+* **Adicionar pacotes** –Abre a janela para adicionar mais pacotes ao projeto.
+* **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
+* **Restaurar** – Baixa todos os pacotes ausentes (sem atualizar os pacotes existentes para as versões mais recentes).
 
 As opções Atualizar e Restaurar também estão disponíveis no nível da Solução, afetando todos os projetos na solução.
 
@@ -87,9 +87,9 @@ Também é possível clicar com o botão direito do mouse em pacotes individuais
 
 ![Menu Pacotes](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Número de versão** – O número de versão é um item de menu desabilitado, sendo informado apenas para fins informativos.
-*   **Atualizar** – Verifica o servidor de origem e baixa uma versão mais recente (se houver).
-*   **Remover** – Remove o pacote desse projeto e os assemblies relevantes das Referências do projeto.
+* **Número de versão** – O número de versão é um item de menu desabilitado, sendo informado apenas para fins informativos.
+* **Atualizar** – Verifica o servidor de origem e baixa uma versão mais recente (se houver).
+* **Remover** – Remove o pacote desse projeto e os assemblies relevantes das Referências do projeto.
 
 ## <a name="adding-package-sources"></a>Adicionando origens de pacotes
 

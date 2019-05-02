@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910404"
 ---
 # <a name="command-implementation"></a>Implementação do comando
 Para implementar um comando em um VSPackage, você deve executar as seguintes tarefas:
 
-1.  No *VSCT* de arquivos, configure um grupo de comando e, em seguida, adicione o comando a ele. Para obter mais informações, consulte [arquivos de tabela (. VSCT) de comando do Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. No *VSCT* de arquivos, configure um grupo de comando e, em seguida, adicione o comando a ele. Para obter mais informações, consulte [arquivos de tabela (. VSCT) de comando do Visual Studio](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Registre o comando com o Visual Studio.
+2. Registre o comando com o Visual Studio.
 
-3.  Implemente o comando.
+3. Implemente o comando.
 
 As seções a seguir explicam como registrar e implementar comandos.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Métodos de QueryStatus
  Se você estiver implementando um os <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> método ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> método, verificar se o GUID do comando conjunto ao qual pertence o comando e a ID do comando. Siga estas diretrizes:
 
--   Se o GUID não for reconhecido, sua implementação de qualquer um dos métodos deve retornar <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Se o GUID não for reconhecido, sua implementação de qualquer um dos métodos deve retornar <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Se sua implementação de qualquer um dos métodos reconhece o GUID, mas não implementou o comando, então o método deverá retornar <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Se sua implementação de qualquer um dos métodos reconhece o GUID, mas não implementou o comando, então o método deverá retornar <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Se sua implementação de qualquer um dos métodos reconhece o GUID e o comando e, em seguida, o método deve definir o campo de sinalizadores de comando de cada comando (na `prgCmds` parâmetro) usando os seguintes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores:
+- Se sua implementação de qualquer um dos métodos reconhece o GUID e o comando e, em seguida, o método deve definir o campo de sinalizadores de comando de cada comando (na `prgCmds` parâmetro) usando os seguintes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores:
 
-    -   `OLECMDF_SUPPORTED`: Há suporte para o comando.
+    - `OLECMDF_SUPPORTED`: Há suporte para o comando.
 
-    -   `OLECMDF_INVISIBLE`: O comando não deve estar visível.
+    - `OLECMDF_INVISIBLE`: O comando não deve estar visível.
 
-    -   `OLECMDF_LATCHED`: O comando é ativado e parece ter sido marcada.
+    - `OLECMDF_LATCHED`: O comando é ativado e parece ter sido marcada.
 
-    -   `OLECMDF_ENABLED`: O comando é habilitado.
+    - `OLECMDF_ENABLED`: O comando é habilitado.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: O comando deve ser ocultado, se ele for exibido em um menu de atalho.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: O comando deve ser ocultado, se ele for exibido em um menu de atalho.
 
-    -   `OLECMDF_NINCHED`: O comando é um controlador de menu e não está habilitado, mas sua lista do menu suspenso não está vazia e ainda está disponível. (Esse sinalizador é raramente usado.)
+    - `OLECMDF_NINCHED`: O comando é um controlador de menu e não está habilitado, mas sua lista do menu suspenso não está vazia e ainda está disponível. (Esse sinalizador é raramente usado.)
 
--   Se o comando tiver sido definido na *. VSCT* do arquivo com o `TextChanges` sinalizador, defina os seguintes parâmetros:
+- Se o comando tiver sido definido na *. VSCT* do arquivo com o `TextChanges` sinalizador, defina os seguintes parâmetros:
 
-    -   Defina as `rgwz` elemento do `pCmdText` parâmetro para o novo texto do comando.
+    - Defina as `rgwz` elemento do `pCmdText` parâmetro para o novo texto do comando.
 
-    -   Defina as `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.
+    - Defina as `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.
 
 Além disso, certifique-se de que o contexto atual não é uma função de automação, a menos que o comando é projetado especificamente para lidar com funções de automação.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: af6789bc858a9281084523b2e99c7daca38c4159
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e67f41bc4e30f0790e672a241dfe478a13ded9b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407558"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 O método `CommentMarkAtProfile` insere um valor de carimbo de data/hora, uma marca numérica e uma cadeia de caracteres de comentário no arquivo .*vsp*. O valor de carimbo de data/hora pode ser usado para sincronizar os eventos externos. Para que a marcação e o comentário sejam inseridos, a criação de perfil para o thread que contém a função CommentMarkAtProfile deve ser ON.
@@ -60,7 +60,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ligado quando as marcas e os comentários são inseridos com o comando Mark ou com as funções da API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile). Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .vsp.
 
 > [!IMPORTANT]
->  Os métodos CommentMarkAtProfile devem ser usados somente com a instrumentação.
+> Os métodos CommentMarkAtProfile devem ser usados somente com a instrumentação.
 
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

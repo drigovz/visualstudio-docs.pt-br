@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861965"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do editor de núcleo
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor principal usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores do editor. No entanto, ele é recomendável que você adapte suas personalizações para o novo editor de API.
 
  As áreas a seguir estão alguns aspectos importantes do que o editor principal:
 
--   Buffer de texto
+- Buffer de texto
 
--   Exibição de texto
+- Exibição de texto
 
--   Janela de código
+- Janela de código
 
--   Marcadores de texto
+- Marcadores de texto
 
--   Gerenciador de texto
+- Gerenciador de texto
 
--   Integração com serviços de linguagem
+- Integração com serviços de linguagem
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Criar uma instância o editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md) fornece instruções passo a passo sobre como usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> para criar uma instância do núcleo do editor.

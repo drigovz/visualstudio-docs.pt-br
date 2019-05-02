@@ -15,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d402287443e3cdd643a76853e62c11c64e3d3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0277d0f04042b6d7ed4cb8b6233d8b0ccec464f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54951151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62843885"
 ---
 # <a name="add-and-remove-property-pages"></a>Adicionar e remover as páginas de propriedade
 
@@ -32,7 +32,7 @@ Com frequência precisa de um subtipo de projeto para exibir páginas de proprie
 
 ### <a name="remove-a-property-page"></a>Remover uma página de propriedades
 
-1.  Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade e obter um `clsids` lista.
+1. Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade e obter um `clsids` lista.
 
     ```vb
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)
@@ -77,7 +77,7 @@ Com frequência precisa de um subtipo de projeto para exibir páginas de proprie
     }
     ```
 
-2.  Remover o **eventos de Build** obtida da página de `clsids` lista.
+2. Remover o **eventos de Build** obtida da página de `clsids` lista.
 
     ```vb
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"
@@ -113,7 +113,7 @@ Com frequência precisa de um subtipo de projeto para exibir páginas de proprie
 
 ### <a name="add-a-property-page"></a>Adicionar uma página de propriedades
 
-1.  Crie uma página de propriedades que você deseja adicionar.
+1. Crie uma página de propriedades que você deseja adicionar.
 
     ```vb
     Class DeployPropertyPage
@@ -158,7 +158,7 @@ Com frequência precisa de um subtipo de projeto para exibir páginas de proprie
     }
     ```
 
-2.  Registre-se a nova página de propriedade.
+2. Registre-se a nova página de propriedade.
 
     ```vb
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>
@@ -168,7 +168,7 @@ Com frequência precisa de um subtipo de projeto para exibir páginas de proprie
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]
     ```
 
-3.  Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade, obter um `clsids` lista e adicione uma nova página de propriedade.
+3. Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade, obter um `clsids` lista e adicione uma nova página de propriedade.
 
     ```vb
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer

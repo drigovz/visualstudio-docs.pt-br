@@ -1,12 +1,9 @@
 ---
 title: Propriedades de elementos em diagramas de atividade UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.shapes.properties
 helpviewer_keywords:
@@ -16,13 +13,13 @@ ms.assetid: 9849d45e-65d5-46bd-a319-757e90b7c748
 caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5a3233d073a4b54c7c52b4b725f0d15833f5a51f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a442d3a116fa527271cad5acd2ffc7f7fec5d076
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444446"
 ---
 # <a name="properties-of-elements-on-uml-activity-diagrams"></a>Propriedades de elementos em diagramas de atividade UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,14 +27,14 @@ ms.locfileid: "51803052"
 Em um diagrama de atividade UML, cada elemento no diagrama tem propriedades. Para ver as propriedades de um elemento, clique com botão direito do elemento no diagrama ou no **Gerenciador de modelos UML** e, em seguida, clique em **propriedades**. As propriedades aparecem na **propriedades** janela.  
   
 > [!NOTE]
->  Este tópico é sobre as propriedades de elementos em diagramas de atividade UML. Para obter informações sobre como ler diagramas de atividade UML, consulte [diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md). Para obter mais informações sobre como desenhar diagramas de atividade UML, consulte [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+> Este tópico é sobre as propriedades de elementos em diagramas de atividade UML. Para obter informações sobre como ler diagramas de atividade UML, consulte [diagramas de atividade UML: Referência](../modeling/uml-activity-diagrams-reference.md). Para obter mais informações sobre como desenhar diagramas de atividade UML, consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
 ## <a name="properties-of-elements"></a>Propriedades de elementos  
   
 |         Propriedade         |        Padrão         |                               Elemento                               |                                                                                                                                                                Descrição                                                                                                                                                                 |
 |--------------------------|------------------------|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         **Nome**         |     Um nome padrão     |                                 Todos                                 |                                                                                                                                                          Identifica o elemento.                                                                                                                                                           |
-|    **Nome qualificado**    |    Pacote:: nome     |                                 Todos                                 |                                                                                                                     Identifica exclusivamente o elemento. O nome qualificado do pacote que contém o prefixo.                                                                                                                     |
+|    **Nome qualificado**    |    Pacote:: Nome     |                                 Todos                                 |                                                                                                                     Identifica exclusivamente o elemento. O nome qualificado do pacote que contém o prefixo.                                                                                                                     |
 |      **Itens de trabalho**      |      0 associados      |                                 Todos                                 |                                                                                O número de itens de trabalho associado a este elemento. Para associar itens de trabalho, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).                                                                                |
 |     **Descrição**      |         (nenhum)         |                                 Todos                                 |                                                                                                                                             Você pode fazer observações gerais sobre o elemento aqui.                                                                                                                                             |
 |        **Cor**         | (padrão para o tipo) |                                 Todos                                 |                                                                                                                                                          A cor da forma.                                                                                                                                                           |
@@ -57,12 +54,9 @@ Em um diagrama de atividade UML, cada elemento no diagrama tem propriedades. Par
 |     **Multiplicidade**     |           1            |                        Pino de entrada, pinos de saída                        | -Pode ser um único valor, ou um intervalo `[n..m]`.<br />-O limite inferior `n` – a ação não é possível iniciar (para um pino de entrada) ou parar (para um pino de saída) até que não haja `n` objetos aguardando o pin.<br />-Limite `m` – a ação não pode consumir ou produzir mais de `m` objetos em uma execução. \* significa que não há nenhum limite. |
 |    **Transformação**    |         (nenhum)         |                             Fluxo de objeto                             |                                                                                                                      -Invoca um processo que transforma os dados. Esse processo pode ser definido em outro diagrama.                                                                                                                       |
 |     **É Multicast**     |         False          |                             Fluxo de objeto                             |                                                                                                                                 -Indica que pode haver vários objetos de destinatário ou componentes.                                                                                                                                 |
-|   **É MultiReceive**    |         False          |                             Fluxo de objeto                             |                                                                                                                                 -Indica que pode haver vários objetos de destinatário ou componentes.                                                                                                                                 |
+|   **Is MultiReceive**    |         False          |                             Fluxo de objeto                             |                                                                                                                                 -Indica que pode haver vários objetos de destinatário ou componentes.                                                                                                                                 |
 | **É a única execução**  |         False          |                          Diagrama de atividade                           |                                                                                                                                   -Se definido, o que há no máximo uma execução de neste diagrama, cada vez.                                                                                                                                    |
   
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [Diagramas de atividade de UML: Referência](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramas de atividade de UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)

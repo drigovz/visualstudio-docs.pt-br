@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 705fe42cf158992bb041ac9b75348f7b25945631
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892248"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>Escolher entre VSPackages compartilhados e com controle de versão
 Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSPackages pode dar suporte a qualquer combinação de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] versões.

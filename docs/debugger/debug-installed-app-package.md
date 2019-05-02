@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563151"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Depurar um pacote de aplicativo UWP instalado no Visual Studio
 
@@ -97,7 +97,7 @@ Para obter mais informações sobre a implantação remota de aplicativos UWP, c
 ## <a name="see-also"></a>Consulte também
 
 - [Depurando no Visual Studio](../debugger/index.md)
-- [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+- [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depuração remota](../debugger/remote-debugging.md)
 - [Configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md)

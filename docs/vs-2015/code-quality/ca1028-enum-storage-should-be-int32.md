@@ -1,14 +1,9 @@
 ---
-title: 'CA1028: O armazenamento de Enum deve ser Int32 | Microsoft Docs'
-ms.custom: ''
+title: 'CA1028: Armazenamento de enum deve ser Int32 | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1028
 - EnumStorageShouldBeInt32
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9d5d3b42dc9880721e8e583a1402e56c242d5c47
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e79eb7e0ed33184103cc772c13515959cf973ecc
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892143"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926992"
 ---
-# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: o armazenamento de enum deve ser Int32
+# <a name="ca1028-enum-storage-should-be-int32"></a>CA1028: O armazenamento de enumerações deve ser Int32
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -68,20 +63,17 @@ ms.locfileid: "49892143"
  [!code-vb[FxCop.Design.EnumIntegralTypeFixed#1](../snippets/visualbasic/VS_Snippets_CodeAnalysis/FxCop.Design.EnumIntegralTypeFixed/vb/FxCop.Design.EnumIntegralTypeFixed.vb#1)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1008: as enums devem ter valor zero](../code-quality/ca1008-enums-should-have-zero-value.md)
+ [CA1008: Enums devem ter valor zero](../code-quality/ca1008-enums-should-have-zero-value.md)
 
- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
- [CA1700: não nomear valores de enum como 'Reservados'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
+ [CA1700: Não nomeie valores de enumeração 'Reservados'](../code-quality/ca1700-do-not-name-enum-values-reserved.md)
 
- [CA1712: não usar valores de enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
+ [CA1712: Valores enum como prefixo com o nome do tipo](../code-quality/ca1712-do-not-prefix-enum-values-with-type-name.md)
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Byte?displayProperty=fullName> <xref:System.Int16?displayProperty=fullName>
  <xref:System.Int32?displayProperty=fullName>
  <xref:System.Int64?displayProperty=fullName>
-
-
-

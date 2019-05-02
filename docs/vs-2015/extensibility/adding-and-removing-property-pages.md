@@ -1,14 +1,9 @@
 ---
 title: Adicionando e removendo páginas de propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - property pages, adding
 - property pages, project subtypes
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 680a375d025d59d12c2a070bc564ff94085bc4b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98838f09df3094e16d5f1a18263ffdad603ded0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440134"
 ---
 # <a name="adding-and-removing-property-pages"></a>Adicionando e removendo páginas de propriedade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>Para remover uma página de propriedades no Designer de projeto  
   
-1.  Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade e obter um `clsids` lista.  
+1. Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade e obter um `clsids` lista.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -80,7 +75,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
     }  
     ```  
   
-2.  Remover o **eventos de Build** obtida da página de `clsids` lista.  
+2. Remover o **eventos de Build** obtida da página de `clsids` lista.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -116,7 +111,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Para adicionar uma página de propriedades no Designer de projeto  
   
-1.  Crie uma página de propriedades que você deseja adicionar.  
+1. Crie uma página de propriedades que você deseja adicionar.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -161,7 +156,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
     }  
     ```  
   
-2.  Registre-se a nova página de propriedade.  
+2. Registre-se a nova página de propriedade.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -171,7 +166,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade, obter um `clsids` lista e adicione uma nova página de propriedade.  
+3. Substituir a `GetProperty(uint itemId, int propId, out object property)` método para filtrar as páginas de propriedade, obter um `clsids` lista e adicione uma nova página de propriedade.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  
@@ -210,8 +205,7 @@ O Designer de projeto fornece um local centralizado para gerenciar as propriedad
     ```  
   
 > [!NOTE]
->  Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior, [exemplos de VSSDK](../misc/vssdk-samples.md).  
+> Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior, [exemplos de VSSDK](../misc/vssdk-samples.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Subtipos de projeto](../extensibility/internals/project-subtypes.md)
-

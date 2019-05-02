@@ -1,14 +1,9 @@
 ---
 title: 'CA1303: Não passar literais como localizados parâmetros | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - Do not pass literals as localized parameters
 - DoNotPassLiteralsAsLocalizedParameters
@@ -21,14 +16,14 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d900abe23dab4d950b5790798916fe728a44af4a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49886549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111734"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: não passar literais como parâmetros localizados
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Não passar literais como parâmetros localizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,11 +38,11 @@ ms.locfileid: "49886549"
 
  Esse aviso é acionado quando uma cadeia de caracteres literal é passada como um valor para um parâmetro ou uma propriedade e um ou mais dos casos a seguir forem verdadeira:
 
--   O <xref:System.ComponentModel.LocalizableAttribute> atributo do parâmetro ou da propriedade é definido como true.
+- O <xref:System.ComponentModel.LocalizableAttribute> atributo do parâmetro ou da propriedade é definido como true.
 
--   O nome de parâmetro ou a propriedade contém "Text", "Mensagem" ou "Legenda".
+- O nome de parâmetro ou a propriedade contém "Text", "Mensagem" ou "Legenda".
 
--   O nome do parâmetro de cadeia de caracteres que é passado para um método console. Write ou console. WriteLine é "valor" ou "formato".
+- O nome do parâmetro de cadeia de caracteres que é passado para um método console. Write ou console. WriteLine é "valor" ou "formato".
 
 ## <a name="rule-description"></a>Descrição da Regra
  Literais de cadeia de caracteres que são inseridos no código-fonte são difíceis de localizar.
@@ -69,6 +64,3 @@ ms.locfileid: "49886549"
 
 ## <a name="see-also"></a>Consulte também
  [Recursos em aplicativos de área de trabalho](http://msdn.microsoft.com/library/8ad495d4-2941-40cf-bf64-e82e85825890)
-
-
-

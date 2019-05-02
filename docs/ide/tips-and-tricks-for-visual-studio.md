@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e420ed36168e45e067a78a1118b2199981aff3eb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b985d4609c40c36d15a5ba8dea0a57aff06b2941
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950332"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Atalhos de teclado para o Visual Studio
 
@@ -50,9 +50,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |||
 |-|-|
 |Pesquisa do Gerenciador de Soluções|**Ctrl**+**;**|
-|Foque na caixa de Pesquisa em qualquer janela de ferramentas|**Alt**+**`** quando a janela de ferramentas tiver foco|
-|Início Rápido|**Ctrl**+**Q**|
-|Resultados de Escopo de Início Rápido|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
+|Foque na caixa de pesquisa em qualquer janela de ferramentas|**Alt**+**`** quando a janela de ferramentas tiver foco|
+|Caixa de pesquisa|**Ctrl**+**Q**|
+|Resultados de escopo da caixa de pesquisa|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
 |Pesquisar em Opções de Ferramentas|**Ctrl**+**E**|
 
 ## <a name="editor-find"></a>Localização de editor
@@ -70,9 +70,9 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos de 
 |Localizar em Arquivos|**Ctrl**+**Shift**+**F**|
 |Substituir nos Arquivos|**Ctrl**+**Shift**+**H**|
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código
+## <a name="BKMK_CodeEditor"></a> Editor de código
 
-|Comando|Atalho|Disponibilidade de versão|
+|Comando|Atalho|Quando introduzido|
 |-|-|-|
 |Ir para Todos|**Ctrl**+**T**|
 |Ir para Arquivos Recentes|**Ctrl**+**T**,**R**|

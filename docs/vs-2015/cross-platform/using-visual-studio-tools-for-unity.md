@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443357"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.  
   
 ## <a name="unity-integration-and-productivity"></a>Integração e produtividade do Unity  
@@ -30,7 +29,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-access-unity-documentation"></a>Para acessar a documentação do Unity  
   
--   No Visual Studio, destaque ou coloque o cursor sobre a API do Unity sobre a qual deseja saber mais e depois pressione **Ctrl + Alt + M, Ctrl + H**  
+- No Visual Studio, destaque ou coloque o cursor sobre a API do Unity sobre a qual deseja saber mais e depois pressione **Ctrl + Alt + M, Ctrl + H**  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Assistente de script do Unity MonoBehavior  
  No Unity, a maioria dos scripts são implementados ao derivar da classe MonoBehavior e substituir alguns de seus métodos. Você pode usar o Assistente do MonoBehavior para criar rapidamente definições vazias dos métodos MonoBehavior que deseja sobrecarregar. ao usar este assistente, você pode especificar um ou mais métodos que deseja sobrecarregar da lista de métodos disponíveis, selecionar onde serão inseridos no seu código e decidir se deseja incluir comentários sobre como eles são usados.  
@@ -60,13 +59,13 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Para criar uma definição de método MonoBehavior vazia usando o Assistente rápido do MonoBehavior  
   
-1.  No Visual Studio, posicione o cursor onde quiser que os métodos sejam inseridos e pressione **Ctrl+Shift+Q** para iniciar o Assistente rápido do MonoBehavior. Diferentemente outro do assistente do MonoBehavior, você deve posicionar o cursor intencionalmente ao usar esse assistente porque o novo método é sempre inserido ali.  
+1. No Visual Studio, posicione o cursor onde quiser que os métodos sejam inseridos e pressione **Ctrl+Shift+Q** para iniciar o Assistente rápido do MonoBehavior. Diferentemente outro do assistente do MonoBehavior, você deve posicionar o cursor intencionalmente ao usar esse assistente porque o novo método é sempre inserido ali.  
   
-2.  Certifique-se de que a versão do framework exibida no canto superior direito da janela **Criar método de script** corresponde à versão que você está usando. Se não corresponder, altere o valor da lista suspensa para a versão que deseja usar.  
+2. Certifique-se de que a versão do framework exibida no canto superior direito da janela **Criar método de script** corresponde à versão que você está usando. Se não corresponder, altere o valor da lista suspensa para a versão que deseja usar.  
   
-3.  Localize o método que deseja sobrecarregar. Na janela Criar método de script, comece digitando o nome do método na caixa de texto. Será exibida uma lista dos métodos cujos nomes correspondem ao que você inseriu.  
+3. Localize o método que deseja sobrecarregar. Na janela Criar método de script, comece digitando o nome do método na caixa de texto. Será exibida uma lista dos métodos cujos nomes correspondem ao que você inseriu.  
   
-4.  selecione o método que deseja sobrecarregar. Quando o método que deseja é exibido na lista, selecione-o com as teclas de direção ou o mouse e pressione **Enter**. Se for o único método na lista, basta pressionar **Enter**. O método é inserido no seu código.  
+4. selecione o método que deseja sobrecarregar. Quando o método que deseja é exibido na lista, selecione-o com as teclas de direção ou o mouse e pressione **Enter**. Se for o único método na lista, basta pressionar **Enter**. O método é inserido no seu código.  
   
 ### <a name="unity-project-explorer"></a>Gerenciador de Projetos do Unity  
  Você pode usar o Gerenciador de Projetos do Unity para navegar de seu projeto do Unity dentro do Visual Studio.  
@@ -104,21 +103,21 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
 ## <a name="unity-debugging"></a>Depuração do Unity  
  Ferramentas do Visual Studio para Unity permitem depurar scripts do editor e jogos para seu projeto do Unity usando um depurador poderoso do Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Conectando o Visual Studio ao Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Conectando o Visual Studio ao Unity  
  Ferramentas do Visual Studio para Unity se comunicam com o Unity por meio de uma conexão UDP. Isso significa que você pode se conectar a uma instância do Unity em execução localmente ou em qualquer lugar na rede exatamente da mesma maneira. Você pode se conectar a qualquer uma das instâncias do Unity que puder ver na rede usando a caixa de diálogo **Selecionar instância do Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Para abrir a caixa de diálogo Selecionar instância do Unity  
   
--   No Visual Studio, no menu principal, escolha **Depuração**, **Anexar depurador do Unity**.  
+- No Visual Studio, no menu principal, escolha **Depuração**, **Anexar depurador do Unity**.  
   
      ![Anexe o depurador do Unity. ](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Ou*, no Visual Studio, na barra de status, escolha o ícone de plugue no canto inferior direito do Visual Studio.  
+- *Ou*, no Visual Studio, na barra de status, escolha o ícone de plugue no canto inferior direito do Visual Studio.  
   
      ![Esse ícone mostra que VSTU está conectado ao Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Se o ícone de plugue mostrar uma marca de seleção, você já está conectado a uma instância do Unity.  
+> Se o ícone de plugue mostrar uma marca de seleção, você já está conectado a uma instância do Unity.  
   
  A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.  
   
@@ -137,9 +136,9 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
  O número da porta do soquete UDP pela qual esta instância do Unity está se comunicando.  
   
 > [!IMPORTANT]
->  Como as Ferramentas do Visual Studio para Unity e a instância do Unity se comunicam por um soquete de rede UDP, o firewall pode perguntar sobre ele. Se isso acontecer, você precisará autorizar a conexão para que o VSTU e o Unity possam se comunicar.  
+> Como as Ferramentas do Visual Studio para Unity e a instância do Unity se comunicam por um soquete de rede UDP, o firewall pode perguntar sobre ele. Se isso acontecer, você precisará autorizar a conexão para que o VSTU e o Unity possam se comunicar.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Depurando seu projeto em um Player do Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a> Depurando seu projeto em um Player do Unity  
  Você pode conectar as Ferramentas do Visual Studio para Unity diretamente ao seu aplicativo do Unity em execução em um player autônomo quando não estiver executando o Editor do Unity ou para depurar os problemas que são específicos à plataforma.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Para habilitar a depuração de scripts em um player do Unity  
@@ -155,7 +154,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
 - No Web Player do Unity, no menu de contexto, escolha **Canal de Versão** e certifique-se de que a opção **Desenvolvimento** esteja habilitada.  
   
   > [!IMPORTANT]
-  >  No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
+  > No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
   
   Finalmente, certifique-se de que você esteja conectado à instância do Unity que você deseja depurar. Para obter informações sobre como fazer isso, consulte a seção [Conectando o Visual Studio ao Unity](#connecting-visual-studio-to-unity).  
   
@@ -163,13 +162,13 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
  Muitos desenvolvedores do Unity estão escrevendo componentes de código como DLLs externas para que a funcionalidade que desenvolvem possa ser facilmente compartilhada com outros projetos. Ferramentas do Visual Studio para Unity facilitam a depuração do código nessas DLLs perfeitamente com outro código no seu projeto do Unity.  
   
 > [!NOTE]
->  Neste momento, as Ferramentas do Visual Studio para Unity dá suporte somente DLLs gerenciadas. Elas não oferecem suporte à depuração de DLLs de código nativo, como aquelas escritas em C++.  
+> Neste momento, as Ferramentas do Visual Studio para Unity dá suporte somente DLLs gerenciadas. Elas não oferecem suporte à depuração de DLLs de código nativo, como aquelas escritas em C++.  
   
  Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte, ou seja, se você estiver desenvolvendo ou reutilizando seu próprio código primário ou se você tiver o código-fonte em uma biblioteca de terceiros e pretender implantá-lo em seu projeto do Unity como uma DLL. Esse cenário não descreve como depurar uma DLL para a qual você não tem o código-fonte.  
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar um projeto de DLL gerenciado usado em seu projeto do Unity  
   
-1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, confira [Como: Adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
     ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   

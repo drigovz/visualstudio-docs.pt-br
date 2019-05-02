@@ -13,21 +13,20 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b63060e82767f18bdda5a7df21972d23666f258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419787"
 ---
 # <a name="toolbox-data-tab"></a>Caixa de Ferramentas, Guia Dados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Exibe objetos de dados que é possível adicionar a formulários e componentes. A guia **Dados** da **Caixa de Ferramentas** é exibida ao criar um projeto que tem um designer associado. A **Caixa de Ferramentas** é exibida por padrão no ambiente de desenvolvimento integrado do Visual Studio; se for preciso exibir a **Caixa de Ferramentas**, selecione **Caixa de Ferramentas** no menu **Exibir**.  
   
 > [!TIP]
->  Executar o Assistente de configuração de fonte de dados cria e configura automaticamente a maioria dos itens de dados. Para obter mais informações, consulte [Criando aplicativos de dados usando Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+> Executar o Assistente de configuração de fonte de dados cria e configura automaticamente a maioria dos itens de dados. Para obter mais informações, consulte [Criando aplicativos de dados usando Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário  
  Para acessar diretamente a página de referência do .NET Framework para um componente, pressione **F1** no item na **Caixa de Ferramentas** ou no item de componente na bandeja do designer.  

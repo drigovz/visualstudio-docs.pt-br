@@ -7,10 +7,18 @@ ms.topic: landing-page
 ms.author: gewarren
 author: gewarren
 manager: jillfra
+ms.openlocfilehash: 9cc40bdd7b0e120e3a8e3e5be28f4d399afb9210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820727"
 ---
 # <a name="code-analysis-in-visual-studio"></a>Análise de código no Visual Studio
 
 O Visual Studio fornece várias ferramentas diferentes para analisar e melhorar a qualidade do código.
+
+<!-- markdownlint-disable MD033 -->
 
 <br />
 

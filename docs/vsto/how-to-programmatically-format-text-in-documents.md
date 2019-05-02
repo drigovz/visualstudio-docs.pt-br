@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66ca84d2246a3335aa3a1bbc0900ca6f48f59f01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b9f0f64f47317b5712c34d8aca4ea6f64191438e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971128"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>Como: Por meio de programação de formatar texto em documentos
   Você pode usar o <xref:Microsoft.Office.Interop.Word.Range> objeto para formatar o texto em um documento do Microsoft Office Word.
@@ -32,7 +32,7 @@ ms.locfileid: "56630685"
 
 ### <a name="to-format-text-using-a-document-level-customization"></a>Para formatar o texto usando uma personalização no nível de documento
 
-1.  O exemplo a seguir pode ser usado em uma personalização no nível de documento. Para usar esse código, executá-la na `ThisDocument` classe em seu projeto.
+1. O exemplo a seguir pode ser usado em uma personalização no nível de documento. Para usar esse código, executá-la na `ThisDocument` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#62)]
      [!code-csharp[Trin_VstcoreWordAutomation#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#62)]
@@ -41,7 +41,7 @@ ms.locfileid: "56630685"
 
 ### <a name="to-format-text-using-a-vsto-add-in"></a>Para formatar o texto usando um suplemento do VSTO
 
-1.  O exemplo a seguir pode ser usado em um suplemento do VSTO. Este exemplo usa o documento ativo. Para usar esse código, executá-la na `ThisAddIn` classe em seu projeto.
+1. O exemplo a seguir pode ser usado em um suplemento do VSTO. Este exemplo usa o documento ativo. Para usar esse código, executá-la na `ThisAddIn` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#62)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#62](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#62)]

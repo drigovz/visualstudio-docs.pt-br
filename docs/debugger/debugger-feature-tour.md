@@ -1,8 +1,8 @@
 ---
-title: Depurar aplicativos usando o Visual Studio
+title: Introdução ao depurador
 description: Introdução à depuração de aplicativos usando o depurador do Visual Studio
-ms.custom: mvc
-ms.date: 01/09/2019
+ms.custom: seoapril2019
+ms.date: 04/08/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - debugger
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f0248936b41c9103a772cd4b2622f4fddfe5fff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853922"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -77,7 +77,7 @@ Enquanto estiver no depurador, passe o mouse sobre uma linha de código até que
 ![Executar com um Clique](../debugger/media/dbg-tour-run-to-click-2.png "Executar com um Clique")
 
 > [!NOTE]
-> O botão **Executar com um Clique** (Realizar a execução até aqui) é novo no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> O botão **Executar com um Clique** (Realizar a execução até aqui) está disponível no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] em diante.
 
 Clique no botão **Executar com um Clique** (Realizar a execução até aqui). O depurador avança até a linha de código em que você clicou.
 
@@ -188,7 +188,7 @@ Neste exemplo, a chamada `DirectoryInfo` gerou o erro na cadeia de caracteres va
 O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros. Você também pode fazer coisas como exibir detalhes do erro e adicionar uma inspeção por meio do Auxiliar de Exceção. Ou, se necessário, você pode alterar as condições para lançar a exceção específica. Para obter mais informações de como tratar exceções no código, confira [Técnicas e ferramentas de depuração](../debugger/write-better-code-with-visual-studio.md).
 
 > [!NOTE]
-> O Auxiliar de Exceção substitui o Assistente de Exceção no [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
+> O Auxiliar de Exceção substituiu o Assistente de Exceção do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o nó **Configurações de Exceção** para ver mais opções de como lidar com esse tipo de exceção, mas você não precisa alterar nada neste tour!
 

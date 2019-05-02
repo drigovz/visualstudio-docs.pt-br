@@ -1,5 +1,5 @@
 ---
-title: Como coletar dados de desempenho de um site da Web | Microsoft Docs
+title: 'Como: Coletar dados de desempenho de um site | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -19,20 +19,20 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 808344d1151f40f94ca3506df5c81deaa8186056
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3307b5372852d6f3e269264a02fa2c90cb1acd22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432792"
 ---
-# <a name="how-to-collect-performance-data-for-a-web-site"></a>Como coletar dados de desempenho de um site da Web
+# <a name="how-to-collect-performance-data-for-a-web-site"></a>Como: Coletar dados de desempenho para um Site da Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho para um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível criar o perfil de um aplicativo Web que esteja aberto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou criar um perfil de um site da Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] que está localizado no computador local e não aberto no IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  O **Assistente de Desempenho** permite que você adicione dados de interação de camadas (TIP), dados de desempenho de JScript ou ambos os dados de criação de perfil coletados. A opção TIP coleta dados de processos do servidor. A criação de perfil do JScript coleta dados de scripts que são executados em um site da Web local ou remoto. Na maioria dos casos, você deve escolher apenas uma das opções.  
+> O **Assistente de Desempenho** permite que você adicione dados de interação de camadas (TIP), dados de desempenho de JScript ou ambos os dados de criação de perfil coletados. A opção TIP coleta dados de processos do servidor. A criação de perfil do JScript coleta dados de scripts que são executados em um site da Web local ou remoto. Na maioria dos casos, você deve escolher apenas uma das opções.  
   
  Dependendo das configurações de Permissões de Acesso do Usuário que um administrador tenha disponibilizado, um usuário individual pode ter ou não a permissão de segurança para criar uma sessão de criador de perfil no computador que hospeda o processo ASP.NET. Os exemplos a seguir ilustram possíveis diferenças entre os usuários:  
   
@@ -46,25 +46,25 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
 ### <a name="to-profile-a-web-site-project"></a>Para criar o perfil de um projeto de site da Web  
   
-1.  Abra o projeto Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] ou [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
+1. Abra o projeto Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] em [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] ou [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].  
   
-2.  No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.  
+2. No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.  
   
-3.  Na primeira página do assistente, selecione um método de criação de perfil e, em seguida, clique em **Avançar**. Para obter mais informações sobre métodos de criação de perfil, consulte [Noções básicas sobre métodos de coleta de desempenho](../profiling/understanding-performance-collection-methods.md). Observe que o método de criação de perfil do visualizador de simultaneidade não está disponível para aplicativos Web.  
+3. Na primeira página do assistente, selecione um método de criação de perfil e, em seguida, clique em **Avançar**. Para obter mais informações sobre métodos de criação de perfil, consulte [Noções básicas sobre métodos de coleta de desempenho](../profiling/understanding-performance-collection-methods.md). Observe que o método de criação de perfil do visualizador de simultaneidade não está disponível para aplicativos Web.  
   
-4.  Na lista suspensa **Qual aplicativo você deseja direcionar para a criação de perfil?**, certifique-se de que o projeto atual esteja selecionado e, em seguida, clique em **Avançar**.  
+4. Na lista suspensa **Qual aplicativo você deseja direcionar para a criação de perfil?**, certifique-se de que o projeto atual esteja selecionado e, em seguida, clique em **Avançar**.  
   
-5.  Na terceira página do assistente, você pode adicionar dados de criação de perfil de interação de camada (TIP), dados do JavaScript em execução nas páginas da Web ou ambos.  
+5. Na terceira página do assistente, você pode adicionar dados de criação de perfil de interação de camada (TIP), dados do JavaScript em execução nas páginas da Web ou ambos.  
   
-    -   Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
+    - Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
   
-    -   Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
+    - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
   
-6.  Clique em **Avançar**.  
+6. Clique em **Avançar**.  
   
-7.  Na quarta página do assistente, clique em **Concluir**.  
+7. Na quarta página do assistente, clique em **Concluir**.  
   
-8.  Uma sessão de desempenho é criada para o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e o site da Web é iniciado no navegador. Execute a funcionalidade para qual deseja criar o perfil e, em seguida, feche o navegador.  
+8. Uma sessão de desempenho é criada para o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e o site da Web é iniciado no navegador. Execute a funcionalidade para qual deseja criar o perfil e, em seguida, feche o navegador.  
   
      O criador de perfil gera o arquivo de dados e demonstra a exibição dos dados de Resumo na janela principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -84,15 +84,15 @@ Você pode usar o **Assistente de Desempenho** para coletar dados de desempenho 
   
    - Para um site da Web baseado em um arquivo, digite um caminho como file///**c:\WebSites\MySite\default.aspx**. Isso faz com que o aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] localizado em c:\webSites\MySite tenha seu perfil criado e a página http://localhost:nnnn/MySite/default.aspx seja iniciada no Internet Explorer para iniciar a sessão.  
   
-   - Para sites externos sobre os quais deseja coletar dados de JavaScript, digite a URL, por exemplo, http://www.contoso.com.  
+   - Para sites externos que você deseja coletar dados de JavaScript, digite a URL, por exemplo, http:\//www.contoso.com.  
   
      Para obter mais informações, exiba as páginas de propriedades para um binário de destino de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 6. Na terceira página do assistente, você pode adicionar dados de criação de perfil de interação de camada (TIP), dados do JavaScript em execução nas páginas da Web ou ambos.  
   
-   -   Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
+   - Para coletar a interação da camada, selecione a caixa de seleção **Habilitar Criação de Perfil de Interação de Camada**.  
   
-   -   Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
+   - Para coletar dados do JavaScript em execução nas páginas da Web, selecione a caixa de seleção **Criar perfil de JavaScript**.  
   
 7. Clique em **Avançar**.  
   

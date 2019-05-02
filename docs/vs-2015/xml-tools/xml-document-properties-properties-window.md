@@ -1,36 +1,30 @@
 ---
 title: Propriedades de documento XML, a janela de propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 9dbb34d9-02ea-4201-b445-c98a0eb0d6db
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: c93defe6f5c56966195f1514b5aa76464f6f3013
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7906cc40eef813fcfd8996954e7073eb3e8508e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438852"
 ---
 # <a name="xml-document-properties-properties-window"></a>Propriedades de documento XML, a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O **propriedades** janela fornece informações básicas sobre o documento que está ativo no Editor de XML. As propriedades que estão disponíveis varia dependendo do tipo de documento XML que está atualmente ativa.  
   
 > [!NOTE]
->  Todas as propriedades de documento XML são salvas na solução. Como resultado, você não tem que digitar novamente esses valores na próxima vez que você abrir a solução.  
+> Todas as propriedades de documento XML são salvas na solução. Como resultado, você não tem que digitar novamente esses valores na próxima vez que você abrir a solução.  
   
- **Codificação**  
+ **Encoding**  
  A codificação de caractere para o arquivo. Alterar essa propriedade também altera o atributo de codificação na declaração XML, e vice-versa. A nova codificação será usada para codificar o arquivo quando você salvar o arquivo.  
   
  **Entrada**  
@@ -56,6 +50,3 @@ O **propriedades** janela fornece informações básicas sobre o documento que e
 ## <a name="see-also"></a>Consulte também  
  [Editor de XML](../xml-tools/xml-editor.md)   
  [Componentes do editor de XML](../xml-tools/xml-editor-components.md)
-
-
-

@@ -11,24 +11,36 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 166ff1fae5cbc494fe287a47a2983fc52364493b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953306"
 ---
-# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro serviço Web ASP.NET Core no F#
+# <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro serviço Web ASP.NET Core no F\#
 
 Nesta introdução de 5 a 10 minutos para o F# no Visual Studio, você criará um aplicativo Web ASP.NET Core em F#.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto vem com arquivos de modelo que constituem um serviço Web funcional, mesmo sem adicionar nada!
 
-1. Abra o Visual Studio 2017.
+::: moniker range="vs-2017"
+
+1. Abra o Visual Studio.
 
 2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
 
@@ -39,6 +51,22 @@ Primeiro, você criará um projeto de API Web do ASP.NET Core. O tipo de projeto
      ![Carga de trabalho ASP.NET no instalador do VS](../ide/media/quickstart-aspnet-workload.png)
 
 4. Na caixa de diálogo **Novo aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior. (Se o **ASP.NET Core 2.1** não aparecer na lista, instale-o seguindo o link **Baixar** que deve aparecer em uma barra amarela próxima à parte superior da caixa de diálogo.) Escolha **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+3. Na página **Criar um novo projeto**, digite **f# web** na caixa de pesquisa e escolha o modelo de projeto **Aplicativo Web ASP.NET Core**. Escolha **Avançar**.
+
+4. Na página **Configurar seu novo projeto**, insira um nome e escolha **Criar**.
+
+5. Na página **Criar novo Aplicativo Web ASP.NET Core**, selecione **ASP.NET Core 2.1** no menu suspenso superior e escolha **Criar**.
+
+::: moniker-end
 
 ## <a name="explore-the-ide"></a>Explorar o IDE
 

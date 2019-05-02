@@ -1,14 +1,9 @@
 ---
 title: Elemento LocationField (modelos de projeto do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#LocationField
 helpviewer_keywords:
@@ -16,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9d7d1abef8213ea06e04d35c05b38295e0b01bd9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b28fe0e696b23724758bd877b6031287290f879e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068776"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de diálogo é habilitada, desabilitada ou ocultada para o modelo de projeto.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<LocationField >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<LocationField>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -59,11 +54,11 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
   
  Os valores de texto válidos são:  
   
--   `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.  
+- `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.  
   
--   `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.  
+- `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.  
   
--   `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.  
+- `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.  
   
 ## <a name="remarks"></a>Comentários  
  O valor padrão é `Enabled`.  
@@ -103,4 +98,3 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

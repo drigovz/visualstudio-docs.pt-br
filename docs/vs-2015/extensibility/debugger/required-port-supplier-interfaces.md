@@ -1,27 +1,22 @@
 ---
 title: As Interfaces de fornecedor porta necessárias | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - port suppliers, required interfaces
 - debugging [Debugging SDK], port suppliers
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 485c295e7258f09aaf4114d5945f8136057447e6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 82e70ea9a4ba30b6b1d312188a91d9c0c8aa2904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116635"
 ---
 # <a name="required-port-supplier-interfaces"></a>Interfaces de fornecedor de porta obrigatórias
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,19 +25,19 @@ Um fornecedor de porta deve implementar o [IDebugPortSupplier2](../../extensibil
   
  Como um fornecedor de porta fornece portas, ele também deve implementar. Portanto, ele deve implementar as seguintes interfaces:  
   
--   [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
+- [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md)  
   
      Descreve a porta e pode enumerar todos os processos em execução na porta.  
   
--   [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
+- [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md)  
   
      Fornece para iniciar e encerrar processos na porta.  
   
--   [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
+- [IDebugPortNotify2](../../extensibility/debugger/reference/idebugportnotify2.md)  
   
      Fornece um mecanismo para programas em execução dentro do contexto desta porta para notificá-lo de destruição e criação de nó do programa. Para obter mais informações, consulte [nós de programa](../../extensibility/debugger/program-nodes.md).  
   
--   `IConnectionPointContainer`  
+- `IConnectionPointContainer`  
   
      Fornece um ponto de conexão para [IDebugPortEvents2](../../extensibility/debugger/reference/idebugportevents2.md).  
   
@@ -53,40 +48,39 @@ Um fornecedor de porta deve implementar o [IDebugPortSupplier2](../../extensibil
   
  Como uma porta pode iniciar e encerrar processos físicos e lógicos programas, essas interfaces também devem ser implementadas pelo mecanismo de depuração:  
   
--   [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
+- [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md)  
   
      Descreve o processo de física. Pelo menos os seguintes métodos devem ser implementados:  
   
-    -   [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
+    - [EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)  
   
-    -   [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
+    - [GetName](../../extensibility/debugger/reference/idebugprocess2-getname.md)  
   
-    -   [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
+    - [GetServer](../../extensibility/debugger/reference/idebugprocess2-getserver.md)  
   
-    -   [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
+    - [GetPhysicalProcessId](../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)  
   
-    -   [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
+    - [GetProcessId](../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)  
   
-    -   [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
+    - [GetAttachedSessionName](../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)  
   
--   [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
+- [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)  
   
      Fornece uma maneira para o SDM anexar e desanexar um processo em si.  
   
--   [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
+- [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)  
   
      Descreve a lógica do programa. Pelo menos os seguintes métodos devem ser implementados:  
   
-    -   [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
+    - [GetName](../../extensibility/debugger/reference/idebugprogram2-getname.md)  
   
-    -   [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
+    - [GetProcess](../../extensibility/debugger/reference/idebugprogram2-getprocess.md)  
   
-    -   [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
+    - [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)  
   
--   [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
+- [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md)  
   
      Fornece uma maneira para o SDM anexar a este programa.  
   
 ## <a name="see-also"></a>Consulte também  
  [Implementar um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)
-

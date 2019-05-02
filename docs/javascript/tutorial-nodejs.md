@@ -11,16 +11,28 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: da816891c53d4576518102ad7438c735c415f7b4
-ms.sourcegitcommit: 5dc74b4fdff1357df43a19f6e8a51d7bf706abd6
+ms.openlocfilehash: 62f919551a13060bfd2b2d12726164902004d1bb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/06/2019
-ms.locfileid: "55768379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995103"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e Express no Visual Studio
 
-Neste tutorial para desenvolvimento no Visual Studio usando Node.js e Express, você criará um aplicativo Web Node.js simples, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo. Se você ainda não instalou o Visual Studio, clique [aqui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Neste tutorial para desenvolvimento no Visual Studio usando Node.js e Express, você criará um aplicativo Web Node.js simples, adicionará código a ele, explorará alguns recursos do IDE e executará o aplicativo. 
+
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 Neste tutorial, você aprenderá como:
 > [!div class="checklist"]
@@ -48,11 +60,18 @@ O Express é uma estrutura de aplicativo Web, usada como uma estrutura de servid
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de desenvolvimento de Node.js.
+* Você precisa ter o Visual Studio instalado e a carga de trabalho de desenvolvimento de Node.js.
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+    ::: moniker range=">=vs-2019"
+    Se você ainda não instalou o Visual Studio 2019, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
+    ::: moniker-end
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+
+    ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Você precisa ter o tempo de execução do Node.js instalado.
 
@@ -66,13 +85,17 @@ O Visual Studio gerencia arquivos de um único aplicativo em um *projeto*. O pro
 
 Neste tutorial, você começará com um projeto simples que contém o código para um aplicativo Node.js e Express.
 
-1. Abra o Visual Studio 2017.
+1. Abra o Visual Studio.
 
-1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Crie um novo projeto.
 
-1. Na caixa de diálogo **Novo projeto**, no painel esquerdo, expanda **JavaScript** e escolha **Node.js**. No painel central, selecione **Aplicativo Node.js Express 4 Básico do Azure** e, em seguida, escolha **OK**.
-
-     Se o modelo de projeto **Aplicativo Node.js Express 4 Básico do Azure** não for exibido, você precisará instalar a carga de trabalho de **desenvolvimento do Node.js** primeiro (confira os Pré-requisitos para obter instruções).
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Node.js** e, em seguida, escolha **Criar um novo Aplicativo Básico Azure Node.js Express 4** (JavaScript). Na caixa de diálogo que aparece, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **JavaScript** e escolha **Node.js**. No painel central, escolha **Aplicativo Azure Node.js Express 4 básico** e, em seguida, **OK**.
+    ::: moniker-end
+    Se você não vir o modelo de projeto **Aplicativo Azure Node.js Express 4 básico**, adicione a carga de trabalho de **desenvolvimento do Node.js**. Confira instruções detalhadas nos. [Pré-requisitos](#prerequisites).
 
     O Visual Studio cria a solução e abre o projeto no painel direito. O arquivo de projeto *app.js* é aberto no editor (painel esquerdo).
 
@@ -193,7 +216,12 @@ Em seguida, você executará o aplicativo com o depurador do Visual Studio anexa
 
 1. Selecione o destino de depuração na barra de ferramentas Depurar, como Microsoft Edge ou Chrome.
 
+    ::: moniker range=">=vs-2019"
+    ![Selecionar o destino de depuração](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Selecionar o destino de depuração](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
 

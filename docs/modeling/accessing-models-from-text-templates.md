@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: c639ecc19f99f25fb5cb38539d2322131ddc2e0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446329"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específica do domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
 
 > [!NOTE]
->  Quando você cria uma solução DSL, o modelo de texto de exemplo  **\*. TT** arquivos são gerados no projeto de depuração. Quando você altera os nomes das classes de domínio, esses modelos não funcionará mais. No entanto, eles incluem as diretivas básicas que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
+> Quando você cria uma solução DSL, o modelo de texto de exemplo  **\*. TT** arquivos são gerados no projeto de depuração. Quando você altera os nomes das classes de domínio, esses modelos não funcionará mais. No entanto, eles incluem as diretivas básicas que você precisa e fornecem exemplos que você pode atualizar para corresponder à sua DSL.
 
  Para acessar um modelo de um modelo de texto:
 
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  O processador de diretriz DSL executa duas tarefas principais:
 
--   Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
+- Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
 
--   Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.
+- Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validando o modelo antes de executar o modelo
  Você pode fazer com que o modelo a ser validado antes do modelo é executado.
@@ -97,7 +97,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> Acessando vários modelos de um modelo de texto
 
 > [!NOTE]
->  Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências do ModelBus. Para ler os modelos que estão interconectados por referências do ModelBus, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
+> Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências do ModelBus. Para ler os modelos que estão interconectados por referências do ModelBus, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
  Se você deseja acessar mais de um modelo a partir do mesmo modelo de texto, você deve chamar o processador de diretriz gerado uma vez para cada modelo. Você deve especificar o nome do arquivo de cada modelo no `requires` parâmetro. Você deve especificar os nomes que você deseja usar para a classe de domínio raiz no `provides` parâmetro. Você deve especificar valores diferentes para o `provides` parâmetros de cada uma das chamadas de diretiva. Por exemplo, suponha que você tenha três arquivos de modelo chamados Library.xyz, School.xyz e Work.xyz. Para acessá-los a partir do mesmo modelo de texto, você deve escrever três chamadas diretivas semelhantes às seguintes.
 
@@ -108,7 +108,7 @@ Here is a list of elements in the model:
 ```
 
 > [!NOTE]
->  Esse código de exemplo é para um idioma que é baseado no modelo de solução de linguagem mínima.
+> Esse código de exemplo é para um idioma que é baseado no modelo de solução de linguagem mínima.
 
  Para acessar os modelos em seu modelo de texto, agora você pode escrever código semelhante ao código no exemplo a seguir.
 

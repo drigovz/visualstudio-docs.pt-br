@@ -1,14 +1,9 @@
 ---
 title: Estrutura de tópicos em um serviço de linguagem herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - outlining
 - language services [managed package framework], outlining
@@ -16,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 356b3d49fa8eb74ef2352e6ba36597d1c39fecf4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51751537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408552"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Estrutura de tópicos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no c# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar somente os nomes das estruturas e classes. Dentro de um único método, uma lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções, como `foreach`, `if`, e `while`.  
   
- Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [instruções passo a passo: estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
+ Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [passo a passo: Estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="enabling-support-for-outlining"></a>Habilitando o suporte para a estrutura de tópicos  
  O `AutoOutlining` entrada do registro é definida como 1 para habilitar a estrutura de tópicos automática. Estrutura de tópicos automática configura uma análise da fonte inteira quando um arquivo for carregado ou alterado para identificar regiões ocultas e mostrar os glifos de estrutura de tópicos. Estrutura de tópicos também pode ser controlada manualmente pelo usuário.  
@@ -127,4 +122,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>Consulte também  
  [Recursos do serviço de linguagem herdado](../../extensibility/internals/legacy-language-service-features1.md)   
  [Registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

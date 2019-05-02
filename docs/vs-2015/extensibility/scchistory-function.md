@@ -1,14 +1,9 @@
 ---
 title: Função SccHistory | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccHistory
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8621b437cd21d0294abee65386c40465888bd3e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51740072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446817"
 ---
 # <a name="scchistory-function"></a>Função SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,9 +76,8 @@ SCCRTN SccHistory(
  Observe que, em determinadas circunstâncias, o arquivo que está sendo examinado pode ser alterados durante a execução desta chamada. Por exemplo, o [!INCLUDE[vsvss](../includes/vsvss-md.md)] comando history dá ao usuário uma chance de obter uma versão antiga do arquivo. Nesse caso, o controle de fonte plug-in retorna `SCC_I_RELOAD` para avisar o IDE que ele precisa recarregar o arquivo.  
   
 > [!NOTE]
->  Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.  
+> Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

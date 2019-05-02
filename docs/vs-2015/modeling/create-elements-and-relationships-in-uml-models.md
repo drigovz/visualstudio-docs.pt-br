@@ -1,25 +1,22 @@
 ---
 title: Criar elementos e relações em modelos UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML API
 ms.assetid: cae81d32-8cc7-4f7c-9f00-20119952bc51
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5ed918bc96168196400dd34d87ec65574fdfc5b6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099267"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Criar elementos e relações em modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +52,7 @@ IPackage linkedPackage = Context.CurrentDiagram.Element as IPackage;
 |`ILifeline, IMessage, ICombinedFragment`|`IInteraction`|  
   
 ### <a name="invoke-the-create-method-on-the-owner"></a>Invocar o método Create no proprietário  
- O nome do método está no formato: `Create` *OwnedType*`()`. Por exemplo:  
+ O nome do método é da forma: `Create`*OwnedType*`()`. Por exemplo:  
   
 ```  
 IUseCase usecase1 = linkedPackage.CreateUseCase();  
@@ -90,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Para criar uma associação  
   
-1.  Obter o proprietário da associação, que geralmente é o pacote ou modelo que contém o fim da origem da relação.  
+1. Obter o proprietário da associação, que geralmente é o pacote ou modelo que contém o fim da origem da relação.  
   
-2.  Invoca o método Create necessário no proprietário.  
+2. Invoca o método Create necessário no proprietário.  
   
-3.  Defina as propriedades da relação, como seu nome.  
+3. Defina as propriedades da relação, como seu nome.  
   
      Por exemplo:  
   
@@ -103,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Defina as propriedades de cada extremidade da relação. Sempre há dois `MemberEnds`. Por exemplo:  
+4. Defina as propriedades de cada extremidade da relação. Sempre há dois `MemberEnds`. Por exemplo:  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -128,13 +125,10 @@ anElement.Delete();
   
  Quando você exclui um elemento de um modelo:  
   
--   Todo relacionamento que vincula-se a ele também é excluído.  
+- Todo relacionamento que vincula-se a ele também é excluído.  
   
--   Todas as formas que representado-lo em um diagrama também é excluída.  
+- Todas as formas que representado-lo em um diagrama também é excluída.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)   
  [Exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md)
-
-
-

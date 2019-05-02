@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: bc943fe059850b024a5067d36bcc14d258ca5565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d15f0e8e5c5cbdac5a130804977adf90385adfe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893917"
 ---
 # <a name="wpf-overview"></a>Visão geral do WPF
 
@@ -224,9 +224,9 @@ A figura a seguir mostra o resultado da marcação XAML no exemplo anterior.
 
 A maioria dos aplicativos são criados para fornecer aos usuários os meios para exibir e editar dados. Para aplicativos WPF, o trabalho de armazenar e acessar dados já é fornecido por tecnologias, como SQL Server e ADO.NET. Depois que os dados são acessados e carregados em objetos gerenciados do aplicativo, começa o trabalho pesado para os aplicativos WPF. Essencialmente, isso envolve duas coisas:
 
-1.  Copiar os dados dos objetos gerenciados para controles, nos quais os dados podem ser exibidos e editados.
+1. Copiar os dados dos objetos gerenciados para controles, nos quais os dados podem ser exibidos e editados.
 
-2.  Assegurar que as alterações feitas nos dados usando controles sejam copiadas para os objetos gerenciados.
+2. Assegurar que as alterações feitas nos dados usando controles sejam copiadas para os objetos gerenciados.
 
 Para simplificar o desenvolvimento de aplicativos, o WPF fornece um mecanismo de vinculação de dados para executar essas etapas automaticamente. A unidade principal do mecanismo de associação de dados é a classe <xref:System.Windows.Data.Binding>, cujo trabalho é associar um controle (o destino da associação) a um objeto de dados (a origem da associação). Essa relação é ilustrada pela figura a seguir:
 
@@ -575,11 +575,11 @@ O exemplo a seguir define uma cor da tela de fundo comum que é compartilhada po
 
 Este exemplo implementa um recurso de cor da tela de fundo usando o elemento da propriedade `Window.Resources`. Este recurso está disponível para todos os filhos de <xref:System.Windows.Window>. Há uma variedade de recursos escopos, incluindo os seguintes, listados na ordem em que eles são resolvidos:
 
-1.  Um controle individual (usando a propriedade <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> herdada).
+1. Um controle individual (usando a propriedade <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName> herdada).
 
-2.  Um <xref:System.Windows.Window> ou um <xref:System.Windows.Controls.Page> (também usando a propriedade herdada <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName>).
+2. Um <xref:System.Windows.Window> ou um <xref:System.Windows.Controls.Page> (também usando a propriedade herdada <xref:System.Windows.FrameworkElement.Resources%2A?displayProperty=fullName>).
 
-3.  Um <xref:System.Windows.Application> (usando a propriedade <xref:System.Windows.Application.Resources%2A?displayProperty=fullName>).
+3. Um <xref:System.Windows.Application> (usando a propriedade <xref:System.Windows.Application.Resources%2A?displayProperty=fullName>).
 
 A variedade de escopos oferece flexibilidade em relação à maneira na qual você pode definir e compartilhar seus recursos.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3501c963a3fdc97151fdacce723942ca4e4bc93f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 480a355ee2af321341c54b90edcc582d49102186
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951925"
 ---
 # <a name="event-logging-for-office-solutions"></a>Log de eventos para soluções do Office
   Você pode usar o Visualizador de eventos no Windows para ver mensagens de exceção que são capturadas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] ao instalar ou desinstalar soluções do Office. Você pode usar essas mensagens do agente de log de eventos para solucionar problemas de implantação e instalação.
@@ -32,19 +32,19 @@ ms.locfileid: "56628878"
 
 ### <a name="to-read-the-event-log-in-windows-server-2003-and-windows-xp"></a>Para ler o Log de eventos no Windows Server 2003 e Windows XP
 
-1.  No painel de controle, abra **ferramentas administrativas**.
+1. No painel de controle, abra **ferramentas administrativas**.
 
-2.  Inicie **Visualizador de eventos**.
+2. Inicie **Visualizador de eventos**.
 
-3.  Na lista de logs de eventos, selecione **aplicativo**.
+3. Na lista de logs de eventos, selecione **aplicativo**.
 
-4.  Sobre o **modo de exibição** menu, clique em **filtro**.
+4. Sobre o **modo de exibição** menu, clique em **filtro**.
 
-5.  No **origem do evento** lista, selecione **VSTO 4.0**.
+5. No **origem do evento** lista, selecione **VSTO 4.0**.
 
-6.  Para eventos de instalação nos **ID do evento** , digite **4096**.
+6. Para eventos de instalação nos **ID do evento** , digite **4096**.
 
-7.  Clique em **Okey** para ver a exibição filtrada.
+7. Clique em **Okey** para ver a exibição filtrada.
 
 ### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>Para ler o Log de eventos no Windows 7, Windows Vista e Windows Server 2008
 
@@ -84,17 +84,17 @@ ms.locfileid: "56628878"
 
 ### <a name="to-disable-the-event-log"></a>Para desabilitar o Log de eventos
 
-1.  No painel de controle, abra **sistema**.
+1. No painel de controle, abra **sistema**.
 
-2.  Sobre o **Advanced** , clique em **variáveis de ambiente**.
+2. Sobre o **Advanced** , clique em **variáveis de ambiente**.
 
-3.  No **variáveis do sistema** painel, clique em **New**.
+3. No **variáveis do sistema** painel, clique em **New**.
 
-4.  No **nova variável do sistema** caixa de diálogo, digite **VSTO_EVENTLOGDISABLED** no **nome da variável** caixa.
+4. No **nova variável do sistema** caixa de diálogo, digite **VSTO_EVENTLOGDISABLED** no **nome da variável** caixa.
 
-5.  No **valor da variável** , digite **1**.
+5. No **valor da variável** , digite **1**.
 
-6.  Clique em **OK**.
+6. Clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 - [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md)

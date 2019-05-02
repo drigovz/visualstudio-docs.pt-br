@@ -1,14 +1,9 @@
 ---
 title: Exemplo de implementação da avaliação de expressão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -16,32 +11,32 @@ helpviewer_keywords:
 ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a79f61351363ba14b9993181c77e1a9be88515d9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7a19247b296d7e00a15051e75dd53536133c426
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51735175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436687"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemplo de implementação de avaliação de expressão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Para um **Watch** expressão de janela, o Visual Studio chama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para produzir um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. `IDebugExpressionContext2::ParseText` cria uma instância de um avaliador de expressão (EE) e chama [analisar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para obter uma [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.  
   
  Essa implementação do `IDebugExpressionEvaluator::Parse` executa as seguintes tarefas:  
   
-1.  [C++] Analisa a expressão para procurar erros.  
+1. [C++ somente] Analisa a expressão para procurar erros.  
   
-2.  Cria uma instância de uma classe (chamados `CParsedExpression` neste exemplo) que implementa o `IDebugParsedExpression` de interface e o armazena na classe a expressão a ser analisado.  
+2. Cria uma instância de uma classe (chamados `CParsedExpression` neste exemplo) que implementa o `IDebugParsedExpression` de interface e o armazena na classe a expressão a ser analisado.  
   
-3.  Retorna o `IDebugParsedExpression` da interface do `CParsedExpression` objeto.  
+3. Retorna o `IDebugParsedExpression` da interface do `CParsedExpression` objeto.  
   
 > [!NOTE]
->  Nos exemplos a seguir e, no exemplo MyCEE, o avaliador de expressão não separa a análise da avaliação.  
+> Nos exemplos a seguir e, no exemplo MyCEE, o avaliador de expressão não separa a análise da avaliação.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Essa é uma implementação de `IDebugExpressionEvaluator::Parse` em código gerenciado. Observe que esta versão do método adia a análise para [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) como o código para a análise também avalia ao mesmo tempo (consulte [avaliar uma expressão de inspeção](../../extensibility/debugger/evaluating-a-watch-expression.md)).  
@@ -117,4 +112,3 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 ## <a name="see-also"></a>Consulte também  
  [Avaliar uma expressão da janela de inspeção](../../extensibility/debugger/evaluating-a-watch-window-expression.md)   
  [Avaliar uma expressão de Inspeção](../../extensibility/debugger/evaluating-a-watch-expression.md)
-

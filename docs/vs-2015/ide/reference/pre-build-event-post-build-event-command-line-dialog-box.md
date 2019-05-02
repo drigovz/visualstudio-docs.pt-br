@@ -34,28 +34,27 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 213535d983f95f304b8e0fba3241fa502577f0f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438063"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo Evento de Pré-build/Linha de Comando do Evento de Pós-build
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) diretamente na caixa Editar, ou pode selecionar macros pré e pós-build em uma lista de macros disponíveis.  
   
 > [!NOTE]
->  Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
+> Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
   
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário  
  **Caixa de edição de linha de comando**  
  Contém os eventos a serem executados para pré ou pós-build.  
   
 > [!NOTE]
->  Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Macros**  
  Expande a caixa de edição para exibir uma lista de macros para inserir na caixa de edição de linha de comando.  
@@ -94,5 +93,5 @@ Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos d
 ## <a name="see-also"></a>Consulte também  
  [Especificando eventos de build personalizados no Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Página Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)
+ [Como: Especificar eventos de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

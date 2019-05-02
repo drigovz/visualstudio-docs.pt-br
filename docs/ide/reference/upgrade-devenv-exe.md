@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7ca13af8cd6b1a144ee3202165908f1d282ca81
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0fa2e2eaa583f7da0437907fdaa3e7af2fe4a0e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789297"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 
@@ -49,7 +49,7 @@ Os backups são criados e copiados automaticamente para um diretório chamado Ba
 
 É necessário fazer o check-out de projetos ou soluções controlados pelo código-fonte para que eles possam ser atualizados.
 
-Usar a opção `/Upgrade` não inicia o Visual Studio. Os resultados da atualização podem ser vistos no Relatório de Atualização da linguagem de desenvolvimento da solução ou projeto. Nenhuma informação de erro ou de uso é retornada. Para saber mais sobre como atualizar projetos no Visual Studio, consulte [Portar, migrar e atualizar projetos do Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
+Usar a opção `/Upgrade` não abre o Visual Studio. Os resultados da atualização podem ser vistos no Relatório de Atualização da linguagem de desenvolvimento da solução ou projeto. Nenhuma informação de erro ou de uso é retornada. Para saber mais sobre como atualizar projetos no Visual Studio, consulte [Portar, migrar e atualizar projetos do Visual Studio](../../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ## <a name="example"></a>Exemplo
 

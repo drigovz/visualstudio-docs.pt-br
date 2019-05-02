@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955538"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786426"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Como: Especificar os agentes de teste a serem usados em cenários de teste de carga
 
@@ -45,24 +45,24 @@ Se um computador de agente de teste tiver mais de 75% de utilização de CPU ou 
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Para especificar os agentes a usar em um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar os agentes a serem usados.
+2. Na pasta **Cenários** das árvores de teste de carga, escolha o nó do cenário para o qual você deseja especificar os agentes a serem usados.
 
-3.  No menu **Exibir**, selecione **Janela de Propriedades**.
+3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
-4.  Na caixa de texto da propriedade **Agentes a usar**, digite a lista de agentes em que o cenário pode ser executado.
+4. Na caixa de texto da propriedade **Agentes a usar**, digite a lista de agentes em que o cenário pode ser executado.
 
      Os agentes devem ser separados por vírgulas, por exemplo, "**Agent1, Agent2, Agent3**". Deixar a propriedade em branco especifica que esse cenário deve usar todos os agentes disponíveis.
 
     > [!NOTE]
     > A propriedade **Agentes a usar** é ignorada para execuções locais. Para execuções remotas, se nenhum dos agentes especificados em **Agentes a usar** existir, os testes no cenário não serão executados.
 
-5.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Agentes a usar**.
+5. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Agentes a usar**.
 
 ## <a name="see-also"></a>Consulte também
 

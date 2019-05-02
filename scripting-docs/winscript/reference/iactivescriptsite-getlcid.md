@@ -2,7 +2,6 @@
 title: IActiveScriptSite::GetLCID | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 959989d14d2a71f9c9eab4c78ef1b1bd9078362f
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: c6ebcfec9764aae98f7d74ac98e0c88ecec7c4da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54094998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992763"
 ---
 # <a name="iactivescriptsitegetlcid"></a>IActiveScriptSite::GetLCID
 Recupera o identificador de localidade associado com a interface do usuário do host. O mecanismo de script usa o identificador para garantir que as cadeias de caracteres de erro e outros elementos de interface do usuário gerados pelo mecanismo aparecem no idioma apropriado.  

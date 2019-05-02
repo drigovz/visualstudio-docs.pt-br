@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db9d64119a94e2358a6f52e6e1269fca8d726cbb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845840"
 ---
 # <a name="messages-view"></a>Exibição de mensagens
 Cada janela possui um fluxo de mensagem associado. Uma janela de exibição de mensagens exibe esse fluxo de mensagens. O identificador de janela, o código de mensagem e a mensagem são mostradas. Você pode criar um modo de exibição de mensagens para um thread ou processo também. Isso permite que você exiba as mensagens enviadas para todas as janelas pertencentes a um processo específico ou um thread, que é particularmente útil para capturar as mensagens de inicialização de janela.
@@ -30,21 +30,21 @@ Cada janela possui um fluxo de mensagem associado. Uma janela de exibição de m
 
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Para abrir um modo de exibição de mensagens para uma janela, processo ou thread
 
-1.  Mover o foco para um [modo de exibição do Windows](../debugger/windows-view.md), [exibição de processos](../debugger/processes-view.md), ou [exibição de Threads](../debugger/threads-view.md) janela.
+1. Mover o foco para um [modo de exibição do Windows](../debugger/windows-view.md), [exibição de processos](../debugger/processes-view.md), ou [exibição de Threads](../debugger/threads-view.md) janela.
 
-2.  Localize o nó para o item cujas mensagens que você deseja examinar e selecioná-lo.
+2. Localize o nó para o item cujas mensagens que você deseja examinar e selecioná-lo.
 
-3.  Dos **Spy** menu, escolha **mensagens de Log**.
+3. Dos **Spy** menu, escolha **mensagens de Log**.
 
      O [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md) é aberta.
 
-4.  Selecione as opções para a mensagem que você deseja exibir.
+4. Selecione as opções para a mensagem que você deseja exibir.
 
-5.  Pressione **Okey** para começar a mensagens de log.
+5. Pressione **Okey** para começar a mensagens de log.
 
      Um abre a janela de exibição de mensagens e um **mensagens** menu é adicionado à barra de ferramentas Spy + +. Dependendo das opções selecionadas, as mensagens inicia o streaming para a janela de exibição de mensagens ativa.
 
-6.  Quando você ter mensagens suficientes, escolha **parar log** da **mensagens** menu.
+6. Quando você ter mensagens suficientes, escolha **parar log** da **mensagens** menu.
 
 ## <a name="in-this-section"></a>Nesta seção
  [Controlando a exibição de mensagens](../debugger/how-to-control-messages-view.md) explica como gerenciar a exibição de mensagens.

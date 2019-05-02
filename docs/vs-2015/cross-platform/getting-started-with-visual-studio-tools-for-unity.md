@@ -9,54 +9,53 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 5b3c1d384ea42f4a1cdc864c261586ff1ee2e384
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443048"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nesta seção, você aprenderá a instalar as Ferramentas do Visual Studio para Unity e a configurar seu projeto do Unity para trabalhar com o Visual Studio.  
   
 > [!IMPORTANT]
->  O Unity 5.2 adiciona suporte interno às Ferramentas do Visual Studio para Unity 2.1, que simplifica a configuração do projeto. Para tirar proveito disso, você precisará do Unity versão 5.2.0 ou superior no Windows e das Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
+> O Unity 5.2 adiciona suporte interno às Ferramentas do Visual Studio para Unity 2.1, que simplifica a configuração do projeto. Para tirar proveito disso, você precisará do Unity versão 5.2.0 ou superior no Windows e das Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para usar as Ferramentas do Visual Studio para Unity, você precisará:  
   
--   de uma versão do **Visual Studio** que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. É possível baixar o Visual Studio Community gratuitamente.  
+- de uma versão do **Visual Studio** que dê suporte a extensões, como o Visual Studio Community, Professional, Premium ou Enterprise. É possível baixar o Visual Studio Community gratuitamente.  
   
      [Baixar o Visual Studio Community](http://www.visualstudio.com/downloads/download-visual-studio-vs)  
   
--   do **Unity** versão 4.0.0 ou superior ou do **Unity** versão 5.2.0 para tirar proveito do suporte interno às Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
+- do **Unity** versão 4.0.0 ou superior ou do **Unity** versão 5.2.0 para tirar proveito do suporte interno às Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
   
      [Baixar o Unity](https://unity3d.com/get-unity/download)  
   
 ## <a name="install-visual-studio-tools-for-unity"></a>Instalar as Ferramentas do Visual Studio para Unity  
  Baixe e instale as Ferramentas do Visual Studio para Unity da Galeria do Visual Studio. Você precisará instalar o pacote correto para a sua versão do Visual Studio. Instale as Ferramentas do Visual Studio para Unity versão 2.1 ou superior para tirar proveito do suporte interno ao VSTU no Unity versão 5.2 ou posterior.  
   
--   Para o Visual Studio 2015 Community, Visual Studio 2015 Professional ou Visual Studio 2015 Enterprise:  
+- Para o Visual Studio 2015 Community, Visual Studio 2015 Professional ou Visual Studio 2015 Enterprise:  
   
      [Baixe as Ferramentas do Visual Studio 2015 para Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)  
   
--   Para o Visual Studio 2013 Community, Visual Studio 2013 Professional ou Visual Studio 2013 Premium:  
+- Para o Visual Studio 2013 Community, Visual Studio 2013 Professional ou Visual Studio 2013 Premium:  
   
      [Baixe as Ferramentas do Visual Studio 2013 para Unity](https://visualstudiogallery.msdn.microsoft.com/20b80b8c-659b-45ef-96c1-437828fe7cf2)  
   
--   Para o Visual Studio 2012 Professional ou Visual Studio 2012 Premium:  
+- Para o Visual Studio 2012 Professional ou Visual Studio 2012 Premium:  
   
      [Baixe as Ferramentas do Visual Studio 2012 para Unity](https://visualstudiogallery.msdn.microsoft.com/7ab11d2a-f413-4ed6-b3de-ff1d05157714)  
   
--   Para o Visual Studio 2010 Professional ou Visual Studio 2010 Premium:  
+- Para o Visual Studio 2010 Professional ou Visual Studio 2010 Premium:  
   
      [Baixe as Ferramentas do Visual Studio 2010 para Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Versões Express do Visual Studio não dão suporte a extensões como as Ferramentas do Visual Studio para Unity. O Visual Studio Community é uma versão gratuita do Visual Studio que dá suporte às Ferramentas do Visual Studio para Unity e a outras extensões. Para a maioria dos usuários, o Visual Studio Community é uma opção melhor que o Express.  
+> Versões Express do Visual Studio não dão suporte a extensões como as Ferramentas do Visual Studio para Unity. O Visual Studio Community é uma versão gratuita do Visual Studio que dá suporte às Ferramentas do Visual Studio para Unity e a outras extensões. Para a maioria dos usuários, o Visual Studio Community é uma opção melhor que o Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Seu primeiro projeto do Unity com as Ferramentas do Visual Studio para Unity  
  Agora que tem tudo de que precisa, você está pronto para seu primeiro projeto do Unity com o Visual Studio. Configurar seu projeto do Unity é diferente dependendo de quais versões do Unity e das Ferramentas do Visual Studio para Unity estão instaladas. Siga as etapas abaixo para a versão do Unity e das Ferramentas do Visual Studio para Unity que você instalou.  

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c103448ae1471e2d9806a1d1cd2f8510c607f844
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564106"
 ---
 # <a name="cc-assertions"></a>Asserções C/C++
 Uma instrução de declaração especifica uma condição que você espera ser verdadeira em um ponto específico em seu programa. Se essa condição não for verdadeira, a asserção falhará, a execução do programa será interrompida e a [caixa de diálogo Falha na Asserção](../debugger/assertion-failed-dialog-box.md) será exibida.
@@ -105,7 +105,6 @@ VERIFY ( myFnctn(0)==1 ) // safe
 
 ## <a name="BKMK_CRT_assertions"></a> Asserções CRT
 O arquivo de cabeçalho CRTDBG.H define as [macros _ASSERT e _ASSERTE](/cpp/c-runtime-library/reference/assert-asserte-assert-expr-macros) para verificação de asserção.
-
 
 | Macro | Resultado |
 |------------| - |

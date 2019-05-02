@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cba12e3e991282dc69ea5747d62db8761d6f8d16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7b7336a3f3b0c2725f4e52116d0add8bf13b90e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949807"
 ---
 # <a name="correlateson-definition-dialog-box"></a>Caixa de diálogo definição de CorrelatesOn
 
@@ -38,5 +38,4 @@ O **Receive** designer de atividade pode ser arrastado de **caixa de ferramentas
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [Caixa de diálogo Adicionar CorrelationInitializers](../workflow-designer/add-correlationinitializers-dialog-box.md)
-- [Adicionar caixa de diálogo correlação](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)

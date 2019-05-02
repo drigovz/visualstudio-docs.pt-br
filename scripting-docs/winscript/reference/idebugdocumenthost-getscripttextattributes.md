@@ -1,8 +1,7 @@
 ---
-title: 'Idebugdocumenthost:: Getscripttextattributes | Microsoft Docs'
+title: IDebugDocumentHost::GetScriptTextAttributes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 016073d2ce22ab814716efc204ce573ea17cd510
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 6a5e56468e51f6d90e37e90c885b6b9df48d5f6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54092710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939219"
 ---
 # <a name="idebugdocumenthostgetscripttextattributes"></a>IDebugDocumentHost::GetScriptTextAttributes
 Retorna os atributos de texto de um bloco de texto do documento.  

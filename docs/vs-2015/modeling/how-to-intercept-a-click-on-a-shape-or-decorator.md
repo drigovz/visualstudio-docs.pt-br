@@ -1,27 +1,24 @@
 ---
-title: 'Como: interceptar um clique em uma forma ou um decorador | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Interceptar um clique em uma forma ou um decorador | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 865cd15416fbc901b6c5e58e1d83385f64f6a5a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441071"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como: Interceptar um clique em uma forma ou um decorador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrasta, e outros gestos e fazer com que o elemento de responder.  
@@ -41,7 +38,7 @@ public partial class MyShape // change
 ```  
   
 > [!NOTE]
->  Definir `e.Handled` para `true`, a menos que você deseja que o evento a ser passado para a forma ou diagrama de recipiente.  
+> Definir `e.Handled` para `true`, a menos que você deseja que o evento a ser passado para a forma ou diagrama de recipiente.  
   
 ## <a name="to-intercept-clicks-on-decorators"></a>Para interceptar cliques de decoradores  
  Os decoradores de imagem são executados em uma instância da classe ImageField, que tem um método OnDoubleClick. Se você escrever uma subclasse ImageField, você pode interceptar os cliques. Os campos são configurados no método InitializeShapeFields. Portanto, você deve alterar esse método para instanciar sua subclasse em vez do ImageField regular. O método InitializeShapeFields é no código gerado da classe shape. Você pode substituir a classe shape, se você definir seu `Generates Double Derived` propriedade conforme descrito no procedimento a seguir.  
@@ -50,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Para interceptar um clique em um decorador de ícone  
   
-1.  Abra ou crie uma solução DSL.  
+1. Abra ou crie uma solução DSL.  
   
-2.  Escolha ou crie uma forma que tem um decorador de ícone e mapeá-la para uma classe de domínio.  
+2. Escolha ou crie uma forma que tem um decorador de ícone e mapeá-la para uma classe de domínio.  
   
-3.  Em um arquivo de código separado dos arquivos no `GeneratedCode` pasta, crie a nova subclasse de ImageField:  
+3. Em um arquivo de código separado dos arquivos no `GeneratedCode` pasta, crie a nova subclasse de ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -92,7 +89,7 @@ public partial class MyShape // change
   
      Você deve definir Handled como verdadeiro se você não quiser que o evento a ser passado para a forma do recipiente.  
   
-4.  Substitua o método de InitializeShapeFields em sua forma classs adicionando a seguinte definição de classe parcial.  
+4. Substitua o método de InitializeShapeFields em sua forma classs adicionando a seguinte definição de classe parcial.  
   
     ```  
     public partial class MyShape // change  
@@ -119,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Criar e executar a solução.  
+1. Criar e executar a solução.  
   
-2.  Clique duas vezes no ícone em uma instância da forma. A mensagem de teste deve aparecer.  
+2. Clique duas vezes no ícone em uma instância da forma. A mensagem de teste deve aparecer.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptando clica e arrasta em listas de CompartmentShape  
  O exemplo a seguir permite que os usuários reordenar os itens em uma forma de compartimento, arrastando-os. Para executar este código:  
@@ -138,19 +135,19 @@ public partial class MyShape // change
   
    Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.  
   
--   Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.  
+- Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.  
   
--   O `ClassShape.MouseDown` evento armazena o item atual.  
+- O `ClassShape.MouseDown` evento armazena o item atual.  
   
--   Quando o mouse se move o item atual, fora de uma instância de MouseAction é criada, que define o cursor e captura o mouse até ele ser liberado.  
+- Quando o mouse se move o item atual, fora de uma instância de MouseAction é criada, que define o cursor e captura o mouse até ele ser liberado.  
   
      Para evitar interferência com outras ações do mouse, como selecionar o texto de um item, o MouseAction não é criado até que o mouse deixou o item original.  
   
      Uma alternativa para criar um MouseAction seria simplesmente escutar MouseUp. No entanto, isso não funcionaria corretamente se o usuário libera o mouse depois arrastá-lo fora do compartimento. O MouseAction é capaz de executar a ação apropriada, independentemente de onde o mouse é liberado.  
   
--   Quando o mouse é liberado, MouseAction.MouseUp reorganiza a ordem dos links entre os elementos de modelo.  
+- Quando o mouse é liberado, MouseAction.MouseUp reorganiza a ordem dos links entre os elementos de modelo.  
   
--   A alteração da ordem de função é acionada uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.  
+- A alteração da ordem de função é acionada uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -404,6 +401,3 @@ namespace Company.CompartmentDrag
 ## <a name="see-also"></a>Consulte também  
  [Respondendo a alterações e propagando-](../modeling/responding-to-and-propagating-changes.md)   
  [Propriedades de decoradores](../modeling/properties-of-decorators.md)
-
-
-

@@ -1,29 +1,27 @@
 ---
 title: Ferramentas de dados do Visual Studio para .NET | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c3175080-1dfb-4ab8-a460-92dadbb844b4
 caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 841311af90ddf4bedfb9d055e5764068cdc71632
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b42617892e377dcf750e9f5cafc914759b7d0c13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49859701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110915"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Visual Studio e o .NET Framework juntos fornecem API abrangente e suporte a ferramentas para conectar-se aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário.  As classes do .NET Framework que fornecem funcionalidade de acesso a dados são conhecidas como [ADO.NET](https://msdn.microsoft.com/library/e80y5yhx\(v=vs.110\).aspx). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi originalmente projetado principalmente para dar suporte a bancos de dados relacionais e XML. Hoje em dia, muitos fornecedores de banco de dados NoSQL, ou por terceiros, oferecem provedores ADO.NET.  
   
- Visual Studio 2015 atualização 2 inclui as atualizações mais recentes do [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que permitem que o suporte para os recursos mais recentes do Azure [banco de dados SQL](https://azure.microsoft.com/en-us/services/sql-database/) e [SQL Server 2016](https://www.microsoft.com/en-us/server-cloud/products/sql-server-2016/). [.NET core](https://www.dotnetfoundation.org/netcore) dá suporte ao ADO.NET, exceto para conjuntos de dados e tipos relacionados. Se você estiver direcionando o .NET Core e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
+ Visual Studio 2015 atualização 2 inclui as atualizações mais recentes do [SQL Server Data Tools](https://msdn.microsoft.com/library/hh272686\(v=vs.103\).aspx), que permitem que o suporte para os recursos mais recentes do Azure [banco de dados SQL](https://azure.microsoft.com/services/sql-database/) e [SQL Server 2016](https://www.microsoft.com/sql-server/sql-server-2016). [.NET core](https://www.dotnetfoundation.org/projects?searchquery=dotnet+core&type=project) dá suporte ao ADO.NET, exceto para conjuntos de dados e tipos relacionados. Se você estiver direcionando o .NET Core e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](https://msdn.microsoft.com/data/ef.aspx).  
   
  O diagrama a seguir mostra uma exibição simplificada da arquitetura básica:  
   
@@ -45,34 +43,27 @@ Visual Studio e o .NET Framework juntos fornecem API abrangente e suporte a ferr
   
 ## <a name="in-this-section"></a>Nesta seção  
   
--   [Criar um aplicativo de dados simples usando o ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
+- [Criar um aplicativo de dados simples usando o ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md)  
   
--   [Adicionar novas conexões](../data-tools/add-new-connections.md)  
+- [Adicionar novas conexões](../data-tools/add-new-connections.md)  
   
--   [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)  
+- [Adicionar novas fontes de dados](../data-tools/add-new-data-sources.md)  
   
--   [Ferramentas do Modelo de Dados de Entidade no Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
+- [Ferramentas do Modelo de Dados de Entidade no Visual Studio](../data-tools/entity-data-model-tools-in-visual-studio.md)  
   
--   [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
+- [Ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)  
   
--   [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
+- [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)  
   
--   [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
+- [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)  
   
--   [Recursos adicionais para solucionar problemas de erros de acesso a dados](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Recursos adicionais para solucionar problemas de erros de acesso a dados](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
--   [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
+- [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)  
   
--   [Criando e gerenciando bancos de dados e aplicativos da camada de dados no Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
+- [Criando e gerenciando bancos de dados e aplicativos da camada de dados no Visual Studio](../data-tools/creating-and-managing-databases-and-data-tier-applications-in-visual-studio.md)  
   
--   [Recursos adicionais para solucionar problemas de erros de acesso a dados](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
+- [Recursos adicionais para solucionar problemas de erros de acesso a dados](../data-tools/additional-resources-for-troubleshooting-data-access-errors.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
-
-
-
-
-
-
-

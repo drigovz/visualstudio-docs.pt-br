@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: caeab08d6032bd8c88d35a62da56e3dc8015da9a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef2882fec8d213c38a2e125d4e3f0c3f22d1d581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975158"
 ---
 # <a name="how-to-view-existing-types-in-class-designer"></a>Como: Exibir tipos existentes no Designer de Classe
 
@@ -31,9 +31,9 @@ Para projetar novos tipos em diagramas de classes, confira [Como: Criar tipos us
 
 ## <a name="to-see-types-in-a-project-on-a-class-diagram"></a>Para ver tipos de um projeto em um diagrama de classes
 
-1.  Em um projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd) existente. Ou, se não houver nenhum diagrama de classes, adicione um novo ao projeto. Confira [Como Adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
+1. Em um projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd) existente. Ou, se não houver nenhum diagrama de classes, adicione um novo ao projeto. Confira [Como Adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
 
-2.  No projeto localizado no **Gerenciador de Soluções**, arraste um arquivo de código-fonte para o diagrama de classe.
+2. No projeto localizado no **Gerenciador de Soluções**, arraste um arquivo de código-fonte para o diagrama de classe.
 
     > [!NOTE]
     > Se sua solução tiver um projeto que compartilha código por vários aplicativos, você poderá arrastar arquivos ou código para um diagrama de classe apenas das seguintes fontes:

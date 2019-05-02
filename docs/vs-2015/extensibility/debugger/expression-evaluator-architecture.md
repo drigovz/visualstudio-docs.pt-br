@@ -1,14 +1,9 @@
 ---
 title: Arquitetura do avaliador de expressão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - architecture, expression evaluators
 - expression evaluators, architecture
@@ -16,19 +11,19 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5ca1c7af9ee8a8a779cf238816125c0bc20199ca
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e8e0aa8f5cc45e0f6e012ecb3f0a27a22725a259
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51772697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421220"
 ---
 # <a name="expression-evaluator-architecture"></a>Arquitetura do avaliador de expressão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Integrar uma linguagem de proprietária para o pacote de depuração do Visual Studio significa implementando as interfaces (EE) do avaliador de expressão necessária e chamar o provedor de símbolo de tempo de execução de linguagem comum (SP) e interfaces de associador. Os objetos de SP e associador, junto com o endereço de execução atual, são o contexto no qual as expressões são avaliadas. As informações de que essas interfaces produzem e consumam representam os principais conceitos da arquitetura de um EE.  
   
@@ -64,4 +59,3 @@ ms.locfileid: "51772697"
  [Escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Exibir Locals](../../extensibility/debugger/displaying-locals.md)   
  [Alterar o valor de um Local](../../extensibility/debugger/changing-the-value-of-a-local.md)
-

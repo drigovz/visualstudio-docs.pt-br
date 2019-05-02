@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04e1fc6ebaef7f514bf61251aec67554a18db4b0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 29839e2f2adb4a0e560b5b58d4226fd61596128c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412852"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 Continua a execução deste programa de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) estiver desmarcado, e o programa inicia a execução novamente.
 
 > [!NOTE]
->  Este método foi preterido. Use o [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) método em vez disso.
+> Este método foi preterido. Use o [Execute](../../../extensibility/debugger/reference/idebugprocess3-execute.md) método em vez disso.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -44,7 +44,7 @@ int Execute();
  Quando o usuário inicia a execução de um estado parado no thread do algum outro programa, este método é chamado neste programa. Esse método também é chamado quando o usuário seleciona o **inicie** comando da **depurar** menu no IDE. A implementação desse método pode ser tão simple quanto chamar o [retomar](../../../extensibility/debugger/reference/idebugthread2-resume.md) método no thread atual no programa.
 
 > [!WARNING]
->  Não enviar um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
+> Não enviar um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
 
 ## <a name="see-also"></a>Consulte também
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

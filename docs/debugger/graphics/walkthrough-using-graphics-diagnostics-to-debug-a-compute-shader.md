@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Usando diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
+title: 'Passo a passo: Usando o diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849151"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Instruções passo a passo: usando diagnóstico de gráfico para depurar um sombreador computado
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráficos do Visual Studio para investigar um sombreador de cálculo que produz resultados incorretos.
 
  Este passo a passo ilustra essas tarefas:
 
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.
 
--   Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.
+- Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.
 
--   Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.
+- Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.
 
 ## <a name="scenario"></a>Cenário
  Nesse cenário, você escreveu uma simulação de dinâmica de fluidos que usa DirectCompute para executar as partes de computação mais intensa da atualização de simulação. Quando o aplicativo é executado, o processamento do conjunto de dados e da interface do usuário estiverem corretas, mas a simulação não se comportar conforme o esperado. Usando o diagnóstico de gráficos, você pode capturar o problema para um log de gráficos para que você possa depurar o aplicativo. O problema se parece com isso no aplicativo:
@@ -88,7 +88,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
 
     ![Depurar o sombreador de cálculo IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift + F5).
+4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift+F5).
 
 5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de cálculo, exatamente como você fez na etapa anterior.
 

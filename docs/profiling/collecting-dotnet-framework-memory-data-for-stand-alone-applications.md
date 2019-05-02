@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 98aae9471e0479a4b32b578bfd9da913237ea095
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2c6bf3fb1d2fa5815c361110689efb0cfc248e57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949026"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>Coletar dados de memória do .NET Framework usando a linha de comando do criador de perfil
 
@@ -37,7 +37,6 @@ Esta seção descreve os procedimentos e as opções para coletar alocação de 
 |**Criar perfil usando o método de instrumentação**|-   [Coletar dados de tempo detalhados usando a instrumentação](../profiling/collecting-detailed-timing-data-for-a-stand-alone-application.md)|
 |**Criar perfil de contenção de recursos e atividade de thread**|-   [Coletar dados de simultaneidade](../profiling/collecting-concurrency-data-for-stand-alone-applications.md)|
 |**Adding tier-interaction data (Adicionando dados de interação de camadas)**|-   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)|
-
 
 ### <a name="profile-net-memory-data"></a>Criar o perfil de dados de memória do .NET
 

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab31b788e86c7916355c06accc5396bbf18f98d8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 98f246f68b4f22dfeb4ba1899edd79495aff37fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908902"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>Registro e seleção (VSPackage do controle do código-fonte)
 Um controle de fonte VSPackage deve ser registrado para expô-lo para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Se mais de um VSPackage de controle de origem estiver registrado, o usuário pode selecionar quais VSPackage carregar em momentos apropriados. Ver [VSPackages](../../extensibility/internals/vspackages.md) para obter mais detalhes sobre os VSPackages e como registrá-los.

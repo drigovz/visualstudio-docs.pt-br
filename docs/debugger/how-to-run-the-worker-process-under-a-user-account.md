@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ab1bb6d4bde8f6e75fdaeb4416372cdc236318
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: aebe1faf31d53fb44cf5efddbee154018e42a365
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847766"
 ---
-# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como executar o processo de trabalho em uma conta de usuário
+# <a name="how-to-run-the-worker-process-under-a-user-account"></a>Como: Executar o processo de trabalho em uma conta de usuário
 Para configurar o computador de modo que você possa executar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] (aspnet_wp.exe ou w3wp.exe) em uma conta de usuário, siga estas etapas.
 
  > [!IMPORTANT]
@@ -45,21 +45,22 @@ Para configurar o computador de modo que você possa executar o processo de trab
 
 4. No [!INCLUDE[winxpsvr](../debugger/includes/winxpsvr_md.md)], o IIS 6.0 está instalado por padrão. O processo de trabalho correspondente é w3wp.exe. Para executar no modo do IIS 6.0 com o aspnet_wp.exe como o processo de trabalho, siga estas etapas:
 
-   1.  Clique em **Iniciar**, clique em **Ferramentas Administrativas** e, em seguida, escolha **Serviços de Informações da Internet**.
+   1. Clique em **Iniciar**, clique em **Ferramentas Administrativas** e, em seguida, escolha **Serviços de Informações da Internet**.
 
-   2.  Na caixa de diálogo **Serviços de Informações da Internet**, clique com o botão direito do mouse na pasta **Sites** e escolha **Propriedades**.
+   2. Na caixa de diálogo **Serviços de Informações da Internet**, clique com o botão direito do mouse na pasta **Sites** e escolha **Propriedades**.
 
-   3.  Na caixa de diálogo **Propriedades de Sites**, escolha **Serviço**.
+   3. Na caixa de diálogo **Propriedades de Sites**, escolha **Serviço**.
 
-   4.  Selecione **Executar serviço WWW no modo de isolamento do IIS6.0**.
+   4. Selecione **Executar serviço WWW no modo de isolamento do IIS6.0**.
 
-   5.  Feche a caixa de diálogo **Propriedades** e o **Gerenciador de Serviços de Internet**.
+   5. Feche a caixa de diálogo **Propriedades** e o **Gerenciador de Serviços de Internet**.
 
 5. Abra um prompt de comando do Windows e redefina o servidor executando:
 
    ```cmd
    iisreset
    ```
+
    – ou —
 
    ```cmd
@@ -77,7 +78,7 @@ Para configurar o computador de modo que você possa executar o processo de trab
 
     A **caixa de diálogo Selecionar usuário, computador ou grupo** é exibida.
 
-10. Digite o nome de usuário na caixa **Inserir o nome do objeto a ser selecionado** e, em seguida, clique em **OK**. O nome de usuário deve seguir este formato: NomedeDomínio\NomedeUsuário.
+10. Digite o nome de usuário na caixa **Inserir o nome do objeto a ser selecionado** e, em seguida, clique em **OK**. O nome de usuário deve seguir este formato: NomeDeDomínio \ nomedeusuário.
 
 11. Na caixa de diálogo **Entrada de permissão para arquivos temporários do ASP.NET**, dê ao usuário **Controle Total** e, em seguida, clique em **OK** para fechar a caixa de diálogo **Entrada para arquivos temporários do ASP.NET**.
 

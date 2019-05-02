@@ -2,7 +2,6 @@
 title: Script ativo constantes, enumerações e códigos de erro | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f5e25070aa92a9464bfc92433c0d2b7763232fb6
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953992"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Constantes, enumerações e códigos de erro do script ativo
 Esta seção descreve as enumerações e códigos de erro usados nos mecanismos de script do Windows.  

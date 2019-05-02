@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b674239d4d3b800680479830fbb16392e0cdeaf4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906485"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Como: especificar uma versão do .NET Framework para depuração (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Como: Especificar uma versão do .NET Framework para depuração (C#, Visual Basic, F#)
 
 O depurador do Visual Studio dá suporte à depuração de versões mais antigas do Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , bem como a versão atual. Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] para o aplicativo que você está depurando. No entanto, se o aplicativo já está em execução e você iniciar a depuração usando **anexar**, o depurador pode não ser capaz de identificar uma versão anterior da [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Se isso ocorrer, você receberá uma mensagem de erro, que indica
 
@@ -52,7 +52,7 @@ Nos raros casos em que esse erro aparecer, você pode definir uma chave do regis
 
 5. Depois de navegar até {449EC4CC-30D2-4032-9256-EE18EB41B62B}, examine a coluna **Nome** e localize a chave CLRVersionForDebugging.
 
-   1.  Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o novo valor de cadeia de caracteres, clique em **renomeie**e o tipo `CLRVersionForDebugging`.
+   1. Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o novo valor de cadeia de caracteres, clique em **renomeie**e o tipo `CLRVersionForDebugging`.
 
 6. Clique duas vezes em **CLRVersionForDebugging**.
 

@@ -1,29 +1,24 @@
 ---
-title: 'Como: implementar projetos aninhados | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar projetos aninhados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing
 - projects [Visual Studio SDK], nesting
 ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8a392b8b336c57c47055357147075f29ba173d8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435233"
 ---
-# <a name="how-to-implement-nested-projects"></a>Como: implementar projetos aninhados
+# <a name="how-to-implement-nested-projects"></a>Como: Implementando projetos aninhados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando você cria um tipo de projeto aninhado existe são uma várias etapas adicionais que devem ser implementadas. Um projeto pai leva em algumas das mesmas responsabilidades que a solução tem para seus projetos aninhados (filho). O projeto pai é um contêiner de projetos semelhantes a uma solução. Em particular, há vários eventos que devem ser gerados pela solução e pelos projetos pai para criar a hierarquia de projetos aninhados. Esses eventos são descritos no seguinte processo para a criação de projetos aninhados.  
@@ -33,7 +28,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
 1. O ambiente de desenvolvimento integrado (IDE) carrega as informações de inicialização e o arquivo de projeto do projeto pai, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. O projeto pai é criado e adicionado à solução.  
   
    > [!NOTE]
-   >  Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes que os projetos filho podem ser criados. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.  
+   > Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes que os projetos filho podem ser criados. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.  
   
     O projeto pai deve aguardar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método a ser chamado pelo IDE para criar seu aninhado (filho) projeto ou projetos.  
   
@@ -62,7 +57,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
     Se ele ainda não existir, o projeto pai cria um GUID para cada projeto aninhado chamando `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` uma API COM é chamada quando um GUID deve ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.  
+   > `CoCreateGuid` uma API COM é chamada quando um GUID deve ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.  
   
     O projeto pai armazena esse GUID em seu arquivo de projeto a ser recuperado na próxima vez que ele é aberto no IDE. Consulte a etapa 4 para obter mais informações relacionadas a chamada de `AddVirtualProjectEX` para recuperar o `guidProjectID` para o projeto filho.  
   
@@ -71,7 +66,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
      Porque os projetos pai e filho são instanciados por meio de programação, você pode definir propriedades para projetos aninhados neste momento.  
   
     > [!NOTE]
-    >  Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.  
+    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.  
   
 10. A hierarquia é criada para exibição no Gerenciador de soluções com uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.  
   
@@ -96,7 +91,6 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
 ## <a name="see-also"></a>Consulte também  
  [Adição de itens para a adicionar novo Item caixas de diálogo](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [Registrar modelos de projeto e Item](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Lista de verificação: Criar novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Parâmetros de contexto](../../extensibility/internals/context-parameters.md)   
  [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)
-

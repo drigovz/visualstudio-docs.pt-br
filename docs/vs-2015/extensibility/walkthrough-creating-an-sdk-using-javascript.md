@@ -1,26 +1,21 @@
 ---
-title: 'Passo a passo: Criando um SDK usando JavaScript | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Criar um SDK usando JavaScript | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7d82e40de93a8b3323dbd03d9b76e935a1d303b0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066943"
 ---
-# <a name="walkthrough-creating-an-sdk-using-javascript"></a>Passo a passo: criando um SDK usando JavaScript
+# <a name="walkthrough-creating-an-sdk-using-javascript"></a>Passo a passo: Criando um SDK usando JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo ensina como usar JavaScript para criar uma matemática simples SDK como um Visual Studio VSIX (extensão).  O passo a passo é dividida nestas partes:  
@@ -34,19 +29,19 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
-##  <a name="createSimpleMathVSIX"></a> Para criar o projeto do SDK de extensão SimpleMathVSIX  
+## <a name="createSimpleMathVSIX"></a> Para criar o projeto do SDK de extensão SimpleMathVSIX  
   
-1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
+1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2.  Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.  
+2. Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.  
   
-3.  No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.  
+3. No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.  
   
-4.  Se o **Assistente de pacote do Visual Studio** for exibida, escolha o **próxima** botão o **boas-vindas** página e, em seguida, na **página 1 de 7**, escolha o **Concluir** botão.  
+4. Se o **Assistente de pacote do Visual Studio** for exibida, escolha o **próxima** botão o **boas-vindas** página e, em seguida, na **página 1 de 7**, escolha o **Concluir** botão.  
   
      Embora o **Designer de manifesto** é aberto, vamos manter este passo a passo simples, modificando o arquivo de manifesto diretamente.  
   
-5.  Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo vsixmanifest e, em seguida, escolha **Exibir código**. Use este código para substituir o conteúdo existente no arquivo.  
+5. Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo vsixmanifest e, em seguida, escolha **Exibir código**. Use este código para substituir o conteúdo existente no arquivo.  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -68,11 +63,11 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
     </PackageManifest>  
     ```  
   
-6.  Na **Gerenciador de soluções**, abra o menu de atalho para o projeto SimpleMathVSIX e, em seguida, escolha **Add**, **Novo Item**.  
+6. Na **Gerenciador de soluções**, abra o menu de atalho para o projeto SimpleMathVSIX e, em seguida, escolha **Add**, **Novo Item**.  
   
-7.  No **dados** categoria, selecione **arquivo XML**, nomeie o arquivo `SDKManifest.xml`e escolha o **Add** botão.  
+7. No **dados** categoria, selecione **arquivo XML**, nomeie o arquivo `SDKManifest.xml`e escolha o **Add** botão.  
   
-8.  Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo Sdkmanifest e, em seguida, escolha **abra** para exibir o arquivo no **Editor XML**.  
+8. Na **Gerenciador de soluções**, abra o menu de atalho para o arquivo Sdkmanifest e, em seguida, escolha **abra** para exibir o arquivo no **Editor XML**.  
   
 9. Adicione o seguinte código ao arquivo Sdkmanifest.  
   
@@ -133,9 +128,9 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
   
 17. Na **Gerenciador de soluções**, no menu de atalho para o arquivo arithmetic.js, escolha **propriedades**. Faça estas alterações de propriedade:  
   
-    -   Defina a **incluir em VSIX** propriedade **verdadeiro**.  
+    - Defina a **incluir em VSIX** propriedade **verdadeiro**.  
   
-    -   Defina a **Copy to Output Directory** propriedade **copiar sempre**.  
+    - Defina a **Copy to Output Directory** propriedade **copiar sempre**.  
   
 18. Na **Gerenciador de soluções**, no menu de atalho para o projeto SimpleMathVSIX, escolha **Build**.  
   
@@ -145,23 +140,23 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
   
 21. Reinicie o Visual Studio.  
   
-##  <a name="createSampleApp"></a> Para criar um aplicativo de exemplo que usa o SDK  
+## <a name="createSampleApp"></a> Para criar um aplicativo de exemplo que usa o SDK  
   
-1.  Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
+1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2.  Na lista de categorias de modelo, sob **JavaScript**, selecione **Windows Store**e, em seguida, selecione o **aplicativo em branco** modelo.  
+2. Na lista de categorias de modelo, sob **JavaScript**, selecione **Windows Store**e, em seguida, selecione o **aplicativo em branco** modelo.  
   
-3.  No **nome** , especifique `ArithmeticUI`. Escolha o botão **OK**.  
+3. No **nome** , especifique `ArithmeticUI`. Escolha o botão **OK**.  
   
-4.  Na **Gerenciador de soluções**, abra o menu de atalho para o projeto ArithmeticUI e, em seguida, escolha **Add**, **referência**.  
+4. Na **Gerenciador de soluções**, abra o menu de atalho para o projeto ArithmeticUI e, em seguida, escolha **Add**, **referência**.  
   
-5.  Sob **Windows**, escolha **extensões**e observe que **matemática simples** é exibida.  
+5. Sob **Windows**, escolha **extensões**e observe que **matemática simples** é exibida.  
   
-6.  Selecione o **matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
+6. Selecione o **matemática simples** caixa de seleção e, em seguida, escolha o **Okey** botão.  
   
-7.  Na **Gerenciador de soluções**, em **referências**, observe que o **matemática simples** referência é exibida. Expandi-lo e observe que há uma pasta \js\ que inclui arithmetic.js. Você pode abrir arithmetic.js para confirmar que seu código-fonte foi instalado.  
+7. Na **Gerenciador de soluções**, em **referências**, observe que o **matemática simples** referência é exibida. Expandi-lo e observe que há uma pasta \js\ que inclui arithmetic.js. Você pode abrir arithmetic.js para confirmar que seu código-fonte foi instalado.  
   
-8.  Use o código a seguir para substituir o conteúdo de Default. htm.  
+8. Use o código a seguir para substituir o conteúdo de Default. htm.  
   
     ```  
     <!DOCTYPE html>  
@@ -322,4 +317,3 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
   
 ## <a name="see-also"></a>Consulte também  
  [Criar um Software Development Kit](../extensibility/creating-a-software-development-kit.md)
-

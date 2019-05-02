@@ -1,30 +1,24 @@
 ---
 title: Exibição do modelo de conteúdo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: e8db7c7d-31cf-479e-9dcc-299759891795
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a535a97835491f4a109ed0893d20a4330b218801
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49860299"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109109"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A exibição do modelo de conteúdo fornece uma representação gráfica de nós locais e globais de esquema e seus componentes, de incluir simples e tipos complexos, de elementos, grupos de modelo, de atributos, e de grupos de atributo. Comentários e instruções de processamento XML não podem ser exibidos no modo do modelo de conteúdo. O modo de exibição do modelo de conteúdo contém dois painéis: um **espaço de trabalho** que contém uma lista de nós no painel a [espaço de trabalho de Designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)e a superfície de design onde você pode ver o modelo de conteúdo do esquema nós que são selecionados na **espaço de trabalho** painel. A exibição do modelo de conteúdo também inclui a barra de ferramentas do designer de esquema XML e a barra de rastreamento.  
   
  Na figura a seguir, o painel de workspace contém seis nós de esquema. O nó de `purchaseOrder` é selecionado no painel de Workpace e exibido na superfície de design.  
@@ -41,7 +35,7 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
   
  O modelo de conteúdo de um nó é representado por uma árvore gráfico expansível com elementos e atributos que aparecem como nós de árvore. Por padrão, somente um nível é expandido. Outras informações, como compositores, nomes de tipo, grupos, e outros contêineres é colocada em uma barra vertical (quando expandido) ao longo de elementos e atributos que incluem. Quando você clica duas vezes em uma barra vertical, transformações horizontal e recolhe de árvore. Quando você clica duas vezes em uma barra horizontal e vertical, transformações a árvore expande. Selecione a barra vertical selecionar todos os nós do contêiner. Os expansores aparecerão no direito de um nó se um elemento pode ser expandido ou recolhido.  
   
- Se a superfície de design está em branco, o editor XML, XML Schema Explorer, e a marca de agua são mostrados. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”  
+ Se a superfície de design está em branco, o editor XML, XML Schema Explorer, e a marca de agua são mostrados. O *marca d'água* é uma lista de links para todas as exibições de Designer XSD. Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".  
   
 ## <a name="breadcrumb-bar"></a>Barra de rastreamento  
  A barra de rastreamento na parte inferior do modo de modelo de conteúdo mostra onde o nó selecionado é localizado no conjunto de esquema.  
@@ -97,13 +91,13 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 ## <a name="undoredo"></a>Desfazer/refazer  
  Desfazer/refaz o recurso é habilitado no modo de modelo de conteúdo para as seguintes ações:  
   
--   Adicionando um único nó arrastando e soltando-se.  
+- Adicionando um único nó arrastando e soltando-se.  
   
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.  
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.  
   
--   Adicionando a exibição de nós do início.  
+- Adicionando a exibição de nós do início.  
   
--   Excluindo única ou mais nós.  
+- Excluindo única ou mais nós.  
   
 ## <a name="zoom"></a>Aplicar Zoom  
  O zoom está disponível no canto inferior direito da exibição do modelo de conteúdo.  
@@ -123,6 +117,3 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
   
 ## <a name="see-also"></a>Consulte também  
  [O workspace do designer de esquema XML](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

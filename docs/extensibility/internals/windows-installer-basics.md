@@ -11,17 +11,17 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b981824da3f5a5065cf129657158020893394749
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431024"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 O Windows Installer instala e desinstala aplicativos ou produtos de software no computador do usuário, executar essas tarefas em unidades chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para as configurações usando o Windows Installer.
 
- Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).
+ Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).
 
 ## <a name="authoring-a-vspackage"></a>Criação de um VSPackage
  Windows Installer usa pacotes de instalação, que contêm informações que o Windows Installer precisa para instalar, desinstalar ou reparar um produto e para executar a interface de usuário (UI) de configuração. Cada pacote de instalação inclui um arquivo. msi, que contém um banco de dados de instalação, um fluxo de informações de resumo e fluxos de dados de várias partes da instalação. Para usar o instalador, você deve criar uma instalação. Como o instalador organiza as instalações em torno do conceito de componentes e armazena informações sobre a instalação em um banco de dados relacional, o processo de criação de um pacote de instalação em larga escala envolve as seguintes etapas:
@@ -53,19 +53,19 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
  Dois conjuntos de regras determinam a implantação de recursos por meio de componentes do seu programa de instalação. Um conjunto de regras é mantido pelo instalador do Windows em si, enquanto você deve aplicar o segundo conjunto como autor da instalação.
 
 > [!NOTE]
->  A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](/windows/desktop/Msi/validating-an-installation-database) e [validação de pacote](/windows/desktop/Msi/package-validation).
+> A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](/windows/desktop/Msi/validating-an-installation-database) e [validação de pacote](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Regras aplicadas pelo instalador
 
--   Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.
+- Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.
 
--   Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.
+- Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.
 
 #### <a name="component-provider-responsibilities"></a>Responsabilidades do provedor de componente
 
--   Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](/windows/desktop/Msi/defining-installer-components).
+- Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](/windows/desktop/Msi/defining-installer-components).
 
--   Nenhum recurso com versão nunca deve enviar em mais de um WIC.
+- Nenhum recurso com versão nunca deve enviar em mais de um WIC.
 
 ## <a name="see-also"></a>Consulte também
 - [O que acontece se as regras de componente são interrompidas?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

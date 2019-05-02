@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388630"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a entender como o código do sombreador HLSL opera em condições reais do seu aplicativo.
@@ -50,12 +50,12 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Para iniciar o depurador HLSL da janela Estágios de Pipeline Gráficos
 
-1.  Na janela **Gráficos – Estágios de Pipeline**, localize o estágio de pipeline que está associado ao sombreador que deseja depurar.
+1. Na janela **Gráficos – Estágios de Pipeline**, localize o estágio de pipeline que está associado ao sombreador que deseja depurar.
 
-2.  Abaixo do título do estágio de pipeline, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.
+2. Abaixo do título do estágio de pipeline, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.
 
     > [!NOTE]
-    >  Esse ponto de entrada no depurador HLSL depura apenas o primeiro thread do sombreador para o estágio correspondente, isto é, o primeiro vértice ou pixel que é processado. Você pode usar o histórico de Pixel para acessar outros threads dos estágios desse sombreador.
+    > Esse ponto de entrada no depurador HLSL depura apenas o primeiro thread do sombreador para o estágio correspondente, isto é, o primeiro vértice ou pixel que é processado. Você pode usar o histórico de Pixel para acessar outros threads dos estágios desse sombreador.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Para iniciar o depurador HLSL do Histórico de Pixel de Gráficos
 
@@ -68,11 +68,11 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
     À direita do sombreador escolhido, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.
 
    > [!NOTE]
-   >  Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.
+   > Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.
 
    Para obter exemplos sobre como usar o depurador HLSL para depurar erros do sombreador, consulte [exemplos](graphics-diagnostics-examples.md) ou explicações passo a passo vinculadas na seção Consulte também.
 
 ## <a name="see-also"></a>Consulte também
-- [Passo a passo: objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
-- [Passo a passo: depurando erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
-- [Passo a passo: usando diagnóstico de gráficos para depurar um sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)
+- [Passo a passo: Objetos ausentes devido ao sombreamento de vértice](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Passo a passo: Como depurar erros de renderização devido ao sombreamento](walkthrough-debugging-rendering-errors-due-to-shading.md)
+- [Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de cálculo](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

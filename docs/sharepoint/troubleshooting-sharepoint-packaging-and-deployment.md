@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008310"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Solucionar problemas de implantação e empacotamento do SharePoint
   Este tópico aborda diversos problemas que você pode encontrar ao empacotar e implantar soluções do SharePoint.
@@ -73,9 +73,9 @@ ms.locfileid: "54868034"
 ### <a name="resolution"></a>Resolução
  Para contornar esse problema, execute as seguintes etapas:
 
-1.  Instale a atualização KB967535 conforme descrito no artigo da Microsoft Support [corrigir: Um hotfix está disponível para corrigir dois problemas no ASP.NET no IIS 7.0 para Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Instale a atualização KB967535 conforme descrito no artigo da Microsoft Support [corrigir: Um hotfix está disponível para corrigir dois problemas no ASP.NET no IIS 7.0 para Windows Vista e Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Adicione a seguinte linha ao arquivo Web. config:
+2. Adicione a seguinte linha ao arquivo Web. config:
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">

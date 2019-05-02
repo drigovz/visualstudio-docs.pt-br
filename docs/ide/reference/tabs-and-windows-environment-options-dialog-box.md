@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3fcc961a478d3e23c7a8dcf06805505b6c437ed9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 339f6477395bf8d91618298bc1618132d76b3794
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924663"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945109"
 ---
-# <a name="tabs-and-windows-environment-options-dialog-box"></a>Caixa de diálogo janelas e guias, ambiente, opções
+# <a name="options-dialog-box-environment--tabs-and-windows"></a>Caixa de diálogo Opções: Ambiente \> Guias e Janelas
 
-Use esta página para definir opções de como janelas com guias se comportam no painel do editor e como as janelas de ferramentas se comportam. Para obter mais informações, consulte [Personalização de layouts de janela no Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
+Use esta página para definir as opções de como as janelas com guias se comportam no painel do editor e como as janelas de ferramentas se comportam. Para obter mais informações, consulte [Personalização de layouts de janela no Visual Studio](../../ide/customizing-window-layouts-in-visual-studio.md)
 
 ### <a name="see-also"></a>Consulte também
 

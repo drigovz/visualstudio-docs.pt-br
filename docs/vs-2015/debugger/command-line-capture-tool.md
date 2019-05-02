@@ -1,30 +1,25 @@
 ---
 title: Ferramenta de linha de comando de captura | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d4cafc8c066025f87d233d8b6db8a97be1aa16f5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437796"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis de recurso.  
+O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis do recurso.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -84,7 +79,7 @@ DXCap.exe –info
  No modo de validação, `events` especifica o conjunto de eventos gráficos cujos resultados imediatos são comparados. Por exemplo, `-examine present,draw,copy,clear` limita a comparação aos eventos que pertencem a essas categorias.  
   
 > [!TIP]
->  É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.  
+> É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.  
   
  `-haltonfail`  
  No modo de validação, `-haltonfail` interrompe a validação quando são detectadas diferenças entre o hardware e o renderizador WARP. A validação continua após uma tecla ser pressionada.  
@@ -142,10 +137,10 @@ DXCap.exe –file regression_test_12.vsglog –c BasicHLSL11.exe
 DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"  
 ```  
   
- O comando no exemplo acima captura informações de gráficos da versão de área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para processar conteúdo 3D.  
+ O comando no exemplo acima captura informações de gráficos da versão da área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para renderizar conteúdo 3D.  
   
 > [!NOTE]
->  Como argumentos de linha de comando que aparecem após o aplicativo são passados para ele, você deve especificar os argumentos destinados DXCap.exe antes de usar o `–c` opção.  
+> Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Capturar as informações gráficas de um aplicativo da Windows Store.  
  Você pode capturar as informações gráficas de um aplicativo da Windows Store.  
@@ -170,15 +165,15 @@ DXCap.exe –e map
   
  **Pacote "Microsoft.BingMaps":**  
  **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **FullName: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
- **UserSID          : S-1-5-21-2127521184-1604012920-1887927527-5603533**  
+ **Nome completo: Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe**  
+ **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533**  
  **Nome: Microsoft.BingMaps**  
- **Publicador: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US**  
+ **Editor: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US**  
  **Versão: 2.1.2914.1734**  
- **Aplicativos pode ser iniciados:**  
+ **Aplicativos inicializáveis:**  
  **ID: AppexMaps**  
- **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
- **IsWWA: nenhum**  
+ **Exe: C:\Arquivos de Programas\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe**  
+ **IsWWA: Não**  
  **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** a última linha da saída de cada aplicativo enumerado exibe o comando que você pode usar para capturar informações gráficas.  
   
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar quadros específicos ou quadros entre horários específicos.  
@@ -302,6 +297,3 @@ DXCap.exe –p regression_test_12.vsglog –toXML temp.xml
 ```  
   
 ## <a name="requirements"></a>Requisitos
-
-
-

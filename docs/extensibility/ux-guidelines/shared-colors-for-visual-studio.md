@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f31912d5528c38374aafd1212767bfb850a8b976
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430232"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores compartilhadas para o Visual Studio
 Quando você está projetando a interface do usuário que usa elementos comuns de shell do Visual Studio, ou você gostaria de seu elemento de interface para ser consistente com recursos semelhantes, use nomes de token existentes nos arquivos de definição de pacote para escolher e atribuir cores. Isso garante que sua interface do usuário permaneça consistente com o ambiente geral do Visual Studio e que ele será atualizado automaticamente quando os temas são adicionados ou atualizados.
@@ -22,11 +22,11 @@ Este artigo descreve os elementos de interface do usuário comuns e os nomes de 
 
 Certifique-se de usar nomes de token corretamente:
 
--   **Use nomes de token com base em função, não na própria cor.** As cores compartilhadas comuns são associadas aos elementos de interface específica e destinam-se somente a ser usado para os recursos iguais ou semelhantes. Por exemplo, não reutilize a cor de uma caixa de combinação pressionado para uma animação de progresso de rotação simplesmente porque você gosta de cor. As funções de caixa de combinação e a animação são diferentes, e se a cor associada com as alterações de caixa de combinação, não pode ser uma cor apropriada para seu elemento de animação. Uso consistente de cor ajuda a orientar seus usuários e evitar confusão.
+- **Use nomes de token com base em função, não na própria cor.** As cores compartilhadas comuns são associadas aos elementos de interface específica e destinam-se somente a ser usado para os recursos iguais ou semelhantes. Por exemplo, não reutilize a cor de uma caixa de combinação pressionado para uma animação de progresso de rotação simplesmente porque você gosta de cor. As funções de caixa de combinação e a animação são diferentes, e se a cor associada com as alterações de caixa de combinação, não pode ser uma cor apropriada para seu elemento de animação. Uso consistente de cor ajuda a orientar seus usuários e evitar confusão.
 
--   **Use cores de plano de fundo e texto na combinação correta.** Cores de plano de fundo que se destinam a serem usadas com texto terá uma cor do texto associado. Não use cores de texto que não seja o que é especificado para esse plano de fundo. Se não houver uma cor do texto associado, não use essa cor do plano de fundo para qualquer superfície na qual você pretende exibir texto. Outras combinações de cores de plano de fundo e texto podem resultar em uma interface não pode ser lido.
+- **Use cores de plano de fundo e texto na combinação correta.** Cores de plano de fundo que se destinam a serem usadas com texto terá uma cor do texto associado. Não use cores de texto que não seja o que é especificado para esse plano de fundo. Se não houver uma cor do texto associado, não use essa cor do plano de fundo para qualquer superfície na qual você pretende exibir texto. Outras combinações de cores de plano de fundo e texto podem resultar em uma interface não pode ser lido.
 
--   **Use cores do controle que são apropriadas para seu local.** Em alguns estados, alguns controles do Visual Studio não tem a borda separada e cores de plano de fundo. Em vez disso, eles selecionam essas cores de superfícies de por trás delas. Certifique-se de que você sempre use os nomes de token que são apropriados para o local onde você está colocando o controle.
+- **Use cores do controle que são apropriadas para seu local.** Em alguns estados, alguns controles do Visual Studio não tem a borda separada e cores de plano de fundo. Em vez disso, eles selecionam essas cores de superfícies de por trás delas. Certifique-se de que você sempre use os nomes de token que são apropriados para o local onde você está colocando o controle.
 
 > [!IMPORTANT]
 > Não use tokens localizadas nas categorias de "Página inicial" ou "Cider".
@@ -623,13 +623,13 @@ Sempre que possível, use o controle de pesquisa comum fornecido pelo ambiente d
 
 Uma caixa de pesquisa pode ser um dos vários estados, algumas das quais são mutuamente exclusivas:
 
--   "Concentradas" ou "sem foco" refere-se a ou não o cursor estiver na caixa de texto.
+- "Concentradas" ou "sem foco" refere-se a ou não o cursor estiver na caixa de texto.
 
--   "Active" ou "inativos" refere-se de se o usuário inseriu uma consulta de pesquisa na caixa de texto.
+- "Active" ou "inativos" refere-se de se o usuário inseriu uma consulta de pesquisa na caixa de texto.
 
--   "Passagem" significa que o usuário tem moused sobre a caixa de pesquisa com o mouse (esse estado substitui todos os outros estados).
+- "Passagem" significa que o usuário tem moused sobre a caixa de pesquisa com o mouse (esse estado substitui todos os outros estados).
 
--   "Desabilitada" significa que a funcionalidade de pesquisa está desativada para o contexto atual.
+- "Desabilitada" significa que a funcionalidade de pesquisa está desativada para o contexto atual.
 
 ![Caixa de pesquisa (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303 110_SearchBoxRedline")<br />Caixa de pesquisa (corte de funcionários)
 
@@ -854,7 +854,7 @@ O menu de lista suspensa de caixa de pesquisa tem o potencial para ser um pouco 
 | Link background | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Marcas de gradiente para este token não é usado na interface do usuário com tema.) |
 | Em primeiro plano (texto do Link) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Modos de exibição de árvore
+### <a name="BKMK_TreeView"></a> Modos de exibição de árvore
 Várias janelas de ferramentas, incluindo o Gerenciador de soluções, Gerenciador de servidores e modo de exibição de classe, implementam um esquema de organizacional hierárquico cujas cores são controlados pelos nomes de cor no `TreeView` categoria. Todos os itens em uma exibição de árvore têm cores de plano de fundo e texto. Itens que tem elementos filho aninhados também têm glifos que indicam se o item é expandido ou recolhido.
 
 ![Exibição de árvore (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303 147_TreeViewRedline")<br />Exibição de árvore (corte de funcionários)
@@ -985,7 +985,7 @@ Dois conjuntos de nomes de token são usados para os planos de fundo de pratelei
 | --- | --- |
 | Informações preliminares | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-* * Comando prateleira comando barra * *
+**Barra de comandos de prateleira do comando**
 
 > Conjunto com o mesmo valor de cor em temas claros de 2013 do Visual Studio e escuros marcas de gradiente.
 
@@ -1037,7 +1037,7 @@ O Designer de manifesto foi projetado como uma maneira de tornar mais fácil de 
 
 ## <a name="command-structures"></a>Estruturas de comando
 
-###  <a name="BKMK_CommandMenus"></a> Menus
+### <a name="BKMK_CommandMenus"></a> Menus
 Menus podem ocorrer em vários locais dentro do Visual Studio: barra de menu principal, inserida no documento ou a ferramenta windows ou no botão direito do mouse em vários locais em todo o IDE. Implementações de menus associados com outros elementos de interface do usuário são discutidas na seção do elemento do respectivo. Você sempre deve usar a implementação de menu padrão fornecida pelo ambiente do Visual Studio. No entanto, em alguns casos raros talvez você não tenha acesso aos menus padrão do Visual Studio. Nessas situações, use os seguintes nomes de token para garantir que sua interface do usuário seja consistente com outros menus no Visual Studio.
 
 ![Menu do Visual Studio (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303 000_MenuRedline")<br />Menu do Visual Studio (corte de funcionários)
@@ -1278,7 +1278,7 @@ Um grupo de barra de comandos consiste em um conjunto de controles de barra de c
 | Em primeiro plano (texto) | `Environment.CommandBarTextInactive` |
 | Borda | N/D |
 
-####  <a name="BKMK_CommandComboBox"></a> Caixas de combinação de barra de comando
+#### <a name="BKMK_CommandComboBox"></a> Caixas de combinação de barra de comando
 
 > [!IMPORTANT]
 > Caixas de combinação são semelhantes às listas suspensas, mas incluam uma região de texto editável. Se sua lista suspensa não incluir uma região editável de texto, use os tokens de cor para [menus suspensos de barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,10 +1410,10 @@ Um grupo de barra de comandos consiste em um conjunto de controles de barra de c
 | Informações preliminares | Nenhum |
 | Em primeiro plano (glifo) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Comando barra menus suspensos
+#### <a name="BKMK_CommandDropDown"></a> Comando barra menus suspensos
 
 > [!IMPORTANT]
->  Menus suspensos são semelhantes às caixas de combinação, mas não têm regiões de texto editável. Se o menu suspenso inclui uma região de texto editável, use os tokens de cor para [caixas de combinação de barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Menus suspensos são semelhantes às caixas de combinação, mas não têm regiões de texto editável. Se o menu suspenso inclui uma região de texto editável, use os tokens de cor para [caixas de combinação de barra de comandos](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
 ![Lista suspensa da barra de comandos (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-042_dropdownredline.png "0303 042_DropdownRedline")<br />Lista suspensa da barra de comandos (corte de funcionários)
 
@@ -1713,9 +1713,9 @@ Guias do documento ficam no canal de guia para indicar quais documentos estão a
 #### <a name="open-document-tabs"></a>Guias de documento aberto
 Cada documento aberto tem uma guia no canal de guia de documento que exibe seu nome. Documentos podem ser selecionados ou abra em segundo plano, e suas guias refletem esses estados:
 
--   A guia selecionada representa o documento que está sendo exibido no documento bem. Uma guia selecionada tem uma borda de documento que estende bem em toda a borda superior do documento.
+- A guia selecionada representa o documento que está sendo exibido no documento bem. Uma guia selecionada tem uma borda de documento que estende bem em toda a borda superior do documento.
 
--   Guias de plano de fundo são guias qualquer documento que não estão na guia selecionada no momento. Quando clicado, eles tornam-se a guia selecionada e adquirem todas as cores de plano de fundo, borda e texto desses nomes de token.
+- Guias de plano de fundo são guias qualquer documento que não estão na guia selecionada no momento. Quando clicado, eles tornam-se a guia selecionada e adquirem todas as cores de plano de fundo, borda e texto desses nomes de token.
 
 ![Guia de documento aberto (corte de funcionários)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303 073_OpenDocumentTabRedline")<br />Guia de documento aberto (corte de funcionários)
 
@@ -1948,7 +1948,6 @@ Visual Studio dá suporte à marcação, que permite que um usuário declarar as
 **Selecionado de marca de fechamento (&times;) glifo: passe o mouse de estado**
 
 ![Selecionado de marca de fechamento (&times;) glifo focalizar](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303 185_TagSelectedHover")<br />Selecionado de marca de fechamento (&times;) glifo ao focalizar
-
 
 | Elemento | Nome do token: Category.color |
 | --- | --- |

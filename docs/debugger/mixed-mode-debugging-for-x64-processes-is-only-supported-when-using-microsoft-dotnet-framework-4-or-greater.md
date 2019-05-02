@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ba8186114fd976ec7e4704d97acb91ee0c97824
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 821efec0beb26cea150fe0cfac20f0dc4c45d5f4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845699"
 ---
 # <a name="mixed-mode-debugging-for-x64-processes-is-only-supported-when-using-microsoftnet-framework-4-or-greater"></a>A depuração do modo misto para processos x64 só é suportada durante o uso do Microsoft.NET Framework 4 ou superior
 As versões do .NET Framework anteriores à versão 4 não fornecem suporte à depuração de modo misto de processos do x64. Isso significa que você não pode depurar de código gerenciado para código nativo, ou do código nativo para o código gerenciado.
 
 ### <a name="workarounds"></a>Soluções alternativas
 
--   Atualize seu projeto para usar o Microsoft .NET Framework 4 ou posterior.
+- Atualize seu projeto para usar o Microsoft .NET Framework 4 ou posterior.
 
      - ou -
 
@@ -39,23 +39,23 @@ As versões do .NET Framework anteriores à versão 4 não fornecem suporte à d
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para alterar a plataforma para 32 bits (Visual Basic ou C#)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
 
-2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
+2. Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
 
-3.  Clique em **Plataforma** e selecione x86 na lista de plataformas.
+3. Clique em **Plataforma** e selecione x86 na lista de plataformas.
 
      Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Para alterar a plataforma para 32 bits (C/C++)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do seu projeto e clique em **Propriedades**.
 
-2.  Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
+2. Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
--   Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Ver [Configurando a depuração SQL](/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

@@ -1,53 +1,47 @@
 ---
-title: 'Como: usar o Designer de esquema XML com literais XML | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Use o Designer de esquema XML com literais XML | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 592886a1cfe9d0ffc9c7165729cede3340bc65c8
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 05c32bfc6c3220739c433ef519b696953bc8b1b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218357"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074941"
 ---
-# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: Use o designer de esquema XML com literais XML
+# <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>Como: Usar o designer de esquema XML com literais XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este tópico descreve como exibir um esquema associado com um literal XML em um projeto Visual Basic.  
   
 ### <a name="to-create-a-new-visual-basic-console-application-project"></a>Para criar um novo projeto de aplicativo de console do Visual Basic  
   
-1.  Inicie o Visual Studio 2010.  
+1. Inicie o Visual Studio 2010.  
   
-2.  Dos **arquivo** menu, selecione **New**e, em seguida, selecione **projeto**. A caixa de diálogo **Novo Projeto** é exibida. Para **tipos de projeto**, selecione **outras linguagens,** e, em seguida, selecione **Visual Basic**. Para **modelos**, selecione o aplicativo de Console. Em seguida, digite `XMLLiterals` no **nome** campo e um local do projeto na **local** campo. Clique em **OK**.  
+2. Dos **arquivo** menu, selecione **New**e, em seguida, selecione **projeto**. A caixa de diálogo **Novo Projeto** é exibida. Para **tipos de projeto**, selecione **outras linguagens,** e, em seguida, selecione **Visual Basic**. Para **modelos**, selecione o aplicativo de Console. Em seguida, digite `XMLLiterals` no **nome** campo e um local do projeto na **local** campo. Clique em **OK**.  
   
      O novo poject é criado. O projeto de XMLLiterals contém um arquivo de origem Visual Basic, Module1.vb.  
   
 ### <a name="to-add-an-existing-xsd-file-to-the-project"></a>Para adicionar um arquivo XSD existente ao projeto  
   
-1.  Abrir um novo arquivo de texto em Notepad.Copy o código de exemplo de esquema XML [esquema de ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md) e cole-a para o arquivo.  
+1. Abrir um novo arquivo de texto em Notepad.Copy o código de exemplo de esquema XML [esquema de ordem de compra](../xml-tools/sample-xsd-file-simple-schema.md) e cole-a para o arquivo.  
   
-2.  Salve o arquivo em qualquer local com o nome PurchaseOrderSchema.xsd.  
+2. Salve o arquivo em qualquer local com o nome PurchaseOrderSchema.xsd.  
   
-3.  No Gerenciador de soluções, clique com botão direito o nome do projeto, selecione **Add**e, em seguida, selecione **Item existente...** . O **AddExisting Item** caixa de diálogo é exibida. Navegue até o arquivo de Purchaseorderschema, selecioná-lo e, em seguida, clique em **adicionar**.  
+3. No Gerenciador de soluções, clique com botão direito o nome do projeto, selecione **Add**e, em seguida, selecione **Item existente...** . O **AddExisting Item** caixa de diálogo é exibida. Navegue até o arquivo de Purchaseorderschema, selecioná-lo e, em seguida, clique em **adicionar**.  
   
-     O projeto de XMLLiterals agora contém dois arquivos: Module1.vb e PurchaseOrderSchema.xsd.  
+     O projeto de XMLLiterals agora contém dois arquivos: Module1.vb e Purchaseorderschema.  
   
 ### <a name="to-add-visual-basic-code-with-an-xml-literal-based-on-the-xsd-file-included-in-the-project"></a>Para adicionar código Visual Basic com uma literal XML, com base no arquivo XSD incluído no projeto  
   
-1.  Substitua o código no arquivo Module1.vb com o seguinte código:  
+1. Substitua o código no arquivo Module1.vb com o seguinte código:  
   
     ```  
     Imports <xmlns:ns="http://tempuri.org/PurchaseOrderSchema.xsd">  
@@ -76,9 +70,6 @@ Este tópico descreve como exibir um esquema associado com um literal XML em um 
     End Module  
     ```  
   
-2.  Qualquer nó XML em um literal XML ou uma importação de namespace XML com o botão direito e selecione **Mostrar no Schema Explorer**.  
+2. Qualquer nó XML em um literal XML ou uma importação de namespace XML com o botão direito e selecione **Mostrar no Schema Explorer**.  
   
      XML Schema Explorer lado a lado é exibido com um arquivo Visual Basic que possui a literal XML assotiated com o esquema XML.
-
-
-

@@ -1,14 +1,9 @@
 ---
-title: 'CA1065: Não acione exceções em locais inesperados | Microsoft Docs'
-ms.custom: ''
+title: 'CA1065: Não gerar exceções em locais inesperados | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1065
 - DoNotRaiseExceptionsInUnexpectedLocations
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 142322360d4ba1ffed6ef893bf02254548ee2705
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095347"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: não acione exceções em locais inesperados
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Não acionar exceções em locais inesperados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -70,24 +65,24 @@ ms.locfileid: "49887576"
 
  As exceções a seguir têm permissão para ser lançada a partir de um método get de propriedade:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
 
--   <xref:System.ArgumentException?displayProperty=fullName> (apenas no get indexada)
+- <xref:System.ArgumentException?displayProperty=fullName> (apenas no get indexada)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (apenas no get indexada)
+- <xref:System.Collections.Generic.KeyNotFoundException> (apenas no get indexada)
 
 ### <a name="event-accessor-methods"></a>Métodos de acessador de evento
  Acessadores de evento devem ser operações simples que não geram exceções. Um evento não deve lançar uma exceção ao tentar adicionar ou remover um manipulador de eventos.
 
  As exceções a seguir têm permissão para ser lançada a partir de um evento accesor:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
 
--   <xref:System.ArgumentException> e derivados
+- <xref:System.ArgumentException> e derivados
 
 ### <a name="equals-methods"></a>Métodos Equals
  O seguinte **é igual a** métodos não devem lançar exceções:
@@ -138,10 +133,7 @@ ms.locfileid: "49887576"
  É seguro suprimir um aviso nessa regra, se a violação foi causada por uma declaração de exceção em vez de uma exceção gerada.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2219: não acionar exceções em cláusulas de exceção](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+ [CA2219: Não gerar exceções em cláusulas de exceção](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
 
 ## <a name="see-also"></a>Consulte também
  [Avisos de design](../code-quality/design-warnings.md)
-
-
-

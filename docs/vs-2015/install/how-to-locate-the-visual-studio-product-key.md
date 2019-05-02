@@ -1,5 +1,5 @@
 ---
-title: 'Como: Localize a chave de produto | Microsoft Docs'
+title: Como localizar a chave do produto (Product Key) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -12,27 +12,27 @@ caps.latest.revision: 24
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: c4eb2b40d6f61cefe0b8d80cafba84ebdf0dcedc
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2223ab7dfbf37a0be1c9600065ddaad8ea4dfd19
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098722"
 ---
 # <a name="how-to-locate-the-visual-studio-product-key"></a>Como localizar a chave do produto do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Talvez seja conveniente localizar a chave do produto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] quando você estiver trabalhando com o atendimento ao cliente, atualizando de uma versão de avaliação ou atualizando seus próprios registros.
 
-### <a name="to-find-the-product-key-for-visual-studio"></a>Para localizar a chave do produto para o Visual Studio
+### <a name="to-find-the-product-key-for-visual-studio"></a>Para encontrar a chave do produto (Product Key) do Visual Studio
 
--   Procure a chave do produto em um destes locais:
+- Procure a chave do produto em um destes locais:
 
-    -   Na mídia de instalação (se aplicável).
+    - Na mídia de instalação (se aplicável).
 
-    -   Sobre o [My.VisualStudio.com](https://my.visualstudio.com/productkeys) site.
+    - No site do [My.VisualStudio.com](https://my.visualstudio.com/productkeys).
 
-    -   Documentação ou outros comunicados do fornecedor do qual você comprou o software.
+    - Documentação ou outros comunicados do fornecedor do qual você comprou o software.
 
 ## <a name="see-also"></a>Consulte também
- [Como: atualizar de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [instalar o Visual Studio](../install/install-visual-studio-2015.md) [Visual Studio e MSDN White Paper de licenciamento](http://go.microsoft.com/fwlink/?LinkId=191417)
+ [Como fazer upgrade de uma edição de avaliação do Visual Studio](../install/how-to-upgrade-from-a-trial-edition-of-visual-studio.md) [Instalar o Visual Studio](../install/install-visual-studio-2015.md) [White paper sobre licenciamento para Visual Studio e MSDN](http://go.microsoft.com/fwlink/?LinkId=191417)

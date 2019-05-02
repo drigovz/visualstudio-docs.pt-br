@@ -1,5 +1,5 @@
 ---
-title: Como coletar dados de amostragem no nível de linha | Microsoft Docs
+title: 'Como: Coletar dados de amostragem no nível de linha | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a2ba4c8a58a2969ced066c6211fd9faa7326cbcf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 65890bf31a1257c3a41bc1fd7ed3f732c50eda14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068089"
 ---
-# <a name="how-to-collect-line-level-sampling-data"></a>Como coletar dados de amostragem no nível da linha
+# <a name="how-to-collect-line-level-sampling-data"></a>Como: Coletar dados de amostragem de nível de linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.  
@@ -52,11 +52,11 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Desligar a amostragem de nível de linha para código gerenciado  
  Por padrão, a amostragem de nível de linha está ativada. Você pode desligar a coleta de dados de nível de linha de código gerenciado, seguindo um destes procedimentos:  
   
--   Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.  
+- Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.  
   
      – ou —  
   
--   Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.  
+- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117402"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solução de problemas de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
 ### <a name="youre-looking-at-a-previous-result"></a>Você está observou um resultado anterior  
  Quando você modificar e reexecutar os testes, um resultado anterior da cobertura de código poderá permanecer visível, inclusive a coloração de código com base nessa execução anterior.  
   
-1.  Executar Analisar Cobertura de Código.  
+1. Executar Analisar Cobertura de Código.  
   
-2.  Não se esqueça de selecionar o conjunto de resultados mais recente na janela de resultados Cobertura de Código.  
+2. Não se esqueça de selecionar o conjunto de resultados mais recente na janela de resultados Cobertura de Código.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>Os arquivos .pdb (símbolo) não estão disponíveis  
  Análise  
@@ -107,17 +107,17 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
  Resolução  
  Existem dois tipos possíveis de falhas:  
   
--   **Erro de XML**  
+- **Erro de XML**  
   
      Abra o arquivo .runsettings no editor XML do Visual Studio. Procure indicações de erro.  
   
--   **Erro na expressão regular**  
+- **Erro na expressão regular**  
   
      Cada cadeia de caracteres no arquivo é uma expressão regular. Revise cada um em busca de erros e, em especial, procure:  
   
-    -   Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`  
+    - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`  
   
-    -   Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`  
+    - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Arquivo .runsettings personalizado com exclusões incorretas  
  Análise  

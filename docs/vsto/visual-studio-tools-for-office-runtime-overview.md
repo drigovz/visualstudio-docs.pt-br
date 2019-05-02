@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f841d7f80e7130b2ee5a9c11f53d12137f7e358d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78d20fa0c7d4d0db6db50c2cbb5cde0b79023fb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982349"
 ---
 # <a name="visual-studio-tools-for-office-runtime-overview"></a>Visual Studio Tools for Office runtime overview
   Para executar soluções criadas usando o Microsoft Office developer tools no Visual Studio, o Visual Studio 2010 Tools for Office runtime deve ser instalado nos computadores dos usuários finais. Para obter mais informações, confira [Como: Instalar o Visual Studio Tools for Office runtime redistribuível](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md). O Visual Studio 2010 Tools for Office runtime consiste em dois componentes principais:
@@ -42,7 +42,7 @@ ms.locfileid: "56642983"
 
   O tempo de execução pode ser instalado de várias maneiras diferentes. Dependendo da configuração do computador, os diferentes componentes de tempo de execução são instalados durante a instalação do tempo de execução. Para obter mais informações, consulte [ferramentas do Visual Studio para cenários de instalação do Office em tempo de execução](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md).
 
-##  <a name="officeextensions"></a> Entender as extensões do Office para o .NET Framework
+## <a name="officeextensions"></a> Entender as extensões do Office para o .NET Framework
  O Visual Studio 2010 Tools for Office runtime inclui extensões do Office para o .NET Framework 3.5, o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e versões posteriores. As soluções que se destinam a cada versão do .NET Framework usam as extensões apropriadas para a versão em questão.
 
  Essas extensões consistem em assemblies que suas soluções usam para automatizar e estender os aplicativos do Office. Quando você cria um projeto do Office, o Visual Studio adiciona automaticamente as referências aos assemblies que são usados para o tipo de projeto e o .NET Framework de destino do projeto. Para obter mais informações sobre os assemblies nas extensões do Office, consulte [Assemblies no Visual Studio Tools para Office runtime](../vsto/assemblies-in-the-visual-studio-tools-for-office-runtime.md).
@@ -74,7 +74,7 @@ ms.locfileid: "56642983"
 
   Depois de fazer essa alteração, as informações de tipo para todos os tipos de tempo de execução usados pelo projeto são inseridas no assembly da solução quando você compila o projeto. Informações de tipo inseridas, em vez das informações de tipo nos assemblies referenciados, são usadas pela solução em tempo de execução.
 
-##  <a name="UnmanagedLoader"></a> Entender o carregador de solução do Office
+## <a name="UnmanagedLoader"></a> Entender o carregador de solução do Office
  O Visual Studio Tools for Office runtime inclui várias DLLs não gerenciadas que os aplicativos do Office usam para carregar o tempo de execução e as soluções do Office. Embora você nunca deva ter que trabalhar com essas DLL diretamente, saber as finalidades delas podem ajudar a compreender melhor a arquitetura das soluções do Office.
 
  Para obter informações sobre como esses componentes são usados durante o processo de carregamento, consulte [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md) e [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).

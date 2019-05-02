@@ -1,7 +1,7 @@
 ---
 title: Definir padrões para implantações empresariais
 description: Saiba mais sobre as políticas de domínio e outras operações de configuração de implantação corporativa do Visual Studio.
-ms.date: 05/05/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,14 +16,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f523aaa61e1908d0e947de4cf555ec95ad2d4306
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: be29a8eff4e36df04721e8f946b9b2b0ebae3145
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945008"
 ---
-# <a name="set-defaults-for-enterprise-deployments-of-visual-studio-2017"></a>Definir padrões para implantações empresariais do Visual Studio 2017
+# <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>Definir padrões para implantações empresariais do Visual Studio
 
 Você pode definir políticas de Registro que afetam a implantação do Visual Studio. Essas políticas são globais para o novo instalador e afetam:
 
@@ -50,8 +52,8 @@ Você pode definir os valores de registro a seguir:
 
 | **Nome** | **Tipo** | **Padrão** | **Descrição** |
 | -------- | -------- | ----------- | --------------- |
-| `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | O diretório em que os manifestos de pacote e opcionalmente, as cargas são armazenados. Leia sobre como [desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md) para obter mais informações. |
-| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Manter cargas de pacote, mesmo após a instalação. Você pode alterar o valor a qualquer momento. Desabilitar a política removerá quaisquer payloads de pacote em cache para a instância que você reparar ou modificar. Leia sobre como [desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md) para obter mais informações. |
+| `CachePath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | O diretório em que os manifestos de pacote e opcionalmente, as cargas são armazenados. Para obter mais informações, consulte a página [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md). |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | Manter cargas de pacote, mesmo após a instalação. Você pode alterar o valor a qualquer momento. Desabilitar a política removerá quaisquer payloads de pacote em cache para a instância que você reparar ou modificar. Para obter mais informações, consulte a página [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md). |
 | `SharedInstallationPath` | `REG_SZ` ou `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | O diretório em que alguns pacotes compartilhados entre versões de instâncias do Visual Studio estão instalados. Você pode alterar o valor a qualquer momento, mas isso afetará apenas instalações futuras. Todos os produtos já instalados no local antigo não devem ser movidos ou poderão não funcionar corretamente. |
 
 > [!IMPORTANT]
@@ -62,6 +64,6 @@ Você pode definir os valores de registro a seguir:
 
 ## <a name="see-also"></a>Consulte também
 
- * [Instalar o Visual Studio](install-visual-studio.md)
- * [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md)
- * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
+- [Instalar o Visual Studio](install-visual-studio.md)
+- [Desabilitar ou mover o cache do pacote](disable-or-move-the-package-cache.md)
+- [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

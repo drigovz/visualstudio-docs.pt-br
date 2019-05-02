@@ -1,26 +1,21 @@
 ---
 title: Arquitetura de plug-in de controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, architecture
 ms.assetid: 35351d4c-9414-409b-98fc-f2023e2426b7
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c7ded33f6296d9ddb0b87a3d2916a95249169f82
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 370f88ce4d8fc372ce31e1e85e88d5379f4e1ba5
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928568"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitetura do plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,4 +43,3 @@ Diagrama de arquitetura mostrando a interação entre o VS e o controle de fonte
  [Plug-ins de controle de origem](../../extensibility/source-control-plug-ins.md)   
  [Glossário](../../extensibility/source-control-plug-in-glossary.md)   
  [Criar um plug-in de controle do código-fonte](../../extensibility/internals/creating-a-source-control-plug-in.md)
-

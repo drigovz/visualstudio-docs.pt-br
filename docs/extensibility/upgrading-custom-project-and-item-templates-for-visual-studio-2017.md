@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MT
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434209"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar modelos de Item para Visual Studio 2017 e projeto personalizados
 
@@ -32,36 +32,36 @@ Para outros locais (não-usuário), você deve incluir um arquivo de manifest(.v
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Como atualizar uma extensão do VSIX com modelos de Item ou projeto
 
-1.  Abra a solução no Visual Studio 2017. Você será solicitado a atualizar o código. Clique em **OK**.
+1. Abra a solução no Visual Studio 2017. Você será solicitado a atualizar o código. Clique em **OK**.
 
-2.  Após a conclusão da atualização, você precisa alterar a versão de destino de instalação. No projeto VSIX, abra o arquivo vsixmanifest e selecione o **instalar destinos** guia. Se o **intervalo de versão** campo é **[14.0]**, clique em **editar** e alterá-lo para incluir o Visual Studio 2017. Por exemplo, ele pode ser definido como **[14.0,15.0]** para instalar a extensão do Visual Studio 2015 ou Visual Studio 2017, ou em **[15.0]** para instalá-lo para apenas o Visual Studio 2017.
+2. Após a conclusão da atualização, você precisa alterar a versão de destino de instalação. No projeto VSIX, abra o arquivo vsixmanifest e selecione o **instalar destinos** guia. Se o **intervalo de versão** campo é **[14.0]**, clique em **editar** e alterá-lo para incluir o Visual Studio 2017. Por exemplo, ele pode ser definido como **[14.0,15.0]** para instalar a extensão do Visual Studio 2015 ou Visual Studio 2017, ou em **[15.0]** para instalá-lo para apenas o Visual Studio 2017.
 
-3.  Recompile o código.
+3. Recompile o código.
 
-4.  Feche o Visual Studio.
+4. Feche o Visual Studio.
 
-5.  Instale o VSIX.
+5. Instale o VSIX.
 
-6.  Você pode testar a atualização, fazendo o seguinte:
+6. Você pode testar a atualização, fazendo o seguinte:
 
-    1.  Verificação de alteração de arquivo é ativado pela seguinte chave do registro:
+    1. Verificação de alteração de arquivo é ativado pela seguinte chave do registro:
 
          **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Depois de adicionar a chave, execute **devenv /installvstemplates**.
+    2. Depois de adicionar a chave, execute **devenv /installvstemplates**.
 
-    3.  Reabra o Visual Studio. Você deve encontrar o modelo no local esperado.
+    3. Reabra o Visual Studio. Você deve encontrar o modelo no local esperado.
 
     > [!NOTE]
-    >  Os modelos de projeto de extensibilidade do Visual Studio não estão disponíveis quando a chave do registro está presente. Você deve excluir a chave do registro (e executar novamente **devenv /installvstemplates**) para usá-los.
+    > Os modelos de projeto de extensibilidade do Visual Studio não estão disponíveis quando a chave do registro está presente. Você deve excluir a chave do registro (e executar novamente **devenv /installvstemplates**) para usá-los.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Outras recomendações para a implantação de modelos de projeto e Item
 
--   Evite usar arquivos de modelo compactado. Compactado arquivos precisam ser descompactado para recuperar os recursos e o conteúdo do modelo, portanto, eles serão mais caras usar. Em vez disso, você deve implantar os modelos de projeto e item como arquivos individuais em seu próprio diretório para acelerar a inicialização de modelo. Extensões de VSIX, tarefas de build do SDK descompactará automaticamente qualquer modelo compactado ao criar o arquivo VSIX.
+- Evite usar arquivos de modelo compactado. Compactado arquivos precisam ser descompactado para recuperar os recursos e o conteúdo do modelo, portanto, eles serão mais caras usar. Em vez disso, você deve implantar os modelos de projeto e item como arquivos individuais em seu próprio diretório para acelerar a inicialização de modelo. Extensões de VSIX, tarefas de build do SDK descompactará automaticamente qualquer modelo compactado ao criar o arquivo VSIX.
 
--   Evite usar entradas de ID de recurso do pacote para o nome do modelo, a descrição, o ícone ou visualizar a fim de evitar carregamentos de assembly de recurso desnecessárias durante a descoberta de modelo. Em vez disso, você pode usar manifestos localizados para criar uma entrada de modelo para cada localidade, que usa nomes localizados ou propriedades.
+- Evite usar entradas de ID de recurso do pacote para o nome do modelo, a descrição, o ícone ou visualizar a fim de evitar carregamentos de assembly de recurso desnecessárias durante a descoberta de modelo. Em vez disso, você pode usar manifestos localizados para criar uma entrada de modelo para cada localidade, que usa nomes localizados ou propriedades.
 
--   Se você estiver incluindo modelos como itens de arquivo, geração de manifesto não pode fornecer os resultados esperados. Nesse caso, você terá que adicionar um manifesto gerado manualmente para o projeto VSIX.
+- Se você estiver incluindo modelos como itens de arquivo, geração de manifesto não pode fornecer os resultados esperados. Nesse caso, você terá que adicionar um manifesto gerado manualmente para o projeto VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Alterações de arquivo no projeto e modelos de Item
 Mostramos os pontos da diferença entre o Visual Studio 2015 e Visual Studio 2017 versões dos arquivos de modelo, para que você possa criar novos arquivos corretamente.

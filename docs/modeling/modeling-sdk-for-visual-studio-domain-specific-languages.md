@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df931cf5cb9034a868f412a344e26a58e6006455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b028655c0654bc5332264c3bcc0fced01480b69f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815031"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>SDK de Modelagem para Visual Studio - linguagens específicas ao domínio
 
@@ -40,7 +40,7 @@ Você pode personalizar e estender todos esses recursos. Suas extensões são in
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-[Postagens de blogs relacionadas](https://blogs.msdn.microsoft.com/visualstudioalm/tag/code-index/)
+[Postagens de blogs relacionadas](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)
 
 Para obter orientação sobre técnicas avançadas e solução de problemas, visite [Fórum de extensibilidade de ferramentas de modelagem & de DSL do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=186074).
 
@@ -69,7 +69,7 @@ Para obter orientação sobre técnicas avançadas e solução de problemas, vis
 
  [Criando uma linguagem específica de domínio baseada no WPF](../modeling/creating-a-wpf-based-domain-specific-language.md)
 
- [Como: Estender o Designer de linguagem específica do domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
+ [Como: Estender o Designer de Linguagem Específica de Domínio](../modeling/how-to-extend-the-domain-specific-language-designer.md)
 
  [Edições do Visual Studio com suporte pelo SDK de Visualização e Modelagem](../modeling/supported-visual-studio-editions-for-visualization-amp-modeling-sdk.md)
 

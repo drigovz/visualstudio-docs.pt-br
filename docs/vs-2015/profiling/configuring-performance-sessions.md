@@ -14,12 +14,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c479a2c62d40b52c085f56b424cf3151e93f487c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d67801cedded1ccf66544e21257866feda828e31
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434323"
 ---
 # <a name="configuring-performance-sessions"></a>Configurando sessões de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54774690"
 Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para obter mais informações, consulte [Controlling Data Collection (Controlando a coleta de dados)](../profiling/controlling-data-collection.md).  
   
 > [!NOTE]
->  Em muitos casos, usar as propriedades padrão do Assistente de Desempenho é uma maneira eficiente de coletar dados de criação de perfil. Para obter mais informações, consulte o [Beginners Guide to Performance Profiling (Guia de Iniciantes para a Criação de Perfil de Desempenho)](../profiling/beginners-guide-to-performance-profiling.md) e [Introdução](../profiling/getting-started-with-performance-tools.md).  
+> Em muitos casos, usar as propriedades padrão do Assistente de Desempenho é uma maneira eficiente de coletar dados de criação de perfil. Para obter mais informações, consulte o [Beginners Guide to Performance Profiling (Guia de Iniciantes para a Criação de Perfil de Desempenho)](../profiling/beginners-guide-to-performance-profiling.md) e [Introdução](../profiling/getting-started-with-performance-tools.md).  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   

@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_isdataaligned | Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_isDataAligned | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: ddd11a41-6c00-4829-acf4-aa1ace8c21a7
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ffe9f5501887d1d0f0ca416a06527a56346a2016
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86c701765f9c8a67f7b95368d02febc1d254c696
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422008"
 ---
 # <a name="idiasymbolgetisdataaligned"></a>IDiaSymbol::get_isDataAligned
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_isDataAligned(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.  
   
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="remarks"></a>Comentários  
  Essa propriedade geralmente é definida quando o executável é compilado com o alinhamento de dados não padrão. Por exemplo, o compilador do C++ da Microsoft pode alterar o alinhamento de dados com a opção de linha de comando, /Zp<em>#</em>, onde *#* é um valor de byte.  
@@ -60,6 +55,3 @@ HRESULT get_isDataAligned(
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

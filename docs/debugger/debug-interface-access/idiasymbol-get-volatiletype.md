@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6ccafc8a0d30558f61bc869d8cfc8280c04723e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cef843a2e214dbf66107a5ac7462ae6a2672fafe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400598"
 ---
 # <a name="idiasymbolgetvolatiletype"></a>IDiaSymbol::get_volatileType
 Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário (UDT) é volátil.
@@ -39,7 +39,7 @@ HRESULT get_volatileType ( 
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  No C++, um UDT pode ser marcado com o `volatile` palavra-chave, que indica que o seu conteúdo não é possível supor existente de um acesso para a próxima.

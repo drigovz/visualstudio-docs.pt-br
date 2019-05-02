@@ -1,27 +1,22 @@
 ---
 title: Especificando o local do arquivo VSPackage ao Shell do VS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, file location
 - VSPackages, managed package file location
 ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e1034a369a612fc0a8c01e767149b101b6836626
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: c0662bfe22b4c78bb754bbac2fbfdd281a4a7bce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408512"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificando o local do arquivo do VSPackage para o Shell do VS
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,5 +31,4 @@ ms.locfileid: "51764354"
 |Colocar a DLL para o **PublicAssemblies** directory.|Por fim, o assembly também pode ser colocado na **PublicAssemblies** subdiretório. Assemblies localizados no **PublicAssemblies** são detectados automaticamente e também aparecerão na **Add References** da caixa de diálogo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].<br /><br /> Assemblies de VSPackage só devem ser colocados na **PublicAssemblies** gerenciados de diretório se eles contêm componentes que se destinam a ser reutilizado por outros desenvolvedores de VSPackage. A maioria dos assemblies não atende a esse critério.|  
   
 > [!NOTE]
->  Use assemblies de nome forte, assinados para todos os assemblies dependentes. Esses assemblies também devem ser instalados em seu próprio diretório ou cache de assembly global (GAC). Isso protege contra conflitos com assemblies que têm o mesmo nome de arquivo base, conhecido como associação de nome fraco.
-
+> Use assemblies de nome forte, assinados para todos os assemblies dependentes. Esses assemblies também devem ser instalados em seu próprio diretório ou cache de assembly global (GAC). Isso protege contra conflitos com assemblies que têm o mesmo nome de arquivo base, conhecido como associação de nome fraco.

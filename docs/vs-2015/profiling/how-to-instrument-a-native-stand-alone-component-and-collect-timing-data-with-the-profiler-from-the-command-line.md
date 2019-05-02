@@ -1,5 +1,5 @@
 ---
-title: Como instrumentar um componente autônomo nativo e coletar dados de tempo com o criador de perfil por meio da linha de comando | Microsoft Docs
+title: 'Como: Instrumentar um componente nativo independente e coletar dados de tempo com o criador de perfil na linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,20 +9,20 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 39773bbf821a4b7cec416ff726bf84cbb46935f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432663"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Como instrumentar um componente autônomo nativo e coletar dados de tempo com o criador de perfil a partir da linha de comando
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Como: Instrumentar um componente autônomo nativo e coletar dados de tempo com o Profiler na linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as ferramentas da linha de comando das Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para instrumentar um componente nativo, como um arquivo C++.exe ou .dll, e coletar dados detalhados de tempo.  
 
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Para coletar dados de tempo detalhados de um componente usando o método de instrumentação, use a ferramenta [VSInstr.exe](../profiling/vsinstr.md) para gerar uma versão instrumentada do componente. Em seguida, inicie o criador de perfil. Quando o componente instrumentado é executado, os dados de tempo são automaticamente coletados para um arquivo de dados. Você pode pausar e retomar a coleta de dados durante a sessão de criação de perfil.  
 
@@ -56,7 +56,6 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms.                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).                                                                                   |
 
-
 4. Inicie o aplicativo de destino normalmente.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
@@ -64,7 +63,7 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -77,9 +76,9 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Feche o aplicativo de destino.  
+1. Feche o aplicativo de destino.  
 
-2.  Desligue o criador de perfil. Tipo:  
+2. Desligue o criador de perfil. Tipo:  
 
      **VSPerfCmd /shutdown**  
 

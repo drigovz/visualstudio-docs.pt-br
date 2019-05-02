@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 853a131ce522da156f0e59aaea99bc289cd2a452
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909188"
 ---
 # <a name="projects"></a>Projetos
 No Visual Studio, os projetos são contêineres que os desenvolvedores usam para organizar os arquivos de código-fonte e outros recursos que aparecem no **Gerenciador de soluções**. Normalmente, os projetos são arquivos (por exemplo, um arquivo. csproj para um projeto de c#) que armazenam referências a recursos como arquivos de bitmap e arquivos de código-fonte. Projetos permitem organizar, compilar, depurar e implantar o código-fonte, as referências a serviços Web e bancos de dados e outros recursos. Os VSPackages pode estender o sistema de projeto do Visual Studio de três maneiras principais: *tipos de projeto*, *subtipos de projeto*, e *ferramentas personalizadas*.
@@ -37,7 +37,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
 
  Explica o projeto da Web, que por sua vez, criar aplicativos Web.
 
-- [Nova geração de projeto: Nos bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Geração de novo projeto: Nos bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) e [nova geração de projeto: bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
 
  Explica o que realmente ocorre quando você cria um novo projeto.
 

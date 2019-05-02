@@ -1,6 +1,6 @@
 ---
 title: 'CA1024: Usar propriedades quando apropriado'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - UsePropertiesWhereAppropriate
@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a3fba3a733381642999d7bccb5666b7db895b87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779377"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usar propriedades quando apropriado
 
@@ -35,7 +35,9 @@ ms.locfileid: "55922297"
 
 ## <a name="cause"></a>Causa
 
-Um método público ou protegido tem um nome que começa com `Get`, não usa nenhum parâmetro e retorna um valor que não é uma matriz.
+Um método tem um nome que começa com `Get`, não usa nenhum parâmetro e retorna um valor que não é uma matriz.
+
+Por padrão, essa regra olha apenas métodos públicos e protegidos, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -69,11 +71,21 @@ Para corrigir uma violação dessa regra, altere o método a uma propriedade.
 
 Suprima um aviso nessa regra, se o método de atender a pelo menos um dos critérios listados anteriormente.
 
-## <a name="controlling-property-expansion-in-the-debugger"></a>Controlando a expansão de propriedade no depurador
+## <a name="configurability"></a>Capacidade de configuração
 
-Um motivo que os programadores evitar o uso de uma propriedade é porque não querem o depurador para expandir automaticamente. Por exemplo, a propriedade pode envolver a alocação de um objeto grande ou chamar um P/Invoke, mas ele realmente não pode ter nenhum efeito colateral observável.
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-Você pode impedir que o depurador expansão automática propriedades por meio da aplicação <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. O exemplo a seguir mostra esse atributo está sendo aplicado a uma propriedade de instância.
+```
+dotnet_code_quality.ca1024.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+
+## <a name="control-property-expansion-in-the-debugger"></a>Expansão de propriedade de controle no depurador
+
+Um motivo que os programadores evitar o uso de uma propriedade é porque eles não deseja que o depurador autoexpandi-lo. Por exemplo, a propriedade pode envolver a alocação de um objeto grande ou chamar um P/Invoke, mas ele realmente não pode ter nenhum efeito colateral observável.
+
+Você pode impedir que o depurador de propriedades autoexpanding aplicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. O exemplo a seguir mostra esse atributo está sendo aplicado a uma propriedade de instância.
 
 ```vb
 Imports System

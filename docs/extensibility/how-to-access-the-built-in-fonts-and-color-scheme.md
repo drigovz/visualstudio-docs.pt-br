@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415514"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: Acessar as fontes internas e ccheme de cores
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -34,26 +34,26 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Para definir uma categoria usando cores e fontes internas
 
-1.  Crie um GUID arbitrário.
+1. Crie um GUID arbitrário.
 
      Esse GUID é usado para identificar exclusivamente uma categoria. Esta categoria reutiliza a especificação de cores e fontes de padrão do IDE.
 
     > [!NOTE]
-    >  Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.
+    > Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.
 
-2.  Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro de recursos do VSPackage (*. rc*) de arquivo, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.
+2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro de recursos do VSPackage (*. rc*) de arquivo, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.
 
      Para obter mais informações, consulte [adicionar ou excluir uma cadeia de caracteres](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar uma categoria usando cores e fontes internas
 
-1.  Construa um tipo especial de entrada de registro de categoria no seguinte local:
+1. Construa um tipo especial de entrada de registro de categoria no seguinte local:
 
      *[HKLM\Software\Microsoft. \Visual Studio\\\<versão do Visual Studio > \FontAndColors\\\<categoria >*]
 
      *\<Categoria >* é o nome não localizado da categoria.
 
-2.  Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:
+2. Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:
 
     |Nome|Tipo|Dados|Descrição|
     |----------|----------|----------|-----------------|

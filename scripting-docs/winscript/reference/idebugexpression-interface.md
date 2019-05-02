@@ -2,7 +2,6 @@
 title: Interface IDebugExpression | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 9684253343aa83cf95f7d816781705eab7fbc327
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430021"
 ---
 # <a name="idebugexpression-interface"></a>Interface IDebugExpression
 Representa uma expressão avaliada de forma assíncrona. Mecanismos de script geralmente implementam essa interface. Um IDE de depurador normalmente usa essa interface para habilitar uma janela de execução imediata ou janela de observação.  
   
 > [!NOTE]
->  O `IDebugExpression` interface está disponível somente a partir de um quadro de pilha.  
+> O `IDebugExpression` interface está disponível somente a partir de um quadro de pilha.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugExpression` interface expõe os métodos a seguir.  
   

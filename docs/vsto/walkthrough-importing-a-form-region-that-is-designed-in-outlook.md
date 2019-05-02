@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 646fa57ac351fab9b2527c3527ce1864c42519ce
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c679f9a322d079f5037cea1e48fa8690daceb496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446981"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Passo a passo: Importar de uma região de formulário projetada no Outlook
   Este passo a passo demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importe a região do formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário** assistente. Criando a região de formulário do Outlook torna possível para adicionar controles nativos do Outlook para a região de formulário associar a dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.
@@ -38,12 +38,12 @@ ms.locfileid: "56631556"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
+- [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar regiões de formulário do Outlook usando o Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Cria uma região de formulário usando o designer de região de formulário do Outlook
@@ -53,23 +53,23 @@ ms.locfileid: "56631556"
 
 ### <a name="to-design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Para criar uma região de formulário usando o designer de região de formulário do Outlook
 
-1.  Inicie o Microsoft Office Outlook.
+1. Inicie o Microsoft Office Outlook.
 
-2.  No Outlook, sobre o **Developer** , clique em **criar um formulário**. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+2. No Outlook, sobre o **Developer** , clique em **criar um formulário**. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-3.  No **Design Form** , clique em **tarefa**e, em seguida, clique em **abrir**.
+3. No **Design Form** , clique em **tarefa**e, em seguida, clique em **abrir**.
 
-4.  No Outlook, na **desenvolvedor** guia o **Design** , clique em **nova região de formulário**.
+4. No Outlook, na **desenvolvedor** guia o **Design** , clique em **nova região de formulário**.
 
      Abre uma nova região de formulário. Se o **seletor de campos** não aparecer, clique em **seletor de campo** no **ferramentas** grupo.
 
-5.  Arraste o **assunto** campo e o **% concluída** campo o **seletor de campo** à região do formulário.
+5. Arraste o **assunto** campo e o **% concluída** campo o **seletor de campo** à região do formulário.
 
-6.  No **ferramentas** , clique em **ferramentas de controle** para abrir o **caixa de ferramentas**.
+6. No **ferramentas** , clique em **ferramentas de controle** para abrir o **caixa de ferramentas**.
 
-7.  Arraste um rótulo da **caixa de ferramentas** para a região do formulário. Posição do rótulo abaixo de **assunto** e **% concluída** campos.
+7. Arraste um rótulo da **caixa de ferramentas** para a região do formulário. Posição do rótulo abaixo de **assunto** e **% concluída** campos.
 
-8.  Clique com botão direito no rótulo e, em seguida, clique em **propriedades avançadas**.
+8. Clique com botão direito no rótulo e, em seguida, clique em **propriedades avançadas**.
 
 9. No **propriedades** janela, defina as **legenda** propriedade a ser **essa tarefa depende das tarefas a seguir**, defina o **largura** propriedade para **200**e, em seguida, clique em **aplicar**.
 
@@ -118,11 +118,11 @@ ms.locfileid: "56631556"
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para criar um novo projeto de suplemento do VSTO do Outlook
 
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Outlook com o nome **TaskAddIn**.
+1. Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Outlook com o nome **TaskAddIn**.
 
-2.  No **novo projeto** caixa de diálogo, selecione **criar diretório para solução**.
+2. No **novo projeto** caixa de diálogo, selecione **criar diretório para solução**.
 
-3.  Salve o projeto no diretório de projeto padrão.
+3. Salve o projeto no diretório de projeto padrão.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -131,23 +131,23 @@ ms.locfileid: "56631556"
 
 ### <a name="to-import-the-form-region-into-the-outlook-vsto-add-in-project"></a>Para importar a região do formulário para o projeto de suplemento do VSTO do Outlook
 
-1.  No **Gerenciador de soluções**, com o botão direito do **TaskAddIn** do projeto, aponte para **Add**e, em seguida, clique em **Novo Item**.
+1. No **Gerenciador de soluções**, com o botão direito do **TaskAddIn** do projeto, aponte para **Add**e, em seguida, clique em **Novo Item**.
 
-2.  No **modelos** painel, selecione **região de formulário do Outlook**, nomeie o arquivo **TaskFormRegion**e, em seguida, clique em **adicionar**.
+2. No **modelos** painel, selecione **região de formulário do Outlook**, nomeie o arquivo **TaskFormRegion**e, em seguida, clique em **adicionar**.
 
      O **região do formulário NewOutlook** assistente é iniciado.
 
-3.  Sobre o **selecione como você deseja criar a região do formulário** , clique em **importar de um armazenamento de formulário do Outlook (. ofs) arquivo**e, em seguida, clique em **procurar**.
+3. Sobre o **selecione como você deseja criar a região do formulário** , clique em **importar de um armazenamento de formulário do Outlook (. ofs) arquivo**e, em seguida, clique em **procurar**.
 
-4.  No **arquivo local de região de formulário Outlook existente** caixa de diálogo, navegue até o local do *TaskFormRegion.ofs*, selecione **TaskFormRegion.ofs**, clique em **Abertos**e, em seguida, clique em **próxima**.
+4. No **arquivo local de região de formulário Outlook existente** caixa de diálogo, navegue até o local do *TaskFormRegion.ofs*, selecione **TaskFormRegion.ofs**, clique em **Abertos**e, em seguida, clique em **próxima**.
 
-5.  Sobre o **selecione o tipo da região de formulário que você deseja criar** , clique em **Substituir tudo**e, em seguida, clique em **próxima**.
+5. Sobre o **selecione o tipo da região de formulário que você deseja criar** , clique em **Substituir tudo**e, em seguida, clique em **próxima**.
 
      Um *Substituir tudo* região do formulário substitui todo o formulário do Outlook. Para obter mais informações sobre os tipos de região de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 
-6.  Sobre o **fornecer um texto descritivo e selecionar suas preferências de exibição** , clique em **próxima**.
+6. Sobre o **fornecer um texto descritivo e selecionar suas preferências de exibição** , clique em **próxima**.
 
-7.  No **identificar as classes de mensagem que exibirão esta região do formulário** página, o **quais classes de mensagem personalizadas exibirão esta região do formulário** , digite **IPM. Task.TaskFormRegion**e, em seguida, clique em **concluir**.
+7. No **identificar as classes de mensagem que exibirão esta região do formulário** página, o **quais classes de mensagem personalizadas exibirão esta região do formulário** , digite **IPM. Task.TaskFormRegion**e, em seguida, clique em **concluir**.
 
      Um *TaskFormRegion.cs* ou *TaskFormRegion.vb* arquivo é adicionado ao seu projeto.
 
@@ -208,25 +208,25 @@ ms.locfileid: "56631556"
 
 ### <a name="to-test-the-form-region"></a>Para testar a região do formulário
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
      O Outlook inicia.
 
-2.  No Outlook, sobre o **Home** , clique em **novos itens**e, em seguida, clique em **tarefa**.
+2. No Outlook, sobre o **Home** , clique em **novos itens**e, em seguida, clique em **tarefa**.
 
-3.  No formulário de tarefa, digite **tarefa dependente** na **assunto** campo.
+3. No formulário de tarefa, digite **tarefa dependente** na **assunto** campo.
 
-4.  Sobre o **tarefa** guia da faixa de opções, no **ações** de grupo, clique em **salvar e fechar**.
+4. Sobre o **tarefa** guia da faixa de opções, no **ações** de grupo, clique em **salvar e fechar**.
 
-5.  No Outlook, sobre o **Home** , clique em **novos itens**, clique em **mais itens**e, em seguida, clique em **Escolher formulário**.
+5. No Outlook, sobre o **Home** , clique em **novos itens**, clique em **mais itens**e, em seguida, clique em **Escolher formulário**.
 
-6.  No **Escolher formulário** caixa de diálogo, clique em **TaskFormRegion**e, em seguida, clique em **abrir**.
+6. No **Escolher formulário** caixa de diálogo, clique em **TaskFormRegion**e, em seguida, clique em **abrir**.
 
      O **TaskFormRegion** região do formulário é exibida. Este formulário substitui o formulário de tarefa inteira. O **selecione uma tarefa para adicionar à lista de tarefas dependentes** caixa de combinação é preenchida com outras tarefas na pasta tarefas.
 
-7.  No formulário de tarefa, na **assunto** , digite **tarefa principal**.
+7. No formulário de tarefa, na **assunto** , digite **tarefa principal**.
 
-8.  No **selecione uma tarefa para adicionar à lista de tarefas dependentes** caixa de combinação, selecione **tarefa dependente**e, em seguida, clique em **adicionar tarefa dependente**.
+8. No **selecione uma tarefa para adicionar à lista de tarefas dependentes** caixa de combinação, selecione **tarefa dependente**e, em seguida, clique em **adicionar tarefa dependente**.
 
      **0% concluída--tarefa dependente** aparece na **essa tarefa depende das tarefas a seguir** caixa de listagem. Isso demonstra que você tratado com êxito o `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` evento do botão.
 
@@ -245,11 +245,11 @@ ms.locfileid: "56631556"
 ## <a name="next-steps"></a>Próximas etapas
  Você pode aprender mais sobre como personalizar a interface do usuário de um aplicativo do Outlook com estes tópicos:
 
--   Para saber mais sobre como criar a aparência de uma região de formulário ao arrastar controles gerenciados em um designer visual, consulte [passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Para saber mais sobre como criar a aparência de uma região de formulário ao arrastar controles gerenciados em um designer visual, consulte [passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Para saber mais sobre como personalizar a faixa de opções de um item do Outlook, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Para saber mais sobre como personalizar a faixa de opções de um item do Outlook, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
--   Para saber mais sobre como adicionar um painel de tarefas personalizado para o Outlook, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+- Para saber mais sobre como adicionar um painel de tarefas personalizado para o Outlook, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Acessar uma região de formulário em tempo de execução](../vsto/accessing-a-form-region-at-run-time.md)

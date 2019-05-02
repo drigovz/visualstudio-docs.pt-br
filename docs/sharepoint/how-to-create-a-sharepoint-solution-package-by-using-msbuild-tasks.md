@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f6fd87a9c666e3373515cf8df59d7cd9fd7c717
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966818"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Como: Criar um pacote de solução do SharePoint usando tarefas do MSBuild
   Você pode compilar, limpar e validar um pacote do SharePoint (*. wsp*) usando as tarefas de linha de comando do MSBuild em um computador de desenvolvimento. Você também pode usar esses comandos para automatizar o processo de compilação usando o Team Foundation Server em um computador de compilação.
@@ -26,11 +26,11 @@ ms.locfileid: "56624393"
 
 #### <a name="to-build-a-sharepoint-package"></a>Para criar um pacote do SharePoint
 
-1.  Sobre o Windows **inicie** menu, escolha **todos os programas** > **Acessórios** > **Prompt de comando**.
+1. Sobre o Windows **inicie** menu, escolha **todos os programas** > **Acessórios** > **Prompt de comando**.
 
-2.  Altere para o diretório onde se encontra o projeto do SharePoint.
+2. Altere para o diretório onde se encontra o projeto do SharePoint.
 
-3.  Digite o seguinte comando para criar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
+3. Digite o seguinte comando para criar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
 
     ```cmd
     msbuild /t:Package ProjectFileName
@@ -47,11 +47,11 @@ ms.locfileid: "56624393"
 
 #### <a name="to-clean-a-sharepoint-package"></a>Para limpar um pacote do SharePoint
 
-1.  Abra uma janela do prompt de comando.
+1. Abra uma janela do prompt de comando.
 
-2.  Altere para o diretório onde se encontra o projeto do SharePoint.
+2. Altere para o diretório onde se encontra o projeto do SharePoint.
 
-3.  Insira o seguinte comando para limpar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
+3. Insira o seguinte comando para limpar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
 
     ```cmd
     msbuild /t:CleanPackage ProjectFileName
@@ -68,11 +68,11 @@ ms.locfileid: "56624393"
 
 #### <a name="to-validate-a-sharepoint-package"></a>Para validar um pacote do SharePoint
 
-1.  Abra uma janela do prompt de comando.
+1. Abra uma janela do prompt de comando.
 
-2.  Altere para o diretório onde se encontra o projeto do SharePoint.
+2. Altere para o diretório onde se encontra o projeto do SharePoint.
 
-3.  Insira o comando a seguir para validar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
+3. Insira o comando a seguir para validar um pacote para o projeto. Substitua *ProjectFileName* com o nome do projeto.
 
     ```cmd
     msbuild /t:ValidatePackage ProjectFileName
@@ -89,11 +89,11 @@ ms.locfileid: "56624393"
 
 #### <a name="to-set-a-property-in-a-sharepoint-package"></a>Para definir uma propriedade em um pacote do SharePoint
 
-1.  Abra uma janela do prompt de comando.
+1. Abra uma janela do prompt de comando.
 
-2.  Altere para o diretório onde se encontra o projeto do SharePoint.
+2. Altere para o diretório onde se encontra o projeto do SharePoint.
 
-3.  Digite o seguinte comando para definir uma propriedade em um pacote para o projeto. Substitua *PropertyName* com a propriedade que você deseja definir.
+3. Digite o seguinte comando para definir uma propriedade em um pacote para o projeto. Substitua *PropertyName* com a propriedade que você deseja definir.
 
     ```cmd
     msbuild /property:PropertyName=Value

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003390"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Compartilhando classes entre DSLs por meio de uma biblioteca de DSLs
 No SDK de modelagem e visualização do Visual Studio, você pode criar uma definição de DSL incompleta que você pode importar para outra DSL. Isso permite fatorar partes comuns dos modelos semelhantes.
@@ -21,11 +21,11 @@ No SDK de modelagem e visualização do Visual Studio, você pode criar uma defi
 
 #### <a name="to-create-a-dsl-library"></a>Para criar uma biblioteca de DSL
 
-1.  Criar um novo projeto DSL e escolher o modelo de solução de biblioteca de DSL.
+1. Criar um novo projeto DSL e escolher o modelo de solução de biblioteca de DSL.
 
      Um único projeto DSL será criado com um modelo vazio.
 
-2.  Você pode adicionar classes de domínio, relações, formas e assim por diante.
+2. Você pode adicionar classes de domínio, relações, formas e assim por diante.
 
      Os elementos na biblioteca não é necessário que formar uma única árvore de incorporação.
 
@@ -33,15 +33,15 @@ No SDK de modelagem e visualização do Visual Studio, você pode criar uma defi
 
      Considere definir a **modificador de herança** das classes de domínio para `Abstract`.
 
-3.  Você pode adicionar elementos que você define no DSL Explorer, como construtores de Conexão.
+3. Você pode adicionar elementos que você define no DSL Explorer, como construtores de Conexão.
 
-4.  Você pode adicionar as personalizações que requerem código adicional, como restrições de validação.
+4. Você pode adicionar as personalizações que requerem código adicional, como restrições de validação.
 
-5.  Clique em **transformar todos os modelos**.
+5. Clique em **transformar todos os modelos**.
 
-6.  Compile o projeto.
+6. Compile o projeto.
 
-7.  Quando você distribui a DSL para que outras pessoas usem, você deve fornecer o assembly compilado (DLL) e o arquivo `DslDefinition.dsl`. Você pode encontrar o assembly compilado em uma pasta sob `Dsl\bin\*`
+7. Quando você distribui a DSL para que outras pessoas usem, você deve fornecer o assembly compilado (DLL) e o arquivo `DslDefinition.dsl`. Você pode encontrar o assembly compilado em uma pasta sob `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Para importar uma biblioteca de DSL
 

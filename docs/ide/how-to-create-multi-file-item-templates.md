@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1871b7270c462ea599450e48f0a86a4887ebc5ac
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745f371fa0461c2dc0dcedac0e06d160bbf7e209
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428983"
 ---
 # <a name="how-to-create-multi-file-item-templates"></a>Como: Criar modelos de item de multiarquivo
 
@@ -28,11 +28,11 @@ Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item 
 
 Os modelos de item multiarquivos exigem parâmetros para garantir que as extensões de arquivo corretas sejam usadas quando o item é criado. Se você criar um modelo de item multiarquivos usando o **Assistente para Exportar Modelo**, esses parâmetros serão gerados automaticamente e nenhuma outra edição será necessária.
 
-## <a name="to-create-a-multi-file-item-template-by-using-the-export-template-wizard"></a>Para criar um modelo de item multiarquivos usando o Assistente para Exportar Modelo
+## <a name="use-the-export-template-wizard"></a>Use o Assistente para Exportar Modelo
 
 Você pode criar um modelo de item multiarquivos da mesma maneira que se cria um modelo de item de arquivo único. Confira [Como: Criar modelos de item](../ide/how-to-create-item-templates.md). Na página **Selecionar Item para Exportar** do assistente, selecione o arquivo que contém os arquivos dependentes (por exemplo, um arquivo de formato do Windows Forms). O assistente inclui automaticamente todos os arquivos dependentes, como arquivos de recursos e do designer, no modelo.
 
-## <a name="to-manually-create-a-multi-file-item-template"></a>Para criar manualmente um modelo de item de vários arquivos
+## <a name="manually-create-a-multi-file-item-template"></a>Criar manualmente um modelo de item de vários arquivos
 
 1. Crie o modelo de item da mesma forma em que você criaria manualmente um modelo de item de arquivo único, mas inclua cada arquivo que constitui o item multiarquivos.
 

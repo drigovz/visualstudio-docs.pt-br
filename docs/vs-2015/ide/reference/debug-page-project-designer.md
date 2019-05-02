@@ -14,19 +14,18 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 25ffe4f9280dfbb0b3146ebf8b3dd7b62e908814
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441425"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 > [!WARNING]
->  Este tópico não se aplica a aplicativos da Windows Store. Consulte [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) no Centro de Desenvolvimento do Windows.  
+> Este tópico não se aplica a aplicativos da Windows Store. Consulte [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) no Centro de Desenvolvimento do Windows.  
   
  Use a página **Depurar** do **Designer de Projeto** para definir as propriedades do comportamento de depuração em um projeto do Visual Basic ou C#.  
   
@@ -80,5 +79,5 @@ ms.locfileid: "54776138"
  [Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configurações do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Gerenciando propriedades de depuração](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+ [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

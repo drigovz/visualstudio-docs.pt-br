@@ -12,29 +12,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 95d89340d41b79339b5501092919dccad2005570
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420833"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemplo de implementação da avaliação de expressão
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [avaliador de expressão gerenciado exemplo](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [avaliador de expressão gerenciado exemplo](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Para um **Watch** expressão de janela, o Visual Studio chama [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) para produzir um [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objeto. `IDebugExpressionContext2::ParseText` cria uma instância de um avaliador de expressão (EE) e chama [analisar](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) para obter uma [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objeto.
 
  O `IDebugExpressionEvaluator::Parse` realiza as seguintes tarefas:
 
-1.  [C++] Analisa a expressão para procurar erros.
+1. [C++ somente] Analisa a expressão para procurar erros.
 
-2.  Cria uma instância de uma classe (chamado `CParsedExpression` neste exemplo) que executa o `IDebugParsedExpression` de interface e o armazena na classe a expressão a ser analisado.
+2. Cria uma instância de uma classe (chamado `CParsedExpression` neste exemplo) que executa o `IDebugParsedExpression` de interface e o armazena na classe a expressão a ser analisado.
 
-3.  Retorna o `IDebugParsedExpression` da interface do `CParsedExpression` objeto.
+3. Retorna o `IDebugParsedExpression` da interface do `CParsedExpression` objeto.
 
 > [!NOTE]
->  Nos exemplos a seguir e, no exemplo MyCEE, o avaliador de expressão não separa a análise da avaliação.
+> Nos exemplos a seguir e, no exemplo MyCEE, o avaliador de expressão não separa a análise da avaliação.
 
 ## <a name="managed-code"></a>Código gerenciado
  O código a seguir mostra uma implementação de `IDebugExpressionEvaluator::Parse` em código gerenciado. Esta versão do método adia a análise para [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) como o código para a análise também avalia ao mesmo tempo (consulte [avaliar uma expressão de inspeção](../../extensibility/debugger/evaluating-a-watch-expression.md)).

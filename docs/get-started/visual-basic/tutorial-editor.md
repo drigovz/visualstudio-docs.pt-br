@@ -12,19 +12,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: baed4947d6e31cb06a64f04b0cb68d17d31c6f2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e2f5043b5c9690c668c12da7b902fdff5228f1e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972151"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta introdução de 10 minutos ao editor de código do Visual Studio, adicionaremos o código a um arquivo para ver algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 Este artigo pressupõe que você já esteja familiarizado com o Visual Basic. Caso contrário, sugerimos que você primeiro examine um tutorial, como [Introdução ao Visual Basic no Visual Studio](../../get-started/visual-basic/tutorial-console.md).
 
@@ -35,9 +46,21 @@ Este artigo pressupõe que você já esteja familiarizado com o Visual Basic. Ca
 
 Comece criando um novo arquivo e adicionando códigos nele.
 
-1. Abra o Visual Studio e, no menu **Arquivo** na barra de menus, escolha **Novo Arquivo**.
+::: moniker range="vs-2017"
 
-1. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual Basic** e, em seguida, escolha **Abrir**.
+1. Abra o Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio. Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
+
+::: moniker-end
+
+2. No menu **Arquivo** na barra de menus, escolha **Novo Arquivo**.
+
+3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual Basic** e, em seguida, escolha **Abrir**.
 
    Um novo arquivo é aberto no editor com o esqueleto de uma classe do Visual Basic. (Você já pode observar que não precisa criar um projeto completo do Visual Studio para obter alguns dos benefícios oferecidos pelo editor de códigos, como o realce de sintaxe. Basta ter um arquivo de código!)
 

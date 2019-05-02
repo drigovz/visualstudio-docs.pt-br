@@ -1,57 +1,95 @@
 ---
-title: Organizar modelos
+title: Localizar modelos
 ms.date: 01/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - project templates [Visual Studio], locations
 - item templates [Visual Studio], locations
 - template locations [Visual Studio]
-- Visual Studio templates, organizing
-- templates [Visual Studio], organizing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40abd872863231b2631830cd214fc9060da364d3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: db74d23cf42e371f00bf25c7edcd8c480f7649d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430270"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar modelos de projeto de e item
 
-Os arquivos de modelo devem ser colocados em um local que o Visual Studio reconheça, para que os modelos apareçam nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**. Você também pode criar subcategorias personalizadas no local do modelo de usuário e as categorias são mostradas nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**.
+Arquivos de modelo precisam ser colocados em um local conhecido para que eles sejam mostrados no novo projeto e em caixas de diálogo do novo item.
+
+::: moniker range="vs-2017"
+
+Você também pode criar subcategorias personalizadas no local do modelo de usuário e as categorias são mostradas nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**.
+
+::: moniker-end
 
 ## <a name="locate-templates"></a>Localizar modelos
 
 Os modelos instalados e os modelos do usuário são armazenados em dois locais diferentes.
 
+### <a name="installed-templates"></a>Modelos instalados
+
+Por padrão, os modelos instalados com o Visual Studio estão localizados em:
+
+::: moniker range="vs-2017"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edição>\\Common7\IDE\ProjectTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2017\\\<edição>\Common7\IDE\ItemTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+
+Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic para inglês (LCID 1033):
+
+*C:\\Arquivos de Programas (x86)\\Microsoft Visual Studio\\2017\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edição>\\Common7\IDE\ProjectTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+
+- *%ProgramFiles(x86)%\\Microsoft Visual Studio\\2019\\\<edição>\Common7\IDE\ItemTemplates\\<Linguagem\>\\<Identificação da localidade\>*
+
+Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic para inglês (LCID 1033):
+
+*C:\\Arquivos de Programas (x86)\\Microsoft Visual Studio\\2019\\Community\\Common7\\IDE\\ItemTemplates\\VisualBasic\\1033*
+
+::: moniker-end
+
 ### <a name="user-templates"></a>Modelos do usuário
 
-Se você adicionar um arquivo compactado (*.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá na caixa de diálogo **Novo Projeto** ou **Adicionar Novo Item**. Por padrão, os modelos do usuário estão localizados em:
+Se você adicionar um arquivo compactado (*.zip*) que inclua um arquivo *.vstemplate* no diretório de modelos do usuário, o modelo aparecerá nas caixas de diálogo Novo Projeto e Adicionar Novo Item. Por padrão, os modelos do usuário estão localizados em:
 
-- *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ProjectTemplates*
+::: moniker range="vs-2017"
 
-- *%USERPROFILE%\Documents\Visual Studio \<Versão\>\Templates\ItemTemplates*
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2017\Templates\ItemTemplates*
 
 Por exemplo, o seguinte diretório contém modelos de projeto do usuário para C#:
 
 - *C:\Users\UserName\Documents\Visual Studio 2017\Templates\ProjectTemplates\Visual C#*
 
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ProjectTemplates*
+
+- *%USERPROFILE%\Documents\Visual Studio 2019\Templates\ItemTemplates*
+
+Por exemplo, o seguinte diretório contém modelos de projeto do usuário para C#:
+
+- *C:\Users\UserName\Documents\Visual Studio 2019\Templates\ProjectTemplates\Visual C#*
+
+::: moniker-end
+
 > [!TIP]
-> Você pode definir o local dos modelos do usuário em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**.
+> Você pode alterar o local dos modelos do usuário em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**.
 
-### <a name="installed-templates"></a>Modelos instalados
-
-Por padrão, os modelos instalados com o Visual Studio estão localizados em:
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\\<Linguagem de programação\>\\<Locale ID>*
-
-- *\\<VisualStudioInstallationDirectory\>\Common7\IDE\ProjectTemplates\\<Linguagem de programação\>\\<Locale ID>*
-
-Por exemplo, o diretório a seguir contém os modelos de item do Visual Basic para inglês (LCID 1033):
-
-- *C:\\<VisualStudioInstallationDirectory\>\Common7\IDE\ItemTemplates\VisualBasic\1033*
+::: moniker range="vs-2017"
 
 ## <a name="organize-templates"></a>Organizar modelos
 
@@ -60,7 +98,7 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 > [!NOTE]
 > Você não pode criar uma nova categoria no nível da linguagem de programação. Novas categorias podem ser criadas apenas dentro de cada linguagem.
 
-### <a name="to-create-new-user-project-template-categories"></a>Para criar novas categorias de modelo de projeto do usuário
+### <a name="create-new-user-project-template-categories"></a>Criar categorias de modelo de projeto do usuário
 
 1. Crie uma pasta na pasta de linguagem de programação no diretório de modelo de projeto do usuário. Por exemplo, para estabelecer uma categoria **HelloWorld** para modelos de projeto C#, crie o seguinte diretório:
 
@@ -72,7 +110,7 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 
    A categoria **HelloWorld** aparece na caixa de diálogo **Novo Projeto** em **Instalado** > **Visual C#**.
 
-### <a name="to-create-new-user-item-template-categories"></a>Para criar novas categorias de modelo de item do usuário
+### <a name="create-new-user-item-template-categories"></a>Criar categorias de modelo de item do usuário
 
 1. Crie uma pasta na pasta de linguagem de programação no diretório de modelo de item do usuário. Por exemplo, para estabelecer uma categoria **HelloWorld** para modelos de item C#, crie o seguinte diretório:
 
@@ -87,8 +125,6 @@ As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** 
 ### <a name="display-templates-in-parent-categories"></a>Exibir modelos em categorias pai
 
 Você pode habilitar modelos em subcategorias a serem exibidos em suas categorias pai usando o elemento `NumberOfParentCategoriesToRollUp` no arquivo *.vstemplate*. Essas etapas são as mesmas para modelos de projeto e modelos de item.
-
-#### <a name="to-display-templates-in-parent-categories"></a>Para exibir modelos em categorias pai
 
 1. Localize o arquivo *.zip* que contém o modelo.
 
@@ -117,6 +153,8 @@ Você pode habilitar modelos em subcategorias a serem exibidos em suas categoria
 1. Exclua os arquivos de modelo extraídos e o arquivo *.zip* de modelo antigo.
 
 1. Coloque o novo arquivo *.zip* no diretório que tinha o arquivo *.zip* excluído.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 

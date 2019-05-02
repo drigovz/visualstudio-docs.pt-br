@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ca403045a22bb2f2aca6af537660d70c791064e3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906999"
 ---
 # <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
 
@@ -43,7 +44,7 @@ A janela Console do JavaScript permite que você:
 > [!TIP]
 > Se a janela do Console do JavaScript estiver fechada, escolha **Debug**> **Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.
 
-Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outro recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração de JavaScript, consulte [guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depuração de aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outro recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração de JavaScript consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Depurar usando a janela Console do JavaScript
 As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar interativamente um erro de codificação JavaScript.
@@ -254,6 +255,6 @@ Você também pode alternar o contexto de execução usando o comando `cd`, mas 
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
 - [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
 - [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Depurar um controle WebView](../debugger/debug-a-webview-control.md)
 - [Suporte ao produto e acessibilidade](https://visualstudio.microsoft.com/vs/support/)

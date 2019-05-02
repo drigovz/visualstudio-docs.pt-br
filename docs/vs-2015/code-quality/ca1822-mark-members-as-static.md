@@ -1,14 +1,9 @@
 ---
 title: 'CA1822: Marcar membros como estáticos | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - MarkMembersAsStatic
 - CA1822
@@ -20,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7b85d12038d4c505f912dd2f9440829f2c80679c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49183489"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659768"
 ---
-# <a name="ca1822-mark-members-as-static"></a>CA1822: marcar membros como estáticos
+# <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar membros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1822: marcar membros como estáticos](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1822: Marcar membros como estáticos](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |NomeDoTipo|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |Categoria|Microsoft.Performance|  
-|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer. Não separável - se você alterar o membro a um membro de instância com o `this` palavra-chave.<br /><br /> Quebrando - se você alterar o membro de um membro de instância para um membro estático e é visível fora do assembly.|  
+|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer.<br /><br /> Separação de não - se você alterar o membro a um membro de instância com o `this` palavra-chave.<br /><br /> Quebrando - se você alterar o membro de um membro de instância para um membro estático e é visível fora do assembly.|  
   
 ## <a name="cause"></a>Causa  
  Um membro que não acessa os dados de instância não está marcado como estático (compartilhado no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  
@@ -52,9 +47,8 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1822
  É seguro suprimir um aviso nessa regra para o código fornecido anteriormente para o qual a correção seria uma alteração significativa.  
   
 ## <a name="related-rules"></a>Regras relacionadas  
- [CA1811: evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)  
+ [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)  
   
- [CA1812: evitar classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
+ [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)  
   
- [CA1804: remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
-
+ [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)

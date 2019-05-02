@@ -11,12 +11,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5178ff7becc318b4f5b796046118bccb83129a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b5b6a44ac8e97477a8e4f4789b10135ac3f989a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433776"
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "54797006"
 Esta seção contém informações de referência para o SDK da Visualização Simultânea.  
   
 > [!NOTE]
->  O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) para implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.  
+> O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) para implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Função CvCreateDefaultMarkerSeriesOfDefaultProvider](../profiling/cvcreatedefaultmarkerseriesofdefaultprovider-function.md)  

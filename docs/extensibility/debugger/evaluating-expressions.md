@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925785"
 ---
 # <a name="evaluate-expressions"></a>Avaliar expressões
 As expressões são criadas de cadeias de caracteres passadas do **automóveis**, **inspeção**, **QuickWatch**, ou **imediato** windows. Quando uma expressão é avaliada, ele gera uma cadeia de caracteres imprimível que contém o nome e tipo de variável ou argumento e seu valor. Essa cadeia de caracteres é exibida na janela do IDE correspondente.

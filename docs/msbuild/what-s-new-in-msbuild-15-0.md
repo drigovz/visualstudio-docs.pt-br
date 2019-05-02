@@ -8,12 +8,13 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 07d97707034946f4711ac7df92c6a0f0743d13fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+monikerRange: vs-2017
+ms.openlocfilehash: 718ef14fda76df87dc4627dc518e993058896471
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777978"
 ---
 # <a name="whats-new-in-msbuild-15"></a>Novidades no MSBuild 15
 
@@ -23,7 +24,7 @@ Agora o MSBuild está disponível como parte do [SDK do .NET Core](https://www.m
 
  Agora o MSBuild é instalado em uma pasta em cada versão do Visual Studio. Por exemplo, *C:\Arquivos de Problemas (x86) \Microsoft Visual Studio\2017\Enterprise\MSBuild*. Você também pode usar o seguinte módulo do PowerShell para localizar o MSBuild: [vssetup.powershell](https://github.com/Microsoft/vssetup.powershell).
 
- O MSBuild não é mais instalado no Cache de Assembly Global. Para referenciar o MSBuild de forma programática, use pacotes NuGet.
+ O MSBuild não é mais instalado no Cache de Assembly Global. Para referenciar o MSBuild de forma programática, use pacotes NuGet. Para obter mais informações, confira [Atualizando um aplicativo existente para o MSBuild 15.0](../msbuild/updating-an-existing-application.md).
 
 ## <a name="changed-properties"></a>Propriedades alteradas
 

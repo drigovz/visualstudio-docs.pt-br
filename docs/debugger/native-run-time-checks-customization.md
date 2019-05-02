@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 66591308c2b0c59cf310d3957131f80191cc51c3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905480"
 ---
 # <a name="native-run-time-checks-customization"></a>Personalização das verificações de tempo de execução nativas
 Quando você compila com **/RTC** (verificações de tempo de execução) ou usar o `runtime_checks` pragma, a biblioteca de tempo de execução C fornece verificações de tempo de execução nativas. Em alguns casos, você pode personalizar a verificação de tempo de execução:
@@ -40,7 +40,7 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
 
   Para personalizar a verificação de erro em tempo de execução, você pode:
 
-- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, consulte [como: gravar uma função de relatório de erro de tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).
+- Escreva uma função de relatório de erro de tempo de execução. Para obter mais informações, confira [Como: Escrever uma função de relatório de erro em tempo de execução](../debugger/how-to-write-a-run-time-error-reporting-function.md).
 
 - Personalize o destino da mensagem de erro.
 
@@ -55,6 +55,6 @@ Quando você compila com **/RTC** (verificações de tempo de execução) ou usa
  `_RTC_NumErrors` retorna o número de tipos de erros detectados por verificações de erros em tempo de execução. Para obter uma breve descrição de cada erro, você poderá executar um loop de 0 para o valor de retorno de `_RTC_NumErrors`, passando o valor da iteração para `_RTC_GetErrDesc` em cada loop. Para obter mais informações, consulte [RTC_NumErrors](/cpp/c-runtime-library/reference/rtc-numerrors) e [RTC_GetErrDesc](/cpp/c-runtime-library/reference/rtc-geterrdesc).
 
 ## <a name="see-also"></a>Consulte também
-- [Como usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)
+- [Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)
 - [runtime_checks](/cpp/preprocessor/runtime-checks)
 - [_CrtDbgReport, _CrtDbgReportW](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw)

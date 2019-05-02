@@ -1,27 +1,22 @@
 ---
 title: Referência de esquema XML do VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441473"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência do esquema XML do VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
  Um arquivo de configuração (. VSCT) da tabela de comando baseado em XML define os elementos de comando que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Esses elementos incluem itens de menu, menus, barras de ferramentas e caixas de combinação.  
   
 > [!NOTE]
->  O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.  
+> O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.  
   
 ## <a name="optional-elements"></a>Elementos opcionais  
  Alguns elementos VSCT são opcionais. Se um `Parent` argumento não for especificado, Group_Undefined:0 será implícita. Se um `Icon` argumento não for especificado, guidOfficeIcon:msotcidNoIcon será implícita. Quando uma tecla de atalho é definida, a emulação, que é normalmente usada, é opcional.  
@@ -42,7 +37,7 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   Comentários XML podem ser usados, mas as ferramentas de GUI (interface) de ida e volta gráfica do usuário podem descartá-las. O conteúdo de \<anotação > elementos têm garantia de ser mantida, independentemente do formato.  
   
@@ -82,4 +77,3 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
 ## <a name="see-also"></a>Consulte também  
  [Como os VSPackages adicionam elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Roteamento de comando em VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
-

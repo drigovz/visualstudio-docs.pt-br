@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f075f6a10e34080f6abf406a5f5828d2cf0ea444
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ee0cb763cdfcd049ac389b54a2348c0a733b907d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078968"
 ---
 # <a name="getting-started-with-performance-tools"></a>Introdução às Ferramentas de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,17 +26,17 @@ Esta seção fornece uma visão geral dos conceitos e tarefas que você aplicar�
   
  Essas ferramentas fornecem várias maneiras de coletar e analisar dados de desempenho. Mas, em muitos casos, a melhor maneira de começar é usar as configurações padrão do Assistente de Desempenho, o que lhe permite coletar estatísticas do aplicativo que podem indicar problemas de desempenho em seu código.  
   
--   *Avisos de desempenho* notificam sobre problemas comuns de codificação. Os avisos são exibidos na janela de Erros do Visual Studio. É possível navegar do aviso para o código-fonte e para tópicos da ajuda detalhados que ajudarão a escrever um código mais eficiente.  
+- *Avisos de desempenho* notificam sobre problemas comuns de codificação. Os avisos são exibidos na janela de Erros do Visual Studio. É possível navegar do aviso para o código-fonte e para tópicos da ajuda detalhados que ajudarão a escrever um código mais eficiente.  
   
--   Os relatórios de desempenho fornecem visualizações de diferentes níveis da estrutura do aplicativo, desde as linhas de código-fonte aos processos, bem como dados de execução do programa das funções de chamada e funções chamadas, desde uma função específica até a árvore de chamadas do aplicativo inteiro.  
+- Os relatórios de desempenho fornecem visualizações de diferentes níveis da estrutura do aplicativo, desde as linhas de código-fonte aos processos, bem como dados de execução do programa das funções de chamada e funções chamadas, desde uma função específica até a árvore de chamadas do aplicativo inteiro.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Criar rapidamente o perfil de um aplicativo ou site da Web:** use o Assistente de Desempenho para configurar e executar uma sessão de criação de perfil para um site da Web ou solução do Visual Studio.|-   [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Como coletar dados de desempenho de um site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
-|**Criar o perfil de um aplicativo sem o assistente:** saiba como usar as páginas de propriedade de sessão de desempenho para criar uma sessão de desempenho.|-   [Como criar manualmente sessões de desempenho](../profiling/how-to-manually-create-performance-sessions.md)|  
-|**Experimente:** tenha experiência prática fazendo o perfil de um aplicativo de exemplo.|-   [Passo a passo: Identificando problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Amostra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
+|**Perfil rapidamente um aplicativo ou um site da Web:** Use o Assistente de desempenho para configurar e executar uma sessão de criação de perfil para uma solução do Visual Studio ou um site da Web.|-   [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)<br />-   [Como: Coletar dados de desempenho de um site](../profiling/how-to-collect-performance-data-for-a-web-site.md)|  
+|**Um aplicativo sem o Assistente de perfil:** Saiba como usar as páginas de propriedades de sessão de desempenho para criar uma sessão de desempenho.|-   [Como: Criar sessões de desempenho manualmente](../profiling/how-to-manually-create-performance-sessions.md)|  
+|**Experimente:** Obtenha experiência prática por um aplicativo de exemplo de criação de perfil.|-   [Passo a passo: Como identificar problemas de desempenho](../profiling/walkthrough-identifying-performance-problems.md)<br />-   [Amostra PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)|  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   

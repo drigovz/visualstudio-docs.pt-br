@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: e5f32abba4c4cbdeab59ed66e38019d913e704e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580778"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>Definir tipos personalizados de item de projeto do SharePoint
   Defina um novo tipo de item de projeto do SharePoint quando você deseja criar um novo tipo de item de projeto do SharePoint. Por exemplo, o Visual Studio não inclui itens de projeto do SharePoint para adicionar campos ou ações personalizadas para um site do SharePoint. Você pode definir seus próprios tipos de itens de projeto do SharePoint para a criação de campos, ações personalizadas ou outros tipos de componentes do SharePoint.

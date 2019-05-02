@@ -12,16 +12,18 @@ ms.assetid: 7307e180-ba28-4774-8a43-cbb980085a71
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af264ec8cf44f435f640a81a61dbd4cdbd84bd3
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+monikerRange: vs-2017
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583272"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -30,7 +32,7 @@ ms.locfileid: "57223306"
 Deseja atualizar de uma versão anterior do Visual Studio? Isto é o que o Visual Studio 2017 pode oferecer a você: Produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
 
 >[!div class="button"]
->[Baixar o Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Baixar o Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Veja uma recapitulação de alto nível das alterações feitas em relação à versão anterior, o Visual Studio 2015:
 
@@ -108,9 +110,9 @@ Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua 
 
 * ![Ícone de Roaming](media/vs2017ide-roamedicon.png) **_Roaming_**: Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
   (Você pode instalá-las usando o botão **Download**).
-* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png)  **_Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
+* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png) ** _Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
   (Se você decidir que não deseja usar perfil móvel, poderá remover essas extensões usando o botão **Parar Roaming**).
-* ![Ícone de Instalado](media/vs2017ide-installedicon.png)  **_Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
+* ![Ícone de Instalado](media/vs2017ide-installedicon.png) ** _Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
   (Você pode adicionar extensões à Lista de Roaming usando o botão **Iniciar Roaming**).
 
 Qualquer extensão baixada enquanto você estiver conectado será adicionada à lista como **Roaming e Instalado**. Além disso, a extensão fará parte da lista Roaming, que fornece acesso a ela em qualquer computador.
@@ -131,7 +133,7 @@ Testes automatizados são uma parte importante de qualquer pipeline de DevOps. E
 
 Para saber mais sobre testes automatizados, confira a postagem no blog [CI/CD pipeline for automated tests in DevOps](https://blogs.msdn.microsoft.com/visualstudioalmrangers/2017/04/20/set-up-a-cicd-pipeline-to-run-automated-tests-efficiently/) (Pipeline de CI/CD para testes automatizados no DevOps).
 
-Além disso, para obter mais informações sobre as novidades da extensão de DevLabs [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), confira a postagem no blog [Confirmação com segurança: Qualidade do código da hora de confirmação](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-commit-time-code-quality-information-updated/).
+Além disso, para obter mais informações sobre as novidades da extensão de DevLabs [Ferramentas de Entrega Contínua para Visual Studio](https://marketplace.visualstudio.com/items?itemName=VSIDEDevOpsMSFT.ContinuousDeliveryToolsforVisualStudio), confira a postagem no blog [Confirmação com segurança: Qualidade do código da hora de confirmação](https://devblogs.microsoft.com/visualstudio/committing-with-confidence-getting-code-quality-information-at-commit-time/).
 
 ### <a name="visual-studio-ide-enhancements"></a>Aprimoramentos no IDE do Visual Studio
 
@@ -188,7 +190,7 @@ Atualizamos a experiência de navegação para ajudá-lo a chegar de um lugar a 
 
   ![Visualizador de estrutura do Visual Studio 2017](media/vsIDE-StructureVisualizer.png)
 
-Para obter mais informações sobre os novos recursos de produtividade, consulte a postagem no blog [Produtividade no Visual Studio 2017](https://devblogs.microsoft.com/visualstudio/productivity-in-visual-studio-2017-rc/) de Mark Wilson-Thomas.
+Confira mais informações sobre os novos recursos de produtividade na postagem no blog [Visual Studio 2017: produtividade, desempenho e parceiros](https://devblogs.microsoft.com/visualstudio/visual-studio-2017-productivity-performance-and-partners/).
 
 ### <a name="visual-c"></a>Visual C++
 
@@ -369,9 +371,11 @@ O Visual Studio 2017 é atualizado frequentemente com novos recursos que melhora
 
 Quer saber mais sobre as novidades do Visual Studio 2017? Confira a página [Roteiro do Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
+E não se esqueça de conferir nossa versão mais recente, [Visual Studio de 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Fale conosco
 
- Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
+Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
 
 Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre as opções de suporte ao produto, confira a página [Fale conosco](talk-to-us.md).
 
@@ -381,8 +385,8 @@ Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre
 
 ## <a name="see-also"></a>Consulte também
 
-* [Notas de versão do Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017)
-* [Novidades no SDK do Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk?view=vs-2017)
+* [Notas de versão do Visual Studio 2017](/visualstudio/releasenotes/vs2017-relnotes)
+* [Novidades no SDK do Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](/dotnet/csharp/whats-new)
 * [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)

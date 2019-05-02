@@ -11,34 +11,34 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8faaa293a1fc39f39a63fb55a9f84acac36b6831
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ff13220d7699631d2617a207e3c5bcef43748315
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415693"
 ---
 # <a name="sample-implementation-of-locals"></a>Exemplo de implementação de locals
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  A seguir está uma visão geral de como o Visual Studio obtém os locais para um método do avaliador de expressão (EE):
 
-1.  Visual Studio chama o mecanismo de depuração (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) para obter uma [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa todas as propriedades do registro de ativação, incluindo os locais.
+1. Visual Studio chama o mecanismo de depuração (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) para obter uma [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa todas as propriedades do registro de ativação, incluindo os locais.
 
-2.  `IDebugStackFrame2::GetDebugProperty` chamadas [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obter um objeto que descreve o método dentro do qual o ponto de interrupção ocorreu. O DE fornece um provedor de símbolo ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), um endereço ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) e um associador ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
+2. `IDebugStackFrame2::GetDebugProperty` chamadas [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) para obter um objeto que descreve o método dentro do qual o ponto de interrupção ocorreu. O DE fornece um provedor de símbolo ([IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md)), um endereço ([IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md)) e um associador ([IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md)).
 
-3.  `IDebugExpressionEvaluator::GetMethodProperty` chamadas [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) com fornecido `IDebugAddress` objeto para obter uma [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa o método que contém o endereço especificado.
+3. `IDebugExpressionEvaluator::GetMethodProperty` chamadas [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md) com fornecido `IDebugAddress` objeto para obter uma [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) que representa o método que contém o endereço especificado.
 
-4.  O `IDebugContainerField` interface é consultado para o [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interface. É essa interface que fornece acesso a locais do método.
+4. O `IDebugContainerField` interface é consultado para o [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) interface. É essa interface que fornece acesso a locais do método.
 
-5.  `IDebugExpressionEvaluator::GetMethodProperty` cria uma instância de uma classe (chamados `CFieldProperty` no exemplo) que executa o `IDebugProperty2` interface para representar locais do método. O `IDebugMethodField` objeto é colocado neste `CFieldProperty` do objeto juntamente com o `IDebugSymbolProvider`, `IDebugAddress`, e `IDebugBinder` objetos.
+5. `IDebugExpressionEvaluator::GetMethodProperty` cria uma instância de uma classe (chamados `CFieldProperty` no exemplo) que executa o `IDebugProperty2` interface para representar locais do método. O `IDebugMethodField` objeto é colocado neste `CFieldProperty` do objeto juntamente com o `IDebugSymbolProvider`, `IDebugAddress`, e `IDebugBinder` objetos.
 
-6.  Quando o `CFieldProperty` é inicializado, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) é chamado no `IDebugMethodField` objeto do qual obter um [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) estrutura que contém todas as informações que pode ser exibidas sobre o próprio método.
+6. Quando o `CFieldProperty` é inicializado, [GetInfo](../../extensibility/debugger/reference/idebugfield-getinfo.md) é chamado no `IDebugMethodField` objeto do qual obter um [FIELD_INFO](../../extensibility/debugger/reference/field-info.md) estrutura que contém todas as informações que pode ser exibidas sobre o próprio método.
 
-7.  `IDebugExpressionEvaluator::GetMethodProperty` Retorna o `CFieldProperty` objeto como um `IDebugProperty2` objeto.
+7. `IDebugExpressionEvaluator::GetMethodProperty` Retorna o `CFieldProperty` objeto como um `IDebugProperty2` objeto.
 
-8.  Chamadas do Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) em retornado `IDebugProperty2` objeto com o filtro `guidFilterLocalsPlusArgs`, que retorna um [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contém os locais do método. Essa enumeração é preenchida por chamadas para [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) e [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).
+8. Chamadas do Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) em retornado `IDebugProperty2` objeto com o filtro `guidFilterLocalsPlusArgs`, que retorna um [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contém os locais do método. Essa enumeração é preenchida por chamadas para [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) e [EnumArguments](../../extensibility/debugger/reference/idebugmethodfield-enumarguments.md).
 
 9. Chamadas do Visual Studio [próxima](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) para obter uma [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) estrutura para cada local. Essa estrutura contém um ponteiro para um `IDebugProperty2` interface para um local.
 

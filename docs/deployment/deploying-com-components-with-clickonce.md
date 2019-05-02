@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7032ec5ae03febf6c54978020379769ac742a136
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406624"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Implantar componentes COM o ClickOnce
 Implantação de componentes legados COM tradicionalmente tem sido uma tarefa difícil. Componentes precisam ser registrados globalmente e, portanto, podem causar efeitos colaterais indesejáveis entre aplicativos sobrepostos. Essa situação geralmente não é um problema em aplicativos .NET Framework porque componentes são completamente isolados para um aplicativo ou são compatíveis com o lado a lado. Visual Studio permite que você implante os componentes isolados no Windows XP ou o sistema de operacional superior.
@@ -46,9 +46,9 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
 
  Há duas maneiras que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implanta componentes COM:
 
--   Usar o bootstrapper para implantar seus componentes COM. Isso funciona em todas as plataformas com suporte.
+- Usar o bootstrapper para implantar seus componentes COM. Isso funciona em todas as plataformas com suporte.
 
--   Use a implantação do componente nativo isolamento (também conhecido como COM sem registro). No entanto, isso só funcionará em um sistema de operacional superior ou o Windows XP.
+- Use a implantação do componente nativo isolamento (também conhecido como COM sem registro). No entanto, isso só funcionará em um sistema de operacional superior ou o Windows XP.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Exemplo de isolar e implantação de um componente COM simples
  Para demonstrar a implantação de componentes COM sem registro, este exemplo criará um aplicativo baseado em Windows no Visual Basic que faz referência a um componente COM nativo isolado criado usando o Visual Basic 6.0 e implantá-lo usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
 
 ##### <a name="to-create-a-native-com-component"></a>Para criar um componente COM nativo
 
-1.  Usando o Visual Basic 6.0, do **arquivo** menu, clique em **New**, em seguida, **projeto**.
+1. Usando o Visual Basic 6.0, do **arquivo** menu, clique em **New**, em seguida, **projeto**.
 
-2.  No **novo projeto** caixa de diálogo, selecione o **Visual Basic** nó e selecione uma **ActiveX DLL** projeto. Na caixa **Nome**, digite `VB6Hello`.
+2. No **novo projeto** caixa de diálogo, selecione o **Visual Basic** nó e selecione uma **ActiveX DLL** projeto. Na caixa **Nome**, digite `VB6Hello`.
 
     > [!NOTE]
-    >  Somente tipos de projeto ActiveX DLL e o controle ActiveX são compatíveis com o COM sem registro; Não há suporte para tipos de projeto EXE ActiveX e documento ActiveX.
+    > Somente tipos de projeto ActiveX DLL e o controle ActiveX são compatíveis com o COM sem registro; Não há suporte para tipos de projeto EXE ActiveX e documento ActiveX.
 
-3.  Na **Gerenciador de soluções**, clique duas vezes em **Class1.vb** para abrir o editor de texto.
+3. Na **Gerenciador de soluções**, clique duas vezes em **Class1.vb** para abrir o editor de texto.
 
-4.  No Class1. vb, adicione o código a seguir após o código gerado para o `New` método:
+4. No Class1. vb, adicione o código a seguir após o código gerado para o `New` método:
 
     ```vb
     Public Sub SayHello()
@@ -74,10 +74,10 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
     End Sub
     ```
 
-5.  Crie o componente. Dos **construir** menu, clique em **compilar solução**.
+5. Crie o componente. Dos **construir** menu, clique em **compilar solução**.
 
 > [!NOTE]
->  COM sem registro dá suporte somente DLLs e COM controles de tipos de projeto. É possível usar EXEs com sem registro COM.
+> COM sem registro dá suporte somente DLLs e COM controles de tipos de projeto. É possível usar EXEs com sem registro COM.
 
  Agora você pode criar um aplicativo baseado em Windows e adicione uma referência ao componente COM a ele.
 
@@ -125,7 +125,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
    Agora, quando você pressionar F5, o aplicativo funciona conforme o esperado, mas ele está em execução em COM. sem registro Para provar isso, tente cancelar o registro do componente VB6Hello.dll e executando RegFreeComDemo1.exe fora do IDE do Visual Studio. Desta vez, quando o botão é clicado, ele ainda funcionará. Se você renomeie temporariamente o manifesto do aplicativo, ele novamente falhará.
 
 > [!NOTE]
->  Você pode simular a ausência de um componente COM temporariamente cancelar o registro. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32`, em seguida, cancelar o registro do componente digitando `regsvr32 /u VB6Hello.dll`. Você pode registrá-lo novamente, digitando `regsvr32 VB6Hello.dll`.
+> Você pode simular a ausência de um componente COM temporariamente cancelar o registro. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32`, em seguida, cancelar o registro do componente digitando `regsvr32 /u VB6Hello.dll`. Você pode registrá-lo novamente, digitando `regsvr32 VB6Hello.dll`.
 
  A etapa final é publicar o aplicativo usando [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]:
 
@@ -163,7 +163,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
 
 - O componente gerencia um dispositivo físico ou virtual para o sistema, por exemplo, um driver de dispositivo para o spooler de impressão.
 
-- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; ver [como: instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+- O componente é redistribuível de acesso a dados. Aplicativos de dados geralmente requerem separado de acesso a dados redistribuível ser instalado antes de serem executados. Você não deve tentar isolar os componentes, como o controle de dados do Microsoft ADO, OLE DB Microsoft ou Microsoft Data Access Components (MDAC). Em vez disso, se seu aplicativo usa MDAC ou SQL Server Express, você deve defini-los como pré-requisitos; consulte [como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
   Em alguns casos, talvez seja possível para o desenvolvedor do componente de refazer o design para COM. sem registro Se isso não for possível, você pode criar e publicar aplicativos que dependem deles por meio do esquema padrão do registro usando o Bootstrapper. Para obter mais informações, consulte [criação de pacotes de Bootstrapper](../deployment/creating-bootstrapper-packages.md).
 

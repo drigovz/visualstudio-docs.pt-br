@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2626734653381701680e85cbb190c028d92048a4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950336"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -52,13 +52,13 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |clrversion|Versão atual do CLR (Common Language Runtime).|
 |ext_*|Adicione o prefixo `ext_` a qualquer parâmetro para se referir às variáveis do modelo pai. Por exemplo, `ext_safeprojectname`.|
 |guid[1-10]|Um GUID usado para substituir o GUID do projeto em um arquivo de projeto. Você pode especificar até 10 GUIDs exclusivos (por exemplo, `guid1`).|
-|itemname|O nome fornecido pelo usuário na caixa de diálogo **Adicionar Novo Item**.|
+|itemname|O nome do arquivo no qual o parâmetro está sendo usado.|
 |machinename|O nome do computador atual (por exemplo, Computer01).|
-|projectname|O nome fornecido pelo usuário na caixa de diálogo **Novo Projeto**.|
+|projectname|O nome fornecido pelo usuário quando o projeto foi criado.|
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
-|safeitemname|O nome fornecido pelo usuário na caixa de diálogo **Adicionar Novo Item**, com todos os caracteres desprotegidos e espaços removidos.|
-|safeprojectname|O nome fornecido pelo usuário na caixa de diálogo **Novo Projeto**, com todos os caracteres desprotegidos e espaços removidos.|
+|safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e espaços removidos.|
+|safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
 |hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|

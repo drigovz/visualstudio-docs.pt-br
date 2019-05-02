@@ -12,22 +12,26 @@ f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: 3094d6fbfa561d995c5cc72e0a6e56fbdd47ee63
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: bdc605b614fab5b11c2efc8466480ebf49a1fee7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317673"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569843"
 ---
 # <a name="optimize-visual-studio-performance"></a>Otimizar o desempenho do Visual Studio
 
 Este artigo fornece algumas sugestões para tentar se você achar que o Visual Studio está sendo executado lentamente. Você também pode dar uma olhada em [Dicas e truques de desempenho do Visual Studio](../ide/visual-studio-performance-tips-and-tricks.md) para obter mais sugestões sobre como melhorar o desempenho.
 
-## <a name="upgrade-to-visual-studio-2017-version-156-or-later"></a>Atualizar o Visual Studio 2017 versão 15.6 ou posterior
+## <a name="upgrade-visual-studio"></a>Atualizar o Visual Studio
 
-Se estiver usando Visual Studio 2015, baixe o [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) gratuitamente para conhecer seu desempenho aprimorado. As soluções são carregadas duas a três vezes mais rapidamente no Visual Studio 2017, com melhorias de desempenho em outras áreas também. O Visual Studio 2017 é compatível lado a lado com o Visual Studio 2015, para que você não perca nada por experimentá-lo.
+Se estiver usando o Visual Studio 2015, baixe o [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) ou o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) gratuitamente para conferir seu desempenho aprimorado. As soluções são carregadas duas a três vezes mais rapidamente no Visual Studio 2015, com melhorias de desempenho em outras áreas também. O Visual Studio 2017 e o Visual Studio 2019 são compatíveis lado a lado com o Visual Studio 2015, portanto você não perderá nada por experimentá-lo.
 
-Se estiver usando o Visual Studio 2017, verifique se você está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Faça download dela [aqui](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+Se já estiver usando o Visual Studio 2017, verifique se está executando a versão 15.6 ou posterior. Dados mostram que as soluções são carregadas duas ou três vezes mais rapidamente na versão 15.6. Faça download dela [aqui](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
+
+::: moniker-end
 
 ## <a name="extensions-and-tool-windows"></a>Extensões e janelas de ferramentas
 
@@ -45,7 +49,7 @@ Além disso, não execute sua solução de uma unidade USB. Copie-a para a HDD o
 
 ## <a name="help-us-improve"></a>Ajude-nos a melhorar
 
-Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para saber mais, veja [Como relatar um problema com o Visual Studio 2017](../ide/how-to-report-a-problem-with-visual-studio-2017.md).
+Seus comentários nos ajudam a melhorar. Use o recurso **Relatar um Problema** para "registrar" um rastreamento e nos enviar. Selecione o ícone de comentários ao lado de **QuickLaunch** ou selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema** na barra de menus. Para saber mais, consulte [Como relatar um problema com o Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também
 

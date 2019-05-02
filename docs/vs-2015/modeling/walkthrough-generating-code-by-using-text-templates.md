@@ -1,12 +1,9 @@
 ---
-title: 'Passo a passo: Gerenciando código usando modelos de texto | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Geração de código usando modelos de texto | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - walkthroughs [text templates], generating application code
 - walkthroughs [text templates]
@@ -14,15 +11,15 @@ ms.assetid: 24602ade-baca-425e-a6ce-be09a2c7f7e1
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd360e07ca555bb7cb2c482970ab9a202f7bb630
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49932542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446707"
 ---
-# <a name="walkthrough-generating-code-by-using-text-templates"></a>Instruções passo a passo: gerenciando código usando modelos de texto
+# <a name="walkthrough-generating-code-by-using-text-templates"></a>Passo a passo: Geração de código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Geração de código permite que você gerar o código do programa que é fortemente tipado e ainda pode ser facilmente alterado quando o modelo de origem é alterado. Compare isso com a técnica alternativa de escrever um programa completamente genérico que aceita um arquivo de configuração, que é mais flexível, mas os resultados no código que não é tão fácil de ler e alterar, nem tem tal bom desempenho. Este passo a passo demonstra esse benefício.  
@@ -33,7 +30,7 @@ Geração de código permite que você gerar o código do programa que é fortem
  Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar o arquivo XML. Você também pode executar seu aplicativo em todos os outros arquivos que usam os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó que você deseja que seu aplicativo para lidar com.  
   
 > [!NOTE]
->  O aplicativo [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes com rigidez de tipos de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.  
+> O aplicativo [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes com rigidez de tipos de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.  
   
  Aqui está o arquivo de exemplo:  
   
@@ -89,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Para criar o projeto  
   
-1.  Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.  
+1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.  
   
-2.  Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**  
+2. Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Adicionar um arquivo XML de protótipo para o projeto  
  A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você deseja que o aplicativo seja capaz de ler. Pode ser um arquivo que será usado para testar seu aplicativo. O modelo produzirá uma classe c# para cada tipo de nó nesse arquivo.  
@@ -145,7 +142,7 @@ namespace MyProject
 2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.  
   
    > [!NOTE]
-   >  Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
+   > Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
   
 3. No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.  
   
@@ -426,6 +423,3 @@ namespace MyProject
 ## <a name="see-also"></a>Consulte também  
  [Geração de código de tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)   
  [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)
-
-
-

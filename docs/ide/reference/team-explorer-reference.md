@@ -5,12 +5,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jillfra
-ms.openlocfilehash: 56e6277b589f12563ad6dfa3912815b966db399a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6a7c1e9d0f5e8b8ef48a033d58038818d2d620e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945062"
 ---
 # <a name="team-explorer-reference"></a>Referência do Team Explorer
 
@@ -33,7 +33,7 @@ A página **Página Inicial** tem funções diferentes dependendo se você está
 
 | Página **Página Inicial** com o Git | Página **Página Inicial** com o TFVC |
 | - | - |
-| ![Home page do Team Explorer com o Git no Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Home page do Team Explorer com o TFVC no Visual Studio 2017](media/team-explorer-reference/team-explorer-tfvc.png) |
+| ![Home page do Team Explorer com o Git no Visual Studio 2019](media/team-explorer-reference/team-explorer-git.png) | ![Home page do Team Explorer com o TFVC no Visual Studio](media/team-explorer-reference/team-explorer-tfvc.png) |
 
 ## <a name="changes-page-git"></a>Página Alterações (Git)
 
@@ -82,7 +82,7 @@ A página **Itens de Trabalho** permite que você veja as consultas de [item de 
 ::: moniker range=">= vs-2019"
 
 > [!NOTE]
-> Há uma nova [experiência de Itens de Trabalho](/azure/devops/boards/work-items/set-work-item-experience-vs) no Visual Studio 2019 Preview 1. Para obter informações sobre como exibir itens de trabalho no Visual Studio 2019 Preview 1, confira [Exibir e adicionar itens de trabalho](/azure/devops/boards/work-items/view-add-work-items).
+> Há uma nova [experiência de Itens de Trabalho](/azure/devops/boards/work-items/set-work-item-experience-vs) no Visual Studio 2019. Para obter informações sobre como exibir itens de trabalho no Visual Studio 2019, confira [Exibir e adicionar itens de trabalho](/azure/devops/boards/work-items/view-add-work-items).
 
 ::: moniker-end
 

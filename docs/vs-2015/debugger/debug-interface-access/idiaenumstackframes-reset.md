@@ -1,46 +1,35 @@
 ---
-title: 'Idiaenumstackframes:: Reset | Microsoft Docs'
-ms.custom: ''
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: IDiaEnumStackFrames::Reset | Microsoft Docs
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaEnumStackFrames::Reset method
 ms.assetid: efaba727-f271-44e9-beec-8441fb57664d
-caps.latest.revision: 10
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c3673c9ec047113c8a725ca5bbe1bbfcf7776c55
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.workload:
+- multiple
+ms.openlocfilehash: 303fb709bb7ce09baec41cdf6ef8ff54790fc5d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423902"
 ---
 # <a name="idiaenumstackframesreset"></a>IDiaEnumStackFrames::Reset
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Redefine a sequência de enumeração para o início.
 
-Redefine a sequência de enumeração para o início.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT Reset();  
-```  
-  
-## <a name="return-value"></a>Valor de retorno  
- Retorna `S_OK`.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)
+## <a name="syntax"></a>Sintaxe
 
+```C++
+HRESULT Reset();
+```
 
+## <a name="return-value"></a>Valor de retorno
+ Retorna `S_OK`.
 
+## <a name="see-also"></a>Consulte também
+- [IDiaEnumStackFrames](../../debugger/debug-interface-access/idiaenumstackframes.md)

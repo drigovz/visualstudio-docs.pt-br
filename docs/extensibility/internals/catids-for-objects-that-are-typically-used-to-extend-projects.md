@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734751492a1024507684922b760c647e91f5df15
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2af331bd100cfedd75e6ab1c90ad7a75c5c83961
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910550"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>CATIDs para objetos que normalmente são usados para estender projetos
 A tabela a seguir lista CATIDs que são usados para estender `Project` e `ProjectItem` objetos de automação para [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)], [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)], e [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] projetos. Essas CATIDs são definidos no *VSLangProj.olb*.
@@ -87,7 +87,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 ```
 
  Os GUIDs para o [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] tipos de projeto são mostrados na tabela a seguir.
-
 
 | Tipo de projeto | GUID |
 | - | - |

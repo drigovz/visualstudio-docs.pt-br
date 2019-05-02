@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560045"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
 O conjunto de regras de correção básico se concentra em erros lógicos e erros comuns do uso de APIs de estrutura. As regras básicas de correção incluem as regras em que o conjunto de regras recomendadas do mínimo. Para obter mais informações, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) você deve incluir este conjunto de regras para expandir a lista de avisos que o mínimo recomendado de relatório de regras.

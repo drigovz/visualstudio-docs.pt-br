@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df041111bb452462c969995bacee97b08488d1c6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 11c0c959964fee21f2cdfe098907ab2dfe184f7e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949048"
 ---
 # <a name="how-to-use-the-imports-designer"></a>Como: Usar o designer de importações
 
@@ -33,14 +33,14 @@ O designer imports reage a alterações na interface do usuário e as alteraçõ
 
 ## <a name="to-add-a-namespace-to-the-list-of-imported-namespaces"></a>Para adicionar um namespace à lista de namespaces importados
 
-1.  Abra um aplicativo de serviço de fluxo de trabalho WCF, o aplicativo de console do fluxo de trabalho ou o projeto de biblioteca de atividade no Visual Studio ou um aplicativo de fluxo de trabalho hospedado novamente.
+1. Abra um aplicativo de serviço de fluxo de trabalho WCF, o aplicativo de console do fluxo de trabalho ou o projeto de biblioteca de atividade no Visual Studio ou um aplicativo de fluxo de trabalho hospedado novamente.
 
-2.  Clique em **importações** na parte inferior da tela principal. O designer imports aparecerá.
+2. Clique em **importações** na parte inferior da tela principal. O designer imports aparecerá.
 
-3.  Insira ou selecione em um namespace do controle de lista suspensa na parte superior do designer imports.
+3. Insira ou selecione em um namespace do controle de lista suspensa na parte superior do designer imports.
 
      Enquanto você digita, uma lista de namespaces válidas que correspondem aos caracteres tipados aparece.
 
-4.  Pressione **Enter** para adicionar o namespace à lista.
+4. Pressione **Enter** para adicionar o namespace à lista.
 
-5.  Se você quiser remover um namespace da lista, selecione o namespace e, em seguida, pressione a **excluir** em seu teclado. Observe que um namespace só pode ser excluída se o namespace não é válido por algum motivo, por exemplo se o assembly que contém o namespace não é referenciado pelo projeto.
+5. Se você quiser remover um namespace da lista, selecione o namespace e, em seguida, pressione a **excluir** em seu teclado. Observe que um namespace só pode ser excluída se o namespace não é válido por algum motivo, por exemplo se o assembly que contém o namespace não é referenciado pelo projeto.

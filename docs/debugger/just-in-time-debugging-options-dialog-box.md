@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23a285cf0ce017130a5fe76171c50082362e4856
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905929"
 ---
 # <a name="just-in-time-debugging-options-dialog-box"></a>Caixa de diálogo Just-In-Time, Depuração, Opções
 Para acessar a página **Just-In-Time**, vá até o menu **Ferramentas** e clique em **Opções**. Na caixa de diálogo **Opções**, expanda o nó **Depuração** e selecione **Just-In-Time**. Essa página permite habilitar a depuração Just-In-Time para o código gerenciado, o código nativo e o script. Para obter mais informações, confira [Depuração Just-In-Time](../debugger/just-in-time-debugging-in-visual-studio.md).
@@ -57,4 +57,4 @@ Para acessar a página **Just-In-Time**, vá até o menu **Ferramentas** e cliqu
 
 ## <a name="see-also"></a>Consulte também
 - [Caixa de diálogo Depuração, Opções](../debugger/debugging-options-dialog-box.md)
-- [Como especificar configurações do depurador](../debugger/how-to-specify-debugger-settings.md)
+- [Como: Especificar as configurações do depurador](../debugger/how-to-specify-debugger-settings.md)

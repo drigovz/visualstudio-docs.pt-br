@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cf2aba33089623dc98a90c23166291bb2d6e7123
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905230"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Guia de Introdução com o depurador de instantâneo
 
@@ -33,7 +33,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
     Um hexágono roxo aparece em que você clica no lado esquerdo.
 
-2. Clique em **iniciar coleta** para ativar o snappoint.
+2. Clique em **Iniciar Coleção** para ativar o snappoint.
 
 ### <a name="open-a-snapshot"></a>Abrir um instantâneo
 
@@ -47,7 +47,7 @@ O depurador de instantâneo coleta instantâneos do seu aplicativo. Instantâneo
 
 Nessa exibição, é possível focalizar variáveis exibir DataTips, use os locais, inspeções, e chamar empilhar windows e também avaliar expressões.
 
-O site em si ainda está ao vivo e os usuários finais não são afetados. Por padrão, apenas um instantâneo é capturado por snappoint. Ou seja, depois que um instantâneo é capturado, o snappoint seja desligada. Se você quiser capturar outro instantâneo no snappoint, você pode ativar o snappoint novamente clicando **atualizar coleção**.
+O site em si ainda fica ativo, e os usuários finais não são afetados. Por padrão, apenas um instantâneo é capturado por snappoint. Ou seja, depois que um instantâneo é capturado, o snappoint seja desligada. Se você quiser capturar outro instantâneo no snappoint, poderá ativar o snappoint novamente clicando em **Atualizar Coleção**.
 
 ### <a name="set-a-logpoint"></a>Defina um Logpoint
 
@@ -57,7 +57,7 @@ O site em si ainda está ao vivo e os usuários finais não são afetados. Por p
 
     ![Condições de Snappoint](../media/snapshot-startpage-logpoint.png)
 
-3. No **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log, colocando-os entre chaves.
+3. No **mensagem** , insira uma mensagem de log que você deseja registrar. Você também pode avaliar variáveis na sua mensagem de log colocando-as entre chaves.
 
     Se você escolher **enviar para a janela de saída**, a mensagem será exibida na janela de ferramentas de diagnóstico quando o logpoint for atingido.
 

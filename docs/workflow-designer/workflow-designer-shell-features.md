@@ -1,5 +1,5 @@
 ---
-title: funcionalidades de Designer de Fluxo de Trabalho Shell
+title: Recursos de Designer de Fluxo de Trabalho Shell
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433858"
 ---
-# <a name="workflow-designer-shell-features"></a>funcionalidades de Designer de Fluxo de Trabalho Shell
+# <a name="workflow-designer-shell-features"></a>Recursos de Designer de Fluxo de Trabalho Shell
 
 Designer de fluxo de trabalho é composto de três áreas principais de interface do usuário: a superfície do designer, a barra de trilha acima dele e o shell abaixo deles. A barra de rastreamento, posicionado na parte superior da tela, é usada para exibir a lista de ancestrais de atividade da raiz atual. Para obter mais informações, confira [Como: Usar a navegação estrutural](../workflow-designer/how-to-use-breadcrumb-navigation.md). A superfície de designer, posicionado no centro da tela, é usada para compondo fluxos de trabalho. O shell, localizado na parte inferior da tela, contém um número de botões para gerenciar o modo de exibição atual.
 

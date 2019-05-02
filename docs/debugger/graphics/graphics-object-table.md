@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848431"
 ---
 # <a name="graphics-object-table"></a>Tabela de objetos de gráfico
 A tabela de objeto de elementos gráficos em análise de gráficos do Visual Studio ajuda você a entender os objetos Direct3D que dão suporte a um quadro do seu jogo ou aplicativo.
@@ -111,4 +111,4 @@ A tabela de objeto de elementos gráficos em análise de gráficos do Visual Stu
 
 ## <a name="see-also"></a>Consulte também
 - [Diagnóstico de gráficos (depuração de gráficos DirectX)](visual-studio-graphics-diagnostics.md)
-- [Passo a passo: objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)
+- [Passo a passo: Objetos ausentes devido ao estado do dispositivo](walkthrough-missing-objects-due-to-device-state.md)

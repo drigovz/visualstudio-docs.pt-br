@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857781"
 ---
 # <a name="test-area-7-share"></a>Área de teste 7: Compartilhar
 Essa área de teste aborda itens de compartilhamento entre locais por meio de **compartilhamento** comando.
@@ -25,13 +25,13 @@ Essa área de teste aborda itens de compartilhamento entre locais por meio de **
 
  Em pastas de compartilhamento funciona se você selecionar uma pasta pelo menos um arquivo sob controle do código-fonte nela. O comando de compartilhamento é desabilitado nas seguintes condições:
 
--   Se a pasta selecionada é uma pasta vazia.
+- Se a pasta selecionada é uma pasta vazia.
 
--   Se há uma pasta real, mas não contém nenhum arquivo de controle de origem.
+- Se há uma pasta real, mas não contém nenhum arquivo de controle de origem.
 
--   Se houver uma pasta virtual, sejam arquivos sob controle do código-fonte nela ou não.
+- Se houver uma pasta virtual, sejam arquivos sob controle do código-fonte nela ou não.
 
--   Se houver um projeto Web do Site remoto.
+- Se houver um projeto Web do Site remoto.
 
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando
  O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.
@@ -40,11 +40,11 @@ Essa área de teste aborda itens de compartilhamento entre locais por meio de **
 
 ## <a name="expected-behavior"></a>Comportamento esperado
 
--   Arquivo compartilhado é exibido em um local compartilhado.
+- Arquivo compartilhado é exibido em um local compartilhado.
 
--   Exibindo o código-fonte controle versão store histórico mostra que os arquivos são compartilhados.
+- Exibindo o código-fonte controle versão store histórico mostra que os arquivos são compartilhados.
 
--   Editar um arquivo compartilhado edita os locais do arquivo.
+- Editar um arquivo compartilhado edita os locais do arquivo.
 
 ## <a name="test-cases"></a>Casos de teste
  Estes são os casos de teste específicos para a área de teste do compartilhamento.

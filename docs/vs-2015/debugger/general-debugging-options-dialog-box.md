@@ -1,14 +1,9 @@
 ---
 title: Geral, depuração, caixa de diálogo de opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.options.General
 - VS.ToolsOptionsPages.Debugger.General
@@ -26,13 +21,13 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e3a9e0b8008da5b648ae156235a20964fc0952b1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446484"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ ms.locfileid: "51742774"
 O**Ferramentas / opções / depuração / geral** página permite que você defina as seguintes opções:  
   
  **Perguntar antes de excluir todos os pontos de interrupção**  
- Requer a confirmação antes de concluir a **excluir todos os pontos de interrupção** comando.  
+ Requer a confirmação antes de concluir o comando de **Excluir todos os pontos de interrupção**.  
   
  **Interromper todos os processos quando um processo for interrompido**  
  Interrompe simultaneamente todos os processos ao qual o depurador é anexado, quando ocorre uma interrupção.  
@@ -50,14 +45,14 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
   
  1\) quando o código nativo chama código gerenciado usando interoperabilidade COM e o código gerenciado gera uma exceção. Ver [Introdução à interoperabilidade COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio do aplicativo 2, e o código no domínio do aplicativo 2 gera uma exceção. Ver [programação com domínios do aplicativo](http://msdn.microsoft.com/en-us/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio do aplicativo 2, e o código no domínio do aplicativo 2 gera uma exceção. Ver [programação com domínios do aplicativo](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
  3\) quando o código chama uma função por meio de reflexão e a função gerará uma exceção. Ver [reflexão](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Em 2) e 3), a exceção é às vezes detectada pelo código gerenciado em `mscorlib` em vez do common language runtime. Esta opção não afeta a quebra em exceções capturadas por `mscorlib`.  
   
  **Habilitar depuração no nível do endereço**  
- Habilita recursos avançados para depuração no nível do endereço (a **desmontagem** janela, o **registra** janela e pontos de interrupção de endereço).  
+ Habilita recursos avançados para depurar a nível de endereço (a janela **Desmontagem**, a janela **Registros** e pontos de interrupção de endereço).  
   
  **Mostrar desmontagem se a fonte não está disponível**  
  Mostra automaticamente a **desmontagem** janela quando você tenta depurar o código para o qual fonte não está disponível.  
@@ -69,7 +64,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  Somente para código gerenciado. Gerenciado exceções abrir a caixa de diálogo do Assistente de exceção.  Ver [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Desenrolar a pilha de chamadas em exceções não tratadas**  
- Faz com que o **pilha de chamadas** janela para reverter a pilha de chamadas para o ponto antes da ocorrência de exceção sem tratamento.  
+ Faz com que a janela **Pilha de Chamadas** reverta a pilha de chamadas ao ponto antes que a exceção sem tratamento ocorreu.  
   
  **Habilitar Apenas Meu Código**  
  O depurador exibe e as etapas no código do usuário ("meu código"), ignorando o código de sistema e outro código que é otimizado ou que não tem símbolos de depuração.  
@@ -87,16 +82,16 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  Impede que o depurador entre em propriedades e operadores no código gerenciado.  
   
  **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**  
- Chama de ativar a avaliação automática de propriedades e de função implícitas nas janelas de variáveis e o **QuickWatch** caixa de diálogo.  
+ Ativa a classificação automática da propriedades e as chamadas de função implícitas nas janelas de variáveis e na caixa de diálogo **QuickWatch**.  
   
  **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (c# e JavaScript apenas)**  
  Executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos em janelas de variáveis. Portanto, o resultado é exibido como uma cadeia de caracteres em vez do nome do tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
- **Habilitar o suporte do servidor de origem**  
- Informe ao depurador do Visual Studio para obter os arquivos de origem dos servidores de origem que implementam o protocolo de SrcSrv (`srcsrv.dll`). Team Foundation Server e as ferramentas de depuração para Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte a documentação Ferramentas de depuração para o Windows. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
+ **Habilitar suporte a servidor de origem**  
+ Informe ao depurador do Visual Studio para obter os arquivos de origem dos servidores de origem que implementam o protocolo de SrcSrv (`srcsrv.dll`). O Team Foundation Server e as Ferramentas de Depuração para o Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte a documentação Ferramentas de depuração para o Windows. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Como ler arquivos .pdb pode executar o código arbitrário em arquivos, certifique-se de que você confia no servidor.  
+> Como ler arquivos .pdb pode executar o código arbitrário em arquivos, certifique-se de que você confia no servidor.  
   
  **Imprimir mensagens de diagnóstico de servidor de origem para a janela de saída**  
  Quando o suporte do servidor de origem é ativado, esta configuração ativa ao diagnóstico.  
@@ -111,7 +106,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  Informe ao depurador para verificar se um arquivo fonte corresponde à versão do código-fonte usado para criar o arquivo executável que você está depurando. Se a versão não corresponde, será solicitado que você localize uma origem correspondente. Se uma fonte compatível não for encontrada, o código-fonte não será exibido durante a depuração.  
   
  **Redirecionar todo o texto da janela Saída para a janela imediata**  
- Envia todas as mensagens do depurador que normalmente apareceriam na **saída** janela para o **imediato** janela em vez disso.  
+ Em vez disso, envia todas as mensagens do depurador que normalmente apareceriam na janela **Saída** para a janela **Imediato**.  
   
  **Mostrar estrutura bruta de objetos nas janelas de variáveis**  
  Desative todas as personalizações de exibição da estrutura do objeto. Para obter mais informações sobre personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md).  
@@ -126,12 +121,12 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  Exibe uma caixa de diálogo de aviso quando o depurador é iniciado com a depuração de script desabilitada.  
   
  **Carregar exportações de dll**  
- Carrega as tabelas de exportação de dll. Informações de símbolo de tabelas de exportação de dll podem ser útil se você estiver trabalhando com mensagens do Windows, procedimentos do Windows (WindowProcs), objetos COM, ou marshaling ou qualquer dll para o qual você não tem símbolos. Informações de exportação lendo dll envolve alguma sobrecarga. Desse modo, esse recurso é desativado por padrão.  
+ Carrega as tabelas de exportação de dll. Informações de símbolos das tabelas de exportação de dll podem ser úteis se você estiver trabalhando com mensagens do Windows, procedimentos do Windows (WindowProcs), objetos COM, ou marshaling, ou qualquer dll para a qual você não tem símbolos. A leitura das informações de exportação de dll gera certa sobrecarga. Desse modo, esse recurso é desativado por padrão.  
   
- Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Símbolos estão disponíveis para qualquer dll do sistema de 32 bits. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Nomes de função de tabelas de exportação de dll podem aparecer truncados em outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, consulte [dumpbin/exportações](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Os símbolos estão disponíveis para qualquer dll de 32 bits do sistema. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Os nomes de função de tabelas de exportação de dll podem aparecer truncados em qualquer outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, confira [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostrar diagrama de pilhas paralelas baixo para cima**  
- Controla a direção na qual as pilhas são exibidas na **pilhas paralelas** janela.  
+ Controla a direção em que as pilhas são exibidas na janela **Pilhas Paralelas**.  
   
  **Ignorar as exceções de acesso de memória GPU, se os dados gravados não tiver alterado o valor**  
  Ignora as condições de corrida detectadas durante a depuração caso os dados não tenham sido alterados. Para obter mais informações, consulte [depurando código de GPU](../debugger/debugging-gpu-code.md).  
@@ -191,6 +186,3 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

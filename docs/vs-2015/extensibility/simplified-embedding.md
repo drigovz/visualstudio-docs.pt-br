@@ -1,26 +1,21 @@
 ---
 title: Incorporação simplificada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - simple view embedding
 ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e59e09f475697ac0539384514837554e3ce85afc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b8e1ac2fa17409ac3228f87eb71c99ce9e725521
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447195"
 ---
 # <a name="simplified-embedding"></a>Incorporação simplificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Incorporação simplificada é habilitado em um editor, quando seu objeto de exi
 Editor com a incorporação simplificada  
   
 > [!NOTE]
->  Os objetos nesta ilustração, somente o `CYourEditorFactory` objeto é necessária para criar um editor padrão baseado em arquivo. Se você estiver criando um editor personalizado, não é necessário implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. Para editores não personalizado, no entanto, você deve fazer isso.  
+> Os objetos nesta ilustração, somente o `CYourEditorFactory` objeto é necessária para criar um editor padrão baseado em arquivo. Se você estiver criando um editor personalizado, não é necessário implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>, porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. Para editores não personalizado, no entanto, você deve fazer isso.  
   
  Todas as interfaces implementadas para criar um editor com a incorporação simplificada estão contidas no `CYourEditorDocument` objeto. No entanto, para dar suporte a vários modos de exibição de dados de documentos, divida as interfaces em objetos separados de dados e exibição conforme indicado na tabela a seguir.  
   
@@ -45,4 +40,3 @@ Editor com a incorporação simplificada
 |<xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>|Dados|Habilita o recurso Salvar como para um tipo de arquivo.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2>|Dados|Habilita a persistência para o documento.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl>|Dados|Permite a supressão de eventos de alteração de arquivo, como recarregar disparando.|
-

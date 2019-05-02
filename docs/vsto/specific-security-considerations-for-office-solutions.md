@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b1a40fe9329061b457fb2038399324818ec69e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436485"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações sobre segurança específicas para soluções do Office
   Os recursos de segurança fornecidos pelo Microsoft .NET Framework e do Microsoft Office podem ajudar a proteger suas soluções do Office em relação a possíveis ameaças à segurança. Este tópico explica algumas dessas ameaças e fornece recomendações para ajudar a proteger contra elas. Ele também inclui informações sobre como as configurações de segurança do Microsoft Office afetam soluções do Office.
@@ -39,13 +39,13 @@ ms.locfileid: "56629073"
 
 ### <a name="recommendations"></a>Recomendações
 
--   Sempre valide entrada de dados e, se ela é proveniente do usuário, o documento, um banco de dados, um serviço web ou qualquer outra fonte.
+- Sempre valide entrada de dados e, se ela é proveniente do usuário, o documento, um banco de dados, um serviço web ou qualquer outra fonte.
 
--   Tenha cuidado ao expor determinados tipos de funcionalidades, como obter dados privilegiados em nome do usuário e colocá-lo em uma planilha desprotegida.
+- Tenha cuidado ao expor determinados tipos de funcionalidades, como obter dados privilegiados em nome do usuário e colocá-lo em uma planilha desprotegida.
 
--   Dependendo do tipo de aplicativo, ele pode fazer sentido para verificar se o documento original está em execução antes de executar qualquer código. Por exemplo, verificar se ele está em execução de um documento armazenado em um local seguro, conhecido.
+- Dependendo do tipo de aplicativo, ele pode fazer sentido para verificar se o documento original está em execução antes de executar qualquer código. Por exemplo, verificar se ele está em execução de um documento armazenado em um local seguro, conhecido.
 
--   Ele pode ser uma boa ideia para exibir um aviso quando o documento é aberto, se o aplicativo executa as ações privilegiadas. Por exemplo, você pode criar uma tela inicial ou uma caixa de diálogo de inicialização dizendo que o aplicativo acessar informações pessoais e peça que o usuário optar por continuar ou em Cancelar. Se um usuário final obtém um aviso desse tipo de um documento aparentemente inocente, ele ou ela poderá encerrar o aplicativo antes de qualquer coisa está comprometida.
+- Ele pode ser uma boa ideia para exibir um aviso quando o documento é aberto, se o aplicativo executa as ações privilegiadas. Por exemplo, você pode criar uma tela inicial ou uma caixa de diálogo de inicialização dizendo que o aplicativo acessar informações pessoais e peça que o usuário optar por continuar ou em Cancelar. Se um usuário final obtém um aviso desse tipo de um documento aparentemente inocente, ele ou ela poderá encerrar o aplicativo antes de qualquer coisa está comprometida.
 
 ## <a name="code-is-blocked-by-the-outlook-object-model-guard"></a>Código está bloqueado pelo object model guard do Outlook
  Microsoft Office pode impedir que o código usando determinadas propriedades, métodos e objetos no modelo de objeto. Restringindo o acesso a esses objetos, o Outlook ajuda a evitar que vírus e worms de email usando o modelo de objeto para fins mal-intencionados. Esse recurso de segurança é conhecido como o object model guard do Outlook. Se um suplemento do VSTO tenta usar um método ou propriedade restrita enquanto o object model guard estiver habilitado, o Outlook exibe um aviso de segurança que permite que o usuário interromper a operação ou permite que o usuário conceder acesso à propriedade ou método por um período limitado de t IME. Se o usuário para a operação, Add-ins do VSTO do Outlook criados usando as soluções do Office no Visual Studio gerará um <xref:System.Runtime.InteropServices.COMException>.
@@ -74,7 +74,7 @@ ms.locfileid: "56629073"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Se o Outlook é usado com o Exchange, em seguida, obtendo todos os objetos do Outlook de `ThisAddIn.Application` não garante que o suplemento do VSTO poderão acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange define automaticamente o Outlook negar todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, em seguida, o Outlook não permitirá que o exemplo de código anterior acessar a propriedade To, mesmo que use o exemplo de código o confiável `ThisAddIn.Application` campo.
+> Se o Outlook é usado com o Exchange, em seguida, obtendo todos os objetos do Outlook de `ThisAddIn.Application` não garante que o suplemento do VSTO poderão acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange define automaticamente o Outlook negar todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, em seguida, o Outlook não permitirá que o exemplo de código anterior acessar a propriedade To, mesmo que use o exemplo de código o confiável `ThisAddIn.Application` campo.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Especifique quais suplementos confiar ao usar o Exchange
  Quando o Outlook é usado com o Exchange, os administradores podem especificar que certos VSTO Add-ins pode ser executada sem encontrar o object model guard. Outlook VSTO Add-ins criados por meio de soluções do Office no Visual Studio não pode ser confiáveis individualmente; eles só podem ser confiáveis como um grupo.
@@ -103,17 +103,17 @@ ms.locfileid: "56629073"
 
 #### <a name="to-disable-vsto-add-ins-in-microsoft-office-2010-and-microsoft-includeoffice15shortvstoincludesoffice-15-short-mdmd-applications"></a>Para desabilitar o VSTO Add-ins no Microsoft Office 2010 e Microsoft [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] aplicativos
 
-1.  Escolha o **arquivo** guia.
+1. Escolha o **arquivo** guia.
 
-2.  Escolha o *ApplicationName* **opções** botão.
+2. Escolha o *ApplicationName* **opções** botão.
 
-3.  No painel de categorias, escolha **Central de confiabilidade**.
+3. No painel de categorias, escolha **Central de confiabilidade**.
 
-4.  No painel de detalhes, escolha **configurações da Central de confiabilidade**.
+4. No painel de detalhes, escolha **configurações da Central de confiabilidade**.
 
-5.  No painel de categorias, escolha **Add-ins**.
+5. No painel de categorias, escolha **Add-ins**.
 
-6.  No painel de detalhes, selecione **Add-ins do aplicativo exigir a ser assinado por um fornecedor confiável** ou **desabilitar todos os suplementos do aplicativo**.
+6. No painel de detalhes, selecione **Add-ins do aplicativo exigir a ser assinado por um fornecedor confiável** ou **desabilitar todos os suplementos do aplicativo**.
 
 ## <a name="see-also"></a>Consulte também
 - [Proteger as soluções do Office](../vsto/securing-office-solutions.md)

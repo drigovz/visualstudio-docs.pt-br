@@ -16,17 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120ff132ac33a156cdf734ee0e17f4cfade9380c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065669"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compila e executa o projeto ou a solução especificada.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -45,9 +44,9 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="remarks"></a>Comentários  
  Compila e executa o projeto ou a solução especificada de acordo com as configurações especificadas para a configuração da solução ativa. Essa opção inicia o IDE (ambiente de desenvolvimento integrado) e o deixa ativo após o projeto ou a solução tiver concluído sua execução.  
   
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
   
--   As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
+- As informações de resumo, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo executa a solução `MySolution` usando a configuração de implantação ativa.  

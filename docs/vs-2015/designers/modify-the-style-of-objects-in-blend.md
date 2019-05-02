@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9d010b8218dca94e4d9bcbf1e7d48088758f5ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442447"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
   
  **Neste tópico**:  
   
--   [Pincéis: Modificar a aparência de um objeto](#Brushes)  
+- [Pincéis: Modificar a aparência de um objeto](#Brushes)  
   
--   [Estilos e modelos: criar uma aparência consistente entre os controles](#Styles)  
+- [Estilos e modelos: Criar uma aparência consistente entre os controles](#Styles)  
   
--   [Estados visuais: alterar a aparência de um controle com base em seu estado](#Visual)  
+- [Estados visuais: Alterar a aparência de um controle com base em seu estado](#Visual)  
   
--   [Recursos: criar cores, estilos e modelos e reutilizá-los posteriormente](#Resources)  
+- [Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente](#Resources)  
   
-##  <a name="Brushes"></a> Pincéis: Modificar a aparência de um objeto  
+## <a name="Brushes"></a> Pincéis: Modificar a aparência de um objeto  
  Aplique um pincel a um objeto se você quiser alterar sua aparência.  
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Editor de pincéis](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
@@ -57,12 +57,12 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pincéis de bloco](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a>Estilos e modelos: Criar uma aparência consistente entre os controles  
+## <a name="Styles"></a> Estilos e modelos: Criar uma aparência consistente entre os controles  
  Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.  
   
- **Você deve usar um estilo?** : se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. Modifique um controle, mesmo após aplicar um estilo a ele.  
+ **Você deve usar um estilo?**: Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. Modifique um controle, mesmo após aplicar um estilo a ele.  
   
- **Você deve usar um modelo?**: se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um estilo a ele.  
+ **Você deve usar um modelo?**: Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um estilo a ele.  
   
 ### <a name="create-a-template-or-style"></a>Criar um modelo ou estilo  
  Há duas maneiras de criar um modelo. Você pode converter qualquer objeto de sua prancheta em um controle, ou pode basear seu modelo em um controle existente.  
@@ -86,15 +86,13 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
   ![](../designers/media/4818ee6a-ce60-4b79-91c8-3b1871829eea.png "4818ee6a-ce60-4b79-91c8-3b1871829eea")  
   
 > [!NOTE]
->  Você não pode criar estilos ou modelos para cada tipo de controle. Se um controle não oferecer suporte a eles, o botão de navegação estrutural não aparecerá acima da prancheta.  
+> Você não pode criar estilos ou modelos para cada tipo de controle. Se um controle não oferecer suporte a eles, o botão de navegação estrutural não aparecerá acima da prancheta.  
 >   
->  Para retornar ao escopo de edição de seu documento principal, clique em **Retornar escopo para** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
+> Para retornar ao escopo de edição de seu documento principal, clique em **Retornar escopo para** ![](../designers/media/55844eb3-ed98-4f20-aa66-a6f5b23eeb2b.png "55844eb3-ed98-4f20-aa66-a6f5b23eeb2b").  
 >   
->  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
+> ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar um estilo](http://www.microsoft.com/showcase/details.aspx?uuid=9b8e86e2-8e90-4d61-81af-fa5b5afb3e95).  
-  
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criando um modelo de controle no Expression Blend](http://msdn.microsoft.com/expression/cc263912.aspx).  
+ **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar um estilo](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar um estilo ou modelo a um controle  
  Clique com o botão direito do mouse em um objeto no painel [Objetos e Linha do Tempo](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), escolha **Editar Modelo** e escolha**Aplicar Recurso**.  
@@ -104,14 +102,14 @@ A maneira mais fácil de personalizar um objeto é definir as propriedades no pa
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle  
  Selecione o controle e, no painel [Propriedades](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), localize a propriedade **Estilo** ou **Modelo**. Em seguida, clique em **Opções avançadas** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb") e clique em **Redefinir** no menu de atalho.  
   
-##  <a name="Visual"></a>Estados visuais: Alterar a aparência de um controle com base em seu estado  
+## <a name="Visual"></a> Estados visuais: Alterar a aparência de um controle com base em seu estado  
  Os controles podem ter aparências diferentes com base nas interações do usuário. Por exemplo, você pode fazer um botão ficar verde quando um usuário clica nele, ou pode executar uma animação. Reduza ou aumente o tempo entre estados visuais usando transições.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [gerenciar o estado dos controles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a>Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente  
+## <a name="Resources"></a> Recursos: Criar cores, estilos e modelos e reutilizá-los posteriormente  
  Converta qualquer coisa em seu projeto em um recurso. Um recurso é apenas um objeto que pode ser reutilizado em locais diferentes de seu aplicativo. Por exemplo, você pode criar uma cor uma vez, torná-la um recurso e, depois, usar essa cor em vários objetos. Para alterar a cor de todos os objetos, basta alterar o recurso de cor.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-b153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  

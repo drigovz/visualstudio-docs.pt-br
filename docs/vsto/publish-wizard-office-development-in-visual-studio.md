@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9ce0be90be111d458229189c2a06624bd726ac05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7879ad7cf18c3d09fddbab3923296e0896688af9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447063"
 ---
 # <a name="publish-wizard-office-development-in-visual-studio"></a>Assistente de publicação (desenvolvimento do Office no Visual Studio)
   Use o **Assistente de publicação** para copiar arquivos de solução para um local especificado, criar os arquivos de manifesto e criar um programa de instalação.
@@ -46,7 +46,7 @@ ms.locfileid: "56604817"
   Por padrão, é o local de publicação *http://localhost/projectname/* se tiver instalado o IIS ou o diretório de Publish se você fizer não tiver o IIS instalado.
 
 > [!NOTE]
->  Existem considerações mais se o computador de destino está executando o Windows Vista. Você deve ser um administrador no computador Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o *publique\\*  diretório, independentemente de você ter instalado o IIS.
+> Existem considerações mais se o computador de destino está executando o Windows Vista. Você deve ser um administrador no computador Windows Vista para usar a opção de publicação local. Além disso, o local padrão é sempre o *publique\\*  diretório, independentemente de você ter instalado o IIS.
 
 ## <a name="what-is-the-default-installation-path-on-end-user-computers"></a>O que é o caminho de instalação padrão em computadores de usuários finais?
  O caminho de instalação é opcional. Se você preferir, você pode definir o caminho de instalação mais tarde. Para obter detalhes, confira [Como: Alterar o caminho de instalação de uma solução do Office](https://msdn.microsoft.com/d0eaa07b-2d72-4902-899f-2f9fb165b8fd).

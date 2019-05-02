@@ -1,50 +1,41 @@
 ---
 title: Como relatar um problema com o Visual Studio
-titleSuffix: ''
-description: Saiba como relatar um problema com o Visual Studio para a Microsoft, de modo que possamos diagnosticá-lo e corrigi-lo.
+description: Saiba como relatar um problema com o Visual Studio
 ms.date: 03/11/2018
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
-author: TerryGLee
-ms.author: tglee
+ms.author: seiyer
+author: seaniyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c9bfa7c772b2c194430273f8af0ac640c05171d
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947572"
 ---
-# <a name="how-to-report-a-problem-with-visual-studio"></a>Como relatar um problema com o Visual Studio
-
-Se tiver algum problema com o Visual Studio, gostaríamos de saber o que é. Veja a seguir como relatar o problema para a [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/) para que possamos diagnosticá-lo e corrigi-lo.
+# <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Como relatar um problema com o Visual Studio para Mac ou com o Instalador do Visual Studio
 
 > [!NOTE]
-> Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Como relatar um problema no Visual Studio para Mac](/visualstudio/mac/report-a-problem).
+> Para o Visual Studio para Mac, confira [Como relatar um problema no Visual Studio para Mac](/visualstudio/mac/report-a-problem).
 
-## <a name="report-a-problem-by-using-visual-studio"></a>Relatar um problema usando o Visual Studio
+Você pode relatar um problema do Visual Studio ou de seu instalador usando a Ferramenta de Comentários incluída neles. A Ferramenta de Comentários permite que você inclua facilmente informações de diagnóstico nos seus comentários e ajuda as equipes do Visual Studio a diagnosticar e corrigir problemas com muito mais eficiência. Aqui estão as etapas para relatar um problema.
 
-Para relatar um problema para o Visual Studio, você deve iniciar o relatório do Visual Studio ou do Instalador do Visual Studio. Você não pode fazer isso diretamente por meio do site da [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/). Fazer o relatório por meio do Visual Studio permite que as informações de diagnóstico sejam incluídas automaticamente no relatório.
+1. **No Visual Studio**, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema. Você também pode acessar a ferramenta de comentários no menu **Ajuda** > **Enviar Comentários** > **Relatar um Problema**.
+![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/vsfeedbackentry.png) Como alternativa, relate um problema no **Instalador do Visual Studio** se você não puder instalar o Visual Studio ou não puder acessar a ferramenta de comentários no Visual Studio.  No Instalador, selecione o ícone de comentários no canto superior direito e selecione Relatar um Problema.
+![Pop-up Relatar um problema na Comunidade de Desenvolvedores do Visual Studio](media/installer.png)
 
-![Relatar um pop-up do problema na Comunidade de Desenvolvedores do Visual Studio](media/report-an-issue.png)
-
-1. No Visual Studio, selecione **Ajuda** > **Enviar Comentários** > **Relatar um Problema**.
-
-   > [!TIP]
-   > Se não for possível concluir a instalação do Visual Studio ou acessar a ferramenta de comentários dentro do Visual Studio, você poderá relatar um problema usando o **Instalador do Visual Studio**. Para fazer isso, escolha o ícone de comentários no canto superior direito do **Instalador do Visual Studio**.
-
-1. Se você não estiver conectado, selecione **Entrar**; essa opção está do lado direito da ferramenta, conforme mostrado na captura de tela a seguir. Siga as instruções na tela para se conectar.
+1. Se não tiver entrado, selecione **Entrar** conforme mostrado na seguinte captura de tela. Siga as instruções na tela para se conectar.
 
    ![Entrar para relatar um problema](../ide/media/sign-in-new-ux.png)
 
-   Quando você entra, pode relatar um problema que está enfrentando. Você também pode votar ou comentar em qualquer outro problema postado.
+   Você não só pode relatar um problema quando está conectado, mas também pode votar e comentar sobre qualquer comentário existente.
 
 1. Depois de entrar, você poderá ver seus **Problemas** e **Atividade** na tela **Itens que Acompanho**
 
-    ![Itens que Acompanho](../ide/media/items-i-follow.png)
+   ![Itens que Acompanho](../ide/media/items-i-follow.png)
 
 1. O Visual Studio fornece uma interface para pesquisar o problema e ver se outras pessoas já o relataram. Se alguém tiver relatado, "vote como positivo" para nos informar.
    > [!NOTE]

@@ -1,25 +1,20 @@
 ---
 title: Obtendo descrições dos campos na janela Propriedades | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, field descriptions
 ms.assetid: 7d92bb6a-b9b9-4cd8-99e9-b5ee129b52a3
 caps.latest.revision: 9
-manager: douge
-ms.openlocfilehash: fc5d2c8553ccdb6c554f9a8364e9fd21eaa324d1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 77da71c6762927610900feedeeae20421a14c4d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49814786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432269"
 ---
 # <a name="getting-field-descriptions-from-the-properties-window"></a>Obtendo descrições dos campos na janela Propriedades
 Na parte inferior a **propriedades** janela, uma área de descrição exibe informações relacionadas ao campo de propriedade selecionada. Esse recurso é ativado por padrão. Se você quiser ocultar o campo de descrição, clique com botão direito do **propriedades** janela e clique em **descrição**. Isso também remove a marca de seleção ao lado de **descrição** título na janela de menu. Você pode exibir o campo novamente, seguindo as mesmas etapas para ativar/desativar **descrição** novamente.  
@@ -31,7 +26,7 @@ Na parte inferior a **propriedades** janela, uma área de descrição exibe info
 1. Adicione a `helpstringdll` para a instrução library na biblioteca de tipos de atributo (`typelib`).  
   
    > [!NOTE]
-   >  Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.  
+   > Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.  
   
 2. Especificar `helpstringcontext` atributos para as cadeias de caracteres. Você também pode especificar `helpstring` atributos.  
   
@@ -69,8 +64,8 @@ STDAPI DLLGetDocumentation
  [Interfaces e campos da janela Propriedades](../extensibility/internals/properties-window-fields-and-interfaces.md)   
  [Estendendo propriedades](../extensibility/internals/extending-properties.md)   
  [helpstringdll](http://msdn.microsoft.com/library/121271fa-f061-492b-b87f-bbfcf4b02e7b)   
- [HelpString](http://msdn.microsoft.com/library/0401e905-a63e-4fad-98d0-d1efea111966)   
+ [helpstring](http://msdn.microsoft.com/library/0401e905-a63e-4fad-98d0-d1efea111966)   
  [helpstringcontext](http://msdn.microsoft.com/library/d4cd135e-d91c-4aa3-9353-8aeb096f52cf)   
- [HelpContext](http://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
- [Arquivo de ajuda](http://msdn.microsoft.com/library/d75161c1-1363-4019-ae09-e7e3b8a3971e)   
+ [helpcontext](http://msdn.microsoft.com/library/6fbb022d-a4b7-4989-a02f-7f18a9b0ad96)   
+ [helpfile](http://msdn.microsoft.com/library/d75161c1-1363-4019-ae09-e7e3b8a3971e)   
  [lcid](http://msdn.microsoft.com/library/7f248c69-ee1c-42c3-9411-39cf27c9f43d)

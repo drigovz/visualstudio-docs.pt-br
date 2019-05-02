@@ -1,14 +1,9 @@
 ---
 title: Conclusão do Word em um serviço de linguagem herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], IntelliSense Complete Word
 - IntelliSense, Complete Word
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 40a7e387ceb5fe88f059539634ae654ba076454f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b4449a30119d925b167213141c3ba577ce42609
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51801713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439888"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>Preenchimento de palavra em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Preenchimento automático de palavras preenche os caracteres ausentes em uma pal
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="implementation-steps"></a>Etapas de implementação  
   
@@ -57,4 +52,3 @@ Preenchimento automático de palavras preenche os caracteres ausentes em uma pal
  Se a lista contém apenas uma única palavra, em seguida, a <xref:Microsoft.VisualStudio.Package.Source> classe insere automaticamente essa palavra em vez da palavra parcial. Se a lista contiver mais de uma palavra, o <xref:Microsoft.VisualStudio.Package.Source> classe apresenta uma lista de dica de ferramenta da qual o usuário pode selecionar a opção apropriada.  
   
  Observe também o exemplo de um <xref:Microsoft.VisualStudio.Package.Declarations> implementação de classe no [preenchimento de membro em um serviço de linguagem herdado](../../extensibility/internals/member-completion-in-a-legacy-language-service.md).
-

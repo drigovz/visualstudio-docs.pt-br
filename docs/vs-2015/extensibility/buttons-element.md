@@ -1,27 +1,22 @@
 ---
 title: Elemento de botões | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 73d72c9e73af497d2f63f86264d5a53745a104e4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: e8e0a17e3580b238c63a23e5943e98afbbb9268b
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816266"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925351"
 ---
 # <a name="buttons-element"></a>Elemento Buttons
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,4 +71,3 @@ Grupos [botão](../extensibility/button-element.md) elementos, que representam c
 ## <a name="see-also"></a>Consulte também  
  [Como os VSPackages adicionam elementos da Interface do usuário](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
-

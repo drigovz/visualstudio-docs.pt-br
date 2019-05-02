@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b4b2f57485a942877861400aec9ec7d0f13f977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00026cd53a67a216e126bcc5de92a136a6359331
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957605"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994873"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 
@@ -87,9 +87,9 @@ Os usuários também podem colar elementos em outros elementos.
 
 2. Para que os usuários a mesclagem de elementos no `ExampleElement` formas, crie um novo EMD no `ExampleElement` classe de domínio:
 
-   1.  Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.
+   1. Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.
 
-   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)
+   2. Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)
 
 3. Defina as **classe de indexação** na janela de detalhes de DSL, para definir a classe de elementos pode ser mesclado com `ExampleElement` objetos.
 
@@ -117,29 +117,29 @@ Os usuários também podem colar elementos em outros elementos.
 
 5. Teste o DSL:
 
-   1.  Pressione **F5** para recompilar e executar a solução.
+   1. Pressione **F5** para recompilar e executar a solução.
 
         Recriando levará mais tempo do que o normal porque o código gerado será atualizado a partir de modelos de texto em conformidade com a nova definição de DSL.
 
-   2.  Quando a instância experimental do Visual Studio for iniciado, abra um arquivo de modelo de sua DSL. Crie alguns elementos de exemplo.
+   2. Quando a instância experimental do Visual Studio for iniciado, abra um arquivo de modelo de sua DSL. Crie alguns elementos de exemplo.
 
-   3.  Arraste o **elemento de exemplo** ferramenta em uma forma existente.
+   3. Arraste o **elemento de exemplo** ferramenta em uma forma existente.
 
         Uma nova forma é exibido e ele está vinculado a forma com um conector existente.
 
-   4.  Copie uma forma existente. Selecione outra forma e colar.
+   4. Copie uma forma existente. Selecione outra forma e colar.
 
         Uma cópia da primeira forma é criada.  Ele tem um novo nome e ele está vinculado a segunda forma com um conector.
 
 Observe os seguintes pontos deste procedimento:
 
--   Criando diretivas de mesclagem de elementos, você pode permitir que qualquer classe de elemento para aceitar qualquer outro. O EMD é criado na classe do receptor do domínio e a classe de domínio aceito é especificada na **classe Index** campo.
+- Criando diretivas de mesclagem de elementos, você pode permitir que qualquer classe de elemento para aceitar qualquer outro. O EMD é criado na classe do receptor do domínio e a classe de domínio aceito é especificada na **classe Index** campo.
 
--   Ao definir caminhos, você pode especificar quais links deve ser usado para conectar o novo elemento ao modelo existente.
+- Ao definir caminhos, você pode especificar quais links deve ser usado para conectar o novo elemento ao modelo existente.
 
      Os links que você especificar deve incluir uma relação de incorporação.
 
--   O EMD afeta a criação da caixa de ferramentas e também operações de colagem.
+- O EMD afeta a criação da caixa de ferramentas e também operações de colagem.
 
      Se você escrever código personalizado que cria novos elementos, você pode invocar explicitamente o EMD usando o `ElementOperations.Merge` método. Isso garante que seu código vincula novos elementos no modelo da mesma forma como outras operações. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).
 
@@ -149,21 +149,21 @@ Adicionando código personalizado a uma EMD, você pode definir o comportamento 
 
 ### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Escrever código aceitação personalizada para restringir o que o usuário pode adicionar
 
-1.  Criar uma DSL usando o **linguagem mínima** modelo de solução. Abra o diagrama de definição de DSL.
+1. Criar uma DSL usando o **linguagem mínima** modelo de solução. Abra o diagrama de definição de DSL.
 
-2.  No DSL Explorer, expanda **Classes de domínio**, `ExampleModel`, **diretivas de mesclagem de elementos**. Selecione a diretiva element merge chamado `ExampleElement`.
+2. No DSL Explorer, expanda **Classes de domínio**, `ExampleModel`, **diretivas de mesclagem de elementos**. Selecione a diretiva element merge chamado `ExampleElement`.
 
      Este EMD controla como o usuário pode criar novos `ExampleElement` objetos no modelo, por exemplo, arrastando da caixa de ferramentas.
 
-3.  No **detalhes de DSL** janela, selecione **aceitação personalizada usa**.
+3. No **detalhes de DSL** janela, selecione **aceitação personalizada usa**.
 
-4.  Recompile a solução. Isso levará mais tempo porque o código gerado será atualizado do modelo.
+4. Recompile a solução. Isso levará mais tempo porque o código gerado será atualizado do modelo.
 
      Um erro de compilação será relatado, semelhante a: "Company.ElementMergeSample.ExampleElement não contém uma definição para CanMergeExampleElement..."
 
      Você deve implementar o método `CanMergeExampleElement`.
 
-5.  Criar um novo arquivo de código na **Dsl** projeto. Substitua seu conteúdo pelo código a seguir e altere o namespace para o namespace do seu projeto.
+5. Criar um novo arquivo de código na **Dsl** projeto. Substitua seu conteúdo pelo código a seguir e altere o namespace para o namespace do seu projeto.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -192,11 +192,11 @@ Adicionando código personalizado a uma EMD, você pode definir o comportamento 
 
     Este exemplo simple restringe o número de elementos que podem ser mescladas no modelo pai. Para condições mais interessantes, o método pode inspecionar qualquer uma das propriedades e links do objeto de recebimento. Ele também pode inspecionar as propriedades dos elementos de mesclagem, que são executadas em um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obter mais informações sobre `ElementGroupPrototypes`, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md). Para obter mais informações sobre como escrever código que lê um modelo, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-6.  Teste o DSL:
+6. Teste o DSL:
 
-    1.  Pressione **F5** para recompilar a solução. Quando a instância experimental do Visual Studio é aberto, abra uma instância de sua DSL.
+    1. Pressione **F5** para recompilar a solução. Quando a instância experimental do Visual Studio é aberto, abra uma instância de sua DSL.
 
-    2.  Crie novos elementos de várias maneiras:
+    2. Crie novos elementos de várias maneiras:
 
         - Arraste o **elemento de exemplo** ferramenta para o diagrama.
 
@@ -204,7 +204,7 @@ Adicionando código personalizado a uma EMD, você pode definir o comportamento 
 
         - Copie e cole um elemento no diagrama.
 
-    3.  Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.
+    3. Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.
 
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem em uma EMD
 
@@ -218,19 +218,19 @@ No código personalizado de mesclagem, você pode definir o que acontece quando 
 
 ### <a name="to-override-mergerelate"></a>Para substituir MergeRelate
 
-1.  Na definição de DSL, certifique-se de que você definiu o EMD ao qual você deseja adicionar o código. Se você quiser, você pode adicionar caminhos e definir código de aceitação personalizada conforme descrito nas seções anteriores.
+1. Na definição de DSL, certifique-se de que você definiu o EMD ao qual você deseja adicionar o código. Se você quiser, você pode adicionar caminhos e definir código de aceitação personalizada conforme descrito nas seções anteriores.
 
-2.  No diagrama DslDefinition, selecione a classe de recebimento da mesclagem. Geralmente, é a classe na extremidade de origem de uma relação de incorporação.
+2. No diagrama DslDefinition, selecione a classe de recebimento da mesclagem. Geralmente, é a classe na extremidade de origem de uma relação de incorporação.
 
      Por exemplo, em uma DSL gerada a partir da solução de linguagem mínima, selecione `ExampleModel`.
 
-3.  No **propriedades** janela, defina **gera derivado duplo** para **verdadeiro**.
+3. No **propriedades** janela, defina **gera derivado duplo** para **verdadeiro**.
 
-4.  Recompile a solução.
+4. Recompile a solução.
 
-5.  Inspecionar o conteúdo do **Dsl\Generated Files\DomainClasses.cs**. Procure métodos chamados `MergeRelate` e examine seu conteúdo. Isso ajudará você a escrever suas próprias versões.
+5. Inspecionar o conteúdo do **Dsl\Generated Files\DomainClasses.cs**. Procure métodos chamados `MergeRelate` e examine seu conteúdo. Isso ajudará você a escrever suas próprias versões.
 
-6.  Em um novo arquivo de código, escrever uma classe parcial para a classe de recebimento e substituir o `MergeRelate` método. Lembre-se de chamar o método base. Por exemplo:
+6. Em um novo arquivo de código, escrever uma classe parcial para a classe de recebimento e substituir o `MergeRelate` método. Lembre-se de chamar o método base. Por exemplo:
 
     ```csharp
     partial class ExampleModel

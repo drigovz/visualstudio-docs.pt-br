@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Saiba mais sobre as responsabilidades dos administradores de assinaturas.
 searchscope: VS Subscription
 ms.openlocfilehash: 98806d2927c2a4dd6ff597ac12b9580d40ccaad7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945829"
 ---
 # <a name="overview-of-administrator-responsibilities"></a>Visão geral das responsabilidades do administrador
 Como administrador, você tem a capacidade de gerenciar as assinaturas da organização.  A função de administrador também tem a responsabilidade de garantir que as assinaturas sejam gerenciadas de acordo com os termos de licença. Este artigo descreve as responsabilidades, os benefícios e as limitações da função de administrador.

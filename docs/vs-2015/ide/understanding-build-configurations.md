@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 684bf375568b83333ac5e4c9f88eeae00449cd42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443259"
 ---
 # <a name="understanding-build-configurations"></a>Noções sobre configurações de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,9 +39,9 @@ ms.locfileid: "54799304"
 É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build**, **Configuration Manager**, ou simplesmente digite **Configuração** na caixa **Início Rápido**. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.  
   
 > [!NOTE]
->  Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] poderão ser aplicadas. Para obter mais informações, confira [Como: Gerenciar configurações com as configurações de desenvolvedor de Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
+> Se não for possível localizar as definições de configuração da solução na barra de ferramentas nem acessar o **Configuration Manager**, as configurações de desenvolvimento [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] poderão ser aplicadas. Para obter mais informações, confira [Como: Gerenciar configurações com as configurações de desenvolvedor de Visual Basic aplicadas](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- Por padrão, as configurações de Depuração e Versão são incluídas nos projetos criados usando modelos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Uma configuração de depuração dá suporte à depuração de um aplicativo, e uma configuração de Versão cria uma versão do aplicativo que pode ser implantada. Para obter mais informações, consulte [Como definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).  
+ Por padrão, as configurações de Depuração e Versão são incluídas nos projetos criados usando modelos [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Uma configuração de depuração dá suporte à depuração de um aplicativo, e uma configuração de Versão cria uma versão do aplicativo que pode ser implantada. Para obter mais informações, confira [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md). Também é possível criar configurações de solução e de projeto personalizadas. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Configurações da solução  
  Uma configuração de solução especifica como os projetos na solução devem ser criados e implantados. Para modificar uma configuração de solução ou definir uma nova, no **Configuration Manager**, em **Configuração da solução ativa**, escolha **Editar** ou **Novo**.  
@@ -49,9 +49,9 @@ ms.locfileid: "54799304"
  Cada entrada na caixa **Contextos do Projeto** em uma configuração de solução representa um projeto na solução. Para cada combinação de **Configuração da solução ativa** e **Plataforma da solução ativa**, é possível definir como cada projeto é usado. (Para obter mais informações sobre as plataformas de solução, consulte [Noções sobre plataformas de build](../ide/understanding-build-platforms.md).)  
   
 > [!NOTE]
->  Quando você define uma nova configuração de solução e marca a caixa de seleção **Criar novas configurações de projeto**, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] atribui automaticamente a nova configuração a todos os projetos. Da mesma forma, quando você define uma nova plataforma de solução e marca a caixa de seleção **Criar novas plataformas de projeto**, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] atribui automaticamente a nova plataforma a todos os projetos. Além disso, se você adicionar um projeto que define como destino uma nova plataforma, o Visual Studio adiciona essa plataforma à lista de plataformas de solução e a atribui a todos os projetos.  
+> Quando você define uma nova configuração de solução e marca a caixa de seleção **Criar novas configurações de projeto**, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] atribui automaticamente a nova configuração a todos os projetos. Da mesma forma, quando você define uma nova plataforma de solução e marca a caixa de seleção **Criar novas plataformas de projeto**, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] atribui automaticamente a nova plataforma a todos os projetos. Além disso, se você adicionar um projeto que define como destino uma nova plataforma, o Visual Studio adiciona essa plataforma à lista de plataformas de solução e a atribui a todos os projetos.  
 >   
->  Ainda é possível modificar as configurações para cada projeto.  
+> Ainda é possível modificar as configurações para cada projeto.  
   
  A configuração da solução ativa também fornece contexto ao IDE. Por exemplo, se você estiver trabalhando em um projeto e a configuração especificar que ele será criado para um dispositivo móvel, a **Caixa de Ferramentas** exibirá apenas os itens que podem ser usados em um projeto de dispositivo móvel.  
   
@@ -69,23 +69,23 @@ ms.locfileid: "54799304"
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Como o Visual Studio atribui configurações de projeto  
  Quando você define uma nova configuração de solução e não copia as configurações de uma já existente, o Visual Studio usa os seguintes critérios para atribuir configurações de projeto padrão. Os critérios são avaliados na ordem mostrada.  
   
-1.  Se um projeto tiver um nome de configuração (*\<nome de configuração> \<nome de plataforma>*) que corresponda exatamente ao nome da nova configuração de solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.  
+1. Se um projeto tiver um nome de configuração (*\<nome de configuração> \<nome de plataforma>*) que corresponda exatamente ao nome da nova configuração de solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.  
   
-2.  Se o projeto tiver um nome de configuração no qual a parte configuração-nome corresponda à nova configuração de solução, essa configuração será atribuída, independentemente se a parte da plataforma for correspondente ou não.  
+2. Se o projeto tiver um nome de configuração no qual a parte configuração-nome corresponda à nova configuração de solução, essa configuração será atribuída, independentemente se a parte da plataforma for correspondente ou não.  
   
-3.  Se ainda não houver correspondência, a primeira configuração listada no projeto será atribuída.  
+3. Se ainda não houver correspondência, a primeira configuração listada no projeto será atribuída.  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Como o Visual Studio atribui configurações de solução  
  Quando você cria uma configuração de projeto (no **Configuration Manager**, escolhendo **Novo** no menu suspenso na coluna **Configuração** desse projeto) e marca a caixa de seleção **Criar novas configurações de solução** o Visual Studio procura uma configuração de solução com nome semelhante para compilar o projeto em cada plataforma à que ele dá suporte. Em alguns casos, o Visual Studio renomeia as configurações de solução existentes ou define novas configurações.  
   
  O Visual Studio usa os seguintes critérios para atribuir configurações de solução.  
   
--   Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão dessa configuração de solução não inclui um nome de plataforma; ele assume a forma *\<nome de configuração do projeto>*.  
+- Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão dessa configuração de solução não inclui um nome de plataforma; ele assume a forma *\<nome de configuração do projeto>*.  
   
--   Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>*.  
+- Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>*.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: criando um aplicativo](../ide/walkthrough-building-an-application.md)   
+ [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md)   
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)   
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   
  [Referência de build do C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   

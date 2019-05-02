@@ -7,12 +7,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9ae6220ac38de7bf2edc7b5c305ecb377a46f18
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: a1ea74d3c5f3fed961a956e9a55a4930d009d530
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432077"
 ---
 # <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas
 
@@ -41,7 +41,7 @@ Se você tiver problemas ao implantar seus modelos de projeto ou item, você pod
 
 ::: moniker range="vs-2017"
 
-4. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo.
+4. Abra o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo.
 
    O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\15.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID da instalação da sua instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.
 
@@ -49,7 +49,7 @@ Se você tiver problemas ao implantar seus modelos de projeto ou item, você pod
 
 ::: moniker range=">=vs-2019"
 
-4. Inicie o Visual Studio e inicie as caixas de diálogo New Project e o novo Item para inicializar a ambas as árvores do modelo.
+4. Abra o Visual Studio e inicie o **criar um novo projeto** e **Novo Item** caixas de diálogo para inicializar a ambas as árvores do modelo.
 
    O log de modelo agora aparece na **%LOCALAPPDATA%\Microsoft\VisualStudio\16.0_[instanceid]\VsTemplateDiagnosticsList.csv** (instanceid corresponde à ID da instalação da sua instância do Visual Studio). A inicialização de cada árvore modelo acrescenta as entradas nesse log.
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 35ef81aba75e42e7d3d713d5f6efb7129b55b2d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3f9740da2674ad7e48f8863027fcb9a1acc8f1cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842164"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece um conjunto de propriedades predefinidas que armazenam informações sobre o arquivo de projeto e os binários [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Essas propriedades são avaliadas da mesma maneira que outras propriedades [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Por exemplo, para usar a propriedade `MSBuildProjectFile`, digite `$(MSBuildProjectFile)`.
@@ -29,7 +29,6 @@ ms.locfileid: "56632388"
 
 ## <a name="reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas
  A tabela a seguir descreve as propriedades predefinidas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
-
 
 | Propriedade | Reservadas ou conhecidas | Descrição |
 |----------------------------------|------------------------| - |
@@ -57,6 +56,7 @@ ms.locfileid: "56632388"
 | `MSBuildThisFileName` | Reservado | A parte do nome de arquivo de `MSBuildThisFileFullPath`, sem a extensão de nome de arquivo. |
 | `MSBuildToolsPath` | Reservado | O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída. |
 | `MSBuildToolsVersion` | Reservado | A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que é usado para compilar o projeto.<br /><br /> Observação: Um Conjunto de ferramentas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, como *csc.exe* e *vbc.exe*. Para saber mais, confira [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizadas do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md). |
+| `MSBuildVersion` | Reservado | A versão do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] usada para compilar o projeto. <br /><br/> Essa propriedade não pode ser substituída, caso contrário, a mensagem de erro `MSB4004 - The 'MSBuildVersion' property is reserved, and can not be modified.` é retornada. |
 
 ## <a name="names-that-conflict-with-msbuild-elements"></a>Nomes em conflito com elementos do MSBuild
 

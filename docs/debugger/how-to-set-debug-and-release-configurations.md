@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847670"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Definir configurações de depuração e versão no Visual Studio
 
@@ -44,7 +44,7 @@ Projetos do Visual Studio tem a versão separada e configurações para o seu pr
 
 Na configuração de depuração, o seu programa é compilado com informações de depuração simbólica e sem otimização. A otimização complica a depuração, porque a relação entre o código fonte e as instruções geradas é mais complexa.
 
-A configuração de versão do seu programa não tem nenhuma informação de depuração simbólica e é totalmente otimizada. Para código gerenciado e código C++, informações de depuração podem ser geradas em arquivos. PDB [dependendo das opções de compilador](#BKMK_symbols_release) que são usados. Criar arquivos. PDB pode ser útil se você posteriormente precisa depurar a versão de lançamento.
+A configuração de versão do seu programa não tem nenhuma informação de depuração simbólica e é totalmente otimizada. Para código gerenciado e C++ código, informações de depuração podem ser geradas em arquivos. PDB [dependendo das opções de compilador](#BKMK_symbols_release) que são usados. Criar arquivos. PDB pode ser útil se você posteriormente precisa depurar a versão de lançamento.
 
 Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
 
@@ -73,7 +73,7 @@ Cada tipo de projeto pode ter uma maneira diferente de como definir essas opçõ
 
 ### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Gerar arquivos de símbolo para um projeto c#, ASP.NET ou Visual Basic
 
-Para obter informações detalhadas sobre configurações do projeto para configurações de depuração no C# ou Visual Basic, consulte [configurações do projeto para um C# configuração de depuração](../debugger/project-settings-for-csharp-debug-configurations.md) ou [configurações do projeto para uma depuração do Visual Basic configuração](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Para obter informações detalhadas sobre as configurações de projeto para configurações de depuração em c# ou Visual Basic, consulte [configuração de depuração de configurações do projeto para um c#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [deconfiguraçãodedepuraçãodeconfiguraçõesdoprojetoparaumVisualBasic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. No Gerenciador de Soluções, selecione o projeto.
 
@@ -124,4 +124,4 @@ Para obter informações detalhadas sobre configurações do projeto para config
 - [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)<br/>
 - [Configurações do projeto para uma configuração de depuração do C#](../debugger/project-settings-for-csharp-debug-configurations.md)<br/>
 - [Definições do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md)<br/>
-- [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)
+- [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md)

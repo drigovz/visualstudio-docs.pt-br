@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822964"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
 
@@ -26,29 +26,29 @@ Este tópico descreve algumas recomendações para desenvolver testes de IU codi
 
 Use as orientações a seguir para criar um teste de IU codificado flexível.
 
--   Use o **Construtor de Teste de IU Codificado** sempre que possível.
+- Use o **Construtor de Teste de IU Codificado** sempre que possível.
 
--   Não modifique o arquivo *UIMap.Designer.cs* diretamente. Se você modificar o arquivo, as alterações serão substituídas.
+- Não modifique o arquivo *UIMap.Designer.cs* diretamente. Se você modificar o arquivo, as alterações serão substituídas.
 
--   Crie o teste como uma sequência de métodos registrados. Para obter mais informações de como registrar um método, confira [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).
+- Crie o teste como uma sequência de métodos registrados. Para obter mais informações de como registrar um método, confira [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md).
 
--   Cada método registrado deve agir em uma única página, formulário ou caixa de diálogo. Crie um novo método de teste para cada nova página, formulário ou caixa de diálogo.
+- Cada método registrado deve agir em uma única página, formulário ou caixa de diálogo. Crie um novo método de teste para cada nova página, formulário ou caixa de diálogo.
 
--   Ao criar um método, use um nome de método significativo em vez do nome padrão. Um nome significativo ajuda a identificar a finalidade do método.
+- Ao criar um método, use um nome de método significativo em vez do nome padrão. Um nome significativo ajuda a identificar a finalidade do método.
 
--   Quando possível, limite cada método registrado a menos de 10 ações. Essa abordagem modular torna mais fácil substituir um método se a interface do usuário for alterada.
+- Quando possível, limite cada método registrado a menos de 10 ações. Essa abordagem modular torna mais fácil substituir um método se a interface do usuário for alterada.
 
--   Crie cada asserção usando o **Construtor de teste de IU codificado**, que adiciona automaticamente um método de asserção ao arquivo *UIMap.Designer.cs*.
+- Crie cada asserção usando o **Construtor de teste de IU codificado**, que adiciona automaticamente um método de asserção ao arquivo *UIMap.Designer.cs*.
 
--   Se a interface do usuário (IU) for alterada, registre novamente os métodos de teste, os métodos de asserção ou as seções afetadas de um método de teste existente.
+- Se a interface do usuário (IU) for alterada, registre novamente os métodos de teste, os métodos de asserção ou as seções afetadas de um método de teste existente.
 
--   Crie um arquivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> separado para cada módulo em seu aplicativo em teste. Para obter mais informações, confira [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Crie um arquivo <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> separado para cada módulo em seu aplicativo em teste. Para obter mais informações, confira [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   No aplicativo em teste, use nomes significativos ao criar os controles de interface do usuário. Usar nomes significativos confere mais clareza e usabilidade aos nomes de controle gerados automaticamente.
+- No aplicativo em teste, use nomes significativos ao criar os controles de interface do usuário. Usar nomes significativos confere mais clareza e usabilidade aos nomes de controle gerados automaticamente.
 
--   Se você estiver criando asserções por meio de codificação com a API, crie um método para cada asserção na parte da classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está no arquivo *UIMap.cs*. Para executar a asserção, chame esse método de seu método de teste.
+- Se você estiver criando asserções por meio de codificação com a API, crie um método para cada asserção na parte da classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> que está no arquivo *UIMap.cs*. Para executar a asserção, chame esse método de seu método de teste.
 
--   Se estiver codificando diretamente com a API, use as propriedades e os métodos nas classes geradas no arquivo *UIMap.Designer.cs* do código o tanto quanto for possível. Essas classes tornarão o trabalho mais fácil e confiável e aumentarão a produtividade.
+- Se estiver codificando diretamente com a API, use as propriedades e os métodos nas classes geradas no arquivo *UIMap.Designer.cs* do código o tanto quanto for possível. Essas classes tornarão o trabalho mais fácil e confiável e aumentarão a produtividade.
 
 Os testes de IU codificados se adaptam automaticamente a várias alterações na interface do usuário. Se, por exemplo, a posição ou cor de um elemento da interface do usuário forem alteradas, na maioria das vezes, o teste de IU codificado ainda encontrará o elemento correto.
 
@@ -58,15 +58,15 @@ Durante uma execução de teste, os controles de interface do usuário são loca
 
 Interfaces do usuário mudam frequentemente durante o desenvolvimento. Aqui estão algumas maneiras de reduzir o efeito dessas alterações:
 
--   Localize o método registrado que faz referência a esse controle e use o **Construtor de Teste de IU Codificado** para registrar novamente as ações desse método. É possível usar o mesmo nome para que o método substitua as ações existentes.
+- Localize o método registrado que faz referência a esse controle e use o **Construtor de Teste de IU Codificado** para registrar novamente as ações desse método. É possível usar o mesmo nome para que o método substitua as ações existentes.
 
--   Se um controle tiver uma asserção inválida:
+- Se um controle tiver uma asserção inválida:
 
-    -   Exclua o método que contém a asserção.
+    - Exclua o método que contém a asserção.
 
-    -   Remova a chamada para esse método do método de teste.
+    - Remova a chamada para esse método do método de teste.
 
-    -   Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
+    - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
 
 Para obter mais informações de como gravar testes de IU codificados, confira [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md).
 

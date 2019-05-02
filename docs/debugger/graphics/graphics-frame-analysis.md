@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c138bcdb14b1f645a68407fac320f2688250c55b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6df598717685d3f198b61e4a750c3133e50f5a2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388721"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.
@@ -111,7 +111,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de gargalos de desempenho de maneira bastante precisa.
 
 > [!NOTE]
->  Diferentes plataformas de hardware oferecem suporte a diferentes contadores; não há um padrão. Os contadores e aquilo que eles representam são determinados exclusivamente para cada fabricante de GPU.
+> Diferentes plataformas de hardware oferecem suporte a diferentes contadores; não há um padrão. Os contadores e aquilo que eles representam são determinados exclusivamente para cada fabricante de GPU.
 
 ### <a name="marker-regions-and-events"></a>Regiões e eventos do marcador
  A Análise de Quadro oferece suporte a marcadores de evento e grupos de evento definidos pelo usuário. Eles são exibidos na tabela de Resumo nas tabelas de Detalhes.
@@ -132,13 +132,13 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 
  A Análise de Quadro limita o número de novas tentativas a 10. Se sua plataforma tiver um gerenciamento de energia ou clock-gating agressivo, isso pode fazer com que a Análise de Quadro falhe e relate um erro por ter excedido o limite de novas tentativas. Se a plataforma permitir, você pode atenuar esse problema redefinindo o gerenciamento de energia e a aceleração da velocidade de clock de sua plataforma para que sejam menos agressivos.
 
-##  <a name="HardwareSupport"></a> Suporte a hardware
+## <a name="HardwareSupport"></a> Suporte a hardware
 
 ### <a name="timestamps-and-occlusion-queries"></a>Consultas de carimbos de data/hora e oclusão
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.
 
 > [!NOTE]
->  Embora carimbos de data e hora sejam suportados em todas as plataformas que dão suporte à Análise de Quadros, a precisão e a consistência dos carimbos varia de uma plataforma para outra.
+> Embora carimbos de data e hora sejam suportados em todas as plataformas que dão suporte à Análise de Quadros, a precisão e a consistência dos carimbos varia de uma plataforma para outra.
 
 ### <a name="gpu-counters"></a>Contadores de GPU
  O suporte a contadores de hardware de GPU dependem do hardware.
@@ -150,7 +150,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   Nenhuma outra plataforma com suporte à Análise de Quadro coleta contadores de hardware de GPU.
 
 > [!NOTE]
->  Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.
+> Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.
 
 ## <a name="unsupported-scenarios"></a>Cenários sem suporte
  Determinadas maneiras de usar a análise de quadro não possui suporte ou simplesmente não valem a pena.
@@ -159,18 +159,18 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  No analisador de gráficos, ao reproduzir um arquivo de log de gráficos que usa um nível mais alto de recurso que dá suporte ao computador de reprodução, ele recorre automaticamente ao WARP. Na Análise de Quadro, ele não recorre explicitamente ao WARP e gera um erro; o WARP é útil para examinar a precisão do aplicativo Direct3D, mas não para examinar seu desempenho.
 
 > [!NOTE]
->  Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. O log de gráficos pode ser executado novamente desde que o arquivo de log não contenha APIs nem utilize níveis de recurso que não têm suporte no computador de reprodução.
+> Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. O log de gráficos pode ser executado novamente desde que o arquivo de log não contenha APIs nem utilize níveis de recurso que não têm suporte no computador de reprodução.
 
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versão anterior
  Se seu aplicativo chama a API do Direct3D 10, a análise de quadro não reconhece ou criar o perfil mesmo que ela seja reconhecida e usadas por outras ferramentas do analisador de gráficos.
 
 > [!NOTE]
->  Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso.
+> Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso.
 
 ### <a name="warp"></a>WARP
  A análise de quadro deve ser usada para analisar e aprimorar o desempenho de renderização em hardwares reais. Executar análise de quadro em dispositivos WARP não será impedida, mas ela geralmente não é vantajoso porque WARP em execução em uma CPU de alto nível é mais lento do que até mesmo as GPUs modernas com menor capacidade e desempenho de WARP pode variar bastante dependendo da CPU específica ele está em execução.
 
-##  <a name="Variants"></a> Variantes
+## <a name="Variants"></a> Variantes
  Cada alteração que a Análise de Quadros realiza na maneira em que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:
 
 |Variante|Descrição|
@@ -189,4 +189,4 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 |**Dimensões de textura de um quarto**|Reduz as dimensões de textura em todas as texturas que não são destinos de renderização a um quarto de seu tamanho original em cada dimensão. Por exemplo, uma textura de 256 x 128 é reduzida para 64 x 32 texels.<br /><br /> Para obter mais informações, consulte [variantes de dimensões de textura de metade/quarto](half-quarter-texture-dimensions-variant.md).|
 |**Compactação de textura BC**|Habilita a compactação de bloco em todas as texturas que possuem uma variante de formato de pixel de B8G8R8X8, B8G8R8A8 ou R8G8B8A8. As variantes de formato B8G8R8X8 são compactados com BC1; as variantes de formato B8G8R8A8 e R8G8B8A8 são compactadas com BC3.<br /><br /> Para obter mais informações, consulte [variante de compressão de textura BC](bc-texture-compression-variant.md).|
 
- O resultado para a maioria das variantes é descrito como: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é reduzida por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é reduzida pelo processamento de vértice.
+ O resultado da maioria das variantes é prescritivo: "Reduzir o tamanho da textura pela metade é 25% mais rápido" ou "Ativar MSAA de 2x é apenas 2% mais lento". Outras variantes podem exigir mais interpretação; por exemplo, se a variante que alterar as dimensões do visor para 1 x 1 mostrar um ganho de desempenho grande, isso pode indicar que a renderização é reduzida por uma taxa de enchimento baixa; alternativamente, se não houver uma alteração significativa no desempenho, isso pode indicar que a renderização é reduzida pelo processamento de vértice.

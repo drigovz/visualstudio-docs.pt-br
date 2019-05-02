@@ -1,27 +1,22 @@
 ---
 title: Sinalizadores de linha de comando do compilador VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, compiling
 - command-table file compilation (VSCT files)
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 628c9ef34fc23776672a4252886c091a38f63b4b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51734961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440824"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -57,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.  
+> Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.  
   
  Sinalizadores aceitáveis e seus significados são da seguinte maneira.  
   
@@ -66,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos os símbolos definidos adicionais.|  
 |-I|Indicam que caminhos que devem ser usados ao resolver referências de arquivo de inclusão adicionais.|  
 |-L|Especifique o <xref:System.Globalization.CultureInfo> nome de cultura, por exemplo "en-US".|  
-|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = cabeçalho de C++, N = namespace. O namespace é necessário para c#.|  
+|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = C++ cabeçalho, N = namespace. O namespace é necessário para c#.|  
 |-v|Saída detalhada.|  
   
  -L switch instrui o compilador a selecionar um grupo de cadeias de caracteres para produzir o arquivo CTO já binário correspondente para o determinado <xref:System.Globalization.CultureInfo> nome da cultura. O nome da cultura especificada com o atributo de idioma de um ou mais [cadeias de caracteres de elemento](../../extensibility/strings-element.md) no arquivo. VSCT. Se um elemento de cadeias de caracteres não tem nenhum atributo de idioma, ela é herdada de recipiente [elemento CommandTable](../../extensibility/commandtable-element.md).  
@@ -85,4 +80,3 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
  [Tabela de comando do Visual Studio (. Arquivos de VSCT)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)   
  [Referência de esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md)   
  [Como os VSPackages adicionam elementos da interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-

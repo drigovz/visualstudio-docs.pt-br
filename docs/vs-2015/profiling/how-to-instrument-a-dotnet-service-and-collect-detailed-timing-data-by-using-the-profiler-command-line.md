@@ -1,5 +1,5 @@
 ---
-title: Como instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil | Microsoft Docs
+title: 'Como: Instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,24 +9,24 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b438cac78aa863eab4f04e250ed768d54a2fbc4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432695"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um serviço do .NET e os dados de coleta de tempo detalhados usando a linha de comando do Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as ferramentas da linha de comando das Ferramentas de criação de perfil do [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] para instrumentar um serviço do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e coletar dados detalhados de tempo.  
 
 > [!NOTE]
->  Você não pode analisar um serviço com o método de instrumentação se o serviço não puder ser reiniciado após o início do computador, um serviço que inicia somente quando o sistema operacional for iniciado.  
+> Você não pode analisar um serviço com o método de instrumentação se o serviço não puder ser reiniciado após o início do computador, um serviço que inicia somente quando o sistema operacional for iniciado.  
 >   
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de prompt de comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 >   
->  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Consulte [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
+> Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Consulte [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md).  
 
  Para coletar dados de tempo detalhados de um serviço de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] usando o método de instrumentação, use a ferramenta [VSInstr.exe](../profiling/vsinstr.md) para gerar uma versão instrumentada do componente. Em seguida, substitua a versão do serviço não instrumentada pela versão instrumentada, certificando-se de que o serviço esteja configurado para iniciar manualmente. Depois, use a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar as variáveis de ambiente de criação de perfil global e reinicie o computador host. Em seguida, inicie o criador de perfil.  
 
@@ -63,7 +63,7 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
      É possível usar qualquer uma das opções a seguir com a opção **/start:trace**.  
 
    > [!NOTE]
-   >  Normalmente, as opções **/user** e **/crosssession** são necessárias para serviços de criação de perfil.  
+   > Normalmente, as opções **/user** e **/crosssession** são necessárias para serviços de criação de perfil.  
 
    |                                 Opção                                  |                                                                                                                                            Descrição                                                                                                                                             |
    |-------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -76,7 +76,6 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms.                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).                                                                              |
 
-
 8. Inicie o serviço do Gerenciador de Controle de Serviço Windows.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
@@ -84,7 +83,7 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -99,19 +98,19 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Interrompa o serviço do Gerenciador de Controle de Serviço.  
+1. Interrompa o serviço do Gerenciador de Controle de Serviço.  
 
-2.  Desligue o criador de perfil. Tipo:  
+2. Desligue o criador de perfil. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  Quando você tiver concluído a criação de todos os perfis, desmarque as variáveis de ambiente de criação de perfil. Tipo:  
+3. Quando você tiver concluído a criação de todos os perfis, desmarque as variáveis de ambiente de criação de perfil. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Substitua o módulo instrumentado pelo original. Se necessário, reconfigure o Tipo de inicialização do serviço.  
+4. Substitua o módulo instrumentado pelo original. Se necessário, reconfigure o Tipo de inicialização do serviço.  
 
-5.  Reinicie o computador.  
+5. Reinicie o computador.  
 
 ## <a name="see-also"></a>Consulte também  
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)   

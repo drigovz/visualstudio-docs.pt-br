@@ -9,14 +9,14 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6340b30f393fc2690a76febf335883b0ebf6f6ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d720779019ab4106fa6c4b727e9994f168a2d8f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102283"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um aplicativo Web ASP.NET para coletar dados de simultaneidade usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para anexar o Criador de perfil a um aplicativo ASP.NET e coletar dados de simultaneidade de thread e processo.  
@@ -47,21 +47,20 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O valor padrão é 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).       |
 
-
 2. Inicie o aplicativo ASP.NET de maneira normal.  
 
 3. Anexe o criador de perfil ao processo de trabalho do ASP.NET digitando o seguinte comando:**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]  
 
-   -   `PID` especifica a ID ou o nome do processo de trabalho do ASP.NET. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
+   - `PID` especifica a ID ou o nome do processo de trabalho do ASP.NET. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Esse parâmetro é opcional.  
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Esse parâmetro é opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Enquanto o aplicativo estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de VSPerfCmd.exe. Controlando a coleta de dados, é possível coletar dados de uma parte específica da execução do programa, como o início ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções VSPerfCmd na tabela a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções VSPerfCmd na tabela a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -74,11 +73,11 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Desanexe o criador de perfil do aplicativo de destino fechando-o ou digitando o seguinte no prompt de comando:  
+1. Desanexe o criador de perfil do aplicativo de destino fechando-o ou digitando o seguinte no prompt de comando:  
 
      **VSPerfCmd /detach**  
 
-2.  Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:  
+2. Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)  
 

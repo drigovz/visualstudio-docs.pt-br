@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 581ad210e5e8b11fec35e2171f4e8c4b5553baa5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929670"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>Guia Estilos, Caixa de diálogo Propriedades da Janela
 Use o **estilos** guia para mostrar os estilos aplicados a janela selecionada. Para exibir o [janela caixa de diálogo de propriedades](../debugger/window-properties-dialog-box.md), mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.

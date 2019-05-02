@@ -9,22 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 15b1020f35b767a05f977baa220a6ce251768f05
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 15c8fad4971e81ae91aebc8ad56be13ff0e33754
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439550"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo Web ASP.NET e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
->  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 >
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
  Para coletar dados de desempenho de um aplicativo Web ASP .NET, as variáveis de ambiente apropriadas devem ser inicializadas e o computador que hospeda o aplicativo Web ASP .NET deve ser reiniciado para configurar o servidor Web para criação de perfil.
 
@@ -42,9 +42,9 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]
 
-   -   **/globalsampleon** habilita a amostragem.
+   - **/globalsampleon** habilita a amostragem.
 
-   -   **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.
+   - **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.
 
 3. Reinicie o computador.
 
@@ -57,7 +57,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
      É possível usar qualquer uma das opções a seguir com a opção **/start:sample**.
 
    > [!NOTE]
-   >  Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.
+   > Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.
 
    | Opção | Descrição |
    | - | - |
@@ -67,14 +67,13 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl). |
 
-
 5. Inicie o aplicativo Web ASP .NET normalmente.
 
 6. Anexe o criador de perfil ao processo de trabalho do ASP.NET. Digite:**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]
 
-   -   `PID` especifica a ID de processo do processo de trabalho do ASP.NET; `ProcName` especifica o nome do processo de trabalho. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.
+   - `PID` especifica a ID de processo do processo de trabalho do ASP.NET; `ProcName` especifica o nome do processo de trabalho. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.
 
-   -   Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 vezes por segundo em um processador 1GH. Você pode especificar uma das opções **VSPerfCmd** a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.
+   - Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 vezes por segundo em um processador 1GH. Você pode especificar uma das opções **VSPerfCmd** a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.
 
    |Evento de amostra|Descrição|
    |------------------|-----------------|
@@ -84,14 +83,14 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica a versão do CLR (Common Language Runtime) a ser analisada quando mais de uma versão de tempo de execução for carregada em um aplicativo.|
 
-   -   **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
+   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
 
 ## <a name="control-data-collection"></a>Controlar a coleta de dados
  Quando o aplicativo estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de *VSPerfCmd.exe*. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|

@@ -1,14 +1,9 @@
 ---
-title: 'CA1900: Os campos de tipo de valor devem ser móveis | Microsoft Docs'
-ms.custom: ''
+title: 'CA1900: Campos de tipo de valor devem ser portáteis | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1900
 - ValueTypeFieldsShouldBePortable
@@ -20,17 +15,17 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d8794fc1e30e2afb70c6816b6d10feb8d69a5d86
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 97a83bf4ba71d0adc71fdb96d4e1c865358c08e2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49236295"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665738"
 ---
-# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: os campos de tipo de valor devem ser móveis
+# <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Campos de tipo de valor devem ser portáteis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1900: os campos de tipo de valor devem ser portáteis](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1900: Campos de tipo de valor devem ser portáteis](https://docs.microsoft.com/visualstudio/code-quality/ca1900-value-type-fields-should-be-portable).  
   
 |||  
 |-|-|  
@@ -50,4 +45,3 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1900
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  Esse aviso deve ser suprimido somente se ele ocorrer no erro.
-

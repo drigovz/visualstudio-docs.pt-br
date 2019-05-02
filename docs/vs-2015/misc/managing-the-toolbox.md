@@ -1,40 +1,35 @@
 ---
 title: Gerenciando a caixa de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838667"
 ---
 # <a name="managing-the-toolbox"></a>Gerenciando a caixa de ferramentas
 O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como um editor ou designer, para gerenciar a associação e a aparência do **caixa de ferramentas**.  
   
- Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: controle de caixa de ferramentas](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: A caixa de ferramentas de controle](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Seleção automática de caixa de ferramentas da guia  
  Um determinado **caixa de ferramentas** guia ou categoria pode ser automaticamente feita Active Directory com base em qual editor ou designer está ativo no momento. Por exemplo, se um designer de formulários estiver ativado, você pode querer a **todos os Windows Forms** guia selecionada.  
   
  Esse suporte é limitado a editores e designers que exigem:  
   
-1.  A implementação de um objeto de fábrica para fornecer instâncias do editor ou designer. Para obter mais informações sobre como implementar um designer ou editor de objeto de fábrica, consulte [fábricas](../extensibility/editor-factories.md).  
+1. A implementação de um objeto de fábrica para fornecer instâncias do editor ou designer. Para obter mais informações sobre como implementar um designer ou editor de objeto de fábrica, consulte [fábricas](../extensibility/editor-factories.md).  
   
-2.  Registro do guia da caixa de ferramentas é ativado automaticamente se o editor ou designer estiver presente.  
+2. Registro do guia da caixa de ferramentas é ativado automaticamente se o editor ou designer estiver presente.  
   
 ## <a name="controlling-the-toolbox"></a>Controlando a caixa de ferramentas  
  Complementando o suporte de automação, o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece as seguintes interfaces para fornecer os VSPackages maior controle sobre como o **caixa de ferramentas** é gerenciado.  

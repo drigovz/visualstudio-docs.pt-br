@@ -1,14 +1,9 @@
 ---
-title: 'CA1806: Não ignorar resultados do método | Microsoft Docs'
-ms.custom: ''
+title: 'CA1806: Não ignore resultados do método | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1806
 - DoNotIgnoreMethodResults
@@ -20,14 +15,14 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9e6b7bdd99500f0be29c8101ef9993b565914300
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 117e26fca367c8cf00604bebe01a00f4df58a0ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437391"
 ---
-# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: não ignore resultados do método
+# <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Não ignorar resultados do método
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||  
@@ -57,7 +52,7 @@ ms.locfileid: "49830581"
   
  Se o método um chama o método B, mas não usa a nova instância de cadeia de caracteres que o método B retorna. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.  
   
- -ou-  
+ - ou -  
   
  Se o método um chama o método B, mas não usa o HRESULT ou código de erro que o método retorna. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passá-lo como um argumento para outro método.  
   
@@ -78,7 +73,7 @@ ms.locfileid: "49830581"
  O exemplo a seguir mostra um método que não usa um objeto que ele cria.  
   
 > [!NOTE]
->  Essa violação não pode ser reproduzida no Visual Basic.  
+> Essa violação não pode ser reproduzida no Visual Basic.  
   
  [!code-cpp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/cpp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cpp/FxCop.Usage.DoNotIgnoreMethodResults3.cpp#1)]
  [!code-csharp[FxCop.Usage.DoNotIgnoreMethodResults3#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.DoNotIgnoreMethodResults3/cs/FxCop.Usage.DoNotIgnoreMethodResults3.cs#1)]

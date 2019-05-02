@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1ab5e88db9f539dd79482044ab3834b27a6b1747
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794320"
 ---
 # <a name="per-thread-summary-report"></a>Relatório de resumo por thread
 Este gráfico de barras mostra a proporção de tempo que cada thread não oculta gasta em cada categoria de atividade durante o intervalo de tempo visível no momento. “Execução” significa que o thread está em execução; todas as outras categorias significam que o thread está aguardando algo.

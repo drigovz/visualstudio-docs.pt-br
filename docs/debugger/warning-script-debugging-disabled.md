@@ -1,5 +1,5 @@
 ---
-title: 'Aviso: Depuração de Script desabilitada | Microsoft Docs'
+title: 'Aviso: Depuração de script desabilitada | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,33 +15,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2543ad00b2065f7659a89e165c2d4df990403667
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 50fe457e2b66a4c1ddafc9fc24658f58f6f753d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901017"
 ---
-# <a name="warning-script-debugging-disabled"></a>Aviso: depuração de script desabilitada
+# <a name="warning-script-debugging-disabled"></a>Aviso: Depuração de script desabilitada
 A depuração de scripts está atualmente desabilitada no Internet Explorer
 
  Esse aviso ocorre quando você tenta depurar o script sem habilitar a depuração de scripts no Internet Explorer. Por razões de segurança, o Internet Explorer desabilita a depuração de scripts por padrão.
 
 ### <a name="to-enable-script-debugging-in-internet-explorer"></a>Para habilitar a depuração de scripts no Internet Explorer
 
-1.  No menu do Internet Explorer **Ferramentas**, escolha **Opções da Internet**.
+1. No menu do Internet Explorer **Ferramentas**, escolha **Opções da Internet**.
 
-2.  Na caixa de diálogo **Opções da Internet** , clique na guia **Avançado** .
+2. Na caixa de diálogo **Opções da Internet** , clique na guia **Avançado** .
 
-3.  Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.
+3. Na guia **Avançado**, examine a caixa **Configurações**, categoria **Navegação**.
 
-4.  Limpe **Desabilitar depuração de scripts (Internet Explorer)**.
+4. Limpe **Desabilitar depuração de scripts (Internet Explorer)**.
 
-5.  Clique em **OK**.
+5. Clique em **OK**.
 
-6.  Encerre e reinicie o Internet Explorer.
+6. Encerre e reinicie o Internet Explorer.
 
      As novas configurações serão aplicadas.
 
 ## <a name="see-also"></a>Consulte também
-- [Como anexar ao script](../debugger/how-to-attach-to-script.md)
+- [Como: Anexar ao script](../debugger/how-to-attach-to-script.md)

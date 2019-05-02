@@ -2,7 +2,6 @@
 title: IDispError::GetDescription | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fa0c837be9a98829551b9c7820faf154779479e4
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 5505113ee650c6618be5a95bc77244daf90cfcb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446953"
 ---
 # <a name="idisperrorgetdescription"></a>IDispError::GetDescription
 Retorna uma descrição textual do erro.  
@@ -51,7 +50,7 @@ HRESULT GetDescription(
  O texto é retornado no idioma especificado pelo identificador de localidade (LCID) que foi passado para `IDispatchEx::InvokeEx` para o método que encontrou o erro.  
   
 > [!NOTE]
->  Este método não está implementado.  
+> Este método não está implementado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDispError](../../winscript/reference/idisperror-interface.md)   

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961882"
 ---
 # <a name="how-to-programmatically-send-email"></a>Como: Enviar email
   Este exemplo envia uma mensagem de email para contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.
@@ -33,7 +33,7 @@ ms.locfileid: "56645999"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
--   Contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.
+- Contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.
 
 ## <a name="robust-programming"></a>Programação robusta
  Não remova o código de filtro que procura o nome de domínio **exemplo.com**. Sua solução enviará mensagens de email para todos os seus contatos, se você remover o filtro.

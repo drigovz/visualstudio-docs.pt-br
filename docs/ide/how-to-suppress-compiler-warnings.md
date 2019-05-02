@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e9f995c8fc1107da7bc90b230eddc265e6082b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2d3f207190fed7c01dd851d809e12e6032549ff3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913126"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549281"
 ---
 # <a name="how-to-suppress-compiler-warnings"></a>Como: Suprimir avisos do compilador
 
 Você pode organizar um log de build filtrando um ou mais tipos de avisos do compilador. Por exemplo, talvez você queira analisar apenas parte da saída gerada quando define o nível de detalhes de log de build como **Normal**, **Detalhado** ou **Diagnóstico**. Para obter mais informações sobre os detalhes, confira [Como: Exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).
 
-## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir avisos específicos para o Visual C# ou F# #
+## <a name="suppress-specific-warnings-for-visual-c-or-f"></a>Suprimir avisos específicos para o Visual C# ou F\#
 
 Use a página de propriedades **Build** para suprimir avisos específicos para projetos em C# e F#.
 
@@ -63,7 +63,7 @@ Este exemplo mostra como editar o arquivo *.vbproj* para suprimir avisos especí
 
 1. Na barra de menus, escolha **Projeto** > **Descarregar Projeto**.
 
-1. No **Gerenciador de Soluções**, clique com o botão direito do mouse ou abra o menu de atalho do projeto e escolha **Editar <ProjectName>.vbproj**.
+1. No **Gerenciador de Soluções**, abra o menu de atalho ou o menu de clique com o botão direito do mouse do projeto e escolha **Editar \<NomeDoProjeto>.vbproj**.
 
     O arquivo XML do projeto é aberto no editor de códigos.
 

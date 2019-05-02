@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: a38909eb0917b3ad5b02d5e953c17c950c7c819e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539147"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Visão geral da análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,6 +65,6 @@ A análise de código gerenciado analisa os assemblies gerenciados e relata info
 ## <a name="team-build-integration"></a>Integração ao Team Build  
  Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise como parte do processo de build. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
-## <a name="see-also"></a>Veja também  
+## <a name="see-also"></a>Consulte também  
  [Usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
  [Como: habilitar e desabilitar a análise de código automática](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

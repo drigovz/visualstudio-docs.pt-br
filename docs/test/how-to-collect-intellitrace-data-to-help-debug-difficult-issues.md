@@ -11,12 +11,12 @@ ms.assetid: 02b6716f-569e-4961-938a-e790a0c74b5c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cac9e52c74b9dc830fa801005a22f0123ee2e41
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce5b03c7973a2b6dd9766f200528ae71cf6e4cfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979309"
 ---
 # <a name="how-to-collect-intellitrace-data-to-help-debug-difficult-issues"></a>Como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis
 
@@ -51,11 +51,11 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
 
 ### <a name="to-configure-the-data-to-collect-with-the-intellitrace-diagnostic-data-adapter"></a>Para configurar os dados a serem coletados com o adaptador de dados de diagnóstico do IntelliTrace
 
-1.  Selecione a função a ser usada para coletar dados do IntelliTrace.
+1. Selecione a função a ser usada para coletar dados do IntelliTrace.
 
-2.  Selecione **IntelliTrace**.
+2. Selecione **IntelliTrace**.
 
-3.  Se estiver adicionando o IntelliTrace para uma função de cliente da Web ou para um aplicativo Web ASP.NET, você também deverá selecionar **Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste**.
+3. Se estiver adicionando o IntelliTrace para uma função de cliente da Web ou para um aplicativo Web ASP.NET, você também deverá selecionar **Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste**.
 
      Esse proxy permite que você colete informações sobre as chamadas http de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.
 
@@ -64,22 +64,22 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     >
     > **runas /user:domain\name /profile cmd.exe**
 
-4.  Escolha **Configurar** para o **IntelliTrace** para modificar as configurações padrão do IntelliTrace.
+4. Escolha **Configurar** para o **IntelliTrace** para modificar as configurações padrão do IntelliTrace.
 
      A caixa de diálogo para configurar os dados que serão coletados é exibida.
 
     > [!WARNING]
     > Se você habilitar a coleta de dados do IntelliTrace, a coleta de dados de cobertura de código não funcionará.
 
-5.  Escolha a guia **Geral**. Selecione **Apenas eventos do IntelliTrace** para registrar eventos de diagnóstico significativos que tenham impacto mínimo sobre o desempenho durante o teste.
+5. Escolha a guia **Geral**. Selecione **Apenas eventos do IntelliTrace** para registrar eventos de diagnóstico significativos que tenham impacto mínimo sobre o desempenho durante o teste.
 
      - ou -
 
      Selecione **Eventos do IntelliTrace e informações de chamada** para registrar eventos de diagnóstico e rastreamento no nível de método que mostram informações de chamada. Esse nível de rastreamento pode afetar o desempenho quando você executa os testes.
 
-6.  Para coletar dados do aplicativo ASP.NET em execução nos Serviços de Informações da Internet, selecione **Coletar dados de aplicativos ASP.NET em execução nos Serviços de Informações da Internet**. Configure o agente de teste na função servidor Web. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
+6. Para coletar dados do aplicativo ASP.NET em execução nos Serviços de Informações da Internet, selecione **Coletar dados de aplicativos ASP.NET em execução nos Serviços de Informações da Internet**. Configure o agente de teste na função servidor Web. Consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).
 
-7.  Escolha a guia **Módulos**. Selecione **Coletar dados de todos os módulos, exceto os seguintes** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
+7. Escolha a guia **Módulos**. Selecione **Coletar dados de todos os módulos, exceto os seguintes** e use **Adicionar** para adicionar à lista de módulos e **Remover** para remover um módulo. Essa opção permite incluir todos os módulos em execução no sistema, exceto os módulos que você especifica.
 
      - ou -
 
@@ -88,7 +88,7 @@ Antes de executar as etapas nesse procedimento, você deverá abrir as configura
     > [!NOTE]
     > Se possível, selecione os processos específicos que deseja monitorar. Isso é recomendado para ter o desempenho ideal.
 
-8.  Escolha a guia **Processos**. Selecione **Coletar dados de todos os processos, exceto os seguintes** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
+8. Escolha a guia **Processos**. Selecione **Coletar dados de todos os processos, exceto os seguintes** e use **Adicionar** para adicionar à lista de processos e **Remover** para remover um processo. Essa opção permite incluir todos os processos em execução no sistema, exceto os processos que você especifica.
 
      - ou -
 

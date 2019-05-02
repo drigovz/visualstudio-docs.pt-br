@@ -1,27 +1,22 @@
 ---
 title: Interfaces (VSPackage de controle do código-fonte) e serviços relacionados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8f308c0d8669bc8950578ffc615ebe64b91a4ea7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764322"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118104"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,11 +32,11 @@ Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackag
   
  Interfaces são:  
   
--   Obrigatório: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.  
+- Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.  
   
--   Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.  
+- Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.  
   
--   Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.  
+- Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.  
   
 |Interface|Finalidade|Implementado por|Implementar?|  
 |---------------|-------------|--------------------|----------------|  
@@ -70,4 +65,3 @@ Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackag
   
 ## <a name="see-also"></a>Consulte também  
  [Elementos de design](../../extensibility/internals/source-control-vspackage-design-elements.md)
-

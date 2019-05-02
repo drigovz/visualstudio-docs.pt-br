@@ -1,38 +1,32 @@
 ---
 title: Diversos, XML, Editor de texto, opções de caixa de diálogo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: fd3fff31-cddc-422d-a2f0-a5a1ef492afd
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: a58ef682ec269ebf83cb72bfbd7801da1fc17c64
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: edf638420ac41d6ad6f7ebf5e20ab5d78d1c7b3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49194489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435367"
 ---
 # <a name="miscellaneous-xml-text-editor-options-dialog-box"></a>Caixa de diálogo Diversos, XML, Editor de Texto, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Esta caixa de diálogo permite que você altere a automático e as configurações de esquema para o editor XML. Você pode acessar o **opções** caixa de diálogo do **ferramentas** menu.  
   
 > [!NOTE]
->  Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.  
+> Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **diversos** opção o **opções** caixa de diálogo.  
   
 ## <a name="auto-insert"></a>AutoInserção  
- **Fechar marcas**  
- Se a configuração de autocompletar é verificada, o editor adiciona automaticamente uma marca de fim quando você digita um sinal de maior (>) para fechar uma tag de início, se a marca não é fechada. Este é o comportamento padrão.  
+ **Marcas de fechamento**  
+ Se a configuração de AutoCompletar é verificada, o editor adiciona automaticamente uma marca de fim quando você digita um colchete angular direito (>) para fechar uma tag de início, se a marca não já está fechada. Este é o comportamento padrão.  
   
  A conclusão de um elemento vazio não depende da configuração de autocompletar. Você sempre pode autocomplete um elemento vazio digitando uma barra invertida (/).  
   
@@ -46,7 +40,7 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
   
  Selecionado por padrão.  
   
- **Outra remarcação (comentários, CDATA)**  
+ **Outra marcação (Comentários, CDATA)**  
  Comentários, CDATA, DOCTYPE, as instruções de processamento, e a outra marcação automática são concluídos.  
   
  Selecionado por padrão.  
@@ -70,6 +64,3 @@ Esta caixa de diálogo permite que você altere a automático e as configuraçõ
 ## <a name="see-also"></a>Consulte também  
  [Propriedades de documento XML, janela Propriedades](../xml-tools/xml-document-properties-properties-window.md)   
  [Componentes do editor de XML](../xml-tools/xml-editor-components.md)
-
-
-

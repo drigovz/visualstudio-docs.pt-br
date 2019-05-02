@@ -1,14 +1,9 @@
 ---
 title: Criar um sistema de projeto básico, parte 2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 98cdcf426f2aeeb794e9e33754108c792f9725e5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4709cc5f011dd55445583c46dd96894b979647c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435546"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Criando um sistema de projeto básico, Parte 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,18 +28,18 @@ A primeiro passo a passo desta série [criando um sistema de projeto básico, pa
   
  Este passo a passo ensina como realizar essas tarefas:  
   
--   Crie um modelo do Visual Studio.  
+- Crie um modelo do Visual Studio.  
   
--   Implante um modelo do Visual Studio.  
+- Implante um modelo do Visual Studio.  
   
--   Criar um nó do filho do tipo de projeto na **novo projeto** caixa de diálogo.  
+- Criar um nó do filho do tipo de projeto na **novo projeto** caixa de diálogo.  
   
--   Habilite substituição de parâmetro no modelo do Visual Studio.  
+- Habilite substituição de parâmetro no modelo do Visual Studio.  
   
--   Crie uma página de propriedades do projeto.  
+- Crie uma página de propriedades do projeto.  
   
 > [!NOTE]
->  As etapas neste passo a passo se baseiam em um projeto c#. No entanto, exceto para obter informações específicas, como extensões de nome de arquivo e código, você pode usar as mesmas etapas para um projeto do Visual Basic.  
+> As etapas neste passo a passo se baseiam em um projeto c#. No entanto, exceto para obter informações específicas, como extensões de nome de arquivo e código, você pode usar as mesmas etapas para um projeto do Visual Basic.  
   
 ## <a name="creating-a-visual-studio-template"></a>Criando um modelo do Visual Studio  
  [Criando um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra como criar um modelo de projeto básico e adicioná-lo para o sistema de projeto. Ele também mostra como registrar esse modelo com o Visual Studio usando o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que grava o caminho completo da pasta \Templates\Projects\SimpleProject\ no registro do sistema.  
@@ -105,7 +100,7 @@ A primeiro passo a passo desta série [criando um sistema de projeto básico, pa
 - O \<ProjectType > elemento nomeia o tipo de projeto na **novo projeto** caixa de diálogo. Esse nome substitui o parâmetro de nome de projeto do atributo ProvideProjectFactory.  
   
   > [!NOTE]
-  >  O \<ProjectType > elemento deve corresponder a `LanguageVsTemplate` argumento do `ProvideProjectFactory` atributo no arquivo SimpleProjectPackage.cs.  
+  > O \<ProjectType > elemento deve corresponder a `LanguageVsTemplate` argumento do `ProvideProjectFactory` atributo no arquivo SimpleProjectPackage.cs.  
   
   O \<TemplateContent > seção descreve esses arquivos que são gerados quando um novo projeto é criado:  
   
@@ -120,14 +115,14 @@ A primeiro passo a passo desta série [criando um sistema de projeto básico, pa
   Para obter mais informações sobre os elementos no esquema de modelo do Visual Studio, consulte o [referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
 > [!NOTE]
->  Se um projeto tiver mais de um modelo do Visual Studio, cada modelo está em uma pasta separada. Todos os arquivos nessa pasta devem ter o **ação de compilação** definido como **ZipProject**.  
+> Se um projeto tiver mais de um modelo do Visual Studio, cada modelo está em uma pasta separada. Todos os arquivos nessa pasta devem ter o **ação de compilação** definido como **ZipProject**.  
   
 ## <a name="adding-a-minimal-vsct-file"></a>Adicionando um arquivo. VSCT mínimo  
  Visual Studio deve ser executado no modo de instalação para reconhecer um modelo do Visual Studio novo ou modificado. Modo de instalação requer um arquivo. VSCT esteja presente. Portanto, você deve adicionar um arquivo. VSCT mínimo ao projeto.  
   
-1.  Adicione um arquivo XML denominado SimpleProject.vsct ao projeto SimpleProject.  
+1. Adicione um arquivo XML denominado SimpleProject.vsct ao projeto SimpleProject.  
   
-2.  Substitua o conteúdo do arquivo SimpleProject.vsct com o código a seguir.  
+2. Substitua o conteúdo do arquivo SimpleProject.vsct com o código a seguir.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -136,25 +131,25 @@ A primeiro passo a passo desta série [criando um sistema de projeto básico, pa
     </CommandTable>  
     ```  
   
-3.  Defina as **ação de compilação** desse arquivo como **VSCTCompile**. Você pode fazer isso apenas no arquivo. csproj, não na **propriedades** janela. Certifique-se de que o **ação de compilação** desse arquivo é definido como **None** neste momento.  
+3. Defina as **ação de compilação** desse arquivo como **VSCTCompile**. Você pode fazer isso apenas no arquivo. csproj, não na **propriedades** janela. Certifique-se de que o **ação de compilação** desse arquivo é definido como **None** neste momento.  
   
-    1.  Clique com botão direito no nó SimpleProject e, em seguida, clique em **SimpleProject.csproj editar**.  
+    1. Clique com botão direito no nó SimpleProject e, em seguida, clique em **SimpleProject.csproj editar**.  
   
-    2.  No arquivo. csproj, localize o item de SimpleProject.vsct.  
+    2. No arquivo. csproj, localize o item de SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Altere a ação de compilação para **VSCTCompile**.  
+    3. Altere a ação de compilação para **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  o arquivo de projeto e feche o editor.  
+    4. o arquivo de projeto e feche o editor.  
   
-    5.  Salve o nó SimpleProject e, em seguida, nos **Gerenciador de soluções** clique em **recarregar projeto**.  
+    5. Salve o nó SimpleProject e, em seguida, nos **Gerenciador de soluções** clique em **recarregar projeto**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Examinando as etapas de criação de modelo do Visual Studio  
  O sistema de build do projeto de VSPackage geralmente executa o Visual Studio no modo de instalação quando o arquivo. vstemplate é alterado ou o projeto que contém o arquivo. vstemplate é reconstruído. Você pode acompanhar, definindo o nível de detalhamento do MSBuild ao Normal ou superior.  
@@ -191,9 +186,9 @@ ZipProjects:
   
 1. Redefina a instância experimental do SDK do Visual Studio.  
   
-    Na [!INCLUDE[win7](../includes/win7-md.md)]: no menu Iniciar, localize o **Microsoft Visual Studio para o Microsoft Visual Studio SDK/Tools** pasta e, em seguida, selecione **redefinir a instância Experimental do Visual Studio do Microsoft**.  
+    Em [!INCLUDE[win7](../includes/win7-md.md)]: No menu Iniciar, localize o **Microsoft Visual Studio para o Microsoft Visual Studio SDK/Tools** pasta e, em seguida, selecione **redefinir a instância Experimental do Visual Studio do Microsoft**.  
   
-    Em versões posteriores do Windows: sobre a tela Iniciar, digite **redefinir o Microsoft Visual Studio \<versão > instância Experimental**.  
+    Em versões posteriores do Windows: Na tela inicial, digite **redefinir o Microsoft Visual Studio \<versão > instância Experimental**.  
   
 2. É exibida uma janela de prompt de comando. Quando você vir as palavras `Press any key to continue`, clique em ENTER. Depois de fecha a janela, abra o Visual Studio.  
   
@@ -214,11 +209,11 @@ ZipProjects:
   
  Esta seção mostra como criar um nó filho do Console para o tipo de projeto SimpleProject.  
   
-1.  Renomeie a pasta de \Templates\Projects\SimpleProject\ para \Templates\Projects\ConsoleApp\\.  
+1. Renomeie a pasta de \Templates\Projects\SimpleProject\ para \Templates\Projects\ConsoleApp\\.  
   
-2.  No **propriedades** janela, selecione todos os cinco arquivos na pasta \Templates\Projects\ConsoleApp\ e verifique se o **Build Action** está definido como **ZipProject**.  
+2. No **propriedades** janela, selecione todos os cinco arquivos na pasta \Templates\Projects\ConsoleApp\ e verifique se o **Build Action** está definido como **ZipProject**.  
   
-3.  No arquivo SimpleProject.vstemplate, adicione a seguinte linha no final o \<TemplateData > seção logo antes da marca de fechamento.  
+3. No arquivo SimpleProject.vstemplate, adicione a seguinte linha no final o \<TemplateData > seção logo antes da marca de fechamento.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -226,11 +221,11 @@ ZipProjects:
   
      Isso faz com que o modelo de aplicativo de Console deve ser exibido no nó filho Console e no nó pai SimpleProject, que é um nível acima do nó filho.  
   
-4.  Salve o arquivo SimpleProject.vstemplate.  
+4. Salve o arquivo SimpleProject.vstemplate.  
   
-5.  No arquivo. csproj, adicione \<OutputSubPath > para cada um dos elementos ZipProject. Descarregue o projeto, como antes e edite o arquivo de projeto.  
+5. No arquivo. csproj, adicione \<OutputSubPath > para cada um dos elementos ZipProject. Descarregue o projeto, como antes e edite o arquivo de projeto.  
   
-6.  Localize o \<ZipProject > elementos. A cada \<ZipProject > elemento, adicionar um \<OutputSubPath > elemento e dê a ela o valor de Console. O ZipProject  
+6. Localize o \<ZipProject > elementos. A cada \<ZipProject > elemento, adicionar um \<OutputSubPath > elemento e dê a ela o valor de Console. O ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -250,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Adicione isso \<PropertyGroup > ao arquivo de projeto:  
+7. Adicione isso \<PropertyGroup > ao arquivo de projeto:  
   
     ```  
     <PropertyGroup>  
@@ -258,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Salve o arquivo de projeto e recarregar o projeto.  
+8. Salve o arquivo de projeto e recarregar o projeto.  
   
 ## <a name="testing-the-project-type-child-node"></a>Testando o nó de filho de tipo de projeto  
  Testar o arquivo de projeto modificado para ver se o **Console** nó filho é exibido na **novo projeto** caixa de diálogo.  
@@ -286,19 +281,19 @@ ZipProjects:
   
 - $ $safeprojectname é o nome fornecido por um usuário a **novo projeto** caixa de diálogo, modificada para remover todos os caracteres desprotegidos e espaços.  
   
-  Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  Se você quiser criar seus próprios parâmetros de modelo personalizado, consulte [NIB: como: passar parâmetros personalizados para modelos](http://msdn.microsoft.com/en-us/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
+  Para ver uma lista completa dos parâmetros de modelo, consulte [Parâmetros de Modelo](../ide/template-parameters.md).  Se você quiser criar seus próprios parâmetros de modelo personalizado, consulte [NIB: Como: Passar parâmetros personalizados para modelos](http://msdn.microsoft.com/5bc2ad11-84c7-4683-a276-e5e00d85d8fb).  
   
 #### <a name="to-substitute-project-template-parameters"></a>Substituir parâmetros de modelo de projeto  
   
-1.  No arquivo SimpleProjectNode.cs, remova o `AddFileFromTemplate` método.  
+1. No arquivo SimpleProjectNode.cs, remova o `AddFileFromTemplate` método.  
   
-2.  No arquivo \Templates\Projects\ConsoleApp\SimpleProject.myproj, localize o \<RootNamespace > propriedade e altere seu valor para $ $safeprojectname.  
+2. No arquivo \Templates\Projects\ConsoleApp\SimpleProject.myproj, localize o \<RootNamespace > propriedade e altere seu valor para $ $safeprojectname.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  No arquivo \Templates\Projects\SimpleProject\Program.cs, substitua o conteúdo do arquivo pelo código a seguir:  
+3. No arquivo \Templates\Projects\SimpleProject\Program.cs, substitua o conteúdo do arquivo pelo código a seguir:  
   
     ```  
     using System;  
@@ -320,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Recompile o projeto SimpleProject e iniciar a depuração. A instância experimental deve aparecer.  
+4. Recompile o projeto SimpleProject e iniciar a depuração. A instância experimental deve aparecer.  
   
-5.  Crie um novo aplicativo de SimpleProject Console. (Na **tipos de projeto** painel, selecione **SimpleProject**. Sob **modelos instalados do Visual Studio**, selecione **aplicativo de Console**.)  
+5. Crie um novo aplicativo de SimpleProject Console. (Na **tipos de projeto** painel, selecione **SimpleProject**. Sob **modelos instalados do Visual Studio**, selecione **aplicativo de Console**.)  
   
-6.  No projeto recém-criado, abra Program.cs. Ele deve ser algo semelhante ao seguinte (os valores GUID em seu arquivo serão diferentes.):  
+6. No projeto recém-criado, abra Program.cs. Ele deve ser algo semelhante ao seguinte (os valores GUID em seu arquivo serão diferentes.):  
   
     ```  
     using System;  
@@ -353,11 +348,11 @@ ZipProjects:
   
  A página de propriedades que você cria essa seção permite que você alterar e salvar essas propriedades do projeto:  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. No arquivo SimpleProjectPackage.cs, adicione `ProvideObject` de atributo para o `SimpleProjectPackage` classe:  
   
@@ -500,4 +495,3 @@ ZipProjects:
 8. Feche a instância experimental do Visual Studio.  
   
    ![](../extensibility/media/simpproj2-proppage2.png "SimpProj2_PropPage2")
-

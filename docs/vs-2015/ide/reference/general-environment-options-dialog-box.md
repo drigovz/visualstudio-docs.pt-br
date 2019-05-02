@@ -27,27 +27,26 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 836c5be9df565d6171949845e36febc22024b20a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d30433f5b1fa8f8fe6dc1cd10a30ae9ef1ad5bf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437132"
 ---
 # <a name="general-environment-options-dialog-box"></a>Caixa de diálogo Geral, Ambientes, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use esta página para alterar temas de cores, configurações de barra de status e associações de extensões de arquivo, entre outras coisas, para o IDE (ambiente de desenvolvimento integrado). Você pode acessar a caixa de diálogo **Opções** abrindo o menu **Ferramentas**, escolhendo **Opções**, abrindo a pasta **Ambiente** e, em seguida, escolhendo a página **Geral**. Se essa página não aparecer na lista, marque a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="visual-experience"></a>Experiência visual  
  **Tema da cor**  
  Escolha o tema de cor **Azul**, **Claro** ou **Escuro** para o IDE.  
   
- É possível instalar temas predefinidos adicionais e criar temas personalizados, baixando e instalando o **Visual Studio 2015 Color Theme Editor** da [Galeria do Visual Studio](https://visualstudiogallery.msdn.microsoft.com/site/search?f%5B0%5D.Type=RootCategory&f%5B0%5D.Value=tools). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.  
+ Para instalar temas predefinidos adicionais e criar temas personalizados, baixe e instale o **Visual Studio 2015 Color Theme Editor** do [Visual Studio Marketplace](https://marketplace.visualstudio.com). Após você instalar essa ferramenta, temas de cores adicionais aparecem na caixa de listagem Tema da cor.  
   
  Aplicar o padrão de minúsculas e maiúsculas de título à barra de menus  
  Menus têm o **Padrão de minúsculas e maiúsculas de título** por padrão no Visual Studio 2015. Desmarque essa opção para defini-los como **TODAS EM MAIÚSCULAS**.  

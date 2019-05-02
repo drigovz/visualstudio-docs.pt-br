@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429632"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 O compilador de tabela de comando do Visual Studio (VSCT) fornece opções de linha de comando para garantir que a compilação bem-sucedida dos arquivos. VSCT.
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.
+> Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.
 
  Sinalizadores aceitáveis e seus significados são da seguinte maneira.
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos os símbolos definidos adicionais.|
 |-I|Indicam que caminhos que devem ser usados ao resolver referências de arquivo de inclusão adicionais.|
 |-L|Especifique o <xref:System.Globalization.CultureInfo> nome de cultura, por exemplo "en-US".|
-|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = cabeçalho de C++, N = namespace. O namespace é necessário para c#.|
+|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = C++ cabeçalho, N = namespace. O namespace é necessário para c#.|
 |-v|Saída detalhada.|
 
  -L switch instrui o compilador a selecionar um grupo de cadeias de caracteres para produzir o arquivo CTO já binário correspondente para o determinado <xref:System.Globalization.CultureInfo> nome da cultura. O nome da cultura especificada com o atributo de idioma de um ou mais [cadeias de caracteres de elemento](../../extensibility/strings-element.md) no arquivo. VSCT. Se um elemento de cadeias de caracteres não tem nenhum atributo de idioma, ela é herdada de recipiente [elemento CommandTable](../../extensibility/commandtable-element.md).

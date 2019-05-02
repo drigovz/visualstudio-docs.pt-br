@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be51445940816f0feffcbc7ba0e542e94d0f0648
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a05fe75aabaf2ce04010fe0c985a3cc1645ee696
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446021"
 ---
 # <a name="log-command-window-output-command"></a>Comando Saída da Janela Log de Comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Copia todas as entradas e saídas da janela **Comando** para um arquivo.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -38,7 +37,7 @@ Tools.LogCommandWindowOutput [filename] [/on|/off] [/overwrite]
  Opcional. Nome do arquivo de log. Por padrão, o arquivo é criado na pasta de perfil do usuário. Se o nome do arquivo já existir, o log será acrescentado ao final do arquivo existente. Se nenhum arquivo for especificado, o último arquivo especificado será usado. Não se houver nenhum arquivo anterior, será criado um arquivo de log padrão, chamado cmdline.log.  
   
 > [!TIP]
->  Para alterar o local em que o arquivo de log é salvo, digite o caminho completo do arquivo entre aspas se o caminho contiver espaços.  
+> Para alterar o local em que o arquivo de log é salvo, digite o caminho completo do arquivo entre aspas se o caminho contiver espaços.  
   
 ## <a name="switches"></a>Opções  
  /on  

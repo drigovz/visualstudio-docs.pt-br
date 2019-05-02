@@ -12,21 +12,20 @@ caps.latest.revision: 30
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7ab53b2f8918760fcfccdf6086073b0c808b80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c88288a7bed453ca14e9c14fd43706b97be04044
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430841"
 ---
 # <a name="obtaining-build-logs-with-msbuild"></a>Obtendo logs de build com o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Usando opções com o MSBuild, você pode especificar quantos dados de build você deseja examinar e se deseja salvar os dados de build em um ou mais arquivos. Você também pode especificar um agente personalizado para coletar dados de build. Para obter informações sobre opções de linha de comando do MSBuild que este tópico não aborda, consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Se você compilar projetos usando o IDE do Visual Studio, poderá solucionar os builds examinando os logs de build. Para obter mais informações, consulte [Como exibir, salvar e configurar arquivos de log de build](../ide/how-to-view-save-and-configure-build-log-files.md).  
+> Se você compilar projetos usando o IDE do Visual Studio, poderá solucionar os builds examinando os logs de build. Para obter mais informações, confira [Como: Exibir, salvar e configurar arquivos de Log de compilação](../ide/how-to-view-save-and-configure-build-log-files.md).  
   
 ## <a name="setting-the-level-of-detail"></a>Definindo o nível de detalhes  
  Quando você compila um projeto usando MSBuild sem especificar um nível de detalhamento, as seguintes informações aparecem no log de saída:  

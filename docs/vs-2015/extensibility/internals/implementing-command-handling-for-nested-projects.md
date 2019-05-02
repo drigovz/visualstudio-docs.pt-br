@@ -1,26 +1,21 @@
 ---
 title: Implementar manipulação de comando para projetos de aninhados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 113cc2c061b008892921aac348f3eb56a7bef0d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2fbce80b2e8c337eddf0d34954a7fd70b895d891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445437"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>Implementando a manipulação de comando para projetos aninhados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +23,7 @@ ms.locfileid: "51742567"
 O IDE pode passar comandos que são passados para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> e o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interfaces para projetos aninhados ou projetos pai podem filtrar ou substituir os comandos.  
   
 > [!NOTE]
->  Somente os comandos que normalmente é tratados pelo projeto pai podem ser filtrados. Comandos como **construir** e **implantar** que são manipulados pelo IDE não pode ser filtrado.  
+> Somente os comandos que normalmente é tratados pelo projeto pai podem ser filtrados. Comandos como **construir** e **implantar** que são manipulados pelo IDE não pode ser filtrado.  
   
  As etapas a seguir descrevem o processo para implementar o tratamento do comando.  
   
@@ -62,4 +57,3 @@ O IDE pode passar comandos que são passados para o <xref:Microsoft.VisualStudio
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>   
  [Comandos, Menus e barras de ferramentas](../../extensibility/internals/commands-menus-and-toolbars.md)   
  [Aninhar projetos](../../extensibility/internals/nesting-projects.md)
-

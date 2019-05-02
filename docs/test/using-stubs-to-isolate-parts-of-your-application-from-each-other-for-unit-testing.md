@@ -11,11 +11,11 @@ dev_langs:
 - CSharp
 - VB
 ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961958"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 

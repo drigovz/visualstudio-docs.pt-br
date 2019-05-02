@@ -2,7 +2,6 @@
 title: Enumeração PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3a97d3074d2d82b99f61c4bc880e5a362c024d33
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 0a56b05c572ec5d91914dd046bfdfa39224a07de
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823602"
 ---
 # <a name="profilerheapobjectoptionalinfotype-enumeration"></a>Enumeração PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE
 Representa os diferentes tipos de informações opcionais. Usado na [estrutura PROFILER_HEAP_OBJECT_OPTIONAL_INFO](../../winscript/reference/profiler-heap-object-optional-info-structure.md).  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443549"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Criar páginas de aplicativo do SharePoint
   Uma *página de aplicativo* é uma página da Web do ASP.NET que foi projetada para uso em um site do SharePoint. Páginas de aplicativo são um tipo especializado de página ASP.NET. A principal diferença entre uma página de aplicativo e uma página ASP.NET padrão é que uma página de aplicativo contém o conteúdo que será mesclado com uma página mestra do SharePoint. Uma página mestra permite que as páginas de aplicativos que compartilham a mesma aparência e comportamento como outras páginas em um site.
@@ -36,7 +36,7 @@ ms.locfileid: "56644439"
  Páginas de aplicativo não podem fazer essas coisas. No entanto, uma página de aplicativo é o melhor tipo de página para criar, se você deseja que a página contêm código personalizado. Embora você possa adicionar código personalizado para uma página do site, o código de execução é interrompida quando o usuário personalizar a página usando ferramentas como o SharePoint Designer.
 
 > [!NOTE]
->  Visual Studio não fornece modelos que ajudam você a criam páginas de site para um site do SharePoint. Para obter mais informações, consulte [tipos de página do SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio não fornece modelos que ajudam você a criam páginas de site para um site do SharePoint. Para obter mais informações, consulte [tipos de página do SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Criar uma página de aplicativo
  Para criar uma página de aplicativo, adicione uma **página de aplicativo** item a um projeto do SharePoint. Quando você cria uma página de aplicativo, o Visual Studio adiciona as seguintes pastas para seu projeto:
@@ -58,7 +58,7 @@ ms.locfileid: "56644439"
  Projete o conteúdo de uma página de aplicativo usando a exibição do designer no Visual Studio. Esse designer é exibido quando você abre a página do aplicativo em seu projeto (clicando duas vezes nele ou abrindo o menu de atalho e, em seguida, escolhendo **abra**) e, em seguida, escolha o **Design** botão na parte inferior o editor.
 
 > [!NOTE]
->  Você pode criar a página somente na **origem** modo de exibição do designer. O **Design** modo de exibição do designer está desabilitado para as páginas do aplicativo.
+> Você pode criar a página somente na **origem** modo de exibição do designer. O **Design** modo de exibição do designer está desabilitado para as páginas do aplicativo.
 
  Você pode depurar uma página de aplicativo, assim como você faria para depurar outros itens de projeto do SharePoint no Visual Studio. Quando você inicia o depurador do Visual Studio, o Visual Studio abre o site do SharePoint.
 

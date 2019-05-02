@@ -1,21 +1,21 @@
 ---
 title: Editar código do Python
 description: Para o Python, o Visual Studio fornece funcionalidades avançadas do IntelliSense, de snippets de código e navegação, juntamente com formatação, linting e refatoração.
-ms.date: 11/19/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3a18b743b4dd0f239399b7350e1a479acf7ef4c8
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958934"
 ---
 # <a name="edit-python-code"></a>Editar código do Python
 
@@ -31,9 +31,9 @@ Use também o **Pesquisador de Objetos** do Visual Studio (**Exibir** > **Outras
 
 O IntelliSense fornece [preenchimentos](#completions), [ajuda da assinatura](#signature-help), [informações rápidas](#quick-info) e [coloração de código](#code-coloring). O Visual Studio 2017 versão 15.7 e posteriores também dão suporte a [dicas de tipo](#type-hints).
 
-Para melhorar o desempenho, o IntelliSense no **Visual Studio 2017 versão 15.5** e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
+Para melhorar o desempenho, o IntelliSense no Visual Studio 2017 versão 15.5 e anteriores depende do banco de dados de preenchimento que é gerado para cada ambiente do Python no projeto. Os bancos de dados podem precisar de atualização se você adicionar, remover ou atualizar os pacotes. O status do banco de dados é mostrado na janela **Ambientes do Python** (um irmão do **Gerenciador de Soluções**) na guia **IntelliSense** (confira [Referência da janela Ambientes](python-environments-window-tab-reference.md#intellisense-tab)).
 
-O **Visual Studio 2017 versão 15.6** e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
+O Visual Studio 2017 versão 15.6 e posterior usa um modo diferente para fornecer as conclusões de IntelliSense que não são dependentes do banco de dados.
 
 ### <a name="completions"></a>Preenchimentos
 
@@ -109,10 +109,20 @@ Usar o comando **Execute Mypy** neste código gera o seguinte erro:
 
 ![Exemplo de resultado de MyPy validando dicas de tipo](media/code-editing-type-hints-validation-error.png)
 
+::: moniker range="vs-2017"
 > [!Tip]
-> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
 >
 > No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
+::: moniker-end
+::: moniker range=">=vs-2019"
+> [!Tip]
+> Para as versões do Python anteriores à 3.5, o Visual Studio também exibe dicas de tipo fornecidas por meio de *arquivos stub* do Typeshed (*.pyi*). Você pode usar arquivos stub sempre que não quiser incluir dicas de tipo diretamente no código, ou quando quiser criar dicas de tipo para uma biblioteca que não as usa diretamente. Para obter mais informações, confira [Criar stubs para módulos do Python](https://github.com/python/mypy/wiki/Creating-Stubs-For-Python-Modules) no wiki de projeto do MyPy.
+>
+> O Visual Studio inclui um conjunto de pacotes de arquivos Typeshed para Python 2 e 3, para que os downloads adicionais não sejam necessários. No entanto, se você quiser usar um conjunto diferente de arquivos, poderá especificar o caminho nas opções de **Ferramentas** > **Opções** > **Python**  >  **Servidor de Linguagem**. Confira [Opções – Servidor de linguagem](python-support-options-and-settings-in-visual-studio.md#language-server-options).
+>
+> No momento, o Visual Studio não dá suporte a dicas de tipo nos comentários.
+::: moniker-end
 
 ### <a name="signature-help"></a>Ajuda da assinatura
 

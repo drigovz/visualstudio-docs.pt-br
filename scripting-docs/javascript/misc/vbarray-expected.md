@@ -14,12 +14,12 @@ ms.assetid: f2998d7d-13a4-4bbe-b872-3ff3316551e4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 159a5dd0195cc0cbb244664d75e19d1ac6af3dec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 5d1fabd8da6f825a266614a4a5c7fabd5c307130
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843410"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005986"
 ---
 # <a name="vbarray-expected"></a>VBArray esperado
 Você forneceu um objeto que não era um safeArray de Visual Basic, quando apenas um era esperado.  
@@ -32,7 +32,7 @@ new VBArray(safeArray);
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Verifique se você passar somente **VBArray** objetos para o **VBArray** construtor.  
+- Verifique se você passar somente **VBArray** objetos para o **VBArray** construtor.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto VBArray](../../javascript/reference/vbarray-object-javascript.md)   

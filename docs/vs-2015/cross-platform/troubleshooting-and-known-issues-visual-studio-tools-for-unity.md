@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: f614188d6a4a9855af072b200c71633ef7a2bd57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e1b34cbc2497bd70f65021c83db4f59480519f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573200"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solucionando problemas e problemas conhecidos (Visual Studio Tools for Unity)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nesta seção, você encontrará soluções para problemas comuns das Ferramentas do Visual Studio para Unity, as descrições de problemas conhecidos e aprenderá como ajudar a melhorar as Ferramentas do Visual Studio para Unity por meio de relatórios de erro.  
   
 ## <a name="troubleshooting"></a>Solução de problemas  
@@ -30,11 +29,11 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
   
 ##### <a name="to-migrate-your-unity-project-from-unityvs-18-to-visual-studio-tools-for-unity-19"></a>Migrar um projeto do Unity do UnityVS 1.8 para as Ferramentas do Visual Studio para Unity 1.9  
   
-1.  Exclua a solução e os arquivos de projeto antigos do projeto do Unity. No diretório raiz do projeto do Unity, localize os arquivos .sln e .*proj do Visual Studio e exclua todos eles.  
+1. Exclua a solução e os arquivos de projeto antigos do projeto do Unity. No diretório raiz do projeto do Unity, localize os arquivos .sln e .*proj do Visual Studio e exclua todos eles.  
   
-2.  Importe as Ferramentas do Visual Studio para Unity para o pacote do Unity no projeto do Unity. Para obter informações sobre como importar o pacote VSTU, consulte Configurar as Ferramentas do Visual Studio para Unity na página [Introdução](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
+2. Importe as Ferramentas do Visual Studio para Unity para o pacote do Unity no projeto do Unity. Para obter informações sobre como importar o pacote VSTU, consulte Configurar as Ferramentas do Visual Studio para Unity na página [Introdução](../cross-platform/getting-started-with-visual-studio-tools-for-unity.md).  
   
-3.  Gerar novas soluções e arquivos de projeto. Caso deseje gerá-los neste momento, escolha **Ferramentas do Visual Studio** e **Gerar Arquivos de Projeto** no menu principal do Editor do Unity. Caso contrário, é possível ignorar essa etapa; as Ferramentas do Visual Studio para Unity gerarão os novos arquivos automaticamente quando você escolher **Ferramentas do Visual Studio** e **Abrir no Visual Studio**.  
+3. Gerar novas soluções e arquivos de projeto. Caso deseje gerá-los neste momento, escolha **Ferramentas do Visual Studio** e **Gerar Arquivos de Projeto** no menu principal do Editor do Unity. Caso contrário, é possível ignorar essa etapa; as Ferramentas do Visual Studio para Unity gerarão os novos arquivos automaticamente quando você escolher **Ferramentas do Visual Studio** e **Abrir no Visual Studio**.  
   
 ### <a name="visual-studio-wont-load-the-solution-that-visual-studio-tools-for-unity-created"></a>O Visual Studio não carregará a solução criada pelas Ferramentas do Visual Studio para Unity  
  Para obter mais informações, consulte [a resposta para essa pergunta do stackoverflow](http://stackoverflow.com/a/24035907/36702).  
@@ -45,11 +44,11 @@ Nesta seção, você encontrará soluções para problemas comuns das Ferramenta
 ## <a name="known-issues"></a>Problemas Conhecidos  
  Há problemas conhecidos nas Ferramentas do Visual Studio para Unity, decorrentes de como o depurador interage com a versão mais antiga do compilador C# do Unity. Estamos trabalhando para corrigi-los, mas você pode enfrentar os seguintes problemas nesse meio tempo.  
   
--   O Unity pode falhar durante a depuração.  
+- O Unity pode falhar durante a depuração.  
   
--   O Unity pode congelar durante a depuração.  
+- O Unity pode congelar durante a depuração.  
   
--   A intervenção ou saída de métodos pode se comportar incorretamente, especialmente em iteradores ou em instruções switch.  
+- A intervenção ou saída de métodos pode se comportar incorretamente, especialmente em iteradores ou em instruções switch.  
   
 ## <a name="reporting-errors"></a>Erros de relatório  
  Ajude-nos a melhorar a qualidade das Ferramentas do Visual Studio para Unity enviando relatórios de erro quando ocorrerem falhas, congelamentos ou outros erros. Isso nos ajuda a investigar e corrigir problemas nas Ferramentas do Visual Studio para Unity. Obrigado!  

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 88cdc78fd739de412b4cf796d0ca7a42f9174e0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564028"
 ---
 # <a name="crt-debugging-techniques"></a>Técnicas de depuração CRT
 Se você estiver depurando um programa que usa a biblioteca em tempo de execução C, essas técnicas de depuração poderão ser úteis.
@@ -56,5 +56,5 @@ Se você estiver depurando um programa que usa a biblioteca em tempo de execuç�
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [Depurando código nativo](../debugger/debugging-native-code.md) -aborda alguns problemas comuns de depuração e técnicas para aplicativos C e C++.
+- [Depurando código nativo](../debugger/debugging-native-code.md) -aborda alguns problemas comuns de depuração e técnicas para C e C++ aplicativos.
 - [Segurança do depurador](../debugger/debugger-security.md) -fornece recomendações para depuração mais segura.

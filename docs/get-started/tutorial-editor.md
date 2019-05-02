@@ -11,19 +11,30 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c17fc93602f3d6f80941ca84f372d57c0cde43
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 913a5a08dc467ea23d22c2a08a23abfe70b9a736
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943907"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta introdução de 10 minutos ao editor de código do Visual Studio, adicionaremos o código a um arquivo para ver algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 Este artigo considera que você já esteja familiarizado com uma linguagem de programação. Se não estiver, sugerimos que você confira um dos tutoriais de programação, por exemplo, como criar um aplicativo Web com [Python](../ide/quickstart-python.md) ou [C#](../get-started/csharp/tutorial-aspnet-core.md), ou criar um aplicativo de console com [Visual Basic](../ide/quickstart-visual-basic-console.md) ou [C++](../ide/getting-started-with-cpp-in-visual-studio.md).
 
@@ -31,9 +42,21 @@ Este artigo considera que você já esteja familiarizado com uma linguagem de pr
 
 Comece criando um novo arquivo e adicionando códigos nele.
 
-1. Abra o Visual Studio e, no menu **Arquivo** na barra de menus, selecione **Novo** > **Arquivo**.
+::: moniker range="vs-2017"
 
-1. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
+1. Abra o Visual Studio.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio. Pressione **Esc** ou clique em **Continuar sem código** na janela de início para abrir o ambiente de desenvolvimento.
+
+::: moniker-end
+
+2. No menu **Arquivo** na barra de menus, escolha **Novo** > **Arquivo**.
+
+3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
    Um novo arquivo é aberto no editor com o esqueleto de uma classe de C#. (Observe que não precisamos criar um projeto completo do Visual Studio para obter alguns dos benefícios que o editor de códigos oferece; basta ter um arquivo de código!)
 

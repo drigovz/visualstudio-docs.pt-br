@@ -8,44 +8,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2848fee32094ba9c79cc3190b48b8953a5f7e942
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d4ba0106a1494c7e7e8d56c3e902a3436f657712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783319"
 ---
-# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: Criar um documento XML com base em um esquema XSD
+# <a name="how-to-create-an-xml-document-based-on-an-xsd-schema"></a>Como: Criar um documento XML baseado em um esquema XSD
 
 O **gerar XML de exemplo** recurso gera um arquivo XML de exemplo com base em seu arquivo de esquema XML (XSD).
 
  Você pode usar esta opção para os seguintes situações:
 
--   Para entender o uso de várias construções no seu esquema.
+- Para entender o uso de várias construções no seu esquema.
 
--   Para confirmar que o esquema faz o que é esperado dele.
+- Para confirmar que o esquema faz o que é esperado dele.
 
 O **gerar XML de exemplo** recurso só está disponível nos elementos globais e requer um conjunto de esquema XML válido.
 
 Esse recurso normalmente gera documentos XML válidos. No entanto, se o esquema contiver um ou mais dos seguintes, o exemplo poderá não ser válido:
 
--   As restrições de identidade `xs:key`, `xs:keyref` e `xs:unique`.
+- As restrições de identidade `xs:key`, `xs:keyref` e `xs:unique`.
 
--   `xs:pattern` facetas.
+- `xs:pattern` facetas.
 
--   Enumerações do tipo `xs:QName`.
+- Enumerações do tipo `xs:QName`.
 
--   Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
+- Tipos `xs:ENTITY`, `xs:ENTITIES` e `xs:NOTATION`.
 
 Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se as enumerações ocorrerem no esquema para esse tipo.
 
 ## <a name="to-generate-an-xml-instance-document-based-on-the-xsd-file"></a>Para gerar um documento de instância XML baseado no arquivo XSD
 
-1.  Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.
+2. No [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), clique com botão direito do `PurchaseOrder` elemento global. Selecione **gerar XML de exemplo**.
 
-     Quando você seleciona essa opção, PurchaseOrder. *xml* arquivo com o conteúdo XML de exemplo a seguir será gerado e aberto no Editor de XML:
+     Quando você seleciona essa opção, PurchaseOrder. *xml* arquivo com o conteúdo XML de exemplo a seguir será gerado e aberto no editor de XML:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -73,7 +73,3 @@ Além disso, observe que o conteúdo de `xs:base64Binary` será gerado apenas se
       </BillTo>
     </PurchaseOrder>
     ```
-
-## <a name="see-also"></a>Consulte também
-
-- [Trabalhar com dados XML](../xml-tools/working-with-xml-data.md)

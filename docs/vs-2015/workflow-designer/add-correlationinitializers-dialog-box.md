@@ -1,11 +1,8 @@
 ---
 title: Adicionar caixa de diálogo CorrelationInitializers | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - AddCorrelationInitializers.UI
@@ -13,13 +10,13 @@ ms.assetid: c0517467-d54a-4ee6-aef0-c19b96b6f395
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 4d4d69185bef36ab514c984716cc6606f6068fb4
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0c90a2d0e0297a00454e38f428093a2f2db1e46d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49275685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977483"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Adicione a caixa de diálogo CorrelationInitializers
 O **adicionar inicializadores de correlação** caixa de diálogo é usada em [!INCLUDE[wfd1](../includes/wfd1-md.md)] para configurar o **CorrelationInitializers** propriedades do <xref:System.ServiceModel.Activities.Send>, <xref:System.ServiceModel.Activities.Receive>, <xref:System.ServiceModel.Activities.SendReply>, e <xref:System.ServiceModel.Activities.ReceiveReply> atividades. [!INCLUDE[crabout](../includes/crabout-md.md)] os designers de atividade que usam essa caixa, consulte o [envie](../workflow-designer/send-activity-designer.md), [Receive](../workflow-designer/receive-activity-designer.md), [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md), e [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md) tópicos.  
@@ -40,5 +37,4 @@ O **adicionar inicializadores de correlação** caixa de diálogo é usada em [!
  O **Receive** designer de atividade pode ser arrastado da **caixa de ferramentas** e ser solto sobre a [!INCLUDE[wfd2](../includes/wfd2-md.md)] superfície onde quer que as atividades são colocadas em geral. Isso cria uma atividade de <xref:System.ServiceModel.Activities.Receive> com <xref:System.Activities.Activity.DisplayName%2A> padrão Receive. Selecione o **Receive** designer de atividade e clique no botão de reticências ao lado do texto (coleção) para o **CorrelationInitializers** propriedade na grade de propriedade para o **adicionar Inicializadores de correlação** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Adicionar caixa de diálogo correlação](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)   
  [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)

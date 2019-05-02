@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908875"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de teste 8: Alternância de plug-in
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) tem a interface do usuário (UI) para alterar o plug-in de controle de origem atual. Essa área de teste fornece os casos de teste para o processo de selecionar o plug-in a ser usado para controle de código-fonte da solução.
@@ -24,9 +24,9 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando
  O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.
 
--   Controle atual origem plug-in: **Ferramentas** -> **opções** -> **controle de origem** -> **seleção de plug-in**.
+- Controle atual origem plug-in: **Ferramentas** -> **opções** -> **controle de origem** -> **seleção de plug-in**.
 
--   Alterar fonte de ligação de controle: **Arquivo** -> **controle de fonte** -> **alterar controle do código-fonte**...
+- Alterar fonte de ligação de controle: **Arquivo** -> **controle de fonte** -> **alterar controle do código-fonte**...
 
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns
  É possível alterar o plug-in para uma solução de controle de origem sem sair do Visual Studio ou recarregar a solução. Além disso, o plug-in de controle de origem atual é alterado automaticamente àquele usado por uma solução quando essa solução é carregada.
@@ -39,7 +39,6 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 #### <a name="expected-behavior"></a>Comportamento esperado
  Quando um usuário carrega uma solução sob controle do código-fonte, a solução é carregada automaticamente e o plug-in de controle de origem apropriada é selecionada como atual.
 
-
 | Ação | Etapas de teste | Resultados esperados para verificar |
 | - | - | - |
 | Alteração de plug-in de controle de fonte automática | 1.  Selecione plug-in em testar como atual (**ferramentas** -> **opções** -> **controle do código-fonte** -> **plug-in Seleção**.)<br />2.  Crie um novo projeto.<br />3.  Adicione a solução ao controle de origem.<br />4.  Selecione outro plug-in (por exemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Aceite solicitação de solução de descarregamento.<br />6.  Reabra a solução do disco. | Solução for aberta.<br /><br /> Plug-in em teste é o plug-in de controle de origem atual. |
@@ -48,7 +47,6 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 
 #### <a name="expected-behavior"></a>Comportamento esperado
  A solução pode ter seu plug-in de controle de origem associado alterado.
-
 
 | Ação | Etapas de teste | Resultados esperados para verificar |
 |----------------------------------| - | - |

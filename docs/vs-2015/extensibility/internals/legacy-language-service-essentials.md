@@ -1,14 +1,9 @@
 ---
 title: Fundamentos do serviço de linguagem herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - languages, integrating into Visual Studio
 - language services, integrating programming languages
@@ -17,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 7c878c4fe124d0443ab5f926a03a378b5b4af014
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3926ff84f3b2e6415df1ca7333409c05d839685
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436260"
 ---
 # <a name="legacy-language-service-essentials"></a>Conceitos básicos do serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +28,7 @@ Você deve fornecer um serviço de linguagem para integrar uma linguagem de prog
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
  Serviços de linguagem herdado fornecem os seguintes recursos:  
   
@@ -53,4 +48,3 @@ Você deve fornecer um serviço de linguagem para integrar uma linguagem de prog
 |-------------|-----------------|  
 |Avaliadores de expressão|Dá suporte a [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depurador validar pontos de interrupção e fornecendo uma lista de expressões a serem exibidos na **Autos** janela de depuração.<br /><br /> Para obter mais informações, consulte [suporte do serviço de linguagem para depuração](../../extensibility/internals/language-service-support-for-debugging.md).|  
 |Ferramentas de navegação de símbolo|Dá suporte à **Pesquisador de objetos**, **exibição de classe**, **Pesquisador de chamadas**, e **localizar resultados de símbolos**.|
-

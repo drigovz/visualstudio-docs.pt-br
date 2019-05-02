@@ -15,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4f54d10bb366ced70347db8d154b0a132253c97
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f77a6b9b655cc7dfbf0639a81d7d350b904ce82a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435223"
 ---
-# <a name="how-to-specify-build-events-c"></a>Como especificar eventos de build (C#)
+# <a name="how-to-specify-build-events-c"></a>Como: Especificar eventos de build (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Use eventos de build para especificar comandos que são executados antes do início do build ou após sua conclusão. Eventos de build são executados somente se o build atingir com êxito esses pontos no processo de build.  
@@ -35,32 +35,32 @@ Use eventos de build para especificar comandos que são executados antes do iní
   
 #### <a name="to-specify-a-build-event"></a>Para especificar um evento de build  
   
-1.  No **Gerenciador de Soluções**, selecione o projeto para o qual deseja especificar o evento de build.  
+1. No **Gerenciador de Soluções**, selecione o projeto para o qual deseja especificar o evento de build.  
   
-2.  No menu **Projeto**, clique em **Propriedades**.  
+2. No menu **Projeto**, clique em **Propriedades**.  
   
-3.  Selecione a guia **Eventos de Build**.  
+3. Selecione a guia **Eventos de Build**.  
   
-4.  Na caixa **Linha de comando do evento de pré-build**, especifique a sintaxe do evento de build.  
-  
-    > [!NOTE]
-    >  Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
-  
-5.  Na caixa **Linha de comando do evento de pós-build**, especifique a sintaxe do evento de build.  
+4. Na caixa **Linha de comando do evento de pré-build**, especifique a sintaxe do evento de build.  
   
     > [!NOTE]
-    >  Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
   
-6.  Na caixa **Executar o evento de pós-build**, especifique em que condições o evento pós-build deve ser executado.  
+5. Na caixa **Linha de comando do evento de pós-build**, especifique a sintaxe do evento de build.  
   
     > [!NOTE]
-    >  Para adicionar uma sintaxe longa, ou para selecionar macros de build na [Caixa de diálogo de linha de comando do evento de pré-/pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), clique no botão de reticências (**...**) para exibir uma caixa de edição.  
+    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+  
+6. Na caixa **Executar o evento de pós-build**, especifique em que condições o evento pós-build deve ser executado.  
+  
+    > [!NOTE]
+    > Para adicionar uma sintaxe longa, ou para selecionar macros de build na [Caixa de diálogo de linha de comando do evento de pré-/pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md), clique no botão de reticências (**...**) para exibir uma caixa de edição.  
   
      A sintaxe do evento de build pode incluir qualquer comando que seja válido em um prompt de comando ou em um arquivo .bat. O nome de um arquivo em lote deve ser precedido por `call` para garantir que todos os comandos posteriores sejam executados.  
   
      **Observação** Se o evento de pré-build ou de pós-build não for concluído com êxito, você pode encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.  
   
-## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Exemplo: como alterar informações de manifesto usando um evento de pós-build  
+## <a name="example-how-to-change-manifest-information-by-using-a-post-build-event"></a>Exemplo: Como alterar informações de manifesto usando um evento de pós-compilação  
  O procedimento a seguir mostra como definir a versão mínima do sistema operacional no manifesto do aplicativo usando um comando .exe chamado de um evento de pós-build (o arquivo .exe.manifest no diretório do projeto). A versão mínima do sistema operacional é um número de quatro partes, como 4.10.0.0. Para fazer isso, o comando alterará a seção `<dependentOS>` do manifesto:  
   
 ```  
@@ -145,15 +145,15 @@ Use eventos de build para especificar comandos que são executados antes do iní
   
 #### <a name="to-invoke-a-post-build-event-to-modify-the-application-manifest"></a>Para invocar um evento de pós-build para modificar o manifesto do aplicativo  
   
-1.  Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Nomeie o projeto `CSWinApp`.  
+2. Na caixa de diálogo **Novo Projeto**, expanda **Visual C#**, clique em **Windows** e, em seguida, clique no modelo **Aplicativo do Windows Forms**. Nomeie o projeto `CSWinApp`.  
   
-3.  Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-4.  No Designer de Projeto, localize a página **Publicar** e defina o **Local de Publicação** como `C:\TEMP\`.  
+4. No Designer de Projeto, localize a página **Publicar** e defina o **Local de Publicação** como `C:\TEMP\`.  
   
-5.  Publique o projeto clicando em **Publicar Agora**.  
+5. Publique o projeto clicando em **Publicar Agora**.  
   
      O arquivo de manifesto será compilado e colocado em `C:\TEMP\CSWinApp_1_0_0_0\CSWinApp.exe.manifest`. Para exibir o manifesto, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, selecione **Selecionar um programa em uma lista de programas instalados** e clique em **Bloco de Notas**.  
   
@@ -163,9 +163,9 @@ Use eventos de build para especificar comandos que são executados antes do iní
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  No Designer de Projeto, clique na guia **Eventos de Build** e clique no botão **Editar pós-build**.  
+6. No Designer de Projeto, clique na guia **Eventos de Build** e clique no botão **Editar pós-build**.  
   
-7.  Na caixa **Linha de comando do evento de pós-build**, digite o seguinte comando:  
+7. Na caixa **Linha de comando do evento de pós-build**, digite o seguinte comando:  
   
      `C:\TEMP\ChangeOSVersionCS.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -173,7 +173,7 @@ Use eventos de build para especificar comandos que são executados antes do iní
   
      Como a macro `$(TargetPath)` expressa o caminho completo para o executável que está sendo criado, `$(TargetPath)`.manifest especificará o manifesto do aplicativo criado no diretório bin. A publicação copiará esse manifesto para o local de publicação definido anteriormente.  
   
-8.  Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.  
+8. Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.  
   
      Exiba o manifesto novamente. Para exibir o manifesto, abra o diretório de publicação, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, selecione **Selecionar um programa em uma lista de programas instalados** e clique em **Bloco de Notas**.  
   
@@ -186,5 +186,5 @@ Use eventos de build para especificar comandos que são executados antes do iní
 ## <a name="see-also"></a>Consulte também  
  [Página Eventos de Build, Designer de Projeto (C#)](../ide/reference/build-events-page-project-designer-csharp.md)   
  [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
+ [Como: Especificar eventos de Build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md)   
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)

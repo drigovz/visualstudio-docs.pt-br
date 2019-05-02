@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fad29d305d3657f9ed6372769a85d84260c1e77b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691300"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434647"
 ---
 # <a name="sccget-function"></a>Função SccGet
 Essa função recupera uma cópia de um ou mais arquivos para exibir e compilar, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.
@@ -81,7 +81,7 @@ SCCRTN SccGet(
  O `SCC_GET_ALL` sinalizador pode ser combinado com o `SCC_GET_RECURSIVE` sinalizador para recuperar todos os arquivos nos diretórios de determinado e todos os subdiretórios também.
 
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que, se diretórios *C:\A* e *C:\A\B* são passados em um get recursiva, *C:\A\B* e todos os seus subdiretórios, na verdade, serão recuperados duas vezes. É responsabilidade do IDE — e não o controle de fonte do plug-in — para certificar-se de que as duplicatas como esse são mantidas fora da matriz.
+> `SCC_GET_RECURSIVE` nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que, se diretórios *C:\A* e *C:\A\B* são passados em um get recursiva, *C:\A\B* e todos os seus subdiretórios, na verdade, serão recuperados duas vezes. É responsabilidade do IDE — e não o controle de fonte do plug-in — para certificar-se de que as duplicatas como esse são mantidas fora da matriz.
 
  Por fim, mesmo se o controle de fonte de uma plug-in especificado o `SCC_CAP_GET_NOUI` sinalizador na inicialização, indicando que ele não tem uma interface do usuário para um comando Get, essa função ainda pode ser chamada pelo IDE para recuperar arquivos. O sinalizador simplesmente significa que o IDE não exibe um item de menu Get e que o plug-in não é esperado para fornecer qualquer interface do usuário.
 
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Há duas maneiras de resolver essa situação em que o cache local de versões de controle do código-fonte se torna fora de sincronia com o banco de dados de controle do código-fonte:
 
-1.  Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.
+1. Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.
 
-2.  Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.
+2. Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.
 
-    1.  Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de *. txt* para *b. txt* no banco de dados de controle do código-fonte.
+    1. Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de *. txt* para *b. txt* no banco de dados de controle do código-fonte.
 
-    2.  Renomear local *. txt* à *b. txt*.
+    2. Renomear local *. txt* à *b. txt*.
 
-    3.  Chame o `SccGet` função para ambos *. txt* e *b. txt*.
+    3. Chame o `SccGet` função para ambos *. txt* e *b. txt*.
 
-    4.  Porque *. txt* não existe no banco de dados de controle do código-fonte, o cache de versão local é limpa para remover o ausente *. txt* informações de versão.
+    4. Porque *. txt* não existe no banco de dados de controle do código-fonte, o cache de versão local é limpa para remover o ausente *. txt* informações de versão.
 
-    5.  O *b. txt* arquivo sendo extraído é mesclado com o conteúdo do local *b. txt* arquivo.
+    5. O *b. txt* arquivo sendo extraído é mesclado com o conteúdo do local *b. txt* arquivo.
 
-    6.  Atualizada *b. txt* arquivo agora pode ser verificado.
+    6. Atualizada *b. txt* arquivo agora pode ser verificado.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

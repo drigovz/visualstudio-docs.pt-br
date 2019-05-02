@@ -1,24 +1,19 @@
 ---
 title: Atraso de carregamento do documento | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 94d79af00fced81dc7da38f323598ade926d26f4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755481"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116921"
 ---
 # <a name="delayed-document-loading"></a>Atraso no carregamento de documentos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,17 +29,17 @@ Quando um usuário é reaberto em uma solução do Visual Studio, a maioria dos 
   
 - Método GetProperty do quadro de janela <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> em qualquer uma das seguintes propriedades:  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   Se sua extensão usar código gerenciado, você não deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> , a menos que você tiver certeza de que o documento não está no estado pendente de inicialização, ou você deseja que o documento seja totalmente inicializada... Isso ocorre porque esse método sempre retorna o documento de objeto de dados, criá-lo se necessário. Em vez disso, você deve chamar um dos métodos na interface IVsRunningDocumentTable4.  
   
@@ -70,4 +65,3 @@ Quando um usuário é reaberto em uma solução do Visual Studio, a maioria dos 
  Não há nenhuma indicação visível para indicar se um documento foi inicializado, portanto, pode ser difícil descobrir se sua extensão está forçando a inicialização. Você pode definir uma chave do registro que facilita a verificação, porque ele faz com que o título de todos os documentos que não esteja totalmente inicializado para ter o texto `[Stub]` no título.  
   
  Na **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0\BackgroundSolutionLoad]**, defina **StubTabTitleFormatString** para  **{0} [Stub]**.
-

@@ -1,14 +1,9 @@
 ---
 title: Função SccGetParentProjectPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetParentProjectPath
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 0e75c3e39f2d4f56d40ca546291b2f86bd185f88
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a631936dee7608306edfcd86f686b788e57133f3
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744415"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58925446"
 ---
 # <a name="sccgetparentprojectpath-function"></a>Função SccGetParentProjectPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +88,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>Observações técnicas para SccCreateSubProject e SccGetParentProjectPath  
  Adicionando soluções e projetos ao controle de origem foi simplificado no Visual Studio para minimizar o número de vezes que um usuário é solicitado a selecionar locais no sistema de controle de origem. Essas alterações são ativadas pelo Visual Studio, se um plug-in de controle de origem dá suporte às duas novas funções, o [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) e o `SccGetParentProjectPath` função. No entanto, a seguinte entrada do registro pode ser usada para desabilitar essas alterações e reverter para o comportamento anterior do Visual Studio (fonte de controle de plug-in API versão 1.1):  
   
- [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl" = DWORD: 00000001  
+ [HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] "DoNotCreateSolutionRootFolderInSourceControl"=dword:00000001  
   
  Se essa entrada do registro não existe ou está definida como DWORD: 00000000, Visual Studio tenta usar as novas funções, `SccCreateSubProject`e`SccGetParentProjectPath`.  
   
@@ -103,4 +98,3 @@ SCCRTN SccGetParentProjectPath(
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)   
  [SccGetProjPath](../extensibility/sccgetprojpath-function.md)
-

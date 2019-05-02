@@ -1,32 +1,27 @@
 ---
 title: Interfaces de avaliação de expressão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - expression evaluation, interfaces
 ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1c7365e17749d69d0dc36e06c3d11d053a44e94d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8a710019390120768b665cf3b27174831a67f0cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435040"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces de avaliação de expressão
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  A seguir estão as Interfaces de avaliação de expressão para o [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] SDK de depuração.  
   
@@ -35,11 +30,11 @@ ms.locfileid: "51774829"
   
  Cada interface na tabela mostra o componente que possa implementá-la na lista a seguir:  
   
--   Debug Engine (DE)  
+- Debug Engine (DE)  
   
--   Avaliador de expressão (EE)  
+- Avaliador de expressão (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 |Interface|Implementado por|Descrição|  
 |---------------|--------------------|-----------------|  
@@ -70,4 +65,3 @@ ms.locfileid: "51774829"
  [Referência da API](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)   
  [Escrever um avaliador de expressão de CLR](../../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)   
  [Visualizador de Tipo e Visualizador Personalizado](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
-

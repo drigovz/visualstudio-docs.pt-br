@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a42cee0574d5cf5f0de50fb1e9923c9e54504a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426034"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Uma transformação é uma conversão individual de uma lista de itens para outra. Além de habilitar um projeto para converter as lista de itens, uma transformação permite que um destino identifique um mapeamento direto entre suas entradas e saídas. Este tópico explica as transformações e como o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] as utiliza na criação de projetos com mais eficiência.  
   
 ## <a name="transform-modifiers"></a>Modificadores de transformação  
@@ -35,7 +34,7 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 ```  
   
 > [!NOTE]
->  Você pode especificar um separador personalizado para uma lista de itens transformados da mesma maneira que especifica um separador para uma lista de itens padrão. Por exemplo, para separar uma lista de itens transformados usando uma vírgula (,) em vez do ponto-e-vírgula (;) padrão, use o XML a seguir.  
+> Você pode especificar um separador personalizado para uma lista de itens transformados da mesma maneira que especifica um separador para uma lista de itens padrão. Por exemplo, para separar uma lista de itens transformados usando uma vírgula (,) em vez do ponto-e-vírgula (;) padrão, use o XML a seguir.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -55,7 +54,7 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 ## <a name="dependency-analysis"></a>Análise de dependência  
  Transformações garantem um mapeamento individual entre a lista de itens transformados e a lista do item original. Portanto, se um destino cria saídas que são transformações das entradas, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode analisar os carimbos de hora das entradas e saídas e decida se deseja ignorar, compilar ou recompilar parcialmente um destino.  
   
- No [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos a `BuiltAssemblies` lista de itens é mapeado para um arquivo na pasta de destino da tarefa especificada com uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre como usar transformações e análise de dependência, veja [como: compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
+ No [tarefa Copy](../msbuild/copy-task.md) no exemplo a seguir, todos os arquivos a `BuiltAssemblies` lista de itens é mapeado para um arquivo na pasta de destino da tarefa especificada com uma transformação no `Outputs` atributo. Se um arquivo no `BuiltAssemblies` item alterações da lista, o `Copy` tarefa será executada somente para o arquivo alterado e todos os outros arquivos serão ignorados. Para saber mais sobre a análise de dependência e como usar transformações, confira [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md).  
   
 ```  
 <Target Name="CopyOutputs"  
@@ -112,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md)
+ [Como: compilar de forma incremental](../msbuild/how-to-build-incrementally.md)

@@ -1,23 +1,20 @@
 ---
 title: Exportar diagramas UML para arquivos de imagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: b29ce2a5-0ee3-4ab7-9aa3-13ca9c6b37a2
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: bd80ea5ce8cc1ee3778b3fc185746ee95ad3eacf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442942"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exportar diagramas UML para arquivos de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +27,7 @@ Você pode exportar um documento de UML de [!INCLUDE[vsprvs](../includes/vsprvs-
  O código a seguir define um comando de menu de atalho, também conhecido como um comando de menu de contexto, que salva uma imagem em um arquivo.  
   
 > [!NOTE]
->  Para fazer com que esse código funcione como um comando de menu, você deve incorporá-la em um componente MEF. Para obter mais informações, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Para fazer com que esse código funcione como um comando de menu, você deve incorporá-la em um componente MEF. Para obter mais informações, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  O código usa o primeiro <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> para obter o <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> da implementação subjacente. Esse tipo tem um método <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   
@@ -147,6 +144,3 @@ namespace SaveToImage
 ## <a name="see-also"></a>Consulte também  
  [Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)   
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

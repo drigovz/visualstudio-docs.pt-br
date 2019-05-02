@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b6844c20a5be1a963b37aa1e24536d4d33565405
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557290"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
 As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, é possível especificar que membros públicos devem ser escritos em maiúsculas ou que métodos assíncronos devem terminar com "Async". É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
 
-As convenções de nomenclatura devem ser ordenadas da mais específica para a menos específica no arquivo *.editorconfig*. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada.
+As convenções de nomenclatura devem ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Para cada convenção de nomenclatura, é necessário especificar os símbolos aos quais ela se aplica, um estilo de nomenclatura e uma gravidade para impor a convenção, usando as propriedades descritas abaixo. A ordem das propriedades não é importante.
 
@@ -73,18 +73,32 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
 - particulares
 - protegidos
 - protected\_internal or protected_friend
+- privado\_protegido
 - local
 
-> [!NOTE]
-> Não especifique um nível de acessibilidade como parte de sua convenção de nomenclatura se a acessibilidade não for aplicável ao tipo de símbolo para o qual você está direcionando. Por exemplo, parâmetros não tem níveis de acessibilidade. Se você especificar um nível de acessibilidade para uma convenção de nomenclatura de parâmetro, a regra de nomenclatura não funcionará corretamente.
+   O nível de acessibilidade `local` se aplica a símbolos definidos em um método. É útil para definir convenções de nomenclatura para símbolos cuja acessibilidade não pode ser especificada no código. Por exemplo, se você especificar `applicable_accessibilities = local` em uma convenção de nomenclatura para constantes (`required_modifiers = const`), a regra se aplicará apenas a constantes definidas em um método e não àquelas definidas em um tipo.
 
-### <a name="symbol-modifiers"></a>Modificadores de símbolo
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
+
+### <a name="symbol-modifiers-optional"></a>Modificadores de símbolo (opcional)
 
 Para descrever os modificadores dos símbolos aos quais você deseja aplicar a regra de nomenclatura, especifique um nome de propriedade no formato a seguir:
 
 `dotnet_naming_symbols.<symbolTitle>.required_modifiers = <values>`
 
-A lista a seguir mostra os valores permitidos e é possível especificar vários valores separando-os por vírgula. Uma regra de nomenclatura será correspondente somente a assinaturas que tenham todos os modificadores especificados em `required_modifiers`. Se você omitir essa propriedade, o valor padrão de uma lista vazia será usado, ou seja, modificadores específicos não são necessários para uma correspondência. Isso significa que os modificadores de um símbolo não têm efeito sobre a opção de aplicar essa regra ou não.
+A lista a seguir mostra os valores permitidos (separe vários valores por vírgula):
 
 - `abstract` ou `must_inherit`
 - `async`
@@ -95,7 +109,10 @@ A lista a seguir mostra os valores permitidos e é possível especificar vários
    > [!NOTE]
    > Se você tiver uma regra de nomenclatura para os símbolos `static` ou `shared`, ela também se aplicará aos símbolos `const` porque são implicitamente estáticos. Se não quiser que a regra de nomenclatura `static` se aplique aos símbolos `const`, crie uma regra de nomenclatura separada para os símbolos `const`.
 
-`required_modifiers` é uma propriedade opcional. Se você omitir esta propriedade, a regra de nomenclatura será aplicada a todos os modificadores.
+Uma regra de nomenclatura corresponde a assinaturas que tenham *todos* os modificadores especificados em `required_modifiers`. Se você omitir essa propriedade, o valor padrão de uma lista vazia será usado, ou seja, modificadores específicos não são necessários para uma correspondência. Isso significa que os modificadores de um símbolo não têm efeito sobre a opção de aplicar essa regra ou não.
+
+> [!TIP]
+> Não especifique um valor de `*` para `required_modifiers`. Em vez disso, basta omitir totalmente a propriedade `required_modifiers` que a regra de nomenclatura será aplicada a qualquer tipo de modificador.
 
 ## <a name="style"></a>Estilo
 
@@ -152,8 +169,8 @@ Severidade | Efeito
 ------------ | -------------
 nenhuma ou silenciosa | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
-aviso | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
-erro | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
+warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
+error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.
 
 > [!NOTE]
 > Não é necessário criar seu projeto para ver as violações de regras de nomenclatura. Elas são exibidas à medida que o código é editado, na **Lista de Erros** ou como uma sugestão.

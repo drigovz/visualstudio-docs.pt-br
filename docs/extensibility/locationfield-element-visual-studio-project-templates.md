@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856470"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>Elemento LocationField (modelos de projeto do Visual Studio)
 Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de diálogo é habilitada, desabilitada ou ocultada para o modelo de projeto.
@@ -51,11 +51,11 @@ Especifica se ou não a **local** caixa de texto a **novo projeto** caixa de di�
 
  Os valores de texto válidos são:
 
--   `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.
+- `Enabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está habilitada.
 
--   `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.
+- `Disabled`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está desabilitada.
 
--   `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.
+- `Hidden`, que especifica que o **local** caixa da **novo projeto** caixa de diálogo está oculto.
 
 ## <a name="remarks"></a>Comentários
  O valor padrão é `Enabled`.

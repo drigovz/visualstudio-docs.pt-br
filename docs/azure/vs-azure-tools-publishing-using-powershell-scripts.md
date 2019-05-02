@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 6d1e485e89c3455c61b1050575398cae17b4aaa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2198aac794362237e3b2b6321d9c9bda86108b79
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427073"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Usando scripts do Windows PowerShell para publicar para ambientes de desenvolvimento e teste
 
@@ -24,7 +24,7 @@ Usando esses scripts, você pode provisionar versões personalizadas (também co
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* SDK 2.3 do Azure ou posterior. Veja [Downloads do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=624384). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
+* O Visual Studio 2015 ou posterior com a **Carga de trabalho do Azure** instalada, ou o Visual Studio 2013 e Azure SDK 2.3 ou posterior. Veja [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (Você não precisa do SDK do Azure para gerar scripts para projetos Web. Esse recurso é para projetos Web, e não para as funções Web nos serviços de nuvem).
 * Azure PowerShell 0.7.4 ou posterior. Consulte [Como instalar e configurar o PowerShell do Azure](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) ou posterior.
 
@@ -154,7 +154,7 @@ Se você nunca executou um script do Windows PowerShell antes, deve primeiro def
 
    ![Criar pacote de implantação na Web](./media/vs-azure-tools-publishing-using-powershell-scripts/IC767885.png)
 
-   Para obter mais informações, confira [Como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-publish-scripts).
+   Para obter mais informações, confira [Como: criar um pacote de implantação da Web no Visual Studio](https://msdn.microsoft.com/library/dd465323.aspx). Você também pode automatizar a criação do pacote de Implantação da Web, conforme descrito em [Personalizando e estendendo os scripts de publicação](#customizing-and-extending-the-publish-scripts).
 
 1. No **Gerenciador de Soluções**, abra o menu de contexto do script e, em seguida, escolha **Abrir com o ISE do Windows PowerShell**.
 1. Se você estiver executando os scripts do Windows PowerShell neste computador pela primeira vez, abra uma janela de prompt de comando com privilégios de administrador e digite o seguinte comando:
@@ -242,7 +242,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
     }
     ```
 
-1. Substitua `New-WebDeployPackage` pelo seguinte código e substitua os espaços reservados na construção de linha `$msbuildCmd`. Esse código é para o Visual Studio 2017. Se você estiver usando o Visual Studio 2015, altere a propriedade **VisualStudioVersion** para `14.0` (`12.0` para Visual Studio 2013).
+1. Substitua `New-WebDeployPackage` pelo seguinte código e substitua os espaços reservados na construção de linha `$msbuildCmd`. Esse código é para o Visual Studio 2019. Se estiver usando o Visual Studio 2017, altere a propriedade **VisualStudioVersion** para `15.0`, "14.0" para Visual Studio 2015 ou `12.0` para Visual Studio 2013).
 
     ```powershell
     function New-WebDeployPackage
@@ -255,7 +255,7 @@ Para automatizar a criação de seu projeto, adicione o código que chama o MSBu
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'
 
-    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=15.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
+    $msbuildCmd = '"{0}" "{1}" /T:Rebuild;Package /P:VisualStudioVersion=16.0 /p:OutputPath="{2}\MSBuildOutputPath" /flp:logfile=msbuild.log,v=d' -f (Get-MSBuildCmd), $ProjectFile, $scriptDirectory
 
     Write-VerboseWithTime ('Build-WebDeployPackage: ' + $msbuildCmd)
     ```

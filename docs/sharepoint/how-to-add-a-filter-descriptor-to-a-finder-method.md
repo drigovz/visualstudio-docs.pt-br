@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fceb6270aea9da5af1a53adf7560df7dd3702349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418305"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Como: Adicionar um descritor de filtro a um método Finder
   Descritores de filtro permitem que os clientes do modelo passar valores para métodos antes de serem executados. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617776"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Para adicionar um descritor de filtro a um método Finder
 
-1.  No **detalhes do método BDC** janela, expanda o nó de um método Finder, expanda o **parâmetros** nó e, em seguida, adicione um parâmetro de entrada. Para obter mais informações, confira [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. No **detalhes do método BDC** janela, expanda o nó de um método Finder, expanda o **parâmetros** nó e, em seguida, adicione um parâmetro de entrada. Para obter mais informações, confira [Como: Adicionar um parâmetro a um método](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  No **detalhes do método** janela, escolha o descritor de tipo do parâmetro.
+2. No **detalhes do método** janela, escolha o descritor de tipo do parâmetro.
 
-3.  Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+3. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
 
-4.  No **propriedades** janela, defina as **nome do tipo** propriedade para um tipo de dados que é apropriado para o filtro.
+4. No **propriedades** janela, defina as **nome do tipo** propriedade para um tipo de dados que é apropriado para o filtro.
 
      Por exemplo, um filtro pode usar uma data do pedido para limitar o número de pedidos de vendas retornado pelo método. Para dar suporte a esse filtro, o **nome do tipo** propriedade do descritor de tipo deve ser definida como **System. DateTime**.
 
-5.  No **detalhes do método** janela, expanda o **descritores de filtro** nó.
+5. No **detalhes do método** janela, expanda o **descritores de filtro** nó.
 
-6.  Na **adicionar um descritor de filtro** , escolha **criar descritor de filtro**.
+6. Na **adicionar um descritor de filtro** , escolha **criar descritor de filtro**.
 
      Um novo descritor de filtro aparece sob o **descritores de filtro** nó.
 
-7.  Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+7. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
 
-8.  No **propriedades** janela, escolha o **tipo** propriedade.
+8. No **propriedades** janela, escolha o **tipo** propriedade.
 
 9. Na lista que aparece para o **tipo** propriedade, escolha o padrão de filtragem que você deseja.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56617776"
      O exemplo a seguir retorna as ordens de venda que têm a data do pedido especificado.
 
     > [!NOTE]
-    >  Substitua o valor da `ServerName` campo com o nome do seu servidor.
+    > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
      [!code-csharp[SP_BDC#11](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs#11)]
      [!code-vb[SP_BDC#11](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb#11)]

@@ -1,14 +1,9 @@
 ---
 title: Usando o atributo DebuggerDisplay | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -22,13 +17,13 @@ ms.assetid: f4eb7c76-af4e-493b-9ab6-9cb05949d9b3
 caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9637bd2d2a057615fd758ecec80a914931822b64
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736879"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437749"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Usando o atributo DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,20 +37,20 @@ O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, pr
  Se o depurador avalia nesse implícita `ToString()` chamada depende de uma configuração de usuário na **Ferramentas / opções / depuração** caixa de diálogo. O Visual Basic não implementa esta avaliação de `ToString()` implícita.  
   
 > [!IMPORTANT]
->  Se o **Mostrar estrutura bruta de objetos nas janelas de variáveis** caixa de seleção é marcada na **Ferramentas/opções / depuração** caixa de diálogo, em seguida, a `DebuggerDisplay` atributo é ignorado.  
+> Se o **Mostrar estrutura bruta de objetos nas janelas de variáveis** caixa de seleção é marcada na **Ferramentas/opções / depuração** caixa de diálogo, em seguida, a `DebuggerDisplay` atributo é ignorado.  
   
  A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e saídas de exemplo.  
   
 |Atributo|Saída aparecendo na **valor** coluna)|  
 |---------------|------------------------------------------------|  
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Usado em um tipo com campos `x` e `y`.|`x = 5 y = 18`|  
-|A sintaxe do parâmetro `[DebuggerDisplay("String value is {getString()}")]`pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|  
+|`[DebuggerDisplay("String value is {getString()}")]`A sintaxe de parâmetro pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|  
   
  `DebuggerDisplay` também pode aceitar parâmetros nomeados.  
   
 |Parâmetros|Finalidade|  
 |----------------|-------------|  
-|`Name`, `Type`|Esses parâmetros afetam o **nome** e **tipo** colunas das janelas variáveis. (Podem ser definidos como cadeias de caracteres usando a mesma sintaxe que o construtor.) Usar esses parâmetros demais ou usá-los incorretamente pode causar uma saída confusa.|  
+|`Name`, `Type`|Esses parâmetros afetam as colunas **Nome** e **Tipo** das janelas variáveis. (Podem ser definidos como cadeias de caracteres usando a mesma sintaxe que o construtor.) Usar esses parâmetros demais ou usá-los incorretamente pode causar uma saída confusa.|  
 |`Target`, `TargetTypeName`|Especifica o tipo de destino quando o atributo é usado no nível de assembly.|  
   
  O arquivo autoexp.cs usa o atributo DebuggerDisplay no nível do assembly. O arquivo autoexp.cs determina as expansões padrão que o Visual Studio usa para objetos do .NET. Você pode examinar o arquivo autoexp.cs para obter exemplos de como usar o atributo DebuggerDisplay, ou você pode modificar e compilar o arquivo autoexp.cs para alterar as expansões padrão. Faça backup do arquivo autoexp.cs antes de modificá-lo.  
@@ -72,7 +67,7 @@ csc /t:library autoexp.cs
 ## <a name="using-expressions-in-debuggerdisplay"></a>Usando expressões em DebuggerDisplay  
  Embora você possa usar uma expressão geral entre as chaves em um atributo DebuggerDisplay, esta prática não é recomendada.  
   
- Uma expressão geral em DebuggerDisplay tem acesso implícito ao ponteiro `this` somente para a instância atual do tipo de destino. A expressão não tem acesso a alias, locais ou ponteiros. Se a expressão fizer referência a propriedades, os atributos nessas propriedades não serão processados. Por exemplo, o código c# `[DebuggerDisplay("Object {count - 2}"` exibiria `Object 6` se o campo `count` fosse 8.  
+ Uma expressão geral em DebuggerDisplay tem acesso implícito ao ponteiro `this` somente para a instância atual do tipo de destino. A expressão não tem acesso a alias, locais ou ponteiros. Se a expressão fizer referência a propriedades, os atributos nessas propriedades não serão processados. Por exemplo, o código C# `[DebuggerDisplay("Object {count - 2}"` exibiria `Object 6` se o campo `count` fosse 8.  
   
  Usar expressões em DebuggerDisplay pode resultar nos seguintes problemas:  
   
@@ -101,11 +96,11 @@ public sealed class MyClass
 ```  
   
 ## <a name="example"></a>Exemplo  
- O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibidos em uma janela de variáveis do depurador, como o **inspeção** janela, ela produz uma expansão tem esta aparência:  
+ O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibido em uma janela variáveis de depurador, como, por exemplo, a janela **Inspeção**, ele produz uma expansão semelhante ao seguinte:  
   
 |**Nome**|**Valor**|**Tipo**|  
 |--------------|---------------|--------------|  
-|Key|"three"|object {string}|  
+|Chave|"three"|object {string}|  
 |Valor|3|object {int}|  
   
 ```csharp  
@@ -186,6 +181,3 @@ class MyHashtable
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o atributo DebuggerTypeProxy](../debugger/using-debuggertypeproxy-attribute.md) [aprimorando a depuração com os atributos de exibição do depurador](http://msdn.microsoft.com/library/72bb7aa9-459b-42c4-9163-9312fab4c410)
-
-
-

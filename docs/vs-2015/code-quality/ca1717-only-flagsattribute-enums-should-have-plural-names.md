@@ -1,14 +1,9 @@
 ---
 title: 'CA1717: Apenas enums FlagsAttribute devem ter nomes plurais | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1717
 - OnlyFlagsEnumsShouldHavePluralNames
@@ -20,14 +15,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fd02409bd3805544effd1d53f5be2318b03fea90
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: cc585c348451e0189caeabaf6269606e6b73b219
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49833441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431869"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: apenas enums FlagsAttribute devem ter nomes plurais
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Apenas enumerações FlagsAttribute devem ter nomes no plural
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -54,14 +49,11 @@ ms.locfileid: "49833441"
  É seguro suprimir um aviso da regra se o nome terminar em uma palavra no singular.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1714: enums de sinalizadores devem ter nomes plurais](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+ [CA1714: Enums de sinalizadores devem ter nomes plurais](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
 
- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.FlagsAttribute?displayProperty=fullName> [Design de enumeração](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-
+ <xref:System.FlagsAttribute?displayProperty=fullName> [Enum Design](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

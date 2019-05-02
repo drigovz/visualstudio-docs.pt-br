@@ -6,10 +6,15 @@ Manager: lank
 layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
-Description: Welcome to Visual Studio Subscriptions
+Description: Bem-vindo às Assinaturas do Visual Studio
 Searchscope: VS Subscription
+ms.openlocfilehash: bac5cbd1ae0da5d4607b566af898c28efc0876ad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62579936"
 ---
-
 # <a name="visual-studio-subscriptions"></a>Assinaturas do Visual Studio
 
 As assinaturas do Visual Studio são um conjunto abrangente de recursos para criar, implantar e gerenciar grandes aplicativos em suas plataformas e dispositivos preferidos, incluindo Windows, iOS, Android e Linux.  Os benefícios das assinaturas são: acesso a ferramentas para desenvolvedores, serviços de nuvem e software, treinamento e suporte para necessidades de desenvolvimento e teste.
@@ -19,6 +24,7 @@ As assinaturas do Visual Studio são um conjunto abrangente de recursos para cri
 Os administradores entram em [https://manage.visualstudio.com](https://manage.visualstudio.com) para atribuir assinaturas às suas equipes.<br>
 Os assinantes entram em [https://my.visualstudio.com](https://my.visualstudio.com) para acessar os benefícios da assinatura.
 
+<!-- markdownlint-disable MD033 -->
 <ul class="panelContent cardsFTitle">
     <li>
         <a href="/azure/">
@@ -150,7 +156,7 @@ Para tornar sua assinatura ainda mais útil, podemos adicionar e atualizar os be
                         <ul>
                             <li><a href="/visualstudio/subscriptions/vs-ide-benefit">Visual Studio</a></li>
                             <li>Visual Studio para Mac</li>
-                            <li>Team Foundation Server e CAL do TFS</li>
+                            <li>Azure DevOps Server e CAL</li>
                         </ul>
                     </div>
                 </div>

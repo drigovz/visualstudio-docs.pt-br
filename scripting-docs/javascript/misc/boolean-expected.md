@@ -2,7 +2,7 @@
 title: Booliano esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
-ms.technology: javascript
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.WebClient.Help.SCRIPT5010
@@ -14,12 +14,12 @@ ms.assetid: 35d71b7f-53fd-44c4-a7c7-b1550c65cfd4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 82123fe2a38b3de1d6e6c015f47bc5f7edd02791
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 261cf0ad93208c0eac09e42dcd68853352318e88
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817894"
 ---
 # <a name="boolean-expected"></a>Booliano esperado
 Você tentou invocar o **Boolean.prototype.toString** ou **Boolean.prototype.valueOf** método em um objeto de um tipo diferente de `Boolean`. O objeto desse tipo de invocação deve ser do tipo `Boolean`. Por exemplo:

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945213"
 ---
 # <a name="accessibility-in-office-projects"></a>Acessibilidade em projetos do Office
 
@@ -40,21 +40,21 @@ Na maioria dos casos, os projetos do Office no Visual Studio atende aos padrões
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Para exibir as teclas de atalho para controles e guias da faixa de opções no designer
 
-1.  No Visual Studio, sobre o **ferramentas** menu, clique em **opções**.
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **opções**.
 
-2.  Expanda o **ferramentas do Office** nó e selecione **teclado do Microsoft Office Excel** ou **teclado do Microsoft Office Word**, conforme apropriado.
+2. Expanda o **ferramentas do Office** nó e selecione **teclado do Microsoft Office Excel** ou **teclado do Microsoft Office Word**, conforme apropriado.
 
-3.  Selecione **esquema de teclado dinâmico**.
+3. Selecione **esquema de teclado dinâmico**.
 
      Será exibida uma mensagem informando que você deve reiniciar o Visual Studio para que a alteração tenha efeito.
 
-4.  Clique em **OK**.
+4. Clique em **OK**.
 
-5.  Reinicie o Visual Studio e, em seguida, reabra o projeto.
+5. Reinicie o Visual Studio e, em seguida, reabra o projeto.
 
-6.  Abra o designer do documento ou pasta de trabalho para o seu projeto.
+6. Abra o designer do documento ou pasta de trabalho para o seu projeto.
 
-7.  Pressione **F6** para exibir as teclas de atalho para a faixa de opções.
+7. Pressione **F6** para exibir as teclas de atalho para a faixa de opções.
 
 ## <a name="accessibility-at-runtime"></a>Acessibilidade no tempo de execução
 

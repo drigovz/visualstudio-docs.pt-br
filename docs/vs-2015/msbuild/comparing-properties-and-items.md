@@ -11,22 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095822"
 ---
 # <a name="comparing-properties-and-items"></a>Comparando propriedades e itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.  
   
--   Propriedades são pares nome-valor. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).  
+- Propriedades são pares nome-valor. Para mais informações, consulte [Propriedades do MSBuild](msbuild-properties1.md).  
   
--   Itens são objetos que normalmente representam arquivos. Objetos de item podem ter coleções de metadados associadas. Metadados são pares nome-valor. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
+- Itens são objetos que normalmente representam arquivos. Objetos de item podem ter coleções de metadados associadas. Metadados são pares nome-valor. Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Escalares e vetores  
  Como as propriedades do MSBuild são pares nome-valor que têm apenas um valor de cadeia de caracteres, eles geralmente são descritos como *escalar*. Como os tipos de item do MSBuild são listas de itens, eles geralmente são descritos como *vetor*. No entanto, na prática, as propriedades podem representar vários valores e os tipos de item podem ter zero ou um item.  
@@ -97,15 +96,15 @@ Itens e propriedades do MSBuild são usados para passar informações para taref
   
 - Durante a fase de avaliação de um build:  
   
-  -   As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.  
+  - As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.  
   
-  -   As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.  
+  - As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.  
   
-  -   Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.  
+  - Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.  
   
 - Durante a fase de execução de um build:  
   
-  -   As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.  
+  - As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efeitos sutis da ordem de avaliação  
  Na fase de avaliação de um build, a avaliação da propriedade precede a avaliação do item. No entanto, as propriedades podem ter valores que parecem depender de valores de item. Considere o script a seguir.  

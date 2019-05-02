@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412251"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Atalhos de teclado e mouse no diagrama de classe e janela Detalhes da Classe (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ ms.locfileid: "54775821"
   
  **Neste tópico**  
   
--   [Usando o mouse no Designer de Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Usando o mouse no Designer de Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Usando o mouse na Janela Detalhes da Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Usando o mouse na Janela Detalhes da Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Usando o teclado no Designer de Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Usando o teclado no Designer de Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Usando o teclado na Janela Detalhes da Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Usando o teclado na Janela Detalhes da Classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Usando o mouse no Designer de Classe  
+## <a name="MouseClassDesigner"></a> Usando o mouse no Designer de Classe  
  As seguintes ações do mouse têm suporte em diagramas de classe:  
   
 |Combinação do mouse|Contexto|Descrição|  
@@ -49,20 +49,20 @@ ms.locfileid: "54775821"
 |CTRL + botão de rolagem do mouse|Diagrama de classe|Zoom.|  
 |CTRL + Shift + clique|Diagrama de classe|Zoom.|  
   
-##  <a name="MouseClassDetails"></a> Usando o mouse na Janela Detalhes da Classe  
+## <a name="MouseClassDetails"></a> Usando o mouse na Janela Detalhes da Classe  
  Usando um mouse, você pode alterar a aparência da Janela Detalhes da Classe e os dados que ela exibe das seguintes maneiras:  
   
--   Clicar em qualquer célula editável permite editar o conteúdo da célula. As alterações são refletidas em todos os locais em que dados são armazenados ou exibidos, incluindo na janela Propriedades e no código-fonte.  
+- Clicar em qualquer célula editável permite editar o conteúdo da célula. As alterações são refletidas em todos os locais em que dados são armazenados ou exibidos, incluindo na janela Propriedades e no código-fonte.  
   
--   Clicar em qualquer célula de uma linha faz com que a janela Propriedades exiba as propriedades do elemento representado pela linha.  
+- Clicar em qualquer célula de uma linha faz com que a janela Propriedades exiba as propriedades do elemento representado pela linha.  
   
--   Para alterar a largura de uma coluna, arraste o limite do lado direito do título de coluna até que a coluna tenha a largura desejada.  
+- Para alterar a largura de uma coluna, arraste o limite do lado direito do título de coluna até que a coluna tenha a largura desejada.  
   
--   É possível expandir ou recolher nós de propriedade ou compartimento clicando nos símbolos de direção à esquerda da linha.  
+- É possível expandir ou recolher nós de propriedade ou compartimento clicando nos símbolos de direção à esquerda da linha.  
   
--   A Janela Detalhes da Classe oferece vários botões para a criação de novos membros na classe atual e para navegar entre os compartimentos dos membros na grade da Janela Detalhes da Classe. Para obter mais informações, consulte Botões da Janela Detalhes da Classe.  
+- A Janela Detalhes da Classe oferece vários botões para a criação de novos membros na classe atual e para navegar entre os compartimentos dos membros na grade da Janela Detalhes da Classe. Para obter mais informações, consulte Botões da Janela Detalhes da Classe.  
   
-##  <a name="KeyboardClassDesigner"></a> Usando o teclado no Designer de Classe  
+## <a name="KeyboardClassDesigner"></a> Usando o teclado no Designer de Classe  
  As seguintes ações do teclado têm suporte em diagramas de classe:  
   
 |Chave|Contexto|Descrição|  
@@ -89,10 +89,10 @@ ms.locfileid: "54775821"
 |SHIFT+TAB|Todos os contextos|Navega até o filho anterior dentro do mesmo pai (dá suporte a encapsulamento).|  
 |ESPAÇO|Todos os contextos|Alterna a seleção no elemento atual.|  
   
-##  <a name="KeyboardClassDetails"></a> Usando o teclado na Janela Detalhes da Classe  
+## <a name="KeyboardClassDetails"></a> Usando o teclado na Janela Detalhes da Classe  
   
 > [!NOTE]
->  As seguintes associações de teclas foram escolhidas para reproduzir especificamente a experiência de digitar código.  
+> As seguintes associações de teclas foram escolhidas para reproduzir especificamente a experiência de digitar código.  
   
  Use as teclas a seguir para navegar na Janela Detalhes da Classe:  
   

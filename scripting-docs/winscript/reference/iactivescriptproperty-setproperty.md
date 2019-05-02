@@ -2,7 +2,6 @@
 title: IActiveScriptProperty::SetProperty | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 683041b50002cb926a36e4f10d6758246af91726
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: d689b7b2a252b208ae578f9bfd95ab93777f7cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54090760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385960"
 ---
 # <a name="iactivescriptpropertysetproperty"></a>IActiveScriptProperty::SetProperty
 Define a propriedade que é especificada pelo parâmetro.  
@@ -77,7 +76,7 @@ HRESULT SetProperty(
  Para selecionar o conjunto de recursos de idioma com suporte quando o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script é inicializado, invocar `SetProperty` e passar um valor que corresponde ao recurso de idioma definido para ser habilitado para SCRIPTPROP_INVOKEVERSIONING. Se essa propriedade é definida como 1 (SCRIPTLANGUAGEVERSION_5_7), os recursos de linguagem disponíveis são as mesmas que apareceu na versão 5.7 do [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script. Se ele for definido como 2 (SCRIPTLANGUAGEVERSION_5_8), os recursos de linguagem disponíveis são aquelas que apareceu na versão 5.7, além de novos recursos que foram adicionados na versão 5.8. Por padrão, essa propriedade é definida como 0 (SCRIPTLANGUAGEVERSION_DEFAULT), que é equivalente ao conjunto de recursos de linguagem que apareceu na versão 5.7, a menos que o host oferece suporte a um comportamento diferente do padrão. Por exemplo, o Internet Explorer 8 aceita a [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] recursos de linguagem que são suportados pela versão 5.8 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script por padrão quando o modo de documento padrão do Internet Explorer 8 é o modo de "Padrões do Internet Explorer 8". Alternar o modo de documento do Internet Explorer 8 para os padrões do Internet Explorer 7 ou o modo Quirks redefine o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script para dar suporte a apenas o conjunto de recursos de linguagem que existiam na versão 5.7 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script.  
   
 > [!NOTE]
->  SCRIPTPROP_INVOKEVERSIONING deve ser definido somente quando o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script está sendo inicializado.  
+> SCRIPTPROP_INVOKEVERSIONING deve ser definido somente quando o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] mecanismo de script está sendo inicializado.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra como forçar o mecanismo de script para usar a divisão de inteiro e como permitir que a sobrecarga da função de comparação.  

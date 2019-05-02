@@ -14,14 +14,14 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8905470513f48bb284749a9fa0fb0e0fc73096f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002499"
 ---
-# <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho Web codificado
+# <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho para Web codificado
 
 Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes são incluídos em testes de carga para medir o desempenho de seu aplicativo Web sob o estresse de vários usuários. Um teste de desempenho na Web pode ser convertido em um script baseado em código que você pode editar e personalizar como qualquer outro código-fonte. Por exemplo, você pode adicionar constructos de loop e de ramificação.
 
@@ -29,13 +29,13 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 
 ## <a name="generate-a-coded-web-performance-test"></a>Gerar um teste de desempenho na Web codificado
 
-1.  Se não tiver criado um teste de desempenho Web, consulte [Gravar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project?view=vsts).
+1. Se não tiver criado um teste de desempenho Web, consulte [Gravar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Gere o teste codificado.
+2. Gere o teste codificado.
 
      ![Gerar um teste de desempenho na Web codificado](../test/media/web_test_coded_generate.png)
 
-3.  Nomeie o teste.
+3. Nomeie o teste.
 
      ![Insira um nome para o teste de desempenho Web codificado](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 
      Você pode ver no código que o método GetRequestEnumerator() em C# ou o método Run() em Visual Basic contém cada regra de validação e solicitação da Web que estava no teste gravado.
 
-4.  Para demonstrar a adição de alguns códigos simples, role para baixo até o final do método e depois do código da solicitação da Web mais recente e adicione o seguinte código:
+4. Para demonstrar a adição de alguns códigos simples, role para baixo até o final do método e depois do código da solicitação da Web mais recente e adicione o seguinte código:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
     End If
     ```
 
-5.  Compile a solução para verificar se o código personalizado é compilado.
+5. Compile a solução para verificar se o código personalizado é compilado.
 
-6.  Execute o teste.
+6. Execute o teste.
 
      ![Executar o teste de desempenho Web codificado](../test/media/web_test_coded_generate_run.png)
 

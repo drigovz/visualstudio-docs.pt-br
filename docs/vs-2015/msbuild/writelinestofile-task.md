@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b25318a9b453ee9f9b05b22e7130555b5a14d556
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f530648c7dd772fb60148f4d755d4a4ffb420cbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62419953"
 ---
 # <a name="writelinestofile-task"></a>Tarefa WriteLinesToFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Grava os caminhos dos itens especificados no arquivo de texto especificado.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  

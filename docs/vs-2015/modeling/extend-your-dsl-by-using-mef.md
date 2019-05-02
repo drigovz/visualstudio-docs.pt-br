@@ -1,23 +1,20 @@
 ---
 title: Estender a DSL usando MEF | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 3e7be79a-53ab-4d79-863a-bef8d27839bd
 caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd5e4727c4352ca27d905bad608c4a1c17284f9b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49930629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442257"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
     Nome do arquivo: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
+   > O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  
@@ -140,15 +137,15 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
 3. Adicione referências aos assemblies do .NET a seguir:  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0.dll  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
+   - Microsoft.VisualStudio.Modeling.Sdk.Shell.11.0.dll  
   
-   -   System.ComponentModel.Composition.dll  
+   - System.ComponentModel.Composition.dll  
   
-   -   System.Windows.Forms.dll  
+   - System.Windows.Forms.dll  
   
 4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
   
@@ -250,7 +247,7 @@ namespace MyMefExtension
 ### <a name="gesture-handlers"></a>Manipuladores de gestos  
  Um manipulador de gesto pode lidar com objetos arrastados para o diagrama de qualquer lugar, dentro ou fora de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. O exemplo a seguir permite que o usuário arrastar arquivos do Windows Explorer para o diagrama. Ele cria elementos que contêm os nomes de arquivo.  
   
- Você pode escrever manipuladores para lidar com obstáculos de outros modelos DSL e modelos UML. Para obter mais informações, consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
+ Você pode escrever manipuladores para lidar com obstáculos de outros modelos DSL e modelos UML. Para obter mais informações, confira [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
 ```  
   
@@ -380,8 +377,5 @@ namespace MefExtension
 ## <a name="see-also"></a>Consulte também  
  [Envio de extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde)   
- [Como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
+ [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)   
  [Validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md)
-
-
-

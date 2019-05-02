@@ -1,6 +1,6 @@
 ---
 title: Caixa de diálogo Documentos, Ambiente, Opções
-ms.date: 11/04/2016
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.Environment.Documents
@@ -31,28 +31,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bc9e25d5e077ba4fa2b0c56de3dd3f05d87fdbc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827044"
 ---
-# <a name="documents-environment-options-dialog-box"></a>Caixa de diálogo Documentos, Ambiente, Opções
+# <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo Opções: Ambiente \> documentos
 
-Use esta página da caixa de diálogo **Opções** para controlar a exibição de documentos no IDE (ambiente de desenvolvimento integrado) e gerenciar alterações externas em documentos e arquivos. É possível acessar essa caixa de diálogo clicando em **Opções** no menu **Ferramentas** e selecionando **Documentos** no nó **Ambiente**. Se **Documentos** não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.
-
-**Reutilizar a janela do documento atual, se tiver sido salva**
-
-Quando selecionado, fecha o documento atual se ele tiver sido salvo e abre um novo documento na mesma janela. Se o documento atual não tiver sido salvo, ele permanecerá aberto e o novo documento será aberto em uma janela separada. Quando essa opção está desmarcada, novos documentos sempre são abertos em janelas separadas.
-
-Se você executar operações de recortar e colar em vários documentos com pouca frequência e desejar minimizar o número de documentos e janelas abertas em seu espaço de trabalho, tente esta opção.
+Use esta página da caixa de diálogo **Opções** para controlar a exibição de documentos no IDE (ambiente de desenvolvimento integrado) e gerenciar alterações externas em documentos e arquivos. Para acessar essa caixa de diálogo, clique em **Opções**, no menu **Ferramentas** e selecione **Ambiente** > **Documentos**.
 
 **Detectar quando o arquivo foi alterado fora do ambiente**
 
 Quando essa opção é selecionada, uma mensagem notifica você imediatamente sobre alterações em um arquivo aberto que foram feitas por um editor fora do IDE. A mensagem permite recarregar o arquivo do armazenamento.
 
-**Carregar alterações automaticamente, se tiverem sido salvas**
+**Recarregar arquivos modificados a menos que haja alterações não salvas**
 
 Quando **Detectar quando o arquivo foi alterado fora do ambiente** está selecionado e um arquivo aberto no IDE é alterado fora do IDE, uma mensagem de aviso é gerada por padrão. Se essa opção estiver habilitada, nenhum aviso será exibido e o documento será recarregado no IDE para acompanhar alterações externas.
 
@@ -79,9 +73,9 @@ Selecione esta opção para exibir o nó **Arquivos Diversos** no **Gerenciador 
 > [!NOTE]
 > Selecione esta opção para habilitar o comando **Exibir no Navegador** no menu **Arquivo** para documentos da Web não incluídos no aplicativo Web ativo.
 
-**\<** *n* **> itens salvos no projeto de arquivos diversos**
+**Itens salvos no projeto Arquivos diversos**
 
-Especifica o número de arquivos a persistir na pasta **MiscellaneousFiles** do **Gerenciador de Soluções**. Esses arquivos são listados mesmo que não estejam mais abertos em um editor. É possível especificar qualquer número inteiro entre 0 e 256. O número padrão é 0.
+Especifica o número de arquivos a persistir na pasta **Arquivos diversos** do **Gerenciador de Soluções**. Esses arquivos são listados mesmo que não estejam mais abertos em um editor. É possível especificar qualquer número inteiro entre 0 e 256. O número padrão é 0.
 
 Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos abertos, quando você fechar todos os 10 arquivos, os 5 primeiros ainda aparecerão na pasta **Arquivos Diversos**.
 

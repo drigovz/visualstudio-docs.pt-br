@@ -1,14 +1,9 @@
 ---
 title: IDebugProperty3 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugProperty3
 helpviewer_keywords:
@@ -16,26 +11,26 @@ helpviewer_keywords:
 ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e209c41df5b9994d206fb07f47909cf8523364bf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100567"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Essa interface oferece suporte para:  
   
--   Recuperando uma cadeia de caracteres de forma arbitrária, longa associada à propriedade.  
+- Recuperando uma cadeia de caracteres de forma arbitrária, longa associada à propriedade.  
   
--   Associando uma ID exclusiva com a propriedade.  
+- Associando uma ID exclusiva com a propriedade.  
   
--   Recuperando uma lista de visualizadores personalizados para a propriedade.  
+- Recuperando uma lista de visualizadores personalizados para a propriedade.  
   
--   Definindo o valor de uma propriedade com a capacidade de relatar os erros resultantes  
+- Definindo o valor de uma propriedade com a capacidade de relatar os erros resultantes  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -66,7 +61,7 @@ IDebugProperty3 : IDebugProperty2
  [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) é a maneira preferencial para o Gerenciador de sessão de depuração (SDM) para definir o valor da propriedade.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -76,4 +71,3 @@ IDebugProperty3 : IDebugProperty2
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)   
  [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
-

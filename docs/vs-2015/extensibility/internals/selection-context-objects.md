@@ -1,27 +1,22 @@
 ---
 title: Objetos de contexto de seleção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - selection, tracking
 - selection, context objects
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: beaf1b9c67cdad3237d1ac48b4a8e464b0a203a7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092182"
 ---
 # <a name="selection-context-objects"></a>Objetos de contexto da seleção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,11 +35,11 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento 
   
   A sequência a seguir mostra o curso típico de acompanhamento da seleção.  
   
-1.  Recupera o contexto da seleção da janela recém-aberta o IDE e o coloca no contexto global de seleção. Se o contexto da seleção usa HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, essa informação não é propagada para o contexto global. Para obter mais informações, consulte [comentários ao usuário](../../extensibility/internals/feedback-to-the-user.md).  
+1. Recupera o contexto da seleção da janela recém-aberta o IDE e o coloca no contexto global de seleção. Se o contexto da seleção usa HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, essa informação não é propagada para o contexto global. Para obter mais informações, consulte [comentários ao usuário](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  Eventos de notificação forem transmitidos para qualquer VSPackage que solicitou.  
+2. Eventos de notificação forem transmitidos para qualquer VSPackage que solicitou.  
   
-3.  O VSPackage atua nos eventos que ele recebe ao executar atividades como a atualização de uma hierarquia, reativando uma ferramenta ou outras tarefas semelhantes.  
+3. O VSPackage atua nos eventos que ele recebe ao executar atividades como a atualização de uma hierarquia, reativando uma ferramenta ou outras tarefas semelhantes.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   
@@ -52,4 +47,3 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento 
  [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)   
  [Seleção e moeda no IDE](../../extensibility/internals/selection-and-currency-in-the-ide.md)   
  [Tipos de projeto](../../extensibility/internals/project-types.md)
-

@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441696"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para trabalhar de forma independente nos arquivos de um projeto ou de uma solução. Enquanto você tiver uma solução aberta, pode abrir e modificar arquivos sem adicioná-los a uma solução ou um projeto. Os arquivos com os quais você deseja trabalhar independentemente dos contêineres são chamados de arquivos diversos. Os arquivos diversos são externos às soluções e projetos, não estão incluídos em builds e não podem ser incluídos com uma solução sob controle do código-fonte.  
   
  Abrir arquivos independentemente de um contêiner é útil para uma variedade de razões. Você pode ter um arquivo que deseja exibir enquanto desenvolve uma solução baseada em projeto, mas que não é parte integrante do desenvolvimento da solução. Exemplos comuns incluem instruções ou anotações de desenvolvimento, esquema de banco de dados e fragmentos de código. Além disso, você talvez queira criar um arquivo autônomo.  
@@ -43,7 +42,7 @@ Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  A pasta Arquivos Diversos representa os arquivos como links. Embora essa pasta não seja parte de uma solução, quando você abre uma solução, alguns ou todos os arquivos diversos que estavam abertos quando a solução foi fechada pela última vez são reabertos, dependendo das configurações da pasta.  
   
 > [!NOTE]
->  Alguns dos arquivos que não aparecem na pasta Arquivos Diversos são arquivos que você não pode modificar dentro do IDE, como arquivos .zip e arquivos .doc. O IDE não rastreará arquivos que podem ser modificados apenas por um editor externo.  
+> Alguns dos arquivos que não aparecem na pasta Arquivos Diversos são arquivos que você não pode modificar dentro do IDE, como arquivos .zip e arquivos .doc. O IDE não rastreará arquivos que podem ser modificados apenas por um editor externo.  
   
 ## <a name="commands-available-in-the-ide"></a>Comandos disponíveis no IDE  
  Os menus, barras de ferramentas e os comandos que eles contêm mudam com base no formato do arquivo aberto. Quando você abre um arquivo de texto, por exemplo, a barra de ferramentas Editor de Texto aparece e seus comandos estão disponíveis. Se você abrir um arquivo de Esquema XML, a barra de ferramentas Esquema XML será exibida. Ao editar o Esquema XML, os comandos da barra de ferramentas Editor de Texto (ou a barra de ferramentas em si) estão indisponíveis. O Esquema XML é a janela ativa e como tal, tem contexto de seleção atual. Quando você muda entre um arquivo de projeto e um arquivo diverso, todos os comandos relacionados ao projeto desaparecem e somente aqueles que estão diretamente relacionados aos arquivos diversos são exibidos.  

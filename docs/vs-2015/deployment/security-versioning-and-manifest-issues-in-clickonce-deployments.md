@@ -1,14 +1,9 @@
 ---
 title: Segurança, controle de versão e problemas de manifesto em implantações do ClickOnce | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -28,13 +23,13 @@ ms.assetid: d5d0c90b-ac1a-44e2-88dc-0d0ffd881624
 caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: 77685b2eb6397d1edf9a342c25838fcefac2e619
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a4864d37cb5930075b292ee765bce9b288794019
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49289218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444982"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +67,11 @@ Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../includes/ndpteccl
   
  Se você tiver editado manualmente seus manifestos de implantação ou de aplicativo, você pode ter acidentalmente corrompida-los. Manifesto corrompido impedirá que um correto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalação. Você pode depurar esses erros em tempo de execução clicando **detalhes** na **ClickOnce erro** caixa de diálogo e ler a mensagem de erro no log. O log listará uma das seguintes mensagens:  
   
--   Uma descrição do erro de sintaxe e o número de linha e o caractere posição onde ocorreu o erro.  
+- Uma descrição do erro de sintaxe e o número de linha e o caractere posição onde ocorreu o erro.  
   
--   O nome de um elemento ou atributo usado em violação do esquema do manifesto. Se você tiver adicionado o XML manualmente para seus manifestos, você precisará comparar suas adições para os esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
+- O nome de um elemento ou atributo usado em violação do esquema do manifesto. Se você tiver adicionado o XML manualmente para seus manifestos, você precisará comparar suas adições para os esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Um conflito de ID. Referências de dependência nos manifestos de implantação e o aplicativo devem ser exclusivas em ambos os seus `name` e `publicKeyToken` atributos. Se corresponderem a ambos os atributos entre dois elementos dentro de um manifesto, análise de manifesto não terá êxito.  
+- Um conflito de ID. Referências de dependência nos manifestos de implantação e o aplicativo devem ser exclusivas em ambos os seus `name` e `publicKeyToken` atributos. Se corresponderem a ambos os atributos entre dois elementos dentro de um manifesto, análise de manifesto não terá êxito.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauções ao alterar manualmente os manifestos ou aplicativos  
  Quando você atualiza um manifesto de aplicativo, você deve reassinar o manifesto do aplicativo e o manifesto de implantação. O manifesto de implantação contém uma referência ao manifesto do aplicativo que inclui o hash do arquivo e sua assinatura digital.  
@@ -93,12 +88,9 @@ Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../includes/ndpteccl
  Se você deseja mover ou copiar um aplicativo, você também deverá atualizar o `deploymentProvider` caminho, para que o cliente é instalado, na verdade, de um novo local. Atualizar esse caminho é principalmente uma preocupação, se você tiver instalado os aplicativos. Para aplicativos online sempre são iniciados por meio da URL original, definindo o `deploymentProvider` é opcional. Se `deploymentProvider` for definido, isso será respeitado; caso contrário, a URL usada para iniciar o aplicativo será usada como a URL base para baixar os arquivos de aplicativo.  
   
 > [!NOTE]
->  Sempre que você atualiza o manifesto você deve também assiná-lo novamente.  
+> Sempre que você atualiza o manifesto você deve também assiná-lo novamente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Solucionando problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Escolhendo uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
-
-
-

@@ -3,23 +3,23 @@ title: Usar modelos do CookieCutter com o Python
 description: O Visual Studio oferece suporte à extensão Cookiecutter gráfica para descobrir os modelos para o código Python e criar projetos a partir desses modelos.
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 14482019ceb3e7d717592923b4e6b59eacc0eba2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832129"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
-O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e pode ser instalado separadamente em versões anteriores do Visual Studio.
+O [Cookiecutter](https://cookiecutter.readthedocs.io/en/latest/) fornece uma interface gráfica do usuário para descobrir modelos e opções de modelo de entrada e criar projetos e arquivos. Ele é incluído no Visual Studio 2017 e posterior e pode ser instalado separadamente em versões anteriores do Visual Studio.
 
 O Cookiecutter exige o Python 3.3 ou posterior (32 ou 64 bits) ou o Anaconda 3 4.2 ou posterior (32 ou 64 bits). Se um interpretador do Python adequado não estiver disponível, o Visual Studio exibirá um aviso. Se você instalar um interpretador do Python enquanto o Visual Studio estiver em execução, clique no botão **Início** na barra de ferramentas do Cookiecutter para detectar o interpretador recém-instalado. (Consulte [Ambientes do Python](managing-python-environments-in-visual-studio.md) para obter mais informações sobre ambientes em geral.)
 

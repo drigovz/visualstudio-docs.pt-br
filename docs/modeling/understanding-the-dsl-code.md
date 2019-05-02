@@ -9,25 +9,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29424efe9b6d170033853e1959073406626b7be0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386699"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
+
 Uma solução de linguagem específica do domínio (DSL) gera uma API que você pode usar para ler e atualizar instâncias da DSL no Visual Studio. Essa API é definida no código que é gerado na definição da DSL. Este tópico descreve a API gerada.
 
 ## <a name="the-example-solution-component-diagrams"></a>A solução de exemplo: Diagramas de componente
- Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.
+
+Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.
 
 > [!NOTE]
->  O modelo DSL de diagramas de componente não está relacionado aos diagramas de componente UML que você pode criar usando o menu de arquitetura no Visual Studio. No **novo projeto** diálogo caixa, expanda **outros tipos/extensibilidades do projeto** e, em seguida, clique em **Designer de linguagem específica do domínio**.
+> O modelo DSL de diagramas de componente é chamado **Designer de linguagem específica do domínio**.
 
- Pressione F5 e experimente, se ainda não estiver familiarizado com esse modelo de solução. Observe especificamente que é possível criar portas arrastando uma ferramenta de porta para um componente e que é possível conectar portas.
+Pressione **F5** e experimentar se você não estiver familiarizado com esse modelo de solução. Observe especificamente que é possível criar portas arrastando uma ferramenta de porta para um componente e que é possível conectar portas.
 
- ![Componentes e portas interconectadas](../modeling/media/componentsample.png)
+![Componentes e portas interconectadas](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>A Estrutura da Solução DSL
  O **Dsl** projeto define a API da DSL. O **DslPackage** projeto define como ele se integra com o Visual Studio. Também é possível adicionar seus próprios projetos, que também podem conter código gerado a partir do modelo.
@@ -43,15 +45,15 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
 
  É altamente recomendável não editar o código gerado diretamente, pois, as edições serão perdidas ao recompilar a solução. Ao invés, para personalizar a DSL:
 
--   Ajuste os diversos parâmetros na Definição da DSL.
+- Ajuste os diversos parâmetros na Definição da DSL.
 
--   Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.
+- Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.
 
--   Definir opções na definição de DSL que fazem com que o código gerado forneça 'ganchos' para seu próprio código.
+- Definir opções na definição de DSL que fazem com que o código gerado forneça 'ganchos' para seu próprio código.
 
      Por exemplo, se você definir a **possui construtor personalizado** opção de uma classe de domínio e, em seguida, compile a solução, você verá mensagens de erro. Ao clicar duas vezes em uma dessas mensagens de erro, serão exibidos comentários sobre o código gerado que explicam o que o código personalizado deveria fornecer.
 
--   Grave seus próprios modelos de texto para gerar código específico para o aplicativo. Você pode usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a muitos projetos, e você pode criar modelos de projeto do Visual Studio para configurar projetos que são inicializados com sua própria estrutura de arquivos.
+- Grave seus próprios modelos de texto para gerar código específico para o aplicativo. Você pode usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a muitos projetos, e você pode criar modelos de projeto do Visual Studio para configurar projetos que são inicializados com sua própria estrutura de arquivos.
 
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados são exibidos na **Dsl** projeto.
@@ -129,7 +131,7 @@ Uma solução de linguagem específica do domínio (DSL) gera uma API que você 
   A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  Não é a mesma que a classe raiz do modelo.
+> Não é a mesma que a classe raiz do modelo.
 
  Fechamentos de Copiar e Excluir define quais outros elementos devem ser incluídos quando um elemento é copiado ou excluído. Você pode controlar esse comportamento, definindo a **propaga cópia** e **propaga exclusão** propriedades das funções em cada lado de cada relação. Se desejar determinar os valores dinamicamente, é possível gravar código para substituir os métodos das classes de Fechamento.
 
@@ -338,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.
 
 > [!WARNING]
->  Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 

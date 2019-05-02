@@ -22,6 +22,7 @@
 #### [Azure DevOps](vs-azure-devops.md)
 #### [Crédito Azure](vs-azure.md)
 #### [Assinatura de Desenvolvedor do Office 365](vs-office-dev.md)
+#### [RStudio](vs-rstudio.md)
 #### [CAST Highlight](vs-cast.md)
 #### [CloudPilot](vs-cloudpilot.md)
 #### [Visual Studio App Center](vs-visual-studio-app-center.md)
@@ -68,6 +69,7 @@
 #### [Procurar uma assinatura](search-license.md)
 #### [Exportar assinaturas](exporting-subscriptions.md)
 #### [Superalocações](handle-overclaimed-license.md)
+#### [Uso máximo](maximum-usage.md)
 #### [Assinaturas expiradas](handle-expired-license.md)
 #### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ## Adquirir assinaturas do Visual Studio

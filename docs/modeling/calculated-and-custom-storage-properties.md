@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 1ca2401333f7678b821b5c6fa68f7953a91996d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440015"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 Todas as propriedades de domínio em uma linguagem específica de domínio (DSL) podem ser exibidas para o usuário no diagrama e no Gerenciador de linguagem e podem ser acessadas pelo código do programa. No entanto, as propriedades são diferentes da maneira que seus valores são armazenados.
@@ -33,30 +33,30 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Para definir uma calculado ou uma propriedade de armazenamento personalizado
 
-1.  Em Dsldefinition, selecione a propriedade de domínio no diagrama ou no **Gerenciador de DSL**.
+1. Em Dsldefinition, selecione a propriedade de domínio no diagrama ou no **Gerenciador de DSL**.
 
-2.  No **propriedades** janela, defina as **tipo** campo **calculado** ou **armazenamento personalizado**.
+2. No **propriedades** janela, defina as **tipo** campo **calculado** ou **armazenamento personalizado**.
 
      Certifique-se de que você também tiver definido sua **tipo** que você deseja.
 
-3.  Clique em **transformar todos os modelos** na barra de ferramentas da **Gerenciador de soluções**.
+3. Clique em **transformar todos os modelos** na barra de ferramentas da **Gerenciador de soluções**.
 
-4.  No menu **Compilar**, clique em **Compilar Solução**.
+4. No menu **Compilar**, clique em **Compilar Solução**.
 
      Você receberá a seguinte mensagem de erro: "*YourClass* não contém uma definição para Get*YourProperty*."
 
-5.  Clique duas vezes a mensagem de erro.
+5. Clique duas vezes a mensagem de erro.
 
      Dsl\generatedcode\domainclasses.cs. ou DomainRelationships.cs é aberto. Acima de chamada do método realçada, um comentário solicitará que você forneça uma implementação para Get*YourProperty*().
 
     > [!NOTE]
-    >  Esse arquivo é gerado de Dsldefinition. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.
+    > Esse arquivo é gerado de Dsldefinition. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.
 
-6.  Criar ou abrir um arquivo de classe em uma pasta separada, por exemplo CustomCode\\*YourDomainClass*. cs.
+6. Criar ou abrir um arquivo de classe em uma pasta separada, por exemplo CustomCode\\*YourDomainClass*. cs.
 
      Certifique-se de que o namespace é o mesmo do código gerado.
 
-7.  No arquivo de classe, escreva uma implementação parcial da classe de domínio. Na classe, escreva uma definição para o ausente `Get` método semelhante ao exemplo a seguir:
+7. No arquivo de classe, escreva uma implementação parcial da classe de domínio. Na classe, escreva uma definição para o ausente `Get` método semelhante ao exemplo a seguir:
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
     }  }
     ```
 
-8.  Se você definir **tipo** à **armazenamento personalizado**, você também terá que fornecer um `Set` método. Por exemplo:
+8. Se você definir **tipo** à **armazenamento personalizado**, você também terá que fornecer um `Set` método. Por exemplo:
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
 
 10. A propriedade de teste. Certifique-se de que você tente **desfazer** e **Refazer**.
 
-##  <a name="setters"></a> Transações e Setters personalizados
+## <a name="setters"></a> Transações e Setters personalizados
  No método conjunto de propriedade de armazenamento personalizado, você não precisa abrir uma transação, porque o método geralmente é chamado dentro de uma transação ativa.
 
  No entanto, o método de conjunto também pode ser chamado se o usuário invoca desfazer ou refazer, ou se uma transação está sendo revertida. Quando <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> for true, seu método Set deve se comportar da seguinte maneira:

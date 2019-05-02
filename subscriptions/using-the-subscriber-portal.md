@@ -7,14 +7,14 @@ ms.date: 01/04/2018
 ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 65066db3f5a3ebb21cf390b3c206a1a2cf4d5495
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fcf8d9c9ddd88fd6f00c0b59c92c5e51af7a6ca1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809157"
 ---
-# <a name="using-the-subscriber-portal---myspanspanvisualstudiospanspancom"></a>Usando o Portal do Assinante – my.<span></span>visualstudio<span></span>.com
+# <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Usando o Portal do Assinante – my.visualstudio.com
 
 O portal de assinaturas do Visual Studio, [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs), é seu recurso “tudo em um” para aproveitar a gama completa de benefícios fornecidos pela sua assinatura do Visual Studio.
 
@@ -51,4 +51,4 @@ Além dos benefícios individuais encontrados na categoria de Suporte na página
 
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
-É necessário renovar a assinatura de nuvem do Visual Studio?  Deseja baixar as extensões mais recentes para a família de produtos Visual Studio?  O Marketplace ajuda os usuários a localizar extensões, ferramentas e serviços que tornam o Azure DevOps, o Team Foundation Server e o Visual Studio Code ainda melhores. Você pode até se tornar um editor e publicar suas próprias extensões no Marketplace.
+É necessário renovar a assinatura de nuvem do Visual Studio?  Deseja baixar as extensões mais recentes para a família de produtos Visual Studio?  O Marketplace ajuda os usuários a localizar extensões, ferramentas e serviços que tornam o Azure DevOps, Azure DevOps Server e Visual Studio Code ainda melhores. Você pode até se tornar um editor e publicar suas próprias extensões no Marketplace.

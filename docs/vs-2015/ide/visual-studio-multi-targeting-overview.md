@@ -1,5 +1,5 @@
 ---
-title: Visão geral de multissegmentação | Microsoft Docs
+title: Visão geral de Multi-Targeting | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -14,12 +14,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fee905da1fbb973a9cb1a6c954b7d450511b4be1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: cb538360992a77dac66e4135647890e2a7732df4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443152"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multissegmentação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "54768874"
 Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível especificar a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] necessária para seu aplicativo. Portanto, se você desejar usar essa versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para continuar desenvolvendo um projeto iniciado em uma versão anterior, não será necessário alterar o destino da estrutura. Também é possível criar uma solução que contém projetos que têm como destino versões diferentes da estrutura. A definição de destino da estrutura também ajuda a assegurar que o aplicativo use apenas a funcionalidade disponível na versão especificada da estrutura.
 
 > [!TIP]
->  Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+> Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
 
 ## <a name="framework-targeting-features"></a>Recursos de definição de destino da estrutura
  A definição de destino da estrutura inclui os seguintes recursos:
@@ -57,19 +57,19 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
 - Para builds, ele usa a versão do compilador e as opções do compilador apropriadas para a versão de destino.
 
 > [!NOTE]
->  A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino. Não é possível definir como destino versões de estrutura anteriores ao .NET Framework 2.0.
+> A definição de destino da estrutura não assegura que o aplicativo será executado corretamente. É necessário testar o aplicativo para ter certeza de que ele é executado na versão de destino. Não é possível definir como destino versões de estrutura anteriores ao .NET Framework 2.0.
 
 ## <a name="selecting-a-target-framework-version"></a>Selecionando uma versão de estrutura de destino
  Ao criar um projeto, selecione a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo **Novo Projeto**. A lista de modelos de projeto disponíveis é filtrada com base na seleção. Em um projeto existente, é possível alterar a versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 > [!NOTE]
->  Nas edições Express do Visual Studio, não é possível definir a estrutura de destino na caixa de diálogo **Novo Projeto**.
+> Nas edições Express do Visual Studio, não é possível definir a estrutura de destino na caixa de diálogo **Novo Projeto**.
 
 ## <a name="resolving-system-and-user-assembly-references"></a>Resolvendo referências de assembly do sistema e do usuário
- Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. As referências de assembly do .NET Framework versões 2.0, 3.0 e 3.5 são incluídas no .NET Framework 3.5 SP1, que podem ser baixadas no [Centro de Download da Microsoft, site do Microsoft Visual Studio](http://go.microsoft.com/fwlink/?LinkId=227602). As referências de assembly do .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile e Silverlight também estão disponíveis no site [Downloads do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
+ Para definir uma versão do .NET Framework como destino, é necessário primeiro instalar as referências de assembly apropriadas. As referências de assembly do .NET Framework versões 2.0, 3.0 e 3.5 são incluídas no .NET Framework 3.5 SP1, que podem ser baixadas no [Centro de Download da Microsoft, site do Microsoft Visual Studio](https://www.microsoft.com/download/details.aspx?id=25150). As referências de assembly do .NET Framework 3.5 Client Profile, .NET Framework 4, .NET Framework 4 Client Profile e Silverlight também estão disponíveis no site [Downloads do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=179687).
 
 > [!NOTE]
->  Um perfil de cliente do .NET Framework é um subconjunto do .NET Framework que fornece um conjunto limitado de bibliotecas e recursos. Para obter mais informações sobre perfis de cliente, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
+> Um perfil de cliente do .NET Framework é um subconjunto do .NET Framework que fornece um conjunto limitado de bibliotecas e recursos. Para obter mais informações sobre perfis de cliente, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).
 
  A caixa de diálogo **Adicionar Referência** desabilita assemblies do sistema que não pertencem à versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de destino, para que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos .dll incluídos em uma versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].) As referências que pertencem a uma versão do Framework posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não podem ser adicionados. Se você desejar habilitar essa referência, redefina o destino [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] do projeto para um que inclua a referência.  Para obter mais informações, consulte [Introdução ao Designer de Projeto](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).
 
@@ -79,4 +79,6 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
  Ao definir o .NET Framework 3.5 ou posterior como destino, uma referência ao System.Core e uma importação no nível do projeto para System.Linq (somente no Visual Basic) são adicionadas automaticamente. Se você desejar usar recursos do LINQ, também será necessário ativar a Opção Infer (somente no Visual Basic). A referência e a importação serão removidas automaticamente se você alterar o destino para uma versão anterior do .NET Framework. Para obter mais informações, consulte [Como criar um projeto do LINQ](http://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
 ## <a name="see-also"></a>Consulte também
- [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md) [.NET Framework Multi-Targeting para projetos Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76) [requisitos de sistema e compatibilidade de plataforma](http://www.microsoft.com/visualstudio/eng/products/compatibility)
+[Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
+[.NET Framework Multi-Targeting para projetos Web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
+[Requisitos de sistema e de compatibilidade de plataforma](/visualstudio/productinfo/vs2015-compatibility-vs)

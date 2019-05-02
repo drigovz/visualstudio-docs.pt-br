@@ -1,28 +1,23 @@
 ---
-title: 'Como: implementar o gerenciamento de desfazer | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Implementar o gerenciamento de desfazer | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - undo management
 ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f7eb3e3a1bbda905b2f5c5819835b10513d444fb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51806094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435949"
 ---
-# <a name="how-to-implement-undo-management"></a>Como: implementar o gerenciamento de desfazer
+# <a name="how-to-implement-undo-management"></a>Como: Implementar o gerenciamento de desfazer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implemente a unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.  
@@ -34,9 +29,9 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Para dar suporte ao gerenciamento de desfazer para um editor de modo de exibição único  
   
-1.  Chame `QueryInterface` sobre o `IServiceProvider` interface no quadro de janela para `IOleUndoManager`, do objeto de visualização de documento para acessar o Gerenciador de desfazer (`IID_IOLEUndoManager`).  
+1. Chame `QueryInterface` sobre o `IServiceProvider` interface no quadro de janela para `IOleUndoManager`, do objeto de visualização de documento para acessar o Gerenciador de desfazer (`IID_IOLEUndoManager`).  
   
-2.  Quando um modo de exibição está localizado em um quadro de janela, ela recebe um ponteiro de site, o que ele pode usar para chamar `QueryInterface` para `IServiceProvider`.  
+2. Quando um modo de exibição está localizado em um quadro de janela, ela recebe um ponteiro de site, o que ele pode usar para chamar `QueryInterface` para `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Casos em que um editor dá suporte a vários modos de exibição  
  Se você tiver a separação de documento e exibição, há o Gerenciador de desfazer normalmente um associado ao documento em si. Todas as unidades de desfazer são colocadas no Gerenciador de um Desfazer associado ao objeto de dados do documento.  
@@ -53,17 +48,17 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
   
 3. Retransmissão sua <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chamadas em armazenado `IOleCommandTarget` interface para os seguintes comandos StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Chame `QueryInterface` na `IOleUndoManager` para `IID_IVsChangeTrackingUndoManager`. Store o ponteiro para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   
@@ -82,10 +77,9 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
    O `OleUndoManager` classe representa uma instância da pilha de desfazer. Portanto, há um objeto de Gerenciador de desfazer por entidade de dados que estão sendo controlada para desfazer ou refazer.  
   
 > [!NOTE]
->  Enquanto o objeto do Gerenciador de desfazer é usado pelo editor de texto, ele é um componente geral que tem suporte específico para o editor de texto. Se você quiser dar suporte a vários nível desfazer ou refazer, você pode usar esse objeto para fazer isso.  
+> Enquanto o objeto do Gerenciador de desfazer é usado pelo editor de texto, ele é um componente geral que tem suporte específico para o editor de texto. Se você quiser dar suporte a vários nível desfazer ou refazer, você pode usar esse objeto para fazer isso.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Como limpar a pilha de desfazer](../extensibility/how-to-clear-the-undo-stack.md)
-
+ [Como: limpar a pilha de desfazer](../extensibility/how-to-clear-the-undo-stack.md)

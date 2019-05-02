@@ -2,18 +2,20 @@
 title: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979544"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -21,7 +23,23 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Para criar um projeto e adicionar uma tabela ao formulário
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+::: moniker range="vs-2017"
+
+1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+1. Na caixa de pesquisa, digite "WPF", escolha **aplicativo WPF (.NET Framework)** e, em seguida, escolha **Próxima**.
+
+   Se você não encontrar o modelo **Aplicativo do WPF (.NET Framework)**, use o Instalador do Visual Studio para instalar a carga de trabalho **desenvolvimento para área de trabalho do .NET**.
+
+1. Dê um nome ao projeto, **MatchingGame**, e escolha **Criar**
+
+::: moniker-end
 
 2. Se não estiver usando o Visual Studio Express, primeiramente, você precisará selecionar uma linguagem de programação. Na lista **Modelos Instalados**, escolha **Visual C#** ou **Visual Basic**.
 
@@ -29,9 +47,9 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 4. Na janela **Propriedades**, defina as propriedades de formulário a seguir.
 
-   1.  Altere a propriedade **Texto** do formulário, de **Form1** para **Jogo da Memória**. Esse texto aparece na parte superior da janela do jogo.
+   1. Altere a propriedade **Texto** do formulário, de **Form1** para **Jogo da Memória**. Esse texto aparece na parte superior da janela do jogo.
 
-   2.  Defina o tamanho do formulário para 550 pixels de largura por 550 de altura. Você pode fazer isso definindo a propriedade **Tamanho** como **550, 550** ou arrastando o canto do formulário até visualizar o tamanho correto no canto inferior direito do IDE (ambiente de desenvolvimento integrado).
+   2. Defina o tamanho do formulário para 550 pixels de largura por 550 de altura. Você pode fazer isso definindo a propriedade **Tamanho** como **550, 550** ou arrastando o canto do formulário até visualizar o tamanho correto no canto inferior direito do IDE (ambiente de desenvolvimento integrado).
 
 5. Exiba a caixa de ferramentas escolhendo a guia **Caixa de Ferramentas** no lado esquerdo do IDE.
 
@@ -58,19 +76,19 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
     Enquanto TableLayoutPanel estiver selecionado, abra a caixa de ferramentas e adicione um controle <xref:System.Windows.Forms.Label> (localizado na categoria **Controles Comuns**) à célula superior esquerda de TableLayoutPanel. O controle Label agora deve ser selecionado no IDE. Defina as propriedades a seguir para ele.
 
-   1.  Verifique se a propriedade **BackColor** do rótulo está definida como **CornflowerBlue**.
+   1. Verifique se a propriedade **BackColor** do rótulo está definida como **CornflowerBlue**.
 
-   2.  Defina a propriedade **AutoSize** para **False**.
+   2. Defina a propriedade **AutoSize** para **False**.
 
-   3.  Defina a propriedade **Encaixar** como **Preenchimento**.
+   3. Defina a propriedade **Encaixar** como **Preenchimento**.
 
-   4.  Defina a propriedade **TextAlign** como **MiddleCenter** escolhendo o botão suspenso próximo à propriedade e escolhendo o botão do meio. Isso garante que o ícone apareça no meio da célula.
+   4. Defina a propriedade **TextAlign** como **MiddleCenter** escolhendo o botão suspenso próximo à propriedade e escolhendo o botão do meio. Isso garante que o ícone apareça no meio da célula.
 
-   5.  Escolha a propriedade **Fonte**. O botão reticências (**...**) deverá aparecer.
+   5. Escolha a propriedade **Fonte**. O botão reticências (**...**) deverá aparecer.
 
-   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** como **48**.
+   6. Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** como **48**.
 
-   7.  Defina a propriedade **Texto** do rótulo como a letra **c**.
+   7. Defina a propriedade **Texto** do rótulo como a letra **c**.
 
         A célula superior esquerda no TableLayoutPanel agora deve conter uma caixa preta centrada em um plano de fundo azul.
 
@@ -88,6 +106,6 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, confira [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Para ir para a próxima etapa do tutorial, confira [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Para retornar ao tópico de visão geral, confira [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).
+- Para retornar ao tópico de visão geral, confira [Tutorial 3: Criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b220ddc42857040a51b2308c6d4a83d931de09
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ad54dc716e02eabcc064d87213d01491f43eae82
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975524"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>Como: Adicionar comentários a diagramas de classe
 
@@ -31,9 +31,9 @@ Você pode redimensionar uma forma de comentário, mas não pode alterar outros 
 
 ## <a name="to-add-a-comment"></a>Para adicionar um comentário
 
-1.  Arraste um comentário da **Caixa de Ferramentas do Designer de Classe** para o diagrama de classe.
+1. Arraste um comentário da **Caixa de Ferramentas do Designer de Classe** para o diagrama de classe.
 
-2.  Clique na nova forma de comentário no diagrama e digite o texto desejado.
+2. Clique na nova forma de comentário no diagrama e digite o texto desejado.
 
 ## <a name="see-also"></a>Consulte também
 

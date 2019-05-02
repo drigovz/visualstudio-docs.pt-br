@@ -1,5 +1,5 @@
 ---
-title: Como definir permissões | Microsoft Docs
+title: 'Como: Definir permissões | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440586"
 ---
-# <a name="how-to-set-permissions"></a>Como definir permissões
+# <a name="how-to-set-permissions"></a>Como: Definir permissões
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como um Administrador de um computador concede as permissões de segurança necessárias para a criação de perfil para um usuário ou grupo que não tenha permissões de Administrador no computador.  
@@ -38,29 +38,29 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   Membros do grupo Usuários podem executar as ferramentas de criação de perfil se um administrador conceder-lhes acesso ao driver de software das ferramentas de criação de perfil. O último procedimento, "Para conceder acesso ao driver de criação de perfil," descreve como conceder acesso a esse driver.  
   
 > [!NOTE]
->  Você precisa de permissões de administrador para seguir as etapas nesses procedimentos.  
+> Você precisa de permissões de administrador para seguir as etapas nesses procedimentos.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Para criar uma conta de usuário que tenha permissões de Usuário  
   
-1.  Clique com botão direito do mouse em **Meu Computador** e, em seguida, clique em **Gerenciar**.  
+1. Clique com botão direito do mouse em **Meu Computador** e, em seguida, clique em **Gerenciar**.  
   
      A janela **Gerenciamento do Computador** é aberta.  
   
-2.  Expanda **Usuários e Grupos Locais**.  
+2. Expanda **Usuários e Grupos Locais**.  
   
-3.  Clique com botão direito do mouse na pasta **Usuários** e, em seguida, clique em **Novo Usuário**.  
+3. Clique com botão direito do mouse na pasta **Usuários** e, em seguida, clique em **Novo Usuário**.  
   
      A caixa de diálogo **Novo Usuário** é exibida.  
   
-4.  Preencha os campos nessa caixa de diálogo com as informações da conta de usuário que você está criando. Especifique uma senha. Opcionalmente, marque a caixa de seleção que exige que o usuário altere a senha no próximo logon.  
+4. Preencha os campos nessa caixa de diálogo com as informações da conta de usuário que você está criando. Especifique uma senha. Opcionalmente, marque a caixa de seleção que exige que o usuário altere a senha no próximo logon.  
   
-5.  Clique em **Criar** e, em seguida, clique em **Fechar**.  
+5. Clique em **Criar** e, em seguida, clique em **Fechar**.  
   
      O novo usuário aparecerá no grupo Usuários, um grupo de usuários que não têm permissões de Administrador.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>Para conceder acesso a arquivos de projeto compartilhados  
   
-1.  No Windows Explorer (ou Explorador de Arquivos), localize a raiz da árvore de pastas para os arquivos de projeto usados por este usuário e compartilhados pela equipe do projeto.  
+1. No Windows Explorer (ou Explorador de Arquivos), localize a raiz da árvore de pastas para os arquivos de projeto usados por este usuário e compartilhados pela equipe do projeto.  
   
      O caminho dessa pasta pode ser parecido com o seguinte:  
   
@@ -68,17 +68,17 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
     D:\ourProject  
     ```  
   
-2.  Clique com botão direito do mouse na pasta e, em seguida, clique em **Propriedades**.  
+2. Clique com botão direito do mouse na pasta e, em seguida, clique em **Propriedades**.  
   
      A caixa de diálogo **\<nome da pasta> Propriedades** é exibida.  
   
-3.  Clique na guia **Segurança**.  
+3. Clique na guia **Segurança**.  
   
-4.  Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.  
+4. Clique no nome da conta do usuário na caixa **Nomes de usuário ou grupo**.  
   
-5.  Na caixa **Permissões para \<nome de usuário>**, marque a caixa de seleção **Controle Total**.  
+5. Na caixa **Permissões para \<nome de usuário>**, marque a caixa de seleção **Controle Total**.  
   
-6.  Clique em **OK**.  
+6. Clique em **OK**.  
   
      Isso concede permissões para o usuário para a árvore da pasta compartilhada que começa com a pasta selecionada na etapa 5.  
   
@@ -112,11 +112,11 @@ Este tópico descreve como um Administrador de um computador concede as permiss�
   
     Este comando concede à conta \<nome de usuário> ou \<nome do grupo> o acesso às ferramentas de Criação de Perfil. A opção \<direito> determina a funcionalidade de criação de perfil que o usuário pode acessar. A opção \<direito> pode ser um ou mais dos seguintes valores:  
   
-   -   FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
+   - FullAccess – permite acesso a todos os métodos de criação de perfil, incluindo a coleta de dados de desempenho de serviços, de amostragem e de criação de perfil entre sessões.  
   
-   -   SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
+   - SampleProfiling – permite acesso aos métodos de criação de perfil por amostragem  
   
-   -   CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
+   - CrossSession – permite o acesso à criação de perfil entre sessões o que é necessário para serviços de criação de perfil.  
   
 5. (Opcional) Para preservar os resultados de qualquer uma das etapas anteriores depois que o computador reiniciar, execute o seguinte comando:  
   

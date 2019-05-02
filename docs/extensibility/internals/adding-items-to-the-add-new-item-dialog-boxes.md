@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e392947f86a1adab92289934632dd393f4ff24ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418685"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Adicionar itens à caixa de diálogo Adicionar Novo Item
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, o **AddItemTemplates** seção contém o caminho e o nome do diretório em que os itens disponibilizados na **Adicionar Novo Item** caixa de diálogo são colocados.
 
 > [!NOTE]
->  A tabela imediatamente após o segmento de código contém informações adicionais sobre a entrada do registro.
+> A tabela imediatamente após o segmento de código contém informações adicionais sobre a entrada do registro.
 
  Esta seção está localizada sob **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -35,7 +35,6 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
 
  **SortPriority** = dword:00000064
 
-
 | Nome | Tipo | Dados (de *rgs* arquivo) | Descrição |
 |------------------|-----------| - | - |
 | @ (Padrão) | REG_SZ | #%IDS_ADDITEM_TEMPLATES_ENTRY% | ID do recurso **Adicionar Item** modelos. |
@@ -43,7 +42,7 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Determina a ordem de classificação no nó de árvore de arquivos exibidos na **Adicionar Novo Item** caixa de diálogo. |
 
 > [!NOTE]
->  Os GUIDS para o Visual c# e tipos de projeto do Visual Basic são da seguinte maneira:
+> Os GUIDS para o Visual c# e tipos de projeto do Visual Basic são da seguinte maneira:
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -54,7 +53,7 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
  No entanto, você não precisa ter tudo em uma *. vsdir* arquivo. Você pode ter um *. vsdir* arquivo para cada item no diretório. Para obter mais informações, consulte [arquivo (. vsz) do assistente](../../extensibility/internals/wizard-dot-vsz-file.md) e [arquivos de descrição (. vsdir) do diretório de modelo](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  O *. vsdir* arquivos nos diretórios de modelo são opcionais. Se você apenas deseja colocar um elemento do projeto no diretório e exibi-lo na **Adicionar Novo Item** caixa de diálogo, você pode colocar esse arquivo no diretório de modelos especificado na **TemplatesDir** instrução. O arquivo, em seguida, será exibido no painel à direita do **Adicionar Novo Item** caixa de diálogo para o projeto. No entanto, se você quiser exibir uma legenda localizada para o arquivo ou um ícone, você deve incluir pelo menos um *. vsdir* arquivo no diretório de modelos.
+> O *. vsdir* arquivos nos diretórios de modelo são opcionais. Se você apenas deseja colocar um elemento do projeto no diretório e exibi-lo na **Adicionar Novo Item** caixa de diálogo, você pode colocar esse arquivo no diretório de modelos especificado na **TemplatesDir** instrução. O arquivo, em seguida, será exibido no painel à direita do **Adicionar Novo Item** caixa de diálogo para o projeto. No entanto, se você quiser exibir uma legenda localizada para o arquivo ou um ícone, você deve incluir pelo menos um *. vsdir* arquivo no diretório de modelos.
 
 ## <a name="group-project-items"></a>Itens de projeto de grupo
  Se você quer incluir grupos de modelos em pastas na **Adicionar Novo Item** árvore da caixa de diálogo, você deve ter os subdiretórios no diretório raiz de modelo com os itens nelas. Quando o **Adicionar Novo Item** caixa de diálogo é exibida aos usuários, eles também verá as subpastas e ser capaz de selecionar os elementos do projeto deles.

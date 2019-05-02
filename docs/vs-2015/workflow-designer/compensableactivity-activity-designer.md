@@ -1,11 +1,8 @@
 ---
 title: Designer de atividade de CompensableActivity | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.CompensableActivity.UI
@@ -13,13 +10,13 @@ ms.assetid: e0340d89-d39e-4a52-8557-13e27040d7b5
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 670d3e92b24e35979074df3817611ceff692f59d
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f11743e0027866fd45687f716f1989e98020c68e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49290440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977275"
 ---
 # <a name="compensableactivity-activity-designer"></a>Designer de atividade de CompensableActivity
 O **CompensableActivity** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.CompensableActivity> atividade.  

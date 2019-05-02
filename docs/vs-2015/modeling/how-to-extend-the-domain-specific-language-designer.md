@@ -1,25 +1,22 @@
 ---
-title: 'Como: estender o Designer de linguagem específica do domínio | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Estender o Designer de linguagem específica do domínio | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: fa807f1b-2780-491e-925b-abbfd31b2bfa
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 434b9c5a575ab19530ca3c5c3e0d6536235b9f88
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49878551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546935"
 ---
-# <a name="how-to-extend-the-domain-specific-language-designer"></a>Como estender o Designer de Linguagem Específica do Domínio
+# <a name="how-to-extend-the-domain-specific-language-designer"></a>Como: Estender o Designer de Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode tornar as extensões para o designer que você pode usar para editar as definições de DSL. Tipos de extensão que você pode fazer incluem a adição de comandos de menu, adicionando manipuladores para arrastar e clique duas vezes em gestos e regras que são disparadas quando determinados tipos de valores ou relacionamentos são alterados. As extensões podem ser empacotadas como o Visual Studio Integration extensão (VSIX) e distribuídas para outros usuários.  
@@ -31,25 +28,25 @@ Você pode tornar as extensões para o designer que você pode usar para editar 
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Para criar uma solução de extensão do Designer de DSL  
   
-1.  Crie um novo projeto usando o modelo de projeto de biblioteca de classes. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, na janela do meio, clique em **biblioteca de classes**.  
+1. Crie um novo projeto usando o modelo de projeto de biblioteca de classes. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, na janela do meio, clique em **biblioteca de classes**.  
   
      Esse projeto conterá o código de suas extensões.  
   
-2.  Crie um novo projeto usando o modelo de projeto do VSIX. No **novo projeto** diálogo caixa, expanda **Visual c#**, clique em **extensibilidade**e, em seguida, na janela Central selecione **projeto VSIX**.  
+2. Crie um novo projeto usando o modelo de projeto do VSIX. No **novo projeto** diálogo caixa, expanda **Visual c#**, clique em **extensibilidade**e, em seguida, na janela Central selecione **projeto VSIX**.  
   
      Selecione **adicionar a solução**.  
   
      Vsixmanifest é aberto no editor de manifesto do VSIX.  
   
-3.  Acima do campo de conteúdo, clique em **adicionar conteúdo**.  
+3. Acima do campo de conteúdo, clique em **adicionar conteúdo**.  
   
-4.  No **adicionar conteúdo** caixa de diálogo, defina **selecionar um tipo de conteúdo** para **componente MEF**e defina **projeto** ao seu projeto de biblioteca de classe.  
+4. No **adicionar conteúdo** caixa de diálogo, defina **selecionar um tipo de conteúdo** para **componente MEF**e defina **projeto** ao seu projeto de biblioteca de classe.  
   
-5.  Clique em **selecionar edições** e certifique-se de que **Visual Studio Enterprise** é verificada.  
+5. Clique em **selecionar edições** e certifique-se de que **Visual Studio Enterprise** é verificada.  
   
-6.  Certifique-se de que o projeto VSIX é o projeto de inicialização da solução.  
+6. Certifique-se de que o projeto VSIX é o projeto de inicialização da solução.  
   
-7.  No projeto de biblioteca de classes, adicione referências aos assemblies a seguir:  
+7. No projeto de biblioteca de classes, adicione referências aos assemblies a seguir:  
   
      Microsoft.VisualStudio.CoreUtility  
   
@@ -317,4 +314,3 @@ namespace Fabrikam.SimpleDslDesignerExtension
     }  
 }  
 ```
-

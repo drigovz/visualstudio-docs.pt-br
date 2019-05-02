@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ac588314b69c6be8b31cc5719a4be8add3cad33
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: db6c2e47d9f316f758b854e5ce40dfc19acb592b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400005"
 ---
 # <a name="idiasymbolgetisaggregated"></a>IDiaSymbol::get_isAggregated
 Recupera um sinalizador que especifica se o símbolo de dados é parte de uma agregação ou uma coleção de símbolos; o compilador tratará os símbolos agregados como entidades separadas, mas eles realmente fazem parte de um único símbolo de maior.
@@ -39,7 +39,7 @@ HRESULT get_isAggregated(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  O [idiasymbol:: Get_issplitted](../../debugger/debug-interface-access/idiasymbol-get-issplitted.md) método é `TRUE` para o símbolo que é o pai dos símbolos agregados.

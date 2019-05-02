@@ -1,6 +1,6 @@
 ---
 title: Ferramentas para depurar threads e processos | Microsoft Docs
-ms.date: 04/21/2017
+ms.date: 04/21/2018
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9e39e77874594620eaeadb11b827df93cae4ea5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: d4769224cfb26c4b1d55362fea006f55ba8845da
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852884"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Ferramentas para depurar threads e processos no Visual Studio
 *Threads* e *processos* são conceitos relacionados à ciência da computação. Ambos representam sequências de instruções que devem executar em uma ordem específica. Instruções em threads ou processos separados, entretanto, podem ser executados em paralelo.

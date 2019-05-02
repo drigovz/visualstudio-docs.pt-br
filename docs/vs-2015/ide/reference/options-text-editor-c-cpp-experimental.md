@@ -11,17 +11,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41be21f3b28cccfe735a2a908851ebe3b181ce7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 66d0b7ebb89addc05d19a1e8381b39b544b01863
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441403"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++.  
   
  Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e escolha **Experimental**.  
@@ -29,7 +28,7 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
  Esses recursos estão disponíveis em uma instalação do Visual Studio 2015 Atualização 1 RC.  
   
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="browsingnavigation"></a>Navegação  
  **Habilitar Novo Mecanismo de Banco de Dados**  

@@ -13,17 +13,16 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8efc470db346e4de9036a5869c0118b68ea76f81
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d2eaf41ac66cd1bdf680145bef43b17cc29a505
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425875"
 ---
 # <a name="writing-multi-processor-aware-loggers"></a>Escrevendo agentes de log com reconhecimento de multiprocessador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A capacidade do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de tirar proveito de vários processadores pode diminuir o tempo de criação do projeto, mas também adiciona complexidade para criar o log de eventos. Em um ambiente de processador único, eventos, erros, avisos e mensagens chegam ao agente de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem chegar ao mesmo tempo ou fora de sequência. Para isso, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece um agente com reconhecimento de multiprocessador e um novo modelo de registro em log e permite que você crie "agentes de encaminhamento" personalizados.  
   
 ## <a name="multi-processor-logging-challenges"></a>Desafios de registro em log de multiprocessador  
@@ -82,7 +81,7 @@ msbuild.exe myproj.proj/distributedlogger:XMLCentralLogger,MyLogger,Version=1.0.
 ```  
   
 > [!NOTE]
->  Um asterisco (*) deve separar os dois nomes de agentes na opção `/dl`.  
+> Um asterisco (*) deve separar os dois nomes de agentes na opção `/dl`.  
   
  Usar o ConfigurableForwardingLogger é como usar qualquer outro agente (conforme descrito Em [Obtendo logs de build](../msbuild/obtaining-build-logs-with-msbuild.md)), exceto se você anexar o agente ConfigurableForwardingLogger em vez do agente [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] típico e especificar como parâmetros os eventos que você deseja que o ConfigurableForwardingLogger passe para o nó central.  
   

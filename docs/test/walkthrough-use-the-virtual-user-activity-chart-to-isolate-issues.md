@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d64f104cd7d893b48fca5fdbd454fb380dafc6ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976213"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Passo a passo: Usando o Gráfico de Atividade de Usuário Virtual para isolar problemas
 
@@ -26,19 +26,19 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Complete esses procedimentos:
+- Complete esses procedimentos:
 
-    -   [Gravar e executar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+    - [Gravar e executar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    -   [Criar e executar um teste de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Criar e executar um teste de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir a solução ColorWebApp criada nos passo a passo anteriores
 
-1.  Inicie o Visual Studio.
+1. Abra o Visual Studio.
 
-2.  Abra a solução **ColorWebApp** que contém o *LoadTest1.loadtest*. Este teste de carga é resultado da execução das etapas nas três explicações passo a passo listadas no início deste tópico na seção de pré-requisitos.
+2. Abra a solução **ColorWebApp** que contém o *LoadTest1.loadtest*. Este teste de carga é resultado da execução das etapas nas três explicações passo a passo listadas no início deste tópico na seção de pré-requisitos.
 
      As etapas restantes deste passo a passo pressupõem a existência de um aplicativo Web chamado ColorWebApp, um teste de desempenho Web chamado *ColorWebAppTest.webtest* e um teste de carga chamado *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 Execute o teste de carga para coletar dados da atividade de usuário virtual.
 
--   No **Editor de Teste de Carga**, escolha o botão **Executar** na barra de ferramentas. A execução de LoadTest1 iniciará.
+- No **Editor de Teste de Carga**, escolha o botão **Executar** na barra de ferramentas. A execução de LoadTest1 iniciará.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isolar problemas no Gráfico de Atividade de Usuário Virtual
 
@@ -54,11 +54,11 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Para usar o Gráfico de Atividade de Usuário Virtual nos resultados do teste de carga
 
-1.  Após a execução do teste de carga, a página **Resumo** dos resultados do teste de carga é exibida no **Analisador de Teste de Carga**. Escolha o botão **Gráficos** na barra de ferramentas.
+1. Após a execução do teste de carga, a página **Resumo** dos resultados do teste de carga é exibida no **Analisador de Teste de Carga**. Escolha o botão **Gráficos** na barra de ferramentas.
 
      A exibição Gráficos será mostrada.
 
-2.  No gráfico **Tempo de Resposta de Página**, clique com o botão direito do mouse em um dos ícones de violação de limite e selecione **Ir para detalhe do usuário**.
+2. No gráfico **Tempo de Resposta de Página**, clique com o botão direito do mouse em um dos ícones de violação de limite e selecione **Ir para detalhe do usuário**.
 
     > [!NOTE]
     > Use também o botão **Detalhes** na barra de ferramentas do **Editor de Teste de Carga** para abrir o gráfico de Atividade do Usuário. No entanto, se você usar a opção **Ir para detalhe do usuário**, o **Gráfico de Atividade de Usuário Virtual** ampliará automaticamente a parte do teste em que você clicou com o botão direito do mouse no grafo.
@@ -67,37 +67,37 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
      No eixo y, os traços horizontais representam usuários virtuais individuais. O eixo x exibe a linha do tempo da execução do teste de carga.
 
-3.  Na ferramenta **Zoom para o período de tempo** abaixo do **Gráfico de atividade do usuário virtual**, ajuste os controles deslizantes à esquerda e à direita até que ambos estejam próximos ao ícone de violação de limite. Isso altera a escala de tempo no **Gráfico de atividade do usuário virtual**
+3. Na ferramenta **Zoom para o período de tempo** abaixo do **Gráfico de atividade do usuário virtual**, ajuste os controles deslizantes à esquerda e à direita até que ambos estejam próximos ao ícone de violação de limite. Isso altera a escala de tempo no **Gráfico de atividade do usuário virtual**
 
-4.  Na **Legenda de detalhes**, marque a caixa de seleção **(Realçar de erros)**. Observe que o usuário virtual que causou a violação de limite está realçado.
+4. Na **Legenda de detalhes**, marque a caixa de seleção **(Realçar de erros)**. Observe que o usuário virtual que causou a violação de limite está realçado.
 
-5.  No painel **Filtrar resultados**, desmarque as caixas de seleção **Mostrar resultados bem-sucedidos** e **HttpError**, mas deixe a caixa de seleção **ValidationRuleError** marcada.
+5. No painel **Filtrar resultados**, desmarque as caixas de seleção **Mostrar resultados bem-sucedidos** e **HttpError**, mas deixe a caixa de seleção **ValidationRuleError** marcada.
 
      O **Gráfico de Atividade de Usuário Virtual** exibe apenas os usuários virtuais que passaram mais de 3 segundos na página *Red.aspx*, conforme especificado pela violação de limite configurada no passo a passo anterior.
 
-6.  Coloque o ponteiro do mouse na linha horizontal que representa o usuário virtual com o erro da regra de validação da violação de limite.
+6. Coloque o ponteiro do mouse na linha horizontal que representa o usuário virtual com o erro da regra de validação da violação de limite.
 
-7.  Uma dica de ferramenta é exibida com as seguintes informações:
+7. Uma dica de ferramenta é exibida com as seguintes informações:
 
-    -   **ID de usuário**
+    - **ID de usuário**
 
-    -   **Cenário**
+    - **Cenário**
 
-    -   **Teste**
+    - **Teste**
 
-    -   **Resultado**
+    - **Resultado**
 
-    -   **Network**
+    - **Network**
 
-    -   **Hora de início**
+    - **Hora de início**
 
-    -   **Duração**
+    - **Duração**
 
-    -   **Agente**
+    - **Agente**
 
-    -   **Log de teste**
+    - **Log de teste**
 
-8.  Observe que **Log de teste** é um link. Escolha o link **Log de teste**.
+8. Observe que **Log de teste** é um link. Escolha o link **Log de teste**.
 
 9. O teste de desempenho Web ColorWebTest associado ao log é aberto no **Visualizador de Resultados de Teste de Desempenho Web**. Isso permite isolar onde as violações de limite ocorreram.
 

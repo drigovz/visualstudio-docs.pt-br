@@ -1,27 +1,22 @@
 ---
 title: Obter uma porta | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - ports, getting
 - debugging [Debugging SDK], ports
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 660ead58af40f85b4da4d68d7172866f5fe1fd0c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51789896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436403"
 ---
 # <a name="getting-a-port"></a>Obtendo uma porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +33,7 @@ Uma porta representa uma conexão a uma máquina que processos estão em execuç
  Este fragmento de código mostra como usar a porta fornecida para [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) para registrar um nó de programa na [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Parâmetros não estão diretamente relacionados a esse conceito foram omitidos por motivos de clareza.  
   
 > [!NOTE]
->  Este exemplo usa a porta para iniciar e retomar o processo e pressupõe que o [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interface é implementada na porta. Isso não é a única maneira de realizar essas tarefas, e é possível que a porta não pode até mesmo ser envolvida diferente do que o programa [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) atribuído a ele.  
+> Este exemplo usa a porta para iniciar e retomar o processo e pressupõe que o [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interface é implementada na porta. Isso não é a única maneira de realizar essas tarefas, e é possível que a porta não pode até mesmo ser envolvida diferente do que o programa [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) atribuído a ele.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  
@@ -108,4 +103,3 @@ HRESULT CDebugEngine::ResumeProcess(IDebugProcess2 *pDebugProcess)
  [Habilitar um programa a ser depurado](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)   
  [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md)   
  [Portas](../../extensibility/debugger/ports.md)
-

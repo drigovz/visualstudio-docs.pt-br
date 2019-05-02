@@ -1,14 +1,9 @@
 ---
 title: IDebugBreakpointEvent2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - IDebugBreakpointEvent2
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 50b3a7a7-331b-42c8-922c-ff3522ebe1da
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 092a3c76664042ae83136541ea83d66b864197cf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7f8488812789c4cd2cd9c77e039fa20e4a2208b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51784709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431518"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -49,7 +44,7 @@ IDebugBreakpointEvent2 : IUnknown
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Cria um enumerador para todos os pontos de interrupção disparado no local atual do código.|  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -58,4 +53,3 @@ IDebugBreakpointEvent2 : IUnknown
 ## <a name="see-also"></a>Consulte também  
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)   
  [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
-

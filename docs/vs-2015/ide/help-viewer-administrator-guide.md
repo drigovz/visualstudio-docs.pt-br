@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445689"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - A fonte padrão para a ajuda ainda será online.  
   
   > [!TIP]
-  >  Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
+  > Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
   
 - Os clientes serão solicitados ainda a instalar o conteúdo da ajuda básica na primeira inicialização do Visual Studio. Você pode desabilitar esse prompt alterando a chave do Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -60,13 +60,13 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Para instalar o conteúdo em inglês da Internet  
   
-1.  Escolha **Iniciar** e **Executar**.  
+1. Escolha **Iniciar** e **Executar**.  
   
-2.  Digite o seguinte:  
+2. Digite o seguinte:  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Pressione ENTER.  
+3. Pressione ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Implantando o conteúdo pré-instalado da Ajuda Local em computadores cliente  
  Você pode instalar um conjunto de conteúdo online em um computador, e então copiar o conjunto de conteúdo instalado em outros computadores.  
@@ -78,7 +78,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.  
   
   > [!TIP]
-  >  Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
+  > Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
   
   Restrições:  
   
@@ -117,15 +117,15 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-package-the-content"></a>Para criar um pacote com o conteúdo  
   
-1.  Crie uma pasta para copiar o conteúdo para uma implantação posterior.  
+1. Crie uma pasta para copiar o conteúdo para uma implantação posterior.  
   
      Por exemplo: c:\VS12Help.  
   
-2.  Abra cmd.exe com permissões de administrador.  
+2. Abra cmd.exe com permissões de administrador.  
   
-3.  Navegue até a pasta que você criou na etapa 1.  
+3. Navegue até a pasta que você criou na etapa 1.  
   
-4.  Digite o seguinte:  
+4. Digite o seguinte:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome da pasta*>\ /y /e /k /o  
   
@@ -135,11 +135,11 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-deploy-the-content"></a>Para implantar o conteúdo  
   
-1.  Crie um compartilhamento de rede e copie o conteúdo da ajuda três para esse local.  
+1. Crie um compartilhamento de rede e copie o conteúdo da ajuda três para esse local.  
   
      Por exemplo, copie o conteúdo em c:\VS12Help para \\\myserver\VS12Help.  
   
-2.  Crie um arquivo .bat para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações.  
+2. Crie um arquivo .bat para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações.  
   
      Por exemplo:  
   
@@ -199,7 +199,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
     :CONTINUE  
     ```  
   
-3.  Execute o arquivo bat em computadores locais em que o conteúdo da ajuda deve estar instalado.  
+3. Execute o arquivo bat em computadores locais em que o conteúdo da ajuda deve estar instalado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../ide/command-line-arguments-for-the-help-content-manager.md)   

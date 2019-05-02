@@ -1,5 +1,5 @@
 ---
-title: 'Como: exibir documentos de Script | Microsoft Docs'
+title: 'Como: Exibir documentos de Script | Microsoft Docs'
 ms.date: 01/08/2019
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ca31ffe85f7d932ebb23d6a454b5bccfdcb5ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 821e3bc4abc379f0ed7fc1343867f88fefe54b17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906048"
 ---
-# <a name="how-to-view-script-documents-javascript"></a>Como: exibir documentos de Script (JavaScript)
+# <a name="how-to-view-script-documents-javascript"></a>Como: Exibir documentos de Script (JavaScript)
 
 Arquivos de script do lado do servidor são visíveis no Gerenciador de soluções. Os arquivos de script do lado do cliente são visíveis apenas quando você está no modo de depuração ou modo de interrupção. Arquivos de script do lado do cliente são exibidos na **documentos de Script** nó.
 
@@ -31,17 +31,17 @@ Arquivos de script do lado do servidor são visíveis no Gerenciador de soluçõ
 
 ### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor
 
-1.  No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.
+1. No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.
 
-2.  Clique duas vezes no arquivo de script que deseja exibir.
+2. Clique duas vezes no arquivo de script que deseja exibir.
 
      O arquivo de script do lado do servidor é aberto em uma janela de origem.
 
 ### <a name="to-view-a-client-side-script-document"></a>Para exibir um documento de script do lado do cliente
 
-1.  No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.
+1. No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.
 
-2.  Clique duas vezes no arquivo de script que deseja exibir.
+2. Clique duas vezes no arquivo de script que deseja exibir.
 
      O arquivo de script do lado do cliente é aberto em uma janela de origem.
 

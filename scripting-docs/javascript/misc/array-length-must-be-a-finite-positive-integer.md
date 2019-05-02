@@ -14,19 +14,19 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 691f7aff61a8a2bfae6444540afe9a28a200278d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 31673205a7ca94783985e0249c5664b4bbca6147
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818118"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>O tamanho da matriz deve ser um número inteiro finito e positivo
 Você está chamando o **matriz** construtor com um argumento que não é um número inteiro (números inteiros consistem em zero e o conjunto de números inteiros positivos).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Use números inteiros positivos apenas ao criar um novo `Array` objeto. Se você quiser criar uma matriz com um único elemento que não é um inteiro, você deve fazê-lo em um processo em duas etapas. Primeiro criar uma matriz com um elemento e, em seguida, coloque o valor no primeiro elemento (array[0]). O exemplo a seguir é um exemplo que gera esse erro.  
+- Use números inteiros positivos apenas ao criar um novo `Array` objeto. Se você quiser criar uma matriz com um único elemento que não é um inteiro, você deve fazê-lo em um processo em duas etapas. Primeiro criar uma matriz com um elemento e, em seguida, coloque o valor no primeiro elemento (array[0]). O exemplo a seguir é um exemplo que gera esse erro.  
   
     ```JavaScript  
     var piArray = new Array(3.14159);  

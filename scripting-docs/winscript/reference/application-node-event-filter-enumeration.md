@@ -2,7 +2,6 @@
 title: Enumeração APPLICATION_NODE_EVENT_FILTER | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c6974a179ae3f694d1e355969f9abe0ce9163fc4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: 3c1727c8d1526199d179fe137c9bf899959bc2ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422210"
 ---
 # <a name="applicationnodeeventfilter-enumeration"></a>Enumeração APPLICATION_NODE_EVENT_FILTER
 Especifica os tipos de nós serem excluídos ao filtrar documentos de código. Usado na [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) e [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Essas constantes são implementadas pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
+> Essas constantes são implementadas pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

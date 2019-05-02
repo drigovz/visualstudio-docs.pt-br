@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 06017a3feb3faa667b469c0075e561b2104785b5
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895593"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 Habilita mapas mip em texturas que não são destinos de renderização.

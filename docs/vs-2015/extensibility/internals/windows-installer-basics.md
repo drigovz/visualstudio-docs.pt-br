@@ -1,34 +1,29 @@
 ---
 title: Noções básicas do Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: b3756f8e9c8b22b9e6a7da52e076364024fe49d1
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51747657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437265"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O Windows Installer instala e desinstala aplicativos ou produtos de software no computador do usuário, executar essas tarefas em unidades chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para as configurações usando o Windows Installer.  
   
- Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](http://msdn.microsoft.com/library/aa372866.aspx).  
+ Para obter uma documentação abrangente do Windows Installer, consulte o tópico do SDK da plataforma [Windows Installer](/previous-versions/2kt85ked(v=vs.120)).  
   
 ## <a name="authoring-a-vspackage"></a>Criação de um VSPackage  
  Windows Installer usa pacotes de instalação, que contêm informações que o Windows Installer precisa para instalar, desinstalar ou reparar um produto e para executar a interface de usuário (UI) de configuração. Cada pacote de instalação inclui um arquivo. msi, que contém um banco de dados de instalação, um fluxo de informações de resumo e fluxos de dados de várias partes da instalação. Para usar o instalador, você deve criar uma instalação. Como o instalador organiza as instalações em torno do conceito de componentes e armazena informações sobre a instalação em um banco de dados relacional, o processo de criação de um pacote de instalação em larga escala envolve as seguintes etapas:  
@@ -64,20 +59,19 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
  Dois conjuntos de regras determinam a implantação de recursos por meio de componentes do seu programa de instalação. Um conjunto de regras é mantido pelo instalador do Windows em si, enquanto você deve aplicar o segundo conjunto como autor da instalação.  
   
 > [!NOTE]
->  A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Regras aplicadas pelo instalador  
   
--   Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.  
+- Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.  
   
--   Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.  
+- Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.  
   
 #### <a name="component-provider-responsibilities"></a>Responsabilidades do provedor de componente  
   
--   Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
--   Nenhum recurso com versão nunca deve enviar em mais de um WIC.  
+- Nenhum recurso com versão nunca deve enviar em mais de um WIC.  
   
 ## <a name="see-also"></a>Consulte também  
  [O que acontece se as regras de componente são interrompidas?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)
-

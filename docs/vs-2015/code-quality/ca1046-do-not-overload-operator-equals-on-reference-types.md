@@ -1,14 +1,9 @@
 ---
 title: 'CA1046: Não sobrecarregar operador equals em tipos de referência | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - DoNotOverloadOperatorEqualsOnReferenceTypes
 - CA1046
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ea32811cfd695e6d55ec635e2e4ea5b4feded05a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b5543b2d968e96cbd5bf8c9f6dd015b2acf31b4c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49919371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536045"
 ---
-# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: não sobrecarregar igualdades de operador em tipos de referência
+# <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Não sobrecarregar o operador equals em tipos de referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -66,10 +61,7 @@ ms.locfileid: "49919371"
 **b e a são = =? Não**
 **c e a são = =? Sim**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1013: sobrecarregar operador Equals ao sobrecarregar adicionar e subtrair](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+ [CA1013: Sobrecarregar operador equals ao sobrecarregar adicionar e subtrair](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Object.Equals%2A?displayProperty=fullName> [Operadores de igualdade](http://msdn.microsoft.com/library/bc496a91-fefb-4ce0-ab4c-61f09964119a)
-
-
-

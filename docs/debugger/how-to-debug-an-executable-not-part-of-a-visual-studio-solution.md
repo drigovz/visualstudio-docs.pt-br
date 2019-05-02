@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848002"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Depurar um aplicativo que não faz parte de uma solução do Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -35,7 +35,7 @@ A maneira usual de depurar um aplicativo que não existe no Visual Studio é ini
 
 Anexar a um aplicativo requer etapas manuais que levam alguns segundos. Devido a esse atraso, anexação não ajudará a depurar um problema de inicialização ou um aplicativo que não aguarda o usuário de entrada e fecha rapidamente.
 
-Nessas situações, você pode criar um projeto EXE do Visual Studio para o aplicativo ou importá-lo para um existente C#, Visual Basic ou C++ solução. Nem todas as linguagens de programação oferecem suporte a projetos EXE.
+Nessas situações, você pode criar um projeto EXE do Visual Studio para o aplicativo ou importá-lo para um existente C#, Visual Basic, ou C++ solução. Nem todas as linguagens de programação oferecem suporte a projetos EXE.
 
 >[!IMPORTANT]
 >Recursos de depuração para um aplicativo que não foi compilado no Visual Studio são limitados, se você anexa ao aplicativo ou adicioná-lo a uma solução do Visual Studio.
@@ -58,7 +58,7 @@ Nessas situações, você pode criar um projeto EXE do Visual Studio para o apli
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Para importar um aplicativo para uma solução existente do Visual Studio
 
-1.  Com um C++, C#, ou solução do Visual Basic aberta no Visual Studio, selecione **arquivo** > **Add** > **projeto existente**.
+1. Com um C++, C#, ou solução do Visual Basic aberta no Visual Studio, selecione **arquivo** > **Add** > **projeto existente**.
 
 1. No **Abrir projeto** caixa de diálogo, selecione **todos os arquivos de projeto**, se ainda não estiver selecionado, no menu suspenso próximo a **nome do arquivo**.
 

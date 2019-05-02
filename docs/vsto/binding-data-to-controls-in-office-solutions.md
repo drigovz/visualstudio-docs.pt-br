@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939558"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Associar dados a controles em soluções do Office
   Você pode associar controles dos Windows Forms e *hospedar controles* em um documento do Microsoft Office Word ou planilha do Microsoft Office Excel para uma fonte de dados para que os controles exibem automaticamente os dados. Você pode associar dados a controles em projetos de nível de aplicativo e o nível de documento.
@@ -73,22 +73,22 @@ ms.locfileid: "56605712"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Associar dados no nível de documento em tempo de design
  Os tópicos a seguir mostram exemplos de associação de dados em tempo de design:
 
--   [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Como: Preencher planilhas com dados de um banco de dados](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Como: Preencher documentos com dados de um banco de dados](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Como: Preencher documentos com dados de objetos](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Como: Preencher documentos com dados de serviços](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Como: Percorrer os registros de banco de dados em uma planilha](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Como: Percorrer os registros de banco de dados em uma planilha](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Vincular dados em projetos de suplemento do VSTO
  Em projetos de suplemento do VSTO, você pode adicionar controles apenas em tempo de execução. Os tópicos a seguir mostram exemplos de associação de dados em tempo de execução:
 
--   [Passo a passo: Associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Passo a passo: Associação de dados simples no projeto do suplemento do VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Passo a passo: Associação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Passo a passo: Associação de dados complexos no projeto do suplemento do VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Atualizar os dados associados a controles de host
  Associação de dados entre uma fonte de dados e um controle de host envolve uma atualização de dados bidirecional. Associação de dados simples, as alterações na fonte de dados são refletidas automaticamente no controle de host, mas as alterações no controle de host exigem uma chamada explícita para atualizar a fonte de dados. O motivo é que em alguns casos, as alterações em um campo de associação de dados não são aceitos, a menos que eles são acompanhados por alterações em outro campo de associação de dados. Por exemplo, você pode ter dois campos, um para idade e um para anos de experiência. Experiência não pode exceder a idade. Um usuário não é possível atualizar a idade de 50 para 25 e, em seguida, a experiência de 30 a 10, a menos que ele ou ela faz as alterações ao mesmo tempo. Para resolver esse problema, os campos com associação de dados simples não são atualizados até que as atualizações são enviadas explicitamente pelo código.

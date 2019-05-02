@@ -1,14 +1,9 @@
 ---
-title: 'Idiasymbol:: Get_undecoratedname | Microsoft Docs'
-ms.custom: ''
+title: IDiaSymbol::get_undecoratedName | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: e49edf25-a51d-4787-bd5b-2bf5af827c8c
 caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 95f84b5d5c58ddd5f9968ff9722588ec18771721
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9d6a40bb739ea68dbc08c3dc3b3f98271261e6cf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431753"
 ---
 # <a name="idiasymbolgetundecoratedname"></a>IDiaSymbol::get_undecoratedName
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,16 +35,13 @@ HRESULT get_undecoratedName ( 
   
 #### <a name="parameters"></a>Parâmetros  
  `pRetVal`  
- [out] Retorna o que nome decorado do nome não decorado para um C++.  
+ [out] Retorna o nome não decorado de um C++ nome decorado.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
-
-
-

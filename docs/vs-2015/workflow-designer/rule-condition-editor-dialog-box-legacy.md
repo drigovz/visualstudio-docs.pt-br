@@ -1,11 +1,8 @@
 ---
 title: Caixa de diálogo Editor de condição de regra (herdado) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Workflow.Activities.Rules.Design.RuleConditionDialog.UI
@@ -15,13 +12,13 @@ ms.assetid: c7ca8be9-de31-4a64-939c-4d53a50d5e29
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 0503f6ca9a209c62f842c9428cf1af9fe2a07ccc
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8237c8e29007d010cd99e4323bf8e88a23b7e9fb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49838537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006821"
 ---
 # <a name="rule-condition-editor-dialog-box-legacy"></a>Regra a caixa de diálogo editor de condição (o legados)
 Este tópico descreve como usar o **Rule Condition Editor** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -62,7 +59,7 @@ Este tópico descreve como usar o **Rule Condition Editor** caixa de diálogo em
   
 - Operadores aritméticos: +, -, *,/, MODIFICAÇÃO  
   
-- Operadores lógicos: E, & &, OR, &#124; &#124;, não!  
+- Operadores lógicos: AND, &&, OR, &#124;&#124;, NOT, !  
   
 - Operadores bit a bit: &,&#124;  
   

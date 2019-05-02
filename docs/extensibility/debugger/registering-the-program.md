@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b07d6433bbec7e0afb871931fdf3be314c86d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 162f8df09b1f6ce9372a57728d653d5d3c20a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415727"
 ---
 # <a name="register-the-program"></a>Registrar o programa
 Depois que o mecanismo de depuração tiver adquirido uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa na habilitação de programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por um dos seguintes meios:
 
--   O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.
+- O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.
 
--   Just-in-time (JIT) depuração, que permite depurar os após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.
+- Just-in-time (JIT) depuração, que permite depurar os após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.
 
 ## <a name="registering-procedure"></a>Registrar o procedimento
 
 ### <a name="to-register-your-program"></a>Para registrar o seu programa
 
-1.  Chame o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.
+1. Chame o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.
 
      `IDebugPortNotify2::AddProgramNode` requer um ponteiro para um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.
 
@@ -38,7 +38,7 @@ Depois que o mecanismo de depuração tiver adquirido uma porta, representado po
      O exemplo a seguir mostra o mecanismo de depuração iniciar o programa e registrá-lo com uma porta.
 
     > [!NOTE]
-    >  Este exemplo de código não é a única maneira de iniciar e reiniciar um processo; Esse código é principalmente um exemplo de registro de um programa com uma porta.
+    > Este exemplo de código não é a única maneira de iniciar e reiniciar um processo; Esse código é principalmente um exemplo de registro de um programa com uma porta.
 
     ```cpp
     // This is an IDebugEngineLaunch2 method.

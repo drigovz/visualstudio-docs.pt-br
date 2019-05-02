@@ -1,6 +1,6 @@
 ---
-title: Comando Avaliar Instrução
-ms.date: 11/04/2016
+title: EvaluateStatement
+ms.date: 02/25/2019
 ms.topic: reference
 f1_keywords:
 - debug.evaluatestatement
@@ -13,48 +13,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98bdaf41aa34367d656e2bfb5694f3b615dbe3b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eff96d1b413ea10b1274eb7d7938148727acbc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790870"
 ---
 # <a name="evaluate-statement-command"></a>Comando Avaliar Instrução
+
 Avalia e exibe a instrução fornecida.
 
 ## <a name="syntax"></a>Sintaxe
 
 ```cmd
-Debug.EvaluateStatement text
+>Debug.EvaluateStatement text
 ```
 
 ## <a name="arguments"></a>Arguments
- `text` Necessário. A instrução a ser avaliada.
 
-## <a name="remarks"></a>Comentários
- A janela usada para inserir o comando **EvaluateStatement** determina se um sinal de igual (=) é interpretado como um operador de comparação ou um operador de atribuição.
+`text`
 
- Na janela **Comando**, um sinal de igual (=) é interpretado como um operador de comparação. Dessa forma, por exemplo, se os valores das variáveis `a` e `b` forem diferentes, o comando
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- retornará um valor de `false`.
-
- Na janela **Imediato**, por outro lado, um sinal de igual (=) é interpretado como um operador de atribuição. Assim, por exemplo, o comando
-
-```cmd
->Debug.EvaluateStatement(a=b)
-```
-
- atribuirá à variável `a` o valor da variável `b`.
+Necessário. A instrução a ser avaliada.
 
 ## <a name="example"></a>Exemplo
 
 ```cmd
->Debug.EvaluateStatement(a+b)
+>Debug.EvaluateStatement args.Length
 ```
 
 ## <a name="see-also"></a>Consulte também

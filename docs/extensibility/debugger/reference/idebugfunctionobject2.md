@@ -10,16 +10,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: cc54c235dc0366d0e120b0ab1cb087e0d00ca741
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413820"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Representa uma função e aprimora a [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) interface.
 
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Observações para chamadores
  Métodos dessa interface adiar aqueles **IDebugFunctionObject** das seguintes maneiras:
 
--   O **IDebugEvaluate** método usa sinalizadores.
+- O **IDebugEvaluate** método usa sinalizadores.
 
--   O **CreateObject** método usa um tempo limite e sinalizadores.
+- O **CreateObject** método usa um tempo limite e sinalizadores.
 
--   O **CreateStringObjectWithLength** método usa um comprimento.
+- O **CreateStringObjectWithLength** método usa um comprimento.
 
 ## <a name="methods"></a>Métodos
  Essa interface implementa os métodos a seguir:

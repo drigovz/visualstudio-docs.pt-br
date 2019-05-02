@@ -1,27 +1,24 @@
 ---
 title: Adicionar novas conexões | Microsoft Docs
-ms.custom: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-data-tools
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 8a93c287-2834-4a83-a590-bdc3fe8d293f
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 03407962b4ea8160d492971367f121835fa39aae
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ff1ec43d6faec329db6138598d84e47db009113e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49218498"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665318"
 ---
 # <a name="add-new-connections"></a>Adicionar novas conexões
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode testar sua conexão a um banco de dados ou serviço e explorar o conteúdo do banco de dados e esquemas, usando **Gerenciador de servidores**, **Cloud Explorer**, ou **Pesquisador de objetos do SQL Server**. A funcionalidade dessas janelas se sobrepõe até certo ponto. As diferenças básicas são:  
   
  conexões de servidor  
@@ -56,4 +53,3 @@ Você pode testar sua conexão a um banco de dados ou serviço e explorar o cont
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

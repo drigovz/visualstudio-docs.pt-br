@@ -13,17 +13,16 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ef637126c75dd05eea2e8bfca76f0fe0bd13ac75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445394"
 ---
 # <a name="task-writing"></a>Escrevendo tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tarefas fornecem o código que é executado durante o processo de build. Tarefas estão contidas nos destinos. Uma biblioteca de tarefas típicas está incluída no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e você também pode criar suas próprias tarefas. Para obter mais informações sobre a biblioteca de tarefas que estão incluídos no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [referência à tarefa](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="tasks"></a>Tarefas  
@@ -106,7 +105,7 @@ namespace MyTasks
  O arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks é um arquivo de projeto que contém uma lista de elementos `UsingTask` que registra todas as tarefas que são fornecidas com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Esse arquivo é incluído automaticamente na criação de cada projeto. Se uma tarefa que está registrada no Microsoft.Common.Tasks também é registrada no arquivo de projeto atual, o arquivo de projeto atual tem precedência; ou seja, você pode substituir uma tarefa padrão com sua própria tarefa que tem o mesmo nome.  
   
 > [!TIP]
->  Você pode ver uma lista de tarefas que são fornecidos com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exibindo o conteúdo de Microsoft.Common.Tasks.  
+> Você pode ver uma lista de tarefas que são fornecidos com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exibindo o conteúdo de Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Gerando eventos de uma tarefa  
  Se a tarefa deriva da classe auxiliar <xref:Microsoft.Build.Utilities.Task>, você pode usar qualquer um dos seguintes métodos auxiliares na classe <xref:Microsoft.Build.Utilities.Task> para acionar eventos que serão capturados e exibidos por quaisquer agentes registrados:  

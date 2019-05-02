@@ -2,7 +2,6 @@
 title: IDebugApplication::HandleBreakPoint | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0478d0154ee79c1781885b94ae342e421e61e5e1
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: 5e3444e6eedde9576216552e41abb0e97aafa2d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54095362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412389"
 ---
 # <a name="idebugapplicationhandlebreakpoint"></a>IDebugApplication::HandleBreakPoint
 Faz com que o thread atual bloquear e envia uma notificação do ponto de interrupção para o IDE do depurador.  
@@ -55,7 +54,7 @@ HRESULT HandleBreakPoint(
  Um mecanismo de linguagem chama esse método no contexto de um thread que atinge um ponto de interrupção. Esse método bloqueia o thread atual e envia uma notificação de ponto de interrupção para o IDE do depurador. Quando o depurador retoma o aplicativo, o `pbra` parâmetro especifica qual ação será tomada.  
   
 > [!NOTE]
->  O mecanismo de linguagem pode ser chamado pelo thread de realizar tarefas tais como enumerar a pilha de quadros ou avaliam expressões durante o ponto de interrupção.  
+> O mecanismo de linguagem pode ser chamado pelo thread de realizar tarefas tais como enumerar a pilha de quadros ou avaliam expressões durante o ponto de interrupção.  
   
  Esse método faz com que `IApplicationDebugger::onHandleBreakPoint` a ser chamado.  
   

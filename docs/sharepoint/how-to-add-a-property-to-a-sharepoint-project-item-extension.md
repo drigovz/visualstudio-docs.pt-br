@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6dc2c0588fa3078a805f9804263afcf521ae72ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967221"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Como: Adicionar uma propriedade a uma extensão de item de projeto do SharePoint
   Você pode usar uma extensão de item de projeto para adicionar uma propriedade para qualquer item de projeto do SharePoint que já está instalado no Visual Studio. A propriedade aparece na **propriedades** janela quando o item de projeto é selecionado na **Gerenciador de soluções**.
@@ -28,11 +28,11 @@ ms.locfileid: "56644419"
 
 ### <a name="to-add-a-property-to-a-project-item-extension"></a>Para adicionar uma propriedade a uma extensão de item de projeto
 
-1.  Defina uma classe com uma propriedade pública que representa a propriedade que você está adicionando a um tipo de item de projeto. Se você quiser adicionar várias propriedades para um tipo de item de projeto, você pode definir todas as propriedades na mesma classe ou em classes diferentes.
+1. Defina uma classe com uma propriedade pública que representa a propriedade que você está adicionando a um tipo de item de projeto. Se você quiser adicionar várias propriedades para um tipo de item de projeto, você pode definir todas as propriedades na mesma classe ou em classes diferentes.
 
-2.  No <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> método de seu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementação, o identificador a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento do *projectItemType* parâmetro.
+2. No <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> método de seu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> implementação, o identificador a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento do *projectItemType* parâmetro.
 
-3.  No manipulador de eventos para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento, adicione uma instância de sua classe de propriedades para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> coleção do parâmetro de argumentos de evento.
+3. No manipulador de eventos para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> evento, adicione uma instância de sua classe de propriedades para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemPropertiesRequestedEventArgs.PropertySources%2A> coleção do parâmetro de argumentos de evento.
 
 ## <a name="example"></a>Exemplo
  O exemplo de código a seguir demonstra como adicionar uma propriedade chamada **exemplo de propriedade** para o item de projeto do receptor de eventos.
@@ -48,22 +48,22 @@ ms.locfileid: "56644419"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Especificar o comportamento de propriedades personalizadas
  Você pode definir como uma propriedade personalizada é exibida e comporta-se a **propriedades** janela aplicando atributos do <xref:System.ComponentModel> namespace à definição da propriedade. Os seguintes atributos são úteis em muitos cenários:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Especifica o nome da propriedade que aparece na **propriedades** janela.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Especifica o nome da propriedade que aparece na **propriedades** janela.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Especifica a cadeia de caracteres de descrição que aparece na parte inferior da **propriedades** janela quando a propriedade for selecionada.
+- <xref:System.ComponentModel.DescriptionAttribute>: Especifica a cadeia de caracteres de descrição que aparece na parte inferior da **propriedades** janela quando a propriedade for selecionada.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Especifica o valor padrão da propriedade.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Especifica o valor padrão da propriedade.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Especifica uma conversão personalizada entre a cadeia de caracteres que é exibida na **propriedades** janela e um valor da propriedade não cadeia de caracteres.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Especifica uma conversão personalizada entre a cadeia de caracteres que é exibida na **propriedades** janela e um valor da propriedade não cadeia de caracteres.
 
--   <xref:System.ComponentModel.EditorAttribute>: Especifica um editor personalizado para usar para modificar a propriedade.
+- <xref:System.ComponentModel.EditorAttribute>: Especifica um editor personalizado para usar para modificar a propriedade.
 
 ## <a name="compile-the-code"></a>Compilar o código
  Esses exemplos requerem um projeto de biblioteca de classes com as referências aos assemblies a seguir:
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Implantar a extensão
  Para implantar a extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

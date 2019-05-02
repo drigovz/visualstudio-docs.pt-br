@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f9d3cf030ca0e996365963e5dad419b19ff67596
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830056"
 ---
 # <a name="modules-view---contention-data"></a>Exibição Módulos – dados de contenção
 O modo de exibição de módulos de dados de contenção exibe dados de simultaneidade agrupados pelos módulos que foram utilizados nos dados de criação de perfil. Cada módulo é a raiz de uma árvore hierárquica. As funções do módulo no qual os eventos de contenção ocorreram são listadas sob o nó do módulo.

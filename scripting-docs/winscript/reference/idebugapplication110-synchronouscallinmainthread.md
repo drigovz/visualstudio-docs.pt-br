@@ -2,7 +2,6 @@
 title: IDebugApplication110::SynchronousCallInMainThread | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d3ebe79563ed6dbd57de759b79a452f280918010
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: d98f28f441096886c9ef7f26e63d876455a264e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446368"
 ---
 # <a name="idebugapplication110synchronouscallinmainthread"></a>IDebugApplication110::SynchronousCallInMainThread
 Faz uma chamada síncrona no thread principal.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> [Interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

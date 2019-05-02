@@ -1,14 +1,9 @@
 ---
 title: Pacote do Framework Classes gerenciadas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework, helper classes
 - managed package helper classes
@@ -16,19 +11,19 @@ helpviewer_keywords:
 - classes [Visual Studio SDK], managed package framework
 ms.assetid: 15aedcc3-c79a-460b-b620-43223f1ae81e
 caps.latest.revision: 24
-manager: douge
-ms.openlocfilehash: 931e73af72d2239ec04ac248b9fa426fe24f249a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 75f7cb153a976614ff790095141a820af80b5834
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49188988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422761"
 ---
 # <a name="managed-package-framework-classes"></a>Pacote do Framework Classes gerenciadas
 As classes do framework (MPF) de pacote gerenciado podem ser usadas para criar os VSPackages usando código gerenciado. Elas fornecem implementações padrão de várias interfaces de VSPackage. Ocultando as complexidades e detalhes de implementação MPF permite que você crie [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] produtos de integração com uma quantidade mínima de código.  
   
 > [!WARNING]
->  A maioria dos assemblies que contêm classes de estrutura de pacote gerenciado é fornecida com o SDK do Visual Studio. Você pode baixar o código-fonte para o Managed empacotado Framework para projetos em [estrutura de pacote gerenciado para projetos](http://mpfproj11.codeplex.com/).  
+> A maioria dos assemblies que contêm classes de estrutura de pacote gerenciado é fornecida com o SDK do Visual Studio. Você pode baixar o código-fonte para o Managed empacotado Framework para projetos em [estrutura de pacote gerenciado para projetos](http://mpfproj11.codeplex.com/).  
   
 ## <a name="mpf-namespaces"></a>Namespaces MPF  
  A tabela a seguir lista os namespaces MPF fornecidos pelo [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  

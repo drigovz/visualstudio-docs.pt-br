@@ -1,27 +1,22 @@
 ---
 title: Criando páginas de opções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 caps.latest.revision: 30
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 076c4934fe4f81bd56edc70356ecdcc1101456e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8c2b993a6c6947adfa3b01f2947b992b23236b8f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51760324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106118"
 ---
 # <a name="creating-options-pages"></a>Criando páginas de opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estrutura de pacote gerenciad
   
  Porque o ambiente instancia o objeto que implementa um determinado **opções de ferramentas** página quando a página específica é exibida pelo IDE:  
   
--   Um **opção ferramentas** página deve ser implementada em seu próprio objeto e não no objeto que implementa um VSPackage.  
+- Um **opção ferramentas** página deve ser implementada em seu próprio objeto e não no objeto que implementa um VSPackage.  
   
--   Um objeto não é possível implementar várias **opções de ferramentas** páginas.  
+- Um objeto não é possível implementar várias **opções de ferramentas** páginas.  
   
 ## <a name="registering-as-a-tools-options-page-provider"></a>Registrar-se como um provedor de página de opções de ferramentas  
  Uma configuração de usuário de suporte de VSPackage através de **opções de ferramentas** páginas indica os objetos que fornece esses **opções de ferramentas** páginas por meio da aplicação de instâncias de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> aplicada para o <xref:Microsoft.VisualStudio.Shell.Package>implementação.  
@@ -92,4 +87,3 @@ No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estrutura de pacote gerenciad
 ## <a name="see-also"></a>Consulte também  
  [Opções e configurações de usuário de extensão](../../extensibility/extending-user-settings-and-options.md)   
  [Suporte à automação para páginas de opções](../../extensibility/internals/automation-support-for-options-pages.md)
-

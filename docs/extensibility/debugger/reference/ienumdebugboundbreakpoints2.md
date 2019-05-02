@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40097fab8a45a08ce11c9f58fa22f4464174ef32
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7abba929e6c146e322147555dc750e2fc66ac9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914974"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 Essa interface enumera os pontos de interrupção associados associados com um ponto de interrupção pendente ou ponto de interrupção associado a eventos.
@@ -34,11 +34,11 @@ IEnumDebugBoundBreakpoints2 : IUnknown
 ## <a name="notes-for-callers"></a>Observações para chamadores
  O Visual Studio chama:
 
--   [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção que foram acionadas.
+- [EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção que foram acionadas.
 
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção que foram ligados.
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-enumboundbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção que foram ligados.
 
--   [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção associada a esse ponto de interrupção pendente.
+- [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) para obter essa interface que representa uma lista de todos os pontos de interrupção associada a esse ponto de interrupção pendente.
 
 ## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable
  A tabela a seguir mostra os métodos de `IEnumDebugBoundBreakpoints2`.

@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 488551d9b86ec7bd09adadd92d515cac1a53e841
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d885ba9d32126e0d77828047adbde84d557fd821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447082"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>Limitações programáticas de itens de host e controles de host
   Cada item de host e o controle de host foi projetado para se comportar como um correspondente nativo Microsoft Office Word ou o objeto do Microsoft Office Excel, com funcionalidade adicional. No entanto, há algumas diferenças fundamentais entre o comportamento de itens de host e controles de host e objetos nativos do Office no tempo de execução.
@@ -57,7 +57,7 @@ ms.locfileid: "56596135"
  É possível adicionar controles de host a um nativo <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet>.
 
 > [!NOTE]
->  Os seguintes controles de host não podem ser adicionados programaticamente a documentos ou planilhas: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, e <xref:Microsoft.Office.Tools.Word.XMLNodes>.
+> Os seguintes controles de host não podem ser adicionados programaticamente a documentos ou planilhas: <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>, <xref:Microsoft.Office.Tools.Word.XMLNode>, e <xref:Microsoft.Office.Tools.Word.XMLNodes>.
 
 ## <a name="understand-type-differences-between-host-items-host-controls-and-native-office-objects"></a>Entender as diferenças de tipo entre itens de host, controles de host e objetos nativos do Office
  Para cada item de host e o controle de host, há um objeto do Microsoft Office Word ou Microsoft Office Excel nativo subjacente. Você pode acessar o objeto subjacente usando a propriedade InnerObject do item de host ou controle de host. No entanto, não há nenhuma maneira de converter um objeto nativo do Office para o seu item de host correspondente ou o controle de host. Se você tentar converter um objeto nativo do Office para o tipo de um item de host ou o controle de host, um <xref:System.InvalidCastException> é gerada.

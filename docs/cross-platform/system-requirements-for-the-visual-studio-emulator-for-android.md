@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e25fc23752b6983a2e4e1720323fea82ac5fc4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54923864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815454"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o Emulador do Visual Studio para Android
 
@@ -26,7 +26,7 @@ O programa de instalação tenta configurar esses pré-requisitos para você sil
 > [!IMPORTANT]
 > O programa de instalação do emulador verifica os pré-requisitos para executar o Emulador do Visual Studio para Android. Exibirá avisos se os pré-requisitos não estiverem presentes, mas não os exige.
 
-##  <a name="Checklist"></a> Lista de verificação rápida
+## <a name="Checklist"></a> Lista de verificação rápida
 
 Esta é uma lista de verificação rápida dos requisitos para executar o Emulador do Visual Studio para Android. Para obter informações mais detalhadas, consulte as próximas seções neste tópico.
 
@@ -50,11 +50,11 @@ Requisitos do Hyper-V
 
 - No BIOS, os seguintes recursos devem ter suporte:
 
-  -   Virtualização assistida por hardware
+  - Virtualização assistida por hardware
 
-  -   SLAT (Conversão de Endereços de Segundo Nível)
+  - SLAT (Conversão de Endereços de Segundo Nível)
 
-  -   DEP (Prevenção de Execução de Dados) baseada em hardware
+  - DEP (Prevenção de Execução de Dados) baseada em hardware
 
 - No Windows, o Hyper-V deve estar habilitado e em execução.
 
@@ -63,7 +63,7 @@ Requisitos do Hyper-V
 ## <a name="system-requirements"></a>Requisitos do sistema
  O computador deve atender aos seguintes requisitos:
 
-- Suporte ao Hyper-V (consulte [Requisitos do Hyper-V](#HyperV))
+- Suporte ao Hyper-V (consulte [Requisitos do Hyper-V](#hyper-v-requirements))
 
 - 6 GB ou mais de RAM.
 

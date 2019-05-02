@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0150ed3f40d4e8fb61cc6054a37c30ae0ffc0d1a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ad7a7df2a536df0ac3e9bc391f08ef5d0fcd830
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444106"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023: Tempo de CPU de GC elevado
 
@@ -42,7 +42,7 @@ ms.locfileid: "56608403"
  Essa regra é acionada quando o tempo gasto na coleta de lixo é significativo em comparação com o tempo total de processamento do aplicativo.
 
 > [!NOTE]
->  Quando a proporção de tempo gasto na coleta de lixo é excessiva em comparação com o tempo total de processamento do aplicativo, o aviso [DA0024: Excesso de tempo de CPU no GC](../profiling/da0024-excessive-gc-cpu-time.md) é acionado em vez dessa regra.
+> Quando a proporção de tempo gasto na coleta de lixo é excessiva em comparação com o tempo total de processamento do aplicativo, o aviso [DA0024: Excesso de tempo de CPU no GC](../profiling/da0024-excessive-gc-cpu-time.md) é acionado em vez dessa regra.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Marcas](../profiling/marks-view.md) dos dados de criação de perfil. Encontre a coluna **Memória do .NET CLR\\% de tempo no GC**. Determine se há fases específicas da execução do programa em que a sobrecarga da coleta de lixo de memória gerenciada é mais pesada do que em outras fases. Compare os valores do valor de % de tempo no GC com a taxa de coleta de lixo relatada nos valores **Nº de coletas da Ger 0**, **Nº de coletas da Ger 1** e **Nº de coletas da Ger 2**.

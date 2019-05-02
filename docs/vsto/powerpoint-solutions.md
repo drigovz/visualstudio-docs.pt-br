@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ee1e5eddf89e60434a083293cdc08998dfe1b41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445224"
 ---
 # <a name="powerpoint-solutions"></a>Soluções PowerPoint
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para PowerPoint do Microsoft Office. Você pode usar suplementos do VSTO para automatizar o PowerPoint, estender os recursos do PowerPoint ou personalizar a interface de usuário (IU) do PowerPoint.
@@ -32,7 +32,7 @@ ms.locfileid: "56601246"
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar um suplemento para o Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 
@@ -49,7 +49,7 @@ ms.locfileid: "56601246"
 
   Quando você chama o modelo de objeto do PowerPoint, você pode usar os tipos fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado em que o suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos na <xref:Microsoft.Office.Interop.PowerPoint> namespace. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).
 
-##  <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do PowerPoint
+## <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do PowerPoint
  Para obter informações completas sobre o modelo de objeto do PowerPoint, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do PowerPoint e a referência de modelo de objeto do VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primário

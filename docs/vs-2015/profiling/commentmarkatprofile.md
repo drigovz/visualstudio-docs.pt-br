@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20211a2526062a67a3e23896512f072edc6ae44d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35ef5e1033224969f4dae1e42036b860f89bbd8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416659"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
  O estado de criação de perfil para o thread que contém a função de perfil de marca deve estar ligado quando as marcas e os comentários são inseridos com o comando Mark ou com as funções da API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile). Marcas de perfis são globais no escopo. Por exemplo, uma marca de perfil inserida em um thread pode ser usada para marcar o início ou término de um segmento de dados em um thread no arquivo .vsp.  
   
 > [!IMPORTANT]
->  Os métodos CommentMarkAtProfile devem ser usados somente com a instrumentação.  
+> Os métodos CommentMarkAtProfile devem ser usados somente com a instrumentação.  
   
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

@@ -1,14 +1,9 @@
 ---
 title: IDiaTable | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: c99a2c44-7b72-4e3c-b963-25fe3df3a555
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 03f93cb75ce675409adcceec3f08b172581a3d8b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e6109e2eeb94481a2bff4a6467c490ec656d4c2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442010"
 ---
 # <a name="idiatable"></a>IDiaTable
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +36,7 @@ IDiaTable : IEnumUnknown
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera o [IEnumVARIANT Interface](http://msdn.microsoft.com/en-us/139e3c93-faef-4003-9079-e0e94494db3e) versão este enumerador.|  
+|[IDiaTable::get__NewEnum](../../debugger/debug-interface-access/idiatable-get-newenum.md)|Recupera o [IEnumVARIANT Interface](http://msdn.microsoft.com/139e3c93-faef-4003-9079-e0e94494db3e) versão este enumerador.|  
 |[IDiaTable::get_name](../../debugger/debug-interface-access/idiatable-get-name.md)|Recupera o nome da tabela.|  
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Recupera o número de itens na tabela.|  
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Recupera uma referência a um índice de entrada específica.|  
@@ -56,25 +51,25 @@ IDiaTable : IEnumUnknown
   
  As seguintes interfaces são implementadas com o `IDiaTable` interface (ou seja, você pode consultar o `IDiaTable` interface para uma das interfaces a seguir):  
   
--   [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
+- [IDiaEnumSymbols](../../debugger/debug-interface-access/idiaenumsymbols.md)  
   
--   [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
+- [IDiaEnumSourceFiles](../../debugger/debug-interface-access/idiaenumsourcefiles.md)  
   
--   [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
+- [IDiaEnumLineNumbers](../../debugger/debug-interface-access/idiaenumlinenumbers.md)  
   
--   [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
+- [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md)  
   
--   [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
+- [IDiaEnumSegments](../../debugger/debug-interface-access/idiaenumsegments.md)  
   
--   [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
+- [IDiaEnumInjectedSources](../../debugger/debug-interface-access/idiaenuminjectedsources.md)  
   
--   [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
+- [IDiaEnumFrameData](../../debugger/debug-interface-access/idiaenumframedata.md)  
   
 ## <a name="example"></a>Exemplo  
  A primeira função, `ShowTableNames`, exibe os nomes de todas as tabelas na sessão. A segunda função, `GetTable`, pesquisa todas as tabelas para uma tabela que implementa uma interface especificada. A terceira função, `UseTable`, mostra como usar o `GetTable` função.  
   
 > [!NOTE]
->  `CDiaBSTR` é uma classe que encapsula um `BSTR` e manipula automaticamente a liberar a cadeia de caracteres quando a instanciação sai do escopo.  
+> `CDiaBSTR` é uma classe que encapsula um `BSTR` e manipula automaticamente a liberar a cadeia de caracteres quando a instanciação sai do escopo.  
   
 ```cpp#  
 void ShowTableNames(IDiaSession *pSession)  
@@ -146,10 +141,7 @@ void UseTable(IDiaSession *pSession)
  DLL: msdia80.dll  
   
 ## <a name="see-also"></a>Consulte também  
- [Interfaces (SDK de acesso à Interface de depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
+ [Interfaces (SDK de Acesso à Interface de Depuração)](../../debugger/debug-interface-access/interfaces-debug-interface-access-sdk.md)   
  [IDiaEnumTables](../../debugger/debug-interface-access/idiaenumtables.md)   
- [Idiaenumtables:: item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
+ [IDiaEnumTables::Item](../../debugger/debug-interface-access/idiaenumtables-item.md)   
  [IDiaEnumTables::Next](../../debugger/debug-interface-access/idiaenumtables-next.md)
-
-
-

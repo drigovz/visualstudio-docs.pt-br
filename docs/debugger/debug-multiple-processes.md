@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853363"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Depurar vários processos (C#, Visual Basic, C++)
 
@@ -48,11 +48,11 @@ Para iniciar a depuração de um projeto a partir **Gerenciador de soluções** 
 
 1. Selecione **seleção atual**, **único projeto de inicialização** e um arquivo de projeto, ou **vários projetos de inicialização**.
 
-   Se você selecionar **vários projetos de inicialização**, você pode alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **inicie**, **iniciar sem depuração**, ou **Nenhum**.
+   Se você selecionar **vários projetos de inicialização**, você pode alterar a ordem de inicialização e a ação a ser tomada para cada projeto: **Inicie**, **iniciar sem depuração**, ou **None**.
 
 1. Selecione **Apply**, ou **Okey** para aplicar e fechar a caixa de diálogo.
 
-###  <a name="BKMK_Attach_to_a_process"></a> Anexar a um processo
+### <a name="BKMK_Attach_to_a_process"></a> Anexar a um processo
 
 O depurador também pode *anexar* para aplicativos executados em processos fora do Visual Studio, incluindo em dispositivos remotos. Depois de anexar a um aplicativo, você pode usar o depurador do Visual Studio. Recursos de depuração podem ser limitado. Ele depende se o aplicativo foi compilado com informações de depuração, se você tem acesso ao código-fonte do aplicativo e se o compilador JIT está controlando as informações de depuração.
 
@@ -69,7 +69,7 @@ Para obter mais informações, consulte [anexar a processos em execução](../de
 >[!NOTE]
 >O depurador não é anexado automaticamente a um processo filho que é inicializado por um processo depurado, mesmo se o projeto filho estiver na mesma solução. Para depurar um processo filho, anexar ao processo filho depois de ter começado, ou configurar o Editor do registro do Windows para iniciar o processo filho em uma nova instância do depurador.
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Use o Editor do registro para iniciar automaticamente um processo no depurador
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Use o Editor do registro para iniciar automaticamente um processo no depurador
 
 Às vezes, talvez você precise depurar o código de inicialização para um aplicativo que é iniciado por outro processo. Os exemplos incluem serviços e ações de configuração personalizada. Você pode ter o depurador a iniciar e anexar automaticamente ao aplicativo.
 
@@ -93,7 +93,7 @@ Para obter mais informações, consulte [anexar a processos em execução](../de
 
    ![Depurador automático começar a entrada em regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "depurador automático começar a entrada em regedit.exe")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Depurar com vários processos
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Depurar com vários processos
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Quando estiver depurando um aplicativo com vários processos, os comandos do depurador mais recentes, passo a passo e continuando afetam todos os processos por padrão. Por exemplo, quando um processo é suspenso em um ponto de interrupção, a execução de todos os outros processos também é suspenso. Você pode alterar esse comportamento padrão para obter mais controle sobre os destinos dos comandos de execução.
@@ -102,7 +102,7 @@ Quando estiver depurando um aplicativo com vários processos, os comandos do dep
 
 - Sob **ferramentas** (ou **Debug**) > **opções** > **depuração** > **geral**, marque ou desmarque as **interromper todos os processos quando um processo for interrompido** caixa de seleção.
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interromper, depurar e continuar
+### <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interromper, depurar e continuar
 
 A tabela a seguir descreve os comportamentos de depuração de comandos quando o **interromper todos os processos quando um processo for interrompido** caixa de seleção é marcada ou desmarcada:
 
@@ -117,12 +117,12 @@ A tabela a seguir descreve os comportamentos de depuração de comandos quando o
 |**Processos** Janela > **interromper processo**|N/D|Quebras selecionadas do processo.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 |**Processos** Janela > **continuar processo**|N/D|O processo selecionado é retomado.<br />Outros processos mantém o estado existente (suspenso ou em execução).|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Localize a fonte e os arquivos de símbolo (.pdb)
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Localize a fonte e os arquivos de símbolo (.pdb)
 Para navegar no código de origem de um processo, o depurador precisa acessar seus arquivos de origem e arquivos de símbolo. Para obter mais informações, confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-Se você não pode acessar os arquivos para um processo, você pode navegar usando o **desmontagem** janela. Para obter mais informações, consulte [como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md).
+Se você não pode acessar os arquivos para um processo, você pode navegar usando o **desmontagem** janela. Para obter mais informações, confira [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md).
 
-###  <a name="BKMK_Switch_between_processes"></a> Alternar entre processos
+### <a name="BKMK_Switch_between_processes"></a> Alternar entre processos
 
 Você pode anexar a vários processos quando você está depurando, mas somente um processo está ativo no depurador em um determinado momento. Você pode definir o processo ativo *atual* ou na barra de ferramentas do **Localização de Depuração** ou na janela **Processos**. Para alternar entre processos, ambos os processos devem estar no modo de interrupção.
 

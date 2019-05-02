@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8abfceedb112bb638dde2ff826182ad044573c74
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e8d2dadbb4bbd17b1ee1856dd896d78b0faef2cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825273"
 ---
 # <a name="security-warnings"></a>Avisos de segurança
 
@@ -77,5 +77,5 @@ Os avisos de segurança oferecem suporte a bibliotecas e aplicativos mais seguro
 |[CA2153: Evitar manipular exceções de estado corrompidas](../code-quality/ca2153-avoid-handling-corrupted-state-exceptions.md)|[Corrompido exceções de estado (CSE)](https://msdn.microsoft.com/magazine/dd419661.aspx) indicam que a memória corrupção existe em seu processo. Capturar esses em vez de permitir que o processo falhe pode levar a vulnerabilidades de segurança se um invasor pode colocar uma exploração para a região de memória corrompida.|
 |[CA3075: Processamento de DTD inseguro](../code-quality/ca3075-insecure-dtd-processing.md)|Se você usar instâncias de DTDProcessing inseguras ou referenciar origens de entidade externa, o analisador pode aceitar a entrada não confiável e divulgar informações confidenciais para invasores.|
 |[CA3076: Execução de Script XSLT inseguro](../code-quality/ca3076-insecure-xslt-script-execution.md)|Se você executar maneira insegura extensível folhas de estilos XSLT (linguagem) em aplicativos .NET, o processador pode resolver referências URI não confiáveis que poderiam revelar informações confidenciais para invasores, levando a negação de serviço e entre sites os ataques.|
-|[CA3077: Processamento inseguro no Design de API, documento XML e leitor de texto XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Quando a criação de uma API deriva do XMLDocument e XMLTextReader, lembre-se de DtdProcessing.  Usando instâncias de DTDProcessing inseguras ao referenciar ou resolvendo origens de entidade externa ou definir os valores inseguros em XML pode levar à divulgação de informações.|
+|[CA3077: Processamento inseguro no Design de API, documento XML e leitor de texto XML](../code-quality/ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader.md)|Quando a criação de uma API deriva do XMLDocument e XMLTextReader, lembre-se de DtdProcessing. Usando instâncias de DTDProcessing inseguras ao referenciar ou resolvendo origens de entidade externa ou definir os valores inseguros em XML pode levar à divulgação de informações.|
 |[CA3147: Manipuladores de verbo de marca com ValidateAntiForgeryToken](../code-quality/ca3147-mark-verb-handlers-with-validateantiforgerytoken.md)|Durante a criação de um controlador ASP.NET MVC, lembre-se de ataques de falsificação de solicitação entre sites. Um ataque de falsificação de solicitação entre sites pode enviar solicitações mal-intencionadas de um usuário autenticado ao seu controlador ASP.NET MVC.|

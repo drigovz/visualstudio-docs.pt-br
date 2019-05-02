@@ -7,18 +7,16 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 64b14c27ffce1d2818b1ce38cdea72f63f9a7e28
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.openlocfilehash: 188b1f8e96dca3ba76a9334f04156a1e30ededa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53864862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582526"
 ---
 # <a name="configure-a-c-project-for-intellisense"></a>Configurar um projeto do C++ para o IntelliSense
 
 Em alguns casos, pode ser necessário configurar manualmente o projeto do C++ para fazer com que o IntelliSense funcione corretamente. Para projetos do MSBuild (com base em arquivos .vcxproj), é possível ajustar as configurações nas propriedades do projeto. Para projetos não MSBuild, as configurações são ajustadas no arquivo CppProperties.json no diretório raiz do projeto. Em alguns casos, pode ser preciso criar um arquivo de dicas para ajudar o IntelliSense a entender as definições de macro. O ambiente de desenvolvimento integrado (IDE) do Visual Studio ajuda a identificar e corrigir problemas do IntelliSense.
-
-
 
 ## <a name="single-file-intellisense"></a>IntelliSense de arquivo único
 
@@ -52,7 +50,7 @@ Para obter mais informações, confira [Como: Habilitar o IntelliSense para proj
 
 ### <a name="open-folder-projects"></a>Projetos de pasta aberta
 
-Para projetos CMake, certifique-se de que os caminhos de #include estejam especificados corretamente para todas as configurações em CMakeLists.txt. Outros tipos de projeto podem exigir um arquivo CppProperties.json. Para saber mais, confira [Configurar o IntelliSense com CppProperties.json](/cpp/ide/non-msbuild-projects#cppproperties). Os caminhos devem estar corretos para cada configuração definida no arquivo.
+Para projetos CMake, certifique-se de que os caminhos de #include estejam especificados corretamente para todas as configurações em CMakeLists.txt. Outros tipos de projeto podem exigir um arquivo CppProperties.json. Para saber mais, confira [Configurar o IntelliSense com CppProperties.json](/cpp/build/open-folder-projects-cpp#configure-intellisense-and-browsing-hints-with-cpppropertiesjson). Os caminhos devem estar corretos para cada configuração definida no arquivo.
 
 Se houver um erro de sintaxe no arquivo CppProperties.json, o IntelliSense ficará incorreto nos arquivos afetados. O Visual Studio exibirá o erro na Janela de Saída.
 
@@ -72,9 +70,9 @@ Há duas maneiras comuns em que esse problema se manifesta no Visual Studio:
 
    ![O Analisador de Marca se oferece para definir uma função existente](media/vcpp-intellisense-tag-parser-function.png)
 
-Para corrigir esses tipos de problemas, adicione um arquivo chamado **cpp.hint** na raiz do diretório de soluções. Para saber mais, confira [Arquivos de dicas](/cpp/ide/hint-files).
+Para corrigir esses tipos de problemas, adicione um arquivo chamado **cpp.hint** na raiz do diretório de soluções. Para saber mais, confira [Arquivos de dicas](/cpp/build/reference/hint-files).
 
-Os erros do Analisador de Marca do **Visual Studio 2017 versão 15.7** são exibidos na janela de Lista de Erros.
+Os erros de analisador de marca são exibidos na janela **Lista de Erros**.
 
 ## <a name="validate-project-settings-with-diagnostic-logging"></a>Validar configurações do projeto com o log de diagnóstico
 
@@ -107,7 +105,7 @@ No entanto, em alguns casos o Visual Studio pode não atualizar o banco de dados
 
 ## <a name="troubleshooting-intellisense-build-failures"></a>Como solucionar problemas de falhas de compilação do IntelliSense
 
-Uma compilação do IntelliSense não produz binários, mas ainda assim poderá falhar. Uma possível causa de falha são os arquivos personalizados .props ou .targets. No Visual Studio 2017 versão 15.6, os erros de compilação somente IntelliSense são registrados na Janela de Saída. Para vê-los, defina **Mostrar saída de** a **Solução**:
+Uma compilação do IntelliSense não produz binários, mas ainda assim poderá falhar. Uma possível causa de falha são os arquivos personalizados .props ou .targets. No Visual Studio 2017 versão 15.6 e posterior, os erros de build somente do IntelliSense são registrados em log na Janela de Saída. Para vê-los, defina **Mostrar saída de** a **Solução**:
 
 ![Janela de Saída para erros de solução](media/vcpp-intellisense-output-window.png)
 

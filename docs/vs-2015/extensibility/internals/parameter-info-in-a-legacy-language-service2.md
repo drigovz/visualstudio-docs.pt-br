@@ -1,14 +1,9 @@
 ---
 title: Informações de parâmetro em uma função de linguagem herdado2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense, Parameter Info tool tip
 - language services [managed package framework], IntelliSense Parameter Info
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a540a2e5b282e1242109edd67a5dfbc95067e183
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d1fddc99c40e2472688a25ade121c2c762ade5da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437926"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Informações de parâmetro do IntelliSense é uma dica de ferramenta que exibe 
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="implementation"></a>Implementação  
  O analisador deve definir o valor de gatilho <xref:Microsoft.VisualStudio.Package.TokenTriggers> é definido quando ele encontra um caractere de início de lista de parâmetro (geralmente um parêntese de abertura). Ele deve ser definido um <xref:Microsoft.VisualStudio.Package.TokenTriggers> disparar quando ele encontra um separador de parâmetro (geralmente uma vírgula). Isso faz com que uma dica de ferramenta de informações do parâmetro a ser atualizado e mostrar o próximo parâmetro em negrito. O analisador deve definir o valor de gatilho <xref:Microsoft.VisualStudio.Package.TokenTriggers> quando se encontra o caractere de final de lista de parâmetro (geralmente um parêntese de fechamento).  
@@ -42,7 +37,7 @@ Informações de parâmetro do IntelliSense é uma dica de ferramenta que exibe 
  O <xref:Microsoft.VisualStudio.Package.TokenTriggers> valor de gatilho inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> método, que por sua vez chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com um motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Se o analisador determina se o identificador antes de começar a lista de parâmetros de caractere é um nome de método reconhecido, ele retorna uma lista de assinaturas de método em correspondentes a <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Se forem encontradas quaisquer assinaturas de método, a dica de ferramenta de informações do parâmetro é exibida com a primeira assinatura na lista. Esta dica de ferramenta, em seguida, é atualizada conforme mais da assinatura é digitado. Quando o caractere de final de lista de parâmetro é digitado, a dica de ferramenta de informações do parâmetro é removida do modo de exibição.  
   
 > [!NOTE]
->  Para garantir que a dica de ferramenta de informações do parâmetro está formatada corretamente, você deve substituir as propriedades no <xref:Microsoft.VisualStudio.Package.Methods> classe para fornecer os caracteres apropriados. A base <xref:Microsoft.VisualStudio.Package.Methods> pressupõe que a classe c# – assinatura do método de estilo. Consulte o <xref:Microsoft.VisualStudio.Package.Methods> classe para obter detalhes sobre como isso pode ser feito.  
+> Para garantir que a dica de ferramenta de informações do parâmetro está formatada corretamente, você deve substituir as propriedades no <xref:Microsoft.VisualStudio.Package.Methods> classe para fornecer os caracteres apropriados. A base <xref:Microsoft.VisualStudio.Package.Methods> pressupõe que a classe c# – assinatura do método de estilo. Consulte o <xref:Microsoft.VisualStudio.Package.Methods> classe para obter detalhes sobre como isso pode ser feito.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Habilitando o suporte para as informações de parâmetro  
  Para dar suporte a dicas de ferramenta de informações do parâmetro, você deve definir a `ShowCompletion` chamado parâmetro do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> para `true`. O serviço de linguagem lê o valor desta entrada de registro do <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propriedade.  
@@ -118,11 +113,10 @@ testfunc("a string",3);
   
  As etapas que usa o analisador são descritas abaixo:  
   
-1.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> com o texto "testfunc".  
+1. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> com o texto "testfunc".  
   
-2.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
-
+4. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

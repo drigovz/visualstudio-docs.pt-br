@@ -1,26 +1,21 @@
 ---
 title: Anexar após uma inicialização | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debug engines, attaching to programs
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 416c05a7592d9f036a76a5d96537b4be917a0651
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51774699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437431"
 ---
 # <a name="attaching-after-a-launch"></a>Anexando após uma inicialização
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,12 +25,12 @@ Depois que um programa tiver sido iniciado, a sessão de depuração está pront
 ## <a name="design-decisions"></a>Decisões de design  
  Porque a comunicação é mais fácil dentro de um espaço de endereço compartilhado, você deve decidir se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE ou entre a Alemanha e o programa. Escolha entre os seguintes:  
   
--   Se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Isso deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.  
+- Se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Isso deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.  
   
--   Se faz mais sentido para facilitar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução conjunta cria o DE. Isso deixa o SDM em um espaço de endereço, Alemanha, o ambiente de tempo de execução e o programa juntos em outro. Isso é típico de a DE que é implementada com um interpretador executar linguagens de script.  
+- Se faz mais sentido para facilitar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução conjunta cria o DE. Isso deixa o SDM em um espaço de endereço, Alemanha, o ambiente de tempo de execução e o programa juntos em outro. Isso é típico de a DE que é implementada com um interpretador executar linguagens de script.  
   
     > [!NOTE]
-    >  Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.  
+    > Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.  
   
 ## <a name="implementation"></a>Implementação  
  Programaticamente, quando o Gerenciador de sessão de depuração (SDM) recebe primeiro a [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) o objeto que representa o programa a ser iniciado, ele chama o [anexar](../../extensibility/debugger/reference/idebugprogram2-attach.md) método, passando-lhe um [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objeto, que é posteriormente usado para passar eventos de depuração de volta para o SDM. O `IDebugProgram2::Attach` , em seguida, chama um método de [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. Para obter mais informações sobre como o SDM recebe o `IDebugProgram2` interface, consulte [notificar a porta](../../extensibility/debugger/notifying-the-port.md).  
@@ -62,4 +57,3 @@ Depois que um programa tiver sido iniciado, a sessão de depuração está pront
  [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)   
  [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md)   
  [Anexar](../../extensibility/debugger/reference/idebugengine2-attach.md)
-

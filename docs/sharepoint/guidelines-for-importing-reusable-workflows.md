@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7e32ba1641b084f1240e2a3f872a07e410b6c507
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bb386a2d80931ece415b0b3939f2947678808261
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557108"
 ---
 # <a name="guidelines-for-importing-reusable-workflows"></a>Diretrizes para importar fluxos de trabalho reutilizáveis
   Para importar fluxos de trabalho reutilizáveis criados no SharePoint Designer, use o modelo de projeto importar do SharePoint 2010 fluxo de trabalho reutilizável no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Importa esse modelo uma *declarativa* *fluxo de trabalho* ([!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)]-apenas) e o converte em um *fluxo de trabalho de código*, que é um fluxo de trabalho que você pode aprimorar com qualquer um [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] código. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Passo a passo: Importar um fluxo de trabalho reutilizável do SharePoint Designer no Visual Studio](../sharepoint/walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56641514"
 ## <a name="import-reusable-workflows-by-using-the-import-sharepoint-2010-solution-package-template"></a>Importar fluxos de trabalho reutilizáveis, usando o modelo de importar pacote de solução do SharePoint 2010
  Se você importar um fluxo de trabalho reutilizável usando o modelo de importar o pacote de solução do SharePoint 2010, você precisa considerar os seguintes problemas:
 
--   Depois de importar o fluxo de trabalho, você pode imediatamente implantar e executá-lo no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] escolhendo o **F5** chave. No entanto, se você alterar qualquer coisa no fluxo de trabalho na solução importado, você talvez precise corrigir manualmente os elementos do projeto antes de implantar e executar o fluxo de trabalho.
+- Depois de importar o fluxo de trabalho, você pode imediatamente implantar e executá-lo no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] escolhendo o **F5** chave. No entanto, se você alterar qualquer coisa no fluxo de trabalho na solução importado, você talvez precise corrigir manualmente os elementos do projeto antes de implantar e executar o fluxo de trabalho.
 
--   Como o fluxo de trabalho é declarativo, o código não pode ser adicionado a ele. Para converter o fluxo de trabalho em um fluxo de trabalho de código, você deve importá-lo para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando o modelo de importação do SharePoint 2010 fluxo de trabalho reutilizável.
+- Como o fluxo de trabalho é declarativo, o código não pode ser adicionado a ele. Para converter o fluxo de trabalho em um fluxo de trabalho de código, você deve importá-lo para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] usando o modelo de importação do SharePoint 2010 fluxo de trabalho reutilizável.
 
--   Embora você possa editar o arquivo de designer (. xoml) de fluxo de trabalho no modo de exibição de Design, é recomendável editá-lo no modo de exibição de código-fonte, porque o designer de fluxo de trabalho exibe erros falsos.
+- Embora você possa editar o arquivo de designer (. xoml) de fluxo de trabalho no modo de exibição de Design, é recomendável editá-lo no modo de exibição de código-fonte, porque o designer de fluxo de trabalho exibe erros falsos.
 
--   Depuração no fluxo de trabalho não funciona para o conteúdo declarativo. Pontos de interrupção definidos [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] não foram atingidos.
+- Depuração no fluxo de trabalho não funciona para o conteúdo declarativo. Pontos de interrupção definidos [!INCLUDE[wfd2](../sharepoint/includes/wfd2-md.md)] não foram atingidos.
 
 ## <a name="import-globally-reusable-workflow-solutions"></a>Importe soluções de fluxo de trabalho reutilizável globalmente
  Fluxos de trabalho reutilizáveis globalmente não podem ser importados usando o modelo de importação do SharePoint 2010 fluxo de trabalho reutilizável. Para importar um fluxo de trabalho reutilizável globalmente, você precisa convertê-lo em um fluxo de trabalho reutilizável não globalmente ou você deve usar o modelo de importar o pacote de solução do SharePoint 2010.

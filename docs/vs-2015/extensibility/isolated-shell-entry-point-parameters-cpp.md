@@ -1,27 +1,22 @@
 ---
 title: Isolado parâmetros de ponto de entrada do Shell (C++) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - Shell [Visual Studio], isolated mode%2C Start entry point
 - Visual Studio shell, isolated mode%2C Start entry point
 ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 270a5c932429a518447d0029b05d3c9522db7387
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51749160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439819"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parâmetros de ponto de entrada do Shell isolado (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,21 +75,21 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Para substituir um ou mais configurações, passe uma cadeia de caracteres Unicode que contém as configurações a ser substituído. A cadeia de caracteres é uma lista separada por ponto e vírgula de pares nome-valor. Cada par contém o nome da configuração a ser substituída, seguido por um sinal de igual (=), seguido pelo valor a ser aplicado à configuração.  
   
 > [!NOTE]
->  Não inclua espaços em branco nas cadeias de caracteres Unicode.  
+> Não inclua espaços em branco nas cadeias de caracteres Unicode.  
   
  Para configurações de Boolianas, as cadeias de caracteres a seguir representam o valor true; todas as outras cadeias de caracteres representam o valor false. Essas cadeias de caracteres diferenciam maiusculas de minúsculas.  
   
--   \+  
+- \+  
   
--   1  
+- 1  
   
--   -1  
+- -1  
   
--   em  
+- em  
   
--   true  
+- true  
   
--   sim  
+- sim  
   
 ## <a name="example"></a>Exemplo  
  Para desabilitar complementos e alterar o local padrão dos projetos para seu aplicativo, você pode definir o último parâmetro para "AddinsAllowed=false;DefaultProjectsLocation=%USERPROFILE%\temp".  
@@ -102,4 +97,3 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
 ## <a name="see-also"></a>Consulte também  
  [Personalizar o Shell isolado](../extensibility/customizing-the-isolated-shell.md)   
  [Arquivos .Pkgdef](../extensibility/modifying-the-isolated-shell-by-using-the-dot-pkgdef-file.md)
-

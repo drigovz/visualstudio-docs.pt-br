@@ -1,14 +1,9 @@
 ---
 title: 'CA1714: Enums de sinalizadores devem ter nomes plurais | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - FlagsEnumsShouldHavePluralNames
 - CA1714
@@ -20,14 +15,14 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: bb2314b0cc0b12b56c7807bef5668e1c79a71cc5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: ce28eeafd53feefcffd22b087fd21d302f544ca6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923352"
 ---
-# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: os enums de sinalizadores devem ter nomes plurais
+# <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Enumerações de sinalizador devem ter nomes no plural
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -52,12 +47,9 @@ ms.locfileid: "49830035"
  É seguro suprimir uma violação, se o nome é uma palavra no plural, mas não termina com do '. Por exemplo, se a enumeração de vários dias que foi descrita anteriormente foram nomeada 'DaysOfTheWeek', isso violaria a lógica da regra, mas não sua intenção. Tais violações devem ser suppressd.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+ [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
 
- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+ [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.FlagsAttribute?displayProperty=fullName> [Design de enumeração](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)
-
-
-
+ <xref:System.FlagsAttribute?displayProperty=fullName> [Enum Design](http://msdn.microsoft.com/library/dd53c952-9d9a-4736-86ff-9540e815d545)

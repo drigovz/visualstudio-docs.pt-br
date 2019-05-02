@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849352"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Instruções passo a passo: depurando erros de renderização devido ao sombreamento
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Passo a passo: Como depurar erros de renderização devido ao sombreamento
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto que é colorido incorretamente devido a um bug de sombreador.
 
  Este passo a passo demonstra como:
 
--   Examine o documento de log de gráficos para identificar os pixels que mostram o problema.
+- Examine o documento de log de gráficos para identificar os pixels que mostram o problema.
 
--   Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.
+- Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.
 
--   Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.
+- Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.
 
 ## <a name="scenario"></a>Cenário
  Coloração incorreta em objetos normalmente ocorre quando um sombreador de vértice passa um pixel informações incorretas ou incompletas do sombreador.

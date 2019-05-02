@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926891"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Alterar as configurações de exibição usando a API herdada
 As configurações para recursos do editor de núcleo, como quebra automática de linha, margem de seleção e espaço virtual, podem ser alteradas pelo usuário por meio das **opções** caixa de diálogo. No entanto, também é possível alterar essas configurações programaticamente.
@@ -25,13 +25,13 @@ As configurações para recursos do editor de núcleo, como quebra automática d
 
  Veja a seguir o processo típico para alterar as configurações de exibição para uma instância do editor de núcleo.
 
-1.  Chame `QueryInterface` sobre o (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface.
+1. Chame `QueryInterface` sobre o (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface.
 
-2.  Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método, especificando um valor de GUID_EditPropCategory_View_MasterSettings para o `rguidCategory` parâmetro.
+2. Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> método, especificando um valor de GUID_EditPropCategory_View_MasterSettings para o `rguidCategory` parâmetro.
 
      Isso retorna um ponteiro para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface, que contém o conjunto de propriedades forçados para o modo de exibição. Todas as configurações nesse grupo são forçadas permanentemente. Se uma configuração não está nesse grupo, ele seguirá as opções especificadas na **opções** caixa de diálogo ou os comandos do usuário.
 
-3.  Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> método, especificando o valor de configurações apropriadas no `idprop` parâmetro.
+3. Chame o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> método, especificando o valor de configurações apropriadas no `idprop` parâmetro.
 
      Por exemplo, para forçar a quebra automática de linha, chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> e especifique um valor de VSEDITPROPID_ViewLangOpt_WordWrap, `vt` para o `idprop` parâmetro. Nessa chamada `vt` é uma VARIANTE do tipo VT_BOOL e `vt.boolVal` é VARIANT_TRUE.
 

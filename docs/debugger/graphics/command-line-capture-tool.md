@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be492ea3d9e61e25c28d8fc74ab870d7a6f959a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c4d88e62b1520677ddac3ff66a6891eb805af30d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389688"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 O DXCap.exe é uma ferramenta de linha de comando para reprodução e captura de diagnóstico de gráficos. Ele dá suporte a Direct3D 10 através de Direct3D 12 em todos os níveis do recurso.
@@ -63,7 +63,7 @@ DXCap.exe -info
  `-examine` `events` No modo de validação, `events` especifica o conjunto de eventos gráficos cujos resultados imediatos são comparados. Por exemplo, `-examine present,draw,copy,clear` limita a comparação aos eventos que pertencem a essas categorias.
 
 > [!TIP]
->  É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.
+> É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.
 
  `-haltonfail` No modo de validação, `-haltonfail` interrompe a validação quando são detectadas diferenças entre o hardware e o renderizador WARP. A validação continua após uma tecla ser pressionada.
 
@@ -114,7 +114,7 @@ DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
  O comando no exemplo acima captura informações de gráficos da versão da área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para renderizar conteúdo 3D.
 
 > [!NOTE]
->  Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `-c`.
+> Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `-c`.
 
 ### <a name="capture-graphics-information-from-a-uwp-app"></a>Capture informações gráficas de um aplicativo UWP.
  Você pode capturar informações gráficas de um aplicativo UWP.
@@ -137,7 +137,7 @@ DXCap.exe -e map
 
  O comando acima enumera os aplicativos UWP que correspondem a "mapa"; Aqui está a saída:
 
- **Pacote "Microsoft.BingMaps":** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName: Microsoft.BingMaps_2.1.2914.1734_x64 __8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **nome: Microsoft.BingMaps** **publicador: CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US** **versão: 2.1.2914.1734** **aplicativos inicializáveis:** **Id: AppexMaps** **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: nenhuma** **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** a última linha da saída de cada aplicativo enumerado exibe o comando que você pode usar para capturar informações gráficas.
+ **Pacote "Microsoft.BingMaps":** **InstallDirectory: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **FullName         : Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe** **UserSID: S-1-5-21-2127521184-1604012920-1887927527-5603533** **Name             : Microsoft.BingMaps** **Publisher        : CN = Microsoft Corporation, O = Microsoft Corporation, L = Redmond, S = Washington, C = US** **versão: 2.1.2914.1734** **aplicativos pode ser iniciados:** **Id: AppexMaps** **Exe: C:\Program Files\WindowsApps\Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe\Map.exe** **IsWWA: Não** **AppSpec (para iniciar): DXCap.exe - c Microsoft.BingMaps_2.1.2914.1734_x64__8wekyb3d8bbwe,AppexMaps** a última linha da saída de cada aplicativo enumerado exibe o comando que você pode usar para capturar informações gráficas.
 
 ### <a name="capture-specific-frames-or-frames-between-specific-times"></a>Capturar quadros específicos ou quadros entre horários específicos.
  Use `-frame` para especificar os quadros que você deseja capturar usando vírgulas e intervalos:

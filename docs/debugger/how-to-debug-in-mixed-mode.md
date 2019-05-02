@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e1da9b01c32b82948718ef5045005eb0d9beb37
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: f58c51bf1b610375c6204e27d064870ce1f76d04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894372"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>Como: Depurar no modo misto (C#, C++, Visual Basic)
 
@@ -53,7 +53,7 @@ Se você não tiver acesso a projeto de um aplicativo de chamada, você pode dep
 
 ## <a name="enable-mixed-mode-debugging-for-a-managed-calling-app"></a>Habilitar a depuração de modo misto para um aplicativo de chamada gerenciado
 
-1. Selecione o C# ou no projeto do Visual Basic **Gerenciador de soluções** e selecione o **propriedades** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
+1. Selecione o projeto c# ou Visual Basic no **Gerenciador de soluções** e selecione o **Properties** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
 
 1. Selecione o **Debug** guia e, em seguida, selecione **habilitar a depuração de código nativo**.
 
@@ -62,7 +62,7 @@ Se você não tiver acesso a projeto de um aplicativo de chamada, você pode dep
    ![Habilitar a depuração de código nativo](../debugger/media/dbg-mixed-mode-from-csharp.png "habilitar a depuração de código nativo")
 
 > [!NOTE]
-> Na maioria das versões do Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
+> Na maioria das versões do Visual Studio começando com o Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para obter detalhes, consulte [depurar código gerenciado e nativo](../debugger/how-to-debug-managed-and-native-code.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bdd39b0ffa59342df669fa619ea5a86a41cef79b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ec01b49ca61fcf295884deafa280c8ee33a2b4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437453"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>Personalizar uma faixa de opções para InfoPath
   Quando você personaliza a faixa de opções no Microsoft Office InfoPath, você deve considerar onde sua faixa de opções personalizada será exibida no aplicativo. [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] pode exibir a faixa de opções em três tipos de janelas de aplicativo do InfoPath:
@@ -36,7 +36,7 @@ ms.locfileid: "56602228"
   A janela de visualização de impressão permite que os designers e os usuários visualizar as páginas de um formulário ou modelo de formulário antes que eles imprimirem-los.
 
 > [!NOTE]
->  O **AddIns** guia não aparece na janela de visualização de impressão. Se você quiser uma guia personalizada para aparecer na janela de visualização de impressão, verifique se o **OfficeId** da guia não está definida **TabAddIns**.
+> O **AddIns** guia não aparece na janela de visualização de impressão. Se você quiser uma guia personalizada para aparecer na janela de visualização de impressão, verifique se o **OfficeId** da guia não está definida **TabAddIns**.
 
  Você deve especificar o tipo de faixa de opções de cada janela no qual você deseja que apareçam da faixa de opções.
 

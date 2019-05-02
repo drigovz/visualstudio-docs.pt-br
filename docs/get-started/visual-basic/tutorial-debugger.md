@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc450217dc6b0055a14cccd02c471329870a74ac
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: cb6763ef598cb700c7fb7b3d40a3890629c2a058
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972612"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>Tutorial: Aprenda a depurar o código do Visual Basic usando o Visual Studio
 
@@ -36,25 +36,47 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **desenvolvimento para desktop com .NET**.
+::: moniker range=">=vs-2019"
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+Você precisa ter o Visual Studio 2019 instalado e a carga de trabalho de **desenvolvimento para desktop com .NET**.
 
-    Se você precisar instalar a carga de trabalho, mas já tiver o Visual Studio, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto** (selecione **Arquivo** > **Novo** > **Projeto**). O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e, em seguida, selecione **Modificar**.
+::: moniker-end
+::: moniker range="vs-2017"
+
+Você precisa ter o Visual Studio 2017 instalado e a carga de trabalho de **desenvolvimento para desktop com .NET**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e, em seguida, selecione **Modificar**.
 
 ## <a name="create-a-project"></a>Criar um projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
+1. Abra o Visual Studio.
 
-2. Em **Visual Basic**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console**.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **visual basic**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Framework)**. Na caixa de diálogo que aparece, digite um nome como **iniciar-depuração** e, em seguida, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual Basic**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**. Em seguida, digite um nome como **get-started-debugging** e clique em **OK**.
+    ::: moniker-end
 
-    Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho *Desenvolvimento para desktop com .NET** e, em seguida, selecione **Modificar**.
-
-3. Digite um nome como **get-started-debugging** e clique em **OK**.
+    Caso não veja o modelo de projeto **Aplicativo de Console (.NET Framework)**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** e, em seguida, selecione **Modificar**.
 
     O Visual Studio cria o projeto.
 
-4. Em *Program.cs*, substitua o código a seguir
+1. Em *Module1.vb*, substitua o código a seguir
 
     ```vb
     Module Module1

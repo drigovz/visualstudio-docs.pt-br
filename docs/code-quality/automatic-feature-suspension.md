@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fbe86e085e50dc0e72c00b7bbe7a313e689e0ee5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571519"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 
@@ -29,9 +29,9 @@ Quando o Visual Studio detecta uma condição de pouca memória, ele suspende au
 
 Em uma condição de pouca memória, as seguintes ações ocorrem:
 
-- Análise de solução completa para o Visual c# e Visual Basic está desabilitado.
+- Análise de solução completa para o Visual C# e Visual Basic está desabilitado.
 
-- [Coleta de lixo](/dotnet/standard/garbage-collection/index) modo de baixa latência (GC) para Visual c# e Visual Basic está desabilitado.
+- [Coleta de lixo](/dotnet/standard/garbage-collection/index) modo de baixa latência (GC) para Visual C# e Visual Basic está desabilitado.
 
 - Caches do Visual Studio são liberados.
 
@@ -41,7 +41,7 @@ Para obter dicas e truques sobre como melhorar o desempenho do Visual Studio ao 
 
 ## <a name="full-solution-analysis-suspended"></a>Análise de solução completa suspenso
 
-Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual c#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual c#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, confira [Como: Habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
+Por padrão, análise de solução completa é habilitado para o Visual Basic e desabilitada para o Visual C#. No entanto, em uma condição de pouca memória, análise de solução completa é automaticamente desabilitada para Visual Basic e Visual C#, independentemente de suas definições na caixa de diálogo Opções. No entanto, você pode habilitar novamente a análise de solução completa, escolhendo a **reabilitar** botão nas informações da barra quando ele for exibido, selecionando a **habilitar análise de solução completa** caixa de seleção na caixa de diálogo Opções, ou, reiniciar o Visual Studio. A caixa de diálogo Opções sempre mostra a atual solução completa as configurações de análise. Para obter mais informações, confira [Como: Habilitar e desabilitar análise completa da solução](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md).
 
 ## <a name="gc-low-latency-disabled"></a>GC baixa latência desabilitada
 
@@ -60,7 +60,7 @@ Se você continuar sua sessão de desenvolvimento atual ou reinicie o Visual Stu
 Além disso, os caches usados para operações internas do Visual Studio também são desmarcados.
 
 > [!NOTE]
-> O aviso de suspensão do recurso automático ocorre apenas uma vez em uma base por solução, não em uma base por sessão. Isso significa que, se você alterna do Visual Basic para Visual c# (ou vice-versa) e executar em outra condição de pouca memória, você pode, possivelmente, obter outro aviso de suspensão automática de recursos.
+> O aviso de suspensão do recurso automático ocorre apenas uma vez em uma base por solução, não em uma base por sessão. Isso significa que, se você alterna do Visual Basic para Visual C# (ou vice-versa) e executar em outra condição de pouca memória, você pode, possivelmente, obter outro aviso de suspensão automática de recursos.
 
 ## <a name="see-also"></a>Consulte também
 

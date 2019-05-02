@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c53d458a3ca80492abd83f5081be220835a613b2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c6703221f9db06ca8edba68a2f2bcc9b79a5d531
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784669"
 ---
 # <a name="quickstart-create-a-load-test-project"></a>Início Rápido: Criar um projeto de teste de carga
 
@@ -22,13 +22,13 @@ Neste guia de início rápido de 10 minutos, você aprenderá a criar e executar
 
 ## <a name="software-requirements"></a>Requisitos de software
 
-Projetos de teste de carga e de desempenho Web só estão disponíveis na edição Enterprise do Visual Studio.
+Projetos de teste de carga e de desempenho Web só estão disponíveis na **edição Enterprise** do Visual Studio.
 
 ## <a name="install-the-load-testing-component"></a>Instalar a componente de teste de carga
 
 Se ainda não tiver o componente de ferramentas de teste de carga e de desempenho Web instalado, você precisará instalá-lo usando o Instalador do Visual Studio.
 
-1. Abra o **Instalador do Visual Studio** no menu **Iniciar** do Windows. Você também pode acessá-lo no Visual Studio na caixa de diálogo **Novo Projeto** ou escolhendo **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus.
+1. Abra o **Instalador do Visual Studio** no menu **Iniciar** do Windows. Você também pode acessá-lo no Visual Studio na caixa de diálogo de novo projeto ou escolhendo **Ferramentas** > **Obter Ferramentas e Recursos** na barra de menus.
 
 1. No **Instalador do Visual Studio**, escolha a guia **Componentes individuais** e role para baixo até a seção **Depuração e testes**. Selecione **Ferramentas de teste de carga e desempenho Web**.
 
@@ -42,15 +42,33 @@ Se ainda não tiver o componente de ferramentas de teste de carga e de desempenh
 
 Nesta seção, criaremos um projeto de teste de carga em C#. Você também pode criar um projeto de teste de carga do Visual Basic se preferir.
 
-1. Abra o Visual Studio e escolha **Arquivo** > **Novo** > **Projeto** na barra de menus.
+::: moniker range="vs-2017"
+
+1. Abra o Visual Studio.
+
+2. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
    A caixa de diálogo **Novo Projeto** é aberta.
 
-1. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e selecione a categoria **Testar**. Escolha o modelo **Projeto de teste de carga e desempenho na Web**.
+3. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e selecione a categoria **Testar**. Escolha o modelo **Projeto de teste de carga e desempenho na Web**.
 
    ![Modelo de projeto de teste de carga e desempenho Web](media/web-perf-load-test-project-template.png)
 
-1. Insira um nome para o projeto se não quiser usar o nome padrão e, em seguida, escolha **OK**.
+4. Insira um nome para o projeto se não quiser usar o nome padrão e, em seguida, escolha **OK**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+3. Na página **Criar um novo projeto**, digite **teste da Web** na caixa de pesquisa e selecione o modelo **Desempenho da Web e Projeto de teste de carga \[preterido]**  para o modelo C#. Escolha **Avançar**.
+
+4. Insira um nome para o projeto se não quiser usar o nome padrão e escolha **Criar**.
+
+::: moniker-end
 
    O Visual Studio cria o projeto e o exibe os arquivos no **Gerenciador de Soluções**. Inicialmente, o projeto contém um arquivo de teste da Web chamado *WebTest1.webtest*.
 

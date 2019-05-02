@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 22eaa971035b4b202ecb76b3f1d29e286516a69b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445836"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 A API de imutabilidade do SDK de modelagem e visualização do Visual Studio permite que um programa bloquear a parte ou todo um modelo de linguagem específica do domínio (DSL), para que ele pode ser lido mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar colegas para anotar e analisar um modelo de DSL, mas pode não permitir que alterem o original.
@@ -20,7 +20,7 @@ A API de imutabilidade do SDK de modelagem e visualização do Visual Studio per
  Além disso, como autor de uma DSL, você pode definir um *política de bloqueio.* Uma política de bloqueio define quais bloqueios são permitidas, não permitido ou obrigatório. Por exemplo, quando você publica uma DSL, você pode encorajar os desenvolvedores de terceiros para estendê-lo com novos comandos. Mas você também pode usar uma política de bloqueio para impedir que alterar o status somente leitura de partes especificadas do modelo.
 
 > [!NOTE]
->  Uma política de bloqueio pode ser evitada por meio de reflexão. Ele fornece um limite de claro para os desenvolvedores de terceiros, mas não oferece segurança forte.
+> Uma política de bloqueio pode ser evitada por meio de reflexão. Ele fornece um limite de claro para os desenvolvedores de terceiros, mas não oferece segurança forte.
 
  Mais informações e exemplos estão disponíveis no Visual Studio [SDK de visualização e modelagem](https://code.msdn.microsoft.com/Visualization-and-Modeling-313535db) site.
 
@@ -56,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Uso de bloqueios
  Você pode usar bloqueios para implementar esquemas, como os exemplos a seguir:
 
--   Não permitir alterações para todos os elementos e relações, exceto aqueles que representam os comentários. Isso permite que os usuários fazer anotações em um modelo sem alterá-lo.
+- Não permitir alterações para todos os elementos e relações, exceto aqueles que representam os comentários. Isso permite que os usuários fazer anotações em um modelo sem alterá-lo.
 
--   Não permitir alterações na partição padrão, mas permitir que as alterações na partição de diagrama. O usuário pode reorganizar o diagrama, mas não é possível alterar o modelo subjacente.
+- Não permitir alterações na partição padrão, mas permitir que as alterações na partição de diagrama. O usuário pode reorganizar o diagrama, mas não é possível alterar o modelo subjacente.
 
--   Não permitir alterações para a Store, exceto para um grupo de usuários que são registrados em um banco de dados separado. Para outros usuários, o diagrama e modelo são somente leitura.
+- Não permitir alterações para a Store, exceto para um grupo de usuários que são registrados em um banco de dados separado. Para outros usuários, o diagrama e modelo são somente leitura.
 
--   Não permitir alterações no modelo se uma propriedade booleana do diagrama for definida como true. Forneça um comando de menu para alterar essa propriedade. Isso ajuda a garantir que os usuários que não fazem com que as alterações acidentalmente.
+- Não permitir alterações no modelo se uma propriedade booleana do diagrama for definida como true. Forneça um comando de menu para alterar essa propriedade. Isso ajuda a garantir que os usuários que não fazem com que as alterações acidentalmente.
 
--   Não permitir a adição e exclusão de elementos e relações de classes específicas, mas permitir que as alterações de propriedade. Isso fornece aos usuários um formulário fixado na qual eles podem preencher as propriedades.
+- Não permitir a adição e exclusão de elementos e relações de classes específicas, mas permitir que as alterações de propriedade. Isso fornece aos usuários um formulário fixado na qual eles podem preencher as propriedades.
 
 ## <a name="lock-values"></a>Valores de bloqueio
  Bloqueios podem ser definidos em Store, partição ou ModelElement individual. Bloqueios é um `Flags` enumeração: você pode combinar seus valores usando '&#124;'.
@@ -95,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  Para definir uma política de bloqueio, você deve:
 
--   Crie uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+- Crie uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
--   Adicione essa classe para os serviços que estão disponíveis por meio de sua DSL DocData.
+- Adicione essa classe para os serviços que estão disponíveis por meio de sua DSL DocData.
 
 ### <a name="to-define-a-locking-policy"></a>Para definir uma política de bloqueio
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tem a seguinte definição:

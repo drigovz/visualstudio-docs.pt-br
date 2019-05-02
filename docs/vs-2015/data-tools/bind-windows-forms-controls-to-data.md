@@ -1,12 +1,9 @@
 ---
 title: Associar controles dos Windows Forms a dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -21,18 +18,17 @@ ms.assetid: 0163a34a-38cb-40b9-8f38-3058a90caf21
 caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1d8710ef98339c0cf4b44ddd3fa41cca8676570
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49237465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439478"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associar controles do Windows Forms a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode associar a fontes de dados a controles arrastando objetos do **fontes de dados** janela para um formulário do Windows ou para um controle existente em um formulário. Antes de você arrasta itens, você pode definir o tipo de controle que você deseja associar. Valores diferentes são exibidos, dependendo se você escolher a tabela a mesmo ou para uma coluna individual.  Você também pode definir valores personalizados. Para uma tabela "Detalhes" significa que cada coluna é associada a um controle separado.  
   
  ![Associar a fonte de dados a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "fonte de dados de ligação raddata DataGridView")  
@@ -40,7 +36,7 @@ Você pode associar a fontes de dados a controles arrastando objetos do **fontes
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
 ## <a name="bind-to--data-in-a-datagridview-control"></a>Associar a dados em um controle DataGridView  
- Para DataGridView, a tabela inteira é associada a esse controle único. Quando você arrasta uma DataGridView no formulário, uma ferramenta da faixa para navegação em registros (<xref:System.Windows.Forms.BindingNavigator>) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), [TableAdapter](../data-tools/tableadapter-overview.md), <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes. Na ilustração a seguir, um TableAdapterManager também é adicionado como a tabela de clientes tem uma relação à tabela Orders. Essas variáveis todos são declaradas no código gerado automaticamente como membros particulares na classe de formulário. O código gerado automaticamente para preencher o DataGridView está localizado no manipulador de eventos form_load. O código para salvar os dados para atualizar o banco de dados está localizado no manipulador de eventos de salvamento para o BindingNavigator. Você pode mover ou modificar este código conforme necessário.  
+ Para DataGridView, a tabela inteira é associada a esse controle único. Quando você arrasta uma DataGridView no formulário, uma ferramenta da faixa para navegação em registros (<xref:System.Windows.Forms.BindingNavigator>) também é exibida. Um [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, e <xref:System.Windows.Forms.BindingNavigator> aparecem na bandeja de componentes. Na ilustração a seguir, um TableAdapterManager também é adicionado como a tabela de clientes tem uma relação à tabela Orders. Essas variáveis todos são declaradas no código gerado automaticamente como membros particulares na classe de formulário. O código gerado automaticamente para preencher o DataGridView está localizado no manipulador de eventos form_load. O código para salvar os dados para atualizar o banco de dados está localizado no manipulador de eventos de salvamento para o BindingNavigator. Você pode mover ou modificar este código conforme necessário.  
   
  ![GridView com BindingNavigator](../data-tools/media/raddata-gridview-with-bindingnavigator.png "raddata GridView com o BindingNavigator")  
   
@@ -58,7 +54,7 @@ Você pode associar a fontes de dados a controles arrastando objetos do **fontes
  ![Associar a fonte de dados para obter detalhes](../data-tools/media/raddata-bind-data-source-to-details.png "raddata fonte de dados de ligação para obter detalhes")  
   
 > [!IMPORTANT]
->  Observe que, na ilustração anterior, você arrasta da propriedade Orders de tabela de clientes, não da tabela Orders. Fazendo a ligação com a propriedade Orders, feitos no DataGridView de comandos de navegação são refletidos imediatamente nos controles de detalhes. Se você arrastou da tabela Pedidos, os controles ainda poderá estar associados ao conjunto de dados, mas não eles não seriam ser sincronizados com o DataGridView.  
+> Observe que, na ilustração anterior, você arrasta da propriedade Orders de tabela de clientes, não da tabela Orders. Fazendo a ligação com a propriedade Orders, feitos no DataGridView de comandos de navegação são refletidos imediatamente nos controles de detalhes. Se você arrastou da tabela Pedidos, os controles ainda poderá estar associados ao conjunto de dados, mas não eles não seriam ser sincronizados com o DataGridView.  
   
  A ilustração a seguir mostra o padrão controles ligados a dados que são adicionados ao formulário depois que a propriedade de pedidos na tabela Customers é associada a "Detalhes" a **fontes de dados** janela.  
   
@@ -68,4 +64,3 @@ Você pode associar a fontes de dados a controles arrastando objetos do **fontes
   
 ## <a name="see-also"></a>Consulte também  
  [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-

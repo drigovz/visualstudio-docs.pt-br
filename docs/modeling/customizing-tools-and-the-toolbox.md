@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445788"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -38,15 +38,15 @@ Editor
 
 Nessa parte do DSL Explorer, é possível:
 
--   Criar novas guias. As guias definem o cabeçalho da seção na caixa de ferramentas.
+- Criar novas guias. As guias definem o cabeçalho da seção na caixa de ferramentas.
 
--   Criar novas ferramentas.
+- Criar novas ferramentas.
 
--   Copie e cole ferramentas.
+- Copie e cole ferramentas.
 
--   Mova as ferramentas para cima ou para baixo na lista.
+- Mova as ferramentas para cima ou para baixo na lista.
 
--   Exclua guias e ferramentas.
+- Exclua guias e ferramentas.
 
 > [!IMPORTANT]
 > Para adicionar ou colar itens em um DSL Explorer, clique com o botão direito no avô do novo nó. Por exemplo, para adicionar uma ferramenta, clique com botão direito na guia e não a **ferramentas** nó. Para adicionar uma guia, clique com botão direito do **Editor** nó.
@@ -59,36 +59,36 @@ O **construtor de Conexão** propriedade de uma ferramenta de conexão faz refer
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Para adicionar uma ferramenta à caixa de ferramentas
 
-1.  Normalmente, uma ferramenta de elemento é criada depois de ter criado uma classe de forma e a ter mapeado em uma classe de domínio.
+1. Normalmente, uma ferramenta de elemento é criada depois de ter criado uma classe de forma e a ter mapeado em uma classe de domínio.
 
      Normalmente, uma ferramenta de conector é criada depois de ter criado uma classe de conector e a ter mapeado em uma relação de referência.
 
-2.  No DSL Explorer, expanda o **Editor** nó e o **guias da caixa de ferramentas** nó.
+2. No DSL Explorer, expanda o **Editor** nó e o **guias da caixa de ferramentas** nó.
 
      Um nó de guia de caixa de ferramentas com o botão direito e, em seguida, clique em **adicionar nova ferramenta do elemento** ou **adicionar uma nova ferramenta de Conexão**.
 
-3.  Defina as **ícone da caixa de ferramentas** propriedade para se referir a um bitmap 16 x 16.
+3. Defina as **ícone da caixa de ferramentas** propriedade para se referir a um bitmap 16 x 16.
 
      Se você quiser definir um novo ícone, crie um arquivo de bitmap no Gerenciador de soluções na **Dsl\Resources** pasta. O arquivo deve ter os seguintes valores de propriedade: **Ação de Build** = **conteúdo**; **Copy to Output Directory** = **não copiar**.
 
-4.  **Para uma ferramenta de elemento:** Defina as **classe** propriedade da ferramenta para se referir a uma classe de domínio concreta que é mapeada para uma forma.
+4. **Para uma ferramenta de elemento:** Defina as **classe** propriedade da ferramenta para se referir a uma classe de domínio concreta que é mapeada para uma forma.
 
      **Para uma ferramenta de conector:** Defina as **construtor de Conexão** propriedade da ferramenta para um dos itens que são oferecidos na lista suspensa. Os construtores de conexão são criados automaticamente ao mapear um conector para uma relação de domínio. Se tiver criado recentemente um conector, normalmente selecionaria o construtor de conexão associado.
 
-5.  Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
+5. Para testar o DSL, pressione F5 ou CTRL+F5 e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo. A nova ferramenta deve aparecer na caixa de ferramentas. Arraste-a para o diagrama para verificar se ela criou um novo elemento.
 
      Se a ferramenta não aparecer, pare o experimental do Visual Studio. No Windows **inicie** menu, execute **redefinir a instância Microsoft Visual Studio 2010 Experimental**. No menu **Compilar**, clique em **Recompilar Solução**. Em seguida, teste o DSL novamente.
 
 ## <a name="customizing"></a> Personalizando ferramentas de elemento
  Por padrão, a ferramenta criará uma única instância da classe especificada, mas é possível variar isso de duas maneiras:
 
--   Defina as Diretivas de Mescla de Elemento em outras classes, permitindo-lhes aceitar novas instâncias dessa classe e permitindo-lhes criar links adicionais quando o novo elemento é criado. Por exemplo, é possível permitir ao usuário soltar um Comentário em outro elemento, criando dessa maneira um link de referência entre os dois.
+- Defina as Diretivas de Mescla de Elemento em outras classes, permitindo-lhes aceitar novas instâncias dessa classe e permitindo-lhes criar links adicionais quando o novo elemento é criado. Por exemplo, é possível permitir ao usuário soltar um Comentário em outro elemento, criando dessa maneira um link de referência entre os dois.
 
      Essas personalizações também afetam o que ocorre quando o usuário cola ou arrasta e solta um elemento.
 
      Para obter mais informações, consulte [Personalizando a criação de elemento e a movimentação](../modeling/customizing-element-creation-and-movement.md).
 
--   Escreva um código para personalizar a ferramenta para que ela possa criar grupos de elementos. A ferramenta é inicializada por métodos no ToolboxHelper.cs que podem ser substituídos. Para obter mais informações, consulte [criando grupos de elementos de uma ferramenta](#groups).
+- Escreva um código para personalizar a ferramenta para que ela possa criar grupos de elementos. A ferramenta é inicializada por métodos no ToolboxHelper.cs que podem ser substituídos. Para obter mais informações, consulte [criando grupos de elementos de uma ferramenta](#groups).
 
 ## <a name="groups"></a> Criando grupos de elementos de uma ferramenta
  Cada ferramenta do elemento contém um protótipo de elementos que ela deve criar. Por padrão, cada ferramenta do elemento cria um único elemento, mas também é possível criar um grupo de objetos relacionados a uma ferramenta. Para isso, é necessário inicializar a ferramenta com um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> que contém os itens relacionados.
@@ -175,7 +175,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   É necessário fornecer algum código de programa para fazer essas personalizações. Para descobrir qual código é necessário fornecer, verifique uma dessas caixas, clique em Transformar Todos os Modelos e, em seguida, construa sua solução. O resultado será um relatório de erro. Clique duas vezes no relatório de erro para visualizar um comentário que explique qual código deve ser adicionado.
 
 > [!NOTE]
->  Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
+> Para adicionar o código personalizado, crie uma definição de classe parcial em um arquivo de código separado dos arquivos de códigos nas pastas GeneratedCode. Para evitar a perda de seu trabalho, é necessário que os arquivos de códigos gerados não sejam editados. Para obter mais informações, consulte [substituindo e estendendo as Classes geradas](../modeling/overriding-and-extending-the-generated-classes.md).
 
 #### <a name="creating-custom-connection-code"></a>Criação de uma conexão personalizada
  Em cada link de diretiva de conexão a **diretivas de função de origem** guia define de quais tipos é podem arrastar. Da mesma forma, o **diretivas de função de destino** definem para quais tipos é podem arrastar. Para cada tipo, você pode ainda mais especificar se deseja permitir a conexão (por diretiva de conexão de link) definindo o **aceitação personalizada** sinalizar e, em seguida, fornecendo o código extra.
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personalizando a criação e o movimento de elementos](../modeling/customizing-element-creation-and-movement.md)
 - [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md)
-- [Como: Adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Como: Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navegando por um modelo no código do programa e atualizando-o](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Exemplo de diagramas de circuito DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

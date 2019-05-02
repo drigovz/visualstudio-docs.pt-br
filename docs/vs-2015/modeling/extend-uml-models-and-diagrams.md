@@ -1,14 +1,9 @@
 ---
 title: Estender modelos e diagramas UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -16,13 +11,13 @@ ms.assetid: b5bfa61e-ea59-4c3b-b5af-53475d7d13cd
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 74f3c518682997dca57a630c6f084437f7175d80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51794758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054599"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +30,13 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
  Equipe de ferramentas da Fabrikam faz uma série de aprimoramentos para ajudar as equipes de desenvolvimento. As seções a seguir descrevem os diferentes tipos de extensões que você pode definir. Você pode combinar várias dessas técnicas em uma extensão do Visual Studio.  
   
- Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN How Do I: ferramentas UML e extensibilidade](http://go.microsoft.com/fwlink/?LinkId=214467).  
+ Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN como faço para: Ferramentas UML e extensibilidade](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Requisitos  
+## <a name="Requirements"></a> Requisitos  
   
--   [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
+- [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
--   [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Perfis  
  Perfis permitem que você definir estereótipos e propriedades adicionais nos elementos UML.  
@@ -81,7 +76,7 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
  Os desenvolvedores da Fabrikam criar código que define a cor de um elemento depende do seu estereótipo automaticamente. Isso torna fácil para os usuários distinguir as diferentes funções desempenhadas pelos elementos nos modelos.  
   
- Para obter mais informações, consulte [como: responder a alterações em um modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
+ Para obter mais informações, confira [Como: Responder a alterações em um modelo UML](../misc/how-to-respond-to-changes-in-a-uml-model.md).  
   
 ## <a name="model-bus"></a>Model Bus  
  Model Bus permite que você acesse um diagrama ou um modelo de outro diagrama ou de outro [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão. Entre outras coisas, isso permite que você distribua informações por mais de um modelo, para que várias pessoas podem trabalhar no modelo combinado ao mesmo tempo.  
@@ -97,7 +92,7 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
  Para obter mais informações, consulte [gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md).  
   
-## <a name="team-foundation-server-integration"></a>Integração do Team Foundation Server  
+## <a name="team-foundation-server-integration"></a>Team Foundation Server Integration  
  Você pode vincular itens de trabalho a elementos de modelo e acessar os itens vinculados de forma programática.  
   
  Os desenvolvedores de ferramentas da Fabrikam escrevem uma ferramenta que gera uma agenda de trabalho para cada projeto de aeroporto. Os itens de trabalho na agenda são vinculados aos elementos de modelo.  
@@ -118,7 +113,7 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
 |**Categoria**|**Links**|  
 |------------------|---------------|  
-|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN How Do I: ferramentas UML e extensibilidade](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML com o Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
+|**Vídeos**|![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [série MSDN como faço para: Extensibilidade e ferramentas UML](http://go.microsoft.com/fwlink/?LinkId=214467)<br /><br /> ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo") [Channel 9: UML com o Visual Studio](http://go.microsoft.com/fwlink/?LinkId=199957)|  
 |**Fóruns**|-   [Visualização do Visual Studio e ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)<br />-   [Visualização do Visual Studio e modelagem (ferramentas DSL) do SDK](http://go.microsoft.com/fwlink/?LinkId=184721)|  
 |**Blogs**|[Visual Studio ALM + Team Foundation Server Blog](http://go.microsoft.com/fwlink/?LinkID=201340)|  
 |**Artigos técnicos e diários**|[MSDN Architecture Center](http://go.microsoft.com/fwlink/?LinkId=201343)|  
@@ -126,6 +121,3 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
 ## <a name="see-also"></a>Consulte também  
  [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)   
  [Referência de API para extensibilidade de modelagem UML](../modeling/api-reference-for-uml-modeling-extensibility.md)
-
-
-

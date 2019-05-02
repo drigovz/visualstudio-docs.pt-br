@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3493c487c446bb66e99bf98a7c3f5599599801fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424143"
 ---
 # <a name="generateapplicationmanifest-task"></a>Tarefa GenerateApplicationManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Um manifesto nativo descreve um componente definindo uma identidade exclusiva para ele e identificando todos os assemblies e arquivos que compõem o componente. Um manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estende um manifesto nativo indicando o ponto de entrada do aplicativo e especificando o nível de segurança do aplicativo.  
   
 ## <a name="parameters"></a>Parâmetros  
@@ -45,10 +44,10 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 |`Dependencies`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de itens que define o conjunto de assemblies dependentes para o manifesto gerado. Cada item pode ser descrito com mais detalhes por metadados do item para indicar o estados de implantação adicionais e o tipo de dependência. Para obter mais informações, consulte a seção “Metadados do Item” abaixo.|  
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica a descrição do aplicativo ou componente.|  
 |`EntryPoint`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica um único item que indica o ponto de entrada para o assembly do manifesto gerado.<br /><br /> Para um manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], esse parâmetro especifica o assembly que é iniciado quando o aplicativo é executado.|  
-|`ErrorReportUrl`|Parâmetro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) opcional.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante os relatórios de erro em instalações ClickOnce.|  
+|`ErrorReportUrl`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]() opcional.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante os relatórios de erro em instalações ClickOnce.|  
 |`FileAssociations`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica uma lista de um ou mais tipos de arquivo associados ao manifesto de implantação do ClickOnce.<br /><br /> As associações de arquivos são válidas somente quando voltado para o .NET Framework 3.5 ou posterior.|  
 |`Files`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Os arquivos a serem incluídos no manifesto. Especifique o caminho completo para cada arquivo.|  
-|`HostInBrowser`|Parâmetro [Boolean](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) opcional.<br /><br /> Se `true`, o aplicativo é hospedado em um navegador (assim como Aplicativos de navegador da Web WPF).|  
+|`HostInBrowser`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]() opcional.<br /><br /> Se `true`, o aplicativo é hospedado em um navegador (assim como Aplicativos de navegador da Web WPF).|  
 |`IconFile`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o arquivo de ícone do aplicativo. O ícone do aplicativo é expresso no manifesto do aplicativo gerado e usado para os diálogos Menu Iniciar e Adicionar ou Remover Programas. Se essa entrada não for especificada, um ícone padrão será usado. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
 |`InputManifest`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML de entrada para servir como base para o gerador de manifesto. Isso permite que dados estruturados, tais como segurança de aplicativos ou definições personalizadas de manifesto, sejam refletidos no manifesto de saída. O elemento raiz do documento XML deve ser um nó de assembly no namespace asmv1.|  
 |`IsolatedComReferences`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Especifica os componentes COM a serem isolados no manifesto gerado. Esse parâmetro dá suporte à capacidade de isolar os componentes COM para implantação de “COM sem Registro”. Ele funciona por meio da geração automática de um manifesto com definições padrão de registro de COM. No entanto, os componentes COM devem ser registrados no computador de build para que isso funcione corretamente.|  
@@ -61,12 +60,12 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
 |`Publisher`|Parâmetro `String` opcional.<br /><br /> Especifica o editor do aplicativo. Se esse parâmetro não for especificado, o nome será inferido com base no usuário registrado ou na identidade do manifesto gerado. Esse nome é usado para o nome da pasta no menu Iniciar e faz parte do nome que aparece na caixa de diálogo Adicionar ou Remover Programas.|  
 |`RequiresMinimumFramework35SP1`|Parâmetro `Boolean` opcional.<br /><br /> Se for verdadeiro, o aplicativo exigirá o .NET Framework 3.5 SP1 ou uma versão mais recente.|  
 |`TargetCulture`|Parâmetro `String` opcional.<br /><br /> Identifica a cultura do aplicativo e especifica o campo `Language` da identidade do assembly para o manifesto gerado. Se esse parâmetro não for especificado, presume-se que o aplicativo não varia conforme a cultura.|  
-|`TargetFrameworkMoniker`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica o moniker da estrutura de destino.|  
-|`TargetFrameworkProfile`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica o perfil da estrutura de destino.|  
-|`TargetFrameworkSubset`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica o nome do subconjunto do .NET Framework de destino.|  
-|`TargetFrameworkVersion`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Especifica o .NET Framework de destino do projeto.|  
+|`TargetFrameworkMoniker`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o moniker da estrutura de destino.|  
+|`TargetFrameworkProfile`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o perfil da estrutura de destino.|  
+|`TargetFrameworkSubset`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o nome do subconjunto do .NET Framework de destino.|  
+|`TargetFrameworkVersion`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o .NET Framework de destino do projeto.|  
 |`TrustInfoFile`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML que especifica a segurança do aplicativo. O elemento raiz do documento XML deve ser um nó trustInfo no namespace asmv2. Caso a tarefa esteja gerando um manifesto nativo, este parâmetro será ignorado.|  
-|`UseApplicationTrust`|Parâmetro <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> opcional.<br /><br /> Se for verdadeiro, as propriedades `Product`, `Publisher` e `SupportUrl` são gravadas no manifesto do aplicativo.|  
+|`UseApplicationTrust`|Opcional <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Se for verdadeiro, as propriedades `Product`, `Publisher` e `SupportUrl` são gravadas no manifesto do aplicativo.|  
   
 ## <a name="remarks"></a>Comentários  
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista dos parâmetros da classe Task, consulte [Classe base Task](../msbuild/task-base-class.md).  
@@ -91,10 +90,10 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
  Isso ilustra o cenário mais simples de geração de manifesto possível, no qual manifestos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] são gerados para um único programa. Um nome padrão e uma identidade são inferidos do assembly para o manifesto.  
   
 > [!NOTE]
->  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+> Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -144,10 +143,10 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
  Este exemplo é semelhante ao exemplo anterior, exceto que o nome e a identidade dos manifestos são especificados explicitamente. Além disso, este exemplo é configurado como um aplicativo online em vez de um aplicativo instalado.  
   
 > [!NOTE]
->  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+> Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -202,10 +201,10 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
  Este exemplo usa as tarefas `GenerateApplicationManifest` e `GenerateDeploymentManifest` para gerar manifestos do aplicativo e de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para um aplicativo com vários arquivos e assemblies.  
   
 > [!NOTE]
->  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 > [!NOTE]
->  Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
+> Para obter mais informações sobre a propriedade `Thumbprint` usada na tarefa `SignFile` neste exemplo, consulte [Tarefa SignFile](../msbuild/signfile-task.md).  
   
 ```  
 <Project DefaultTargets="Build"  
@@ -322,7 +321,7 @@ Gera um manifesto do aplicativo ou um manifesto nativo [!INCLUDE[ndptecclick](..
  Este exemplo produz Test.exe.manifest, tornando o aplicativo XCOPY implantável, aproveitando o COM Sem Registro.  
   
 > [!NOTE]
->  No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
+> No exemplo abaixo, todos os binários do aplicativo são predefinidos para se concentrar em aspectos de geração de manifesto. Este exemplo produz uma implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] totalmente funcional.  
   
 ```  
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

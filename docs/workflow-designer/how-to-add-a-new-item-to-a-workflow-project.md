@@ -8,19 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536965"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Como: Adicionar um novo item a um projeto de fluxo de trabalho
 
 Depois de criar um projeto de fluxo de trabalho, você pode adicionar atividades de fluxo de trabalho, designers e outros itens do Visual Studio familiares ao seu projeto.
 
 A tabela a seguir lista os itens do Windows Workflow Foundation (WF) que você pode adicionar a um projeto de fluxo de trabalho:
-
 
 | Nome | Descrição |
 |-| - |

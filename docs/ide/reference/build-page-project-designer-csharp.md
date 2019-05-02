@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791663"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 Use a página **Compilar** do **Designer de Projeto** para especificar as propriedades de configuração de build do projeto. Essa página se aplica somente a projetos do [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -56,12 +56,11 @@ Se você executar um aplicativo como um aplicativo de 64 bits, o ponteiro duplic
 
 Essa caixa de seleção estará disponível somente se todas as seguintes condições forem verdadeiras:
 
--   Na **Página Build**, a lista **Destino da plataforma** é definida com **Qualquer CPU**.
+- Na **Página Build**, a lista **Destino da plataforma** é definida com **Qualquer CPU**.
 
--   Na **Página Aplicativo**, a lista **Tipo de saída** especifica que o projeto é um aplicativo.
+- Na **Página Aplicativo**, a lista **Tipo de saída** especifica que o projeto é um aplicativo.
 
--   Na **Página Aplicativo**, a lista **Estrutura de destino** especifica o .NET Framework 4.5.
-
+- Na **Página Aplicativo**, a lista **Estrutura de destino** especifica o .NET Framework 4.5.
 
 **Permitir código inseguro** Permite que o código que usa palavra-chave [unsafe](/dotnet/csharp/language-reference/keywords/unsafe) seja compilado. Para obter mais informações, consulte [/unsafe (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de atividade UML: Referência | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de atividade UML: Referência de | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.activitydiagram.diagram
 - vs.teamarch.activitydiagram.toolbox
@@ -22,15 +19,15 @@ ms.assetid: 07efcd17-2a96-4052-9957-6dcccbb725ee
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2dcfa13a7ac97a5afd3e315fcef13a706c5f4bce
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087138"
 ---
-# <a name="uml-activity-diagrams-reference"></a>Diagramas de atividade UML: referência
+# <a name="uml-activity-diagrams-reference"></a>Diagramas de atividade UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma *diagrama de atividade* mostra um processo de negócios ou um software como um fluxo de trabalho por meio de uma série de ações. As pessoas, os componentes de software ou computadores podem executar essas ações.  
@@ -39,13 +36,13 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
   
 - Um processo de negócios ou um fluxo de trabalho entre usuários e seu sistema. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
-- As etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md).  
+- As etapas realizadas em um caso de uso. Para obter mais informações, consulte [diagramas de caso de uso UML: Diretrizes de](../modeling/uml-use-case-diagrams-guidelines.md).  
   
 - Um protocolo de software, ou seja, as sequências permitidos de interações entre componentes.  
   
 - Um algoritmo de software.  
   
-  Este tópico descreve os elementos que você pode usar diagramas de atividade. Para obter mais informações detalhadas na informações sobre atividade de desenho consulte diagramas [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md). Para criar um diagrama de atividade UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+  Este tópico descreve os elementos que você pode usar diagramas de atividade. Para obter mais informações detalhadas na informações sobre atividade de desenho diagramas consulte [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md). Para criar um diagrama de atividade UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 ## <a name="reading-activity-diagrams"></a>Diagramas de atividade de leitura  
  As tabelas nas seções a seguir descrevem os elementos que você pode usar em um diagrama de atividade e suas propriedades principais. Para obter uma lista completa das propriedades dos elementos, consulte [propriedades de elementos em diagramas de atividade UML](../modeling/properties-of-elements-on-uml-activity-diagrams.md).  
@@ -55,7 +52,7 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
  Para ler um diagrama, imagine que um token ou o thread de controle, passa os conectores de uma ação para a próxima.  
   
 ### <a name="simple-control-flows"></a>Fluxos de controle simples  
- Você pode mostrar uma sequência de ações com ramificações e loops. Para obter mais informações sobre como usar os elementos descritos aqui, consulte a seção que descreve o fluxo de controle do tópico [diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md).  
+ Você pode mostrar uma sequência de ações com ramificações e loops. Para obter mais informações sobre como usar os elementos descritos aqui, consulte a seção que descreve o fluxo de controle do tópico [diagramas de atividade UML: Diretrizes de](../modeling/uml-activity-diagrams-guidelines.md).  
   
  ![Um fluxo de controle simples](../modeling/media/uml-actovsimple.png "UML_ActOvSimple")  
   
@@ -73,7 +70,7 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
 |9|**Plano de ação de comportamento**|Uma ação que é definida em mais detalhes em outro diagrama de atividade.<br /><br /> -   **IsSynchronous** – se for true, a ação aguarda até que a atividade será finalizada.<br />-   **Comportamento** -a atividade invocada.|  
 |(não mostrado)|**Ação de operação de chamada**|Uma ação que chama uma operação em uma instância de uma classe.|  
 ||**Atividade**|O fluxo de trabalho que é representado por um diagrama de atividade. Para ver as propriedades de uma atividade, você deve selecioná-lo na **Gerenciador de modelos UML**.<br /><br /> -   **É somente leitura** – se for true, a atividade não deve alterar o estado de qualquer objeto.<br />-   **É a única execução** – se for true, há no máximo uma execução de neste diagrama, cada vez.|  
-||**Diagrama de Atividade UML**|O diagrama que exibe uma atividade. Para ver suas propriedades, clique em uma parte vazia do diagrama. **Observação:** os nomes de diagrama de atividade, o arquivo que contém o diagrama e a atividade exibida no diagrama pode todos ser diferente.|  
+||**Diagrama de Atividade UML**|O diagrama que exibe uma atividade. Para ver suas propriedades, clique em uma parte vazia do diagrama. **Observação:**  Os nomes de diagrama de atividade, o arquivo que contém o diagrama e a atividade exibida no diagrama pode todos ser diferente.|  
   
 ### <a name="concurrent-flows"></a>Fluxos simultâneos  
  Você pode descrever as sequências de ações que são executadas ao mesmo tempo. Para obter mais informações, consulte fluxos simultâneos de desenho.  
@@ -88,7 +85,7 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
 |13|**Enviar ação de sinal**|Uma ação que envia uma mensagem ou um sinal para outra atividade ou a um thread simultâneo na mesma atividade. O tipo e o conteúdo da mensagem é indicado pelo título da ação ou especificado nos comentários adicionais.<br /><br /> A ação pode enviar dados do sinal, que pode ser passado para a ação em um fluxo de objeto ou o pino de entrada (16).|  
 |14|**Aceitar a ação de evento**|Uma ação que aguarda uma mensagem ou um sinal de que a ação possa continuar. O tipo de mensagem, que a ação pode receber é indicado pelo título ou especificado nos comentários adicionais.<br /><br /> Se a ação não tem nenhum fluxo de controle de entrada, ele produz um token, sempre que receber uma mensagem.<br /><br /> A ação pode receber dados em sinal, que pode ser passado em um objeto fluxo ou saída de pin (17).<br /><br /> -   **IsUnmarshall** - se verdadeiro, pode haver vários pinos de saída com tipo e os dados são unmarshalled neles. Se for false, todos os dados apareçam em um pin.|  
   
-###  <a name="DataFlow"></a> Fluxos de dados  
+### <a name="DataFlow"></a> Fluxos de dados  
  Você pode descrever o fluxo de dados de uma ação para outro. Para obter mais informações sobre os elementos usados nesta seção, consulte a seção de fluxos de dados de desenho do tópico de diretrizes para desenhar um diagrama de atividade.  
   
  ![Diagrama de atividade mostrando o fluxo de dados](../modeling/media/uml-actovdata.png "UML_ActOvData")  
@@ -104,7 +101,4 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
   
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)
-
-
-
+ [Diagramas de atividade de UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)

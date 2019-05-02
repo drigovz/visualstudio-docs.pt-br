@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: cc9fc59b274d17751d0863e9fbe931336ef8d43c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797540"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 
@@ -85,4 +85,4 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="see-also"></a>Consulte também
 
-- [Usando a classe CultureInfo](/dotnet/standard/globalization-localization/globalization#Cultures)
+- [Usando a classe CultureInfo](/dotnet/standard/globalization-localization/globalization#work-with-culture-specific-settings)

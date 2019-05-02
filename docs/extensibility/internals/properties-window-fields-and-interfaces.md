@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a252a719e800e828275b8f3575c5073ae185e10b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425730"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e campos da janela Propriedades
 O modelo para a seleção determinar quais informações são exibidas na **propriedades** janela baseia-se na janela que tem o foco no IDE. Cada janela e o objeto dentro da janela selecionada, podem ter seu objeto de contexto de seleção enviados por push para o contexto da seleção global. O ambiente atualiza o contexto da seleção global com valores de um quadro de janela quando essa janela tem o foco. Quando o foco é alterado, portanto, não o contexto da seleção.
@@ -50,26 +50,26 @@ Há duas maneiras de manter o **propriedades** janela em sincronia com o valor d
 
 #### <a name="to-update-property-values-using-the-ivsuishell-interface"></a>Para atualizar os valores de propriedade usando a interface IVsUIShell
 
-1.  Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (por meio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service) sempre que esse VSPackages, projetos, ou editores precisam criar ou enumerar as janelas de ferramenta ou documento.
+1. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> (por meio de <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> service) sempre que esse VSPackages, projetos, ou editores precisam criar ou enumerar as janelas de ferramenta ou documento.
 
-2.  Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> para manter o **propriedades** janela em sincronia com as alterações de propriedade para um projeto (ou qualquer outro objeto selecionado que está sendo procurado pela **propriedades** janela) sem implementar <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e o disparo <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> eventos.
+2. Implemente <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.RefreshPropertyBrowser%2A> para manter o **propriedades** janela em sincronia com as alterações de propriedade para um projeto (ou qualquer outro objeto selecionado que está sendo procurado pela **propriedades** janela) sem implementar <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> e o disparo <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink.OnChanged%2A> eventos.
 
-3.  Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> para estabelecer e desabilitar, respectivamente, a notificação de cliente de eventos de hierarquia sem a necessidade de hierarquia para implementar <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
+3. Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> métodos <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.AdviseHierarchyEvents%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.UnadviseHierarchyEvents%2A> para estabelecer e desabilitar, respectivamente, a notificação de cliente de eventos de hierarquia sem a necessidade de hierarquia para implementar <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
 
 ### <a name="updating-property-values-using-iconnection"></a>Atualizando valores de propriedade usando IConnection
  A segunda maneira de manter o **propriedades** janela em sincronia com alterações de valor da propriedade é implementar `IConnection` no objeto conectável para indicar a existência de interfaces de saída. Se você deseja localizar o nome da propriedade, derive seu objeto de <xref:System.ComponentModel.ICustomTypeDescriptor>. O <xref:System.ComponentModel.ICustomTypeDescriptor> implementação pode modificar os descritores de propriedade, ele retorna e altere o nome de uma propriedade. Para localizar a descrição, criar um atributo que deriva de <xref:System.ComponentModel.DescriptionAttribute> e substitua a propriedade de descrição.
 
 #### <a name="considerations-in-implementing-the-iconnection-interface"></a>Considerações na implementação da interface de IConnection
 
-1.  `IConnection` fornece acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. Ele também fornece acesso a todos os os conexão ponto subobjetos, cada um dos que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface.
+1. `IConnection` fornece acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. Ele também fornece acesso a todos os os conexão ponto subobjetos, cada um dos que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface.
 
-2.  Qualquer objeto procurado é responsável por implementar um <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> eventos. O **propriedades** janela informará para o evento definido por meio de `IConnection`.
+2. Qualquer objeto procurado é responsável por implementar um <xref:Microsoft.VisualStudio.OLE.Interop.IPropertyNotifySink> eventos. O **propriedades** janela informará para o evento definido por meio de `IConnection`.
 
-3.  Um ponto de conexão controla quantas conexões (um ou mais) permite em sua implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Um ponto de conexão que permite que apenas uma interface pode retornar <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> do <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> método.
+3. Um ponto de conexão controla quantas conexões (um ou mais) permite em sua implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A>. Um ponto de conexão que permite que apenas uma interface pode retornar <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> do <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.EnumConnections%2A> método.
 
-4.  Um cliente pode chamar o `IConnection` interface para obter acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. O <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface, em seguida, pode ser chamado para enumerar os pontos de conexão para cada interface de saída IID (ID).
+4. Um cliente pode chamar o `IConnection` interface para obter acesso a um objeto de enumerador subdiretório com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface. O <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnectionPoints> interface, em seguida, pode ser chamado para enumerar os pontos de conexão para cada interface de saída IID (ID).
 
-5.  `IConnection` também pode ser chamado para obter acesso a objetos de subpropriedades de ponto de conexão com o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para cada IID de saída. Por meio de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface, um cliente inicia ou Finaliza um loop de consultoria com o objeto conectável e a sincronização do cliente. O cliente também pode chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para obter um objeto de enumerador com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interface para enumerar as conexões que ele conhece.
+5. `IConnection` também pode ser chamado para obter acesso a objetos de subpropriedades de ponto de conexão com o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para cada IID de saída. Por meio de <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface, um cliente inicia ou Finaliza um loop de consultoria com o objeto conectável e a sincronização do cliente. O cliente também pode chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para obter um objeto de enumerador com o <xref:Microsoft.VisualStudio.OLE.Interop.IEnumConnections> interface para enumerar as conexões que ele conhece.
 
 ## <a name="getting-field-descriptions-from-the-properties-window"></a> Obtendo descrições dos campos na janela Propriedades
 Na parte inferior a **propriedades** janela, uma área de descrição exibe informações relacionadas ao campo de propriedade selecionada. Esse recurso é ativado por padrão. Se você quiser ocultar o campo de descrição, clique com botão direito do **propriedades** janela e clique em **descrição**. Isso também remove a marca de seleção ao lado de **descrição** título na janela de menu. Você pode exibir o campo novamente, seguindo as mesmas etapas para ativar/desativar **descrição** novamente.
@@ -81,7 +81,7 @@ Na parte inferior a **propriedades** janela, uma área de descrição exibe info
 1. Adicione a `helpstringdll` para a instrução library na biblioteca de tipos de atributo (`typelib`).
 
    > [!NOTE]
-   >  Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.
+   > Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.
 
 2. Especificar `helpstringcontext` atributos para as cadeias de caracteres. Você também pode especificar `helpstring` atributos.
 

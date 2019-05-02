@@ -1,14 +1,9 @@
 ---
-title: 'Como: assinar arquivos com SignTool.exe (ClickOnce) de instalação | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Assinar arquivos com SignTool.exe (ClickOnce) de instalação | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -23,15 +18,15 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: f6975fb9c3c3e1abeeaebe23b4a85f41833e421e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49179303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053202"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como assinar arquivos de instalação com SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como: Assinar arquivos de instalação com SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o SignTool.exe para assinar um programa de instalação (setup.exe). Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.  
@@ -42,27 +37,27 @@ Você pode usar o SignTool.exe para assinar um programa de instalação (setup.e
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Para gerar um programa de instalação não assinado e assinar mais tarde  
   
-1.  No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.  
+1. No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.  
   
-2.  Selecione o projeto no **Gerenciador de Soluções**.  
+2. Selecione o projeto no **Gerenciador de Soluções**.  
   
-3.  Sobre o **Project** menu, clique em *ProjectName* **propriedades**.  
+3. No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
   
-4.  No **Signing** página, desmarque **assinar os manifestos do ClickOnce**.  
+4. Na página **Assinatura**, desmarque a opção **Assinar os manifestos do ClickOnce**.  
   
-5.  No **Publish** , clique em **pré-requisitos**.  
+5. Na página **Publicar**, clique em **Pré-requisitos**.  
   
-6.  Verifique se todos os pré-requisitos estão selecionados e, em seguida, clique em **Okey**.  
+6. Verifique se todos os pré-requisitos estão selecionados e clique em **OK**.  
   
-7.  No **Publish** página, verifique se as configurações de publicação e, em seguida, clique em **publicar agora**.  
+7. Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.  
   
      A solução publica o manifesto de aplicativo não assinado, o manifesto de implantação não assinado, os arquivos específicos de versão e o programa de instalação não assinado no local da pasta de publicação.  
   
-8.  No **Publish** , clique em **pré-requisitos**.  
+8. Na página **Publicar**, clique em **Pré-requisitos**.  
   
-9. No **pré-requisitos** caixa de diálogo, desmarque **criar o programa de instalação para instalar os componentes de pré-requisito**.  
+9. Na caixa de diálogo **Pré-requisitos**, desmarque a opção **Criar programa de instalação para instalar os componentes dos pré-requisitos**.  
   
-10. No **Publish** página, verifique se as configurações de publicação e, em seguida, clique em **publicar agora**.  
+10. Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.  
   
      A solução publica o manifesto de aplicativo assinado, o manifesto de implantação assinado, os arquivos específicos de versão e o local da pasta de publicação. O programa de instalação não assinado não é substituído pelo processo de publicação.  
   
@@ -85,7 +80,4 @@ Você pode usar o SignTool.exe para assinar um programa de instalação (setup.e
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como assinar manifestos de aplicativo e implantação novamente](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
-
-
-
+ [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

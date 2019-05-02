@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f001b73b97723db177706b6625cbfa827bc2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386814"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Como: Referenciar o nome ou o local do arquivo de projeto
 Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem ter de criar sua própria propriedade. O [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fornece propriedades reservadas que referenciam o nome do arquivo de projeto e outras propriedades relacionadas ao projeto. Para obter mais informações sobre propriedades reservadas, confira [Propriedades reservadas e conhecidas do MSBuild](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -42,7 +42,7 @@ Você pode usar o nome ou local do projeto no próprio arquivo de projeto sem te
   Uma vantagem de usar uma propriedade reservada é que qualquer alteração no nome do arquivo de projeto é incorporada automaticamente. Na próxima vez que você compilar o projeto, o arquivo de saída terá o novo nome sem necessidade de ação adicional de sua parte.
 
 > [!NOTE]
->  As propriedades reservadas não podem ser redefinidas no arquivo de projeto.
+> As propriedades reservadas não podem ser redefinidas no arquivo de projeto.
 
 ## <a name="example"></a>Exemplo
  O arquivo de projeto de exemplo a seguir faz referência ao nome de projeto como uma propriedade reservada para especificar o nome para a saída.

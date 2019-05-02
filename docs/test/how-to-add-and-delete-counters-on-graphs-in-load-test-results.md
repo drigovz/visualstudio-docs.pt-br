@@ -11,12 +11,12 @@ ms.assetid: 81536233-1962-40d9-9511-0b4633814d90
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b73d0c9f056709bf393fd2e7ab23cf917d48ffc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 692ea254719f5ae14491ae81e2e6ab0f5740fc05
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002259"
 ---
 # <a name="how-to-add-and-delete-counters-on-graphs-in-load-test-results"></a>Como: Adicionar e excluir contadores em grafos nos resultados do teste de carga
 
@@ -51,25 +51,25 @@ Para obter mais informações, confira [Como: Especificar a propriedade de armaz
 
 ## <a name="to-display-a-particular-performance-counter-on-a-load-test-graph"></a>Para exibir um contador de desempenho específico em um gráfico de teste de carga
 
-1.  Depois que um teste de carga é concluído ou depois que você carregar um resultado do teste, na barra de ferramentas do Analisador de Teste de Carga, escolha **Gráficos**.
+1. Depois que um teste de carga é concluído ou depois que você carregar um resultado do teste, na barra de ferramentas do Analisador de Teste de Carga, escolha **Gráficos**.
 
      O painel **Contadores** é mostrado na exibição Gráficos.
 
     > [!NOTE]
     > Se o painel **Contadores** não estiver visível, escolha **Mostrar painel de contadores** na barra de ferramentas.
 
-2.  No painel **Contadores**, expanda os nós na hierarquia até encontrar o contador de desempenho que você deseja ver graficamente.
+2. No painel **Contadores**, expanda os nós na hierarquia até encontrar o contador de desempenho que você deseja ver graficamente.
 
      Por exemplo, para exibir a memória disponível em um computador em que os testes estão em execução, expanda **Computadores**, expanda o nó do computador e, em seguida, expanda **Memória**. Você verá o contador **MBytes disponíveis**.
 
-3.  Escolha o gráfico no qual você deseja exibir o contador de desempenho.
+3. Escolha o gráfico no qual você deseja exibir o contador de desempenho.
 
-4.  Clique com o botão direito do mouse no contador de desempenho no painel **Contadores** e selecione **Mostrar Contador no Gráfico**.
+4. Clique com o botão direito do mouse no contador de desempenho no painel **Contadores** e selecione **Mostrar Contador no Gráfico**.
 
     > [!TIP]
     > Para interromper temporariamente a exibição dos dados do contador de desempenho no gráfico, desmarque a caixa de seleção para o contador de desempenho na legenda. Isso permite que as estatísticas de mínimo, máximo e média ainda sejam analisadas sem exibir a linha de tendência no gráfico. Isso pode ser útil se o gráfico contiver vários traçados do contador de desempenho que se sobrepõem quando você analisar os problemas. Para saber mais, confira [Usar a legenda de exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md).
 
-5.  Para remover os dados do contador de desempenho do gráfico, clique com o botão direito do mouse no contador de desempenho na coluna de **Contador** da legenda e selecione **Excluir**.
+5. Para remover os dados do contador de desempenho do gráfico, clique com o botão direito do mouse no contador de desempenho na coluna de **Contador** da legenda e selecione **Excluir**.
 
      \- ou -
 

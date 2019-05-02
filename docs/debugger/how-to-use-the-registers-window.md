@@ -24,16 +24,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc0482152b3da0b52950ab6389cc9f7d9e83e3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974273"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905995"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Valores de registro de modo de exibição na janela de registros (C#, C++, Visual Basic, F#)
 
-O **registra** janela exibe conteúdo do registro durante a depuração do Visual Studio. Para obter uma introdução aos conceitos por trás de registros de alto nível e o **registra** janela, consulte [Noções básicas de depuração: janela Registros](../debugger/debugging-basics-registers-window.md).
+O **registra** janela exibe conteúdo do registro durante a depuração do Visual Studio. Para obter uma introdução aos conceitos por trás de registros de alto nível e o **registra** janela, consulte [Noções básicas de depuração: Janela de registros](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Informações de registro não estão disponíveis para aplicativos SQL ou script.
@@ -41,6 +41,8 @@ O **registra** janela exibe conteúdo do registro durante a depuração do Visua
 Durante a depuração, registre alterações de valores como o código é executado em seu aplicativo. Valores que foram alterados recentemente são exibidos em vermelho na **registra** janela.
 
 Para reduzir a desordem, a janela **Registros** organiza registros em grupos, que variam de acordo com a plataforma e o tipo de processador. Você pode exibir ou ocultar grupos de registros. Para obter mais informações, confira [Como: Exibir e ocultar grupos de registros](../debugger/how-to-display-and-hide-register-groups.md).
+
+Para obter informações sobre os sinalizadores de você ver a **registra** janela, consulte [sobre registra a janela](../debugger/debugging-basics-registers-window.md)
 
 Você pode editar valores do registro. Para obter mais informações, confira [Como: Editar um valor de registro](../debugger/how-to-edit-a-register-value.md).
 

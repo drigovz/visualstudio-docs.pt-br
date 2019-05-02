@@ -8,12 +8,12 @@ ms.assetid: 5ef1188f-89dc-413d-801d-0efdaf9b0427
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e24e9e405dfeab18ca0e55a617857d73ba4234e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9d6162f26bbfcf3f3bce8f2a3db649fbf1b63a52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416515"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Habilitar testes de IU codificado dos controles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "54766961"
   
    ![CUIT&#95;Full](../test/media/cuit-full.png "CUIT_Full")  
   
-##  <a name="recordandplayback"></a> Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade  
+## <a name="recordandplayback"></a> Suporte ao registro, reprodução e validação de propriedade com a implementação de acessibilidade  
  O construtor de teste de IU codificado captura informações sobre os controles que ele encontra durante uma gravação e, em seguida, gera código para repetir essa sessão. Se o controle não der suporte à acessibilidade, o teste de IU codificado capturará ações (como cliques do mouse) usando coordenadas da tela. Quando o teste é executado, o código gerado emitirá os cliques do mouse nas mesmas coordenadas de tela. Se o controle for exibido em um local diferente na tela quando o teste for reproduzido, o código gerado falhará ao executar essa ação em seu controle. Isso poderá resultar em falhas se o teste for reproduzido em diferentes configurações de tela, em diferentes ambientes ou após alterações no layout da interface do usuário.  
   
  ![CUIT&#95;RecordNoSupport](../test/media/cuit-recordnosupport.png "CUIT_RecordNoSupport")  
@@ -46,7 +46,7 @@ ms.locfileid: "54766961"
   
  ![CUIT&#95;Accessible](../test/media/cuit-accessible.png "CUIT_Accessible")  
   
-1.  Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.  
+1. Implemente uma classe que seja derivada de <xref:System.Windows.Forms.Control.ControlAccessibleObject> e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> para retornar um objeto da sua classe.  
   
     ```csharp  
     public partial class ChartControl : UserControl  
@@ -71,16 +71,16 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-2.  Substitua as propriedades e os métodos <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> e <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> do objeto acessível.  
+2. Substitua as propriedades e os métodos <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> e <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> do objeto acessível.  
   
-3.  Implemente outro objeto de acessibilidade para o controle filho e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> do controle filho para retornar esse objeto de acessibilidade.  
+3. Implemente outro objeto de acessibilidade para o controle filho e substitua a propriedade <xref:System.Windows.Forms.Control.AccessibilityObject%2A> do controle filho para retornar esse objeto de acessibilidade.  
   
-4.  Substitua as propriedades e os métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> do objeto de acessibilidade do controle filho.  
+4. Substitua as propriedades e os métodos <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> e <xref:System.Windows.Forms.AccessibleObject.Select%2A> do objeto de acessibilidade do controle filho.  
   
 > [!NOTE]
->  Este tópico começa com o exemplo de acessibilidade em <xref:System.Windows.Forms.AccessibleObject> neste procedimento e, em seguida, se baseia nisso nos procedimentos restantes. Se você quiser criar uma versão de trabalho do exemplo de acessibilidade, criar um aplicativo de console e, em seguida, substitua o código em Program.cs pelo código de exemplo. Você precisará adicionar referências a Acessibilidade, System.Drawing e System.Windows.Forms. Você deve alterar os **Tipos de Inserção de Interoperabilidade** de Acessibilidade para **False** para eliminar um aviso de build. Você pode alterar o tipo de saída do projeto de **Aplicativo de Console** para **Aplicativos do Windows** para que uma janela de console não apareça ao executar o aplicativo.  
+> Este tópico começa com o exemplo de acessibilidade em <xref:System.Windows.Forms.AccessibleObject> neste procedimento e, em seguida, se baseia nisso nos procedimentos restantes. Se você quiser criar uma versão de trabalho do exemplo de acessibilidade, criar um aplicativo de console e, em seguida, substitua o código em Program.cs pelo código de exemplo. Você precisará adicionar referências a Acessibilidade, System.Drawing e System.Windows.Forms. Você deve alterar os **Tipos de Inserção de Interoperabilidade** de Acessibilidade para **False** para eliminar um aviso de build. Você pode alterar o tipo de saída do projeto de **Aplicativo de Console** para **Aplicativos do Windows** para que uma janela de console não apareça ao executar o aplicativo.  
   
-##  <a name="customproprties"></a> Suporte à validação de propriedade personalizada com a implementação de um provedor de propriedade  
+## <a name="customproprties"></a> Suporte à validação de propriedade personalizada com a implementação de um provedor de propriedade  
  Depois de implementar o suporte básico para registro, reprodução e validação de propriedade, você poderá disponibilizar as propriedades personalizadas do controle para testes de IU codificados implementando um plug-in <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>. Por exemplo, o procedimento a seguir cria um provedor de propriedade que permite que os testes de UI codificados acessem a propriedade State dos controles filho de CurveLegend do controle do gráfico.  
   
  ![CUIT&#95;CustomProps](../test/media/cuit-customprops.png "CUIT_CustomProps")  
@@ -88,7 +88,7 @@ ms.locfileid: "54766961"
 ### <a name="to-support-custom-property-validation"></a>Para dar suporte à validação de propriedade personalizada  
  ![CUIT&#95;Props](../test/media/cuit-props.png "CUIT_Props")  
   
-1.  Substitua a propriedade <xref:System.Windows.Forms.AccessibleObject.Description%2A> do objeto acessível da legenda de curva para passar valores avançados de propriedade na cadeia de caracteres de descrição, separados da descrição principal (e uns dos outros, caso esteja implementando várias propriedades) por ponto-e-vírgula (;).  
+1. Substitua a propriedade <xref:System.Windows.Forms.AccessibleObject.Description%2A> do objeto acessível da legenda de curva para passar valores avançados de propriedade na cadeia de caracteres de descrição, separados da descrição principal (e uns dos outros, caso esteja implementando várias propriedades) por ponto-e-vírgula (;).  
   
     ```csharp  
     public class CurveLegendAccessibleObject : AccessibleObject  
@@ -106,9 +106,9 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-2.  Crie um pacote de extensão de teste de interface do usuário para o seu controle, criando um projeto de biblioteca de classes e adicionando referências a Accessibility, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common e Microsoft.VisualStudio.TestTools.Extension. Altere os **Tipos de Inserção de Interoperabilidade** para Acessibilidade para **False**.  
+2. Crie um pacote de extensão de teste de interface do usuário para o seu controle, criando um projeto de biblioteca de classes e adicionando referências a Accessibility, Microsoft.VisualStudio.TestTools.UITesting, Microsoft.VisualStudio.TestTools.UITest.Common e Microsoft.VisualStudio.TestTools.Extension. Altere os **Tipos de Inserção de Interoperabilidade** para Acessibilidade para **False**.  
   
-3.  Adicione uma classe de provedor de propriedade que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
+3. Adicione uma classe de provedor de propriedade que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider>.  
   
     ```csharp  
     using System;  
@@ -127,7 +127,7 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-4.  Implemente o provedor de propriedade colocando os nomes e descritores de propriedade em um <xref:System.Collections.Generic.Dictionary%602>.  
+4. Implemente o provedor de propriedade colocando os nomes e descritores de propriedade em um <xref:System.Collections.Generic.Dictionary%602>.  
   
     ```csharp  
     // Define a map of property descriptors for CurveLegend  
@@ -187,7 +187,7 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-5.  Substitua <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> para indicar que o assembly fornece suporte específico do controle para o controle e seus filhos.  
+5. Substitua <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetControlSupportLevel%2A?displayProperty=fullName> para indicar que o assembly fornece suporte específico do controle para o controle e seus filhos.  
   
     ```csharp  
     public override int GetControlSupportLevel(UITestControl uiTestControl)  
@@ -205,7 +205,7 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-6.  Substitua os métodos abstratos restantes de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
+6. Substitua os métodos abstratos restantes de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider?displayProperty=fullName>.  
   
     ```csharp  
     public override string[] GetPredefinedSearchProperties(Type specializedClass)  
@@ -240,7 +240,7 @@ ms.locfileid: "54766961"
   
     ```  
   
-7.  Adicione uma classe de pacote de extensão que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
+7. Adicione uma classe de pacote de extensão que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage>.  
   
     ```csharp  
     using System;  
@@ -256,7 +256,7 @@ ms.locfileid: "54766961"
     }  
     ```  
   
-8.  Defina o atributo `UITestExtensionPackage` do assembly.  
+8. Defina o atributo `UITestExtensionPackage` do assembly.  
   
     ```csharp  
     [assembly: Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage(  
@@ -324,9 +324,9 @@ ms.locfileid: "54766961"
 11. Compile seus binários e copie-os para **%ProgramFiles%\Common\Microsoft Shared\VSTT\10.0\UITestExtensionPackages**.  
   
 > [!NOTE]
->  Este pacote de extensão será aplicado a qualquer controle do tipo “Text”. Se você estiver testando vários controles do mesmo tipo, precisará testá-los separadamente e gerenciar quais pacotes de extensão são implantadas ao gravar os testes.  
+> Este pacote de extensão será aplicado a qualquer controle do tipo “Text”. Se você estiver testando vários controles do mesmo tipo, precisará testá-los separadamente e gerenciar quais pacotes de extensão são implantadas ao gravar os testes.  
   
-##  <a name="codegeneration"></a> Suporte à geração de código com a implementação de uma classe para propriedades personalizadas de acesso  
+## <a name="codegeneration"></a> Suporte à geração de código com a implementação de uma classe para propriedades personalizadas de acesso  
  Quando o construtor de teste de IU codificado gera código de uma gravação de sessão, ele usa a classe <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl> para acessar os controles.  
   
 ```csharp  
@@ -346,7 +346,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
 ### <a name="to-add-a-specialized-class-to-access-your-control"></a>Para adicionar uma classe especializada para acessar seu controle  
  ![CUIT&#95;CodeGen](../test/media/cuit-codegen.png "CUIT_CodeGen")  
   
-1.  Implemente uma classe que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> e adicione o tipo do controle à coleção de propriedades de pesquisa no construtor.  
+1. Implemente uma classe que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinControl> e adicione o tipo do controle à coleção de propriedades de pesquisa no construtor.  
   
     ```csharp  
     public class CurveLegend:WinControl   
@@ -360,7 +360,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-2.  Implemente as propriedades personalizadas do controle como propriedades da classe.  
+2. Implemente as propriedades personalizadas do controle como propriedades da classe.  
   
     ```csharp  
     public virtual string State  
@@ -372,7 +372,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  Substitua o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> do provedor de propriedade para retornar o tipo da nova classe para os controles filho da legenda de curva.  
+3. Substitua o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetSpecializedClass%2A?displayProperty=fullName> do provedor de propriedade para retornar o tipo da nova classe para os controles filho da legenda de curva.  
   
     ```csharp  
     public override Type GetSpecializedClass(UITestControl uiTestControl)   
@@ -389,7 +389,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  Substitua o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> do provedor de propriedade para retornar o tipo do método PropertyNames da nova classe.  
+4. Substitua o método <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestPropertyProvider.GetPropertyNamesClassType%2A> do provedor de propriedade para retornar o tipo do método PropertyNames da nova classe.  
   
     ```csharp  
     public override Type GetPropertyNamesClassType(UITestControl uiTestControl)  
@@ -406,13 +406,13 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-##  <a name="intentawareactions"></a> Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação  
+## <a name="intentawareactions"></a> Suporte a ações com reconhecimento de intenção com a implementação de um filtro de ação  
  Quando o Visual Studio registra um teste, ele captura cada evento do mouse e do teclado. No entanto, em alguns casos, a intenção da ação pode ser perdida na série de eventos de mouse e de teclado. Por exemplo, se o controle dá suporte ao preenchimento automático, o mesmo conjunto de eventos de mouse e teclado podem resultar em um valor diferente quando o teste é reproduzido em um ambiente diferente. Você pode adicionar um plug-in de filtro de ação que substitui a série de eventos de teclado e mouse por uma única ação. Dessa forma, você pode substituir a série de eventos de mouse e de teclado, resultando na seleção de um valor com uma única ação que define o valor. Isso protege os testes de UI codificados contra as diferenças no preenchimento automático de um ambiente para outro.  
   
 ### <a name="to-support-intent-aware-actions"></a>Para dar suporte a ações com reconhecimento de intenção  
  ![CUIT&#95;Actions](../test/media/cuit-actions.png "CUIT_Actions")  
   
-1.  Implemente uma classe de filtro de ação que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, substituindo as propriedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
+1. Implemente uma classe de filtro de ação que seja derivada de <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter>, substituindo as propriedades <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ApplyTimeout%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Category%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Enabled%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.FilterType%2A>, <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Group%2A> e <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.Name%2A>.  
   
     ```csharp  
     internal class MyActionFilter : UITestActionFilter  
@@ -457,7 +457,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
        }  
     ```  
   
-2.  Substitua <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Esse exemplo substitui uma ação de clicar duas vezes por uma ação de clique único.  
+2. Substitua <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UITestActionFilter.ProcessRule%2A>. Esse exemplo substitui uma ação de clicar duas vezes por uma ação de clique único.  
   
     ```csharp  
     public override bool ProcessRule(IUITestActionStack actionStack)  
@@ -484,7 +484,7 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-3.  Adicione o filtro de ação ao método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> do seu pacote de extensão.  
+3. Adicione o filtro de ação ao método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITestExtensionPackage.GetService%2A> do seu pacote de extensão.  
   
     ```csharp  
     public override object GetService(Type serviceType)   
@@ -509,29 +509,29 @@ Assert.AreEqual(this.AssertMethod3ExpectedValues.UIATextState, uIAText.State);
     }  
     ```  
   
-4.  Compile seus binários e copie-os para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
+4. Compile seus binários e copie-os para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
 > [!NOTE]
->  O filtro de ação não depende da implementação de acessibilidade ou do provedor de propriedade.  
+> O filtro de ação não depende da implementação de acessibilidade ou do provedor de propriedade.  
   
 ## <a name="debug-your-property-provider-or-action-filter"></a>Depurar seu provedor de propriedade ou filtro de ação  
  O provedor de propriedade e filtro de ação são implementados em um pacote de extensão que é carregado e executado pelo construtor de teste de IU codificado em um processo separado do seu aplicativo.  
   
 #### <a name="to-debug-your-property-provider-or-action-filter"></a>Para depurar seu provedor de propriedade ou filtro de ação  
   
-1.  Compile a versão de depuração do seu pacote de extensão e copie os arquivos .dll e .pdb para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
+1. Compile a versão de depuração do seu pacote de extensão e copie os arquivos .dll e .pdb para %ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages.  
   
-2.  Execute seu aplicativo (não no depurador).  
+2. Execute seu aplicativo (não no depurador).  
   
-3.  Execute o construtor de teste de IU codificado.  
+3. Execute o construtor de teste de IU codificado.  
   
      `codedUITestBuilder.exe  /standalone`  
   
-4.  Anexe o depurador ao processo codedUITestBuilder.  
+4. Anexe o depurador ao processo codedUITestBuilder.  
   
-5.  Defina os pontos de interrupção no seu código.  
+5. Defina os pontos de interrupção no seu código.  
   
-6.  No construtor de teste de IU codificado, crie asserções para exercitar seu provedor de propriedade e registrar ações para exercitar seus filtros de ação.  
+6. No construtor de teste de IU codificado, crie asserções para exercitar seu provedor de propriedade e registrar ações para exercitar seus filtros de ação.  
   
 ## <a name="external-resources"></a>Recursos externos  
   

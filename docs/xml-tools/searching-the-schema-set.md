@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfbc41b24dd0e58dd24e0af99afe458d27f8ade6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b73d5c8acac211db09926acf0ba8009aa04ac0a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784566"
 ---
-# <a name="search-the-schema-set"></a>O conjunto de esquema de pesquisa
+# <a name="search-the-schema-set"></a>Pesquisar o conjunto de esquemas
 
 O **XML Schema Explorer** permite pesquisar o esquema definido das seguintes maneiras:
 
--   Pesquisa de palavras-chave.
+- Pesquisa de palavras-chave.
 
--   Pesquisa Esquema- específica.
+- Pesquisa Esquema- específica.
 
 ## <a name="keyword-search"></a>Pesquisa de palavra-chave
 
@@ -31,11 +31,11 @@ O **XML Schema Explorer** permite pesquisar o esquema definido das seguintes man
 
  O **XML Schema Explorer** procura o esquema definido para os seguintes atributos:
 
--   Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Você pode encontrar elementos, atributos, tipos e assim por diante, por nome.
+- Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Você pode encontrar elementos, atributos, tipos e assim por diante, por nome.
 
--   Atributos de `schemaLocation` de incluem instruções.
+- Atributos de `schemaLocation` de incluem instruções.
 
--   Atributos de `namespace` de instruções de importação.
+- Atributos de `namespace` de instruções de importação.
 
 ## <a name="schema-specific-search"></a>Pesquisar esquema específico
 

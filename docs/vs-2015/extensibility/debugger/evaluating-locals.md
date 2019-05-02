@@ -1,45 +1,40 @@
 ---
 title: Avaliar Locals | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], evaluating locals
 - expression evaluation, evaluating locals
 ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 88b9fdd5ac8451056454b80ad0262b8aa9bf951b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444764"
 ---
 # <a name="evaluating-locals"></a>Avaliando locais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) é chamado para obter o valor de um local, bem como o nome do local e o tipo. Como o valor de um local é dependente do estado atual do programa, o valor do local deve ser obtido da memória. O [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objeto é usado para associar a [IDebugField](../../extensibility/debugger/reference/idebugfield.md) que representa o local para o local apropriado na memória que contém o valor do objeto. Esse local na memória é representado por um [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   
  Essa funcionalidade de recuperar o valor de um local é encapsulada em uma função auxiliar que realiza as seguintes tarefas:  
   
-1.  Associa a `IDebugField` objeto na memória para obter um `IDebugObject` objeto.  
+1. Associa a `IDebugField` objeto na memória para obter um `IDebugObject` objeto.  
   
-2.  Obtém o valor da memória. Esse valor é representado como uma série de bytes.  
+2. Obtém o valor da memória. Esse valor é representado como uma série de bytes.  
   
-3.  Formata o valor com base no tipo do local.  
+3. Formata o valor com base no tipo do local.  
   
-4.  Retorna um objeto genérico que contém o valor do local. No c#, isso é um `object`, e em C++, esse é um `VARIANT`.  
+4. Retorna um objeto genérico que contém o valor do local. No c#, isso é um `object`, e em C++, esse é um `VARIANT`.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Essa é uma implementação de uma função que recupera o valor de um local no código gerenciado.  
@@ -200,4 +195,3 @@ HRESULT FieldGetPrimitiveValue(
  [Exemplo de implementação de Locals](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Obter valores de Local](../../extensibility/debugger/getting-local-values.md)   
  [Contexto da avaliação](../../extensibility/debugger/evaluation-context.md)
-

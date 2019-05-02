@@ -10,16 +10,18 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8464ecd96234511017953b6bc0dce7fabdef810b
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786075"
 ---
-# <a name="introducing-live-unit-testing"></a>Introdução ao Live Unit Testing
+# <a name="live-unit-testing-introduction"></a>Introdução ao Live Unit Testing
 
-O Live Unit Testing é uma tecnologia disponível no Visual Studio 2017 versão 15.3 que executa testes de unidade automaticamente em tempo real conforme você faz alterações no código. Live Unit Testing:
+O Live Unit Testing é uma tecnologia que foi introduzida no Visual Studio 2017. Ele executa os testes de unidade automaticamente em tempo real conforme você faz alterações de código.
+
+Live Unit Testing:
 
 - Permite refatorar e alterar o código com maior confiança. O Live Unit Testing executa automaticamente todos os testes afetados conforme você edita o código para garantir que as alterações não prejudiquem os testes.
 
@@ -27,18 +29,22 @@ O Live Unit Testing é uma tecnologia disponível no Visual Studio 2017 versão 
 
 Caso tenha uma solução que inclua um ou mais projetos de teste de unidade, habilite o Live Unit Testing selecionando **Teste** > **Live Unit Testing** > **Iniciar** no menu de nível superior do Visual Studio.
 
+> [!NOTE]
+> O Live Unit Testing está disponível somente na edição do Visual Studio Enterprise.
+
 Para saber mais sobre o Live Unit Testing:
 
-- Consulte o tutorial de Introdução, [Introdução ao Live Unit Testing no Visual Studio](live-unit-testing-start.md).
+- Confira o tutorial de introdução, [Introdução ao Live Unit Testing](live-unit-testing-start.md).
 
-- Leia a documentação detalhada [Usar o Live Unit Testing no Visual Studio 2017 Enterprise Edition](live-unit-testing.md).
+- Leia a documentação detalhada [Usar o Live Unit Testing no Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Leia [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas para usar o Live Unit Testing.
+- Leia as [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas.
 
 - Assista ao vídeo do Channel 9 para obter uma visão geral dos Live Unit Testing e de seus recursos. </p>
 
    > [!VIDEO https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105/player]
 
 ## <a name="related-resources"></a>Recursos relacionados
+
 - [Ferramentas de teste de código](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Efetuar teste de unidade em seu código](unit-test-your-code.md)

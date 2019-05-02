@@ -1,14 +1,9 @@
 ---
-title: 'Como: escrever uma função de relatório de erro de tempo de execução | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Escrever uma função de relatório de erro de tempo de execução | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,15 +20,15 @@ ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e5d7c9e3d87f7b73ccfad822ef0e7800baaa5b44
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5884ab002590f8944aa8c1134c67758a2f0c58
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62423797"
 ---
-# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como escrever uma função de relatórios de erro de tempo de execução
+# <a name="how-to-write-a-run-time-error-reporting-function"></a>Como: Escrever uma função de relatório de erro em tempo de execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma função personalizada de relatório para erros em tempo de execução deve ter a mesma declaração que `_CrtDbgReportW`. Deve retornar um valor de 1 para o depurador.  
@@ -117,7 +112,7 @@ int Catch_RTC_Failure(int errType, const wchar_t *file, int line,
 ```  
   
 ## <a name="example"></a>Exemplo  
- Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`. Para obter mais informações, consulte [RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a). O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
+ Use `_RTC_SetErrorFuncW` para instalar a função personalizada em vez de `_CrtDbgReportW`. Para obter mais informações, confira [_RTC_SetErrorFuncW](http://msdn.microsoft.com/library/b3e0d71f-1bd3-4c37-9ede-2f638eb3c81a). O valor de retorno de `_RTC_SetErrorFuncW` é a função de relatório anterior, que você pode salvar e restaurar se necessário.  
   
 ```  
 #include <rtcapi.h>  
@@ -134,8 +129,3 @@ int main()
   
 ## <a name="see-also"></a>Consulte também  
  [Personalização das verificações de tempo de execução nativas](../debugger/native-run-time-checks-customization.md)
-
-
-
-
-

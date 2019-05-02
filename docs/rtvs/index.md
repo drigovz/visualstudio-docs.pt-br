@@ -1,15 +1,20 @@
 ---
 title: Ferramentas R para Visual Studio
-description: 'As RTVS (Ferramentas do R para Visual Studio 2017) são uma extensão de software livre gratuita que fornece muitos recursos de linguagem, incluindo IntelliSense, depuração e workspaces remotos.'
+description: As RTVS (Ferramentas do R para Visual Studio 2017) são uma extensão de software livre gratuita que fornece muitos recursos de linguagem, incluindo IntelliSense, depuração e workspaces remotos.
 ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.workload:
-  - data-science
+- data-science
+ms.openlocfilehash: 385d58834aa96a3ad9e2002020dd1ce4fda3c87f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000017"
 ---
-
 # <a name="work-with-r-in-visual-studio"></a>Trabalhar com o R no Visual Studio
 
 O R é uma linguagem altamente extensível e um ambiente para gráficos e computação estatística. Ele é distribuído gratuitamente sob a Licença Pública Geral GNU, dispõe de suporte à comunidade forte e é conhecido por sua capacidade de gerar plotagens de qualidade de publicação incluindo fórmulas e símbolos matemáticos. Você pode saber mais sobre o R em [r-project.org](https://www.r-project.org/about.html) e [Uma introdução ao R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html).

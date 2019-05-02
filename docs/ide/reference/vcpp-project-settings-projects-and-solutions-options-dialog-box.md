@@ -18,21 +18,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1f35f9dfddeb905277084de9f20d46daf43d69f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789311"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e configurações de projeto relacionadas ao log de build e tipos de arquivo de suporte.
 
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo
 
-1.  No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas**, clique em **Opções**.
 
-2.  Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.
+2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.
 
 ## <a name="build-logging"></a>Log de build
  **Sim**
@@ -93,5 +93,5 @@ Não usar dados armazenados em cache do projeto. Analisar os arquivos de projeto
 
 ## <a name="see-also"></a>Consulte também
 
-- [Compilando programas do C/C++](/cpp/build/building-c-cpp-programs)
+- [Compilando programas do C/C++](/cpp/build/projects-and-build-systems-cpp)
 - [Referência de build C/C++](/cpp/build/reference/c-cpp-building-reference)

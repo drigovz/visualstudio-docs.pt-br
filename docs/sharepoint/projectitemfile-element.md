@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 76da5221d8f5bbdeb40f22559c6fabba727986b4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 57c491c79030eea1a01024235c01aec425d5994c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562356"
 ---
 # <a name="projectitemfile-element"></a>Elemento ProjectItemFile
   Representa um arquivo do SharePoint, como o arquivo de elemento de recurso, para incluir com o item de projeto quando ele é implantado no SharePoint.
@@ -60,7 +60,7 @@ ms.locfileid: "56645349"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|
 |**Pode estar vazio**|Não|

@@ -1,14 +1,9 @@
 ---
 title: 'CA2117: Os tipos APTCA só devem estender tipos base APTCA | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2117
 - AptcaTypesShouldOnlyExtendAptcaBaseTypes
@@ -20,14 +15,14 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 4b069674827ab266b4a4b7a99f81e039d487f6da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49922636"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927479"
 ---
-# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: os tipos APTCA só devem estender tipos base APTCA
+# <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117: Tipos APTCA devem estender somente tipos base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -41,7 +36,7 @@ ms.locfileid: "49922636"
  Um tipo público ou protegido em um assembly com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo herda de um tipo declarado em um assembly que não tem o atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Por padrão, os tipos de públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para confiança total. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a exigência de herança. Isso torna expostos tipos declarados no assembly herdáveis por tipos que não têm confiança total.
+ Por padrão, os tipos de públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de herança](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para confiança total. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a exigência de herança. Isso torna expostos tipos declarados no assembly herdáveis por tipos que não têm confiança total.
 
  Quando o atributo APTCA estiver presente em um assembly totalmente confiável e um tipo no assembly for herdado de um tipo que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois tipos `T1` e `T2` atendem às condições a seguir, chamadores mal-intencionados podem usar o tipo `T1` para ignorar a exigência de herança de confiança total implícito que protege `T2`:
 
@@ -86,11 +81,7 @@ ms.locfileid: "49922636"
  **De teste: Campina ensolarada**
 **cumprir à Campina ensolarada 2/22/2003 12:00:00 AM!**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2116: os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
+ [CA2116: Os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Assemblies do .NET Framework pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/en-us/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de parcialmente confiável código](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas de herança](http://msdn.microsoft.com/en-us/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
-
-
-
-
+ [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Assemblies do .NET Framework pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de parcialmente confiável código](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas de herança](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

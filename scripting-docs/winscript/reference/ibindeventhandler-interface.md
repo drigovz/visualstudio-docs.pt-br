@@ -2,7 +2,6 @@
 title: Interface IBindEventHandler | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6bad504bf1fc417e185759b1def641d366c778c5
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 6c65a659f333de282f380b9b6a6e462b40ec6c4d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991324"
 ---
 # <a name="ibindeventhandler-interface"></a>Interface IBindEventHandler
 Permite que o chamador fornecer um objeto que manipula um manipulador de eventos especificado.  

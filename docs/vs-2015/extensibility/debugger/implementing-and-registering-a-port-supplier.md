@@ -1,27 +1,22 @@
 ---
 title: Implementar e registrar um fornecedor de porta | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], registering port suppliers
 - port suppliers, registering
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3844d6beca76781f741bfbe0c6bff71923075d36
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 377aa88df71fd0d3c42745fe2d3ce3b648191aa4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430255"
 ---
 # <a name="implementing-and-registering-a-port-supplier"></a>Implementando e registrando um fornecedor de porta
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +57,7 @@ RemoveMetric(metrictypePortSupplier,
 ```  
   
 > [!NOTE]
->  O [auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` e `RemoveMetric` são definidos no dbgmetric.h e compilados em ad2de.lib de funções estáticas. O `metrictypePortSupplier`, `metricCLSID`, e `metricName` auxiliares também são definidos no dbgmetric.h.  
+> O [auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) `SetMetric` e `RemoveMetric` são definidos no dbgmetric.h e compilados em ad2de.lib de funções estáticas. O `metrictypePortSupplier`, `metricCLSID`, e `metricName` auxiliares também são definidos no dbgmetric.h.  
   
  Um fornecedor de porta pode fornecer seu nome e GUID, por meio dos métodos [GetPortSupplierName](../../extensibility/debugger/reference/idebugportsupplier2-getportsuppliername.md) e [GetPortSupplierId](../../extensibility/debugger/reference/idebugportsupplier2-getportsupplierid.md), respectivamente.  
   
@@ -70,4 +65,3 @@ RemoveMetric(metrictypePortSupplier,
  [Implementando um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)   
  [Auxiliares do SDK para depuração](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)   
  [Fornecedores de porta](../../extensibility/debugger/port-suppliers.md)
-

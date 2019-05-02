@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99da4946ecd1e08df3f9d2bf215c5ffad6347b1d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 17c77e0c6f38037aa71f0d48b94b052d4cac3c7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850155"
 ---
-# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erro: não é possível acessar a interface de depuração do SQL Server
+# <a name="error-unable-to-access-the-sql-server-debugging-interface"></a>Erro: Não é possível acessar a interface de depuração do SQL Server
 Essa mensagem ocorre quando você tenta depurar o SQL que em um computador onde a depuração do SQL não está habilitada.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
--   Ver [Configurando a depuração SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
+- Ver [Configurando a depuração SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100)).
 
 ## <a name="see-also"></a>Consulte também
 - [Depuração de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/zefbf0t6(v=vs.100))

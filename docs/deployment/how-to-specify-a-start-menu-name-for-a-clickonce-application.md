@@ -1,5 +1,5 @@
 ---
-title: 'Como: especificar um nome no Menu Iniciar para um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: Especifique um nome no Menu Iniciar para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ab55674cd1de54881eb46b47997a943678cbacd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ef1675480182796e1fe8bbe29baa5ed6a9d5f63
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898796"
 ---
-# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Como especificar um nome no menu Iniciar para um aplicativo ClickOnce
+# <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Como: Especificar um nome no menu Iniciar para um aplicativo ClickOnce
 Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é instalado para uso online e offline, uma entrada é adicionada para o **começar** menu e o **adicionar ou remover programas** lista. Por padrão, o nome de exibição é o mesmo que o nome do assembly do aplicativo, mas você pode alterar o nome de exibição, definindo **nome do produto** na **opções de publicação** caixa de diálogo.
 
  **Nome do produto** será exibida na *Publish. htm* página; para um aplicativo offline instalado, ele será o nome da entrada no **iniciar** menu e ele também será o nome que aparece no **Adicionar ou remover programas**.
@@ -36,18 +36,18 @@ Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] apli
 
 ### <a name="to-specify-a-start-menu-name"></a>Para especificar um nome no menu Iniciar
 
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2.  Clique o **publicar** guia.
+2. Clique o **publicar** guia.
 
-3.  Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.
+3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.
 
-4.  Clique em **descrição**.
+4. Clique em **descrição**.
 
-5.  No **opções de publicação** caixa de diálogo, digite o nome a ser exibido no **nome do produto**.
+5. No **opções de publicação** caixa de diálogo, digite o nome a ser exibido no **nome do produto**.
 
-6.  Opcionalmente, você pode inserir um nome de editor no **nome do publicador**.
+6. Opcionalmente, você pode inserir um nome de editor no **nome do publicador**.
 
 ## <a name="see-also"></a>Consulte também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)
-- [Como publicar um aplicativo ClickOnce usando o Assistente de Publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bbed7664232f1c508c71534f447b67dc837f55e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900352"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.
@@ -122,12 +122,11 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 
  `dependentAssembly` tem os seguintes atributos.
 
-
 | Atributo | Descrição |
 |-----------------------| - |
 | `dependencyType` | Necessário. Especifica o tipo de dependência. Os valores válidos são `preprequisite` e `install`. Uma `install` assembly é instalado como parte do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Um `prerequisite` assembly deve estar presente no cache de assembly global (GAC) antes do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode instalar o aplicativo. |
 | `allowDelayedBinding` | Necessário. Especifica se o assembly pode ser carregado por meio de programação em tempo de execução. |
-| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, consulte [Walkthrough: Downloading Assemblies on Demand with the ClickOnce Deployment API Using the Designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md) (Instruções passo a passo: baixando assemblies sob demanda com a API de implantação do ClickOnce usando o designer).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versões posteriores. |
+| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, confira [Passo a passo: Como baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versões posteriores. |
 | `codeBase` | Necessário quando o `dependencyType` atributo é definido como `install`. O caminho para o assembly dependente. Talvez um caminho absoluto ou um caminho relativo ao código do manifesto base. Esse caminho deve ser um URI válido para o manifesto do assembly que seja válido. |
 | `size` | Necessário quando o `dependencyType` atributo é definido como `install`. O tamanho do assembly dependente, em bytes. |
 
@@ -153,14 +152,12 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 ### <a name="dsigtransform"></a>dsig:Transform
  O `dsig:Transform` elemento é um filho necessário do `dsig:Transforms` elemento. O `dsig:Transform` elemento tem os seguintes atributos.
 
-
 | Atributo | Descrição |
 |-------------| - |
 | `Algorithm` | O algoritmo usado para calcular o resumo para este arquivo. Atualmente, o único valor usado pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ### <a name="dsigdigestmethod"></a>dsig:DigestMethod
  O `dsig:DigestMethod` elemento é um filho necessário do `hash` elemento. O `dsig:DigestMethod` elemento tem os seguintes atributos.
-
 
 | Atributo | Descrição |
 |-------------| - |

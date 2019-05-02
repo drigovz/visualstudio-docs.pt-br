@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1173b55a3e22d7a2fec9ecdb0440765beb970e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431327"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Como: Gerenciar vários threads em código gerenciado
 Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assíncronos ou tem operações executadas em threads diferentes do thread de interface de usuário do Visual Studio, você deve seguir as diretrizes abaixo. Você pode manter o thread de interface do usuário responsiva porque ele não precisa aguardar o trabalho em outro thread para concluir. Você pode tornar seu código mais eficiente, porque você não tem threads extras que ocupam espaço na pilha, e você pode torná-lo mais confiável e fácil de depurar porque você evita deadlocks e travamentos.
@@ -21,11 +21,11 @@ Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assí
  Em geral, você pode alternar do thread de interface do usuário para um thread diferente, ou vice-versa. Quando o método retorna, o thread atual é o thread do qual ele foi originalmente chamado.
 
 > [!IMPORTANT]
->  As diretrizes a seguir usam as APIs na <xref:Microsoft.VisualStudio.Threading> namespace, em particular, o <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. As APIs neste namespace são novas no [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Você pode obter uma instância de um <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> do <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propriedade `ThreadHelper.JoinableTaskFactory`.
+> As diretrizes a seguir usam as APIs na <xref:Microsoft.VisualStudio.Threading> namespace, em particular, o <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> classe. As APIs neste namespace são novas no [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)]. Você pode obter uma instância de um <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory> do <xref:Microsoft.VisualStudio.Shell.ThreadHelper> propriedade `ThreadHelper.JoinableTaskFactory`.
 
 ## <a name="switch-from-the-ui-thread-to-a-background-thread"></a>Alternar do thread de interface do usuário para um thread em segundo plano
 
-1.  Se você estiver usando o thread de interface do usuário e você deseja fazer o trabalho assíncrono em um thread em segundo plano, use `Task.Run()`:
+1. Se você estiver usando o thread de interface do usuário e você deseja fazer o trabalho assíncrono em um thread em segundo plano, use `Task.Run()`:
 
     ```csharp
     await Task.Run(async delegate{
@@ -35,7 +35,7 @@ Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assí
 
     ```
 
-2.  Se você estiver usando o thread de interface do usuário e você deseja bloquear sincronicamente enquanto você estiver executando o trabalho em um thread em segundo plano, use o <xref:System.Threading.Tasks.TaskScheduler> propriedade `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
+2. Se você estiver usando o thread de interface do usuário e você deseja bloquear sincronicamente enquanto você estiver executando o trabalho em um thread em segundo plano, use o <xref:System.Threading.Tasks.TaskScheduler> propriedade `TaskScheduler.Default` dentro de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:
 
     ```csharp
     // using Microsoft.VisualStudio.Threading;
@@ -49,7 +49,7 @@ Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assí
 
 ## <a name="switch-from-a-background-thread-to-the-ui-thread"></a>Alternar de um thread em segundo plano para o thread de interface do usuário
 
-1.  Se você estiver em um thread em segundo plano e você deseja fazer algo no thread da interface do usuário, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
+1. Se você estiver em um thread em segundo plano e você deseja fazer algo no thread da interface do usuário, use <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:
 
     ```csharp
     // Switch to main thread

@@ -1,8 +1,7 @@
 ---
-title: 'Idebugdocumenthelper:: Adddeferredtext | Microsoft Docs'
+title: IDebugDocumentHelper::AddDeferredText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba6f945e6c7fa4df83a5e301d73b3fc0bb9da92b
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433935"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Notifica o auxiliar que o texto especificado está disponível, mas ele não fornece os caracteres.  
@@ -58,10 +57,10 @@ HRESULT AddDeferredText(
  Supõe-se que uma única chamada para `IDebugDocumentText::GetText` pode obter caracteres de várias chamadas para `AddDeferredText`. Classes auxiliares também podem solicitar mais de uma vez para o mesmo intervalo de caracteres adiadas.  
   
 > [!NOTE]
->  Chamadas para `AddDeferredText` não devem ser misturadas a chamadas para `AddUnicodeText` ou `AddDBCSText`. Se isso ocorrer, `E_FAIL` será retornado.  
+> Chamadas para `AddDeferredText` não devem ser misturadas a chamadas para `AddUnicodeText` ou `AddDBCSText`. Se isso ocorrer, `E_FAIL` será retornado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   
- [Idebugdocumenthelper:: Addunicodetext](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
- [Idebugdocumenthelper:: Adddbcstext](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
+ [IDebugDocumentHelper::AddUnicodeText](../../winscript/reference/idebugdocumenthelper-addunicodetext.md)   
+ [IDebugDocumentHelper::AddDBCSText](../../winscript/reference/idebugdocumenthelper-adddbcstext.md)   
  [IDebugDocumentText::GetText](../../winscript/reference/idebugdocumenttext-gettext.md)

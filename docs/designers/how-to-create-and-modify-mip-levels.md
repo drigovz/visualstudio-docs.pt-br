@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee24cd3dac57f3daca340eabacdbf05f20d35156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408610"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Como: Criar e modificar os níveis de MIP
 Este documento demonstra como usar o **Editor de Imagens** para gerar e modificar *níveis de MIP* para um nível de detalhe (LoD) de espaço de textura.
@@ -23,9 +23,9 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 
 #### <a name="to-generate-mip-levels"></a>Para gerar os níveis de MIP
 
-1.  Comece com uma textura básica, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
+1. Comece com uma textura básica, conforme descrito em [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md). Para obter melhores resultados, especifique uma textura com largura e altura que sejam uma potência de dois em tamanho, por exemplo, 256, 512, 1024 e assim por diante.
 
-2.  Gere os níveis de MIP. Na barra de ferramentas **Modo do Editor de Imagens**, escolha **Avançado** > **Ferramentas** > **Gerar Mips**.
+2. Gere os níveis de MIP. Na barra de ferramentas **Modo do Editor de Imagens**, escolha **Avançado** > **Ferramentas** > **Gerar Mips**.
 
      Observe que os botões **Ir Para o Próximo Nível de Mip** e **Ir Para o Nível de Mip Anterior** aparecem agora na barra de ferramentas **Modo do Editor de Imagens**. Se a janela **Propriedades** for exibida, observe também que as propriedades somente leitura **Nível de Mip** e **Contagem de Nível de Mip** agora aparecem nas propriedades da imagem.
 
@@ -34,12 +34,12 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 
 #### <a name="to-modify-an-individual-mip-level"></a>Para modificar um nível de MIP individual
 
-1.  Selecione o nível de MIP que você deseja modificar. Na barra de ferramentas **Modo do Editor de Imagens**, use os botões **Ir Para o Próximo Nível de MIP** e **Ir Para o Nível de MIP Anterior** para mover-se entre os níveis de MIP.
+1. Selecione o nível de MIP que você deseja modificar. Na barra de ferramentas **Modo do Editor de Imagens**, use os botões **Ir Para o Próximo Nível de MIP** e **Ir Para o Nível de MIP Anterior** para mover-se entre os níveis de MIP.
 
-2.  Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).
+2. Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).
 
 > [!NOTE]
->  Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
+> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).
 
 ## <a name="see-also"></a>Consulte também
 

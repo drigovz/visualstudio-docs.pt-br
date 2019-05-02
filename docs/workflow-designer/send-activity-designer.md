@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009123"
 ---
 # <a name="send-activity-designer"></a>Enviar o designer de atividades
 
@@ -36,7 +36,6 @@ Como alternativa, o **SendAndReceiveReply** designer de modelo na **Messaging** 
 ### <a name="the-send-activity-properties"></a>As propriedades de atividade de enviar
 
 A tabela a seguir mostra as propriedades de <xref:System.ServiceModel.Activities.Send> e descreve como elas são usadas no designer. Essas propriedades podem ser editadas na grade de propriedades ou na superfície do Designer de fluxo de trabalho.
-
 
 | Nome da Propriedade | Necessária | Uso |
 |-|----------|-|

@@ -1,14 +1,9 @@
 ---
-title: 'CA2233: As operações não devem estourar | Microsoft Docs'
-ms.custom: ''
+title: 'CA2233: Operações não devem estourar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - OperationsShouldNotOverflow
 - CA2233
@@ -20,14 +15,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5f6690f6577d936757ae3bbe8b725b4434b6bee1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054788"
 ---
-# <a name="ca2233-operations-should-not-overflow"></a>CA2233: as operações não devem estourar
+# <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -112,14 +107,11 @@ End Sub
 
  **Para ativar o verificado estouro/estouro negativo aritmético em c#**
 
-1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
+1. Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 
-2.  Selecione a guia **Compilar** e clique em **Avançado**.
+2. Selecione a guia **Compilar** e clique em **Avançado**.
 
-3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
+3. Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.OverflowException?displayProperty=fullName> [Operadores do c#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
-
-
-

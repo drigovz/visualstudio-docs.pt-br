@@ -1,12 +1,9 @@
 ---
 title: Depurando um modelo de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, troubleshooting
 - text templates, debugging
@@ -14,13 +11,13 @@ ms.assetid: 0877fdf2-20bf-42da-b3cc-4c5856b80821
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f299b89f7f59cbfc043bb77e6e56c3e5fac22d16
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 08e74dbb5fefcdaa0959690c7eb1633bca2a8bc6
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49298903"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58924633"
 ---
 # <a name="debugging-a-t4-text-template"></a>Depurando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +47,7 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
 |O assembly '{0}'para o processador de diretriz'{1}' não foi concedido o conjunto de permissões FullTrust. Somente os assemblies confiáveis podem fornecer processadores de diretriz. Esse processador de diretriz não será carregado.|Ocorre quando o sistema não concede permissões FullTrust a um assembly que contém um processador de diretriz. A mensagem fornece o nome do assembly e o nome do processador de diretriz.|Certifique-se de que você só usar assemblies confiáveis no computador local.|  
 |O caminho '{0}' deve ser local neste computador ou parte de uma zona confiável.|Ocorre quando uma diretiva ou diretiva de assembly faz referência a um arquivo que é não em seu computador local ou na região de sua rede confiável.|Certifique-se de que o diretório onde estão localizadas a diretiva ou diretivas de assembly está em sua zona confiável. Você pode adicionar um diretório de rede para sua zona confiável por meio do Internet Explorer.|  
 |Vários erros de sintaxe como "Inválido token ' catch'" ou "um namespace não pode conter diretamente membros"|Há muitas chaves de fechamento em seu código de modelo. O compilador confundi-lo com o código de geração de padrão.|Verifique o número de fechamento de chaves e colchetes dentro de delimitadores de código.|  
-|Loops ou condicionais não compilado ou executado corretamente. Por exemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Esse código sempre gera o valor de i. Somente "número é:" é condicional.|No c#, sempre use chaves para cercar blocos de texto que são inseridos em instruções de controle.|Adicionar chaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
+|Loops ou condicionais não compilado ou executado corretamente. Por exemplo: `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Esse código sempre gera o valor de i. Somente "número é:" é condicional.|No C#, sempre use chaves para cercar blocos de texto que são inseridos em instruções de controle.|Adicionar chaves: `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|  
 |"Expressão muito complexa" ao processar um modelo de tempo de design ou compilar um modelo de tempo de execução (pré-processado).<br /><br /> [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para de funcionar durante a tentativa de inspecionar o código gerado por um modelo de tempo de execução.|Bloco de texto é muito longo. T4 converte os blocos de texto em uma expressão de concatenação de cadeia de caracteres, com uma cadeia de caracteres literal para cada linha do modelo. Blocos de texto muito longas podem ultrapasse os limites de tamanho do compilador.|Divida o bloco de texto longo com um bloco de expressão, como:<br /><br /> `<#= "" #>`|  
   
 ## <a name="warning-descriptions-and-fixes"></a>Correções e descrições de aviso  
@@ -84,6 +81,3 @@ Você pode definir pontos de interrupção em modelos de texto. Para depurar um 
 |Ocorreu uma exceção durante o processamento de uma diretiva chamada '{0}'.|Ocorre quando um processador de diretriz lança uma exceção quando o processamento de uma diretiva.|Certifique-se de que os parâmetros para o processador de diretriz estão corretos.|  
 |O host lançou uma exceção ao tentar resolver a referência de assembly '{0}'.|Ocorre quando o host gera uma exceção ao tentar resolver uma referência de assembly. A mensagem fornece o assembly de referência de cadeia de caracteres.|Assembly referências provenientes \<@# assembly #> diretivas e de processadores de diretriz. Certifique-se de que o parâmetro 'name' fornecido no parâmetro assembly está correto.|  
 |Tente especificar sem suporte {1} valor '{0}' para a diretiva {2}|Ocorre pelo RequiresProvidesDirectiveProcessor (todos os nossos processadores de diretriz gerados derivam dele), quando você fornece não suportado requer ou fornece um argumento.|Certifique-se de que os nomes em name = 'value' pares fornecidos na requer e fornece parâmetros estão corretos.|
-
-
-

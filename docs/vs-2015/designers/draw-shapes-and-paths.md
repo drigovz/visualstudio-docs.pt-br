@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eae8f49efbff2fd2219d0180db3a542f553a8027
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c30b0a190d2a2abfed56004e167f6ee5ef5ecf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046067"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ No Designer XAML, uma *forma* é exatamente o que você espera. Por exemplo: um 
   
  **Neste tópico:**  
   
--   [Desenhar uma forma](#Shape)  
+- [Desenhar uma forma](#Shape)  
   
--   [Desenhar um caminho](#Path)  
+- [Desenhar um caminho](#Path)  
   
--   [Converter uma forma em um caminho](#Convert)  
+- [Converter uma forma em um caminho](#Convert)  
   
--   [Combinar caminhos](#Combine)  
+- [Combinar caminhos](#Combine)  
   
--   [Criar um caminho composto](#Compound)  
+- [Criar um caminho composto](#Compound)  
   
--   [Criar um caminho de recorte](#Clipping)  
+- [Criar um caminho de recorte](#Clipping)  
   
-##  <a name="Shape"></a> Desenhar uma forma  
+## <a name="Shape"></a> Desenhar uma forma  
  É possível encontrar formas no painel **Ativos**.  
   
  ![Categoria Formas no painel Ativos](../designers/media/b4-shapes-assetspanel.png "b4_Shapes_AssetsPanel")  
@@ -46,7 +46,7 @@ No Designer XAML, uma *forma* é exatamente o que você espera. Por exemplo: um 
   
  ![](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png "84261e83-3091-4490-ab58-4218b188439e")  
   
-##  <a name="Path"></a> Desenhar um caminho  
+## <a name="Path"></a> Desenhar um caminho  
  Um caminho é uma série de linhas e curvas conectadas. Use um caminho para criar formas interessantes que não estão disponíveis no painel **Ativos**.  
   
  É possível desenhar um caminho usando uma linha, caneta ou lápis. Essas ferramentas podem ser encontradas no painel **Ferramentas**.  
@@ -96,12 +96,12 @@ No Designer XAML, uma *forma* é exatamente o que você espera. Por exemplo: um 
   
  Use a ferramenta **Seleção** ![](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png "2ff91340-477e-4efa-a0f7-af20851e4daa") para selecionar o caminho. Use a ferramenta **Caneta** ![](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png "894f8612-e0ed-4e00-84cf-a9bc8f38fc54") para clicar em qualquer local do caminho em que você deseja adicionar o ponto.  
   
-##  <a name="Convert"></a> Converter uma forma em um caminho  
+## <a name="Convert"></a> Converter uma forma em um caminho  
  Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho.  
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [trabalhando com caminhos: Converter uma forma em um demarcador](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).  
   
-##  <a name="Combine"></a> Combinar caminhos  
+## <a name="Combine"></a> Combinar caminhos  
  É possível combinar caminhos e formas em um único caminho.  
   
  ![](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png "2df17a5d-a338-4ef4-96c5-dae51cc1ca8a")  
@@ -114,7 +114,7 @@ No Designer XAML, uma *forma* é exatamente o que você espera. Por exemplo: um 
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [trabalhando com caminhos: Combinar demarcadores](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).  
   
-##  <a name="Compound"></a> Criar um caminho composto  
+## <a name="Compound"></a> Criar um caminho composto  
  Quando você cria um caminho composto, todas as partes de interseção dos caminhos são subtraídas do resultado e o caminho resultante assume as propriedades visuais do caminho mais baixo.  
   
  É possível separar um caminho composto a qualquer momento após sua criação.  
@@ -123,7 +123,7 @@ No Designer XAML, uma *forma* é exatamente o que você espera. Por exemplo: um 
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [trabalhando com caminhos: Criar um demarcador composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).  
   
-##  <a name="Clipping"></a> Criar um caminho de recorte  
+## <a name="Clipping"></a> Criar um caminho de recorte  
  Um caminho de recorte é um caminho ou uma forma que é aplicada a outro objeto, o que oculta as partes do objeto mascarado que fica fora do caminho de recorte.  
   
  ![](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png "22471e98-a841-4f39-a3ef-36090cf5a625")  

@@ -8,18 +8,46 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1bac4ba3e929da9ad6f22666c6a6b3f71b288c0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1d2c20f25b005e738769d1c8663387f0a427e5dd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840880"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
 Nesta introdução de 5 a 10 minutos ao IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio, faremos um tour em algumas janelas, menus e em outros recursos de interface do usuário.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+## <a name="start-window"></a>Janela de início
+
+A primeira coisa que você verá depois de iniciar o Visual Studio é a janela de início. A janela de início foi projetada para ajudar você a "acessar o código" mais rapidamente. Ela tem opções para fechar o código ou fazer check-out dele, abrir um projeto ou uma solução existente, criar um projeto ou simplesmente abrir uma pasta que contenha alguns arquivos de código.
+
+[![](media/vs-2019/start-window.png "A janela de início no Visual Studio 2019")](media/vs-2019/start-window.png)
+
+Se essa for a primeira vez que você estiver usando o Visual Studio, sua lista de projetos recentes estará vazia.
+
+Se você trabalhar com bases de código não baseadas no MSBuild, você usará a opção **Abrir uma pasta local** para abrir o código no Visual Studio. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](develop-javascript-code-without-solutions-projects.md). Caso contrário, você poderá criar um projeto ou clonar um projeto de um provedor de origem como o GitHub ou o Azure DevOps.
+
+A opção **Continuar sem código** apenas abre o ambiente de desenvolvimento do Visual Studio sem nenhum projeto ou código específico carregado. Escolha essa opção para ingressar em uma sessão do [Live Share](/visualstudio/liveshare/) ou anexar a um processo para depuração. Pressione também **Esc** para fechar a janela de início e abrir o IDE.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 ## <a name="start-page"></a>Start Page
 
@@ -31,9 +59,27 @@ Se você fechar a **Página Inicial** e desejar vê-la novamente, será possíve
 
 ![Menu Arquivo no Visual Studio](media/quickstart-IDE-file-menu-large.png)
 
+::: moniker-end
+
 ## <a name="create-a-project"></a>Criar um projeto
 
 Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
+
+::: moniker range=">=vs-2019"
+
+1. Na janela de início, selecione **Criar um projeto** e, em seguida, na caixa de pesquisa, digite **javascript** para filtrar da lista de tipos de projeto para aqueles que contenham "javascript" no nome ou no tipo de linguagem.
+
+   O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. (Como alternativa, se você for um desenvolvedor do TypeScript, fique à vontade criar um projeto nessa linguagem. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
+
+   ![Pesquisar modelos de projeto na janela de início do Visual Studio](media/vs-2019/create-new-project.png)
+
+1. Escolha um modelo de projeto **Aplicativo Web do Node.js em Branco** e clique em **Avançar**.
+
+1. Na caixa de diálogo **Configurar o novo projeto** exibida, aceite o nome de projeto padrão e escolha **Criar**.
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 1. Na **Página Inicial**, na caixa de pesquisa de **Novo projeto**, digite **javascript** para filtrar da lista de tipos de projeto aqueles que contêm "javascript" no nome ou tipo de linguagem.
 
@@ -42,6 +88,7 @@ Para continuar explorando os recursos do Visual Studio, vamos criar um projeto.
    O Visual Studio fornece vários tipos de modelos de projeto que ajudam você a começar a codificar rapidamente. Escolha um modelo de projeto de **Aplicativo Web do Node.js em branco**. (Como alternativa, se você for um desenvolvedor do TypeScript, fique à vontade criar um projeto nessa linguagem. A interface do usuário que veremos é semelhante em todas as linguagens de programação.)
 
 1. Na caixa de diálogo **Novo Projeto** exibida, aceite o nome de projeto padrão e escolha **OK**.
+::: moniker-end
 
    O projeto é criado e um arquivo chamado *server.cs* é aberto na janela **Editor**. O **Editor** mostra o conteúdo dos arquivos e é onde você fará a maior parte do trabalho de codificação no Visual Studio.
 
@@ -75,13 +122,13 @@ Vamos criar o projeto para ver uma saída de build. No menu **Compilação**, es
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Início Rápido
+## <a name="search-box"></a>Caixa de pesquisa
 
-A caixa **Início Rápido** é uma maneira rápida e fácil de fazer praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
+A caixa pesquisa é uma maneira rápida e fácil de fazer praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
 
-1. Digite **detalhamento** na caixa **Início Rápido**. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
+1. Digite **detalhamento** na caixa de pesquisa. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
 
-   ![Caixa Início Rápido no Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Caixa de pesquisa no Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
 
@@ -95,7 +142,7 @@ A caixa **Início Rápido** é uma maneira rápida e fácil de fazer praticament
 
 ## <a name="send-feedback-menu"></a>Menu Enviar Comentários
 
-Caso encontre problemas enquanto estiver usando o Visual Studio ou tenha sugestões de como melhorar o produto, use o menu **Enviar Comentários** na parte superior da janela do Visual Studio, ao lado da caixa **Início Rápido**.
+Caso encontre problemas enquanto estiver usando o Visual Studio ou se tiver sugestões de como melhorar o produto, use o menu **Enviar Comentários** na parte superior da janela do Visual Studio.
 
 ![Menu Enviar Comentários no Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

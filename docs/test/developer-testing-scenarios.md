@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 216cee6181122997ef8cc5937b9b1af76ba71b06
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a1cc43bfeb66792d2d8ff5a736d957740f62c5ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783701"
 ---
 # <a name="developer-testing-tools-scenarios-and-capabilities"></a>Recursos, cenários e ferramentas de teste do desenvolvedor
 
@@ -45,7 +45,6 @@ O Visual Studio fornece todas as ferramentas necessárias seja para o que há de
 * [Usar a automação de interface do usuário para testar seu código](use-ui-automation-to-test-your-code.md)
 * [Introdução à criação, à edição, e à manutenção do teste de IU codificado](walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 * [Testar aplicativos UWP com testes de IU codificados](test-uwp-app-with-coded-ui-test.md)
-* [Testar aplicativos do SharePoint com testes de IU codificados](testing-sharepoint-2010-applications-with-coded-ui-tests.md)
 * [Introdução aos testes de IU codificados com o Visual Studio Enterprise (laboratório)](http://download.microsoft.com/download/6/2/B/62B60ECE-B9DC-4E8A-A97C-EA261BFB935E/Docs/Introduction%20to%20Coded%20UI%20Tests%20with%20Visual%20Studio%20Enterprise%202015.docx)
 
 ## <a name="effective-unit-testing-with-visual-studio-code-coverage"></a>Teste de unidade efetivo com a cobertura de código do Visual Studio

@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434606"
 ---
 # <a name="sccgetprojpath-function"></a>Função SccGetProjPath
 Essa função solicita ao usuário para um caminho de projeto, que é uma cadeia de caracteres que é significativa apenas para o plug-in de controle do código-fonte. Ele é chamado quando o usuário é:
 
--   Criar um novo projeto
+- Criar um novo projeto
 
--   Adicionar um projeto existente ao controle de versão
+- Adicionar um projeto existente ao controle de versão
 
--   Tentativa de encontrar um projeto existente de controle de versão
+- Tentativa de encontrar um projeto existente de controle de versão
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Para `lpUser`, o IDE pode passar um nome de usuário ou pode simplesmente passar um ponteiro para uma cadeia de caracteres vazia. Se houver um nome de usuário, o plug-in de controle do código-fonte deve usá-lo como padrão. No entanto, se nenhum nome foi passado ou se o logon falhou com o nome fornecido, o plug-in deve solicitar ao usuário para um logon e passe o nome de volta no `lpUser` quando ele recebe um logon válido. Como o plug-in pode alterar essa cadeia de caracteres, o IDE sempre alocará um buffer de tamanho (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  A primeira ação que executa o IDE pode ser uma chamada para o `SccOpenProject` função ou o `SccGetProjPath` função. Portanto, ambos têm um idênticos `lpUser` parâmetro, que permite que o controle do código-fonte plug-in para conectar o usuário em qualquer momento. Mesmo se o retorno da função indica uma falha, o plug-in deve preencher essa cadeia de caracteres com um nome de logon válido.
+> A primeira ação que executa o IDE pode ser uma chamada para o `SccOpenProject` função ou o `SccGetProjPath` função. Portanto, ambos têm um idênticos `lpUser` parâmetro, que permite que o controle do código-fonte plug-in para conectar o usuário em qualquer momento. Mesmo se o retorno da função indica uma falha, o plug-in deve preencher essa cadeia de caracteres com um nome de logon válido.
 
  `lpLocalPath` é o diretório em que o usuário mantém o projeto. Pode ser uma cadeia de caracteres vazia. Se não houver nenhum diretório atualmente definido (como no caso de um usuário de tentar baixar um projeto do sistema de controle de origem) e se `bAllowChangePath` é `TRUE`, o plug-in de controle do código-fonte pode solicitar a entrada do usuário ou usar algum outro método para colocar seu possui a cadeia de caracteres em `lpLocalPath`. Se `bAllowChangePath` é `FALSE`, o plug-in não deve alterar a cadeia de caracteres, porque o usuário já estiver trabalhando no diretório especificado.
 

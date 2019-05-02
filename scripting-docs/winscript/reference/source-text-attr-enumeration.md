@@ -2,7 +2,6 @@
 title: Enumeração SOURCE_TEXT_ATTR | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: dc5e7a7bb6c91bd852a8fd2024b708166c085209
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54349771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840116"
 ---
 # <a name="sourcetextattr-enumeration"></a>Enumeração SOURCE_TEXT_ATTR
 Descrevem os atributos de um único caractere de texto de origem.  
@@ -45,11 +44,11 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
 ## <a name="remarks"></a>Comentários  
  Normalmente, o `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, e `IActiveScriptDebug::GetScriptTextAttributes` métodos retornam um atributo de texto por caractere, a menos que:  
   
--   O sinalizador GETATTRTYPE_DEPSCAN for definido, caso em que o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
+- O sinalizador GETATTRTYPE_DEPSCAN for definido, caso em que o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
   
--   O sinalizador GETATTRFLAG_THIS for definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
+- O sinalizador GETATTRFLAG_THIS for definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
   
--   O sinalizador GETATTRFLAG_HUMANTEXT está definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
+- O sinalizador GETATTRFLAG_HUMANTEXT está definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

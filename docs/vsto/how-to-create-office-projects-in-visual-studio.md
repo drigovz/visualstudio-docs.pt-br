@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 617ca350f318a8617b28d4bface3d09106b3b591
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e41b7714ce5f9a98e50092c1507457b848201773
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419609"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>Como: Criar projetos do Office no Visual Studio
   Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para criar o suplemento do VSTO e o nível de documento personalizações para aplicativos do Microsoft Office. Para obter mais informações sobre esses tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56614305"
     A caixa de diálogo **Novo Projeto** é exibida.
 
    > [!NOTE]
-   >  Projetos do Office direcionam o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] por padrão. Para obter mais informações, consulte [perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile).
+   > Projetos do Office direcionam o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] por padrão. Para obter mais informações, consulte [perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. No painel de modelos, sob o nó para o idioma que você deseja usar, expanda **Office/SharePoint**.
 
@@ -53,7 +53,7 @@ ms.locfileid: "56614305"
 4. Na lista de modelos de projeto, selecione um modelo de projeto do suplemento do VSTO. Para obter uma lista o modelos de projeto do suplemento do VSTO disponíveis, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado na caixa de combinação na parte superior da caixa de diálogo. Modelos de projeto do Office são visíveis para ambas as versões do .NET Framework.
+   > Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado na caixa de combinação na parte superior da caixa de diálogo. Modelos de projeto do Office são visíveis para ambas as versões do .NET Framework.
 
 5. No **nome** , digite um nome para o projeto. Por padrão, o nome do projeto também é usado como o nome da solução.
 
@@ -85,17 +85,18 @@ ms.locfileid: "56614305"
 
 7. Escolha o botão **OK**.
 
-    > [!NOTE]
-    >  Projetos de suplemento são sempre salvas quando eles são criados. Eles não podem ser criados como projetos temporários. Para obter mais informações sobre projetos temporários, consulte [projetos temporários](https://msdn.microsoft.com/9cf1944c-7045-44cc-8701-7b0eb4099f2b).
+   ::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Projetos de suplemento são sempre salvas quando eles são criados. Eles não podem ser criados como projetos temporários. Para obter mais informações sobre projetos temporários, consulte [projetos temporários](../ide/creating-solutions-and-projects.md#create-a-temporary-project).
+
+   ::: moniker-end
 
 ### <a name="to-create-a-document-level-customization-project"></a>Para criar um projeto de personalização de nível de documento
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, nos **arquivo** menu, escolha **New** > **projeto**.
 
     A caixa de diálogo **Novo Projeto** é exibida.
-
-   > [!NOTE]
-   >  Projetos do Office direcionam o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] por padrão.  Para obter mais informações, consulte [perfil de cliente do .NET Framework](/dotnet/framework/deployment/client-profile).
 
 2. No painel de modelos, sob o nó para o idioma que você deseja usar, expanda **Office/SharePoint**.
 
@@ -104,12 +105,12 @@ ms.locfileid: "56614305"
 4. Na lista de modelos de projeto, selecione um modelo de projeto de nível de documento. Para obter uma lista de modelos de projeto de nível de documento disponíveis, consulte [visão geral de modelos de projeto do Office](../vsto/office-project-templates-overview.md).
 
    > [!NOTE]
-   >  Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado na caixa de combinação na parte superior da caixa de diálogo. Modelos de projeto do Office são visíveis para ambas as versões do .NET Framework.
+   > Se os modelos de projeto não são visíveis quando você seleciona os **suplementos do Office** nó, verifique se **.NET Framework 4** ou posterior está selecionado.
 
 5. No **nome** , digite um nome para o projeto. Por padrão, esse nome também é usado para o documento. Se o seu IDE for definido para usar configurações de desenvolvimento do Visual c# ou configurações desenvolvimento gerais, insira também um local e o nome da solução.
 
    > [!NOTE]
-   >  Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem se ajustar as especificações de protocolo HTTP.
+   > Você não pode usar caracteres substitutos no caminho do local do projeto ou no nome do projeto. Além disso, se você planeja implantar a solução para uso offline, os caracteres no nome do projeto devem se ajustar as especificações de protocolo HTTP.
 
 6. Escolha o botão **OK**.
 
@@ -146,7 +147,7 @@ ms.locfileid: "56614305"
    - Sinal de porcentagem (%)
 
    > [!NOTE]
-   >  Se você usar um documento existente em um [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] do projeto, use somente os documentos que foram criados no ou convertidos para [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Da mesma forma, se você usar um documento existente em uma palavra do project 2010, use somente os documentos que foram criados no ou convertidos para Word 2010. Se você usar um documento que foi criado em uma versão anterior do Word, determinados recursos serão desabilitados no documento. Se você tentar escrever um código que usa esses recursos, você poderá encontrar erros em seu projeto. Para converter um documento, abra-o na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, sobre a **arquivo** guia na faixa de opções, escolha **Info** > **converter**.
+   > Se você usar um documento existente em um [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] do projeto, use somente os documentos que foram criados no ou convertidos para [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. Da mesma forma, se você usar um documento existente em uma palavra do project 2010, use somente os documentos que foram criados no ou convertidos para Word 2010. Se você usar um documento que foi criado em uma versão anterior do Word, determinados recursos serão desabilitados no documento. Se você tentar escrever um código que usa esses recursos, você poderá encontrar erros em seu projeto. Para converter um documento, abra-o na [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou Word 2010, sobre a **arquivo** guia na faixa de opções, escolha **Info** > **converter**.
 
 8. Escolha **Concluir**.
 

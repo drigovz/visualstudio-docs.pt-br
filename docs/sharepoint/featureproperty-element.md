@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bf3cbb84c32fdb3f5eba7ba8706c1035b1d9019
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 20d24192d8613a4f41d9cdfc04371fb9c9d02076
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967299"
 ---
 # <a name="featureproperty-element"></a>Elemento FeatureProperty
   Representa uma propriedade personalizada que está incluída com um recurso quando ele é implantado no SharePoint. Depois que um recurso é implantado, você pode acessar a propriedade em seu código.
@@ -55,7 +55,7 @@ ms.locfileid: "56633467"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|
 |**Pode estar vazio**|Não|

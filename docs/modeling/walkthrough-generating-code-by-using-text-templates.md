@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1fabf31a58203e2fb98dd4929907de4f8fff436
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 042d6b6c59489abcfbdcdd4dd10055ea4dedfff5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934333"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>Passo a passo: Gerar código usando modelos de texto
 
@@ -83,9 +83,9 @@ Neste projeto, um único arquivo de modelo é usado para gerar as classes que po
 
 Você pode aplicar essa técnica para qualquer projeto de código. Este passo a passo usa um projeto c#, e para fins de teste, usamos um aplicativo de console.
 
-1.  Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.
+1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.
 
-2.  Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**
+2. Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**
 
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Adicionar um arquivo XML de protótipo para o projeto
 
@@ -93,13 +93,13 @@ A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você d
 
 O arquivo deve ser parte do projeto para que o modelo possa lê-lo, mas ele não será compilado no aplicativo compilado.
 
-1.  Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add** e, em seguida, clique em **Novo Item**.
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add** e, em seguida, clique em **Novo Item**.
 
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **arquivo XML** do **modelos** painel.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **arquivo XML** do **modelos** painel.
 
-3.  Adicione seu conteúdo de exemplo para o arquivo.
+3. Adicione seu conteúdo de exemplo para o arquivo.
 
-4.  Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.
+4. Para este passo a passo, nomeie o arquivo `exampleXml.xml`. Defina o conteúdo do arquivo a ser o XML mostrado na seção anterior.
 
 ### <a name="add-a-test-code-file"></a>Adicionar um arquivo de código de teste
 
@@ -131,20 +131,20 @@ Um teste mais abrangente, foi possível verificar a saída dessa função de tes
 
 Adicione um arquivo de modelo de texto e a extensão de saída do conjunto *. CS*.
 
-1.  Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add**e, em seguida, clique em **Novo Item**.
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto, clique em **Add**e, em seguida, clique em **Novo Item**.
 
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.
 
     > [!NOTE]
     > Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.
 
-3.  No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.
+3. No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.
 
      Essa alteração permitirá que o código de modelo acessar os serviços do Visual Studio.
 
-4.  Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".
+4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".
 
-5.  Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:
+5. Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:
 
     ```
     <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -412,15 +412,15 @@ Para regenerar as classes, quando o arquivo XML de exemplo é alterado, clique e
 
 Este passo a passo demonstra várias técnicas e os benefícios da geração de código:
 
--   *Geração de código* é a criação de parte do código-fonte do aplicativo de um *modelo*. O modelo contém as informações em um formato adequado para o domínio do aplicativo e pode mudar ao longo do tempo de vida do aplicativo.
+- *Geração de código* é a criação de parte do código-fonte do aplicativo de um *modelo*. O modelo contém as informações em um formato adequado para o domínio do aplicativo e pode mudar ao longo do tempo de vida do aplicativo.
 
--   Tipagem forte é uma vantagem da geração de código. Enquanto o modelo representa as informações em um formato mais adequado para o usuário, o código gerado permite que outras partes do aplicativo para lidar com as informações usando um conjunto de tipos.
+- Tipagem forte é uma vantagem da geração de código. Enquanto o modelo representa as informações em um formato mais adequado para o usuário, o código gerado permite que outras partes do aplicativo para lidar com as informações usando um conjunto de tipos.
 
--   IntelliSense e o compilador ajudam você a criar código que adota o esquema do modelo, ao escrever novo código e quando o esquema é atualizado.
+- IntelliSense e o compilador ajudam você a criar código que adota o esquema do modelo, ao escrever novo código e quando o esquema é atualizado.
 
--   A adição de um único pouco complicadas, arquivo de modelo a um projeto pode fornecer esses benefícios.
+- A adição de um único pouco complicadas, arquivo de modelo a um projeto pode fornecer esses benefícios.
 
--   Um modelo de texto pode ser desenvolvido e testado rapidamente e de forma incremental.
+- Um modelo de texto pode ser desenvolvido e testado rapidamente e de forma incremental.
 
 Neste passo a passo, o código do programa, na verdade, é gerado de uma instância do modelo, um exemplo representativo dos arquivos XML que o aplicativo processará. Em uma abordagem mais formal, o esquema XML seria a entrada para o modelo, na forma de um arquivo. xsd ou uma definição de linguagem específica do domínio. Essa abordagem tornaria mais fácil para o modelo determinar características como a multiplicidade de uma relação.
 

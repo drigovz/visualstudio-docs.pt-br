@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441876"
 ---
 # <a name="debug-office-projects"></a>Depurar projetos do Office
   Você pode depurar projetos do Office usando o Microsoft mesmo [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas que você usa para outros [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] recursos do depurador, como a capacidade de inserir pontos de interrupção e exibir as variáveis na **Locals** janela, também estão disponíveis quando você depurar projetos do Office. Para obter mais informações sobre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] as ferramentas de depuração, consulte [depurar no Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Para simplificar a depuração, feche todas as instâncias do aplicativo do Office antes de compilar e depurá-lo.
+> Para simplificar a depuração, feche todas as instâncias do aplicativo do Office antes de compilar e depurá-lo.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 ## <a name="start-and-stop-the-debugger"></a>Iniciar e parar o depurador
  Você pode iniciar a depuração de um projeto do Office exatamente como você inicia a depuração de outro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos; por exemplo, você pode pressionar a **F5** chave. Quando você inicia a depuração de um projeto de suplemento do VSTO, um novo processo para o aplicativo do Office de destino é iniciado e o suplemento do VSTO é carregado.

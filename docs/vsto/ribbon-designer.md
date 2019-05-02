@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447002"
 ---
 # <a name="ribbon-designer"></a>Designer da faixa de opções
   O Designer de faixa de opções é uma tela de design visual. Use o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.
@@ -40,14 +40,14 @@ ms.locfileid: "54867254"
 
  Para abrir o Designer de faixa de opções, adicione uma **faixa de opções (Visual Designer)** item ao seu projeto. Em seguida, você pode usar as ferramentas de design para as seguintes tarefas:
 
--   [Criar o layout de faixa de opções](#DesigningRibbonLayout)
+- [Criar o layout de faixa de opções](#DesigningRibbonLayout)
 
--   [Manipular eventos e definir propriedades de controle](#HandleEventsSetProperties)
+- [Manipular eventos e definir propriedades de controle](#HandleEventsSetProperties)
 
--   [Adicionar controles ao modo de exibição Backstage](#CustomizingMicrosoftOfficeButton)
+- [Adicionar controles ao modo de exibição Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Há algumas tarefas que você não pode realizar usando o Designer de faixa de opções. Para obter mais informações sobre essas tarefas e como realizá-las, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
+> Há algumas tarefas que você não pode realizar usando o Designer de faixa de opções. Para obter mais informações sobre essas tarefas e como realizá-las, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Use o Designer de faixa de opções para personalizar a faixa de opções no Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 
@@ -64,7 +64,7 @@ ms.locfileid: "54867254"
 
   Se você já tiver um **faixa de opções (Visual Designer)** item de outro projeto, você pode reutilizá-lo em seu projeto atual usando o **Add Existing Item** caixa de diálogo.
 
-##  <a name="DesigningRibbonLayout"></a> Uma faixa de opções de design
+## <a name="DesigningRibbonLayout"></a> Uma faixa de opções de design
  Há três maneiras de abrir o Designer de faixa de opções:
 
 - Na **Gerenciador de soluções**, clique duas vezes no arquivo de código da faixa de opções.
@@ -98,7 +98,7 @@ ms.locfileid: "54867254"
 
    Você não pode arrastar controles de uma guia para outra na faixa de opções. Se você quiser mover um controle para outra guia, você deve usar o **Recortar** comando para remover o controle de uma guia e, em seguida, cole o controle em outra guia. Se você cortar o controle e colá-lo, o manipulador de eventos para de funcionar. Você pode reconectar o manipulador de eventos de **propriedades** janela. Para obter mais informações, consulte [janela de propriedades](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Adicionar guias personalizadas à faixa de opções
+### <a name="AddTabToRibbon"></a> Adicionar guias personalizadas à faixa de opções
  Há três maneiras de adicionar uma guia personalizada à faixa de opções:
 
 - Adicionar uma guia entre a **caixa de ferramentas**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867254"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Remover guias personalizadas da faixa de opções
  Há três maneiras de remover uma guia personalizada na faixa de opções:
 
--   O designer com o botão direito e, em seguida, clique em **remover a guia de faixa de opções**.
+- O designer com o botão direito e, em seguida, clique em **remover a guia de faixa de opções**.
 
--   No **comandos** painel da **propriedades** janela, clique em **remover a guia de faixa de opções**.
+- No **comandos** painel da **propriedades** janela, clique em **remover a guia de faixa de opções**.
 
--   Abra o **guia Editor de coleção**, selecione a guia e, em seguida, clique em **remover**.
+- Abra o **guia Editor de coleção**, selecione a guia e, em seguida, clique em **remover**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Alterar a posição de uma guia na faixa de opções
  Você pode alterar a ordem das guias personalizadas em uma faixa de opções. Você também pode posicionar guias personalizadas antes ou depois de uma guia interna na faixa de opções. Para obter mais informações, confira [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,10 +132,10 @@ ms.locfileid: "54867254"
 
  Para obter detalhes sobre como personalizar uma guia interna, consulte [como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Adicionar grupos a uma guia
+### <a name="AddGroupsToTab"></a> Adicionar grupos a uma guia
  Os grupos organizam logicamente os controles na faixa de opções. Adicione grupos às guias. Adicione todos os outros controles ao grupo.
 
-###  <a name="AddControlsToGroups"></a> Adicionar controles aos grupos
+### <a name="AddControlsToGroups"></a> Adicionar controles aos grupos
  Adicione um ou mais controles a um grupo. A tabela a seguir descreve cada controle.
 
 |Controle|Descrição|
@@ -154,7 +154,7 @@ ms.locfileid: "54867254"
 |**SplitButton**|Um botão com um menu anexado. Um botão de divisão pode conter qualquer um dos seguintes controles:<br /><br /> -Botão<br />-Caixa de seleção<br />-Galeria<br />-Menu<br />-Botão de divisão<br />-Botão de alternância<br />-Separador<br /><br /> Como o menu, o botão de divisão tem sua própria superfície de design. No entanto, ao contrário de um menu, só é possível atualizar os itens em um botão de divisão antes que a faixa de opções é carregada no aplicativo do Office. Para obter informações sobre como atualizar os itens em um botão de divisão, consulte [visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Um botão que aparece pressionado ou não pressionado.|
 
-##  <a name="HandleEventsSetProperties"></a> Tratar eventos e propriedades de configuração
+## <a name="HandleEventsSetProperties"></a> Tratar eventos e propriedades de configuração
  O Designer de faixa de opções permite que você defina as propriedades de controle em tempo de design usando o **propriedades** janela. Além disso, a faixa de opções expõe um modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução.
 
  Clique duas vezes em qualquer controle no designer para abrir um manipulador de eventos para o evento padrão do controle. Você pode criar manipuladores de eventos para todos os outros eventos de controle usando o **propriedades** janela.
@@ -163,7 +163,7 @@ ms.locfileid: "54867254"
 
  Para obter informações sobre a manipulação de eventos da faixa de opções e definindo as propriedades de controles da faixa de opções em tempo de execução, consulte [visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Personalizar o modo de exibição Backstage
+## <a name="CustomizingMicrosoftOfficeButton"></a> Personalizar o modo de exibição Backstage
  Você pode usar o Designer de faixa de opções para adicionar controles ao menu que é aberta quando você clica o **arquivo** guia. Esse menu é chamado de modo de exibição Backstage.
 
  Você não pode posicionar controles antes ou depois de controles internos usando o designer de faixa de opções. Um controle interno é um controle que já aparece no modo de exibição Backstage. Se você desejar posicionar controles antes ou depois de controles internos, você deve usar o XML da faixa de opções. Para obter mais informações sobre **da faixa de opções (XML)**, consulte [XML da faixa de opções](../vsto/ribbon-xml.md). Para obter mais informações sobre como personalizar o modo de exibição Backstage, consulte [Introdução ao modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizar o modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867254"
 
  Para obter informações sobre como adicionar controles à exibição do Backstage, consulte [como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Acessibilidade no Designer de faixa de opções
+## <a name="Accessibility"></a> Acessibilidade no Designer de faixa de opções
  Você pode usar atalhos de teclado para mover os controles no Designer de faixa de opções. Alguns atalhos de teclado se aplicam a todos os controles e alguns se aplicam somente a controles que têm menus.
 
  Os atalhos de teclado que se aplicam a todos os controles são mostrados na tabela a seguir.

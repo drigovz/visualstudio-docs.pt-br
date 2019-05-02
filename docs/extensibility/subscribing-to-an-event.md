@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d6f5259b44421d0a88fbfadae5930592e589c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 70b0be3caca70e7a0dbf6f113cb5658169011d7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432337"
 ---
 # <a name="subscribing-to-an-event"></a>Assinando um evento
 Este passo a passo explica como criar uma janela de ferramentas que responde a eventos em uma tabela de documento (RDT) em execução. Uma janela de ferramentas hospeda um controle de usuário que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> método conecta-se a interface para os eventos.
@@ -28,13 +28,13 @@ Este passo a passo explica como criar uma janela de ferramentas que responde a e
 
 #### <a name="to-create-an-extension-with-a-tool-window"></a>Para criar uma extensão com uma janela de ferramentas
 
-1.  Crie um projeto chamado **RDTExplorer** usando o modelo VSIX e adicionar um modelo de item da janela de ferramenta personalizada denominado **RDTExplorerWindow**.
+1. Crie um projeto chamado **RDTExplorer** usando o modelo VSIX e adicionar um modelo de item da janela de ferramenta personalizada denominado **RDTExplorerWindow**.
 
      Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 #### <a name="to-subscribe-to-rdt-events"></a>Para assinar eventos RDT
 
-1.  Abra o arquivo RDTExplorerWindowControl.xaml e exclua o botão chamado `button1`. Adicionar um <xref:System.Windows.Forms.ListBox> controlar e aceite o nome padrão. O elemento de grade deve ter esta aparência:
+1. Abra o arquivo RDTExplorerWindowControl.xaml e exclua o botão chamado `button1`. Adicionar um <xref:System.Windows.Forms.ListBox> controlar e aceite o nome padrão. O elemento de grade deve ter esta aparência:
 
     ```xml
     <Grid>
@@ -45,7 +45,7 @@ Este passo a passo explica como criar uma janela de ferramentas que responde a e
     </Grid>
     ```
 
-2.  Abra o arquivo de RDTExplorerWindow.cs na exibição de código. Adicione o seguinte usando instruções ao início do arquivo.
+2. Abra o arquivo de RDTExplorerWindow.cs na exibição de código. Adicione o seguinte usando instruções ao início do arquivo.
 
     ```csharp
     using Microsoft.VisualStudio;
@@ -53,24 +53,24 @@ Este passo a passo explica como criar uma janela de ferramentas que responde a e
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-3.  Modificar a `RDTExplorerWindow` classe isso que, além de derivar do <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe, ele implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.
+3. Modificar a `RDTExplorerWindow` classe isso que, além de derivar do <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe, ele implementa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents> interface.
 
     ```csharp
     public class RDTExplorerWindow : ToolWindowPane, IVsRunningDocTableEvents
     {. . .}
     ```
 
-4.  Implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
+4. Implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>.
 
-    -   Implemente a interface. Coloque o cursor no nome do IVsRunningDocTableEvents. Você deve ver uma lâmpada na margem esquerda. Clique na seta para baixo à direita da lâmpada e selecione **implementar interface**.
+    - Implemente a interface. Coloque o cursor no nome do IVsRunningDocTableEvents. Você deve ver uma lâmpada na margem esquerda. Clique na seta para baixo à direita da lâmpada e selecione **implementar interface**.
 
-5.  Em cada método na interface, substitua a linha `throw new NotImplementedException();` com este:
+5. Em cada método na interface, substitua a linha `throw new NotImplementedException();` com este:
 
     ```csharp
     return VSConstants.S_OK;
     ```
 
-6.  Adicione um campo de cookie para a classe RDTExplorerWindow.
+6. Adicione um campo de cookie para a classe RDTExplorerWindow.
 
     ```csharp
     private uint rdtCookie;
@@ -78,7 +78,7 @@ Este passo a passo explica como criar uma janela de ferramentas que responde a e
 
      Isso mantém o cookie que é retornado pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> método.
 
-7.  Substitua método de Initialize () do RDTExplorerWindow para registrar eventos RDT. Você sempre deve obter serviços no método Initialize () do ToolWindowPane, não no construtor.
+7. Substitua método de Initialize () do RDTExplorerWindow para registrar eventos RDT. Você sempre deve obter serviços no método Initialize () do ToolWindowPane, não no construtor.
 
     ```csharp
     protected override void Initialize()
@@ -91,7 +91,7 @@ Este passo a passo explica como criar uma janela de ferramentas que responde a e
 
      O <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> serviço é chamado para obter um <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable> interface. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.AdviseRunningDocTableEvents%2A> método conecta eventos RDT para um objeto que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents>, nesse caso, um objeto RDTExplorer.
 
-8.  Atualização do RDTExplorerWindow Dispose ().
+8. Atualização do RDTExplorerWindow Dispose ().
 
     ```csharp
     protected override void Dispose(bool disposing)

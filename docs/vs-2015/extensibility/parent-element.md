@@ -1,27 +1,22 @@
 ---
 title: Elemento pai | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
 ms.assetid: e4624ac8-1b9a-4940-910a-528a661cefad
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 62096a713e84353ab79206c5edc7003ab443adbb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2086473bc484fed4e8e351f0c3838074557586c9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765882"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923470"
 ---
 # <a name="parent-element"></a>Elementos pai
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,4 +53,3 @@ O pai de um botão ou caixa de combinação só pode ser um grupo. O pai de um m
   
 ## <a name="see-also"></a>Consulte também  
  [Arquivos da tabela de comandos do Visual Studio (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-

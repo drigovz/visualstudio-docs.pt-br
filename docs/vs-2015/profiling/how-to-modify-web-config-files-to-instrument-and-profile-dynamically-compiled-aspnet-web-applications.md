@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53c55987c22104a8951976890812d90f6bb838d4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d9e4fc4dfdff336b9ddcbd04bd031b48a8acc4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432612"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como modificar arquivos Web.Config para instrumentar e criar perfil dinamicamente de aplicativos Web do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
  Este tópico descreve como modificar o arquivo de configuração web.config para habilitar a instrumentação e criação de perfil de aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
 > [!NOTE]
->  Não é necessário modificar o arquivo web.config quando você usa o método de criação de perfil por amostragem ou quando você desejar instrumentar um módulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pré-compilado.  
+> Não é necessário modificar o arquivo web.config quando você usa o método de criação de perfil por amostragem ou quando você desejar instrumentar um módulo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] pré-compilado.  
   
  A raiz de um arquivo web.config é o elemento **configuração**. Para instrumentar e analisar um aplicativo Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] compilado dinamicamente, é necessário adicionar ou modificar os seguintes elementos:  
   
@@ -38,27 +38,27 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
   
 ### <a name="to-add-the-aspnethelper-assembly-as-a-configurationruntimeassemblybindingdependentassembly-element"></a>Para adicionar o assembly ASPNetHelper como um elemento configuration/runtime/assemblyBinding/dependentAssembly  
   
-1.  Se necessário, adicione o elemento **runtime** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
+1. Se necessário, adicione o elemento **runtime** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
   
      O elemento **runtime** não tem atributos. O elemento **configuration** pode ter apenas um elemento filho **runtime**.  
   
-2.  Se necessário, adicione o elemento **assemblyBinding** como um elemento filho do elemento **runtime**. Caso contrário, vá para a próxima etapa.  
+2. Se necessário, adicione o elemento **assemblyBinding** como um elemento filho do elemento **runtime**. Caso contrário, vá para a próxima etapa.  
   
      O elemento **runtime** pode ter apenas um elemento **assemblyBinding**.  
   
-3.  Adicione os seguintes nomes de atributo e valor ao elemento **assemblyBinding**:  
+3. Adicione os seguintes nomes de atributo e valor ao elemento **assemblyBinding**:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  
     |**Xmlns**|**urn:schemas-microsoft-com:asm.v1**|  
   
-4.  Adicione um elemento **dependentAssembly** como um elemento filho do elemento **assemblyBinding**.  
+4. Adicione um elemento **dependentAssembly** como um elemento filho do elemento **assemblyBinding**.  
   
      O elemento **dependentAssembly** não tem atributos.  
   
-5.  Adicione um elemento **assemblyIdentity** como um filho do elemento **dependentAssembly**.  
+5. Adicione um elemento **assemblyIdentity** como um filho do elemento **dependentAssembly**.  
   
-6.  Adicione os seguintes nomes de atributo e valores ao elemento **assemblyIdentity**:  
+6. Adicione os seguintes nomes de atributo e valores ao elemento **assemblyIdentity**:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  
@@ -66,9 +66,9 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
     |**PublicKeyToken**|**b03f5f7f11d50a3a**|  
     |**culture**|**Neutral**|  
   
-7.  Adicione um elemento **codeBase** como um filho do elemento **dependentAssembly**.  
+7. Adicione um elemento **codeBase** como um filho do elemento **dependentAssembly**.  
   
-8.  Adicione os seguintes nomes de atributo e valores ao elemento **codeBase**:  
+8. Adicione os seguintes nomes de atributo e valores ao elemento **codeBase**:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  
@@ -98,15 +98,15 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
   
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Para adicionar a etapa de pós-processamento do criador de perfil ao elemento configuration/system.web/compilation  
   
-1.  Se necessário, adicione o elemento **system.web** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
+1. Se necessário, adicione o elemento **system.web** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
   
      O elemento **system.web** não tem atributos. O elemento **configuration** pode ter apenas um elemento filho **system.web**.  
   
-2.  Se necessário, adicione o elemento **compilation** como um elemento filho do elemento **system.web**. Caso contrário, vá para a próxima etapa.  
+2. Se necessário, adicione o elemento **compilation** como um elemento filho do elemento **system.web**. Caso contrário, vá para a próxima etapa.  
   
      O elemento **system.web** pode ter apenas um elemento filho **compilation**.  
   
-3.  Remova todos os atributos existentes do elemento **compilation** e adicione os seguintes nomes de atributo e valor:  
+3. Remova todos os atributos existentes do elemento **compilation** e adicione os seguintes nomes de atributo e valor:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  
@@ -130,22 +130,22 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
   
 ### <a name="to-add-profiler-location-settings-to-the-configurationappsettings-element"></a>Para adicionar configurações de local do Criador de Perfil ao elemento configuration/appSettings  
   
-1.  Se necessário, adicione o elemento **appSettings** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
+1. Se necessário, adicione o elemento **appSettings** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.  
   
      O elemento **appSettings** não tem atributos. O elemento **configuration** pode ter apenas um elemento filho **appSettings**.  
   
-2.  Adicione um elemento **add** como um filho do elemento **appSettings**.  
+2. Adicione um elemento **add** como um filho do elemento **appSettings**.  
   
-3.  Adicione os seguintes nomes de atributo e valores ao elemento **add**:  
+3. Adicione os seguintes nomes de atributo e valores ao elemento **add**:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  
     |**key**|**Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation**|  
     |**value**|`PerformanceToolsFolder` **\VSInstr.Exe**|  
   
-4.  Adicione outro elemento **add** como um filho do elemento **appSettings**.  
+4. Adicione outro elemento **add** como um filho do elemento **appSettings**.  
   
-5.  Adicione os seguintes nomes de atributo e valores a esse elemento **add**:  
+5. Adicione os seguintes nomes de atributo e valores a esse elemento **add**:  
   
     |Nome do atributo|Valor do Atributo|  
     |--------------------|---------------------|  

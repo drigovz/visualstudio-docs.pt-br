@@ -26,16 +26,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15de24a35e410bec38e5b70813285440aaa05de4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 030b581f44535c62b950b5b54c15aa36232711e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821751"
 ---
 # <a name="understand-build-configurations"></a>Noções sobre configurações de build
 
-É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa **Início Rápido**. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
+É possível armazenar diferentes configurações de propriedades de solução e de projeto para usar em diferentes tipos de builds. Para criar, selecionar, modificar ou excluir uma configuração, é possível usar o **Configuration Manager**. Para abri-lo, na barra de menus, escolha **Build** > **Configuration Manager** ou apenas digite **Configuração** na caixa de pesquisa. Também é possível usar a lista **Configurações de Solução** na barra de ferramentas **Padrão** para selecionar uma configuração ou para abrir o **Configuration Manager**.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Configurações de build no Visual Studio para Mac](/visualstudio/mac/configurations).
@@ -72,20 +72,20 @@ A configuração da solução ativa também fornece contexto ao IDE. Por exemplo
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Como o Visual Studio atribui configurações de projeto
  Quando você define uma nova configuração de solução e não copia as configurações de uma já existente, o Visual Studio usa os seguintes critérios para atribuir configurações de projeto padrão. Os critérios são avaliados na ordem mostrada.
 
-1.  Se um projeto tiver um nome de configuração (*\<nome de configuração> \<nome de plataforma>*) que corresponda exatamente ao nome da nova configuração de solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.
+1. Se um projeto tiver um nome de configuração (*\<nome de configuração> \<nome de plataforma>*) que corresponda exatamente ao nome da nova configuração de solução, essa configuração será atribuída. Nomes de configuração não diferenciam maiúsculas de minúsculas.
 
-2.  Se o projeto tiver um nome de configuração no qual a parte configuração-nome corresponda à nova configuração de solução, essa configuração será atribuída, independentemente se a parte da plataforma for correspondente ou não.
+2. Se o projeto tiver um nome de configuração no qual a parte configuração-nome corresponda à nova configuração de solução, essa configuração será atribuída, independentemente se a parte da plataforma for correspondente ou não.
 
-3.  Se ainda não houver correspondência, a primeira configuração listada no projeto será atribuída.
+3. Se ainda não houver correspondência, a primeira configuração listada no projeto será atribuída.
 
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Como o Visual Studio atribui configurações de solução
  Quando você cria uma configuração de projeto (no **Configuration Manager**, escolhendo **Novo** no menu suspenso na coluna **Configuração** desse projeto) e marca a caixa de seleção **Criar novas configurações de solução** o Visual Studio procura uma configuração de solução com nome semelhante para compilar o projeto em cada plataforma à que ele dá suporte. Em alguns casos, o Visual Studio renomeia as configurações de solução existentes ou define novas configurações.
 
  O Visual Studio usa os seguintes critérios para atribuir configurações de solução.
 
--   Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão dessa configuração de solução não inclui um nome de plataforma; ele assume a forma *\<nome de configuração do projeto>*.
+- Se uma configuração de projeto não especificar uma plataforma ou especificar apenas uma delas, então a configuração de solução cujo nome corresponder ao da nova configuração de projeto será localizada ou adicionada. O nome padrão dessa configuração de solução não inclui um nome de plataforma; ele assume a forma *\<nome de configuração do projeto>*.
 
--   Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>*.
+- Se um projeto der suporte a várias plataformas, uma configuração de solução será localizada ou adicionada para cada plataforma com suporte. O nome de cada configuração de solução inclui tanto o nome de configuração do projeto quanto o nome da plataforma e tem a forma *\<nome de configuração do projeto> \<nome da plataforma>*.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -18,18 +18,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b8a3f7cfe9dea56ca7abc0f2e82506e3edef1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 369bad5a66ac4a3c41a1a3e22941b11ef27902d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385911"
 ---
 # <a name="createitem-task"></a>Tarefa CreateItem
 Popula as coleções de itens com os itens de entrada. Isso permite que os itens sejam copiados de uma lista para outra.
 
 > [!NOTE]
->  Essa tarefa foi preterida. Do .NET Framework 3.5 em diante, grupos de itens podem ser colocados dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
+> Essa tarefa foi preterida. Do .NET Framework 3.5 em diante, grupos de itens podem ser colocados dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 ## <a name="attributes"></a>Atributos
  A tabela a seguir descreve os parâmetros da tarefa `CreateItem`.

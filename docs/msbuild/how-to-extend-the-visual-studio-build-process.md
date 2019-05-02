@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d22e92bc025cc1372be2b765d803c2c658364b7e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d22bf8af86605d414d933d16cd5dd7f8d24a6154
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945881"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como: Estender o processo de build do Visual Studio
 O processo de build do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] é definido por uma série de arquivos *.targets* do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que são importados para o arquivo de projeto. Um desses arquivos importados, *Microsoft.Common.targets*, pode ser estendido para permitir a execução de tarefas personalizadas em vários pontos no processo de build. Este artigo explica os dois métodos que você pode usar para estender o processo de build do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]:
@@ -60,7 +60,7 @@ A tabela a seguir mostra todos os destinos em *Microsoft.Common.targets* que voc
 |`BeforeRebuild`, `AfterRebuild`|As tarefas inseridas em um desses destinos são executadas antes ou após a invocação da funcionalidade de recompilação principal. A ordem de execução de destino em *Microsoft.Common.targets* é: `BeforeRebuild`, `Clean`, `Build` e, em seguida, `AfterRebuild`.|
 |`BeforeClean`, `AfterClean`|As tarefas inseridas em um desses destinos são executadas antes ou após a invocação da funcionalidade de limpeza principal.|
 |`BeforePublish`, `AfterPublish`|As tarefas inseridas em um desses destinos são executadas antes ou após a invocação da funcionalidade de publicação principal.|
-|`BeforeResolveReference`, `AfterResolveReferences`|As tarefas inseridas em um desses destinos são executadas antes ou após a resolução das referências de assembly.|
+|`BeforeResolveReferences`, `AfterResolveReferences`|As tarefas inseridas em um desses destinos são executadas antes ou após a resolução das referências de assembly.|
 |`BeforeResGen`, `AfterResGen`|As tarefas inseridas em um desses destinos são executadas antes ou após a geração de recursos.|
 
 ## <a name="override-dependson-properties"></a>Substituir propriedades DependsOn

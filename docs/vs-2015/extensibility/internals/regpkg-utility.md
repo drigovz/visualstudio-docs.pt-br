@@ -1,33 +1,28 @@
 ---
 title: Utilitário RegPkg | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - regpkg, registration utility
 - registration, regpkg utility
 ms.assetid: 1683ee18-59d1-4bab-a674-dd00dd960de3
 caps.latest.revision: 13
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: da637b365eec260a7c1c34bbe7ba96c785cc18fc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1895d3b57e5109f824728021cb1d64f0c527384b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436593"
 ---
 # <a name="regpkg-utility"></a>Utilitário RegPkg
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!NOTE]
->  É a maneira preferencial para registrar os pacotes no Visual Studio por meio de arquivos. pkgdef. Isso permite a implantação de extensão sem a necessidade de acessar o registro do sistema, que é um requisito para a implantação do VSIX. Pkgdef arquivos são criados usando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Para obter mais informações sobre a implantação de pacote do Visual Studio, consulte [envio extensões do Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).  
+> É a maneira preferencial para registrar os pacotes no Visual Studio por meio de arquivos. pkgdef. Isso permite a implantação de extensão sem a necessidade de acessar o registro do sistema, que é um requisito para a implantação do VSIX. Pkgdef arquivos são criados usando o [utilitário CreatePkgDef](../../extensibility/internals/createpkgdef-utility.md). Para obter mais informações sobre a implantação de pacote do Visual Studio, consulte [envio extensões do Visual Studio](../../extensibility/shipping-visual-studio-extensions.md).  
   
  O utilitário RegPkg.exe registra um VSPackage com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e prepará-lo para implantação. Esse utilitário é usado nos bastidores durante o desenvolvimento de VSPackage. Ele é executado como parte do processo de compilação para que você pode compilar e executar um VSPackage no hive experimental.  
   
@@ -44,19 +39,19 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] raiz.  
   
- /regfile:filename  
+ /regfile:FileName  
  Cria um arquivo. reg em vez de atualizar o registro.  Não pode ser usado com /vrgfile ou /rgsfile ou /wixfile.  
   
- /rgsfile:filename  
+ /rgsfile:FileName  
  Cria um arquivo. rgs em vez de atualizar o registro.  Não pode ser usado com /vrgfile ou /regfile ou /wixfile.  
   
- /vrgfile:filename  
+ /vrgfile:FileName  
  Cria um arquivo .vrg em vez de atualizar o registro.  Não pode ser usado com /regfile ou /rgsfile ou /wixfile.  
   
  /rgm  
  Cria um arquivo .rgm além do arquivo rgs.  Deve ser combinada com /rgsfile.  
   
- /wixfile:filename  
+ /wixfile:FileName  
  Cria um arquivo compatível com o Windows Installer XML conjunto de ferramentas em vez de atualizar o registro.  Não pode ser usado com /regfile ou /rgsfile ou /vrgfile.  
   
  /codebase  
@@ -65,7 +60,7 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
  /assembly  
  Registro de forças com o Assembly em vez da Base de código.  
   
- / Cancelar  
+ /unregister  
  Cancela o registro desse pacote.  Não pode ser usado  
   
  com /regfile ou /vrgfile ou /rgsfile ou /wixfile.  
@@ -73,4 +68,3 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 ## <a name="see-also"></a>Consulte também  
  [Liberando um produto](../../misc/releasing-a-visual-studio-integration-product.md)   
  [Solucionar problemas de registro de pacote RegPkg](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)
-

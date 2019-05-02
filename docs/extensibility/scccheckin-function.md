@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 178cebb974147a95aac35ebabe484dc4a7777407
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62803000"
 ---
 # <a name="scccheckin-function"></a>Função SccCheckin
 Essa função faz check-in anteriormente arquivos com check-out para o sistema de controle do código-fonte, armazenar as alterações e criar uma nova versão. Essa função é chamada com uma contagem e uma matriz de nomes dos arquivos para check-in.
@@ -75,7 +75,7 @@ SCCRTN SccCheckin (
 |SCC_E_ACCESSFAILURE|Houve um problema ao acessar o sistema de controle do código-fonte, provavelmente devido a problemas de rede ou de contenção. É recomendável uma nova tentativa.|
 |SCC_E_NONSPECIFICERROR|Falha não específica. Arquivo não foi aprovado.|
 |SCC_E_NOTCHECKEDOUT|O usuário não tem check-out do arquivo, portanto, não é possível fazer check-in.|
-|SCC_E_CHECKINCONFLICT|Fazer check-in não pôde ser realizada porque:<br /><br /> -Outro usuário fez check-in em frente e `bAutoReconcile` era falsa.<br /><br /> -ou-<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|
+|SCC_E_CHECKINCONFLICT|Fazer check-in não pôde ser realizada porque:<br /><br /> -Outro usuário fez check-in em frente e `bAutoReconcile` era falsa.<br /><br /> - ou -<br /><br /> -A mesclagem automática não pode ser feita (por exemplo, quando os arquivos são binários).|
 |SCC_E_VERIFYMERGE|Arquivo tiver sido mesclada automaticamente, mas não foi verificado aguardam a verificação de usuário.|
 |SCC_E_FIXMERGE|Arquivo tiver sido mesclada automaticamente, mas não foi verificado devido a um conflito de mesclagem que deve ser resolvido manualmente.|
 |SCC_E_NOTAUTHORIZED|O usuário não tem permissão para executar esta operação.|

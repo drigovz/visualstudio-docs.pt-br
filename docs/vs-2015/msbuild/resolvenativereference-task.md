@@ -19,17 +19,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 31de2c146accd71ae1606be62ab06fa368e7fb89
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 137ab6c54176c7c95c13c4b3e4defb3924937bc7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758542"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650311"
 ---
 # <a name="resolvenativereference-task"></a>Tarefa ResolveNativeReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Resolve referências nativas. Implementa a classe <xref:Microsoft.Build.Tasks.ResolveNativeReference>. Essa classe dá suporte à infraestrutura do .NET Framework, que não se destina a ser usada diretamente do seu código.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  
@@ -37,7 +36,7 @@ Resolve referências nativas. Implementa a classe <xref:Microsoft.Build.Tasks.Re
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`AdditionalSearchPaths`|Parâmetro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` obrigatório.<br /><br /> Obtém ou define os caminhos de pesquisa para resolver as identidades de assembly de referências nativas.|  
+|`AdditionalSearchPaths`|(Necessário [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->)`[]` parâmetro.<br /><br /> Obtém ou define os caminhos de pesquisa para resolver as identidades de assembly de referências nativas.|  
 |`ContainedComComponents`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtém ou define os componentes COM do assembly nativo.|  
 |`ContainedLooseEtcFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtém ou define os arquivos Etc flexíveis listados no manifesto nativo.|  
 |`ContainedLooseTlbFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Obtém ou define os arquivos .tlb do assembly nativo.|  

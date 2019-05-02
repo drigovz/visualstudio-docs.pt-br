@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4cf1cce3ba677b5232c86b7abb1386d4d1dc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999422"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Executar ferramentas de criação de perfil com ou sem o depurador
 
@@ -33,7 +33,7 @@ Para ajudar a decidir quais ferramentas e resultados usar, considere os seguinte
 - O próprio depurador altera os tempos de desempenho, à medida que realiza operações do depurador necessárias como eventos de exceção de interceptação e de carga de módulo.
 - Os números de desempenho do build de versão nas ferramentas do **Criador de Perfil de Desempenho** são os mais precisos e exatos. Os resultados da ferramenta integrada ao depurador são mais úteis para comparar com outras medidas relacionadas à depuração.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar
 
 Quando você inicia a depuração no Visual Studio selecionando **Depurar** > **Iniciar depuração** ou pressionando **F5**, a janela **Ferramentas de Diagnóstico** é exibida por padrão. Para abri-la manualmente, selecione **Depurar** > **Janelas** > **Mostrar Ferramentas de Diagnóstico**. A janela **Ferramentas de Diagnóstico** mostra informações sobre eventos, memória do processo e uso da CPU.
 
@@ -67,7 +67,7 @@ Para obter mais informações, consulte [Pesquisando e filtrando a guia de Event
 
 ## <a name="collect-profiling-data-without-debugging"></a>Coletar dados de criação de perfil sem depuração
 
-Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível iniciar o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
+Para coletar dados de desempenho sem depuração, é possível executar as ferramentas do **Criador de Perfil de Desempenho**. Algumas ferramentas de criação de perfil requerem privilégios de administrador para serem executadas. É possível abrir o Visual Studio como administrador ou executar as ferramentas como administrador quando inicia a sessão de diagnóstico.
 
 1. Com um projeto aberto no Visual Studio, selecione **Depurar** > **Criador de Perfil de Desempenho** ou pressione **Alt**+**F2**.
 

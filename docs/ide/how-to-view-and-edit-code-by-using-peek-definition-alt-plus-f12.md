@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cda6865a4dee34976fa2885313db6aad253f32c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537445"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)
 
@@ -24,7 +24,7 @@ Você pode usar **Inspecionar Definição** com código C#, Visual Basic e C++. 
 
 ### <a name="to-open-a-peek-definition-window"></a>Para abrir uma janela Inspecionar Definição
 
-1. Você pode inspecionar uma definição escolhendo **Inspecionar Definição** no menu do clique com o botão direito para um tipo ou membro que deseja explorar. No Visual Studio 2017 versão 15.4 e posteriores, se a opção estiver habilitada, você também poderá espiar uma definição usando o mouse pressionando **Ctrl** (ou outro modificador) e clicando no nome do membro. Ou, usando o teclado, pressione **Alt**+**F12**.
+1. Você pode inspecionar uma definição escolhendo **Inspecionar Definição** no menu do clique com o botão direito para um tipo ou membro que deseja explorar. Se a opção estiver habilitada, você também poderá espiar uma definição usando o mouse, pressionando **Ctrl** (ou outro modificador) e clicando no nome do membro. Ou, usando o teclado, pressione **Alt**+**F12**.
 
      Esta ilustração mostra a janela **Inspecionar Definição** de um método que é chamado `Print()`:
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 349fbd0358481e6cd809efe4f4d210ec94ef50a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419479"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Como: Salvar pastas de trabalho de forma programática
   Há várias maneiras de salvar uma pasta de trabalho. Você pode salvar uma pasta de trabalho sem alterar o caminho. Se a pasta de trabalho não tiver sido salvo antes, você deve salvar a pasta de trabalho, especificando um caminho. Sem um caminho explícito, o Microsoft Office Excel salva o arquivo na pasta atual com o nome que foi fornecido quando ele foi criado. Você também pode salvar uma cópia da pasta de trabalho sem modificar a pasta de trabalho aberta na memória.
@@ -30,14 +30,14 @@ ms.locfileid: "56614708"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para salvar uma pasta de trabalho associada a uma personalização no nível de documento
 
-1.  Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> método da `ThisWorkbook` classe.
+1. Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> método da `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para salvar a pasta de trabalho ativa em um suplemento do VSTO
 
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> método para salvar a pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> método para salvar a pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]
@@ -46,18 +46,18 @@ ms.locfileid: "56614708"
  Você pode salvar a pasta de trabalho especificada para um novo local ou com um novo nome, opcionalmente especificando um formato de arquivo, uma senha, um modo de acesso e muito mais.
 
 > [!NOTE]
->  Você talvez queira definir o <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriedade para **falso** antes de salvar a pasta de trabalho com um novo caminho, como salvando em alguns formatos requer interação. Definir essa propriedade como **falsos** faz com que o Excel para usar todos os padrões.
+> Você talvez queira definir o <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriedade para **falso** antes de salvar a pasta de trabalho com um novo caminho, como salvando em alguns formatos requer interação. Definir essa propriedade como **falsos** faz com que o Excel para usar todos os padrões.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para salvar uma pasta de trabalho associada a uma personalização no nível de documento
 
-1.  Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método da `ThisWorkbook` classe. Para usar o exemplo de código a seguir, execute-o `ThisWorkbook` classe.
+1. Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> método da `ThisWorkbook` classe. Para usar o exemplo de código a seguir, execute-o `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para salvar a pasta de trabalho ativa em um suplemento do VSTO
 
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> método para salvar a pasta de trabalho ativa para um novo caminho. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> método para salvar a pasta de trabalho ativa para um novo caminho. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]
@@ -67,14 +67,14 @@ ms.locfileid: "56614708"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para salvar uma pasta de trabalho associada a uma personalização no nível de documento
 
-1.  Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> método da `ThisWorkbook` classe. Para usar o exemplo de código a seguir, execute-o `ThisWorkbook` classe.
+1. Chame o <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> método da `ThisWorkbook` classe. Para usar o exemplo de código a seguir, execute-o `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Para salvar a pasta de trabalho ativa em um suplemento do VSTO
 
-1.  Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> método para salvar uma cópia da pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
+1. Chamar o <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> método para salvar uma cópia da pasta de trabalho ativa. Para usar o exemplo de código a seguir, execute-o `ThisAddIn` classe em um projeto de suplemento do VSTO para Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]

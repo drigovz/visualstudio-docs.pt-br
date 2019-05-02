@@ -1,14 +1,9 @@
 ---
 title: Guia de teste para Plug-ins de controle do código-fonte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - plug-ins, source control
 - source control [Visual Studio SDK], testing plug-ins
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 caps.latest.revision: 27
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: eea089da8c8e0b7e626f58660a57cd499a93fb7c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a3ed1acdbf8d09616c413fa832dc452af277434b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441210"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ ms.locfileid: "51778898"
 Esta seção fornece diretrizes para testar o plug-in com o controle de origem [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. É fornecida uma visão geral abrangente das áreas mais comuns de testes, bem como algumas das áreas mais complexas que podem ser um problemas. Esta visão geral não deve ser uma lista completa de casos de teste.  
   
 > [!NOTE]
->  Algumas correções de bugs e melhorias para a versão mais recente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE pode revelar problemas com existente fonte plug-ins de controle que anteriormente não foram encontrados durante o uso de versões anteriores do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. É altamente recomendável que você teste seu controle de origem existente plug-in para as áreas enumeradas nesta seção, mesmo que nenhuma alteração foi feita para o plug-in desde a versão anterior do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
+> Algumas correções de bugs e melhorias para a versão mais recente [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE pode revelar problemas com existente fonte plug-ins de controle que anteriormente não foram encontrados durante o uso de versões anteriores do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. É altamente recomendável que você teste seu controle de origem existente plug-in para as áreas enumeradas nesta seção, mesmo que nenhuma alteração foi feita para o plug-in desde a versão anterior do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 ## <a name="common-preparation"></a>Preparação comuns  
  Uma máquina com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e o plug-in de controle do código-fonte de destino instalado, é necessário. Uma segunda máquina configurada da mesma forma pode ser usada para algumas da abrir do controle de origem de testes.  
@@ -44,7 +39,7 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
  Qualquer projeto tipo disponível no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que dá suporte à integração de controle do código-fonte (por exemplo, [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], [!INCLUDE[csprcs](../../includes/csprcs-md.md)], ou [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)]).  
   
  Projeto Web  
- Há quatro tipos de projetos da Web: IIS Local, sistema de arquivos, Sites remotos e FTP.  
+ Há quatro tipos de projetos da Web: Sistema de arquivos, IIS Local, Sites remotos e FTP.  
   
 - Projetos do sistema de arquivos são criados em um caminho local, mas eles não exigem o Internet Information Services (IIS) a serem instalados conforme elas são acessadas internamente por meio de um caminho UNC e podem ser colocadas sob controle de origem de dentro do IDE, assim como projetos de cliente.  
   
@@ -62,56 +57,55 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
   
 ## <a name="test-areas-covered-in-this-section"></a>Áreas de teste abordadas nesta seção  
   
--   [Área de teste 1: adicionar ao/abrir do controle do código-fonte](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
+- [Área de teste 1: adicionar e abrir do controle do código-fonte](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)  
   
-    -   Caso 1a: Adicionar solução ao controle do código-fonte  
+    - Caso 1a: Adicionar solução ao controle do código-fonte  
   
-    -   Caso 1b: Abra a solução de controle de origem  
+    - Caso 1b: Abrir solução do controle de origem  
   
-    -   Caso c 1: adicionar a solução de controle de origem  
+    - Caso 1c: Adicionar solução de controle de origem  
   
--   [Área de teste 2: Obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)  
+- [Área de teste 2: obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)  
   
--   [Área de teste 3: fazer check-out ou desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
+- [Área de teste 3: fazer e desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)  
   
-    -   Caso 3: Fazer Check-Out / desfazer check-out  
+    - Caso 3: Fazer Check-Out / desfazer check-out  
   
-    -   Caso 3a: Fazer Check-Out  
+    - Caso 3a: Fazer Check-Out  
   
-    -   Caso 3b: desconectado check-out  
+    - Caso 3b: Check-out desconectado  
   
-    -   Caso 3c: Editar consulta/salvar (QEQS)  
+    - Caso 3c: Editar consulta/consulta salvar (QEQS)  
   
-    -   Caso 3d: Check-out silenciosa  
+    - 3d de caso: Check-out silenciosa  
   
-    -   Caso 3e: desfazer check-out  
+    - Caso 3e: Desfazer check-out  
   
--   [Área de teste 4: Fazer check-in](../../extensibility/internals/test-area-4-check-in.md)  
+- [Área de teste 4: fazer check-in](../../extensibility/internals/test-area-4-check-in.md)  
   
-    -   Caso 4a: modificou itens  
+    - Caso 4a: Itens modificados  
   
-    -   Caso 4b: adição de arquivos  
+    - Caso 4b: Adicionando arquivos  
   
-    -   Caso c 4: Adicionando projetos  
+    - Caso 4c: Adicionando projetos  
   
--   [Área de teste 5: Alterar controle do código-fonte](../../extensibility/internals/test-area-5-change-source-control.md)  
+- [Área de teste 5: alterar controle do código-fonte](../../extensibility/internals/test-area-5-change-source-control.md)  
   
-    -   Caso 5a: associar  
+    - Caso 5a: associar  
   
-    -   Caso 5b: desassociar  
+    - Caso 5b: desassociar  
   
-    -   Caso 5c: Rebind  
+    - Caso 5c: Reassociar  
   
--   [Área de teste 6: Excluir](../../extensibility/internals/test-area-6-delete.md)  
+- [Área de teste 6: excluir](../../extensibility/internals/test-area-6-delete.md)  
   
--   [Área de teste 7: Compartilhar](../../extensibility/internals/test-area-7-share.md)  
+- [Área de teste 7: compartilhar](../../extensibility/internals/test-area-7-share.md)  
   
--   [Área de teste 8: Alternância de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
+- [Área de teste 8: alternância de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)  
   
-    -   Caso 8a: automático de alterações  
+    - 8a case: Alterações automáticas  
   
-    -   Caso 8b: alteração com base em solução  
+    - 8b case: Alteração de solução  
   
 ## <a name="see-also"></a>Consulte também  
  [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)
-

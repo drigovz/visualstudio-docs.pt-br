@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b5ce753b0e3e7523f7c88eac3ad20afc7b0c953
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90aa5e77c6541b36619615fc253c55f5d78a6b45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445697"
 ---
 # <a name="hosting-process-vshostexe"></a>Processo de hospedagem (vshost.exe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54788128"
 O processo de hospedagem é um recurso do Visual Studio que melhora o desempenho de depuração, habilita a depuração de confiança parcial e habilita a avaliação de expressão em tempo de design. Os arquivos do processo de hospedagem contêm vshost no nome do arquivo e são colocados na pasta de saída do projeto. Para obter mais informações, consulte [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md).  
   
 > [!NOTE]
->  Arquivos do processo de hospedagem (.vshost.exe) são para uso do Visual Studio e não devem ser executados diretamente ou implantados com o aplicativo.  
+> Arquivos do processo de hospedagem (.vshost.exe) são para uso do Visual Studio e não devem ser executados diretamente ou implantados com o aplicativo.  
   
 ## <a name="improved-debugging-performance"></a>Melhor desempenho de depuração  
  O processo de hospedagem cria um domínio do aplicativo e associa o depurador ao aplicativo. A execução dessas tarefas pode introduzir um atraso notável entre o tempo de início da depuração e o tempo do início da execução do aplicativo. O processo de hospedagem ajuda a melhorar o desempenho criando o domínio do aplicativo, associando o depurador na tela de fundo e salvando o domínio do aplicativo e o estado do depurador entre execuções do aplicativo. Para obter mais informações sobre domínios do aplicativo, consulte [Domínios do aplicativo](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8).  
@@ -38,6 +38,6 @@ O processo de hospedagem é um recurso do Visual Studio que melhora o desempenho
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md)   
- [Como desabilitar o processo de hospedagem](../ide/how-to-disable-the-hosting-process.md)   
+ [Como: Desabilitar o processo de hospedagem](../ide/how-to-disable-the-hosting-process.md)   
  [Janela Imediata](../ide/reference/immediate-window.md)   
  [Domínios do aplicativo](http://msdn.microsoft.com/library/113a8bbf-6875-4a72-a49d-ca2d92e19cc8)

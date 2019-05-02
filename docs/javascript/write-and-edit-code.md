@@ -10,19 +10,19 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 10557e8ce959be2d1170044e20fd0ad99c76fa86
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840720"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
 Nesta breve introdução ao editor de códigos do Visual Studio, examinaremos algumas das formas pelas quais o Visual Studio facilita a escrita, a navegação e o entendimento do código.
 
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente. Dependendo do tipo de desenvolvimento de aplicativo que você estiver fazendo, talvez você precise instalar a **carga de trabalho de desenvolvimento em Node.js** com o Visual Studio.
 
 Este artigo pressupõe que você já esteja familiarizado com o desenvolvimento em JavaScript. Caso contrário, sugerimos que você primeiro examine um tutorial, como [Criar um aplicativo Node.js e Express](../javascript/tutorial-nodejs.md).
 

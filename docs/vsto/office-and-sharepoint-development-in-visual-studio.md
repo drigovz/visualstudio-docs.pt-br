@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607051"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970404"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Desenvolvimento do Office e SharePoint no Visual Studio
   Você pode estender o Microsoft Office e SharePoint, criando um aplicativo leve ou suplemento que os usuários baixem do [Office Store](https://store.office.com/) ou um catálogo organizacional, ou criando uma solução baseada no .NET Framework que os usuários de instalar em um computador.
 
  Neste tópico:
 
--   [Criar suplementos para Office e SharePoint](#Apps)
+- [Criar suplementos para Office e SharePoint](#Apps)
 
--   [Criar um suplemento do VSTO](#Add-ins)
+- [Criar um suplemento do VSTO](#Add-ins)
 
--   [Criar uma solução do SharePoint](#Solutions)
+- [Criar uma solução do SharePoint](#Solutions)
 
-##  <a name="Apps"></a> Criar suplementos para Office e SharePoint
+## <a name="Apps"></a> Criar suplementos para Office e SharePoint
  Office 2013 e SharePoint 2013 apresentam um novo suplemento do modelo que ajuda você a criar, distribuir e monetizar suplementos que estendem o Office e SharePoint.  Esses suplementos podem executar no Office ou SharePoint Online, e os usuários podem interagir com eles de vários dispositivos.
 
  Saiba como usar a nova [modelo de suplemento do Office](/office/dev/add-ins/overview/office-add-ins) para estender a experiência do Office para seus usuários.
@@ -81,7 +81,7 @@ ms.locfileid: "56607051"
 |Compare suplementos do SharePoint com soluções tradicionais do SharePoint.|[Suplementos do SharePoint em comparação com soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Escolha se deseja criar um suplemento do SharePoint ou uma solução do SharePoint.|[Decidir entre o SharePoint Add-ins e soluções do SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> Criar um suplemento do VSTO
+## <a name="Add-ins"></a> Criar um suplemento do VSTO
  Crie um suplemento de VSTO para Office 2007 ou Office 2010 de destino ou para estender o Office 2013 e Office 2016 além do que é possível com os suplementos do Office. Suplementos do VSTO é executado somente na área de trabalho. Os usuários precisam instalar suplementos do VSTO, portanto, eles são geralmente mais difíceis de implantar e dar suporte.  No entanto, seu suplemento do VSTO pode ser integrado mais estreitamente com o Office. Por exemplo, ele pode adicionar controles à Faixa de Opções do Office e executar tarefas de automação avançadas como mesclar documentos ou modificar gráficos. Você pode aproveitar o .NET Framework e usar o C# e o Visual Basic para interagir com objetos do Office.
 
  Aqui está um exemplo que pode fazer o que um suplemento do VSTO. Este suplemento do VSTO adiciona controles da faixa de opções, um painel de tarefas personalizado e uma caixa de diálogo ao PowerPoint.
@@ -95,7 +95,7 @@ ms.locfileid: "56607051"
 |Compare as diferentes maneiras em que você pode estender o Office e decidir se deve usar um suplemento do VSTO ou um suplemento do Office.|[Roteiro para suplementos do Office, VSTO e VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Crie um suplemento do VSTO.|[Suplementos do VSTO compilar com o Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> Criar uma solução do SharePoint
+## <a name="Solutions"></a> Criar uma solução do SharePoint
  Crie uma solução do SharePoint para SharePoint Foundation 2010 e SharePoint Server 2010 de destino ou para estender o SharePoint 2013 e SharePoint 2016 além do que é possível com um suplemento do SharePoint.
 
  Soluções do SharePoint exigem servidores de farm do SharePoint no local. Os administradores devem instalá-los e, como soluções são executada no SharePoint, podem afetar o desempenho do servidor. No entanto, soluções fornecem maior acesso a objetos do SharePoint. Além disso, quando você cria uma solução do SharePoint, pode utilizar o .NET Framework e usar C# e Visual Basic para interagir com objetos do SharePoint.

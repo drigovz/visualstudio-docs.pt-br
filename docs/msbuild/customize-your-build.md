@@ -11,14 +11,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc4515ad8f61d749c9fb7552911bfb15dcc3471a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610327"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778095"
 ---
-# <a name="customize-your-build-c-visual-basic"></a>Personalizar o build (C#, Visual Basic)
+# <a name="customize-your-build"></a>Personalizar seu build
 
 Os projetos do MSBuild que usam o processo de build padrão (importando *Microsoft.Common.props* e *Microsoft.Common.targets*) têm vários ganchos de extensibilidade que você pode usar para personalizar o processo de build.
 
@@ -51,6 +51,7 @@ Por exemplo, se você desejasse habilitar todos os seus projetos para acessar o 
     </PropertyGroup>
    </Project>
    ```
+
 3. Execute o MSBuild. As importações do *Microsoft.Common.props* e *Microsoft.Common.targets* existentes do projeto encontram o arquivo e o importam.
 
 ### <a name="search-scope"></a>Escopo da pesquisa

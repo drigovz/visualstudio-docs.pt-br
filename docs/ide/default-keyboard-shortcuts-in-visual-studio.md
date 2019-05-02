@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962035"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -40,22 +40,22 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |[Menus de Contexto do Depurador](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Outros Menus de Contexto](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus de Contexto do Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de Diagnóstico](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Global
+## <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analisar
+### <a name="bkmk_analyze"></a> Analisar
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |Analyze.NavigateBackward|**Shift+Alt+3**|
 |Analyze.NavigateForward|**Shift+Alt+4**|
 
-###  <a name="bkmk_architecture"></a> Arquitetura
+### <a name="bkmk_architecture"></a> Arquitetura
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
-###  <a name="bkmk_build"></a> Build
+### <a name="bkmk_build"></a> Build
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -64,13 +64,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-###  <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe
+### <a name="bkmk_classview"></a> Menus de Contexto do Modo de Exibição de Classe
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Enter**|
 
-###  <a name="bkmk_debug"></a> Depurar
+### <a name="bkmk_debug"></a> Depurar
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -138,7 +138,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Debug.Watch3|**Ctrl+Alt+W, 3**|
 |Debug.Watch4|**Ctrl+Alt+W, 4**|
 
-###  <a name="bkmk_debugger"></a> Menus de contexto do depurador
+### <a name="bkmk_debugger"></a> Menus de contexto do depurador
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -146,13 +146,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Hub de Diagnóstico
+### <a name="bkmk_diagnostics"></a> Hub de Diagnóstico
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-###  <a name="bkmk_edit"></a> Editar
+### <a name="bkmk_edit"></a> Editar
 
 |Comandos|Atalhos de teclado|
 |--------------|-|
@@ -211,7 +211,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
 |Edit.Undo|**Ctrl+Z**<br /><br /> ou<br /><br /> **Alt+Backspace**|
 
-###  <a name="bkmk_editorContext"></a> Menus de contexto do editor
+### <a name="bkmk_editorContext"></a> Menus de contexto do editor
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -222,7 +222,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Crtl+K, Ctrl+O** (letra "O")|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+K, T**|
 
-###  <a name="bkmk_file"></a> Arquivo
+### <a name="bkmk_file"></a> Arquivo
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -238,7 +238,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Shift+W**|
 
-###  <a name="bkmk_help"></a> Ajuda
+### <a name="bkmk_help"></a> Ajuda
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -247,19 +247,19 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Help.ViewHelp|**Ctrl+F1**|
 |Help.WindowHelp|**Shift+F1**|
 
-###  <a name="bkmk_loadtest"></a> Teste de carga
+### <a name="bkmk_loadtest"></a> Teste de carga
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Outros menus de contexto
+### <a name="bkmk_otherContext"></a> Outros menus de contexto
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Inserir**|
 
-###  <a name="bkmk_project"></a> Projeto
+### <a name="bkmk_project"></a> Projeto
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -271,14 +271,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Project.Publishselectedfiles|**Alt+;** e, em seguida, **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+;** e, em seguida, **Alt+R**|
 
-###  <a name="bkmk_projectContext"></a> Menus de contexto de projeto e solução
+### <a name="bkmk_projectContext"></a> Menus de contexto de projeto e solução
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Seta para baixo**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Seta para cima**|
 
-###  <a name="bkmk_refactor"></a> Refatoração
+### <a name="bkmk_refactor"></a> Refatoração
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -289,7 +289,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
 |Refactor.ReorderParameters|**Crtl+R, Ctrl+O** (letra "O")|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Gerenciador de Soluções
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -297,7 +297,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
-###  <a name="bkmk_team"></a> Equipe
+### <a name="bkmk_team"></a> Equipe
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -306,7 +306,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Team.Git.GoToGitCommits|**Ctrl+0** (zero), **Ctrl+O** (letra "O")<br /><br /> ou<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+'**|
 
-###  <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation
+### <a name="bkmk_TFcontext"></a> Menus de Contexto do Team Foundation
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -321,14 +321,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (zero), **Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (zero), **Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+0, W**|
 
-###  <a name="bkmk_test"></a> Teste
+### <a name="bkmk_test"></a> Teste
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes
+### <a name="bkmk_testexplorerGLOBAL"></a> Gerenciador de Testes
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -338,7 +338,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TestExplorer.RunAllTests|**Ctrl+R, A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl+R, T**|
 
-###  <a name="bkmk_tools"></a> Ferramentas
+### <a name="bkmk_tools"></a> Ferramentas
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -347,7 +347,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Tools.ForceGC|**Ctrl+Shift+Alt+F12, Ctrl+Shift+Alt+F12**|
 |Tools.GoToCommandLine|**Ctrl+/**|
 
-###  <a name="bkmk_view"></a> Modo de Exibição
+### <a name="bkmk_view"></a> Modo de Exibição
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -396,7 +396,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.ZoomIn|**Ctrl+Shift+.**|
 |View.ZoomOut|**Ctrl+Shift+,**|
 
-###  <a name="bkmk_window"></a> Janela
+### <a name="bkmk_window"></a> Janela
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -427,14 +427,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Window.SolutionExplorerSearch|**Ctrl+;**|
 |Window.WindowSearch|**Alt+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*, Ctrl+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>Designer de Modelo de Dados de Entidade ADO.NET
+## <a name="adonet-entity-data-model-designer"></a>Designer de Modelo de Dados de Entidade ADO.NET
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -449,7 +449,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.EntityDataModelBrowser|**Ctrl+1**|
 |View.EntityDataModelMappingDetails|**Ctrl+2**|
 
-##  <a name="class-diagram"></a>Diagrama de classe
+## <a name="class-diagram"></a>Diagrama de classe
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -461,7 +461,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.RemovefromDiagram|**Excluir**|
 |View.ViewCode|**Enter**|
 
-##  <a name="coded-ui-test-editor"></a>Editor de Testes de Interface de Usuário Codificada
+## <a name="coded-ui-test-editor"></a>Editor de Testes de Interface de Usuário Codificada
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -472,14 +472,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Shift+T**|
 
-##  <a name="dataset-editor"></a>Editor de Conjunto de Dados
+## <a name="dataset-editor"></a>Editor de Conjunto de Dados
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Inserir**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-##  <a name="difference-viewer"></a>Visualizador de Diferenças
+## <a name="difference-viewer"></a>Visualizador de Diferenças
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -495,7 +495,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Shift+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl+Shift+P**|
 
-##  <a name="dom-explorer"></a>Explorador do DOM
+## <a name="dom-explorer"></a>Explorador do DOM
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -503,13 +503,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Shift+I**|
 
-##  <a name="f-interactive"></a>F# interativo
+## <a name="f-interactive"></a>F# interativo
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Break**|
 
-##  <a name="graph-document-editor"></a>Editor de Documento Gráfico
+## <a name="graph-document-editor"></a>Editor de Documento Gráfico
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -521,7 +521,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Excluir**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Diagnóstico de gráfico
+## <a name="graphics-diagnostics"></a>Diagnóstico de gráfico
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -535,13 +535,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Gráficos.Ampliar|**Shift+Alt+=**|
 |Gráficos.Reduzir|**Shift+Alt+-**|
 
-##  <a name="html-editor"></a>Editor de HTML
+## <a name="html-editor"></a>Editor de HTML
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
-##  <a name="html-editor-design-view"></a>Exibição de Design do Editor HTML
+## <a name="html-editor-design-view"></a>Exibição de Design do Editor HTML
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -564,7 +564,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.ViewMarkup|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-##  <a name="html-editor-source-view"></a>Modo Código-Fonte do Editor de HTML
+## <a name="html-editor-source-view"></a>Modo Código-Fonte do Editor de HTML
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -574,13 +574,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.ViewDesigner|**Shift+F7**|
 |Window.PreviousTab|**Ctrl+PgUp**|
 
-##  <a name="layer-diagram"></a>Diagrama de camada
+## <a name="layer-diagram"></a>Diagrama de camada
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.Delete|**Shift+Delete**|
 
-##  <a name="managed-resources-editor"></a>Editor de Recursos Gerenciados
+## <a name="managed-resources-editor"></a>Editor de Recursos Gerenciados
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -595,7 +595,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Resources.Other|**Ctrl+6**|
 |Resources.Strings|**Ctrl+1**|
 
-##  <a name="merge-editor-window"></a>Janela do Editor de Mesclagem
+## <a name="merge-editor-window"></a>Janela do Editor de Mesclagem
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -603,7 +603,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparação de Esquemas
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparação de Esquemas
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -614,7 +614,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |SQL.SSDTSchemaCompareStop|**Alt+Break**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Shift+Alt+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Designer de Tabela
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Designer de Tabela
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -625,7 +625,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |SQL.Rename|**F2**<br /><br /> ou<br /><br /> **Ctrl+R, R**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -646,7 +646,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Editor T-SQL PDW
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -661,13 +661,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Shift+Alt+PgDn**|
 
-##  <a name="page-inspector"></a>Inspetor de Página
+## <a name="page-inspector"></a>Inspetor de Página
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Designer de Consulta
+## <a name="query-designer"></a>Designer de Consulta
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -680,7 +680,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="query-results"></a>Resultados da consulta
+## <a name="query-results"></a>Resultados da consulta
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -688,7 +688,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |SQL.QueryResultsRefresh|**Shift+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Break**|
 
-##  <a name="report-designer"></a>Designer de Relatório
+## <a name="report-designer"></a>Designer de Relatório
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -714,14 +714,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.TabLeft|**Shift+Tab**|
 |View.ReportData|**Ctrl+Alt+D**|
 
-##  <a name="sequence-diagram"></a>Diagrama de sequência
+## <a name="sequence-diagram"></a>Diagrama de sequência
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Shift+Del**|
 
-##  <a name="settings-designer"></a>Designer de Configurações
+## <a name="settings-designer"></a>Designer de Configurações
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -730,13 +730,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.SelectionCancel|**Esc**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Gerenciador de Soluções
+## <a name="solution-explorer"></a>Gerenciador de Soluções
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |Comando|Atalho de teclado|
 |-------------| - |
@@ -761,13 +761,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Shift+Alt+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Gerenciador de Testes
+## <a name="test-explorer"></a>Gerenciador de Testes
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Editor de Texto
+## <a name="text-editor"></a>Editor de Texto
 
 | Comandos | Atalhos de teclado |
 | - | - |
@@ -884,38 +884,38 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+PgDn** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+PgUp** |
 
-##  <a name="uml-activity-diagram"></a>Diagrama de atividade UML
+## <a name="uml-activity-diagram"></a>Diagrama de atividade UML
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.Delete|**Shift+Del**|
 
-##  <a name="uml-class-diagram"></a>Diagrama de classe UML
+## <a name="uml-class-diagram"></a>Diagrama de classe UML
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="uml-component-diagram"></a>Diagrama de componente UML
+## <a name="uml-component-diagram"></a>Diagrama de componente UML
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
+## <a name="uml-use-case-diagram"></a>Diagrama de casos de uso UML
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.DeleteFromModel|**Shift+Del**|
 
-##  <a name="vc-accelerator-editor"></a>Editor de Tecla Aceleradora do VC
+## <a name="vc-accelerator-editor"></a>Editor de Tecla Aceleradora do VC
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |Edit.NewAccelerator|**Inserir**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
-##  <a name="vc-dialog-editor"></a>Editor de Caixa de Diálogo do VC
+## <a name="vc-dialog-editor"></a>Editor de Caixa de Diálogo do VC
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -949,7 +949,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Format.TestDialog|**Ctrl+T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
-##  <a name="vc-image-editor"></a>Editor de Imagem do VC
+## <a name="vc-image-editor"></a>Editor de Imagem do VC
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -991,13 +991,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Image.ZoomIn|**Ctrl+Shift+.**<br /><br /> ou<br /><br /> **Ctrl+seta para cima**|
 |Image.ZoomOut|**Ctrl+Shift+,**<br /><br /> ou<br /><br /> **Ctrl+Seta para baixo**|
 
-##  <a name="vc-string-editor"></a>Editor de Cadeia de Caracteres do VC
+## <a name="vc-string-editor"></a>Editor de Cadeia de Caracteres do VC
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |Edit.NewString|**Inserir**|
 
-##  <a name="view-designer"></a>Designer de Modo de Exibição
+## <a name="view-designer"></a>Designer de Modo de Exibição
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1010,13 +1010,13 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Comando|Atalho de teclado|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
-##  <a name="windows-forms-designer"></a>Designer de Formulários do Windows
+## <a name="windows-forms-designer"></a>Designer de Formulários do Windows
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1045,7 +1045,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.SizeControlUp|**Ctrl+Shift+Seta para cima**|
 |Edit.TabLeft|**Shift+Tab**|
 
-##  <a name="work-item-editor"></a>Editor de Itens de Trabalho
+## <a name="work-item-editor"></a>Editor de Itens de Trabalho
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1053,7 +1053,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Shift+Alt+L**|
 
-##  <a name="work-item-query-view"></a>Exibição de Consulta de Item de Trabalho
+## <a name="work-item-query-view"></a>Exibição de Consulta de Item de Trabalho
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1064,7 +1064,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-##  <a name="work-item-results-view"></a>Exibição de Resultados de Item de Trabalho
+## <a name="work-item-results-view"></a>Exibição de Resultados de Item de Trabalho
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1077,7 +1077,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |Team.Refresh|**F5**|
 |Window.Toggle|**Shift+Alt+V**|
 
-##  <a name="workflow-designer"></a>Designer de Fluxo de Trabalho
+## <a name="workflow-designer"></a>Designer de Fluxo de Trabalho
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1105,7 +1105,7 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl+Num -**|
 
-##  <a name="xaml-ui-designer"></a>XAML Designer
+## <a name="xaml-ui-designer"></a>XAML Designer
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
@@ -1127,14 +1127,14 @@ As seções na tabela a seguir incluem comandos que são globais e, desse modo, 
 |View.EdgeRightMoveRight|**Ctrl+Shift+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+Barra de espaços**|
 
-##  <a name="xml-text-editor"></a>Editor XML (Texto)
+## <a name="xml-text-editor"></a>Editor XML (Texto)
 
 |Comandos|Atalhos de teclado|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-##  <a name="xml-schema-designer"></a>Designer de Esquema XML
+## <a name="xml-schema-designer"></a>Designer de Esquema XML
 
 |Comandos|Atalhos de teclado|
 |--------------| - |

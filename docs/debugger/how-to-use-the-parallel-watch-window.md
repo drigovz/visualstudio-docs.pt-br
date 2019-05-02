@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ca4bab90105e00f556c7595dcea622f963aef9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6026ab6d0d59fb3a8f945e554fda26f10d98f952
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684826"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388470"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Definir uma inspeção nas variáveis em Threads paralelos no Visual Studio (C#, Visual Basic, C++)
 Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que uma expressão mantém em vários threads. Cada linha representa um thread que está sendo executado em um aplicativo, mas um thread pode ser representado em várias linhas. Mais especificamente, cada linha representa uma chamada de função cuja assinatura de função corresponde à função no registro de ativação atual. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads. As colunas a seguir são exibidas na janela **Inspeção Paralela**:
@@ -34,7 +34,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 - Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.
 
   > [!TIP]
-  >  Para exibir informações sobre a tarefa na **inspeção paralela** , você deverá primeiro abrir os **tarefa** janela.
+  > Para exibir informações sobre a tarefa na **inspeção paralela** , você deverá primeiro abrir os **tarefa** janela.
 
 - O espaço em branco *Adicionar inspeção* colunas, na qual você pode inserir expressões para assistir.
 
@@ -42,49 +42,49 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 
 ### <a name="to-display-the-parallel-watch-window"></a>Para exibir a janela Inspeção Paralela
 
-1.  Defina um ponto de interrupção no código.
+1. Defina um ponto de interrupção no código.
 
-2.  Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.
+2. Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.
 
-3.  Na barra de menus, escolha **Depurar**, **Janelas**, **Inspeção Paralela** e selecione uma janela de inspeção. Você pode abrir até quatro janelas.
+3. Na barra de menus, escolha **Depurar**, **Janelas**, **Inspeção Paralela** e selecione uma janela de inspeção. Você pode abrir até quatro janelas.
 
 ### <a name="to-add-a-watch-expression"></a>Para adicionar uma expressão de inspeção
 
--   Selecione uma do espaço em branco *Adicionar inspeção* colunas e, em seguida, insira uma expressão de inspeção.
+- Selecione uma do espaço em branco *Adicionar inspeção* colunas e, em seguida, insira uma expressão de inspeção.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread
 
--   Selecione a coluna do sinalizador da linha (primeira coluna), ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.
+- Selecione a coluna do sinalizador da linha (primeira coluna), ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados
 
--   Escolha o **Mostrar somente sinalizados** botão no canto superior esquerdo do **inspeção paralela** janela.
+- Escolha o **Mostrar somente sinalizados** botão no canto superior esquerdo do **inspeção paralela** janela.
 
 ### <a name="to-switch-to-another-thread"></a>Para alternar para outro thread
 
--   Clique duas vezes a coluna de thread atual (segunda coluna). (Teclado: selecione a linha e pressione Enter.)
+- Clique duas vezes a coluna de thread atual (segunda coluna). (Teclado: Selecione a linha e pressione Enter.)
 
 ### <a name="to-sort-a-column"></a>Para classificar uma coluna
 
--   Selecione o título da coluna.
+- Selecione o título da coluna.
 
 ### <a name="to-group-threads"></a>Para agrupar threads
 
--   Abra o menu de atalho da janela Inspeção Paralela, escolha **Agrupar por** e selecione o item de submenu apropriado.
+- Abra o menu de atalho da janela Inspeção Paralela, escolha **Agrupar por** e selecione o item de submenu apropriado.
 
 ### <a name="to-freeze-or-thaw-threads"></a>Para congelar ou descongelar threads
 
--   Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.
+- Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.
 
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar os dados na janela Inspeção Paralela
 
--   Escolha o botão **Abrir no Excel** e, depois, **Abrir no Excel** ou **Exportar para CSV**.
+- Escolha o botão **Abrir no Excel** e, depois, **Abrir no Excel** ou **Exportar para CSV**.
 
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por uma expressão booliana
 
--   Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.
+- Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como usar a janela Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Como: Usar a janela de Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)
+- [Passo a passo: depurar um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

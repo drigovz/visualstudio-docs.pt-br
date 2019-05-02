@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441665"
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
 ## <a name="usage"></a>Uso  
  Estas são algumas maneiras pelas quais é possível usar a Exibição Threads:  
   
--   Identifique os motivos pelos quais a interface do usuário de um aplicativo não responde durante determinadas fases de execução.  
+- Identifique os motivos pelos quais a interface do usuário de um aplicativo não responde durante determinadas fases de execução.  
   
--   Identifique a quantidade de tempo gasto no bloqueio em sincronização, E/S, falhas de página e em outros eventos.  
+- Identifique a quantidade de tempo gasto no bloqueio em sincronização, E/S, falhas de página e em outros eventos.  
   
--   Identifique o grau de interferência de outros processos que estão em execução no sistema.  
+- Identifique o grau de interferência de outros processos que estão em execução no sistema.  
   
--   Identifique problemas de balanceamento de carga na execução paralela.  
+- Identifique problemas de balanceamento de carga na execução paralela.  
   
--   Identifique os motivos de escalabilidade que é inexistente ou que está abaixo do ideal (por exemplo, por que o desempenho de um aplicativo paralelo não melhora quando mais núcleos lógicos estão disponíveis).  
+- Identifique os motivos de escalabilidade que é inexistente ou que está abaixo do ideal (por exemplo, por que o desempenho de um aplicativo paralelo não melhora quando mais núcleos lógicos estão disponíveis).  
   
--   Entenda o grau de simultaneidade no aplicativo, para ajudar na paralelização.  
+- Entenda o grau de simultaneidade no aplicativo, para ajudar na paralelização.  
   
--   Entenda as dependências entre os threads de trabalho e os caminhos críticos de execução.  
+- Entenda as dependências entre os threads de trabalho e os caminhos críticos de execução.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Examinando threads e intervalos de tempo específicos  
  A Exibição Threads mostra uma linha do tempo. É possível aplicar zoom e panorâmica à linha do tempo para examinar intervalos e threads específicos do aplicativo. No eixo X é mostrado o tempo e no eixo Y são mostrados vários canais:  
@@ -97,7 +97,7 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
  Ao selecionar um ponto em um segmento de execução, a Visualização Simultânea procura esse ponto no tempo na pilha de chamadas relevante e, em seguida, exibe um cursor preto acima do ponto selecionado no segmento de execução e exibe a própria pilha de chamadas na guia **Pilha atual**. É possível selecionar vários pontos no segmento de execução.  
   
 > [!NOTE]
->  A Visualização Simultânea pode não conseguir resolver uma seleção em um segmento de execução. Normalmente, isso ocorre quando a duração do segmento é inferior a um milissegundo.  
+> A Visualização Simultânea pode não conseguir resolver uma seleção em um segmento de execução. Normalmente, isso ocorre quando a duração do segmento é inferior a um milissegundo.  
   
  Para obter um perfil de execução para todos os threads habilitados (não ocultos) no intervalo de tempo selecionado, escolha o botão **Execução** na legenda ativa.  
   

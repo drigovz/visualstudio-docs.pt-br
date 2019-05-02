@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979439"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Como: Adicionar parâmetros de contexto a uma configuração de execução de teste de carga
 
@@ -52,11 +52,11 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Para adicionar um parâmetro de contexto a uma configuração de execução
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Expanda a pasta **Configurações de Execução** na árvore de teste de carga no Editor de Teste de Carga.
+2. Expanda a pasta **Configurações de Execução** na árvore de teste de carga no Editor de Teste de Carga.
 
-3.  Clique com o botão direito do mouse na configuração de execução específica à qual você deseja adicionar um parâmetro de contexto e escolha em **Adicionar parâmetro de contexto**.
+3. Clique com o botão direito do mouse na configuração de execução específica à qual você deseja adicionar um parâmetro de contexto e escolha em **Adicionar parâmetro de contexto**.
 
      Um novo parâmetro de contexto é adicionado à pasta **Parâmetros de contexto** na pasta **Configurações de execução** na árvore de teste de carga.
 
@@ -64,11 +64,11 @@ Além disso, atribuindo valores diferentes a um parâmetro de contexto usando o 
 
      Se a configuração de execução já contém uma pasta **Parâmetros de contexto**, você pode clicar com o botão direito do mouse nela e escolher **Adicionar parâmetro de contexto**.
 
-4.  Na janela **Propriedades**, altere o valor de **Nome** conforme apropriado (por exemplo, WebServer1). Na janela **Propriedades**, altere **Valor** para o parâmetro que você deseja usar (por exemplo, `http://CorporateStagingWebServer`).
+4. Na janela **Propriedades**, altere o valor de **Nome** conforme apropriado (por exemplo, WebServer1). Na janela **Propriedades**, altere **Valor** para o parâmetro que você deseja usar (por exemplo, `http://CorporateStagingWebServer`).
 
-5.  (Opcional) Repita as etapas 3 a 5 e use uma cadeia de caracteres diferente para a propriedade **Valor** (por exemplo, `http://CorporateProductionWebServer`).
+5. (Opcional) Repita as etapas 3 a 5 e use uma cadeia de caracteres diferente para a propriedade **Valor** (por exemplo, `http://CorporateProductionWebServer`).
 
-6.  Selecione as configurações de execução que quer que estejam ativas. Abra o menu de atalho nas configurações de execução e selecione **Definir como ativo**.
+6. Selecione as configurações de execução que quer que estejam ativas. Abra o menu de atalho nas configurações de execução e selecione **Definir como ativo**.
 
 ## <a name="see-also"></a>Consulte também
 

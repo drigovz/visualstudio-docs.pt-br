@@ -1,26 +1,21 @@
 ---
 title: Usar marcadores de texto com a API herdada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430110"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,18 +25,18 @@ Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exi
  Devido à sobrecarga de desempenho associada com marcadores de texto, não crie muitos marcadores para seus buffers de texto. Cada marcador é atualizado toda vez que um usuário edita o conteúdo do buffer.  
   
 > [!NOTE]
->  Os usuários podem alterar a cor de um tipo de marcador visíveis, mas não sua forma e estilo. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Os usuários podem alterar a cor de um tipo de marcador visíveis, mas não sua forma e estilo. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[Como adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)|Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo para uma exibição de texto.|  
-|[Como implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)|Descreve como implementar uma instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marcador que é usado para indicar erros usando ondulados vermelhos.|  
-|[Como criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
-|[Como usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
+|[Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)|Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo para uma exibição de texto.|  
+|[Como: implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)|Descreve como implementar uma instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marcador que é usado para indicar erros usando ondulados vermelhos.|  
+|[Como: criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
+|[Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
 |[Dentro do editor principal](../extensibility/inside-the-core-editor.md)|Descreve os recursos do editor de núcleo e fornece detalhes sobre como personalizar o editor de núcleo.|  
-|[Recursos do Editor](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.|  
+|[Recursos do Editor](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.|  
   
 ## <a name="reference"></a>Referência  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exi
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Fornece acesso a e ajusta a posição de um marcador de texto em um buffer de texto, usando coordenadas unidimensionais. Se for possível, não use essa interface.
-

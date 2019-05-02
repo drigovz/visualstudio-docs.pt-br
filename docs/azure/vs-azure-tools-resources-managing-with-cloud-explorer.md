@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: fc72fdc63fefd5b60ecfc8ab001b94b87b69e481
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62572592"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gerenciar os recursos associados com suas contas do Azure no Visual Studio Cloud Explorer
 
@@ -24,17 +24,17 @@ O Cloud Explorer é criado na pilha do Azure Resource Manager, assim como o [Por
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) com a **Carga de trabalho do Azure** selecionada ou uma versão anterior do Visual Studio com o [Microsoft Azure SDK para .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 ou posterior (consulte [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) com **Carga de trabalho Azure** selecionada. Você também pode usar uma versão anterior do Visual Studio com o [Microsoft Azure SDK para .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Conta do Microsoft Azure – se não tiver uma conta do Azure, você poderá [inscrever-se para uma avaliação gratuita](http://go.microsoft.com/fwlink/?LinkId=623901) ou [ativar seus benefícios de assinante do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Para exibir o Cloud Explorer, selecione **Exibir** > **Cloud Explorer** na barra de menus.
+> Para exibir o Cloud Explorer, pressione **Ctrl**+**Q** para ativar a caixa de pesquisa e, em seguida, insira **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Adicionar uma conta do Azure ao Cloud Explorer
 
-Para exibir os recursos associados a uma conta do Azure, você deve primeiro adicionar a conta ao Cloud Explorer.
+Para exibir os recursos associados a uma conta do Azure, você deve primeiro adicionar a conta ao **Cloud Explorer**.
 
-1. No **Cloud Explorer**, selecione **Configurações de conta do Azure**.
+1. No **Cloud Explorer**, escolha o botão **Gerenciamento de Conta**.
 
    ![Ícone de configurações de conta do Azure do Cloud Explorer](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 

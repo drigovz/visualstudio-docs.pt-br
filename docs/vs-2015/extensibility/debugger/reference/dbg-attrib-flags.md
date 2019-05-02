@@ -1,14 +1,9 @@
 ---
 title: DBG_ATTRIB_FLAGS | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - DBG_ATTRIB_FLAGS
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a6ac7af381423300279de1d9b718a0aaa409498d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 74694c903040b278ed8864b46756cac66381405a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51729269"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445016"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -305,14 +300,14 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Comentários  
   
 > [!NOTE]
->  Os valores nesta enumeração, na verdade, não são definidos no assembly para c#. Em vez disso, você deve copiar as definições para seu arquivo de origem.  
+> Os valores nesta enumeração, na verdade, não são definidos no assembly para c#. Em vez disso, você deve copiar as definições para seu arquivo de origem.  
   
  Esses sinalizadores também são usados para filtrar o filho de um objeto, por exemplo, quando passado como um argumento para [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Os valores podem ser combinados com um bit a bit `OR`.  
   
  O `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` sinalizador é uma indicação ao [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)] para obter o [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) da interface do [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) interface e chamada [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) para obter uma lista de visualizadores personalizados.  
   
 ## <a name="requirements"></a>Requisitos  
- Cabeçalho: msdbg.h  
+ Header: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -324,4 +319,3 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
  [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)   
  [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)   
  [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
-

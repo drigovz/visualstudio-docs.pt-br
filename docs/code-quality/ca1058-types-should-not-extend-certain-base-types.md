@@ -1,6 +1,6 @@
 ---
 title: 'CA1058: Tipos não devem estender determinados tipos base'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - TypesShouldNotExtendCertainBaseTypes
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 831f8ad60b7cef0f172bbc4b3795d036779b2419
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5d88f08746035792913601b280a0794a9ff50bf2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795756"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Tipos não devem estender determinados tipos base
 
@@ -31,33 +31,31 @@ ms.locfileid: "55915524"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo visível externamente estende determinados tipos de base. No momento, esta regra relata tipos que derivam de tipos a seguir:
+
+Um tipo estende um dos seguintes tipos de base:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
-
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
-
 - <xref:System.Collections.CollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.DictionaryBase?displayProperty=fullName>
-
 - <xref:System.Collections.Queue?displayProperty=fullName>
-
 - <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>
-
 - <xref:System.Collections.SortedList?displayProperty=fullName>
-
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-## <a name="rule-description"></a>Descrição da regra
- Para o .NET Framework versão 1, era recomendável para derivar novas exceções de <xref:System.ApplicationException>. A recomendação foi alterada e novas exceções devem derivar <xref:System.Exception?displayProperty=fullName> ou uma de suas subclasses no <xref:System> namespace.
+Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
 
- Não crie uma subclasse de <xref:System.Xml.XmlDocument> se você deseja criar uma exibição XML de uma fonte de dados ou modelo de objeto subjacente.
+## <a name="rule-description"></a>Descrição da regra
+
+Para o .NET Framework versão 1, era recomendável para derivar novas exceções de <xref:System.ApplicationException>. A recomendação foi alterada e novas exceções devem derivar <xref:System.Exception?displayProperty=fullName> ou uma de suas subclasses no <xref:System> namespace.
+
+Não crie uma subclasse de <xref:System.Xml.XmlDocument> se você deseja criar uma exibição XML de uma fonte de dados ou modelo de objeto subjacente.
 
 ### <a name="non-generic-collections"></a>Coleções não genéricas
- Usar e/ou estender coleções genéricas, sempre que possível. Não estenda coleções não genéricas no seu código, a menos que você o enviados anteriormente.
 
- **Exemplos de uso incorreto**
+Usar e/ou estender coleções genéricas, sempre que possível. Não estenda coleções não genéricas no seu código, a menos que você o enviados anteriormente.
+
+**Exemplos de uso incorreto**
 
 ```csharp
 public class MyCollection : CollectionBase
@@ -69,7 +67,7 @@ public class MyReadOnlyCollection : ReadOnlyCollectionBase
 }
 ```
 
- **Exemplos de uso correto**
+**Exemplos de uso correto**
 
 ```csharp
 public class MyCollection : Collection<T>
@@ -82,7 +80,19 @@ public class MyReadOnlyCollection : ReadOnlyCollection<T>
 ```
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, derive o tipo de um tipo base diferente ou uma coleção genérica.
+
+Para corrigir uma violação dessa regra, derive o tipo de um tipo base diferente ou uma coleção genérica.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprimir um aviso nessa regra quanto a violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso nessa regra quanto a violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genéricas se o código foi lançado anteriormente.
+
+Não suprimir um aviso nessa regra quanto a violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso nessa regra quanto a violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genéricas se o código foi lançado anteriormente.
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.ca1058.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).

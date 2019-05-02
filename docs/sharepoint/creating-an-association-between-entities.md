@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c285b699487bd761447e5fbdf6ccd77987a8c0a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952885"
 ---
 # <a name="create-an-association-between-entities"></a>Criar uma associação entre entidades
   Você pode definir relações entre entidades em seu modelo de conectividade de dados comerciais (BDC) com a criação de associações. Visual Studio gera os métodos que fornecem os consumidores do modelo com informações sobre cada associação. Esses métodos podem ser consumidos por web parts, listas ou aplicativos personalizados para exibir relações de dados em uma interface de usuário (IU) do SharePoint.

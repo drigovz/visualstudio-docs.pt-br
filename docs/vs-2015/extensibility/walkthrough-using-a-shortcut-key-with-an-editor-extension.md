@@ -1,28 +1,23 @@
 ---
 title: 'Passo a passo: Usando uma tecla de atalho com uma extensão do Editor | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1e68cf9d3e33ad07ab092de680078972dfaf2d70
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5c9cb20bafa552c47a2f599d12e6b66fdb2bde59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51797449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085891"
 ---
-# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: usando uma tecla de atalho com uma extensão do editor
+# <a name="walkthrough-using-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usando uma tecla de atalho com uma extensão do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo se baseia no modelo de editor do adorno de visor e permite que você adicionar o adorno, usando o caractere +.  
@@ -55,9 +50,9 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="defining-the-command-filter"></a>Definindo o filtro de comando  
  O filtro de comando é uma implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, que manipula o comando instanciando o adorno.  
   
-1.  Adicione um arquivo de classe e denomine- `KeyBindingCommandFilter`.  
+1. Adicione um arquivo de classe e denomine- `KeyBindingCommandFilter`.  
   
-2.  Adicione as seguintes instruções using.  
+2. Adicione as seguintes instruções using.  
   
     ```csharp  
     using System;  
@@ -68,13 +63,13 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-3.  A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
+3. A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.  
   
     ```csharp  
     internal class KeyBindingCommandFilter : IOleCommandTarget  
     ```  
   
-4.  Adicione campos privados para o modo de exibição de texto, o próximo comando na cadeia de comando e um sinalizador para representar se o filtro de comando já foi adicionado.  
+4. Adicione campos privados para o modo de exibição de texto, o próximo comando na cadeia de comando e um sinalizador para representar se o filtro de comando já foi adicionado.  
   
     ```csharp  
     private IWpfTextView m_textView;  
@@ -83,7 +78,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     internal bool m_adorned;  
     ```  
   
-5.  Adicione um construtor que define o modo de texto.  
+5. Adicione um construtor que define o modo de texto.  
   
     ```csharp  
     public KeyBindingCommandFilter(IWpfTextView textView)  
@@ -93,7 +88,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-6.  Implementar o `QueryStatus()` método da seguinte maneira.  
+6. Implementar o `QueryStatus()` método da seguinte maneira.  
   
     ```vb  
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)  
@@ -102,7 +97,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-7.  Implementar o `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um + caractere é digitado.  
+7. Implementar o `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um + caractere é digitado.  
   
     ```csharp  
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)  
@@ -129,7 +124,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ## <a name="adding-the-command-filter"></a>Adicionando o filtro de comando  
  O provedor de adorno deve adicionar um filtro de comando para a exibição de texto. Neste exemplo, o provedor implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> para escutar eventos de criação de exibição de texto. Este provedor de adorno também exporta a camada de adorno, que define a ordem Z do adorno.  
   
-1.  No arquivo KeyBindingTestTextViewCreationListener, adicione as seguintes instruções using:  
+1. No arquivo KeyBindingTestTextViewCreationListener, adicione as seguintes instruções using:  
   
     ```csharp  
     using System;  
@@ -144,7 +139,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-2.  Na definição de camada de adorno, altere o nome do AdornmentLayer a partir **KeyBindingTest** à **PurpleCornerBox**.  
+2. Na definição de camada de adorno, altere o nome do AdornmentLayer a partir **KeyBindingTest** à **PurpleCornerBox**.  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -153,7 +148,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     public AdornmentLayerDefinition editorAdornmentLayer;  
     ```  
   
-3.  Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
+3. Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.  
   
     ```csharp  
     [Import(typeof(IVsEditorAdaptersFactoryService))]  
@@ -161,7 +156,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
   
     ```  
   
-4.  Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele adiciona o `KeyBindingCommandFilter`.  
+4. Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele adiciona o `KeyBindingCommandFilter`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -170,7 +165,7 @@ this.layer = view.GetAdornmentLayer("PurpleCornerBox");
     }  
     ```  
   
-5.  O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.  
+5. O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.  
   
     ```csharp  
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)  
@@ -243,9 +238,8 @@ private void CreateVisuals(ITextViewLine line)
   
 ## <a name="building-and-testing-the-code"></a>Compilar e testar o código  
   
-1.  Compile a solução KeyBindingTest e executá-lo na instância experimental.  
+1. Compile a solução KeyBindingTest e executá-lo na instância experimental.  
   
-2.  Crie ou abra um arquivo de texto. Digite algumas palavras que contém o caractere 'a' e, em seguida, digite + em qualquer lugar na exibição de texto.  
+2. Crie ou abra um arquivo de texto. Digite algumas palavras que contém o caractere 'a' e, em seguida, digite + em qualquer lugar na exibição de texto.  
   
      Um quadrado roxo deve aparecer em cada caractere 'a' no arquivo.
-

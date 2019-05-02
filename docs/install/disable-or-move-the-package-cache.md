@@ -16,12 +16,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8472394c06d3388b480abdaf262610811a7a72f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 47793cff733d84634c79355fb7639dbdad1cd82f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974226"
 ---
 # <a name="disable-or-move-the-package-cache"></a>Desabilitar ou mover o cache do pacote
 
@@ -50,7 +52,7 @@ Você também pode definir a `KeepDownloadedPayloads` [política do Registro](se
 
 Uma configuração comum do sistema é ter o Windows instalado em um SSD com um disco rígido maior (ou mais) para necessidades de desenvolvimento, como código-fonte, binários de programa e muito mais. Se quiser trabalhar offline em vez disso, você poderá mover o cache do pacote.
 
-No momento, você só poderá fazer isso se definir a `CachePath`[política do Registro](set-defaults-for-enterprise-deployments.md) antes de instalar, modificar ou reparar o Visual Studio.
+No momento, você só poderá fazer isso se definir a [política do Registro](set-defaults-for-enterprise-deployments.md) `CachePath` antes de instalar, modificar ou reparar o Visual Studio.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

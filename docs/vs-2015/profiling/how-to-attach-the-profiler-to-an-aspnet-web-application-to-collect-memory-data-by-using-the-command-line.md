@@ -9,20 +9,20 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 454bcc4fe8e17530d71927d373a05f5f12beae61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432845"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados de memória usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um aplicativo Web ASP.NET para coletar dados de memória usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as Ferramentas de linha de comando das Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para anexar o criador de perfil a um aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e coletar dados sobre o número e o tamanho das alocações de memória do .NET Framework. Também é possível coletar dados sobre o tempo de vida de objetos de memória do .NET Framework.  
 
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Para coletar dados de desempenho de um aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], você deve usar a ferramenta [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) para inicializar as variáveis de ambiente apropriadas no computador que hospeda o aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Em seguida, você deve reiniciar o computador para configurar o servidor Web para criação de perfil.  
 
@@ -40,7 +40,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   As opções **/globalsamplegc** e **/globalsamplegclife** especificam o tipo de dados de memória a serem coletados.  
+   - As opções **/globalsamplegc** e **/globalsamplegclife** especificam o tipo de dados de memória a serem coletados.  
 
         Especifique uma e apenas uma das seguintes opções.  
 
@@ -49,7 +49,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
        |**/globalsamplegc**|Habilita a coleta de dados de alocação de memória.|  
        |**/globalsamplegclife**|Habilita a coleta de dados de alocação de memória e de dados de tempo de vida do objeto.|  
 
-   -   A opção **/samplelineoff** desabilita a atribuição dos dados coletados para linhas específicas do código-fonte. Se essa opção for especificada, os dados serão atribuídos no nível da função.  
+   - A opção **/samplelineoff** desabilita a atribuição dos dados coletados para linhas específicas do código-fonte. Se essa opção for especificada, os dados serão atribuídos no nível da função.  
 
 3. Reinicie o computador para definir a nova configuração do ambiente.  
 
@@ -66,7 +66,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
      É possível usar qualquer uma das opções a seguir com a opção **/start:sample**.  
 
    > [!NOTE]
-   >  Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.  
+   > Normalmente, as opções **/user** e **/crosssession** são necessárias para aplicativos ASP.NET.  
 
    |                                 Opção                                  |                                                                                                                                                        Descrição                                                                                                                                                        |
    |-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,23 +77,22 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).                                                                                          |
 
-
 6. Inicie o aplicativo Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] normalmente.  
 
 7. Anexe o criador de perfil ao processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Tipo:  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   A ID do processo `(PID)` especifica a ID ou o nome do processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
+   - A ID do processo `(PID)` especifica a ID ou o nome do processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
 
-   -   **/targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo.  
+   - **/targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Enquanto o aplicativo estiver em execução, você poderá controlar a coleta de dados iniciando e interrompendo a gravação dos dados no arquivo de dados do criador de perfil usando as opções de **VSPerfCmd.exe**. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  

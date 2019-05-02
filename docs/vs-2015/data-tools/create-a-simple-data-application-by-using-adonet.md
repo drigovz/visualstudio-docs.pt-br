@@ -1,12 +1,9 @@
 ---
 title: Criar um aplicativo de dados simples usando o ADO.NET | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -16,45 +13,44 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4754cad05858ed48fd421301b4b0f1d2c569a926
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49824276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436975"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você cria um aplicativo que manipule dados em um banco de dados, executar tarefas básicas, tais definindo cadeias de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.  
   
  Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira muito rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.  
   
 > [!IMPORTANT]
->  Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.  
+> Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.  
   
  **Neste tópico**  
   
--   [Configurar o banco de dados de exemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Configurar o banco de dados de exemplo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Criar os formulários e adicionar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Criar os formulários e adicionar controles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [A cadeia de caracteres de conexão da Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [A cadeia de caracteres de conexão da Store](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Recuperar a cadeia de conexão](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Recuperar a cadeia de conexão](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Escreva o código para os formulários](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Escreva o código para os formulários](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Teste seu aplicativo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Teste seu aplicativo](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para criar o aplicativo, você precisará de:  
   
 - Visual Studio Community Edition.  
   
-- SQL Server Express LocalDB.  
+- LocalDB do SQL Server Express.  
   
 - O banco de dados de exemplo pequeno que você criar seguindo as etapas em [criar um banco de dados SQL usando um script](../data-tools/create-a-sql-database-by-using-a-script.md).  
   
@@ -62,10 +58,10 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
   Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários a esse projeto, colocar botões e outros controles em formulários, definem as propriedades desses controles e codificar eventos simples . Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de iniciar este tópico.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurar o banco de dados de exemplo  
+## <a name="BKMK_setupthesampledatabase"></a> Configurar o banco de dados de exemplo  
  O banco de dados de exemplo para este passo a passo consiste nas tabelas clientes e pedidos. As tabelas não contêm dados inicialmente, mas você adicionará dados ao executar o aplicativo que você vai criar. O banco de dados também tem cinco procedimentos armazenados simples. [Criar um banco de dados SQL usando um script](../data-tools/create-a-sql-database-by-using-a-script.md) contém um script Transact-SQL que cria as tabelas, as chaves primária e estrangeiras, restrições e os procedimentos armazenados.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Criar os formulários e adicionar controles  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Criar os formulários e adicionar controles  
   
 1. Criar um projeto para um aplicativo do Windows Forms e nomeie-a como SimpleDataApp.  
   
@@ -73,16 +69,16 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
 2. Adicione dois formulários do Windows ao seu projeto para que ele tenha três formulários e forneça a eles os seguintes nomes:  
   
-   -   Navegação  
+   - Navegação  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.  
   
    > [!NOTE]
-   >  A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.  
+   > A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.  
   
    **Formulário de navegação**  
   
@@ -102,11 +98,11 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 |---------------------------------------|----------------|  
 |TextBox|Nome = txtCustomerName|  
 |TextBox|Nome = txtCustomerID<br /><br /> ReadOnly = True|  
-|Botão|Name = btnCreateAccount|  
+|Botão|Nome = btnCreateAccount|  
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Máximo = 5000<br /><br /> Nome = numOrderAmount|  
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpOrderDate|  
 |Botão|Nome = btnPlaceOrder|  
-|Botão|Name = btnAddAnotherAccount|  
+|Botão|Nome = btnAddAnotherAccount|  
 |Botão|Nome = btnAddFinish|  
   
  **Formulário FillOrCancel**  
@@ -116,40 +112,40 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 |Controles para o formulário FillOrCancel|Propriedades|  
 |----------------------------------------|----------------|  
 |TextBox|Nome = txtOrderID|  
-|Botão|Name = btnFindByOrderID|  
+|Botão|Nome = btnFindByOrderID|  
 |DateTimePicker|Formato = abreviado<br /><br /> Nome = dtpFillDate|  
 |DataGridView|Nome = dgvCustomerOrders<br /><br /> ReadOnly = True<br /><br /> RowHeadersVisible = False|  
 |Botão|Nome = btnCancelOrder|  
 |Botão|Nome = btnFillOrder|  
 |Botão|Nome = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> A cadeia de caracteres de conexão da Store  
+## <a name="BKMK_storetheconnectionstring"></a> A cadeia de caracteres de conexão da Store  
  Quando seu aplicativo tenta abrir uma conexão ao banco de dados, seu aplicativo deve ter acesso à cadeia de conexão. Para evitar inserir a cadeia de caracteres manualmente em cada formulário, armazenar a cadeia de caracteres no arquivo de configuração de aplicativo em seu projeto e crie um método que retorna a cadeia de caracteres quando o método é chamado de qualquer formulário em seu aplicativo.  
   
  Você pode encontrar a cadeia de conexão no **Pesquisador de objetos do SQL Server** por clicando duas vezes o banco de dados, selecionando **propriedades**e, em seguida, localizando a propriedade ConnectionString. Use Ctrl + A para selecionar a cadeia de caracteres.  
   
-1.  Na **Gerenciador de soluções**, selecione o **Properties** nó sob o projeto e, em seguida, selecione **Settings**.  
+1. Na **Gerenciador de soluções**, selecione o **Properties** nó sob o projeto e, em seguida, selecione **Settings**.  
   
-2.  No **nome** coluna, digite `connString`.  
+2. No **nome** coluna, digite `connString`.  
   
-3.  No **tipo** lista, selecione **(cadeia de caracteres de Conexão)**.  
+3. No **tipo** lista, selecione **(cadeia de caracteres de Conexão)**.  
   
-4.  No **escopo** lista, selecione **aplicativo**.  
+4. No **escopo** lista, selecione **aplicativo**.  
   
-5.  No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
+5. No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
   
 > [!NOTE]
->  Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
+## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
   
-1.  Na barra de menus, selecione **Project** > **Add Reference**e, em seguida, adicione uma referência à dll.  
+1. Na barra de menus, selecione **Project** > **Add Reference**e, em seguida, adicione uma referência à dll.  
   
-2.  Na barra de menus, selecione **Project** > **Add Class** para adicionar um arquivo de classe ao seu projeto e, em seguida, nomeie o arquivo `Utility`.  
+2. Na barra de menus, selecione **Project** > **Add Class** para adicionar um arquivo de classe ao seu projeto e, em seguida, nomeie o arquivo `Utility`.  
   
      Visual Studio cria o arquivo e exibe-o em **Gerenciador de soluções**.  
   
-3.  No arquivo de utilitário, substitua o código de espaço reservado com o código a seguir. Observe os comentários numerados (prefixados com o Util-) que identificam seções do código. A tabela que segue o código chama pontos chave.  
+3. No arquivo de utilitário, substitua o código de espaço reservado com o código a seguir. Observe os comentários numerados (prefixados com o Util-) que identificam seções do código. A tabela que segue o código chama pontos chave.  
   
     ```csharp  
     using System;  
@@ -223,7 +219,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
     |Util-2|Defina uma variável `returnValue`e inicializá-lo para `null` (c#) ou `Nothing` (Visual Basic).|  
     |Util-3|Mesmo que você inseriu `connString` como o nome da cadeia de caracteres de conexão na **Properties** janela, você deve especificar `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) no código.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Escreva o código para os formulários  
+## <a name="BKMK_writethecodefortheforms"></a> Escreva o código para os formulários  
  Esta seção contém visões gerais breves das quais cada formulário faz e mostra o código que cria os formulários. Comentários numerados identificam seções do código.  
   
 ### <a name="navigation-form"></a>Formulário de navegação  
@@ -734,7 +730,7 @@ End Namespace
 |NC-16|Defina um método para verificar se um nome de cliente está presente.<br /><br /> -Se a caixa de texto está vazia, exibir uma mensagem e retornar `false`, porque é necessário um nome para criar a conta.<br />-Se a caixa de texto não estiver vazia, retorne `true`.|  
 |NC-17|Adicione código para o manipulador de eventos para o `btnPlaceOrder` botão.|  
 |NC-18|Encapsular a chamada para `isPlaceOrderReady` em torno de `btnPlaceOrder_Click` código de evento, de modo que `uspPlaceNewOrder` não será executado se a entrada necessária não estiver presente.|  
-|NC-19 até NC-25|Essas seções de código lembram o código que você adicionou para a `btnCreateAccount_Click` manipulador de eventos.<br /><br /> -NC-19. Criar o `SqlCommand` objeto, `cmdNewOrder`e especifique `Sales.uspPlaceOrder` como o procedimento armazenado.<br />-NC-20 até NC-23 são parâmetros de entrada para o procedimento armazenado.<br />-NC-24. `@RC` conterá um valor de retorno que é a ID da ordem gerada do banco de dados. Direção desse parâmetro é especificada como `ReturnValue`.<br />-NC-25. Store o valor da ID do pedido no `orderID` variável que você declarou em NC-2 e exibir o valor em uma caixa de mensagem.|  
+|NC-19 até NC-25|Essas seções de código lembram o código que você adicionou para a `btnCreateAccount_Click` manipulador de eventos.<br /><br /> -   NC-19. Criar o `SqlCommand` objeto, `cmdNewOrder`e especifique `Sales.uspPlaceOrder` como o procedimento armazenado.<br />-NC-20 até NC-23 são parâmetros de entrada para o procedimento armazenado.<br />-   NC-24. `@RC` conterá um valor de retorno que é a ID da ordem gerada do banco de dados. Direção desse parâmetro é especificada como `ReturnValue`.<br />-   NC-25. Store o valor da ID do pedido no `orderID` variável que você declarou em NC-2 e exibir o valor em uma caixa de mensagem.|  
 |NC-26|Defina um método para verificar se uma ID de cliente existe e que foi especificado um valor em `numOrderAmount`.|  
 |NC-27|Chame o `ClearForm` método no `btnAddAnotherAccount` manipulador de eventos de clique.|  
 |NC-28|Criar o `ClearForm` método para limpar os valores do formulário se você quiser adicionar outro cliente.|  
@@ -1143,6 +1139,5 @@ End Namespace
 |FC-8|Adicione código ao manipulador de eventos Click para `btnFillOrder`. Esse código é executado o `Sales.uspFillOrder` procedimento armazenado.|  
 |FC-9|Crie um método para verificar se `OrderID` está pronto para enviar como um parâmetro para o `SqlCommand` objeto.<br /><br /> -Certifique-se de que uma ID foi inserida no `txtOrderID`.<br />-Use `Regex.IsMatch` para definir uma verificação simples para caracteres não inteiro.<br />-Você declarou o `parsedOrderID` variável em FC-2.<br />-Se a entrada é válida, converta o texto em um inteiro e armazenar o valor no `parsedOrderID` variável.<br />-Encapsular o `isOrderID` método ao redor de `btnFindByOrderID`, `btnCancelOrder`, e `btnFillOrder` manipuladores de eventos de clique.|  
   
-##  <a name="BKMK_testyourapplication"></a> Teste seu aplicativo  
+## <a name="BKMK_testyourapplication"></a> Teste seu aplicativo  
  Selecione a tecla F5 para compilar e testar seu aplicativo depois que você codifica cada manipulador de eventos de clique e, em seguida, depois de concluir a codificação.
-

@@ -1,5 +1,5 @@
 ---
-title: 'Erro: O Site usa endereço IP | Microsoft Docs'
+title: 'Erro: Site usa endereço IP | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -16,25 +16,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57790fce73c96a37c678f32cb76e332c28f73673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 468cb2c85be088213bc865122a790408c6c992b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850421"
 ---
-# <a name="error-site-uses-ip-address"></a>Erro: o site usa endereço IP
+# <a name="error-site-uses-ip-address"></a>Erro: O site usa endereço IP
 Esse erro ocorre quando o depurador tenta anexar-se automaticamente a um aplicativo Web que está usando um endereço IP. Isso ocorrerá se você alterar **Identificação do site** para **usar o endereço IP específico** no IIS.
 
  Para que o anexo automático funcione, você precisará criar o projeto com o endereço IP específico em vez de apenas o nome do computador. Caso contrário, o depurador alterará o nome do computador para localhost, o que causará uma falha ao enviar o verbo de depuração para o IIS.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
-1.  Use a anexação manual em vez disso (no menu depurar, escolha **Anexar ao Processo**).
+1. Use a anexação manual em vez disso (no menu depurar, escolha **Anexar ao Processo**).
 
      —ou—
 
-2.  Altere a configuração de **Identificação do site do IIS**.
+2. Altere a configuração de **Identificação do site do IIS**.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

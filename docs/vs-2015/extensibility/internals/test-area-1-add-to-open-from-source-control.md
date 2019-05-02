@@ -1,27 +1,22 @@
 ---
 title: 'Área de teste 1: Adicionar ao / abrir do controle de origem | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1ab1a267984f1a50cfd8e95cc8217572c0dacbcf
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e7b65eae0dcd71c2ad1bb3d72bf08ea90e69036a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51746655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441256"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: Adicionar ao / abrir do controle de origem
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,32 +26,32 @@ Esse controle de origem plug-in de teste área abrange colocando soluções ou p
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste:  
   
--   Para [!INCLUDE[vsvss](../../includes/vsvss-md.md)], abra do controle de origem: **arquivo**, **abra**, **projeto**/**solução**; procure no [!INCLUDE[vsvss](../../includes/vsvss-md.md)] local.  
+- Para [!INCLUDE[vsvss](../../includes/vsvss-md.md)], abrir do controle de origem: **Arquivo**, **aberto**, **projeto**/**solução**; procure no [!INCLUDE[vsvss](../../includes/vsvss-md.md)] local.  
   
--   Para outras fonte plug-ins de controle, abrir do controle de origem: **arquivo**, **controle do código-fonte**, **abrir do controle de origem**.  
+- Para outras fonte plug-ins de controle, abra do controle de origem: **Arquivo**, **controle de origem**, **abrir do controle de origem**.  
   
--   Adicionar ao controle do código-fonte: **arquivo**, **controle do código-fonte**, **adicionar solução ao arquivo de controle do código-fonte**, **controle do código-fonte**, **adicionar Projetos ao controle de origem selecionados**.  
+- Adicione ao controle de origem: **Arquivo**, **controle de origem**, **adicionar solução ao arquivo de controle do código-fonte**, **controle de origem**, **adicionar projetos selecionados ao controle do código-fonte**.  
   
--   Menu de atalho (projeto/solução), **adicionar solução ao controle do código-fonte**.  
+- Menu de atalho (projeto/solução), **adicionar solução ao controle do código-fonte**.  
   
--   Adicionar do controle de origem: **arquivo**, **controle do código-fonte**, **Adicionar projeto do controle do código-fonte**.  
+- Adicione do controle de origem: **Arquivo**, **controle de origem**, **Adicionar projeto do controle do código-fonte**.  
   
--   Para [!INCLUDE[vsvss](../../includes/vsvss-md.md)], adicionar controle do código-fonte também está disponível no **arquivo**, **Add**, **projeto existente**; procure no [!INCLUDE[vsvss](../../includes/vsvss-md.md)] local.  
+- Para [!INCLUDE[vsvss](../../includes/vsvss-md.md)], adicionar controle do código-fonte também está disponível no **arquivo**, **Add**, **projeto existente**; procure no [!INCLUDE[vsvss](../../includes/vsvss-md.md)] local.  
   
     > [!NOTE]
-    >  Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.  
+    > Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
   
--   Para cada tipo de projeto com suporte, um usuário deve ser capaz de "Adicionar ao" e "Aberta do" controle de origem.  
+- Para cada tipo de projeto com suporte, um usuário deve ser capaz de "Adicionar ao" e "Aberta do" controle de origem.  
   
--   Quando um projeto é adicionado ao controle de origem, um correspondente \< *ProjectName*> vspscc (arquivo de dica de projeto) é criado. Ele contém informações de conexão e de lista do arquivo de exclusão. Não exclua esse arquivo porque ele contém informações específicas do projeto.  
+- Quando um projeto é adicionado ao controle de origem, um correspondente \< *ProjectName*> vspscc (arquivo de dica de projeto) é criado. Ele contém informações de conexão e de lista do arquivo de exclusão. Não exclua esse arquivo porque ele contém informações específicas do projeto.  
   
--   Quando uma solução é adicionada ao controle do código-fonte, um correspondente \< *SolutionName*> vssscc (triplo S) de arquivo é criado. O arquivo de texto contém informações de conexão e uma lista de arquivos de exclusão, semelhante ao arquivo de dica de projeto. Esse arquivo é temporário e existe somente no banco de dados de controle de origem.  
+- Quando uma solução é adicionada ao controle do código-fonte, um correspondente \< *SolutionName*> vssscc (triplo S) de arquivo é criado. O arquivo de texto contém informações de conexão e uma lista de arquivos de exclusão, semelhante ao arquivo de dica de projeto. Esse arquivo é temporário e existe somente no banco de dados de controle de origem.  
   
--   Quando uma solução é aberta do controle do código-fonte, uma \< *SolutionName*> .vsscc (double S) arquivo que existe somente no banco de dados de controle do código-fonte, é criado localmente em um arquivo temporário. Esse arquivo contém o caminho da pasta de solução de conexão para o arquivo de solução. Esse arquivo é temporário e a cópia local é excluída quando a operação de "Abrir do controle de origem" foi concluída.  
+- Quando uma solução é aberta do controle do código-fonte, uma \< *SolutionName*> .vsscc (double S) arquivo que existe somente no banco de dados de controle do código-fonte, é criado localmente em um arquivo temporário. Esse arquivo contém o caminho da pasta de solução de conexão para o arquivo de solução. Esse arquivo é temporário e a cópia local é excluída quando a operação de "Abrir do controle de origem" foi concluída.  
   
--   Depois que um projeto é adicionado ao controle de origem, você pode executar as ações de controle do código-fonte nele (Check-out, Get e assim por diante).  
+- Depois que um projeto é adicionado ao controle de origem, você pode executar as ações de controle do código-fonte nele (Check-out, Get e assim por diante).  
   
 ## <a name="test-cases"></a>Casos de teste  
  Estes são os casos de teste específicos para adicionar aberto na área de teste de controle de origem de / para.  
@@ -81,7 +76,7 @@ Esse controle de origem plug-in de teste área abrange colocando soluções ou p
 |Abra uma solução que contém um local ou um projeto Web do IIS do controle de origem|1.  Crie um projeto de Web do IIS ou local.<br />2.  Adicione a solução ao controle de origem.<br />3.  Feche a solução.<br />4.  Abra a solução de controle de origem para um novo local.|Solução/projeto aberto do controle do código-fonte.|  
 |Abrir uma solução contendo um projeto Web do Site remoto do controle de origem|1.  Crie um projeto Web do Site remoto.<br />2.  Adicione a solução ao controle de origem. Se essa etapa for bem-sucedida, continue para a próxima etapa.<br />3.  Feche a solução.<br />4.  Abra a solução de controle de origem para um novo local.|`Result from Step 2:`<br /><br /> Web de Site remoto não está sob controle do código-fonte.<br /><br /> `Result from Step 4:`<br /><br /> Solução aberta do controle do código-fonte.<br /><br /> Projeto de Site remoto for carregado, mas não está sob controle do código-fonte.|  
   
-### <a name="case-1c-add-solution-from-source-control"></a>Caso c 1: adicionar a solução de controle de origem  
+### <a name="case-1c-add-solution-from-source-control"></a>Caso 1c: Adicionar solução de controle de origem  
  Esse caso de teste se concentra na adição de soluções de controle de origem.  
   
 |Ação|Etapas de teste|Resultados esperados para verificar|  
@@ -92,4 +87,3 @@ Esse controle de origem plug-in de teste área abrange colocando soluções ou p
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

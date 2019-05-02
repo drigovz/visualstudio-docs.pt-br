@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419541"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Como: Pesquisar texto por meio de programação em intervalos de planilhas
   O <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> método da <xref:Microsoft.Office.Interop.Excel.Range> objeto lhe permite pesquisar texto dentro do intervalo. Esse texto pode ser qualquer uma das cadeias de caracteres erro podem aparecer em uma célula de planilha, como também `#NULL!` ou `#VALUE!`. Para obter mais informações sobre cadeias de caracteres de erro, consulte [valores de erro de célula](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616970"
  O exemplo a seguir pesquisa um intervalo nomeado `Fruits` e modifica a fonte para as células que contêm a palavra "apples". Esse procedimento também usa o <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método, que usa o definido anteriormente configurações para repetir a pesquisa de pesquisa. Especifique a célula depois da qual pesquisar e o <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> método cuida do resto.
 
 > [!NOTE]
->  O <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> pesquisa do método encapsula voltar ao início do intervalo de pesquisa após ele atingir o fim do intervalo. Seu código deve garantir que a pesquisa não quebra ao redor em um loop infinito. O procedimento de exemplo mostra uma maneira de lidar com isso usando o <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriedade.
+> O <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> pesquisa do método encapsula voltar ao início do intervalo de pesquisa após ele atingir o fim do intervalo. Seu código deve garantir que a pesquisa não quebra ao redor em um loop infinito. O procedimento de exemplo mostra uma maneira de lidar com isso usando o <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriedade.
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Usar o método Find em um suplemento do Excel? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

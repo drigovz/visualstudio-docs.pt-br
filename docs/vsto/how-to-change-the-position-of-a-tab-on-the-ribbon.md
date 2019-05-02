@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bc628ffd37cd67c080bfd544c77d6189e6eca21a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 512dfda8c95ecd56fe44eb6878e6abc0d942a782
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826726"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>Como: Alterar a posição de uma guia na faixa de opções
   Você pode alterar a ordem das guias personalizadas em uma faixa de opções usando o **guia Editor de coleção**. Você pode posicionar guias personalizadas antes ou depois de uma guia interna na faixa de opções. Uma guia interna é uma guia que já está na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel.
@@ -26,33 +26,33 @@ ms.locfileid: "56641099"
 
 ### <a name="to-change-the-order-of-tabs-on-the-ribbon"></a>Para alterar a ordem das guias na faixa de opções
 
-1.  Selecione o arquivo de código da faixa de opções (*. vb* ou *. CS* arquivo) em **Gerenciador de soluções**.
+1. Selecione o arquivo de código da faixa de opções (*. vb* ou *. CS* arquivo) em **Gerenciador de soluções**.
 
-2.  Sobre o **modo de exibição** menu, clique em **Designer**.
+2. Sobre o **modo de exibição** menu, clique em **Designer**.
 
-3.  O Designer de faixa de opções com o botão direito e, em seguida, clique em **propriedades**.
+3. O Designer de faixa de opções com o botão direito e, em seguida, clique em **propriedades**.
 
-4.  No **propriedades** janela, selecione a **guias** propriedade e, em seguida, clique no botão de reticências (![elipse de designer móvel ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET para dispositivos móveis Elipse de Designer")).
+4. No **propriedades** janela, selecione a **guias** propriedade e, em seguida, clique no botão de reticências (![elipse de designer móvel ASP.NET](../sharepoint/media/mwellipsis.gif "ASP.NET para dispositivos móveis Elipse de Designer")).
 
      O **guia Editor de coleção** é exibida.
 
-5.  No **guia Editor de coleção**, no **membros** lista, selecione a guia que você deseja mover e clique em cima ou para baixo as setas para alterar a ordem de tabulação.
+5. No **guia Editor de coleção**, no **membros** lista, selecione a guia que você deseja mover e clique em cima ou para baixo as setas para alterar a ordem de tabulação.
 
 ### <a name="to-position-a-tab-before-or-after-a-built-in-tab-on-the-ribbon"></a>Para posicionar uma guia antes ou depois de uma guia interna na faixa de opções
 
-1.  No Designer de faixa de opções, selecione uma guia personalizada.
+1. No Designer de faixa de opções, selecione uma guia personalizada.
 
-2.  No **propriedades** janela, expanda o **ControlId** propriedade e, em seguida, certifique-se de que o valor da **ControlIdType** propriedade é definida como **personalizado**.
+2. No **propriedades** janela, expanda o **ControlId** propriedade e, em seguida, certifique-se de que o valor da **ControlIdType** propriedade é definida como **personalizado**.
 
-3.  No **propriedades** janela, expanda o **posição** propriedade.
+3. No **propriedades** janela, expanda o **posição** propriedade.
 
-4.  Defina as **PositionType** propriedade para o valor apropriado:
+4. Defina as **PositionType** propriedade para o valor apropriado:
 
-    -   **BeforeOfficeId** posiciona o grupo antes de uma guia interna especificada.
+    - **BeforeOfficeId** posiciona o grupo antes de uma guia interna especificada.
 
-    -   **AfterOfficeId** posiciona o grupo depois de uma guia interna especificada.
+    - **AfterOfficeId** posiciona o grupo depois de uma guia interna especificada.
 
-5.  Defina as **OfficeId** propriedade para a ID de controle de uma guia interna.
+5. Defina as **OfficeId** propriedade para a ID de controle de uma guia interna.
 
      Para obter uma lista de IDs de controle, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).
 

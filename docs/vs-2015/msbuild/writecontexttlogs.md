@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: deee2af2ccf1f2561410bc66b7f2f096bab61dd5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7bba9c5b46aa01cddca4de5c8e1347b540999289
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764931"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668087"
 ---
 # <a name="writecontexttlogs"></a>WriteContextTLogs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Grava arquivos de log para o contexto atual.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -44,7 +43,7 @@ HRESULT WINAPI WriteContextTLogs(LPCTSTR intermediateDirectory, LPCTSTR tlogRoot
  O nome raiz do nome do arquivo de log.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Um [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com o conjunto de bits [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) se o contexto de acompanhamento foi criado.  
+ Um ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) com o ([SUCCEEDED]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) conjunto de bits, se o contexto de acompanhamento foi criado.  
   
 ## <a name="requirements"></a>Requisitos  
  **Cabeçalho:** FileTracker.h  

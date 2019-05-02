@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686503"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903640"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudovariáveis no depurador do Visual Studio
 As pseudovariáveis são termos usados para exibir determinadas informações em uma janela de variável ou na caixa de diálogo do **QuickWatch**. Você pode inserir um pseudovariável da mesma maneira que incorporaria uma variável normal. As pseudovariáveis não são variáveis, no entanto, e não correspondem aos nomes de variáveis em seu programa.
@@ -32,7 +32,7 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 
 `$handles`
 
- em código nativo, você pode usar as pseudovariáveis mostradas na tabela:
+ No código nativo, você pode usar as pseudovariáveis mostradas na tabela a seguir:
 
 |Pseudovariável|Função|
 |--------------------|--------------|
@@ -47,19 +47,21 @@ As pseudovariáveis são termos usados para exibir determinadas informações em
 |`$clk`|Exibe a hora em ciclos de relógio.|
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|
 |`$exceptionstack`|Exibe o rastreamento de pilha da exceção atual de Tempo de Execução do Windows. `$ exceptionstack` funciona apenas em aplicativos UWP. `$ exceptionstack` Não há suporte para as exceções de C++ e SEH|
-|`$ReturnValue`|Mostra o valor retornado de um método .NET Framework.|
+|`$returnvalue`|Mostra o valor retornado de um método .NET Framework.|
 
- No C# e no Visual Basic, você pode usar as pseudovariáveis mostradas na tabela:
+ No C# você pode usar as pseudovariáveis mostradas na tabela a seguir:
 
 |Pseudovariável|Função|
 |--------------------|--------------|
-|`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.<br /><br /> Somente no Visual C#, quando o Assistente de Exceção for desabilitado, `$exception` será automaticamente adicionado à janela **Locais** quando ocorrer uma exceção.|
+|`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.<br /><br /> Quando o Assistente de exceção está desabilitado, `$exception` é adicionado automaticamente para o **Locals** janela quando ocorre uma exceção.|
 |`$user`|Exibe uma estrutura com informações de conta para a conta que executa o aplicativo. Por motivo de segurança, as informações de senha não são exibidas.|
+|`$returnvalue`|Mostra o valor retornado de um método .NET Framework.|
 
  No Visual Basic, você pode usar as pseudovariáveis mostradas na seguinte tabela:
 
 |Pseudovariável|Função|
 |--------------------|--------------|
+|`$exception`|Exibe informações sobre a última exceção. Se nenhuma exceção tiver ocorrido, a avaliação `$exception` exibirá uma mensagem de erro.|
 |`$delete` ou `$$delete`|Exclui uma variável implícita criada na janela **Imediato**. A sintaxe é `$delete,` *variável* ou`$delete,` *variável*`.`|
 |`$objectids` ou `$listobjectids`|Exibe todas as IDs de objetos como filhos da expressão especificada. A sintaxe é `$objectid,` *expressão* ou`$listobjectids,` *expressão*`.`|
 |`$` *N* `#`|Exibe o objeto com a ID de objeto igual a *N*.|

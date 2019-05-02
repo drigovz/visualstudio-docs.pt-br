@@ -2,7 +2,6 @@
 title: Interface IMachineDebugManagerEvents | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f9aab3d7abeecd22e830c68f174896df0e7df2da
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: fcfcc2aed0fedefdc149b83e911d33cd3b54cdef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977624"
 ---
 # <a name="imachinedebugmanagerevents-interface"></a>Interface IMachineDebugManagerEvents
 Sinaliza as alterações na lista de aplicativos em execução mantida pelo gerenciador de depuração do computador. Essa interface pode ser usada pelo IDE do depurador para exibir uma lista dinâmica de aplicativos.  

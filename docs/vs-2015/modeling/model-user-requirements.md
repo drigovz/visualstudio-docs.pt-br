@@ -1,12 +1,9 @@
 ---
 title: Requisitos de usuário do modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
@@ -15,18 +12,18 @@ ms.assetid: 359900f8-6d69-493d-bfdf-2c9069c74a26
 caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: ab92a08aa7359aa4393b3356384a4ccc352afb27
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8b1d3a5209490c253f4646210d4eeeda9d807155
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51776480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417808"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte seu sistema é reproduzido ajudá-los a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles enfoca um aspecto das necessidades dos usuários. Para uma demonstração em vídeo, consulte: [modelagem do domínio de negócios](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
+Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usuários ao desenhar diagramas sobre suas atividades e a parte seu sistema é reproduzido ajudá-los a atingir suas metas. Um modelo de requisitos é um conjunto desses diagramas, cada um deles enfoca um aspecto das necessidades dos usuários. Para uma demonstração em vídeo, consulte: [Modelando o domínio corporativo](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/).  
   
  Para ver quais versões do Visual Studio dão suporte a cada tipo de modelo, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -49,7 +46,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   Um modelo de requisitos fornece o maior benefício se você usá-lo para discussões de foco com os usuários ou seus representantes e visite-a no início de cada iteração. Não é necessário para concluí-lo detalhadamente antes de escrever código. Um aplicativo de trabalho parcialmente, mesmo se muito simplificado, geralmente constitui a base mais interessantes para discussão sobre os requisitos de usuários. O modelo é uma maneira eficaz de resumir os resultados dessas discussões. Para obter mais informações, consulte [usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md).  
   
 > [!NOTE]
->  Ao longo desses tópicos, "system" significa que o sistema ou o aplicativo que você está desenvolvendo. Pode ser uma grande coleção de muitos componentes de hardware e software; ou um único aplicativo; ou um componente de software dentro de um sistema maior. Em todos os casos, o modelo de requisitos descreve o comportamento que é visível fora do seu sistema, seja por meio de uma interface do usuário ou a API.  
+> Ao longo desses tópicos, "system" significa que o sistema ou o aplicativo que você está desenvolvendo. Pode ser uma grande coleção de muitos componentes de hardware e software; ou um único aplicativo; ou um componente de software dentro de um sistema maior. Em todos os casos, o modelo de requisitos descreve o comportamento que é visível fora do seu sistema, seja por meio de uma interface do usuário ou a API.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
  Você pode criar várias exibições diferentes dos requisitos dos usuários.  Cada modo de exibição fornece um tipo específico de informações.  Quando você cria esses modos de exibição, é melhor mudam frequentemente uns aos outros. Você pode iniciar a partir de qualquer modo de exibição.  
@@ -65,7 +62,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
  Observe que a maioria dos tipos de diagrama pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md). Para obter informações básicas sobre diagramas de desenho, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Descrevendo como seu sistema é usado  
+## <a name="UseCases"></a> Descrevendo como seu sistema é usado  
  Crie diagramas de caso de uso para descrever o que usa o sistema e o que ele usá-lo para. Um caso de uso representa uma meta de um usuário do sistema e o procedimento que eles executam para atingir a meta.  
   
  Por exemplo, uma refeição online vendendo o sistema deve permitir que os clientes escolham itens de um menu e deve permitir que os restaurantes fornecendo atualizar no menu. Você pode resumir isso em um diagrama de caso de uso:  
@@ -92,11 +89,11 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
-|Informações mais detalhadas sobre como criar casos de uso|[Diagramas de caso de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|  
-|Elementos em um diagrama de caso de uso|[Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)|  
+|Informações mais detalhadas sobre como criar casos de uso|[Diagrama de casos de uso UML: diretrizes](../modeling/uml-use-case-diagrams-guidelines.md)|  
+|Elementos em um diagrama de caso de uso|[Diagrama de casos de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)|  
 |Como desenvolver o código de casos de uso|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Definição de termos usados para descrever os requisitos  
+## <a name="RequirementsClasses"></a> Definição de termos usados para descrever os requisitos  
  Você pode usar diagramas de classe UML para ajudar você a desenvolver um vocabulário consistentes com os conceitos de negócios usados para as seguintes finalidades:  
   
 - Pelos próprios usuários para discutir os negócios em que o sistema funciona.  
@@ -141,9 +138,9 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|  
 |Como desenvolver o código de classes conceituais|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
- Em um diagrama de classe conceitual, normalmente não é útil colocar as setas nas associações para representar navegabilidade. Isso ocorre porque o diagrama não representa uma implementação. As associações representam relações entre objetos do mundo real. O seguinte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão tornar setas de não-direcional padrão: [exemplo: recursos de modelagem de domínio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
+ Em um diagrama de classe conceitual, normalmente não é útil colocar as setas nas associações para representar navegabilidade. Isso ocorre porque o diagrama não representa uma implementação. As associações representam relações entre objetos do mundo real. O seguinte [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão tornar setas de não-direcional padrão: [Exemplo: Recursos de modelagem de domínio UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Mostrando as regras de negócio  
+## <a name="BusinessRules"></a> Mostrando as regras de negócio  
  Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.  
   
  Muitas regras de negócios são restrições nas relações entre as classes conceituais. Você pode escrever esses *regras de negócio estático* como comentários associados com as classes relevantes em um diagrama de classe conceitual. Por exemplo:  
@@ -164,7 +161,7 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
 |Elementos em um diagrama de classe conceitual|[Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)|  
 |Como desenvolver um código que obedeça às regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço  
+## <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço  
  Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:  
   
 - Desempenho  
@@ -185,11 +182,10 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
-|Informações mais detalhadas sobre a qualidade dos requisitos de serviço da gravação|[Diretrizes para definir a qualidade dos requisitos de serviço](http://msdn.microsoft.com/en-us/9677a437-c2cb-4ac4-8c2d-4e3350005f06)|  
 |Anexando documentos adicionais para casos de uso|[Vincular um caso de uso a documentos e diagramas](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Como desenvolver um código que obedeça a qualidade dos requisitos de serviço|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Mostrando o fluxo de trabalho entre usuários e seu sistema  
+## <a name="Workflow"></a> Mostrando o fluxo de trabalho entre usuários e seu sistema  
  Você pode usar um diagrama de atividade para mostrar o fluxo de trabalho entre diferentes casos de uso. Geralmente é útil começar a um modelo de requisitos desenhando um diagrama de atividade mostrando as principais tarefas que os usuários realizam - com o sistema e fora dele.  
   
  Por exemplo:  
@@ -206,11 +202,11 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
-|Para obter mais informações sobre como definir fluxos de trabalho de negócios|[Diagramas de atividade UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|  
-|Elementos em um diagrama de atividade|[Diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md)|  
+|Para obter mais informações sobre como definir fluxos de trabalho de negócios|[Diagramas de atividade de UML: diretrizes](../modeling/uml-activity-diagrams-guidelines.md)|  
+|Elementos em um diagrama de atividade|[Diagramas de atividade de UML: referência](../modeling/uml-activity-diagrams-reference.md)|  
 |Como desenvolver o código em diagramas de atividade|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Mostrando as interações entre usuários e seu sistema  
+## <a name="Sequences"></a> Mostrando as interações entre usuários e seu sistema  
  Você pode usar um diagrama de sequência para mostrar o intercâmbio de mensagens entre seu sistema e atores externos ou entre as partes do seu sistema. Isso fornece uma exibição das etapas em um caso de uso que mostra claramente a sequência de interações. Diagramas de sequência são especialmente úteis em que há que várias interagir a terceiros em um caso de uso e também em que seu sistema tem uma API.  
   
  Por exemplo:  
@@ -223,8 +219,8 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
   
 |Para saber mais sobre|Ler|  
 |--------------------|----------|  
-|Para obter mais informações sobre como definir as interações|[Diagramas de sequência UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)|  
-|Elementos em um diagrama de sequência|[Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)|  
+|Para obter mais informações sobre como definir as interações|[Diagramas de sequência de UML: diretrizes](../modeling/uml-sequence-diagrams-guidelines.md)|  
+|Elementos em um diagrama de sequência|[Diagramas de sequência de UML: referência](../modeling/uml-sequence-diagrams-reference.md)|  
 |Como desenvolver o código em diagramas de sequência|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|  
   
 ## <a name="using-a-model-to-reduce-inconsistencies"></a>Usando um modelo para reduzir as inconsistências  
@@ -249,9 +245,6 @@ Visual Studio ajuda a entender, discuta e comunicar-se suas necessidades de usu�
  [Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)   
  [Extensão do VS de exemplo: Recursos de modelagem de domínio UML](http://go.microsoft.com/fwlink/?LinkId=213849)   
  [Extensão do VS de exemplo: Elementos UML de cor por estereótipo](http://go.microsoft.com/fwlink/?LinkID=213841)   
- [Extensão do VS de amostra: Elementos UML de Link diagramas, arquivos e outros elementos](http://go.microsoft.com/fwlink/?LinkID=213813)   
+ [Extensão do VS de exemplo: Elementos UML de link a diagramas, arquivos e outros elementos](http://go.microsoft.com/fwlink/?LinkID=213813)   
  [Extensão do VS de exemplo: Alinhar formas em um diagrama UML](http://go.microsoft.com/fwlink/?LinkID=213809)   
- [Vídeo: Modelando o domínio corporativo](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)
-
-
-
+ [Vídeo: Modelagem do domínio de negócios](http://channel9.msdn.com/posts/clinted/UML-with-VS-2010-Part-3-Modeling-the-Business-Domain/)

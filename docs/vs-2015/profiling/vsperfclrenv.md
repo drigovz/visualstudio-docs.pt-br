@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446692"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  A opção que você escolhe depende de qual dos três tipos de criação de perfil você usa: amostragem, instrumentação ou global. Uma opção separada é necessária para incluir dados de interação de camadas nos dados de criação de perfil. A sintaxe de cada opção é descrita nas tabelas a seguir.  
   
 > [!NOTE]
->  Ao terminar a criação de perfil, execute **VSPerfCLREnv** com a opção **/off** ou **/globaloff** para excluir as variáveis de ambiente necessárias na criação de perfil. Para obter mais informações, consulte as Opções VSPerfCLREnv para excluir configurações de ambiente mostradas aqui.  
+> Ao terminar a criação de perfil, execute **VSPerfCLREnv** com a opção **/off** ou **/globaloff** para excluir as variáveis de ambiente necessárias na criação de perfil. Para obter mais informações, consulte as Opções VSPerfCLREnv para excluir configurações de ambiente mostradas aqui.  
   
  **Opções VSPerfCLREnv para incluir dados de interação de camadas**  
   
 > [!WARNING]
->  A criação de perfil de interação de camadas pode ser coletada usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> A criação de perfil de interação de camadas pode ser coletada usando [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. No entanto, os dados de criação de perfil de interação de camadas somente podem ser exibidos no [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] e no [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  A criação de perfil de interação de camadas fornece informações adicionais sobre consultas ADO.NET em aplicativos de várias camadas. Os dados são coletados apenas para chamadas de função síncronas. Dados de interação podem ser adicionados a qualquer execução de criação de perfil usando qualquer método de criação de perfil.  
   

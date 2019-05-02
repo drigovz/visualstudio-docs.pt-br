@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3b75c15c5a2fcb59c4cfbf3a8768da38f1f6d0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082939"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserir controles e modificar seu comportamento no XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
   
  **Neste tópico:**  
   
--   [Adicionar controles ao formulário](#Insert)  
+- [Adicionar controles ao formulário](#Insert)  
   
--   [Fazer com que controles façam coisas](#Modify)  
+- [Fazer com que controles façam coisas](#Modify)  
   
-##  <a name="Insert"></a> Adicionar controles à prancheta  
+## <a name="Insert"></a> Adicionar controles à prancheta  
  Você pode arrastar controles do painel **Ativos** para a **prancheta** e, em seguida, modificá-los na janela **Propriedades**.  
   
  ![Mesclar &#45; Ativos &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -40,8 +40,8 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
 |`Button` ![](../designers/media/05df1779-a68f-436b-b834-a91b7995a3ec.png "05df1779-a68f-436b-b834-a91b7995a3ec")|![Configurar Recursos Instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[Projetar um botão](http://www.popscreen.com/v/6A4gb/Microsoft-Expression-Blend-Designing-a-Button)|  
 |`Textblock` ![](../designers/media/42165963-00f7-4a33-abcd-b0849edebada.png "42165963-00f7-4a33-abcd-b0849edebada")|![Configurar Recursos Instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon")[Adicionar imagens a um textbook](http://www.popscreen.com/v/6A4du/Microsoft-Expression-Blend-Adding-Images-to-a-TextBlock)|  
 |`Slider` ![](../designers/media/bf689d92-3c74-4218-815c-e98c930ac189.png "bf689d92-3c74-4218-815c-e98c930ac189")|![Configurar Recursos Instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Criar um Controle Deslizante com uma Dica de Ferramenta](http://www.bing.com/videos/search?q=slider%20expression%20blend&qs=n&form=QBVR&pq=slider%20expression%20blend&sc=1-23&sp=-1&sk=#view=detail&mid=F1BB7DB91B2772A8CA2AF1BB7DB91B2772A8CA2A)|  
-|`GridSplitter` ![](../designers/media/d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be.png "d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be")|![Configurar Recursos Instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabalhar com um GridSplitter](http://msdn.microsoft.com/expression/cc188687.aspx)|  
-  
+|`GridSplitter` ![](../designers/media/d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be.png "d08d529f-a27e-4a8f-95aa-8a4e8b4ee7be")|![Configurar Recursos Instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Trabalhar com um GridSplitter](https://www.youtube.com/watch?v=bf4t6c8ms2w)|          
+
 ### <a name="make-a-control-out-of-an-image-shape-or-path"></a>Fazer um controle de uma imagem, forma ou caminho  
  Você pode transformar qualquer objeto em um controle.  
   
@@ -53,7 +53,7 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
   
  Para criar um controle, selecione um objeto. No menu **Ferramentas**, clique em **Transformar em Controle**.  
   
-##  <a name="Modify"></a> Fazer com que controles façam coisas  
+## <a name="Modify"></a> Fazer com que controles façam coisas  
  Controles podem executar ações quando os usuários interagem com eles. Por exemplo, eles podem iniciar uma animação, atualizar uma fonte de dados ou reproduzir um vídeo.  
   
  Use *gatilhos*, *comportamentos* e *eventos* para fazer com que os controles façam coisas.  

@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 6cace8f9728f71648300f3dfd9a073453e74ada7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bcb75da8a21090450c18080240f76ae17c10281
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820990"
 ---
 # <a name="testing-tools-in-visual-studio"></a>Testando ferramentas no Visual Studio
 
@@ -36,7 +36,7 @@ As ferramentas de teste do Visual Studio podem ajudar você e sua equipe a desen
 - O [teste de carga](../test/quickstart-create-a-load-test-project.md) simula a carga em um aplicativo para servidores executando testes de unidade e testes de desempenho Web.
 
 > [!NOTE]
-> O teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, como o Live Unit Testing, o IntelliTest e o teste de IU codificado só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre edições, consulte [Comparar IDEs do Visual Studio 2017](https://visualstudio.microsoft.com/vs/compare/).
+> O teste de unidade está disponível em todas as edições do Visual Studio. Outras ferramentas de teste, como o Live Unit Testing, o IntelliTest e o teste de IU codificado só estão disponíveis no Visual Studio Enterprise edition. Para obter mais informações sobre as edições, confira [Comparar IDEs do Visual Studio](https://visualstudio.microsoft.com/vs/compare/).
 
 ## <a name="related-scenarios"></a>Cenários relacionados
 

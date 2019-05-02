@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910494"
 ---
 # <a name="create-options-pages"></a>Criar páginas de opções
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estrutura de pacote gerenciado, as classes derivadas de <xref:Microsoft.VisualStudio.Shell.DialogPage> estender a [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE adicionando **opções** páginas sob o **ferramentas** menu.
@@ -25,9 +25,9 @@ No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estrutura de pac
 
  Porque o ambiente instancia o objeto que implementa um determinado **opções de ferramentas** página quando a página específica é exibida pelo IDE:
 
--   Um **opção ferramentas** página deve ser implementada em seu próprio objeto e não no objeto que implementa um VSPackage.
+- Um **opção ferramentas** página deve ser implementada em seu próprio objeto e não no objeto que implementa um VSPackage.
 
--   Um objeto não é possível implementar várias **opções de ferramentas** páginas.
+- Um objeto não é possível implementar várias **opções de ferramentas** páginas.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Registrar como um provedor de página de opções de ferramentas
  Uma configuração de usuário de suporte de VSPackage através de **opções de ferramentas** páginas indica os objetos que fornece esses **opções de ferramentas** páginas por meio da aplicação de instâncias de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> aplicada para o <xref:Microsoft.VisualStudio.Shell.Package>implementação.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16c785534b843977f28c9a1383ac93f33e216947
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908960"
 ---
 # <a name="source-control-integration-essentials"></a>Conceitos básicos da integração do controle do código-fonte
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá suporte a dois tipos de integração de controle do código-fonte: um plug-in de controle de origem que fornece a funcionalidade básica e é criado usando a API de plug-in de controle do código-fonte (anteriormente conhecido como a API de MSSCCI) e uma solução de integração de controle do código-fonte com base em VSPackage que fornece a funcionalidade mais robusta.

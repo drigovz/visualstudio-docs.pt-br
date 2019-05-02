@@ -1,27 +1,22 @@
 ---
 title: Roteiro para estender o depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], roadmap
 - Debugging SDK, roadmap
 ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 806a5ebb4bf27f4d46bbe5b81a5dba6b319ee02e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 59e12a90d241bf07a53cc98c91eef4cfc6d7d063
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51816678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050979"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>Roteiro para estender o depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ Esta documentação fornece informações de referência e a guia para estender 
   
  O compilador e sua saída determinam o que você precisa fazer para implementar a depuração em seu produto. Se seu compilador:  
   
--   Direciona o sistema operacional nativo do Windows e grava um. Arquivo PDB, você pode depurar programas com o mecanismo de depuração de código nativo (DES), que é integrado ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você não precisa implementar um avaliador de expressão DE. O avaliador de expressão foi escrito para a sintaxe da linguagem de programação C++.  
+- Direciona o sistema operacional nativo do Windows e grava um. Arquivo PDB, você pode depurar programas com o mecanismo de depuração de código nativo (DES), que é integrado ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você não precisa implementar um avaliador de expressão DE. O avaliador de expressão foi escrito para a sintaxe da linguagem de programação C++.  
   
--   Produz a Microsoft intermediate language (MSIL) de saída, você pode depurar programas com o mecanismo de depuração de código gerenciado DE, que também é integrado ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Portanto, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de exemplo é fornecido para você. Para obter mais informações, consulte os seguintes tópicos:  
+- Produz a Microsoft intermediate language (MSIL) de saída, você pode depurar programas com o mecanismo de depuração de código gerenciado DE, que também é integrado ao [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Portanto, você só precisa implementar um avaliador de expressão. Um avaliador de expressão de exemplo é fornecido para você. Para mais informações, consulte os seguintes tópicos:  
   
      [Avaliação de expressão](../../extensibility/debugger/expression-evaluation-visual-studio-debugging-sdk.md)  
   
@@ -46,11 +41,11 @@ Esta documentação fornece informações de referência e a guia para estender 
   
      [Escrever um avaliador de expressão do Common Language Runtime](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)  
   
--   Destinos de um proprietário de sistema operacional ou outro ambiente de tempo de execução, você precisa escrever seu próprio DE. Um tutorial que cria um simples DE usando COM ATL é fornecido. Para obter mais informações, consulte os seguintes tópicos:  
+- Destinos de um proprietário de sistema operacional ou outro ambiente de tempo de execução, você precisa escrever seu próprio DE. Um tutorial que cria um simples DE usando COM ATL é fornecido. Para mais informações, consulte os seguintes tópicos:  
   
      [Criar um mecanismo de depuração personalizado](../../extensibility/debugger/creating-a-custom-debug-engine.md)  
   
-     [Tutorial: Criando um mecanismo de depuração usando COM ATL](http://msdn.microsoft.com/en-us/9097b71e-1fe7-48f7-bc00-009e25940c24)  
+     [Tutorial: Criando um mecanismo de depuração usando COM ATL](http://msdn.microsoft.com/9097b71e-1fe7-48f7-bc00-009e25940c24)  
   
      [Implementar um fornecedor de porta](../../extensibility/debugger/implementing-a-port-supplier.md)  
   
@@ -58,4 +53,3 @@ Esta documentação fornece informações de referência e a guia para estender 
   
 ## <a name="see-also"></a>Consulte também  
  [Introdução](../../extensibility/debugger/getting-started-with-debugger-extensibility.md)
-

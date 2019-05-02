@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1abc85ade942a0f9d8f88322f1117f32c94bd258
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644465"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967514"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Como: Adicionar formas a um documento do Visio programaticamente
   Você pode adicionar formas a um documento do Microsoft Office Visio recuperando os mestres de um estêncil e descartando as formas na página ativa.
@@ -29,7 +29,7 @@ ms.locfileid: "56644465"
 
 ### <a name="to-add-shapes-to-a-visio-document"></a>Para adicionar formas a um documento do Visio
 
--   Com um documento ativo, recuperar os mestres da coleção Documents.Masters e solte as formas no documento ativo. Você pode recuperar um mestre, usando o índice ou nome do mestre.
+- Com um documento ativo, recuperar os mestres da coleção Documents.Masters e solte as formas no documento ativo. Você pode recuperar um mestre, usando o índice ou nome do mestre.
 
      O exemplo de código a seguir cria um documento do Visio em branco e, em seguida, abre-o com o **formas básicas** estêncil encaixado. O código, em seguida, recupera várias formas e os solta na página ativa.
 

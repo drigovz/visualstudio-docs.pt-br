@@ -16,20 +16,20 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3884507bb594853ebdb0cbc16ab2ee07a372c566
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 95683c93558f67457f0868a76f52d1334e7a6712
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817605"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Opções, Editor de Texto, C/C++, Formatação
 
 Use essas páginas de propriedades para alterar o comportamento padrão do editor de código ao programar em C ou C++.
 
-[Páginas de propriedades de formatação do C++](media/cpp-formatting.png)
+![Páginas de propriedades de Formatação do C++](media/cpp-formatting.png)
 
- Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e clique em **Formatação**.
+Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e clique em **Formatação**.
 
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
@@ -38,14 +38,25 @@ Use essas páginas de propriedades para alterar o comportamento padrão do edito
 
 Esta página contém as opções de formatação de instruções e de blocos conforme você os digita.
 
-**Visual Studio 2017 versão 15.7 e posteriores**: A página também tem opções para configurar o suporte para o [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versão 5.0. O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 versão 15.7 e posteriores**:
+
+::: moniker-end
+
+A página também tem opções para configurar o suporte para o [ClangFormat](https://clang.llvm.org/docs/ClangFormat.html) versão 5.0. O ClangFormat é um utilitário que facilita a definição do estilo e a formatação do código com base em um conjunto de regras que pode ser configurado em um arquivo .clang-format ou _clang-format.
 
 ### <a name="configuring-clangformat-options"></a>Configurando as opções de ClangFormat
 
-No Visual Studio 2017 versão 15.7 e posteriores, o suporte ao ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas.
+::: moniker range="vs-2017"
+
+**Visual Studio 2017 versão 15.7 e posteriores**:
+
+::: moniker-end
+
+O suporte a ClangFormat está habilitado por padrão. Você pode escolher quais dessas convenções de formatação comuns serão aplicadas a todos os seus projetos: LLVM, Google, Chromium, Mozilla ou WebKit. Você também pode criar um arquivo .clang-format ou _clang-format de definição de formato personalizado. Quando esse arquivo está presente em uma pasta de projeto, o Visual Studio o usa para formatar todos os arquivos de código-fonte nessa pasta e em suas subpastas.
 
 Por padrão, o Visual Studio executa o clangformat.exe em segundo plano e aplica a formatação à medida que você digita. Você também pode especificar que ele seja executado somente para comandos de formatação invocados manualmente **Formatar Documento (Ctrl + K, Ctrl + D)** ou **Formatar Seleção (Ctrl + K, Ctrl + F)**.
-
 
 ## <a name="indentation-new-lines-spacing-wrapping-pages"></a>Páginas de Recuo, Novas Linhas, Disposição de Espaçamento
 

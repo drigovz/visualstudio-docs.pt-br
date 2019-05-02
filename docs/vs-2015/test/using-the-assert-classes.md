@@ -13,12 +13,12 @@ ms.assetid: da1b7a0d-4f1d-4d50-a07e-7b3ff60053f9
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b44932d9c9cd1defb691527fea40c4cf39d2fe5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 338a18bb48c20c20fa1f89583ed0d4af84c99d5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408389"
 ---
 # <a name="using-the-assert-classes"></a>Usando as classes Assert
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Use as classes Assert do namespace UnitTestingFramework para verificar a funcion
  A AssertInconclusiveException será lançada quando um teste produzir um resultado Inconclusivo. Normalmente, uma instrução Assert é adicionada a um teste em que você ainda está trabalhando para indicar que ele ainda não está pronto para ser executado.  
   
 > [!NOTE]
->  Uma estratégia alternativa seria marcar um teste que não está pronto para ser executado com o atributo Ignore. No entanto, a desvantagem é que não é fácil gerar um relatório sobre o número de testes que restaram para implementar.  
+> Uma estratégia alternativa seria marcar um teste que não está pronto para ser executado com o atributo Ignore. No entanto, a desvantagem é que não é fácil gerar um relatório sobre o número de testes que restaram para implementar.  
   
  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.UnitTestAssertException>  
   

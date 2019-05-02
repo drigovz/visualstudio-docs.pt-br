@@ -1,5 +1,5 @@
 ---
-title: 'Nova geração de projeto: Nos bastidores, parte 2 | Microsoft Docs'
+title: 'Geração de novo projeto: Nos bastidores, parte 2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f168a896c218f33735c4e67f43a9833a474191ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909301"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nova geração de projeto: Nos bastidores, parte dois
+# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: Bastidores, parte dois
+
 No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.
 
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução
@@ -31,7 +32,7 @@ No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/inte
 
  Vamos examinar um modelo de item de projeto comum. Extrair e examine o Program.cs na pasta Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -45,9 +46,9 @@ namespace $safeprojectname$
 }
 ```
 
- Se você criar um novo projeto de aplicativo do Windows chamado simples, o modelo substitui o `$safeprojectname$` parâmetro com o nome do projeto.
+Se você criar um novo projeto de aplicativo do Windows chamado simples, o modelo substitui o `$safeprojectname$` parâmetro com o nome do projeto.
 
-```
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -66,7 +67,7 @@ namespace Simple
 ## <a name="a-look-inside-a-vstemplate-file"></a>Uma olhada dentro de um. Arquivo VSTemplate
  Um arquivo. vstemplate básico tem este formato
 
-```
+```xml
 <VSTemplate Version="2.0.0"     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005"     Type="Project">
     <TemplateData>
     </TemplateData>
@@ -79,7 +80,7 @@ namespace Simple
 
  As marcas no \<TemplateContent > seção controle a geração de novos projetos e itens de projeto. Aqui está o \<TemplateContent > seção do arquivo na pasta \Program Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip cswindowsapplication.vstemplate.
 
-```
+```xml
 <TemplateContent>
   <Project File="WindowsApplication.csproj" ReplaceParameters="true">
     <ProjectItem ReplaceParameters="true"
@@ -121,7 +122,7 @@ namespace Simple
 
  O primeiro e único \<projeto > marca nas leituras de modelo:
 
-```
+```xml
 <Project File="WindowsApplication.csproj" ReplaceParameters="true">
 ```
 
@@ -132,7 +133,7 @@ namespace Simple
 
  Aqui está o \<ItemGroup > de Simple.csproj que cria as referências do projeto:
 
-```
+```xml
 <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -145,7 +146,7 @@ namespace Simple
 
  Você pode ver que essas são as referências do seis projeto que aparecem no Gerenciador de soluções. Aqui está uma seção de outro \<ItemGroup >. Número de linhas de código ter sido excluído por motivos de clareza. Esta seção faz Settings.Designer.cs dependente do Settings:
 
-```
+```xml
 <ItemGroup>
     <Compile Include="Properties\Settings.Designer.cs">
         <DependentUpon>Settings.settings</DependentUpon>
@@ -154,5 +155,6 @@ namespace Simple
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+
+- [Geração de novo projeto: bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

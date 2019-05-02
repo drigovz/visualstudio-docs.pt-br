@@ -1,12 +1,9 @@
 ---
 title: Definir um manipulador de gesto em um diagrama de modelagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, double-click
 - UML - extending, drag and drop
@@ -14,13 +11,13 @@ ms.assetid: e5e1d70a-3539-4321-a3b1-89e86e4d6430
 caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3e448b14a2a24994b9f03a569b0bb568d538bc69
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433156"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Definir um manipulador de gestos em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +34,9 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 ## <a name="creating-a-gesture-handler"></a>Criando um manipulador de gesto  
  Para definir um manipulador de gesto para um designer UML, você deve criar uma classe que define o comportamento do manipulador de gesto e inserir essa classe em um Visual Studio Integration VSIX (extensão). O VSIX atua como um contêiner que pode instalar o manipulador. Há dois métodos alternativos de definição de um manipulador de gesto:  
   
--   **Crie um manipulador de gesto em seu próprio VSIX usando um modelo de projeto.** Esse é o método mais rápido. Usá-lo se você não deseja combinar seu manipulador com outros tipos de extensão, como extensões de validação, itens de caixa de ferramentas personalizada ou comandos de menu.  
+- **Crie um manipulador de gesto em seu próprio VSIX usando um modelo de projeto.** Esse é o método mais rápido. Usá-lo se você não deseja combinar seu manipulador com outros tipos de extensão, como extensões de validação, itens de caixa de ferramentas personalizada ou comandos de menu.  
   
--   **Crie manipulador separado de gesto e projetos VSIX.** Use este método se você desejar combinar vários tipos de extensão no mesmo VSIX. Por exemplo, se seu manipulador de gesto esperar que o modelo observe as restrições específicas, você poderá inseri-lo no mesmo VSIX que um método de validação.  
+- **Crie manipulador separado de gesto e projetos VSIX.** Use este método se você desejar combinar vários tipos de extensão no mesmo VSIX. Por exemplo, se seu manipulador de gesto esperar que o modelo observe as restrições específicas, você poderá inseri-lo no mesmo VSIX que um método de validação.  
   
 #### <a name="to-create-a-gesture-handler-in-its-own-vsix"></a>Para criar um manipulador de gesto em seu próprio VSIX  
   
@@ -59,9 +56,9 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
 1. Criar um projeto de biblioteca de classes, nova [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução, ou em uma solução existente.  
   
-   1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
+   1. No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-   2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, escolha **biblioteca de classes**.  
+   2. Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, na coluna do meio, escolha **biblioteca de classes**.  
   
 2. Adicione as seguintes referências ao seu projeto.  
   
@@ -82,7 +79,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
 3. Adicionar um arquivo de classe ao projeto e defina seu conteúdo para o código a seguir.  
   
    > [!NOTE]
-   >  Altere o nome de namespace e classe de acordo com sua preferência.  
+   > Altere o nome de namespace e classe de acordo com sua preferência.  
   
    ```  
    using System.ComponentModel.Composition;  
@@ -207,25 +204,25 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
 #### <a name="to-add-a-separate-gesture-handler-to-a-vsix-project"></a>Para adicionar um manipulador separado de gesto a um projeto VSIX  
   
-1.  Você não precisará deste procedimento se você tiver criado o manipulador de gesto com seu próprio VSIX.  
+1. Você não precisará deste procedimento se você tiver criado o manipulador de gesto com seu próprio VSIX.  
   
-2.  Crie um projeto VSIX, a menos que sua solução já tenha um.  
+2. Crie um projeto VSIX, a menos que sua solução já tenha um.  
   
-    1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
+    1. Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2. Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
-3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
+3. Defina o projeto VSIX como o projeto de inicialização da solução.  
   
-    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
+    - No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
   
-4.  Na **vsixmanifest**, adicione o projeto de biblioteca de classes de manipulador de gesto como um componente de MEF:  
+4. Na **vsixmanifest**, adicione o projeto de biblioteca de classes de manipulador de gesto como um componente de MEF:  
   
-    1.  Sobre o **metadados** guia, defina um nome para o VSIX.  
+    1. Sobre o **metadados** guia, defina um nome para o VSIX.  
   
-    2.  Sobre o **instalar destinos** guia, defina as versões do Visual Studio como os destinos.  
+    2. Sobre o **instalar destinos** guia, defina as versões do Visual Studio como os destinos.  
   
-    3.  Sobre o **ativos** guia, escolha um **New**e, na caixa de diálogo, defina:  
+    3. Sobre o **ativos** guia, escolha um **New**e, na caixa de diálogo, defina:  
   
          **Tipo de** = **componente MEF**  
   
@@ -233,7 +230,7 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
          **Projeto** = *seu projeto de biblioteca de classes*  
   
-##  <a name="Executing"></a> Executar o manipulador de gesto  
+## <a name="Executing"></a> Executar o manipulador de gesto  
  Para fins de teste, execute o manipulador de gesto em modo de depuração.  
   
 #### <a name="to-test-the-gesture-handler"></a>Para testar o manipulador de gesto  
@@ -242,11 +239,11 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
     Uma instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é iniciado.  
   
-    **Solução de problemas**: se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
+    **Solução de problemas**: Se um novo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não for iniciado:  
   
-   -   Se você tiver mais de um projeto, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
+   - Se você tiver mais de um projeto, certifique-se de que o projeto do VSIX está definido como o projeto de inicialização da solução.  
   
-   -   No Solution Explorer, no menu de atalho da inicialização ou somente projeto, escolha Propriedades. No editor de propriedades de projeto, escolha o **depurar** guia. Certifique-se de que a cadeia de caracteres na **Iniciar programa externo** campo é o nome do caminho completo do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
+   - No Solution Explorer, no menu de atalho da inicialização ou somente projeto, escolha Propriedades. No editor de propriedades de projeto, escolha o **depurar** guia. Certifique-se de que a cadeia de caracteres na **Iniciar programa externo** campo é o nome do caminho completo do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], normalmente:  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   
@@ -256,19 +253,19 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
 4. Arraste um elemento do UML Explorer para o diagrama. Seu manipulador arrastar deve ser chamado.  
   
-   **Solução de problemas**: se o manipulador de gesto não funcionar, verifique se:  
+   **Solução de problemas**: Se o manipulador de gesto não funcionar, verifique se:  
   
--   O projeto do manipulador de gesto está listado como um componente MEF na **ativos** guia **source.extensions.manifest** no projeto VSIX.  
+- O projeto do manipulador de gesto está listado como um componente MEF na **ativos** guia **source.extensions.manifest** no projeto VSIX.  
   
--   Os parâmetros de todos os `Import` e `Export` atributos são válidos.  
+- Os parâmetros de todos os `Import` e `Export` atributos são válidos.  
   
--   O `CanDragDrop` método não está retornando `false`.  
+- O `CanDragDrop` método não está retornando `false`.  
   
--   O tipo de modelo de diagrama que você está usando (classe UML, sequência e assim por diante) está listado como um dos atributos de classe de manipulador [ClassDesignerExtension], gesto [SequenceDesignerExtension] e assim por diante.  
+- O tipo de modelo de diagrama que você está usando (classe UML, sequência e assim por diante) está listado como um dos atributos de classe de manipulador [ClassDesignerExtension], gesto [SequenceDesignerExtension] e assim por diante.  
   
--   Não há nenhuma funcionalidade interna já definida para esse tipo de destino e elemento solto.  
+- Não há nenhuma funcionalidade interna já definida para esse tipo de destino e elemento solto.  
   
-##  <a name="Implementing"></a> Implementando o manipulador de gesto  
+## <a name="Implementing"></a> Implementando o manipulador de gesto  
   
 ### <a name="the-gesture-handler-methods"></a>Os métodos do manipulador de gesto  
  A classe de manipulador de gesto implementa e exporta <xref:Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement.IGestureExtension>. Os métodos que você precisa definir são da seguinte maneira:  
@@ -283,17 +280,17 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
  Os parâmetros desses métodos são:  
   
--   `ShapeElement target`. A forma ou diagrama no qual o usuário arrastou algo.  
+- `ShapeElement target`. A forma ou diagrama no qual o usuário arrastou algo.  
   
      `ShapeElement` é uma classe na implementação subjacente ao UML ferramentas de modelagem. Para reduzir o risco de colocar o modelo UML e diagramas em um estado inconsistente, é recomendável que você não use os métodos dessa classe diretamente. Em vez disso, coloque o elemento em um `IShape`e, em seguida, use os métodos descritos [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
   
-    -   Para obter um `IShape`:  
+    - Para obter um `IShape`:  
   
         ```  
         IShape targetIShape = target.CreateIShape(target);  
         ```  
   
-    -   Para obter o elemento de modelo que é o destino de arrastar ou clique duas vezes em operação:  
+    - Para obter o elemento de modelo que é o destino de arrastar ou clique duas vezes em operação:  
   
         ```  
         IElement target = targetIShape.Element;  
@@ -301,20 +298,20 @@ No Visual Studio, você pode definir comandos que são executados quando o usuá
   
          Você pode converter isso em um tipo de elemento mais específico.  
   
-    -   Para obter o armazenamento de modelo UML que contém o modelo UML:  
+    - Para obter o armazenamento de modelo UML que contém o modelo UML:  
   
         ```  
         IModelStore modelStore =   
           targetIShape.Element.GetModelStore();   
         ```  
   
-    -   Para obter acesso ao provedor de host e o serviço:  
+    - Para obter acesso ao provedor de host e o serviço:  
   
         ```  
         target.Store.GetService(typeof(EnvDTE.DTE)) as EnvDTE.DTE  
         ```  
   
--   `DiagramDragEventArgs eventArgs`. Esse parâmetro carrega o formulário serializado do objeto de fonte de uma operação de arrastar:  
+- `DiagramDragEventArgs eventArgs`. Esse parâmetro carrega o formulário serializado do objeto de fonte de uma operação de arrastar:  
   
     ```  
     System.Windows.Forms.IDataObject data = eventArgs.Data;    
@@ -351,26 +348,26 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
  Para obter mais informações, consulte [navegar no modelo UML](../modeling/navigate-the-uml-model.md).  
   
-##  <a name="Installing"></a> Instalando e desinstalando uma extensão  
+## <a name="Installing"></a> Instalando e desinstalando uma extensão  
  Você pode instalar um [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão em seu próprio computador e em outros computadores.  
   
 #### <a name="to-install-an-extension"></a>Para instalar uma extensão  
   
-1.  No seu computador, localize o **VSIX** arquivo que foi criado pelo seu projeto VSIX.  
+1. No seu computador, localize o **VSIX** arquivo que foi criado pelo seu projeto VSIX.  
   
-    1.  Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, escolha **Abrir pasta no Windows Explorer**.  
+    1. Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, escolha **Abrir pasta no Windows Explorer**.  
   
-    2.  Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
+    2. Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
   
-2.  Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
+2. Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
   
      O computador de destino deve ter uma das edições do [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] que você especificou no **vsixmanifest**.  
   
-3.  No computador de destino, abra o **VSIX** arquivo.  
+3. No computador de destino, abra o **VSIX** arquivo.  
   
      **Instalador de extensão do Visual Studio** abre e instala a extensão.  
   
-4.  Iniciar ou reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+4. Iniciar ou reiniciar [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   
@@ -382,9 +379,9 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>) {...}
   
    Raramente, uma extensão defeituosa Falha ao carregar e cria um relatório na janela de erros, mas não aparece no Gerenciador de extensões. Nesse caso, você pode remover a extensão excluindo o arquivo de:  
   
-   *% LocalAppData %* **\Local\Microsoft\VisualStudio\\\Extensions [versão]**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
   
-##  <a name="DragExample"></a> Exemplo  
+## <a name="DragExample"></a> Exemplo  
  O exemplo a seguir mostra como criar linhas de vida em um diagrama de sequência, com base nas partes e portas de um componente arrastadas de um diagrama de componente.  
   
  Para testá-lo, pressione F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, abrir um modelo UML e crie um componente em um diagrama de componente. Adicione a este componente algumas interfaces e partes de componentes internos. Selecione as interfaces e partes. Em seguida, arraste as interfaces e partes para um diagrama de sequência. (Arraste do diagrama de componentes até a guia para o diagrama de sequência e para baixo para o diagrama de sequência). Uma linha da vida será exibida para cada interface e parte.  
@@ -528,6 +525,3 @@ public class CreateLifelinesFromComponentParts : IGestureExtension
  [Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)   
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Programando com a API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

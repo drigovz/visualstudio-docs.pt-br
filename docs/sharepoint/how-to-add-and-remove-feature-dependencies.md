@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13fc731dcf5d96db569a969244b2375939afee62
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9373ed07ec49bd41dad343dc447b4b2026793492
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966998"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>Como: Adicionar e remover dependências de recurso
   O recurso do SharePoint pode depender de outros recursos de funcionalidade ou dados. Nesses casos, você pode marcar esses outros recursos como dependências para o recurso. Dessa forma, o servidor do SharePoint assegura que os recursos dependentes são ativados antes do recurso é ativado.
@@ -30,9 +30,9 @@ ms.locfileid: "56636964"
 
 #### <a name="to-add-a-dependency-on-a-feature-in-the-solution"></a>Para adicionar uma dependência em um recurso na solução
 
-1.  Abra o Designer de recursos, expanda o **dependências de ativação do recurso** nó e, em seguida, escolha o **Add** botão.
+1. Abra o Designer de recursos, expanda o **dependências de ativação do recurso** nó e, em seguida, escolha o **Add** botão.
 
-2.  No **adicionar dependências de ativação do recurso** diálogo caixa, escolha o **adicionar uma dependência de recursos na solução** botão de opção, escolha o título do recurso que você deseja adicionar como uma dependência e, em seguida, Escolha o **adicionar** botão.
+2. No **adicionar dependências de ativação do recurso** diálogo caixa, escolha o **adicionar uma dependência de recursos na solução** botão de opção, escolha o título do recurso que você deseja adicionar como uma dependência e, em seguida, Escolha o **adicionar** botão.
 
      Você pode adicionar mais de um recurso ao escolher vários títulos ao escolher o **Ctrl** chave.
 
@@ -41,28 +41,28 @@ ms.locfileid: "56636964"
 
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>Para adicionar uma dependência pela ID de recurso
 
-1.  Abra o Designer de recursos, expanda o **dependências de ativação do recurso** nó e, em seguida, escolha o **Add** botão.
+1. Abra o Designer de recursos, expanda o **dependências de ativação do recurso** nó e, em seguida, escolha o **Add** botão.
 
-2.  No **adicionar dependências de ativação do recurso** diálogo caixa, escolha o **adicionar uma dependência personalizada** botão de opção.
+2. No **adicionar dependências de ativação do recurso** diálogo caixa, escolha o **adicionar uma dependência personalizada** botão de opção.
 
-3.  No **ID do recurso** texto, digite o GUID para o recurso que você deseja marcar como uma dependência de ativação e, em seguida, escolha o **Add** botão.
+3. No **ID do recurso** texto, digite o GUID para o recurso que você deseja marcar como uma dependência de ativação e, em seguida, escolha o **Add** botão.
 
 ## <a name="edit-custom-dependencies"></a>Editar dependências personalizadas
  Você pode editar dependências personalizadas que você adicionou anteriormente. No entanto, os recursos dependentes que estão em sua solução também podem apenas ser removida, não editado.
 
 #### <a name="to-change-a-dependency-on-a-feature-in-the-solution"></a>Para alterar uma dependência em um recurso na solução
 
-1.  Abra o Designer de recursos e, em seguida, expanda o **dependências de ativação do recurso** nó.
+1. Abra o Designer de recursos e, em seguida, expanda o **dependências de ativação do recurso** nó.
 
-2.  Escolha o nome do recurso que você deseja editar e, em seguida, escolha o **editar** botão.
+2. Escolha o nome do recurso que você deseja editar e, em seguida, escolha o **editar** botão.
 
-3.  No **Editar dependência de ativação de recurso personalizado** caixa de diálogo, altere o título, a ID de recurso ou a descrição e, em seguida, escolha o **enviar** botão.
+3. No **Editar dependência de ativação de recurso personalizado** caixa de diálogo, altere o título, a ID de recurso ou a descrição e, em seguida, escolha o **enviar** botão.
 
 ## <a name="remove-dependencies"></a>Remova as dependências
 
 #### <a name="to-remove-a-dependency-on-a-feature-in-the-solution"></a>Para remover uma dependência em um recurso na solução
 
-1.  No Designer de recursos, expanda o **dependências de ativação do recurso** nó, escolha o nome do recurso que você deseja remover e, em seguida, escolha o **remover** botão.
+1. No Designer de recursos, expanda o **dependências de ativação do recurso** nó, escolha o nome do recurso que você deseja remover e, em seguida, escolha o **remover** botão.
 
 ## <a name="see-also"></a>Consulte também
 - [Criar recursos do SharePoint](../sharepoint/creating-sharepoint-features.md)

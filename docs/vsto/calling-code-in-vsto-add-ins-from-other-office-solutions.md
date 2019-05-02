@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcd72b398c49b84f110145f5dbf0e8b8929d82e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939242"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Chamar o código no VSTO Add-ins de outras soluções do Office
   Você pode expor um objeto no seu suplemento do VSTO para outras soluções, incluindo outras soluções do Microsoft Office. Isso é útil se o suplemento do VSTO fornece um serviço que você deseja habilitar usar outras soluções. Por exemplo, se você tiver um suplemento do VSTO para o Microsoft Office Excel que executa cálculos nos dados financeiros de um serviço Web, outras soluções podem executar esses cálculos chamando o suplemento do VSTO do Excel em tempo de execução.
@@ -31,29 +31,29 @@ ms.locfileid: "56619713"
 
  Há duas etapas principais nesse processo:
 
--   No seu suplemento VSTO, expor um objeto para outras soluções.
+- No seu suplemento VSTO, expor um objeto para outras soluções.
 
--   Em outra solução, acesse o objeto exposto pelo seu suplemento do VSTO e chamam membros do objeto.
+- Em outra solução, acesse o objeto exposto pelo seu suplemento do VSTO e chamam membros do objeto.
 
 ## <a name="types-of-solutions-that-can-call-code-in-an-add-in"></a>Tipos de soluções que podem chamar o código em um suplemento
  Você pode expor um objeto em um suplemento do VSTO para os seguintes tipos de soluções:
 
--   Código Visual Basic for Applications (VBA) em um documento que é carregado no processo do aplicativo como o suplemento do VSTO.
+- Código Visual Basic for Applications (VBA) em um documento que é carregado no processo do aplicativo como o suplemento do VSTO.
 
--   Personalizações no nível do documento que são carregadas no mesmo processo de aplicativo como o suplemento do VSTO.
+- Personalizações no nível do documento que são carregadas no mesmo processo de aplicativo como o suplemento do VSTO.
 
--   Outros suplementos do VSTO criados usando os modelos de projeto do Office no Visual Studio.
+- Outros suplementos do VSTO criados usando os modelos de projeto do Office no Visual Studio.
 
--   COM o VSTO Add-ins (ou seja, suplementos do VSTO que implementam o <xref:Extensibility.IDTExtensibility2> diretamente da interface).
+- COM o VSTO Add-ins (ou seja, suplementos do VSTO que implementam o <xref:Extensibility.IDTExtensibility2> diretamente da interface).
 
--   Qualquer solução que está em execução em um processo diferente de seu suplemento do VSTO (esses tipos de soluções também são nomeados *clientes fora do processo*). Isso inclui aplicativos que automatizam um aplicativo do Office, como um aplicativo Windows Forms ou console e VSTO Add-ins que são carregados em um processo diferente.
+- Qualquer solução que está em execução em um processo diferente de seu suplemento do VSTO (esses tipos de soluções também são nomeados *clientes fora do processo*). Isso inclui aplicativos que automatizam um aplicativo do Office, como um aplicativo Windows Forms ou console e VSTO Add-ins que são carregados em um processo diferente.
 
 ## <a name="expose-objects-to-other-solutions"></a>Expor objetos a outras soluções
  Para expor um objeto no seu suplemento do VSTO para outras soluções, execute as seguintes etapas no seu suplemento do VSTO:
 
-1.  Defina uma classe que você deseja expor para outras soluções.
+1. Defina uma classe que você deseja expor para outras soluções.
 
-2.  Substituir a <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> método no `ThisAddIn` classe. Retorne uma instância da classe que você deseja expor para outras soluções.
+2. Substituir a <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> método no `ThisAddIn` classe. Retorne uma instância da classe que você deseja expor para outras soluções.
 
 ### <a name="define-the-class-you-want-to-expose-to-other-solutions"></a>Definir a classe que você deseja expor para outras soluções
  No mínimo, a classe que você deseja expor deve ser pública, ele deve ter o <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo definido como **verdadeira**, e ela deve expor os [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interface.
@@ -70,9 +70,9 @@ ms.locfileid: "56619713"
 
 5. Se você quiser expor essa classe para clientes fora do processo, você talvez precise também faça o seguinte:
 
-   -   Derive a classe de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Para obter mais informações, consulte [expor classes para clientes fora do processo](#outofproc).
+   - Derive a classe de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>. Para obter mais informações, consulte [expor classes para clientes fora do processo](#outofproc).
 
-   -   Defina as **registrar para interoperabilidade COM** propriedade no projeto em que você define a interface. Esta propriedade é necessária apenas se você quiser permitir que os clientes usam associação inicial para chamar o suplemento do VSTO.
+   - Defina as **registrar para interoperabilidade COM** propriedade no projeto em que você define a interface. Esta propriedade é necessária apenas se você quiser permitir que os clientes usam associação inicial para chamar o suplemento do VSTO.
 
    O exemplo de código a seguir demonstra uma `AddInUtilities` classe com um `ImportData` método que pode ser chamado por outras soluções. Para ver esse código no contexto de um passo a passo maior, consulte [passo a passo: Chamar o código em um suplemento do VSTO do VBA](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md).
 
@@ -84,7 +84,7 @@ ms.locfileid: "56619713"
 
  Como alternativa, você pode expor os [IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch) interface, definindo o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> de atributo para o valor de AutoDispatch ou AutoDual o <xref:System.Runtime.InteropServices.ClassInterfaceType> enumeração. Se você expuser a interface, você não precisa declarar os métodos em uma interface separada. No entanto, código do VBA pode chamar quaisquer métodos públicos e não estáticos em sua classe, incluindo métodos obtidos de classes base, como <xref:System.Object>. Além disso, out-of-process clientes que usam associação inicial não é possível chamar sua classe.
 
-###  <a name="outofproc"></a> Exponha classes para clientes fora do processo
+### <a name="outofproc"></a> Exponha classes para clientes fora do processo
  Se você quiser expor uma classe no seu suplemento do VSTO para clientes fora do processo, você deve derivar a classe de <xref:System.Runtime.InteropServices.StandardOleMarshalObject> para garantir que clientes fora do processo podem chamar seu suplemento do VSTO objeto exposto. Caso contrário, as tentativas de obter uma instância de seu objeto exposto em um cliente fora do processo podem falhar inesperadamente.
 
  Essa falha ocorre porque todas as chamadas para o modelo de objeto de um aplicativo do Office devem ser feitas no thread da interface do usuário principal, mas as chamadas de um cliente fora de processo para seu objeto chegará em um thread arbitrário de (chamada de procedimento remoto) do RPC. O mecanismo de empacotamento COM o .NET Framework não mudará threads e, em vez disso, ele tentará realizar marshaling da chamada para seu objeto no thread RPC de entrada, em vez do thread de interface do usuário principal. Se o objeto é uma instância de uma classe que deriva de <xref:System.Runtime.InteropServices.StandardOleMarshalObject>, chamadas de entrada para seu objeto são empacotadas automaticamente para o thread em que foi criado o objeto exposto, que será o thread de interface do usuário principal do aplicativo host.

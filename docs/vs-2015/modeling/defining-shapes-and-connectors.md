@@ -1,30 +1,27 @@
 ---
 title: Definindo formas e conectores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 1fae548d-9288-4dd5-a24f-ff0d69c73628
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 61cd27b307b4761e3f7773f91583965466892285
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 761e0e77a0fe9f6f32f08045d81f6eab815801dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49812940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112319"
 ---
 # <a name="defining-shapes-and-connectors"></a>Definindo formas e conectores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Há diversos tipos básicos de formas possíveis de serem usados para exibir informações em um diagrama em uma linguagem específica do domínio (DSL).  
   
-##  <a name="shapeTypes"></a> Tipos básicos de formas e conectores  
+## <a name="shapeTypes"></a> Tipos básicos de formas e conectores  
  Um diagrama DSL mostra uma coleção de *formas* interconectadas por linhas ou *conectores*.  Geralmente, mas não sempre:  
   
 - As formas são representações visíveis dos elementos de modelo.  
@@ -48,8 +45,5 @@ Há diversos tipos básicos de formas possíveis de serem usados para exibir inf
 |Raias|Partição de raias de um diagrama em segmentos horizontais ou verticais. A raia sempre permanece abaixo de outras formas no diagrama.<br /><br /> Geralmente, os elementos de modelo da raia são criados na raiz do modelo e outros elementos são criados neles. Por exemplo, criar uma DSL a partir de um modelo de solução de Fluxo de Tarefa.|  
 |Conectores|As linhas desenhadas entre as formas normalmente representam relações de referência. É possível ajustar opções para tornar um conector reto ou retilíneo e para ter diferentes tipos de seta.|  
   
-##  <a name="shapeInheritance"></a> Herança da forma  
+## <a name="shapeInheritance"></a> Herança da forma  
  Uma forma pode ser herdeira de outra forma. No entanto, as formas devem ser do mesmo tipo. Por exemplo, somente uma forma geométrica pode ser herdeira de uma forma geométrica. Formas herdadas possuem os compartimentos e decoradores de sua forma de base. Os conectores podem ser herdeiros dos conectores.
-
-
-

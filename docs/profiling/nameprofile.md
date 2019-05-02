@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e531c0a4b2f5eca69675c7347fc275697eba7e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e0d4cdfd393961566a0aef0c649e6ff788fdc8ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403604"
 ---
 # <a name="nameprofile"></a>NameProfile
 A função `NameProfile` atribui uma cadeia de caracteres ao thread ou processo especificado.
@@ -81,7 +81,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Se você especificar um processo ou thread que não seja o atual, você deve se certificar de que ele foi inicializado e começou a ser executado antes de você nomeá-lo. Caso contrário, o método NameProfile falhará.
 
 > [!IMPORTANT]
->  As funções de API CreateProcess() e CreateThread() podem retornar antes de o thread ou processo ser inicializado.
+> As funções de API CreateProcess() e CreateThread() podem retornar antes de o thread ou processo ser inicializado.
 
 ## <a name="net-framework-equivalent"></a>Equivalente ao .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

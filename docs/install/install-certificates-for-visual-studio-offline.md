@@ -1,7 +1,7 @@
 ---
 title: Instalar os certificados necessários para uma instalação offline
 description: Saiba como instalar certificados para instalação offline do Visual Studio.
-ms.date: 01/15/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab235393996396aaba8331b8e55001ad292bdc51
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974729"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar os certificados necessários para instalação offline do Visual Studio
 
@@ -32,17 +34,29 @@ Há três opções para instalar ou atualizar certificados em um ambiente offlin
 
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Opção 1 – Instalar manualmente os certificados de uma pasta de layout
 
+::: moniker range="vs-2017"
+
 Ao criar um layout de rede, os certificados necessários são baixados para a pasta Certificados. Depois, você pode instalar manualmente os certificados clicando duas vezes em cada um dos arquivos de certificado e clicando no assistente Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
 
 **Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, instale os certificados manualmente clicando com o botão direito do mouse em cada um dos arquivos de certificado, selecionando Instalar Certificado e, em seguida, clicando no assistente do Gerenciador de Certificados.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Ao criar um layout de rede, os certificados necessários são baixados para a pasta Certificados. É possível instalar os certificados manualmente clicando com o botão direito do mouse em cada um dos arquivos de certificado, selecionando Instalar Certificado e, em seguida, clicando no assistente do Gerenciador de Certificados. Se for solicitado a fornecer uma senha, deixe-a em branco.
+
+::: moniker-end
+
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Opção 2 – Distribuir certificados raiz confiáveis em um ambiente empresarial
 
-Para empresas com computadores offline sem os certificados raiz mais recentes, um administrador poderá usar as instruções na página [Configurar raízes confiáveis e certificados não permitidos](https://technet.microsoft.com/library/dn265983.aspx) para atualizá-los.
+Para empresas com computadores offline sem os certificados raiz mais recentes, um administrador poderá usar as instruções na página [Configurar raízes confiáveis e certificados não permitidos](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) para atualizá-los.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Opção 3 – Instalar certificados como parte de um script de implantação do Visual Studio
 
 Se estiver usando o script de implantação do Visual Studio em um ambiente offline para estações de trabalho cliente, você deverá seguir estas etapas:
+
+::: moniker range="vs-2017"
 
 1. Copie a [ferramenta Gerenciador de Certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) para o compartilhamento de instalação (por exemplo, \\server\share\vs2017). Certmgr.exe não está incluído como parte do Windows em si, mas está disponível como parte do [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
@@ -71,10 +85,52 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
 
    certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
    ```
+   
+   Como alternativa, crie um arquivo em lotes que usa certutil.exe, que é fornecido com o Windows, com os seguintes comandos:
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
 
 3. Implante o arquivo em lotes para o cliente. Este comando deve ser executado de um processo elevado.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Copie a [ferramenta Gerenciador de Certificados](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) para o compartilhamento de instalação (por exemplo, \\server\share\vs2019). Certmgr.exe não está incluído como parte do Windows em si, mas está disponível como parte do [SDK do Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+
+2. Crie um arquivo em lotes com os seguintes comandos:
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
+   
+   Como alternativa, crie um arquivo em lotes que usa certutil.exe, que é fornecido com o Windows, com os seguintes comandos:
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
+
+3. Implante o arquivo em lotes para o cliente. Este comando deve ser executado de um processo elevado.
+
+::: moniker-end
+
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Quais são os arquivos de certificados na pasta Certificados?
+
+::: moniker range="vs-2017"
 
 Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um certificado raiz. A maioria dos sistemas atuais com o Windows Update têm esses certificados já instalados.
 
@@ -96,6 +152,30 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
 
 **Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* **ManifestSignCertificates.p12** contém:
+    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
+        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
+        * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+* **ManifestCounterSignCertificates.p12** contém:
+    * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
+        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
+        * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+* **Vs_installer_opc.SignCertificates.p12** contém:
+    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
+        * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
+    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
+        * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+
+O Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
+
+::: moniker-end
+
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Por que os certificados da pasta Certificados não são instalados automaticamente?
 
 Quando uma assinatura é verificada em um ambiente online, as APIs do Windows são usadas para baixar e adicionar os certificados no sistema. A verificação de que o certificado é confiável e permitido por meio de configurações administrativas ocorre durante esse processo. Esse processo de verificação não pode ocorrer na maioria dos ambientes offline. Instalar certificados manualmente permite aos administradores de empresa garantir que eles sejam confiáveis e atendam à política de segurança de suas organizações.
@@ -103,8 +183,9 @@ Quando uma assinatura é verificada em um ambiente online, as APIs do Windows s�
 ## <a name="checking-if-certificates-are-already-installed"></a>Verificando se os certificados já estão instalados
 
 Uma maneira de verificar no sistema de instalação é seguir estas etapas:
+
 1. Execute o **mmc.exe**.<br/>
-  a. Clique em Arquivo e selecione **Adicionar/Remover Snap-in**.<br/>
+  a. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
   b. Clique duas vezes em **Certificados**, selecione **Conta do computador** e clique em **Avançar**.<br/>
   c. Selecione **Computador local**, clique em **Concluir** e depois em **OK**.<br/>
   d. Expanda os **Certificados (computador local)**.<br/>
@@ -114,7 +195,7 @@ Uma maneira de verificar no sistema de instalação é seguir estas etapas:
    f. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados**.<br/>
     * Verifique os certificados intermediários necessários desta lista.<br/>
 
-2. Clique em Arquivo e selecione **Adicionar/Remover Snap-in**.<br/>
+2. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
   a. Clique duas vezes em **Certificados**, selecione **Minha conta de usuário**, clique em **Concluir** e em **OK**.<br/>
   b. Expanda **Certificados – Usuário atual**.<br/>
   c. Expanda **Autoridades de Certificação Intermediárias** e selecione **Certificados**.<br/>

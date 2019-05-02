@@ -19,17 +19,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91a98d16e755daeb3fb514a47a741f5ac99abe12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b5aea9c7c7868dfdd9726b86bb344456ebe707d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793000"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666972"
 ---
 # <a name="itemdefinitiongroup-element-msbuild"></a>Elemento ItemDefinitionGroup (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O elemento `ItemDefinitionGroup` permite definir um conjunto de Definições de Item, que são valores de metadados aplicados por padrão a todos os itens do projeto. ItemDefinitionGroup substitui a necessidade de usar a [Tarefa CreateItem](../msbuild/createitem-task.md) e [Tarefa CreateProperty](../msbuild/createproperty-task.md). Para obter mais informações, consulte [Definições de item](../msbuild/item-definitions.md).  
   
  \<Project>  

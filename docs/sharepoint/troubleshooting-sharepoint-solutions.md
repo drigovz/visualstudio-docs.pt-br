@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008073"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Solucionar problemas de soluções do SharePoint
   Os seguintes problemas ou alertas que podem ocorrer quando você depura soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Para obter mais informações, consulte [depuração de soluções de fluxo de trabalho do SharePoint 2007](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -115,9 +115,9 @@ ms.locfileid: "54870617"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Insira novamente o Assistente de fluxo de trabalho
 
-1.  Na **Gerenciador de soluções**, escolha o nó do fluxo de trabalho.
+1. Na **Gerenciador de soluções**, escolha o nó do fluxo de trabalho.
 
-2.  No **propriedades** janela, escolha o botão de reticências (...) em qualquer propriedade que tem um botão de reticências.
+2. No **propriedades** janela, escolha o botão de reticências (...) em qualquer propriedade que tem um botão de reticências.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Usuário deve atualizar a página de aplicativo no navegador durante a depuração para exibir a imagem atualizada
  Se você estiver depurando uma solução do SharePoint que contém uma página de aplicativo com um controle que exibe uma imagem, como um [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] controle de imagem, você deve atualizar a página no navegador para exibir todas as alterações foram feitas para a imagem.
@@ -127,13 +127,13 @@ ms.locfileid: "54870617"
 
 ### <a name="error-message"></a>Mensagem de erro
 
--   Local do site do SharePoint não é válido.
+- Local do site do SharePoint não é válido.
 
 ### <a name="resolution"></a>Resolução
 
--   Instale o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Instale o [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
--   Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [atribuir ou remover administradores de aplicativos de serviço no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Certifique-se de que você tem acesso de administrador para o site do SharePoint. Para obter mais informações, consulte o [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] artigo Online [atribuir ou remover administradores de aplicativos de serviço no SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Evento de web de exclusão do site não ocorre no projeto de receptor de evento
  Quando você cria um projeto de receptor de evento e selecionar determinados eventos da Web, como "um site está sendo excluído", ocorre o evento nunca.
@@ -156,46 +156,46 @@ ms.locfileid: "54870617"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Para alterar o escopo do recurso do receptor do evento
 
-1.  Na **Gerenciador de soluções**, abra o receptor de evento *Feature* de arquivo no **Designer de recursos** por duas vezes no arquivo ou abrindo o menu de atalho e, em seguida, escolhendo **aberto**.
+1. Na **Gerenciador de soluções**, abra o receptor de evento *Feature* de arquivo no **Designer de recursos** por duas vezes no arquivo ou abrindo o menu de atalho e, em seguida, escolhendo **aberto**.
 
-2.  Escolha a seta ao lado **escopo**e, em seguida, escolha **Site** na lista que aparece.
+2. Escolha a seta ao lado **escopo**e, em seguida, escolha **Site** na lista que aparece.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Erro de implantação é exibida depois que o nome de um identificador em um projeto de modelo de conectividade de dados de negócios é alterado
  Esse problema ocorre se você alterar o nome do identificador de uma entidade em um modelo de conectividade de dados comerciais (BDC) e, em seguida, tente implantar a solução.
 
 ### <a name="error-messages"></a>Mensagens de erro
 
--   \<*nome do modelo*> tem os seguintes erros de ativação de tipo de conteúdo externo...
+- \<*nome do modelo*> tem os seguintes erros de ativação de tipo de conteúdo externo...
 
--   O IMetadataObject com nome '\<*nome do modelo*>' tem um valor no campo 'name' duplicado...
+- O IMetadataObject com nome '\<*nome do modelo*>' tem um valor no campo 'name' duplicado...
 
 ### <a name="resolution"></a>Resolução
  Para resolver esse problema, exclua manualmente o modelo e, em seguida, implante a solução novamente.  Você pode excluir o modelo usando qualquer uma das seguintes ferramentas:
 
--   Administração Central do SharePoint 2010. Para obter mais informações, consulte [gerenciamento de modelos de BDC](http://go.microsoft.com/fwlink/?LinkID=181472) no site da Web do Microsoft TechNet.
+- Administração Central do SharePoint 2010. Para obter mais informações, consulte [gerenciamento de modelos de BDC](http://go.microsoft.com/fwlink/?LinkID=181472) no site da Web do Microsoft TechNet.
 
--   Windows PowerShell. Você pode excluir o modelo digitando o seguinte comando no prompt de comando: **Remove-SPBusinessDataCatalogModel**. Para obter mais informações, consulte [geral de cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) no site da Web do Microsoft TechNet.
+- Windows PowerShell. Você pode excluir o modelo digitando o seguinte comando no prompt de comando: **Remove-SPBusinessDataCatalogModel**. Para obter mais informações, consulte [geral de cmdlets (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) no site da Web do Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Um erro será exibido quando você tenta exibir uma web part visual no SharePoint
  Esse problema ocorre quando o **caminho** propriedade do controle de usuário não começa com a cadeia de caracteres "CONTROLTEMPLATES\\".
 
 ### <a name="error-messages"></a>Mensagens de erro
 
--   O arquivo ' /_CONTROLTEMPLATES/*\<nome do projeto >*/*\<nome da Web Part >*/*\<controle de usuário nome >*. ascx ' não existe.
+- O arquivo ' /_CONTROLTEMPLATES/*\<nome do projeto >*/*\<nome da Web Part >*/*\<controle de usuário nome >*. ascx ' não existe.
 
--   Erro de servidor no aplicativo '/'.
+- Erro de servidor no aplicativo '/'.
 
 ### <a name="resolution"></a>Resolução
 
 ##### <a name="to-resolve-this-issue"></a>Para resolver esse problema
 
-1.  Na **Gerenciador de soluções**, escolha o arquivo de controle de usuário, cuja extensão de nome de arquivo é *. ascx*.
+1. Na **Gerenciador de soluções**, escolha o arquivo de controle de usuário, cuja extensão de nome de arquivo é *. ascx*.
 
-2.  Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+2. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
 
-3.  No **propriedades** janela, expanda o **local de implantação** nó.
+3. No **propriedades** janela, expanda o **local de implantação** nó.
 
-4.  Certifique-se de que o valor de **caminho** propriedade começa com a cadeia de caracteres "CONTROLTEMPLATES\\".
+4. Certifique-se de que o valor de **caminho** propriedade começa com a cadeia de caracteres "CONTROLTEMPLATES\\".
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Erro aparece quando um fluxo de trabalho importado reutilizável que contém um campo de formulário de tarefa é executado
  Esse problema ocorre se você importar um fluxo de trabalho que contém um formulário de tarefa que tem um campo e, em seguida, execute o novo fluxo de trabalho no mesmo sistema do qual você importou.
@@ -230,26 +230,26 @@ ms.locfileid: "54870617"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Para acessar as configurações de pool do aplicativo IIS
 
-1.  Abra o Gerenciador do IIS.
+1. Abra o Gerenciador do IIS.
 
-2.  No **conexões** painel, expanda o nó de servidor do SharePoint e, em seguida, escolha o **Pools de aplicativos** nó.
+2. No **conexões** painel, expanda o nó de servidor do SharePoint e, em seguida, escolha o **Pools de aplicativos** nó.
 
-3.  No **Pools de aplicativos** , escolha o pool de aplicativos do SharePoint (normalmente "SharePoint - 80") e, em seguida, no **ações** painel, escolha o **configurações avançadas** link.
+3. No **Pools de aplicativos** , escolha o pool de aplicativos do SharePoint (normalmente "SharePoint - 80") e, em seguida, no **ações** painel, escolha o **configurações avançadas** link.
 
-4.  Para aumentar o tempo de espera antes do tempo limite do IIS, altere o valor de **tempo de resposta máximo de Ping (segundos)** para um valor maior que 90 segundos.
+4. Para aumentar o tempo de espera antes do tempo limite do IIS, altere o valor de **tempo de resposta máximo de Ping (segundos)** para um valor maior que 90 segundos.
 
-5.  Para desabilitar a execução de ping do IIS, defina **Ping habilitado** à **falso**.
+5. Para desabilitar a execução de ping do IIS, defina **Ping habilitado** à **falso**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Retração automática deixa a instância de lista órfãos no SharePoint
  Esse problema ocorre se você executar as etapas a seguir.
 
-1.  Criar uma definição de lista que tenha uma instância de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Criar uma definição de lista que tenha uma instância de lista no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Escolha o **F5** chave para executar a solução.
+2. Escolha o **F5** chave para executar a solução.
 
-3.  Parar a depuração ou fechar o site do SharePoint.
+3. Parar a depuração ou fechar o site do SharePoint.
 
-4.  Abra o site do SharePoint e abra a instância de lista.
+4. Abra o site do SharePoint e abra a instância de lista.
 
 ### <a name="error-message"></a>Mensagem de erro
  Erro de servidor no aplicativo '/'.

@@ -1,6 +1,6 @@
 ---
 title: Expressões no depurador | Microsoft Docs
-ms.date: 02/07/2017
+ms.date: 02/07/2018
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2cce521a78c9e7c3c2e9ba9dd6240c5380de64a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1134ac538487487834b754407a3cc1a90175c56b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849939"
 ---
 # <a name="expressions-in-the-visual-studio-debugger"></a>Expressões no depurador do Visual Studio
 O depurador do Visual Studio inclui os avaliadores de expressão que funcionam quando você insere uma expressão na caixa de diálogo **QuickWatch**, na janela **Inspeção** ou na janela **Imediato**. Os avaliadores de expressão também estão no trabalho na janela **Pontos de interrupção** e em muitos outros locais no depurador.
@@ -106,7 +106,7 @@ Funções intrínsecas do depurador:
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|
 |**Diversos**|__log2<br /><br /> Retorna a base 2 de log de um inteiro especificado, arredondada para o menor inteiro próximo.|
 
-## <a name="ccli---unsupported-expressions"></a>C + + c++ CLI - expressões sem suporte
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - expressões sem suporte
 
 - Conversões que envolvem ponteiros ou conversões definidas pelo usuário, não têm suporte.
 

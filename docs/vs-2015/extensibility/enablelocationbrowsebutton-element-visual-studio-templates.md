@@ -1,14 +1,9 @@
 ---
 title: Elemento EnableLocationBrowseButton (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#EnableLocationBrowseButton
 helpviewer_keywords:
@@ -16,22 +11,22 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 04d5710012840079e3381f09725b96b8f329872d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ef9f42bfb24caaf2775ba2c70110eaaa5d616116
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795733"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922344"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>Elemento EnableLocationBrowseButton (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica se o **navegue** botão está disponível na **novo projeto** caixa de diálogo, para que os usuários podem facilmente modificar o diretório padrão em que um novo projeto é salvo.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<EnableLocationBrowseButton >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<EnableLocationBrowseButton>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -95,4 +90,3 @@ Especifica se o **navegue** botão está disponível na **novo projeto** caixa d
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

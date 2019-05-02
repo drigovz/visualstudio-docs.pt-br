@@ -1,11 +1,8 @@
 ---
 title: Designer de atividade de InvokeMethod | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.InvokeMethod.UI
@@ -13,13 +10,13 @@ ms.assetid: 15e6efdc-52ca-46d8-9c5e-063f7c8265a6
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a3fa1c07bbb32bc1da963a0d2f0a91ae6c193a30
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952003"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 **InvokeMethod** designer é usado para criar e configurar um <xref:System.Activities.Statements.InvokeMethod> atividade.  
@@ -57,7 +54,7 @@ ms.locfileid: "49863679"
   
 3. Iterar através da coleção de <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> e registrar cada argumento.  
   
-   A exceção resultante é do tipo <xref:System.Activities.InvalidWorkflowException> com a seguinte mensagem: “InvokeMethod”: Uma variável, RuntimeArgument ou um DelegateArgument já existem com o nome “TargetObject”. Nomes devem ser exclusivos dentro do escopo de ambiente.  
+   A exceção resultante é do tipo <xref:System.Activities.InvalidWorkflowException> com a seguinte mensagem: 'InvokeMethod': Uma variável, RuntimeArgument ou um DelegateArgument já existe com o nome "TargetObject". Nomes devem ser exclusivos dentro do escopo de ambiente.  
   
    Essa limitação não se aplica a <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> e a <xref:System.Activities.Statements.InvokeMethod.RunAsynchronously%2A> porque não são argumentos de fluxo de trabalho e portanto não são registrados na coleção de <xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A> de atividade de <xref:System.Activities.Statements.InvokeMethod> no método de <xref:System.Activities.Activity.CacheMetadata%2A> .  
   

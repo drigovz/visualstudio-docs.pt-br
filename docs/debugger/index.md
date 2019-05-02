@@ -1,22 +1,24 @@
 ---
 layout: LandingPage
 title: Depure seus aplicativos | Microsoft Docs
-description: Saiba como usar o Visual Studio 2017 para depurar aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
+description: Saiba como usar o Visual Studio para depurar aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.custom: seodec18
 ms.topic: landing-page
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: 81ecddbfdb3f1b36a28156686e5d07ff4e6ee558
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: f3bf5cc1dd11e0062ca849f16fb806fa756e2203
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56156027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846348"
 ---
 # <a name="debugging-in-visual-studio"></a>Depurando no Visual Studio
 
 O depurador do Visual Studio ajuda você a observar o comportamento em tempo de execução do seu programa e localizar problemas. O depurador funciona com todas as linguagens de programação do Visual Studio e com as bibliotecas associadas. Com o depurador, você pode interromper a execução do programa para examinar o código, avaliar e editar as variáveis, exibir registros, ver as instruções criadas pelo código-fonte e exibir o espaço de memória usado pelo aplicativo.
+
+<!-- markdownlint-disable MD033 -->
 
 <ul class="panelContent cardsFTitle">
     <li>

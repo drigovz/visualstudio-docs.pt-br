@@ -1,5 +1,5 @@
 ---
-title: Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs
+title: 'Como: Anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,23 +9,23 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ab6e56d6b2d9a953b5549d59ea85049be8cc0306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432881"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como anexar o criador de perfil a um serviço nativo para coletar dados de simultaneidade usando a linha de comando
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um serviço nativo para coletar dados de simultaneidade usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para anexar o criador de perfil a um serviço nativo (C/C++) e coletar dados de simultaneidade de thread e processo usando o método de amostragem.  
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
 
 > [!NOTE]
->  As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar o criador de perfil em um prompt de comando, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela **Prompt de Comando** ou ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> As ferramentas de linha de comando das Ferramentas de Criação de Perfil ficam localizadas no subdiretório \Team Tools\Performance Tools do diretório de instalação do Visual Studio. Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar o criador de perfil em um prompt de comando, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela **Prompt de Comando** ou ao próprio comando. Para obter mais informações, consulte [Especificando o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
 
  Enquanto o criador de perfil estiver anexado ao serviço, você pode pausar e retomar a coleta de dados. Para concluir uma sessão de criação de perfil, o Criador de perfil não pode mais estar anexado ao serviço e o Criador de perfil deve ser desligado explicitamente.  
 
@@ -45,7 +45,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
      É possível usar qualquer opção da tabela a seguir com a opção **/start**.  
 
    > [!NOTE]
-   >  A maioria dos serviços exigem as opções **/user** e **/crosssession**.  
+   > A maioria dos serviços exigem as opções **/user** e **/crosssession**.  
 
    |                               Opção                               |                                                                     Descrição                                                                      |
    |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +54,6 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
    |  [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`  |                                      Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil.                                       |
    |       [/automark](../profiling/automark.md) **:** `Interval`       | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O valor padrão é 500. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).       |
-
 
 3. Anexe o criador de perfil ao serviço digitando o seguinte comando em um prompt de comando:  
 
@@ -67,7 +66,7 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções na tabela a seguir iniciam e param a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções na tabela a seguir iniciam e param a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -80,10 +79,10 @@ Este tópico descreve como usar as ferramentas de linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Desanexe o criador de perfil do aplicativo de destino parando o serviço ou digitando o seguinte comando no prompt de comando:  
+1. Desanexe o criador de perfil do aplicativo de destino parando o serviço ou digitando o seguinte comando no prompt de comando:  
 
      Digite **VSPerfCmd /detach**  
 
-2.  Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:  
+2. Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

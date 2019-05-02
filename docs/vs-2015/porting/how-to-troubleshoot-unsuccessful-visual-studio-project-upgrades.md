@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 7d5c30c9b61707f9ac4a32d49613b46416a8d881
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096329"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Como: Solucionar problemas de atualizações de projeto do Visual Studio malsucedidas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "54804257"
 
 #### <a name="to-resolve-incorrect-file-paths"></a>Para resolver caminhos de arquivos incorretos
 
-1.  Abra o arquivo de projeto em um editor de texto.
+1. Abra o arquivo de projeto em um editor de texto.
 
-2.  Examine os caminhos de arquivo que podem estar incorretos, especialmente os que contêm um número de versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+2. Examine os caminhos de arquivo que podem estar incorretos, especialmente os que contêm um número de versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
-3.  Modifique caminhos de arquivos incorretos de modo que apontem para novos destinos.
+3. Modifique caminhos de arquivos incorretos de modo que apontem para novos destinos.
 
 ## <a name="the-project-does-not-build-because-references-are-not-valid"></a>O projeto não será compilado porque as referências não são válidas
  Quando você atualiza o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], também pode estar atualizando a versão do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Se o projeto contiver as referências que estão descontinuadas na versão mais recente do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], elas podem não ser resolvidas corretamente. Isso é especialmente provável para referências que incluem números de versão, por exemplo, `Microsoft.VisualStudio.Shell.Interop.8.0`.

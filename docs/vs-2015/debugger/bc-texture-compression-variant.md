@@ -1,25 +1,20 @@
 ---
 title: Variante de compressão de textura BC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 818998511a4ef8b7f10b8225e71b414edafd9769
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51736567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111227"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +31,13 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
   
 - O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:  
   
-  -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
+  - O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.  
   
-  -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  - O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-  -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
+  - O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).  
   
-  -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
+  - O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).  
   
 - Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.  
   
@@ -70,6 +65,3 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
   
 ## <a name="see-also"></a>Consulte também  
  [Variante de metade/um quarto nas dimensões de textura](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

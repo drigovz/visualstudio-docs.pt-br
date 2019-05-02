@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6002c3636030b67e9dca5e76c7ef57fbd93b6e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b08853937be3f11913f88293633b02f3636898c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439720"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,29 +22,29 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
->  Em versões anteriores do Internet Explorer 10, era possível executar testes de UI codificados em um nível de privilégio mais alto em comparação do processo do Internet Explorer. Ao executar testes de UI codificados no Internet Explorer 10, o teste de IU codificado e o processo do Internet Explorer devem ser o mesmo nível de privilégio. Isso ocorre devido a recursos mais seguros do AppContainer no Internet Explorer 10.  
+> Em versões anteriores do Internet Explorer 10, era possível executar testes de UI codificados em um nível de privilégio mais alto em comparação do processo do Internet Explorer. Ao executar testes de UI codificados no Internet Explorer 10, o teste de IU codificado e o processo do Internet Explorer devem ser o mesmo nível de privilégio. Isso ocorre devido a recursos mais seguros do AppContainer no Internet Explorer 10.  
   
 > [!WARNING]
->  Se você criar um teste de IU codificado no Internet Explorer 10, talvez eles não sejam executados no Internet Explorer 9 ou no Internet Explorer 8. Isso ocorre porque o Internet Explorer 10 inclui controles HTML5, como Audio, Video, ProgressBar e Slider. Esses controles HTML5 não são reconhecidos pelo Internet Explorer 9 ou pelo Internet Explorer 8. Da mesma forma, seu teste de IU codificado usando o Internet Explorer 9 pode incluir alguns controles do HTML5 que também não serão reconhecidos pelo Internet Explorer 8.  
+> Se você criar um teste de IU codificado no Internet Explorer 10, talvez eles não sejam executados no Internet Explorer 9 ou no Internet Explorer 8. Isso ocorre porque o Internet Explorer 10 inclui controles HTML5, como Audio, Video, ProgressBar e Slider. Esses controles HTML5 não são reconhecidos pelo Internet Explorer 9 ou pelo Internet Explorer 8. Da mesma forma, seu teste de IU codificado usando o Internet Explorer 9 pode incluir alguns controles do HTML5 que também não serão reconhecidos pelo Internet Explorer 8.  
   
 ## <a name="supported-html5-controls"></a>Controles do HTML5 com suporte  
  Testes de UI codificados incluem suporte para registro, reprodução e validação dos seguintes controles HTML5:  
   
--   [Controle de áudio](#UsingHTML5ControlsCodedUITestsAudio)  
+- [Controle de áudio](#audio-control)  
   
--   [Controle Video](#UsingHTML5ControlsCodedUITestsVideo)  
+- [Controle Video](#video-control)  
   
--   [Slider](#UsingHTML5ControlsCodedUITestsSlider)  
+- [Slider](#slider)  
   
--   [ProgressBar](#UsingHTML5ControlsCodedUITestsProgressBar)  
+- [ProgressBar](#progressbar)  
   
-###  <a name="UsingHTML5ControlsCodedUITestsAudio"></a> Controle de áudio  
- **Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
+### <a name="audio-control"></a>Controle de áudio  
+ **Controle de áudio:** Ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
   
- ![Controle Audio do HTML5](../test/media/codedui-html5-audio.png "CodedUI_HTML5_Audio")  
+ ![Controle do HTML5 áudio](../test/media/codedui-html5-audio.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -74,20 +74,19 @@ string ReadyState
 string Seeking  
 string Src  
 string Volume  
-  
 ```  
   
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.  
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.  
   
- **Propriedades de filtro:** as propriedades de filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.  
+ **Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.  
   
 > [!NOTE]
->  O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.  
+> O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsVideo"></a> Controle Video  
- **Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.  
+### <a name="video-control"></a>Controle de vídeo  
+ **Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.  
   
- ![Controle Video do HTML5](../test/media/codedui-html5-video.png "CodedUI_HTML5_Video")  
+ ![Controle do HTML5 vídeo](../test/media/codedui-html5-video.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -107,17 +106,17 @@ string VideoWidth
   
 ```  
   
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.  
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.  
   
- **Propriedades de filtro:** as propriedades de filtro para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.  
+ **Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.  
   
 > [!NOTE]
->  Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.  
+> Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.  
   
-###  <a name="UsingHTML5ControlsCodedUITestsSlider"></a> Slider  
- **Controle deslizante:** ações no controle deslizante de HTML5 são registradas e reproduzidas corretamente.  
+### <a name="slider"></a>Controle deslizante  
+ **Controle deslizante:** Ações no controle deslizante de HTML5 estão corretamente registradas e reproduzidas.  
   
- ![Controle Slider do HTML5](../test/media/codedui-html5-slider.png "CodedUI_HTML5_Slider")  
+ ![Controle deslizante do HTML5](../test/media/codedui-html5-slider.png)  
   
 |Ação|Gravando|Código gerado|  
 |------------|---------------|--------------------|  
@@ -134,14 +133,15 @@ string Step
 string ValueAsNumber  
 ```  
   
-###  <a name="UsingHTML5ControlsCodedUITestsProgressbar"></a> ProgressBar  
- **Controle ProgreesBar:** o ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
+### <a name="progressbar"></a>ProgressBar  
+ **Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
   
- ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png "CodedUI_HTML5_ProgressBar")  
+ ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png)  
   
-## <a name="see-also"></a>Consulte também  
- [Elementos HTML](http://go.microsoft.com/fwlink/?LinkID=232441)   
- [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
- [Personalização de seu teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+## <a name="see-also"></a>Consulte também
+
+- [Elementos HTML](https://www.w3schools.com/HTML/html_elements.asp)   
+- [Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)   
+- [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
+- [Personalizando o teste de IU codificado](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeCUITModify)   
+- [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

@@ -2,7 +2,6 @@
 title: IActiveScriptSite | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b7ebbd5301ea1d8ea7cabf235ae3f3c7bb1ba3b2
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 67e16e2825f03c9ae452e639d6a086bee584ac95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992560"
 ---
 # <a name="iactivescriptsite"></a>IActiveScriptSite
 Implementado pelo host para criar um site para o mecanismo de Script do Windows. Geralmente, este site será associado com o contêiner de todos os objetos que são visíveis para o script (por exemplo, os controles ActiveX). Normalmente, esse contêiner corresponderá ao documento ou página que está sendo visualizado. Por exemplo, Microsoft Internet Explorer, criaria um contêiner para cada página HTML que está sendo exibido. Cada ActiveX control (ou outro objeto de automação) na página e o mecanismo de script em si, seria enumerável dentro desse contêiner.  

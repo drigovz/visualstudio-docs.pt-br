@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6b7796ff4bd8f2b37e50e53d58de66f823ef8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861579"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Comentar o código em um serviço de linguagem herdado
 Linguagens de programação normalmente fornecem um meio de anotações ou comentários de código. Um comentário é uma seção de texto que fornece informações adicionais sobre o código, mas é ignorada durante a compilação ou interpretação.
@@ -26,10 +26,9 @@ Linguagens de programação normalmente fornecem um meio de anotações ou comen
 ## <a name="comment-styles"></a>Estilos de comentário
 Há dois estilos gerais de comentário:
 
-1.  Comentários de linha, em que o comentário é em uma única linha.
+1. Comentários de linha, em que o comentário é em uma única linha.
 
-2.  Comentários do bloco, em que o comentário pode incluir várias linhas.
-
+2. Comentários do bloco, em que o comentário pode incluir várias linhas.
 
 Comentários de linha geralmente têm um caractere (ou caracteres iniciais), enquanto os comentários do bloco têm caracteres iniciais e finais. Por exemplo, no c#, um comentário de linha começa com `//`, e um comentário de bloco começa com `/*` e termina com `*/`.
 

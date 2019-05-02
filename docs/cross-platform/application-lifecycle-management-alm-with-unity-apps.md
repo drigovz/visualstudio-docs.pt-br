@@ -9,12 +9,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ca0c3da5048194ce438e815bd1612f6b166bb29b
-ms.sourcegitcommit: f6dd17b0864419083d0a1bf54910023045526437
+ms.openlocfilehash: d52e02947a9148463396260afd3e389fa1d248ee
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/27/2018
-ms.locfileid: "53802560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824698"
 ---
 # <a name="devops-with-unity-apps"></a>DevOps com aplicativos do Unity
 
@@ -26,7 +26,7 @@ As tabelas a seguir identificam como os recursos de DevOps no Visual Studio apli
 
 ## <a name="agile-tools"></a>Ferramentas agile
 
-Link de referência: [Sobre as ferramentas Agile e o gerenciamento de projetos Agile](/azure/devops/boards/backlogs/overview?view=vsts) (usando o Azure Boards ou o TFS, incluindo o Team Explorer Everywhere)
+Link de referência: [Sobre as ferramentas Agile e o gerenciamento de projetos Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts) (usando o Azure Boards ou o TFS, incluindo o Team Explorer Everywhere)
 
 Comentário Geral: todos os recursos de planejamento e acompanhamento são independentes do tipo de projeto e de linguagens de codificação.
 

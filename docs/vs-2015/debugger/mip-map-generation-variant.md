@@ -1,25 +1,20 @@
 ---
 title: Variante de geração de MIP-map | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 3b4b3583-0b01-4f5d-aacb-3f96d19111d9
 caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: c567f68abb5b67022bb2decd64ed23e35bf6d5d3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51723092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383957"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de geração de Mip-map
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +46,7 @@ Habilita mapas mip em texturas que não são destinos de renderização.
   Quando há mapas mip gerados automaticamente para uma textura, as chamadas de `ID3D11Device::CreateShaderResourceView` são modificadas durante a reprodução para usar a cadeia de mip durante a amostragem da textura.  
   
 ## <a name="example"></a>Exemplo  
- O **geração de mapas Mip** variante pode ser reproduzida usando códigos da seguinte forma:  
+ A variante **Geração de Mapa Mip** pode ser reproduzida pelo uso de um código como este:  
   
 ```  
 D3D11_TEXTURE2D_DESC texture_description;  
@@ -75,10 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  Lembre-se de que ao fornecer os dados iniciais para `CreateTexture2D`, você também deve fornecer um objeto D3D11_SUBRESOURCE_DATA para cada nível de mip.  
   
 > [!NOTE]
->  Se quiser fornecer seu próprio conteúdo aos níveis de mip em vez de gerá-lo automaticamente, crie as texturas usando um editor de imagens compatível com texturas com mapas mip. Em seguida, carregue o arquivo e transmita os níveis de mip a `CreateTexture2D`.  
+> Se quiser fornecer seu próprio conteúdo aos níveis de mip em vez de gerá-lo automaticamente, crie as texturas usando um editor de imagens compatível com texturas com mapas mip. Em seguida, carregue o arquivo e transmita os níveis de mip a `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Variante de metade/um quarto nas dimensões de textura](../debugger/half-quarter-texture-dimensions-variant.md)
-
-
-

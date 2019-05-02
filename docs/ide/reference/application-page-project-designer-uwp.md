@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 4d2f1dc7ba69d0c9521c5ad4a1a075b3da71e3a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 416661a39f54429f24cca66a0ec1be7b6c87629d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791040"
 ---
 # <a name="application-property-page-uwp-projects"></a>Página de propriedades do aplicativo (projetos UWP)
 
@@ -44,7 +44,7 @@ Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.
 
 Você pode definir a versão de destino e a versão mínima do Windows 10 para seu aplicativo usando as listas suspensas nesta seção. Recomendamos que você direcione para a versão mais recente do Windows 10, e se você estiver desenvolvendo um aplicativo empresarial, que também ofereça suporte a uma versão mínima mais antiga. Para saber mais sobre qual versão do Windows 10 escolher, confira [Escolher uma versão do UWP](/windows/uwp/updates-and-versions/choose-a-uwp-version).
 
-Para obter informações sobre a plataforma de direcionamento no Visual Studio 2017, consulte [Direcionamento da plataforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
+Para obter informações sobre o direcionamento de plataforma no Visual Studio, confira [Direcionamento de plataforma](/visualstudio/productinfo/vs2017-compatibility-vs#platform-targeting).
 
 ## <a name="see-also"></a>Consulte também
 

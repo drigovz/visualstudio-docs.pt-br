@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 70e74c1c4d5b8cc93f4afaeebc74f5fc0579a692
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416653"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ```  
   
 > [!WARNING]
->  A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Consequentemente, considere copiar arquivos remotos .pdb no mesmo local dos arquivos binários (.dll e .exe).  
+> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Consequentemente, considere copiar arquivos remotos .pdb no mesmo local dos arquivos binários (.dll e .exe).  
   
 ### <a name="excluding-and-including"></a>Excluindo e incluindo  
  Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:  
@@ -134,7 +134,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ```  
   
 > [!WARNING]
->  Se houver um erro em uma expressão regular, como parênteses sem escape ou ímpar, a análise de cobertura de código não será executada.  
+> Se houver um erro em uma expressão regular, como parênteses sem escape ou ímpar, a análise de cobertura de código não será executada.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Outras maneiras de incluir ou excluir elementos  
  Confira o exemplo [ no final deste tópico](#sample).  
@@ -183,11 +183,11 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar as configurações de execução em um teste de linha de comando  
  Para executar testes a partir da linha de comando, use vstest.console.exe. O arquivo de configurações é um parâmetro desse utilitário. Para obter mais informações, confira [usando VSTest.console na linha de comando](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
-1.  Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
+1. Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
   
      No menu **Iniciar** do Windows, escolha **Todos os Programas**, **Microsoft Visual Studio**, **Ferramentas do Visual Studio** e **Prompt de Comando do Desenvolvedor**.  
   
-2.  Execute:  
+2. Execute:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage /Settings:CodeCoverage.runsettings`  
   
@@ -202,13 +202,13 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
 3. Na página **Processo**, expanda **Testes Automatizados**, **Fonte de Teste**, **Configurações de Execução**. Selecione o seu arquivo **.runsettings**.  
   
-   - <em>No entanto, **Assembly de Teste</em>* é exibido em vez de **Fonte de Teste**. Quando tento definir o campo **Configurações de Execução**, só consigo selecionar arquivos .testsettings.*  
+   - <em>No entanto, **Assembly de Teste</em>* é exibido em vez de **Fonte de Teste**. Quando tento definir o campo Configurações de Execução**, só consigo selecionar arquivos .testsettings.*  
   
       Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, defina **Test Runner** para **Visual Studio Test Runner**.  
   
    Os resultados são visíveis na seção de resumo do relatório de compilação.  
   
-##  <a name="sample"></a>Exemplo de arquivo .runsettings  
+## <a name="sample"></a>Exemplo de arquivo .runsettings  
  Copie este código e edite-o de acordo com suas necessidades. Este é o arquivo .runsettings padrão.  
   
  (Para outros usos do arquivo .runsettings confira [Configuração de testes de unidade usando um arquivo .runsettings](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md).)  

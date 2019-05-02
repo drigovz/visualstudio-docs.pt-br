@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41acd93dc89d84fa3fa96bc1228c57271f1fc21d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17cda43c2fab2944e5027f5292b405f8a9e2e084
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538235"
 ---
 # <a name="manage-assembly-and-manifest-signing"></a>Gerenciar assinatura de assembly e de manifesto
 
@@ -31,7 +31,7 @@ Para obter informações sobre como assinar assemblies em projetos do Visual Bas
 Para obter informações de como assinar assemblies em projetos Visual C++, confira [Assemblies de nome forte (C++/CLI)](/cpp/dotnet/strong-name-assemblies-assembly-signing-cpp-cli).
 
 > [!NOTE]
-> A assinatura de nome forte não protege contra a engenharia reversa do assembly. Para proteger-se contra a engenharia reversa, confira [Dotfuscator Community Edition (CE)](dotfuscator/index.md).
+> A assinatura de nome forte não protege contra a engenharia reversa do assembly. Para se proteger contra a engenharia reversa, confira a [Dotfuscator Community](dotfuscator/index.md).
 
 ## <a name="asset-types-and-signing"></a>Tipos de ativo e assinatura
 
@@ -57,7 +57,7 @@ Em geral, você não deve assinar executáveis. Um componente de nome forte não
 
 ## <a name="how-to-sign-an-assembly-in-visual-studio"></a>Como assinar um assembly no Visual Studio
 
-Assine um aplicativo ou um componente usando a guia **Assinatura** da janela Propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**, digite **propriedades do projeto** na janela **Início Rápido** ou pressione **Alt**+**Enter** no **Gerenciador de Soluções**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
+Para assinar um aplicativo ou um componente, use a guia **Assinatura** da janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Selecione a guia **Assinatura** e, em seguida, marque a caixa de seleção **Assinar o assembly**.
 
 Especifique um arquivo de chave. Se você optar por criar um arquivo de chave, os novos arquivos de chave sempre serão criados no formato *.pfx*. É necessário um nome e uma senha para o novo arquivo.
 

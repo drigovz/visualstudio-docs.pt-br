@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework'
+title: 'Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d9e41de9fc395b673f38fa1f7b343594bf905a8d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: 726d0f7e4254f4d9d4210d4b64627cd97c98a430
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566041"
 ---
-# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: criando um Serviço de Dados WCF com WPF e Entity Framework
+# <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework
 Este passo a passo demonstra como criar um [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] simples que é hospedado em um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] e como acessá-lo de um aplicativo do Windows Forms.
 
 Neste passo a passo você:
@@ -90,11 +90,11 @@ A próxima etapa, você criará um [!INCLUDE[adonet_edm](../data-tools/includes/
 
 5. Na página **Escolha a Conexão de Dados**, executa uma das seguintes etapas:
 
-    -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-a.
+    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-a.
 
          - ou -
 
-    -   Escolha o botão **Nova Conexão** para configurar uma nova conexão de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+    - Escolha o botão **Nova Conexão** para configurar uma nova conexão de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
 6. Se o banco de dados exigir uma senha, escolha o botão de opção **Sim, incluir os dados confidenciais da cadeia de conexão** e escolha o botão **Avançar**.
 
@@ -289,4 +289,4 @@ A próxima etapa opcional, você aprenderá como filtrar os dados que são retor
 ## <a name="see-also"></a>Consulte também
 
 - [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
-- [Como adicionar, atualizar ou remover uma referência de WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Como: Adicionar, atualizar ou remover uma referência do WCF Data Service](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

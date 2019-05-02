@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990493"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
@@ -43,9 +43,9 @@ Resolução&mdash;No Gerenciador de Testes, escolha **Executar Tudo** para verif
 
 Quando você modificar e reexecutar os testes, um resultado anterior da cobertura de código poderá permanecer visível, inclusive a coloração de código com base nessa execução anterior.
 
-1.  Executar Analisar Cobertura de Código.
+1. Executar Analisar Cobertura de Código.
 
-2.  Não se esqueça de selecionar o conjunto de resultados mais recente na janela **Resultados da Cobertura de Código**.
+2. Não se esqueça de selecionar o conjunto de resultados mais recente na janela **Resultados da Cobertura de Código**.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Os arquivos .pdb (símbolo) não estão disponíveis
 
@@ -91,17 +91,17 @@ Explicação – você pode executar os testes de unidade com um arquivo *.runse
 
 Resolução&mdash;Existem dois tipos possíveis de falhas:
 
--   **Erro de XML**
+- **Erro de XML**
 
      Abra o arquivo *.runsettings* no editor XML do Visual Studio. Procure indicações de erro.
 
--   **Erro na expressão regular**
+- **Erro na expressão regular**
 
      Cada cadeia de caracteres no arquivo é uma expressão regular. Examine cada um em busca de erros e, em especial, procure:
 
-    -   Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`
+    - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`
 
-    -   Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`
+    - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Arquivo .runsettings personalizado com exclusões incorretas
 

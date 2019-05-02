@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6fc30ff87d02013a95ea7950841e3185b2bdc69d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562397"
 ---
 # <a name="projectitem-element"></a>Elemento ProjectItem
   Representa um item de projeto do SharePoint. Esse elemento o elemento raiz necessário do *. spdata* arquivo.
@@ -70,7 +70,7 @@ ms.locfileid: "56643659"
 
 |||
 |-|-|
-|**Namespace**|http<nolink>://schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**Namespace**|http:\/\/schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**Nome do esquema**|Esquema de Item de projeto do SharePoint|
 |**Arquivo de validação**|ProjectItemModelSchema.xsd|
 |**Pode estar vazio**|Não|

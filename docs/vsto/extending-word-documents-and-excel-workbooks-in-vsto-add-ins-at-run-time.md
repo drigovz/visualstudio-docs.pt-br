@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62b952d604ce095ef24ef427c98a74e60f25ba4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437235"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução
   Você pode usar um suplemento do VSTO para personalizar os documentos do Word e pastas de trabalho do Excel das seguintes maneiras:
@@ -54,21 +54,21 @@ ms.locfileid: "56643815"
 
 #### <a name="to-generate-a-host-item-for-a-word-document"></a>Para gerar um item de host para um documento do Word
 
--   O exemplo de código a seguir demonstra como gerar um item de host para o documento ativo.
+- O exemplo de código a seguir demonstra como gerar um item de host para o documento ativo.
 
      [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
      [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>Para gerar um item de host para uma pasta de trabalho do Excel
 
--   O exemplo de código a seguir demonstra como gerar um item de host para a pasta de trabalho ativa.
+- O exemplo de código a seguir demonstra como gerar um item de host para a pasta de trabalho ativa.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>Para gerar um item de host para uma planilha do Excel
 
--   O exemplo de código a seguir demonstra como gerar um item de host para a planilha ativa em um projeto.
+- O exemplo de código a seguir demonstra como gerar um item de host para a planilha ativa em um projeto.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
@@ -78,18 +78,18 @@ ms.locfileid: "56643815"
 
 #### <a name="to-generate-a-host-control-for-a-listobject"></a>Para gerar um controle de host para um ListObject
 
--   O exemplo de código a seguir demonstra como gerar uma <xref:Microsoft.Office.Tools.Excel.ListObject> para o primeiro <xref:Microsoft.Office.Interop.Excel.ListObject> na planilha ativa em um projeto.
+- O exemplo de código a seguir demonstra como gerar uma <xref:Microsoft.Office.Tools.Excel.ListObject> para o primeiro <xref:Microsoft.Office.Interop.Excel.ListObject> na planilha ativa em um projeto.
 
      [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
      [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
 
-###  <a name="AddControls"></a> Adicionar controles gerenciados a documentos e planilhas
+### <a name="AddControls"></a> Adicionar controles gerenciados a documentos e planilhas
  Depois de gerar uma <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>, você pode adicionar controles ao documento ou planilha esses estendidos objetos representam. Para adicionar controles, use o `Controls` propriedade do <xref:Microsoft.Office.Tools.Word.Document> ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
  Você pode adicionar controles de formulários do Windows ou *hospedar controles*. Um controle de host é um controle fornecido pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] que encapsula um controle correspondente no assembly de interoperabilidade primário do Word ou Excel. Um controle de host expõe todo o comportamento do objeto nativo subjacente Office. Ele também gera eventos e pode ser associado a dados usando o modelo de associação de dados de formulários do Windows. Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Não é possível adicionar um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle em uma planilha, ou uma <xref:Microsoft.Office.Tools.Word.XMLNode> ou <xref:Microsoft.Office.Tools.Word.XMLNodes> controle a um documento, usando um suplemento do VSTO. Esses controles de host não podem ser adicionados por meio de programação. Para obter mais informações, consulte [limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Não é possível adicionar um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle em uma planilha, ou uma <xref:Microsoft.Office.Tools.Word.XMLNode> ou <xref:Microsoft.Office.Tools.Word.XMLNodes> controle a um documento, usando um suplemento do VSTO. Esses controles de host não podem ser adicionados por meio de programação. Para obter mais informações, consulte [limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Persistir e remover os controles
  Quando você adiciona controles gerenciados em um documento ou planilha, os controles não são persistidos quando o documento for salvo e, em seguida, fechado. Todos os controles de host são removidos para que somente nativo Office objetos subjacentes são deixados para trás. Por exemplo, uma <xref:Microsoft.Office.Tools.Excel.ListObject> torna-se um <xref:Microsoft.Office.Interop.Excel.ListObject>. Todos os controles de formulários do Windows também são removidos, mas os wrappers de ActiveX para os controles são deixados para trás no documento. Você deve incluir o código no seu suplemento VSTO para limpar os controles, ou para recriar os controles na próxima vez em que o documento é aberto. Para obter mais informações, consulte [persistir controles dinâmicos em documentos do Office](../vsto/persisting-dynamic-controls-in-office-documents.md).
@@ -113,7 +113,7 @@ ms.locfileid: "56643815"
  [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
  [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
 
-##  <a name="HasVstoObject"></a> Determinar se um objeto do Office foi estendido
+## <a name="HasVstoObject"></a> Determinar se um objeto do Office foi estendido
  Para determinar se um objeto estendido já foi gerado para um determinado objeto nativo do Office, use o `HasVstoObject` método. Esse método retornará **verdadeira** se um objeto estendido já foi gerado.
 
  Use o método `Globals.Factory.HasVstoMethod`. Passe o objeto nativo do Word ou Excel, como um <xref:Microsoft.Office.Interop.Word.Document> ou <xref:Microsoft.Office.Interop.Excel.Worksheet>, que você deseja testar para um objeto estendido.

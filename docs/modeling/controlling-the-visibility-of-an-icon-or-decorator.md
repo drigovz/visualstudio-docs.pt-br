@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbe658dd3cad8c89dca04fe1dc9fb61d6c5813e3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7cfe6ce02b03ed69435f8056ccd340b92f9eb5a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913204"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62421493"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em uma linguagem específica de domínio (DSL). Você pode fazer o decorador aparecem e desaparecem dependendo do estado das propriedades no modelo. Por exemplo, em uma forma que representa uma pessoa, você poderia ter diferentes ícones que aparecem, dependendo do sexo da pessoa, número de filhos e assim por diante.
@@ -24,11 +24,11 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
 
 1. No diagrama de definição de DSL, adicione à classe forma os ícones ou decoradores de texto que você deseja exibir.
 
-   1.  A classe shape do botão direito do mouse, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.
+   1. A classe shape do botão direito do mouse, aponte para **adicionar**e, em seguida, clique no tipo necessário de decorador.
 
-   2.  Defina o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você poderia ter ícones para masculino e feminino, compartilhando a mesma posição.
+   2. Defina o decorador **posição** propriedade. Mais de um decorador pode ter a mesma posição. Por exemplo, você poderia ter ícones para masculino e feminino, compartilhando a mesma posição.
 
-   3.  Defina as **ícone padrão** propriedade de um decorador de ícone.
+   3. Defina as **ícone padrão** propriedade de um decorador de ícone.
 
 2. Selecione o mapa de elemento de diagrama, que é a linha cinza entre a classe de forma e a classe de domínio no diagrama de definição de DSL.
 
@@ -40,7 +40,7 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
 
     Caso contrário, clique no menu suspenso e navegue até a relação ou onde se encontra a propriedade de classe.
 
-   -   Para evitar um relatório de erros, você não deve navegar por meio de uma relação marcada com "*" na ferramenta de navegação.
+   - Para evitar um relatório de erros, você não deve navegar por meio de uma relação marcada com "*" na ferramenta de navegação.
 
 6. Defina as **propriedade Filter** para uma propriedade de domínio. Por exemplo, sexo.
 
@@ -56,7 +56,7 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
 
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Para controlar a visibilidade de um decorador com base em uma fórmula
 
-1.  Adicione uma propriedade de domínio calculado para a classe de domínio. No **propriedades** janela, defina os seguintes valores:
+1. Adicione uma propriedade de domínio calculado para a classe de domínio. No **propriedades** janela, defina os seguintes valores:
 
      **IsBrowsable =**`False`**-Isso oculta a propriedade do usuário**
 
@@ -68,27 +68,27 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
 
      Para obter mais informações, consulte [Calculated e propriedades de armazenamento personalizado](../modeling/calculated-and-custom-storage-properties.md).
 
-2.  Verifique a nova propriedade para controlar a visibilidade de decorador.
+2. Verifique a nova propriedade para controlar a visibilidade de decorador.
 
-    1.  Selecione o mapa de elemento de diagrama, que é a linha cinza da classe de domínio para a forma. No **detalhes de DSL** janela, abra o **DecoratorMap** guia.
+    1. Selecione o mapa de elemento de diagrama, que é a linha cinza da classe de domínio para a forma. No **detalhes de DSL** janela, abra o **DecoratorMap** guia.
 
-    2.  Verifique as **filtro de visibilidade** caixa.
+    2. Verifique as **filtro de visibilidade** caixa.
 
-    3.  Na **propriedade Filter**, selecione a propriedade de controle **DecoratorControl**.
+    3. Na **propriedade Filter**, selecione a propriedade de controle **DecoratorControl**.
 
-    4.  Sob **entradas de visibilidade**, insira `True`.
+    4. Sob **entradas de visibilidade**, insira `True`.
 
-3.  Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
+3. Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
 
-4.  Clique em **compilar solução** sobre o **Build** menu.
+4. Clique em **compilar solução** sobre o **Build** menu.
 
-5.  Clique duas vezes o relatório de erro foi exibido: "*YourClass* não contém uma definição para GetDecoratorControlValue...".
+5. Clique duas vezes o relatório de erro foi exibido: "*YourClass* não contém uma definição para GetDecoratorControlValue...".
 
      Abre o editor de texto em dsl\generatedcode\domainclasses.cs. Acima do erro realçado é um comentário que solicita que você adicione um método.
 
-6.  Observe o namespace de classe e método que estão faltando.  Por exemplo, Company.FamilyTree.Person.GetDecoratorControlValue().
+6. Observe o namespace de classe e método que estão faltando.  Por exemplo, Company.FamilyTree.Person.GetDecoratorControlValue().
 
-7.  Em um arquivo de código separado, escreva uma definição de classe parcial que contém o método ausente. Por exemplo:
+7. Em um arquivo de código separado, escreva uma definição de classe parcial que contém o método ausente. Por exemplo:
 
     ```
     namespace Company.FamilyTree
@@ -101,7 +101,7 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
 
      Para obter mais informações sobre como personalizar o modelo com o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
-8.  Recompile e execute a solução.
+8. Recompile e execute a solução.
 
 ## <a name="see-also"></a>Consulte também
 

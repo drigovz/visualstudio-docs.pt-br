@@ -1,14 +1,9 @@
 ---
 title: 'Passo a passo: Obtendo uma lista de instalados (implementação herdada) de trechos de código | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, retrieving list
 - code snippets, retrieving list
@@ -16,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a8d132de9773614b966b6fe3a7ae84392fba4f35
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440766"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: obtendo uma lista de snippets de código instalados (implementação herdada)
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Um trecho de código é um trecho de código que pode ser inserido no buffer de origem com um comando de menu (que permite escolher entre uma lista de trechos de código instalado) ou pelo selecionando um atalho de trecho de código de uma lista de conclusão do IntelliSense.  
@@ -35,7 +30,7 @@ Um trecho de código é um trecho de código que pode ser inserido no buffer de 
   
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Para recuperar uma lista de trechos de código  
   
-1.  O código a seguir mostra como obter uma lista de trechos de código para um determinado idioma. Os resultados são armazenados em uma matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estruturas. Esse método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obter o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> da interface do <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. No entanto, você também pode usar o provedor de serviço fornecido a seu VSPackage e chame o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.  
+1. O código a seguir mostra como obter uma lista de trechos de código para um determinado idioma. Os resultados são armazenados em uma matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estruturas. Esse método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obter o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> da interface do <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. No entanto, você também pode usar o provedor de serviço fornecido a seu VSPackage e chame o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.  
   
     ```csharp  
     using System;  
@@ -110,10 +105,10 @@ Um trecho de código é um trecho de código que pode ser inserido no buffer de 
   
 ### <a name="to-call-the-getsnippets-method"></a>Para chamar o método GetSnippets  
   
-1.  O método a seguir mostra como chamar o `GetSnippets` método após a conclusão de uma operação de análise. O <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método é chamado após uma operação de análise que foi iniciada com o motivo pelo qual <xref:Microsoft.VisualStudio.Package.ParseReason>.  
+1. O método a seguir mostra como chamar o `GetSnippets` método após a conclusão de uma operação de análise. O <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método é chamado após uma operação de análise que foi iniciada com o motivo pelo qual <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  O `expansionsList` listis armazenado em cache por motivos de desempenho de matriz. Os trechos de código as alterações não são refletidas na lista até que o serviço de linguagem é interrompido e recarregado (por exemplo, ao parar e reiniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> O `expansionsList` listis armazenado em cache por motivos de desempenho de matriz. Os trechos de código as alterações não são refletidas na lista até que o serviço de linguagem é interrompido e recarregado (por exemplo, ao parar e reiniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  
@@ -134,7 +129,7 @@ class TestLanguageService : LanguageService
   
 ### <a name="to-use-the-snippet-information"></a>Para usar as informações de trecho de código  
   
-1.  O código a seguir mostra como usar as informações de trecho de código retornadas pelo `GetSnippets` método. O `AddSnippets` método é chamado do analisador em resposta a qualquer motivo de análise que é usado para preencher uma lista de trechos de código. Isso deve ocorrer depois que a análise completa foi feita pela primeira vez.  
+1. O código a seguir mostra como usar as informações de trecho de código retornadas pelo `GetSnippets` método. O `AddSnippets` método é chamado do analisador em resposta a qualquer motivo de análise que é usado para preencher uma lista de trechos de código. Isso deve ocorrer depois que a análise completa foi feita pela primeira vez.  
   
      O `AddDeclaration` método cria uma lista de declarações que é exibida posteriormente em uma lista de conclusão.  
   
@@ -185,4 +180,3 @@ class TestLanguageService : LanguageService
   
 ## <a name="see-also"></a>Consulte também  
  [Suporte a snippets de código em um serviço de linguagem herdado](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)
-

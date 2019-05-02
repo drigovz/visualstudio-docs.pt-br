@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 9d0176113b444c2d5b7e4c9f304e35974fdb31e5
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949507"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Definir e consumir representantes de atividades no Designer de Fluxo de Trabalho
 
@@ -21,12 +21,10 @@ ms.locfileid: "57222877"
 
 ## <a name="define-an-activity-delegate"></a>Defina um representante de atividades
 
-1. No Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**.
-
-2. No **novo projeto** caixa de diálogo, selecione o **fluxo de trabalho** categoria à esquerda e, em seguida, selecione o **aplicativo de Console do fluxo de trabalho** modelo de projeto. Nomeie o projeto (se desejado) e clique em **Okey**.
+1. Criar um novo **aplicativo de Console do fluxo de trabalho** projeto.
 
    > [!NOTE]
-   > Se você não vir as **fluxo de trabalho** categoria, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
+   > Se você não vir as **fluxo de trabalho** modelos de projeto, primeiro instale o **Windows Workflow Foundation** componente do Visual Studio. Para obter instruções detalhadas, consulte [instalar o Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation).
 
 3. Clique com botão direito no projeto no **Gerenciador de soluções** e selecione **Add** > **Novo Item**. Selecione o **fluxo de trabalho** categoria e, em seguida, selecione o **atividade** modelo de item. Nomeie a nova atividade **Myforeach** e, em seguida, selecione **Okey**.
 
@@ -72,17 +70,17 @@ ms.locfileid: "57222877"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Use a atividade personalizado em um fluxo de trabalho
 
-1.  Compile o projeto pressionando **Ctrl**+**Shift**+**B**.
+1. Compile o projeto pressionando **Ctrl**+**Shift**+**B**.
 
-2.  Na **Gerenciador de soluções**, abra **Workflow1.xaml** no designer.
+2. Na **Gerenciador de soluções**, abra **Workflow1.xaml** no designer.
 
-3.  Arraste uma **MyForEach** atividade da caixa de ferramentas para a superfície do designer. A atividade está em uma seção da caixa de ferramentas com o mesmo nome que o projeto.
+3. Arraste uma **MyForEach** atividade da caixa de ferramentas para a superfície do designer. A atividade está em uma seção da caixa de ferramentas com o mesmo nome que o projeto.
 
-4.  Defina a **itens** propriedade da **MyForEach** atividade para **novo objeto [] {1, "abc"}**.
+4. Defina a **itens** propriedade da **MyForEach** atividade para **novo objeto [] {1, "abc"}**.
 
-5.  Arraste uma <xref:System.Activities.Statements.WriteLine> a atividade do **primitivos** seção da caixa de ferramentas a **Delegate: corpo** seção o **MyForEach** atividade.
+5. Arraste uma <xref:System.Activities.Statements.WriteLine> a atividade do **primitivos** seção da caixa de ferramentas a **Delegate: corpo** seção o **MyForEach** atividade.
 
-6.  Definir a **texto** propriedade da <xref:System.Activities.Statements.WriteLine> atividade **argument**.
+6. Definir a **texto** propriedade da <xref:System.Activities.Statements.WriteLine> atividade **argument**.
 
 Quando o fluxo de trabalho é executado, o console mostra a saída a seguir:
 

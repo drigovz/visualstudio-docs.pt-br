@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 0fa9749a06c568f7fab55cd6c7a862fa616ecf6d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 50d307cd65bfdf534b6ca3586e69bbc27be25e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902846"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>Depurar aplicativos UWP em máquinas remotas do Visual Studio
 
 Você pode usar o Visual Studio para executar, depurar, analisar e testar um aplicativo da plataforma Universal do Windows (UWP) em outro computador ou dispositivo. Executar o aplicativo UWP em um computador remoto é especialmente útil quando o computador do Visual Studio não dá suporte a funcionalidade específica de UWP, como toque, localização geográfica ou orientação física.
 
-##  <a name="BKMK_Prerequisites"></a> Pré-requisitos
+## <a name="BKMK_Prerequisites"></a> Pré-requisitos
 
 Para depurar um aplicativo UWP em um dispositivo remoto do Visual Studio:
 
@@ -35,7 +35,7 @@ Para depurar um aplicativo UWP em um dispositivo remoto do Visual Studio:
   - Algumas versões do Windows 10 iniciarem e executar as ferramentas remotas automaticamente. Caso contrário, [instalar e executar as ferramentas remotas para Visual Studio](#BKMK_download).
   - Dispositivos Windows Mobile 10 não exigem ou dar suporte a ferramentas remotas.
 
-##  <a name="BKMK_ConnectVS"></a> Configurar um projeto do Visual Studio para depuração remota
+## <a name="BKMK_ConnectVS"></a> Configurar um projeto do Visual Studio para depuração remota
 <a name="BKMK_DirectConnect"></a> Usar o projeto **propriedades** para especificar o dispositivo remoto para se conectar ao. As configurações são diferentes dependendo da linguagem de programação.
 
 > [!CAUTION]
@@ -43,27 +43,27 @@ Para depurar um aplicativo UWP em um dispositivo remoto do Visual Studio:
 >
 >Se você escolher **autenticação do Windows** para o **tipo de autenticação**, você precisará entrar no computador remoto durante a depuração. O depurador remoto também deve ser executado sob **autenticação do Windows** modo, com a mesma conta de usuário como no computador do Visual Studio.
 
-###  <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar um C# ou o projeto do Visual Basic para depuração remota
+### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Configurar um C# ou o projeto do Visual Basic para depuração remota
 
 1. Selecione o C# ou o projeto do Visual Basic no Visual Studio **Gerenciador de soluções** e selecione o **propriedades** ícone, pressione **Alt** +  **Insira**, ou clique com botão direito e escolha **propriedades**.
 
-1.  Selecione a guia **Depurar**.
+1. Selecione a guia **Depurar**.
 
-1.  Sob **dispositivo de destino**, selecione **máquina remota** para um computador remoto, ou **dispositivo** para um dispositivo do Windows Mobile 10 diretamente conectados.
+1. Sob **dispositivo de destino**, selecione **máquina remota** para um computador remoto, ou **dispositivo** para um dispositivo do Windows Mobile 10 diretamente conectados.
 
-1.  Para um computador remoto, insira o nome de rede ou o endereço IP na **computador remoto** campo, ou selecione **localizar** para pesquisar o dispositivo na [caixa de diálogo conexões remotas](#remote-connections).
+1. Para um computador remoto, insira o nome de rede ou o endereço IP na **computador remoto** campo, ou selecione **localizar** para pesquisar o dispositivo na [caixa de diálogo conexões remotas](#remote-connections).
 
     ![Gerenciado propriedades do projeto para depuração remota](../debugger/media/vsrun_managed_projprop_remote.png "propriedades do projeto de depuração gerenciados")
 
-###  <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar um projeto de JavaScript ou C++ para depuração remota
+### <a name="BKMK_Choosing_the_remote_device_for_JavaScript_and_C___projects"></a> Configurar um C++ projeto para depuração remota
 
-1.  Selecione o projeto C++ ou JavaScript no Visual Studio **Gerenciador de soluções** e selecione o **Properties** ícone, pressione **Alt**+**Enter** , ou clique com botão direito e escolha **propriedades**.
+1. Selecione o C++ projeto no Visual Studio **Gerenciador de soluções** e selecione o **propriedades** ícone, pressione **Alt**+**deEnter**, ou clique com botão direito e escolha **propriedades**.
 
-1.  Selecione o **depuração** guia.
+1. Selecione o **depuração** guia.
 
-3.  Sob **depurador a iniciar**, selecione **máquina remota** para um computador remoto, ou **dispositivo** para um dispositivo do Windows Mobile 10 diretamente conectados.
+3. Sob **depurador a iniciar**, selecione **máquina remota** para um computador remoto, ou **dispositivo** para um dispositivo do Windows Mobile 10 diretamente conectados.
 
-1.  Para uma máquina remota, insira ou selecione o nome de rede ou o endereço IP na **nome da máquina** campo ou soltar para baixo e selecione **localizar** para pesquisar o dispositivo na [caixa de diálogo conexões remotas ](#remote-connections).
+1. Para uma máquina remota, insira ou selecione o nome de rede ou o endereço IP na **nome da máquina** campo ou soltar para baixo e selecione **localizar** para pesquisar o dispositivo na [caixa de diálogo conexões remotas ](#remote-connections).
 
     ![Propriedades de projeto do C++ para depuração remota](../debugger/media/vsrun_cpp_projprop_remote.png "propriedades do projeto de depuração de C++")
 
@@ -92,7 +92,7 @@ Para o Visual Studio depurar aplicativos em um computador remoto, o computador r
 
 [!INCLUDE [remote-debugger-configuration](../debugger/includes/remote-debugger-configuration.md)]
 
-##  <a name="BKMK_RunRemoteDebug"></a> Depurar aplicativos UWP remotamente
+## <a name="BKMK_RunRemoteDebug"></a> Depurar aplicativos UWP remotamente
 
 Depuração remota funciona da mesma forma depuração local.
 

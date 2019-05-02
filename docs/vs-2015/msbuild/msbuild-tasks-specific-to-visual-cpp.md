@@ -16,17 +16,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7bebf38462e7ca6d979e22a962f7872a7f764b5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f4de01af6535a33607e5263966492210f8ce4a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790292"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647945"
 ---
 # <a name="msbuild-tasks-specific-to-visual-c"></a>Tarefas do MSBuild específicas ao Visual C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Tarefas fornecem o código que é executado durante o processo de compilação. Quando o Visual C++ é instalado, as tarefas a seguir estão disponíveis, além das que são instaladas com o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obter mais informações, confira [visão geral do MSBuild (Visual C++)](http://msdn.microsoft.com/library/dd258f6f-ab51-48d9-b274-f7ba911d05ca).  
   
  Além dos parâmetros para cada tarefa, todas as tarefas também têm os seguintes parâmetros.  
@@ -34,7 +33,7 @@ Tarefas fornecem o código que é executado durante o processo de compilação. 
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
 |`Condition`|Parâmetro `String` opcional.<br /><br /> A expressão `Boolean` que o mecanismo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usa para determinar se essa tarefa será executada. Para obter informações sobre as condições que são suportadas pelo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], confira [Condições](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **verdadeiro**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e a compilação continuam em execução, e todos os erros da tarefa são tratados como avisos<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento `Target` e a compilação são considerados como com falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, confira [Como: ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Parâmetro opcional. Pode conter um dos seguintes valores:<br /><br /> -   **WarnAndContinue** ou **verdadeiro**. Quando uma tarefa falha, as tarefas subsequentes no elemento de [Destino](../msbuild/target-element-msbuild.md) e a compilação continuam em execução, e todos os erros da tarefa são tratados como avisos<br />-   **ErrorAndContinue**. Quando uma tarefa falha, as tarefas subsequentes no elemento de `Target` e o build continuam em execução e todos os erros da tarefa são tratados como erros.<br />-   **ErrorAndStop** ou **falso** (padrão). Quando uma tarefa falha, as tarefas restantes do elemento de `Target` e o build não são executadas e todo o elemento `Target` e a compilação são considerados como com falha.<br /><br /> As versões do .NET Framework antes da 4.5 ofereciam suporte somente aos valores `true` e `false`.<br /><br /> Para obter mais informações, confira [Como: Ignorar erros em tarefas](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

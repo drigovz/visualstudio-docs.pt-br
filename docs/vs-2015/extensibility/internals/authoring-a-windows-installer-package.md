@@ -1,27 +1,22 @@
 ---
 title: Criação de um pacote do Windows Installer | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - .msi files, VSPackages
 - msi files, VSPackages
 ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c51696cd41083e81fb1561eb8707c4f4844b32d5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
+ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742647"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "59000097"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Criação de um pacote do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,8 +49,7 @@ O modelo do Windows Installer unidades de dados. Em vez de escrever um script de
   
    O conjunto de ferramentas cria pacotes do Windows Installer XML dos arquivos de origem. O conjunto de ferramentas é um projeto de código-fonte aberto da Microsoft. Você pode baixar o código-fonte e os executáveis do [ http://sourceforge.net/projects/wix ](http://sourceforge.net/projects/wix).  
   
-  Para os produtos comerciais que se integram [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consulte [ http://visualstudiogallery.com ](http://visualstudiogallery.com/).  
+  Para os produtos comerciais que se integram [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usando o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], consulte [ https://marketplace.visualstudio.com/ ](https://marketplace.visualstudio.com/).  
   
 ## <a name="see-also"></a>Consulte também  
  [Instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
-

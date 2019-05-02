@@ -1,6 +1,6 @@
 ---
 title: 'CA1711: Identificadores não devem ter um sufixo incorreto'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1711
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9773dc808d6fbbc7161053dcd4d7a1d7d4e6f13
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 83eff2b91a62d389f2273ff600e077eaea379d88
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546216"
 ---
 # <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identificadores não devem ter um sufixo incorreto
 
@@ -33,6 +33,8 @@ ms.locfileid: "55970225"
 ## <a name="cause"></a>Causa
 
 Um identificador tem um sufixo incorreto.
+
+Por padrão, essa regra olha apenas identificadores visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -72,6 +74,16 @@ Remova o sufixo do nome do tipo.
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
 Não suprima um aviso nessa regra, a menos que o sufixo tem um significado inequívoco no domínio do aplicativo.
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.ca1711.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 

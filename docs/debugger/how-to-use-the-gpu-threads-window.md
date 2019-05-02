@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c878bcc3b0ed2f37f5bb8700b463ac5c1308981
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846837"
 ---
-# <a name="how-to-use-the-gpu-threads-window-c"></a>Como: usar a janela de Threads GPU (C++)
+# <a name="how-to-use-the-gpu-threads-window-c"></a>Como: Usar a janela de Threads GPU (C++)
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
 
  A janela de Threads da GPU contém uma tabela na qual cada linha representa um conjunto de threads de GPU que têm os mesmos valores em todas as colunas. Você pode classificar, reorganizar, remover e agrupar os itens que estão nas colunas. Você pode sinalizar, remover sinalização, congelar (suspender) e descongelar (retomar) threads da janela de Threads da GPU. As colunas a seguir são exibidas na janela Threads da GPU:
@@ -52,57 +52,57 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 
 ### <a name="to-display-the-gpu-threads-window"></a>Para exibir a janela Threads da GPU
 
-1.  No **Gerenciador de Soluções**, abra o menu de atalho para o projeto e escolha **Propriedades**.
+1. No **Gerenciador de Soluções**, abra o menu de atalho para o projeto e escolha **Propriedades**.
 
-2.  Na janela **Páginas de Propriedades** para o projeto, em **Propriedades de Configuração**, escolha **Depuração**.
+2. Na janela **Páginas de Propriedades** para o projeto, em **Propriedades de Configuração**, escolha **Depuração**.
 
-3.  Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.
+3. Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.
 
-4.  Escolha o botão **OK**.
+4. Escolha o botão **OK**.
 
-5.  Defina um ponto de interrupção no código do GPU.
+5. Defina um ponto de interrupção no código do GPU.
 
-6.  Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.
+6. Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.
 
-7.  Na barra de menus, escolha **Depurar**, **Janelas**, **Threads da GPU**.
+7. Na barra de menus, escolha **Depurar**, **Janelas**, **Threads da GPU**.
 
 ### <a name="to-switch-to-a-different-thread"></a>Para alternar para um thread diferente
 
--   Clique duas vezes na coluna. (Teclado: selecione a linha e escolha Enter.)
+- Clique duas vezes na coluna. (Teclado: Selecione a linha e escolha Enter.)
 
 ### <a name="to-display-a-particular-tile-and-thread"></a>Para exibir um determinado bloco e o thread
 
-1.  Escolha o botão **Expandir o Comutador de Thread** na janela Threads da GPU.
+1. Escolha o botão **Expandir o Comutador de Thread** na janela Threads da GPU.
 
-2.  Insira os valores do quadro e de thread nas caixas de texto.
+2. Insira os valores do quadro e de thread nas caixas de texto.
 
-3.  Escolha o botão que tem a seta.
+3. Escolha o botão que tem a seta.
 
 ### <a name="to-display-or-hide-a-column"></a>Para exibir ou ocultar uma coluna
 
--   Abra o menu de atalho para a janela Threads da GPU, escolha **Colunas** e, em seguida, escolha a coluna que você quer exibir ou ocultar.
+- Abra o menu de atalho para a janela Threads da GPU, escolha **Colunas** e, em seguida, escolha a coluna que você quer exibir ou ocultar.
 
 ### <a name="to-sort-by-a-column"></a>Para classificar por coluna
 
--   Selecione o título da coluna.
+- Selecione o título da coluna.
 
 ### <a name="to-group-threads"></a>Para agrupar threads
 
--   Abra o menu de atalho da janela Threads da GPU, escolha **Agrupar por** e escolha um dos nomes de coluna exibidos. Escolha **Nenhum** para desagrupar os threads.
+- Abra o menu de atalho da janela Threads da GPU, escolha **Agrupar por** e escolha um dos nomes de coluna exibidos. Escolha **Nenhum** para desagrupar os threads.
 
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Para congelar ou descongelar uma linha de threads
 
--   Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.
+- Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.
 
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>Para sinalizar ou remover sinalização de uma linha de threads
 
--   Selecione a coluna do sinalizador do thread ou abra o menu de atalho do thread e escolha **Sinalizar** ou **Remover Sinalização**.
+- Selecione a coluna do sinalizador do thread ou abra o menu de atalho do thread e escolha **Sinalizar** ou **Remover Sinalização**.
 
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados
 
--   Escolha o botão de sinalizador na janela Threads da GPU.
+- Escolha o botão de sinalizador na janela Threads da GPU.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Passo a passo: depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)
+- [Passo a passo: depurar um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

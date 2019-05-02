@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa90a0d10b06559b3f4f46fd8dc0c5da4cef981e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f8c64bb19d65540f8c72be9acb1c5f59deb3c8f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075357"
 ---
 # <a name="how-to-clean-a-build"></a>Como limpar um build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você limpa um build, todos os arquivos de saída e intermediários são excluídos, deixando apenas os arquivos de projeto e componente. Nos arquivos de projeto e de componente, novas instâncias dos arquivos de saída e intermediários podem ser criadas. A biblioteca de tarefas comuns fornecida com o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclui uma tarefa [Exec](../msbuild/exec-task.md) que você pode usar para executar comandos do sistema. Para obter mais informações sobre a biblioteca de tarefas, consulte [Referência de Tarefa](../msbuild/msbuild-task-reference.md).  
   
 ## <a name="creating-a-directory-for-output-items"></a>Criando um diretório para itens de saída  
@@ -32,11 +31,11 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
   
 #### <a name="to-create-a-directory-for-output-items"></a>Para criar um diretório para itens de saída  
   
-1.  Use o elemento `Property` para definir o local e o nome do diretório. Por exemplo, crie um diretório chamado `BuiltApp` no diretório que contém os arquivos de projeto e código-fonte:  
+1. Use o elemento `Property` para definir o local e o nome do diretório. Por exemplo, crie um diretório chamado `BuiltApp` no diretório que contém os arquivos de projeto e código-fonte:  
   
      `<builtdir>BuiltApp</builtdir>`  
   
-2.  Use a tarefa [MakeDir](../msbuild/makedir-task.md) para criar o diretório se o diretório não existir. Por exemplo:  
+2. Use a tarefa [MakeDir](../msbuild/makedir-task.md) para criar o diretório se o diretório não existir. Por exemplo:  
   
      `<MakeDir Directories = "$(builtdir)"`  
   
@@ -47,7 +46,7 @@ Quando você limpa um build, todos os arquivos de saída e intermediários são 
   
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Para remover um diretório e todos os arquivos contidos no diretório  
   
--   Use a tarefa `RemoveDir` para remover o diretório. Por exemplo:  
+- Use a tarefa `RemoveDir` para remover o diretório. Por exemplo:  
   
      `<RemoveDir Directories="$(builtdir)" />`  
   

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a355930734bfb122a088fb20817b3318a365cc63
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54961709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901262"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Técnicas de depuração e ferramentas para ajudá-lo a escrever códigos melhores
 
@@ -42,7 +42,7 @@ O código a seguir tem alguns bugs que você pode corrigir o problema usando o I
 
 Para criar o aplicativo:
 
-1. Abra o Visual Studio e escolha **arquivo > Novo projeto**. Sob **Visual C#** , escolha **área de trabalho do Windows** ou **.NET Core**e, em seguida, no painel central, escolha uma **aplicativo de Console**.
+1. Abra o Visual Studio e escolha **arquivo** > **New** > **projeto**. Sob **Visual C#** , escolha **área de trabalho do Windows** ou **.NET Core**e, em seguida, no painel central, escolha uma **aplicativo de Console**.
 
     > [!NOTE]
     > Se o modelo de projeto do **Aplicativo de Console** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento de área de trabalho do .NET** (ou a carga de trabalho **Desenvolvimento multiplataforma do .NET Core**) e escolha **Modificar**.

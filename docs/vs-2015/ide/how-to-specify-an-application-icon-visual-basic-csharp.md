@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435194"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como especificar um ícone do aplicativo (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Como: Especifique um ícone do aplicativo (Visual Basic, c#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A propriedade `Icon` de um projeto especifica o arquivo de ícone (.ico) que será exibido para o aplicativo compilado no Explorador de Arquivos e na barra de tarefas do Windows.  
@@ -28,17 +28,17 @@ A propriedade `Icon` de um projeto especifica o arquivo de ícone (.ico) que ser
  A propriedade `Icon` pode ser acessada no painel **Aplicativo** do **Designer de Projeto**, ele contém uma lista de ícones que foram adicionados a um projeto como recursos ou arquivos de conteúdo.  
   
 > [!NOTE]
->  Depois de definir a propriedade do ícone para um aplicativo, talvez você também veja a propriedade `Icon` de cada **Janela** ou **Formulário** no aplicativo. Para obter informações sobre os ícones para aplicativos independentes do WPF (Windows Presentation Foundation), consulte a propriedade <xref:System.Windows.Window.Icon%2A>.  
+> Depois de definir a propriedade do ícone para um aplicativo, talvez você também veja a propriedade `Icon` de cada **Janela** ou **Formulário** no aplicativo. Para obter informações sobre os ícones para aplicativos independentes do WPF (Windows Presentation Foundation), consulte a propriedade <xref:System.Windows.Window.Icon%2A>.  
   
 ### <a name="to-specify-an-application-icon"></a>Para especificar um ícone do aplicativo  
   
-1.  No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
+1. No **Gerenciador de Soluções**, escolha um nó do projeto (não o nó **Solução**).  
   
-2.  Na barra de menus, escolha **Projeto**, **Propriedades**.  
+2. Na barra de menus, escolha **Projeto**, **Propriedades**.  
   
-3.  Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.  
+3. Quando o **Designer de Projeto** for exibido, escolha a guia **Aplicativo**.  
   
-4.  **(Visual Basic)**  Na lista **Ícone**, escolha um arquivo de ícone (.ico).  
+4. **(Visual Basic)**  Na lista **Ícone**, escolha um arquivo de ícone (.ico).  
   
      **C#** Próximo à lista **Ícone**, escolha o botão **\<Procurar...>** e navegue até o local do ícone de arquivo desejado.  
   

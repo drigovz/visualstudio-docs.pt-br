@@ -1,14 +1,9 @@
 ---
 title: Adicionando um comando na barra de ferramentas do Gerenciador de soluções | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - toolbars [Visual Studio], adding buttons
 - buttons [Visual Studio], adding to Solution Explorer
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 52e963a202d75c29c65521729e70e062a579d479
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ac07a2c6becd46a2536e6a9b3340d075d5f078f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403250"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Adicionando um comando à barra de ferramentas do Gerenciador de Soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +29,7 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
  Para obter mais informações sobre menus, comandos de barra de ferramentas e arquivos. VSCT, consulte [comandos, Menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md).  
   
 > [!NOTE]
->  Use arquivos de tabela de comando de XML (. VSCT) em vez de arquivos de configuração (. ctc) da tabela de comando para definir como os menus e comandos são exibidos no seu VSPackages. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
+> Use arquivos de tabela de comando de XML (. VSCT) em vez de arquivos de configuração (. ctc) da tabela de comando para definir como os menus e comandos são exibidos no seu VSPackages. Para obter mais informações, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -45,13 +40,13 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Adicionando um botão na barra de ferramentas do Gerenciador de soluções  
  Esta seção do passo a passo mostra como adicionar um botão para o **Gerenciador de soluções** barra de ferramentas. Quando o botão é clicado, o código no método de retorno de chamada é executado.  
   
-1.  No arquivo ToolbarButtonPackage.vsct, vá para o `<Symbols>` seção. O `<GuidSymbol>` nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicionar um `<IDSymbol>` elemento para este nó para declarar o grupo que manterá seu comando.  
+1. No arquivo ToolbarButtonPackage.vsct, vá para o `<Symbols>` seção. O `<GuidSymbol>` nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicionar um `<IDSymbol>` elemento para este nó para declarar o grupo que manterá seu comando.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  No `<Groups>` seção, após a entrada de grupo existente, definir o novo grupo que você declarou na etapa anterior.  
+2. No `<Groups>` seção, após a entrada de grupo existente, definir o novo grupo que você declarou na etapa anterior.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -62,7 +57,7 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
   
      Definir o pai GUID:ID par como `guidSHLMainMenu` e `IDM_VS_TOOL_PROJWIN` coloca esse grupo na **Gerenciador de soluções** barra de ferramentas e definir um valor de alta prioridade coloca-o depois de outros grupos de comando.  
   
-3.  No `<Buttons>` seção, altere a ID do pai do gerado `<Button>` entrada para refletir o grupo que você definiu na etapa anterior. Modificado `<Button>` elemento deve ter esta aparência:  
+3. No `<Buttons>` seção, altere a ID do pai do gerado `<Button>` entrada para refletir o grupo que você definiu na etapa anterior. Modificado `<Button>` elemento deve ter esta aparência:  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -74,11 +69,11 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
     </Button>  
     ```  
   
-4.  Compile o projeto e comece a depuração. A instância experimental é exibida.  
+4. Compile o projeto e comece a depuração. A instância experimental é exibida.  
   
      O **Gerenciador de soluções** barra de ferramentas deve exibir o novo botão de comando para a direita dos botões existentes. O ícone do botão é o tachado.  
   
-5.  Clique no botão novo.  
+5. Clique no botão novo.  
   
      Caixa de diálogo que tem a mensagem **ToolbarButtonPackage dentro SolutionToolbar.ToolbarButton.MenuItemCallback()** deve ser exibido.  
   
@@ -125,4 +120,3 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
   
 ## <a name="see-also"></a>Consulte também  
  [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)
-

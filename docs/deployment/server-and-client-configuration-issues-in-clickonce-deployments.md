@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b834ce2b76d9c73fc5247da3402003b766dd9d87
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597791"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406780"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.
@@ -57,7 +57,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
  Atualmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalações iniciará somente se a URL para o manifesto de implantação é aberta usando o Internet Explorer. Uma implantação cuja URL é iniciado a partir de outro aplicativo, como o Microsoft Office Outlook, será iniciado com êxito apenas se o Internet Explorer está definido como o navegador da Web padrão.
 
 > [!NOTE]
->  Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.
+> Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Ativar aplicativos ClickOnce por meio de scripts de navegador
  Se você tiver desenvolvido uma página da Web personalizada que inicia um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o script ativo, você pode achar que o aplicativo não será iniciado em alguns computadores. Internet Explorer contém uma configuração chamada **aviso automático para downloads de arquivo**, que afeta esse comportamento. Essa configuração está disponível na **segurança** guia no seu **opções** menu que afeta esse comportamento. Ele é chamado **aviso automático para downloads de arquivo**, e ele é listado sob os **Downloads** categoria. A propriedade é definida como **habilitar** por padrão para páginas da Web de intranet e para **desabilitar** por padrão para páginas da Web da Internet. Quando essa configuração é definida como **desabilitar**, qualquer tentativa de ativar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo por meio de programação (por exemplo, atribuindo sua URL para o `document.location` propriedade) serão bloqueados. Nestas circunstâncias, os usuários podem iniciar aplicativos por meio de um download iniciado pelo usuário, por exemplo, ao clicar em um hiperlink definido como a URL do aplicativo.
@@ -75,7 +75,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ```
 
 > [!NOTE]
->  Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.
+> Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.
 
 ## <a name="use-third-party-web-servers"></a>Usar servidores de Web de terceiros
  Se você estiver implantando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo de um servidor Web que não seja o IIS, você poderá ter um problema se o servidor está retornando o tipo de conteúdo incorreto para a chave [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos, como o manifesto de implantação e o manifesto do aplicativo. Para resolver esse problema, consulte a Ajuda da seu servidor Web documentação sobre como adicionar novos tipos de conteúdo para o servidor e certifique-se de que todos os mapeamentos de extensão de nome arquivo listado na tabela a seguir estão em vigor.
@@ -94,7 +94,6 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ## <a name="ftp-protocol-not-supported-for-installing-applications"></a>Protocolo FTP não tem suportado para a instalação de aplicativos
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dá suporte à instalação de aplicativos de qualquer servidor da Web HTTP 1.1 ou o servidor de arquivos. Não há suporte para FTP, o protocolo de transferência de arquivo, para instalar aplicativos. Você pode usar o FTP para publicar aplicativos somente. A tabela a seguir resume essas diferenças:
 
-
 | Tipo de URL | Descrição |
 |----------| - |
 | ftp:// | Você pode publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
@@ -102,7 +101,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 | https:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 | file:// | Você pode instalar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando esse protocolo. |
 
-## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall de Windows
+## <a name="windows-xp-sp2-windows-firewall"></a>Windows XP SP2: Firewall do Windows
  Por padrão, o Windows XP SP2 habilita o Firewall do Windows. Se você estiver desenvolvendo seu aplicativo em um computador com Windows XP instalado, é ainda possível publicar e executar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos do servidor local que está executando o IIS. No entanto, você não pode acessar o servidor que está executando o IIS de outro computador, a menos que você abrir o Firewall do Windows. Consulte a Ajuda do Windows para obter instruções sobre como gerenciar o Firewall do Windows.
 
 ## <a name="windows-server-enable-frontpage-server-extensions"></a>Windows Server: Habilitar extensões FrontPage server extensions
@@ -110,7 +109,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 
  Por padrão, o Windows Server não tem instalado extensões FrontPage Server Extensions. Se você quiser usar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para publicar em um servidor Web do Windows Server que usa HTTP com o FrontPage Server Extensions, você deve instalar extensões FrontPage Server Extensions primeiro. Você pode executar a instalação usando a ferramenta de administração de gerenciar o servidor no Windows Server.
 
-## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo de bloqueada
+## <a name="windows-server-locked-down-content-types"></a>Windows Server: Tipos de conteúdo bloqueado
  IIS no [!INCLUDE[WinXPSvr](../debugger/includes/winxpsvr_md.md)] bloqueará todos os tipos de arquivo, exceto para determinados tipos de conteúdo conhecidos (por exemplo, *. htm*, *. HTML*, *. txt*e assim por diante). Para habilitar a implantação do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que usam esse servidor, você precisa alterar as configurações do IIS para permitir o download de arquivos do tipo *. Application*, *. manifest*e outros tipos de arquivo personalizado usado pelo seu aplicativo.
 
  Se você implantar usando um servidor IIS, execute *inetmgr.exe* e adicionar novos tipos de arquivo da página da Web padrão:

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824185"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Como: Criar e remover dependências de projeto
 
@@ -47,18 +47,18 @@ Ao compilar uma solução que contém vários projetos, pode ser necessário com
 
 ## <a name="to-remove-dependencies-from-projects"></a>Para remover dependências de projetos
 
-1.  No **Gerenciador de Soluções**, selecione um projeto.
+1. No **Gerenciador de Soluções**, selecione um projeto.
 
-2.  No menu **Projeto**, escolha **Dependências do Projeto**.
+2. No menu **Projeto**, escolha **Dependências do Projeto**.
 
      A caixa de diálogo **Dependências do Projeto** é aberta.
 
     > [!NOTE]
     > A opção **Dependências do Projeto** está disponível apenas em uma solução com mais de um projeto.
 
-3.  Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.
+3. Na guia **Dependências**, selecione um projeto no menu suspenso **Projeto**.
 
-4.  No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.
+4. No campo **Depende de**, desmarque as caixas de seleção ao lado de outros projetos que não são mais dependências desse projeto.
 
 ## <a name="see-also"></a>Consulte também
 

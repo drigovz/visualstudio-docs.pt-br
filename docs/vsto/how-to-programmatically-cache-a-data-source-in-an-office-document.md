@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a2338e2402167987767ac5c9527113c4b0ff81d6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437112"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office
   Você pode adicionar programaticamente um objeto de dados para o cache de dados em um documento por meio da chamada a `StartCaching` método de um host de itens, como uma <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Remove um objeto de dados do cache de dados, chamando o `StopCaching` método de um item de host.
@@ -34,25 +34,25 @@ ms.locfileid: "54867319"
 
 ## <a name="to-programmatically-cache-a-data-object"></a>Para armazenar em cache programaticamente um objeto de dados
 
-1.  Declare o objeto de dados no nível de classe, não dentro de um método. Este exemplo pressupõe que você está declarando uma <xref:System.Data.DataSet> chamado `dataSet1` que você deseja armazenar em cache programaticamente.
+1. Declare o objeto de dados no nível de classe, não dentro de um método. Este exemplo pressupõe que você está declarando uma <xref:System.Data.DataSet> chamado `dataSet1` que você deseja armazenar em cache programaticamente.
 
      [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
      [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
 
-2.  Instanciar o objeto de dados e, em seguida, chamar o `StartCaching` método da instância de documento ou planilha e passe no nome do objeto de dados.
+2. Instanciar o objeto de dados e, em seguida, chamar o `StartCaching` método da instância de documento ou planilha e passe no nome do objeto de dados.
 
      [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
      [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
 
 ## <a name="to-stop-caching-a-data-object"></a>Para interromper o caching de um objeto de dados
 
-1.  Chamar o `StopCaching` método da instância de documento ou planilha e passe no nome do objeto de dados. Este exemplo pressupõe que você tenha um <xref:System.Data.DataSet> chamado `dataSet1` que você deseja interromper o caching.
+1. Chamar o `StopCaching` método da instância de documento ou planilha e passe no nome do objeto de dados. Este exemplo pressupõe que você tenha um <xref:System.Data.DataSet> chamado `dataSet1` que você deseja interromper o caching.
 
      [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
      [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
 
     > [!NOTE]
-    >  Não chame `StopCaching` do manipulador de eventos para o `Shutdown` eventos de um documento ou planilha. No momento o `Shutdown` evento é gerado, que é tarde demais para modificar o cache de dados. Para obter mais informações sobre o `Shutdown` eventos, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+    > Não chame `StopCaching` do manipulador de eventos para o `Shutdown` eventos de um documento ou planilha. No momento o `Shutdown` evento é gerado, que é tarde demais para modificar o cache de dados. Para obter mais informações sobre o `Shutdown` eventos, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ## <a name="see-also"></a>Consulte também
 

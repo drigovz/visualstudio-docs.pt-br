@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ed4c8fc4129c4e21123d359a088f6eac5cfca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 63a94f9ae6c35ef304af334737a8f206da911afd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402708"
 ---
-# <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: requisitos do sistema
+# <a name="aspnet-debugging-system-requirements"></a>Depuração do ASP.NET: Requisitos de sistema
 Este tópico descreve os requisitos de software e de segurança para cenários de depuração do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]:
 
 - Depuração local, na qual o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e o aplicativo Web são executados no mesmo computador. Há duas versões do controle desse cenário:
@@ -42,16 +42,16 @@ Este tópico descreve os requisitos de software e de segurança para cenários d
  > [!IMPORTANT]
  > Começando com o Windows Server 2008 R2, recomendamos o uso do [ApplicationPoolIdentity](/iis/manage/configuring-security/application-pool-identities) como a identidade para cada pool de aplicativos.
 
- O nome do processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia de acordo com o cenário de depuração e a versão do IIS. Para obter mais informações, consulte [como: localizar o nome do processo do ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
+ O nome do processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] varia de acordo com o cenário de depuração e a versão do IIS. Para obter mais informações, confira [Como: Localizar o nome do processo do ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md).
 
- Você pode alterar o usuário da conta que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o processo de trabalho é executado, editando o arquivo Machine. config no servidor que está executando o IIS. A melhor maneira de fazer isso é usar o **serviços de informações da Internet (IIS) Manager**. Para obter mais informações, consulte [como: executar o trabalho processo sob uma conta de usuário](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
+ Você pode alterar o usuário da conta que o [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] o processo de trabalho é executado, editando o arquivo Machine. config no servidor que está executando o IIS. A melhor maneira de fazer isso é usar o **serviços de informações da Internet (IIS) Manager**. Para obter mais informações, confira [Como: Executar o processo de trabalho em uma conta de usuário](../debugger/how-to-run-the-worker-process-under-a-user-account.md).
 
  Se você alterar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para ser executado em sua própria conta de usuário, não precisará ser um administrador no servidor que está executando o IIS.
 
 > [!CAUTION]
->  Antes de alterar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para ser executado em uma conta diferente, considere as possíveis consequências se o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] for invadido ao executar sob essa conta. As contas de usuário ASPNET and NETWORK SERVICE são executadas com as permissões mínimas, reduzindo o dano possível se o processo for invadido. Se você precisar alterar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para ser executado sob uma conta que tenha permissões maiores, o dano potencialmente será maior.
+> Antes de alterar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para ser executado em uma conta diferente, considere as possíveis consequências se o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] for invadido ao executar sob essa conta. As contas de usuário ASPNET and NETWORK SERVICE são executadas com as permissões mínimas, reduzindo o dano possível se o processo for invadido. Se você precisar alterar o processo de trabalho do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] para ser executado sob uma conta que tenha permissões maiores, o dano potencialmente será maior.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)
-- [Como executar o processo de trabalho em uma conta de usuário](../debugger/how-to-run-the-worker-process-under-a-user-account.md)
+- [Como: Executar o processo de trabalho em uma conta de usuário](../debugger/how-to-run-the-worker-process-under-a-user-account.md)

@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438768"
 ---
 # <a name="office-project-templates-overview"></a>Visão geral de modelos de projeto do Office
   As ferramentas de desenvolvedor do Microsoft Office no Visual Studio incluem modelos de projeto para criar os seguintes tipos de soluções do Office:
@@ -53,7 +53,7 @@ ms.locfileid: "56614682"
 > [!NOTE]
 > As ferramentas de desenvolvimento do Office estão incluídas em determinadas edições do Visual Studio. Para obter mais informações, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Personalizações no nível do documento
+## <a name="DocLevel"></a> Personalizações no nível do documento
  O **Office** nó na **novo projeto** caixa de diálogo fornece os seguintes modelos de projeto para ajudá-lo a iniciar a criação de personalizações no nível de documento para Word e Excel:
 
 - **Word 2013 e o documento do VSTO 2016**
@@ -77,21 +77,21 @@ ms.locfileid: "56614682"
   Os modelos de projeto do Modelo do Excel e Modelo do Word se comportam de forma idêntica aos modelos de projeto da Pasta de Trabalho do Excel e do Documento do Word. No entanto, os modelos de projeto do Modelo do Word e Modelo do Excel tornam mais fácil para os usuários criar novas cópias locais de documento ou pasta de trabalho do modelo personalizado em sua solução. Os recursos em sua solução estão disponíveis no novo documento que o usuário cria do modelo.
 
 > [!NOTE]
->  Modelos do Word que fazem referência a extensões de código gerenciado não podem ser usados como global VSTO Add-ins. O assembly não será chamado se o modelo for carregado do diretório Inicialização do Word. Para obter mais informações, consulte [limitações de modelos globais e Excel Add-ins (arquivos. xla)](#Limitations)
+> Modelos do Word que fazem referência a extensões de código gerenciado não podem ser usados como global VSTO Add-ins. O assembly não será chamado se o modelo for carregado do diretório Inicialização do Word. Para obter mais informações, consulte [limitações de modelos globais e Excel Add-ins (arquivos. xla)](#Limitations)
 
  Para obter informações sobre como começar esses tipos de projeto, consulte os seguintes tópicos:
 
--   [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)
+- [Personalizações em nível de documento do programa](../vsto/programming-document-level-customizations.md)
 
--   [Soluções do Word](../vsto/word-solutions.md)
+- [Soluções do Word](../vsto/word-solutions.md)
 
--   [Soluções do Excel](../vsto/excel-solutions.md)
+- [Soluções do Excel](../vsto/excel-solutions.md)
 
--   [Passo a passo: Criar a primeira personalização no nível de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Passo a passo: Criar a primeira personalização no nível de documento para Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Passo a passo: Criar a primeira personalização no nível de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Passo a passo: Criar a primeira personalização no nível de documento para Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Suplementos do VSTO
+## <a name="AppLevel"></a> Suplementos do VSTO
  O **Office/SharePoint** nó na **novo projeto** caixa de diálogo fornece os seguintes modelos de projeto para ajudá-lo a iniciar a criação de suplementos do VSTO.
 
 - **Suplemento do VSTO do Excel 2013 e 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614682"
 |Os usuários podem abrir e modificar um documento, a menos que ele seja definido para ser somente leitura. Todas as alterações salvas são mantidas no original.|Os usuários podem abrir um modelo para criar uma cópia local como um novo documento. Eles não podem modificar o original, a menos que recebam permissões especiais.|
 |Quando aberto, o documento gera o evento <xref:Microsoft.Office.Tools.Word.Document.Open>.|Quando aberto, o modelo gera o evento <xref:Microsoft.Office.Tools.Word.Document.New>.|
 
-##  <a name="Limitations"></a> Limitações de modelos globais e Excel Add-ins (arquivos. xla)
+## <a name="Limitations"></a> Limitações de modelos globais e Excel Add-ins (arquivos. xla)
  Documentos, pastas de trabalho e modelos podem não funcionar corretamente como modelos globais ou Add-ins do VSTO do Excel (arquivos. xla).
 
 ## <a name="word-templates"></a>Modelos do Word

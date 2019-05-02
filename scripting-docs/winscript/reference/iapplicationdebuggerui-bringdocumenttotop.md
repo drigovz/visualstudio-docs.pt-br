@@ -2,7 +2,6 @@
 title: IApplicationDebuggerUI::BringDocumentToTop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5c77c87011c539e02f92aa2aedfdcd7659466d37
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: a8a88b44f609113670259492eb82491b16004d29
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54096246"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991118"
 ---
 # <a name="iapplicationdebuggeruibringdocumenttotop"></a>IApplicationDebuggerUI::BringDocumentToTop
 Traz a janela que contém o documento de depuração especificada na parte superior no depurador de interface do usuário.  

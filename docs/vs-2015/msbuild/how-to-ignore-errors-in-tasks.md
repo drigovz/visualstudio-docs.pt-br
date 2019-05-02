@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062133"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Como ignorar erros em tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Às vezes você deseja que um build seja tolerante a falhas em determinadas tarefas. Se essas tarefas não críticas falharem, você deseja que o build continue, pois ela ainda pode produzir a saída necessária. Por exemplo, se um projeto usa uma tarefa `SendMail` para enviar uma mensagem de email depois que cada componente é compilado, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que os servidores de email não estejam disponíveis e as mensagens de status não possam ser enviadas. Ou, por exemplo, se arquivos intermediários são geralmente excluídos durante o build, você pode considerar aceitável que o build prossiga até a conclusão, mesmo que esses arquivos não possam ser excluídos.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Usar o atributo ContinueOnError  
@@ -42,7 +41,7 @@ ms.locfileid: "54777025"
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Para ignorar um erro em uma tarefa  
   
--   Use o atributo `ContinueOnError` da tarefa. Por exemplo:  
+- Use o atributo `ContinueOnError` da tarefa. Por exemplo:  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

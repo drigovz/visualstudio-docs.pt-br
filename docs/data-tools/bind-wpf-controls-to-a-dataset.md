@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b8f5f701299d08d79147a4d2d1932f3f23c011b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815624"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -56,15 +56,29 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 Crie um novo projeto WPF para exibir os registros de produtos.
 
-1. Inicie o Visual Studio.
+::: moniker range="vs-2017"
 
-2. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+1. Abra o Visual Studio.
+
+2. No menu **Arquivo**, selecione **Novo**> **Projeto**.
 
 3. Expanda **Visual Basic** ou **Visual C#** e selecione **Windows**.
 
-4. Selecione o modelo de projeto **Aplicativo WPF**.
+4. Selecione o **aplicativo WPF** modelo de projeto.
 
 5. No **nome** , digite **AdventureWorksProductsEditor** e, em seguida, selecione **Okey**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+3. Pesquise o C# **aplicativo WPF** modelo de projeto e siga as etapas para criar o projeto, o projeto de nomenclatura **AdventureWorksProductsEditor**.
+
+::: moniker-end
 
    O Visual Studio cria o projeto AdventureWorksProductsEditor.
 
@@ -242,7 +256,7 @@ Depois de concluir este passo a passo, você pode experimentar as seguintes tare
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para associar controles do WPF a outros tipos de fontes de dados. Para obter mais informações, consulte [controles de WPF associar a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [instruções passo a passo: exibir dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, confira [Passo a passo: Exibir dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Consulte também
 

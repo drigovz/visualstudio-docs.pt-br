@@ -1,14 +1,9 @@
 ---
 title: Introdução à extensibilidade do depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - getting started, Debugging SDK
 - debugging [Debugging SDK], getting started
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bafdd45b57a9fe660e97127c2c99c333ead0e60a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085669"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Introdução à extensibilidade do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +30,11 @@ O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornece as informações que
   
  Usar melhor o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], você deve estar familiarizado com o seguinte:  
   
--   O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE)  
+- O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE)  
   
--   A linguagem de programação do C++  
+- A linguagem de programação do C++  
   
--   COM ATL  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  
@@ -56,4 +51,3 @@ O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornece as informações que
   
  [Tarefas de depuração](../../extensibility/debugger/debugging-tasks.md)  
  Contém links para várias tarefas de depuração, como iniciar um programa e avaliar expressões.
-

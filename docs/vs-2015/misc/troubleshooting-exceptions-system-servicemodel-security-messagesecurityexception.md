@@ -1,14 +1,9 @@
 ---
 title: 'Solucionando problemas de exceções: System.ServiceModel.Security.MessageSecurityException | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: troubleshooting
 helpviewer_keywords:
 - System.ServiceModel.Security.MessageSecurityException exception
 - MessageSecurityException exception
@@ -16,22 +11,22 @@ ms.assetid: 61ad69a1-ac50-49de-9a7c-8454a84ec5bd
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e7d13f5cc282026b1590f59180ed7f25312bb926
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51742475"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436551"
 ---
-# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Exceções de solução de problemas: System.ServiceModel.Security.MessageSecurityException
+# <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solucionando problemas de exceções: System.ServiceModel.Security.MessageSecurityException
 Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lançada quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que uma mensagem não está protegida corretamente ou foi violada. O erro ocorre com mais frequência quando todas as seguintes condições forem verdadeiras:  
   
--   Você usa uma referência de serviço WCF sobre uma conexão remota, por exemplo, Conexão de Área de Trabalho Remota ou Serviços de Terminal para se comunicar com um serviço WCF (.svc) em um projeto do site ou aplicativo Web.  
+- Você usa uma referência de serviço WCF sobre uma conexão remota, por exemplo, Conexão de Área de Trabalho Remota ou Serviços de Terminal para se comunicar com um serviço WCF (.svc) em um projeto do site ou aplicativo Web.  
   
--   Você não tem permissões de administrador no site remoto.  
+- Você não tem permissões de administrador no site remoto.  
   
--   As solicitações para o host local no site remoto estão sendo tratadas pelo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
+- As solicitações para o host local no site remoto estão sendo tratadas pelo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
   
 ## <a name="associated-tips"></a>Dicas relacionadas  
  **Resolva problemas de autenticação NTLM ao usar o ASP.Net Development Server.**  
@@ -40,7 +35,7 @@ Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lan
  Se um usuário remoto pode executar o site da Web usando o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server e também trabalhar com um serviço Web ou um serviço WCF, você pode criar uma associação de serviço personalizada ou desativar a segurança NTLM.  
   
 > [!IMPORTANT]
->  Desativar a segurança NTLM não é recomendado e poderia constituir uma ameaça à segurança.  
+> Desativar a segurança NTLM não é recomendado e poderia constituir uma ameaça à segurança.  
   
  Se você criar uma associação de serviço personalizada, ainda estará protegido pela autenticação NTLM.  
   
@@ -79,15 +74,15 @@ Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lan
    Siga estas etapas para desabilitar a segurança NTLM quando você estiver trabalhando com uma referência de serviço WCF.  
   
 > [!IMPORTANT]
->  Desativar a segurança NTLM não é recomendado e poderia constituir uma ameaça à segurança.  
+> Desativar a segurança NTLM não é recomendado e poderia constituir uma ameaça à segurança.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Para desativar a segurança NTLM  
   
-1.  Na **Gerenciador de soluções**, clique no nome do site da Web e, em seguida, clique em **páginas de propriedade**.  
+1. Na **Gerenciador de soluções**, clique no nome do site da Web e, em seguida, clique em **páginas de propriedade**.  
   
-2.  Selecione **opções de inicialização**e, em seguida, desmarque as **autenticação NTLM** caixa de seleção.  
+2. Selecione **opções de inicialização**e, em seguida, desmarque as **autenticação NTLM** caixa de seleção.  
   
-3.  Clique em **OK**.  
+3. Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

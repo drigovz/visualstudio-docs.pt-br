@@ -1,27 +1,22 @@
 ---
 title: Caixa de diálogo fonte (Microsoft Spy + + ajuda) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - Font dialog box
 ms.assetid: 414c42a5-7168-46a9-bbea-6ab10f2d82a8
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 9b7426d0bf266d8a225745e31dfd721e618d6071
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 41028caa5ef792941f82251cac1d6e5203464240
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51744035"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926587"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Caixa de diálogo Fonte (Ajuda do Microsoft Spy++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +34,7 @@ Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [e
  **Size**  
  O tamanho da fonte para a janela de exibições do Spy + + que tem o foco.  
   
- **Salvar a fonte como padrão**  
+ **Salvar a Fonte como Padrão**  
  Salva as configurações de fonte atuais como suas preferências ao abrir exibições do Spy + +.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -51,6 +46,3 @@ Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [e
   
  [Referência a Spy++](../debugger/spy-increment-reference.md)  
  Inclui as seções que descrevem cada Spy + + menu e caixa de diálogo caixa.
-
-
-

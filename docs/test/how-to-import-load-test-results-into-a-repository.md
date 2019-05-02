@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949958"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Como: Importar os resultados do teste de carga para um repositório
 
@@ -28,21 +28,21 @@ Quando você executar um teste de carga, as informações coletadas durante a ex
 
 ## <a name="to-import-results-into-a-repository"></a>Para importar resultados para um repositório
 
-1.  De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
+1. De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
 
-2.  Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
+2. Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
 
      A caixa de diálogo **Abrir e gerenciar resultados de testes de carga** é exibida.
 
-3.  Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **<local>\<** para acessar resultados armazenados localmente.
+3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **<local>\<** para acessar resultados armazenados localmente.
 
      Se houver resultados de testes de carga disponíveis, eles aparecerão na lista **Resultados de testes de carga**. As colunas são **Hora**, **Duração**, **Usuário**, **Resultado**, **Teste** e **Descrição**. **Teste** contém o nome do teste e **Descrição** contém a descrição opcional adicionada antes da execução do teste.
 
-4.  Escolha **Importar**.
+4. Escolha **Importar**.
 
      A caixa de diálogo **Importar resultados de testes de carga** é exibida.
 
-5.  Na caixa **Nome do arquivo**, digite o nome de um arquivo de resultados de teste armazenado e escolha **Abrir**.
+5. Na caixa **Nome do arquivo**, digite o nome de um arquivo de resultados de teste armazenado e escolha **Abrir**.
 
      \- ou -
 

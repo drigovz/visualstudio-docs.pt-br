@@ -1,14 +1,9 @@
 ---
 title: IDiaSymbol::get_isCTypes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 00c73cf9-2933-472e-bc1d-d041f4d7e412
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f7da15729b25d5a3e61da3a7c6c1bc0fe14fda45
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d2a4ebe70d8cf26907446494009838e9ba2f795e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421971"
 ---
 # <a name="idiasymbolgetisctypes"></a>IDiaSymbol::get_isCTypes
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +41,7 @@ HRESULT get_isCTypes(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
   
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
   
 ## <a name="remarks"></a>Comentários  
  Essa propriedade está disponível do `SymTagExe` tipo de símbolo (consulte [Exe](../../debugger/debug-interface-access/exe.md)).  
@@ -61,6 +56,3 @@ HRESULT get_isCTypes(
 ## <a name="see-also"></a>Consulte também  
  [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)   
  [Exe](../../debugger/debug-interface-access/exe.md)
-
-
-

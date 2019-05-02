@@ -7,16 +7,16 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 23c16ab17ef1ad4870fa6435939bc29db5208803
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809621"
 ---
-# <a name="unit-testing-visual-c-code"></a>Testes de unidade de código do Visual C#
+# <a name="unit-test-c-code"></a>Executar o teste de unidade de um código C#
 
-Este artigo descreve uma maneira de criar testes de unidade para uma classe Visual C# em um aplicativo UWP. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.
+Este artigo descreve uma maneira de criar testes de unidade para uma classe C# em um aplicativo UWP. A classe Rooter demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. O aplicativo de matemática pode usar essa função para mostrar a um usuário as coisas divertidas que podem ser feitas com a matemática.
 
 Este artigo demonstra como usar o teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
 
@@ -26,13 +26,13 @@ Este artigo também cria uma única solução do Visual Studio e projetos separa
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado** > **Visual C#** e escolha **Windows Universal**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.
+2. Pesquise o modelo de projeto **Aplicativo em Branco (Universal do Windows)** e selecione-o.
 
-3. Dê ao projeto o nome `Maths` e verifique se a opção **Criar diretório para a solução** está selecionada.
+3. Nomeie o projeto `Maths`.
 
 4. No **Gerenciador de Soluções**, escolha o nome da solução, escolha **Adicionar** no menu de atalho e, em seguida, escolha **Novo Projeto**.
 
-5. Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Universal**. Em seguida, escolha **Aplicativo de Teste de Unidade (Windows Universal)** na lista de modelos de projeto.
+5. Pesquise o modelo de projeto **Aplicativo de Teste de Unidade (Universal do Windows)** e selecione-o.
 
 6. Abra *UnitTest1.cs* no editor do Visual Studio.
 

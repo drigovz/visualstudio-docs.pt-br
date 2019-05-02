@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5e420261810cec793cc553eac83bbc97edd1fb1c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909118"
 ---
 # <a name="project-type-design-decisions"></a>Decisões de design do tipo de projeto
 Antes de criar um novo tipo de projeto, você deve tomar várias decisões de design sobre o tipo de projeto. Você deve decidir quais tipos de itens que conterá seus projetos, como arquivos de projeto serão mantidos e qual modelo de compromisso que você usará.
@@ -57,7 +57,7 @@ Antes de criar um novo tipo de projeto, você deve tomar várias decisões de de
  Quando objetos de dados são abertos usando o modo de transação, as alterações são salvas em um local temporário na memória e não são confirmadas até que o usuário escolhe manualmente salvar o arquivo. Nesse momento, todas as alterações devem ocorrer em conjunto ou nenhuma alteração será feita.
 
 ## <a name="see-also"></a>Consulte também
-- [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)
 - [Persistência do projeto](../../extensibility/internals/project-persistence.md)
 - [Elementos de um modelo de projeto](../../extensibility/internals/elements-of-a-project-model.md)

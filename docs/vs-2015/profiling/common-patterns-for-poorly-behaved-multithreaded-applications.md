@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc126d8283562f84cabfaae7df1001c832553568
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f2c1a799663d33e61977c5416ad199bce8bce545
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420362"
 ---
 # <a name="common-patterns-for-poorly-behaved-multithreaded-applications"></a>Padrões comuns para aplicativos multithread de mau comportamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Conforme mostrado na ilustração a seguir, a Visualização Simultânea também pode expor esse sintoma no Modo de Exibição de Utilização da CPU, em que, mesmo na presença de vários threads, o aplicativo consome apenas um núcleo lógico.  
   
- Para obter mais informações, consulte "Performance Pattern 1: Identifying Lock Contention (Padrão de desempenho 1: identificando a contenção de bloqueio)" no blog de Hazim Shafi [Parallel Performance Tools For Windows (Ferramentas de desempenho paralelo para Windows)](http://go.microsoft.com/fwlink/?LinkID=160569) no site da Web do blog do MSDN.  
+ Para obter mais informações, consulte "padrão de desempenho 1: Identificando a contenção de bloqueio"em Hazim Shafi [ferramentas de desempenho paralelo para Windows](http://go.microsoft.com/fwlink/?LinkID=160569) blog no site de blog do MSDN.  
   
  ![Contenção de bloqueio](../profiling/media/lockcontention-2.png "LockContention_2")  
   
@@ -52,9 +52,9 @@ A Visualização Simultânea ajuda os desenvolvedores a visualizarem o comportam
   
  Você deve considerar o seguinte ao avaliar esse problema:  
   
--   O sistema geral pode ter excesso de assinatura. Considere que outros processos no sistema talvez estejam admitindo preempção dos seus threads. Quando você pausa um segmento de preempção no modo de exibição de threads, uma dica de ferramenta identificará o thread e o processo que admitiu preempção do thread. Esse processo não é necessariamente o que foi executado durante o todo o tempo em que seu processo admitiu preempção, mas ele fornece uma dica sobre o que criou a pressão de preempção contra seu processo.  
+- O sistema geral pode ter excesso de assinatura. Considere que outros processos no sistema talvez estejam admitindo preempção dos seus threads. Quando você pausa um segmento de preempção no modo de exibição de threads, uma dica de ferramenta identificará o thread e o processo que admitiu preempção do thread. Esse processo não é necessariamente o que foi executado durante o todo o tempo em que seu processo admitiu preempção, mas ele fornece uma dica sobre o que criou a pressão de preempção contra seu processo.  
   
--   Avalie como o processo determina o número de threads adequado para execução durante essa fase de trabalho. Se o seu processo calcular diretamente o número de threads paralelos ativos, considere modificar esse algoritmo para representar melhor o número de núcleos lógicos disponíveis no sistema. Se você usar o Tempo de Execução de Simultaneidade, a biblioteca de paralelismo de tarefas ou PLINQ, essas bibliotecas realizam o trabalho de calcular o número de threads.  
+- Avalie como o processo determina o número de threads adequado para execução durante essa fase de trabalho. Se o seu processo calcular diretamente o número de threads paralelos ativos, considere modificar esse algoritmo para representar melhor o número de núcleos lógicos disponíveis no sistema. Se você usar o Tempo de Execução de Simultaneidade, a biblioteca de paralelismo de tarefas ou PLINQ, essas bibliotecas realizam o trabalho de calcular o número de threads.  
   
 ## <a name="inefficient-io"></a>E/S ineficiente  
  ![E&#47;S ineficiente](../profiling/media/inefficient-io.png "Inefficient_IO")  

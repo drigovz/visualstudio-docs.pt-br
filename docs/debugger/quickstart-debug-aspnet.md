@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 0839fae55c9aeaeb5018ec1b1acba3c62984349a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903965"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Início Rápido: Depurar o ASP.NET com o depurador do Visual Studio
 
@@ -25,17 +25,20 @@ O depurador do Visual Studio oferece muitos recursos avançados para ajudar a de
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
-1. No Visual Studio, escolha **Arquivo > Novo Projeto**.
+1. Abra o Visual Studio.
 
-1. Em **Visual C#**, escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo Web ASP.NET Core**. Na caixa de diálogo que aparece, escolha **Criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Web** e, em seguida, no painel central, escolha **Aplicativo Web ASP.NET Core**. Digite um nome como **MyDbgApp** e clique em **OK**.
 
-1. Digite um nome como **MyDbgApp** e clique em **OK**.
-
-1. Na caixa de diálogo exibida, escolha **Aplicativo Web** no painel central e clique em **OK**.
-
-     Se o modelo de projeto **Aplicativo Web** não for exibido, clique no link **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo Projeto**. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
+    Na caixa de diálogo exibida, escolha **Aplicativo Web** no painel central e clique em **OK**.
 
     ![Criar um aplicativo Web](../debugger/media/dbg-qs-aspnet-choose-web-app.png)
+    ::: moniker-end
+
+    Caso não veja o modelo de projeto **Aplicativo Web do ASP.NET Core**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **ASP.NET e desenvolvimento para a Web** e, em seguida, selecione **Modificar**.
 
     O Visual Studio cria o projeto.
 
@@ -94,7 +97,7 @@ Um *ponto de interrupção* é um marcador que indica quando o Visual Studio dev
 
 ## <a name="navigate-code"></a>Navegue pelos códigos
 
-Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que é novo no Visual Studio 2017.
+Há diferentes comandos para instruir o depurador a continuar. Mostramos um comando de navegação de código útil que está disponível começando pelo Visual Studio 2017.
 
 Enquanto estiver em pausa no ponto de interrupção, passe o mouse sobre a instrução `return c2` até que o botão verde **Executar com um clique** ![Executar com um clique](../debugger/media/dbg-tour-run-to-click.png) seja exibido e, em seguida, pressione o botão **Executar com um clique**.
 
@@ -135,4 +138,4 @@ Para saber mais sobre como usar editar e continuar e sobre as limitações das f
 Neste tutorial, você aprendeu como iniciar o depurador, percorrer o código e inspecionar variáveis. Talvez você queira obter uma visão geral dos recursos do depurador, com links para mais informações.
 
 > [!div class="nextstepaction"]
-> [Tour dos recursos do depurador](../debugger/debugger-feature-tour.md)
+> [Introdução ao depurador](../debugger/debugger-feature-tour.md)

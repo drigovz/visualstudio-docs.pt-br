@@ -1,25 +1,22 @@
 ---
 title: Substituindo e estendendo as Classes geradas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
 ms.assetid: 30baa60d-a8ea-4611-96c1-8fcc3317cf21
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: a5aef90403babfd7a30812cac59b8c0c5acff79f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49933424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434997"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +46,7 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto po
  `} }`  
   
 > [!NOTE]
->  Para substituir métodos em uma classe gerada, sempre escreva seu código em um arquivo separado dos arquivos gerados. Normalmente, o arquivo está contido em uma pasta chamada CustomCode. Se você fizer alterações no código gerado, eles serão perdidos quando você regenera o código da definição de DSL.  
+> Para substituir métodos em uma classe gerada, sempre escreva seu código em um arquivo separado dos arquivos gerados. Normalmente, o arquivo está contido em uma pasta chamada CustomCode. Se você fizer alterações no código gerado, eles serão perdidos quando você regenera o código da definição de DSL.  
   
  Para descobrir quais você pode substituir os métodos, digite **substituir** na classe, seguido por um espaço. A dica de ferramenta do IntelliSense informará quais métodos podem ser substituídos.  
   
@@ -91,9 +88,6 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto po
 ### <a name="net-events"></a>Eventos do .NET  
  Você pode assinar alguns eventos nas formas. Por exemplo, você pode escutar cliques do mouse em uma forma. Você precisa escrever código que assina o evento para cada objeto. Esse código pode ser escrito em uma substituição de InitializeInstanceResources().  
   
- Alguns eventos são gerados em ShapeFields, que são usados para desenhar os decoradores em uma forma. Por exemplo, consulte [como: interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
+ Alguns eventos são gerados em ShapeFields, que são usados para desenhar os decoradores em uma forma. Para obter um exemplo, consulte [ Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).  
   
  Normalmente, esses eventos não ocorrem dentro de uma transação. Se você quiser fazer alterações no repositório, você deve criar uma transação.
-
-
-

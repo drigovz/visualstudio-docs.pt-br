@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70c77e3b093947703680ab7253fdee0a6c3d60cd
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982258"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF em soluções do Office
 
@@ -27,13 +27,13 @@ Embora as soluções criadas usando as ferramentas de desenvolvimento do Office 
 
 Qualquer elemento de interface do usuário que pode hospedar controles de formulários do Windows em uma solução do Office também pode hospedar controles do WPF. Isso inclui os seguintes elementos:
 
--   Os documentos e planilhas em personalizações no nível do documento.
+- Os documentos e planilhas em personalizações no nível do documento.
 
--   Painéis de ações em personalizações no nível do documento.
+- Painéis de ações em personalizações no nível do documento.
 
--   Painéis de tarefas personalizados nos suplementos do VSTO.
+- Painéis de tarefas personalizados nos suplementos do VSTO.
 
--   Regiões do formulário em suplementos do VSTO para Outlook.
+- Regiões do formulário em suplementos do VSTO para Outlook.
 
 ## <a name="add-wpf-controls-to-office-projects-at-design-time"></a>Adicionar controles WPF para projetos do Office em tempo de design
 
@@ -41,49 +41,49 @@ Você não pode adicionar controles do WPF diretamente aos elementos de interfac
 
 ### <a name="to-add-wpf-controls-to-an-actions-pane-custom-task-pane-or-form-region"></a>Para adicionar controles WPF a um painel de ações, painel de tarefas personalizado ou região de formulário
 
-1.  Abra um projeto para o qual você deseja adicionar um painel de tarefas personalizado, um painel de ações ou uma região de formulário.
+1. Abra um projeto para o qual você deseja adicionar um painel de tarefas personalizado, um painel de ações ou uma região de formulário.
 
-2.  Adicionar um **controle de usuário (WPF)** item ao seu projeto.
+2. Adicionar um **controle de usuário (WPF)** item ao seu projeto.
 
-3.  Dos **caixa de ferramentas**, adicionar controles WPF para a superfície de design de controle de usuário do WPF.
+3. Dos **caixa de ferramentas**, adicionar controles WPF para a superfície de design de controle de usuário do WPF.
 
      Por padrão, quando o designer de controle de usuário do WPF estiver aberto, o **caixa de ferramentas** contém controles do WPF.
 
-4.  Compile o projeto.
+4. Compile o projeto.
 
-5.  Adicione um painel de ações, a região do formulário ou o painel de tarefas personalizado ao seu projeto:
+5. Adicione um painel de ações, a região do formulário ou o painel de tarefas personalizado ao seu projeto:
 
-    -   Para regiões de formulário, adicione uma **região de formulário do Outlook** item ao projeto. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
+    - Para regiões de formulário, adicione uma **região de formulário do Outlook** item ao projeto. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    -   Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-    -   Para obter os painéis de tarefas personalizados, adicione uma **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+    - Para obter os painéis de tarefas personalizados, adicione uma **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
-6.  Do *ProjectName* **controles de usuário WPF** guia da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer para o painel Ações, a região do formulário ou o painel de tarefas personalizado.
+6. Do *ProjectName* **controles de usuário WPF** guia da **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer para o painel Ações, a região do formulário ou o painel de tarefas personalizado.
 
      Visual Studio cria automaticamente um <xref:System.Windows.Forms.Integration.ElementHost> objeto que hospeda o controle de usuário do WPF no elemento de interface do usuário.
 
-7.  Recompile o projeto.
+7. Recompile o projeto.
 
 #### <a name="to-add-wpf-controls-to-a-document-or-worksheet-in-a-document-level-project"></a>Para adicionar controles WPF a um documento ou planilha em um projeto de nível de documento
 
-1.  Abra um projeto de nível de documento para Word ou Excel.
+1. Abra um projeto de nível de documento para Word ou Excel.
 
-2.  Adicionar um **controle de usuário (WPF)** item ao seu projeto.
+2. Adicionar um **controle de usuário (WPF)** item ao seu projeto.
 
-3.  Dos **caixa de ferramentas**, adicionar controles WPF para a superfície de design de controle de usuário do WPF.
+3. Dos **caixa de ferramentas**, adicionar controles WPF para a superfície de design de controle de usuário do WPF.
 
-4.  Compile o projeto.
+4. Compile o projeto.
 
-5.  Adicionar um **controle de usuário** item (ou seja, um controle de usuário de formulários do Windows) para o projeto.
+5. Adicionar um **controle de usuário** item (ou seja, um controle de usuário de formulários do Windows) para o projeto.
 
-6.  Abra o designer para o controle de usuário do Windows Forms.
+6. Abra o designer para o controle de usuário do Windows Forms.
 
-7.  Do *ProjectName* **controles de usuário WPF** guia do **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer.
+7. Do *ProjectName* **controles de usuário WPF** guia do **caixa de ferramentas**, arraste o controle de usuário do WPF para o designer.
 
      Visual Studio cria automaticamente um <xref:System.Windows.Forms.Integration.ElementHost> objeto que hospeda o controle de usuário do WPF no controle de usuário do Windows Forms.
 
-8.  Escreva código que adiciona programaticamente o controle de usuário de formulários do Windows para o documento ou pasta de trabalho. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+8. Escreva código que adiciona programaticamente o controle de usuário de formulários do Windows para o documento ou pasta de trabalho. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
     > [!NOTE]
     > Você não pode arrastar o controle de usuário do Windows Forms para o documento ou planilha no designer.
@@ -100,21 +100,21 @@ Uso de controles WPF a <xref:System.Windows.Forms.Integration.ElementHost> class
 
 Para obter mais informações sobre arquitetura e problemas de design para hospedar controles WPF em formulários e controles dos Windows Forms, consulte os tópicos a seguir:
 
--   [Arquitetura de entrada da interoperabilidade do Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
+- [Arquitetura de entrada da interoperabilidade do Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-interoperability-input-architecture)
 
--   [Mapeamento de propriedade do Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
+- [Mapeamento de propriedade do Windows Forms e WPF](/dotnet/framework/wpf/advanced/windows-forms-and-wpf-property-mapping)
 
--   [Interoperação de WPF e Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
+- [Interoperação de WPF e Windows Forms](/dotnet/framework/wpf/advanced/wpf-and-windows-forms-interoperation)
 
--   [Controles dos Windows Forms e controles do WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
+- [Controles dos Windows Forms e controles do WPF equivalentes](/dotnet/framework/wpf/advanced/windows-forms-controls-and-equivalent-wpf-controls)
 
 Para obter mais informações sobre como adicionar controles do WPF para controles dos Windows Forms e formulários no Visual Studio em tempo de design, consulte os tópicos a seguir:
 
--   [Passo a passo: Criar novo conteúdo WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
+- [Passo a passo: Criar novo conteúdo WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-creating-new-wpf-content-on-windows-forms-at-design-time)
 
--   [Passo a passo: Organizar o conteúdo do WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
+- [Passo a passo: Organizar o conteúdo do WPF nos Windows Forms em tempo de design](/dotnet/framework/winforms/advanced/walkthrough-arranging-wpf-content-on-windows-forms-at-design-time)
 
--   [Passo a passo: Conteúdo do WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
+- [Passo a passo: Conteúdo do WPF de estilo](/dotnet/framework/winforms/advanced/walkthrough-styling-wpf-content)
 
 ## <a name="see-also"></a>Consulte também
 

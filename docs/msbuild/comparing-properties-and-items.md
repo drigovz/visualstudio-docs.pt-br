@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70d86074dabc4365d1d0336f191beada215f4dc1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640630"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569674"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.
@@ -86,7 +86,6 @@ Durante a fase de avaliação de um build, os arquivos importados são incorpora
 - As definições de itens são realizadas e modificadas na ordem em que são exibidas.
 
 - Os itens são definidos e modificados na ordem em que são exibidos.
-
 
 Durante a fase de execução de um build, as propriedades e os itens definidos dentro dos destinos são avaliados juntamente em uma única fase na ordem na qual são exibidos.
 

@@ -1,25 +1,22 @@
 ---
 title: Noções básicas sobre modelos, Classes e relações | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, models
 ms.assetid: 2ecd569c-b369-41ea-b78e-a61b62e2e4e9
 caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b86e9bd2aa11f098b26edf90f3ed415c66b874a1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49271785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424326"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +28,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 ## <a name="the-dsl-definition"></a>A definição de DSL  
  Quando você abre `Dsl\DslDefinition.dsl`, seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela se parece com a imagem a seguir.  
   
- ![designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
+ ![Designer de DSL](../modeling/media/dsl-designer.png "dsl_designer")  
   
  As informações mais importantes na definição de DSL são exibidas no diagrama de definição de DSL. Informações adicionais, que também é parte do Dsldefinition, são exibidas no Gerenciador de DSL, que geralmente aparece no lado do diagrama. Você trabalha com o diagrama para as tarefas mais frequentes e com o Gerenciador de DSL para personalizações mais avançadas.  
   
  O diagrama de definição de DSL mostra as classes de domínio que definem os elementos de modelo e as relações que definem links entre elementos de modelo. Ele também mostra as formas e conectores que são usados para exibir os elementos de modelo para o usuário.  
   
- ![designer de DSL com raias](../modeling/media/dsl-desinger.png "dsl_desinger")  
+ ![Designer de DSL com raias](../modeling/media/dsl-desinger.png "dsl_desinger")  
   
  Quando você seleciona um item na definição de DSL, no diagrama ou no Gerenciador de DSL, informações sobre ele são exibidas na janela Propriedades. Informações adicionais podem ser exibidas na janela de detalhes de DSL.  
   
@@ -59,7 +56,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
  ![Relações de referência e incorporação](../modeling/media/music-classes.png "Music_Classes")  
   
- A ilustração mostra quatro classes de domínio: música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.  
+ A ilustração mostra quatro classes de domínio: Música, álbum, artista e música. As classes de domínio definem propriedades de domínio, como nome, título e assim por diante. No modelo de instância, os valores de algumas dessas propriedades são exibidos no diagrama.  
   
  Entre as classes são relações de domínio: MusicHasAlbums, MusicHasArtists, AlbumbHasSongs e ArtistAppearedOnAlbums. As relações tiverem multiplicidades como 1..1, 0.. *. Por exemplo, todas as músicas devem estar relacionadas a exatamente um álbum por meio do relacionamento AlbumHasSongs. Cada álbum pode ter qualquer número de músicas.  
   
@@ -68,13 +65,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
  Para reorganizar o diagrama de definição de DSL, você pode:  
   
--   Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.  
+- Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.  
   
--   Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.  
+- Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.  
   
--   Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.  
+- Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.  
   
--   Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.  
+- Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.  
   
 ## <a name="inheritance"></a>Herança  
  Classes de domínio podem ser definidas usando a herança. Para criar uma derivação de herança, clique na ferramenta de herança, clique na classe derivada e, em seguida, clique na classe base. Um elemento de modelo tem todas as propriedades que são definidas em sua própria classe de domínio, juntamente com todas as propriedades herdadas da classe base. Ele também herda suas funções em relações.  
@@ -100,7 +97,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
  Quando um modelo é salvo para o arquivo no formato XML, os elementos incorporados estão aninhados dentro de seus pais, a menos que você personalizou a serialização.  
   
 > [!NOTE]
->  Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.  
+> Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.  
   
 ### <a name="embedding-rules"></a>Regras de incorporação  
  Todos os elementos em um modelo de instância devem ser o destino de exatamente um link de incorporação, exceto para a raiz do modelo.  
@@ -157,7 +154,4 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
 ## <a name="see-also"></a>Consulte também  
  [Relações de domínio na API gerada](../misc/domain-relationships-in-the-generated-api.md)   
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

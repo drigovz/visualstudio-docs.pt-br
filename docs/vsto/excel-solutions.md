@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f96543c3f2cca5c067eea4af4b14bc67d7d129c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a18a56ab6c4d6d37f354ba5284ccfb91bb0033be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443571"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender os recursos do Excel e personalizar a interface de usuário (IU) do Excel. Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -39,24 +39,24 @@ ms.locfileid: "56600534"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
  Este tópico fornece as seguintes informações:
 
--   [Automatizar o Excel](#automating).
+- [Automatizar o Excel](#automating).
 
--   [Desenvolver personalizações no nível de documento para Excel](#doclevel).
+- [Desenvolver personalizações no nível de documento para Excel](#doclevel).
 
--   [Desenvolver suplementos do VSTO para Excel](#applevel).
+- [Desenvolver suplementos do VSTO para Excel](#applevel).
 
--   [Personalizar a interface do usuário do Excel](#UI).
+- [Personalizar a interface do usuário do Excel](#UI).
 
-##  <a name="automating"></a> Automatizar o Excel
+## <a name="automating"></a> Automatizar o Excel
  O modelo de objeto do Excel expõe vários tipos que você pode usar para automatizar o Excel. Por exemplo, você pode programaticamente criar gráficos, formatar planilhas e defina os valores das células e intervalos. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
 
  Ao desenvolver soluções do Excel no Visual Studio, você também pode usar *hospedar itens* e *hospedar controles* em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Excel, como o <xref:Microsoft.Office.Interop.Excel.Worksheet> e <xref:Microsoft.Office.Interop.Excel.Range> objetos. Objetos estendidos se comportam como os objetos do Excel se baseiam, mas adicionar eventos adicionais e recursos de ligação de dados para os objetos. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Excel
+## <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Excel
  Uma personalização no nível de documento do Microsoft Office Excel consiste em um assembly que está associado uma pasta de trabalho específica. O assembly estende normalmente a pasta de trabalho, personalizando a interface do usuário e automatizando o Excel. Ao contrário de um suplemento VSTO, que é associado com o Excel em si, a funcionalidade que você implementa em uma personalização está disponível apenas quando a pasta de trabalho associada é aberta no Excel.
 
  Para criar um projeto de personalização de nível de documento para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56600534"
 
  Para obter mais informações sobre esses gerado as classes e outros recursos que você pode usar em um projeto de nível de documento, consulte [personalizações no nível de documento do programa](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Desenvolver suplementos do VSTO para Excel
+## <a name="applevel"></a> Desenvolver suplementos do VSTO para Excel
  Um suplemento do VSTO para o Microsoft Office Excel consiste em um assembly que é carregado pelo Excel. O assembly estende o Excel normalmente, personalizando a interface do usuário e automatizando o Excel. Ao contrário de uma personalização no nível de documento, que está associada uma pasta de trabalho específica, a funcionalidade que você implementa em um suplemento do VSTO não está restrita a única pasta de trabalho.
 
  Para criar um projeto de suplemento do VSTO para Excel, use a pasta de trabalho do Excel ou modelos de projeto de modelo do Excel na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56600534"
 
  Para obter mais informações sobre o `ThisAddIn` classe e outros recursos do Visual Studio você pode usar em um suplemento VSTO, consulte [programa de suplementos do VSTO](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Personalizar a interface do usuário do Excel
+## <a name="UI"></a> Personalizar a interface do usuário do Excel
  Há várias maneiras diferentes de personalizar a interface do usuário do Excel. Algumas opções estão disponíveis a todos os tipos de projeto e outras opções estão disponíveis somente para personalizações no nível do documento ou de suplementos do VSTO.
 
 ### <a name="options-for-all-project-types"></a>Opções para todos os tipos de projeto

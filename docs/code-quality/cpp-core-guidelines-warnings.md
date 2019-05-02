@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a10945547170add8757378a11d569177d9b41750
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 002a82143ca30e87a8e83f3e7e4b7217ab677f11
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822494"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 
@@ -84,18 +84,17 @@ Diretrizes principais do C++ estão lá para ajudá-lo a escrever código melhor
 
 Conforme novas regras são adicionadas ao verificador de diretrizes de núcleo do C++, pode aumentar o número de avisos que são produzidos para código pré-existente. Você pode usar conjuntos de regras predefinidas para filtrar quais tipos de regras para permitir. A partir do Visual Studio 2017 versão 15.3, os conjuntos de regra com suporte são:
 
-  - **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário<T> das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro de proprietário** impor [verificações de gerenciamento de recursos relacionados ao proprietário\<T > das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
+- **Regras de const** impor [verificações relacionadas a const das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
-  - **Regras de ponteiro bruto** impor [gerenciamento de recursos verifica ponteiros relacionados a brutos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro bruto** impor [gerenciamento de recursos verifica ponteiros relacionados a brutos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de ponteiro exclusivo** impor [verificações de gerenciamento de recursos relacionadas aos tipos com semânticas de ponteiros exclusivos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **Regras de ponteiro exclusivo** impor [verificações de gerenciamento de recursos relacionadas aos tipos com semânticas de ponteiros exclusivos das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
-  - **Regras de limites** impor a [delimita o perfil das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+- **Regras de limites** impor a [delimita o perfil das diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
-  - **Regras de tipo** impor a [tipo de perfil de diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
-
+- **Regras de tipo** impor a [tipo de perfil de diretrizes principais do C++](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#prosafety-type-safety-profile).
 
 Você pode optar por limitar os avisos para apenas um ou alguns dos grupos. O **mínimo nativo** e **recomendado nativo** regra conjuntos incluem regras de verificação principal do C++, além de outras verificações PREfast. Para ver o disponíveis conjuntos de regra, abra a caixa de diálogo Propriedades do projeto, selecione **código Analysis\General**, abra a lista suspensa na **conjuntos de regras** caixa de combinação e selecionar com **escolher vários conjuntos de regras** . Para obter mais informações sobre como usar conjuntos de regra no Visual Studio, consulte [usando os conjuntos de regras para agrupar regras de análise de código](using-rule-sets-to-group-code-analysis-rules.md).
 
@@ -151,7 +150,7 @@ Em vez de #pragmas, você pode usar opções de linha de comando na página de p
 
 1. Clique no arquivo em **Gerenciador de soluções**
 
-2. Escolha **propriedades | C / C + + | Linha de comando**
+2. Escolha **propriedades | C /C++| Linha de comando**
 
 3. No **opções adicionais** janela, adicione `/wd26400`.
 
@@ -162,12 +161,12 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 Às vezes, pode ser útil para análise de código foco e ainda aproveitar o IDE do Visual Studio. Abaixo está um cenário de exemplo que pode ser usado para projetos grandes para economizar tempo de compilação e para facilitar para filtrar os resultados.
 
 1. No shell de comando, defina as `esp.extension` e `esp.annotationbuildlevel` variáveis de ambiente.
-2. Inicie o Visual Studio no shell de comando para herdar essas variáveis.
+2. Abra o Visual Studio no shell de comando para herdar essas variáveis.
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
-6. Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
-7. Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
+6. Escolher **C /C++opções de linha de \Command** e adicione `/analyze:plugin EspXEngine.dll`
+7. Desabilitar o uso de cabeçalho pré-compilado (**C /C++\Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado e se a última opção tiver sido compilado com as opções de projeto padrão, ele não será compatível.
 8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio
@@ -187,7 +186,7 @@ O verificador de análise de código nativo (PREfast) é integrado ao ambiente d
 
 Verifique se que você adicionar essas propriedades antes da importação do arquivo Microsoft.Cpp.targets. Você pode escolher os conjuntos de regras específicas ou criar um conjunto de regras personalizadas ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
-Você pode executar o verificador de núcleo do C++ somente em arquivos especificados usando a mesma abordagem [descritos anteriormente](#coreckeck_per_file), mas usando arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
+Você pode executar o verificador de núcleo do C++ somente em arquivos especificados usando a mesma abordagem [descritos anteriormente](#corecheck_per_file), mas usando arquivos do MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
 
 ```xml
 <ItemGroup>

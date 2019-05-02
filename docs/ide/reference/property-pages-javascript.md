@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969014"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedade, JavaScript
 As **Páginas de Propriedades** fornecem acesso às configurações do projeto. Você pode usar as páginas que aparecem nas **Páginas de Propriedade** para alterar as propriedades do projeto.
@@ -49,7 +49,6 @@ As opções e páginas a seguir aparecem nas **Páginas de Propriedade**.
 > [!NOTE]
 > Algumas opções estão disponíveis somente em aplicativos UWP.
 
-
  **Caminho de Saída**
 
  Especifica o local dos arquivos de saída para a configuração do projeto. O caminho é relativo; se você inserir um caminho absoluto, o caminho absoluto será salvo no projeto. O caminho padrão é bin\Debug.
@@ -66,16 +65,15 @@ As opções e páginas a seguir aparecem nas **Páginas de Propriedade**.
 > [!NOTE]
 > Algumas opções estão disponíveis somente em aplicativos UWP.
 
-
  **Depurador a ser iniciado**
 
  Especifica o host padrão para o depurador.
 
--   Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Selecione **Simulador** para iniciar o aplicativo no Simulador. Para obter mais informações, consulte [Executando aplicativos no simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Selecione **Simulador** para iniciar o aplicativo no Simulador. Para obter mais informações, consulte [Executando aplicativos no simulador](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Selecione **Computador Remoto** para iniciar o aplicativo em um computador remoto. Para obter mais informações sobre a depuração remota, consulte [Executando aplicativos em um computador remoto](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Selecione **Computador Remoto** para iniciar o aplicativo em um computador remoto. Para obter mais informações sobre a depuração remota, consulte [Executando aplicativos em um computador remoto](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Iniciar Aplicativo**
 

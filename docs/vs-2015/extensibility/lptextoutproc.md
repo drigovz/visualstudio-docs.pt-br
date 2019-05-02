@@ -1,14 +1,9 @@
 ---
 title: LPTEXTOUTPROC | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -20,13 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 28a48c0d2dbc89295d6c1f8e900ce6219e2c9313
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f14942ffd59ce2c6eacf7da2d0d1ab252d58e2cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100490"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +54,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 |`SCC_MSG_DOCANCEL`|Enviado com nenhuma cadeia de caracteres de mensagem.|  
 |`SCC_MSG_STARTCANCEL`|Começa exibindo uma **Cancelar** botão.|  
 |`SCC_MSG_STOPCANCEL`|Interrompe a exibição de um **Cancelar** botão.|  
-|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Solicita que o IDE se a operação em segundo plano deve ser cancelada: IDE retorna `SCC_MSG_RTN_CANCEL` se a operação foi cancelada; caso contrário, retornará `SCC_MSG_RTN_OK`. O `display_string` parâmetro é convertido como um [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) estrutura, que é fornecida pelo plug-in de controle do código-fonte.|  
+|`SCC_MSG_BACKGROUND_IS_CANCELLED`|Solicita que o IDE se a operação em segundo plano deve ser cancelada: Retorna de IDE `SCC_MSG_RTN_CANCEL` se a operação foi cancelada; caso contrário, retornará `SCC_MSG_RTN_OK`. O `display_string` parâmetro é convertido como um [SccMsgDataIsCancelled](#LinkSccMsgDataIsCancelled) estrutura, que é fornecida pelo plug-in de controle do código-fonte.|  
 |`SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE`|Informa o IDE sobre um arquivo antes de serem recuperado do controle de versão. O `display_string` parâmetro é convertido como um [SccMsgDataOnBeforeGetFile](#LinkSccMsgDataOnBeforeGetFile) estrutura, que é fornecida pelo plug-in de controle do código-fonte.|  
 |`SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE`|Informa o IDE sobre um arquivo depois que ele tiver sido recuperado do controle de versão. O `display_string` parâmetro é convertido como um [SccMsgDataOnAfterGetFile](#LinkSccMsgDataOnAfterGetFile) estrutura, que é fornecida pelo plug-in de controle do código-fonte.|  
 |`SCC_MSG_BACKGROUND_ON_MESSAGE`|Informa o IDE do status atual de uma operação em segundo plano. O `display_string` parâmetro é convertido como um [SccMsgDataOnMessage](#LinkSccMsgDataOnMessage) estrutura, que é fornecida pelo plug-in de controle do código-fonte.|  
@@ -76,7 +71,7 @@ typedef LONG (*LPTEXTOUTPROC) (
   
 ## <a name="structures"></a>Estruturas  
   
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled  
   
 ```cpp#  
 typedef struct {  
@@ -86,7 +81,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_IS_CANCELLED` mensagem. Ele é usado para comunicar a ID da operação em segundo plano que foi cancelada.  
   
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -97,7 +92,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` mensagem. Ele é usado para comunicar-se o nome do arquivo que está prestes a ser recuperado e a ID da operação em segundo plano que está fazendo a recuperação.  
   
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile  
   
 ```cpp#  
 typedef struct {  
@@ -109,7 +104,7 @@ typedef struct {
   
  Essa estrutura é enviada com o `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` mensagem. Ele é usado para comunicar-se o resultado de recuperar o arquivo especificado, bem como a ID da operação de plano de fundo que fazia a recuperar. Consulte os valores retornados para o [SccGet](../extensibility/sccget-function.md) para o que pode ser fornecido como resultado.  
   
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage  
  [C++]  
   
 ```  
@@ -147,4 +142,3 @@ LONG SendStatusMessage(
 ## <a name="see-also"></a>Consulte também  
  [Funções de retorno de chamada implementadas pelo IDE](../extensibility/callback-functions-implemented-by-the-ide.md)   
  [Plug-ins de controle do código-fonte](../extensibility/source-control-plug-ins.md)
-

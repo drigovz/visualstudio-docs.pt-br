@@ -1,11 +1,8 @@
 ---
 title: FlowSwitch&lt;T&gt; Designer de atividade | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Core.Presentation.FlowSwitchLink.UI
@@ -16,13 +13,13 @@ ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: ed39806fdca8eec3deccf5383c2386d07f0af929
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: ccd3e328a904540dd03c85f53634dc1eaab96c6e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49254742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943301"
 ---
 # <a name="flowswitchlttgt-activity-designer"></a>FlowSwitch&lt;T&gt; Designer de atividade
 A atividade de <xref:System.Activities.Statements.FlowSwitch%601> é um nó condicional que fornece a ramificação para o fluxo de controle baseado no critério de correspondência quando mais de duas ramificações alternativas são necessários. Se a ramificação de fluxo requer apenas dois caminhos, use a atividade de <xref:System.Activities.Statements.FlowDecision> em vez disso.  

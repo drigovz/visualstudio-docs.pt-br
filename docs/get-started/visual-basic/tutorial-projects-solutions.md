@@ -11,19 +11,30 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a91bf1a43a5cbb92713b1068f882bd6248c4f70a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965568"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Saiba mais sobre projetos e soluções usando Visual Basic
 
 Neste artigo introdutório, exploraremos o que significa criar uma *solução* e um *projeto* no Visual Studio. Uma solução é um contêiner usado para organizar um ou mais projetos de código relacionados, por exemplo, um projeto de biblioteca de classes e um projeto de teste correspondente. Vamos examinar as propriedades de um projeto e alguns dos arquivos que ele pode conter. Também criaremos uma referência de um projeto a outro.
 
+::: moniker range="vs-2017"
+
 > [!TIP]
-> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!TIP]
+> Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 Desenvolveremos uma solução e um projeto do zero como um exercício educacional para compreendermos o conceito de um projeto. Em seu uso geral do Visual Studio, você provavelmente usará alguns dos vários *modelos* de projeto oferecidos pelo Visual Studio quando estiver criando um projeto.
 
@@ -38,17 +49,35 @@ Apesar do nome, uma solução não é uma "resposta". Uma solução é apenas um
 
 Vamos iniciar nossa exploração criando uma solução vazia. Depois de se familiarizar com o Visual Studio, provavelmente, você não precisará criar soluções vazias com muita frequência. Quando você cria um projeto, o Visual Studio cria automaticamente uma solução para hospedar o projeto, caso não haja uma solução já aberta.
 
+::: moniker range="vs-2017"
+
 1. Abra o Visual Studio.
 
-1. Na barra de menus, que é a linha de menus, como **Arquivo** e **Editar**, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
    A caixa de diálogo **Novo Projeto** é aberta.
 
-1. No painel esquerdo, expanda a opção **Outros Tipos de Projetos** e, então, selecione **Soluções do Visual Studio**. No painel central, escolha o modelo **Solução em Branco**. Nomeie a solução **QuickSolution** e, em seguida, escolha o botão **OK**.
+1. No painel esquerdo, expanda a opção **Outros Tipos de Projetos** e, então, selecione **Soluções do Visual Studio**. No painel central, escolha o modelo **Solução em Branco**. Chame sua solução de **QuickSolution** e escolha **OK**.
 
    ![Modelo de solução em branco no Visual Studio](../media/tutorial-projects-new-solution.png)
 
    A **Página Inicial** é fechada e uma solução é exibida no **Gerenciador de Soluções** do lado direito da janela do Visual Studio. Você provavelmente usará o **Gerenciador de Soluções** muitas vezes para navegar pelo conteúdo de seus projetos.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Abra o Visual Studio.
+
+2. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+3. Na página **Criar um novo projeto**, insira **solução em branco** na caixa de pesquisa, selecione o modelo **Solução em Branco** e escolha **Avançar**.
+
+4. Nomeie a solução como **QuickSolution** e escolha **Criar**.
+
+   A solução aparece no **Gerenciador de Soluções** do lado direito da janela do Visual Studio. Você provavelmente usará o **Gerenciador de Soluções** muitas vezes para navegar pelo conteúdo de seus projetos.
+
+::: moniker-end
 
 ### <a name="add-a-project"></a>Adicionar um projeto
 

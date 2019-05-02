@@ -17,17 +17,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d10959cf7cd7dbbf11ff5808889e4ae21aafa40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443837"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use a página **Referências** do **Designer de Projeto** para gerenciar referências, referências Web e namespaces importados em seu projeto. Projetos podem conter referências a componentes COM, serviços Web XML, assemblies ou bibliotecas de classes do .NET Framework ou outras bibliotecas de classes. Para obter mais informações sobre o uso de referências, consulte [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md).  
   
  Para acessar a página **Referências**, escolha um nó de projeto (não o nó **Solução**) no **Gerenciador de Soluções**. Em seguida, escolha **Projeto**, **Propriedades** na barra de menus. Quando o Designer de Projeto for exibido, clique na guia **Referências**.  
@@ -44,12 +43,12 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
  Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**.  
   
 > [!NOTE]
->  Quando o sistema do projeto encontra uma referência de assembly, o sistema resolve a referência examinando os seguintes locais, na seguinte ordem:  
+> Quando o sistema do projeto encontra uma referência de assembly, o sistema resolve a referência examinando os seguintes locais, na seguinte ordem:  
 > 
 > 1. A pasta do projeto. Os arquivos da pasta do projeto aparecem no **Gerenciador de Soluções** quando **Mostrar Todos os Arquivos** não está em vigor.  
->    2.  Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
->    3.  Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
->    4.  A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
+>    2. Pastas especificadas na caixa de diálogo **Caminhos de Referência**.  
+>    3. Pastas que exibem arquivos na caixa de diálogo **Adicionar Referência**.  
+>    4. A pasta obj do projeto. (Quando você adiciona uma referência COM a seu projeto, um ou mais assemblies podem ser adicionados à pasta obj do projeto.)  
   
  **Referências**  
  Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.  
@@ -81,14 +80,14 @@ Use a página **Referências** do **Designer de Projeto** para gerenciar referê
  **Atualizar Importação de Usuário**  
  Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:  
   
--   Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.  
+- Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.  
   
--   Importações com alias, como `VB=Microsoft.VisualBasic`.  
+- Importações com alias, como `VB=Microsoft.VisualBasic`.  
   
--   Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Consulte também  
- [(NIB) Como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
- [Como adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
+ [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [Como: Adicionar ou remover Namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)   
  [NIB: Adicionar caixa de diálogo de referência da Web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5)   
  [Instrução Imports (Namespace de XML)](http://msdn.microsoft.com/library/1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4)

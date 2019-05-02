@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 936a664dfeb063f84218c469b160cec761a0e468
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844133"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041829"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  Para obter mais informações, consulte [What's New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e o [Blog .NET](http://blogs.msdn.com/b/dotnet/).
 
 #### <a name="c"></a>C++
- O Visual C++ fornece avanços significativos no C + + 11/14 conformidade com a linguagem, suporte para desenvolvimento de dispositivo móvel de plataforma cruzada, suportam para funções retomáveis e await (atualmente planejados para padronização em c++17), aprimoramentos e correções no C Implementações de biblioteca padrão (STL) biblioteca de tempo de execução (CRT) e C++, as caixas de diálogo redimensionáveis no MFC, novas otimizações de compilador, compile melhor desempenho, novos recursos de diagnóstico e novas ferramentas de produtividade no editor de códigos.
+ O Visual C++ fornece avanços significativos no C + + 11/14 conformidade com a linguagem, suporte para desenvolvimento de dispositivo móvel de plataforma cruzada, o suporte para funções retomáveis e await (atualmente planejados para padronização em c++17), aprimoramentos e correções no a biblioteca de tempo de execução C (CRT) e C++ implementações da biblioteca padrão (STL), as caixas de diálogo redimensionáveis no MFC, novas otimizações de compilador, compilação melhores desempenho, novos recursos de diagnóstico e novas ferramentas de produtividade no editor de códigos.
 
  Para obter mais informações, consulte [o que há de novo para o Visual C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e o [Blog do Visual C++](http://blogs.msdn.com/b/vcblog/).
 
@@ -123,25 +123,24 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ## <a name="cross-platform-debugging-support"></a>Suporte à depuração de plataforma cruzada
  Você pode usar o Visual Studio para criar e depurar aplicativos móveis nativos que são executados em dispositivos Android, iOS e Windows. Use o [emulador do Visual Studio para Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), ou conectar um dispositivo e depurar seu código diretamente no Visual Studio.
 
--   **JavaScript / Cordova**. Use o [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android com o JavaScript.
+- **JavaScript / Cordova**. Use o [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android com o JavaScript.
 
      [Depurar seu aplicativo](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) na biblioteca do MSDN é uma visão detalhada de suporte para Cordova de depuração do Visual Studio.
 
--   **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android no Visual Studio com c#.
+- **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android no Visual Studio com c#.
 
      [Depurando](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [depurar no dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) no [guias do desenvolvedor Xamarin](http://developer.xamarin.com/guides) descrevem a experiência de depuração.
 
--   **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](http://msdnstage.redmond.corp.microsoft.com/library/dn872463\(v=vs.140\).aspx) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
+- **C++ / Android**. Use o [Visual C++ para desenvolvimento móvel de plataforma cruzada](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) modelos junto com as ferramentas de terceiros, como o [NDK do Android](https://developer.android.com/tools/sdk/ndk/index.html) para criar aplicativos nativos para Windows e Android.
 
 ## <a name="debugging-and-diagnostics"></a>Depuração e Diagnóstico
- Para obter informações sobre o que há de novo na depuração, consulte [o que há de novo no depurador no Visual Studio 2015](/visualstudio/debugger/what-s-new-for-the-debugger-in-visual-studio-2015?view=vs-2015).
 
- Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
+Para obter informações sobre o que há de novo no diagnóstico, consulte [o que há de novo nas ferramentas de criação de perfil](./profiling/what-s-new-in-profiling-tools.md).
 
- A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
+A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de diagnóstico e análise em seu código:
 
 ### <a name="perftips"></a>PerfTips
- As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ As PerfTips exibem o tempo de execução dos métodos durante a depuração, permitindo que você identifique rapidamente os gargalos sem ter que invocar o criador de perfil. Para começar, consulte [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio ("Visão rápida de informações de desempenho durante a depuração com o Visual Studio")](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Lista de Erros
  A lista de erros agora dá suporte à filtragem em qualquer coluna. Ele também mostra uma exibição ao vivo de erros, avisos e análise de código em toda a solução c# ou Visual Basic conforme você digita, mesmo quando uma alteração de código produz milhares de avisos. A nova lista de erros é compatível com o back com o uso existente. Para obter mais informações, consulte [janela lista de erros](./ide/reference/error-list-window.md).
@@ -180,18 +179,18 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ### <a name="notification-hub"></a>Hub de notificação
  A interface do usuário para o hub de notificação foi otimizada para torná-lo mais fácil verificar rapidamente. Tipos de notificações adicionais foram adicionados incluindo problemas de desempenho, problemas de renderização e falhas, e você agora pode informar ao Visual Studio pare de mostrar uma notificação. Para obter mais informações, consulte [Notificações do Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Localizar o que aconteceu com seu código (apenas para edições Enterprise e Professional)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens: Encontre o que aconteceu com seu código (apenas para edições Enterprise e Professional)
  Mantenha o foco no trabalho enquanto você encontrar informações sobre seu código – sem sair do editor. Você pode revisar as alterações e outro histórico de itens de trabalho, bugs, revisões de código, e assim por diante para o código que é armazenado no Visual Studio Team Services (VSTS) ou no Team Foundation Server (TFS).
 
  No Visual Studio Enterprise e Professional do Visual Studio, agora você pode:
 
 - Obter histórico para um arquivo de código completo no editor do Visual Studio.
 
-   ![CodeLens: obtenha detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens: Obter detalhes do arquivo de código](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Ver um gráfico que mostra quem alterou seu código. Isso pode ajudá-lo a encontrar padrões nas alterações da sua equipe e avaliar o impacto delas.
 
-   ![CodeLens: ver o histórico de alterações do código como um grafo](./ide/media/codelens.png "CodeLens")
+   ![CodeLens: Consulte o histórico de alterações de código como um grafo](./ide/media/codelens.png "CodeLens")
 
 - Ver facilmente quando o seu código foi alterado pela última vez.
 

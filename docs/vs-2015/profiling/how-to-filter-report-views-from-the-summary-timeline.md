@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50958671d327013254b0a19e3dda160b1b3035e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce9b74012be35433c26f8446f36246dbe93f6442
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044242"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>Como: Filtrar as exibições de relatório da linha do tempo resumida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,8 +23,8 @@ Você pode filtrar os dados que aparecem nos relatórios de desempenho, especifi
   
 ### <a name="to-filter-a-profiling-report-from-the-summary-timeline-graph"></a>Para filtrar um relatório de criação de perfil do gráfico de resumo da linha de tempo  
   
-1.  No gráfico de linha do tempo da exibição de Resumo, clique em um ponto na linha do tempo e, em seguida, arraste o mouse para outro ponto na linha do tempo.  
+1. No gráfico de linha do tempo da exibição de Resumo, clique em um ponto na linha do tempo e, em seguida, arraste o mouse para outro ponto na linha do tempo.  
   
      A região que você especificou será sombreada.  
   
-2.  Clique em **Filtrar por Seleção**.
+2. Clique em **Filtrar por Seleção**.

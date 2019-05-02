@@ -1,14 +1,9 @@
 ---
 title: Gerenciando exceções com o depurador | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.exceptions
 - vs.debug.exceptions.find
@@ -37,13 +32,13 @@ ms.assetid: 43a77fa8-37d0-4c98-a334-0134dbca4ece
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: bdb648e7a29b3ed5d9a444e203ddbdcd6b0e73dc
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51770003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439172"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,17 +47,17 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Quando uma exceção ocorre, o depurador grava uma mensagem de exceção para a janela de saída. Ele pode interromper a execução nos seguintes casos:  
   
--   Quando uma exceção é lançada e não é tratada.  
+- Quando uma exceção é lançada e não é tratada.  
   
--   Quando o depurador está definido para interromper a execução imediatamente quando uma exceção é lançada, antes que qualquer manipulador seja invocado.  
+- Quando o depurador está definido para interromper a execução imediatamente quando uma exceção é lançada, antes que qualquer manipulador seja invocado.  
   
--   Se você tiver definido [Just My Code](../debugger/just-my-code.md), e o depurador está definido como interromper qualquer exceção que não é tratada no código do usuário.  
-  
-> [!NOTE]
->  O ASP.NET tem um manipulador de exceção de nível superior que mostra páginas de erro em um navegador. Ele não interromper a execução, a menos que **Just My Code** está ativado. Por exemplo, consulte [definindo o depurador para continuar em exceções sem tratamento do usuário](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) abaixo.  
+- Se você tiver definido [Just My Code](../debugger/just-my-code.md), e o depurador está definido como interromper qualquer exceção que não é tratada no código do usuário.  
   
 > [!NOTE]
->  Em um aplicativo Visual Basic, o depurador gerencia todos os erros como exceções, mesmo se você usar em manipuladores de erro – estilo de erro.  
+> O ASP.NET tem um manipulador de exceção de nível superior que mostra páginas de erro em um navegador. Ele não interromper a execução, a menos que **Just My Code** está ativado. Por exemplo, consulte [definindo o depurador para continuar em exceções sem tratamento do usuário](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) abaixo.  
+  
+> [!NOTE]
+> Em um aplicativo Visual Basic, o depurador gerencia todos os erros como exceções, mesmo se você usar em manipuladores de erro – estilo de erro.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Gerenciando exceções com a janela de configurações de exceção  
  Você pode usar o **configurações de exceção** janela para especificar quais exceções (ou conjuntos de exceções) fará com que o depurador seja interrompido e, no ponto em que você deseja que sua interrupção. Você pode adicionar ou excluir exceções ou especificar exceções ao interromper em. Abrir essa janela quando uma solução é aberta clicando **depurar / Windows / configurações de exceção**.  
@@ -146,7 +141,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
    ![Restaurar padrões nas configurações de exceção](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Definir o depurador para continuar em exceções sem tratamento do usuário  
+### <a name="BKMK_UserUnhandled"></a> Definir o depurador para continuar em exceções sem tratamento do usuário  
  Se você estiver depurando código do .NET ou JavaScript com [Just My Code](../debugger/just-my-code.md), você pode instruir o depurador não para interromper as exceções que não são manipuladas no código do usuário, mas são tratadas em outro lugar.  
   
 1. No **configurações de exceção** janela, abra o menu de contexto clicando duas vezes na janela e, em seguida, selecionando **Mostrar colunas**. (Se você tiver desativado **Just My Code**, você não verá esse comando.)  
@@ -167,7 +162,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
  Se você quiser adicionar uma exceção para as exceções de acesso de memória de GPU, exceções de tempo de execução do JavaScript ou categorias de exceções do Win32, você precisa incluir o código de erro, bem como a descrição.  
   
 > [!TIP]
->  Verifique a ortografia! O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).  
+> Verifique a ortografia. O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).  
   
  Configurações de exceção são persistidas no arquivo. suo da solução, para que elas se aplicam a uma determinada solução. É possível reutilizar configurações de exceção específicos em soluções. Neste ponto, apenas as exceções adicionadas são persistentes; não são excluídos de exceções. Em outras palavras, você pode adicionar uma exceção, feche e reabra a solução e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção reaparecerá.  
   
@@ -188,13 +183,8 @@ public class GenericException<T> : Exception
   
 ## <a name="see-also"></a>Consulte também  
  [Continuando a execução após uma exceção](../debugger/continuing-execution-after-an-exception.md)   
- [Como: examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)   
- [Como: usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   
+ [Como: Examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)   
+ [Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)   
  [Usar o tempo de execução verifica sem a biblioteca de tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
  [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Noções básicas do depurador](../debugger/debugger-basics.md)
-
-
-
-
-

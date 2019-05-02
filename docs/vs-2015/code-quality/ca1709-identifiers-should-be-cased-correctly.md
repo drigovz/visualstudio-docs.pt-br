@@ -1,14 +1,9 @@
 ---
-title: 'CA1709: Os identificadores devem ter maiusculas e minúsculas corretamente | Microsoft Docs'
-ms.custom: ''
+title: 'CA1709: Identificadores devem ter maiusculas e minúsculas corretamente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - IdentifiersShouldBeCasedCorrectly
 - CA1709
@@ -20,17 +15,17 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 795bf9c307862195cd9ec70bb2de1f89ca4d1e17
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: b447b111cedc30aa23f3aaad0fbc964a5d8a2bd2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49199544"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669348"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: os identificadores do recurso devem ter maiúsculas e minúsculas corretas
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identificadores devem ter maiúsculas e minúsculas corretas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1709: os identificadores devem ter maiusculas e minúsculas corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca1709-identifiers-should-be-cased-correctly).  
   
 |||  
 |-|-|  
@@ -67,8 +62,7 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1709
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  É seguro suprimir este aviso se você tiver suas próprias convenções de nomenclatura, ou se o identificador representa um nome apropriado, por exemplo, o nome de uma empresa ou uma tecnologia.  
   
- Você também pode adicionar termos específicos, as abreviações e acrônimos que a um dicionário personalizado de análise de código. Termos especificados no dicionário personalizado não fará com que as violações dessa regra. Para obter mais informações, consulte [como: personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
+ Você também pode adicionar termos específicos, as abreviações e acrônimos que a um dicionário personalizado de análise de código. Termos especificados no dicionário personalizado não fará com que as violações dessa regra. Para obter mais informações, confira [Como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)  
   
 ## <a name="related-rules"></a>Regras relacionadas  
- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-
+ [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

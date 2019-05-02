@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 52a7944de897d48322f78e4842756e4389e0026f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825286"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Conjunto de regras de segurança para código gerenciado
 Você deve incluir as regras de segurança da Microsoft conjunto de regras para maximizar o número de possíveis problemas de segurança que são relatados.
@@ -63,3 +63,18 @@ Você deve incluir as regras de segurança da Microsoft conjunto de regras para 
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Assemblies devem ter nomes fortes válidos|
+|[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|Não usar o desserializador BinaryFormatter não seguro|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder|
+|[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Verificar se o BinaryFormatter.Binder está definido antes de chamar BinaryFormatter.Deserialize|
+|[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de SQL|
+|[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de XSS|
+|[CA3003](../code-quality/ca3003-review-code-for-file-path-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de caminho|
+|[CA3004](../code-quality/ca3004-review-code-for-information-disclosure-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de divulgação de informações|
+|[CA3005](../code-quality/ca3005-review-code-for-ldap-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de LDAP|
+|[CA3006](../code-quality/ca3006-review-code-for-process-command-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de comando de processo|
+|[CA3007](../code-quality/ca3007-review-code-for-open-redirect-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de redirecionamento aberto|
+|[CA3008](../code-quality/ca3008-review-code-for-xpath-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de XPath|
+|[CA3009](../code-quality/ca3009-review-code-for-xml-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de XML|
+|[CA3010](../code-quality/ca3010-review-code-for-xaml-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de XAML|
+|[CA3011](../code-quality/ca3011-review-code-for-dll-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de DLL|
+|[CA3012](../code-quality/ca3012-review-code-for-regex-injection-vulnerabilities.md)|Examinar código quanto a vulnerabilidades de injeção de regex|

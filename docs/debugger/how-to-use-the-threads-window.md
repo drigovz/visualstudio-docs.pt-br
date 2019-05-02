@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b205a92607d55b9999a846c860235c7deb5b13ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846870"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Passo a passo: Depurar um aplicativo de vários threads usando a janela de Threads (C#, Visual Basic, C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Passo a passo: Depurar um aplicativo multithread usando a janela de Threads (C#, Visual Basic, C++)
 
 Vários elementos de interface do usuário Visual Studio ajudam a depurar aplicativos multithread. Este artigo apresenta os recursos de depuração multithread na janela do editor de código **local de depuração** barra de ferramentas, e **Threads** janela. Para obter informações sobre outras ferramentas para depurar aplicativos multi-threaded, consulte [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -34,17 +34,29 @@ Concluir este tutorial leva apenas alguns minutos e familiariza você com as No�
 
 Crie o seguinte projeto de aplicativo de vários threads para usar neste tutorial:
 
-1. No Visual Studio, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Abra o Visual Studio e crie um projeto.
 
-1. Na caixa de diálogo **Novo Projeto**:
-   - Para um C# aplicativo, selecione **Visual C#**    >  **aplicativo de Console (.NET Framework)**.
-   - Para um aplicativo em C++, selecione **Visual C++** > **aplicativo de Console do Windows**.
+    ::: moniker range=">=vs-2019"
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
 
-1. Nomeie o aplicativo MyThreadWalkthroughApp e, em seguida, selecione **Okey**.
+    - Para C#, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para C#. Na caixa de diálogo que aparece, escolha **Criar**.
+    - Para C++, escolha **criar novo projeto de aplicativo de Console**. Na caixa de diálogo que aparece, escolha **Criar**.
 
-   O novo projeto aparece na **Gerenciador de soluções**, e um arquivo de origem chamado *Program.cs* ou *mythreadwalkthroughapp. cpp* é aberto na janela de código de origem.
+    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **criar**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
+    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um C++ aplicativo, em **Visual C++** , escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
 
-1. Substitua o código no arquivo de origem com o C# ou o código de exemplo do C++ de [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md).
+    Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **Okey**.
+    ::: moniker-end
+
+    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+
+    O novo projeto aparece na **Gerenciador de soluções**, e um arquivo de origem chamado *Program.cs* ou *mythreadwalkthroughapp. cpp* é aberto na janela de código de origem.
+
+1. Substitua o código no arquivo de origem com o C# ou C++ exemplo de código [começar a depurar aplicativos multithread](../debugger/get-started-debugging-multithreaded-apps.md).
 
 1. Selecione **arquivo** > **Salvar tudo**.
 
@@ -97,7 +109,7 @@ Sinalizar e remover sinalização de threads do editor de código fonte ou do **
 
 1. Abra o **local de depuração** barra de ferramentas selecionando **exibição** > **barras de ferramentas** > **local de depuração**. Você pode também com o botão direito na área de barra de ferramentas e selecione **local de depuração**.
 
-1. O **local de depuração** barra de ferramentas tem três campos: **processo**, **Thread**, e **quadro de pilha**. Lista suspensa a **Thread** listar e observe quantos threads lá. No **Thread** lista, o thread em execução no momento é marcado por um **>** símbolo.
+1. O **local de depuração** barra de ferramentas tem três campos: **Processo**, **Thread**, e **quadro de pilha**. Lista suspensa a **Thread** listar e observe quantos threads lá. No **Thread** lista, o thread em execução no momento é marcado por um **>** símbolo.
 
 1. Na janela de código fonte, passe o mouse sobre um ícone de marcador de thread na medianiz e selecione o ícone de sinalizador (ou um dos ícones de sinalizador vazia) no DataTip. O ícone de sinalizador fica vermelho.
 
@@ -186,4 +198,4 @@ Você aprendeu as Noções básicas de depuração de aplicativos multithread. V
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
-- [Como mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)
+- [Como: Mudar para outro thread durante a depuração](../debugger/how-to-switch-to-another-thread-while-debugging.md)

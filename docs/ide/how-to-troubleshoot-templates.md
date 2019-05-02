@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b3a94ab9a44776b0c6716b99f594ec0fd840938
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 70782646a52a5bca5741a864eee1f965941bb34b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547587"
 ---
 # <a name="how-to-troubleshoot-templates"></a>Como: Solucionar problemas de modelos
 
@@ -20,7 +20,17 @@ Se houver falha no carregamento de um modelo no ambiente de desenvolvimento, hav
 
 ## <a name="validate-the-vstemplate-file"></a>Validar o arquivo vstemplate
 
+::: moniker range="vs-2017"
+
 Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de modelo do Visual Studio, o modelo poderá não aparecer na caixa de diálogo **Novo Projeto**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se o arquivo *.vstemplate* em um modelo não estiver de acordo com o esquema de modelo do Visual Studio, o modelo poderá não aparecer na caixa de diálogo em que você cria projetos.
+
+::: moniker-end
 
 ### <a name="to-validate-the-vstemplate-file"></a>Para validar o arquivo vstemplate
 

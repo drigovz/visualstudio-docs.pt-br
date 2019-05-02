@@ -1,30 +1,24 @@
 ---
 title: Recursos de IntelliSense do Editor de XML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 2b26f214-cc3a-46bf-b260-14eb8e599182
 caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 4dbb96ffcca47303a90b1ff4c71643a63f6b4aa5
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49830737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094653"
 ---
-# <a name="xml-editor-intellisense-features"></a>Funcionalidades do IntelliSense o editor XML
+# <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O editor XML fornece os recursos do IntelliSense comparáveis a outros editores de linguagem fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>O IntelliSense em um documento XSD  
@@ -51,7 +45,7 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
 - Nomes de parâmetro para um modelo chamado determinado.  
   
-  Para obter mais informações, consulte [instruções passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
+  Para obter mais informações, confira [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md) tópico.  
   
 ## <a name="auto-completion"></a>Preenchimento automático  
  O editor XML também facilita editando XML preenchendo na sintaxe XML necessário para você. Por exemplo, se você digitar a seguinte marcação inicial:  
@@ -91,19 +85,19 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
  O editor XML faz isso para os seguintes itens:  
   
--   Início correspondente e marcas de fim.  
+- Início correspondente e marcas de fim.  
   
--   Qualquer par de "\<" ou ">" colchetes angulares.  
+- Qualquer par de "\<" ou ">" colchetes angulares.  
   
--   Início e fim de comentários.  
+- Início e fim de comentários.  
   
--   Início e final de instrução de processamento.  
+- Início e final de instrução de processamento.  
   
--   Início e fim de blocos CDATA.  
+- Início e fim de blocos CDATA.  
   
--   Início e fim de declarações de DTD.  
+- Início e fim de declarações de DTD.  
   
--   Abrindo e fechando aspas em atributos.  
+- Abrindo e fechando aspas em atributos.  
   
 ## <a name="modifying-the-intellisense-options"></a>Alterando as opções do IntelliSense  
  Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas configurações de opções de ferramentas.  
@@ -118,16 +112,13 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático  
   
-1.  Selecione **Opções** no menu **Ferramentas**.  
+1. Selecione **Opções** no menu **Ferramentas**.  
   
-2.  Expandir **Editor de texto**, expanda **XML**e selecione **diversos**.  
+2. Expandir **Editor de texto**, expanda **XML**e selecione **diversos**.  
   
-3.  Fazer alterações para o **AutoInserção** seção e clique em **Okey**.  
+3. Fazer alterações para o **AutoInserção** seção e clique em **Okey**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de XML](../xml-tools/xml-editor.md)   
  [Usando o IntelliSense](../ide/using-intellisense.md)   
  [Passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
-
-
-

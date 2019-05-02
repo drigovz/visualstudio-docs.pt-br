@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f0a13f6355b868292d7d2867e54a8e62cb87c0f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 1e592b6d5da908b71aa5af9bae7afe495944301a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62936780"
 ---
 # <a name="dependency-diagrams-reference"></a>Diagramas de dependência: referência
 
@@ -40,13 +40,13 @@ Você pode especificar as dependências desejadas ou existentes entre camadas. E
 
 Use um diagrama de dependência para ajudá-lo a executar as seguintes tarefas:
 
--   Comunicar-se a arquitetura lógica existente ou pretendida de seu sistema.
+- Comunicar-se a arquitetura lógica existente ou pretendida de seu sistema.
 
--   Descubra os conflitos entre o código existente e a arquitetura pretendida.
+- Descubra os conflitos entre o código existente e a arquitetura pretendida.
 
--   Visualize o impacto das alterações na arquitetura pretendida quando refatorar, atualizar ou evoluir seu sistema.
+- Visualize o impacto das alterações na arquitetura pretendida quando refatorar, atualizar ou evoluir seu sistema.
 
--   Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.
+- Reforce a arquitetura pretendida durante o desenvolvimento e manutenção do seu código, incluindo validação com seu check-in e operações de compilação.
 
 Este tópico descreve os elementos que você pode usar em um diagrama de dependência. Para obter mais informações sobre como criar e desenhar diagramas de dependência, consulte [diagramas de dependência: Diretrizes de](../modeling/layer-diagrams-guidelines.md). Para obter mais informações sobre padrões de disposição em camadas, visite o [site padrões & práticas](http://go.microsoft.com/fwlink/?LinkId=145794).
 
@@ -68,17 +68,17 @@ A tabela a seguir descreve os elementos que você pode usar em um diagrama de de
 
 Você pode vincular cada camada para artefatos em sua solução, como projetos, classes, namespaces, arquivos de projeto e outras partes do seu software. O número em uma camada mostra o número de artefatos que estão associados à camada. No entanto, ao ler o número de artefatos em uma camada, lembre-se do seguinte:
 
--   Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
+- Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.
 
      Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.
 
--   Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
+- Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.
 
 Para obter mais informações sobre a vinculação de camadas e artefatos, consulte:
 
--   [Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
 
--   [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
 
 ### <a name="examine-the-linked-artifacts"></a>Examinar os artefatos vinculados
 

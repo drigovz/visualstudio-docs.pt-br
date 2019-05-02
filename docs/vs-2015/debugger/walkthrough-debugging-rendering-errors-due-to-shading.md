@@ -1,38 +1,33 @@
 ---
 title: 'Passo a passo: Depurando erros devido ao sombreamento de renderização | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 5d65c3d2525533e5881b4626941e43fb302ce2aa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733193"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067151"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Instruções passo a passo: depurando erros de renderização devido ao sombreamento
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Passo a passo: Como depurar erros de renderização devido ao sombreamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] diagnóstico de gráficos para investigar um objeto que é colorido incorretamente devido a um bug de sombreador.  
   
  Este passo a passo demonstra como:  
   
--   Examine o documento de log de gráficos para identificar os pixels que mostram o problema.  
+- Examine o documento de log de gráficos para identificar os pixels que mostram o problema.  
   
--   Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.  
+- Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.  
   
--   Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.  
+- Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.  
   
 ## <a name="scenario"></a>Cenário  
  Coloração incorreta em objetos normalmente ocorre quando um sombreador de vértice passa um pixel informações incorretas ou incompletas do sombreador.  
@@ -113,6 +108,3 @@ output.color = input.color;
  Depois de corrigir o código, recriá-lo e executar o aplicativo novamente para descobrir que o problema de renderização é resolvido.  
   
  ![O objeto é processado com as cores corretas. ](../debugger/media/gfx-diag-demo-render-error-shader-resolution.png "gfx_diag_demo_render_error_shader_resolution")
-
-
-

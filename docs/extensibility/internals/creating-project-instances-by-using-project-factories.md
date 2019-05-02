@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c3680af73c281a01a7938805f859e0ff88c1ba44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909975"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>Criar instâncias de projetos usando fábricas de projeto
 Tipos de projeto em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usar um *fábrica de projeto* para criar instâncias de objetos do projeto. Uma fábrica de projeto é semelhante a uma fábrica de classes padrão para objetos cocreatable do COM. No entanto, os objetos do projeto não são cocreatable; eles só podem ser criados usando uma fábrica de projeto.

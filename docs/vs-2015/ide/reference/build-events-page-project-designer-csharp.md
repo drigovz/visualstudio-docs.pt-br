@@ -16,18 +16,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e55d9d34a4837e2c01d78cc1f52ae2a25f28da8d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dc8fee5a01043a32061bfa711b7ad2009121b216
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433735"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
-Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, consulte [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
+Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, confira [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Configuração**  
@@ -40,13 +39,13 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
  Especifica comandos serem executados antes do início do build. Para digitar comandos longos, clique em **Editar Pré-Build** para exibir a [Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).  
   
 > [!NOTE]
->  Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
+> Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.  
   
  **Linha de comando de evento de pós-build**  
  Especifica comandos a serem executados após o fim do build. Para digitar comandos longos, clique em **Editar Pós-Build** para exibir a **Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build**.  
   
 > [!NOTE]
->  Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+> Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
  **Executar o evento de pós-build**  
  Especifica as condições a seguir para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.  
@@ -58,7 +57,7 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 |**Quando o build atualizar a saída do projeto**|O evento de pós-build só será executado quando o arquivo de saída do compilador (.exe ou .dll) for diferente do arquivo de saída anterior do compilador. Portanto, um evento de pós-build não será executado se um projeto for atualizado.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Como especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md)   
+ [Como: Especificar eventos de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Como: Especificar eventos de Build (c#)](../../ide/how-to-specify-build-events-csharp.md)   
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)

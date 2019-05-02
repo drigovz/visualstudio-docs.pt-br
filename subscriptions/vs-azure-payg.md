@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
 searchscope: VS Subscription
-ms.openlocfilehash: a5d6c0c609ddd87e29e7870792cbb558a756be6d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948210"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurando uma assinatura Paga Conforme o Uso de Desenvolvimento/Teste do Azure
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.
@@ -31,11 +31,9 @@ Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso
    > [!div class="mx-imgBorder"]
    > ![Inscrição do PAYG do Azure](_img/vs-azure-payg/vs-azure-payg-identity-cropped.png)
 
-
 5. Em seguida, forneça as informações de cobrança da sua conta e clique em **Avançar**.  (Trata-se das informações do cartão de crédito no qual as suas compras do Azure são cobradas.)
    > [!div class="mx-imgBorder"]
    > ![Pagamento PAYG do Azure](_img/vs-azure-payg/vs-azure-payg-payment-cropped.png)
-
 
 6. Na seção Contrato, clique na caixa de seleção para aceitar o contrato de assinatura, os detalhes da oferta e a política de privacidade e, em seguida, clique em **Comprar**.
 

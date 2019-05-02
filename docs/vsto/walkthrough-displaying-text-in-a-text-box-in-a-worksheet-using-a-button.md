@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2fcc837732a64aa14840ad4865fcf9a80ee7f209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0f74eaa8618ce497a760754d084f390a4d1b8c1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436098"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em uma planilha usando um botão
   Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em planilhas do Microsoft Office Excel e como criar projetos do Excel usando ferramentas de desenvolvimento do Office no Visual Studio. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
@@ -29,28 +29,28 @@ ms.locfileid: "56598148"
 
  Durante este passo a passo, você aprenderá a:
 
--   Adicione controles a uma planilha.
+- Adicione controles a uma planilha.
 
--   Preencha uma caixa de texto quando um botão é clicado.
+- Preencha uma caixa de texto quando um botão é clicado.
 
--   Teste seu projeto.
+- Teste seu projeto.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Criar o projeto
  Nesta etapa, você criará um projeto de pasta de trabalho do Excel usando o Visual Studio.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **My Button Excel**. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Criar um projeto de pasta de trabalho do Excel com o nome **My Button Excel**. Certifique-se de que **criar um novo documento** está selecionado. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **meu botão do Excel** projeto ao **Gerenciador de soluções**.
 
@@ -81,14 +81,14 @@ ms.locfileid: "56598148"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para gravar a caixa de texto quando o botão é clicado
 
-1.  Na **Gerenciador de soluções**, clique com botão direito **Sheet1**e, em seguida, clique em **Exibir código** no menu de atalho.
+1. Na **Gerenciador de soluções**, clique com botão direito **Sheet1**e, em seguida, clique em **Exibir código** no menu de atalho.
 
-2.  Adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão:
+2. Adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão:
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]
 
-3.  No c#, você deve adicionar um manipulador de eventos para o <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, conforme mostrado abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. No c#, você deve adicionar um manipulador de eventos para o <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> evento, conforme mostrado abaixo. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
 
@@ -97,18 +97,18 @@ ms.locfileid: "56598148"
 
 ### <a name="to-test-your-workbook"></a>Para testar a sua pasta de trabalho
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
-2.  Clique no botão.
+2. Clique no botão.
 
-3.  Confirme se **Olá, mundo!** é exibida na caixa de texto.
+3. Confirme se **Olá, mundo!** é exibida na caixa de texto.
 
 ## <a name="next-steps"></a>Próximas etapas
  Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em planilhas do Excel. Estas são algumas tarefas que podem vir a seguir:
 
--   Implantar o projeto. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
+- Implantar o projeto. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
--   Usando as caixas de seleção para alterar a formatação. Para obter mais informações, confira [Passo a passo: Formatação de planilha de alteração usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Usando as caixas de seleção para alterar a formatação. Para obter mais informações, confira [Passo a passo: Formatação de planilha de alteração usando controles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Adicionar controles dos Windows Forms a documentos do Office](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

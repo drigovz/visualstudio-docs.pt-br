@@ -13,30 +13,30 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418853"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Como: Mostrar a guia Desenvolvedor na faixa de opções
   Para acessar o **desenvolvedor** guia na faixa de opções de um aplicativo do Office, você deve configurá-lo para mostrar essa guia porque ela não aparece por padrão. Por exemplo, você deve mostrar essa guia se você deseja adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> para uma personalização no nível de documento para Word.
 
 > [!NOTE]
->  Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Acesso não tem um **desenvolvedor** guia.
+> Acesso não tem um **desenvolvedor** guia.
 
 ## <a name="to-show-the-developer-tab"></a>Para mostrar a guia do desenvolvedor
 
-1.  Inicie qualquer um dos aplicativos do Office suportados por este tópico. Consulte a **aplica-se a:** Observação no início deste tópico.
+1. Inicie qualquer um dos aplicativos do Office suportados por este tópico. Consulte a **aplica-se a:** Observação no início deste tópico.
 
-2.  Sobre o **arquivo** guia, escolha o **opções** botão.
+2. Sobre o **arquivo** guia, escolha o **opções** botão.
 
      A figura a seguir mostra a **arquivo** guia e **opções** botão no Office 2010.
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614656"
 
      ![O botão Opções no Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "botão as opções no Outlook 2013 Preview")
 
-3.  No _ApplicationName_**opções** caixa de diálogo, escolha o **personalizar faixa de opções** botão.
+3. No _ApplicationName_**opções** caixa de diálogo, escolha o **personalizar faixa de opções** botão.
 
      A figura a seguir mostra a **opções** caixa de diálogo e o **personalizar faixa de opções** botão no Excel 2010. O local deste botão é semelhante em todos os outros aplicativos listados na seção "Aplica-se a" próximo à parte superior deste tópico.
 
      ![O botão Personalizar fita](../vsto/media/vsto-office2010-customizeribbonbutton.png "botão a personalizar faixa de opções")
 
-4.  Na lista de guias principais, selecione a **desenvolvedor** caixa de seleção.
+4. Na lista de guias principais, selecione a **desenvolvedor** caixa de seleção.
 
      A figura a seguir mostra a **Developer** caixa de seleção no Word 2010 e [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. O local desta caixa de seleção é semelhante em todos os outros aplicativos listados na seção "Aplica-se a" próximo à parte superior deste tópico.
 
      ![A caixa de seleção na caixa de diálogo Opções do Word Developer](../vsto/media/vsto-office2010-developercheckbox.png "desenvolvedor a caixa de seleção na caixa de diálogo Opções do Word")
 
-5.  Escolha o **Okey** botão para fechar o **opções** caixa de diálogo.
+5. Escolha o **Okey** botão para fechar o **opções** caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

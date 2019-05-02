@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d97ff0b7e11bf79a8da6f3e034227c66ae1f9189
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24e7d3674712a17d940b94637db808c0d91d2d6a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982131"
 ---
 # <a name="vba-and-office-solutions-in-visual-studio-compared"></a>Soluções VBA e do Office no Visual Studio comparadas
   Microsoft Visual Basic for Applications (VBA) usa o código não gerenciado que está totalmente integrado com aplicativos do Office. Projetos do Microsoft Office criados usando o Visual Studio permitem que você aproveite o .NET Framework e as ferramentas de design do Visual Studio.
@@ -38,9 +38,9 @@ ms.locfileid: "56618322"
 
  Algumas coisas são ainda mais fácil de fazer rapidamente usando o VBA. Especificamente, você talvez queira continuar usando o VBA para:
 
--   Funções de planilha personalizado.
+- Funções de planilha personalizado.
 
--   Gravação de macros.
+- Gravação de macros.
 
 ## <a name="combine-vba-solutions-and-office-solutions-created-by-using-visual-studio"></a>Combinar soluções VBA e soluções do Office criadas usando o Visual Studio
  Você pode chamar o código VBA de soluções do Office criadas usando o Visual Studio, e você também pode chamar o código em soluções do Office criadas usando o Visual Studio do VBA. A técnica específica é diferente dependendo se sua solução do Office é um suplemento do VSTO ou uma personalização no nível de documento. Para obter mais informações, consulte [chamar o código de outras soluções do Office no VSTO Add-ins](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md) e [combinar VBA e personalizações no nível de documento](../vsto/combining-vba-and-document-level-customizations.md).

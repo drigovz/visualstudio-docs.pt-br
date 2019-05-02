@@ -1,14 +1,9 @@
 ---
 title: 'Como: Page Up ou para baixo na memória | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -27,18 +22,18 @@ ms.assetid: 50b30a68-66f6-43f8-a48b-59ce12c95471
 caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: d20c22e366736711f16fc17f56b2e81eea558948
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cc05772e6376dbe151d5ca71b9ee221e61a7be88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51769152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109589"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
+# <a name="how-to-page-up-or-down-in-memory"></a>Como: Mover para cima ou para baixo na memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando você exibe o conteúdo da memória em um **memória** janela ou o **desmontagem** janela, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  
+Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **Desmontagem**, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.  
   
 ### <a name="to-page-up-or-down-in-memory"></a>Para mover para cima ou para baixo na memória  
   
@@ -54,14 +49,9 @@ Quando você exibe o conteúdo da memória em um **memória** janela ou o **desm
   
 #### <a name="to-move-up-or-down-one-instruction"></a>Para mover para cima ou para baixo em uma instrução  
   
--   Clique na seta na parte superior ou inferior da barra de rolagem vertical.  
+- Clique na seta na parte superior ou inferior da barra de rolagem vertical.  
   
 ## <a name="see-also"></a>Consulte também  
- [Windows de memória](../debugger/memory-windows.md)   
- [Como: usar a janela de desmontagem](../debugger/how-to-use-the-disassembly-window.md)   
+ [Janelas de Memória](../debugger/memory-windows.md)   
+ [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md)   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)
-
-
-
-
-

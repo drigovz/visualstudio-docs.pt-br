@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3cc905e359d7bcb2946d627ebcb3c28067233fa0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910319"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>Expor eventos no SDK do Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] permite a fonte de eventos usando a automação. É recomendável que a fonte de eventos para projetos e itens de projeto.

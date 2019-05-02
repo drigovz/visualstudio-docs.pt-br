@@ -1,12 +1,9 @@
 ---
 title: Manipuladores de eventos propagam alterações fora do modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, events
@@ -14,13 +11,13 @@ ms.assetid: 0ac8d1e4-239f-4370-ba1d-3769bb38b8a5
 caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 7bfddc0903c520469833a0f160444202edf07c32
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49823691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059897"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +30,13 @@ No SDK de modelagem e visualização, você pode definir manipuladores de evento
   
 1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
   
-   -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
+   - `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
   
-   -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
+   - ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
   
         Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
   
-   -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
+   - `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
   
 2. Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
   
@@ -169,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Se você gravar um evento que atualiza o repositório:  
   
--   Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.  
+- Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.  
   
--   Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.  
+- Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.  
   
--   Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.  
+- Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.  
   
 ## <a name="store-event-types"></a>Tipos de evento Store  
  Cada tipo de evento corresponde a uma coleção em Store.EventManagerDirectory. Você pode adicionar ou remover manipuladores de eventos a qualquer momento, mas é comum o uso para adicioná-las quando o documento é carregado.  
@@ -194,7 +191,4 @@ private static void AlbumTitleAdjuster(object sender,
   
 ## <a name="see-also"></a>Consulte também  
  [Respondendo a alterações e propagando-](../modeling/responding-to-and-propagating-changes.md)   
- [Código de amostra: diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
-
-
-
+ [Exemplo de código: Diagramas de circuito](http://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

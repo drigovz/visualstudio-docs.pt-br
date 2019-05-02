@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ccce6d63e1cb96d4f4027bd13a4a4095e0e4248
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9fcad439c7f0633f75d2a7364e2d0d3bfb142f89
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994625"
 ---
 # <a name="domain-property-value-change-handlers"></a>Manipuladores de alteração de valor de propriedade de domínio
 
@@ -52,15 +52,15 @@ public partial class Comment
 
 Observe os seguintes pontos sobre os manipuladores de propriedades:
 
--   Os métodos do manipulador de propriedades são chamados, quando o usuário faz alterações em uma propriedade de domínio e quando o código do programa atribui um valor diferente para a propriedade.
+- Os métodos do manipulador de propriedades são chamados, quando o usuário faz alterações em uma propriedade de domínio e quando o código do programa atribui um valor diferente para a propriedade.
 
--   Os métodos são chamados apenas quando o valor muda. O manipulador não é invocado se o código do programa atribui um valor que é igual ao valor atual.
+- Os métodos são chamados apenas quando o valor muda. O manipulador não é invocado se o código do programa atribui um valor que é igual ao valor atual.
 
--   As propriedades de domínio de armazenamento calculadas e personalizadas não têm métodos OnValueChanged e OnValueChanging.
+- As propriedades de domínio de armazenamento calculadas e personalizadas não têm métodos OnValueChanged e OnValueChanging.
 
--   Você não pode usar um manipulador de alterações para modificar o novo valor. Se você quiser fazer isso, por exemplo, para restringir o valor de um determinado intervalo, defina uma `ChangeRule`.
+- Você não pode usar um manipulador de alterações para modificar o novo valor. Se você quiser fazer isso, por exemplo, para restringir o valor de um determinado intervalo, defina uma `ChangeRule`.
 
--   Você não pode adicionar um manipulador de alterações para uma propriedade que representa a função de um relacionamento. Em vez disso, defina uma `AddRule` e uma `DeleteRule` na classe de relação. Essas regras são disparadas quando você cria ou altera links. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
+- Você não pode adicionar um manipulador de alterações para uma propriedade que representa a função de um relacionamento. Em vez disso, defina uma `AddRule` e uma `DeleteRule` na classe de relação. Essas regras são disparadas quando você cria ou altera links. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
 ### <a name="changes-in-and-out-of-the-store"></a>Alterações dentro e fora do repositório
 

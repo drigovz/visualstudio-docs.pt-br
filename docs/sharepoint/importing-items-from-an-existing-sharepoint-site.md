@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444369"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site do SharePoint existente
   O modelo de projeto Importar pacote de solução do SharePoint permite a reutilização elementos como tipos de conteúdo e campos de sites do SharePoint existentes em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora seja possível executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar todos os itens após importá-los.
 
 > [!NOTE]
->  Para importar fluxos de trabalho reutilizáveis, use o modelo de projeto importar fluxo de trabalho reutilizável. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Para importar fluxos de trabalho reutilizáveis, use o modelo de projeto importar fluxo de trabalho reutilizável. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Soluções do SharePoint com suporte
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] totalmente compatível com a importação de soluções criadas no [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
@@ -119,9 +119,9 @@ ms.locfileid: "56645141"
 
  Quando você receber esse erro, o item não é criado. Esse problema geralmente ocorre com os módulos importados. Para evitar esse problema, faça o seguinte:
 
--   Use nomes curtos para seu projeto quando você inseri-los a **adicionar novo projeto** caixa de diálogo.
+- Use nomes curtos para seu projeto quando você inseri-los a **adicionar novo projeto** caixa de diálogo.
 
--   Crie o projeto em um local como próximo a pasta raiz quanto possível, para encurtar o caminho.
+- Crie o projeto em um local como próximo a pasta raiz quanto possível, para encurtar o caminho.
 
 ## <a name="the-sharepointproductversion-attribute"></a>O atributo SharePointProductVersion
  Se você importar uma solução criada em uma versão anterior do SharePoint, como [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] ou [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], altere o valor do atributo SharePointProductVersion no manifesto do pacote para a versão 12.0, ou inserir um controle de Gerenciador de script em todos os Web importada páginas e deixe SharePointProductVersion definido como 14.0. Caso contrário, Web forms importados não exibirá no SharePoint.

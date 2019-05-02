@@ -11,22 +11,22 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5cb2453d42517982cc1dd1e2a2f5c51814496392
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415525"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: Usar o log de atividades
 Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depurar os VSPackages em ambientes de varejo.
 
 > [!TIP]
->  O log de atividades está sempre ativado. O Visual Studio manterá um buffer progressivo das últimas 100 entradas, bem como as 10 primeiras entradas, o que tem informações de configuração geral.
+> O log de atividades está sempre ativado. O Visual Studio manterá um buffer progressivo das últimas 100 entradas, bem como as 10 primeiras entradas, o que tem informações de configuração geral.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para gravar uma entrada ao log de atividades
 
-1.  Inserir este código no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método ou em qualquer outro método, exceto no construtor de VSPackage:
+1. Inserir este código no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método ou em qualquer outro método, exceto no construtor de VSPackage:
 
     ```csharp
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;
@@ -40,7 +40,7 @@ Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especia
 
      Esse código obtém os <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de serviço e a converte para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> grava uma entrada informativa no log de atividades usando o contexto cultural atual.
 
-2.  Quando o VSPackage é carregado (normalmente, quando um comando é invocado ou uma janela é aberta), o texto é escrito para o log de atividades.
+2. Quando o VSPackage é carregado (normalmente, quando um comando é invocado ou uma janela é aberta), o texto é escrito para o log de atividades.
 
 ## <a name="to-examine-the-activity-log"></a>Para examinar o log de atividades
 

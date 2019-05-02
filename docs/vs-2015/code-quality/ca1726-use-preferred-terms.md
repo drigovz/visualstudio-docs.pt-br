@@ -1,14 +1,9 @@
 ---
-title: 'CA1726: Usar termos preferenciais | Microsoft Docs'
-ms.custom: ''
+title: 'CA1726: Use termos preferenciais | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UsePreferredTerms
 - CA1726
@@ -19,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c17514d00be7b0a3303b1c5bf703702fe564e0d1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220513"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664106"
 ---
-# <a name="ca1726-use-preferred-terms"></a>CA1726: usar termos preferenciais
+# <a name="ca1726-use-preferred-terms"></a>CA1726: Usar termos preferenciais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726: usar termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1726: Use termos preferenciais](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -46,30 +41,30 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726
   
 |Termo obsoleto|Termo preferencial|  
 |-------------------|--------------------|  
-|não são|Não são|  
-|Cancelada|Cancelado|  
-|Não é possível|Não é possível|  
-|ComPlus|EnterpriseServices|  
-|Não foi possível|Não foi|  
-|Didnt|DidNot|  
-|Doesnt|Não|  
-|Não|Não|  
-|Sinalizador ou sinalizadores|Não há nenhum termo de substituição. Não use.|  
-|não tinha|HadNot|  
-|Ainda não|HasNot|  
-|ainda não|HaveNot|  
-|Índices|Índices|  
-|não é|IsNot|  
-|Logon|LogOn|  
-|Logoff|Fazer LogOff|  
-|Shouldnt|ShouldNot|  
-|Logon|Entrar|  
-|Aprovação|SignOut|  
-|Wasnt|WasNot|  
-|não foram|Não foram|  
-|Não quer|Vai|  
-|Wouldnt|WouldNot|  
-|Gravável|Gravável|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` ou `Flags`|Não há nenhum termo de substituição. Não use.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Para corrigir uma violação dessa regra, substitua o termo com o termo preferencial de alternativo.  
@@ -79,4 +74,3 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [CA1726
   
 ## <a name="related-rules"></a>Regras relacionadas  
  [Avisos de Nomenclatura](../code-quality/naming-warnings.md)
-

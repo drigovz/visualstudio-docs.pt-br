@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537635"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 
@@ -49,11 +49,11 @@ Métodos com argumentos chamados **TargetObject** ou **resultado** não pode ser
 
 O algoritmo para registrar os parâmetros em <xref:System.Activities.Activity.CacheMetadata%2A> é mostrado na lista a seguir:
 
-1.  Argumento de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> do registro.
+1. Argumento de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> do registro.
 
-2.  Argumento de <xref:System.Activities.Statements.InvokeMethod.Result%2A> do registro.
+2. Argumento de <xref:System.Activities.Statements.InvokeMethod.Result%2A> do registro.
 
-3.  Iterar através da coleção de <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> e registrar cada argumento.
+3. Iterar através da coleção de <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> e registrar cada argumento.
 
 A exceção resultante é do tipo <xref:System.Activities.InvalidWorkflowException> com a seguinte mensagem: 'InvokeMethod': Uma variável, RuntimeArgument ou um DelegateArgument já existe com o nome "TargetObject". Nomes devem ser exclusivos dentro do escopo de ambiente.
 

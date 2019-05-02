@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908012"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo de console que usa um arquivo. XML que representa as cores de temas do Visual Studio existentes e converte-o para um. pkgdef arquivo para que essas cores podem ser usados no Visual Studio. Como é fácil comparar as diferenças entre arquivos. XML, essa ferramenta é útil para o gerenciamento de cores personalizadas no controle de origem. Ele também pode ser conectado em ambientes de compilação para que a saída da compilação é um arquivo. pkgdef válido.
@@ -111,7 +111,7 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|
 |**Atributo**|**Definição**|
 |Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* Um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|
-|Origem|[Obrigatório] O valor da cor em hexadecimal|
+|Source|[Obrigatório] O valor da cor em hexadecimal|
 
  Todos os valores com suporte pela enumeração __VSCOLORTYPE são compatíveis com o esquema no atributo de tipo. No entanto, é recomendável que você use apenas CT_RAW e CT_SYSCOLOR.
 
@@ -149,15 +149,15 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 
  **Exemplos**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   VsixColorCompiler D:\xml\colors.xml /noLogo
+- VsixColorCompiler D:\xml\colors.xml /noLogo
 
 ## <a name="notes"></a>Observações
 
--   Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.
+- Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.
 
--   Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.
+- Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.
 
 ## <a name="sample-output"></a>Saída de exemplo
  O arquivo. pkgdef gerado pela ferramenta será semelhante ao abaixo de chaves:

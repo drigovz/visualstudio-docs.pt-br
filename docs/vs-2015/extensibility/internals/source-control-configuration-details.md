@@ -1,37 +1,32 @@
 ---
 title: Detalhes de configuração de controle de origem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], configuration details
 ms.assetid: adbee9fc-7a2e-4abe-a3b8-e6615bcd797f
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 55e2364ca096b5329369e51ccdadf07f191720e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 5faa0ce575647038ac5ac7839b6dc066b7b51ce6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432061"
 ---
 # <a name="source-control-configuration-details"></a>Detalhes de configuração de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Para implementar o controle do código-fonte, você precisa configurar corretamente o sistema de projeto ou o editor para fazer o seguinte:  
   
--   Solicitar permissão para fazer a transição para estado alterado  
+- Solicitar permissão para fazer a transição para estado alterado  
   
--   Solicitar permissão para salvar um arquivo  
+- Solicitar permissão para salvar um arquivo  
   
--   Solicitar permissão para adicionar, remover ou renomear arquivos no projeto  
+- Solicitar permissão para adicionar, remover ou renomear arquivos no projeto  
   
 ## <a name="request-permission-to-transition-to-changed-state"></a>Solicitar permissão para fazer a transição para estado alterado  
  Um editor ou projeto deve solicitar permissão para fazer a transição para o estado de alteração (sujo) chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Cada editor que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e receber aprovação para alterar o documento do ambiente antes de retornar `True` para `M:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty(System.Int32@)`. Um projeto é essencialmente um editor para um arquivo de projeto e tem como resultado, a responsabilidade de mesma para implementar o acompanhamento de estado alterado para o arquivo de projeto como um editor de texto faz para seus arquivos. O ambiente manipula o estado alterado da solução, mas você deve lidar com o estado de alteração de qualquer objeto na solução faz referência, mas não armazena, como um arquivo de projeto ou seus itens. Em geral, se seu projeto ou o editor é responsável por gerenciar a persistência para um item, é responsável por implementar o acompanhamento de estado alterado.  
@@ -48,7 +43,7 @@ Para implementar o controle do código-fonte, você precisa configurar corretame
  Antes de um editor ou projeto salva um arquivo, ele deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Para arquivos de projeto, essas chamadas são concluídas automaticamente pela solução, que saiba quando salvar um arquivo de projeto. Editores são responsáveis por fazer essas chamadas, a menos que a implementação do editor de `IVsPersistDocData2` usa a função auxiliar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Se o editor implementa `IVsPersistDocData2` dessa maneira e, em seguida, a chamada para `IVsQueryEditQuerySave2::QuerySaveFile` ou `IVsQueryEditQuerySave2::QuerySaveFiles` é feita para você.  
   
 > [!NOTE]
->  Sempre fazer essas chamadas preventivamente — ou seja, quando o editor for capaz de receber um cancelamento.  
+> Sempre fazer essas chamadas preventivamente — ou seja, quando o editor for capaz de receber um cancelamento.  
   
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Solicitar permissão para adicionar, remover ou renomear arquivos no projeto  
  Antes de um projeto pode adicionar, renomear ou remover um arquivo ou diretório, deve chamar apropriado `IVsTrackProjectDocuments2::OnQuery*` método solicitar permissão do ambiente. Se a permissão é concedida, o projeto deve concluir a operação e, em seguida, chamar o `IVsTrackProjectDocuments2::OnAfter*` método para notificar o ambiente de que a operação foi concluída. O projeto deve chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface para todos os arquivos (por exemplo, arquivos especiais) e não apenas os arquivos do pai. Chamadas de arquivo são obrigatórias, mas as chamadas de diretório são opcionais. Se seu projeto tiver informações de diretório, ele deverá chamar apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos, mas se ele não tiver essas informações, o ambiente irá inferir informações de diretório.  
@@ -65,4 +60,3 @@ Para implementar o controle do código-fonte, você precisa configurar corretame
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>   
  <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments>   
  [Oferecer suporte ao controle do código-fonte](../../extensibility/internals/supporting-source-control.md)
-

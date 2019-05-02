@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como os administradores podem lidar com assinaturas expiradas do Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: c0afcd89c004c3b3aedccad72719f84f1045c8b9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 3008f570c32970de2764871132e3ddde3dda226c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945791"
 ---
 # <a name="handling-expired-subscriptions"></a>Tratando assinaturas expiradas
 
@@ -21,7 +21,7 @@ Quando a assinatura de um usuário expira, aparece uma indicação no portal, at
 > ![Lista de assinaturas expiradas](_img/expired-subscriptions/expired-list.png)
 
 **Para renovar assinaturas**
-1.  Contate seu revendedor de licenciamento por volume ou o vendedor da Microsoft.
-2.  Você deverá fornecê-los o Número do contrato e o Número da conta de compra.
+1. Contate seu revendedor de licenciamento por volume ou o vendedor da Microsoft.
+2. Você deverá fornecê-los o Número do contrato e o Número da conta de compra.
 
 O revendedor ou o vendedor da Microsoft orientará no processo de renovação ou de compra de assinaturas adicionais. Depois que o pedido for feito ou o contrato for renovado, as novas assinaturas serão disponibilizadas e poderão ser [atribuídas aos assinantes](assign-license.md).

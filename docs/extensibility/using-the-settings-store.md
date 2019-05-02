@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434178"
 ---
 # <a name="using-the-settings-store"></a>Usar o repositório de configurações
 Há dois tipos de repositórios de configurações:
@@ -77,11 +77,11 @@ Há dois tipos de repositórios de configurações:
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Usar um editor do registro para verificar as definições de configuração
 
-1.  Abra Regedit.exe.
+1. Abra Regedit.exe.
 
-2.  Navegue até HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
+2. Navegue até HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
-    >  Certifique-se de que você está vendo a chave que contém \14.0Exp_Config\ e não \14.0_Config\\. Quando você executa a instância experimental do Visual Studio, as configurações estão na seção do Registro "14.0Exp_Config".
+    > Certifique-se de que você está vendo a chave que contém \14.0Exp_Config\ e não \14.0_Config\\. Quando você executa a instância experimental do Visual Studio, as configurações estão na seção do Registro "14.0Exp_Config".
 
-3.  Expanda o nó \Installed Products\. Se a mensagem nas etapas anteriores for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: True**, em seguida, \Installed Products\ deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone. Se a mensagem for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: False**, em seguida, \Installed Products\ não deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone.
+3. Expanda o nó \Installed Products\. Se a mensagem nas etapas anteriores for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: True**, em seguida, \Installed Products\ deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone. Se a mensagem for **instalado de ferramentas de desenvolvedor do Microsoft Windows Phone: False**, em seguida, \Installed Products\ não deve conter um nó de ferramentas de desenvolvedor do Microsoft Windows Phone.

@@ -1,14 +1,9 @@
 ---
-title: 'Como: definir um nome de Thread em código nativo | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Definir um nome de Thread em código nativo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -24,15 +19,15 @@ ms.assetid: c85d0968-9f22-4d69-87f4-acca2ae777b8
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: f0486d122dc9c2f84e58029e0eafedc5c1895260
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 37554c8ba72257ee78b219774425c7e8acb305a2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798528"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58929336"
 ---
-# <a name="how-to-set-a-thread-name-in-native-code"></a>Como definir um nome de thread em código nativo
+# <a name="how-to-set-a-thread-name-in-native-code"></a>Como: Definir um nome de thread em código nativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para definir um nome de thread em seu programa, use a função `SetThreadName`, conforme mostrado no exemplo de código a seguir. Observe que o nome do thread é copiado para o thread de forma que a memória para o parâmetro `threadName` possa ser liberada.  
@@ -73,9 +68,6 @@ void SetThreadName(DWORD dwThreadID, const char* threadName) {
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Depurar aplicativos multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
+ [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   
- [Como definir um nome de thread em código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)
-
-
-
+ [Como: Definir o nome de um thread no código gerenciado](../debugger/how-to-set-a-thread-name-in-managed-code.md)

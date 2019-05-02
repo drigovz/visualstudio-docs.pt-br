@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792212"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações de Build Avançadas (C#)
 
@@ -75,7 +75,7 @@ Especifica o tipo de informações de depuração geradas pelo compilador. Para 
 
    Permite a depuração de código-fonte quando o programa é iniciado no depurador, mas apenas exibirá o assembler quando o programa em execução estiver anexado ao depurador.
 
--  **portátil**
+- **portátil**
 
    Produz um arquivo PDB, um arquivo de símbolo portátil e não específico da plataforma que fornece outras ferramentas, especialmente depuradores, informações sobre o que está no arquivo executável principal e como ele foi produzido. Consulte [PDB portátil](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md) para obter mais informações.
 

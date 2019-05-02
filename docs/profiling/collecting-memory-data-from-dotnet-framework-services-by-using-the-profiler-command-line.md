@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d39a81bbf504a36d65b86ffa35901eeaf1b0916b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831649"
 ---
 # <a name="collect-memory-data-from-net-framework-services-by-using-the-profiler-command-line"></a>Coletar dados de memória por meio de serviços do .NET Framework usando a linha de comando do criador de perfil
 Esta seção descreve os procedimentos e as opções para coletar alocação de memória e dados de tempo de vida do objeto para um serviço [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando o método de amostragem na linha de comando.

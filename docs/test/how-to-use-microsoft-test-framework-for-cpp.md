@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ac55d7513fd6670e30c9fa2097a5d38a96a92e26
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970339"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
 O Microsoft Unit Testing Framework para C/C++ está incluído por padrão na carga de trabalho **Desenvolvimento de Área de Trabalho com C++**.
 
-##  <a name="separate_project"></a> Gravar testes de unidade em um projeto separado
+## <a name="separate_project"></a> Gravar testes de unidade em um projeto separado
 
 Normalmente, o código de teste é executado no próprio projeto na mesma solução que o código que você deseja testar. Para instalar e configurar um novo projeto de teste, consulte [Gravar testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Gravar testes de unidade no mesmo projeto
+## <a name="same_project"></a> Gravar testes de unidade no mesmo projeto
 
 Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, será necessário criar os testes no mesmo projeto do programa que você está testando. Gravar testes de unidade no mesmo projeto:
 
@@ -30,18 +30,16 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, se
 
    1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto do programa que você está testando e, em seguida, escolha **Propriedades** > **Propriedades de Configuração** > **Diretórios VC++**.
 
-   2. Clique na seta para baixo nas linhas a seguir e escolha **<Edit>**:
-
+   2. Clique na seta para baixo nas linhas a seguir e escolha **\<Editar>**:
 
       | Diretório | Propriedade |
       |-| - |
       | **Incluir Diretórios** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Diretórios de Biblioteca** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Adicione um arquivo de teste de unidade C++:
 
-   -   No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
+   - No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
 
 ## <a name="write-the-tests"></a>Gravar os testes
 

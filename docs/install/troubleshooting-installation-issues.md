@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de instalação ou de atualização
 description: Às vezes, as coisas podem dar errado. Se a instalação ou atualização do Visual Studio falhar, esta página poderá ajudar.
-ms.date: 08/01/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -13,14 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9f42cb9cc506a47432397bc0135d2bd3123bcf7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997460"
 ---
-# <a name="troubleshoot-visual-studio-2017-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio 2017
+# <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
 
 > [!IMPORTANT]
 > Está com problema para instalar? Podemos ajudá-lo. Oferecemos um [**chat ao vivo**](https://visualstudio.microsoft.com/vs/support/#talktous) a opção de suporte (apenas em inglês).
@@ -33,7 +35,17 @@ As etapas a seguir são otimizadas para uma instalação online típica. Para um
 
 ### <a name="step-1---check-whether-this-problem-is-a-known-issue"></a>Etapa 1: verificar se esse é um problema conhecido
 
+::: moniker range="vs-2017"
+
 Existem alguns problemas conhecidos com o instalador do Visual Studio que a Microsoft está trabalhando para corrigir. Para saber se há uma solução para o problema, consulte [a seção Problemas Conhecidos das nossas notas de versão](/visualstudio/releasenotes/vs2017-relnotes#-known-issues).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Existem alguns problemas conhecidos com o instalador do Visual Studio que a Microsoft está trabalhando para corrigir. Para saber se há uma solução para o problema, consulte [a seção Problemas Conhecidos das nossas notas de versão](/visualstudio/releases/2019/release-notes#-known-issues).
+
+::: moniker-end
 
 ### <a name="step-2---check-with-the-developer-community"></a>Etapa 2: conferir com a comunidade de desenvolvedores
 
@@ -46,20 +58,47 @@ O bootstrapper de instalação do Visual Studio é um executável leve mínimo q
 > [!NOTE]
 > Executar as seguintes ações reinstalará os arquivos do Instalador do Visual Studio e redefinirá os metadados de instalação.
 
+::: moniker range="vs-2017"
+
 1. Fechar o instalador do Visual Studio.
 2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) e clicando em **Baixar** para sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
+3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) e clicando em **Baixar** para sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
 4. Tente instalar ou atualizar o Visual Studio. Se o Instalador continuar a falhar, vá para a próxima etapa.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Fechar o instalador do Visual Studio.
+2. Exclua o diretório de instalação do Visual Studio. Normalmente, o diretório é `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
+3. Execute o bootstrapper de instalação do Visual Studio. Você pode encontrar o bootstrapper na pasta Downloads com um nome de arquivo que segue um padrão `vs_[Visual Studio edition]__*.exe`. Se não encontrar esse aplicativo, você poderá baixar o bootstrapper indo para a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) e clicando em **Baixar** para sua edição do Visual Studio. Em seguida, execute o arquivo executável para redefinir os metadados de instalação.
+4. Tente instalar ou atualizar o Visual Studio. Se o Instalador continuar a falhar, vá para a próxima etapa.
+
+::: moniker-end
 
 ### <a name="step-4---report-a-problem"></a>Etapa 4 - relatar um problema
 
 Em algumas situações, como aquelas relacionadas a arquivos corrompidos, os problemas talvez precisem ser resolvidos caso a caso. Para que possamos ajudá-lo, faça o seguinte:
+
+::: moniker range="vs-2017"
 
 1. Colete os logs de configuração. Para saber mais detalhes, consulte [Como obter os logs de instalação do Visual Studio](#how-to-get-visual-studio-installation-logs).
 2. Abra o instalador do Visual Studio e clique em **Relatar um problema** para abrir a ferramenta de comentários do Visual Studio.
 ![Você pode pressionar Tab até acessar o botão Fornecer Comentários para abrir a ferramenta de comentários](media/report-a-problem.png)
 3. Dê um título ao relatório de problemas e forneça detalhes relevantes. Clique em **Avançar** para ir até a seção **Anexos** e anexar o arquivo de log gerado (normalmente, o arquivo está em `%TEMP%\vslogs.zip`).
 4. Clique em **Avançar** para examinar o relatório de problemas e clique em **Enviar**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Colete os logs de configuração. Para saber mais detalhes, consulte [Como obter os logs de instalação do Visual Studio](#how-to-get-visual-studio-installation-logs).
+2. Abra o instalador do Visual Studio e clique em **Relatar um problema** para abrir a ferramenta de comentários do Visual Studio.
+![Você pode pressionar Tab até acessar o botão Fornecer Comentários para abrir a ferramenta de comentários](media/vs-2019/vs-installer-report-problem.png)
+3. Dê um título ao relatório de problemas e forneça detalhes relevantes. Clique em **Avançar** para ir até a seção **Anexos** e anexar o arquivo de log gerado (normalmente, o arquivo está em `%TEMP%\vslogs.zip`).
+4. Clique em **Avançar** para examinar o relatório de problemas e clique em **Enviar**.
+
+::: moniker-end
 
 ### <a name="step-5---run-installcleanupexe-to-remove-installation-files"></a>Etapa 5 – Executar InstallCleanup.exe para remover os arquivos de instalação
 
@@ -86,7 +125,7 @@ Vejamos uma tabela de problemas conhecidos e algumas soluções alternativas que
 
 Os logs de instalação são necessários para solucionar a maioria dos problemas de instalação. Quando você enviar um problema usando [Relatar um Problema](../ide/how-to-report-a-problem-with-visual-studio.md) no Instalador do Visual Studio, esses logs serão incluídos automaticamente no relatório.
 
-Caso contate o Suporte da Microsoft, talvez você precise fornecer esses logs de configuração usando a [Ferramenta de Coleta de Log do .NET Framework e o Microsoft Visual Studio](https://aka.ms/vscollect). A ferramenta de coleta de log coleta os logs de configuração de todos os componentes instalados pelo Visual Studio 2017, incluindo .NET Framework, SDK do Windows e SQL Server. Ela também coleta informações do computador, um inventário do Windows Installer e as informações de log de eventos do Instalador do Visual Studio, Windows Installer e Restauração do Sistema.
+Caso contate o Suporte da Microsoft, talvez você precise fornecer esses logs de configuração usando a [Ferramenta de Coleta de Log do .NET Framework e o Microsoft Visual Studio](https://aka.ms/vscollect). A ferramenta de coleta de log coleta os logs de configuração de todos os componentes instalados pelo Visual Studio, incluindo .NET Framework, SDK do Windows e SQL Server. Ela também coleta informações do computador, um inventário do Windows Installer e as informações de log de eventos do Instalador do Visual Studio, Windows Installer e Restauração do Sistema.
 
 Para coletar os logs:
 
@@ -104,7 +143,7 @@ Se as soluções listadas neste guia de solução de problemas não ajudarem a i
 
 ## <a name="see-also"></a>Consulte também
 
-* [Remover o Visual Studio 2017](remove-visual-studio.md)
+* [Remover o Visual Studio](remove-visual-studio.md)
 * [Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)

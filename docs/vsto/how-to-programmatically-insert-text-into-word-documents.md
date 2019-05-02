@@ -16,24 +16,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2c81a0da3c60bc9b3cfaec357dab0fe2bb33706
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412584"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: Programaticamente, inserir texto em documentos do Word
   Há três formas principais para inserir texto em documentos do Microsoft Office Word:
 
--   Inserir texto em um intervalo.
+- Inserir texto em um intervalo.
 
--   Substitua o texto em um intervalo com o novo texto.
+- Substitua o texto em um intervalo com o novo texto.
 
--   Use o <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> método de um <xref:Microsoft.Office.Interop.Word.Selection> objeto a ser inserido texto na seleção ou cursor.
+- Use o <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> método de um <xref:Microsoft.Office.Interop.Word.Selection> objeto a ser inserido texto na seleção ou cursor.
 
 > [!NOTE]
->  Você também pode inserir texto em controles de conteúdo e indicadores. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md) e [controle do indicador](../vsto/bookmark-control.md).
+> Você também pode inserir texto em controles de conteúdo e indicadores. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md) e [controle do indicador](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "56654016"
 
 ### <a name="to-insert-text-in-a-range"></a>Para inserir texto em um intervalo
 
-1.  Especifique um intervalo no início de um documento e inserir o texto **novo texto**.
+1. Especifique um intervalo no início de um documento e inserir o texto **novo texto**.
 
      O exemplo de código a seguir pode ser usado em uma personalização no nível de documento.
 
@@ -54,7 +54,7 @@ ms.locfileid: "56654016"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#51)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#51](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#51)]
 
-2.  Selecione o <xref:Microsoft.Office.Interop.Word.Range> objeto, que foi expandida de um caractere para o comprimento do texto inserido.
+2. Selecione o <xref:Microsoft.Office.Interop.Word.Range> objeto, que foi expandida de um caractere para o comprimento do texto inserido.
 
      [!code-vb[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#52)]
      [!code-csharp[Trin_VstcoreWordAutomation#52](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#52)]
@@ -64,7 +64,7 @@ ms.locfileid: "56654016"
 
 ### <a name="to-replace-text-in-a-range"></a>Para substituir o texto em um intervalo
 
-1.  Criar um <xref:Microsoft.Office.Interop.Word.Range> objeto que consiste em 12 primeiros caracteres no documento.
+1. Criar um <xref:Microsoft.Office.Interop.Word.Range> objeto que consiste em 12 primeiros caracteres no documento.
 
      O exemplo de código a seguir pode ser usado em uma personalização no nível de documento.
 
@@ -76,12 +76,12 @@ ms.locfileid: "56654016"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#53)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#53](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#53)]
 
-2.  Substitua esses caracteres com a cadeia de caracteres **novo texto**.
+2. Substitua esses caracteres com a cadeia de caracteres **novo texto**.
 
      [!code-vb[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#54)]
      [!code-csharp[Trin_VstcoreWordAutomation#54](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#54)]
 
-3.  Selecione o intervalo.
+3. Selecione o intervalo.
 
      [!code-vb[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#55)]
      [!code-csharp[Trin_VstcoreWordAutomation#55](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#55)]

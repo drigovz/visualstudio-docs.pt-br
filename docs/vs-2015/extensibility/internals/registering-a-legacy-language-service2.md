@@ -1,14 +1,9 @@
 ---
 title: Registrando uma função de linguagem herdado2 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, language services
 - language services, registry information
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ca312aa3-f9f1-4572-8553-89bf3a724deb
 caps.latest.revision: 25
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: c9077ca36a560c51ec8f8455cc04fb2fe9ba09eb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803650"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926623"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,9 +31,9 @@ As seções a seguir fornecem listas de entradas do registro para o idioma de v�
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
-|(Padrão)|REG_SZ|*\<GUID &GT;*|GUID do serviço de linguagem.|  
+|(Padrão)|REG_SZ|*\<GUID>*|GUID do serviço de linguagem.|  
 |LangResID|REG_DWORD|0x0 0xffff|O identificador de recurso (ResID) para o nome de texto localizado da linguagem de cadeia de caracteres.|  
-|Pacote|REG_SZ|*\<GUID &GT;*|GUID do VSPackage.|  
+|Pacote|REG_SZ|*\<GUID>*|GUID do VSPackage.|  
 |ShowCompletion|REG_DWORD|0-1|Especifica se o **preenchimento de declaração** opções na **opções** caixa de diálogo estão habilitados.|  
 |ShowSmartIndent|REG_DWORD|0-1|Especifica se a opção de selecionar **inteligente** recuo na **opções** caixa de diálogo está habilitada.|  
 |RequestStockColors|REG_DWORD|0-1|Especifica se personalizados ou as cores padrão são usadas para colorir as palavras-chave.|  
@@ -92,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
-|(Padrão)|REG_SZ|resID|O nome de exibição localizado dessa página de opção. O nome pode ser texto literal ou #`nnn`, onde `nnn` é uma ID de recurso de cadeia de caracteres na DLL do VSPackage especificado satélite.|  
+|(Padrão)|REG_SZ|ResID|O nome de exibição localizado dessa página de opção. O nome pode ser texto literal ou #`nnn`, onde `nnn` é uma ID de recurso de cadeia de caracteres na DLL do VSPackage especificado satélite.|  
 |Pacote|REG_SZ|*GUID*|O GUID do VSPackage que implementa essa página de opções.|  
 |Página|REG_SZ|*GUID*|O GUID da página de propriedades para solicitar de VSPackage, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Se essa entrada do registro não estiver presente, a chave do registro descreve um nó, não uma página.|  
   
@@ -145,10 +140,10 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Padrão)|REG_SZ|""|Não utilizado; Você pode colocar seu nome aqui para obter a documentação.|  
 |DefaultToolboxTab|REG_SZ|""|Nome da guia da caixa de ferramentas para tornar o padrão quando o editor está ativo.|  
-|DisplayName|REG_SZ|resID|Nome para exibir o **abrir com** caixa de diálogo. O nome é a ID de recurso de cadeia de caracteres ou um nome no formato padrão.|  
+|DisplayName|REG_SZ|ResID|Nome para exibir o **abrir com** caixa de diálogo. O nome é a ID de recurso de cadeia de caracteres ou um nome no formato padrão.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Usado para o **abrir com** comando de menu. Se você não quiser listar o editor de texto padrão na lista de editores disponíveis para um tipo de arquivo específico, defina esse valor como 1.|  
-|LinkedEditorGUID|REG_SZ|*\<GUID &GT;*|Usado para qualquer serviço de linguagem que pode abrir um arquivo com suporte da página de código. Por exemplo, quando você abre um arquivo. txt usando o **abrir com** de comando, as opções são fornecidas para usar o editor de código fonte com e sem codificação.<br /><br /> O GUID especificado no nome da subchave destina-se a fábrica do editor de página de código; é o GUID vinculado especificado nesta entrada de registro específicas para a fábrica de editor regular. A finalidade desta entrada é que se o IDE não abrir um arquivo usando o editor padrão, o IDE tentará usar o editor de Avançar na lista. Este editor próxima não deve ser a fábrica do editor de página de código porque esta fábrica de editor é basicamente o mesmo que a fábrica do editor que falhou.|  
-|Pacote|REG_SZ|*\<GUID &GT;*|VSPackage GUID para ResID do nome de exibição.|  
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|Usado para qualquer serviço de linguagem que pode abrir um arquivo com suporte da página de código. Por exemplo, quando você abre um arquivo. txt usando o **abrir com** de comando, as opções são fornecidas para usar o editor de código fonte com e sem codificação.<br /><br /> O GUID especificado no nome da subchave destina-se a fábrica do editor de página de código; é o GUID vinculado especificado nesta entrada de registro específicas para a fábrica de editor regular. A finalidade desta entrada é que se o IDE não abrir um arquivo usando o editor padrão, o IDE tentará usar o editor de Avançar na lista. Este editor próxima não deve ser a fábrica do editor de página de código porque esta fábrica de editor é basicamente o mesmo que a fábrica do editor que falhou.|  
+|Pacote|REG_SZ|*\<GUID>*|VSPackage GUID para ResID do nome de exibição.|  
   
 ### <a name="example"></a>Exemplo  
   
@@ -169,7 +164,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
 |(Padrão)|REG_SZ||Não utilizado.|  
-|*\<GUID &GT;*|REG_SZ|""|Chave para os modos de exibição lógicos tem suportada. Você pode ter quantos desses conforme necessário. O nome da entrada do registro é o que é importante, não o valor, que é sempre uma cadeia de caracteres vazia.|  
+|*\<GUID>*|REG_SZ|""|Chave para os modos de exibição lógicos tem suportada. Você pode ter quantos desses conforme necessário. O nome da entrada do registro é o que é importante, não o valor, que é sempre uma cadeia de caracteres vazia.|  
   
 ### <a name="example"></a>Exemplo  
   
@@ -191,7 +186,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
 |(Padrão)|REG_SZ||Não utilizado.|  
-|*\<ext >*|REG_DWORD|0-0xffffffff|Prioridade relativa de extensões. Se dois ou mais idiomas compartilham a mesma extensão, o idioma de prioridade mais alta será escolhido.|  
+|*\<ext>*|REG_DWORD|0-0xffffffff|Prioridade relativa de extensões. Se dois ou mais idiomas compartilham a mesma extensão, o idioma de prioridade mais alta será escolhido.|  
   
  Além disso, a seleção de padrão do usuário atual para um editor é armazenada no HKEY_Current_User\Software\Microsoft\VisualStudio\\*x. y*\Default editores\\*ext*. O GUID do serviço de linguagem selecionada é na entrada personalizada. Isso tem precedência para o usuário atual.  
   
@@ -246,4 +241,3 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 ## <a name="see-also"></a>Consulte também  
  [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)
-

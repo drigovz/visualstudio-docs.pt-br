@@ -44,7 +44,7 @@ sections:
             html: <p></p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Depure um serviço de nuvem no Azure
+            title: Depurar um perfil de serviço de nuvem no Azure
           - href: vs-azure-tools-debug-cloud-services-virtual-machines.md
             html: <p></p>
             image:

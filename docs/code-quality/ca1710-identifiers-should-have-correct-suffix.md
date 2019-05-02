@@ -1,6 +1,6 @@
 ---
 title: 'CA1710: Identificadores devem ter um sufixo correto'
-ms.date: 11/04/2016
+ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
 - CA1710
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3c602c249c7507d516e74c32f2d4db8447b645
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 65ac417476752da832e5e9ebe693f6c83a5c1cfe
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797412"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identificadores devem ter um sufixo correto
 
@@ -33,6 +33,8 @@ ms.locfileid: "55944449"
 ## <a name="cause"></a>Causa
 
 Um identificador não tem o sufixo correto.
+
+Por padrão, essa regra olha apenas identificadores visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -90,6 +92,16 @@ Renomear o tipo, de modo que ele é sufixado com o termo correto.
 É seguro suprimir um aviso para usar o sufixo 'Collection' se o tipo é uma estrutura de dados generalizado que pode ser estendida ou que conterá um conjunto arbitrário de diversos itens. Nesse caso, um nome que forneça informações significativas sobre a implementação, desempenho ou outras características da estrutura de dados pode fazer sentido (por exemplo, BinaryTree). Em casos em que o tipo representa uma coleção de um tipo específico (por exemplo, StringCollection), não suprima um aviso nessa regra porque o sufixo indica que o tipo pode ser enumerado usando um `foreach` instrução.
 
 Para outros sufixos, não suprima um aviso nessa regra. O sufixo permite que o uso pretendido seja evidente, o nome de tipo.
+
+## <a name="configurability"></a>Capacidade de configuração
+
+Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+
+```
+dotnet_code_quality.ca1710.api_surface = private, internal
+```
+
+Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 

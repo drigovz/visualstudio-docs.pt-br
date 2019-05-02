@@ -1,5 +1,5 @@
 ---
-title: 'Como: iniciar o Spy + + | Microsoft Docs'
+title: 'Como: Iniciar o Spy + + | Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,28 +10,28 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387522"
 ---
-# <a name="how-to-start-spy"></a>Como iniciar Spy++
+# <a name="how-to-start-spy"></a>Como: Iniciar Spy++
 
 Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
 
  Ao iniciar o Spy + +, se uma mensagem é exibida para solicitar permissão para fazer alterações no computador, selecione **Sim**.
 
 > [!NOTE]
->  Você pode executar apenas uma instância do Spy + +. Se você tentar iniciar uma segunda instância, ele apenas faz com que a instância em execução no momento obter o foco.
+> Você pode executar apenas uma instância do Spy + +. Se você tentar iniciar uma segunda instância, ele apenas faz com que a instância em execução no momento obter o foco.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Spy + + requer os seguintes componentes. Você pode selecionar esses componentes do instalador do Visual Studio, selecionando o **componentes individuais** guia e, em seguida, selecionando os componentes a seguir.
 
-* Em depuração e testes, selecione **C++ ferramentas de criação de perfil**
-* Em atividades de desenvolvimento, selecione **recursos principais do C++ do Visual Studio**
+* Em depuração e testes, selecione  **C++ ferramentas de criação de perfil**
+* Em atividades de desenvolvimento, selecione **Visual Studio C++ recursos principais**
 
 Se você tiver feito alterações, siga os prompts para instalar esses componentes.
 
@@ -42,13 +42,13 @@ Sobre o **ferramentas** menu, selecione **Spy + +**.
 Como o Spy + + é executado de forma independente, depois de iniciada, você pode fechar o Visual Studio.
 
 > [!NOTE]
->  Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.
+> Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Iniciar o Spy + + em um prompt de comando
 
-1.  Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho para essa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.
+1. Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho para essa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.
 
-2.  Insira **spyxx.exe**.
+2. Insira **spyxx.exe**.
 
 ## <a name="see-also"></a>Consulte também
 - [Usando Spy++](../debugger/using-spy-increment.md)

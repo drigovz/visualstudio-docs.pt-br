@@ -1,21 +1,21 @@
 ---
 title: Como caminhos de pesquisa de Python são aplicados
 description: O Visual Studio fornece um meio mais específico para especificar caminhos de pesquisa para ambientes e projetos para evitar o uso de variáveis em todo o sistema.
-ms.date: 11/12/2018
+ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4befbce86d05fc9e3c52247ed71abc8c5ca5e6a6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428418"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Como o Visual Studio usa caminhos de pesquisa de Python
 
@@ -31,7 +31,12 @@ Dessa forma, o Visual Studio fornece um meio para especificar caminhos de pesqui
 
 Para adicionar um caminho de pesquisa, acesse **Gerenciador de Soluções**, expanda o nó do projeto, clique com o botão direito do mouse em **Caminhos de Pesquisa**, selecione **Adicionar Pasta ao Caminho de Pesquisa**:
 
+::: moniker range="vs-2017"
 ![Comando Adicionar Pasta ao Caminho de Pesquisa em Caminhos de Pesquisa no Gerenciador de Soluções](media/search-paths-command.png)
+::: moniker-end
+::: moniker range=">=vs-2019"
+![Comando Adicionar Pasta ao Caminho de Pesquisa em Caminhos de Pesquisa no Gerenciador de Soluções](media/search-paths-command-2019.png)
+::: moniker-end
 
 Esse comando exibe um navegador no qual você pode selecionar a pasta a ser incluída.
 

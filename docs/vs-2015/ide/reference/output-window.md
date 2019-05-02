@@ -17,21 +17,20 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438071"
 ---
 # <a name="output-window"></a>Janela Saída
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A Janela de **Saída** pode exibir mensagens de status para vários recursos no IDE (ambiente de desenvolvimento integrado). Para abrir a Janela de **Saída**, na barra de menus, escolha **Exibir/Saída** (ou clique em CTRL+ALT+O).  
   
 > [!WARNING]
->  A Janela de Saída não é exibida no menu Exibir nas edições do Visual Studio Express. Para mostrá-la, use as teclas de atalho CTRL+ALT+O.  
+> A Janela de Saída não é exibida no menu Exibir nas edições do Visual Studio Express. Para mostrá-la, use as teclas de atalho CTRL+ALT+O.  
   
 ## <a name="toolbar"></a>Barra de ferramentas  
  **Mostrar saída de**  
@@ -69,7 +68,7 @@ A Janela de **Saída** pode exibir mensagens de status para vários recursos no 
   
 ## <a name="see-also"></a>Consulte também  
  [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Como controlar a Janela de Saída](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Como: Controlar a janela de saída](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)   
  [Noções sobre configurações de build](../../ide/understanding-build-configurations.md)   
  [Visão geral da biblioteca de classes](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

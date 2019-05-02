@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0366fed1a405acfa600e9af594e32c1ab47346
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04f85cf678052427ca5395c8b33c4786c2316de0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443622"
 ---
 # <a name="msbuild-targets-files"></a>Arquivos .targets do MSBuild
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclui vários arquivos *.targets* que contêm itens, propriedades, destinos e tarefas para cenários comuns. Esses arquivos são automaticamente importados para a maioria dos arquivos de projeto [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para simplificar a manutenção e a legibilidade.
@@ -31,7 +31,7 @@ ms.locfileid: "56623743"
  O valor `$(MSBuildToolsPath)` especifica o caminho desses arquivos *.targets* comuns. Se o `ToolsVersion` for 4.0, os arquivos estarão na seguinte localização: *\<CaminhoDeInstalaçãoDoWindows>\Microsoft.NET\Framework\v4.0.30319\\*
 
 > [!NOTE]
->  Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o elemento `Import` para inserir um arquivo de projeto em outro arquivo de projeto, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
+> Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o elemento `Import` para inserir um arquivo de projeto em outro arquivo de projeto, confira [Elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).
 
 ## <a name="common-targets-files"></a>Arquivos .targets comuns
 

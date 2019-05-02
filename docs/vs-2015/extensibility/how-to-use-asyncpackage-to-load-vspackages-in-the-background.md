@@ -1,22 +1,18 @@
 ---
-title: 'Como: usar AsyncPackage para carregar VSPackages em segundo plano | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Usar AsyncPackage para carregar VSPackages em segundo plano | Microsoft Docs'
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: d5bc0c22ff0a29984e59c30db6dc2b391bf007e0
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778781"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091662"
 ---
-# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: usar AsyncPackage para carregar VSPackages em segundo plano
+# <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: Usar AsyncPackage para carregar VSPackages em segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s acontece no thread da interface do usuário, ele pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 apresentou a <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.  
@@ -51,7 +47,7 @@ Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s 
   
 4. Se você tiver a inicialização assíncrona de trabalho, você deve substituir <xref:Microsoft.VisualStudio.Shell.AsyncPackage.InitializeAsync%2A>. Remover o **Initialize ()** método fornecido pelo modelo do VSIX. (O **Initialize ()** método na **AsyncPackage** está lacrado). Você pode usar qualquer um do <xref:Microsoft.VisualStudio.Shell.AsyncPackage.AddService%2A> métodos para adicionar serviços assíncronos ao seu pacote.  
   
-    Observação: Para chamar **base. InitializeAsync()**, você pode alterar seu código-fonte para:  
+    OBSERVAÇÃO: Para chamar **base. InitializeAsync()**, você pode alterar seu código-fonte para:  
   
    ```csharp  
    await base.InitializeAsync(cancellationToken, progress);  
@@ -59,7 +55,7 @@ Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s 
   
 5. Você deve tomar cuidado para não ter RPCs (remover chamada de procedimento) do seu código de inicialização assíncrona (em **InitializeAsync**). Elas podem ocorrer quando você chama <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> direta ou indiretamente.  Quando as cargas de sincronização são necessárias, o thread de interface do usuário bloqueará o uso <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory>. O modelo de bloqueio padrão desabilita RPCs. Isso significa que, se você tentar usar uma RPC de suas tarefas assíncronas, enfrentarão deadlock se o thread de interface do usuário é esperar que o pacote a ser carregado. A alternativa geral é realizar marshaling de seu código para o thread de interface do usuário se for necessário usar algo como **fábrica de tarefas permite junções**do <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> ou algum outro mecanismo que não usa um RPC.  Não use **ThreadHelper.Generic.Invoke** ou geralmente bloquear o thread de chamada aguarda para obter o thread de interface do usuário.  
   
-    Observação: Você deve evitar usar **GetService** ou **QueryService** em seu **InitializeAsync** método. Se você tiver de usá-los, você precisará alternar para o thread de interface do usuário pela primeira vez. A alternativa é usar <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> de seu **AsyncPackage** (convertendo-o para <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
+    OBSERVAÇÃO: Você deve evitar usar **GetService** ou **QueryService** em seu **InitializeAsync** método. Se você tiver de usá-los, você precisará alternar para o thread de interface do usuário pela primeira vez. A alternativa é usar <xref:Microsoft.VisualStudio.Shell.AsyncServiceProvider.GetServiceAsync%2A> de seu **AsyncPackage** (convertendo-o para <xref:Microsoft.VisualStudio.Shell.Interop.IAsyncServiceProvider>.)  
   
    C#: Crie um AsyncPackage:  
   
@@ -79,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Converter um VSPackage existente em AsyncPackage  
  A maioria do trabalho é o mesmo que criar um novo **AsyncPackage**. Você precisará seguir as etapas 1 a 5 acima. Você também precisará tomar muito cuidado sobre o seguinte:  
   
-1.  Lembre-se de remover o **inicializar** tinha em seu pacote de substituição.  
+1. Lembre-se de remover o **inicializar** tinha em seu pacote de substituição.  
   
-2.  Evitar deadlocks: pode haver oculto RPCs em seu código que acontecerá em um thread em segundo plano. Você precisa garantir que, se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).  
+2. Evite deadlocks: Pode haver oculto RPCs em seu código que acontecerá em um thread em segundo plano. Você precisa garantir que, se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).  
   
-3.  Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano. Isso reduz o tempo de carregamento.  
+3. Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano. Isso reduz o tempo de carregamento.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Consultando serviços de AsyncPackage  
  Uma **AsyncPackage** podem ou não carregar assincronamente, dependendo do chamador. Por exemplo,  
@@ -107,4 +103,3 @@ using Microsoft.VisualStudio.Shell.Interop;
 IAsyncServiceProvider asyncServiceProvider = Package.GetService(typeof(SAsyncServiceProvider)) as IAsyncServiceProvider;   
 IMyTestService testService = await ayncServiceProvider.GetServiceAsync(typeof(SMyTestService)) as IMyTestService;  
 ```
-

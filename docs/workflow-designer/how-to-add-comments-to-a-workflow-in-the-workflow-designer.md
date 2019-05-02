@@ -11,28 +11,28 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 4ae0d3390be709dfe07f174bbb9754b986cdafc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7eb15c6d19ab40df6913dd67466dc20012492b7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950370"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>Como: Adicionar comentários a um fluxo de trabalho no Designer de Fluxo de Trabalho
 
 Para facilitar a criação de fluxos de trabalho maiores, mais complicados, o .NET Framework 4.5 permite que o desenvolvedor adiciona anotações aos seguintes tipos de item no designer:
 
--   <xref:System.Activities.Activity>
+- <xref:System.Activities.Activity>
 
--   <xref:System.Activities.Statements.State>
+- <xref:System.Activities.Statements.State>
 
--   <xref:System.Activities.Statements.Transition>
+- <xref:System.Activities.Statements.Transition>
 
--   Classes derivadas de <xref:System.Activities.Statements.FlowNode>
+- Classes derivadas de <xref:System.Activities.Statements.FlowNode>
 
--   <xref:System.Activities.Variable>
+- <xref:System.Activities.Variable>
 
--   <xref:System.Activities.Argument>
+- <xref:System.Activities.Argument>
 
 > [!IMPORTANT]
 > O conteúdo de uma anotação são salvos como texto sem formatação ao arquivo XAML associado com o fluxo de trabalho, e podem potencialmente ser lidas por outro. Seja cuidadoso ao inserir informações sigilosas em uma anotação.

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433923"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
 
@@ -31,16 +31,16 @@ A tabela a seguir descreve os elementos de (UI) de interface do usuário para o 
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para transferir anterior o Editor de Coleção do tipo para o enviar e receber atividades
 
-1.  Selecione o **envie** ou **Receive** atividade na exibição design.
+1. Selecione o **envie** ou **Receive** atividade na exibição design.
 
-2.  Pressione **F4** para abrir o **propriedades** janela.
+2. Pressione **F4** para abrir o **propriedades** janela.
 
-3.  No **propriedades** , clique no botão de reticências ao lado de **KnownTypes** propriedade.
+3. No **propriedades** , clique no botão de reticências ao lado de **KnownTypes** propriedade.
 
 ## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para transferir anterior o Editor de Coleção do tipo para atividades de InvokeMethod
 
-1.  Selecione o **InvokeMethod** atividade na exibição design.
+1. Selecione o **InvokeMethod** atividade na exibição design.
 
-2.  Pressione **F4** para abrir o **propriedades** janela.
+2. Pressione **F4** para abrir o **propriedades** janela.
 
-3.  No **propriedades** , clique no botão de reticências ao lado de **GenericTypeArguments** propriedade.
+3. No **propriedades** , clique no botão de reticências ao lado de **GenericTypeArguments** propriedade.

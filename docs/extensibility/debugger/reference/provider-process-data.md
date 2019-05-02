@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865048"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Essa estrutura fornece informações sobre processos em execução em um computador.

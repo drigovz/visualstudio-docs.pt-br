@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Um passo a passo dos conceitos básicos do Django no contexto dos projetos do Visual Studio, mostrando especificamente as etapas para criar um aplicativo e usar modos de exibição e modelos.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 696bb664cb7dd63e6b6964fca5d999652723d240
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: de486593c21813746c6c13fa835506d7b1703279
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958138"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Django com modos de exibição e modelos de página
 

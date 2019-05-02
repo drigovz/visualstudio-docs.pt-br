@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 327b9ca623c6d7f949c0d516798865de48fd94be
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 25e19aff472547f2d151d5d252bc98a1c4fb3c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420600"
 ---
 # <a name="handle-specialized-deployment"></a>Lidar com a implantação especializada
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, dá suporte a uma implantação para permitir que um projeto de atualizar um servidor Web. Da mesma forma, uma **Smart Device** projeto dá suporte a uma implantação para copiar um aplicativo criado para o dispositivo de destino. Subtipos de projeto podem fornecer o comportamento de implantação especializada, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:
@@ -41,10 +41,9 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
   Para notificar o ambiente em que uma operação de implantação foi iniciada ou finalizada, o subtipo de projeto precisa chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnStartDeploy%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployStatusCallback.OnEndDeploy%2A> métodos.
 
-
 ## <a name="to-handle-a-specialized-deployment-by-a-subtype-project"></a>Para lidar com uma implantação especializada por um projeto de subtipo
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> método para registrar o ambiente para receber notificações de eventos de status de implantação.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.AdviseDeployStatusCallback%2A> método para registrar o ambiente para receber notificações de eventos de status de implantação.
 
     ```vb
     Private adviseSink As Microsoft.VisualStudio.Shell.EventSinkCollection = New Microsoft.VisualStudio.Shell.EventSinkCollection()
@@ -75,7 +74,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> método para cancelar o registro do ambiente para receber notificações de eventos de status de implantação.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.UnadviseDeployStatusCallback%2A> método para cancelar o registro do ambiente para receber notificações de eventos de status de implantação.
 
     ```vb
     Public Function UnadviseDeployStatusCallback(ByVal dwCookie As UInteger) As Integer
@@ -93,7 +92,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> método para executar a operação de confirmação específica para seu aplicativo.  Esse método é usado principalmente para a implantação de banco de dados.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Commit%2A> método para executar a operação de confirmação específica para seu aplicativo.  Esse método é usado principalmente para a implantação de banco de dados.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -111,7 +110,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> método para executar uma operação de reversão. Quando este método é chamado, o projeto de implantação deve fazer o que for apropriado para reverter as alterações e restaurar o estado do projeto. Esse método é usado principalmente para a implantação de banco de dados.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.Rollback%2A> método para executar uma operação de reversão. Quando este método é chamado, o projeto de implantação deve fazer o que for apropriado para reverter as alterações e restaurar o estado do projeto. Esse método é usado principalmente para a implantação de banco de dados.
 
     ```vb
     Public Function Commit(ByVal dwReserved As UInteger) As Integer
@@ -129,7 +128,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> método para determinar se um projeto é capaz de iniciar uma operação de implantação.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStartDeploy%2A> método para determinar se um projeto é capaz de iniciar uma operação de implantação.
 
     ```vb
     Public Function QueryStartDeploy(ByVal dwOptions As UInteger, ByVal pfSupported As Integer(), ByVal pfReady As Integer()) As Integer
@@ -162,7 +161,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> método para determinar se uma operação de implantação foi concluída com êxito.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.QueryStatusDeploy%2A> método para determinar se uma operação de implantação foi concluída com êxito.
 
     ```vb
     Public Function QueryStatusDeploy(ByRef pfDeployDone As Integer) As Integer
@@ -185,7 +184,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> método para iniciar uma operação de implantação em um thread separado. Coloque o código específico para a implantação do seu aplicativo dentro de `Deploy` método.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StartDeploy%2A> método para iniciar uma operação de implantação em um thread separado. Coloque o código específico para a implantação do seu aplicativo dentro de `Deploy` método.
 
     ```vb
     Public Function StartDeploy(ByVal pIVsOutputWindowPane As IVsOutputWindowPane, ByVal dwOptions As UInteger) As Integer
@@ -242,7 +241,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
 
     ```
 
--   Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> método para parar uma operação de implantação. Esse método é chamado quando um usuário pressiona o **Cancelar** botão durante o processo de implantação.
+- Implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg.StopDeploy%2A> método para parar uma operação de implantação. Esse método é chamado quando um usuário pressiona o **Cancelar** botão durante o processo de implantação.
 
     ```vb
     Public Function StopDeploy(ByVal fSync As Integer) As Integer
@@ -288,7 +287,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
     ```
 
 > [!NOTE]
->  Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior na [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
+> Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior na [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Consulte também
 - [Subtipos de projeto](../../extensibility/internals/project-subtypes.md)

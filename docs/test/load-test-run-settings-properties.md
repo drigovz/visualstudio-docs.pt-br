@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785891"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
 
@@ -88,27 +88,27 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Modelo de conexão do WebTest**|Controla o uso de conexões do agente de teste de carga ao servidor Web para testes de desempenho na Web que são executados em um teste de carga. Três opções de modelo de conexão de teste de desempenho na Web estão disponíveis:<br /><br /> – O modelo **Conexões por usuário** simula o comportamento de um usuário que está usando um navegador real. Quando o Internet Explorer 6 ou o Internet Explorer 7 é simulado, cada usuário virtual que está executando um teste de desempenho na Web usa uma ou duas conexões dedicadas ao servidor Web. A primeira conexão é estabelecida quando a primeira solicitação no teste de desempenho na Web é emitida. Uma segunda conexão pode ser usada quando uma página contiver mais de uma solicitação dependente. Essas solicitações são emitidas em paralelo usando as duas conexões. Essas conexões são reutilizadas para solicitações subsequentes no teste de desempenho na Web. As conexões são fechadas quando o teste de desempenho na Web é concluído. Uma desvantagem desse modelo é que o número de conexões que é mantido aberto no computador do agente pode ser alto (até duas vezes a carga do usuário). Consequentemente, os recursos que são necessários para oferecer suporte a essa contagem alta de conexão podem limitar a carga do usuário que pode ser gerada por um único agente de teste de carga. Quando o Internet Explorer 8 é simulado, seis conexões simultâneas são aceitas.<br />– O modelo **Pool de conexões** preserva os recursos do agente de teste de carga compartilhando conexões com o servidor Web entre vários usuários virtuais do teste de desempenho Web. Se a carga do usuário for maior que o tamanho do pool de conexões, os testes de desempenho na Web que são executados por usuários virtuais diferentes compartilharão uma conexão. Isso poderia significar que um teste de desempenho na Web pode ter de esperar antes de emitir uma solicitação quando outro teste de desempenho na Web estiver usando a conexão. O tempo médio que um teste de desempenho na Web espera antes de enviar uma solicitação é acompanhado pelo contador de desempenho de teste de carga Tempo Médio de Espera por Conexão. Esse número deve ser menor que o tempo médio de resposta para uma página. Se não for, o tamanho do pool de conexões provavelmente é muito pequeno.<br />– O modelo **Conexões por iteração do teste** especifica o uso de conexões dedicadas para cada iteração de teste.|
 |**Tamanho do pool de conexão do WebTest**|Especifica o número máximo de conexões para fazer entre o agente de teste de carga e o servidor Web. Isso se aplica apenas ao modelo **Pool de conexões**.|
 
-##  <a name="change-run-setting-properties"></a>Alterar as propriedades da configuração de execução
+## <a name="change-run-setting-properties"></a>Alterar as propriedades da configuração de execução
  Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, consulte [ Selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Para alterar as configurações de execução
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Expanda a pasta **Configurações de Execução**.
+2. Expanda a pasta **Configurações de Execução**.
 
-3.  Escolha um nó de **Configurações de Execução**.
+3. Escolha um nó de **Configurações de Execução**.
 
-4.  No menu **Exibir**, escolha **Janela de Propriedades**.
+4. No menu **Exibir**, escolha **Janela de Propriedades**.
 
      A **Janela de Propriedades** é exibida e as propriedades da configuração de execução selecionada são exibidas.
 
-5.  Use a **Janela de Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
+5. Use a **Janela de Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
 
     > [!NOTE]
     > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades das configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).
 
-6.  Quando terminar de alterar as propriedades, salve o teste de carga. No menu **Arquivo**, clique em **Salvar**.
+6. Quando terminar de alterar as propriedades, salve o teste de carga. No menu **Arquivo**, clique em **Salvar**.
 
 > [!NOTE]
 > Os mapeamentos do conjunto de contadores também fazem parte das configurações de execução. Para saber mais, confira [Especificar os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

@@ -1,12 +1,9 @@
 ---
 title: Regras propagam alterações dentro do modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 - Domain-Specific Language, rules
@@ -14,13 +11,13 @@ ms.assetid: 1690a38a-c8f5-4bc6-aab9-015771ec6647
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 265d04306b4747a4e5bc04b879b9635e81ed8102
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49831192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442939"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  O código de uma regra deve alterar o estado somente de elementos dentro do Store; ou seja, a regra deve alterar apenas os elementos de modelo, relações, formas, conectores, diagramas ou suas propriedades. Se você deseja propagar alterações aos recursos fora do repositório, defina eventos de Store. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> O código de uma regra deve alterar o estado somente de elementos dentro do Store; ou seja, a regra deve alterar apenas os elementos de modelo, relações, formas, conectores, diagramas ou suas propriedades. Se você deseja propagar alterações aos recursos fora do repositório, defina eventos de Store. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>Para definir uma regra  
 
@@ -90,7 +87,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Para definir uma regra em uma classe de domínio  
 
--   Em um arquivo de código personalizado, defina uma classe e um prefixo com o <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atributo:  
+- Em um arquivo de código personalizado, defina uma classe e um prefixo com o <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atributo:  
 
     ```  
     [RuleOn(typeof(ExampleElement),   
@@ -100,19 +97,19 @@ namespace ExampleNamespace
 
     ```  
 
--   O tipo de entidade no primeiro parâmetro pode ser uma classe de domínio, o relacionamento de domínio, a forma, o conector ou o diagrama. Normalmente, você aplica regras a classes de domínio e relações.  
+- O tipo de entidade no primeiro parâmetro pode ser uma classe de domínio, o relacionamento de domínio, a forma, o conector ou o diagrama. Normalmente, você aplica regras a classes de domínio e relações.  
 
      O `FireTime` costuma ser `TopLevelCommit`. Isso garante que a regra é executada somente depois que todas as principais alterações da transação foram feitas. As alternativas são embutidos, o que a regra é executada logo após a alteração; e LocalCommit, que executa a regra no final da transação atual (que não pode ser mais externo). Você também pode definir a prioridade de uma regra para afetar sua ordenação na fila, mas este é um método confiável de atingir o resultado que necessário.  
 
--   Você pode especificar uma classe abstrata como o tipo de entidade.  
+- Você pode especificar uma classe abstrata como o tipo de entidade.  
 
--   A regra se aplica a todas as instâncias da classe da entidade.  
+- A regra se aplica a todas as instâncias da classe da entidade.  
 
--   O valor padrão para `FireTime` é TimeToFire.TopLevelCommit. Isso faz com que a regra a ser executado quando a transação externa é confirmada. Uma alternativa é TimeToFire.Inline. Isso faz com que a regra a ser executada logo após o evento de gatilho.  
+- O valor padrão para `FireTime` é TimeToFire.TopLevelCommit. Isso faz com que a regra a ser executado quando a transação externa é confirmada. Uma alternativa é TimeToFire.Inline. Isso faz com que a regra a ser executada logo após o evento de gatilho.  
 
 ### <a name="to-register-the-rule"></a>Para registrar a regra  
 
--   Adicione sua classe de regra à lista de tipos retornados por `GetCustomDomainModelTypes` em seu modelo de domínio:  
+- Adicione sua classe de regra à lista de tipos retornados por `GetCustomDomainModelTypes` em seu modelo de domínio:  
 
     ```  
     public partial class ExampleDomainModel  
@@ -128,19 +125,18 @@ namespace ExampleNamespace
 
     ```  
 
--   Se você não tiver certeza do nome da sua classe de modelo de domínio, examinar o arquivo **Dsl\GeneratedCode\DomainModel.cs**  
+- Se você não tiver certeza do nome da sua classe de modelo de domínio, examinar o arquivo **Dsl\GeneratedCode\DomainModel.cs**  
 
--   Escreva esse código em um arquivo de código personalizado em seu projeto DSL.  
+- Escreva esse código em um arquivo de código personalizado em seu projeto DSL.  
 
 ### <a name="to-write-the-code-of-the-rule"></a>Escrever o código da regra  
 
 - Derive a classe de regra de uma das seguintes classes base:  
 
-
   |                             Classe base                              |                                                                                                                                                                                                                                                                                                                                                                              Disparador                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Um elemento, um link ou uma forma é adicionada.<br /><br /> Use isso para detectar novas relações, além de novos elementos.                                                                                                                                                                                                                                                                                                                        |
-  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Um valor de propriedade de domínio é alterado. O argumento de método fornece os valores novos e antigos.<br /><br /> Para formas, esta regra é disparada quando o interno `AbsoluteBounds` alterações de propriedade, se a forma é movida.<br /><br /> Em muitos casos, é mais conveniente substituir `OnValueChanged` ou `OnValueChanging` no manipulador de propriedade. Esses métodos são chamados imediatamente antes e após a alteração. Por outro lado, a regra é executada normalmente no final da transação. Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md). **Observação:** essa regra não é disparada quando um link é criado ou excluído. Em vez disso, escreva uma `AddRule` e um `DeleteRule` para a relação de domínio. |
+  |          <xref:Microsoft.VisualStudio.Modeling.ChangeRule>          | Um valor de propriedade de domínio é alterado. O argumento de método fornece os valores novos e antigos.<br /><br /> Para formas, esta regra é disparada quando o interno `AbsoluteBounds` alterações de propriedade, se a forma é movida.<br /><br /> Em muitos casos, é mais conveniente substituir `OnValueChanged` ou `OnValueChanging` no manipulador de propriedade. Esses métodos são chamados imediatamente antes e após a alteração. Por outro lado, a regra é executada normalmente no final da transação. Para obter mais informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md). **Observação:**  Essa regra não é disparada quando um link é criado ou excluído. Em vez disso, escreva uma `AddRule` e um `DeleteRule` para a relação de domínio. |
   |         <xref:Microsoft.VisualStudio.Modeling.DeletingRule>         |                                                                                                                                                                                                                                                                                                             Acionado quando um elemento ou o link está prestes a ser excluído. A propriedade ModelElement.IsDeleting é true até o término da transação.                                                                                                                                                                                                                                                                                                              |
   |          <xref:Microsoft.VisualStudio.Modeling.DeleteRule>          |                                                                                                                                                                                                       Executado quando um elemento ou um link foi excluído. A regra é executada depois que todas as outras regras foram executadas, incluindo DeletingRules. ModelElement.IsDeleting for false, e ModelElement.IsDeleted for true. Para permitir um Desfazer subsequente, o elemento não é realmente removido da memória, mas ele é removido do Store.ElementDirectory.                                                                                                                                                                                                       |
   |           <xref:Microsoft.VisualStudio.Modeling.MoveRule>           |                                                                                                                                                                                                                                                                                                           Um elemento é movido de um repositório de partição para outra.<br /><br /> (Observe que isso não está relacionado à posição de uma forma gráfica).                                                                                                                                                                                                                                                                                                            |
@@ -150,24 +146,23 @@ namespace ExampleNamespace
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      Executado quando a transação está prestes a ser confirmada.                                                                                                                                                                                                                                                                                                                                                      |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     Executado quando a transação está prestes a ser revertida.                                                                                                                                                                                                                                                                                                                                                     |
 
-
 - Cada classe tem um método que você substituir. Tipo `override` em sua classe para descobri-lo. O parâmetro deste método identifica o elemento que está sendo alterado.  
 
   Observe os seguintes pontos sobre as regras:  
 
-1.  O conjunto de alterações em uma transação pode disparar regras de muitos. Geralmente, as regras são executadas quando a transação externa é confirmada. Elas são executadas em uma ordem não especificada.  
+1. O conjunto de alterações em uma transação pode disparar regras de muitos. Geralmente, as regras são executadas quando a transação externa é confirmada. Elas são executadas em uma ordem não especificada.  
 
-2.  Uma regra sempre será executada dentro de uma transação. Portanto, não é preciso criar uma nova transação para fazer alterações.  
+2. Uma regra sempre será executada dentro de uma transação. Portanto, não é preciso criar uma nova transação para fazer alterações.  
 
-3.  As regras não são executadas quando uma transação é revertida, ou quando são executadas as operações de desfazer ou refazer. Essas operações de redefinição de todo o conteúdo da Store para seu estado anterior. Portanto, se sua regra altera o estado de qualquer coisa fora a Store, ele pode não manter em synchronism com a Store conteúdo. Para atualizar o estado de fora a Store, é melhor usar eventos. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+3. As regras não são executadas quando uma transação é revertida, ou quando são executadas as operações de desfazer ou refazer. Essas operações de redefinição de todo o conteúdo da Store para seu estado anterior. Portanto, se sua regra altera o estado de qualquer coisa fora a Store, ele pode não manter em synchronism com a Store conteúdo. Para atualizar o estado de fora a Store, é melhor usar eventos. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
 
-4.  Algumas regras são executadas quando um modelo é carregado do arquivo. Para determinar se o carregamento ou salvamento está em andamento, use `store.TransactionManager.CurrentTransaction.IsSerializing`.  
+4. Algumas regras são executadas quando um modelo é carregado do arquivo. Para determinar se o carregamento ou salvamento está em andamento, use `store.TransactionManager.CurrentTransaction.IsSerializing`.  
 
-5.  Se o código da sua regra cria mais gatilhos de regra, eles serão adicionados ao final da lista de acionamento e serão executados antes que a transação seja concluída. DeletedRules são executados depois de todas as outras regras. Uma regra pode executar muitas vezes em uma transação, uma vez para cada alteração.  
+5. Se o código da sua regra cria mais gatilhos de regra, eles serão adicionados ao final da lista de acionamento e serão executados antes que a transação seja concluída. DeletedRules são executados depois de todas as outras regras. Uma regra pode executar muitas vezes em uma transação, uma vez para cada alteração.  
 
-6.  Para passar informações para e de regras, você pode armazenar informações no `TransactionContext`. Isso é apenas um dicionário que é mantido durante a transação. Ele é descartado quando a transação termina. Os argumentos do evento em cada regra fornecem acesso a ele. Lembre-se de que as regras não são executadas em uma ordem previsível.  
+6. Para passar informações para e de regras, você pode armazenar informações no `TransactionContext`. Isso é apenas um dicionário que é mantido durante a transação. Ele é descartado quando a transação termina. Os argumentos do evento em cada regra fornecem acesso a ele. Lembre-se de que as regras não são executadas em uma ordem previsível.  
 
-7.  Usar regras após considerar outras alternativas. Por exemplo, se você quiser atualizar uma propriedade quando um valor for alterado, considere o uso de uma propriedade calculada. Se você quiser restringir o tamanho ou local de uma forma, use um `BoundsRule`. Se você quiser responder a uma alteração em um valor de propriedade, adicione um `OnValueChanged` manipulador para a propriedade. Para obter mais informações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
+7. Usar regras após considerar outras alternativas. Por exemplo, se você quiser atualizar uma propriedade quando um valor for alterado, considere o uso de uma propriedade calculada. Se você quiser restringir o tamanho ou local de uma forma, use um `BoundsRule`. Se você quiser responder a uma alteração em um valor de propriedade, adicione um `OnValueChanged` manipulador para a propriedade. Para obter mais informações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
 
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir atualiza uma propriedade quando uma relação de domínio é instanciada para vincular dois elementos. A regra será acionada não apenas quando o usuário cria um link em um diagrama, mas também se o código de programa cria um link.  
@@ -221,6 +216,3 @@ namespace Company.TaskRuleExample
 ## <a name="see-also"></a>Consulte também  
  [Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)   
  [BoundsRules restringem o local e o tamanho de uma forma](../modeling/boundsrules-constrain-shape-location-and-size.md)
-
-
-

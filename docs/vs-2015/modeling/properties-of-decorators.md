@@ -1,25 +1,22 @@
 ---
 title: Propriedades de decoradores | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, decorators
 ms.assetid: f6322fe5-dc08-4d32-a6b3-0bd18879136d
 caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2d7d6aec514cab53777840730dee6bafac51512e
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 288e0e4d017302a41b3267a3ae751573ab849b64
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49276881"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923009"
 ---
 # <a name="properties-of-decorators"></a>Propriedades de decoradores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +31,7 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |--------------|-----------------|-------------|  
 |DisplayName|O nome do decorador que será exibido no designer gerado.|Expandir recolher decorador|  
 |Nome|O nome do decorador.|ExpandCollapseDecorator|  
-|Observações|Observações informais associadas esse decorador.|\<Nenhum >|  
+|Observações|Observações informais associadas esse decorador.|\<nenhum>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -45,10 +42,10 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
   
 |Propriedade|Descrição|Padrão|  
 |--------------|-----------------|-------------|  
-|DefaultIcon|O caminho do arquivo de imagem ou ícone a ser exibido.|\<Nenhum >|  
+|DefaultIcon|O caminho do arquivo de imagem ou ícone a ser exibido.|\<nenhum>|  
 |DisplayName|O nome do decorador a ser exibido no designer gerado.|Ícone de decorador|  
 |Nome|O nome do decorador.|IconDecorator|  
-|Observações|Observações informais que estão associadas com o decorador.|\<Nenhum >|  
+|Observações|Observações informais que estão associadas com o decorador.|\<nenhum>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -62,9 +59,9 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |DefaultText|O texto padrão a ser exibido.|Rotular|  
 |DisplayName|O nome do decorador a ser exibido no designer gerado.|Rotular|  
 |FontSize|O tamanho da fonte para o texto que é exibido no decorador.|8|  
-|fontStyle|O estilo da fonte para o texto que é exibido no decorador.|Normal|  
+|FontStyle|O estilo da fonte para o texto que é exibido no decorador.|Normal|  
 |Nome|O nome do decorador.|Rotular|  
-|Observações|Observações informais que estão associadas com o decorador.|\<Nenhum >|  
+|Observações|Observações informais que estão associadas com o decorador.|\<nenhum>|  
 |HorizontalOffset|O deslocamento horizontal, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |VerticalOffset|O deslocamento vertical, em relação à posição padrão do decorador, em polegadas. (Nas formas somente.)|0|  
 |OffsetFromLine|O deslocamento do decorador da linha, em relação à sua posição padrão, em polegadas. (Nos conectores somente.)|0|  
@@ -72,7 +69,4 @@ Os decoradores são ícones, texto ou expandir/recolher divisas que podem aparec
 |Posição|A posição padrão do decorador.|TargetBottom|  
   
 ## <a name="see-also"></a>Consulte também  
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

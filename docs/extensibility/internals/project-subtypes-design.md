@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909382"
 ---
 # <a name="project-subtypes-design"></a>Design de subtipos de projeto
 
@@ -23,11 +23,11 @@ Subtipos do projeto permitem que os VSPackages estender projetos com base no Mic
 
  Os tópicos a seguir detalham o design básico e a implementação de subtipos de projeto:
 
--   Design de subtipo de projeto.
+- Design de subtipo de projeto.
 
--   Agregação de vários nível.
+- Agregação de vários nível.
 
--   Interfaces de suporte.
+- Interfaces de suporte.
 
 ## <a name="project-subtype-design"></a>Design de subtipo de projeto
 
@@ -73,11 +73,11 @@ Subtipos de projeto podem estender ainda mais o sistema de projeto base, estende
 
 Uma implementação de subtipo de projeto que encapsula um subtipo de projeto de nível inferior deve ser programado cooperativamente para permitir que o subtipo de projeto interno funcionar corretamente. Inclui uma lista de responsabilidades de programação:
 
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto que está encapsulando o subtipo interno deve delegar para o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto interno para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto que está encapsulando o subtipo interno deve delegar para o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto interno para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.
 
--   O <xref:EnvDTE80.IInternalExtenderProvider> implementação do subtipo de projeto de wrapper deverá delegar ao de seu subtipo de projeto interno. Em particular, a implementação de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> precisa obter a cadeia de caracteres de nomes do subtipo de projeto interno e, em seguida, concatenar as cadeias de caracteres que deseja adicionar como extensores.
+- O <xref:EnvDTE80.IInternalExtenderProvider> implementação do subtipo de projeto de wrapper deverá delegar ao de seu subtipo de projeto interno. Em particular, a implementação de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> precisa obter a cadeia de caracteres de nomes do subtipo de projeto interno e, em seguida, concatenar as cadeias de caracteres que deseja adicionar como extensores.
 
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implementação de um subtipo de projeto de wrapper deve instanciar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto do seu interna subtipo de projeto e mantê-la como um delegado particular, já que somente o objeto de configuração de projeto do projeto base diretamente sabe que o wrapper objeto de configuração do subtipo de projeto existe. O subtipo de projeto externa pode inicialmente escolher interfaces de configuração que ele deseja tratar diretamente e, em seguida, delegue o resto para implementação do subtipo de projeto interno da <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implementação de um subtipo de projeto de wrapper deve instanciar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto do seu interna subtipo de projeto e mantê-la como um delegado particular, já que somente o objeto de configuração de projeto do projeto base diretamente sabe que o wrapper objeto de configuração do subtipo de projeto existe. O subtipo de projeto externa pode inicialmente escolher interfaces de configuração que ele deseja tratar diretamente e, em seguida, delegue o resto para implementação do subtipo de projeto interno da <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Interfaces de suporte
 

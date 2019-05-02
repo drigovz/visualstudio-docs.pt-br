@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702389"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862834"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: Solucionar problemas de serviços
 Há vários problemas comuns que podem ocorrer ao tentar obter um serviço:
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. Use o tipo de serviço e não o tipo de interface ao chamar GetService. Ao solicitar um serviço do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrai a GUID do tipo. Um serviço não será encontrado se existem as seguintes condições:
 
-   1.  Um tipo de interface é passado para GetService em vez do tipo de serviço.
+   1. Um tipo de interface é passado para GetService em vez do tipo de serviço.
 
-   2.  Nenhum GUID for explicitamente atribuído à interface. Portanto, o sistema cria um GUID padrão para um objeto, conforme necessário.
+   2. Nenhum GUID for explicitamente atribuído à interface. Portanto, o sistema cria um GUID padrão para um objeto, conforme necessário.
 
 3. Certifique-se de que o VSPackage solicitando o serviço foi colocado no local. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sites a um VSPackage após construí-la e antes de chamar <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

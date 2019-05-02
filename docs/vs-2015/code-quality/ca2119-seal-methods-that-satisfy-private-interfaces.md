@@ -1,14 +1,9 @@
 ---
 title: 'CA2119: Métodos para lacrar que atendam a interfaces privadas | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SealMethodsThatSatisfyPrivateInterfaces
 - CA2119
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c6d3e102cde1fc010f777006d629fa2d19add894
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49825374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061496"
 ---
-# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: os métodos para lacrar que atendam a interfaces privadas
+# <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119: Selar métodos que atendem a interfaces particulares
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -46,15 +41,15 @@ ms.locfileid: "49825374"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, impedir que o método que está sendo substituído fora do assembly usando um dos seguintes:
 
--   Verifique o tipo de declaração `sealed` (`NotInheritable` no Visual Basic).
+- Verifique o tipo de declaração `sealed` (`NotInheritable` no Visual Basic).
 
--   Altere a acessibilidade do tipo declarativo para `internal` (`Friend` no Visual Basic).
+- Altere a acessibilidade do tipo declarativo para `internal` (`Friend` no Visual Basic).
 
--   Remova todos os construtores públicos do tipo de declaração.
+- Remova todos os construtores públicos do tipo de declaração.
 
--   Implementar o método sem usar o `virtual` modificador.
+- Implementar o método sem usar o `virtual` modificador.
 
--   Implemente o método explicitamente.
+- Implemente o método explicitamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso desta regra se, depois de uma análise cuidadosa, há nenhum problema de segurança que pode ser explorável se o método for substituído fora do assembly.
@@ -75,6 +70,3 @@ ms.locfileid: "49825374"
 
 ## <a name="see-also"></a>Consulte também
  [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37) [Interfaces](http://msdn.microsoft.com/library/61b06674-12c9-430b-be68-cc67ecee1f5b)
-
-
-

@@ -2,7 +2,6 @@
 title: 'Método iactivescripttraceinfo:: Startscripttracing | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6462597f55b6b0ceee885d207572e9669a350600
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: b87971e1fd2e484aa54ff4de56ee56e00b19b1e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54093634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62991190"
 ---
 # <a name="iactivescripttraceinfostartscripttracing-method"></a>Método IActiveScriptTraceInfo::StartScriptTracing
 Inicia o rastreamento de script.  
@@ -38,8 +37,8 @@ HRESULT StartScriptTracing(     [in] IActiveScriptSiteTraceInfo * pSiteTraceInfo
 ## <a name="return-value"></a>Valor de retorno  
  Os valores de retornados possíveis para esse método são as seguintes:  
   
-1.  S_OK: Êxito.  
+1. S_OK: Êxito.  
   
-2.  E_POINTER: `pSiteTraceInfo` é um ponteiro nulo.  
+2. E_POINTER: `pSiteTraceInfo` é um ponteiro nulo.  
   
-3.  E_NOTIMPL: Não implementado.
+3. E_NOTIMPL: Não implementado.

@@ -8,15 +8,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 11/13/2017
 ms.topic: conceptual
-ms.devlang: multiple
 ms.workload:
 - multiple
-ms.openlocfilehash: 249db51cf178d8f1c266b9421fbfbdfbc95ef4c4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 39d562509a62874a32e8442e18dece8e3c26fbfc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430405"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Ferramentas do Visual Studio para IA
 
@@ -37,14 +36,14 @@ As Ferramentas do Visual Studio para IA estão integradas ao Azure Machine Learn
 [Saiba mais sobre como criar projetos da galeria de exemplo](create-project-gallery.md)
 
 ## <a name="scale-out-deep-learning-model-training-andor-inferencing-to-the-cloud"></a>Aumente o treinamento de modelos de aprendizagem profunda e/ou fazendo inferências à nuvem
-Essa extensão facilita o treinamento de modelos no computador local ou o envio de trabalhos para a nuvem usando nossa integração com o Azure Machine Learning. É possível enviar trabalhos para destinos de computação diferentes como clusters Spark, máquinas virtuais com GPU do Azure e muito mais
+Essa extensão facilita o treinamento de modelos no computador local ou o envio de trabalhos para a nuvem usando nossa integração com o Azure Machine Learning. É possível enviar trabalhos para destinos de computação diferentes como clusters Spark, máquinas virtuais com GPU do Azure e muito mais.
 
 ![Enviar trabalho](media/about/submitjobs.png)
 
 [Saiba mais sobre os modelos de treinamento na nuvem](tensorflow-vm.md)
 
 ## <a name="supported-operating-systems"></a>Supported Operating Systems
-No momento, essa extensão dá suporte aos sistemas operacionais Windows de 64 bits
+No momento, essa extensão dá suporte aos sistemas operacionais Windows de 64 bits.
 
 ## <a name="support"></a>Suporte
-O suporte para essa extensão é fornecido no [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) (Rastreador de Problemas GitHub). É possível enviar um relatório de bugs, uma sugestão de recurso ou participar das discussões.
+O suporte para essa extensão é fornecido no [GitHub Issue Tracker](http://github.com/Microsoft/vs-tools-for-ai/issues) (Rastreador de Problemas GitHub). É possível enviar um relatório de bugs ou uma sugestão de recurso e participar das discussões.

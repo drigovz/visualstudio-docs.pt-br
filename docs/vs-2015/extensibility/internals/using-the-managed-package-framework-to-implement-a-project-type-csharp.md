@@ -1,14 +1,9 @@
 ---
 title: Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (c#) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], creating with MPF
 - MPF projects
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: f248bdafaf0fdd632069e6cffe367cf0ed21135f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51741980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066826"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +29,9 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
   
  Para adicionar esse projeto à sua solução de VSPackage, faça o seguinte:  
   
-1.  Baixar os arquivos MPFProj *MPFProjectDir*.  
+1. Baixar os arquivos MPFProj *MPFProjectDir*.  
   
-2.  No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, altere o seguinte bloco:  
+2. No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, altere o seguinte bloco:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -45,11 +40,11 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
   </PropertyGroup>  
 ```  
   
-1.  Crie um projeto de VSPackage.  
+1. Crie um projeto de VSPackage.  
   
-2.  Descarregue o projeto de VSPackage.  
+2. Descarregue o projeto de VSPackage.  
   
-3.  Editar o arquivo. csproj VSPackage adicionando o seguinte bloco antes das outras `<Import>` blocos:  
+3. Editar o arquivo. csproj VSPackage adicionando o seguinte bloco antes das outras `<Import>` blocos:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -61,17 +56,17 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
   </PropertyGroup>  
 ```  
   
-1.  Salvar o projeto.  
+1. Salvar o projeto.  
   
-2.  Feche e reabra a solução de VSPackage.  
+2. Feche e reabra a solução de VSPackage.  
   
-3.  Reabra o projeto de VSPackage. Você deve ver um novo diretório chamado ProjectBase.  
+3. Reabra o projeto de VSPackage. Você deve ver um novo diretório chamado ProjectBase.  
   
-4.  Adicione a seguinte referência ao projeto de VSPackage:  
+4. Adicione a seguinte referência ao projeto de VSPackage:  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Compile o projeto.  
+5. Compile o projeto.  
   
 ## <a name="hierarchy-classes"></a>Hierarquia de Classes  
  A tabela a seguir resume as classes do MPFProj que dão suporte a hierarquias de projeto. Para obter mais informações, consulte [seleção e hierarquias](../../extensibility/internals/hierarchies-and-selection.md).  
@@ -131,4 +126,3 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou
 |`Microsoft.VisualStudio.Package.ProjectNodeProperties`|  
 |`Microsoft.VisualStudio.Package.FolderNodeProperties`|  
 |`Microsoft.VisualStudio.Package.ReferenceNodeProperties`|
-

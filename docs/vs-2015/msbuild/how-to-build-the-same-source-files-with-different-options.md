@@ -1,5 +1,5 @@
 ---
-title: Como compilar os mesmos arquivos de origem com opções diferentes | Microsoft Docs
+title: 'Como: Compilar os mesmos arquivos de origem com opções diferentes | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 738f6e9f3a31407f30d30c963265b78d8000ca82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3bce742d4ce0374cb7270b964354d65a03e917d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045597"
 ---
-# <a name="how-to-build-the-same-source-files-with-different-options"></a>Como compilar os mesmos arquivos de origem com opções diferentes
+# <a name="how-to-build-the-same-source-files-with-different-options"></a>Como: Compilar os mesmos arquivos de origem com opções diferentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando compila projetos, frequentemente você compila os mesmos componentes com opções de build diferente. Por exemplo, é possível criar um build de depuração com informações de símbolo ou um build de versão sem nenhuma informação de símbolo, mas com otimizações habilitadas. Ou você pode compilar um projeto para ser executado em uma plataforma específica, como x86 ou [!INCLUDE[vcprx64](../includes/vcprx64-md.md)]. Em todos esses casos, a maioria das opções de build permanecem as mesmas, apenas algumas opções são alteradas para controlar a configuração de build. Com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], você usa propriedades e condições para criar as diferentes configurações de build.  
   
 ## <a name="using-properties-to-modify-projects"></a>Usando propriedades para modificar projetos  
@@ -34,7 +33,7 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
 #### <a name="to-set-a-group-of-properties-based-on-another-property"></a>Para definir um grupo de propriedades com base em outra propriedade  
   
--   Use um atributo `Condition` em um elemento `PropertyGroup`, semelhante ao seguinte:  
+- Use um atributo `Condition` em um elemento `PropertyGroup`, semelhante ao seguinte:  
   
     ```  
     <PropertyGroup Condition="'$(Flavor)'=='DEBUG'">  
@@ -45,7 +44,7 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
 #### <a name="to-define-a-property-based-on-another-property"></a>Para definir uma propriedade com base em outra propriedade  
   
--   Use um atributo `Condition` em um elemento `Property`, semelhante ao seguinte:  
+- Use um atributo `Condition` em um elemento `Property`, semelhante ao seguinte:  
   
     ```  
     <DebugType Condition="'$(Flavor)'=='DEBUG'">full</DebugType>  
@@ -56,7 +55,7 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   
 #### <a name="to-set-a-project-property-at-the-command-line"></a>Para definir uma propriedade de projeto na linha de comando  
   
--   Use o comutador **/property** com a propriedade e o valor da propriedade. Por exemplo:  
+- Use o comutador **/property** com a propriedade e o valor da propriedade. Por exemplo:  
   
     ```  
     msbuild file.proj /property:Flavor=Debug  
@@ -82,7 +81,7 @@ Quando compila projetos, frequentemente você compila os mesmos componentes com 
   msbuild file.proj /p:Flavor=Debug /p:Platform=x86  
   ```  
   
-  Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obter mais informações sobre o uso de variáveis de ambiente, consulte [Como usar variáveis de ambiente em um build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
+  Variáveis de ambiente também são tratadas como propriedades e são incorporadas automaticamente por [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Para obter mais informações sobre como usar variáveis de ambiente, veja [Como: Usar variáveis de ambiente em um Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   
   O valor da propriedade especificado na linha de comando tem precedência sobre qualquer valor definido para a mesma propriedade no arquivo de projeto e o valor no arquivo de projeto tem precedência sobre o valor em uma variável de ambiente.  
   

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ba3b7c2c1cac1255c6234d2b9a8ed6ab4fd05820
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909431"
 ---
 # <a name="managing-configuration-options"></a>Gerenciando opções de configuração
 Quando você cria um novo tipo de projeto, você deve gerenciar definições de configuração do projeto e solução que determinam como o projeto será compilado, empacotado, implantados e execução. Os tópicos a seguir abordam a configuração de projeto e solução.

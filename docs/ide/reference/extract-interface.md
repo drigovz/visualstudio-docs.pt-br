@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc10a43cc5834453e6c5e11e1c7b787903f24c06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791128"
 ---
 # <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
@@ -29,13 +29,13 @@ Esta refatoração aplica-se a:
 
 **O quê:** Permite criar uma interface usando membros existentes de uma classe, um struct ou uma interface.
 
-**Quando:** Você tem várias classes, structs ou interfaces com métodos que podem se tornar comuns e ser usados por outras classes, structs ou interfaces.
+**Quando:** Você tem membros em uma classe, um struct ou uma interface que podem ser herdados por outras classes, outros structs ou outras interfaces.
 
 **Por que:** As interfaces são ótimos constructos para designs orientados a objeto. Imagine ter classes para vários animais (gato, cachorro, pássaro) que podem ter métodos comuns, como comer, beber, dormir. Usar uma interface como IAnimal permitiria que cachorro, gato e pássaro tivessem uma "assinatura" comum para esses métodos.
 
-## <a name="how-to"></a>Como fazer
+## <a name="extract-an-interface-refactoring"></a>Refatoração Extrair uma interface
 
-1. realce o nome da classe para executar a ação ou simplesmente coloque o cursor do texto em algum lugar no nome da classe.
+1. Coloque o cursor no nome da classe.
 
    - C#:
 
@@ -45,10 +45,10 @@ Esta refatoração aplica-se a:
 
        ![Código realçado – Visual Basic](media/extractinterface-highlight-vb.png)
 
-2. Depois, siga um destes procedimentos:
+2. Em seguida, realize uma das seguintes ações:
 
    - **Teclado**
-      - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
+      - Pressione **Ctrl+R**, em seguida, **Ctrl+I**. (O atalho de teclado pode ser diferente de acordo com o perfil selecionado.)
       - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Interface** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Extrair Interface**.
@@ -56,15 +56,13 @@ Esta refatoração aplica-se a:
 
 3. Na caixa de diálogo **Extrair Interface** que é exibida, insira as informações solicitadas:
 
-   ![Extrair Interface](media/extractinterface-dialog-cs.png)
-
+   ![Extrair Interface](media/extractinterface-dialog-same-file.png)
 
    | Campo | Descrição |
    | - | - |
-   | **Nome da nova interface** | O nome da interface a ser criada. O padrão é I*ClassName*, onde *ClassName* é o nome da classe selecionada acima. |
-   | **Nome do novo arquivo** | O nome do arquivo que será gerado com a interface. Como acontece com o nome da interface, o padrão é I*ClassName*, onde *ClassName* é o nome da classe selecionada acima. |
+   | **Nome da nova interface** | O nome da interface a ser criada. O nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. |
+   | **Nome do novo arquivo** | O nome do arquivo gerado que conterá a interface. Assim como ocorre com o nome da interface, esse nome usará como padrão I*ClassName*, em que *ClassName* é o nome da classe selecionada acima. Selecione também a opção para **Adicionar ao arquivo atual**. |
    | **Selecionar membros públicos para formar a interface** | Os itens a serem extraídos para a interface. Você pode selecionar quantos desejar. |
-
 
 4. Escolha **OK**.
 
@@ -72,12 +70,17 @@ Esta refatoração aplica-se a:
 
    - C#:
 
-      ![Classe resultante – C#](media/extractinterface-class-cs.png) ![Interface resultante – C#](media/extractinterface-interface-cs.png)
+      ![Classe resultante – C#](media/extractinterface-class-cs.png)
+
+      ![Interface resultante – C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic:
 
-      ![Classe resultante – Visual Basic](media/extractinterface-class-vb.png) ![Interface resultante – Visual Basic](media/extractinterface-interface-vb.png)
+      ![Classe resultante – Visual Basic](media/extractinterface-class-vb.png)
+
+      ![Interface resultante – Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Refatoração](../refactoring-in-visual-studio.md)
+- [Dicas para desenvolvedores de .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)

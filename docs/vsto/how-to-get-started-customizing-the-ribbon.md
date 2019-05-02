@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14c4ff1e8bf443351f835d74d44b49bbb61e0321
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967892"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Como: Introdução à personalização da faixa de opções
   Para personalizar a faixa de opções de um aplicativo do Microsoft Office, adicione uma **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)** item a um projeto do Office.
@@ -37,33 +37,33 @@ ms.locfileid: "56640110"
 
     Nomes não podem conter os seguintes caracteres:
 
-   -   Libra (#)
+   - Libra (#)
 
-   -   Porcentagem (%))
+   - Porcentagem (%))
 
-   -   E comercial (&)
+   - E comercial (&)
 
-   -   Asterisco (*)
+   - Asterisco (*)
 
-   -   Barra vertical (|)
+   - Barra vertical (|)
 
-   -   Barra invertida (\\)
+   - Barra invertida (\\)
 
-   -   Dois-pontos (:)
+   - Dois-pontos (:)
 
-   -   Aspas duplas (")
+   - Aspas duplas (")
 
-   -   Menor que (\<)
+   - Menor que (\<)
 
-   -   Maior que (>)
+   - Maior que (>)
 
-   -   Ponto de interrogação (?)
+   - Ponto de interrogação (?)
 
-   -   Uma barra (/)
+   - Uma barra (/)
 
-   -   Espaços iniciais ou finais (' ')
+   - Espaços iniciais ou finais (' ')
 
-   -   Nomes reservados do Windows ou DOS como ("nul", "aux", "con", "com1", "lpt1" e assim por diante)
+   - Nomes reservados do Windows ou DOS como ("nul", "aux", "con", "com1", "lpt1" e assim por diante)
 
 4. Clique em **OK**.
 

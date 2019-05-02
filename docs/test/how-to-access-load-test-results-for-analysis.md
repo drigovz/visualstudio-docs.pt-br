@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979426"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Como: Acessar os resultados do teste de carga para análise
 
@@ -31,24 +31,24 @@ O resultado de teste de carga para o teste de carga concluído contém exemplos 
 
 ## <a name="to-access-a-load-test-result"></a>Para acessar um resultado de teste local
 
-1.  De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
+1. De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
 
-2.  Na barra de ferramentas do Editor de Teste de Carga, clique no botão **Abrir e gerenciar resultados**.
+2. Na barra de ferramentas do Editor de Teste de Carga, clique no botão **Abrir e gerenciar resultados**.
 
      A caixa de diálogo **Abrir e gerenciar resultados** é exibida.
 
-3.  Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<local> – Nenhum controlador** para acessar os resultados armazenados localmente.
+3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<local> – Nenhum controlador** para acessar os resultados armazenados localmente.
 
-4.  Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
+4. Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
 
      Se houver resultados de testes de carga disponíveis, eles aparecerão na lista **Resultados de testes de carga**. As colunas são **Hora**, **Duração**, **Usuário**, **Resultado**, **Teste** e **Descrição**. **Teste** contém o nome do teste e **Descrição** contém a descrição opcional adicionada antes da execução do teste.
 
     > [!NOTE]
     > Os resultados aparecem com os resultados mais recentes na parte superior da lista.
 
-5.  Na lista **Resultados de testes de carga**, selecione os resultados do teste de carga para analisar e escolha **Abrir**.
+5. Na lista **Resultados de testes de carga**, selecione os resultados do teste de carga para analisar e escolha **Abrir**.
 
-6.  O **Analisador de Testes de Carga** é exibido. O resultado do teste de carga selecionado é exibido na exibição Resumo. Para saber mais, confira [Visão geral do resumo de resultados de teste de carga](../test/load-test-results-summary-overview.md).
+6. O **Analisador de Testes de Carga** é exibido. O resultado do teste de carga selecionado é exibido na exibição Resumo. Para saber mais, confira [Visão geral do resumo de resultados de teste de carga](../test/load-test-results-summary-overview.md).
 
      Você pode gerenciar os outros aspectos de resultados do teste da carga na caixa de diálogo **Abrir e gerenciar resultados**, que inclui importar, exportar e remover resultados do teste de carga. Para saber mais, confira [Gerenciar resultados do teste de carga no repositório de resultados do teste de carga](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

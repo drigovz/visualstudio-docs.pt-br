@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437549"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
   As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Encaixando janelas
  Quando você clica e arrasta a barra de título de uma janela de ferramentas ou a guia da janela do documento, um losango do guia é exibido. Durante a operação de arrastar, quando o cursor do mouse está sobre uma das setas no losango, será exibida uma área sombreada que mostra onde a janela será encaixada se você soltar o botão do mouse no momento.
@@ -106,25 +106,25 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  ![Ocultar automaticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
+> Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
+> As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
 
 ### <a name="specifying-a-monitor"></a>Especificando um Monitor
  Se você tiver um segundo monitor e seu sistema operacional der suporte a ele, será possível escolher qual monitor exibirá uma janela. É possível até mesmo agrupar várias janelas em “rafts” em outros monitores.
 
 > [!TIP]
->  É possível criar várias instâncias do **Gerenciador de Soluções** e movê-las para outro monitor. Clique com o botão direito do mouse na janela e escolha **Novo Modo de Exibição do Gerenciador de Soluções**. É possível voltar todas as janelas para o monitor original clicando duas vezes enquanto pressiona a tecla Ctrl.
+> É possível criar várias instâncias do **Gerenciador de Soluções** e movê-las para outro monitor. Clique com o botão direito do mouse na janela e escolha **Novo Modo de Exibição do Gerenciador de Soluções**. É possível voltar todas as janelas para o monitor original clicando duas vezes enquanto pressiona a tecla Ctrl.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Redefinir, nomear e mudar entre layouts de janela
  É possível voltar o IDE para o layout de janela original para sua coleção de configurações usando o comando **Redefinir Layout de Janela**. Quando você executar esse comando, as seguintes ações ocorrerão:
 
--   Todas as janelas serão movidas para as posições padrão.
+- Todas as janelas serão movidas para as posições padrão.
 
--   As janelas fechadas no layout de janela padrão serão fechadas.
+- As janelas fechadas no layout de janela padrão serão fechadas.
 
--   As janelas abertas no layout de janela padrão serão abertas.
+- As janelas abertas no layout de janela padrão serão abertas.
 
 ### <a name="create-and-save-custom-layouts"></a>Criar e salvar layouts personalizados
  Visual Studio 2015 permite que você salvar até 10 layouts de janela personalizados e alternar rapidamente entre elas. As etapas a seguir mostram como criar, salvar, invocar e gerenciar layouts personalizados que usam vários monitores com janelas de ferramentas encaixadas e flutuantes.
@@ -133,29 +133,29 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Criar um projeto de interface do usuário e personalizar o layout
 
-1.  Na caixa de diálogo **Novo Projeto**, crie um Aplicativo de Área de Trabalho WPF em Visual C#. Suponhamos que esse é o projeto em que trabalharemos na interface do usuário. Portanto, queremos maximizar o espaço da janela de designer e tirar outras janelas de ferramenta do caminho.
+1. Na caixa de diálogo **Novo Projeto**, crie um Aplicativo de Área de Trabalho WPF em Visual C#. Suponhamos que esse é o projeto em que trabalharemos na interface do usuário. Portanto, queremos maximizar o espaço da janela de designer e tirar outras janelas de ferramenta do caminho.
 
-2.  Se você tiver vários monitores, leve a janela **Gerenciador de Soluções** e o janela **Propriedades** sobre o segundo monitor. Em um sistema de monitor único, tente fechar todas as janelas exceto o designer.
+2. Se você tiver vários monitores, leve a janela **Gerenciador de Soluções** e o janela **Propriedades** sobre o segundo monitor. Em um sistema de monitor único, tente fechar todas as janelas exceto o designer.
 
-3.  Pressione **Ctrl + Alt + X** para exibir a caixa de ferramentas. Se a janela estiver encaixada, arraste-a para que ela flutue em algum lugar que você gostaria de posicioná-la em qualquer monitor.
+3. Pressione **Ctrl + Alt + X** para exibir a caixa de ferramentas. Se a janela estiver encaixada, arraste-a para que ela flutue em algum lugar que você gostaria de posicioná-la em qualquer monitor.
 
-4.  Pressione F5 para colocar o Visual Studio em modo de depuração. Ajuste a posição das janelas de depuração Carros, Pilha de Chamadas e Saída da maneira como você as desejar. O layout que você está prestes a criar será aplicado ao modo de edição e ao modo de depuração.
+4. Pressione F5 para colocar o Visual Studio em modo de depuração. Ajuste a posição das janelas de depuração Carros, Pilha de Chamadas e Saída da maneira como você as desejar. O layout que você está prestes a criar será aplicado ao modo de edição e ao modo de depuração.
 
-5.  Quando seus layouts no modo de depuração e de edição estiverem da maneira como você os deseja, no menu principal, escolha **Janela > Salvar Layout de Janela**. Chame esse layout de "Designer."
+5. Quando seus layouts no modo de depuração e de edição estiverem da maneira como você os deseja, no menu principal, escolha **Janela > Salvar Layout de Janela**. Chame esse layout de "Designer."
 
      Observe que o próximo atalho de teclado da lista reservada de Ctrl + Alt + 1...0 foi atribuído ao seu novo layout.
 
 ##### <a name="create-a-database-project-and-layout"></a>Criar um layout e um projeto de banco de dados
 
-1.  Adicione um novo projeto de **Banco de Dados do SQL Server** à solução.
+1. Adicione um novo projeto de **Banco de Dados do SQL Server** à solução.
 
-2.  Clique com o botão direito do mouse no novo projeto no Gerenciador de Soluções e escolha **Exibir no Gerenciador de Objetos**. Isso exibe a janela **Gerenciador de Objetos do SQL Server**, que permite acessar tabelas, modos de exibição e outros objetos em seu banco de dados. É possível fazer essa janela flutuar ou deixá-la encaixada. Ajuste as outras janelas de ferramentas da maneira como você as desejar. Para obter maior realismo, é possível adicionar um banco de dados real, mas não é necessário para esse passo a passo.
+2. Clique com o botão direito do mouse no novo projeto no Gerenciador de Soluções e escolha **Exibir no Gerenciador de Objetos**. Isso exibe a janela **Gerenciador de Objetos do SQL Server**, que permite acessar tabelas, modos de exibição e outros objetos em seu banco de dados. É possível fazer essa janela flutuar ou deixá-la encaixada. Ajuste as outras janelas de ferramentas da maneira como você as desejar. Para obter maior realismo, é possível adicionar um banco de dados real, mas não é necessário para esse passo a passo.
 
-3.  Quando o layout estiver da maneira como você deseja, no menu principal, escolha **Janela > Salvar Layout de Janela**. Chame esse layout de "Projeto de Banco de Dados." (Não nos preocuparemos com um layout de modo de depuração para este projeto.)
+3. Quando o layout estiver da maneira como você deseja, no menu principal, escolha **Janela > Salvar Layout de Janela**. Chame esse layout de "Projeto de Banco de Dados." (Não nos preocuparemos com um layout de modo de depuração para este projeto.)
 
 ##### <a name="switch-between-the-layouts"></a>Mudar entre os layouts
 
-1.  Para mudar entre layouts, use os atalhos de teclado ou, no menu principal, escolha **Janela > Aplicar Layout de Janela**.
+1. Para mudar entre layouts, use os atalhos de teclado ou, no menu principal, escolha **Janela > Aplicar Layout de Janela**.
 
      ![Aplicar menu de layout de janela](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gerenciar e usar perfil móvel nos seus layouts
 
-1.  É possível remover, renomear ou reordenar seu layout personalizado escolhendo **Janela > Gerenciar Layouts de Janela**. Se você mover um layout, a associação de teclas será ajustada automaticamente para refletir a nova posição na lista. Do contrário, as associações não poderão ser modificadas e, assim, será possível armazenar, no máximo, 10 layouts por vez.
+1. É possível remover, renomear ou reordenar seu layout personalizado escolhendo **Janela > Gerenciar Layouts de Janela**. Se você mover um layout, a associação de teclas será ajustada automaticamente para refletir a nova posição na lista. Do contrário, as associações não poderão ser modificadas e, assim, será possível armazenar, no máximo, 10 layouts por vez.
 
      ![Gerenciar layouts de janela](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

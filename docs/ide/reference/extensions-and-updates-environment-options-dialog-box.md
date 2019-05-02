@@ -1,6 +1,6 @@
 ---
-title: Caixa de diálogo de extensões e atualizações, ambiente, opções
-ms.date: 11/04/2016
+title: Caixa de diálogo extensões, ambiente e opções
+ms.date: 03/28/2019
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ExtensionManager
@@ -10,14 +10,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8625d24be0e5bffa465cb2d5116cd021e99a017
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790844"
 ---
-# <a name="extensions-and-updates-environment-options-dialog-box"></a>Caixa de diálogo de extensões e atualizações, ambiente, opções
+# <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo Opções: Ambiente \> Extensões
 
 Use esta página para definir opções de como o Visual Studio executa atualizações e como extensões são atualizadas e descobertas.
 
@@ -29,13 +29,13 @@ Quando esta opção é marcada, o Visual Studio verifica periodicamente se há a
 
 Quando esta opção é marcada, são feitas atualizações de extensões sem prompts. Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
-## <a name="load-user-extensions-when-running-as-administrator"></a>Carregar extensões do usuário ao executar como administrador
+## <a name="load-per-user-extensions-when-running-as-administrator"></a>Carregar por extensões de usuário ao executar como administrador
 
 Para obter mais informações, consulte [Localizando e usando extensões do Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).
 
 ## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
 
-Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Para obter mais informações, consulte [Galerias privadas](../../extensibility/private-galleries.md).
+Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Saiba mais em [Galerias privadas](../../extensibility/private-galleries.md).
 
 ## <a name="see-also"></a>Consulte também
 

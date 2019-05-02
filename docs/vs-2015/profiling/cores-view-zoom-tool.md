@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105417"
 ---
 # <a name="cores-view-zoom-tool"></a>Ferramenta de zoom da exibição de núcleos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ O controle de zoom é um controle deslizante que permite ampliar e reduzir a lin
   
 ## <a name="other-ways-to-zoom"></a>Outras formas de aplicar zoom  
   
--   Aumentar o zoom: arraste para selecionar uma área na exibição da linha do tempo. Ao soltar o botão do mouse, a exibição da linha do tempo ampliará o intervalo selecionado.  
+- Ampliar o zoom: Arraste para selecionar uma área na exibição da linha do tempo. Ao soltar o botão do mouse, a exibição da linha do tempo ampliará o intervalo selecionado.  
   
--   Ampliar e reduzir o zoom: focalize a linha do tempo e, em seguida, pressione CTRL enquanto move a roda do mouse.  
+- Ampliar e reduzir o zoom: Passe o mouse sobre a linha do tempo e, em seguida, pressione CTRL enquanto move a roda do mouse.  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de núcleos](../profiling/cores-view.md)

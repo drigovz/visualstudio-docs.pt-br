@@ -1,14 +1,9 @@
 ---
 title: Comandos, Menus e barras de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - commands [Visual Studio]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 caps.latest.revision: 61
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 5c9641f788951e79efb392927371bb55b49ec294
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 337bc4de9171d2f98bf0be0068b298b7f600b979
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926480"
 ---
 # <a name="commands-menus-and-toolbars"></a>Comandos, menus e barras de ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +30,7 @@ Menus e barras de ferramentas são que os maneira como os usuários acessam coma
   
 - Quando você cria um comando, você também deve criar um manipulador de eventos para ele. O manipulador de eventos determina quando o comando é visível ou habilitada, permite que você modifique seu texto e garante que o comando responde apropriadamente ("rotas") quando ativado. Na maioria dos casos, o IDE manipula os comandos que usam o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface. Os comandos no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] rota de forma hierárquica, começando com o contexto do comando interno, com base na seleção de local e continuando para o contexto mais externo, com base na seleção global. Comandos adicionados ao menu principal estão imediatamente disponíveis para execução de scripts. Para obter mais informações, consulte [MenuCommands Vs. OleMenuCommands](../../misc/menucommands-vs-olemenucommands.md) e [objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md).  
   
-  Para definir novos menus e barras de ferramentas, descrevê-los em um arquivo de tabela de comando do Visual Studio (. VSCT). O modelo de pacote do Visual Studio cria esse arquivo para você, juntamente com os elementos necessários para dar suporte a quaisquer comandos, barras de ferramentas e editores que você selecionou no modelo. Como alternativa, você pode escrever seu próprio arquivo. VSCT, usando o esquema xml descrito aqui: [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
+  Para definir novos menus e barras de ferramentas, descrevê-los em um arquivo de tabela de comando do Visual Studio (. VSCT). O modelo de pacote do Visual Studio cria esse arquivo para você, juntamente com os elementos necessários para dar suporte a quaisquer comandos, barras de ferramentas e editores que você selecionou no modelo. Como alternativa, você pode escrever seu próprio arquivo. VSCT, usando o esquema xml descrito aqui: [Referência de esquema XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   
   Para obter mais informações sobre como trabalhar com arquivos. VSCT, consulte [tabela de comando do Visual Studio (. VSCT) arquivos](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).  
   
@@ -69,4 +64,3 @@ Menus e barras de ferramentas são que os maneira como os usuários acessam coma
 ## <a name="related-sections"></a>Seções relacionadas  
  [Roteamento de comando em VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)  
  Explica o roteamento de comando em VSPackages.
-

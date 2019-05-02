@@ -1,14 +1,9 @@
 ---
 title: Estender diagramas de camada | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - layer diagrams, creating extensions
 - layer models
@@ -16,13 +11,13 @@ ms.assetid: 83fca301-b008-485a-87eb-218050e71451
 caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 20d84c91ef30ae549b8fa59893d439a06467ed33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766923"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066072"
 ---
 # <a name="extend-layer-diagrams"></a>Estender diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +26,15 @@ Você pode escrever código para criar e atualizar diagramas de camada e também
   
  Para obter mais informações sobre diagramas de camada, consulte:  
   
--   [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)  
+- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)  
   
--   [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
+- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)  
   
--   [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Criar diagramas de camada por meio de código](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)  
+- [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Requisitos  
+## <a name="prereqs"></a> Requisitos  
  Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:  
   
 - Visual Studio  
@@ -67,12 +62,9 @@ Você pode escrever código para criar e atualizar diagramas de camada e também
   
 ## <a name="see-also"></a>Consulte também  
  [Definir e instalar uma extensão de modelagem](../modeling/define-and-install-a-modeling-extension.md)   
- [Diagramas de camada: referência](../modeling/layer-diagrams-reference.md)   
- [Diagramas de camada: diretrizes](../modeling/layer-diagrams-guidelines.md)   
+ [Diagramas de camada: Referência](../modeling/layer-diagrams-reference.md)   
+ [Diagramas de camada: Diretrizes](../modeling/layer-diagrams-guidelines.md)   
  [Criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md)   
  [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)   
  [Gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Abrir um modelo UML usando a API do Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)
-
-
-

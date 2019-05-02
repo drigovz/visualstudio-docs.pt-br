@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5e7762b50d486f50ed59f489ef45641908d61612
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: c672103c0426f2d49eb47aa41014ee13ff0ecae9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565951"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 
@@ -41,7 +41,7 @@ Por padrão, `DBDirect` métodos são criados em um TableAdapter que pode ser ex
 
 ## <a name="to-save-new-records-from-an-object-to-a-database"></a>Para salvar novos registros de um objeto em um banco de dados
 
--   Criar os registros passando os valores para o `TableAdapter.Insert` método.
+- Criar os registros passando os valores para o `TableAdapter.Insert` método.
 
      O exemplo a seguir cria um novo registro de cliente na `Customers` , passando os valores na tabela do `currentCustomer` do objeto para o `TableAdapter.Insert` método.
 
@@ -50,7 +50,7 @@ Por padrão, `DBDirect` métodos são criados em um TableAdapter que pode ser ex
 
 ## <a name="to-update-existing-records-from-an-object-to-a-database"></a>Para atualizar registros existentes de um objeto para um banco de dados
 
--   Modificar os registros chamando o `TableAdapter.Update` método, passando os novos valores para atualizar o registro e passando os valores originais para localizar o registro.
+- Modificar os registros chamando o `TableAdapter.Update` método, passando os novos valores para atualizar o registro e passando os valores originais para localizar o registro.
 
     > [!NOTE]
     > O objeto precisa manter os valores originais e passá-los para o `Update` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.
@@ -62,7 +62,7 @@ Por padrão, `DBDirect` métodos são criados em um TableAdapter que pode ser ex
 
 ## <a name="to-delete-existing-records-from-a-database"></a>Para excluir registros existentes de um banco de dados
 
--   Excluir registros chamando o `TableAdapter.Delete` método e passar os valores originais para localizar o registro.
+- Excluir registros chamando o `TableAdapter.Delete` método e passar os valores originais para localizar o registro.
 
     > [!NOTE]
     > O objeto precisa manter os valores originais e passá-los para o `Delete` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.

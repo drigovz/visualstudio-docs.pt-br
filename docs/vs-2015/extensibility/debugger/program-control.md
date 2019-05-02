@@ -1,46 +1,41 @@
 ---
 title: Controle do programa | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 8102bc488d5c74f751fb93584016aa6904fbe2d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438081"
 ---
 # <a name="program-control"></a>Controle do programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 No Visual Studio de depuração, todos os procedimentos passo a passo e continuando rotinas ocorrerem no nível do programa:  
   
--   Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro  
+- Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro  
   
--   Ou seja, executar, continuando sair do modo de depuração  
+- Ou seja, executar, continuando sair do modo de depuração  
   
--   Passo a passo para a próxima instrução  
+- Passo a passo para a próxima instrução  
   
--   Continuando com o modo de depuração atual  
+- Continuando com o modo de depuração atual  
   
--   Suspender os threads contidos pelo programa  
+- Suspender os threads contidos pelo programa  
   
--   Retomar os threads contidos pelo programa  
+- Retomar os threads contidos pelo programa  
   
 > [!NOTE]
->  Exibindo a pilha de chamadas é implementada no nível do thread. Para enumerar as informações do quadro ao exibir a pilha de chamadas para um thread, você deve implementar todos os métodos do [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.  
+> Exibindo a pilha de chamadas é implementada no nível do thread. Para enumerar as informações do quadro ao exibir a pilha de chamadas para um thread, você deve implementar todos os métodos do [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.  
   
 ## <a name="methods-of-program-control"></a>Métodos de controle do programa  
  A tabela a seguir mostra os métodos de [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) que deve ser implementada para um mecanismo de depuração minimamente funcional (DES) e o controle de execução.  
@@ -55,4 +50,3 @@ No Visual Studio de depuração, todos os procedimentos passo a passo e continua
   
 ## <a name="see-also"></a>Consulte também  
  [Controle de execução e avaliação de estado](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

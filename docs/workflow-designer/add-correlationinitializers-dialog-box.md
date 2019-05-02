@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82bc9908535fe555030f3e9e4d6699dc6d0b6509
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 21c030295d325ea1ee4d546356f8cda5ef6ffd3f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946645"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>Adicione a caixa de diálogo CorrelationInitializers
 
@@ -44,5 +44,4 @@ A tabela a seguir descreve os elementos de (UI) de interface do usuário para o 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Adicionar caixa de diálogo correlação](http://msdn.microsoft.com/en-us/9e41a149-e8ab-41b1-8886-ea06a63041b6)
 - [Caixa de diálogo Inicializar Correlação](../workflow-designer/initialize-correlation-dialog-box.md)

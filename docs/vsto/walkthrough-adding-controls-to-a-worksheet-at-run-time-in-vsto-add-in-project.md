@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4ff27d54d14cd514c3bef1ce712fb6f2b9753e4c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04de1e652aae1de91695029c9af66c4ad331f789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982106"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-runtime-in-vsto-add-in-project"></a>Passo a passo: Adicionar controles a uma planilha em tempo de execução no projeto de suplemento do VSTO
   Você pode adicionar controles para qualquer planilha aberta usando um suplemento do VSTO do Excel. Este passo a passo demonstra como usar a faixa de opções para permitir que os usuários adicionar um <xref:Microsoft.Office.Tools.Excel.Controls.Button>, um <xref:Microsoft.Office.Tools.Excel.NamedRange>e um <xref:Microsoft.Office.Tools.Excel.ListObject> para uma planilha. Para obter informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
@@ -40,49 +40,49 @@ ms.locfileid: "56611341"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Excel
+- Excel
 
 ## <a name="create-a-new-excel-vsto-add-in-project"></a>Criar um novo projeto de suplemento do VSTO do Excel
  Comece criando um projeto de suplemento do VSTO do Excel.
 
 ### <a name="to-create-a-new-excel-vsto-add-in-project"></a>Para criar um novo projeto de suplemento do VSTO do Excel
 
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Excel com o nome **ExcelDynamicControls**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Excel com o nome **ExcelDynamicControls**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Adicione uma referência para o **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. Essa referência é necessário adicionar programaticamente um controle dos Windows Forms a uma planilha posteriormente neste passo a passo.
+2. Adicione uma referência para o **Microsoft.Office.Tools.Excel.v4.0.Utilities.dll** assembly. Essa referência é necessário adicionar programaticamente um controle dos Windows Forms a uma planilha posteriormente neste passo a passo.
 
 ## <a name="provide-a-ui-to-add-controls-to-a-worksheet"></a>Fornecer uma interface do usuário para adicionar controles a uma planilha
  Adicione uma guia personalizada à faixa de opções do Excel. Os usuários podem selecionar as caixas de seleção na guia para adicionar controles a uma planilha.
 
 #### <a name="to-provide-a-ui-to-add-controls-to-a-worksheet"></a>Para fornecer uma interface do usuário para adicionar controles a uma planilha
 
-1.  No menu **Projeto**, clique em **Adicionar Novo Item**.
+1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** e, em seguida, clique em **adicionar**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** e, em seguida, clique em **adicionar**.
 
      Um arquivo chamado **Ribbon1.cs** ou **Ribbon1.vb** abre no Designer de faixa de opções e exibe um guia padrão e um grupo.
 
-3.  Do **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste um controle caixa de seleção **group1**.
+3. Do **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste um controle caixa de seleção **group1**.
 
-4.  Clique em **CheckBox1** para selecioná-lo.
+4. Clique em **CheckBox1** para selecioná-lo.
 
-5.  No **propriedades** janela, altere as propriedades a seguir.
+5. No **propriedades** janela, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**Button**|
     |**Rótulo**|**Button**|
 
-6.  Adicionar uma segunda caixa de seleção para **group1**e, em seguida, altere as propriedades a seguir.
+6. Adicionar uma segunda caixa de seleção para **group1**e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
     |**Nome**|**NamedRange**|
     |**Rótulo**|**NamedRange**|
 
-7.  Adicionar uma terceira caixa de seleção para **group1**e, em seguida, altere as propriedades a seguir.
+7. Adicionar uma terceira caixa de seleção para **group1**e, em seguida, altere as propriedades a seguir.
 
     |Propriedade|Valor|
     |--------------|-----------|
@@ -94,33 +94,33 @@ ms.locfileid: "56611341"
 
 ### <a name="to-add-controls-to-a-worksheet"></a>Para adicionar controles a uma planilha
 
-1.  No Designer de faixa de opções, clique duas vezes **botão**.
+1. No Designer de faixa de opções, clique duas vezes **botão**.
 
      O <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click> manipulador de eventos do **botão** caixa de seleção é aberto no Editor de códigos.
 
-2.  Substitua o `Button_Click` manipulador de eventos com o código a seguir.
+2. Substitua o `Button_Click` manipulador de eventos com o código a seguir.
 
      Esse código usa o `GetVstoObject` método para obter um item de host que representa a primeira planilha na pasta de trabalho e, em seguida, adiciona um <xref:Microsoft.Office.Tools.Excel.Controls.Button> controle para a célula selecionada atualmente.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
      [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
 
-3.  Na **Gerenciador de soluções**, selecione *Ribbon1.cs* ou *Ribbon1.vb*.
+3. Na **Gerenciador de soluções**, selecione *Ribbon1.cs* ou *Ribbon1.vb*.
 
-4.  Sobre o **modo de exibição** menu, clique em **Designer**.
+4. Sobre o **modo de exibição** menu, clique em **Designer**.
 
-5.  No Designer de faixa de opções, clique duas vezes **NamedRange**.
+5. No Designer de faixa de opções, clique duas vezes **NamedRange**.
 
-6.  Substitua o `NamedRange_Click` manipulador de eventos com o código a seguir.
+6. Substitua o `NamedRange_Click` manipulador de eventos com o código a seguir.
 
      Esse código usa o `GetVstoObject` método para obter um item de host que representa a primeira planilha na pasta de trabalho e, em seguida, define um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para a célula selecionada no momento ou células.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
      [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
 
-7.  No Designer de faixa de opções, clique duas vezes **ListObject**.
+7. No Designer de faixa de opções, clique duas vezes **ListObject**.
 
-8.  Substitua o `ListObject_Click` manipulador de eventos com o código a seguir.
+8. Substitua o `ListObject_Click` manipulador de eventos com o código a seguir.
 
      Esse código usa o `GetVstoObject` método para obter um item de host que representa a primeira planilha na pasta de trabalho e, em seguida, define um <xref:Microsoft.Office.Tools.Excel.ListObject> para a célula selecionada no momento ou células.
 
@@ -137,16 +137,16 @@ ms.locfileid: "56611341"
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>Para remover os controles de planilha
 
-1.  Na **Gerenciador de soluções**, selecione *ThisAddIn.cs* ou *ThisAddIn. vb*.
+1. Na **Gerenciador de soluções**, selecione *ThisAddIn.cs* ou *ThisAddIn. vb*.
 
-2.  Sobre o **modo de exibição** menu, clique em **código**.
+2. Sobre o **modo de exibição** menu, clique em **código**.
 
-3.  Adicione o seguinte método à classe `ThisAddIn`. Esse código obtém a primeira planilha na pasta de trabalho e, em seguida, usa o `HasVstoObject` método para verificar se a planilha tem um objeto de planilha gerado. Se o objeto de planilha gerado tem controles, o código obtém esse objeto de planilha e itera através da coleção de controle, removendo os controles.
+3. Adicione o seguinte método à classe `ThisAddIn`. Esse código obtém a primeira planilha na pasta de trabalho e, em seguida, usa o `HasVstoObject` método para verificar se a planilha tem um objeto de planilha gerado. Se o objeto de planilha gerado tem controles, o código obtém esse objeto de planilha e itera através da coleção de controle, removendo os controles.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
      [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
 
-4.  No c#, você deve criar um manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos. Você pode colocar esse código no `ThisAddIn_Startup` método. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Substitua o `ThisAddIn_Startup` método com o código a seguir.
+4. No c#, você deve criar um manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos. Você pode colocar esse código no `ThisAddIn_Startup` método. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md). Substitua o `ThisAddIn_Startup` método com o código a seguir.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
 
@@ -155,25 +155,25 @@ ms.locfileid: "56611341"
 
 ### <a name="to-test-the-solution"></a>Para testar a solução.
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
-2.  Selecione qualquer célula em Sheet1.
+2. Selecione qualquer célula em Sheet1.
 
-3.  Clique o **Add-Ins** guia.
+3. Clique o **Add-Ins** guia.
 
-4.  No **group1** , clique em **botão**.
+4. No **group1** , clique em **botão**.
 
      Um botão aparece na célula selecionada.
 
-5.  Selecione uma célula diferente em Sheet1.
+5. Selecione uma célula diferente em Sheet1.
 
-6.  No **group1** , clique em **NamedRange**.
+6. No **group1** , clique em **NamedRange**.
 
      Um intervalo nomeado é definido para a célula selecionada.
 
-7.  Selecione uma série de células em Sheet1.
+7. Selecione uma série de células em Sheet1.
 
-8.  No **group1** , clique em **ListObject**.
+8. No **group1** , clique em **ListObject**.
 
      Um objeto de lista é adicionado para as células selecionadas.
 
@@ -184,7 +184,7 @@ ms.locfileid: "56611341"
 ## <a name="next-steps"></a>Próximas etapas
  Você pode aprender mais sobre os controles em projetos de suplemento do VSTO do Excel deste tópico:
 
--   Para saber mais sobre como salvar os controles em uma planilha, consulte o VSTO do Excel Add-in dinâmico Controls Sample em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
+- Para saber mais sobre como salvar os controles em uma planilha, consulte o VSTO do Excel Add-in dinâmico Controls Sample em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Soluções do Excel](../vsto/excel-solutions.md)

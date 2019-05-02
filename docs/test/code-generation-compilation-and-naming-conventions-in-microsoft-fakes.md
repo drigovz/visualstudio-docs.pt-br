@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822755"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 
@@ -20,8 +20,8 @@ Este artigo discute problemas e opções na compilação e geração de código 
 
 **Requisitos**
 
--   Visual Studio Enterprise
--   Um projeto do .NET Framework
+- Visual Studio Enterprise
+- Um projeto do .NET Framework
 
 > [!NOTE]
 > Projetos do .NET Standard não têm suporte.
@@ -62,23 +62,23 @@ Por exemplo, o arquivo *.fakes* a seguir gera stubs para tipos nos namespaces Sy
 
 As cadeias de caracteres de filtro usam uma gramática simples para definir como a correspondência deve ser feita:
 
--   Filtros não diferenciam maiúsculas de minúsculas por padrão; os filtros executam uma correspondência de subcadeia de caracteres:
+- Filtros não diferenciam maiúsculas de minúsculas por padrão; os filtros executam uma correspondência de subcadeia de caracteres:
 
      `el` corresponde a "hello"
 
--   Adicionar `!` ao final do filtro torna essa uma correspondência precisa que diferencia maiúsculas e minúsculas:
+- Adicionar `!` ao final do filtro torna essa uma correspondência precisa que diferencia maiúsculas e minúsculas:
 
      `el!` não corresponde a "hello"
 
      `hello!` corresponde a "hello"
 
--   Adicionar `*` ao final do filtro faz com que ele corresponda ao prefixo da cadeia de caracteres:
+- Adicionar `*` ao final do filtro faz com que ele corresponda ao prefixo da cadeia de caracteres:
 
      `el*` não corresponde a "hello"
 
      `he*` corresponde a "hello"
 
--   Vários filtros em uma lista separada por ponto e vírgula são combinados como uma disjunção:
+- Vários filtros em uma lista separada por ponto e vírgula são combinados como uma disjunção:
 
      `el;wo` corresponde a "hello" e "world"
 
@@ -114,9 +114,9 @@ O gerador de código do Fakes gera tipos de shim e tipos de stub que são visív
 
  Se o assembly com shims tiver um nome forte e você quiser acessar tipos internos do assembly:
 
--   Ambos seu assembly de teste e o assembly do Fakes devem ter nomes fortes.
+- Ambos seu assembly de teste e o assembly do Fakes devem ter nomes fortes.
 
--   Adicione as chaves públicas do assemblies do Fakes e do teste aos atributos **InternalsVisibleToAttribute** nos assemblies com shims. Veja como os atributos de exemplo no código de assembly com shims ficariam quando o assembly com shims tivesse nome forte:
+- Adicione as chaves públicas do assemblies do Fakes e do teste aos atributos **InternalsVisibleToAttribute** nos assemblies com shims. Veja como os atributos de exemplo no código de assembly com shims ficariam quando o assembly com shims tivesse nome forte:
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ O build de assemblies do Fakes pode aumentar significativamente o tempo de build
 
 De seus projetos de teste de unidade, faça uma referência aos assemblies do Fakes compilados que são colocados em FakesAssemblies na pasta do projeto.
 
-1.  Crie uma nova biblioteca de classes com a versão de tempo de execução do .NET que corresponde aos seus projetos de teste. Vamos chamá-lo de Fakes.Prebuild. Remova o arquivo *class1.cs* do projeto, pois ele não é necessário.
+1. Crie uma nova biblioteca de classes com a versão de tempo de execução do .NET que corresponde aos seus projetos de teste. Vamos chamá-lo de Fakes.Prebuild. Remova o arquivo *class1.cs* do projeto, pois ele não é necessário.
 
-2.  Adicione uma referência a todos os assemblies do System e de terceiros para os quais você precisa do Fakes.
+2. Adicione uma referência a todos os assemblies do System e de terceiros para os quais você precisa do Fakes.
 
-3.  Adicione um arquivo *.fakes* para cada um dos assemblies e crie.
+3. Adicione um arquivo *.fakes* para cada um dos assemblies e crie.
 
-4.  Do seu projeto de teste
+4. Do seu projeto de teste
 
-    -   Certifique-se de que você tem uma referência para a DLL de tempo de execução do Fakes:
+    - Certifique-se de que você tem uma referência para a DLL de tempo de execução do Fakes:
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Para cada assembly para o qual você criou o Fakes, adicione uma referência ao arquivo DLL correspondente na pasta *Fakes.Prebuild\FakesAssemblies* do projeto.
+    - Para cada assembly para o qual você criou o Fakes, adicione uma referência ao arquivo DLL correspondente na pasta *Fakes.Prebuild\FakesAssemblies* do projeto.
 
 ### <a name="avoid-assembly-name-clashing"></a>Evitar conflitos entre nomes de assembly
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 As regras a seguir são aplicadas recursivamente:
 
--   Já que o Fakes usa C# para gerar os assemblies do Fakes, qualquer caractere que produziria um token do C# inválido é escapado para "_" (sublinhado).
+- Já que o Fakes usa C# para gerar os assemblies do Fakes, qualquer caractere que produziria um token do C# inválido é escapado para "_" (sublinhado).
 
--   Se um nome resultante corresponde a qualquer membro do tipo declarativo, um esquema de numeração é usado, acrescentando um contador de dois dígitos, começando por 01.
+- Se um nome resultante corresponde a qualquer membro do tipo declarativo, um esquema de numeração é usado, acrescentando um contador de dois dígitos, começando por 01.
 
 ## <a name="see-also"></a>Consulte também
 

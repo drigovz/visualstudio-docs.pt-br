@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432181"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 
@@ -85,7 +85,7 @@ Consulte: [Expondo as cores para os usuários finais](../../extensibility/ux-gui
 
 ![Ferramentas &gt; caixa de diálogo Opções](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog 0301")<br />Ferramentas &gt; caixa de diálogo Opções
 
-##  <a name="BKMK_TheVSColorService"></a> O serviço VSColor
+## <a name="BKMK_TheVSColorService"></a> O serviço VSColor
 
 Visual Studio fornece um serviço de cor de ambiente, também chamado de serviço VSColor ou o serviço de cor do shell. Esse serviço permite que você associe os valores de cor de seus elementos de interface do usuário a um conjunto que contém as cores para cada tema de cores de nome-valor. O serviço de VSColor deve ser usado para todos os elementos de interface do usuário, para que as cores automaticamente alterada para refletir o tema selecionado pelo usuário atual e para que a interface do usuário associado ao serviço de cor de ambiente serão integradas novos temas em futuras versões do Visual Studio.
 
@@ -112,7 +112,6 @@ IVsUIShell2::GetVSSysColorEx(VSSYSCOLOR dwSysColIndex, DWORD *pdwRGBval)
 No arquivo VSShell80.idl, a enumeração `__VSSYSCOLOREX` tem constantes de cores do shell. Para usá-la, passe como o valor de índice qualquer um dos valores a partir de `enum __VSSYSCOLOREX` documentados no MSDN ou um índice regular número que o sistema Windows API, `GetSysColor`, aceita. Isso obtém de volta o valor RGB da cor que deve ser usado no segundo parâmetro.
 
 Se armazenar uma caneta ou um pincel com uma nova cor, você deve `AdviseBroadcastMessages` (fora do shell do Visual Studio) e escutar `WM_SYSCOLORCHANGE` e `WM_THEMECHANGED` mensagens.
-
 
 Para acessar o serviço de cor em código nativo, você fará uma chamada que é semelhante a esta:
 
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
+## <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
 
 ### <a name="overview"></a>Visão geral
 
@@ -331,7 +330,7 @@ Vários elementos de interface do usuário comuns já têm cores de alto contras
 | WindowFrame | -Borda IDE |
 | WindowText | -Em primeiro plano de guia ocultar automaticamente<br />-Primeiro plano de guia de janela de ferramenta selecionada<br />– Guia da janela de documento sem foco e primeiro plano de guia provisória sem foco ou não selecionado<br />-Árvore em primeiro plano do modo de exibição padrão e passe o mouse sobre o glifo não selecionado<br />-Borda da guia selecionada de janela de ferramenta<br />-Barra de rolagem glifo, borda e tela de fundo do elevador |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
 
 ### <a name="overview"></a>Visão geral
 

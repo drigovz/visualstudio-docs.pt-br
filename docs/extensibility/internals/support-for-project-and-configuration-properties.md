@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98755912674670d614d4b063075500427c1d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2a0858a3f1f1e98f7f6d0bde87036126ec31320f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428824"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) pode exibir propriedades do projeto e configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário pode definir propriedades de seu aplicativo.
@@ -51,7 +51,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
  É responsabilidade do projeto para persistir as propriedades do projeto e a configuração do arquivo de projeto.
 
 > [!NOTE]
->  Um projeto pode otimizar persistência persistentes somente valores de propriedade que são diferentes dos seus valores padrão.
+> Um projeto pode otimizar persistência persistentes somente valores de propriedade que são diferentes dos seus valores padrão.
 
 ## <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
  O `Microsoft.VisualStudio.Package.SettingsPage` classe implementa as páginas de propriedades de projeto e a configuração. A implementação padrão de `SettingsPage` oferece propriedades públicas para um usuário em uma grade de propriedade genérica. O `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` método seleciona classes derivadas de `SettingsPage` para grades de propriedades do projeto. O `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` método seleciona classes derivadas de `SettingsPage` para grades de propriedades de configuração. O tipo de projeto deve substituir esses métodos para selecionar as páginas de propriedades apropriadas.
@@ -63,7 +63,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persistir as propriedades de configuração.
 
   > [!NOTE]
-  >  As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.
+  > As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.
 
   A classe derivar de `SettingsPage` deve implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para persistir as propriedades do projeto ou a configuração do arquivo de projeto.
 
@@ -81,7 +81,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../code-quality/includes/vsprv
  O <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, e <xref:System.ComponentModel.DescriptionAttribute> atributos determinam o layout, rotulagem e a descrição das propriedades de projeto e configuração em uma página de propriedades genérico. Esses atributos determinar a categoria, nome de exibição e descrição da opção, respectivamente.
 
 > [!NOTE]
->  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
+> Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](https://github.com/tunnelvisionlabs/MPFProj10).
 
  Considere o fragmento de código a seguir:
 

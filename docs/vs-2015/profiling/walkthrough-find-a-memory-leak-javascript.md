@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439657"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Instruções passo a passo: localizar uma perda de memória (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Passo a passo: Localizar uma perda de memória (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
@@ -34,18 +34,18 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Executando o aplicativo de teste do analisador de memória de JavaScript  
   
-1.  No Visual Studio, escolha **Arquivo**, **Novo** e **Projeto**.  
+1. No Visual Studio, escolha **Arquivo**, **Novo** e **Projeto**.  
   
-2.  Escolha **JavaScript** no painel esquerdo e escolha **Windows**, **Windows 8** e, em seguida, **aplicativos Universal** ou **Windows Phone**.  
+2. Escolha **JavaScript** no painel esquerdo e escolha **Windows**, **Windows 8** e, em seguida, **aplicativos Universal** ou **Windows Phone**.  
   
     > [!IMPORTANT]
-    >  Os resultados do uso de memória mostrados neste tópico são testados em relação a um aplicativo do Windows 8.  
+    > Os resultados do uso de memória mostrados neste tópico são testados em relação a um aplicativo do Windows 8.  
   
-3.  Escolha o modelo de projeto **Aplicativo em Branco** no painel central.  
+3. Escolha o modelo de projeto **Aplicativo em Branco** no painel central.  
   
-4.  Na caixa **Nome**, especifique um nome como `JS_Mem_Tester` e escolha **OK**.  
+4. Na caixa **Nome**, especifique um nome como `JS_Mem_Tester` e escolha **OK**.  
   
-5.  No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
+5. No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -55,9 +55,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     ```  
   
     > [!IMPORTANT]
-    >  Se estiver usando um modelo de aplicativo universal do Windows 8.1, será necessário atualizar os códigos HTML e CSS nos projetos .Windows e .WindowsPhone.  
+    > Se estiver usando um modelo de aplicativo universal do Windows 8.1, será necessário atualizar os códigos HTML e CSS nos projetos .Windows e .WindowsPhone.  
   
-6.  Abra default.css e adicione o seguinte código CSS:  
+6. Abra default.css e adicione o seguinte código CSS:  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     }  
     ```  
   
-7.  Abra default.js e substitua todo o código por este:  
+7. Abra default.js e substitua todo o código por este:  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     })();  
     ```  
   
-8.  Pressione a tecla F5 para iniciar a depuração. Verifique se o botão **Provocar perda de memória** aparece na página.  
+8. Pressione a tecla F5 para iniciar a depuração. Verifique se o botão **Provocar perda de memória** aparece na página.  
   
 9. Volte para o Visual Studio (Alt+Tab) e pressione Shift+F5 para parar a depuração.  
   
@@ -137,7 +137,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 1. Na barra de ferramentas **Depurar**, na lista **Iniciar Depuração**, escolha o destino de depuração para o projeto atualizado: um dos Emuladores ou **Simulator** do Windows Phone.  
   
    > [!TIP]
-   >  Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Para um aplicativo da Windows Store, você também pode escolher **Computador Local** ou **Computador Remoto** nesta lista. Entretanto, a vantagem de usar o emulador ou o simulador é que você pode colocá-lo ao lado do Visual Studio e facilmente alternar entre o aplicativo em execução e o analisador de memória JavaScript. Para obter mais informações, consulte [Executar aplicativos do Visual Studio](../debugger/run-store-apps-from-visual-studio.md) e [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
@@ -152,7 +152,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     Quando você escolhe o botão, o código de manipulação de eventos em default.js faz um trabalho que resultará em um vazamento de memória. Você usará isso para fins de diagnóstico.  
   
    > [!TIP]
-   >  Repetir o cenário que você quer testar em termos de vazamento de memória facilita a filtragem de informações que não interessam, como objetos adicionados ao heap durante a inicialização do aplicativo ou ao carregar uma página.  
+   > Repetir o cenário que você quer testar em termos de vazamento de memória facilita a filtragem de informações que não interessam, como objetos adicionados ao heap durante a inicialização do aplicativo ou ao carregar uma página.  
   
 5. No aplicativo em execução, alterne para o Visual Studio (Alt+Tab).  
   
@@ -171,14 +171,14 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     ![A linha de base do instantâneo e o instantâneo 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  O Emulador do Windows Phone não mostra a captura de tela do aplicativo na hora em que o instantâneo é capturado.  
+   > O Emulador do Windows Phone não mostra a captura de tela do aplicativo na hora em que o instantâneo é capturado.  
   
 9. Mude para o aplicativo e escolha o botão **Provocar perda de memória** novamente.  
   
 10. Mude para o Visual Studio e escolha **Obter uma imagem instantânea do heap** pela terceira vez.  
   
     > [!TIP]
-    >  Ao colocar um terceiro instantâneo nesse fluxo de trabalho, você pode filtrar as alterações do instantâneo de linha de base para o segundo instantâneo que não estejam associadas a vazamentos de memória. Por exemplo, pode haver alterações previstas, como atualização de cabeçalhos e rodapés em uma página, que criarão algumas alterações no uso de memória, mas poderão não estar relacionadas a vazamentos.  
+    > Ao colocar um terceiro instantâneo nesse fluxo de trabalho, você pode filtrar as alterações do instantâneo de linha de base para o segundo instantâneo que não estejam associadas a vazamentos de memória. Por exemplo, pode haver alterações previstas, como atualização de cabeçalhos e rodapés em uma página, que criarão algumas alterações no uso de memória, mas poderão não estar relacionadas a vazamentos.  
   
      Esta ilustração mostra o Instantâneo 2 e o Instantâneo 3.  
   
@@ -191,7 +191,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     - O tamanho do heap (mostrado pela seta para cima vermelha à esquerda) aumentou em vários KB em comparação com o Instantâneo 1.  
   
       > [!IMPORTANT]
-      >  Os valores exatos de uso da memória para o tamanho do heap dependem do destino de depuração.  
+      > Os valores exatos de uso da memória para o tamanho do heap dependem do destino de depuração.  
   
     - O número de objetos no heap (mostrado pela seta para cima vermelha à direita) aumentou em comparação com o Instantâneo 1. Um objeto foi adicionado (+1) e nenhum objeto foi removido (-0).  
   
@@ -222,9 +222,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
       Algum conhecimento dos aplicativos ajuda neste ponto: Escolhendo a **vazamento de memória** botão deve remover um elemento DIV e adicionar um elemento, portanto, o código não parece estar funcionando corretamente (ou seja, está vazando memória). A próxima seção explica como corrigir isso.  
   
     > [!TIP]
-    >  Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
+    > Às vezes, localizar um objeto em relação ao objeto `Global` pode ajudar a identificar esse objeto. Para isso, abra o menu de atalho do identificador e escolha **Mostrar na exibição de raiz**.  
   
-##  <a name="FixingMemory"></a> Corrigindo o problema de memória  
+## <a name="FixingMemory"></a> Corrigindo o problema de memória  
   
 1. Usando os dados revelados pelo criador de perfis, você examina o código que é responsável por remover elementos DOM com ID de "item". Isso ocorre na função `initialize()`.  
   

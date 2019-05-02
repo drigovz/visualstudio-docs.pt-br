@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e535ca76fd7b85d8267c0c002ffc8090430c5f0d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d1072e6e9a2b097d9d2f50cc372ee8ba621e3d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582067"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
@@ -126,7 +126,19 @@ O menu de atalho na janela **Hierarquia de Chamada** contém os comandos a segui
 
 A janela **Pesquisador de Objetos** exibe descrições do código em seus projetos.
 
-Você pode filtrar os componentes que deseja exibir usando a lista suspensa na parte superior da janela. Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos *.ocx*. Não é possível adicionar componentes personalizados C++. Configurações personalizadas são salvas no diretório de aplicativos do usuário do Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+Você pode filtrar os componentes que deseja exibir usando a lista suspensa na parte superior da janela. Componentes personalizados podem incluir executáveis de código gerenciado, assemblies de biblioteca, bibliotecas de tipos e arquivos *.ocx*. Não é possível adicionar componentes personalizados C++.
+
+::: moniker range="vs-2017"
+
+Configurações personalizadas são salvas no diretório de aplicativos do usuário do Visual Studio, *%APPDATA%\Microsoft\VisualStudio\15.0\ObjBrowEX.dat*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+As configurações personalizadas são salvas no diretório de aplicativos do usuário do Visual Studio, *%APPDATA%\Microsoft\VisualStudio\16.0\ObjBrowEX.dat*.
+
+::: moniker-end
 
 O painel esquerdo do **Pesquisador de Objetos** mostra assemblies. É possível expandir os assemblies para exibir os namespaces que eles contêm e, em seguida, expandir os namespaces para exibir os tipos que eles contêm. Quando você seleciona um tipo, seus membros (como propriedades e métodos) são listados no painel direito. O painel inferior direito exibe informações detalhadas sobre o item selecionado.
 

@@ -21,12 +21,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 430f2a55f180428c781e7a8cbe1f78d3a0355128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1d9c456c22b4d3003d9435f813a4c3c1dc47881
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804353"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383380"
 ---
 # <a name="find-in-files"></a>Localizar em Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ O recurso Localizar nos Arquivos** permite pesquisar um conjunto especificado de
    Para cancelar uma operação de localização, pressione CTRL + BREAK.  
   
 > [!NOTE]
->  A ferramenta Localizar e Substituir não pesquisa diretórios com o conjunto de atributos `Hidden` ou `System`.  
+> A ferramenta Localizar e Substituir não pesquisa diretórios com o conjunto de atributos `Hidden` ou `System`.  
   
 ## <a name="find-what"></a>Localizar  
  Para pesquisar uma nova cadeia de caracteres de texto ou expressão, especifique-a na caixa. Para pesquisar qualquer uma das 20 cadeias de caracteres mais pesquisadas recentemente, abra a lista e escolha a cadeia de caracteres que você deseja pesquisar. Escolha o botão **Construtor de Expressões** adjacente se você desejar usar uma ou mais expressões regulares na cadeia de caracteres de pesquisa. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
@@ -53,10 +53,10 @@ O recurso Localizar nos Arquivos** permite pesquisar um conjunto especificado de
  A opção escolhida na lista suspensa **Examinar** determina se **Localizar nos Arquivos** pesquisa apenas em arquivos ativos ou em todos os arquivos armazenados em determinadas pastas. Selecione um escopo da pesquisa na lista ou clique no botão **Procurar (...)** para exibir a caixa de diálogo **Escolher Pastas de Pesquisa** e insira seu próprio conjunto de diretórios. Também é possível digitar um caminho diretamente na caixa **Examinar**.  
   
 > [!WARNING]
->  Com as opções **Solução Inteira** ou **Projeto Atual**, os arquivos de projeto e de solução não são pesquisados. Se você deseja examinar arquivos de projeto, escolha uma pasta de pesquisa.  
+> Com as opções **Solução Inteira** ou **Projeto Atual**, os arquivos de projeto e de solução não são pesquisados. Se você deseja examinar arquivos de projeto, escolha uma pasta de pesquisa.  
   
 > [!NOTE]
->  Se a opção **Examinar** selecionada fizer com que você pesquise um arquivo do qual você fez check-out do controle do código-fonte, apenas a versão desse arquivo que tiver sido baixada em seu computador local será pesquisada.  
+> Se a opção **Examinar** selecionada fizer com que você pesquise um arquivo do qual você fez check-out do controle do código-fonte, apenas a versão desse arquivo que tiver sido baixada em seu computador local será pesquisada.  
   
 ## <a name="include-subfolders"></a>Incluir subpastas  
  Especifica que as subpastas da pasta **Examinar** serão pesquisadas.  

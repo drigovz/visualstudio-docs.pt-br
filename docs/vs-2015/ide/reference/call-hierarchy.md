@@ -13,17 +13,16 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4846d00172c3d71be1f8a8dbdf68cf4e7fd1f065
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 41c7aa12e4adf2a757689670cdfed394f2a534c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433707"
 ---
 # <a name="call-hierarchy"></a>Hierarquia de chamadas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A Hierarquia de Chamada permite navegar pelo seu código exibindo todas as chamadas de e para um método, propriedade ou construtor selecionado. Isso permite compreender melhor como o código flui, bem como avaliar os efeitos das alterações no código. Você pode examinar vários níveis de código para exibir cadeias complexas de chamadas de método e pontos de entrada adicionais para o código, o que permite explorar todos os caminhos de execução possíveis.  
   
  A Hierarquia de Chamada está disponível em tempo de design, diferente da pilha de chamadas que é exibida pelo depurador.  
@@ -56,7 +55,7 @@ Janela de Hierarquia de Chamada
 - A **Janela de Definição de Código**, se estiver aberta, exibe o código do membro selecionado. Esta janela está disponível em C# e C++. Para obter mais informações sobre a janela, consulte [Exibindo a estrutura do código](../../ide/viewing-the-structure-of-code.md).  
   
 > [!NOTE]
->  A Hierarquia de Chamada não encontra referências do grupo ao método, que incluem os locais a que um método é adicionado como manipulador de eventos ou é atribuído a um delegado. Para localizar todas as referências a um método, você pode usar o comando **Localizar Todas as Referências**.  
+> A Hierarquia de Chamada não encontra referências do grupo ao método, que incluem os locais a que um método é adicionado como manipulador de eventos ou é atribuído a um delegado. Para localizar todas as referências a um método, você pode usar o comando **Localizar Todas as Referências**.  
   
 ## <a name="shortcut-menu-items"></a>Itens do menu de atalho  
  A tabela a seguir descreve várias opções de menu de atalho que são disponibilizadas quando você clica com o botão direito do mouse em um nó no painel do modo de exibição de árvore.  

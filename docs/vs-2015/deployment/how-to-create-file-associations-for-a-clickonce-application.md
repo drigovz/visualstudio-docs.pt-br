@@ -1,14 +1,9 @@
 ---
-title: 'Como: criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,15 +15,15 @@ ms.assetid: 835230c8-3177-440f-85e3-e40f1d8b4f9d
 caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fd1bd7965f0277ce1d3d900be6ee10db097eeb3f
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 42c7a65625d8e21ceff1070ccbc66d5881af853d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909101"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928151"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como criar associações de arquivo para um aplicativo ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como: Criar associações de arquivos para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos podem ser associados com uma ou mais extensões de nome de arquivo, para que o aplicativo será iniciado automaticamente quando o usuário abre um arquivo desses tipos. Adicionando suporte à extensão de nome do arquivo para um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é simples.  
@@ -49,7 +44,7 @@ ms.locfileid: "49909101"
   
    - `progid`: Uma cadeia de caracteres que identifica exclusivamente o tipo de arquivo, para marcá-la no registro.  
   
-   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, consulte [Como incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
+   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, confira [Como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).  
   
      Para obter um exemplo de `file` e `fileAssociation` elementos, consulte [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).  
   
@@ -59,12 +54,9 @@ ms.locfileid: "49909101"
   
     `mage -Sign WindowsFormsApp1.exe.manifest -CertFile mycert.pfx`  
   
-    Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
+    Para obter mais informações, confira [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)  
   
 ## <a name="see-also"></a>Consulte também  
  [\<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md)   
  [Manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md)   
  [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
-
-
-

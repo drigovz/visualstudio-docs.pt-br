@@ -1,26 +1,21 @@
 ---
 title: As fábricas de editor | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - editor factories
 ms.assetid: cf4e8164-3546-441d-b465-e8a836ae7216
 caps.latest.revision: 21
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 74ea8d296db643e74654f9016c1f5bff4f34c6d8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2de1fc8440bd33a526da62dbb4c7937800484aaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117870"
 ---
 # <a name="editor-factories"></a>Fábricas de editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,15 +45,14 @@ Uma fábrica de editor cria objetos do editor e coloca-os em um quadro de janela
 ## <a name="the-editor-factory-registration-process"></a>O processo de registro de fábrica de Editor  
  O seguinte processo ocorre quando o Visual Studio carregará seu editor usando sua fábrica de editor:  
   
-1.  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chamadas do sistema de projeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
+1. O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] chamadas do sistema de projeto <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.  
   
-2.  Esse método retorna a fábrica do editor. Atrasos Visual do Studio carregar o pacote do editor, no entanto, até que um sistema de projeto precisa, na verdade, o editor.  
+2. Esse método retorna a fábrica do editor. Atrasos Visual do Studio carregar o pacote do editor, no entanto, até que um sistema de projeto precisa, na verdade, o editor.  
   
-3.  Quando um sistema de projeto requer o editor, o Visual Studio chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, um método especializado que retorna o modo de exibição de documento e o documento de objetos de dados.  
+3. Quando um sistema de projeto requer o editor, o Visual Studio chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A>, um método especializado que retorna o modo de exibição de documento e o documento de objetos de dados.  
   
-4.  Se chama pelo Visual Studio para sua fábrica de editor usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> retornar um objeto de dados de documento e um objeto de exibição de documento, o Visual Studio, em seguida, cria a janela do documento, coloca o objeto de exibição de documento nele e faz uma entrada no documento em execução tabela (RDT) para o objeto de dados do documento.  
+4. Se chama pelo Visual Studio para sua fábrica de editor usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> retornar um objeto de dados de documento e um objeto de exibição de documento, o Visual Studio, em seguida, cria a janela do documento, coloca o objeto de exibição de documento nele e faz uma entrada no documento em execução tabela (RDT) para o objeto de dados do documento.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>   
  [Tabela de documentos em execução](../extensibility/internals/running-document-table.md)
-

@@ -94,17 +94,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac0f1d9fe779e1d2c3109b69bc29d8067fbebb2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97edc5419cb552f853a75817564a69dd175ec54b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783255"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666059"
 ---
 # <a name="resources-for-troubleshooting-integrated-development-environment-errors"></a>Recursos para solucionar problemas de erros de ambiente do ambiente integrado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. Se as informações na mensagem de erro não ajudarem você a resolver o problema, você pode consultar outros recursos, como artigos da Base de Dados de Conhecimento, a comunidade de desenvolvedores ou o suporte do produto.  
   
 ## <a name="knowledge-base-articles"></a>Artigos da Base de Dados de Conhecimento  
@@ -113,7 +112,7 @@ Nem todas as mensagens de erro têm um tópico de Ajuda específico associado. S
 ## <a name="the-developer-community"></a>A comunidade de desenvolvedores  
  Fóruns lhe permitem interagir com outros desenvolvedores e também com funcionários da Microsoft. Se encontrar um erro para o qual não é possível encontrar uma resolução, você pode postar perguntas sobre o problema em um fórum. Você também pode pesquisar grupos de notícias para ver outras pessoas postaram sobre o mesmo problema.  
   
- Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Comunidades Técnicas da Microsoft](http://go.microsoft.com/fwlink/?LinkID=144922).  
+ Você pode acessar fóruns, blogs, chats e outros recursos sobre no site das [Comunidades Técnicas da Microsoft](https://techcommunity.microsoft.com/).  
   
 ## <a name="product-support"></a>Suporte a produto  
  Se ainda tiver dúvidas após tentar os outros recursos, você pode contatar os serviços de suporte da Microsoft visitando o site de [Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obter informações sobre o suporte de produto disponível na sua área, consulte [Fale conosco](../../ide/talk-to-us.md).

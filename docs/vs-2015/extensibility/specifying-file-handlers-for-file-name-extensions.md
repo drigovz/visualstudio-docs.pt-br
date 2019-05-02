@@ -1,33 +1,28 @@
 ---
 title: Especificar identificadores de arquivo para extensões de nome de arquivo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 caps.latest.revision: 19
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d0a4f0547da10a4d519d315000a0f35a19a56287
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0fe2f26a959fc6a185bf244bfa4571846b7991a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51726241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447178"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Especificando identificadores de arquivo para extensões de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Há várias maneiras para determinar o aplicativo que lida com um arquivo que tem uma extensão de arquivo específico. Os verbos OpenWithList e OpenWithProgids são duas maneiras de especificar identificadores de arquivo na entrada de registro para a extensão de arquivo.  
   
-## <a name="openwithlist-verb"></a>Verbo OpenWithList  
+## <a name="openwithlist-verb"></a>OpenWithList Verb  
  Quando o botão direito do mouse um arquivo no Windows Explorer, você verá a **abrir** comando. Se mais de um produto é associado com uma extensão, você verá uma **abrir com** submenu.  
   
  Você pode registrar diferentes aplicativos para abrir uma extensão, definindo a chave de OpenWithList para a extensão de arquivo em HKEY_CLASSES_ROOT. Os aplicativos listados sob essa chave para uma extensão de arquivo aparecem sob o **programas recomendados** título na **abrir com** caixa de diálogo. O exemplo a seguir mostra os aplicativos registrados para abrir a extensão de arquivo. vcproj.  
@@ -41,7 +36,7 @@ HKEY_CLASSES_ROOT\
 ```  
   
 > [!NOTE]
->  As chaves especificando aplicativos estão na lista em HKEY_CLASSES_ROOT\Applications.  
+> As chaves especificando aplicativos estão na lista em HKEY_CLASSES_ROOT\Applications.  
   
  Adicionando uma chave OpenWithList, você declara que seu aplicativo dá suporte a uma extensão de arquivo, mesmo se outro aplicativo assume a propriedade da extensão. Isso pode ser uma versão futura do seu aplicativo ou outro aplicativo.  
   
@@ -57,7 +52,7 @@ HKEY_CLASSES_ROOT\
  Você pode registrar aplicativos diferentes que são capazes de abrir uma extensão de arquivo específico adicionando ProgIDs com controle de versão como valores para o HKEY_CLASSES_ROOT\\*\<extensão >* \OpenWithProgids chave. Essa chave do registro contém uma lista de ProgIDs alternativo associado com a extensão de arquivo. Os aplicativos associados com os ProgIDs listados serão exibidos na **abrir com**_nome do produto_ submenu. Se o mesmo aplicativo é especificado em ambos os `OpenWithList` e `OpenWithProgids` chaves, o sistema operacional mescla as duplicatas.  
   
 > [!NOTE]
->  O `OpenWithProgids` chave só é suportada no Windows XP. Como outros sistemas operacionais ignoram essa chave, não o use como o registro somente para manipuladores de arquivo. Use essa chave para proporcionar uma melhor experiência de usuário no Windows XP.  
+> O `OpenWithProgids` chave só é suportada no Windows XP. Como outros sistemas operacionais ignoram essa chave, não o use como o registro somente para manipuladores de arquivo. Use essa chave para proporcionar uma melhor experiência de usuário no Windows XP.  
   
  Adicione os ProgIDs desejados como valores do tipo REG_NONE. O código a seguir fornece um exemplo de registro de ProgIDs para uma extensão de arquivo (. *ext*).  
   
@@ -87,4 +82,3 @@ HKEY_CLASSES_ROOT\
 ## <a name="see-also"></a>Consulte também  
  [Sobre extensões de nome de arquivo](../extensibility/about-file-name-extensions.md)   
  [Registrar verbos para extensões de nome de arquivo](../extensibility/registering-verbs-for-file-name-extensions.md)
-

@@ -1,11 +1,8 @@
 ---
 title: Usando o Designer de atividade herdado | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 helpviewer_keywords:
 - activities, configuring
@@ -18,13 +15,13 @@ ms.assetid: 2fea8a05-6e58-423d-94bf-a822b15ffb80
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: a6c8aafe9eac26080bfbf57d06c7d512d1e1e62d
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49843425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855780"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Usando o designer herdado de atividades
 Este tópico descreve como usar o designer de atividade em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use o designer herdado na definição [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -38,13 +35,13 @@ Este tópico descreve como usar o designer de atividade em [!INCLUDE[wfd1](../in
   
 2. Selecione o **atividade** ou **atividade (com separação de código)** modelo.  
   
-   1.  Use o **atividade** modelo para criar uma atividade com a definição de atividade e o código do usuário no mesmo arquivo de código.  
+   1. Use o **atividade** modelo para criar uma atividade com a definição de atividade e o código do usuário no mesmo arquivo de código.  
   
-   2.  Use o **atividade (com separação de código)** modelo para criar uma atividade com a definição de atividade expressada como a marcação de fluxo de trabalho e o código do usuário em um arquivo separado código.  
+   2. Use o **atividade (com separação de código)** modelo para criar uma atividade com a definição de atividade expressada como a marcação de fluxo de trabalho e o código do usuário em um arquivo separado código.  
   
 3. Digite um nome de atividade ou mantenha o nome padrão e, em seguida, clique em **adicionar**.  
   
-   Você também pode criar um conjunto de atividades personalizadas, criando um novo projeto do tipo **biblioteca de atividades de fluxo de trabalho**. Para obter mais informações sobre esse tipo de projeto, consulte [como: criar uma biblioteca de atividades de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
+   Você também pode criar um conjunto de atividades personalizadas, criando um novo projeto do tipo **biblioteca de atividades de fluxo de trabalho**. Para obter mais informações sobre esse tipo de projeto, consulte [como: Criar uma biblioteca de atividades de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md).  
   
 ## <a name="configuring-an-activity"></a>Configurando uma atividade  
  Quando o designer de atividade estiver ativo, você pode usar o navegador de propriedade para configurar as propriedades listadas na tabela a seguir.  
@@ -64,5 +61,5 @@ Este tópico descreve como usar o designer de atividade em [!INCLUDE[wfd1](../in
  [Criação de atividades personalizadas](http://go.microsoft.com/fwlink?LinkID=65021)   
  [Atividades de fluxo de trabalho herdado](../workflow-designer/legacy-workflow-activities.md)   
  [Exemplos de atividades personalizadas](http://go.microsoft.com/fwlink?LinkID=65022)   
- [Como: criar uma biblioteca de atividades de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
+ [Como: Criar uma biblioteca de atividades de fluxo de trabalho (herdado)](../workflow-designer/how-to-create-a-workflow-activity-library-legacy.md)   
  [Usando o Designer de Fluxo de Trabalho herdado](../workflow-designer/using-the-legacy-workflow-designer.md)

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3d698732e1f2362fbb9a536dc4e5a8e4cc412db
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ffbe0b8365948dc5a69edca390f308cb55ba5a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929390"
 ---
 # <a name="view-events-with-intellitrace-in-visual-studio-enterprise-c-visual-basic"></a>Exibir eventos com o IntelliTrace no Visual Studio Enterprise (C#, Visual Basic)
 
@@ -53,7 +53,7 @@ Você pode tentar depurar com apenas eventos do IntelliTrace. Os eventos do Inte
 
 ## <a name="start-debugging-and-view-intellitrace-events"></a>Iniciar a depuração e exibir eventos do IntelliTrace
 
-1. Inicie a depuração como de costume. (Pressione **F5** ou clique em **Depurar > Iniciar depuração**.
+1. Inicie a depuração como de costume. (Pressione **F5** ou clique em **Depurar > Iniciar depuração**.)
 
     > [!TIP]
     > Manter o **Locals** e **Autos** janelas abertas enquanto você estiver depurando para consultar e registrar os valores nessas janelas.

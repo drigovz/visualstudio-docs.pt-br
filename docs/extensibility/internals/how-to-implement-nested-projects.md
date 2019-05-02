@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: deb28fcce5f27b7a392b570c140bb959b30b596c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860757"
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: Implementar projetos aninhados
 
@@ -24,18 +24,18 @@ Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que
 
 ## <a name="create-nested-projects"></a>Criar projetos aninhados
 
-1.  O ambiente de desenvolvimento integrado (IDE) carrega as informações de inicialização e o arquivo de projeto do projeto pai, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. O projeto pai é criado e adicionado à solução.
+1. O ambiente de desenvolvimento integrado (IDE) carrega as informações de inicialização e o arquivo de projeto do projeto pai, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. O projeto pai é criado e adicionado à solução.
 
     > [!NOTE]
     > Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes que os projetos filho podem ser criados. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ele é necessário para os clientes, como o controle do código fonte (SCC) e **Gerenciador de soluções**.
 
      O projeto pai deve aguardar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método a ser chamado pelo IDE para criar seu aninhado (filho) projeto ou projetos.
 
-2.  As chamadas IDE `QueryInterface` no projeto pai para <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Se essa chamada for bem-sucedida, o IDE chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método do pai para abrir todos os projetos aninhados para o projeto pai.
+2. As chamadas IDE `QueryInterface` no projeto pai para <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject>. Se essa chamada for bem-sucedida, o IDE chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método do pai para abrir todos os projetos aninhados para o projeto pai.
 
-3.  As chamadas de projeto pai o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> método para notificar os ouvintes que aninhado projetos estão prestes a ser criado. Por exemplo, o SCC, está escutando a esses eventos para saber se as etapas no processo de criação de solução e projeto estão ocorrendo em ordem. Se as etapas ocorrerão fora de ordem, a solução não pode ser registrada com o controle do código fonte corretamente.
+3. As chamadas de projeto pai o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnBeforeOpeningChildren%2A> método para notificar os ouvintes que aninhado projetos estão prestes a ser criado. Por exemplo, o SCC, está escutando a esses eventos para saber se as etapas no processo de criação de solução e projeto estão ocorrendo em ordem. Se as etapas ocorrerão fora de ordem, a solução não pode ser registrada com o controle do código fonte corretamente.
 
-4.  As chamadas de projeto pai <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> método ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> método em cada um dos seus projetos filho.
+4. As chamadas de projeto pai <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProject%2A> método ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AddVirtualProjectEx%2A> método em cada um dos seus projetos filho.
 
      Você passa <xref:Microsoft.VisualStudio.Shell.Interop.__VSADDVPFLAGS> para o `AddVirtualProject` método para indicar que o projeto (aninhado) virtual deve ser adicionado à janela do projeto, excluída da compilação, adicionado ao controle do código fonte e assim por diante. `VSADDVPFLAGS` permite controlar a visibilidade do projeto aninhado e indicar qual funcionalidade está associada a ele.
 
@@ -43,15 +43,15 @@ Quando você cria um tipo de projeto aninhado, há várias etapas adicionais que
 
      Se não houver nenhum GUID disponível, como quando você adiciona um novo projeto aninhado, a solução cria um para o projeto no momento, ele é adicionado ao pai. É responsabilidade do projeto para manter esse GUID em seu arquivo de projeto do projeto pai. Se você excluir um projeto aninhado, o GUID para o projeto também pode ser excluído.
 
-5.  As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> método em cada projeto filho do projeto pai.
+5. As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren> método em cada projeto filho do projeto pai.
 
      O projeto pai deve implementar `IVsParentProject` se você quiser aninhar projetos. Mas o pai do projeto nunca chama `QueryInterface` para `IVsParentProject` , mesmo se ele tiver projetos pai abaixo dela. A solução lida com a chamada para `IVsParentProject` e, se ele for implementado, chama `OpenChildren` para criar os projetos aninhados. `AddVirtualProjectEX` sempre é chamado de `OpenChildren`. Nunca deve ser chamada pelo projeto pai para manter a hierarquia de eventos de criação na ordem.
 
-6.  As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> método no projeto filho.
+6. As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> método no projeto filho.
 
-7.  As chamadas de projeto pai o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> método para notificar os ouvintes que foram criados os projetos filho do pai.
+7. As chamadas de projeto pai o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpeningChildren%2A> método para notificar os ouvintes que foram criados os projetos filho do pai.
 
-8.  As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> método no projeto pai depois que todos os projetos filho foram abertos.
+8. As chamadas IDE a <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents.FireOnAfterOpenProject%2A> método no projeto pai depois que todos os projetos filho foram abertos.
 
      Se ele ainda não existir, o projeto pai cria um GUID para cada projeto aninhado chamando `CoCreateGuid`.
 

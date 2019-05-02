@@ -10,12 +10,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c439c5bbd35f4ece7ad57302737835622409b353
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 94f61902090c2ada0770a41375d5cb501b92580f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323582"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660733"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio C++ sistema extensibilidade e conjunto de ferramentas de integração do Project
 
@@ -55,7 +55,7 @@ Esses arquivos definem pouco por si só. Em vez disso, eles importarem outros ar
 
 Esses valores de propriedade especificam nomes de pastas sob o `$(VCTargetsPath)` pasta raiz:
 
-`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Tipo de aplicativo* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;< c58 > &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plataformas* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</c158><spanclass="notranslate">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;</C252>plataformas</span>\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Used when `$(ApplicationType)` is empty, for Windows Desktop projects) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
+`$(VCTargetsPath)`\\ &nbsp;&nbsp;&nbsp;&nbsp;*Tipo de aplicativo* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; `$(ApplicationType)` \\ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(ApplicationTypeRevision)`\\ &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *Plataformas* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)` \\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; *PlatformToolsets* \\ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)` &nbsp;&nbsp;&nbsp;&nbsp;plataformas\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Usado quando `$(ApplicationType)` está vazio, para projetos do Windows Desktop) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(Platform)`\\&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
 ### <a name="add-a-new-platform-toolset"></a>Adicionar um novo conjunto de ferramentas de plataforma
 
@@ -215,7 +215,7 @@ O `ClCompile` destino não deve ter todas as dependências, exceto o `SelectClCo
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>Tarefas do MSBuild para usar em destinos do conjunto de ferramentas
 
-Para invocar uma ferramenta de build real, o destino precisa chamar uma tarefa do MSBuild. Há um basic [tarefa Exec](../msbuild/exec-task.md) que permite que você especifique uma linha de comando para executar. No entanto, as ferramentas de build geralmente têm muitas opções, entradas. e as saídas para acompanhar para as compilações incrementais, então, faz mais sentido ter tarefas especiais para eles. Por exemplo, o `CL` tarefa converte as propriedades do MSBuild em CL.exe comutadores, grava-os em um arquivo de resposta e chama CL.exe. Ele também acompanha todos os arquivos de entrada e saídos para mais tarde as compilações incrementais. Para obter mais informações, consulte [compilação incremental e verificação atualizada](#incremental-build-and-up-to-date-check).
+Para invocar uma ferramenta de build real, o destino precisa chamar uma tarefa do MSBuild. Há um basic [tarefa Exec](../msbuild/exec-task.md) que permite que você especifique uma linha de comando para executar. No entanto, as ferramentas de build geralmente têm muitas opções, entradas. e as saídas para acompanhar para as compilações incrementais, então, faz mais sentido ter tarefas especiais para eles. Por exemplo, o `CL` tarefa converte as propriedades do MSBuild em CL.exe comutadores, grava-os em um arquivo de resposta e chama CL.exe. Ele também acompanha todos os arquivos de entrada e saídos para mais tarde as compilações incrementais. Para obter mais informações, consulte [compilações incrementais e verificações atualizadas](#incremental-builds-and-up-to-date-checks).
 
 O Microsoft.Cpp.Common.Tasks.dll implementa essas tarefas:
 
@@ -285,7 +285,6 @@ O MSBuild fornece essas classes de auxiliar para ler e gravar arquivos. tlog:
 O [FlatTrackingData](/dotnet/api/microsoft.build.utilities.flattrackingdata) classe pode ser usada para acesso de leitura e gravar arquivos. tlog e identificar entradas que são mais recentes de saídas, ou se uma saída está ausente. Ele é usado na verificação de atualização.
 
 Arquivos. tlog de linha de comando contêm informações sobre linhas de comando usado na compilação. Eles são usados apenas para compilações incrementais, verificações não atualizadas, para que o formato interno é determinado pela tarefa do MSBuild que produz-los.
-
 
 ### <a name="read-tlog-format"></a>Formato. tlog de leitura
 
@@ -416,9 +415,9 @@ O sistema de projeto do Visual C++ se baseia a [sistema de projeto do VS](https:
 
 ### <a name="project-property-pages"></a>Páginas de propriedades do projeto
 
-Para obter informações gerais de design, consulte [extensibilidade da plataforma - parte 1](https://blogs.msdn.microsoft.com/vsproject/2009/06/09/platform-extensibility-part-1/) e [extensibilidade da plataforma - parte 2](https://blogs.msdn.microsoft.com/vsproject/2009/06/18/platform-extensibility-part-2/).
+Para obter informações gerais de design, consulte [Framework Multi-Targeting para projetos do VC + +](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/).
 
-Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/ide/property-page-xml-files).
+Em termos simples, as páginas de propriedades que você verá na **propriedades do projeto** caixa de diálogo para um projeto C++ são definidos pela *regra* arquivos. Um arquivo de regra especifica um conjunto de propriedades para mostrar em uma página de propriedades e como e onde eles devem ser salvos no projeto de arquivos. Arquivos de regras são arquivos. XML que usam o formato Xaml. Os tipos usados para serializá-los são descritos em [xamltypes](/dotnet/api/microsoft.build.framework.xamltypes). Para obter mais informações sobre o uso de arquivos de regras em projetos, consulte [arquivos de regras do XML da página de propriedade](/cpp/build/reference/property-page-xml-files).
 
 Os arquivos de regra devem ser adicionados para o `PropertyPageSchema` grupo de itens:
 
@@ -636,8 +635,8 @@ Para obter informações sobre como criar arquivos VSIX, consulte [envio extens�
 
 ## <a name="additional-resources"></a>Recursos adicionais
 
-O sistema de compilação da Microsoft ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato extensível baseado em XML para arquivos de projeto. Você deve estar familiarizado com o basic [conceitos do MSBuild](../msbuild/msbuild-concepts.md) e com a forma [MSBuild para o Visual C++](/cpp/build/msbuild-visual-cpp-overview) funciona para estender o Visual C++ de sistema de projeto.
+O sistema de compilação da Microsoft ([MSBuild](../msbuild/msbuild.md)) fornece o mecanismo de compilação e o formato extensível baseado em XML para arquivos de projeto. Você deve estar familiarizado com o basic [conceitos do MSBuild](../msbuild/msbuild-concepts.md) e com a forma [MSBuild para o Visual C++](/cpp/build/reference/msbuild-visual-cpp-overview) funciona para estender o Visual C++ de sistema de projeto.
 
 O Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) fornece a extensão de APIs que são usadas por CPS e o sistema de projeto do Visual C++. Para uma visão geral de como o MEF é usado pelo CPS, consulte [CPS e MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) na [VSProjectSystem visão de geral de MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md).
 
-Você pode personalizar o sistema de compilação existente para adicionar etapas de compilação ou novos tipos de arquivo. Para obter mais informações, consulte [visão geral do MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp-overview) e [trabalhando com propriedades do projeto](/cpp/ide/working-with-project-properties).
+Você pode personalizar o sistema de compilação existente para adicionar etapas de compilação ou novos tipos de arquivo. Para obter mais informações, consulte [visão geral do MSBuild (Visual C++)](/cpp/build/reference/msbuild-visual-cpp-overview) e [trabalhando com propriedades do projeto](/cpp/build/working-with-project-properties).

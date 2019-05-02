@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: cf8b6c509e8a748060656f83f760fd245b852157
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418357"
 ---
 # <a name="legacy-language-service-essentials"></a>Conceitos básicos do serviço de linguagem herdado
 Você deve fornecer um serviço de linguagem para integrar uma linguagem de programação no Visual Studio. Este tópico explica os recursos disponíveis nos serviços de linguagem herdada.
@@ -26,7 +26,7 @@ Você deve fornecer um serviço de linguagem para integrar uma linguagem de prog
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
  Serviços de linguagem herdado fornecem os seguintes recursos:
 
@@ -41,7 +41,6 @@ Você deve fornecer um serviço de linguagem para integrar uma linguagem de prog
  Muitos desses recursos exigem que o serviço de linguagem para analisar o código-fonte. Você geralmente pode reutilizar os tokens e analisar o código para o compilador ou interpretador.
 
  Os recursos a seguir estão relacionados ao suporte para linguagens de programação, mas não fazem parte dos serviços de linguagem:
-
 
 | Recurso | Descrição |
 |-----------------------| - |

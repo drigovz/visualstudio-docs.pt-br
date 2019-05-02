@@ -14,17 +14,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c83f499560bf747843fe74ede4d2187a544bee8b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 15a6eeea6ebf75513419cc763b2e29a6b6264391
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54769149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436802"
 ---
 # <a name="item-metadata-in-task-batching"></a>Metadados de itens na separação de tarefas em lotes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tem a capacidade de dividir as listas de itens em categorias diferentes ou lotes com base nos metadados do item, além de executar uma tarefa uma vez com cada lote. Pode ser difícil entender exatamente quais itens estão sendo passados com qual lote. Este tópico aborda os cenários comuns a seguir, que envolvem o envio em lote.  
   
 - Divisão de uma lista de itens em lotes  
@@ -87,7 +86,7 @@ ms.locfileid: "54769149"
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pode dividir várias listas de itens em lotes com base nos mesmos metadados. Isso facilita a divisão listas de itens diferentes em lotes para criar vários assemblies. Por exemplo, você poderia ter uma lista de itens de arquivos .cs divididos em um lote de aplicativo e um lote de assembly e uma lista de itens de arquivos de recurso divididos em um lote de aplicativo e um lote de assembly. Você poderia então usar o envio em lote para passar essas listas de itens em uma tarefa e compilar ambos o aplicativo e o assembly.  
   
 > [!NOTE]
->  Se uma lista de itens sendo passada em uma tarefa não contiver itens com os metadados referenciados, cada item nessa lista será passado para todos os lotes.  
+> Se uma lista de itens sendo passada em uma tarefa não contiver itens com os metadados referenciados, cada item nessa lista será passado para todos os lotes.  
   
  O exemplo a seguir mostra como dividir uma lista com vários itens em lotes com base nos metadados do item. Cada uma das listas de itens `ExampColl` e `ExampColl2` é dividida em três lotes com base nos metadados do item `Number`. A presença de `%(Number)` no atributo `Text` notifica o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] de que o envio em lote deve ser realizado. As listas de itens `ExampColl` e `ExampColl2` são divididas em três lotes com base nos metadados `Number` e cada lote é passado separadamente para a tarefa.  
   

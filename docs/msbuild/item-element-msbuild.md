@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36824d78b2a4da68586b4ff3b39046bff936ff7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d94058f1f14f1da644cff672d73cd77e0840c68
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006786"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 Contém um item definido pelo usuário e seus metadados. Cada item usado em um projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] deve ser especificado como o filho de um elemento `ItemGroup`.
@@ -107,6 +107,7 @@ O exemplo de código a seguir mostra como declarar dois itens do tipo `CSFile`. 
     </CSFile>
 </ItemGroup>
 ```
+
 O exemplo de código a seguir mostra como usar o atributo `Update` para modificar os metadados em um arquivo chamado *somefile.cs* incluído por meio de um glob. (Disponível somente para projetos do .NET Core no Visual Studio 2017 ou posterior.)
 
 ```xml

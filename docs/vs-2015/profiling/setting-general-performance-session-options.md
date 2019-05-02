@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4585fcbf9f026349246e59eef1a018eeed68c848
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e135b92cad94f2154341ca79c785d9e40ccb000
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064746"
 ---
 # <a name="setting-general-performance-session-options"></a>Definindo opções de sessão de desempenho geral
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Você pode definir o método de coleção e convenções de nomenclatura de dado
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="choosing-data-collection-methods"></a>Escolhendo os métodos de coleta de dados  
  Definir o método de coleção base selecionando uma das opções em **Coleção de Perfis**. As opções são descritas seguindo a tabela a seguir:  

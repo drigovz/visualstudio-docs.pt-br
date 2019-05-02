@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847785"
 ---
 # <a name="how-to-debug-injected-code"></a>Como: Depurar código injetado
 
@@ -46,25 +46,25 @@ A janela **Desmontagem** mostra as instruções da linguagem assembly que corres
 
 ## <a name="to-turn-on-source-annotation"></a>Para ativar a anotação de origem
 
--   Clique com o botão direito do mouse na janela **Desmontagem** e escolha **Mostrar Código-Fonte** no menu de atalho.
+- Clique com o botão direito do mouse na janela **Desmontagem** e escolha **Mostrar Código-Fonte** no menu de atalho.
 
      Se você souber a localização de um atributo em uma janela de origem, poderá usar o menu de atalho para localizar o código injetado na janela **Desmontagem**.
 
 ## <a name="to-view-injected-code"></a>Para exibir o código injetado
 
-1.  O depurador deve estar no modo de interrupção.
+1. O depurador deve estar no modo de interrupção.
 
-2.  Em uma janela do código-fonte, coloque o cursor na frente do atributo cujo código injetado você deseja exibir.
+2. Em uma janela do código-fonte, coloque o cursor na frente do atributo cujo código injetado você deseja exibir.
 
-3.  Clique com o botão direito do mouse e selecione **Ir para Desmontagem** no menu de atalho.
+3. Clique com o botão direito do mouse e selecione **Ir para Desmontagem** no menu de atalho.
 
      Se a localização do atributo estiver perto do ponto de execução atual, você poderá selecionar a janela **Desmontagem** no menu **Depurar**.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Para exibir o código de desmontagem no ponto de execução atual
 
-1.  O depurador deve estar no modo de interrupção.
+1. O depurador deve estar no modo de interrupção.
 
-2.  No menu **Depurar**, escolha **Windows** e clique em **Desmontagem**.
+2. No menu **Depurar**, escolha **Windows** e clique em **Desmontagem**.
 
 ## <a name="see-also"></a>Consulte também
 

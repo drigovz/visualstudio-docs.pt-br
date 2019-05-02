@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 340d376308c9647895f814dbf6d3d438a98d75e2
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816085"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desenvolvimento móvel multiplataforma no Visual Studio
 
@@ -40,7 +40,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 |[Saiba mais sobre aplicativos universais do Windows no Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[Saiba mais sobre as semelhanças entre o Swift e o C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Ter o Android, iOS e Windows como destino por meio de uma única base de código
+### <a name="AndroidHTML"></a> Ter o Android, iOS e Windows como destino por meio de uma única base de código
 
  É possível criar aplicativos nativos para Android, iOS e Windows usando o C# ou o F# (no momento, não há suporte para o Visual Basic).  Para começar, instale o Visual Studio 2017 e selecione a opção **Desenvolvimento móvel com .NET** no instalador.
 
@@ -56,7 +56,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 
  Dependendo da complexidade do design dos aplicativos, você pode considerar criá-lo usando os modelos do *Xamarin.Forms* no grupo **Aplicativos Móveis** dos modelos do projeto. O Xamarin.Forms é um kit de ferramentas de interface do usuário que permite criar uma única interface que pode ser compartilhada entre o Android, iOS e Windows.  Ao compilar uma solução do Xamarin.Forms, você terá um aplicativo Android, um aplicativo iOS e um aplicativo Windows. Para obter mais detalhes, confira [Saiba mais sobre o desenvolvimento móvel com o Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) e [Documentação do Xamarin.Forms](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Compartilhar código entre aplicativos Android, iOS e Windows
+#### <a name="ShareHTML"></a> Compartilhar código entre aplicativos Android, iOS e Windows
 
  Se você não estiver usando o Xamarin.Forms e optar por criar para cada plataforma individualmente, compartilhe a maior parte do código que não é da interface do usuário entre os projetos de plataforma (Android, iOS e Windows). Isso inclui qualquer lógica de negócios, integração de nuvem, acesso a banco de dados ou qualquer outro código destinado ao .NET Framework. O único código que não pode ser compartilhado é aquele que é destinado a uma plataforma específica.
 
@@ -69,7 +69,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 |[Opções de compartilhamento de código](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Opções de compartilhamento de código com o .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Ter dispositivos Windows 10 como destino
+### <a name="WindowsHTML"></a> Ter dispositivos Windows 10 como destino
 
  ![Dispositivos Windows](../cross-platform/media/windowsdevices.png "Windows Devices")
 
@@ -84,7 +84,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 |[Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrar aplicativos para a UWP (Plataforma Universal do Windows)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Compilar um aplicativo para o Android, iOS e Windows (HTML/JavaScript)
+## <a name="HTML"></a> Compilar um aplicativo para o Android, iOS e Windows (HTML/JavaScript)
 
  ![Dispositivos Windows, iOS e Android](../cross-platform/media/homedevices.png "Windows, iOS, and Android devices")
 
@@ -96,7 +96,7 @@ Com as Ferramentas do Visual Studio para Xamarin, é possível ter o Android, o 
 
  ![Aplicativos híbridos de vários dispositivos com JavaScript](../cross-platform/media/multidevicehybridapps.png "Multi-device hybrid apps with Javascript")
 
- Para começar, instale o Visual Studio 2017 e escolha a funcionalidade **Desenvolvimento móvel com JavaScript** durante a instalação. As ferramentas do Cordova instalam automaticamente todos os softwares de terceiros necessários para criar seu aplicativo multiplataforma.
+ Para começar, instale o Visual Studio e escolha a funcionalidade **Desenvolvimento móvel com JavaScript** durante a instalação. As ferramentas do Cordova instalam automaticamente todos os softwares de terceiros necessários para criar seu aplicativo multiplataforma.
 
  Depois de instalar a extensão, abra o Visual Studio e crie um projeto **Aplicativo em Branco (Apache Cordova)**. Em seguida, é possível desenvolver seu aplicativo usando o JavaScript ou o Typescript. Também é possível adicionar plug-ins para estender a funcionalidade do aplicativo e as APIs de plug-ins são exibidas no IntelliSense à medida que o código é escrito.
 

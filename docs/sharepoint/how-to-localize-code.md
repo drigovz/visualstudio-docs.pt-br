@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 14eaa83f63a4f1c7f91bd2a0da3ad8d285f19113
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443087"
 ---
 # <a name="how-to-localize-code"></a>Como: Localizar código
   O código não localizado usa valores de cadeia de caracteres embutida. Para localizar as cadeias de caracteres de código, substitua-as por chamadas para <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que é um método que referencia recursos localizados.
@@ -27,30 +27,30 @@ ms.locfileid: "56639801"
 
 #### <a name="to-localize-code"></a>Para localizar o código
 
-1.  Na **Gerenciador de soluções**, abra o menu de atalho para um item de projeto e, em seguida, escolha **Add** > **módulo**.
+1. Na **Gerenciador de soluções**, abra o menu de atalho para um item de projeto e, em seguida, escolha **Add** > **módulo**.
 
      Escolha o **arquivo de recursos** modelo.
 
     > [!NOTE]
-    >  Certifique-se de adicionar o arquivo de recurso a um item de projeto do SharePoint para que a propriedade de tipo de implantação está disponível. Essa propriedade é necessária neste procedimento.
+    > Certifique-se de adicionar o arquivo de recurso a um item de projeto do SharePoint para que a propriedade de tipo de implantação está disponível. Essa propriedade é necessária neste procedimento.
 
-2.  Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como *Myappresources*.
+2. Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como *Myappresources*.
 
-3.  Repita as etapas 1 e 2 para adicionar arquivos de recurso separados ao item de projeto do SharePoint: um para cada idioma localizado.
+3. Repita as etapas 1 e 2 para adicionar arquivos de recurso separados ao item de projeto do SharePoint: um para cada idioma localizado.
 
      Use o mesmo nome de base para cada arquivo de recurso localizado, mas adicione a ID de cultura. Por exemplo, o nome de um alemão recurso localizado *MyAppResources.de-de. resx*.
 
-4.  Abra cada arquivo de recurso e adicione cadeias de caracteres localizadas. Use a mesma cadeia de caracteres IDs em cada arquivo.
+4. Abra cada arquivo de recurso e adicione cadeias de caracteres localizadas. Use a mesma cadeia de caracteres IDs em cada arquivo.
 
-5.  Altere o valor da **tipo de implantação** propriedade de cada arquivo de recurso para **AppGlobalResource** para fazer com que cada arquivo implante a pasta App_GlobalResources do servidor.
+5. Altere o valor da **tipo de implantação** propriedade de cada arquivo de recurso para **AppGlobalResource** para fazer com que cada arquivo implante a pasta App_GlobalResources do servidor.
 
-6.  Deixe o valor da **ação de compilação** propriedade de cada arquivo como **Embedded Resource**.
+6. Deixe o valor da **ação de compilação** propriedade de cada arquivo como **Embedded Resource**.
 
      Recursos incorporados são compilados na DLL do projeto.
 
-7.  Compile o projeto para criar o recurso de DLLs satélite.
+7. Compile o projeto para criar o recurso de DLLs satélite.
 
-8.  No **Designer de pacote**, escolha o **avançado** guia e, em seguida, adicione o assembly satélite.
+8. No **Designer de pacote**, escolha o **avançado** guia e, em seguida, adicione o assembly satélite.
 
 9. No **local** caixa, preceda uma pasta de ID de cultura para o caminho local, como *de-DE\\\<nome do Item de projeto >. Resources*.
 

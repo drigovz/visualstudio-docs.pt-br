@@ -2,7 +2,6 @@
 title: IRemoteDebugApplication110::SetDebuggerOptions | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 74662b6cfcfb641a59ac93c862bd38c6fa16a900
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: a61eabb307bda39fd871e8f5f4f7198256f0929e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54346768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383346"
 ---
 # <a name="iremotedebugapplication110setdebuggeroptions"></a>IRemoteDebugApplication110::SetDebuggerOptions
 Chamado para atualizar as opções do depurador. Esse método deve ser chamado após [IRemoteDebugApplication::ConnectDebugger](../../winscript/reference/iremotedebugapplication-connectdebugger.md). O [IRemoteDebugApplication::DisconnectDebugger](../../winscript/reference/iremotedebugapplication-disconnectdebugger.md) método redefine automaticamente para as opções padrão. O padrão de opções como 0 (SDO_NONE).  
   
 > [!IMPORTANT]
->  [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> [IRemoteDebugApplication Interface](../../winscript/reference/iremotedebugapplication-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

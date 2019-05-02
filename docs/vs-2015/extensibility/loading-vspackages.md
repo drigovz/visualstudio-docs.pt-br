@@ -1,27 +1,22 @@
 ---
 title: Carregar VSPackages | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, autoloading
 - VSPackages, loading
 ms.assetid: f4c3dcea-5051-4065-898f-601269649d92
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e351f49ea3e9579202e21868361e5d6f3d53b8fd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e20caff476e116ad59430692719bdbbe22c4914c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439772"
 ---
 # <a name="loading-vspackages"></a>Carregando VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +24,13 @@ ms.locfileid: "51753877"
 Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade é necessária. Por exemplo, um VSPackage é carregado quando o Visual Studio usa uma fábrica de projeto ou um serviço que implementa o VSPackage. Esse recurso é chamado de carregamento atrasado, que é usado sempre que possível para melhorar o desempenho.  
   
 > [!NOTE]
->  Visual Studio pode determinar determinadas informações de VSPackage, como os comandos que oferece um VSPackage, sem carregar o VSPackage.  
+> Visual Studio pode determinar determinadas informações de VSPackage, como os comandos que oferece um VSPackage, sem carregar o VSPackage.  
   
  Os VSPackages pode ser definidos como autoload em um contexto de (UI) de interface de usuário específico, por exemplo, quando uma solução é aberta. O <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> atributo define neste contexto.  
   
 ### <a name="autoloading-a-vspackage-in-a-specific-context"></a>Realiza o carregamento automático um VSPackage em um contexto específico  
   
--   Adicionar o `ProvideAutoLoad` de atributo para os atributos de VSPackage:  
+- Adicionar o `ProvideAutoLoad` de atributo para os atributos de VSPackage:  
   
     ```csharp  
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]  
@@ -48,11 +43,11 @@ Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade 
   
      Ver os campos enumerados de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> para obter uma lista de contextos de interface do usuário e seus valores GUID.  
   
--   Defina um ponto de interrupção no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
+- Defina um ponto de interrupção no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.  
   
--   Compile o VSPackage e iniciar a depuração.  
+- Compile o VSPackage e iniciar a depuração.  
   
--   Carregue uma solução ou crie um.  
+- Carregue uma solução ou crie um.  
   
      O VSPackage carrega e para no ponto de interrupção.  
   
@@ -61,7 +56,7 @@ Os VSPackages são carregados no Visual Studio apenas quando sua funcionalidade 
   
  Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> método para forçar um VSPackage ao carregar.  
   
--   Inserir este código para o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método do VSPackage que força o VSPackage outro ao carregar:  
+- Inserir este código para o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método do VSPackage que força o VSPackage outro ao carregar:  
   
     ```csharp  
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;  
@@ -134,4 +129,3 @@ public override void Unregister(RegistrationContext context)
   
 ## <a name="see-also"></a>Consulte também  
  [VSPackages](../extensibility/internals/vspackages.md)
-

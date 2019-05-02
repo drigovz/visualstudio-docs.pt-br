@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbd637fa78e9290402990bdbbc237e0f431e14d7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2a0638b0e644242e471ff30bc58d550675089695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691118"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434676"
 ---
 # <a name="sccdirdiff-function"></a>Função SccDirDiff
 Esta função exibe as diferenças entre o diretório local atual no disco do cliente e o projeto correspondente sob controle do código-fonte.
@@ -83,7 +83,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Se compatível com o plug-in, silenciosamente compara o diretório por meio de seu carimbo de hora ou, se não tiver suporte, recai em SCC_DIFF_QD_CHECKSUM ou SCC_DIFF_QD_CONTENTS.|
 
 > [!NOTE]
->  Essa função usa os mesmos sinalizadores de comando como o [SccDiff](../extensibility/sccdiff-function.md). No entanto, um plug-in de controle do código-fonte pode optar por não oferece suporte à operação "diff rápido" para diretórios.
+> Essa função usa os mesmos sinalizadores de comando como o [SccDiff](../extensibility/sccdiff-function.md). No entanto, um plug-in de controle do código-fonte pode optar por não oferece suporte à operação "diff rápido" para diretórios.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

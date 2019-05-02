@@ -2,7 +2,7 @@
 title: Guia do administrador do Visual Studio
 titleSuffix: ''
 description: Saiba mais sobre como implantar o Visual Studio em um ambiente corporativo.
-ms.date: 05/29/2018
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,20 +15,32 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: adfebd52f477328193a97a8fdb91300eef215fd7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+ms.openlocfilehash: e228ca06aee6644b57782b30a1a9b02b17435f9d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951347"
 ---
-# <a name="visual-studio-2017-administrator-guide"></a>Guia do administrador do Visual Studio 2017
+# <a name="visual-studio-administrator-guide"></a>Guia do administrador do Visual Studio
 
 Em ambientes corporativos, é comum que administradores de sistema implantem instalações para os usuários finais de um compartilhamento de rede ou usando software de gerenciamento de sistemas. Projetamos o mecanismo de instalação do Visual Studio para dar suporte à implantação corporativa, permitindo que os administradores de sistema tenham a capacidade de criar um local de instalação de rede, pré-configurar padrões de instalação, implantar chaves de produto durante o processo de instalação e gerenciar atualizações de produto depois de uma implementação com êxito. Este guia do administrador fornece orientações com base em cenários para implantações corporativas em ambientes de rede.
 
-## <a name="deploy-visual-studio-2017-in-an-enterprise-environment"></a>Implantar o Visual Studio 2017 em um ambiente empresarial
+## <a name="deploy-visual-studio-in-an-enterprise-environment"></a>Implantar o Visual Studio em um ambiente empresarial
 
-Você pode implantar o Visual Studio 2017 para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/productinfo/vs2017-system-requirements-vs). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+::: moniker range="vs-2017"
+
+Você pode implantar o Visual Studio para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/productinfo/vs2017-system-requirements-vs/). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Você pode implantar o Visual Studio para estações de trabalho cliente, contanto que cada computador de destino atenda a [requisitos mínimos de instalação](/visualstudio/releases/2019/system-requirements/). Se você estiver implantando por meio de softwares como o System Center ou por meio de um arquivo em lotes, normalmente é preciso percorrer as etapas a seguir:
+
+::: moniker-end
 
 1. [Crie um compartilhamento de rede que contenha os arquivos de produto do Visual Studio](create-a-network-installation-of-visual-studio.md) para um local de rede.
 
@@ -47,14 +59,14 @@ Você pode implantar o Visual Studio 2017 para estações de trabalho cliente, c
 8. [Atualize seu local de rede com as atualizações mais recentes](update-a-network-installation-of-visual-studio.md) do Visual Studio ao executar o comando usado na etapa 1 regularmente para adicionar componentes atualizados.
 
 > [!IMPORTANT]
-> Observe que as instalações de um compartilhamento de rede se “lembrarão” do seu local de origem. Isso significa que um reparo de um computador cliente pode ter que retornar para o compartilhamento de rede do qual o cliente foi instalado originalmente. Escolha cuidadosamente seu local de rede para que ele se alinhe com o tempo de vida esperado de execução de clientes do Visual Studio 2017 na sua organização.
+> Observe que as instalações de um compartilhamento de rede se “lembrarão” do seu local de origem. Isso significa que um reparo de um computador cliente pode ter que retornar para o compartilhamento de rede do qual o cliente foi instalado originalmente. Escolha cuidadosamente seu local de rede para que ele se alinhe com o tempo de vida esperado de execução de clientes do Visual Studio na sua organização.
 
 ## <a name="use-visual-studio-tools"></a>Usar ferramentas do Visual Studio
 
 Temos várias ferramentas disponíveis para ajudar você a [detectar e gerenciar instâncias do Visual Studio instaladas](tools-for-managing-visual-studio-instances.md) em computadores cliente.
 
 > [!TIP]
-> Além da documentação no guia do administrador, uma boa fonte de informações sobre a instalação do Visual Studio 2017 são os [Arquivos de Instalação do Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
+> Além da documentação no guia do administrador, uma boa fonte de informações sobre a instalação do Visual Studio são os [Arquivos de Instalação do Visual Studio](https://devblogs.microsoft.com/setup/tag/vs2017/).
 
 ## <a name="specify-customer-feedback-settings"></a>Especificar configurações de comentários do cliente
 
@@ -74,8 +86,8 @@ Para obter mais informações sobre configurações dos comentários do cliente,
 
 ## <a name="see-also"></a>Consulte também
 
-* [Instalar o Visual Studio 2017](install-visual-studio.md)
-* [Usar parâmetros de linha de comando para instalar o Visual Studio 2017](use-command-line-parameters-to-install-visual-studio.md)
+* [Instalar o Visual Studio](install-visual-studio.md)
+* [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
   * [Exemplos de parâmetro de linha de comando](command-line-parameter-examples.md)
   * [Referência de ID de componente e carga de trabalho](workload-and-component-ids.md)
 * [Criar uma instalação em rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
@@ -87,3 +99,4 @@ Para obter mais informações sobre configurações dos comentários do cliente,
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Atualizações de controle para implantações do Visual Studio](controlling-updates-to-visual-studio-deployments.md)
 * [Ferramentas para detectar e gerenciar instâncias do Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)

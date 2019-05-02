@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d85803e478931022e5872ddde2746b5b90feacf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 56ecbfcdaf22132f63df1ecf5eadba97dee426af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817267"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>Como: Aplicar cor a intervalos do Excel programaticamente
   Para aplicar uma cor ao texto dentro de um intervalo de células, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.
@@ -31,12 +31,12 @@ ms.locfileid: "56614123"
 
 ### <a name="to-apply-color-to-a-namedrange-control"></a>Para aplicar cor a um controle NamedRange
 
-1.  Criar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle na célula A1.
+1. Criar um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle na célula A1.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#65)]
      [!code-vb[Trin_VstcoreExcelAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#65)]
 
-2.  Definir a cor do texto no <xref:Microsoft.Office.Tools.Excel.NamedRange> controle.
+2. Definir a cor do texto no <xref:Microsoft.Office.Tools.Excel.NamedRange> controle.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#66)]
      [!code-vb[Trin_VstcoreExcelAutomation#66](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#66)]
@@ -45,7 +45,7 @@ ms.locfileid: "56614123"
 
 ### <a name="to-apply-color-to-a-native-excel-range-object"></a>Para aplicar cor a um objeto de intervalo do Excel nativo
 
-1.  Criar um intervalo na célula A1 e, em seguida, defina a cor do texto.
+1. Criar um intervalo na célula A1 e, em seguida, defina a cor do texto.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#67)]
      [!code-vb[Trin_VstcoreExcelAutomation#67](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#67)]

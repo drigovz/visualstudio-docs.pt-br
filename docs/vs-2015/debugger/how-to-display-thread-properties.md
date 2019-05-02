@@ -1,29 +1,24 @@
 ---
-title: 'Como: exibir propriedades do Thread | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Exibir propriedades do Thread | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 helpviewer_keywords:
 - thread properties
 ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 19eca8a7ff1ab7bcb6bf339a9de9ea402e3fec97
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 4a9d311563134850a7b2efd04eb6d6ed00dfcc25
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51793120"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58928079"
 ---
-# <a name="how-to-display-thread-properties"></a>Como exibir Propriedades do Thread
+# <a name="how-to-display-thread-properties"></a>Como: Exibir propriedades do thread
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para obter mais informações sobre um segmento listado na [exibição de Threads](../debugger/threads-view.md), use o [caixa de diálogo de propriedades do Thread](../debugger/thread-properties-dialog-box.md).  
@@ -35,6 +30,3 @@ Para obter mais informações sobre um segmento listado na [exibição de Thread
 2. Dos **modo de exibição** menu, escolha **propriedades**.  
   
    Caixas de diálogo de propriedades não são modais, portanto, você pode clicar em outro item em uma janela de exibição e a caixa de diálogo mostrará informações sobre o item selecionado.
-
-
-

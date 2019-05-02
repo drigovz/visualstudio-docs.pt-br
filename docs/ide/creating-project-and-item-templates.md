@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 603920aac4a7ba6d91996f3717927112ec8e5ec5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793446"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -23,11 +23,11 @@ Os modelos de projeto e de item fornecem stubs reutilizáveis que oferecem aos u
 
 ## <a name="visual-studio-templates"></a>modelos do Visual Studio
 
-Vários modelos de itens e de projetos predefinidos são instalados com o Visual Studio. Por exemplo, os modelos **Aplicativo do Windows Forms** e **Biblioteca de Classes** do Visual Basic e do C# que são mostrados na caixa de diálogo **Novo Projeto** são modelos de projeto. Os modelos de item são mostrados na caixa de diálogo **Adicionar Novo Item** e incluem itens como arquivos de código, arquivos XML, páginas HTML e folhas de estilo.
+Vários modelos de itens e de projetos predefinidos são instalados com o Visual Studio. É possível escolher entre esses modelos, tais como os modelos **Aplicativo Web ASP.NET** e **Biblioteca de Classes**, quando você cria um projeto. Os modelos de item, tais como arquivos de código, arquivos XML, páginas HTML e folhas de estilo, aparecem na janela **Adicionar Novo Item**.
 
 Esses modelos fornecem um ponto de partida para os usuários começarem a criar projetos ou expandir projetos existentes. Os modelos de projeto fornecem os arquivos que são necessários para um tipo de projeto específico, incluem referências de assembly padrão e definem opções de compilador e propriedades de projeto padrão. Os modelos de item podem variar em complexidade desde apenas um arquivo vazio com uma determinada extensão de arquivo até vários arquivos de código-fonte com código de stub, arquivos de informações de designer e recursos inseridos.
 
-É possível usar modelos instalados nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**, criar seus próprios modelos ou baixar e usar modelos criados pela comunidade. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como: Criar modelos de item](../ide/how-to-create-item-templates.md).
+Você pode usar modelos instalados, criar seus próprios modelos personalizados ou baixar e usar modelos criados pela comunidade. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como: Criar modelos de item](../ide/how-to-create-item-templates.md).
 
 ## <a name="contents-of-a-template"></a>Conteúdo de um modelo
 
@@ -35,13 +35,35 @@ Todos os modelos de projeto e de item, sejam eles instalados com o Visual Studio
 
 - Os arquivos a serem criados quando o modelo é usado. Eles incluem arquivos de código-fonte, recursos inseridos, arquivos de projeto e assim por diante.
 
-- Um arquivo *.vstemplate*, contendo os metadados necessários para exibir o modelo nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** e para criar um projeto ou um item do modelo. Para obter mais informações sobre arquivos *.vstemplate*, consulte [Parâmetros de modelo](../ide/template-parameters.md).
+::: moniker range="vs-2017"
+
+- Um arquivo *.vstemplate*, contendo os metadados necessários para criar um projeto ou item do modelo e para exibir o modelo nas janelas **Novo Projeto** e **Adicionar Novo Item**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Um arquivo *.vstemplate*, contendo os metadados necessários para criar um projeto ou item do modelo e para exibir o modelo na página **Criar um novo projeto** e ou na caixa de diálogo **Adicionar Novo Item**.
+
+::: moniker-end
+
+   Para obter mais informações sobre arquivos *.vstemplate*, consulte [Parâmetros de modelo](../ide/template-parameters.md).
 
 Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta correta, o Visual Studio os exibe automaticamente nos seguintes locais:
 
-- Os modelos de projeto aparecem na caixa de diálogo **Novo Projeto**.
+::: moniker range="vs-2017"
 
-- Os modelos de item aparecem na caixa de diálogo **Adicionar Novo Item**.
+- Os modelos de projeto aparecem na janela **Novo Projeto**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Os modelos de projeto aparecem na página **Criar um novo projeto**.
+
+::: moniker-end
+
+- Os modelos de item aparecem na janela **Adicionar Novo Item**.
 
 Para obter mais informações sobre pastas de modelo, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).
 

@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a45505a1a423243d54fbb4bb7bfd206dfa0adc2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: b5f75ee93b856442fd12560d198086489668fd9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429853"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Desinstalando um VSPackage com o Windows Installer
 Na maior parte, o Windows Installer pode desinstalar o VSPackage apenas por "Desfazer" o que fazia para instalar o VSPackage. As ações personalizadas discutidos [comandos que deve ser executado após a instalação](../../extensibility/internals/commands-that-must-be-run-after-installation.md) deve ser executado após a desinstalação também. Como as chamadas para devenv.exe ocorrerem logo antes da ação padrão de InstallFinalize para instalação e desinstalação, as entradas da tabela CustomAction e InstallExecuteSequence atender a ambos os casos.
 
 > [!NOTE]
->  Executar `devenv /setup` depois de desinstalar um pacote MSI.
+> Executar `devenv /setup` depois de desinstalar um pacote MSI.
 
  Como regra geral, se você adicionar ações personalizadas a um pacote do Windows Installer, você deve tratar essas ações durante a reversão e desinstalação. Se você adicionar ações personalizadas para se registrar o VSPackage, por exemplo, você deve adicionar ações personalizadas para cancelar o registro, muito.
 
 > [!NOTE]
->  É possível que um usuário instalar o VSPackage e, em seguida, desinstalar as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] com o qual ele está integrado. Você pode ajudar a garantir que a desinstalação do VSPackage funciona nesse cenário, eliminando as ações personalizadas que executam código com dependências no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> É possível que um usuário instalar o VSPackage e, em seguida, desinstalar as versões do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] com o qual ele está integrado. Você pode ajudar a garantir que a desinstalação do VSPackage funciona nesse cenário, eliminando as ações personalizadas que executam código com dependências no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="handling-launch-conditions-at-uninstall-time"></a>Manipulação de condições de inicialização no momento da desinstalação
  A ação padrão de LaunchConditions lê as linhas da tabela para mostrar o erro LaunchCondition mensagens se as condições não forem atendidas. Conforme as condições de inicialização geralmente são usadas para garantir que os requisitos de sistema são atendidos, você geralmente pode ignorar condições de inicialização durante a desinstalação, adicionando a condição, `NOT Installed`, à linha da tabela LaunchCondition LaunchConditions.
@@ -36,7 +36,7 @@ Na maior parte, o Windows Installer pode desinstalar o VSPackage apenas por "Des
  Uma alternativa é adicionar `OR Installed` para iniciar as condições que não são importantes durante a desinstalação. Isso garante que a condição sempre será true durante a desinstalação e, portanto, não exibirá a mensagem de erro de condição de inicialização.
 
 > [!NOTE]
->  `Installed` é a propriedade que instalador do Windows define quando ele detecta que o VSPackage já foi instalado no sistema.
+> `Installed` é a propriedade que instalador do Windows define quando ele detecta que o VSPackage já foi instalado no sistema.
 
 ## <a name="see-also"></a>Consulte também
 - [Windows Installer](https://msdn.microsoft.com/library/187d8965-c79d-4ecb-8689-10930fa8b3b5)

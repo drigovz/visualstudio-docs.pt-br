@@ -1,27 +1,22 @@
 ---
 title: Glossário do depurador do Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - glossary [Debugging SDK]
 - debugging [Debugging SDK], glossary
 ms.assetid: 4a2cfaab-1fbd-4a23-bd00-9ac4cc50d7fd
 caps.latest.revision: 14
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 37c0608b5684c9d16041ce89707dd81e665b0623
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 19d82f006bb1c37981f60e1a0b2710588eb0053c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757938"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58923262"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Glossário do depurador do Visual Studio
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -93,4 +88,3 @@ Estes são os termos usados no [!INCLUDE[vsprvs](../../../includes/vsprvs-md.md)
   
 ## <a name="see-also"></a>Consulte também  
  [Extensibilidade do depurador do Visual Studio](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)
-

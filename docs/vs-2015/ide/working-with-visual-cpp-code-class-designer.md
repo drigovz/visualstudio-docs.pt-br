@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: faf99505c556594ad1281b0341ac1cad9acbae81
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765006"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443389"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Trabalhando com código do Visual C++ (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,22 +33,22 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
   
  O Designer de Classe dá suporte aos seguintes elementos de código C++:  
   
--   Classe (semelhante a uma forma de classe gerenciada, com exceção de que ela pode ter vários relacionamentos de herança)  
+- Classe (semelhante a uma forma de classe gerenciada, com exceção de que ela pode ter vários relacionamentos de herança)  
   
--   Classe anônima (exibe o nome gerado do Modo de Exibição de Classe para o tipo anônimo)  
+- Classe anônima (exibe o nome gerado do Modo de Exibição de Classe para o tipo anônimo)  
   
--   Classe de modelo  
+- Classe de modelo  
   
--   Estrutura  
+- Estrutura  
   
--   Enum  
+- Enum  
   
--   Macro (exibe a exibição pós-processada da macro)  
+- Macro (exibe a exibição pós-processada da macro)  
   
--   DefTipo  
+- DefTipo  
   
 > [!NOTE]
->  Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md).  
+> Isso não é o mesmo que o diagrama de classe UML, que pode ser criado em um Projeto de Modelagem. Para obter mais informações, consulte [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md).  
   
 ## <a name="troubleshooting-type-resolution-and-display-issues"></a>Solucionando problemas de exibição e resolução de tipo  
   
@@ -84,27 +84,27 @@ O Designer de Classe exibe uma superfície de design visual chamada um *diagrama
 ### <a name="troubleshooting-other-error-messages"></a>Solucionando problemas de outras mensagens de erro  
  Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). Visite o [Fórum do Designer de Classe do Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Limitações de elementos de código C++  
+## <a name="limitations"></a> Limitações de elementos de código C++  
   
--   Quando um projeto do Visual C++ é carregado, o Designer de Classe funciona em modo somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.  
+- Quando um projeto do Visual C++ é carregado, o Designer de Classe funciona em modo somente leitura. É possível alterar o diagrama de classe, mas não é possível salvar alterações do diagrama de classe de volta no código-fonte.  
   
--   O Designer de Classe dá suporte somente à semântica nativa do C++. Para projetos do Visual C++ compilados em código gerenciado, o Designer de Classe visualizará apenas elementos de código que são tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o Designer de Classe não permitirá a visualização de elementos nos quais a propriedade `IsManaged` está definida como `true` (ou seja, tipos de valor e tipos de referência).  
+- O Designer de Classe dá suporte somente à semântica nativa do C++. Para projetos do Visual C++ compilados em código gerenciado, o Designer de Classe visualizará apenas elementos de código que são tipos nativos. Portanto, é possível adicionar um diagrama de classe a um projeto, mas o Designer de Classe não permitirá a visualização de elementos nos quais a propriedade `IsManaged` está definida como `true` (ou seja, tipos de valor e tipos de referência).  
   
--   Para projetos do Visual C++, o Designer de Classe lê somente a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o Designer de Classe não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que usa uma instrução `#include` para incluir outros arquivos, mas que não contém nenhuma definição de classe real, o Designer de Classe não exibirá nada novamente.  
+- Para projetos do Visual C++, o Designer de Classe lê somente a definição do tipo. Por exemplo, suponha que você defina um tipo em um arquivo de cabeçalho (.h) e defina seus membros em um arquivo de implementação (.cpp). Se você invocar “Exibir Diagrama de Classe” no arquivo de implementação (.cpp), o Designer de Classe não exibirá nada. Como outro exemplo, se você invocar “Exibir Diagrama de Classe” em um arquivo .cpp que usa uma instrução `#include` para incluir outros arquivos, mas que não contém nenhuma definição de classe real, o Designer de Classe não exibirá nada novamente.  
   
--   Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.  
+- Arquivos IDL (.idl), que definem interfaces COM e bibliotecas de tipo, não exibem diagramas, a menos que sejam compilados para o código C++ nativo.  
   
--   O Designer de Classe não dá suporte a funções globais e variáveis.  
+- O Designer de Classe não dá suporte a funções globais e variáveis.  
   
--   O Designer de Classe não dá suporte a uniões. Esse é um tipo especial de classe no qual a memória alocada é apenas a quantidade necessária para o maior membro de dados da união.  
+- O Designer de Classe não dá suporte a uniões. Esse é um tipo especial de classe no qual a memória alocada é apenas a quantidade necessária para o maior membro de dados da união.  
   
--   O Designer de Classe não exibe tipos de dados básicos como `int` e `char`.  
+- O Designer de Classe não exibe tipos de dados básicos como `int` e `char`.  
   
--   O Designer de Classe não exibe tipos que são definidos fora do projeto atual se o projeto não tem referências corretas para esses tipos.  
+- O Designer de Classe não exibe tipos que são definidos fora do projeto atual se o projeto não tem referências corretas para esses tipos.  
   
--   O Designer de Classe pode exibir tipos aninhados, mas não os relacionamentos entre um tipo aninhado e outros tipos.  
+- O Designer de Classe pode exibir tipos aninhados, mas não os relacionamentos entre um tipo aninhado e outros tipos.  
   
--   O Designer de Classe não pode exibir tipos que são nulos ou que derivam de um tipo nulo.  
+- O Designer de Classe não pode exibir tipos que são nulos ou que derivam de um tipo nulo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Projetando e exibindo classes e tipos](../ide/designing-and-viewing-classes-and-types.md)   

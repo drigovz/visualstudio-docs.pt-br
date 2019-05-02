@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408606"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Depurar aplicativos UWP usando a pré-busca de conteúdo no Visual Studio
 
@@ -30,14 +30,14 @@ ms.locfileid: "56701271"
 
 1. Inicie o aplicativo para registrar os URIs de conteúdo para pré-busca com o aplicativo. No menu **Depurar**, escolha **Iniciar Depuração** (atalho do teclado: F5).
 
-2. **No menu Depurar**, escolha **Parar Depuração** (atalho do teclado: Shift+F5).
+2. Sobre o **Debug** menu, escolha **parar depuração** (atalho de teclado: SHIFT + F5).
 
 3. No menu **Depurar**, escolha **Outros Destinos de Depuração** e escolha **Disparar Pré-busca de Aplicativo da Windows Store**.
 
    Agora você pode depurar, testar ou analisar seu aplicativo com os recursos Web pré-buscados.
 
 > [!NOTE]
->  Repita estas etapas sempre que adicionarem ou modificar o conteúdo da Web especificado.
+> Repita estas etapas sempre que adicionarem ou modificar o conteúdo da Web especificado.
 
 ## <a name="see-also"></a>Consulte também
-- [Postagem de blog: acionar a pré-busca para aplicativos Windows da Store no Visual Studio 2013 atualização 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+- [Postagem no blog: Acionar a pré-busca para aplicativos da Windows Store no Visual Studio 2013 atualização 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

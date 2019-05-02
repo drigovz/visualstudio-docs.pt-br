@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00bebd0a08acb9eeab369f5aa80b94e6805277b0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908557"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.
@@ -30,11 +30,11 @@ Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackag
 
  Interfaces são:
 
--   Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.
+- Obrigatórias: A entidade apropriada (controle de origem VSPackage, Stub de controle do código-fonte, projeto) deve implementar a interface.
 
--   Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.
+- Recomendado: A entidade deve implementar essa interface; Caso contrário, a funcionalidade de controle do código-fonte pode ser limitada.
 
--   Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.
+- Opcional: a entidade pode implementar essa interface para fornecer um conjunto mais rico de recursos.
 
 | Interface | Finalidade | Implementado por | Implementar? |
 | - | - |--------------------------|-------------|

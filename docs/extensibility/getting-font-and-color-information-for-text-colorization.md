@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417165"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obter informações de fonte e cor para a colorização do texto
 O processo que processa ou exibe texto coloridos serão em elementos de (UI) interface do usuário depende do tipo de projeto, sua tecnologia e desenvolvedor preferências. O **fontes e cores** página de propriedades armazena as configurações.
@@ -24,18 +24,18 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
  A maioria das implementações que exibem texto coloridos serão precisa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> e associados a interfaces para as configurações de exibição de apresentação, recuperar e armazenar texto.
 
 > [!NOTE]
->  Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de fontes e cores](../extensibility/font-and-color-overview.md).
+> Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de fontes e cores](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Obter informações de fonte e cor padrão
  Todos os as **fontes e cores** configurações de qualquer janela de exibição de texto devem ser especificadas na **itens de exibição** de um **categoria**. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).
 
 Para colorir, um VSPackage deverá obter o atual **fontes e cores** configurações. Um VSPackage pode obter as configurações atuais das seguintes maneiras, dependendo das suas necessidades:
 
--   Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acesso armazenados configurações de fonte e cor](../extensibility/accessing-stored-font-and-color-settings.md).
+- Use o mecanismo de persistência de fontes e cores para recuperar o estado atual ou armazenado. Para obter mais informações, consulte [acesso armazenados configurações de fonte e cor](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.
+- Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface de um serviço que fornece dados de fontes e cores para obter uma instância de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, se o VSPackage não é também o provedor de fonte e cor.
 
--   Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
+- Implementar a interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
 Para garantir que os resultados obtidos por meio de sondagem são atualizadas, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização é necessária antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.
 

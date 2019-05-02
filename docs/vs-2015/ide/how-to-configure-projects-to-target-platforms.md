@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 33c466d3c7a619de87baccd2713c9a595283d5ac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422795"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Como configurar projetos para destinar plataformas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791404"
   
 2. Na lista **Plataforma da solução ativa**, escolha uma plataforma de 64 bits para a solução a ter como destino e, em seguida, escolha o botão **Fechar**.  
   
-   1.  Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
+   1. Se a plataforma que você deseja não aparecer na lista **Plataforma da Solução Ativa**, escolha **Nova**.  
   
         A caixa de diálogo **Nova Plataforma da Solução** será exibida.  
   
-   2.  Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
+   2. Na lista **Digitar ou selecionar a nova plataforma**, escolha **x64**.  
   
        > [!NOTE]
-       >  Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
+       > Se você der um novo nome à sua configuração, precisará modificar as configurações no **Designer de Projeto** para ter a plataforma correta como destino.  
   
-   3.  Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
+   3. Se você quiser copiar as configurações de uma configuração de plataforma atual, escolha-a e selecione o botão **OK**.  
   
    As propriedades de todos os projetos que têm a plataforma de 64 bits como destino são atualizadas e o próximo build do projeto será otimizado para plataformas de 64 bits.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791404"
   
  A execução dessa tarefa varia de acordo com a linguagem de programação que você está usando. Consulte os seguintes links para obter mais informações:  
   
--   Para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consulte [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Para projetos [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consulte [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Para projetos [!INCLUDE[csprcs](../includes/csprcs-md.md)], consulte [Página de Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- Para projetos [!INCLUDE[csprcs](../includes/csprcs-md.md)], consulte [Página de Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Para projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consulte [/clr (Compilação do Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Para projetos [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consulte [/clr (Compilação do Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Consulte também  
  [Noções sobre plataformas de build](../ide/understanding-build-platforms.md)   

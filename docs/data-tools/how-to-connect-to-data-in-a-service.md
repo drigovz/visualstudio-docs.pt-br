@@ -1,5 +1,5 @@
 ---
-title: Como conectar a dados em um serviço
+title: 'Como: Conectar-se a dados em um serviço'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566906"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Como se conectar a dados em um serviço
+# <a name="how-to-connect-to-data-in-a-service"></a>Como: Conectar a dados em um serviço
 
 Você conecta seu aplicativo para os dados retornados de um serviço executando o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png) e selecionando **serviço** sobre o **escolher um tipo de fonte de dados**página.
 
@@ -36,20 +36,20 @@ Após a conclusão do assistente, uma referência de serviço é adicionada ao s
 
 ## <a name="to-connect-your-application-to-a-service"></a>Conectar seu aplicativo a um serviço
 
-1.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
+1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
-2.  Selecione **serviço** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.
+2. Selecione **serviço** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.
 
-3.  Insira o endereço do serviço que você deseja usar ou clique em **Discover** para localizar serviços na solução atual e, em seguida, clique em **vá**.
+3. Insira o endereço do serviço que você deseja usar ou clique em **Discover** para localizar serviços na solução atual e, em seguida, clique em **vá**.
 
-4.  Opcionalmente, você pode digitar um novo **Namespace** no lugar do valor padrão.
+4. Opcionalmente, você pode digitar um novo **Namespace** no lugar do valor padrão.
 
     > [!NOTE]
     > Clique em **Advanced** para abrir o [caixa de diálogo Configurar referência de serviço](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Clique em **Okey** para adicionar uma referência de serviço ao seu projeto.
+5. Clique em **Okey** para adicionar uma referência de serviço ao seu projeto.
 
-6.  Clique em **Finalizar**.
+6. Clique em **Finalizar**.
 
      A fonte de dados é adicionada para o **fontes de dados** janela.
 

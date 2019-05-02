@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911951"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento folder (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.
@@ -62,7 +62,7 @@ Especifica uma pasta que será adicionada ao projeto.
 
  Você pode usar qualquer um dos seguintes métodos para organizar itens de projeto em pastas em um modelo:
 
--   Incluir as pastas no modelo *. zip* do arquivo e adicioná-los ao projeto na *. vstemplate* arquivo, especificando o caminho para o arquivo no `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:
+- Incluir as pastas no modelo *. zip* do arquivo e adicioná-los ao projeto na *. vstemplate* arquivo, especificando o caminho para o arquivo no `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:
 
      `...`
 
@@ -72,7 +72,7 @@ Especifica uma pasta que será adicionada ao projeto.
 
      `...`
 
--   Incluir as pastas no modelo *. zip* do arquivo e adicioná-los ao projeto na *. vstemplate* arquivo com `Folder` elementos. Por exemplo:
+- Incluir as pastas no modelo *. zip* do arquivo e adicioná-los ao projeto na *. vstemplate* arquivo com `Folder` elementos. Por exemplo:
 
      `...`
 
@@ -86,7 +86,7 @@ Especifica uma pasta que será adicionada ao projeto.
 
      `...`
 
--   Não inclua pastas no modelo *. zip* do arquivo, mas adicionar pastas usando o `TargetFileName` atributo do `ProjectItem` elemento. Por exemplo:
+- Não inclua pastas no modelo *. zip* do arquivo, mas adicionar pastas usando o `TargetFileName` atributo do `ProjectItem` elemento. Por exemplo:
 
      `...`
 

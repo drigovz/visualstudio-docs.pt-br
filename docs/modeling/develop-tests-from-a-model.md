@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82f464e6c58c8403ffee34957f9bd49b39471114
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cc81e0f0912e2a32a6fc582420f4fef9823b9891
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982658"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 Você pode usar os requisitos e modelos de arquitetura para ajudar você a organizar os testes do seu sistema e seus componentes. Essa prática ajuda a garantir que você teste os requisitos que são importantes para os usuários e outros participantes e ajudá-lo a atualizar os testes rapidamente quando os requisitos são alterados. Se você usar [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)], você também pode manter os vínculos entre os modelos e os testes.
@@ -40,17 +40,17 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
 
  Essas diretrizes podem ser úteis:
 
--   Cada caso de uso deve ter vários testes, para caminhos principais e os resultados excepcionais.
+- Cada caso de uso deve ter vários testes, para caminhos principais e os resultados excepcionais.
 
--   Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir seu pós-condição, ou seja, a meta é obtida do que para descrever em detalhes os procedimentos que o usuário segue para alcançar a meta. Por exemplo, a pós-condição de ordem de uma refeição pode ser que um restaurante está preparando uma refeição para um cliente e que o cliente paga. A pós-condição é o critério que seus testes devem verificar.
+- Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir seu pós-condição, ou seja, a meta é obtida do que para descrever em detalhes os procedimentos que o usuário segue para alcançar a meta. Por exemplo, a pós-condição de ordem de uma refeição pode ser que um restaurante está preparando uma refeição para um cliente e que o cliente paga. A pós-condição é o critério que seus testes devem verificar.
 
--   Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:
+- Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:
 
-    -   Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.
+    - Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.
 
-    -   Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.
+    - Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.
 
--   Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.
+- Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.
 
 #### <a name="linking-tests-to-use-cases"></a>Testes de vinculação para casos de uso
  Se você estiver usando [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] para criar e executar seus testes, você pode organizar seus testes em itens de trabalho de história de usuário, requisito ou em caso de uso. Você pode vincular esses itens de trabalho para casos de uso em seu modelo. Isso permite que você rapidamente rastrear alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.
@@ -59,7 +59,7 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
 
 1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
 
-    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.
 
@@ -133,21 +133,21 @@ Assert (countAfter == countBefore = 1);
 
  Você pode vincular os testes para todos os tipos de elemento. Estes são alguns exemplos:
 
--   Vincule um caso de uso para os testes que exercitam a ele.
+- Vincule um caso de uso para os testes que exercitam a ele.
 
--   Gravar as cláusulas de pós-condição de casos de uso ou meta em comentários que estão vinculados ao caso de uso, e, em seguida, vincular testes para cada comentário.
+- Gravar as cláusulas de pós-condição de casos de uso ou meta em comentários que estão vinculados ao caso de uso, e, em seguida, vincular testes para cada comentário.
 
--   Escrever regras de invariáveis nos comentários em diagramas de classe ou diagramas de atividade e vinculá-los aos testes.
+- Escrever regras de invariáveis nos comentários em diagramas de classe ou diagramas de atividade e vinculá-los aos testes.
 
--   Vincular testes para um diagrama de atividade, ou para atividades individuais.
+- Vincular testes para um diagrama de atividade, ou para atividades individuais.
 
--   Vincule a um conjunto de testes para o componente ou o subsistema que ele testa.
+- Vincule a um conjunto de testes para o componente ou o subsistema que ele testa.
 
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular os testes a um elemento de modelo ou a relação
 
 1. No [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)], criar um requisito e um conjunto de testes de base nele.
 
-    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/overview?view=vsts).
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com o Team Foundation. Para obter mais informações, consulte [gerenciamento de projeto de ferramentas sobre Agile e Agile](/azure/devops/boards/backlogs/backlogs-overview?view=vsts).
 
 2. Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.
 

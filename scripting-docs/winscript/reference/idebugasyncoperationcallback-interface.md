@@ -2,7 +2,6 @@
 title: Interface IDebugAsyncOperationCallBack | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 84b5ac06d0b284a7a1f65481e0cdf8947117f260
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 664c09a8262f2be474ea51a4e36cff40414e1cd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821764"
 ---
 # <a name="idebugasyncoperationcallback-interface"></a>Interface IDebugAsyncOperationCallBack
 Fornece eventos de status relacionados ao andamento da avaliação de uma interface `IDebugAsyncOperation`.  

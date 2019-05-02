@@ -1,11 +1,18 @@
 ---
 layout: HubPage
 hide_bc: true
-title: Documentação do Visual Studio | Microsoft Docs
-description: 'Saiba como usar o Visual Studio 2017 para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.'
+title: Produtos do Visual Studio | Microsoft Docs
+description: Explore a família de produtos do Visual Studio.
 ms.topic: landing-page
 searchScope: []
+ms.openlocfilehash: 77d03ae304886be2e6c588ccea1c6e8be97efb15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777372"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <h1>Documentação de Produtos do Visual Studio</h1>
@@ -23,7 +30,7 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-ide.svg" src="./images/vs-ide.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-ide-2019.svg" src="./images/vs-ide-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
@@ -42,12 +49,12 @@ searchScope: []
                                             <div class="card">
                                                 <div class="cardImageOuter">
                                                     <div class="cardImage">
-                                                        <img data-scaleimage="./images/vs-mac.svg" src="./images/vs-mac.svg" alt="" />
+                                                        <img data-scaleimage="./images/vs-mac-2019.svg" src="./images/vs-mac-2019.svg" alt="" />
                                                     </div>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Visual Studio para Mac</h3>
-                                                    <p>Crie aplicativos e jogos, usando o Mac para a nuvem, iOS, Android, macOS e acessórios.</p>
+                                                    <p>Desenvolva aplicativos e jogos para iOS, Android, desktop e Web usando o .NET.</p>
                                                 </div>
                                             </div>
                                         </div>

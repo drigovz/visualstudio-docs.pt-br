@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b6b29e46a61a46ae5e986dec7b14733e3807064b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 178549a815fd9a17377986a5b19e02db12ec76d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962286"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>Como: Pesquisar um endereço de email em contatos de forma programática
   Este exemplo procura uma pasta de contatos para os contatos que têm o nome de domínio **exemplo.com** em seus endereços de email.
@@ -32,7 +32,7 @@ ms.locfileid: "56615488"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
--   Contatos que têm o nome de domínio **exemplo.com** em seus endereços de email (por exemplo, `somebody@example.com`), e que têm nomes e sobrenomes.
+- Contatos que têm o nome de domínio **exemplo.com** em seus endereços de email (por exemplo, `somebody@example.com`), e que têm nomes e sobrenomes.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)

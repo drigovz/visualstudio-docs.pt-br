@@ -10,33 +10,33 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15ccf8ab1b3f2fa97faaae5b97c47ac3179a672d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4df68cc8a1f9271b43de59b7196e61ab82cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430996"
 ---
 # <a name="language-service-and-editor-extension-points"></a>Pontos de extensão de editor e o serviço de linguagem
 O editor fornece pontos de extensão que você pode estender como partes do componente Managed Extensibility Framework (MEF), incluindo a maioria dos recursos do serviço de linguagem. Essas são as categorias de ponto de extensão principal:
 
--   Tipos de conteúdo
+- Tipos de conteúdo
 
--   Tipos de classificação e formatos de classificação
+- Tipos de classificação e formatos de classificação
 
--   Margens e barras de rolagem
+- Margens e barras de rolagem
 
--   Marcas
+- Marcas
 
--   Adornos
+- Adornos
 
--   Processadores de mouse
+- Processadores de mouse
 
--   Manipuladores de soltar
+- Manipuladores de soltar
 
--   Opções
+- Opções
 
--   IntelliSense
+- IntelliSense
 
 ## <a name="extend-content-types"></a>Estender os tipos de conteúdo
  Tipos de conteúdo são as definições dos tipos de texto tratado pelo editor de, por exemplo, "text", "código" ou "CSharp". Definir um novo tipo de conteúdo, declarando uma variável do tipo <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> e dando um nome exclusivo de novo tipo de conteúdo. Para registrar o tipo de conteúdo com o editor, exportá-lo junto com os seguintes atributos:
@@ -113,7 +113,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  Para associar um tipo de conteúdo com uma extensão de nome de arquivo, use <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition>.
 
 > [!NOTE]
->  No Visual Studio, extensões de nome de arquivo são registradas usando o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> em um pacote de serviço de linguagem. O <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa um tipo de conteúdo do MEF com uma extensão de nome de arquivo que tenha sido registrada dessa maneira.
+> No Visual Studio, extensões de nome de arquivo são registradas usando o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> em um pacote de serviço de linguagem. O <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> associa um tipo de conteúdo do MEF com uma extensão de nome de arquivo que tenha sido registrada dessa maneira.
 
  Para exportar a extensão de nome de arquivo para a definição de tipo de conteúdo, você deve incluir os seguintes atributos:
 
@@ -260,7 +260,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 
   O exemplo a seguir mostra os atributos de exportação em um provedor de marcador.
 
-<CodeContentPlaceHolder>8</CodeContentPlaceHolder> os seguintes tipos de marca são recursos internos:
+\<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> os seguintes tipos de marca são recursos internos:
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.ClassificationTag>: associado com um <xref:Microsoft.VisualStudio.Text.Classification.IClassificationType>.
 
@@ -269,7 +269,7 @@ internal IEditorFormatMapService FormatMapService { get; set; }
 - <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>: associado com um adorno.
 
   > [!NOTE]
-  >  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte a definição de HighlightWordTag no [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).
+  > Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag>, consulte a definição de HighlightWordTag no [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).
 
 - <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>: associados a regiões que podem ser expandidos ou recolhidos na estrutura de tópicos.
 
@@ -315,7 +315,7 @@ internal class HighlightWordFormatDefinition : MarkerFormatDefinition
  Para aplicar essa definição de formato para uma marca, fazer referência ao nome definido no atributo de nome da classe (não o nome de exibição).
 
 > [!NOTE]
->  Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte a classe HighlightWordFormatDefinition na [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).
+> Para obter um exemplo de uma <xref:Microsoft.VisualStudio.Text.Classification.MarkerFormatDefinition>, consulte a classe HighlightWordFormatDefinition na [passo a passo: Realçar o texto](../extensibility/walkthrough-highlighting-text.md).
 
 ## <a name="extend-adornments"></a>Estender adornos
  Adornos definem os efeitos visuais que podem ser adicionados ao texto que é exibido em uma exibição de texto ou ao texto a exibir em si. Você pode definir seu próprio adornos como qualquer tipo de <xref:System.Windows.UIElement>.
@@ -400,21 +400,21 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Text.Editor.DragDrop.DropFormatAttribute>: o formato de texto para o qual este manipulador de soltar é válido. Os seguintes formatos são tratados em ordem de prioridade do mais alto ao mais baixo:
 
-  1.  Qualquer formato personalizado
+  1. Qualquer formato personalizado
 
-  2.  FileDrop
+  2. FileDrop
 
-  3.  EnhancedMetafile
+  3. EnhancedMetafile
 
-  4.  WaveAudio
+  4. WaveAudio
 
-  5.  Riff
+  5. Riff
 
-  6.  DIF
+  6. DIF
 
-  7.  Localidade
+  7. Localidade
 
-  8.  Paleta
+  8. Paleta
 
   9. PenData
 
@@ -498,39 +498,39 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ### <a name="implement-an-intellisense-source"></a>Implementar uma fonte do IntelliSense
  Para personalizar uma fonte, você deve implementar um (ou mais) das interfaces de origem a seguir:
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSource>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> foi preterido em favor do <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> foi preterido em favor do <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
 
  Além disso, você deve implementar um provedor do mesmo tipo:
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISignatureHelpSourceProvider>
 
--   <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
+- <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
->  <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> foi preterido em favor do <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> foi preterido em favor do <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>.
 
  Você deve exportar o provedor junto com os seguintes atributos:
 
--   <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: o nome da origem.
+- <xref:Microsoft.VisualStudio.Utilities.NameAttribute>: o nome da origem.
 
--   <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: o tipo de conteúdo (por exemplo, "text" ou "code") ao qual a fonte se aplica.
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>: o tipo de conteúdo (por exemplo, "text" ou "code") ao qual a fonte se aplica.
 
--   <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: a ordem na qual a origem deve aparecer (em relação a outras fontes).
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>: a ordem na qual a origem deve aparecer (em relação a outras fontes).
 
--   O exemplo a seguir mostra os atributos de exportação em um provedor de fonte de conclusão.
+- O exemplo a seguir mostra os atributos de exportação em um provedor de fonte de conclusão.
 
 ```
 Export(typeof(ICompletionSourceProvider))]

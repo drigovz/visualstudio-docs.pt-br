@@ -2,7 +2,6 @@
 title: IActiveScriptError::GetExceptionInfo | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -18,12 +17,12 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: bf48362686a05a958a067cffa1015ffe2d58cecc
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 71e8f787e6837e6fa41c7b3cd831448b5d20a95e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54348510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009565"
 ---
 # <a name="iactivescripterrorgetexceptioninfo"></a>IActiveScriptError::GetExceptionInfo
 Recupera informações sobre um erro que ocorreu enquanto o mecanismo de script estava em execução em um script.  

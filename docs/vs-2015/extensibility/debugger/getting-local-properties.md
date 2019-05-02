@@ -1,14 +1,9 @@
 ---
 title: Obter as propriedades do Local | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - expression evaluation, getting local properties
 - debugging [Debugging SDK], local properties
@@ -16,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: a96b9abfd215dc297a5b245e0ac670b4822d70c2
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b174af9e107c13c3d8a79f00493fe5dbdd180ec6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51799113"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436392"
 ---
 # <a name="getting-local-properties"></a>Obtendo as propriedades do local
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Chamadas do Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) para obter uma [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que fornece acesso a todos os locais a serem exibidos no **locais** janela. Visual Studio, em seguida, chama [próxima](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) para obter as informações a ser exibida para cada local. Neste exemplo, a classe `CEnumPropertyInfo` implementa o `IEnumDebugPropertyInfo2` interface.  
   
  Essa implementação do `IEnumDebugPropertyInfo2::Next` executa as seguintes tarefas:  
   
-1.  Limpa a matriz em que as informações deve ser armazenado.  
+1. Limpa a matriz em que as informações deve ser armazenado.  
   
-2.  Chamadas [próxima](../../extensibility/debugger/reference/ienumdebugfields-next.md) para cada local, armazenando retornado [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) na matriz a ser retornado. O [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objeto foi fornecido quando isso `CEnumPropertyInfo` classe foi instanciado.  
+2. Chamadas [próxima](../../extensibility/debugger/reference/ienumdebugfields-next.md) para cada local, armazenando retornado [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) na matriz a ser retornado. O [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) objeto foi fornecido quando isso `CEnumPropertyInfo` classe foi instanciado.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Este exemplo mostra uma implementação de `IEnumDebugPropertyInfo2::EnumChildren` para locais de um método em código gerenciado.  
@@ -166,4 +161,3 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ## <a name="see-also"></a>Consulte também  
  [Exemplo de implementação de Locals](../../extensibility/debugger/sample-implementation-of-locals.md)   
  [Enumerar Locals](../../extensibility/debugger/enumerating-locals.md)
-

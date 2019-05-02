@@ -1,14 +1,9 @@
 ---
 title: 'CA1045: Não passar tipos por referência | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA1045
 - DoNotPassTypesByReference
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1aa9077a0d27c105cd7008d550a4315ce8daf91a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: 6bbdcb2e2ac8f905a2b52cfb41ed90217d215b4b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49836561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431549"
 ---
-# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: não passar tipos por referência
+# <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Não passar tipos por referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -50,7 +45,7 @@ ms.locfileid: "49836561"
  Embora os valores de retorno são comuns e usadas intensamente, a aplicação correta de `out` e `ref` parâmetros requer habilidades de codificação e design intermediário. Os arquitetos de bibliotecas que projetam para um público em geral não deve esperar que os usuários dominem o trabalho com `out` ou `ref` parâmetros.
 
 > [!NOTE]
->  Quando você trabalha com parâmetros que são estruturas grandes, os recursos adicionais que são necessárias para copiar essas estruturas pode causar um efeito de desempenho quando você passa por valor. Nesses casos, você pode considerar o uso `ref` ou `out` parâmetros.
+> Quando você trabalha com parâmetros que são estruturas grandes, os recursos adicionais que são necessárias para copiar essas estruturas pode causar um efeito de desempenho quando você passa por valor. Nesses casos, você pode considerar o uso `ref` ou `out` parâmetros.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra que é causado por um tipo de valor, fazer com que o método retornar o objeto como seu valor de retorno. Se o método deve retornar vários valores, recrie-o para uma única instância de um objeto que contém os valores de retorno.
@@ -91,7 +86,4 @@ ms.locfileid: "49836561"
 **passar por valor de retorno:**
 **ABCDE 12345**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1021: evitar parâmetros de saída](../code-quality/ca1021-avoid-out-parameters.md)
-
-
-
+ [CA1021: Evitar parâmetros de saída](../code-quality/ca1021-avoid-out-parameters.md)

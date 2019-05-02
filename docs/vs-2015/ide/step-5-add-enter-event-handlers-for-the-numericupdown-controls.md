@@ -9,30 +9,30 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5156af5f8532879bc748627fb62b0b4b6fba4af2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 970f0d592eca22b6f07bc4f938edcd0370ecf9d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434031"
 ---
-# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos Enter para os controles NumericUpDown
+# <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na quinta parte deste tutorial, você adicionará manipuladores de eventos de Enter para facilitar a inserção de respostas aos problemas do teste. Esse código selecionará e desmarcará o valor atual em cada controle NumericUpDown para que o comprador de teste o escolha e comece em inserir um valor diferente.  
   
 > [!NOTE]
->  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, consulte [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-verify-the-default-behavior"></a>Para verificar o comportamento padrão  
   
-1.  Executar seu programa e iniciar o teste.  
+1. Executar seu programa e iniciar o teste.  
   
      No controle NumericUpDown para o problema de adição, o cursor pisca ao lado de **0** (zero).  
   
-2.  Digite `3` e note que o controle mostra **30**.  
+2. Digite `3` e note que o controle mostra **30**.  
   
-3.  Digite `5` e note que aparece **350**, mas que esse número se altera para **100** após um segundo.  
+3. Digite `5` e note que aparece **350**, mas que esse número se altera para **100** após um segundo.  
   
      Antes de corrigir esse problema, pense no que está acontecendo. Considere o motivo de **0** não ter desaparecido quando você inseriu `3` e porque **350** se alterou para **100**, mas não imediatamente.  
   
@@ -40,18 +40,18 @@ Na quinta parte deste tutorial, você adicionará manipuladores de eventos de En
   
 ### <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>Para adicionar um manipulador de eventos para inserir um controle NumericUpDown  
   
-1.  Escolha o primeiro controle NumericUpDown (chamado “soma”) no formulário e, em seguida, na caixa de diálogo **Propriedades**, escolha o ícone de **Eventos** na barra de ferramentas.  
+1. Escolha o primeiro controle NumericUpDown (chamado “soma”) no formulário e, em seguida, na caixa de diálogo **Propriedades**, escolha o ícone de **Eventos** na barra de ferramentas.  
   
      A guia **Eventos** na caixa de diálogo **Propriedades** exibe todos os eventos para os quais você pode responder (manipular) para o item que você escolher no formulário. Como você escolheu o controle NumericUpDown, todos os eventos listados serão pertinentes a ele.  
   
-2.  Escolha o evento de **Enter**, digite `answer_Enter` e pressione a tecla Enter.  
+2. Escolha o evento de **Enter**, digite `answer_Enter` e pressione a tecla Enter.  
   
      ![Caixa de diálogo Propriedades](../ide/media/express-answerenter.png "Express_AnswerEnter")  
 Caixa de diálogo Propriedades  
   
      Você adicionou um manipulador de eventos Enter para o controle NumericUpDown de soma e você nomeou esse manipulador **answer_Enter**.  
   
-3.  No método para o manipulador de eventos **answer_Enter**, adicione o código a seguir.  
+3. No método para o manipulador de eventos **answer_Enter**, adicione o código a seguir.  
   
      [!code-csharp[VbExpressTutorial3Step5_6#11](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/cs/form1.cs#11)]
      [!code-vb[VbExpressTutorial3Step5_6#11](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step5_6/vb/form1.vb#11)]  
@@ -60,18 +60,18 @@ Caixa de diálogo Propriedades
   
      A próxima linha verifica se o answerBox foi convertido com êxito (conversão) de um objeto em um controle NumericUpDown. Se a conversão for malsucedida, a variável terá um valor de `null` (C#) ou de `Nothing` (Visual Basic). A terceira linha obtém o comprimento da resposta que aparece no controle NumericUpDown, e a quarta linha seleciona o valor atual no controle com base nesse comprimento. Agora, quando o comprador de teste escolher o controle, o Visual Studio aciona este evento, fazendo com que a resposta atual seja selecionada. Assim que o tomador de teste começa a inserir uma resposta diferente, a resposta anterior é apagada e substituída pela nova resposta.  
   
-4.  No designer do Windows Forms, escolha o controle NumericUpDown da diferença.  
+4. No designer do Windows Forms, escolha o controle NumericUpDown da diferença.  
   
-5.  Na página **Eventos** da caixa de diálogo **Propriedades**, role para baixo até o evento **Enter**, escolha a seta suspensa no final da linha e, em seguida, escolha o manipulador de eventos `answer_Enter` que você acabou de adicionar.  
+5. Na página **Eventos** da caixa de diálogo **Propriedades**, role para baixo até o evento **Enter**, escolha a seta suspensa no final da linha e, em seguida, escolha o manipulador de eventos `answer_Enter` que você acabou de adicionar.  
   
-6.  Repita a etapa anterior para o produto e os controles NumericUpDown quocientes.  
+6. Repita a etapa anterior para o produto e os controles NumericUpDown quocientes.  
   
-7.  Salve seu programa e execute-o.  
+7. Salve seu programa e execute-o.  
   
      Quando você escolhe um controle NumericUpDown, o valor existente é automaticamente selecionado e limpo, quando você começa a inserir um valor diferente.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para ir para a próxima etapa do tutorial, consulte [Etapa 6: adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 6: Adicionar um problema de subtração](../ide/step-6-add-a-subtraction-problem.md).  
   
--   Para retornar à etapa anterior do tutorial, veja [Etapa 4: adicionar o método CheckTheAnswer()](../ide/step-4-add-the-checktheanswer-parens-method.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 4: Adicione o método checktheanswer ()](../ide/step-4-add-the-checktheanswer-parens-method.md).

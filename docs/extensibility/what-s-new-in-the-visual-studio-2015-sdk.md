@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4d0136c1e2f27e3053733b32d536e86684f62c39
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444940"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>O que&#39;s de novo no SDK do Visual Studio 2015
 O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visual Studio 2015, o Visual Studio 2015 atualizado e o Visual Studio 2017.
@@ -23,9 +23,9 @@ O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visu
 
  Esses tópicos estão sob o [utilitários VSSDK](../extensibility/internals/vssdk-utilities.md) seção:
 
--   O [ferramentas de temas de cores](../extensibility/internals/color-theming-tools.md) ajudá-lo a criar e editar cores personalizadas para o Visual Studio.
+- O [ferramentas de temas de cores](../extensibility/internals/color-theming-tools.md) ajudá-lo a criar e editar cores personalizadas para o Visual Studio.
 
--   O [ferramentas de serviço de imagem](../extensibility/internals/image-service-tools.md) permitem trabalhar com arquivos de manifesto de imagem do Visual Studio.
+- O [ferramentas de serviço de imagem](../extensibility/internals/image-service-tools.md) permitem trabalhar com arquivos de manifesto de imagem do Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nova maneira de adicionar o SDK do Visual Studio para o Visual Studio
  A partir do Visual Studio 2015, você não precisará baixar o SDK do Visual Studio separadamente. Em vez disso, você pode instalá-lo como parte do processo de instalação normal, ou você pode optar por instalá-lo mais tarde. Quando você abre ou cria uma solução VSIX, o Visual Studio solicitará que você instale as ferramentas de extensibilidade do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visu
 ### <a name="visual-c-and-visual-basic"></a>Visual C# e Visual Basic
  Para c# e Visual Basic, há uma ampla gama de modelos de item de projeto que permitem que você crie os VSPackages, comandos de menu, janelas de ferramentas, classificadores de editor, editor adornos e as extensões de margem do editor. Você pode adicionar qualquer ou todos esses modelos para o projeto VSIX padrão. Para obter mais informações, consulte:
 
--   [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Criar uma extensão com um VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      O Assistente de VSPackage não cria mais extensões em c# ou Visual Basic.
 
@@ -57,9 +57,9 @@ O SDK do Visual Studio tem os seguintes recursos novos e atualizados para o Visu
  Os modelos de item do SDK do VS usam NuGet para suas referências e ferramentas de compilação para que você obtenha os benefícios do NuGet por padrão.
 
 > [!NOTE]
->  Você pode continuar a usar os assemblies de referência do SDK do VS instalado com seus projetos (localizado em \<local de instalação do Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e projetos de extensibilidade existentes não precisam ser atualizado para usar pacotes NuGet.  O projeto **referencia / adicionar referência** diálogo continua a usar os assemblies de referência do SDK do VS instalado.
+> Você pode continuar a usar os assemblies de referência do SDK do VS instalado com seus projetos (localizado em \<local de instalação do Visual Studio > \ VSSDK\VisualStudioIntegration\Common\Assemblies) e projetos de extensibilidade existentes não precisam ser atualizado para usar pacotes NuGet.  O projeto **referencia / adicionar referência** diálogo continua a usar os assemblies de referência do SDK do VS instalado.
 >
->  Se você quiser modificar seus projetos existentes para usar o NuGet, consulte [como: Migrar os VSPackages para Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tem uma seção sobre como atualizar projetos de extensibilidade para pacotes do NuGet.
+> Se você quiser modificar seus projetos existentes para usar o NuGet, consulte [como: Migrar os VSPackages para Visual Studio 2015](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2015.md) que tem uma seção sobre como atualizar projetos de extensibilidade para pacotes do NuGet.
 
 ## <a name="light-bulbs"></a>Lâmpadas
  Uma das maneiras de novo mais interessantes de escrever código de extensão é fornecida pelo projeto Roslyn. Para obter mais informações, consulte [Roslyn](https://github.com/dotnet/Roslyn).

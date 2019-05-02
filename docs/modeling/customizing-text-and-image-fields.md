@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d63354d552b04d07f0b2d0ede41d28fc33cda3a3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 607809b05688931b139b27fec1803719b928dfea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445820"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 Quando você define um decorador de texto em uma forma, ele é representado por um campo de texto. Para obter exemplos da inicialização de campos de texto e outros ShapeFields, inspecione Dsl\GeneratedCode\Shapes.cs em sua solução DSL.
@@ -88,7 +88,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Se não, em seguida, substituir os `InitializeShapeFields` método de sua classe shape e atribuir um valor a apropriado `Default...` propriedade do campo de texto.
 
 > [!WARNING]
->  Para substituir `InitializeShapeFields()`, você deve definir o **gera derivado duplo** propriedade da classe shape para `true` na definição de DSL.
+> Para substituir `InitializeShapeFields()`, você deve definir o **gera derivado duplo** propriedade da classe shape para `true` na definição de DSL.
 
  Neste exemplo, uma forma tem um campo de texto que será usado para comentários do usuário. Queremos usar a fonte de comentário padrão. Porque é uma fonte padrão do conjunto de estilo, podemos definir a id da fonte padrão:
 
@@ -181,13 +181,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 #### <a name="to-create-a-subclass-of-imagefield"></a>Para criar uma subclasse de ImageField
 
-1.  Defina as **gera derivado duplo** propriedade da classe shape pai em sua definição de DSL.
+1. Defina as **gera derivado duplo** propriedade da classe shape pai em sua definição de DSL.
 
-2.  Substituir o `InitializeShapeFields` método de sua classe de forma.
+2. Substituir o `InitializeShapeFields` método de sua classe de forma.
 
-    -   Crie um novo arquivo de código no projeto DSL e escrever uma definição de classe parcial para a classe shape. Substitua a definição de método.
+    - Crie um novo arquivo de código no projeto DSL e escrever uma definição de classe parcial para a classe shape. Substitua a definição de método.
 
-3.  Inspecione o código de `InitializeShapeFields` em DSL\GeneratedCode\Shapes.cs.
+3. Inspecione o código de `InitializeShapeFields` em DSL\GeneratedCode\Shapes.cs.
 
      No seu método de substituição, chamar o método base e, em seguida, crie uma instância de sua própria classe de campo de imagem. Use esta opção para substituir o campo de imagem normal no `shapeFields` lista.
 
@@ -195,7 +195,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Este exemplo faz um ícone Alterar dependente do estado do elemento de modelo da forma.
 
 > [!WARNING]
->  Este exemplo demonstra como fazer um decorador de imagem dinâmica. Mas se você quiser alternar entre uma ou duas imagens, dependendo do estado de uma variável de modelo, é mais simples de criar vários decoradores de imagem, localizá-los na mesma posição na forma e, em seguida, defina o filtro de visibilidade dependem de valores específicos do modelo variável. Para definir esse filtro, selecione o mapa de formas na definição de DSL, abra a janela de detalhes de DSL e clique na guia de decoradores.
+> Este exemplo demonstra como fazer um decorador de imagem dinâmica. Mas se você quiser alternar entre uma ou duas imagens, dependendo do estado de uma variável de modelo, é mais simples de criar vários decoradores de imagem, localizá-los na mesma posição na forma e, em seguida, defina o filtro de visibilidade dependem de valores específicos do modelo variável. Para definir esse filtro, selecione o mapa de formas na definição de DSL, abra a janela de detalhes de DSL e clique na guia de decoradores.
 
  Para executar esse código de exemplo, crie uma nova solução DSL usando o modelo de linguagem mínima. Adicionar uma propriedade de domínio booliano `AlternateState` à classe de domínio ExampleElement. Adicione um decorador de ícone para a classe ExampleShape e defina sua imagem para um arquivo de bitmap. Clique em **transformar todos os modelos**. Adicione um novo arquivo de código no projeto DSL e insira o código a seguir.
 

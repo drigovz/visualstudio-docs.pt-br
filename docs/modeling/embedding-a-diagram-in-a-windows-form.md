@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bf82bc6fce4e6bf429faebc6b6f24497cbe76b0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9b2ed12175e986178d43ffe5e3da8b85e2ab22e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994590"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>Inserir um diagrama em um Windows Form
 
@@ -20,15 +20,15 @@ Você pode inserir um diagrama DSL em um controle do Windows, que aparece na jan
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>Inserir um diagrama DSL em um controle do Windows
 
-1.  Adicione um novo **controle de usuário** arquivo ao projeto DslPackage.
+1. Adicione um novo **controle de usuário** arquivo ao projeto DslPackage.
 
-2.  Adicione um painel de controle para o controle de usuário. Este painel contém o diagrama de DSL.
+2. Adicione um painel de controle para o controle de usuário. Este painel contém o diagrama de DSL.
 
      Adicione outros controles que você precisa.
 
      Defina as propriedades de ancoragem de controles.
 
-3.  No Gerenciador de soluções, clique no arquivo de controle de usuário e clique em **Exibir código**. Adicione este construtor e a variável no código:
+3. No Gerenciador de soluções, clique no arquivo de controle de usuário e clique em **Exibir código**. Adicione este construtor e a variável no código:
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -40,7 +40,7 @@ Você pode inserir um diagrama DSL em um controle do Windows, que aparece na jan
     private MyDSLDocView docView;
     ```
 
-4.  Adicione um novo arquivo ao projeto DslPackage, com o seguinte conteúdo:
+4. Adicione um novo arquivo ao projeto DslPackage, com o seguinte conteúdo:
 
     ```csharp
     using System.Windows.Forms;
@@ -63,13 +63,13 @@ Você pode inserir um diagrama DSL em um controle do Windows, que aparece na jan
     } } } }
     ```
 
-5.  Para testar o DSL, pressione **F5** e abrir um arquivo de modelo de exemplo. O diagrama é exibido dentro do controle. A caixa de ferramentas e outros recursos funcionam normalmente.
+5. Para testar o DSL, pressione **F5** e abrir um arquivo de modelo de exemplo. O diagrama é exibido dentro do controle. A caixa de ferramentas e outros recursos funcionam normalmente.
 
 ## <a name="update-the-form-using-store-events"></a>Atualizar o formulário usando o repositório de eventos
 
-1.  No designer de formulários, adicione uma **ListBox** denominado `listBox1`. Isso exibirá uma lista dos elementos no modelo. Ele é sincronizado com o modelo usando *armazenar eventos*. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+1. No designer de formulários, adicione uma **ListBox** denominado `listBox1`. Isso exibirá uma lista dos elementos no modelo. Ele é sincronizado com o modelo usando *armazenar eventos*. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-2.  No arquivo de código personalizado, ainda mais substitua métodos à classe DocView:
+2. No arquivo de código personalizado, ainda mais substitua métodos à classe DocView:
 
     ```csharp
     partial class MyDSLDocView
@@ -110,7 +110,7 @@ Você pode inserir um diagrama DSL em um controle do Windows, que aparece na jan
      }
     ```
 
-3.  No code-behind do controle de usuário, inserir métodos para escutar os elementos adicionados e removidos:
+3. No code-behind do controle de usuário, inserir métodos para escutar os elementos adicionados e removidos:
 
     ```csharp
     public partial class UserControl1 : UserControl { ...
@@ -137,7 +137,7 @@ Você pode inserir um diagrama DSL em um controle do Windows, que aparece na jan
     }
     ```
 
-4.  Para testar o DSL, pressione **F5** e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo.
+4. Para testar o DSL, pressione **F5** e na instância experimental do Visual Studio, abra um arquivo de modelo de exemplo.
 
      Observe que a caixa de listagem mostra uma lista dos elementos no modelo, e se ele está correto depois de qualquer adição ou exclusão e desfazer e refazer.
 

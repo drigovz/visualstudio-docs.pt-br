@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567016"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Acessar o banco de dados diretamente com um TableAdapter
 
@@ -42,7 +42,7 @@ Chame o TableAdapter `DbDirect` método que executa a tarefa que você está ten
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Para inserir novos registros diretamente em um banco de dados
 
--   Chame o TableAdapter `Insert` método, passando os valores para cada coluna como parâmetros. O procedimento a seguir usa o `Region` tabela no banco de dados Northwind como um exemplo.
+- Chame o TableAdapter `Insert` método, passando os valores para cada coluna como parâmetros. O procedimento a seguir usa o `Region` tabela no banco de dados Northwind como um exemplo.
 
     > [!NOTE]
     > Se você não tiver uma instância disponível, crie uma instância do TableAdapter que você deseja usar.
@@ -52,7 +52,7 @@ Chame o TableAdapter `DbDirect` método que executa a tarefa que você está ten
 
 ### <a name="to-update-records-directly-in-a-database"></a>Para atualizar registros diretamente em um banco de dados
 
--   Chame o TableAdapter `Update` método, passando os valores novos e originais para cada coluna como parâmetros.
+- Chame o TableAdapter `Update` método, passando os valores novos e originais para cada coluna como parâmetros.
 
     > [!NOTE]
     > Se você não tiver uma instância disponível, crie uma instância do TableAdapter que você deseja usar.
@@ -62,7 +62,7 @@ Chame o TableAdapter `DbDirect` método que executa a tarefa que você está ten
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Para excluir registros diretamente de um banco de dados
 
--   Chame o TableAdapter `Delete` método, passando os valores para cada coluna como parâmetros do `Delete` método. O procedimento a seguir usa o `Region` tabela no banco de dados Northwind como um exemplo.
+- Chame o TableAdapter `Delete` método, passando os valores para cada coluna como parâmetros do `Delete` método. O procedimento a seguir usa o `Region` tabela no banco de dados Northwind como um exemplo.
 
     > [!NOTE]
     > Se você não tiver uma instância disponível, crie uma instância do TableAdapter que você deseja usar.

@@ -20,26 +20,25 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0abb0a38e63231dfddea391b3a63a73ae982bd24
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fc37f11d5f01af041610e066a9896f8e0e244fcc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443373"
 ---
 # <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.  
   
 > [!CAUTION]
->  Esta página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Geral em todas as linguagens, não importa quais opções sejam selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.  
+> Esta página define opções padrão para todas as linguagens de desenvolvimento. Lembre-se de que redefinir uma opção nessa caixa de diálogo redefinirá as opções Geral em todas as linguagens, não importa quais opções sejam selecionadas aqui. Para alterar as opções do Editor de Texto para apenas uma linguagem, expanda a subpasta para aquela linguagem e selecione suas páginas de opções.  
   
  Uma marca de seleção esmaecida é exibida quando uma opção tiver sido selecionada nas páginas de opções Geral para algumas linguagens de programação, mas não para outras.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="statement-completion"></a>Preenchimento de declaração  
  Membros automático de lista  
@@ -59,7 +58,7 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Quando selecionada, qualquer parte de uma linha que se estenda horizontalmente além da área visível do editor é exibida automaticamente na próxima linha. Selecionar essa opção habilita a opção **Mostrar glifos visuais para quebra automática de linha**.  
   
 > [!NOTE]
->  O recurso **Espaço Virtual** é desativado enquanto **Quebra automática de linha** está ativada.  
+> O recurso **Espaço Virtual** é desativado enquanto **Quebra automática de linha** está ativada.  
   
  Glifos visuais de apresentação para a quebra automática de linha  
  Quando selecionada, um indicador de seta d retorno é exibido no ponto em que uma linha longa quebra-se para uma segunda linha.  
@@ -69,7 +68,7 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Desmarque esta opção se preferir não exibir esses indicadores.  
   
 > [!NOTE]
->  Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. São somente para referência.  
+> Essas setas de lembrete não são adicionadas ao seu código, e não imprimem. São somente para referência.  
   
  Aplicar comandos recortar ou de impressão para linhas em branco quando não há nenhuma seleção  
  Esta opção define o comportamento do editor quando você coloque o ponto de inserção em uma linha em branco, não seleciona nada e então Copia ou Corta.  
@@ -81,14 +80,14 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
   Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha não está em branco. Se nada é selecionado, a linha inteira é copiada ou recortar. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.  
   
 > [!TIP]
->  Para exibir indicadores para espaços, tabulações e fins de linha, e assim distinguir linhas recuadas de linhas totalmente em branco, selecione **Avançado** no menu **Editar** e escolha **Exibir Espaço em Branco**.  
+> Para exibir indicadores para espaços, tabulações e fins de linha, e assim distinguir linhas recuadas de linhas totalmente em branco, selecione **Avançado** no menu **Editar** e escolha **Exibir Espaço em Branco**.  
   
 ## <a name="display"></a>Monitor  
  Os números de linha  
  Quando selecionada, um número de linha aparece ao lado de cada linha de código.  
   
 > [!NOTE]
->  Esses números de linha não são adicionados ao seu código e não são impressos. São somente para referência.  
+> Esses números de linha não são adicionados ao seu código e não são impressos. São somente para referência.  
   
  Permitir a navegação URL de clique único  
  Quando selecionada, o cursor do mouse muda para uma mão apontando conforme passa sobre uma URL no editor. Você pode clicar no URL para exibir a página indicada no seu navegador da Web.  

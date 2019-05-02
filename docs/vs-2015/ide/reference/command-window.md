@@ -17,17 +17,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7ec3911496c5106d53f90a281452df2c8a128f6
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441448"
 ---
 # <a name="command-window"></a>Janela Comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A janela **Comando** é usada para executar comandos ou aliases diretamente no IDE (ambiente de desenvolvimento integrado) do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você pode executar tanto comandos de menu quanto comandos que não aparecem em nenhum menu. Para exibir a janela **Comando**, escolha **Outras Janelas** no menu **Exibir** e selecione **Janela Comando**.  
   
 ## <a name="displaying-the-values-of-variables"></a>Exibindo os valores de variáveis  
@@ -63,7 +62,7 @@ A janela **Comando** é usada para executar comandos ou aliases diretamente no I
 |Role para baixo na janela.|Conteúdo da janela Comando|SETA PARA BAIXO ou CTRL+SETA PARA BAIXO|  
   
 > [!TIP]
->  Você pode copiar todo ou parte de um comando anterior para a linha de entrada rolando até ele, realçando todo ou parte dele e pressionando ENTER.  
+> Você pode copiar todo ou parte de um comando anterior para a linha de entrada rolando até ele, realçando todo ou parte dele e pressionando ENTER.  
   
 ## <a name="mark-mode"></a>Modo de Marca  
  Quando você clica em qualquer linha anterior na janela **Comando**, você muda automaticamente para o modo Marca. Isso permite selecionar, editar e copiar o texto de comandos anteriores como você faria em qualquer editor de texto e colá-lo na linha atual.  
@@ -105,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` e `oldpar` são parâmetros  
   
   > [!NOTE]
-  >  Qualquer comando, parâmetro, opção ou valor que contenha espaços deve ter aspas duplas em um dos lados.  
+  > Qualquer comando, parâmetro, opção ou valor que contenha espaços deve ter aspas duplas em um dos lados.  
   
   A posição de opções e parâmetros pode ser trocada livremente na linha de comando, com exceção do comando [Shell](../../ide/reference/shell-command.md), que exige uma ordem específica para opções e parâmetros.  
   

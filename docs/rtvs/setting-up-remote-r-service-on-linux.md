@@ -9,12 +9,12 @@ ms.reviewer: karthiknadig
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 3fd7f8be7b2de02fb89c9eec3ea7859241beb0f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c4d65388db0ef90f807ec85b8c9216d717c2b571
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945814"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809551"
 ---
 # <a name="remote-r-service-for-linux"></a>Serviço R Remoto para Linux
 
@@ -166,5 +166,6 @@ Em cada caso, o computador remoto deve ter uma dos seguintes interpretadores do 
     ```bash
     az container create --image myimage:latest --name myaz-container --resource-group myaz-container-res --ip-address public --port 5444 --cpu 2 --memory 4 --command-line "rtvsd"
     ```
+
 1. Use o comando `az container list` para verificar o status. Pesquise `provisioningState`: `Succeeded`.
 1. Se o provisionamento tiver sido bem-sucedido, agora será possível se conectar ao contêiner. Pesquise o endereço IP público, no campo `ipAddress`, que pode ser usado com as credenciais no arquivo do docker para conectar-se ao contêiner das RTVS.

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c08f3d2f7ddcd3d9f1ad0eb0b937905d6449d00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a494f954f3f670fb796b33a0dbd01e2512ad1d26
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955723"
 ---
 # <a name="how-to-programmatically-retrieve-a-folder-by-name"></a>Como: Recuperar uma pasta por nome de forma programática
   Este exemplo obtém uma referência a uma pasta personalizada nomeada e, em seguida, exibe o conteúdo da pasta.
@@ -30,7 +30,7 @@ ms.locfileid: "56620883"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
--   Uma pasta chamada TestFolder.
+- Uma pasta chamada TestFolder.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com pastas](../vsto/working-with-folders.md)

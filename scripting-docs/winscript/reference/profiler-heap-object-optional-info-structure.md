@@ -2,7 +2,6 @@
 title: Estrutura PROFILER_HEAP_OBJECT_OPTIONAL_INFO | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -12,12 +11,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2d0159dd50d57aa77a62dc3b8536b50712b96df5
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.openlocfilehash: 4c7f28499b5d6e1e01caab1e6fd83fc5ab72ccf6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823860"
 ---
 # <a name="profilerheapobjectoptionalinfo-structure"></a>Estrutura PROFILER_HEAP_OBJECT_OPTIONAL_INFO
 Representa informações opcionais sobre objetos de heap.  
@@ -32,14 +31,14 @@ typedef struct _PROFILER_HEAP_OBJECT_OPTIONAL_INFO{    PROFILER_HEAP_OBJECT_OPTI
   
 |Membro|Tipo|Descrição|  
 |------------|----------|-----------------|  
-|tipo de informação|[Enumeração PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|O tipo das informações opcionais.|  
+|infoType|[Enumeração PROFILER_HEAP_OBJECT_OPTIONAL_INFO_TYPE](../../winscript/reference/profiler-heap-object-optional-info-type-enumeration.md)|O tipo das informações opcionais.|  
 |protótipo|[Tipo PROFILER_HEAP_OBJECT_ID](../../winscript/reference/profiler-heap-object-id-type.md)|A ID do objeto de protótipo do objeto de heap.|  
-|FunctionName|LPCWSTR|Nome da função do objeto de heap.|  
+|functionName|LPCWSTR|Nome da função do objeto de heap.|  
 |elementAttributesSize|UINT|O tamanho dos atributos do elemento do objeto de heap.|  
 |elementTextChildrenSize|UINT|O tamanho de filhos de texto do objeto de heap.|  
-|Lista_de_escopo|[Estrutura PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista de escopo do objeto de heap.|  
+|scopeList|[Estrutura PROFILER_HEAP_OBJECT_SCOPE_LIST](../../winscript/reference/profiler-heap-object-scope-list-structure.md)|Lista de escopo do objeto de heap.|  
 |internalProperty|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP](../../winscript/reference/profiler-heap-object-relationship-structure.md)|A heap propriedade do objeto interno.|  
 |namePropertyList|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Uma lista de propriedades de nome do objeto de heap.|  
 |indexPropertyList|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Uma lista de propriedades do índice do objeto de heap.|  
 |relationshipList|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Uma lista de relações do objeto de heap.|  
-|lista de eventos|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Uma lista de eventos do objeto de heap.|
+|eventList|[Estrutura PROFILER_HEAP_OBJECT_RELATIONSHIP_LIST](../../winscript/reference/profiler-heap-object-relationship-list-structure.md)|Uma lista de eventos do objeto de heap.|

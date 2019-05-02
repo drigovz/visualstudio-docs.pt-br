@@ -3,10 +3,17 @@ layout: HubPage
 hide_bc: true
 title: Documentação do Visual Studio | Microsoft Docs
 titleSuffix: ''
-description: 'Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.'
+description: Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha para suas plataformas e dispositivos.
 ms.topic: hub-page
 ms.custom: seodec18
+ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944672"
 ---
+<!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">
     <div class="container">
         <ul class="cardsY panelContent featuredContent">
@@ -49,7 +56,7 @@ ms.custom: seodec18
                 </a>
             </li>
             <li>
-                <a href="/visualstudio/ide/whats-new-visual-studio-2017">
+                <a href="/visualstudio/ide/whats-new-visual-studio-2019">
                     <div class="cardSize">
                         <div class="cardPadding">
                             <div class="card">
@@ -85,6 +92,7 @@ ms.custom: seodec18
                                                 <h3>Saiba como usar o Visual Studio</h3>
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="get-started/visual-studio-ide.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_overview.svg" alt="Guided tour icon" />Iniciar um tour guiado</a></li>
+                                                    <li><a class="barLink" href="get-started/tutorial-open-project-from-repo.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_pull-request.svg" alt="Repo icon" />Abrir código de um repositório</a></li>
                                                     <li><a class="barLink" href="ide/index-writing-code.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_code-edit.svg" alt="Pencil icon" />Gravar e editar código</a></li>
                                                     <li><a class="barLink" href="ide/compiling-and-building-in-visual-studio.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_build.svg" alt="Crane icon" />Compilar seu código</a></li>
                                                     <li><a class="barLink" href="debugger/debugger-feature-tour.md"><img height="60" width="60" src="https://docs.microsoft.com/media/common/i_debug.svg" alt="Debug icon" />Depurar seu código</a></li>
@@ -155,7 +163,7 @@ JavaScript</a>
                                                 <h3>Criar um aplicativo</h3>
                                                 <ul class="noBullet">
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/ide/quickstart-uwp-csharp">
+                                                        <a class="barLink" href="/visualstudio/get-started/csharp/tutorial-uwp">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_windows.svg" alt="Windows logo">
 Aplicativo universal do Windows</a>
                                                     </li>
@@ -170,8 +178,7 @@ Aplicativo da área de trabalho do Windows</a>
 Aplicativo móvel</a>
                                                     </li>
                                                     <li>
-                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity
-                ">
+                                                        <a class="barLink" href="/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity">
                                                             <img src="https://docs.microsoft.com/media/logos/logo_unity.svg" alt="Unity logo">
 Jogo do Unity</a>
                                                     </li>
@@ -863,7 +870,7 @@ Aplicativo Web com ASP.NET Core</a>
                                                 </div>
                                                 <div class="cardText">
                                                     <h3>Desenvolvimento móvel com JavaScript</h3>
-                                                    <p>Crie aplicativos multiplataforma para iOS, Android ou Windows usando a estrutura do Apache Cordova.</p>
+                                                    <p>(Apenas Visual Studio 2017 e Visual Studio 2015) Crie aplicativos multiplataforma para iOS, Android ou Windows usando a estrutura do Apache Cordova.</p>
                                                 </div>
                                             </div>
                                         </div>

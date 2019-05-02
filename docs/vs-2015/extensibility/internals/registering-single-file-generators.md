@@ -1,27 +1,22 @@
 ---
 title: Registrar geradores de arquivo único | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436601"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
   
 ### <a name="to-register-a-custom-tool"></a>Para registrar uma ferramenta personalizada  
   
-1.  Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.  
+1. Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.  
   
      Por exemplo, eis aqui as informações de registro gerenciado MSDataSetGenerator ferramenta personalizada, que vem com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -43,22 +38,22 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
+2. Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
   
-    -   (Padrão)  
+    - (Padrão)  
   
          Opcional. Fornece uma descrição amigável da ferramenta personalizada. Esse parâmetro é opcional, mas recomendado.  
   
-    -   CLSID  
+    - CLSID  
   
          Necessário. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.  
   
     > [!NOTE]
-    >  Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.  
+    > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.  
   
      Por exemplo, o MSDataSetGenerator se registra uma vez para cada idioma:  
   
@@ -84,5 +79,4 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
  [Implementando geradores de arquivo único](../../extensibility/internals/implementing-single-file-generators.md)   
  [Determinando o Namespace padrão de um projeto](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Expor tipos aos Designers visuais](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introdução ao objeto BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Introdução ao objeto BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ea768a1f93b6d2b806adf85496eb1080cc3e2b1
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: db5b2df99a887511351e6b5bd120968edf7c53cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080859"
 ---
 # <a name="display-data-in-blend"></a>Exibir dados no Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ ms.locfileid: "54834385"
   
  **Neste tópico:**  
   
--   [Gerar dados de exemplo](#Scratch)  
+- [Gerar dados de exemplo](#Scratch)  
   
--   [Gerar dados de exemplo com base na classe](#Existing)  
+- [Gerar dados de exemplo com base na classe](#Existing)  
   
--   [Mostrar dados ao vivo em um aplicativo WPF](#LiveWPF)  
+- [Mostrar dados ao vivo em um aplicativo WPF](#LiveWPF)  
   
--   [Mostrar dados ao vivo em um aplicativo de loja ou telefone](#LiveStore)  
+- [Mostrar dados ao vivo em um aplicativo de loja ou telefone](#LiveStore)  
   
-##  <a name="Scratch"></a> Gerar dados de exemplo  
+## <a name="Scratch"></a> Gerar dados de exemplo  
  Para gerar dados de exemplo, abra um documento XAML. No painel **Dados**, escolha o botão **Criar dados de exemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") e, em seguida, escolha **Novos Dados de Exemplo**.  
   
  Defina a estrutura dos dados no painel **Dados** e, então, associe-a aos elementos de interface do usuário em qualquer página.  
@@ -46,7 +46,7 @@ ms.locfileid: "54834385"
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [combinando a vinculação de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="Existing"></a> Gerar dados de exemplo com base na classe  
+## <a name="Existing"></a> Gerar dados de exemplo com base na classe  
  Se as classes que descrevem a estrutura dos dados já tiver sido criada, é possível geral dados de exemplo com base nelas.  
   
  Para gerar dados de exemplo com base em uma classe, abra um documento XAML e, no painel **Dados**, clique no botão **Criar dados de exemplo**![](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png "30540d76-7256-43ce-b5d9-4b2edf3d339f") e, em seguida, clique em **Criar Dados de Exemplo da Classe**.  
@@ -55,12 +55,10 @@ ms.locfileid: "54834385"
   
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [combinando a vinculação de dados com o Blend](https://www.youtube.com/watch?v=LSwPB6CAvjg).  
   
-##  <a name="LiveWPF"></a> Mostrar dados ao vivo em um aplicativo WPF  
- **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar uma fonte de dados do objeto](http://www.bing.com/videos/watch/video/using-an-objectdatasource-in-expression-blend/qmavx0xg).  
-  
+## <a name="LiveWPF"></a> Mostrar dados ao vivo em um aplicativo WPF  
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [criar uma fonte de dados XML](https://www.youtube.com/watch?v=RjQueappjqk&feature=youtube_gdata).  
   
-##  <a name="LiveStore"></a> Mostrar dados ao vivo em um aplicativo de Loja ou Telefone  
+## <a name="LiveStore"></a> Mostrar dados ao vivo em um aplicativo de Loja ou Telefone  
  Consulte [Trabalhando com os dados e arquivos (XAML)](http://msdn.microsoft.com/library/windows/apps/xaml/br229562.aspx).  
   
 ## <a name="see-also"></a>Consulte também  

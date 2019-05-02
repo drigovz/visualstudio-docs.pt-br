@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a83207633d60348d664e3c9337b48288bb6c1baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447045"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Alterações necessárias para executar projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5
   Se a estrutura de destino de um projeto do Office será alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, você deve executar as seguintes tarefas para garantir que a solução pode ser executado no computador de desenvolvimento e nos computadores dos usuários finais:
@@ -39,14 +39,14 @@ ms.locfileid: "56625693"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Para remover o SecurityTransparentAttribute
 
-1.  Com o projeto aberto no Visual Studio, abra **Gerenciador de soluções**.
+1. Com o projeto aberto no Visual Studio, abra **Gerenciador de soluções**.
 
-2.  Sob o **propriedades** nó (para c#) ou o **My Project** nó (para Visual Basic), clique duas vezes no arquivo AssemblyInfo código para abri-lo no editor de códigos.
+2. Sob o **propriedades** nó (para c#) ou o **My Project** nó (para Visual Basic), clique duas vezes no arquivo AssemblyInfo código para abri-lo no editor de códigos.
 
     > [!NOTE]
-    >  Em projetos do Visual Basic, você deve clicar o **Show All Files** botão na **Gerenciador de soluções** para ver o arquivo de código de AssemblyInfo.
+    > Em projetos do Visual Basic, você deve clicar o **Show All Files** botão na **Gerenciador de soluções** para ver o arquivo de código de AssemblyInfo.
 
-3.  Localize o <xref:System.Security.SecurityTransparentAttribute> e removê-lo a partir do arquivo ou comentá-lo.
+3. Localize o <xref:System.Security.SecurityTransparentAttribute> e removê-lo a partir do arquivo ou comentá-lo.
 
     ```vb
     <Assembly: SecurityTransparent()>

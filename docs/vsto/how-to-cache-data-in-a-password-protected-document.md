@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f6e9bea3d45249d847f2dccfe522f832d6a07b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826739"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Como: Cache de dados em um documento protegido por senha
   Se você adicionar dados ao cache de dados em um documento ou pasta de trabalho protegida com uma senha, as alterações nos dados armazenados em cache não são salvas automaticamente. Você pode salvar as alterações aos dados armazenados em cache por substituir dois métodos em seu projeto.
@@ -30,13 +30,13 @@ ms.locfileid: "56644517"
 
 ### <a name="to-cache-data-in-a-word-document-that-is-protected-with-a-password"></a>Os dados em cache em um documento do Word que está protegido com uma senha
 
-1.  No `ThisDocument` de classe, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
+1. No `ThisDocument` de classe, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
 
-2.  Substituir a <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> método no `ThisDocument` de classe e remover a proteção do documento.
+2. Substituir a <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> método no `ThisDocument` de classe e remover a proteção do documento.
 
      Quando o documento é salvo, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chama esse método para dar a você uma oportunidade para desproteger o documento. Isso permite que as alterações feitas nos dados armazenados em cache sejam salvas.
 
-3.  Substituir a <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> método no `ThisDocument` de classe e reaplicar a proteção para o documento.
+3. Substituir a <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> método no `ThisDocument` de classe e reaplicar a proteção para o documento.
 
      Depois que o documento é salvo, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chama esse método para lhe dar uma oportunidade de reaplicar proteção por documento.
 
@@ -54,13 +54,13 @@ ms.locfileid: "56644517"
 
 ### <a name="to-cache-data-in-an-excel-workbook-that-is-protected-with-a-password"></a>Os dados em cache em uma pasta de trabalho do Excel que é protegida por senha
 
-1.  No `ThisWorkbook` classe ou uma da `Sheet` *n* classes, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
+1. No `ThisWorkbook` classe ou uma da `Sheet` *n* classes, marcar um campo ou propriedade pública a ser armazenado em cache. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
 
-2.  Substituir a <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método no `ThisWorkbook` de classe e remover a proteção da pasta de trabalho.
+2. Substituir a <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> método no `ThisWorkbook` de classe e remover a proteção da pasta de trabalho.
 
      Quando a pasta de trabalho é salvo, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chama esse método para dar a você uma oportunidade para desproteger a pasta de trabalho. Isso permite que as alterações feitas nos dados armazenados em cache sejam salvas.
 
-3.  Substituir a <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> método no `ThisWorkbook` de classe e reaplicar a proteção para o documento.
+3. Substituir a <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> método no `ThisWorkbook` de classe e reaplicar a proteção para o documento.
 
      Depois que a pasta de trabalho é salvo, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chama esse método para lhe dar uma oportunidade de reaplicar a proteção para a pasta de trabalho.
 

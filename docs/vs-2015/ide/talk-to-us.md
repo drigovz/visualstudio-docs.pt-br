@@ -11,19 +11,17 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 198953116a6489c0e771a66b463e44da48590a4f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b91eeff74df839836a380db3d2005c7823494581
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428458"
 ---
 # <a name="talk-to-us"></a>Fale conosco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [Fale conosco](https://docs.microsoft.com/visualstudio/ide/talk-to-us) em docs.microsoft.com.  
-
-  
+Para a documentação mais recente do Visual Studio, consulte [Fale conosco](https://docs.microsoft.com/visualstudio/ide/talk-to-us).  
 
 Estamos interessados em suas ideias para melhorar a nossa documentação. Não podemos responder a cada pessoa, mas faremos com que seus comentários cheguem à pessoa certa.  
   

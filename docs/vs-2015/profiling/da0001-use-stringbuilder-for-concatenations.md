@@ -14,17 +14,17 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da0de740155936497c2e21213d7e063fa761aade
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 386eda282364ccc4ab9841f126bb10944477df18
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804895"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659144"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001: Usar StringBuilder para concatenações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [DA0001: Use StringBuilder para concatenações](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [DA0001: Use StringBuilder para concatenações](https://docs.microsoft.com/visualstudio/profiling/da0001-use-stringbuilder-for-concatenations).  
   
 |||  
 |-|-|  

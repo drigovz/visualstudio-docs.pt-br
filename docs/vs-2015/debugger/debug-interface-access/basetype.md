@@ -1,14 +1,9 @@
 ---
 title: BaseType | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 2f9e22e6-8360-496a-ac6b-17a5a56b0c46
 caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 08606b1d794ab61ebad0293613a6bdc9a4694c18
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1fa442aa8257c744fcac53be845c749ff689cc76
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51771192"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58926682"
 ---
 # <a name="basetype"></a>BaseType
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,6 +43,3 @@ Tipos de base são identificados por `SymTagBaseType` símbolos.
 ## <a name="see-also"></a>Consulte também  
  [Enumeração BasicType](../../debugger/debug-interface-access/basictype.md)   
  [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)
-
-
-

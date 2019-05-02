@@ -3,25 +3,25 @@ title: Início Rápido – Criar um projeto do Python usando em modelo
 description: Neste início rápido, crie um projeto do Visual Studio para Python usando um modelo interno para compilar um aplicativo básico em Flask.
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3878c3817ef7df66f4e8d31562598389fd07bc29
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429742"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Início Rápido: Criar um projeto do Python com base em um modelo no Visual Studio
 
-Depois de [instalar o suporte ao Python no Visual Studio 2017](installing-python-support-in-visual-studio.md), é fácil criar um novo projeto do Python usando uma variedade de modelos. Neste Início Rápido, crie um aplicativo simples em Flask usando um modelo. O projeto resultante é semelhante ao projeto que você cria manualmente em [Início Rápido: criar um aplicativo Web com o Flask](../ide/quickstart-python.md).
+Depois de [instalar o suporte ao Python no Visual Studio](installing-python-support-in-visual-studio.md), é fácil criar um projeto do Python usando uma variedade de modelos. Neste Início Rápido, crie um aplicativo simples em Flask usando um modelo. O projeto resultante é semelhante ao projeto que você cria manualmente em [Início Rápido: criar um aplicativo Web com o Flask](../ide/quickstart-python.md).
 
-1. Inicie o Visual Studio 2017.
+1. Inicie o Visual Studio.
 
 1. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. Em seguida, na caixa de diálogo **Novo Projeto**, pesquise por "flask em branco", selecione o modelo de **Projeto Web Flask em branco** na lista do meio, nomeie o projeto e selecione **OK**:
 

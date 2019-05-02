@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823512"
 ---
 # <a name="utilization-view"></a>Exibição Utilização
 A **Exibição Utilização** exibe informações sobre a CPU, a GPU e outros recursos do sistema usados pelo processo atual (escolha **Analisar** > **Visualizador de Simultaneidade** para iniciar o visualizador de simultaneidade). Ela mostra a utilização média do núcleo pelo processo analisado, o processo ocioso, o processo do Sistema e outros processos em execução no sistema ao longo do tempo. Ela não mostra qual núcleo específico está ativo em um determinado momento. Por exemplo, se dois núcleos estiverem sendo executados individualmente com capacidade de 50% durante um período específico, essa exibição mostrará um núcleo lógico sendo utilizado. A exibição é gerada pela divisão do tempo de criação de perfil em segmentos de tempo curto. Para cada segmento, o grafo plota o número médio de threads de processos em execução nos núcleos lógicos durante esse intervalo.

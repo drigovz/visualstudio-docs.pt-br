@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949032"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Como: Usar a variável do designer
 
@@ -25,13 +25,13 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 
 ## <a name="to-create-a-new-variable"></a>Para criar uma nova variável
 
-1.  Abra uma solução de fluxo de trabalho ou atividade no Visual Studio.
+1. Abra uma solução de fluxo de trabalho ou atividade no Visual Studio.
 
-2.  Na tela de design, selecione uma atividade no fluxo de trabalho.
+2. Na tela de design, selecione uma atividade no fluxo de trabalho.
 
-3.  Abra o designer variável clicando o **variáveis** botão no canto inferior esquerdo da tela de design. O designer variável aparece.
+3. Abra o designer variável clicando o **variáveis** botão no canto inferior esquerdo da tela de design. O designer variável aparece.
 
-4.  Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: variablex para o **nome** onde x é um inteiro com um valor inicial de 1, que é incrementado automaticamente para criar nomes de variável exclusivos,  **Cadeia de caracteres** para o **tipo de variável**, e **sequência** para o **escopo**. Nenhum valor é adicionado para **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+4. Clique na linha vazia rotulada **criar variável**. Isso adicionará uma nova linha com uma nova variável usando os seguintes valores padrão: variablex para o **nome** onde x é um inteiro com um valor inicial de 1, que é incrementado automaticamente para criar nomes de variável exclusivos,  **Cadeia de caracteres** para o **tipo de variável**, e **sequência** para o **escopo**. Nenhum valor é adicionado para **padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir uma variável, selecione a variável clicando nele e, em seguida, pressione a **excluir** chave.
@@ -40,4 +40,4 @@ O designer variável é usado para criar variáveis para uso em cenários e em i
 
 - [Usando o Designer de Fluxo de Trabalho](developing-applications-with-the-workflow-designer.md)
 - [Variables and Arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments) (Variáveis e argumentos)
-- [Como: Use o Designer de argumento](../workflow-designer/how-to-use-the-argument-designer.md)
+- [Como: usar o designer de argumento](../workflow-designer/how-to-use-the-argument-designer.md)

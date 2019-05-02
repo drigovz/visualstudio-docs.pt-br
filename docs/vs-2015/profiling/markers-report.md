@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 20e9ece55f1e17c874832f473236dfbae7684c54
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 97705dab6f11ca0d9d51c27bfc56d315b454bc52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439221"
 ---
 # <a name="markers-report"></a>Relatório de marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ O Relatório de Marcadores lista os marcadores no período de tempo exibido.  A 
   Escolha o botão **Exportar** para salvar o Relatório de Marcadores como um arquivo CSV. Você pode usar os dados no arquivo CSV com outros aplicativos ou ferramentas.  
   
 > [!NOTE]
->  O Relatório de Marcadores pode exibir 1.000 marcadores. Para ver todos os marcadores, exporte o relatório completo para um arquivo CSV.
+> O Relatório de Marcadores pode exibir 1.000 marcadores. Para ver todos os marcadores, exporte o relatório completo para um arquivo CSV.

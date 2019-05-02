@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: df723845fe99b32cd41231353142e0f03b667977
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8f87f831c8076b22a61d7032d16be8d13f21b62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998624"
 ---
 # <a name="create-r-markdown-documents"></a>Criar documentos R Markdown
 
@@ -33,6 +33,7 @@ As RTVS (Ferramentas do R para Visual Studio) oferecem modelo de item do R Markd
     install.packages("rmarkdown")
 
     ```
+
 1. Crie um novo arquivo R Markdown usando o comando de menu **Arquivo** > **Novo** > **Arquivo** e selecionando **R** > **R Markdown** na lista. No contexto de um projeto, clique com o botão direito do mouse no projeto no Gerenciador de Soluções e selecione **Adicionar R Markdown** (ou **Adicionar** > **Novo Item** e selecionando **R Markdown** na lista).
 
 1. O conteúdo padrão do novo arquivo é o seguinte:

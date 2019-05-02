@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 202640fbe484fc9b384e3e50484a1b4fee63bc4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00271d77cb5b172fbbbf02682eb7e23c6246ca23
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939327"
 ---
 # <a name="bookmark-control"></a>controle Indicador
   O controle <xref:Microsoft.Office.Tools.Word.Bookmark> é um indicador que tem um nome exclusivo, expõe eventos e pode ser vinculado a dados. O indicador pode ser usado como um espaço reservado para marcar um item ou local em um documento do Microsoft Office Word. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle é uma combinação de um <xref:Microsoft.Office.Interop.Word.Bookmark> objeto e um <xref:Microsoft.Office.Interop.Word.Range> objeto.
@@ -95,19 +95,19 @@ A tabela a seguir mostra como a frase "Este é o texto de exemplo". é compartil
 
 Os eventos a seguir estão disponíveis para o <xref:Microsoft.Office.Tools.Word.Bookmark> controle:
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeDoubleClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BeforeRightClick>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.BindingContextChanged>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Deselected>
 
--   <xref:System.ComponentModel.IComponent.Disposed>
+- <xref:System.ComponentModel.IComponent.Disposed>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.Selected>
 
--   <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
+- <xref:Microsoft.Office.Tools.Word.Bookmark.SelectionChange>
 
 ## <a name="see-also"></a>Consulte também
 

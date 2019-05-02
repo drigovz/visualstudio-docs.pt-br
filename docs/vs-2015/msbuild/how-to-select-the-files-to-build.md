@@ -1,5 +1,5 @@
 ---
-title: Como selecionar os arquivos para compilar | Microsoft Docs
+title: 'Como: Selecionar os arquivos para compilar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2dad0c732a8f342e5c584202f810e1f53defb61e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437900"
 ---
-# <a name="how-to-select-the-files-to-build"></a>Como selecionar os arquivos a serem compilados
+# <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.  
   
 ## <a name="specifying-inputs"></a>Especificando as entradas  
@@ -33,7 +32,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
   
 #### <a name="to-declare-items-individually"></a>Para declarar itens individualmente  
   
--   Use os atributos `Include` semelhantes ao seguinte:  
+- Use os atributos `Include` semelhantes ao seguinte:  
   
      `<CSFile Include="form1.cs"/>`  
   
@@ -42,11 +41,11 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.  
+    > Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Para declarar vários itens  
   
--   Use os atributos `Include` semelhantes ao seguinte:  
+- Use os atributos `Include` semelhantes ao seguinte:  
   
      `<CSFile Include="form1.cs;form2.cs"/>`  
   
@@ -67,19 +66,19 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
   
 #### <a name="to-include-all-jpg-files-in-the-images-directory-and-subdirectories"></a>Para incluir todos os arquivos. jpg no diretório Imagens e subdiretórios  
   
--   Use o seguinte atributo `Include`:  
+- Use o seguinte atributo `Include`:  
   
      `Include="Images\**\*.jpg"`  
   
 #### <a name="to-include-all-jpg-files-starting-with-img"></a>Para incluir todos os arquivos. jpg, começando com "img"  
   
--   Use o seguinte atributo `Include`:  
+- Use o seguinte atributo `Include`:  
   
      `Include="Images\**\img*.jpg"`  
   
 #### <a name="to-include-all-files-in-directories-with-names-ending-in-jpgs"></a>Para incluir todos os arquivos em diretórios com nomes que terminam em "jpgs"  
   
--   Use um dos seguintes atributos `Include`:  
+- Use um dos seguintes atributos `Include`:  
   
      `Include="Images\**\*jpgs\*.*"`  
   
@@ -92,7 +91,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
   
 #### <a name="to-use-all-visual-c-or-visual-basic-files-as-inputs"></a>Para usar todos os arquivos do Visual c# ou Visual Basic como entradas  
   
--   Use os atributos `Include` semelhantes ao seguinte:  
+- Use os atributos `Include` semelhantes ao seguinte:  
   
      `<CSC Sources="@(CSFile)">...</CSC>`  
   
@@ -101,9 +100,9 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Você deve usar caracteres curinga com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:  
+> Você deve usar caracteres curinga com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de entrada separadamente.  
@@ -174,5 +173,5 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md)   
  [Itens](../msbuild/msbuild-items.md)

@@ -1,14 +1,9 @@
 ---
 title: Continuando a execução após uma exceção | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -33,13 +28,13 @@ ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 947a17993fe0e8366149d1cef79c26c68b11d22a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105450"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,17 +49,12 @@ Quando o depurador interrompe a execução devido a uma exceção, uma caixa de 
 ## <a name="native-code"></a>Código nativo  
  No modo nativo C/C++, você tem duas opções:  
   
--   Você pode clicar em **quebrar** e tentar corrigir o problema. Enquanto você estiver no modo de interrupção, você poderá desenrolar a pilha de chamadas clicando em um quadro na **pilha de chamadas** janela e selecionando **desenrolar para este quadro** no menu de atalho. Quando você continuar a depuração, o **exceção** caixa de diálogo será exibida novamente se você não tiver corrigido o problema. Caso contrário, o **exceção** caixa de diálogo não reaparecerá.  
+- Você pode clicar em **quebrar** e tentar corrigir o problema. Enquanto você estiver no modo de interrupção, você poderá desenrolar a pilha de chamadas clicando em um quadro na **pilha de chamadas** janela e selecionando **desenrolar para este quadro** no menu de atalho. Quando você continuar a depuração, o **exceção** caixa de diálogo será exibida novamente se você não tiver corrigido o problema. Caso contrário, o **exceção** caixa de diálogo não reaparecerá.  
   
--   Você pode clicar em **continuar** para continuar a execução sem tentar corrigir o problema. O **exceção** caixa de diálogo será exibida novamente.  
+- Você pode clicar em **continuar** para continuar a execução sem tentar corrigir o problema. O **exceção** caixa de diálogo será exibida novamente.  
   
 ## <a name="mixed-code"></a>Código misto  
  Se você atinge uma exceção não tratada ao depurar um código nativo misto e gerenciado, as restrições do sistema operacional impedem o desenrolar da pilha de chamadas. Se você tentar voltar a pilha de chamadas usando o menu de atalho, uma mensagem de erro explicará que o depurador não pode desenrolar de uma exceção não tratada exceto durante a depuração de código misto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
-
-
-
-
-

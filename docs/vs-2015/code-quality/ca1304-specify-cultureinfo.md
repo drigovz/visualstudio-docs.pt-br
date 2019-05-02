@@ -1,14 +1,9 @@
 ---
 title: 'CA1304: Especificar CultureInfo | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - SpecifyCultureInfo
 - CA1304
@@ -20,14 +15,14 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0078309f1c87e4bd1feb9a8c82d7c654185c13df
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49948758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047926"
 ---
-# <a name="ca1304-specify-cultureinfo"></a>CA1304: especificar CultureInfo
+# <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -40,11 +35,11 @@ ms.locfileid: "49948758"
 ## <a name="cause"></a>Causa
  Um método ou construtor chama um membro que tem uma sobrecarga que aceita uma <xref:System.Globalization.CultureInfo?displayProperty=fullName> parâmetro e o método ou construtor não chama a sobrecarga que utiliza o <xref:System.Globalization.CultureInfo> parâmetro. Essa regra ignora as chamadas para os seguintes métodos:
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrição da Regra
  Quando um <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider?displayProperty=fullName> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membros escolhem a cultura padrão e a formatação com base em suposições que podem não estar corretas para seu código. Para garantir que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
@@ -80,10 +75,7 @@ ms.locfileid: "49948758"
  **4/6/1900:12 12H15**
 **04/06/1900 12:15:12**
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1305: especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
+ [CA1305: Especificar IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)
 
 ## <a name="see-also"></a>Consulte também
- [NIB: Usando a classe CultureInfo](http://msdn.microsoft.com/en-us/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)
-
-
-
+ [NIB: Usando a classe CultureInfo](http://msdn.microsoft.com/d4329e34-64c3-4d1e-8c73-5b0ee626ba7a)

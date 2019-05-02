@@ -1,14 +1,9 @@
 ---
 title: Salvar um documento padrão | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], saving standard documents
 - projects [Visual Studio SDK], saving standard documents
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 72415a4ddfa3de9511aab4b52ae37960af872fde
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052474"
 ---
 # <a name="saving-a-standard-document"></a>Salvando um documento padrão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,13 +53,12 @@ Salvar, salvar como e salvar tudo manipulação de comando para um editor padrã
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Para alterar a propriedade de arquivo ao projeto arquivos diversos  
   
-1.  Consultar o serviço para o <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interface.  
+1. Consultar o serviço para o <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interface.  
   
      Um ponteiro para <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> é retornado.  
   
-2.  Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) a fim de transferir o documento para a nova hierarquia. A hierarquia de executar o comando Salvar como chama esse método.  
+2. Chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) a fim de transferir o documento para a nova hierarquia. A hierarquia de executar o comando Salvar como chama esse método.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   
  [Abrir e salvar itens de projeto](../../extensibility/internals/opening-and-saving-project-items.md)
-

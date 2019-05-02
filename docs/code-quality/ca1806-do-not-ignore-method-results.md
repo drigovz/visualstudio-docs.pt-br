@@ -17,11 +17,11 @@ dev_langs:
 - VB
 manager: jillfra
 ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797044"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806: Não ignorar resultados do método
 
@@ -53,7 +53,7 @@ Ignorar o código de erro ou HRESULT pode levar a um comportamento inesperado em
 
  Se o método um chama o método B, mas não usa a nova instância de cadeia de caracteres que o método B retorna. Passe a instância como um argumento para outro método, atribua a instância a uma variável. Ou remova a chamada se ela for desnecessária.
 
- -ou-
+ - ou -
 
  Se o método um chama o método B, mas não usa o HRESULT ou código de erro que o método retorna. Use o resultado em uma instrução condicional, atribua o resultado a uma variável ou passá-lo como um argumento para outro método.
 

@@ -2,7 +2,6 @@
 title: IScriptNode Interface | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d8897d783f8a101b41dd7263061604fb1d82ec56
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.openlocfilehash: 13bf20f9e1e642b948ddaa72ae9dca7bb457fba2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54344610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786768"
 ---
 # <a name="iscriptnode-interface"></a>Interface IScriptNode
 Um objeto que implementa o `IScriptNode` interface representa uma página da Web.  

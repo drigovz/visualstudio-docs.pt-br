@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc304a90f9d51611ad2455c130e589aa0204cdc5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5499ff9451d3068cdef0e32dee45a6f6c7f63c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425488"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Altas taxas de paginação de memória ativa para o disco
 
@@ -37,7 +37,7 @@ ms.locfileid: "56620480"
 ## <a name="rule-description"></a>Descrição da regra
 
 > [!NOTE]
->  Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: Taxas de paginação de memória ativa para o disco extremamente altas](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é disparada em vez disso.
+> Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: Taxas de paginação de memória ativa para o disco extremamente altas](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é disparada em vez disso.
 
  A paginação excessiva em disco pode ser causada pela memória física insuficiente. Se as operações de paginação dominarem o uso do disco físico em que o arquivo de paginação reside, elas poderão deixar mais lentas outras operações de disco orientadas por aplicativo no mesmo disco.
 

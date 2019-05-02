@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565725"
 ---
 # <a name="troubleshoot-service-references"></a>Solucionar problemas de referências de serviço
 
@@ -33,9 +33,9 @@ Quando você retornar um `DataSet` ou `DataTable` de um serviço, você poderá 
 
 Para corrigir esse erro:
 
-1.  Na **Gerenciador de soluções**, clique duas vezes o *App. config* arquivo para abri-lo.
+1. Na **Gerenciador de soluções**, clique duas vezes o *App. config* arquivo para abri-lo.
 
-2.  Localize o `MaxReceivedMessageSize` propriedade e alterá-lo para um valor maior.
+2. Localize o `MaxReceivedMessageSize` propriedade e alterá-lo para um valor maior.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Não é possível localizar um serviço na minha solução
 
@@ -43,17 +43,17 @@ Quando você clica o **Discover** botão na **adicionar referências de serviço
 
 Para corrigir esse erro:
 
--   Na **Gerenciador de soluções**, o projeto de biblioteca de serviços WCF com o botão direito e clique em **Build**.
+- Na **Gerenciador de soluções**, o projeto de biblioteca de serviços WCF com o botão direito e clique em **Build**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erro ao acessar um serviço em uma área de trabalho remota
 
-Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "a solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
+Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "A solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
 
 Para corrigir esse erro:
 
-1.  No projeto do site, abra o **propriedades** páginas.
+1. No projeto do site, abra o **propriedades** páginas.
 
-2.  Sobre o **opções de inicialização** guia, desmarque a **autenticação NTLM** caixa de seleção.
+2. Sobre o **opções de inicialização** guia, desmarque a **autenticação NTLM** caixa de seleção.
 
     > [!NOTE]
     > Você deve desativar a autenticação NTLM somente para sites que contêm exclusivamente os serviços WCF. Segurança para serviços do WCF é gerenciada por meio da configuração na *Web. config* arquivo. Isso torna a autenticação NTLM desnecessários.
@@ -74,19 +74,19 @@ Se o projeto de serviço é removido da solução, essa dependência de compila�
 
 Para corrigir esse erro, você deve recriar manualmente o projeto de serviço:
 
-1.  No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas**, clique em **Opções**.
 
-2.  No **opções** diálogo caixa, expanda **projetos e soluções**e, em seguida, selecione **geral**.
+2. No **opções** diálogo caixa, expanda **projetos e soluções**e, em seguida, selecione **geral**.
 
-3.  Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
+3. Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
 
-4.  Carregar o projeto de serviço do WCF.
+4. Carregar o projeto de serviço do WCF.
 
-5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+5. No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
-6.  Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
+6. Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
 
-7.  Sobre o **compilar** menu, clique em **recompilar** para recompilar o projeto de serviço do WCF.
+7. Sobre o **compilar** menu, clique em **recompilar** para recompilar o projeto de serviço do WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services não são exibidos no navegador
 
@@ -94,13 +94,13 @@ Quando ele tenta exibir uma representação XML dos dados em um [!INCLUDE[ss_dat
 
 Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
+1. No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
 
-2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
+2. Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 
-3.  No **configurações do Feed** caixa de diálogo, desmarque a **ativar o modo de exibição de leitura de feed** caixa de seleção e, em seguida, clique em **Okey**.
+3. No **configurações do Feed** caixa de diálogo, desmarque a **ativar o modo de exibição de leitura de feed** caixa de seleção e, em seguida, clique em **Okey**.
 
-4.  Clique em **Okey** para fechar o **opções da Internet** caixa de diálogo.
+4. Clique em **Okey** para fechar o **opções da Internet** caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 

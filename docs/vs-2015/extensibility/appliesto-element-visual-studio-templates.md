@@ -1,24 +1,19 @@
 ---
 title: Elemento AppliesTo (modelos do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6f789a574b7db1c30dceea32e5d2c0d4ef9afb7f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51788557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044181"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +22,11 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
   
  Esse elemento é opcional. Pode haver um máximo de uma instância em um arquivo de modelo. Esse elemento permite que apenas um modelo de item seja aceito como aplicável, com base nos recursos do projeto ativo atualmente selecionado. Ele não pode ser usado para tornar um modelo de item não aplicável. Se `AppliesTo` estiver ausente ou a expressão não for aceita com sucesso, `TemplateID` ou `TemplateGroupID` serão usados para tornar o modelo aplicável, como nas versões anteriores do produto.  
   
- Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta, consulte [Referenciando Assemblies entregues no Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/en-us/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
+ Introduzido no Visual Studio 2013 Atualização 2. Para fazer referência a versão correta, consulte [Referenciando Assemblies entregues no Visual Studio 2013 SDK Update 2](http://msdn.microsoft.com/42b65c3e-e42b-4c39-98c8-bea285f25ffb).  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<AppliesTo >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<AppliesTo>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -59,19 +54,19 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
   
  A sintaxe da expressão válida é definida como:  
   
--   A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   O "&#124;" é o operador OR.  
+- O "&#124;" é o operador OR.  
   
--   Os caracteres "&" e "+" são operadores AND.  
+- O "&" e "+" caracteres são operadores AND.  
   
--   O caractere "!" é o operador NOT.  
+- O caractere "!" é o operador NOT.  
   
--   Parênteses forçam a ordem de precedência de avaliação.  
+- Parênteses forçam a ordem de precedência de avaliação.  
   
--   Uma expressão nula ou vazia é avaliada como uma correspondência.  
+- Uma expressão nula ou vazia é avaliada como uma correspondência.  
   
--   Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra três modelos diferentes. `Template1` aplica-se a todos os tipos de projeto do C# ou a qualquer outro tipo de projeto que ofereça suporte ao recurso `WindowsAppContainer`. `Template2` aplica-se a todos os projetos do C# de qualquer tipo. `Template3` aplica-se aos projetos do C# que não são projetos `WindowsAppContainer`.  
@@ -106,4 +101,3 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-

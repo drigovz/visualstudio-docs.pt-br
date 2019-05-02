@@ -15,17 +15,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f020e23b5a58d700fb698e8026ef0b783b6de6a4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441442"
 ---
 # <a name="convert-dialog-box"></a>Caixa de diálogo Converter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A caixa de diálogo **Converter** permite selecionar uma ferramenta de conversão para criar um novo projeto com base em um antigo, como criar um projeto [!INCLUDE[vbprvblong](../../includes/vbprvblong-md.md)] com base em um projeto do Visual Basic 6. Você também pode usar o [Conversor de Projeto do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=246465), disponível no site CodePlex, para atualizar projetos criados em versões anteriores do Visual Studio.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  
@@ -34,11 +33,11 @@ A caixa de diálogo **Converter** permite selecionar uma ferramenta de conversã
   
 #### <a name="to-access-the-convert-dialog-box"></a>Para acessar a caixa de diálogo Converter  
   
-1.  Na barra de menus, escolha **Arquivo**, **Abrir**, **Converter**.  
+1. Na barra de menus, escolha **Arquivo**, **Abrir**, **Converter**.  
   
      Você verá uma lista de ferramentas de conversão de código que estão disponíveis no momento.  
   
-2.  Selecione a ferramenta apropriada para seu aplicativo.  
+2. Selecione a ferramenta apropriada para seu aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [NOTINBUILD – Como atualizar um projeto do Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

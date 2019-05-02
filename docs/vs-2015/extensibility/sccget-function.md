@@ -1,14 +1,9 @@
 ---
 title: Função SccGet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2a5d5065ca427f0319174aa59e6b87d356816d4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432427"
 ---
 # <a name="sccget-function"></a>Função SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +77,7 @@ SCCRTN SccGet(
  O `SCC_GET_ALL` sinalizador pode ser combinado com o `SCC_GET_RECURSIVE` sinalizador para recuperar todos os arquivos nos diretórios de determinado e todos os subdiretórios também.  
   
 > [!NOTE]
->  `SCC_GET_RECURSIVE` nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que se diretórios C:\A e C:\A\B são ambos repassadas recursiva obtém, C:\A\B e todos os seus subdiretórios serão realmente recuperados duas vezes. É responsabilidade do IDE — e não o controle de fonte do plug-in — para certificar-se de que as duplicatas como esse são mantidas fora da matriz.  
+> `SCC_GET_RECURSIVE` nunca deve ser passado sem `SCC_GET_ALL`. Além disso, observe que se diretórios C:\A e C:\A\B são ambos repassadas recursiva obtém, C:\A\B e todos os seus subdiretórios serão realmente recuperados duas vezes. É responsabilidade do IDE — e não o controle de fonte do plug-in — para certificar-se de que as duplicatas como esse são mantidas fora da matriz.  
   
  Por fim, mesmo se o controle de fonte de uma plug-in especificado o `SCC_CAP_GET_NOUI` sinalizador na inicialização, indicando que ele não tem uma interface do usuário para um comando Get, essa função ainda pode ser chamada pelo IDE para recuperar arquivos. O sinalizador simplesmente significa que o IDE não exibe um item de menu Get e que o plug-in não é esperado para fornecer qualquer interface do usuário.  
   
@@ -91,23 +86,22 @@ SCCRTN SccGet(
   
  Há duas maneiras de resolver essa situação em que o cache local de versões de controle do código-fonte se torna fora de sincronia com o banco de dados de controle do código-fonte:  
   
-1.  Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.  
+1. Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.  
   
-2.  Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.  
+2. Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.  
   
-    1.  Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de. txt para b. txt no banco de dados de controle do código-fonte.  
+    1. Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de. txt para b. txt no banco de dados de controle do código-fonte.  
   
-    2.  Renomeie a. txt local para b. txt.  
+    2. Renomeie a. txt local para b. txt.  
   
-    3.  Chamar o `SccGet` função para. txt e b. txt.  
+    3. Chamar o `SccGet` função para. txt e b. txt.  
   
-    4.  Como. txt não existe no banco de dados de controle do código-fonte, o cache local de versão é limpos das informações de versão. txt ausente.  
+    4. Como. txt não existe no banco de dados de controle do código-fonte, o cache local de versão é limpos das informações de versão. txt ausente.  
   
-    5.  O arquivo b. txt que está sendo extraído é mesclado com o conteúdo do arquivo local b. txt.  
+    5. O arquivo b. txt que está sendo extraído é mesclado com o conteúdo do arquivo local b. txt.  
   
-    6.  O arquivo b. txt atualizada agora pode fazer check-in.  
+    6. O arquivo b. txt atualizada agora pode fazer check-in.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [Sinalizadores de bit usados por comandos específicos](../extensibility/bitflags-used-by-specific-commands.md)
-

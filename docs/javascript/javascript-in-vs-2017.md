@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 ms.date: 01/15/2019
-ms.technology: vs-nodejs
+ms.technology: vs-javascript
 ms.topic: conceptual
 dev_langs:
 - JavaScript
@@ -12,12 +12,13 @@ caps.latest.revision: 1
 author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
-ms.openlocfilehash: faee8d414f324adce2a3e732ace301d45b13f3df
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+monikerRange: vs-2017
+ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553338"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -32,7 +33,7 @@ O Visual Studio agora dá suporte à sintaxe para atualizações da linguagem EC
 
 ### <a name="what-is-ecmascript-2015"></a>O que é ECMAScript 2015?
 
-O JavaScript ainda está em evolução enquanto uma linguagem de programação e [TC39](http://www.ecma-international.org/memento/TC39.htm) é o comitê responsável por fazer atualizações.
+O JavaScript ainda está em evolução enquanto uma linguagem de programação e [TC39](https://www.ecma-international.org/memento/tc39-m.htm) é o comitê responsável por fazer atualizações.
 ECMAScript 2015 é uma atualização para a linguagem JavaScript que traz novas sintaxes e funcionalidades úteis. Para um mergulho profundo nos recursos da ES6, confira [este](http://es6-features.org) site de referência.
 
 Além de suporte para ECMAScript 2015, o Visual Studio também dá suporte a ECMAScript 2016 e terá suporte para versões futuras do ECMAScript conforme elas forem lançadas. Para se manter atualizado com TC39 e as alterações mais recentes no ECMAScript, execute o trabalho no [GitHub](https://github.com/tc39).
@@ -51,14 +52,14 @@ Para compilar arquivos JavaScript, um arquivo `tsconfig.json` deve ser adicionad
 
 As configurações necessárias para o arquivo tsconfig são as seguintes:
 
- - `allowJs`: esse valor deve ser definido como `true` para que os arquivos JavaScript sejam reconhecidos. O valor padrão é `false`, pois TypeScript é compilado em JavaScript e o compilador não deve incluir arquivos, ele apenas é compilado.
- - `outDir`: esse valor deve ser definido com um local não incluído no projeto, para que os arquivos JavaScript emitidos não sejam detectados e depois incluídos no projeto (confira `exclude`).
- - `module`: se estiver usando módulos, essa configuração informará ao compilador qual formato de módulo o código emitido deverá usar (por exemplo, `commonjs` para o Nó ou agregadores como Browserify).
- - `exclude`: essa configuração indica quais pastas não serão incluídas no projeto.
- O local de saída, bem como pastas não pertencentes ao projeto como `node_modules` ou `temp`, devem ser adicionados a essa configuração.
- - `enableAutoDiscovery`: essa configuração habilita a detecção automática e o download de arquivos de definição, conforme descrito anteriormente.
- - `compileOnSave`: essa configuração informa ao compilador se ele deve recompilar sempre que um arquivo de origem é salvo no Visual Studio.
- - `typeAcquisition`: este conjunto de configurações controlam o comportamento de aquisição de tipo automática (explicado com mais detalhes [nesta seção](/visualstudio/ide/javascript-intellisense#Auto))
+- `allowJs`: esse valor deve ser definido como `true` para que os arquivos JavaScript sejam reconhecidos. O valor padrão é `false`, pois TypeScript é compilado em JavaScript e o compilador não deve incluir arquivos, ele apenas é compilado.
+- `outDir`: esse valor deve ser definido com um local não incluído no projeto, para que os arquivos JavaScript emitidos não sejam detectados e depois incluídos no projeto (confira `exclude`).
+- `module`: se estiver usando módulos, essa configuração informará ao compilador qual formato de módulo o código emitido deverá usar (por exemplo, `commonjs` para o Nó ou agregadores como Browserify).
+- `exclude`: essa configuração indica quais pastas não serão incluídas no projeto.
+O local de saída, bem como pastas não pertencentes ao projeto como `node_modules` ou `temp`, devem ser adicionados a essa configuração.
+- `enableAutoDiscovery`: essa configuração habilita a detecção automática e o download de arquivos de definição, conforme descrito anteriormente.
+- `compileOnSave`: essa configuração informa ao compilador se ele deve recompilar sempre que um arquivo de origem é salvo no Visual Studio.
+- `typeAcquisition`: este conjunto de configurações controlam o comportamento de aquisição de tipo automática (explicado com mais detalhes [nesta seção](/visualstudio/ide/javascript-intellisense#Auto))
 
 Para converter arquivos JavaScript em módulos CommonJS e colocá-los em uma pasta `./out`, você pode usar o arquivo `tsconfig.json` a seguir:
 

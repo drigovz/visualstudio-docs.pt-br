@@ -1,14 +1,9 @@
 ---
 title: Hierarquia lexical de tipos de símbolo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,13 +12,13 @@ ms.assetid: 912da653-ddfe-45a4-84aa-64281283739a
 caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0f9fa295a7faa85a0b7a7b3268702c4199869754
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e70b83046c41b13cb51324eb63e81b26a118a81f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403511"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hierarquia lexical de tipos de símbolos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -51,13 +46,10 @@ A tabela a seguir mostra os tipos de símbolo na hierarquia de léxico.
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Especifica um `namespace`identificador.|  
   
 > [!NOTE]
->  Propriedades de símbolo adicionais podem estar disponíveis, dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos individuais de símbolo.  
+> Propriedades de símbolo adicionais podem estar disponíveis, dependendo do tipo de símbolo. Essas propriedades são listadas nos tópicos individuais de símbolo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Hierarquia de classes de tipos de símbolo](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)   
- [Idiasymbol:: Get_symtag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
+ [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)   
  [Símbolos e marcações de símbolos](../../debugger/debug-interface-access/symbols-and-symbol-tags.md)   
  [Enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md)
-
-
-

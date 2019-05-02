@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 25f948a0a855655da45b8c11fd955a06d14e5cf7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978689"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 
@@ -60,10 +60,8 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark e MCT Software & Services Developer. Exclui:  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Diretor Regional) e MCT Software & Services.*
 
-
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
-
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

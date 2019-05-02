@@ -1,12 +1,9 @@
 ---
-title: 'Diagramas de componente UML: Referência | Microsoft Docs'
-ms.custom: ''
+title: 'Diagramas de componente UML: Referência de | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.componentdiagram.diagram
 - vs.teamarch.componentdiagram.toolbox
@@ -21,15 +18,15 @@ ms.assetid: 5eddff6a-892a-4c3c-9278-687ac1eccc50
 caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0e77008d59543b0001f97b37933ff1073e488a33
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51728117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424376"
 ---
-# <a name="uml-component-diagrams-reference"></a>Diagramas de componente UML: referência
+# <a name="uml-component-diagrams-reference"></a>Diagramas de componente UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No Visual Studio, uma *diagrama de componente* mostra as partes de um design para um sistema de software. Ajuda do diagrama de componente você visualizar a estrutura de alto nível do sistema e o comportamento de serviço que essas partes fornecerem e consumir por meio de interfaces. Para criar um diagrama de componente UML, nos **arquitetura** menu, clique em **UML novo ou diagrama de camada**.  
@@ -41,13 +38,12 @@ No Visual Studio, uma *diagrama de componente* mostra as partes de um design par
  Para obter mais informações sobre como usar diagramas de componente no processo de design, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Este tópico descreve os elementos que você pode usar em diagramas de componente. Para obter mais informações sobre como desenhar diagramas de componente detalhados, consulte [diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md). Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Este tópico descreve os elementos que você pode usar em diagramas de componente. Para obter mais informações sobre como desenhar diagramas de componente detalhados consulte [diagramas de componente UML: Diretrizes de](../modeling/uml-component-diagrams-guidelines.md). Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Leitura de diagramas de componente  
  A tabela a seguir descreve os elementos que você pode usar em um diagrama de componente, junto com suas propriedades principais. Para obter uma lista completa das propriedades dos elementos, consulte [propriedades de elementos em diagramas de componente UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  
 
  ![Elementos usados em diagramas de componente](../modeling/media/uml-compovreading.png "UML_CompOvReading")  
-
 
 |  **Forma**  |         **Elemento**         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         **Descrição e propriedades principais**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -64,12 +60,9 @@ No Visual Studio, uma *diagrama de componente* mostra as partes de um design par
 
 ## <a name="see-also"></a>Consulte também  
  [Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)   
- [Diagramas de componente UML: diretrizes](../modeling/uml-component-diagrams-guidelines.md)   
+ [Diagramas de componente UML: Diretrizes](../modeling/uml-component-diagrams-guidelines.md)   
  [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)   
- [Diagramas de caso de uso UML: referência](../modeling/uml-use-case-diagrams-reference.md)   
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
- [Diagramas de atividade UML: referência](../modeling/uml-activity-diagrams-reference.md)   
- [Diagramas de sequência UML: referência](../modeling/uml-sequence-diagrams-reference.md)
-
-
-
+ [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de atividade de UML: Referência](../modeling/uml-activity-diagrams-reference.md)   
+ [Diagramas de sequência de UML: referência](../modeling/uml-sequence-diagrams-reference.md)

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2abc185d06aa74e47bb2a36bd17df12a9db5c8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964476"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usar uma tecla de atalho com uma extensão do editor
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo se baseia no modelo de editor do adorno de visor e permite que você adicionar o adorno, usando o caractere +.
@@ -61,9 +61,9 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
 
  O filtro de comando é uma implementação de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, que manipula o comando instanciando o adorno.
 
-1.  Adicione um arquivo de classe e denomine- `KeyBindingCommandFilter`.
+1. Adicione um arquivo de classe e denomine- `KeyBindingCommandFilter`.
 
-2.  Adicione as seguintes instruções using.
+2. Adicione as seguintes instruções using.
 
     ```csharp
     using System;
@@ -74,13 +74,13 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
 
     ```
 
-3.  A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
+3. A classe denominada KeyBindingCommandFilter deve herdar de <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>.
 
     ```csharp
     internal class KeyBindingCommandFilter : IOleCommandTarget
     ```
 
-4.  Adicione campos privados para o modo de exibição de texto, o próximo comando na cadeia de comando e um sinalizador para representar se o filtro de comando já foi adicionado.
+4. Adicione campos privados para o modo de exibição de texto, o próximo comando na cadeia de comando e um sinalizador para representar se o filtro de comando já foi adicionado.
 
     ```csharp
     private IWpfTextView m_textView;
@@ -89,7 +89,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
     internal bool m_adorned;
     ```
 
-5.  Adicione um construtor que define o modo de texto.
+5. Adicione um construtor que define o modo de texto.
 
     ```csharp
     public KeyBindingCommandFilter(IWpfTextView textView)
@@ -99,7 +99,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
     }
     ```
 
-6.  Implementar o `QueryStatus()` método da seguinte maneira.
+6. Implementar o `QueryStatus()` método da seguinte maneira.
 
     ```csharp
     int IOleCommandTarget.QueryStatus(ref Guid pguidCmdGroup, uint cCmds, OLECMD[] prgCmds, IntPtr pCmdText)
@@ -108,7 +108,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
     }
     ```
 
-7.  Implemente a `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição (**+**) caractere é digitado.
+7. Implemente a `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição (**+**) caractere é digitado.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -135,7 +135,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
 ## <a name="add-the-command-filter-prior-to-visual-studio-2017-version-156"></a>Adicione o filtro de comando (antes do Visual Studio 2017 versão 15.6)
  O provedor de adorno deve adicionar um filtro de comando para a exibição de texto. Neste exemplo, o provedor implementa <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener> para escutar eventos de criação de exibição de texto. Este provedor de adorno também exporta a camada de adorno, que define a ordem Z do adorno.
 
-1.  No arquivo KeyBindingTestTextViewCreationListener, adicione as seguintes instruções using:
+1. No arquivo KeyBindingTestTextViewCreationListener, adicione as seguintes instruções using:
 
     ```csharp
     using System;
@@ -150,7 +150,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
 
     ```
 
-2.  Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
+2. Para obter o adaptador de exibição de texto, você deve importar o <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>.
 
     ```csharp
     [Import(typeof(IVsEditorAdaptersFactoryService))]
@@ -158,7 +158,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
 
     ```
 
-3.  Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele adiciona o `KeyBindingCommandFilter`.
+3. Alterar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele adiciona o `KeyBindingCommandFilter`.
 
     ```csharp
     public void TextViewCreated(IWpfTextView textView)
@@ -167,7 +167,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
     }
     ```
 
-4.  O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.
+4. O `AddCommandFilter` manipulador obtém o adaptador de exibição de texto e adiciona o filtro de comando.
 
     ```csharp
     void AddCommandFilter(IWpfTextView textView, KeyBindingCommandFilter commandFilter)
@@ -256,6 +256,7 @@ O manipulador de comandos é uma implementação de <xref:Microsoft.VisualStudio
        return false;
    }
    ```
+
    7. Copie a definição de camada de adorno do *KeyBindingTestTextViewCreationListener.cs* do arquivo para o *KeyBindingCommandHandler.cs* e, em seguida, excluir  *KeyBindingTestTextViewCreationListener.cs* arquivo:
 
    ```csharp
@@ -319,8 +320,8 @@ private void CreateVisuals(ITextViewLine line)
 
 ## <a name="build-and-test-the-code"></a>Compilar e testar o código
 
-1.  Compile a solução KeyBindingTest e executá-lo na instância experimental.
+1. Compile a solução KeyBindingTest e executá-lo na instância experimental.
 
-2.  Crie ou abra um arquivo de texto. Digite algumas palavras que contém o caractere 'a' e, em seguida, digite **+** em qualquer lugar na exibição de texto.
+2. Crie ou abra um arquivo de texto. Digite algumas palavras que contém o caractere 'a' e, em seguida, digite **+** em qualquer lugar na exibição de texto.
 
      Um quadrado roxo deve aparecer em cada caractere 'a' no arquivo.

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429724"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Solucionando problemas do Visualizador da Ajuda
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Este tópico aborda problemas que podem ocorrer com o Visualizador da Ajuda.
   
 #### <a name="to-activate-windows-search-service"></a>Para ativar o serviço Windows Search  
   
-1.  Inicie o Gerenciador do Servidor.  
+1. Inicie o Gerenciador do Servidor.  
   
-2.  No painel de navegação esquerdo, escolha **Funções**.  
+2. No painel de navegação esquerdo, escolha **Funções**.  
   
-3.  No painel Resumo de Funções, escolha **Adicionar Função**.  
+3. No painel Resumo de Funções, escolha **Adicionar Função**.  
   
-4.  Escolha a função Serviços de Arquivo e escolha o botão **Avançar**.  
+4. Escolha a função Serviços de Arquivo e escolha o botão **Avançar**.  
   
-5.  Escolha o serviço de função do Windows Search.  
+5. Escolha o serviço de função do Windows Search.  
   
 ## <a name="additional-resources"></a>Recursos adicionais  
  Você pode obter mais informações e fornecer comentários sobre o Visualizador da Ajuda usando os seguintes recursos:  

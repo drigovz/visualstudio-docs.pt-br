@@ -1,23 +1,20 @@
 ---
 title: T4 Diretiva de modelo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2b0a8e04-6fee-4c6c-b086-e49fc728a3ed
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: dcd11416bc067acaab8855b51969c7e1068e2c97
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49248214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411458"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +55,8 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
   
 ## <a name="debug-attribute"></a>Atributo debug  
  Exemplo:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -73,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>Atributo hostspecific  
  Exemplo:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -147,7 +146,8 @@ Squares of numbers:
  Normalmente, você especifica outro modelo pré-processado como a classe base. O modelo de base fornece os blocos de texto comuns, que podem ser intercalados com o texto dos modelos derivados. Você pode usar blocos de recursos de classe `<#+ ... #>` para definir os métodos que contêm fragmentos de texto. Por exemplo, você pode colocar o framework dp texto de saída no modelo de base, fornecendo métodos virtuais que podem ser substituídos em modelos derivados:  
   
  Modelo de texto de tempo de execução (pré-processado) BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -166,7 +166,8 @@ This is the common footer.
 ```  
   
  Modelo de texto de tempo de execução (pré-processado) DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -191,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Código do aplicativo para invocar DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Saída resultante:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  
@@ -209,7 +212,7 @@ This is the common footer.
  Você também pode usar uma classe escrita manualmente comum como a classe base. A classe base deve fornecer os métodos usados pela classe derivada.  
   
 > [!WARNING]
->  Se você usar os atributos `inherits` e `hostspecific` juntos, especifique hostspecific="trueFromBase" na classe derivada e host="true” na classe base. Isso evita uma definição dupla da propriedade `Host` no código gerado.  
+> Se você usar os atributos `inherits` e `hostspecific` juntos, especifique hostspecific="trueFromBase" na classe derivada e host="true” na classe base. Isso evita uma definição dupla da propriedade `Host` no código gerado.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herança em um modelo de texto de tempo de design  
  Um modelo de texto de tempo de design é um arquivo para o qual **Custom Tool** é definido como **TextTemplatingFileGenerator**. O modelo gera um arquivo de saída de código ou texto, que faz parte do seu projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para gerar o arquivo de saída, primeiro o modelo é convertido em um arquivo de código de programa intermediário, que você normalmente não vê. O atributo `inherits` especifica a classe base para esse código intermediário.  
@@ -241,6 +244,3 @@ This is the common footer.
  `internal`  
   
  Em um modelo de texto de tempo de execução, isso define o atributo visibility da classe gerada. Por padrão, a classe faz parte da API pública do código, mas definir `visibility="internal"` garante que somente seu código possa usar a classe text-generating.
-
-
-

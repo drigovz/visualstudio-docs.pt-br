@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430309"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Dicas e truques sobre o Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos neste tópico. Para obter mais informações, consulte [atalhos de teclado no Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).
+Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos neste tópico. Para obter informações mais gerais, confira [Atalhos de teclado no Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre como otimizar a acessibilidade do Visual Studio, consulte [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Gerenciamento de Janelas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Gerenciamento de Janelas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Atalhos das Janelas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Atalhos das Janelas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Pesquisa do Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Pesquisa do Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Localização de Editor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Localização de Editor](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Editor de Código](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Editor de Código](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Barras de ferramentas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Barras de ferramentas](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Depuração](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Depuração](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Gerenciamento do Ciclo de Vida do Aplicativo](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Gerenciamento do Ciclo de Vida do Aplicativo](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Gerenciamento de Janelas
+## <a name="BKMK_WindowMgmt"></a> Gerenciamento de Janelas
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Mostrar a Lista de Arquivos Abertos|Ctrl+Alt+Seta para baixo|
 |Mostrar Todas as Janelas Flutuantes|Ctrl+Shift+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Atalhos das Janelas
+## <a name="BKMK_WindowShortcuts"></a> Atalhos das Janelas
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Nova instância de Início|Win+Shift+n|
 |Alternar entre as Janelas|Win+n|
 
-##  <a name="BKMK_Search"></a> Pesquisa do Visual Studio
+## <a name="BKMK_Search"></a> Pesquisa do Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Resultados de Escopo de Início Rápido|–   @opt Opções<br />–   @cmd Comandos<br />–   @mru Usado mais recentemente<br />–   @doc Abrir documentos|
 |Pesquisar em Opções de Ferramentas|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> Localização de editor
+## <a name="BKMK_EditorFind"></a> Localização de editor
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Localizar em Arquivos|Ctrl+Shift+F|
 |Substituir nos Arquivos|Ctrl+Shift+H|
 
-##  <a name="BKMK_CodeEditor"></a> Editor de código
+## <a name="BKMK_CodeEditor"></a> Editor de código
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Navegar entre vários resultados de espiada|F8 e Shift+F8|
 |Alterne entre a janela do editor de códigos e a janela de definição de auge|Shift+Esc|
 
-##  <a name="BKMK_Toolbars"></a> Barras de ferramentas
+## <a name="BKMK_Toolbars"></a> Barras de ferramentas
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Localize o Módulo de Comando de Caixa de Texto|Digite “>”|
 |Crie novos alias|>Comando do alias NewAlias|
 
-##  <a name="BKMK_Debugging"></a> Depuração
+## <a name="BKMK_Debugging"></a> Depuração
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Você pode navegar no Visual Studio de maneira mais fácil usando os atalhos nes
 |Buffer de limpeza imediata da janela|>cls|
 |Valor de Impressão de Janela Imediato|?varname|
 
-##  <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo
+## <a name="BKMK_ALM"></a> Gerenciamento do Ciclo de Vida do Aplicativo
 
 Veja [Atalhos de teclado: Visual Studio Online, portal da Web do TFS e Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

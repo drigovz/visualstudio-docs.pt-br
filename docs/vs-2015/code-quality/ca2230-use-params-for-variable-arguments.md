@@ -1,14 +1,9 @@
 ---
-title: 'CA2230: Usar parâmetros para argumentos variáveis | Microsoft Docs'
-ms.custom: ''
+title: 'CA2230: Usar parâmetros para argumentos de variável | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - UseParamsForVariableArguments
 - CA2230
@@ -20,14 +15,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ad0f43ac18c39d1dfdf6464e5cd260b669e1a0da
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: e2ab764b9a9f30c9e8143267cbdf14ecbb9456e8
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49892721"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58927233"
 ---
-# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: usar parâmetros para argumentos variáveis
+# <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parâmetros para argumentos variáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -43,10 +38,10 @@ ms.locfileid: "49892721"
 ## <a name="rule-description"></a>Descrição da Regra
  O `VarArgs` convenção de chamada é usada com determinadas definições de método que levam a um número variável de parâmetros. Um método usando o `VarArgs` convenção de chamada não é Common Language Specification (CLS) em conformidade e pode não estar acessível em linguagens de programação.
 
- No c#, o `VarArgs` convenção de chamada é usada quando a lista de parâmetros do método termina com o `__arglist` palavra-chave. Visual Basic não oferece suporte a `VarArgs` convenção de chamada e Visual C++ permite que seu uso apenas em código não gerenciado que usa a elipse `...` notação.
+ No C#, o `VarArgs` convenção de chamada é usada quando a lista de parâmetros do método termina com o `__arglist` palavra-chave. Visual Basic não oferece suporte a `VarArgs` convenção de chamada e Visual C++ permite que seu uso apenas em código não gerenciado que usa a elipse `...` notação.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra no c#, use o [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) palavra-chave, em vez de `__arglist`.
+ Para corrigir uma violação dessa regra no C#, use o [params](http://msdn.microsoft.com/library/1690815e-b52b-4967-8380-5780aff08012) palavra-chave, em vez de `__arglist`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.
@@ -58,6 +53,3 @@ ms.locfileid: "49892721"
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Reflection.CallingConventions?displayProperty=fullName> [Independência de linguagem e componentes independentes de linguagem](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
-
-
-

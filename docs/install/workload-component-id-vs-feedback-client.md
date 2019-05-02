@@ -1,5 +1,5 @@
 ---
-title: IDs de carga de trabalho e de componente do Feedback Client do Visual Studio 2017
+title: IDs de carga de trabalho e de componente do Feedback Client do Visual Studio
 titleSuffix: ''
 description: Use IDs de carga de trabalho e de componente do Visual Studio para fornecer comentários detalhados para o Azure DevOps Services ou o Team Foundation Server
 keywords: ''
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: 7392a100-100c-458c-9394-828695109015
-ms.workload:
-- multiple
-ms.openlocfilehash: 2181d080875843c381d7498ac52a3bb0d381459a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: f23af12a79e1b04c193e85c6fa31ac225af68a6d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960743"
 ---
-# <a name="visual-studio-feedback-client-2017-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio 2017
+# <a name="visual-studio-feedback-client-component-directory"></a>Diretório de componentes do Feedback Client do Visual Studio
 
 As tabelas desta página listam as IDs que podem ser usadas para instalar o Visual Studio usando a linha de comando ou que podem ser especificadas como uma dependência em um manifesto do VSIX. Observe que adicionaremos outros componentes conforme atualizações forem liberadas para o Visual Studio.
 

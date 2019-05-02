@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Um passo a passo das noções básicas do Flask no contexto dos projetos do Visual Studio, especificamente as funcionalidades fornecidas pelos modelos Projeto Web do Flask e Projeto Web do Flask/Jade.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b17400aae5386a2d86cc13d0b81293bd2ef068fb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957217"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Flask
 
@@ -169,6 +169,7 @@ O arquivo *\_\_init\_\_.py* do aplicativo contém uma linha para
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 Na pasta *templates*, são exibidos arquivos *.jade* em vez de modelos *.html*, e as exibições em *views.py* referenciam esses arquivos em suas chamadas a `flask.render_template`. Caso contrário, o código de modos de exibição é o mesmo.
 
 Abrindo um dos arquivos *.jade*, você pode ver a expressão mais sucinta de um modelo. Por exemplo, este é o conteúdo de *templates/layout.jade*, conforme criado pelo modelo "Projeto Web do Flask/Jade":

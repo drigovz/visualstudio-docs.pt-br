@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447019"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
   O **Publish** página do **Designer de projeto** é usado para configurar as propriedades de implantação.
@@ -29,7 +29,7 @@ ms.locfileid: "54869665"
  Para acessar essa página, selecione o projeto no **Gerenciador de soluções**e, em seguida, na **Project** menu, escolha *Projectname* **propriedades** . Se o **Publish** página não for exibida, escolha o **publicar** guia.
 
 > [!NOTE]
->  Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, confira [Como: Publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, confira [Como: Publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>Lista UIElement
  **Pasta local (site da web, servidor ftp ou caminho do arquivo) de publicação** necessária.
@@ -84,9 +84,9 @@ ms.locfileid: "54869665"
 
 - Comportamento de carregamento de suplementos do VSTO.
 
-  -   Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.
+  - Carregar na inicialização: Especifica que o suplemento do VSTO carrega quando o aplicativo do Office é iniciado.
 
-  -   Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.
+  - Carregar sob demanda: Especifica que o suplemento do VSTO carrega quando o aplicativo requer, como quando um usuário clica em um elemento de interface do usuário que usa a funcionalidade no suplemento do VSTO.
 
   **Idioma de publicação** essa opção define o idioma dos termos de licença do Software Microsoft e inclui os pacotes de idiomas na lista de pré-requisitos. Ele não afeta o idioma da personalização. O idioma no programa de instalação é determinado pelos idiomas instalados do Visual Studio.
 

@@ -1,13 +1,10 @@
 ---
 title: Formatar especificadores no depurador (C++) | Microsoft Docs
-ms.date: 11/20/2018
+ms.date: 3/11/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
-- CSharp
-- VB
-- FSharp
 - C++
 helpviewer_keywords:
 - QuickWatch dialog box, format specifiers in C++
@@ -27,15 +24,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8ad821c15ee8b405982d36c6b1c62d038bb11633
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896614"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ no depurador do Visual Studio
-Você pode alterar o formato no qual um valor é exibido na **inspeção** janela usando especificadores de formato.
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Os especificadores de formato de C++ no depurador do Visual Studio
+Você pode alterar o formato no qual um valor é exibido na **Watch**, **Autos**, e **locais** windows usando especificadores de formato.
 
 Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela, na [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e até mesmo em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado é exibido em uma [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). A exibição de DataTip reflete o especificador de formato.
 
@@ -57,8 +54,55 @@ Adicione a `my_var1` variável para o **inspeção** janela durante a depuraçã
 
 ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")
 
+::: moniker range=">= vs-2019" 
+Você pode exibir e selecionar em uma lista de especificadores de formato disponíveis, acrescentando uma vírgula (,) para o valor de **inspeção** janela. 
+
+![WatchFormatSpecDropdown](../debugger/media/vs-2019/format-specs-cpp.png "FormatSpecCpp")
+
+::: moniker-end
+
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato
-As tabelas a seguir descrevem os especificadores de formato que você pode usar no Visual Studio. Especificadores em negrito têm suporte apenas para o novo depurador e não para depuração interop com C + + / CLI.
+As tabelas a seguir descrevem os especificadores de formato que você pode usar no Visual Studio. Especificadores em negrito têm suporte apenas para o novo depurador e não para depuração interop com C++/CLI.
+
+::: moniker range=">= vs-2019" 
+
+|Especificador|Formatar|Valor original de inspeção|Valor exibido|
+|---------------|------------|--------------------------|---------------------|
+|d|inteiro decimal|0x00000066|102|
+|o|inteiro octal não assinado|0x00000066|000000000146|
+|x<br /><br /> **h**|inteiro hexadecimal|102|0xcccccccc|
+|X<br /><br /> **H**|inteiro hexadecimal|102|0xCCCCCCCC|
+|xb<br /><br /> **hb**|inteiro hexadecimal (sem 0x à esquerda)|102|cccccccc|
+|Xb<br /><br /> **Hb**|inteiro hexadecimal (sem 0x à esquerda)|102|CCCCCCCC|
+|b|inteiro não assinado de binário|25|0b00000000000000000000000000011001|
+|bb|inteiro não assinado de binário (sem 0b à esquerda)|25|00000000000000000000000000011001|
+|e|notação científica|25000000|2.500000e + 07|
+|g|mais curto do ponto flutuante ou científico|25000000|2.5e + 07|
+|c|caractere único|0x0065, c|101 'e'|
+|s|Const char * cadeia de caracteres (com aspas)|\<local > "hello world"|"hello world"|
+|**sb**|cadeia de caracteres const char* (sem aspas)|\<local > "hello world"|hello world|
+|s8|Cadeia de caracteres UTF-8|\<local > "Este é um â˜• xícara de café de UTF-8"|"Este é um ☕ xícara de café de UTF-8"|
+|**s8b**|Cadeia de caracteres UTF-8 (sem aspas)|\<local > "hello world"|hello world|
+|su|Cadeia de caracteres Unicode (codificação UTF-16) (com aspas)|\<local > L "hello world"|L"hello world"<br /><br /> u "hello world"|
+|sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|hello world|
+|bstr|Cadeia de caracteres binária (com aspas) BSTR|\<local > L "hello world"|L"hello world"|
+|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
+|**s32**|Cadeia de caracteres UTF-32 (com aspas)|\<local > U "hello world"|u "hello world"|
+|**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|
+|**en**|enum|Saturday(6)|Sábado|
+|**hv**|Tipo de ponteiro - indica que o valor do ponteiro está sendo inspecionado é o resultado da alocação de heap de uma matriz, por exemplo, `new int[3]`.|\<local > {\<primeiro membro >}|\<local > {\<primeiro membro >, \<segundo membro >,...}|
+|**na**|Inibe o endereço de memória de um ponteiro para um objeto.|\<location>, {member=value...}|{member=value...}|
+|**nd**|Exibe somente as informações de classe base, ignorando classes derivadas|`(Shape*) square` inclui a classe base e derivadas informações de classe|Exibe somente informações de classe de base|
+|hr|Código de erro HRESULT ou Win32. Esse especificador não é necessário para HRESULTs como o depurador decodifica automaticamente.|S_OK|S_OK|
+|wc|Sinalizador de classe do Windows|0x0010|WC_DEFAULTCHAR|
+|wm|Números de mensagens do Windows|16|WM_CLOSE|
+|nr|Suprimir item "Raw View"|
+|nvo|Mostrar item de "Modo de exibição bruto" para valores numéricos apenas|
+|!|formato bruto, ignorando qualquer personalização de exibições de tipo de dados|\<personalizado representação >|4|
+
+::: moniker-end
+
+::: moniker range="vs-2017" 
 
 |Especificador|Formatar|Valor original de inspeção|Valor exibido|
 |---------------|------------|--------------------------|---------------------|
@@ -74,7 +118,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 |su|Cadeia de caracteres Unicode (codificação UTF-16) (com aspas)|\<local > L "hello world"|L"hello world"<br /><br /> u "hello world"|
 |sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|hello world|
 |bstr|Cadeia de caracteres binária (com aspas) BSTR|\<local > L "hello world"|L"hello world"|
-|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<local > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Cadeia de caracteres UTF-32 (com aspas)|\<local > U "hello world"|u "hello world"|
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|
 |**en**|enum|Saturday(6)|Sábado|
@@ -86,8 +130,10 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 |wm|Números de mensagens do Windows|16|WM_CLOSE|
 |!|formato bruto, ignorando qualquer personalização de exibições de tipo de dados|\<personalizado representação >|4|
 
+::: moniker-end
+
 > [!NOTE]
-> Quando o **hv** especificador de formato estiver presente, o depurador tenta determinar o comprimento do buffer e exibir esse número de elementos. Como nem sempre é possível que o depurador localizar o tamanho do buffer exata de uma matriz, você deve usar um especificador de tamanho `(pBuffer,[bufferSize])` sempre que possível. O **hv** especificador de formato é útil quando o tamanho do buffer não está prontamente disponível
+> Quando o **hv** especificador de formato estiver presente, o depurador tenta determinar o comprimento do buffer e exibir esse número de elementos. Como nem sempre é possível que o depurador localizar o tamanho do buffer exata de uma matriz, você deve usar um especificador de tamanho `(pBuffer,[bufferSize])` sempre que possível. O **hv** especificador de formato é útil quando o tamanho do buffer não está prontamente disponível.
 
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamanho para ponteiros como matrizes
 Se você tiver um ponteiro para um objeto que queira exibir como uma matriz, poderá usar um inteiro ou uma expressão para especificar o número de elementos da matriz.
@@ -121,14 +167,14 @@ Especificadores em **negrito** têm suporte somente para depuração nativos e c
 |wm|Números de mensagens do Windows|0x0010|WM_CLOSE|
 |!|formato bruto, ignorando qualquer personalização de modo de exibição do tipo de dados|\<personalizado representação >|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os especificadores de locais de memória em depuração interop com C + + / CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os especificadores de locais de memória em depuração interop com C++/CLI
 A tabela a seguir descreve os símbolos de formatação usados para locais de memória. Você pode usar um especificador de local da memória com qualquer valor ou expressão que seja avaliada como um local.
 
 |Símbolo|Formatar|Valor original de inspeção|Valor exibido|
 |------------|------------|--------------------------|---------------------|
 |**ma**|Caracteres ASCII na base 64|0x0012ffac|0x0012ffac .4...0...".0W&.......1W&.0.:W..1...."..1.JO&.1.2.."..1...0y....1|
-|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
-|**mb**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&amp;.|
+|**m**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|
+|**mb**|16 bytes em hexadecimal, seguidos caracteres ASCII na base 16|0x0012ffac|0x0012ffac B3 34 CB 00 84 30 94 80 FF 22 8A 30 57 26 00 00 .4...0...".0W&..|
 |**mw**|8 palavras|0x0012ffac|0x0012ffac 34B3 00CB 3084 8094 22FF 308A 2657 0000|
 |**md**|4 palavra duplas|0x0012ffac|0x0012ffac 00CB34B3 80943084 308A22FF 00002657|
 |**mq**|2 palavras quádruplas|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|

@@ -12,17 +12,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f1dd2cb3278357f05d5ed08031c8e385d45f1a35
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445626"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Instruções passo a passo: criando uma tarefa embutida
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Para obter mais informações, consulte [Tarefas Embutidas](../msbuild/msbuild-inline-tasks.md).  
   
  Este passo a passo mostra como criar e executar essas tarefas embutidas:  
@@ -48,15 +47,15 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   
 #### <a name="to-create-and-modify-a-project-file"></a>Para criar e modificar um arquivo de projeto  
   
-1.  No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No Visual Studio, no menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, `D:\`. Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é `InlineTasks`.  
+2. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `InlineTasks`. Digite um **Local** para a solução, por exemplo, `D:\`. Certifique-se de que **Criar diretório para a solução** está selecionado, **Adicionar ao Controle do Código-Fonte** não está marcado e que **Nome da Solução** é `InlineTasks`.  
   
      Clique em **OK** para criar o arquivo de projeto.  
   
-3.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto InlineTasks e clique em **Descarregar Projeto**.  
+3. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto InlineTasks e clique em **Descarregar Projeto**.  
   
-4.  Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar InlineTasks.csproj**.  
+4. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar InlineTasks.csproj**.  
   
      O arquivo de projeto aparecerá no editor de códigos.  
   
@@ -105,7 +104,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
     `Hello, world!`  
   
    > [!NOTE]
-   >  Se você não vir a mensagem de saudação, tente salvar o arquivo de projeto novamente e, em seguida, execute a tarefa de Olá.  
+   > Se você não vir a mensagem de saudação, tente salvar o arquivo de projeto novamente e, em seguida, execute a tarefa de Olá.  
   
    Ao alternar entre o editor de códigos e a **janela do Prompt de Comando**, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.  
   

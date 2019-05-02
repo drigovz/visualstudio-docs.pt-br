@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63329433204af7c7fe7ae40366a376c9da16fdcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441832"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office automaticamente gera vários manipuladores de eventos. Os manipuladores de eventos para personalizações no nível de documento são ligeiramente diferentes de manipuladores de eventos para suplementos do VSTO.
@@ -52,37 +52,37 @@ ms.locfileid: "56627734"
 
  Quando você cria um projeto de nível de documento, o Visual Studio cria manipuladores de eventos para o **inicialização** eventos nos arquivos de código gerado:
 
--   Para projetos do Microsoft Office Word, o manipulador de eventos é chamado de `ThisDocument_Startup`.
+- Para projetos do Microsoft Office Word, o manipulador de eventos é chamado de `ThisDocument_Startup`.
 
--   Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
+- Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
 
-    -   `Sheet1_Startup`
+    - `Sheet1_Startup`
 
-    -   `Sheet2_Startup`
+    - `Sheet2_Startup`
 
-    -   `Sheet3_Startup`
+    - `Sheet3_Startup`
 
-    -   `ThisWorkbook_Startup`
+    - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Evento de encerramento
  O **desligamento** é gerado para cada um dos itens de host (documento ou planilha) quando o que seu código é carregado no domínio do aplicativo está prestes a ser descarregado. É a última coisa a ser chamado na classe conforme ele descarrega.
 
  Quando você cria um projeto de nível de documento, o Visual Studio cria manipuladores de eventos para o **desligamento** eventos nos arquivos de código gerado:
 
--   Para projetos do Microsoft Office Word, o manipulador de eventos é chamado de `ThisDocument_Shutdown`.
+- Para projetos do Microsoft Office Word, o manipulador de eventos é chamado de `ThisDocument_Shutdown`.
 
--   Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
+- Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
 
-    -   `Sheet1_Shutdown`
+    - `Sheet1_Shutdown`
 
-    -   `Sheet2_Shutdown`
+    - `Sheet2_Shutdown`
 
-    -   `Sheet3_Shutdown`
+    - `Sheet3_Shutdown`
 
-    -   `ThisWorkbook_Shutdown`
+    - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Não remover programaticamente os controles durante o **desligamento** manipulador de eventos do documento. Os elementos de interface do usuário do documento não estão mais disponíveis quando o **desligamento** evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como **BeforeClose** ou **BeforeSave**.
+> Não remover programaticamente os controles durante o **desligamento** manipulador de eventos do documento. Os elementos de interface do usuário do documento não estão mais disponíveis quando o **desligamento** evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como **BeforeClose** ou **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Declarações de método do manipulador de eventos
  Cada declaração de método do manipulador de eventos tem os mesmos argumentos passados para ele: *remetente* e *e*. No Excel, o *remetente* argumento se refere à planilha, como `Sheet1` ou `Sheet2`; no Word, o *remetente* argumento se refere ao documento. O *eletrônico* argumento refere-se para os argumentos padrão para um evento, que não são usados nesse caso.
@@ -95,7 +95,7 @@ ms.locfileid: "56627734"
  O exemplo de código a seguir mostra os manipuladores de eventos padrão em projetos de nível de documento para Excel.
 
 > [!NOTE]
->  O exemplo de código a seguir mostra os manipuladores de eventos no `Sheet1` classe. Os nomes dos manipuladores de eventos em outras classes de item de host correspondem ao nome da classe. Por exemplo, nos `Sheet2` classe, o **inicialização** manipulador de eventos é chamado `Sheet2_Startup`. No `ThisWorkbook` classe, o **inicialização** manipulador de eventos é chamado `ThisWorkbook_Startup`.
+> O exemplo de código a seguir mostra os manipuladores de eventos no `Sheet1` classe. Os nomes dos manipuladores de eventos em outras classes de item de host correspondem ao nome da classe. Por exemplo, nos `Sheet2` classe, o **inicialização** manipulador de eventos é chamado `Sheet2_Startup`. No `ThisWorkbook` classe, o **inicialização** manipulador de eventos é chamado `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -145,12 +145,12 @@ ms.locfileid: "56627734"
 #### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Evento de desligamento nos suplementos do VSTO do Outlook
  O <xref:Microsoft.Office.Tools.AddInBase.Shutdown> é gerado somente quando o usuário desativa o suplemento do VSTO usando a caixa de diálogo Suplementos COM no Outlook. Ele não é disparado quando o Outlook é fechado. Se você tiver o código que deve ser executado quando o Outlook é fechado, lidar com qualquer um dos seguintes eventos:
 
--   O <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> eventos do <xref:Microsoft.Office.Interop.Outlook.Application> objeto.
+- O <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> eventos do <xref:Microsoft.Office.Interop.Outlook.Application> objeto.
 
--   O <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> eventos do <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto.
+- O <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> eventos do <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto.
 
 > [!NOTE]
->  Você pode forçar o Outlook para gerar o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> evento quando ele sai modificando o registro. No entanto, se um administrador reverte essa configuração, qualquer código que você adicione o `ThisAddIn_Shutdown` método não é executado quando o Outlook é fechado. Para obter mais informações, consulte [desligamento é alterado para o Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Você pode forçar o Outlook para gerar o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> evento quando ele sai modificando o registro. No entanto, se um administrador reverte essa configuração, qualquer código que você adicione o `ThisAddIn_Shutdown` método não é executado quando o Outlook é fechado. Para obter mais informações, consulte [desligamento é alterado para o Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Consulte também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

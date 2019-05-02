@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446989"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto da faixa de opções
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar guias, grupos e controles à faixa de opções, mas apenas antes que o faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [definir as propriedades que se tornam somente leitura](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601030"
 
  Esse modelo de objeto da faixa de opções consiste principalmente a [classe de faixa de opções](#RibbonClass), [eventos da faixa de opções](#RibbonEvents), e [classes de controle de faixa de opções](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Classe de faixa de opções
+## <a name="RibbonClass"></a> Classe de faixa de opções
  Quando você adiciona um novo **faixa de opções (Visual Designer)** do item a um projeto, o Visual Studio adiciona uma **faixa de opções** classe ao seu projeto. O **faixa de opções** herda o <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.
 
  Essa classe é exibida como uma classe parcial que é dividida entre o arquivo de código da faixa de opções e o arquivo de código do Designer de faixa de opções.
 
-##  <a name="RibbonEvents"></a> Eventos da faixa de opções
+## <a name="RibbonEvents"></a> Eventos da faixa de opções
  O **faixa de opções** classe contém os seguintes três eventos:
 
 |evento|Descrição|
@@ -40,7 +40,7 @@ ms.locfileid: "56601030"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Permite que você às imagens de cache na personalização da faixa de opções quando a faixa de opções for carregada. Se você escrever código para armazenar em cache as imagens de faixa de opções no manipulador de eventos, você pode obter um ganho de desempenho. Para obter mais informações, consulte <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Gerado quando a instância de faixa de opções é fechada.|
 
-##  <a name="RibbonControlClasses"></a> Controles da faixa de opções
+## <a name="RibbonControlClasses"></a> Controles da faixa de opções
  O <xref:Microsoft.Office.Tools.Ribbon> namespace contém um tipo para cada controle que você vê o **controles de faixa de opções do Office** grupo do **caixa de ferramentas**.
 
  A tabela a seguir mostra o tipo para cada `Ribbon` controle. Para obter uma descrição de cada controle, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601030"
 |Obter os grupos um <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Use a propriedade <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Especifique o número de linhas e colunas que aparecem em um <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Use o <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> e <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propriedades.|
 
-##  <a name="SettingReadOnlyProperties"></a> Definir propriedades que se tornam somente leitura
+## <a name="SettingReadOnlyProperties"></a> Definir propriedades que se tornam somente leitura
  Algumas propriedades só podem ser definidas antes de carrega a faixa de opções. Há três locais para definir essas propriedades:
 
 - No Visual Studio **propriedades** janela.
@@ -126,11 +126,11 @@ ms.locfileid: "56601030"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Propriedades que se tornam somente leitura
+### <a name="ReadOnlyProperties"></a> Propriedades que se tornam somente leitura
  A tabela a seguir mostra as propriedades que podem ser definidas somente antes de carrega a faixa de opções.
 
 > [!NOTE]
->  Você pode definir as propriedades de controles em menus dinâmicos a qualquer momento. Nesse caso, não se aplicam a essa tabela.
+> Você pode definir as propriedades de controles em menus dinâmicos a qualquer momento. Nesse caso, não se aplicam a essa tabela.
 
 |Propriedade|Classe de controle de faixa de opções|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "56601030"
  Se você tiver a lógica condicional que define qualquer uma dessas propriedades para um valor diferente de quando outras instâncias da faixa de opções são criadas, esse código não terá nenhum efeito.
 
 > [!NOTE]
->  Certifique-se de que o **nome** propriedade é definida para cada controle que você adicionar a uma faixa de opções do Outlook. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de execução, você deve definir essa propriedade em seu código. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de design, a propriedade Name é definida automaticamente.
+> Certifique-se de que o **nome** propriedade é definida para cada controle que você adicionar a uma faixa de opções do Outlook. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de execução, você deve definir essa propriedade em seu código. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de design, a propriedade Name é definida automaticamente.
 
 ## <a name="ribbon-control-events"></a>Eventos de controle de faixa de opções
  Cada classe de controle contém um ou mais eventos. A tabela a seguir descreve esses eventos.

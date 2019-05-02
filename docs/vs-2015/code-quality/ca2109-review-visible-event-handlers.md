@@ -1,14 +1,9 @@
 ---
 title: 'CA2109: Revisar manipuladores de eventos visíveis | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2109
 - ReviewVisibleEventHandlers
@@ -20,14 +15,14 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 328df28441fa5c96fee40baed11a54c3044542b8
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49880371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038324"
 ---
-# <a name="ca2109-review-visible-event-handlers"></a>CA2109: revisar manipuladores de eventos visíveis
+# <a name="ca2109-review-visible-event-handlers"></a>CA2109: Examinar manipuladores de eventos visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -47,18 +42,18 @@ ms.locfileid: "49880371"
 
  Uma demanda de forma confiável não pode proteger um método invocado por um manipulador de eventos. Demandas de segurança ajuda proteger o código, examinando os chamadores na pilha de chamadas de chamadores não confiáveis. Código que adiciona um manipulador de eventos a um evento não é necessariamente presente na pilha de chamadas quando executar métodos do manipulador de eventos. Portanto, a pilha de chamadas pode ter apenas altamente confiável os chamadores quando o método de manipulador de eventos é invocado. Isso faz com que as demandas feitas pelo método de manipulador de eventos seja bem-sucedida. Além disso, a permissão exigida pode ser confirmada quando o método é invocado. Por esses motivos, o risco de não corrigir uma violação dessa regra pode ser avaliado somente depois de examinar o método de manipulação de eventos. Ao examinar seu código, considere as seguintes questões:
 
--   O seu manipulador de eventos executa todas as operações que são perigosas ou podem ser exploradas como declarar permissões ou suprimir a permissão de código não gerenciado?
+- O seu manipulador de eventos executa todas as operações que são perigosas ou podem ser exploradas como declarar permissões ou suprimir a permissão de código não gerenciado?
 
--   Quais são as ameaças de segurança para e do seu código, porque ele pode ser executado a qualquer momento com apenas altamente confiáveis que os chamadores na pilha?
+- Quais são as ameaças de segurança para e do seu código, porque ele pode ser executado a qualquer momento com apenas altamente confiáveis que os chamadores na pilha?
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, examine o método e avaliar o seguinte:
 
--   Você pode tornar o método de manipulação de eventos não público?
+- Você pode tornar o método de manipulação de eventos não público?
 
--   Você pode mover toda a funcionalidade perigosa fora do manipulador de eventos?
+- Você pode mover toda a funcionalidade perigosa fora do manipulador de eventos?
 
--   Se uma exigência de segurança é imposta, isso pode ser feito de alguma outra maneira?
+- Se uma exigência de segurança é imposta, isso pode ser feito de alguma outra maneira?
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Suprima um aviso nessa regra somente após uma análise atenta da segurança para certificar-se de que seu código não representem uma ameaça de segurança.
@@ -70,7 +65,4 @@ ms.locfileid: "49880371"
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Demandas de segurança](http://msdn.microsoft.com/en-us/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
-
-
-
+ [Demandas de segurança](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

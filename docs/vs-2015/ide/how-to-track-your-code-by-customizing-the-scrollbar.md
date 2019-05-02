@@ -9,27 +9,27 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113802"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como acompanhar o código personalizando a barra de rolagem
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como: Acompanhar o código Personalizando a barra de rolagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você está trabalhando com arquivos de código longo, pode ser difícil manter controle de tudo. Você pode personalizar a barra de rolagem da janela de código para ter um panorama geral do que está acontecendo em seu código.  
   
 ### <a name="to-show-annotations-on-the-scroll-bar"></a>Para mostrar anotações na barra de rolagem  
   
-1.  É possível configurar a barra de rolagem para mostrar alterações de código, pontos de interrupção, erros e indicadores.  
+1. É possível configurar a barra de rolagem para mostrar alterações de código, pontos de interrupção, erros e indicadores.  
   
      Abra a página de opções **Barra de Rolagem** (**Ferramentas, Editor de Texto de Opções. Todos os Idiomas** ou um idioma específico, ou digite **barra de rolagem** na janela de Início Rápido).  
   
-2.  Selecione **Mostrar anotações sobre a barra de rolagem vertical** e selecione as anotações que deseja ver. (A opção **Marcas** inclui pontos de interrupção e indicadores.)  
+2. Selecione **Mostrar anotações sobre a barra de rolagem vertical** e selecione as anotações que deseja ver. (A opção **Marcas** inclui pontos de interrupção e indicadores.)  
   
-3.  Agora tente. Abra um arquivo de código grande e substitua algo que ocorre em vários locais do arquivo. A barra de rolagem mostra o efeito das substituições, de modo que você pode desfazer suas alterações se tiver substituído algo que não deveria.  
+3. Agora tente. Abra um arquivo de código grande e substitua algo que ocorre em vários locais do arquivo. A barra de rolagem mostra o efeito das substituições, de modo que você pode desfazer suas alterações se tiver substituído algo que não deveria.  
   
      Esta é a aparência da barra de rolagem após o usuário pesquisar por uma cadeia de caracteres. Observe que todas as instâncias da cadeia de caracteres são exibidas.  
   
@@ -41,7 +41,7 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
   
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Para definir o modo de exibição para a barra de rolagem  
   
-1.  A barra de rolagem tem dois modos, o modo de barra (padrão) e o modo de mapa. O modo de barra exibe apenas indicadores de anotação na barra de rolagem. No modo de mapa, as linhas de código são representadas na barra de rolagem. Você pode escolher sua largura e se elas mostram o código subjacente quando você posiciona o ponteiro sobre elas. Quando você clica em um local na barra de rolagem, o cursor se move para esse local no código. Regiões recolhidas são sombreadas de forma diferente; elas são expandidas quando você clica duas vezes nelas.  
+1. A barra de rolagem tem dois modos, o modo de barra (padrão) e o modo de mapa. O modo de barra exibe apenas indicadores de anotação na barra de rolagem. No modo de mapa, as linhas de código são representadas na barra de rolagem. Você pode escolher sua largura e se elas mostram o código subjacente quando você posiciona o ponteiro sobre elas. Quando você clica em um local na barra de rolagem, o cursor se move para esse local no código. Regiões recolhidas são sombreadas de forma diferente; elas são expandidas quando você clica duas vezes nelas.  
   
      Na página de opções **Barra de Rolagem**, selecione **Usar modo de barra para barra de rolagem vertical** ou **Usar modo de mapa para barra de rolagem vertical**. Você pode escolher a largura na lista suspensa **Visualização do código-fonte**.  
   
@@ -49,7 +49,7 @@ Quando você está trabalhando com arquivos de código longo, pode ser difícil 
   
      ![A barra de rolagem no modo de mapa](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
-2.  No modo de mapa, para habilitar visualizações do código quando você move o cursor para cima e para baixo na barra de rolagem, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. Veja como deve ser sua aparência:  
+2. No modo de mapa, para habilitar visualizações do código quando você move o cursor para cima e para baixo na barra de rolagem, selecione a opção **Mostrar Dica de Ferramenta de Visualização**. Veja como deve ser sua aparência:  
   
      ![A barra de rolagem com uma dica de ferramenta](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   

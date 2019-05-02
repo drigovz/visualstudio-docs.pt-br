@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d76c5eb725545fd1fd8ab1a1ec2f4eaadcd39d3b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 15a36378efe7b6e3151882d5e6927cd7fbfa4542
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793174"
 ---
 # <a name="refactor-code"></a>Refatorar o código
 
@@ -22,7 +22,11 @@ Refatoração é o processo de modificar o código para torná-lo mais fácil de
 
 ## <a name="programming-languages"></a>Linguagens de programação
 
-As operações de refatoração diferentes estão disponíveis para linguagens de programação diferentes no Visual Studio. Os tópicos nesta seção abordam as refatorações disponíveis para C# e Visual Basic. Para obter informações sobre a refatoração de código C++, confira [Escrever e refatorar o código (C++)](/cpp/ide/writing-and-refactoring-code-cpp). O suporte à refatoração no F# é fornecido pelo [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), uma extensão do Visual Studio de terceiros.
+Diferentes operações de refatoração estão disponíveis para diferentes linguagens de programação no Visual Studio:
+
+- As páginas nesta seção do sumário abordam as refatorações disponíveis para C# e Visual Basic. Alguns exemplos são [Refatoração Extrair um método](reference/extract-method.md) e [Refatoração Mover tipo para um arquivo correspondente](reference/move-type-to-matching-file.md).
+- Para saber mais sobre a refatoração de código C++, confira [Escrevendo e refatorando um código (C++)](/cpp/ide/writing-and-refactoring-code-cpp).
+- O suporte à refatoração no F# é fornecido pelo [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools), uma extensão do Visual Studio de terceiros.
 
 ## <a name="see-also"></a>Consulte também
 

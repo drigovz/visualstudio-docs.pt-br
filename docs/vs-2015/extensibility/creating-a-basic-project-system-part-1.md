@@ -1,14 +1,9 @@
 ---
 title: Criar um sistema de projeto básico, parte 1 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - writing a project system
 - project system
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 caps.latest.revision: 48
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9bc0be22f0a5f975f616bfcce942d59399a36ad6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8304719a4b15b5f23957c99244796999d7b3f55c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51792548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439395"
 ---
 # <a name="creating-a-basic-project-system-part-1"></a>Criando um sistema de projeto básico, Parte 1
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,35 +27,35 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
  Projetos são definidos em arquivos de projeto, por exemplo, um arquivo. csproj para um projeto do Visual c#. Você pode criar seu próprio tipo de projeto que tem sua própria extensão de nome de arquivo de projeto. Para obter mais informações sobre tipos de projeto, consulte [tipos de projeto](../extensibility/internals/project-types.md).  
   
 > [!NOTE]
->  Se você precisar estender o Visual Studio com um tipo de projeto personalizado, é altamente recomendável aproveitar a [sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tem uma série de vantagens sobre a criação de um sistema de projeto a partir do zero:  
+> Se você precisar estender o Visual Studio com um tipo de projeto personalizado, é altamente recomendável aproveitar a [sistema de projeto do Visual Studio](https://github.com/Microsoft/VSProjectSystem) que tem uma série de vantagens sobre a criação de um sistema de projeto a partir do zero:  
 > 
 > - Integração mais fácil.  Até mesmo um sistema de projeto básico exige dezenas de milhares de linhas de código.  Aproveitar o CPS reduz o custo de integração para alguns cliques, antes que você está pronto para personalizá-lo às suas necessidades.  
->   -   Facilidade de manutenção.  Aproveitando o CPS, você precisa apenas manter seus próprios cenários.  Podemos lidar com a manutenção de toda a infraestrutura do sistema de projeto.  
+>   - Facilidade de manutenção.  Aproveitando o CPS, você precisa apenas manter seus próprios cenários.  Podemos lidar com a manutenção de toda a infraestrutura do sistema de projeto.  
 > 
 >   Se você precisar direcionar às versões do Visual Studio mais antigo que o Visual Studio 2013, você não poderá aproveitar o CPS em uma extensão do Visual Studio.  Se esse for o caso, este passo a passo é um bom lugar para começar a usar.  
   
  Este passo a passo mostra como criar um tipo de projeto que tem o .myproj de extensão de nome de arquivo de projeto. Este passo a passo emprestada do sistema de projeto Visual c# existente.  
   
 > [!NOTE]
->  Para um exemplo de ponta a ponta de um sistema de projeto de linguagem completa, consulte o exemplo de IronPython Deep Dive na [exemplos de VSSDK](../misc/vssdk-samples.md).  
+> Para um exemplo de ponta a ponta de um sistema de projeto de linguagem completa, consulte o exemplo de IronPython Deep Dive na [exemplos de VSSDK](../misc/vssdk-samples.md).  
   
  Este passo a passo ensina como realizar essas tarefas:  
   
--   Crie um tipo de projeto básico.  
+- Crie um tipo de projeto básico.  
   
--   Crie um modelo de projeto básico.  
+- Crie um modelo de projeto básico.  
   
--   Registre o modelo de projeto no Visual Studio.  
+- Registre o modelo de projeto no Visual Studio.  
   
--   Criar uma instância de projeto, abra o **novo projeto** caixa de diálogo e, em seguida, usando seu modelo.  
+- Criar uma instância de projeto, abra o **novo projeto** caixa de diálogo e, em seguida, usando seu modelo.  
   
--   Crie uma fábrica de projeto para o seu sistema de projeto.  
+- Crie uma fábrica de projeto para o seu sistema de projeto.  
   
--   Crie um nó do projeto para o seu sistema de projeto.  
+- Crie um nó do projeto para o seu sistema de projeto.  
   
--   Adicione ícones personalizados para o sistema de projeto.  
+- Adicione ícones personalizados para o sistema de projeto.  
   
--   Implemente a substituição de parâmetro do modelo básico.  
+- Implemente a substituição de parâmetro do modelo básico.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
@@ -75,7 +70,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 #### <a name="to-create-a-basic-project-template"></a>Para criar um modelo de projeto básico  
   
-1. Adicionar três pastas para o projeto, um sob o outro: **Templates\Projects\SimpleProject**. (No **Gerenciador de soluções**, clique com botão direito do **SimpleProject** nó do projeto, aponte para **adicionar**e, em seguida, clique em **nova pasta**. Nomeie a pasta `Templates`. No **modelos** pasta, adicione uma pasta chamada `Projects`. Além de **projetos** pasta, adicione uma pasta chamada `SimpleProject`.)  
+1. Adicione três pastas para o projeto, um sob o outro: **Templates\Projects\SimpleProject**. (No **Gerenciador de soluções**, clique com botão direito do **SimpleProject** nó do projeto, aponte para **adicionar**e, em seguida, clique em **nova pasta**. Nomeie a pasta `Templates`. No **modelos** pasta, adicione uma pasta chamada `Projects`. Além de **projetos** pasta, adicione uma pasta chamada `SimpleProject`.)  
   
 2. No **Projects\SimpleProject** pasta adicionar um arquivo de ícone denominado `SimpleProject.ico`. Quando você clica em **adicionar**, abre o editor de ícone.  
   
@@ -108,7 +103,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
    ```  
   
    > [!IMPORTANT]
-   >  Isso não é a forma final do código Program.cs; os parâmetros de substituição serão abordados em uma etapa posterior. Você poderá ver erros de compilação, mas desde que o arquivo **BuildAction** é **conteúdo**, você deve ser capaz de compilar e executar o projeto como de costume.  
+   > Isso não é a forma final do código Program.cs; os parâmetros de substituição serão abordados em uma etapa posterior. Você poderá ver erros de compilação, mas desde que o arquivo **BuildAction** é **conteúdo**, você deve ser capaz de compilar e executar o projeto como de costume.  
   
 7. Salve o arquivo.  
   
@@ -117,7 +112,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
 9. No **Projects\SimpleProject** pasta adicionar um arquivo XML denominado `SimpleProject.myproj`.  
   
    > [!NOTE]
-   >  A extensão de nome de arquivo para todos os projetos desse tipo é .myproj. Se você quiser alterá-lo, altere-lo em qualquer lugar, que ele é mencionado no passo a passo.  
+   > A extensão de nome de arquivo para todos os projetos desse tipo é .myproj. Se você quiser alterá-lo, altere-lo em qualquer lugar, que ele é mencionado no passo a passo.  
   
 10. Substitua o conteúdo existente com as seguintes linhas.  
   
@@ -259,11 +254,11 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
 ## <a name="add-the-managed-package-framework-code"></a>Adicione o código de estrutura de pacote gerenciado  
  Implemente a conexão entre o pacote do projeto e a fábrica de projeto.  
   
--   Importe os arquivos de código-fonte para a estrutura de pacote gerenciado.  
+- Importe os arquivos de código-fonte para a estrutura de pacote gerenciado.  
   
-    1.  Descarregue o projeto SimpleProject (no **Gerenciador de soluções**, selecione o nó do projeto e no menu de contexto, clique em **descarregar projeto**.) e abra o arquivo de projeto no editor de XML.  
+    1. Descarregue o projeto SimpleProject (no **Gerenciador de soluções**, selecione o nó do projeto e no menu de contexto, clique em **descarregar projeto**.) e abra o arquivo de projeto no editor de XML.  
   
-    2.  Adicione os seguintes blocos para o arquivo de projeto (imediatamente acima do \<importação > blocos). Defina ProjectBasePath para o local do arquivo ProjectBase.files no código de estrutura de pacote gerenciado que você acabou de baixar. Você talvez precise adicionar uma barra invertida para o nome do caminho. Se você não fizer isso, o projeto pode não conseguir encontrar o código de estrutura de pacote gerenciado.  
+    2. Adicione os seguintes blocos para o arquivo de projeto (imediatamente acima do \<importação > blocos). Defina ProjectBasePath para o local do arquivo ProjectBase.files no código de estrutura de pacote gerenciado que você acabou de baixar. Você talvez precise adicionar uma barra invertida para o nome do caminho. Se você não fizer isso, o projeto pode não conseguir encontrar o código de estrutura de pacote gerenciado.  
   
         ```  
         <PropertyGroup>  
@@ -274,40 +269,40 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
         ```  
   
         > [!IMPORTANT]
-        >  Não se esqueça de barra invertida no final do caminho.  
+        > Não se esqueça de barra invertida no final do caminho.  
   
-    3.  Recarrega o projeto.  
+    3. Recarrega o projeto.  
   
-    4.  Adicione referências aos assemblies a seguir:  
+    4. Adicione referências aos assemblies a seguir:  
   
-        -   Microsoft.VisualStudio.Designer.Interfaces (em \<install VSSDK > \VisualStudioIntegration\Common\Assemblies\v2.0)  
+        - Microsoft.VisualStudio.Designer.Interfaces (em \<install VSSDK > \VisualStudioIntegration\Common\Assemblies\v2.0)  
   
-        -   WindowsBase  
+        - WindowsBase  
   
-        -   Microsoft.Build.Tasks.v4.0  
+        - Microsoft.Build.Tasks.v4.0  
   
 #### <a name="to-initialize-the-project-factory"></a>Para inicializar a fábrica de projeto  
   
-1.  No arquivo SimpleProjectPackage.cs, adicione o seguinte `using` instrução.  
+1. No arquivo SimpleProjectPackage.cs, adicione o seguinte `using` instrução.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-2.  Derivar de `SimpleProjectPackage` classe `Microsoft.VisualStudio.Package.ProjectPackage`.  
+2. Derivar de `SimpleProjectPackage` classe `Microsoft.VisualStudio.Package.ProjectPackage`.  
   
     ```  
     public sealed class SimpleProjectPackage : ProjectPackage  
     ```  
   
-3.  Registre-se a fábrica de projeto. Adicione a seguinte linha para o `SimpleProjectPackage.Initialize` método, logo após `base.Initialize`.  
+3. Registre-se a fábrica de projeto. Adicione a seguinte linha para o `SimpleProjectPackage.Initialize` método, logo após `base.Initialize`.  
   
     ```  
     base.Initialize();  
     this.RegisterProjectFactory(new SimpleProjectFactory(this));  
     ```  
   
-4.  Implementa a propriedade abstrata `ProductUserContext`:  
+4. Implementa a propriedade abstrata `ProductUserContext`:  
   
     ```csharp  
     public override string ProductUserContext  
@@ -316,19 +311,19 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
     }  
     ```  
   
-5.  No SimpleProjectFactory.cs, adicione o seguinte `using` instrução depois do `using` instruções.  
+5. No SimpleProjectFactory.cs, adicione o seguinte `using` instrução depois do `using` instruções.  
   
     ```  
     using Microsoft.VisualStudio.Project;  
     ```  
   
-6.  Derivar de `SimpleProjectFactory` classe `ProjectFactory`.  
+6. Derivar de `SimpleProjectFactory` classe `ProjectFactory`.  
   
     ```  
     class SimpleProjectFactory : ProjectFactory  
     ```  
   
-7.  Adicione o seguinte método fictício para o `SimpleProjectFactory` classe. Você implementará este método em uma seção posterior.  
+7. Adicione o seguinte método fictício para o `SimpleProjectFactory` classe. Você implementará este método em uma seção posterior.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -337,7 +332,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
     }  
     ```  
   
-8.  Adicione o seguinte campo e o construtor para o `SimpleProjectFactory` classe. Isso `SimpleProjectPackage` referência é armazenado em cache em um campo particular para que ele pode ser usado na configuração de um site do provedor de serviço.  
+8. Adicione o seguinte campo e o construtor para o `SimpleProjectFactory` classe. Isso `SimpleProjectPackage` referência é armazenado em cache em um campo particular para que ele pode ser usado na configuração de um site do provedor de serviço.  
   
     ```  
     private SimpleProjectPackage package;  
@@ -356,17 +351,17 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 #### <a name="to-test-the-project-factory-implementation"></a>Para testar a implementação de fábrica de projeto  
   
-1.  No arquivo SimpleProjectFactory.cs, defina um ponto de interrupção na linha a seguir no `SimpleProjectFactory` construtor.  
+1. No arquivo SimpleProjectFactory.cs, defina um ponto de interrupção na linha a seguir no `SimpleProjectFactory` construtor.  
   
     ```  
     this.package = package;  
     ```  
   
-2.  Pressione F5 para iniciar uma instância experimental do Visual Studio.  
+2. Pressione F5 para iniciar uma instância experimental do Visual Studio.  
   
-3.  Na instância experimental, comece a criar um novo projeto. No **novo projeto** caixa de diálogo, selecione o SimpleProject tipo de projeto e, em seguida, clique em **Okey**. Interrompe a execução no ponto de interrupção.  
+3. Na instância experimental, comece a criar um novo projeto. No **novo projeto** caixa de diálogo, selecione o SimpleProject tipo de projeto e, em seguida, clique em **Okey**. Interrompe a execução no ponto de interrupção.  
   
-4.  Limpe o ponto de interrupção e parar a depuração. Como não criamos um nó do projeto ainda, o código de criação do projeto ainda lança exceções.  
+4. Limpe o ponto de interrupção e parar a depuração. Como não criamos um nó do projeto ainda, o código de criação do projeto ainda lança exceções.  
   
 ## <a name="extending-the-project-node-class"></a>Estendendo a classe de nó do projeto  
  Agora, você pode implementar o `SimpleProjectNode` classe, que deriva de `ProjectNode` classe. O `ProjectNode` classe base lida com as seguintes tarefas de criação do projeto:  
@@ -437,13 +432,13 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 #### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>Para conectar-se a classe de fábrica do projeto e a classe de nó  
   
-1.  No arquivo SimpleProjectFactory.cs, adicione o seguinte `using` instrução:  
+1. No arquivo SimpleProjectFactory.cs, adicione o seguinte `using` instrução:  
   
     ```  
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;  
     ```  
   
-2.  Substitua o `SimpleProjectFactory.CreateProject` método usando o código a seguir.  
+2. Substitua o `SimpleProjectFactory.CreateProject` método usando o código a seguir.  
   
     ```  
     protected override ProjectNode CreateProject()  
@@ -455,18 +450,18 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
     }  
     ```  
   
-3.  Recompile a solução e verificar se ele é compilado sem erros.  
+3. Recompile a solução e verificar se ele é compilado sem erros.  
   
 ## <a name="testing-the-project-node-class"></a>Testando a classe de nó do projeto  
  Teste sua fábrica de projeto para ver se ele cria uma hierarquia do projeto.  
   
 #### <a name="to-test-the-project-node-class"></a>Para testar a classe de nó do projeto  
   
-1.  Pressione F5 para iniciar a depuração. Na instância experimental, crie um novo SimpleProject.  
+1. Pressione F5 para iniciar a depuração. Na instância experimental, crie um novo SimpleProject.  
   
-2.  Visual Studio deve chamar sua fábrica de projeto para criar um projeto.  
+2. Visual Studio deve chamar sua fábrica de projeto para criar um projeto.  
   
-3.  Feche a instância experimental do Visual Studio.  
+3. Feche a instância experimental do Visual Studio.  
   
 ## <a name="adding-a-custom-project-node-icon"></a>Adicionando um ícone de nó de projeto personalizado  
  O ícone do nó do projeto na seção anterior é um ícone padrão. Você pode alterar para um ícone personalizado.  
@@ -548,13 +543,13 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 #### <a name="to-test-the-custom-project-node-icon"></a>Para testar o ícone do nó de projeto personalizado  
   
-1.  Iniciar a depuração e na instância experimental, crie um novo SimpleProject.  
+1. Iniciar a depuração e na instância experimental, crie um novo SimpleProject.  
   
-2.  No projeto recém-criado, observe que SimpleProjectNode.bmp é usado como o ícone de nó do projeto.  
+2. No projeto recém-criado, observe que SimpleProjectNode.bmp é usado como o ícone de nó do projeto.  
   
      ![Projeto simples novo nó do projeto](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")  
   
-3.  Abra Program.cs no editor de códigos. Você deve ver o código-fonte que se parece com o código a seguir.  
+3. Abra Program.cs no editor de códigos. Você deve ver o código-fonte que se parece com o código a seguir.  
   
     ```  
     using System;  
@@ -577,7 +572,7 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
      Observe que os parâmetros de modelo $nameSpace$ e $ $className$ não tem novos valores. Você aprenderá a implementar a substituição de parâmetro de modelo na próxima seção.  
   
 ## <a name="substituting-template-parameters"></a>Substituindo parâmetros de modelo  
- Em uma seção anterior, você registrou o modelo de projeto com o Visual Studio usando o `ProvideProjectFactory` atributo. Registrar o caminho de uma pasta de modelos dessa maneira permite que você habilitar a substituição de parâmetro do modelo básico, substituindo e expandindo o `ProjectNode.AddFileFromTemplate` classe. Para obter mais informações, consulte [nova geração de projeto: Under the Hood, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
+ Em uma seção anterior, você registrou o modelo de projeto com o Visual Studio usando o `ProvideProjectFactory` atributo. Registrar o caminho de uma pasta de modelos dessa maneira permite que você habilitar a substituição de parâmetro do modelo básico, substituindo e expandindo o `ProjectNode.AddFileFromTemplate` classe. Para obter mais informações, consulte [nova geração de projeto: Nos bastidores, parte dois](../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  
   
  Agora, adicione o código de substituição para o `AddFileFromTemplate` classe.  
   
@@ -622,9 +617,9 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
   
 3. Examine os valores para o `nameSpace` e `className` parâmetros.  
   
-   -   `nameSpace` recebe o valor da \<RootNamespace > elemento no arquivo de modelo de projeto \Templates\Projects\SimpleProject\SimpleProject.myproj. Nesse caso, o valor é "MyRootNamespace".  
+   - `nameSpace` recebe o valor da \<RootNamespace > elemento no arquivo de modelo de projeto \Templates\Projects\SimpleProject\SimpleProject.myproj. Nesse caso, o valor é "MyRootNamespace".  
   
-   -   `className` recebe o valor do nome de arquivo de origem de classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é AssemblyInfo.cs; Portanto, o valor do nome da classe é "AssemblyInfo".  
+   - `className` recebe o valor do nome de arquivo de origem de classe, sem a extensão de nome de arquivo. Nesse caso, o primeiro arquivo a ser copiado para a pasta de destino é AssemblyInfo.cs; Portanto, o valor do nome da classe é "AssemblyInfo".  
   
 4. Remova o ponto de interrupção e pressione F5 para continuar a execução.  
   
@@ -658,4 +653,3 @@ No Visual Studio, os projetos são contêineres que os desenvolvedores usam para
     ![Comando de projeto simples](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")  
   
    Parabéns! Você implementou um sistema básico de projeto gerenciado.
-

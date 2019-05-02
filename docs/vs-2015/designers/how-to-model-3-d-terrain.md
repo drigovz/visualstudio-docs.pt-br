@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434447"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Como: Modelo de terreno 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
   
  Este documento demonstra essas atividades:  
   
--   Adicionar objetos a uma cena  
+- Adicionar objetos a uma cena  
   
--   Selecionar faces e pontos  
+- Selecionar faces e pontos  
   
--   Converter seleções  
+- Converter seleções  
   
--   Usando a ferramenta **Subdivide a face**  
+- Usando a ferramenta **Subdivide a face**  
   
--   Enquadrar um objeto na superfície de design  
+- Enquadrar um objeto na superfície de design  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Criar um modelo de terreno 3D  
  Você pode criar um terreno 3D subdividindo um plano para fazer faces adicionais e, em seguida, manipular seus vértices para criar características de terreno interessantes.  
@@ -49,7 +49,7 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
 2. Adicione um plano para a cena. Na **Caixa de Ferramentas**, em **Formas**, selecione **Plano** e mova-o para a superfície de design.  
   
    > [!TIP]
-   >  Para facilitar o trabalho com o objeto de plano, você pode enquadrá-lo na superfície de design. No modo de **Seleção**, selecione o objeto de plano e, em seguida, na barra de ferramentas do Editor de Modelo, escolha o botão **Enquadrar Objeto**.  
+   > Para facilitar o trabalho com o objeto de plano, você pode enquadrá-lo na superfície de design. No modo de **Seleção**, selecione o objeto de plano e, em seguida, na barra de ferramentas do Editor de Modelo, escolha o botão **Enquadrar Objeto**.  
   
 3. Entre no modo de seleção de face. Na barra de ferramentas do Editor de Modelo, escolha **Selecionar Face**.  
   
@@ -62,13 +62,13 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
 7. Modifique um ponto para criar um recurso de terreno. No modo de seleção de ponto, selecione um dos pontos e, em seguida, na barra de ferramentas do Editor de Modelo, escolha a ferramenta **Mover**. Uma caixa que representa o ponto aparece na superfície de design. Use a seta verde para mover a caixa e, assim, modificar a altura do ponto. Repita essa etapa para diferentes pontos a fim de criar características interessantes de terreno.  
   
    > [!TIP]
-   >  Você pode selecionar vários pontos de uma vez para modificá-los de maneira uniforme.  
+   > Você pode selecionar vários pontos de uma vez para modificá-los de maneira uniforme.  
   
    O modelo de terreno está concluído. Aqui está o modelo final novamente, com sombreamento Phong aplicado:  
   
    ![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   Você pode usar esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente com base na geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+   Use esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como: Criar um sombreador de gradiente com base em geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de modelo](../designers/model-editor.md)

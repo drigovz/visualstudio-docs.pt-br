@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6563cc81be8f026a9b2230b0664c678b5649ca9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565939"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted-because-it-is-participating-in-the-association-ltassociation-namegt"></a>A propriedade &lt;nome da propriedade&gt; não pode ser excluída porque está participando da associação &lt;nome da associação&gt;
 

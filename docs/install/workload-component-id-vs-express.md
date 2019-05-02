@@ -1,5 +1,5 @@
 ---
-title: IDs decomponente e carga de trabalho do Visual Studio 2017 Desktop Express
+title: IDs de carga de trabalho e de componente do Visual Studio Desktop Express
 titleSuffix: ''
 description: Use as IDs de carga de trabalho e de componente para instalar o Visual Studio usando a linha de comando ou para especificar como uma dependência em um manifesto do VSIX
 keywords: ''
@@ -13,16 +13,17 @@ helpviewer_keywords:
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
 ms.assetid: a3c0cc76-e3ce-435c-a1af-a6318b5a4dbe
-ms.workload:
-- multiple
-ms.openlocfilehash: 5f2c12201adebf148703083b825e98b35bbff7c1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.prod: visual-studio-windows
+ms.technology: vs-installation
+monikerRange: vs-2017
+ms.openlocfilehash: 2447f0eab7ee3931df70f503519f3f110f4ba272
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818954"
 ---
-# <a name="visual-studio-2017-desktop-express-component-directory"></a>Diretório de componentes do Visual Studio 2017 Desktop Express
+# <a name="visual-studio-desktop-express-component-directory"></a>Diretório de componentes do Visual Studio Desktop Express
 
 As tabelas desta página listam as IDs que podem ser usadas para instalar o Visual Studio usando a linha de comando ou que podem ser especificadas como uma dependência em um manifesto do VSIX. Observe que adicionaremos outros componentes conforme atualizações forem liberadas para o Visual Studio.
 

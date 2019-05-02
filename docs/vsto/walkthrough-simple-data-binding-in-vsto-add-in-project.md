@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39fcb9444fd3d4cde218cdc92e083d28342d8342
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54872268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981070"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Passo a passo: Associação de dados simples no projeto de suplemento do VSTO
 
@@ -29,11 +29,11 @@ Você pode associar dados a controles de host e controles de formulários do Win
 
 Esta explicação passo a passo ilustra as seguintes tarefas:
 
--   Adicionando um <xref:Microsoft.Office.Tools.Word.ContentControl> a um documento em tempo de execução.
+- Adicionando um <xref:Microsoft.Office.Tools.Word.ContentControl> a um documento em tempo de execução.
 
--   Criando um <xref:System.Windows.Forms.BindingSource> que conecta o controle a uma instância de um conjunto de dados.
+- Criando um <xref:System.Windows.Forms.BindingSource> que conecta o controle a uma instância de um conjunto de dados.
 
--   Permitindo que o usuário percorrer os registros e exibi-los no controle.
+- Permitindo que o usuário percorrer os registros e exibi-los no controle.
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -41,15 +41,15 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
+- [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] ou [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].
 
--   Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
+- Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    -   Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+    - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
@@ -57,13 +57,13 @@ A primeira etapa é criar um projeto de suplemento do VSTO do Word.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de suplemento do VSTO do Word com o nome **Populando documentos de um banco de dados**, usando o Visual Basic ou c#.
+1. Criar um projeto de suplemento do VSTO do Word com o nome **Populando documentos de um banco de dados**, usando o Visual Basic ou c#.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      O Visual Studio abre o *ThisAddIn. vb* ou *ThisAddIn.cs* de arquivos e adiciona os **Populando documentos de um banco de dados** projeto ao **Gerenciador de soluções** .
 
-2.  Se o projeto está destinado a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], adicione uma referência para o *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* assembly. Essa referência é necessária para adicionar controles Windows Forms de forma programática para o documento mais tarde neste passo a passo.
+2. Se o projeto está destinado a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], adicione uma referência para o *Microsoft.Office.Tools.Word.v4.0.Utilities.dll* assembly. Essa referência é necessária para adicionar controles Windows Forms de forma programática para o documento mais tarde neste passo a passo.
 
 ## <a name="create-a-data-source"></a>Criar uma fonte de dados
 
@@ -103,37 +103,37 @@ Para obter mais informações sobre controles de vinculação de dados, consulte
 
 ### <a name="to-create-the-interface-in-the-document"></a>Para criar a interface do documento
 
-1.  No `ThisAddIn` classe, declare os seguintes controles para exibir e percorra o `Customer` tabela do `AdventureWorksLTDataSet` banco de dados.
+1. No `ThisAddIn` classe, declare os seguintes controles para exibir e percorra o `Customer` tabela do `AdventureWorksLTDataSet` banco de dados.
 
      [!code-vb[Trin_WordAddInDatabase#1](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#1)]
      [!code-csharp[Trin_WordAddInDatabase#1](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#1)]
 
-2.  No `ThisAddIn_Startup` método, adicione o seguinte código para inicializar o conjunto de dados, preencher o conjunto de dados com informações do `AdventureWorksLTDataSet` banco de dados.
+2. No `ThisAddIn_Startup` método, adicione o seguinte código para inicializar o conjunto de dados, preencher o conjunto de dados com informações do `AdventureWorksLTDataSet` banco de dados.
 
      [!code-vb[Trin_WordAddInDatabase#2](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#2)]
      [!code-csharp[Trin_WordAddInDatabase#2](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#2)]
 
-3.  Adicione o seguinte código ao método de `ThisAddIn_Startup` . Isso gera um item de host que estende o documento. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Adicione o seguinte código ao método de `ThisAddIn_Startup` . Isso gera um item de host que estende o documento. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-vb[Trin_WordAddInDatabase#3](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#3)]
      [!code-csharp[Trin_WordAddInDatabase#3](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#3)]
 
-4.  Defina vários intervalos no início do documento. Esses intervalos identificam onde inserir texto e coloque controles.
+4. Defina vários intervalos no início do documento. Esses intervalos identificam onde inserir texto e coloque controles.
 
      [!code-vb[Trin_WordAddInDatabase#4](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#4)]
      [!code-csharp[Trin_WordAddInDatabase#4](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#4)]
 
-5.  Adicione os controles de interface para os intervalos definidos anteriormente.
+5. Adicione os controles de interface para os intervalos definidos anteriormente.
 
      [!code-vb[Trin_WordAddInDatabase#5](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#5)]
      [!code-csharp[Trin_WordAddInDatabase#5](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#5)]
 
-6.  Associar o controle de conteúdo `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Para desenvolvedores do c#, adicione dois manipuladores de eventos para o <xref:Microsoft.Office.Tools.Word.Controls.Button> controles.
+6. Associar o controle de conteúdo `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Para desenvolvedores do c#, adicione dois manipuladores de eventos para o <xref:Microsoft.Office.Tools.Word.Controls.Button> controles.
 
      [!code-vb[Trin_WordAddInDatabase#6](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#6)]
      [!code-csharp[Trin_WordAddInDatabase#6](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#6)]
 
-7.  Adicione o código a seguir para navegar pelos registros de banco de dados.
+7. Adicione o código a seguir para navegar pelos registros de banco de dados.
 
      [!code-vb[Trin_WordAddInDatabase#7](../vsto/codesnippet/VisualBasic/trin_wordaddindatabase/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDatabase#7](../vsto/codesnippet/CSharp/trin_wordaddindatabase/ThisAddIn.cs#7)]
@@ -144,11 +144,11 @@ Quando você abre o Word, o controle de conteúdo exibe dados do `AdventureWorks
 
 ### <a name="to-test-the-vsto-add-in"></a>Para testar o suplemento do VSTO
 
-1.  Pressione **F5**.
+1. Pressione **F5**.
 
      Um controle de conteúdo chamado `customerContentControl` é criada e preenchida com dados. Ao mesmo tempo, um objeto de conjunto de dados chamado `adventureWorksLTDataSet` e uma <xref:System.Windows.Forms.BindingSource> denominado `customerBindingSource` são adicionados ao projeto. O <xref:Microsoft.Office.Tools.Word.ContentControl> está associado a <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado ao objeto de conjunto de dados.
 
-2.  Clique o **próxima** e **Previous** botões para percorrer os registros do banco de dados.
+2. Clique o **próxima** e **Previous** botões para percorrer os registros do banco de dados.
 
 ## <a name="see-also"></a>Consulte também
 

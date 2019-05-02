@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 200ac7f9a38a242d6140902374d477339747b9b4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808100"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
 
@@ -23,41 +23,41 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
  As seguintes opções de filtro estão disponíveis. Por padrão, o **Mostrar Namespaces** e **Mostrar arquivos do esquema** opções são selecionadas.
 
--   **Exibir Namespaces**.
+- **Exibir Namespaces**.
 
--   **Exibir arquivos de esquema**.
+- **Exibir arquivos de esquema**.
 
--   **Exibir compositores (sequência/escolha/tudo)**.
+- **Exibir compositores (sequência/escolha/tudo)**.
 
 ## <a name="sorting-options"></a>Opções de classificação
 
  As seguintes opções de classificação estão disponíveis. O padrão é **classificar por tipo**. **Classificar por** opções não se aplicam a arquivos e namespaces.
 
--   **Classificar por tipo**.
+- **Classificar por tipo**.
 
--   **Classificar por nome**.
+- **Classificar por nome**.
 
--   **Ordem do documento**.
+- **Ordem do documento**.
 
 ### <a name="sort-by-type"></a>Classificar por Tipo
 
  Quando o **classificar por tipo** opção estiver selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
 
-1.  nós de`import` .
+1. nós de`import` .
 
-2.  nós de`include` .
+2. nós de`include` .
 
-3.  nós de`redefine` .
+3. nós de`redefine` .
 
-4.  nós de`attribute` .
+4. nós de`attribute` .
 
-5.  nós de`attributeGroup` .
+5. nós de`attributeGroup` .
 
-6.  nós de`complexType` .
+6. nós de`complexType` .
 
-7.  nós de`simpleType` .
+7. nós de`simpleType` .
 
-8.  nós de`element` .
+8. nós de`element` .
 
 9. nós de`group` .
 
@@ -65,13 +65,13 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
  Quando o **classificar por nome** opção estiver selecionada, os nós globais são classificados na seguinte ordem:
 
-1.  nós de`import` (em ordem alfabética namespaces).
+1. nós de`import` (em ordem alfabética namespaces).
 
-2.  nós de`include` (em ordem alfabética de atributos de `schemaLocation` ).
+2. nós de`include` (em ordem alfabética de atributos de `schemaLocation` ).
 
-3.  nós de`redefine` (em ordem alfabética de atributos de `schemaLocation` ).
+3. nós de`redefine` (em ordem alfabética de atributos de `schemaLocation` ).
 
-4.  Outros nós globais em ordem alfabética.
+4. Outros nós globais em ordem alfabética.
 
 ### <a name="document-order"></a>Ordem de documento
 

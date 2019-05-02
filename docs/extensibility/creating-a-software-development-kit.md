@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cbe2e3318d01d7b50767c13d09687526c00b49f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891196"
 ---
 # <a name="create-a-software-development-kit"></a>Criar um kit de desenvolvimento de software
 Um software development kit (SDK) é uma coleção de APIs que pode ser referenciado como um único item no Visual Studio. O **Gerenciador de referências** caixa de diálogo lista todos os SDKs que são relevantes para o projeto. Quando você adiciona um SDK a um projeto, as APIs estão disponíveis no Visual Studio.
@@ -30,7 +30,7 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
 
 - [SDKs de extensão](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> SDKs de plataforma
+## <a name="PlatformSDKs"></a> SDKs de plataforma
  SDKs de plataforma são necessários para desenvolver aplicativos para uma plataforma. Por exemplo, o [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK é necessário para desenvolver aplicativos para [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Instalação
@@ -50,7 +50,6 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
                         \[arch]
 ```
 
-
 | Nó | Descrição |
 |------------------------| - |
 | *Referências* pasta | Contém os binários que contêm APIs que podem ser codificadas contra. Eles podem incluir arquivos de metadados do Windows (WinMD) ou assemblies. |
@@ -59,27 +58,27 @@ Um software development kit (SDK) é uma coleção de APIs que pode ser referenc
 | *Arquitetura* pasta | Qualquer suportado *arquitetura* pasta pode existir. O Visual Studio suporta as seguintes arquiteturas: x86, x64, ARM e neutral. Observação: Win32 mapeia para x86 e AnyCPU mapeia para neutro.<br /><br /> MSBuild procura somente sob *\CommonConfiguration\neutral* dos SDKs de plataforma. |
 | *SDKManifest.xml* | Esse arquivo descreve como o Visual Studio deve consumir o SDK. Examinar o manifesto do SDK para [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName:** O valor que o Pesquisador de objetos exibe na lista de pesquisa.<br /><br /> **PlatformIdentity:** A existência desse atributo informa ao Visual Studio e o MSBuild que o SDK é uma plataforma SDK e que as referências adicionadas dele não devem ser copiadas localmente.<br /><br /> **TargetFramework:** Este atributo é usado pelo Visual Studio para garantir que somente projetos que segmentam as estruturas mesmas conforme especificado no valor deste atributo pode consumir o SDK.<br /><br /> **MinVSVersion:** Esse atributo é usado pelo Visual Studio para consumir apenas os SDKs que se aplicam a ele.<br /><br /> **Referência:** Esse atributo deve ser especificado para apenas essas referências que contêm controles. Para obter informações sobre como especificar se uma referência contém controles, consulte abaixo. |
 
-##  <a name="ExtensionSDKs"></a> SDKs de extensão
+## <a name="ExtensionSDKs"></a> SDKs de extensão
  As seções a seguir descrevem o que você precisa fazer para implantar um SDK de extensão.
 
 ### <a name="installation"></a>Instalação
  SDKs de extensão podem ser instalados para um usuário específico ou para todos os usuários sem especificar uma chave do registro. Para instalar um SDK para todos os usuários, use o seguinte caminho:
 
- *% Programa Files%\Microsoft SDKs\<plataforma de destino > \v<platform version number>\ExtensionSDKs*
+ *% Programa Files%\Microsoft SDKs\<plataforma de destino\>\v < número da versão de plataforma\>\ExtensionSDKs*
 
  Para uma instalação específica do usuário, use o seguinte caminho:
 
- *SDKs de %USERPROFILE%\AppData\Local\Microsoft\<plataforma de destino > \v<platform version number>\ExtensionSDKs*
+ *SDKs de %USERPROFILE%\AppData\Local\Microsoft\<plataforma de destino\>\v < número da versão de plataforma\>\ExtensionSDKs*
 
  Se você quiser usar um local diferente, você deve fazer uma das duas coisas:
 
-1.  Especifique-a uma chave do registro:
+1. Especifique-a uma chave do registro:
 
-     **SDKs HKLM\Software\Microsoft\Microsoft\<plataforma de destino > \v<platform version number>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
+     **SDKs HKLM\Software\Microsoft\Microsoft\<plataforma de destino > \v < número da versão de plataforma\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      e adicione uma subchave (padrão) que tem um valor de `<path to SDK><SDKName><SDKVersion>`.
 
-2.  Adicione a propriedade MSBuild `SDKReferenceDirectoryRoot` ao arquivo de projeto. O valor dessa propriedade é uma lista de ponto e vírgula delimitado de diretórios em que residem os SDKs de extensão que você deseja referenciar.
+2. Adicione a propriedade MSBuild `SDKReferenceDirectoryRoot` ao arquivo de projeto. O valor dessa propriedade é uma lista de ponto e vírgula delimitado de diretórios em que residem os SDKs de extensão que você deseja referenciar.
 
 ### <a name="installation-layout"></a>Layout de instalação
  SDKs de extensão tem o seguinte layout de instalação:
@@ -192,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Referência de arquivo: Especificado para apenas essas referências que contêm controles ou são WinMDs nativos. Para obter informações sobre como especificar se uma referência contém controles, consulte [especificar o local dos itens de caixa de ferramentas](#ToolboxItems) abaixo.
 
-##  <a name="ToolboxItems"></a> Especifique o local dos itens de caixa de ferramentas
+## <a name="ToolboxItems"></a> Especifique o local dos itens de caixa de ferramentas
  O elemento ToolBoxItems do *Sdkmanifest* esquema Especifica a categoria e o local dos itens de caixa de ferramentas nos SDKs de extensão e plataforma. Os exemplos a seguir mostram como especificar locais diferentes. Isso é aplicável às referências WinMD ou DLL.
 
-1.  Coloque os controles na categoria da caixa de ferramentas padrão.
+1. Coloque os controles na categoria da caixa de ferramentas padrão.
 
     ```
     <File Reference = "sample.winmd">
@@ -203,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Coloque controles em um nome de categoria específico.
+2. Coloque controles em um nome de categoria específico.
 
     ```
     <File Reference = "sample.winmd">
@@ -211,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Coloque controles em nomes de categoria específica.
+3. Coloque controles em nomes de categoria específica.
 
     ```
     <File Reference = "sample.winmd">
@@ -222,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Coloque controles em nomes de categoria diferentes no Blend e o Visual Studio.
+4. Coloque controles em nomes de categoria diferentes no Blend e o Visual Studio.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -232,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Enumere controles específicos de modo diferente no Blend e o Visual Studio.
+5. Enumere controles específicos de modo diferente no Blend e o Visual Studio.
 
     ```
     <File Reference = "sample.winmd">
@@ -243,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Enumerar os controles específicos e colocá-los em um caminho comum do Visual Studio ou apenas no grupo todos os controles.
+6. Enumerar os controles específicos e colocá-los em um caminho comum do Visual Studio ou apenas no grupo todos os controles.
 
     ```
     <File Reference = "sample.winmd">
@@ -254,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Enumerar os controles específicos e mostrar apenas um conjunto específico em ChooseItems sem eles sendo na caixa de ferramentas.
+7. Enumerar os controles específicos e mostrar apenas um conjunto específico em ChooseItems sem eles sendo na caixa de ferramentas.
 
     ```
     <File Reference = "sample.winmd">

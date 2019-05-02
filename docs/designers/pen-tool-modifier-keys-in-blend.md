@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b43aa4dcb754b2df67b58b09ab3a9920c552acdf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844786"
 ---
 # <a name="pen-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Caneta no Blend
 A tabela a seguir lista os atalhos que você pode usar para modificar um demarcador durante sua criação com a ferramenta **Caneta** ![Pen tool](../designers/media/d514358f-185a-412f-a55d-36633b25dc8a.png). Você também pode usar a ferramenta **Caneta** para adicionar ou remover pontos em um demarcador existente ou para unir dois demarcadores existentes.

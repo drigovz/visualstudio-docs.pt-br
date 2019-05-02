@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566774"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 
@@ -87,9 +87,9 @@ O código salvar gerado também contém uma linha de código que chama o método
 
 ### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para atualizar o código para confirmar as alterações às tabelas relacionadas antes de salvar
 
-1.  Clique duas vezes no botão **Salvar** no <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de Códigos.
+1. Clique duas vezes no botão **Salvar** no <xref:System.Windows.Forms.BindingNavigator> para abrir **Form1** no Editor de Códigos.
 
-2.  Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código no evento de clique do botão **Salvar** deve ser semelhante ao seguinte:
+2. Adicione uma linha de código para chamar o método `OrdersBindingSource.EndEdit` após a linha que chama o método `CustomersBindingSource.EndEdit`. O código no evento de clique do botão **Salvar** deve ser semelhante ao seguinte:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
@@ -101,11 +101,11 @@ Além de confirmar as alterações em uma tabela filho relacionada antes de salv
 
 ### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Para adicionar código para confirmar registros pais no conjunto de dados antes de adicionar novos registros filhos
 
-1.  Crie um manipulador de eventos para o evento `OrdersBindingSource.AddingNew`.
+1. Crie um manipulador de eventos para o evento `OrdersBindingSource.AddingNew`.
 
-    -   Abra **Form1** no modo de design, selecione **OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.
+    - Abra **Form1** no modo de design, selecione **OrdersBindingSource** na bandeja de componentes, selecione **eventos** no **propriedades** janela, e em seguida, clique duas vezes o **AddingNew** eventos.
 
-2.  Adicionar uma linha de código ao manipulador de eventos que chama o `CustomersBindingSource.EndEdit` método. O código no manipulador de eventos `OrdersBindingSource_AddingNew` deve ser semelhante ao seguinte:
+2. Adicionar uma linha de código ao manipulador de eventos que chama o `CustomersBindingSource.EndEdit` método. O código no manipulador de eventos `OrdersBindingSource_AddingNew` deve ser semelhante ao seguinte:
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]

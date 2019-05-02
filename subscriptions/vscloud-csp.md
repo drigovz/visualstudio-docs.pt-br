@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informações para Provedores de Soluções na Nuvem como comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes.
 searchscope: VS Subscription
-ms.openlocfilehash: b17c5bb663f364cda4a9a93d63f2583e59426bac
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978504"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Comprar e gerenciar assinaturas de nuvem do Visual Studio para seus clientes
 
@@ -20,10 +20,8 @@ Os parceiros do programa [CSP (Provedores de Soluções na Nuvem)](https://partn
 
 [Comparar opções de assinatura de nuvem](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
-
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -32,11 +30,12 @@ Primeiro você precisa configurar o locatário do cliente no Partner Center e cr
 [Saiba mais](/azure/devops/organizations/billing/csp/set-up-csp-customer)
 
 ## <a name="who-can-buy-visual-studio-subscriptions"></a>Quem pode comprar assinaturas do Visual Studio?
+
 Qualquer pessoa que tenha [acesso de proprietário ou colaborador](https://na01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fdocs.microsoft.com%2Fen-us%2Fvsts%2Forganizations%2Fbilling%2Fadd-backup-billing-managers%3Fview%3Dvsts%2520%2520sa&data=02%7C01%7C%7Cb9e717e8abff47b0cd7e08d618edd860%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C636723807145220358&sdata=aIaamEXHhx94KCYVY%2FFibqFzNBEqKPntpql867xAMgU%3D&reserved=0) à assinatura do Azure pode comprar assinaturas do Visual Studio.
 
 ## <a name="how-to-buy"></a>Como comprar
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-buy-Visual-Studio-Subscriptions/player]
 
 1. Faça logon no [Microsoft Partner Center](https://partnercenter.microsoft.com).
 0. Escolha **Clientes** e selecione o cliente para o qual deseja comprar.
@@ -57,7 +56,7 @@ Depois de confirmar a compra, escolha **Gerenciar** para atribuir assinaturas ao
 
 ## <a name="how-to-manage-visual-studio-cloud-subscriptions-for-your-customer"></a>Como gerenciar assinaturas de nuvem do Visual Studio para o cliente
 
-<iframe src="//channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player" width="600" height="315" allowFullScreen="true" frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Shows/Visual-Studio-for-CSP-Partners/CSP-How-to-manage-Visual-Studio-Subscriptions/player]
 
 1. Faça logon no [Microsoft Partner Center](https://partnercenter.microsoft.com).
 0. Escolha **Clientes** e o nome do cliente.
@@ -83,7 +82,6 @@ Aqui está a maneira de interpretar os dados dessa planilha:
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Enterprise             |  Assinatura                         | Assinatura mensal do Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Assinatura                         | Assinatura mensal do Visual Studio Professional |
-
 
 Oferecemos um desconto de 5% para a compra da sexta unidade (para um determinado cliente) a cada mês da assinatura do Visual Studio. É por isso que aparecem duas linhas para cada opção de assinatura. Uma linha mostra um "Valor Mínimo" igual a 0, que você deve interpretar como o preço base da primeira à quinta unidade. A outra linha mostra um "Valor Mínimo" igual a 5, que é o preço com 5% de desconto aplicado à sexta unidade e às próximas.
 

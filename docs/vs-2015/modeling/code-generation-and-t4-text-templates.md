@@ -1,14 +1,9 @@
 ---
 title: Geração de código e modelos de texto T4 | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-techdebt
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.TextTemplating.TextTemplating
 helpviewer_keywords:
@@ -21,13 +16,13 @@ ms.assetid: 74a0a748-5b11-4999-8bea-49572967827d
 caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: d1310d08138e4df172a5dc9f390d0407a68fe769
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 4886a23272962d2dee03576504d60d64067faf20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49229809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433402"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>Geração de código e modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +93,7 @@ namespace Fabrikam.FirstJob
  Para obter mais informações, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md). Para obter mais informações sobre a sintaxe de modelos, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).  
   
 > [!NOTE]
->  O termo *modelo* , às vezes, é usado para descrever dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Ele não precisa ser um modelo UML ou um modelo de linguagem específica do domínio. 'Model' indica apenas que os dados podem ser definidos em termos de conceitos de negócios, em vez de que se assemelha o código.  
+> O termo *modelo* , às vezes, é usado para descrever dados lidos por um ou mais modelos. O modelo pode estar em qualquer formato, em qualquer tipo de arquivo ou banco de dados. Ele não precisa ser um modelo UML ou um modelo de linguagem específica do domínio. 'Model' indica apenas que os dados podem ser definidos em termos de conceitos de negócios, em vez de que se assemelha o código.  
   
  O recurso de transformação do modelo de texto é denominado *T4*.  
   
@@ -115,7 +110,7 @@ namespace Fabrikam.FirstJob
  [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)  
  A sintaxe de um arquivo de modelo de texto.  
   
- [Passo a passo: gerenciando código usando modelos de texto](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
+ [Passo a passo: Gerar código usando modelos de texto](../modeling/walkthrough-generating-code-by-using-text-templates.md)  
  Uma demonstração de uma maneira de usar a geração de código.  
   
  [Depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md)  
@@ -130,6 +125,3 @@ namespace Fabrikam.FirstJob
 ## <a name="see-also"></a>Consulte também  
  [Gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md)   
  [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
-
-
-

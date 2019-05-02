@@ -1,25 +1,20 @@
 ---
 title: Uso de GPU | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 957fed3c-4ded-4e05-87c6-ccc33de65349
 caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 3068f614275c14d022ed4d74fa6a10ffe396f68b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437950"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +31,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 - Uma GPU e drivers que dão suporte à instrumentação de intervalo necessária.  
   
   > [!NOTE]
-  >  Para obter mais informações sobre o hardware e os drivers com suporte, consulte [Suporte de hardware e driver](#hwsupport) ao final deste documento.  
+  > Para obter mais informações sobre o hardware e os drivers com suporte, consulte [Suporte de hardware e driver](#hwsupport) ao final deste documento.  
   
   Para obter mais informações sobre os requisitos do Diagnóstico de Gráficos, consulte [Introdução](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -45,14 +40,14 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 #### <a name="to-start-the-gpu-usage-tool"></a>Para iniciar a ferramenta Uso de GPU:  
   
-1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).  
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
   
 2. No hub Desempenho e Diagnóstico, marque a caixa ao lado de **Uso de GPU**. Opcionalmente, marque as caixas ao lado de outras ferramentas de seu interesse. É possível executar várias ferramentas de Desempenho e Diagnóstico simultaneamente para obter uma visão mais completa do desempenho do aplicativo.  
   
     ![Escolha as ferramentas de diagnóstico que você deseja usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.  
+   > Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.  
   
 3. Escolha o botão azul **Iniciar** na parte inferior do hub Desempenho e Diagnóstico para executar o aplicativo nas ferramentas selecionadas.  
   
@@ -99,7 +94,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 |--------------------|-----------------|  
 |**Processo**|O nome do processo de seu interesse. Todos os processos que usaram a GPU durante a sessão de diagnóstico são incluídos nessa lista suspensa. A cor associada ao processo nessa lista suspensa é a cor da atividade do thread nas linhas do tempo abaixo.|  
 |**Thread**|A ID do thread de seu interesse. Em um aplicativo com multi-thread, isso pode ajudá-lo a isolar threads específicos que pertencem ao processo de seu interesse. Os eventos associados ao thread selecionado são realçados em cada linha do tempo.|  
-|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:** alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
+|**Vídeo**|O número do vídeo cuja taxa de atualização é exibida **Observação:**  Alguns drivers podem ser configurados para apresentar vários vídeos físicos como um único vídeo virtual grande. Talvez você veja apenas um vídeo listado, mesmo se o computador tiver vários vídeos anexados.|  
 |**Filtrar**|Palavras-chave de seu interesse. Os eventos na parte inferior do relatório incluirão apenas aqueles que correspondem a uma palavra-chave, no todo ou em parte. É possível especificar várias palavras-chave separando-as com um ponto-e-vírgula (;).|  
 |**Classificação de Hierarquia**|Uma caixa de seleção que indica se as hierarquias de eventos – definidas por meio de marcadores do usuário – são preservadas ou ignoradas.|  
   
@@ -115,27 +110,27 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 |**ID do Thread**|A ID do thread da qual o evento foi obtido.|  
   
 > [!IMPORTANT]
->  O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como “não atribuídos”. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
+> O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como “não atribuídos”. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
   
 ## <a name="gpu-usage-settings"></a>Configurações de Uso de GPU  
  É possível configurar a ferramenta Uso de GPU para adiar a coleta de informações de criação de perfil, em vez de iniciar a coleta de informações logo após a inicialização do aplicativo. Como o tamanho das informações de criação de perfil pode ser significativo, isso será útil quando você souber que os problemas de lentidão no desempenho do aplicativo só serão exibidos posteriormente.  
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Para adiar a criação de perfil após a inicialização do aplicativo:  
   
-1.  No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: pressione Alt + F2).  
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
   
-2.  No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.  
+2. No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.  
   
-3.  Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
+3. Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
   
      ![Configurar o início da coleta de Uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  
+> Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  
   
  Ao adiar a coleta de informações de criação de perfil usando essa configuração, outro link ficará disponível na parte inferior da janela de ferramentas Uso de GPU quando o aplicativo for executado na ferramenta Uso de GPU. Para iniciar a coleta de informações de criação de perfil, escolha o link **Iniciar** na mensagem **Iniciar coleta de dados detalhados de Uso de GPU adicionais**.  
   
-##  <a name="hwsupport"></a> Suporte de hardware e driver  
+## <a name="hwsupport"></a> Suporte de hardware e driver  
  Há suporte para os seguintes hardware e drivers de GPU:  
   
 |Fornecedor|Descrição da GPU|Versão de driver necessária|  
@@ -148,13 +143,10 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 ## <a name="see-also"></a>Consulte também  
   
--   [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Ferramenta Uso de GPU no Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Ferramenta Uso de GPU no Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Uso de GPU para o DirectX no Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
-
-
-
+- [Uso de GPU para o DirectX no Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

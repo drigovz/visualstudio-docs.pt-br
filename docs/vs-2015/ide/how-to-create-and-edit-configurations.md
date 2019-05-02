@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b76ad8ed6e0cc8bdf60a2053dd11106b5e03a7d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422895"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como criar e editar configurações de teste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "54767322"
 - No **Gerenciador de Soluções**, abra o menu de atalho da solução e, em seguida, escolha **Configuration Manager**.  
   
   > [!NOTE]
-  >  Se o comando do **Configuration Manager** não for exibido no menu de atalho, procure no menu **Build** na barra de menus. Se ele também não for exibido lá, na barra de menus, escolha **Ferramentas**, **Opções** e, em seguida, no painel esquerdo da caixa de diálogo **Opções**, expanda **Projetos e Soluções**, **Geral** e, no painel direito, marque a caixa de seleção **Mostrar configurações avançadas de build**.  
+  > Se o comando do **Configuration Manager** não for exibido no menu de atalho, procure no menu **Build** na barra de menus. Se ele também não for exibido lá, na barra de menus, escolha **Ferramentas**, **Opções** e, em seguida, no painel esquerdo da caixa de diálogo **Opções**, expanda **Projetos e Soluções**, **Geral** e, no painel direito, marque a caixa de seleção **Mostrar configurações avançadas de build**.  
   
    Na caixa de diálogo **Configuration Manager** é possível usar a lista suspensa **Configuração da solução ativa** para selecionar uma configuração de build em toda a solução, modificar uma existente ou criar uma nova configuração. É possível usar a lista suspensa **Plataforma da solução ativa** para selecionar a plataforma que a configuração define como destino, modificar uma existente ou adicionar uma nova plataforma. O painel **Contextos do projeto** lista os projetos na solução. Para cada projeto, é possível selecionar configuração e plataforma específicas de projeto, modificar existentes ou criar uma nova configuração ou adicionar uma nova plataforma. Também é possível marcar caixas de seleção que indicam se cada projeto está incluído quando você usa a configuração em toda a solução para compilar ou implantar a solução.  
   
@@ -49,7 +49,7 @@ ms.locfileid: "54767322"
   
 #### <a name="to-set-properties-based-on-configurations"></a>Para definir as propriedades com base nas configurações  
   
--   No **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**.  
+- No **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**.  
   
      A janela **Páginas de Propriedades** é aberta.  
   
@@ -59,69 +59,69 @@ ms.locfileid: "54767322"
   
 #### <a name="to-create-a-project-configuration"></a>Para criar uma configuração de projeto  
   
-1.  Abra a caixa de diálogo **Configuration Manager**.  
+1. Abra a caixa de diálogo **Configuration Manager**.  
   
-2.  Selecione um projeto na coluna **Projeto**.  
+2. Selecione um projeto na coluna **Projeto**.  
   
-3.  Na lista suspensa **Configuração** desse projeto, escolha **Novo**.  
+3. Na lista suspensa **Configuração** desse projeto, escolha **Novo**.  
   
      A caixa de diálogo **Nova Configuração de Projeto** é aberta.  
   
-4.  Na caixa **Nome**, insira um nome para a nova configuração.  
+4. Na caixa **Nome**, insira um nome para a nova configuração.  
   
-5.  Para usar as configurações de propriedade com base em uma configuração de projeto existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.  
+5. Para usar as configurações de propriedade com base em uma configuração de projeto existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.  
   
-6.  Para criar uma configuração em toda a solução ao mesmo tempo, a marque a caixa de seleção **Criar nova configuração de solução**.  
+6. Para criar uma configuração em toda a solução ao mesmo tempo, a marque a caixa de seleção **Criar nova configuração de solução**.  
   
 #### <a name="to-rename-a-project-configuration"></a>Para renomear uma configuração de projeto  
   
-1.  Abra a caixa de diálogo **Configuration Manager**.  
+1. Abra a caixa de diálogo **Configuration Manager**.  
   
-2.  Na coluna **Projeto**, selecione o projeto que tenha a configuração de projeto que você deseja renomear.  
+2. Na coluna **Projeto**, selecione o projeto que tenha a configuração de projeto que você deseja renomear.  
   
-3.  Na lista suspensa **Configuração** desse projeto, escolha **Editar**.  
+3. Na lista suspensa **Configuração** desse projeto, escolha **Editar**.  
   
      A caixa de diálogo **Editar Configurações de Projeto** é aberta.  
   
-4.  Selecione o nome de configuração de projeto que você deseja alterar.  
+4. Selecione o nome de configuração de projeto que você deseja alterar.  
   
-5.  Selecione **Renomear** e, em seguida, digite um novo nome.  
+5. Selecione **Renomear** e, em seguida, digite um novo nome.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Criando e modificando configurações de build em toda a solução  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Para compilar uma configuração de build em toda a solução  
   
-1.  Abra a caixa de diálogo **Configuration Manager**.  
+1. Abra a caixa de diálogo **Configuration Manager**.  
   
-2.  Na lista suspensa **Configuração da solução ativa**, escolha **Nova**.  
+2. Na lista suspensa **Configuração da solução ativa**, escolha **Nova**.  
   
      A caixa de diálogo **Nova configuração de solução** é aberta.  
   
-3.  Na caixa de texto **Nome**, insira um nome para a nova configuração.  
+3. Na caixa de texto **Nome**, insira um nome para a nova configuração.  
   
-4.  Para usar as configurações de uma configuração de solução existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.  
+4. Para usar as configurações de uma configuração de solução existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.  
   
-5.  Se você desejar criar configurações de projeto ao mesmo tempo, marque a caixa de seleção **Criar novas configurações de projeto**.  
+5. Se você desejar criar configurações de projeto ao mesmo tempo, marque a caixa de seleção **Criar novas configurações de projeto**.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Para renomear uma configuração de build em toda a solução  
   
-1.  Abra a caixa de diálogo **Configuration Manager**.  
+1. Abra a caixa de diálogo **Configuration Manager**.  
   
-2.  Na lista suspensa **Configuração da Solução Ativa**, escolha **Editar**.  
+2. Na lista suspensa **Configuração da Solução Ativa**, escolha **Editar**.  
   
      A caixa de diálogo **Editar Configurações da Solução** é aberta.  
   
-3.  Selecione o nome de configuração da solução que você deseja alterar.  
+3. Selecione o nome de configuração da solução que você deseja alterar.  
   
-4.  Selecione **Renomear** e, em seguida, digite um novo nome.  
+4. Selecione **Renomear** e, em seguida, digite um novo nome.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Para modificar uma configuração de build em toda a solução  
   
-1.  Abra a caixa de diálogo **Configuration Manager**.  
+1. Abra a caixa de diálogo **Configuration Manager**.  
   
-2.  Na lista suspensa **Configuração da solução ativa**, selecione a configuração desejada.  
+2. Na lista suspensa **Configuração da solução ativa**, selecione a configuração desejada.  
   
-3.  No painel **Contextos do projeto**, para cada projeto, selecione a **Configuração** e a **Plataforma** desejadas e selecione se deseja **Compilá-la** e se deseja **Implantá-la**.  
+3. No painel **Contextos do projeto**, para cada projeto, selecione a **Configuração** e a **Plataforma** desejadas e selecione se deseja **Compilá-la** e se deseja **Implantá-la**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Noções sobre configurações de build](../ide/understanding-build-configurations.md)   

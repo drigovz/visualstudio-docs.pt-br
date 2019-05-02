@@ -1,14 +1,9 @@
 ---
 title: Usando conjuntos de regras para agrupar regras de análise de código | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 f1_keywords:
 - vs.codeanalysis.rulesets.learnmore
 helpviewer_keywords:
@@ -18,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8af8cbc27a61369640a80dbccb4d99dd2466f3a
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 1da32bd3626af60de56c0a8544753f95988773e9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49220578"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922805"
 ---
 # <a name="using-rule-sets-to-group-code-analysis-rules"></a>Usando conjuntos de regras para agrupar regras de análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +31,8 @@ Quando você configura a análise de código no [!INCLUDE[vsUltLong](../includes
   
 |Tarefa|Conteúdo relacionado|  
 |----------|---------------------|  
-|**Obtenha experiência prática:** Use as ferramentas de análise de código para especificar uma regra personalizada definem para encontrar e corrigir problemas em um aplicativo simples do .NET Framework.|-   [Passo a passo: Configurando e usando um conjunto de regras personalizado](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
-|**Configurar análise de código para um projeto:** escolher uma regra existente definida para um projeto, o site da Web ou a solução.|-   [Como: configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Usando conjuntos de regras para especificar as regras do C++ para execução](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Como: configurar a análise de código para um aplicativo Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Como: especificar conjuntos de regras para vários projetos em uma solução](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
-|**Personalizar um conjunto de regras:** especificar regras para aplicar ao seu projeto.|-   [Criando conjuntos de regras personalizado](../code-quality/creating-custom-code-analysis-rule-sets.md)|  
-|**Entender os conjuntos de regras internas:** exibir as regras de análise de código que compõem os conjuntos de regras internas.|-   [Referência de conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)|  
-|**Integrar a análise de código com o Team Foundation Server:** [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] check-in políticas permitem que as equipes de desenvolvimento certificar-se de que todos os check-ins de código atendem a um conjunto comum de padrões de análise de código.|-   [Como: sincronizar conjuntos de regras do projeto de código com a política de Check-in do projeto de equipe](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|
-
-
-
+|**Obtenha experiência prática:** Use as ferramentas de análise de código para especificar uma regra personalizada definida para encontrar e corrigir problemas em um aplicativo simples do .NET Framework.|-   [Passo a passo: Configurando e usando uma regra personalizada definida](../code-quality/walkthrough-configuring-and-using-a-custom-rule-set.md)|  
+|**Configure análise de código para um projeto:** Escolha uma regra existente definida para um projeto, o site da Web ou a solução.|-   [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)<br />-   [Usando conjuntos de regras para especificar as regras do C++ para execução](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md)<br />-   [Como: Configurar a análise de código para um aplicativo Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)<br />-   [Como: Especificar conjuntos de regras para vários projetos em uma solução](../code-quality/how-to-specify-managed-code-rule-sets-for-multiple-projects-in-a-solution.md)|  
+|**Personalize um conjunto de regras:** Especifica regras para aplicar ao seu projeto.|-   [Criando conjuntos de regras personalizado](../code-quality/creating-custom-code-analysis-rule-sets.md)|  
+|**Entenda os conjuntos de regras internas:** Exiba as regras de análise de código que compõem os conjuntos de regras interno.|-   [Referência de conjunto de regras de análise de código](../code-quality/code-analysis-rule-set-reference.md)|  
+|**Integrar a análise de código com o Team Foundation Server:** [!INCLUDE[esprtfs](../includes/esprtfs-md.md)] check-in políticas permitem que as equipes de desenvolvimento certificar-se de que todos os check-ins de código atendem a um conjunto comum de padrões de análise de código.|-   [Como: Sincronizar conjuntos de regras do projeto de código com a política de Check-in do projeto de equipe](../code-quality/how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md)|

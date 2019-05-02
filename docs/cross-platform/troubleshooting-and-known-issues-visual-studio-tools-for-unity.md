@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815580"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
 
@@ -62,7 +62,7 @@ Primeiro, verifique se o Visual Studio está definido como seu editor de script 
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Recargas extras, ou o Visual Studio perde todas as janelas abertas
 
-Certifique-se de nunca tocar nos arquivos de projeto diretamente de um processador de ativos ou de qualquer outra ferramenta. Se você realmente precisar manipular o arquivo de projeto, expomos uma API para isso. Consulte a seção de [Problemas com referências de assembly](#Assembly-reference-issues).
+Certifique-se de nunca tocar nos arquivos de projeto diretamente de um processador de ativos ou de qualquer outra ferramenta. Se você realmente precisar manipular o arquivo de projeto, expomos uma API para isso. Consulte a seção de [Problemas com referências de assembly](#assembly-reference-issues).
 
 Se você tiver recargas extras ou se o Visual Studio estiver perdendo todas as janelas abertas ao recarregar, verifique se você tem os pacotes corretos de direcionamento do .NET instalados. Verifique a seção a seguir sobre estruturas para obter mais informações.
 

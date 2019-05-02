@@ -1,25 +1,20 @@
 ---
 title: 'Passo a passo: Depurar uma folha de estilos XSLT | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 3db9fa5a-f619-4cb6-86e7-64b364e58e5d
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 10dad7382a30800675c257a4e2c8219d20e5b18b
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49887679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085097"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Passo a passo: Depurar uma folha de estilos XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +23,9 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Para preparar-se para esse passo a passo  
   
-1.  Feche soluções abertas.  
+1. Feche soluções abertas.  
   
-2.  Copie os dois arquivos de exemplo para seu computador local.  
+2. Copie os dois arquivos de exemplo para seu computador local.  
   
 ## <a name="start-debugging"></a>Iniciar a depuração  
   
@@ -64,19 +59,19 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
   
 #### <a name="to-use-the-watch-window"></a>Para usar a janela de observação  
   
-1.  Do **Debug** , aponte para **Windows**, aponte para **Assista**e clique em **inspeção 1**.  
+1. Do **Debug** , aponte para **Windows**, aponte para **Assista**e clique em **inspeção 1**.  
   
      Isso torna a observação 1 janela visível.  
   
-2.  Tipo de `$bookAverage` no **nome** do campo e pressione ENTER.  
+2. Tipo de `$bookAverage` no **nome** do campo e pressione ENTER.  
   
      O valor da variável de `$bookAverage` é exibido na janela.  
   
-3.  Tipo de `self::node()` no **nome** do campo e pressione ENTER.  
+3. Tipo de `self::node()` no **nome** do campo e pressione ENTER.  
   
      `self::node()` é uma expressão XPath que avalia ao nó atual de contexto. O valor da expressão XPath de `self::node()` é o primeiro nó de livro. Isso é alterado como nós progredimos com a transformação.  
   
-4.  Expanda o nó de `self::node()` em seguida, expanda o nó de `price` .  
+4. Expanda o nó de `self::node()` em seguida, expanda o nó de `price` .  
   
      Isso permite que você possa ver o valor do custo do livro e você pode facilmente compará-lo ao valor de `$bookAverage` . Porque o custo de livro abaixo de média, a condição de `xsl:if` deve obterá êxito.  
   
@@ -85,19 +80,19 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
   
 #### <a name="to-step-through-the-code"></a>Para depurar código  
   
-1.  Pressione **F5** para continuar.  
+1. Pressione **F5** para continuar.  
   
      Porque o primeiro nó de livro tiver satisfeito a condição de `xsl:if` , o nó de livro é adicionada à janela de saída XSL. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. O depurador é posicionado agora no segundo nó de livro no arquivo de books.xml.  
   
      Na janela Watch1 o valor de `self::node()` alterações no segundo nó de livro. Examinando o valor do elemento de preço, você pode determinar que o preço está acima da média, então a condição de `xsl:if` deve falhar.  
   
-2.  Pressione **F5** para continuar.  
+2. Pressione **F5** para continuar.  
   
      Porque o segundo nó de livro não está de acordo com a condição de `xsl:if` , o nó de livro não é adicionada à janela de saída XSL. O depurador continuará a ser executado até que está localizado novamente no elemento de `xsl:if` na folha de estilos. O depurador é posicionado agora no terceiro nó de `book` no arquivo de books.xml.  
   
      Na janela Watch1 o valor de `self::node()` alterações para o terceiro nó de livro. Examinando o valor do elemento de `price` , você pode determinar que o preço abaixo de média, então a condição de `xsl:if` deve obterá êxito.  
   
-3.  Pressione **F5** para continuar.  
+3. Pressione **F5** para continuar.  
   
      Porque a condição de `xsl:if` foi encontrada, o terceiro livro é adicionada à janela de saída XSL. Todos os livros no documento XML foram processados e paradas do depurador.  
   
@@ -161,4 +156,3 @@ As etapas nessa explicação passo a passo demonstra como usar o depurador XSLT.
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de XSLT](../xml-tools/debugging-xslt.md)
-

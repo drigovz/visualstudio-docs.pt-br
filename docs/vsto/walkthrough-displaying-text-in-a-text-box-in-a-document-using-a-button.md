@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df33470ea76ac29626459c1240873068180b0860
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443834"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão
   Este passo a passo demonstra como usar os botões e caixas de texto em uma personalização no nível de documento para o Microsoft Office Word.
@@ -35,16 +35,16 @@ ms.locfileid: "56600978"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Word
+- Microsoft Word
 
 ## <a name="create-the-project"></a>Criar o projeto
  A primeira etapa é criar um projeto de Documento do Word.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de documento do Word com o nome **My Button Word**. No assistente, selecione **criar um novo documento**.
+1. Criar um projeto de documento do Word com o nome **My Button Word**. No assistente, selecione **criar um novo documento**.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -60,7 +60,7 @@ ms.locfileid: "56600978"
 2. Dos **controles comuns** guia da **caixa de ferramentas**, arraste um <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controle ao documento.
 
    > [!NOTE]
-   >  No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.
+   > No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.
 
 3. Sobre o **modo de exibição** menu, clique em **janela propriedades**.
 
@@ -80,14 +80,14 @@ ms.locfileid: "56600978"
 
 ### <a name="to-write-to-the-text-box-when-the-button-is-clicked"></a>Para gravar a caixa de texto quando o botão é clicado
 
-1.  Na **Gerenciador de soluções**, clique com botão direito **ThisDocument**e, em seguida, clique em **Exibir código** no menu de atalho.
+1. Na **Gerenciador de soluções**, clique com botão direito **ThisDocument**e, em seguida, clique em **Exibir código** no menu de atalho.
 
-2.  Adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão.
+2. Adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão.
 
      [!code-vb[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#7)]
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#7)]
 
-3.  No c#, você deve adicionar um manipulador de eventos para o botão a <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. No c#, você deve adicionar um manipulador de eventos para o botão a <xref:Microsoft.Office.Tools.Word.Document.Startup> eventos. Para obter informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreProgrammingControlsWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#8)]
 
@@ -96,18 +96,18 @@ ms.locfileid: "56600978"
 
 ### <a name="to-test-your-document"></a>Para testar o documento
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
-2.  Clique no botão.
+2. Clique no botão.
 
-3.  Confirme se **Olá, mundo!** é exibida na caixa de texto.
+3. Confirme se **Olá, mundo!** é exibida na caixa de texto.
 
 ## <a name="next-steps"></a>Próximas etapas
  Este passo a passo mostra as Noções básicas de como usar os botões e caixas de texto em documentos do Word. Estas são algumas tarefas que podem vir a seguir:
 
--   Usando uma caixa de combinação para alterar a formatação. Para obter mais informações, confira [Passo a passo: Formatação do documento de alterações usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
+- Usando uma caixa de combinação para alterar a formatação. Para obter mais informações, confira [Passo a passo: Formatação do documento de alterações usando controles CheckBox](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md).
 
--   Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, confira [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
+- Usando botões de opção para selecionar estilos de gráfico. Para obter mais informações, confira [Passo a passo: Atualizar um gráfico em um documento usando botões de opção](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)

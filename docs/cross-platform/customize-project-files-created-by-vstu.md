@@ -11,11 +11,11 @@ manager: crdun
 ms.workload:
 - unity
 ms.openlocfilehash: ad52e9f97dfbb9a5d0b3d65085c6c2627ccb2232
-ms.sourcegitcommit: e6ef03cc415ca67f75fd1f26e0e7b8846857166d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39310079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819523"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>Personalizar arquivos de projeto criados pelo VSTU
 As ferramentas do Visual Studio para Unity fornecem um retorno de chamada de estilo Unity durante a geração do arquivo de projeto. Registre com o evento `VisualStudioIntegration.ProjectFileGeneration` para modificar o arquivo de projeto sempre que ele for gerado novamente.
@@ -70,4 +70,4 @@ public class ProjectFileHook
 ```
 
 ## <a name="see-also"></a>Consulte também
- [Exemplo: retorno de chamada de log](../cross-platform/share-the-unity-log-callback-with-vstu.md)
+ [Exemplo: Retorno de chamada de log](../cross-platform/share-the-unity-log-callback-with-vstu.md)

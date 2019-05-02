@@ -1,26 +1,21 @@
 ---
 title: Dentro do Editor de núcleo | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - core editor
 ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9aca4bb8ad55dbd4cac0a6f899731711ccb6db8f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51798541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083355"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +24,17 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
   
  As áreas a seguir estão alguns aspectos importantes do que o editor principal:  
   
--   Buffer de texto  
+- Buffer de texto  
   
--   Exibição de texto  
+- Exibição de texto  
   
--   Janela de código  
+- Janela de código  
   
--   Marcadores de texto  
+- Marcadores de texto  
   
--   Gerenciador de texto  
+- Gerenciador de texto  
   
--   Integração com serviços de linguagem  
+- Integração com serviços de linguagem  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Criando uma instância do editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  
@@ -51,7 +46,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  [Eventos de buffer de texto na API herdada](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fornece uma lista das interfaces que são usados para a notificação de eventos do buffer de texto.  
   
- [Como registrar para eventos de buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Como: Registre-se para eventos de Buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Descreve como eventos de buffer de texto de aviso.  
   
  [Usando o gerenciador de texto para monitorar as configurações globais](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -70,7 +65,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  Descreve a instanciação de um serviço de linguagem para as decorações de código do controle.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Passo a passo: Criar um editor principal e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Fornece instruções passo a passo sobre como iniciar o editor principal do código gerenciado.  
   
  [Barra de menu suspenso](../extensibility/drop-down-bar.md)  
@@ -79,9 +74,8 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  [Usando marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Explica o conceito de marcadores de texto e como elas são usadas no editor de núcleo e lista as interfaces que são usadas para acessar e gerenciar marcadores de texto.  
   
- [Como adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
+ [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto e como adicionar um comando personalizado a um menu de atalho.  
   
- [Como criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)  
+ [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto personalizado e como fornecer o tipo de marcador, como um serviço.
-

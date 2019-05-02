@@ -1,6 +1,6 @@
 ---
 title: Tutorial de extensão do Hello World | Microsoft Docs
-ms.date: 07/10/2017
+ms.date: 03/14/2019
 ms.topic: conceptual
 ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: gregvanl
@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f354b31e3979aacdb55aba566a646616ddc4108e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912217"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Crie sua primeira extensão: Hello World
 
@@ -35,52 +35,74 @@ Neste exemplo, você usará o Visual c# para adicionar que um botão de menu per
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Antes de começar, verifique se você instalou o **desenvolvimento de extensões do Visual Studio** carga de trabalho que inclui o modelo VSIX, você precisará e código de exemplo.
+Antes de começar, verifique se você instalou o **desenvolvimento de extensões do Visual Studio** carga de trabalho, que inclui o modelo VSIX, você precisará e código de exemplo.
 
 > [!NOTE]
 > Você pode usar qualquer edição do Visual Studio (Community, Professional ou Enterprise) para criar um projeto de extensibilidade do Visual Studio.
 
 ## <a name="create-an-extensibility-project"></a>Criar um projeto de extensibilidade
 
-Etapa 1. Dos **arquivo** menu, clique em **novo projeto**. Na parte inferior da tela, insira o nome do seu projeto.
+::: moniker range="vs-2017"
 
-Etapa 2. Dos **modelos** menu, clique em **Visual c#**, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.
+Etapa 1. No menu **Arquivo**, selecione **Novo** > **Projeto**.
+
+Etapa 2. Na caixa de pesquisa na parte superior direita, digite "vsix" e selecione o Visual C# **projeto do VSIX**. Digite "HelloWorld" para o **nome** na parte inferior da caixa de diálogo e selecione **Okey**.
 
 ![novo projeto](media/hello-world-new-project.png)
 
 Agora você deve ver a página de Introdução e alguns recursos de exemplo.
 
-::: moniker range="vs-2017"
-
 Se você precisar deixar este tutorial e volte a ela, você pode encontrar seu novo projeto HelloWorld na **página inicial** na **recentes** seção.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Etapa 1. No menu **Arquivo**, selecione **Novo** > **Projeto**. Pesquise por "vsix" e selecione o Visual C# **projeto do VSIX** e, em seguida **próxima**.
+
+Etapa 2. Digite "HelloWorld" para o **nome do projeto** e selecione **criar**.
+
+![novo projeto](media/hello-world-new-project-2019.png)
+
+Agora você deve ver o projeto HelloWorld em **Gerenciador de soluções**.
 
 ::: moniker-end
 
 ## <a name="add-a-custom-command"></a>Adicionar um comando personalizado
 
-Etapa 1. Se você selecionar o manifesto, você pode ver quais opções estão mutáveis, para a instância, metadados, descrição e versão.
+Etapa 1. Se você selecionar o *.vsixmanifest* arquivo de manifesto, você pode ver quais opções estão mutáveis, como descrição, autor e versão.
 
-Etapa 2. Clique com botão direito no projeto (não na solução). No menu de contexto, clique em **Add**e, em seguida, clique em **Novo Item**.
+Etapa 2. Clique com botão direito no projeto (não na solução). No menu de contexto, selecione **Add**e então **Novo Item**.
 
-Etapa 3. Selecione o **extensibilidade** seção e, em seguida, clique em **comando personalizado**.
+Etapa 3. Selecione o **extensibilidade** seção e, em seguida, escolha **comando personalizado**.
 
-Etapa 4. No **nome** campo na parte inferior, dê a ele um nome, por exemplo *Command.cs*.
+Etapa 4. No **nome** na parte inferior, insira um nome de arquivo, como *Command.cs*.
 
 ![comando personalizado](media/hello-world-custom-command.png)
 
-Novo comando está listado na **Gerenciador de soluções** sob o **recursos** branch. Isso também é onde você encontrará outros arquivos relacionados ao seu comando, como os arquivos PNG e ICO, se você quiser modificar a imagem.
+O novo arquivo de comando está visível no **Gerenciador de soluções**. Sob o **recursos** nó, você encontrará outros arquivos relacionados ao seu comando. Por exemplo, se você quiser modificar a imagem, o arquivo PNG é aqui.
 
 ## <a name="modify-the-source-code"></a>Modificar o código-fonte
 
-Neste ponto, o botão que você está adicionando está bastante genérico. Você precisará modificar o arquivo VSCT e o arquivo de CS se você quiser fazer alterações.
+Neste ponto, o comando e o texto do botão são gerados automaticamente e não muito interessante. Se você quiser fazer alterações, você pode modificar o arquivo VSCT e o arquivo do CS.
 
-* O arquivo VSCT é onde você pode renomear os comandos, bem como definir onde eles ficar no sistema de comando do Visual Studio. Conforme você explora o arquivo VSCT, você observará muito código comentado que explica o que cada seção de controles de código.
+* O arquivo VSCT é onde você pode renomear os comandos, bem como definir onde eles ficar no sistema de comando do Visual Studio. Conforme você explora o arquivo VSCT, você observará comentários que explicam o que cada seção dos controles de código VSCT.
 
 * O arquivo de CS é onde você pode definir a ações, como o manipulador de clique.
+
+::: moniker range="vs-2017"
 
 Etapa 1. Na **Gerenciador de soluções**, localize o arquivo VSCT para seu novo comando. Nesse caso, ele será chamado *CommandPackage.vsct*.
 
 ![comando pacote vsct](media/hello-world-command-package-vsct.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Etapa 1. Na **Gerenciador de soluções**, localize o arquivo VSCT para seu pacote de extensão VS. Nesse caso, ele será chamado *HelloWorldPackage.vsct*.
+
+::: moniker-end
 
 Etapa 2. Alterar o `ButtonText` parâmetro para `Say Hello World!`.
 
@@ -96,14 +118,15 @@ Etapa 2. Alterar o `ButtonText` parâmetro para `Say Hello World!`.
   ...
 ```
 
-Etapa 3. Volte para **Gerenciador de soluções** e localize o *Command.cs* arquivo. Alterar a cadeia de caracteres `message` para o comando `string.Format(..)` para `Hello World!`.
+Etapa 3. Volte para **Gerenciador de soluções** e localize o *Command.cs* arquivo. No `Execute` método, alterar a cadeia de caracteres `message` partir `string.Format(..)` para `Hello World!`.
 
 ```csharp
   ...
-  private void MenuItemCallback(object sender, EventArgs e)
+  private void Execute(object sender, EventArgs e)
   {
+    ThreadHelper.ThrowIfNotOnUIThread();
     string message = "Hello World!";
-    string title = "Command1";
+    string title = "Command";
 
     // Show a message box to prove we were here
     VsShellUtilities.ShowMessageBox(
@@ -123,11 +146,15 @@ Certifique-se de salvar suas alterações para cada arquivo.
 
 Agora você pode executar o código-fonte em que a instância Experimental do Visual Studio.
 
-Etapa 1. Clique em **iniciar** na barra de ferramentas. Isso compila seu projeto e inicia o depurador, iniciando uma nova instância do Visual Studio chamada a **instância Experimental**.
+Etapa 1. Pressione **F5** para executar o **iniciar depuração** comando. Este comando compila seu projeto e inicia o depurador, iniciando uma nova instância do Visual Studio chamada a **instância Experimental**.
+
+::: moniker range="vs-2017"
 
 Você verá as palavras **instância Experimental** na barra de título do Visual Studio.
 
 ![barra de título da instância experimental](media/hello-world-exp-instance.png)
+
+::: moniker-end
 
 Etapa 2. Sobre o **ferramentas** menu da **instância Experimental**, clique em **Say Hello World!**.
 
@@ -141,4 +168,5 @@ Agora que você conhece os fundamentos de trabalhar com a extensibilidade do Vis
 
 * [Começar a desenvolver extensões do Visual Studio](starting-to-develop-visual-studio-extensions.md) -exemplos, tutoriais. e publicar sua extensão
 * [O que há de novo no SDK do Visual Studio 2017](what-s-new-in-the-visual-studio-2017-sdk.md) -novos recursos de extensibilidade do Visual Studio 2017
+* [O que há de novo no SDK do Visual Studio 2019](whats-new-visual-studio-2019-sdk.md) -novos recursos de extensibilidade do Visual Studio de 2019
 * [Dentro do Visual Studio SDK](internals/inside-the-visual-studio-sdk.md) -Conheça os detalhes de extensibilidade do Visual Studio

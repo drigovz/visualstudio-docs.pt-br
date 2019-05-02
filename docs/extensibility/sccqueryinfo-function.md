@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e01c76f5696e029cd7d15be75786b1009af4a673
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d2c17d20b54ea16f0a6764277855ca240aeb7224
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433169"
 ---
 # <a name="sccqueryinfo-function"></a>Função SccQueryInfo
 Essa função obtém as informações de status para um conjunto de arquivos selecionados no controle de origem.
@@ -67,13 +67,13 @@ SCCRTN SccQueryInfo(
 
  Ao usar essa função para fazer check-out de arquivos, observe o seguinte `MSSCCI` requisitos de status:
 
--   `SCC_STATUS_OUTBYUSER` é definido quando o usuário atual fez check-out do arquivo.
+- `SCC_STATUS_OUTBYUSER` é definido quando o usuário atual fez check-out do arquivo.
 
--   `SCC_STATUS_CHECKEDOUT` não pode ser definida, a menos que `SCC_STATUS_OUTBYUSER` está definido.
+- `SCC_STATUS_CHECKEDOUT` não pode ser definida, a menos que `SCC_STATUS_OUTBYUSER` está definido.
 
--   `SCC_STATUS_CHECKEDOUT` só é definido quando o arquivo é extraído no diretório de trabalho designado.
+- `SCC_STATUS_CHECKEDOUT` só é definido quando o arquivo é extraído no diretório de trabalho designado.
 
--   Se o arquivo está com check-out do usuário atual em um diretório que não seja o diretório de trabalho `SCC_STATUS_OUTBYUSER` está definida, mas `SCC_STATUS_CHECKEDOUT` não é.
+- Se o arquivo está com check-out do usuário atual em um diretório que não seja o diretório de trabalho `SCC_STATUS_OUTBYUSER` está definida, mas `SCC_STATUS_CHECKEDOUT` não é.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

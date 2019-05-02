@@ -1,14 +1,9 @@
 ---
-title: ': Ca2133 os representantes devem aos métodos com transparência consistente | Microsoft Docs'
-ms.custom: ''
+title: 'CA2133: Delegados devem associar a métodos com transparência consistente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2133
 ms.assetid: a09672e2-63cb-4abd-9e8f-dff515e101ce
@@ -16,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 16e766979e71b36f816e1265ef5da520c16d85b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+ms.openlocfilehash: a8a19a84336cc6452f663eb65429326b52268728
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49909688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386949"
 ---
-# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: os representantes devem ser associados a métodos com transparência consistente
+# <a name="ca2133-delegates-must-bind-to-methods-with-consistent-transparency"></a>CA2133: Representantes devem ser associados a métodos com transparência consistente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -34,7 +29,7 @@ ms.locfileid: "49909688"
 |Alteração Significativa|Quebra|
 
 > [!NOTE]
->  Esse aviso só será aplicado ao código que está executando o CoreCLR (a versão do CLR que é específico para aplicativos Web do Silverlight).
+> Esse aviso só será aplicado ao código que está executando o CoreCLR (a versão do CLR que é específico para aplicativos Web do Silverlight).
 
 ## <a name="cause"></a>Causa
  Esse aviso é acionado em um método que associa um representante que é marcado com o <xref:System.Security.SecurityCriticalAttribute> para um método transparente ou marcado com o <xref:System.Security.SecuritySafeCriticalAttribute>. O aviso também é acionado em um método que associa um representante transparente ou de segurança crítica a um método crítico.
@@ -50,6 +45,3 @@ ms.locfileid: "49909688"
 
 ### <a name="code"></a>Código
  [!code-csharp[FxCop.Security.CA2133.DelegatesMustBindWithConsistentTransparency#1](../snippets/csharp/VS_Snippets_CodeAnalysis/fxcop.security.ca2133.delegatesmustbindwithconsistenttransparency/cs/ca2133 - delegatesmustbindwithconsistenttransparency.cs#1)]
-
-
-

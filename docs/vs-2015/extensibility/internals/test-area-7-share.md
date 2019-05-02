@@ -1,29 +1,24 @@
 ---
 title: 'Área de teste 7: Compartilhamento | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111630"
 ---
-# <a name="test-area-7-share"></a>Testar área 7: compartilhar
+# <a name="test-area-7-share"></a>Área de teste 7: Compartilhar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Essa área de teste aborda itens de compartilhamento entre locais por meio de **compartilhamento** comando.  
@@ -32,26 +27,26 @@ Essa área de teste aborda itens de compartilhamento entre locais por meio de **
   
  Em pastas de compartilhamento funciona se você selecionar uma pasta pelo menos um arquivo sob controle do código-fonte nela. O comando de compartilhamento é desabilitado nas seguintes condições:  
   
--   Se a pasta selecionada é uma pasta vazia.  
+- Se a pasta selecionada é uma pasta vazia.  
   
--   Se há uma pasta real, mas não contém nenhum arquivo de controle de origem.  
+- Se há uma pasta real, mas não contém nenhum arquivo de controle de origem.  
   
--   Se houver uma pasta virtual, sejam arquivos sob controle do código-fonte nela ou não.  
+- Se houver uma pasta virtual, sejam arquivos sob controle do código-fonte nela ou não.  
   
--   Se houver um projeto Web do Site remoto.  
+- Se houver um projeto Web do Site remoto.  
   
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando  
  O seguinte [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.  
   
- Compartilhamento: **arquivo**->**controle de fonte**->**compartilhamento**.  
+ Compartilhe: **Arquivo**->**controle de fonte**->**compartilhamento**.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
   
--   Arquivo compartilhado é exibido em um local compartilhado.  
+- Arquivo compartilhado é exibido em um local compartilhado.  
   
--   Exibindo o código-fonte controle versão store histórico mostra que os arquivos são compartilhados.  
+- Exibindo o código-fonte controle versão store histórico mostra que os arquivos são compartilhados.  
   
--   Editar um arquivo compartilhado edita os locais do arquivo.  
+- Editar um arquivo compartilhado edita os locais do arquivo.  
   
 ## <a name="test-cases"></a>Casos de teste  
  Estes são os casos de teste específicos para a área de teste do compartilhamento.  
@@ -67,4 +62,3 @@ Essa área de teste aborda itens de compartilhamento entre locais por meio de **
   
 ## <a name="see-also"></a>Consulte também  
  [Guia de teste para plug-ins de controle do código-fonte](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

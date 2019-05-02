@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 3: definir as propriedades do formulário | Microsoft Docs'
+title: 'Etapa 3: Defina as propriedades do formulário | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ba03e1a5dea0ee03b1799a3afe038c867fa7d64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442586"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Em seguida, use a janela **Propriedades** para alterar a aparência do seu formulário.  
   
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")para uma versão em vídeo deste tópico, consulte [Tutorial 1: Criar um visualizador de imagens no Visual Basic – vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutorial 1: Criar um visualizador de imagens em c# – vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Para definir suas propriedades de formulário  
   
@@ -30,7 +30,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 2. Escolha qualquer outro lugar dentro do formulário **Form1** para selecioná-lo. Examine a janela **Propriedades**, que agora deve mostrar as propriedades do formulário. Os formulários têm várias propriedades. Por exemplo, você pode definir a cor de primeiro plano e do plano de fundo, o texto do título que aparece na parte superior do formulário, o tamanho do formulário e outras propriedades.  
   
    > [!NOTE]
-   >  Se a janela **Propriedades** não for exibida, interrompa seu programa escolhendo o botão quadrado **Parar Depuração** na barra de ferramentas ou apenas feche a janela. Se o programa for interrompido e você ainda não conseguir ver a janela **Propriedades**, na barra de menus, escolha **Exibir**, **Janela Propriedades**.  
+   > Se a janela **Propriedades** não for exibida, interrompa seu programa escolhendo o botão quadrado **Parar Depuração** na barra de ferramentas ou apenas feche a janela. Se o programa for interrompido e você ainda não conseguir ver a janela **Propriedades**, na barra de menus, escolha **Exibir**, **Janela Propriedades**.  
   
 3. Depois que o formulário for selecionado, localize a propriedade de **Texto** na janela **Propriedades**. Dependendo de como a lista estiver classificada, talvez seja necessário rolar para baixo. Escolha **Texto**, digite **Visualizador de Imagens** e escolha ENTER.  Agora seu formulário deve ter o texto **Visualizador de Imagens** em sua barra de título, e a aparência da janela **Propriedades** deveria ser semelhante à seguinte imagem.  
   
@@ -38,7 +38,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
    Janela de Propriedades  
   
    > [!NOTE]
-   >  As propriedades podem ser classificadas por um modo Categorizado ou Alfabético. É possível mude entre essas duas modos de exibição usando os botões na janela **Propriedades**. Neste tutorial, é mais fácil localizar propriedades por meio da exibição Alfabética.  
+   > As propriedades podem ser classificadas por um modo Categorizado ou Alfabético. É possível mude entre essas duas modos de exibição usando os botões na janela **Propriedades**. Neste tutorial, é mais fácil localizar propriedades por meio da exibição Alfabética.  
   
 4. Volte ao Windows Forms Designer. Escolha a alça inferior direita do formulário, que é o pequeno quadrado branco no canto inferior direito do formulário e aparece da seguinte maneira.  
   
@@ -64,14 +64,14 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
   
 7. Antes de seguir para a próxima etapa, interrompa o programa, pois a IDE não permitirá que você altere seu programa quando executar. Lembre-se de que você pode usar qualquer um dos métodos a seguir para parar seu programa.  
   
-   -   Na barra de ferramentas, clique no botão **Parar Depuração**.  
+   - Na barra de ferramentas, clique no botão **Parar Depuração**.  
   
-   -   Na barra de menus, escolha **Depurar**, **Parar Depuração**.  
+   - Na barra de menus, escolha **Depurar**, **Parar Depuração**.  
   
-   -   Clique no botão X no canto superior da janela **Form1**.  
+   - Clique no botão X no canto superior da janela **Form1**.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para acessar a próxima etapa do tutorial, consulte [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).

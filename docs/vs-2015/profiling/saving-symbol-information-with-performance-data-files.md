@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bd8b861b6501fda2ed0739725a05225e31343e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9d2e8b0414746523d0f76e8266f6463d9c05574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780883"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098877"
 ---
 # <a name="saving-symbol-information-with-performance-data-files"></a>Salvando informações de símbolo com arquivos de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,9 +51,9 @@ Se você estiver usando o IDE (ambiente de desenvolvimento integrado) [!INCLUDE[
   
 - Certifique-se de ter configurado o caminho do seu cache de símbolos do Windows. Siga um destes procedimentos para definir o caminho do cache de símbolos:  
   
-  -   Definir a opção Depurador-> Símbolos no IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para o caminho correto.  
+  - Definir a opção Depurador-> Símbolos no IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para o caminho correto.  
   
-  -   Adicionar a opção -symbolpath à linha de comando do VSPerfReport para incluir os símbolos.  
+  - Adicionar a opção -symbolpath à linha de comando do VSPerfReport para incluir os símbolos.  
   
 - Se você não vir os símbolos no [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], certifique-se de que o servidor de símbolos esteja configurado corretamente para o servidor ASP.  
   
@@ -66,5 +66,5 @@ Se você estiver usando o IDE (ambiente de desenvolvimento integrado) [!INCLUDE[
   
 ## <a name="see-also"></a>Consulte também  
  [Salvando e exportando dados de ferramentas de desempenho](../profiling/saving-and-exporting-performance-tools-data.md)   
- [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md)   
+ [Como: Informações de símbolo do Windows de referência](../profiling/how-to-reference-windows-symbol-information.md)   
  [VSPerfReport](../profiling/vsperfreport.md)

@@ -1,14 +1,9 @@
 ---
-title: 'Como: depurar o código-fonte do .NET Framework | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Depurar o código-fonte do .NET Framework | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -20,15 +15,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: ce5e20524040d131a655da1567606ffbb0934a80
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092104"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Como depurar a origem do .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Como: Depurar o código-fonte do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece novos recursos para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] depuração. Para depurar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fonte, você deve ter acesso aos símbolos de depuração para o código. Você também precisará habilitar a depuração de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] código-fonte.  
@@ -37,49 +32,46 @@ A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece n
   
 ### <a name="to-enable-net-framework-source-debugging"></a>Para ativar a depuração de origem do .NET Framework  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** caixa de diálogo, clique o **depuração** categoria.  
+2. No **opções** caixa de diálogo, clique o **depuração** categoria.  
   
-3.  No **gerais** , defina **habilitar o .NET Framework** depuração da origem.  
+3. No **gerais** , defina **habilitar o .NET Framework** depuração da origem.  
   
-    1.  Se Apenas Meu Código tiver sido habilitado, uma caixa de diálogo de aviso mostrará que Apenas Meu Código está desabilitado agora. Clique em **OK**.  
+    1. Se Apenas Meu Código tiver sido habilitado, uma caixa de diálogo de aviso mostrará que Apenas Meu Código está desabilitado agora. Clique em **OK**.  
   
-    2.  Se você não tiver um local de cache de símbolo definido, outra caixa de diálogo de aviso informará que um local padrão de cache do símbolo foi definido agora. Clique em **OK**.  
+    2. Se você não tiver um local de cache de símbolo definido, outra caixa de diálogo de aviso informará que um local padrão de cache do símbolo foi definido agora. Clique em **OK**.  
   
-4.  Sob o **Debugging** categoria, clique em **símbolos**.  
+4. Sob o **Debugging** categoria, clique em **símbolos**.  
   
-5.  Se você desejar alterar o local do cache de símbolos:  
+5. Se você desejar alterar o local do cache de símbolos:  
   
-    1.  Abra o **depuração** nó na caixa à esquerda.  
+    1. Abra o **depuração** nó na caixa à esquerda.  
   
-    2.  Sob o **Debugging** nó, clique em **símbolos**.  
+    2. Sob o **Debugging** nó, clique em **símbolos**.  
   
-    3.  Editar o local no **armazenar em Cache símbolos de servidores de símbolos para este diretório** ou clique em **procurar** para escolher um local.  
+    3. Editar o local no **armazenar em Cache símbolos de servidores de símbolos para este diretório** ou clique em **procurar** para escolher um local.  
   
-6.  Se você quiser baixar símbolos imediatamente, clique em **carregar símbolos usando os locais acima**.  
+6. Se você quiser baixar símbolos imediatamente, clique em **carregar símbolos usando os locais acima**.  
   
      Este botão não está disponível no modo de design.  
   
      Se você não optar por baixar símbolos agora, os símbolos serão baixados automaticamente da próxima vez em que você iniciar a depuração do seu programa.  
   
-7.  Clique em **OK** para fechar a caixa de diálogo **Opções**.  
+7. Clique em **OK** para fechar a caixa de diálogo **Opções**.  
   
 ### <a name="to-load-framework-symbols-using-the-modules-window"></a>Para carregar símbolos de Framework usando a janela de módulos  
   
-1.  No **módulos** janela, o botão direito do mouse, um módulo para o qual os símbolos não foram carregados. Você pode informar se os símbolos são carregados ou não examinando os **Status de símbolos** coluna.  
+1. No **módulos** janela, o botão direito do mouse, um módulo para o qual os símbolos não foram carregados. Você pode informar se os símbolos são carregados ou não examinando os **Status de símbolos** coluna.  
   
-2.  Aponte para **carregar símbolos de** e clique em **servidores de símbolo Microsoft** baixar símbolos do servidor de símbolos públicos da Microsoft ou **caminho de símbolo** para carregar a partir de um diretório onde você armazenou símbolos anteriormente.  
+2. Aponte para **carregar símbolos de** e clique em **servidores de símbolo Microsoft** baixar símbolos do servidor de símbolos públicos da Microsoft ou **caminho de símbolo** para carregar a partir de um diretório onde você armazenou símbolos anteriormente.  
   
 ### <a name="to-load-framework-symbols-using-the-call-stack-window"></a>Para carregar símbolos de Framework usando a janela de pilha de chamadas  
   
-1.  No **pilha de chamadas** janela, o botão direito do mouse um quadro para o qual os símbolos não foram carregados. O quadro será esmaecido.  
+1. No **pilha de chamadas** janela, o botão direito do mouse um quadro para o qual os símbolos não foram carregados. O quadro será esmaecido.  
   
-2.  Aponte para **carregar símbolos de** e clique em **servidores de símbolo Microsoft** ou **caminho de símbolo**.  
+2. Aponte para **carregar símbolos de** e clique em **servidores de símbolo Microsoft** ou **caminho de símbolo**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
  [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
-
-
-

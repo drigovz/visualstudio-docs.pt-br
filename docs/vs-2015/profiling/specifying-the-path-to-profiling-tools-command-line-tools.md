@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 209c2263e35bc4e6c5bfffb03b4a760e8cc15a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7fadcff84c4b927a7718d7d4ad1311918ae0f18a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066930"
 ---
 # <a name="specifying-the-path-to-profiling-tools-command-line-tools"></a>Especificando o demarcador para ferramentas de linha de comando de ferramentas de criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,10 +27,10 @@ O caminho das ferramentas de linha de comando das Ferramentas de Criação de Pe
 ## <a name="64-bit-computers"></a>Computadores de 64 bits  
  Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo cujo perfil foi criado.  
   
--   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
+- No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
      *Unidade*Arquivos de Programas (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools  
   
--   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
+- No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:  
   
      *Unidade*\Arquivos de Programas (x86)\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\x64

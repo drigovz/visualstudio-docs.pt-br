@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ff4080b7b658af5911a0372562954899628bb92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961499"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Como: Redimensionar controles ListObject
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle quando você adiciona uma pasta de trabalho do Microsoft Office Excel; no entanto, você talvez queira para redimensioná-la em um momento posterior. Por exemplo, você talvez queira alterar uma lista de colunas de duas a três colunas.
@@ -39,48 +39,47 @@ ms.locfileid: "56598460"
 
   ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Adicionar colunas a um objeto de lista associado a dados em tempo de execução? ](http://go.microsoft.com/fwlink/?LinkID=130318).
 
-##  <a name="designtime"></a> Redimensionar um controle ListObject em tempo de design
+## <a name="designtime"></a> Redimensionar um controle ListObject em tempo de design
  Para redimensionar uma lista, você pode clicar e arrastar uma das alças de dimensionamento, ou você pode redefinir seu tamanho na **redimensionar lista** caixa de diálogo.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para redimensionar uma lista usando a caixa de diálogo de redimensionar lista
 
+1. Clique em qualquer lugar a <xref:Microsoft.Office.Tools.Excel.ListObject> tabela. O **ferramentas de tabela** > **Design** guia na faixa de opções é exibida.
 
-1.  Clique em qualquer lugar a <xref:Microsoft.Office.Tools.Excel.ListObject> tabela. O **ferramentas de tabela** > **Design** guia na faixa de opções é exibida.
-
-2.  Na seção de propriedades, clique em **redimensionar tabela**.
+2. Na seção de propriedades, clique em **redimensionar tabela**.
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 
-3.  Selecione o novo intervalo de dados para sua tabela.
+3. Selecione o novo intervalo de dados para sua tabela.
 
-4.  Clique em **OK**.
+4. Clique em **OK**.
 
-##  <a name="runtimedoclevel"></a> Redimensionar um controle ListObject em tempo de execução em um projeto de nível de documento
+## <a name="runtimedoclevel"></a> Redimensionar um controle ListObject em tempo de execução em um projeto de nível de documento
  Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em tempo de execução usando o <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> método. Você não pode usar esse método para mover o <xref:Microsoft.Office.Tools.Excel.ListObject> controle para um novo local na planilha. Os cabeçalhos devem permanecer na mesma linha e o redimensionado <xref:Microsoft.Office.Tools.Excel.ListObject> controle deve se sobrepor o objeto da lista original. O redimensionado <xref:Microsoft.Office.Tools.Excel.ListObject> controle deve conter uma linha de cabeçalho e pelo menos uma linha de dados.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Para redimensionar um objeto de lista por meio de programação
 
-1.  Criar uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle abrangidas pela célula **A1** por meio **B3** em `Sheet1`.
+1. Criar uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle abrangidas pela célula **A1** por meio **B3** em `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2.  Redimensionar a lista para incluir células **A1** por meio **C5**.
+2. Redimensionar a lista para incluir células **A1** por meio **C5**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-##  <a name="runtimeaddin"></a> Redimensionar um ListObject em tempo de execução em um projeto de suplemento do VSTO
+## <a name="runtimeaddin"></a> Redimensionar um ListObject em tempo de execução em um projeto de suplemento do VSTO
  Você pode redimensionar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle em qualquer planilha aberta em tempo de execução. Para obter mais informações sobre como adicionar um <xref:Microsoft.Office.Tools.Excel.ListObject> de controle para uma planilha usando um suplemento do VSTO, consulte [como: Adicionar controles ListObject a planilhas](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Para redimensionar um objeto de lista por meio de programação
 
-1.  Criar uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle abrangidas pela célula **A1** por meio **B3** em `Sheet1`.
+1. Criar uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle abrangidas pela célula **A1** por meio **B3** em `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2.  Redimensionar a lista para incluir células **A1** por meio **C5**.
+2. Redimensionar a lista para incluir células **A1** por meio **C5**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

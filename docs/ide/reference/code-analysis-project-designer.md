@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b23de974e7d8587cc7185eb9bb01d029fc2dcc27
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569714"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 Contém a ferramenta de análise de código que você pode optar por executar em seu código. A ferramenta relata informações sobre seus assemblies, como violações de regras de programação e design estabelecidas nas Diretrizes de Design do Microsoft .NET Framework.

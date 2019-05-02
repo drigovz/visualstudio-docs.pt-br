@@ -2,7 +2,7 @@
 title: Medir o desempenho com ferramentas de criação de perfil
 description: Dê uma olhada rápida em diferentes ferramentas de diagnóstico disponíveis no Visual Studio.
 ms.custom: mvc
-ms.date: 05/18/2017
+ms.date: 05/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
 - diagnostic tools
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74787c9b310742e94b45c09748ec5b6c0210b2fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: af87464f8fb49ca68ecf8c442a099c71b9df5b69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995918"
 ---
 # <a name="quickstart-first-look-at-profiling-tools"></a>Início Rápido: Introdução às ferramentas de criação de perfil
 
@@ -119,6 +119,7 @@ Ao selecionar um período nos gráficos e escolher **Exibir detalhes**, uma exib
 
 Também é possível usar os gráficos para determinar se há gargalos de desempenho limitados à CPU ou à GPU.
 
+::: moniker range="vs-2017"
 ## <a name="analyze-performance-javascript-uwp"></a>Analisar o desempenho (JavaScript UWP)
 
 Para aplicativos UWP, é possível usar a ferramenta Memória JavaScript e a ferramenta Capacidade de Resposta de IU em HTML.
@@ -130,6 +131,7 @@ A ferramenta Memória JavaScript é semelhante à ferramenta Uso de Memória dis
 Para diagnosticar a capacidade de resposta de IU, tempo de carregamento lento e atualizações visuais lentas em aplicativos UWP, use a ferramenta Capacidade de Resposta de IU em HTML. O uso é semelhante à ferramenta Linha do Tempo do Aplicativo para outros tipos de aplicativos. Para obter mais informações, consulte [Capacidade de resposta de interface do usuário HTML](../profiling/html-ui-responsiveness.md).
 
 ![Ferramenta de criação de perfil de capacidade de resposta da interface do usuário HTML](../profiling/media/diaghtmlresp.png "DiagHTMLResp")
+::: moniker-end
 
 ## <a name="analyze-network-usage-uwp"></a>Analisar o uso de rede (UWP)
 

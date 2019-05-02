@@ -1,14 +1,9 @@
 ---
 title: Função SccGetProjPath | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGetProjPath
 helpviewer_keywords:
@@ -16,24 +11,24 @@ helpviewer_keywords:
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 978316cd9c953217a3e59a7ecd1b047cab12734b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51752588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446866"
 ---
 # <a name="sccgetprojpath-function"></a>Função SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Essa função solicita ao usuário para um caminho de projeto, que é uma cadeia de caracteres que é significativa apenas para o plug-in de controle do código-fonte. Ele é chamado quando o usuário é:  
   
--   Criar um novo projeto  
+- Criar um novo projeto  
   
--   Adicionar um projeto existente ao controle de versão  
+- Adicionar um projeto existente ao controle de versão  
   
--   Tentativa de encontrar um projeto existente de controle de versão  
+- Tentativa de encontrar um projeto existente de controle de versão  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -104,7 +99,7 @@ SCCRTN SccGetProjPath (
  Para `lpUser`, o IDE pode passar um nome de usuário ou pode simplesmente passar um ponteiro para uma cadeia de caracteres vazia. Se houver um nome de usuário, o plug-in de controle do código-fonte deve usá-lo como padrão. No entanto, se nenhum nome foi passado ou se o logon falhou com o nome fornecido, o plug-in deve solicitar ao usuário para um logon e passe o nome de volta no `lpUser` quando ele recebe um logon válido. Como o plug-in pode alterar essa cadeia de caracteres, o IDE sempre alocará um buffer de tamanho (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  A primeira ação que executa o IDE pode ser uma chamada para o `SccOpenProject` função ou o `SccGetProjPath` função. Portanto, ambos têm um idênticos `lpUser` parâmetro, que permite que o controle do código-fonte plug-in para conectar o usuário em qualquer momento. Mesmo se o retorno da função indica uma falha, o plug-in deve preencher essa cadeia de caracteres com um nome de logon válido.  
+> A primeira ação que executa o IDE pode ser uma chamada para o `SccOpenProject` função ou o `SccGetProjPath` função. Portanto, ambos têm um idênticos `lpUser` parâmetro, que permite que o controle do código-fonte plug-in para conectar o usuário em qualquer momento. Mesmo se o retorno da função indica uma falha, o plug-in deve preencher essa cadeia de caracteres com um nome de logon válido.  
   
  `lpLocalPath` é o diretório em que o usuário mantém o projeto. Pode ser uma cadeia de caracteres vazia. Se não houver nenhum diretório atualmente definido (como no caso de um usuário de tentar baixar um projeto do sistema de controle de origem) e se `bAllowChangePath` é `TRUE`, o plug-in de controle do código-fonte pode solicitar a entrada do usuário ou usar algum outro método para colocar seu possui a cadeia de caracteres em `lpLocalPath`. Se `bAllowChangePath` é `FALSE`, o plug-in não deve alterar a cadeia de caracteres, porque o usuário já estiver trabalhando no diretório especificado.  
   
@@ -115,4 +110,3 @@ SCCRTN SccGetProjPath (
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   
  [SccOpenProject](../extensibility/sccopenproject-function.md)
-

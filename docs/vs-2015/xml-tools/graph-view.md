@@ -1,30 +1,24 @@
 ---
 title: Exibição de gráfico | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: d1c0bbe55f2e63c1d86d71556392d57d1330c6b4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49813616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110538"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A exibição do gráfico fornece uma representação gráfica de nós globais do esquema e relações entre os nós. Observe que a exibição do gráfico não permite que você alterar o layout do esquema definido na superfície de design. A exibição do gráfico também inclui a barra de ferramentas do designer de esquema XML e a barra de rastreamento.  
   
  A imagem a seguir mostra a visualização de gráfico com seis nós globais na superfície de design.  
@@ -42,7 +36,7 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
   
  ![Designer XSD; Exibição de gráfico](../xml-tools/media/xsdgraphviewwatermark.gif "XSDGraphViewWatermark")  
   
- Se o esquema tem erros, o seguinte texto é exibido no fim da lista: “Use Lista de erros para exibir e corrigir erros no conjunto.”  
+ Se o conjunto de esquema tem erros, o seguinte texto é exibido no final da lista: "Use a lista de erros para exibir e corrigir os erros no conjunto de".  
   
 ## <a name="breadcrumb-bar"></a>Barra de rastreamento  
  A barra de rastreamento na parte inferior do modo de figura a seguir mostra onde o nó selecionado é localizado no conjunto de esquema. Se vários itens são selecionados, a barra de rastreamento será em branco.  
@@ -110,10 +104,10 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 |**Limpar o espaço de trabalho**|Limpa o workspace e a superfície de design.|  
 |**Remover espaço de trabalho**|Removes selecionou nós de workspace e serface de design.|  
 |**Remover tudo, exceto a seleção do espaço de trabalho**|Remove os nós que não são selecionados de workspace e serface de design. Essa opção é ativada no modo do modelo de conteúdo e no modo de gráfico.|  
-|**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para a direita**.|  
-|**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para a esquerda**.|  
-|**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para baixo**.|  
-|**Baixo para cima**|Altera o layout no modo de gráfico a uma representação hierárquica de parte inferior-à- parte superior dos nós. Essa opção pode ser acessada por meio do atalho de teclado: **Alt + seta para cima**.|  
+|**Esquerda para a direita**|Altera o layout no modo de gráfico a uma representação hierárquica esquerda para a direita de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT + seta para direita**.|  
+|**Direita para a esquerda**|Altera o layout no modo de gráfico a uma representação hierárquica da direita para a esquerda de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT + seta esquerda**.|  
+|**Cima para baixo**|Altera o layout no modo de gráfico a uma representação hierárquica de cima para baixo de nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT + seta para baixo**.|  
+|**Baixo para cima**|Altera o layout no modo de gráfico a uma representação hierárquica de parte inferior-à- parte superior dos nós. Essa opção pode ser acessada por meio do atalho de teclado: **ALT + seta para cima**.|  
   
 ## <a name="panscroll"></a>Bandeja/rolagem  
  Você pode filtrar a superfície de design usando barras de rolagem ou mantendo a tecla CTRL quando você clique e arraste o mouse. Quando você filtra a superfície de design usando o clique e o arrastar, o cursor será alterado a quatro setas cruzadas apontando em quatro direções.  
@@ -121,11 +115,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 ## <a name="undoredo"></a>Desfazer/refazer  
  Desfazer/refaz o recurso é habilitado no modo de gráfico para as seguintes ações:  
   
--   Adicionando um único nó arrastando e soltando-se.  
+- Adicionando um único nó arrastando e soltando-se.  
   
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.  
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.  
   
--   Excluindo única ou mais nós.  
+- Excluindo única ou mais nós.  
   
 ## <a name="zoom"></a>Aplicar Zoom  
  O zoom está disponível no canto inferior direito do modo de gráfico.  
@@ -145,6 +139,3 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
   
 ## <a name="see-also"></a>Consulte também  
  [Superfície de design](../xml-tools/xml-schema-designer-workspace.md)
-
-
-

@@ -18,17 +18,16 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 87c31551541bc949a98ec2dd7a15da5a86b36d21
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7d7656d3b0ac887ec33cae5dad7c391fa0639fc3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777086"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660678"
 ---
 # <a name="markupcompilepass2-task"></a>Tarefa MarkupCompilePass2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 A tarefa <xref:Microsoft.Build.Tasks.Windows.MarkupCompilePass2> executa a compilação de marcação de segunda passagem em arquivos [!INCLUDE[TLA#tla_xaml](../includes/tlasharptla-xaml-md.md)] que fazem referência a tipos no mesmo projeto.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  

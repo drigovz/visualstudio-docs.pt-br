@@ -1,23 +1,20 @@
 ---
 title: Como... com modelos de texto | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: d1ac2509-0479-47eb-809c-1f171245d0b6
 caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 8e6a580a906ea228f04f8ec81b15eee6c143c6a1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9c31e1d17137fd0e801bb506c280a83285c311b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49903810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093014"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,21 +30,21 @@ Modelos de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecem uma ma
 ### <a name="generate-part-of-my-application-code"></a>Gerar parte do código do meu aplicativo  
  Eu tenho uma configuração ou *modelo* em um arquivo ou um banco de dados. Uma ou mais partes do meu código dependem do modelo.  
   
--   Gere alguns dos seus arquivos de código de modelos de texto. Para obter mais informações, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) e [o que é a melhor maneira de começar a escrever um modelo?](#starting).  
+- Gere alguns dos seus arquivos de código de modelos de texto. Para obter mais informações, consulte [geração de código de tempo de Design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) e [o que é a melhor maneira de começar a escrever um modelo?](#starting).  
   
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Gerar arquivos em tempo de execução, passando dados para o modelo  
  Em tempo de execução, o meu aplicativo gera arquivos de texto, como relatórios, que contêm uma mistura de texto padrão e os dados. Eu quero evitar a escrita de centenas de `write` instruções.  
   
--   Adicione um modelo de texto de tempo de execução ao seu projeto. Este modelo cria uma classe em seu código, o que você pode instanciar e usar para gerar o texto. Você pode passar dados para ele nos parâmetros do construtor. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
+- Adicione um modelo de texto de tempo de execução ao seu projeto. Este modelo cria uma classe em seu código, o que você pode instanciar e usar para gerar o texto. Você pode passar dados para ele nos parâmetros do construtor. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).  
   
--   Se você quiser gerar a partir de modelos que estão disponíveis somente em tempo de execução, você pode usar modelos de texto padrão. Se você estiver escrevendo um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão, você pode invocar o serviço de modelagem de texto. Para obter mais informações, consulte [invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Em outros contextos, você pode usar o mecanismo de modelagem de texto. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
+- Se você quiser gerar a partir de modelos que estão disponíveis somente em tempo de execução, você pode usar modelos de texto padrão. Se você estiver escrevendo um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão, você pode invocar o serviço de modelagem de texto. Para obter mais informações, consulte [invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Em outros contextos, você pode usar o mecanismo de modelagem de texto. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.  
   
      Use o \<#@parameter#> diretiva para passar parâmetros para esses modelos. Para obter mais informações, consulte [diretiva de parâmetro T4](../modeling/t4-parameter-directive.md).  
   
 ### <a name="read-another-project-file-from-a-template"></a>Ler a outro arquivo de projeto de um modelo  
  Para ler um arquivo da mesma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto como o modelo:  
   
--   Insira `hostSpecific="true"` na diretiva `<#@template#>`.  
+- Insira `hostSpecific="true"` na diretiva `<#@template#>`.  
   
      No seu código, use `this.Host.ResolvePath(filename)` para obter o caminho completo do arquivo.  
   
@@ -73,17 +70,17 @@ Modelos de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornecem uma ma
 ### <a name="generate-many-files-from-one-model-schema"></a>Gerar muitos arquivos de esquema de um modelo  
  Se você geralmente pode gerar arquivos de modelos que têm o mesmo esquema XML ou banco de dados:  
   
--   Considere a possibilidade de escrever um processador de diretriz. Isso permite que você substitua várias instruções de assembly e importar instruções em cada modelo com uma única diretiva personalizada. O processador de diretriz pode também carregar e analisar o arquivo de modelo. Para obter mais informações, consulte [criando processadores diretiva de modelo de texto do personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md).  
+- Considere a possibilidade de escrever um processador de diretriz. Isso permite que você substitua várias instruções de assembly e importar instruções em cada modelo com uma única diretiva personalizada. O processador de diretriz pode também carregar e analisar o arquivo de modelo. Para obter mais informações, consulte [criando processadores diretiva de modelo de texto do personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md).  
   
 ### <a name="generate-files-from-a-complex-model"></a>Gerar arquivos de um modelo complexo  
   
--   Considere a criação de uma linguagem específica de domínio (DSL) para representar o modelo. Isso torna muito mais fácil escrever os modelos, porque você usa tipos e propriedades que refletem os nomes dos elementos no seu modelo. Não é preciso analisar o arquivo ou navegar em nós XML. Por exemplo:  
+- Considere a criação de uma linguagem específica de domínio (DSL) para representar o modelo. Isso torna muito mais fácil escrever os modelos, porque você usa tipos e propriedades que refletem os nomes dos elementos no seu modelo. Não é preciso analisar o arquivo ou navegar em nós XML. Por exemplo:  
   
      `foreach (Book book in this.Library) { ... }`  
   
      Para obter mais informações, consulte [Introdução às linguagens específicas de domínio](../modeling/getting-started-with-domain-specific-languages.md) e [código de geração de uma linguagem específica do domínio](../modeling/generating-code-from-a-domain-specific-language.md).  
   
--   Considere a possibilidade de geração de código em um modelo UML. Não tem o código refletir a UML diretamente. Por exemplo, não é necessário gerar uma classe para cada classe no modelo UML. Em vez disso, você poderia usar o diagrama de classe UML para representar um site da web e gerar uma página da web de cada classe UML. Escolha o tipo de diagrama mais próximo às suas necessidades. Por exemplo, escolha os diagramas de atividade para representar qualquer tipo de fluxo de trabalho. Você pode definir estereótipos para adicionar as informações apropriadas ao seu aplicativo para cada tipo de elemento.  
+- Considere a possibilidade de geração de código em um modelo UML. Não tem o código refletir a UML diretamente. Por exemplo, não é necessário gerar uma classe para cada classe no modelo UML. Em vez disso, você poderia usar o diagrama de classe UML para representar um site da web e gerar uma página da web de cada classe UML. Escolha o tipo de diagrama mais próximo às suas necessidades. Por exemplo, escolha os diagramas de atividade para representar qualquer tipo de fluxo de trabalho. Você pode definir estereótipos para adicionar as informações apropriadas ao seu aplicativo para cada tipo de elemento.  
   
      Gerando a partir de um modelo UML permite que você desenhar e editar o modelo em um formulário diagramática, mas sem a necessidade de criar seu próprio tipo de diagrama, como você faria com uma DSL.  
   
@@ -107,21 +104,21 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ### <a name="execute-text-templates-in-the-build-process"></a>Modelos de texto são executados no processo de compilação  
   
--   Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md).  
+- Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md).  
   
 ## <a name="more-general-questions"></a>Perguntas gerais mais  
   
-###  <a name="starting"></a> O que é a melhor maneira de começar a escrever um modelo de texto?  
+### <a name="starting"></a> O que é a melhor maneira de começar a escrever um modelo de texto?  
   
-1.  Escreva um exemplo específico do arquivo gerado.  
+1. Escreva um exemplo específico do arquivo gerado.  
   
-2.  Transformá-lo em um modelo de texto inserindo o `<#@template #>` diretiva e a diretivas e o código que são necessárias para carregar o arquivo de entrada ou modelo.  
+2. Transformá-lo em um modelo de texto inserindo o `<#@template #>` diretiva e a diretivas e o código que são necessárias para carregar o arquivo de entrada ou modelo.  
   
-3.  Progressivamente substitua partes do arquivo com a expressão e blocos de código.  
+3. Progressivamente substitua partes do arquivo com a expressão e blocos de código.  
   
 ### <a name="what-is-a-model"></a>O que é um "modelo"?  
   
--   A entrada lida pelo seu modelo. É possível em um arquivo ou em um banco de dados. Pode ser um modelo UML ou um desenho do Visio, ou uma linguagem específica de domínio (DSL) ou XML, ou pode ser texto sem formatação. Ele poderia ser distribuído em vários arquivos. Normalmente, mais de um modelo lê um modelo.  
+- A entrada lida pelo seu modelo. É possível em um arquivo ou em um banco de dados. Pode ser um modelo UML ou um desenho do Visio, ou uma linguagem específica de domínio (DSL) ou XML, ou pode ser texto sem formatação. Ele poderia ser distribuído em vários arquivos. Normalmente, mais de um modelo lê um modelo.  
   
      A implicação do termo "modelo" é que ele representa algum aspecto do seu negócio mais diretamente que o código de programa gerado ou outros arquivos. Por exemplo, ele pode representar o plano de uma rede de comunicação que seu software gerado será supervisionar.  
   
@@ -132,11 +129,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
   
 ### <a name="what-best-practices-are-there-for-text-templates"></a>O que "práticas recomendadas" há para modelos de texto?  
   
--   Para obter mais informações, consulte [diretrizes para modelos de texto T4 escrita](../modeling/guidelines-for-writing-t4-text-templates.md).  
+- Para obter mais informações, consulte [diretrizes para modelos de texto T4 escrita](../modeling/guidelines-for-writing-t4-text-templates.md).  
   
 ### <a name="what-is-t4"></a>O que é "T4"?  
   
--   Outro nome para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] recursos de modelo de texto descritos aqui. A versão anterior, o que não foi publicada, foi uma abreviação de "Transformação de modelo de texto".
-
-
-
+- Outro nome para o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] recursos de modelo de texto descritos aqui. A versão anterior, o que não foi publicada, foi uma abreviação de "Transformação de modelo de texto".

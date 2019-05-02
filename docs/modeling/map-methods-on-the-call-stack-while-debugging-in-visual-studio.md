@@ -28,23 +28,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5866a26fdcc8bed88713bf92e1c38bfb3b04ba8f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445148"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
+
 Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a depuração. Você pode fazer anotações no mapa para acompanhar o que o código está fazendo, de modo a se concentrar na localização de bugs.
 
  ![Depuração com pilhas de chamadas em mapas de códigos](../debugger/media/debuggermap_overview.png)
 
  Itens necessários:
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)
+ ::: moniker range="vs-2017"
 
-- Código que você pode depurar, como Visual c#, Visual Basic, C++, JavaScript ou X + +
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+
+::: moniker-end
+
+- Código que você pode depurar, como Visual C#, Visual Basic, C++, JavaScript ou X + +
 
   Consulte:
 
@@ -66,9 +77,9 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 ## <a name="MapStack"></a> Mapear a pilha de chamadas
 
-1.  Inicie a depuração. (Teclado: **F5**)
+1. Inicie a depuração. (Teclado: **F5**)
 
-2.  Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, escolha **mapa de código**. (Teclado: **Ctrl** + **Shift** + **`**)
+2. Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, escolha **mapa de código**. (Teclado: **Ctrl** + **Shift** + **`**)
 
      ![Escolha o mapa de código para iniciar a pilha de chamadas de mapeamento](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -79,17 +90,20 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
      O mapa será atualizado automaticamente enquanto você continua a depuração. Ver [atualizar o mapa com a próxima pilha de chamadas](#UpdateMap).
 
 ## <a name="MakeNotes"></a> Fazer anotações sobre o código
+
  Adicione comentários para acompanhar o que está acontecendo no código. Para adicionar uma nova linha em um comentário, pressione **Shift + Return**.
 
  ![Adicionar comentário para a pilha de chamadas no mapa de códigos](../debugger/media/debuggermap_addcomment.png)
 
 ## <a name="UpdateMap"></a> Atualizar o mapa com a próxima pilha de chamadas
+
  Execute o aplicativo até o próximo ponto de interrupção ou siga uma função. O mapa adiciona uma nova pilha de chamadas.
 
  ![Atualizar o mapa de código com a próxima pilha de chamadas](../debugger/media/debuggermap_addclearcallstack.png)
 
 ## <a name="AddRelatedCode"></a> Adicionar código relacionado ao mapa
- Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com c# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
+
+ Agora você tem um mapa - o que em seguida? Se você estiver trabalhando com C# ou Visual Basic, adicione itens, como campos, propriedades e outros métodos, para acompanhar o que está acontecendo no código.
 
  Clique duas vezes em um método para ver sua definição de código ou use o menu de atalho para o método. (Teclado: Selecione o método no mapa e pressione **F12**)
 
@@ -100,7 +114,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
  ![Mostrar campos em um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
->  Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, namespace e assembly. Embora isso seja útil, você pode manter o mapa simples desativando esse recurso usando o **incluem pais** botão na barra de ferramentas do mapa ou pressionando **CTRL** quando você adiciona itens.
+> Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, namespace e assembly. Embora isso seja útil, você pode manter o mapa simples desativando esse recurso usando o **incluem pais** botão na barra de ferramentas do mapa ou pressionando **CTRL** quando você adiciona itens.
 
  ![Campos relacionados a um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_showedfields.png)
 
@@ -113,6 +127,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
  ![Métodos que usam um campo no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap_foundallreferences.png)
 
 ## <a name="FindBugs"></a> Localizar bugs usando o mapa
+
  Visualizar seu código pode ajudar a localizar bugs com mais rapidez. Por exemplo, suponha que você estiver investigando um bug em um programa de desenho. Quando você desenha uma linha e tenta desfazê-la, nada acontece até que você desenhe outra linha.
 
  Para que você define pontos de interrupção a `clear`, `undo`, e `Repaint` métodos, inicie a depuração e cria um mapa como este:
@@ -149,11 +164,11 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
    Abra o **Layout** menu na barra de ferramentas do mapa:
 
-  -   Altere o layout padrão.
+  - Altere o layout padrão.
 
-  -   Para parar de reorganizar o mapa automaticamente, desative **Layout automaticamente ao depurar**.
+  - Para parar de reorganizar o mapa automaticamente, desative **Layout automaticamente ao depurar**.
 
-  -   Para reorganizar o mapa o mínimo possível quando você adicionar itens, desative **Layout Incremental**.
+  - Para reorganizar o mapa o mínimo possível quando você adicionar itens, desative **Layout Incremental**.
 
 - **Pode compartilhar o mapa com outras pessoas?**
 

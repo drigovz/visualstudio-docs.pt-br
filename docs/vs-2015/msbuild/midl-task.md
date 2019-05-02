@@ -27,23 +27,22 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9d0398217bb48786067f8392c5e372b0888d060f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062029"
 ---
 # <a name="midl-task"></a>Tarefa MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe. Para obter mais informações, consulte “MIDL Command-Line Reference” (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
 ## <a name="parameters"></a>Parâmetros  
  A tabela a seguir descreve os parâmetros da tarefa **MIDL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.  
   
--   **AdditionalIncludeDirectories**  
+- **AdditionalIncludeDirectories**  
   
      Parâmetro **String[]** opcional.  
   
@@ -51,7 +50,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/I** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Parâmetro **String** opcional.  
   
@@ -59,7 +58,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte “MIDL Command-Line Reference” (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ApplicationConfigurationMode**  
+- **ApplicationConfigurationMode**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -67,7 +66,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/app_config** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ClientStubFile**  
+- **ClientStubFile**  
   
      Parâmetro **String** opcional.  
   
@@ -75,7 +74,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/cstub** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **ServerStubFile** nessa tabela.  
   
--   **CPreprocessOptions**  
+- **CPreprocessOptions**  
   
      Parâmetro **String** opcional.  
   
@@ -83,7 +82,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/cpp_opt** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DefaultCharType**  
+- **DefaultCharType**  
   
      Parâmetro **String** opcional.  
   
@@ -99,7 +98,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/char** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **DllDataFileName**  
+- **DllDataFileName**  
   
      Parâmetro **String** opcional.  
   
@@ -107,7 +106,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/dlldata** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **EnableErrorChecks**  
+- **EnableErrorChecks**  
   
      Parâmetro **String** opcional.  
   
@@ -123,7 +122,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckAllocations**  
+- **ErrorCheckAllocations**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -131,7 +130,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error allocation** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckBounds**  
+- **ErrorCheckBounds**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -139,7 +138,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error bounds_check** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckEnumRange**  
+- **ErrorCheckEnumRange**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -147,7 +146,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error enum** na ajuda da linha de comando (**/?**) do midl.exe.  
   
--   **ErrorCheckRefPointers**  
+- **ErrorCheckRefPointers**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -155,7 +154,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error ref** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ErrorCheckStubData**  
+- **ErrorCheckStubData**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -163,7 +162,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/error stub_data** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateClientFiles**  
+- **GenerateClientFiles**  
   
      Parâmetro **String** opcional.  
   
@@ -178,7 +177,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/client** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateServerFiles**  
+- **GenerateServerFiles**  
   
      Parâmetro **String** opcional.  
   
@@ -193,7 +192,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/server** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateStublessProxies**  
+- **GenerateStublessProxies**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -201,7 +200,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/Oicf** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **GenerateTypeLibrary**  
+- **GenerateTypeLibrary**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -209,7 +208,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/notlb** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **HeaderFileName**  
+- **HeaderFileName**  
   
      Parâmetro **String** opcional.  
   
@@ -217,7 +216,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/h** ou **/header** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **IgnoreStandardIncludePath**  
+- **IgnoreStandardIncludePath**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -225,7 +224,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/no_def_idir** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **InterfaceIdentifierFileName**  
+- **InterfaceIdentifierFileName**  
   
      Parâmetro **String** opcional.  
   
@@ -233,7 +232,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/iid** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **LocaleID**  
+- **LocaleID**  
   
      Parâmetro **int** opcional.  
   
@@ -241,7 +240,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/lcid** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também “IDs de localidades atribuídas pela Microsoft” no MSDN.  
   
--   **MkTypLibCompatible**  
+- **MkTypLibCompatible**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -249,7 +248,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/mktyplib203** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Além disso, consulte "ODL File Syntax" (Sintaxe do arquivo ODL) no site do MSDN.  
   
--   **OutputDirectory**  
+- **OutputDirectory**  
   
      Parâmetro **String** opcional.  
   
@@ -257,7 +256,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/out** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **PreprocessorDefinitions**  
+- **PreprocessorDefinitions**  
   
      Parâmetro **String[]** opcional.  
   
@@ -265,7 +264,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/D** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **UndefinePreprocessorDefinitions** nessa tabela.  
   
--   **ProxyFileName**  
+- **ProxyFileName**  
   
      Parâmetro **String** opcional.  
   
@@ -273,7 +272,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/proxy** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **RedirectOutputAndErrors**  
+- **RedirectOutputAndErrors**  
   
      Parâmetro **String** opcional.  
   
@@ -281,7 +280,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/o** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **ServerStubFile**  
+- **ServerStubFile**  
   
      Parâmetro **String** opcional.  
   
@@ -289,13 +288,13 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/sstub** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **ClientStubFile** nessa tabela.  
   
--   **Source**  
+- **Source**  
   
      Parâmetro `ITaskItem[]` obrigatório.  
   
      Especifica uma lista de arquivos de origem separados por espaços.  
   
--   **StructMemberAlignment**  
+- **StructMemberAlignment**  
   
      Parâmetro **String** opcional.  
   
@@ -313,7 +312,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/Zp** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). A opção **/Zp** é equivalente à opção **/pack** e à opção **/align** antiga.  
   
--   **SuppressCompilerWarnings**  
+- **SuppressCompilerWarnings**  
   
      Parâmetro **Boolean** opcional.  
   
@@ -321,7 +320,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/no_warn** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Parâmetro `Boolean` opcional.  
   
@@ -329,7 +328,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/nologo** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TargetEnvironment**  
+- **TargetEnvironment**  
   
      Parâmetro **String** opcional.  
   
@@ -346,13 +345,13 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/env** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Parâmetro `String` opcional.  
   
      Especifica o diretório intermediário em que os logs de rastreamento para essa tarefa são armazenados.  
   
--   **TypeLibFormat**  
+- **TypeLibFormat**  
   
      Parâmetro **String** opcional.  
   
@@ -367,7 +366,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte as opções **/newtlb** e **/oldtlb** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **TypeLibraryName**  
+- **TypeLibraryName**  
   
      Parâmetro **String** opcional.  
   
@@ -375,7 +374,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/tlb** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **UndefinePreprocessorDefinitions**  
+- **UndefinePreprocessorDefinitions**  
   
      Parâmetro **String[]** opcional.  
   
@@ -383,7 +382,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte a opção **/U** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **PreprocessorDefinitions** nessa tabela.  
   
--   **ValidateAllParameters**  
+- **ValidateAllParameters**  
   
      Parâmetro `Boolean` opcional.  
   
@@ -391,7 +390,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte as opções **/robust** e **/no_robust** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
--   **WarnAsError**  
+- **WarnAsError**  
   
      Parâmetro `Boolean` opcional.  
   
@@ -401,7 +400,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Para obter mais informações, consulte as opções **/WX** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **WarningLevel** nessa tabela.  
   
--   **WarningLevel**  
+- **WarningLevel**  
   
      Parâmetro **String** opcional.  
   

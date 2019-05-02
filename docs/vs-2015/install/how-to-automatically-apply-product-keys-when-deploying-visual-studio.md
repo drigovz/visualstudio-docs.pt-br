@@ -1,5 +1,5 @@
 ---
-title: 'Como: aplicar as chaves de produto durante a implantação do Visual Studio 2015 | Microsoft Docs'
+title: Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,22 +10,22 @@ caps.latest.revision: 11
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: bbbc5cf6a6a65f7dbb38de60a5a99ec89fc70687
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ec050cf8f365bfae2290593a0c7f215dcb2f39cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834842"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656720"
 ---
 # <a name="how-to-automatically-apply-product-keys-when-deploying-visual-studio"></a>Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [aplicar chaves de produto durante a implantação do Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
+Para obter a documentação mais recente sobre o Visual Studio, confira [Como aplicar as chaves de produto automaticamente durante a implantação do Visual Studio](/visualstudio/install/automatically-apply-product-keys-when-deploying-visual-studio).
 
 É possível aplicar a chave do produto (Product Key) de forma programática como parte de um script usado para automatizar a implantação do Visual Studio 2015. Chaves do produto (Product Keys) podem ser definidas em um dispositivo de forma programática durante a instalação do Visual Studio ou após a conclusão de uma instalação.
 
 ## <a name="apply-the-license-during-installation"></a>Aplicar a licença durante a instalação
- Use o parâmetro /ProductKey para aplicar uma chave do produto (Product Key) durante o processo de instalação do Visual Studio. Esse parâmetro de instalação pode ser usado com o /Silent parâmetro para instalar o Visual Studio em um estado já licenciado para um usuário final. Para usar o parâmetro /ProductKey, abra um prompt de comando. Execute o programa de instalação (por exemplo, vs_enterprise.exe ou vs_professional.exe) e defina o parâmetro /ProductKey com uma chave do produto (25 caracteres) que inclui sem traços:
+ Use o parâmetro /ProductKey para aplicar uma chave do produto (Product Key) durante o processo de instalação do Visual Studio. Esse parâmetro de instalação pode ser usado com o parâmetro /Silent para instalar o Visual Studio em um estado já licenciado de um usuário final. Para usar o parâmetro /ProductKey, abra um prompt de comando. Execute o programa de instalação (por exemplo, vs_enterprise.exe ou vs_professional.exe) e defina o parâmetro /ProductKey com uma chave do produto (Product Key) (25 caracteres) sem traços:
 
  Este é um comando de exemplo para a instalação do Visual Studio 2015 Enterprise com a chave do produto (Product Key) AAAAABBBBBCCCCCDDDDDEEEEEEE:
 
@@ -34,7 +34,7 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [aplica
 ## <a name="apply-the-license-after-installation"></a>Aplicar a licença após a instalação
  É possível ativar uma versão instalada do Visual Studio com uma chave do produto (Product Key) usando o utilitário storePID.exe nos computadores de destino no modo sem confirmação. StorePID.exe é um programa utilitário que é instalado com o Visual Studio em **\<drive>:\\\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\StorePID.exe**.
 
- Execute o storePID.exe com privilégios elevados, usando um agente do System Center ou em um prompt de comandos com privilégios elevados, seguido pela chave do produto (Product Key) (incluindo os traços) e o MPC (Código do Produto da Microsoft). Lembre-se de incluir os traços na chave do produto (Product Key).
+ Execute o storePID.exe com privilégios elevados, usando um agente do System Center ou em um prompt de comandos com privilégios elevados, seguido pela chave do produto (Product Key) (incluindo os traços) e o MPC (Código do Produto da Microsoft). Verifique se você incluiu os traços na chave do produto (Product Key).
 
  `StorePID.exe [product key including the dashes] [MPC]`
 
@@ -54,9 +54,10 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [aplica
 |Visual Studio Professional 2013|06177|
 |Visual Studio Test Professional 2013|06194|
 
- Para obter mais informações sobre como obter uma chave do produto, consulte [como: localizar a chave de produto do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
+Para saber mais sobre como obter uma chave do produto, confira [Como localizar a chave do produto (Product Key) do Visual Studio](../install/how-to-locate-the-visual-studio-product-key.md).
 
- Se o StorePID.exe aplicou a chave do produto (Product Key) com êxito, ele retornará 0. Se ele encontrar erros, retornará um número entre 1 e 6.
+Se o StorePID.exe aplicou a chave do produto (Product Key) com êxito, ele retornará 0. Se ele encontrar erros, retornará um número entre 1 e 6.
 
 ## <a name="see-also"></a>Consulte também
- [Instalar o Visual Studio](../install/install-visual-studio-2015.md)
+
+- [Instalar o Visual Studio](../install/install-visual-studio-2015.md)

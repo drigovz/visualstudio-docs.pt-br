@@ -2,7 +2,7 @@
 title: Dicas e truques no depurador
 description: Saiba mais sobre alguns dos recursos menos conhecidos suportados pelo depurador do Visual Studio
 ms.custom: seodec18
-ms.date: 06/15/2017
+ms.date: 06/15/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - stepping
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 87c9bd45383cdd4e5329834e4a64b1917229e08b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853060"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -53,6 +53,10 @@ Se for difícil ou demorado recriar um estado específico em seu aplicativo, con
 
 3. Se você estiver interessado em outro tipo de condição, selecione **filtro** em vez de **expressão condicional** no **configurações de ponto de interrupção** caixa de diálogo e, em seguida, siga o dicas de filtro.
 
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurar os dados sejam exibidos no depurador
+
+Para C#, Visual Basic, e C++ (C++código /CLI somente), você pode instruir o depurador quais informações devem ser mostram como usar o [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) atributo. Para C++ código, você pode fazer usando o mesmo [visualizações do Natvis](create-custom-views-of-native-objects.md).
+
 ## <a name="change-the-execution-flow"></a>Alterar o fluxo de execução
 
 Com o depurador em pausa em uma linha de código, use o mouse para captar o ponteiro de seta amarela à esquerda. Mova o ponteiro de seta amarela para um ponto diferente no caminho de execução do código. Em seguida, use F5 ou um comando de etapa para continuar a execução do aplicativo.
@@ -70,17 +74,17 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 
 #### <a name="to-create-an-object-id"></a>Para criar uma ID de objeto
 
-1.  Defina um ponto de interrupção perto de uma variável que você deseja controlar.
+1. Defina um ponto de interrupção perto de uma variável que você deseja controlar.
 
-2.  Inicie o depurador (**F5**) e interromperá no ponto de interrupção.
+2. Inicie o depurador (**F5**) e interromperá no ponto de interrupção.
 
 3. Localize a variável na **Locals** janela (**Depurar > Windows > Locals**), a variável com o botão direito e selecione **criar ID de objeto**.
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
+4. Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
 
-5.  A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
+5. A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
 
 Para obter mais informações, consulte [criar uma ID de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -106,7 +110,7 @@ Um visualizador de cadeia de caracteres pode ajudá-lo a descobrir se uma cadeia
 
 ![Visualizador de cadeia de caracteres JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Para alguns outros tipos como objetos do WPF que aparecem nas janelas do depurador, você também pode abrir os visualizadores.
+Para alguns outros tipos como objetos de DataSet e DataTable que aparecem nas janelas do depurador, você também pode abrir um visualizador interno.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Entrar no código em exceções manipuladas
 
@@ -122,13 +126,13 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 
 #### <a name="to-show-threads-in-your-source-code"></a>Mostrar threads em seu código-fonte
 
-1.  Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
+1. Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
 
-2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
+2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
 
     Observe que um marcador de thread pode ser escondido parcialmente por um ponto de interrupção.
 
-3.  Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
+3. Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
 
     Você também pode exibir o local de threads na [janela pilhas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 

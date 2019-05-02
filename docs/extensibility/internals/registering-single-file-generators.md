@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba7e6a97e3ee04f43eb7509e77f2e6972042473c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426811"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-lo tão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode instanciá-la e a associa a um tipo de projeto específico.
@@ -38,20 +38,20 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
 
 2. Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:
 
-   -   (Padrão)
+   - (Padrão)
 
         Opcional. Fornece uma descrição amigável da ferramenta personalizada. Esse parâmetro é opcional, mas recomendado.
 
-   -   CLSID
+   - CLSID
 
         Necessário. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.
 
-   -   GeneratesDesignTimeSource
+   - GeneratesDesignTimeSource
 
         Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.
 
    > [!NOTE]
-   >  Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.
+   > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.
 
     Por exemplo, o MSDataSetGenerator se registra uma vez para cada idioma:
 

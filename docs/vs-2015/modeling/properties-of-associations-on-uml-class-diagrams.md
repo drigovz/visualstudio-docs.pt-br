@@ -1,12 +1,9 @@
 ---
 title: Diagramas de classe de propriedades de associações em UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.common.association.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: f82bcd34-7903-4c00-8da1-613efa07d223
 caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: b132ee2aa0f67662fcfcad92b8ae945c2d66c680
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1c029a29b2d81f7a6ca64f47aab15caf5119d172
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51810269"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655992"
 ---
 # <a name="properties-of-associations-on-uml-class-diagrams"></a>Propriedades de associações em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +51,6 @@ Em um diagrama de classe UML, você pode desenhar *associações* entre qualquer
 ### <a name="properties-of-each-role"></a>Propriedades de cada função  
  Para ver as propriedades de cada função, expanda o **função primeiro** ou **segunda função** propriedade.  
 
-
 |     **Property**     |          **Padrão**          |                                                                                                                                                                                                                                                                                                                                        Descrição                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |  **Nome da função (2)**   | Nome do tipo a essa função |                                                                                                                                                                                                                                                                                                       O nome da função. É exibido próximo ao final da associação no diagrama.                                                                                                                                                                                                                                                                                                        |
@@ -63,17 +59,14 @@ Em um diagrama de classe UML, você pode desenhar *associações* entre qualquer
 | **É derivado de união** |             False             |                                                                                                                                                                                                                                                                                                             Se for true, a função é a união de um conjunto de funções em tipos derivados.                                                                                                                                                                                                                                                                                                             |
 |   **É navegável**   |             verdadeiro              |                                                 A associação pode ser lidos nessa direção. Dada uma instância da função oposta, o software que você descrevendo com eficiência pode determinar a instância associada essa função.<br /><br /> Se uma função é Navigable e o outro não é, uma seta aparece (7) sobre a associação na direção navegável.<br /><br /> Por padrão, a ferramenta de associação cria uma associação que é navegável em uma única direção. Para convertê-lo em uma associação bidirecional, você pode selecionar a associação, clique na marca de ação que é exibida e, em seguida, clique em **bidirecional tornar**.                                                 |
 |   **É somente leitura**   |             False             |                                                                                                                                                                                                                                                                                   Se for true, uma instância de associação não pode ser alterada depois que ele é criado. O link é sempre o mesmo objeto.                                                                                                                                                                                                                                                                                    |
-| **Multiplicidade (3)** |               1               | **1** -essa extremidade da associação sempre vincula a um objeto. Na figura, cada Item de Menu tem um Menu.<br /><br /> **entre 0 e 1** – a essa extremidade de associação vincula a um objeto, ou há um link.<br /><br /> **\\**\* -todos os objetos na outra extremidade da associação está vinculado a uma coleção de objetos Este final, e a coleção pode estar vazia.<br /><br /> **1...\\**  \* -todos os objetos na outra extremidade da associação é vinculado a pelo menos um objeto este final. Na figura, cada Menu tem pelo menos um Item de Menu.<br /><br /> *n* **...** *m* -cada objeto na outra extremidade tem uma coleção de entre *n* e *m* links para objetos neste final. |
+| **Multiplicidade (3)** |               1               | **1** -essa extremidade da associação sempre vincula a um objeto. Na figura, cada Item de Menu tem um Menu.<br /><br /> **entre 0 e 1** – a essa extremidade de associação vincula a um objeto, ou há um link.<br /><br /> **\\**\* -todos os objetos na outra extremidade da associação está vinculado a uma coleção de objetos Este final, e a coleção pode estar vazia.<br /><br /> **1...\\**  \* -todos os objetos na outra extremidade da associação é vinculado a pelo menos um objeto este final. Na figura, cada Menu tem pelo menos um Item de Menu.<br /><br /> *n* **..** *m* -cada objeto na outra extremidade tem uma coleção de entre *n* e *m* links para objetos neste final. |
 |    **É ordenada**    |             False             |                                                                                                                                                                                                                                                                                                  Se for true, a coleção retornada constitui uma lista sequencial. Para a multiplicidade mais do que 1.                                                                                                                                                                                                                                                                                                   |
 |    **É exclusivo**     |             False             |                                                                                                                                                                                                                                                                                              Não se for true, há nenhum valor duplicado na coleção retornada. Para a multiplicidade mais do que 1.                                                                                                                                                                                                                                                                                              |
 |    **Visibilidade**    |            Público             |                                                                                                                                                                                                                                 Público - visível globalmente<br /><br /> Privado - não é visível fora do tipo proprietário<br /><br /> Protegido - visível a tipos derivados do proprietário<br /><br /> Package - visível para outros tipos de dentro do mesmo pacote.                                                                                                                                                                                                                                  |
 
 ## <a name="see-also"></a>Consulte também  
- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)   
+ [Diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md)   
  [Propriedades de tipos em diagramas de classe UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   
  [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

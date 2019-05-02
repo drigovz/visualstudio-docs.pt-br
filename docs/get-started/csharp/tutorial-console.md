@@ -2,8 +2,9 @@
 title: 'Tutorial: criar um aplicativo de console simples em C#'
 description: Saiba como criar aplicativos de console em C# do Visual Basic no Visual Studio, passo a passo.
 ms.custom: seodec18, get-started
-ms.date: 02/26/2019
+ms.date: 03/23/2019
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
 author: TerryGLee
@@ -14,28 +15,41 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 427d6e0bc17f977d54db7e313f5f119662df17c8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971550"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Criar um aplicativo de console simples em C# no Visual Studio
 
 Neste tutorial do C#, você usará o Visual Studio para criar e executar um aplicativo de console e explorar alguns recursos do IDE (ambiente de desenvolvimento integrado) do Visual Studio durante esse processo.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 
 Para começar, criaremos um projeto de aplicativo em C#. O tipo de projeto inclui todos os arquivos de modelo que você precisará, mesmo sem adicionar nada!
 
+::: moniker range="vs-2017"
+
 1. Abra o Visual Studio 2017.
 
 2. Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**.
+   (Alternativamente, pressione **Ctrl**+**Shift**+**N**).
 
-3. Na caixa de diálogo **Novo Projeto** no painel esquerdo, expanda **C#** e escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como *Calculator*.
+3. No painel esquerdo da caixa de diálogo **Novo Projeto**, expanda **C#** e, em seguida, escolha **.NET Core**. No painel central, escolha **Aplicativo de Console (.NET Core)**. Em seguida, nomeie o arquivo como ***Calculator***.
 
    ![Modelo de projeto do aplicativo do console (.NET Core) na caixa de diálogo Novo projeto no IDE do Visual Studio](./media/new-project-csharp-calculator-console-app.png)
 
@@ -59,11 +73,48 @@ Se o modelo de projeto **Aplicativo do Console (.NET Core)** não for exibido, v
 
 1. O Instalador do Visual Studio é iniciado. Escolha a carga de trabalho **Desenvolvimento multiplaforma do .NET Core** e, em seguida, selecione **Modificar**.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+1. Na tela Iniciar, selecione **Criar um novo projeto**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+
+1. Na janela **Criar um novo projeto**, insira ou digite *console* na caixa de pesquisa. Em seguida, escolha **C#** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+
+   Depois de aplicar os filtros de linguagem de programação e plataforma, escolha o modelo **Aplicativo de Console (.NET Core)** e, em seguida, escolha **Avançar**.
+
+   ![Escolha o modelo de C# para o Aplicativo de Console (.NET Framework)](./media/vs-2019/csharp-create-new-project-search-console-net-core-filtered.png)
+
+   > [!NOTE]
+   > Se não vir o modelo **Aplicativo de Console (.NET Core)**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
+   > 
+   > Em seguida, no Instalador do Visual Studio, escolha a carga de trabalho de **desenvolvimento multiplataforma do .NET Core**.
+   >
+   > ![Carga de trabalho de desenvolvimento multiplataforma do .NET Core no Instalador do Visual Studio](./media/dot-net-core-xplat-dev-workload.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. Em seguida, retorne para a etapa 2 deste procedimento para "[Criar um projeto](#create-a-project)".
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *Calculadora* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
+
+   ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'Calculadora'](./media/vs-2019/csharp-name-your-calculator-project.png)
+
+   O Visual Studio abre seu novo projeto, que inclui o código "Olá, Mundo" padrão.
+   
+::: moniker-end
+
 ## <a name="create-the-app"></a>Criar o aplicativo
 
-Primeiro, exploraremos os cálculos matemáticos básicos de inteiro em C#. Em seguida, adicionaremos o código para criar uma calculadora básica. Em seguida, ajustaremos o código para adicionar funcionalidade. Depois disso, depuraremos o aplicativo para encontrar e corrigir erros. E, por fim, refinaremos o código para torná-lo mais eficiente.
+Primeiro, exploraremos os cálculos matemáticos básicos de inteiro em C#. Em seguida, adicionaremos o código para criar uma calculadora básica. Depois disso, depuraremos o aplicativo para encontrar e corrigir erros. E, por fim, refinaremos o código para torná-lo mais eficiente.
 
-Vamos começar com alguns cálculos matemáticos de inteiro em C#.
+### <a name="explore-integer-math"></a>Explorar a matemática de inteiros
+
+Vamos começar com alguns cálculos matemáticos básicos de inteiro em C#.
 
 1. No editor de códigos, exclua o código padrão "Olá, Mundo".
 
@@ -81,15 +132,23 @@ Vamos começar com alguns cálculos matemáticos de inteiro em C#.
             Console.ReadKey();
     ```
 
+    Observe que quando você faz isso, o recurso IntelliSense no Visual Studio oferece a opção de preencher automaticamente a entrada.
+
+    ![Animação de código de matemática de inteiro que mostra o recurso de preenchimento automático do IntelliSense no IDE do Visual Studio](./media/integer-math-intellisense.gif)
+
 1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
 
    ![Escolha o botão Calculadora para executar o aplicativo na barra de ferramentas](./media/csharp-console-calculator-button.png)
 
-   Uma janela do console é aberta mostrando a soma de 42 + 119.
+   Uma janela do console é aberta mostrando a soma de 42 + 119, que é **161**.
 
-1. Agora, tente alterar a linha de código `int c = a + b;` usando um operador diferente, como `-` para subtração, `*` para multiplicação ou */* para divisão.
+    ![Janela do console mostrando os resultados de matemática de inteiros](./media/csharp-console-integer-math.png)
 
-    Observe que quando você alterar o operador e executar o programa, o resultado também será alterado.
+1. **(Opcional)** Você pode alterar o operador para alterar o resultado. Por exemplo, você pode alterar o operador `+` na linha de código `int c = a + b;` para `-` em uma subtração, `*` para multiplicação ou `/` para divisão. Em seguida, quando você executar o programa, o resultado também será alterado.
+
+1. Feche a janela do console.
+
+### <a name="add-code-to-create-a-calculator"></a>Adicionar código para criar uma calculadora
 
 Vamos continuar com a adição de um conjunto mais complexo de código de calculadora ao seu projeto.
 
@@ -165,6 +224,10 @@ Vamos continuar com a adição de um conjunto mais complexo de código de calcul
 
     ![Janela do console mostrando o aplicativo de Calculadora que inclui prompts de quais ações devem ser executadas](./media/csharp-console-calculator.png)
 
+### <a name="add-functionality-to-the-calculator"></a>Adicionar funcionalidade à calculadora
+
+Ajustaremos o código para adicionar mais funcionalidade.
+
 ### <a name="add-decimals"></a>Adicionar decimais
 
 Atualmente, o aplicativo de calculadora aceita e retorna números inteiros. No entanto, ele será mais preciso se adicionarmos um código que permita decimais.
@@ -178,6 +241,8 @@ Vamos corrigir o código para que ele identifique decimais.
 1. Pressione **Ctrl** + **F** para abrir o controle **Localizar e Substituir**.
 
 1. Altere cada instância da variável `int` para `float`.
+
+   Verifique se ativou/desativou as opções **Diferenciar maiúsculas de minúsculas** (**Alt**+**C**) e **Coincidir palavra inteira** (**Alt** + **W**) no controle **Localizar e substituir**.
 
     ![Animação do controle Localizar e Substituir que mostra como alterar a variável int para float](./media/find-replace-control-animation.gif)
 
@@ -387,7 +452,7 @@ Vamos começar.
 
 1. Escolha **Calculadora** para executar seu programa ou pressione **F5**.
 
-1. Siga os prompts e divida o número **42** pelo número **119**. O aplicativo deverá ser semelhante ao seguinte:
+1. Siga os prompts e divida o número **42** pelo número **119**. O aplicativo deverá ser semelhante à seguinte captura de tela:
 
     ![Janela do console mostrando o aplicativo de Calculadora refatorado que inclui prompts de quais ações devem ser executadas e tratamento de erro para entradas incorretas](./media/csharp-console-calculator-refactored.png)
 
@@ -536,4 +601,5 @@ Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutori
 
 ## <a name="see-also"></a>Consulte também
 
+* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
 * [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

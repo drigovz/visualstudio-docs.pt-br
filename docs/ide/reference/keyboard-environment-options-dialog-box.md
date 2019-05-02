@@ -10,14 +10,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d369bae532fae40c2856cce88169137146d826d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00e95520c526c1d26f0122d9631dfb8196077853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970142"
 ---
-# <a name="keyboard-environment-options-dialog-box"></a>Caixa de diálogo do teclado, ambiente e opções
+# <a name="options-dialog-box-environment--keyboard"></a>Caixa de diálogo Opções: Ambiente \> Teclado
+
 Use esta página para definir mapeamentos de teclado. Para obter mais informações sobre mapeamentos, consulte [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também

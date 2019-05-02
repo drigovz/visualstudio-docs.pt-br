@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d375386da4d62117105bc732425a2678e0a48d0a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443491"
 ---
 # <a name="debug-sharepoint-solutions"></a>Depurar soluções do SharePoint
   Você pode depurar soluções do SharePoint usando o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] depurador. Quando você inicia a depuração, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] implanta os arquivos de projeto para o servidor do SharePoint e, em seguida, abre uma instância do site do SharePoint no navegador da Web. As seções a seguir explicam como depurar aplicativos do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Habilitando a depuração](#EnableDebug)
+- [Habilitar a depuração](#enable-debugging)
 
--   [Processo de implantação e depuração F5](#Deployment)
+- [Processo de implantação e depuração F5](#f5-debug-and-deployment-process)
 
--   [Recursos de projeto do SharePoint](#Features)
+- [Recursos de projeto do SharePoint](#sharepoint-project-features)
 
--   [Depurando fluxos de trabalho](#Workflow)
+- [Depurar fluxos de trabalho](#debug-workflows)
 
--   [Receptores de evento de depuração](#FeatureEvents)
+- [Receptores de evento de depuração](#debug-feature-event-receivers)
 
--   [Habilitar informações de depuração aprimoradas](#EnhancedDebug)
+- [Habilitar ehanced informações de depuração](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Habilitar a depuração
  Quando você depura uma solução do SharePoint no primeiro [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], uma caixa de diálogo alerta você que o arquivo Web. config não está configurado para habilitar a depuração. (O arquivo Web. config é criado quando você instala o SharePoint server. Para obter mais informações, consulte [trabalhando com arquivos Web. config](http://go.microsoft.com/fwlink/?LinkID=149266).) A caixa de diálogo lhe dá a opção de execução do projeto sem depuração ou modificando o arquivo Web. config para habilitar a depuração. Se você escolher a primeira opção, o projeto é executado normalmente. Se você escolher a segunda opção, o arquivo Web. config está configurado para:
@@ -77,11 +77,11 @@ ms.locfileid: "56640227"
 
  Para reverter as alterações e desabilitar a depuração, altere o seguinte [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] no arquivo Web. config:
 
--   Desativar a pilha de chamadas (`CallStack="false"`)
+- Desativar a pilha de chamadas (`CallStack="false"`)
 
--   Habilitar erros personalizados em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Habilitar erros personalizados em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Desabilitar a depuração de compilação (`<compilation debug="false">`)
+- Desabilitar a depuração de compilação (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Processo de implantação e depuração F5
  Quando você executa seu projeto do SharePoint no modo de depuração, o processo de implantação do SharePoint executa as seguintes tarefas:
@@ -103,7 +103,7 @@ ms.locfileid: "56640227"
 8. Para fluxos de trabalho, associa o fluxo de trabalho com a biblioteca do SharePoint, lista ou site que você selecionou na **Assistente para personalização do SharePoint**.
 
    > [!NOTE]
-   >  Essa associação ocorre somente se você selecionou **fluxo de trabalho associado automaticamente** no assistente.
+   > Essa associação ocorre somente se você selecionou **fluxo de trabalho associado automaticamente** no assistente.
 
 9. Executa os comandos de pós-implantação personalizáveis.
 
@@ -126,7 +126,7 @@ ms.locfileid: "56640227"
  Quando você depurar projetos de fluxo de trabalho, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] adiciona o modelo de fluxo de trabalho (dependendo do tipo) para uma biblioteca ou uma lista. Em seguida, você pode iniciar o modelo de fluxo de trabalho manualmente ou por adicionar ou atualizar um item. Você pode usar [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] para depurar o fluxo de trabalho.
 
 > [!NOTE]
->  Se você adicionar referências a outros assemblies, certifique-se de que esses assemblies são instalados no cache de assembly global ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Se você adicionar referências a outros assemblies, certifique-se de que esses assemblies são instalados no cache de assembly global ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Caso contrário, a solução de fluxo de trabalho falhará. Para obter informações sobre como instalar assemblies, consulte [iniciar manualmente um fluxo de trabalho em um documento ou item](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  No entanto, o processo de implantação não inicia o fluxo de trabalho. Você deve iniciar o fluxo de trabalho do site do SharePoint. Você também pode iniciar o fluxo de trabalho usando um aplicativo cliente como o Microsoft Office Word 2010 ou usando o código do lado do servidor separado. Use uma das abordagens especificadas na **Assistente para personalização do SharePoint**.
 
@@ -137,7 +137,7 @@ ms.locfileid: "56640227"
 
  Para desabilitar a ativação automática do recurso no SharePoint e permitir a depuração adequada de receptores de evento, defina o valor do projeto **configuração de implantação ativa** propriedade **sem ativação** antes de depurar. Em seguida, depois de começar a depurar seu aplicativo do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], manualmente ativar o recurso no SharePoint. Para ativar o recurso, abra o **ações do Site** menu no SharePoint, escolha **configurações de Site**, escolha o **gerenciar recursos de Site** vincular e, em seguida, escolha o **Activate** botão ao lado do recurso, para continuar a depuração como de costume.
 
-## <a name="enable-enhanced-debug-information"></a>Habilitar informações de depuração avançada
+## <a name="enable-enhanced-debugging-information"></a>Habilitar informações de depuração avançadas
  Devido a interações complexas, às vezes, entre o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo (devenv.exe), o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] processo de host do SharePoint (*vssphost4.exe*), SharePoint e a camada do WCF, diagnóstico de erros que ocorrem enquanto Compilando, implantando e assim por diante podem ser um desafio. Para ajudá-lo a resolver esses erros, você pode habilitar as informações de depuração aprimoradas. Para fazer isso, vá para a seguinte chave do registro no registro do Windows:
 
  **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools**

@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975262"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Como: Criar tipos usando o Designer de Classe
 
 Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-los em um diagrama de classe. Para ver os tipos existentes, confira [Como: Exibir tipos existentes](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Criar um novo tipo
+## <a name="CreateType"></a> Criar um novo tipo
 
-1.  Na **Caixa de Ferramentas**, no **Designer de Classe**, arraste um dos itens abaixo para um diagrama de classe:
+1. Na **Caixa de Ferramentas**, no **Designer de Classe**, arraste um dos itens abaixo para um diagrama de classe:
 
-    -   **Classe** ou **Classe Abstrata**
+    - **Classe** ou **Classe Abstrata**
 
-    -   **Enum**
+    - **Enum**
 
-    -   **Interface**
+    - **Interface**
 
-    -   **Estrutura** (VB) ou **Struct** (C#)
+    - **Estrutura** (VB) ou **Struct** (C#)
 
-    -   **Delegado**
+    - **Delegado**
 
-    -   **Módulo** (apenas VB)
+    - **Módulo** (apenas VB)
 
-2.  Dê um nome ao tipo. Selecione o nível de acesso.
+2. Dê um nome ao tipo. Selecione o nível de acesso.
 
-3.  Selecione o arquivo em que deseja adicionar o código inicial para o tipo:
+3. Selecione o arquivo em que deseja adicionar o código inicial para o tipo:
 
-    -   Para criar um novo arquivo e adicioná-lo ao projeto atual, selecione **Criar novo arquivo** e dê um nome ao arquivo.
+    - Para criar um novo arquivo e adicioná-lo ao projeto atual, selecione **Criar novo arquivo** e dê um nome ao arquivo.
 
-    -   Para adicionar código a um arquivo existente, selecione **Adicionar a arquivo existente**.
+    - Para adicionar código a um arquivo existente, selecione **Adicionar a arquivo existente**.
 
          Se sua solução tiver um projeto que compartilha código entre vários aplicativos, você poderá adicionar um novo tipo a um diagrama de classes no projeto do aplicativo, mas somente se o arquivo de classe correspondente estiver no mesmo projeto de aplicativo ou no projeto compartilhado.
 
-4.  Agora adicione outros itens para definir o tipo:
+4. Agora adicione outros itens para definir o tipo:
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
      Consulte [Criando membros](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Aplicar um atributo personalizado a um tipo
+## <a name="CustAttributeType"></a> Aplicar um atributo personalizado a um tipo
 
 1. Clique na forma do tipo em um diagrama de classes.
 
@@ -77,7 +77,7 @@ Para criar novos tipos para projetos em C# e Visual Basic, você precisa criá-l
 
    Os atributos personalizados são aplicados ao tipo.
 
-##  <a name="CustAttributeMember"></a> Aplicar um atributo personalizado a um membro de tipo
+## <a name="CustAttributeMember"></a> Aplicar um atributo personalizado a um membro de tipo
 
 1. Clique no nome do membro na forma de seu tipo em um diagrama de classes ou em sua linha na janela Detalhes da Classe.
 

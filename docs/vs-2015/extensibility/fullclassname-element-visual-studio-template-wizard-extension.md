@@ -1,14 +1,9 @@
 ---
 title: Elemento FullClassName (extensão de Assistente de modelo do Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#FullClassName
 helpviewer_keywords:
@@ -16,23 +11,23 @@ helpviewer_keywords:
 ms.assetid: 651e1010-d529-4856-85ff-c77ceca5d2ed
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e7de1984a10d80e5136a9a01a1e1dae8ee5226f9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: c6cd466a41c61da929e9acc1619f384a3621f9c0
+ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796760"
+ms.lasthandoff: 01/24/2019
+ms.locfileid: "58999898"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>Elemento FullClassName (Extensão do Assistente de Modelo do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O nome totalmente qualificado da classe que implementa o `IWizard` interface.  
   
- \<VSTemplate >  
+ \<VSTemplate>  
  \<WizardExtension >  
  ...  
- \<FullClassName >  
+ \<FullClassName>  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -97,5 +92,4 @@ O nome totalmente qualificado da classe que implementa o `IWizard` interface.
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
- [Como usar assistentes com modelos do projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
-
+ [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

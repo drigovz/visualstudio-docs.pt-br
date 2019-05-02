@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 584298725f2a57962ecd52c99fd1a745610ec336
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931304"
 ---
 # <a name="menu-commands"></a>Comandos de menu
 Os tópicos da Ajuda nesta seção listam os comandos disponíveis nos menus Spy + +.

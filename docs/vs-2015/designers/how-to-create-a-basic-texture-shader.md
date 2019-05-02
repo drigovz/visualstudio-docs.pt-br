@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dce20d3e1833659ebfec2e84e6bff7f86dff844e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438438"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Como criar um sombreador de textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
   
  Este documento demonstra essas atividades:  
   
--   Remover os nós de um grafo de sombreador  
+- Remover os nós de um grafo de sombreador  
   
--   Adicionar nós a um grafo  
+- Adicionar nós a um grafo  
   
--   Configurar parâmetros de sombreador  
+- Configurar parâmetros de sombreador  
   
--   Configurar visibilidade do parâmetro  
+- Configurar visibilidade do parâmetro  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="creating-a-basic-texture-shader"></a>Criar um sombreador de textura básico  
  Você pode implementar um sombreador de textura única básico ao gravar os valores de cor e valores alfa de uma amostra de textura diretamente na cor de saída final.  
@@ -59,7 +59,7 @@ Este documento demonstra como usar o Designer de Sombreador e a DGSL (Directed G
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um cubo.  
   
 > [!NOTE]
->  Nesta ilustração foi usado um plano como a forma de visualização e foi especificada uma textura para demonstrar melhor o efeito do sombreador.  
+> Nesta ilustração foi usado um plano como a forma de visualização e foi especificada uma textura para demonstrar melhor o efeito do sombreador.  
   
  ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-texture-effect.png "Digit-Texture-Effect")  
   

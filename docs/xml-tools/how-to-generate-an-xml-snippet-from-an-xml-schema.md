@@ -8,73 +8,73 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e8f9d984cabdb9e29ff1f5eac1734105d2a3e2f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001916"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um trecho XML a partir de um esquema XML
 
-O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de definição de esquema XML (XSD). Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar **guia** para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.
+O editor XML tem a capacidade de gerar trechos de código XML a partir de um esquema XSD (linguagem) de definição de esquema XML. Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar **guia** para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.
 
 Este recurso está disponível somente nos elementos. As seguintes regras também se aplicam:
 
--   O elemento deve ter um tipo associado de esquema; isto é, o elemento deve ser válido de acordo com qualquer esquema associado. O tipo de esquema não pode ser abstract e o tipo deve conter os atributos necessários e/ou os elementos filho necessários.
+- O elemento deve ter um tipo associado de esquema; isto é, o elemento deve ser válido de acordo com qualquer esquema associado. O tipo de esquema não pode ser abstract e o tipo deve conter os atributos necessários e/ou os elementos filho necessários.
 
--   O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos
+- O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos
 
-    -   `<Account`
+    - `<Account`
 
-    -   `<Account>`
+    - `<Account>`
 
-    -   `<Account></Account>`
+    - `<Account></Account>`
 
--   O cursor deve ser localizado imediatamente à direita do nome do elemento.
+- O cursor deve ser localizado imediatamente à direita do nome do elemento.
 
-O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de trecho.
+O snippet gerado contém todos os atributos e elementos necessários. Se `minOccurs` é maior de um, o número mínimo necessário de instâncias desse elemento é incluído no snippet, até um máximo de 100 instâncias. Todos os valores fixos encontrados no esquema levam a valores fixos no snippet. `xsd:any` e elementos de `xsd:anyAttribute` são ignorados e resultado nas compilações adicionais de snippet.
 
 Os valores padrão são gerados e observados como valores editáveis. Se o esquema especifica um valor padrão, esse valor padrão é usado. Entretanto, se o valor padrão de esquema é uma cadeia de caracteres vazia, o editor gerencia os valores padrão da seguinte maneira:
 
--   Se o tipo de esquema contém quaisquer facetas de enumeração, direta ou indiretamente por meio de alguns dos membros de um tipo de união, o primeiro valor enumerado encontrado no modelo de objeto de esquema é usado como o padrão.
+- Se o tipo de esquema contém quaisquer facetas de enumeração, direta ou indiretamente por meio de alguns dos membros de um tipo de união, o primeiro valor enumerado encontrado no modelo de objeto de esquema é usado como o padrão.
 
--   Se o tipo de esquema é um tipo atômico, o editor obtém o tipo atômico e insere o nome atômico de tipo. Para um tipo derivado simples usa o tipo simples base. Para um tipo de lista o tipo atômico é `itemType`. Para uma união atômico, o tipo é o tipo atômico de primeiro `memberType`.
+- Se o tipo de esquema é um tipo atômico, o editor obtém o tipo atômico e insere o nome atômico de tipo. Para um tipo derivado simples usa o tipo simples base. Para um tipo de lista o tipo atômico é `itemType`. Para uma união atômico, o tipo é o tipo atômico de primeiro `memberType`.
 
 ## <a name="example"></a>Exemplo
 
- As etapas nesta seção mostram como usar o recurso de trecho de código do XML de esquema gerado do Editor de XML.
+ As etapas nesta seção mostram como usar o recurso de trecho de código gerado pelo esquema XML do editor de XML.
 
 > [!NOTE]
 > Antes de iniciar estes procedimentos, salve o arquivo de esquema para o seu computador local.
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
-1.  Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.
+1. Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.
 
-2.  Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.
+2. Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3.  Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
+3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
 
      O **esquemas XSD** caixa de diálogo é exibida.
 
-4.  Clique em **Adicionar**.
+4. Clique em **Adicionar**.
 
      O **abrir esquema XSD** caixa de diálogo é exibida.
 
-5.  Selecione o arquivo de esquema e clique em **aberto**.
+5. Selecione o arquivo de esquema e clique em **aberto**.
 
-6.  Clique em **OK**.
+6. Clique em **OK**.
 
      O esquema XML agora está associado ao documento XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Para gerar um snippet XML
 
-1.  Tipo `<` no painel do editor.
+1. Tipo `<` no painel do editor.
 
-2.  A lista de membros exibe os itens possíveis:
+2. A lista de membros exibe os itens possíveis:
 
      **! –** para adicionar um comentário.
 
@@ -84,11 +84,11 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
      **Entre em contato com** para adicionar o elemento raiz.
 
-3.  Selecione **entre em contato com** na lista de membros e pressione **Enter**.
+3. Selecione **entre em contato com** na lista de membros e pressione **Enter**.
 
      O editor adiciona a tag de início `<Contact` e posicionar o cursor após o nome do elemento.
 
-4.  Pressione **guia** para gerar dados XML para o `Contact` elemento com base em suas informações de esquema.
+4. Pressione **guia** para gerar dados XML para o `Contact` elemento com base em suas informações de esquema.
 
 ## <a name="input"></a>Entrada
 

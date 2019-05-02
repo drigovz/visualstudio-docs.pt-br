@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990662"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Especificar tipos de rede virtual em um cenário de teste de carga
 
@@ -41,17 +41,17 @@ Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-networ
 
 O Visual Studio usa emulação de rede verdadeira baseada em software para todos os tipos de teste, inclusive testes de carga. A emulação de rede verdadeira simula condições de rede pela manipulação direta de pacotes de rede. O emulador real de rede pode emular o comportamento de redes com fio e sem fio usando um link físico confiável, como Ethernet. Os seguintes atributos de rede são incorporados na emulação de rede verdadeira:
 
--   O tempo da viagem de ida e volta pela rede (latência)
+- O tempo da viagem de ida e volta pela rede (latência)
 
--   A quantidade de largura de banda disponível
+- A quantidade de largura de banda disponível
 
--   Comportamento do enfileiramento
+- Comportamento do enfileiramento
 
--   Perda de pacote
+- Perda de pacote
 
--   Reordenação de pacotes
+- Reordenação de pacotes
 
--   Propagações de erros.
+- Propagações de erros.
 
 A emulação de rede verdadeira também fornece flexibilidade em pacotes de rede de filtragem com base em endereços IP ou em protocolos como TCP, UDP e ICMP.
 
@@ -59,30 +59,30 @@ A emulação de rede verdadeira pode ser usada por desenvolvedores e testadores 
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Para adicionar novas redes a um cenário
 
-1.  Durante o processo de especificar a combinação de redes para um cenário, escolha **Adicionar**.
+1. Durante o processo de especificar a combinação de redes para um cenário, escolha **Adicionar**.
 
      Uma nova entrada de rede é adicionada à grade.
 
     > [!NOTE]
     > Para exibir a caixa de diálogo **Editar combinação de redes**, clique com o botão direito do mouse em um cenário existente e escolha **Editar combinação de redes**.
 
-2.  Na coluna **Tipo de rede**, escolha a seta para a nova entrada. Escolha o tipo de rede desejado.
+2. Na coluna **Tipo de rede**, escolha a seta para a nova entrada. Escolha o tipo de rede desejado.
 
-3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Quando terminar de adicionar redes, escolha **OK**.
+4. Quando terminar de adicionar redes, escolha **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Para remover redes de um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Clique com o botão direito do mouse no cenário do qual deseja remover uma rede e escolha **Editar combinação de redes**. A caixa de diálogo **Editar combinação de redes** é exibida.
+2. Clique com o botão direito do mouse no cenário do qual deseja remover uma rede e escolha **Editar combinação de redes**. A caixa de diálogo **Editar combinação de redes** é exibida.
 
-3.  Selecione a rede na grade e escolha **Remover**.
+3. Selecione a rede na grade e escolha **Remover**.
 
-4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Quando terminar de remover redes, escolha **OK**.
+5. Quando terminar de remover redes, escolha **OK**.
 
 ## <a name="about-the-mix-control"></a>Sobre o controle misto
 

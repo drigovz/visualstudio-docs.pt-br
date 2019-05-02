@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um conjunto de dados com o Designer de Conjunto de Dados'
+title: 'Passo a passo: Criando um conjunto de dados com o Designer de conjunto de dados'
 ms.date: 09/11/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d706ab0cf179a4a4efefa8f60143ea8ce9800ef9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f91c24885cc6817889671dd7a1a6e7e1686ce93f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564994"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>Passo a passo: Criar um conjunto de dados com o Designer de conjunto de dados
 
@@ -28,9 +28,9 @@ Neste passo a passo, você cria um conjunto de dados usando o **Dataset Designer
 
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1.  Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte dos **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
+1. Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No instalador do Visual Studio, o SQL Server Express LocalDB pode ser instalado como parte dos **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
 
-2.  Instale o banco de dados de exemplo Northwind, seguindo estas etapas:
+2. Instale o banco de dados de exemplo Northwind, seguindo estas etapas:
 
     1. No Visual Studio, abra o **SQL Server Object Explorer** janela. (Pesquisador de objetos do SQL Server é instalado como parte dos **armazenamento de dados e processamento** carga de trabalho no instalador do Visual Studio.) Expanda o **SQL Server** nó. Clique com botão direito na instância do LocalDB e selecione **nova consulta**.
 
@@ -56,23 +56,23 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ## <a name="add-a-new-dataset-to-the-application"></a>Adicionar um novo conjunto de dados para o aplicativo
 
-1.  No menu **Projeto**, selecione **Adicionar Novo Item**.
+1. No menu **Projeto**, selecione **Adicionar Novo Item**.
 
      A caixa de diálogo **Adicionar Novo Item** é exibida.
 
-2.  No painel esquerdo, selecione **dados**, em seguida, selecione **conjunto de dados** no painel central.
+2. No painel esquerdo, selecione **dados**, em seguida, selecione **conjunto de dados** no painel central.
 
-3.  Nomeie o conjunto de dados **NorthwindDataset**e, em seguida, escolha **Add**.
+3. Nomeie o conjunto de dados **NorthwindDataset**e, em seguida, escolha **Add**.
 
      O Visual Studio adiciona um arquivo chamado **NorthwindDataSet** ao projeto e abre-o na **Dataset Designer**.
 
 ## <a name="create-a-data-connection-in-server-explorer"></a>Criar uma Conexão de dados no Gerenciador de servidores
 
-1.  Sobre o **modo de exibição** menu, clique em **Gerenciador de servidores**.
+1. Sobre o **modo de exibição** menu, clique em **Gerenciador de servidores**.
 
-2.  Na **Gerenciador de servidores**, clique no **conectar-se ao banco de dados** botão.
+2. Na **Gerenciador de servidores**, clique no **conectar-se ao banco de dados** botão.
 
-3.  Crie uma conexão ao banco de dados de exemplo Northwind.
+3. Crie uma conexão ao banco de dados de exemplo Northwind.
 
 ## <a name="create-the-tables-in-the-dataset"></a>Criar as tabelas no conjunto de dados
 
@@ -80,33 +80,33 @@ Esta seção explica como adicionar tabelas ao conjunto de dados.
 
 ### <a name="to-create-the-customers-table"></a>Para criar a tabela Customers
 
-1.  Expanda a conexão de dados que você criou na **Gerenciador de servidores**e, em seguida, expanda o **tabelas** nó.
+1. Expanda a conexão de dados que você criou na **Gerenciador de servidores**e, em seguida, expanda o **tabelas** nó.
 
-2.  Arraste o **clientes** tabela de **Gerenciador de servidores** até o **Dataset Designer**.
+2. Arraste o **clientes** tabela de **Gerenciador de servidores** até o **Dataset Designer**.
 
      Um **clientes** tabela de dados e **CustomersTableAdapter** são adicionados ao conjunto de dados.
 
 ### <a name="to-create-the-orders-table"></a>Para criar a tabela Orders
 
--   Arraste o **pedidos** tabela de **Gerenciador de servidores** para o **Dataset Designer**.
+- Arraste o **pedidos** tabela de **Gerenciador de servidores** para o **Dataset Designer**.
 
      Uma **pedidos** tabela de dados, **OrdersTableAdapter**e a relação de dados entre o **clientes** e **pedidos** tabelas são adicionadas à conjunto de dados.
 
 ### <a name="to-create-the-orderdetails-table"></a>Para criar a tabela OrderDetails
 
--   Arraste o **detalhes do pedido** tabela de **Gerenciador de servidores** até o **Dataset Designer**.
+- Arraste o **detalhes do pedido** tabela de **Gerenciador de servidores** até o **Dataset Designer**.
 
      Uma **detalhes do pedido** tabela de dados **OrderDetailsTableAdapter**e uma relação de dados entre o **pedidos** e **OrderDetails** tabelas são adicionadas ao conjunto de dados.
 
 ## <a name="next-steps"></a>Próximas etapas
 
--   Salve o conjunto de dados.
+- Salve o conjunto de dados.
 
--   Selecione os itens na **fontes de dados** janela e arrastá-los para um formulário. Para obter mais informações, consulte [controles de ligar o Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
+- Selecione os itens na **fontes de dados** janela e arrastá-los para um formulário. Para obter mais informações, consulte [controles de ligar o Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).
 
--   Adicione mais consultas para os TableAdapters.
+- Adicione mais consultas para os TableAdapters.
 
--   Adicionar lógica de validação para o <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> eventos das tabelas de dados no conjunto de dados. Para obter mais informações, consulte [validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md).
+- Adicionar lógica de validação para o <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> eventos das tabelas de dados no conjunto de dados. Para obter mais informações, consulte [validar dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md).
 
 ## <a name="see-also"></a>Consulte também
 

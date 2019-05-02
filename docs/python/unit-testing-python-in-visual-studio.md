@@ -3,19 +3,19 @@ title: Teste de unidade do código Python
 description: A configuração do teste de unidade para o código Python no Visual Studio aproveita ao máximo as funcionalidades do Gerenciador de Testes para descobrir, executar e depurar testes.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3290c091cd406bdf21aa841fc6148c9c2f6cd5b0
-ms.sourcegitcommit: 34940a18f5b03a59567f54c7024a0b16d4272f1e
+ms.openlocfilehash: e16612287d1efa76b206de50c6af9f18edab7c8a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56155975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002891"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>Configurar o teste de unidade para o código do Python
 
@@ -86,7 +86,7 @@ Para iniciar a depuração, defina um ponto de interrupção inicial no código,
 
 ![Depurando um teste](media/unit-test-debugging.png)
 
-Também é possível usar os comandos **Analisar Cobertura de Código nos Testes Selecionados** e **Teste de Perfil**, dependendo da versão do Visual Studio (consulte a [Matriz de recursos](overview-of-python-tools-for-visual-studio.md#features-matrix)).
+Também é possível usar os comandos **Analisar Cobertura de Código nos Testes Selecionados** e **Teste de Perfil**.
 
 ### <a name="known-issues"></a>Problemas conhecidos
 

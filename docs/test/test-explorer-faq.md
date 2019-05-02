@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 022ca2d1365d947d9eaa89e5bedddcf1b0f2a2e6
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429438"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 
@@ -27,71 +27,71 @@ ms.locfileid: "56318310"
 
 **O Gerenciador de Testes não está detectando meus testes definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como faço para descobrir estes testes?**
 
-  Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Teste**.
+Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Teste**.
 
-  A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Um build é necessário para que esses testes sejam localizados com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a detecção de testes em tempo real localiza o máximo de testes possível enquanto você está editando e a descoberta baseada em assembly permite que os testes definidos dinamicamente apareçam após um build. A detecção de testes em tempo real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após um build.
+A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Um build é necessário para que esses testes sejam localizados com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a detecção de testes em tempo real localiza o máximo de testes possível enquanto você está editando e a descoberta baseada em assembly permite que os testes definidos dinamicamente apareçam após um build. A detecção de testes em tempo real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após um build.
 
 ## <a name="test-explorer--plus-symbol"></a>Sinal de "+" (adição) do Gerenciador de Testes
 
 **O que significa o "+" (sinal de adição) exibido na linha superior do Gerenciador de Testes?**
 
-  O '+' (sinal de adição) indica que mais testes poderão ser detectados após um build se a detecção baseada em assembly estiver ativada. Esse símbolo será exibido quando forem detectados testes definidos dinamicamente no projeto.
+O '+' (sinal de adição) indica que mais testes poderão ser detectados após um build se a detecção baseada em assembly estiver ativada. Esse símbolo será exibido quando forem detectados testes definidos dinamicamente no projeto.
 
-  ![Linha de resumo do sinal de adição](media/testex-plussymbol.png)
+![Linha de resumo do sinal de adição](media/testex-plussymbol.png)
 
 ## <a name="assembly-based-discovery"></a>Descoberta baseada em assembly
 
 **A descoberta baseada em assembly não está mais funcionando no meu projeto. Como faço para ativá-la novamente?**
 
-  Acesse **Ferramentas** > **Opções** > **Teste** e marque a caixa **Adicionalmente, descobrir testes de assemblies compilados após builds.**
+Acesse **Ferramentas** > **Opções** > **Teste** e marque a caixa **Adicionalmente, descobrir testes de assemblies compilados após builds.**
 
-  ![Opção baseada em assembly](media/testex-toolsoptions.png)
+![Opção baseada em assembly](media/testex-toolsoptions.png)
 
 ## <a name="real-time-test-discovery"></a>Detecção de testes em tempo real
 
 **Agora os testes são exibidos no Gerenciador de Testes enquanto digito, sem a necessidade de compilar o projeto. O que mudou?**
 
-  Esse recurso é chamado de [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira a Pergunta frequente nº 1.
+Esse recurso é chamado de [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira a Pergunta frequente nº 1.
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidade da detecção de testes em tempo real
 
 **Quais linguagens e estruturas de teste podem usar a detecção de testes em tempo real?**
 
-  A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) só funciona em linguagens gerenciadas (C# e Visual Basic), pois é compilada com o compilador Roslyn. Por enquanto, a detecção de testes em tempo real só funciona para as estruturas xUnit, NUnit e MSTest.
+A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) só funciona em linguagens gerenciadas (C# e Visual Basic), pois é compilada com o compilador Roslyn. Por enquanto, a detecção de testes em tempo real só funciona para as estruturas xUnit, NUnit e MSTest.
 
 ## <a name="test-explorer-logs"></a>Logs do Gerenciador de Testes
 
 **Como faço para ativar logs no Gerenciador de Testes?**
 
-  Navegue para **Ferramentas** > **Opções** > **Teste** e localize a seção Log.
+Navegue para **Ferramentas** > **Opções** > **Teste** e localize a seção Log.
 
 ## <a name="uwp-test-discovery"></a>Detecção de testes da UWP
 
 **Por que meus testes em projetos UWP não são detectados enquanto eu não implanto o aplicativo?**
 
-  Os testes UWP têm como destino um tempo de execução diferente quando o aplicativo é implantado. Isso significa que para encontrar testes com precisão em projetos UWP, além de compilar seu projeto, você também precisa implantá-lo.
+Os testes UWP têm como destino um tempo de execução diferente quando o aplicativo é implantado. Isso significa que para encontrar testes com precisão em projetos UWP, além de compilar seu projeto, você também precisa implantá-lo.
 
 ## <a name="test-explorer-sorting"></a>Classificação do Gerenciador de Testes
 
 **Como funciona a classificação de resultados de teste no modo de exibição de hierarquia?**
 
-  O modo de exibição de hierarquia classifica os testes em ordem alfabética e não por resultado. As outras configurações de agrupamento normalmente classificam os resultados de teste por resultado e, em seguida, em ordem alfabética. Veja o grupo diferente pelas opções na imagem a seguir para comparação. Você pode fornecer comentários sobre o design [neste assunto do GitHub](https://github.com/Microsoft/vstest/issues/1425).
+O modo de exibição de hierarquia classifica os testes em ordem alfabética e não por resultado. As outras configurações de agrupamento normalmente classificam os resultados de teste por resultado e, em seguida, em ordem alfabética. Veja o grupo diferente pelas opções na imagem a seguir para comparação. Você pode fornecer comentários sobre o design [neste assunto do GitHub](https://github.com/Microsoft/vstest/issues/1425).
 
-  ![SortingExamples](media/testex-sortingex.png)
+![SortingExamples](media/testex-sortingex.png)
 
 ## <a name="test-explorer-hierarchy-view"></a>Modo de exibição da hierarquia do Gerenciador de Testes
 
 **No modo de exibição de hierarquia, há ícones passados, com falha, ignorados e não executados ao lado dos agrupamentos Projeto, Namespace e Classe. O que esses ícones significam?**
 
-  Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe mostram o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
+Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe mostram o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
-  ![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
+![Ícones de Hierarquia do Gerenciador de Testes](media/testex-hierarchyicons.png)
 
 ## <a name="search-by-file-path"></a>Pesquisar por caminho do arquivo
 
 **Não existe mais um filtro de "caminho do arquivo" na caixa de pesquisa do Gerenciador de Testes.**
 
-O filtro de caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida na versão prévia 3 da versão 15.7 do Visual Studio 2017. Esse recurso tinha pouco uso e o Gerenciador de Testes consegue recuperar os métodos de teste com mais rapidez ao excluir esse recurso. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
+O filtro do caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes** foi removida do Visual Studio 2017 versão 15.7. Essa funcionalidade tinha pouco uso e o Gerenciador de Testes pode recuperar métodos de teste com mais rapidez excluindo essa funcionalidade. Se essa alteração interromper seu fluxo de desenvolvimento, informe-nos enviando comentários na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/).
 
 ## <a name="remove-undocumented-interfaces"></a>Remover interfaces não documentadas
 
@@ -112,15 +112,15 @@ Em vez de usar extensões do adaptador de teste, os projetos são solicitados a 
 > [!NOTE]
 > Se estiver usando o Adaptador de teste NUnit 2 e não puder migrar para o adaptador de teste NUnit 3, você poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15.8 em **Ferramentas** > **Opções** > **Teste**.
 
-  ![Comportamento do Adaptador do Gerenciador de Testes nas opções de ferramentas](media/testex-adapterbehavior.png)
+![Comportamento do Adaptador do Gerenciador de Testes nas opções de ferramentas](media/testex-adapterbehavior.png)
 
 ## <a name="uwp-testcontainer-was-not-found"></a>O TestContainer do UWP não foi encontrado
 
-**Meus testes do UWP não estão mais sendo executadas no Visual Studio 2017 versão 15.7 e posteriores.**
+**Meus testes do UWP não estão mais sendo executados no Visual Studio 2017 versão 15.7 e posterior.**
 
 Projetos de teste do UWP recentes especificam uma propriedade de build da plataforma de teste que permite um melhor desempenho para identificar aplicativos de teste. Se um projeto de teste da UWP for inicializado antes do Visual Studio versão 15.7, o seguinte erro poderá aparecer em **Saída** > **Testes**:
 
-**System.AggregateException: Um ou mais erros ocorreram. ---> System.InvalidOperationException: O seguinte TestContainer não foi encontrado {} em Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider <GetTestContainerAsync>d__61.MoveNext()**
+**System.AggregateException: Um ou mais erros ocorreram. ---> System.InvalidOperationException: O seguinte TestContainer não foi encontrado {} em Microsoft.VisualStudio.TestWindow.Controller.TestContainerProvider \<GetTestContainerAsync>d__61.MoveNext()**
 
 Para corrigir esse erro:
 

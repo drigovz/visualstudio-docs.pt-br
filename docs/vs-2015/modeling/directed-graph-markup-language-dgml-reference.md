@@ -1,23 +1,20 @@
 ---
 title: Direcionado a referência de Graph Markup Language (DGML) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 ms.assetid: cc3e4ae7-60fa-4e22-9227-98020b480b73
 caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: f352d87975bf2c9705b348b465215a0a9fe72f2a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51790884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442994"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +24,9 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
  Observe que algumas versões do Visual Studio suporta apenas um subconjunto dos recursos DGML, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte [cores classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte [cores classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Sintaxe DGML  
+## <a name="DGML"></a> Sintaxe DGML  
  A tabela a seguir descreve os tipos de elementos que são usados em DGML:  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -73,7 +70,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
    Esse elemento opcional contém uma lista de `<Node/>` elementos, que definem nós no mapa. Para obter mais informações, consulte o elemento `<Node/>`.  
   
   > [!NOTE]
-  >  Quando você faz referência a um nó indefinido em um `<Link/>` o mapa de elemento, cria um `<Node/>` elemento automaticamente.  
+  > Quando você faz referência a um nó indefinido em um `<Link/>` o mapa de elemento, cria um `<Node/>` elemento automaticamente.  
   
    Exemplo:  
   
@@ -154,7 +151,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
    Esse elemento define um único link que conecta um nó de origem a um nó de destino. Ele é exibido na lista de elementos `<Links></Links>`.  
   
   > [!NOTE]
-  >  Se esse elemento fizer referência a um nó indefinido, o documento de mapa cria automaticamente um nó que possui os atributos especificados, se houver.  
+  > Se esse elemento fizer referência a um nó indefinido, o documento de mapa cria automaticamente um nó que possui os atributos especificados, se houver.  
   
    Esse elemento deve incluir os seguintes atributos:  
   
@@ -305,7 +302,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Aliases para caminhos mais usados  
+### <a name="AddAlias"></a> Aliases para caminhos mais usados  
  A substituição dos caminhos mais usados por aliases ajuda a reduzir o tamanho do arquivo .dgml e o tempo necessário para carregar ou salvar o arquivo. Para criar um alias, adicione uma seção `<Paths></Paths>` ao final do arquivo .dgml. Nesta seção, adicione um elemento `<Path/>` para definir um alias para o caminho:  
   
 ```xml  
@@ -329,6 +326,3 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
  [Mapear dependências em suas soluções](../modeling/map-dependencies-across-your-solutions.md)   
  [Usar mapas de códigos para depurar seus aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)   
  [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
-
-
-

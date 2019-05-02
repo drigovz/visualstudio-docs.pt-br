@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb1b1c1d79bab15baa8e8afcab719b3081e7265b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1d6e7c2536b7c5556139ce7a9b56756e20fd3648
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911915"
 ---
 # <a name="how-to-clear-the-undo-stack"></a>Como: Limpar a pilha de desfazer
 O procedimento a seguir explica como limpar a pilha de desfazer.
 
 ## <a name="to-clear-the-undo-stack"></a>Para limpar a pilha de desfazer
 
-1.  Para limpar o uso da pilha de desfazer a [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este é um exemplo disso:
+1. Para limpar o uso da pilha de desfazer a [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este é um exemplo disso:
 
     ```
     HRESULT CCmdWindow::ClearUndoStack()

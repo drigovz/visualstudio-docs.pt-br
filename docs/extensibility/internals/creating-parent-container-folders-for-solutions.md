@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b9b48cb7862b23df325b35bba0cb3e197573e3c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910552"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner para soluções de pai
 No código-fonte controle plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).
@@ -35,14 +35,13 @@ No código-fonte controle plug-in API versão 1.2, um usuário pode especificar 
 
  O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE quase sempre cria uma pasta SUR ao adicionar uma solução ao controle de origem. Especificamente, isso é feito nos seguintes casos:
 
--   O projeto é um projeto de web de compartilhamento de arquivo.
+- O projeto é um projeto de web de compartilhamento de arquivo.
 
--   Existem diferentes unidades para o projeto e o arquivo de solução.
+- Existem diferentes unidades para o projeto e o arquivo de solução.
 
--   Não há compartilhamento diferente para o projeto e o arquivo de solução.
+- Não há compartilhamento diferente para o projeto e o arquivo de solução.
 
--   Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).
-
+- Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).
 
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.
 

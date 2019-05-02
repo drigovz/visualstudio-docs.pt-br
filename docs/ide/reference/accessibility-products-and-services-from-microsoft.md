@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02b35ff8325c6cb155d54a2ada6bf6f7d63dc341
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793078"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 
@@ -33,18 +33,18 @@ ms.locfileid: "56318622"
 
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Os tópicos a seguir fornecem informações sobre os recursos, os produtos e os serviços que tornam o Microsoft Windows mais acessível para pessoas portadoras de deficiências:
 
--   [Recursos de acessibilidade do Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
+- [Recursos de acessibilidade do Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)
 
--   [Documentação em formatos alternativos](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
+- [Documentação em formatos alternativos](../../ide/reference/accessibility-products-and-services-from-microsoft.md#altfortmats)
 
--   [Atendimento ao cliente para pessoas com deficiências auditivas](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
+- [Atendimento ao cliente para pessoas com deficiências auditivas](../../ide/reference/accessibility-products-and-services-from-microsoft.md#hearing)
 
--   [Para obter mais informações](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
+- [Para obter mais informações](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)
 
 > [!NOTE]
 > As informações nesta seção somente podem ser aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver adquirido este produto fora dos Estados Unidos, use o cartão de informações da subsidiária que acompanha seu pacote de software ou acesse o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) para obter uma lista dos telefones e dos endereços dos serviços de Suporte da Microsoft. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.
 
-##  <a name="windows"></a> Recursos de acessibilidade do Windows
+## <a name="windows"></a> Recursos de acessibilidade do Windows
 
  O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -60,7 +60,7 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 
  Se você usar a tecnologia assistencial, contate o fornecedor dessa tecnologia antes de atualizar o software ou o hardware para verificar possíveis problemas de compatibilidade.
 
-##  <a name="altfortmats"></a> Documentação em formatos alternativos
+## <a name="altfortmats"></a> Documentação em formatos alternativos
 
 Se você tiver dificuldade para ler ou manipular materiais impressos, poderá obter a documentação de muitos produtos Microsoft em formatos mais acessíveis. É possível exibir um índice da documentação de produto acessível no site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
@@ -72,7 +72,7 @@ Além disso, é possível obter mais publicações da Microsoft junto à Learnin
 
 Endereços Web podem mudar, portanto, talvez você não consiga se conectar ao site ou aos sites mencionados aqui.
 
-##  <a name="hearing"></a> Atendimento ao cliente para pessoas com deficiências auditivas
+## <a name="hearing"></a> Atendimento ao cliente para pessoas com deficiências auditivas
 
 Se você for deficiente auditivo ou tiver algum tipo de deficiência auditiva, o acesso completo aos produtos da Microsoft e ao atendimento ao cliente estará disponível por meio de um serviço de telefone de texto (TTY/TDD):
 
@@ -82,7 +82,7 @@ Se você for deficiente auditivo ou tiver algum tipo de deficiência auditiva, o
 
 Os Microsoft Support Services estão sujeitos aos preços, termos e condições em vigor no momento em que o serviço é usado.
 
-##  <a name="moreinfo"></a> Para obter mais informações
+## <a name="moreinfo"></a> Para obter mais informações
 
 Para obter mais informações sobre como a tecnologia acessível para computadores ajuda a melhorar as vidas das pessoas com deficiências, consulte o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 

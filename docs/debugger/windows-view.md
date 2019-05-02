@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689545"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900847"
 ---
 # <a name="windows-view"></a>Exibição de janelas
 Quando você abre pela primeira vez Spy + +, o modo de exibição do Windows exibe uma árvore de todas as janelas e controles no sistema. O nome de classe e de identificador de janela são mostrados. A janela da área de trabalho atual está no topo da árvore. Todas as outras janelas são filhos da área de trabalho e são listadas de acordo com a hierarquia de janela padrão. Janelas irmãs aparecem nas listas expansible recuadas abaixo de seus pais.
@@ -31,11 +31,11 @@ Quando você abre pela primeira vez Spy + +, o modo de exibição do Windows exi
  Quando o modo de exibição do Windows tem o foco, você pode usar a ferramenta de localização na [caixa de diálogo de pesquisa de janela](../debugger/window-search-dialog-box.md) para exibir informações de qualquer janela aberta em seu sistema.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: usar a ferramenta localizador](../debugger/how-to-use-the-finder-tool.md) mostra como essa ferramenta examina o windows para as propriedades ou mensagens.
+ [Como: Usar a ferramenta localizador](../debugger/how-to-use-the-finder-tool.md) mostra como essa ferramenta examina o windows para as propriedades ou mensagens.
 
- [Como: procurar uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explica como localizar uma janela específica no modo de exibição do Windows.
+ [Como: Pesquisar por uma janela no modo de exibição do Windows](../debugger/how-to-search-for-a-window-in-windows-view.md) explica como localizar uma janela específica no modo de exibição do Windows.
 
- [Como: propriedades da janela de exibição](../debugger/how-to-display-window-properties.md) m procedimentos para abrir a caixa de diálogo Propriedades da janela.
+ [Como: Exibir propriedades da janela](../debugger/how-to-display-window-properties.md) m procedimentos para abrir a caixa de diálogo Propriedades da janela.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Exibições do Spy + +](../debugger/spy-increment-views.md) explica as exibições de árvore do Spy + + do windows, as mensagens, processos e threads.

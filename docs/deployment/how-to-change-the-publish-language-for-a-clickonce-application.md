@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 88114080b8de02b3aaba52b0a48fd09d58ec5818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406648"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Como: Alterar o idioma de publicação de um aplicativo ClickOnce
 
@@ -30,19 +30,19 @@ Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
 O `Publish language` propriedade pode ser definida **opções de publicação** caixa de diálogo, acessível a partir o **publicar** página do **Designer de projeto**.
 
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../ide/environment-settings.md#reset-settings).
 
 ## <a name="to-change-the-publish-language"></a>Para alterar o idioma de publicação
 
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2.  Clique o **publicar** guia.
+2. Clique o **publicar** guia.
 
-3.  Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.
+3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.
 
-4.  Clique em **descrição**.
+4. Clique em **descrição**.
 
-5.  No **opções de publicação** diálogo caixa, selecione um idioma e cultura da **linguagem de publicação** lista suspensa e clique **Okey**.
+5. No **opções de publicação** diálogo caixa, selecione um idioma e cultura da **linguagem de publicação** lista suspensa e clique **Okey**.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3388e275385f94b4fcd9a1f0091de6ada2d85108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406067"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixar assemblies sob demanda com a implantação do ClickOnce usando o Designer de API
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, pode haver partes do seu aplicativo que são usados por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime requê-los.
@@ -40,7 +40,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 1. Criar um novo projeto Windows Forms no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**. Escolha uma **biblioteca de classes** na caixa de diálogo do projeto e nomeie-o `ClickOnceLibrary`.
 
    > [!NOTE]
-   >  No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão no mesmo namespace.
+   > No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão no mesmo namespace.
 
 2. Definir uma classe denominada `DynamicClass` com uma única propriedade chamada `Message`.
 
@@ -50,7 +50,7 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 3. Selecione o projeto de formulários do Windows no **Gerenciador de soluções**. Adicione uma referência para o <xref:System.Deployment.Application> referenciarem de assembly e um projeto para o `ClickOnceLibrary` projeto.
 
    > [!NOTE]
-   >  No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão localizados no mesmo namespace.
+   > No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão localizados no mesmo namespace.
 
 4. Clique com botão direito do formulário, clique em **Exibir código** no menu e adicione as seguintes referências ao formulário.
 
@@ -71,15 +71,15 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Visual Studio
 
-1.  Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.
+1. Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.
 
-2.  Clique o **arquivos de aplicativo** botão.
+2. Clique o **arquivos de aplicativo** botão.
 
-3.  Localize a listagem para *ClickOnceLibrary.dll*. Definir a **Status da publicação** caixa de lista suspensa **Include**.
+3. Localize a listagem para *ClickOnceLibrary.dll*. Definir a **Status da publicação** caixa de lista suspensa **Include**.
 
-4.  Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.
+4. Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.
 
-5.  Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Manifest Generation and Editing Tool, cliente gráfico (MageUI.exe)
 

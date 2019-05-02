@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897658"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: capturando informações de gráficos
+# <a name="walkthrough-capturing-graphics-information"></a>Passo a passo: Capturando informações de gráficos
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para capturar manualmente as informações gráficas de um aplicativo Direct3D.
 
  Este passo a passo ilustra essas tarefas:
 
--   Vinculando o diagnóstico de gráficos para seu aplicativo
+- Vinculando o diagnóstico de gráficos para seu aplicativo
 
--   Capturando informações de gráficos
+- Capturando informações de gráficos
 
 ## <a name="capturing-graphics-information"></a>Capturando informações de gráficos
  Para usar as ferramentas de diagnóstico de gráficos, primeiro, você precisa capturar as informações gráficas nas quais ele confia. Para habilitar a captura, use o **iniciar diagnóstico** comando para conectar o diagnóstico de gráficos para seu aplicativo quando ele é iniciado.
@@ -56,7 +56,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/in
 ## <a name="next-steps"></a>Próximas etapas
  Este passo a passo demonstrou como capturar informações gráficas manualmente. Como próxima etapa, considere esta opção:
 
--   Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
+- Aprenda a analisar informações gráficas capturadas usando as ferramentas de diagnóstico de gráficos. Ver [visão geral](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Capturando informações de gráficos](capturing-graphics-information.md)

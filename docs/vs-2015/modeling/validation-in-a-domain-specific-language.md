@@ -1,12 +1,9 @@
 ---
 title: Validação em uma linguagem específica do domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, constraints
 - Domain-Specific Language, validation
@@ -14,13 +11,13 @@ ms.assetid: 65b93df8-af3c-462b-904c-60292f8ed381
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 30a29c9b8921d72f717aea21ed202766f0874389
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49950778"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437468"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +29,7 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
  A validação é especialmente importante quando você escreve modelos de texto ou outras ferramentas que processam modelos dos seus usuários. A validação assegura que os modelos atendam as pré-condições presumidas por essas ferramentas.  
   
 > [!WARNING]
->  Você também pode permitir que restrições de validação sejam definidas em extensões separadas para a sua DSL, com os comandos de menu e manipuladores de gestos de extensão. Os usuários podem optar por instalar essas extensões além da sua DSL. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> Você também pode permitir que restrições de validação sejam definidas em extensões separadas para a sua DSL, com os comandos de menu e manipuladores de gestos de extensão. Os usuários podem optar por instalar essas extensões além da sua DSL. Para obter mais informações, consulte [estender a DSL usando MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Executando a validação  
  Quando um usuário está editando um modelo, ou seja, uma instância da sua linguagem específica de domínio, as seguintes ações podem executar a validação:  
@@ -55,19 +52,19 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
  Cada método de validação relata os erros que encontra.  
   
 > [!NOTE]
->  Os métodos de validação relatam erros, mas não alteram o modelo. Se você quiser ajustar ou evitar certas alterações, consulte [alternativas de validação](#alternatives).  
+> Os métodos de validação relatam erros, mas não alteram o modelo. Se você quiser ajustar ou evitar certas alterações, consulte [alternativas de validação](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Para definir uma restrição de validação  
   
 1. Habilitar a validação na **Editor \ validação** nó:  
   
-   1.  Abra **Dsl\DslDefinition.dsl**.  
+   1. Abra **Dsl\DslDefinition.dsl**.  
   
-   2.  No DSL Explorer, expanda o **Editor** nó e selecione **validação**.  
+   2. No DSL Explorer, expanda o **Editor** nó e selecione **validação**.  
   
-   3.  Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.  
+   3. Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.  
   
-   4.  Clique em **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções.  
+   4. Clique em **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções.  
   
 2. Escreva definições de classe parciais para uma ou mais de suas classes de domínio ou relações de domínio. Escreva essas definições em um novo arquivo de código na **Dsl** projeto.  
   
@@ -77,7 +74,7 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.  
+   - Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.  
   
 4. Adicione métodos de validação às classes. Cada método de validação pode ter qualquer nome, mas tem um parâmetro do tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -221,7 +218,7 @@ partial class MyLanguageCommandSet
   
 ```  
   
- Para obter mais informações, consulte [como: adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+ Para obter mais informações, confira [Como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
  Você também pode criar um controlador de validação independente e gerenciar os erros. Por exemplo:  
   
@@ -307,7 +304,7 @@ namespace Company.FamilyTree
   
  Os manipuladores também são chamados depois de operações Undo ou Redo que afetam os links ou elementos.  
   
-##  <a name="custom"></a> Categorias de validação personalizadas  
+## <a name="custom"></a> Categorias de validação personalizadas  
  Além das categorias de validação padrão, como Menu e Open, você pode definir suas próprias categorias. Você pode invocar essas categorias do código do programa. O usuário não pode invocá-las diretamente.  
   
  Um uso típico de categorias personalizadas é definir uma categoria que teste se o modelo satisfaz as pré-condições de uma ferramenta específica.  
@@ -323,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Você pode prefixar um método com a quantidade de atributos `[ValidationMethod()]` você desejar. Você pode adicionar um método a categorias personalizadas e padrão.  
+> Você pode prefixar um método com a quantidade de atributos `[ValidationMethod()]` você desejar. Você pode adicionar um método a categorias personalizadas e padrão.  
   
  Para invocar a validação personalizada:  
   
@@ -335,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternativas de validação  
+## <a name="alternatives"></a> Alternativas de validação  
  As restrições de validação relatam erros, mas não alteram o modelo. Se, ao contrário, você deseja evitar que o modelo se torne inválido, você pode usar outras técnicas.  
   
  No entanto, essas técnicas não são recomendadas. Normalmente, é melhor deixar que o usuário decida como corrigir um modelo inválido.  
@@ -345,11 +342,8 @@ validationController.ValidateCustom
  **Reverta a transação se uma alteração inválida é tentada.** Você também pode definir uma regra para essa finalidade, mas em alguns casos, é possível substituir um manipulador de propriedade **Onvaluechanging**, ou substituir um método, como `OnDeleted().` para reverter uma transação, use `this.Store.TransactionManager.CurrentTransaction.Rollback().` para obter mais informações obter informações, consulte [manipuladores de alteração de valor de propriedade de domínio](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Verifique se o usuário sabe que a alteração foi ajustada ou revertida. Por exemplo, use `System.Windows.Forms.MessageBox.Show("message").`  
+> Verifique se o usuário sabe que a alteração foi ajustada ou revertida. Por exemplo, use `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Consulte também  
  [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Manipuladores de eventos propagam alterações fora do modelo](../modeling/event-handlers-propagate-changes-outside-the-model.md)
-
-
-

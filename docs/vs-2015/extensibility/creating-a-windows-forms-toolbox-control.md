@@ -1,14 +1,9 @@
 ---
 title: Criando um Windows Forms o controle de caixa de ferramentas | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - winforms
 - toolbox
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 371fd4269cee5918bd0d0b623eb49e1f709a311d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51781706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082211"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Criando um controle de caixa de ferramentas do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,26 +32,26 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
 #### <a name="create-an-extension-with-a-windows-forms-toolbox-control"></a>Criar uma extensão com um controle de caixa de ferramentas do Windows Forms  
   
-1.  Crie um projeto do VSIX chamado `MyWinFormsControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Crie um projeto do VSIX chamado `MyWinFormsControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
   
-2.  Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do Windows Forms** modelo de item chamado `Counter`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **controle de caixa de ferramentas do Windows Forms**  
+2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do Windows Forms** modelo de item chamado `Counter`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **controle de caixa de ferramentas do Windows Forms**  
   
-3.  Isso adiciona um controle de usuário, uma `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para posicionar o controle na **caixa de ferramentas**e um **Microsoft.VisualStudio.ToolboxControl** entrada de ativo no manifesto do VSIX para implantação.  
+3. Isso adiciona um controle de usuário, uma `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> para posicionar o controle na **caixa de ferramentas**e um **Microsoft.VisualStudio.ToolboxControl** entrada de ativo no manifesto do VSIX para implantação.  
   
 ### <a name="building-a-user-interface-for-the-control"></a>Criando uma Interface do usuário para o controle  
  O `Counter` controle requer dois controles filho: uma <xref:System.Windows.Forms.Label> para exibir a contagem atual e um <xref:System.Windows.Forms.Button> para redefinir a contagem como 0. Nenhum outro controle filho é necessário porque chamadores incrementará o contador de forma programática.  
   
 ##### <a name="to-build-the-user-interface"></a>Para criar a interface do usuário  
   
-1.  Na **Gerenciador de soluções**, clique duas vezes em Counter.cs para abri-lo no designer.  
+1. Na **Gerenciador de soluções**, clique duas vezes em Counter.cs para abri-lo no designer.  
   
-2.  Remova o "Clique aqui!" **Botão** que está incluído por padrão quando você adiciona o modelo de item de controle de caixa de ferramentas do Windows Forms.  
+2. Remova o "Clique aqui!" **Botão** que está incluído por padrão quando você adiciona o modelo de item de controle de caixa de ferramentas do Windows Forms.  
   
-3.  Dos **caixa de ferramentas**, arraste um `Label` controle e, em seguida, um `Button` controle abaixo dele para a superfície de design.  
+3. Dos **caixa de ferramentas**, arraste um `Label` controle e, em seguida, um `Button` controle abaixo dele para a superfície de design.  
   
-4.  Redimensionar o controle de usuário geral para 150, 50 pixels e redimensionar o botão de controle como 50, 20 pixels.  
+4. Redimensionar o controle de usuário geral para 150, 50 pixels e redimensionar o botão de controle como 50, 20 pixels.  
   
-5.  No **propriedades** janela, defina os seguintes valores para os controles na superfície de design.  
+5. No **propriedades** janela, defina os seguintes valores para os controles na superfície de design.  
   
     |Controle|Propriedade|Valor|  
     |-------------|--------------|-----------|  
@@ -69,16 +64,16 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
 ##### <a name="to-code-the-user-control"></a>Codificar o controle de usuário  
   
-1.  Clique duas vezes no formulário para abrir seu manipulador de eventos de carga na janela de código.  
+1. Clique duas vezes no formulário para abrir seu manipulador de eventos de carga na janela de código.  
   
-2.  Acima do método de manipulador de eventos na classe de controle, crie um número inteiro para armazenar o valor do contador e uma cadeia de caracteres para armazenar o texto de exibição, conforme mostrado no exemplo a seguir.  
+2. Acima do método de manipulador de eventos na classe de controle, crie um número inteiro para armazenar o valor do contador e uma cadeia de caracteres para armazenar o texto de exibição, conforme mostrado no exemplo a seguir.  
   
     ```csharp  
     int currentValue;  
     string displayText;  
     ```  
   
-3.  Crie as seguintes declarações de propriedade pública.  
+3. Crie as seguintes declarações de propriedade pública.  
   
     ```csharp  
     public int Value {  
@@ -99,7 +94,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
      Os chamadores podem acessar essas propriedades para obter e definir o texto de exibição do contador para mostrar ou ocultar o `Reset` botão. Os chamadores podem obter o valor atual de somente leitura `Value` propriedade, mas eles não é possível definir o valor diretamente.  
   
-4.  Coloque o seguinte código no `Load` evento para o controle.  
+4. Coloque o seguinte código no `Load` evento para o controle.  
   
     ```csharp  
     private void Counter_Load(object sender, EventArgs e)  
@@ -112,7 +107,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
      Definindo o **etiqueta** texto no <xref:System.Windows.Forms.UserControl.Load> evento permite que as propriedades de destino carregar antes que seus valores sejam aplicados. Definindo o **etiqueta** texto no construtor pode resultar em um vazio **rótulo**.  
   
-5.  Crie o seguinte método público para incrementar o contador.  
+5. Crie o seguinte método público para incrementar o contador.  
   
     ```csharp  
     public void Increment()  
@@ -124,7 +119,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
     ```  
   
-6.  Adicionar uma declaração para o `Incremented` eventos à classe do controle.  
+6. Adicionar uma declaração para o `Incremented` eventos à classe do controle.  
   
     ```csharp  
     public event EventHandler Incremented;  
@@ -132,7 +127,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
      Os chamadores podem adicionar manipuladores para este evento responda às alterações no valor do contador.  
   
-7.  Retornar ao modo de design e clique duas vezes o `Reset` botão para gerar o `btnReset_Click` manipulador de eventos e, em seguida, preenchê-lo conforme mostrado no exemplo a seguir.  
+7. Retornar ao modo de design e clique duas vezes o `Reset` botão para gerar o `btnReset_Click` manipulador de eventos e, em seguida, preenchê-lo conforme mostrado no exemplo a seguir.  
   
     ```csharp  
     private void btnReset_Click(object sender, EventArgs e)  
@@ -143,7 +138,7 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
     ```  
   
-8.  Imediatamente acima da definição de classe, na `ProvideToolboxControl` declaração de atributo, altere o valor do primeiro parâmetro da `"MyWinFormsControl.Counter"` para `"General"`. Isso define o nome do grupo de itens que hospedará o controle na **caixa de ferramentas**.  
+8. Imediatamente acima da definição de classe, na `ProvideToolboxControl` declaração de atributo, altere o valor do primeiro parâmetro da `"MyWinFormsControl.Counter"` para `"General"`. Isso define o nome do grupo de itens que hospedará o controle na **caixa de ferramentas**.  
   
      A exemplo a seguir mostra o `ProvideToolboxControl` atributo e a definição de classe ajustado.  
   
@@ -157,23 +152,23 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
   
 ##### <a name="to-test-the-control"></a>Para testar o controle  
   
-1.  Pressione F5.  
+1. Pressione F5.  
   
      Isso compila o projeto e abre uma segunda instância Experimental do Visual Studio que tem o controle instalado.  
   
-2.  Na instância Experimental do Visual Studio, crie uma **aplicativo do Windows Forms** projeto.  
+2. Na instância Experimental do Visual Studio, crie uma **aplicativo do Windows Forms** projeto.  
   
-3.  Na **Gerenciador de soluções**, clique duas vezes em Form1 para abri-lo no designer, se ele não ainda estiver aberto.  
+3. Na **Gerenciador de soluções**, clique duas vezes em Form1 para abri-lo no designer, se ele não ainda estiver aberto.  
   
-4.  No **caixa de ferramentas**, o `Counter` controle deve ser exibido no **geral** seção.  
+4. No **caixa de ferramentas**, o `Counter` controle deve ser exibido no **geral** seção.  
   
-5.  Arraste um `Counter` controle ao seu formulário e, em seguida, selecioná-lo. O `Value`, `Message`, e `ShowReset` propriedades serão exibidas no **as propriedades** janela, junto com as propriedades que são herdadas de <xref:System.Windows.Forms.UserControl>.  
+5. Arraste um `Counter` controle ao seu formulário e, em seguida, selecioná-lo. O `Value`, `Message`, e `ShowReset` propriedades serão exibidas no **as propriedades** janela, junto com as propriedades que são herdadas de <xref:System.Windows.Forms.UserControl>.  
   
-6.  Defina a propriedade `Message` como `Count:`.  
+6. Defina a propriedade `Message` como `Count:`.  
   
-7.  Arraste uma <xref:System.Windows.Forms.Button> o controle para o formulário e, em seguida, defina as propriedades de nome e o texto do botão para `Test`.  
+7. Arraste uma <xref:System.Windows.Forms.Button> o controle para o formulário e, em seguida, defina as propriedades de nome e o texto do botão para `Test`.  
   
-8.  Clique duas vezes no botão para abrir Form1 na exibição de código e criar um manipulador de clique.  
+8. Clique duas vezes no botão para abrir Form1 na exibição de código e criar um manipulador de clique.  
   
 9. No manipulador de clique, chame `counter1.Increment()`.  
   
@@ -213,11 +208,10 @@ O modelo de item de controle de caixa de ferramentas do Windows Forms que está 
      O contador é redefinido como **0**.  
   
 ## <a name="next-steps"></a>Próximas etapas  
- Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName*. VSIX na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o arquivo. VSIX para uma rede ou para um site da Web. Quando um usuário abre o arquivo. VSIX, o controle seja instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar o arquivo. VSIX para o [Galeria do Visual Studio](http://go.microsoft.com/fwlink/?LinkID=123847) Web site para que os usuários podem encontrá-lo, navegando na **ferramentas / extensões e atualizações** caixa de diálogo.  
+ Quando você cria um **caixa de ferramentas** controle, o Visual Studio cria um arquivo chamado *ProjectName*. VSIX na pasta \bin\debug\ do seu projeto. Você pode implantar o controle ao carregar o arquivo. VSIX para uma rede ou para um site da Web. Quando um usuário abre o arquivo. VSIX, o controle seja instalado e adicionado ao Visual Studio **caixa de ferramentas** no computador do usuário. Como alternativa, você pode carregar o arquivo. VSIX para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) Web site para que os usuários podem encontrá-lo, navegando na **ferramentas / extensões e atualizações** caixa de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estendendo a caixa de ferramentas](../misc/extending-the-toolbox.md)   
  [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
  [Noções básicas sobre o desenvolvimento de controles dos Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
-

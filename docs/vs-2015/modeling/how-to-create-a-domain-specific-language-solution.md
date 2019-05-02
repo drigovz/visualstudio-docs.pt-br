@@ -1,12 +1,9 @@
 ---
-title: 'Como: criar uma solução de linguagem específica do domínio | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar uma solução de linguagem específica do domínio | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 f1_keywords:
 - vs.dsltools.designerwizard
 helpviewer_keywords:
@@ -17,15 +14,15 @@ ms.assetid: e585b63b-34d2-405a-8d81-39ea22317975
 caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 2650afc2172cdcceca892d4ad19a05becac3e472
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49908896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441086"
 ---
-# <a name="how-to-create-a-domain-specific-language-solution"></a>Como criar uma solução de linguagem específica do domínio
+# <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Uma linguagem específica de domínio (DSL) é criada usando especializado [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução.  
@@ -58,7 +55,7 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
        O **Assistente de Designer de linguagem específica do domínio** é exibida.  
   
       > [!NOTE]
-      >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
+      > De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
   
       ![Criar caixa de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -70,18 +67,18 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
 3. Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.  
   
-   -   Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
+   - Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
   
-   -   Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
+   - Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
 4. Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).  
   
     O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.  
   
    > [!NOTE]
-   >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
+   > Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
   
-##  <a name="settings"></a> As páginas do Assistente de Designer de DSL  
+## <a name="settings"></a> As páginas do Assistente de Designer de DSL  
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.  
   
 ### <a name="solution-settings-page"></a>Página de configurações de solução  
@@ -101,15 +98,15 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
  Se você vir uma lista de ferramentas ou pacotes, você deve fazer o seguinte:  
   
--   Digite uma extensão de arquivo diferente.  
+- Digite uma extensão de arquivo diferente.  
   
      \- ou -  
   
--   Redefinir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância Experimental. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.  
+- Redefinir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância Experimental. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.  
   
      \- ou -  
   
--   Se um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
+- Se um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
 ### <a name="product-settings-page"></a>Página de configurações do produto  
  **O que é o nome do produto que a nova linguagem específica de domínio pertence?**  
@@ -136,7 +133,4 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
 ## <a name="see-also"></a>Consulte também  
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
- [Glossário de ferramentas de linguagem específica do domínio](http://msdn.microsoft.com/en-us/ca5e84cb-a315-465c-be24-76aa3df276aa)
-
-
-
+ [Glossário das Ferramentas de Linguagem Específica de Domínio](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

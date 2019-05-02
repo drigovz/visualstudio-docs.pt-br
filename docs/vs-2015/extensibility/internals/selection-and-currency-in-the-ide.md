@@ -1,14 +1,9 @@
 ---
 title: Seleção e moeda no IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112475"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Seleção e moeda no IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento integrado (IDE) mantém informações sobre dos usuários objetos selecionados no momento usando a seleção *contexto*. Com o contexto de seleção, os VSPackages pode fazer parte de moeda de acompanhamento de duas maneiras:  
   
--   Propagando as informações de moeda sobre os VSPackages ao IDE.  
+- Propagando as informações de moeda sobre os VSPackages ao IDE.  
   
--   Monitorando seleções ativa no momento dentro do IDE.  
+- Monitorando seleções ativa no momento dentro do IDE.  
   
 ## <a name="selection-context"></a>Contexto de seleção  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalmente mantém o controle de moeda IDE no seu próprio objeto de contexto de seleção global. A tabela a seguir mostra os elementos que compõem o contexto da seleção.  
@@ -45,9 +40,9 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento in
   
  Além disso, o ambiente mantém duas listas globais:  
   
--   Uma lista de identificadores de comando do Active Directory da interface do usuário  
+- Uma lista de identificadores de comando do Active Directory da interface do usuário  
   
--   Uma lista de tipos de elemento ativo no momento.  
+- Uma lista de tipos de elemento ativo no momento.  
   
 ### <a name="window-types-and-selection"></a>Seleção e tipos de janelas  
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organiza windows em dois tipos gerais:  
@@ -65,11 +60,10 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ambiente de desenvolvimento in
 ### <a name="events-and-currency"></a>Eventos e moeda  
  Dois tipos de eventos podem ocorrer que afetam a noção do ambiente de moeda:  
   
--   Eventos que são propagados para o nível global e alterar o contexto de seleção do quadro de janela. Exemplos desse tipo de evento incluem uma janela filho MDI que está sendo aberta, uma janela de ferramenta global que está sendo aberto ou uma janela de ferramentas do tipo de projeto que está sendo aberto.  
+- Eventos que são propagados para o nível global e alterar o contexto de seleção do quadro de janela. Exemplos desse tipo de evento incluem uma janela filho MDI que está sendo aberta, uma janela de ferramenta global que está sendo aberto ou uma janela de ferramentas do tipo de projeto que está sendo aberto.  
   
--   Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro de janela. Exemplos incluem alterar a seleção dentro DocObject ou alterar a seleção em uma janela do tipo de projeto.  
+- Eventos que alteram os elementos rastreados dentro do contexto de seleção do quadro de janela. Exemplos incluem alterar a seleção dentro DocObject ou alterar a seleção em uma janela do tipo de projeto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md)   
  [Comentários para o usuário](../../extensibility/internals/feedback-to-the-user.md)
-

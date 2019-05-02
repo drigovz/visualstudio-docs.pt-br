@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901551"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Passo a passo: Depurando um Formulário da Web
 As etapas deste passo a passo mostram como depurar um aplicativo Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], também conhecido como um Web Form. Mostra como iniciar e interromper a execução, definir pontos de interrupção e examinar variáveis na janela **Inspeção**.
@@ -68,7 +68,7 @@ As caixas de diálogo e os comandos do menu que você vê podem ser diferentes d
 
 11. Clique duas vezes no controle de botão que você removeu.
 
-     Isso leva à página de código. Default.aspx.cs para c# ou default para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O cursor deve estar na função `Button1_Click`.
+     Isso leva você à página de código: Default.aspx.cs para c# ou default para [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O cursor deve estar na função `Button1_Click`.
 
 12. Na função `Button1_Click`, adicione o seguinte código:
 

@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10b0c5fe888e41801801e1600c9fb79188d4fdec
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934972"
 ---
 # <a name="expected-identifier-javascript"></a>Identificador esperado (JavaScript)
 Você usou algo diferente de um identificador em um contexto em que era necessário. Um identificador pode ser:  
   
--   uma variável  
+- uma variável  
   
--   uma propriedade  
+- uma propriedade  
   
--   uma matriz  
+- uma matriz  
   
--   ou um nome de função.  
+- ou um nome de função.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Altere a expressão para que um identificador aparece à esquerda do sinal de igual.  
+- Altere a expressão para que um identificador aparece à esquerda do sinal de igual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)

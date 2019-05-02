@@ -12,14 +12,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 683e9e6fdd6108ade3a991ce5280a2f8024fe496
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422803"
 ---
-# <a name="how-to-create-a-nullable-type-class-designer"></a>Como criar um tipo anulável (Designer de Classe)
+# <a name="how-to-create-a-nullable-type-class-designer"></a>Como: Criar um tipo que permite valor nulo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa é uma prática comum em bancos de dados, em que alguns campos podem não receber nenhum valor. Por exemplo, é possível atribuir um valor nulo a um campo de banco de dados para indicar que ele ainda não recebeu um valor.  
@@ -42,17 +42,17 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
   
 ### <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Para adicionar um tipo que permite valor nulo usando o Designer de Classe  
   
-1.  No Diagrama de Classe, expanda uma classe existente ou crie uma nova classe.  
+1. No Diagrama de Classe, expanda uma classe existente ou crie uma nova classe.  
   
-2.  Para adicionar uma classe ao projeto, no menu **Diagrama de Classe**, clique em **Adicionar** e, em seguida, em **Adicionar Classe**.  
+2. Para adicionar uma classe ao projeto, no menu **Diagrama de Classe**, clique em **Adicionar** e, em seguida, em **Adicionar Classe**.  
   
-3.  Para expandir a forma da classe, no menu **Diagrama de Classe**, clique em **Expandir**.  
+3. Para expandir a forma da classe, no menu **Diagrama de Classe**, clique em **Expandir**.  
   
-4.  Selecione a forma da classe. No menu **Diagrama de Classe**, clique em **Adicionar** e, em seguida, em **Campo**. Um novo campo que tem o nome padrão **Campo** será exibido na forma da classe e também na Janela **Detalhes da Classe**.  
+4. Selecione a forma da classe. No menu **Diagrama de Classe**, clique em **Adicionar** e, em seguida, em **Campo**. Um novo campo que tem o nome padrão **Campo** será exibido na forma da classe e também na Janela **Detalhes da Classe**.  
   
-5.  Na coluna **Nome** da Janela **Detalhes da Classe** (ou na própria forma da classe), altere o nome do novo campo para um nome válido e significativo.  
+5. Na coluna **Nome** da Janela **Detalhes da Classe** (ou na própria forma da classe), altere o nome do novo campo para um nome válido e significativo.  
   
-6.  Na coluna **Tipo** da Janela **Detalhes da Classe**, declare o tipo como um tipo que permite valor nulo, conforme mostrado no seguinte código:  
+6. Na coluna **Tipo** da Janela **Detalhes da Classe**, declare o tipo como um tipo que permite valor nulo, conforme mostrado no seguinte código:  
   
     ```csharp  
     // Declare a nullable type in Visual C#:  
@@ -71,19 +71,19 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
   
 ### <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Para adicionar um tipo que permite valor nulo usando o Editor de Código  
   
-1.  Adicione uma classe ao projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Adicionar Classe**.  
+1. Adicione uma classe ao projeto. Selecione o nó do projeto no **Gerenciador de Soluções** e, no menu **Projeto**, clique em **Adicionar Classe**.  
   
-2.  No arquivo .cs ou .vb da nova classe, adicione um ou mais tipos que permitem valor nulo da nova classe à declaração de classe.  
+2. No arquivo .cs ou .vb da nova classe, adicione um ou mais tipos que permitem valor nulo da nova classe à declaração de classe.  
   
-3.  No Modo de Exibição de Classe, arraste o ícone da nova classe para a superfície de design do Designer de Classe. Uma forma de classe é exibida no diagrama de classe.  
+3. No Modo de Exibição de Classe, arraste o ícone da nova classe para a superfície de design do Designer de Classe. Uma forma de classe é exibida no diagrama de classe.  
   
-4.  Expanda os detalhes da forma de classe e mova o ponteiro do mouse sobre os membros da classe. A dica de ferramenta exibe a declaração de cada membro.  
+4. Expanda os detalhes da forma de classe e mova o ponteiro do mouse sobre os membros da classe. A dica de ferramenta exibe a declaração de cada membro.  
   
-5.  Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.  
+5. Clique com o botão direito do mouse na forma da classe e clique em **Detalhes da Classe**. É possível exibir ou modificar as propriedades do novo tipo na Janela **Detalhes da Classe**.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Nullable%601>   
  [Tipos que permitem valor nulo](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
  [Usando tipos que permitem valor nulo](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Como identificar um tipo que permite valor nulo](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Como: Identificar um tipo anulável](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
  [Tipos de Valor Anulável](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

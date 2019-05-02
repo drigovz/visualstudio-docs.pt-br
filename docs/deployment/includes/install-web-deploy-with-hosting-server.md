@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 0fc18fab56f5b46ef097cdf699e4f0569dc190c9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904316"
+---
 A Implantação da Web 3.6 para Servidores de Hospedagem fornece recursos adicionais de configuração que permitem a criação do arquivo de configurações da publicação por meio da interface do usuário.
 
 1. Se você já tiver a Implantação da Web 3.6 instalada no Windows Server, desinstale-a usando **Painel de Controle** > **Programas** > **Desinstalar um Programa**.
@@ -18,4 +26,4 @@ A Implantação da Web 3.6 para Servidores de Hospedagem fornece recursos adicio
 
 4. (Opcional) Verifique se a Implantação da Web está em execução corretamente abrindo **Painel de Controle > Sistema e Segurança > Ferramentas Administrativas > Serviços** e verifique se o **Serviço do Agente de Implantação da Web** está em execução (o nome do serviço é diferente em versões mais antigas).
 
-    Se o serviço de agente não estiver em execução, inicie-o. Se não estiver presente, acesse **Painel de Controle > Programas > Desinstalar um programa**, localize **Implantação da Web da Microsoft <version>**. Escolha **Alterar** a instalação e certifique-se de escolher **Será instalado na unidade de disco rígido local** para os componentes de Implantação da Web. Conclua as etapas de instalação de alteração.
+    Se o serviço de agente não estiver em execução, inicie-o. Se não estiver presente, acesse **Painel de Controle > Programas > Desinstalar um programa**, localize **Implantação da Web da Microsoft \<versão>**. Escolha **Alterar** a instalação e certifique-se de escolher **Será instalado na unidade de disco rígido local** para os componentes de Implantação da Web. Conclua as etapas de instalação de alteração.

@@ -48,21 +48,20 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5ac63b183493b378fc0e1df454bc94a56722224f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b33fb6408bc9d37d7f0c94af9253a1ce9879235a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441319"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Essa caixa de diálogo permite alterar as configurações globais para o Editor de Texto e Código do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para exibir essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto** e clique em **Geral**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Configurações  
  Recurso de edição arrastar-e-soltar  

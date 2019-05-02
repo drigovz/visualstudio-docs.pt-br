@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2cff118e31a10780a4573608a6516ddea9e4f73a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: df645fc7f53bbcd0ad5294182d13e96b57b5d42d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431583"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>Recursos disponíveis por tipo de projeto e aplicativo do Office
   Visual Studio tem vários tipos de modelos de projeto que dão suporte a cenários de negócios diferentes para aplicativos do Microsoft Office, incluindo os seguintes tipos:
@@ -36,7 +36,7 @@ ms.locfileid: "56626746"
   Nem todos os aplicativos podem usar cada tipo de projeto. Por exemplo, projetos de nível de documento estão disponíveis somente para o Microsoft Office Word e Microsoft Office Excel. Da mesma forma, alguns recursos estão disponíveis somente para determinados tipos de projetos ou aplicativos. Por exemplo, o painel de ações está disponível apenas no nível de documento e extensões da faixa de opções estão disponíveis apenas para alguns aplicativos. Para obter mais informações sobre os diferentes tipos de projetos, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
 
 > [!NOTE]
->  Modelos de projeto do Office estão disponíveis apenas em algumas edições do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
+> Modelos de projeto do Office estão disponíveis apenas em algumas edições do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 ## <a name="project-types-available-for-different-microsoft-office-applications"></a>Tipos de projeto disponíveis para diferentes aplicativos do Microsoft Office
  A tabela a seguir mostra os aplicativos que você pode usar com cada tipo de projeto.

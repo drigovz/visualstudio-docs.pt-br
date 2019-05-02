@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d13a15386fe8486dae16173ebb52ec2593de24f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d12c8168ef01dd3a38616af4f9dab2c38662bfff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563098"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>Acessar dados em documentos no servidor
   Você pode programar os dados em uma personalização no nível do documento sem precisar usar o modelo de objeto do Microsoft Office Word ou Microsoft Office Excel. Isso significa que você pode acessar dados que estão contidos em um documento em um servidor que não tenha o Word ou Excel instalado. Por exemplo, o código em um servidor (por exemplo, em um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página) podem personalizar os dados em um documento e enviar o documento personalizado para o usuário final. Quando o usuário final abre o documento, o código de associação de dados em que o assembly da solução associa os dados personalizados no documento. Isso é possível porque os dados do documento são separados da interface do usuário. Para obter mais informações, consulte [armazenado em cache dados personalizações no nível do documento](../vsto/cached-data-in-document-level-customizations.md).
@@ -49,15 +49,15 @@ ms.locfileid: "55926847"
 ## <a name="modify-data-in-the-cache"></a>Modificar dados em cache
  Para modificar um objeto de dados armazenados em cache, você normalmente executam as seguintes etapas:
 
-1.  Desserialize a representação XML do objeto armazenado em cache em uma nova instância do objeto. Você pode acessar o XML usando o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> propriedade do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> que representa o objeto de dados armazenados em cache.
+1. Desserialize a representação XML do objeto armazenado em cache em uma nova instância do objeto. Você pode acessar o XML usando o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> propriedade do <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> que representa o objeto de dados armazenados em cache.
 
-2.  Faça as alterações a essa cópia.
+2. Faça as alterações a essa cópia.
 
-3.  Serialize o objeto alterado novamente no cache de dados usando uma das seguintes opções:
+3. Serialize o objeto alterado novamente no cache de dados usando uma das seguintes opções:
 
-    -   Se você deseja serializar automaticamente as alterações, use o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> método. Esse método usa o **DiffGram** formato de serialização <xref:System.Data.DataSet>, <xref:System.Data.DataTable>e objetos de conjunto de dados tipados no cache de dados. O **DiffGram** formato garante que as alterações para o cache de dados em um documento offline são enviadas corretamente para o servidor.
+    - Se você deseja serializar automaticamente as alterações, use o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> método. Esse método usa o **DiffGram** formato de serialização <xref:System.Data.DataSet>, <xref:System.Data.DataTable>e objetos de conjunto de dados tipados no cache de dados. O **DiffGram** formato garante que as alterações para o cache de dados em um documento offline são enviadas corretamente para o servidor.
 
-    -   Se você quiser executar sua própria serialização as alterações nos dados armazenados em cache, você pode escrever diretamente para o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> propriedade. Especifique o **DiffGram** Formatar se você usar um <xref:System.Data.Common.DataAdapter> para atualizar um banco de dados com alterações feitas nos dados em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou com o tipo de conjunto de dados. Caso contrário, o <xref:System.Data.Common.DataAdapter> atualizará o banco de dados, adicionando novas linhas em vez de modificar linhas existentes.
+    - Se você quiser executar sua própria serialização as alterações nos dados armazenados em cache, você pode escrever diretamente para o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> propriedade. Especifique o **DiffGram** Formatar se você usar um <xref:System.Data.Common.DataAdapter> para atualizar um banco de dados com alterações feitas nos dados em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou com o tipo de conjunto de dados. Caso contrário, o <xref:System.Data.Common.DataAdapter> atualizará o banco de dados, adicionando novas linhas em vez de modificar linhas existentes.
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>Modificar os dados sem desserializar o valor atual
  Em alguns casos, talvez você queira modificar o valor do objeto em cache sem primeiro ao desserializar o valor atual. Por exemplo, você pode fazer isso se você estiver alterando o valor de um objeto que tem um tipo simples, como uma cadeia de caracteres ou inteiro, ou se você estiver inicializando em um cache <xref:System.Data.DataSet> em um documento em um servidor. Nesses casos, você pode usar o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> método sem primeiro ao desserializar o valor atual do objeto armazenado em cache.
@@ -70,9 +70,9 @@ ms.locfileid: "55926847"
 ### <a name="modify-null-values-in-the-data-cache"></a>Modificar valores nulos no cache de dados
  O cache de dados não armazena objetos que têm o valor **nulo** quando o documento for salvo e fechado. Essa limitação tem várias consequências quando você modifica os dados armazenados em cache:
 
--   Se você definir qualquer objeto no cache de dados para o valor **nulo**, todos os objetos no cache de dados serão automaticamente definidos como **nulo** quando o documento for aberto, e o cache de dados inteira será limpo quando a documento for salvo e fechado. Ou seja, todos os objetos armazenados em cache serão removidos do cache de dados e o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> coleção estará vazia.
+- Se você definir qualquer objeto no cache de dados para o valor **nulo**, todos os objetos no cache de dados serão automaticamente definidos como **nulo** quando o documento for aberto, e o cache de dados inteira será limpo quando a documento for salvo e fechado. Ou seja, todos os objetos armazenados em cache serão removidos do cache de dados e o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> coleção estará vazia.
 
--   Se você criar uma solução com **nulo** objetos no cache de dados e você deseja inicializar esses objetos usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe antes do documento é aberto pela primeira vez, você deve garantir que você inicialize todos os objetos no cache de dados. Se você inicializar somente alguns dos objetos, todos os objetos serão definidos como **nulo** quando o documento for aberto, e o cache de dados inteira será removido quando o documento for salvo e fechado.
+- Se você criar uma solução com **nulo** objetos no cache de dados e você deseja inicializar esses objetos usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe antes do documento é aberto pela primeira vez, você deve garantir que você inicialize todos os objetos no cache de dados. Se você inicializar somente alguns dos objetos, todos os objetos serão definidos como **nulo** quando o documento for aberto, e o cache de dados inteira será removido quando o documento for salvo e fechado.
 
 ## <a name="access-typed-datasets-in-the-cache"></a>Acesso digitado a conjuntos de dados no cache
  Se você deseja acessar os dados em um dataset tipado de uma solução do Office e de um aplicativo fora do escritório, como um aplicativo do Windows Forms ou um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] projeto, você deve definir o conjunto de dados tipado em um assembly separado que é referenciado em ambas projetos. Se você adiciona o conjunto de dados tipado para cada projeto usando o **Data Source Configuration** assistente ou na **Dataset Designer**, o .NET Framework tratará os conjuntos de dados tipados em dois projetos de diferentes tipos . Para obter mais informações sobre como criar datasets tipados, consulte [criar e configurar conjuntos de dados no Visual Studio](../data-tools/create-and-configure-datasets-in-visual-studio.md).

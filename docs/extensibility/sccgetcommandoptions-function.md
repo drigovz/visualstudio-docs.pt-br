@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434638"
 ---
 # <a name="sccgetcommandoptions-function"></a>Função SccGetCommandOptions
 Essa função solicita ao usuário para opções avançadas para um determinado comando.
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  Por fim, quando o usuário clica **Okey** no IDE do **obter** caixa de diálogo, as chamadas IDE a [SccGet](../extensibility/sccget-function.md), passando a estrutura retornada em `ppvOptions` que contém o Opções avançadas.
 
 > [!NOTE]
->  O comando `SCC_COMMAND_OPTIONS` é usado quando o IDE exibirá uma **opções** caixa de diálogo que permite que o usuário defina preferências que controlam como a integração funciona. Se desejar obter o plug-in de controle do código-fonte fornecer sua própria caixa de diálogo Preferências, ele pode exibi-lo de um **avançado** botão na caixa de diálogo de preferências do IDE. O plug-in é exclusivamente responsável por obter e manter essas informações; o IDE não usá-lo ou modificá-lo.
+> O comando `SCC_COMMAND_OPTIONS` é usado quando o IDE exibirá uma **opções** caixa de diálogo que permite que o usuário defina preferências que controlam como a integração funciona. Se desejar obter o plug-in de controle do código-fonte fornecer sua própria caixa de diálogo Preferências, ele pode exibi-lo de um **avançado** botão na caixa de diálogo de preferências do IDE. O plug-in é exclusivamente responsável por obter e manter essas informações; o IDE não usá-lo ou modificá-lo.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

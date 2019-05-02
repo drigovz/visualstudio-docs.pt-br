@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 49edb08b35b3006901201ccc880a5e74da92f834
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790888"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
 Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, confira [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
@@ -35,12 +35,10 @@ Use a página **Eventos de Build** do **Designer de Projeto** para especificar a
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
-
  **Linha de comando do evento de pós-build** Especifica os comandos a serem executados após o término do build. Para digitar comandos longos, clique em **Editar Pós-Build** para exibir a **Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build**.
 
 > [!NOTE]
 > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Executar o evento de pós-build** Especifica as seguintes condições para que o evento de pós-build seja executado, conforme é mostrado na tabela a seguir.
 

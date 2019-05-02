@@ -1,14 +1,9 @@
 ---
-title: 'Como: criar um manifesto de produto | Microsoft Docs'
-ms.custom: ''
+title: 'Como: Criar um manifesto de produto | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-deployment
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-deployment
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -23,30 +18,30 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
-manager: wpickett
-ms.openlocfilehash: fc5662763e7932cc024169969801c9c321343e32
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49270082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092117"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Como criar um manifesto de produto
+# <a name="how-to-create-a-product-manifest"></a>Como: Criar um manifesto de produto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para implantar o pré-requisitos para o seu aplicativo, você pode criar um pacote de bootstrapper. Um pacote de bootstrapper contém um arquivo de manifesto de produto único, mas um manifesto de pacote para cada localidade. O manifesto de pacote contém aspectos específicos de localização do seu pacote. Isso inclui cadeias de caracteres, os contratos de licença de usuário final e os pacotes de idiomas.  
   
- Para obter mais informações sobre manifestos de produto, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+ Para obter mais informações sobre manifestos de produto, consulte [como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
 ## <a name="creating-the-product-manifest"></a>Criando o manifesto do produto  
   
 #### <a name="to-create-the-product-manifest"></a>Para criar o manifesto do produto  
   
-1.  Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
+1. Crie um diretório para o pacote de bootstrapper. Este exemplo usa C:\package.  
   
-2.  No Visual Studio, crie um novo arquivo XML chamado `product.xml`e salve-o para a pasta C:\package.  
+2. No Visual Studio, crie um novo arquivo XML chamado `product.xml`e salve-o para a pasta C:\package.  
   
-3.  Adicione o seguinte XML para descrever o código de produto e de namespace XML para o pacote. Substitua o código do produto com um identificador exclusivo para o pacote.  
+3. Adicione o seguinte XML para descrever o código de produto e de namespace XML para o pacote. Substitua o código do produto com um identificador exclusivo para o pacote.  
   
     ```  
     <Product  
@@ -54,7 +49,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode criar um paco
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Adicione o XML para especificar que o pacote tem uma dependência. Este exemplo usa uma dependência no Microsoft Windows Installer 3.1.  
+4. Adicione o XML para especificar que o pacote tem uma dependência. Este exemplo usa uma dependência no Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -62,7 +57,7 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode criar um paco
       </RelatedProducts>  
     ```  
   
-5.  Adicione o XML para listar todos os arquivos que estão no pacote de bootstrapper. Este exemplo usa o nome do arquivo de pacote CorePackage.msi.  
+5. Adicione o XML para listar todos os arquivos que estão no pacote de bootstrapper. Este exemplo usa o nome do arquivo de pacote CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -70,16 +65,16 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode criar um paco
     </PackageFiles>  
     ```  
   
-6.  Copiar ou mover o arquivo CorePackage.msi para a pasta C:\package.  
+6. Copiar ou mover o arquivo CorePackage.msi para a pasta C:\package.  
   
-7.  Adicione o XML para instalar o pacote usando comandos de bootstrapper. O bootstrapper adiciona automaticamente a **/qn** sinalizador para o arquivo. msi, que instalará o silenciosamente. Se o arquivo for um .exe, o bootstrapper executa o arquivo de .exe, usando o shell. O XML a seguir mostra sem argumentos para CorePackage.msi, mas você pode colocar o argumento de linha de comando para o atributo de argumentos.  
+7. Adicione o XML para instalar o pacote usando comandos de bootstrapper. O bootstrapper adiciona automaticamente a **/qn** sinalizador para o arquivo. msi, que instalará o silenciosamente. Se o arquivo for um .exe, o bootstrapper executa o arquivo de .exe, usando o shell. O XML a seguir mostra sem argumentos para CorePackage.msi, mas você pode colocar o argumento de linha de comando para o atributo de argumentos.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Adicione o XML a seguir para verificar se este pacote de bootstrapper foi instalado. Substitua o código do produto com o GUID para o componente redistribuível.  
+8. Adicione o XML a seguir para verificar se este pacote de bootstrapper foi instalado. Substitua o código do produto com o GUID para o componente redistribuível.  
   
     ```  
     <InstallChecks>  
@@ -168,6 +163,3 @@ Para implantar o pré-requisitos para o seu aplicativo, você pode criar um paco
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
-
-
-

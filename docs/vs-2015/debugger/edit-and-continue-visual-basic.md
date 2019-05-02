@@ -1,14 +1,9 @@
 ---
 title: Editar e continuar (Visual Basic) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -25,13 +20,13 @@ ms.assetid: 7e90f34f-e699-45ab-a4c9-a4b527c498c8
 caps.latest.revision: 43
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 383e3418135857b0bded3bbefaace0e8d5832ce6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24782fee98cff09513ff2b4d1606f2be0bd9fbd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428542"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +39,12 @@ Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../incl
   
  Editar e Continuar tem suporte para projetos de 64 bits voltados para o .NET Framework 4.5.1.  
   
- Editar e continuar não é suportado quando você inicia a depuração usando **anexar ao processo**. Editar e Continuar não tem suporte para código otimizado, código gerenciado misto e código nativo, ou projetos do Compact Framework (dispositivo inteligente).  
+ Editar e Continuar não tem suporte quando você começa a depuração usando **Anexar ao Processo**. Editar e Continuar não tem suporte para código otimizado, código gerenciado misto e código nativo, ou projetos do Compact Framework (dispositivo inteligente).  
   
  Os tópicos desta seção fornecem detalhes adicionais sobre como usar esse recurso e que tipos de alterações não são permitidas.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como aplicar edições no modo de interrupção com Editar e Continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
+ [Como: Aplicar edições no modo de interrupção com Editar e Continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md)  
  Explica como aplicar edições do código no modo de Interrupção.  
   
  [Edições sem suporte em Editar e Continuar do Visual Basic](../debugger/unsupported-edits-in-visual-basic-edit-and-continue.md)  
@@ -58,6 +53,3 @@ Editar e Continuar são um recurso para depuração do [!INCLUDE[vbprvb](../incl
 ## <a name="related-sections"></a>Seções relacionadas  
  [Editar e continuar](../debugger/edit-and-continue.md)  
  Fornece uma lista de tópicos em Editar e Continuar.
-
-
-

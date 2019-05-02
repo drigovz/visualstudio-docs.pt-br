@@ -11,32 +11,43 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 535f67f7456f26d3f61820e909c3f7622eb71c85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 088359aeabc45966aed927693ecbab75751eca2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817917"
 ---
 # <a name="options-text-editor-cc-experimental"></a>Opções, Editor de Texto, C/C++, Experimental
 
-Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++. Esses recursos são realmente experimentais e podem ser modificados ou removidos do Visual Studio em uma versão futura. Este tópico descreve as opções no Visual Studio 2017. Para o Visual Studio 2015, selecione **2015** no seletor acima do sumário.
+Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++. Essas funcionalidades são realmente experimentais e podem ser modificadas ou removidas do Visual Studio em uma versão futura.
 
-Para acessar esta página de propriedades, pressione **Control + Q** para ativar `Quick Launch` e, em seguida, digite "experimental". O Início Rápido encontrará a página após as primeiras letras. Você também pode ir para ela, escolhendo **Ferramentas | Opções** e **Editor de Texto**, em seguida, **C/C++** e, então, escolhendo **Experimental**.
+::: moniker range="vs-2017"
 
-Esses recursos estão disponíveis em uma instalação do Visual Studio 2017.
+Este artigo descreve as opções no Visual Studio 2017. Para o Visual Studio 2015, selecione **2015** no seletor acima do sumário.
+
+::: moniker-end
+
+Para acessar esta página de propriedades, pressione **Ctrl**+**Q** para ativar a caixa de pesquisa e, em seguida, digite **experimental**. A Pesquisa encontra a página após as primeiras letras. Acesse-a também escolhendo **Ferramentas** > **Opções** e expandindo **Editor de Texto**, em seguida, **C/C++** e escolhendo **Experimental**.
+
+Essas funcionalidades estão disponíveis em uma instalação do Visual Studio.
 
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Consulte [Personalizar o IDE do Visual Studio](../../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="enable-predictive-intellisense"></a>Habilitar IntelliSense Preditivo
 
-O IntelliSense Preditivo limita o número de resultados exibidos na lista suspensa do IntelliSense para que você veja apenas os resultados relevantes no contexto. Por exemplo, se você digitar <code>int x =</code> e invocar a lista suspensa do IntelliSense, verá apenas inteiros ou funções que retornam inteiros. O IntelliSense Preditivo está desativado por padrão.
+O IntelliSense Preditivo limita o número de resultados exibidos na lista suspensa do IntelliSense para que você veja apenas os resultados relevantes no contexto. Por exemplo, se você digitar `int x =` e invocar a lista suspensa do IntelliSense, verá apenas inteiros ou funções que retornam inteiros. O IntelliSense Preditivo está desativado por padrão.
+
+::: moniker range="vs-2017"
 
 ## <a name="enable-faster-project-load"></a>Habilitar carregamento de projeto mais rápido
 
-**Visual Studio 2017 versão 15.3 e posteriores**: Esse recurso é chamado agora de **Habilitar Cache de Projeto** e foi movido para a página de propriedades de [Configurações de Projeto do VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+No Visual Studio 2017 versão 15.3 em diante, essa funcionalidade é chamada **Habilitar Cache de Projeto** e foi movida para a página de propriedades [Configurações de Projeto do VC++](vcpp-project-settings-projects-and-solutions-options-dialog-box.md).
+
 Essa opção permite que o Visual Studio coloque em cache os dados de projeto, para quando você abrir o projeto na próxima vez, ele pode carregar esses dados armazenados em cache em vez de recalcular dos arquivos de projeto. Usar dados armazenados em cache pode acelerar significativamente o tempo de carregamento do projeto.
+
+::: moniker-end
 
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Recursos adicionais no Visual Studio Marketplace
 
@@ -55,4 +66,5 @@ Você pode procurar outros recursos do editor de texto no [Visual Studio Marketp
 ## <a name="see-also"></a>Consulte também
 
 - [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)
-- [Refatoração em C++ (VC Blog)](https://blogs.msdn.microsoft.com/vcblog/2014/11/14/all-about-c-refactoring-in-visual-studio-2015-preview/)
+- [Refatoração em C++ (VC Blog)](https://devblogs.microsoft.com/cppblog/all-about-c-refactoring-in-visual-studio-2015-preview/
+)

@@ -1,11 +1,8 @@
 ---
 title: Atalhos de teclado no Designer de fluxo de trabalho | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - WFDKeyboardShortcuts.UI
@@ -13,13 +10,13 @@ ms.assetid: 9be75438-a4a3-4781-94e5-45b7ec082358
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 409a39dc889970ee7ad0eff3354fa43de15b7dbe
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49895334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951951"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode ser acessada pelo teclado.  
@@ -57,13 +54,13 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
   
 - Para conectar atividades:  
   
-  1.  Selecione a atividade de origem alternar a atividade.  
+  1. Selecione a atividade de origem alternar a atividade.  
   
-  2.  Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
+  2. Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
   
-  3.  Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
+  3. Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
   
-  4.  Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
+  4. Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
   
   Notas sobre como conectar atividades pelo teclado:  
   
@@ -76,18 +73,18 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
 ### <a name="expression-editing"></a>Edição de expressão  
  Por padrão, os atalhos de teclado padrão para edição de texto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se aplicam no editor de expressão em [!INCLUDE[wfd2](../includes/wfd2-md.md)], com as seguintes restrições:  
   
--   O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.  
+- O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.  
   
-    1.  Recortar  
+    1. Recortar  
   
-    2.  Copiar  
+    2. Copiar  
   
-    3.  Colar  
+    3. Colar  
   
-    4.  Selecionar Tudo  
+    4. Selecionar Tudo  
   
-    5.  Desfazer  
+    5. Desfazer  
   
-    6.  Refazer  
+    6. Refazer  
   
--   Para remapear atalhos de teclado para comandos de edição de expressão dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] em [!INCLUDE[vs2010](../includes/vs2010-md.md)], edite os atalhos no escopo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . As alterações feitas no escopo do editor de texto não se aplicam automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).
+- Para remapear atalhos de teclado para comandos de edição de expressão dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] em [!INCLUDE[vs2010](../includes/vs2010-md.md)], edite os atalhos no escopo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . As alterações feitas no escopo do editor de texto não se aplicam automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).

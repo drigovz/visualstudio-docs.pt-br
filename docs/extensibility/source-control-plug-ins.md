@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a717fdb885669ae4893dc4234c58233dec2957be
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800134"
 ---
 # <a name="source-control-plug-ins"></a>Plug-ins de controle do código-fonte
 A seção de referência do SDK de plug-in de controle do código-fonte contém a especificação de interface completa que permite que os sistemas de controle de origem sejam integrados [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Especifica a sintaxe e semântica das várias funções e tipos de dados que o plug-in de controle de origem deve implementar a interface com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE).

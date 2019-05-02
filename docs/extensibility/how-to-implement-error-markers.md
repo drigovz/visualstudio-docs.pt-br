@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2934cb9cb009a46cbd79340173eb2cad0a0fefe0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415490"
 ---
 # <a name="how-to-implement-error-markers"></a>Como: Implementar o marcador de erros
 Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor de texto para implementar mais difícil. No entanto, os benefícios que eles oferecem aos usuários de seu VSPackage podem compensam o custo para fornecê-las. Marcadores de erro sutilmente marcam o texto que o analisador de linguagem considera incorreta com uma linha vermelha ondulada ou ondulada. Este indicador ajuda a programadores visualmente, exibindo um código incorreto.
@@ -42,16 +42,16 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
 
   O analisador, o provedor de tarefas e o filtro de fornecem a infraestrutura necessária para que os marcadores de erro possível. As etapas a seguir fornecem o processo para exibir os marcadores de erro.
 
-1.  Em uma exibição que está sendo filtrada, o filtro obtém um ponteiro para o provedor de tarefas associado aos dados do modo de exibição.
+1. Em uma exibição que está sendo filtrada, o filtro obtém um ponteiro para o provedor de tarefas associado aos dados do modo de exibição.
 
     > [!NOTE]
-    >  Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.
+    > Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.
 
-2.  Quando o filtro recebe um evento indicando que você tenha movido para outra linha, uma tarefa é criada para verificar se há erros.
+2. Quando o filtro recebe um evento indicando que você tenha movido para outra linha, uma tarefa é criada para verificar se há erros.
 
-3.  O manipulador de tarefa verifica se a linha está suja. Nesse caso, ele analisa a linha de erros.
+3. O manipulador de tarefa verifica se a linha está suja. Nesse caso, ele analisa a linha de erros.
 
-4.  Se forem encontrados erros, o provedor de tarefas cria uma instância de item de tarefa. Esta instância cria o marcador de texto que usa o ambiente como um marcador de erro no modo de exibição de texto.
+4. Se forem encontrados erros, o provedor de tarefas cria uma instância de item de tarefa. Esta instância cria o marcador de texto que usa o ambiente como um marcador de erro no modo de exibição de texto.
 
 ## <a name="see-also"></a>Consulte também
 - [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)

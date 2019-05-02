@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 553b7a542bc49b3105462a5f53082917b1741916
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803662"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436189"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Criando uma interface de usuário usando o Blend para Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,19 +28,19 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
  Se estiver conhecendo o Blend for Visual Studio agora, reserve algum tempo para se familiarizar com os recursos exclusivos do workspace. Este tópico apresenta um tour rápido.
 
 > [!NOTE]
->  Para fazer um tour pelos recursos de design compartilhados, como a prancheta, a janela Estrutura de Tópicos do Documento e a janela Dispositivo, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Para fazer um tour pelos recursos de design compartilhados, como a prancheta, a janela Estrutura de Tópicos do Documento e a janela Dispositivo, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **Neste tópico**:
 
--   [Tour pelo painel Ferramentas](#Tools)
+- [Tour pelo painel Ferramentas](#Tools)
 
--   [Tour pelo painel Ativos](#Assets)
+- [Tour pelo painel Ativos](#Assets)
 
--   [Tour pelo painel Objetos e Linha do Tempo](#Objects)
+- [Tour pelo painel Objetos e Linha do Tempo](#Objects)
 
--   [Tour pelo painel Propriedades](#Properties)
+- [Tour pelo painel Propriedades](#Properties)
 
-##  <a name="Tools"></a> Tour pelo painel Ferramentas
+## <a name="Tools"></a> Tour pelo painel Ferramentas
  É possível usar o painel **Ferramentas** no Blend for Visual Studio para criar e modificar objetos no aplicativo. Você cria os objetos selecionando uma ferramenta e desenhando na prancheta com o mouse.
 
  ![Painel Ferramentas](../designers/media/blend5toolspanel.png "Blend5Toolspanel")
@@ -56,7 +56,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 
  **Assista a um breve vídeo:** ![Configurar recursos instalados](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [a barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
 
-##  <a name="Assets"></a> Tour pelo painel Ativos
+## <a name="Assets"></a> Tour pelo painel Ativos
  É possível encontrar todos os controles no painel **Ativos**, semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta no painel **Ativos**, incluindo estilos, mídia, comportamentos e efeitos.
 
  ![Painel Ativos](../designers/media/blend5-assets-panel.png "Blend5_Assets_panel")
@@ -69,7 +69,7 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-4.png "B1_4")|**Estilos** Mostre todos os estilos contidos no dicionário de recursos.|
 |![](../designers/media/b1-5.png "B1_5")|**Descrição** Exiba uma descrição da categoria ou subcategoria de ativos selecionada.|
 
-##  <a name="Objects"></a> Tour pelo painel Objetos e Linha do Tempo
+## <a name="Objects"></a> Tour pelo painel Objetos e Linha do Tempo
  Use esse painel para organizar os objetos na prancheta e, se quiser, para animá-los.
 
  ![Painel Objetos e Linha do Tempo no modo de animação](../designers/media/b5-object-timeline-animation.png "b5_object_timeline_animation")
@@ -93,13 +93,12 @@ O Blend for Visual Studio ajuda a criar aplicativos da área de trabalho do Wind
 |![](../designers/media/b1-15.png "B1_15")|**Zoom da linha do tempo** Defina a resolução de zoom da linha do tempo. Aumentar o zoom permite editar uma animação com mais detalhes e diminuir o zoom mostra mais uma visão geral do que está acontecendo no decorrer de períodos de tempo mais longos. Se você aumentar o zoom, mas não conseguir definir um quadro chave na posição de tempo desejada, verifique se a resolução de ajuste está definida com um valor suficientemente alto.|
 |![Texto explicativo 16](../designers/media/b5-label-16.png "b5_label_16")|**Área de composição da linha do tempo** Exiba a linha do tempo e mova quadros chave arrastando-os ou usando os menus de atalho.|
 
-##  <a name="Properties"></a> Tour pelo painel Propriedades
+## <a name="Properties"></a> Tour pelo painel Propriedades
  Use esse painel para exibir e modificar as propriedades de um objeto. Você também pode defini-las diretamente na prancheta. Nesse caso, as alterações na propriedade serão refletidas no painel **Propriedades**.
 
  ![Painel Propriedades](../designers/media/blend5-properties-panel.png "Blend5_properties_panel")
 
  **Categorias** Expanda e recolha categorias de propriedades. Clique em **Expandir** ![](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png "6375953d-074c-421a-bbb3-6f5055b67b64") e **Recolher** ![Recolher](../designers/media/b5-collapse-button.png "b5_collapse_button") para mostrar ou ocultar detalhes da categoria.
-
 
 |                                                                                                         |                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

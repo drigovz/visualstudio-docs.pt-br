@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970208"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Caixa de diálogo de opções de teclado do Excel do Microsoft Office, configurações de teclado do Microsoft Office,
   Microsoft Office Excel e Visual Studio ambos lidam com teclas de atalho. Comandos diferentes no Excel e no Visual Studio pode representar a mesma combinação de teclas de atalho. Quando o Excel está aberto em um projeto de nível de documento no Visual Studio, o aplicativo apenas uma por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Excel recebê-las quando o documento tem o foco, selecionando **esquema de teclado dinâmico**.

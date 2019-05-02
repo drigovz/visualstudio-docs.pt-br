@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3544ca6c5f9dfe5326f51bb565ff012b654dc263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553130"
 ---
 # <a name="cores-view-logical-cores"></a>Núcleos lógicos da Exibição de Núcleos
 Cada nome de canal representa um dos núcleos lógicos que existem no sistema de perfil. A nomenclatura conta de 0 ao número total de núcleos lógicos. Por exemplo, um sistema de quatro núcleos será contado do núcleo lógico 0 ao núcleo lógico 3.

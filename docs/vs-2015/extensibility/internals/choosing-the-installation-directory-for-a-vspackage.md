@@ -1,26 +1,21 @@
 ---
 title: Escolhendo o diretório de instalação para um VSPackage | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, installation directory
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 385877b8a682574946bfd43e1e51acd771d00a2b
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: d8812ce6eef882f4f1b4effe97320492a34e0f2d
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51775167"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58922317"
 ---
 # <a name="choosing-the-installation-directory-for-a-vspackage"></a>Escolhendo o diretório de instalação de um VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,11 +31,11 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do us
   
  Se o esquema de lado a lado usa um VSPackage de controle de versão, você pode usar subdiretórios para armazenar versões diferentes. Por exemplo:  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2002\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2002\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2003\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2003\  
   
- [ProgramFilesFolder] MyCompany\MyVSPackageProduct\V1.0\2005\  
+ [ProgramFilesFolder]MyCompany\MyVSPackageProduct\V1.0\2005\  
   
 ## <a name="managed-vspackages"></a>VSPackages gerenciados  
  VSPackages gerenciados também podem ser instalados em qualquer local. No entanto, você deve considerar sempre instalá-los para o cache de assembly global (GAC) para reduzir os tempos de carregamento de assembly. Como os VSPackages gerenciados sempre são assemblies de nome forte, instalá-los no GAC significa que sua verificação de assinatura de nome forte leva apenas no momento da instalação. Assemblies de nome forte instalados em outro lugar no sistema de arquivos devem ter suas assinaturas e verificadas sempre que eles são carregados. Quando você instala os VSPackages gerenciados no GAC, use a ferramenta de regpkg **/assembly** switch para gravar as entradas do registro que aponta para o nome forte do assembly.  
@@ -69,5 +64,4 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do us
 ## <a name="see-also"></a>Consulte também  
  [Escolher entre VSPackages compartilhados e com controle de versão](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)   
  [Gerenciar VSPackages](../../extensibility/managing-vspackages.md)   
- [Registro de pacote gerenciado](http://msdn.microsoft.com/en-us/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
-
+ [Registro de pacote gerenciado](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

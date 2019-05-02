@@ -1,5 +1,5 @@
 ---
-title: 'DA0023: alto tempo de CPU no GC | Microsoft Docs'
+title: 'DA0023: Alto tempo de CPU no GC | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: acfb3a5c88ba730960ac0f90a7b9263c2d02a204
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 931c753239345950f3a7db178a87007eab4da289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440891"
 ---
-# <a name="da0023-high-gc-cpu-time"></a>DA0023: tempo de CPU GC alto
+# <a name="da0023-high-gc-cpu-time"></a>DA0023: Tempo de CPU de GC elevado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0023 |  
@@ -42,7 +42,7 @@ Id da regra | DA0023 |
  Essa regra é acionada quando o tempo gasto na coleta de lixo é significativo em comparação com o tempo total de processamento do aplicativo.  
   
 > [!NOTE]
->  Quando a proporção de tempo gasto na coleta de lixo é excessivo em comparação com o tempo total de processamento do aplicativo, o aviso [DA0024: excesso de tempo de CPU no GC](../profiling/da0024-excessive-gc-cpu-time.md) é acionado em vez dessa regra.  
+> Quando a proporção de tempo gasto na coleta de lixo é excessiva em comparação com o tempo total de processamento do aplicativo, o aviso [DA0024: Excesso de tempo de CPU no GC](../profiling/da0024-excessive-gc-cpu-time.md) é acionado em vez dessa regra.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a [Exibição de Marcas](../profiling/marks-view.md) dos dados de criação de perfil. Encontre a coluna **Memória do .NET CLR\\% de tempo no GC**. Determine se há fases específicas da execução do programa em que a sobrecarga da coleta de lixo de memória gerenciada é mais pesada do que em outras fases. Compare os valores do valor de % de tempo no GC com a taxa de coleta de lixo relatada nos valores **Nº de coletas da Ger 0**, **Nº de coletas da Ger 1** e **Nº de coletas da Ger 2**.  

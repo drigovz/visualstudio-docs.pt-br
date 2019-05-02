@@ -1,12 +1,9 @@
 ---
 title: Erros de acesso a recursos adicionais para solução de problemas de dados | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: troubleshooting
 f1_keywords:
 - DSD_ImportXmlSchemaSameFileWrnHelpId
 - vbdata.ParameterizeFormDialog_NoDataSource
@@ -232,19 +229,18 @@ ms.assetid: 357c9f0a-9d59-4db4-9b7c-b96cad839961
 caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
-manager: ghogen
+manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 415d403bc5282e2759805558ea6a91a1c2cf9bdf
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+ms.openlocfilehash: 851a1f87cce5f4030a9ba5a4701b6c0055859f10
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49263006"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668711"
 ---
 # <a name="additional-resources-for-troubleshooting-data-access-errors"></a>Recursos adicionais para solução de problemas de erros de acesso a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos do Microsoft Developer Network (MSDN). A tabela a seguir lista os dados relacionados de fóruns disponíveis no MSDN.  
   
  [Controles de dados e vinculação de dados do Windows Forms](http://go.microsoft.com/fwlink/?LinkId=160179)  
@@ -272,4 +268,3 @@ Você pode obter ajuda com a solução de erros e avisos nos fóruns públicos d
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md)
-

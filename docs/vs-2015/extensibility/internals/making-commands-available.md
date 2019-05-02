@@ -1,14 +1,9 @@
 ---
 title: Disponibilizar comandos | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - menus [Visual Studio SDK], commands
 - best practices, menu and toolbar commands
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 00ed8231641718b6d0dce8d535b0c43e40b83dd8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436257"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quando vários VSPackages são adicionados ao Visual Studio, a interface do usuário (IU) pode ficar sobrecarregada com comandos. Você pode programar seu pacote para ajudar a reduzir esse problema, da seguinte maneira:  
   
--   O pacote do programa para que ele seja carregado apenas quando um usuário requer que ela.  
+- O pacote do programa para que ele seja carregado apenas quando um usuário requer que ela.  
   
--   O pacote do programa para que seus comandos são exibidos somente quando elas podem ser necessárias no contexto do estado atual do ambiente de desenvolvimento integrado (IDE).  
+- O pacote do programa para que seus comandos são exibidos somente quando elas podem ser necessárias no contexto do estado atual do ambiente de desenvolvimento integrado (IDE).  
   
 ## <a name="delayed-loading"></a>Carregamento atrasado  
  Habilitar uma forma comum de carregamento com atraso é projetar o VSPackage, de forma que seus comandos são exibidos na interface do usuário, mas o próprio pacote não será carregado até que um usuário clica em um dos comandos. Para fazer isso, no arquivo. VSCT, crie comandos que não têm nenhum sinalizador de comando.  
@@ -99,14 +94,14 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
 ### <a name="custom-context-guids"></a>GUIDs de contexto personalizado  
  Se um contexto de comando apropriado que GUID já não está definido, você pode definir um em seu VSPackage e, em seguida, programá-lo para ser ativos ou inativos conforme necessário para controlar a visibilidade de seus comandos. Use o <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> serviço para:  
   
--   Registrar os GUIDs de contexto (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
+- Registrar os GUIDs de contexto (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> método).  
   
--   Obter o estado de um contexto `GUID` (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método).  
+- Obter o estado de um contexto `GUID` (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> método).  
   
--   Ativar o contexto `GUID`s e desativar (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
+- Ativar o contexto `GUID`s e desativar (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
   
     > [!CAUTION]
-    >  Certifique-se de que o VSPackage não afeta o estado de qualquer contexto existente GUID porque pode depender de outros VSPackages neles.  
+    > Certifique-se de que o VSPackage não afeta o estado de qualquer contexto existente GUID porque pode depender de outros VSPackages neles.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir de um comando de VSPackage demonstra a visibilidade dinâmica de um comando que é gerenciado pelo contextos de comando sem carregar o VSPackage.  
@@ -156,4 +151,3 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
  [Como os VSPackages adicionam elementos da Interface do usuário](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Roteamento de comando em VSPackages](../../extensibility/internals/command-routing-in-vspackages.md)   
  [Adicionar itens de menu dinamicamente](../../extensibility/dynamically-adding-menu-items.md)
-

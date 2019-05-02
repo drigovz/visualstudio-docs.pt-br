@@ -1,14 +1,9 @@
 ---
 title: 'Erro: ASP.NET não instalado | Microsoft Docs'
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: reference
 f1_keywords:
 - vs.debug.error.http_not_supported
 dev_langs:
@@ -25,13 +20,13 @@ ms.assetid: 6286dd3d-3e2b-4edd-959d-81e0ed45500b
 caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 20a6d85fbdc7fad9077a19704b6c448c73dae787
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 2198ed401f714353be2dd18846dd527cc433e695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447316"
 ---
 # <a name="error-aspnet-not-installed"></a>Erro: ASP.NET não instalado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +35,7 @@ Esse erro ocorre quando o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] não 
   
 ### <a name="to-reinstall-aspnet"></a>Para reinstalar o ASP.NET  
   
-1.  De uma janela de prompt de comando, execute o seguinte comando:  
+1. De uma janela de prompt de comando, execute o seguinte comando:  
   
     ```  
     \WINDOWS\Microsoft.NET\Framework\version\aspnet_regiis -i  
@@ -49,10 +44,7 @@ Esse erro ocorre quando o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] não 
      em que *versão* representa o número de versão do .NET Framework instalado no seu computador, por exemplo, v1.0.370. Você pode determinar a versão do framework examinando o `\WINDOWS\Microsoft.NET\Framework` directory.  
   
     > [!NOTE]
-    >  Com o Windows Server 2003, você pode instalar [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] por meio **adicionar ou remover programas** no painel de controle.  
+    > Com o Windows Server 2003, você pode instalar o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] usando **Adicionar ou Remover Programas** no Painel de Controle.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
-
-
-

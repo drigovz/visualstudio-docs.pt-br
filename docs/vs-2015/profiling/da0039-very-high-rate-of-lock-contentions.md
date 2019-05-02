@@ -1,5 +1,5 @@
 ---
-title: 'DA0039: taxa muito alta de contenções de bloqueio | Microsoft Docs'
+title: 'DA0039: Alta taxa de contenções de bloqueio | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,17 +13,17 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5b994e14dc63d9fabe0c02b70f5df584c03067e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 14192551543bdfd5cc352ed4c7c45fa95630dcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54752403"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657656"
 ---
-# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: taxa muito alta de contenções de bloqueio
+# <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Taxa muito alta de contenções de bloqueio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [DA0039: Muita alta taxa de contenções de bloqueio](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [DA0039: Muita alta taxa de contenções de bloqueio](https://docs.microsoft.com/visualstudio/profiling/da0039-very-high-rate-of-lock-contentions).  
   
 |||  
 |-|-|  
@@ -39,7 +39,7 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [DA0039
  Os dados de desempenho do sistema coletados com os dados de criação de perfil indicam que ocorreu uma taxa excessivamente alta de contenções de bloqueio durante a execução do aplicativo. Considere uma nova criação de perfil usando o método de criação de perfil de simultaneidade para descobrir a causa da contenção.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- Os bloqueios são usados para proteger seções críticas do código que devem ser executadas em série por um thread por vez em um aplicativo multi-threaded. O CLR (Common Language Runtime) do Microsoft .NET fornece um conjunto completo de primitivos de sincronização e bloqueio. Por exemplo, a linguagem C# dá suporte a uma instrução de bloqueio (SyncLock no Visual Basic). Um aplicativo gerenciado pode chamar os métodos Monitor.Enter e Monitor.Exit no namespace System.Threading para adquirir e liberar um bloqueio diretamente. O .NET Framework dá suporte a primitivos de sincronização e bloqueio adicionais, incluindo classes que dão suporte a Mutexes, ReaderWriterLocks e Semaphores. Para obter mais informações, consulte [Visão geral dos primitivos de sincronização](http://go.microsoft.com/fwlink/?LinkId=177867) no Guia do Desenvolvedor do .NET Framework no site do MSDN. As classes do .NET Framework são colocadas em camada por conta própria sobre os serviços de sincronização de nível inferior internos do sistema operacional Windows. Eles incluem objetos de seção crítica e várias funções de sinalização de evento e de Espera diferentes. Para obter mais informações, consulte a seção [Synchronization](http://go.microsoft.com/fwlink/?LinkId=177869) (Sincronização) do Desenvolvimento do Win32 e COM na Biblioteca MSDN  
+ Os bloqueios são usados para proteger seções críticas do código que devem ser executadas em série por um thread por vez em um aplicativo multi-threaded. O CLR (Common Language Runtime) do Microsoft .NET fornece um conjunto completo de primitivos de sincronização e bloqueio. Por exemplo, a linguagem C# dá suporte a uma instrução de bloqueio (SyncLock no Visual Basic). Um aplicativo gerenciado pode chamar o `Monitor.Enter` e `Monitor.Exit` métodos no namespace System. Threading para adquirir e liberar um bloqueio diretamente. O .NET Framework dá suporte a primitivos de sincronização e bloqueio adicionais, incluindo classes que dão suporte a Mutexes, ReaderWriterLocks e Semaphores. Para obter mais informações, consulte [Visão geral dos primitivos de sincronização](http://go.microsoft.com/fwlink/?LinkId=177867) no Guia do Desenvolvedor do .NET Framework no site do MSDN. As classes do .NET Framework são colocadas em camada por conta própria sobre os serviços de sincronização de nível inferior internos do sistema operacional Windows. Eles incluem objetos de seção crítica e várias funções de sinalização de evento e de Espera diferentes. Para obter mais informações, consulte a seção [Synchronization](http://go.microsoft.com/fwlink/?LinkId=177869) (Sincronização) do Desenvolvimento do Win32 e COM na Biblioteca MSDN  
   
  Subjacentes às classes do .NET Framework e aos objetos nativos do Windows que são usados para sincronização e bloqueio estão os locais de memória compartilhada que devem ser alterados usando operações sincronizadas. As operações sincronizadas usam instruções específicas ao hardware que operam em locais de memória compartilhada para alterar seu estado usando operações atômicas. Operações atômicas têm a garantia de serem consistentes em todos os processadores no computador. Locks e WaitHandles são objetos do .NET que usam operações sincronizadas automaticamente quando são definidos ou redefinidos. Pode haver outras estruturas de dados de memória compartilhada no aplicativo que também exigem o uso de operações sincronizadas para que sejam atualizadas de uma forma thread-safe. Para obter mais informações, consulte [Operações sincronizadas](http://go.microsoft.com/fwlink/?LinkId=177870) na seção do .NET Framework da biblioteca MSND  
   
@@ -50,9 +50,9 @@ Para obter a documentação mais recente do Visual Studio 2017, consulte [DA0039
  Essa regra é acionada quando as medições feitas durante uma execução de criação de perfil indicam que há uma quantidade excessivamente alta de contenções de bloqueio. As contenções de bloqueio atrasam a execução de threads que estão aguardando o bloqueio. Até mesmo pequenas quantidades de contenção de bloqueio em testes de unidade ou em testes de carga em execução em um hardware de extremidade inferior devem ser investigadas.  
   
 > [!NOTE]
->  Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é significativa, mas não excessiva, a mensagem de informações [DA0038: alta taxa de contenções de bloqueio](../profiling/da0038-high-rate-of-lock-contentions.md) é acionada em vez dessa mensagem de aviso.  
+> Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é significativa mas não excessiva, a mensagem informativa [DA0038: Alta taxa de contenções de bloqueio](../profiling/da0038-high-rate-of-lock-contentions.md) mensagem de informações é acionada em vez dessa mensagem de aviso.  
   
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso  
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.  
   
- Essa regra é acionada somente quando o método de criação de perfil de simultaneidade não está sendo usado. O método de criação de perfil de simultaneidade é a melhor ferramenta a ser usada para diagnosticar problemas de desempenho relacionados à contenção de bloqueio em seu aplicativo. Colete dados de criação de perfil de simultaneidade para entender o comportamento de bloqueio do aplicativo. Isso inclui entender quais bloqueios têm uma contenção pesada, por quanto tempo a execução do thread é atrasada aguardando bloqueios com contenção e qual código específico está envolvido. Os perfis de simultaneidade coletam dados em todas as contenções de bloqueio, incluindo o comportamento de bloqueio de instalações nativas do Windows, classes do .NET Framework e todas as outras bibliotecas de terceiros referenciadas pelo aplicativo. Para obter informações sobre a criação de perfil de simultaneidade com base na IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Coletando dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md). Para obter links para informações sobre criação de perfil de simultaneidade por meio da linha de comando, consulte a seção **Usando o método de simultaneidade para coletar a contenção de recursos e dados de atividade de thread** de [Usando métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).
+ Essa regra é acionada somente quando o método de criação de perfil de simultaneidade não está sendo usado. O método de criação de perfil de simultaneidade é a melhor ferramenta a ser usada para diagnosticar problemas de desempenho relacionados à contenção de bloqueio em seu aplicativo. Colete dados de criação de perfil de simultaneidade para entender o comportamento de bloqueio do aplicativo. Isso inclui entender quais bloqueios têm uma contenção pesada, por quanto tempo a execução do thread é atrasada aguardando bloqueios com contenção e qual código específico está envolvido. Perfis de simultaneidade coletam dados em todas as contenções de bloqueio, incluindo o comportamento de bloqueio de instalações do Windows nativas, classes do .NET Framework e quaisquer outras bibliotecas de terceiros suas referências de aplicativo. Para obter informações sobre a criação de perfil de simultaneidade com base na IDE do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [Coletando dados de simultaneidade do thread e do processo](../profiling/collecting-thread-and-process-concurrency-data.md). Para obter links para informações sobre criação de perfil de simultaneidade por meio da linha de comando, consulte a seção **Usando o método de simultaneidade para coletar a contenção de recursos e dados de atividade de thread** de [Usando métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md).

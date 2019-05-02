@@ -3,14 +3,14 @@ title: Cargas de trabalho do Visual Studio para Mac
 description: Este artigo descreve as diversas cargas de trabalho que podem ser usadas no Visual Studio para Mac, incluindo aplicativos móveis do Xamarin, o ASP.NET Core e o Unity para jogos.
 author: conceptdev
 ms.author: crdun
-ms.date: 12/05/2018
+ms.date: 04/02/2019
 ms.assetid: DDC39599-8C5D-4CB9-8DA5-229E085384CA
-ms.openlocfilehash: 959af3acf8c6da1437ffc6efd66e984902e9e94a
-ms.sourcegitcommit: 5a65ca6688a2ebb36564657d2d73c4b4f2d15c34
+ms.openlocfilehash: 609f96f959b59184016093cdf2ba7a69bc6c0292
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54315456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809364"
 ---
 # <a name="visual-studio-for-mac-workloads"></a>Cargas de trabalho do Visual Studio para Mac
 
@@ -24,9 +24,13 @@ O Visual Studio para Mac vem pré-instalado com cargas de trabalho para desenvol
 
 ## <a name="mobile-applications-with-xamarin"></a>Aplicativos móveis com Xamarin
 
-O Xamarin permite que você crie aplicativos móveis de plataforma cruzada com .NET para aplicativos Android, iOS, tvOS, watchOS e Mac.
+O [Xamarin](xamarin.md) permite criar aplicativos móveis de plataforma cruzada com .NET para aplicativos Android, iOS, tvOS, watchOS e Mac.
 
 Para obter informações sobre como usar o Xamarin no Visual Studio para Mac, consulte a [Central de desenvolvedores do Xamarin](https://developer.xamarin.com/) e confira o [laboratório prático](https://github.com/Microsoft/vs4mac-labs/tree/master/Mobile/Getting-Started) de aplicativos móveis.
+
+## <a name="mac-desktop-applications"></a>Aplicativos Mac de área de trabalho
+
+Você pode criar aplicativos Mac com [Xamarin.Mac](https://docs.microsoft.com/xamarin/mac/) usando a estrutura de interface do usuário do Cocoa e [Xamarin.Forms no Mac](https://docs.microsoft.com/xamarin/xamarin-forms/platform/other/mac) para criar aplicativos que compartilham o código e a interface do usuário com outras plataformas.
 
 ## <a name="net-core-applications"></a>Aplicativos .NET Core
 

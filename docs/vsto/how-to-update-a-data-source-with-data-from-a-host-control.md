@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421010"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: Atualizar uma fonte de dados com dados de um controle de host
   Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas aos dados no controle. Há duas etapas principais nesse processo:
@@ -42,7 +42,7 @@ ms.locfileid: "56637588"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Para atualizar a fonte de dados na memória em tempo de execução
 
--   Chame o <xref:System.Windows.Forms.Binding.WriteValue%2A> método da <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados.
+- Chame o <xref:System.Windows.Forms.Binding.WriteValue%2A> método da <xref:System.Windows.Forms.Binding> objeto que associa o controle à fonte de dados.
 
      O exemplo a seguir salva as alterações feitas em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle em uma planilha do Excel para a fonte de dados. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.
 
@@ -61,7 +61,7 @@ ms.locfileid: "56637588"
    - Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     >  A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
+     > A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
 
      O exemplo a seguir configura um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para atualizar automaticamente a fonte de dados quando o valor no controle é alterado. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637588"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Para definir um controle para atualizar automaticamente a fonte de dados na memória usando o designer
 
-1.  No Visual Studio, abra o documento do Word ou uma pasta de trabalho do Excel no designer.
+1. No Visual Studio, abra o documento do Word ou uma pasta de trabalho do Excel no designer.
 
-2.  Clique no controle que você deseja atualizar automaticamente a fonte de dados.
+2. Clique no controle que você deseja atualizar automaticamente a fonte de dados.
 
-3.  No **propriedades** janela, expanda o **(DataBindings)** propriedade.
+3. No **propriedades** janela, expanda o **(DataBindings)** propriedade.
 
-4.  Ao lado de **(Avançado)** propriedade, clique no botão de reticências (![captura de tela de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "captura de tela de VisualStudioEllipsesButton")).
+4. Ao lado de **(Avançado)** propriedade, clique no botão de reticências (![captura de tela de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "captura de tela de VisualStudioEllipsesButton")).
 
-5.  No **formatação e associação avançada** caixa de diálogo, clique o **modo de atualização de fonte de dados** lista suspensa e selecione um dos seguintes valores:
+5. No **formatação e associação avançada** caixa de diálogo, clique o **modo de atualização de fonte de dados** lista suspensa e selecione um dos seguintes valores:
 
-    -   Para atualizar a fonte de dados quando o controle for validado, selecione **OnValidation**.
+    - Para atualizar a fonte de dados quando o controle for validado, selecione **OnValidation**.
 
-    -   Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, selecione **OnPropertyChanged**.
+    - Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, selecione **OnPropertyChanged**.
 
         > [!NOTE]
-        >  O **OnPropertyChanged** opção não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
+        > O **OnPropertyChanged** opção não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
 
-6.  Fechar o **formatação e associação avançada** caixa de diálogo.
+6. Fechar o **formatação e associação avançada** caixa de diálogo.
 
 ## <a name="update-the-database"></a>Atualizar o banco de dados
  Se a fonte de dados na memória estiver associada um banco de dados, você deve atualizar o banco de dados com as alterações à fonte de dados. Para obter mais informações sobre como atualizar um banco de dados, consulte [salvar dados no banco de dados](../data-tools/save-data-back-to-the-database.md) e [atualizar dados usando um TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Para atualizar o banco de dados
 
-1.  Chame o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método da <xref:System.Windows.Forms.BindingSource> para o controle.
+1. Chame o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método da <xref:System.Windows.Forms.BindingSource> para o controle.
 
      O <xref:System.Windows.Forms.BindingSource> é gerado automaticamente quando você adiciona um controle associado a dados para um documento ou pasta de trabalho em tempo de design. O <xref:System.Windows.Forms.BindingSource> conecta-se o controle para o conjunto de dados tipado em seu projeto. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637588"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Chamar o `Update` método do TableAdapter gerado no seu projeto.
+2. Chamar o `Update` método do TableAdapter gerado no seu projeto.
 
      O TableAdapter é gerado automaticamente quando você adiciona um controle associado a dados para um documento ou pasta de trabalho em tempo de design. O TableAdapter se conecta a conjunto de dados tipado em seu projeto no banco de dados. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

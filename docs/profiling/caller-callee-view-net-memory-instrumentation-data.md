@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 49b46c9d5fc3ee24b845e488752c15e70082c833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777057"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição do Chamador/Receptor – dados de instrumentação da memória do .NET
 O modo de exibição de Chamador/Computador Chamado dos dados de criação de perfil de memória do .NET coletados usando o método de instrumentação exibe dados de alocação e de tempo para uma função selecionada e as funções pai e filho da função selecionada. A exibição de Chamador/Computador Chamado contém três grades.

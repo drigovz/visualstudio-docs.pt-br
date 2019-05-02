@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4d1e0af87618955c492bef68be45c8c623f41218
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554512"
 ---
 # <a name="function-debug-interface-access-sdk"></a>Function (SDK de Acesso à Interface de Depuração)
 Cada função é identificada por um `SymTagFunction` símbolo.

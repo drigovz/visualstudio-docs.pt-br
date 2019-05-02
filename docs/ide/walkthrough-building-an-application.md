@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31806b05dc088da2e4cb5920f28a2e4cd04f0053
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582854"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -65,7 +65,7 @@ Em seguida, você compilará a solução com a configuração de build personali
 
 ### <a name="build-the-solution"></a>Criar a solução
 
--   Na barra de menus, escolha **Compilar** > **Compilar Solução**.
+- Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
     A Janela de **Saída** exibe os resultados do build. O build foi bem-sucedido.
 
@@ -192,7 +192,7 @@ Para obter mais informações, confira [Como: alterar o diretório de saída do 
 
      ![Comando Compilar solução no menu Compilar](../ide/media/exploreide-buildsolution.png)
 
-### <a name="specify-a-release-build-for-c"></a>Especificar um build de versão para o C# #
+### <a name="specify-a-release-build-for-c"></a>Especificar um build de versão para o C\#
 
 1. Abra o **Designer de Projeto**.
 

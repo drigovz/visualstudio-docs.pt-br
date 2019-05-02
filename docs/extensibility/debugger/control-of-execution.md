@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 649db74d7bfc727868ee9d568aba811736a24cc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925900"
 ---
 # <a name="control-of-execution"></a>Controle de execução
 O mecanismo de depuração (DES) normalmente envia um dos seguintes eventos como o último evento de inicialização:
@@ -39,11 +39,11 @@ O mecanismo de depuração (DES) normalmente envia um dos seguintes eventos como
 
 5. Se o usuário opta por intervir, encerrar ou sair de uma função, o IDE solicita que a sessão de depuração para chamar o programa `Step` método. O IDE, em seguida, passa a unidade da etapa (instrução, a instrução ou linha) e o tipo de etapa (seja para a etapa em, acima ou da função). Quando a etapa for concluída, o DE envia um evento de conclusão da etapa para a sessão de depuração, que é um evento de interrupção.
 
-    -ou-
+    - ou -
 
     Se o usuário opta por continuar a execução do ponteiro de instrução atual, o IDE solicita que a sessão de depuração para chamar o programa **Execute** método. O programa retoma a execução até que ele encontra a próxima condição de interrupção.
 
-    -ou-
+    - ou -
 
     Se a sessão de depuração é ignorar um evento de interrupção específico, a sessão de depuração chama o programa **continuar** método. Se o programa foi passo a passo em, acima ou fora de uma função quando ela encontrada a condição de interrupção, ele continua a etapa.
 

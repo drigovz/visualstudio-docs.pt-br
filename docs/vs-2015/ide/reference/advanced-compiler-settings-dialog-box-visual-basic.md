@@ -13,17 +13,16 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c1932f3b9a065115c7977207b0678fbcd44c2e4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441131"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Designer de Projeto** para especificar as propriedades avançadas de configuração de build do projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic.  
   
 ### <a name="to-access-this-dialog-box"></a>Para acessar essa caixa de diálogo  

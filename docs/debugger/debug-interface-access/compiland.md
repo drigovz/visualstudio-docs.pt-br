@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ecdd4284e4c7c417af6ebd935418d56cf601bb74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555255"
 ---
 # <a name="compiland"></a>Compiland
 Há um `SymTagCompiland` de símbolo para cada Compiland vinculado ao arquivo .exe. Informações de Compiland são divididas entre símbolos com um `SymTagCompiland` marca, que pode ser recuperada sem carregar símbolos de compiland adicionais, e símbolos com um `SymTagCompilandDetails` marca, que pode exigir o carregamento de símbolos adicionais.

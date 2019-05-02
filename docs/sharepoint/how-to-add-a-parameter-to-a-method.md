@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1bec6daa92d4e5b58b97c47a45fa32c410aced5a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a5b76e49285a629234557a973f6d4b45703f1cfd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967228"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>Como: Adicionar um parâmetro a um método
   Use um parâmetro para passar informações para o método ou para retornar informações de um método. Todos os métodos devem ter pelo menos um parâmetro. Para obter mais informações sobre como criar um parâmetro para dar suporte o tipo de método que você deseja criar, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -31,27 +31,27 @@ ms.locfileid: "56619947"
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Para adicionar um parâmetro a um método
 
-1.  Adicione um método a uma entidade.
+1. Adicione um método a uma entidade.
 
-2.  Na barra de menus, escolha **modo de exibição** > **Other Windows** > **detalhes do método BDC**.
+2. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **detalhes do método BDC**.
 
      O **detalhes do método BDC** janela é aberta. Para obter mais informações, consulte [visão geral de ferramentas de Design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md).
 
-3.  No **detalhes do método BDC** , expanda o nó do método e, em seguida, expanda o **parâmetros** nó.
+3. No **detalhes do método BDC** , expanda o nó do método e, em seguida, expanda o **parâmetros** nó.
 
-4.  No **adicionar um parâmetro** , escolha **criar parâmetro**.
+4. No **adicionar um parâmetro** , escolha **criar parâmetro**.
 
      Um novo parâmetro aparece sob o **parâmetros** nó.
 
-5.  Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+5. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
 
-6.  No **propriedades** janela, defina as **nome** propriedade para qualquer nome que faça sentido. Por exemplo, se o método retornará os clientes, você pode nomear o método **GetCustomers**.
+6. No **propriedades** janela, defina as **nome** propriedade para qualquer nome que faça sentido. Por exemplo, se o método retornará os clientes, você pode nomear o método **GetCustomers**.
 
-7.  No **detalhes do método BDC** janela, abra a lista que aparece para a direção do parâmetro e, em seguida, escolha **na**, **InOut**, **Out**, ou **retornar**.
+7. No **detalhes do método BDC** janela, abra a lista que aparece para a direção do parâmetro e, em seguida, escolha **na**, **InOut**, **Out**, ou **retornar**.
 
      Para obter mais informações sobre a direção de escolha para o método de tipo que você está criando, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
 
-8.  Modificar o descritor de tipo do parâmetro. Para obter mais informações, confira [Como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
+8. Modificar o descritor de tipo do parâmetro. Para obter mais informações, confira [Como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)

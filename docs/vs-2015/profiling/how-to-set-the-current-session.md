@@ -1,5 +1,5 @@
 ---
-title: Como definir a sessão atual | Microsoft Docs
+title: 'Como: Definir a sessão atual | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,14 +17,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edb5303a283de943ed99fc43003aacdeefe729c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6d7362392aeda9bcff61d811933eb4286d6c4cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102686"
 ---
-# <a name="how-to-set-the-current-session"></a>Como definir a sessão atual
+# <a name="how-to-set-the-current-session"></a>Como: Definir a sessão atual
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode abrir várias sessões de desempenho no **Gerenciador de Desempenho** e, em seguida, pode selecionar uma das sessões de desempenho visível para ser definida como a sessão atual.  
@@ -37,7 +37,7 @@ Você pode abrir várias sessões de desempenho no **Gerenciador de Desempenho**
   
 ### <a name="to-set-current-performance-session"></a>Para definir a sessão de desempenho como atual  
   
--   No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Definir como Sessão Atual**.  
+- No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Definir como Sessão Atual**.  
   
      O nome da sessão aparece em negrito.  
   

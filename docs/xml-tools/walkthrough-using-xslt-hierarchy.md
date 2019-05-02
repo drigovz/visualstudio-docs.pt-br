@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 83081b7fb03a4272622c25f783abbc7134fac12b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970381"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808152"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Passo a passo: Use a hierarquia XSLT
 
@@ -69,7 +69,7 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-3.  Adicione o seguinte *xslinclude. xsl* arquivo:
+3. Adicione o seguinte *xslinclude. xsl* arquivo:
 
     ```xml
     <?xml version='1.0'?>
@@ -103,12 +103,12 @@ O exemplo neste tópico demonstra a depuração em uma folha de estilos referenc
     </xsl:stylesheet>
     ```
 
-4.  Adicionar um ponto de interrupção na instrução `<xsl:include href="xslincludefile.xsl" />`.
+4. Adicionar um ponto de interrupção na instrução `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Inicie a depuração.
+5. Inicie a depuração.
 
-6.  Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a **intervir** botão. A depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
+6. Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a **intervir** botão. A depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: XSLT profiler](../xml-tools/walkthrough-xslt-profiler.md)
+- [Criador de perfil XSLT](../xml-tools/xslt-profiler.md)

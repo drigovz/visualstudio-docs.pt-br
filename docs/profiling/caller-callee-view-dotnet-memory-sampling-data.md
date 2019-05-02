@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: f3e07510f38c18f7d8e4a52d788935400b5a9388
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62776738"
 ---
 # <a name="callercallee-view---net-memory-sampling-data"></a>Exibição do Chamador/Receptor – dados de amostragem da memória do .NET
 A exibição de Chamador/Computador Chamado exibe dados de criação de perfil de memória do .NET para uma função selecionada e suas funções pai e filho. A exibição de Chamador/Computador Chamado contém três grades.

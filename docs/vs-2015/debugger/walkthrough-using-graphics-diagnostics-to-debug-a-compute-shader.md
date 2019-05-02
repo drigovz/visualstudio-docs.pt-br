@@ -1,38 +1,33 @@
 ---
-title: 'Passo a passo: Usando diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
-ms.custom: ''
+title: 'Passo a passo: Usando o diagnóstico de gráficos para depurar um sombreador de cálculo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
 caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 55f0b9de879011110d8df46c0e4d738265b0fa34
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51730650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080340"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Instruções passo a passo: usando diagnóstico de gráficos para depurar um sombreador computado
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráficos do Visual Studio para investigar um sombreador de cálculo que produz resultados incorretos.  
   
  Este passo a passo ilustra essas tarefas:  
   
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
   
--   Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.  
+- Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.  
   
--   Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.  
+- Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.  
   
 ## <a name="scenario"></a>Cenário  
  Nesse cenário, você escreveu uma simulação de dinâmica de fluidos que usa DirectCompute para executar as partes de computação mais intensa da atualização de simulação. Quando o aplicativo é executado, o processamento do conjunto de dados e da interface do usuário estiverem corretas, mas a simulação não se comportar conforme o esperado. Usando o diagnóstico de gráficos, você pode capturar o problema para um log de gráficos para que você possa depurar o aplicativo. O problema se parece com isso no aplicativo:  
@@ -78,7 +73,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
 1. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **pilha de chamadas do evento** para abrir o **pilha de chamadas do evento de gráficos** janela.  
   
-2. A partir do evento de desenho que renderiza os resultados da simulação, retroceder cada anterior `CSSetShader` eventos. Em seguida, nos **pilha de chamadas do evento de gráficos** janela, escolha a função principal para navegar até o site de chamada. No site de chamada, você pode usar o primeiro parâmetro do [CSSetShader](http://msdn.microsoft.com/library/ff476402.aspx) chamada de função para determinar qual computador sombreador é executado pelo próximo `Dispatch` eventos.  
+2. A partir do evento de desenho que renderiza os resultados da simulação, retroceder cada anterior `CSSetShader` eventos. Em seguida, nos **pilha de chamadas do evento de gráficos** janela, escolha a função principal para navegar até o site de chamada. No site de chamada, você pode usar o primeiro parâmetro do [CSSetShader](/windows/desktop/api/d3d11/nf-d3d11-id3d11devicecontext-cssetshader) chamada de função para determinar qual computador sombreador é executado pelo próximo `Dispatch` eventos.  
   
    Nesse cenário, há três pares de `CSSetShader` e `Dispatch` eventos em cada quadro. Trabalhando com versões anteriores, a terceiro par representa a integração de etapa (onde as partículas fluidas são movidas realmente), o segundo par representa a etapa de cálculo por força (onde as forças que afetam cada partícula são calculadas) e o primeiro par representa o etapa de cálculo por densidade.  
   
@@ -96,7 +91,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
     ![Depurar o sombreador de cálculo IntegrateCS. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift + F5).  
+4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift+F5).  
   
 5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de cálculo, exatamente como você fez na etapa anterior.  
   
@@ -115,6 +110,3 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
    Nesse cenário, porque os computadores sombreadores são compilados em tempo de execução, você pode simplesmente reiniciar o aplicativo depois de fazer as alterações para observar como eles afetam a simulação. Você não precisa recompilar o aplicativo. Quando você executa o aplicativo, você descobre que a simulação agora se comporta corretamente.  
   
    ![O fluido simulado se comporta corretamente. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-resolution.png "gfx_diag_demo_compute_shader_fluid_resolution")
-
-
-

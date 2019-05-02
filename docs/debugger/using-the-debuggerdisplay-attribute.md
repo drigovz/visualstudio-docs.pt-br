@@ -1,5 +1,5 @@
 ---
-title: Usando o atributo DebuggerDisplay | Microsoft Docs
+title: Exibir informações personalizadas usando DebuggerDisplay | Microsoft Docs
 ms.date: 01/09/2019
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,14 +12,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4073ad5f112f0585f01de756f2cde4b352b7446a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929614"
 ---
-# <a name="using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Usando o atributo DebuggerDisplay (C#, Visual Basic, F#, C + + / CLI)
+# <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Instruir o depurador o que mostram como usar o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas de variáveis do depurador. Esse atributo pode ser aplicado a assemblies, delegados, propriedades, campos e tipos.
 
 O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). Texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
@@ -32,7 +32,7 @@ Se o depurador avalia nesse implícita `ToString()` chamada depende de uma confi
 > Se o **Mostrar estrutura bruta de objetos nas janelas de variáveis** caixa de seleção é marcada na **Ferramentas/opções / depuração** caixa de diálogo, em seguida, a `DebuggerDisplay` atributo é ignorado.
 
 > [!NOTE]
-> Para código nativo, esse atributo só tem suporte no C + + c++ /CLI código CLI.
+> Para código nativo, esse atributo é suportado apenas no C++código /CLI.
 
 A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e saídas de exemplo.
 
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 O ", nq" sufixo informa o avaliador de expressão para remover as aspas ao exibir o valor final (nq = sem aspas).
 
 ## <a name="example"></a>Exemplo
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

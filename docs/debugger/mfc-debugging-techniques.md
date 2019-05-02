@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff3fbd9332c2d402e2b1f72880595bd649cf01c3
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
-ms.translationtype: MTE95
+ms.openlocfilehash: be4cd6555e358be763a8837444332affced44a94
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905438"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 Se você estiver depurando um programa MFC, essas técnicas de depuração poderão ser úteis.
@@ -220,9 +220,9 @@ Os blocos de objeto comuns, mostrados na segunda linha, permanecem alocados no h
 
 Os blocos diferentes de objeto incluem as matrizes e as estruturas alocadas com `new`. Nesse caso, quatro blocos diferentes de objeto foram alocados no heap, mas não desalocados.
 
-`Largest number used` dá o máximo de memória utilizada pelo programa a qualquer momento.
+`Largest number used` fornece o máximo de memória usada pelo programa a qualquer momento.
 
-`Total allocations` dá a quantidade total de memória usada pelo programa.
+`Total allocations` fornece a quantidade total de memória usada pelo programa.
 
 [Neste tópico](#BKMK_In_this_topic)
 
@@ -230,7 +230,7 @@ Os blocos diferentes de objeto incluem as matrizes e as estruturas alocadas com 
 Em um programa MFC, você pode usar [CMemoryState::DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para despejar uma descrição de todos os objetos no heap que não foram desalocados. `DumpAllObjectsSince` Despeja todos os objetos alocados desde o último [CMemoryState::Checkpoint](/cpp/mfc/reference/cmemorystate-structure#checkpoint). Se nenhuma chamada de `Checkpoint` tiver ocorrido, o `DumpAllObjectsSince` despejará todos os objetos e não objetos atualmente na memória.
 
 > [!NOTE]
-> Antes de usar o despejo de objeto do MFC, você deverá [habilitar o rastreamento de diagnóstico](#BKMK_Enabling_Memory_Diagnostics).
+> Antes de usar o despejo de objeto do MFC, você deverá [habilitar o rastreamento de diagnóstico](#BKMK_Enabling_memory_diagnostics).
 
 > [!NOTE]
 > O MFC despeja automaticamente todos os objetos vazados quando o programa sair, portanto você não precisará criar o código para despejar objetos nesse momento.

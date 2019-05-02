@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435131"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Como especificar eventos de build (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Eventos de build no Visual Basic podem ser usados para executar scripts, macros ou outras ações como parte do processo de compilação. Eventos de pré-build ocorrem antes da compilação; eventos de pós-build ocorrem após a compilação.  
@@ -30,27 +30,27 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
  Eventos de build são especificados na caixa de diálogo **Eventos de Build**, disponível na página **Compilar** do **Designer de Projeto**.  
   
 > [!NOTE]
->  O Visual Basic Express não dá suporte à entrada de eventos de build. Isso tem suporte apenas no produto Visual Studio completo.  
+> O Visual Basic Express não dá suporte à entrada de eventos de build. Isso tem suporte apenas no produto Visual Studio completo.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Como especificar eventos de pré-build e de pós-build  
   
 #### <a name="to-specify-a-build-event"></a>Para especificar um evento de build  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Compilar**.  
+2. Clique na guia **Compilar**.  
   
-3.  Clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.  
+3. Clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.  
   
-4.  Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.  
-  
-    > [!NOTE]
-    >  Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+4. Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.  
   
     > [!NOTE]
-    >  Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.  
+    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemplo: como alterar informações de manifesto usando um evento de pós-build  
+    > [!NOTE]
+    > Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.  
+  
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemplo: Como alterar informações de manifesto usando um evento de pós-compilação  
  O procedimento a seguir mostra como definir a versão mínima do sistema operacional no manifesto do aplicativo usando um comando .exe chamado de um evento de pós-build (o arquivo .exe.manifest no diretório do projeto). A versão mínima do sistema operacional é um número de quatro partes, como 4.10.0.0. Para fazer isso, o comando alterará a seção `<dependentOS>` do manifesto:  
   
 ```  
@@ -126,15 +126,15 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar um evento de pós-build para alterar o manifesto do aplicativo  
   
-1.  Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.  
+1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativos do Windows**. Nomeie o projeto `VBWinApp`.  
+2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Windows** e, em seguida, o modelo **Aplicativos do Windows**. Nomeie o projeto `VBWinApp`.  
   
-3.  Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-4.  No Designer de Projeto, acesse a página **Publicar** e defina o **Local de Publicação** como `C:\TEMP\`.  
+4. No Designer de Projeto, acesse a página **Publicar** e defina o **Local de Publicação** como `C:\TEMP\`.  
   
-5.  Publique o projeto clicando em **Publicar Agora**.  
+5. Publique o projeto clicando em **Publicar Agora**.  
   
      O arquivo de manifesto será compilado e colocado em `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Para exibir o manifesto, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, então clique em **Selecionar um programa em uma lista de programas instalados** e clique em **Bloco de Notas**.  
   
@@ -144,9 +144,9 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  No Designer de Projeto, vá para a guia **Compilar** e clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.  
+6. No Designer de Projeto, vá para a guia **Compilar** e clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.  
   
-7.  Na caixa **Linha de Comando do Evento de Pós-Build**, digite o seguinte comando:  
+7. Na caixa **Linha de Comando do Evento de Pós-Build**, digite o seguinte comando:  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
   
      A macro `$(TargetPath)` expressa o caminho completo para o arquivo executável que está sendo criado. Portanto, $(TargetPath).manifest especificará o manifesto do aplicativo criado no diretório bin. A publicação copiará esse manifesto para o local de publicação definido anteriormente.  
   
-8.  Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.  
+8. Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.  
   
      Exiba o manifesto novamente. Para exibir o manifesto, vá para o diretório de publicação, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, então em **Selecionar o programa em uma lista** e, em seguida, clique no **Bloco de Notas**.  
   
@@ -169,4 +169,4 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
  [Página de Compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Página Publicar, Designer de Projeto](../ide/reference/publish-page-project-designer.md)   
  [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   
- [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md)
+ [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md)

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8430c1814e83dbd8410b0f172a15d879bb221cf3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: f846b636d2790839de6d05d048fc7e24d0bc6253
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54956669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906686"
 ---
 # <a name="how-to-get-back-to-the-function-that-called-mfc-if-halted"></a>Como: Retornar à função que chamou o MFC em caso de interrupção
 
@@ -42,7 +42,7 @@ Se você usou o comando **Interromper** no menu **Depurar** para interromper o p
 
 ## <a name="navigate-to-the-function-from-which-mfc-was-called"></a>Navegue até a função da qual o MFC foi chamado
 
--   Use a janela **Pilha de Chamadas**.
+- Use a janela **Pilha de Chamadas**.
 
 ## <a name="see-also"></a>Consulte também
 

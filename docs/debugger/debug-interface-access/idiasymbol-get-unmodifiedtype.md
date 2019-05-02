@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb271a03a8932989d6201329c441a21a226f559
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2e609f59e0d72628be4233be52738ff244c6acca
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614279"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400176"
 ---
 # <a name="idiasymbolgetunmodifiedtype"></a>IDiaSymbol::get_unmodifiedType
 Recupera o tipo original para esse símbolo. Usado quando o [enumeração SymTagEnum](../../debugger/debug-interface-access/symtagenum.md) é definido como um tipo.
@@ -39,7 +39,7 @@ HRESULT get_unmodifiedType( 
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  O tipo atual é uma modificação do tipo original retornado. O tipo original para um símbolo pode ser determinado pelo primeiro obter o tipo do símbolo e, em seguida, interrogar que retornado para o tipo original. Observe que alguns símbolos podem não ter um tipo modificado do tipo original.

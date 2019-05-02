@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c910ab867be379264464650cef6bec00fc9d82f9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 371cdc85648b8b058267540b305162adf371c4f6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581813"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -55,7 +55,7 @@ Na próxima vez que você abrir o **Gerenciador de Servidores**, os recursos des
 
 O AAD (Azure Active Directory) habilita o suporte para logon único do usuário final em aplicativos Web ASP.NET MVC ou a autenticação do AD em serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao domínio do Active Directory podem usar suas contas existentes do AAD para se conectarem aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio.
 
-Para ver isso em ação, crie um aplicativo Web (**Arquivo** > **Novo Projeto** > **C#** > **Nuvem** > **Aplicativo Web ASP.NET**). Na caixa de diálogo **Novo Projeto ASP.NET**, escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
+Para ver isso em ação, crie um projeto de **Aplicativo Web ASP.NET**. Na caixa de diálogo **Novo Projeto ASP.NET**, escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.
 
 ![Caixa de diálogo Alterar autenticação para ASP.NET](../ide/media/vs2015_change_authentication.png)
 

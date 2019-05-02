@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afe3b2fd5bdae86d0b5046775c695766594ae9b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436194"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurando ou desabilitando o código do projeto no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,55 +37,55 @@ Em muitos casos, exceções sem tratamento no designer XAML podem ser causadas q
   
 #### <a name="to-determine-if-project-code-is-causing-an-exception"></a>Para determinar se o código do projeto está causando uma exceção  
   
-1.  Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para recarregar o designer**.  
+1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para recarregar o designer**.  
   
-2.  Na barra de menus, selecione **Depurar**, **Iniciar Depuração** para compilar e executar o aplicativo.  
+2. Na barra de menus, selecione **Depurar**, **Iniciar Depuração** para compilar e executar o aplicativo.  
   
      Se o aplicativo for compilado e executado com êxito, a exceção de tempo de design pode ser causada pela execução do seu código de projeto no designer.  
   
 #### <a name="to-debug-project-code-running-in-the-designer"></a>Para depurar o código de projeto em execução no designer  
   
-1.  Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.  
+1. Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.  
   
-2.  No Gerenciador de tarefas do Windows, selecione o botão **Finalizar Tarefa** para fechar todas as instâncias do Designer XAML do Visual Studio que estão sendo executadas.  
+2. No Gerenciador de tarefas do Windows, selecione o botão **Finalizar Tarefa** para fechar todas as instâncias do Designer XAML do Visual Studio que estão sendo executadas.  
   
      ![Instâncias de designer XAML no Gerenciador de tarefas](../designers/media/xaml-taskmanager.png "XAML_TaskManager")  
   
-3.  No Visual Studio, abra a página XAML que contém o código ou o controle que deseja depurar.  
+3. No Visual Studio, abra a página XAML que contém o código ou o controle que deseja depurar.  
   
-4.  Abra uma nova instância do Visual Studio e, em seguida, abra uma segunda instância do seu projeto.  
+4. Abra uma nova instância do Visual Studio e, em seguida, abra uma segunda instância do seu projeto.  
   
-5.  Defina um ponto de interrupção no código do projeto.  
+5. Defina um ponto de interrupção no código do projeto.  
   
-6.  Na nova instância do Visual Studio, na barra de menus, selecione **Depurar** e **Anexar ao Processo**.  
+6. Na nova instância do Visual Studio, na barra de menus, selecione **Depurar** e **Anexar ao Processo**.  
   
-7.  Na caixa de diálogo **Anexar ao Processo**, na lista de **Processos Disponíveis** selecione **XDesProc.exe** e, em seguida, selecione o botão **Anexar**.  
+7. Na caixa de diálogo **Anexar ao Processo**, na lista de **Processos Disponíveis** selecione **XDesProc.exe** e, em seguida, selecione o botão **Anexar**.  
   
      ![O processo de designer XAML](../designers/media/xaml-attach.png "XAML_Attach")  
   
      Este é o processo para o designer XAML na primeira instância do Visual Studio.  
   
-8.  Na primeira instância do Visual Studio, na barra de menus, selecione **Depurar**, **Iniciar Depuração**.  
+8. Na primeira instância do Visual Studio, na barra de menus, selecione **Depurar**, **Iniciar Depuração**.  
   
      Agora, você pode intervir em seu código que está sendo executado no designer.  
   
 #### <a name="to-disable-project-code-in-the-designer"></a>Para desabilitar o código do projeto no designer  
   
--   Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.  
+- Na caixa de diálogo de exceção sem tratamento, selecione o link **Clique aqui para desabilitar o código do projeto em execução e recarregar o designer**.  
   
--   Como alternativa, na barra de ferramentas do designer XAML, selecione o botão **Desabilitar código de projeto**.  
+- Como alternativa, na barra de ferramentas do designer XAML, selecione o botão **Desabilitar código de projeto**.  
   
      ![O botão Desabilitar código de projeto](../designers/media/xaml-disablecode.png "XAML_DisableCode")  
   
      Você pode alternar o botão novamente para reabilitar o código do projeto.  
   
     > [!NOTE]
-    >  Para projetos que buscam processadores ARM ou X64, o Visual Studio não pode executar o código do projeto no designer, portanto, o botão **Desabilitar código de projeto** está desabilitado no designer.  
+    > Para projetos que buscam processadores ARM ou X64, o Visual Studio não pode executar o código do projeto no designer, portanto, o botão **Desabilitar código de projeto** está desabilitado no designer.  
   
--   Qualquer opção fará com que o designer recarregue e, em seguida, desabilitará todos os códigos para o projeto associado.  
+- Qualquer opção fará com que o designer recarregue e, em seguida, desabilitará todos os códigos para o projeto associado.  
   
     > [!NOTE]
-    >  Desabilitar o código do projeto pode levar a uma perda de dados de tempo de design. Uma alternativa é depurar o código em execução no designer.  
+    > Desabilitar o código do projeto pode levar a uma perda de dados de tempo de design. Uma alternativa é depurar o código em execução no designer.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando o XAML no Visual Studio e no Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

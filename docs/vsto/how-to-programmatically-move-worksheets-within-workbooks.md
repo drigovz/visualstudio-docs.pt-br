@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 20ca03e8d7a3c574501d879cf9949d26fd7ba3a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7e62e397bd9f8c2a0e8e8c8b7ed6581e289a9efc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595731"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62812731"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>Como: Mover planilhas em pastas de trabalho de forma programática
   Programaticamente, você pode alterar a posição de planilhas em relação a outras planilhas em uma pasta de trabalho. Se você não especificar um local para a folha movida, o Excel cria uma nova pasta de trabalho para contê-lo.
@@ -27,14 +27,14 @@ ms.locfileid: "56595731"
 
 ## <a name="to-move-a-worksheet-in-a-document-level-customization"></a>Para mover uma planilha em uma personalização no nível de documento
 
-1.  Atribuir o número total de folhas na pasta de trabalho a uma variável e, em seguida, mova a primeira planilha para que ele se torne o último deles.
+1. Atribuir o número total de folhas na pasta de trabalho a uma variável e, em seguida, mova a primeira planilha para que ele se torne o último deles.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#24)]
 
 ## <a name="to-move-a-worksheet-in-a-vsto-add-in"></a>Para mover uma planilha em um suplemento do VSTO
 
-1.  Atribuir o número total de folhas na pasta de trabalho a uma variável e, em seguida, mova a primeira planilha para que ele se torne o último deles.
+1. Atribuir o número total de folhas na pasta de trabalho a uma variável e, em seguida, mova a primeira planilha para que ele se torne o último deles.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#16)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#16](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#16)]

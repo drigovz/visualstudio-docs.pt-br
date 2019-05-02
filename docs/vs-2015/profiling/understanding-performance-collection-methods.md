@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e398d7e5e297daa68663902efb8a9fa0775c86fa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431635"
 ---
 # <a name="understanding-performance-collection-methods"></a>Noções básicas sobre métodos de coleta de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54805302"
 As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode usar para coletar dados de desempenho. Este tópico descreve os diferentes métodos e sugere alguns cenários nos quais a coleta de dados com um método específico pode ser apropriada.  
   
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 |Método|Descrição|  
 |------------|-----------------|  
@@ -38,7 +38,7 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
   
  Usando alguns dos métodos de criação de perfil, você também pode coletar dados adicionais, como contadores de desempenho de software e hardware. Para mais informações, consulte [Coletando dados de desempenho adicionais](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Amostragem  
+## <a name="sampling"></a> Amostragem  
  O método de criação de perfil de amostragem coleta dados estatísticos sobre o trabalho executado por um aplicativo durante uma execução de criação de perfil. O método de amostragem é simples e tem pouco efeito na execução dos métodos de aplicativo.  
   
  A amostragem é o método padrão de ferramentas de criação de perfil do Visual Studio. É útil para o seguinte:  
@@ -57,7 +57,7 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
   
   [Exibições de dados do método de amostragem](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> Instrumentação  
+## <a name="instrumentation"></a> Instrumentação  
  A método de criação de perfil de instrumentação coleta tempo detalhado para as chamadas de função em um aplicativo de perfil. Criação de perfil de instrumentação é útil para o seguinte:  
   
 - Investigar gargalos de entrada/saída, como E/S de disco.  
@@ -82,7 +82,7 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
   
   [Exibições de dados do método de instrumentação](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> Simultaneidade  
+## <a name="concurrency"></a> Simultaneidade  
  Criação de perfil de simultaneidade coleta informações sobre aplicativos multithread. Contenção de recursos perfis coleta informações de pilha de chamadas detalhada toda vez que threads simultâneas são forçadas a aguardar o acesso a um recurso compartilhado. Visualização de simultaneidade também coleta informações mais gerais sobre como seu aplicativo multithread interage consigo mesmo, o hardware, o sistema operacional e outros processos no computador host:  
   
 - Relatórios de contenção do recurso exibem o número total de contenções e o tempo total gasto aguardando um recurso para os módulos, funções, linhas de código-fonte e instruções no qual ocorreu a espera. Gráficos de linha do tempo também mostram a contenção, conforme ocorreram.  
@@ -97,7 +97,7 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
   
   [Visualização Simultânea](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> Memória do .NET  
+## <a name="net_memory"></a> Memória do .NET  
  O método de criação de perfil para alocação de memória do .NET interrompe o processador do computador em cada alocação de um objeto do .NET Framework em um aplicativo de perfil. Quando os dados de tempo de vida do objeto também são coletados, o criador de perfil interrompe o processador após cada coleta de lixo do .NET Framework.  
   
  O criador de perfil coleta informações sobre o tipo, tamanho e número de objetos que foram criados em uma alocação ou foram destruídos em uma coleta de lixo.  
@@ -118,7 +118,7 @@ As ferramentas de Perfil do Visual Studio fornecem cinco métodos que você pode
   
   [Exibições de dados da memória do .NET](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Interações de Camada  
+## <a name="tier_interaction"></a> Interações de Camada  
  Criação de perfil de interação de camadas adiciona informações a um arquivo de dados de criação de perfil sobre chamadas [!INCLUDE[vstecado](../includes/vstecado-md.md)] síncronas entre uma [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] página ou em outro aplicativo e um [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] banco de dados. Os dados incluem o número e a hora de chamadas e os tempos mínimos e máximos. Dados de interação de camadas podem ser adicionados para criação de perfil de dados que são coletados com a amostragem, instrumentação, memória do .NET ou métodos de simultaneidade.  
   
  ![Dados de criação de perfil da interação de camadas](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -129,5 +129,5 @@ Dados de interação de camadas que são coletados por ferramentas de criação 
  [Exibições de interação de camada](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Consulte também  
- [Como coletar dados de desempenho de um site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [Como: Coletar dados de desempenho para um Site da Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guia do iniciante à criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md)

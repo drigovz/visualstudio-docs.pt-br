@@ -1,19 +1,21 @@
 ---
 title: Configurar diagnóstico para máquinas virtuais e Serviços de Nuvem do Azure | Microsoft Docs
 description: Saiba como configurar o diagnóstico para depurar os serviços de nuvem e as VMs (máquinas virtuais) do Azure no Visual Studio.
-author: ghogen
+author: mikejo5000
 manager: jillfra
 ms.assetid: e70cd7b4-6298-43aa-adea-6fd618414c26
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0dbeccece261a347a2de5218910eddca8b2d715c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
+ms.openlocfilehash: 45e0eca12ecde6c6ede2e290f109ef04ce2035ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556231"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
 Quando você precisa solucionar problemas de uma máquina virtual ou serviço de nuvem do Azure, pode usar o Visual Studio para configurar mais facilmente o Diagnóstico do Azure. O diagnóstico captura dados do sistema e dados de log em máquinas virtuais e instâncias de máquinas virtuais que executam o serviço de nuvem. Dados de diagnóstico são transferidos para uma conta de armazenamento que você escolhe. Para obter mais informações sobre o registro em log de diagnóstico no Azure, consulte [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -154,6 +156,7 @@ Se você estiver usando o SDK do Azure 2.5 e quiser especificar uma fonte de dad
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Contadores de desempenho
 As informações do contador de desempenho podem ajudá-lo a localizar gargalos do sistema e ajustar o sistema e desempenho do aplicativo. Para obter mais informações, consulte [Criar e usar contadores de desempenho em um aplicativo do Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx). Para capturar contadores de desempenho, marque a caixa de seleção **Habilitar a transferência de contadores de desempenho**. Para aumentar ou diminuir o intervalo entre a transferência de logs de evento para sua conta de armazenamento, altere o valor do **Período de Transferência (min)**. Selecione as caixas de seleção para os contadores de desempenho que você deseja controlar.
 

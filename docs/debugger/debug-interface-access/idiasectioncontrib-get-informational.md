@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b00d07b788fe07fbe2e879f01a98929927743a0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839583"
 ---
 # <a name="idiasectioncontribgetinformational"></a>IDiaSectionContrib::get_informational
 Recupera um sinalizador que indica se uma seção contém comentários ou informações semelhantes.

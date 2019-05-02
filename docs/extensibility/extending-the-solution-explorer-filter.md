@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260fbaa15f7880e604985fca50e8d99ac0e0fd39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ef9439d9cebfa8b80b214e52d077ab1f770d4750
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912119"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>Estender o filtro do Gerenciador de soluções
 Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostra apenas classe factory arquivos c# na **Gerenciador de soluções**, como demonstra este passo a passo.
@@ -26,13 +26,13 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
 
 ### <a name="create-a-visual-studio-package-project"></a>Criar um projeto de pacote do Visual Studio
 
-1.  Crie um projeto do VSIX chamado `FileFilter`. Adicionar um modelo de item de comando personalizado chamado **FileFilter**. Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Crie um projeto do VSIX chamado `FileFilter`. Adicionar um modelo de item de comando personalizado chamado **FileFilter**. Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Adicione uma referência ao `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.
+2. Adicione uma referência ao `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.
 
-3.  Fazer com que o comando de menu apareça na **Gerenciador de soluções** barra de ferramentas. Abra o *FileFilterPackage.vsct* arquivo.
+3. Fazer com que o comando de menu apareça na **Gerenciador de soluções** barra de ferramentas. Abra o *FileFilterPackage.vsct* arquivo.
 
-4.  Alterar o `<Button>` bloco para o seguinte:
+4. Alterar o `<Button>` bloco para o seguinte:
 
     ```xml
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">
@@ -46,28 +46,28 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
 
 ### <a name="update-the-manifest-file"></a>Atualizar o arquivo de manifesto
 
-1.  No *vsixmanifest* de arquivo, adicione um ativo que é um componente MEF.
+1. No *vsixmanifest* de arquivo, adicione um ativo que é um componente MEF.
 
-2.  Sobre o **ativos** guia, escolha o **New** botão.
+2. Sobre o **ativos** guia, escolha o **New** botão.
 
-3.  No **tipo** campo, escolha **mefcomponent**.
+3. No **tipo** campo, escolha **mefcomponent**.
 
-4.  No **fonte** campo, escolha **um projeto na solução atual**.
+4. No **fonte** campo, escolha **um projeto na solução atual**.
 
-5.  No **Project** campo, escolha **FileFilter**e, em seguida, escolha o **Okey** botão.
+5. No **Project** campo, escolha **FileFilter**e, em seguida, escolha o **Okey** botão.
 
 ### <a name="add-the-filter-code"></a>Adicione o código de filtro
 
-1.  Adicione alguns GUIDs para o *FileFilterPackageGuids.cs* arquivo:
+1. Adicione alguns GUIDs para o *FileFilterPackageGuids.cs* arquivo:
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2.  Adicionar um arquivo de classe ao projeto FileFilter nomeado *FileNameFilter.cs*.
+2. Adicionar um arquivo de classe ao projeto FileFilter nomeado *FileNameFilter.cs*.
 
-3.  Substitua o namespace vazio e a classe vazia com o código a seguir.
+3. Substitua o namespace vazio e a classe vazia com o código a seguir.
 
      O `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` método usa a coleção que contém a raiz da solução (`rootItems`) e retorna a coleção de itens a serem incluídos no filtro.
 
@@ -158,7 +158,7 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
 
     ```
 
-4.  Na *FileFilter.cs*, remova o posicionamento de comando e código do construtor FileFilter de manipulação. O resultado deve ter esta aparência:
+4. Na *FileFilter.cs*, remova o posicionamento de comando e código do construtor FileFilter de manipulação. O resultado deve ter esta aparência:
 
     ```csharp
     private FileFilter(Package package)
@@ -174,7 +174,7 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
 
      Remover o `ShowMessageBox()` método também.
 
-5.  Na *FileFilterPackage.cs*, substitua o código no `Initialize()` método com o seguinte:
+5. Na *FileFilterPackage.cs*, substitua o código no `Initialize()` método com o seguinte:
 
     ```csharp
     protected override void Initialize()
@@ -186,10 +186,10 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
 
 ### <a name="test-your-code"></a>Testar seu código
 
-1.  Compile e execute o projeto. Uma segunda instância do Visual Studio é exibida. Isso é chamado na instância experimental.
+1. Compile e execute o projeto. Uma segunda instância do Visual Studio é exibida. Isso é chamado na instância experimental.
 
-2.  Na instância experimental do Visual Studio, abra um projeto c#.
+2. Na instância experimental do Visual Studio, abra um projeto c#.
 
-3.  Procure pelo botão, você adicionou na **Gerenciador de soluções** barra de ferramentas. Ele deve ser o quarto botão da esquerda.
+3. Procure pelo botão, você adicionou na **Gerenciador de soluções** barra de ferramentas. Ele deve ser o quarto botão da esquerda.
 
-4.  Quando você clicar no botão, todos os arquivos devem ser filtrados e você deverá ver **todos os itens foram filtrados da exibição.** no **Gerenciador de soluções**.
+4. Quando você clicar no botão, todos os arquivos devem ser filtrados e você deverá ver **todos os itens foram filtrados da exibição.** no **Gerenciador de soluções**.

@@ -8,16 +8,18 @@ ms.technology: vs-ide-nodejs
 ms.author: mikejo
 author: mikejo5000
 manager: jillfra
-ms.openlocfilehash: c6987cfe4934933bc85680d7ae4d3b3cda8fa060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ba823e113167bbd78eaf6ac6fe71110866715f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561085"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript no Visual Studio
 
 O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a criar aplicativos usando JavaScript ou TypeScript.
+
+<!-- markdownlint-disable MD033 -->
 
 <h2>Saiba como usar JavaScript no Visual Studio com inícios rápidos de cinco minutos</h2>
 
@@ -225,5 +227,4 @@ O Visual Studio fornece várias ferramentas diferentes para ajudá-lo a criar ap
         </a>
     </li>
 </ul><p>
-
 ---

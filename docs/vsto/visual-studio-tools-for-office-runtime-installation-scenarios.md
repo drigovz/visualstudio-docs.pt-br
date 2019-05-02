@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438733"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Ferramentas do Visual Studio para cenários de instalação de tempo de execução do Office
   Você pode instalar o Visual Studio 2010 Tools for Office runtime de três maneiras:
@@ -46,7 +46,7 @@ ms.locfileid: "56638602"
  Quando você instala o Office developer tools no Visual Studio, as extensões do Office para o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] e o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] são sempre instaladas no computador de desenvolvimento. As extensões do Office para o .NET Framework 3.5 são instaladas somente se o .NET Framework 3.5 já está presente no computador de desenvolvimento. Se você instalar o .NET Framework 3.5, depois de instalar o [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], o tempo de execução instala automaticamente as extensões do Office para o .NET Framework 3.5 na primeira vez que você criar um projeto do Office que tem como alvo o .NET Framework 3.5.
 
 > [!WARNING]
->  Você não pode criar um projeto do Office que tem como alvo o .NET Framework 3.5 usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou posterior.
+> Você não pode criar um projeto do Office que tem como alvo o .NET Framework 3.5 usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou posterior.
 
  Para obter mais informações sobre como instalar o Office developer tools, consulte [como: Configurar um computador para desenvolver soluções do Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 

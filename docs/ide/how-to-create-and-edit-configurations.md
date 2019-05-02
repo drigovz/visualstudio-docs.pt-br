@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6a54909ad928cd923d7ab0d9df4cfcfdb400029
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824237"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como: Criar e editar configurações
 
@@ -46,81 +46,77 @@ Na caixa de diálogo **Configuration Manager** é possível usar a lista suspens
 
  Depois de definir as configurações desejadas, é possível definir as propriedades do projeto adequadas para essas configurações.
 
-### <a name="to-set-properties-based-on-configurations"></a>Para definir as propriedades com base nas configurações
+### <a name="set-properties-based-on-configurations"></a>Definir as propriedades com base nas configurações
 
--   No **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**.
+Para definir as propriedades com base nas configurações, no **Gerenciador de Soluções**, abra o menu de atalho para um projeto e, em seguida, escolha **Propriedades**. É possível definir propriedades para suas configurações. Por exemplo, para uma Configuração de versão, é possível especificar se o código é otimizado quando a solução é criada, e para uma Configuração de depuração, é possível especificar se o símbolo de compilação condicional `DEBUG` está incluído.
 
-     A janela **Páginas de Propriedades** é aberta.
+Para obter mais informações sobre as configurações da página de propriedades, consulte [Gerenciar propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md).
 
-     É possível definir propriedades para suas configurações. Por exemplo, para uma Configuração de versão, é possível especificar se o código é otimizado quando a solução é criada, e para uma Configuração de depuração, é possível especificar se o símbolo de compilação condicional `DEBUG` está incluído. Para obter mais informações sobre as configurações da página de propriedades, consulte [Gerenciar propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md).
+## <a name="create-a-project-configuration"></a>Criar uma configuração de projeto
 
-## <a name="create-and-modify-project-configurations"></a>Criar e modificar configurações de projeto
+1. Abra a caixa de diálogo **Configuration Manager**.
 
-### <a name="to-create-a-project-configuration"></a>Para criar uma configuração de projeto
+2. Selecione um projeto na coluna **Projeto**.
 
-1.  Abra a caixa de diálogo **Configuration Manager**.
-
-2.  Selecione um projeto na coluna **Projeto**.
-
-3.  Na lista suspensa **Configuração** desse projeto, escolha **Novo**.
+3. Na lista suspensa **Configuração** desse projeto, escolha **Novo**.
 
      A caixa de diálogo **Nova Configuração de Projeto** é aberta.
 
-4.  Na caixa **Nome**, insira um nome para a nova configuração.
+4. Na caixa **Nome**, insira um nome para a nova configuração.
 
-5.  Para usar as configurações de propriedade com base em uma configuração de projeto existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.
+5. Para usar as configurações de propriedade com base em uma configuração de projeto existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.
 
-6.  Para criar uma configuração em toda a solução ao mesmo tempo, a marque a caixa de seleção **Criar nova configuração de solução**.
+6. Para criar uma configuração em toda a solução ao mesmo tempo, a marque a caixa de seleção **Criar nova configuração de solução**.
 
-### <a name="to-rename-a-project-configuration"></a>Para renomear uma configuração de projeto
+## <a name="rename-a-project-configuration"></a>Renomear uma configuração de projeto
 
-1.  Abra a caixa de diálogo **Configuration Manager**.
+1. Abra a caixa de diálogo **Configuration Manager**.
 
-2.  Na coluna **Projeto**, selecione o projeto que tenha a configuração de projeto que você deseja renomear.
+2. Na coluna **Projeto**, selecione o projeto que tenha a configuração de projeto que você deseja renomear.
 
-3.  Na lista suspensa **Configuração** desse projeto, escolha **Editar**.
+3. Na lista suspensa **Configuração** desse projeto, escolha **Editar**.
 
      A caixa de diálogo **Editar Configurações de Projeto** é aberta.
 
-4.  Selecione o nome de configuração de projeto que você deseja alterar.
+4. Selecione o nome de configuração de projeto que você deseja alterar.
 
-5.  Selecione **Renomear** e, em seguida, digite um novo nome.
+5. Selecione **Renomear** e, em seguida, digite um novo nome.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Criar e modificar configurações de build em toda a solução
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>Para compilar uma configuração de build em toda a solução
 
-1.  Abra a caixa de diálogo **Configuration Manager**.
+1. Abra a caixa de diálogo **Configuration Manager**.
 
-2.  Na lista suspensa **Configuração da solução ativa**, escolha **Nova**.
+2. Na lista suspensa **Configuração da solução ativa**, escolha **Nova**.
 
      A caixa de diálogo **Nova configuração de solução** é aberta.
 
-3.  Na caixa de texto **Nome**, insira um nome para a nova configuração.
+3. Na caixa de texto **Nome**, insira um nome para a nova configuração.
 
-4.  Para usar as configurações de uma configuração de solução existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.
+4. Para usar as configurações de uma configuração de solução existente, na lista suspensa **Copiar configurações de**, escolha uma configuração.
 
-5.  Se você desejar criar configurações de projeto ao mesmo tempo, marque a caixa de seleção **Criar novas configurações de projeto**.
+5. Se você desejar criar configurações de projeto ao mesmo tempo, marque a caixa de seleção **Criar novas configurações de projeto**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>Para renomear uma configuração de build em toda a solução
 
-1.  Abra a caixa de diálogo **Configuration Manager**.
+1. Abra a caixa de diálogo **Configuration Manager**.
 
-2.  Na lista suspensa **Configuração da Solução Ativa**, escolha **Editar**.
+2. Na lista suspensa **Configuração da Solução Ativa**, escolha **Editar**.
 
      A caixa de diálogo **Editar Configurações da Solução** é aberta.
 
-3.  Selecione o nome de configuração da solução que você deseja alterar.
+3. Selecione o nome de configuração da solução que você deseja alterar.
 
-4.  Selecione **Renomear** e, em seguida, digite um novo nome.
+4. Selecione **Renomear** e, em seguida, digite um novo nome.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>Para modificar uma configuração de build em toda a solução
 
-1.  Abra a caixa de diálogo **Configuration Manager**.
+1. Abra a caixa de diálogo **Configuration Manager**.
 
-2.  Na lista suspensa **Configuração da solução ativa**, selecione a configuração desejada.
+2. Na lista suspensa **Configuração da solução ativa**, selecione a configuração desejada.
 
-3.  No painel **Contextos do projeto**, para cada projeto, selecione a **Configuração** e a **Plataforma** desejadas e selecione se deseja **Criá-la** e se deseja **Implantá-la**.
+3. No painel **Contextos do projeto**, para cada projeto, selecione a **Configuração** e a **Plataforma** desejadas e selecione se deseja **Criá-la** e se deseja **Implantá-la**.
 
 ## <a name="see-also"></a>Consulte também
 

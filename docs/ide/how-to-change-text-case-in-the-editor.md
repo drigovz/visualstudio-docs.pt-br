@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 04922b703fd2c1158a98fc4574ad217cccd5016e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a2c0a6f7c2203e7b3a37f974d916010dbe70b31f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824211"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Como: Alterar maiúsculas e minúsculas do texto no editor
 
@@ -27,11 +27,11 @@ ms.locfileid: "55907445"
 
 ## <a name="to-switch-text-to-upper-case"></a>Para mudar o texto para letras maiúsculas
 
-1.  Selecione o texto que deseja converter.
+1. Selecione o texto que deseja converter.
 
-2.  No menu **Editar**, selecione **Avançado**.
+2. No menu **Editar**, selecione **Avançado**.
 
-3.  Para converter texto e deixar todas as letras maiúsculas, escolha **Colocar em maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.
+3. Para converter texto e deixar todas as letras maiúsculas, escolha **Colocar em maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.
 
     – ou —
 

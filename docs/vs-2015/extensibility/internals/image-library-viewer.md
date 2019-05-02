@@ -1,21 +1,17 @@
 ---
 title: Visualizador da biblioteca de imagem | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c0e277a123fe24da9824fae94b13eee686f5663
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51778008"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062583"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -74,7 +70,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
 |||  
 |-|-|  
-|**Subelemento**|**Definição**|  
+|**Subelement**|**Definição**|  
 |Importar|Importa os símbolos do arquivo de manifesto fornecido para uso no manifesto do atual.|  
 |Guid|O símbolo representa um GUID e deve corresponder ao GUID de formatação.|  
 |ID|O símbolo representa uma ID e deve ser um inteiro não negativo.|  
@@ -96,7 +92,7 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |CommonProgramFiles|O valor da variável de ambiente % CommonProgramFiles %|  
 |LocalAppData|O valor da variável de ambiente % LocalAppData %|  
 |ManifestFolder|A pasta que contém o arquivo de manifesto|  
-|Meus documentos|O caminho completo da pasta Meus documentos do usuário atual|  
+|MyDocuments|O caminho completo da pasta Meus documentos do usuário atual|  
 |ProgramFiles|O valor da variável de ambiente % ProgramFiles %|  
 |Sistema|A pasta Windows\System32|  
 |WinDir|O valor da variável de ambiente % WinDir %|  
@@ -135,15 +131,15 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 |-|-|  
 |**Atributo**|**Definição**|  
 |URI|[Obrigatório] Um URI que define onde a imagem pode ser carregada de. Ele pode ser um dos seguintes:<br /><br /> -A [Pack URI](http://msdn.microsoft.com/library/aa970069\(v=vs.100\).aspx) usando o aplicativo: autoridade<br /><br /> -Referência de recurso um componente absoluto<br /><br /> -Um caminho para um arquivo que contém um recurso nativo|  
-|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada no plano de fundo claro.<br /><br /> - *Escuro*: A origem pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: A origem pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o **plano de fundo** atributo for omitido, a origem pode ser usada em qualquer tela de fundo.<br /><br /> Se **plano de fundo** é *luz*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, o cores da fonte nunca são invertidas. Se **plano de fundo** é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada pela imagem **AllowColorInversion** atributo.|  
+|Informações preliminares|[Opcional] Indica qual tipo de plano de fundo que a fonte se destina a ser usado.<br /><br /> Ele pode ser um dos seguintes:<br /><br /> - *Luz*: A fonte pode ser usada no plano de fundo claro.<br /><br /> - *Escuro*: A fonte pode ser usada em um plano de fundo escuro.<br /><br /> - *HighContrast*: A fonte pode ser usada em qualquer tela de fundo no modo de alto contraste.<br /><br /> - *HighContrastLight*: A fonte pode ser usada no plano de fundo claro no modo de alto contraste.<br /><br /> -*HighContrastDark*: A fonte pode ser usada em um plano de fundo escuro no modo de alto contraste.<br /><br /> Se o **plano de fundo** atributo for omitido, a origem pode ser usada em qualquer tela de fundo.<br /><br /> Se **plano de fundo** é *luz*, *escuro*, *HighContrastLight*, ou *HighContrastDark*, o cores da fonte nunca são invertidas. Se **plano de fundo** é omitido ou definido como *HighContrast*, a inversão de cores da fonte é controlada pela imagem **AllowColorInversion** atributo.|  
   
  Um \<origem > elemento pode ter exatamente um dos seguintes subelementos opcionais:  
   
 ||||  
 |-|-|-|  
 |**Elemento**|**Atributos (todos necessária)**|**Definição**|  
-|\<Tamanho >|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
-|\<SizeRange >|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
+|\<Size>|Valor|A origem será usada para imagens de determinado tamanho (em unidades de dispositivo). A imagem será quadrada.|  
+|\<SizeRange>|MinSize, MaxSize|A origem será usada para imagens de MinSize para tamanho máximo (em unidades de dispositivo), inclusive. A imagem será quadrada.|  
 |\<Dimensões >|Largura, altura|A origem será usada para imagens de determinada largura e altura (em unidades de dispositivo).|  
 |\<DimensionRange >|MinWidth, MinHeight,<br /><br /> MaxWidth, MaxHeight|A origem será usada para imagens de largura/altura mínimo para a largura/altura máxima (em unidades de dispositivo), inclusive.|  
   
@@ -228,10 +224,9 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
 ## <a name="notes"></a>Observações  
   
--   Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers  
+- Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers  
   
--   A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.  
+- A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.  
   
 ## <a name="sample-output"></a>Saída de Exemplo  
  Essa ferramenta não gera nenhuma saída.
-

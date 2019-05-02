@@ -1,5 +1,5 @@
 ---
-title: 'Como: publicar um aplicativo WPF com estilos visuais habilitados | Microsoft Docs'
+title: 'Como: Publicar um aplicativo WPF com estilos visuais habilitados | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953911"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898341"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como publicar um aplicativo WPF com estilos visuais habilitados
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como: Publicar um aplicativo WPF com estilos visuais habilitados
 
 Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral de estilos visuais](/windows/desktop/Controls/visual-styles-overview). Para obter mais informações sobre a mensagem de erro, consulte [solucionar problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
@@ -31,7 +31,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 
   Em seguida, você pode mover os arquivos publicados para o local do qual você deseja que os usuários finais instalarem o aplicativo.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar a solução sem estilos visuais habilitados
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Publicar a solução sem estilos visuais habilitados
 
 1. Certifique-se de que seu projeto não tem estilos visuais habilitados. Primeiro, verifique o arquivo de manifesto do projeto para o XML a seguir. Em seguida, se o XML estiver presente, coloque o XML com uma marca de comentário.
 
@@ -72,7 +72,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 
          Esse botão mostra todos os itens de projeto, incluindo aqueles que foram excluídos e aqueles que normalmente estão ocultas. O arquivo de manifesto é exibido como um item de projeto.
 
-2. Criar e publicar sua solução. Para obter mais informações sobre como publicar a solução, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Criar e publicar sua solução. Para obter mais informações sobre como publicar a solução, consulte [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Criar um arquivo de manifesto
 

@@ -15,19 +15,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 961ee6e14ea7b9f6292f14b9356e5d1ab233c8a4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f0130ba9e893d5a4036df9ee1bc2ab22c8e18008
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929875"
 ---
 # <a name="mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>A depuração de modo misto para processos IA64 não é compatível.
 O Visual Studio não oferece suporte à depuração de modo misto de código gerenciado e nativo em processos IA64. Isso significa que, durante a depuração, você não pode depurar de código gerenciado para código nativo e vice-versa.
 
 ### <a name="workarounds"></a>Soluções alternativas
 
--   Depure seu código gerenciado e nativo em sessões separadas de depuração.
+- Depure seu código gerenciado e nativo em sessões separadas de depuração.
 
      - ou -
 
@@ -35,19 +35,19 @@ O Visual Studio não oferece suporte à depuração de modo misto de código ger
 
 ### <a name="to-change-the-platform-to-32-bit-visual-basic-or-c"></a>Para alterar a plataforma para 32 bits (Visual Basic ou C#)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
 
-2.  Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
+2. Nas páginas de propriedades, clique na guia **Compilar** ou **Depurar**.
 
-3.  Clique em **Plataforma** e selecione x86 na lista de plataformas.
+3. Clique em **Plataforma** e selecione x86 na lista de plataformas.
 
      Por padrão, os compiladores padrão do Visual Basic e do C# produzem código para ser executado em qualquer CPU. Em um computador de 64 bits, esses binários são executados como processos de 64 bits. Para executar em um processo de 32 bits, você deve escolher **Win32** e não **AnyCPU**.
 
 ### <a name="to-change-the-platform-to-32-bit-cc"></a>Para alterar a plataforma para 32 bits (C/C++)
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto e clique em **Propriedades** no menu de atalho.
 
-2.  Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
+2. Nas Páginas de Propriedades, clique em **Plataforma** e selecione Win32 na lista de plataformas.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

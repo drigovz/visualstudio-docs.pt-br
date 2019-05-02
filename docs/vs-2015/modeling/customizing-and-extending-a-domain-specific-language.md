@@ -1,43 +1,40 @@
 ---
 title: Personalizando e estendendo uma linguagem específica do domínio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, creating solutions
 ms.assetid: b155eb79-4e0a-4a99-a6f2-ca4f811fb5ca
 caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 3d5b55a9b9a55d00cbfb7928295699c254f72639
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 0bd0feefb2d184a6d9b9667b2b4498403a5868b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49180681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433312"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personalizando e estendendo uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários níveis na qual você pode definir as ferramentas de modelagem:  
   
-1.  Defina uma linguagem específica de domínio (DSL) usando o diagrama de definição de DSL. Você pode criar rapidamente uma DSL com uma notação diagramática, uma forma XML legível e as ferramentas básicas necessárias para gerar o código e outros artefatos.  
+1. Defina uma linguagem específica de domínio (DSL) usando o diagrama de definição de DSL. Você pode criar rapidamente uma DSL com uma notação diagramática, uma forma XML legível e as ferramentas básicas necessárias para gerar o código e outros artefatos.  
   
      Para obter mais informações, consulte [como definir uma linguagem específica do domínio](../modeling/how-to-define-a-domain-specific-language.md).  
   
-2.  Ajuste a DSL usando os recursos mais avançados de definição de DSL. Por exemplo, você pode fazer com que os links adicionais aparecem quando o usuário cria um elemento. Essas técnicas são obtidas principalmente na definição de DSL, e alguns exigem algumas linhas de código do programa.  
+2. Ajuste a DSL usando os recursos mais avançados de definição de DSL. Por exemplo, você pode fazer com que os links adicionais aparecem quando o usuário cria um elemento. Essas técnicas são obtidas principalmente na definição de DSL, e alguns exigem algumas linhas de código do programa.  
   
-3.  Estenda suas ferramentas de modelagem usando o código do programa. O VMSDK foi projetado especificamente para facilitar a integração de suas extensões com o código gerado a partir da Definição de DSL.  Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+3. Estenda suas ferramentas de modelagem usando o código do programa. O VMSDK foi projetado especificamente para facilitar a integração de suas extensões com o código gerado a partir da Definição de DSL.  Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Quando você atualizou o arquivo de definições de DSL, não se esqueça de clicar **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções antes de recompilar sua solução.  
+> Quando você atualizou o arquivo de definições de DSL, não se esqueça de clicar **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções antes de recompilar sua solução.  
   
-##  <a name="customShapes"></a> Nesta seção  
+## <a name="customShapes"></a> Nesta seção  
   
 |Para obter esse efeito|Consulte este tópico|  
 |----------------------------|-------------------------|  
@@ -62,13 +59,13 @@ O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários n
 |Preserve o layout da forma e a aparência em cópia e arraste e solte.|Adicionar as formas e conectores para copiado `ElementGroupPrototype`. É o método mais conveniente para substituir `ElementOperations.CreateElementGroupPrototype()`<br /><br /> Ver [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
 |Cole formas em um local escolhido, como a posição atual do cursor.|Substituir `ClipboardCommandSet.ProcessOnCopy()` para usar a versão específica do local de `ElementOperations.Merge().` consulte [personalizar o comportamento de cópia](../modeling/customizing-copy-behavior.md).|  
 |Criar links adicionais ao colar|Override ClipboardCommandSet.ProcessOnPasteCommand()|  
-|Permitir arrastar e soltar neste diagrama, outras DSLs ou UML, diagramas e elementos do Windows|Consulte [como: adicionar um manipulador de arrastar e soltar](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
+|Permitir arrastar e soltar neste diagrama, outras DSLs ou UML, diagramas e elementos do Windows|Confira [Como Adicionar um manipulador do tipo "arrastar e soltar"](../modeling/how-to-add-a-drag-and-drop-handler.md)|  
 |Permitir que uma forma ou a ferramenta a ser arrastado para uma forma de filho, como uma porta, como se ele foi arrastado para o pai.|Defina uma diretiva Element Merge na classe de objeto de destino para encaminhar o objeto solto ao pai. Ver [Personalizando a criação de elemento e movimentação](../modeling/customizing-element-creation-and-movement.md).|  
 |Permitir que uma forma ou a ferramenta a ser arrastado para uma forma e têm links adicionais ou objetos criados. Por exemplo, para permitir que um comentário a ser solto em um item ao qual ele deve ser vinculado.|Definir uma diretiva Element Merge na classe de domínio de destino e definir os links a ser gerado. Em casos complexos, você pode adicionar código personalizado. Ver [Personalizando a criação de elemento e movimentação](../modeling/customizing-element-creation-and-movement.md).|  
 |Crie um grupo de elementos com uma ferramenta. Por exemplo, um componente com um conjunto fixo de portas.|Substitua o método de inicialização da caixa de ferramentas no ToolboxHelper.cs. Crie um protótipo de grupo de elemento (EGP) que contém os elementos e seus vínculos de relação. Ver [personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md).<br /><br /> Inclua as formas de entidade de segurança e a porta em que o EGP ou definir BoundsRules para posicionar as formas de porta, quando o EGP é instanciado. Ver [BoundsRules restringem o local de forma e tamanho](../modeling/boundsrules-constrain-shape-location-and-size.md).|  
 |Use uma ferramenta de conexão para criar uma instância de vários tipos de relação.|Adicione diretivas de conectar-se de Link (LCD) para o construtor de Conexão que é invocado pela ferramenta. Os LCDs determinam o tipo da relação entre os tipos dos dois elementos. Para fazer isso dependem dos estados dos elementos, você pode adicionar código personalizado. Ver [personalizando ferramentas e a caixa de ferramentas](../modeling/customizing-tools-and-the-toolbox.md).|  
 |Ferramentas de adesivas – o usuário pode clicar duas vezes qualquer ferramenta para criar muitas formas ou conectores em sucessão.|No Gerenciador de DSL, selecione o `Editor` nó. Na janela Propriedades, defina **usa itens de caixa de ferramentas adesivo**.|  
-|Definir comandos de menu|Consulte [como: modificar um comando de Menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
+|Definir comandos de menu|Confira [Como Modificar um comando de menu padrão](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)|  
 |Restringir o modelo com as regras de validação|Consulte [validação em uma linguagem específica de domínio](../modeling/validation-in-a-domain-specific-language.md)|  
 |Gere código, arquivos de configuração ou documentos de uma DSL.|[Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)|  
 |Personalizar como os modelos são salvos ao arquivo.|Consulte [Personalizando o armazenamento de arquivos e a serialização de XML](../modeling/customizing-file-storage-and-xml-serialization.md)|  
@@ -81,6 +78,3 @@ O Visual Studio de modelagem e o SDK de visualização (VMSDK) oferece vários n
  [Como definir uma linguagem específica de domínio](../modeling/how-to-define-a-domain-specific-language.md)   
  [Escrevendo código para personalizar uma linguagem específica de domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md)   
  [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Diagramas de classe de propriedades de tipos em UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.shapes.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: 6e1ef2d0-d67a-401a-bd64-d5e034decd2c
 caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: e8baad41658cc6144f08d0b6b4d415aa4ff6e499
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51750108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387780"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Propriedades de tipos em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,17 +26,17 @@ ms.locfileid: "51750108"
 Em um diagrama de classe UML, uma *tipo* é uma classe, uma interface ou uma enumeração.  
   
 > [!NOTE]
->  Este tópico é sobre as propriedades de tipos em diagramas de classe UML. Para mais informações, consulte os seguintes tópicos:  
+> Este tópico é sobre as propriedades de tipos em diagramas de classe UML. Para mais informações, consulte os seguintes tópicos:  
   
--   [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)  
+- [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Propriedades de atributos em diagramas de classe UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Propriedades de associações em diagramas de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Propriedades de associações em diagramas de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Propriedades  
  Estas são as propriedades de uma classe, interface ou enumeração.  
@@ -65,6 +62,3 @@ Em um diagrama de classe UML, uma *tipo* é uma classe, uma interface ou uma enu
  [Propriedades de operações em diagramas de classe UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
  [Propriedades de associações em diagramas de classe UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)   
  [Diagramas de classe UML: diretrizes](../modeling/uml-class-diagrams-guidelines.md)
-
-
-

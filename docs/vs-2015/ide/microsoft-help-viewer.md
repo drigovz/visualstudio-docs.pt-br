@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430863"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ ms.locfileid: "54755032"
 Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer.  
   
 > [!WARNING]
->  Quando você instala o Visual Studio, pode obter o Help Viewer. Para começar a ler os tópicos do Help Viewer, em vez de no site de download do MSDN, acesse o menu **Ajuda** no Visual Studio, selecione **Definir Preferência de Ajuda** e, em seguida, selecione **Iniciar no Help Viewer**. Os tópicos da ajuda offline para uma determinada versão do Visual Studio estão disponíveis somente após o lançamento final da respectiva versão.  
+> Quando você instala o Visual Studio, pode obter o Help Viewer. Para começar a ler os tópicos do Help Viewer, em vez de no site de download do MSDN, acesse o menu **Ajuda** no Visual Studio, selecione **Definir Preferência de Ajuda** e, em seguida, selecione **Iniciar no Help Viewer**. Os tópicos da ajuda offline para uma determinada versão do Visual Studio estão disponíveis somente após o lançamento final da respectiva versão.  
   
  Você pode fazer o seguinte:  
   
--   Localize e baixe conjuntos de conteúdo, que também são chamados de livros.  
+- Localize e baixe conjuntos de conteúdo, que também são chamados de livros.  
   
--   Procure e pesquise o sumário para localizar tópicos por título.  
+- Procure e pesquise o sumário para localizar tópicos por título.  
   
--   Pesquise assuntos no índice.  
+- Pesquise assuntos no índice.  
   
--   Localize informações usando a pesquisa de texto completo.  
+- Localize informações usando a pesquisa de texto completo.  
   
--   Exibir, definir como indicador e imprimir tópicos.  
+- Exibir, definir como indicador e imprimir tópicos.  
   
 ## <a name="navigating-the-help-viewer"></a>Navegando no Help Viewer  
  Você pode localizar informações no conteúdo instalado usando as guias de navegação, exibir o conteúdo instalado na guia ou nas guias de tópico e gerenciar o conteúdo usando a guia **Gerenciar Conteúdo**. Você também pode executar tarefas adicionais usando os botões na barra de ferramentas e localizar informações adicionais no canto inferior direito da janela.  

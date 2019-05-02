@@ -19,29 +19,28 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 936ab49a07da5065b14b4a56325607001352f747
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 758491a068fe2c2c7318717f5481b41839c49a3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419775"
 ---
 # <a name="createitem-task"></a>Tarefa CreateItem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Popula as coleções de itens com os itens de entrada. Isso permite que os itens sejam copiados de uma lista para outra.  
   
 > [!NOTE]
->  Essa tarefa foi preterida. Do .NET Framework 3.5 em diante, grupos de itens podem ser colocados dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
+> Essa tarefa foi preterida. Do .NET Framework 3.5 em diante, grupos de itens podem ser colocados dentro de elementos [Target](../msbuild/target-element-msbuild.md). Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
 ## <a name="attributes"></a>Atributos  
  A tabela a seguir descreve os parâmetros da tarefa `CreateItem`.  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
-|`AdditionalMetadata`|Parâmetro de matriz `String` opcional.<br /><br /> Especifica os metadados adicionais para anexar aos itens de saída.  Especifique o nome de metadados e o valor do item com a seguinte sintaxe:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Vários pares de nome/valor de metadados devem ser separados por ponto e vírgula. Se o nome ou o valor contiver um ponto e vírgula ou outros caracteres especiais, eles devem ser escapados. Para obter mais informações, confira [Como: usar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
-|`Exclude`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica os itens a serem excluídos da coleção de itens de saída. Esse parâmetro pode conter especificações de curinga. Para mais informações, consulte [Itens](../msbuild/msbuild-items.md) e [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).|  
+|`AdditionalMetadata`|Parâmetro de matriz `String` opcional.<br /><br /> Especifica os metadados adicionais para anexar aos itens de saída.  Especifique o nome de metadados e o valor do item com a seguinte sintaxe:<br /><br /> *MetadataName* `=` *MetadataValue*<br /><br /> Vários pares de nome/valor de metadados devem ser separados por ponto e vírgula. Se o nome ou o valor contiver um ponto e vírgula ou outros caracteres especiais, eles devem ser escapados. Para obter mais informações, confira [Como: Escapar caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md).|  
+|`Exclude`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica os itens a serem excluídos da coleção de itens de saída. Esse parâmetro pode conter especificações de curinga. Para obter mais informações, veja [Itens](../msbuild/msbuild-items.md) e [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md).|  
 |`Include`|<xref:Microsoft.Build.Framework.ITaskItem>`[]`Parâmetro obrigatório.<br /><br /> Especifica os itens a serem incluídos na coleção de itens de saída. Esse parâmetro pode conter especificações de curinga.|  
 |`PreserveExistingMetadata`|Parâmetro `Boolean` opcional.<br /><br /> Se `True`, somente os metadados adicionais se aplicarão, se eles ainda não existirem.|  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814558"
 ---
 # <a name="model-user-requirements"></a>Requisitos de usuário do modelo
 
@@ -56,7 +56,7 @@ Você pode criar várias exibições diferentes dos requisitos dos usuários.  C
 
 Observe que a maioria dos tipos de diagrama pode ser usada para outras finalidades. Para obter uma visão geral dos tipos de diagrama, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Mostrando as regras de negócio
+## <a name="BusinessRules"></a> Mostrando as regras de negócio
 
 Uma regra de negócios é um requisito que não está associado um caso de uso específico e deve ser observado em todo o sistema.
 
@@ -76,19 +76,19 @@ Os tópicos a seguir fornecem mais informações:
 |-|-|
 |Como desenvolver um código que obedeça às regras de negócio|[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço
+## <a name="QoSRequirements"></a> Que descreve a qualidade dos requisitos de serviço
 
 Há várias categorias de qualidade de requisito de serviço. Elas incluem o seguinte:
 
--   Desempenho
+- Desempenho
 
--   Segurança
+- Segurança
 
--   Usabilidade
+- Usabilidade
 
--   Confiabilidade
+- Confiabilidade
 
--   Robustez
+- Robustez
 
 Você pode incluir alguns desses requisitos nas descrições de casos de uso específico. Outros requisitos não são específicos para casos de uso e com mais eficiência são gravados em um documento separado. Quando possível, é útil cumprir o vocabulário definido pelo modelo de requisitos. No exemplo a seguir, observe-se de que as palavras principais usadas requisitos de estão os títulos das classes nas ilustrações anteriores, casos de uso e atores:
 

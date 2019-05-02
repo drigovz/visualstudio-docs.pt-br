@@ -8,70 +8,70 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18627c629e428e00c719459f7a243b74b7c4f26a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 74133386d2dbd6d6b3ccb099a0b9231bc9deb073
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796483"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>Passo a passo: Criar um SDK usando C++
 Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, o pacote SDK como um Visual Studio VSIX (extensão), e, em seguida, usá-lo para criar um aplicativo. O passo a passo é dividida nestas etapas:
 
--   [Para criar o nativo e bibliotecas de tempo de execução do Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
+- [Para criar o nativo e bibliotecas de tempo de execução do Windows](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createClassLibrary)
 
--   [Para criar o projeto de extensão NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
+- [Para criar o projeto de extensão NativeMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createVSIX)
 
--   [Para criar um aplicativo de exemplo que usa a biblioteca de classes](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
+- [Para criar um aplicativo de exemplo que usa a biblioteca de classes](../extensibility/walkthrough-creating-an-sdk-using-cpp.md#createSample)
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Para criar o nativo e bibliotecas de tempo de execução do Windows
+## <a name="createClassLibrary"></a> Para criar o nativo e bibliotecas de tempo de execução do Windows
 
-1.  Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
-2.  Na lista de modelos, expanda **Visual C++** > **Windows Universal**e, em seguida, selecione o **DLL (aplicativos universais do Windows)** modelo. No **nome** , especifique `NativeMath`e, em seguida, escolha o **Okey** botão.
+2. Na lista de modelos, expanda **Visual C++** > **Windows Universal**e, em seguida, selecione o **DLL (aplicativos universais do Windows)** modelo. No **nome** , especifique `NativeMath`e, em seguida, escolha o **Okey** botão.
 
-3.  Atualização *NativeMath.h* para coincidir com o código a seguir.
+3. Atualização *NativeMath.h* para coincidir com o código a seguir.
 
      [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
 
-4.  Atualização *NativeMath.cpp* para corresponder a este código:
+4. Atualização *NativeMath.cpp* para corresponder a este código:
 
      [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
 
-5.  Na **Gerenciador de soluções**, abra o menu de atalho **solução 'NativeMath'** e, em seguida, escolha **Add** > **novo projeto**.
+5. Na **Gerenciador de soluções**, abra o menu de atalho **solução 'NativeMath'** e, em seguida, escolha **Add** > **novo projeto**.
 
-6.  Na lista de modelos, expanda **Visual C++** e, em seguida, selecione o **componente de tempo de execução do Windows** modelo. No **nome** , especifique `NativeMathWRT`e, em seguida, escolha o **Okey** botão.
+6. Na lista de modelos, expanda **Visual C++** e, em seguida, selecione o **componente de tempo de execução do Windows** modelo. No **nome** , especifique `NativeMathWRT`e, em seguida, escolha o **Okey** botão.
 
-7.  Atualização *Class1.h* para corresponder a este código:
+7. Atualização *Class1.h* para corresponder a este código:
 
      [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
 
-8.  Atualização *Class1.cpp* para corresponder a este código:
+8. Atualização *Class1.cpp* para corresponder a este código:
 
      [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
 
 9. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
-##  <a name="createVSIX"></a> Para criar o projeto de extensão NativeMathVSIX
+## <a name="createVSIX"></a> Para criar o projeto de extensão NativeMathVSIX
 
-1.  Na **Gerenciador de soluções**, abra o menu de atalho **solução 'NativeMath'** e, em seguida, escolha **Add** > **novo projeto**.
+1. Na **Gerenciador de soluções**, abra o menu de atalho **solução 'NativeMath'** e, em seguida, escolha **Add** > **novo projeto**.
 
-2.  Na lista de modelos, expanda **Visual c#** > **extensibilidade**e, em seguida, selecione **projeto VSIX**. No **nome** , especifique **NativeMathVSIX**e, em seguida, escolha o **Okey** botão.
+2. Na lista de modelos, expanda **Visual c#** > **extensibilidade**e, em seguida, selecione **projeto VSIX**. No **nome** , especifique **NativeMathVSIX**e, em seguida, escolha o **Okey** botão.
 
-3.  Na **Gerenciador de soluções**, abra o menu de atalho **vsixmanifest**e, em seguida, escolha **Exibir código**.
+3. Na **Gerenciador de soluções**, abra o menu de atalho **vsixmanifest**e, em seguida, escolha **Exibir código**.
 
-4.  Use o seguinte XML para substituir o XML existente.
+4. Use o seguinte XML para substituir o XML existente.
 
     [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
 
-5.  Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathVSIX** do projeto e, em seguida, escolha **Add** > **Novo Item**.
+5. Na **Gerenciador de soluções**, abra o menu de atalho para o **NativeMathVSIX** do projeto e, em seguida, escolha **Add** > **Novo Item**.
 
-6.  Na lista de **itens do Visual c#**, expanda **dados**e, em seguida, selecione **arquivo XML**. No **nome** , especifique `SDKManifest.xml`e, em seguida, escolha o **Okey** botão.
+6. Na lista de **itens do Visual c#**, expanda **dados**e, em seguida, selecione **arquivo XML**. No **nome** , especifique `SDKManifest.xml`e, em seguida, escolha o **Okey** botão.
 
-7.  Use esse XML para substituir o conteúdo do arquivo:
+7. Use esse XML para substituir o conteúdo do arquivo:
 
      [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
 
@@ -135,9 +135,9 @@ Este passo a passo mostra como criar uma biblioteca C++ nativa matemática SDK, 
 
 17. Na **Explorador de arquivos**, navegue até a *$SolutionRoot$ \NativeMathVSIX\bin\Debug* pasta e, em seguida, execute *NativeMathVSIX.vsix* para iniciar a instalação.
 
-18. Escolha o **instalar** botão, aguarde a conclusão da instalação e, em seguida, inicie o Visual Studio.
+18. Escolha o **instalar** botão, aguarde a conclusão da instalação e, em seguida, abra o Visual Studio.
 
-##  <a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes
+## <a name="createSample"></a> Para criar um aplicativo de exemplo que usa a biblioteca de classes
 
 1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 

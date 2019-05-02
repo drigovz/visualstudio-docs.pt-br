@@ -2,7 +2,6 @@
 title: Interface IDebugApplicationNode100 | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a6cbe92c6789b702adc69f598a995f84c01ef86
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: d8de6f57cabe808df1506870fe65da31ef74e644
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436026"
 ---
 # <a name="idebugapplicationnode100-interface"></a>Interface IDebugApplicationNode100
 O `IDebugApplicationNode100` interface estende a funcionalidade dos [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md). Você pode obter uma instância dessa interface chamando QueryInterface em uma implementação de [IDebugApplicationNode Interface](../../winscript/reference/idebugapplicationnode-interface.md).  
   
 > [!IMPORTANT]
->  Essa interface é implementada pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
+> Essa interface é implementada pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  A interface `IDebugApplicationNode100` expõe os métodos a seguir.  

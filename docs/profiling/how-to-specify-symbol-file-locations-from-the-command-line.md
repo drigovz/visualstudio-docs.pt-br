@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c8ceb1b6360fb45c3894823bbbf817057f16d99
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fa265a3b7ebde80f7398f0c5972d5265533890f0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433464"
 ---
 # <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como: Especificar locais de arquivo de símbolo da linha de comando
 Para exibir informações de símbolo como nomes de função e números de linha, a ferramenta de linha de comando VSPerfReport precisa ter acesso aos arquivos de símbolo (.*pdb*) dos componentes analisados e aos arquivos do sistema do Windows. Os arquivos de símbolo são criados quando um componente é compilado. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md). A VSPerfReport procura arquivos de símbolo automaticamente nos seguintes locais:
@@ -35,7 +35,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   Você também pode usar ambos os métodos.
 
 > [!NOTE]
->  Se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda precisa configurar o VSPerfReport para que ele use o local e o servidor, conforme descrito mais adiante neste tópico.
+> Se o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, confira [Como: Referenciar informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda precisa configurar o VSPerfReport para que ele use o local e o servidor, conforme descrito mais adiante neste tópico.
 
 ## <a name="specify-windows-symbol-files"></a>Especificar arquivos de símbolo do Windows
 

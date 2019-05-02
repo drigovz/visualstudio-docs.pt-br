@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555033"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Especifica a linguagem de código fonte do aplicativo ou módulo vinculado.

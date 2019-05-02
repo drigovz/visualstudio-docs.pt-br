@@ -1,11 +1,8 @@
 ---
 title: Designer de atividade do fluxograma | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Flowchart.UI
@@ -15,13 +12,13 @@ ms.assetid: d5af2276-5215-4138-880a-cf2b90bbf3a0
 caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 67bebeec9c2d88ba1912bc50b27e38f8278e7e3f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 3e89caded1b7388b79ea3232dc0a2809dc7b8222
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49226233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943467"
 ---
 # <a name="flowchart-activity-designer"></a>Designer de atividade do fluxograma
 A atividade de <xref:System.Activities.Statements.Flowchart> é usada para criar fluxos de trabalho que definem e gerencia controles de fluxo complexos. <xref:System.Activities.Statements.Flowchart> pode ser criado em código ou usando [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Este tópico documenta a experiência de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . O designer de atividade do fluxo de trabalho [!INCLUDE[wfd1](../includes/wfd1-md.md)] permite aos desenvolvedores para criar fluxos de trabalho em uma maneira natural.  

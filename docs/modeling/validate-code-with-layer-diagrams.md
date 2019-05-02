@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bda2ae00b02d097b8684499c9343b5709dd35c8e
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971349"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -79,17 +79,17 @@ Validação de dependência ocorre em tempo real e erros são exibidos imediatam
 
 É possível vincular camadas a sites, documentos do Office, arquivos de texto sem formatação e arquivos em projetos que são compartilhados entre vários aplicativos, mas o processo de validação não os incluirá. Os erros de validação não serão exibidos para referências a projetos ou assemblies vinculados a camadas separadas quando nenhuma dependência for exibida entre essas camadas. Essas referências não serão consideradas dependências, a menos que o código use essas referências.
 
-1.  No diagrama de dependência, selecione uma ou mais camadas, clique com botão direito sua seleção e, em seguida, clique em **Exibir Links**.
+1. No diagrama de dependência, selecione uma ou mais camadas, clique com botão direito sua seleção e, em seguida, clique em **Exibir Links**.
 
-2.  Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. Se o valor for falso, o item não dará suporte à validação.
+2. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. Se o valor for falso, o item não dará suporte à validação.
 
 ## <a name="include-other-net-assemblies-and-projects-for-validation"></a>Incluir outros assemblies e projetos do .NET para validação
 
 Quando você arrasta itens para o diagrama de dependência, referências a projetos ou assemblies do .NET correspondentes são adicionadas automaticamente para o **referências de camada** pasta no projeto de modelagem. Essa pasta contém referências aos assemblies e aos projetos analisados durante a validação. Você pode incluir outros assemblies .NET e projetos para validação sem arrastá-los manualmente para o diagrama de dependência.
 
-1.  Na **Gerenciador de soluções**, clique com botão direito no projeto de modelagem ou o **referências de camada** pasta e clique **Add Reference**.
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto de modelagem ou o **referências de camada** pasta e clique **Add Reference**.
 
-2.  No **adicionar referência** caixa de diálogo, selecione os assemblies ou projetos e, em seguida, clique em **Okey**.
+2. No **adicionar referência** caixa de diálogo, selecione os assemblies ou projetos e, em seguida, clique em **Okey**.
 
 ## <a name="validate-code-manually"></a>Validar código manualmente
 
@@ -97,19 +97,19 @@ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens d
 
 ### <a name="validate-code-from-an-open-dependency-diagram"></a>Validar o código de um diagrama de dependência aberto
 
-1.  Clique com botão direito na superfície do diagrama e, em seguida, clique em **validar arquitetura**.
+1. Clique com botão direito na superfície do diagrama e, em seguida, clique em **validar arquitetura**.
 
     > [!NOTE]
     > Por padrão, o **ação de compilação** no arquivo de diagrama (. layerdiagram) dependência estiver definida como **validar** para que o diagrama seja incluído no processo de validação.
 
-     O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+     O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
-2.  Para exibir a origem de cada erro, clique duas vezes no erro na **Error List** janela.
+2. Para exibir a origem de cada erro, clique duas vezes no erro na **Error List** janela.
 
     > [!NOTE]
     > Visual Studio pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly que não é especificado no diagrama de dependência ou o código não tem uma dependência que é especificada no diagrama de dependência. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).
 
-3.  Para gerenciar erros, consulte [gerenciar erros de validação](#ManageErrors).
+3. Para gerenciar erros, consulte [resolver erros de validação de camada](#resolve-layer-validation-errors).
 
 ### <a name="validate-code-at-the-command-prompt"></a>Validar o código no prompt de comando
 
@@ -147,7 +147,7 @@ Se você tiver um diagrama de dependência aberto que esteja vinculado a itens d
 
      Todos os erros ocorridos serão listados. Para obter mais informações sobre o MSBuild, consulte [MSBuild](../msbuild/msbuild.md) e [tarefa MSBuild](../msbuild/msbuild-task.md).
 
-   Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+   Para obter mais informações sobre erros de validação, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
 ### <a name="manage-validation-errors"></a>Gerenciar erros na validação
 
@@ -183,23 +183,23 @@ Use um editor de texto para abrir o arquivo do projeto de modelagem (.modelproj)
 
 \- ou -
 
-1.  Na **Gerenciador de soluções**, o projeto de modelagem que contém o diagrama de dependência ou diagramas com o botão direito e, em seguida, clique em **propriedades**.
+1. Na **Gerenciador de soluções**, o projeto de modelagem que contém o diagrama de dependência ou diagramas com o botão direito e, em seguida, clique em **propriedades**.
 
-2.  No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade a ser **verdadeiro**.
+2. No **propriedades** janela, defina o projeto de modelagem **validar arquitetura** propriedade a ser **verdadeiro**.
 
     Isso inclui o projeto de modelagem no processo de validação.
 
-3.  Na **Gerenciador de soluções**, clique no arquivo de diagrama (. layerdiagram) de dependência que você deseja usar para validação.
+3. Na **Gerenciador de soluções**, clique no arquivo de diagrama (. layerdiagram) de dependência que você deseja usar para validação.
 
-4.  No **propriedades** janela, certifique-se de que o diagrama **Build Action** estiver definida como **validar**.
+4. No **propriedades** janela, certifique-se de que o diagrama **Build Action** estiver definida como **validar**.
 
     Isso inclui o diagrama de dependência no processo de validação.
 
-Para gerenciar erros na janela lista de erros, consulte [gerenciar erros de validação](#ManageErrors).
+Para gerenciar erros na janela lista de erros, consulte [resolver erros de validação de camada](#resolve-layer-validation-errors).
 
 ## <a name="troubleshoot-layer-validation-issues"></a>Solucionar problemas de validação da camada
 
-A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).
+A tabela a seguir descreve problemas na validação da camada e sua resolução. Esses problemas são diferentes dos erros resultantes de conflitos entre o código e o design. Para obter mais informações sobre esses erros, consulte [solucionar problemas de validação de camada](#troubleshoot-layer-validation-issues).
 
 |**Problema**|**Possível causa**|**Resolução**|
 |-|-|-|

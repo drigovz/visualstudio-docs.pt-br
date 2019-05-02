@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851804"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 Esta seção explica como depurar vários tipos de aplicativos Web.

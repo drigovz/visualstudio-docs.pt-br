@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9ef409b305901cc36e67eeadfe0000202c935b5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447097"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblies de Interoperabilidade primária do Office
 
@@ -57,15 +57,15 @@ Quando você instala o Visual Studio, os PIAs são automaticamente instalados em
 
 Essas cópias de PIAs ajudam o Visual Studio a evitar vários problemas de desenvolvimento que podem ocorrer quando diferentes versões de PIAs estão registradas no cache de assembly global.
 
-O Visual Studio instala essas cópias de PIAs nos seguintes locais no computador de desenvolvimento:
+Começando com o Visual Studio 2017, essas cópias de PIAs são instaladas em locais compartilhados a seguir no computador de desenvolvimento:
 
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14*
+- *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools for Office\PIA\*
 
-  (ou *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office14* em sistemas operacionais de 64 bits)
+- (ou * % ProgramFiles (x86) %\Microsoft Studio\Shared\Visual Visual Studio Tools para Office\PIA\* em sistemas operacionais de 64 bits)
 
-- *%ProgramFiles%\Microsoft visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15*
-
-  (ou *% ProgramFiles (x86) %\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\Office15* em sistemas operacionais de 64 bits)
+> [!NOTE]
+> Para versões mais antigas do Visual Studio, esses PIAs serão instalados para o Visual Studio Tools para a pasta Office\PIA sob o * a pasta % ProgramFiles % para essa versão do Visual Studio.  
+> Por exemplo: * % ProgramFiles (x86) %\Microsoft 14.0\Visual Studio ferramentas do Visual Studio para Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assemblies de interoperabilidade primários no cache de assembly global
 
@@ -79,18 +79,18 @@ Os PIAs do Office não são necessários em computadores de usuário final para 
 
 Cada modelo de projeto do Office em Visual Studio é projetado para funcionar com um único aplicativo do Microsoft Office. Para usar recursos em vários aplicativos do Microsoft Office ou usar recursos em um aplicativo ou componente que não tem projeto no Visual Studio, você deve adicionar uma referência aos PIAs necessários.
 
-Na maioria dos casos, você deve adicionar referências aos PIAs são instalados pelo Visual Studio sob o `%ProgramFiles%\Microsoft Visual Studio 12.0\Visual Studio Tools for Office\PIA\` directory. Estas versões de assemblies aparecem na **Framework** guia da **Gerenciador de referências** caixa de diálogo. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Na maioria dos casos, você deve adicionar referências aos PIAs são instalados pelo Visual Studio sob o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory. Estas versões de assemblies aparecem na **Framework** guia da **Gerenciador de referências** caixa de diálogo. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
 
 Se você tiver instalado e registrado os PIAs no cache de assembly global, estas versões de assemblies aparecem na **COM** guia o **Gerenciador de referências** caixa de diálogo. Você deve evitar adicionar referências a essas versões de assemblies, porque alguns problemas de desenvolvimento podem ocorrer ao usá-las. Por exemplo, se você registrou diferentes versões de PIAs no cache de assembly global, seu projeto se associará automaticamente para a versão do assembly que foi registrado por último — mesmo se você especificar uma versão diferente do assembly no  **COM** guia do **Gerenciador de referências** caixa de diálogo.
 
 > [!NOTE]
->  Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, a referência para o *dll* e *Office* assemblies são adicionados automaticamente quando você adiciona uma referência para o Word, Excel, Outlook, Microsoft Forms ou gráfico assemblies.
+> Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, a referência para o *dll* e *Office* assemblies são adicionados automaticamente quando você adiciona uma referência para o Word, Excel, Outlook, Microsoft Forms ou gráfico assemblies.
 
 <a name="pialist"></a>
 
 ## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assemblies de interoperabilidade primários para aplicativos do Microsoft Office
 
-A tabela a seguir lista os assemblies de interoperabilidade primários disponíveis para [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+A tabela a seguir lista os assemblies de interoperabilidade primários que estão disponíveis para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
 
 <br/>
 

@@ -19,24 +19,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dabed6cb449d51564dafbcddb3a17ccea1cda374
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: d573de9889d286a7b634890e0d8b469541bc741f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407061"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implantar aplicativos ClickOnce para servidores de teste e produção sem assinar novamente
 Este artigo descreve um recurso do ClickOnce, introduzida no .NET Framework versão 3.5, o que permite a implantação de aplicativos ClickOnce a partir de vários locais de rede sem assinar novamente ou alterar o ClickOnce manifestos.
 
 > [!NOTE]
->  Assinar novamente ainda é o método preferencial para implantar novas versões de aplicativos. Sempre que possível, use o método resigning. Para obter mais informações, confira [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+> Assinar novamente ainda é o método preferencial para implantar novas versões de aplicativos. Sempre que possível, use o método resigning. Para obter mais informações, confira [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
  ISVs e desenvolvedores de terceiros podem aceitar esse recurso, tornando mais fácil para seus clientes atualizar seus aplicativos. Esse recurso pode ser usado nas seguintes situações:
 
--   Ao atualizar um aplicativo, não para a primeira instalação de um aplicativo.
+- Ao atualizar um aplicativo, não para a primeira instalação de um aplicativo.
 
--   Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não pode usar esse recurso.
+- Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não pode usar esse recurso.
 
 ## <a name="exclude-deploymentprovider-from-deployment-manifests"></a>Excluir deploymentProvider de manifestos de implantação
  No .NET Framework 2.0 e o .NET Framework 3.0, qualquer aplicativo ClickOnce que é instalado no sistema para disponibilidade offline deve listar uma `deploymentProvider` em seu manifesto de implantação. O `deploymentProvider` é conhecido como o local de atualização; é o local em que o ClickOnce verifica se há atualizações de aplicativo. Esse requisito, juntamente com a necessidade de editores de aplicativo assinar suas implantações, dificultou para uma empresa atualizar um aplicativo ClickOnce de um fornecedor ou de terceiros. Ele também torna mais difícil de implantar o mesmo aplicativo de vários locais na mesma rede.
@@ -59,7 +59,7 @@ Este artigo descreve um recurso do ClickOnce, introduzida no .NET Framework vers
   No segundo exemplo, você publica um aplicativo ClickOnce que especifica `deploymentProvider`, e você decidir, em seguida, removê-lo. Uma vez a nova versão sem `deploymentProvider` é baixado para os clientes, você não pode redirecionar o caminho usado para atualizações, até que uma versão do aplicativo que tenha `deploymentProvider` restaurado. Assim como acontece com o primeiro exemplo, `deploymentProvider` inicialmente deve apontar para o local de atualização atual, não seu novo local. Nesse caso, se você tentar inserir uma `deploymentProvider` que se refere à http://subdomain.adatum.com/MyApplication/, a próxima atualização falhará.
 
 ## <a name="create-a-deployment"></a>Criar uma implantação
- Para obter orientação passo a passo sobre a criação de implantações que podem ser implantadas de diferentes locais da rede, consulte [passo a passo: implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
+ Para obter orientação passo a passo sobre a criação de implantações que podem ser implantadas de diferentes locais da rede, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md).
 
 ## <a name="see-also"></a>Consulte também
 - [*Mage.exe* (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)

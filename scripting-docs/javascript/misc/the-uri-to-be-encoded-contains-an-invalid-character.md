@@ -14,19 +14,19 @@ ms.assetid: a3f0fdbb-8d4b-41ae-a396-43dfc9483760
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a3c71b90d0711bf317d0ed72d51c0d5d45297c80
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f2f9111acf656bf882a3d506fe95b8361f3693ff
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006202"
 ---
 # <a name="the-uri-to-be-encoded-contains-an-invalid-character"></a>O URI a ser decodificado contém um caractere inválido
 Você tentou codificar uma cadeia de caracteres como um URI (Uniform Resource Identifier), mas ele continha caracteres inválidos. Embora a maioria dos caracteres são válidos dentro de cadeias de caracteres a ser convertido em URIs, algumas sequências de caracteres Unicode são ilegais.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Verifique se a cadeia de caracteres a ser decodificado contém somente sequências de Unicode válidas. Um URI completo é composto de uma sequência de componentes e separadores. Os nomes entre colchetes angulares representam os componentes e o ":", "/", ";" e "?" são caracteres reservados usados como separadores. O formato geral é:  
+- Verifique se a cadeia de caracteres a ser decodificado contém somente sequências de Unicode válidas. Um URI completo é composto de uma sequência de componentes e separadores. Os nomes entre colchetes angulares representam os componentes e o ":", "/", ";" e "?" são caracteres reservados usados como separadores. O formato geral é:  
   
     ```JavaScript  
     <Scheme>:<first>/<second>;<third>?<fourth>  

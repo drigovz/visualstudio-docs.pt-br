@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802668"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437125"
 ---
 # <a name="immediate-window"></a>Janela imediata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A janela **Imediato** é usada para depurar e avaliar expressões, executar instruções, imprimir valores de variáveis e assim por diante. Ela permite inserir expressões a serem avaliadas ou executadas pela linguagem de desenvolvimento durante a depuração. Para exibir a janela **Imediato**, abra um projeto para edição, escolha **Windows** no menu **Depurar** e selecione **Imediato**, ou pressione CTRL + ALT + I.  
   
  É possível usar essa janela para emitir comandos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuais. Os comandos disponíveis incluem `EvaluateStatement`, que pode ser usado para atribuir valores a variáveis. A janela **Imediato** também dá suporte ao IntelliSense.  
@@ -46,7 +45,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
  As duas versões desse comando retornarão o valor da variável `varA`.  
   
 > [!NOTE]
->  Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.  
+> Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.  
   
 ## <a name="design-time-expression-evaluation"></a>Avaliação de expressões em tempo de design  
  Você pode usar a janela **Imediato** para executar uma função ou sub-rotina em tempo de design.  
@@ -75,7 +74,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
     A janela **Imediato** executará `MyFunction` e exibirá `4`.  
   
-   Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, consulte [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Se a função ou a sub-rotina contiver um ponto de interrupção, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Para obter mais informações, confira [Passo a passo: Depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Não é possível usar a avaliação de expressão em tempo de design em tipos de projetos que exigem a inicialização de um ambiente de execução, incluindo projetos [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], projetos Web, projetos de dispositivo inteligente e projetos SQL.  
   
@@ -119,15 +118,15 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Para ativar ou desativar notificações de exceção de primeira tentativa na janela Imediato  
   
-1.  No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.  
+1. No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.  
   
-2.  Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.  
+2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Navegar pelo código com o depurador](../../debugger/navigating-through-code-with-the-debugger.md)   
  [Janela Comando](../../ide/reference/command-window.md)   
  [Depurando no Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Noções básicas do depurador](../../debugger/debugger-basics.md)   
- [Passo a passo: depuração em tempo de design](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Passo a passo: Depuração em tempo de Design](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Usando expressões regulares no Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

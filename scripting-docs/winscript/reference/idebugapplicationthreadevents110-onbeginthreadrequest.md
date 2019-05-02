@@ -2,7 +2,6 @@
 title: IDebugApplicationThreadEvents110 ::OnBeginThreadRequest | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: windows-script-interfaces
 ms.reviewer: ''
 ms.suite: ''
 ms.tgt_pltfrm: ''
@@ -14,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 90a9550b43dafb6bd38a68e379d486888d7bbf8d
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
-ms.translationtype: MT
+ms.openlocfilehash: cd18e6db3e1dc050ffd4da6f2991889f28355192
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54345169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440489"
 ---
 # <a name="idebugapplicationthreadevents110-onbeginthreadrequest"></a>IDebugApplicationThreadEvents110 ::OnBeginThreadRequest
 Uma chamada o thread usando o thread do PDM alternância foi iniciado.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> [Interface IDebugApplicationThreadEvents110](../../winscript/reference/idebugapplicationthreadevents110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

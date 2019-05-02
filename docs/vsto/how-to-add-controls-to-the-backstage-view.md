@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826775"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Como: Adicionar controles ao modo de exibição Backstage
   Você pode usar o Designer de faixa de opções para adicionar controles ao menu que é aberta quando você clica o **arquivo** guia. Quando você executa o aplicativo, controles que podem ser adicionados para o **arquivo** guia será exibida em um grupo chamado **Add-ins**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621338"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Para adicionar controles ao modo de exibição Backstage
 
-1.  Abra o item de faixa de opções no modo de exibição de Design.
+1. Abra o item de faixa de opções no modo de exibição de Design.
 
      Para obter informações sobre como adicionar um **faixa de opções (Visual Designer)** item ao seu projeto, consulte [como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  No Designer de faixa de opções, clique o **arquivo** guia.
+2. No Designer de faixa de opções, clique o **arquivo** guia.
 
      Um designer de menu é exibido. Essa superfície de design não contém todos os controles.
 
-3.  Dos **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste qualquer um dos seguintes controles para o designer de menu:
+3. Dos **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste qualquer um dos seguintes controles para o designer de menu:
 
-    -   Botão
+    - Botão
 
-    -   CheckBox
+    - CheckBox
 
-    -   Galeria
+    - Galeria
 
-    -   Menu
+    - Menu
 
-    -   Separador
+    - Separador
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Arraste os controles para movê-los para novas posições no menu.
+4. Arraste os controles para movê-los para novas posições no menu.
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral da faixa de opções](../vsto/ribbon-overview.md)
