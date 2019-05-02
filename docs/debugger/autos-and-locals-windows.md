@@ -56,7 +56,6 @@ No código C++ nativo, talvez você precise qualificar o contexto de um nome de 
 >[!CAUTION]
 > Certifique-se de compreender as consequências antes de alterar valores e expressões. Alguns problemas possíveis são:
 >
-> - Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, a avaliação de `var1 = ++var2` altera o valor de ambos `var1` e `var2`. Essas expressões são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem causar resultados inesperados se você não estiver ciente deles.
 >
 > - Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Até mesmo uma edição aparentemente inofensiva pode resultar em alterações para alguns dos bits na variável de ponto flutuante.
 
