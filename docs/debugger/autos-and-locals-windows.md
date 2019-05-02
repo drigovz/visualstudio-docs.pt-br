@@ -56,9 +56,8 @@ No código C++ nativo, talvez você precise qualificar o contexto de um nome de 
 >[!CAUTION]
 > Certifique-se de compreender as consequências antes de alterar valores e expressões. Alguns problemas possíveis são:
 >
->- Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor de ambos `var1` e `var2`. Essas expressões são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Efeitos colaterais podem causar resultados inesperados se você não estiver ciente deles.
 >
->- Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Até mesmo uma edição aparentemente inofensiva pode resultar em alterações para alguns dos bits na variável de ponto flutuante.
+> - Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Até mesmo uma edição aparentemente inofensiva pode resultar em alterações para alguns dos bits na variável de ponto flutuante.
 
 ::: moniker range=">= vs-2019" 
 ## <a name="search-in-the-autos-or-locals-window"></a>Pesquisar na janela Autos ou locais
@@ -77,7 +76,7 @@ Para tornar sua pesquisa mais ou menos completo, use o **pesquisa mais profunda*
 
 Você pode usar a barra de ferramentas **Local de Depuração** para selecionar uma função desejada, thread ou processo, que altera o contexto para as janelas **Autos** e **Locals**.
 
-Para habilitar a barra de ferramentas **local de depuração**, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição**  >  **Barras de ferramentas**  >  **local de depuração**.
+Para habilitar a barra de ferramentas **local de depuração**, clique em uma parte vazia da área da barra de ferramentas e selecione **local de depuração** da lista suspensa ou selecione **exibição** > **Barras de ferramentas** > **local de depuração**.
 
 Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de interrupção é atingido, a execução para e você pode ver o local na barra de ferramentas **local de depuração**.
 

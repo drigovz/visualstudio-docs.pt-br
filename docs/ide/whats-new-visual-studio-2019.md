@@ -1,4 +1,4 @@
----
+﻿---
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
@@ -59,7 +59,7 @@ Há muitas refatorações novas e altamente úteis no C# que facilitam a organiz
 
    ![Animação da nova experiência de refatorações do Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Basta invocar as refatorações pressionando **Ctrl+.** e selecionar a ação desejada.
+Basta invocar as refatorações pressionando **Ctrl+ .** e selecionar a ação desejada.
 
 ### <a name="intellicode"></a>IntelliCode
 
