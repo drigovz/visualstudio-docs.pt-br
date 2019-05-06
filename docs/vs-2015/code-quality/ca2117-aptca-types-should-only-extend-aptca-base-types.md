@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58927479"
@@ -77,8 +77,8 @@ ms.locfileid: "58927479"
 
  Este exemplo gerencia a seguinte saída.
 
- **Meet na glen sombrio 2/22/2003 12:00:00 AM! ** 
- **De teste: Campina ensolarada**
+ **Meet na glen sombrio 2/22/2003 12:00:00 AM!**
+**De teste: Campina ensolarada**
 **cumprir à Campina ensolarada 2/22/2003 12:00:00 AM!**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2116: Os métodos APTCA só devem chamar métodos APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
