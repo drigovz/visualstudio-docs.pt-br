@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: d0ac554ebee7188e0826de9e5c1852cf3bcc33cb
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58927470"
@@ -63,10 +63,10 @@ ms.locfileid: "58927470"
 
  Este exemplo gerencia a seguinte saída.
 
- **Criando uma instância de SecuredTypeWithFields. ** 
- **Campos de tipo segura: 22, 33**
-**alterando o campo do tipo seguro... ** 
- **Campos de objeto armazenado em cache: 99, 33**
+ **Criando uma instância de SecuredTypeWithFields.**
+**Campos de tipo segura: 22, 33**
+**alterando o campo do tipo seguro...**
+**Campos de objeto armazenado em cache: 99, 33**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)
 

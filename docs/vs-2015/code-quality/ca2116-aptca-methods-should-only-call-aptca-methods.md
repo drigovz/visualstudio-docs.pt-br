@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
 ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 01/23/2019
 ms.locfileid: "58923151"
@@ -71,8 +71,8 @@ ms.locfileid: "58923151"
 
  Este exemplo gerencia a seguinte saída.
 
- **Falha na demanda de confiança: solicitação completa. ** 
- **ClassRequiringFullTrust.DoWork foi chamado.**
+ **Falha na demanda de confiança: solicitação completa.**
+**ClassRequiringFullTrust.DoWork foi chamado.**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2117: Os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 

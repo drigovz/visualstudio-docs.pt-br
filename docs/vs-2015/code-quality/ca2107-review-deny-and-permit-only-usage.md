@@ -17,7 +17,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082146"
@@ -72,10 +72,10 @@ ms.locfileid: "60082146"
 
  Este exemplo gerencia a seguinte saída.
 
- **Por demanda: Deny do chamador não tem nenhum efeito sob demanda com a permissão declarada. ** 
- **LinkDemand: Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada. ** 
- **LinkDemand: Deny do chamador não tem nenhum efeito com o código protegido por LinkDemand. ** 
- **LinkDemand: Este negar não tem nenhum efeito com o código protegido por LinkDemand.**
+ **Por demanda: Deny do chamador não tem nenhum efeito sob demanda com a permissão declarada.**
+**LinkDemand: Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada.**
+**LinkDemand: Deny do chamador não tem nenhum efeito com o código protegido por LinkDemand.**
+**LinkDemand: Este negar não tem nenhum efeito com o código protegido por LinkDemand.**
 ## <a name="see-also"></a>Consulte também
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
