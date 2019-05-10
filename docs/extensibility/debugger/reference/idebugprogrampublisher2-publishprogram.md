@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb1553070f9afecf6ce60ac51b94ecb3f05d0eb9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869714"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457859"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Esse método faz um programa disponível para mecanismos de depuração (DEs) e o Gerenciador de sessão de depuração.
@@ -40,16 +43,16 @@ int PublishProgram(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `Engines`
+## <a name="parameters"></a>Parâmetros
+ `Engines`\
 
  [in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
 
- `szFriendlyName`
+ `szFriendlyName`\
 
  [in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
 
- `pDebuggeeInterface`
+ `pDebuggeeInterface`\
 
  [in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
 

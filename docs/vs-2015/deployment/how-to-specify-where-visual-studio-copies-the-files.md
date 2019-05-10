@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d36c5dafa37673263ab13dc46c7f02e44448fd8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8759145dd4a7647cad6e9964ae1f1c97d333b626
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441623"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226165"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>Como: Especificar onde o Visual Studio copia os arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Quando você publica um aplicativo usando o ClickOnce, o `Publish Location` prop
 
    - Para publicar em um caminho de disco ou compartilhamento de arquivo, insira o caminho usando um caminho UNC (\\\Server\ApplicationName) ou um caminho de arquivo (C:\Deploy\ApplicationName).
 
-   - Para publicar em um servidor FTP, insira o caminho usando o formato ftp://ftp.microsoft.com/ApplicationName.
+   - Para publicar em um servidor FTP, insira o caminho usando o formato ftp:\//ftp.microsoft.com/ApplicationName.
 
      Observe que o texto precisa estar presente na caixa **Local de Publicação** para que o botão Procurar (**...**) funcione.
 
