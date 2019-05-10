@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16d2b9ae9c446d4c8082a8c35c9e4d1810233b95
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f3485aa2e5650345c0b14c6cb8093034043285a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913855"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461006"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 Especifica o tipo de mensagem e o motivo.
@@ -47,18 +50,24 @@ public enum enum_MESSAGETYPE { 
 };
 ```
 
-## <a name="members"></a>Membros
- MT_OUTPUTSTRING indica que a mensagem deve ser enviada para a janela de saída. Isso é mutuamente exclusivo de `MT_MESSAGEBOX`.
+## <a name="fields"></a>Campos
+ `MT_OUTPUTSTRING`\
+ Indica que a mensagem deve ser enviada para a janela de saída. Isso é mutuamente exclusivo de `MT_MESSAGEBOX`.
 
- MT_MESSAGEBOX indica que a mensagem deve ser mostrada em uma caixa de mensagem. Isso é mutuamente exclusivo de `MT_OUTPUTSTRING`.
+ `MT_MESSAGEBOX`\
+ Indica que a mensagem deve ser mostrada em uma caixa de mensagem. Isso é mutuamente exclusivo de `MT_OUTPUTSTRING`.
 
- Valor de máscara de um MT_TYPE_MASK para isolar o destino da mensagem.
+ `MT_TYPE_MASK`\
+ Um valor de máscara para isolar o destino da mensagem.
 
- MT_REASON_EXCEPTION indica que uma caixa de mensagem está sendo mostrada como resultado de uma exceção. Isso é mutuamente exclusivo de `MT_REASON_TRACEPOINT`.
+ `MT_REASON_EXCEPTION`\
+ Indica que uma caixa de mensagem está sendo mostrada como resultado de uma exceção. Isso é mutuamente exclusivo de `MT_REASON_TRACEPOINT`.
 
- MT_REASON_TRACEPOINT indica que uma caixa de mensagem está sendo mostrada como resultado de atingir um tracepoint. Isso é mutuamente exclusivo para `MT_REASON_EXCEPTION`.
+ `MT_REASON_TRACEPOINT`\
+ Indica que uma caixa de mensagem está sendo mostrada como resultado de atingir um tracepoint. Isso é mutuamente exclusivo para `MT_REASON_EXCEPTION`.
 
- Valor de máscara de um MT_REASON_MASK para isolar o motivo para a mensagem que está sendo mostrado.
+ `MT_REASON_MASK`\
+ Um valor de máscara para isolar o motivo para a mensagem que está sendo mostrado.
 
 ## <a name="remarks"></a>Comentários
  Esses valores são retornados a partir de [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) e [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) métodos.

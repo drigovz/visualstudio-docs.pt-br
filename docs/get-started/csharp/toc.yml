@@ -1,6 +1,7 @@
 - name: 'Tutoriais do C#'
-  href: index.yml
   items:
+    - name: 'Tutoriais do C#'
+      href: index.yml
     - name: Visão geral
       items:
         - name: Sobre o Visual Studio

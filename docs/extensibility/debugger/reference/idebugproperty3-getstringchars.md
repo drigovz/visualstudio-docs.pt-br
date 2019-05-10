@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01558ccf2d4f0e06231a9cbe152c47b1601bfdb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 21ae1d4c16ce422d2baed2bd71ab5d0aa8b92e0c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916521"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457662"
 ---
 # <a name="idebugproperty3getstringchars"></a>IDebugProperty3::GetStringChars
 Recupera a cadeia de caracteres associada a essa propriedade e o armazena em um buffer fornecido pelo usuário.
@@ -40,18 +43,18 @@ int GetStringChars(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`buflen`
+## <a name="parameters"></a>Parâmetros
+`buflen`\
 
  [in] Número máximo de caracteres em que o buffer fornecido pelo usuário pode conter.
 
-`rgString`
+`rgString`\
 
  [out] Retorna a cadeia de caracteres.
 
  [C++ somente], `rgString` é um ponteiro para um buffer que recebe os caracteres Unicode da cadeia de caracteres. Esse buffer deve ter pelo menos `buflen` caracteres (não em bytes) de tamanho.
 
-`pceltFetched`
+`pceltFetched`\
 
  [out] Em que o número de caracteres, na verdade, são armazenados no buffer é retornado. (Pode ser `NULL` em C++.)
 

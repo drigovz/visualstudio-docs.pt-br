@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c4ce1ce565ee2ca2fe4c6a26461ef283e7e76b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4c437d6b44777289abe6f079456ff2a8aba5e4a2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916331"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458708"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 Obtenha uma lista de filhos selecionados de uma referência. Reservado para uso futuro.
@@ -46,28 +49,28 @@ int EnumChildren ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+ `dwFields`\
 
  [in] Uma combinação de sinalizadores do [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeração que especifica quais campos em enumeradas [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) estruturas devem ser preenchidos.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] A base a ser usada na formatação de todas as informações numéricas.
 
- `dwAttribFilter`
+ `dwAttribFilter`\
 
  [in] Uma combinação de sinalizadores do [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeração que é usada como um filtro em combinação com o `pszNameFilter` parâmetro para selecionar quais estruturas estão a serem enumerados.
 
- `pszNameFilter`
+ `pszNameFilter`\
 
  [in] Uma cadeia de caracteres especificando um filtro, como "MyX", usado em combinação com o `dwAttribFilter` parâmetro para selecionar as estruturas a serem enumerados.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Retorna um [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) objeto que contém uma lista das propriedades filho solicitado.
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4055c4096895645edf8dfdab8318622a100e6e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2e18a95aa2e4eb8a9238a046e3a77f3d618cdd2b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565652"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458369"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>O designer não pode ser alterado para depuração
 
@@ -23,5 +23,4 @@ Para corrigir esse erro, selecione **parar depuração** sobre o **depurar** men
 
 ## <a name="see-also"></a>Consulte também
 
-- [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

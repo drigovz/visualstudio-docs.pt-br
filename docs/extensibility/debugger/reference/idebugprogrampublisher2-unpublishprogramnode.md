@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56eb23466d0364cbe22046bbb36be593a83a0998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00c78b4390d519cb8b37d0af17e1e61a8127d080
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869661"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458932"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Remove um nó de programa especificado de disponibilidade para depurar os mecanismos de (DEs) e o Gerenciador de sessão de depuração (SDM).
@@ -36,8 +39,8 @@ int UnpublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pProgramNode`
+## <a name="parameters"></a>Parâmetros
+ `pProgramNode`\
 
  [in] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó de programa que está sendo removido.
 

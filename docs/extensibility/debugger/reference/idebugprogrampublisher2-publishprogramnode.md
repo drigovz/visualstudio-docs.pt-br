@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3422e738246d2b1c883c5d3efb01fab6c0aef8d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8d6dd1d1b28ac4419604635b68767237eb6ce7d4
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916780"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458952"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
 Disponibiliza um nó de programa para uso pelos mecanismos de depuração (DEs) e a sessão de depuração SDM (Gerenciador).
@@ -36,8 +39,8 @@ int PublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pProgramNode`
+## <a name="parameters"></a>Parâmetros
+ `pProgramNode`\
 
  [in] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó de programa para tornar disponível.
 

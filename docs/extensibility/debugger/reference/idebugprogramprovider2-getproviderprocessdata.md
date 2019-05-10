@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 385ef2aaaadc8d1f66eaf245f06dbfd299638fa5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f63b43c1e7e8035320c6d4c7b527e069904191a5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916712"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459004"
 ---
 # <a name="idebugprogramprovider2getproviderprocessdata"></a>IDebugProgramProvider2::GetProviderProcessData
 Recupera uma lista de programas em execução de um processo especificado.
@@ -44,8 +47,8 @@ int GetProviderProcessData(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `Flags`
+## <a name="parameters"></a>Parâmetros
+ `Flags`\
 
  [in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os sinalizadores a seguir são típicos para essa chamada:
 
@@ -56,19 +59,19 @@ int GetProviderProcessData(
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Chamador foi anexado ao, mas não é iniciado pelo depurador.|
 |`PFLAG_GET_PROGRAM_NODES`|Chamador está pedindo para obter uma lista de nós de programa a ser retornado.|
 
- `pPort`
+ `pPort`\
 
  [in] A porta que o processo de chamada está em execução.
 
- `processId`
+ `processId`\
 
  [in] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que contém a ID do processo que contém o programa em questão.
 
- `EngineFilter`
+ `EngineFilter`\
 
  [in] Uma matriz de GUIDs para os mecanismos de depuração atribuídos para depurar esse processo (eles serão usados para filtrar os programas que são retornados, na verdade, com base no que o suportam os mecanismos fornecidos; se não há mecanismos forem especificados, em seguida, serão retornados todos os programas).
 
- `pProcess`
+ `pProcess`\
 
  [out] Um [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) estrutura será preenchida com as informações solicitadas.
 

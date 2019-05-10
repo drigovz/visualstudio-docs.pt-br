@@ -21,12 +21,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c4221783768f1e579ecad74fdfaf6e74214edfd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540814"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226140"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 
@@ -50,11 +50,11 @@ C:\>cl /analyze Sample.cpp
 
 ## <a name="pragma-support"></a>suporte de #pragma
 
-Você pode usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, confira [Como: Definir propriedades de análise de código para projetos C/C++](how-to-set-code-analysis-properties-for-c-cpp-projects.md).
+Você pode usar o `#pragma` diretiva para tratar avisos como erros; ativar ou desativar avisos e suprimir avisos para linhas individuais de código. Para obter mais informações, consulte [Diretivas Pragma e a palavra-chave __Pragma](https://docs.microsoft.com/cpp/preprocessor/pragma-directives-and-the-pragma-keyword).
 
 ## <a name="annotation-support"></a>Suporte de anotação
 
-As anotações melhoram a precisão da análise de código. As anotações fornecem informações adicionais sobre pré e pós-condições nos parâmetros de função e nos tipos retornados. Para obter mais informações, confira [Como: especificar informações de código adicionais usando __analysis_assume](../code-quality/how-to-specify-additional-code-information-by-using-analysis-assume.md)
+As anotações melhoram a precisão da análise de código. As anotações fornecem informações adicionais sobre pré e pós-condições nos parâmetros de função e nos tipos retornados. Para obter mais informações, consulte [usando as anotações de SAL para reduzir C /C++ defeitos de código](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 
 ## <a name="run-analysis-tool-as-part-of-check-in-policy"></a>Execute a ferramenta de análise como parte da política de check-in
 

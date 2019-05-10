@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55b3334c8bd28d3975f06aa39ca8c7fd719f1f9e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 59b0fd83202ea8a5514d1ed637404d4864bf6b57
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913347"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460720"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 Descreve as propriedades de um thread.
@@ -49,19 +52,26 @@ public struct THREADPROPERTIES { 
 ```
 
 ## <a name="members"></a>Membros
- dwFields uma combinação de sinalizadores dos [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração, que descreve quais campos nessa estrutura são válidos.
+ `dwFields`\
+ Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração, que descreve quais campos nessa estrutura são válidos.
 
- dwThreadId a ID do thread.
+ `dwThreadId`\
+ A ID do thread.
 
- Contagem de suspensões dwSuspendCount o thread.
+ `dwSuspendCount`\
+ Contagem de suspensões do thread.
 
- dwThreadState um valor da [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeração que indica o estado do thread operacional.
+ `dwThreadState`\
+ Um valor a partir de [THREADSTATE](../../../extensibility/debugger/reference/threadstate.md) enumeração que indica o estado do thread operacional.
 
- bstrPriority uma cadeia de caracteres que especifica a prioridade de thread; Por exemplo, "Acima do Normal", "Normal" ou "Tempo crítico".
+ `bstrPriority`\
+ Uma cadeia de caracteres que especifica a prioridade de thread; Por exemplo, "Acima do Normal", "Normal" ou "Tempo crítico".
 
- bstName o nome do thread.
+ `bstName`\
+ O nome do thread.
 
- bstrLocation o local de thread (normalmente, o quadro de pilha mais alto), geralmente expressado como o nome do método em que a execução é interrompida no momento.
+ `bstrLocation`\
+ O local de thread (normalmente, o quadro de pilha mais alto), geralmente expressado como o nome do método em que a execução é interrompida no momento.
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é preenchida por uma chamada para o [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) método. As informações retornadas então normalmente são usadas no preenchimento de **Threads** janela.

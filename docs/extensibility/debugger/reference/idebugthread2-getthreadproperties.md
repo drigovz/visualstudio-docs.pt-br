@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b32ec64123ef8db4724c7646c54af790fc7500a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868301"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226188"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtém as propriedades que descrevem esse thread.
@@ -38,12 +41,12 @@ int GetThreadProperties (
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
 
  [in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.
 
-`ptp`
+`ptp`\
 
  [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.
 
