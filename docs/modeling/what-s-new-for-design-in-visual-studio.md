@@ -13,38 +13,38 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: dc75c7414e0fff18f76d14f8f9a4e0779a9e7a2b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386935"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476545"
 ---
 # <a name="whats-new-for-design-in-visual-studio-2017"></a>Novidades no design no Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validação de dependência dinâmica
 
-Remover dependências indesejáveis é uma parte importante de gerenciar a dívida técnica. Validação em tempo real de dependências é agora incluído, fornecendo informações precisas sobre problemas e se beneficia totalmente os novos recursos na lista de erros e o editor.
+Remover dependências indesejáveis é uma parte importante de gerenciar a dívida técnica. O Visual Studio fornece validação em tempo real das dependências, incluindo informações precisas sobre problemas, como onde eles estão localizados. Dependências em tempo real validação usa todas as vantagens dos novos recursos na lista de erros e o editor.
 
 ![Validação de dependência dinâmica em ação](media/dep-validation-whatsnew-01.png)
 
-A experiência de criação foi alterado para fazer a validação de dependência mais detectáveis e mais acessível, alterando a terminologia de "Diagrama de camada" para "Diagrama de dependência".
+A experiência de criação foi alterado para fazer a validação de dependência mais detectáveis e mais acessível. A terminologia foi alterado de "Diagrama de camada" para "Diagrama de dependência".
 
 O **arquitetura** menu agora contém um comando para criar diretamente um diagrama de dependência:
 
 ![Item de dependências em tempo real no menu de arquitetura](media/dep-validation-whatsnew-02.png)
 
-... e os nomes de propriedade de uma camada em um diagrama de dependência e suas descrições, foram alterados para torná-los mais significativos:
+Nomes de propriedade de camada e as descrições foram alteradas para torná-los mais significativos:
 
 ![Nomes de propriedade de dependência ao vivo atualizado](media/dep-validation-whatsnew-03.png)
 
-Agora você ver o impacto das alterações imediatamente nos resultados da análise para o código na solução atual de cada vez que você salva o diagrama. Você não precisa mais esperar pela conclusão do comando "Validar dependências".
+Verá imediatamente o impacto das alterações nos resultados da análise para o código na solução atual de cada vez que você salva o diagrama. Você não precisa aguardar a conclusão do **validar dependências** comando.
 
 Para obter mais detalhes, consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/live-architecture-dependency-validation-in-visual-studio-15-preview-5/).
 
 ## <a name="uml-designers-have-been-removed"></a>Designers UML foram removidos
 
-Os designers UML foram retirados desta versão do Visual Studio Enterprise.
+Os designers UML foram removidos do Visual Studio.
 
 * Diagramas de UML agora são apresentados como arquivos XML
 * O Gerenciador de modelos UML não existe mais
@@ -57,7 +57,7 @@ Os designers UML foram retirados desta versão do Visual Studio Enterprise.
 * Não há suporte para o back-vinculação de DSL ou uma camada
 * Não há suporte para extensibilidade o SDK de modelagem UML
 
-Entretanto, há suporte para visualizar a arquitetura de código .NET e C++ está disponível por meio [mapas de código](map-dependencies-across-your-solutions.md)e os aperfeiçoamentos significativos para validação de dependência descrito acima.
+Suporte para visualizar a arquitetura do .NET e C++ código está disponível por meio [mapas de código](map-dependencies-across-your-solutions.md).
 
 Se você for um usuário significativas dos designers UML, você pode continuar a usar o Visual Studio 2015 ou versões anteriores enquanto você decidir sobre uma ferramenta alternativa para suas necessidades UML.
 

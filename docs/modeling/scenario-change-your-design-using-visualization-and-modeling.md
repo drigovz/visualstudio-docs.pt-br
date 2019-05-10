@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824040"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476587"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 
@@ -116,7 +116,7 @@ Ambas as equipes também usam validação de dependência para certificar-se de 
 
 Não há nenhuma ordem prescrita para usando o Visual Studio, diagramas, de modelagem, portanto, você pode usá-los de acordo com suas necessidades ou abordagem. Geralmente, as equipes revisitam seus modelos e de forma iterativa com frequência em todo o projeto. Cada diagrama oferece pontos específicos para ajudá-lo a entender, descrever e comunicar os diferentes aspectos do sistema em desenvolvimento.
 
-O dinner Now e Lucerne se comuniquem entre si e com participantes do projeto usando diagramas como sua linguagem comum. Por exemplo, Dinner Now usa diagramas para executar estas tarefas:
+O dinner Now e Lucerne se comunicam entre si e com os participantes do projeto, usando diagramas como sua linguagem comum. Por exemplo, Dinner Now usa diagramas para executar estas tarefas:
 
 - Visualize o código existente.
 
@@ -172,11 +172,11 @@ O dinner Now deve estimar o custo de atender o requisito de novo. Isso depende e
 
 |**Diagrama**|**Descreve**|
 |-|-|
-|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de camada são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de camada e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
+|*Diagrama de dependência*<br /><br /> Consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br />- [Validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)|A arquitetura lógica do código.<br /><br /> Um diagrama de dependência organiza e mapeia os artefatos em uma solução do Visual Studio para grupos abstratos chamados *camadas*. Essas camadas identificam as funções, tarefas ou funções que esses artefatos executam no sistema.<br /><br /> Diagramas de dependência são úteis para descrever o design pretendido do sistema e validação de código em evolução em relação a esse design.<br /><br /> Para criar camadas, arraste itens do Gerenciador de soluções, mapas de código, modo de exibição de classe e Pesquisador de objetos. Para desenhar novas camadas, use a caixa de ferramentas ou clique com botão direito na superfície do diagrama.<br /><br /> Para exibir as dependências existentes, clique com botão direito na superfície do diagrama de dependência e, em seguida, clique em **gerar dependências**. Para especificar dependências destinadas, desenhe novas dependências.|
 
- Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
+Por exemplo, o diagrama de dependência a seguir descreve as dependências entre camadas e o número de artefatos que estão associados a cada camada:
 
- ![Diagrama de dependência do sistema de pagamento integrado](../modeling/media/layer_integrated_dnlucerne.png)
+![Diagrama de dependência do sistema de pagamento integrado](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagrama de dependência**
 
@@ -194,7 +194,7 @@ Consulte:
 
 - A maioria de diagramas consistem em nós que são conectados por linhas. Para cada tipo de diagrama, a caixa de ferramentas fornece tipos diferentes de nós e linhas.
 
-     Para abrir a caixa de ferramentas, nos **modo de exibição** menu, clique em **caixa de ferramentas**.
+   Para abrir a caixa de ferramentas, nos **modo de exibição** menu, clique em **caixa de ferramentas**.
 
 - Para criar um nó, arraste-o na caixa de ferramentas para o diagrama. Determinados tipos de nós devem ser arrastados para nós existentes. Por exemplo, em um diagrama de componente, uma nova porta deve ser adicionada a um componente existente.
 
@@ -206,7 +206,7 @@ Diagramas de modelagem do Visual Studio são integrados com o Team Foundation Se
 
 Como seu trabalho progride, as equipes atualizam seus itens de trabalho para refletir a hora em que eles passam em suas tarefas. Também monitoram e relatam o status em seu trabalho usando os seguintes recursos do Team Foundation Server:
 
-- Diário *relatórios de burndown* que mostram se eles concluirá o trabalho planejado no tempo esperado. Geram outros relatórios semelhantes do Team Foundation Server para acompanhar o andamento de bugs.
+- Diário *relatórios de progresso* que mostram se eles concluirá o trabalho planejado no tempo esperado. Geram outros relatórios semelhantes do Team Foundation Server para acompanhar o andamento de bugs.
 
 - Uma *planilha de iteração* que usa o Microsoft Excel para ajudar a equipe a monitorar e equilibrar a carga de trabalho entre seus membros. Esta planilha é vinculada ao Team Foundation Server e fornece o foco para discussão durante suas reuniões regulares de progresso.
 
@@ -329,7 +329,7 @@ Este mapa mostra que a classe PaymentApprover agora está no espaço DinnerNow B
 
 |**Diagrama**|**Descreve**|
 |-|-|
-|Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar dependencys existentes ou dependencys pretendidos, crie um mapa de código e agrupar itens relacionados. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
+|Diagrama de dependência|A arquitetura lógica do sistema. Use a validação de dependência para certificar-se de que o código permaneça consistente com o design.<br /><br /> Para ajudá-lo a identificar as dependências existentes ou dependências pretendidas, crie um mapa de código e agrupar itens relacionados. Para criar um diagrama de dependência, consulte:<br /><br /> - [Criar diagramas de dependência do seu código](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)|
 |Diagrama de classe (baseado em código)|Classes existentes no código para um projeto específico.<br /><br /> Para visualizar e modificar uma classe existente no código, use o Designer de classe.<br /><br /> Confira [Como Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Defina um glossário de tipos: Diagramas de classe
