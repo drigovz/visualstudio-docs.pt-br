@@ -24,8 +24,9 @@
     - name: Adicionar o AD (Azure Active Directory)
       href: /azure/active-directory/develop/vs-active-directory-add-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
     - name: Adicionar os Serviços Cognitivos
-      href: cognitive-services-connected-services.yml
       items:
+        - name: Adicionar os Serviços Cognitivos
+          href: cognitive-services-connected-services.yml
         - name: Análise de Texto
           href: /azure/cognitive-services/text-analytics/vs-text-connected-service?toc=/visualstudio/azure/toc.json&bc=/visualstudio/azure/breadcrumb/toc.json
         - name: Pesquisa do Bing

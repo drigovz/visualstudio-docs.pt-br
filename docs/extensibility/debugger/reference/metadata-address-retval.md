@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63f3b7363a6852dd54033d89828f8af9b0eb76fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8e31682de4c625e40baaac6daff4687c713abda9
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913881"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460968"
 ---
 # <a name="metadataaddressretval"></a>METADATA_ADDRESS_RETVAL
 Essa estrutura representa um valor de retorno de um método ou função.
@@ -42,14 +45,18 @@ public struct METADATA_ADDRESS_RETVAL {
 }
 ```
 
-## <a name="terms"></a>Termos
- a ID do método de tokMethod esse valor de retorno é para.
+## <a name="members"></a>Membros
+ `tokMethod`\
+ A ID do método que destina-esse valor de retorno.
 
- dwCorType o tipo base do valor de retorno. Este é um valor da `CorElementType` enumeração definida no [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] arquivo corhdr. h do SDK.
+ `dwCorType`\
+ O tipo base do valor de retorno. Este é um valor da `CorElementType` enumeração definida no [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] arquivo corhdr. h do SDK.
 
- o tamanho da assinatura do valor de retorno de dwSigSize (conforme armazenado no `rgSig`).
+ `dwSigSize`\
+ O tamanho da assinatura do valor de retorno (conforme armazenado no `rgSig`).
 
- rgSig uma matriz de bytes que formam a assinatura do valor de retorno.
+ `rgSig`\
+ Uma matriz de bytes que formam a assinatura do valor de retorno.
 
 ## <a name="remarks"></a>Comentários
  Essa estrutura é parte da união na [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) estrutura quando o `dwKind` campo dos `DEBUG_ADDRESS_UNION` estrutura é definida como `ADDRESS_KIND_RETVAL` (um valor da [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) enumeração).

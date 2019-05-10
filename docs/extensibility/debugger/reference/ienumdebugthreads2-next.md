@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cdc06c8517442047778f2cc023478ede70b2a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 05044241a1e5b708bffaa73fedd674cea7618715
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865922"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458159"
 ---
 # <a name="ienumdebugthreads2next"></a>IEnumDebugThreads2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+ `celt`\
 
  [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- `rgelt`
+ `rgelt`\
 
  [no, out] Matriz de [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) elementos a serem preenchidos.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Retorna o número de elementos realmente retornados em `rgelt`.
 

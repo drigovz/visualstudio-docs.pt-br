@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 584c7ba10ac9eb05268f50ecaffa8c47818f7977
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 466d50f81fe73e0d67e01142568d20cd757ebeea
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915533"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65225982"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
 Recupera uma lista dos quadros de pilhas para este thread.
@@ -40,16 +43,16 @@ int EnumFrameInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFieldSpec`
+## <a name="parameters"></a>Parâmetros
+ `dwFieldSpec`\
 
  [in] Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos da [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estruturas devem ser preenchidos. Especifique o `FIF_FUNCNAME_FORMAT` sinalizador para formatar o nome da função em uma única cadeia de caracteres.
 
- `nRadix`
+ `nRadix`\
 
  [in] Base usada na formatação informações numéricas no enumerador.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Retorna um [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) objeto que contém uma lista de [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estruturas que descrevem o quadro de pilhas.
 

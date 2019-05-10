@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982258"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226675"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Usar controles WPF em soluções do Office
 
@@ -55,7 +55,7 @@ Você não pode adicionar controles do WPF diretamente aos elementos de interfac
 
     - Para regiões de formulário, adicione uma **região de formulário do Outlook** item ao projeto. Para obter mais informações, confira [Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) e [como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Para obter os painéis de ações, adicione uma **controle do painel Ações** ou **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Para obter os painéis de tarefas personalizados, adicione uma **controle de usuário** item ao projeto. Para obter mais informações, confira [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

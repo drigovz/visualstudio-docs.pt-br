@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915854"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226431"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Esse método mapeia um contexto de documento em uma matriz de endereços de depuração.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pDocContext`
+## <a name="parameters"></a>Parâmetros
+ `pDocContext`\
 
  [in] O contexto do documento.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] Se for TRUE, limita os endereços de depuração para uma única instrução.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.
 

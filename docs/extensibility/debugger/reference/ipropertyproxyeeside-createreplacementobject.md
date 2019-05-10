@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03bfeeb30fad4f332a3a747dcf8468c4fb39ef56
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c8a5c9a05525c55d35bb6e0033c5c2abcacbbc97
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914032"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458133"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 Cria uma cópia de um objeto de dados específicos para o avaliador de expressão (EE).
@@ -38,12 +41,12 @@ int CreateReplacementObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dataIn`
+## <a name="parameters"></a>Parâmetros
+ `dataIn`\
 
  [in] Uma [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os dados a serem copiados.
 
- `dataOut`
+ `dataOut`\
 
  [out] Retorna um novo `IEEDataStorage` objeto.
 

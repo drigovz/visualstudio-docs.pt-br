@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c92709afbc5341a7507c89dc948daeae1f798b4e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d3fdfd604f28f6657b27ef0e81ca4ce5855d97df
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916213"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457286"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
 Recupera a cadeia de caracteres do valor da métrica dada seu nome.
@@ -41,20 +44,20 @@ private int GetMetricString(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszType`
+## <a name="parameters"></a>Parâmetros
+ `pszType`\
 
  [in] Tipo de métrica.
 
- `guidSection`
+ `guidSection`\
 
  [in] Identificador exclusivo da seção.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nome da métrica.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Retorna a cadeia de caracteres do valor da métrica.
 

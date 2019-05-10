@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 13e6dd42ed372fb28d850a566ea1900447ad220c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dae92f404bb9ecb23b77dbda33c329994b9ed15b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564668"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457874"
 ---
 # <a name="you-have-selected-a-database-object-from-an-unsupported-database-provider"></a>Você tiver selecionado um objeto de base de dados de um provedor de base de dados sem suporte
 
@@ -30,5 +30,4 @@ O **Relational Designer** dá suporte a apenas o .NET Framework Data Provider pa
 
 ## <a name="see-also"></a>Consulte também
 
-- [Mensagens do O/R Designer](../data-tools/o-r-designer-messages.md)
 - [Ferramentas do LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
