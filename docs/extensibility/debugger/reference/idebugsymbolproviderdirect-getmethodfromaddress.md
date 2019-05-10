@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0eecc7331bc510366cd012e30cc1088ef6c60da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 76bec7cb621605933f8cc0b15ff6cb6e4dd6d70e
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868451"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224005"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 Recupera informações sobre o método no endereço especificado de depuração.
@@ -47,32 +50,32 @@ int GetMethodFromAddress(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pAddress`
+## <a name="parameters"></a>Parâmetros
+ `pAddress`\
 
  [in] Depurar o endereço que é representado pela [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) interface.
 
- `pGuid`
+ `pGuid`\
 
  [out] Identificador exclusivo do módulo.
 
- `pAppID`
+ `pAppID`\
 
  [out] Identificador do domínio do aplicativo.
 
- `pTokenClass`
+ `pTokenClass`\
 
  [out] Token que representa a classe continente.
 
- `pTokenMethod`
+ `pTokenMethod`\
 
  [out] Token que representa o módulo.
 
- `pdwOffset`
+ `pdwOffset`\
 
  [out] Um deslocamento em bytes desde o início do `pAddress` parâmetro.
 
- `pdwVersion`
+ `pdwVersion`\
 
  [out] Número de versão do método.
 
