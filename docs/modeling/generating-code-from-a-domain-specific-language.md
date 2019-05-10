@@ -7,17 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c60ed42e7d4a7604dc3d99f7e0311c7000b99c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994439"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476516"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Gerando código a partir de uma linguagem específica do domínio
+
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece uma maneira eficiente para gerar código, documentos, arquivos de configuração e outros artefatos de dados representados em modelos. Usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], você pode criar um conjunto de classes que representam seus dados e você pode escrever seus modelos de texto em classes cujos nomes e propriedades refletirem esses dados.
 
- Por exemplo, a Fabrikam tem um arquivo XML de nomes de clientes e endereços de email. Seus desenvolvedores criar um modelo no qual o cliente é uma classe, com as propriedades name e e-mail. Eles escreverem vários modelos de texto para processar os dados, incluindo desse fragmento que produz uma tabela de todos os clientes como parte de uma página HTML:
+Por exemplo, a Fabrikam tem um arquivo XML de nomes de clientes e endereços de email. Seus desenvolvedores criar um modelo no qual o cliente é uma classe, com as propriedades name e e-mail. Eles escreverem vários modelos de texto para processar os dados, incluindo desse fragmento que produz uma tabela de todos os clientes como parte de uma página HTML:
 
 ```
 <table>
@@ -27,39 +28,35 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] fornece uma maneira ef
 <# } #>  </table>
 ```
 
- Quando o banco de dados do cliente é processado, o arquivo XML é lido no armazenamento de modelos. Um *processador de diretriz*, criada usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], torna a classe de cliente disponível para o código no modelo de texto. Muitos modelos de texto podem ser executados no mesmo repositório.
+Quando o banco de dados do cliente é processado, o arquivo XML é lido no armazenamento de modelos. Um *processador de diretriz*, criada usando [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], torna a classe de cliente disponível para o código no modelo de texto. Muitos modelos de texto podem ser executados no mesmo repositório.
 
- Modelos de texto são essenciais para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Eles são usados para gerar o código-fonte para os elementos de modelo de domínio, bem como para o VSPackage e os controles que são usados para integrar as ferramentas do Visual Studio.
+Modelos de texto são essenciais para [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]. Eles são usados para gerar o código-fonte para os elementos de modelo de domínio, bem como para o VSPackage e os controles que são usados para integrar as ferramentas do Visual Studio.
 
- Esta seção discute algumas das maneiras de criar, modificar e depurar os modelos de texto usados em [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
+Esta seção discute algumas das maneiras de criar, modificar e depurar os modelos de texto usados em [!INCLUDE[dsl](../modeling/includes/dsl_md.md)].
 
 ## <a name="in-this-section"></a>Nesta seção
- [Acessando modelos por meio de modelos de texto](../modeling/accessing-models-from-text-templates.md)
 
- Fornece informações básicas sobre a referência a linguagem específica de domínio em modelos de texto.
+[Acessando modelos a partir de modelos de texto](../modeling/accessing-models-from-text-templates.md)\
+Fornece informações básicas sobre a referência a linguagem específica de domínio em modelos de texto.
 
- [Passo a passo: Depurar um modelo de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+[Passo a passo: Depurando um modelo de texto que acessa um modelo](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)\
+Descreve como fazer a solução de problemas e depuração em um modelo de texto que se refere a uma linguagem específica de domínio.
 
- Descreve como fazer a solução de problemas e depuração em um modelo de texto que se refere a uma linguagem específica de domínio.
+[Passo a passo: Conectando um Host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)\
+Descreve como se conectar a um host personalizado para um processador de diretriz gerado.
 
- [Passo a passo: Conectar um host a um processador de diretriz gerado](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
-
- Descreve como se conectar a um host personalizado para um processador de diretriz gerado.
-
- [O comando DslTextTransform](../modeling/the-dsltexttransform-command.md)
-
- Descreve o arquivo de comando que executa o executável TextTransform na linha de comando para modelos de texto que fazem referência a linguagens específicas de domínio.
+[O comando DslTextTransform](../modeling/the-dsltexttransform-command.md)\
+Descreve o arquivo de comando que executa o executável TextTransform na linha de comando para modelos de texto que fazem referência a linguagens específicas de domínio.
 
 ## <a name="reference"></a>Referência
- [Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)
 
- Fornece a sintaxe de diretivas de modelo de texto e blocos de controle.
+[Gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md)\
+Fornece a sintaxe de diretivas de modelo de texto e blocos de controle.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 
- Explica o processo de transformação do modelo de texto.
+[Geração de código de tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)\
+Explica o processo de transformação do modelo de texto.
 
- [Geração de código em um processo de build](../modeling/code-generation-in-a-build-process.md)
-
- Leia este tópico se você estiver gerando arquivos de uma DSL em um servidor de compilação.
+[Geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md)\
+Leia este tópico se você estiver gerando arquivos de uma DSL em um servidor de compilação.

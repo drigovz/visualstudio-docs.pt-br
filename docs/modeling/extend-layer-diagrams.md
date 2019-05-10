@@ -10,28 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c164174b88ca9fdd815668084c1447e20de072c
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62994709"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476563"
 ---
 # <a name="extend-dependency-diagrams"></a>Estender diagramas de dependência
 
-Você pode escrever código para criar e atualizar diagramas de dependência e também para validar a estrutura do código do programa em relação a diagramas de dependência no Visual Studio. Você pode adicionar comandos que aparecem no menu de atalho (contexto) dos diagramas, personalizar gestos de arrastar e soltar e acessar o modelo de camada de modelos de texto. Você pode empacotar essas extensões em um Visual Studio Integration VSIX (extensão) e distribuí-los a outros usuários do Visual Studio.
+Você pode escrever código para criar e atualizar diagramas de dependência e validar a estrutura do código do programa em relação a diagramas de dependência no Visual Studio. Você pode adicionar comandos que aparecem no menu de atalho (contexto) dos diagramas, personalizar gestos de arrastar e soltar e acessar o modelo de camada de modelos de texto. Você pode empacotar essas extensões em um Visual Studio Integration VSIX (extensão) e distribuí-los a outros usuários do Visual Studio.
 
- Para obter mais informações sobre diagramas de dependência, consulte:
-
-- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
-
-- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
-
-- [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
-
-- [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
-
-## <a name="prereqs"></a> Requisitos
+## <a name="requirements"></a>Requisitos
 
 Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:
 
@@ -43,16 +33,7 @@ Você deve ter os seguintes itens instalados no computador em que você deseja d
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
-Você deve ter uma versão adequada do Visual Studio instalado no computador em que você deseja executar suas extensões em camadas.
-
-Para ver quais versões do Visual Studio dão suporte a diagramas de dependência, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
-
-## <a name="in-this-section"></a>Nesta seção
- [Adicionar comandos e gestos aos diagramas de dependência](../modeling/add-commands-and-gestures-to-layer-diagrams.md)
-
- [Adicionar validação de arquitetura personalizada a diagramas de dependência](../modeling/add-custom-architecture-validation-to-layer-diagrams.md)
-
- [Adicionar propriedades personalizadas a diagramas de dependência](../modeling/add-custom-properties-to-layer-diagrams.md)
+Você deve ter uma edição adequada do Visual Studio instaladas no computador em que você deseja executar suas extensões em camadas. Para ver quais edições do Visual Studio dão suporte a diagramas de dependência, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).
 
 ## <a name="see-also"></a>Consulte também
 

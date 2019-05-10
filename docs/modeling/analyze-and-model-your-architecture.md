@@ -3,39 +3,26 @@ title: Analisar e modelar a sua arquitetura
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
-- Visual Studio Ultimate, exploring code
-- Visual Studio Ultimate, visualizing code
 - diagrams - modeling
-- Visual Studio ALM, modeling
-- application, design
 - architecture
 - code visualization
 - application design
-- applications, architecture
 - code exploration
-- Visual Studio ALM, exploring code
 - modeling
 - application architecture
-- application, modeling
-- applications, modeling
 - architecture [Visual Studio ALM], modeling
 - application modeling
-- Visual Studio Ultimate, modeling
-- architecture [Visual Studio Ultimate], modeling
-- application, architecture
-- Visual Studio ALM, visualizing code
-- applications, designing
 author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: be731ea81baaaa6e9f04b7546bc26ccea0549389
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795663"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476625"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 
@@ -49,22 +36,23 @@ Verifique se que o aplicativo atende aos requisitos de arquitetura usando a arqu
 
 Consulte [cenário: Alterar o design usando visualização e modelagem](../modeling/scenario-change-your-design-using-visualization-and-modeling.md).
 
-## <a name="to"></a>Para
+## <a name="article-reference"></a>Artigo de referência
 
 |||
 |-|-|
-|**Visualizar código**:<br /><br /> -Consulte a organização e os relacionamentos do código Criando mapas de código. Visualize dependências entre assemblies, namespaces, classes, métodos e assim por diante.<br />-Consulte a estrutura de classes e membros para um projeto específico com a criação de diagramas de classe do código.<br />-Encontre conflitos entre o código e seu design com a criação de diagramas de dependência para validar o código.|-   [Visualizar código](../modeling/visualize-code.md)<br />-   [Trabalhando com Classes e outros tipos (Designer de classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />-   [Vídeo: Entenda design de código com mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />-   [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
-|**Definir a arquitetura**:<br /><br /> -Definir e impor restrições sobre dependências entre os componentes do seu código com a criação de diagramas de dependência.|-   [Vídeo: Validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Validar o sistema com os requisitos e se destina a design:**<br /><br /> -Validar dependências de código com diagramas de dependência que descrevem a arquitetura pretendida e evitar alterações entrarem em conflito com o design.|-   [Vídeo: Validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
-|**Personalizar modelos e diagramas**:<br /><br /> -Crie seus próprios linguagens específicas de domínio.|-   [SDK de modelagem para Visual Studio - linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
-|**Gerar texto usando modelos T4**:<br /><br /> -Usar blocos de texto e a lógica de controle dentro de modelos para gerar arquivos baseados em texto.<br /> -Compilação de modelo T4 com o MSBuild incluída no Visual Studio|-   [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)|
-|**Compartilhar modelos, diagramas e mapas de código usando o controle de versão do Team Foundation**:<br /><br /> -Coloque mapas de código, projetos e diagramas de dependência sob controle de versão do Team Foundation para que você pode compartilhá-los.| |
+|**Visualizar código**:<br /><br />-Consulte a organização e os relacionamentos do código Criando mapas de código. Visualize dependências entre assemblies, namespaces, classes, métodos e assim por diante.<br />-Consulte a estrutura de classes e membros para um projeto específico com a criação de diagramas de classe do código.<br />-Encontre conflitos entre o código e seu design com a criação de diagramas de dependência para validar o código.|- [Visualizar código](../modeling/visualize-code.md)<br />- [Trabalhando com Classes e outros tipos (Designer de classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)<br />- [Vídeo: Entenda design de código com mapas de código do Visual Studio 2015](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)<br />- [Vídeo: Validar suas dependências de arquitetura em tempo real](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)|
+|**Definir a arquitetura**:<br /><br />-Definir e impor restrições sobre dependências entre os componentes do seu código com a criação de diagramas de dependência.|- [Vídeo: Validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Validar o sistema com os requisitos e se destina a design:**<br /><br />-Validar dependências de código com diagramas de dependência que descrevem a arquitetura pretendida e evitar alterações entrarem em conflito com o design.|- [Vídeo: Validar dependências de arquitetura com o Visual Studio (Channel 9)](https://channel9.msdn.com/Events/Connect/2016/170)|
+|**Personalizar modelos e diagramas**:<br /><br />-Crie seus próprios linguagens específicas de domínio.|- [SDK de modelagem para Visual Studio - linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)|
+|**Gerar texto usando modelos T4**:<br /><br />-Usar blocos de texto e a lógica de controle dentro de modelos para gerar arquivos baseados em texto.<br /> -Compilação de modelo T4 com o MSBuild incluída no Visual Studio|- [Geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md)|
+|**Compartilhar modelos, diagramas e mapas de código usando o controle de versão do Team Foundation**:<br /><br />-Coloque mapas de código, projetos e diagramas de dependência sob controle de versão do Team Foundation para que você pode compartilhá-los.| |
 
 Para ver quais edições do Visual Studio dão suporte a cada recurso, consulte [suporte de edição para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)
 
 ## <a name="types-of-models-and-typical-uses"></a>Tipos de modelos e usos típicos
 
 ### <a name="code-maps"></a>Mapas de código
+
 Mapas de código ajudam você a ver a organização e relações em seu código.
 
 **Usos típicos:**
@@ -77,8 +65,9 @@ Mapas de código ajudam você a ver a organização e relações em seu código.
 - [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
 - [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-### <a name="dependency-diagram"></a>Diagrama de dependência
-Diagramas de dependência permitem que você definir a estrutura de um aplicativo como um conjunto de blocos com dependências explícitas ou camadas. Você pode executar a validação para detectar conflitos entre dependências no código e descritos em um diagrama de dependência.
+### <a name="dependency-diagrams"></a>Diagramas de dependência
+
+Diagramas de dependência permitem que você definir a estrutura de um aplicativo como um conjunto de blocos com dependências explícitas ou camadas. Validação em tempo real mostra conflitos entre dependências no código e descritos em um diagrama de dependência.
 
 **Usos típicos:**
 
@@ -92,6 +81,7 @@ Diagramas de dependência permitem que você definir a estrutura de um aplicativ
 - [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Linguagem específica de domínio (DSL)
+
 Uma DSL é uma notação de design para uma finalidade específica. No Visual Studio, é geralmente gráfica.
 
 **Usos típicos:**
@@ -102,10 +92,6 @@ Uma DSL é uma notação de design para uma finalidade específica. No Visual St
 **Consulte:**
 
 - [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
-
-## <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
-
-[Visualização do Visual Studio & Fórum das ferramentas de modelagem](http://go.microsoft.com/fwlink/?LinkId=184720)
 
 ## <a name="see-also"></a>Consulte também
 

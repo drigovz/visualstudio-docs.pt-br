@@ -9,18 +9,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a1d58ede1370976147b33cf1246f8b582adb3c5b
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824001"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476608"
 ---
-# <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
+# <a name="respond-to-and-propagate-changes"></a>Responder e propagar alterações
+
 Quando um elemento é criado, excluído ou atualizado, você pode escrever código que propaga a alteração para outras partes do modelo ou a recursos externos como arquivos, bancos de dados ou outros componentes.
 
-## <a name="in-this-section"></a>Nesta seção
- Como diretriz, considere estas técnicas na seguinte ordem:
+## <a name="reference"></a>Referência
+
+Como diretriz, considere estas técnicas na seguinte ordem:
 
 |Técnica|Cenários|Para obter mais informações|
 |-|-|-|
@@ -34,12 +36,13 @@ Quando um elemento é criado, excluído ou atualizado, você pode escrever códi
 |Regras de seleção|Regras de seleção restringem especificamente o que o usuário pode selecionar.|[Como: Acessar e restringir a seleção atual](../modeling/how-to-access-and-constrain-the-current-selection.md)|
 |OnAssocatedPropertyChanged|Indica estados dos elementos de modelo usando os recursos de formas e conectores, como sombra, setas, cor e larguras de linha e estilo.|[Atualizando formas e conectores para refletir o modelo](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md)|
 
-## <a name="comparing-rules-and-store-events"></a>**Comparando as regras e eventos da Store**
- Alteração notifiers, regras e eventos são executados quando ocorrem alterações em um modelo.
+## <a name="compare-rules-and-store-events"></a>Comparar as regras e armazenar eventos
 
- Geralmente, as regras são aplicadas na transação final em que a alteração ocorreu e eventos são aplicados depois que as alterações em uma transação sejam confirmadas.
+Alteração notifiers, regras e eventos são executados quando ocorrem alterações em um modelo.
 
- Use eventos de armazenamento para sincronizar o modelo com objetos fora da Store e regras para manter a consistência dentro de Store.
+Geralmente, as regras são aplicadas na transação final em que a alteração ocorreu e eventos são aplicados depois que as alterações em uma transação sejam confirmadas.
+
+Use eventos de armazenamento para sincronizar o modelo com objetos fora da Store e regras para manter a consistência dentro de Store.
 
 - **Criação de regras personalizadas** criar uma regra personalizada como uma classe derivada de uma regra de abstrata. Você também deve notificar o framework sobre a regra personalizada. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).
 
