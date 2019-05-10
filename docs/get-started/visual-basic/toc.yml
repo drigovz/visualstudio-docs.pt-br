@@ -1,6 +1,7 @@
 - name: Tutoriais sobre o Visual Basic
-  href: index.yml
   items:
+    - name: Tutoriais sobre o Visual Basic
+      href: index.yml
     - name: Visão geral
       items:
         - name: Sobre o Visual Studio

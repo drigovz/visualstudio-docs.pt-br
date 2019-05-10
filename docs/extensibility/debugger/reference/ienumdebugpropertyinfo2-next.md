@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1e87ad302cbd25fcda691b47372f4fbd5d1771
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a866071b09c07f42d21bbf90de3bd6eda6717ab2
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62866051"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65223268"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 Retorna o próximo conjunto de elementos da enumeração.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+ `celt`\
 
  [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- `rgelt`
+ `rgelt`\
 
  [no, out] Matriz de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) elementos a serem preenchidos.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Retorna o número de elementos realmente retornados em `rgelt`.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0aeb888b2cc81dac6157ef0944703227799e61e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db085059b93eac4afd9f03ed17b5e267411a373
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868748"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458544"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 Obtém uma descrição do quadro de pilha.
@@ -40,16 +43,16 @@ int GetInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFieldSpec`
+## <a name="parameters"></a>Parâmetros
+ `dwFieldSpec`\
 
  [in] Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos do `pFrameInfo` parâmetro devem ser preenchidos.
 
- `nRadix`
+ `nRadix`\
 
  [in] A base a ser usada na formatação de todas as informações numéricas.
 
- `pFrameInfo`
+ `pFrameInfo`\
 
  [out] Um [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) estrutura será preenchida com a descrição do quadro de pilha.
 

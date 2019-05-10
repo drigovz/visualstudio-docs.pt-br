@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdad468c788d475d32eddca160728b2c3ecf11d9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62867426"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226651"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Recupera um número especificado de atributos personalizados em uma sequência de enumeração.
@@ -40,16 +43,16 @@ int Next(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `celt`
+## <a name="parameters"></a>Parâmetros
+ `celt`\
 
  [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- `rgelt`
+ `rgelt`\
 
  [out] Uma matriz de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objetos a serem preenchidos.
 
- `pceltFetched`
+ `pceltFetched`\
 
  [out] Retorna o número de elementos realmente retornados em `rgelt`.
 

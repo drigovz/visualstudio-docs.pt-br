@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2c8baa009160cc22766d1a30711fae5b153d2c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ec4ee2e7ca497a6bd3429447a1d66d6b216259cf
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869436"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457776"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Define o valor dessa propriedade como o valor da referência fornecida.
@@ -42,20 +45,20 @@ int SetValueAsReference(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `rgpArgs`
+## <a name="parameters"></a>Parâmetros
+ `rgpArgs`\
 
  [in] Uma matriz de argumentos a serem passados para o setter de propriedade de código gerenciado. Se a propriedade setter não recebe argumentos ou se esse [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto não faz referência a tal um setter de propriedade `rgpArgs` deve ser um valor nulo. Normalmente, esse parâmetro é um valor nulo.
 
- `dwArgCount`
+ `dwArgCount`\
 
  [in] O número de argumentos no `rgpArgs` matriz.
 
- `pValue`
+ `pValue`\
 
  [in] Uma referência, na forma de um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto para o valor a ser usado para definir essa propriedade.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Quanto tempo para ser o valor, em milissegundos. Um valor típico é `INFINITE`. Isso afeta o período de tempo que qualquer avaliação possível.
 

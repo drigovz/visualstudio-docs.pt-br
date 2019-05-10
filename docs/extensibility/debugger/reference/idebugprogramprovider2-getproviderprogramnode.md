@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869809"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459024"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Recupera o nó de programa para um programa específico.
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `Flags`
+## <a name="parameters"></a>Parâmetros
+ `Flags`\
 
  [in] Uma combinação de sinalizadores do [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) enumeração. Os sinalizadores a seguir são típicos para essa chamada:
 
@@ -57,23 +60,23 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|Chamador está atualmente em depuração (informações adicionais sobre a realização de marshaling serão retornadas para cada nó).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|Chamador foi anexado ao, mas não é iniciado pelo depurador.|
 
- `pPort`
+ `pPort`\
 
  [in] A porta que o processo de chamada está em execução.
 
- `processId`
+ `processId`\
 
  [in] Uma [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura que contém a ID do processo que contém o programa em questão.
 
- `guidEngine`
+ `guidEngine`\
 
  [in] GUID do mecanismo de depuração que o programa é anexado ao (se houver).
 
- `programId`
+ `programId`\
 
  [in] ID do programa para o qual obter o nó do programa.
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out] Uma [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objeto que representa o nó de programa solicitado.
 
