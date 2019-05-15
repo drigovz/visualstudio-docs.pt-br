@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58675b5f9e963ec416a2c8586375a94f9c06ae69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2b0185b0c3f7f26cfe9ffa8806c5049af323c517
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877517"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614961"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 Esse método localiza um alias, dado um nome. Isso irá procurar todos os aliases no programa.
@@ -38,14 +41,12 @@ int FindAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pcstrName`
+## <a name="parameters"></a>Parâmetros
+`pcstrName`\
+[in] Nome do alias para localizar.
 
- [in] Nome do alias para localizar.
-
- `ppAlias`
-
- [out] Alias encontrada (se houver) representado pela [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interface.
+`ppAlias`\
+[out] Alias encontrada (se houver) representado pela [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) interface.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` (se o alias não for encontrado) ou um código de erro.

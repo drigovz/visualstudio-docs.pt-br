@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902061"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614520"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
@@ -267,7 +267,7 @@ Quando você seleciona **expressão condicional**, você pode escolher entre dua
 
 2. Iniciar a depuração e quando a execução pausa no ponto de interrupção, selecione **Debug** > **Windows** > **Locals** ou **Alt** + **4** para abrir o **locais** janela.
 
-   Localizar o ponto de interrupção a **Locals** , clique duas vezes e selecione **criar ID de objeto**.
+   Localize a instância de objeto específico na **Locals** , clique duas vezes e selecione **criar ID de objeto**.
 
    Você deve ver uma **$** além de um número no **locais** janela. Isso é a ID de objeto.
 

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45923ef6d219e7f7dd79581856d0875b792130d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0ac048a26036457345f652a8d23a55fae54d59f0
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720322"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615545"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 Obtém o contexto do documento que descreve a posição do documento que deve ficar ativo com o pacote de depuração.
@@ -37,10 +40,9 @@ int GetDocumentContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppDocContext`
-
- [out] Retorna um [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que representa uma posição em um documento do arquivo de origem.
+## <a name="parameters"></a>Parâmetros
+`ppDocContext`\
+[out] Retorna um [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) objeto que representa uma posição em um documento do arquivo de origem.
 
 ## <a name="remarks"></a>Comentários
  Nessa posição pode ser usada para mostrar o cursor, por exemplo.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c091c7696867f369262a81259105dcf23fbe4c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2097a2168b40129c66ae6c48e75fee385ea81a45
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877733"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615250"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 Obtém a classificação ou o número de dimensões da matriz.
@@ -36,10 +39,9 @@ int GetRank(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pdwRank`
-
- [out] Retorna a classificação.
+## <a name="parameters"></a>Parâmetros
+`pdwRank`\
+[out] Retorna a classificação.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 735b92bb649344c055f7a645b961925e3cbd4d6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5550a1f1e83b9343a031df39728675db07de3559
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62924042"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615168"
 ---
 # <a name="idebugarrayobjectgetelement"></a>IDebugArrayObject::GetElement
 Obtém um elemento da matriz.
@@ -38,14 +41,12 @@ int GetElement(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwIndex`
+## <a name="parameters"></a>Parâmetros
+`dwIndex`\
+[in] O índice do elemento.
 
- [in] O índice do elemento.
-
- `ppElement`
-
- [out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface que representa o elemento.
+`ppElement`\
+[out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) interface que representa o elemento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
