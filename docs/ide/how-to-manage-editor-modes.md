@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39873fdd1bc41b32a69909a1061ec3fc7fb63b67
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429776"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531902"
 ---
 # <a name="how-to-manage-editor-modes"></a>Como: Gerenciar modos do editor
 
@@ -63,6 +63,5 @@ No modo **Espaço virtual**, os espaços são inseridos no final de cada linha d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../ide/customizing-the-editor.md)
 - [Personalizar layouts de janela no Visual Studio](../ide/customizing-window-layouts-in-visual-studio.md)
 - [Caixa de diálogo Fontes e Cores, Ambiente, Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md)

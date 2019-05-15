@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581975"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531664"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -52,7 +52,7 @@ Você pode encontrar uma série de recursos avançados no menu **Editar** > **Av
 
 |||
 |-|-|
-|[Formatar Documento](code-styles-and-quick-actions.md#format-document-command)|Define o recuo adequado das linhas de código e move as chaves para separar linhas no documento.|
+|Formatar Documento|Define o recuo adequado das linhas de código e move as chaves para separar linhas no documento.|
 |Formatar Seleção|Define o recuo adequado das linhas de código e move as chaves para separar linhas na seleção.|
 |Tabular linhas selecionadas|Troca espaços à esquerda por tabulações quando for apropriado.|
 |Cancelar tabulação das linhas selecionadas|Troca tabulações à esquerda por espaços. Se você desejar converter todos os espaços em seu arquivo para tabulações (ou todas as tabulações para espaços), você poderá usar os comandos `Edit.ConvertSpacesToTabs` e `Edit.ConvertTabsToSpaces`. Esses comandos não são exibidos nos menus do Visual Studio, mas você pode chamá-los por meio da janela **Acesso Rápido** ou da janela Comando.|
@@ -84,7 +84,7 @@ Para encontrar o local em que elementos de código específicos são referenciad
 
 Para definir novas teclas de atalho ou redefinir as teclas de atalho existentes, vá até **Ferramentas** > **Opções** > **Ambiente** > **Teclado**. Para saber mais sobre teclas de atalho, veja [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Para obter mais informações sobre como personalizar o editor, consulte [Personalizar o editor](../ide/customizing-the-editor.md). Para conferir opções do editor específicas ao JavaScript, confira [Opções do editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
+Para conferir opções do editor específicas ao JavaScript, confira [Opções do editor de JavaScript](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Consulte também
 

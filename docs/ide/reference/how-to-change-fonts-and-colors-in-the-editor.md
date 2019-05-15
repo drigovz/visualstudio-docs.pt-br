@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7936f5a4de6b9feef64819ed85efb7d2ae55002e
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789586"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531539"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: Alterar as fontes e as cores do editor no Visual Studio
 
@@ -50,7 +50,6 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 ## <a name="see-also"></a>Consulte também
 
-- [Personalizar o editor](../../ide/customizing-the-editor.md)
 - [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
 - [Como: Alterar fontes e cores no Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

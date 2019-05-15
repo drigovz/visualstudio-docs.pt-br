@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955560"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455106"
 ---
 # <a name="sample-xsd-file-relationships"></a>Arquivo de exemplo XSD: Relações
 
@@ -63,3 +63,6 @@ O arquivo XSD a seguir é usado em vários exemplos na documentação do Designe
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> As empresas, as organizações, os produtos, os nomes de domínio, os endereços de email, os logotipos, as pessoas, os locais e os eventos de exemplo descritos aqui são fictícios. Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.

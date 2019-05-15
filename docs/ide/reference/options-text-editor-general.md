@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a7bcf7b57c6cdc7e0ff4ff5a851397b7c96b345
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 986c52a365abcb1780b741af61414bfc758413db
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778641"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531917"
 ---
 # <a name="options-text-editor-general"></a>Opções, Editor de Texto, Geral
 
@@ -96,5 +96,5 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Opções, Editor de Texto, Extensão de Arquivo](../../ide/reference/options-text-editor-file-extension.md)
 - [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)
-- [Personalizando o editor](../../ide/customizing-the-editor.md)
+- [Personalizando o editor](../how-to-change-text-case-in-the-editor.md)
 - [Usando o IntelliSense](../../ide/using-intellisense.md)
