@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 09f0438bed235729d390b784725b89abec201c7f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1a1ecf55b017319850f97c23d926a650c7e01680
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693512"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615341"
 ---
 # <a name="builttype"></a>BUILT_TYPE
 Essa estrutura Especifica informações sobre um tipo de campo tirado de metadados.
@@ -40,12 +43,15 @@ public struct BUILT_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
-ulAppDomainID a ID do aplicativo do qual o símbolo foi originada. Isso é usado para identificar exclusivamente uma instância do aplicativo.
+## <a name="members"></a>Membros
+`ulAppDomainID`\
+ID do aplicativo do qual o símbolo foi originada. Isso é usado para identificar exclusivamente uma instância do aplicativo.
 
-guidModule o GUID do módulo que contém esse campo.
+`guidModule`\
+O GUID do módulo que contém esse campo.
 
-pUnderlyingField uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto identifica o campo subjacente associado com esse campo interno.
+`pUnderlyingField`\
+Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto identifica o campo subjacente associado com esse campo interno.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é exibido como parte da união na [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estrutura quando o `dwKind` campo dos `TYPE_INFO` estrutura é definida como `TYPE_KIND_BUILT` (um valor da [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) enumeração).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d709124a392ffb6b6cbbb5a29576a985fe6d0f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: eaaaf52a0a577d8b802540ca9b4ae11ab9aa1dbd
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877553"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614904"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 Esse método retorna um serviço solicitado.
@@ -42,22 +45,18 @@ Int GetEEService(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `vendor`
+## <a name="parameters"></a>Parâmetros
+`vendor`\
+[in] `GUID` de um fornecedor (um valor nulo é aceitável).
 
- [in] `GUID` de um fornecedor (um valor nulo é aceitável).
+`language`\
+[in] `GUID` de uma linguagem (um valor nulo é aceitável).
 
- `language`
+`iid`\
+[in] `IID` do serviço a obter.
 
- [in] `GUID` de uma linguagem (um valor nulo é aceitável).
-
- `iid`
-
- [in] `IID` do serviço a obter.
-
- `ppService`
-
- [out] Uma interface para o serviço solicitado.
+`ppService`\
+[out] Uma interface para o serviço solicitado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

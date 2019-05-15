@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4cefac01da741c34c79c7c0d4b709d9a99ac8dae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f37acdbfdeaeb076fb96d1aef27592e755eee99
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62877625"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615111"
 ---
 # <a name="idebugarrayobject2hasbaseindices"></a>IDebugArrayObject2::HasBaseIndices
 Determina se a matriz tem base índices (limites inferiores) definidos.
@@ -39,9 +39,8 @@ int HasBaseIndices (
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pfHasBaseIndices`\
-
- [out] TRUE para especificar que a matriz tem índices de base (limites inferiores); Caso contrário, FALSE.
+`pfHasBaseIndices`\
+[out] TRUE para especificar que a matriz tem índices de base (limites inferiores); Caso contrário, FALSE.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

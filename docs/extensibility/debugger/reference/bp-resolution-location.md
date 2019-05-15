@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662901"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615376"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Especifica a estrutura do local de resolução de ponto de interrupção.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Membros
-`bpType` Um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica como interpretar os `bpResLocation` union ou `unionmemberX` membros.
+`bpType`\
+Um valor da [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) enumeração que especifica como interpretar os `bpResLocation` union ou `unionmemberX` membros.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ somente] Contém o [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) estrutura se `bpType`  =  `BPT_CODE`.
 
- [C++ somente] Contém o [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) estrutura se `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ somente] Contém o [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) estrutura se `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ somente] Um espaço reservado.
 
- [C++ somente] Contém o [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) estrutura se `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# somente] Consulte os comentários sobre como interpretar.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# somente] Consulte os comentários sobre como interpretar.
 
- [C++ somente] Um espaço reservado.
+`unionmember3`\
+[C# somente] Consulte os comentários sobre como interpretar.
 
-`unionmember1`
-
- [C# somente] Consulte os comentários sobre como interpretar.
-
-`unionmember2`
-
- [C# somente] Consulte os comentários sobre como interpretar.
-
-`unionmember3`
-
- [C# somente] Consulte os comentários sobre como interpretar.
-
-`unionmember4`
-
- [C# somente] Consulte os comentários sobre como interpretar.
+`unionmember4`\
+[C# somente] Consulte os comentários sobre como interpretar.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é um membro do [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) e [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estruturas.
