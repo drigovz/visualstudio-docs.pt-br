@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b3096242335a1e9d374da4a801c9ff4d2c80635
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20124d2e9b9cc30a7577a3682358f2a9d918ed43
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845477"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65456863"
 ---
 # <a name="design-user-interfaces"></a>Projete interfaces do usuário
 
@@ -24,6 +24,6 @@ Você pode criar e projetar a interface do usuário de seu aplicativo usando uma
 | Os recursos dos designers do XAML no Visual Studio e Blend for Visual Studio | [Projetar XAML no Visual Studio e no Blend para Visual Studio](../designers/designing-xaml-in-visual-studio.md) |
 | Criação de qualquer aplicativo baseado em XAML usando o Visual Studio|[Criar uma interface de usuário usando o XAML Designer no Visual Studio](creating-a-ui-by-using-xaml-designer-in-visual-studio.md) |
 | Criação de qualquer aplicativo baseado em XAML usando o Blend for Visual Studio | [Criar uma interface do usuário usando o Blend for Visual Studio](creating-a-ui-by-using-blend-for-visual-studio.md) |
-|Criando aplicativos de área de trabalho que usam o tipo WPF de XAML | [Introdução ao Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |
+| Criando aplicativos de área de trabalho que usam o tipo WPF de XAML | [Introdução ao Windows Presentation Foundation](../designers/getting-started-with-wpf.md) |
 | Desenvolvendo um aplicativo DirectX no Visual Studio | [Trabalhar com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md) |
 | Ícones padrão disponíveis para seus programas | [A biblioteca de imagens do Visual Studio](../designers/the-visual-studio-image-library.md) |
