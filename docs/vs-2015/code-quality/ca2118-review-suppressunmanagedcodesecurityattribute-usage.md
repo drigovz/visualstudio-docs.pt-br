@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4fdbf84cc981dfe9e7cee73fba06867250d2fc33
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059169"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687291"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60059169"
  Um tipo público ou protegido ou membro tem o <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Altera o comportamento do sistema de segurança padrão para membros que executem código não gerenciado usando invocação de plataforma ou interoperabilidade de COM. Em geral, o sistema faz uma [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) para permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica todos os chamadores na pilha de chamadas para a permissão. Quando o atributo estiver presente, o sistema faz uma [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado por JIT.
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> Altera o comportamento do sistema de segurança padrão para membros que executem código não gerenciado usando invocação de plataforma ou interoperabilidade de COM. Em geral, o sistema faz uma [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) para permissão de código não gerenciado. Essa demanda ocorre em tempo de execução para cada invocação do membro e verifica todos os chamadores na pilha de chamadas para a permissão. Quando o atributo estiver presente, o sistema faz uma [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para a permissão: as permissões do chamador imediato são verificadas quando o chamador é compilado por JIT.
 
  Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos. Se você colocar o atributo em membros públicos que chamam métodos nativos, os chamadores na pilha de chamadas (que não seja o chamador imediato) precisa de permissão de código não gerenciado para executar código não gerenciado. Dependendo do membro público ações e manipulação de entrada, ele pode permitir que os chamadores não confiáveis para acessar a funcionalidade normalmente restringido ao código confiável.
 
@@ -72,4 +72,4 @@ ms.locfileid: "60059169"
  [!code-csharp[FxCop.Security.TypeInvokeAndSuppress#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.TypeInvokeAndSuppress/cs/FxCop.Security.TypeInvokeAndSuppress.cs#1)]
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](http://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)
+ <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> [Diretrizes de codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [otimizações de segurança](https://msdn.microsoft.com/cf255069-d85d-4de3-914a-e4625215a7c0) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d)

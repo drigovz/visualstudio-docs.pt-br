@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784794"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675142"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introdução a aplicativos internacionais com base no .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], há duas partes para criar um aplicativo pronto para o mundo: globalização, o processo de criação de aplicativos que podem se adaptar a diferentes culturas, e localização, o processo de traduzir recursos para uma cultura específica. Para obter informações gerais sobre como criar aplicativos para um público internacional, consulte [Melhores práticas para o desenvolvimento de aplicativos prontos para o mundo](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], há duas partes para criar um aplicativo pronto para o mundo: globalização, o processo de criação de aplicativos que podem se adaptar a diferentes culturas, e localização, o processo de traduzir recursos para uma cultura específica. Para obter informações gerais sobre como criar aplicativos para um público internacional, consulte [Melhores práticas para o desenvolvimento de aplicativos prontos para o mundo](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  O modelo de localização do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] consiste em um assembly principal que contém o código do aplicativo e os recursos de fallback – cadeias de caracteres, imagens e outros objetos para o idioma no qual o aplicativo foi originalmente desenvolvido. Cada aplicativo localizado terá assemblies satélites, ou assemblies que contêm somente os recursos localizados. Como o assembly principal sempre contém os recursos de fallback, se um recurso não for encontrado no assembly satélite localizado, o <xref:System.Resources.ResourceManager> tentará carregá-lo de forma hierárquica, eventualmente recorrendo ao recurso no assembly principal. O sistema de fallback de recurso é explicado mais detalhadamente em [Organização hierárquica de recursos para localização](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

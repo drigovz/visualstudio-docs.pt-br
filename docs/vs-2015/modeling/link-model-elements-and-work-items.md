@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7aca98a97919a741f43c3c746d96fc8e89cb9ea6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440945"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674224"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo e itens de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -140,7 +140,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 1. Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os elementos de modelo estão vinculados ao item de trabalho.  
   
     > [!NOTE]
-    > Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Abra o item de trabalho, escolha **Links**. Sob **Link de modelo**, abra o menu de atalho para o elemento de modelo vinculado. Escolher **Abrir Item vinculado**.  
   
@@ -168,7 +168,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
   
 |**Problema**|**Possível causa**|**Resolução**|  
 |---------------|------------------------|--------------------|  
-|Não é possível encontrar o elemento de modelo que você deseja vincular.|O elemento talvez esteja em um diagrama em um projeto de modelagem que esteja em [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Você talvez não tenha um workspace que seja mapeado para o diagrama.|Mapeie o workspace para o projeto e o diagrama de modelagem. Se não tiver um workspace, você deverá criá-lo.<br /><br /> A mensagem de erro exibida para esse problema contém o caminho que é possível usar para mapear o workspace.<br /><br /> Ver [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
+|Não é possível encontrar o elemento de modelo que você deseja vincular.|O elemento talvez esteja em um diagrama em um projeto de modelagem que esteja em [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Você talvez não tenha um workspace que seja mapeado para o diagrama.|Mapeie o workspace para o projeto e o diagrama de modelagem. Se não tiver um workspace, você deverá criá-lo.<br /><br /> A mensagem de erro exibida para esse problema contém o caminho que é possível usar para mapear o workspace.<br /><br /> Ver [criar e trabalhar com espaços de trabalho](https://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).|  
 |Não é possível encontrar o elemento de modelo vinculado.|O elemento vinculado talvez esteja em um diagrama que foi movido, renomeado ou excluído.|1.  No item de trabalho, exclua o link para o elemento de modelo.<br />2.  Crie um novo link com base no item de trabalho para o elemento de modelo.|  
 |O item de trabalho não tem elementos de modelo vinculados esperados.|Um item de trabalho mostra apenas um elemento de camada vinculado caso o vínculo tenha sido criado com base no item de trabalho. A equipe não usa [!INCLUDE[esprscc](../includes/esprscc-md.md)], o caminho local dos diagramas será usado para criar os links. Se o projeto de modelagem e seus diagramas estiverem em [!INCLUDE[esprscc](../includes/esprscc-md.md)], todos os membros da equipe que podem acessar o projeto poderão exibir os elementos vinculados em itens de trabalho.|Tente atualizar o item de trabalho.|  
 |A exclusão de um link para um elemento de modelo de um item de trabalho não exclui o link do elemento de modelo para o item de trabalho.||Exclua o link para o item de trabalho começando pelo elemento de modelo.|  

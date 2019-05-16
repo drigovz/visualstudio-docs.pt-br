@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a7ed11e7d3e093afaeaa19fd87ea68b7fecd266
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2f642ea8e41e4a9ccf2b35f432df528fc5e81d0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816557"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676558"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
 Você pode criar uma regra personalizada definida para atender às necessidades específicas do projeto para análise de código.
 
-## <a name="create-a-custom-rule-set"></a>Criar um conjunto de regras personalizado
+## <a name="create-a-custom-rule-set-from-an-existing-rule-set"></a>Criar uma regra personalizada definida de um conjunto de regra existente
 
 Para criar uma regra personalizada definida, você pode abrir uma conjunto de regras internas do **editor de conjunto de regras**. A partir daí, você pode adicionar ou remover regras específicas, e você pode alterar a ação que ocorre quando uma regra é violada&mdash;Mostrar, por exemplo, um aviso ou erro.
 
@@ -40,7 +40,12 @@ Para criar uma regra personalizada definida, você pode abrir uma conjunto de re
 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 
-Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo** caixa de diálogo:
+> [!NOTE]
+> Se você tiver um projeto .NET Core ou .NET Standard, o processo é um pouco diferente porque não há nenhuma **análise de código** guia de propriedade. Siga as etapas a serem [copiar uma regra predefinida, defina ao seu projeto e defina-o como o conjunto de regras ativo](analyzer-rule-sets.md). Depois que você copiou um conjunto de regras, você pode [editá-lo no Visual Studio, editor de conjunto de regras](working-in-the-code-analysis-rule-set-editor.md) abrindo-o de **Gerenciador de soluções**.
+
+## <a name="create-a-new-rule-set"></a>Criar um novo conjunto de regras
+
+Você pode criar um novo arquivo de conjunto de regras do **novo arquivo** caixa de diálogo:
 
 1. Selecione **arquivo** > **New** > **arquivo**, ou pressione **Ctrl**+**N**.
 
@@ -50,9 +55,12 @@ Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo
 
    O novo *RuleSet* arquivo é aberto no editor de conjunto de regras.
 
-### <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Criar uma regra personalizada definida de vários conjuntos de regra
+## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>Criar uma regra personalizada definida de vários conjuntos de regra
 
-1. No Gerenciador de soluções, clique com botão direito no projeto e, em seguida, selecione **propriedades**.
+> [!NOTE]
+> O procedimento a seguir não se aplicam a projetos do .NET Core, que não têm uma **análise de código** guia de propriedade.
+
+1. Na **Gerenciador de soluções**, clique com botão direito no projeto e, em seguida, selecione **propriedades**.
 
 2. Sobre o **propriedades** páginas, selecionadas a **análise de código** guia.
 
@@ -68,7 +76,7 @@ Você também pode criar um novo arquivo de conjunto de regras do **novo arquivo
 
 6. Selecione **abrir** para abrir a nova regra definida no editor de conjunto de regras.
 
-### <a name="rule-precedence"></a>Precedência de regra
+## <a name="rule-precedence"></a>Precedência de regra
 
 - Se a mesma regra é listadas duas ou mais vezes em uma conjunto de regras com gravidades diferentes, o compilador gera um erro. Por exemplo:
 
@@ -112,7 +120,7 @@ Para alterar o nome de exibição de um conjunto de regras que é aberto no edit
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Agora que você tem uma regra definida, a próxima etapa é personalizar as regras, adicionando ou removendo regras ou modificando a gravidade das violações de regra.
+Agora que você tem uma regra definida, a próxima etapa é personalizar as regras adicionando ou removendo regras ou modificando a gravidade das violações de regra.
 
 > [!div class="nextstepaction"]
 > [Modificar as regras no editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md)

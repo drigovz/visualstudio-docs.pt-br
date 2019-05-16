@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93c512bafd8b15682ed081c7778660ef52fd1f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692495"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Salvar dados usando uma transação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Salvar dados em uma transação usando o <xref:System.Transactions> namespace. U
 > [!NOTE]
 > O <xref:System.Transactions> namespace tem suporte no Windows 2000 ou posterior.  
   
- A maneira mais fácil para implementar uma transação é criar uma instância de um <xref:System.Transactions.TransactionScope> do objeto em um `using` instrução. (Para obter mais informações, consulte [instrução Using](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), e [usando a instrução](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) O código executado dentro de `using` instrução participa na transação.  
+ A maneira mais fácil para implementar uma transação é criar uma instância de um <xref:System.Transactions.TransactionScope> do objeto em um `using` instrução. (Para obter mais informações, consulte [instrução Using](https://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), e [usando a instrução](https://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) O código executado dentro de `using` instrução participa na transação.  
   
  Para confirmar a transação, chame o <xref:System.Transactions.TransactionScope.Complete%2A> bloquear o método como a última instrução em uso.  
   

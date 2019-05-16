@@ -11,12 +11,12 @@ ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5dab1d68b9cf3e69c2f7a4a03d6e91a4fbab1907
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a11f05edb4e7d476fdbcab82d365f9327dd4869a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440800"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685279"
 ---
 # <a name="vspackage-registration"></a>Registro do VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Os VSPackages deverá avisar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se 
 > [!NOTE]
 > É uma prática aceita durante o desenvolvimento de VSPackage para usar o auto-registro. No entanto, [!INCLUDE[vsipprvsip](../../includes/vsipprvsip-md.md)] parceiros não é possível entregar seus produtos usando o auto-registro como parte da instalação.  
   
- Entradas do registro em um pacote do Windows Installer geralmente são feitas na tabela de registro. Você também pode registrar as extensões de arquivo na tabela de registro. No entanto, o Windows Installer fornece suporte interno por meio do identificador programático (ProgId), classe, extensão e tabelas do verbo. Para obter mais informações, consulte [tabelas de banco de dados](http://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
+ Entradas do registro em um pacote do Windows Installer geralmente são feitas na tabela de registro. Você também pode registrar as extensões de arquivo na tabela de registro. No entanto, o Windows Installer fornece suporte interno por meio do identificador programático (ProgId), classe, extensão e tabelas do verbo. Para obter mais informações, consulte [tabelas de banco de dados](https://msdn.microsoft.com/library/aa368259\(VS.85\).aspx).  
   
  Certifique-se de que as entradas do registro estão associadas com o componente que é apropriado para sua estratégia de lado a lado escolhida. Por exemplo, entradas do registro para um arquivo compartilhado devem ser associadas com o componente do Windows Installer do arquivo. Da mesma forma, entradas do registro para um arquivo específico da versão devem ser associadas a componente desse arquivo. Caso contrário, instalar ou desinstalar o VSPackage para uma versão do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] poderia interromper o VSPackage em outras versões. Para obter mais informações, consulte [que dão suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)  
   
@@ -58,5 +58,5 @@ Os VSPackages deverá avisar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] se 
 - Código de auto-registro pode ser negado acesso a recursos de rede, como bibliotecas de tipos, se um componente for especificado como executado a partir da origem tanto está listado na tabela SelfReg. Isso pode causar a instalação do componente falha durante uma instalação administrativa.  
   
 ## <a name="see-also"></a>Consulte também  
- [Windows Installer](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
- [Registro de pacote gerenciado](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)
+ [Windows Installer](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx)   
+ [Registro de pacote gerenciado](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1)

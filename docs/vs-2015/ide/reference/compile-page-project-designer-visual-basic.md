@@ -19,12 +19,12 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0352f98fe4d053f8c90d1b2c8f910e73cde23a6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8d12603c10c238f74d8e9e7d79dad495d8840978
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680225"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,28 +39,28 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
  As configurações a seguir permitem selecionar a configuração e a plataforma a exibir ou modificar.  
   
 > [!NOTE]
-> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+> Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Portanto, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Configuração**  
- Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para obter mais informações, consulte [Debug and Release Project Configurations](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) e [como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
+ Especifica quais definições de configuração exibir ou modificar. As configurações são **Depurar** (padrão), **Versão** ou **Todas as Configurações**. Para obter mais informações, consulte [Debug and Release Project Configurations](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e) e [como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
   
  **Plataforma**  
- Especifica quais configurações de plataforma exibir ou modificar. Você pode especificar **Qualquer CPU** (padrão), **x64** ou **x86**. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica quais configurações de plataforma exibir ou modificar. Você pode especificar **Qualquer CPU** (padrão), **x64** ou **x86**. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 ## <a name="compiler-configuration-options"></a>Opções de configuração do compilador  
  As configurações a seguir permitem definir as opções de configuração do compilador.  
   
  **Caminho de saída de build**  
- Especifica o local dos arquivos de saída para a configuração deste projeto. Digite o caminho da saída de build nesta caixa ou clique no botão **Procurar** para selecionar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug\ ou bin\Release\\. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Especifica o local dos arquivos de saída para a configuração deste projeto. Digite o caminho da saída de build nesta caixa ou clique no botão **Procurar** para selecionar um caminho. Observe que o caminho é relativo; se você inserir um caminho absoluto, ele será salvo como relativo. O caminho padrão é bin\Debug\ ou bin\Release\\. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
- Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+ Com configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. O comando **Build** do menu **Depurar** (F5) colocará o build no local de depuração, independentemente do **Caminho de saída** você especificar. No entanto, o comando **Build** do menu **Build** o coloca no local especificado. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
  **Opção explícita**  
  Especifica se a declaração implícita de variáveis deve ser permitida. Selecione **Ativar** para exigir a declaração explícita de variáveis. Isso faz o compilador relatar erros se variáveis não forem declaradas antes de serem usadas. Selecione **Desativar** para permitir a declaração implícita de variáveis.  
   
- Essa configuração corresponde à opção do compilador [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
+ Essa configuração corresponde à opção do compilador [/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
   
- Se um arquivo de código-fonte contiver uma [Instrução Explícita de Opção](http://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Explícita** na **página Compilar**.  
+ Se um arquivo de código-fonte contiver uma [Instrução Explícita de Opção](https://msdn.microsoft.com/library/e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Explícita** na **página Compilar**.  
   
  Quando você cria um novo projeto, a configuração **Opção Explícita** na **página Compilar** é definida como o valor da configuração **Opção Explícita** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração padrão inicial de **Opção Explícita** em **Padrões de VB** é **Ativada**.  
   
@@ -75,15 +75,15 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
   
 - Digitação implícita que resulta em um tipo `Object`  
   
-  Erros de conversão de redução implícita ocorrerem quando há uma conversão de tipo de dados implícita que é uma conversão de redução. Para obter mais informações, consulte [Instrução Opção Estrita](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Conversões Explícitas e Implícitas](http://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66) e [Conversões de Expansão e Redução](http://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
+  Erros de conversão de redução implícita ocorrerem quando há uma conversão de tipo de dados implícita que é uma conversão de redução. Para obter mais informações, consulte [Instrução Opção Estrita](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Conversões Explícitas e Implícitas](https://msdn.microsoft.com/library/77de1659-af8a-492c-967e-e7ef60ccce66) e [Conversões de Expansão e Redução](https://msdn.microsoft.com/library/058c3152-6c28-4268-af44-2209e774f0bd).  
   
-  Um objeto tem associação tardia quando é atribuído a uma propriedade ou a um método de uma variável declarada como sendo do tipo `Object`. Para obter mais informações, consulte [Instrução Opção Estrita](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) e [Associação Antecipada e Tardia](http://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
+  Um objeto tem associação tardia quando é atribuído a uma propriedade ou a um método de uma variável declarada como sendo do tipo `Object`. Para obter mais informações, consulte [Instrução Opção Estrita](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5) e [Associação Antecipada e Tardia](https://msdn.microsoft.com/library/d6ff7f1e-b94f-4205-ab8d-5cfa91758724).  
   
-  Erros de tipo de objeto implícitos ocorrem quando um tipo apropriado não pode ser inferido de uma variável declarada, portanto, um tipo de `Object` é inferido. Isso ocorre principalmente quando você usa uma instrução `Dim` para declarar uma variável sem usar uma cláusula `As` e `Option Infer` está desativado. Para obter mais informações, consulte [Instrução Opção Explícita](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Instrução Opção Inferir](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652) e [Especificação de Linguagem Visual Basic](http://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
+  Erros de tipo de objeto implícitos ocorrem quando um tipo apropriado não pode ser inferido de uma variável declarada, portanto, um tipo de `Object` é inferido. Isso ocorre principalmente quando você usa uma instrução `Dim` para declarar uma variável sem usar uma cláusula `As` e `Option Infer` está desativado. Para obter mais informações, consulte [Instrução Opção Explícita](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), [Instrução Opção Inferir](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652) e [Especificação de Linguagem Visual Basic](https://msdn.microsoft.com/library/42c30017-19d0-442e-87a2-850b66ddc3df).  
   
-  A configuração **Opção Estrita** corresponde à opção do compilador [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
+  A configuração **Opção Estrita** corresponde à opção do compilador [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
   
-  Se um arquivo de código-fonte contiver uma [Instrução Opção Explícita](http://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Explícita** na **página Compilar**.  
+  Se um arquivo de código-fonte contiver uma [Instrução Opção Explícita](https://msdn.microsoft.com/library/5883e0c1-a920-4274-8e46-b0ff047eaee5), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Explícita** na **página Compilar**.  
   
   Quando você cria um projeto, a configuração **Opção Estrita** na **página Compilar** é definida como o valor da configuração **Opção Estrita** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração padrão inicial de **Opção Estrita** em **Padrões do VB** é **Desativada**.  
   
@@ -102,25 +102,25 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
   **Opção comparar**  
   Especifica o tipo de comparação de cadeias de caracteres a usar. Selecione **Binário** para instruir o compilador a usar comparações de cadeias de caracteres binárias com diferenciação de maiúsculas e minúsculas. Selecione **Texto** usar comparações de cadeias de caracteres de texto específicas da localidade sem diferenciação de maiúsculas e minúsculas.  
   
-  Essa configuração corresponde à opção do compilador [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
+  Essa configuração corresponde à opção do compilador [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
   
-  Se um arquivo de código-fonte contiver uma [Instrução Opção Comparar](http://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), o valor `Binary` ou `Text` na instrução substituirá a configuração **Opção Comparar** na **página Compilar**.  
+  Se um arquivo de código-fonte contiver uma [Instrução Opção Comparar](https://msdn.microsoft.com/library/54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e), o valor `Binary` ou `Text` na instrução substituirá a configuração **Opção Comparar** na **página Compilar**.  
   
   Ao criar um projeto, a configuração **Opção Comparar** na página **Compilar** é definida como o valor da configuração **Opção Comparar** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração inicial padrão de **Opção Comparar** em **Padrões do VB** é **Binário**.  
   
   **Opção inferir**  
   Especifica se você deve permitir inferência de tipo de variável local nas declarações de variável. Selecione **Ativado** para permitir o uso de inferência de tipo de variável local. Selecione **Desativado** para bloquear a inferência de tipo de variável local.  
   
-  Essa configuração corresponde à opção do compilador [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
+  Essa configuração corresponde à opção do compilador [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
   
-  Se um arquivo de código-fonte contiver uma [Instrução Opção Inferir](http://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Inferir** na **página Compilar**.  
+  Se um arquivo de código-fonte contiver uma [Instrução Opção Inferir](https://msdn.microsoft.com/library/4ad3e6e9-8f5b-4209-a248-de22ef6e4652), o valor `On` ou `Off` na instrução substituirá a configuração **Opção Inferir** na **página Compilar**.  
   
   Quando você cria um projeto, a configuração **Opção Inferir** na **página Compilar** é definida como o valor da configuração **Opção Inferir** na caixa de diálogo **Opções**. Para exibir ou alterar a configuração nesta caixa de diálogo, no menu **Ferramentas**, clique em **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções** e, em seguida, clique em **Padrões de VB**. A configuração padrão inicial da **Opção Inferir** em **Padrões do VB** é **Ativada**.  
   
   **CPU de Destino**  
   Especifica o processador de destino do arquivo de saída. Especifique **x86** para qualquer processador compatível com Intel de 32 bits, **x64** para qualquer processador compatível com Intel de 64 bits, **ARM** para qualquer processador ARM ou **Qualquer CPU** para especificar que qualquer processador é aceitável. **Qualquer CPU** é o valor padrão para novos projetos, pois permite que o aplicativo seja executado no maior número de tipos de hardware.  
   
-  Para obter mais informações, consulte [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+  Para obter mais informações, consulte [/platform (Visual Basic)](https://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
   **Preferir 32 bits**  
   Se a caixa de seleção **Preferir 32 bits** estiver marcada, o aplicativo será executado como um aplicativo de 32 bits em versões de 32 e 64 bits do Windows. Caso contrário, o aplicativo será executado como um aplicativo de 32 bits em versões de 32 bits do Windows e como um aplicativo de 64 bits em versões de 64 bits do Windows.  
@@ -143,7 +143,7 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
   **Desabilitar todos os avisos**  
   Especifica se o compilador deve poder emitir notificações conforme especificado na tabela **Condição e Notificação** descrita anteriormente neste documento. Por padrão, essa caixa de seleção está desmarcada. Marque esta caixa de seleção para instruir o compilador a não emitir avisos ou erros.  
   
-  Essa configuração corresponde à opção do compilador [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
+  Essa configuração corresponde à opção do compilador [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83).  
   
   **Tratar todos os avisos como erros**  
   Especifica como tratar avisos. Por padrão, essa caixa de seleção está desmarcada, de modo que todas as notificações de aviso permanecem definidas como **Aviso**. Marque essa caixa de seleção para alterar todas as notificações de aviso para **Erro**.  
@@ -153,7 +153,7 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
   **Gerar arquivo de documentação XML**  
   Especifica se devem ser geradas informações sobre a documentação. Por padrão, essa caixa de seleção está marcada, instruindo o compilador a gerar informações sobre a documentação e incluí-las em um arquivo XML. Desmarque esta caixa de seleção para instruir o compilador a não criar documentação.  
   
-  Essa configuração corresponde à opção do compilador [/doc](http://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).  
+  Essa configuração corresponde à opção do compilador [/doc](https://msdn.microsoft.com/library/5fc32ec9-a149-4648-994c-a8d0cccd0a65).  
   
   **Registrar para interoperabilidade COM**  
   Especifica se o seu aplicativo gerenciado exibirá um objeto COM (um wrapper que pode ser chamado por COM) que permite a um objeto COM interagir com o aplicativo.  
@@ -169,8 +169,8 @@ Use a página **Compilar** do Designer de Projeto para especificar instruções 
   Clique neste botão para acessar a caixa de diálogo **Configurações Avançadas do Compilador**. Use a caixa de diálogo **Configurações Avançadas do Compilador** para especificar as propriedades avançadas de configuração de build de um projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Debug and Release Project Configurations (Configurações de projeto de depuração e lançamento)](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
- [Gerenciando propriedades de compilação](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Debug and Release Project Configurations (Configurações de projeto de depuração e lançamento)](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
+ [Gerenciando propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Como: Especificar eventos de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
- [Compilador de linha de comando do Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
+ [Compilador de linha de comando do Visual Basic](https://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

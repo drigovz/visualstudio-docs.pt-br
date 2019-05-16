@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442591"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694005"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Etapa 3: Atribuir um ícone aleatório a cada rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Se os ícones aparecerem nas mesmas células a cada jogo, ele não será muito d
   
      A primeira linha converte a variável `control` em um rótulo denominado `iconLabel`. A linha que vem a seguir está uma instrução `if` que verifica se a conversão funcionou. Se a conversão realmente funcionar, as instruções na instrução `if` serão executadas. (Como talvez você se lembre dos tutoriais anteriores, a instrução `if` é usada para avaliar qualquer condição especificada.) A primeira linha na instrução `if` cria uma variável denominada `randomNumber` que contém um número aleatório que corresponde a um dos itens na lista de ícones. Para fazer isso, ela usa o método `Next` do objeto `Random` que você criou anteriormente. O método `Next` retorna o número aleatório. Essa linha também usa a propriedade `Count` da lista `icons` para determinar o intervalo do qual escolher o número aleatório. A próxima linha atribui um dos itens da lista de ícones à propriedade `Text` do rótulo. A linha comentada é explicada mais adiante neste tópico. Por fim, a última linha na instrução `if` remove da lista o ícone que foi adicionado ao formulário.  
   
-     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Consulte [como fazer: Etapa com o depurador do Visual Studio? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.  
+     Lembre-se de que se você não tiver certeza da função de alguma parte do código, será possível posicionar o ponteiro do mouse sobre um elemento do código e analisar a dica de ferramenta resultante. Você também pode percorrer cada linha do código enquanto o programa estiver em execução usando o depurador do Visual Studio. Consulte [como fazer: Etapa com o depurador do Visual Studio? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [navegar pelo código com o depurador](../debugger/navigating-through-code-with-the-debugger.md) para obter mais informações.  
   
-3. Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no `Form1`*construtor*, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Consulte [Construtores (Guia de programação do C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Usando construtores e destruidores](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) no Visual Basic para obter mais informações.  
+3. Para preencher o tabuleiro do jogo com ícones, você precisa chamar o método `AssignIconsToSquares()` assim que programa for iniciado. Se estiver usando o Visual C#, adicione uma instrução logo abaixo da chamada ao método `InitializeComponent()` no `Form1`*construtor*, de modo que o formulário chame o novo método para configurar a si mesmo antes de ser mostrado. Os construtores são chamados quando você cria um novo objeto, como uma classe ou um struct. Consulte [Construtores (Guia de programação do C#)](https://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Usando construtores e destruidores](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) no Visual Basic para obter mais informações.  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

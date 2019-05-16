@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 57114789ce9f0505423e8463f90117619bfc717b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687052"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Isso significa que você não pode acessar itens como nomes de arquivo do projet
 
 Para habilitar tarefas de compilação no seu computador de desenvolvimento, instale [SDK de modelagem do Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
-Se [seu servidor de compilação](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números da versão mais recente por ‘*’.
+Se [seu servidor de compilação](https://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números da versão mais recente por ‘*’.
 
 - $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 

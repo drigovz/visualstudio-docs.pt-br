@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 96676ee8021e09a5e7d0a9808cea1e615f58717a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679826"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 
 - **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
 
-- **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](https://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
 - **Desbloqueia permanentemente o Visual Studio Express** – você pode usar qualquer edição do Visual Studio Express por quanto tempo desejar, em vez de ficar limitado ao período de avaliação de 30 dias.
 

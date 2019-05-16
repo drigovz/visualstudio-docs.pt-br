@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
-ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ddf67fba3ae603dbd31d4628c61a6f14cc2441c4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822543"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686940"
 ---
 # <a name="extending-the-toolbox"></a>Estendendo a caixa de ferramentas
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **caixa de ferramentas** fornece uma coleção de objetos que fornecem funcionalidade para designers e editores por meio do mecanismo de arrastar e soltar do IDE.  
@@ -37,10 +37,10 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **caixa de ferramentas** fornece 
  Descreve como um VSPackage pode gerenciar o conteúdo e a aparência do **caixa de ferramentas**.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Como: Gerenciar a janela da caixa de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+ [Como: Gerenciar a janela da caixa de ferramentas](https://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
  Descreve como trabalhar com o **caixa de ferramentas** no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE).  
   
- [Como: Controle de caixa de ferramentas](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
+ [Como: Controle de caixa de ferramentas](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599)  
  Descreve como gerenciar o **caixa de ferramentas** usando o modelo de programação de automação.  
   
  [Estender outras partes do Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)  

@@ -14,22 +14,22 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9c21bb50c9e97ed6a5daee713882f1d25456202
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1f59c6706a66596c3899de87a2c8142d71bcc4bf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660990"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679771"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
+Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e).  
   
  Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
- As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).  
+ As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21).  
   
  **Minhas Extensões do Namespace**  
  Esta lista mostra todas as extensões do namespace `My` instaladas no projeto.  
@@ -41,7 +41,7 @@ Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `M
  Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.  
   
 ## <a name="see-also"></a>Consulte também  
- [Estendendo o Meu Namespace no Visual Basic](http://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
- [Empacotando e implantando Minhas Extensões personalizadas](http://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
- [Estendendo o modelo de aplicativo do Visual Basic](http://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   
- [Personalizando quais objetos estão disponíveis em My](http://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)
+ [Estendendo o Meu Namespace no Visual Basic](https://msdn.microsoft.com/library/808e8617-b01c-4135-8b21-babe87389e8e)   
+ [Empacotando e implantando Minhas Extensões personalizadas](https://msdn.microsoft.com/library/fd89c54b-0290-4c50-95a3-ff17d4487a21)   
+ [Estendendo o modelo de aplicativo do Visual Basic](https://msdn.microsoft.com/library/e91d3bed-4c27-40e3-871d-2be17467c72c)   
+ [Personalizando quais objetos estão disponíveis em My](https://msdn.microsoft.com/library/4e8279c2-ed5b-4681-8903-8a6671874000)

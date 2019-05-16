@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ec230a5bf32ab6e70967e76d31030af3a7a351a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433143"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687596"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
    |                                                                                                    Referência                                                                                                    |                                                                                                  O que isso permite que você faça                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Define componentes usando [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
+   |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Define componentes usando [Managed Extensibility Framework (MEF)](https://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
    |                                                                                      Microsoft.VisualStudio.Uml.Interfaces                                                                                      |                                                                                        Ler e alterar as propriedades de elementos de modelo.                                                                                         |
    |                                                                             Microsoft.VisualStudio.ArchitectureTools.Extensibility                                                                              |                                                                                      Criar elementos de modelo, modifique as formas em diagramas.                                                                                       |
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Defina manipuladores de eventos do modelo.<br /><br /> Encapsule a série de alterações ao seu modelo. Para obter mais informações, consulte [atualizações de modelo UML de Link usando transações](../modeling/link-uml-model-updates-by-using-transactions.md). |

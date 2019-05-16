@@ -27,12 +27,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47287bdc5bf0081970f4077ee8749a1ed0d71dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6085ba95d3880417e517530069734052741113e2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118234"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682475"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C\#
 
@@ -64,7 +64,7 @@ A tabela a seguir exibe os especificadores de formato C# reconhecidos pelo depur
 
 |Especificador|Formatar|Valor original de inspeção|Telas|
 |---------------|------------|--------------------------|--------------|
-|CA|Forçar avaliação de uma expressão. Isso pode ser útil quando a avaliação implícita das propriedades e das chamadas de função implícitas é desativada. Ver [efeitos colaterais e expressões](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Avaliação da função implícita está desativada pelo usuário" da mensagem|\<valor>|
+|CA|Forçar avaliação de uma expressão. Isso pode ser útil quando a avaliação implícita das propriedades e das chamadas de função implícitas é desativada. Ver [efeitos colaterais e expressões](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e).|"Avaliação da função implícita está desativada pelo usuário" da mensagem|\<valor>|
 |d|inteiro decimal|0x0065|101|
 |dinâmica|Exibe o objeto especificado usando um Modo de Exibição Dinâmico|Exibe todos os membros do objeto, incluindo o modo de exibição dinâmico|Exibe apenas o modo de exibição dinâmico|
 |h|inteiro hexadecimal|61541|0x0000F065|
@@ -76,4 +76,4 @@ A tabela a seguir exibe os especificadores de formato C# reconhecidos pelo depur
 ## <a name="see-also"></a>Consulte também
 
 - [Janelas Inspeção e Inspeção Rápida](../debugger/watch-and-quickwatch-windows.md)
-- [Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)
+- [Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)

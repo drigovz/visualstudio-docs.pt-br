@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434505"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697918"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*
 
     - WCF Data Service, serviço WCF ou serviço Web. Para obter mais informações, confira [Como: Conectar-se a dados em um serviço](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    - Objetos. Para obter mais informações, confira [Como: Conectar-se a dados em objetos](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    - Objetos. Para obter mais informações, confira [Como: Conectar-se a dados em objetos](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     > Antes de criar uma tabela de pesquisa, duas tabelas relacionadas ou objetos devem existir como uma fonte de dados para o projeto.  

@@ -8,12 +8,12 @@ ms.assetid: 20221de4-2a9e-4787-b99a-b5855bb90872
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4977a6394a5732d92391c3405519345484a6629f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8186a5961aeb728e683f3ee011766e980e070eea
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056920"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686407"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,7 +134,7 @@ Este tópico discute problemas e opções na compilação e geração de código
       PublicKey=<Test_assembly_public_key>)]  
   ```  
   
-  Se o assembly com shims tiver nome forte, a estrutura do Fakes assinará fortemente o assembly do Fakes gerado, automaticamente. Você precisa assinar fortemente o assembly de teste. Consulte [Criando e usando assemblies de nomes fortes](http://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
+  Se o assembly com shims tiver nome forte, a estrutura do Fakes assinará fortemente o assembly do Fakes gerado, automaticamente. Você precisa assinar fortemente o assembly de teste. Consulte [Criando e usando assemblies de nomes fortes](https://msdn.microsoft.com/library/ffbf6d9e-4a88-4a8a-9645-4ce0ee1ee5f9).  
   
   A estrutura do Fakes usa a mesma chave para assinar assemblies gerados, então você pode usar este snippet de código como um ponto de partida para adicionar o atributo **InternalsVisibleTo** do assembly do Fakes ao seu código de assembly com shims.  
   

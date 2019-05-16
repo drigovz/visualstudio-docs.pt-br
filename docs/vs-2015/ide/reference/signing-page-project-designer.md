@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ba55795e1f1b5f54b2a863ec0163a796111d9800
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437988"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689477"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -66,9 +66,9 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
   
 ## <a name="assembly-signing"></a>Assinatura de assembly  
  Caixa de seleção **Assinar o assembly**  
- Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Essa opção usa a ferramenta Al.exe fornecida pelo [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Essa opção usa a ferramenta Al.exe fornecida pelo [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Lista **Escolher um arquivo de chave de nome forte**  
  Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.  
@@ -83,7 +83,7 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
  Caixa de seleção **Somente sinal de atraso**  
  Marque essa caixa de seleção para habilitar a assinatura com atraso.  
   
- Observe que um projeto com assinatura com atraso não será executado e não pode ser depurado. No entanto, é possível usar [Sn.exe (Ferramenta de Nome Forte)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) com a opção `-Vr` para ignorar a verificação durante o desenvolvimento.  
+ Observe que um projeto com assinatura com atraso não será executado e não pode ser depurado. No entanto, é possível usar [Sn.exe (Ferramenta de Nome Forte)](https://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) com a opção `-Vr` para ignorar a verificação durante o desenvolvimento.  
   
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.  
@@ -91,8 +91,8 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
 ## <a name="see-also"></a>Consulte também  
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   
  [Gerenciando a assinatura de assembly e de manifesto](../../ide/managing-assembly-and-manifest-signing.md)   
- [Assinatura de nome forte para aplicativos gerenciados](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
+ [Assinatura de nome forte para aplicativos gerenciados](https://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
  [Como: Assinar manifestos de aplicativo e implantação](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Como: Assinar um Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Como: Assinar um Assembly com um nome forte](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
- [Assemblies de nomes fortes](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)
+ [Como: Assinar um Assembly (Visual Studio)](https://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Como: Assinar um Assembly com um nome forte](https://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Assemblies de nomes fortes](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

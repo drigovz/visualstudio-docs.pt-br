@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 48632a08b3ed59d65b7a551244c295b012bef665
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690974"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do desenvolvedor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ O Devenv permite definir várias opções para o IDE (ambiente de desenvolviment
 |[/Log (devenv.exe)](../../ide/reference/log-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e registra toda a atividade no arquivo de log.|  
 |[/Run (devenv.exe)](../../ide/reference/run-devenv-exe.md) ou `/r`|Compila e executa a solução especificada.|  
 |[/Runexit (devenv.exe)](../../ide/reference/runexit-devenv-exe.md)|Compila e executa a solução especificada, minimiza o IDE quando a solução é executada e fecha o IDE depois que a solução termina a execução.|  
-|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE e LIB para a compilação [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] em vez das configurações especificadas na seção Diretórios VC++ de opções **Projetos** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Configurar o caminho e variáveis de ambiente para Builds de linha de comando](http://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
+|[/UseEnv (devenv.exe)](../../ide/reference/useenv-devenv-exe.md)|Faz com que o IDE use variáveis de ambiente PATH, INCLUDE e LIB para a compilação [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] em vez das configurações especificadas na seção Diretórios VC++ de opções **Projetos** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Configurar o caminho e variáveis de ambiente para Builds de linha de comando](https://msdn.microsoft.com/library/99389528-deb5-43b9-b99a-03c8773ebaf4)|  
 |[/Edit (devenv.exe)](../../ide/reference/edit-devenv-exe.md)|Abre os arquivos especificados em uma instância em execução deste aplicativo. Se não houver nenhuma instância em execução, uma nova instância será iniciada com um layout de janela simplificado.|  
 |[/ResetAddin (devenv.exe)](../../ide/reference/resetaddin-devenv-exe.md)|Inicia uma instância do IDE do Visual Studio sem carregar o suplemento especificado.|  
 |[/SafeMode (devenv.exe)](../../ide/reference/safemode-devenv-exe.md)|Inicia [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] no modo de segurança e carrega somente o ambiente e os serviços padrão e as versões enviadas de pacotes de terceiros.|  

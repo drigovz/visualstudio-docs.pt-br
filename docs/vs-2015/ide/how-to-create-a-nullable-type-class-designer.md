@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3d5e74a4384cff0a68764ffe09a37ab28460d58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: c71c0e7f8961b5f7c545fb59597cdd173230fc08
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422803"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680497"
 ---
 # <a name="how-to-create-a-nullable-type-class-designer"></a>Como: Criar um tipo que permite valor nulo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
   
   O Designer de Classe exibe um tipo que permite valor nulo assim que ele exibe seu tipo subjacente.  
   
-  Para obter mais informações sobre tipos que permitem valor nulo no Visual C#, consulte [Tipos que permitem valor nulo](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
+  Para obter mais informações sobre tipos que permitem valor nulo no Visual C#, consulte [Tipos que permitem valor nulo](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6). Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6).  
   
   [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   
@@ -83,7 +83,7 @@ Alguns tipos de valor nem sempre têm (ou precisam de) um valor definido. Essa �
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Nullable%601>   
- [Tipos que permitem valor nulo](http://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
- [Usando tipos que permitem valor nulo](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
- [Como: Identificar um tipo anulável](http://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
- [Tipos de Valor Anulável](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)
+ [Tipos que permitem valor nulo](https://msdn.microsoft.com/library/e473cb01-28ca-42be-9cea-f717055d72c6)   
+ [Usando tipos que permitem valor nulo](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28)   
+ [Como: Identificar um tipo anulável](https://msdn.microsoft.com/library/d4b67ee2-66e8-40c1-ae9d-545d32c71387)   
+ [Tipos de Valor Anulável](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6)

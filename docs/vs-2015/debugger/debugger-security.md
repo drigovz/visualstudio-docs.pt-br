@@ -18,12 +18,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 32fec95757e3baf1b62230457cc048aba38af8c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c1c56b3081f9e74ff9ab864639772c18bd758df6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101633"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686799"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
  Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).  
   
 ### <a name="web-services-debugging-security"></a>Segurança de depuração de serviços Web  
- É mais seguro depurar localmente, mas como você provavelmente não terá o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado no servidor Web, a depuração local não poderá ser prática. Em geral, depurar serviços Web é feito remotamente, exceto durante o desenvolvimento, de modo que as recomendações para a segurança de depuração remota também se aplicarão à depuração de serviços Web. Aqui estão algumas práticas recomendadas adicionais. Para obter mais informações, consulte [depuração XML Web Services](http://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
+ É mais seguro depurar localmente, mas como você provavelmente não terá o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instalado no servidor Web, a depuração local não poderá ser prática. Em geral, depurar serviços Web é feito remotamente, exceto durante o desenvolvimento, de modo que as recomendações para a segurança de depuração remota também se aplicarão à depuração de serviços Web. Aqui estão algumas práticas recomendadas adicionais. Para obter mais informações, consulte [depuração XML Web Services](https://msdn.microsoft.com/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).  
   
 - Não habilite a depuração em um servidor Web que tenha sido comprometido.  
   

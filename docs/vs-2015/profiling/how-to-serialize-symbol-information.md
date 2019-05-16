@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b29ddb0e88a58fbfd924c40134305cf33a3e170b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c4ea056c48525014fffad0243dfeb4dd40a8daa3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687008"
 ---
 # <a name="how-to-serialize-symbol-information"></a>Como: Serializar informações de símbolo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +39,4 @@ Você pode serializar os símbolos que são necessários para analisar seu aplic
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   
  [Como: Informações de símbolo do Windows de referência](../profiling/how-to-reference-windows-symbol-information.md)   
- [Como: Salvar arquivos de relatório analisados](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)
+ [Como: Salvar arquivos de relatório analisados](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556)

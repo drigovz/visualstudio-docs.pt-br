@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8c4fc730b4ad110b3160a725be0d109cda8c7a7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d49d593933475921a1edadf0ab1865d8cd15a16d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667918"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689289"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,16 +30,16 @@ Especifica as configurações padrão para opções de projeto do Visual Basic. 
  Para acessar essa caixa de diálogo, no menu **Ferramentas**, clique em **Opções**, expanda a pasta **Projetos e Soluções** e clique em **Padrões de VB**.  
   
  **Opção Explícita**  
- Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](http://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
+ Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](https://msdn.microsoft.com/library/5d296ab3-bafe-4c4d-9887-78f162ed86c7).  
   
  **Opção Estrita**  
- Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](http://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
+ Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](https://msdn.microsoft.com/library/c7b10086-0fa4-49db-b3c8-4ae0db5957da).  
   
  **Opção Comparar**  
- Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](http://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
+ Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](https://msdn.microsoft.com/library/7237b766-b44d-4cc5-9a3c-885348a7d9e4).  
   
  **Opção Inferir**  
- Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](http://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
+ Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](https://msdn.microsoft.com/library/f6c09db1-0553-464a-abe3-d4510c61d6ed).  
   
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)

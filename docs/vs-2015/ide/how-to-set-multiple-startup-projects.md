@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4f58c6f124aeef382dd8c4de06b919489354e109
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ab86b22faa173763856670c61946596677204b91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117846"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685440"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Como definir vários projetos de inicialização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ O Visual Studio permite especificar como mais de um projeto é executado ao inic
   
 3. Expanda o nó **Propriedades Comuns** e clique em **Projeto de Inicialização**.  
   
-4. Clique em **Vários Projetos de Inicialização** e defina as ações apropriadas. Para obter mais informações, consulte [NIB Como modificar propriedades do projeto e definições de configuração](http://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
+4. Clique em **Vários Projetos de Inicialização** e defina as ações apropriadas. Para obter mais informações, consulte [NIB Como modificar propriedades do projeto e definições de configuração](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).  
   
 ## <a name="see-also"></a>Consulte também  
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)   

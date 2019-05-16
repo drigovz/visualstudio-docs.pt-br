@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 10243821a665d473983dfb729b53186e8ed38244
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 164fe64f360e41c06ef3f7bfd2d8091a6ebefecd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432918"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679940"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -110,4 +110,4 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
  [\<compatibleFrameworks > elemento](../deployment/compatibleframeworks-element-clickonce-deployment.md)   
  [\<dependência > elemento](../deployment/dependency-element-clickonce-application.md)   
  [Manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md)   
- [Esquema de arquivos de configuração](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)
+ [Esquema de arquivos de configuração](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)

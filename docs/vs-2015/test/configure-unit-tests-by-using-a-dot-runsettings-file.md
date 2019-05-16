@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01165f12bcf3b41e4ef1279d12ce99bf8f6598f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a1eae79e90a7d20419aaf25c1679aae885e3e92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442789"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686425"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 > [!NOTE]
 > **.runsettings e .testsettings**  
 >   
-> Há dois tipos de arquivo para a configuração de testes. *.runsettings são usados para testes de unidade. E \*.testsettings para [testes de ambiente de laboratório](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testes de carga e desempenho da Web, e para personalizar alguns tipos de adaptadores de dados de diagnóstico, como adaptadores de log de evento e IntelliTrace.  
+> Há dois tipos de arquivo para a configuração de testes. *.runsettings são usados para testes de unidade. E \*.testsettings para [testes de ambiente de laboratório](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901), testes de carga e desempenho da Web, e para personalizar alguns tipos de adaptadores de dados de diagnóstico, como adaptadores de log de evento e IntelliTrace.  
 >   
 > Em edições anteriores do Visual Studio até 2010, os testes de unidade também eram personalizados com arquivos *.testsettings. Ainda é possível fazer isso, mas os testes serão executados mais lentamente do que usando as configurações equivalentes em um arquivo \*.runsettings.  
   
@@ -141,7 +141,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 #### <a name="other-diagnostic-data-adapters"></a>Outros adaptadores de dados de diagnóstico  
  O adaptador de cobertura de código é atualmente o único adaptador que pode ser personalizado usando o arquivo de configurações de execução.  
   
- Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
+ Para personalizar qualquer outro tipo de adaptador de dados de diagnóstico, você deve usar um arquivo de configurações de teste. Para obter mais informações, consulte [Especificando configurações de teste do Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901).  
   
 #### <a name="testrunparameters"></a>TestRunParameters  
  TestRunParameters fornece uma maneira de definir variáveis e valores disponíveis para os testes em tempo de execução.  
@@ -152,7 +152,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 |Configuração|Padrão|Valores|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como `true` para usar o adaptador mais antigo de teste.<br /><br /> Por exemplo, você poderá usar isso se tiver um arquivo app.config especificado para um teste de unidade.<br /><br /> Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|  
-|IgnoreTestImpact|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Para obter mais informações, consulte [como: Coletar dados para verificar quais testes devem ser executados após alterações de código](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Para obter mais informações, consulte [como: Coletar dados para verificar quais testes devem ser executados após alterações de código](https://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Você pode especificar uma arquivo de configurações de teste para usar com o adaptador MSTest aqui. Também é possível especificar um arquivo de configurações de teste usando o menu **Testar**, **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**.<br /><br /> Se você especificar esse valor, também será necessário definir o **ForcedlegacyMode** como **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Após a execução do teste ser concluída, o MSTest será fechado. Qualquer processo iniciado como parte do teste também será destruído nesse momento. Se você quiser manter o executor de teste ativo, transforme essa configuração em true.<br /><br /> Por exemplo, você pode usar isso para manter o navegador em execução entre os testes de IU codificados.|  
 |DeploymentEnabled|true|Se você definir isso como false, os itens de implantação especificados em seu método de teste não serão copiados para o diretório de implantação.|  
@@ -164,4 +164,4 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando análise de cobertura de código](../test/customizing-code-coverage-analysis.md)   
- [Especificando configurações de teste para testes do Visual Studio](http://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)
+ [Especificando configurações de teste para testes do Visual Studio](https://msdn.microsoft.com/library/0c15317e-80c6-4317-aed3-82b8e15e3901)

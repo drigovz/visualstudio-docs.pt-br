@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2dd7d3f41790fac7a37fc3a98d728757f5bad967
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446484"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704686"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  **Interromper quando exceções cruzarem AppDomain ou limites gerenciados/nativos**  
  Na depuração gerenciada ou de modo misto, o common language runtime pode capturar exceções que cruzem limites de domínio de aplicativo ou domínios gerenciados/nativos quando as seguintes condições forem verdadeiras:  
   
- 1\) quando o código nativo chama código gerenciado usando interoperabilidade COM e o código gerenciado gera uma exceção. Ver [Introdução à interoperabilidade COM](http://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
+ 1\) quando o código nativo chama código gerenciado usando interoperabilidade COM e o código gerenciado gera uma exceção. Ver [Introdução à interoperabilidade COM](https://msdn.microsoft.com/library/8bd62e68-383d-407f-998b-29aa0ce0fd67).  
   
- 2\) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio do aplicativo 2, e o código no domínio do aplicativo 2 gera uma exceção. Ver [programação com domínios do aplicativo](http://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
+ 2\) quando o código gerenciado em execução no domínio do aplicativo 1 chama o código gerenciado no domínio do aplicativo 2, e o código no domínio do aplicativo 2 gera uma exceção. Ver [programação com domínios do aplicativo](https://msdn.microsoft.com/bd36055b-56bd-43eb-b4d8-820c37172131).  
   
- 3\) quando o código chama uma função por meio de reflexão e a função gerará uma exceção. Ver [reflexão](http://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
+ 3\) quando o código chama uma função por meio de reflexão e a função gerará uma exceção. Ver [reflexão](https://msdn.microsoft.com/library/d1a58e7f-fb39-4d50-bf84-e3b8f9bf9775).  
   
  Em 2) e 3), a exceção é às vezes detectada pelo código gerenciado em `mscorlib` em vez do common language runtime. Esta opção não afeta a quebra em exceções capturadas por `mscorlib`.  
   
@@ -61,7 +61,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  Permite que você defina filtros em pontos de interrupção de modo que eles afetem somente processos, threads ou computadores específicos.  
   
  **Habilitar o Assistente de exceção**  
- Somente para código gerenciado. Gerenciado exceções abrir a caixa de diálogo do Assistente de exceção.  Ver [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
+ Somente para código gerenciado. Gerenciado exceções abrir a caixa de diálogo do Assistente de exceção.  Ver [Assistente de exceção](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb).  
   
  **Desenrolar a pilha de chamadas em exceções não tratadas**  
  Faz com que a janela **Pilha de Chamadas** reverta a pilha de chamadas ao ponto antes que a exceção sem tratamento ocorreu.  
@@ -123,7 +123,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  **Carregar exportações de dll**  
  Carrega as tabelas de exportação de dll. Informações de símbolos das tabelas de exportação de dll podem ser úteis se você estiver trabalhando com mensagens do Windows, procedimentos do Windows (WindowProcs), objetos COM, ou marshaling, ou qualquer dll para a qual você não tem símbolos. A leitura das informações de exportação de dll gera certa sobrecarga. Desse modo, esse recurso é desativado por padrão.  
   
- Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Os símbolos estão disponíveis para qualquer dll de 32 bits do sistema. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Os nomes de função de tabelas de exportação de dll podem aparecer truncados em qualquer outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, confira [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
+ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dll, use `dumpbin /exports`. Os símbolos estão disponíveis para qualquer dll de 32 bits do sistema. Ao ler a saída `dumpbin /exports`, você pode ver o nome exato da função, incluindo caracteres não alfanuméricos. Isso é útil para definir um ponto de interrupção em uma função. Os nomes de função de tabelas de exportação de dll podem aparecer truncados em qualquer outro lugar no depurador. As chamadas são listadas na ordem de chamada, com a função atual (a mais profundamente aninhada) na parte superior. Para obter mais informações, confira [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).  
   
  **Mostrar diagrama de pilhas paralelas baixo para cima**  
  Controla a direção em que as pilhas são exibidas na janela **Pilhas Paralelas**.  
@@ -164,7 +164,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
   Mostra a **Live Visual Tree** comandos em uma barra de ferramentas na janela principal do aplicativo XAML que está sendo depurado. Essa opção foi introduzida no Visual Studio 2015 atualização 2.  
   
   **Habilitar ferramentas de diagnóstico durante a depuração**  
-  O **ferramentas de diagnóstico** janela é exibida enquanto você está depurando. Para obter mais informações, consulte [integradas ao depurador de criação de perfil](http://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
+  O **ferramentas de diagnóstico** janela é exibida enquanto você está depurando. Para obter mais informações, consulte [integradas ao depurador de criação de perfil](https://msdn.microsoft.com/library/a1f40370-7b61-42c2-afc4-0e13eba98859).  
   
   **Mostrar tempo decorrido PerfTip durante a depuração**  
   A janela de código exibe o tempo decorrido de uma chamada de método fornecido quando você estiver depurando.  

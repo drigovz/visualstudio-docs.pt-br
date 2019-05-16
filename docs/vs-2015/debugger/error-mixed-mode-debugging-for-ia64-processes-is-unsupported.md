@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9073edad55a648286a068df5e368e08893ff0a3f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33dfa4fb7a303b02121098b0e517f95d6e40f586
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62535764"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697438"
 ---
 # <a name="error-mixed-mode-debugging-for-ia64-processes-is-unsupported"></a>Erro: Não há suporte para a depuração de modo misto para processos IA64
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,4 +33,4 @@ O depurador do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não oferece suporte
 - Crie uma versão de 32 bits do aplicativo para depuração.  
   
 ## <a name="see-also"></a>Consulte também  
- [Configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)
+ [Configurar as ferramentas remotas no dispositivo](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

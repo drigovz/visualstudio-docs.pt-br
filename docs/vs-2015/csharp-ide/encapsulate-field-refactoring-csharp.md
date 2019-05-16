@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681380"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Refatoração Encapsular Campo (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O **encapsular campo** operação de refatoração permite criar rapidamente uma propriedade de um campo existente e, em seguida, atualize seu código perfeitamente com as referências para a nova propriedade.  
   
- Quando um [campo](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) é [público](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), outros objetos têm acesso direto a esse campo e pode modificá-lo, sem ser detectado pelo objeto que possui esse campo. Usando [propriedades](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) para encapsular esse campo, você pode proibir o acesso direto aos campos.  
+ Quando um [campo](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) é [público](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), outros objetos têm acesso direto a esse campo e pode modificá-lo, sem ser detectado pelo objeto que possui esse campo. Usando [propriedades](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) para encapsular esse campo, você pode proibir o acesso direto aos campos.  
   
- Para criar a nova propriedade, o **encapsular campo** operação altera o modificador de acesso para o campo que você deseja encapsular a [privada](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)e, em seguida, gera [obter](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)e [definir](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) acessadores para esse campo. Em alguns casos, somente um `get` acessador é gerado, como quando o campo é declarado como somente leitura.  
+ Para criar a nova propriedade, o **encapsular campo** operação altera o modificador de acesso para o campo que você deseja encapsular a [privada](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8)e, em seguida, gera [obter](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)e [definir](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) acessadores para esse campo. Em alguns casos, somente um `get` acessador é gerado, como quando o campo é declarado como somente leitura.  
   
  O mecanismo de refatoração atualiza seu código com as referências para a nova propriedade nas áreas especificadas na **referências de atualização** seção o **encapsular campo** caixa de diálogo.  
   

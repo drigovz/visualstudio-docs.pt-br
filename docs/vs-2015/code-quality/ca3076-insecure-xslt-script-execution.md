@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0a6b1efa5b5ee84092531a67421d03583afc3578
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680727"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Execução de script XSLT não seguro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,10 +26,10 @@ ms.locfileid: "60096953"
 |Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
- Se você executar [extensível folhas de estilos XSLT (linguagem)](https://support.microsoft.com/kb/313997) em aplicativos .NET de maneira insegura, o processador pode [resolver referências de URI não confiáveis](http://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) que poderia revelar confidenciais informações para invasores, levando a ataques de negação de serviço e Cross-Site.
+ Se você executar [extensível folhas de estilos XSLT (linguagem)](https://support.microsoft.com/kb/313997) em aplicativos .NET de maneira insegura, o processador pode [resolver referências de URI não confiáveis](https://msdn.microsoft.com/ba3e4d4f-1ee7-4226-a51a-78a1f1b5bd8a) que poderia revelar confidenciais informações para invasores, levando a ataques de negação de serviço e Cross-Site.
 
 ## <a name="rule-description"></a>Descrição da Regra
- [XSLT](http://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) é um padrão de World Wide Web Consortium (W3C) para transformar os dados XML. XSLT normalmente é usado para gravar as folhas de estilo para transformar dados XML em outros formatos, como HTML, fixa comprimento texto, texto separado por vírgula ou outro formato XML. Embora proibidas por padrão, você pode optar por habilitá-la para seu projeto.
+ [XSLT](https://msdn.microsoft.com/6377ce5f-3c45-42a6-b7a9-ec8da588b60c) é um padrão de World Wide Web Consortium (W3C) para transformar os dados XML. XSLT normalmente é usado para gravar as folhas de estilo para transformar dados XML em outros formatos, como HTML, fixa comprimento texto, texto separado por vírgula ou outro formato XML. Embora proibidas por padrão, você pode optar por habilitá-la para seu projeto.
 
  Para garantir que você não estiver expondo uma superfície de ataque, essa regra dispara sempre que o XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recebe a instâncias de combinação inseguro de <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, que permite o processamento de script mal-intencionado.
 

@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a43fb3a22ecb2d04542eacf07bf883590868b75b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430920"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685317"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Como: Acessar as fontes internas e o esquema de cores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
   
 2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro do arquivo de recursos (. rc) do VSPackage, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.  
   
-    Para obter mais informações, consulte [adicionando ou excluindo uma cadeia de caracteres](http://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
+    Para obter mais informações, consulte [adicionando ou excluindo uma cadeia de caracteres](https://msdn.microsoft.com/library/077077b4-0f4b-4633-92d6-60b321164cab).  
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar uma categoria usando cores e fontes internas  
   

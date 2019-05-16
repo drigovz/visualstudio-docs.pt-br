@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 696e6bd46c17054494be2ea0e0f2a1af4fd703d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63387691"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675482"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de regras para analisadores de Roslyn
 
@@ -25,11 +25,28 @@ Se você estiver migrando de análise de código estático "FxCop" herdada para 
 
 ## <a name="use-analyzer-rule-sets"></a>Usar conjuntos de regras do analisador
 
-Depois que você [instalar um pacote do NuGet analyzer](install-roslyn-analyzers.md), localize a conjunto de regras predefinidas seus *rulesets* directory. Por exemplo, se você fez referência a `Microsoft.CodeAnalysis.FxCopAnalyzers` analisador de pacote e em seguida, você pode localizar seu diretório de rulesets em *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão \>\rulesets*. A partir daí, você pode arrastar e soltar, ou copiar e colar, um ou mais dos conjuntos de regras ao seu projeto do Visual Studio no **Gerenciador de soluções**.
+Depois que você [instalar um pacote do NuGet analyzer](install-roslyn-analyzers.md), localize a conjunto de regras predefinidas seus *rulesets* directory. Por exemplo, se você fez referência a `Microsoft.CodeAnalysis.FxCopAnalyzers` pacote do analisador, em seguida, você pode encontrar sua *rulesets* diretório na *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\ \<versão\>\rulesets*. A partir daí, copiar um ou mais do rulesets e cole-os no diretório que contém seu projeto do Visual Studio ou diretamente na **Gerenciador de soluções**.
 
-Para tornar uma regra para definir a regra ativa definido para análise, clique com botão direito no projeto no **Gerenciador de soluções** e escolha **propriedades**. Nas páginas de propriedade do projeto, selecione a **análise de código** guia. Sob **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto. Agora, você verá somente as violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
+Você também pode [personalizar um conjunto de regras predefinidas](how-to-create-a-custom-rule-set.md) com sua preferência. Por exemplo, você pode alterar a gravidade de uma ou mais regras para que sejam exibidos violações como erros ou avisos na **Error List**.
 
-Você também pode [personalizar um conjunto de regras predefinidas](how-to-create-a-custom-rule-set.md#create-a-custom-rule-set) com sua preferência. Por exemplo, você pode alterar a gravidade de uma ou mais regras para que sejam exibidos violações como erros ou avisos na **Error List**.
+## <a name="set-the-active-rule-set"></a>Defina o conjunto de regras ativo
+
+O processo de configuração do conjunto de regras ativo é um pouco diferente dependendo se você tiver um projeto .NET Core/.NET Standard ou um projeto do .NET Framework.
+
+### <a name="net-core"></a>.NET Core
+
+Para tornar uma regra para definir a regra ativa definido para análise em projetos do .NET Core ou .NET Standard, adicione manualmente os **CodeAnalysisRuleSet** propriedade ao arquivo de projeto. Por exemplo, o código a seguir conjuntos de trecho de código `HelloWorld.ruleset` como a regra ativa definido.
+
+```xml
+<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  ...
+  <CodeAnalysisRuleSet>HelloWorld.ruleset</CodeAnalysisRuleSet>
+</PropertyGroup>
+```
+
+### <a name="net-framework"></a>.NET Framework
+
+Para tornar uma regra para definir a regra ativa definido para a análise em projetos do .NET Framework, com o botão direito no projeto no **Gerenciador de soluções** e escolha **propriedades**. Nas páginas de propriedade do projeto, selecione a **análise de código** guia. Sob **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto. Agora, você verá somente as violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
 
 ## <a name="available-rule-sets"></a>Conjuntos de regras disponíveis
 

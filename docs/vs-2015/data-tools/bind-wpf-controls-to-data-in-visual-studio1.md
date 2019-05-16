@@ -22,19 +22,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b9bfa51dae4ab9ab08abf3493c747a471b924de1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437051"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675910"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível exibir dados para usuários do aplicativo associando-se dados a controles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Para criar esses controles ligados a dados, você pode arrastar itens dos **fontes de dados** janela para o [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Este tópico descreve algumas das tarefas, ferramentas e classes mais comuns que é possível usar para criar aplicativos [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] de associação de dados.
 
- Para obter informações gerais sobre como criar controles associados a dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], confira [Visão geral de vinculação de dados](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
+ Para obter informações gerais sobre como criar controles associados a dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consulte [associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md). Para obter mais informações sobre vinculação de dados [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)], confira [Visão geral de vinculação de dados](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).
 
 ## <a name="tasks-involved-in-binding-wpf-controls-to-data"></a>Tarefas envolvidas na associação de controles WPF a dados
  A tabela a seguir lista as tarefas que podem ser realizadas arrastando-se itens da janela **Fontes de Dados** para o [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)].
@@ -98,7 +98,7 @@ ms.locfileid: "63437051"
  Quando você arrasta um objeto ou propriedade do **fontes de dados** janela para o designer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que cria um controle associado a dados (ou associa um controle existente para o objeto ou propriedade). No entanto, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] não gera código para preencher o objeto com dados. Você deve gravar esse código sozinho.
 
 > [!NOTE]
-> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles não podem ser classes aninhadas que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e Classes personalizadas para WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Classes personalizadas devem ser públicos e, por padrão, tem um construtor sem parâmetros. Eles não podem ser classes aninhadas que têm "dot" na sua sintaxe. Para obter mais informações, consulte [XAML e Classes personalizadas para WPF](https://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] que faz o seguinte:
 

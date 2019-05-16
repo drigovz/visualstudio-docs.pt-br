@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441370"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674246"
 ---
 # <a name="options-text-editor-c-advanced"></a>Opções, Editor de Texto, C#, Avançado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441370"
 Use essa caixa de diálogo para modificar as configurações de formatação do editor, refatoração de código e comentários da documentação XML do Visual C#. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Editor de Texto**, expanda **C#** e, em seguida, clique em **Avançado**.  
   
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Estrutura de tópicos  
  Entre no modo estrutura de tópicos quando os arquivos abrem  
@@ -68,7 +68,7 @@ Use essa caixa de diálogo para modificar as configurações de formatação do 
   
 ## <a name="xml-documentation-comments"></a>Comentários da documentação XML  
  Gerar comentários da documentação XML para ///  
- Quando selecionado, insere as marcas de início e término \<summary> automaticamente em comentários da documentação XML depois de digitar a introdução de comentário ///. Para obter mais informações sobre a documentação XML, consulte [Comentários da documentação XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Quando selecionado, insere as marcas de início e término \<summary> automaticamente em comentários da documentação XML depois de digitar a introdução de comentário ///. Para obter mais informações sobre a documentação XML, consulte [Comentários da documentação XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Implementar interface  
  Envolver o código gerado com #region  
@@ -79,6 +79,6 @@ Use essa caixa de diálogo para modificar as configurações de formatação do 
  Quando selecionado, `System` usando diretivas é exibido antes de outras diretivas de uso. Para obter mais informações, consulte [Classificar usos](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Comentários da documentação XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Comentários da documentação XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Configurando opções do editor específicas a um idioma](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 968a9a2dc87063baec075e69e10fed96ba1ff3d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680576"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,5 +43,5 @@ Você pode especificar o local de saída por configuração (para depuração, v
   
 ## <a name="see-also"></a>Consulte também  
  [Página de Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md)   
- [Página de propriedade geral (projeto)](http://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
+ [Página de propriedade geral (projeto)](https://msdn.microsoft.com/library/593b383c-cd0f-4dcd-ad65-9ec9b4b19c45)   
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md)

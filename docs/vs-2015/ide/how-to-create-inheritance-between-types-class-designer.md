@@ -14,12 +14,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 80d4ebe992a3406a4e8c54b033cd4f526335231b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9994733405932ed9f7b15cc8ce46c31215afaebc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416972"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680353"
 ---
 # <a name="how-to-create-inheritance-between-types-class-designer"></a>Como: Criar herança entre tipos (Designer de Classe) 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classes 
     >  Embora você possa visualizar os tipos genéricos existentes, não é possível criar novos tipos genéricos. Você também não pode alterar os parâmetros de tipos genéricos existentes.  
   
 ## <a name="see-also"></a>Consulte também  
- [Herança](http://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
- [Noções básicas sobre herança](http://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
+ [Herança](https://msdn.microsoft.com/library/81d64ee4-50f9-4d6c-a8dc-257c348d2eea)   
+ [Noções básicas sobre herança](https://msdn.microsoft.com/library/dfc8deba-f5b3-4d1d-a937-7cb826446fc5)   
  [Como: Exibir herança entre tipos (Designer de classe)](../ide/how-to-view-inheritance-between-types-class-designer.md)   
  [Classes do Visual C++ no Designer de Classe](../ide/visual-cpp-classes-in-class-designer.md)

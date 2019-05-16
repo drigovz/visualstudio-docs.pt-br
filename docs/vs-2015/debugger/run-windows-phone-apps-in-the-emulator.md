@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442316"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683533"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone no emulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode depurar e testar aplicativos do Windows Phone em seu computador sem um dispositivo físico. Você pode simular eventos comuns de toque e rotação e escolher o tamanho da tela física e a resolução que deseja emular. Você também pode testar muitas funcionalidades normalmente usadas, como local, rede, notificações, sensores, acelerômetro e cartão SD opcional.  
   
- Para obter mais informações sobre os recursos que você pode testar no emulador, consulte [testar recursos de aplicativo no emulador do Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Para obter mais informações sobre os recursos que você pode testar no emulador, consulte [testar recursos de aplicativo no emulador do Windows Phone](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Junto com o Visual Studio, o emulador fornece um ambiente completo em que você pode criar, desenvolver, depurar e testar aplicativos do Windows Phone.  
   
@@ -103,7 +103,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
 ### <a name="BKMK_depltool"></a> Executar um aplicativo com a ferramenta de implantação do aplicativo  
  Você também pode usar a ferramenta de implantação de aplicativo do Windows Phone (**AppDeploy.exe**) para executar seu aplicativo no emulador. Essa ferramenta é um aplicativo independente, que é implantado quando você instala as ferramentas de desenvolvimento do Windows Phone.  
   
- Para obter mais informações, consulte [aplicativos de implantar o Windows Phone 8.1 com a ferramenta de implantação do aplicativo](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Para obter mais informações, consulte [aplicativos de implantar o Windows Phone 8.1 com a ferramenta de implantação do aplicativo](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Configurar o emulador do Windows Phone com a barra de ferramentas do emulador  
  Esta tabela mostra os botões de configuração disponíveis na barra de ferramentas do emulador.  

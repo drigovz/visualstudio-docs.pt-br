@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 916b30cf4cff357ba468faae524d6b0ca7806959
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: ac5877ecf22ca8d0d8cc15095d354973ece29eaa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923151"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687351"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Métodos APTCA devem chamar somente métodos APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58923151"
  Um método em um assembly com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> atributo chama um método em um assembly que não tem o atributo.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de Link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; apenas totalmente confiável os chamadores podem acessar um assembly de nome forte. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de link, fazendo com que o assembly acessível aos chamadores que não têm confiança total, como o código em execução de uma intranet ou da Internet.
+ Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de Link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) para confiança total; apenas totalmente confiável os chamadores podem acessar um assembly de nome forte. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de link, fazendo com que o assembly acessível aos chamadores que não têm confiança total, como o código em execução de uma intranet ou da Internet.
 
  Quando o atributo APTCA estiver presente em um assembly totalmente confiável e o assembly executar código em outro assembly que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois métodos `M1` e `M2` atendem às condições a seguir, chamadores mal-intencionados podem usar o método `M1` para ignorar a demanda de link de confiança total implícito que protege `M2`:
 
@@ -49,7 +49,7 @@ ms.locfileid: "58923151"
   Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você demanda dependerá a funcionalidade exposta pelo seu método. Se for possível, proteja o método com uma demanda de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
+ Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você demanda dependerá a funcionalidade exposta pelo seu método. Se for possível, proteja o método com uma demanda de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta. Para obter mais informações sobre as demandas, consulte [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48).
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Para suprimir com segurança um aviso nessa regra, você deve garantir que a funcionalidade exposta pelo seu método não direta ou indiretamente permite chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de forma destrutivas.
@@ -77,4 +77,4 @@ ms.locfileid: "58923151"
  [CA2117: Os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Consulte também
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Assemblies do .NET Framework pode ser chamados por código parcialmente confiável](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de parcialmente confiável código](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](http://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Demandas de link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Diretrizes de codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [Assemblies do .NET Framework pode ser chamados por código parcialmente confiável](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [usando bibliotecas de parcialmente confiável código](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandas](https://msdn.microsoft.com/e5283e28-2366-4519-b27d-ef5c1ddc1f48) [Demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [dados e modelagem](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

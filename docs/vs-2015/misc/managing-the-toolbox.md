@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eeb5d06b0e689391f450fec8744fa58a41f4508
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838667"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681537"
 ---
 # <a name="managing-the-toolbox"></a>Gerenciando a caixa de ferramentas
 O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como um editor ou designer, para gerenciar a associação e a aparência do **caixa de ferramentas**.  
   
- Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: A caixa de ferramentas de controle](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ Além disso, o **caixa de ferramentas** em si pode ser gerenciada usando a automação. Para obter mais informações sobre como gerenciar uma caixa de ferramentas por meio da automação, consulte [como: A caixa de ferramentas de controle](https://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Seleção automática de caixa de ferramentas da guia  
  Um determinado **caixa de ferramentas** guia ou categoria pode ser automaticamente feita Active Directory com base em qual editor ou designer está ativo no momento. Por exemplo, se um designer de formulários estiver ativado, você pode querer a **todos os Windows Forms** guia selecionada.  
@@ -51,7 +51,7 @@ O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como 
   
 - Um VSPackage deverá usar <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> para adicionar controles ou hospedar o controle em um controle wrapper derivado de <xref:System.Windows.Forms.AxHost>.  
   
-   O Visual Studio fornece o `Aximp.exe` de ferramentas para automatizar o encapsulamento de um controle ActiveX em um controle derivado de <xref:System.Windows.Forms.AxHost>. Para obter mais informações, consulte [Aximp.exe (Windows Forms ActiveX Control Importer)](http://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
+   O Visual Studio fornece o `Aximp.exe` de ferramentas para automatizar o encapsulamento de um controle ActiveX em um controle derivado de <xref:System.Windows.Forms.AxHost>. Para obter mais informações, consulte [Aximp.exe (Windows Forms ActiveX Control Importer)](https://msdn.microsoft.com/library/482c0d83-7144-4497-b626-87d2351b78d0).  
   
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox>, <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2>, e <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> estão COM base em interfaces disponíveis por meio de assemblies de interoperabilidade.  
   

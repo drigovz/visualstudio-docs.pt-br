@@ -37,12 +37,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: feb0c1a5f486654844c592b6b946dedc9e2e02c0
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: HT
+ms.openlocfilehash: 03f525d3b996875097ddee433d0e9ad887ee728f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "58999943"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679462"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias so
 |[Criar projetos e diagramas de modelagem UML](../modeling/create-uml-modeling-projects-and-diagrams.md)|**Criar modelos** e adicionar diagramas.|  
 |[Editar modelos e diagramas UML](../modeling/edit-uml-models-and-diagrams.md)|**Desenhar diagramas** para editar o modelo.|  
 |[Definir pacotes e namespaces](../modeling/define-packages-and-namespaces.md)|**Criar pacotes** para dividir um modelo em unidades diferentes membros da equipe podem trabalhar em.|  
-|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gerar o código C# de diagramas de classe** para iniciar sua implementação.|  
+|[Gerar código por meio de diagramas de classe UML](../modeling/generate-code-from-uml-class-diagrams.md)|**Gerar o código c# de diagramas de classe** para iniciar sua implementação.|  
 |[Personalizar o modelo com perfis e estereótipos](../modeling/customize-your-model-with-profiles-and-stereotypes.md)|**Personalizar elementos de modelo** usando estereótipos, para estender os elementos de modelo UML padrão para fins específicos.|  
 |[Vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md)|**Criar links entre elementos de modelo e itens de trabalho** para ajudar você a acompanhar tarefas, casos de teste, bugs, requisitos, problemas ou outros tipos de trabalho que estão associados a partes específicas do seu modelo.|  
 |[Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md)|**Salvar o modelo e os diagramas** para que você pode compartilhá-los com outros usuários, incluindo aqueles que não use [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)].|  
@@ -91,7 +91,7 @@ Diagramas de modelagem ajudarão-lo a entender, esclarecer e comunicar ideias so
 |[Requisitos de usuário do modelo](../modeling/model-user-requirements.md)|Use modelos para esclarecer e comunicar as necessidades de usuários.|  
 |[Modelar a arquitetura do aplicativo](../modeling/model-your-app-s-architecture.md)|Use modelos para descrever a estrutura geral e o comportamento do seu sistema e certifique-se de que ele atenda às necessidades dos usuários.|  
 |[Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)|Certifique-se de que seu software permaneça consistente com suas necessidades de usuários e a arquitetura geral do seu sistema.|  
-|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante seu desenvolvimento.|  
+|[Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)<br /><br /> [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)|Use modelos para ajudá-lo a entender e alterar o seu sistema durante seu desenvolvimento.|  
 |[Estruturar a solução de modelagem](../modeling/structure-your-modeling-solution.md)|Organize modelos em um projeto grande ou médio.|  
   
 ## <a name="external-resources"></a>Recursos externos  

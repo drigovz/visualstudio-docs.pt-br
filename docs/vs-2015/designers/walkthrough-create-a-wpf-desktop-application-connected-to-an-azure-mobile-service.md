@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421244"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693543"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
   
 - Uma conta ativa do Microsoft Azure.  
   
-    - Você pode se inscrever para uma conta de avaliação gratuita [aqui](http://azure.microsoft.com/pricing/free-trial/).  
+    - Você pode se inscrever para uma conta de avaliação gratuita [aqui](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Você pode ativar os [benefícios de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Sua assinatura do MSDN fornece a você créditos mensais que podem ser usados para serviços pagos do Azure.  
   
@@ -566,7 +566,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
   
  Você pode tornar a interface do usuário mais atraente adicionando cores, formas, gráficos e até animações. Consulte [Criando o XAML no Visual Studio e no Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- Você pode se conectar a bancos de dados do SQL existentes ou outras fontes de dados usando os serviços móveis do Azure. Consulte [Documentação dos serviços móveis](http://azure.microsoft.com/services/app-service/mobile/).  
+ Você pode se conectar a bancos de dados do SQL existentes ou outras fontes de dados usando os serviços móveis do Azure. Consulte [Documentação dos serviços móveis](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

@@ -50,12 +50,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd93fdc527e38b820bc7df6387ca6f8e9078bfd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 340fe819086d3cc18cb9c2dd6a4ca14129c6d8ad
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045323"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679859"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Quando você cria um app, aplicativo, site da Web, aplicativo Web, script, plug-
  Também é possível criar modelos de item e de projeto personalizados. Para obter mais informações, consulte [Criando modelos de item e de projeto](../ide/creating-project-and-item-templates.md).
 
 ## <a name="creating-new-projects"></a>Criando novos projetos
- A maneira mais fácil de criar um novo projeto é começar com um modelo de projeto predefinido, que consiste em um conjunto básico de arquivos de código, arquivos de configuração, configurações e ativos gerados previamente que permitem que você comece a criar um tipo específico de aplicativo ou site em uma linguagem de programação específica. Esses modelos são o que você vê na **caixa de diálogo Novo Projeto** quando você escolhe **Arquivo &#124; Novo &#124; Projeto** ou **Arquivo &#124; Novo &#124; Site** no menu principal e, em seguida, navega. Para obter mais informações, consulte [Criando soluções e projetos](../ide/creating-solutions-and-projects.md) e [NIB Criando projetos de modelos](http://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
+ A maneira mais fácil de criar um novo projeto é começar com um modelo de projeto predefinido, que consiste em um conjunto básico de arquivos de código, arquivos de configuração, configurações e ativos gerados previamente que permitem que você comece a criar um tipo específico de aplicativo ou site em uma linguagem de programação específica. Esses modelos são o que você vê na **caixa de diálogo Novo Projeto** quando você escolhe **Arquivo &#124; Novo &#124; Projeto** ou **Arquivo &#124; Novo &#124; Site** no menu principal e, em seguida, navega. Para obter mais informações, consulte [Criando soluções e projetos](../ide/creating-solutions-and-projects.md) e [NIB Criando projetos de modelos](https://msdn.microsoft.com/7c36d86a-6b79-4480-8228-0f925f1204b2).
 
 ## <a name="managing-projects-in-solution-explorer"></a>Gerenciamento de projetos no Gerenciador de Soluções
  Depois de criar um novo projeto, você usa o **Gerenciador de Soluções** para exibir e gerenciar projetos e soluções e seus itens associados. A ilustração a seguir mostra o Gerenciador de Servidores com uma solução em C# que contém dois projetos.

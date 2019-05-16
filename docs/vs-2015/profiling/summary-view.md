@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110889"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674168"
 ---
 # <a name="summary-view"></a>Exibição do Resumo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ A exibição de resumo exibe informações sobre as funções ou os objetos de d
 |**Exibir Árvore de Chamadas Cortada**|Exibe os caminhos de execução mais caros no modo de exibição de árvore de chamada. Para obter mais informações, consulte o [Modo de exibição de árvore de Chamadas](../profiling/call-tree-view.md).|  
 |**Mostrar linhas de acesso**|Não disponível para criação de perfil de dados que foram coletados usando o método de instrumentação. Exibe as linhas de código-fonte mais caras na exibição de linhas. Para obter mais informações, consulte [Exibição de linhas](../profiling/lines-view.md).|  
 |**Comparar Relatórios**|Exibe o **selecionar arquivos de análise para comparação** caixa de diálogo na qual você pode especificar outro arquivo de dados de criação de perfil a ser comparado com o arquivo atual. Para mais informações, consulte [Comparando os Arquivos de Dados de desempenho](../profiling/comparing-performance-data-files.md).|  
-|**Exportar Dados de Relatório**|Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para obter mais informações, confira [Como: Relatórios de ferramentas de criação de perfil de exportação](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Salvar relatório analisado**|Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Salvar analisados de arquivos de dados de criação de perfil](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exportar Dados de Relatório**|Exibe a caixa de diálogo **Exportar relatório**, na qual você pode especificar um ou mais modos de exibição de relatório para salvar como valores separados por vírgulas (. csv) ou arquivos .xml. Para obter mais informações, confira [Como: Relatórios de ferramentas de criação de perfil de exportação](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Salvar relatório analisado**|Salva o arquivo de dados de criação de perfil atual como um arquivo .vsps, que abre mais rapidamente na interface para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Salvar analisados de arquivos de dados de criação de perfil](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrar Dados de Relatório**|Exibe o painel de filtro de relatório perfil no qual você pode especificar critérios para restringir os dados na exibição do relatório. Para obter mais informações, consulte [Filtro de Exibição do Relatório de Desempenho](../profiling/performance-report-view-filter.md)|  
 |**Alternar Tela Inteira**|Alterna o modo de tela inteira para o modo de exibição de relatório.|  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757652"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685706"
 ---
 # <a name="application-properties"></a>Propriedades do aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ Você pode definir propriedades gerais de aplicativo para aplicativos do Visual 
 ## <a name="see-also"></a>Consulte também  
  [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Introdução ao Designer de Projeto](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Introdução ao Designer de Projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Gerenciando propriedades de depuração](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Gerenciando propriedades de compilação](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Gerenciando propriedades de depuração](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Gerenciando propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Gerenciando recursos de aplicativo (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Gerenciando configurações de aplicativo (.NET)](../ide/managing-application-settings-dotnet.md)

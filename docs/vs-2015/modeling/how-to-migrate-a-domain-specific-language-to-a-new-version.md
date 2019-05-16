@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7f3cefc7c6e2a78d757bb931a430f09c6da103c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441045"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681034"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
    2. Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.  
   
        > [!NOTE]
-       > Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](https://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Atualize seu código personalizado nos projetos convertidos.  
   

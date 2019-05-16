@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b57f3de72272e8d1ecc567b150d073cd8d69611
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3c29bd6a58d510d98f2a08c96d0cd0bc774e197e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679990"
 ---
 # <a name="localizing-clickonce-applications"></a>Localização de aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Localização é o processo de tornar seu aplicativo apropriado para uma cultura
  O benefício dessa abordagem é que ele cria uma única implantação e simplifica a sua história de implantação localizada. Em tempo de execução, o assembly satélite adequado será usado, dependendo da cultura padrão do sistema de operacional do Windows do usuário. Uma desvantagem dessa abordagem é que ele baixa todos os assemblies de satélite, sempre que o aplicativo é instalado ou atualizado em um computador cliente. Se seu aplicativo tiver um grande número de cadeias de caracteres ou seus clientes têm uma conexão de rede lenta, esse processo pode afetar o desempenho durante a atualização do aplicativo.  
   
 > [!NOTE]
-> Essa abordagem supõe que o seu aplicativo se ajusta a altura, largura e a posição dos controles automaticamente para acomodar os tamanhos de cadeia de caracteres de texto diferente em diferentes culturas. Windows Forms contém uma variedade de controles e tecnologias que permitem que você cria um formulário para torná-lo facilmente localizável, incluindo o <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> controles, bem como a <xref:System.Windows.Forms.Control.AutoSize%2A> propriedade.  Consulte também [como: Suporte à localização em formulários do Windows usando AutoSize e o controle TableLayoutPanel](http://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
+> Essa abordagem supõe que o seu aplicativo se ajusta a altura, largura e a posição dos controles automaticamente para acomodar os tamanhos de cadeia de caracteres de texto diferente em diferentes culturas. Windows Forms contém uma variedade de controles e tecnologias que permitem que você cria um formulário para torná-lo facilmente localizável, incluindo o <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> controles, bem como a <xref:System.Windows.Forms.Control.AutoSize%2A> propriedade.  Consulte também [como: Suporte à localização em formulários do Windows usando AutoSize e o controle TableLayoutPanel](https://msdn.microsoft.com/library/1zkt8b33\(v=vs.110\)).  
   
 ## <a name="generate-one-deployment-for-each-culture"></a>Gerar uma implantação para cada cultura  
  Essa estratégia de implantação, você gera várias implantações. Em cada implantação, você inclui apenas o assembly satélite necessário para uma cultura específica e você marcar a implantação como específico para aquela cultura.  
@@ -70,7 +70,7 @@ Localização é o processo de tornar seu aplicativo apropriado para uma cultura
   
  Baixando assemblies satélite sob demanda é ligeiramente diferente de baixar outros tipos de assemblies por demanda. Para obter mais informações e exemplos de código sobre como habilitar esse cenário usando o [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] ferramentas para o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consulte [passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md).  
   
- Você também pode habilitar esse cenário em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [passo a passo: Baixando Assemblies satélite por demanda com a API usando o Designer de implantação do ClickOnce](http://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API](http://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
+ Você também pode habilitar esse cenário em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  Consulte também [passo a passo: Baixando Assemblies satélite por demanda com a API usando o Designer de implantação do ClickOnce](https://msdn.microsoft.com/library/ms366788\(v=vs.110\)) ou [passo a passo: Baixando Assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API](https://msdn.microsoft.com/library/ms366788\(v=vs.120\)).  
   
 ## <a name="testing-localized-clickonce-applications-before-deployment"></a>Testes localizados os aplicativos antes da implantação do ClickOnce  
  Um assembly satélite será usado para um se somente de aplicativo do Windows Forms a <xref:System.Threading.Thread.CurrentUICulture%2A> propriedade para o thread principal do aplicativo é definida como a cultura do assembly satélite. Os clientes em mercados locais provavelmente já executará uma versão localizada do Windows com sua cultura definida como o padrão apropriado.  
@@ -84,4 +84,4 @@ Localização é o processo de tornar seu aplicativo apropriado para uma cultura
 ## <a name="see-also"></a>Consulte também  
  [\<assemblyIdentity > elemento](../deployment/assemblyidentity-element-clickonce-deployment.md)   
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Globalizando o Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)
+ [Globalizando o Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)

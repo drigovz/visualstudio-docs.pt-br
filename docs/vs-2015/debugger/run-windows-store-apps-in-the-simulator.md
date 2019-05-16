@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426620"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683542"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -112,7 +112,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
      ![Menu de contexto de configurações de captura de tela](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
 ## <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede  
- Você pode ajudar os usuários de seu aplicativo a gerenciar o custo de conexões de rede limitadas mantendo a percepção do custo da conexão de rede ou as alterações de status do plano de dados e habilitando o aplicativo para usar essas informações para evitar a cobrança de custos adicionais para roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) APIs permitem que você responda aos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que assinar. Confira [Início Rápido: Gerenciando restrições de custo de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
+ Você pode ajudar os usuários de seu aplicativo a gerenciar o custo de conexões de rede limitadas mantendo a percepção do custo da conexão de rede ou as alterações de status do plano de dados e habilitando o aplicativo para usar essas informações para evitar a cobrança de custos adicionais para roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) APIs permitem que você responda aos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que assinar. Confira [Início Rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar ou testar seu código com reconhecimento de custo de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio de [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto retornado por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
   
@@ -136,7 +136,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
    **Mais informações sobre como gerenciar conexões de rede**  
   
-   [Início Rápido: Gerenciando restrições de custo de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
+   [Início Rápido: Gerenciando restrições de custo de rede limitada](https://msdn.microsoft.com/library/windows/apps/Hh750310.aspx)  
   
    [Exemplo de informações de rede](http://code.msdn.microsoft.com/windowsapps/Network-Information-Sample-63aaa201)  
   
@@ -144,9 +144,9 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
    [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx)  
   
-   [Como responder a eventos do sistema com tarefas em segundo plano](http://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
+   [Como responder a eventos do sistema com tarefas em segundo plano](https://msdn.microsoft.com/f7c86e86-a7ae-4abb-a923-76b03337a80a)  
   
-   [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
+   [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](https://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
 ## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta acima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use a **seta para cima** e a **seta para baixo** para navegar entre os botões da barra de ferramentas.  
