@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e0645cd28e6124e31e19b03489661c6828799cf4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686736"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurando aplicativos ASP.NET e AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Depurar aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é s
  [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)  
  Explica por que apenas Just My Code deve ser habilitado para depurar exceções do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
- [Visão geral de aplicativos Ajax de rastreamento e depuração](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
+ [Visão geral de aplicativos Ajax de rastreamento e depuração](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)  
  Discute algumas técnicas e ferramentas que podem ajudar a depurar seu código AJAX.  
   
  [IntelliTrace](../debugger/intellitrace.md)  
