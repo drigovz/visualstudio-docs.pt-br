@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3a8015eb672e87431a1d225221ff2321c41e041a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437065"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697045"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Criando e usando políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,6 +44,6 @@ Quando você usa o controle de versão do Team Foundation (TFVC), você pode cri
  Explica como adicionar palavras e tokens para o dicionário que é referenciado em regras de nomenclatura de análise de código.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Definir e impor restrições de qualidade](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
+ [Definir e impor restrições de qualidade](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)  
   
  [Melhorando a qualidade do código com políticas de check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md)

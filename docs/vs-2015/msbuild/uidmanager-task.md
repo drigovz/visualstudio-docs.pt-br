@@ -20,12 +20,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 497c8f2ff8defd0acdf943f4856f0195e50366ce
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5fd8175911def7fb1b63dc63d967c404d649e9e4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656824"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703688"
 ---
 # <a name="uidmanager-task"></a>Tarefa UidManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,5 +62,5 @@ A tarefa <xref:Microsoft.Build.Tasks.Windows.UidManager> verifica, atualiza ou r
  [Referência de tarefas](../msbuild/wpf-msbuild-task-reference.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)   
- [Compilando um aplicativo WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
- [Como: Localizar um aplicativo](http://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)
+ [Compilando um aplicativo WPF (WPF)](https://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c)   
+ [Como: Localizar um aplicativo](https://msdn.microsoft.com/library/5001227e-9326-48a4-9dcd-ba1b89ee6653)

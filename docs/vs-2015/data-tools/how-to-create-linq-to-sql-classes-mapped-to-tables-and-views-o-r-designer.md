@@ -9,16 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: b9bff102fbf87149e3adc80029eea17132e9b1b7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386661"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697724"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como: Criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibição são chamados *classes de entidade*. A classe de entidade é mapeado para um registro, enquanto as propriedades individuais de uma classe de entidade mapeiam para as colunas individuais que compõem um registro. Criar classes de entidade que se baseiam no banco de dados tabelas ou exibições arrastando tabelas ou exibições do **Gerenciador de servidores**/**Database Explorer** até a [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] gera as classes e aplica o específico [! LINQ para atributos de SQL para habilitar o [! LINQ para funcionalidade de SQL (a comunicação de dados e recursos de edição a <xref:System.Data.Linq.DataContext>). Para obter informações detalhadas sobre o [! Classes LINQ to SQL, consulte [o LINQ no modelo de objeto do SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
+Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibição são chamados *classes de entidade*. A classe de entidade é mapeado para um registro, enquanto as propriedades individuais de uma classe de entidade mapeiam para as colunas individuais que compõem um registro. Criar classes de entidade que se baseiam no banco de dados tabelas ou exibições arrastando tabelas ou exibições do **Gerenciador de servidores**/**Database Explorer** até a [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md). O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] gera as classes e aplica o específico [! LINQ para atributos de SQL para habilitar o [! LINQ para funcionalidade de SQL (a comunicação de dados e recursos de edição a <xref:System.Data.Linq.DataContext>). Para obter informações detalhadas sobre o [! Classes LINQ to SQL, consulte [o LINQ no modelo de objeto do SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810).
 
 > [!NOTE]
 > O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] é um mapeador relacional de objeto simples, pois suporta apenas as relações de mapeamento de 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. O mapeamento complexo, como o mapeamento de uma classe de entidade para várias tabelas, não tem suporte. No entanto, você pode mapear uma classe de entidade para uma exibição que une várias tabelas relacionadas.
@@ -39,7 +39,7 @@ Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibiçã
      Uma classe de entidade é criada e aparece na superfície de design. A classe de entidade tem propriedades que mapeiam para as colunas na tabela ou exibição selecionada.
 
 ## <a name="create-an-object-data-source-and-display-the-data-on-a-form"></a>Crie um objeto de fonte de dados e exiba os dados em um formulário
- Depois de criar classes de entidade usando o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], você pode criar uma fonte de dados de objeto e preencher o [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) com as classes de entidade.
+ Depois de criar classes de entidade usando o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], você pode criar uma fonte de dados de objeto e preencher o [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) com as classes de entidade.
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para criar uma fonte de dados de objeto com base nas classes de entidade do LINQ to SQL
 
@@ -63,10 +63,10 @@ Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibiçã
 ## <a name="see-also"></a>Consulte também
 
 - [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
+- [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233)
 - [Métodos DataContext (Designer Relacional de Objetos)](../data-tools/datacontext-methods-o-r-designer.md)
 - [Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
-- [O modelo de objeto LINQ to SQL](http://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
+- [O modelo de objeto LINQ to SQL](https://msdn.microsoft.com/library/81dd0c37-e2a4-4694-83b0-f2e49e693810)
 - [Passo a passo: Personalizando o comportamento de inserção, atualização e exclusão de classes de entidade](../data-tools/walkthrough-customizing-the-insert-update-and-delete-behavior-of-entity-classes.md)
-- [Passo a passo: Adicionando validação a Classes de entidade](http://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
+- [Passo a passo: Adicionando validação a Classes de entidade](https://msdn.microsoft.com/library/85b06a02-b2e3-4534-95b8-d077c8d4c1d7)
 - [Como: Criar uma associação (relação) entre classes LINQ to SQL (Designer Relacional de Objetos)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

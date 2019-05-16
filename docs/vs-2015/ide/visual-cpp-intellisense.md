@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c11d0ab2a136c82956ffa1ed0f90da534acb87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2754a8ea663d888bb8ba2e2ff0276911976ff0af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802623"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696527"
 ---
 # <a name="visual-c-intellisense"></a>Visual C++ IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ No Visual Studio 2015, o IntelliSense está disponível para arquivos de código
 - A linha 12 tem linha ondulada roxa no identificador BYE; esse identificador não está definido no projeto Android.NativeActivity inativo no momento.  
   
 ## <a name="single-file-intellisense"></a>IntelliSense de arquivo único  
- Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar determinados recursos indo para **Editor de Texto, C/C++, Avançado** para ativar ou desativar recursos do IntelliSense. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure **IntelliSense e navegação para arquivos que não são de projeto** na seção **Avançado**. Consulte [Tour guiado do Visual C++](http://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
+ Ao abrir um arquivo único fora de qualquer projeto, você ainda obtém o IntelliSense. Você pode habilitar ou desabilitar determinados recursos indo para **Editor de Texto, C/C++, Avançado** para ativar ou desativar recursos do IntelliSense. Para configurar o IntelliSense para arquivos únicos que não fazem parte de um projeto, procure **IntelliSense e navegação para arquivos que não são de projeto** na seção **Avançado**. Consulte [Tour guiado do Visual C++](https://msdn.microsoft.com/499cb66f-7df1-45d6-8b6b-33d94fd1f17c).  
   
  ![IntelliSense de arquivo único do Visual C&#43;&#43;](../ide/media/vs2015-cpp-single-file-intellisense.png "vs2015_cpp_single_file_intellisense")  
   

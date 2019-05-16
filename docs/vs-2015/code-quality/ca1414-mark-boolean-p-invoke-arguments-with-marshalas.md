@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e444519c5a6d6d1547b782006d063e90d4a3b976
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8df0404657b6740c27544292dc101a6030a6563f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928479"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691909"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Marcar argumentos P/Invoke boolianos com MarshalAs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58928479"
 ## <a name="rule-description"></a>Descrição da Regra
  Uma plataforma de chamar código não gerenciado do método acessos e é definido usando o `Declare` palavra-chave na [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. <xref:System.Runtime.InteropServices.MarshalAsAttribute> Especifica o comportamento de marshaling que é usado para converter tipos de dados entre código gerenciado e não gerenciado. Tipos de muitos dados simples, como <xref:System.Byte?displayProperty=fullName> e <xref:System.Int32?displayProperty=fullName>, ter uma única representação em código não gerenciado e não exigem a especificação de seu comportamento de marshaling; o common language runtime fornece o comportamento correto automaticamente.
 
- O <xref:System.Boolean> tipo de dados tem várias representações em código não gerenciado. Quando o <xref:System.Runtime.InteropServices.MarshalAsAttribute> não for especificado, o padrão de empacotamento de comportamento para o <xref:System.Boolean> tipo de dados é <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Isso é um inteiro de 32 bits, que não é apropriado em todas as circunstâncias. A representação de booliana é necessário para o método não gerenciado deve ser determinada e combinada para apropriado <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool é o tipo BOOL Win32, que é sempre de 4 bytes. UnmanagedType.U1 deve ser usado para C++ `bool` ou outros tipos de 1 byte. Para obter mais informações, consulte [Marshaling padrão para tipos boolianos](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
+ O <xref:System.Boolean> tipo de dados tem várias representações em código não gerenciado. Quando o <xref:System.Runtime.InteropServices.MarshalAsAttribute> não for especificado, o padrão de empacotamento de comportamento para o <xref:System.Boolean> tipo de dados é <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. Isso é um inteiro de 32 bits, que não é apropriado em todas as circunstâncias. A representação de booliana é necessário para o método não gerenciado deve ser determinada e combinada para apropriado <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>. UnmanagedType.Bool é o tipo BOOL Win32, que é sempre de 4 bytes. UnmanagedType.U1 deve ser usado para C++ `bool` ou outros tipos de 1 byte. Para obter mais informações, consulte [Marshaling padrão para tipos boolianos](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9).
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, aplique <xref:System.Runtime.InteropServices.MarshalAsAttribute> para o <xref:System.Boolean> parâmetro ou valor retornado. Defina o valor do atributo como apropriado <xref:System.Runtime.InteropServices.UnmanagedType>.
@@ -59,4 +59,4 @@ ms.locfileid: "58928479"
  [CA2101: Especificar marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Marshaling padrão para tipos boolianos](http://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [interoperação com código não gerenciado](http://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)
+ <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> [Marshaling padrão para tipos boolianos](https://msdn.microsoft.com/d4c00537-70f7-4ca6-8197-bfc1ec037ff9) [interoperação com código não gerenciado](https://msdn.microsoft.com/library/ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258)

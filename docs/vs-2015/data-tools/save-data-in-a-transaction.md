@@ -20,12 +20,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fcac3461d0c6dc1c05671eed1ac641c7da6790ef
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 08480e46ab492acb1c7ab10c8514897721708aba
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559192"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692464"
 ---
 # <a name="save-data-in-a-transaction"></a>Salvando dados em uma transação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,12 +44,12 @@ Este passo a passo demonstra como salvar dados em uma transação usando o <xref
   
 2. Nomeie o projeto **SavingDataInATransactionWalkthrough**.  
   
-3. Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O projeto **SavingDataInATransactionWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.  
   
 ## <a name="create-a-database-data-source"></a>Criar uma fonte de dados do banco de dados  
- Esta etapa usa a [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para criar uma fonte de dados com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind.  
+ Esta etapa usa a [Data Source Configuration Wizard](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) para criar uma fonte de dados com base nas `Customers` e `Orders` tabelas no banco de dados de exemplo Northwind.  
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   

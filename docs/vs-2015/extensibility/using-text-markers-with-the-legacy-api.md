@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3dff5e6ecf60d389730841e99b87db584465e020
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430110"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695474"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exi
 |[Como: criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
 |[Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
 |[Dentro do editor principal](../extensibility/inside-the-core-editor.md)|Descreve os recursos do editor de núcleo e fornece detalhes sobre como personalizar o editor de núcleo.|  
-|[Recursos do Editor](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.|  
+|[Recursos do Editor](https://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.|  
   
 ## <a name="reference"></a>Referência  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  

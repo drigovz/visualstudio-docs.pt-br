@@ -25,12 +25,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3aaeac588243ca8d6969bd3f3651240b8b2b6e3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829363dcbf5e8cc4a9151f369d6b0191fc282d44
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926737"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697848"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de Da
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   
- [Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Exibir valores de dados em dicas de dados](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)

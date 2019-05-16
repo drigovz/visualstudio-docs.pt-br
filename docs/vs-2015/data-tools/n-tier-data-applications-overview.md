@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc6bc7e6e7d11b1b5b77cd90b86a6a6167702872
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d54d69a9aeda76c79208c2685efde94eaaab1017
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62559802"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693779"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,14 +39,14 @@ N-camadas * aplicativos de dados são aplicativos de dados que são separados em
   
 - O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece configurações para gerar as classes DataContext e dados em namespaces separados. Isso permite uma separação lógica do acesso a dados e camadas de entidade de dados.  
   
-- [O LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornece o <xref:System.Data.Linq.Table%601.Attach%2A> método que permite que você reúna o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [de N camadas e aplicativos remotos com o LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
+- [O LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) fornece o <xref:System.Data.Linq.Table%601.Attach%2A> método que permite que você reúna o DataContext de diferentes camadas em um aplicativo. Para obter mais informações, consulte [de N camadas e aplicativos remotos com o LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598).  
   
 ## <a name="presentation-tier"></a>Camada de apresentação  
  O *camada de apresentação* é a camada na qual os usuários interagem com um aplicativo. Ele normalmente contém lógica de aplicativo adicionais também. Componentes da camada de apresentação típicas incluem o seguinte:  
   
 - Componentes de dados, como o <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator>.  
   
-- Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade para uso na camada de apresentação.  
+- Objeto de representações de dados, como [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade para uso na camada de apresentação.  
   
   A camada de apresentação normalmente acessa a camada intermediária usando uma referência de serviço (por exemplo, uma [serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) aplicativo). A camada de apresentação não pode acessar diretamente a camada de dados. A camada de apresentação se comunica com a camada de dados por meio do componente de acesso a dados na camada intermediária.  
   
@@ -57,9 +57,9 @@ N-camadas * aplicativos de dados são aplicativos de dados que são separados em
   
 - Componentes de acesso a dados e lógica, como o seguinte:  
   
-  - [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapters e DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
+  - [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e [DataAdapters e DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).  
   
-  - Objeto de representações de dados, como [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade.  
+  - Objeto de representações de dados, como [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade.  
   
   - Serviços de aplicativo comuns, como autenticação, autorização e personalização.  
   
@@ -87,9 +87,9 @@ Camada de dados
   
  [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
   
- [Passo a passo: Adicionando validação a um aplicativo de dados de N camadas](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Passo a passo: Adicionando validação a um aplicativo de dados de N camadas](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
   
- [Aplicativos de N camadas e remotos com o LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
+ [Aplicativos de N camadas e remotos com o LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Data.Linq.ITable.Attach%2A>   

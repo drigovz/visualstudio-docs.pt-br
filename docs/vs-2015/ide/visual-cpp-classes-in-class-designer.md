@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5e772d5dddcdde2306212e8a8fc48b9e39ae47a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443177"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696397"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ class Penguin : public Bird, public Swimmer {};
 > [!NOTE]
 > O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas indo até o Modo de Exibição de Classe, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.  
   
- Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
+ Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
 ## <a name="abstract-classes"></a>Classes abstratas  
  O Designer de Classe dá suporte a classes abstratas (também chamadas de "classes base abstratas"). Essas são classes que você nunca instancia, mas das quais pode derivar outras classes. Usando um exemplo de "Herança múltipla" no início deste documento, você pode instanciar a classe `Bird` como objetos individuais, da seguinte maneira:  
@@ -121,7 +121,7 @@ typedef struct
   
  As estruturas também podem ser anônimas. O Designer de Classe exibe estruturas e classes anônimas da mesma forma como exibe o respectivo tipo. Embora você possa declarar e exibir estruturas e classes anônimas, o Designer de Classe não usará o nome de marcação que você especificar. Ele usará o nome gerado pelo Modo de Exibição de Classe. A classe ou estrutura aparece no Modo de Exibição de Classe e no Designer de Classe como um elemento chamado **__unnamed**.  
   
- Para obter mais informações sobre classes anônimas, consulte [Tipos de classe anônima](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
+ Para obter mais informações sobre classes anônimas, consulte [Tipos de classe anônima](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8).  
   
 ## <a name="template-classes"></a>Classes de modelo  
  O Designer de Classe dá suporte à visualização de classes de modelo. Declarações aninhadas têm suporte. A tabela a seguir mostra algumas declarações típicas.  
@@ -171,8 +171,8 @@ typedef struct
   
 ## <a name="see-also"></a>Consulte também  
  [Trabalhando com código do Visual C++ (Designer de Classe)](../ide/working-with-visual-cpp-code-class-designer.md)   
- [Classes e structs](http://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
- [Tipos de classe anônima](http://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
- [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
- [Classes base múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
- [Modelos](http://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)
+ [Classes e structs](https://msdn.microsoft.com/library/516dd496-13fb-4f17-845a-e9ca45437873)   
+ [Tipos de classe anônima](https://msdn.microsoft.com/library/9ba667b2-8c2a-4c29-82a6-fa120b9233c8)   
+ [(NOTINBUILD) Herança múltipla](https://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca)   
+ [Classes base múltiplas](https://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740)   
+ [Modelos](https://msdn.microsoft.com/library/90fcc14a-2092-47af-9d2e-dba26d25b872)

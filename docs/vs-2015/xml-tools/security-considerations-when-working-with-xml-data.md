@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fab67780f113c2348fa30e80c4174d1f26f130f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 448396ebf8bf6318a22d7c6b05037d3ea43b0fd5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109032"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697125"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considerações de segurança para trabalhar com dados XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,4 +42,4 @@ Este tópico aborda problemas de segurança que você precisa saber sobre ao tra
 - O avaliador de expressão XSLT é carregado pelo mecanismo gerenciado de depuração. O mecanismo gerenciado de depuração supõe que qualquer código é executado do computador local do usuário. Da mesma forma, a classe de <xref:System.Xml.Xsl.XslCompiledTransform> download do arquivo fonte para o computador local do usuário. A possibilidade que um ataue de elevação de privilégio em execução pode ocorrer é abrandada executando todas as transformações XSLT em um domínio de aplicativo com permissões restritas  
   
 ## <a name="see-also"></a>Consulte também  
- [Domínios do aplicativo](http://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)
+ [Domínios do aplicativo](https://msdn.microsoft.com/39e57d07-a740-4cd4-ae82-e119ea3856c1)

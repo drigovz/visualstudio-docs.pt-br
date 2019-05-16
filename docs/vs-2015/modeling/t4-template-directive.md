@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 38831d0f647ce423dc62fb51823a6757a1ac0872
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411458"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695885"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
  `compilerOptions="optimize+"`  
   
  Valores válidos:  
- Algumas opções válidas do compilador. Para obter mais informações, consulte [opções de compilador c# está listadas por categoria](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opções de compilador Visual Basic listadas por categoria](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Algumas opções válidas do compilador. Para obter mais informações, consulte [opções de compilador c# está listadas por categoria](https://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opções de compilador Visual Basic listadas por categoria](https://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignorada para modelos de tempo de execução (pré-processados).  
   

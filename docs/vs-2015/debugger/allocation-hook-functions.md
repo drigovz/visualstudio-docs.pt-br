@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439948"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702522"
 ---
 # <a name="allocation-hook-functions"></a>Funções de gancho da alocação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Uma função de gancho de alocação, instalada usando [crtsetallochook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), é chamado sempre que a memória é alocada, realocada ou liberada. Esse tipo de gancho pode ser usada para muitas finalidades diferentes. Use-o para testar como um aplicativo trata situações de memória insuficiente, por exemplo, ou para examinar padrões de alocação ou registrar informações de alocação para análise posterior.  
+Uma função de gancho de alocação, instalada usando [crtsetallochook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), é chamado sempre que a memória é alocada, realocada ou liberada. Esse tipo de gancho pode ser usada para muitas finalidades diferentes. Use-o para testar como um aplicativo trata situações de memória insuficiente, por exemplo, ou para examinar padrões de alocação ou registrar informações de alocação para análise posterior.  
   
 > [!NOTE]
 > Lembre-se da restrição sobre as funções da biblioteca em tempo de execução C em uma função de gancho de alocação, descrita em [Ganchos de alocação e alocações de memória de tempo de execução C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- O ponteiro que você passa para [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) é do tipo **_CRT_ALLOC_HOOK**, conforme definido em CRTDBG.H:  
+ O ponteiro que você passa para [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) é do tipo **_CRT_ALLOC_HOOK**, conforme definido em CRTDBG.H:  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Consulte também  
  [Ganchos de alocação e alocações de memória do tempo de execução do C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Gravação da função de gancho de depuração](../debugger/debug-hook-function-writing.md)   
- [Amostra de crt_dbg2](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [Amostra de crt_dbg2](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

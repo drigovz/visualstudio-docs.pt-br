@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1aa81017f1a3d73e4ade1556ab141878e8a773f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698470"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
   
   Para compilar aplicativos para plataformas de dispositivo específicas, há alguns requisitos adicionais:  
   
-- Emuladores do Windows Phone e o Emulador do Microsoft Visual Studio para Android requerem um computador que possa executar o Hyper-V. O recurso do Hyper-V do Windows deve ser habilitado antes que você possa instalar e executar os emuladores. Para obter mais informações, consulte os [requisitos de sistema](http://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) do emulador.  
+- Emuladores do Windows Phone e o Emulador do Microsoft Visual Studio para Android requerem um computador que possa executar o Hyper-V. O recurso do Hyper-V do Windows deve ser habilitado antes que você possa instalar e executar os emuladores. Para obter mais informações, consulte os [requisitos de sistema](https://msdn.microsoft.com/4d5bb438-231a-4cd2-84b7-e9660b0e3baf) do emulador.  
   
 - Os emuladores de Android x86 que vêm com o SDK do Android funcionam melhor em computadores que executam o driver Intel HAXM. Este driver requer um processador Intel x64 com VT-x e suporte para Execute Disable Bit. Para obter mais informações, consulte [Installation Instructions for Intel® Hardware Accelerated Execution Manager - Microsoft Windows](http://go.microsoft.com/fwlink/p/?LinkId=536385) (Instruções para instalação do Intel® Hardware Accelerated Execution Manager – Microsoft Windows).  
   

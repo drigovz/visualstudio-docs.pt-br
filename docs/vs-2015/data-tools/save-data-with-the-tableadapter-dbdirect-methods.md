@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cba6f91dd6dc0bb826531a312dc6ca5c94b21a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7bc5384fcff280c8a38875878ac32051b490624f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558736"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704172"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 - Criar um novo **aplicativo do Windows**.  
   
-- Criar e configurar um conjunto de dados com o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Criar e configurar um conjunto de dados com o [Data Source Configuration Wizard](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
 - Selecionar o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
@@ -57,7 +57,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
   
 2. Nomeie o projeto **TableAdapterDbDirectMethodsWalkthrough**.  
   
-3. Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](https://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O projeto **TableAdapterDbDirectMethodsWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.  
   
@@ -153,7 +153,7 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após criar um formulário de associação de dados. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:  
   
-- Adicionando funcionalidade de busca ao formulário. Para obter mais informações, confira [Como: Adicionar uma consulta parametrizada para um Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Adicionando funcionalidade de busca ao formulário. Para obter mais informações, confira [Como: Adicionar uma consulta parametrizada para um Windows Forms Application](https://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
 - Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. 
   

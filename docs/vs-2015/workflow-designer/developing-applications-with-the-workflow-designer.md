@@ -17,15 +17,15 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9eea79978b7b61de1e56d787b5a4cd9797be1aa6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977002"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704779"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Desenvolvendo aplicativos com designers de Fluxo de Trabalho
-[!INCLUDE[wfd1](../includes/wfd1-md.md)] é um designer e um depurador visuais para a compilação e gráficos a depuração de aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] em [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] que está hospedada no ambiente de desenvolvimento de [!INCLUDE[vs2010](../includes/vs2010-md.md)] . Permite que você escreve um aplicativo de fluxo de trabalho, uma biblioteca de atividade, ou um serviço composto de [!INCLUDE[indigo1](../includes/indigo1-md.md)] com o uso de modelos e os designers de atividade. [!INCLUDE[crabout](../includes/crabout-md.md)] fluxos de trabalho, consulte o [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
+[!INCLUDE[wfd1](../includes/wfd1-md.md)] é um designer e um depurador visuais para a compilação e gráficos a depuração de aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] em [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] que está hospedada no ambiente de desenvolvimento de [!INCLUDE[vs2010](../includes/vs2010-md.md)] . Permite que você escreve um aplicativo de fluxo de trabalho, uma biblioteca de atividade, ou um serviço composto de [!INCLUDE[indigo1](../includes/indigo1-md.md)] com o uso de modelos e os designers de atividade. [!INCLUDE[crabout](../includes/crabout-md.md)] fluxos de trabalho, consulte o [Windows Workflow Foundation &#91;.NET Framework 4&#93;](https://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Os seguintes são vários novos recursos de design esse conjunto essa nova versão de [!INCLUDE[wfd2](../includes/wfd2-md.md)] independentemente das versões anteriores de [!INCLUDE[wfd2](../includes/wfd2-md.md)]:  
   
@@ -65,8 +65,8 @@ ms.locfileid: "62977002"
  [Desenvolvendo aplicativos de fluxo de trabalho destinados ao .NET 3.0 ou o .NET Framework 3.5](../workflow-designer/developing-workflow-applications-targeting-the-dotnet-3-0-or-dotnet-3-5-framework.md)  
  Contém a orientação sobre como usar o designer herdado que direciona [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
- [O designer que ReHosting &#91;exemplos do WF&#93;](http://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
+ [O designer que ReHosting &#91;exemplos do WF&#93;](https://msdn.microsoft.com/library/b676ad31-5f64-4d84-9a36-b4d7113a2f4d)  
  Este exemplo mostra como criar o layout de WPF para conter o designer.  
   
- [Designers de atividade personalizada](http://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
+ [Designers de atividade personalizada](https://msdn.microsoft.com/library/dcf14dca-ce6d-4278-96ba-062f0a679075)  
  Esta seção contém exemplos de atividade que usam designer personalizadas para exibição no designer de fluxo de trabalho.

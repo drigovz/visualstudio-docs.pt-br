@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f135221564583d2d9726bb9fa153840b1328e96f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701821"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,16 +50,16 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.  
   
  **Arquivos de Aplicativo**  
- Abre a [Caixa de Diálogo de Arquivos do Aplicativo](http://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que é usada para especificar como e o local em que os arquivos individuais são instalados.  
+ Abre a [Caixa de Diálogo de Arquivos do Aplicativo](https://msdn.microsoft.com/b06dff3a-b87a-4caf-996b-7a4acf8137a8), que é usada para especificar como e o local em que os arquivos individuais são instalados.  
   
  **Pré-requisitos**  
  Abre a [Caixa de Diálogo de Pré-Requisitos](../../ide/reference/prerequisites-dialog-box.md), que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.  
   
  **Atualizações**  
- Abre a [Caixa de Diálogo de Atualizações do Aplicativo](http://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
+ Abre a [Caixa de Diálogo de Atualizações do Aplicativo](https://msdn.microsoft.com/8eca8743-8e68-4d04-bfd5-4dc0a9b2934f), que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.  
   
  **Opções**  
- Abre a [Caixa de Diálogo Opções de Publicação](http://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
+ Abre a [Caixa de Diálogo Opções de Publicação](https://msdn.microsoft.com/fd9baa1b-7311-4f9e-8ffb-ae50cf110592), que é usada para especificar mais opções de publicação avançadas.  
   
  **Versão da Publicação**  
  Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.  
@@ -70,7 +70,7 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
  Opcional. Quando essa opção é selecionada (padrão), a parte de **Revisão** do número de versão de publicação é incrementada em uma unidade toda vez que o aplicativo é publicado. Isso faz o aplicativo ser publicado como uma atualização.  
   
  **Assistente de Publicação**  
- Abre o [Assistente de Publicação](http://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
+ Abre o [Assistente de Publicação](https://msdn.microsoft.com/fc6abebd-13d6-48e4-a567-fbc52dad0872). Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.  
   
  **Publicar Agora**  
  Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.  

@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49702a40e081b4836e078a77368148451a29636d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fe8671142aeda4972f9ac218fe536b4a991649a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794364"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704367"
 ---
 # <a name="globalizing-and-localizing-applications"></a>Aplicativos de globalização e localização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Se você pretender distribuir o aplicativo para um público internacional, preci
  [Globalizando seu aplicativo (Aplicativos da Windows Store que usam C#/VB/C++ e XAML)](http://go.microsoft.com/fwlink/?LinkId=258267)  
  Contém tópicos de instruções e diretrizes para ajudá-lo a globalizar e localizar seu aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] criado com o XAML e Visual C#, Visual Basic ou Visual C++.  
   
- [Melhores práticas para o desenvolvimento de aplicativos prontos para o mundo](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Melhores práticas para o desenvolvimento de aplicativos prontos para o mundo](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Fornece informações básicas sobre programação para um público internacional.  
   
- [Visão geral da biblioteca de classes](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
+ [Visão geral da biblioteca de classes](https://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)  
  Apresenta as classes, as interfaces e os tipos de valor que agilizam e otimizam o processo de desenvolvimento e fornecem acesso à funcionalidade do sistema.  
   
  <xref:System.Globalization>  

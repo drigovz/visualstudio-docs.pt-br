@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 01b767e4b2aceeb50ca72ef6852934f4b0502b98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114308"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698759"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desenvolvimento Móvel Multiplataforma no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "60114308"
 
 |**Saiba mais**|
 |--------------------|
-|Escolha se deseja compartilhar o código usando projetos compartilhados, projetos de Biblioteca de Classes Portátil ou ambos.<br /><br /> [Compartilhando código entre plataformas](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog do .NET Framework)<br /><br /> [Opções de compartilhamento de código](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opções de compartilhamento de código com o .NET Framework](http://msdn.microsoft.com/library/dn720832.aspx) (Biblioteca MSDN)|
+|Escolha se deseja compartilhar o código usando projetos compartilhados, projetos de Biblioteca de Classes Portátil ou ambos.<br /><br /> [Compartilhando código entre plataformas](http://blogs.msdn.com/b/dotnet/archive/2014/04/21/sharing-code-across-platforms.aspx) (blog do .NET Framework)<br /><br /> [Opções de compartilhamento de código](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (Xamarin)<br /><br /> [Opções de compartilhamento de código com o .NET Framework](https://msdn.microsoft.com/library/dn720832.aspx) (Biblioteca MSDN)|
 
 ### <a name="WindowsHTML"></a> Ter dispositivos Windows 10 como destino
  ![Dispositivos Windows](../cross-platform/media/windowsdevices.png "WindowsDevices")
@@ -90,7 +90,7 @@ ms.locfileid: "60114308"
 |**Saiba mais**|
 |--------------------|
 |[Saiba mais sobre aplicativos universais do Windows](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx) (Centro de Desenvolvimento do Windows)|
-|[Compilar seu primeiro aplicativo](http://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centro de Desenvolvimento do Windows)|
+|[Compilar seu primeiro aplicativo](https://msdn.microsoft.com/library/windows/apps/dn609832.aspx) (Centro de Desenvolvimento do Windows)|
 |[Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrar aplicativos para a UWP (Plataforma Universal do Windows)](../misc/migrate-apps-to-the-universal-windows-platform-uwp.md)|
 
@@ -171,6 +171,6 @@ ms.locfileid: "60114308"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Adicionar APIs do Office 365 a um projeto do Visual Studio](http://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
-- [Serviços Móveis do Azure](http://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
+- [Adicionar APIs do Office 365 a um projeto do Visual Studio](https://msdn.microsoft.com/library/office/dn605899\(v=office.15\).aspx)
+- [Serviços Móveis do Azure](https://msdn.microsoft.com/library/dn720832\(v=vs.110\).aspx)
 - [Application Insights](/azure/application-insights/app-insights-overview)

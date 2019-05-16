@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584951"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704442"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Introdução à linguagem C++ no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Ao concluir esta explicação passo a passo, você estará familiarizado com vá
 ## <a name="BKMK_Configure"></a> Entrar no Visual Studio
  Quando você iniciar o Visual Studio pela primeira vez, terá a chance de entrar usando uma conta da Microsoft, como do Live ou do Outlook. Entrar permite que suas configurações sejam sincronizadas em todos os seus dispositivos. Para obter mais informações, consulte [Entrando no Visual Studio](../ide/signing-in-to-visual-studio.md)
 
- Figura 1: Visual Studio IDE
+ Figura 1: IDE do Visual Studio
 
  ![IDE com as configurações do Visual C&#43;&#43; aplicadas](../ide/media/c-ide-defaultenvironmentlayout.png "C++IDE_DefaultEnvironmentLayout")
 
@@ -82,7 +82,7 @@ Ao concluir esta explicação passo a passo, você estará familiarizado com vá
 
      A mensagem de erro também aparece na janela **Lista de Erros**. Você pode exibir a janela, na barra de menus, escolhendo **Exibir**, **Lista de Erros**.
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) está incluído no arquivo de cabeçalho \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) está incluído no arquivo de cabeçalho \<iostream\>.
 
 2. Para incluir o cabeçalho iostream, digite o seguinte código após `#include "stdafx.h"`:
 

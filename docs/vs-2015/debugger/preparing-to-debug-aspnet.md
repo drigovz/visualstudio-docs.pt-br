@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0e5eb3173a90478266e1a5a5b7c9eb19243278d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b8ddc642fda143743e312fa1915087d553938a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925831"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696120"
 ---
 # <a name="preparing-to-debug-aspnet"></a>Preparando-se para depurar ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Esta seção descreve como configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  [Pré-requisitos para aplicativos Web de depuração remota](../debugger/prerequistes-for-remote-debugging-web-applications.md)  
  Lista os pré-requisitos para depurar um aplicativo Web em um servidor remoto.  
   
- [Como: Configure o IIS no Windows Server 2003](http://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
+ [Como: Configure o IIS no Windows Server 2003](https://msdn.microsoft.com/23d557c5-ffcb-4fb2-be7c-5901d5f72ea1)  
  Discute as etapas especiais de configuração necessárias para depurar requisitos do sistema para depurar o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] no [!INCLUDE[WinXPSvr](../includes/winxpsvr-md.md)].  
   
  [Como: Depurar um serviço WCF auto-hospedado](../debugger/how-to-debug-a-self-hosted-wcf-service.md)  
@@ -56,4 +56,4 @@ Esta seção descreve como configurar [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
  [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)   
  [Depurando no Visual Studio](../debugger/debugging-in-visual-studio.md)   
- [Configuração de IIS e ASP.NET](http://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)
+ [Configuração de IIS e ASP.NET](https://msdn.microsoft.com/library/47ebf3b5-98de-4d31-a335-57e2ccd974b8)

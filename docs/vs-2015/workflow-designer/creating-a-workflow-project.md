@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976981"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704723"
 ---
 # <a name="creating-a-workflow-project"></a>Criando um fluxo de trabalho Projeto
 Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../includes/indigo1-md.md)] , as atividades personalizados, e designers personalizados de atividade podem ser criados usando modelos de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Esta seção descreve como criar bibliotecas e aplicativos com modelos de projeto disponíveis em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../incl
  Descreve como adicionar atividades adicionais de fluxo de trabalho ou designer e outros itens de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] como atividades de código a um projeto existente.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Criando fluxos de trabalho](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Criando fluxos de trabalho](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)

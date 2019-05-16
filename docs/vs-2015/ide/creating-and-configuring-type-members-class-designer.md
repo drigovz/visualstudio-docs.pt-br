@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701206"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Criando e configurando membros de tipo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "63437600"
 |Módulo (apenas VB)|método, propriedade, campo, evento, construtor, constante|  
   
 > [!NOTE]
-> Torne a declaração de propriedade mais concisa quando os acessadores get e set de uma propriedade não precisarem de lógica adicional usando propriedades autoimplementadas (apenas C#). Para mostrar a assinatura completa, no menu **Diagrama de Classe**, escolha **Modificar o Formato dos Membros**, **Exibir Assinatura Completa**. Para obter mais informações sobre propriedades autoimplementadas, consulte [Propriedades Autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Torne a declaração de propriedade mais concisa quando os acessadores get e set de uma propriedade não precisarem de lógica adicional usando propriedades autoimplementadas (apenas C#). Para mostrar a assinatura completa, no menu **Diagrama de Classe**, escolha **Modificar o Formato dos Membros**, **Exibir Assinatura Completa**. Para obter mais informações sobre propriedades autoimplementadas, consulte [Propriedades Autoimplementadas](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   
@@ -131,7 +131,7 @@ ms.locfileid: "63437600"
      **Observação:** Use também atalhos de teclado para criar membros. Para obter mais informações, consulte [Atalhos de teclado e mouse no Diagrama de Classe e na Janela Detalhes da Classe (Designer de Classe)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Modificando membros de tipo  
- O Designer de Classe permite modificar os membros dos tipos que são exibidos no diagrama. É possível modificar os membros de qualquer tipo exibido em um diagrama de classes que não sejam somente leitura. (Consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Modifique os membros de tipo usando edição in-loco na superfície de design, na janela Propriedades e na janela Detalhes da Classe.  
+ O Designer de Classe permite modificar os membros dos tipos que são exibidos no diagrama. É possível modificar os membros de qualquer tipo exibido em um diagrama de classes que não sejam somente leitura. (Consulte [Exibição de informações somente leitura (Designer de Classe)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Modifique os membros de tipo usando edição in-loco na superfície de design, na janela Propriedades e na janela Detalhes da Classe.  
   
  Todos os membros exibidos na janela Detalhes da Classe representam os membros dos tipos no diagrama de classes. Há quatro tipos de membro: métodos, propriedades, campos e eventos.  
   
@@ -263,7 +263,7 @@ ms.locfileid: "63437600"
   
  Todas as células na janela Detalhes da Classe são editáveis, com algumas exceções:  
   
-- O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
+- O tipo inteiro é somente leitura, quando, por exemplo, residir em um assembly referenciado (consulte [Exibição de informações somente leitura [Designer de Classe]](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).) Quando você seleciona a forma no Designer de Classe, a janela Detalhes da Classe exibe seus detalhes em um estado somente leitura.  
   
 - Para indexadores, o nome é somente leitura e o restante (tipo, modificador, resumo) é editável.  
   

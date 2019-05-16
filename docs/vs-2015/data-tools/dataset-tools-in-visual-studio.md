@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431133"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697914"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "63431133"
 
  Um objeto de conjunto de dados é um objeto na memória que é basicamente um minibanco de dados. Ele contém objetos DataRow, DataTable e DataColumn em que você pode armazenar e modificar dados de um ou mais bancos de dados sem a necessidade de manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações nos seus dados, portanto, as atualizações podem ser controladas e enviadas de volta para o banco de dados quando seu aplicativo se torna reconectado.
 
- Conjuntos de dados e classes relacionadas são definidas no namespace System. Data, na biblioteca de classes do .NET Framework. Você pode criar e modificar conjuntos de dados dinamicamente no código. Para obter mais informações sobre como fazer isso, consulte o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Uma coisa a saber: conjuntos de dados que são feitos por meio de designers de usam objetos do TableAdapter para interagir com o banco de dados, enquanto que conjuntos de dados que são feitos por meio de programação usam DataAdapter objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](http://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
+ Conjuntos de dados e classes relacionadas são definidas no namespace System. Data, na biblioteca de classes do .NET Framework. Você pode criar e modificar conjuntos de dados dinamicamente no código. Para obter mais informações sobre como fazer isso, consulte o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Uma coisa a saber: conjuntos de dados que são feitos por meio de designers de usam objetos do TableAdapter para interagir com o banco de dados, enquanto que conjuntos de dados que são feitos por meio de programação usam DataAdapter objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](https://msdn.microsoft.com/library/cc952ca2-ec19-46ab-9189-15174b52cb74).
 
  Se seu aplicativo precisa apenas ler dados de um banco de dados e não executar atualizações, adiciona ou exclui, você geralmente pode obter um melhor desempenho por meio de um objeto DataReader para recuperar dados em um objeto List genérico ou outro objeto da coleção. Se você estiver exibindo os dados, você pode associar dados a interface do usuário a coleção.
 
@@ -89,7 +89,7 @@ ms.locfileid: "63431133"
 
     - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
-- Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Habilita [LINQ (consulta integrada à linguagem)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Habilita [LINQ (consulta integrada à linguagem)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
 - Use o **fontes de dados** janela associar controles de interface do usuário para o conjunto de dados ou de suas colunas individuais e para especificar quais colunas são editáveis pelo usuário. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 

@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 70fca5b1329dc9091e0672b41de0798d93aba01a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436975"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705177"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -135,7 +135,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 5. No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
   
 > [!NOTE]
-> Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](https://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
   
@@ -726,7 +726,7 @@ End Namespace
 |NC-12|Use o `ExecuteNonQuery` método para `cmdNewCustomer` para executar o `Sales.uspNewCustomer` procedimento armazenado. Esse procedimento armazenado é executado um `INSERT` instrução, não uma consulta.|  
 |NC-13|O `@CustomerID` valor é retornado como um valor de identidade do banco de dados. Porque ele é um número inteiro, você precisará convertê-lo em uma cadeia de caracteres para exibi-lo na **Customer ID** caixa de texto.<br /><br /> -Você declarou `parsedCustomerID` em NC-2.<br />-Store a `@CustomerID` valor em `parsedCustomerID` para uso posterior.<br />-Converter a ID do cliente retornada em uma cadeia de caracteres e inseri-la em `txtCustomerID.Text`.|  
 |NC-14|Para este exemplo, adicione uma cláusula catch (não-qualidade de produção) simples.|  
-|NC-15|Sempre feche uma conexão depois de terminar de usá-la, para que ele possa ser liberado para o pool de conexão. Ver [Conexão do SQL Server Pooling (ADO.NET)](http://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
+|NC-15|Sempre feche uma conexão depois de terminar de usá-la, para que ele possa ser liberado para o pool de conexão. Ver [Conexão do SQL Server Pooling (ADO.NET)](https://msdn.microsoft.com/library/8xx3tyca\(l=en-us,v=VS.110\).aspx).|  
 |NC-16|Defina um método para verificar se um nome de cliente está presente.<br /><br /> -Se a caixa de texto está vazia, exibir uma mensagem e retornar `false`, porque é necessário um nome para criar a conta.<br />-Se a caixa de texto não estiver vazia, retorne `true`.|  
 |NC-17|Adicione código para o manipulador de eventos para o `btnPlaceOrder` botão.|  
 |NC-18|Encapsular a chamada para `isPlaceOrderReady` em torno de `btnPlaceOrder_Click` código de evento, de modo que `uspPlaceNewOrder` não será executado se a entrada necessária não estiver presente.|  

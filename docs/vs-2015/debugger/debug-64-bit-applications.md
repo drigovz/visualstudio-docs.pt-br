@@ -17,12 +17,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d603d2435183581cac92a7c6dae6a4044d8f8fe5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2f67acff26d346b915f6b457fc0887f1d5f2ec3b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087424"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695909"
 ---
 # <a name="debug-64-bit-applications"></a>Depurar aplicativos de 64 bits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,8 +58,8 @@ Você pode depurar um aplicativo de 64 bits que está sendo executado no computa
 - Você está executando em um problema de suspensão ou de desempenho com o Visual Studio. Se o problema ocorrer regularmente, você pode coletar despejos de memória do Visual Studio (devenv.exe) e o processo de trabalho (msvsmon.exe) e enviá-los à Microsoft. 
   
 ## <a name="see-also"></a>Consulte também  
- [Aplicativos de 64 bits](http://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
- [Configurando programas para 64 bits](http://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
+ [Aplicativos de 64 bits](https://msdn.microsoft.com/library/fd4026bc-2c3d-4b27-86dc-ec5e96018181)   
+ [Configurando programas para 64 bits](https://msdn.microsoft.com/library/cb99f72b-8c74-48f4-846a-8921b37b97e9)   
  [Suporte ao IDE do Visual Studio de 64 bits](../ide/visual-studio-ide-64-bit-support.md)   
  [Usando arquivos de despejo](../debugger/using-dump-files.md)   
  [Depuração remota](../debugger/remote-debugging.md)

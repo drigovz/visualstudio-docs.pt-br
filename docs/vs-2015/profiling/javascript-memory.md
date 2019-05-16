@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 816db8b2bc5d78541dc089d75ff155b98231ffd5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435650"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704542"
 ---
 # <a name="javascript-memory"></a>Memória JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -382,15 +382,15 @@ if (performance && performance.mark) {
   
 - Procurar os objetos retidos acidentalmente na memória depois que o usuário navegar para uma nova página, que é uma causa comum de problemas de memória. Por exemplo:  
   
-    - o uso incorreto da função [URL.CreateObjectUrl](http://msdn.microsoft.com/library/windows/apps/hh453196.aspx) pode causar esse problema.  
+    - o uso incorreto da função [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) pode causar esse problema.  
   
-    - Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](http://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
+    - Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
   
     - Você pode precisar remover um ou mais ouvintes de eventos. Para obter mais informações, consulte [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md).  
   
 - Assista à última parte [deste vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o analisador de memória de JavaScript.  
   
-- Leia [Gerenciando a memória em aplicativos da Windows Store](http://msdn.microsoft.com/magazine/jj651575.aspx).  
+- Leia [Gerenciando a memória em aplicativos da Windows Store](https://msdn.microsoft.com/magazine/jj651575.aspx).  
   
 - Considere temporariamente modificar o código para isolar problemas. Por exemplo, é possível:  
   

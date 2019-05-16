@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386002"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699805"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Atualização hierárquica * refere-se ao processo de salvar dados atualizados (de um conjunto de dados com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserção, atualização e exclusão de registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir que os pedidos a ser criado para esse cliente.  Para obter mais informações sobre relacionamentos em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)  
   
- O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-gerado de classe, portanto, não é parte do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Quando você arrasta uma tabela da janela fontes de dados a um formulário do Windows ou a página do WPF, o Visual Studio adiciona uma variável do tipo TableAdapterManager ao formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [visão geral de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+ O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-gerado de classe, portanto, não é parte do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Quando você arrasta uma tabela da janela fontes de dados a um formulário do Windows ou a página do WPF, o Visual Studio adiciona uma variável do tipo TableAdapterManager ao formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [visão geral de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Por padrão, um conjunto de dados trata tabelas relacionadas como "apenas relações" o que significa que ele não impõe restrições de chave estrangeira. Você pode modificar essa configuração em tempo de design usando o Designer de conjunto de dados. Selecione a linha de relação entre duas tabelas para abrir o **relação** caixa de diálogo. As alterações feitas aqui determinam como o TableAdapterManager se comporta quando ele envia as alterações nas tabelas relacionadas no banco de dados.  
   
@@ -55,7 +55,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
   
  Por padrão, as tabelas de dados em um conjunto de dados são geradas com relacionamentos (<xref:System.Data.DataRelation>) que coincidem com os relacionamentos no banco de dados. No entanto, a relação no conjunto de dados não é gerada como uma restrição de chave estrangeira. O <xref:System.Data.DataRelation> está configurado como **relação apenas** sem <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> ou <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> em vigor.  
   
- Por padrão, atualizações em cascata e exclusões em cascata são desativadas, mesmo se a relação de banco de dados é definida com atualizações em cascata e/ou exclusões em cascata ativado. Por exemplo, criando um novo cliente e um novo pedido e, em seguida, tentar salvar os dados podem causar um conflito com as restrições de chave estrangeira são definidas no banco de dados. Para obter mais informações, confira [Como: Configurar restrições de chave estrangeira em um conjunto de dados](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Por padrão, atualizações em cascata e exclusões em cascata são desativadas, mesmo se a relação de banco de dados é definida com atualizações em cascata e/ou exclusões em cascata ativado. Por exemplo, criando um novo cliente e um novo pedido e, em seguida, tentar salvar os dados podem causar um conflito com as restrições de chave estrangeira são definidas no banco de dados. Para obter mais informações, confira [Como: Configurar restrições de chave estrangeira em um conjunto de dados](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Defina a ordem para executar atualizações  
  Definindo a ordem para executar atualizações define a ordem do indivíduo inserções, atualizações e exclusões que é necessárias para salvar todos os dados modificados em todas as tabelas de um conjunto de dados. Quando a atualização hierárquica é habilitada, inserções são executadas em primeiro lugar, em seguida, atualiza e, em seguida, exclui. O `TableAdapterManager` fornece um `UpdateOrder` propriedade que pode ser definida para executar atualizações em primeiro lugar, em seguida, inserções e exclusões.  
@@ -63,7 +63,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
 > [!NOTE]
 > É importante entender que a ordem de atualização é totalmente inclusiva. Ou seja, quando as atualizações são executadas, inserções e exclusões são executadas para todas as tabelas no conjunto de dados.  
   
- Para definir a `UpdateOrder` propriedade, depois de arrastar itens da [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para um formulário, selecione o `TableAdapterManager` na bandeja de componentes e em seguida, defina a `UpdateOrder` propriedade no **propriedades** janela. Para obter mais informações, confira [Como: Definir a ordem ao executar uma atualização hierárquica](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Para definir a `UpdateOrder` propriedade, depois de arrastar itens da [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para um formulário, selecione o `TableAdapterManager` na bandeja de componentes e em seguida, defina a `UpdateOrder` propriedade no **propriedades** janela. Para obter mais informações, confira [Como: Definir a ordem ao executar uma atualização hierárquica](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Criar uma cópia de backup de um conjunto de dados antes de executar uma atualização hierárquica  
  Quando você salva dados (chamando o `TableAdapterManager.UpdateAll()` método), o `TableAdapterManager` tenta atualizar os dados para cada tabela em uma única transação. Se qualquer parte da atualização para qualquer tabela falhar, toda a transação será revertida. Na maioria das situações, a reversão retorna seu aplicativo para seu estado original.  
@@ -120,7 +120,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
 |Método `UpdateAll`|Salva todos os dados de todas as tabelas de dados.|  
 |Propriedade `BackUpDataSetBeforeUpdate`|Determina se é necessário criar uma cópia de backup do conjunto de dados antes de executar o `TableAdapterManager.UpdateAll` método. Valor booliano.|  
 |*tableName* `TableAdapter` propriedade|Representa um `TableAdapter`. Gerado `TableAdapterManager` contém uma propriedade para cada `TableAdapter` que ele gerencia. Por exemplo, um conjunto de dados com uma tabela Customers e Orders é gerado com um `TableAdapterManager` que contém `CustomersTableAdapter` e `OrdersTableAdapter` propriedades.|  
-|Propriedade `UpdateOrder`|Controla a ordem da individual inserção, atualização e comandos de exclusão. Defina isso para um dos valores a `TableAdapterManager.UpdateOrderOption` enumeração.<br /><br /> Por padrão, o `UpdateOrder` é definido como **InsertUpdateDelete**. Isso significa que insere, em seguida, atualiza e exclui, em seguida, são executadas para todas as tabelas no conjunto de dados. Para obter mais informações, confira [Como: Definir a ordem ao executar uma atualização hierárquica](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|Propriedade `UpdateOrder`|Controla a ordem da individual inserção, atualização e comandos de exclusão. Defina isso para um dos valores a `TableAdapterManager.UpdateOrderOption` enumeração.<br /><br /> Por padrão, o `UpdateOrder` é definido como **InsertUpdateDelete**. Isso significa que insere, em seguida, atualiza e exclui, em seguida, são executadas para todas as tabelas no conjunto de dados. Para obter mais informações, confira [Como: Definir a ordem ao executar uma atualização hierárquica](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Consulte também  
  [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

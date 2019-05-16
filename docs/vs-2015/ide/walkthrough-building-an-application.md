@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec0071cb8bf990974c700ce296ebeb86b5ad8c17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a7b3921d9ef11ba01cad6d25f69f3a484e27c929
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045467"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698312"
 ---
 # <a name="walkthrough-building-an-application"></a>Passo a passo: Criando um aplicativo
 
@@ -78,7 +78,7 @@ Você usará a caixa de diálogo **Extensões e Atualizações** para encontrar 
 
 ## <a name="BKMK_CreateBuildConfig"></a> Criar uma configuração de build personalizada
 
-Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Configurações de depuração e versão do projeto](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
+Ao criar uma solução, as configurações de build de depuração e versão e seus destinos de plataforma padrão são definidos para a solução automaticamente. Depois, é possível personalizar essas configurações ou criar suas próprias. As configurações de build especificam o tipo de build. As plataformas de build especificam o sistema operacional que um aplicativo tem como destino para a configuração. Para obter mais informações, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md), [Noções básicas sobre plataformas de build](../ide/understanding-build-platforms.md) e [Configurações de depuração e versão do projeto](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).
 
 É possível alterar ou criar configurações e configurações de plataforma por meio da caixa de diálogo **Configuration Manager**. Neste procedimento, você criará uma configuração de build para testes.
 
@@ -197,9 +197,9 @@ Temporariamente, é possível ocultar determinadas mensagens de aviso durante um
 
     As informações do build incluem a hora de início do build (localizada no início), a ordem em que os arquivos foram processados e o tempo que o processo levou para ser concluído (localizado no final). Essas informações também incluem a sintaxe real do compilador que o Visual Studio executa durante o build.
 
-    Por exemplo, no build do Visual C#, a opção [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) lista o código de aviso 1762, que foi especificado anteriormente neste tópico, juntamente com três outros avisos.
+    Por exemplo, no build do Visual C#, a opção [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) lista o código de aviso 1762, que foi especificado anteriormente neste tópico, juntamente com três outros avisos.
 
-    No build do Visual Basic, [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) não inclui avisos específicos a serem excluídos e, portanto, nenhum aviso é exibido.
+    No build do Visual Basic, [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83) não inclui avisos específicos a serem excluídos e, portanto, nenhum aviso é exibido.
 
    > [!TIP]
    > É possível pesquisar o conteúdo da Janela de **Saída** se você exibir a caixa de diálogo **Localizar** escolhendo as teclas Ctrl+F.
@@ -264,6 +264,6 @@ Para obter mais informações, confira [Como: Alterar o diretório de saída de 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Compilação de um projeto (C++)](http://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
-- [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](http://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
+- [Passo a passo: Compilação de um projeto (C++)](https://msdn.microsoft.com/library/d459bc03-88ef-48d0-9f9a-82d17f0b6a4d)
+- [Visão geral da pré-compilação de projeto de aplicativo Web ASP.NET](https://msdn.microsoft.com/b940abbd-178d-4570-b441-52914fa7b887)
 - [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)

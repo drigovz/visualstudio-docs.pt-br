@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782499"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705759"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Caixa de diálogo Configurações Avançadas (Visualizador de Simultaneidade)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Usando a caixa de diálogo **Configurações Avançadas** da Visualização Simu
  Por padrão, os eventos do CLR são coletados apenas quando um processo gerenciado é atribuído, porque eles normalmente são desnecessários para processos nativos.  Em alguns casos (por exemplo, quando um processo nativo está hospedando o CLR), você terá que coletar eventos do CLR para um processo nativo.  Se esse é o caso, selecione a caixa de seleção **Coletar Para Processos Nativos**.  
   
 ### <a name="disable-rundown-events"></a>Desabilitar eventos de encerramento  
- O CLR gera eventos de dois provedores: tempo de execução e encerramento.  Se você quiser coletar eventos de tempo de execução do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para obter mais informações, consulte [Provedores ETW de CLR](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
+ O CLR gera eventos de dois provedores: tempo de execução e encerramento.  Se você quiser coletar eventos de tempo de execução do CLR mas desejar evitar coletar eventos de encerramento, selecione a caixa de seleção **Desabilitar Eventos de Encerramento**.  Isso reduz o tamanho do arquivo de rastreamento que é gerado por coleta, mas algumas pilhas poderão não ser resolvidas. Para obter mais informações, consulte [Provedores ETW de CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f)  
   
 ### <a name="sample-events"></a>Eventos de amostragem  
  Você pode usar eventos de exemplo para coletar as pilhas de chamadas associadas à execução do thread. Esses eventos são coletados aproximadamente uma vez por milissegundo para threads em execução no processo atual. Se você desabilitar a coleta de eventos de exemplo, o tamanho do rastreamento coletado será reduzido, mas não será possível exibir nenhuma pilha de chamadas associada à execução do thread.  

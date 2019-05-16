@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424574"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695330"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Como: Exibir tipos existentes (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Para ver um tipo existente e seus membros, adicione sua forma a um diagrama de c
    Também é possível exibir tipos no projeto arrastando um ou mais tipos do nó do projeto no Modo de Exibição de Classe para o diagrama de classes.  
   
 > [!TIP]
-> Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**. Para obter mais informações sobre o Modo de Exibição de Classe, consulte [Exibindo classes e seus membros](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Se o Modo de Exibição de Classe não estiver aberto, abra-o no menu **Exibir**. Para obter mais informações sobre o Modo de Exibição de Classe, consulte [Exibindo classes e seus membros](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Para exibir tipos em locais padrão no diagrama, selecione um ou mais tipos no Modo de Exibição de Classe, clique com o botão direito do mouse nos tipos selecionados e escolha **Exibir Diagrama de Classe**.  
   

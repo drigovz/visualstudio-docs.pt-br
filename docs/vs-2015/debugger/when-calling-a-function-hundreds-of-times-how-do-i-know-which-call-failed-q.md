@@ -29,12 +29,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b3cfa5c52b8ddbe53ce127fde60a9b4edfd8ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fba5032860e21bbd323b8e49d5f32ab9b6f90540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925421"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688127"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Durante a chamada de uma função centenas de vezes, como sei qual chamada falhou?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
 ## <a name="see-also"></a>Consulte também  
  [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md)   
- [Configurando pontos de interrupção](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Configurando pontos de interrupção](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Depurando código nativo](../debugger/debugging-native-code.md)

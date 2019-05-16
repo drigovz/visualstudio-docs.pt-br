@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 694b72327d8e059fe12a227afdab79219081ef92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425431"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693409"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento de DTD não seguro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63425431"
  Se você usar instâncias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> inseguras ou referenciar origens de entidade externa, o analisador poderá aceitar a entrada não confiável e divulgar as informações confidenciais para invasores.
 
 ## <a name="rule-description"></a>Descrição da Regra
- Um [definição de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras de um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra procura as propriedades e instâncias onde os dados não confiáveis é aceito para alertar os desenvolvedores sobre o potencial [divulgação de informações](http://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) ameaças, que podem levar à [negação de serviço (DoS)](http://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataques. Essa regra dispara quando:
+ Um [definição de tipo de documento (DTD)](https://msdn.microsoft.com/library/aa468547.aspx) é uma das duas maneiras de um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra procura as propriedades e instâncias onde os dados não confiáveis é aceito para alertar os desenvolvedores sobre o potencial [divulgação de informações](https://msdn.microsoft.com/library/4064c89f-afa6-444a-aa7e-807ef072131c) ameaças, que podem levar à [negação de serviço (DoS)](https://msdn.microsoft.com/library/dfb150f3-d598-4697-a5e6-6779e4f9b600) ataques. Essa regra dispara quando:
 
 - DtdProcessing está habilitada no <xref:System.Xml.XmlReader> instância, que resolve entidades externas de XML usando <xref:System.Xml.XmlUrlResolver>.
 
@@ -59,7 +59,7 @@ ms.locfileid: "63425431"
 
 - Desabilitar o processamento de DTD se você está lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriedade para **verdadeiro** .
 
-- Classe de XmlTextReader tem uma exigência de herança de confiança total. Ver [demandas de herança](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.
+- Classe de XmlTextReader tem uma exigência de herança de confiança total. Ver [demandas de herança](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) para obter mais informações.
 
   .NET 4 e posterior
 

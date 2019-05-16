@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d3624fd8b69a51d3d9de1776bc6d2e7bc61a4c1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696175"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>ALM (Gerenciamento do Ciclo de Vida do Aplicativo) com aplicativos do Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
  As tabelas a seguir identifica como os recursos do Visual Studio ALM se aplicam ou não se aplicam ao trabalhar com o Unity. Consulte a documentação vinculada para obter detalhes sobre os recursos em si.  
   
 ## <a name="agile-tools"></a>Ferramentas agile  
- Link de referência: **[Trabalho](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando o Visual Studio Team Services ou TFS, incluindo o Team Explorer Everywhere)  
+ Link de referência: **[Trabalho](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)**  (usando o Visual Studio Team Services ou TFS, incluindo o Team Explorer Everywhere)  
   
  Comentário Geral: todos os recursos de planejamento e acompanhamento são independentes do tipo de projeto e de linguagens de codificação.  
   
@@ -58,9 +58,9 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
-|[Use o Controle de Versão do Team Foundation](http://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Sim|Projetos do Unity são simplesmente uma coleção de arquivos que podem ser colocados em sistemas de controle de versão como qualquer outro projeto, mas há algumas considerações especiais descritas após esta tabela.|  
-|[Introdução ao Git no Team Services](http://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sim|Consulte as observações após a tabela.|  
-|[Análise de código/melhorar a qualidade do código (referências, alterações sugeridas, etc.)](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Sim||  
+|[Use o Controle de Versão do Team Foundation](https://msdn.microsoft.com/library/1d629052-c65d-4c5d-81eb-eaa4413fe285) ou Visual Studio Team Services|Sim|Projetos do Unity são simplesmente uma coleção de arquivos que podem ser colocados em sistemas de controle de versão como qualquer outro projeto, mas há algumas considerações especiais descritas após esta tabela.|  
+|[Introdução ao Git no Team Services](https://msdn.microsoft.com/library/32f46ecd-1b03-4ef0-a9c4-8a120da2b03f)|Sim|Consulte as observações após a tabela.|  
+|[Análise de código/melhorar a qualidade do código (referências, alterações sugeridas, etc.)](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)|Sim||  
 |[Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md)|Sim||  
 |[Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)|Sim||  
   
@@ -73,18 +73,18 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 3. Ativos binários em um projeto do Unity, como texturas ou arquivos de áudio, podem ocupar uma grande quantidade de armazenamento. Vários sistemas de controle do código-fonte, como Git, armazenam uma cópia única de um arquivo para cada alteração feita, mesmo que a alteração afete apenas uma pequena parte do arquivo. Isso pode fazer o repositório Git ficar inflado. Para resolver isso, os desenvolvedores do Unity geralmente optam por adicionar somente ativos finais ao repositório e usar uma maneira diferente de manter um histórico de trabalho de seus ativos, como OneDrive, DropBox ou git-annex. Essa abordagem funciona porque esses ativos geralmente não precisam ter controle de versão junto com as alterações do código-fonte. Os desenvolvedores normalmente também definem o Modo de Serialização de Ativo para Forçar Texto do editor do projeto para armazenar arquivos de cena no texto, em vez de no formato binário, o que permite mesclagens no controle do código-fonte. Para obter detalhes, consulte [Configurações do Editor](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentação do Unity).  
   
 ## <a name="build"></a>Build  
- Link de referência: **[Compilação](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
+ Link de referência: **[Compilação](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
 |Servidor TFS local|Possível|Projetos do Unity são criados por meio do ambiente do Unity e não por meio do sistema de build do Visual Studio (compilar dentro de Ferramentas do Visual Studio para Unity compilará os scripts, mas não produzirá um executável). É possível [compilar projetos do Unity da linha de comando](http://docs.unity3d.com/Manual/CommandLineArguments.html) (documentação do Unity), de modo que seja possível configurar um processo MSBuild em um servidor TFS para executar os comandos do Unity apropriados, desde que o Unity em si esteja instalado no computador.<br /><br /> O Unity também oferece o [Build de Nuvem Unity](https://build.cloud.unity3d.com/landing/), que monitora um repositório Git ou SVN e executa compilações periódicas. No momento, não funciona com o Controle de Versão do Team Foundation nem Visual Studio Team Services.|  
-|Servidor de build local vinculado ao Visual Studio Team Services|Possível|Dadas as mesmas condições acima, mais possível, ainda, direcionar compilações disparadas por meio do Visual Studio Team Services para uso em um computador TFS local.  Consulte [Servidor de build](http://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obter instruções.|  
+|Servidor de build local vinculado ao Visual Studio Team Services|Possível|Dadas as mesmas condições acima, mais possível, ainda, direcionar compilações disparadas por meio do Visual Studio Team Services para uso em um computador TFS local.  Consulte [Servidor de build](https://msdn.microsoft.com/library/2d258a0a-f178-4e93-9da1-eba61151af3c) para obter instruções.|  
 |Serviço de controlador hospedado do Visual Studio Team Services|Não|Atualmente, não há suporte para compilações do Unity.|  
 |Compilar definições com pré e pós-scripts|Sim|Uma definição de build personalizada que usa a linha de comando do Unity para executar um build também pode ser configurada para scripts de pré e pós-build.|  
 |Integração contínua incluindo check-ins restritos|Sim|Check-ins restritos somente para TFVC, uma vez que Git funciona em um modelo de solicitação pull, em vez de check-ins.|  
   
 ## <a name="testing"></a>Testes  
- Link de referência: **[Testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
+ Link de referência: **[Testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)**  
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
@@ -96,12 +96,12 @@ Desenvolver aplicativos para plataformas modernas envolve muito mais atividades 
 |[Usar automação de interface do usuário para testar código](../test/use-ui-automation-to-test-your-code.md)|Não|Testes de UI codificados dependem de controles legíveis na interface do usuário do aplicativo; aplicativos Unity são gráficos por natureza e, assim, o conteúdo não é legível pelas ferramentas de teste de IU codificado.|  
   
 ## <a name="improve-code-quality"></a>Melhorar a qualidade do código  
- Link de referência: **[Melhorar a qualidade do código](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Link de referência: **[Melhorar a qualidade do código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Recurso|Tem suporte com o Unity|Comentários Adicionais|  
 |-------------|--------------------------|-------------------------|  
 |[Analisando a qualidade do código gerenciado](../code-quality/analyzing-managed-code-quality-by-using-code-analysis.md)|Sim|Pode analisar o código de script C# no Visual Studio.|  
-|[Localizando código duplicado usando detecção de clone de código](http://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sim|Pode analisar o código de script C# no Visual Studio.|  
+|[Localizando código duplicado usando detecção de clone de código](https://msdn.microsoft.com/library/a97cd5a6-5ffa-4104-9627-8e59e513654d)|Sim|Pode analisar o código de script C# no Visual Studio.|  
 |[Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)|Sim|Pode analisar o código de script C# no Visual Studio.|  
 |[Gerenciador de Desempenho](../profiling/performance-explorer.md)|Não|Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (site do Unity).|  
 |[Analisar problemas de memória do .NET Framework](../misc/analyze-dotnet-framework-memory-issues.md)|Não|Ferramentas do Visual Studio não têm ganchos na estrutura Mono (como usado pelo Unity) para a criação de perfil. Use o [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html) (documentação do Unity).|  

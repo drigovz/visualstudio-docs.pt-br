@@ -16,12 +16,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e15bf0b8de7f4228fda36c1e7fda24a239f9b335
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fc45927ad6cc1189ed1d08328b4dd362821cdcb6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097369"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696463"
 ---
 # <a name="mixed-mode-debugging-is-only-supported-when-using-microsoft-net-framework-20-or-30"></a>A depuração de modo misto só é suportada quando o Microsoft .NET Framework 2.0 ou 3.0 é usado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ As versões do Microsoft .NET Framework anteriores à versão 2.0 não fornecem 
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Ver [Configurando a depuração SQL](http://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
+- Ver [Configurando a depuração SQL](https://msdn.microsoft.com/3db09e68-edcc-42de-9c22-4e97cfd55ab3).  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md)

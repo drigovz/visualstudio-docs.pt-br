@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434493"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699742"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 4. Preencher um conjunto de dados com os dados do `Customers` tabela no banco de dados Northwind.  
   
-5. Use o [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) no Visual Studio para acessar diretamente o `Customers` tabela de dados e alterar um registro.  
+5. Use o [Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) no Visual Studio para acessar diretamente o `Customers` tabela de dados e alterar um registro.  
   
 6. Alterar o mesmo registro com um valor diferente, atualize o conjunto de dados e tentam gravar as alterações no banco de dados, o que resulta em um erro de simultaneidade que está sendo gerado.  
   
@@ -55,7 +55,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
 - Acesso ao banco de dados de exemplo Northwind com permissão para executar atualizações.
   
 > [!NOTE]
-> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
  Passo a passo você começa criando um novo aplicativo do Windows.  
@@ -79,7 +79,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
   
 1. Sobre o **dados** menu, escolha **fonte de adicionar novos dados**.  
   
-     O [Assistente de Configuração de Fonte de Dados](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) é aberto.  
+     O [Assistente de Configuração de Fonte de Dados](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) é aberto.  
   
 2. Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**.  
   

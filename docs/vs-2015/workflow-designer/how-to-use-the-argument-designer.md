@@ -12,15 +12,15 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a244379bfebcf58d76ba726d4f6a84bcdfa7d1df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432361"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696270"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Como: Usar o designer de argumento
-Em comparação com versões anteriores de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. [!INCLUDE[crabout](../includes/crabout-md.md)] argumentos, consulte [variáveis e argumentos](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
+Em comparação com versões anteriores de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o designer do argumento facilita permitir que os dados e fluam fora de uma atividade. O designer é acessado clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer contém uma lista de argumentos que aparecem em um formulário tabular e podem ser classificados por cada um dos cabeçalhos de coluna, exceto para o **valor padrão** coluna. Cada argumento contiver um nome, a direção de in/out/in-out/property, o tipo, e o valor padrão de expressão (se houver). O nome e o valor padrão de expressão são campos editáveis de texto, e o tipo e direção são gota- suspensa. [!INCLUDE[crabout](../includes/crabout-md.md)] argumentos, consulte [variáveis e argumentos](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
   
 ### <a name="to-create-a-new-argument"></a>Para criar um novo argumento  
   
@@ -35,4 +35,4 @@ Em comparação com versões anteriores de [!INCLUDE[dnprdnshort](../includes/dn
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o Designer de fluxo de trabalho](../workflow-designer/using-the-workflow-designer.md)   
- [Variables and Arguments](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8) (Variáveis e argumentos)
+ [Variables and Arguments](https://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8) (Variáveis e argumentos)

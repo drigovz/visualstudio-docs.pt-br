@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4282b865bbe85a70e1565e17987600da5c7960e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5f664b1bf2af89d8c3f6e06792039571f4211236
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444045"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692752"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitário de linha de comando Visualizador de Simultaneidade (CVCollectionCmd)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "63444045"
   
 |Opção|Descrição|Parâmetros|Valores de retorno|  
 |------------|-----------------|----------------|-------------------|  
-|Consulta|Retorna se a coleta pode ser iniciada.|Nenhum|0 se a coleta estiver pronta para começar.<br /><br /> 1 se a coleta já estiver em andamento.<br /><br /> 2 se a coleta não estiver em andamento, mas uma ou mais sessões [ETW](http://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessárias já estiverem habilitadas.|  
+|Consulta|Retorna se a coleta pode ser iniciada.|Nenhum|0 se a coleta estiver pronta para começar.<br /><br /> 1 se a coleta já estiver em andamento.<br /><br /> 2 se a coleta não estiver em andamento, mas uma ou mais sessões [ETW](https://msdn.microsoft.com/library/ac99a063-e2d2-40cc-b659-d23c2f783f92) necessárias já estiverem habilitadas.|  
 |Inicializar|Executa o processo especificado na Visualização Simultânea.|O caminho do executável.|0 se a execução foi bem-sucedida.<br /><br /> 1 se a execução falhou porque não foi possível iniciar o aplicativo de destino.<br /><br /> 13 se a execução falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
 |Attach|Começa coletando um rastreamento em todo o sistema. Do contrário, se conecta a um processo, se algum for especificado.|Nenhum.|0 se o anexo for bem-sucedido.<br /><br /> 1 se o anexo falhou porque o processo especificado é inválido ou ambíguo.<br /><br /> 13 se o anexo falhou porque CVCollectionCmd não tem permissões suficientes para gravar no diretório de saída especificado.|  
 |Detach|Para a coleta.|nenhuma.|0 se a desanexação for bem-sucedida.<br /><br /> 1 se a desanexação falhou porque a coleta não está em andamento no momento.<br /><br /> 2 se a desanexação falhou porque a coleta não pode ser parada.|  

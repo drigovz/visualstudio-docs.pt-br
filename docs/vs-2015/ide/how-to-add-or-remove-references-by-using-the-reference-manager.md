@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445679"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701163"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ ms.locfileid: "63445679"
   
 - Um componente que usa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] não é compatível com um projeto que tem [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino.  
   
-     Ao criar um novo aplicativo, alguns projetos têm [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino por padrão. Para obter mais informações, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Ao criar um novo aplicativo, alguns projetos têm [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino por padrão. Para obter mais informações, consulte [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ ms.locfileid: "63445679"
 </PropertyGroup>  
 ```  
   
- Verifique se você marcou a caixa de seleção **Windows** nesse subgrupo. Você deve conseguir usar elementos de Tempo de Execução do Windows. No entanto, você também pode querer adicionar o System.Runtime, no qual o Tempo de Execução do Windows define algumas classes e interfaces padrão, como IEnumerable, usadas nas bibliotecas do Tempo de Execução do Windows. Para obter mais informações sobre como adicionar System.Runtime, consulte [Aplicativos da área de trabalho gerenciados e Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Verifique se você marcou a caixa de seleção **Windows** nesse subgrupo. Você deve conseguir usar elementos de Tempo de Execução do Windows. No entanto, você também pode querer adicionar o System.Runtime, no qual o Tempo de Execução do Windows define algumas classes e interfaces padrão, como IEnumerable, usadas nas bibliotecas do Tempo de Execução do Windows. Para obter mais informações sobre como adicionar System.Runtime, consulte [Aplicativos da área de trabalho gerenciados e Windows Runtime](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Subgrupos Extensões  
  As extensões listam o usuário de SDKs que estendem a plataforma de destino do Windows. Essa guia é exibida somente para projetos de aplicativo [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. Os projetos de área de trabalho não exibirão essa guia porque podem consumir apenas arquivos de primeira parte .winmd.  
@@ -216,5 +216,5 @@ ms.locfileid: "63445679"
  A barra de pesquisa na caixa de diálogo **Gerenciador de Referências** opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contém “Sistema”.  
   
 ## <a name="see-also"></a>Consulte também  
- [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

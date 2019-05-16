@@ -10,19 +10,19 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 59afc6a95e327460602ece8db58f075b483d0e09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d2e7d15f7b479941c3186d8cd694c92f762bbf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62538273"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690989"
 ---
 # <a name="extending-properties"></a>Estendendo propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] **Properties** janela é um navegador de propriedade universal para componentes COM e COM+ e dá suporte a todas [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] produtos. O **propriedades** janela funciona com `ITypeInfo` COM+ metadados para listar as propriedades de tempo de design para o objeto atualmente selecionado em outra janela no ambiente de desenvolvimento integrado (IDE) e informações de tipo.  
   
- O **propriedades** janela, que pode ser aberta pressionando F4 no teclado, ou selecionando **janela propriedades** sobre o **exibição** menu, é usado para exibir e editar Propriedades de configuração independente, o tempo de design e eventos dos objetos selecionados. Propriedades dependentes de configuração, associadas com soluções e projetos, são exibidas na [páginas de propriedade](../../extensibility/internals/property-pages.md). Para obter mais informações, consulte [propriedades do projeto: NIB](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md), e [gerenciamento NIB: Item em projetos](http://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
+ O **propriedades** janela, que pode ser aberta pressionando F4 no teclado, ou selecionando **janela propriedades** sobre o **exibição** menu, é usado para exibir e editar Propriedades de configuração independente, o tempo de design e eventos dos objetos selecionados. Propriedades dependentes de configuração, associadas com soluções e projetos, são exibidas na [páginas de propriedade](../../extensibility/internals/property-pages.md). Para obter mais informações, consulte [propriedades do projeto: NIB](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50), [gerenciar opções de configuração](../../extensibility/internals/managing-configuration-options.md), e [gerenciamento NIB: Item em projetos](https://msdn.microsoft.com/762e606b-7f44-4b66-97a1-e30a703654a0).  
   
  ![Visão geral da janela de propriedades](../../extensibility/internals/media/vspropertieswindow.png "vsPropertiesWindow")  
 Janela de Propriedades  
@@ -70,19 +70,19 @@ Janela de Propriedades
  [Compilando e criando](../../ide/compiling-and-building-in-visual-studio.md)  
  Descreve como você pode usar o [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plataforma para continuamente testar e depurar aplicativos, conforme você criá-los.  
   
- [Propriedades do documento HTML, janela de propriedades](http://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
+ [Propriedades do documento HTML, janela de propriedades](https://msdn.microsoft.com/library/46e3d164-a1a7-42f9-87b0-344e10a37b62)  
  Fornece instruções sobre como editar um documento HTML diretamente na janela de propriedades e fornece uma tabela detalhando os campos em um documento HTML na janela Propriedades.  
   
- [IDispatch](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
+ [IDispatch](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5)  
  Descreve o `IDispatch` interface, que primeiro foi projetado para oferecer suporte à automação, fornecendo um mecanismo de associação tardia para acessar e recuperar informações sobre os métodos e propriedades de um objeto.  
   
- [NIB: Introdução a propriedades dinâmicas (Visual Studio)](http://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
+ [NIB: Introdução a propriedades dinâmicas (Visual Studio)](https://msdn.microsoft.com/f5102027-1431-4195-ae40-9b991de46d3a)  
  Fornece uma visão geral das propriedades dinâmicas que permitem que você configure seu aplicativo para que os valores de propriedade são armazenados em um arquivo de configuração externo em vez de código compilado do aplicativo.  
   
- [NIB: projetos como contêineres](http://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
+ [NIB: projetos como contêineres](https://msdn.microsoft.com/87d40f63-f487-4767-8963-64beec27ba1b)  
  Descreve a função do projeto como um contêiner em uma solução para gerenciar logicamente, compilar e depurar os itens que compõem seu aplicativo.  
   
- [Propriedades do NIB: projeto](http://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
+ [Propriedades do NIB: projeto](https://msdn.microsoft.com/fb126574-24ad-4c96-9b2b-6e1f3879ba50)  
  Descreve como o projeto gerencia configurações que permitem que você controle propriedades que se aplicam a todo o projeto e também propriedades que são limitadas a certas configurações de build do projeto.  
   
  [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)  

@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 14bb73043a3c206f5b7397717a113e479a4163d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63422585"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699682"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
  Os métodos alternativos são:  
   
-- [Extensão do Visual Studio (VSIX)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
+- [Extensão do Visual Studio (VSIX)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832). Isso fornece uma maneira de instalar e desinstalar o processador de diretriz em seu próprio computador e em outros computadores. Normalmente, você pode empacotar outros recursos na mesma VSIX.  
   
 - [VSPackage](../extensibility/internals/vspackages.md). Se você estiver for definir um VSPackage que contém outros recursos além do processador de diretriz, há um método conveniente para registrar o processador de diretriz.  
   
@@ -34,7 +34,7 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   Você precisará usar um desses métodos somente se quiser transformar o modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou no [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Se você usar um host personalizado em seu próprio aplicativo, seu host personalizado será responsável por localizar os processadores de diretrizes para cada diretiva.  
   
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>Implantando um processador de diretriz em uma VSIX  
- Você pode adicionar um processador de diretriz personalizado para um [Visual Studio VSIX (extensão)](http://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
+ Você pode adicionar um processador de diretriz personalizado para um [Visual Studio VSIX (extensão)](https://msdn.microsoft.com/64ff1452-f7d5-42d9-98b8-76f769f76832).  
   
  Você precisará certificar-se de que os dois seguintes itens estejam contidos no arquivo .vsix:  
   

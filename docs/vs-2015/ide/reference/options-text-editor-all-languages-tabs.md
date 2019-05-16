@@ -21,12 +21,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42fb2e9e91698c276e2b14b3acff9068581a1e9b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 6d3a031c8e7837d76b5d2c7ab91c5702f59598a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432049"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693730"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>Opções, Editor de Texto, Todos os Idiomas, Guias
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Cód
  Se forem selecionadas configurações diferentes nas páginas de opções Guias para linguagens de programação específicas, a mensagem “As configurações de recuo para formatos de texto individuais estão em conflito entre si” será exibida para diferentes opções de **Recuo**, e a mensagem “As configurações de guia para formatos de texto individuais estão em conflito entre si” será exibida para diferentes opções de **Guia**. Por exemplo, esse lembrete será exibido se a opção **Recuo inteligente** for selecionada para Visual Basic, mas **Bloquear recuo** estiver selecionado para Visual C++.  
   
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="indenting"></a>Recuar  
  Nenhum  

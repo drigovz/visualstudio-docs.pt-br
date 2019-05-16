@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c7e352dcaccd328b4794389726277701014da7be
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 083c866b10fac257cacf954dfccbcb3875aec53a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702639"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar aos processos em execução com o Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 ## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
  Para anexar a um processo, você deve saber o nome do processo (consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo). Para obter orientação mais completa para aplicativos ASP.NET que foi implantado no IIS, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Para outros aplicativos, você poderá localizar o nome do processo no Gerenciador de tarefas.
 
- Quando você usa o **anexar ao processo** caixa de diálogo, você pode selecionar outro computador que foi configurado para depuração remota. Para obter mais informações, consulte [depuração remota](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Quando você tiver selecionado um computador remoto, poderá exibir uma lista de processos disponíveis que estão em execução no computador e anexá-la a um ou mais processos para depuração.
+ Quando você usa o **anexar ao processo** caixa de diálogo, você pode selecionar outro computador que foi configurado para depuração remota. Para obter mais informações, consulte [depuração remota](https://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Quando você tiver selecionado um computador remoto, poderá exibir uma lista de processos disponíveis que estão em execução no computador e anexá-la a um ou mais processos para depuração.
 
  **Para selecionar um computador remoto:**
 
@@ -106,7 +106,7 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 
 ## <a name="additional-info"></a>Informações adicionais
 
-Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na **local de depuração** barra de ferramentas ou o **processos** janela. Para obter mais informações, confira [Como: Definir o programa atual](http://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
+Você pode estar associado a vários programas enquanto depura, mas somente um programa está ativo no depurador em um determinado momento. Você pode definir o programa ativo na **local de depuração** barra de ferramentas ou o **processos** janela. Para obter mais informações, confira [Como: Definir o programa atual](https://msdn.microsoft.com/7e1d7fa5-0e40-44cf-8c41-d3dba31c969e).
 
 Se você tentar anexar a um processo de propriedade de uma conta de usuário não confiável, aparecerá uma confirmação da caixa de diálogo de aviso de segurança. Para obter mais informações, consulte [aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](/visualstudio/debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user?view=vs-2015).
 
@@ -136,7 +136,7 @@ Para alguns tipos de aplicativo (como aplicativos da Windows Store), não anexe 
 > Para anexar a um aplicativo Universal do Windows que é escrito em JavaScript, você deve primeiro habilitar a depuração para o aplicativo. Ver [anexar o depurador](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md#BKMK_Attach_the_debugger) no Centro de desenvolvimento do Windows.
 
 > [!NOTE]
-> Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente vinculando à opção do vinculador [/ASSEMBLYDEBUG](http://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).
+> Para que o depurador se anexe ao código escrito em C++, o código precisa emitir `DebuggableAttribute`. Você pode adicionar isso ao seu código automaticamente vinculando à opção do vinculador [/ASSEMBLYDEBUG](https://msdn.microsoft.com/library/94443af3-470c-41d7-83a0-7434563d7982).
 
 ## <a name="what-debugger-features-can-i-use"></a>Quais recursos do depurador pode usar?
 

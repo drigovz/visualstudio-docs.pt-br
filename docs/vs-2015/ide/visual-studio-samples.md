@@ -11,12 +11,12 @@ caps.latest.revision: 58
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9161420df2c45aae9ddc0c206a80002a0450710
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: b84292e35fd07a7ab3d47c36a6a6c7a79224c201
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842868"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698138"
 ---
 # <a name="visual-studio-samples"></a>Amostras do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ ms.locfileid: "56842868"
 |Área|Descrição|
 |----------|-----------------|
 |[Exemplos do Centro de Desenvolvedores Windows](http://go.microsoft.com/fwlink/?LinkID=255278)|Mostra como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].|
-|[Exemplos do .NET Framework](http://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Mostra diversos aspectos do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em C# e no Visual Basic.|
+|[Exemplos do .NET Framework](https://msdn.microsoft.com/177055f8-4a1f-43e7-aee6-995c196079b1)|Mostra diversos aspectos do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] em C# e no Visual Basic.|
 |[Exemplos do C#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%23&f%5B0%5D.Text=C%23)|Mostra como usar recursos diferentes de C#.|
 |[Exemplos do Visual Basic](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=VB&f%5B0%5D.Text=VB.NET)|Mostra como usar recursos diferentes de Visual Basic.|
 |[Exemplos do F#](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=F%23&f%5B0%5D.Text=F%23)|Mostra como usar recursos diferentes de F#.|
 |[Exemplos de JavaScript](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=JavaScript)|Mostra como usar recursos diferentes no JavaScript.|
 |[Exemplos de C++](http://code.msdn.microsoft.com/site/search?f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Value=C%2B%2B)|Mostra como usar recursos diferentes no C++.|
 |[Exemplos do DirectX](http://code.msdn.microsoft.com/site/search?query=DirectX&f%5B1%5D.Value=DirectX&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=C%20%20&f%5B0%5D.Type=ProgrammingLanguage&f%5B0%5D.Text=Invalid%20Value&ac=2)|Mostra como usar DirectX.|
-|[Exemplos de Desenvolvimento do Office](http://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Mostra como usar as ferramentas de desenvolvimento do Office no Visual Studio. Para os exemplos mais recentes, consulte [Exemplos de desenvolvedor do MSDN: aprender com o código](http://go.microsoft.com/fwlink/?LinkID=248199).|
+|[Exemplos de Desenvolvimento do Office](https://msdn.microsoft.com/library/9ebc7de2-59dd-414c-888b-7549d3c3543c)|Mostra como usar as ferramentas de desenvolvimento do Office no Visual Studio. Para os exemplos mais recentes, consulte [exemplos de desenvolvedor do MSDN: Aprenda por meio de código](http://go.microsoft.com/fwlink/?LinkID=248199).|
 |[Exemplos de VSSDK](https://aka.ms/vs2015sdksamples)|Mostra como estender o Visual Studio.|
 
 ## <a name="see-also"></a>Consulte também

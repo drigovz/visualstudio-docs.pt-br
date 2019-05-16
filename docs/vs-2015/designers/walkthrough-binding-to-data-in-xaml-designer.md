@@ -11,17 +11,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7a27b2744247bba78575b0387a958bda5990d8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c839350dd37f71d4f3368e077f4d9afe1b2bb2f4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701959"
 ---
 # <a name="walkthrough-binding-to-data-in-xaml-designer"></a>Passo a passo: Associação de dados no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-No Designer XAML, você pode definir as propriedades de associação de dados usando o artboard e a janela Propriedades. O exemplo neste passo a passo mostra como associar dados a um controle. Especificamente, o procedimento mostra como criar uma classe simples de carrinho de compras com [DependencyProperty](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) chamado de `ItemCount` e associar a propriedade `ItemCount` à propriedade **Text** de um controle de [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
+No Designer XAML, você pode definir as propriedades de associação de dados usando o artboard e a janela Propriedades. O exemplo neste passo a passo mostra como associar dados a um controle. Especificamente, o procedimento mostra como criar uma classe simples de carrinho de compras com [DependencyProperty](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.dependencyproperty.aspx) chamado de `ItemCount` e associar a propriedade `ItemCount` à propriedade **Text** de um controle de [TextBlock](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx).  
   
 ### <a name="to-create-a-class-to-use-as-a-data-source"></a>Para criar uma classe para usar como fonte de dados  
   
@@ -66,7 +66,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
     End Class  
     ```  
   
-     Esse código define o valor 0 como a contagem de item padrão usando o objeto [PropertyMetadata](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
+     Esse código define o valor 0 como a contagem de item padrão usando o objeto [PropertyMetadata](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.propertymetadata.aspx).  
   
 5. No menu **Arquivo**, escolha **Compilar**, **Solução de build**.  
   
@@ -74,7 +74,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
   
 1. No Gerenciador de Soluções, abra o menu de atalho de MainWindow.xaml e escolha **Designer de Exibição**.  
   
-2. Na caixa de ferramentas, escolha um controle de [Grade](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) e adicione-o ao formulário.  
+2. Na caixa de ferramentas, escolha um controle de [Grade](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx) e adicione-o ao formulário.  
   
 3. Com `Grid` selecionado, na janela Propriedades, clique no botão **Novo** próximo a propriedade **DataContext**.  
   
@@ -100,4 +100,4 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
   
 ## <a name="see-also"></a>Consulte também  
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)   
- [NIB: Adicionar caixa de diálogo de conversor de valor](http://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)
+ [NIB: Adicionar caixa de diálogo de conversor de valor](https://msdn.microsoft.com/c5f3d110-a541-4b55-8bca-928f77778af8)

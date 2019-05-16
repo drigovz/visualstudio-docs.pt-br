@@ -17,19 +17,19 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: adea3666c3f8b8d78c37b32a1a42f7f8b270369c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: af9777667bef466dc97ea3a3d239f83f766816da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431165"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693962"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Criar tabelas de pesquisa em aplicativos do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O termo *tabela de pesquisa* descreve controles que estão associados às tabelas de dois dados relacionados. Esses controles de pesquisa exibem dados da primeira tabela com base em um valor selecionado na segunda tabela.  
   
- Você pode criar tabelas de pesquisa, arrastando o nó principal de uma tabela pai (da [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) para um controle em seu formulário que já está associado à coluna na tabela filho relacionada.  
+ Você pode criar tabelas de pesquisa, arrastando o nó principal de uma tabela pai (da [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) para um controle em seu formulário que já está associado à coluna na tabela filho relacionada.  
   
  Por exemplo, considere uma tabela de `Orders` em um banco de dados de vendas. Cada registro a `Orders` tabela inclui um `CustomerID`, indicando qual cliente fez o pedido. O `CustomerID` é uma chave estrangeira apontando para um registro de cliente no `Customers` tabela. Nesse cenário, você expandirá a `Orders` na tabela o **fontes de dados** janela e defina o nó principal como **detalhes**. Em seguida, defina a `CustomerID` coluna para usar um <xref:System.Windows.Forms.ComboBox> (ou qualquer outro controle que dá suporte à vinculação de pesquisa) e arraste o `Orders` nó para seu formulário. Por fim, arraste o `Customers` nó para o controle que está associado à coluna relacionada — nesse caso, o <xref:System.Windows.Forms.ComboBox> associado para o `CustomerID` coluna.  
   

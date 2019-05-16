@@ -10,19 +10,19 @@ ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4563cd912295cf447b8268c0b9f54e39d11e921f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 39d2ab449c3623a90dd76729b46a9f353900fc88
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704125"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Mantendo os dados no arquivo de projeto do MSBuild
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Talvez seja necessário um subtipo de projeto manter dados específicos subtipo-no arquivo de projeto para uso posterior. Um subtipo de projeto usa a persistência de arquivo de projeto para atender aos seguintes requisitos:  
   
-1. Manter os dados usados como parte da criação do projeto. (Para obter mais informações sobre o Microsoft Build Engine, consulte [MSBuild](http://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informações relacionadas ao build podem:  
+1. Manter os dados usados como parte da criação do projeto. (Para obter mais informações sobre o Microsoft Build Engine, consulte [MSBuild](https://msdn.microsoft.com/7c49aba1-ee6c-47d8-9de1-6f29a906e20b).) Informações relacionadas ao build podem:  
   
     1. Dados de configuração independente. Ou seja, os dados armazenados em elementos do MSBuild com condições em branco ou ausentes.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431210"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705014"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
  TableAdapters são criados para você quando você executa uma das seguintes ações:  
   
-- Execute o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selecione o **banco de dados** ou **serviço Web** tipo de fonte de dados.  
+- Execute o [Data Source Configuration Wizard](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) e selecione o **banco de dados** ou **serviço Web** tipo de fonte de dados.  
   
-- Arrastar objetos de banco de dados do [Gerenciador de servidores](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) para o **Dataset Designer**.  
+- Arrastar objetos de banco de dados do [Gerenciador de servidores](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) para o **Dataset Designer**.  
   
   Você pode criar um novo TableAdapter e configurá-lo com uma fonte de dados arrastando um TableAdapter da caixa de ferramentas para uma área vazia na **Dataset Designer** superfície.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5dd1834593be7638a56eb31c70677ea9be146b8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: cadd0bded176a44d3eb977382778dd20b68a95a2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112169"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703165"
 ---
 # <a name="xml-editor"></a>Editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,10 +74,10 @@ O editor de XML é baseado no editor de texto do [!INCLUDE[msCoName](../includes
  Descreve os componentes da interface de usuário do editor de XML.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Edição de texto, código e marcação](http://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
+ [Edição de texto, código e marcação](https://msdn.microsoft.com/0d9c00d7-5df4-48a3-b185-2a265f055439)  
  Fornece informações sobre o editor de texto.  
   
- [XML Standards Reference](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) (Referência de padrões XML)  
+ [XML Standards Reference](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) (Referência de padrões XML)  
  Fornece informações sobre as tecnologias XML, incluindo XML, Definição de Tipo de Documento (DTD), linguagem XSD do XML e XSLT.  
   
 ## <a name="see-also"></a>Consulte também  

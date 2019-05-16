@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421138"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703755"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Introdução ao serviço de linguagem e às extensões do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
  É recomendável que você Aprenda sobre os seguintes conceitos e tecnologias antes de escrever suas próprias extensões de editor.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>O Windows Presentation Foundation (WPF) e as extensões do Editor  
- Interface de usuário de editor do Visual Studio (interface do usuário) é implementado usando o Windows Presentation Foundation (WPF). O WPF fornece uma experiência visual e um modelo de programação consistente que separa os aspectos visuais do código da lógica de negócios. Quando você cria as extensões do editor, você pode usar vários elementos do WPF e recursos. Para obter mais informações, consulte [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ Interface de usuário de editor do Visual Studio (interface do usuário) é implementado usando o Windows Presentation Foundation (WPF). O WPF fornece uma experiência visual e um modelo de programação consistente que separa os aspectos visuais do código da lógica de negócios. Quando você cria as extensões do editor, você pode usar vários elementos do WPF e recursos. Para obter mais informações, consulte [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>O Managed Extensibility Framework (MEF) e as extensões do Editor  
  Editor do Visual Studio usa o MEF Managed Extensibility Framework () para gerenciar seus componentes e extensões. O MEF também permite que os desenvolvedores mais facilmente criar extensões para um aplicativo host como o Visual Studio. Nessa estrutura, você pode define uma extensão de acordo com um contrato MEF e exportá-lo como uma parte do componente de MEF. O aplicativo host gerencia as partes do componente, localizá-los, registrando-os e certificando-se de que eles são aplicados ao contexto correto.  

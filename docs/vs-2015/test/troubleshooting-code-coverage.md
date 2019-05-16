@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117402"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705901"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solução de problemas de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
  Verifique se o assembly não é carregado com base no cache de imagem nativa.  
   
  Explicação  
- Por motivos de desempenho, os assemblies de imagem nativa não são analisados. Para obter mais informações, consulte [Ngen.exe (Gerador de Imagens Nativas)](http://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
+ Por motivos de desempenho, os assemblies de imagem nativa não são analisados. Para obter mais informações, consulte [Ngen.exe (Gerador de Imagens Nativas)](https://msdn.microsoft.com/library/44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66).  
   
  Resolução  
  Use uma versão MSIL do assembly. Não o processe com NGen.  

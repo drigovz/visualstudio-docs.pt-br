@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7938940cc1a9e672ee831165ecc55e2897c3a9fe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089075"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697362"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Authenticode * é uma tecnologia da Microsoft que usa criptografia padrão do se
   
  Por outro lado, se você receber um certificado de autoridade de certificação, como um fornecedor de certificado ou um departamento dentro de sua empresa, o certificado oferece mais segurança para seus usuários. Ele não só identifica o Editor de software assinado, mas ele verifica essa identidade examinando-se com a autoridade de certificação que assinou. Se a autoridade de certificação não é a autoridade raiz, Authenticode serão também "encadear" volta para a autoridade de raiz para verificar se a autoridade de certificação está autorizada para emitir certificados. Para maior segurança, você deve usar um certificado emitido por uma autoridade de certificação sempre que possível.  
   
- Para obter mais informações sobre como gerar certificados de autoatendimento, consulte [Makecert.exe (Certificate Creation Tool)](http://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
+ Para obter mais informações sobre como gerar certificados de autoatendimento, consulte [Makecert.exe (Certificate Creation Tool)](https://msdn.microsoft.com/library/b0343f8e-9c41-4852-a85c-f8a0c408cf0d).  
   
 ### <a name="timestamps"></a>Carimbos de data/hora  
  Os certificados usados para assinar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos expiram após um determinado período de tempo, normalmente doze meses. Para remover a necessidade de constantemente assinar novamente aplicativos com novos certificados, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] dá suporte ao carimbo de hora. Quando um aplicativo é assinado com um carimbo de hora, o seu certificado continuará a ser aceito, mesmo após a expiração, contanto que o carimbo de hora é válido. Isso permite que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos com certificados expirados, mas os carimbos de hora válidos, para baixar e executar. Ele também permite que aplicativos instalados com certificados expirados para continuar a baixar e instalar atualizações.  
@@ -75,4 +75,4 @@ Authenticode * é uma tecnologia da Microsoft que usa criptografia padrão do se
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
  [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)   
- [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)
+ [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)

@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6533ae98e110b3813c6dd7f5520e322ce2cf3496
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acfa4a979614269c07969e4c01df4e994195cd64
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433495"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697111"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)
 Siga estas etapas para criar um projeto de biblioteca de fluxo de trabalho do computador de estado usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -50,4 +50,4 @@ Siga estas etapas para criar um projeto de biblioteca de fluxo de trabalho do co
   
 ## <a name="see-also"></a>Consulte também  
  [Criando projetos herdados de fluxo de trabalho](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Fluxos de trabalho do computador de estado](http://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)
+ [Fluxos de trabalho do computador de estado](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)

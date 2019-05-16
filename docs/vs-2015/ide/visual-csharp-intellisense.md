@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6b1af6a2900a579e7490f47f2e8ee4983310e19e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443161"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698203"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,10 +41,10 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
   A Lista de Conclusão no C# também é inteligente o suficiente para filtrar tokens irrelevantes e pré-selecionar um token com base no contexto. Para obter mais informações, consulte [Listas de preenchimento filtradas no C#](../misc/filtered-completion-lists-in-csharp.md) e [Itens pré-selecionados da lista de preenchimento no C#](../misc/pre-selected-completion-list-items-in-csharp.md).  
   
 ### <a name="CodeSnippets"></a> Snippets de código em listas de preenchimento  
- No Visual C#, a lista de preenchimento inclui snippets de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os snippets de código são exibidos na lista de preenchimento como o [Elemento de atalho (snippets de código do IntelliSense)](http://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) do snippet.  Para obter mais informações sobre os snippets de código disponíveis no Visual C# por padrão, consulte [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md).  
+ No Visual C#, a lista de preenchimento inclui snippets de código para ajudá-lo a inserir com facilidade corpos de código predefinidos no programa. Os snippets de código são exibidos na lista de preenchimento como o [Elemento de atalho (snippets de código do IntelliSense)](https://msdn.microsoft.com/052cc97a-5c70-42f8-b398-4c3adf670cfa) do snippet.  Para obter mais informações sobre os snippets de código disponíveis no Visual C# por padrão, consulte [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md).  
   
 ### <a name="Keywords"></a> Palavras-chave de linguagem em listas de preenchimento  
- No Visual C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave de linguagem do C#, consulte [Palavras-chave do C#](http://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
+ No Visual C#, a lista de preenchimento também inclui palavras-chave. Para obter mais informações sobre palavras-chave de linguagem do C#, consulte [Palavras-chave do C#](https://msdn.microsoft.com/library/e929b0f2-4b92-4d37-8060-23d323b098ad).  
   
 ### <a name="ExtensionMethods"></a> Métodos de extensão em listas de preenchimento  
  No Visual C#, a lista de preenchimento inclui Métodos de Extensão que estão no escopo.  
@@ -81,7 +81,7 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
  O IntelliSense lembra os membros selecionados recentemente na caixa pop-up [Listar Membros](../ide/using-intellisense.md) quanto à conclusão automática de nome de objeto. Na próxima vez que você usar a Lista de Membros, os membros usados mais recentemente serão mostrados na parte superior. O histórico dos membros mais usados recentemente é limpo entre cada sessão no IDE.  
   
 ## <a name="override"></a>override  
- Ao digitar [override](http://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) e, em seguida, pressionar a BARRA DE ESPAÇOS, o IntelliSense exibirá todos os membros da classe base válidos que podem ser substituídos em uma caixa de listagem pop-up. Digitar o tipo de retorno do método após `override` solicitará ao IntelliSense para mostrar apenas os métodos que retornam o mesmo tipo. Quando o IntelliSense não conseguir encontrar nenhuma correspondência, ele exibirá todos os membros da classe base.  
+ Ao digitar [override](https://msdn.microsoft.com/library/dd1907a8-acf8-46d3-80b9-c2ca4febada8) e, em seguida, pressionar a BARRA DE ESPAÇOS, o IntelliSense exibirá todos os membros da classe base válidos que podem ser substituídos em uma caixa de listagem pop-up. Digitar o tipo de retorno do método após `override` solicitará ao IntelliSense para mostrar apenas os métodos que retornam o mesmo tipo. Quando o IntelliSense não conseguir encontrar nenhuma correspondência, ele exibirá todos os membros da classe base.  
   
 ## <a name="automatic-code-generation"></a>Geração automática de códigos  
   
@@ -102,7 +102,7 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
  Para ver as opções disponíveis no IDE do Visual Studio, no menu **Editar**, aponte para **IntelliSense** e, em seguida, para **Organizar Usos**. O IDE fornece as seguintes opções para organizar e remover as diretivas `usings`:  
   
 ### <a name="implement-interface"></a>Implementar interface  
- O IntelliSense fornece uma opção para ajudá-lo a implementar uma [interface](http://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) enquanto estiver trabalhando no Editor de Código. Normalmente, para implementar uma interface corretamente, é necessário criar uma declaração de método para cada membro da interface na classe. Usando o IntelliSense, depois de digitar o nome de uma interface em uma declaração de classe, uma marcação inteligente é exibida. A marcação inteligente oferece a opção de implementar a interface automaticamente, usando a nomenclatura explícita ou implícita. Na nomenclatura explícita, as declarações de método levam o nome da interface; na nomenclatura implícita, as declarações de método não indicam a interface à qual pertencem. Um método de interface explicitamente nomeado só pode ser acessado por meio de uma instância de interface, e não por meio de uma instância de classe. Para obter mais informações, consulte [Implementação explícita da interface](http://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
+ O IntelliSense fornece uma opção para ajudá-lo a implementar uma [interface](https://msdn.microsoft.com/library/7da38e81-4f99-4bc5-b07d-c986b687eeba) enquanto estiver trabalhando no Editor de Código. Normalmente, para implementar uma interface corretamente, é necessário criar uma declaração de método para cada membro da interface na classe. Usando o IntelliSense, depois de digitar o nome de uma interface em uma declaração de classe, uma marcação inteligente é exibida. A marcação inteligente oferece a opção de implementar a interface automaticamente, usando a nomenclatura explícita ou implícita. Na nomenclatura explícita, as declarações de método levam o nome da interface; na nomenclatura implícita, as declarações de método não indicam a interface à qual pertencem. Um método de interface explicitamente nomeado só pode ser acessado por meio de uma instância de interface, e não por meio de uma instância de classe. Para obter mais informações, consulte [Implementação explícita da interface](https://msdn.microsoft.com/library/181c901f-0d4c-4f29-97fc-895079617bf2).  
   
  A implementação da interface gerará o número mínimo de stubs de método necessários para atender à interface. Se uma classe base implementar partes da interface, os stubs não serão regenerados.  
   
