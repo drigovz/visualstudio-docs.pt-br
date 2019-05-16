@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 677af3ccbad28ed4eca3db2f98b82ef432b48676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1f2ee066e448c0c039c4288c39aa13a646bc46a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697448"
 ---
 # <a name="measuring-complexity-and-maintainability-of-managed-code"></a>Medindo complexidade e facilidade de manutenção do código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,12 +42,12 @@ O aumento da complexidade de aplicativos de software moderno também aumenta a d
   
  [Trabalhando com os dados de métricas de código](../code-quality/working-with-code-metrics-data.md)  
   
- [Como: Copiar resultados de métricas de código para a área de transferência](http://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
+ [Como: Copiar resultados de métricas de código para a área de transferência](https://msdn.microsoft.com/bce8fa29-e39c-4855-aab9-8346257657c5)  
   
- [Como: Exportar resultados de métricas de código para o Excel](http://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
+ [Como: Exportar resultados de métricas de código para o Excel](https://msdn.microsoft.com/affc08f3-24e5-446d-9076-bf517663e582)  
   
- [Como: Criar um Item de trabalho com base em um resultado](http://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
+ [Como: Criar um Item de trabalho com base em um resultado](https://msdn.microsoft.com/9016393b-b5a3-4d6b-ab6d-f80bafafc0da)  
   
 ## <a name="see-also"></a>Consulte também  
  [Solução de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md)   
- [Executar tarefas comuns de desenvolvimento](http://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)
+ [Executar tarefas comuns de desenvolvimento](https://msdn.microsoft.com/4cd9702a-1e21-4f2d-8e86-e1be4bc74f0b)

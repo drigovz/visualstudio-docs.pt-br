@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 0a14cb7a30d985042df8f46086dcb1432af5afdd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695084"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Passo a passo: Criando, editando e mantendo um teste de IU codificado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -378,7 +378,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 ### <a name="hands-on-lab"></a>Laboratório prático  
  [Laboratório Virtual do MSDN: Introdução à criação de testes de IU codificados com o Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=22508)  
   
-### <a name="faq"></a>Perguntas frequentes  
+### <a name="faq"></a>Perguntas Frequentes  
  [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
  [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
@@ -388,6 +388,6 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
   
 ## <a name="see-also"></a>Consulte também  
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
- [Introdução ao Designer do WPF](http://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
+ [Introdução ao Designer do WPF](https://msdn.microsoft.com/18e61d03-b96a-4058-a166-8ec6b3f6116b)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
  [Editando testes de IU codificados usando o editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md)

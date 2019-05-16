@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437702"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684032"
 ---
 # <a name="using-the-tasks-window"></a>Usando a janela Tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A janela **Tarefas** é semelhante à janela **Threads**, exceto que mostra informações sobre os objetos <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) ou [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx) em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread. Ver [programação assíncrona em JavaScript (aplicativos da Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.  
+A janela **Tarefas** é semelhante à janela **Threads**, exceto que mostra informações sobre os objetos <xref:System.Threading.Tasks.Task?displayProperty=fullName>, [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) ou [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx) em vez de cada thread. Como threads, as tarefas representam as operações assíncronas que podem ser executadas simultaneamente; no entanto, várias tarefas podem ser executadas no mesmo thread. Ver [programação assíncrona em JavaScript (aplicativos da Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) para obter mais informações.  
   
- No código gerenciado, você pode usar a janela **Tarefas** quando trabalha com objetos <xref:System.Threading.Tasks.Task?displayProperty=fullName> ou com as palavras-chave **await** e **async** (**Await** e **Async** no Visual Basic). Para obter mais informações sobre as tarefas no código gerenciado, consulte [programação paralela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ No código gerenciado, você pode usar a janela **Tarefas** quando trabalha com objetos <xref:System.Threading.Tasks.Task?displayProperty=fullName> ou com as palavras-chave **await** e **async** (**Await** e **Async** no Visual Basic). Para obter mais informações sobre as tarefas no código gerenciado, consulte [programação paralela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- No código nativo, você pode usar a janela **Tarefas** quando trabalha com [grupos de tarefas](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos paralelos](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes assíncronas](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) e [tarefas leves](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Para obter mais informações sobre as tarefas no código nativo, consulte [tempo de execução de simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ No código nativo, você pode usar a janela **Tarefas** quando trabalha com [grupos de tarefas](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), [algoritmos paralelos](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), [agentes assíncronas](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) e [tarefas leves](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Para obter mais informações sobre as tarefas no código nativo, consulte [tempo de execução de simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  No JavaScript, você pode usar a janela Tarefas quando estiver trabalhando com a tarefa e, em seguida, codificar.  
   
@@ -51,7 +51,7 @@ A janela **Tarefas** é semelhante à janela **Threads**, exceto que mostra info
 |**Sinalizadores**|Mostra quais tarefas estão sinalizadas e permite sinalizar ou remover a sinalização de uma tarefa.|  
 |**Ícones**|Uma seta amarela indica a tarefa atual. A tarefa atual é a tarefa mais alta no thread atual.<br /><br /> Uma seta branca indica a tarefa de quebra, isto é, a que era atual quando o depurador foi chamado.<br /><br /> O ícone de pausa indica uma tarefa que foi congelada pelo usuário. Você pode congelar e descongelar uma tarefa clicando com o botão direito na lista.|  
 |**ID**|Um número fornecido pelo sistema para a tarefa. No código nativo, esse é o endereço da tarefa.|  
-|**Status**|O estado atual (agendado, ativo, com deadlock, aguardando ou concluído) da tarefa. Uma tarefa agendada é aquela que ainda não foi executada e, portanto, ainda não tem uma pilha de chamadas, um thread alocado ou as informações relacionadas.<br /><br /> Uma tarefa ativa é aquela que estava executando o código antes de quebrar no depurador.<br /><br /> Uma tarefa de espera é bloqueada porque está esperando um evento ser sinalizado, um bloqueio ser liberado ou outra tarefa ser concluída.<br /><br /> Uma tarefa com deadlock é uma tarefa de espera cujo thread está bloqueado com outro thread.<br /><br /> Passe o mouse sobre o **Status** célula para uma tarefa com deadlock ou aguardando obter mais informações sobre o bloco. **Aviso:**  Os relatórios da janela **Tarefas** reporta deadlock apenas uma tarefa bloqueada que usa um primitivo de sincronização com suporte do WCT (Passagem de Cadeia de Espera). Por exemplo, para um deadlock <xref:System.Threading.Tasks.Task> objeto, que usa WCT, o depurador informa **aguardando-com deadlock**. Para uma tarefa com deadlock que é gerenciada pelo Tempo de Execução de Simultaneidade, que não usa WCT, o depurador informa **Aguardando**. Para saber mais sobre o WCT, consulte [Passagem de cadeia de espera](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
+|**Status**|O estado atual (agendado, ativo, com deadlock, aguardando ou concluído) da tarefa. Uma tarefa agendada é aquela que ainda não foi executada e, portanto, ainda não tem uma pilha de chamadas, um thread alocado ou as informações relacionadas.<br /><br /> Uma tarefa ativa é aquela que estava executando o código antes de quebrar no depurador.<br /><br /> Uma tarefa de espera é bloqueada porque está esperando um evento ser sinalizado, um bloqueio ser liberado ou outra tarefa ser concluída.<br /><br /> Uma tarefa com deadlock é uma tarefa de espera cujo thread está bloqueado com outro thread.<br /><br /> Passe o mouse sobre o **Status** célula para uma tarefa com deadlock ou aguardando obter mais informações sobre o bloco. **Aviso:**  Os relatórios da janela **Tarefas** reporta deadlock apenas uma tarefa bloqueada que usa um primitivo de sincronização com suporte do WCT (Passagem de Cadeia de Espera). Por exemplo, para um deadlock <xref:System.Threading.Tasks.Task> objeto, que usa WCT, o depurador informa **aguardando-com deadlock**. Para uma tarefa com deadlock que é gerenciada pelo Tempo de Execução de Simultaneidade, que não usa WCT, o depurador informa **Aguardando**. Para saber mais sobre o WCT, consulte [Passagem de cadeia de espera](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx).|  
 |**Hora de início**|A hora em que a tarefa se tornou ativa.|  
 |**Duração**|O número de segundos que a tarefa esteve ativa.|  
 |**Tempo de Conclusão**|A hora em que a tarefa foi concluída.|  
@@ -61,7 +61,7 @@ A janela **Tarefas** é semelhante à janela **Threads**, exceto que mostra info
 |**Atribuição de thread**|O nome e a ID do thread no qual a tarefa está em execução.|  
 |**Status de retorno**|O status da tarefa quando foi concluída. Os valores de status de retorno são **sucesso**, **cancelado**, e **erro**.|  
 |**Domínio do aplicativo**|Para código gerenciado, o domínio de aplicativo no qual a tarefa está em execução.|  
-|**task_group**|Para o código nativo, o endereço do objeto [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) que agendou a tarefa. Para agentes assíncronos e tarefas leves, essa coluna é definida como 0.|  
+|**task_group**|Para o código nativo, o endereço do objeto [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) que agendou a tarefa. Para agentes assíncronos e tarefas leves, essa coluna é definida como 0.|  
 |Processo|A ID do processo no qual a tarefa está em execução.|  
 |Estado assíncrono|Para código gerenciado, o status da tarefa. Por padrão, essa coluna está ocultada. Para exibir esta coluna, abra o menu de contexto para um dos cabeçalhos de coluna. Escolha **Colunas**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ A janela **Tarefas** é semelhante à janela **Threads**, exceto que mostra info
 ## <a name="see-also"></a>Consulte também  
  [Noções básicas do depurador](../debugger/debugger-basics.md)   
  [Depurando código gerenciado](../debugger/debugging-managed-code.md)   
- [Programação paralela](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Tempo de Execução de Simultaneidade](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programação paralela](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Tempo de Execução de Simultaneidade](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Usando a janela Pilhas Paralelas](../debugger/using-the-parallel-stacks-window.md)   
  [Passo a passo: Como depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)

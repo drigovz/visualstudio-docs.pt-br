@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e22a606c720f7d6b3304f6afb297ed76390f7ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92ab4afc410f08690d54488cc12d4d7be1ffb41d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558392"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694801"
 ---
 # <a name="working-with-a-conceptual-model-wcf-data-services"></a>Trabalhando com um modelo conceitual (WCF Data Services)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,8 +34,8 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como: Executar consultas de serviço de dados](http://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplicativo.|  
-|[Como: Resultados de consulta do projeto](http://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados.|  
+|[Como: Executar consultas de serviço de dados](https://msdn.microsoft.com/library/62997821-e0c6-4c4d-9fb7-1273fb5e5d18)|Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aplicativo.|  
+|[Como: Resultados de consulta do projeto](https://msdn.microsoft.com/library/474ac625-8770-43ba-8320-d3315ea9530f)|Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados.|  
   
  Quando você usa um modelo conceitual, você pode definir o tipo de dados é válido no idioma que corresponde a seu domínio. Você pode definir dados válidos no modelo, ou você pode adicionar validação para operações que podem ser executadas em um serviço de dados ou de entidade.  
   
@@ -43,15 +43,15 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como: Interceptar mensagens de serviço de dados](http://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Mostra como adicionar validação a uma operação de serviço de dados.|  
+|[Como: Interceptar mensagens de serviço de dados](https://msdn.microsoft.com/library/24b9df1b-b54b-4795-a033-edf333675de6)|Mostra como adicionar validação a uma operação de serviço de dados.|  
   
  Os tópicos a seguir mostram como criar, atualizar e excluir dados, executando operações em entidades.  
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como: Adicionar, modificar e excluir entidades](http://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Mostra como criar, atualizar e excluir dados de entidade em um serviço de dados.|  
-|[Como: Definir relações entre entidades](http://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Mostra como criar ou alterar as relações em um serviço de dados.|  
+|[Como: Adicionar, modificar e excluir entidades](https://msdn.microsoft.com/library/a00f8933-b232-4445-95ba-adc634f055d8)|Mostra como criar, atualizar e excluir dados de entidade em um serviço de dados.|  
+|[Como: Definir relações entre entidades](https://msdn.microsoft.com/library/cc255524-1534-4fae-b83c-250933d5a72b)|Mostra como criar ou alterar as relações em um serviço de dados.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   
- [Querying the Data Service](http://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0) (Consultando o serviço de dados)
+ [Querying the Data Service](https://msdn.microsoft.com/library/823e9444-27aa-4f1f-be8e-0486d67f54c0) (Consultando o serviço de dados)

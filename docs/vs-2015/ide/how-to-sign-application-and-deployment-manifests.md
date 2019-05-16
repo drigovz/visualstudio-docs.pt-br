@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435188"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685433"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
   
  A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados em .exe. Para obter mais informações, consulte a seção “Gerando manifestos não assinados” deste documento.  
   
- Para obter informações sobre como criar arquivos de chave, veja [Como: criar um par de chaves pública/privada](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Para obter informações sobre como criar arquivos de chave, veja [Como: criar um par de chaves pública/privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte apenas a arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão .pfx. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.  
@@ -109,7 +109,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 3. Publique o aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Assemblies de nomes fortes](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Como: Criar um par de chaves pública / privada](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblies de nomes fortes](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Como: Criar um par de chaves pública / privada](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Página Assinatura, Designer de Projeto](../ide/reference/signing-page-project-designer.md)   
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)

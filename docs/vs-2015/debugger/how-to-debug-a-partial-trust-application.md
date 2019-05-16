@@ -18,19 +18,19 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 030fef750cc1e0f0932de32fca1a0ffef56bc8f3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437313"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704480"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Como: Depurar um aplicativo de confiança parcial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se a aplicativos do Windows e do console.  
   
- [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md) torna mais fácil implantar aplicativos de confiança parcial que aproveitam [Code Access Security](http://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar o acesso a recursos em um computador.  
+ [Implantação e segurança do ClickOnce](../deployment/clickonce-security-and-deployment.md) torna mais fácil implantar aplicativos de confiança parcial que aproveitam [Code Access Security](https://msdn.microsoft.com/library/859af632-c80d-4736-8d6f-1e01b09ce127) para limitar o acesso a recursos em um computador.  
   
  Depurar um aplicativo de confiança parcial pode ser um desafio, porque os aplicativos de confiança parcial têm permissões de segurança diferentes (e, portanto, comportam-se diferente) dependendo de onde são instalados. Se for instalado da Internet, um aplicativo de confiança parcial terá algumas permissões. Se for instalado de uma intranet local, terá mais permissões e, se for instalado do computador local, terá permissões completas. Você também pode ter zonas personalizados, com permissões personalizadas. Você pode precisar depurar um aplicativo de confiança parcial em algumas ou todas essas condições. Felizmente, o Visual Studio facilita isso também.  
   

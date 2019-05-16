@@ -14,12 +14,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38a12f851bb99eb553856556608aaf029c91c40d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a11658e8cfe96da9c56b7cc1a63839510ed3c829
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429230"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65679147"
 ---
 # <a name="targeting-a-specific-net-framework-version"></a>Direcionamento de uma versão específica do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ No Visual Studio, é possível especificar a versão ou o perfil do .NET Framewo
  Fornece detalhes sobre como especificar um [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] específico para o projeto do Visual Basic, Visual C# ou Visual F#.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [.NET Framework Multi-Targeting para projetos Web do ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
+ [.NET Framework Multi-Targeting para projetos Web do ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)  
  Explica como usar essa versão do Visual Studio para desenvolver aplicativos Web executados em versões anteriores do .NET Framework.  
   
  [Página Aplicativo, Designer de Projeto (C#)](../ide/reference/application-page-project-designer-csharp.md)  
@@ -45,5 +45,5 @@ No Visual Studio, é possível especificar a versão ou o perfil do .NET Framewo
  [Página de Aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)  
  Descreve o controle **Estrutura de Destino** no Designer de Projeto para projetos do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
- [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
+ [Como: Modificar a estrutura de destino e o conjunto de ferramentas da plataforma](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)  
  Descreve como alterar as configurações de projetos do Visual C++ para ter diferentes versões do .NET Framework como destino e usar diferentes conjuntos de ferramentas da plataforma.

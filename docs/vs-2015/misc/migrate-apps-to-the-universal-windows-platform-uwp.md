@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6827d1b2b1a85d94e8ad8d5f88c505aebc3abb93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 86bc76b9b71c7b73a8d299aab41cb6e2eb37680d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001247"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686661"
 ---
 # <a name="migrate-apps-to-the-universal-windows-platform-uwp"></a>Migrar aplicativos para a UWP (Plataforma Universal do Windows)
 Verifique as alterações manuais necessárias em seus arquivos de projeto existente para aplicativos da Windows Store 8.1, aplicativos Windows Phone 8.1 ou aplicativos do Universal Windows criados com o Visual Studio 2015 RC, para que eles podem ser usados com o Visual Studio 2015 RTM. (Se você tiver um aplicativo universal do Windows 8.1 com um projeto de aplicativo do Windows e o projeto do Windows Phone, você precisará seguir as etapas para migrar cada projeto.)  
@@ -29,7 +29,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 - [As alterações necessárias para projetos de teste de unidade existentes para aplicativos Universal Windows criados com o Visual Studio 2015 RC](#MigrateUnitTest).  
   
-  Se você não quiser fazer todas essas alterações, saiba como [seus aplicativos existentes da porta](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) em um novo projeto do Windows Universal.  
+  Se você não quiser fazer todas essas alterações, saiba como [seus aplicativos existentes da porta](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) em um novo projeto do Windows Universal.  
   
 ## <a name="MigrateCSharp"></a> Migrar seus C# /VB aplicativos do Windows Store 8.1 ou Windows Phone 8.1 para usar a plataforma Universal do Windows  
   
@@ -110,7 +110,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
     6. Adicionar um \<EnableDotNetNativeCompatibleProfile > elemento e defina seu valor como: **verdadeiro**.  
   
-    7. A escala do ativo padrão para aplicativos Universal Windows é 200. Se seu projeto inclui ativos não dimensionados em 200, você precisará adicionar um \<UapDefaultAssetScale > elemento com o valor da escala de seus ativos para essa PropertyGroup. Saiba mais sobre [ativos e as escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    7. A escala do ativo padrão para aplicativos Universal Windows é 200. Se seu projeto inclui ativos não dimensionados em 200, você precisará adicionar um \<UapDefaultAssetScale > elemento com o valor da escala de seus ativos para essa PropertyGroup. Saiba mais sobre [ativos e as escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
          Agora seu \<PropertyGroup > elemento deve ser semelhante a este exemplo:  
   
@@ -272,7 +272,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
     4. Adicionar um \<EnableDotNetNativeCompatibleProfile > elemento e defina seu valor como: true.  
   
-    5. A escala do ativo padrão para aplicativos Universal Windows é 200. Se seu projeto inclui ativos não dimensionados em 200, você precisará adicionar um \<UapDefaultAssetScale > elemento com o valor da escala de seus ativos para essa PropertyGroup. Saiba mais sobre [ativos e as escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    5. A escala do ativo padrão para aplicativos Universal Windows é 200. Se seu projeto inclui ativos não dimensionados em 200, você precisará adicionar um \<UapDefaultAssetScale > elemento com o valor da escala de seus ativos para essa PropertyGroup. Saiba mais sobre [ativos e as escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
     6. Para Windows Phone projetos somente, altere o valor de \<ApplicationType > do Windows Phone para Windows Store.  
   
@@ -651,7 +651,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
 4. Localizar o \<PropertyGroup > elemento que contém o \<TargetPlatformVersion > e \<TargetPlatformMinVersion > elementos. Alterar o valor existente do \<TargetPlatformVersion > e \<TargetPlatformMinVersion > elementos para ser a mesma versão da plataforma Universal do Windows que você instalou.  
   
-    A escala do ativo padrão para aplicativos Universal Windows é 200. Projetos criados com ativos do Visual Studio 2015 RC incluídos dimensionados em 100, você precisará adicionar um \<UapDefaultAssetScale > elemento com um valor de 100 para este PropertyGroup. Saiba mais sobre [ativos e as escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+    A escala do ativo padrão para aplicativos Universal Windows é 200. Projetos criados com ativos do Visual Studio 2015 RC incluídos dimensionados em 100, você precisará adicionar um \<UapDefaultAssetScale > elemento com um valor de 100 para este PropertyGroup. Saiba mais sobre [ativos e as escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
 5. Se você tiver adicionado todas as referências a UWP SDKs de extensão (por exemplo: o Windows Mobile SDK), você precisará atualizar a versão do SDK. Por exemplo, isso \<SDKReference > elemento:  
   
@@ -761,7 +761,7 @@ Verifique as alterações manuais necessárias em seus arquivos de projeto exist
   
      Adicionar um \<EnableDotNetNativeCompatibleProfile > elemento e defina seu valor como true se o elemento não existir.  
   
-     A escala do ativo padrão para aplicativos Universal Windows é 200. Projetos criados com ativos do Visual Studio 2015 RC incluídos dimensionados em 100, você precisará adicionar um \<UapDefaultAssetScale > elemento com um valor de 100 para este PropertyGroup. Saiba mais sobre [ativos e as escalas](http://msdn.microsoft.com/library/jj679352.aspx).  
+     A escala do ativo padrão para aplicativos Universal Windows é 200. Projetos criados com ativos do Visual Studio 2015 RC incluídos dimensionados em 100, você precisará adicionar um \<UapDefaultAssetScale > elemento com um valor de 100 para este PropertyGroup. Saiba mais sobre [ativos e as escalas](https://msdn.microsoft.com/library/jj679352.aspx).  
   
      Portanto, esse \<PropertyGroup > elemento agora será semelhante a esta:  
   

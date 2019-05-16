@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 25e38f6db5caa6b797774463552cd17fd07bdf5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c20bfce7dd7fe3b2e116b982408afa813ebab25
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927092"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704190"
 ---
 # <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Parâmetros padrão não devem ser usados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58927092"
 ## <a name="rule-description"></a>Descrição da Regra
  Métodos que usam parâmetros padrão são permitidos sob o Common Language Specification (CLS); No entanto, a CLS permite que os compiladores para ignorar os valores que são atribuídos a esses parâmetros. Código que é escrito para os compiladores que ignoram valores de parâmetro padrão deve fornecer explicitamente os argumentos para cada parâmetro padrão. Para manter o comportamento desejado em todas as linguagens de programação, os métodos que usam parâmetros padrão devem ser substituídos com sobrecargas de método que forneçam os parâmetros padrão.
 
- O compilador ignora os valores de parâmetros padrão para a extensão gerenciadas para C++ quando acessa o código gerenciado. O compilador do Visual Basic dá suporte a métodos com parâmetros padrão que usam o [opcional](http://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) palavra-chave.
+ O compilador ignora os valores de parâmetros padrão para a extensão gerenciadas para C++ quando acessa o código gerenciado. O compilador do Visual Basic dá suporte a métodos com parâmetros padrão que usam o [opcional](https://msdn.microsoft.com/library/4571ce88-a539-4115-b230-54eb277c6aa7) palavra-chave.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, substitua o método que usa os parâmetros padrão com sobrecargas de método que fornecem os parâmetros padrão.
@@ -55,4 +55,4 @@ ms.locfileid: "58927092"
  [CA1025: Substituir argumentos repetitivos por matriz de parâmetros](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Consulte também
- [Componentes de independência de linguagem e componentes independentes da linguagem](http://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)
+ [Componentes de independência de linguagem e componentes independentes da linguagem](https://msdn.microsoft.com/library/4f0b77d0-4844-464f-af73-6e06bedeafc6)

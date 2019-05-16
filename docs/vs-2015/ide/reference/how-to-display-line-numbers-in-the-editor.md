@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33dfcd989a71785918cf4d121e2a2624654a5101
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a2d6d3bd1d0a27a12194005422910236ea0fd02c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405663"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704407"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "63405663"
 Você pode exibir ou ocultar a numeração de linhas em seu código.  
   
 > [!NOTE]
-> Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Dependendo das configurações ativas, as caixas de diálogos e os comandos de menu exibidos podem ser diferentes dos descritos aqui. Para alterar as configurações, abra **Ferramentas / Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="display-line-numbers-in-code"></a>Exibir números de linhas no código  
  Os números de linha não são adicionados ao seu código, eles são apenas para referência. Se desejar que os números de linha sejam impressos, na caixa de diálogo **Imprimir**, marque a caixa de seleção **Incluir números de linha**.  

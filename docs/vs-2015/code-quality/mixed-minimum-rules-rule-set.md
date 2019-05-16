@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7c690389b5abc3b6e37aed1629ae5a640a5d99a7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653067"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682198"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                              [C6504](../code-quality/c6504.md)                              |                                              Nulo em não ponteiro                                              |
 |                              [C6505](../code-quality/c6505.md)                              |                                               MustCheck em nulo                                               |
 |                              [C6506](../code-quality/c6506.md)                              |                                      Tamanho do buffer em não ponteiro ou matriz                                      |
-|        [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
+|        [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
 |                              [C6508](../code-quality/c6508.md)                              |                                           Acesso para gravação na constante                                            |
 |                              [C6509](../code-quality/c6509.md)                              |                                          Retorno usado em pré condição                                          |
 |                              [C6510](../code-quality/c6510.md)                              |                                        Terminação nula em não ponteiro                                         |
@@ -70,11 +70,11 @@ A Microsoft misto mínimo regras enfocam os problemas mais críticos em seus pro
 |                              [C6516](../code-quality/c6516.md)                              |                                          Nenhuma propriedade no atributo                                           |
 |                              [C6517](../code-quality/c6517.md)                              |                                       Tamanho válido em buffer não legível                                       |
 |                              [C6518](../code-quality/c6518.md)                              |                                     Tamanho gravável em buffer não gravável                                      |
-|        [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
+|        [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)        |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
 |                              [C6522](../code-quality/c6522.md)                              |                                           Tipo de cadeia de caracteres de tamanho inválido                                            |
-|        [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
+|        [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)        |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                              [C6525](../code-quality/c6525.md)                              |                                   Local inatingível da cadeia de caracteres inválido                                    |
-|        [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
+|        [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)        |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
 |                              [C6527](../code-quality/c6527.md)                              |              Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
 |                              [C6530](../code-quality/c6530.md)                              |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                              [C6540](../code-quality/c6540.md)                              | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |

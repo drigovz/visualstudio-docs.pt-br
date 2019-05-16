@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437679"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693585"
 ---
 # <a name="view-dom-event-listeners"></a>Exibir os ouvintes de eventos do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
      O **eventos** guia mostra os ouvintes de eventos para qualquer elemento que você escolher na lista de hierarquia.
 
 ### <a name="Tips"></a> Dicas para resolver problemas com ouvintes de eventos
- Em alguns cenários de aplicativo, ouvintes de eventos devem ser removidos explicitamente usando [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Use o **eventos** guia no Explorador do DOM para testar se os ouvintes de evento foram removidos dos elementos DOM durante a execução de código. Aqui estão algumas dicas para ajudar a resolver esses tipos de problemas:
+ Em alguns cenários de aplicativo, ouvintes de eventos devem ser removidos explicitamente usando [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Use o **eventos** guia no Explorador do DOM para testar se os ouvintes de evento foram removidos dos elementos DOM durante a execução de código. Aqui estão algumas dicas para ajudar a resolver esses tipos de problemas:
 
-- Para aplicativos que usam o modelo de navegação de página única implementado no Visual Studio [modelos de projeto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), não é geralmente necessário remover os ouvintes de evento registrados para objetos, como elementos DOM, que fazem parte de uma página. Neste cenário, um elemento DOM e seus ouvintes de evento associados têm a mesma duração e podem ser coletados como lixo.
+- Para aplicativos que usam o modelo de navegação de página única implementado no Visual Studio [modelos de projeto](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), não é geralmente necessário remover os ouvintes de evento registrados para objetos, como elementos DOM, que fazem parte de uma página. Neste cenário, um elemento DOM e seus ouvintes de evento associados têm a mesma duração e podem ser coletados como lixo.
 
 - Se a duração do elemento DOM ou objeto for diferente do ouvinte de evento associado, pode ser necessário chamar o método `removeEventListener`. Por exemplo, se você usar o evento `window.onresize`, pode ser necessário remover o ouvinte de evento se você navegar para fora da página em que manipula o evento.
 

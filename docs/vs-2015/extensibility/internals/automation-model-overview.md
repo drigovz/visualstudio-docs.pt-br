@@ -11,12 +11,12 @@ ms.assetid: 12b6d6db-0d22-4aaa-aa7d-1365f759b7b0
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0eb1d870b3858255fe6b4a0cf9a255d9d1df8c59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e17164976062ec916074c6210be6ae42e8ea1d03
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924556"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699498"
 ---
 # <a name="automation-model-overview"></a>Visão geral do modelo de automação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ O modelo de automação consiste em um conjunto de objetos em relação ao qual 
  ![Gráfico de objeto de automação do Visual Studio](../../extensibility/internals/media/vsvisualstudioautomationobjectchart.gif "vsVisualStudioAutomationObjectChart")  
 Objetos de automação do Visual Studio  
   
- Para obter mais informações, consulte [estendendo o ambiente do Visual Studio](http://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
+ Para obter mais informações, consulte [estendendo o ambiente do Visual Studio](https://msdn.microsoft.com/library/4173a963-7ac7-4966-9bb7-e28a9d9f6792).  
   
  O ambiente fornece um modelo para diferentes áreas funcionais. Por exemplo, há um modelo de código para vários elementos que você pode encontrar no código. Há um modelo de documento para vários elementos de documento. Uma área, área de projeto, é de interesse específico a provedores de VSPackage. Você provavelmente desejará contribuir para o modelo de automação da mesma forma como seus novos tipos de projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] contribuem para o modelo de automação. Se o processo é descrito na [fornecer automação a VSPackages](../../extensibility/internals/providing-automation-for-vspackages.md).  
   
@@ -43,7 +43,7 @@ Objetos de automação do Visual Studio
   
 - Build  
   
-  Para obter mais informações sobre a automação, consulte [automação e extensibilidade do Visual Studio](http://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Este documento e os documentos que ela fornece links para ajudá-lo a tomar decisões sobre como você deve fornecer automação para o VSPackage.  
+  Para obter mais informações sobre a automação, consulte [automação e extensibilidade do Visual Studio](https://msdn.microsoft.com/library/f71a2253-3e68-4e5e-9a18-edbba816caf6). Este documento e os documentos que ela fornece links para ajudá-lo a tomar decisões sobre como você deve fornecer automação para o VSPackage.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Criar um suplemento](http://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)
+ [Como: Criar um suplemento](https://msdn.microsoft.com/library/50be56d2-e3a5-4cd2-8569-2a0666b268ce)

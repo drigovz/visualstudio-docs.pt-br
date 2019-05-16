@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbb123b952287de0b519bfdd40b0d9a851a0b81f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403567"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686885"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,11 +297,11 @@ Certifique-se de que seu sistema de software atende às necessidades dos usuári
   
  Consulte:  
   
-- [Definir o processo de compilação](http://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
+- [Definir o processo de compilação](https://msdn.microsoft.com/library/61593e10-d24b-492f-b19a-af4d85abea6b)  
   
-- [Usar um processo de compilação de check-in para validar alterações](http://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
+- [Usar um processo de compilação de check-in para validar alterações](https://msdn.microsoft.com/library/9cfc8b9c-1023-40fd-8ab5-1b1bd9c172ec)  
   
-- [Personalizar o modelo de processo de compilação](http://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
+- [Personalizar o modelo de processo de compilação](https://msdn.microsoft.com/library/b94c58f2-ae6f-4245-bedb-82cd114f6039)  
   
 ### <a name="GeneralTips"></a> Dicas gerais para criar e usar modelos  
   
@@ -336,13 +336,13 @@ Certifique-se de que seu sistema de software atende às necessidades dos usuári
   
   Consulte:  
   
-- [Acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
+- [Acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503)  
   
 - [Vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md)  
   
-- [Gráficos, painéis e relatórios para o Visual Studio ALM](http://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
+- [Gráficos, painéis e relatórios para o Visual Studio ALM](https://msdn.microsoft.com/library/1f28ba6c-c5e5-46d3-9209-ede24ae78e48)  
   
-- [Criar sua lista de pendências e tarefas usando o Project](http://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
+- [Criar sua lista de pendências e tarefas usando o Project](https://msdn.microsoft.com/library/be5cef4f-755f-4ffe-8dd7-876d1e02c330)  
   
 ### <a name="TestValidateCheckInCode"></a> Testando, validando e fazendo check-In de código  
  Conforme as equipes concluem cada tarefa, eles verificam o código no controle de versão do Team Foundation e recebem lembretes do Team Foundation Server, caso eles esqueçam. Antes que o Team Foundation Server aceite seus check-ins, as equipes de executar testes de unidade e validação de camada para verificar o código em relação a seus casos de teste e o design. Usar o Team Foundation Server para executar compilações, testes de unidade automatizados e validação de camada regularmente. Isso ajuda a garantir que o código atenda aos seguintes critérios:  
@@ -359,13 +359,13 @@ Certifique-se de que seu sistema de software atende às necessidades dos usuári
   
   Consulte:  
   
-- [Testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
+- [Testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)  
   
 - [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)  
   
 - [Usar controle de versão](http://go.microsoft.com/fwlink/?LinkID=525605)  
   
-- [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
+- [Compilar o aplicativo](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)  
   
 ## <a name="UpdatingSystem"></a> Atualizando a sistema usando a visualização e modelagem  
  A Lucerne e Dinner Now devem integrar seus sistemas de pagamento. As seções a seguir mostram que os diagramas de modelagem no Visual Studio o ajudam a realizar essa tarefa:  
@@ -888,6 +888,6 @@ Certifique-se de que seu sistema de software atende às necessidades dos usuári
  [Visualizar código](../modeling/visualize-code.md)   
  [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)   
  [Usar modelos no processo de desenvolvimento](../modeling/use-models-in-your-development-process.md)   
- [Usar modelos no desenvolvimento Agile](http://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
+ [Usar modelos no desenvolvimento Agile](https://msdn.microsoft.com/592ac27c-3d3e-454a-9c38-b76658ed137f)   
  [Validar o sistema durante o desenvolvimento](../modeling/validate-your-system-during-development.md)   
  [Estender modelos e diagramas UML](../modeling/extend-uml-models-and-diagrams.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c5b8108f0751cbb8848a70b99f23dd3f204ccff2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6405a35068b7be7ac93eb91f4d9100e6a840b0bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925136"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702374"
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,11 +60,11 @@ O depurador do Visual Studio fornece um ambiente de depuração abrangente para 
 ## <a name="debugging-ajax-script-applications"></a>Depurando aplicativos de script AJAX  
  Os aplicativos da Web com AJAX ativado fazem uso intenso de códigos de script e desafios especiais de depuração de representação. Para obter mais informações sobre técnicas de depuração AJAX, consulte  
   
- [Visão geral de aplicativos Ajax de rastreamento e depuração](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
+ [Visão geral de aplicativos Ajax de rastreamento e depuração](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375).  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos ASP.NET e AJAX](../debugger/debugging-aspnet-and-ajax-applications.md)   
  [Limitações na depuração de script](../debugger/limitations-on-script-debugging.md)   
- [Janelas de Variáveis](http://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
+ [Janelas de Variáveis](https://msdn.microsoft.com/library/ce0a67f6-2502-4b7a-ba45-cc32f8aeba3e)   
  [Janela Imediata](../ide/reference/immediate-window.md)   
- [Visão geral de aplicativos Ajax de rastreamento e depuração](http://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)
+ [Visão geral de aplicativos Ajax de rastreamento e depuração](https://msdn.microsoft.com/library/92684ea0-7bb4-4a34-9203-3aa6394ce375)

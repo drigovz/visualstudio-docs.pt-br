@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440929"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680298"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gerenciar modelos e diagramas com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluindo mapas de código (arquivos. dgml), usando [usar o controle de versão do Team Foundation ou Git](http://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ambos com local Team Foundation Server ou na nuvem com o Visual Studio Team Services.  
+Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluindo mapas de código (arquivos. dgml), usando [usar o controle de versão do Team Foundation ou Git](https://msdn.microsoft.com/library/33267cee-fe5f-4aa3-b2cd-6d22ceace314); ambos com local Team Foundation Server ou na nuvem com o Visual Studio Team Services.  
   
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
@@ -77,7 +77,7 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
   
 - Alterando as propriedades de relacionamentos que cruzem os limites dos pacotes.  
   
-- Para saber mais sobre os bloqueios de Check-Out, consulte [Check out e editar arquivos](http://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
+- Para saber mais sobre os bloqueios de Check-Out, consulte [Check out e editar arquivos](https://msdn.microsoft.com/library/eb404d63-c448-4994-9416-3e6d50ec554a).  
   
 ##### <a name="to-move-a-diagram-file-in-or-out-of-a-project-folder"></a>Para mover um arquivo de diagrama para dentro ou fora de uma pasta de projeto  
   

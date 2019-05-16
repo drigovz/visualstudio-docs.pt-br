@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4985196feb8c2ddd5996c51210e39f9e503e953f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412305"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675166"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 </asp:ScriptManager>
 ```
 
- O IntelliSense também oferece suporte a arquivos de script que são inseridos como recursos em um assembly nos aplicativos Web AJAX ASP.NET. Para saber mais sobre recursos de script inseridos, confira [Passo a passo: Como inserir um arquivo JavaScript como recurso em um assembly](http://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
+ O IntelliSense também oferece suporte a arquivos de script que são inseridos como recursos em um assembly nos aplicativos Web AJAX ASP.NET. Para saber mais sobre recursos de script inseridos, confira [Passo a passo: Como inserir um arquivo JavaScript como recurso em um assembly](https://msdn.microsoft.com/library/d8cb78cd-95a9-4dc6-92df-391866817e89).
 
 #### <a name="ReferenceDirectives"></a> Diretivas de referência
  Uma diretiva `reference` permite que o [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] estabeleça uma relação entre o script que você está editando no momento e outros scripts. A diretiva `reference` permite incluir um arquivo de script no contexto de script do arquivo de script atual. Isso permite que o IntelliSense faça referência a funções, tipos e campos definidos externamente enquanto você codifica.
@@ -284,5 +284,5 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 - [Preenchimento de declaração para identificadores](../ide/statement-completion-for-identifiers.md)
 - [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md)
 - [Sobre o modelo de objeto DHTML](http://go.microsoft.com/fwlink/?LinkID=92344)
-- [Listar Membros](http://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
+- [Listar Membros](https://msdn.microsoft.com/1b9cc469-9cd4-4d42-9999-1f9479635ff8)
 - [Atributo SRC &#124; Propriedade src](http://go.microsoft.com/fwlink/?LinkId=92345)

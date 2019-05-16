@@ -13,12 +13,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acf49209927d2d27d717c797d0abd729795a2c20
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f98d2209ca3a2869e4be69a9c46faa5c4755a06
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699907"
 ---
 # <a name="advanced-compiler-settings-dialog-box-visual-basic"></a>Caixa de diálogo Configurações de Compilador Avançadas (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
   
 2. No menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Compilar**.  
   
-3. Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
+3. Na [Página Compilar, Designer de Projeto (Visual Basic)](../../ide/reference/compile-page-project-designer-visual-basic.md), selecione a **Configuração** e a **Plataforma**. Nas configurações de build simplificadas, as listas **Configuração** e **Plataforma** não são exibidas. Para obter mais informações, consulte [Configurações de projeto de depuração e versão](https://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e).  
   
 4. Clique em **Opções Avançadas de Compilação**.  
   
@@ -55,7 +55,7 @@ Use a caixa de diálogo **Configurações Avançadas do Compilador** do **Design
  Selecione **Nenhum**, **Completo** ou **Somente pdb** na lista. **Nenhum** especifica que nenhuma informação de depuração deve ser gerada. **Total** especifica que informações completas de depuração devem ser geradas e **Somente pdb** especifica que apenas as informações de depuração de PDB devem ser geradas. Por padrão, essa opção é definida como **Completo**.  
   
 ## <a name="compilation-constants"></a>Constantes de Compilação  
- Constantes de compilação condicional têm um efeito semelhante ao de usar uma diretiva de pré-processador [#Const](http://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) em um arquivo de origem, exceto que constantes definidas são públicas e aplicam-se a todos os arquivos no projeto. Você pode usar constantes de compilação condicionais junto com a diretiva [#If... Then... #Else](http://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) para compilar os arquivos de origem condicionalmente. Consulte [Compilação Condicional](http://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
+ Constantes de compilação condicional têm um efeito semelhante ao de usar uma diretiva de pré-processador [#Const](https://msdn.microsoft.com/library/707669e5-23f9-4f17-8622-a0d534429386) em um arquivo de origem, exceto que constantes definidas são públicas e aplicam-se a todos os arquivos no projeto. Você pode usar constantes de compilação condicionais junto com a diretiva [#If... Then... #Else](https://msdn.microsoft.com/library/10bba104-e3fd-451b-b672-faa472530502) para compilar os arquivos de origem condicionalmente. Consulte [Compilação Condicional](https://msdn.microsoft.com/library/9c35e55e-7eee-44fb-a586-dad1f1884848).  
   
  **Definir a constante DEBUG**  
  Por padrão, essa caixa de seleção é marcada, especificando que uma constante DEBUG deve ser definida.  

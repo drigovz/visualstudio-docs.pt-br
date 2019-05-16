@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85fb8c1349590858391051b8df395c8e6a781a75
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c17bbb0989df9bf186652335cee6f77b047854fb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669778"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689481"
 ---
 # <a name="setting-language-specific-editor-options"></a>Definindo opções do Editor específicas do idioma
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,10 +44,10 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferece uma variedade de opç�
  [Opções, Editor de Texto, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md)  
  Descreve configurações que especificam como a lista de preenchimento do IntelliSense se comporta quando você trabalha no código C# e J#.  
   
- [Validação, CSS, Editor de Texto, caixa de diálogo Opções](http://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
+ [Validação, CSS, Editor de Texto, caixa de diálogo Opções](https://msdn.microsoft.com/library/5afe0808-16bb-420f-b620-7ca1a4d9f2cc)  
  Descreve configurações de preenchimento de declaração e correção de erro para CSS (folhas de estilos em cascata).  
   
- [Caixa de diálogo Validação, HTML, Editor de Texto, Opções](http://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
+ [Caixa de diálogo Validação, HTML, Editor de Texto, Opções](https://msdn.microsoft.com/library/9c24ecfe-263e-4bf1-88de-d01be3992863)  
  Descreve configurações para verificação de sintaxe HTML com base no esquema selecionado.  
   
  [Opções, Editor de Texto, XAML, Formatação](../../ide/reference/options-text-editor-xaml-formatting.md)  
@@ -57,5 +57,5 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferece uma variedade de opç�
  [Personalizando o editor](../../ide/customizing-the-editor.md)  
  Fornece links para tópicos que explicam os muitos aspectos do editor para o qual você pode definir preferências.  
   
- [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
+ [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)  
  Fornece links para tópicos que explicam como personalizar suas configurações, associações de tecla e outros recursos do IDE (ambiente de desenvolvimento integrado).

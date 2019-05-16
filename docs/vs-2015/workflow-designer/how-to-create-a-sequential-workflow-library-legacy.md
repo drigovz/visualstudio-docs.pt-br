@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d44d1b83776cdd69c659ebed0bc2a1caaa53e123
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6563c209dfd86a74c2d51fc9179948c63e7cf4b2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433514"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686686"
 ---
 # <a name="how-to-create-a-sequential-workflow-library-legacy"></a>Como: Criar uma biblioteca de fluxo de trabalho sequencial (herdado)
 Siga estas etapas para criar um projeto sequencial de biblioteca de fluxo de trabalho usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -51,4 +51,4 @@ Siga estas etapas para criar um projeto sequencial de biblioteca de fluxo de tra
   
 ## <a name="see-also"></a>Consulte também  
  [Criando projetos herdados de fluxo de trabalho](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Estilos de criação de fluxo de trabalho](http://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)
+ [Estilos de criação de fluxo de trabalho](https://msdn.microsoft.com/aacf4ec6-da05-4974-958a-974769dda739)

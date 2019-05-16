@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: afc89dc2b70191524830926d108a5de81fbbb647
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.openlocfilehash: 9c1fabdb202d51b85eb2983360bdfd02757f7649
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922829"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699354"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ typedef enum CV_CFL_LANG { 
  Aplicativo é um módulo POGO otimizado gerado com a ferramenta CVTPGD.  
   
  CV_CFL_CSHARP  
- Idioma do aplicativo é C#.  
+ Idioma do aplicativo é c#.  
   
  CV_CFL_VB  
  É o idioma do aplicativo Visual Basic.  
@@ -96,7 +96,7 @@ typedef enum CV_CFL_LANG { 
  Idioma do aplicativo é Jscript.  
   
  CV_CFL_MSIL  
- Idioma do aplicativo é um desconhecido MSIL Microsoft Intermediate Language (), possivelmente um resultado do uso de [/LTCG (geração de código Link-time)](http://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) alternar.  
+ Idioma do aplicativo é um desconhecido MSIL Microsoft Intermediate Language (), possivelmente um resultado do uso de [/LTCG (geração de código Link-time)](https://msdn.microsoft.com/library/788c6f52-fdb8-40c2-90af-4026ea2cf2e2) alternar.  
   
  CV_CFL_HLSL  
  Idioma do aplicativo é a linguagem de sombreador de nível alto.  

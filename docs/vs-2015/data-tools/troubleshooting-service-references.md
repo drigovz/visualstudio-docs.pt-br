@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056713"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700231"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionando problemas de referências de serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 
 3. Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
 
-4. Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: Criar soluções multiprojeto](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 

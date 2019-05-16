@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7a2640d39c90dc36a3960d230df46ac75bdbce6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7a80587062442688551d07128a2cec49a712adf6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092416"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691458"
 ---
 # <a name="debugging-preparation-aspnet-web-applications"></a>Preparação de depuração: Aplicativos Web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,11 +43,11 @@ O [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]modelo de site da Web cria um 
   
 1. Defina um ou mais pontos de interrupção em suas funções e manipuladores de eventos.  
   
-     Para obter mais informações, consulte [pontos de interrupção e Tracepoints](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
+     Para obter mais informações, consulte [pontos de interrupção e Tracepoints](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
 2. Quando um ponto de interrupção é atingido, insira o código na função. Observe a execução do código até isolar o problema.  
   
-     Para obter mais informações, consulte [Stepping](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) e [Depurando aplicativos da Web e Script](../debugger/debugging-web-applications-and-script.md).  
+     Para obter mais informações, consulte [Stepping](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) e [Depurando aplicativos da Web e Script](../debugger/debugging-web-applications-and-script.md).  
   
 ## <a name="changing-default-configurations"></a>Alterar Configurações padrão  
  Se você quiser alterar a depuração padrão e liberar as configurações criadas pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], poderá fazer isso. Para obter mais informações, confira [Como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md).  

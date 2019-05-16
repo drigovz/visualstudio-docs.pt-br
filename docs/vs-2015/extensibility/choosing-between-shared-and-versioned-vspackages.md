@@ -12,12 +12,12 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f6df66c3a6f34e6137850c68785d0eaadbb13a26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c46e42a00e21e6896a0571e788801d24d3978db1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088139"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685338"
 ---
 # <a name="choosing-between-shared-and-versioned-vspackages"></a>Escolhendo entre VSPackages compartilhados e com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Diferentes versões do Visual Studio podem coexistir no mesmo computador. Os VSP
   
     - Programar o VSPackage para adaptar-se para a versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no qual ele está sendo executado. Em seguida, se as consultas para os serviços mais recentes falhar, o VSPackage pode oferecer outros serviços que têm suporte em versões mais antigas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Registre o VSPackage adequadamente. Para obter mais informações, consulte [o VSPackage](../extensibility/internals/vspackage-registration.md) e [gerenciado o VSPackage](http://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
+- Registre o VSPackage adequadamente. Para obter mais informações, consulte [o VSPackage](../extensibility/internals/vspackage-registration.md) e [gerenciado o VSPackage](https://msdn.microsoft.com/f69e0ea3-6a92-4639-8ca9-4c9c210e58a1).  
   
 - Registre extensões de arquivo adequadamente. Para obter mais informações, consulte [registrando extensões de nome de arquivo para implantações lado a lado](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).  
   

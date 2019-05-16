@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e0f962440d722a881d7a8de4ed2e7c9a9c7755f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b912708e7cc2f811e9cd18a24096ef66e128c375
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795904"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690065"
 ---
 # <a name="working-with-shaders"></a>Trabalhando com sombreadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Você pode usar o Designer de Sombreadores baseado em gráfico em [!INCLUDE[vspr
 ## <a name="dgsl-documents"></a>Documentos DGSL  
  O Designer de Sombreadores salva sombreadores no formato de linguagem de sombreador gráfico direcionado (DGSL), que é um formato XML que se baseia em direcionadas gráfico Markup Language (DGML). Você pode aplicar os sombreadores DGSL diretamente em modelos 3D no Editor de Modelos. No entanto, antes de usar um sombreador DGSL em seu aplicativo, você deve exportá-lo em um formato que compreende DirectX — por exemplo, HLSL.  
   
- Como DGSL é compatível com DGML, você pode usar ferramentas projetadas para analisar documentos DGML para analisar seus sombreadores DGSL. Para saber mais sobre DGML, veja [Noções básicas sobre DGML (Directed Graph Markup Language)](http://msdn.microsoft.com/library/ee842619.aspx).  
+ Como DGSL é compatível com DGML, você pode usar ferramentas projetadas para analisar documentos DGML para analisar seus sombreadores DGSL. Para saber mais sobre DGML, veja [Noções básicas sobre DGML (Directed Graph Markup Language)](https://msdn.microsoft.com/library/ee842619.aspx).  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

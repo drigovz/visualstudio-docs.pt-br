@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071766"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684289"
 ---
 # <a name="using-dump-files"></a>Usando arquivos de despejo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 - O Visual Studio pode depurar arquivos de despejo de aplicativos nativos em dispositivos ARM. O Visual Studio também pode depurar arquivos de despejo de aplicativos gerenciados em dispositivos ARM, mas somente no depurador nativo.  
   
-- Para depurar [modo de kernel](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) despejar arquivos no Visual Studio 2013, baixe a [Windows 8.1 versão de depuração de ferramentas para Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Ver [depuração de Kernel no Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Para depurar [modo de kernel](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) despejar arquivos no Visual Studio 2013, baixe a [Windows 8.1 versão de depuração de ferramentas para Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Ver [depuração de Kernel no Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - O Visual Studio não pode depurar arquivos de despejo salvos no formato de despejo mais antigo conhecido como um [despejo completo do modo de usuário](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Observe que um despejo completo do modo de usuário não é igual a um despejo com heap.  
   
-- Para depurar com o [SOS. dll (extensão de depuração SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) no Visual Studio, você deve instalar a depuração de ferramentas para Windows que faz parte do Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Baixe kits, bits e ferramentas](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Para depurar com o [SOS. dll (extensão de depuração SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) no Visual Studio, você deve instalar a depuração de ferramentas para Windows que faz parte do Windows Driver Kit (WDK). Consulte [Windows 8.1 Preview: Baixe kits, bits e ferramentas](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Arquivos de despejo com ou sem heaps; criar um arquivo de despejo; abrir um arqu
   
 - Com o [depuração Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md) habilitado, você pode anexar o depurador a um processo travado que está em execução fora do depurador e, em seguida, salve um arquivo de despejo. Consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Você também pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o **Procdump** utilitário de linha de comando do [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de falha do processo com base em disparadores ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) neste tópico para obter mais informações sobre como usar outras ferramentas para criar arquivos de despejo.  
+  Você também pode criar arquivos de despejo com qualquer programa que ofereça suporte ao formato de minidespejo do Windows. Por exemplo, o **Procdump** utilitário de linha de comando do [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) pode criar arquivos de despejo de falha do processo com base em disparadores ou sob demanda. Ver [requisitos e limitações](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) neste tópico para obter mais informações sobre como usar outras ferramentas para criar arquivos de despejo.  
   
   ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   

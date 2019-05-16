@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e37d17cbe67bd1e4e64e306831f38996a7f93c80
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437050"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697965"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,7 +58,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
 
 #### <a name="to-create-a-control-that-is-bound-to-a-single-field-of-data"></a>Para criar um controle que seja associado a único campo de dados
 
-1. No **fontes de dados** janela, expanda um item que representa uma tabela ou um objeto. Localize o item filho que representa a coluna ou a propriedade a que deseja se associar. Para obter um exemplo visual, consulte [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. No **fontes de dados** janela, expanda um item que representa uma tabela ou um objeto. Localize o item filho que representa a coluna ou a propriedade a que deseja se associar. Para obter um exemplo visual, consulte [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcionalmente, selecione o controle a ser criado. Cada item na **fontes de dados** janela tem um controle padrão que é criado quando você arrasta o item para o designer. O controle padrão depende do tipo de dados subjacentes ao item.
 
@@ -73,7 +73,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
 
 #### <a name="to-create-a-control-that-is-bound-to-multiple-fields-of-data"></a>Para criar um controle que seja associado a vários campos de dados.
 
-1. No **fontes de dados** janela, selecione um item que representa uma tabela ou objeto. Para obter um exemplo visual, consulte [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. No **fontes de dados** janela, selecione um item que representa uma tabela ou objeto. Para obter um exemplo visual, consulte [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Opcionalmente, selecione o controle a ser criado. Por padrão, cada item de **fontes de dados** que representa uma tabela de dados ou objeto de janela é definida para criar um <xref:System.Windows.Controls.DataGrid> (se seu projeto tem como alvo o .NET Framework 4) ou <xref:System.Windows.Controls.ListView> (para versões anteriores do .NET Framework).
 
@@ -91,7 +91,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
 
 #### <a name="to-create-a-set-of-controls-that-are-bound-to-multiple-fields-of-data"></a>Criação de um conjunto de controles que está associado a vários campos de dados
 
-1. No **fontes de dados** janela, selecione um item que representa uma tabela ou objeto. Para obter um exemplo visual, consulte [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
+1. No **fontes de dados** janela, selecione um item que representa uma tabela ou objeto. Para obter um exemplo visual, consulte [janela fontes de dados](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992).
 
 2. Clique na seta suspensa ao lado do item e selecione **detalhes**.
 

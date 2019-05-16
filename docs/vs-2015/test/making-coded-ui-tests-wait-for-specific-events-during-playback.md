@@ -8,12 +8,12 @@ ms.assetid: 41981ad6-673e-492e-b739-9863b14157b1
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 036c0ced92fd4da85989883ab5725455ed172db4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8c0158370ceb101e8c6934f92e2dd3e8689254c5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416293"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686312"
 ---
 # <a name="making-coded-ui-tests-wait-for-specific-events-during-playback"></a>Fazendo testes de IU codificado aguardar eventos específicos durante a reprodução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Na reprodução de um teste de IU codificado, é possível instruir o teste a ag
  Visual Studio Enterprise  
   
 > [!TIP]
-> Você também pode adicionar atrasos antes de ações usando o Editor de teste de IU codificado. Para obter mais informações, confira [Como: Inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
+> Você também pode adicionar atrasos antes de ações usando o Editor de teste de IU codificado. Para obter mais informações, confira [Como: Inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0).  
   
  **Métodos UITestControl.WaitForControlXXX()**  
   
@@ -117,4 +117,4 @@ UITestControl.WaitForCondition<UITestControl[]>(new UITestControl[] { statusText
  [Passo a passo: Criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)   
  [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)   
  [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)   
- [Como: Inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](http://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)
+ [Como: Inserir um atraso antes de uma ação de interface do usuário usando o Editor de teste de IU codificado](https://msdn.microsoft.com/library/509f8ef7-e105-4049-b11b-d64549e055b0)

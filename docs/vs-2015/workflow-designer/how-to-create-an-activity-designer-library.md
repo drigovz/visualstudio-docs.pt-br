@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a51b4cdb67590b908bc406b78c04ddf0c5aa3e2f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444640"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694552"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Como: Criar uma biblioteca do designer de atividade
 Designers personalizados de atividade permitem que você crie uma interface de usuário para uma atividade padrão ou personalizado. Você controla a complexidade da interface do usuário e tem a capacidade de criar mais de um designer de atividade para uma atividade. Este cenário permite que você crie os designers que são personalizados para mais audiências.  
@@ -40,7 +40,7 @@ Designers personalizados de atividade permitem que você crie uma interface de u
   
 8. O modelo de projeto cria uma definição de designer de atividade em XAML e o arquivo de código de implementação no código-fonte. [!INCLUDE[wfd1](../includes/wfd1-md.md)] abre e exibe a tela para o designer de atividade.  
   
-9. Arraste [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla a partir de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.  Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um Designer personalizado de atividade](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
+9. Arraste [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla a partir de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.  Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um Designer personalizado de atividade](https://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
     > Designers personalizados de atividade podem ser usados para atividades personalizadas, bem como para padrão [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]atividades.  

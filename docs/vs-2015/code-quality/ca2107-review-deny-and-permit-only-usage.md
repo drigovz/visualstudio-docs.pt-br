@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.openlocfilehash: d6ba41720ff97ffe9a085774477b2a9ee6426dbe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082146"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687397"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Examinar uso de deny e permit only
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ ms.locfileid: "60082146"
  Um método contém uma verificação de segurança que especifica a ação de segurança PermitOnly ou Deny.
 
 ## <a name="rule-description"></a>Descrição da Regra
- O [usando o método PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ações de segurança devem ser usadas apenas por aqueles que tenham um conhecimento avançado de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
+ O [usando o método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649) e <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName> ações de segurança devem ser usadas apenas por aqueles que tenham um conhecimento avançado de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] segurança. O código que usa essas ações de segurança deve passar por uma revisão de segurança.
 
  Negar altera o comportamento padrão, a movimentação de pilha ocorre em resposta a uma exigência de segurança. Ele permite que você especifique as permissões que não devem ser concedidas para a duração do método negando, independentemente das permissões reais dos chamadores na pilha de chamadas. Se a movimentação da pilha detecta um método que é protegido por Negar e se a permissão exigida é incluída nas permissões negadas, a movimentação da pilha falha. PermitOnly também altera o comportamento padrão do exame da pilha. Ele permite que o código especificar somente as permissões que podem ser concedidas, independentemente das permissões dos chamadores. Se a movimentação da pilha detecta um método que é protegido pelo PermitOnly, e se a permissão exigida não está incluída nas permissões que são especificadas pela PermitOnly, a movimentação da pilha falha.
 
  Código que depende dessas ações deve ser avaliado cuidadosamente para vulnerabilidades de segurança devido à sua utilidade limitada e comportamento sutil. Considere o seguinte:
 
-- [Demandas de link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetados por Deny ou PermitOnly.
+- [Demandas de link](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetados por Deny ou PermitOnly.
 
 - Se o Deny ou PermitOnly ocorre no quadro de pilha como a demanda que faz com que a movimentação da pilha, as ações de segurança não terão efeito.
 
@@ -80,4 +80,4 @@ ms.locfileid: "60082146"
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>
  <xref:System.Security.CodeAccessPermission.Deny%2A?displayProperty=fullName>
  <xref:System.Security.IStackWalk.PermitOnly%2A?displayProperty=fullName>
- [Diretrizes de codificação segura](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [substituindo verificações de segurança](http://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [usando o método PermitOnly](http://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)
+ [Diretrizes de codificação segura](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [substituindo verificações de segurança](https://msdn.microsoft.com/4acdeff5-fc05-41bf-8505-7387cdbfca28) [usando o método PermitOnly](https://msdn.microsoft.com/8c7bdb7f-882f-45b7-908c-6cbaa1767649)

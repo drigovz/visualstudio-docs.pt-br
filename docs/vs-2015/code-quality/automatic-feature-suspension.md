@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2e6db11220c2cc7f14bc2f0f05912e7855646c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9d406d200864a3c79dcd568b3c9411a1635ce116
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045976"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704036"
 ---
 # <a name="automatic-feature-suspension"></a>Suspensão automática de recursos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Se a memória disponível no sistema cai a 200MB ou menos, o Visual Studio exibe
 
  Em uma condição de pouca memória, ocorre o seguinte:
 
-- Análise de solução completa para o Visual C# e Visual Basic está desabilitado.
+- Análise de solução completa para o Visual c# e Visual Basic está desabilitado.
 
-- [Coleta de lixo](http://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modo de baixa latência (GC) para Visual c# e Visual Basic estão desabilitados.
+- [Coleta de lixo](https://msdn.microsoft.com/library/22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9) modo de baixa latência (GC) para Visual c# e Visual Basic estão desabilitados.
 
 - Caches do Visual Studio são liberados.
 
@@ -62,5 +62,5 @@ Além disso, os caches usados para operações internas do Visual Studio também
 ## <a name="see-also"></a>Consulte também
 
 - [Como: Habilitar e desabilitar análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md)
-- [Conceitos básicos da coleta de lixo](http://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
+- [Conceitos básicos da coleta de lixo](https://msdn.microsoft.com/library/67c5a20d-1be1-4ea7-8a9a-92b0b08658d2)
 - [Considerações sobre desempenho para grandes soluções](https://github.com/dotnet/roslyn/wiki/Performance-considerations-for-large-solutions)

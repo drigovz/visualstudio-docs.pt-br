@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc9b13ce1de0464db353fa5935d14ad8c8b328d1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 799e75dff8202ef041399cc6e0fcfb791dc7e868
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442837"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686528"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  A ferramenta de análise de código no Visual Studio Express Edition examina o código em busca de uma série de problemas e violações comuns das práticas recomendadas de programação. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código. A análise de código também pode localizar os defeitos no seu código que são difíceis de descobrir com testes. A execução da ferramenta de análise de código a intervalos regulares durante o processo de desenvolvimento pode melhorar a qualidade do seu aplicativo concluído.
 
 > [!NOTE]
-> No Visual Studio Ultimate, no Visual Studio Premium e no Visual Studio Professional, você pode usar a funcionalidade completa das ferramentas de análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](http://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
+> No Visual Studio Ultimate, no Visual Studio Premium e no Visual Studio Professional, você pode usar a funcionalidade completa das ferramentas de análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](https://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
 
 ## <a name="BKMK_Run"></a> Executando análise de código
  Para executar a análise de código em sua solução do Visual Studio:
@@ -116,7 +116,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                       [C6504](../code-quality/c6504.md)                        |                                              Nulo em não ponteiro                                              |
 |                       [C6505](../code-quality/c6505.md)                        |                                               MustCheck em nulo                                               |
 |                       [C6506](../code-quality/c6506.md)                        |                                      Tamanho do buffer em não ponteiro ou matriz                                      |
-| [C6507](http://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
+| [C6507](https://msdn.microsoft.com/18f88cd1-d035-4403-a6a4-12dd0affcf21)        |                                       Incompatibilidade nula na desreferência zero                                       |
 |                       [C6508](../code-quality/c6508.md)                        |                                           Acesso para gravação na constante                                            |
 |                       [C6509](../code-quality/c6509.md)                        |                                          Retorno usado em pré condição                                          |
 |                       [C6510](../code-quality/c6510.md)                        |                                        Terminação nula em não ponteiro                                         |
@@ -127,11 +127,11 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 |                       [C6516](../code-quality/c6516.md)                        |                                          Nenhuma propriedade no atributo                                           |
 |                       [C6517](../code-quality/c6517.md)                        |                                       Tamanho válido em buffer não legível                                       |
 |                       [C6518](../code-quality/c6518.md)                        |                                     Tamanho gravável em buffer não gravável                                      |
-| [C6521](http://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
+| [C6521](https://msdn.microsoft.com/e98d0ae3-6f13-47b2-9a15-15d4055af9ef)  |                                        Desreferência de tamanho de cadeia de caracteres inválido                                        |
 |                       [C6522](../code-quality/c6522.md)                        |                                           Tipo de cadeia de caracteres de tamanho inválido                                            |
-| [C6523](http://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
+| [C6523](https://msdn.microsoft.com/11397a31-b224-46b0-afb7-d49ca576a3bb)  |                                         Parâmetro de cadeia de caracteres de tamanho inválido                                         |
 |                       [C6525](../code-quality/c6525.md)                        |                                   Local inatingível da cadeia de caracteres inválido                                    |
-| [C6526](http://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
+| [C6526](https://msdn.microsoft.com/59c590c7-0098-4166-a1ac-87f324596002)  |                                        Tipo de buffer de cadeia de caracteres de tamanho inválido                                        |
 |                       [C6527](../code-quality/c6527.md)                        |              Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void               |
 |                       [C6530](../code-quality/c6530.md)                        |                                       Estilo de cadeia de caracteres de formato não reconhecido                                        |
 |                       [C6540](../code-quality/c6540.md)                        | O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função  |

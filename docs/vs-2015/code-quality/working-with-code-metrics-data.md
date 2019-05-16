@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4d206785991d37147d9d55d89947776a94b2ac4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b53e6a5c7ce65675037aac8c6fc4812f895d3b7b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111292"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703717"
 ---
 # <a name="working-with-code-metrics-data"></a>Trabalhando com dados de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ O **resultados de métricas de código** janela exibe os dados que são gerados 
 ## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Criando um Item de trabalho com base nos resultados de métricas de código  
  Você pode criar uma [!INCLUDE[esprfound](../includes/esprfound-md.md)] item de trabalho que se baseia no resulta nos **resultados de métricas de código** janela. Quando o item de trabalho é criado, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entra automaticamente em um título a **Title** dados de métricas de campo e o código sob o **histórico** guia.  
   
- Para obter mais informações sobre como criar itens de trabalho, consulte [criar um item de trabalho &#91;redirecionado&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ Para obter mais informações sobre como criar itens de trabalho, consulte [criar um item de trabalho &#91;redirecionado&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Para criar um item de trabalho com base em um resultado  
   

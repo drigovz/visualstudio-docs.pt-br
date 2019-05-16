@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442722"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685941"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano para aplicativos da Windows Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
  Este tópico também descreve como depurar **Tarefas em segundo plano**. Essas tarefas permitem que você execute certas operações em um processo em segundo plano, mesmo quando o aplicativo não está sendo executado. Você pode usar o depurador para colocar o aplicativo no modo de depuração e depois, sem iniciar a interface de usuário, iniciar e depurar a tarefa em segundo plano.
 
- Para obter mais informações sobre tarefas de gerenciamento de tempo de vida do processo e em segundo plano, consulte [Iniciar, retomar e multitarefa](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Para obter mais informações sobre tarefas de gerenciamento de tempo de vida do processo e em segundo plano, consulte [Iniciar, retomar e multitarefa](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> Neste tópico
  [Eventos de gerenciamento de tempo de vida do processo de gatilho](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
      Observe que **Suspender e Encerrar** fecha o aplicativo e encerra a sessão de depuração.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Disparar tarefas em segundo plano
- Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [que dão suporte a seu aplicativo com tarefas em segundo plano](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [que dão suporte a seu aplicativo com tarefas em segundo plano](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Você pode disparar os eventos que iniciam as tarefas em segundo plano do aplicativo por meio do depurador.
 
@@ -125,4 +125,4 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 4. Escolha o log **Diagnóstico**.
 
 ## <a name="see-also"></a>Consulte também
- [Testando aplicativos da Store com o Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [ciclo de vida do aplicativo](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [iniciando, retomar e multitarefa](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Testando aplicativos da Store com o Visual Studio](../test/testing-store-apps-with-visual-studio.md) [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [ciclo de vida do aplicativo](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [iniciando, retomar e multitarefa](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

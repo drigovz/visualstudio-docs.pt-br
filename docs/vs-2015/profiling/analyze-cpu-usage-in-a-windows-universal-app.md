@@ -15,19 +15,19 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 105efab7a28f0a21bd7567262ff8ec214715b8ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435081"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704573"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png "windows_and_phone_content")  
   
- Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, a ferramenta Uso da CPU pode ser executada com a ferramenta [Capacidade de Resposta da Interface do Usuário XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), a ferramenta [Consumo de Energia](../profiling/analyze-energy-use-in-store-apps.md) ou ambas as ferramentas em uma única sessão de diagnóstico.  
+ Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, a ferramenta Uso da CPU pode ser executada com a ferramenta [Capacidade de Resposta da Interface do Usuário XAML](https://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), a ferramenta [Consumo de Energia](../profiling/analyze-energy-use-in-store-apps.md) ou ambas as ferramentas em uma única sessão de diagnóstico.  
   
 > [!NOTE]
 > A ferramenta **Uso da CPU** não pode ser usada com os aplicativos Windows Phone Silverlight 8.1.  

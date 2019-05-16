@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675623"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Passo a passo: Criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
   
 - Criar um conjunto de dados tipado usando o **Assistente de Configuração de Fonte de Dados**.  
   
-- Separar gerado [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e o código do conjunto de dados em projetos discretos.  
+- Separar gerado [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) e o código do conjunto de dados em projetos discretos.  
   
 - Criar um serviço do Windows Communication Foundation (WCF) a ser chamado na camada de acesso a dados.  
   
@@ -381,7 +381,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos do aplicativo, existem várias etapas que você talvez queira realizar após salvar os dados relacionados no aplicativo baseado em Windows. Por exemplo, você poderia fazer as seguintes melhorias a este aplicativo:  
   
-- Adicionar validação ao conjunto de dados. Para obter informações, consulte [passo a passo: Adicionando validação a um aplicativo de dados de N camadas](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Adicionar validação ao conjunto de dados. Para obter informações, consulte [passo a passo: Adicionando validação a um aplicativo de dados de N camadas](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.  
   

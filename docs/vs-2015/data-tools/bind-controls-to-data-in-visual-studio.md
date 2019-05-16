@@ -19,12 +19,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1d0e34075fbadcc998dba09d1b7c13a5ffacc606
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 61693f30044a8ac5888bebb519dd156ab1e9510b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62556864"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705581"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>Associar controles a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "62556864"
 
  1. Gerar o modelo usando o **modelo de dados de entidade** assistente, em seguida, arrastar esses objetos para o designer.
 
- 2. Classes LINQ to SQL não aparecem na **fontes de dados** janela. No entanto, você pode adicionar uma nova fonte de dados de objeto com base no LINQ para classes SQL e, em seguida, arrastar esses objetos para o designer para criar controles associados a dados. Para obter mais informações, confira [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](http://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
+ 2. Classes LINQ to SQL não aparecem na **fontes de dados** janela. No entanto, você pode adicionar uma nova fonte de dados de objeto com base no LINQ para classes SQL e, em seguida, arrastar esses objetos para o designer para criar controles associados a dados. Para obter mais informações, confira [Passo a passo: Criando Classes LINQ to SQL (Object Relational Designer)](https://msdn.microsoft.com/library/35aad4a4-2e8a-46e2-ae09-5fbfd333c233).
 
 ## <a name="data-sources-window"></a>janela Fontes de Dados
  Fontes de dados estão disponíveis para seu projeto como itens na **fontes de dados** janela. Esta janela está visível ou é acessível a partir de **exibição** menu, quando uma superfície de design do formulário é a janela ativa no seu projeto. Você pode arrastar itens dessa janela para criar controles associados aos dados subjacentes, e você também pode configurar as fontes de dados clicando com o.
@@ -71,4 +71,4 @@ ms.locfileid: "62556864"
 |Personalize legendas para controles.|[Personalizar o modo como o Visual Studio cria legendas para controles associados a dados](../data-tools/customize-how-visual-studio-creates-captions-for-data-bound-controls.md)|
 
 ## <a name="see-also"></a>Consulte também
- [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [vinculação de dados do Windows Forms](http://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)
+ [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [vinculação de dados do Windows Forms](https://msdn.microsoft.com/library/c3826d8e-ea25-4ad4-a669-45bfb19192aa)

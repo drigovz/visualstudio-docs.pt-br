@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687589"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: Depurar JavaScript usando o console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,4 +283,4 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Início Rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Depurar um controle WebView](../debugger/debug-a-webview-control.md)   
- [Suporte ao produto e acessibilidade](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Suporte ao produto e acessibilidade](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

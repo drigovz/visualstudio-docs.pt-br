@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fd223b0a5891bc28cdef18dcd64312812607422
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752454f9a52807766d6eef5b2563a7b70ca0f4dd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62428452"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697389"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações 
   
  Outros aprimoramentos de atualização 1 incluem uma caixa de diálogo de espera cancelável, novo e notificação quando um arquivo não suporta editar e continuar. Para obter mais informações sobre as melhorias de atualização 1, consulte [melhorias de C++ Edit e Continue no Visual Studio 2015 atualização 1](http://blogs.msdn.com/b/vcblog/archive/2015/11/30/improvements-for-c-edit-and-continue-in-visual-studio-2015-update-1.aspx).  
   
- O [/Zo (aprimorar otimizado de depuração)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opção de compilador que foi introduzida no Visual Studio 2013 atualização 3 adiciona informações adicionais para arquivos. PDB (símbolo) para binários compilados sem a [/Od (desabilitar (Depurar)) ](http://msdn.microsoft.com/library/aafb762y.aspx) opção.  
+ O [/Zo (aprimorar otimizado de depuração)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) opção de compilador que foi introduzida no Visual Studio 2013 atualização 3 adiciona informações adicionais para arquivos. PDB (símbolo) para binários compilados sem a [/Od (desabilitar (Depurar)) ](https://msdn.microsoft.com/library/aafb762y.aspx) opção.  
   
  **/Zo** desabilita editar e continuar. Confira [Como Depurar o código otimizado](../debugger/how-to-debug-optimized-code.md).  
   
@@ -70,7 +70,7 @@ Você pode usar Editar e continuar em projetos do Visual C++. Ver [alterações 
 ## <a name="BKMK_How_to_reset_the_point_of_execution"></a> Como redefinir o ponto de execução  
  Algumas alterações de código podem fazer o ponto de execução ser movido para um novo local quando Editar e Continuar aplicar as alterações. Editar e Continuar coloca o ponto de execução o mais exatamente possível, mas os resultados podem não estar corretos em todos os casos.  
   
- No Visual C++, uma caixa de diálogo informa quando o ponto de execução é alterado. Você deve verificar se o local está correto antes de continuar a depuração. Se não estiver correta, use o comando **Definir Próxima Instrução**. Para obter mais informações, consulte [definir a próxima instrução para executar](http://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
+ No Visual C++, uma caixa de diálogo informa quando o ponto de execução é alterado. Você deve verificar se o local está correto antes de continuar a depuração. Se não estiver correta, use o comando **Definir Próxima Instrução**. Para obter mais informações, consulte [definir a próxima instrução para executar](https://msdn.microsoft.com/library/y740d9d3.aspx#BKMK_Set_the_next_statement_to_execute).  
   
 ## <a name="BKMK_How_to_work_with_stale_code"></a> Como trabalhar com código obsoleto  
  Em alguns casos, Editar e Continuar não pode aplicar imediatamente alterações de código ao executável, mas talvez consiga aplicá-las posteriormente se você continuar a depuração. Isso ocorre se você editar uma função que chama a função atual ou se adicionar mais de 64 bytes de novas variáveis a uma função na pilha de chamadas  

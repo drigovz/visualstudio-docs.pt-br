@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821267"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676715"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
@@ -56,7 +56,7 @@ Para editar a regra ativa definida no editor de conjunto de regras, clique com b
 Para alterar a regra ativa definido para um projeto, navegue até a **análise de código** guia de propriedades de um projeto. Selecione a conjunto de regras de lista sob **executar este conjunto de regras**. Para abrir o conjunto de regras, selecione **abrir**.
 
 > [!NOTE]
-> Projetos .NET core e .NET Standard não dão suporte os comandos de menu para conjuntos de regras **Gerenciador de soluções**, por exemplo, **do conjunto de regras ativo aberto**. Para especificar uma regra de não-padrão definida para um projeto .NET Core ou .NET Standard, manualmente [adicionar a **CodeAnalysisRuleSet** propriedade ao arquivo de projeto](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project). Você pode configurar as regras dentro da conjunto de regras no Visual Studio editor de interface do usuário do conjunto de regras.
+> Projetos .NET core e .NET Standard não dão suporte os comandos de menu para conjuntos de regras **Gerenciador de soluções**, por exemplo, **do conjunto de regras ativo aberto**. Para especificar uma regra de não-padrão definida para um projeto .NET Core ou .NET Standard, manualmente [adicionar a **CodeAnalysisRuleSet** propriedade](using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project) ao arquivo de projeto. Você ainda pode configurar as regras dentro da conjunto de regras no Visual Studio editor de interface do usuário do conjunto de regras.
 
 ## <a name="rule-severity"></a>Gravidade da regra
 

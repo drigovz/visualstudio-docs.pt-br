@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e4d721fca8d429fe81de30306a8823e3d7fd9cab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681689"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Como: Empacotar manualmente uma extensão (implantação do VSIX)
 Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão para a implantação. Há três maneiras de criar o pacote:  
@@ -26,7 +26,7 @@ Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes
   Este documento descreve a terceira opção.  
   
 ## <a name="creating-a-vsix-package"></a>Criando um pacote VSIX  
- Para empacotar manualmente uma extensão, adicione um arquivo extension.manifest e um [Content_Types]. XML ao projeto de extensão, colocá-los em um arquivo compactado junto com sua saída de compilação e renomear o arquivo compactado para que ele tenha uma extensão de nome de arquivo. VSIX. A extensão para ser empacotado deve ser de um tipo que é compatível com o [esquema VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
+ Para empacotar manualmente uma extensão, adicione um arquivo extension.manifest e um [Content_Types]. XML ao projeto de extensão, colocá-los em um arquivo compactado junto com sua saída de compilação e renomear o arquivo compactado para que ele tenha uma extensão de nome de arquivo. VSIX. A extensão para ser empacotado deve ser de um tipo que é compatível com o [esquema VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
 > Os nomes dos arquivos em pacotes VSIX não devem incluir espaços nem caracteres reservados em identificadores de URI (Uniform Resource), como definido em [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
@@ -37,7 +37,7 @@ Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes
   
 2. Crie um arquivo XML e nomeie- `extension.vsixmanifest`.  
   
-3. Preencha o arquivo Extension vsixmanifest de acordo com o esquema VSIX. Para um manifesto de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema de VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Preencha o arquivo Extension vsixmanifest de acordo com o esquema VSIX. Para um manifesto de exemplo, consulte [PackageManifest elemento (elemento raiz, o esquema de VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
 4. Crie um segundo arquivo XML e nomeie- `[Content_Types].xml`.  
   
@@ -56,4 +56,4 @@ Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes
 ## <a name="see-also"></a>Consulte também  
  [Envio de extensões do Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   
  [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md)   
- [Elemento PackageManifest (elemento raiz, o esquema VSX)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)
+ [Elemento PackageManifest (elemento raiz, o esquema VSX)](https://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187)

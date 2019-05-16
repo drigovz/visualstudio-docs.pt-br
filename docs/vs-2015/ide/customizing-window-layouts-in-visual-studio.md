@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 84967c8aeb5319d748ff42d051f0f63dad1d9b12
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701260"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
   As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.
 
 > [!NOTE]
-> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Encaixando janelas
  Quando você clica e arrasta a barra de título de uma janela de ferramentas ou a guia da janela do documento, um losango do guia é exibido. Durante a operação de arrastar, quando o cursor do mouse está sobre uma das setas no losango, será exibida uma área sombreada que mostra onde a janela será encaixada se você soltar o botão do mouse no momento.
@@ -182,4 +182,4 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
 |[Tipos de Janelas](../misc/kinds-of-windows.md)|Aborda as diferenças entre janelas de ferramenta e janelas de documento no IDE.|
 |[Como: Organizar e encaixar janelas](../misc/how-to-arrange-and-dock-windows.md)|Descreve como encaixar, ocultar automaticamente e colocar lado a lado as janelas, além de como redefinir o layout da janela.|
 |[Como: Mover-se no IDE](../ide/how-to-move-around-in-the-visual-studio-ide.md)|Descreve como você pode alternar entre as janelas abertas no IDE, por ordem de uso. Também descreve como é possível pular para documentos específicos.|
-|[Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contém informações sobre combinações de configurações e como as configurações afetam os layouts da janela, os atalhos do teclado e outros elementos no IDE.|
+|[Personalizando configurações de desenvolvimento no Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)|Contém informações sobre combinações de configurações e como as configurações afetam os layouts da janela, os atalhos do teclado e outros elementos no IDE.|

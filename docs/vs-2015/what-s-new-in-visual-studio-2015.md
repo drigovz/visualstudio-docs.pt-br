@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: adecc608309c0a61e38da3e77446795540c41e63
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041829"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691072"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Novidades no Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  ![Diálogo de instalação do Visual Studio 2015](./ide/media/vs2015-setup-screen.png "VS2015_Setup_screen")
 
 ## <a name="sign-in-across-multiple-accounts"></a>Entrar através de várias contas
- Com o Visual Studio 2015, a nova entrada experiência simplificada é projetada para simplificar bastante o acesso aos recursos online, mesmo quando você tiver várias contas do Visual Studio. Depois que você entrar no Visual Studio, você está automaticamente conectado para todas as instâncias do Visual Studio 2015 e no Blend em seu computador. Entrar automaticamente inicia o roaming de suas configurações para você. No Visual Studio 2015, sua conta é compartilhada entre recursos dessa forma, desde que você tiver um token de BOM, você pode acessar suas contas do Visual Studio Team Services da **Team Explorer**, recursos e sites do Microsoft Azure assinatura no Gerenciador de servidores. Você também verá os recursos do Azure na caixa de diálogo Novo projeto para projetos do Application Insights, e você verá seu móveis do Azure, armazenamento do Azure, [do Microsoft Office 365](http://msdn.microsoft.com/office/aa905340.aspx) e [Saleforce.com desenvolvedor](https://developer.salesforce.com/) contas no novo **adicionar um serviço conectado** caixa de diálogo.
+ Com o Visual Studio 2015, a nova entrada experiência simplificada é projetada para simplificar bastante o acesso aos recursos online, mesmo quando você tiver várias contas do Visual Studio. Depois que você entrar no Visual Studio, você está automaticamente conectado para todas as instâncias do Visual Studio 2015 e no Blend em seu computador. Entrar automaticamente inicia o roaming de suas configurações para você. No Visual Studio 2015, sua conta é compartilhada entre recursos dessa forma, desde que você tiver um token de BOM, você pode acessar suas contas do Visual Studio Team Services da **Team Explorer**, recursos e sites do Microsoft Azure assinatura no Gerenciador de servidores. Você também verá os recursos do Azure na caixa de diálogo Novo projeto para projetos do Application Insights, e você verá seu móveis do Azure, armazenamento do Azure, [do Microsoft Office 365](https://msdn.microsoft.com/office/aa905340.aspx) e [Saleforce.com desenvolvedor](https://developer.salesforce.com/) contas no novo **adicionar um serviço conectado** caixa de diálogo.
 
  Você pode trabalhar com várias contas de usuário no Visual Studio, adicionando-os conforme o uso ou por meio do novo Gerenciador de conta. Em seguida, você pode alternar entre essas contas em rapidamente ao se conectar a serviços ou acessar os recursos online. Visual Studio se lembrará de contas que você adicionar, portanto, você pode usá-los de qualquer instância do Visual Studio ou Blend. Visual Studio também se movimentarão a lista de contas (embora nós não criamos suas credenciais valiosas) com sua conta de personalização para que possa começar rapidamente a trabalhar com uma dessas contas em outro dispositivo. Obviamente, você pode remover as contas na caixa de diálogo Configurações de conta a qualquer momento. Para começar, consulte [trabalhar com várias contas de usuário](./ide/work-with-multiple-user-accounts.md).
 
@@ -53,7 +53,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
  Xamarin é uma estrutura móvel que permite que você escreva código em c# que associa de forma nativa para iOS e Android APIs. Microsoft iniciou uma parceria em conjunto com o Xamarin em sua versão do Xamarin para Visual Studio, uma extensão que habilita você a desenvolver para iOS, Android e Windows Phone em uma única solução com código compartilhado. Com o Xamarin, você usará um idioma e uma base de código com deltas mínimo entre as plataformas.  Xamarin para Visual Studio tem suporte no Visual Studio 2010 e posterior. A edição de inicial do Xamarin está incluída no Visual Studio 2015. Para começar, consulte [compilar aplicativos com interface do usuário nativa usando Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md).
 
 ### <a name="cross-platform-mobile-apps-in-htmljavascript-with-apache-cordova"></a>Aplicativos móveis de plataforma cruzada em HTML/JavaScript com o Apache Cordova
- Ferramentas do Visual Studio para Apache Cordova é o resultado de uma estreita colaboração entre a Microsoft e de código aberto da comunidade do Apache Cordova. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou Typescript). Você pode direcionar o iOS, Android e Windows com uma única base de código e aproveite a riqueza do IDE do Visual Studio incluindo IntelliSense do JavaScript, o Explorador do DOM, Console do JavaScript, os pontos de interrupção, inspeções, locais, apenas meu código e muito mais.  Com o Visual Studio Tools para Apache Cordova, seus aplicativos têm acesso aos recursos nativos do dispositivo em todas as plataformas por meio do plug-ins que fornecem uma API comum em JavaScript. Para começar, consulte [Introdução ao Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
+ Ferramentas do Visual Studio para Apache Cordova é o resultado de uma estreita colaboração entre a Microsoft e de código aberto da comunidade do Apache Cordova. As ferramentas permitem o desenvolvimento móvel de plataforma cruzada usando HTML, CSS e JavaScript (ou Typescript). Você pode direcionar o iOS, Android e Windows com uma única base de código e aproveite a riqueza do IDE do Visual Studio incluindo IntelliSense do JavaScript, o Explorador do DOM, Console do JavaScript, os pontos de interrupção, inspeções, locais, apenas meu código e muito mais.  Com o Visual Studio Tools para Apache Cordova, seus aplicativos têm acesso aos recursos nativos do dispositivo em todas as plataformas por meio do plug-ins que fornecem uma API comum em JavaScript. Para começar, consulte [Introdução ao Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/db446f2c-6ba4-4c76-aac5-4c66f43b8c42).
 
 ### <a name="cross-platform-mobile-games-in-c-with-unity"></a>Jogos móveis de plataforma cruzada em c# com o Unity
  Unity é uma plataforma amplamente usado para desenvolvimento de jogos 2D e 3D multiplataforma. Você pode escrever seu jogo em c# e executá-lo de modo nativo no Android, iOS, Windows Phone e muitas outras plataformas. Ferramentas do Visual Studio para Unity é uma extensão que se integra a Unity com o IDE do Visual Studio. Com essa extensão, você obtém todos os recursos do IDE do Visual Studio e o depurador, além dos recursos de produtividade que são projetados para desenvolvedores do Unity. Ferramentas do Visual Studio para Unity 2.0 Preview 2 adiciona suporte para Visual Studio 2015, além disso a um número de novos recursos, como uma melhor visualização para objetos em locais e inspeção windows. A Microsoft adquiriu recentemente SyntaxTree, os criadores do Visual Studio Tools for Unity. Para baixar as ferramentas do Visual Studio para Unity 2.0 Preview 2 e para obter mais informações sobre ferramentas do Visual Studio para Unity, consulte [Visual Studio Tools for Unity 2.0](https://aka.ms/vstu).
@@ -70,7 +70,7 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
  Execute seu aplicativo em um telefone Windows 10, área de trabalho do Windows 10 ou Xbox. É o mesmo pacote do aplicativo! Com a introdução do núcleo único e unificado do Windows 10, um pacote do aplicativo pode ser executado em todas as plataformas. Várias plataformas têm SDKs de Extensão que podem ser adicionados ao aplicativo para aproveitar comportamentos específicos à plataforma. Por exemplo, o SDK de uma extensão para dispositivos móveis manipula o botão Voltar pressionado em um Windows Phone. Se você referenciar um SDK de Extensão em seu projeto, basta adicionar verificações em tempo de execução para testar se esse SDK está disponível nessa plataforma. É assim que você pode ter o mesmo pacote do aplicativo para cada plataforma!
 
- Use c#, Visual Basic, C++ ou JavaScript para criar essas [aplicativos Windows Universal](http://msdn.microsoft.com/library/dn975273.aspx).
+ Use c#, Visual Basic, C++ ou JavaScript para criar essas [aplicativos Windows Universal](https://msdn.microsoft.com/library/dn975273.aspx).
 
 ### <a name="web"></a>Web
  O ASP.NET 5 é uma atualização importante para MVC, WebAPI e SignalR e é executado no Windows, Mac e Linux.  O ASP.NET 5 foi projetado desde o backup para fornecer a que você com um .NET enxuta e combinável de pilha para a criação de aplicativos modernos baseados em nuvem. As ferramentas do Visual Studio 2015 está mais estreitamente integrada com ferramentas de desenvolvimento da web populares, como o Bower e o Grunt. Para começar, consulte as várias postagens de blog sobre o [NET Web Development and Tools Blog](http://blogs.msdn.com/b/webdev/).
@@ -87,12 +87,12 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 
  As linguagens c# e Visual Basic contêm muitas melhorias bastante na linguagem principal e no suporte ao IDE. Esses aprimoramentos que todos sejam acumulados para tornar sua experiência ainda mais intuitiva, conveniente e produtiva de codificação do .NET.
 
- Para obter mais informações, consulte [What's New](http://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e o [Blog .NET](http://blogs.msdn.com/b/dotnet/).
+ Para obter mais informações, consulte [What's New](https://msdn.microsoft.com/library/1d971dd7-10fc-4692-8dac-30ca308fc0fa) e o [Blog .NET](http://blogs.msdn.com/b/dotnet/).
 
 #### <a name="c"></a>C++
  O Visual C++ fornece avanços significativos no C + + 11/14 conformidade com a linguagem, suporte para desenvolvimento de dispositivo móvel de plataforma cruzada, o suporte para funções retomáveis e await (atualmente planejados para padronização em c++17), aprimoramentos e correções no a biblioteca de tempo de execução C (CRT) e C++ implementações da biblioteca padrão (STL), as caixas de diálogo redimensionáveis no MFC, novas otimizações de compilador, compilação melhores desempenho, novos recursos de diagnóstico e novas ferramentas de produtividade no editor de códigos.
 
- Para obter mais informações, consulte [o que há de novo para o Visual C++](http://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e o [Blog do Visual C++](http://blogs.msdn.com/b/vcblog/).
+ Para obter mais informações, consulte [o que há de novo para o Visual C++](https://msdn.microsoft.com/library/1cc09fad-85a2-43c2-b022-bb99f5fe0ad7) e o [Blog do Visual C++](http://blogs.msdn.com/b/vcblog/).
 
 ## <a name="device-preview-menu-bar"></a>Barra de menus de visualização do dispositivo
  Em projetos de plataforma Universal do Windows, a barra de menus de visualização de dispositivo permite que você veja como a interface do usuário baseada em XAML será renderizado em vários tamanhos de tela.
@@ -123,11 +123,11 @@ Para obter mais informações sobre os vários aprimoramentos e novos recursos n
 ## <a name="cross-platform-debugging-support"></a>Suporte à depuração de plataforma cruzada
  Você pode usar o Visual Studio para criar e depurar aplicativos móveis nativos que são executados em dispositivos Android, iOS e Windows. Use o [emulador do Visual Studio para Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), ou conectar um dispositivo e depurar seu código diretamente no Visual Studio.
 
-- **JavaScript / Cordova**. Use o [Visual Studio Tools for Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android com o JavaScript.
+- **JavaScript / Cordova**. Use o [Visual Studio Tools for Apache Cordova](https://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android com o JavaScript.
 
-     [Depurar seu aplicativo](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) na biblioteca do MSDN é uma visão detalhada de suporte para Cordova de depuração do Visual Studio.
+     [Depurar seu aplicativo](https://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) na biblioteca do MSDN é uma visão detalhada de suporte para Cordova de depuração do Visual Studio.
 
-- **C# / Xamarin**. Use [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android no Visual Studio com c#.
+- **C# / Xamarin**. Use [Xamarin](https://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) para criar aplicativos nativos para Windows, iOS e Android no Visual Studio com c#.
 
      [Depurando](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) e [depurar no dispositivo](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) no [guias do desenvolvedor Xamarin](http://developer.xamarin.com/guides) descrevem a experiência de depuração.
 
@@ -262,11 +262,11 @@ A seguir é nova ou aprimorados ferramentas que executam diferentes tipos de dia
 ### <a name="report-crashes-hangs-and-performance-issues"></a>Relatar falhas, travamentos e problemas de desempenho
  Às vezes, uma anotação rápida em um rosto triste simplesmente não é suficiente para transmitir o impacto total de algo que você não gosta. Para os horários quando você tiver um problema de desempenho, falha ou travamento, você pode compartilhar facilmente etapas de reprodução, os despejos de memória e arquivos de rastreamento usando a caixa de diálogo é exibida depois que você envia um rosto triste.
 
- Primeiro, envie um rosto triste, conforme descrito acima. Na caixa de diálogo pop-up, você pode marcar seus comentários com qualquer uma das marcas padrão ou criar sua própria marca. Marcas nos ajudam a encaminhar seus comentários para a equipe de recursos apropriado. No **escolher uma categoria** lista suspensa, selecione a opção que representa o problema que você está relatando, siga as etapas para reproduzir o problema. Etapas detalhadas sobre como usar o Visual Studio para fornecer comentários também estão disponíveis. Para obter mais informações, consulte [Visual Studio enviar um Smiley instruções](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
+ Primeiro, envie um rosto triste, conforme descrito acima. Na caixa de diálogo pop-up, você pode marcar seus comentários com qualquer uma das marcas padrão ou criar sua própria marca. Marcas nos ajudam a encaminhar seus comentários para a equipe de recursos apropriado. No **escolher uma categoria** lista suspensa, selecione a opção que representa o problema que você está relatando, siga as etapas para reproduzir o problema. Etapas detalhadas sobre como usar o Visual Studio para fornecer comentários também estão disponíveis. Para obter mais informações, consulte [Visual Studio enviar um Smiley instruções](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b).
 
 ## <a name="see-also"></a>Consulte também
 
-* [Criar aplicativos multiplataforma com o Apache Cordova](http://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
+* [Criar aplicativos multiplataforma com o Apache Cordova](https://msdn.microsoft.com/library/34d3c1be-22b3-4812-97fb-10b4e8ad2134)
 * [Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio](./cross-platform/build-apps-with-native-ui-using-xamarin-in-visual-studio.md)
 * [Compilar aplicativos de plataforma cruzada com o Visual C++](./misc/build-cross-platform-mobile-apps-with-visual-cpp.md)
 * [Gerar testes de unidade para seu código com IntelliTest](./test/generate-unit-tests-for-your-code-with-intellitest.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 9cdf4777aa9ec0222656ac02376c5343d2138c0d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038324"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687378"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Examinar manipuladores de eventos visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,4 +65,4 @@ ms.locfileid: "60038324"
 
 ## <a name="see-also"></a>Consulte também
  <xref:System.Security.CodeAccessPermission.Demand%2A?displayProperty=fullName> <xref:System.EventArgs?displayProperty=fullName>
- [Demandas de segurança](http://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)
+ [Demandas de segurança](https://msdn.microsoft.com/324c14f8-54ff-494d-9fd1-bfd20962c8ba)

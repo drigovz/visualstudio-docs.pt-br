@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6136caaec0cb8f0d79e3fb7b96245fc3fd070710
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049302"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675335"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte à função desfazer para designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
   
 - CodeDOM e persistência forneça suportam com a implementação de <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e o <xref:System.ComponentModel.Design.IComponentChangeService> classes.  
   
-  Para obter mais informações sobre como escrever designers usando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consulte [estendendo o suporte de tempo de Design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
+  Para obter mais informações sobre como escrever designers usando [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], consulte [estendendo o suporte de tempo de Design](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2).  
   
   O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece uma infraestrutura de desfazer padrão por:  
   
@@ -45,7 +45,7 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
   
 - Emprega a geração de código padrão com base em CodeDOM e sistema de análise para persistência e geração de código.  
   
-     Para obter mais informações sobre como trabalhar com o suporte do CodeDOM do Visual Studio, consulte [geração dinâmica de código fonte e compilação](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
+     Para obter mais informações sobre como trabalhar com o suporte do CodeDOM do Visual Studio, consulte [geração dinâmica de código fonte e compilação](https://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usar o suporte à função desfazer de Designer explícita  
  Designers devem fornecer seu próprio gerenciamento de desfazer se eles usarem uma interface gráfica do usuário, conhecida como um adaptador de exibição, que não seja um fornecido pelo <xref:System.Windows.Forms.Control>.  
@@ -105,4 +105,4 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
 ## <a name="see-also"></a>Consulte também  
  <xref:System.ComponentModel.Design.UndoEngine>   
  <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>   
- [Estendendo o suporte ao tempo de design](http://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)
+ [Estendendo o suporte ao tempo de design](https://msdn.microsoft.com/library/d6ac8a6a-42fd-4bc8-bf33-b212811297e2)

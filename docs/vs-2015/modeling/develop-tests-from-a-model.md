@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042048"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692238"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
  Teste de subsistema aplica-se os mesmos princípios para os principais componentes de um sistema. Cada componente é testado separadamente de outros componentes. Subsistema de testes de foco no comportamento visível em interfaces de usuário ou a API do componente.  
   
- Para obter mais informações sobre como executar testes, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+ Para obter mais informações sobre como executar testes, consulte [testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
 ## <a name="deriving-system-tests-from-a-requirements-model"></a>Derivando de testes do sistema de um modelo de requisitos  
  Você pode criar e manter uma relação entre os testes de sistema e um modelo de requisitos. Para estabelecer essa relação, você escreve testes que correspondem aos elementos principais do modelo de requisitos. Visual Studio ajuda você a manter essa relação, permitindo que você criar links entre os testes e as partes do modelo. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
@@ -63,9 +63,9 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
 ###### <a name="to-link-tests-to-a-use-case"></a>Para vincular os testes para um caso de uso  
   
-1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+    O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Vincule o item de trabalho de requisito para um ou mais casos de uso em seu modelo.  
   
@@ -106,7 +106,7 @@ Assert (countAfter == countBefore = 1);
   
  Muitos dos acessadores e atualizadores já estarão disponíveis por meio de API normal do aplicativo. Mas algumas funções adicionais podem ter a ser gravado para habilitar os testes. Esses acessadores adicionais e atualizadores de aplicativos também são conhecidas como 'instrumentação de teste'. Porque eles dependem do design interno do sistema, é responsabilidade dos desenvolvedores do sistema para fornecer a eles, enquanto os testadores escrever o código dos testes em termos do modelo de requisitos.  
   
- Ao escrever testes automatizados, você pode usar testes genéricos para encapsular os acessadores e atualizadores de aplicativos. Para obter mais informações, consulte [criando um automatizada que ensaios um executável usando os testes genéricos](http://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
+ Ao escrever testes automatizados, você pode usar testes genéricos para encapsular os acessadores e atualizadores de aplicativos. Para obter mais informações, consulte [criando um automatizada que ensaios um executável usando os testes genéricos](https://msdn.microsoft.com/library/b8dadaf4-4473-49c5-a0d9-46eca9e65d52).  
   
 ### <a name="tests-for-business-rules"></a>Testes para regras de negócio  
  Alguns requisitos não estão diretamente relacionados a qualquer um caso de uso. Por exemplo, a empresa DinnerNow permite que os clientes escolham entre muitos Menus, mas requer que em cada ordem, todos os itens deverão ser de um único Menu escolhida. Essa regra de negócio pode ser expresso como uma invariável sobre as associações entre os pedidos, Menus e itens no modelo de classe de requisitos.  
@@ -164,9 +164,9 @@ Assert (countAfter == countBefore = 1);
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular os testes a um elemento de modelo ou a relação  
   
-1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
-     O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
+     O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](https://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
 2. Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.  
   

@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: HT
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "58999987"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697566"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Como: Publicar um aplicativo WPF com estilos visuais habilitados
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral Visual de estilos](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obter mais informações sobre a mensagem de erro, consulte [solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Estilos visuais permitem a aparência dos controles comuns para mudar com base no tema escolhido pelo usuário. Por padrão, os estilos visuais estiverem habilitados não para aplicativos do Windows Presentation Foundation (WPF), portanto, você deve habilitá-los manualmente. No entanto, habilitar estilos visuais para um aplicativo WPF e, em seguida, publicar a solução causa um erro. Este tópico descreve como resolver esse erro e o processo para publicar um aplicativo WPF com estilos visuais habilitados. Para obter mais informações sobre estilos visuais, consulte [visão geral Visual de estilos](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Para obter mais informações sobre a mensagem de erro, consulte [solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Para resolver o erro e publicar a solução, você deve executar as seguintes tarefas:
 
@@ -66,7 +66,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 
          O arquivo App. manifest é aberto na **Editor de códigos**.
 
-    **Para abrir o arquivo de manifesto em um projeto C#**
+    **Para abrir o arquivo de manifesto em um projeto c#**
 
     1. Na barra de menus, escolha **Project**, _ProjectName_**propriedades**, onde *ProjectName* é o nome do seu projeto WPF.
 
@@ -125,7 +125,7 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 
 1. Abra o **Prompt de comando do Visual Studio**.
 
-    Para obter mais informações sobre como abrir o **Prompt de comando do Visual Studio**, consulte [Prompts de comando](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Para obter mais informações sobre como abrir o **Prompt de comando do Visual Studio**, consulte [Prompts de comando](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > As etapas restantes fazem as seguintes suposições sobre sua solução:
@@ -193,5 +193,5 @@ Estilos visuais permitem a aparência dos controles comuns para mudar com base n
 ## <a name="see-also"></a>Consulte também
 
 [Solução de problemas de erros específicos nas implantações do ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[visão geral de estilos visuais](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[Prompts de comando](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[visão geral de estilos visuais](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[Prompts de comando](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

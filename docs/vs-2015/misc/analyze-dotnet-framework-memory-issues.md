@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 885f96a4e1e43fe422c6fd9cfaa414fe5871bce1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444662"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688570"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analisar problemas de memória .NET Framework
 Encontre perdas de memória e uso ineficiente da memória no código do .NET Framework com o analisador de memória gerenciada do Visual Studio. A versão mínima do .NET Framework do código de destino é o .NET Framework 4.5.  
@@ -47,7 +47,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
 ## <a name="BKMK_Identify_a_memory_issue_in_an_app"></a> Identificar um problema de memória em um aplicativo  
- O sintoma mais visível de problemas de memória é o desempenho do aplicativo, especialmente se o desempenho cair com o passar do tempo. A queda no desempenho de outros aplicativos enquanto o aplicativo está em execução também pode indicar uma perda de memória. Se você suspeitar de um problema de memória, use uma ferramenta como o Gerenciador de tarefas ou [Monitor de desempenho do Windows](http://technet.microsoft.com/library/cc749249.aspx) para investigar mais. Por obter exemplo, procure um aumento no tamanho total da memória que não seja possível explicar como uma origem possível de perdas de memória:  
+ O sintoma mais visível de problemas de memória é o desempenho do aplicativo, especialmente se o desempenho cair com o passar do tempo. A queda no desempenho de outros aplicativos enquanto o aplicativo está em execução também pode indicar uma perda de memória. Se você suspeitar de um problema de memória, use uma ferramenta como o Gerenciador de tarefas ou [Monitor de desempenho do Windows](https://technet.microsoft.com/library/cc749249.aspx) para investigar mais. Por obter exemplo, procure um aumento no tamanho total da memória que não seja possível explicar como uma origem possível de perdas de memória:  
   
  ![Aumento da memória consistente em Monitor de recursos](../misc/media/mngdmem-resourcemanagerconsistentgrowth.png "MNGDMEM_ResourceManagerConsistentGrowth")  
   
@@ -56,7 +56,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
  ![No Gerenciador de recursos de picos de memória](../misc/media/mngdmem-resourcemanagerspikes.png "MNGDMEM_ResourceManagerSpikes")  
   
 ## <a name="BKMK_Collect_memory_snapshots"></a> Coletar instantâneos de memória  
- A ferramenta de análise de memória analisa informações em *arquivos de despejo* que contêm informações de heap. Você pode criar arquivos de despejo no Visual Studio, ou você pode usar uma ferramenta como o [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) partir [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Ver [o que é um despejo e como criar um?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) no blog da equipe do depurador do Visual Studio.  
+ A ferramenta de análise de memória analisa informações em *arquivos de despejo* que contêm informações de heap. Você pode criar arquivos de despejo no Visual Studio, ou você pode usar uma ferramenta como o [ProcDump](https://technet.microsoft.com/sysinternals/dd996900.aspx) partir [Windows Sysinternals](https://technet.microsoft.com/sysinternals). Ver [o que é um despejo e como criar um?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) no blog da equipe do depurador do Visual Studio.  
   
 > [!NOTE]
 > A maioria das ferramentas pode coletar informações de despejo com ou sem dados completos de memória do heap. O analisador de memória do Visual Studio requer informações completas do heap.  

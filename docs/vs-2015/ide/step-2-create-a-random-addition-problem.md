@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442622"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693967"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
   
      `Random` é conhecido como um objeto. Provavelmente, você ouviu essa palavra antes e aprenderá mais sobre o significado de programação no tutorial seguir. Por enquanto, apenas lembre-se de que você pode usar instruções `new` para criar botões, rótulos, painéis, OpenFileDialogs, ColorDialogs, SoundPlayers, Randoms e até mesmo formulários, e esses itens são chamados de objetos. Quando você executa o programa, o formulário é iniciado e o código por trás dele cria um objeto `Random` e o nomeia como **randomizer**.  
   
-     Logo você irá criar um método para verificar as respostas, de modo que seu teste use variáveis para armazenar os números aleatórios que gera para cada problema. Consulte [Variáveis](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) ou [Tipos](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Para usar variáveis corretamente, você deve declará-los, o que significa listar seus nomes e tipos de data.  
+     Logo você irá criar um método para verificar as respostas, de modo que seu teste use variáveis para armazenar os números aleatórios que gera para cada problema. Consulte [Variáveis](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) ou [Tipos](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Para usar variáveis corretamente, você deve declará-los, o que significa listar seus nomes e tipos de data.  
   
 4. Adicione duas variáveis de inteiro ao formulário e nomeie-as **addend1** e **addend2**.  
   

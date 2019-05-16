@@ -11,19 +11,19 @@ ms.assetid: 41d2c72c-0a97-4fcd-b3aa-33a8d3aa962a
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8d5b22479996bca6ee69c1334d79f012024b865d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35942f6babf18967e11f268ef0412acb4cc8edf7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687475"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>Instalando VSPackages com o Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Integrando o VSPackage em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requer mais do que apenas copiar arquivos para um computador do usuário. Instalador do VSPackage deve instalar o VSPackage e seus arquivos dependentes e registre-se e integrá-los em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. O VSPackage pode tirar proveito dos recursos de integração como exibir um ícone no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] inicial da tela e a caixa de diálogo sobre.  
   
- Arquivos do Microsoft Windows Installer são a maneira recomendada para distribuir seu VSPackages. Pacotes do Windows Installer de fácil de usar podem ser executados em qualquer sistema operacional do Windows com suporte pelo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Windows Installer](http://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
+ Arquivos do Microsoft Windows Installer são a maneira recomendada para distribuir seu VSPackages. Pacotes do Windows Installer de fácil de usar podem ser executados em qualquer sistema operacional do Windows com suporte pelo [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Windows Installer](https://msdn.microsoft.com/121be21b-b916-43e2-8f10-8b080516d2a0).  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Noções básicas do Windows Installer](../../extensibility/internals/windows-installer-basics.md)  
@@ -50,7 +50,7 @@ Integrando o VSPackage em [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] requer
  [Implantar tipos de projeto](../../extensibility/internals/deploying-project-types.md)  
  Discute como usar o novo agregador de tipo de projeto para tipos de projeto de código gerenciado.  
   
- [Como: Gerar informações de registro para um instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
+ [Como: gerar informações de registro de um instalador](../../extensibility/internals/how-to-generate-registry-information-for-an-installer.md)  
  Explica como usar RegPkg.exe para gerar um manifesto de registro para um VSPackage gerenciado.  
   
  [Comandos que devem ser executados após a instalação](../../extensibility/internals/commands-that-must-be-run-after-installation.md)  

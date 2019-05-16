@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c21b50aab30d3ce7603ab8e5f7e6582332e94628
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435131"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685397"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -165,7 +165,7 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
     ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Gerenciando propriedades de compilação](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Gerenciando propriedades de compilação](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Página de Compilação, Designer de Projeto (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
  [Página Publicar, Designer de Projeto](../ide/reference/publish-page-project-designer.md)   
  [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md)   

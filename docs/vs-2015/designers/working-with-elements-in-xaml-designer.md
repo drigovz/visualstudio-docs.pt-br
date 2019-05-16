@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403454"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690025"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403454"
 Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo no XAML, no código ou usando o XAML Designer. Este tópico descreve como trabalhar com elementos no Designer XAML no Visual Studio ou Blend for Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Adicionando um elemento a um layout  
- *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Você pode usar vários elementos filho `Panel`, como [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.  
+ *Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Você pode usar vários elementos filho `Panel`, como [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) e [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.  
   
  Por padrão, um painel `Grid` é usado como o contêiner de layout de nível superior em uma página ou formulário. Você pode adicionar painéis de layout, controles ou outros elementos dentro do layout de página de nível superior.  
   
@@ -34,7 +34,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
     - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.  
   
-    - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
+    - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos  
  Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos da janela Estrutura de Tópicos de Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** estiver definida para um elemento). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.  

@@ -16,12 +16,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95f863a8b33f6cbff7e592b0a7a45e664494d826
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ce6b6ee633e926709b0c15c2234077055600a07
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427241"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688124"
 ---
 # <a name="accessing-local-and-remote-data-in-clickonce-applications"></a>Acessando dados locais e remotos em aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../i
   
  Isolado funciona o armazenamento de todas as versões do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Armazenamento isolado também funciona em aplicativos parcialmente confiáveis sem a necessidade de concessões de permissão adicional. Se seu aplicativo deve ser executado em confiança parcial, mas deve manter dados específicos do aplicativo, você deve usar armazenamento isolado.  
   
- Para obter mais informações, consulte [armazenamento isolado](http://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
+ Para obter mais informações, consulte [armazenamento isolado](https://msdn.microsoft.com/library/aff939d7-9e49-46f2-a8cd-938d3020e94e).  
   
 ### <a name="other-local-files"></a>Outros arquivos locais  
  Se seu aplicativo deve funcionar com ou salvar dados do usuário final, como relatórios, imagens, música e assim por diante, seu aplicativo exigirá <xref:System.Security.Permissions.FileIOPermission> para ler e gravar dados no sistema de arquivos local.  
@@ -86,7 +86,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../i
  Em algum momento, seu aplicativo provavelmente terá que recuperar informações de um site remoto, como informações de dados ou mercado do cliente. Esta seção discute as técnicas mais comuns para recuperar os dados remotos.  
   
 ### <a name="accessing-files-by-using-http"></a>Acessando arquivos por meio de HTTP  
- Você pode acessar dados de um servidor Web usando o <xref:System.Net.WebClient> ou o <xref:System.Net.HttpWebRequest> classe no <xref:System.Net> namespace. Os dados podem ser qualquer um dos arquivos estáticos ou [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativos que retornam dados XML ou texto não processado. Se os dados estiverem em formato XML, a maneira mais rápida para recuperar os dados é usando o <xref:System.Xml.XmlDocument> classe cuja <xref:System.Xml.XmlDocument.Load%2A> método usa uma URL como um argumento. Por exemplo, consulte [ler um documento XML no DOM](http://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
+ Você pode acessar dados de um servidor Web usando o <xref:System.Net.WebClient> ou o <xref:System.Net.HttpWebRequest> classe no <xref:System.Net> namespace. Os dados podem ser qualquer um dos arquivos estáticos ou [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] aplicativos que retornam dados XML ou texto não processado. Se os dados estiverem em formato XML, a maneira mais rápida para recuperar os dados é usando o <xref:System.Xml.XmlDocument> classe cuja <xref:System.Xml.XmlDocument.Load%2A> método usa uma URL como um argumento. Por exemplo, consulte [ler um documento XML no DOM](https://msdn.microsoft.com/library/a4fb291f-5630-49ba-a49a-5b66c3b71e49).  
   
  Você deve considerar a segurança quando o aplicativo acessa os dados remotos por meio de HTTP. Por padrão, seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] acesso do aplicativo aos recursos da rede pode ser restringido, dependendo de como seu aplicativo foi implantado. Essas restrições são aplicadas para impedir que programas mal-intencionados obtenham acesso a dados remotos com privilégios ou usando um computador do usuário para atacar outros computadores na rede.  
   

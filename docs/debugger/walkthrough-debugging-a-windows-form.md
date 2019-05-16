@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407588"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678915"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Passo a passo: Depurando um Windows Form
 Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form cria um aplicativo padrão do Windows. Você pode concluir este passo a passo usando o Visual Basic, C# ou C++.
@@ -165,23 +165,24 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Sobre o **Debug** menu, selecione **Start Without Debugging**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     O Windows Form inicia a execução no Windows, como se você tivesse clicado duas vezes em seu executável. O depurador não está anexado.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Sobre o **Debug** menu, selecione **anexar ao processo**. (Este comando também está disponível na **ferramentas** menu.)
 
-     The **Attach to Process** dialog box appears.
+     A caixa de diálogo **Anexar ao Processo** é exibida.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. No **processos disponíveis** painel, localize o nome do processo (Walkthrough_SimpleDebug.exe) na **processo** coluna e clique nele.
 
-5. Click the **Attach** button.
+5. Clique o **Attach** botão.
 
-6. In your Windows Form, click the one and only button.
+6. No seu Windows Form, clique no único botão.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     O depurador interromperá a execução do Windows Form no ponto de interrupção.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Consulte também
+- [Depurando código gerenciado](../debugger/debugging-managed-code.md)
+- [Segurança do depurador](../debugger/debugger-security.md)

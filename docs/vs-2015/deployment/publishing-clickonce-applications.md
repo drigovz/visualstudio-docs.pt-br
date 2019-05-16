@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ba48e28d5ace9dc1c07d7ec302d070d5d5f15e6
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: de804cb26eb9c51acc67445e1f1b1c0fdfabab91
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58929112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697525"
 ---
 # <a name="publishing-clickonce-applications"></a>Publicando aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,8 +98,8 @@ Ao publicar um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
 |[Passo a passo: Como baixar assemblies satélite sob demanda com a API de implantação do ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Descreve como marcar seus assemblies satélites como opcionais e baixar somente o assembly que o computador cliente precisa para suas configurações de cultura.|  
 |[Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Explica como usar os utilitários do .NET Framework para implantar seu aplicativo ClickOnce.|  
 |[Passo a passo: Como implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required?view=vs-2015)|Explica como usar os utilitários do .NET Framework para implantar seu aplicativo ClickOnce sem assinar novamente os manifestos.|  
-|[NIB: Como: Otimizar um aplicativo para um tipo específico de CPU](http://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Explica como publicar um processador de 64 bits alterando a propriedade **CPU de destino** ou **Destino de plataforma** no projeto.|  
-|[Passo a passo: Habilitar um aplicativo ClickOnce ser executado em várias versões do .NET Framework](http://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Explica como habilitar um aplicativo ClickOnce para instalar e executar em várias versões do .NET Framework.|  
+|[NIB: Como: Otimizar um aplicativo para um tipo específico de CPU](https://msdn.microsoft.com/294a75d2-4279-4b72-8298-2bea05be907a)|Explica como publicar um processador de 64 bits alterando a propriedade **CPU de destino** ou **Destino de plataforma** no projeto.|  
+|[Passo a passo: Habilitar um aplicativo ClickOnce ser executado em várias versões do .NET Framework](https://msdn.microsoft.com/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Explica como habilitar um aplicativo ClickOnce para instalar e executar em várias versões do .NET Framework.|  
 |[Passo a passo: Como criar um instalador personalizado para um aplicativo ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Explica como criar um instalador personalizado para instalar um aplicativo ClickOnce.|  
 |[Como: Publicar um aplicativo WPF com estilos visuais habilitados](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Fornece instruções passo a passo para resolver um erro que aparece quando você tentar publicar um aplicativo WPF com estilos visuais habilitados.|  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423208"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682349"
 ---
 # <a name="code-snippet-picker"></a>Seletor de snippet de código
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ O Editor de Códigos do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fornece 
   
 ## <a name="see-also"></a>Consulte também  
  [Melhores práticas para usar snippets de código](../../ide/best-practices-for-using-code-snippets.md)   
- [Snippets de código do Visual Basic IntelliSense](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Snippets de código do Visual Basic IntelliSense](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Definindo indicadores no código](../../ide/setting-bookmarks-in-code.md)   
  [Como: Usar snippets de código surround-with](../../ide/how-to-use-surround-with-code-snippets.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445936"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695250"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Executar o teste de unidade de um código Visual C# em um aplicativo da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 >   - Execute os testes depois de cada compilação.  
 >   - O VS Enterprise também contém Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar os testes no seu próprio código substituindo o código de teste para funcionalidade do sistema e de terceiros.  
 > 
->   Para obter mais informações, confira [Verificação do código usando testes de unidade](http://msdn.microsoft.com/library/dd264975.aspx) na biblioteca MSDN.  
+>   Para obter mais informações, confira [Verificação do código usando testes de unidade](https://msdn.microsoft.com/library/dd264975.aspx) na biblioteca MSDN.  
   
 ## <a name="BKMK_In_this_topic"></a> Neste tópico  
  [Criar a solução e o projeto de teste de unidade](#BKMK_Create_the_solution_and_the_unit_test_project)  

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438382"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697619"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -324,7 +324,7 @@ if (performance.mark && performance.measure) {
   
 - **Decodificação de imagem.** Indica o tempo gasto com a descompactação e a decodificação de imagens.  
   
-  Para o script e as categorias de estilo, o Criador de Perfis de Capacidade de Resposta de Interface de Usuário pode fornecer dados que você pode manipular no gráfico de detalhes da linha de tempo. Caso identifique problemas de script, você pode executar o criador de perfis de amostragem de CPU com o criador de perfis de Capacidade de Resposta da Interface de Usuário. Opcionalmente, você poderia usar o criador de perfis de função do Visual Studio para obter dados mais detalhados. Para saber mais, confira o tópico [Analisar os dados de Temporização de Função JavaScript](http://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
+  Para o script e as categorias de estilo, o Criador de Perfis de Capacidade de Resposta de Interface de Usuário pode fornecer dados que você pode manipular no gráfico de detalhes da linha de tempo. Caso identifique problemas de script, você pode executar o criador de perfis de amostragem de CPU com o criador de perfis de Capacidade de Resposta da Interface de Usuário. Opcionalmente, você poderia usar o criador de perfis de função do Visual Studio para obter dados mais detalhados. Para saber mais, confira o tópico [Analisar os dados de Temporização de Função JavaScript](https://msdn.microsoft.com/library/b5aea8d8-36df-47ba-a7ca-95406700ca9b).  
   
   Para as outras categorias de evento, talvez você possa identificar os efeitos colaterais da plataforma resultantes da adição de funcionalidades ao seu aplicativo, mas nesses casos você não poderá resolver determinados problemas de desempenho usando o Criador de Perfis de Capacidade de Resposta de Interface de Usuário.  
   
@@ -358,9 +358,9 @@ if (performance.mark && performance.measure) {
   
 - Assista a [este vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o criador de perfil de Capacidade de Resposta de Interface do Usuário.  
   
-- Leia as dicas de desempenho para aplicativos da Windows Store criadas para o Windows usando JavaScript. Para obter mais informações, consulte [Práticas Recomendadas para aplicativos da Windows Store usando JavaScript](http://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
+- Leia as dicas de desempenho para aplicativos da Windows Store criadas para o Windows usando JavaScript. Para obter mais informações, consulte [Práticas Recomendadas para aplicativos da Windows Store usando JavaScript](https://msdn.microsoft.com/library/windows/apps/hh465194.aspx).  
   
-- Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](http://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
+- Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
 ## <a name="see-also"></a>Consulte também  
- [Analisar o desempenho do aplicativo](http://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
+ [Analisar o desempenho do aplicativo](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)

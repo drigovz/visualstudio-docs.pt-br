@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7e65f7e01971e6cf27bfad75e1536e83b833bd3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432428"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680783"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Suporte para o SDK do Visual Studio
 Várias opções de suporte estão disponíveis para clientes que tenham dúvidas sobre como estender o ambiente de desenvolvimento integrado (IDE) do Visual Studio.
@@ -45,7 +45,7 @@ Você pode encontrar exemplos de código-fonte aberto de extensões do SDK do VS
 ## <a name="included-support"></a>Suporte incluído
 
 ### <a name="visual-studio-product-support"></a>Suporte de produto do Visual Studio
- Algum suporte está incluído com a compra de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produtos. Para obter mais informações, consulte [suporte do Visual Studio](http://msdn.microsoft.com/vstudio/cc136615.aspx). A Microsoft mantém uma equipe dedicada para responder a perguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidade.
+ Algum suporte está incluído com a compra de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] produtos. Para obter mais informações, consulte [suporte do Visual Studio](https://msdn.microsoft.com/vstudio/cc136615.aspx). A Microsoft mantém uma equipe dedicada para responder a perguntas sobre [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] extensibilidade.
 
 ### <a name="msdn-subscription-support"></a>Suporte de assinatura do MSDN
  Pacotes de assinatura do MSDN também podem incluir algum suporte. Para obter mais informações, consulte [suporte ao assinante MSDN](https://msdn.microsoft.com/subscriptions/aa718661.aspx).
@@ -67,4 +67,4 @@ Informações sobre solicitações de suporte individual podem ser encontradas e
 
 ## <a name="see-also"></a>Consulte também
 
-- [Fale conosco](../ide/talk-to-us.md)
+- [Fale conosco](../ide/feedback-options.md)

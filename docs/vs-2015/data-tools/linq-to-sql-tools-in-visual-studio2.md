@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 24b874ab71cba23a3fe6cf4a6fb36293d6753935
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384054"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697768"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas LINQ to SQL no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lanç
 
  O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tem duas áreas distintas na superfície de design: o painel das entidades à esquerda e o painel de métodos à direita. O painel das entidades é a principal superfície de design que exibe as classes de entidade, as associações, e hierarquias de herança. O painel de métodos é a superfície de design que exibe os métodos do <xref:System.Data.Linq.DataContext> que são mapeados para os procedimentos armazenados e as funções.
 
- O [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) fornece uma superfície de design visual para a criação [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade e associações (relações) que são baseadas em objetos em um banco de dados. Ou seja, o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] é usado para criar um modelo de objeto em um aplicativo que mapeia para objetos em um banco de dados. Ele também gera um <xref:System.Data.Linq.DataContext> fortemente tipado que é usado para enviar e receber dados entre as classes de entidade e o banco de dados. O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] também fornece funcionalidade para mapear os procedimentos armazenados e funções para métodos <xref:System.Data.Linq.DataContext> para retornar dados e preencher classes de entidade. Finalmente, o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] fornece a capacidade de criar relações de herança entre classes de entidade.
+ O [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) fornece uma superfície de design visual para a criação [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) classes de entidade e associações (relações) que são baseadas em objetos em um banco de dados. Ou seja, o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] é usado para criar um modelo de objeto em um aplicativo que mapeia para objetos em um banco de dados. Ele também gera um <xref:System.Data.Linq.DataContext> fortemente tipado que é usado para enviar e receber dados entre as classes de entidade e o banco de dados. O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] também fornece funcionalidade para mapear os procedimentos armazenados e funções para métodos <xref:System.Data.Linq.DataContext> para retornar dados e preencher classes de entidade. Finalmente, o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] fornece a capacidade de criar relações de herança entre classes de entidade.
 
 ## <a name="opening-the-or-designer"></a>Abrindo object relational Designer de Objetos
  Para adicionar um LINQ no modelo de entidade do SQL ao seu projeto, escolha **projeto &#124; Adicionar Novo Item** e, em seguida, escolha **Classes LINQ to SQL** na lista de itens de projeto:
@@ -62,7 +62,7 @@ O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lanç
  Como outros objetos, classes de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] podem usar a herança e ser derivadas de outras classes. Em uma base de dados, as relações de herança são criadas de várias maneiras. [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Para obter mais informações, confira [Como: Configurar a herança usando o Designer Relacional de Objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Consultas LINQ to SQL
- As classes de entidade criadas pelo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] são projetados para uso com [LINQ (consulta integrada à linguagem)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Para obter mais informações, confira [Como: Consultar informações](http://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
+ As classes de entidade criadas pelo [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] são projetados para uso com [LINQ (consulta integrada à linguagem)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d). Para obter mais informações, confira [Como: Consultar informações](https://msdn.microsoft.com/library/e538d288-2070-40ca-9da6-4fbc68cd6ad0).
 
 ## <a name="separating-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Separando o DataContext e o código de classe de entidade gerados em diferentes namespaces
  O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] fornece a **Namespace de contexto** e **Namespace da entidade** propriedades no <xref:System.Data.Linq.DataContext>. Essas propriedades que determinam o namespace <xref:System.Data.Linq.DataContext> e o código de classe de entidade são gerados. Por padrão, essas propriedades são vazios e <xref:System.Data.Linq.DataContext> e classes de entidade são gerados no namespace do aplicativo. Para gerar código em um namespace diferente do namespace do aplicativo, insira um valor nas propriedades do **Namespace do Contexto** e/ou do **Namespace da Entidade**.
@@ -100,4 +100,4 @@ O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lanç
  <xref:System.Data.Linq>
 
 ## <a name="see-also"></a>Consulte também
- [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [perguntas frequentes](http://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](http://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
+ [Ferramentas de dados do Visual Studio para .NET](../data-tools/visual-studio-data-tools-for-dotnet.md) [perguntas frequentes](https://msdn.microsoft.com/library/252ed666-0679-4eea-b71b-2f14117ef443) [LINQ to SQL](https://msdn.microsoft.com/library/73d13345-eece-471a-af40-4cc7a2f11655) [acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

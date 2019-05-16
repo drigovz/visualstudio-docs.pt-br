@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1820b1c9838e5558ea6ee96f2abdbcf88a24e4b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be85bd5c09d59df576d66cef6cf2d4e7e34876ab
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446132"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687647"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Início Rápido: Depurar HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -306,4 +306,4 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)   
  [Comandos do Console JavaScript](../debugger/javascript-console-commands.md)   
  [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
- [Suporte ao produto e acessibilidade](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Suporte ao produto e acessibilidade](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

@@ -12,18 +12,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9d8c539d91c95b03f4946e256de7a825a6df7ba
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fb155cc7bbf4efbda54666f91f2db3f92e6c378c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697070"
 ---
 # <a name="trycatch-activity-designer"></a>Designer de atividade de TryCatch
 O **TryCatch** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.TryCatch> atividade.  
   
 ## <a name="the-trycatch-activity"></a>A atividade de TryCatch  
- O <xref:System.Activities.Statements.TryCatch> atividade contém uma <xref:System.Activities.Statements.TryCatch.Try%2A> atividade, uma coleção de **Catch\<TException >** e um <xref:System.Activities.Statements.TryCatch.Finally%2A> atividade. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A>. São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se o <xref:System.Activities.Statements.TryCatch.Try%2A> atividade lança uma exceção, o <xref:System.Activities.Statements.TryCatch> atividade usa seus **Catch < TException\>**  coleção para coincidir com a exceção. Se houver uma correspondência, o <xref:System.Activities.Statements.Catch%601.Action%2A> de correspondente **Catch\<TException >** é executado, servindo como o lógica de manipulação de exceção de erro. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . [!INCLUDE[crdefault](../includes/crdefault-md.md)][Exceções](http://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
+ O <xref:System.Activities.Statements.TryCatch> atividade contém uma <xref:System.Activities.Statements.TryCatch.Try%2A> atividade, uma coleção de **Catch\<TException >** e um <xref:System.Activities.Statements.TryCatch.Finally%2A> atividade. Um <xref:System.Activities.Statements.Catch%601> do tipo **TException** contém um <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> e um <xref:System.Activities.Statements.Catch%601.Action%2A>. São usados juntos para implementar um mecanismo exceção baseado típico de manipulação de erro. Uma atividade de <xref:System.Activities.Statements.TryCatch> tentar executar a atividade de <xref:System.Activities.Statements.TryCatch.Try%2A> . Se o <xref:System.Activities.Statements.TryCatch.Try%2A> atividade lança uma exceção, o <xref:System.Activities.Statements.TryCatch> atividade usa seus **Catch < TException\>**  coleção para coincidir com a exceção. Se houver uma correspondência, o <xref:System.Activities.Statements.Catch%601.Action%2A> de correspondente **Catch\<TException >** é executado, servindo como o lógica de manipulação de exceção de erro. Se as atividades na seção de <xref:System.Activities.Statements.TryCatch.Try%2A> completa com êxito ou as atividades em <xref:System.Activities.Statements.TryCatch.Catches%2A> completa com êxito, a atividade de <xref:System.Activities.Statements.TryCatch> executa sua atividade de <xref:System.Activities.Statements.TryCatch.Finally%2A> . [!INCLUDE[crdefault](../includes/crdefault-md.md)][Exceções](https://msdn.microsoft.com/library/065205cc-52dd-4f30-9578-b17d8d113136).  
   
 ### <a name="using-the-trycatch-activity-designer"></a>Usando o designer de atividade de TryCatch  
  O **TryCatch** designer de atividade pode ser encontrado na **tratamento de erros** categoria dos **caixa de ferramentas**, que é acessado clicando o **dacaixadeferramentas** guia no lado esquerdo do [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu, ou CTLR + ALT + X.)  

@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439953"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686034"
 ---
 # <a name="rename-refactoring-c"></a>Refatoração Renomear (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439953"
 |-----------------|----------------------|  
 |Campo|Altera a declaração e usos do campo para o novo nome.|  
 |variável local|Altera a declaração e usos da variável para o novo nome.|  
-|Método|Altera o nome do método e todas as referências a esse método para o novo nome. **Observação:**  Quando você renomeia um método de extensão, a operação de renomeação é propagada para todas as instâncias do método que estão no escopo, independentemente se o método de extensão está sendo usado como um método estático ou um método de instância. Para obter mais informações, consulte [Métodos de extensão](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Método|Altera o nome do método e todas as referências a esse método para o novo nome. **Observação:**  Quando você renomeia um método de extensão, a operação de renomeação é propagada para todas as instâncias do método que estão no escopo, independentemente se o método de extensão está sendo usado como um método estático ou um método de instância. Para obter mais informações, consulte [Métodos de extensão](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Namespace|Altera o nome do namespace para o novo nome na declaração, todas as `using` instruções e nomes totalmente qualificados. **Observação:**  Ao renomear um namespace, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] também atualiza a **Namespace padrão** propriedade o **aplicativo** página do **Designer de projeto**. Essa propriedade não pode ser redefinida, selecionando **desfazer** da **editar** menu. Para redefinir a **Namespace padrão** valor da propriedade, você deve modificar a propriedade nas **Designer de projeto**. Para obter mais informações, consulte [página de aplicativo](../ide/reference/application-page-project-designer-csharp.md).|  
 |Propriedade|Altera a declaração e usos da propriedade para o novo nome.|  
 |Tipo|Altera todas as declarações e todos os usos do tipo para o novo nome, incluindo construtores e destruidores. Para tipos parciais, a operação de renomeação será propagado para todas as partes.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Consulte também  
  [Refatoração (C#)](../csharp-ide/refactoring-csharp.md)   
- [Tipos Anônimos](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Tipos Anônimos](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

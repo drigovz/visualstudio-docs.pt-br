@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384014"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685868"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Como: Usar o diagnóstico de gráficos com um dispositivo ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ O Diagnóstico de Gráficos oferece suporte à depuração remota de aplicativos
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Para habilitar a depuração remota em seu dispositivo baseado em ARM  
   
-1. Instalar o [política de Kits ARM](http://msdn.microsoft.com/windows/desktop/dn469188) em seu dispositivo baseado em ARM.  
+1. Instalar o [política de Kits ARM](https://msdn.microsoft.com/windows/desktop/dn469188) em seu dispositivo baseado em ARM.  
   
 2. Instalar o [ferramentas de depuração remota](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) em seu dispositivo baseado em ARM.  
   
 > [!IMPORTANT]
-> No caso de dispositivos do Windows Phone 8.1, pode ser preciso registrar seu telefone para o desenvolvimento. Para fazer isso, você deve ser um desenvolvedor registrado. Para obter mais informações, consulte [como implantar e executar um aplicativo para Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> No caso de dispositivos do Windows Phone 8.1, pode ser preciso registrar seu telefone para o desenvolvimento. Para fazer isso, você deve ser um desenvolvedor registrado. Para obter mais informações, consulte [como implantar e executar um aplicativo para Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Após habilitar a depuração remota em seu dispositivo, torne-o seu destino de depuração e inicie o Diagnóstico de Gráficos.  
   

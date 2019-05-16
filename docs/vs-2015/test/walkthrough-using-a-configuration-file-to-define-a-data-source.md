@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f078d8a15cbef4c2f17b154af13a997b77da8766
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695056"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
   
 1. Adicione um teste de unidade ao projeto de teste.  
   
-     Para mais informações, consulte [Criar e executar testes de unidade para código existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Para mais informações, consulte [Criar e executar testes de unidade para código existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2. Substitua o conteúdo do teste de unidade gerado automaticamente pelo código a seguir:  
   
@@ -270,6 +270,6 @@ Este passo a passo ilustra como usar uma fonte de dados definida em um arquivo a
   
 ## <a name="see-also"></a>Consulte também  
  [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)   
- [Criar e Executar Testes de Unidade para Código Existente](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Criar e Executar Testes de Unidade para Código Existente](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Testando o aplicativo](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Como: criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md)

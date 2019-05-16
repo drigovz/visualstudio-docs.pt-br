@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 862842bd41762b15a38254c9d5e21bf06cdca10a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438893"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703202"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Caixa de diálogo do editor de regra (legados)
 Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -76,7 +76,7 @@ Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas
   
   Precedência de operadores de expressão segue regras de precedência de operador C#.  
   
-  Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](http://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
+  Para obter mais informações sobre as condições, consulte [usando condições em fluxos de trabalho](https://msdn.microsoft.com/541211f5-d382-4810-894f-71f00b34fa77).  
   
 ### <a name="halt-and-update-functions"></a>Interromper e atualizar funções  
  **Ações:** e **ações Else:** dar suporte a expressões **interromper** e **atualização** funções. Para usar o **Halt** de função, digite **interromper** em um **, em seguida, a ação:** ou **outra ação:** caixa de texto. O **Halt** ação faz com que a regra a execução de parar imediatamente, e o controle retorna para o código de chamada. Você usa o **atualização** função com o encadeamento de encaminhamento.  

@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 65c802964a03fdfe99e4f2f51988de36a806dcbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f167b3e9d27145284defa2ff491bb9ce0085f2a3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090882"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684908"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Se você executar uma destas alterações e tentar aplicar alterações de códi
 ## <a name="BKMK_Unsupported_scenarios"></a> Cenários sem suporte  
  Editar e Continuar para C/C++ está indisponível nos seguintes cenários de depuração:  
   
-- Depuração de aplicativos nativos compilados com [/Zo (aprimorar otimizado de depuração)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
+- Depuração de aplicativos nativos compilados com [/Zo (aprimorar otimizado de depuração)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f)  
   
 - Nas versões do Visual Studio anteriores ao Visual Studio 2015 atualização 1, aplicativos da Windows Store ou componentes de depuração. A partir do Visual Studio 2015 atualização 1, você pode usar Editar e continuar em aplicativos da Windows Store C++ e aplicativos de DirectX, porque agora ela dá suporte a `/ZI` comutador de compilador com o `/bigobj` alternar. Você também pode usar Editar e continuar com os binários compilados com o `/FASTLINK` alternar.  
   
@@ -141,7 +141,7 @@ Se você executar uma destas alterações e tentar aplicar alterações de códi
 3. Desmarque a caixa de seleção **Permitir Pré-Compilação**.  
   
 ## <a name="BKMK_IDL_Attribute_Limitations"></a> Limitações de atributo IDL  
- Editar e Continuar não regeneram arquivos IDL (definição da interface). Consequentemente, as alterações aos atributos de IDL não serão refletidas ao depurar. Para ver o resultado das alterações em atributos IDL, você deve parar a depuração e recompilar seu aplicativo. Editar e Continuar não gera um erro ou um aviso se os atributos de IDL tiverem sido alterados. Para obter mais informações, confira [Atributos de IDL](http://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
+ Editar e Continuar não regeneram arquivos IDL (definição da interface). Consequentemente, as alterações aos atributos de IDL não serão refletidas ao depurar. Para ver o resultado das alterações em atributos IDL, você deve parar a depuração e recompilar seu aplicativo. Editar e Continuar não gera um erro ou um aviso se os atributos de IDL tiverem sido alterados. Para obter mais informações, confira [Atributos de IDL](https://msdn.microsoft.com/library/04c596f4-c97b-4952-8053-316678b1d0b6).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar (Visual C++)](../debugger/edit-and-continue-visual-cpp.md)

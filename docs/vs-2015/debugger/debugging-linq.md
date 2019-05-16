@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108562"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691264"
 ---
 # <a name="debugging-linq"></a>Depurando LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte à depuração de có
 ## <a name="BKMK_ViewingLINQResults"></a> Exibindo os resultados do LINQ  
  É possível exibir o resultado de uma declaração LINQ usando DataTips, a janela de observação, e a caixa de diálogo QuickWatch. Ao usar uma janela de origem, você pode pausar o ponteiro em uma consulta na janela de origem e um DataTip aparecerá. É possível copiar uma variável LINQ e colá-la na janela de observação ou na caixa de diálogo QuickWatch.  
   
- Em LINQ, uma consulta não é avaliada quando é criada ou declarada, mas somente quando a consulta é usada. Portanto, a consulta não terá um valor até ser avaliada. Para obter uma descrição completa da criação de consulta e de avaliação, consulte [Introdução a consultas LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) ou [escrever sua primeira consulta de LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ Em LINQ, uma consulta não é avaliada quando é criada ou declarada, mas somente quando a consulta é usada. Portanto, a consulta não terá um valor até ser avaliada. Para obter uma descrição completa da criação de consulta e de avaliação, consulte [Introdução a consultas LINQ (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) ou [escrever sua primeira consulta de LINQ](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Para exibir o resultado de uma consulta, o depurador deverá avaliá-lo. Essa avaliação implícita, que ocorre quando você exibe um resultado de consulta LINQ no depurador, tem alguns efeitos que você deve considerar:  
   
@@ -50,7 +50,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte à depuração de có
  Em consultas LINQ to SQL, o código de predicado está além do controle do depurador. Portanto, você não poderá entrar no código de predicado. Qualquer consulta que compila a uma árvore de expressão gera código que vai além do controle do depurador.  
   
 ### <a name="stepping-in-visual-basic"></a>Executando etapas no Visual Basic  
- Quando estiver depurando um programa do Visual Basic e o depurador encontrar uma declaração de consulta, ele não irá entrará na declaração, mas realçará a declaração inteira como uma única instrução. Esse comportamento ocorre porque a consulta não é avaliada até ser chamada. Para obter mais informações, consulte [Introdução ao LINQ no Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Quando estiver depurando um programa do Visual Basic e o depurador encontrar uma declaração de consulta, ele não irá entrará na declaração, mas realçará a declaração inteira como uma única instrução. Esse comportamento ocorre porque a consulta não é avaliada até ser chamada. Para obter mais informações, consulte [Introdução ao LINQ no Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Caso você passe pelo código de exemplo a seguir, o depurador realça a declaração de consulta, ou a criação de consulta, como uma instrução única.  
   
@@ -117,8 +117,8 @@ End Function
  No Visual Basic, você pode usar Editar e Continuar no código de não LINQ, mesmo em um método que contém uma consulta LINQ. É possível adicionar ou remover o código antes da instrução LINQ, mesmo se as alterações afetarem o número da linha de consulta LINQ. Sua experiência de depuração do Visual Basic para código de não LINQ permanecerá a mesma como era antes da introdução do LINQ. No entanto, não é possível modificar, adicionar, ou remover uma consulta LINQ, a menos que você deseje parar a depuração para aplicar as alterações.  
   
 ## <a name="see-also"></a>Consulte também  
- [Depuração de SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Efeitos colaterais e expressões](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [Depuração de SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Efeitos colaterais e expressões](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)   
- [Introdução a consultas LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Introdução ao LINQ no Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [Introdução a consultas LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Introdução ao LINQ no Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116739"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680901"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refatoração Extrair Interface (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Extrair Interface é uma operação de refatoração que fornece uma maneira fácil de criar uma nova interface com os membros que se originam em uma classe existente, struct ou interface.  
   
- Quando vários clientes usam o mesmo subconjunto de membros de uma classe, struct ou interface, ou várias classes, structs ou interfaces têm um subconjunto de membros em comum, pode ser útil incorporar o subconjunto de membros em uma interface. Para obter mais informações sobre como usar interfaces, consulte [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Quando vários clientes usam o mesmo subconjunto de membros de uma classe, struct ou interface, ou várias classes, structs ou interfaces têm um subconjunto de membros em comum, pode ser útil incorporar o subconjunto de membros em uma interface. Para obter mais informações sobre como usar interfaces, consulte [Interfaces](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Extrair Interface gera uma interface em um novo arquivo e posiciona o cursor no início do novo arquivo. Você pode especificar quais membros para extrair para a nova interface, o nome da nova interface e o nome do arquivo gerado usando o **extrair Interface** caixa de diálogo.  
   

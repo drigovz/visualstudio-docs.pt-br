@@ -9,17 +9,17 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f2081b302bfb288b08119913081154b970fadcda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425368"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692573"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para procurar registros específicos em um conjunto de dados, use o método FindBy em DataTable, escreva seu próprio loop de foreach pela coleção de linhas da tabela ou usar [LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
+Para procurar registros específicos em um conjunto de dados, use o método FindBy em DataTable, escreva seu próprio loop de foreach pela coleção de linhas da tabela ou usar [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17). LINQ to DataSet.  
   
 ## <a name="dataset-case-sensitivity"></a>Conjunto de dados diferenciação  
  Dentro de um conjunto de dados, nomes de coluna e tabela diferenciam maiusculas de minúsculas por padrão — ou seja, uma tabela em um conjunto de dados chamado "Clientes" pode também ser referida como "clientes". Isso coincide com as convenções de nomenclatura em vários bancos de dados, incluindo o SQL servidor SQL Server, o comportamento padrão é que os nomes dos elementos de dados não podem ser diferenciados apenas por maiusculas.  
@@ -65,7 +65,7 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
  Você pode usar um <xref:System.Data.DataRelation> objeto para localizar registros relacionados chamando o <xref:System.Data.DataRow.GetChildRows%2A> método de um <xref:System.Data.DataRow> na tabela pai. Esse método retorna uma matriz de registros filho relacionados. Ou você pode chamar o <xref:System.Data.DataRow.GetParentRow%2A> método de um <xref:System.Data.DataRow> na tabela filho. Esse método retorna um único <xref:System.Data.DataRow> da tabela pai.  
   
- Esta página fornece exemplos que usam conjuntos de dados tipados. Para obter informações sobre navegar em relações em conjuntos de dados não tipados, consulte [navegando em DataRelations](http://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
+ Esta página fornece exemplos que usam conjuntos de dados tipados. Para obter informações sobre navegar em relações em conjuntos de dados não tipados, consulte [navegando em DataRelations](https://msdn.microsoft.com/library/e5e673f4-9b44-45ae-aaea-c504d1cc5d3e).  
   
 > [!NOTE]
 > Se você estiver trabalhando em um aplicativo Windows Forms e usando os recursos de vinculação de dados para exibir dados, o formulário gerado pelo designer pode fornecer funcionalidade suficiente para seu aplicativo. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
