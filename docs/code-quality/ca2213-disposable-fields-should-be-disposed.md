@@ -1,6 +1,6 @@
 ---
 title: 'CA2213: Campos descartáveis devem ser descartados'
-ms.date: 11/05/2018
+ms.date: 05/14/2019
 ms.topic: reference
 f1_keywords:
 - DisposableFieldsShouldBeDisposed
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fff209c9a432b78ce27e9c344c1afd29e93d57f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b38157fcc23561b47a919151aa78a71f98b3909b
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806674"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805006"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Campos descartáveis devem ser descartados
 
@@ -36,10 +36,21 @@ Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName> declar
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Um tipo é responsável pelo descarte de todos os seus recursos não gerenciados. Regra CA2213 verifica para ver se um tipo descartável (ou seja, uma que implementa <xref:System.IDisposable>) `T` declara um campo `F` que é uma instância de um tipo descartável `FT`. Para cada campo `F` que foi atribuído a um objeto criado localmente dentro de métodos ou inicializadores do tipo recipiente `T`, a regra tenta localizar uma chamada para `FT.Dispose`. A regra procura os métodos chamados pela `T.Dispose` e um nível inferior (ou seja, os métodos chamados pelos métodos chamados `FT.Dispose`).
+Um tipo é responsável pelo descarte de todos os seus recursos não gerenciados. Regra CA2213 verifica para ver se um tipo descartável (ou seja, uma que implementa <xref:System.IDisposable>) `T` declara um campo `F` que é uma instância de um tipo descartável `FT`. Para cada campo `F` que foi atribuído a um objeto criado localmente dentro de métodos ou inicializadores do tipo recipiente `T`, a regra tenta localizar uma chamada para `FT.Dispose`. A regra procura os métodos chamados pela `T.Dispose` e um nível inferior (ou seja, os métodos chamados pelos métodos chamados `T.Dispose`).
 
 > [!NOTE]
-> CA2213 de regra é acionada somente para os campos que são atribuídos a um objeto descartável criado localmente em inicializadores e métodos do tipo recipiente. Se o objeto é criado ou atribuído fora do tipo `T`, a regra não é acionado. Isso reduz o ruído para casos em que o tipo recipiente não possui a responsabilidade para o descarte do objeto.
+> Diferente de [casos especiais](#special-cases), regra CA2213 acionado somente para os campos que são atribuídos a um objeto descartável criado localmente em inicializadores e métodos do tipo recipiente. Se o objeto é criado ou atribuído fora do tipo `T`, a regra não é acionado. Isso reduz o ruído para casos em que o tipo recipiente não possui a responsabilidade para o descarte do objeto.
+
+### <a name="special-cases"></a>Casos especiais
+
+CA2213 regra também podem acionar para os campos dos tipos a seguir, mesmo se o objeto que sejam atribuídas a elas não será criado localmente:
+
+- <xref:System.IO.Stream?displayProperty=nameWithType>
+- <xref:System.IO.TextReader?displayProperty=nameWithType>
+- <xref:System.IO.TextWriter?displayProperty=nameWithType>
+- <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
+
+Passando um objeto de um desses tipos para um construtor e, em seguida, atribuí-la a um campo indicam um *dispose de transferência de propriedade* para o tipo construído recentemente. Ou seja, o tipo construído recentemente agora é responsável pelo descarte do objeto. Se o objeto não for descartado, ocorre uma violação de CA2213.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -47,7 +58,10 @@ Para corrigir uma violação dessa regra, chame <xref:System.IDisposable.Dispose
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se você não é responsável para liberar os recursos mantidos pelo campo, ou se a chamada para <xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra.
+É seguro suprimir um aviso nessa regra se:
+
+- O tipo de sinalizador não é responsável por liberar os recursos mantidos pelo campo (ou seja, o tipo não tem *dispose propriedade*)
+- A chamada para <xref:System.IDisposable.Dispose%2A> ocorre em um nível mais profundo de chamada que as verificações de regra
 
 ## <a name="example"></a>Exemplo
 
