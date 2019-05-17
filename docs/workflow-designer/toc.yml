@@ -1,8 +1,8 @@
 - name: Desenvolver aplicativos com o Designer de Fluxo de Trabalho
   items:
-    - name: Desenvolver aplicativos com o Designer de Fluxo de Trabalho
+    - name: Visão geral e pré-requisitos
       href: developing-applications-with-the-workflow-designer.md
-    - name: Criar um projeto de Fluxo de Trabalho
+    - name: Projetos de fluxo de trabalho
       items:
         - name: Criar um projeto de Fluxo de Trabalho
           href: creating-a-workflow-project.md
@@ -28,11 +28,10 @@
       href: how-to-add-comments-to-a-workflow-in-the-workflow-designer.md
     - name: Designers de atividade
       items:
-        - name: Designers de atividade
-          href: using-the-activity-designers.md
         - name: Designer de atividade de fluxo de controle
           items:
-            - name: Designer de atividade de fluxo de controle
+            - name: Visão geral e referência
+              displayName: Control flow activity designers
               href: control-flow-activity-designers.md
             - name: Designer de atividade DoWhile
               href: dowhile-activity-designer.md
@@ -56,7 +55,8 @@
               href: while-activity-designer.md
         - name: Designer de atividade do fluxograma
           items:
-            - name: Designer de atividade do fluxograma
+            - name: Visão geral e referência
+              displayName: Flow chart activity designers
               href: flowchart-activity-designers.md
             - name: Designer de atividade do fluxograma
               href: flowchart-activity-designer.md
@@ -66,7 +66,8 @@
               href: flowswitch-t-activity-designer.md
         - name: Designer de atividade do computador de estado
           items:
-            - name: Designer de atividade do computador de estado
+            - name: Visão geral e referência
+              displayName: State machine activity designers
               href: state-machine-activity-designers.md
             - name: Designer de atividade de StateMachine
               href: statemachine-activity-designer.md
@@ -78,7 +79,8 @@
               href: transition-activity-designer.md
         - name: Designer de atividade de mensagem
           items:
-            - name: Designer de atividade de mensagem
+            - name: Visão geral e referência
+              displayName: Messaging activity designers
               href: messaging-activity-designers.md
             - name: Designer de atividade de CorrelationScope
               href: correlationscope-activity-designer.md
@@ -96,7 +98,8 @@
               href: transactedreceivescope-activity-designer.md
         - name: Designer de atividade do tempo de execução
           items:
-            - name: Designer de atividade do tempo de execução
+            - name: Visão geral e referência
+              displayName: Run-time activity designers
               href: runtime-activity-designers.md
             - name: Persistir o designer de atividades
               href: persist-activity-designer.md
@@ -104,7 +107,8 @@
               href: terminateworkflow-activity-designer.md
         - name: Designer de atividade de primitivas
           items:
-            - name: Designer de atividade de primitivas
+            - name: Visão geral e referência
+              displayName: Primitives activity designers
               href: primitives-activity-designers.md
             - name: Atribua o designer de atividades
               href: assign-activity-designer.md
@@ -118,7 +122,8 @@
               href: writeline-activity-designer.md
         - name: Designer de atividade de transação
           items:
-            - name: Designer de atividade de transação
+            - name: Visão geral e referência
+              displayName: Transaction activity designers
               href: transaction-activity-designers.md
             - name: Designer de atividade de CancellationScope
               href: cancellationscope-activity-designer.md
@@ -132,7 +137,8 @@
               href: transactionscope-activity-designer.md
         - name: Designer de atividade de coleção
           items:
-            - name: Designer de atividade de coleção
+            - name: Visão geral e referência
+              displayName: Collection activity designers
               href: collection-activity-designers.md
             - name: Designer de atividade AddToCollection<T>
               href: addtocollection-t-activity-designer.md
@@ -144,7 +150,8 @@
               href: removefromcollection-t-activity-designer.md
         - name: Designer de atividade de tratamento de erro
           items:
-            - name: Designer de atividade de tratamento de erro
+            - name: Visão geral e referência
+              displayName: Error handling activity designers
               href: error-handling-activity-designers.md
             - name: Designer de atividade de Relançar
               href: rethrow-activity-designer.md
@@ -154,11 +161,12 @@
               href: trycatch-activity-designer.md
         - name: Designer de atividade de migração
           items:
-            - name: Designer de atividade de migração
+            - name: Visão geral e referência
+              displayName: Migration activity designers
               href: migration-activity-designers.md
             - name: Designer de atividade de Interoperabilidade
               href: interop-activity-designer.md
-    - name: Depurar fluxos de trabalho
+    - name: Depurar
       items:
         - name: Depurar fluxos de trabalho
           href: debugging-workflows-with-the-workflow-designer.md
@@ -168,10 +176,8 @@
           href: how-to-debug-xaml-with-the-workflow-designer.md
         - name: Cenários de depuração sem suporte
           href: unsupported-debugging-scenarios-in-the-workflow-designer.md
-    - name: Referência de interface de usuário
+    - name: Referência de interface do usuário
       items:
-        - name: Referência de interface de usuário
-          href: workflow-designer-ui-help.md
         - name: Procurar e selecione uma caixa de diálogo de tipo do .NET
           href: browse-and-select-a-dotnet-type-dialog-box.md
         - name: Caixa de diálogo definição de CorrelatesOn

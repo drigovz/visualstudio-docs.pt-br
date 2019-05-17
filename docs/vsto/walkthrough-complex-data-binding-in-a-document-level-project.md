@@ -174,7 +174,7 @@ ms.locfileid: "62981670"
 
 1. Selecione uma célula dentro do objeto de lista.
 
-    Uma nova linha aparece na parte inferior da lista, com um asterisco (* *\\* * *) na primeira célula da nova linha.
+    Uma nova linha aparece na parte inferior da lista, com um asterisco (**\\***) na primeira célula da nova linha.
 
 2. Adicione as seguintes informações na linha vazia.
 

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430122"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695498"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
   
    2. Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.  
   
-        Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
+        Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) para exibir os detalhes de carregamentos de assembly com falha.  
   
 2. Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nó do Registro CLSID:  
   
