@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32ac2e430abdc068070457dcf362e39dcbc0b398
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dc6923c4fd575d61b4854d9bb7d32f541bdda162
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797548"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841992"
 ---
 # <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identificadores devem ser diferentes em algo além das maiúsculas e minúsculas
 
@@ -54,7 +54,7 @@ Não suprima um aviso nessa regra. A biblioteca não pode ser utilizada em todos
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1708.api_surface = private, internal
 ```
 

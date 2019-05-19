@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: bf3e13697f39f7d0f531549d4c018b9f42872596
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f35e450f17a671b800d003b94ceb5ebc2321c90
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545222"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841415"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: não aguardar diretamente uma tarefa
 
@@ -76,7 +76,7 @@ public async Task Execute()
 
 Você pode configurar se deseja excluir os métodos assíncronos que não retornam um valor a partir dessa regra. Para excluir esses tipos de métodos, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA2007.exclude_async_void_methods = true
 
@@ -86,7 +86,7 @@ dotnet_code_quality.CA2007.skip_async_void_methods = true
 
 Você também pode configurar quais tipos de assembly ao qual aplicar essa regra de saída. Por exemplo, para aplicar somente a regra ao código que produz um aplicativo de console ou uma biblioteca de vínculos dinâmicos (ou seja, não uma interface do usuário app), adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.CA2007.output_kind = ConsoleApplication, DynamicallyLinkedLibrary
 ```
 

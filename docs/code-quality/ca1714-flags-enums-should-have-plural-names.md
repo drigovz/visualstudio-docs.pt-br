@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5a1532b67fdaeb2a44663db77cfc8a1056004e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a412161d9f91830486378d4e8228386cfd3fb7
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546167"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841896"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Enumerações de sinalizador devem ter nomes no plural
 
@@ -54,7 +54,7 @@ Verifique o nome da enumeração uma palavra no plural ou remova o <xref:System.
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1714.api_surface = private, internal
 ```
 

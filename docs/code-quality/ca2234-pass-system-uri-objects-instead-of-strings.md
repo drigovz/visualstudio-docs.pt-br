@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 97b73793d0c473727960dbde8fe32fc584ff6dd5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e7f333ae6f9e938261c0f91196120f3376d0388
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541690"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841593"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Passar objetos System.Uri em vez de cadeias de caracteres
 
@@ -56,7 +56,7 @@ Para corrigir uma violação dessa regra, chame a sobrecarga que utiliza o <xref
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca2234.api_surface = private, internal
 ```
 

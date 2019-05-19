@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46a8c9a4e22c7a54a4b2b68f95bb2b81f3a0888e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778587"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842085"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Tipos de suporte estático devem ser selados
 
@@ -56,7 +56,7 @@ Suprima um aviso nessa regra somente se o tipo foi projetado para ser herdada. A
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 

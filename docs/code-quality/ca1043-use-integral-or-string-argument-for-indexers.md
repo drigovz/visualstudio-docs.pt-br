@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d47b39208fce297fd058d6976b9fa7d7593cb9a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca381d88524535ad042b5bd3efda25f8cc350fa4
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778792"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842120"
 ---
 # <a name="ca1043-use-integral-or-string-argument-for-indexers"></a>CA1043: Usar argumento integral ou de cadeia de caracteres para indexadores
 
@@ -56,7 +56,7 @@ Suprima um aviso nessa regra somente após considerar cuidadosamente a necessida
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1043.api_surface = private, internal
 ```
 

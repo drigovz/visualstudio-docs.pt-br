@@ -14,11 +14,11 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 ms.openlocfilehash: 26d9169be242990b9ca99b4fe4fe043d56fb7f30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906597"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65839641"
 ---
 Você deve ser capaz de depurar seu código com os símbolos que você gerar no computador do Visual Studio. O desempenho do depurador remoto é muito melhor quando você usa símbolos locais.  Se você precisar usar símbolos remotos, você precisa informar o monitor de depuração remota para procurar por símbolos no computador remoto.  
 

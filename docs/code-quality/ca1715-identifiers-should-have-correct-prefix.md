@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca9c4681cc19917ef965a4c8577e9559d71dd4be
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807141"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841960"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
 
@@ -62,7 +62,7 @@ Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-ana
 
 Você pode configurar se deseja ou não excluir parâmetros de tipo de caractere único da regra. Por exemplo, para especificar que essa regra *não deve* analisar parâmetros de tipo de caractere único, adicione um dos seguintes pares chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 # Package version 2.9.0 and later
 dotnet_code_quality.CA1715.exclude_single_letter_type_parameters = true
 
@@ -77,7 +77,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 
 Você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1715.api_surface = private, internal
 ```
 
