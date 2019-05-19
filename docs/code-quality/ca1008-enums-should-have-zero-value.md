@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb79d2944bdb49c59fd53fb30e1497c57c5c516
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7db2961022a6d3a168812b5b85552e21dcd3f9da
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779646"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842506"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerações devem ter valor zero
 
@@ -58,7 +58,7 @@ Não suprima um aviso nessa regra, exceto para as enumerações atribuído de si
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1008.api_surface = private, internal
 ```
 

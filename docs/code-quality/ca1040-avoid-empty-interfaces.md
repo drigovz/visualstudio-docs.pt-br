@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 726953de0a92c0237ecaf7b724d9586a5d0f4c16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 25e798dac05213d8f66fe7ba3c7a737a71f6030e
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778753"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842235"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar interfaces vazias
 
@@ -58,7 +58,7 @@ Remova a interface ou adicionar membros a ela. Se a interface vazia estiver send
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1040.api_surface = private, internal
 ```
 

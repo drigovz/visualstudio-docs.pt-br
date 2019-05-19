@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e4008872a7cb96386ef702d21ba8a18d96037d83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bfedb55c0dcdb1077faea03bca56488ab3da1525
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779377"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65842464"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usar propriedades quando apropriado
 
@@ -75,7 +75,7 @@ Suprima um aviso nessa regra, se o método de atender a pelo menos um dos crité
 
 Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
 
-```
+```ini
 dotnet_code_quality.ca1024.api_surface = private, internal
 ```
 

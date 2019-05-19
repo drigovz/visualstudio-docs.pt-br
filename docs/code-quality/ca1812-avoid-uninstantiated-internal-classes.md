@@ -1,6 +1,6 @@
 ---
 title: 'CA1812: Evitar classes internas sem instâncias'
-ms.date: 11/04/2016
+ms.date: 05/16/2019
 ms.topic: reference
 f1_keywords:
 - CA1812
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: def22bd4aee4f64b5e14f2bbe7978a0dfa061261
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796898"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65841444"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar classes internas sem instâncias
 
@@ -32,7 +32,7 @@ ms.locfileid: "62796898"
 
 ## <a name="cause"></a>Causa
 
-Uma instância de um tipo no nível de assembly não é criada pelo código no assembly.
+Um tipo interno de (nível de assembly) nunca é instanciado.
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -50,19 +50,17 @@ Os seguintes tipos não são verificados por essa regra:
 
 - Tipos de matriz emitidos pelo compilador
 
-- Tipos que não pode ser instanciada e que definem `static` (`Shared` no Visual Basic) apenas métodos.
+- Tipos que não pode ser instanciada e que apenas definem [ `static` ](/dotnet/csharp/language-reference/keywords/static) ([ `Shared` no Visual Basic](/dotnet/visual-basic/language-reference/modifiers/shared)) métodos.
 
-Se você aplicar <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> ao assembly que está sendo analisado, essa regra não ocorrerá nos construtores que são marcados como `internal` porque você não pode determinar se um campo está sendo usado por outro `friend` assembly.
-
-Mesmo que não é possível contornar essa limitação na análise de código do Visual Studio, o FxCop autônomo externo ocorrer em construtores internos se cada `friend` assembly está presente na análise.
+Se você aplicar a <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> ao assembly que está sendo analisado, essa regra não marcará os tipos que são marcados como [ `internal` ](/dotnet/csharp/language-reference/keywords/internal) ([ `Friend` no Visual Basic](/dotnet/visual-basic/language-reference/modifiers/friend)) como um campo pode ser usado por um assembly amigável.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
+Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas `static` métodos, adicione uma das opções a seguir para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
 
 - Um construtor particular para tipos que se destinam a versões do .NET Framework 1.0 e 1.1.
 
-- O `static` (`Shared` no Visual Basic) modificador para tipos que se destinam [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+- O `static` modificador para C# tipos de destino [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] ou posterior.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -70,9 +68,9 @@ Para corrigir uma violação dessa regra, remova o tipo ou adicione o código qu
 
 - A classe é criada por meio de métodos de reflexão de associação tardia como <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>.
 
-- A classe é criada automaticamente pelo tempo de execução ou [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Por exemplo, as classes que implementam <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
+- A classe é criada automaticamente pelo tempo de execução ou ASP.NET. Alguns exemplos de classes criadas automaticamente são aqueles que implementam <xref:System.Configuration.IConfigurationSectionHandler?displayProperty=fullName> ou <xref:System.Web.IHttpHandler?displayProperty=fullName>.
 
-- A classe é passada como um parâmetro de tipo genérico que tem uma nova restrição. Por exemplo, o exemplo a seguir irá disparar essa regra.
+- A classe é passada como um parâmetro de tipo que tem um [ `new` restrição](/dotnet/csharp/language-reference/keywords/new-constraint). O exemplo a seguir será sinalizado pela regra CA1812:
 
     ```csharp
     internal class MyClass
@@ -88,17 +86,13 @@ Para corrigir uma violação dessa regra, remova o tipo ou adicione o código qu
             return new T();
         }
     }
-    // [...]
+
     MyGeneric<MyClass> mc = new MyGeneric<MyClass>();
     mc.Create();
     ```
 
-  Nessas situações, é recomendável que suprimir este aviso.
-
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
-
-[CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
-
-[CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+- [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+- [CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
+- [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
