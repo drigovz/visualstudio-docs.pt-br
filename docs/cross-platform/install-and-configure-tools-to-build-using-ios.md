@@ -1,7 +1,7 @@
 ---
 title: Instalar e configurar ferramentas para compilar usando iOS | Microsoft Docs
 ms.custom: ''
-ms.date: 05/21/2018
+ms.date: 05/13/2019
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06449d299fdfd54bdb2526d16897e815900a9c1c
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818478"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614443"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Instalar e configurar ferramentas de build usando o iOS
 
@@ -32,13 +32,15 @@ Após ter instalado as ferramentas para compilar usando o iOS, consulte neste t�
 
 Para instalar e usar o agente remoto para desenvolver código para iOS, é necessário primeiro ter estes pré-requisitos:
 
-- Um computador Mac executando o OS X Mavericks (versão 10.9) ou posterior
+- Um computador Mac executando macOS Mojave versão 10.14 ou posterior
 
 - Uma [Apple ID](https://appleid.apple.com/)
 
-- Uma conta do [Programa de Desenvolvedores de iOS](https://developer.apple.com/programs/ios/) ativa com a Apple
+- Uma conta do [Programa de Desenvolvedor da Apple](https://developer.apple.com/programs/) ativa
 
-- [Xcode](https://developer.apple.com/xcode/downloads/) versão 6 ou posterior.
+   Você pode obter uma conta gratuita que permita aplicativos de sideload para um dispositivo iOS somente para teste, mas não para distribuição.
+
+- [Xcode](https://developer.apple.com/xcode/downloads/) versão 10.2.1 ou posterior
 
    O Xcode pode ser baixado da App Store.
 
@@ -48,23 +50,22 @@ Para instalar e usar o agente remoto para desenvolver código para iOS, é neces
 
    `xcode-select --install`
 
-- Um identidade de assinatura do iOS configurada no Xcode
+- Uma conta de ID da Apple configurada no Xcode como uma identidade de assinatura para assinar aplicativos
 
-   Para obter informações detalhadas sobre como obter uma Identidade de Assinatura do iOS, confira [Manter os certificados e as identidades de assinatura](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html) na Biblioteca do Desenvolvedor do iOS. Para ver ou definir a identidade de assinatura no Xcode, abra o menu do **Xcode** e escolha **Preferences** (Preferências). Selecione **Accounts** (Contas) e escolha sua Apple ID e, em seguida, escolha o botão **View Details** (Exibir Detalhes).
+   Para ver ou definir a identidade de assinatura no Xcode, abra o menu do **Xcode** e escolha **Preferences** (Preferências). Selecione **Accounts** (Contas) e escolha sua Apple ID e, em seguida, escolha o botão **View Details** (Exibir Detalhes). Veja [Adicionar sua conta de ID da Apple](https://help.apple.com/xcode/mac/current/#/devaf282080a) para obter instruções detalhadas.
+   
+   Para obter informações detalhadas sobre requisitos de assinatura, consulte [O que é a assinatura de aplicativo](https://help.apple.com/xcode/mac/current/#/dev3a05256b8). 
 
-- Se você estiver usando um dispositivo iOS para desenvolvimento, um perfil de provisionamento será configurado no Xcode para seu dispositivo
+- Se estiver usando um dispositivo iOS para desenvolvimento, use um Perfil de provisionamento configurado no Xcode para seu dispositivo
 
-   Para obter informações detalhadas sobre como criar Perfis de provisionamento, confira [Criar perfis de provisionamento usando a Central de Associados](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html#//apple_ref/doc/uid/TP40012582-CH30-SW24) na Biblioteca do Desenvolvedor do iOS.
+   O Xcode fornece a assinatura automática na qual ele cria certificados de autenticação conforme necessário. Para obter informações detalhadas sobre a assinatura automática do Xcode, consulte [assinatura automática](https://help.apple.com/xcode/mac/current/#/dev80cc24546).
 
-- [Node.js](https://nodejs.org/)
+   Se quiser fazer a assinatura manual, você precisará criar um perfil de provisionamento para seu aplicativo. Para obter informações detalhadas sobre como criar Perfis de provisionamento, consulte [Criar um perfil de provisionamento de desenvolvimento](https://help.apple.com/developer-account/#/devf2eb157f8). 
 
-   Instale a versão mais recente do LTS (Suporte a Longo Prazo) versão 8.x do Node.js em seu Mac. Observe que talvez outras versões mais recentes não ofereçam suporte a alguns módulos usados em vcremote e podem causar falha na instalação do vcremote.
+- [Node.js](https://nodejs.org/) versão 8.11.3 e npm versão 5.6.0
 
-- Uma versão atualizada do npm
+   Instale a versão 8.11.3 do Node.js no seu Mac. Se você instalar o pacote do Node.js, ele deverá aparecer com o npm versão 5.6.0. Observe que outras versões do Node.js e do npm podem não ser compatíveis com alguns módulos usados no vcremote do agente remoto, o que pode causar falha na instalação do vcremote.
 
-   A versão do npm que vem com o Node.js pode não ser suficientemente recente para instalar o vcremote. Para atualizar o npm, abra o aplicativo Terminal no Mac e digite o seguinte comando:
-
-   `sudo npm install -g npm@latest`
 
 ## <a name="Install"></a> Instalar o agente remoto para iOS
 
@@ -131,7 +132,7 @@ Depois de iniciar o agente remoto, você pode usá-lo no Visual Studio até par�
 
 Para se conectar ao agente remoto do Visual Studio, você deve especificar a configuração remota nas opções do Visual Studio.
 
-#### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Para configurar o agente remoto do Visual Studio
+### <a name="to-configure-the-remote-agent-from-visual-studio"></a>Para configurar o agente remoto do Visual Studio
 
 1. Se o agente não estiver sendo executado no Mac, siga as etapas em [Iniciar o agente remoto](#Start). O Mac deve estar executando o vcremote para Visual Studio para emparelhar com êxito, conectar e compilar seu projeto.
 
@@ -168,7 +169,7 @@ O Visual Studio usa as mesmas informações para se conectar ao agente remoto no
 
 Quando você inicia o agente remoto pela primeira vez, o PIN gerado é válido por um período limitado — por padrão, 10 minutos. Se você não emparelhar o Visual Studio ao agente remoto antes desse período expirar, será necessário gerar um novo PIN.
 
-#### <a name="to-generate-a-new-pin"></a>Para gerar um novo PIN
+### <a name="to-generate-a-new-pin"></a>Para gerar um novo PIN
 
 1. Pare o agente ou abra uma segunda janela do aplicativo Terminal no Mac e use-a para inserir o comando.
 
@@ -182,7 +183,7 @@ Quando você inicia o agente remoto pela primeira vez, o PIN gerado é válido p
 
 Por motivos de segurança, os certificados de servidor que emparelham o Visual Studio ao agente remoto estão vinculados ao nome de host ou ao endereço IP do seu Mac. Se esses valores forem alterados, você precisará gerar um novo certificado do servidor e reconfigurar o Visual Studio com os novos valores.
 
-#### <a name="to-generate-a-new-server-certificate"></a>Para gerar um novo certificado do servidor
+### <a name="to-generate-a-new-server-certificate"></a>Para gerar um novo certificado do servidor
 
 1. Pare o agente remoto.
 
@@ -204,7 +205,7 @@ Por motivos de segurança, os certificados de servidor que emparelham o Visual S
 
 É possível configurar o agente remoto usando várias opções de linha de comando. Por exemplo, você pode especificar a porta para escutar solicitações de compilação e especificar o número máximo de compilações a serem mantidas no sistema de arquivos. Por padrão, o limite é de 10 compilações. O agente remoto removerá as compilações que ultrapassarem o máximo no desligamento.
 
-#### <a name="to-configure-the-remote-agent"></a>Para atualizar o agente remoto
+### <a name="to-configure-the-remote-agent"></a>Para atualizar o agente remoto
 
 - Para ver uma lista completa dos comandos do agente remoto, no aplicativo Terminal, digite:
 
@@ -233,6 +234,50 @@ Por motivos de segurança, os certificados de servidor que emparelham o Visual S
    `vcremote --config config_file_path`
 
    em que *config_file_path* é o caminho para um arquivo de configuração no formato JSON. As opções de inicialização e seus valores não devem incluir traços.
+
+## <a name="troubleshoot-the-remote-agent"></a>Solucionar problemas de agente remoto
+
+### <a name="debugging-on-an-ios-device"></a>Depuração em um dispositivo iOS
+
+Se a depuração em um dispositivo iOS não funcionar, poderá haver problemas com a ferramenta [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller), que é usada para comunicação com um dispositivo iOS. Essa ferramenta normalmente é instalada do Homebrew durante a instalação do vcremote. Siga as etapas abaixo para solucionar esse problema.
+
+Abra o aplicativo Terminal e atualize ideviceinstaller e suas dependências executando o seguinte na ordem:
+
+1. Verifique se o Homebrew está atualizado
+
+   `brew update`
+
+1. Desinstale libimobiledevice e usbmuxd
+
+   `brew uninstall --ignore-dependencies libimobiledevice`
+
+   `brew uninstall --ignore-dependencies usbmuxd`
+
+1. Instale a versão mais recente do libimobiledevice e do usbmuxd
+
+   `brew install --HEAD usbmuxd`
+
+   `brew unlink usbmuxd`
+
+   `brew link usbmuxd`
+
+   `brew install --HEAD libimobiledevice`
+
+1. Desinstale e reinstale o ideviceinstaller
+
+   `brew uninstall ideviceinstaller`
+
+   `brew install ideviceinstaller`
+
+Verifique se o ideviceinstaller pode se comunicar com o dispositivo ao tentar listar os aplicativos instalados no dispositivo:
+
+`ideviceinstaller -l`
+
+Se o ideviceinstaller fornecer um erro informando que não é possível acessar a pasta `/var/db/lockdown`, altere o privilégio na pasta com:
+
+`sudo chmod 777 /var/db/lockdown`
+    
+Em seguida, verifique novamente se ideviceinstaller poderá se comunicar com o dispositivo.
 
 ## <a name="see-also"></a>Consulte também
 

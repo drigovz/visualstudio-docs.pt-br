@@ -1,18 +1,18 @@
 ---
 title: Escrever testes de unidade para DLLs C++
-ms.date: 11/04/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 7606f9f9b521d4bc752b99ad70237ef4ac6bc30e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821035"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226088"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
@@ -56,7 +56,17 @@ ms.locfileid: "62821035"
 
   1. Criar um projeto de teste de unidade nativo.
 
-      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de Teste de Unidade C++**.
+      ::: moniker range="vs-2019"
+
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto**. Na caixa de diálogo **Adicionar um novo projeto**, defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa. Em seguida, escolha o **Projeto de teste de unidade nativo**.
+
+      ::: moniker-end
+
+      ::: moniker range="vs-2017"
+
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++**.
+
+      ::: moniker-end
 
   2. No **Gerenciador de Soluções**, no menu de atalho do projeto de teste, selecione **Referências**. A janela **Propriedades** do projeto é aberta.
 
@@ -80,7 +90,17 @@ ms.locfileid: "62821035"
 
   1. Criar um projeto de teste de unidade nativo.
 
-      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de Teste de Unidade Nativo**.
+      ::: moniker range="vs-2019"
+
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto**. Na caixa de diálogo **Adicionar um novo projeto**, defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa. Em seguida, escolha o **Projeto de teste de unidade nativo**.
+
+      ::: moniker-end
+      
+      ::: moniker range="vs-2017"
+
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++**.
+
+      ::: moniker-end
 
   2. No **Gerenciador de Soluções**, no menu de atalho do projeto de teste, selecione **Propriedades**.
 

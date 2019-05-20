@@ -1,7 +1,7 @@
 ---
 title: 'Como: Usar exclusivamente o teclado'
 description: Saiba como usar combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado) do Visual Studio.
-ms.date: 08/22/2016
+ms.date: 05/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox, shortcut keys
@@ -16,68 +16,74 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a8759643b9cf72cac671a8d733e1306760afc36
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789651"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531599"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como: Usar exclusivamente o teclado
 
-> [!TIP]
-> Para saber mais sobre atualizações de acessibilidade recentes, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Aprimoramentos de acessibilidade no Visual Studio 2017 versão 15.3).
+Os atalhos de teclado podem tornar mais fácil a navegação no IDE do Visual Studio e no código. Exploraremos algumas maneiras para usar atalhos de teclado com mais eficiência.
 
-O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece muitas combinações padrão de teclas de atalho para facilitar a navegação e a criação de código dentro do IDE (ambiente de desenvolvimento integrado). Para obter uma lista completa das teclas de atalho usadas no Visual Studio, consulte [Default keyboard shortcuts](../../ide/default-keyboard-shortcuts-in-visual-studio.md) (Atalhos de teclado padrão). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).
+Para obter uma lista completa de teclas de atalho no Visual Studio, consulte [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Para obter informações sobre os atalhos de teclado disponíveis para outros produtos da Microsoft, consulte [https://www.microsoft.com/accessibility/](http://go.microsoft.com/fwlink/?LinkID=40400).
+
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Para saber mais sobre atualizações de acessibilidade, confira a postagem no blog [Accessibility improvements in Visual Studio 2017 version 15.3](https://devblogs.microsoft.com/visualstudio/accessibility-improvements-in-visual-studio-2017-version-15-3/) (Melhorias de acessibilidade no Visual Studio 2017 versão 15.3).
+
+::: moniker-end
 
 > [!NOTE]
-> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
+> Dependendo de suas configurações ou da edição do Visual Studio usada, as caixas de diálogo e os comandos de menu poderão diferir dos descritos na Ajuda. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, confira [Redefinir as configurações](../environment-settings.md#reset-settings).
 
 ## <a name="toolbox-controls"></a>Controles da caixa de ferramentas
 
-É possível adicionar um controle da Caixa de Ferramentas a um formulário ou designer usando o teclado.
+Você pode adicionar um controle na caixa de ferramentas a um formulário ou designer usando o teclado.
 
 ### <a name="to-add-controls-from-the-toolbox-to-a-designer-from-the-keyboard"></a>Para adicionar controles da Caixa de Ferramentas a um designer usando o teclado
 
 1. Na barra de menus, escolha **Exibir** > **Caixa de Ferramentas**.
 
-2. Use as teclas Ctrl + Seta para cima ou Ctrl + Seta para baixo para percorrer as seções na guia atual da Caixa de ferramentas.
+2. Use os atalhos do teclado **Ctrl + seta para cima** ou **Ctrl + seta para baixo** para mover entre as seções na guia **Caixa de ferramentas**.
 
-3. Use as teclas Seta para cima ou **Seta para baixo** para percorrer os controles.
+3. Use a tecla **Seta para cima** ou **Seta para baixo** para mover-se entre os controles.
 
-4. Depois que o controle for selecionado, use a tecla Enter.
+4. Depois de selecionar o controle, use a tecla **Enter**.
 
-   O controle é adicionado ao formulário ou designer.
+   O Visual Studio adiciona o controle ao formulário ou designer.
 
 ## <a name="dialog-box-options"></a>Opções de caixa de diálogo
 
- É possível percorrer as opções em uma caixa de diálogo e alterar as configurações da opção usando o teclado.
+ Você pode percorrer as opções em uma caixa de diálogo e alterar as configurações de opção usando o teclado.
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Para definir opções da caixa de diálogo usando o teclado
 
-1. Use **Tab** ou **Shift** + **Tab** para mover para cima e para baixo pelos controles na caixa de diálogo.
+1. Use **Tab** ou **Shift**+**Tab** para mover para cima e para baixo pelos controles na caixa de diálogo.
 
 2. Para alterar as configurações de opção:
 
-    - Para botões de opção, use a **SETA PARA CIMA** e a **SETA PARA BAIXO** para alterar a seleção.
+    - Para os botões de opção, use as teclas **Seta para cima** e **Seta para baixo** para alterar a seleção.
 
-    - Para caixas de seleção, use a **BARRA DE ESPAÇO** para marcar ou desmarcar.
+    - Para as caixas de seleção, use a **Barra de espaços** para selecionar ou desmarcar a seleção.
 
-    - Para listas suspensas, use **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
+    - Para as listas suspensas, use a tecla **Alt + seta para baixo** para exibir itens e, em seguida, use as teclas **Seta para cima** e **Seta para baixo** para alterar o item selecionado.
 
-    - Para botões, pressione **Enter** para invocar.
+    - Para os botões, selecione **Enter** para invocar.
 
-    - Para grades, use as teclas de direção para navegar. Para listas suspensas em grades, use **Shift** + **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
+    - Para as grades, use as teclas de direção para navegar. Para as listas suspensas em grades, use **Shift** + **Alt** + **Seta para baixo** para exibir itens e, em seguida, use as teclas **Seta para cima** e **Seta para baixo** para alterar o item selecionado.
 
 ## <a name="window-and-file-navigation"></a>Navegação em janelas e arquivos
 
- O IDE fornece várias maneiras de percorrer janelas de documentos e de ferramentas abertas usando o teclado. Também é possível mover e encaixar janelas de ferramentas em locais diferentes usando o teclado.
+Há várias maneiras de usar o teclado para mover entre ferramentas abertas e janelas do documento. Você também pode mover e encaixar janelas de ferramentas em locais diferentes usando o teclado.
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Para navegar entre janelas e arquivos no IDE usando o teclado
 
-- Para percorrer os arquivos em um editor ou designer, escolha as teclas CTRL + TAB para exibir o Navegador do IDE com **Arquivos Ativos** selecionado. Pressione a tecla Enter para navegar até o arquivo realçado.
+- Para mover entre arquivos em um editor ou designer, escolha o atalho de teclado **Ctrl + Tab** para exibir o Navegador IDE com os **Arquivos ativos** selecionados. Escolha a tecla **Enter** para navegar até o arquivo realçado.
 
-- Para percorrer janelas de ferramentas encaixadas, escolha Alt + F7 para exibir o Navegador do IDE com **Janelas de Ferramentas Ativas** selecionado. Escolha a tecla Enter para navegar até a janela realçada.
+- Para mover entre janelas de ferramentas encaixadas, escolha o atalho de teclado **Alt + F7** para exibir o Navegador IDE com a opção **Janelas de ferramentas ativas** selecionada. Escolha a tecla **Enter** para navegar até a janela realçada.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover e encaixar janelas de ferramentas usando o teclado
 
@@ -85,19 +91,19 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece muitas co
 
 2. No menu **Janela**, selecione a opção **Encaixável**.
 
-3. Pressione **ALT** + **Espaço** e, em seguida, escolha **Mover**.
+3. Use o atalho de teclado **Alt**+**Barra de espaços** e, em seguida, escolha **Mover**.
 
      O losango guia de encaixe é exibido.
 
-4. Use as teclas de **DIREÇÃO** para mover a janela para um novo local.
+4. Use as teclas de direção para mover a janela para um novo local.
 
-     O ponteiro do mouse se move com a janela quando você usa as teclas de **DIREÇÃO**.
+     O ponteiro do mouse se move com a janela enquanto você usa as teclas de direção.
 
-5. Quando atingir o novo local, use as teclas de **DIREÇÃO** para mover o ponteiro do mouse para a parte correta do losango guia.
+5. Ao acessar o novo local, use as teclas de direção para mover o ponteiro do mouse sobre a parte correta do losango guia.
 
      Uma estrutura de tópicos da janela de ferramentas aparece no novo local de encaixe.
 
-6. Pressione **ENTER**.
+6. Selecione **Enter**.
 
      A janela de ferramentas é encaixada no novo local de encaixe.
 

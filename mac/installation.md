@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b8fdceb1f4cfcfc54f9e37aea3a93f765976a3
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982995"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615463"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalar o Visual Studio 2019 para Mac
 
@@ -55,7 +55,7 @@ Se você tiver problemas de rede durante a instalação em um ambiente corporati
 Saiba mais sobre as novidades nas [notas sobre a versão](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes).
 
 > [!NOTE]
-> Se você optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), deve executar o instalador novamente se quiser adicionar os componentes mais tarde.
+> Se optou por não instalar uma plataforma ou ferramenta durante a instalação original (desmarcando-a na etapa 6), você deverá executar o instalador novamente se quiser adicionar os componentes mais tarde.
 
 ## <a name="install-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar o Visual Studio para Mac por trás de um firewall ou servidor proxy
 
@@ -82,7 +82,7 @@ A instalação do Visual Studio para Mac permite que você comece a escrever có
 
 ### <a name="net-core-apps-aspnet-core-web-apps-unity-game-development"></a>Aplicativos .NET Core, aplicativos Web do ASP.NET Core, desenvolvimento de jogos em Unity
 
-Para outras cargas de trabalho, confira a página [Cargas de trabalho](/visualstudio/mac/workloads).
+Para outras cargas de trabalho, confira a página [Cargas de trabalho](workloads.md).
 
 ## <a name="related-video"></a>Vídeo relacionados
 
