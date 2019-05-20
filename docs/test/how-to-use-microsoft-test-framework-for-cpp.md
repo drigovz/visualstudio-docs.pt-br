@@ -1,18 +1,18 @@
 ---
 title: Usar a estrutura de teste de unidade da Microsoft para C++
-ms.date: 11/15/2017
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.author: mblome
-manager: jillfra
+manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970339"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461473"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -24,7 +24,7 @@ Normalmente, o código de teste é executado no próprio projeto na mesma soluç
 
 ## <a name="same_project"></a> Gravar testes de unidade no mesmo projeto
 
-Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, será necessário criar os testes no mesmo projeto do programa que você está testando. Gravar testes de unidade no mesmo projeto:
+Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, talvez você precise criar os testes no mesmo projeto que o programa que você está testando. Gravar testes de unidade no mesmo projeto:
 
 1. Modifique as propriedades do projeto para incluir os cabeçalhos e os arquivos de biblioteca necessários para os testes de unidade.
 
@@ -45,17 +45,19 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, se
 
 Qualquer arquivo *.cpp* com classes de teste precisa incluir "CppUnitTest.h" e ter uma instrução using para `using namespace Microsoft::VisualStudio::CppUnitTestFramework`. O projeto de teste já está configurado para você. Uma definição de namespace e uma TEST_CLASS com um TEST_METHOD já estão incluídos para você começar. É possível modificar o nome do namespace, bem como os nomes entre parênteses nas macros de classe e método.
 
-As macros especiais são definidas para inicializar módulos, classes e métodos de teste e para a limpeza de recursos quando os testes são finalizados. Essas macros geram código executado antes de uma classe ou método serem acessados pela primeira vez e após a execução do último teste. Para saber mais, consulte [Inicialização e limpeza](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
+As macros especiais são definidas para inicializar módulos de teste, classes e métodos e para a limpeza de recursos quando os testes forem concluídos. Essas macros geram código executado antes de uma classe ou método serem acessados pela primeira vez e após a execução do último teste. Para saber mais, consulte [Inicialização e limpeza](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup).
 
 Use os métodos estáticos na classe [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) para definir as condições de teste. Use a classe de [Agente](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) para gravar mensagens na **Janela de Saída**. Adicione atributos aos métodos de teste
 
 ## <a name="run-the-tests"></a>Executar os testes
 
 1. No menu **Teste**, escolha **Windows** > **Gerenciador de Testes**.
-2. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
 
-3. No **Gerenciador de Testes**, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
-4. Na **Janela de Saída**, escolha **Testes** no menu suspenso para exibir as mensagens gravadas pela classe `Logger`:
+1. Caso todos os testes não estejam visíveis na janela, crie o projeto de teste clicando com o botão direito no mouse no nó do **Gerenciador de Soluções** e escolhendo **Criar** ou **Recompilar**.
+
+1. No **Gerenciador de Testes**, escolha **Executar Todos** ou selecione os testes específicos que deseja executar. Clique com o botão direito do mouse para ver outras opções, incluindo a execução em modo de depuração com pontos de interrupção habilitados.
+
+1. Na **Janela de Saída**, escolha **Testes** no menu suspenso para exibir as mensagens gravadas pela classe `Logger`:
 
    ![Janela de Saída do C++ mostrando mensagens de teste](media/cpp-test-output-window.png)
 

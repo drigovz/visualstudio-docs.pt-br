@@ -170,11 +170,11 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
  ![Caso de uso mostrando muitos para muitos multiplicidade](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Para que vários atores da mesma classe podem fazer parte de uma única ocorrência de um caso de uso de estado, configure a multiplicidade do final de ator da associação para * * 1... \\***.  
+- Para que vários atores da mesma classe podem fazer parte de uma única ocorrência de um caso de uso de estado, configure a multiplicidade do final de ator da associação para **1...\\***.  
   
    Na ilustração, um ou mais restaurantes podem levar parte do atendimento a mesma ordem refeição.  
   
-- Para mostrar que cada ator pode participar ao mesmo tempo em várias ocorrências de um caso de uso, configure a multiplicidade no final da associação para caso use * *\\* * *.  
+- Para mostrar que cada ator pode participar ao mesmo tempo em várias ocorrências de um caso de uso, configure a multiplicidade no final da associação para caso use **\\***.  
   
    Na ilustração, cada restaurante pode trabalhar em suprir mais de uma ordem por vez.  
   

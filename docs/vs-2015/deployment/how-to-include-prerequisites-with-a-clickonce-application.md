@@ -34,7 +34,7 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
   
 3. No Bloco de Notas, abra o arquivo **Package.xml**.  
   
-4. Localize o **nome** elemento que contém **http://go.microsoft.com/fwlink**e copie a URL. Inclua a parte **LinkID**.  
+4. Localize o **nome** elemento que contém **http://go.microsoft.com/fwlink** e copie a URL. Inclua a parte **LinkID**.  
   
     > [!NOTE]
     > Se nenhum **nome** elemento contém **http://go.microsoft.com/fwlink**, abra o **Product** arquivo na pasta raiz do pré-requisito e localize o **fwlink** cadeia de caracteres.  

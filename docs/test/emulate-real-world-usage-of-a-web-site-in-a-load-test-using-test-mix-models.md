@@ -9,16 +9,16 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 87161a4d58411f5f1bbe0347d093a39f17742bd6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c946fa81c46af38daac469e0de7a00abafb3394
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785730"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461578"
 ---
-# <a name="emulate-expected-real-world-usage-of-a-website-or-application-in-a-load-test-using-a-test-mix-model"></a>Emular o uso real esperado de um site ou aplicativo em um teste de carga usando modelos de combinação de testes
+# <a name="test-mix-models-overview"></a>Visão geral de modelos de combinação de testes
 
-Você usa opções de modelagem de carga para prever com maior precisão o uso real esperado de um site ou aplicativo que está passando por teste de carga. É importante fazer isso porque um teste de carga não baseado em um modelo de carga preciso pode gerar resultados enganadores.
+Você pode usar as opções de modelagem de carga para prever com mais precisão o uso real esperado de um site ou aplicativo no qual você está executando teste de carga. É importante fazer isso porque um teste de carga que não se baseia em um modelo de carga preciso pode gerar resultados enganadores.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -40,7 +40,8 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 - **Baseado na ordem sequencial:** Cada usuário virtual executa os testes de desempenho Web ou testes de unidade na ordem em que eles são definidos no cenário. O usuário virtual continua a alternar entre os testes nesta ordem até que o teste de carga seja concluído. Para saber mais, confira [Ordem sequencial](#SequentialOrder).
 
 ### <a name="BasedOnTestsStarted"></a> Percentual baseado em testes iniciados
- Para cada teste na combinação, você pode especificar uma porcentagem que determine com que frequência o teste será selecionado como o próximo teste a ser executado. Por exemplo, você pode atribuir os seguintes valores de porcentagem a três testes:
+
+Para cada teste na combinação, você pode especificar uma porcentagem que determine com que frequência o teste será selecionado como o próximo teste a ser executado. Por exemplo, você pode atribuir os seguintes valores de porcentagem a três testes:
 
 - TestA (50%)
 
@@ -48,13 +49,14 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 
 - TestC (15%)
 
-  Se você usar essa configuração, o próximo teste a ser iniciado será baseado nas porcentagens atribuídas. Você faz isso sem levar em conta o número de usuários virtuais que estão executando atualmente cada teste.
+Se você usar essa configuração, o próximo teste a ser iniciado será baseado nas porcentagens atribuídas. Você faz isso sem levar em conta o número de usuários virtuais que estão executando atualmente cada teste.
 
 ### <a name="PercentageBasedonVirtualUsers"></a> Percentual baseado em usuários virtuais
  Esse modelo da combinação de testes determina a porcentagem de usuários virtuais que executarão um teste específico. Se você usar esse modelo de combinação de testes, o próximo teste a ser iniciado será baseado não apenas nas porcentagens atribuídas, mas também na porcentagem de usuários virtuais que estão executando atualmente um teste específico. A qualquer momento do teste de carga, o número usuários que estão executando um teste específico corresponde à distribuição atribuída o mais próximo possível.
 
 ### <a name="PacingTestMix"></a> Definição do ritmo da combinação de testes
- Se você especificar um ritmo para a combinação de testes, definirá uma taxa de execução de testes para cada usuário virtual para cada teste da combinação. Para cada teste, essa taxa é expressa como testes executados por usuário virtual por hora. Por exemplo, você pode atribuir o seguinte ritmo de combinação de testes para os testes a seguir:
+
+Se você especificar um ritmo para a combinação de testes, definirá uma taxa de execução de testes para cada usuário virtual para cada teste da combinação. Para cada teste, essa taxa é expressa como testes executados por usuário virtual por hora. Por exemplo, você pode atribuir o seguinte ritmo de combinação de testes para os testes a seguir:
 
 - TestA: 4 testes por usuário por hora
 
@@ -62,9 +64,9 @@ Você pode especificar uma das seguintes opções de modelo da combinação de t
 
 - TestC: 0,125 testes por usuário por hora
 
-  Se você usar o modelo de ritmo de combinação de testes, o mecanismo de tempo de execução do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
+Se você usar o modelo de ritmo de combinação de testes, o mecanismo de tempo de execução do teste de carga garantirá que a taxa real em que os testes são iniciados seja menor ou igual à taxa especificada. Se a execução dos testes demorar muito para que o número atribuído seja concluído, um erro será retornado.
 
-  A configuração de **Tempo de processamento entre iterações de teste** não se aplica quando você usa o ritmo de combinação de testes.
+A configuração de **Tempo de processamento entre iterações de teste** não se aplica quando você usa o ritmo de combinação de testes.
 
 #### <a name="apply-distribution-to-pacing-delay"></a>Aplicar distribuição à definição dos atrasos
  O valor da propriedade de **Aplicar distribuição à definição dos atrasos** em um cenário de teste de carga poderá ser definida como verdadeiro ou falso:

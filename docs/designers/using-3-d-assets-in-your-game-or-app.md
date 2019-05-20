@@ -15,14 +15,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c595f4c8f344cfb9e8678d8f9c425a564baa9e4b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892899"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459112"
 ---
-# <a name="use-3d-assets-in-your-game-or-app"></a>Usar ativos 3D em seu jogo ou aplicativo
+# <a name="how-to-use-3d-assets-in-your-game-or-app"></a>Como: Usar ativos 3D em seu jogo ou aplicativo
 
 Este artigo descreve como é possível usar o Visual Studio para processar ativos 3D e incluí-los nos builds.
 
@@ -34,7 +34,9 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Para adicionar as personalizações de compilação ao seu projeto
 
-1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Dependências de Build** > **Personalizações de Build**. A caixa de diálogo **Arquivos de Personalizações de Build do Visual C++** será exibida.
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Dependências de Build** > **Personalizações de Build**.
+
+   A caixa de diálogo **Arquivos de Personalizações de Build do Visual C++** será exibida.
 
 2. Em **Arquivos de Personalização de Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, conforme descrito na seguinte tabela:
 
@@ -47,11 +49,14 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
 3. Escolha o botão **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Incluir ativos na criação
- Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja usar, a próxima etapa é dizer quais arquivos são ativos 3D e quais tipos de ativos eles são.
+
+Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja usar, a próxima etapa será dizer quais arquivos são ativos 3D e quais tipos de ativos eles são.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Para adicionar um ativo à sua compilação
 
-1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**.
+
+   A caixa de diálogo **Página de Propriedades** do ativo é exibida.
 
 2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas com os valores aos quais você deseja aplicar as alterações.
 
@@ -76,11 +81,13 @@ Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de ar
 
 ### <a name="to-configure-content-pipeline-properties"></a>Para configurar as propriedades de pipeline de conteúdo
 
-1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**.
+
+   A caixa de diálogo **Página de Propriedades** do ativo é exibida.
 
 2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.
 
-3. Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
+3. Em **Propriedades de configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de conteúdo de imagem** para ativos de textura e imagens) e, em seguida, na grade de propriedades, defina as propriedades para os valores apropriados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
 
 4. Escolha o botão **OK**.
 
@@ -208,6 +215,6 @@ cbuffer MiscVars : register(b3)
 |-----------|-----------------|
 |[Como: Exportar uma textura que contém mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|
 |[Como: Exportar uma textura que tenha o alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|
-|[Como: Exportar uma textura para ser usada com aplicativos Direct2D ou Javascript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|
+|[Como: exportar uma textura para uso com aplicativos Direct2D ou JavaScript](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descreve as ferramentas de edição que o Visual Studio fornece para criar e manipular ativos 3D, incluindo texturas e imagens, modelos 3D e sombreadores.|
 |[Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)|Descreve como exportar o sombreador do Designer do Sombreador.|

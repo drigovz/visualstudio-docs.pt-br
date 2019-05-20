@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6d8e3f3288c6a64b35a1de59fe0f317b6283b805
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ab7816e7e1472101f0e84c05a4975f19e3902e27
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816417"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65613554"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Perguntas frequentes sobre o FxCop e sobre os analisadores do FxCop
 
@@ -43,7 +43,7 @@ Para executar os analisadores do FxCop, primeiro [instale o pacote NuGet](instal
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Eu recebo aviso CA0507 mesmo depois de instalar o pacote NuGet dos analisadores FxCop
 
-Se você instalou analisadores FxCop, mas continua a receber o aviso CA0507 **"Executar Análise de Código" foi preterido em favor dos analisadores FxCop, que são executados durante a compilação**, você pode precisar definir a propriedade msbuild do **RunCodeAnalysis** no seu arquivo de projeto para **false**. Caso contrário, a análise de código estático será executada após cada compilação.
+Se você instalou os analisadores FxCop, mas continua recebendo o aviso CA0507 **"Executar análise de código" foi preterido a favor dos analisadores FxCop, que são executados durante o build"**, talvez você precise definir a propriedade do msbuild **RunCodeAnalysis** no arquivo de projeto como **false**. Caso contrário, a análise de código estático será executada após cada compilação.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>

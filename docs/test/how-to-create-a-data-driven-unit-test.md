@@ -1,6 +1,6 @@
 ---
 title: Criar um testes de unidade controlados por dados
-ms.date: 11/04/2016
+ms.date: 05/08/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.test.testresults.unittest.datadriven
@@ -14,16 +14,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979234"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615435"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como: Criar um teste de unidade controlado por dados
 
-Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, você pode configurar um método de teste de unidade para recuperar valores usados no método de teste de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.
+Você pode usar a estrutura de teste de unidade da Microsoft para o código gerenciado para configurar um método de teste de unidade para recuperar valores de uma fonte de dados. O método é executado sucessivamente para cada linha na fonte de dados, o que facilita o teste de uma variedade de entradas usando um único método.
 
 A criação de um teste de unidade orientado a dados envolve as seguintes etapas:
 
@@ -43,13 +43,13 @@ Por exemplo, vamos supor que você tenha:
 
 2. Um projeto em `MyBank` chamado `BankDb` que gerencia as transações das contas.
 
-3. Uma classe chamada `Maths` no projeto `DbBank` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.
+3. Uma classe chamada `Maths` no projeto `BankDb` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.
 
 4. Um projeto de teste de unidade chamado `BankDbTests` para testar o comportamento do componente `BankDb`.
 
 5. Uma classe de teste de unidade chamada `MathsTests` para verificar o comportamento da classe `Maths`.
 
-Testaremos um método em `Maths` que acrescenta dois inteiros usando um loop:
+Testaremos um método em `Maths` que adiciona dois números inteiros usando um loop:
 
 ```csharp
 public int AddIntegers(int first, int second)
@@ -88,6 +88,9 @@ public TestContext TestContext
 
 Em seu método de teste, os dados são acessados por meio da propriedade do indexador `DataRow` do `TestContext`.
 
+> [!NOTE]
+> O .NET Core não dá suporte ao atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se tentar acessar os dados de teste dessa forma em um projeto de teste de unidade do .NET Core ou do UWP, você verá um erro semelhante a **"TestContext não contém uma definição para 'DataRow' e nenhum 'DataRow' do método de extensão acessível que aceita um primeiro argumento do tipo 'TestContext' pôde ser encontrado (alguma diretiva em uso ou uma referência de assembly está ausente?)"**.
+
 ## <a name="write-the-test-method"></a>Escrever o método de teste
 
 O método de teste de `AddIntegers` é bastante simples. Para cada linha na fonte de dados, chame `AddIntegers` com os valores de coluna **FirstNumber** e **SecondNumber** como parâmetros e verifique o valor retornado no valor da coluna **Sum**:
@@ -110,7 +113,7 @@ public void AddIntegers_FromDataSourceTest()
 }
 ```
 
-O método `Assert` inclui uma mensagem que exibe os valores `x` e `y` de uma iteração com falha. Por padrão, os valores declarados `expected` e `actual` já estão incluídos nos detalhes de uma teste com falha.
+O método `Assert` inclui uma mensagem que exibe os valores `x` e `y` de uma iteração com falha. Por padrão, os valores declarados – `expected` e `actual` – já estão incluídos nos detalhes do teste com falha.
 
 ### <a name="specify-the-datasourceattribute"></a>Especificar o DataSourceAttribute
 
