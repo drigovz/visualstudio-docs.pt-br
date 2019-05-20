@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5ca980b9f51b5c66b5ddfde18c0fb464c73faf99
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416500"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686568"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ Editar propriedades de ações de interface do usuário
   
  Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.  
   
- Por exemplo, se um servidor não estiver disponível e houver uma ação de interface do usuário associada ao navegador da Web que indica **Acesse a página da Web ‘<http://Contoso1/default.aspx’>**, você poderá alterar a URL para `‘ http://Contoso2/default.aspx’`.  
+ Por exemplo, se um servidor não estiver disponível e houver uma ação de interface do usuário associada ao navegador da Web que indica **Acesse a página da Web ‘<http://Contoso1/default.aspx’>**, você poderá alterar a URL para `‘http://Contoso2/default.aspx’`.  
   
  ![Propriedades de controle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar propriedades de controle  
@@ -207,7 +207,7 @@ Editar propriedades de controle
 ### <a name="guidance"></a>Diretrizes  
  [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-### <a name="faq"></a>Perguntas frequentes  
+### <a name="faq"></a>Perguntas Frequentes  
  [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
  [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
@@ -219,5 +219,5 @@ Editar propriedades de controle
  [Usar a automação de interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md)   
  [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Criando um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md)   
- [Gerar um Teste de IU Codificado de uma Gravação da Ação Existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
+ [Gerar um Teste de IU Codificado de uma Gravação da Ação Existente](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
  [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

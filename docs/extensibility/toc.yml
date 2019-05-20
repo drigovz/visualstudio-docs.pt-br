@@ -34,7 +34,7 @@
   items:
     - name: Language Server Protocol
       href: language-server-protocol.md
-    - name: Adicionar uma extensão Language Server Protocol
+    - name: Adicionar uma extensão do Language Server Protocol
       href: adding-an-lsp-extension.md
 - name: Abrir Pasta
   items:
