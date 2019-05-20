@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780838"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686192"
 ---
 # <a name="profiling-tools"></a>Ferramentas de Criação de Perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
   
  Confira o resumo na parte inferior para ver quais ferramentas estão disponíveis para o tipo de projeto (por exemplo, área de trabalho, UWP, ASP.NET).  
   
- Você pode acessar as ferramentas de criação de perfil usando **depurar / Windows / Mostrar ferramentas de diagnóstico** usar as ferramentas durante a sessão de depuração, ou usando **depurar / desempenho Profiler...**  fazer uma análise de desempenho com foco.  Consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md) para obter mais informações sobre as diferentes abordagens.  
+ Você pode acessar as ferramentas de criação de perfil usando **Depurar/Windows/Mostrar Ferramentas de Diagnóstico** para usar as ferramentas durante a sessão de depuração ou usando **Depurar/Criador de perfil de desempenho...** para realizar uma análise de desempenho focada.  Consulte [Executando ferramentas de criação de perfil com ou sem o depurador](../profiling/running-profiling-tools-with-or-without-the-debugger.md) para obter mais informações sobre as diferentes abordagens.  
   
  ![DebugDiagnosticsToolsMenu](../profiling/media/debugdiagnosticstoolsmenu.png "DebugDiagnosticsToolsMenu")  
   
@@ -36,12 +36,12 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
 ## <a name="memory-usage"></a>Uso de Memória  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Localize vazamentos de memória e memória ineficiente enquanto você estiver depurando com a ferramenta **Uso da Memória**. A ferramenta permite que você tire instantâneos do heap de memória gerenciada e do heap de memória nativa. Você pode usar essa ferramenta com aplicativos ASP.NET, aplicativos universais do Windows e aplicativos da área de trabalho. A ferramenta **Uso da Memória** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Consulte [Uso da Memória](../profiling/memory-usage.md) e [Uso da Memória sem Depuração](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) para obter mais informações.  
+ Localize vazamentos de memória e memória ineficiente enquanto você estiver depurando com a ferramenta **Uso da Memória**. A ferramenta permite que você tire instantâneos do heap de memória gerenciada e do heap de memória nativa. Você pode usar essa ferramenta com aplicativos ASP.NET, aplicativos universais do Windows e aplicativos da área de trabalho. A ferramenta **Uso da Memória** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Consulte [Uso da Memória](../profiling/memory-usage.md) e [Uso da Memória sem Depuração](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) para obter mais informações.  
   
 ## <a name="cpu-usage"></a>Uso da CPU  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  
   
- A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código C++, C#/VB e JavaScript.  Você pode usar essa ferramenta com a área de trabalho e aplicativos universais do Windows, bem como aplicativos de serviços de aplicativo do Azure. A ferramenta **Uso de CPU** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Ver [uso da CPU](../profiling/cpu-usage.md) para obter mais informações.  
+ A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código C++, C#/VB e JavaScript.  Você pode usar essa ferramenta com aplicativos de área de trabalho e universais do Windows, bem como aplicativos dos Serviços de Aplicativos do Azure. A ferramenta **Uso de CPU** pode ser executada da janela **Ferramentas de Diagnóstico** enquanto você está depurando (**Depurar/Janelas/Mostrar Ferramentas de Diagnóstico**) ou fora do depurador (**Depurar/Criador de Perfil de Desempenho...**). Para obter mais informações, consulte [Uso de CPU](../profiling/cpu-usage.md).  
   
 ## <a name="performance-explorer"></a>Performance Explorer  
  ![PerfTools](../profiling/media/perftools.png "PerfTools")  
@@ -87,7 +87,7 @@ Ferramentas de Diagnóstico e Criação de Perfil ajudam você a diagnosticar o 
 |Ferramenta de Desempenho|Área de Trabalho do Windows|Windows Universal/Store|ASP.NET|  
 |----------------------|---------------------|------------------------------|-------------|  
 |[Uso de Memória](../profiling/memory-usage.md)|sim|sim|no|  
-|[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|Somente o serviço de aplicativo do Azure|  
+|[Uso da CPU](../profiling/cpu-usage.md)|sim|sim|Serviço de Aplicativo do Azure (apenas)|  
 |[Uso de GPU](../debugger/gpu-usage.md)|sim|sim|no|  
 |[Linha do tempo do aplicativo](../profiling/application-timeline.md)|sim|sim|no|  
 |[PerfTips](../profiling/perftips.md)|sim|sim para XAML, não para HTML|no|  
