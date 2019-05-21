@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e5dbeced93ddfd1a1eec817d205a7be80d0e60
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d85b71c2ed54a8ab8bc85c93ce61e3ed274d86e0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441891"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65673816"
 ---
 # <a name="network-usage"></a>Uso de rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 1. Abra o projeto no Visual Studio.  
   
-2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
+2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha **Rede**, **Iniciar**.  
   
 3. A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
@@ -74,6 +74,6 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 3. O botão de impressão de resposta (dentro da guia Corpo) pode ajudá-lo a analisar as cargas de resposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando a legibilidade do conteúdo.  
   
 ## <a name="see-also"></a>Consulte também  
- [Executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
+ [Executar ferramentas de criação de perfil sem depuração](https://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
  [Blog do Visual Studio: Introdução ao Inspetor de rede do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
  [Vídeo do Channel 9: Ferramentas de diagnóstico do VS – novo Profiler de rede](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
