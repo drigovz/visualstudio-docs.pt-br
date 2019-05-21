@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15093cc6af6e61384c393b1c3e435df3840a2811
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63416653"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686446"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -181,7 +181,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
  Escolha **Teste**, **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste** e selecione o arquivo .runsettings. O arquivo aparece no menu Configurações de Teste, e você pode selecionar ou cancelar. Quando selecionado, o arquivo .runsettings se aplica sempre que você usar **Analisar Cobertura de Código**.  
   
 ### <a name="to-customize-run-settings-in-a-command-line-test"></a>Para personalizar as configurações de execução em um teste de linha de comando  
- Para executar testes a partir da linha de comando, use vstest.console.exe. O arquivo de configurações é um parâmetro desse utilitário. Para obter mais informações, confira [usando VSTest.console na linha de comando](http://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
+ Para executar testes a partir da linha de comando, use vstest.console.exe. O arquivo de configurações é um parâmetro desse utilitário. Para obter mais informações, confira [usando VSTest.console na linha de comando](https://msdn.microsoft.com/library/852812d8-b3bb-407e-bc43-04d511fcb27a).  
   
 1. Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
   
@@ -202,7 +202,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
   
 3. Na página **Processo**, expanda **Testes Automatizados**, **Fonte de Teste**, **Configurações de Execução**. Selecione o seu arquivo **.runsettings**.  
   
-   - <em>No entanto, **Assembly de Teste</em>* é exibido em vez de **Fonte de Teste**. Quando tento definir o campo Configurações de Execução**, só consigo selecionar arquivos .testsettings.*  
+   - <em>No entanto, **Assembly de Teste</em>* é exibido em vez de **Fonte de Teste**. Quando tento definir o campo **Configurações de Execução**, só consigo selecionar arquivos .testsettings.*  
   
       Em **Testes Automatizados**, selecione **Assembly de Teste** e escolha **[...]** no final da linha. Na caixa de diálogo **Adicionar/Editar Execução de Teste**, defina **Test Runner** para **Visual Studio Test Runner**.  
   
@@ -237,7 +237,7 @@ Note that searching for symbols increases code coverage runtime. So keep this sm
 <!--  
 About include/exclude lists:  
 Empty "Include" clauses imply all; empty "Exclude" clauses imply none.  
-Each element in the list is a regular expression (ECMAScript syntax). See http://msdn.microsoft.com/library/2k3te2cs.aspx.  
+Each element in the list is a regular expression (ECMAScript syntax). See https://msdn.microsoft.com/library/2k3te2cs.aspx.  
 An item must first match at least one entry in the include list to be included.  
 Included items must then not match any entries in the exclude list to remain included.  
 -->  
