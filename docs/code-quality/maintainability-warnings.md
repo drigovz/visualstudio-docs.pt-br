@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d5508e203b8ed5087f456c715c492d8f1ca7c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 752a637ef01c33aa4e93083e9578d01f00977960
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823550"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976162"
 ---
 # <a name="maintainability-warnings"></a>Avisos de facilidade de manutenção
 
@@ -35,7 +35,8 @@ Avisos de facilidade de manutenção suporte à manutenção de biblioteca e o a
 | [CA1504: Examine os nomes de campo](../code-quality/ca1504-review-misleading-field-names.md) | O nome de um campo de instância começa com "s _", ou o nome de um estático (compartilhado no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo começa com "m _". |
 | [CA1505: Evitar código que](../code-quality/ca1505-avoid-unmaintainable-code.md) | Um tipo ou um método tem um baixo valor de índice de facilidade de manutenção. Um baixo índice de facilidade de manutenção indica que um tipo ou um método é provavelmente difícil de manter e seria um bom candidato para um novo design. |
 | [CA1506: Evite acoplamento de classes excessivo](../code-quality/ca1506-avoid-excessive-class-coupling.md) | Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém. |
+| [CA1507: Usar nameof no lugar da cadeia de caracteres](../code-quality/ca1507.md) | Um literal de cadeia de caracteres é usada como um argumento em que um `nameof` expressão pode ser usada. |
 
 ## <a name="see-also"></a>Consulte também
 
-- [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)
+- [Medir a complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)
