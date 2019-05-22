@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como localizar e baixar os produtos da Microsoft incluídos na sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0808da563ca37b675bb5f79841db25c40ecf5f7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62953685"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697776"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.
@@ -31,7 +31,7 @@ Há várias razões pelas quais determinados produtos podem não estar disponív
 - **Software redundante.** Os downloads e as chaves do produto de determinados pacotes do Office e do Office autônomo não estão mais disponíveis nas assinaturas que incluem o Office. Os downloads e as chaves do produto estão disponíveis para o pacote do Office correspondente mais atual da mesma versão.  Por exemplo, se você pesquisar PowerPoint 2010, a pesquisa não retornará nenhum resultado.  No entanto, você poderá pesquisar Office 2010 – o pacote do Office que continha o PowerPoint 2010 – e baixar o pacote.
 
 ## <a name="what-do-i-get"></a>O que eu posso obter?
-O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Products_by_Benefit_Level.xlsx).
+O número e os tipos de downloads dependem do seu nível de assinatura e das suas associações ao programa.  Os assinantes com assinaturas padrão do Visual Studio Enterprise, por exemplo, podem ter downloads disponíveis diferentes dos de assinantes que obtêm suas assinaturas por meio de uma assinatura do programa Microsoft Partner Network ou BizSpark.  Para saber mais sobre quais downloads estão disponíveis para cada nível de assinatura, baixe a lista de [Produtos por nível de benefício](http://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx).
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 

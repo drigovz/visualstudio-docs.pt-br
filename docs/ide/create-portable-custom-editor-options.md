@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3518133ef269c76e1689d8d68583a2d6a0d09b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9426b2b7cd9467353f129e9376b0f83cf2f620a3
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62794020"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845986"
 ---
 # <a name="create-portable-custom-editor-settings-with-editorconfig"></a>Criar configurações do editor portátil e personalizado com o EditorConfig
 
@@ -20,7 +20,13 @@ Adicione um arquivo [EditorConfig](http://editorconfig.org/) ao projeto ou à ba
 
 As configurações do EditorConfig são compatíveis com vários editores de códigos e IDEs, incluindo o Visual Studio. Ele é um componente portátil que acompanha o seu código e pode impor estilos de codificação mesmo fora do Visual Studio.
 
-Quando você adiciona um arquivo EditorConfig ao projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado**  >  **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D** no perfil padrão). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig. Você pode definir quais configurações do EditorConfig deseja que **Formatar Documento** aplique à [página de opções de **Formatação**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+Quando você adiciona um arquivo EditorConfig ao projeto no Visual Studio, a formatação do código existente não é alterada, a menos que você formate o documento (**Editar** > **Avançado**  >  **Formatar Documento** ou **Ctrl**+**K**, **Ctrl**+**D** no perfil padrão). No entanto, novas linhas de código serão formatadas de acordo com as configurações do EditorConfig.
+
+::: moniker range="vs-2017"
+
+Você pode definir quais configurações do EditorConfig deseja que **Formatar Documento** aplique à [página de opções de **Formatação**](reference/options-text-editor-csharp-formatting.md#format-document-settings).
+
+::: moniker-end
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [EditorConfig no Visual Studio para Mac](/visualstudio/mac/editorconfig).
@@ -73,7 +79,7 @@ Se você remover um arquivo EditorConfig do seu projeto ou da base de código, s
 
 1. Edite o arquivo conforme o desejado, por exemplo:
 
-   ```EditorConfig
+   ```ini
    root = true
 
    [*.{cs,vb}]
@@ -104,7 +110,7 @@ Para substituir algumas ou todas as configurações do EditorConfig, adicione um
 
 Se você quiser substituir algumas, mas não todas as configurações, especifique essas configurações no arquivo *.editorconfig*. Somente as propriedades que você listar explicitamente no arquivo de nível inferior são substituídas. As outras configurações de arquivos .*.editorconfig* de nível superior continuam sendo aplicadas. Se você quiser garantir que _nenhuma_ configuração de _nenhum_ arquivo *.editorconfig* de nível superior seja aplicada a essa parte da base de código, adicione a propriedade ```root=true``` ao arquivo *.editorconfig* de nível inferior:
 
-```EditorConfig
+```ini
 # top-most EditorConfig file
 root = true
 ```
@@ -135,7 +141,7 @@ Conforme esperado, pressionar a tecla **Tab** na próxima linha faz a linha recu
 
 Adicione um novo arquivo chamado *.editorconfig* ao projeto, com o conteúdo a seguir. A configuração `[*.cs]` significa que essa alteração se aplica somente a arquivos de código C# no projeto.
 
-```EditorConfig
+```ini
 # Top-most EditorConfig file
 root = true
 

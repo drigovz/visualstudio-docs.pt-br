@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557290"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65847369"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -179,7 +179,7 @@ error | Quando esse estilo não estiver sendo seguido, mostre um erro do compila
 
 O arquivo *.editorconfig* a seguir contém uma convenção de nomenclatura que especifica que propriedades públicas, métodos, campos, eventos e delegados devem sempre ser escritos com maiúsculas. Observe que esta convenção de nomenclatura especifica vários tipos de símbolo aos quais aplicar a regra, usando uma vírgula para separar os valores.
 
-```EditorConfig
+```ini
 # Public members must be capitalized (public_members_must_be_capitalized)
 [*.{cs,vb}]
 dotnet_naming_rule.public_members_must_be_capitalized.symbols   = public_symbols
@@ -199,7 +199,7 @@ A captura de tela a seguir mostra o efeito desta convenção de nomenclatura no 
 
 Agora vamos alterar a gravidade da violação para `warning`:
 
-```EditorConfig
+```ini
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 

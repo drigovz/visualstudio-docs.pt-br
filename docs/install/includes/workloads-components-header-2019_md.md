@@ -6,11 +6,11 @@ ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
 ms.openlocfilehash: ad7ed11ec45bc8e8ab1bc6ce1eeda624cf2f2639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553712"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65848844"
 ---
 Ao definir dependências no manifesto do VSIX, é necessário especificar somente IDs de Componente. Use as tabelas desta página para determinar as dependências mínimas de componentes. Em alguns cenários, isso pode significar que somente um componente de uma carga de trabalho é especificado. Em outros cenários, isso pode significar que vários componentes de uma única carga de trabalho ou que vários componentes de várias cargas de trabalho são especificados. Para obter mais informações, confira a página [Como: Migrar projetos de extensibilidade para o Visual Studio](../../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md).
 

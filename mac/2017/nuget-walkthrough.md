@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f96354d9e460cebd81f52712f74dc6226f8706d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62989127"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697591"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -51,7 +51,7 @@ Depois que o pacote for baixado, ele será adicionado ao seu projeto. A soluçã
 
 * O nó **Referências** conterá uma lista de todos os assemblies que fazem parte de um pacote NuGet.
 * O nó **Pacotes** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
-* Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](http://docs.microsoft.com/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
+* Um arquivo **packages.config** será adicionado ao projeto. Esse arquivo XML é usado pelo IDE para controlar quais versões do pacote são referenciada neste projeto. Esse arquivo não deve ser editado manualmente e deve ser mantido no controle de versão. Observe que é possível usar um arquivo project.json em vez de um arquivo packages.config. O arquivo project.json é um formato de arquivo de pacote novo introduzido com o NuGet 3, que dá suporte à restauração transitiva. Informações mais detalhadas sobre o project.json podem ser encontradas na [Documentação do NuGet](https://docs.microsoft.com/NuGet/Schema/Project-Json). O arquivo project.json precisa ser adicionado manualmente e o projeto fechado e reaberto para que o arquivo possa ser usado no Visual Studio para Mac.
 
 ## <a name="using-nuget-packages"></a>Usando pacotes NuGet
 

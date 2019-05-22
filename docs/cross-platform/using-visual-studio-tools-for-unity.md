@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 15c4ba33dda8e1e3220d8285e35000061fedd99f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815884"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65676731"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
@@ -83,7 +83,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
 6. Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.
 
-   ![A caixa de diálogo Assistente de monobehavior. ] (../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![A caixa de diálogo Assistente de monobehavior. ](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Gerenciador de Projetos do Unity
 
@@ -93,7 +93,7 @@ O Gerenciador de Projetos do Unity exibe todos os seus arquivos e diretórios de
 
 - No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt**+**Shift**+**E**
 
-   ![Exibir a janela Gerenciador de Projetos do Unity. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Depuração do Unity
 
@@ -151,11 +151,11 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 - No Visual Studio, no menu principal, escolha **Depurar > Anexar Depurador do Unity**.
 
-   ![Anexe o depurador do Unity. ] (../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Anexe o depurador do Unity. ](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.
 
-   ![Escolha uma instância do Unity à qual se conectar. ] (../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Escolha uma instância do Unity à qual se conectar. ](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Projeto**
 
@@ -202,7 +202,7 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
    Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. Se você tem como objetivo o tempo de execução herdado, as Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity herdado. Se você tem como objetivo o novo tempo de execução e usa o Portable-PDB, o Ferramentas do Visual Studio para Unity não tentará fazer nenhuma conversão de símbolo, pois o novo tempo de execução do Unity é capaz de consumir nativamente PDBs portáteis.
    
-   Veja mais informações sobre a geração de PDB [aqui](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Se você tem como objetivo o novo tempo de execução, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o tempo de execução herdado, precisará usar "Full".
+   Veja mais informações sobre a geração de PDB [aqui](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations). Se você tem como objetivo o novo tempo de execução, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o tempo de execução herdado, precisará usar "Full".
 
 4. Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
 

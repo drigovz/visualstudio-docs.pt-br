@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 950e37fd1f1f42f534522c09a8322311c06cebd6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777658"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688509"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.

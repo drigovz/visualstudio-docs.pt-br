@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba como ativar o benefício Azure incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2c78f4d88cf42197691fa798af115c16227bd2a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948434"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685917"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -102,7 +102,7 @@ Se você tiver outra assinatura ativa do Visual Studio em um nível de assinatur
 
 Se sua assinatura tiver um limite de gastos e você não executar nenhuma ação antes que ela expire, sua assinatura do Azure será desabilitada. Para convertê-la em uma oferta paga conforme o uso e continuar a usá-la, adicione um meio de pagamento e [remova seu limite de gastos](/azure/billing/billing-spending-limit/).
 
-Se você preferir não continuar com esta assinatura do Azure do Visual Studio, você poderá transferir seus recursos, como máquinas virtuais e bancos de dados, para outra assinatura do Azure e [cancelar](http://azure.microsoft.com/support/cancel-account/) esta assinatura a qualquer momento.
+Se você preferir não continuar com esta assinatura do Azure do Visual Studio, você poderá transferir seus recursos, como máquinas virtuais e bancos de dados, para outra assinatura do Azure e [cancelar](https://azure.microsoft.com/support/cancel-account/) esta assinatura a qualquer momento.
 
 Se você acha que recebeu este email por engano, contate o [atendimento ao cliente do Azure](https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade).
 
