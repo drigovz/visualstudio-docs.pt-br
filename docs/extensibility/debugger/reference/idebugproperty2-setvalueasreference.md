@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ec4ee2e7ca497a6bd3429447a1d66d6b216259cf
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5821518a40cb474f17bf1c7fc1ef41326f2bffcb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457776"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200232"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 Define o valor dessa propriedade como o valor da referência fornecida.
@@ -46,21 +46,17 @@ int SetValueAsReference(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `rgpArgs`\
+`rgpArgs`\
+[in] Uma matriz de argumentos a serem passados para o setter de propriedade de código gerenciado. Se a propriedade setter não recebe argumentos ou se esse [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto não faz referência a tal um setter de propriedade `rgpArgs` deve ser um valor nulo. Normalmente, esse parâmetro é um valor nulo.
 
- [in] Uma matriz de argumentos a serem passados para o setter de propriedade de código gerenciado. Se a propriedade setter não recebe argumentos ou se esse [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto não faz referência a tal um setter de propriedade `rgpArgs` deve ser um valor nulo. Normalmente, esse parâmetro é um valor nulo.
+`dwArgCount`\
+[in] O número de argumentos no `rgpArgs` matriz.
 
- `dwArgCount`\
+`pValue`\
+[in] Uma referência, na forma de um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto para o valor a ser usado para definir essa propriedade.
 
- [in] O número de argumentos no `rgpArgs` matriz.
-
- `pValue`\
-
- [in] Uma referência, na forma de um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto para o valor a ser usado para definir essa propriedade.
-
- `dwTimeout`\
-
- [in] Quanto tempo para ser o valor, em milissegundos. Um valor típico é `INFINITE`. Isso afeta o período de tempo que qualquer avaliação possível.
+`dwTimeout`\
+[in] Quanto tempo para ser o valor, em milissegundos. Um valor típico é `INFINITE`. Isso afeta o período de tempo que qualquer avaliação possível.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um erro de código, geralmente um dos seguintes:
