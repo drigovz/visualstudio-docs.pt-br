@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 39214e2e0b1f025bddd052737d9914dd3a164fd2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226683"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207179"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Esse método obtém o campo que representa um nome de método totalmente qualificado.
@@ -44,17 +44,14 @@ int GetMethodFieldsByName(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pszFullName`\
+`pszFullName`\
+[in] O nome do método.
 
- [in] O nome do método.
+`nameMatch`\
+[in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas.
 
- `nameMatch`\
-
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas.
-
- `ppEnum`\
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os campos associados a esse método.
+`ppEnum`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) enumerador para os campos associados a esse método.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

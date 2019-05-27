@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78755a75582ed3e61784b8e7762f7f9f6390a34c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 42b49db266f9c27504a4627506b6652019e2dcf7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917171"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211135"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 O programa ou o nó de programa informa qual mecanismo de depuração (DES) usar para depurar este programa.
@@ -36,10 +39,9 @@ int SetEngine( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidEngine`
-
- [in] O GUID do DE.
+## <a name="parameters"></a>Parâmetros
+`guidEngine`\
+[in] O GUID do DE.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

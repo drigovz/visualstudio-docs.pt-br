@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 947e3cfc4c3ca435fe545ab8834c9b0a0c778786
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bad83e609f597f28dd5e15af7b5013f49dde6db3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917240"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210255"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 Recupera os bytes de memória ocupados pelo programa.
@@ -36,10 +39,9 @@ int GetMemoryBytes( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppMemoryBytes`
-
- [out] Retorna um [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que representa os bytes de memória do programa.
+## <a name="parameters"></a>Parâmetros
+`ppMemoryBytes`\
+[out] Retorna um [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto que representa os bytes de memória do programa.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

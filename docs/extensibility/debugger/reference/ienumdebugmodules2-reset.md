@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: af3e9e7d4c904bc9a0a50a232c764d9c4cf26cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd20b852e8715aa9a5783eccbbaeb820dd455bf1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62914547"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203537"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 Redefine a enumeração para o primeiro elemento.

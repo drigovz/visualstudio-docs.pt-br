@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13bed4a0675d4cce4ecff31fa070a7e4b9dd69a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ca284565db96b0a5304e5e6ef1cc631c61af4b97
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875380"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212442"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 Finaliza um processo.
@@ -36,10 +39,9 @@ int TerminateProcess ( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pProcess`
-
- [in] Uma [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa o processo a ser encerrado.
+## <a name="parameters"></a>Parâmetros
+`pProcess`\
+[in] Uma [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa o processo a ser encerrado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.

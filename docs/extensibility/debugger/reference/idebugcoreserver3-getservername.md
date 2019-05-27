@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a272476abec316eeb7d919993ca540b135680b87
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3f7cbe4e4d7fb3dc40ab3960649ceb62c93dd170
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413997"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205458"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 Recupera o nome do servidor.
@@ -36,10 +39,9 @@ int GetServerName(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pbstrName`
-
- [out] Retorna o nome do servidor.
+## <a name="parameters"></a>Parâmetros
+`pbstrName`\
+[out] Retorna o nome do servidor.
 
 > [!NOTE]
 > O chamador é responsável por liberar a cadeia de caracteres.

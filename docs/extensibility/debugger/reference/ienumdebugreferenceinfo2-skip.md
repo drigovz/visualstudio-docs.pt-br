@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e794d26588b95b12b8b13bc25c9c88711405c6f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 79f7272796a0c168117ed34a03d377b82edc5d69
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458237"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212521"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
 Ignora o número especificado de elementos.
@@ -40,9 +40,8 @@ int Skip(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `celt`\
-
- [in] Número de elementos a serem ignorados.
+`celt`\
+[in] Número de elementos a serem ignorados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se `celt` é maior que o número de elementos restantes; caso contrário, retornará um código de erro.

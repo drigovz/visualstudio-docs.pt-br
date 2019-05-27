@@ -1,6 +1,6 @@
 ---
-title: Criar e executar testes de unidade para código gerenciado
-ms.date: 11/04/2016
+title: Tutorial de teste de unidade C#
+ms.date: 05/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -13,25 +13,16 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: d951c6171abd0e8cad42554c49a40cb42542fb62
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976226"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704650"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
-Este artigo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você pode alterar o código do projeto e executar os testes novamente.
-
-> [!NOTE]
-> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
-
-Para obter informações sobre como executar testes em uma linha de comando, confira [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).
-
-## <a name="prerequisites"></a>Pré-requisitos
-
-- O projeto Banco. Confira [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md).
+Este artigo orienta você pela criação, execução e personalização de uma série de testes de unidade usando a estrutura de teste de unidade da Microsoft para código gerenciado e o **Gerenciador de Testes** do Visual Studio. Inicie com um projeto C# que está em desenvolvimento, crie testes que exercitem seu código, execute os testes e examine os resultados. Em seguida, você altera o código do projeto e executa os testes novamente.
 
 ## <a name="create-a-project-to-test"></a>Criar um projeto para teste
 
@@ -43,14 +34,14 @@ Para obter informações sobre como executar testes em uma linha de comando, con
 
    A caixa de diálogo **Novo Projeto** é exibida.
 
-3. Escolha modelo de projeto da **Biblioteca de Classes** do C#.
+3. Na categoria **Visual C#** > **.NET Core**, escolha o modelo de projeto **Aplicativo de Console (.NET Core)** .
 
 4. Dê ao projeto o nome **Bank** e clique em **OK**.
 
-   O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
+   O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Program.cs* aberto no editor de códigos.
 
    > [!NOTE]
-   > Se *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no **Gerenciador de Soluções** para abri-lo.
+   > Se *Program.cs* não estiver aberto no editor, clique duas vezes no arquivo *Program.cs* no **Gerenciador de Soluções** para abri-lo.
 
 ::: moniker-end
 
@@ -60,42 +51,92 @@ Para obter informações sobre como executar testes em uma linha de comando, con
 
 2. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-3. Pesquise o modelo de projeto **Biblioteca de Classes** do C#, selecione-o e, em seguida, clique em **Avançar**.
+3. Pesquise o modelo de projeto **Aplicativo de Console (.NET Core)** do C#, selecione-o e, em seguida, clique em **Avançar**.
 
 4. Dê ao projeto o nome **Bank** e clique em **Criar**.
 
-   O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Class1.cs* aberto no editor de códigos.
+   O projeto Bank é criado e exibido no **Gerenciador de Soluções** com o arquivo *Program.cs* aberto no editor de códigos.
 
    > [!NOTE]
-   > Se *Class1.cs* não estiver aberto no Editor de Códigos, clique duas vezes no arquivo *Class1.cs* no **Gerenciador de Soluções** para abri-lo.
+   > Se *Program.cs* não estiver aberto no editor, clique duas vezes no arquivo *Program.cs* no **Gerenciador de Soluções** para abri-lo.
 
 ::: moniker-end
 
-5. Copie o código-fonte do [Projeto de exemplo para criação de testes de unidade](../test/sample-project-for-creating-unit-tests.md) e substitua o conteúdo original de *Class1.cs* pelo código copiado.
+5. Substitua o conteúdo do *Program.cs* pelo seguinte código C# que define uma classe, *BankAccount*:
 
-6. Salve o arquivo como *BankAccount.cs*.
+   ```csharp
+   using System;
+
+   namespace BankAccountNS
+   {
+       /// <summary>
+       /// Bank account demo class.
+       /// </summary>
+       public class BankAccount
+       {
+           private readonly string m_customerName;
+           private double m_balance;
+
+           private BankAccount() { }
+
+           public BankAccount(string customerName, double balance)
+           {
+               m_customerName = customerName;
+               m_balance = balance;
+           }
+
+           public string CustomerName
+           {
+               get { return m_customerName; }
+           }
+
+           public double Balance
+           {
+               get { return m_balance; }
+           }
+
+           public void Debit(double amount)
+           {
+               if (amount > m_balance)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount; // intentionally incorrect code
+           }
+
+           public void Credit(double amount)
+           {
+               if (amount < 0)
+               {
+                   throw new ArgumentOutOfRangeException("amount");
+               }
+
+               m_balance += amount;
+           }
+
+           public static void Main()
+           {
+               BankAccount ba = new BankAccount("Mr. Bryan Walton", 11.99);
+
+               ba.Credit(5.77);
+               ba.Debit(11.22);
+               Console.WriteLine("Current balance is ${0}", ba.Balance);
+           }
+       }
+   }
+   ```
+
+6. Renomeie o arquivo como *BankAccount.cs* clicando com o botão direito do mouse e escolha **Renomear** na **Gerenciador de Soluções**.
 
 7. No menu **Compilar**, clique em **Compilar Solução**.
 
-Agora você tem um projeto chamado Banco. Ele contém o código-fonte para testes e as ferramentas para testá-lo. O namespace de Bank, BankAccountNS, contém a classe pública BankAccount, cujos métodos você testará nos procedimentos a seguir.
-
-Neste artigo, os testes se concentram no método Debit. O método Debit é chamado quando o dinheiro é retirado de uma conta. Esta é a definição do método:
-
-```csharp
-// Method to be tested.
-public void Debit(double amount)
-{
-    if(amount > m_balance)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    if (amount < 0)
-    {
-        throw new ArgumentOutOfRangeException("amount");
-    }
-    m_balance += amount;
-}
-```
+Agora você tem um projeto com métodos que você pode testar. Neste artigo, os testes se concentram no método `Debit`. O método `Debit` é chamado quando o dinheiro é retirado de uma conta.
 
 ## <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
@@ -108,7 +149,7 @@ public void Debit(double amount)
 
 2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado**, expanda **Visual C#** e, em seguida, escolha **Teste**.
 
-3. Na lista de modelos, selecione **Projeto de Teste de Unidade**.
+3. Na lista de modelos, selecione **Projeto de Teste de MSTest (.NET Core)** .
 
 4. Na caixa **Nome**, insira `BankTests` e, em seguida, selecione **OK**.
 
@@ -118,9 +159,9 @@ public void Debit(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. Pesquise o modelo de **Projeto de Teste de Unidade** do C#, selecione-o e, em seguida, clique em **Avançar**.
+2. Pesquise pelo modelo de **Projeto de Teste MSTest (.NET Core)** do C#, selecione-o e, em seguida, clique em **Avançar**.
 
-3. Nomeie o projeto `BankTests`.
+3. Nomeie o projeto como **BankTests**.
 
 4. Clique em **Criar**.
 
@@ -130,22 +171,31 @@ public void Debit(double amount)
 
 5. No projeto **BankTests** adicione uma referência ao projeto **Bank**.
 
-   No **Gerenciador de Soluções**, selecione **Referências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu do clique com o botão direito.
+   No **Gerenciador de Soluções**, selecione **Dependências** no projeto **BankTests** e, em seguida, escolha **Adicionar Referência** no menu de clique com o botão direito do mouse.
 
-6. Na caixa de diálogo **Gerenciador de Referências**, expanda **Solução** e, em seguida, marque o item **Banco**.
+6. Na caixa de diálogo **Gerenciador de Referências**, expanda **Projetos**, selecione **Solução** e, em seguida, marque o item **Banco**.
+
+7. Escolha **OK**.
 
 ## <a name="create-the-test-class"></a>Criar a classe de teste
 
 Crie uma classe de teste para verificar a classe `BankAccount`. Use o arquivo *UnitTest1.cs* que foi gerado pelo modelo do projeto, mas dê ao arquivo e à classe nomes mais descritivos. Faça isso em uma única etapa renomeando o arquivo no **Gerenciador de Soluções**.
 
-### <a name="rename-a-class-file"></a>Renomear um arquivo de classe
+### <a name="rename-a-file-and-class"></a>Renomear um arquivo e uma classe
 
-No **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu do clique com o botão direito, escolha **Renomear** e, em seguida, renomeie o arquivo como *BankAccountTests.cs*. Escolha **Sim** na caixa de diálogo que pergunta se você deseja renomear todas as referências ao elemento de código `UnitTest1` no projeto.
+1. Para renomear o arquivo, em **Gerenciador de Soluções**, selecione o arquivo *UnitTest1.cs* no projeto BankTests. No menu do clique com o botão direito, escolha **Renomear** e, em seguida, renomeie o arquivo como *BankAccountTests.cs*.
 
-Esta etapa altera o nome da classe para `BankAccountTests`. O arquivo *BankAccountTests.cs* agora contém o seguinte código:
+   ::: moniker range="vs-2017"
+
+   Na caixa de diálogo que aparece, escolha **Não**.
+
+   ::: moniker-end
+
+2. Para renomear a classe, posicione o cursor em `UnitTest1` no editor de código e pressione **F2** (ou clique com o botão direito do mouse e escolha **Renomear**). Digite **BankAccountTests** e, em seguida, pressione **Enter**.
+
+O arquivo *BankAccountTests.cs* agora contém o seguinte código:
 
 ```csharp
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace BankTests
@@ -161,9 +211,9 @@ namespace BankTests
 }
 ```
 
-### <a name="add-a-using-statement-to-the-project-under-test"></a>Adicionar uma instrução using ao projeto em teste
+### <a name="add-a-using-statement"></a>Adicionar uma instrução using
 
-Adicione também uma instrução `using` à classe para permitir chamadas ao projeto em teste, sem usar nomes totalmente qualificados. Na parte superior do arquivo da classe, adicione:
+Adicione uma [instrução `using`](/dotnet/csharp/language-reference/keywords/using-statement) à classe de teste para permitir chamadas ao projeto em teste sem usar nomes totalmente qualificados. Na parte superior do arquivo da classe, adicione:
 
 ```csharp
 using BankAccountNS;
@@ -173,15 +223,15 @@ using BankAccountNS;
 
 Os requisitos mínimos para uma classe de teste são:
 
-- O atributo `[TestClass]` é necessário na estrutura de teste de unidade do Microsoft para código gerenciado de qualquer classe que contenha métodos de teste de unidade que você queira executar no Gerenciador de Testes.
+- O atributo `[TestClass]` é necessário em qualquer classe que contenha métodos de teste de unidade que você queira executar no Gerenciador de Testes.
 
-- Cada método de teste que você deseja executar com o Gerenciador de Testes precisa ter o atributo `[TestMethod]`.
+- Cada método de teste que você deseja reconhecer com o Gerenciador de Testes precisa ter o atributo `[TestMethod]`.
 
-Pode haver outras classes em um projeto de teste de unidade que não têm o atributo `[TestClass]` e pode haver outros métodos em classes de teste que não têm o atributo `[TestMethod]`. Você pode usar essas classes e métodos em seus métodos de teste.
+Pode haver outras classes em um projeto de teste de unidade que não têm o atributo `[TestClass]` e pode haver outros métodos em classes de teste que não têm o atributo `[TestMethod]`. Você pode chamar essas classes e métodos dos seus métodos de teste.
 
 ## <a name="create-the-first-test-method"></a>Criar o primeiro método de teste
 
-Neste procedimento, você escreverá métodos de teste de unidade para verificar o comportamento do método `Debit` da classe `BankAccount`. O método `Debit` é mostrado anteriormente neste artigo.
+Neste procedimento, você escreverá métodos de teste de unidade para verificar o comportamento do método `Debit` da classe `BankAccount`.
 
 Há pelo menos três comportamentos que precisam ser verificados:
 
@@ -217,7 +267,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-O método é simples: ele define um novo objeto `BankAccount` com um saldo inicial e, em seguida, retira um valor válido. Ele usa o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A> para verificar se o saldo final é conforme o esperado.
+O método é simples: ele define um novo objeto `BankAccount` com um saldo inicial e, em seguida, retira um valor válido. Ele usa o método <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> para verificar se o saldo final é conforme o esperado.
 
 ### <a name="test-method-requirements"></a>Requisitos do método de teste
 
@@ -233,26 +283,25 @@ Um método de teste deve atender aos seguintes requisitos:
 
 1. No menu **Compilar**, escolha **Compilar Solução**.
 
-   Se não houver erros, o **Gerenciador de Testes** será exibido com **Debit_WithValidAmount_UpdatesBalance** listado no grupo **Não Executar Testes**.
+2. Se o **Gerenciador de Testes** não estiver aberto, abra-o escolhendo **Teste** > **Windows** > **Gerenciador de Testes** na barra de menus superior.
 
-   > [!TIP]
-   > Se o **Gerenciador de Testes** não for exibido após um build bem-sucedido, escolha **Testar** no menu, **Windows** e, em seguida, **Gerenciador de Testes**.
+3. Escolha **Executar Todos** para executar o teste.
 
-2. Escolha **Executar Todos** para executar o teste. Durante a execução do teste, a barra de status na parte superior da janela fica animada. Ao final da execução de teste, a barra ficará verde se todos os métodos de teste forem aprovados ou vermelha, se algum teste falhar.
+   Durante a execução do teste, a barra de status na parte superior da janela **Gerenciador de Testes** fica animada. Ao final da execução de teste, a barra ficará verde se todos os métodos de teste forem aprovados ou vermelha, se algum teste falhar.
 
-3. Nesse caso, o teste falha. O método de teste é movido para o grupo **Testes com Falha**. Selecione o método no **Gerenciador de Testes** para exibir os detalhes na parte inferior da janela.
+   Nesse caso, o teste falha.
+
+4. Selecione o método no **Gerenciador de Testes** para exibir os detalhes na parte inferior da janela.
 
 ## <a name="fix-your-code-and-rerun-your-tests"></a>Corrigir o código e executar os testes novamente
 
-### <a name="analyze-the-test-results"></a>Analisar os resultados de teste
-
-O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEqual`, a mensagem exibe o que era esperado (o parâmetro **Expected\<*value*>**) e o que foi, de fato, recebido (o parâmetro **Actual\<*value*>**). Você esperava que o saldo diminuísse, mas em vez disso, ele aumentou pelo valor do saque.
+O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEqual`, a mensagem exibe o que era esperado e o que foi realmente recebido. Você esperava que o saldo diminuísse, mas em vez disso, ele aumentou pelo valor do saque.
 
 O teste de unidade revelou um bug: o valor do saque foi *adicionado* ao saldo da conta quando deveria ser *subtraído*.
 
 ### <a name="correct-the-bug"></a>Corrigir o bug
 
-Para corrigir o erro, substitua a linha:
+Para corrigir o erro, no arquivo *BankAccount.cs*, substitua a linha:
 
 ```csharp
 m_balance += amount;
@@ -266,7 +315,9 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>Executar o teste novamente
 
-No **Gerenciador de Testes**, escolha **Executar Todos** para executar o teste novamente. A barra verde/vermelho fica verde para indicar que o teste foi aprovado, e o teste é movido para o grupo **Testes Aprovados**.
+No **Gerenciador de Testes**, escolha **Executar Todos** para executar o teste novamente. A barra verde/vermelho fica verde para indicar que o teste foi aprovado.
+
+![Gerenciador de Testes no Visual Studio 2019 mostrando a aprovação no teste](media/test-explorer-banktests-passed.png)
 
 ## <a name="use-unit-tests-to-improve-your-code"></a>Usar testes de unidade para melhorar o código
 
@@ -279,7 +330,7 @@ Você criou um método de teste para confirmar que um valor válido é deduzido 
 - maior que o saldo ou
 - menor que zero.
 
-### <a name="create-the-test-methods"></a>Criar os métodos de teste
+### <a name="create-and-run-new-test-methods"></a>Criar e executar novos métodos de teste
 
 Crie um método de teste para verificar o comportamento correto quando o valor do débito é menor que zero:
 
@@ -310,8 +361,6 @@ Para testar o caso quando o valor retirado é maior que o saldo, realize as segu
 
 3. Definir `debitAmount` para um número maior que o saldo.
 
-### <a name="run-the-tests"></a>Executar os testes
-
 A execução dos dois métodos de teste demonstra que os testes funcionam corretamente.
 
 ### <a name="continue-the-analysis"></a>Continuar a análise
@@ -328,7 +377,7 @@ Há um construtor que você pode usar que relata informações muito mais ricas:
 
 ### <a name="refactor-the-code-under-test"></a>Refatorar o código em teste
 
-Primeiro, defina duas constantes para as mensagens de erro no escopo da classe. Coloque-as na classe em teste, BankAccount:
+Primeiro, defina duas constantes para as mensagens de erro no escopo da classe. Coloque-os na classe em teste, `BankAccount`:
 
 ```csharp
 public const string DebitAmountExceedsBalanceMessage = "Debit amount exceeds balance";
@@ -383,7 +432,7 @@ Suponha que haja um bug no método em teste e que o método `Debit` ainda não g
 
 Esse é um bug no método de teste. Para resolver o problema, adicione uma declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> ao final do método de teste para lidar com o caso em que nenhuma exceção é gerada.
 
-Mas uma nova execução do teste mostra que agora o teste *falha* se a exceção correta é capturada. O bloco `catch` captura a exceção, mas o método continua sendo executado e ele falha na nova declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>. Para resolver esse problema, adicione uma instrução `return` após a `StringAssert` no bloco `catch`. Uma nova execução do teste confirma que você corrigiu o problema. A versão final de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` é parecida com esta:
+Uma nova execução do teste mostra que agora o teste *falha* se a exceção correta é capturada. O bloco `catch` captura a exceção, mas o método continua sendo executado e ele falha na nova declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A>. Para resolver esse problema, adicione uma instrução `return` após a `StringAssert` no bloco `catch`. Uma nova execução do teste confirma que você corrigiu o problema. A versão final de `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` é parecida com esta:
 
 ```csharp
 [TestMethod]
@@ -410,4 +459,13 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 }
 ```
 
+### <a name="conclusion"></a>Conclusão
+
 As melhorias no código de teste levaram a métodos de teste mais robustos e informativos. Porém, o mais importante é que eles também melhoraram o código em teste.
+
+> [!TIP]
+> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+
+## <a name="see-also"></a>Consulte também
+
+Para obter informações sobre como executar testes em uma linha de comando, confira [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7ee5d4a59442238b461361522b06087650547b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 2f35c63310abe227dd50428d34122787ed0fb292
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62873961"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212622"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 Cria um objeto de matriz. Esta matriz pode conter qualquer um dos primitivos ou valores de instância do objeto.
@@ -46,30 +49,24 @@ int CreateArrayObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ot`
+## <a name="parameters"></a>Parâmetros
+`ot`\
+[in] Especifica um valor a partir de [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeração que indica o tipo do novo objeto de matriz.
 
- [in] Especifica um valor a partir de [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) enumeração que indica o tipo do novo objeto de matriz.
+`pClassField`\
+[in] Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa a classe de um objeto, se os valores de instância de criação de uma matriz de objetos. Se criar uma matriz de objetos primitivos, este parâmetro é um valor nulo.
 
- `pClassField`
+`dwRank`\
+[in] A classificação ou o número de dimensões da matriz.
 
- [in] Uma [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto que representa a classe de um objeto, se os valores de instância de criação de uma matriz de objetos. Se criar uma matriz de objetos primitivos, este parâmetro é um valor nulo.
+`dwDims`\
+[in] Os tamanhos de cada dimensão da matriz.
 
- `dwRank`
+`dwLowBounds`\
+[in] A origem de cada dimensão (geralmente 0 ou 1).
 
- [in] A classificação ou o número de dimensões da matriz.
-
- `dwDims`
-
- [in] Os tamanhos de cada dimensão da matriz.
-
- `dwLowBounds`
-
- [in] A origem de cada dimensão (geralmente 0 ou 1).
-
- `ppObject`
-
- [out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa a matriz criada recentemente. Isso é, na verdade, uma [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) objeto.
+`ppObject`\
+[out] Retorna um [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objeto que representa a matriz criada recentemente. Isso é, na verdade, uma [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md) objeto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

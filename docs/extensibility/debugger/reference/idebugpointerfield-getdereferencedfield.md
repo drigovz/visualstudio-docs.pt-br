@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51ddd954e069ae2f6a683b727305808b8591d4f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a2fed1d2f0a9027f4570c4efdc41ddf1eeb5f9a3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872037"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209404"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 Esse método retorna o tipo de objeto para o qual este objeto de ponteiro aponta.
@@ -36,10 +39,9 @@ int GetDereferencedField(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppField`
-
- [out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o tipo de objeto de destino.
+## <a name="parameters"></a>Parâmetros
+`ppField`\
+[out] Retorna um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) que descreve o tipo de objeto de destino.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

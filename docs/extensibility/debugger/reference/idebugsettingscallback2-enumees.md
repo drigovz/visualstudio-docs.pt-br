@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 12005f27e533d491451695925253137fb172ccd6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5205cfbda0420e45fc1e22dac678d97975f937a8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457621"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212159"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 Enumera os avaliadores de expressão disponível considerando os identificadores de idioma e o fornecedor.
@@ -44,21 +44,17 @@ public int EnumEEs(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `celtBuffer`\
+`celtBuffer`\
+[in] Número de elementos no `pceltEEs` buffer.
 
- [in] Número de elementos no `pceltEEs` buffer.
+`rgguidLang`\
+[no, out] Identificador exclusivo para a linguagem de programação.
 
- `rgguidLang`\
+`rgguidVendor`\
+[no, out] Identificador exclusivo para o fornecedor.
 
- [no, out] Identificador exclusivo para a linguagem de programação.
-
- `rgguidVendor`\
-
- [no, out] Identificador exclusivo para o fornecedor.
-
- `pceltEEs`\
-
- [no, out] Matriz de avaliadores de expressão.
+`pceltEEs`\
+[no, out] Matriz de avaliadores de expressão.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

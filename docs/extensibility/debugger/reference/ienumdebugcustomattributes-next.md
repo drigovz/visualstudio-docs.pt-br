@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 205308bbac53ac21b8b81c26b4f333c3be111dbd
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 8a4ea136872181a9432efbd778738e22c47c6304
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226651"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208273"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 Recupera um número especificado de atributos personalizados em uma sequência de enumeração.
@@ -44,17 +44,14 @@ int Next(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `celt`\
+`celt`\
+[in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
 
- [in] O número de elementos a serem recuperados. Também especifica o tamanho máximo da `rgelt` matriz.
+`rgelt`\
+[out] Uma matriz de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objetos a serem preenchidos.
 
- `rgelt`\
-
- [out] Uma matriz de [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) objetos a serem preenchidos.
-
- `pceltFetched`\
-
- [out] Retorna o número de elementos realmente retornados em `rgelt`.
+`pceltFetched`\
+[out] Retorna o número de elementos realmente retornados em `rgelt`.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se menos do que o número solicitado de elementos podem ser retornados; caso contrário, retornará um código de erro.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe8b6768bf67cab4a4d69e82c509db0bd6f93543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1b03fe660cd6b909c1d86871556e4f0e6ecb945
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62917255"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212292"
 ---
 # <a name="idebugprogram2getengineinfo"></a>IDebugProgram2::GetEngineInfo
 Obtém o nome e o GUID do mecanismo de depuração (DES) executar este programa.
@@ -38,14 +41,12 @@ int GetEngineInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pbstrEngine`
+## <a name="parameters"></a>Parâmetros
+`pbstrEngine`\
+[out] Retorna o nome do DE executar este programa.
 
- [out] Retorna o nome do DE executar este programa.
-
- `pguidEngine`
-
- [out] Retorna o GUID do DE executar este programa.
+`pguidEngine`\
+[out] Retorna o GUID do DE executar este programa.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a91dc4954a7455505867027a365f5a23a3ef0a46
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945395"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805300"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -47,12 +47,12 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 Os parceiros que têm uma competência não são qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.
 
-Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)**. O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
+Com o Action Pack, o parceiro ganha **Três assinaturas do Visual Studio Professional (MPN)** . O Visual Studio Professional (MPN) é uma oferta personalizada que não tem um equivalente disponível comercialmente no mercado. Está incluído o seguinte:
 - Visual Studio Professional – somente a versão mais recente
 - Windows Enterprise – somente a versão mais recente e deve ser usado somente para desenvolvimento e teste
 - Windows Server – somente a versão mais recente e deve ser usado somente para desenvolvimento e teste
 
-Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares gratuitos para desenvolvimento, incluindo o SQL Server Developer Edition.
+Os assinantes do Visual Studio Professional (MPN) também podem baixar e usar softwares para desenvolvimento, incluindo o SQL Server Developer Edition.
 
 A assinatura do MPN (Visual Studio Professional) não inclui benefícios do Azure DevOps Services, créditos mensais do Azure, suporte técnico, treinamento nem outros benefícios do assinante que estão disponíveis com as assinaturas do Visual Studio oferecidas comercialmente.
 

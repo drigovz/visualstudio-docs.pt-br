@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cbed7e4421b01e1a779c5c976001a5dd5b4ba2d1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 1db63b908871fff8fbaf2e71e0626b1c9a6486cb
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918890"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210578"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
 Recupera o tamanho, em bytes, da memória representado por este [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) objeto.
@@ -37,10 +40,9 @@ int GetSize(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pqwSize`
-
- [out] Retorna o tamanho, em bytes do espaço de memória.
+## <a name="parameters"></a>Parâmetros
+`pqwSize`\
+[out] Retorna o tamanho, em bytes do espaço de memória.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

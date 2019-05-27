@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be32b39df6da618e38dc9e62264412fce8c29e20
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 24cce091d1381d97d70ce9c42baecc38bcf92393
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922418"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205932"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 Recupera um tipo de dado seu nome.
@@ -39,18 +42,15 @@ int GetTypesByName(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pszClassName`
+## <a name="parameters"></a>Parâmetros
+`pszClassName`\
+[in] Nome do tipo.
 
- [in] Nome do tipo.
+`nameMatch`\
+[in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.
 
-`nameMatch`
-
- [in] Seleciona o tipo de correspondência, por exemplo, diferencia maiusculas de minúsculas. Um valor a partir de [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) enumeração.
-
-`ppEnum`
-
- [out] Um enumerador que contém o tipo ou tipos com o nome fornecido.
+`ppEnum`\
+[out] Um enumerador que contém o tipo ou tipos com o nome fornecido.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

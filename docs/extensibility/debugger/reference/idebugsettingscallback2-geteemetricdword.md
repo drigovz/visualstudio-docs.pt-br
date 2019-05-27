@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c8349b8a7f7b823d4596f167889a227b166b7a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: e3661186357e82170cc67f6e3744e8662ebae76c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457361"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212135"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
 Recupera um valor que corresponde à métrica do avaliador de expressão especificada.
@@ -44,21 +44,17 @@ private int GetEEMetricDword(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `guidLang`\
+`guidLang`\
+[in] Identificador exclusivo da linguagem de programação.
 
- [in] Identificador exclusivo da linguagem de programação.
+`guidVendor`\
+[in] Identificador exclusivo do fornecedor.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nome da métrica.
 
- [in] Identificador exclusivo do fornecedor.
-
- `pszMetric`\
-
- [in] Nome da métrica.
-
- `pdwValue`\
-
- [out] Retorna o valor que corresponde à cadeia de métrica.
+`pdwValue`\
+[out] Retorna o valor que corresponde à cadeia de métrica.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

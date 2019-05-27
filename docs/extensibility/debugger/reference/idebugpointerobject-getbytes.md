@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a2c93e032175ce556d5504ed8b3f57dcf619a61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d108613c7a557c189a2c42880a5618b42e0bd3b8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842698"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209397"
 ---
 # <a name="idebugpointerobjectgetbytes"></a>IDebugPointerObject::GetBytes
 Obtém o valor apontado como uma série de bytes consecutivos.
@@ -42,22 +45,18 @@ int GetBytes(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwStart`
+## <a name="parameters"></a>Parâmetros
+`dwStart`\
+[in] Um deslocamento, em bytes, desde o início do objeto apontado.
 
- [in] Um deslocamento, em bytes, desde o início do objeto apontado.
+`dwCount`\
+[in] O número de bytes a serem recuperados.
 
- `dwCount`
+`pBytes`\
+[no, out] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando no deslocamento especificado do objeto apontado.
 
- [in] O número de bytes a serem recuperados.
-
- `pBytes`
-
- [no, out] Uma matriz que é preenchida com o valor como uma série de bytes consecutivos, começando no deslocamento especificado do objeto apontado.
-
- `pdwBytes`
-
- [out] Retorna o número de bytes realmente recuperados.
+`pdwBytes`\
+[out] Retorna o número de bytes realmente recuperados.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

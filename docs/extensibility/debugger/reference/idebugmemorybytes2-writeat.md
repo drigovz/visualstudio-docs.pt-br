@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e23ec439e352f6aa4e3b4d307bea76ebfdcf00
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ad3e4c14c28f220a28e8d9aa65ddb1b6e6a3af0a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918785"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210545"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 Grava o número especificado de bytes de memória, iniciando no endereço especificado.
@@ -41,18 +44,15 @@ int WriteAt(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pStartContext`
+## <a name="parameters"></a>Parâmetros
+`pStartContext`\
+[in] O [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica o local iniciar a gravação de bytes.
 
- [in] O [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objeto que especifica o local iniciar a gravação de bytes.
+`dwCount`\
+[in] O número de bytes a serem gravados.
 
- `dwCount`
-
- [in] O número de bytes a serem gravados.
-
- `rgbMemory`
-
- [in] Bytes a serem gravados. Essa matriz deve para ter pelo menos `dwCount` bytes de tamanho.
+`rgbMemory`\
+[in] Bytes a serem gravados. Essa matriz deve para ter pelo menos `dwCount` bytes de tamanho.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` se nem todos os bytes poderia ser escritos ou retorna um código de erro (normalmente `E_FAIL`).

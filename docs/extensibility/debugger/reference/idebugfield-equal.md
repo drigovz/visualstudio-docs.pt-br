@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed978355aa752730cfb43390b3e4b6f80d327f83
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bfee65537512398cad2f4b86d51ebefac230fb1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919462"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212222"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 Esse método compara esse campo com o campo especificado quanto à igualdade.
@@ -36,10 +39,9 @@ int Equal(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pField`
-
- [in] O campo a ser comparado a esta.
+## <a name="parameters"></a>Parâmetros
+`pField`\
+[in] O campo a ser comparado a esta.
 
 ## <a name="return-value"></a>Valor de retorno
  Se os campos são os mesmos, retornará `S_OK`. Retorna se os campos forem diferentes, `S_FALSE.` caso contrário, retornará um código de erro.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf62392118ed3ddfb2dfbfca06588f0935f3192d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f5d2f02621b91a8a39b38788072f8099178858c0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62918718"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66210311"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 Cria um enumerador para o tipo de cada argumento necessário para chamar o método.
@@ -36,10 +39,9 @@ int EnumArguments(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppParams`
-
- [out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de tipos de argumento. Retorna um valor nulo se não houver nenhum argumento.
+## <a name="parameters"></a>Parâmetros
+`ppParams`\
+[out] Retorna um [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) objeto que representa a lista de tipos de argumento. Retorna um valor nulo se não houver nenhum argumento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, Retorna S_OK ou retornará S_FALSE se não houver nenhum argumento. Caso contrário, retornará um código de erro.

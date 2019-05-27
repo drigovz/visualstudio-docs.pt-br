@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cd7bd4bfd113da8cfd311d1022967d8c99f915b5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 31bc89e248d609e8b828d4cc5b9ac41c8e15c70c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223949"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203698"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 Esse método altera o objeto que representa o visualizador.
@@ -44,17 +44,14 @@ int SetObjectForVisualizer(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pNewObject`\
+`pNewObject`\
+[in] O objeto a ser definido.
 
- [in] O objeto a ser definido.
+`error`\
+[out] Se houver um erro ao configurar o objeto, essa cadeia de caracteres contém a mensagem de erro.
 
- `error`\
-
- [out] Se houver um erro ao configurar o objeto, essa cadeia de caracteres contém a mensagem de erro.
-
- `pException`\
-
- [out] Se houver um erro, esse objeto contém as informações de exceção.
+`pException`\
+[out] Se houver um erro, esse objeto contém as informações de exceção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
