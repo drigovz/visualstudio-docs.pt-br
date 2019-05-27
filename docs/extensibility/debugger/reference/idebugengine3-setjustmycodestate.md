@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82c2834e7c368776f0ae91cf9106ec6331eed997
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fff1334c29ad4da5edb90c9a3b289582a8f616d8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62920901"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212509"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 Esse método informa o mecanismo de depuração sobre as informações de estado de JustMyCode.
@@ -40,18 +43,15 @@ int SetJustMyCodeState(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `fUpdate`
+## <a name="parameters"></a>Parâmetros
+`fUpdate`\
+[in] Diferente de zero (`TRUE`) para atualizar as informações atuais, zero (`FALSE`) para redefinir todas as informações (ignorando tudo definido anteriormente).
 
- [in] Diferente de zero (`TRUE`) para atualizar as informações atuais, zero (`FALSE`) para redefinir todas as informações (ignorando tudo definido anteriormente).
+`dwModules`\
+[in] Número de estruturas de informações em `rgJMCSpec.`
 
- `dwModules`
-
- [in] Número de estruturas de informações em `rgJMCSpec.`
-
- `rgJMCSpec`
-
- [in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) estruturas para usar.
+`rgJMCSpec`\
+[in] Matriz de [JMC_CODE_SPEC](../../../extensibility/debugger/reference/jmc-code-spec.md) estruturas para usar.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

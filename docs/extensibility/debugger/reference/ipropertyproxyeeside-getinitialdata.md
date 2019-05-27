@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d61d7cca106207eb5381499472d6d3e2e377a9e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 395f3b40f94f4e04ec792c48115c1aa23b8670fd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461100"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198848"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 Retorna os dados iniciais para esse objeto.
@@ -40,9 +40,8 @@ int GetInitialData(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `dataOut`\
-
- [out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os dados iniciais deste objeto.
+`dataOut`\
+[out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) objeto que contém os dados iniciais deste objeto.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

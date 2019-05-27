@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0763a4191f011748c6c5145a250459c4b9b4cf8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e27d69f89ad29121dbafaca1787bdd870fa75634
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921712"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204879"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 Move o ponteiro de leitura no fluxo de desmontagem um determinado número de instruções em relação a uma posição especificada.
@@ -42,22 +45,18 @@ int Seek( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwSeekStart`
+## <a name="parameters"></a>Parâmetros
+`dwSeekStart`\
+[in] Um valor a partir de [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) enumeração que especifica a posição relativa para iniciar o processo de busca.
 
- [in] Um valor a partir de [SEEK_START](../../../extensibility/debugger/reference/seek-start.md) enumeração que especifica a posição relativa para iniciar o processo de busca.
+`pCodeContext`\
+[in] O [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o contexto de código que a operação de busca é relativo. Esse parâmetro é usado somente se `dwSeekStart`  =  `SEEK_START_CODECONTEXT`; caso contrário, esse parâmetro será ignorado e pode ser um valor nulo.
 
- `pCodeContext`
+`uCodeLocationId`\
+[in] O identificador de local do código que a operação de busca é relativo. Esse parâmetro é usado se `dwSeekStart`  =  `SEEK_START_CODELOCID`; caso contrário, esse parâmetro será ignorado e pode ser definido como 0. Consulte a seção comentários para o [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método para obter uma descrição de um identificador de local do código.
 
- [in] O [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objeto que representa o contexto de código que a operação de busca é relativo. Esse parâmetro é usado somente se `dwSeekStart`  =  `SEEK_START_CODECONTEXT`; caso contrário, esse parâmetro será ignorado e pode ser um valor nulo.
-
- `uCodeLocationId`
-
- [in] O identificador de local do código que a operação de busca é relativo. Esse parâmetro é usado se `dwSeekStart`  =  `SEEK_START_CODELOCID`; caso contrário, esse parâmetro será ignorado e pode ser definido como 0. Consulte a seção comentários para o [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) método para obter uma descrição de um identificador de local do código.
-
- `iInstructions`
-
- [in] O número de instruções para mover em relação à posição especificada no `dwSeekStart`. Esse valor pode ser negativo para retroceder.
+`iInstructions`\
+[in] O número de instruções para mover em relação à posição especificada no `dwSeekStart`. Esse valor pode ser negativo para retroceder.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se a posição de busca foi para um ponto além da lista de instruções disponíveis. Caso contrário, retornará um código de erro.

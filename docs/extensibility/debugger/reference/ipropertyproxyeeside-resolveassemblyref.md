@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87b72f7bf9d91f7e59bd5550149ed7cf09f8827d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 68efedbf9e8fa19025c7e7f1e47ed70cc1e9d1cc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458110"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66198712"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 Determina o local da referência de assembly gerenciado especificado.
@@ -48,25 +48,20 @@ int ResolveAssemblyRef(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `assemName`\
+`assemName`\
+[in] Nome do assembly para resolver.
 
- [in] Nome do assembly para resolver.
+`assemBytes`\
+[out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os bytes de assembly associados à referência de objeto.
 
- `assemBytes`\
+`assemPdb`\
+[out] Retorna um `IEEDataStorage` objeto que contém o símbolo de armazena os dados associados a esta referência.
 
- [out] Retorna um [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) contendo os bytes de assembly associados à referência de objeto.
+`assemLocation`\
+[out] Retorna o local do caminho dessa referência.
 
- `assemPdb`\
-
- [out] Retorna um `IEEDataStorage` objeto que contém o símbolo de armazena os dados associados a esta referência.
-
- `assemLocation`\
-
- [out] Retorna o local do caminho dessa referência.
-
- `alr`\
-
- [out] Retorna um valor da [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeração que indica o local do assembly dessa referência.
+`alr`\
+[out] Retorna um valor da [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) enumeração que indica o local do assembly dessa referência.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

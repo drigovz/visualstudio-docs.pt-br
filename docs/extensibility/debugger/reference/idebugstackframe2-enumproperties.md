@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fecff3d6a992360f2fec385e93d88a65b368db9f
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 427e76036329eef95398787a87d795538c480ba7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457490"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66208713"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 Cria um enumerador para as propriedades associadas com o quadro de pilha, como variáveis locais.
@@ -50,29 +50,23 @@ int EnumProperties ( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `dwFieldSpec`\
+`dwFieldSpec`\
+[in] Uma combinação de sinalizadores do [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeração que especifica quais campos em enumeradas [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estruturas devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeração que especifica quais campos em enumeradas [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estruturas devem ser preenchidos.
+`nRadix`\
+[in] A base a ser usada na formatação de todas as informações numéricas.
 
- `nRadix`\
+`refiid`\
+[in] Um GUID de um filtro usado para selecionar qual [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estruturas são a serem enumerados, tais como `guidFilterLocals`.
 
- [in] A base a ser usada na formatação de todas as informações numéricas.
+`dwTimeout`\
+[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
- `refiid`\
+`pcelt`\
+[out] Retorna o número de propriedades enumerados. Isso é o mesmo que chamar o [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) método.
 
- [in] Um GUID de um filtro usado para selecionar qual [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estruturas são a serem enumerados, tais como `guidFilterLocals`.
-
- `dwTimeout`\
-
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
-
- `pcelt`\
-
- [out] Retorna o número de propriedades enumerados. Isso é o mesmo que chamar o [GetCount](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2-getcount.md) método.
-
- `ppEnum`\
-
- [out] Retorna um [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contém uma lista das propriedades desejadas.
+`ppEnum`\
+[out] Retorna um [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) objeto que contém uma lista das propriedades desejadas.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

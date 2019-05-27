@@ -1,7 +1,7 @@
 ---
 title: Instalar e usar por trás de um firewall ou servidor proxy
-description: Examine as URLs de domínio, as portas e os protocolos que você pode querer adicionar à lista de permissões ou abrir se sua organização usar um firewall ou um servidor proxy
-ms.date: 03/30/2019
+description: Examine as URLs de domínio, as portas e os protocolos que você pode querer adicionar a uma lista de permissões ou abrir se sua organização usar um firewall ou um servidor proxy
+ms.date: 05/22/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,29 +17,29 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974703"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976209"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
-Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar à "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
+Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar a uma "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
 
-* **[Instalar o Visual Studio](#install-visual-studio)**: Essas tabelas incluem as URLs de domínio na lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
+* **[Instalar o Visual Studio](#install-visual-studio)**: Essas tabelas incluem as URLs de domínio a adicionar a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
 
-* **[Usar o Visual Studio e os Serviços do Azure](#use-visual-studio-and-azure-services)**: Essa tabela inclui as URLs de domínio na lista de permissões e as portas e os protocolos a serem abertos, para que você tenha acesso a todas as funcionalidades e serviços desejados.
+* **[Usar o Visual Studio e os Serviços do Azure](#use-visual-studio-and-azure-services)**: Essa tabela inclui as URLs de domínio a adicionar a uma lista de permissões e as portas e os protocolos a serem abertos, para que você tenha acesso a todas as funcionalidades e serviços desejados.
 
 > [!NOTE]
 > Este artigo foi escrito para o Visual Studio no Windows, mas determinadas informações também são aplicáveis à [instalação do Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) por trás de um firewall ou de um servidor proxy.
 
 ## <a name="install-visual-studio"></a>Instalar o Visual Studio
 
-### <a name="urls-to-whitelist"></a>URLs a serem adicionadas à lista de permissões
+### <a name="urls-to-add-to-an-allow-list"></a>URLs para adicionar a uma lista de permissões
 
-Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus servidores de download, aqui estão as URLs que talvez você deseje adicionar à lista de permissões como confiáveis na interface do usuário ou em seus scripts de implantação.
+Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus servidores de download, aqui estão as URLs que talvez você deseje adicionar a uma lista de permissões como confiáveis na interface do usuário ou em seus scripts de implantação.
 
 #### <a name="microsoft-domains"></a>Domínios da Microsoft
 
@@ -79,9 +79,9 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 ## <a name="use-visual-studio-and-azure-services"></a>Usar o Visual Studio e Serviços do Azure
 
-### <a name="urls-to-whitelist-and-ports-and-protocols-to-open"></a>URLs a serem adicionadas à lista de permissões e portas e protocolos a serem abertos
+### <a name="urls-to-add-to-an-allow-list-and-ports-and-protocols-to-open"></a>URLs a serem adicionadas a uma lista de permissões e portas e protocolos a serem abertos
 
-Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o Visual Studio ou Serviços do Azure por trás de um firewall ou servidor proxy, aqui estão as URLs que devem ser adicionadas à lista de permissões e as portas e protocolos que talvez você deseje abrir.
+Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o Visual Studio ou Serviços do Azure por trás de um firewall ou servidor proxy, aqui estão as URLs que devem ser adicionadas a uma lista de permissões e as portas e protocolos que talvez você deseje abrir.
 
 | Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | Descrição |
 | - | - | - | - | - |

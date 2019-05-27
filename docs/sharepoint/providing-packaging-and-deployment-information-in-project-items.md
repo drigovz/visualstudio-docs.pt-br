@@ -1,5 +1,5 @@
 ---
-title: Fornecendo informações de pacote e implantação em itens de projeto | Microsoft Docs
+title: Informações de empacotamento e implantação em itens de projeto
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +24,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4b2bf1fc1b011b79fdd8123218a78ac91a14579b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9af945ff377b30925a51875db205bcd882f4585
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550471"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177702"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>Fornecer informações de empacotamento e implantação em itens de projeto
   Todos os itens de projeto do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] têm propriedades que você pode usar para fornecer dados adicionais quando o projeto é implantado no SharePoint. Estas são as seguintes propriedades:
@@ -68,7 +68,7 @@ ms.locfileid: "62550471"
 ### <a name="reference-method"></a>Método Reference
  Outra maneira de adicionar um receptor de recurso é usando o **receptor do recurso** propriedade de um item de projeto para referenciar um assembly de receptor de recurso. O valor da propriedade de receptor de recurso possui duas subpropriedades: **Assembly** e **nome da classe**. O assembly deve usar sua totalmente qualificado, nome "forte" e o nome de classe devem ser o nome completo do tipo. Para obter mais informações, consulte [Assemblies com nome forte](http://go.microsoft.com/fwlink/?LinkID=169573). Depois de implantar a solução para o SharePoint, o recurso usa o receptor do recurso referenciado para manipular eventos de recurso.
 
- Solução de valores de propriedade do destinatário no recurso de tempo, o recurso de compilação e seus projetos de mesclagem em conjunto para definir os atributos ReceiverAssembly e ReceiverClass do elemento recurso no manifesto do recurso de solução do SharePoint (*. wsp* ) arquivos. Portanto, se os valores de propriedade do Assembly e o nome de classe de um item de projeto e um recurso forem especificados, os valores de propriedade de recurso e de item de projeto devem corresponder. Se os valores não corresponderem, você receberá um erro de validação. Se você quiser que um item de projeto para referenciar um assembly de receptor de recurso diferente daquele usa seu recurso, movê-lo para outro recurso.
+ Solução de valores de propriedade do destinatário no recurso de tempo, o recurso de compilação e seus projetos de mesclagem em conjunto para definir os atributos ReceiverAssembly e ReceiverClass do elemento recurso no manifesto do recurso de solução do SharePoint ( *. wsp* ) arquivos. Portanto, se os valores de propriedade do Assembly e o nome de classe de um item de projeto e um recurso forem especificados, os valores de propriedade de recurso e de item de projeto devem corresponder. Se os valores não corresponderem, você receberá um erro de validação. Se você quiser que um item de projeto para referenciar um assembly de receptor de recurso diferente daquele usa seu recurso, movê-lo para outro recurso.
 
  Se você referenciar um assembly de receptor de recurso que não ainda esteja no servidor, você também deve incluir o arquivo de assembly no pacote; [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não adicioná-lo para você. Quando você implanta o recurso, o arquivo de assembly é copiado para que o sistema [!INCLUDE[TLA#tla_gac](../sharepoint/includes/tlasharptla-gac-md.md)] ou a pasta Bin no diretório físico do SharePoint. Para obter mais informações, consulte como: [Como: Adicionar e remover assemblies adicionais](../sharepoint/how-to-add-and-remove-additional-assemblies.md).
 

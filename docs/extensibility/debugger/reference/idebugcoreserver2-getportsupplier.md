@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c7219f3940eb101c652725b5d7a180206108b85
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ec665e3da8961b801c7e95efaee8bff3994b6b4
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875828"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205618"
 ---
 # <a name="idebugcoreserver2getportsupplier"></a>IDebugCoreServer2::GetPortSupplier
 Recupera um fornecedor de porta específico.
@@ -38,14 +41,12 @@ int GetPortSupplier( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `guidPortSupplier`
+## <a name="parameters"></a>Parâmetros
+`guidPortSupplier`\
+[in] GUID do fornecedor de porta a ser recuperado.
 
- [in] GUID do fornecedor de porta a ser recuperado.
-
- `ppPortSupplier`
-
- [out] Retorna um [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objeto que representa o fornecedor de porta desejada.
+`ppPortSupplier`\
+[out] Retorna um [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md) objeto que representa o fornecedor de porta desejada.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

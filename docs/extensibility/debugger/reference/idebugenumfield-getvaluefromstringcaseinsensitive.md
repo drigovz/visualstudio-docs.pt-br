@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db1efb094694863f4deda8a7c2f380077f952a1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 163e675d0ef4b47e0a0bf82d730adcc081eddec3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874782"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200103"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
 Esse método usa uma pesquisa diferencia maiusculas de minúsculas para retornar o valor associado com o nome de uma constante de enumeração.
@@ -38,14 +41,12 @@ int GetValueFromStringCaseInsensitive(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszValue`
+## <a name="parameters"></a>Parâmetros
+`pszValue`\
+[in] Uma cadeia de caracteres especificando o nome para o qual obter o valor. Observe que, para C++, isso é uma cadeia de caracteres largos.
 
- [in] Uma cadeia de caracteres especificando o nome para o qual obter o valor. Observe que, para C++, isso é uma cadeia de caracteres largos.
-
- `pValue`
-
- [out] Retorna o valor numérico associado.
+`pValue`\
+[out] Retorna o valor numérico associado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE`, se o nome não é parte de enumeração ou um código de erro.

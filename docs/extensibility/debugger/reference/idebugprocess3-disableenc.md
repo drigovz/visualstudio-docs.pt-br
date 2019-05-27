@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2cc26c9d2dae65d8bab0126be5a62b144ebf42b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 65f79b73eaa9b97630cc3ef3e84e1ba4198835c9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63413292"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202355"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 Esse método explicitamente desabilita editar e continuar sobre esse processo (e todos os programas que ele contém). Um fornecedor de porta personalizado deve sempre retornar `E_NOTIMPL`.
@@ -35,10 +38,9 @@ HRESULT DisableENC(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `reason`
-
- [in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
+## <a name="parameters"></a>Parâmetros
+`reason`\
+[in] Um valor a partir de [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

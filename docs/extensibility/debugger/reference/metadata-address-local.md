@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10e94460dfd65294536fcb116099ba10c357d845
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 42112f1956ebc2d8c4727bd68f627ad06cf3ee4a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461130"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212795"
 ---
 # <a name="metadataaddresslocal"></a>METADATA_ADDRESS_LOCAL
 
@@ -47,17 +47,14 @@ public struct METADATA_ADDRESS_LOCAL {
 ## <a name="members"></a>Membros
 
 `tokMethod`\
-
 A ID do método ou da função variável local é parte do.
 
 [C++] `_mdToken` é um `typedef` de 32 bits `int`.
 
 `pLocal`\
-
 O token cujo endereço representa essa estrutura.
 
 `dwIndex`\
-
 Pode ser o índice dessa variável local no método ou função ou algum outro valor (específico do idioma).
 
 ## <a name="remarks"></a>Comentários

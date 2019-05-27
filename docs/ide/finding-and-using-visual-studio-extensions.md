@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e282cdfda27579fd83871153a19897652d55865
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ca0b1defbec345acc02212498453972a3576f20
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962049"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934356"
 ---
 # <a name="find-and-use-visual-studio-extensions"></a>Localizar e usar extensões do Visual Studio
 
@@ -61,7 +61,7 @@ Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa d
 
 ::: moniker range="vs-2017"
 
-Em **Extensões e Atualizações**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**. Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
+Em **Ferramentas** > **Extensões e Atualizações**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**. Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
 
 Se você tentar instalar uma extensão que tenha dependências, o instalador verificará se elas já foram instaladas. Se elas não tiverem sido instaladas, a caixa de diálogo **Extensões e Atualizações** listará as dependências que devem ser instaladas para que seja possível instalar a extensão.
 
@@ -69,7 +69,7 @@ Se você tentar instalar uma extensão que tenha dependências, o instalador ver
 
 ::: moniker range=">=vs-2019"
 
-Em **Gerenciar Extensões**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**. Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
+Em **Extensões** > **Gerenciar Extensões**, localize a extensão que você deseja instalar. Se você souber o nome ou parte do nome da extensão, será possível pesquisar na janela **Pesquisar**. Clique em **Baixar**. Esta extensão está agendada para instalação. A extensão será instalada depois que todas as instâncias do Visual Studio sejam fechadas.
 
 Se você tentar instalar uma extensão que tenha dependências, o instalador verificará se elas já foram instaladas. Se elas não tiverem sido instaladas, a caixa de diálogo **Gerenciar Extensões** listará as dependências que devem ser instaladas para que seja possível instalar a extensão.
 
@@ -79,7 +79,7 @@ Se desejar parar de usar uma extensão, você poderá desabilitá-la ou desinsta
 
 ## <a name="per-user-and-administrative-extensions"></a>Extensões administrativas e por usuário
 
-A maioria das extensões são extensões por usuário e são instaladas na pasta *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* folder. Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\*.
+A maioria das extensões são extensões por usuário e são instaladas na pasta *%LocalAppData%\Microsoft\VisualStudio\\<Visual Studio version\>\Extensions\\* folder. Algumas extensões são extensões administrativas e são instaladas na *\<pasta de instalação do Visual Studio>\Common7\IDE\Extensions\\* .
 
 Para proteger seu sistema contra extensões que possam conter erros ou código mal-intencionado, é possível restringir que as extensões por usuário sejam carregadas somente quando o Visual Studio estiver em execução com permissões de usuário normal. Isso significa que as extensões por usuário são desabilitadas quando o Visual Studio é executado com permissões de usuário administrativo. Para fazer isso, vá para a página de opções de extensões (**Ferramentas** > **Opções** > **Ambiente** > **Extensões**). Desmarque a caixa de seleção **Carregar extensões por usuário ao executar como administrador** e reinicie o Visual Studio.
 
@@ -91,7 +91,7 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 
 ::: moniker range="vs-2017"
 
-- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Extensões e Atualizações**. Na caixa de diálogo **Opções**, desmarque a opção **Atualizar extensões automaticamente**.
+- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Ferramentas** > **Extensões e Atualizações**. Na caixa de diálogo **Opções**, desmarque a opção **Atualizar extensões automaticamente**.
 
 - Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Extensões e Atualizações**.
 
@@ -99,7 +99,7 @@ Se você desejar desabilitar as atualizações automáticas, será possível des
 
 ::: moniker range=">=vs-2019"
 
-- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões** na caixa de diálogo **Gerenciar Extensões**. Na caixa de diálogo **Opções**, desmarque a opção **Atualizar extensões automaticamente**.
+- Para desabilitar as atualizações automáticas para todas as extensões, escolha o link **Alterar as configurações de Extensões** na caixa de diálogo **Ferramentas** > **Gerenciar Extensões**. Na caixa de diálogo **Opções**, desmarque a opção **Atualizar extensões automaticamente**.
 
 - Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Gerenciar Extensões**.
 
@@ -115,13 +115,13 @@ Quando essas notificações forem exibidas, você poderá ignorar a notificaçã
 
 ::: moniker range="vs-2017"
 
-- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode habilitar a extensão novamente na caixa de diálogo **Extensões e atualizações** se desejar.
+- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você poderá habilitar a extensão novamente na caixa de diálogo **Ferramentas** > **Extensões e Atualizações** se desejar.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você pode habilitar a extensão novamente na caixa de diálogo **Gerenciar Extensões** se desejar.
+- Escolha **Desabilitar esta extensão**. O Visual Studio desabilita a extensão e permite que você saiba se precisa reiniciar o sistema para a desabilitação entrar em vigor. Você poderá habilitar a extensão novamente na caixa de diálogo **Extensões** > **Gerenciar Extensões** se desejar.
 
 ::: moniker-end
 
@@ -147,13 +147,13 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ::: moniker range="vs-2017"
 
-É possível usar a janela **Extensões e Atualizações** para executar estas tarefas relacionadas a amostras:
+É possível usar a caixa de diálogo **Ferramentas** > **Extensões e Atualizações** para executar estas tarefas relacionadas a amostras:
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-É possível usar a janela **Gerenciar Extensões** para executar estas tarefas relacionadas a amostras:
+É possível usar a caixa de diálogo **Extensões** > **Gerenciar Extensões** para executar estas tarefas relacionadas a amostras:
 
 ::: moniker-end
 
@@ -171,13 +171,13 @@ Quando você instala um exemplo online, a solução é armazenada em dois locais
 
 ::: moniker range="vs-2017"
 
-## <a name="installing-without-using-the-extensions-and-updates-dialog-box"></a>Instalando sem usar a caixa de diálogo Extensões e Atualizações
+## <a name="install-without-using-the-extensions-and-updates-dialog-box"></a>Instalar sem usar a caixa de diálogo Extensões e Atualizações
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Ferramentas** > **Extensões e Atualizações** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Extensões e Atualizações** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-extensions-and-updates-dialog-box"></a>A caixa de diálogo Extensões e Atualizações não é compatível com os tipos de extensão
 
-O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microsoft Installer), mas não por meio da caixa de diálogo **Extensões e Atualizações** sem modificação.
+O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microsoft Installer), mas não por meio da caixa de diálogo **Ferramentas** > **Extensões e Atualizações** sem modificação.
 
 > [!TIP]
 > Se uma extensão baseada em MSI incluir um arquivo *extension.vsixmanifest*, a extensão será exibida na caixa de diálogo **Extensões e Atualizações**.
@@ -186,13 +186,13 @@ O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microso
 
 ::: moniker range=">=vs-2019"
 
-## <a name="installing-without-using-the-manage-extensions-dialog-box"></a>Instalar sem usar a caixa de diálogo Gerenciar Extensões
+## <a name="install-without-using-the-manage-extensions-dialog-box"></a>Instalar sem usar a caixa de diálogo Gerenciar Extensões
 
-As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Gerenciar Extensões** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
+As extensões que foram empacotadas em arquivos *.vsix* podem estar disponíveis em outros locais e não no Visual Studio Marketplace. A caixa de diálogo **Extensões** > **Gerenciar Extensões** não pode detectar esses arquivos, mas é possível instalar um arquivo *.vsix* clicando duas vezes no arquivo ou selecionando-o e pressionando a tecla **Enter**. Depois disso, basta seguir as instruções. Depois que a extensão for instalada, será possível usar a caixa de diálogo **Gerenciar Extensões** para habilitá-la, desabilitá-la ou desinstalá-la.
 
 ## <a name="extension-types-not-supported-by-the-manage-extensions-dialog-box"></a>A caixa de diálogo Gerenciar Extensões não é compatível com os tipos de extensão
 
-O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microsoft Installer), mas não por meio da caixa de diálogo **Gerenciar Extensões** sem modificação.
+O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microsoft Installer), mas não por meio da caixa de diálogo **Extensões** > **Gerenciar Extensões** sem modificação.
 
 > [!TIP]
 > Se uma extensão baseada em MSI incluir um arquivo *extension.vsixmanifest*, a extensão será exibida na caixa de diálogo **Gerenciar Extensões**.

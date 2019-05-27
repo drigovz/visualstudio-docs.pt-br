@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5805beed58b01c0a2a31b92008f7acdf10e4f960
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 751fb9cea09826c78067c9d44e81b556355e94d1
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458122"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211516"
 ---
 # <a name="idebugproperty2getparent"></a>IDebugProperty2::GetParent
 Obtém a propriedade pai de uma propriedade.
@@ -40,9 +40,8 @@ int GetParent ( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `ppParent`\
-
- [out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o pai da propriedade.
+`ppParent`\
+[out] Retorna um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto que representa o pai da propriedade.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro. Retorna `S_GETPARENT_NO_PARENT` se não houver nenhum pai.

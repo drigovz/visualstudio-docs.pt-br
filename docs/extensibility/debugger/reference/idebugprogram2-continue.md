@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b0b92f5b3c1e60c58bebb21fde5612e4fffc0340
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412854"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200422"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua a execução deste programa de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o programa inicia a execução novamente.
@@ -39,10 +42,8 @@ int Continue( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pThread`
-
- [in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread.
+## <a name="parameters"></a>Parâmetros
+`pThread` [in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

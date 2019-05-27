@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba458d72fe12ce402129f60059347cb28b102686
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9835275df1f332e69b13d886ab79d68588699e9d
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876376"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205825"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
 Cargas de dado de símbolos de depuração a **ICorDebugModule** objeto.
@@ -47,34 +50,27 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
+`baseAddress`\
+[in] Endereço de memória de base.
 
- [in] Identificador exclusivo do módulo.
+`pUnkMetadataImport`\
+[in] Objeto que contém os metadados de símbolo de depuração.
 
-`baseAddress`
+`pUnkCorDebugModule`\
+[in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
- [in] Endereço de memória de base.
+`bstrModuleName`\
+[in] Nome do módulo.
 
-`pUnkMetadataImport`
-
- [in] Objeto que contém os metadados de símbolo de depuração.
-
-`pUnkCorDebugModule`
-
- [in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nome do módulo.
-
-`bstrSymSearchPath`
-
- [in] Caminho para pesquisar o arquivo de símbolo.
+`bstrSymSearchPath`\
+[in] Caminho para pesquisar o arquivo de símbolo.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

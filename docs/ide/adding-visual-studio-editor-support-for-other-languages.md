@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ae0b2f606b4fe04ad390712f48ac1e06ff9bb86
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975655"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805322"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -33,7 +33,7 @@ Os recursos no editor do Visual Studio, como colorização de sintaxe, preenchim
 
 ![Colorização de sintaxe no script Perl](../ide/media/vside_perledit.png)
 
-No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem favorita não estiver na tabela, não se preocupe – é possível adicioná-la.
+No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenchimento de declaração básico para as seguintes linguagens usando [gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se sua linguagem de programação favorita não estiver na tabela, não se preocupe&mdash;será possível adicioná-la.
 
 |||||||
 |-|-|-|-|-|-|
@@ -46,21 +46,21 @@ No momento, o Visual Studio oferece suporte à colorização de sintaxe e preenc
 
 Além da colorização de sintaxe e do preenchimento de declaração, o Visual Studio também tem um recurso chamado [Navegar até](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Esse recurso permite pesquisar rapidamente arquivos de código, caminhos de arquivo e símbolos de código. O Visual Studio oferece suporte Navegar até para as seguintes linguagens.
 
+- C#
+
+- C++
+
+- TypeScript
+
+- JavaScript
+
+- Visual Basic
+
 - Ir
 
 - Java
 
-- JavaScript
-
 - PHP
-
-- TypeScript
-
-- Visual Basic
-
-- Visual C++
-
-- C#
 
 Todos esses tipos de arquivo terão os recursos descritos anteriormente, mesmo se o suporte para uma linguagem determinada ainda não tiver sido instalado. Instalar suporte especializado para algumas linguagens pode oferecer suporte a outras linguagens, como IntelliSense ou outros recursos de linguagem avançados como lâmpadas.
 
@@ -76,11 +76,11 @@ Nesse caminho base, adicione as pastas a seguir se forem aplicáveis à sua situ
 
 |Nome da Pasta|Descrição|
 |-----------------|-----------------|
-|\\*\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, *\Matlab*.|
+|\\ *\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, *\Matlab*.|
 |*\Syntaxes*|A pasta da gramática. Contém os arquivos *.json* da gramática para a linguagem, como *Matlab.json*.|
 |*\Snippets*|A pasta de snippets. Contém snippets da linguagem.|
 
-No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >*. Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+No Windows, *%userprofile%* determina o caminho: *c:\Usuários\\\<nome do usuário >* . Se a pasta *Extensões* não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
 > [!TIP]
 > Se você tiver arquivos abertos no editor, precisará fechá-los e reabri-los para ver o realce de sintaxe depois de adicionar as Gramáticas TextMate.
@@ -89,5 +89,6 @@ Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: in
 
 ## <a name="see-also"></a>Consulte também
 
+- [Adicionar uma extensão do Language Server Protocol](../extensibility/adding-an-lsp-extension.md)
 - [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

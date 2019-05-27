@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31834bff75ac95a06150d66955b8d879023dcdc6
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 311e7b333891a29dcee7cf32f198047a75dcbf80
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65460817"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212762"
 ---
 # <a name="nativeaddress"></a>NATIVE_ADDRESS
 
@@ -43,7 +43,6 @@ public struct NATIVE_ADDRESS {
 ## <a name="members"></a>Membros
 
 `unknown`\
-
 O endereço nativo (o significado disso depende do tempo de execução e o sistema operacional).
 
 ## <a name="remarks"></a>Comentários

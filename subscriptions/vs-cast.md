@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
 searchscope: VS Subscription
-ms.openlocfilehash: a96b314a22bf3036167b0d7b1bb6077edee01f59
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
+ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947880"
+ms.lasthandoff: 05/16/2019
+ms.locfileid: "65805337"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 
@@ -52,7 +52,7 @@ Assinantes do Visual Studio Enterprise podem obter uma assinatura do CAST Highli
    >
    > *Estamos atualmente examinando sua solicitação de ativação e acesso para o CAST Highlight. Você receberá uma resposta minha em não mais de 48 horas.*
    >
-   > *Saudações,*
+   > *Saudações,* 
    > *Paulo*
 
 Após a aprovação de sua solicitação, você receberá um segundo email confirmando o êxito na criação da sua conta e solicitando que você clique no link de ativação para concluir o processo de ativação.
@@ -72,7 +72,7 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
    > - Tutorial em vídeo – [configurar seu portfólio](https://www.youtube.com/watch?v=MDm8ln4vuGE)
    > - Tutorial em vídeo – [integrar seus aplicativos](https://www.youtube.com/watch?v=x-7Dsn3Rmw4)
    >
-   > *Saudações,*
+   > *Saudações,* 
    > *Paulo*
 
    > [!NOTE]
@@ -107,6 +107,6 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Se você ainda não ativou o benefício do Azure que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco do Azure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seus créditos gratuitos do Azure.
+Se você ainda não ativou o benefício do Azure que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco do Azure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seus créditos do Azure.
 
 E não se esqueça de conferir a demonstração, o guia do usuário e vídeos de tutorial mencionados no email de Paulo.

@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c49f81fc28420dc95cc2c263d4bba41d6c041b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c753df9d2acb24dbb0950158ebf2dd399b8d24a9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62842724"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209574"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 Obtém a solicitação de ponto de interrupção que foi usada para criar esse ponto de interrupção pendente.
@@ -37,10 +40,9 @@ int GetBreakpointRequest( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppBPRequest`
-
- [out] Retorna um [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que representa a solicitação de ponto de interrupção que foi usada para criar este pendente do ponto de interrupção.
+## <a name="parameters"></a>Parâmetros
+`ppBPRequest`\
+[out] Retorna um [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) objeto que representa a solicitação de ponto de interrupção que foi usada para criar este pendente do ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.

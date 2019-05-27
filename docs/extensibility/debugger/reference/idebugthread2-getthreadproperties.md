@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 122071435d4bc2e5784abcc7a9a8c16c2c08e311
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: ec34fc2bc8d7dea08580903788ef271f7167cf8a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226188"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199558"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 Obtém as propriedades que descrevem esse thread.
@@ -43,12 +43,10 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>Parâmetros
 `dwFields`\
-
- [in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.
+[in] Uma combinação de sinalizadores do [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) enumeração que determina quais campos de `ptp` devem ser preenchidos.
 
 `ptp`\
-
- [no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.
+[no, out] Um [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) estrutura será preenchida com as propriedades do thread.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
