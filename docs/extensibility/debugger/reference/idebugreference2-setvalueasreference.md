@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fc6e2fee354d6dcc76676bf02d4ed88e1799f26
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 203e9741afa832ba0515a06b21ba1899e1355e1c
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458641"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211878"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 Define o valor de uma referência de outra referência. Reservado para uso futuro.
@@ -46,21 +46,17 @@ int SetValueAsReference ( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `rgpArgs`\
+`rgpArgs`\
+[in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos usados para determinar como definir o valor de referência.
 
- [in] Uma matriz de [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objetos usados para determinar como definir o valor de referência.
+`dwArgCount`\
+[in] O número de referências na matriz.
 
- `dwArgCount`\
+`pValue`\
+[in] Uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto do qual definir o valor da propriedade.
 
- [in] O número de referências na matriz.
-
- `pValue`\
-
- [in] Uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto do qual definir o valor da propriedade.
-
- `dwTimeout`\
-
- [in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
+`dwTimeout`\
+[in] Tempo máximo, em milissegundos, para aguardar antes de retornar do método. Use `INFINITE` para aguardar indefinidamente.
 
 ## <a name="return-value"></a>Valor de retorno
  Sempre retorna `E_NOTIMPL`.

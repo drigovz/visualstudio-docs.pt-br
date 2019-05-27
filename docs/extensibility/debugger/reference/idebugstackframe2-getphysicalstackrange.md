@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ac507c2eac00d025a36bed3e4c3461a6b3fab2f0
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457274"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212860"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtém uma representação depende do computador do intervalo de endereços físicos associados a um quadro de pilha.
@@ -42,13 +42,11 @@ int GetPhysicalStackRange ( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `paddrMin`\
+`paddrMin`\
+[out] Retorna o endereço físico mais baixo associado deste quadro de pilhas.
 
- [out] Retorna o endereço físico mais baixo associado deste quadro de pilhas.
-
- `paddrMax`\
-
- [out] Retorna o endereço físico mais alto associado deste quadro de pilhas.
+`paddrMax`\
+[out] Retorna o endereço físico mais alto associado deste quadro de pilhas.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

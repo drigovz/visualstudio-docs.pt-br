@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb204ccb98d0c7f5a6f5eeac9ccbc5ea07dfae16
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: bd186a8e25d51fa4e9f728ac132a792412f667c8
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875805"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204902"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 Lê a partir da posição atual no fluxo de desmontagem de instruções.
@@ -42,22 +45,18 @@ int Read( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwInstructions`
+## <a name="parameters"></a>Parâmetros
+`dwInstructions`\
+[in] O número de instruções para desmontar. Esse valor também é o comprimento máximo da `prgDisassembly` matriz.
 
- [in] O número de instruções para desmontar. Esse valor também é o comprimento máximo da `prgDisassembly` matriz.
+`dwFields`\
+[in] Uma combinação de sinalizadores do [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) enumeração que indicam quais campos de `prgDisassembly` devem ser preenchidos.
 
- `dwFields`
+`pdwInstructionsRead`\
+[out] Retorna o número de instruções, na verdade, desmontado.
 
- [in] Uma combinação de sinalizadores do [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) enumeração que indicam quais campos de `prgDisassembly` devem ser preenchidos.
-
- `pdwInstructionsRead`
-
- [out] Retorna o número de instruções, na verdade, desmontado.
-
- `prgDisassembly`
-
- [out] Uma matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estruturas que será preenchido com o código desmontado, uma estrutura por instrução desmontada. O comprimento dessa matriz é determinado pelo `dwInstructions` parâmetro.
+`prgDisassembly`\
+[out] Uma matriz de [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) estruturas que será preenchido com o código desmontado, uma estrutura por instrução desmontada. O comprimento dessa matriz é determinado pelo `dwInstructions` parâmetro.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

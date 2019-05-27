@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 226d584a2773a342b8247ff337e686be2da6bf9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b2463095269103bcc6d2387451b4474af70698d9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62843029"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66202366"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 Cria uma ID exclusiva ou um alias para esse objeto ou retorna um alias existente.
@@ -36,10 +39,9 @@ int CreateAlias(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `ppAlias`
-
- [out] O alias de novo (ou existente).
+## <a name="parameters"></a>Parâmetros
+`ppAlias`\
+[out] O alias de novo (ou existente).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

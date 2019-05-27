@@ -1,7 +1,7 @@
 ---
 title: Solução de erros relacionados à rede ou ao proxy
 description: Encontre soluções para erros relacionados à rede ou ao proxy que você pode encontrar ao instalar ou usar o Visual Studio por trás de um firewall ou um servidor proxy.
-ms.date: 03/30/2019
+ms.date: 05/22/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
+ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968126"
+ms.lasthandoff: 05/21/2019
+ms.locfileid: "65976226"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -36,13 +36,13 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 - Reinicie o Visual Studio. Uma caixa de diálogo de autenticação de proxy deverá aparecer. Insira suas credenciais na caixa de diálogo quando solicitado.
 
-- Se reiniciar o Visual Studio não resolver o problema, talvez o servidor proxy não solicite credencias para endereços http:&#47;&#47;go.microsoft.com, mas solicite para endereços &#42;.visualStudio.com. Para esses servidores, considere adicionar à lista de permissões as seguintes URLs para desbloquear todos os cenários de conexão no Visual Studio:
+- Se reiniciar o Visual Studio não resolver o problema, talvez o servidor proxy não solicite credencias para endereços http:&#47;&#47;go.microsoft.com, mas solicite para endereços &#42;.visualStudio.microsoft.com. Para esses servidores, considere adicionar as seguintes URLs a uma lista de permissões para desbloquear todos os cenários de conexão no Visual Studio:
 
     - &#42;.windows.net
 
     - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.com
+    - &#42;.visualstudio.microsoft.com
 
     - &#42;.microsoft.com
 
@@ -120,7 +120,7 @@ Habilite as conexões para as seguintes URLs:
 
 - &#42;.azurewebsites.net (para conexões do Azure)
 
-- &#42;.visualstudio.com
+- &#42;.visualstudio.microsoft.com
 
 - cdn.vsassets.io (hospeda conteúdo da rede de distribuição de conteúdo ou CDN)
 

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e57d3deac01b00f1f332b34075d74f6402235f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: d4273d1c8bff6f07fdcf12b5b324d8d42eb08799
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65224038"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199706"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
 Mecanismos de depuração não implementam este método.
@@ -42,13 +42,11 @@ int GetLogicalThread( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pStackFrame`\
+`pStackFrame`\
+[in] Uma [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa o quadro de pilhas.
 
- [in] Uma [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa o quadro de pilhas.
-
- `ppLogicalThread`\
-
- [out] Retorna um `IDebugLogicalThread2` interface que representa o thread lógico associado. Uma implementação do mecanismo de depuração deve definir isso como um valor nulo.
+`ppLogicalThread`\
+[out] Retorna um `IDebugLogicalThread2` interface que representa o thread lógico associado. Uma implementação do mecanismo de depuração deve definir isso como um valor nulo.
 
 ## <a name="return-value"></a>Valor de retorno
  Depurar as implementações de mecanismo sempre retornam `E_NOTIMPL`.

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 265b30e8a9b3e223b9007c85082113232d76ab09
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e66eb7fc2915514b91135e8c89843a0d979abf4a
+ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62929047"
+ms.lasthandoff: 05/17/2019
+ms.locfileid: "65845903"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -40,7 +40,7 @@ Confira os guias de Início Rápido e Tutoriais para obter instruções passo a 
 
 A implantação em uma pasta local é normalmente usada para teste ou para iniciar uma implantação de teste em que outra ferramenta é usada para a implantação final.
 
-- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e **.NET Core**: Use a ferramenta Publicar para implantação em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você já tiver configurado algum perfil de publicação, será necessário clicar em **Criar novo perfil**). Em seguida, escolha **Pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
+- **ASP.NET**, **ASP.NET Core**, **Node.js**, **Python** e **.NET Core**: Use a ferramenta Publicar para implantação em uma pasta local. As opções exatas disponíveis dependem do tipo de aplicativo. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e escolha **Publicar**. (Se você ainda não tiver configurado nenhum perfil de publicação, será necessário clicar em **Criar perfil**.) Em seguida, escolha **Pasta**. Para saber mais, confira [Implantar em uma pasta local](quickstart-deploy-to-local-folder.md).
 
     ![Escolha Publicar](../deployment/media/quickstart-publish.png)
 

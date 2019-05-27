@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eb1106bce363bcf1b817853cafc77d192adad86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3c1f4ae2284c1933e7cc3d63ce0079fe3db4f7d7
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921826"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66204659"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 Obtém o idioma associado a este contexto de documento.
@@ -38,14 +41,12 @@ int GetLanguageInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pbstrLanguage`
+## <a name="parameters"></a>Parâmetros
+`pbstrLanguage`\
+[out] Retorna o nome da linguagem que implementa o código neste contexto de documento.
 
- [out] Retorna o nome da linguagem que implementa o código neste contexto de documento.
-
-`pguidLanguage`
-
- [out] Retorna o GUID da linguagem que implementa o código neste contexto de documento. Por exemplo `guidVBScriptLang` ou `guidCPPLang`. Esse GUID não é limitado aos idiomas fornecidos pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+`pguidLanguage`\
+[out] Retorna o GUID da linguagem que implementa o código neste contexto de documento. Por exemplo `guidVBScriptLang` ou `guidCPPLang`. Esse GUID não é limitado aos idiomas fornecidos pelo [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

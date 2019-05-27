@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa24dedd776a0866d5de23fbacd31b32c2d55145
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945984"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934498"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -58,7 +58,7 @@ A **barra de aprovação/reprovação** na parte superior da janela do **Gerenci
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
 > [!NOTE]
-> Executar testes de unidade após cada build requer o Visual Studio Enterprise Edition.
+> Executar testes de unidade após cada build requer o Visual Studio 2017 Enterprise ou o Visual Studio 2019. No Visual Studio 2019, ele é incluído nas edições Community, Professional e Enterprise.
 
 ## <a name="view-test-results"></a>Exibir resultados do teste
 
@@ -200,7 +200,7 @@ Você pode determinar a quantidade de seu código de produto que realmente está
 
 Para executar a cobertura de código para métodos de teste em uma solução:
 
-1. Escolha **Testes** no menu do Visual Studio e, em seguida, escolha **Analisar cobertura de código**.
+1. Escolha **Testes** na barra de menus superior e, em seguida, escolha **Analisar cobertura de código**.
 
 2. Escolha um dos seguintes comandos do submenu:
 

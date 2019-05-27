@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ea45e3aa1f59353e0a395a61b0309144b413227
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: df6c1418b49745a089b55f7d66067a54360e88fd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65223994"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207129"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
 Obtém o endereço de depuração que segue um endereço de depuração fornecido em um método.
@@ -44,17 +44,14 @@ int GetNextAddress( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pAddress`\
+`pAddress`\
+[in] Dado o endereço de depuração.
 
- [in] Dado o endereço de depuração.
+`fStatementOnly`\
+[in] Se for TRUE, limita os endereços de depuração para uma única instrução.
 
- `fStatementOnly`\
-
- [in] Se for TRUE, limita os endereços de depuração para uma única instrução.
-
- `ppAddress`\
-
- [out] Retorna o próximo endereço de depuração.
+`ppAddress`\
+[out] Retorna o próximo endereço de depuração.
 
 ## <a name="return-value"></a>Valor de retorno
  Retorna um válidas `HRESULT`, normalmente S_OK.

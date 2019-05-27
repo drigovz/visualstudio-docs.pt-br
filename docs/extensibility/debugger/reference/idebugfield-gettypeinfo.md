@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b881c3b5946428bf829ca4d971bb73f814b6d45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 781c9a0e4365a454d45af957207099d6d5ae7d92
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919524"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212649"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 Esse método obtém informações de tipo independente sobre o símbolo ou um tipo.
@@ -36,10 +39,9 @@ int GetTypeInfo(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pTypeInfo`
-
- [out] Retorna informações de tipo fornecido [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estrutura.
+## <a name="parameters"></a>Parâmetros
+`pTypeInfo`\
+[out] Retorna informações de tipo fornecido [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) estrutura.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

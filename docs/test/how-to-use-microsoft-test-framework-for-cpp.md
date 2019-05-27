@@ -1,18 +1,18 @@
 ---
 title: Usar a estrutura de teste de unidade da Microsoft para C++
-ms.date: 05/01/2019
+ms.date: 05/20/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 607956b93014fd1058f4a43ea17f6ba341752222
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 56ed33ed5fa769a3bf830bcb2f57264c1a9ff531
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461473"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934481"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -30,16 +30,16 @@ Em alguns casos, por exemplo, ao testar funções não exportadas em uma DLL, ta
 
    1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto do programa que você está testando e, em seguida, escolha **Propriedades** > **Propriedades de Configuração** > **Diretórios VC++**.
 
-   2. Clique na seta para baixo nas linhas a seguir e escolha **\<Editar>**:
+   2. Clique na seta para baixo nas linhas a seguir e escolha **\<Editar>** . Adicione estes caminhos:
 
       | Diretório | Propriedade |
       |-| - |
-      | **Incluir Diretórios** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
-      | **Diretórios de Biblioteca** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
+      | **Incluir Diretórios** | **$(VCInstallDir)Auxiliary\VS\UnitTest\include** |
+      | **Diretórios de Biblioteca** | **$(VCInstallDir)Auxiliary\VS\UnitTest\lib** |
 
 2. Adicione um arquivo de teste de unidade C++:
 
-   - No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
+   - No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó do projeto e escolha **Adicionar** > **Novo Item** > **Arquivo C++**.
 
 ## <a name="write-the-tests"></a>Gravar os testes
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 461c2487c18cb6edc5601868c0f9644d7b8eeac1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a947f473fe7dc1fcf3e7b5b2b96d13edc3098218
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874608"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66201154"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 Envia notificação de eventos de depuração.
@@ -48,34 +51,27 @@ int Event( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pEngine`
+## <a name="parameters"></a>Parâmetros
+`pEngine`\
+[in] Uma [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objeto que representa o mecanismo de depuração (DES) que está enviando esse evento. A DE é necessário para preencher esse parâmetro.
 
- [in] Uma [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) objeto que representa o mecanismo de depuração (DES) que está enviando esse evento. A DE é necessário para preencher esse parâmetro.
+`pProcess`\
+[in] Uma [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa o processo no qual o evento ocorre. Esse parâmetro é preenchido pelo Gerenciador de depuração de sessão (SDM). A DE sempre passa um valor nulo para esse parâmetro.
 
- `pProcess`
+`pProgram`\
+[in] Uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa em que esse evento ocorre. Para a maioria dos eventos, esse parâmetro não é um valor nulo.
 
- [in] Uma [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) objeto que representa o processo no qual o evento ocorre. Esse parâmetro é preenchido pelo Gerenciador de depuração de sessão (SDM). A DE sempre passa um valor nulo para esse parâmetro.
+`pThread`\
+[in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual esse evento ocorre. Para interromper eventos, esse parâmetro não pode ser um valor nulo como o quadro de pilha é obtido desse parâmetro.
 
- `pProgram`
+`pEvent`\
+[in] Uma [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa o evento de depuração.
 
- [in] Uma [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) objeto que representa o programa em que esse evento ocorre. Para a maioria dos eventos, esse parâmetro não é um valor nulo.
+`riidEvent`\
+[in] GUID que identifica qual interface de eventos para obter do `pEvent` parâmetro.
 
- `pThread`
-
- [in] Uma [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) objeto que representa o thread no qual esse evento ocorre. Para interromper eventos, esse parâmetro não pode ser um valor nulo como o quadro de pilha é obtido desse parâmetro.
-
- `pEvent`
-
- [in] Uma [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) objeto que representa o evento de depuração.
-
- `riidEvent`
-
- [in] GUID que identifica qual interface de eventos para obter do `pEvent` parâmetro.
-
- `dwAttrib`
-
- [in] Uma combinação de sinalizadores do [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeração.
+`dwAttrib`\
+[in] Uma combinação de sinalizadores do [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) enumeração.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

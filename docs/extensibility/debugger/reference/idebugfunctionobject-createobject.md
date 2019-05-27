@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d1e6c21cdf4e16db69cbad0947e864e7c1847e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 5877f43402d2bac8284be8d24d0c94cd2052a313
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62919408"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66200850"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 Cria um objeto usando um construtor.
@@ -42,22 +45,18 @@ int CreateObject(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pConstructor`
+## <a name="parameters"></a>Parâmetros
+`pConstructor`\
+[in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
 
- [in] Uma [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) objeto que representa o construtor do objeto a ser criado.
+`dwArgs`\
+[in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
 
- `dwArgs`
+`pArg`\
+[in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representam os parâmetros passados para o construtor.
 
- [in] O número de parâmetros no `pArg` matriz. Representa o número de parâmetros passados para o construtor.
-
- `pArg`
-
- [in] Uma matriz de [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) objetos que representam os parâmetros passados para o construtor.
-
- `ppObject`
-
- [out] Retorna um `IDebugObject` que representa o objeto recém-criado.
+`ppObject`\
+[out] Retorna um `IDebugObject` que representa o objeto recém-criado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

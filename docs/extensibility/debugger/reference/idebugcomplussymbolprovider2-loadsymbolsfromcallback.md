@@ -11,12 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d0d31530c5b0b81f3a8e622893874efecfbea5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9ea4ac391536575397cf45be0239ce1e94268349
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62922395"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205908"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 Cargas de depurar símbolos usando o método de retorno de chamada especificados.
@@ -47,34 +50,27 @@ int LoadSymbolsFromCallback(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`ulAppDomainID`
+## <a name="parameters"></a>Parâmetros
+`ulAppDomainID`\
+[in] Identificador do domínio do aplicativo.
 
- [in] Identificador do domínio do aplicativo.
+`guidModule`\
+[in] Identificador exclusivo do módulo.
 
-`guidModule`
+`pUnkMetadataImport`\
+[in] Objeto que contém os metadados de símbolo.
 
- [in] Identificador exclusivo do módulo.
+`pUnkCorDebugModule`\
+[in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
 
-`pUnkMetadataImport`
+`bstrModuleName`\
+[in] Nome do módulo.
 
- [in] Objeto que contém os metadados de símbolo.
+`bstrSymSearchPath`\
+[in] Caminho para pesquisar o arquivo de símbolo.
 
-`pUnkCorDebugModule`
-
- [in] Objeto que implementa o [ICorDebugModule Interface](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface).
-
-`bstrModuleName`
-
- [in] Nome do módulo.
-
-`bstrSymSearchPath`
-
- [in] Caminho para pesquisar o arquivo de símbolo.
-
-`pCallback`
-
- [in] Objeto que representa o método de retorno de chamada.
+`pCallback`\
+[in] Objeto que representa o método de retorno de chamada.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

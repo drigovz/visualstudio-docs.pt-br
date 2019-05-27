@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90e813bd12a5dbdbe98f2cd0032e6c79ada37159
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 8583afe300fa441cf086163dae97ba1b8b958a96
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62876823"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199814"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 Obtém as informações de solicitação de ponto de interrupção que descreve esta solicitação de ponto de interrupção.
@@ -38,14 +41,12 @@ int GetRequestInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos no `pBPRequestInfo` parâmetro devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) enumeração que determina quais campos no `pBPRequestInfo` parâmetro devem ser preenchidos.
-
- `pBPRequestInfo`
-
- [out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchida com a descrição da solicitação de ponto de interrupção.
+`pBPRequestInfo`\
+[out] Especifica o [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) estrutura a ser preenchida com a descrição da solicitação de ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

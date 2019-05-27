@@ -16,10 +16,10 @@
   items:
     - name: Instalar o Visual Studio
       href: install/install-visual-studio.md
-    - name: Contas
+    - name: Contas de personalização
       items:
         - name: Entrar no Visual Studio
-          displayName: peronalization accounts
+          displayName: personalization accounts
           href: ide/signing-in-to-visual-studio.md
         - name: Trabalhar com várias contas de usuário
           href: ide/work-with-multiple-user-accounts.md
@@ -43,15 +43,13 @@
       href: install/update-visual-studio.md
     - name: Modificar o Visual Studio
       href: install/modify-visual-studio.md
-    - name: Instalar o Help Viewer
-      href: help-viewer/installation.md
     - name: Reparar o Visual Studio
       href: install/repair-visual-studio.md
     - name: Desinstalar o Visual Studio
       href: install/uninstall-visual-studio.md
     - name: Guia do administrador do Visual Studio
       items:
-        - name: Guia do administrador
+        - name: Visão geral
           href: install/visual-studio-administrator-guide.md
         - name: Usar a linha de comando
           items:
@@ -138,6 +136,8 @@
           href: install/advanced-build-tools-container.md
         - name: Problemas conhecidos para contêineres
           href: install/build-tools-container-issues.md
+    - name: Instalar o Help Viewer
+      href: help-viewer/installation.md
 - name: Guias de Início Rápido
   items:
     - name: Orientação do Visual Studio
@@ -231,6 +231,8 @@
               items:
                 - name: Criar modelos de projeto e de item
                   href: ide/creating-project-and-item-templates.md
+                - name: Adicionar marcas a um modelo
+                  href: ide/template-tags.md
                 - name: Criar modelos de projeto
                   href: ide/how-to-create-project-templates.md
                 - name: Criar modelos de multiprojeto

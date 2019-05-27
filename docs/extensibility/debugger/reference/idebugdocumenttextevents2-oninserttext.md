@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8eee7a9225a54bb5ca965845b66aaa9adcdbe05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3a9c10449d324b33d601840ed24d5f8db9a4b1ae
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875306"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66199154"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 Notifica o pacote de depuração que o texto foi inserido no documento.
@@ -38,14 +41,12 @@ int onInsert( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pos`
+## <a name="parameters"></a>Parâmetros
+`pos`\
+[in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica onde o texto foi inserido.
 
- [in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica onde o texto foi inserido.
-
- `dwNumToInsert`
-
- [in] Especifica o número de caracteres de texto que foram inseridas.
+`dwNumToInsert`\
+[in] Especifica o número de caracteres de texto que foram inseridas.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

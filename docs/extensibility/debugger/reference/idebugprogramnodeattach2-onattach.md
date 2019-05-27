@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4deb573ece9ed2678e617ee74772184d4327551a
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: ce1b5635685971b3a9390533589975ff0f323021
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65459034"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203788"
 ---
 # <a name="idebugprogramnodeattach2onattach"></a>IDebugProgramNodeAttach2::OnAttach
 Anexa ao programa associado ou adia o processo de anexação para o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) método.
@@ -40,9 +40,8 @@ int OnAttach(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `guidProgramId`\
-
- [in] `GUID` para atribuir ao programa associado.
+`guidProgramId`\
+[in] `GUID` para atribuir ao programa associado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se o [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) método não deve ser chamado. Caso contrário, retornará um código de erro.

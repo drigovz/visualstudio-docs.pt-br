@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87cdfcaa59fabb983d85d154bca48a381ebf8819
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: c5b6b5a94b38e1d057e51fe8f3ad8ed8e0003e4e
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457566"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203286"
 ---
 # <a name="idebugstackframe2getlanguageinfo"></a>IDebugStackFrame2::GetLanguageInfo
 Obtém o idioma associado a esse registro de ativação.
@@ -42,13 +42,11 @@ int GetLanguageInfo ( 
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pbstrLanguage`\
+`pbstrLanguage`\
+[out] Retorna o nome da linguagem que implementa o método associado deste quadro de pilhas.
 
- [out] Retorna o nome da linguagem que implementa o método associado deste quadro de pilhas.
-
- `pguidLanguage`\
-
- [out] Retorna o `GUID` da linguagem. Para o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguagens, por exemplo, o seguinte pode ser retornado:
+`pguidLanguage`\
+[out] Retorna o `GUID` da linguagem. Para o [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] linguagens, por exemplo, o seguinte pode ser retornado:
 
 -   `guidVBScriptLang`\
 

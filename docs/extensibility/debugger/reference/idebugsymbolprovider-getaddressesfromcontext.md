@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a0d759e310128f641b063ba30430f88780fc41fa
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226431"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66207335"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Esse método mapeia um contexto de documento em uma matriz de endereços de depuração.
@@ -46,21 +46,17 @@ int GetAddressesFromContext(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `pDocContext`\
+`pDocContext`\
+[in] O contexto do documento.
 
- [in] O contexto do documento.
+`fStatmentOnly`\
+[in] Se for TRUE, limita os endereços de depuração para uma única instrução.
 
- `fStatmentOnly`\
+`ppEnumBegAddresses`\
+[out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.
 
- [in] Se for TRUE, limita os endereços de depuração para uma única instrução.
-
- `ppEnumBegAddresses`\
-
- [out] Retorna um enumerador para os endereços iniciais de depuração associados com essa linha ou a instrução.
-
- `ppEnumEndAddresses`\
-
- [out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.
+`ppEnumEndAddresses`\
+[out] Retorna um [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) enumerador para os endereços de depuração final associados a essa linha ou a instrução.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c570c7afe8721c757bae9352f70361d5b6cf392a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c884d9ac404aecfa2edaadb2949ce0556da01bfe
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62921982"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66205577"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 Cria uma instância de um mecanismo de depuração no servidor.
@@ -44,26 +47,21 @@ int CreateInstanceInServer(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `szDll`
+## <a name="parameters"></a>Parâmetros
+`szDll`\
+[in] Caminho para a dll que implementa o CLSID especificado no `clsidObject` parâmetro. Quando se trata `NULL`, em seguida, COM `CoCreateInstance` função é chamada.
 
- [in] Caminho para a dll que implementa o CLSID especificado no `clsidObject` parâmetro. Quando se trata `NULL`, em seguida, COM `CoCreateInstance` função é chamada.
+`wLangId`\
+[in] Localidade do mecanismo de depuração. Isso pode ser 0 se a [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) método não deve ser chamado.
 
- `wLangId`
+`clsidObject`\
+[in] CLSID do mecanismo de depuração para criar.
 
- [in] Localidade do mecanismo de depuração. Isso pode ser 0 se a [SetLocale](../../../extensibility/debugger/reference/idebugengine2-setlocale.md) método não deve ser chamado.
+`riid`\
+[in] ID de interface de uma interface específica para recuperar a partir do objeto de classe.
 
- `clsidObject`
-
- [in] CLSID do mecanismo de depuração para criar.
-
- `riid`
-
- [in] ID de interface de uma interface específica para recuperar a partir do objeto de classe.
-
- `ppvObject`
-
- [out] `IUnknown` interface do objeto instanciado. Converter ou empacotar esse objeto para a interface desejada.
+`ppvObject`\
+[out] `IUnknown` interface do objeto instanciado. Converter ou empacotar esse objeto para a interface desejada.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

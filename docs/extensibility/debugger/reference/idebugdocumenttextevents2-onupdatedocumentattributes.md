@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13085a14a8ef7684056897dd2bb8d049e82fe94a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e8b48051c6126c5ca185ef10fdfa3b5022d97ef2
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875191"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203292"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 Notifica o receptor do evento que os atributos do documento foram atualizados.
@@ -36,10 +39,9 @@ int onUpdateDocumentAttributes( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `textdocattr`
-
- [in] Uma combinação de sinalizadores do [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeração que especifica os atributos atualizados do documento.
+## <a name="parameters"></a>Parâmetros
+`textdocattr`\
+[in] Uma combinação de sinalizadores do [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) enumeração que especifica os atributos atualizados do documento.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

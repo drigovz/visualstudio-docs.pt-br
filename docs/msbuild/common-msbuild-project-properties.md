@@ -18,17 +18,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 56b6890733d00fb650ea611e759c8f8d6a9b2bc5
+ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62570283"
+ms.lasthandoff: 05/20/2019
+ms.locfileid: "65934531"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriedades de projeto comuns do MSBuild
 A tabela a seguir lista as propriedades usadas com frequência que são definidas nos arquivos de projeto do Visual Studio ou incluídas nos arquivos *.targets* fornecidos pelo MSBuild.
 
- Os arquivos de projeto no Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado quando você cria um projeto usando o IDE. Normalmente, os projetos importam um ou mais arquivos *.targets* para definir o processo de build. Para obter mais informações, confira [Arquivos .targets do MSBuild](../msbuild/msbuild-dot-targets-files.md).
+ Os arquivos de projeto no Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado quando você cria um projeto usando o IDE. Normalmente, os projetos importam um ou mais arquivos *.targets* para definir o processo de build. Para obter mais informações, confira [Arquivos .targets do MSBuild](../msbuild/msbuild-dot-targets-files.md).
 
 ## <a name="list-of-common-properties-and-parameters"></a>Lista de propriedades e parâmetros comuns
 
@@ -39,7 +39,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | ALToolPath | O caminho no qual o *AL.exe* pode ser encontrado. Essa propriedade substitui a versão atual do *AL.exe* para habilitar o uso de outra versão. |
 | ApplicationIcon | O arquivo de ícone *.ico* a ser passado para o compilador para inseri-lo como um ícone do Win32. A propriedade é equivalente à opção do compilador `/win32icon`. |
 | ApplicationManifest | Especifica o caminho do arquivo que é usado para gerar informações de manifesto de UAC (Controle de Conta de Usuário) externo. Aplica-se somente a projetos do Visual Studio que direcionam [!INCLUDE[windowsver](../deployment/includes/windowsver_md.md)].<br /><br /> Na maioria dos casos, o manifesto é incorporado. No entanto, se você usar o COM de registro livre ou a implantação [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], o manifesto poderá ser um arquivo externo que é instalado junto com seus assemblies de aplicativo. Para obter mais informações, consulte a propriedade NoWin32Manifest neste tópico. |
-| AssemblyOriginatorKeyFile | Especifica o arquivo que é usado para assinar o assembly (*.snk* ou *.pfx*) e que é passado para a [tarefa ResolveKeySource](../msbuild/resolvekeysource-task.md) para gerar a chave real usada para assinar o assembly. |
+| AssemblyOriginatorKeyFile | Especifica o arquivo que é usado para assinar o assembly ( *.snk* ou *.pfx*) e que é passado para a [tarefa ResolveKeySource](../msbuild/resolvekeysource-task.md) para gerar a chave real usada para assinar o assembly. |
 | AssemblySearchPaths | Uma lista de locais para pesquisa durante a resolução de assembly da referência de tempo de build. A ordem na qual os caminhos aparecem nesta lista é significativa porque os caminhos listados anteriormente têm precedência sobre as entradas mais recentes. |
 | AssemblyName | O nome do assembly de saída final depois que o projeto é criado. |
 | BaseAddress | Especifica o endereço básico do assembly de saída principal. Essa propriedade é equivalente à opção do compilador `/baseaddress`. |
@@ -53,7 +53,7 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | Configuração | A configuração que você está criando, "Depurar" ou "Versão". |
 | CscToolPath | O caminho do *csc.exe*, o compilador [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | O nome de um arquivo de projeto ou arquivo de destino a ser importado automaticamente antes da importação de destinos comuns. |
-| DebugSymbols | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração de **-p:DebugSymbols=false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados de programa (*.pdb*). |
+| DebugSymbols | Um valor booliano que indica se os símbolos são gerados pelo build.<br /><br /> A configuração de **-p:DebugSymbols=false** na linha de comando desabilita a geração de arquivos de símbolo do banco de dados de programa ( *.pdb*). |
 | DebugType | Define o nível de informações de depuração que você deseja que seja gerado. Os valores válidos são "full", "pdbonly", "portable", "embedded" e "none". |
 | DefineConstants | Define as constantes de compilador condicional. Os pares de símbolo/valor são separados por ponto e vírgula e são especificados usando a sintaxe a seguir:<br /><br /> *symbol1 = value1 ; symbol2 = value2*<br /><br /> A propriedade é equivalente à opção do compilador `/define`. |
 | DefineDebug | Um valor booliano que indica se você deseja que a constante DEBUG seja definida. |
@@ -68,7 +68,8 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | FileAlignment | Especifica, em bytes, onde alinhar as seções do arquivo de saída. Os valores válidos são 512, 1024, 2048, 4096, 8192. Essa propriedade é equivalente à opção do compilador `/filealignment`. |
 | FrameworkPathOverride | Especifica o local de *mscorlib.dll* e *microsoft.visualbasic.dll*. Esse parâmetro é equivalente à opção `/sdkpath` do compilador *vbc.exe*. |
 | GenerateDocumentation | (somente Visual Basic) Um parâmetro booliano que indica se a documentação é gerada pelo build. Se ele for `true`, o build gerará informações sobre a documentação e as colocará em um arquivo *.xml* junto com o nome do arquivo executável ou a biblioteca criada pela tarefa de build. |
-| IntermediateOutputPath | O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, *\obj\debug\\*. |
+| GenerateSerializationAssemblies | Indica se os assemblies de serialização XML devem ser gerados por *SGen.exe*, que pode ser definido como ativado, automático ou desativado. Essa propriedade é usada para assemblies destinados exclusivamente ao .NET Framework. Para gerar assemblies de serialização de XML para assemblies do .NET Standard ou .NET Core, faça referência ao pacote do NuGet *Microsoft.XmlSerializer.Generator*. |
+| IntermediateOutputPath | O caminho de saída completo intermediário conforme derivado de `BaseIntermediateOutputPath`, se nenhum caminho for especificado. Por exemplo, *\obj\debug\\* . |
 | KeyContainerName | O nome do contêiner de chave de nome forte. |
 | KeyOriginatorFile | O nome do arquivo de chave de nome forte. |
 | MSBuildProjectExtensionsPath | Especifica o caminho em que se encontram as extensões de projeto. Por padrão, isso leva o mesmo valor que `BaseIntermediateOutputPath`. |
@@ -91,8 +92,8 @@ A tabela a seguir lista as propriedades usadas com frequência que são definida
 | ProduceReferenceAssembly | Um valor booliano que, quando definido como `true`, permite a produção de [assemblies de referência](https://github.com/dotnet/roslyn/blob/master/docs/features/refout.md) para o assembly atual. `Deterministic` deve ser `true` ao usar esse recurso. Essa propriedade corresponde à opção `/refout` dos compiladores *vbc.exe* e *csc.exe*. |
 | ProduceOnlyReferenceAssembly | Um valor booliano que instrui o compilador a emitir apenas um assembly de referência ao invés do código compilado. Não pode ser usado em conjunto com `ProduceReferenceAssembly`.  Essa propriedade corresponde à opção `/refonly` dos compiladores *vbc.exe* e *csc.exe*. |
 | RemoveIntegerChecks | Um valor booliano que indica se é necessário desabilitar a verificação de erro de estouro de inteiro. O valor padrão é `false`. Essa propriedade é equivalente à opção `/removeintchecks` do compilador *vbc.exe*. |
-| SGenUseProxyTypes | Um valor booliano que indica se os tipos de proxy devem ser gerados por *SGen.exe*.<br /><br /> O destino SGen usa essa propriedade para definir o sinalizador UseProxyTypes. Essa propriedade assume true como padrão e não há nenhuma interface do usuário para alterar isso. Para gerar o assembly de serialização para tipos não serviço Web, adicione essa propriedade ao arquivo de projeto e defina-a como falso antes de importar o *Microsoft.Common.Targets* ou o *C#/VB.targets*. |
-| SGenToolPath | Um caminho de ferramenta opcional que indica o local no qual obter *SGen.exe* quando a versão atual de *SGen.exe* é substituída. |
+| SGenUseProxyTypes | Um valor booliano que indica se os tipos de proxy devem ser gerados por *SGen.exe*. Isso se aplica somente quando *GenerateSerializationAssemblies* está definido como ativado e somente para o .NET Framework.<br /><br /> O destino SGen usa essa propriedade para definir o sinalizador UseProxyTypes. Essa propriedade assume true como padrão e não há nenhuma interface do usuário para alterar isso. Para gerar o assembly de serialização para tipos não serviço Web, adicione essa propriedade ao arquivo de projeto e defina-a como falso antes de importar o *Microsoft.Common.Targets* ou o *C#/VB.targets*. |
+| SGenToolPath | Um caminho de ferramenta opcional que indica o local no qual obter *SGen.exe* quando a versão atual de *SGen.exe* é substituída. Essa propriedade é usada somente para o .NET Framework.|
 | StartupObject | Especifica a classe ou o módulo que contém o método Main ou procedimento Sub Main. Essa propriedade é equivalente à opção do compilador `/main`. |
 | ProcessorArchitecture | A arquitetura do processador que é usada quando as referências de assembly são resolvidas. Os valores válidos são "msil," "x86," "amd64" ou "ia64". |
 | RootNamespace | O namespace raiz para usar ao nomear um recurso inserido. Este namespace é parte do nome do manifesto do recurso inserido. |

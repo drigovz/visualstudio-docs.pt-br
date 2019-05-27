@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 80fc504752e181ec75da32f2d1da5dcbf902daf7
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399355"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037384"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -136,7 +136,7 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dl
 
 - **Mostrar ferramentas de tempo de execução no aplicativo**: Mostra a **Live Visual Tree** comandos em uma barra de ferramentas na janela principal do aplicativo XAML que está sendo depurado. Essa opção foi introduzida no Visual Studio 2015 atualização 2.
 
-- **Habilitar o Editar e Continuar no XAML**:   Permite que você usar o editar e continuar o recurso com o código XAML.
+- **Habilitar a recarga de Hot XAML**: Permite que você use o recurso de hot recarregar XAML com o código XAML, quando seu aplicativo está em execução. (Esse recurso era anteriormente chamado de "XAML editar e continuar")
 
 **Habilitar as Ferramentas de Diagnóstico durante a depuração**: O **ferramentas de diagnóstico** janela é exibida enquanto você está depurando.
 
