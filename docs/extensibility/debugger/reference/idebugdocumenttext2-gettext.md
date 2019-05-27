@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3eb4eae82dd11d58734ed114886c9ec121b60b69
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 62ee27d9780ba1bb3941320604ade1d3cf16e5fc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62875187"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203317"
 ---
 # <a name="idebugdocumenttext2gettext"></a>IDebugDocumentText2::GetText
 Recupera o texto da posição especificada no documento.
@@ -42,22 +45,18 @@ int GetText(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
-`pos`
+## <a name="parameters"></a>Parâmetros
+`pos`\
+[in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.
 
- [in] Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que indica o local do texto a ser recuperado.
+`cMaxChars`\
+[in] O número máximo de caracteres do texto a ser recuperado.
 
-`cMaxChars`
+`pText`\
+[no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.
 
- [in] O número máximo de caracteres do texto a ser recuperado.
-
-`pText`
-
- [no, out] Um ponteiro para um buffer que deve ser preenchido com o texto desejado. Esse buffer deve ser capaz de conter pelo menos `cMaxChars` número de caracteres largos.
-
-`pcNumChars`
-
- [out] Retorna o número de caracteres realmente recuperados.
+`pcNumChars`\
+[out] Retorna o número de caracteres realmente recuperados.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

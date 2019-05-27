@@ -1,6 +1,6 @@
 ---
 title: Gravando o Store de configurações do usuário | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 05/23/2019
 ms.topic: conceptual
 ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 author: gregvanl
@@ -8,36 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fe8187fe11f4818433aed847a7bc67d4a889ad3a
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444903"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66206878"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
 Configurações de usuário são graváveis como aquelas na **Ferramentas / opções** caixa de diálogo, janelas Propriedades e determinadas outras caixas de diálogo. Extensões do Visual Studio podem usar estes para armazenar pequenas quantidades de dados. Este passo a passo mostra como adicionar o bloco de notas para o Visual Studio como uma ferramenta externa, leitura e gravação para o repositório de configurações do usuário.
-
-### <a name="backing-up-your-user-settings"></a>Fazendo backup de suas configurações de usuário
-
-1. Você deve ser capaz de redefinir as configurações de ferramentas externas para que você possa depurar e repita o procedimento. Para fazer isso, você deve salvar as configurações originais para que você pode restaurá-los conforme necessário.
-
-2. Abra Regedit.exe.
-
-3. Navegue até ferramentas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
-
-    > [!NOTE]
-    > Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".
-
-4. Clique com botão direito na subchave \External Tools\ e, em seguida, clique em **exportar**. Certifique-se de que **ramificação selecionada** está selecionado.
-
-5. Salve o arquivo externo Tools.reg resultante.
-
-6. Posteriormente, quando você deseja redefinir as configurações de ferramentas externas, selecione a chave do registro Tools HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External \ e clique em **excluir** no menu de contexto.
-
-7. Quando o **Confirmar exclusão da chave** caixa de diálogo for exibida, clique em **Sim**.
-
-8. O arquivo Tools.reg externo que você salvou anteriormente com o botão direito, clique em **abrir com**e, em seguida, clique em **Editor do registro**.
 
 ## <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
 

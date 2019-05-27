@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1b82921c2d08ed74ba05bb2ccf8ecfb642fa9cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c4a6c18f2203a1e03751423ce9bc972be9e4801
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923109"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203994"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 Obtém as informações de resolução de ponto de interrupção que descreve este ponto de interrupção.
@@ -38,14 +41,12 @@ int GetResolutionInfo( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwFields`
+## <a name="parameters"></a>Parâmetros
+`dwFields`\
+[in] Uma combinação de sinalizadores do [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinam quais campos de enumeração de `pBPResolutionInfo` parâmetro devem ser preenchidos.
 
- [in] Uma combinação de sinalizadores do [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) que determinam quais campos de enumeração de `pBPResolutionInfo` parâmetro devem ser preenchidos.
-
- `pBPResolutionInfo`
-
- [out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchida com informações sobre este ponto de interrupção.
+`pBPResolutionInfo`\
+[out] O [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) estrutura a ser preenchida com informações sobre este ponto de interrupção.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará um código de erro.

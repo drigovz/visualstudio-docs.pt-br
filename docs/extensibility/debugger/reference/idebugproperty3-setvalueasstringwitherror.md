@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c71691befc9c0521c935dade9ebdacbb9921173e
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 84ef9df62bab7f5a37bc0126ef062f8e6a2306bd
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458811"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212264"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 Define o valor dessa propriedade e retorna uma mensagem de erro, se necessário.
@@ -47,20 +47,16 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>Parâmetros
 `pszValue`\
-
- [in] Valor a ser definido.
+[in] Valor a ser definido.
 
 `dwRadix`\
-
- [in] A base do valor que está sendo definido.
+[in] A base do valor que está sendo definido.
 
 `dwTimeout`\
-
- [in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa espera para sempre).
+[in] O período de tempo de espera para o valor a ser definido (`INFINITE` significa espera para sempre).
 
 `errorString`\
-
- [out] Se houver um erro ao definir o valor, isso mantém o motivo da falha.
+[out] Se houver um erro ao definir o valor, isso mantém o motivo da falha.
 
 ## <a name="return-value"></a>Valor de retorno
 Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

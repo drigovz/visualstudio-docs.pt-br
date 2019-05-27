@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08534abc468ac358d7c5eeba25129d9752f84e5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0dfbe855f5bdcbfda384e7a9a180fc8f86595b85
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872815"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211946"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 Determina se um atributo personalizado específico foi definido.
@@ -36,10 +39,9 @@ int IsCustomAttributeDefined(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pszCustomAttributeName`
-
- [in] Uma cadeia de caracteres que contém o nome do atributo personalizado para localizar.
+## <a name="parameters"></a>Parâmetros
+`pszCustomAttributeName`\
+[in] Uma cadeia de caracteres que contém o nome do atributo personalizado para localizar.
 
 ## <a name="return-value"></a>Valor de retorno
  Retorna que S_OK se o atributo personalizado é definido neste método, caso contrário retorna S_FALSE.

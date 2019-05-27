@@ -13,12 +13,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3030eb1a272b7142d942c05d3320c67c51f2bd90
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7839a5f665f5d8869f71417ccd4b582c315b6acc
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872176"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66209587"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 Obtém uma lista de todos os pontos de interrupção de erro que resultou de ponto de interrupção pendente.
@@ -39,14 +42,12 @@ int EnumErrorBreakpoints( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `bpErrorType`
+## <a name="parameters"></a>Parâmetros
+`bpErrorType`\
+[in] Uma combinação de valores de [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeração que seleciona o tipo de erros para enumerar.
 
- [in] Uma combinação de valores de [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) enumeração que seleciona o tipo de erros para enumerar.
-
- `ppEnum`
-
- [out] Retorna um [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contém uma lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos.
+`ppEnum`\
+[out] Retorna um [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md) objeto que contém uma lista de [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) objetos.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro. Retorna `E_BP_DELETED` se o ponto de interrupção tiver sido excluído.

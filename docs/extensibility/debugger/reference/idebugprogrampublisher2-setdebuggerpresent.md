@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: daac325e80e91423ed641d486598ed95d0e76b6f
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458973"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211652"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Informa o Editor de programa que um depurador está presente e em execução.
@@ -40,9 +40,8 @@ int SetDebuggerPresent(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `fDebuggerPresent`\
-
- [in] Diferente de zero (`TRUE`) se um depurador estiver presente, zero (`FALSE`) se não for.
+`fDebuggerPresent`\
+[in] Diferente de zero (`TRUE`) se um depurador estiver presente, zero (`FALSE`) se não for.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

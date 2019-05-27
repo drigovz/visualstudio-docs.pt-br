@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04c63a2a18f04301e16dd0e8137ab8ba4b824c57
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: fb2fc0da42bf3895f6eefac96441dde2fa6eede9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65457859"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203717"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 Esse método faz um programa disponível para mecanismos de depuração (DEs) e o Gerenciador de sessão de depuração.
@@ -44,17 +44,14 @@ int PublishProgram(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `Engines`\
+`Engines`\
+[in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
 
- [in] Uma matriz de GUIDs para DEs que pode iniciar ou anexar a este programa.
+`szFriendlyName`\
+[in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
 
- `szFriendlyName`\
-
- [in] Nome amigável para o programa (isso aparece nos menus ou caixas de diálogo apresentadas ao usuário).
-
- `pDebuggeeInterface`\
-
- [in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
+`pDebuggeeInterface`\
+[in] `IUnknown` interface para o programa (esse valor é usado como um cookie para identificar exclusivamente o programa; esse mesmo valor é usado para "Cancelar a publicação" o programa)
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

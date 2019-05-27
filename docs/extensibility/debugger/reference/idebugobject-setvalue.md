@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccfea65f7f24b3d48fc5ec5d68028c72b9b4eece
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fec036357fb92563eba81c919ab32fea2e58c3b3
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62872444"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66211273"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 Define o valor do objeto de uma série consecutiva de bytes.
@@ -38,14 +41,12 @@ int SetValue(
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `pValue`
+## <a name="parameters"></a>Parâmetros
+`pValue`\
+[in] Uma matriz de bytes que representa o novo valor.
 
- [in] Uma matriz de bytes que representa o novo valor.
-
- `nSize`
-
- [in] O tamanho do valor em bytes.
+`nSize`\
+[in] O tamanho do valor em bytes.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45919c6c9fafceecca2cb53fa9c2c9f43b68e382
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 26f88e6e955b83bf96b0664ffc6daba9a5430aa9
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62870000"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66203961"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
 Obtém o título, o nome amigável ou o nome do arquivo do processo de hospedagem desse programa.
@@ -38,14 +41,12 @@ int GetHostName( 
 );
 ```
 
-#### <a name="parameters"></a>Parâmetros
- `dwType`
+## <a name="parameters"></a>Parâmetros
+`dwType`\
+[in] Um valor a partir de [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeração.
 
- [in] Um valor a partir de [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) enumeração.
-
- `pbstrHostName`
-
- [out] Retorna o nome solicitado do processo de hospedagem.
+`pbstrHostName`\
+[out] Retorna o nome solicitado do processo de hospedagem.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

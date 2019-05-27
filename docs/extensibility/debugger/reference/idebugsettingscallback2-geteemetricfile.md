@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 4a6b6a516e9827a05eb7eb2c36bee408ad3a5587
+ms.sourcegitcommit: 19ec963ed6d585719cb83ba677434ea6580e0d1f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458599"
+ms.lasthandoff: 05/24/2019
+ms.locfileid: "66212114"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Recupera o arquivo métrica de avaliador de expressão considerando o nome ou a métrica.
@@ -44,21 +44,17 @@ private int GetEEMetricFile(
 ```
 
 ## <a name="parameters"></a>Parâmetros
- `guidLang`\
+`guidLang`\
+[in] Identificador exclusivo da linguagem de programação.
 
- [in] Identificador exclusivo da linguagem de programação.
+`guidVendor`\
+[in] Identificador exclusivo do fornecedor.
 
- `guidVendor`\
+`pszMetric`\
+[in] Nome da métrica.
 
- [in] Identificador exclusivo do fornecedor.
-
- `pszMetric`\
-
- [in] Nome da métrica.
-
- `pbstrValue`\
-
- [out] Retorna o conteúdo do arquivo de métrica como uma cadeia de caracteres.
+`pbstrValue`\
+[out] Retorna o conteúdo do arquivo de métrica como uma cadeia de caracteres.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
