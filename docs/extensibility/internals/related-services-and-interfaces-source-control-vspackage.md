@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control packages, interfaces
 - interfaces, source control packages
 ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a792bc7b0c64b7e509e6d426c8b4f33c9f816276
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a9aa9dd59a568ae766a7cd0939c41a4bcd97f640
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908557"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337294"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Serviços e interfaces relacionados (VSPackage de controle do código-fonte)
 Esta seção lista todos o controle de fonte interfaces relacionadas à VSPackage no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]. O VSPackage de controle de origem implementa algumas dessas interfaces e usa outras pessoas para realizar tarefas de controle do código-fonte.

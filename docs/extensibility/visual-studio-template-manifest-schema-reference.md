@@ -3,17 +3,17 @@ title: Referência de esquema do manifesto de modelo do Visual Studio | Microsof
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b447225580505959697e14f0c85855452906aa18
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 52a421986e076d2badc6dc7eb76247d243da155b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108848"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323025"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Referência de esquema do manifesto de modelo do Visual Studio
 Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman*) arquivos que são gerados para os modelos de projeto ou item do Visual Studio. O esquema também descreve o local e outras informações relevantes sobre o modelo.
@@ -21,7 +21,7 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
  : Como há item separado e diretórios do modelo de projeto, um manifesto nunca deve ter uma mistura de modelos de item e projeto.
 
 > [!IMPORTANT]
->  Esse manifesto está disponível a partir do Visual Studio 2017.
+> Esse manifesto está disponível a partir do Visual Studio 2017.
 
 ## <a name="vstemplatemanifest-element"></a>Elemento VSTemplateManifest
  O elemento raiz do manifesto.
@@ -122,7 +122,7 @@ Esse esquema descreve o formato do manifesto de modelo do Visual Studio (*vstman
  O código a seguir está um exemplo de um modelo de item *vstman* arquivo.
 
 ```xml
-VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
+<VSTemplateManifest Version="1.0" Locale="1033" xmlns="http://schemas.microsoft.com/developer/vstemplatemanifest/2015">
   <VSTemplateContainer TemplateType="Item">
     <RelativePathOnDisk>CSharp\1033\ItemTemplate1</RelativePathOnDisk>
     <TemplateFileName>ItemTemplate1.vstemplate</TemplateFileName>

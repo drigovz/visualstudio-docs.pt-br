@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0eade1bf17955bce52ea53b159f23102afb74b8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b89d4d4356245929bbd8ada7790729e78da3d15d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444923"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328144"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>Passo a passo: Usar um comando de shell com uma extensão do editor
 De um VSPackage, você pode adicionar recursos, como comandos de menu para o editor. Este passo a passo mostra como adicionar um adorno a um modo de exibição de texto no editor, invocando um comando de menu.
@@ -38,7 +38,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 
 ## <a name="add-a-mef-extension-to-the-command-extension"></a>Adicionar uma extensão do MEF para a extensão de comando
 
-1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.
+1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#** , em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.
 
 2. Porque este projeto irá interagir com o assembly de nome forte de VSPackage, você deve assinar o assembly. Você pode reutilizar o arquivo de chave já criado para o assembly de VSPackage.
 

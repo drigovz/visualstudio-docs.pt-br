@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_MODIFIERS enumeration
 ms.assetid: 1e44681c-1f03-41a9-9c04-b79f231b0822
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b22559af26a0a5f6c8af68726a5ba336e1bcfb4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 10538f3728647a716a9f3f964a3deedf2a5ae5c9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689623"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324490"
 ---
 # <a name="fieldmodifiers"></a>FIELD_MODIFIERS
 Especifica os modificadores para um tipo de campo.
@@ -101,58 +104,84 @@ public enum enum_FIELD_MODIFIERS {
 };
 ```
 
-## <a name="members"></a>Membros
-FIELD_MOD_ACCESS_TYPE indica que o campo não pode ser acessado.
+## <a name="fields"></a>Campos
+`FIELD_MOD_ACCESS_TYPE`\
+Indica que o campo não pode ser acessado.
 
-FIELD_MOD_ACCESS_PUBLIC indica que o campo tem acesso público.
+`FIELD_MOD_ACCESS_PUBLIC`\
+Indica que o campo tem acesso público.
 
-FIELD_MOD_ACCESS_PROTECTED indica que o campo tem acesso protegido.
+`FIELD_MOD_ACCESS_PROTECTED`\
+Indica que o campo tem acesso protegido.
 
-FIELD_MOD_ACCESS_PRIVATE indica que o campo tem acesso privado.
+`FIELD_MOD_ACCESS_PRIVATE`\
+Indica que o campo tem acesso privado.
 
-FIELD_MOD_NOMODIFIERS indica que o campo não tiver nenhum modificador.
+`FIELD_MOD_NOMODIFIERS`\
+Indica que o campo não tiver nenhum modificador.
 
-FIELD_MOD_STATIC indica que o campo é estático.
+`FIELD_MOD_STATIC`\
+Indica que o campo é estático.
 
-FIELD_MOD_CONSTANT indica que o campo é uma constante.
+`FIELD_MOD_CONSTANT`\
+Indica que o campo é uma constante.
 
-FIELD_MOD_TRANSIENT indica que o campo é transitório.
+`FIELD_MOD_TRANSIENT`\
+Indica que o campo é transitório.
 
-FIELD_MOD_VOLATILE indica que o campo é volátil.
+`FIELD_MOD_VOLATILE`\
+Indica que o campo é volátil.
 
-FIELD_MOD_ABSTRACT indica que o campo é abstrato.
+`FIELD_MOD_ABSTRACT`\
+Indica que o campo é abstrato.
 
-FIELD_MOD_NATIVE indica que o campo é nativo.
+`FIELD_MOD_NATIVE`\
+Indica que o campo é nativo.
 
-FIELD_MOD_SYNCHRONIZED indica que o campo será sincronizado.
+`FIELD_MOD_SYNCHRONIZED`\
+Indica que o campo será sincronizado.
 
-FIELD_MOD_VIRTUAL indica que o campo é virtual.
+`FIELD_MOD_VIRTUAL`\
+Indica que o campo é virtual.
 
-FIELD_MOD_INTERFACE indica que o campo é uma interface.
+`FIELD_MOD_INTERFACE`\
+Indica que o campo é uma interface.
 
-FIELD_MOD_FINAL indica que o campo é final.
+`FIELD_MOD_FINAL`\
+Indica que o campo é final.
 
-FIELD_MOD_SENTINEL indica que o campo é uma Sentinela.
+`FIELD_MOD_SENTINEL`\
+Indica que o campo é uma Sentinela.
 
-FIELD_MOD_INNERCLASS indica que o campo é uma classe interna.
+`FIELD_MOD_INNERCLASS`\
+Indica que o campo é uma classe interna.
 
-FIELD_TYPE_OPTIONAL indica que o campo é opcional.
+`FIELD_TYPE_OPTIONAL`\
+Indica que o campo é opcional.
 
-FIELD_MOD_BYREF indica que o campo é um argumento de referência. Isso é especificamente para argumentos de método.
+`FIELD_MOD_BYREF`\
+Indica que o campo é um argumento de referência. Isso é especificamente para argumentos de método.
 
-FIELD_MOD_HIDDEN indica que o campo deve ser ocultado ou apresentado em outro contexto; Por exemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] estáticos locais.
+`FIELD_MOD_HIDDEN`\
+Indica que o campo deve ser ocultado ou apresentado em outro contexto; Por exemplo, [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] estáticos locais.
 
-FIELD_MOD_MARSHALASOBJECT indica que o campo representa um objeto com um `IUnknown` interface.
+`FIELD_MOD_MARSHALASOBJECT`\
+Indica que o campo representa um objeto com um `IUnknown` interface.
 
-FIELD_MOD_SPECIAL_NAME indica que o campo tem um nome especial, por exemplo, `.ctor` para um construtor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
+`FIELD_MOD_SPECIAL_NAME`\
+Indica que o campo tem um nome especial, por exemplo, `.ctor` para um construtor ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
 
-FIELD_MOD_HIDEBYSIG indica que o campo tem o `Overloads` palavra-chave aplicada a ele ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
+`FIELD_MOD_HIDEBYSIG`\
+Indica que o campo tem o `Overloads` palavra-chave aplicada a ele ([!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] somente).
 
-FIELD_MOD_WRITEONLY indica que o campo é somente gravação. Esse valor não está incluído no `FIELD_MOD_ALL`, conforme o uso apenas esses campos somente gravação é para a avaliação da função. Um usuário deve solicitar explicitamente `FIELD_MOD_WRITEONLY` campos.
+`FIELD_MOD_WRITEONLY`\
+Indica que o campo é somente gravação. Esse valor não está incluído no `FIELD_MOD_ALL`, conforme o uso apenas esses campos somente gravação é para a avaliação da função. Um usuário deve solicitar explicitamente `FIELD_MOD_WRITEONLY` campos.
 
-FIELD_MOD_ACCESS_MASK indica a máscara de acesso de campo.
+`FIELD_MOD_ACCESS_MASK`\
+Indica uma máscara de acesso de campo.
 
-FIELD_MOD_MASK indica uma máscara para modificadores de campo.
+`FIELD_MOD_MASK`\
+Indica uma máscara para modificadores de campo.
 
 ## <a name="remarks"></a>Comentários
 Usado para o `dwModifiers` membro a [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.

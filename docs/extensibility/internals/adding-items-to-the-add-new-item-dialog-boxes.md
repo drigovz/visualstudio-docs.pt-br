@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Add New Item dialog box, adding items
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 61a9921103bf5954061fbb61c405ba1d36ffb782
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418685"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328059"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Adicionar itens à caixa de diálogo Adicionar Novo Item
 O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo começa com as chaves do registro. Conforme mostrado nas entradas de registro a seguir, o **AddItemTemplates** seção contém o caminho e o nome do diretório em que os itens disponibilizados na **Adicionar Novo Item** caixa de diálogo são colocados.
@@ -46,7 +46,7 @@ O processo para adicionar itens para o **Adicionar Novo Item** caixa de diálogo
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
- O diretório listado para **TemplatesDir**, que é *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;*, é o nó no lado esquerdo do **adicionar Novo Item** árvore da caixa de diálogo. Elementos adicionais da árvore baseiam-se no subdiretório do diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel à direita do **Adicionar Novo Item** caixa de diálogo.
+ O diretório listado para **TemplatesDir**, que é *TEMPLATE_PATH %\\&lt;SomeProjectItems&gt;* , é o nó no lado esquerdo do **adicionar Novo Item** árvore da caixa de diálogo. Elementos adicionais da árvore baseiam-se no subdiretório do diretório raiz. Os arquivos disponíveis para serem adicionados ao projeto são os itens no painel à direita do **Adicionar Novo Item** caixa de diálogo.
 
  Normalmente, essa pasta conterá os arquivos de modelo para seu projeto como um modelo HTML ou *. cpp* arquivo e qualquer *. vsz* arquivos para iniciar assistentes. Para controlar como os itens são exibidos, você também pode incluir *. vsdir* arquivos para localização de ícones e nomes de diretório. A cadeia de caracteres localizada é a legenda exibida na caixa de diálogo que representa esse nó na **Adicionar Novo Item** árvore da caixa de diálogo.
 
