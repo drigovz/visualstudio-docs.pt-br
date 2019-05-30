@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_TYPE structure
 ms.assetid: 0248430a-3b61-4809-87a9-e9b6bb7d1130
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1695c61a829cf1439ed773e48088430f36f8c653
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 930c3a51173f18ccdad236e285f374bd885c880c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715655"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353043"
 ---
 # <a name="bplocationtype"></a>BP_LOCATION_TYPE
 Especifica o tipo de local do ponto de interrupção para uma solicitação de ponto de interrupção.
@@ -65,36 +68,51 @@ public enum enum_BP_LOCATION_TYPE {
 };
 ```
 
-## <a name="members"></a>Membros
-BPLT_NONE não especifica nenhum local de ponto de interrupção.
+## <a name="fields"></a>Campos
+`BPLT_NONE`\
+Não especifica nenhum local de ponto de interrupção.
 
-BPLT_FILE_LINE Especifica o tipo de local do ponto de interrupção como um arquivo de linha.
+`BPLT_FILE_LINE`\
+Especifica o tipo de local do ponto de interrupção como um arquivo de linha.
 
-BPLT_FUNC_OFFSET Especifica o tipo de local do ponto de interrupção como um deslocamento de função.
+`BPLT_FUNC_OFFSET`\
+Especifica o tipo de local do ponto de interrupção como um deslocamento de função.
 
-BPLT_CONTEXT Especifica o tipo de local do ponto de interrupção como um contexto.
+`BPLT_CONTEXT`\
+Especifica o tipo de local do ponto de interrupção como um contexto.
 
-BPLT_STRING Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres.
+`BPLT_STRING`\
+Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres.
 
-BPLT_ADDRESS Especifica o tipo de local do ponto de interrupção como um endereço.
+`BPLT_ADDRESS`\
+Especifica o tipo de local do ponto de interrupção como um endereço.
 
-BPLT_RESOLUTION Especifica o tipo de local do ponto de interrupção como uma resolução.
+`BPLT_RESOLUTION`\
+Especifica o tipo de local do ponto de interrupção como uma resolução.
 
-BPLT_CODE_FILE_LINE Especifica o tipo de local do ponto de interrupção como uma linha de código-fonte.
+`BPLT_CODE_FILE_LINE`\
+Especifica o tipo de local do ponto de interrupção como uma linha de código-fonte.
 
-BPLT_CODE_FUNC_OFFSET Especifica o tipo de local do ponto de interrupção como um deslocamento de função de código.
+`BPLT_CODE_FUNC_OFFSET`\
+Especifica o tipo de local do ponto de interrupção como um deslocamento de função de código.
 
-BPLT_CODE_CONTEXT Especifica o tipo de local do ponto de interrupção como um contexto de código.
+`BPLT_CODE_CONTEXT`\
+Especifica o tipo de local do ponto de interrupção como um contexto de código.
 
-BPLT_CODE_STRING Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres de código.
+`BPLT_CODE_STRING`\
+Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres de código.
 
-BPLT_CODE_ADDRESS Especifica o tipo de local do ponto de interrupção como um endereço de código.
+`BPLT_CODE_ADDRESS`\
+Especifica o tipo de local do ponto de interrupção como um endereço de código.
 
-BPLT_DATA_STRING Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres de dados.
+`BPLT_DATA_STRING`\
+Especifica o tipo de local do ponto de interrupção como uma cadeia de caracteres de dados.
 
-BPLT_TYPE_MASK Especifica um pouco de máscara, para que o tipo de ponto de interrupção pode ser extraído fora o valor.
+`BPLT_TYPE_MASK`\
+Especifica uma máscara de bits, para que o tipo de ponto de interrupção pode ser extraído fora o valor.
 
-BPLT_LOCATION_TYPE_MASK Especifica um pouco de máscara, para que o tipo de local de ponto de interrupção pode ser extraído fora o valor.
+`BPLT_LOCATION_TYPE_MASK`\
+Especifica uma máscara de bits, para que o tipo de local de ponto de interrupção pode ser extraído fora o valor.
 
 ## <a name="remarks"></a>Comentários
 Passado como um parâmetro para o [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) método.

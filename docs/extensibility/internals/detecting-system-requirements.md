@@ -6,17 +6,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c65df25645a13f58dce9ddec69acf6834a77210f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1ef76bc111fc48a717605f1beea74c4b91d0f2b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420702"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351636"
 ---
 # <a name="detect-system-requirements"></a>Detectar os requisitos do sistema
 Um VSPackage não funcionará a menos que o Visual Studio está instalado. Quando você usa o Microsoft Windows Installer para gerenciar a instalação de seu VSPackage, você pode configurar o instalador para detectar se o Visual Studio está instalado. Você também pode configurá-lo para verificar o sistema para outros requisitos, por exemplo, uma versão específica do Windows ou uma determinada quantidade de RAM.
@@ -33,7 +33,7 @@ Um VSPackage não funcionará a menos que o Visual Studio está instalado. Quand
 Quando uma edição mais recente está instalada, as chaves do registro para essa edição são adicionadas, bem como para as edições anteriores. Ou seja, se a Enterprise edition estiver instalada, o **instale** chave é definida como *1* para a empresa, bem como para as edições Professional e Community. Portanto, você precisará verificar apenas para a edição mais recente, que você precisa.
 
 > [!NOTE]
-> Na versão de 64 bits do editor do registro, chaves de 32 bits são exibidas sob **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**. As chaves do Visual Studio estão sob **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**.
+> Na versão de 64 bits do editor do registro, chaves de 32 bits são exibidas sob **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\** . As chaves do Visual Studio estão sob **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\** .
 
 |Produto|Chave|
 |-------------|---------|
