@@ -3,17 +3,17 @@ title: 'Perguntas Frequentes: Convertendo suplementos em extensões VSPackage | 
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e40d9b7ca3d942a78ef9045bc7aaa5d0f7ea74d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417185"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66342650"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Perguntas Frequentes: Convertendo suplementos em extensões VSPackage
 Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studio, você precisará criar uma extensão do VSIX. Aqui estão as respostas a algumas perguntas frequentes sobre como converter um suplemento do Visual Studio em uma extensão do VSIX.
@@ -52,7 +52,7 @@ Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studi
 
    Uma segunda instância do Visual Studio é exibida. A segunda instância é chamada de instância experimental e não poderá ter as mesmas configurações que a instância do Visual Studio que estiver usando para escrever código. Na primeira vez que executar a instância experimenta, será solicitado para entrar no VS Online e especificar o tema e o perfil.
 
-   Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do meu comando**. Quando você escolhe esse botão, uma mensagem deverá aparecer: **Inside TestVSPackagePackage.MenuItemCallback()**.
+   Sobre o **ferramentas** menu (na instância experimental), você verá um botão chamado **nome do meu comando**. Quando você escolhe esse botão, uma mensagem deverá aparecer: **Inside TestVSPackagePackage.MenuItemCallback()** .
 
 ## <a name="BKMK_RunAddin"></a> Como posso executar meu código de suplemento em um VSPackage?
 

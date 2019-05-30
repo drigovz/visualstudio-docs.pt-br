@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dfa3bfa86d39bcd430d96c3d71f192e9a69a9400
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428810"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322420"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 Um trecho de código é um trecho de código que é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserir o trecho de código, o serviço de linguagem pode formatar o trecho de código.
@@ -50,7 +50,7 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 
  Normalmente, há dois locais onde estão armazenados os arquivos de modelo de trecho de código: 1) onde o seu idioma foi instalado e 2) na pasta do usuário. Esses locais são adicionados ao registro até que o Visual Studio **Gerenciador de trechos de código** pode encontrar os trechos de código. A pasta do usuário é onde os trechos de código criados pelo usuário são armazenados.
 
- O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[InstallRoot]*\\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.
+ O layout de pasta comum para os arquivos de modelo de trecho de código instalado tem esta aparência: *[InstallRoot]* \\ *[TestLanguage]* \snippets.\\ *[LCID]* \Snippets.
 
  *[InstallRoot]*  é a pasta que o idioma é instalado em.
 
@@ -58,7 +58,7 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 
  *[LCID]*  é a ID de localidade. Isso é que as versões localizadas como trechos de código são armazenados. Por exemplo, a ID de localidade inglês é 1033, então *[LCID]* é substituído pelo 1033.
 
- Um arquivo adicional deve ser fornecido e que é um arquivo de índice, geralmente chamado SnippetsIndex.xml ou ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido que terminam em. xml). Normalmente, esse arquivo é armazenado na *[InstallRoot]*\\ *[TestLanguage]* pasta e especifica o local exato da pasta de trechos de código, bem como a ID de idioma e o GUID da linguagem serviço que usa os trechos de código. O caminho exato do arquivo de índice é colocado no registro, conforme descrito posteriormente em "Instalar as entradas do Registro". Aqui está um exemplo de um arquivo SnippetsIndex.xml:
+ Um arquivo adicional deve ser fornecido e que é um arquivo de índice, geralmente chamado SnippetsIndex.xml ou ExpansionsIndex.xml (você pode usar qualquer nome de arquivo válido que terminam em. xml). Normalmente, esse arquivo é armazenado na *[InstallRoot]* \\ *[TestLanguage]* pasta e especifica o local exato da pasta de trechos de código, bem como a ID de idioma e o GUID da linguagem serviço que usa os trechos de código. O caminho exato do arquivo de índice é colocado no registro, conforme descrito posteriormente em "Instalar as entradas do Registro". Aqui está um exemplo de um arquivo SnippetsIndex.xml:
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>

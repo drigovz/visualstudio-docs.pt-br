@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - fire events on losing focus
 ms.assetid: 64d40695-6917-468a-8037-a253453ac159
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec28c704cb8fecb38395c0c7b3f3e3d22ead389b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 57cc24847e0a7635c27a78e983b2bf46ed4326c5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862999"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340845"
 ---
 # <a name="how-to-fire-events-when-the-editor-loses-focus"></a>Como: Disparar eventos quando o editor perde o foco
 Às vezes, é necessário saber quando um editor perde o foco no quadro de janela. Por exemplo, talvez seja necessário extrair o código de uma janela de código depois que o editor não está mais focalizado nele. O procedimento a seguir fornece as etapas a seguir para receber notificações do editor de perder o foco.

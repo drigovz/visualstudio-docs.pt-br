@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DISASSEMBLY_STREAM_SCOPE enumeration
 ms.assetid: 43e2b364-cbbe-4755-a7e6-a03f3054c965
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 446b0eec7593457ed2cd384eb9a6bca383094e62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 724e32f83cfec31c2bacdab661407983af87efe6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684488"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318251"
 ---
 # <a name="disassemblystreamscope"></a>DISASSEMBLY_STREAM_SCOPE
 Especifica o escopo do fluxo de desmontagem.
@@ -43,14 +46,18 @@ public enum enum_DISASSEMBLY_STREAM_SCOPE {
 };
 ```
 
-## <a name="members"></a>Membros
-DSS_HUGE Especifica que o contexto de código a desmontagem geraria mais saída que um cliente normalmente deseja recuperar em uma única chamada.
+## <a name="fields"></a>Campos
+`DSS_HUGE`\
+Especifica que o contexto de código a desmontagem geraria mais saída de um cliente normalmente deseja recuperar em uma única chamada.
 
-DSS_FUNCTION Especifica que a função contida pelo contexto de código deve ser desmontado. Especifica que o fluxo de desmontagem representa uma função, quando retornado pela [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
+`DSS_FUNCTION`\
+Especifica que a função contida pelo contexto de código deve ser desmontada. Especifica que o fluxo de desmontagem representa uma função, quando retornado pela [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.
 
-DSS_MODULE quando retornado pelo `IDebugDisassemblyStream2::GetScope` método, especifica que o fluxo de desmontagem representa um módulo.
+`DSS_MODULE`\
+Quando retornado pelo `IDebugDisassemblyStream2::GetScope` método, especifica que o fluxo de desmontagem representa um módulo.
 
-Desmontagem DSS_ALL especifica para o espaço de endereço inteiro.
+`DSS_ALL`\
+Especifica a desmontagem para o espaço de endereço inteiro.
 
 ## <a name="remarks"></a>Comentários
 Passado como um argumento para o [GetDisassemblyStream](../../../extensibility/debugger/reference/idebugprogram2-getdisassemblystream.md) método e retornado pelo [GetScope](../../../extensibility/debugger/reference/idebugdisassemblystream2-getscope.md) método.

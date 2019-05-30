@@ -6,17 +6,17 @@ helpviewer_keywords:
 - breakpoint validation
 - language services [managed package framework], breakpoint validation
 ms.assetid: a7e873cd-dfe1-474f-bda5-fd7532774b15
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 025f5366938eb00114b035f0b7992d61433cc181
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 177b0bb3fddebab6518a851bf8ce4c4d34d43897
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62908159"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324568"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>Validando pontos de interrupção em um serviço de linguagem herdado
 Um ponto de interrupção indica que a execução do programa deve parar em um ponto específico, enquanto ele está sendo executado em um depurador. Um usuário pode colocar um ponto de interrupção em qualquer linha no arquivo de origem, uma vez que o editor não tem conhecimento sobre o que constitui um local válido para um ponto de interrupção. Quando o depurador é iniciado, todos os pontos de interrupção marcados (chamados de pontos de interrupção pendentes) são vinculados para o local apropriado no programa em execução. Ao mesmo tempo que os pontos de interrupção são validados para garantir que eles marcam os locais de código válido. Por exemplo, um ponto de interrupção em um comentário não é válido, porque não há nenhum código nesse local no código-fonte. O depurador desabilita os pontos de interrupção inválidos.

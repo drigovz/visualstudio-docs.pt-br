@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced39d928b2d0d02c7008d6b44c934ccd053b09b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 19c73e47e8c07ebcf7c1124e6e59d80f76101458
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63409996"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341651"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>Criar um sistema de projeto básico, parte 1
 No Visual Studio, os projetos são contêineres que os desenvolvedores usam para organizar os arquivos de código-fonte e outros ativos. Projetos aparecem como filhos de soluções na **Gerenciador de soluções**. Projetos permitem que você organize, compilar, depurar e implantar o código-fonte e criar referências para os serviços da Web, bancos de dados e outros recursos.
@@ -224,7 +224,7 @@ Templates
 
     Recriando registra o modelo de projeto.
 
-   Os parâmetros `defaultProjectExtension` e `possibleProjectExtensions` são definidos para a extensão de nome de arquivo de projeto (*.myproj*). O `projectTemplatesDirectory` parâmetro é definido como o caminho relativo do *modelos* pasta. Durante a compilação, esse caminho será convertido em uma compilação completa e adicionado ao registro para registrar o sistema de projeto.
+   Os parâmetros `defaultProjectExtension` e `possibleProjectExtensions` são definidos para a extensão de nome de arquivo de projeto ( *.myproj*). O `projectTemplatesDirectory` parâmetro é definido como o caminho relativo do *modelos* pasta. Durante a compilação, esse caminho será convertido em uma compilação completa e adicionado ao registro para registrar o sistema de projeto.
 
 ## <a name="test-the-template-registration"></a>O registro do modelo de teste
  Registro de modelo informa ao Visual Studio o local da pasta do modelo de projeto para que o Visual Studio pode exibir o nome do modelo e o ícone na **novo projeto** caixa de diálogo.

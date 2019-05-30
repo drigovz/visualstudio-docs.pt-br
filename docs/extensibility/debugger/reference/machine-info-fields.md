@@ -7,20 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - MACHINE_INFO_FIELDS enumeration
 ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00f1e8ea5487a4eecb6dc9fa1f2b16d18ec3fa07
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 79bd733d987511a624235c06b5dbe83206e0c5bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65458061"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66339354"
 ---
 # <a name="machineinfofields"></a>MACHINE_INFO_FIELDS
 Especifica que tipo de informações para recuperar para um determinado computador.

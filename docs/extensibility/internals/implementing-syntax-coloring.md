@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], colorizing text
 - text, colorizing in editors
 ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f577f4cf21110a1b40680059b385d413c9c6902
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420436"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324229"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 Quando o serviço de linguagem fornece colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens de coloração e retorna os tipos de token correspondente a esse itens de coloração. O analisador deve retornar tipos de token que pertencem a uma lista de itens de coloração. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Exibe cada item que pode ser colorido na janela de código de acordo com os atributos atribuídos pelo objeto colorizador para o tipo de token apropriado.

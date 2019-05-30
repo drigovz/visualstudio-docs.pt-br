@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REASON enumeration
 ms.assetid: ad2ee898-8648-4671-9078-d32873862346
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03b2db1fd58af6a8b2f8a57846e7753cdbc82352
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 0502ab10398d37bcafee5316ba7e7566dbab4e01
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707257"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346160"
 ---
 # <a name="debugreason"></a>DEBUG_REASON
 Especifica por que o processo foi iniciado para depuração.
@@ -45,16 +48,21 @@ public enum enum_DEBUG_REASON {
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
-Erro não específico DEBUG_REASON_ERROR um ocorreu (Isso é usado como uma condição padrão quando nenhuma das outras questões de ajuste).
+## <a name="fields"></a>Campos
+`DEBUG_REASON_ERROR`\
+Ocorreu um erro não específico (Isso é usado como uma condição padrão quando nenhuma das outras questões de ajuste).
 
-DEBUG_REASON_USER_LAUNCHED o processo foi iniciado mediante solicitação do usuário.
+`DEBUG_REASON_USER_LAUNCHED`\
+O processo foi iniciado mediante solicitação do usuário.
 
-DEBUG_REASON_USER_ATTACHED o processo de execução já foi anexado pelo usuário.
+`DEBUG_REASON_USER_ATTACHED`\
+O processo de execução já foi anexado pelo usuário.
 
-DEBUG_REASON_AUTO_ATTACHED o processo foi anexado automaticamente a quando ele foi iniciado.
+`DEBUG_REASON_AUTO_ATTACHED`\
+O processo foi anexado automaticamente a quando ele foi iniciado.
 
-DEBUG_REASON_CAUSALITY o processo foi iniciado devido a um *Just-In-Time* eventos de depuração (JIT).
+`DEBUG_REASON_CAUSALITY`\
+O processo foi iniciado devido a um *Just-In-Time* eventos de depuração (JIT).
 
 ## <a name="remarks"></a>Comentários
 Retornado do [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) método.

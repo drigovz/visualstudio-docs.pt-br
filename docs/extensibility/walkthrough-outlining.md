@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - outlining
 ms.assetid: d75a44aa-265a-44d4-9c28-457f59c4ff9f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df269c3018d850ed2d5ae7435b82eb4f3aee4e1a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66320617"
 ---
 # <a name="walkthrough-outlining"></a>Passo a passo: Estrutura de tópicos
 Configure os recursos de baseada na linguagem, como a estrutura de tópicos, definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de linguagem, ou definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar a definição de região para apenas esse tipo ou aplicar as definições de região a um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como definir e exibir regiões de estrutura de tópicos.
@@ -34,9 +34,9 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
 3. Exclua os arquivos de classe existentes.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementar um marcador de estrutura de tópicos
- Regiões de estrutura de tópicos são marcados por um tipo de marca (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Essa marca fornece o padrão de comportamento da estrutura de tópicos. A região de estrutura pode ser expandido ou recolhido. A região de estrutura é marcado por um sinal de adição (**+**) se ele estiver recolhido ou um sinal de menos (**-**) se ele é expandido e a região expandida é delimitada por uma linha vertical.
+ Regiões de estrutura de tópicos são marcados por um tipo de marca (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Essa marca fornece o padrão de comportamento da estrutura de tópicos. A região de estrutura pode ser expandido ou recolhido. A região de estrutura é marcado por um sinal de adição ( **+** ) se ele estiver recolhido ou um sinal de menos ( **-** ) se ele é expandido e a região expandida é delimitada por uma linha vertical.
 
- As etapas a seguir mostram como definir um marcador que cria regiões de estrutura de tópicos para todas as regiões delimitadas por colchetes (**[**,**]**).
+ As etapas a seguir mostram como definir um marcador que cria regiões de estrutura de tópicos para todas as regiões delimitadas por colchetes ( **[** , **]** ).
 
 ### <a name="to-implement-an-outlining-tagger"></a>Para implementar um marcador de estrutura de tópicos
 
@@ -129,7 +129,7 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
     ]
     ```
 
-4. Deve haver uma região de estrutura de tópicos que inclui ambos os colchetes. Você poderá clicar no sinal de subtração à esquerda do colchete de abertura para recolher a região de estrutura de tópicos. Quando a região estiver recolhido, o símbolo de reticências (*...* ) deve aparecer à esquerda de um pop-up que contém o texto e a região recolhida **focalizar texto** deve aparecer quando você move o ponteiro sobre o botão de reticências.
+4. Deve haver uma região de estrutura de tópicos que inclui ambos os colchetes. Você poderá clicar no sinal de subtração à esquerda do colchete de abertura para recolher a região de estrutura de tópicos. Quando a região estiver recolhido, o símbolo de reticências ( *...* ) deve aparecer à esquerda de um pop-up que contém o texto e a região recolhida **focalizar texto** deve aparecer quando você move o ponteiro sobre o botão de reticências.
 
 ## <a name="see-also"></a>Consulte também
 - [Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

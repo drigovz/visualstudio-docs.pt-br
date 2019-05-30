@@ -6,22 +6,22 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc3b4423b54975c773de743b093f882f1fd9c42c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dff6ee0a81472ea556aaca478a2ff33db93fe871
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926930"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321181"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>Funções de retorno de chamada implementadas pelo IDE
 Para fazer a integração com o ambiente de desenvolvimento integrado (IDE) como perfeita possível e para fornecer uma experiência unificada do usuário final, o plug-in de controle de origem pode usar funções de retorno de chamada que são implementadas pelo IDE. O plug-in pode chamar essas funções em momentos apropriados durante uma operação de controle do código-fonte para passar informações para o IDE; o IDE pode exibir essas informações como os elementos incorporados na sua interface do usuário nativa. O usuário tem uma experiência menos fragmentada neste cenário que se o plug-in empregados sua própria interface do usuário.
 
- É o arquivo de cabeçalho necessários *scc.h*. O local padrão é *\Program Files\VSIP 8.0\EnvSDK\common\inc\\*. Ele também está na pasta VSIP que tem o exemplo de plug-in de controle do código-fonte em *\Program Files\VSIP 8.0\MSSCCI\\*.
+ É o arquivo de cabeçalho necessários *scc.h*. O local padrão é *\Program Files\VSIP 8.0\EnvSDK\common\inc\\* . Ele também está na pasta VSIP que tem o exemplo de plug-in de controle do código-fonte em *\Program Files\VSIP 8.0\MSSCCI\\* .
 
 ## <a name="in-this-section"></a>Nesta seção
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) descreve a função de retorno de chamada que é usada pelo [SccOpenProject](../extensibility/sccopenproject-function.md) para exibir mensagens de controle de fonte de plug-in por meio do IDE.

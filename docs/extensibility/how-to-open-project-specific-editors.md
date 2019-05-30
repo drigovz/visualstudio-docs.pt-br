@@ -7,17 +7,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2e85913f6eead81bcbc2424ef1087f64a3f2446e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63417132"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319246"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Como: Editores abertos específicos do projeto
 Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente associado ao editor específico para o projeto, o projeto deve abrir o arquivo usando um editor específico do projeto. O arquivo não pode ser delegado para baixo para o mecanismo do IDE para a seleção de um editor. Por exemplo, em vez de usar um editor de bitmap padrão, você pode usar essa opção do editor específicas a um projeto para especificar um editor de bitmap específico que reconhece as informações no arquivo que é exclusivo ao seu projeto.

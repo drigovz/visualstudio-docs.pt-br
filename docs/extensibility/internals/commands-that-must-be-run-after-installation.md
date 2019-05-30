@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76960ae9ffce9cc43510ae1ffd34b8350d58214c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d8a59e1a6613936c586c5529dcfc6a56a957112c
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418720"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341986"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>Comandos que devem ser executados após a instalação
 Se você implantar sua extensão por meio de um *. msi* arquivo, você deve executar **devenv /setup** como parte de sua instalação para Visual Studio descobrir suas extensões.
@@ -58,7 +58,7 @@ Se você implantar sua extensão por meio de um *. msi* arquivo, você deve exec
 
 ### <a name="customaction-table-rows-to-run-devenvexe"></a>Linhas da tabela CustomAction executar devenv.exe
 
-|Ação|Tipo|Source|Destino|
+|Ação|Tipo|Origem|Destino|
 |------------|----------|------------|------------|
 |CA_RunDevenv2002|1586|DEVENV_EXE_2002|/setup|
 |CA_RunDevenv2003|1586|DEVENV_EXE_2003|/setup|

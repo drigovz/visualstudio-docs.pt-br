@@ -3,17 +3,17 @@ title: 'Como: Gerenciar vários Threads em código gerenciado | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c3f8995d5bfbbbfe890100b0ec1a1230450bb6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 307ee61380b137cc7426c641a85844934ff0377a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431327"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340584"
 ---
 # <a name="how-to-manage-multiple-threads-in-managed-code"></a>Como: Gerenciar vários threads em código gerenciado
 Se você tiver uma extensão de VSPackage gerenciada que chama os métodos assíncronos ou tem operações executadas em threads diferentes do thread de interface de usuário do Visual Studio, você deve seguir as diretrizes abaixo. Você pode manter o thread de interface do usuário responsiva porque ele não precisa aguardar o trabalho em outro thread para concluir. Você pode tornar seu código mais eficiente, porque você não tem threads extras que ocupam espaço na pilha, e você pode torná-lo mais confiável e fácil de depurar porque você evita deadlocks e travamentos.

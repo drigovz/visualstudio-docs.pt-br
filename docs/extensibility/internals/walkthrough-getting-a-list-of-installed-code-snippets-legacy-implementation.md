@@ -7,17 +7,17 @@ helpviewer_keywords:
 - code snippets, retrieving list
 - GetSnippets method
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 910ee20cf08c1d5a42e6b6a430f7b51ccddf4925
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de116d6abb995375ba04ae1e8407eba7754ae5e9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429371"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323378"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)
 Um trecho de código é um trecho de código que pode ser inserido no buffer de origem com um comando de menu (que permite escolher entre uma lista de trechos de código instalado) ou pelo selecionando um atalho de trecho de código de uma lista de conclusão do IntelliSense.

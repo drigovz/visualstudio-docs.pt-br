@@ -9,17 +9,17 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c4f77d0eba4ca974522534c69d554af9d807a9d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed03833b6c109ca78feb86c1cfe41fa453022c66
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861913"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66341908"
 ---
 # <a name="createexpinstance-utility"></a>Utilitário CreateExpInstance
 Use o **CreateExpInstance** utilitário para criar, redefinir ou excluir uma instância experimental do Visual Studio. Você pode usar a instância experimental para depurar e testar as extensões do Visual Studio sem alterar o produto subjacente.
@@ -44,7 +44,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 ## <a name="remarks"></a>Comentários
  Quando você estiver trabalhando em uma extensão do Visual Studio, você pode pressionar F5 para abrir a instância experimental do padrão e instalar a extensão atual. Se nenhuma instância experimental estiver disponível, o Visual Studio cria um que tenha as configurações padrão.
 
- O local padrão da instância experimental depende do número de versão do Visual Studio. Por exemplo, para o Visual Studio 2015, o local é *%localappdata%\Microsoft\VisualStudio\14.0Exp\\*. Todos os arquivos no local de diretório são considerados parte dessa instância. Qualquer instância experimental adicional não será carregada pelo Visual Studio, a menos que o nome do diretório é alterado para o local padrão.
+ O local padrão da instância experimental depende do número de versão do Visual Studio. Por exemplo, para o Visual Studio 2015, o local é *%localappdata%\Microsoft\VisualStudio\14.0Exp\\* . Todos os arquivos no local de diretório são considerados parte dessa instância. Qualquer instância experimental adicional não será carregada pelo Visual Studio, a menos que o nome do diretório é alterado para o local padrão.
 
  Visual Studio não acessar o registro do sistema quando ele é aberto na instância experimental. Isso é diferente de versões anteriores do Visual Studio, que usavam uma versão experimental da seção do registro.
 

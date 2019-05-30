@@ -6,17 +6,17 @@ helpviewer_keywords:
 - IDSymbol element (VSCT XML schema)
 - VSCT XML schema elements, IDSymbol
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39ef9d059353f143c80e8956fa14f1812dc90859
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4489be4ea24382ddaf0fcbe5e824eac3945c9cec
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861844"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319529"
 ---
 # <a name="idsymbol-element"></a>Elemento IDSymbol
 O `IDSymbol` elemento contém a ID do par GUID:ID que representa um menu, um grupo ou um comando. O GUID é proveniente do pai `GuidSymbol` elemento. O `IDSymbol` elemento tem um `name` que fornece um nome amigável para a ID, que está contida no atributo de `value` atributo.

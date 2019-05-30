@@ -6,17 +6,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - custom categories
 ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 124b1a1f5e6bbf0f07bf8533940820d4f5ca9247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4eeb8af06ee4e3285e15afbb3571fb2845adef98
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418847"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321395"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorias personalizadas e exibir itens
 Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) por meio de categorias personalizadas e itens de exibição.
@@ -45,7 +45,7 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 
 ## <a name="to-create-or-identify-categories"></a>Para criar ou identificar categorias
 
-- Construir um tipo especial de entrada de registro de categoria em *[HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\ `<Category>`]*
+- Construir um tipo especial de entrada de registro de categoria em *[HKLM\Software\Microsoft. \Visual Studio\\* \<versão do Visual Studio > *\FontAndColors\\ `<Category>`]*
 
    *\<Categoria >* é o nome não localizado da categoria.
 
@@ -60,7 +60,7 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 
 ## <a name="to-create-or-identify-groups"></a>Para criar ou identificar grupos
 
-- Construir um tipo especial de entrada de registro de categoria em *[HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >*\FontAndColors\\*  \<grupo >*]*
+- Construir um tipo especial de entrada de registro de categoria em *[HKLM\Software\Microsoft. \Visual Studio\\* \<versão do Visual Studio > *\FontAndColors\\*  \<grupo > *]*
 
    *\<grupo >* é o nome não localizado do grupo.
 

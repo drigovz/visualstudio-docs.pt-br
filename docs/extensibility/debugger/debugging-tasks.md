@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], tasks
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 299db84fb06679bfbf9dff92234c944cbdec6295
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 774999dbdcb9eaf4a948364956ed95ab57e24d10
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62925811"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345847"
 ---
 # <a name="debug-tasks"></a>As tarefas de depuração
 Para depurar um programa, ele deve ser iniciado e um mecanismo de depuração (DES) deve ser anexado a ele, caso contrário, o DE deve ser anexado a um programa iniciado anteriormente. Depois de anexada, o DE deve gerar determinados eventos de inicialização. Em resposta, o pacote de depuração tenta associar os pontos de interrupção definidos no IDE. Quando o programa atinge um ponto de interrupção associado, ele é interrompida e aguarda a entrada do usuário.
