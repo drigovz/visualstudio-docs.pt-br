@@ -6,17 +6,17 @@ helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de2ed5d9c757d9082cd06c2aae5a8e51b0865714
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 277cd2b8e40dfbfd1e222975f41bd4ac95c70c62
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62432376"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331717"
 ---
 # <a name="strings-element"></a>Elemento Strings
 O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** elemento filho. Todos os outros elementos filho são opcionais. Caracteres de XML inválido, como '&' e ' <' devem ser codificados como entidades ('&amp;'e'&lt;' e assim por diante).

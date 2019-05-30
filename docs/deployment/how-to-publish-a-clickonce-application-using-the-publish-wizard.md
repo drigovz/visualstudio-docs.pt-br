@@ -1,5 +1,5 @@
 ---
-title: 'Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação | Microsoft Docs'
+title: Publicar um aplicativo ClickOnce usando o Assistente de publicação
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c3880fdc8d1d83fd36fdf09fea9e0c955b02236
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406731"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263262"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como: Publicar um aplicativo ClickOnce usando o assistente de publicação
 Para disponibilizar um aplicativo ClickOnce para os usuários, você deve publicá-lo para um compartilhamento de arquivo ou caminho, servidor FTP ou mídia removível. É possível publicar o aplicativo usando o Assistente de Publicação; as propriedades adicionais relacionadas à publicação estão disponíveis na página **Publicar** do **Designer de Projeto**. Para obter mais informações, consulte [aplicativos ClickOnce publicação](../deployment/publishing-clickonce-applications.md).
@@ -45,7 +45,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
 3. No **onde você deseja publicar o aplicativo?** página, insira um endereço válido do servidor FTP ou um caminho de arquivo válido usando um dos formatos mostrados e, em seguida, clique em **próxima**.
 
-4. Na página **Como os usuários instalarão o aplicativo?**, selecione a localização em que os usuários acessarão para instalar o aplicativo:
+4. Na página **Como os usuários instalarão o aplicativo?** , selecione a localização em que os usuários acessarão para instalar o aplicativo:
 
    - Se os usuários forem instalar de um site, clique em **De um site** e insira a URL que corresponde ao caminho de arquivo inserido na etapa anterior. Clique em **Avançar**. (Essa opção geralmente é usada ao especificar um endereço FTP no local de publicação. O download direto do FTP não tem suporte. Portanto, é necessário inserir uma URL aqui.)
 
@@ -53,7 +53,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
    - Se os usuários forem instalar de mídia removível, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
 
-5. Na página **O aplicativo estará disponível offline?**, clique na opção adequada:
+5. Na página **O aplicativo estará disponível offline?** , clique na opção adequada:
 
    - Se você quiser habilitar a execução do aplicativo quando o usuário estiver desconectado da rede, clique em **Sim, este aplicativo estará disponível online ou offline**. Será criado um atalho para o aplicativo no menu **Iniciar**.
 
@@ -75,14 +75,14 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
     O Assistente de Publicação será exibido.
 
-3. Na página **Em que local você deseja publicar o aplicativo?**, insira o caminho de arquivo ou localização FTP no qual o aplicativo será publicado, por exemplo, *d:\deploy*. Clique em **Avançar** para continuar.
+3. Na página **Em que local você deseja publicar o aplicativo?** , insira o caminho de arquivo ou localização FTP no qual o aplicativo será publicado, por exemplo, *d:\deploy*. Clique em **Avançar** para continuar.
 
-4. Na página **Como os usuários farão a instalação do aplicativo?**, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
+4. Na página **Como os usuários farão a instalação do aplicativo?** , clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
 
    > [!NOTE]
    > Se desejar executar a instalação automaticamente quando o CD-ROM for inserido na unidade, abra a página **Publicar** no **Designer de Projeto** e clique no botão **Opções** e, em seguida, no assistente **Opções de Publicação**, selecione **Em instalações com CD, o programa de instalação será iniciado automaticamente quando o CD for inserido**.
 
-5. Ao distribuir o aplicativo em CD-ROM, você poderá desejar fornecer atualizações a partir de um site da Web. Na página **Em que local o aplicativo verificará atualizações?**, escolha uma opção de atualização:
+5. Ao distribuir o aplicativo em CD-ROM, você poderá desejar fornecer atualizações a partir de um site da Web. Na página **Em que local o aplicativo verificará atualizações?** , escolha uma opção de atualização:
 
    - Se o aplicativo for verificar atualizações, clique em **O aplicativo verificará atualizações na seguinte localização** e insira a localização em que as atualizações serão postadas. Poderá ser um local de arquivo, um site ou um servidor FTP.
 

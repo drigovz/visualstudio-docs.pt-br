@@ -3,17 +3,17 @@ title: Fundamentos de UX para Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e97aa60a983eef3034eab28f7835edc1abb6734
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 45e4f1389317c67665d1b03e936a33380cb7ecf2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951753"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310807"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 
@@ -134,10 +134,10 @@ Na abordagem correta mostrada na **Figura C**, a configuração está vinculada 
 #### <a name="underlining-used-as-a-group-label-not-a-hyperlink"></a>Sublinhado usado como um rótulo de grupo, não um hiperlink
  Texto sublinhado deve ser usado apenas para os hiperlinks.
 
- **Ruim:**\
+ **Ruim:** \
  ![Texto sublinhado que não é um hiperlink é um antipadrão do Visual Studio. ](../../extensibility/ux-guidelines/media/0102-g_grouplabelincorrect.png "g_GroupLabelIncorrect 0102")<br />Texto sublinhado que não é um hiperlink é um antipadrão do Visual Studio.
 
- **Boa:**\
+ **Boa:** \
  ![Estilizada corretamente, não-hyperlink texto aparece não adornado da fonte de ambiente. ](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "h_GroupLabelCorrect 0102")<br />Estilizada corretamente, não-hyperlink texto aparece não adornado da fonte de ambiente.
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>Clicar em uma caixa de seleção de resulta em uma caixa de diálogo pop-up

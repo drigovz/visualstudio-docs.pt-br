@@ -3,17 +3,17 @@ title: Visão geral do protocolo de servidor de linguagem | Microsoft Docs
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d3fb814fa202e8a5211ab9db3cb1d71923ccac6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f6f114d7165b85051092234ea33dfc7f73e1487
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856682"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309619"
 ---
 # <a name="language-server-protocol"></a>Language Server Protocol
 
@@ -55,7 +55,7 @@ Abaixo está um exemplo de como uma ferramenta e um servidor de linguagem se com
 
 * **O usuário executa "Ir para definição" em um símbolo no editor de**: A ferramenta envia uma solicitação de ' textDocument/definição' com dois parâmetros: (1) o URI do documento e (2) a posição do texto a partir de onde a ir para a solicitação da definição foi iniciada no servidor. O servidor responde com o URI do documento e a posição da definição do símbolo dentro do documento.
 
-* **O usuário fecha o documento (arquivo)**: Uma notificação de ' textDocument/didClose' é enviada na ferramenta, informando o servidor de idioma que o documento está agora, não há mais na memória e que o conteúdo atual é agora atualizados no sistema de arquivos.
+* **O usuário fecha o documento (arquivo)** : Uma notificação de ' textDocument/didClose' é enviada na ferramenta, informando o servidor de idioma que o documento está agora, não há mais na memória e que o conteúdo atual é agora atualizados no sistema de arquivos.
 
 Este exemplo ilustra como o protocolo se comunica com o servidor de linguagem no nível de recursos do editor, como "Go to Definition", "Localizar todas as referências". Os tipos de dados usados pelo protocolo são editor ou IDE 'tipos de dados' como o documento de texto aberto no momento e a posição do cursor. Os tipos de dados não estão no nível de um modelo de domínio de programação linguagem que normalmente forneceria árvores de sintaxe abstrata e os símbolos do compilador (por exemplo, os tipos resolvidos, namespaces,...). Isso simplifica o protocolo significativamente.
 
