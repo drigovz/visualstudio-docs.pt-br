@@ -1,5 +1,5 @@
 ---
-title: Servidor e problemas de configuração de cliente em implantações do ClickOnce | Microsoft Docs
+title: Problemas de configuração de servidor/cliente em implantações do ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406780"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263469"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.
@@ -128,7 +128,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ## <a name="http-compression-issues"></a>Problemas de compactação HTTP
  Com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], você pode executar downloads que usam a compactação HTTP, uma tecnologia de servidor da Web que usa o algoritmo GZIP para compactar um fluxo de dados antes de enviar o fluxo para o cliente. O cliente — nesse caso, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]— descompacta o fluxo antes de ler os arquivos.
 
- Se você estiver usando o IIS, você pode facilmente habilitar a compactação HTTP. No entanto, quando você habilita a compactação HTTP, ele é apenas habilitado para determinados tipos de arquivo — ou seja, arquivos HTML e texto. Para habilitar a compactação para assemblies (*. dll*), XML (*. XML*), manifestos de implantação (*Application*) e os manifestos de aplicativo (*. manifest*), você deve adicionar esses tipos à lista de tipos para o IIS compactar de arquivos. Até que você adicione os tipos de arquivo para sua implantação, apenas arquivos de texto e HTML serão compactados.
+ Se você estiver usando o IIS, você pode facilmente habilitar a compactação HTTP. No entanto, quando você habilita a compactação HTTP, ele é apenas habilitado para determinados tipos de arquivo — ou seja, arquivos HTML e texto. Para habilitar a compactação para assemblies ( *. dll*), XML ( *. XML*), manifestos de implantação (*Application*) e os manifestos de aplicativo ( *. manifest*), você deve adicionar esses tipos à lista de tipos para o IIS compactar de arquivos. Até que você adicione os tipos de arquivo para sua implantação, apenas arquivos de texto e HTML serão compactados.
 
  Para obter instruções detalhadas para o IIS, consulte [como especificar tipos de documento adicionais para a compactação HTTP](http://go.microsoft.com/fwlink/?LinkId=178459).
 

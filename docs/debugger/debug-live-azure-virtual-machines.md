@@ -1,5 +1,5 @@
 ---
-title: Depurar máquinas virtuais e conjuntos de dimensionamento de máquinas virtuais do Azure ASP.NET
+title: Depurar máquinas de virtuais do Azure do ASP.NET e conjuntos de dimensionamento
 description: Saiba como configurar o snappoints e exibir instantâneos com o Depurador de Instantâneos.
 ms.custom: ''
 ms.date: 02/06/2019
@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 38cf8b5c2af174b026c507fc5c668f826707adf3
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399430"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263355"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure usando o Depurador de Instantâneos
 
@@ -50,7 +50,7 @@ Neste tutorial, você irá:
     > [!IMPORTANT]
     > A depuração de instantâneo, você precisará abrir o *mesma versão do código-fonte* que é publicado para o serviço do Azure Virtual Machine\Virtual máquina conjunto de dimensionamento.
 
-1. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione uma conta de armazenamento do Azure e o Azure Virtual Machine\Virtual máquina conjunto de dimensionamento de seu aplicativo web é implantado em e, em seguida, clique em **Attach**.
+1. Escolha **Depurar > Anexar Depurador de Instantâneos...** . Selecione uma conta de armazenamento do Azure e o Azure Virtual Machine\Virtual máquina conjunto de dimensionamento de seu aplicativo web é implantado em e, em seguida, clique em **Attach**.
 
       ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 

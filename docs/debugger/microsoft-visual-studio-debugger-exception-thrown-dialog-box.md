@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a684002360f59d33e61c40261afc1bfd515511e3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9fd0035ca0764f3673e07b4e3289b87773c8349b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408508"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261332"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Caixa de diálogo Depurador do Microsoft Visual Studio (exceção gerada)
 Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de exceção lançada. Seu código precisa tratar essa exceção. Você pode escolher entre as seguintes opções para tratar a exceção:
@@ -44,4 +44,4 @@ Ocorreu uma exceção no seu programa. Esta caixa de diálogo relata o tipo de e
 ## <a name="see-also"></a>Consulte também
 - [Gerenciando exceções com o depurador](../debugger/managing-exceptions-with-the-debugger.md)
 - [Práticas recomendadas para exceções](/dotnet/standard/exceptions/best-practices-for-exceptions)
-- [Tratamento de Exceção](/cpp/windows/exception-handling-cpp-component-extensions)
+- [Tratamento de Exceção](/cpp/extensions/exception-handling-cpp-component-extensions)

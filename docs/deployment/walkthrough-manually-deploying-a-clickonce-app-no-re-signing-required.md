@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Implantando um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual manualmente | Microsoft Docs'
+title: Implantar manualmente o ClickOnce preserva a identidade visual de aplicativos
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47db202d07fd88bfb5e922964caf2cdd5008c6fd
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405852"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263420"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual
 Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o cliente teve tradicionalmente atualizar o manifesto de implantação e assine-o novamente. Enquanto ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar regenerar um novo manifesto de implantação. Para obter mais informações, consulte [ClickOnce implantar aplicativos para servidores de teste e produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -127,7 +127,7 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 
 13. Selecione **arquivo**, **salvar** no menu e salve o manifesto do aplicativo. Você será solicitado para assinar o manifesto do aplicativo quando você salvá-lo.
 
-14. Se você tiver um certificado armazenado como um arquivo em seu sistema de arquivos, use o **sinal como arquivo de certificado** opção e, em seguida, selecione o certificado do sistema de arquivos usando o botão de reticências (**...** ) botão.
+14. Se você tiver um certificado armazenado como um arquivo em seu sistema de arquivos, use o **sinal como arquivo de certificado** opção e, em seguida, selecione o certificado do sistema de arquivos usando o botão de reticências ( **...** ) botão.
 
      - ou -
 

@@ -1,5 +1,5 @@
 ---
-title: Procedimentos armazenado de uso para executar a atualização, inserção e exclusão em Linq to SQL O/R Designer
+title: Use os procedimentos armazenados em LINQ to SQL para atualizar dados (O/R Designer)
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 58dfb1016097429eeab10c3b50262adc7015e818
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63402824"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260799"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 

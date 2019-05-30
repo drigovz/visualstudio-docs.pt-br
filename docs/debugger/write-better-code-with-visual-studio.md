@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bfbcf9a63a01d391cbbc65067793d75d42899c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b34e23b1bc7972563d6d8d014ba0728dc637b34
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901262"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262141"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>Técnicas de depuração e ferramentas para ajudá-lo a escrever códigos melhores
 
@@ -294,7 +294,7 @@ Aqui estão algumas dicas importantes para tratamento de exceções:
     }
     ```
 
-* Para funções não familiares que você incluir em seu aplicativo, expecially aqueles interagindo com dados externos (por exemplo, uma solicitação da web), verifique a documentação para ver quais exceções a função é provavelmente lançará. Isso pode ser informações críticas para tratamento de erro apropriado e para depurar seu aplicativo.
+* Para funções não familiares que você incluir em seu aplicativo, especialmente aqueles interagindo com dados externos (por exemplo, uma solicitação da web), verifique a documentação para ver quais exceções a função é provavelmente lançará. Isso pode ser informações críticas para tratamento de erro apropriado e para depurar seu aplicativo.
 
 Para o aplicativo de exemplo, corrigir a `SerializationException` no `GetJsonData` método alterando `4o` para `40`.
 

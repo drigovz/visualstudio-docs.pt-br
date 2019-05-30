@@ -13,12 +13,12 @@ author: bowdenk7
 ms.author: wilkelly
 manager: jillfra
 monikerRange: vs-2017
-ms.openlocfilehash: 58de705d90567723f98bfb472f808da7101a624e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c86dd5090d2cee6c49bd97f0895bba397e10c1ae
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62553338"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263042"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>JavaScript no Visual Studio 2017
 
@@ -247,7 +247,7 @@ Consulte a página [JavaScript IntelliSense](/visualstudio/ide/javascript-intell
 ### <a name="vsdoc"></a>VSDoc
 
 Comentários de documentação XML, também conhecidos como VSDocs, anteriormente podiam ser usados para decorar seu código-fonte usando dados adicionais que eram usados para melhorar os resultados do IntelliSense.
-Não há mais suporte para o VSDoc em favor do [JSDoc](http://usejsdoc.org/about-getting-started.html), que é mais fácil de escrever e é o padrão aceito para JavaScript.
+Não há mais suporte para o VSDoc em favor do [JSDoc](https://jsdoc.app/about-getting-started.html), que é mais fácil de escrever e é o padrão aceito para JavaScript.
 
 ### <a name="intellisensejs-extensions"></a>Extensões `.intellisense.js`
 
