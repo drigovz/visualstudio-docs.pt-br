@@ -3,17 +3,17 @@ title: Compartilhado cores para o Visual Studio | Microsoft Docs
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e873250488bff50519cc12060841110325a48e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8b36b7c123f4da9ca3ab7a6f33a972345cdf70e6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430232"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310786"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Cores compartilhadas para o Visual Studio
 Quando você está projetando a interface do usuário que usa elementos comuns de shell do Visual Studio, ou você gostaria de seu elemento de interface para ser consistente com recursos semelhantes, use nomes de token existentes nos arquivos de definição de pacote para escolher e atribuir cores. Isso garante que sua interface do usuário permaneça consistente com o ambiente geral do Visual Studio e que ele será atualizado automaticamente quando os temas são adicionados ou atualizados.
@@ -941,7 +941,7 @@ Várias janelas de ferramentas, incluindo o Gerenciador de soluções, Gerenciad
 | Em primeiro plano (glifo) | `TreeView.SelectedItemActiveGlyphMouseOver` |
 | Borda | Nenhum |
 
-## <a name="shell-appearance"></a>Aparência do shell
+## <a name="shell-appearance"></a>Aparência do Shell
 
 ### <a name="background"></a>Informações preliminares
 O plano de fundo ambiente consiste em duas camadas. A camada inferior é uma cor sólida que abrange todo o IDE. A camada superior se encaixa em prateleira de comando e entre os canais de ocultar automaticamente janela ferramenta nas bordas esquerdas e direita do IDE. As camadas de plano de fundo superior e inferior são definidas para a mesma cor nos temas claro e escuro.

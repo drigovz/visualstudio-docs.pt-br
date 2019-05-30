@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - brace matching
 ms.assetid: 5af08ac7-1d08-4ccf-997e-01aa6cb3d3d7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bbea179eb2140706ee868a8a48215e7f490f57d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62795989"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66312530"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Passo a passo: Exibir chaves correspondentes
 Implemente recursos de baseada na linguagem, por exemplo, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto para as chaves correspondentes, quando o cursor está em uma das chaves a correspondência de chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e aplicar as marcas para apenas esse tipo ou aplicam as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.

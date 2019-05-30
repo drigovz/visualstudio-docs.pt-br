@@ -9,17 +9,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4ff83c2d4d28b6393f7f6d03b01e35d9cc0aa4f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62911375"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352036"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como: Usar assistentes com modelos de projeto
 
@@ -210,7 +210,7 @@ Para o modelo de projeto personalizado usar o assistente personalizado, você pr
 
 1. Assine o assembly. No **Gerenciador de soluções**, selecione o projeto VSIX, clique com botão direito e selecione **propriedades do projeto**.
 
-2. No **propriedades do projeto** janela, selecione a **Signing** na guia no **Signing** guia, seleção **assinar o assembly**. No **escolher um arquivo de chave de nome forte** campo, selecione  **\<New >**. No **criar chave de nome forte** janela, no **nome do arquivo de chave** , digite **snk**. Desmarque a **proteger o arquivo de chave com uma senha** campo.
+2. No **propriedades do projeto** janela, selecione a **Signing** na guia no **Signing** guia, seleção **assinar o assembly**. No **escolher um arquivo de chave de nome forte** campo, selecione  **\<New >** . No **criar chave de nome forte** janela, no **nome do arquivo de chave** , digite **snk**. Desmarque a **proteger o arquivo de chave com uma senha** campo.
 
 3. No **Gerenciador de soluções**, selecione o projeto do VSIX e localizar o **propriedades** janela.
 
@@ -218,9 +218,9 @@ Para o modelo de projeto personalizado usar o assistente personalizado, você pr
 
 5. Recompile a solução.
 
-6. Agora você pode encontrar o arquivo snk no diretório do projeto MyProjectWizard (*\<seu local de disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Cópia de *snk* arquivo.
+6. Agora você pode encontrar o arquivo snk no diretório do projeto MyProjectWizard ( *\<seu local de disco > \MyProjectTemplate\MyProjectWizard\key.snk*). Cópia de *snk* arquivo.
 
-7. Vá para o diretório de saída e localize o assembly (*\<seu local de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Cole a *snk* arquivo aqui. (Isso não é absolutamente necessário, mas facilitará as etapas a seguir).
+7. Vá para o diretório de saída e localize o assembly ( *\<seu local de disco > \MyProjectTemplate/MyProjectWizard\bin\Debug\MyProjectWizard.dll*). Cole a *snk* arquivo aqui. (Isso não é absolutamente necessário, mas facilitará as etapas a seguir).
 
 8. Abra uma janela de comando e altere o diretório no qual o assembly foi criado.
 

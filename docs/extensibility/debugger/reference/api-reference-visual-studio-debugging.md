@@ -5,17 +5,17 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d415644897d7dd481f47c93a3b951db23fda843
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7f880596854eb376d386bc6a96d789c54767f39d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686347"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351855"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>Referência de API (depuração no Visual Studio)
 A seção de referência inclui uma visão geral conceitual da API, um guia que mostra a sintaxe e uso para todos os elementos de API e uma variedade de exemplos de código. Todas as referências são listadas em ordem alfabética por categoria.
@@ -37,10 +37,10 @@ A seção de referência inclui uma visão geral conceitual da API, um guia que 
 |E_ACCESSDENIED|Erro de acesso geral negado.|0x80070005|
 
 > [!NOTE]
->  Quando um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depuração método retorna `S_OK`, supõe-se que todos os ponteiros de parâmetro são válidos, ou seja, nenhuma validação é realizada em out ponteiros de parâmetro quando `S_OK` é retornado.
+> Quando um [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] depuração método retorna `S_OK`, supõe-se que todos os ponteiros de parâmetro são válidos, ou seja, nenhuma validação é realizada em out ponteiros de parâmetro quando `S_OK` é retornado.
 >
 > [!NOTE]
->  Inválido ou `NULL` [parâmetros out] pode causar falhas no IDE.
+> Inválido ou `NULL` [parâmetros out] pode causar falhas no IDE.
 
 ## <a name="see-also"></a>Consulte também
 - [Interfaces](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)

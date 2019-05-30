@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_UNBOUND_REASON enumeration
 ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65393f6e162cb15ded7a0e598e360c7ce90bb3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 9de6812f3a61feca8ca8e7153fb281369c3312bd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717654"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66350564"
 ---
 # <a name="bpunboundreason"></a>BP_UNBOUND_REASON
 Fornece o motivo pelo qual que um ponto de interrupção foi desassociado.
@@ -43,14 +46,18 @@ public enum enum_BP_UNBOUND_REASON {
 };
 ```
 
-## <a name="members"></a>Membros
-BPUR_UNKNOWN o motivo é desconhecido.
+## <a name="fields"></a>Campos
+`BPUR_UNKNOWN`\
+O motivo é desconhecido.
 
-BPUR_CODE_UNLOADED o código que contém o ponto de interrupção foi descarregado.
+`BPUR_CODE_UNLOADED`\
+O código que contém o ponto de interrupção foi descarregado.
 
-Foram religados BPUR_BREAKPOINT_REBIND o ponto de interrupção em um local diferente. Isso pode acontecer após editar e continuar as operações quando move o ponto de interrupção ou quando o ponto de interrupção é associado a um arquivo com um caminho que não é mais válido.
+`BPUR_BREAKPOINT_REBIND`\
+O ponto de interrupção foram religado para um local diferente. Isso pode acontecer após editar e continuar as operações quando move o ponto de interrupção ou quando o ponto de interrupção é associado a um arquivo com um caminho que não é mais válido.
 
-BPUR_ BREAKPOINT_ERROR o ponto de interrupção é determinado em erro depois que ele está associado. Isso acontece com os pontos de interrupção gerenciados cujas condições não são mais válidas.
+`BPUR_ BREAKPOINT_ERROR`\
+O ponto de interrupção é determinado em erro depois que ele está associado. Isso acontece com os pontos de interrupção gerenciados cujas condições não são mais válidas.
 
 ## <a name="remarks"></a>Comentários
 Retornado pela [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) método.

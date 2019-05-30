@@ -6,17 +6,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 12fcf63c09d805f23fcbf0d041ab41ede7f85f32
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891872"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352356"
 ---
 # <a name="add-a-toolbar"></a>Adicionar uma barra de ferramentas
 Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visual Studio.
@@ -87,7 +87,7 @@ Este passo a passo mostra como adicionar uma barra de ferramentas ao IDE do Visu
 
 6. Clique com botão direito a barra de menus do Visual Studio para obter uma lista das barras de ferramentas. Selecione **barra de ferramentas de teste**.
 
-7. Agora você deve ver sua barra de ferramentas como um ícone à direita de localizar no ícone de arquivos. Quando você clica no ícone, você verá uma caixa de mensagem que diz **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Agora você deve ver sua barra de ferramentas como um ícone à direita de localizar no ícone de arquivos. Quando você clica no ícone, você verá uma caixa de mensagem que diz **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()** .
 
 ## <a name="see-also"></a>Consulte também
 - [Comandos, menus e barras de ferramentas](../extensibility/internals/commands-menus-and-toolbars.md)

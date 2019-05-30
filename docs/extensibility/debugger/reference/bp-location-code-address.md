@@ -7,17 +7,19 @@ f1_keywords:
 helpviewer_keywords:
 - BP_LOCATION_CODE_ADDRESS structure
 ms.assetid: 83c9da8b-19d9-4be5-b225-854543654901
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce96e2edfcbc0dcb6dc4c6ff0e58617ad792ad8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+ms.openlocfilehash: 51137b5a5a69c80ecd7129d4c645f63b5805d27d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697995"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66319125"
 ---
 # <a name="bplocationcodeaddress"></a>BP_LOCATION_CODE_ADDRESS
 Descreve o local de um ponto de interrupção em um endereço no código.
@@ -34,13 +36,17 @@ typedef struct _BP_LOCATION_CODE_ADDRESS {
 ```
 
 ## <a name="members"></a>Membros
-`bstrContext` O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.
+`bstrContext`\
+O contexto do ponto de interrupção, normalmente um nome de método ou função, como visto em uma pilha de chamadas.
 
-`bstrModuleUrl` A URL do módulo que contém o ponto de interrupção.
+`bstrModuleUrl`\
+A URL do módulo que contém o ponto de interrupção.
 
-`bstrFunction` O nome da função que contém o ponto de interrupção.
+`bstrFunction`\
+O nome da função que contém o ponto de interrupção.
 
-`bstrAddress` O endereço do ponto de interrupção, que é analisada por um avaliador de expressão para associá-lo para um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
+`bstrAddress`\
+O endereço do ponto de interrupção, que é analisada por um avaliador de expressão para associá-lo para um [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) objeto.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é um membro do [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) estrutura como parte de uma união.
