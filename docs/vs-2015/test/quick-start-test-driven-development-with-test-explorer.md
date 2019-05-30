@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9e1ac0eb389a6f1747ef713cd99f9bb3006ff6b9
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446202"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261641"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,10 +65,10 @@ ms.locfileid: "63446202"
 > Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.  
   
 > [!NOTE]
-> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [usa uma estrutura de teste diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [usa uma estrutura de teste diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 ## <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método  
- Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [estrutura de teste diferente do EUA](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+ Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [usa uma estrutura de teste diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-third-party-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Criando o teste e o método  
   
@@ -76,7 +76,7 @@ ms.locfileid: "63446202"
   
 2. Criar um projeto de teste.  
   
-   - Na caixa de diálogo **Novo Projeto**, escolha **Visual C#**, **Teste** e escolha **Projeto de Teste de Unidade**.  
+   - Na caixa de diálogo **Novo Projeto**, escolha **Visual C#** , **Teste** e escolha **Projeto de Teste de Unidade**.  
   
         ![Novos projetos de código e teste](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   

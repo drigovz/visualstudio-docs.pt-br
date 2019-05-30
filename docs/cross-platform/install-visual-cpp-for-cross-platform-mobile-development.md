@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: f24e3460cb1298a36d0365781aa82cf55d8478d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 261d26307a212fa44506b21caadf4b7351453e06
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824783"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261090"
 ---
 # <a name="install-cross-platform-mobile-development-with-c"></a>Instalar Desenvolvimento Mobile com C++ de plataforma cruzada
 
@@ -60,7 +60,7 @@ O Instalador do Visual Studio para Visual Studio 2017 inclui uma carga de trabal
 
 1. Com a guia **Cargas de Trabalho** selecionada, role a tela para baixo e selecione a carga **Desenvolvimento Mobile com C++** no Instalador do Visual Studio. Após a seleção dessa carga de trabalho, outros componentes necessários para desenvolvimento em C++ também serão selecionados. Você também pode escolher outras cargas de trabalho e componentes individuais para instalação simultânea. Para compilar o código de plataforma cruzada que também é direcionado ao UWP, selecione a carga de trabalho **Desenvolvimento na Plataforma Universal do Windows**.
 
-1. No painel **Detalhes da instalação**, expanda **Desenvolvimento Mobile com C++**. Na seção **Opcional**, você pode escolher outras versões do NDK, o Android Emulator do Google, o Hardware Accelerated Execution Manager da Intel e a ferramenta de aceleração de compilação IncrediBuild.
+1. No painel **Detalhes da instalação**, expanda **Desenvolvimento Mobile com C++** . Na seção **Opcional**, você pode escolher outras versões do NDK, o Android Emulator do Google, o Hardware Accelerated Execution Manager da Intel e a ferramenta de aceleração de compilação IncrediBuild.
 
 1. Por padrão, um ou mais componentes de instalação do SDK do Android estão incluídos na carga de trabalho. Há outras versões do SDK do Android disponíveis. Para adicionar uma à sua instalação, escolha a guia **Componentes Individuais** e, em seguida, role para baixo até a seção **SDKs, bibliotecas e estruturas** para fazer sua seleção.
 
@@ -74,7 +74,7 @@ O Instalador do Visual Studio para Visual Studio 2017 inclui uma carga de trabal
 1. Abra o Visual Studio.
 
 > [!NOTE]
-> Se estiver usando o Visual Studio 2015, confira [Instalar Visual C++ para Desenvolvimento Móvel Multiplataforma (Visual Studio 2015)](/cross-platform/install-visual-cpp-for-cross-platform-mobile-development?view=vs-2015)
+> Se estiver usando o Visual Studio 2015, confira [Instalar Visual C++ para Desenvolvimento Móvel Multiplataforma (Visual Studio 2015)](install-visual-cpp-for-cross-platform-mobile-development.md?view=vs-2015)
 
 ## <a name="install-tools-for-ios"></a>Instalar as ferramentas para iOS
 
@@ -119,11 +119,11 @@ Na maioria dos casos, o Visual Studio detecta as configurações do software de 
 
 1. Na barra de menus do Visual Studio, selecione **Ferramentas** > **Opções**.
 
-1. Na caixa de diálogo **Opções**, selecione **Multiplataforma** > **C++** > **Android**.
+1. Na caixa de diálogo **Opções**, selecione **Multiplataforma** > **C++**  > **Android**.
 
    ![Opções de caminho da ferramenta Android](../cross-platform/media/cppmdd_options_android.PNG "CPPMDD_Options_Android")
 
-1. Para alterar o caminho usado por uma ferramenta, marque a caixa de seleção ao lado do caminho e edite o caminho da pasta na caixa de texto. Você também pode usar o botão Procurar (**...** ) para abrir uma caixa de diálogo **Selecionar local** para escolher a pasta.
+1. Para alterar o caminho usado por uma ferramenta, marque a caixa de seleção ao lado do caminho e edite o caminho da pasta na caixa de texto. Você também pode usar o botão Procurar ( **...** ) para abrir uma caixa de diálogo **Selecionar local** para escolher a pasta.
 
 1. Escolha **OK** para salvar os locais de pasta da ferramenta personalizada.
 

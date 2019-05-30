@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 55b863d1bff16fb0170e749d00ebb212588b2dd3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ebbbd2eb0cf47763868a6c23ef2637bdd4009b2e
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403035"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261047"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>Solução de problemas do Emulador do Visual Studio para Android
 Este tópico contém informações para ajudá-lo a resolver problemas que podem ocorrer ao usar o Emulador do Visual Studio para Android.
@@ -143,7 +143,7 @@ Este tópico contém informações para ajudá-lo a resolver problemas que podem
 
 - Verifique se os requisitos mínimos de hardware foram atendidos e se as configurações de BIOS estão corretas.
 
-   O emulador e o Windows 8 Hyper-V exigem um processador de 64 bits com SLAT (Conversão de Endereços de Segundo Nível). Para Intel, é necessário essencialmente um processador Core i3, i5 ou i7 (ou um dos muitos Xeons). Há uma lista dos chips AMD [aqui](http://support.amd.com/en-us).
+   O emulador e o Windows 8 Hyper-V exigem um processador de 64 bits com SLAT (Conversão de Endereços de Segundo Nível). Para Intel, é necessário essencialmente um processador Core i3, i5 ou i7 (ou um dos muitos Xeons). Há uma lista dos chips AMD [aqui](https://www.amd.com/en/support).
 
   1. Verifique se o computador atende aos [requisitos do sistema](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md).
 

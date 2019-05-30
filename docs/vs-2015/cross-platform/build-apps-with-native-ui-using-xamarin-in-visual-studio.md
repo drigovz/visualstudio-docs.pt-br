@@ -8,12 +8,12 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 8a719a1420d4d2e64438865a41cc24da114fbc2d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 90517c46d8fa92d58e73e976f593a1bcfbfac9b1
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443058"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263566"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Criar aplicativos com interface do usuário nativa usando o Xamarin no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 > [!TIP]
 > Você pode encontrar o código-fonte completo para esse projeto no [repositório de amostras móveis no GitHub](https://github.com/xamarin/mobile-samples/tree/master/Weather).
 >
-> Se você tiver dificuldades ou encontrar erros, publique perguntas em [forums.xamarin.com](http://forums.xamarin.com). Muitos erros podem ser resolvidos atualizando para os SDKs mais recentes exigidos pelo Xamarin, que são descritos em [Notas de Versão do Xamarin](https://developer.xamarin.com/releases/) para cada plataforma.
+> Se você tiver dificuldades ou encontrar erros, publique perguntas em [forums.xamarin.com](http://forums.xamarin.com). Muitos erros podem ser resolvidos atualizando para os SDKs mais recentes exigidos pelo Xamarin, que são descritos em [Notas de Versão do Xamarin](https://developer.xamarin.com/) para cada plataforma.
 >
 > [!NOTE]
 > A documentação do desenvolvedor do Xamarin também oferece várias instruções passo a passo com seções de Início Rápido e de Aprofundamento conforme listado abaixo. Em todas essas páginas, certifique-se de que "Visual Studio" esteja selecionado no canto superior direito da página para ver instruções passo a passo específicas do Visual Studio.
@@ -63,19 +63,19 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 2. Depois de clicar em OK para criar a solução, você terá vários projetos individuais:
 
-   - **WeatherApp (Portátil)**: a PCL em que você escreverá o código que é compartilhado entre plataformas, incluindo lógica de negócios comum e código de interface do usuário com Xamarin.Forms.
+   - **WeatherApp (Portátil)** : a PCL em que você escreverá o código que é compartilhado entre plataformas, incluindo lógica de negócios comum e código de interface do usuário com Xamarin.Forms.
 
    - **WeatherApp.Droid**: o projeto que contém o código nativo do Android. É definido como o projeto de inicialização padrão.
 
    - **WeatherApp.iOS**: o projeto que contém o código iOS nativo.
 
-   - **WeatherApp.WinPhone (Windows Phone 8.1)**: o projeto que contém o código nativo do Windows Phone.
+   - **WeatherApp.WinPhone (Windows Phone 8.1)** : o projeto que contém o código nativo do Windows Phone.
 
      Dentro de cada projeto nativo, você tem acesso ao designer nativo para a plataforma correspondente e pode implementar telas específicas da plataforma.
 
 3. Adicione o pacote **Newtonsoft.Json** e o pacote NuGet ao projeto PCL, que você usará para processar as informações recuperadas de um serviço de dados de clima:
 
-   - Clique com botão direito do mouse em **Solução 'WeatherApp'** no Gerenciador de Soluções e selecione **Gerenciar Pacotes NuGet para Solução…**.
+   - Clique com botão direito do mouse em **Solução 'WeatherApp'** no Gerenciador de Soluções e selecione **Gerenciar Pacotes NuGet para Solução…** .
 
         Na janela do NuGet, selecione a guia **Procurar** e pesquise **Newtonsoft**.
 
@@ -100,7 +100,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
 
 1. Para executar este exemplo, primeiro você precisa se inscrever para obter uma chave de API gratuita em [http://openweathermap.org/appid](http://openweathermap.org/appid).
 
-2. Clique com botão direito do mouse no projeto **WeatherApp** e selecione **Adicionar > Classe…**. Na caixa de diálogo **Adicionar Novo Item**, dê ao arquivo o nome **Weather.cs**. Você usará essa classe para armazenar dados do serviço de dados de clima.
+2. Clique com botão direito do mouse no projeto **WeatherApp** e selecione **Adicionar > Classe…** . Na caixa de diálogo **Adicionar Novo Item**, dê ao arquivo o nome **Weather.cs**. Você usará essa classe para armazenar dados do serviço de dados de clima.
 
 3. Substitua todo o conteúdo de **Weather.cs** pelo seguinte:
 

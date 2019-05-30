@@ -1,5 +1,5 @@
 ---
-title: Confirmar edições no processo em controles associados a dados antes de salvar os dados
+title: Confirmar edições em processo em controles ligados a dados antes de salvar
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f771fec52024fb7d1e4c000d374f08929d453917
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 129ab5be6264f566de284b2736664c8c0d8c07d7
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567953"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261835"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Confirmar edições no processo em controles associados a dados antes de salvar os dados
 

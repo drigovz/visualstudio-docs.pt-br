@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f989e5ec028f3a296585c54eb17b54f4da7c1cf0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809309"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260469"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -28,15 +28,15 @@ Para obter informações sobre como gerar dados de métricas de código no Visua
 
 A lista a seguir mostra o código de resultados de métricas que calcula o Visual Studio:
 
-- **Índice de facilidade de manutenção** -calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor facilidade de manutenção. Classificações codificadas por cor podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde está entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é razoavelmente fácil de manter. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção.
+- **Índice de facilidade de manutenção** -calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor facilidade de manutenção. Classificações codificadas por cor podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde está entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é razoavelmente fácil de manter. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção. Para obter mais informações, consulte o [intervalo de índice de facilidade de manutenção e o significado](https://blogs.msdn.microsoft.com/codeanalysis/2007/11/20/maintainability-index-range-and-meaning/) postagem de blog.
 
-- **A complexidade ciclomática** -mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo exigirá mais testes para obter boa cobertura do código e será menos capaz de manutenção.
+- **A complexidade ciclomática** -mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo requer mais testes para obter boa cobertura do código e é menos fácil de manter. Para obter mais informações, consulte o [entrada da Wikipedia para complexidade ciclomática](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profundidade de herança** -indica o número de definições de classe que estenda para a raiz da hierarquia de classe. Quanto mais a hierarquia mais difícil pode ser entender onde os campos e métodos particulares são definidos ou / e redefinido.
+- **Profundidade de herança** -indica o número de diferentes classes que herdam de uma a outra, de volta para a classe base. Profundidade de herança é semelhante à classe em que uma alteração em uma classe base pode afetar qualquer uma de suas classes herdadas de acoplamento. Quanto maior esse número, mais fundo a herança e quanto maior o potencial de modificações de classe base resultará em uma quebra alterar. Para a profundidade de herança, um valor baixo é bom e um valor alto é ruim. 
 
-- **Classe acoplamento** -mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, as classes base, implementações de interface, os campos definidos nos tipos externos, e decoração do atributo. Design de software BOM determina que tipos e métodos devem ter alta coesão e acoplamento de baixa. Acoplamento alta indica um design que é difícil a reutilização e a manter o devido à suas muitas interdependências em outros tipos.
+- **Classe acoplamento** -mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, as classes base, implementações de interface, os campos definidos nos tipos externos, e decoração do atributo. Design de software BOM determina que tipos e métodos devem ter alta coesão e acoplamento de baixa. Acoplamento alta indica um design que é difícil a reutilização e a manter o devido à suas muitas interdependências em outros tipos. Para obter mais informações, consulte o [acoplamento de classes](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) postagem de blog.
 
-- **Linhas de código** -indica o número aproximado de linhas de código. A contagem é baseada no código IL e, portanto, não o número exato de linhas no arquivo de código de origem. Uma contagem muito alta pode indicar que um tipo ou método está tentando fazer muito trabalho e deve ser dividido. Isso também pode indicar que o tipo ou método pode ser difícil de manter.
+- **Linhas de código** -indica o número aproximado de linhas de código. A contagem é baseada no código IL e, portanto, não o número exato de linhas no arquivo de código de origem. Uma contagem alta pode indicar que um tipo ou método está tentando fazer muito trabalho e deve ser dividido. Isso também pode indicar que o tipo ou método pode ser difícil de manter.
 
    > [!NOTE]
    > O [versão de linha de comando](../code-quality/how-to-generate-code-metrics-data.md#command-line-code-metrics) do código ferramenta métricas contagens de linhas reais de código porque ele analisa o código-fonte em vez de IL.

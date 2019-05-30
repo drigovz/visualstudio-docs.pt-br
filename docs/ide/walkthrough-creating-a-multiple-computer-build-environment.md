@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ca4e45c83aa3291b922694ebd16df5ab7fc35e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9b6f956adee315cc8c5d229a237e953de67f9c16
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581632"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262945"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>Passo a passo: Criar um ambiente de build de vários computadores
 
@@ -169,7 +169,7 @@ Observe que o nome da pasta *Arquivos de Programa* depende do sistema operaciona
 
     - \Microsoft.VC110.OPENMP\vcomp110.dll
 
-5. Copie somente os seguintes arquivos da pasta *Debug_NonRedist\x86* ou *Debug_NonRedist\x64* para o computador de build, conforme descrito em [Preparar um computador de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable). Nenhum outro arquivo pode ser copiado.
+5. Copie somente os seguintes arquivos da pasta *Debug_NonRedist\x86* ou *Debug_NonRedist\x64* para o computador de build, conforme descrito em [Preparar um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Nenhum outro arquivo pode ser copiado.
 
     - \Microsoft.VC110.DebugCRT\msvcp110d.dll
 
@@ -407,5 +407,5 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 ## <a name="see-also"></a>Consulte também
 
-- [Preparar um computador de teste para executar um executável de depuração](/cpp/ide/preparing-a-test-machine-to-run-a-debug-executable)
+- [Preparar um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)
 - [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

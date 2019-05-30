@@ -1,5 +1,5 @@
 ---
-title: Implementando políticas de check-in de análise do código personalizadas para código gerenciado
+title: Código personalizado check-in políticas de análise de código gerenciado
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c32164ef319199171b75379823dc021cfd886d74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6619e3bb988a555fba5718f609ff3a5f0584063b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815784"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260834"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementar políticas de check-in de análise de código personalizadas para código gerenciado
 
@@ -79,7 +79,7 @@ Para criar uma regra personalizada definida para um projeto de DevOps do Azure, 
 
 3. No **política de Check-in** lista, clique duas vezes em **análise de código**e certifique-se de que o **impor a análise de código para código gerenciado** caixa de seleção está selecionada.
 
-4. No **executar este conjunto de regras** , clique em  **\<Selecionar conjunto de regras de controle de origem >**.
+4. No **executar este conjunto de regras** , clique em  **\<Selecionar conjunto de regras de controle de origem >** .
 
 5. Digite o caminho do arquivo de conjunto de regras de política de check-in no controle de versão.
 
@@ -114,6 +114,6 @@ Você especificar uma regra de política de check-in do projeto definir como o c
 
 6. Para ignorar o código em componentes de outras empresas, selecione a **Suprimir resultados do código gerado** caixa de seleção.
 
-7. No **executar este conjunto de regras** , clique em  **\<procurar... >**.
+7. No **executar este conjunto de regras** , clique em  **\<procurar... >** .
 
 8. Especifique a versão local do arquivo de conjunto de regras de política de check-in.

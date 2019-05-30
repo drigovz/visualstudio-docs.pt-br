@@ -1,5 +1,5 @@
 ---
-title: 'Como: Sincronizar conjuntos de regras do projeto de código com a política de check-in do projeto de equipe'
+title: Conjuntos de regras do projeto de sincronização com a política de check-in
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd92cbb5dfee83a4a2b92729a8fde3846a5e5475
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815809"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260847"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com uma política de Check-in do projeto de DevOps do Azure
 
@@ -45,7 +45,7 @@ Você pode sincronizar as configurações de análise de código para projetos d
 
 3. Clique em **análise de código**.
 
-4. No **executar este conjunto de regras** , clique em  **\<procurar... >**.
+4. No **executar este conjunto de regras** , clique em  **\<procurar... >** .
 
 5. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra de política de check-in.
 
@@ -61,6 +61,6 @@ Você pode sincronizar as configurações de análise de código para projetos d
 
 5. Abrir a caixa de diálogo Propriedades do projeto de código e exibir o **análise de código** página.
 
-6. No **executar este conjunto de regras** , clique em  **\<procurar... >**.
+6. No **executar este conjunto de regras** , clique em  **\<procurar... >** .
 
 7. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra.

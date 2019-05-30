@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7969ca0a5900ae08d1aac6634f961d45bbfac564
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: a33911ffe8c28dd84166e3e16ac6b7f0f48f583c
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65674162"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263024"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -197,7 +197,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
   
    - \Microsoft.VC110.OPENMP\vcomp110.dll  
   
-5. Copie somente os seguintes arquivos da pasta \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ para o computador de build, conforme descrito em [Preparando um computador de teste para executar um executável de depuração](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a). Nenhum outro arquivo pode ser copiado.  
+5. Copie somente os seguintes arquivos da pasta \Debug_NonRedist\x86\ ou \Debug_NonRedist\x64\ para o computador de build, conforme descrito em [Preparando um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable). Nenhum outro arquivo pode ser copiado.  
   
    - \Microsoft.VC110.DebugCRT\msvcp110d.dll  
   
@@ -424,5 +424,5 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
          Para compilação de 64 bits nativa, aponte para o MSBuild de 64 bits.  
   
 ## <a name="see-also"></a>Consulte também  
- [Preparando um computador de teste para executar um executável de depuração](https://msdn.microsoft.com/library/f0400989-cc2e-4dce-9788-6bdbe91c6f5a)   
+ [Preparando um computador de teste para executar um executável de depuração](/cpp/windows/preparing-a-test-machine-to-run-a-debug-executable)   
  [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md)

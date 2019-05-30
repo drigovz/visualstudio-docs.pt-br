@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce | Microsoft Docs'
+title: Adicionar um fornecedor confiável para o computador cliente para aplicativos ClickOnce
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 426096670df1099568cadc2af68ae0ff50ca71e5
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407609"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263156"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce
 Com a implantação de aplicativos confiáveis, você pode configurar computadores cliente para que seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos executados com um nível mais alto de confiança, sem avisar o usuário. Os procedimentos a seguir mostram como usar a ferramenta de linha de comando CertMgr.exe para adicionar um certificado de editor para o repositório de editores confiáveis em um computador cliente.
@@ -38,7 +38,7 @@ Com a implantação de aplicativos confiáveis, você pode configurar computador
 
 1. Obter um certificado digital de uma autoridade de certificação.
 
-2. Exportar o certificado nos x. 509 Base64 (*. cer*) formato. Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportar o certificado nos x. 509 Base64 ( *. cer*) formato. Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Do prompt de comando em computadores cliente, execute o seguinte comando:
 
@@ -48,7 +48,7 @@ Com a implantação de aplicativos confiáveis, você pode configurar computador
 
 1. Obter um certificado digital de uma autoridade de certificação.
 
-2. Exportar o certificado nos x. 509 Base64 (*. cer*) formato. Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
+2. Exportar o certificado nos x. 509 Base64 ( *. cer*) formato. Para obter mais informações sobre formatos de certificado, consulte [exportar um certificado](http://go.microsoft.com/fwlink/?LinkId=164793).
 
 3. Do prompt de comando em computadores cliente, execute o seguinte comando:
 
