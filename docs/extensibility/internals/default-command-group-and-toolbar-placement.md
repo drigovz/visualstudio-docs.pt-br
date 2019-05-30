@@ -10,17 +10,17 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e84ca70383facc608740cd42a29c4ee769adb069
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c4445531b48b35de9b47d1b68478cf344bf31d2d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909885"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351647"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>Posicionamento de comando, grupo e barra de ferramentas padrão
 Para a uniformidade de produto e estabilidade, a interface do usuário exibe determinados grupos de comando por padrão, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece definições de comandos e grupos de comando. Os VSPackages também pode usar os comandos padrão e os grupos de comando.
