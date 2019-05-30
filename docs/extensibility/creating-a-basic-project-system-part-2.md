@@ -7,17 +7,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6dfcae8855c2bdb821f61be65de39282db87dfd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926710"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66336994"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Criar um sistema de projeto básico, parte 2
 A primeiro passo a passo desta série [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o passo a passo primeiro antes de iniciar este.
@@ -42,7 +42,7 @@ Este passo a passo ensina como realizar essas tarefas:
 ## <a name="create-a-visual-studio-template"></a>Criar um modelo do Visual Studio
 - [Criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md) mostra como criar um modelo de projeto básico e adicioná-lo para o sistema de projeto. Ele também mostra como registrar esse modelo com o Visual Studio usando o <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> atributo, que grava o caminho completo do *\\Templates\Projects\SimpleProject\\* pasta no sistema Registro.
 
-Usando um modelo do Visual Studio (*. vstemplate* arquivo) em vez de um modelo de projeto básico, você pode controlar como o modelo aparece na **novo projeto** caixa de diálogo e como são os parâmetros de modelo substituído. Um *. vstemplate* arquivo é um arquivo XML que descreve como arquivos de origem devem ser incluídas quando um projeto é criado usando o modelo de sistema do projeto. O próprio sistema de projeto é criado por meio da coleta a *. vstemplate* arquivo e os arquivos de origem em um *. zip* de arquivo e implantados copiando-o *. zip* para um local que é conhecido para o Visual Studio. Esse processo é explicado em mais detalhes posteriormente neste passo a passo.
+Usando um modelo do Visual Studio ( *. vstemplate* arquivo) em vez de um modelo de projeto básico, você pode controlar como o modelo aparece na **novo projeto** caixa de diálogo e como são os parâmetros de modelo substituído. Um *. vstemplate* arquivo é um arquivo XML que descreve como arquivos de origem devem ser incluídas quando um projeto é criado usando o modelo de sistema do projeto. O próprio sistema de projeto é criado por meio da coleta a *. vstemplate* arquivo e os arquivos de origem em um *. zip* de arquivo e implantados copiando-o *. zip* para um local que é conhecido para o Visual Studio. Esse processo é explicado em mais detalhes posteriormente neste passo a passo.
 
 1. Na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], abra a solução de SimpleProject que você criou seguindo [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md).
 
@@ -175,7 +175,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>Implantar um modelo do Visual Studio
-Modelos do Visual Studio não contêm informações de caminho. Portanto, o modelo *. zip* arquivo deve ser implantado em um local conhecido para o Visual Studio. O local da pasta ProjectTemplates é normalmente *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >*.
+Modelos do Visual Studio não contêm informações de caminho. Portanto, o modelo *. zip* arquivo deve ser implantado em um local conhecido para o Visual Studio. O local da pasta ProjectTemplates é normalmente *\Microsoft\VisualStudio\14.0Exp\ProjectTemplates < % LOCALAPPDATA % >* .
 
 Para implantar sua fábrica de projeto, o programa de instalação deve ter privilégios de administrador. Ela implanta modelos sob o nó de instalação do Visual Studio: *...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*.
 
@@ -207,7 +207,7 @@ Nós filho são criados alterando o arquivo de projeto e adicionando \<OutputSub
 
 Esta seção mostra como criar um nó filho do Console para o tipo de projeto SimpleProject.
 
-1. Renomeie o *\\Templates\Projects\SimpleProject\\* pasta a ser  *\\Templates\Projects\ConsoleApp\\*.
+1. Renomeie o *\\Templates\Projects\SimpleProject\\* pasta a ser  *\\Templates\Projects\ConsoleApp\\* .
 
 2. No **propriedades** janela, selecione todos os cinco arquivos na *\\Templates\Projects\ConsoleApp\\* pasta e verifique se o **Build Action**é definido como **ZipProject**.
 

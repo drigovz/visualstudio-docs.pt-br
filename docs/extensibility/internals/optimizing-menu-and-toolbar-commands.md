@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, implementing
 - toolbars [Visual Studio], commands
 ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42a3fb7b44f0e21c564bc9bef26d5aa158d43091
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c76e4f37fd77bd35526153bd86d419417a6cdb6
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62909327"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66333122"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>Otimizando os comandos do menu e da barra de ferramentas
 A adição de VSPackages e os comandos correspondentes para [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode fazer com que uma interface do usuário cheia. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece maneiras para ajudar a minimizar a confusão de comando de interface do usuário.

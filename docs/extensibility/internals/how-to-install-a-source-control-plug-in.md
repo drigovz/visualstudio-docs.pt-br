@@ -6,17 +6,17 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], source control plug-ins
 - source control plug-ins, installing
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2835ab64d5665c00c404294ec12019d2b981654
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9de10f1aebd47093a3cc3f41343e73cefdde473a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420520"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334921"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: Instalar um plug-in de controle do código-fonte
 Criando um controle de fonte plug-in envolve três etapas:
@@ -64,7 +64,7 @@ Criando um controle de fonte plug-in envolve três etapas:
 
 3. Adicionar a subchave **SourceCodeControlProvider**, sob o **HKEY_LOCAL_MACHINE** chave no **SOFTWARE** subchave.
 
-    Sob essa subchave, a entrada do registro **ProviderRegKey** é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nome da empresa\>\\< nome do produto \>*.
+    Sob essa subchave, a entrada do registro **ProviderRegKey** é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey** = *SOFTWARE\\< nome da empresa\>\\< nome do produto \>* .
 
     A seguir está o conteúdo de exemplo para essa subchave.
 
@@ -77,7 +77,7 @@ Criando um controle de fonte plug-in envolve três etapas:
 
 4. Crie uma subchave denominada **InstalledSCCProviders** sob o **SourceCodeControlProvider** subchave e, em seguida, colocar uma entrada sob essa subchave.
 
-    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome de exibição\>** = *SOFTWARE\\< empresa nome da\>\\< nome do produto\>*.
+    O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é **HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\< nome de exibição\>**  = *SOFTWARE\\< empresa nome da\>\\< nome do produto\>* .
 
     Por exemplo:
 

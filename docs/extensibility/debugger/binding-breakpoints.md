@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c36e5df52d4caa34d611f7f1c26b8a5187a637a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f861875e15a9051ab05d1b7398ea5902189830b
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926078"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332561"
 ---
 # <a name="bind-breakpoints"></a>Associar os pontos de interrupção
 Se o usuário define um ponto de interrupção, talvez, pressionando **F9**, o IDE Formula a solicitação e solicita que a sessão de depuração para criar o ponto de interrupção.

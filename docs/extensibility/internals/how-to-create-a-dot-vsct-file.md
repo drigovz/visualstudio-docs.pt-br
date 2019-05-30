@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, creating
 ms.assetid: b955f51c-f9f9-49c3-a8e4-63b6eb0e0341
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 95b085975a86db248517751fde7bd88c8bc2e35e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63418461"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66328753"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Como: Criar um arquivo. VSCT
 
@@ -45,7 +45,7 @@ Há várias maneiras para criar uma configuração de tabela do comando baseado 
 
 6. Na lista de esquemas XSD, selecione a *vsct.xsd* esquema. Se não estiver na lista, clique em **adicionar** e, em seguida, localize o arquivo em uma unidade local. Clique em **Okey** quando tiver terminado.
 
-7. No arquivo XML, digite *< CommandTable* e, em seguida, pressione **guia**. A marca de fechamento ao digitar *>*.
+7. No arquivo XML, digite *< CommandTable* e, em seguida, pressione **guia**. A marca de fechamento ao digitar *>* .
 
     Essa ação cria um basic *VSCT* arquivo.
 

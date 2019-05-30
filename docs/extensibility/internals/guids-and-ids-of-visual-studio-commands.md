@@ -9,17 +9,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf131fd6d7940458252e734ab0cc222f2e3a357
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89274600d05b787182ac447902555f7d703851c2
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860958"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66329183"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Comandos de GUIDs e IDs do Visual Studio
 Os valores GUID e ID dos comandos incluídos no ambiente de desenvolvimento integrado (IDE) do Visual Studio são definidos em arquivos. VSCT que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [definidos pelo IDE comandos, menus e grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -54,7 +54,7 @@ Os valores GUID e ID dos comandos incluídos no ambiente de desenvolvimento inte
 
 - Itens de menu que incluem um caractere de sublinhado, como o **Print** comando o **arquivo** menu, em que o *P* está sublinhado.
 
-     Caracteres que são precedidos por um e comercial (&) caractere em nomes de item de menu são exibidas como sublinhado. No entanto, *VSCT* arquivos são gravados em XML, que usa o caractere e comercial (&) para indicar caracteres especiais e requer que um e comercial a ser exibido deve ser escrito como  *&amp;amp;*. Portanto, em um *VSCT* arquivo, o **impressão** comando aparece como  *&amp;amp; Impressão*.
+     Caracteres que são precedidos por um e comercial (&) caractere em nomes de item de menu são exibidas como sublinhado. No entanto, *VSCT* arquivos são gravados em XML, que usa o caractere e comercial (&) para indicar caracteres especiais e requer que um e comercial a ser exibido deve ser escrito como  *&amp;amp;* . Portanto, em um *VSCT* arquivo, o **impressão** comando aparece como  *&amp;amp; Impressão*.
 
 - Comandos que contêm texto dinâmico, como **salve** \<nome do arquivo atual\>e gerado dinamicamente os itens de menu, como os itens no **arquivos recentes** lista.
 

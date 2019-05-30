@@ -4,16 +4,16 @@ ms.date: 06/25/2017
 ms.topic: conceptual
 ms.assetid: 2d6cf53c-011e-4c9e-9935-417edca8c486
 author: willbrown
-ms.author: gregvanl
+ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 1014d76473511df9b73cae371e5e5dea2364f8b2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62862778"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66324896"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: Fazer com que as extensões compatíveis com o Visual Studio 2017 e Visual Studio 2015
 
@@ -51,7 +51,7 @@ Este documento presume que você tenha os seguintes itens instalados em seu comp
 
 ## <a name="ensure-there-is-no-reference-to-projectjson"></a>Verifique se que não há nenhuma referência ao Project. JSON
 
-Neste documento, podemos irá inserir instruções de importação condicional para seu **. csproj* arquivo. Isso não funcionará se as referências de NuGet são armazenadas em *Project. JSON*. Como tal, é aconselhável para mover todas as referências de NuGet para o *Packages. config* arquivo.
+Neste documento, podemos irá inserir instruções de importação condicional para seu * *. csproj* arquivo. Isso não funcionará se as referências de NuGet são armazenadas em *Project. JSON*. Como tal, é aconselhável para mover todas as referências de NuGet para o *Packages. config* arquivo.
 Se o projeto contiver uma *Project. JSON* arquivo:
 
 * Anote as referências no *Project. JSON*.
