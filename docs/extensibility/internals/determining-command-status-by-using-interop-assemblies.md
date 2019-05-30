@@ -6,17 +6,17 @@ helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eab1768a44a85b2675a8bc2abf10f318a8902f94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 33efc0bf393746a80b0881dacae01eaafe65bb8e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861221"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351618"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>Determinar o status de comando usando assemblies de interoperabilidade
 Um VSPackage deve controlar do estado dos comandos que ele pode manipular. O ambiente não pode determinar quando um comando tratado dentro do seu VSPackage fica habilitado ou desabilitado. É responsabilidade do VSPackage para informar o ambiente sobre estados de comando, por exemplo, o estado do geral comandos como **Recortar**, **cópia**, e **colar**.

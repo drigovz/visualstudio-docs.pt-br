@@ -3,17 +3,17 @@ title: Criar uma extensão com uma janela de ferramentas | Microsoft Docs
 ms.date: 3/16/2019
 ms.topic: conceptual
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2741a7f9d27c303981ed4b179e3fe3d7cd63f020
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5a38c9912be87c94c79076675b5db25663fb5f0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926451"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66345442"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>Criar uma extensão com uma janela de ferramentas
 
@@ -27,7 +27,7 @@ Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **ja
 
 1. Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
-2. Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **MyWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta *MyWindow.cs*.
+2. Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **MyWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#**  > **extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta *MyWindow.cs*.
 
 3. Compile o projeto e comece a depuração.
 

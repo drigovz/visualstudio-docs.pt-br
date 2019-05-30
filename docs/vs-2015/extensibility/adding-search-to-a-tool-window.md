@@ -10,12 +10,12 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f565f4f8294fc7f1a467e20ad17a793dd3a09bae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 81043cc87dd659f14ec634dc14990956a0864f9b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097083"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263572"
 ---
 # <a name="adding-search-to-a-tool-window"></a>Adicionando a pesquisa a uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
      Na parte superior da janela de ferramentas, um controle de pesquisa é exibida com uma **pesquisa** marca d'água e um ícone de Lente de aumento. No entanto, a pesquisa não funciona ainda porque o processo de pesquisa não foi implementado.  
   
 ## <a name="to-add-the-search-implementation"></a>Para adicionar a implementação de pesquisa  
- Quando você habilita a pesquisa em um <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, como no procedimento anterior, a janela da ferramenta cria um host de pesquisa. Esse host configura e gerencia os processos de pesquisa, que sempre ocorrem em um thread em segundo plano. Porque o <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gerencia a criação de host de pesquisa e a configuração de backup da pesquisa, você só precisa criar uma tarefa de pesquisa e fornecer o método de pesquisa. O processo de pesquisa ocorre em um thread em segundo plano, e chamadas para o controle de janela da ferramenta ocorrerem no thread da interface do usuário. Portanto, você deve usar o <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> método para gerenciar todas as chamadas feitas ao lidar com o controle.  
+ Quando você habilita a pesquisa em um <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>, como no procedimento anterior, a janela da ferramenta cria um host de pesquisa. Esse host configura e gerencia os processos de pesquisa, que sempre ocorrem em um thread em segundo plano. Porque o <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> classe gerencia a criação de host de pesquisa e a configuração de backup da pesquisa, você só precisa criar uma tarefa de pesquisa e fornecer o método de pesquisa. O processo de pesquisa ocorre em um thread em segundo plano, e chamadas para o controle de janela da ferramenta ocorrerem no thread da interface do usuário. Portanto, você deve usar o [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) método para gerenciar todas as chamadas feitas ao lidar com o controle.  
   
 1. No arquivo TestSearch.cs, adicione o seguinte `using` instruções:  
   
@@ -160,7 +160,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
   
     - Substitui o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> método para criar uma tarefa de pesquisa.  
   
-    - Substitui o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> método para restaurar o estado da caixa de texto. Esse método é chamado quando um usuário cancela uma tarefa de pesquisa e quando um usuário define ou cancela a definição de opções ou filtros. Ambos <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> são chamados no thread da interface do usuário. Portanto, não é necessário acessar a caixa de texto por meio do <xref:Microsoft.VisualStudio.Shell.ThreadHelper.Invoke%2A> método.  
+    - Substitui o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> método para restaurar o estado da caixa de texto. Esse método é chamado quando um usuário cancela uma tarefa de pesquisa e quando um usuário define ou cancela a definição de opções ou filtros. Ambos <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.CreateSearch%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.ClearSearch%2A> são chamados no thread da interface do usuário. Portanto, não é necessário acessar a caixa de texto por meio das [ThreadHelper.Invoke*](https://msdn.microsoft.com/data/ee197798(v=vs.85)) método.  
   
     - Cria uma classe chamada `TestSearchTask` que herda de <xref:Microsoft.VisualStudio.Shell.VsSearchTask>, que fornece uma implementação padrão de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSearchTask>.  
   
@@ -532,7 +532,7 @@ Quando você cria ou atualiza uma janela de ferramentas em sua extensão, você 
   
 6. Escolha o filtro.  
   
-     A caixa de pesquisa contém **linhas: "mesmo"**, e os seguintes resultados são exibidos:  
+     A caixa de pesquisa contém **linhas: "mesmo"** , e os seguintes resultados são exibidos:  
   
      2 BOM  
   

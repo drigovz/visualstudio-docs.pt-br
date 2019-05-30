@@ -6,17 +6,17 @@ helpviewer_keywords:
 - project types, new
 - projects [Visual Studio SDK], new project types
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3d983da91fadbb0eb78eab6d0fa5bb02cca193
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 005765cb66a23f2efcf0c8defb323120d79bef60
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910001"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66314561"
 ---
 # <a name="create-project-types"></a>Criar tipos de projeto
 Você pode estender [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , criando um novo tipo de projeto. Para criar um novo tipo de projeto, você deve compreender os vários conceitos e concluir várias etapas. Os tópicos a seguir fornecem uma visão geral de como criar tipos de projeto.
@@ -57,7 +57,7 @@ Você pode estender [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]
 
 - [Instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- Mostra como conceder o VSPackage sua própria identidade exclusiva e como encapsular suas DLLs de VSPackage e outras informações em um pacote do Windows Installer (*. MSI* arquivo) para a implantação para seus clientes.
+ Mostra como conceder o VSPackage sua própria identidade exclusiva e como encapsular suas DLLs de VSPackage e outras informações em um pacote do Windows Installer ( *. MSI* arquivo) para a implantação para seus clientes.
 
 - [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

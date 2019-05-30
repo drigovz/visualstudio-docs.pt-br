@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], creating new types
 - project types, checklist for creating
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 807a44d88d2799c8390547a5ab576bdbca3c074a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 64e00c452f01c95046b4dc669dbd3bdd1517d287
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861746"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66309207"
 ---
 # <a name="checklist-create-new-project-types"></a>Lista de verificação: Criar novos tipos de projeto
 Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista de verificação a seguir fornece um guia para essas tarefas:
@@ -55,7 +55,7 @@ Você deve concluir várias tarefas para criar um novo tipo de projeto. A lista 
 
 7. Exibir seu projeto na **Project** guia da **adicionar referência** caixa de diálogo, definindo `VARIANT_TRUE` como o valor para `VSHPROPID_ShowProjInSolutionPage`. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>.
 
-8. Criar o Microsoft Installer (*. msi*) o arquivo para instalar seu VSPackages. Para obter mais informações, consulte [instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar um tipo de projeto](../../extensibility/internals/registering-a-project-type.md), e [VSPackages](../../extensibility/internals/vspackages.md).
+8. Criar o Microsoft Installer ( *. msi*) o arquivo para instalar seu VSPackages. Para obter mais informações, consulte [instalar VSPackages com o Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md), [registrar um tipo de projeto](../../extensibility/internals/registering-a-project-type.md), e [VSPackages](../../extensibility/internals/vspackages.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Hierarquias no Visual Studio](../../extensibility/internals/hierarchies-in-visual-studio.md)

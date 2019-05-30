@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Personalizando o comportamento de inserção, atualização e exclusão de classes de entidade'
+title: Personalizar o comportamento de inserção/atualização/exclusão de classes de entidade
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: e869ae13c9d7ec82cb4d70fb5f3c5fce355691d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565401"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262901"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizar o comportamento de inserção, atualização e exclusão de classes de entidade
 
@@ -85,7 +85,7 @@ Porque você está trabalhando com LINQ para classes SQL e exibindo os dados em 
 
 5. Clique no modelo **Classes LINQ to SQL** e digite **Northwind.dbml** na caixa **Nome**.
 
-6. Clique em **Adicionar**.
+6.  Clique em **Adicionar**.
 
      Um vazio arquivo LINQ to SQL Classes (**dbml**) é adicionado ao projeto e o **Relational Designer** é aberta.
 
@@ -195,7 +195,7 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 
 5. Na janela **Propriedades**, selecione a propriedade **Insert**.
 
-6. Clique nas reticências (**…**) ao lado de **Usar tempo de execução** para abrir a caixa de diálogo **Configurar Comportamento**.
+6. Clique nas reticências ( **…** ) ao lado de **Usar tempo de execução** para abrir a caixa de diálogo **Configurar Comportamento**.
 
 7. Selecione **Personalizar**.
 
@@ -214,10 +214,10 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 
      Inspecione a lista de **Argumentos de Método** e de **Propriedades de Classe** e observe que há dois **Argumentos de Método** e duas **Propriedades de Classe** para algumas colunas na tabela. Isso facilita controlar as alterações e criar as instruções que conferem a existência de violações de simultaneidade.
 
-13. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)**.
+13. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)** .
 
     > [!NOTE]
-    > Por padrão, os argumentos do método mapearão para as propriedades da classe quando os nomes corresponderem. Se os nomes de propriedade forem modificados e não corresponderem entre a tabela e a classe de entidade, poderá ser preciso selecionar a propriedade da classe equivalente para a qual mapear se o **Designer Relacional de Objetos** não puder determinar o mapeamento correto. Além disso, se os argumentos do método não tiverem propriedades da classe válidas para a qual mapear, você poderá definir o valor de **Propriedades de Classe** como **(Nenhum)**.
+    > Por padrão, os argumentos do método mapearão para as propriedades da classe quando os nomes corresponderem. Se os nomes de propriedade forem modificados e não corresponderem entre a tabela e a classe de entidade, poderá ser preciso selecionar a propriedade da classe equivalente para a qual mapear se o **Designer Relacional de Objetos** não puder determinar o mapeamento correto. Além disso, se os argumentos do método não tiverem propriedades da classe válidas para a qual mapear, você poderá definir o valor de **Propriedades de Classe** como **(Nenhum)** .
 
 14. Clique em **Aplicar** para salvar a configuração para a Classe e o Comportamento selecionados.
 
@@ -227,7 +227,7 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 
 17. Selecione o método **DeleteCustomers** na lista **Personalizar**.
 
-18. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)**.
+18. Mapeie o argumento do método **Original_CustomerID** para a propriedade de classe **CustomerID (Original)** .
 
 19. Clique em **OK**.
 
