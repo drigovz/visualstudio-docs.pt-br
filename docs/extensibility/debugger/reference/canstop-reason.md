@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CANSTOP_REASON enumeration
 ms.assetid: 6da944eb-36cd-4a8c-8d71-544c775cfcc1
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc4143c61a0223fe3940b4167748727d1ebd560
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 18861d7aa19281528e9a100f57399451194598a9
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711612"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327247"
 ---
 # <a name="canstopreason"></a>CANSTOP_REASON
 Usado para determinar se um programa pode interromper a execução depois de atingir um ponto específico na execução.
@@ -39,10 +42,12 @@ public enum enum_CANSTOP_REASON {
 };
 ```
 
-## <a name="members"></a>Membros
-CANSTOP_ENTRYPOINT Especifica o ponto de entrada de um determinado programa.
+## <a name="fields"></a>Campos
+`CANSTOP_ENTRYPOINT`\
+Especifica o ponto de entrada de um determinado programa.
 
-CANSTOP_STEPIN Especifica entrar em uma função.
+`CANSTOP_STEPIN`\
+Especifica a entrar em uma função.
 
 ## <a name="remarks"></a>Comentários
 Passado como um argumento para o [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) método para confirmar com a sessão de depuração SDM (Gerenciador de), se ele for okey parar depois de atingir o ponto de entrada do programa, ou depois de passar para uma função ou método.

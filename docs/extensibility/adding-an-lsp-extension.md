@@ -3,19 +3,19 @@ title: Adicionando uma extensão do protocolo de idioma do servidor | Microsoft 
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9b268c0c15ce468ca40a90583c5b7310364c189
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7518a9086d5923c7b6ad71f07227b76517934b56
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805107"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66352327"
 ---
-# <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão de protocolo de idioma do servidor
+# <a name="add-a-language-server-protocol-extension"></a>Adicionar uma extensão do Language Server Protocol
 
 A linguagem servidor protocolo LSP () é um protocolo comum, na forma de v 2.0 RPC de JSON, usada para fornecer recursos de serviço para vários editores de código de idioma. Usando o protocolo, os desenvolvedores podem escrever um servidor único idioma para fornecer serviço de linguagem recursos como IntelliSense, diagnósticos de erros, localizar todas as referências e assim por diante, para vários editores de código que dão suporte ao LSP. Tradicionalmente, os serviços de linguagem no Visual Studio podem ser adicionados usando os arquivos de gramática TextMate para fornecer funcionalidades básicas, como realce de sintaxe ou escrever serviços de linguagem personalizados que usam o conjunto completo de APIs de extensibilidade do Visual Studio para fornecer dados avançados. Com suporte do Visual Studio para LSP, há uma terceira opção.
 
@@ -139,7 +139,7 @@ O LSP não inclui a especificação sobre como fornecer a colorização do texto
 
 4. Clique com botão direito nos arquivos e selecione **propriedades**. Alterar o **compilar** ação a ser **conteúdo** e altere a **incluir em VSIX** propriedade **true**.
 
-Depois de concluir as etapas anteriores, uma *gramáticas* pasta foi adicionada à instalação do pacote diretório como uma fonte de repositório chamado 'MyLang' ('MyLang' é apenas um nome para a desambiguação e pode ser qualquer cadeia de caracteres exclusiva). Todas as gramáticas (*.tmlanguage* arquivos) e arquivos de tema (*. tmtheme* arquivos) nesse diretório são escolhidas como potenciais e substituem as gramáticas internos fornecidas com TextMate. Se as extensões declarado do arquivo de gramática corresponde à extensão do arquivo que está sendo aberto, TextMate será etapa.
+Depois de concluir as etapas anteriores, uma *gramáticas* pasta foi adicionada à instalação do pacote diretório como uma fonte de repositório chamado 'MyLang' ('MyLang' é apenas um nome para a desambiguação e pode ser qualquer cadeia de caracteres exclusiva). Todas as gramáticas ( *.tmlanguage* arquivos) e arquivos de tema ( *. tmtheme* arquivos) nesse diretório são escolhidas como potenciais e substituem as gramáticas internos fornecidas com TextMate. Se as extensões declarado do arquivo de gramática corresponde à extensão do arquivo que está sendo aberto, TextMate será etapa.
 
 ## <a name="create-a-simple-language-client"></a>Criar um cliente de uma linguagem simples
 

@@ -6,22 +6,22 @@ helpviewer_keywords:
 - installation [Visual Studio SDK], components
 - installation [Visual Studio SDK], file management
 ms.assetid: 029bffa2-6841-4caa-a41a-442467e1aedc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 477079cdb0349b2299b5cb829770800a4930958d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62910367"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66310015"
 ---
 # <a name="component-management"></a>Gerenciamento de componente
 Unidades de tarefas no instalador do Windows são chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para instalações que usam o Windows Installer.
 
- Embora você possa usar vários produtos para criar seu instalador VSPackage, essa discussão supõe o uso do Windows Installer (*. msi*) arquivos. Ao criar seu instalador, você deve gerenciar corretamente implantação de arquivos para que a contagem de referência correta ocorra em todos os momentos. Consequentemente, versões diferentes do seu produto não interferir com ou interromperá uns aos outros em uma mistura de instalação e desinstalação de cenários.
+ Embora você possa usar vários produtos para criar seu instalador VSPackage, essa discussão supõe o uso do Windows Installer ( *. msi*) arquivos. Ao criar seu instalador, você deve gerenciar corretamente implantação de arquivos para que a contagem de referência correta ocorra em todos os momentos. Consequentemente, versões diferentes do seu produto não interferir com ou interromperá uns aos outros em uma mistura de instalação e desinstalação de cenários.
 
  No Windows Installer, a contagem de referência ocorre no nível do componente. Cuidadosamente, você deve organizar seus recursos — arquivos, entradas do registro e assim por diante — em componentes. Há outros níveis da organização — como módulos, recursos e produtos — que pode ajudar em cenários diferentes. Para obter mais informações, consulte [Noções básicas do Windows Installer](../../extensibility/internals/windows-installer-basics.md).
 

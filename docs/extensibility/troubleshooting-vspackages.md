@@ -6,17 +6,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a21c8d547cb2167da018c13e788fe2c95bd504ac
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66338023"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.
@@ -60,13 +60,13 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Para solucionar problemas de um comando que não é visível ou que gera um erro quando você clica em um comando
 
-1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup.**.
+1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup.** .
 
 2. Certifique-se de que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode encontrar UI.dll para o VSPackage.
 
    1. Localize o CLSID do VSPackage na seção de pacotes do registro:
 
-        Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \packages.
+        Studio HKLM\Software\Microsoft\Visual\\ *\<versão >* \packages.
 
    2. Verifique se o caminho fornecido pela subchave SatelliteDll está correto.
 
@@ -119,7 +119,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 
 2. Para código não gerenciado, localize o CLSID do VSPackage no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] nó do Registro CLSID:
 
-    Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \CLSID
+    Studio HKLM\Software\Microsoft\Visual\\ *\<versão >* \CLSID
 
    Certifique-se de que a entrada InprocServer32 tem o caminho correto da dll VSPackage.
 

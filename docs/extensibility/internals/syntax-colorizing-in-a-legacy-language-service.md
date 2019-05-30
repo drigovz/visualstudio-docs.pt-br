@@ -8,17 +8,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: edbb7f2dca6bc0bc28a328276680dd9e273f4176
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429901"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66331142"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 Colorização de sintaxe é um recurso que faz com que os diferentes elementos de uma linguagem de programação a ser exibido em um arquivo de origem em diferentes cores e estilos. Para dar suporte a esse recurso, você precisa fornecer um analisador ou um scanner que pode identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas linguagens de distinguir as palavras-chave, delimitadores (por exemplo, parênteses ou chaves) e comentários por colori-los de maneiras diferentes.
@@ -34,7 +34,7 @@ Colorização de sintaxe é um recurso que faz com que os diferentes elementos d
  As informações de cores retornadas para o editor são um índice em uma lista de itens de coloração. Cada item que pode ser colorido Especifica um valor de cor e um conjunto de atributos de fonte, como negrito ou tachado. O editor fornece um conjunto de itens de coloração padrão que pode usar o seu serviço de linguagem. Tudo o que você precisa fazer é especificar o índice de cor apropriado para cada tipo de token. No entanto, você pode fornecer um conjunto de itens de coloração personalizados e os índices que você fornecer para tokens e sua própria lista de itens de coloração, em vez de lista padrão de referência. Você também deve definir a `RequestStockColors` entrada de registro como 0 (ou não especifique o `RequestStockColors` entrada em todos os) para dar suporte a cores personalizadas. Você pode definir essa entrada de registro com um parâmetro nomeado para o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo definido pelo usuário. Para obter mais informações sobre como registrar um serviço de linguagem e definir suas opções, consulte [registrar um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md).
 
 ## <a name="custom-colorable-items"></a>Itens personalizados que podem ser coloridos
- Para fornecer seus próprios itens de coloração personalizados, você deve substituir a <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> método o <xref:Microsoft.VisualStudio.Package.LanguageService> classe. O primeiro método retorna o número de itens de coloração personalizados que dá suporte a seu serviço de linguagem e a segunda obtém o item de coloração personalizado por índice. Você criar a lista padrão de itens de coloração personalizados. No construtor do seu serviço de linguagem, tudo o que você precisa fazer é fornecer a cada item que pode ser colorido com um nome. Visual Studio identifica automaticamente o caso em que o usuário seleciona um conjunto de itens de coloração diferente. Esse nome é o que aparece na **fontes e cores** página de propriedades na **opções** caixa de diálogo (disponível no Visual Studio **ferramentas** menu) e determina a quais esse nome cor de que um usuário tiver substituído. As opções do usuário são armazenadas em cache no registro e acessadas pelo nome de cor. O **fontes e cores** página de propriedades lista todos os nomes de cor em ordem alfabética, portanto, você pode agrupar suas cores personalizadas, precedendo cada nome de cor com seu nome de idioma; por exemplo, "**TestLanguage - comentário**"e"**TestLanguage - palavra-chave**". Ou você pode agrupar seu itens de coloração por tipo, "**comentário (TestLanguage)**"e"**palavra-chave (TestLanguage)**". O agrupamento por nome de idioma é preferencial.
+ Para fornecer seus próprios itens de coloração personalizados, você deve substituir a <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> método o <xref:Microsoft.VisualStudio.Package.LanguageService> classe. O primeiro método retorna o número de itens de coloração personalizados que dá suporte a seu serviço de linguagem e a segunda obtém o item de coloração personalizado por índice. Você criar a lista padrão de itens de coloração personalizados. No construtor do seu serviço de linguagem, tudo o que você precisa fazer é fornecer a cada item que pode ser colorido com um nome. Visual Studio identifica automaticamente o caso em que o usuário seleciona um conjunto de itens de coloração diferente. Esse nome é o que aparece na **fontes e cores** página de propriedades na **opções** caixa de diálogo (disponível no Visual Studio **ferramentas** menu) e determina a quais esse nome cor de que um usuário tiver substituído. As opções do usuário são armazenadas em cache no registro e acessadas pelo nome de cor. O **fontes e cores** página de propriedades lista todos os nomes de cor em ordem alfabética, portanto, você pode agrupar suas cores personalizadas, precedendo cada nome de cor com seu nome de idioma; por exemplo, "**TestLanguage - comentário**"e"**TestLanguage - palavra-chave**". Ou você pode agrupar seu itens de coloração por tipo, "**comentário (TestLanguage)** "e"**palavra-chave (TestLanguage)** ". O agrupamento por nome de idioma é preferencial.
 
 > [!CAUTION]
 > É altamente recomendável que você inclua o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido.

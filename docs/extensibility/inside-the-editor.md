@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - architecture
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 155d760ee546b1e35b733a00ac9a67722742f9b5
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62861759"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340799"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 
@@ -108,7 +108,7 @@ Um <xref:Microsoft.VisualStudio.Text.SnapshotPoint> representa uma posição de 
 
 #### <a name="spans-and-normalizedspancollections"></a>Intervalos e NormalizedSpanCollections
 
-Um <xref:Microsoft.VisualStudio.Text.Span> representa um intervalo que pode ser aplicado a um intervalo de texto em um instantâneo de texto. Posições de instantâneo são baseados em zero, então spans podem começar em qualquer posição incluindo zero. O `End` propriedade de uma extensão é igual à soma dos seus `Start` propriedade e seu `Length` propriedade. Um `Span` não inclui o caractere que é indexado pelo `End` propriedade. Por exemplo, um intervalo que tem início = 5 e comprimento = 3 tem fim = 8, e inclui os caracteres nas posições 5, 6 e 7. A notação para este alcance é 5..8).
+Um <xref:Microsoft.VisualStudio.Text.Span> representa um intervalo que pode ser aplicado a um intervalo de texto em um instantâneo de texto. Posições de instantâneo são baseados em zero, então spans podem começar em qualquer posição incluindo zero. O `End` propriedade de uma extensão é igual à soma dos seus `Start` propriedade e seu `Length` propriedade. Um `Span` não inclui o caractere que é indexado pelo `End` propriedade. Por exemplo, um intervalo que tem início = 5 e comprimento = 3 tem fim = 8, e inclui os caracteres nas posições 5, 6 e 7. A notação para este alcance é [5..8).
 
 Dois intervalos de interseção se eles tiverem qualquer posições em comum, incluindo a posição final. Portanto, a interseção de [3, 5) e [2, 7) é [3, 5) e a interseção de [3, 5) e [5, 7) é [5, 5). (Observe que [5, 5) é um intervalo vazio.)
 

@@ -7,17 +7,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc124c767ac9a84e62c17fb868e1dc114642f884
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62926413"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66349038"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Criar um controle de caixa de ferramentas do WPF
 
@@ -31,7 +31,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
 
 1. Crie um projeto do VSIX chamado `MyToolboxControl`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo pesquisando por "vsix".
 
-2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do WPF** modelo de item chamado `MyToolboxControl`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **controle de caixa de ferramentas do WPF**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
+2. Quando o projeto aberto, adicione uma **controle de caixa de ferramentas do WPF** modelo de item chamado `MyToolboxControl`. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#**  > **extensibilidade** e selecione **controle de caixa de ferramentas do WPF**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *MyToolboxControl.cs*.
 
     A solução agora contém um controle de usuário, uma `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> que adiciona o controle para o **caixa de ferramentas**e um **Microsoft.VisualStudio.ToolboxControl** entrada de ativo no manifesto do VSIX para  implantação.
 

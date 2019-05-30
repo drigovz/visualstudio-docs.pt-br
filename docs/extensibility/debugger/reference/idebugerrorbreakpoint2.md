@@ -7,17 +7,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugErrorBreakpoint2 interface
 ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c557a155c68b3a45e2b96aceee8ddcfcaa1d82e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 2f25187b2aa88153fcfd712b9dd4b0f651ba8860
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62874634"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327793"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 Essa interface representa um erro ou um ponto de interrupção de aviso, como um local inválido, uma expressão inválida ou os motivos por que o ponto de interrupção pendente não vinculado (código de não carregado ainda, e assim por diante).

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_PROPERTY_INFO structure
 ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11facd5b7de76aa407ef28366b789870cdad03c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7804cfad48d5029e16619b5ae524fa6e761f11b4
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710052"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346177"
 ---
 # <a name="debugpropertyinfo"></a>DEBUG_PROPERTY_INFO
 Contém informações sobre uma propriedade de depuração.
@@ -49,19 +52,26 @@ public struct DEBUG_PROPERTY_INFO {
 ```
 
 ## <a name="members"></a>Membros
-dwValidFields uma combinação de sinalizadores dos [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeração que especifica quais campos são preenchidos.
+`dwValidFields`\
+Uma combinação de sinalizadores do [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) enumeração que especifica quais campos são preenchidos.
 
-bstrFullName o nome completo da propriedade.
+`bstrFullName`\
+O nome completo da propriedade.
 
-o nome da propriedade dentro de um contexto de bstrName.
+`bstrName`\
+O nome da propriedade dentro de um contexto.
 
-Digite bstrType a propriedade como uma cadeia de caracteres formatada.
+`bstrType`\
+O tipo de propriedade como uma cadeia de caracteres formatada.
 
-bstrValue o valor da propriedade como uma cadeia de caracteres formatada.
+`bstrValue`\
+O valor da propriedade como uma cadeia de caracteres formatada.
 
-pProperty a [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto descrito por essa estrutura.
+`pProperty`\
+O [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objeto descrito por essa estrutura.
 
-dwAttrib uma combinação de sinalizadores dos [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeração que descreve os atributos desta propriedade.
+`dwAttrib`\
+Uma combinação de sinalizadores do [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeração que descreve os atributos desta propriedade.
 
 ## <a name="remarks"></a>Comentários
 Uma propriedade é um objeto de uma natureza hierárquica que tem um nome, tipo e valor. Por exemplo, uma propriedade pode descrever as variáveis locais, parâmetros, inspecionar variáveis e expressões e registros.

@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DEBUG_REFERENCE_INFO structure
 ms.assetid: 24b83d00-d756-42a1-8083-730f998761dc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c82e1d3894b9fa3ffbdffb5ab69c134ff73e0df7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: c22ab1a7d0cb03f66455f76c1d9878a9df76604e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720283"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346138"
 ---
 # <a name="debugreferenceinfo"></a>DEBUG_REFERENCE_INFO
 Descreve uma referência.
@@ -49,19 +52,26 @@ public struct DEBUG_REFERENCE_INFO {
 ```
 
 ## <a name="members"></a>Membros
-dwFields uma combinação de sinalizadores dos [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeração que especifica quais campos são preenchidos.
+`dwFields`\
+Uma combinação de sinalizadores do [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) enumeração que especifica quais campos são preenchidos.
 
-bstrName o usuário especificado pelo nome da [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto.
+`bstrName`\
+O nome especificado pelo usuário da [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto.
 
-bstrType a referência de tipo como uma cadeia de caracteres formatada.
+`bstrType`\
+O tipo de referência como uma cadeia de caracteres formatada.
 
-o valor de referência como uma cadeia de caracteres formatada de bstrValue
+`bstrValue`\
+O valor de referência como uma cadeia de caracteres formatada
 
-dwAttrib uma combinação de sinalizadores dos [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeração que especifica os sinalizadores para os atributos de propriedade de depuração.
+`dwAttrib`\
+Uma combinação de sinalizadores do [DBG_ATTRIB_FLAGS](../../../extensibility/debugger/reference/dbg-attrib-flags.md) enumeração que especifica os sinalizadores para os atributos de propriedade de depuração.
 
-valor dwRefType A partir de [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeração que especifica se o tipo de referência é forte ou fraca.
+`dwRefType`\
+Um valor a partir de [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) enumeração que especifica se o tipo de referência é forte ou fraca.
 
-m_pReference uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que especifica as informações de referência.
+`m_pReference`\
+Uma [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) objeto que especifica as informações de referência.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é passada para uma chamada para o [GetReferenceInfo](../../../extensibility/debugger/reference/idebugreference2-getreferenceinfo.md) método a ser preenchido. Essa estrutura também é retornada como parte de uma lista a partir de [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md) interface que, por sua vez, é retornado de uma chamada para o [EnumChildren](../../../extensibility/debugger/reference/idebugreference2-enumchildren.md) método.

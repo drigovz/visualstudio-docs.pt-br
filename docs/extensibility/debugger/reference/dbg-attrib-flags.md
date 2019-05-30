@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DBGPROP_ATTRIB_FLAGS enumerations
 ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831d1326d88e70ffaba2cc0c242c55d7325be705
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fde7ac384a6b2de293fc9baf0075438c9c609236
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689324"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346294"
 ---
 # <a name="dbgattribflags"></a>DBG_ATTRIB_FLAGS
 Descreve vários atributos para um [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) ou um [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) interface. Membro de [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) estrutura.
@@ -163,98 +166,142 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ```
 
 ## <a name="members"></a>Membros
- DBG_ATTRIB_NONE não indica nenhum atributo.
+ `DBG_ATTRIB_NONE`\
+ Indica nenhum atributo.
 
- DBG_ATTRIB_ALL indica todos os atributos.
+ `DBG_ATTRIB_ALL`\
+ Indica que todos os atributos.
 
- DBG_ATTRIB_OBJ_IS_EXPANDABLE indica que a propriedade ou referência tem filhos.
+ `DBG_ATTRIB_OBJ_IS_EXPANDABLE`\
+ Indica que a propriedade ou referência tem filhos.
 
- DBG_ATTRIB_OBJ_HAS_ID indica que uma ID para esse objeto foi criada.
+ `DBG_ATTRIB_OBJ_HAS_ID`\
+ Indica que uma ID para esse objeto foi criada.
 
- DBG_ATTRIB_OBJ_CAN_HAVE_ID indica que uma ID para esse objeto pode ser criada.
+ `DBG_ATTRIB_OBJ_CAN_HAVE_ID`\
+ Indica que uma ID para esse objeto pode ser criada.
 
- DBG_ATTRIB_VALUE_READONLY indica que o valor é somente leitura.
+ `DBG_ATTRIB_VALUE_READONLY`\
+ Indica que o valor é somente leitura.
 
- DBG_ATTRIB_VALUE_ERROR indica que o valor é um erro.
+ `DBG_ATTRIB_VALUE_ERROR`\
+ Indica que o valor é um erro.
 
- DBG_ATTRIB_VALUE_SIDE_EFFECT indica que a avaliação de um efeito colateral.
+ `DBG_ATTRIB_VALUE_SIDE_EFFECT`\
+ Indica que a avaliação teve um efeito colateral.
 
- DBG_ATTRIB_OVERLOADED_CONTAINER indica que essa propriedade é realmente um contêiner de sobrecargas.
+ `DBG_ATTRIB_OVERLOADED_CONTAINER`\
+ Indica que essa propriedade é realmente um contêiner de sobrecargas.
 
- DBG_ATTRIB_VALUE_BOOLEAN indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano.
+ `DBG_ATTRIB_VALUE_BOOLEAN`\
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano.
 
- DBG_ATTRIB_VALUE_BOOLEAN_TRUE indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano e `TRUE`.
+ `DBG_ATTRIB_VALUE_BOOLEAN_TRUE`\
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é booliano e `TRUE`.
 
- DBG_ATTRIB_VALUE_INVALID indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` não é válido.
+ `DBG_ATTRIB_VALUE_INVALID`\
+ Indica que o valor no `DEBUG_PROPERTY_INFO::bstrValue` não é válido.
 
- DBG_ATTRIB_VALUE_NAT indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é "*nada*" (NAT). NAT descreve um sinalizador de registro em processadores Intel de 64 bits que indica exceções especulativas adiadas.
+ `DBG_ATTRIB_VALUE_NAT`\
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` é "*nada*" (NAT). NAT descreve um sinalizador de registro em processadores Intel de 64 bits que indica exceções especulativas adiadas.
 
- DBG_ATTRIB_VALUE_AUTOEXPANDED indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` possivelmente foi expandido para automático.
+ `DBG_ATTRIB_VALUE_AUTOEXPANDED`\
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` possivelmente foi expandido para automático.
 
- DBG_ATTRIB_VALUE_TIMEOUT indica que uma avaliação foi excedido.
+ `DBG_ATTRIB_VALUE_TIMEOUT`\
+ Indica que uma avaliação foi excedido.
 
- DBG_ATTRIB_VALUE_RAW_STRING indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` pode ser representado por uma cadeia de caracteres bruta.
+ `DBG_ATTRIB_VALUE_RAW_STRING`\
+ Indica que o valor em `DEBUG_PROPERTY_INFO::bstrValue` pode ser representado por uma cadeia de caracteres bruta.
 
- DBG_ATTRIB_VALUE_CUSTOM_VIEWER indica que essa propriedade tem pelo menos um visualizador personalizado associado a ele.
+ `DBG_ATTRIB_VALUE_CUSTOM_VIEWER`\
+ Indica que essa propriedade tem pelo menos um visualizador personalizado associado a ele.
 
- DBG_ATTRIB_ACCESS_NONE indica um objeto que não possui `public`, `private`, nem `protected` tipo de acesso.
+ `DBG_ATTRIB_ACCESS_NONE`\
+ Indica um objeto que não possui `public`, `private`, nem `protected` tipo de acesso.
 
- DBG_ATTRIB_ACCESS_PUBLIC indica um objeto que tem acesso público.
+ `DBG_ATTRIB_ACCESS_PUBLIC`\
+ Indica um objeto que tem acesso público.
 
- DBG_ATTRIB_ACCESS_PRIVATE indica um objeto que tem acesso privado.
+ `DBG_ATTRIB_ACCESS_PRIVATE`\
+ Indica um objeto que tem acesso privado.
 
- DBG_ATTRIB_ACCESS_PROTECTED indica um objeto que tenha acesso protegido.
+ `DBG_ATTRIB_ACCESS_PROTECTED`\
+ Indica um objeto que tem acesso protegido.
 
- DBG_ATTRIB_ACCESS_FINAL indica um objeto que tem acesso final.
+ `DBG_ATTRIB_ACCESS_FINAL`\
+ Indica um objeto que tem acesso final.
 
- Atributos de máscara DBG_ATTRIB_ACCESS_ALL para extrair o acesso de `DBG_ATTRIB_FLAGS`.
+ `DBG_ATTRIB_ACCESS_ALL`\
+ Máscara para extrair os atributos de acesso de `DBG_ATTRIB_FLAGS`.
 
- DBG_ATTRIB_STORAGE_NONE indica que não há nenhum tipo de armazenamento especificado.
+ `DBG_ATTRIB_STORAGE_NONE`\
+ Indica que não há nenhum tipo de armazenamento especificado.
 
- Indica DBG_ATTRIB_STORAGE_GLOBAL armazenamento global.
+ `DBG_ATTRIB_STORAGE_GLOBAL`\
+ Indica o armazenamento global.
 
- Armazenamento estático DBG_ATTRIB_STORAGE_STATIC indica.
+ `DBG_ATTRIB_STORAGE_STATIC`\
+ Indica o armazenamento estático.
 
- Armazenamento DBG_ATTRIB_STORAGE_REGISTER indica no registro.
+ `DBG_ATTRIB_STORAGE_REGISTER`\
+ Indica o armazenamento no registro.
 
- Máscara de DBG_ATTRIB_STORAGE_ALL para extrair o armazenamento de atributos de `DBG_ATTRIB_FLAGS`.
+ `DBG_ATTRIB_STORAGE_ALL`\
+ Máscara para extrair os atributos de armazenamento do `DBG_ATTRIB_FLAGS`.
 
- DBG_ATTRIB_TYPE_NONE indica que não há nenhum modificador de tipo.
+ `DBG_ATTRIB_TYPE_NONE`\
+ Indica que não há nenhum modificador de tipo.
 
- DBG_ATTRIB_TYPE_VIRTUAL indica que o tipo de objeto é virtual.
+ `DBG_ATTRIB_TYPE_VIRTUAL`\
+ Indica que o tipo de objeto é virtual.
 
- DBG_ATTRIB_TYPE_CONSTANT indica que o tipo de objeto é constante.
+ `DBG_ATTRIB_TYPE_CONSTANT`\
+ Indica que o tipo de objeto é constante.
 
- DBG_ATTRIB_TYPE_SYNCHRONIZED indica que o tipo de objeto é sincronizado.
+ `DBG_ATTRIB_TYPE_SYNCHRONIZED`\
+ Indica que o tipo de objeto é sincronizado.
 
- DBG_ATTRIB_TYPE_VOLATILE indica que o tipo de objeto é volátil.
+ `DBG_ATTRIB_TYPE_VOLATILE`\
+ Indica que o tipo de objeto é volátil.
 
- Máscara de DBG_ATTRIB_TYPE_ALL para extrair o tipo de atributos de `DBG_ATTRIB_FLAGS`.
+ `DBG_ATTRIB_TYPE_ALL`\
+ Máscara para extrair os atributos de tipo de `DBG_ATTRIB_FLAGS`.
 
- DBG_ATTRIB_DATA indica que esse objeto é um campo de dados.
+ `DBG_ATTRIB_DATA`\
+ Indica que esse objeto é um campo de dados.
 
- DBG_ATTRIB_METHOD indica que esse objeto é um método.
+ `DBG_ATTRIB_METHOD`\
+ Indica que esse objeto é um método.
 
- DBG_ATTRIB_PROPERTY indica que esse objeto é uma propriedade.
+ `DBG_ATTRIB_PROPERTY`\
+ Indica que esse objeto é uma propriedade.
 
- DBG_ATTRIB_CLASS indica que esse objeto é uma classe.
+ `DBG_ATTRIB_CLASS`\
+ Indica que esse objeto é uma classe.
 
- DBG_ATTRIB_BASECLASS indica que esse objeto é uma classe base.
+ `DBG_ATTRIB_BASECLASS`\
+ Indica que esse objeto é uma classe base.
 
- DBG_ATTRIB_INTERFACE indica que esse objeto é uma interface.
+ `DBG_ATTRIB_INTERFACE`\
+ Indica que esse objeto é uma interface.
 
- DBG_ATTRIB_INNERCLASS indica que esse objeto é uma classe interna.
+ `DBG_ATTRIB_INNERCLASS`\
+ Indica que esse objeto é uma classe interna.
 
- DBG_ATTRIB_MOSTDERIVED indica que esse objeto é '*mais derivado*'. O termo "*mais derivado*" significa que o tipo real do objeto e não o tipo de sua referência.
+ `DBG_ATTRIB_MOSTDERIVED`\
+ Indica que esse objeto é '*mais derivado*'. O termo "*mais derivado*" significa que o tipo real do objeto e não o tipo de sua referência.
 
- DBG_ATTRIB_CHILD_ALL indica uma máscara de `DBG_ATTRIB_DATA` por meio de `DBG_ATTRIB_MOSTDERIVED`.
+ `DBG_ATTRIB_CHILD_ALL`\
+ Indica uma máscara de `DBG_ATTRIB_DATA` por meio de `DBG_ATTRIB_MOSTDERIVED`.
 
- DBG_ATTRIB_MULTI_CUSTOM_VIEWERS indica que o objeto tem vários visualizadores personalizados associados a ele.
+ `DBG_ATTRIB_MULTI_CUSTOM_VIEWERS`\
+ Indica que o objeto tem vários visualizadores personalizados associados a ele.
 
 ## <a name="remarks"></a>Comentários
 
 > [!NOTE]
->  Os valores nesta enumeração, na verdade, não são definidos no assembly para C#. Em vez disso, você deve copiar as definições para seu arquivo de origem.
+> Os valores nesta enumeração, na verdade, não são definidos no assembly para c#. Em vez disso, você deve copiar as definições para seu arquivo de origem.
 
  Esses sinalizadores também são usados para filtrar o filho de um objeto, por exemplo, quando passado como um argumento para [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Os valores podem ser combinados com um bit a bit `OR`.
 

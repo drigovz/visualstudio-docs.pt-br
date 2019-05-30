@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - CONTEXT_INFO structure
 ms.assetid: 6b513f4e-e7b0-4969-adf0-2205ccc1e09b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41a155fb3a85bcb9f0b0e5eae461f2ae172c7e2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6c50d5ea930f05d22b68416978909cceca17727d
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709974"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66346460"
 ---
 # <a name="contextinfo"></a>CONTEXT_INFO
 Essa estrutura descreve um contexto de memória ou o contexto de código.
@@ -49,19 +52,26 @@ public struct CONTEXT_INFO {
 ```
 
 ## <a name="members"></a>Membros
-dwFields uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos<strong>.</strong>
+`dwFields`\
+Uma combinação de sinalizadores de ele [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) enumeração que especifica quais campos são preenchidos<strong>.</strong>
 
-bstrModuleUrl o nome do módulo no qual o contexto está localizado.
+`bstrModuleUrl`\
+O nome do módulo no qual o contexto está localizado.
 
-o nome da função onde se encontra o contexto de bstrFunction.
+`bstrFunction`\
+O nome da função onde se encontra o contexto.
 
-Um de posFunctionOffset [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que identifica o deslocamento de linha e coluna da função associada com o contexto de código.
+`posFunctionOffset`\
+Um [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) estrutura que identifica o deslocamento de linha e coluna da função associada com o contexto de código.
 
-bstrAddress o endereço no código onde se encontra o contexto determinado.
+`bstrAddress`\
+O endereço no código onde se encontra o contexto determinado.
 
-bstrAddressOffset o deslocamento do endereço no código onde se encontra o contexto determinado.
+`bstrAddressOffset`\
+O deslocamento do endereço no código onde se encontra o contexto determinado.
 
-bstrAddressAbsolute o endereço absoluto na memória onde se encontra o contexto determinado.
+`bstrAddressAbsolute`\
+O endereço absoluto na memória onde se encontra o contexto determinado.
 
 ## <a name="remarks"></a>Comentários
 Essa estrutura é retornada de uma chamada para o [GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md) método.

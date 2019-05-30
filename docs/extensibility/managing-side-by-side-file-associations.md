@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, setting default
 ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b5d389ea97c9a77fe859a4029e4447adf76624e3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907247"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340662"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gerenciar associações de arquivo lado a lado
 
@@ -51,7 +51,7 @@ Se você quiser vários VSPackages lado a lado para usar a mesma extensão, voc�
 
   **Linhas da tabela CustomAction que determinam a versão mais recente do Visual Studio**
 
-  |Ação|Tipo|Source|Destino|
+  |Ação|Tipo|Origem|Destino|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|

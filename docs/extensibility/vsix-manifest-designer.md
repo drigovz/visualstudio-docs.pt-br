@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsix manifest
 - manifest designer
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7c13d32ab6b91dce94bab307f6bbc6744f9c17a0
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411122"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322846"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instalação para uma extensão do Visual Studio.
@@ -60,15 +60,15 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
 
   **Licença** Especifica o arquivo de texto que contém a licença de usuário, caso haja algum.
 
-  **Ícone** Especifica o arquivo gráfico (*. PNG*, *bmp*, *JPEG*, *. ico*) que contém o ícone a ser exibido em **Extension Manager**, se houver um ícone. A imagem de ícone deve ter 32 x 32 pixels ou ele é redimensionado para essas dimensões. Se nenhum ícone for especificado, **Extension Manager** usa um ícone padrão.
+  **Ícone** Especifica o arquivo gráfico ( *. PNG*, *bmp*, *JPEG*, *. ico*) que contém o ícone a ser exibido em **Extension Manager**, se houver um ícone. A imagem de ícone deve ter 32 x 32 pixels ou ele é redimensionado para essas dimensões. Se nenhum ícone for especificado, **Extension Manager** usa um ícone padrão.
 
-  **Imagem de visualização** Especifica o arquivo gráfico (*. PNG*, *bmp*, *JPEG*, *. ico*) que contém a imagem de visualização para ser exibido no **Extension Manager**, se houver uma imagem de visualização. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, **Extension Manager** usa uma imagem padrão.
+  **Imagem de visualização** Especifica o arquivo gráfico ( *. PNG*, *bmp*, *JPEG*, *. ico*) que contém a imagem de visualização para ser exibido no **Extension Manager**, se houver uma imagem de visualização. A imagem de visualização deve ser 200 x 200 pixels. Se nenhuma imagem de visualização for especificada, **Extension Manager** usa uma imagem padrão.
 
   **Marcas** adiciona marcas de texto a ser usado para dicas de pesquisa.
 
-  **Notas de versão** Especifica um arquivo (*. txt*, *. rtf*) que contém as notas de versão. Também usa a URL de um site da Web que exibe as notas de versão.
+  **Notas de versão** Especifica um arquivo ( *. txt*, *. rtf*) que contém as notas de versão. Também usa a URL de um site da Web que exibe as notas de versão.
 
-  **Guia de Introdução** Especifica um arquivo (*. txt*, *. rtf*) que contém informações sobre como usar a extensão ou o conteúdo no pacote VSIX. Este guia é exibida quando a instalação da extensão estiver concluída. Também usa a URL de um site da Web que exibe o guia.
+  **Guia de Introdução** Especifica um arquivo ( *. txt*, *. rtf*) que contém informações sobre como usar a extensão ou o conteúdo no pacote VSIX. Este guia é exibida quando a instalação da extensão estiver concluída. Também usa a URL de um site da Web que exibe o guia.
 
   **URL de informações adicionais** Especifica a URL de um site que contém informações adicionais sobre o produto.
 
@@ -94,7 +94,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
 
   **Este VSIX está instalado para todos os usuários (exige a elevação de instalação)** se você selecionar essa caixa de seleção, a extensão está instalada para todos os usuários; caso contrário, ele é instalado apenas para o usuário atual.
 
-  **Este VSIX é instalado pelo instalador do Windows** se você selecionar essa caixa de seleção, a extensão é instalada pelo instalador do Windows (*. msi* arquivo); caso contrário, ele é instalado como um pacote VSIX típico (*. VSIX*  arquivo).
+  **Este VSIX é instalado pelo instalador do Windows** se você selecionar essa caixa de seleção, a extensão é instalada pelo instalador do Windows ( *. msi* arquivo); caso contrário, ele é instalado como um pacote VSIX típico ( *. VSIX*  arquivo).
 
   O **ativos** guia contém os seguintes controles.
 

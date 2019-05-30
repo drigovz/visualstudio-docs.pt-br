@@ -3,17 +3,17 @@ title: Gerenciamento de projetos do Windows Universal | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28f6cf6424799cfbe68734d8fa077eea3c2b2c1a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39ab595bd607f8530f899ca803a0dfeaa5178542
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62907037"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340553"
 ---
 # <a name="manage-universal-windows-projects"></a>Gerenciar projetos Windows Universal
 
@@ -293,7 +293,7 @@ A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Cen
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal c# na instância experimental (na **novo projeto** caixa de diálogo **Visual c#** > **Windows**  >   **Windows 8** > **Universal** > **aplicativo de Hub**). Depois que a solução for carregada, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:
+16. Agora tente. Pressione F5 para iniciar a instância experimental. Criar um projeto de aplicativo de hub universal c# na instância experimental (na **novo projeto** caixa de diálogo **Visual c#**  > **Windows**  >   **Windows 8** > **Universal** > **aplicativo de Hub**). Depois que a solução for carregada, vá para o **ferramentas** menu e clique em **TestUniversalProject invocar**e, em seguida, verifique o texto **saída** painel. Você deverá ver algo como o seguinte:
 
     ```
     Found shared project: HubApp.Shared

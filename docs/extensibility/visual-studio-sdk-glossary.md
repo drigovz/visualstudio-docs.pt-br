@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - glossary [Visual Studio SDK]
 ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6157b4bc3537a4f88feb91d512241451b8324ba7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c5aa8398f3a102031c3a40074f76557ef311d4d7
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838900"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66322415"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Glossário do Visual Studio SDK
 Este glossário fornece definições para termos que são usados no [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] documentação.
@@ -73,7 +73,7 @@ Este glossário fornece definições para termos que são usados no [!INCLUDE[vs
 
   componente do componente independente de nível superior A que usa uma janela de nível superior sem janela restrita e pode operar efetivamente como uma janela de aplicativo autônomo, mas é implementado como um objeto em processo. Portanto, um componente independente de nível superior deve coordenar modalidade e serviços de loop de mensagem com o IDE. Objetos em processo não tem seu próprio loop de mensagem.
 
-  provedor de informações do provedor de informações é um módulo que pode pesquisar palavras-chave e retornar uma lista de tópicos, na forma de `IVsUserContextItem` objetos. Para fornecer **F1** e itens de palavra-chave de pesquisa para o provedor de informações, registrar o seu arquivo de Ajuda compilado (*. Nos formatos HxS*) com o sistema. Os tópicos de ajuda nesses arquivos fornecem a lista de tópicos exibidos na janela Ajuda dinâmica e mostra se um usuário pressiona **F1**.
+  provedor de informações do provedor de informações é um módulo que pode pesquisar palavras-chave e retornar uma lista de tópicos, na forma de `IVsUserContextItem` objetos. Para fornecer **F1** e itens de palavra-chave de pesquisa para o provedor de informações, registrar o seu arquivo de Ajuda compilado ( *. Nos formatos HxS*) com o sistema. Os tópicos de ajuda nesses arquivos fornecem a lista de tópicos exibidos na janela Ajuda dinâmica e mostra se um usuário pressiona **F1**.
 
   in loco componente VSPackage de um objeto que implementa o `IOleInPlaceComponent` interface para gerenciar uma janela que visualmente está contida dentro de uma janela de documentos pertencente a IDE. Componentes no local não participam padrão OLE-mesclagem de menu; em vez disso, eles integram seus elementos de interface do usuário do IDE.
 

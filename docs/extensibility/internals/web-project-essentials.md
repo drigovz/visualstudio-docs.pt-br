@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3ddc8bcef8612459ce9816e79250ba8b93194292
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63429348"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66323309"
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos do projeto Web
 Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para criar um aplicativo Web que tem inteligentes páginas da Web. Uma página da Web inteligente tem o código do lado do servidor que processa a página da Web sob demanda.
@@ -32,7 +32,7 @@ Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para cr
 
   - Um projeto de aplicativo Web (WAP) produz um único arquivo executável que combina o código para todas as páginas da Web inteligentes, bem como todos os arquivos de origem na pasta /App_Code.
 
-- O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, arquivos de solução estão localizados em \Documents and Settings\\*Suaconta*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.
+- O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, arquivos de solução estão localizados em \Documents and Settings\\*Suaconta*\My Documents\\ *\<Visual Studio # # # >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
   > Se você quiser manter o arquivo de solução com o site da Web, movê-lo lá e reabri-lo.

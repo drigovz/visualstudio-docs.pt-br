@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_PASSCOUNT_STYLE structure
 ms.assetid: 0a647047-e2d5-4724-a0b8-68108425ecad
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 809c63fe536166efe0779cd4e4dc0149b219390a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 4ea44ef70ba086a58454891987711ce7cca643e8
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686048"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66353058"
 ---
 # <a name="bppasscountstyle"></a>BP_PASSCOUNT_STYLE
 Especifica a condição associada com a contagem de passagem do ponto de interrupção que faz com que o ponto de interrupção seja acionado.
@@ -43,14 +46,18 @@ public enum enum_BP_PASSCOUNT_STYLE {
 };
 ```
 
-## <a name="members"></a>Membros
-BP_PASSCOUNT_NONE não especifica nenhum estilo de contagem de passagem do ponto de interrupção.
+## <a name="fields"></a>Campos
+`BP_PASSCOUNT_NONE`\
+Não especifica nenhum estilo de contagem de passagem do ponto de interrupção.
 
-BP_PASSCOUNT_EQUAL define o estilo de contagem de passagem de ponto de interrupção a ser igual. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual a contagem de passagem.
+`BP_PASSCOUNT_EQUAL`\
+Define o estilo de contagem de passagem de ponto de interrupção para ser igual. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual a contagem de passagem.
 
-BP_PASSCOUNT_EQUAL_OR_GREATER define o estilo de contagem de passagem do ponto de interrupção para igual ou maior. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual ou maior que a contagem de passagem.
+`BP_PASSCOUNT_EQUAL_OR_GREATER`\
+Define o estilo de contagem de passagem do ponto de interrupção para igual ou maior. O ponto de interrupção é disparado quando o número de vezes que o ponto de interrupção é atingido é igual ou maior que a contagem de passagem.
 
-BP_PASSCOUNT_MOD Especifica uma contagem de aprovações de módulo. Por exemplo, se a contagem de passagem é do tipo `BP_PASSCOUNT_MOD` e o valor de contagem de passagem é 4, o ponto de interrupção é disparado sempre que a contagem de ocorrências for um múltiplo de 4.
+`BP_PASSCOUNT_MOD`\
+Especifica uma contagem de aprovações de módulo. Por exemplo, se a contagem de passagem é do tipo `BP_PASSCOUNT_MOD` e o valor de contagem de passagem é 4, o ponto de interrupção é disparado sempre que a contagem de ocorrências for um múltiplo de 4.
 
 ## <a name="remarks"></a>Comentários
 Usado para o `stylePassCount` membro do [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) que por sua vez é um membro da estrutura a [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) e [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) estruturas.

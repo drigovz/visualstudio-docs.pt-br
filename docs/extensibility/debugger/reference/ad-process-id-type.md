@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - AD_PROCESS_ID_TYPE enumeration
 ms.assetid: 0aab80e9-285a-4697-94ac-c864d42a6aaa
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 405d11b0c685017d59251ba83126a73fe1a96db2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: a9df097037a84af9da63f0a98ee6cfa3b28cfcdd
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708960"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351384"
 ---
 # <a name="adprocessidtype"></a>AD_PROCESS_ID_TYPE
 Especifica como interpretar uma ID de processo na [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura.
@@ -39,10 +42,12 @@ public enum enum_AD_PROCESS_ID {
 };
 ```
 
-## <a name="members"></a>Membros
-ID do processo AD_PROCESS_ID_SYSTEM é um identificador de sistema. Use o `ProcessId.dwProcessId` campo do [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura.
+## <a name="fields"></a>Campos
+`AD_PROCESS_ID_SYSTEM`\
+ID do processo é um identificador de sistema. Use o `ProcessId.dwProcessId` campo do [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura.
 
-ID do processo AD_PROCESS_ID_GUID é um GUID. Use o `ProcessId.guidProcessId` campo do `AD_PROCESS_ID` estrutura.
+`AD_PROCESS_ID_GUID`\
+ID do processo é um GUID. Use o `ProcessId.guidProcessId` campo do `AD_PROCESS_ID` estrutura.
 
 ## <a name="remarks"></a>Comentários
 Usado para o `ProcessIdType` membro do [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) estrutura para identificar o tipo de ID do processo que está contido na estrutura. Determina como interpretar o `ProcessId` union na estrutura.

@@ -6,17 +6,17 @@ helpviewer_keywords:
 - source control plug-ins, MSSCCPRJ.SCC file
 - MSSCCPRJ.SCC file
 ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 983c6aa0a418ec87d521852bd4b0d781c5c90cfa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806429"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344017"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivos SCC
 Quando você coloca uma solução do Visual Studio ou o projeto sob controle do código-fonte usando o IDE, o IDE recebe duas informações cruciais. A informação vem de controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.

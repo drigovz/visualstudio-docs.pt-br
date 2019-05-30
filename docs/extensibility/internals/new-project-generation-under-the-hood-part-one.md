@@ -6,17 +6,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a657c59cba31ea48298179a41ab1024a0b7e948f
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860241"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66326621"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: Bastidores, parte um
 Jamais pensou em como criar seu próprio tipo de projeto? Se perguntar o que realmente acontece quando você cria um novo projeto? Vamos dar uma olhada nos bastidores e ver o que realmente está acontecendo.
@@ -78,7 +78,7 @@ devenv /installvstemplates
 
  \<Caminho de instalação do Visual Studio > \VC#\VCSPackages\1033\csprojui.dll
 
- Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual c#**.
+ Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual c#** .
 
 ##### <a name="sortpriority"></a>SortPriority
  Isso determina a posição do nó raiz na **tipos de projeto** árvore.

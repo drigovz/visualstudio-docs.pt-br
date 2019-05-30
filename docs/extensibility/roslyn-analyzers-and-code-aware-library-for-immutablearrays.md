@@ -3,17 +3,17 @@ title: Analisadores de Roslyn e biblioteca de reconhecimento de código para Imm
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ddaafc8ab4ddbaef1d7e42faedc2229664c6e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a0c2eed45ce27fb108b0cdd0c84f64e4e253c9c1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433325"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334164"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>Analisadores de Roslyn e biblioteca de reconhecimento de código para ImmutableArrays
 
@@ -131,7 +131,7 @@ Console.WriteLine("b2.Length = {0}", b2.Length);
 
 As linhas de código com `ImmutableArray` tiver linhas onduladas, porque você precisa obter o pacote do NuGet imutável e adicionar um `using` instrução ao seu código. Pressione o botão direito do ponteiro no nó do projeto na **Gerenciador de soluções** e escolha **Manage NuGet Packages**. No Gerenciador do NuGet, digite "Imutável" na caixa de pesquisa e escolha o item **Immutable** (não escolher **Immutable**) no painel esquerdo e pressione a  **Instalar** botão no painel direito. A instalação do pacote adiciona uma referência às referências de projeto.
 
-Você ainda verá rabiscos vermelhos sob `ImmutableArray`, então, coloque o cursor nesse identificador e pressione **Ctrl**+**.** (ponto) para abrir o menu de correção sugerida e escolha Adicionar apropriado `using` instrução.
+Você ainda verá rabiscos vermelhos sob `ImmutableArray`, então, coloque o cursor nesse identificador e pressione **Ctrl**+ **.** (ponto) para abrir o menu de correção sugerida e escolha Adicionar apropriado `using` instrução.
 
 **Salve e feche** a segunda instância do Visual Studio por enquanto para colocá-lo em um estado limpo para continuar.
 
@@ -210,7 +210,7 @@ Remova o ponto de interrupção para que você pode ver seu trabalho analyzer (e
 
 Antes de começar, feche a segunda instância do Visual Studio e parar a depuração na primeira instância do Visual Studio (em que você está desenvolvendo o analyzer).
 
-**Adicione uma nova classe.** Use o menu de atalho (botão direito do ponteiro) no nó do projeto na **Gerenciador de soluções** e optar por adicionar um novo item. Adicione uma classe chamada `BuildCodeFixProvider`. Essa classe precisa ser derivada de `CodeFixProvider`, e você precisará usar **Ctrl**+**.** (ponto) para invocar a correção de código que adiciona o correto `using` instrução. Essa classe também precisa ser anotada com `ExportCodeFixProvider` atributo e você precisará adicionar uma `using` instrução para resolver o `LanguageNames` enum. Você deve ter um arquivo de classe com o seguinte código nele:
+**Adicione uma nova classe.** Use o menu de atalho (botão direito do ponteiro) no nó do projeto na **Gerenciador de soluções** e optar por adicionar um novo item. Adicione uma classe chamada `BuildCodeFixProvider`. Essa classe precisa ser derivada de `CodeFixProvider`, e você precisará usar **Ctrl**+ **.** (ponto) para invocar a correção de código que adiciona o correto `using` instrução. Essa classe também precisa ser anotada com `ExportCodeFixProvider` atributo e você precisará adicionar uma `using` instrução para resolver o `LanguageNames` enum. Você deve ter um arquivo de classe com o seguinte código nele:
 
 ```csharp
 using Microsoft.CodeAnalysis;
@@ -223,7 +223,7 @@ namespace ImmutableArrayAnalyzer
     {}
 ```
 
-**Criar um stub de membros derivados.** Agora, coloque o cursor do editor no identificador `CodeFixProvider` e pressione **Ctrl**+**.** (ponto) para criar um stub a implementação para essa classe base abstrata. Isso gera uma propriedade e um método para você.
+**Criar um stub de membros derivados.** Agora, coloque o cursor do editor no identificador `CodeFixProvider` e pressione **Ctrl**+ **.** (ponto) para criar um stub a implementação para essa classe base abstrata. Isso gera uma propriedade e um método para você.
 
 **Implementa a propriedade.** Preencha a `FixableDiagnosticIds` da propriedade `get` corpo pelo código a seguir:
 
@@ -244,14 +244,14 @@ var root = await context.Document
                         .GetSyntaxRootAsync(context.CancellationToken);
 ```
 
-**Localize o nó com o problema.** Passe no alcance do contexto, mas o nó que você encontre pode não ser o código que você precisa alterar. O diagnóstico relatado fornecido somente o alcance para o identificador de tipo (em que a linha ondulada pertencia), mas você precisa substituir a expressão de criação de objeto inteiro, incluindo o `new` palavra-chave no início e os parênteses no final. Adicione o seguinte código ao seu método (e usar **Ctrl**+**.** Para adicionar um `using` instrução para `ObjectCreationExpressionSyntax`):
+**Localize o nó com o problema.** Passe no alcance do contexto, mas o nó que você encontre pode não ser o código que você precisa alterar. O diagnóstico relatado fornecido somente o alcance para o identificador de tipo (em que a linha ondulada pertencia), mas você precisa substituir a expressão de criação de objeto inteiro, incluindo o `new` palavra-chave no início e os parênteses no final. Adicione o seguinte código ao seu método (e usar **Ctrl**+ **.** Para adicionar um `using` instrução para `ObjectCreationExpressionSyntax`):
 
 ```csharp
 var objectCreation = root.FindNode(context.Span)
                          .FirstAncestorOrSelf<ObjectCreationExpressionSyntax>();
 ```
 
-**Registre-se a correção de código para a lâmpada da interface do usuário.** Quando você registra a correção de código, Roslyn se conecta à lâmpada do Visual Studio da interface do usuário automaticamente. Os usuários finais verão usarem **Ctrl**+**.** (período) quando seu analisador rabisca uma má `ImmutableArray<T>` uso do construtor. Como seu provedor de correção de código é executado somente quando há um problema, você pode supor que você tem a expressão de criação de objeto que estava procurando. Do parâmetro de contexto, você pode registrar a nova correção de código, adicionando o seguinte código ao final da `RegisterCodeFixAsync` método:
+**Registre-se a correção de código para a lâmpada da interface do usuário.** Quando você registra a correção de código, Roslyn se conecta à lâmpada do Visual Studio da interface do usuário automaticamente. Os usuários finais verão usarem **Ctrl**+ **.** (período) quando seu analisador rabisca uma má `ImmutableArray<T>` uso do construtor. Como seu provedor de correção de código é executado somente quando há um problema, você pode supor que você tem a expressão de criação de objeto que estava procurando. Do parâmetro de contexto, você pode registrar a nova correção de código, adicionando o seguinte código ao final da `RegisterCodeFixAsync` método:
 
 ```csharp
 context.RegisterCodeFix(
@@ -262,9 +262,9 @@ context.RegisterCodeFix(
             context.Diagnostics[0]);
 ```
 
-Você precisa colocar o cursor do editor do identificador `CodeAction`, em seguida, use **Ctrl**+**.** (ponto) para adicionar o apropriada `using` instrução para esse tipo.
+Você precisa colocar o cursor do editor do identificador `CodeAction`, em seguida, use **Ctrl**+ **.** (ponto) para adicionar o apropriada `using` instrução para esse tipo.
 
-Em seguida, coloque o cursor do editor na `ChangeToImmutableArrayEmpty` identificador e uso **Ctrl**+**.** novamente, para gerar o stub do método para você.
+Em seguida, coloque o cursor do editor na `ChangeToImmutableArrayEmpty` identificador e uso **Ctrl**+ **.** novamente, para gerar o stub do método para você.
 
 Este último trecho de código adicionados por você registra a correção de código, passando um `CodeAction` e a ID de diagnóstico para o tipo de problema encontrado. Neste exemplo, há apenas um ID de diagnóstico que esse código fornece correções para, portanto, você pode passar apenas o primeiro elemento da matriz de IDs de diagnóstico. Quando você cria o `CodeAction`, você passa o texto que a lâmpada da interface do usuário deve usar como uma descrição da correção do código. Você também pode passar em uma função que usa um CancellationToken e retorna um novo documento. O novo documento terá uma nova árvore de sintaxe que inclui seu código com patches que chama `ImmutableArray.Empty`. Este trecho de código usa uma lambda, de modo que ele pode se fechar sobre o nó de objectCreation e documento do contexto.
 
@@ -288,7 +288,7 @@ private async Task<Document> ChangeToImmutableArrayEmpty(
 }
 ```
 
-Você precisará colocar o cursor do editor na `SyntaxGenerator` identificador e uso **Ctrl**+**.** (ponto) para adicionar o apropriada `using` instrução para esse tipo.
+Você precisará colocar o cursor do editor na `SyntaxGenerator` identificador e uso **Ctrl**+ **.** (ponto) para adicionar o apropriada `using` instrução para esse tipo.
 
 Esse código usa `SyntaxGenerator`, que é um tipo útil para a criação de novo código. Depois de obter um gerador para o documento que tem o problema de código `ChangeToImmutableArrayEmpty` chamadas `MemberAccessExpression`, passando o tipo que tem o membro que desejamos acessar e passando o nome do membro como uma cadeia de caracteres.
 
@@ -296,9 +296,9 @@ Em seguida, o método de busca a raiz do documento, e como isso pode envolver tr
 
 ## <a name="try-your-code-fix"></a>Experimente a correção de código
 
-Agora, você pode pressionar **F5** para executar o seu analisador em uma segunda instância do Visual Studio. Abra o projeto de console que você usou antes. Agora você verá a lâmpada aparecer onde sua nova expressão de criação de objeto é para `ImmutableArray<int>`. Se você pressionar **Ctrl**+**.** (período), em seguida, você verá seu código corrigir e você verá uma visualização de diferença do código gerado automaticamente na lâmpada da interface do usuário. Roslyn o criará para você.
+Agora, você pode pressionar **F5** para executar o seu analisador em uma segunda instância do Visual Studio. Abra o projeto de console que você usou antes. Agora você verá a lâmpada aparecer onde sua nova expressão de criação de objeto é para `ImmutableArray<int>`. Se você pressionar **Ctrl**+ **.** (período), em seguida, você verá seu código corrigir e você verá uma visualização de diferença do código gerado automaticamente na lâmpada da interface do usuário. Roslyn o criará para você.
 
-**Dica de Pro:** Se você iniciar a segunda instância do Visual Studio, e você não vir a lâmpada com a correção de código, em seguida, você talvez precise limpar o cache de componente do Visual Studio. A limpeza do cache força o Visual Studio para examinar novamente os componentes, portanto, o Visual Studio deve pegar seu componente mais recente. Primeiro, desligue a segunda instância do Visual Studio. Em seguida, na **Windows Explorer**, navegue até *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\*. (O "16.0" muda com a versão com o Visual Studio.) Excluir o subdiretório *ComponentModelCache*.
+**Dica de Pro:** Se você iniciar a segunda instância do Visual Studio, e você não vir a lâmpada com a correção de código, em seguida, você talvez precise limpar o cache de componente do Visual Studio. A limpeza do cache força o Visual Studio para examinar novamente os componentes, portanto, o Visual Studio deve pegar seu componente mais recente. Primeiro, desligue a segunda instância do Visual Studio. Em seguida, na **Windows Explorer**, navegue até *%LOCALAPPDATA%\Microsoft\VisualStudio\16.0Roslyn\\* . (O "16.0" muda com a versão com o Visual Studio.) Excluir o subdiretório *ComponentModelCache*.
 
 ## <a name="talk-video-and-finish-code-project"></a>Se comunicar com vídeo e concluir o projeto de código
 

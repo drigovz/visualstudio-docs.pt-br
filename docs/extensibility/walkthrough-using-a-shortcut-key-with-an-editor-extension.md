@@ -5,17 +5,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e8d4acb5bc43a174187fa74714a9ff24ef0a67c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5707e83545d2008f8e8ec042ea61208220887204
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62964476"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318512"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>Passo a passo: Usar uma tecla de atalho com uma extensão do editor
 Você pode responder a teclas de atalho em sua extensão de editor. A instrução a seguir mostra como adicionar um adorno de exibição para uma exibição de texto usando uma tecla de atalho. Este passo a passo se baseia no modelo de editor do adorno de visor e permite que você adicionar o adorno, usando o caractere +.
@@ -108,7 +108,7 @@ Antes do Visual Studio 2017 versão 15.6, a única maneira de lidar com comandos
     }
     ```
 
-7. Implemente a `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição (**+**) caractere é digitado.
+7. Implemente a `Exec()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição ( **+** ) caractere é digitado.
 
     ```csharp
     int IOleCommandTarget.Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -237,7 +237,7 @@ O manipulador de comandos é uma implementação de <xref:Microsoft.VisualStudio
    }
    ```
 
-6. Implemente a `ExecuteCommand()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição (**+**) caractere é digitado.
+6. Implemente a `ExecuteCommand()` , de modo que ele adiciona uma caixa de roxa para o modo de exibição, se um sinal de adição ( **+** ) caractere é digitado.
 
    ```csharp
    public bool ExecuteCommand(TypeCharCommandArgs args, CommandExecutionContext executionContext)

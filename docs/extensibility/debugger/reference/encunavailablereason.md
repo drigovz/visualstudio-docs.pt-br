@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - EncUnavailableReason enumeration
 ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea1bbf8fe96abbf1e7bd9a92396d0dcfa4306445
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7db94a181d87791edb242d69b461f90c42a5e080
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717033"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318151"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` Representa os motivos que **editar e continuar** não está disponível.
@@ -49,20 +52,27 @@ public enum EncUnavailableReason {
 };
 ```
 
-#### <a name="parameters"></a>Parâmetros
-Motivo específico não ENCUN_NONE por que editar e continuar não está disponível.
+## <a name="fields"></a>Campos
+`ENCUN_NONE`\
+Nenhum motivo específico por que editar e continuar não está disponível.
 
-ENCUN_INTEROP editar e continuar não está disponível durante uma chamada de interoperabilidade.
+`ENCUN_INTEROP`\
+Editar e continuar não está disponível durante uma chamada de interoperabilidade.
 
-ENCUN_SQLCLR editar e continuar não está disponível durante uma chamada de procedimento do SQL que usa o tempo de execução de linguagem comum (CLR).
+`ENCUN_SQLCLR`\
+Editar e continuar não está disponível durante uma chamada de procedimento do SQL que usa o tempo de execução de linguagem comum (CLR).
 
-ENCUN_MINIDUMP editar e continuar não está disponível durante o processamento de um minidespejo.
+`ENCUN_MINIDUMP`\
+Editar e continuar não está disponível durante o processamento de um minidespejo.
 
-ENCUN_EMBEDDED editar e continuar não está disponível durante o processamento de código inserido.
+`ENCUN_EMBEDDED`\
+Editar e continuar não está disponível durante o processamento de código inserido.
 
-ENCUN_ATTACH editar e continuar não está disponível porque a sessão foi conectada a, não são iniciados pelo depurador.
+`ENCUN_ATTACH`\
+Editar e continuar não está disponível porque a sessão foi conectada a, não seja iniciado pelo depurador.
 
-ENCUN_WIN64 editar e continuar não está disponível durante o processamento de código do Windows de 64 bits.
+`ENCUN_WIN64`\
+Editar e continuar não está disponível durante o processamento de código do Windows de 64 bits.
 
 ## <a name="remarks"></a>Comentários
 Essa enumeração é para uso interno somente pela [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)]. O [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) e [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) métodos conforme implementado por um fornecedor de porta personalizado devem sempre retornar `E_NOTIMPL`.

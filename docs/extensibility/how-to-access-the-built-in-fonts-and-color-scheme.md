@@ -7,17 +7,17 @@ helpviewer_keywords:
 - font and color control [Visual Studio SDK], categories
 - colors, accessing built-in schemes
 ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2abc6606d33e4b59faeb1838bcb173fd51a28616
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415514"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66340982"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: Acessar as fontes internas e ccheme de cores
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -41,7 +41,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
     > [!NOTE]
     > Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.
 
-2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro de recursos do VSPackage (*. rc*) de arquivo, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.
+2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro de recursos do VSPackage ( *. rc*) de arquivo, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.
 
      Para obter mais informações, consulte [adicionar ou excluir uma cadeia de caracteres](/cpp/windows/adding-or-deleting-a-string).
 
@@ -49,7 +49,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
 
 1. Construa um tipo especial de entrada de registro de categoria no seguinte local:
 
-     *[HKLM\Software\Microsoft. \Visual Studio\\\<versão do Visual Studio > \FontAndColors\\\<categoria >*]
+     *[HKLM\Software\Microsoft. \Visual Studio\\\<versão do Visual Studio > \FontAndColors\\\<categoria >* ]
 
      *\<Categoria >* é o nome não localizado da categoria.
 

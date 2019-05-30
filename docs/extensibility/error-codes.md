@@ -7,17 +7,17 @@ helpviewer_keywords:
 - source control plug-ins, error codes
 - errors [Visual Studio SDK]
 ms.assetid: d9cbd1c4-719b-467a-8100-333c1e146d3b
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e3dc26b8dd2e17e201cf760db68d0faf7e231ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4f4289519dcc8ac5190221b7b45f64e98051da
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62863961"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66334434"
 ---
 # <a name="error-codes"></a>Códigos de erro
 Quando uma função de API de plug-in de controle de origem retorna um erro, ele deve ser um dos seguintes códigos de erro. Todos os erros são negativos, avisos ou códigos de erro informativas são positivos, e o sucesso é 0.

@@ -5,19 +5,19 @@ ms.topic: conceptual
 helpviewer_keywords:
 - tool windows, registering
 ms.assetid: c4bb8add-7148-49e4-a377-01d059fd5524
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: adb79fec233171a0d20e817f9675aaab8e7228f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b74081f474e85b97f46db5250daf042dbd6b917
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798849"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66316389"
 ---
-# <a name="tool-windows-in-the-registry"></a>Ferramenta Windows no registro
+# <a name="tool-windows-in-the-registry"></a>Janela de ferramentas no registro
 Os VSPackages que fornecem as janelas de ferramentas deve registrar [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] como provedores de janela de ferramentas. Janelas de ferramentas criadas usando o modelo de pacote do Visual Studio fazer isso por padrão. Provedores de janela de ferramenta têm chaves de registro do sistema que especifica os atributos de visibilidade, como tamanho de janela de ferramenta padrão e o local, o GUID da janela que serve como o painel de janela de ferramentas e o estilo de encaixe.
 
  Durante o desenvolvimento, provedores de janela de ferramenta gerenciado registrar janelas de ferramentas adicionando atributos no código-fonte, e em seguida, executando o utilitário RegPkg.exe o assembly resultante. Para obter mais informações, consulte [registrando uma janela de ferramentas](../extensibility/registering-a-tool-window.md).

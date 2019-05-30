@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - DOCCONTEXT_COMPARE enumeration
 ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e36e9c3c0870cb81dd02f646636eeb758f1ddb62
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f31b33eeb782e71a87103d26a3bb78175611644e
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686243"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66318139"
 ---
 # <a name="doccontextcompare"></a>DOCCONTEXT_COMPARE
 Especifica os critérios para comparar dois contextos de documento.
@@ -43,14 +46,18 @@ enum enum_DOCCONTEXT_COMPARE {
 };
 ```
 
-## <a name="members"></a>Membros
-DOCCONTEXT_EQUAL encontrar o contexto do documento primeiro na lista que é igual para o contexto do documento de destino.
+## <a name="fields"></a>Campos
+`DOCCONTEXT_EQUAL`\
+Localize o contexto do documento primeiro na lista que é igual para o contexto do documento de destino.
 
-DOCCONTEXT_LESS_THAN encontrar o contexto do documento primeiro na lista que é menor que o contexto do documento de destino.
+`DOCCONTEXT_LESS_THAN`\
+Localize o contexto do documento primeiro na lista que é menor que o contexto do documento de destino.
 
-DOCCONTEXT_GREATER_THAN encontrar o contexto do documento primeiro na lista que é maior que o contexto do documento de destino.
+`DOCCONTEXT_GREATER_THAN`\
+Localize o contexto do documento primeiro na lista que é maior que o contexto do documento de destino.
 
-DOCCONTEXT_SAME_DOCUMENT encontrar o contexto do documento primeiro na lista que está no mesmo documento que o contexto do documento de destino.
+`DOCCONTEXT_SAME_DOCUMENT`\
+Localize o contexto do documento primeiro na lista que está no mesmo documento que o contexto do documento de destino.
 
 ## <a name="remarks"></a>Comentários
 Passado como um argumento para o [comparar](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) método.

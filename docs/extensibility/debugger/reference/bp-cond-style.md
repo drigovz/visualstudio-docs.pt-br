@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - BP_COND_STYLE enumeration
 ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ab3655d27e810b3c05d0e0e81d81bc15a26950
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ded3d31f9be2d0a02a238ead4bc989cc21b4922a
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685853"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66351821"
 ---
 # <a name="bpcondstyle"></a>BP_COND_STYLE
 Especifica o estilo de condição de ponto de interrupção para pendentes e associados a pontos de interrupção.
@@ -41,12 +44,15 @@ public enum enum_BP_COND_STYLE {
 };
 ```
 
-## <a name="members"></a>Membros
-BP_COND_NONE dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
+## <a name="fields"></a>Campos
+`BP_COND_NONE`\
+Dispara o ponto de interrupção quando a posição do ponto de interrupção é atingida. Nenhuma condição de ponto de interrupção especificada.
 
-BP_COND_WHEN_TRUE dispara o ponto de interrupção somente quando a expressão condicional é associado com o ponto de interrupção é avaliada como `true`.
+`BP_COND_WHEN_TRUE`\
+Dispara o ponto de interrupção somente quando a expressão condicional é associado com o ponto de interrupção é avaliada como `true`.
 
-BP_COND_WHEN_CHANGED dispara o ponto de interrupção somente quando o valor da expressão condicional associado com o ponto de interrupção foi alterado de sua avaliação anterior.
+`BP_COND_WHEN_CHANGED`\
+Dispara o ponto de interrupção somente quando o valor da expressão condicional associado com o ponto de interrupção foi alterado de sua avaliação anterior.
 
 ## <a name="remarks"></a>Comentários
 Usado para o `styleCondition` membro a [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) estrutura.

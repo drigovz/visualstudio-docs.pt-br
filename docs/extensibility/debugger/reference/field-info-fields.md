@@ -7,17 +7,20 @@ f1_keywords:
 helpviewer_keywords:
 - FIELD_INFO_FIELDS enumeration
 ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
-author: gregvanl
-ms.author: gregvanl
+author: madskristensen
+ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9614d3b99df71c9bfa8328478348385472f1a8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 01853df78bfe731ea4b7159f7b3ebe352f3c5eaa
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710000"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66337678"
 ---
 # <a name="fieldinfofields"></a>FIELD_INFO_FIELDS
 Especifica quais informações devem ser recuperadas sobre um [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objeto.
@@ -47,14 +50,18 @@ public enum enum_FIELD_INFO_FIELDS {
 };
 ```
 
-## <a name="members"></a>Membros
-FIF_FULLNAME Initialize/usar o `bstrFullName` campo de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
+## <a name="fields"></a>Campos
+`FIF_FULLNAME`\
+Inicialização/usar o `bstrFullName` campo de [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) estrutura.
 
-FIF_NAME Initialize/usar o `bstrName` campo o `FIELD_INFO` estrutura.
+`FIF_NAME`\
+Inicialização/usar o `bstrName` campo o `FIELD_INFO` estrutura.
 
-FIF_TYPE Initialize/usar o `bstrType` campo o `FIELD_INFO` estrutura.
+`FIF_TYPE`\
+Inicialização/usar o `bstrType` campo o `FIELD_INFO` estrutura.
 
-FIF_MODIFIERS Initialize/usar o `bstrModifiers` campo o `FIELD_INFO` estrutura.
+`FIF_MODIFIERS`\
+Inicialização/usar o `bstrModifiers` campo o `FIELD_INFO` estrutura.
 
 ## <a name="remarks"></a>Comentários
 Esses valores também são passados como um argumento para o [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) método para especificar quais campos da [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) são de estrutura a ser inicializado.
