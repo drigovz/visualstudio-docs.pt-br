@@ -76,7 +76,7 @@ Para projetos do C/C++, você pode definir o cabeçalho e locais de arquivos do 
 
 1. Na parte superior a **propriedades** painel, em **Configuration**, selecione **todas as configurações de**.
 
-1. Sob **C/C++** > **geral** > **diretórios de inclusão adicionais**, especifique a pasta que contém arquivos de cabeçalho.
+1. Sob **C/C++**  > **geral** > **diretórios de inclusão adicionais**, especifique a pasta que contém arquivos de cabeçalho.
 
 1. Sob **vinculador** > **geral** > **diretórios de bibliotecas adicionais**, especifique a pasta que contém os arquivos LIB.
 

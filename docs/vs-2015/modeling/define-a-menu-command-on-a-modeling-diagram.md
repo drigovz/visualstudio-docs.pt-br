@@ -249,7 +249,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
     1. Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, escolha **Abrir pasta no Windows Explorer**.  
 
-    2. Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
+    2. Localize o arquivo **bin\\\*\\** _Seuprojeto_ **. VSIX**  
 
 2. Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
 

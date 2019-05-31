@@ -48,7 +48,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   
 2. Use a sintaxe a seguir para definir a variável de ambiente **_NT_SYMBOL_PATH** ou a opção /SymbolPath da VSPerfReport:  
   
-    **srv\\*** *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
+    **srv\\** * *LocalStore* **\*http://msdl.microsoft.com/downloads/symbols**  
   
     em que *LocalStore* é o caminho do diretório local que você criou.  
   

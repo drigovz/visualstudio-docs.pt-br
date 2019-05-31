@@ -55,7 +55,7 @@ A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assembl
 ```
 
 > [!NOTE]
-> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Portanto, considere copiar os arquivos *.pdb* no mesmo local que os arquivos binários (*.dll* e *.exe*).
+> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Portanto, considere copiar os arquivos *.pdb* no mesmo local que os arquivos binários ( *.dll* e *.exe*).
 
 ### <a name="exclude-and-include"></a>Excluir e incluir
 
@@ -89,7 +89,7 @@ Se **Incluir** estiver vazio, o processamento de cobertura de código incluirá 
 
 Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são o mesmo que curingas. Em particular:
 
-- **.\\*** corresponde a uma cadeia de quaisquer caracteres
+- **.\\** * corresponde a uma cadeia de quaisquer caracteres
 
 - **\\.** corresponde a um ponto ".")
 

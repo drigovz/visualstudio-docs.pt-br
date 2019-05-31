@@ -1,5 +1,5 @@
 ---
-title: 'Como: Proteger documentos e partes de documentos de forma programática'
+title: Proteger documentos e partes de documentos programaticamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 30cb3d0b9ad04a3a0195f3b58ba5856de94d09d4
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412461"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402180"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Como: Proteger documentos e partes de documentos de forma programática
   Você pode adicionar proteção para documentos do Microsoft Office Word para impedir que usuários fazendo nenhuma edição ao documento.

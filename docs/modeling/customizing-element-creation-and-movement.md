@@ -109,7 +109,7 @@ Os usuários também podem colar elementos em outros elementos.
 
       Você pode usar a ferramenta de navegação do caminho para criar cada caminho:
 
-      1. Sob **processa mesclagem Criando links nos caminhos**, clique em  **\<Adicionar caminho >**.
+      1. Sob **processa mesclagem Criando links nos caminhos**, clique em  **\<Adicionar caminho >** .
 
       2. Clique na seta suspensa à direita do item de lista. Uma exibição de árvore é exibida.
 

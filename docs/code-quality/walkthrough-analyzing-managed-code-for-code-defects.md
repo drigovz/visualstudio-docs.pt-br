@@ -141,7 +141,7 @@ Este passo a passo o orienta no processo de usar a análise de código para anal
 
    1. Selecione o **assinar o assembly** caixa de seleção.
 
-   1. No **escolher um arquivo de chave de nome de cadeia de caracteres** lista, selecione  **\<novo... >**.
+   1. No **escolher um arquivo de chave de nome de cadeia de caracteres** lista, selecione  **\<novo... >** .
 
       O **criar chave de nome forte** caixa de diálogo é exibida.
 

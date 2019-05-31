@@ -30,14 +30,14 @@ ms.workload:
 - multiple
 ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045336"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. PDB) e arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
-Banco de dados do programa (*. PDB*) arquivos, também chamados de arquivos de símbolo, mapeiam identificadores e as instruções no código-fonte do seu projeto para identificadores correspondentes e as instruções no compilado aplicativos.
+Banco de dados do programa ( *. PDB*) arquivos, também chamados de arquivos de símbolo, mapeiam identificadores e as instruções no código-fonte do seu projeto para identificadores correspondentes e as instruções no compilado aplicativos.
 
 Quando você compila um projeto do IDE do Visual Studio com o padrão de configuração de build de depuração, o compilador cria os arquivos de símbolo apropriado. Você também pode [definir as opções de símbolo no código](#compiler-symbol-options).
 
@@ -62,7 +62,7 @@ Quando você depura um projeto no IDE do Visual Studio, o depurador carrega auto
 
 Além disso, o depurador procura por arquivos de símbolo nos seguintes locais:
 
-1. O local especificado dentro da DLL ou executável (*.exe*) arquivos.
+1. O local especificado dentro da DLL ou executável ( *.exe*) arquivos.
 
    Por padrão, se você tiver criado uma DLL ou um *.exe* arquivo no seu computador, o vinculador coloca o caminho completo e nome de arquivo do associado *. PDB* arquivo na DLL ou *.exe* arquivo. O depurador verifica para ver se o arquivo de símbolo existe nesse local.
 
@@ -177,7 +177,7 @@ Quando você compila um projeto do IDE do Visual Studio com o padrão **depurar*
 
   - *VC\<x>.pdb*, em que *\<x>* representa a versão do Visual C++, por exemplo, *VC11.pdb*
 
-    O *VC\<x >. PDB* arquivo armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador do C/C++ mescla informações de depuração em *VC\<x >. PDB*. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como  *\<Windows. h >*, os typedefs desses cabeçalhos são armazenados apenas uma vez, em vez de em todos os arquivos de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função.
+    O *VC\<x >. PDB* arquivo armazena todas as informações de depuração para os arquivos de objeto individuais e reside no mesmo diretório que o makefile do projeto. Cada vez que ele cria um arquivo de objeto, o compilador do C/C++ mescla informações de depuração em *VC\<x >. PDB*. Portanto, mesmo se todos os arquivos de origem incluam arquivos de cabeçalho, como  *\<Windows. h >* , os typedefs desses cabeçalhos são armazenados apenas uma vez, em vez de em todos os arquivos de objeto. As informações inseridas incluem informações de tipo, mas não incluem informações de símbolo como definições de função.
 
   - *\<project>.pdb*
 
@@ -236,7 +236,7 @@ Quando isso acontece, o depurador exibe o **nenhum símbolo carregado** ou **nen
 **Para usar a página de documento nenhum símbolo carregado para ajudar a localizar e carregar símbolos ausentes:**
 
 - Para alterar o caminho de pesquisa, selecione um caminho não selecionado ou selecione **novo caminho** ou **novo caminho do VSTS** e insira ou selecione um novo caminho. Selecione **carregar** para procurar novamente os caminhos e carregar o arquivo de símbolo se ela for encontrada.
-- Para substituir as opções de qualquer símbolo e repita os caminhos de pesquisa, selecione **procurar e localizar \<nome do executável >**. O arquivo de símbolo será carregado se ele for encontrado, ou **Explorador de arquivos** será aberta para que você pode selecionar manualmente o arquivo de símbolo.
+- Para substituir as opções de qualquer símbolo e repita os caminhos de pesquisa, selecione **procurar e localizar \<nome do executável >** . O arquivo de símbolo será carregado se ele for encontrado, ou **Explorador de arquivos** será aberta para que você pode selecionar manualmente o arquivo de símbolo.
 - Para abrir o **opções** > **depuração** > **símbolos** página, selecione **alterar configurações de símbolo**.
 - Para mostrar a desmontagem em uma nova janela uma vez, selecione **exibir a desmontagem**, ou selecione **caixa de diálogo Opções** para definir a opção para sempre mostrar a desmontagem quando os arquivos de origem ou de símbolo não forem encontrados.
 - Para mostrar os locais pesquisados e o resultado, expanda **informações de carregamento de símbolo**.

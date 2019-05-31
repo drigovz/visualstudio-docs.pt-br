@@ -36,7 +36,7 @@ ms.locfileid: "63447019"
 
  O local da pasta de publicação é o diretório ao qual o Visual Studio copia os arquivos de solução, como os manifestos, assemblies e outros arquivos do build. Você deve ter acesso de gravação a esse diretório.
 
- As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://<em>servername/foldername</em>).
+ As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), ou em um local totalmente qualificado ( *\\\servername\foldername* ou http://<em>servername/foldername</em>).
 
  Por padrão, é o local de publicação *http://localhost/projectname/* se você tiver o IIS instalado, ou o *publicar\\*  directory se você não tiver o IIS instalado.
 
@@ -44,7 +44,7 @@ ms.locfileid: "63447019"
 
  A URL da pasta de instalação é o diretório do qual o usuário final instalará a personalização. Também é o caminho que a solução usará para verificar se há atualizações. O caminho pode ser o mesmo que o local da pasta de publicação, mas isso não é um requisito.
 
- As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\*), ou em um local totalmente qualificado (*\\\servername\foldername* ou http://<em>servername/foldername</em>). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.
+ As opções incluem o computador local, um compartilhamento de arquivo UNC ou um site HTTP/HTTPS. O caminho pode ser local (*c:\foldername\publishfolder*), relativo (*publicar\\* ), ou em um local totalmente qualificado ( *\\\servername\foldername* ou http://<em>servername/foldername</em>). Todos os locais HTTP/HTTPS devem ser criados com caracteres US-ASCII. Não há suporte para caracteres Unicode.
 
  Se o caminho de instalação for definido, os arquivos de personalização devem ser nesse local para os usuários instalarem a personalização. O local deve ser definido somente se você souber o local de implantação final.
 

@@ -13,7 +13,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 32558f746745fdcb717aa7c218f996924418ae79
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60082042"
@@ -47,7 +47,7 @@ Você pode sincronizar as configurações de análise de código para projetos d
   
 3. Clique em **análise de código**.  
   
-4. No **executar este conjunto de regras** , clique em  **\<procurar... >**.  
+4. No **executar este conjunto de regras** , clique em  **\<procurar... >** .  
   
 5. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra de política de check-in.  
   
@@ -65,6 +65,6 @@ Você pode sincronizar as configurações de análise de código para projetos d
   
 5. Abrir a caixa de diálogo Propriedades do projeto de código e exibir o **análise de código** página.  
   
-6. No **executar este conjunto de regras** , clique em  **\<procurar... >**.  
+6. No **executar este conjunto de regras** , clique em  **\<procurar... >** .  
   
 7. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra.

@@ -494,7 +494,7 @@ Quando o botão direito do mouse o diagrama de definição de DSL, clique em **h
 
 Quando você definir o tipo de uma propriedade de domínio para ModelBusReference e, em seguida, a propriedade com o botão direito e clique em **propriedades específicas da ModelBusReference habilitar**:
 
-- Diversos atributos de CLR são incluídos na propriedade do domínio. É possível visualizá-los no campo Atributos Personalizados na janela Propriedades. Na **dsl\generatedcode\domainclasses.cs.**, você pode ver os atributos na declaração da propriedade:
+- Diversos atributos de CLR são incluídos na propriedade do domínio. É possível visualizá-los no campo Atributos Personalizados na janela Propriedades. Na **dsl\generatedcode\domainclasses.cs.** , você pode ver os atributos na declaração da propriedade:
 
   ```csharp
   [System.ComponentModel.TypeConverter(typeof(

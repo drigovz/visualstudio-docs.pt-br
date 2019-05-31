@@ -60,7 +60,7 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.  
     >   
-    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas**, **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#**. Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops**, **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.  
+    >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas**, **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#** . Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops**, **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.  
     >   
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla TAB. Muitos snippets aparecem na janela **IntelliSense**, e é por isso que você escolhe a tecla TAB duas vezes: primeiro para selecionar o snippet na janela **IntelliSense** e depois para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)  
   

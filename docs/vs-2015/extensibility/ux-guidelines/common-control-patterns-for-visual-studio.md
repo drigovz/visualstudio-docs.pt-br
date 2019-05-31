@@ -298,7 +298,7 @@ ms.locfileid: "63430034"
 
  Quando usar o botão curto somente reticências:
 
-- Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação (**& navegue** e **p & rocurar** na mesma caixa de diálogo).
+- Se houver mais de um longo **[procurar...]**  botão na caixa de diálogo, como quando vários campos permitem para navegação. Usar curto **[...]**  botão de cada um para evitar as chaves de acesso confuso criadas por essa situação ( **& navegue** e **p & rocurar** na mesma caixa de diálogo).
 
 - Em uma caixa de diálogo estreita, ou quando não há nenhum lugar razoável para colocar o botão longo.
 
@@ -348,7 +348,7 @@ ms.locfileid: "63430034"
  Os hiperlinks são adequados para ações com base em navegação, como abrir um tópico da Ajuda, a caixa de diálogo modal ou o assistente. Se um hiperlink é usado para um comando, ele sempre deve exibir uma alteração perceptível e visível na interface do usuário. Em geral, as ações que confirme para uma ação (como salvar, cancelar e excluir) são comunicadas melhor usando um botão.
 
 #### <a name="writing-style"></a>Estilo de escrita
- Siga as [diretrizes de área de trabalho do Windows para o texto da interface do usuário](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Não use "Saiba mais sobre," "Diga-me mais sobre" ou a frase "Get help com isso". Frase em vez disso, o texto do link de Ajuda em termos da pergunta principal respondida pelo conteúdo da Ajuda. Por exemplo, "**como adicionar um servidor para o Gerenciador de servidores?**"
+ Siga as [diretrizes de área de trabalho do Windows para o texto da interface do usuário](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). Não use "Saiba mais sobre," "Diga-me mais sobre" ou a frase "Get help com isso". Frase em vez disso, o texto do link de Ajuda em termos da pergunta principal respondida pelo conteúdo da Ajuda. Por exemplo, "**como adicionar um servidor para o Gerenciador de servidores?** "
 
 #### <a name="visual-style"></a>Estilo Visual
 

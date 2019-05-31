@@ -43,7 +43,7 @@ ms.locfileid: "62967390"
 ## <a name="identifiers-for-sharepoint-project-items"></a>Identificadores para itens de projeto do SharePoint
  Cada item de projeto do SharePoint tem um identificador de cadeia de caracteres correspondente. Você deve saber o identificador para um item de projeto se você quiser executar as seguintes tarefas:
 
-- Crie uma extensão para o item de projeto. Nesse caso, você deve passar o identificador para o item de projeto que você deseja estender para o construtor do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para criar uma extensão para todos os tipos de projeto item, passe o **\\*** valor de cadeia de caracteres.
+- Crie uma extensão para o item de projeto. Nesse caso, você deve passar o identificador para o item de projeto que você deseja estender para o construtor do <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Para criar uma extensão para todos os tipos de projeto item, passe o **\\** * valor de cadeia de caracteres.
 
 - Adicione o item de projeto a um projeto por meio de programação. Nesse caso, você deve passar o identificador para o item de projeto para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> método.
 

@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 26d8412318efd2292fd0f5a0f0ef52fe36c7d06c
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60116284"
@@ -41,7 +41,7 @@ Neste passo a passo, você pode analisar um projeto gerenciado em busca de defei
   
 1. Sobre o **arquivo** menu de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], clique em **New** e, em seguida, clique em **projeto**.  
   
-2. No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual c#**.  
+2. No **novo projeto** caixa de diálogo **tipos de projeto**, clique em **Visual c#** .  
   
 3. Sob **modelos**, selecione **biblioteca de classes**.  
   
@@ -149,7 +149,7 @@ Neste passo a passo, você pode analisar um projeto gerenciado em busca de defei
   
        Selecione o **assinar o assembly** caixa de seleção.  
   
-       No **escolher um arquivo de chave de nome de cadeia de caracteres** lista, selecione  **\<novo... >**.  
+       No **escolher um arquivo de chave de nome de cadeia de caracteres** lista, selecione  **\<novo... >** .  
   
        O **criar chave de nome forte** caixa de diálogo é exibida.  
   

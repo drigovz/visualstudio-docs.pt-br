@@ -1,5 +1,5 @@
 ---
-title: 'Como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office'
+title: Armazenar em cache a fonte de dados no documento do Office por meio de programação
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23ea89b25ca1bd1e7aa48ab1782d23bd7db057f0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5e63b478fb16965f639a76dad0cbc3b2715bc7e2
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437112"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401410"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>Como: Armazenar em cache programaticamente uma fonte de dados em um documento do Office
   Você pode adicionar programaticamente um objeto de dados para o cache de dados em um documento por meio da chamada a `StartCaching` método de um host de itens, como uma <xref:Microsoft.Office.Tools.Word.Document>, <xref:Microsoft.Office.Tools.Excel.Workbook>, ou <xref:Microsoft.Office.Tools.Excel.Worksheet>. Remove um objeto de dados do cache de dados, chamando o `StopCaching` método de um item de host.

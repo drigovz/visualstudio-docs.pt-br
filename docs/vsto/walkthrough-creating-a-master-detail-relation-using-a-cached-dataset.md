@@ -177,7 +177,7 @@ ms.locfileid: "63438547"
 
 5. Desabilite a conexão ao banco de dados. Desconecte o cabo de rede do seu computador, se o banco de dados está localizado em um servidor ou parar o serviço SQL Server se o banco de dados no computador de desenvolvimento.
 
-6. Abra o Excel e, em seguida, abra **Meus Master-Detail.xlsx** da *\bin* diretório (*\My Master-Detail\bin* no Visual Basic ou *\My Master-Detail\bin\ Depurar* em c#).
+6. Abra o Excel e, em seguida, abra **Meus Master-Detail.xlsx** da *\bin* diretório ( *\My Master-Detail\bin* no Visual Basic ou *\My Master-Detail\bin\ Depurar* em c#).
 
 7. Role por meio de alguns dos registros para ver a planilha opera normalmente quando desconectado.
 

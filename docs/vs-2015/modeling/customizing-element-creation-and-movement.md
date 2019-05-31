@@ -111,7 +111,7 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
       Você pode usar a ferramenta de navegação do caminho para criar cada caminho:  
   
-   3. Sob **processa mesclagem Criando links nos caminhos**, clique em  **\<Adicionar caminho >**.  
+   3. Sob **processa mesclagem Criando links nos caminhos**, clique em  **\<Adicionar caminho >** .  
   
    4. Clique na seta suspensa à direita do item de lista. Uma exibição de árvore é exibida.  
   

@@ -73,7 +73,7 @@ ms.locfileid: "63441876"
  Sempre que você criar um projeto, o conjunto de dados é esvaziado e recriado. Se você quiser depurar um conjunto de dados armazenados em cache, você deve abrir o documento fora do Visual Studio e, em seguida, anexar o depurador.
 
 ## <a name="debug-word-document-projects-based-on-the-word-97-2003-document-doc-format"></a>Depurar projetos de documento do Word com base no documento do Word 97-2003 (*. doc) formato
- Para depurar um projeto de documento do Word com base no documento do Word 97-2003 (*/**. doc) formato, você deve adicionar a pasta do projeto à lista de pastas confiáveis. Para obter mais informações sobre como fazer isso, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
+ Para depurar um projeto de documento do Word com base no documento do Word 97-2003 ( */* *. doc) formato, você deve adicionar a pasta do projeto à lista de pastas confiáveis. Para obter mais informações sobre como fazer isso, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
 
 ## <a name="debug-disabled-add-ins"></a>Suplementos de depuração desabilitada
  Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Um aplicativo do Microsoft Office desabilita VSTO Add-ins para impedir que o código problemático Carregando toda vez que o aplicativo é iniciado. No entanto, também é fácil causar um comportamento inesperado durante a depuração típico. Para obter informações sobre como habilitar novamente o VSTO Add-ins, consulte [como: Reabilitar um suplemento VSTO que tenha sido desabilitado](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md).

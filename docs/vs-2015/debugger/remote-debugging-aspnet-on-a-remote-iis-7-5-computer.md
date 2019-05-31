@@ -103,7 +103,7 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >**.
+1. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >** .
     
     Você deve ver a página da web ASP.NET.
 1. Na página da web ASP.NET, clique no link para o **sobre** página.

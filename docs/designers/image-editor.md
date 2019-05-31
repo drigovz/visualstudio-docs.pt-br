@@ -117,7 +117,7 @@ A tabela a seguir descreve os itens na barra de ferramentas **Modo do Editor de 
 |**Seleção Irregular**|Habilita a seleção de uma região irregular de uma imagem. Depois de selecionar uma região, você poderá recortar, copiar, mover, ajustar escala, girar, inverter ou excluir. Quando há uma seleção ativa, as ferramentas de desenho só afetam a região selecionada.|
 |**Seleção de Varinha**|Habilita a seleção de uma região de cor semelhante de uma imagem. A *tolerância*, ou seja, a diferença máxima entre cores adjacentes na qual elas são consideradas semelhantes, pode ser configurada para incluir um intervalo maior ou menor de cores semelhantes. Depois de selecionar uma região, você poderá recortar, copiar, mover, ajustar escala, girar, inverter ou excluir. Quando há uma seleção ativa, as ferramentas de desenho só afetam a região selecionada.|
 |**Panorâmica**|Habilita a movimentação da imagem em relação ao quadro de janela. No modo **Panorâmica**, selecione um ponto na imagem e mova-o.<br /><br /> Ative temporariamente o modo **Panorâmico** mantendo a tecla **Ctrl** pressionada.|
-|**Zoom**|Habilita a exibição de mais ou menos detalhes da imagem em relação ao quadro de janela. No modo **Aplicar Zoom**, selecione um ponto na imagem e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> Amplie ou reduza mantendo a tecla **Ctrl** pressionada enquanto usa o botão de rolagem do mouse ou pressiona o sinal de adição (**+**) ou de subtração (**-**).|
+|**Zoom**|Habilita a exibição de mais ou menos detalhes da imagem em relação ao quadro de janela. No modo **Aplicar Zoom**, selecione um ponto na imagem e mova-o para a direita ou para baixo para ampliar ou para a esquerda ou para cima para reduzir.<br /><br /> Amplie ou reduza mantendo a tecla **Ctrl** pressionada enquanto usa o botão de rolagem do mouse ou pressiona o sinal de adição ( **+** ) ou de subtração ( **-** ).|
 |**Aplicar Zoom para o Tamanho Real**|Exibe a imagem usando uma relacionamento 1:1 entre os pixels da imagem e os pixels da tela.|
 |**Aplicar zoom para ajustar**|Exibe a imagem completa no quadro de janela.|
 |**Zoom para a largura**|Exibe a largura completa da imagem no quadro de janela.|
@@ -150,11 +150,11 @@ A tabela a seguir descreve os itens da barra de ferramentas **Editor de Imagens*
 
 ### <a name="work-with-mip-levels"></a>Trabalhar com níveis de MIP
 
-Alguns formatos de imagem, por exemplo, o DirectDraw Surface (*.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: Criar e modificar os níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)
+Alguns formatos de imagem, por exemplo, o DirectDraw Surface ( *.dds*) dão suporte a níveis de MIP para LOD (Nível de Detalhe) do espaço de textura. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: Criar e modificar os níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)
 
 ### <a name="work-with-transparency"></a>Trabalhar com transparência
 
-Alguns formatos de imagem, por exemplo, DirectDraw Surface (*.dds*), dão suporte a transparência. Há várias maneiras de usar a transparência, dependendo da ferramenta que está sendo usada. Para especificar o nível de transparência de uma seleção de cor, na janela **Propriedades**, defina o componente **A** (alfa) da seleção de cores.
+Alguns formatos de imagem, por exemplo, DirectDraw Surface ( *.dds*), dão suporte a transparência. Há várias maneiras de usar a transparência, dependendo da ferramenta que está sendo usada. Para especificar o nível de transparência de uma seleção de cor, na janela **Propriedades**, defina o componente **A** (alfa) da seleção de cores.
 
 A tabela a seguir descreve como os diferentes tipos ferramentas controlam como a transparência é aplicada:
 
@@ -250,8 +250,8 @@ A tabela a seguir descreve as propriedades da ferramenta:
 |Selecionar tudo|**Ctrl**+**A**|
 |Excluir a seleção atual|**Excluir**|
 |Cancelar a seleção atual|**Esc** (Escape)|
-|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Sinal de adição (**+**)|
-|Reduzir|**Ctrl**-**Botão de rolagem do mouse para trás**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Sinal de subtração (**-**)|
+|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> **Ctrl**+**PageUp**<br /><br /> Sinal de adição ( **+** )|
+|Reduzir|**Ctrl**-**Botão de rolagem do mouse para trás**<br /><br /> **Ctrl**-**PageDown**<br /><br /> Sinal de subtração ( **-** )|
 |Movimentar a imagem para cima em panorama|**Botão de rolagem do mouse para trás**<br /><br /> **PageDown**|
 |Movimentar a imagem para baixo em panorama|**Botão de rolagem do mouse para frente**<br /><br /> **PageUp**|
 |Movimentar a imagem para a esquerda em panorama|**Shift**+**Botão de rolagem do mouse para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Shift**+**PageDown**|

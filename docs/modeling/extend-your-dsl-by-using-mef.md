@@ -95,7 +95,7 @@ Para obter mais informações sobre o MEF, consulte [Managed Extensibility Frame
     <#@ include file="Dsl\GestureExtensionController.tt" #>
     ```
 
-3. Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.**:
+3. Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.** :
 
     ```xml
     <Include href="MefExtension\CommandExtensionVSCT.vsct"/>
@@ -129,7 +129,7 @@ Se você tiver acesso a uma DSL habilitado de MEF, criado por você mesmo ou out
 
    - Normalmente, esse assembly tem um nome que termina com ". DSL.dll".
 
-   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\***
+   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\** *
 
    - Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.
 

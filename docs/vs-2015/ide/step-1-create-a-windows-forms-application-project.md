@@ -57,7 +57,7 @@ Janela IDE
     - **Janela Propriedades** Nessa janela, você pode alterar as propriedades dos itens escolhidos nas outras janelas. Por exemplo, se você escolher o Form1, você poderá alterar o título configurando a propriedade **Text** e você poderá alterar a cor da tela de fundo configurando a propriedade **Backcolor**.  
   
     > [!NOTE]
-    > A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)**, o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.  
+    > A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)** , o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.  
   
 6. Na barra de menus, escolha **Arquivo**, **Salvar Todos**.  
   

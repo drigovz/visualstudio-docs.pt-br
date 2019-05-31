@@ -1,5 +1,5 @@
 ---
-title: 'Como: Por meio de programação excluir marcas de parágrafo ao criar intervalos'
+title: Excluir marcas de parágrafo ao criar intervalos programaticamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f3362404fab0777202407aa47fea7e3d8c3044b1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 852dc6c51215e00c1fdc1571f51940a44f727794
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812883"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402151"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>Como: Por meio de programação excluir marcas de parágrafo ao criar intervalos
   Sempre que você cria um <xref:Microsoft.Office.Interop.Word.Range> objeto com base em um parágrafo, todos os caracteres não imprimíveis, como marcas de parágrafo, estão incluídos no intervalo. Talvez você queira inserir o texto de um parágrafo de código-fonte em um parágrafo de destino. Se você não deseja dividir o parágrafo de destino em parágrafos diferentes, deve primeiro remover a marca de parágrafo do parágrafo de código-fonte. Além disso, como as informações de formatação de parágrafo é armazenado dentro da marca de parágrafo, talvez não queira incluir isso quando você insere o intervalo em um parágrafo existente.

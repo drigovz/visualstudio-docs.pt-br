@@ -61,7 +61,7 @@ Dos **executar este conjunto de regras** lista, use um dos seguintes métodos:
 
 - Selecione um conjunto de regras padrão do Microsoft.
 
-- Selecione uma regra personalizada definida clicando  **\<Selecionar conjunto de regras de controle do código-fonte... >**. Em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
+- Selecione uma regra personalizada definida clicando  **\<Selecionar conjunto de regras de controle do código-fonte... >** . Em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:
 
    **$/** `TeamProjectName` **/** `VersionControlPath`
 

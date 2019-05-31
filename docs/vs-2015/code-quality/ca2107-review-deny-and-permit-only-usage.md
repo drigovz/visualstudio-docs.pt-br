@@ -72,9 +72,9 @@ ms.locfileid: "65687397"
 
  Este exemplo gerencia a seguinte saída.
 
- **Por demanda: Deny do chamador não tem nenhum efeito sob demanda com a permissão declarada.**
-**LinkDemand: Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada.**
-**LinkDemand: Deny do chamador não tem nenhum efeito com o código protegido por LinkDemand.**
+ **Por demanda: Deny do chamador não tem nenhum efeito sob demanda com a permissão declarada.** 
+**LinkDemand: Deny do chamador não tem nenhum efeito em LinkDemand com a permissão declarada.** 
+**LinkDemand: Deny do chamador não tem nenhum efeito com o código protegido por LinkDemand.** 
 **LinkDemand: Este negar não tem nenhum efeito com o código protegido por LinkDemand.**
 ## <a name="see-also"></a>Consulte também
  <xref:System.Security.CodeAccessPermission.PermitOnly%2A?displayProperty=fullName> <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName>

@@ -39,7 +39,7 @@ ms.locfileid: "62548272"
 ---
 # <a name="find-and-replace-text"></a>Localizar e substituir texto
 
-Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** ou **Ctrl**+**Shift**+**H**). Localize e substitua também apenas *algumas* instâncias de um padrão usando a *[seleção de vários sinais de interpolação](#multi-caret-selection)*.
+Localize e substitua um texto no editor do Visual Studio usando [Localizar e Substituir](#find-and-replace-control) (**Ctrl**+**F** ou **Ctrl**+**H**) ou [Localizar/Substituir em Arquivos](#find-in-files-and-replace-in-files) (**Ctrl**+**Shift**+**F** ou **Ctrl**+**Shift**+**H**). Localize e substitua também apenas *algumas* instâncias de um padrão usando a *[seleção de vários sinais de interpolação](#multi-caret-selection)* .
 
 > [!TIP]
 > Se você está renomeando os símbolos de código, como variáveis e métodos, é melhor *[refatorá-los](../ide/reference/rename.md)* em vez de usar o recurso Localizar e Substituir. A refatoração é inteligente e reconhece o escopo, enquanto o recurso Localizar e Substituir substitui cegamente todas as instâncias.
@@ -62,7 +62,7 @@ O controle **Localizar e Substituir** aparece no canto superior direito da janel
 
 Você pode acessar opções de substituição escolhendo o botão ao lado da caixa de texto **Localizar**. Para fazer uma substituição por vez, escolha o botão **Substituir próximo** ao lado da caixa de texto **Substituir**. Para substituir todas as correspondências, escolha o botão **Substituir tudo**.
 
-Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)**.
+Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)** .
 
 ### <a name="search-tool-windows"></a>Janelas de ferramentas de pesquisa
 
@@ -92,7 +92,7 @@ Você pode definir o escopo da pesquisa escolhendo o botão **Escolher Pastas de
 
 ### <a name="create-custom-component-sets"></a>Criar conjuntos de componentes personalizados
 
-Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar componentes COM ou .NET instalados, projetos do Visual Studio incluídos em sua solução ou qualquer assembly ou biblioteca de tipos (*.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
+Você pode definir conjuntos de componentes como o escopo da pesquisa escolhendo o botão **Editar conjunto de componentes personalizados** ao lado da caixa **Examinar**. Você pode especificar componentes COM ou .NET instalados, projetos do Visual Studio incluídos em sua solução ou qualquer assembly ou biblioteca de tipos ( *.dll*, *.tlb*, *.olb*, *.exe* ou *.ocx*). Para pesquisar referências, selecione a caixa **Examinar referências**.
 
 ## <a name="multi-caret-selection"></a>Seleção de vários cursores
 
@@ -121,10 +121,10 @@ Use as seguintes teclas e ações para os comportamentos da seleção de vários
 |**Ctrl**+**Alt** e clique|Adicionar um cursor secundário|
 |**Ctrl**+**Alt** e clicar duas vezes|Adicionar uma seleção de palavra secundária|
 |**Ctrl**+**Alt** e clicar e arrastar|Adicionar uma seleção secundária|
-|**Shift**+**Alt**+**.**|Adicionar o próximo texto correspondente como uma seleção|
-|**Ctrl**+**Shift**+**Alt**+**,**|Adicionar todo o texto correspondente como seleções|
-|**Shift**+**Alt**+**,**|Remover a última ocorrência selecionada|
-|**Ctrl**+**Shift**+**Alt**+**.**|Ignorar a próxima ocorrência de correspondência|
+|**Shift**+**Alt**+ **.**|Adicionar o próximo texto correspondente como uma seleção|
+|**Ctrl**+**Shift**+**Alt**+ **,**|Adicionar todo o texto correspondente como seleções|
+|**Shift**+**Alt**+ **,**|Remover a última ocorrência selecionada|
+|**Ctrl**+**Shift**+**Alt**+ **.**|Ignorar a próxima ocorrência de correspondência|
 |**Alt** e clique|Adicionar uma seleção de caixa|
 |**Esc** ou clique|Limpar todas as seleções|
 

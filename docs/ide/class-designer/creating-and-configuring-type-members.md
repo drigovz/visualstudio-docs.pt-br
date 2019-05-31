@@ -114,7 +114,7 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2. Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>**. Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>**.
+2. Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>** . Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>** .
 
 3. Digite o nome do membro que deseja criar e pressione Enter.
 
@@ -225,7 +225,7 @@ A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>** , digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 
@@ -241,7 +241,7 @@ A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>** , digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 

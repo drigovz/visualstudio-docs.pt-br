@@ -35,7 +35,7 @@ As opções a seguir permitem selecionar a configuração e a plataforma a ser e
 
 **Configuração** Especifica quais definições de configuração devem ser exibidas ou modificadas. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.
 
-**Plataforma** Especifica quais configurações de plataforma devem ser exibidas ou modificadas. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, confira [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
+**Plataforma** Especifica quais configurações de plataforma devem ser exibidas ou modificadas. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, confira [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).
 
 ## <a name="general"></a>Geral
 As opções a seguir permitem definir várias configurações do compilador do C#.

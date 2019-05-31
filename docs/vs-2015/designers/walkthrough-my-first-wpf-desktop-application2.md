@@ -469,7 +469,7 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
   
 1. Abra **ExpenseItHome.xaml**.  
   
-2. Escolha o elemento `<Button` e adicione o seguinte código XAML imediatamente após o elemento **HorizontalAlignment="Right"**: `Click="Button_Click"`.  
+2. Escolha o elemento `<Button` e adicione o seguinte código XAML imediatamente após o elemento **HorizontalAlignment="Right"** : `Click="Button_Click"`.  
   
      Isso adiciona um manipulador de eventos ao evento `Click` do botão. O código do elemento **<Button** deve ficar assim:  
   

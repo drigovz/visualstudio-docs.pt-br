@@ -35,7 +35,7 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
 2. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto**.
 
-3. Na lista de modelos, escolha **Aplicativo do Windows Forms (.NET Framework)**. Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
+3. Na lista de modelos, escolha **Aplicativo do Windows Forms (.NET Framework)** . Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
 
     >[!NOTE]
     >Se o modelo **Aplicativo do Windows Forms (.NET Framework)** não for exibido, use o Instalador do Visual Studio para instalar a carga de trabalho **Desenvolvimento para área de trabalho do .NET**.<br/><br/>![Carga de trabalho de desenvolvimento para carga de trabalho do .NET no Instalador do Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obter mais informações, confira a página [Instalar o Visual Studio](../install/install-visual-studio.md).
@@ -57,7 +57,7 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
    ![Escolher o modelo do Visual Basic para o Aplicativo do Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
-   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)**, poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)** , poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
    >
    > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -96,7 +96,7 @@ O Visual Studio cria uma solução para seu programa. Uma solução atua como um
     - **Janela Propriedades** Nessa janela, você pode alterar as propriedades dos itens escolhidos nas outras janelas. Por exemplo, se você escolher o Form1, você poderá alterar o título configurando a propriedade **Text** e você poderá alterar a cor da tela de fundo configurando a propriedade **Backcolor**.
 
     > [!NOTE]
-    > A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)**, o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.
+    > A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)** , o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.
 
 1. Na barra de menus, escolha **Arquivo** > **Salvar Todos**.
 

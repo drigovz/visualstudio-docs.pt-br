@@ -74,13 +74,13 @@ ms.locfileid: "58927096"
 
  Este exemplo gerencia a seguinte saída.
 
- **Ponteiro de Changing - passado por valor:**
+ **Ponteiro de Changing - passado por valor:** 
 **12345**
 **12345**
 **ponteiro Changing - passado por referência:** 
 **12345**
 **ABCDE 12345**
-**passar por valor de retorno:**
+**passar por valor de retorno:** 
 **ABCDE 12345**
 ## <a name="try-pattern-methods"></a>Tente os métodos padrão
 
