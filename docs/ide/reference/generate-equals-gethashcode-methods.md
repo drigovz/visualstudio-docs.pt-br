@@ -43,7 +43,7 @@ Esta geração de código aplica-se a:
 
 1. Depois, siga um destes procedimentos:
 
-   - Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+   - Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
    - Clique com o botão direito do mouse e selecione o menu **Ações Rápidas e Refatorações**.
 

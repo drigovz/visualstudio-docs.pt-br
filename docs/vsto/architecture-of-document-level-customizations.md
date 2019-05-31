@@ -84,18 +84,18 @@ ms.locfileid: "63440364"
 
 |Excel|Palavra|
 |-----------|----------|
-|Pasta de trabalho do Excel (*. xlsx*)<br /><br /> Pasta de trabalho do Excel habilitada para macro (*. xlsm*)<br /><br /> Pasta de trabalho binária do Excel (*. xlsb*)<br /><br /> Pasta de trabalho do Excel 97-2003 (*. xls*)<br /><br /> Modelo do Excel (*. xltx*)<br /><br /> Modelo habilitado para macro do Excel (*. xltm*)<br /><br /> Modelo do Excel 97-2003 (*. xlt*)|Documento do Word (*. docx*)<br /><br /> Documento do Word habilitado para macro (*docm*)<br /><br /> Documento do Word 97-2003 (*. doc*)<br /><br /> Modelo do Word (*. dotx*)<br /><br /> Modelo do Word habilitado para macro (*. dotm*)<br /><br /> Modelo do Word 97-2003 (*dot*)|
+|Pasta de trabalho do Excel ( *. xlsx*)<br /><br /> Pasta de trabalho do Excel habilitada para macro ( *. xlsm*)<br /><br /> Pasta de trabalho binária do Excel ( *. xlsb*)<br /><br /> Pasta de trabalho do Excel 97-2003 ( *. xls*)<br /><br /> Modelo do Excel ( *. xltx*)<br /><br /> Modelo habilitado para macro do Excel ( *. xltm*)<br /><br /> Modelo do Excel 97-2003 ( *. xlt*)|Documento do Word ( *. docx*)<br /><br /> Documento do Word habilitado para macro (*docm*)<br /><br /> Documento do Word 97-2003 ( *. doc*)<br /><br /> Modelo do Word ( *. dotx*)<br /><br /> Modelo do Word habilitado para macro ( *. dotm*)<br /><br /> Modelo do Word 97-2003 (*dot*)|
 
- Você deve projetar extensões de código gerenciado somente para documentos em formatos com suporte. Caso contrário, alguns eventos podem não ser gerados quando o documento é aberto no aplicativo. Por exemplo, o <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento não será gerado quando você usa extensões de código gerenciado com pastas de trabalho salvas no formato de planilha XML do Excel ou na página da web (*. htm*; *. HTML*) formato.
+ Você deve projetar extensões de código gerenciado somente para documentos em formatos com suporte. Caso contrário, alguns eventos podem não ser gerados quando o documento é aberto no aplicativo. Por exemplo, o <xref:Microsoft.Office.Tools.Excel.Workbook.Open> evento não será gerado quando você usa extensões de código gerenciado com pastas de trabalho salvas no formato de planilha XML do Excel ou na página da web ( *. htm*; *. HTML*) formato.
 
 ### <a name="support-for-word-documents-that-have-xml-file-name-extensions"></a>Suporte para documentos do Word que têm extensões de nome de arquivo. XML
  Os modelos de projeto de nível de documento não permitem a criação de projetos com base nos seguintes formatos de arquivo:
 
-- Documento XML do Word (*\*xml*).
+- Documento XML do Word ( *\*xml*).
 
-- Documento XML do Word 2003 (*\*xml*).
+- Documento XML do Word 2003 ( *\*xml*).
 
-  Se você quiser que os usuários finais usar personalizações nesses formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais pode salvar o documento no documento de XML do Word (*\*xml*) formato ou o documento XML do Word 2003 (*\*xml*) formato e o personalização continuará a funcionar como esperado.
+  Se você quiser que os usuários finais usar personalizações nesses formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais pode salvar o documento no documento de XML do Word ( *\*xml*) formato ou o documento XML do Word 2003 ( *\*xml*) formato e o personalização continuará a funcionar como esperado.
 
 ## <a name="Components"></a> Componentes de personalizações
  Os principais componentes de uma personalização são o documento e o assembly. Além desses componentes, há várias outras partes que desempenham um papel importante na maneira como os aplicativos do Microsoft Office descobrirem e carregar as personalizações.

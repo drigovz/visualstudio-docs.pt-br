@@ -190,11 +190,11 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
    - **1** afirmar que exatamente uma instância dessa função participa de cada link.  
   
-   - **1...\\*** para o estado que participam de uma ou mais instâncias dessa função em cada link.  
+   - **1...\\** * para o estado que participam de uma ou mais instâncias dessa função em cada link.  
   
    - **entre 0 e 1** declarar que a participação é opcional.  
   
-   - **\\*** para o estado que participam de zero ou mais instâncias dessa função no link.  
+   - **\\** * para o estado que participam de zero ou mais instâncias dessa função no link.  
   
 > [!NOTE]
 > Muitas equipes não coloque informações de multiplicidade em diagramas de caso de uso, deixando as multiplicidades no valor padrão de 1. Em vez disso, eles fornecem as informações nas descrições separadas dos casos de uso. Nesse caso, todas as multiplicidades nos diagramas de caso de uso serão ocultadas.  

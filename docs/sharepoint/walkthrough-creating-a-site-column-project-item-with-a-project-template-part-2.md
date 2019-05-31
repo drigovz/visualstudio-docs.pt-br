@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um Item de projeto da coluna de Site com um modelo de projeto, parte 2 | Microsoft Docs'
+title: Criar item de projeto da coluna de site com o modelo de projeto, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 821638c09b64d9cf7045f8985a54cb5e4223d019
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436716"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401108"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
@@ -368,7 +368,7 @@ ms.locfileid: "63436716"
 
 2. Sobre o **Signing** guia, selecione o **assinar o assembly** caixa de seleção.
 
-3. No **escolher um arquivo de chave de nome forte** , escolha  **\<novo... >**.
+3. No **escolher um arquivo de chave de nome forte** , escolha  **\<novo... >** .
 
 4. No **criar chave de nome forte** caixa de diálogo, digite um nome para o novo arquivo de chave, limpe o **proteger o arquivo de chave com uma senha** caixa de seleção e, em seguida, escolha o **Okey** botão.
 

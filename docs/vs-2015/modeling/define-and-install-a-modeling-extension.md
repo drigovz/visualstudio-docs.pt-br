@@ -14,7 +14,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60049731"
@@ -116,7 +116,7 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
     1. Na **Gerenciador de soluções**, no menu de atalho do seu projeto e, em seguida, escolha **Abrir pasta no Windows Explorer**.  
   
-    2. Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
+    2. Localize o arquivo **bin\\\*\\** _Seuprojeto_ **. VSIX**  
   
 2. Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
   

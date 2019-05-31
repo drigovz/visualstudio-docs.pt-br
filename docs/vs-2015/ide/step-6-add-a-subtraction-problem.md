@@ -11,7 +11,7 @@ ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e846bc8dc8d3087c58d58ee91752abc713c5f66e
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60064214"
@@ -55,7 +55,7 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
      ![Dica de ferramenta da janela do IntelliSense](../ide/media/express-overloads.png "Express_Overloads")  
 Dica de ferramenta da janela do Intellisense  
   
-     A dica de ferramenta exibe **(+ 2 sobrecarga(s))**, o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro, enquanto uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do Intellisense para você inserir `randomizer.Next(`. Pressione as teclas de seta para cima e seta para baixo para percorrer as sobrecargas, como mostra a ilustração a seguir.  
+     A dica de ferramenta exibe **(+ 2 sobrecarga(s))** , o que significa que você pode chamar o método `Next()` de outras duas maneiras. As sobrecargas contêm números ou tipos diferentes de argumentos, para que funcionem ligeiramente diferentes um do outro. Por exemplo, um método pode levar um único argumento inteiro, enquanto uma de suas sobrecargas pode levar um inteiro e uma cadeia de caracteres. Você escolhe a sobrecarga correta com base no que você deseja fazer. Quando você adiciona código ao método de `StartTheQuiz()`, mais informações aparecem na janela do Intellisense para você inserir `randomizer.Next(`. Pressione as teclas de seta para cima e seta para baixo para percorrer as sobrecargas, como mostra a ilustração a seguir.  
   
      ![Sobrecarga para o método Next&#40;&#41; no IntelliSense](../ide/media/express-nextoverload.png "Express_NextOverload")  
 Sobrecarga para o método Next() no IntelliSense  

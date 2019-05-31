@@ -10,7 +10,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3e953d9051b9bc7e95dc29e02eb580c4d93fca26
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60066943"
@@ -33,7 +33,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
   
 1. Na barra de menus, escolha **Arquivo**, **Novo**, **Projeto**.  
   
-2. Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.  
+2. Na lista de categorias de modelo, sob **Visual c#** , selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.  
   
 3. No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.  
   
@@ -98,7 +98,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
   
 14. No menu de atalho para a pasta \js\, escolha **Add**, **Novo Item**.  
   
-15. Sob **itens do Visual c#**, selecione o **Web** categoria e, em seguida, selecione o **arquivo JavaScript** item. Nomeie o arquivo `arithmetic.js`e, em seguida, escolha o **Add** botão.  
+15. Sob **itens do Visual c#** , selecione o **Web** categoria e, em seguida, selecione o **arquivo JavaScript** item. Nomeie o arquivo `arithmetic.js`e, em seguida, escolha o **Add** botão.  
   
 16. Insira o código a seguir na arithmetic.js:  
   

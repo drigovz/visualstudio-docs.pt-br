@@ -1,5 +1,5 @@
 ---
-title: 'Como: Permitir que o código execute documentos code-behind com permissões restritas'
+title: Permitir que o código seja executado atrás de docs com permissões restritas
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a5e65c086b69a712b2df5a1a12939b41828ad198
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 32e42954958fda71d54c3c0ac2685928644e7461
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445332"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402255"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>Como: Permitir que o código execute documentos code-behind com permissões restritas
   Você pode usar o recurso de gerenciamento de direitos de informação (IRM) do Microsoft Office para restringir as permissões para um documento ou pasta de trabalho. Por padrão, o código por trás de um documento do Microsoft Office Word restrito ou a pasta de trabalho do Microsoft Office Excel não é permitido para execução. Você pode alterar o padrão para que suas extensões de código gerenciado podem acessar o modelo de objeto e sua solução funcionará.

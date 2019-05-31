@@ -77,7 +77,7 @@ ms.locfileid: "65687294"
 
  Este exemplo gerencia a seguinte saída.
 
- **Meet na glen sombrio 2/22/2003 12:00:00 AM!**
+ **Meet na glen sombrio 2/22/2003 12:00:00 AM!** 
 **De teste: Campina ensolarada**
 **cumprir à Campina ensolarada 2/22/2003 12:00:00 AM!**
 ## <a name="related-rules"></a>Regras relacionadas

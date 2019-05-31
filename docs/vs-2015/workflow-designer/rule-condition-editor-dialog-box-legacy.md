@@ -47,7 +47,7 @@ Este tópico descreve como usar o **Rule Condition Editor** caixa de diálogo em
 |**OK**|Clique para salvar a condição de regra.|  
   
 ## <a name="entering-condition-expressions"></a>Inserindo expressões de condição  
- Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu do tipo IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários suportados são **==**, **>**, **\<**, **>=**, e **<=**. Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.  
+ Expressões de condição estão inseridos como texto. Você pode digitar **isso.** no editor para fazer referência a campos, propriedades e métodos usados no fluxo de trabalho, usando um menu do tipo IntelliSense. Ou você pode digitar um nome de membro de fluxo de trabalho diretamente. Você pode adicionar operadores lógicos a condição, como AND, OU, e NOT. Você também pode adicionar predicados. Um predicado é um operador binário e dois operandos. Os operadores binários suportados são **==** , **>** , **\<** , **>=** , e **<=** . Os operandos são suportados valor constante, função aritmética, e membros públicos o escopo.  
   
  Você pode especificar o tipo de comparação, e você pode comparar com **nulo** ou uma cadeia de caracteres vazia. Você pode fazer chamadas aninhados aos membros em uma variável que contém um tipo complexo, por exemplo, `this.Address.State == "WA"`.  
   

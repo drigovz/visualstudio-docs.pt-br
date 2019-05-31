@@ -56,7 +56,7 @@ ms.locfileid: "65687364"
 
  Este exemplo gerencia a seguinte saída.
 
- **Construtor personalizado da estrutura: Falha na solicitação.**
+ **Construtor personalizado da estrutura: Falha na solicitação.** 
 **Novos valores SecuredTypeStructure 100 100**
 **SecuredTypeStructure 200 200 de novos valores**
 ## <a name="see-also"></a>Consulte também

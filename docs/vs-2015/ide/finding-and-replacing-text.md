@@ -61,7 +61,7 @@ ms.locfileid: "63426328"
   
  Você pode acessar opções de substituição escolhendo o botão ao lado da caixa de texto **Localizar**. Para fazer uma substituição por vez, escolha o botão **Substituir próximo** ao lado da caixa de texto **Substituir**. Para substituir todas as correspondências, escolha o botão **Substituir tudo**.  
   
- Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)**.  
+ Para alterar a cor de realce das correspondências, escolha o menu **Ferramentas**, selecione **Opções** e, em seguida, escolha **Ambiente** e selecione **Fontes e Cores**. Na lista **Mostrar configurações de**, selecione **Editor de Texto** e, na lista **Exibir Itens**, selecione **Localizar Realce (Extensão)** .  
   
 ### <a name="searching-tool-windows"></a>Pesquisando em janelas de ferramentas  
  É possível usar o controle **Localizar** em janelas de texto ou de código, como janelas de **Saída** e janelas **Localizar Resultados**, escolhendo **Localizar e Substituir** no menu **Editar** ou (CTRL + F).  

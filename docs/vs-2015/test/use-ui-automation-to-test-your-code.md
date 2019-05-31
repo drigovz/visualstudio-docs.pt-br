@@ -69,9 +69,9 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
 
 1. **Crie um projeto de Teste de IU Codificado.**
 
-    Os testes de IU codificados devem estar contidos em um projeto de teste de IU codificado. Se você ainda não tiver um projeto de teste de IU codificado, crie um. No **Gerenciador de Soluções**, no menu de atalho da solução, escolha **Adicionar**, **Novo Projeto** e, em seguida, selecione **Visual Basic** ou **Visual C#**. Em seguida, escolha **Teste**, **Teste de IU Codificado**.
+    Os testes de IU codificados devem estar contidos em um projeto de teste de IU codificado. Se você ainda não tiver um projeto de teste de IU codificado, crie um. No **Gerenciador de Soluções**, no menu de atalho da solução, escolha **Adicionar**, **Novo Projeto** e, em seguida, selecione **Visual Basic** ou **Visual C#** . Em seguida, escolha **Teste**, **Teste de IU Codificado**.
 
-   - <em>Não vejo os modelos de projeto do **Teste de IU Codificado</em>*.*
+   - <em>Não vejo os modelos de projeto do **Teste de IU Codificado</em>* .*
 
       Você pode estar usando uma versão do Visual Studio que não oferece suporte a testes de IU codificados. Para criar testes de IU codificados, é necessário usar o Visual Studio Enterprise.
 

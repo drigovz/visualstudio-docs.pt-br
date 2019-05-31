@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 1 | Microsoft Docs'
+title: Criar item de projeto de ação personalizada com o modelo de item, parte 1
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e00d87079fe4986dc378540c1456508c2afa0b7
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430485"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401124"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1
   Você pode estender o sistema de projeto do SharePoint no Visual Studio com a criação de tipos de item de seu próprio projeto. Neste passo a passo, você criará um item de projeto que pode ser adicionado a um projeto do SharePoint para criar uma ação personalizada em um site do SharePoint. A ação personalizada adiciona um item de menu para o **ações do Site** menu do site do SharePoint.

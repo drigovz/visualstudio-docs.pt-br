@@ -33,13 +33,13 @@ Para obter informações sobre como configurar uma regra definida para aplicativ
 
 1. Abra o **análise de código** guia nas páginas de propriedades do projeto. Você pode fazer isso em qualquer uma das seguintes maneiras:
 
-   - Na **Gerenciador de soluções**, selecione o projeto. Na barra de menus, selecione **Analyze** > **configurar a análise de código** > **para \<projectname >**.
+   - Na **Gerenciador de soluções**, selecione o projeto. Na barra de menus, selecione **Analyze** > **configurar a análise de código** > **para \<projectname >** .
 
    - Clique com botão direito no projeto no **Gerenciador de soluções** e selecione **Properties**e, em seguida, selecione o **análise de código** guia.
 
 1. No **Configuration** e **plataforma** listas, selecione a plataforma de destino e a configuração de compilação.
 
-1. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código no Build** caixa de seleção. Você também pode executar a análise de código manualmente selecionando **Analyze** > **executar análise de código** > **executar análise de código em \<projectname >**.
+1. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código no Build** caixa de seleção. Você também pode executar a análise de código manualmente selecionando **Analyze** > **executar análise de código** > **executar análise de código em \<projectname >** .
 
 1. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.
 

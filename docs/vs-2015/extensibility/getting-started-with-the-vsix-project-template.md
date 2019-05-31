@@ -12,7 +12,7 @@ ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc3f461c9e7dbdea1fd8481594292a0a247d2173
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60038660"
@@ -39,7 +39,7 @@ Você pode usar o modelo de projeto de VSIX para criar uma extensão ou para uma
   
 2. Crie um projeto vazio do VSIX.  
   
-     Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**. Selecione a **Visual Basic** ou **Visual c#**. Sob o nó selecionado, selecione **extensibilidade**e, em seguida, selecione **projeto VSIX**.  
+     Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**. Selecione a **Visual Basic** ou **Visual c#** . Sob o nó selecionado, selecione **extensibilidade**e, em seguida, selecione **projeto VSIX**.  
   
 3. Adicione o arquivo. zip para o projeto. Defina suas **Copy to Output Directory** propriedade `Copy Always`.  
   

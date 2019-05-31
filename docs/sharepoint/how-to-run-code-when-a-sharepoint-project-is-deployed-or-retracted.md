@@ -1,5 +1,5 @@
 ---
-title: 'Como: Código de execução quando um projeto do SharePoint é implantado ou retraído | Microsoft Docs'
+title: Executar o código quando o projeto do SharePoint é implantado ou cancelado
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4aadc089fba5c1f55488c72bfd5c3e46ebf59487
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9e3f46ff9d2e83307f745180288e69839a0d336e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62813466"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401770"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>Como: Executar o código quando um projeto do SharePoint é implantado ou cancelado
   Se você quiser realizar tarefas adicionais quando um projeto do SharePoint é implantado ou cancelado, você pode manipular eventos que são gerados pelo Visual Studio. Para obter mais informações, consulte [estender o SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

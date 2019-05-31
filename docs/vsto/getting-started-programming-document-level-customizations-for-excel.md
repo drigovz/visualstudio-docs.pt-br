@@ -1,5 +1,5 @@
 ---
-title: Começar a programar personalizações no nível de documento para Excel
+title: 'Excel: Introdução ao Programando personalizações no nível de documento'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 221f755ff934946ca829aa2abe088aeec864cf87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c1ff264eb1a4ca7afdc424cef7edf15bae06554
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972129"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402154"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>Começar a programar personalizações no nível de documento para Excel
   Se você estiver apenas começando criar personalizações em nível de documento do Microsoft Office Excel usando o Visual Studio, aqui está o que você precisa saber.

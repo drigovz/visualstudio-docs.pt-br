@@ -101,7 +101,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ### <a name="regular-expressions"></a>Expressões regulares  
  Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são iguais a curingas. Em particular:  
   
-1. **\.\\*** corresponde a uma cadeia de caracteres de qualquer caractere  
+1. **\.\\** * corresponde a uma cadeia de caracteres de qualquer caractere  
   
 2. **\\.** corresponde a um ponto ".")  
   

@@ -27,7 +27,7 @@ Os comandos **Ir Para** do Visual Studio executam uma pesquisa restrita no códi
 
 Entrada | Função
 ------------ | ---
-**Teclado** | Pressione **Ctrl**+**T** ou **Ctrl**+**,**
+**Teclado** | Pressione **Ctrl**+**T** ou **Ctrl**+ **,**
 **Mouse** | Selecione **Editar** > **Ir para** > **Ir para Todos**
 
 Uma janela pequena é exibida na parte superior direita do editor de código.
@@ -38,7 +38,7 @@ Conforme você digita na caixa de texto, os resultados aparecem na lista suspens
 
 ![Janela Navegar Para](../ide/media/vside_navigatetowindow.png)
 
-Também é possível inserir um ponto de interrogação (**?**) para obter ajuda adicional.
+Também é possível inserir um ponto de interrogação ( **?** ) para obter ajuda adicional.
 
 ![Ajuda de Ir Para Todos](media/go-to-all-help.png)
 

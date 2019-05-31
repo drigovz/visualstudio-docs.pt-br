@@ -60,7 +60,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
    > [!NOTE]
    > O método será chamado apenas em circunstâncias específicas, e os pontos de interrupção não funcionará automaticamente. Para obter mais informações, consulte [depurando a validação de camada](#debugging).  
   
-5. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\*. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
+5. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\* . Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
   
 ## <a name="adding-a-layer-validator-to-a-separate-vsix"></a>Adicionando um validador de camada a um VSIX separado  
  Se você quiser criar um VSIX que contém validadores de camada, comandos e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores. Para obter informações sobre outros tipos de extensão de modelagem, consulte [modelos e diagramas UML estender](../modeling/extend-uml-models-and-diagrams.md).  
@@ -71,7 +71,7 @@ No Visual Studio, os usuários podem validar o código-fonte em um projeto em um
   
 2. Identifique ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**. Se você tiver que adicionar um projeto VSIX, siga estas etapas:  
   
-    1. No **novo projeto** diálogo caixa, escolha **Visual c#**, **extensibilidade**, **projeto VSIX**.  
+    1. No **novo projeto** diálogo caixa, escolha **Visual c#** , **extensibilidade**, **projeto VSIX**.  
   
     2. Na **Gerenciador de soluções**, no menu de atalho do projeto VSIX, **definir como projeto de inicialização**.  
   

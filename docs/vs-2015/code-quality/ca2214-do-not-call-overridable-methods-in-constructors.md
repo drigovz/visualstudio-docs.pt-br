@@ -52,6 +52,6 @@ ms.locfileid: "58923440"
 
  Este exemplo gerencia a seguinte saída.
 
- **Chamando o construtor base.**
+ **Chamando o construtor base.** 
 **DoSomething derivado é chamado - inicializado? Não**
 **chamada derivado ctor.**

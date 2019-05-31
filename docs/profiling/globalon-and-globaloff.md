@@ -54,9 +54,9 @@ VSPerfCmd.exe {Launch:AppName|Attach:PID} /{GlobalOff|GlobalOn}[Options]
 
  **Anexar:** `PID` Inicia a criação de perfil do processo especificado.
 
- {**ProcessOff**&#124;**ProcessOn**}**:**`PID` Interrompe ou inicia a criação de perfil para o processo especificado.
+ {**ProcessOff**&#124;**ProcessOn**} **:** `PID` Interrompe ou inicia a criação de perfil para o processo especificado.
 
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID` Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID` Interrompe ou inicia a criação de perfil para o processo especificado (somente no método de instrumentação).
 
 ## <a name="example"></a>Exemplo
  Neste exemplo, as opções **GlobalOff** e **GlobalOn** são usadas para evitar a coleta de dados de criação de perfil para inicialização e desligamento do aplicativo.

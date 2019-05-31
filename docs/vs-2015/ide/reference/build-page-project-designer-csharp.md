@@ -40,7 +40,7 @@ Use a página **Compilar** do **Designer de Projeto** para especificar as propri
  Especifica quais definições de configuração exibir ou modificar. As configurações podem ser **Ativa (Depuração)** (esse é o padrão), **Depuração**, **Versão** ou **Todas as Configurações**.  
   
  **Plataforma**  
- Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)**. É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
+ Especifica quais configurações de plataforma exibir ou modificar. A configuração padrão é **Ativo (Qualquer CPU)** . É possível alterar a plataforma ativa usando o **Configuration Manager**. Para obter mais informações, consulte [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="general"></a>Geral  
  As opções a seguir permitem definir várias configurações do compilador do C#.  

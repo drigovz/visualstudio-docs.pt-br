@@ -71,7 +71,7 @@ ms.locfileid: "65687351"
 
  Este exemplo gerencia a seguinte saída.
 
- **Falha na demanda de confiança: solicitação completa.**
+ **Falha na demanda de confiança: solicitação completa.** 
 **ClassRequiringFullTrust.DoWork foi chamado.**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA2117: Os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)

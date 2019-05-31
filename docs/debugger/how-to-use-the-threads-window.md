@@ -37,7 +37,7 @@ Crie o seguinte projeto de aplicativo de vários threads para usar neste tutoria
 1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +**), escolha **modelos**e, em seguida:
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **console** (ou **c + +** ), escolha **modelos**e, em seguida:
 
     - Para C#, escolha **criar novo projeto de aplicativo de Console (.NET Framework)** para C#. Na caixa de diálogo que aparece, escolha **Criar**.
     - Para C++, escolha **criar novo projeto de aplicativo de Console**. Na caixa de diálogo que aparece, escolha **Criar**.
@@ -46,13 +46,13 @@ Crie o seguinte projeto de aplicativo de vários threads para usar neste tutoria
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo, escolha o seguinte:
-    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)**.
+    - Para um C# aplicativo, em **Visual C#** , escolha **área de trabalho do Windows**e, em seguida, no painel central, escolha **aplicativo de Console (.NET Framework)** .
     - Para um C++ aplicativo, em **Visual C++** , escolha **área de trabalho do Windows**e, em seguida, escolha **aplicativo de Console do Windows**.
 
     Em seguida, digite um nome como **MyThreadWalkthroughApp** e clique em **Okey**.
     ::: moniker-end
 
-    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
+    Caso não veja o modelo de projeto **Aplicativo de Console**, acesse **Ferramentas** > **Obter Ferramentas e Recursos...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento para desktop com .NET** ou **Desenvolvimento para desktop com C++** e, em seguida, selecione **Modificar**.
 
     O novo projeto aparece na **Gerenciador de soluções**, e um arquivo de origem chamado *Program.cs* ou *mythreadwalkthroughapp. cpp* é aberto na janela de código de origem.
 

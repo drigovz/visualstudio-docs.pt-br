@@ -55,7 +55,7 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
   
     [Definindo um manipulador de gesto](#gesture)  
   
-6. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\*. Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
+6. Para instalar a extensão na instância principal do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou em outro computador, localize o **. VSIX** de arquivos em *bin\\* . Copie-o para o computador no qual você deseja instalá-lo e, em seguida, clique duas vezes nele. Para desinstalar, use **extensões e atualizações** sobre o **ferramentas** menu.  
   
 ## <a name="adding-a-command-or-gesture-to-a-separate-vsix"></a>Adicionando um comando ou gesto a um VSIX separado  
  Se você quiser criar um VSIX que contém comandos, validadores de camada e outras extensões, é recomendável que você crie um projeto para definir o VSIX e projetos separados para os manipuladores. Para obter informações sobre outros tipos de extensão de modelagem, consulte [modelos e diagramas UML estender](../modeling/extend-uml-models-and-diagrams.md).  
@@ -69,7 +69,7 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
   
 2. Identifique ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**. Para adicionar um projeto VSIX:  
   
-    1. No **novo projeto** diálogo caixa, expanda **Visual c#**, em seguida, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.  
+    1. No **novo projeto** diálogo caixa, expanda **Visual c#** , em seguida, clique em **extensibilidade**e, em seguida, clique em **projeto VSIX**.  
   
     2. No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
   

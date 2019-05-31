@@ -1,5 +1,5 @@
 ---
-title: 'Como: Por meio de programação recolher intervalos ou seleções em documentos'
+title: Recolher intervalos ou seleções em documentos programaticamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7394e8703f0437493536655e11b00ed302e59cff
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62575423"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402232"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Como: Por meio de programação recolher intervalos ou seleções em documentos
   Se você estiver trabalhando com um <xref:Microsoft.Office.Interop.Word.Range> ou <xref:Microsoft.Office.Interop.Word.Selection> do objeto, você talvez queira alterar a seleção para um ponto de inserção antes de inserir texto, para evitar a substituição de texto existente. Tanto a <xref:Microsoft.Office.Interop.Word.Range> e <xref:Microsoft.Office.Interop.Word.Selection> objetos têm um método de recolher, que usa o <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valores de enumeração:

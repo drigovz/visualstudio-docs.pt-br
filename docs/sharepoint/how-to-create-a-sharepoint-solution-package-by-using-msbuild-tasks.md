@@ -1,5 +1,5 @@
 ---
-title: 'Como: Criar um pacote de solução do SharePoint usando tarefas do MSBuild | Microsoft Docs'
+title: Criar pacote de solução do SharePoint usando tarefas do MSBuild
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,15 +12,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 91cef3ad04ca7b1713f7e48f87dbefe1a84d8fca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 432daff22616950e0a97164190a94082bf2db354
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966818"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401493"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>Como: Criar um pacote de solução do SharePoint usando tarefas do MSBuild
-  Você pode compilar, limpar e validar um pacote do SharePoint (*. wsp*) usando as tarefas de linha de comando do MSBuild em um computador de desenvolvimento. Você também pode usar esses comandos para automatizar o processo de compilação usando o Team Foundation Server em um computador de compilação.
+  Você pode compilar, limpar e validar um pacote do SharePoint ( *. wsp*) usando as tarefas de linha de comando do MSBuild em um computador de desenvolvimento. Você também pode usar esses comandos para automatizar o processo de compilação usando o Team Foundation Server em um computador de compilação.
 
 ## <a name="build-a-sharepoint-package"></a>Criar um pacote do SharePoint
 

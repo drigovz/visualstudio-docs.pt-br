@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um Item de projeto de ação personalizado com um modelo de Item, parte 2 | Microsoft Docs'
+title: Criar item de projeto de ação personalizada com o modelo de item, parte 2
 ms.date: 02/02/2017
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6fa4915b9621789c68ed994440de3a1ef544c40c
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430462"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401176"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
@@ -175,7 +175,7 @@ ms.locfileid: "63430462"
 
 2. Sobre o **Signing** guia, selecione o **assinar o assembly** caixa de seleção.
 
-3. No **escolher um arquivo de chave de nome forte** , escolha  **\<novo... >**.
+3. No **escolher um arquivo de chave de nome forte** , escolha  **\<novo... >** .
 
 4. No **criar chave de nome forte** caixa de diálogo, digite um nome, limpe o **proteger o arquivo de chave com uma senha** caixa de seleção e, em seguida, escolha o **Okey** botão.
 

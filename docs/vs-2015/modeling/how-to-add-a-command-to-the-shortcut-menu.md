@@ -148,7 +148,7 @@ ms.locfileid: "63426939"
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`  
   
 ## <a name="CommandSet"></a> Definir o comportamento do comando  
- Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe é normalmente  *\<YourDslName >*`CommandSet`. O mais prático é começar ao verificar o nome da classe e inspecionar o seu conteúdo.  
+ Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe é normalmente  *\<YourDslName >* `CommandSet`. O mais prático é começar ao verificar o nome da classe e inspecionar o seu conteúdo.  
   
  A classe do conjunto de comandos é derivada de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.  
   

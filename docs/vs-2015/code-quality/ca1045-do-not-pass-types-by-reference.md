@@ -77,13 +77,13 @@ ms.locfileid: "63431549"
 
  Este exemplo gerencia a seguinte saída.
 
- **Ponteiro de Changing - passado por valor:**
+ **Ponteiro de Changing - passado por valor:** 
 **12345**
 **12345**
 **ponteiro Changing - passado por referência:** 
 **12345**
 **ABCDE 12345**
-**passar por valor de retorno:**
+**passar por valor de retorno:** 
 **ABCDE 12345**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1021: Evitar parâmetros de saída](../code-quality/ca1021-avoid-out-parameters.md)

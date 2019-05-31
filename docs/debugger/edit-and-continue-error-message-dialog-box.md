@@ -40,7 +40,7 @@ As possíveis razões para essa mensagem de erro incluem:
 - Tentativa de editar o código durante a depuração de uma recuperação de desastre. Watson.
 - Tentativa de editar o código após uma exceção não tratada ocorre e a opção **desenrolar a pilha de chamadas em exceções não tratadas** não estiver selecionada.
 - Tentando editar código durante a depuração de um aplicativo de tempo de execução incorporado.
-- Tentativa de editar o código gerenciado usando uma versão do .NET Framework anteriores à 4.5.1 com um destino de aplicativo de 64 bits. Para usar Editar e continuar para o .NET Framework anteriores à 4.5.1, defina o destino como **x86** na  **\<ProjectName >** > **propriedades**  >  **Compile** guia **avançado compilador** configuração.
+- Tentativa de editar o código gerenciado usando uma versão do .NET Framework anteriores à 4.5.1 com um destino de aplicativo de 64 bits. Para usar Editar e continuar para o .NET Framework anteriores à 4.5.1, defina o destino como **x86** na  **\<ProjectName >**  > **propriedades**  >  **Compile** guia **avançado compilador** configuração.
 - Tentativa de editar o código em um assembly que foi modificado durante a depuração e foi recarregado.
 - Tentativa de editar o código em um assembly que não foi carregado.
 - Começar a depurar uma versão antiga de um aplicativo, porque a versão mais recente tem erros de compilação.

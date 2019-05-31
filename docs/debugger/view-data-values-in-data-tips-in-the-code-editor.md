@@ -75,7 +75,7 @@ Para fechar todos os DataTips, diante de **Debug** menu, selecione **limpar todo
 
 ### <a name="close-all-datatips-for-a-specific-file"></a>Fechar todos os DataTips para um arquivo específico
 
-Para fechar todos os DataTips para um arquivo específico, na **depurar** menu, selecione **limpar todos os DataTips fixados \<Filename >**.
+Para fechar todos os DataTips para um arquivo específico, na **depurar** menu, selecione **limpar todos os DataTips fixados \<Filename >** .
 
 ## <a name="expand-and-edit-information"></a>Expandir e editar informações
 Você pode usar os DataTips para expandir uma matriz, uma estrutura ou um objeto para exibir seus membros. Você também pode editar o valor de uma variável de um DataTip.

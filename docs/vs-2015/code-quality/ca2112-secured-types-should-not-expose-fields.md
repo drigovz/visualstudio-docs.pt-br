@@ -63,9 +63,9 @@ ms.locfileid: "65687320"
 
  Este exemplo gerencia a seguinte saída.
 
- **Criando uma instância de SecuredTypeWithFields.**
+ **Criando uma instância de SecuredTypeWithFields.** 
 **Campos de tipo segura: 22, 33**
-**alterando o campo do tipo seguro...**
+**alterando o campo do tipo seguro...** 
 **Campos de objeto armazenado em cache: 99, 33**
 ## <a name="related-rules"></a>Regras relacionadas
  [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)

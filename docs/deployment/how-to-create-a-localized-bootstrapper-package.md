@@ -24,7 +24,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.
 
-1. Crie uma pasta que é nomeada após o nome da localidade na *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nomepacotebootstrapper >*.
+1. Crie uma pasta que é nomeada após o nome da localidade na *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\\<Nomepacotebootstrapper >* .
 
 2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.
 
@@ -76,9 +76,9 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 
 1. Crie uma pasta com o nome *fr*. O nome da pasta deve corresponder ao nome da localidade.
 
-     Em computadores de 32 bits, crie a pasta dentro da pasta *\Arquivos de Programas\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\\\*.
+     Em computadores de 32 bits, crie a pasta dentro da pasta *\Arquivos de Programas\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\\\* .
 
-     Em computadores de 64 bits, crie a pasta dentro da pasta *\Arquivos de Programas (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\\\*.
+     Em computadores de 64 bits, crie a pasta dentro da pasta *\Arquivos de Programas (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\\\* .
 
 2. Coloque uma versão localizada dos termos de licença de software na pasta *fr*.
 

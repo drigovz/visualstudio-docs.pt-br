@@ -122,7 +122,7 @@ Há várias maneiras de suprimir as violações de regra:
 
 - Do **editor de códigos**
 
-   Para suprimir uma violação do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+**.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAXXXX** > **no código-fonte/no arquivo de supressão**.
+   Para suprimir uma violação do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+ **.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAXXXX** > **no código-fonte/no arquivo de supressão**.
 
    ![Suprimir o diagnóstico no menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 

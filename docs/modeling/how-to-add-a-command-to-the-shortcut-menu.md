@@ -147,7 +147,7 @@ Use o método neste tópico se:
 
 ## <a name="CommandSet"></a> Definir o comportamento do comando
 
-Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe é normalmente  *\<YourDslName >*`CommandSet`. É útil começar verificando o nome da classe e inspecionar o seu conteúdo.
+Sua DSL já possui alguns comandos que são implantados em uma classe parcial que é declarada em DslPackage\GeneratedCode\CommandSet.cs. Para adicionar novos comandos, você deve estender essa classe criando um novo arquivo que contém uma declaração parcial da mesma classe. O nome da classe é normalmente  *\<YourDslName >* `CommandSet`. É útil começar verificando o nome da classe e inspecionar o seu conteúdo.
 
 A classe do conjunto de comandos é derivada de <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>.
 

@@ -39,7 +39,7 @@ ms.locfileid: "63447063"
 
 - Um caminho relativo ou absoluto no padrão Windows Formatar, como *C:\Deploy\MyApplication* ou *\MyApplication*.
 
-- Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\*.
+- Um caminho de convenção de nomenclatura Universal (UNC), como  *\\\ServerName\MyApplication\\* .
 
 - Uma URL de uma web site, como http://www.microsoft.com/MyApplication.
 

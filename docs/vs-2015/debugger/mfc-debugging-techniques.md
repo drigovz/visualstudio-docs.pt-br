@@ -191,7 +191,7 @@ TRACE( _T("This is a test of the TRACE macro that uses a TCHAR string: %s %d\n")
    #endif  
    ```  
   
-    Observe que as instruções de verificação de memória são envolvidas por `#ifdef` [Debug](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/ **#endif** blocos para que eles sejam compilados apenas em versões de depuração do seu programa.  
+    Observe que as instruções de verificação de memória são envolvidas por `#ifdef` [Debug](https://msdn.microsoft.com/library/a9901568-4846-4731-a404-399d947e2e7a)/  **#endif** blocos para que eles sejam compilados apenas em versões de depuração do seu programa.  
   
     Agora que você sabe que existe um vazamento de memória, você pode usar outra função de membro [CMemoryState::DumpStatistics](https://msdn.microsoft.com/library/90d5f281-b92f-4725-a996-23ab94cf4b5d) que o ajudará a localizá-lo.  
   
@@ -364,7 +364,7 @@ Phone #: 581-0215
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizando despejos de objeto  
  Quando você deriva uma classe de [CObject](https://msdn.microsoft.com/library/95e9acd3-d9eb-4ac0-b52b-ca4a501a7a3a), pode substituir a função de membro `Dump` para fornecer informações adicionais quando usa [DumpAllObjectsSince](https://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para despejar objetos para a [janela de Saída](../ide/reference/output-window.md).  
   
- A função `Dump` grava uma representação textual das variáveis de membro do objeto em um contexto de despejo ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de acréscimo (**<<**) para enviar dados para um `CDumpContext`.  
+ A função `Dump` grava uma representação textual das variáveis de membro do objeto em um contexto de despejo ([CDumpContext](https://msdn.microsoft.com/library/98c52b2d-14b5-48ed-b423-479a4d1c60fa)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de acréscimo ( **<<** ) para enviar dados para um `CDumpContext`.  
   
  Quando você substitui a função `Dump`, primeiro deve chamar a versão da classe base do `Dump` para despejar o conteúdo do objeto da classe base. Em seguida, gere uma descrição e um valor textuais para cada variável de membro da sua classe derivada.  
   
@@ -436,9 +436,9 @@ pMyPerson->Dump( afxDump );
   
 3. Primeiro, você criará uma nova configuração de projeto.  
   
-   1. Na caixa de diálogo **Páginas de Propriedades \<Projeto>**, clique no botão **Configuration Manager**.  
+   1. Na caixa de diálogo **Páginas de Propriedades \<Projeto>** , clique no botão **Configuration Manager**.  
   
-   2. Na [caixa de diálogo do Configuration Manager](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localize seu projeto na grade. Na coluna **Configuração**, selecione **\<Novo…>**.  
+   2. Na [caixa de diálogo do Configuration Manager](https://msdn.microsoft.com/fa182dca-282e-4ae5-bf37-e155344ca18b), localize seu projeto na grade. Na coluna **Configuração**, selecione **\<Novo…>** .  
   
    3. Na [caixa de diálogo Nova Configuração de Projeto](https://msdn.microsoft.com/cca616dc-05a6-4fe3-bdc1-40c72a66f2be), digite um nome para a nova configuração, por exemplo “Depuração parcial”, na caixa **Nome de Configuração do Projeto**.  
   
@@ -478,7 +478,7 @@ pMyPerson->Dump( afxDump );
   
    6. Clique nas configurações de **Formato de Informação de Depuração** e selecione a opção desejada (normalmente **/ZI**) para obter as informações de depuração.  
   
-   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a configuração **Criar/Usar Cabeçalho Pré-Compilado** na caixa de diálogo **Propriedades \<Projeto>** (pasta **Propriedades de Configuração**, subpasta **C/C++**, categoria **Cabeçalhos Pré-compilados**).  
+   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a configuração **Criar/Usar Cabeçalho Pré-Compilado** na caixa de diálogo **Propriedades \<Projeto>** (pasta **Propriedades de Configuração**, subpasta **C/C++** , categoria **Cabeçalhos Pré-compilados**).  
   
 7. No menu **Compilar**, selecione **Compilar** para recompilar os arquivos de projeto que estão desatualizados.  
   
