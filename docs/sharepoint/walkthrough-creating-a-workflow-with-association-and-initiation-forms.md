@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando um fluxo de trabalho com associação e formulários de iniciação | Microsoft Docs'
+title: Criar um fluxo de trabalho com formulários de associação e iniciação
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b64d1c9fbbd81a21ab268dfa29287895bd355197
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430371"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401164"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação
   Este passo a passo demonstra como criar um fluxo de trabalho sequencial básico que incorpora o uso de formulários de associação e iniciação. Esses são os formulários ASPX que permitem que os parâmetros a ser adicionado a um fluxo de trabalho quando ele pela primeira vez é associado pelo administrador do SharePoint (o formulário de associação), e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).
@@ -90,7 +90,7 @@ ms.locfileid: "63430371"
 
      O **Assistente para personalização do SharePoint** é exibida.
 
-10. No **especifique o nome do fluxo de trabalho para depuração** página, aceite o nome padrão (**ExpenseReport - Workflow1**). Mantenha o valor de tipo de modelo de fluxo de trabalho padrão (**fluxo de trabalho de lista)**. Escolha o botão **Avançar**.
+10. No **especifique o nome do fluxo de trabalho para depuração** página, aceite o nome padrão (**ExpenseReport - Workflow1**). Mantenha o valor de tipo de modelo de fluxo de trabalho padrão (**fluxo de trabalho de lista)** . Escolha o botão **Avançar**.
 
 11. No **deseja que o Visual Studio associe automaticamente o fluxo de trabalho em uma sessão de depuração?** página, desmarque a caixa que associa automaticamente seu modelo de fluxo de trabalho se ela estiver marcada.
 

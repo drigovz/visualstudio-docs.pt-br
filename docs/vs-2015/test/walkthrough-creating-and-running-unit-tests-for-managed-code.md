@@ -64,7 +64,7 @@ Este passo a passo guiará você pela criação, execução e personalização d
   
     A caixa de diálogo **Novo Projeto** é exibida.  
   
-3. Em **Modelos Instalados**, clique em **Visual C#**.  
+3. Em **Modelos Instalados**, clique em **Visual C#** .  
   
 4. Na lista de tipos de aplicativos, clique em **Biblioteca de Classes**.  
   
@@ -112,7 +112,7 @@ public void Debit(double amount)
   
 #### <a name="to-create-a-unit-test-project"></a>Para criar um projeto de teste de unidade  
   
-1. No menu **Arquivo** escolha **Adicionar** e depois escolha **Novo Projeto...**.  
+1. No menu **Arquivo** escolha **Adicionar** e depois escolha **Novo Projeto...** .  
   
 2. Na caixa de diálogo Novo Projeto, expanda **Instalado**, expanda **Visual C#** e escolha **Testar**.  
   
@@ -237,7 +237,7 @@ using BankAccountNS;
 ## <a name="BKMK_Fix_your_code_and_rerun_your_tests"></a> Corrigir o código e executar novamente os testes  
  **Analisar os resultados de teste**  
   
- O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEquals`, a mensagem exibe o que era esperado (o parâmetro (<strong>esperado\<*XXX*></strong>) e o que foi de fato recebido (o parâmetro **real\<*YYY*>**). Esperávamos que o saldo diminuísse do saldo inicial, mas em vez disso, aumentou o valor da retirada.  
+ O resultado do teste contém uma mensagem que descreve a falha. Para o método `AreEquals`, a mensagem exibe o que era esperado (o parâmetro (<strong>esperado\<*XXX*></strong>) e o que foi de fato recebido (o parâmetro **real\<*YYY*>** ). Esperávamos que o saldo diminuísse do saldo inicial, mas em vez disso, aumentou o valor da retirada.  
   
  Um reexame do código de débito mostra que o teste da unidade conseguiu encontrar um bug. A quantidade de retirada é adicionada ao saldo da conta, quando deveria ser subtraída.  
   

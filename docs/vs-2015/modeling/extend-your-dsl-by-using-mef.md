@@ -98,7 +98,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
    <#@ include file="Dsl\GestureExtensionController.tt" #>  
    ```  
   
-3. Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.**:  
+3. Adicione a seguinte linha ao arquivo existente denominada **Dslpackage\commands.VSCT.** :  
   
    ```  
    <Include href="MefExtension\CommandExtensionVSCT.vsct"/>  
@@ -131,7 +131,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
    - Normalmente, esse assembly tem um nome que termina com ". DSL.dll".  
   
-   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\***  
+   - Se você tiver acesso ao projeto DSL, você pode encontrar o arquivo do assembly no diretório **Dsl\bin\\\\** *  
   
    - Se você tiver acesso ao arquivo VSIX de DSL, você pode encontrar o assembly, alterando a extensão de nome de arquivo do arquivo VSIX para. zip". Descompacte o arquivo. zip.  
   
@@ -147,7 +147,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
   
    - System.Windows.Forms.dll  
   
-4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
+4. Crie um projeto VSIX na mesma solução. Para fazer isso, na **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#** , clique em **extensibilidade**e, em seguida, selecione  **Projeto do VSIX**.  
   
 5. No Gerenciador de soluções, clique com botão direito do projeto VSIX e, em seguida, clique em **definir como projeto de inicialização**.  
   

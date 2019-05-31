@@ -139,7 +139,7 @@ Um arquivo de banco de dados do programa (.pdb), também chamado de arquivo de s
 
 - Para alterar os caminhos de pesquisa, escolha um caminho não selecionado ou escolha **New** e digite um novo caminho. Escolher **carregar** para procurar novamente os caminhos e carregar o arquivo de símbolo se ela for encontrada.
 
-- Escolher **procurar e localizar**_nome do executável_**...**  para substituir opções de qualquer símbolo e repita os caminhos de pesquisa. O arquivo do símbolo será carregado, se for encontrado, ou um Explorador de Arquivos será exibido para que você selecione manualmente o arquivo de símbolo.
+- Escolher **procurar e localizar**_nome do executável_ **...**  para substituir opções de qualquer símbolo e repita os caminhos de pesquisa. O arquivo do símbolo será carregado, se for encontrado, ou um Explorador de Arquivos será exibido para que você selecione manualmente o arquivo de símbolo.
 
 - Escolha **alterar configurações de símbolo...**  para exibir o **Debugging** / **símbolos** página da caixa de diálogo Opções do VS.
 

@@ -65,7 +65,7 @@ Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre 
 
 Os usuários podem criar tantos branches quanto desejarem para cada repositório, porém é recomendado que, após terminar de usar um branch, ele seja excluído para manter o repositório organizado.
 
-Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...**:
+Branches são exibidos no Visual Studio para Mac navegando para **Controle de versão > Gerenciar branches e remotos...** :
 
 ![Exibição Branches](media/version-control-gitBranch2.png)
 

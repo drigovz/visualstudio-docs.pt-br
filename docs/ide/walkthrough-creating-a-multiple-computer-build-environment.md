@@ -62,7 +62,7 @@ Esta seção aborda a cópia de arquivos específicos, compiladores, ferramentas
 - Em um computador x86, a localização padrão é *C:\Arquivos de Programas\Microsoft Visual Studio*
 - Em um computador x64, a localização padrão é *C:\Arquivos de Programas (x86)\Microsoft Visual Studio*
 
-Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)*. Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%*.
+Observe que o nome da pasta *Arquivos de Programa* depende do sistema operacional instalado. Em um computador x86, o nome é *Arquivos de Programa*; em um computador x64, o nome é *Arquivos de Programa (x86)* . Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta *Arquivos de Programa* como *%ProgramFiles%* .
 
 > [!NOTE]
 > No computador de build, todos os arquivos relevantes precisam estar na mesma unidade. No entanto, a letra da unidade para essa unidade pode ser diferente da letra da unidade para a unidade na qual o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.
@@ -332,7 +332,7 @@ Você pode criar um ambiente de build que possa ser implantado em vários comput
 
 2. Copie os diretórios e arquivos, conforme descrito na seção [Copiar arquivos do computador host para o computador de build](../ide/walkthrough-creating-a-multiple-computer-build-environment.md#copy-files-from-the-host-computer-to-the-build-computer) deste passo a passo, mas cole-os no diretório *%Depot%* recém-criado. Por exemplo, copie de *%ProgramFiles%\Windows Kits\8.0\bin* para *%Depot%\Windows Kits\8.0\bin*.
 
-3. Quando os arquivos forem colados em *%Depot%*, faça estas alterações:
+3. Quando os arquivos forem colados em *%Depot%* , faça estas alterações:
 
     - Em %Depot%\MSBuild\Microsoft.Cpp\v4.0\v110\Microsoft.CPP.Targets, \Microsoft.Cpp.InvalidPlatforms.targets\\, \Microsoft.cppbuild.targets\\ e \Microsoft.CppCommon.targets\\, altere todas as instâncias de
 

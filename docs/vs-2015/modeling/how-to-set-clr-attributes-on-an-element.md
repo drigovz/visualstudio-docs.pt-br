@@ -29,7 +29,7 @@ Atributos personalizados são atributos especiais que podem ser adicionados a di
   
 1. No **Gerenciador de DSL**, selecione o elemento ao qual você deseja adicionar um atributo personalizado.  
   
-2. No **propriedades** janela, ao lado de **atributos personalizados** propriedade, clique no botão Procurar (**...** ) ícone.  
+2. No **propriedades** janela, ao lado de **atributos personalizados** propriedade, clique no botão Procurar ( **...** ) ícone.  
   
      O **editar atributos** caixa de diálogo é aberta.  
   

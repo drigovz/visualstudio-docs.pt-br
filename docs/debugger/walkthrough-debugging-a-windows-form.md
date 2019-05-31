@@ -48,7 +48,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
 
      A caixa de diálogo **Novo Projeto** é exibida.
 
-2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++**, em seguida,
+2. No painel Tipos de Projeto, abra o nó **Visual Basic**, **Visual C#** ou **Visual C++** , em seguida,
 
     1. Para o Visual Basic ou Visual c#, selecione **área de trabalho do Windows** > **aplicativo de formulário do Windows**.
 

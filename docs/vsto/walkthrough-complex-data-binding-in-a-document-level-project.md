@@ -210,7 +210,7 @@ ms.locfileid: "62981670"
 
 4. Clique no botão de seta para a **título** cabeçalho da coluna novamente.
 
-5. Clique em **(All)**.
+5. Clique em **(All)** .
 
      A filtragem é removida e todas as linhas são exibidos.
 

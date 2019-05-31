@@ -82,7 +82,7 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
   
 3. No **política de Check-in** lista, clique duas vezes em **análise de código**e certifique-se de que o **impor a análise de código para código gerenciado** caixa de seleção está selecionada.  
   
-4. No **executar este conjunto de regras** , clique em  **\<Selecionar conjunto de regras de controle de origem >**.  
+4. No **executar este conjunto de regras** , clique em  **\<Selecionar conjunto de regras de controle de origem >** .  
   
 5. Digite o caminho do arquivo de conjunto de regras de política de check-in no controle de versão.  
   
@@ -116,6 +116,6 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
   
 6. Para ignorar o código em componentes de outras empresas, selecione a **Suprimir resultados do código gerado** caixa de seleção.  
   
-7. No **executar este conjunto de regras** , clique em  **\<procurar... >**.  
+7. No **executar este conjunto de regras** , clique em  **\<procurar... >** .  
   
 8. Especifique a versão local do arquivo de conjunto de regras de política de check-in.

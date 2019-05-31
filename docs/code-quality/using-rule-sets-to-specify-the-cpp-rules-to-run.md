@@ -62,7 +62,7 @@ Para criar uma nova regra personalizada definida, você pode salvá-lo usando um
 
 - Para recolher as regras em todos os grupos, escolha **Recolher tudo**.
 
-- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >**.
+- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >** .
 
 - Para adicionar ou remover campos nas colunas de regra, escolha **opções de coluna**.
 

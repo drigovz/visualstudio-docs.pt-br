@@ -15,7 +15,7 @@ ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 909242aaf8dd4caaee7af75e40554aaff648df68
 ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/22/2019
 ms.locfileid: "60045649"
@@ -97,7 +97,7 @@ Na [!INCLUDE[vsUltShort](../includes/vsultshort-md.md)], [!INCLUDE[vsPreShort](.
   
 - Para recolher as regras em todos os grupos, clique em **Recolher tudo**.  
   
-- Para alterar o campo que as regras são agrupadas por, selecione o campo do **Group By** lista. Para exibir as regras não agrupadas, selecione  **\<None >**.  
+- Para alterar o campo que as regras são agrupadas por, selecione o campo do **Group By** lista. Para exibir as regras não agrupadas, selecione  **\<None >** .  
   
 - Para adicionar ou remover campos nas colunas de regra, clique em **opções de coluna**.  
   

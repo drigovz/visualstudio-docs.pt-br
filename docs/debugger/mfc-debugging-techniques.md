@@ -358,7 +358,7 @@ Para os objetos alocados no heap, no entanto, você deve excluir explicitamente 
 #### <a name="BKMK_Customizing_object_dumps"></a> Personalizando despejos de objeto
 Quando você deriva uma classe de [CObject](/cpp/mfc/reference/cobject-class), pode substituir a função de membro `Dump` para fornecer informações adicionais quando usa [DumpAllObjectsSince](/cpp/mfc/reference/cmemorystate-structure#dumpallobjectssince) para despejar objetos para a [janela de Saída](../ide/reference/output-window.md).
 
-A função `Dump` grava uma representação textual das variáveis de membro do objeto em um contexto de despejo ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de acréscimo (**<<**) para enviar dados para um `CDumpContext`.
+A função `Dump` grava uma representação textual das variáveis de membro do objeto em um contexto de despejo ([CDumpContext](/cpp/mfc/reference/cdumpcontext-class)). O contexto de despejo é semelhante a um fluxo de E/S. Você pode usar o operador de acréscimo ( **<<** ) para enviar dados para um `CDumpContext`.
 
 Quando você substitui a função `Dump`, primeiro deve chamar a versão da classe base do `Dump` para despejar o conteúdo do objeto da classe base. Em seguida, gere uma descrição e um valor textuais para cada variável de membro da sua classe derivada.
 
@@ -430,9 +430,9 @@ Criar os módulos selecionados com as bibliotecas de depuração MFC permite usa
 
 3. Primeiro, você criará uma nova configuração de projeto.
 
-   1. Na caixa de diálogo **Páginas de Propriedades \<Projeto>**, clique no botão **Configuration Manager**.
+   1. Na caixa de diálogo **Páginas de Propriedades \<Projeto>** , clique no botão **Configuration Manager**.
 
-   2. Na [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. Na coluna **Configuração**, selecione **\<Novo…>**.
+   2. Na [caixa de diálogo do Configuration Manager](/previous-versions/visualstudio/visual-studio-2010/t1hy4dhz(v=vs.100)), localize seu projeto na grade. Na coluna **Configuração**, selecione **\<Novo…>** .
 
    3. Na [caixa de diálogo Nova Configuração de Projeto](/previous-versions/visualstudio/visual-studio-2010/0eh8w4cf(v=vs.100)), digite um nome para a nova configuração, por exemplo “Depuração parcial”, na caixa **Nome de Configuração do Projeto**.
 
@@ -472,7 +472,7 @@ Criar os módulos selecionados com as bibliotecas de depuração MFC permite usa
 
    6. Clique nas configurações de **Formato de Informação de Depuração** e selecione a opção desejada (normalmente **/ZI**) para obter as informações de depuração.
 
-   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a configuração **Criar/Usar Cabeçalho Pré-Compilado** na caixa de diálogo **Propriedades \<Projeto>** (pasta **Propriedades de Configuração**, subpasta **C/C++**, categoria **Cabeçalhos Pré-compilados**).
+   7. Se você estiver usando um aplicativo gerado por assistente ou se tiver cabeçalhos pré-compilado, será preciso desativar os cabeçalhos pré-compilados ou recompilá-los antes de compilar os outros módulos. Caso contrário, você receberá o aviso C4650 e mensagens de erro C2855. Você pode desligar cabeçalhos pré-compilados alterando a configuração **Criar/Usar Cabeçalho Pré-Compilado** na caixa de diálogo **Propriedades \<Projeto>** (pasta **Propriedades de Configuração**, subpasta **C/C++** , categoria **Cabeçalhos Pré-compilados**).
 
 7. No menu **Compilar**, selecione **Compilar** para recompilar os arquivos de projeto que estão desatualizados.
 

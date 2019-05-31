@@ -47,7 +47,7 @@ Este passo a passo descreve como usar as janelas **Tarefas Paralelas** e **Pilha
 - Como as janelas lidam com a escala por agrupamento, zoom e outros recursos relacionados.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
- Este passo a passo pressupõe que **Just My Code** está habilitado. No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
+ Este passo a passo pressupõe que **Just My Code** está habilitado. No menu **Ferramentas**, clique em **Opções**, expanda o nó **Depuração**, selecione **Geral** e **Habilitar Apenas Meu Código (somente Gerenciado)** . Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  
   
 ## <a name="c-sample"></a>Exemplo do C#  
  Se você usar o exemplo do C#, este passo a passo também pressuporá que o código externo está oculto. Para ativar ou desativar a exibição do código externo, clique com o botão direito do mouse no cabeçalho de tabela **Nome** da janela **Pilha de Chamadas** e, depois, marque ou desmarque **Mostrar Código Externo**. Se você não definir esse recurso, ainda poderá usar este passo a passo, mas os resultados poderão ser diferentes das ilustrações.  

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criando e depurando uma solução de fluxo de trabalho do SharePoint | Microsoft Docs'
+title: Criar e depurar a solução de fluxo de trabalho do SharePoint
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ad39c8b8bad373cd7892a1eeda89b149622913a7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 51682ba54d6a6ae0698ade6bb52d5972cd63111f
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430362"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401054"
 ---
 # <a name="walkthrough-create-and-debug-a-sharepoint-workflow-solution"></a>Passo a passo: Criar e depurar uma solução de fluxo de trabalho do SharePoint
   Este passo a passo demonstra como criar um modelo de fluxo de trabalho sequencial básico. O fluxo de trabalho verifica uma propriedade de uma biblioteca de documentos compartilhados para determinar se um documento foi revisado. Se o documento foi revisado, o fluxo de trabalho é concluído.
@@ -57,7 +57,7 @@ ms.locfileid: "63430362"
 
 3. Escolher **biblioteca** sobre o **ferramentas de biblioteca** faixa de opções e, em seguida, escolha o **criar coluna** botão na faixa de opções para criar uma nova coluna.
 
-4. Nome da coluna **Status do documento**, defina seu tipo como **opção (menu para sua escolha)**, especifique as três opções a seguir e, em seguida, escolha o **Okey** botão:
+4. Nome da coluna **Status do documento**, defina seu tipo como **opção (menu para sua escolha)** , especifique as três opções a seguir e, em seguida, escolha o **Okey** botão:
 
     - **Revisão necessária**
 
