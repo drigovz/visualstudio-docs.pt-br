@@ -1,5 +1,5 @@
 ---
-title: 'Designer de fluxo de trabalho - como: Definir e consumir representantes de atividade'
+title: 'Designer de fluxo de trabalho: Definir e consumir representantes de atividade'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c68e42ad-3ec0-4c2d-b104-fe36c6d83b5e
@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 34cb06bbc5c9575f5a10507a8015c9819e7b533b
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949507"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431788"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Como: Definir e consumir representantes de atividades no Designer de Fluxo de Trabalho
 
@@ -34,7 +34,7 @@ ms.locfileid: "62949507"
 
 5. Clique em **criar argumento**. Nomeie o novo argumento **itens**.
 
-6. No **tipo de argumento** coluna, selecione **matriz de T []**.
+6. No **tipo de argumento** coluna, selecione **matriz de T []** .
 
 7. No navegador de tipo, selecione **objeto** e, em seguida, selecione **Okey**.
 
@@ -52,7 +52,7 @@ ms.locfileid: "62949507"
 
 14. No **tipo de variável** coluna, selecione **Int32**. Deixe o **escopo** como **enquanto**e o **padrão** coluna em branco.
 
-15. Definir a **condição** propriedade do <xref:System.Activities.Statements.While> atividade **índice < Items.Length;**.
+15. Definir a **condição** propriedade do <xref:System.Activities.Statements.While> atividade **índice < Items.Length;** .
 
 16. Arraste um <xref:System.Activities.Statements.InvokeDelegate> a atividade do **primitivos** seção da caixa de ferramentas para o **corpo** do <xref:System.Activities.Statements.While> atividade.
 
@@ -60,7 +60,7 @@ ms.locfileid: "62949507"
 
 18. No **propriedades** grade para o <xref:System.Activities.Statements.InvokeDelegate> atividade, clique no **...**  botão de **argumentos do delegado** propriedade.
 
-19. No **valor** coluna de argumento nomeado **argumento**, insira **itens [Index]**. Clique em **Okey** para fechar o **DelegateArguments** caixa de diálogo.
+19. No **valor** coluna de argumento nomeado **argumento**, insira **itens [Index]** . Clique em **Okey** para fechar o **DelegateArguments** caixa de diálogo.
 
 20. Arraste uma atividade de <xref:System.Activities.Statements.Assign> na linha horizontal abaixo de atividade de <xref:System.Activities.Statements.InvokeDelegate> . O <xref:System.Activities.Statements.Assign> atividade é criada e uma <xref:System.Activities.Statements.Sequence> atividade é criada automaticamente para conter as duas atividades na **corpo** seção o **MyForEach** atividade. A sequência é necessária, pois o **corpo** seção pode conter apenas uma única atividade. Criar automaticamente uma nova <xref:System.Activities.Statements.Sequence> atividade é um novo recurso do .NET Framework 4.5.
 
@@ -76,7 +76,7 @@ ms.locfileid: "62949507"
 
 3. Arraste uma **MyForEach** atividade da caixa de ferramentas para a superfície do designer. A atividade está em uma seção da caixa de ferramentas com o mesmo nome que o projeto.
 
-4. Defina a **itens** propriedade da **MyForEach** atividade para **novo objeto [] {1, "abc"}**.
+4. Defina a **itens** propriedade da **MyForEach** atividade para **novo objeto [] {1, "abc"}** .
 
 5. Arraste uma <xref:System.Activities.Statements.WriteLine> a atividade do **primitivos** seção da caixa de ferramentas a **Delegate: corpo** seção o **MyForEach** atividade.
 

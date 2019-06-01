@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 3a81f6aa138b361a44a272ebda3557d27a914c64
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53dce8b6b468dd5754b5708afccdcbe6cb908d1d
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62854217"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432223"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>Gravar e reproduzir aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure usando o depurador de instantâneo
 
@@ -44,14 +44,14 @@ Neste tutorial, você irá:
 * Depuração em tempo de viagem está disponível para os seguintes aplicativos web do Azure VM:
   * Aplicativos do ASP.NET (AMD64) em execução no .NET Framework 4.8 ou posterior.
 
-## <a name="open-your-project-and-start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Abra seu projeto e iniciar o depurador de instantâneos com a depuração em tempo de viagem habilitado
+## <a name="start-the-snapshot-debugger-with-time-travel-debugging-enabled"></a>Iniciar o depurador de instantâneos com a depuração em tempo de viagem habilitado
 
 1. Abra o projeto para o qual você gostaria de coletar um tempo de gravação de viagem.
 
     > [!IMPORTANT]
     > Para iniciar o TTD, você precisará abrir o *mesma versão do código-fonte* que é publicado ao seu serviço de VM do Azure.
 
-1. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione a VM do Azure que seu aplicativo web é implantado e uma conta de armazenamento do Azure. Selecione o **habilitar a depuração em tempo de viagem** opção de visualização e, em seguida, clique em **Attach**.
+1. Escolha **Depurar > Anexar Depurador de Instantâneos...** . Selecione a VM do Azure que seu aplicativo web é implantado e uma conta de armazenamento do Azure. Selecione o **habilitar a depuração em tempo de viagem** opção de visualização e, em seguida, clique em **Attach**.
 
       ![Selecionar recurso do Azure](../debugger/media/time-travel-debugging-select-azure-resource-vm.png)
 
