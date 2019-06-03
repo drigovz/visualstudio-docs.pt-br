@@ -1,5 +1,5 @@
 ---
-title: Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity) | Microsoft Docs
+title: Solução de problemas e problemas conhecidos (Ferramentas do VS para Unity)
 ms.custom: ''
 ms.date: 07/03/2018
 ms.technology: vs-unity-tools
@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d6856ff73f9aab2325a31e164e7983a919097d46
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815580"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261121"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Solução de problemas e problemas conhecidos (Ferramentas do Visual Studio para Unity)
 
@@ -54,7 +54,7 @@ Isso deve corrigir o problema. Caso o problema persista, execute um prompt de co
 
 Vários plug-ins do Unity como Parse, FMOD, UMP (Player de Mídia Universal), ZFBrowser ou Embedded Browser usam threads nativos. Isso é um problema quando um plug-in acaba anexando um thread nativo ao tempo de execução, fazendo chamadas de bloqueio para o sistema operacional. Isso significa que o Unity não consegue interromper esse thread para o depurador (ou o recarregamento de domínio) e trava.
 
-Para o FMOD, há uma solução alternativa. Você pode passar o [sinalizador](https://www.fmod.org/docs/content/generated/FMOD_STUDIO_INITFLAGS.html) de inicialização `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para desabilitar o processamento assíncrono e executar todo o processamento no thread principal.
+Para o FMOD, há uma solução alternativa. Você pode passar o [sinalizador](https://www.fmod.com/resources/documentation-studio?version=2.0&page=https://fmod.com/resources/documentation-api?version=2.0&page=studio-api-system.html#fmod_studio_initflags) de inicialização `FMOD_STUDIO_INIT_SYNCHRONOUS_UPDATE` para desabilitar o processamento assíncrono e executar todo o processamento no thread principal.
 
 ## <a name="incompatible-project-in-visual-studio"></a>Projeto incompatível no Visual Studio
 

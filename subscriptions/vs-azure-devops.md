@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9c10a8ec7e8ec71bee29f707e9abb8eb43f2b3c3
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: dbd08914123455fe0fc9db6dd6927dfe9e49b22e
+ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945152"
+ms.lasthandoff: 05/23/2019
+ms.locfileid: "66177725"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 
@@ -26,12 +26,16 @@ Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua 
 
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Azure Boards e Repos (básico), Azure Test Plans, Azure Artifacts, Azure Pipelines (auto-hospedado)       |  Sim          |
-| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail,                                        | Azure Boards e Repos (básico)                                                            |  Sim          |
+| Visual Studio Enterprise (Standard, nuvem mensal)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado, FTE  | Azure Boards e Repos (Básico), Azure Test Plans, Azure Artifacts<sup>2</sup>, Azure Pipelines (auto-hospedado)       |  Sim          |
+| Visual Studio Professional (Standard, nuvem mensal) | VL, Azure, Retail,                                        | Azure Boards e Repos (Básico), Azure Artifacts<sup>2</sup>                                                            |  Sim          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Azure Boards e Repos (básico), Azure Test Plans                                              |  Sim          |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Azure Boards e Repos (básico), Azure Test Plans                                              |  Sim          |
 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark e MCT Software & Services Developer. Exclui: MCT Software & Services e Imagine.*
+
+<sup>2</sup>  *Inclui 2 GB sem custos*
+
+
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
