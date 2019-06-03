@@ -46,7 +46,7 @@ Você pode alterar o namespace de uma linguagem específica de domínio. Fazer a
 
 10. Redefina a instância Experimental do Visual Studio.
 
-    1. Exclua **\Users\\**_{o nome}_**\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
+    1. Exclua **\Users\\** _{o nome}_ **\AppData\Local\Microsoft\VisualStudio\\\*Exp**.
 
     2. Sobre o Windows **inicie** menu, escolha **todos os programas** > **SDK do Microsoft Visual Studio 2010** > **ferramentas**  >  **Redefinir a instância Experimental**.
 
