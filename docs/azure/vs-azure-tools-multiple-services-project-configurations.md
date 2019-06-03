@@ -1,5 +1,5 @@
 ---
-title: Configurando seu projeto do Azure usando várias configurações de serviço | Microsoft Docs
+title: Configurar um projeto do Azure com várias configurações de serviço
 description: Saiba como configurar um projeto de serviço de nuvem do Azure alterando os arquivos ServiceDefinition.csdef, ServiceConfiguration.Local.cscfg e ServiceConfiguration.Cloud.cscfg.
 author: ghogen
 manager: jillfra
@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 853920ac30b6e779c94bf82aa6c655bf81146d2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62555291"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66260646"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
@@ -51,7 +51,7 @@ Se você já tiver adicionado um ponto de extremidade HTTPS, a opção de ponto 
 
 ### <a name="diagnostics"></a>Diagnóstico
 
-Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor (**...**) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
+Por padrão, o diagnóstico é habilitado para a função web. A conta de armazenamento e o projeto de serviço de nuvem do Azure são definidos para usar o emulador de armazenamento local. Quando você estiver pronto para implantar no Azure, selecione o botão de construtor ( **...** ) para usar o armazenamento do Azure. Você pode transferir os dados de diagnóstico para a conta de armazenamento sob demanda ou em intervalos agendados automaticamente. Para saber mais sobre o diagnóstico do Azure, veja [Habilitando o Diagnóstico nos Serviços de Nuvem do Azure e nas Máquinas Virtuais](/azure/cloud-services/cloud-services-dotnet-diagnostics).
 
 ## <a name="settings-page"></a>Página Configurações
 
@@ -68,7 +68,7 @@ Você pode definir a cadeia de conexão para usar o armazenamento local conforme
 
 Para criar uma cadeia de conexão, selecione **Adicionar Configuração** e defina **Tipo** como "Cadeia de Conexão".
 
-Para cadeias de conexão novas ou existentes, selecione **...*** à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
+Para cadeias de conexão novas ou existentes, selecione **...** * à direita do campo **Valor** para abrir a caixa de diálogo **Criar Cadeia de Conexão de Armazenamento**:
 
 1. Em **Conectar usando**, escolha a opção **Sua assinatura** para selecionar uma conta de armazenamento de uma assinatura. O Visual Studio, em seguida, obtém as credenciais da conta de armazenamento automaticamente do arquivo `.publishsettings`.
 1. Selecionar **Credenciais inseridas manualmente** permite que você especifique o nome da conta e a chave diretamente usando as informações do Portal do Azure. Para copiar a chave de conta:

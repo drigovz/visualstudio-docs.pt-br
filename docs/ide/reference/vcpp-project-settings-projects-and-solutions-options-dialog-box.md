@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
+title: Opções de Configurações do projeto do C++
 ms.date: 08/02/2017
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2d3f81659930f75cda3c4ec0873837f7486e8b60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 186db68e9b69b98a9fe9d9a2a8c8941302304cb2
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789311"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263083"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] e configurações de projeto relacionadas ao log de build e tipos de arquivo de suporte.
@@ -32,7 +32,7 @@ Esta caixa de diálogo permite que você defina o build de [!INCLUDE[vcprvc](../
 
 1. No menu **Ferramentas**, clique em **Opções**.
 
-2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++**.
+2. Selecione **Projetos e Soluções** e, em seguida, selecione **Configurações do Projeto VC++** .
 
 ## <a name="build-logging"></a>Log de build
  **Sim**

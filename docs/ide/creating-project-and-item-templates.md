@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 30a20e5810d5c361fddf8cd934863fcb1186b5d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83ac401b67444d4fdd467d5aefeb46bccb5e7e84
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793446"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037006"
 ---
 # <a name="project-and-item-templates"></a>Modelos de projeto e de item
 
@@ -47,7 +47,7 @@ Todos os modelos de projeto e de item, sejam eles instalados com o Visual Studio
 
 ::: moniker-end
 
-   Para obter mais informações sobre arquivos *.vstemplate*, consulte [Parâmetros de modelo](../ide/template-parameters.md).
+   Para obter mais informações sobre arquivos *.vstemplate*, confira [Marcas de modelo](template-tags.md) e [Parâmetros de modelo](../ide/template-parameters.md).
 
 Quando esses arquivos são compactados em um arquivo *.zip* e colocados na pasta correta, o Visual Studio os exibe automaticamente nos seguintes locais:
 
@@ -71,6 +71,7 @@ Para obter mais informações sobre pastas de modelo, confira [Como: Localizar e
 
 - [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)
+- [Marcas de modelo](template-tags.md)
 - [Parâmetros de modelo](../ide/template-parameters.md)
 - [Personalizar modelos](../ide/customizing-project-and-item-templates.md)
 - [Pacotes do NuGet em modelos do Visual Studio](/nuget/visual-studio-extensibility/visual-studio-templates)

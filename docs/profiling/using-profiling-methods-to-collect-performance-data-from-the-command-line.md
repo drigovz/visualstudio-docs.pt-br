@@ -1,5 +1,5 @@
 ---
-title: Usando Métodos da Criação de Perfil para Coletar Dados de Desempenho por meio da Linha de Comando | Microsoft Docs
+title: Usar métodos de criação de perfil de linha de comando para obter dados de desempenho
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a6350c16da79bc102f85a382ce57aa6924bb2c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62831434"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66263820"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usar métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando
 A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferramentas de Criação de Perfil, ferramentas e opções de linha de comando depende de fatores como o tipo de aplicativo para o qual você está criando um perfil, o método de criação de perfil que você deseja usar e se o aplicativo de destino é gravado no formato nativo ou em código [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].

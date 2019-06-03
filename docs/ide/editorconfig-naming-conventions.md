@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4385ad73b29f1266bb368a781da11279f887942b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 68840957a0c152add06804eac58f3d24afa1e846
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847369"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261971"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -209,6 +209,6 @@ Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão embaix
 
 ## <a name="see-also"></a>Consulte também
 
+- [Convenções de nomenclatura de Roslyn](https://github.com/dotnet/roslyn/blob/master/.editorconfig#L63)
 - [Convenções de formatação e linguagem .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
-- [Arquivo .editorconfig da plataforma do compilador do .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

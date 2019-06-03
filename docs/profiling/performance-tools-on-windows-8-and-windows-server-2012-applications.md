@@ -1,5 +1,5 @@
 ---
-title: Ferramentas de Desempenho em aplicativos do Windows 8 e Windows Server 2012 | Microsoft Docs
+title: Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 ms.date: 06/19/2017
 ms.topic: conceptual
 author: mikejo5000
@@ -7,12 +7,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8258c259b7f065e28ba7a6e199ddddb432dfb4b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 69b817af15b782ebd1e281d51855d62b11e8f470
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798201"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66262948"
 ---
 # <a name="performance-tools-on-windows-8-and-windows-server-2012-applications"></a>Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012
 
@@ -109,7 +109,7 @@ Você deve adicionar a opção de coleta de dados de interação entre camadas p
 
 **Coletando dados TIP em um computador remoto**
 
-Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs\_profiler\_**_\<Platform>_**\_**_\<Language>_**.exe** da pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
+Para coletar os dados de interação de camadas em um computador remoto, você precisa copiar o arquivo **vs\_profiler\_** _\<Platform>_ **\_** _\<Language>_ **.exe** da pasta *%VSInstallDir%\Team Tools\Performance Tools\Setups* de um computador com o Visual Studio para o computador remoto e instalá-lo. Não é possível usar as ferramentas de criação de perfil no pacote de download da [Depuração Remota](../debugger/remote-debugging.md).
 
 Você pode usar [VSPerfCmd](../profiling/vsperfcmd.md) ou [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) para coletar dados de criação de perfil.
 

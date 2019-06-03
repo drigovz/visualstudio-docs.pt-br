@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c17d5c9d6874c836954941e1fccd8ce9d9f2e3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ccdf29e3a4cda2bf5d527a2b712878c1fbd76197
+ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789039"
+ms.lasthandoff: 05/22/2019
+ms.locfileid: "66037577"
 ---
-# <a name="wrap-indent-and-align-parameters"></a>Encapsular, recuar e alinhar parâmetros
+# <a name="wrap-indent-and-align-parameters-or-arguments"></a>Encapsular, recuar e alinhar parâmetros ou argumentos
 
 Esta refatoração aplica-se a:
 
@@ -25,16 +25,16 @@ Esta refatoração aplica-se a:
 
 - Visual Basic
 
-**O quê:** Permite a você encapsular, recuar e alinhar parâmetros.
+**O quê:** permite a você encapsular, recuar e alinhar parâmetros ou argumentos.
 
-**Quando:** Você tem uma declaração de método ou uma chamada que tem vários parâmetros.
+**Quando:** você tem uma declaração de método ou uma chamada que tem vários parâmetros ou argumentos.
 
-**Por que:** Ler uma longa lista de parâmetros é mais fácil quando eles são encapsulados ou são recuados de acordo com a preferência do usuário.
+**Por que:** ler uma longa lista de parâmetros ou argumentos é mais fácil quando eles são encapsulados ou são recuados de acordo com a preferência do usuário.
 
 ## <a name="how-to"></a>Como fazer
 
 1. Coloque o cursor em uma lista de parâmetros.
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
    ![Encapsular, recuar e alinhar parâmetros](media/wrap-parameters.png)
 

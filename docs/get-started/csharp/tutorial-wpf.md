@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: aplicativo Olá, Mundo com o Windows Presentation Foundation (WPF) em C#'
+title: Aplicativo Olá, Mundo com o WPF em C#
 description: Crie um aplicativo .NET de Área de Trabalho do Windows simples em C# com o Visual Studio usando a estrutura de interface do usuário do Windows Presentation Foundation (WPF).
 ms.custom: seodec18, get-started
 ms.date: 03/28/2019
@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c098aba51b4b2340ab4094971e3509af42c6c8ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bcff4d75361d3758321360cc051bf5040dbb61ac
+ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426321"
+ms.lasthandoff: 05/28/2019
+ms.locfileid: "66261701"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutorial: Criar um aplicativo simples com o C\#
 
@@ -62,7 +62,7 @@ Ao criar um aplicativo no Visual Studio, você cria primeiro um projeto e uma so
 
      ![Na barra de menus, escolha Arquivo, Novo, Projeto](../media/exploreide-filenewproject.png)
 
-1. Na caixa de diálogo **Novo Projeto**, selecione a categoria **Instalado** > **Visual C#** > **Área de Trabalho do Windows** e, em seguida, selecione o modelo **Aplicativo WPF (.NET Framework)**. Nomeie o projeto como **HelloWPFApp** e selecione **OK**.
+1. Na caixa de diálogo **Novo Projeto**, selecione a categoria **Instalado** > **Visual C#**  > **Área de Trabalho do Windows** e, em seguida, selecione o modelo **Aplicativo WPF (.NET Framework)** . Nomeie o projeto como **HelloWPFApp** e selecione **OK**.
 
      ![Modelo do aplicativo WPF na caixa de diálogo Novo Projeto do Visual Studio](media/exploreide-newprojectcsharp.png)
 
@@ -308,7 +308,7 @@ Agora que você verificou que tudo está funcionando, já pode preparar um build
 
 3. Compile a solução escolhendo **Compilar** > **Compilar solução**.
 
-Parabéns por concluir este tutorial. Encontre o *.exe* compilado na solução e no diretório do projeto (*...\HelloWPFApp\HelloWPFApp\bin\Release*).
+Parabéns por concluir este tutorial. Encontre o *.exe* compilado na solução e no diretório do projeto ( *...\HelloWPFApp\HelloWPFApp\bin\Release*).
 
 ## <a name="see-also"></a>Consulte também
 
