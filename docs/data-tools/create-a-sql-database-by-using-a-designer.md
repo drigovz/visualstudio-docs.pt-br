@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: afb73b316dd54284073c3d878fb35b4bb6090e08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f227a7948f5a842120341432c03747119988ddf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569950"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501071"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 
@@ -26,7 +26,19 @@ Você pode usar o Visual Studio para criar e atualizar um arquivo de banco de da
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Para concluir este passo a passo, você deve ter opcional **armazenamento de dados e processamento** carga de trabalho instalada no Visual Studio. Para instalá-lo, abra **instalador do Visual Studio** e escolha **mais** > **modificar** ao lado da versão do Visual Studio que você deseja modificar (se você tiver mais de uma versão instalada). Sobre o **cargas de trabalho** guia, em **Web e nuvem**, escolha **processamento e armazenamento de dados**e, em seguida, clique em **modificar** para adicionar a carga de trabalho Visual Studio.
+Para concluir este passo a passo, você deve ter opcional **armazenamento de dados e processamento** carga de trabalho instalada no Visual Studio. Para instalá-lo, abra **instalador do Visual Studio** e escolha **modificar** ou **mais** > **modificar** ao lado da versão do Visual Studio que você deseja modificar.
+
+::: moniker range=">=vs-2019"
+
+Sobre o **cargas de trabalho** guia, em **outros conjuntos de ferramentas**, escolha **processamento e armazenamento de dados**e, em seguida, clique em **modificar** para adicionar a carga de trabalho Visual Studio.
+
+::: moniker-end
+
+::: moniker range="=vs-2017"
+
+Sobre o **cargas de trabalho** guia, em **Web e nuvem**, escolha **processamento e armazenamento de dados**e, em seguida, clique em **modificar** para adicionar a carga de trabalho Visual Studio.
+
+::: moniker-end
 
 ## <a name="create-a-project-and-a-local-database-file"></a>Criar um projeto e um arquivo de banco de dados local
 
