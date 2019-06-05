@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício de assinatura de Desenvolvedor do Office 365 incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 3ae71e50ab93cbc17cdf6f4cd4e550a627b0f600
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 100b9992f13a419b9207adb9ba976b8f6417617f
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934590"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501193"
 ---
 # <a name="the-office-365-developer-subscription-benefit-in-visual-studio-subscriptions"></a>O benefício de assinatura de Desenvolvedor do Office 365 em assinaturas do Visual Studio
 
@@ -82,6 +82,6 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="support-resources"></a>Recursos de suporte
 
-- Precisa de ajuda com sua Assinatura de Desenvolvedor do Office? Confira os recursos de [suporte](https://developer.microsoft.com/office/support) no [Centro de Desenvolvimento do Office](https://developer.microsoft.com/office).
+- Precisa de ajuda com sua Assinatura de Desenvolvedor do Office? Confira os recursos de [suporte](https://developer.microsoft.com/office/docs#officecommunity) no [Centro de Desenvolvimento do Office](https://developer.microsoft.com/office).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
