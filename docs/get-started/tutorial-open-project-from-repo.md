@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b1796ca10226e4aa5d0242bea89cc01f8452cf9e
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944096"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402078"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir um projeto de um repositório
 
@@ -113,7 +113,7 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
         ![A seção Provedores de Serviços Hospedados da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azure-devops.png)
 
-      - Na lista suspensa **Gerenciar Conexões**, escolha **Conectar-se a um Projeto...**.
+      - Na lista suspensa **Gerenciar Conexões**, escolha **Conectar-se a um Projeto...** .
 
         ![A seção Gerenciar Conexões da janela Team Explorer no IDE do Visual Studio](./media/open-proj-repo-azuredevops-manage-connections.png)
 
@@ -177,9 +177,9 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
 Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer um dos seguintes tutoriais específicos a um idioma:
 
-- [Tutoriais do Visual Studio | **C#**](./csharp/index.yml)
+- [Tutoriais do Visual Studio | **C#** ](./csharp/index.yml)
 - [Tutoriais do Visual Studio | **Visual Basic**](./visual-basic/index.yml)
-- [Tutoriais do Visual Studio | **C++**](/cpp/get-started/)
+- [Tutoriais do Visual Studio | **C++** ](/cpp/get-started/tutorial-console-cpp)
 - [Tutoriais do Visual Studio | **Python**](/visualstudio/python/)
 - [Tutoriais do Visual Studio | **JavaScript**, **TypeScript** e **Node.js**](/visualstudio/javascript/)
 
