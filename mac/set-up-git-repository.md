@@ -81,9 +81,9 @@ Se você tiver um projeto existente que ainda _não está_ no controle de versã
 
     ![Menu de Controle de versão](media/version-control-git10.png)
 
-10. Depois de começar a fazer mais alterações, selecione **Enviar alterações por push** para enviar as alterações por push ao repositório **remoto** . Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
+10. Depois de começar a fazer mais alterações, selecione **Efetuar push das alterações** para efetuar push das alterações ao repositório **remoto** . Isso permitirá que todos os usuários apropriados possam exibi-las em github.com:
 
-    ![Enviar alterações por push para um repositório remoto](media/version-control-git11.png)
+    ![Efetuar push das alterações para um repositório remoto](media/version-control-git11.png)
 
 ## <a name="publishing-a-new-project"></a>Publicar um novo projeto
 
