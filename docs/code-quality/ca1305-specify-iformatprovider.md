@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: b96ca08b51bb5145357ef921bde753e133062203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eda86085a5a2b8ba8e42116005890d2bda0b1dca
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797540"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714681"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
 
@@ -36,7 +36,7 @@ ms.locfileid: "62797540"
 
 Um método ou construtor chama um ou mais membros que têm sobrecargas que aceitam um <xref:System.IFormatProvider?displayProperty=fullName> parâmetro e o método ou construtor não chama a sobrecarga que utiliza o <xref:System.IFormatProvider> parâmetro.
 
-Essa regra ignora chamadas para métodos do .NET Framework que são documentados como ignorando o <xref:System.IFormatProvider> parâmetro. A regra também ignora os seguintes métodos:
+Essa regra ignora chamadas para métodos do .NET que são documentados como ignorando o <xref:System.IFormatProvider> parâmetro. A regra também ignora os seguintes métodos:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Essa regra ignora chamadas para métodos do .NET Framework que são documentados
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando um <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, a cultura padrão de escolha de membros do .NET Framework e formatação com base em suposições que podem não estar corretas para seu código. Para certificar-se de que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
+Quando um <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, a cultura padrão de escolha de membros do .NET e formatação com base em suposições que podem não estar corretas para seu código. Para certificar-se de que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
 
 - Se o valor será exibido ao usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 

@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90bdc70a2de900d43831994aff72e25031241cc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825436"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715308"
 ---
 # <a name="naming-warnings"></a>Avisos de nomenclatura
-Avisos de nomenclatura dão suporte a conformidade com as convenções de nomenclatura de diretrizes de Design do .NET Framework.
+
+Avisos de nomenclatura dão suporte a conformidade com as convenções de nomenclatura de diretrizes de Design do .NET.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -42,7 +43,7 @@ Avisos de nomenclatura dão suporte a conformidade com as convenções de nomenc
 |[CA1719: Nomes de parâmetro não devem corresponder aos nomes de membro](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)|Um nome de parâmetro deve informar o significado de um parâmetro e um nome de membro deve informar o significado de um membro. Seria um design raro se eles fossem iguais. A nomenclatura de um parâmetro com o mesmo nome do membro não é intuitiva e dificulta o uso da biblioteca.|
 |[CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)|Cada palavra na cadeia de caracteres de recurso é dividida em tokens que são baseados em maiusculas. Cada combinação contígua de dois tokens é verificada pela biblioteca do verificador ortográfico da Microsoft. Se reconhecidas, as palavras produzirão uma violação da regra.|
 |[CA1703: Cadeias de caracteres de recurso devem ter grafia correta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)|Uma cadeia de caracteres de recurso contém uma ou mais palavras não reconhecidas pela biblioteca do verificador ortográfico da Microsoft.|
-|[CA1724: Nomes de tipo não devem corresponder a Namespaces](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Nomes de tipo não devem corresponder a nomes de namespaces que são definidos na biblioteca de classes do .NET Framework. Violação dessa regra pode reduzir a usabilidade da biblioteca.|
+|[CA1724: Nomes de tipo não devem corresponder a Namespaces](../code-quality/ca1724-type-names-should-not-match-namespaces.md)|Nomes de tipo não devem corresponder a nomes de namespaces do .NET. Violação dessa regra pode reduzir a usabilidade da biblioteca.|
 |[CA1707: Identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)|Por convenção, os nomes de identificador não contêm o caractere de sublinhado (_). Esta regra verifica namespaces, tipos, membros e parâmetros.|
 |[CA1721: Nomes de propriedade não devem corresponder a métodos get](../code-quality/ca1721-property-names-should-not-match-get-methods.md)|O nome de um membro público ou protegido começa com "Get" e, de outra forma, corresponde ao nome de uma propriedade pública ou protegida. Métodos "Get" e propriedades devem ter nomes que diferenciem claramente a função.|
 |[CA1716: Identificadores não devem corresponder a palavras-chave](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Um nome de namespace ou um nome de tipo corresponde a uma palavra-chave reservada em uma linguagem de programação. Os identificadores de namespaces e tipos não devem corresponder a palavras-chave definidas por com o Common Language Runtime como destino.|

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e596f2e970df487a31628ab0bd29051172b950e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 89edba30a95d61268aebb26de8d973f6201c0fcf
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796673"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714757"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblies devem ter nomes fortes válidos
 
@@ -64,11 +64,11 @@ Observe que, para carregar e analisar um assembly assinado com atraso, você dev
 
 Use um dos procedimentos a seguir:
 
-- Use a ferramenta de vinculador de Assembly (Al.exe) fornecida pelo SDK do .NET Framework.
+- Use o [ferramenta de vinculador de Assembly (Al.exe)](/dotnet/framework/tools/al-exe-assembly-linker).
+
+- Para o .NET Framework 2.0, use o `/keyfile` ou `/keycontainer` opção de compilador [/KEYFILE (especificar chave ou par de chaves para assinar um Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) ou [/KEYCONTAINER (especificar um contêiner de chave para assinar um Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) opção de vinculador em C++).
 
 - Para o .NET Framework v 1.0 ou 1.1, use o <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=fullName> ou <xref:System.Reflection.AssemblyKeyNameAttribute?displayProperty=fullName> atributo.
-
-- Para o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)], use o `/keyfile` ou `/keycontainer` opção de compilador [/KEYFILE (especificar chave ou par de chaves para assinar um Assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly) ou [/KEYCONTAINER (especificar um contêiner de chave para assinar um Assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly) opção de vinculador em C++).
 
 ### <a name="sign-your-assembly-with-a-strong-name-in-visual-studio"></a>Assinar o assembly com um nome forte no Visual Studio
 
@@ -90,7 +90,7 @@ Use um dos procedimentos a seguir:
 
 ### <a name="sign-your-assembly-with-a-strong-name-outside-visual-studio"></a>Assinar o assembly com um nome forte fora do Visual Studio
 
-Use a ferramenta de nome forte (Sn.exe) que é fornecida pelo SDK do .NET Framework. Para saber mais, veja [Sn.exe (Ferramenta de Nome Forte)](/dotnet/framework/tools/sn-exe-strong-name-tool).
+Use o [ferramenta de nome forte (Sn.exe)](/dotnet/framework/tools/sn-exe-strong-name-tool).
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

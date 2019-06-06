@@ -19,19 +19,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566891"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715186"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
 Um componente do TableAdapter preenche um dataset com os dados do banco de dados, com base em uma ou mais consultas ou procedimentos armazenados que você especificar. Também pode executar a TableAdapters adiciona, atualiza e exclui o banco de dados para manter as alterações feitas ao conjunto de dados. Você também pode emitir comandos globais que não estão relacionados a qualquer tabela específica.
 
 > [!NOTE]
-> TableAdapters são gerados por designers do Visual Studio. Se você estiver criando conjuntos de dados programaticamente, em seguida, use DataAdapter, que é uma classe do .NET Framework.
+> TableAdapters são gerados por designers do Visual Studio. Se você estiver criando conjuntos de dados programaticamente, em seguida, use DataAdapter, que é uma classe do .NET.
 
 Para obter informações detalhadas sobre as operações do TableAdapter, você pode ignorar diretamente para um destes tópicos:
 

@@ -14,15 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b8f2deaa728a2bcd71bcd2264fcd110aee7982e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825247"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715164"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
-Avisos de uso suportam o uso correto do .NET Framework.
+
+Avisos de uso suportam o uso correto do .NET.
 
 ## <a name="in-this-section"></a>Nesta seção
 
@@ -31,14 +32,14 @@ Avisos de uso suportam o uso correto do .NET Framework.
 |[CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)|Uma assinatura de método inclui um parâmetro que não é usado no corpo do método.|
 |[CA1806: Não ignore resultados do método](../code-quality/ca1806-do-not-ignore-method-results.md)|Um novo objeto é criado, mas nunca é usado; ou um método que cria e retorna uma nova cadeia de caracteres é chamado e a nova cadeia de caracteres jamais é usada; um método ou COM ou P/Invoke retorna um HRESULT ou um código de erro que nunca é usado.|
 |[CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Um método que é uma implementação de Dispose não chama GC. SuppressFinalize; ou um método que não é uma implementação de Dispose chama GC. SuppressFinalize; ou um método chama GC. SuppressFinalize e passa algo que não seja isso (Me no Visual Basic).|
-|[CA2200: Relançar para preservar detalhes da pilha](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Uma exceção é lançada novamente e a exceção é especificada explicitamente na instrução throw. Se uma exceção é lançada novamente pela especificação da exceção na instrução throw, a lista de chamadas de método entre o método original que gerou a exceção e o método atual é perdida.|
+|[CA2200: Relançar para preservar detalhes da pilha](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Uma exceção é lançada novamente e a exceção é especificada explicitamente na instrução throw. Se uma exceção for lançada novamente pela especificação da exceção na instrução throw, a lista de chamadas de método entre o método original que lançou a exceção e o método atual será perdida.|
 |[CA2201: Não acionar tipos de exceção reservados](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Isso torna o erro original difícil de detectar e depurar.|
 |[CA2202: Não descartar objetos várias vezes](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Uma implementação do método contém caminhos de código que poderiam causar várias chamadas para System.IDisposable.Dispose ou para um equivalente a Dispose (como um método Close() em alguns tipos) no mesmo objeto.|
 |[CA2204: Literais devem ter grafia correta](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|Uma cadeia de caracteres literal em um corpo de método contém uma ou mais palavras não reconhecidas pela biblioteca do verificador ortográfico da Microsoft.|
-|[CA2205: Usar equivalentes gerenciados da API do Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Uma invocação de plataforma método é definido e um método com a funcionalidade equivalente existe na biblioteca de classes do .NET Framework.|
+|[CA2205: Usar equivalentes gerenciados da API do Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Uma invocação de plataforma método é definido e um método do .NET com a funcionalidade equivalente está disponível.|
 |[CA2207: Inicializar campos estáticos de tipo de valor embutido](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Um tipo de valor declara um construtor estático explícito. Para corrigir uma violação dessa regra, inicialize todos os dados estáticos quando declarados e remova o construtor estático.|
 |[CA2208: Instanciar exceções de argumento corretamente](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|For feita uma chamada para o construtor padrão (sem parâmetros) de um tipo de exceção que seja ou derive de ArgumentException, ou um argumento de cadeia de caracteres incorreto é passado para um construtor com parâmetros de um tipo de exceção que seja ou derive de ArgumentException.|
-|[CA2211: Campos não constantes não devem ser visíveis](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Os campos estáticos que não são constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e exige técnicas de programação avançadas para sincronizar o acesso ao objeto de classe.|
+|[CA2211: Campos não constantes não devem ser visíveis](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Estático de campos não constantes ou o são somente leitura não é thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e exige técnicas de programação avançadas para sincronizar o acesso ao objeto de classe.|
 |[CA2212: Não marcar componentes atendidos com WebMethod](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Um método em um tipo que herda de ServicedComponent é marcado com WebMethodAttribute. Como WebMethodAttribute e um método ServicedComponent têm comportamento e requisitos conflitantes para o contexto e o fluxo de transações, o comportamento do método estará incorreto em alguns cenários.|
 |[CA2213: os campos descartáveis devem ser descartados](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Um tipo que implementa System.IDisposable declara campos que são de tipos que também implementam IDisposable. O método Dispose do campo não é chamado pelo método Dispose do tipo declarante.|
 |[CA2214: Não chamar métodos substituíveis em construtores](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Quando um construtor chama um método virtual, é possível que o construtor para a instância que invoca o método não executado.|
@@ -49,7 +50,7 @@ Avisos de uso suportam o uso correto do .NET Framework.
 |[CA2219: Não gerar exceções em cláusulas de exceção](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|Quando uma exceção é acionada em uma cláusula finally ou fault, a nova exceção oculta a exceção ativa. Quando uma exceção é acionada em uma cláusula de filtro, o tempo de execução captura silenciosamente a exceção. Isso torna o erro original difícil de detectar e depurar.|
 |[CA2220: Os finalizadores devem chamar o finalizador da classe base](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar o método Finalize de classe base em seu próprio método Finalize.|
 |[CA2221: Os finalizadores devem ser protegidos](../code-quality/ca2221-finalizers-should-be-protected.md)|Os finalizadores deve usar o modificador de acesso da família.|
-|[CA2222: Não diminuir a visibilidade de membro herdada](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Você não deve alterar o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método.|
+|[CA2222: Não diminuir a visibilidade de membro herdada](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Não altere o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método.|
 |[CA2223: Os membros devem ser diferentes por tipo de retorno](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Embora o Common Language Runtime permita o uso de tipos de retorno na diferenciação de membros outrora idênticos, este recurso não está na CLS nem é um recurso comum das linguagens de programação do .NET.|
 |[CA2224: Substituir equals ao sobrecarregar operador equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Um tipo público implementa o operador de igualdade, mas não substitui Object. Equals.|
 |[CA2225: Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Uma sobrecarga de operador foi detectada, e o método alternativo nomeado esperado não foi encontrado. O membro alternativo nomeado fornece acesso para a mesma funcionalidade que o operador e é fornecido para os desenvolvedores que programem em linguagens que não dão suporte a operadores sobrecarregados.|
@@ -58,7 +59,7 @@ Avisos de uso suportam o uso correto do .NET Framework.
 |[CA2228: Não remeter formatos de recurso não lançados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET Framework não podem ser usados por versões com suporte do .NET Framework.|
 |[CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)|Para corrigir uma violação dessa regra, implemente o construtor de serialização. Para uma classe lacrada, torne o construtor particular; do contrário, deixe-o protegido.|
 |[CA2230: Usar parâmetros para argumentos de variável](../code-quality/ca2230-use-params-for-variable-arguments.md)|Um tipo público ou protegido contém um método público ou protegido que usa a convenção de chamada VarArgs, em vez da palavra-chave params.|
-|[CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Um tipo de valor substitui Object.Equals, mas não implementa o operador de igualdade.|
+|[CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Um tipo de valor substitui `Object.Equals` mas não implementa o operador de igualdade.|
 |[CA2232: Pontos de entrada de marca Windows Forms com STAThread](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|STAThreadAttribute indica que o modelo de threading COM para o aplicativo é um single-threaded apartment. Esse atributo deve estar presente no ponto de entrada de qualquer aplicativo que use o Windows Forms; se ele for omitido, os componentes do Windows poderão não funcionar corretamente.|
 |[CA2233: Operações não devem estourar](../code-quality/ca2233-operations-should-not-overflow.md)|Operações aritméticas não devem ser executadas sem primeiro validar os operandos, para certificar-se de que o resultado da operação não está fora do intervalo de valores possíveis para os tipos de dados envolvidos.|
 |[CA2234: Passar objetos System. URI em vez de cadeias de caracteres](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|Foi feita uma chamada para um método com um parâmetro de cadeia de caracteres cujo nome contém "uri", "URI", "urn", "URN", "url" ou "URL".  O tipo declarante do método contém uma sobrecarga do método correspondente que possui um parâmetro System.Uri.|

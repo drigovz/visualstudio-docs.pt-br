@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3097e52f99f044257b8eaf634455bdf19978d0c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825037"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715266"
 ---
 # <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando código gerenciado em busca de defeitos de código
 
 Neste passo a passo, você irá analisar um projeto gerenciado em busca de defeitos de código usando a ferramenta de análise de código.
 
-Este passo a passo o orienta no processo de usar a análise de código para analisar seus assemblies de código gerenciado .NET quanto à conformidade com as diretrizes de design do Microsoft .NET Framework.
+Este passo a passo o orienta no processo de usar a análise de código para analisar seus assemblies de código gerenciado .NET quanto à conformidade com as diretrizes de design do .NET.
 
 ## <a name="create-a-class-library"></a>Criar uma biblioteca de classes
 
