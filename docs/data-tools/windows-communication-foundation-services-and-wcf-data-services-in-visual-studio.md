@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3032c73d92f69e6380427bfc675ee263a3eb013f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62564816"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714481"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 
@@ -56,7 +56,7 @@ WCF Data Services é uma implementação do protocolo OData (Open Data) padrão.
 
 ### <a name="wcf-programming-model"></a>Modelo de programação do WCF
 
-O modelo de programação do WCF baseia-se a comunicação entre duas entidades: um serviço WCF e um cliente do WCF. O modelo de programação é encapsulado no <xref:System.ServiceModel> namespace no .NET Framework.
+O modelo de programação do WCF baseia-se a comunicação entre duas entidades: um serviço WCF e um cliente do WCF. O modelo de programação é encapsulado no <xref:System.ServiceModel> namespace no .NET.
 
 ### <a name="wcf-service"></a>Serviço WCF
 
@@ -228,7 +228,7 @@ Você pode associar os dados retornados por um serviço do Windows Communication
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Como: Configurar um serviço para reutilizar os tipos existentes
 
-Quando uma referência de serviço é adicionada a um projeto, quaisquer tipos definidos no serviço são gerados no projeto local. Em muitos casos, isso cria tipos duplicados quando um serviço usa tipos comuns do .NET Framework ou quando os tipos são definidos em uma biblioteca compartilhada.
+Quando uma referência de serviço é adicionada a um projeto, quaisquer tipos definidos no serviço são gerados no projeto local. Em muitos casos, isso cria tipos duplicados quando um serviço usa os tipos .NET comuns ou quando os tipos são definidos em uma biblioteca compartilhada.
 
 Para evitar esse problema, os tipos em assemblies referenciados são compartilhados por padrão. Se você quiser desabilitar o compartilhamento para um ou mais assemblies de tipo, você pode fazer isso na **configurar referências de serviço** caixa de diálogo.
 

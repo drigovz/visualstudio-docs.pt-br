@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f666dc71aaf9683d9a7c936cc4985e97146d9454
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 66bb2b2229608c1a7710b7c5c71cbc0d701234e3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842523"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714382"
 ---
 # <a name="ca1003-use-generic-event-handler-instances"></a>CA1003: Usar instâncias do manipulador de eventos genérico
 
@@ -41,7 +41,7 @@ Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [c
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Antes do .NET, para passar informações personalizadas para o manipulador de eventos, um novo delegado tinha que ser declarado que especificado de uma classe que deriva de <xref:System.EventArgs?displayProperty=fullName> classe. Isso não ocorre mais no .NET. O .NET Framework introduzida a <xref:System.EventHandler%601?displayProperty=fullName> delegado, um delegado genérico que permite que qualquer classe que é derivada de <xref:System.EventArgs> a ser usado junto com o manipulador de eventos.
+Antes do .NET, para passar informações personalizadas para o manipulador de eventos, um novo delegado tinha que ser declarado que especificado de uma classe que deriva de <xref:System.EventArgs?displayProperty=fullName> classe. No .NET, genérica <xref:System.EventHandler%601?displayProperty=fullName> delegado permite que qualquer classe que é derivada de <xref:System.EventArgs> a ser usado junto com o manipulador de eventos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

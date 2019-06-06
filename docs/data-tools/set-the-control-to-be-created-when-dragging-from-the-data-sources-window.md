@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 79ed1bd03e90a92d8246c5f51a6ad64d52758167
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 442a98b76efb8013d5d40607e14586299718afc3
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260965"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715100"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 
@@ -45,7 +45,7 @@ Nesse contexto, o termo *objeto* refere-se a um objeto comercial personalizado, 
 
     - Para exibir todos os dados em um único controle, selecione um controle diferente na lista, como **DataGrid** ou **lista** em um aplicativo WPF, ou **DataGridView** em um Windows Forms aplicativo.
 
-    A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e se você tiver adicionado personalizado controla esses suporte à vinculação de dados para o **caixa de ferramentas**. Se o controle que você deseja criar não estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+    A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET seus destinos de projeto e se você tiver adicionado personalizado controla esses suporte à vinculação de dados para o **caixa de ferramentas**. Se o controle que você deseja criar não estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
     Para saber como criar um controle personalizado do Windows Forms que pode ser adicionado à lista de controles para tabelas de dados ou objetos na **fontes de dados** janela, consulte [criar um controle de usuário do Windows Forms que dá suporte a dados complexos associação](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md).
 
@@ -63,7 +63,7 @@ Antes de arrastar um item que representa uma coluna ou uma propriedade de um obj
 
 4. Clique no menu suspenso para a coluna ou propriedade e, em seguida, selecione o controle que você deseja criar quando o item é arrastado para o designer.
 
-     A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e quais personalizado controles que suportam dados de associação que você adicionou à **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
+     A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET seus destinos de projeto e quais personalizado controles que suportam dados de associação que você adicionou à **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).
 
      Para saber como criar um controle personalizado que pode ser adicionado à lista de controles para colunas de dados ou as propriedades na **fontes de dados** janela, consulte [criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md).
 

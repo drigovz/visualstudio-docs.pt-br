@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 555017cc49beba849ba9008c52950a70cd067a73
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: f3c8fbde60e247ca9ec5fe82c9a16f28aded2abc
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676286"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715054"
 ---
 # <a name="how-to-configure-static-code-analysis-for-managed-code"></a>Como: Configurar a análise estática de código para código gerenciado
 
@@ -29,7 +29,7 @@ Para obter informações sobre como configurar uma regra definida para aplicativ
 > [!NOTE]
 > Este artigo se aplica à análise de código estático e não ao [analisadores de Roslyn](use-roslyn-analyzers.md), que não execute a análise de código após a compilação.
 
-## <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar uma regra definida para um projeto do .NET Framework
+## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurar uma regra definida para um projeto do .NET Framework
 
 1. Abra o **análise de código** guia nas páginas de propriedades do projeto. Você pode fazer isso em qualquer uma das seguintes maneiras:
 

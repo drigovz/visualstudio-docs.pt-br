@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4355db8b15a3869e785589170bec3f80e8f08fbb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5f8a672056c8663c2e27ec730e542083aee9738f
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541712"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714986"
 ---
 # <a name="ca2228-do-not-ship-unreleased-resource-formats"></a>CA2228: Não fornecer formatos de recurso não lançados
 
@@ -31,13 +31,17 @@ ms.locfileid: "62541712"
 |Alteração Significativa|Não separável|
 
 ## <a name="cause"></a>Causa
- Um arquivo de recurso foi criado usando uma versão do .NET Framework que não é suportada atualmente.
+
+Um arquivo de recurso foi criado usando uma versão do .NET que não é suportada atualmente.
 
 ## <a name="rule-description"></a>Descrição da regra
- Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET Framework não podem ser usados por versões com suporte do .NET Framework.
+
+Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET não podem ser usados por versões com suporte do .NET.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, crie o recurso usando uma versão com suporte do .NET Framework.
+
+Para corrigir uma violação dessa regra, crie o recurso usando uma versão compatível do .NET.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+
+Não suprima um aviso nessa regra.

@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00873cd84b5a6d89469de26ed982b98d2dffa27c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567095"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715217"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 
@@ -61,7 +61,7 @@ ms.locfileid: "62567095"
 
 Um `DataSet` objeto é um objeto na memória que é basicamente um minibanco de dados. Ela contém `DataTable`, `DataColumn`, e `DataRow` objetos em que você pode armazenar e modificar dados de um ou mais bancos de dados sem a necessidade de manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações nos seus dados, portanto, as atualizações podem ser controladas e enviadas de volta para o banco de dados quando seu aplicativo se torna reconectado.
 
-Conjuntos de dados e classes relacionadas são definidas na <xref:System.Data?displayProperty=fullName> namespace na biblioteca de classes do .NET Framework. Você pode criar e modificar conjuntos de dados dinamicamente no código usando o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Conjuntos de dados que são criados por meio do uso de designers **TableAdapter** objetos para interagir com o banco de dados. Usam conjuntos de dados que são criados de forma programática **DataAdapter** objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+Conjuntos de dados e classes relacionadas são definidas na <xref:System.Data?displayProperty=fullName> namespace na API do .NET. Você pode criar e modificar conjuntos de dados dinamicamente no código usando o ADO.NET. A documentação nesta seção mostra como trabalhar com conjuntos de dados usando os designers do Visual Studio. Conjuntos de dados que são criados por meio do uso de designers **TableAdapter** objetos para interagir com o banco de dados. Usam conjuntos de dados que são criados de forma programática **DataAdapter** objetos. Para obter informações sobre como criar conjuntos de dados programaticamente, consulte [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
 Se seu aplicativo precisa apenas ler dados de um banco de dados e não executar atualizações, adiciona ou exclui, você geralmente pode obter um melhor desempenho usando um `DataReader` o objeto para recuperar dados em um genérico `List` objeto ou outro objeto de coleção. Se você estiver exibindo os dados, você pode associar dados a interface do usuário a coleção.
 
