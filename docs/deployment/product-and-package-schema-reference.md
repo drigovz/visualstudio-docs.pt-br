@@ -25,15 +25,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1570aa3d4ea72dc1d133ce3096e1726fa1ffb782
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62898127"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745623"
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
-Um *arquivo de produto* é um manifesto XML que descreve todas as dependências externas necessárias por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas incluem o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.
+Um *arquivo de produto* é um manifesto XML que descreve todas as dependências externas necessárias por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. O .NET Framework e o Microsoft Data Access Components (MDAC) são exemplos de dependências externas. Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.
 
  O arquivo de produto e de pacotes consiste em um nível superior `Product` ou `Package` elemento, cada uma delas contém os elementos a seguir.
 
@@ -53,7 +53,7 @@ Um *arquivo de produto* é um manifesto XML que descreve todas as dependências 
  `InstallChecks` os testes que setup.exe deve executar a existência de um determinado pacote. `PackageFiles` lista todos os pacotes que o processo de instalação pode ser necessário instalar, se um determinado teste falhar. Cada entrada de comando em comandos executa um dos testes descritos por `InstallChecks`e especifica quais `PackageFile` para executar o teste falhar. Você pode usar o `Strings` elemento para localizar nomes de produtos e mensagens de erro, para que você possa usar uma única instalação binária para instalar seu aplicativo para qualquer número de idiomas.
 
 ## <a name="example"></a>Exemplo
- O exemplo de código a seguir demonstra um arquivo completo de produtos para instalar o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ O exemplo de código a seguir demonstra um arquivo completo de produtos para instalar o .NET Framework.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
