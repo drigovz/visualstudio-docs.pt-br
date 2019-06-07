@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30a2860ae1dfb9d428f65812590675fccb42cfe5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: f0047ee38a6fda4738c773c36a85e14cba1e37fe
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715186"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745537"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
@@ -85,7 +85,7 @@ TableAdapters estendem a funcionalidade dos adaptadores de dados padrão, encaps
 
 ## <a name="tableadapter-methods-and-properties"></a>As propriedades e métodos do TableAdapter
 
-A classe TableAdapter não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Isso significa que você não pode procurar por ele na documentação ou o **Pesquisador de objetos**. Ele é criado em tempo de design quando você usa um dos assistentes mencionados anteriormente. O nome que é atribuído a um TableAdapter quando criá-lo é baseado no nome da tabela que você está trabalhando com. Por exemplo, quando você cria um TableAdapter com base em uma tabela em um banco de dados denominado `Orders`, o TableAdapter é nomeado `OrdersTableAdapter`. O nome da classe do TableAdapter pode ser alterado usando o **nome** propriedade no **Dataset Designer**.
+A classe TableAdapter não é um tipo .NET. Isso significa que você não pode procurar por ele na documentação ou o **Pesquisador de objetos**. Ele é criado em tempo de design quando você usa um dos assistentes mencionados anteriormente. O nome que é atribuído a um TableAdapter quando criá-lo é baseado no nome da tabela que você está trabalhando com. Por exemplo, quando você cria um TableAdapter com base em uma tabela em um banco de dados denominado `Orders`, o TableAdapter é nomeado `OrdersTableAdapter`. O nome da classe do TableAdapter pode ser alterado usando o **nome** propriedade no **Dataset Designer**.
 
 A seguir está as propriedades dos TableAdapters e métodos mais usados:
 
@@ -122,7 +122,7 @@ TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para 
 
 Por padrão, uma classe TableAdapterManager gera quando você cria um conjunto de dados contiver tabelas relacionadas. Para impedir que a classe que está sendo gerado, altere o valor da `Hierarchical Update` propriedade do conjunto de dados como false. Quando você arrasta uma tabela que tem uma relação na superfície de design de um formulário do Windows ou a página do WPF, o Visual Studio declara uma variável de membro da classe. Se você não usar a associação de dados, você precisa declarar manualmente a variável.
 
-A classe TableAdapterManager não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Portanto, você não pode procurar por ele na documentação. Ele é criado em tempo de design como parte do processo de criação de conjunto de dados.
+A classe TableAdapterManager não é um tipo .NET. Portanto, você não pode procurar por ele na documentação. Ele é criado em tempo de design como parte do processo de criação de conjunto de dados.
 
 A seguir estão os métodos usados com frequência e as propriedades do `TableAdapterManager` classe:
 

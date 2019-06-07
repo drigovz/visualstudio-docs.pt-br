@@ -8,18 +8,16 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 83c9b1158319b580bc860982b6c51c9c28edf5af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d8a2ad847ef1b9aaad02b2739e8154b3148425
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62433871"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747265"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
 
-O Designer de fluxo de trabalho do .NET Framework 4 introduziu muitos recursos novos, mas ainda existem alguns cenários de depuração que ele não oferece suporte.
-
-O Designer de fluxo de trabalho não há suporte para cenários de depuração veja a seguir:
+O Designer de fluxo de trabalho não suporta os seguintes cenários de depuração:
 
 - A execução não pode ser continuada após o código foi editado.
 
@@ -29,7 +27,7 @@ O Designer de fluxo de trabalho não há suporte para cenários de depuração v
 
 - O designer de fluxo de trabalho não pode ser usado para criar fluxos de trabalho criados em código sem o uso de designer.
 
-- Fluxos de trabalho criados em versões anteriores do Windows Workflow Foundation (WF) não podem ser depurados no designer do .NET Framework 4.
+- Fluxos de trabalho criados em versões anteriores do Windows Workflow Foundation (WF) não podem ser depurados no .NET Framework 4 ou posterior.
 
 - Os pontos de interrupção não podem ser definidos nos links entre atividades ou nós de <xref:System.Activities.Statements.Flowchart> .
 

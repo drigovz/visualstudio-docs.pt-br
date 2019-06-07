@@ -9,18 +9,18 @@ manager: jillfra
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: a454218bbddb6c135ff7dc2a5910e6e4a9b3c7e4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a4a62f629244d44680b3d5ac3233bd45b975302e
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565070"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745306"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>Ferramentas de dados do Visual Studio para .NET
 
-Visual Studio e o .NET Framework juntos fornecem API abrangente e suporte a ferramentas para conectar-se aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário. As classes do .NET Framework que fornecem funcionalidade de acesso a dados são conhecidas como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi projetado principalmente para dar suporte a bancos de dados relacionais e XML. Hoje em dia, muitos fornecedores de banco de dados NoSQL, ou por terceiros, oferecem provedores ADO.NET.
+O Visual Studio e .NET juntos fornecem amplo API e suporte a ferramentas para conectar-se aos bancos de dados, modelagem de dados na memória e exibir os dados na interface do usuário. As classes do .NET que fornecem funcionalidade de acesso a dados são conhecidas como [ADO.NET](/dotnet/framework/data/adonet/index). ADO.NET, juntamente com os dados de ferramentas no Visual Studio, foi projetado principalmente para dar suporte a bancos de dados relacionais e XML. Hoje em dia, muitos fornecedores de banco de dados NoSQL, ou por terceiros, oferecem provedores ADO.NET.
 
-[.NET core](/dotnet/core/) dá suporte ao ADO.NET, exceto para conjuntos de dados e tipos relacionados. Se você estiver direcionando o .NET Core e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](/ef/core/).
+[.NET core](/dotnet/core/) dá suporte ao ADO.NET, exceto para conjuntos de dados e seus tipos relacionados. Se você estiver direcionando ao .NET Core e exige uma camada de mapeamento relacional de objeto (ORM), use [Entity Framework Core](/ef/core/).
 
 O diagrama a seguir mostra uma exibição simplificada da arquitetura básica:
 

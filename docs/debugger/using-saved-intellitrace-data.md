@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408632"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746146"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados salvos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -37,7 +37,6 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
     |**Source**|**Confira**|
     |----------------|-------------|
     |Uma sessão do IntelliTrace no Visual Studio Enterprise (mas não Professional ou Community edições)|[Recursos do IntelliTrace](../debugger/intellitrace-features.md)|
-    |Uma sessão de teste no Microsoft Test Manager. Isso anexa um arquivo .iTrace a um item de trabalho do Team Foundation Server.|[Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
     |Microsoft Monitoring Agent, sozinho ou com o System Center 2012 R2 Operations Manager, para aplicativos Web do ASP.NET e aplicativos do SharePoint em execução na implantação|-   [Diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md)<br />-   [Novidades do System Center 2012 R2 Operations Manager](/previous-versions/system-center/system-center-2012-R2/dn249700(v=sc.12))|
 
 ## <a name="GetStarted"></a> O que você deseja fazer?
@@ -67,7 +66,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 > Se você fechou o arquivo IntelliTrace durante a depuração, poderá reabri-lo facilmente. Vá para o menu **Depurar**, escolha **IntelliTrace**, **Mostrar Resumo do Log**. Você também pode escolher **Mostrar Resumo do Log** na janela **IntelliTrace**. Isso só estará disponível durante a depuração com o IntelliTrace.
 
 ## <a name="Understand"></a> Noções básicas sobre o log do IntelliTrace
- Algumas das seções a seguir no arquivo .iTrace só aparecerão se você tiver coletado dados de uma origem em particular, por exemplo, do Test Manager ou aplicativos do SharePoint.
+ Algumas das seções a seguir no arquivo. itrace só aparecerão se você tiver coletado dados de uma fonte específica, por exemplo, aplicativos do SharePoint.
 
 |**Section**|**Contém**|**Origem de coleta**|
 |-----------------|------------------|---------------------------|
@@ -76,7 +75,6 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 |[Análise](#Analysis)|Somente para aplicativos do SharePoint 2010 e do SharePoint 2013. Diagnostique eventos do IntelliTrace e do SharePoint, como eventos do depurador, eventos de ULS, exceções não identificadas e outros dados que o Microsoft Monitoring Agent registrou.|Microsoft Monitoring Agent, o coletor autônomo ou com o System Center 2012 R2 Operations Manager|
 |[Informações do sistema](#SystemInfo)|Configurações e especificações do sistema host|Todas as fontes|
 |[Lista de threads](#ThreadsList)|Threads executados durante a coleta|Todas as fontes|
-|[Dados de teste](#TestData)|Etapas de teste e seus resultados de uma sessão de teste|Test Manager|
 |[Módulos](#Modules)|Módulos que o processo de destino carregou na ordem em que foram carregados.|Todas as fontes|
 |[Solicitação da Web](#Modules)|Dados de solicitação da Web para produção IIS aplicativos web e SharePoint 2010 e SharePoint 2013|Microsoft Monitoring Agent e o coletor autônomo|
 
@@ -84,7 +82,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 - Escolha um cabeçalho de coluna para classificar dados.
 
-- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos (**:**) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula (**;**) para adicionar outro valor de coluna e de pesquisa.
+- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos ( **:** ) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula ( **;** ) para adicionar outro valor de coluna e de pesquisa.
 
      Por exemplo, para localizar os eventos de desempenho que tenham a palavra "lento" na coluna **Descrição**, digite:
 
@@ -227,9 +225,6 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 |**Nome**|Nome do thread. Threads sem nome aparecem como "\<Sem nome>".|
 |**Hora de início**|A hora em que o thread foi criado|
 |**Hora de término**|A hora em que o thread foi concluído|
-
-### <a name="TestData"></a> Dados de teste
- Examine os dados do IntelliTrace que o Test Manager registrou ao testar seu aplicativo.
 
 ##### <a name="to-start-debugging-from-a-specific-test-step"></a>Para iniciar a depuração de uma etapa específica do teste
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cf83992e92c90600f63516919774fe09f06434ff
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407624"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746116"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
 
@@ -106,12 +106,12 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    2. Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-   3. Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
+   3. Use o **expandir** comando, incluindo o período ( **.** ) no final, para expandir o intellitracecollection. cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       > O ponto (**.**) preserva as subpastas que contêm planos de coleta localizada.
+       > O ponto ( **.** ) preserva as subpastas que contêm planos de coleta localizada.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
 
@@ -157,7 +157,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
             - Em sistemas operacionais de 64 bits, abra o menu de atalho do **Windows PowerShell**. Escolha **Executar como administrador**.
 
-            - Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)**. Escolha **Executar como administrador**.
+            - Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)** . Escolha **Executar como administrador**.
 
     2. Na janela de comando do PowerShell, use o comando **Import-Module** para importar o **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
@@ -377,9 +377,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 ## <a name="WhereElse"></a> Onde mais posso obter dados do IntelliTrace?
 
-- De uma sessão no Visual Studio Enterprise de depuração do IntelliTrace, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
-
-- Em uma sessão de teste no Microsoft Test Manager, consulte [como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).
+Você pode obter dados do IntelliTrace do IntelliTrace sessão no Visual Studio Enterprise de depuração. Ver [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
 ## <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
  [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)

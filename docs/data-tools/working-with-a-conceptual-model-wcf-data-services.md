@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: df9c1f83e8a839c7e767c3145e734eba80add485
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566067"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745343"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabalhar com um modelo conceitual (WCF Data Services)
 
@@ -27,7 +27,7 @@ Quando você usa um modelo conceitual para descrever os dados em um banco de dad
 
 | Tópico | Descrição |
 | - | - |
-| [Como: Executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo. |
+| [Como: Executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um aplicativo .NET. |
 | [Como: Resultados de consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
 
  Quando você usa um modelo conceitual, você pode definir o tipo de dados é válido no idioma que corresponde a seu domínio. Você pode definir dados válidos no modelo, ou você pode adicionar validação para operações que podem ser executadas em um serviço de dados ou de entidade.

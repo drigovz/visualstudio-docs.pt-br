@@ -11,21 +11,19 @@ helpviewer_keywords:
 - IntelliTrace, debugging applications
 - debugger, (See also IntelliTrace [Visual Studio ALM])
 - debugging, (See also IntelliTrace [Visual Studio ALM])
-- IntelliTrace, collecting data from Test Manager
 - IntelliTrace
-- Test Manager, debugging with IntelliTrace
 - IntelliTrace, debugging after a crash
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf491eae46c22d0804c66ab51071740e42de631c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d297b883c4d5217a0175c739bf460872d464503f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678815"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746668"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>O IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -44,7 +42,6 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 |||
 |-|-|
 |**Depure meu aplicativo com o IntelliTrace:**<br /><br /> – Mostrar-me eventos passados.<br />– Mostrar-me informações de chamadas com eventos passados.<br />– Salvar minha sessão do IntelliTrace.<br />– Controlar os dados que são coletados pelo IntelliTrace.|- [Inspecione o estado anterior do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)<br />- [Passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md)<br />- [Recursos do IntelliTrace](../debugger/intellitrace-features.md)<br />- [Depuração de histórico](../debugger/historical-debugging.md)|
-|**Coletar dados do IntelliTrace durante uma sessão de teste no Test Manager**|- [Coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)|
 |**Coletar dados do IntelliTrace de aplicativos implantados**|- [Usando o coletor IntelliTrace autônomo](../debugger/using-the-intellitrace-stand-alone-collector.md)|
 |**Iniciar a depuração a partir de um arquivo de log do IntelliTrace (arquivo .iTrace).**|- [Usando os dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)|
 
@@ -71,8 +68,6 @@ Você pode salvar dados do IntelliTrace a partir destas fontes:
 
 - Uma sessão do IntelliTrace no Visual Studio 2015 Enterprise ou versões posteriores ou versões anteriores do Visual Studio Ultimate.
 
-- Uma sessão de teste no Microsoft Test Manager
-
 - Aplicativos Web em ASP.NET hospedados no IIS ou aplicativos SharePoint 2010 e SharePoint 2013 em execução na implantação quando você usa o Agente de Monitoramento da Microsoft, sozinhos ou com o System Center 2012. Ver [usar o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md) e [monitorando com o Microsoft Monitoring Agent](https://technet.microsoft.com/library/dn465153.aspx).
 
 Estes são alguns exemplos de como o IntelliTrace pode ajudar na depuração:
@@ -84,10 +79,6 @@ Estes são alguns exemplos de como o IntelliTrace pode ajudar na depuração:
 - Uma exceção ocorre.
 
      Sem o IntelliTrace, você receberá uma mensagem sobre uma exceção, mas não terá muitas informações sobre os eventos que levaram à exceção. Você pode examinar a pilha de chamadas para ver a cadeia de chamadas que conduziu à exceção, mas não pode ver a sequência dos eventos que aconteceram durante essas chamadas. Com o IntelliTrace, você pode examinar os eventos que ocorreram antes da exceção.
-
-- Seu aplicativo falha em um computador de teste, mas é executado com êxito em um computador de desenvolvimento.
-
-     Você pode coletar dados do IntelliTrace do Microsoft Test Manager, salvar os dados em um arquivo .iTrace e anexar esse arquivo a um item de trabalho do Team Foundation Server para investigação posterior. Ver [coletar mais dados de diagnóstico em testes manuais](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts) e [Use dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
 - Um bug ou uma falha ocorre em um aplicativo implantado.
 

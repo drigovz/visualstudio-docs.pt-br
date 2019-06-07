@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1feb0dc2282dff39b3895ed0e63a0fdefeb65872
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2c2a4f2e9fe66ab049113111f13338cdced4e39e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406610"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746075"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>Acesso a dados locais e remotos em aplicativos ClickOnce
 A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] Fornece uma variedade de opções para ler e gravar dados, tanto local quanto remotamente.
@@ -37,7 +37,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
 ### <a name="clickonce-data-directory"></a>Diretório de dados do ClickOnce
  Cada [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo instalado em um computador local tem um diretório de dados armazenado na pasta de documentos e configurações do usuário. Qualquer arquivo incluído em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e marcada como um arquivo de "dados" é copiado para esse diretório quando um aplicativo é instalado. Arquivos de dados podem ser de qualquer tipo de arquivo, usado com mais frequência que está sendo texto, XML e arquivos de banco de dados, como arquivos. mdb do Microsoft Access.
 
- O diretório de dados destina-se a dados gerenciados de aplicativo, que são dados que o aplicativo armazena e mantém explicitamente. Todos estáticos, arquivos de nondependency não marcados como "dados" no manifesto do aplicativo em vez disso, reside no diretório do aplicativo. Esse diretório é onde o aplicativo executável do (*.exe*) arquivos e assemblies residem.
+ O diretório de dados destina-se a dados gerenciados de aplicativo, que são dados que o aplicativo armazena e mantém explicitamente. Todos estáticos, arquivos de nondependency não marcados como "dados" no manifesto do aplicativo em vez disso, reside no diretório do aplicativo. Esse diretório é onde o aplicativo executável do ( *.exe*) arquivos e assemblies residem.
 
 > [!NOTE]
 > Quando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo for desinstalado, seu diretório de dados também será removido. Nunca use o diretório de dados para armazenar dados de usuário final gerenciado, como documentos.
@@ -60,7 +60,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
 
  Também é possível obter o caminho do diretório de dados usando as variáveis relevantes sobre o <xref:System.Windows.Forms.Application> classe, como <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>.
 
- Manipular outros tipos de arquivos pode exigir permissões adicionais. Por exemplo, se você quiser usar um banco de dados (*. mdb*) o arquivo, seu aplicativo deve declarar confiança total para usar o relevantes \<xref:System.Data > classes.
+ Manipular outros tipos de arquivos pode exigir permissões adicionais. Por exemplo, se você quiser usar um banco de dados ( *. mdb*) o arquivo, seu aplicativo deve declarar confiança total para usar o relevantes \<xref:System.Data > classes.
 
 #### <a name="data-directory-and-application-versions"></a>Diretório de dados e versões de aplicativos
  Cada versão de um aplicativo tem seu próprio diretório de dados, que é isolado de outras versões. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] cria esse diretório, independentemente se os arquivos de dados são incluídos na implantação para que o aplicativo tenha um local para criar novos arquivos de dados em tempo de execução. Quando uma nova versão de um aplicativo é instalada, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] copiará todos os arquivos de dados existentes do diretório de dados da versão anterior para diretório a nova versão de dados — se foram incluídas na implantação original ou criados pelo aplicativo.
@@ -72,7 +72,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
 ### <a name="isolated-storage"></a>Armazenamento isolado
  Armazenamento isolado fornece uma API para criar e acessar arquivos por meio de uma API simples. O local real dos arquivos armazenados é ocultado do desenvolvedor e o usuário.
 
- Isolado funciona o armazenamento de todas as versões do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Armazenamento isolado também funciona em aplicativos parcialmente confiáveis sem a necessidade de concessões de permissão adicional. Se seu aplicativo deve ser executado em confiança parcial, mas deve manter dados específicos do aplicativo, você deve usar armazenamento isolado.
+ Armazenamento isolado funciona em todas as versões do .NET Framework. Armazenamento isolado também funciona em aplicativos parcialmente confiáveis sem a necessidade de concessões de permissão adicional. Se seu aplicativo deve ser executado em confiança parcial, mas deve manter dados específicos do aplicativo, você deve usar armazenamento isolado.
 
  Para obter mais informações, consulte [armazenamento isolado](/dotnet/standard/io/isolated-storage).
 
@@ -98,7 +98,7 @@ A maioria dos aplicativos consuma nem produza dados. [!INCLUDE[ndptecclick](../d
  Se sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo não pode acessar um servidor Web devido a restrições de segurança, o aplicativo deve declarar <xref:System.Net.WebPermission> para o site da Web. Para obter mais informações sobre como aumentar permissões de segurança para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, consulte [aplicativos ClickOnce Secure](../deployment/securing-clickonce-applications.md).
 
 ### <a name="access-data-through-an-xml-web-service"></a>Acessar dados por meio de um serviço Web XML
- Se você expor seus dados como um serviço Web XML, você pode acessar os dados usando um proxy do serviço Web XML. O proxy é um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classe criará usando [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. As operações do serviço Web XML — assim como a recuperação de clientes, pedidos de colocação e assim por diante — são expostos como métodos no proxy. Isso torna muito mais fácil de usar do que texto não processado ou arquivos XML Web services.
+ Se você expor seus dados como um serviço Web XML, você pode acessar os dados usando um proxy do serviço Web XML. O proxy é uma classe do .NET Framework que você cria usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. As operações do serviço Web XML — assim como a recuperação de clientes, pedidos de colocação e assim por diante — são expostos como métodos no proxy. Isso torna muito mais fácil de usar do que texto não processado ou arquivos XML Web services.
 
  Se o serviço Web XML opera em HTTP, o serviço será limitado pelas mesmas restrições de segurança que o <xref:System.Net.WebClient> e <xref:System.Net.HttpWebRequest> classes.
 

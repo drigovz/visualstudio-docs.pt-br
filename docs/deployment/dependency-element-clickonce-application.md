@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c9172749dc00acf0fd43725f6754373a0ade16e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e6e5bf2152fffb06acfb8b5e1f3283da75a19a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900352"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745950"
 ---
 # <a name="ltdependencygt-element-clickonce-application"></a>&lt;dependência&gt; elemento (aplicativo ClickOnce)
 Identifica uma dependência de plataforma ou assembly que é necessária para o aplicativo.
@@ -126,7 +126,7 @@ Identifica uma dependência de plataforma ou assembly que é necessária para o 
 |-----------------------| - |
 | `dependencyType` | Necessário. Especifica o tipo de dependência. Os valores válidos são `preprequisite` e `install`. Uma `install` assembly é instalado como parte do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Um `prerequisite` assembly deve estar presente no cache de assembly global (GAC) antes do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode instalar o aplicativo. |
 | `allowDelayedBinding` | Necessário. Especifica se o assembly pode ser carregado por meio de programação em tempo de execução. |
-| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, confira [Passo a passo: Como baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar em [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] e versões posteriores. |
+| `group` | Opcional. Se o `dependencyType` atributo é definido como `install`, designa um grupo nomeado de assemblies somente instalação sob demanda. Para obter mais informações, confira [Passo a passo: Como baixar assemblies sob demanda com a API de implantação do ClickOnce usando o designer](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md).<br /><br /> Se definido como `framework` e o `dependencyType` atributo é definido como `prerequisite`, designa o assembly como parte do .NET Framework. O cache de assembly global (GAC) não é verificado para esse assembly ao instalar o .NET Framework 4 e versões posteriores. |
 | `codeBase` | Necessário quando o `dependencyType` atributo é definido como `install`. O caminho para o assembly dependente. Talvez um caminho absoluto ou um caminho relativo ao código do manifesto base. Esse caminho deve ser um URI válido para o manifesto do assembly que seja válido. |
 | `size` | Necessário quando o `dependencyType` atributo é definido como `install`. O tamanho do assembly dependente, em bytes. |
 

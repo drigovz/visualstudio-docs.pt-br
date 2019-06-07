@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49ff55e2a261e86ec5aae09573d6ac40c74c0091
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 71b9df9a8422d1b24a3e5476005942113356c353
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263469"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747421"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.
@@ -41,7 +41,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 
   No entanto, você poderá desabilitar essa opção desmarcando os **usar a extensão de arquivo. Deploy"** opção a [caixa de diálogo Opções de publicação](/previous-versions/visualstudio/visual-studio-2010/7z83t16a(v=vs.100)), nesse caso, você deve configurar o servidor Web para desbloquear todas as extensões de arquivo usado no aplicativo.
 
-  Você terá que configurar *. manifest*, *. Application*, e *Deploy*, por exemplo, se você estiver usando o IIS em que você não tiver instalado o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], ou se você estiver usando outro servidor Web (por exemplo, Apache).
+  Você terá que configurar *. manifest*, *Application*, e *Deploy*, por exemplo, se você estiver usando o IIS em que você não tiver instalado o .NET Framework, ou se você estiver usando outro servidor Web (por exemplo, Apache).
 
 ## <a name="clickonce-and-secure-sockets-layer-ssl"></a>ClickOnce e Secure Sockets Layer (SSL)
  Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo funcionará bem por SSL, exceto quando o Internet Explorer gera um aviso sobre o certificado SSL. O prompt pode ser gerado quando há algo errado com o certificado, tais como quando os nomes de site não coincidem ou o certificado expirou. Para tornar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] trabalha em uma conexão SSL, certifique-se de que o certificado esteja atualizado e que os dados do certificado coincide com os dados do site.
@@ -121,7 +121,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
   Para obter instruções específicas sobre como configurar tipos de MIME no Windows Server, consulte o artigo da Base de Conhecimento Microsoft KB326965, "IIS 6.0 não atender os tipos de MIME desconhecidos" na [ http://support.microsoft.com/default.aspx?scid=kb; en-us; 326965](http://support.microsoft.com/default.aspx?scid=kb;en-us;326965).
 
 ## <a name="content-type-mappings"></a>Mapeamentos de tipo de conteúdo
- Ao publicar por meio de HTTP, o tipo de conteúdo (também conhecido como o tipo MIME) para o *. Application* arquivo deve ser "application/x-ms-application." Se você tiver [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado no servidor, isso será definido para você automaticamente. Se isso não estiver instalado, você precisa criar uma associação de tipo MIME para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot do aplicativo (ou todo o servidor).
+ Ao publicar por meio de HTTP, o tipo de conteúdo (também conhecido como o tipo MIME) para o *. Application* arquivo deve ser "application/x-ms-application." Se você tiver o .NET Framework 2.0 instalado no servidor, isso será definido para você automaticamente. Se isso não estiver instalado, você precisa criar uma associação de tipo MIME para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] vroot do aplicativo (ou todo o servidor).
 
  Se você implantar usando um servidor IIS, execute <em>inetmgr.</em> exe e adicione um novo tipo de conteúdo de "application/x-ms-application" para o *. Application* extensão.
 
