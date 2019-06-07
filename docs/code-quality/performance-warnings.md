@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d44c9a4a5c59907c527c47523c6c758adaf7ee51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dd2945ec12ac398f2887d20d3d0cb6156f4ed3c
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825488"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66745217"
 ---
 # <a name="performance-warnings"></a>Avisos de desempenho
 Avisos de desempenho dão suporte a aplicativos e bibliotecas de alto desempenho.
@@ -38,7 +38,7 @@ Avisos de desempenho dão suporte a aplicativos e bibliotecas de alto desempenho
 | [CA1810: Inicializar campos estáticos de tipo de referência embutido](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md) | Quando um tipo declara um construtor estático explícito, o compilador JIT (just-in-time) adiciona uma verificação a cada método estático e construtor de instância do tipo para garantir que o construtor estático tenha sido chamado anteriormente. As verificações de construtor estático podem diminuir o desempenho. |
 | [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md) | Membro privado ou interno (nível de assembly) não tem chamadores no assembly, ele não é invocado pelo common language runtime e não é invocado por um delegado. |
 | [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md) | Uma instância de um tipo no nível de assembly não é criada pelo código no assembly. |
-| [CA1813: Evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md) | A biblioteca de classes do .NET Framework fornece métodos para recuperar atributos personalizados. Por padrão, esses métodos pesquisam a hierarquia de herança do atributo. A validação do atributo elimina a pesquisa na hierarquia de herança e pode melhorar o desempenho. |
+| [CA1813: Evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md) | O .NET fornece métodos para recuperar atributos personalizados. Por padrão, esses métodos pesquisam a hierarquia de herança do atributo. A validação do atributo elimina a pesquisa na hierarquia de herança e pode melhorar o desempenho. |
 | [CA1814: Prefira matrizes denteadas multidimensional](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md) | Uma matriz denteada é uma matriz cujos elementos são matrizes. As matrizes que constituem os elementos podem ter tamanhos diferentes, que podem resultar em menos espaço desperdiçado para alguns conjuntos de dados. |
 | [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md) | Para tipos de valor, a implementação herdada de Equals usa a biblioteca Reflection e compara o conteúdo de todos os campos. Reflection é computacionalmente cara, e pode ser desnecessário comparar a igualdade de cada campo. Se você espera que os usuários comparem ou classifiquem instâncias, ou usem instâncias como chaves de tabela de hash, o tipo de valor deverá implementar Equals. |
 | [CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md) | Um método que é uma implementação de Dispose não chama GC. SuppressFinalize ou um método que não é uma implementação de Dispose chama GC. SuppressFinalize ou um método chama GC. SuppressFinalize e passa algo que não seja isso (Me no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). |

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f1cf2939f0484c6defb76b88fb072fcd4b51849b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce4f72ba56b27d87d785ca561bad0de6e59dfdc2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779703"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744774"
 ---
 # <a name="ca1007-use-generics-where-appropriate"></a>CA1007: Usar genéricos quando apropriado
 
@@ -34,7 +34,7 @@ ms.locfileid: "62779703"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método visível externamente contém um parâmetro de referência do tipo <xref:System.Object?displayProperty=fullName>e os destinos de assembly contendo [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)].
+ Um método visível externamente contém um parâmetro de referência do tipo <xref:System.Object?displayProperty=fullName>, e o assembly que contém tem como alvo o .NET Framework 2.0.
 
 ## <a name="rule-description"></a>Descrição da regra
  Um parâmetro de referência é um parâmetro que é modificado usando o `ref` (`ByRef` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) palavra-chave. O tipo de argumento que é fornecido para um parâmetro de referência deve corresponder exatamente o tipo de parâmetro de referência. Para usar um tipo que é derivado do tipo de parâmetro de referência, o tipo primeiro ser convertido e atribuído a uma variável do tipo de parâmetro de referência. Uso de um método genérico permite que todos os tipos, sujeitos às restrições a serem passados para o método sem primeiramente converter o tipo para o tipo de parâmetro de referência.

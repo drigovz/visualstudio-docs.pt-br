@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c7a915301dabc0afcfae450c87a435d12e10d15
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62927451"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745659"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solucionar erros específicos em implantações do ClickOnce
 Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.
@@ -36,7 +36,7 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 
  Primeiro, certifique-se de que o servidor está configurado para associar o *. Application* extensão com o conteúdo do tipo "application/x-ms-application."
 
- Se o servidor está configurado corretamente, verifique se o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] está instalado no seu computador. Se o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] estiver instalado, e você ainda estiver vendo esse problema, tente desinstalar e reinstalar o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] para registrar novamente o tipo de conteúdo no cliente.
+ Se o servidor está configurado corretamente, verifique se o .NET Framework 2.0 está instalado no seu computador. Se o .NET Framework 2.0 está instalado e você ainda estiver vendo esse problema, tente desinstalar e reinstalar o .NET Framework 2.0 para registrar novamente o conteúdo de tipo no cliente.
 
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensagem de erro afirma, "não é possível recuperar o aplicativo. Arquivos ausentes na implantação"ou"download do aplicativo foi interrompido, verifique se há erros de rede e tente novamente mais tarde"
  Esta mensagem indica que um ou mais arquivos que está sendo referenciados pelo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos não podem ser baixados. A maneira mais fácil para depurar esse erro é tentar baixar a URL que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] diz que ele não é possível baixar. Aqui estão algumas das possíveis causas:

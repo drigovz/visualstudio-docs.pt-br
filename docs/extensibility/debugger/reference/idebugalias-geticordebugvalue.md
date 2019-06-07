@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50fb7800c4446e7d13334957ee9f5f6534f254bf
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: f8ef27f9af5626b716339281c010c62c2515fb8b
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66338221"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746836"
 ---
 # <a name="idebugaliasgeticordebugvalue"></a>IDebugAlias::GetICorDebugValue
 Recupera uma interface de código gerenciado que representa o valor associado a este alias.
@@ -47,7 +47,7 @@ int GetICorDebugValue(
  Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
 
 ## <a name="remarks"></a>Comentários
- Esse método se aplica somente aos valores gerenciados (o `ICorDebugValue` é uma interface disponíveis na [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] e é definido no [!INCLUDE[dnprdnshort](../../../code-quality/includes/dnprdnshort_md.md)] SDK no arquivo cordebug. idl).
+ Esse método se aplica somente aos valores gerenciados (o `ICorDebugValue` é uma interface disponíveis no .NET Framework e é definido no SDK do .NET Framework no arquivo cordebug. idl).
 
 ## <a name="see-also"></a>Consulte também
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

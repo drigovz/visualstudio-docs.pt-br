@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 132f5c91b12ac0b7ada4d4987ca0298e47310436
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 53e7c0232406462a4c5938fd3f971189c9b2daca
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715164"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745071"
 ---
 # <a name="usage-warnings"></a>Avisos de uso
 
@@ -56,7 +56,7 @@ Avisos de uso suportam o uso correto do .NET.
 |[CA2225: Sobrecargas de operador possuem alternativas nomeadas](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Uma sobrecarga de operador foi detectada, e o método alternativo nomeado esperado não foi encontrado. O membro alternativo nomeado fornece acesso para a mesma funcionalidade que o operador e é fornecido para os desenvolvedores que programem em linguagens que não dão suporte a operadores sobrecarregados.|
 |[CA2226: Os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Um tipo implementa a igualdade ou desigualdade e não implementa o operador oposto.|
 |[CA2227: Propriedades de coleção devem ser somente leitura](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Uma propriedade collection gravável permite que um usuário substitua a coleção por uma coleção diferente. Uma propriedade somente leitura evita que a coleção seja substituída, mas ainda permite que membros individuais sejam definidos.|
-|[CA2228: Não remeter formatos de recurso não lançados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET Framework não podem ser usados por versões com suporte do .NET Framework.|
+|[CA2228: Não remeter formatos de recurso não lançados](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Arquivos de recursos que foram compilados usando versões de pré-lançamento do .NET não podem ser usados por versões com suporte do .NET.|
 |[CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)|Para corrigir uma violação dessa regra, implemente o construtor de serialização. Para uma classe lacrada, torne o construtor particular; do contrário, deixe-o protegido.|
 |[CA2230: Usar parâmetros para argumentos de variável](../code-quality/ca2230-use-params-for-variable-arguments.md)|Um tipo público ou protegido contém um método público ou protegido que usa a convenção de chamada VarArgs, em vez da palavra-chave params.|
 |[CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Um tipo de valor substitui `Object.Equals` mas não implementa o operador de igualdade.|

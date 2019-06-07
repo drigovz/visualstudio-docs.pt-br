@@ -12,12 +12,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77bc25ec831241a87782fc6628fba2ab8e7fa0e7
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0550fc1d286c04c61a1c0b2503326a002fde729e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66334204"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744749"
 ---
 # <a name="requiredframeworkversion-element-visual-studio-templates"></a>Elemento RequiredFrameworkVersion (modelos do Visual Studio)
 
@@ -86,4 +86,4 @@ Neste exemplo, a versão mínima do .NET Framework que é exigido pelo modelo, r
 
 - [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)
 - [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
-- [Uma versão específica do .NET Framework de destino](../ide/visual-studio-multi-targeting-overview.md)
+- [Visão geral de destino do Framework](../ide/visual-studio-multi-targeting-overview.md)

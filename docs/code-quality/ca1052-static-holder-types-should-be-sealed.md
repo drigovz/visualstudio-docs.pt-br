@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 346a7f4cc7c7a8e6f579f94c6294ce9577fa01c7
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842085"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744589"
 ---
 # <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Tipos de suporte estático devem ser selados
 
@@ -46,7 +46,7 @@ CA1052 regra pressupõe que um tipo que contém apenas membros estáticos não f
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, marque o tipo como `sealed` ou `NotInheritable`. Se você estiver direcionando o .NET Framework 2.0 ou posterior, uma abordagem melhor é marcar o tipo como `static` ou `Shared`. Dessa forma, você não precisa declarar um construtor particular para impedir que a classe que está sendo criado.
+Para corrigir uma violação dessa regra, marque o tipo como `sealed` ou `NotInheritable`. Se o projeto tem como alvo o .NET Framework 2.0 ou posterior, uma abordagem melhor é marcar o tipo como `static` ou `Shared`. Dessa forma, você não precisa declarar um construtor particular para impedir que a classe que está sendo criado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

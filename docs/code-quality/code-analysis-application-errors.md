@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d2350a495bf0540f77ff6f0d4222b18431e1586
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540866"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745207"
 ---
 # <a name="code-analysis-application-errors"></a>Erros de aplicativo de análise de código
 
@@ -46,8 +46,8 @@ Esta seção é uma referência das mensagens de erro que são gerados pela ferr
 |[CA0065](ca0065.md)|Construção de metadados sem suporte: Tipo '*TypeName*'contém uma propriedade e um campo com o mesmo nome'*PropertyFieldName*'|
 |[CA0066](ca0066.md)|O valor '*VersionID*' fornecido para o **/targetframeworkversion** não é uma versão reconhecida.|
 |[CA0067](ca0067.md)|Diretório não encontrado.|
-|[CA0068](ca0068.md)|Depurar informações não foi possível encontrar assembly de destino *'AssemblyName'*.|
-|[CA0069](ca0069.md)|Usando a plataforma alternativa. *FrameworkVersion1* não pôde ser encontrado. Usando o *FrameworkVersion2* em vez disso. Para obter melhores resultados de análise, certifique-se de que o .NET Framework correto está instalado.|
+|[CA0068](ca0068.md)|Depurar informações não foi possível encontrar assembly de destino *'AssemblyName'* .|
+|[CA0069](ca0069.md)|Usando a plataforma alternativa. *FrameworkVersion1* não pôde ser encontrado. Usando o *FrameworkVersion2* em vez disso. Para obter melhores resultados de análise, certifique-se de que a versão do framework correto está instalada.|
 |[CA0070](ca0070.md)|Não é possível carregar o assembly ou tipo devido a permissões de segurança.|
 |[CA0501](ca0501.md)|Não é possível ler o relatório de saída.|
 |[CA0502](ca0502.md)|Idioma sem suporte.|

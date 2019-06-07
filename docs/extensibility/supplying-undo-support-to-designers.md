@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc17f59858637048c12929411a0f413ed625ad10
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: e243ccfc92c5e17dd25e6d77dede439daac08761
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66331628"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747724"
 ---
 # <a name="supply-undo-support-to-designers"></a>Fonte de suporte de desfazer para designers
 
@@ -29,7 +29,7 @@ Implementações de designer que precisam para fornecer suporte para o recurso d
 
 - CodeDOM e persistência forneça suportam com a implementação de <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> e <xref:System.ComponentModel.Design.IComponentChangeService> classes.
 
-Para obter mais informações sobre como escrever designers usando [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], consulte [estender o suporte de tempo de Design](/previous-versions/37899azc(v=vs.140)).
+Para obter mais informações sobre como escrever designers usando o .NET Framework, consulte [estender o suporte de tempo de Design](/previous-versions/37899azc(v=vs.140)).
 
 O [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] fornece uma infraestrutura de desfazer padrão por:
 
@@ -50,7 +50,7 @@ Qualquer designer criado no Visual Studio tem suporte à função desfazer autom
 ## <a name="when-to-use-explicit-designer-undo-support"></a>Quando usar o suporte à função desfazer de Designer explícita
  Designers devem fornecer seu próprio gerenciamento de desfazer se eles usarem uma interface gráfica do usuário, conhecida como um adaptador de exibição, que não seja um fornecido pelo <xref:System.Windows.Forms.Control>.
 
- Um exemplo disso pode estar criando um produto com uma interface de design gráfico baseado na web em vez de um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]-com base em interface gráfica.
+ Um exemplo disso pode criar um produto com uma interface de design gráfico baseado na web em vez de uma interface gráfica com base no .NET Framework.
 
  Nesses casos, é necessário registrar esse adaptador de exibição com o Visual Studio usando <xref:Microsoft.VisualStudio.Shell.Design.ProvideViewAdapterAttribute>e fornecer gerenciamento explícito de desfazer.
 
@@ -59,7 +59,7 @@ Qualquer designer criado no Visual Studio tem suporte à função desfazer autom
 ## <a name="undo-support-features-of-the-designer"></a>Recursos de suporte do Designer de desfazer
  O SDK do ambiente fornece implementações padrão de interfaces necessárias para fornecer suporte que pode ser usado pelos designers não usando de desfazer <xref:System.Windows.Forms.Control> com base em classes para suas interfaces de usuário ou o modelo de CodeDOM e persistência padrão.
 
- O <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> classe deriva de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] <xref:System.ComponentModel.Design.UndoEngine> classe usando uma implementação do <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe para gerenciar operações de desfazer.
+ O <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> deriva de classe do .NET Framework <xref:System.ComponentModel.Design.UndoEngine> usando uma implementação de classe a <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> classe para gerenciar operações de desfazer.
 
  O Visual Studio fornece o recurso a seguir para desfazer designer:
 

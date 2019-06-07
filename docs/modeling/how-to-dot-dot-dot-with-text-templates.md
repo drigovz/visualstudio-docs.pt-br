@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3bbcbb078925f36204c472c27821e6ba94fa4e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993541"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747547"
 ---
 # <a name="how-to--with-text-templates"></a>Como ... com modelos de texto
 Modelos de texto no Visual Studio fornecem uma maneira útil de geração de texto de qualquer tipo. Você pode usar modelos de texto para gerar o texto em tempo de execução como parte do seu aplicativo e em tempo de design para gerar alguns dos seus códigos de projeto. Este tópico resume com mais frequência solicitado "Como faço...?" perguntas.
@@ -45,13 +45,14 @@ Modelos de texto no Visual Studio fornecem uma maneira útil de geração de tex
      No seu código, use `this.Host.ResolvePath(filename)` para obter o caminho completo do arquivo.
 
 ### <a name="invoke-methods-from-a-template"></a>Invocar métodos de um modelo
- Se os métodos já existirem, por exemplo, no padrão [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] classes:
+
+Se os métodos já existirem, por exemplo, em classes do .NET:
 
 - Use o \<#@assembly#> diretiva para carregar o assembly e usar \<#@import#> para definir o contexto de namespace. Para obter mais informações, consulte [diretiva de importação T4](../modeling/t4-import-directive.md).
 
    Se você frequentemente usa o mesmo conjunto de assembly e importar diretivas, considere a possibilidade de escrever um processador de diretriz. Em cada modelo, você pode invocar o processador de diretriz, que pode carregar os assemblies e os arquivos de modelo e definir o contexto de namespace. Para obter mais informações, consulte [criando processadores diretiva de modelo de texto do personalizado T4](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
-  Se você estiver escrevendo os métodos:
+Se você estiver escrevendo os métodos:
 
 - Se você estiver gravando um modelo de texto de tempo de execução, escreva uma definição de classe parcial que tem o mesmo nome que seu modelo de texto de tempo de execução. Adicione os métodos adicionais para essa classe.
 

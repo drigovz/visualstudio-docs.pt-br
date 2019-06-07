@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae65ad9c1ad740b3ea39dd97d7430804292df057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bb5160ef663375ee3dd4b45797e8f4536acdf793
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796751"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66744653"
 ---
 # <a name="ca1820-test-for-empty-strings-using-string-length"></a>CA1820: Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres
 
@@ -38,11 +38,11 @@ Uma cadeia de caracteres é comparado com a cadeia de caracteres vazia usando <x
 
 Comparando cadeias de caracteres usando o <xref:System.String.Length%2A?displayProperty=nameWithType> propriedade ou o <xref:System.String.IsNullOrEmpty%2A?displayProperty=nameWithType> método é mais rápido que usar <xref:System.Object.Equals%2A>. Isso ocorre porque <xref:System.Object.Equals%2A> executa significativamente mais instruções MSIL que ambos <xref:System.String.IsNullOrEmpty%2A> ou o número de instruções executadas para recuperar o <xref:System.String.Length%2A> propriedade de valor e compará-la como zero.
 
-Para cadeias de caracteres nulas <xref:System.Object.Equals%2A> e <xref:System.String.Length%2A> = = 0 se comportam de maneira diferente. Se você tentar obter o valor de <xref:System.String.Length%2A> propriedade em uma cadeia de caracteres nula, o common language runtime lançará uma <xref:System.NullReferenceException?displayProperty=fullName>. Se você realizar uma comparação entre uma cadeia de caracteres nula e a cadeia de caracteres vazia, o common language runtime não lança uma exceção e retorna `false`. Testando null não afeta significativamente o desempenho relativo dessas duas abordagens. Quando direcionados ao .NET Framework 2.0 ou posterior, use o <xref:System.String.IsNullOrEmpty%2A> método. Caso contrário, use o <xref:System.String.Length%2A> = = 0 comparação sempre que possível.
+Para cadeias de caracteres nulas <xref:System.Object.Equals%2A> e `<string>.Length == 0` se comportam de maneira diferente. Se você tentar obter o valor de <xref:System.String.Length%2A> propriedade em uma cadeia de caracteres nula, o common language runtime lançará uma <xref:System.NullReferenceException?displayProperty=fullName>. Se você realizar uma comparação entre uma cadeia de caracteres nula e a cadeia de caracteres vazia, o common language runtime não lança uma exceção e retorna `false`. Testando null não afeta significativamente o desempenho relativo dessas duas abordagens. Quando direcionados ao .NET Framework 2.0 ou posterior, use o <xref:System.String.IsNullOrEmpty%2A> método. Caso contrário, use o <xref:System.String.Length%2A> = = 0 comparação sempre que possível.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, altere a comparação para usar o <xref:System.String.Length%2A> propriedade e teste para a cadeia de caracteres nula. Se o destino do .NET Framework 2.0 ou posterior, use o <xref:System.String.IsNullOrEmpty%2A> método.
+Para corrigir uma violação dessa regra, altere a comparação para usar o <xref:System.String.IsNullOrEmpty%2A> método.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

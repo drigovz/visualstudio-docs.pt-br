@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 15c02312d5c257f13b9c0394790bc8a2611d7972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e19ec88a4dec7a13ecc3d77e5d4fc1f04bb114bd
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949793"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747799"
 ---
 # <a name="workflow-project-templates"></a>Modelos de projeto de fluxo de trabalho
 
@@ -67,7 +67,7 @@ Se você escolher o **biblioteca do Designer de atividade** modelo, o Visual Stu
 Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um designer personalizado de atividade](/dotnet/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer).
 
 > [!NOTE]
-> Designers personalizados de atividade podem ser usados para atividades personalizadas em atividades do .NET Framework padrão.
+> Designers personalizados de atividade podem ser usados para atividades personalizadas em atividades do .NET padrão.
 
 ## <a name="see-also"></a>Consulte também
 

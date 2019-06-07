@@ -21,18 +21,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a15daaf5ac98bc2efc4ce83bb2370b94e9f59123
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566774"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745456"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 
 *Atualização hierárquica* refere-se ao processo de salvar dados atualizados (de um conjunto de dados com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserção, atualização e exclusão de registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir que os pedidos a ser criado para esse cliente.  Para obter mais informações sobre relacionamentos em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md).
 
-O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é uma classe gerada pelo Visual Studio, portanto, não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Quando você arrasta uma tabela das **fontes de dados** janela para uma página de formulário do Windows ou do WPF, Visual Studio adiciona uma variável do tipo TableAdapterManager para o formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é uma classe gerada pelo Visual Studio, não é um tipo .NET. Quando você arrasta uma tabela das **fontes de dados** janela para uma página de formulário do Windows ou do WPF, Visual Studio adiciona uma variável do tipo TableAdapterManager para o formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
 Por padrão, um conjunto de dados trata tabelas relacionadas como "apenas relações" o que significa que ele não impõe restrições de chave estrangeira. Você pode modificar essa configuração em tempo de design usando o **Dataset Designer**. Selecione a linha de relação entre duas tabelas para abrir o **relação** caixa de diálogo. As alterações feitas aqui determinam como o `TableAdapterManager` se comporta quando ele envia as alterações nas tabelas relacionadas no banco de dados.
 
@@ -114,7 +114,7 @@ Além de confirmar as alterações em uma tabela filho relacionada antes de salv
 
 Por padrão, um `TableAdapterManager` classe é gerada quando você cria um conjunto de dados contiver tabelas relacionadas. Para impedir que a classe que está sendo gerado, altere o valor da `Hierarchical Update` propriedade do conjunto de dados como false. Quando você arrasta uma tabela que tem uma relação na superfície de design de um formulário do Windows ou a página do WPF, o Visual Studio declara uma variável de membro da classe. Se você não usar a associação de dados, você precisa declarar manualmente a variável.
 
-O `TableAdapterManager` classe não é parte do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Portanto, você não pode procurar por ele na documentação. Ele é criado em tempo de design como parte do processo de criação de conjunto de dados.
+O `TableAdapterManager` classe não é um tipo .NET. Portanto, você não pode procurar por ele na documentação. Ele é criado em tempo de design como parte do processo de criação de conjunto de dados.
 
 A seguir estão os métodos usados com frequência e as propriedades do `TableAdapterManager` classe:
 
