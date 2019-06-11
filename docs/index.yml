@@ -8,6 +8,12 @@ metadata:
   description: Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha, para qualquer plataforma ou dispositivo.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
+  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
+  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 06/07/2019
+  ms.locfileid: "66462858"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -173,9 +179,3 @@ additionalContent:
 
         [Desenvolvimento entre plataformas do .NET Core](/dotnet/core/)
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](ide/talk-to-us.md) - [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html)'
-ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66462858"
