@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f1662f484d8738c381f704732389537b0ac3ad5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4f091ea0841ac66cd106c3fa613f1219ddaaffcf
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431486"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501197"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Forms.PictureBox> e um controle <xref:System.Windows.Forms.CheckBox> em seu formulário. Para adicionar controles <xref:System.Windows.Forms.Button> ao seu formulário.
@@ -30,8 +30,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 4. Escolha o novo controle **PictureBox** para selecioná-lo, e então escolha o triângulo preto no novo controle PictureBox para exibir a lista de tarefas, como mostrado na seguinte imagem.
 
-     ![Tarefas PictureBox](../ide/media/express_pictureboxtasks.png)
-Tarefas **PictureBox**
+     ![Tarefas PictureBox](../ide/media/express_pictureboxtasks.png)<br/>***Tarefas*** *PictureBox*
 
     > [!NOTE]
     > Se você adicionar acidentalmente o tipo errado de controle a seu TableLayoutPanel, poderá excluí-lo. Clique com o botão direito do mouse no controle e escolha **Excluir** no menu de contexto. Você pode também remover os controles de formulário usando a barra de menus. Na barra de menus, escolha **Editar** > **Desfazer** ou **Editar** > **Excluir**.
@@ -45,8 +44,7 @@ Tarefas **PictureBox**
 
 7. Escolha o **TableLayoutPanel** no formulário e adicione um controle CheckBox ao formulário. Clique duas vezes no item **CheckBox** na **Caixa de Ferramentas** para adicionar um novo controle CheckBox à próxima célula livre em sua tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **Text** e digite a palavra **Stretch**, como mostrado na imagem a seguir.
 
-     ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)
-Controle **TextBox** com a propriedade **Stretch**
+     ![Controle TextBox com a propriedade Stretch](../ide/media/express_pictureviewercheckbox.png)<br/>***Controle de*** *TextBox* com ***propriedade*** *Stretch*
 
 8. Escolha o **TableLayoutPanel** no formulário e, em seguida, vá para o grupo **Contêineres** na **Caixa de Ferramentas** (na qual você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula em PictureBox (canto inferior direito). Encaixe então o FlowLayoutPanel no TableLayoutPanel (escolhendo **Encaixar no contêiner pai** na lista de tarefas de triângulo preto de FlowLayoutPanel ou configurando a propriedade **Dock** de FlowLayoutPanel para **Fill**).
 
@@ -71,8 +69,7 @@ Controle **TextBox** com a propriedade **Stretch**
 
 5. Escolha o botão **Fechar** para selecioná-lo. Mantenha pressionada a tecla **Ctrl** e escolha os outros três botões, de forma que todos eles sejam selecionados. Quando todos os botões são selecionados, vá para a janela **Propriedades** e role até a propriedade **AutoSize**. Essa propriedade informa o botão para redimensionar automaticamente para ajustar todo o texto correspondente. Defina-a como **true**. Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Enquanto todos os quatro botões estiverem selecionados, você pode alterar todas as quatro propriedades **AutoSize** ao mesmo tempo.) A figura a seguir mostra os quatro botões.
 
-     ![Visualizador de Imagens com quatro botões](../ide/media/express_autosize.png)
-**Visualizador de Imagens** com quatro botões
+     ![Visualizador de imagens com quatro botões](../ide/media/express_autosize.png)<br/>***Visualizador de imagens*** *com quatro botões*
 
 6. Agora execute o programa novamente para ver seu formulário recentemente apresentado. A escolha dos botões e da caixa de seleção não faz nada ainda, mas funcionará em breve.
 

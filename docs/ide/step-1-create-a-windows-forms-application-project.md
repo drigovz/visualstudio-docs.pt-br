@@ -1,6 +1,6 @@
 ---
 title: 'Etapa 1: Criar um projeto de aplicativo do Windows Forms'
-ms.date: 03/23/2019
+ms.date: 06/01/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f529d737816406b3a4f6aa9921a8dc6b902d2fb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b28b69f2a5f2b02c483c5d6813943297b13f173
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979844"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501065"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
 
@@ -28,14 +28,13 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
 ## <a name="open-visual-studio-2017"></a>Abra o Visual Studio 2017
 
-1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. A caixa de diálogo deve ser assim.
+1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**. A caixa de diálogo deve ser semelhante à captura de tela a seguir.
 
-     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>
-*Caixa de diálogo **Novo projeto***
+     ![Caixa de diálogo Novo Projeto](../ide/media/newprojectdialogcallouts.png)<br/>***Caixa de diálogo*** *Novo Projeto*
 
-2. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto**.
+2. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
-3. Na lista de modelos, escolha **Aplicativo do Windows Forms (.NET Framework)** . Dê o nome de **PictureViewer** ao novo formulário e escolha o botão **OK**.
+3. Na lista de modelos, escolha **Aplicativo do Windows Forms (.NET Framework)** . Dê o nome de *PictureViewer* ao novo formulário e escolha o botão **OK**.
 
     >[!NOTE]
     >Se o modelo **Aplicativo do Windows Forms (.NET Framework)** não for exibido, use o Instalador do Visual Studio para instalar a carga de trabalho **Desenvolvimento para área de trabalho do .NET**.<br/><br/>![Carga de trabalho de desenvolvimento para carga de trabalho do .NET no Instalador do Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obter mais informações, confira a página [Instalar o Visual Studio](../install/install-visual-studio.md).
@@ -50,7 +49,7 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
    ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma. 
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa. Em seguida, escolha **Visual Basic** na lista Linguagem de programação e, em seguida, escolha **Windows** na lista Plataforma.
 
    Depois de aplicar os filtros de linguagem de programação e de plataforma, escolha o modelo **Aplicativo do Windows Forms (.NET Framework)** e, em seguida, escolha **Avançar**.
 
@@ -59,13 +58,13 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
    > [!NOTE]
    > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)** , poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
    >
-   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > Em seguida, no Instalador do Visual Studio, escolha Escolher a carga de trabalho de **desenvolvimento de área de trabalho do .NET**.
-   > 
+   >
    > ![Carga de trabalho do .NET Core no Instalador do Visual Studio](../ide/media/install-dot-net-desktop-env.png)
    >
-   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho. 
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho.
 
 1. Na janela **Configurar seu novo projeto**, digite ou insira *PictureViewer* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f0eb7cab3b1bc764f663cd647811928510281e8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838796"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432009"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -44,6 +44,8 @@ devenv /Edit [File1[ FileN]...]
 Quando um arquivo não é especificado, uma instância existente do Visual Studio fica em destaque. Se nenhum arquivo for especificado e não existir nenhuma instância do Visual Studio, a ferramenta criará uma instância com um layout de janela simplificado.
 
 Se a instância existente do Visual Studio estiver em estado modal, o arquivo será aberto na instância existente quando o Visual Studio sair do estado modal. Por exemplo, essa situação pode ocorrer quando a [caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md) estiver aberta.
+
+Se mais de uma instância do Visual Studio estiver aberta, o arquivo será aberto na instância aberta mais recentemente.
 
 ## <a name="example"></a>Exemplo
 

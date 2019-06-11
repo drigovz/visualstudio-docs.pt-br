@@ -8,16 +8,16 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: 58e727c6335dd391abab4f50a110d361a658e00a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548767"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432265"
 ---
-# <a name="customize-file-nesting-in-solution-explorer"></a>Personalizar o aninhamento de arquivos no Gerenciador de Soluções
+# <a name="file-nesting-in-solution-explorer"></a>Aninhamento de arquivos no Gerenciador de Soluções
 
-O aninhamento de arquivos relacionados no **Gerenciador de Soluções** não é novo, mas até agora, você não tinha controle sobre as regras de aninhamento. Você pode escolher entre as predefinições **Desativado**, **Padrão** e **Web**, mas também pode personalizar o aninhamento exatamente como desejado. Você pode até mesmo criar configurações específicas a uma solução e um projeto, mas falaremos mais sobre tudo isso posteriormente. Primeiro, vamos falar sobre as configurações que você obtém prontas para uso.
+O **Gerenciador de Soluções** aninha arquivos relacionados para ajudar a organizá-los e torná-los mais fáceis de localizar. Por exemplo, se você adicionar um formulário do Windows Forms a um projeto, o arquivo de código do formulário será aninhado abaixo do formulário no **Gerenciador de Soluções**. Nos projetos ASP.NET Core, o aninhamento de arquivos pode ser levado um pouco além. Você pode escolher entre as predefinições de aninhamento de arquivo **Desativado**, **Padrão** e **Web**. Você também pode [personalizar como os arquivos são aninhados](#customize-file-nesting) ou [criar configurações específicas de projeto e da solução](#create-project-specific-settings).
 
 > [!NOTE]
 > Atualmente, há suporte para a funcionalidade somente em projetos ASP.NET Core.
@@ -56,7 +56,7 @@ Vamos nos concentrar no nó **dependentFileProviders** e em seus nós filho. Cad
 
 * **pathSegment**: Use esse tipo de regra para aninhar *jquery.min.js* em *jquery.js*
 
-* **allExtensions**: Use esse tipo de regra para aninhar *file.** em *file.js*
+* **allExtensions**: Use esse tipo de regra para aninhar *file.* * em *file.js*
 
 * **fileToFile**: Use esse tipo de regra para aninhar *bower.json* em *.bowerrc*
 
@@ -128,7 +128,7 @@ Gerencie todas as configurações, incluindo suas próprias configurações pers
 
 ![Ativar regras personalizadas de aninhamento de arquivos](media/filenesting_activatecustom.png)
 
-## <a name="create-solution-specific-and-project-specific-settings"></a>Criar configurações específicas a um projeto e uma solução
+## <a name="create-project-specific-settings"></a>Criar configurações específicas do projeto
 
 É possível criar configurações específicas para um projeto e para uma solução por meio do menu do clique com o botão direito (menu de contexto) de cada solução e projeto:
 
@@ -142,7 +142,7 @@ Faça o oposto e instrua o Visual Studio a usar *somente* as configurações esp
 
 É possível fazer check-in das configurações específicas a um projeto e uma solução no controle do código-fonte, e toda a equipe que trabalha na base de código pode compartilhá-las.
 
-## <a name="disable-global-file-nesting-rules-for-a-particular-solution-or-project"></a>Desabilitar as regras globais de aninhamento de arquivos de uma solução ou um projeto específico
+## <a name="disable-file-nesting-rules-for-a-project"></a>Desabilitar regras de aninhamento de arquivo para um projeto
 
 Desabilite as regras globais existentes de aninhamento de arquivos para soluções ou projetos específicos usando a ação **remover** para um provedor, em vez de **adicionar**. Por exemplo, se você adicionar o seguinte código de configurações a um projeto, todas as regras de **pathSegment** que possam existir globalmente para esse projeto específico serão desabilitadas:
 
@@ -157,3 +157,4 @@ Desabilite as regras globais existentes de aninhamento de arquivos para soluçõ
 ## <a name="see-also"></a>Consulte também
 
 - [Personalizar o IDE](../ide/personalizing-the-visual-studio-ide.md)
+- [Soluções e projetos no Visual Studio](solutions-and-projects-in-visual-studio.md)

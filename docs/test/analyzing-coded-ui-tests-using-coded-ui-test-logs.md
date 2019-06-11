@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822706"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66432313"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
@@ -24,23 +24,23 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
 
 De acordo com seu cenário, use um destes métodos para habilitar o log:
 
-- Use a versão 4 do .NET Framework sem arquivo *App.config* no projeto de teste:
+- Se não houver um arquivo *App.config* presente em seu projeto de teste:
 
-   1. Abra o arquivo *QTAgent32_40.exe.config*. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+   1. Determine qual processo *QTAgent\*.exe* é iniciado quando você executa o teste. Uma maneira de fazer isso é observar a guia **Detalhes** no **Gerenciador de Tarefas** do Windows.
+   
+   2. Abra o arquivo *.config* correspondente da pasta *%ProgramFiles(x86)%\versão do Microsoft Visual Studio\\\<>\\\<edição>\Common7\IDE*. Por exemplo, se o processo que é executado é *QTAgent_40.exe*, abra *QTAgent_40.exe.config*.
 
-   2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
+   2. Modifique o valor de **EqtTraceLevel** para o nível de log desejado.
+   
+      ```xml
+      <!-- You must use integral values for "value".
+           Use 0 for off, 1 for error, 2 for warn, 3 for info, and 4 for verbose. -->
+      <add name="EqtTraceLevel" value="4" />
+      ```
 
    3. Salve o arquivo.
 
-- Use a versão 4.5 do .NET Framework sem arquivo *App.config* no projeto de teste:
-
-   1. Abra o arquivo *QTAgent32.exe.config*. Por padrão, esse arquivo fica localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
-
-   2. Modifique o valor de EqtTraceLevel, informando o nível de log desejado.
-
-   3. Salve o arquivo.
-
-- O arquivo *App.config* está presente no projeto de teste:
+- Se houver um arquivo *App.config* presente em seu projeto de teste:
 
     - Abra o arquivo *App.config* no projeto e adicione o seguinte código sob o nó de configuração:
 
@@ -54,11 +54,13 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 - Habilitar registro em log do próprio código de teste:
 
-   <xref:Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState%2A> = HtmlLoggerState.AllActionSnapshot;
+   ```csharp
+   Microsoft.VisualStudio.TestTools.UITesting.PlaybackSettings.LoggerOverrideState = HtmlLoggerState.AllActionSnapshot;
+   ```
 
 ## <a name="step-2-run-your-coded-ui-test-and-view-the-log"></a>Etapa 2: Execute o teste de IU codificado e veja o log
 
-Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent32.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.
+Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent\*.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como **detalhado** e os testes são bem-sucedidos.
 
 1. No menu **Teste**, escolha a opção **Windows** e selecione **Gerenciador de Testes**.
 

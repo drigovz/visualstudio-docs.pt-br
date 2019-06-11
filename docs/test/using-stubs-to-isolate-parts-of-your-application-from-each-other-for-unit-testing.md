@@ -1,5 +1,5 @@
 ---
-title: Usando stubs para isolar partes do aplicativo para teste de unidade
+title: Usar stubs para isolar partes do aplicativo para testes
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: gewarren
@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 08631af916947021f37bfb3c73b821ba37e3b462
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b88905df0c99eb66c64e529610d6713801fceece
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961958"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401711"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>Use stubs para isolar partes de seu aplicativo umas das outras para teste de unidade
 
@@ -228,9 +228,9 @@ class TestMyComponent
     public void TestVariableContosoPrice()
     {
         // Arrange:
-        int priceToReturn;
-        string companyCodeUsed;
-        var componentUnderTest = new StockAnalyzer(new StubIStockFeed()
+        int priceToReturn = 345;
+        string companyCodeUsed = "";
+        var componentUnderTest = new StockAnalyzer(new StockAnalysis.Fakes.StubIStockFeed()
             {
                GetSharePriceString = (company) =>
                   {
@@ -240,8 +240,6 @@ class TestMyComponent
                      return priceToReturn;
                   };
             };
-        // Set the value that will be returned by the stub:
-        priceToReturn = 345;
 
         // Act:
         int actualResult = componentUnderTest.GetContosoPrice();
@@ -263,7 +261,7 @@ Class TestMyComponent
     <TestMethod()> _
     Public Sub TestVariableContosoPrice()
         ' Arrange:
-        Dim priceToReturn As Integer
+        Dim priceToReturn As Integer = 345
         Dim companyCodeUsed As String = ""
         Dim stockFeed As New StockAnalysis.Fakes.StubIStockFeed()
         With stockFeed
@@ -278,8 +276,6 @@ Class TestMyComponent
         End With
         ' Create an object to test:
         Dim componentUnderTest As New StockAnalyzer(stockFeed)
-        ' Set the value that will be returned by the stub:
-        priceToReturn = 345
 
         ' Act:
         Dim actualResult As Integer = componentUnderTest.GetContosoPrice()
@@ -316,7 +312,7 @@ var stub = new StubIMyInterface ();
 stub.MyMethodString = (value) => 1;
 ```
 
-Se você não fornecer um stub para uma função, o Fakes gerará uma função que retorna o valor padrão do tipo de retorno. Para números, o valor padrão é 0, e para tipos de classe é `null` (C#) ou `Nothing` (Visual Basic).
+Se você não fornecer um stub para uma função, o Fakes gera uma função que retorna o valor padrão do tipo de retorno. Para números, o valor padrão é 0, e para tipos de classe é `null` (C#) ou `Nothing` (Visual Basic).
 
 ### <a name="properties"></a>Propriedades
 
@@ -340,7 +336,7 @@ stub.ValueGet = () => i;
 stub.ValueSet = (value) => i = value;
 ```
 
-Se você não fornecer métodos stub para o setter ou o getter de uma propriedade, o Fakes gerará um stub que armazena valores, para que a propriedade stub funcione como uma variável simples.
+Se você não fornecer métodos stub para o setter ou o getter de uma propriedade, o Fakes gera um stub que armazena valores, para que a propriedade stub funcione como uma variável simples.
 
 ### <a name="events"></a>Eventos
 
@@ -408,7 +404,7 @@ Nos exemplos anteriores, os stubs foram gerados a partir de interfaces. Você ta
     }
 ```
 
-No stub gerado a partir dessa classe, você pode definir métodos delegados para DoAbstract() e DoVirtual(), mas não DoConcrete().
+No stub gerado a partir dessa classe, você pode definir métodos delegados para `DoAbstract()` e `DoVirtual()`, mas não `DoConcrete()`.
 
 ```csharp
 // unit test
@@ -437,13 +433,13 @@ Os tipos de stub são criados para oferecer uma experiência de depuração simp
 
 ## <a name="stub-limitations"></a>Limitações de stubs
 
-1. Não há suporte para assinaturas de método com ponteiros.
+- Não há suporte para assinaturas de método com ponteiros.
 
-2. Não é possível fazer o stub de classes fechadas ou de métodos estáticos porque os tipos de stub dependem da expedição virtual do método. Nesses casos, use os tipos de shim descritos em [Usar shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+- Não é possível fazer o stub de classes fechadas ou de métodos estáticos porque os tipos de stub dependem da expedição virtual do método. Nesses casos, use os tipos de shim descritos em [Usar shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
 ## <a name="change-the-default-behavior-of-stubs"></a>Alteração do comportamento padrão de stubs
 
-Cada tipo de stub gerado contém uma instância da interface `IStubBehavior` (pela propriedade `IStub.InstanceBehavior`). O comportamento é chamado sempre que um cliente chama um membro sem delegado personalizado anexado. Se o comportamento não for definido, ele usará a instância retornada pela propriedade `StubsBehaviors.Current`. Por padrão, essa propriedade retorna um comportamento que gerou uma exceção `NotImplementedException`.
+Cada tipo de stub gerado contém uma instância da interface `IStubBehavior` (pela propriedade `IStub.InstanceBehavior`). O comportamento é chamado sempre que um cliente chama um membro sem delegado personalizado anexado. Se o comportamento não for definido, ele usa a instância retornada pela propriedade `StubsBehaviors.Current`. Por padrão, essa propriedade retorna um comportamento que gerou uma exceção `NotImplementedException`.
 
 O comportamento pode ser alterado a qualquer momento definindo a propriedade `InstanceBehavior` em qualquer instância do stub. Por exemplo, o seguinte snippet altera um comportamento que não faz nada ou retorna o valor padrão do tipo de retorno: `default(T)`:
 

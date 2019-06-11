@@ -8,12 +8,12 @@ ms.assetid: a0b2d8ff-3e2a-487e-9172-90047174f336
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a90d0e02d5ae3ce3ce2e91d4d152244b06fd049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b56195ce7cb6e52433e19dc2a7ae4b42e7580724
+ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950261"
+ms.lasthandoff: 05/31/2019
+ms.locfileid: "66431829"
 ---
 # <a name="how-to-create-a-custom-http-body-editor-for-the-web-performance-test-editor"></a>Como: Criar um editor de corpo HTTP personalizado para o Editor de Testes de Desempenho Web
 
@@ -264,7 +264,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 ## <a name="build-and-deploy-the-plug-ins"></a>Compilar e implantar os plug-ins
 
-1. No menu **Build**, escolha **Compilar \<nome do projeto da Biblioteca de Controles do Windows Form>**.
+1. No menu **Build**, escolha **Compilar \<nome do projeto da Biblioteca de Controles do Windows Form>** .
 
 2. Feche todas as instâncias do Visual Studio.
 
@@ -285,7 +285,7 @@ Quando a edição do corpo da cadeia de caracteres terminar e o usuário clicar 
 
 3. Quando terminar a gravação, no Editor de Testes de Desempenho Web, expanda a solicitação para o serviço Web e selecione **Corpo da string** ou um **Corpo binário**.
 
-4. Na janela **Propriedades**, selecione Corpo da Cadeia de Caracteres ou Corpo Binário e escolha as reticências **(…)**.
+4. Na janela **Propriedades**, selecione Corpo da Cadeia de Caracteres ou Corpo Binário e escolha as reticências **(…)** .
 
    A caixa de diálogo **Editar corpo de dados HTTP** é exibida.
 

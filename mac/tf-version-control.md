@@ -7,12 +7,12 @@ ms.date: 04/04/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 20c739057bcbded922df62ce00e1b0c7e07d9f75
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62972550"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500991"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -115,7 +115,7 @@ Para aprender mais sobre os comandos mencionados aqui, ou outros, você pode usa
 
 Na galeria da extensão do Visual Studio para Mac, há uma extensão de Controle de Versão do Team Foundation que oferece suporte limitado para se conectar ao TFVC. A extensão não é compatível e tem vários problemas conhecidos, portanto, sua experiência pode variar ao usá-la.
 
-Para instalar a extensão, inicie o Visual Studio para Mac e escolha o menu **Visual Studio > Extensões**. Na guia **Galeria**, selecione **Controle de Versão > Controle de Versão do Team Foundation para TFS e Azure DevOps** e clique em **Instalar...**:
+Para instalar a extensão, inicie o Visual Studio para Mac e escolha o menu **Visual Studio > Extensões**. Na guia **Galeria**, selecione **Controle de Versão > Controle de Versão do Team Foundation para TFS e Azure DevOps** e clique em **Instalar...** :
 
 ![Gerenciador de extensões](media/tfvc-install.png)
 
@@ -129,7 +129,7 @@ Pressione **Instalar** na próxima caixa de diálogo para desinstalar o pacote a
 
 ### <a name="using-the-extension"></a>Usar a extensão
 
-Depois de instalar a extensão, selecione o item de menu **Controle de Versão > TFS/Azure DevOps > Abrir do Repositório Remoto...**.
+Depois de instalar a extensão, selecione o item de menu **Controle de Versão > TFS/Azure DevOps > Abrir do Repositório Remoto...** .
 
 ![Item de menu para abrir a extensão](media/tfvc-source-control-explorer-devops.png)
 
@@ -241,7 +241,7 @@ As opções a seguir podem ser usadas para a autenticação no servidor:
 
 Para usar a autenticação Básica é necessário habilitar **Credenciais de autenticação alternativas** no Azure DevOps Services, seguindo as etapas abaixo:
 
-1. Entre em sua organização do Azure DevOps como o proprietário (https://dev.azure.com/{organization}/{project}).
+1. Entre na sua organização Azure DevOps como proprietário (https:\//dev.azure.com/{organization}/{project}).
 
 2. Na barra de ferramentas da organização, selecione o ícone de engrenagem e escolha **Política**:
 

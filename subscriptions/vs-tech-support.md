@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811431"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66402026"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -90,6 +90,9 @@ Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista sus
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Escolher Plano](_img/vs-tech-support/vs-tech-support-choose-plan.png)
+
+   > [!NOTE]
+   > Se você não vir seu plano de suporte, volte para a página anterior e clique em **Avançar** novamente.  Se não conseguir exibir o plano de suporte, copie o texto do problema de suporte para a área de transferência, atualize a página e recrie o problema de suporte.
 
 6. Conclua as etapas restantes (gravidade, informações de contato e análise).   Depois de enviar seu incidente, você verá uma confirmação de que seu incidente foi enviado com êxito e poderá carregar arquivos no caso. Um analista de suporte será atribuído ao seu incidente e contatará você para resolver o problema usando a forma de contato selecionada.
 
