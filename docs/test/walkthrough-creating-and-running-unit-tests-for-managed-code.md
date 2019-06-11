@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 173cc6711f46d7fddad92c3ac871809dda100f36
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7c588966a957cf6d3127e03c67ad1a1d605fabce
+ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704650"
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66401726"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -365,9 +365,9 @@ A execução dos dois métodos de teste demonstra que os testes funcionam corret
 
 ### <a name="continue-the-analysis"></a>Continuar a análise
 
-No entanto, os dois últimos métodos de teste também são preocupantes. Você não pode ter certeza de qual condição no método em teste gera a exceção quando um dos testes é executado. Uma forma de diferenciar as duas condições, que é um valor de débito negativo ou um valor maior que o saldo, aumentará a confiança nos testes.
+O método que está sendo testado pode ser melhorado ainda mais. Com a implementação atual, não temos como saber qual condição (`amount > m_balance` ou `amount < 0`) levou à exceção sendo lançada durante o teste. Nós sabemos apenas que um `ArgumentOutOfRangeException` foi lançado em algum lugar no método. Seria melhor se pudéssemos dizer qual condição em `BankAccount.Debit` fez com que a exceção fosse lançada (`amount > m_balance` ou `amount < 0`) para que possamos ter certeza de que nosso método está checando corretamente seus argumentos.
 
-Observe novamente o método em teste e veja que ambas as instruções condicionais usam um construtor `ArgumentOutOfRangeException` que apenas usa o nome do argumento como parâmetro:
+Observe novamente o método em teste (`BankAccount.Debit`) e veja que ambas as instruções condicionais usam um construtor `ArgumentOutOfRangeException` que apenas usa o nome do argumento como parâmetro:
 
 ```csharp
 throw new ArgumentOutOfRangeException("amount");

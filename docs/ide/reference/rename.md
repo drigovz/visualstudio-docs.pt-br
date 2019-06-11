@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 48e45373c41358ba3e9c2d70222ace07cdf1b59e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62812063"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66500947"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -68,10 +68,13 @@ Esta refatoração aplica-se a:
 
 4. Quando estiver satisfeito com a alteração, escolha **Aplicar** ou pressione **Enter** e as alterações serão confirmadas.
 
-> [!NOTE]
-> Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
->
-> ![Conflito de renomeação](media/rename-conflict-cs.png)
+## <a name="remarks"></a>Comentários
+
+- Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
+
+   ![Conflito de renomeação](media/rename-conflict-cs.png)
+
+- Outra maneira de renomear um símbolo é alterar seu nome no editor. Depois, com o cursor no nome do símbolo, pressione **Ctrl**+ **.** ou apenas expanda o menu do ícone da lâmpada que aparece e escolha **Renomear \<nome antigo> para \<nome novo>** .
 
 ## <a name="see-also"></a>Consulte também
 

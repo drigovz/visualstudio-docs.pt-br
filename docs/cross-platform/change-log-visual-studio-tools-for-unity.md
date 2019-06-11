@@ -1,7 +1,7 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 04/02/2019
+ms.date: 05/28/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,15 +10,75 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f6523f958d334108eb6a3fbe9e5c44e416ff8df7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: acf80d1c700c0ac6c889ecd786a53cccda8604f3
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403191"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66327349"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="4110"></a>4.1.1.0
+ Lançamento em 24 de maio de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+    - Atualização da API MonoBehaviour para 2019.1.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+    - Correção de emissão de relatórios de erros e avisos para a saída quando a compilação leve está habilitada.
+    
+    - Desempenho de construção leve e fixo.
+
+## <a name="4100"></a>4.1.0.0
+ Lançamento em 21 de maio de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+    - Adicionado suporte para a nova API de lote para recarregar projetos mais rapidamente.
+    
+    - Desabilitada a compilação completa para projetos Unity, em favor de usar os erros e avisos do IntelliSense. Na verdade, o Unity cria uma solução do Visual Studio com projetos de biblioteca de classes que representam o que o Unity está fazendo internamente. Dito isso, o resultado da compilação no Visual Studio nunca é usado ou selecionado pelo Unity quando seu pipeline de compilação é fechado. A criação no Visual Studio está apenas consumindo recursos para nada. Se você precisar de uma compilação completa porque possui ferramentas ou uma configuração que depende disso, poderá desabilitar essa otimização (Ferramentas/Opções/Ferramentas para Unity/Desativar a compilação completa de projetos). 
+
+    - Exibir automaticamente o Unity Project Explorer (UPE) quando um projeto Unity é carregado. O UPE será encaixado ao lado do Gerenciador de Soluções.
+    
+    - Mecanismo de extração de nome de projeto atualizado com Unity 2019.x.
+
+    - Adicionado suporte para pacotes Unity no UPE. Somente pacotes referenciados (usando manifest.json na pasta ```Packages```) e pacotes locais (incorporados na pasta ```Packages```) são visíveis.
+    
+- **Geração do Projeto:**
+
+    - Preservar propriedades externas ao processar o arquivo da solução.
+
+- **Avaliação:**
+
+    - Adicionado suporte para nomes qualificados por alias (somente o namespace global por enquanto). Portanto, o avaliador de expressão agora aceita tipos usando o formato global::namespace.type.
+    
+    - Adicionado suporte para o formulário ```pointer[index]```, que é semanticamente idêntico ao formulário de desreferenciamento de ponteiro ```*(pointer+index)```.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+    - Corrigidos problemas de dependência com Microsoft.VisualStudio.MPF.
+    
+    - Fixado o player UWP, sem qualquer projeto carregado.
+    
+    - Corrigida a atualização automática do banco de dados de ativos quando o Visual Studio ainda não estava conectado.
+    
+    - Corrigidos problemas de tema com rótulos e caixas de seleção.
+    
+- **Depurador:**
+
+    - Corrigido o passo com construtores estáticos.
 
 ## <a name="4005"></a>4.0.0.5
  Lançado em 27 de fevereiro de 2019

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88e4f63646883c8d48dbd62fbd03deaddff8b8e2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 06432ac0e882df506e4379a2f2cbffcf52c79f42
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975597"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66332760"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>Como: Adicionar diagramas de classe a projetos
 
@@ -71,6 +71,9 @@ No **Modo de Exibição de Classe**, abra o namespace ou o menu de contexto de t
 No **Gerenciador de Soluções** ou no Modo de Exibição de Classe, clique com o botão direito do mouse no projeto e escolha **Exibir** e, em seguida, escolha **Exibir Diagrama de Classe**.
 
 Um diagrama de classe populado automaticamente é criado.
+
+> [!NOTE]
+> O Designer de Classe não está disponível nos projetos .NET Core.
 
 ## <a name="see-also"></a>Consulte também
 

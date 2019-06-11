@@ -1,6 +1,6 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário'
-ms.date: 11/04/2016
+ms.date: 05/31/2019
 ms.topic: conceptual
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
+ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62949107"
+ms.lasthandoff: 06/04/2019
+ms.locfileid: "66501143"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 
@@ -24,17 +24,20 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 > [!NOTE]
 > Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
-## <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário
+## <a name="to-create-a-project-for-a-form"></a>Para criar um projeto para um formulário
 
 ::: moniker range="vs-2017"
 
 1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1. Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
+1. Escolha **Visual C#** ou **Visual Basic** no lado esquerdo da caixa de diálogo **Novo Projeto** e, em seguida, escolha **Windows Desktop**.
 
-1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, dê o nome **MathQuiz** a ele e, então, clique no botão **OK**.
+1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms (.NET Framework)** , dê o nome *MathQuiz* a ele e, então, clique no botão **OK**.
 
-     Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
+    Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
+
+   > [!NOTE]
+   > Se o modelo **Aplicativo do Windows Forms (.NET Framework)** não for exibido, use o Instalador do Visual Studio para instalar a carga de trabalho **Desenvolvimento para área de trabalho do .NET**.<br/><br/>![Carga de trabalho de desenvolvimento para carga de trabalho do .NET no Instalador do Visual Studio](../ide/media/dot-net-desktop-dev-workload.png)<br/><br/> Para obter mais informações, confira a página [Instalar o Visual Studio](../install/install-visual-studio.md).
 
 ::: moniker-end
 
@@ -42,15 +45,32 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 1. Na tela Iniciar, selecione **Criar um novo projeto**.
 
-1. Na caixa de pesquisa, digite "WPF", escolha **aplicativo WPF (.NET Framework)** e, em seguida, escolha **Próxima**.
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-   Se você não encontrar o modelo **Aplicativo do WPF (.NET Framework)**, use o Instalador do Visual Studio para instalar a carga de trabalho **desenvolvimento para área de trabalho do .NET**.
+1. Na janela **Criar um novo projeto**, insira ou digite *Windows Forms* na caixa de pesquisa.
 
-1. Dê um nome ao projeto, **MathQuiz**, e escolha **Criar**
+1. Escolha o modelo do **Aplicativo do Windows Forms (.NET Framework)** e, em seguida, escolha **Próximo**.
+
+   ![Escolher o modelo do Visual Basic para o Aplicativo do Windows Forms (.NET Framework)](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
+
+   > [!NOTE]
+   > Se você não encontrar o modelo do **Aplicativo do Windows Forms (.NET Framework)** , poderá instalá-lo a partir da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
+   >
+   > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
+   > Em seguida, no Instalador do Visual Studio, escolha Escolher a carga de trabalho de **desenvolvimento de área de trabalho do .NET**.
+   >
+   > ![Carga de trabalho do .NET Core no Instalador do Visual Studio](../ide/media/install-dot-net-desktop-env.png)
+   >
+   > Depois disso, escolha o botão **Modificar** no Instalador do Visual Studio. Pode ser solicitado que você salve seu trabalho; nesse caso, faça isso. Em seguida, escolha **Continuar** para instalar a carga de trabalho.
+
+1. Na janela **Configurar seu novo projeto**, digite ou insira *MathQuiz* na caixa **Nome do projeto**. Em seguida, escolha **Criar**.
 
 ::: moniker-end
 
-1. Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
+## <a name="to-set-properties-for-a-form"></a>Para definir propriedades para um formulário
+
+1. No Visual Studio, escolha o formulário (*Form1.cs* ou *Form1.vb*, dependendo da linguagem de programação), e altere sua propriedade **Texto** para **Math Quiz**.
 
      A janela **Propriedades** contém propriedades para o formulário.
 
@@ -80,7 +100,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 6. Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla **Backspace** para apagar o seu valor.
 
-7. Escolha o sinal de mais (**+**) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
+7. Escolha o sinal de mais ( **+** ) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
 
      É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.
 
