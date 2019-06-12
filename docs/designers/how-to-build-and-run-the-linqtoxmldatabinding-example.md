@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 846b71b768d5b1909f29c8135616714d0124193c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d53f8d08222eb35660f7a4454164d6b821a976d9
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897553"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66714838"
 ---
 # <a name="how-to-build-and-run-the-linqtoxmldatabinding-example"></a>Como: Compilar e executar o exemplo de LinqToXmlDataBinding
 
@@ -22,7 +22,9 @@ Para obter mais informações sobre o Visual Studio, confira [Visão geral do ID
 
 ## <a name="create-the-project"></a>Criar o projeto
 
-1. Inicie o Visual Studio e crie um **WPF App** em C# chamado **LinqToXmlDataBinding**. O projeto deve direcionar o .NET Framework 3.5 (ou posterior).
+1. Inicie o Visual Studio e crie um **WPF App** em C# chamado **LinqToXmlDataBinding**.
+
+   O projeto deve direcionar o .NET Framework 3.5 (ou posterior).
 
 1. Se ainda não presentes, adicione referências de projeto para os seguintes conjuntos de módulos (assemblies) .NET:
 

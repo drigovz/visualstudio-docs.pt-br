@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 222826121b270da93bc4bdd867b21fc62730cb07
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62899330"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820438"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 
@@ -93,8 +93,8 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 |||||
 |-|-|-|-|
 |![Duas formas antes da combinação](../designers/media/b1_1.png)|Duas formas antes da combinação|![Interseção](../designers/media/b1_4.png)|Interseção|
-|![Excluir sobreposição](../designers/media/b1_2.png)|União|![](../designers/media/b1_5.png)|Excluir Sobreposição|
-|![Subtração](../designers/media/b1_3.png)|Divisão|![](../designers/media/b1_6.png)|Subtração|
+|![União](../designers/media/b1_2.png)|União|![Excluir sobreposição](../designers/media/b1_5.png)|Excluir Sobreposição|
+|![Divisão](../designers/media/b1_3.png)|Divisão|![Subtração](../designers/media/b1_6.png)|Subtração|
 
  **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Combinar demarcadores](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 

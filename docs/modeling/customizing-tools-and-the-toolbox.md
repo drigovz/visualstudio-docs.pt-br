@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37bba294dde27fad19122ee281057607f6abc6c8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da472f443f52a6478ac5e1e34fd4d4a5beb0721b
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445788"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820822"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personalizando ferramentas e a caixa de ferramentas
 
@@ -182,7 +182,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  Também é possível personalizar o que ocorre quando a conexão é feita. Por exemplo, é possível personalizar apenas o caso onde o arrasto ocorre para ou de uma determinada classe, todos os casos que um diretiva de conexão de link regula ou o construtor de conexão FlowBuilder todo. Para cada uma dessas opções, é possível ajustar sinalizadores personalizados no nível apropriado. Quando transformar todos os modelos e tentar compilar a solução, as mensagens de erro irão direcioná-lo para os comentários que estão no código gerado. Esses comentários identificam o que deve ser fornecido.
 
- No exemplo de Diagrama de Componentes, o construtor de conexão da relação do domínio de Conexão é personalizado para restringir as conexões que podem ser feitas entre as portas. As ilustrações a seguir mostram que é possível fazer conexões somente a partir dos elementos da `OutPort` para os elementos `InPort`, mas é possível aninhar os componentes dentro uns aos outros. 
+ No exemplo de Diagrama de Componentes, o construtor de conexão da relação do domínio de Conexão é personalizado para restringir as conexões que podem ser feitas entre as portas. As ilustrações a seguir mostram que é possível fazer conexões somente a partir dos elementos da `OutPort` para os elementos `InPort`, mas é possível aninhar os componentes dentro uns aos outros.
 
  **Conexão vir para uma OutPort de um componente aninhado**
 
@@ -196,7 +196,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  **Diretiva na janela de detalhes DSL de conexão de link**
 
- ![](../modeling/media/connectionbuilder_4b.png)
+ ![Diretiva na janela detalhes da DSL de conexão de link](../modeling/media/connectionbuilder_4b.png)
 
  É necessário fornecer métodos na classe ConnectionBuilder:
 

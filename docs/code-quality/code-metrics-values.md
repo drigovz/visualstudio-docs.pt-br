@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b44f2a36297db3265a3904f1f76596ca6ba0e35
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 960c2b546abe3554a5912efde9bd09bb5b2189b7
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260469"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835955"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas de código
 
@@ -32,7 +32,7 @@ A lista a seguir mostra o código de resultados de métricas que calcula o Visua
 
 - **A complexidade ciclomática** -mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo requer mais testes para obter boa cobertura do código e é menos fácil de manter. Para obter mais informações, consulte o [entrada da Wikipedia para complexidade ciclomática](https://wikipedia.org/wiki/Cyclomatic_complexity).
 
-- **Profundidade de herança** -indica o número de diferentes classes que herdam de uma a outra, de volta para a classe base. Profundidade de herança é semelhante à classe em que uma alteração em uma classe base pode afetar qualquer uma de suas classes herdadas de acoplamento. Quanto maior esse número, mais fundo a herança e quanto maior o potencial de modificações de classe base resultará em uma quebra alterar. Para a profundidade de herança, um valor baixo é bom e um valor alto é ruim. 
+- **Profundidade de herança** -indica o número de diferentes classes que herdam de uma a outra, de volta para a classe base. Profundidade de herança é semelhante à classe em que uma alteração em uma classe base pode afetar qualquer uma de suas classes herdadas de acoplamento. Quanto maior esse número, mais fundo a herança e quanto maior o potencial de modificações de classe base resultará em uma quebra alterar. Para a profundidade de herança, um valor baixo é bom e um valor alto é ruim.
 
 - **Classe acoplamento** -mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, as classes base, implementações de interface, os campos definidos nos tipos externos, e decoração do atributo. Design de software BOM determina que tipos e métodos devem ter alta coesão e acoplamento de baixa. Acoplamento alta indica um design que é difícil a reutilização e a manter o devido à suas muitas interdependências em outros tipos. Para obter mais informações, consulte o [acoplamento de classes](https://blogs.msdn.microsoft.com/zainnab/2011/05/25/code-metrics-class-coupling/) postagem de blog.
 
@@ -43,9 +43,7 @@ A lista a seguir mostra o código de resultados de métricas que calcula o Visua
 
 ## <a name="anonymous-methods"></a>Métodos anônimos
 
-Uma *método anônimo* é apenas um método que não tem nome. Métodos anônimos são usados com mais frequência para passar um bloco de código como um parâmetro delegado. Resultados de métricas para um método anônimo que é declarada em um membro, como um método ou um acessador, estão associados com o membro que declara o método. Eles não são associados com o membro que chama o método.
-
-Para obter mais informações sobre como as métricas de código trata os métodos anônimos, consulte [métodos anônimos e análise de código](../code-quality/anonymous-methods-and-code-analysis.md).
+Uma *método anônimo* é apenas um método que não tem nome. Métodos anônimos são usados com mais frequência para passar um bloco de código como um parâmetro delegado. As métricas de código resultados para um método anônimo que é declarado em um membro, como um método ou um acessador, estão associados com o membro que declara o método. Eles não são associados com o membro que chama o método.
 
 ## <a name="generated-code"></a>Código gerado
 

@@ -16,12 +16,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2c5b447d796ddd2098a6500b6094478fcd8b9
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 932805f938e9d96cd944230fcc8aa82a4710da31
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842002"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820628"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable corretamente
 
@@ -52,7 +52,7 @@ O <xref:System.IDisposable?displayProperty=nameWithType> interface não está im
 
 Aviso CA1063 dispara a violação de qualquer um desses padrões.
 
-Cada tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface deve fornecer seu próprio `protected virtual void Dispose(bool)` método. `Dispose()` deve chamar `Dipose(true)`, e o finalizador deve chamar `Dispose(false)`. Se você criar um tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface, você deve definir `Dispose(bool)` e chamá-lo. Para obter mais informações, consulte [limpar recursos não gerenciados (guia do .NET)](/dotnet/standard/garbage-collection/unmanaged) e [padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern).
+Cada tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface deve fornecer seu próprio `protected virtual void Dispose(bool)` método. `Dispose()` deve chamar `Dispose(true)`, e o finalizador deve chamar `Dispose(false)`. Se você criar um tipo sem lacre que declara e implementa o <xref:System.IDisposable> interface, você deve definir `Dispose(bool)` e chamá-lo. Para obter mais informações, consulte [limpar recursos não gerenciados (guia do .NET)](/dotnet/standard/garbage-collection/unmanaged) e [padrão de descarte](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Chamando o modelo de objeto do cliente do SharePoint em uma extensão do Gerenciador de servidores | Microsoft Docs'
+title: 'Gerenciador de servidores: Estendendo o nó de conexões do SharePoint'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f9413b9cb4210959d53eba1753a01d950e980536
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430453"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835948"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Passo a passo: Chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores
   Este passo a passo demonstra como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -240,7 +240,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 
     2. No **Adicionar Conexão do SharePoint** diálogo caixa, digite a URL do site do SharePoint ao qual você deseja se conectar e, em seguida, escolha o **Okey** botão.
 
-         Para especificar o site do SharePoint no computador de desenvolvimento, digite **http://localhost**.
+         Para especificar o site do SharePoint no computador de desenvolvimento, digite **http://localhost** .
 
 3. Expanda o nó de conexão de site (que exibe a URL do seu site) e, em seguida, expanda um nó do site filho (por exemplo, **Site de equipe**).
 

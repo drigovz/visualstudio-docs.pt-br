@@ -1,5 +1,5 @@
 ---
-title: Examinar o modelo de conteúdo de nós usando o modo de exibição do modelo de conteúdo no Designer de esquema XML
+title: Examinar nós usando o modo de exibição do modelo de conteúdo no Designer de esquema XML
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfefc7d6aaa40d628cc0ee9d582fddf65adb411e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 63e337162dc8499bf9ac2acb5606fbf75292574f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001903"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820457"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-using-the-content-model-view"></a>Como: Examinar o modelo de conteúdo de nós usando a exibição do modelo de conteúdo
 
@@ -39,6 +39,6 @@ Este tópico descreve como explorar os nós usando o [modo de exibição do mode
 
 7. Clique em qualquer nó no elemento de `purchaseOrder` e examine a barra de rastreamento para ver onde o esquema define o nó selecionado for encontrado.
 
-8. Clique o **mostrar a documentação** botão na barra de ferramentas XSD para ativar /desativar o documenation. Você também pode clicar com o botão direito do mouse na superfície de design para ativar /desativar a documentação.
+8. Clique o **mostrar a documentação** botão na barra de ferramentas XSD para ativar/desativar a documentação. Você também pode clicar com o botão direito do mouse na superfície de design para ativar /desativar a documentação.
 
-9. Rick-clique a `purchaseOrder` nó e selecione **gerar XML de exemplo** para ver o documento de instância XML.
+9. Clique com botão direito do `purchaseOrder` nó e selecione **gerar XML de exemplo** para ver o documento de instância XML.
