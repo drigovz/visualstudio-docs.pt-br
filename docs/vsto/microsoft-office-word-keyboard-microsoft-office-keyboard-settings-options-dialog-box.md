@@ -1,5 +1,5 @@
 ---
-title: Caixa de diálogo de opções de teclado do Word do Microsoft Office, configurações de teclado do Microsoft Office,
+title: Office Word teclado, configurações de teclado, na caixa de diálogo Opções
 ms.date: 02/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6506fec976822ea4a4e675c9961395c952a7a35f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5180aa2f4c5022cedcba2c5377d2ff2ac14ffb28
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970293"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835990"
 ---
 # <a name="microsoft-office-word-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Caixa de diálogo de opções de teclado do Word do Microsoft Office, configurações de teclado do Microsoft Office,
   Microsoft Office Word e o Visual Studio ambos manipulam teclas de atalho. Comandos diferentes no Word e no Visual Studio pode representar a mesma combinação de teclas de atalho. Quando o Word for aberto em um projeto de nível de documento no Visual Studio, apenas um aplicativo por vez recebe os comandos de tecla de atalho. Por padrão, o Visual Studio recebe todos os comandos de tecla de atalho, mas você pode fazer com que o Word recebê-las quando o documento tem o foco, selecionando **esquema de teclado dinâmico**.

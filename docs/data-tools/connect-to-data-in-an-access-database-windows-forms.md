@@ -14,16 +14,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9d4fcce4664483cd1d981f6a0b1233a6302c553b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ff2fbc41a3e5a9388a3cae7776a22c8671703d1f
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568505"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820401"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar-se a dados em um banco de dados do Access (Windows Forms)
 
-Você pode se conectar a um banco de dados (qualquer um *. mdf* arquivo ou uma *. accdb* arquivo) usando o Visual Studio. Depois de definir a conexão, os dados são exibidos na janela **Fontes de Dados**. Nela, é possível arrastar tabelas ou exibições para os formulários.
+Você pode se conectar a um banco de dados (qualquer um *. mdb* arquivo ou uma *. accdb* arquivo) usando o Visual Studio. Depois de definir a conexão, os dados são exibidos na janela **Fontes de Dados**. Nela, é possível arrastar tabelas ou exibições para os formulários.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -51,7 +51,7 @@ Você pode se conectar aos bancos de dados criados por meio de Access 2013, Offi
 
    O **Adicionar Conexão** caixa de diálogo é aberta.
 
-7. Se **fonte de dados** não está definido como **arquivo de banco de dados do Microsoft Access (OLE DB)**, selecione o **alteração** botão.
+7. Se **fonte de dados** não está definido como **arquivo de banco de dados do Microsoft Access (OLE DB)** , selecione o **alteração** botão.
 
    O **fonte de dados de alteração** caixa de diálogo é aberta. Na lista de fontes de dados, escolha **arquivo de banco de dados do Microsoft Access**. No **provedor de dados** lista suspensa, selecione **.NET Framework Data Provider para OLE DB**e, em seguida, escolha **Okey**.
 
@@ -91,7 +91,7 @@ Você cria o conjunto de dados executando o **Assistente de Configuração de Fo
 
 6. Na página **Escolha a Conexão de Dados**, selecione **Nova Conexão** para configurar uma nova conexão de dados.
 
-7. Se a fonte de dados não for **arquivo de banco de dados do Microsoft Access (OLE DB)**, selecione **alteração** para abrir o **alterar fonte de dados** caixa de diálogo e selecione **Microsoft Acessar o arquivo de banco de dados**e, em seguida, selecione **Okey**.
+7. Se a fonte de dados não for **arquivo de banco de dados do Microsoft Access (OLE DB)** , selecione **alteração** para abrir o **alterar fonte de dados** caixa de diálogo e selecione **Microsoft Acessar o arquivo de banco de dados**e, em seguida, selecione **Okey**.
 
 8. No **nome do arquivo de banco de dados**, especifique o caminho e nome da *. mdb* arquivo que você deseja se conectar a e, em seguida, selecione **Okey**.
 

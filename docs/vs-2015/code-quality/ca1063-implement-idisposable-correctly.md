@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 12a854c4e43385177730ceddf045b76e2e61d342
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 90f218165c0543c1881857191efd202717c6e372
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65686894"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820887"
 ---
 # <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "65686894"
 
   Violação de qualquer um desses padrões irá disparar esse aviso.
 
-  Cada raiz sem lacre IDisposable tipo deve fornecer seu próprio método void Dispose (bool) virtual protegido. Dispose () deve chamar Dipose(true) e Finalize deve chamar Dispose (False). Se você estiver criando um tipo de IDisposable raiz sem lacre, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpeza de recursos não gerenciados](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) na [diretrizes de Design do Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) seção da documentação do .NET Framework.
+  Cada raiz sem lacre IDisposable tipo deve fornecer seu próprio método void Dispose (bool) virtual protegido. Dispose () deve chamar Dispose (True) e Finalize deve chamar Dispose (False). Se você estiver criando um tipo de IDisposable raiz sem lacre, você deve definir Dispose (bool) e chamá-lo. Para obter mais informações, consulte [limpeza de recursos não gerenciados](https://msdn.microsoft.com/library/a17b0066-71c2-4ba4-9822-8e19332fc213) na [diretrizes de Design do Framework](https://msdn.microsoft.com/library/5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b) seção da documentação do .NET Framework.
 
 ## <a name="rule-description"></a>Descrição da Regra
  Todos os tipos IDisposable devem implementar o padrão Dispose corretamente.

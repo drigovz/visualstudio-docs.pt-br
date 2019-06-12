@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4242fabe943dd27624e44a9900981343ec180fcd
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442372"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820913"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
@@ -21,7 +21,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
 > [!NOTE]
 > O SDK de transformação do modelo de texto e o SDK do Visual Studio de modelagem são instalados automaticamente quando você instala os recursos específicos do Visual Studio. Para obter mais detalhes, consulte [esta postagem de blog](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/).
 
-Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [SDK de modelagem e tiver](http://go.microsoft.com/fwlink/?LinkID=186128)
+Se você estiver familiarizado com as DSLs, recomendamos que você trabalhe por meio de **laboratório de ferramentas de DSL**, que pode ser encontrado neste site: [SDK de modelagem e visualização](http://go.microsoft.com/fwlink/?LinkID=186128)
 
 ## <a name="what-can-you-do-with-a-domain-specific-language"></a>O que você pode fazer com uma linguagem específica de domínio?
 
@@ -137,11 +137,11 @@ Você pode executar a solução DSL, assim que você criou. Posteriormente, voc�
 
 O Visual Studio experimental será parecida com o exemplo a seguir:
 
-![](../modeling/media/dsl_min.png)
+![Árvore de exemplo de linguagem específica de domínio no Visual Studio](../modeling/media/dsl_min.png)
 
 ### <a name="the-content-of-a-model"></a>O conteúdo de um modelo
 
-O conteúdo de um arquivo que é uma instância de uma DSL é chamado uma *modelo*. O modelo contiver *modelo*<em>elementos</em> e *links* entre os elementos. A definição de DSL Especifica quais tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada usando o modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
+O conteúdo de um arquivo que é uma instância de uma DSL é chamado uma *modelo*. O modelo contiver *modelo* <em>elementos</em> e *links* entre os elementos. A definição de DSL Especifica quais tipos de elementos de modelo e links podem existir no modelo. Por exemplo, em uma DSL criada usando o modelo de linguagem mínima, há um tipo de elemento de modelo e um tipo de link.
 
 A definição de DSL pode especificar como o modelo é exibido em um diagrama. Você pode escolher entre uma variedade de estilos de formas e conectores. Você pode especificar que algumas formas aparecem dentro de outras formas.
 
@@ -392,7 +392,7 @@ Renomeie as classes de domínio existentes e as relações. Por exemplo, a parti
 
  Você pode usar o mesmo procedimento para instalar a DSL em seu próprio computador para que você não precise usar a instância experimental do Visual Studio.
 
- Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
+ Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](msi-and-vsix-deployment-of-a-dsl.md).
 
 ## <a name="Reset"></a> Removendo o antigo DSLs Experimental
  Se você tiver criado as DSLs experimentais que você não deseja mais, você poderá removê-los do seu computador, redefinindo a instância Experimental do Visual Studio.

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6c4c55461960e48a7ecce74dd9f88e371853e705
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445192"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820988"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 Para definir uma linguagem específica de domínio (DSL), você pode criar uma solução do Visual Studio de um modelo. A parte fundamental da solução é o diagrama de Definição de DSL, que é armazenado em DslDefinition.dsl. A Definição de DSL define as classes e formas da DSL. Depois de modificar e adicionar esses elementos, você pode adicionar o código do programa para personalizar a DSL com mais detalhes.
@@ -99,7 +99,7 @@ Para criar uma nova linguagem específica de domínio, você deve criar uma nova
 
  Se você executar uma solução que você criou do **linguagem mínima** modelo, o Visual Studio experimental será semelhante ao exemplo a seguir:
 
- ![](../modeling/media/dsl_min.png)
+ ![Árvore de exemplo de linguagem específica de domínio no Visual Studio](../modeling/media/dsl_min.png)
 
  Experimente com as ferramentas. Crie elementos e os conecte.
 
