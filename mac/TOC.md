@@ -71,7 +71,8 @@
 ## [Cargas de trabalho disponíveis](workloads.md)
 ## ASP.NET Core
 ### [Suporte do .NET Core](net-core-support.md)
-### [Construindo seu primeiro aplicativo ASP.NET Core](asp-net-core.md)
+### [Introdução ao ASP.NET Core](asp-net-core.md)
+### [Como criar aplicativos ASP.NET Core no Visual Studio para Mac](building-asp-net-core.md)
 ### [Razor](razor.md)
 ### [JavaScript e TypeScript](javascript.md)
 ## Azure
@@ -82,6 +83,7 @@
 ## Desenvolvimento de jogos com Unity
 ### [Desenvolvimento de jogos Unity](unity-tools.md)
 ### [Instalação](setup-vsmac-tools-unity.md)
+### [Introdução ao Unity](unity-walkthrough.md)
 ### [Usando ferramentas do Unity](using-vsmac-tools-unity.md)
 ### [Usando o .NET 4.x no Unity](/visualstudio/cross-platform/unity-scripting-upgrade/?context=visualstudio/mac/context)
 ### [Log de Alterações](/visualstudio/cross-platform/change-log-visual-studio-tools-for-unity-mac/?context=visualstudio/mac/context)
@@ -95,3 +97,6 @@
 ## [Relatar um problema](report-a-problem.md)
 ## [Solução de problemas: Por que não posso ver todos os modelos?](troubleshooting-no-templates.md)
 ## [Solução de problemas: Atualizador tem erros de recuperação de informações](updater-troubleshooting.md)
+
+# [Notas de Versão](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes)
+# [Notas de versão da versão prévia](https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-preview-relnotes)
