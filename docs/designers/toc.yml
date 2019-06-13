@@ -9,6 +9,7 @@
         - name: XAML Designer
           items:
             - name: Visão geral
+              displayName: XAML Designer
               href: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
             - name: Trabalhar com elementos
               href: working-with-elements-in-xaml-designer.md
@@ -27,6 +28,7 @@
         - name: Blend for Visual Studio
           items:
             - name: Visão geral
+              displayName: Blend for Visual Studio
               href: creating-a-ui-by-using-blend-for-visual-studio.md
             - name: Inserir controles e modificar seu comportamento
               href: insert-controls-and-modify-their-behavior-in-xaml-designer.md
@@ -57,6 +59,7 @@
     - name: Windows Presentation Foundation (WPF)
       items:
         - name: Introdução
+          displayName: Windows Presentation Foundation (WPF)
           href: getting-started-with-wpf.md
         - name: Visão geral do WPF
           href: introduction-to-wpf.md
@@ -67,6 +70,7 @@
             - name: Propriedades dinâmicas do LINQ to XML
               items:
                 - name: Visão geral
+                  displayName: LINQ to XML dynamic properties
                   href: linq-to-xml-dynamic-properties.md
                 - name: Propriedades dinâmicas da classe XAttribute
                   items:
@@ -98,6 +102,79 @@
                       href: l2dbform-xaml-source-code.md
                     - name: Código-fonte de L2DBForm.xaml.cs
                       href: l2dbform-xaml-cs-source-code.md
+    - name: Windows Forms
+      items:
+        - name: 'Tutorial 1: Criar um visualizador de imagens (C#)'
+          items:
+            - name: Visão geral
+              displayName: Tutorial 1 Picture viewer
+              href: ../ide/tutorial-1-create-a-picture-viewer.md
+            - name: 'Etapa 1: Criar um projeto de aplicativo do Windows Forms'
+              href: ../ide/step-1-create-a-windows-forms-application-project.md
+            - name: 'Etapa 2: Executar o programa'
+              href: ../ide/step-2-run-your-program.md
+            - name: 'Etapa 3: Definir as propriedades do formulário'
+              href: ../ide/step-3-set-your-form-properties.md
+            - name: 'Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel'
+              href: ../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md
+            - name: 'Etapa 5: Adicionar controles ao formulário'
+              href: ../ide/step-5-add-controls-to-your-form.md
+            - name: 'Etapa 6: Nomear os controles de botão'
+              href: ../ide/step-6-name-your-button-controls.md
+            - name: 'Etapa 7: Adicionar componentes de diálogo ao formulário'
+              href: ../ide/step-7-add-dialog-components-to-your-form.md
+            - name: 'Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem'
+              href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
+            - name: 'Etapa 9: Revisar, comentar e testar o código'
+              href: ../ide/step-9-review-comment-and-test-your-code.md
+            - name: 'Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção'
+              href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
+            - name: 'Etapa 11: Executar o programa e experimentar outros recursos'
+              href: ../ide/step-11-run-your-program-and-try-other-features.md
+        - name: 'Tutorial 2: Criar um teste de matemática temporizado (C#)'
+          items:
+            - name: Visão geral
+              displayName: Tutorial 2 Timed math quiz
+              href: ../ide/tutorial-2-create-a-timed-math-quiz.md
+            - name: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário'
+              href: ../ide/step-1-create-a-project-and-add-labels-to-your-form.md
+            - name: 'Etapa 2: Criar um problema de adição aleatório'
+              href: ../ide/step-2-create-a-random-addition-problem.md
+            - name: 'Etapa 3: Adicionar um temporizador de contagem regressiva'
+              href: ../ide/step-3-add-a-countdown-timer.md
+            - name: 'Etapa 4: Adicionar o método CheckTheAnswer()'
+              href: ../ide/step-4-add-the-checktheanswer-parens-method.md
+            - name: 'Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown'
+              href: ../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md
+            - name: 'Etapa 6: Adicionar um problema de subtração'
+              href: ../ide/step-6-add-a-subtraction-problem.md
+            - name: 'Etapa 7: Adicionar problemas de multiplicação e divisão'
+              href: ../ide/step-7-add-multiplication-and-division-problems.md
+            - name: 'Etapa 8: Personalizar o teste'
+              href: ../ide/step-8-customize-the-quiz.md
+        - name: 'Tutorial 3: Criar um jogo da memória (C#)'
+          items:
+            - name: Visão geral
+              displayName: Tutorial 3 Matching game
+              href: ../ide/tutorial-3-create-a-matching-game.md
+            - name: 'Etapa 1: Criar um projeto e adicionar uma tabela ao formulário'
+              href: ../ide/step-1-create-a-project-and-add-a-table-to-your-form.md
+            - name: 'Etapa 2: Adicionar um objeto aleatório e uma lista de ícones'
+              href: ../ide/step-2-add-a-random-object-and-a-list-of-icons.md
+            - name: 'Etapa 3: Atribuir um ícone aleatório a cada rótulo'
+              href: ../ide/step-3-assign-a-random-icon-to-each-label.md
+            - name: 'Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo'
+              href: ../ide/step-4-add-a-click-event-handler-to-each-label.md
+            - name: 'Etapa 5: Adicionar referências de rótulo'
+              href: ../ide/step-5-add-label-references.md
+            - name: 'Etapa 6: Adicionar um temporizador'
+              href: ../ide/step-6-add-a-timer.md
+            - name: 'Etapa 7: Manter os pares visíveis'
+              href: ../ide/step-7-keep-pairs-visible.md
+            - name: 'Etapa 8: Adicionar um método para verificar se o jogador ganhou'
+              href: ../ide/step-8-add-a-method-to-verify-whether-the-player-won.md
+            - name: 'Etapa 9: Experimentar outros recursos'
+              href: ../ide/step-9-try-other-features.md
     - name: Ativos 3D
       items:
         - name: Trabalhar com ativos 3D para jogos e aplicativos
@@ -141,6 +218,7 @@
             - name: Nós do designer do sombreador
               items:
                 - name: Visão geral
+                  displayName: Shader designer nodes
                   href: shader-designer-nodes.md
                 - name: Nós de constante
                   href: constant-nodes.md
@@ -157,6 +235,7 @@
             - name: Exemplos de designer do sombreador
               items:
                 - name: Criar um sombreador de cores básico
+                  displayName: Shader designer example
                   href: how-to-create-a-basic-color-shader.md
                 - name: Criar um sombreador Lambert básico
                   href: how-to-create-a-basic-lambert-shader.md
@@ -178,7 +257,7 @@
               href: how-to-export-a-texture-that-contains-mipmaps.md
             - name: Exportar uma textura que tenha o alfa pré-multiplicado
               href: how-to-export-a-texture-that-has-premultiplied-alpha.md
-            - name: Exportar uma textura para ser usada com aplicativos Direct2D ou Javascript
+            - name: exportar uma textura para uso com aplicativos Direct2D ou JavaScript
               href: how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md
     - name: A biblioteca de imagens do Visual Studio
       href: the-visual-studio-image-library.md
