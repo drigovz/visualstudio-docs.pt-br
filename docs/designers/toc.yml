@@ -125,9 +125,9 @@
               href: ../ide/step-7-add-dialog-components-to-your-form.md
             - name: 'Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem'
               href: ../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md
-            - name: 'Etapa 9: Revisar, comentar e testar o código'
+            - name: 'Etapa 9: Examinar, comentar e testar o código'
               href: ../ide/step-9-review-comment-and-test-your-code.md
-            - name: 'Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção'
+            - name: 'Etapa 10: Escrever código para botões adicionais e uma caixa de seleção'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
             - name: 'Etapa 11: Executar o programa e experimentar outros recursos'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
