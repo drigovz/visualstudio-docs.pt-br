@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 67ea95e3c52daed03acfe451f353edc039e1fecb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62838474"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043542"
 ---
 # <a name="debugging-xslt"></a>Depuração do XSLT
 
@@ -25,7 +25,7 @@ Você pode executar o código uma linha por vez, intervir, percorrendo ou pisand
 Uma vez que você iniciar a depuração, o depurador XSLT abrir janelas para mostrar o documento de entrada e saída XSLT.
 
 > [!NOTE]
-> O depurador XSLT só está disponível na edição Enterprise do Visual Studio.
+> O depurador XSLT só está disponível nas edições Professional e Enterprise do Visual Studio.
 
 ## <a name="debug-from-the-xml-editor"></a>Depuração do editor XML
 

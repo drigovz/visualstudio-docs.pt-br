@@ -8,16 +8,16 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: fec32bf187d629c5fd99ce27eb17a61db39d3873
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1e90a1d9e03892cf81bd2257d3dcc6e25ab36246
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65839713"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032884"
 ---
 No dispositivo remoto ou servidor que você deseja depurar na, em vez de computador do Visual Studio, baixe e instale a versão correta das ferramentas remotas nos links na tabela a seguir.
 
-- Baixe as mais recentes ferramentas remotas para a sua versão do Visual Studio. A versão mais recente de ferramentas remoto é compatível com versões anteriores do Visual Studio, mas as versões anteriores de ferramentas remotas não são compatíveis com versões posteriores do Visual Studio.
+- Baixe as mais recentes ferramentas remotas para a sua versão do Visual Studio. A versão mais recente de ferramentas remoto é compatível com versões anteriores do Visual Studio, mas as versões anteriores de ferramentas remotas não são compatíveis com versões posteriores do Visual Studio. (Por exemplo, se você estiver usando o Visual Studio 2017, baixe a atualização mais recente das ferramentas remotas para Visual Studio 2017. Nesse cenário, não baixe as ferramentas remotas para Visual Studio de 2019.)
 - Baixe as ferramentas remotas com a mesma arquitetura que a máquina que você estiver instalando-os em. Por exemplo, se você quiser depurar um aplicativo de 32 bits em um computador remoto executando um sistema operacional de 64 bits, instale as ferramentas remotas de 64 bits.
 
 ::: moniker range=">=vs-2019"
