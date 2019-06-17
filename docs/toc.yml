@@ -417,23 +417,6 @@
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Passo a passo: Gerar código por meio do uso'
                   href: ide/walkthrough-test-first-support-with-the-generate-from-usage-feature.md
-            - name: Dicas e truques
-              items:
-                - name: Dicas de produtividade
-                  href: ide/productivity-tips-for-visual-studio.md
-                - name: Atalhos de teclado
-                  items:
-                    - name: Atalhos de teclado
-                      href: ide/tips-and-tricks-for-visual-studio.md
-                    - name: Identificar e personalizar atalhos de teclado
-                      href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
-                    - name: Atalhos para comandos usados com frequência
-                      href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
-                    - name: Todos os atalhos de teclado
-                      href: ide/default-keyboard-shortcuts-in-visual-studio.md
-                - name: 'Dicas para desenvolvedores do C#'
-                  displayName: ReSharper
-                  href: ide/csharp-developer-productivity.md
             - name: IntelliSense
               items:
                 - name: Usar o IntelliSense
@@ -677,6 +660,20 @@
       href: extensibility/visual-studio-sdk.md
     - name: Analisar e modelar a arquitetura...
       href: modeling/analyze-and-model-your-architecture.md
+    - name: Dicas e truques
+      items:
+        - name: Recursos de produtividade
+          href: ide/productivity-features.md
+        - name: Atalhos de produtividade
+          href: ide/productivity-shortcuts.md
+        - name: 'Dicas para desenvolvedores do C#'
+          displayName: ReSharper
+          href: ide/csharp-developer-productivity.md
+        - name: Personalizar atalhos de teclado
+          href: ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md
+        - name: Usar exclusivamente o teclado
+          displayName: accessibility
+          href: ide/reference/how-to-use-the-keyboard-exclusively.md
     - name: Personalizar
       items:
         - name: Personalizar o IDE
@@ -685,6 +682,7 @@
         - name: 'Início Rápido: Personalizar tema e cores do texto'
           href: ide/quickstart-personalize-the-ide.md
         - name: Configurações do ambiente
+          displayName: profiles
           href: ide/environment-settings.md
         - name: Configurações sincronizadas
           href: ide/synchronized-settings-in-visual-studio.md
@@ -704,7 +702,7 @@
           displayName: 'marketplace, gallery, vsix'
         - name: Gerenciar ferramentas externas
           href: ide/managing-external-tools.md
-    - name: Desempenho
+    - name: Desempenho do Visual Studio
       items:
         - name: Otimizar o desempenho
           href: ide/optimize-visual-studio-performance.md
@@ -720,14 +718,95 @@
           href: ide/reference/accessibility-features-of-visual-studio.md
         - name: Definir opções de acessibilidade do IDE
           href: ide/reference/how-to-set-ide-accessibility-options.md
-        - name: Usar exclusivamente o teclado
-          href: ide/reference/how-to-use-the-keyboard-exclusively.md
         - name: Dicas e truques de acessibilidade
           href: ide/reference/accessibility-tips-and-tricks.md
         - name: Produtos e serviços de acessibilidade da Microsoft
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Referência
   items:
+    - name: Atalhos de teclado
+      items:
+        - name: Comandos populares
+          displayName: keyboard shortcuts
+          href: ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md
+        - name: Todos os comandos
+          displayName: keyboard commands
+          href: ide/default-keyboard-shortcuts-in-visual-studio.md
+    - name: Comandos do Visual Studio
+      items:
+        - name: Referência
+          displayName: Visual Studio commands
+          href: ide/reference/visual-studio-commands.md
+        - name: Aliases de comando
+          href: ide/reference/visual-studio-command-aliases.md
+        - name: Comando Adicionar Item Existente
+          href: ide/reference/add-existing-item-command.md
+        - name: Comando Adicionar Projeto Existente
+          href: ide/reference/add-existing-project-command.md
+        - name: Comando Adicionar Novo Item
+          href: ide/reference/add-new-item-command.md
+        - name: Comando Alias
+          href: ide/reference/alias-command.md
+        - name: Comando Avaliar Instrução
+          href: ide/reference/evaluate-statement-command.md
+        - name: Comando Localizar
+          href: ide/reference/find-command.md
+        - name: Comando Localizar nos Arquivos
+          href: ide/reference/find-in-files-command.md
+        - name: Comando Ir para
+          href: ide/reference/go-to-command.md
+        - name: Comando Importar e Exportar Configurações
+          href: ide/reference/import-and-export-settings-command.md
+        - name: Comando Listar Pilha de Chamadas
+          href: ide/reference/list-call-stack-command.md
+        - name: Comando Listar Desmontagem
+          href: ide/reference/list-disassembly-command.md
+        - name: Comando Listar Memória
+          href: ide/reference/list-memory-command.md
+        - name: Comando Listar Módulos
+          href: ide/reference/list-modules-command.md
+        - name: Comando Listar Registros
+          href: ide/reference/list-registers-command.md
+        - name: Comando Listar Origem
+          href: ide/reference/list-source-command.md
+        - name: Comando Listar Threads
+          href: ide/reference/list-threads-command.md
+        - name: Comando Registrar saída da janela Comando
+          href: ide/reference/log-command-window-output-command.md
+        - name: Comando Novo Arquivo
+          href: ide/reference/new-file-command.md
+        - name: Comando Abrir Arquivo
+          href: ide/reference/open-file-command.md
+        - name: Comando Abrir Projeto
+          href: ide/reference/open-project-command.md
+        - name: Comando Imprimir
+          href: ide/reference/print-command.md
+        - name: Comando Inspeção Rápida
+          href: ide/reference/quick-watch-command.md
+        - name: Comando Substituir
+          href: ide/reference/replace-command.md
+        - name: Comando Substituir nos Arquivos
+          href: ide/reference/replace-in-files-command.md
+        - name: Definir processo atual
+          href: ide/reference/set-current-process.md
+        - name: Comando Definir Registro de Ativação Atual
+          href: ide/reference/set-current-stack-frame-command.md
+        - name: Comando Definir Thread Atual
+          href: ide/reference/set-current-thread-command.md
+        - name: Comando Definir Base
+          href: ide/reference/set-radix-command.md
+        - name: Comando Shell
+          href: ide/reference/shell-command.md
+        - name: Comando ShowWebBrowser
+          href: ide/reference/showwebbrowser-command.md
+        - name: Comando Iniciar
+          href: ide/reference/start-command.md
+        - name: Comando Caminho do Símbolo
+          href: ide/reference/symbol-path-command.md
+        - name: Comando Ativar/Desativar Ponto de Interrupção
+          href: ide/reference/toggle-breakpoint-command.md
+        - name: Comando Inspecionar
+          href: ide/reference/watch-command.md
     - name: Elementos da interface do usuário geral
       displayName: Windows and dialogs
       items:
@@ -963,7 +1042,7 @@
               href: ide/reference/toolbox-data-tab.md
             - name: 'Caixa de Ferramentas, Guia HTML'
               href: ide/reference/toolbox-html-tab.md
-    - name: Opções de linha de comando do desenvolvedor
+    - name: Opções de linha de comando do Devenv
       items:
         - name: Referência
           displayName: devenv command-line switches
@@ -1012,81 +1091,6 @@
           href: ide/reference/upgrade-devenv-exe.md
         - name: '-UseEnv (devenv.exe)'
           href: ide/reference/useenv-devenv-exe.md
-    - name: Comandos do Visual Studio
-      items:
-        - name: Referência
-          displayName: Visual Studio commands
-          href: ide/reference/visual-studio-commands.md
-        - name: Aliases de comando do Visual Studio
-          href: ide/reference/visual-studio-command-aliases.md
-        - name: Comando Adicionar Item Existente
-          href: ide/reference/add-existing-item-command.md
-        - name: Comando Adicionar Projeto Existente
-          href: ide/reference/add-existing-project-command.md
-        - name: Comando Adicionar Novo Item
-          href: ide/reference/add-new-item-command.md
-        - name: Comando Alias
-          href: ide/reference/alias-command.md
-        - name: Comando Avaliar Instrução
-          href: ide/reference/evaluate-statement-command.md
-        - name: Comando Localizar
-          href: ide/reference/find-command.md
-        - name: Comando Localizar nos Arquivos
-          href: ide/reference/find-in-files-command.md
-        - name: Comando Ir para
-          href: ide/reference/go-to-command.md
-        - name: Comando Importar e Exportar Configurações
-          href: ide/reference/import-and-export-settings-command.md
-        - name: Comando Listar Pilha de Chamadas
-          href: ide/reference/list-call-stack-command.md
-        - name: Comando Listar Desmontagem
-          href: ide/reference/list-disassembly-command.md
-        - name: Comando Listar Memória
-          href: ide/reference/list-memory-command.md
-        - name: Comando Listar Módulos
-          href: ide/reference/list-modules-command.md
-        - name: Comando Listar Registros
-          href: ide/reference/list-registers-command.md
-        - name: Comando Listar Origem
-          href: ide/reference/list-source-command.md
-        - name: Comando Listar Threads
-          href: ide/reference/list-threads-command.md
-        - name: Comando Saída da Janela Log de Comando
-          href: ide/reference/log-command-window-output-command.md
-        - name: Comando Novo Arquivo
-          href: ide/reference/new-file-command.md
-        - name: Comando Abrir Arquivo
-          href: ide/reference/open-file-command.md
-        - name: Comando Abrir Projeto
-          href: ide/reference/open-project-command.md
-        - name: Comando Imprimir
-          href: ide/reference/print-command.md
-        - name: Comando Inspeção Rápida
-          href: ide/reference/quick-watch-command.md
-        - name: Comando Substituir
-          href: ide/reference/replace-command.md
-        - name: Comando Substituir nos Arquivos
-          href: ide/reference/replace-in-files-command.md
-        - name: Definir processo atual
-          href: ide/reference/set-current-process.md
-        - name: Comando Definir Quadro de Pilha Atual
-          href: ide/reference/set-current-stack-frame-command.md
-        - name: Comando Definir Thread Atual
-          href: ide/reference/set-current-thread-command.md
-        - name: Comando Definir Base
-          href: ide/reference/set-radix-command.md
-        - name: Comando Shell
-          href: ide/reference/shell-command.md
-        - name: Comando ShowWebBrowser
-          href: ide/reference/showwebbrowser-command.md
-        - name: Comando Iniciar
-          href: ide/reference/start-command.md
-        - name: Comando demarcador do Símbolo
-          href: ide/reference/symbol-path-command.md
-        - name: Comando Ativar/Desativar Ponto de Interrupção
-          href: ide/reference/toggle-breakpoint-command.md
-        - name: Comando Inspecionar
-          href: ide/reference/watch-command.md
     - name: Segurança
       items:
         - name: Desenvolver aplicativos e segurança
