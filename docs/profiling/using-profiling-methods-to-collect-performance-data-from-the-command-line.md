@@ -8,15 +8,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0472fb572aab8559d8cbb571c044f9ef25f8ed
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 5b5f2c1d350f487b6490d0c2b4ce4fe0b83bb38f
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263820"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746772"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usar métodos de criação de perfil para coletar dados de desempenho por meio da linha de comando
-A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferramentas de Criação de Perfil, ferramentas e opções de linha de comando depende de fatores como o tipo de aplicativo para o qual você está criando um perfil, o método de criação de perfil que você deseja usar e se o aplicativo de destino é gravado no formato nativo ou em código [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+A escolha de ferramentas e opções de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] depende de fatores como o tipo de aplicativo analisado, o método de criação de perfil que você deseja usar e se o aplicativo de destino é escrito em código nativo ou do .NET Framework.
 
  Este tópico organiza os tópicos de procedimentos de linha de comando acordo com o método de criação de perfil que você escolher.
 
@@ -50,9 +50,9 @@ A escolha de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Ferrament
 - [Serviços nativos](../profiling/how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line.md)
 
 ## <a name="use-net-memory-methods-to-collect-memory-allocation-and-object-lifetime-data"></a>Usar métodos de memória do .NET para coletar dados de alocação de memória e de tempo de vida do objeto
- O método de memória do .NET das Ferramentas de Criação de Perfil permite que você colete dados de alocação de memória [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e informações sobre o tempo de vida de objetos no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ O método de memória do .NET das Ferramentas de Criação de Perfil permite que você colete dados de alocação de memória do .NET Framework e informações sobre o tempo de vida de objetos no .NET Framework.
 
- É possível iniciar o aplicativo de destino usando o criador de perfil; anexar o criador de perfil a uma instância em execução de um aplicativo; e criar versões instrumentadas do aplicativo para coletar informações detalhadas de tempo junto com os dados de memória [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+ É possível iniciar o aplicativo de destino usando o criador de perfil, anexar o criador de perfil a uma instância em execução de um aplicativo e criar versões instrumentadas do aplicativo para coletar informações detalhadas de tempo junto com os dados de memória do .NET Framework.
 
 |Tarefa|Tipo de aplicativo de destino|
 |----------|-----------------------------|

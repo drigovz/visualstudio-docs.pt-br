@@ -7,22 +7,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537445"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747330"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)
 
 Você pode usar o comando **Inspecionar Definição** para exibir e editar código sem abandonar o código que está escrevendo. **Inspecionar Definição** e **Ir Para Definição** mostram as mesmas informações, mas **Inspecionar Definição** faz a exibição em uma janela pop-up e **Ir Para Definição** mostra o código em uma janela de código separada. **Ir Para Definição** faz com que seu contexto (ou seja, a janela de código ativo, a linha atual e a posição do cursor) mude para a janela de código de definição. Usando **Espiar Definição**, você pode exibir e editar a definição e percorrer o arquivo de definição enquanto mantém seu local no arquivo original do código.
 
-Você pode usar **Inspecionar Definição** com código C#, Visual Basic e C++. No Visual Basic, **Inspecionar Definição** mostra um link para o **Pesquisador de Objetos** de símbolos sem metadados de definição (por exemplo, os tipos internos do .NET Framework).
+Você pode usar **Inspecionar Definição** com código C#, Visual Basic e C++. No Visual Basic, a opção **Inspecionar Definição** mostra um link para o **Pesquisador de Objetos** para símbolos sem metadados de definição (por exemplo, os tipos .NET internos).
 
-## <a name="working-with-peek-definition"></a>Trabalhando com Inspecionar Definição
+## <a name="use-peek-definition"></a>Usar Inspecionar Definição
 
-### <a name="to-open-a-peek-definition-window"></a>Para abrir uma janela Inspecionar Definição
+### <a name="open-a-peek-definition-window"></a>Abrir uma janela Inspecionar Definição
 
 1. Você pode inspecionar uma definição escolhendo **Inspecionar Definição** no menu do clique com o botão direito para um tipo ou membro que deseja explorar. Se a opção estiver habilitada, você também poderá espiar uma definição usando o mouse, pressionando **Ctrl** (ou outro modificador) e clicando no nome do membro. Ou, usando o teclado, pressione **Alt**+**F12**.
 
@@ -75,7 +75,7 @@ Você pode usar estes atalhos de teclado com a janela **Inspecionar Definição*
 |Abrir a janela de definição|**Alt**+**F12**|
 |Fechar a janela de definição|**Esc**|
 |Promover a janela de definição para uma guia de documento regular|**Shift**+**Alt**+**Home**|
-|Navegar entre janelas de definição|**Ctrl**+**Alt**+**-** e **Ctrl**+**Alt**+**=**|
+|Navegar entre janelas de definição|**Ctrl**+**Alt**+ **-** e **Ctrl**+**Alt**+ **=**|
 |Navegar entre vários resultados|**F8** e **Shift**+**F8**|
 |Alternar entre a janela do editor de códigos e a janela de definição|**Shift**+**Esc**|
 

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b26c700e90189882f850d4bda1d47fb6f54c025
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62548102"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745810"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -56,11 +56,11 @@ A caixa de diálogo **Gerenciador de Referências** mostra diferentes categorias
 
 ## <a name="assemblies-tab"></a>Guia Assemblies
 
-A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração **Copiar Local**. Para obter mais informações, consulte [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md).
+A guia **Assemblies** lista todos os assemblies .NET que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração **Copiar Local**. Para obter mais informações, consulte [Gerenciar referências em um projeto](../ide/managing-references-in-a-project.md).
 
 Ao adicionar uma referência manualmente a qualquer namespace EnvDTE (<xref:EnvDTE>, <xref:EnvDTE80>, <xref:EnvDTE90>, <xref:EnvDTE90a> ou <xref:EnvDTE100>), defina a propriedade **Inserir Tipos de Interoperabilidade** da referência como **Falso** na janela **Propriedades**. Definir essa propriedade como **Verdadeiro** poderá causar problemas de build devido a determinadas propriedades de EnvDTE que não podem ser inseridas.
 
-Todos os projetos da área de trabalho contêm uma referência implícita a **mscorlib**. Projetos [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] contêm uma referência implícita a <xref:Microsoft.VisualBasic>. Todos os projetos contêm uma referência implícita a **System.Core**, mesmo se ela for removida da lista de referências.
+Todos os projetos da área de trabalho contêm uma referência implícita a **mscorlib**. Os projetos do Visual Basic contêm uma referência implícita a <xref:Microsoft.VisualBasic>. Todos os projetos contêm uma referência implícita a **System.Core**, mesmo se ela for removida da lista de referências.
 
 Se um tipo de projeto não der suporte a assemblies, a guia não será exibida na caixa de diálogo **Gerenciador de Referências**.
 
@@ -68,7 +68,9 @@ A guia **Assemblies** consiste em duas subguias:
 
 1. **Framework** lista todos os assemblies que constituem a estrutura de destino.
 
-    Os projetos para aplicativos da Windows 8.x Store contêm referências a todos os assemblies do [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] de destino por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Consequentemente, a guia **Framework** não enumerará nenhum dos assemblies da estrutura e exibirá a seguinte mensagem: "Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework”. Para projetos de área de trabalho, a guia **Framework** enumera os assemblies da estrutura de destino e o usuário deve adicionar as referências exigidas pelo aplicativo.
+   Para projetos não direcionados ao .NET Core ou à Plataforma Universal do Windows, a guia **Estrutura** enumera os assemblies da estrutura de destino. O usuário precisa adicionar todas as referências exigidas pelo aplicativo.
+
+   Por padrão, os projetos Universais do Windows contêm referências a todos os assemblies da estrutura de destino. Em projetos gerenciados, um nó somente leitura na pasta **Referências** no **Gerenciador de Soluções** indica a referência a todo a estrutura. Consequentemente, a guia **Framework** não enumera nenhum dos assemblies da estrutura e exibe a seguinte mensagem: "Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework".
 
 2. **Extensões** lista todos os assemblies que os fornecedores externos de componentes e controles desenvolveram para estender a estrutura de destino. Dependendo da finalidade do aplicativo do usuário, esses assemblies podem ser necessários.
 
@@ -84,22 +86,20 @@ A guia **Assemblies** consiste em duas subguias:
 
    E versões mais antigas do [Identificador de estrutura de destino]
 
-   Por exemplo, se um projeto tiver como destino o .NET Framework 4 em um computador de 32 bits, as **Extensões** enumerarão os assemblies registrados em *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* e *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
+   Por exemplo, se um projeto for direcionado ao .NET Framework 4 em um computador de 32 bits, as **Extensões** enumerarão os assemblies registrados em *\Microsoft\.NETFramework\v4.0\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.5\AssemblyFoldersEx*, *\Microsoft\.NETFramework\v3.0\AssemblyFoldersEx* e *\Microsoft\.NETFramework\v2.0\AssemblyFoldersEx*.
 
-Alguns componentes na lista podem não ser exibidos, dependendo da versão do .NET Framework do projeto. Isso pode ocorrer nas seguintes condições:
+Alguns componentes na lista podem não ser exibidos, dependendo da versão de estrutura do projeto. Isso pode ocorrer nas seguintes condições:
 
-- Um componente que usa uma versão recente do .NET Framework não é compatível com um projeto que tem uma versão anterior do .NET Framework como destino.
+- Um componente que usa uma versão de estrutura recente é incompatível com um projeto direcionado a uma versão anterior.
 
-    Para obter informações sobre como alterar a versão de destino do .NET Framework de um projeto, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Para obter informações sobre como alterar a versão da estrutura de destino de um projeto, confira [Como: Definir uma versão de estrutura como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
-- Um componente que usa [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] não é compatível com um projeto que tem [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] como destino.
-
-    Ao criar um novo aplicativo, alguns projetos têm [!INCLUDE[net_v45](../ide/includes/net_v45_md.md)] como destino por padrão.
+- Um componente que usa o .NET Framework 4 é incompatível com um projeto direcionado ao .NET Framework 4.5.
 
 Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
 > [!NOTE]
-> No Visual Studio 2015 ou posterior, uma referência de arquivo será criada em vez de uma referência de projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 ou posterior e a versão de destino de outro projeto for 2, 3, 3.5 ou 4.0.
+> No Visual Studio 2015 ou posterior, uma referência de arquivo será criada, em vez de uma referência de projeto, se a versão da estrutura de destino de um projeto for .NET Framework 4.5 ou posterior e a versão de destino do outro projeto for .NET Framework 2, 3, 3.5 ou 4.0.
 
 ### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Para exibir um assembly na caixa de diálogo Adicionar Referência
 
@@ -125,7 +125,7 @@ Você deve evitar adicionar referências de arquivo às saídas de outro projeto
 
    - `[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\<VersionMinimum>\AssemblyFoldersEx\MyAssemblies]@="<AssemblyLocation>"`
 
-   *\<VersionMinimum\>* é a versão mínima do .NET Framework aplicável. Se *\<VersionMinimum\>* for v3.0, as pastas especificadas em *AssemblyFoldersEx* se aplicarão a projetos que têm como destino o .NET Framework 3.0 e posterior.
+   *\<VersionMinimum\>* é a versão de estrutura mínima aplicável. Se *\<VersionMinimum\>* for v3.0, as pastas especificadas em *AssemblyFoldersEx* se aplicarão a projetos que têm como destino o .NET Framework 3.0 e posterior.
 
    *\<AssemblyLocation\>* é o diretório dos assemblies que você deseja que sejam exibidos na caixa de diálogo **Adicionar Referência**, por exemplo, *C:\MyAssemblies*.
 
@@ -137,13 +137,10 @@ Você deve evitar adicionar referências de arquivo às saídas de outro projeto
 
 A guia **Projetos** lista todos os projetos compatíveis dentro da solução atual, na subguia **Solução**.
 
-Um projeto pode referenciar outro projeto que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você pode criar um projeto que tenha como destino o [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)], mas que faça referência a um assembly que foi criado para o .NET Framework 2. Porém, o projeto do .NET Framework 2 não pode fazer referência a um projeto do [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)]. Para obter mais informações, consulte [Visão geral da multissegmentação](../ide/visual-studio-multi-targeting-overview.md).
+Um projeto pode referenciar outro projeto direcionado a outra versão de estrutura. Por exemplo, você pode criar um projeto direcionado ao .NET Framework 4, mas que referencia um assembly que foi criado para o .NET Framework 2. Porém, o projeto .NET Framework 2 não pode referenciar um projeto .NET Framework 4. Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md).
 
-Um projeto que tem como destino o [!INCLUDE[net_v40_short](../code-quality/includes/net_v40_short_md.md)] é incompatível com um projeto que tenha como destino o [!INCLUDE[net_client_v40_long](../deployment/includes/net_client_v40_long_md.md)].
-
-Uma referência de arquivo é criada em vez de uma referência de projeto se um projeto tiver como destino o .NET Framework 4 e um outro projeto tiver como destino uma versão anterior.
-
-Um projeto que tem como destino o [!INCLUDE[net_win8_profile](../ide/includes/net_win8_profile_md.md)] não pode adicionar uma referência de projeto a um projeto que tem como destino o .NET Framework e vice-versa.
+> [!NOTE]
+> Um projeto direcionado ao .NET Framework 4 é incompatível com um projeto direcionado ao .NET Framework 4 Client Profile.
 
 ## <a name="universal-windows-tab"></a>Guia Windows Universal
 
@@ -177,9 +174,9 @@ Se um tipo de projeto não der suporte ao COM, a guia não será exibida na caix
 
 É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
-Um projeto pode referenciar um componente que tenha como destino uma versão diferente do .NET Framework. Por exemplo, você poderia criar um aplicativo direcionado ao .NET Framework 4.7, que referencia um componente direcionado ao .NET Framework 4. Para obter mais informações, consulte [Visão geral da multissegmentação](../ide/visual-studio-multi-targeting-overview.md).
+Um projeto pode referenciar um componente direcionado a outra versão de estrutura. Por exemplo, você pode criar um aplicativo direcionado ao .NET Framework 4.7, mas que referencia um componente direcionado ao .NET Framework 4. Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md).
 
-Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
+Evite adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
 Não é possível navegar até o SDK e adicioná-lo ao projeto. Você pode apenas procurar um arquivo (por exemplo, um assembly ou um *.winmd*) e adicioná-lo ao seu projeto.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2651a5fc2c32de5018e8fa07f42c5067d469758c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62847062"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820559"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Visão geral do Blend para Visual Studio
 
@@ -60,7 +60,7 @@ A janela **Ativos** contém todos os controles disponíveis e é semelhante à *
 
 |||
 |-|-|
-|![](../designers/media/b1_1.png)|**Caixa de pesquisa** Digite na caixa **Pesquisar** para filtrar a lista de ativos.|
+|![Caixa de pesquisa Ativos](../designers/media/b1_1.png)|**Caixa de pesquisa** Digite na caixa **Pesquisar** para filtrar a lista de ativos.|
 |![Modo de grade e modo de lista](../designers/media/b1_2.png)|**Modo de grade e Modo de lista** Mude entre as exibições **Modo de grade** e **Modo de lista** dos ativos.|
 |![Categorias de ativos](../designers/media/b1_3.png)|**Categorias de ativos** Clique em uma categoria ou subcategoria para exibir a lista de ativos nessa categoria.|
 |![Estilos](../designers/media/b1_4.png)|**Estilos** Mostre todos os estilos contidos no dicionário de recursos.|
@@ -115,7 +115,7 @@ Use essa janela para exibir e modificar as propriedades de um objeto. Você tamb
 |![Espaço de cores RGB](../designers/media/b1_12.png)|**Espaço de cores RGB** Modifique a cor ajustando os valores para os editores de número **R**, **G** ou **B** (vermelho, verde, azul).|
 |![Canal alfa](../designers/media/b1_13.png)|**Canal alfa** Modifique o valor Alfa usando o editor de número ao lado de **A**.|
 |![Converter cor em recurso](../designers/media/d839d12c-07a1-4127-a830-4a8e7069f4fe.png)|**Converter cor em recurso** Converta a cor selecionada em um recurso de cor. Os recursos de cor ficam disponíveis ao clicar na guia Recursos de cor.|
-|![](../designers/media/b1_15.png)|**Valor hexadecimal** Exibe o valor hexadecimal da cor exibida.|
+|![Valor hexadecimal de cor](../designers/media/b1_15.png)|**Valor hexadecimal** Exibe o valor hexadecimal da cor exibida.|
 |![Texto explicativo 16](../designers/media/b5_label_16.png)|**Controle deslizante de gradiente** É exibido somente se um pincel de gradiente é selecionado.|
 |![Propriedades avançadas de apresentação](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propriedades avançadas** Exiba categorias das propriedades menos usadas.|
 

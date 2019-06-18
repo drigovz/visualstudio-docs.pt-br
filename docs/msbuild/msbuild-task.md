@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23c691730e50cc8d34eddbb60da6d7d671a85dfc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: a58235b724f97e3934ab620677e530fbd9ba9726
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437846"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747359"
 ---
 # <a name="msbuild-task"></a>tarefa MSBuild
 Compila projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] de outro projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)].
@@ -44,7 +44,7 @@ Compila projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 | `TargetAndPropertyListSeparators` | Parâmetro `String[]` opcional.<br /><br /> Especifica uma lista de destinos e de propriedades como metadados de item `Project`). Separadores não serão escapados antes do processamento. Por exemplo, %3B (um escape ';') será tratado como se não fosse escapado ';'. |
 | `TargetOutputs` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Retorna as saídas dos destinos compilados de todos os arquivos de projeto. Somente as saídas de destinos que foram especificados são retornadas, não as saídas que podem existir em destinos dos quais esses destinos dependem.<br /><br /> O parâmetro `TargetOutputs` também contém os metadados a seguir:<br /><br /> -   `MSBuildSourceProjectFile`: O arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que contém o destino que defina as saídas.<br />-   `MSBuildSourceTargetName`: O destino que define as saídas. **Observação:**  Para identificar as saídas de cada arquivo de projeto ou destino separadamente, execute a tarefa `MSBuild` separadamente para cada arquivo de projeto ou destino. Se você executar a tarefa `MSBuild` apenas uma vez para compilar todos os arquivos de projeto, as saídas de todos os destinos serão coletadas em uma matriz. |
 | `Targets` | Parâmetro `String` opcional.<br /><br /> Especifica o destino ou destinos para build nos arquivos de projeto. Use uma lista separada por ponto-e-vírgula de nomes de destino. Se nenhum destino for especificado na tarefa `MSBuild`, os destinos padrão especificados nos arquivos de projeto serão compilados. **Observação:**  Os destinos devem ocorrer em todos os arquivos de projeto. Caso contrário, ocorrerá um erro de build. |
-| `ToolsVersion` | Parâmetro `String` opcional.<br /><br /> Especifica o `ToolsVersion` a ser usado ao compilar projetos passados para essa tarefa.<br /><br /> Permite que uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] compile um projeto que tem como alvo uma versão diferente de [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] do que a especificada no projeto. Os valores válidos são `2.0`, `3.0` e `3.5`. O valor padrão é `3.5`. |
+| `ToolsVersion` | Parâmetro `String` opcional.<br /><br /> Especifica o `ToolsVersion` a ser usado ao compilar projetos passados para essa tarefa.<br /><br /> Permite que uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crie um projeto direcionado a outra versão do .NET Framework do que a especificada no projeto. Os valores válidos são `2.0`, `3.0` e `3.5`. O valor padrão é `3.5`. |
 | `UnloadProjectsOnCompletion` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o projeto será descarregado quando a operação for concluída. |
 | `UseResultsCache` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o resultado em cache será retornado, se presente.<br /><br />  Se a tarefa do MSBuild for executada, o resultado será ser armazenado em cache em um escopo <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> como uma lista de itens de build |
 

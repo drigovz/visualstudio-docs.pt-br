@@ -1,6 +1,6 @@
 ---
-title: Noções básicas de teste de unidade
-ms.date: 01/07/2016
+title: Conceitos básicos sobre o teste de unidade
+ms.date: 06/06/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990292"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820757"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -165,26 +165,24 @@ public void Withdraw_ValidAmount_ChangesBalance()
     double withdrawal = 1.0;
     double expected = 9.0;
     var account = new CheckingAccount("JohnDoe", currentBalance);
+
     // act
     account.Withdraw(withdrawal);
-    double actual = account.Balance;
+
     // assert
-    Assert.AreEqual(expected, actual);
+    Assert.AreEqual(expected, account.Balance);
 }
 
 [TestMethod]
-[ExpectedException(typeof(ArgumentException))]
 public void Withdraw_AmountMoreThanBalance_Throws()
 {
     // arrange
     var account = new CheckingAccount("John Doe", 10.0);
-    // act
-    account.Withdraw(20.0);
-    // assert is handled by the ExpectedException
+
+    // act and assert
+    Assert.ThrowsException<System.ArgumentException>(() => account.Withdraw(20.0));
 }
 ```
-
-Observe que `Withdraw_ValidAmount_ChangesBalance` usa uma instrução `Assert` explícita para determinar se o método de teste é aprovado ou reprovado, ao passo que `Withdraw_AmountMoreThanBalance_Throws` usa o atributo `ExpectedException` para determinar o êxito do método de teste. Nos bastidores, uma estrutura de teste de unidade encapsula os métodos de teste em instruções try/catch. Na maioria dos casos, se uma exceção é detectada, o método de teste falha e a exceção é ignorada. O atributo `ExpectedException` faz com que o método de teste seja aprovado se a exceção for gerada.
 
 Para saber mais sobre as estruturas de testes de unidade da Microsoft, confira um dos seguintes tópicos:
 

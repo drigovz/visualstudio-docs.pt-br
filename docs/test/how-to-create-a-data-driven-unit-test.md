@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 931a9c01bf7c8854d78e1385dbbd9a27b98cfdd7
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 5960c84e2cb389580f2d7b0f476da2a456e62585
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65615435"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745864"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como: Criar um teste de unidade controlado por dados
 
@@ -89,7 +89,7 @@ public TestContext TestContext
 Em seu método de teste, os dados são acessados por meio da propriedade do indexador `DataRow` do `TestContext`.
 
 > [!NOTE]
-> O .NET Core não dá suporte ao atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se tentar acessar os dados de teste dessa forma em um projeto de teste de unidade do .NET Core ou do UWP, você verá um erro semelhante a **"TestContext não contém uma definição para 'DataRow' e nenhum 'DataRow' do método de extensão acessível que aceita um primeiro argumento do tipo 'TestContext' pôde ser encontrado (alguma diretiva em uso ou uma referência de assembly está ausente?)"**.
+> O .NET Core não dá suporte ao atributo [DataSource](xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute). Se tentar acessar os dados de teste dessa forma em um projeto de teste de unidade do .NET Core ou do UWP, você verá um erro semelhante a **"TestContext não contém uma definição para 'DataRow' e nenhum 'DataRow' do método de extensão acessível que aceita um primeiro argumento do tipo 'TestContext' pôde ser encontrado (alguma diretiva em uso ou uma referência de assembly está ausente?)"** .
 
 ## <a name="write-the-test-method"></a>Escrever o método de teste
 
@@ -179,4 +179,4 @@ Quando o método em teste é corrigido e o teste é novamente executado, a barra
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert?displayProperty=fullName>
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md)
-- [Escrever testes de unidade para o .NET Framework com a estrutura de teste de unidade da Microsoft para código gerenciado](../test/unit-test-your-code.md)
+- [Escrever testes de unidade para o .NET com a estrutura de teste de unidade da Microsoft](../test/unit-test-your-code.md)

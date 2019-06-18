@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 252e9d17ba272dd61af87427ad91f42d2fcd13ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2a558ce97e642c38b5c54c1a2e3d01cce2e2e280
+ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897887"
+ms.lasthandoff: 06/05/2019
+ms.locfileid: "66715465"
 ---
 # <a name="design-xaml-in-visual-studio"></a>Criar XAML no Visual Studio
 
@@ -52,7 +52,7 @@ Para tarefas mais básicas, a IDE do Visual Studio e do Blend for Visual Studio 
 
 - **Team Explorer:** Com o Team Explorer, você pode gerenciar seus projetos com repositórios GIT ou TFS para facilitar a colaboração em equipe. Consulte [Trabalhar no Team Explorer](/azure/devops/user-guide/work-team-explorer).
 
-- **NuGet:** Gerencie pacotes NuGet no Visual Studio e no Blend para Visual Studio. O NuGet é um gerenciador de pacotes do .NET Framework que simplifica a instalação e remoção de pacotes de uma solução.
+- **NuGet:** Gerencie pacotes NuGet no Visual Studio e no Blend para Visual Studio. O NuGet é um gerenciador de pacotes do .NET que simplifica a instalação e a remoção de pacotes de uma solução.
 
 ## <a name="advanced-capabilities-in-blend-for-visual-studio"></a>Funcionalidades avançadas do Blend for Visual Studio
 

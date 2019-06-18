@@ -18,15 +18,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b836a0fef26f34e83f7238ebe4f6c64731b84257
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d7bf2432e37278c924d1604e735feec7b848b01
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977663"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747552"
 ---
 # <a name="getframeworkpath-task"></a>Tarefa GetFrameworkPath
-Recupera o caminho para os assemblies [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+Recupera o caminho para os assemblies .NET Framework.
 
 ## <a name="task-parameters"></a>Parâmetros de tarefa
 A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
@@ -41,12 +41,12 @@ A tabela a seguir descreve os parâmetros da tarefa `GetFrameworkPath`.
 |`Path`|Parâmetro de saída `String` opcional.<br /><br /> Contém o caminho para os assemblies do framework mais recentes, se estiverem disponíveis. Caso contrário, retornará `null`.|
 
 ## <a name="remarks"></a>Comentários
-Se várias versões do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] estiverem instaladas, essa tarefa retorna a versão na qual o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] está projetado para funcionar.
+Se várias versões do .NET Framework estiverem instaladas, essa tarefa retornará a versão na qual o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] foi projetado para ser executado.
 
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir usa a tarefa `GetFrameworkPath` para armazenar o caminho para o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] na propriedade `FrameworkPath`.
+O exemplo a seguir usa a tarefa `GetFrameworkPath` para armazenar o caminho para o .NET Framework na propriedade `FrameworkPath`.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

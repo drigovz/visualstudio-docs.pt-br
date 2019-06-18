@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344af8760dad3c66c32590b7d2d665bef833e583
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bbe046f07a27a9fdcf07fc891f7c264a45a3d61c
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974110"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744725"
 ---
 # <a name="how-to-choose-collection-methods"></a>Como: Escolher os métodos de coleta
 
@@ -34,7 +34,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 |----------------------------| - |
 | **Amostragem de CPU** | Coleta estatísticas de aplicativo que são úteis para a análise inicial e para analisar problemas de utilização de CPU. |
 | **Instrumentação** | Coleta dados de tempo detalhados que são úteis para análise concentrada e para analisar problemas de desempenho de entrada/saída. |
-| **Alocação de memória do .NET** | Coleta dados de alocação de memória do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] usando o método de criação de perfil de amostragem. |
+| **Alocação de memória do .NET** | Coleta dados de alocação de memória do .NET Framework usando o método de criação de perfil de amostragem. |
 | **Simultaneidade** | Coleta dados de contenção de recursos numéricos. |
 
 ## <a name="performance-explorer"></a>Performance Explorer
@@ -75,7 +75,7 @@ Você pode usar a propriedade **Método** da sessão de desempenho para especifi
 
 4. Clique em **Amostragem** ou **Instrumentação**.
 
-5. Clique em **Coletar informações de alocação de objeto do .NET** para coletar o tamanho e o número de alocações de objeto do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)].
+5. Clique em **Coletar informações de alocação de objeto .NET** para coletar o tamanho e o número de alocações de objeto do .NET Framework.
 
 6. (Opcional) Clique em **Também coletar informações de tempo de vida do objeto .NET** para coletar dados sobre as gerações de coleta de lixo nas quais a memória do objeto foi recuperada.
 

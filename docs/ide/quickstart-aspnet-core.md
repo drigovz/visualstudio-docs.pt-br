@@ -2,7 +2,7 @@
 title: Criar um aplicativo Web ASP.NET Core em C#
 description: Saiba como criar um aplicativo Web simples do Olá, Mundo no Visual Studio com C# e ASP.NET Core, passo a passo.
 ms.custom: mvc,seodec18
-ms.date: 03/23/2019
+ms.date: 06/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ea01ff2671212c8dfeb023d145cfd224a5feb2f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0e701fd45230295222ffc6e17c05052e01b47189
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62954542"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66745041"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core
 
@@ -75,7 +75,7 @@ Para começar, você criará um projeto de aplicativo Web ASP.NET Core. O tipo d
    ![Caixa de diálogo Novo Aplicativo Web ASP.NET Core](../ide/media/aspnet-core-2dot1.png)
 
    > [!NOTE]
-   > Se o **ASP.NET Core 2.1** ou posterior não for exibido, verifique se você está executando a versão mais recente do Visual Studio. Para obter mais informações de como atualizar sua instalação, confira a página [Atualizar o Visual Studio para a versão mais recente](../install/update-visual-studio.md).
+   > Se o **ASP.NET Core 2.1** não for exibido, verifique se você está executando a versão mais recente do Visual Studio. Para obter mais informações de como atualizar sua instalação, confira a página [Atualizar o Visual Studio para a versão mais recente](../install/update-visual-studio.md).
 
 Logo depois, o Visual Studio abre o arquivo de projeto.
 
@@ -96,7 +96,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
    ![Escolher o modelo de C# para o Aplicativo Web ASP.NET Core](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
 
    > [!NOTE]
-   > Se não vir o modelo **Aplicativo Web ASP.NET Core**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?**, escolha o link **Instalar mais ferramentas e recursos**.
+   > Se não vir o modelo **Aplicativo Web ASP.NET Core**, você poderá instalá-lo da janela **Criar um novo projeto**. Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
    >
    > ![O link 'Instalar mais ferramentas e recursos' da mensagem 'Não encontrou o que precisa?' na janela 'Criar novo projeto'](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
@@ -110,7 +110,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
    ![Na janela "Configurar seu novo projeto", dê ao projeto o nome 'OláMundo'](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
 
-1. Na caixa de diálogo **Criar um novo Aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.1** ou posterior aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web**, que inclui Razor Pages de exemplo. Em seguida, escolha **Criar**.
+1. Na caixa de diálogo **Criar um novo Aplicativo Web ASP.NET Core**, verifique se **ASP.NET Core 2.1** aparece no menu suspenso superior. Em seguida, escolha **Aplicativo Web**, que inclui Razor Pages de exemplo. Em seguida, escolha **Criar**.
 
    ![A janela 'Criar um novo Aplicativo Web ASP.NET Core'](../get-started/csharp/media/vs-2019/csharp-create-aspnet-core-razor-pages-app.png)
 
@@ -132,7 +132,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
    ![O código HTML para a área de informações adicionais no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page.png)
 
-1. Altere o texto de "informações adicionais" para dizer "**Olá, Mundo!**".
+1. Altere o texto de "informações adicionais" para dizer "**Olá, Mundo!** ".
 
    ![Mudar o código HTML padrão para a área de informações adicionais no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-page-hello-world.png)
 
@@ -144,7 +144,7 @@ Logo depois, o Visual Studio abre o arquivo de projeto.
 
    ![O código de C# para a área de descrição do aplicativo no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-code.png)
 
-1. Alterar o texto da mensagem de "Descrição do aplicativo" para dizer "**Qual é a minha mensagem?**".
+1. Alterar o texto da mensagem de "Descrição do aplicativo" para dizer "**Qual é a minha mensagem?** ".
 
    ![Altere o texto da mensagem padrão para a área de descrição do aplicativo no editor do Visual Studio](../ide/media/csharp-aspnet-about-cshtml-cs-message.png)
 

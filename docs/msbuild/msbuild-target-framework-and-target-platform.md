@@ -8,38 +8,38 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004631"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747396"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
 
 ## <a name="target-framework-and-profile"></a>Perfil e estrutura de destino
- Uma estrutura de destino é a versão específica do [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] no qual seu projeto é criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
+ Uma estrutura de destino é a versão específica do .NET Framework na qual o projeto foi criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
 
  Atualmente, as seguintes versões do .NET Framework estão disponíveis para uso:
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 2.0 (incluído no Visual Studio 2005)
+- O .NET Framework 2.0 (incluído no Visual Studio 2005)
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.0 (incluído no [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
+- O .NET Framework 3.0 (incluído no [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 3.5 (incluído no [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
+- O .NET Framework 3.5 (incluído no [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.5.2
+- O .NET Framework 4.5.2
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6 (incluído no [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
+- O .NET Framework 4.6 (incluído no [!INCLUDE[vs_dev14](../misc/includes/vs_dev14_md.md)])
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.1
+- O .NET Framework 4.6.1
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.6.2
+- O .NET Framework 4.6.2
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7
+- O .NET Framework 4.7
 
-- O [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] 4.7.1
+- O .NET Framework 4.7.1
 
 As versões do .NET Framework são diferentes entre si na lista de assemblies que cada uma torna disponível para fazer referência. Por exemplo, você não pode compilar aplicativos Windows Presentation Foundation (WPF) a menos que seu projeto seja direcionado para o .NET Framework versão 3.0 ou superior.
 

@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 38cf992612126e8d24f05b23efd8af7fff4b4a74
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7dfcc4a01dfd5e9b63dc16afa0c2b3286419c193
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966304"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820651"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Basic
 
@@ -30,7 +30,7 @@ O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inici
 
 ::: moniker range=">=vs-2019"
 
-[![](media/vs-2019/ide-overview.png "O IDE do Visual Studio")](media/vs-2019/ide-overview.png#lightbox)
+[![O IDE do Visual Studio 2019](media/vs-2019/ide-overview.png)](media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -283,7 +283,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    A caixa de diálogo **Novo Projeto** mostra vários *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
-1. Escolha a categoria **.NET Core** em **Visual Basic** e escolha o modelo **Aplicativo de Console (.NET Core)**. Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
+1. Escolha a categoria **.NET Core** em **Visual Basic** e escolha o modelo **Aplicativo de Console (.NET Core)** . Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
 
    ![Modelo de aplicativo .NET Core](media/overview-npd.png)
 
@@ -306,7 +306,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](../media/overview-start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/overview-console-window.png)
 
@@ -373,7 +373,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](media/vs-2019/start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/vs-2019/overview-console-window.png)
 
@@ -418,7 +418,7 @@ Primeiro, vamos renomear a variável `name`:
 
    Observe que uma caixa cinza é exibida ao redor da variável e uma lâmpada é exibida na margem.
 
-3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'**.
+3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'** .
 
    ![Ação de renomeação no Visual Studio](media/rename-quick-action.png)
 
