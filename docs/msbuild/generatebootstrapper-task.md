@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 277463ad717331980988f87cb070815e644a71ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f18b01a6db0068b44ad9c25037e544efa8df35a
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63003655"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746595"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.
@@ -152,7 +152,7 @@ Veja a seguir uma descrição dos parâmetros da tarefa `GenerateBootstrapper`.
 Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Tasks.TaskExtension>, que herda da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base TaskExtension](../msbuild/taskextension-base-class.md).
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que deve ter o [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] instalado como pré-requisito.
+O exemplo a seguir usa a tarefa `GenerateBootstrapper` para instalar um aplicativo que precisa ter o .NET Framework 2.0 instalado como pré-requisito.
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

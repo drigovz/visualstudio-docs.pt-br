@@ -1,6 +1,6 @@
 ---
 title: 'Passo a passo: Para criar um snippet de código'
-ms.date: 10/27/2017
+ms.date: 06/10/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code snippets, creating
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d717619954981c6b8cdf900f8fb358272478264b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f58581a601da59e7ff66a3bae5ddcb7432bf8e3
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581666"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66836098"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>Passo a passo: Para criar um snippet de código
 
-Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Adicione o snippet à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).
+Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Opcionalmente, você pode fazer uso de parâmetros de substituição e referências de projeto. Importe o snippet à instalação do Visual Studio usando o botão **Importar** no **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).
 
 ## <a name="snippet-template"></a>Modelo de snippet
 
-A seguir está o modelo básico de snippet:
+O seguinte XML é o modelo básico de snippet:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -48,27 +48,40 @@ A seguir está o modelo básico de snippet:
 </CodeSnippets>
 ```
 
-### <a name="create-a-code-snippet"></a>Para criar um snippet de código
+## <a name="create-a-code-snippet"></a>Para criar um snippet de código
 
 1. Crie um novo arquivo XML no Visual Studio e adicione o modelo mostrado acima.
 
-2. Preencha o título do snippet, por exemplo, "Hello World VB", no elemento **Title**.
+2. Preencha o título do snippet no elemento **Título**. Use o título **Raiz Quadrada**.
 
-3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para este exemplo, use "VB".
+3. Preencha a linguagem do snippet no atributo **Language** do elemento **Code**. Para o C#, use **CSharp** e, para o Visual Basic, use **VB**.
 
-4. Adicione um código na seção **CDATA** dentro do elemento **Code**, por exemplo:
+   > [!TIP]
+   > Para ver todos os valores de linguagem disponíveis, procure a [seção Atributos de elemento de código](code-snippets-schema-reference.md#attributes) na página [Referência de esquema de snippets de código](code-snippets-schema-reference.md).
 
-    ```xml
-    <Code Language="VB">
-        <![CDATA[Console.WriteLine("Hello, World!")]]>
-    </Code>
-    ```
+4. Adicione o snippet de código na seção **CDATA** dentro do elemento **Code**.
 
-5. Salve o trecho como *VBCodeSnippet.snippet*.
+   Para o C#:
 
-### <a name="add-a-code-snippet-to-visual-studio"></a>Adicionar um snippet de código ao Visual Studio
+   ```xml
+   <Code Language="CSharp">
+       <![CDATA[double root = Math.Sqrt(16);]]>
+   </Code>
+   ```
 
-1. Você pode adicionar seus próprios snippets à instalação do Visual Studio usando o Gerenciador de Snippets de Código. Abra o **Gerenciador de Snippets de Código** (**Ferramentas** > **Gerenciador de Snippets de Código**).
+   Ou para o Visual Basic:
+
+   ```xml
+   <Code Language="VB">
+       <![CDATA[Dim root = Math.Sqrt(16)]]>
+   </Code>
+   ```
+
+5. Salve o snippet como *SquareRoot.snippet* (salve-o em qualquer lugar).
+
+## <a name="import-a-code-snippet"></a>Importar um snippet de código
+
+1. Importe um snippet para a instalação do Visual Studio usando o **Gerenciador de Snippets de Código**. Abra-o escolhendo **Ferramentas** > **Gerenciador de Snippets de Código**.
 
 2. Clique no botão **Importar**.
 
@@ -76,199 +89,141 @@ A seguir está o modelo básico de snippet:
 
 4. A caixa de diálogo **Importar Snippet de Código** é aberta, solicitando que você escolha onde deseja adicionar o snippet entre as opções no painel à direita. Uma das opções deve ser **Meus Snippets de Código**. Selecione-a e clique em **Concluir** e, em seguida, em **OK**.
 
-5. O snippet é copiado para o seguinte local:
+5. O snippet é copiado para uma das seguintes localizações, dependendo da linguagem de código:
 
    ::: moniker range="vs-2017"
 
-   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
+   *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual C#\My Code Snippets*
+    *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippets*
 
    ::: moniker-end
 
-6. Teste seu snippet abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, escolha **Trechos** > **Inserir Trecho** no menu do clique com o botão direito e, em seguida, **Meus Trechos de Código**. Você deve ver um snippet chamado **Meu Snippet de Código do Visual Basic**. Clique duas vezes nesse item.
+6. Teste o snippet abrindo um projeto C# ou Visual Basic. Com o arquivo de código aberto no editor, escolha **Snippets** > **Inserir Snippet** no menu de clique com o botão direito do mouse e, em seguida, **Meus Snippets de Código**. Você deverá ver um snippet chamado **Raiz Quadrada**. Clique duas vezes nesse item.
 
-    `Console.WriteLine("Hello, World!")` é inserido no arquivo de código.
+   O snippet de código é inserido no arquivo de código.
 
-### <a name="add-description-and-shortcut-fields"></a>Adicionar campos de descrição e de atalho
+## <a name="description-and-shortcut-fields"></a>Campos de descrição e de atalho
 
 ::: moniker range="vs-2017"
 
-1. Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o trecho adicionado abrindo o arquivo *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+1. Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o snippet adicionado abrindo o arquivo *%USERPROFILE%\Documents\Visual Studio 2017\Code Snippets\\[Visual C# ou Visual Basic]\My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o snippet adicionado abrindo o arquivo *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet*.
+1. Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o snippet adicionado abrindo o arquivo *%USERPROFILE%\Documents\Visual Studio 2019\Code Snippets\\[Visual C# ou Visual Basic]\My Code Snippet\SquareRoot.snippet*.
 
 ::: moniker-end
+
+   > [!TIP]
+   > Como você está editando o arquivo no diretório em que o Visual Studio o colocou, você não precisa importá-lo novamente para o Visual Studio.
 
 2. Adicione os elementos **Author** e **Description** ao elemento **Header** e preencha-os.
 
 3. O elemento **Header** deve ser parecido com este:
 
-    ```xml
-    <Header>
-        <Title>Hello World VB</Title>
-        <Author>Myself</Author>
-        <Description>Says Hello to the world.</Description>
+   ```xml
+   <Header>
+       <Title>Square Root</Title>
+       <Author>Myself</Author>
+       <Description>Calculates the square root of 16.</Description>
+   </Header>
+   ```
+
+4. Abra o **Gerenciador de Snippets de Código** e selecione o snippet de código. No painel direito, observe que os campos **Descrição** e **Autor** agora estão populados.
+
+   ![Descrição do snippet de código no Gerenciador de Snippets de Código](media/code-snippet-description-author.png)
+
+5. Para adicionar um atalho, adicione um elemento **Shortcut** dentro do elemento **Header**:
+
+   ```xml
+   <Header>
+      <Title>Square Root</Title>
+      <Author>Myself</Author>
+      <Description>Calculates the square root of 16.</Description>
+      <Shortcut>sqrt</Shortcut>
     </Header>
-    ```
-
-4. Abra o **Gerenciador de Snippets de Código** e selecione o snippet de código. No painel direito, você deverá ver que os campos **Descrição** e **Autor** agora estão populados.
-
-5. Para adicionar um atalho, adicione um elemento **Shortcut** junto aos elementos **Author** e **Description**:
-
-    ```xml
-    <Header>
-        <Title>Hello World VB</Title>
-        <Author>Myself</Author>
-        <Description>Says Hello to the world.</Description>
-        <Shortcut>hello</Shortcut>
-    </Header>
-    ```
+   ```
 
 6. Salve o arquivo de snippet novamente.
 
-7. Para testar o atalho, abra um projeto do Visual Basic e abra um arquivo de código. Digite `hello` no arquivo e pressione **TAB** duas vezes.
+7. Para testar o atalho, abra o projeto que você usou anteriormente, digite **sqrt** no editor e pressione **Tab** (uma vez para o Visual Basic, duas vezes para o C#).
 
-    O snippet de código é inserido.
+   O snippet de código é inserido.
 
-### <a name="add-references-and-imports"></a>Adicionar referências e importações
+## <a name="replacement-parameters"></a>Parâmetros de substituição
 
-1. Adicione uma referência a um projeto usando o elemento **References** e adicione uma declaração Imports usando o elemento **Imports**. (Isso também funciona para C#). Por exemplo, se você alterar `Console.WriteLine` no exemplo de código para `MessageBox.Show`, talvez seja necessário adicionar o assembly *System.Windows.Forms.dll* ao projeto.
+Você pode desejar que algumas partes de um snippet de código sejam substituídas pelo usuário. Por exemplo, o ideal é que o usuário substitua um nome de variável por um no projeto atual. Você pode fornecer dois tipos de substituições: literais e objetos. Use o [elemento Literal](code-snippets-schema-reference.md#literal-element) para identificar um substituto para uma parte de código totalmente contido no snippet, mas que provavelmente será personalizado depois de inserido no código (por exemplo, uma cadeia de caracteres ou um valor numérico). Use o [elemento Object](code-snippets-schema-reference.md#object-element) para identificar um item exigido pelo snippet de código, mas que provavelmente será definido fora do snippet em si (por exemplo, uma instância de objeto ou um controle).
 
-2. Abra seu snippet.
+1. Para permitir que o usuário substitua o número com facilidade para calcular a raiz quadrada dele, modifique o elemento **Snippet** do arquivo *SquareRoot.snippet* da seguinte maneira:
 
-3. Adicione o elemento **References** sob o elemento **Snippet**:
+   ```xml
+   <Snippet>
+     <Code Language="CSharp">
+       <![CDATA[double root = Math.Sqrt($Number$);]]>
+     </Code>
+     <Declarations>
+       <Literal>
+         <ID>Number</ID>
+         <ToolTip>Choose the number you want the square root of.</ToolTip>
+         <Default>16</Default>
+       </Literal>
+     </Declarations>
+   </Snippet>
+   ```
 
-    ```xml
-    <References>
-        <Reference>
-            <Assembly>System.Windows.Forms.dll</Assembly>
-        </Reference>
-    </References>
-    ```
+   Observe que a substituição de literal recebe uma ID (`Number`). Essa ID é referenciada no snippet de código colocando-a entre os caracteres `$`:
 
-4. Adicione o elemento **Imports** sob o elemento **Snippet**:
+   ```xml
+   <![CDATA[double root = Math.Sqrt($Number$);]]>
+   ```
 
-    ```xml
-    <Imports>
+2. Salve o arquivo de snippet.
+
+3. Abra um projeto e insira o snippet.
+
+   O snippet de código é inserido e o literal editável é realçado para substituição. Focalize o parâmetro de substituição para ver a dica de ferramenta para o valor.
+
+   ![Dica de ferramenta do parâmetro de substituição de snippet de código no Visual Studio](media/snippet-replacement-parameter-tooltip.png)
+
+   > [!TIP]
+   > Se houver mais de um parâmetro substituível em um snippet, pressione **Tab** para ir de um para o outro e alterar os valores.
+
+## <a name="import-a-namespace"></a>Importar um namespace
+
+Você pode usar um snippet de código para adicionar uma diretiva `using` (C#) ou uma instrução `Imports` (Visual Basic) incluindo o [elemento Imports](code-snippets-schema-reference.md#imports-element). Para projetos .NET Framework, você também pode adicionar uma referência ao projeto usando o [elemento References](code-snippets-schema-reference.md#references-element).
+
+O XML a seguir mostra um snippet de código que usa o método `File.Exists` no namespace System.IO e, portanto, define o elemento **Imports** para importar o namespace System.IO.
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>File Exists</Title>
+      <Shortcut>exists</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[var exists = File.Exists("C:\\Temp\\Notes.txt");]]>
+      </Code>
+      <Imports>
         <Import>
-           <Namespace>System.Windows.Forms</Namespace>
+          <Namespace>System.IO</Namespace>
         </Import>
-    </Imports>
-    ```
-
-5. Altere a seção **CDATA** para o seguinte:
-
-    ```xml
-    <![CDATA[MessageBox.Show("Hello, World!")]]>
-    ```
-
-6. Salve o snippet.
-
-7. Abra um projeto do Visual Basic e adicione o snippet.
-
-8. Você verá uma instrução `Imports` na parte superior do arquivo de código:
-
-    ```vb
-    Imports System.Windows.Forms
-    ```
-
-9. Examine as propriedades do projeto. A guia **References** inclui uma referência à *System.Windows.Forms.dll*.
-
-### <a name="add-replacements"></a>Adicionar substituições
-
-1. Você pode querer que partes dos snippets de código sejam substituídas pelo usuário, por exemplo, se você adicionar uma variável e quiser que o usuário a substitua por uma no projeto atual. Você pode fornecer dois tipos de substituições: literais e objetos. Literais são cadeias de caracteres de algum tipo (literais de cadeias de caracteres, nomes de variáveis ou representações de cadeia de caracteres de valores numéricos). Objetos são instâncias de um tipo que não cadeia de caracteres. Neste procedimento, você declarará uma substituição de literal e uma substituição de objeto e alterará o código para fazer referência a essas substituições.
-
-2. Abra seu snippet.
-
-3. Este exemplo usa uma cadeia de conexão SQL e, portanto, você precisa alterar os elementos **Imports** e **References** para adicionar as referências apropriadas:
-
-    ```xml
-    <References>
-        <Reference>
-            <Assembly>System.Data.dll</Assembly>
-        </Reference>
-        <Reference>
-            <Assembly>System.Xml.dll</Assembly>
-        </Reference>
-    </References>
-    <Imports>
-        <Import>
-            <Namespace>System.Data</Namespace>
-        </Import>
-        <Import>
-            <Namespace>System.Data.SqlClient</Namespace>
-        </Import>
-    </Imports>
-    ```
-
-4. Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento **Declarations** no elemento **Snippet** e, a ele, adicione um elemento **Literal** com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:
-
-    ```xml
-    <Declarations>
-        <Literal>
-            <ID>SqlConnString</ID>
-            <ToolTip>Replace with a SQL connection string.</ToolTip>
-            <Default>"SQL connection string"</Default>
-        </Literal>
-    </Declarations>
-    ```
-
-5. Para declarar uma substituição de objeto para a conexão SQL, adicione um elemento **Object** dentro do elemento **Declarations** e adicione subelementos para a ID, o tipo de objeto, a dica de ferramenta e o valor padrão. O elemento **Declarations** resultante deve ter esta aparência:
-
-    ```xml
-    <Declarations>
-        <Literal>
-            <ID>SqlConnString</ID>
-            <ToolTip>Replace with a SQL connection string.</ToolTip>
-            <Default>"SQL connection string"</Default>
-        </Literal>
-        <Object>
-            <ID>SqlConnection</ID>
-            <Type>System.Data.SqlClient.SqlConnection</Type>
-            <ToolTip>Replace with a connection object in your application.</ToolTip>
-            <Default>dcConnection</Default>
-        </Object>
-    </Declarations>
-    ```
-
-6. Na seção de código, você faz referência a substituições com sinais de $ ao redor, por exemplo, `$replacement$`:
-
-    ```xml
-    <Code Language="VB" Kind="method body">
-        <![CDATA[Dim daCustomers As SqlDataAdapter
-            Dim selectCommand As SqlCommand
-
-            daCustomers = New SqlClient.SqlDataAdapter()
-            selectCommand = new SqlClient.SqlCommand($SqlConnString$)
-            daCustomers.SelectCommand = selectCommand
-            daCustomers.SelectCommand.Connection = $SqlConnection$]]>
-    </Code>
-    ```
-
-7. Salve o snippet.
-
-8. Abra um projeto do Visual Basic e adicione o snippet.
-
-9. O código deve se parecer com o seguinte, em que as substituições `SQL connection string` e `dcConnection` são realçadas em laranja claro. Escolha **TAB** para navegar de um para o outro.
-
-    ```vb
-    Dim daCustomers As SqlDataAdapter
-    Dim selectCommand As SqlCommand
-
-    daCustomers = New SqlClient.SqlDataAdapter()
-    selectCommand = New SqlClient.SqlCommand("SQL connection string")
-    daCustomers.SelectCommand = selectCommand
-    daCustomers.SelectCommand.Connection = dcConnection
-    ```
+      </Imports>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
+```
 
 ## <a name="see-also"></a>Consulte também
 

@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6bd73c643cdc01be07d56857f65d3fb34c6346e0
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950145"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747575"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Como: Criar relatórios de desempenho de teste de carga usando o Microsoft Excel
 
@@ -70,7 +70,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
    2. Na página **Selecione o banco de dados que contém os resultados do teste de carga**, em **Nome do servidor**, digite o nome do servidor que contém os resultados de teste de carga.
 
-   3. Na lista suspensa **Databasename**, selecione o banco de dados que contém os resultados de teste de carga.
+   3. Na lista suspensa **Nome do banco de dados**, selecione o banco de dados que contém os resultados de teste de carga.
 
 3. Na página **Como você deseja gerar seu relatório**, verifique se **Criar um relatório** está selecionado e escolha **Avançar**.
 
@@ -125,7 +125,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
 
    2. Na página **Selecione o banco de dados que contém os resultados do teste de carga**, em **Nome do servidor**, digite o nome do servidor que contém os resultados de teste de carga.
 
-   3. Na lista suspensa **Databasename**, selecione o banco de dados que contém os resultados de teste de carga.
+   3. Na lista suspensa **Nome do banco de dados**, selecione o banco de dados que contém os resultados de teste de carga.
 
 3. Na página **Como você deseja gerar seu relatório**, verifique se **Criar um relatório** está selecionado e escolha **Avançar**.
 
@@ -144,7 +144,7 @@ Os relatórios do Excel podem ser gerados no **Analisador de Teste de Carga**, u
    > [!TIP]
    > Para obter relatórios melhores, várias propriedades estão disponíveis em testes de carga e testes de desempenho na Web que permitem a geração de relatórios mais ricos. A solicitação de página tem duas propriedades que são apresentadas nos relatórios: Meta e Nome de Relatório. Os tempos de resposta da página serão relatados em relação à meta, e o nome de relatório será usado no lugar da URL nos relatórios. Em Configurações de Execução de teste de carga, em Gerenciar Conjuntos de Contadores, a propriedade Marcas de Computador é apresentada nos nomes de computador do relatório. Isso é muito útil para descrever a função de um computador específico no relatório.
 
-## <a name="net-framework-security"></a>Segurança do .NET Framework
+## <a name="net-security"></a>Segurança do .NET
 
 Os resultados de teste de carga e os relatórios contêm possivelmente informações sigilosas que podem ser usadas para criar um ataque no seu computador ou sua rede. Os resultados de teste de carga e os relatórios contêm nomes de computadores e cadeias de conexão. Você deve estar ciente disso quando compartilhar relatórios de teste de carga com outras pessoas.
 

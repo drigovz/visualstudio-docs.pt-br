@@ -1,7 +1,7 @@
 ---
 title: Selecionar e instalar interpretadores do Python
 description: Uma lista completa de interpretadores do Python que têm suporte no Visual Studio com instruções breves sobre onde localizar os instaladores.
-ms.date: 03/13/2019
+ms.date: 06/05/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62957400"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747153"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -26,6 +26,11 @@ Como alternativa, você pode instalar interpretadores padrão do Python na caixa
 ::: moniker-end
 
 Você também pode instalar manualmente qualquer um dos interpretadores listados na tabela abaixo fora do instalador do Visual Studio. Por exemplo, se você instalar o Anaconda 3 antes de instalar o Visual Studio, não será necessário instalar novamente usando o instalador do Visual Studio. Você também pode instalar um interpretador manualmente se, por exemplo, houver uma versão mais recente disponível que ainda não aparece no instalador do Visual Studio.
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> O Visual Studio dá suporte a todas as versões oficiais compatíveis do Python, conforme especificado pela [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Especificamente, as versões 2.7, 3.5, 3.6 e 3.7.
+::: moniker-end
 
 Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
 

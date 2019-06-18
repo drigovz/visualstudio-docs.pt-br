@@ -12,23 +12,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a83999345cd36f1677eca91b243e1ab3455c8a3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9bee601f488c377c19eff8af060d854a7e7152e
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946785"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747692"
 ---
-# <a name="toolbox-data-tab"></a>Caixa de Ferramentas, Guia Dados
+# <a name="toolbox-data-tab"></a>Caixa de ferramentas, guia Dados
 
 Exibe objetos de dados que é possível adicionar a formulários e componentes. A guia **Dados** da **Caixa de Ferramentas** é exibida ao criar um projeto que tem um designer associado. A **Caixa de Ferramentas** é exibida por padrão no ambiente de desenvolvimento integrado do Visual Studio; se for preciso exibir a **Caixa de Ferramentas**, selecione **Caixa de Ferramentas** no menu **Exibir**.
 
 > [!TIP]
 > A execução do Assistente de Configuração de Fonte de Dados cria e configura automaticamente a maioria dos itens de dados. Para obter mais informações, consulte [Adicionar novas fontes de dados](../../data-tools/add-new-data-sources.md).
 
-## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
+## <a name="ui-element-list"></a>Lista de elementos de interface do usuário
 
-Para acessar diretamente a página de referência do .NET Framework para um componente, pressione **F1** no item na **Caixa de Ferramentas** ou no item de componente na bandeja do designer.
+Para acessar diretamente a página de referência .NET de um componente, pressione **F1** no item na **Caixa de ferramentas** ou no item de componente na bandeja do designer.
 
 |Nome|Descrição|
 |----------|-----------------|

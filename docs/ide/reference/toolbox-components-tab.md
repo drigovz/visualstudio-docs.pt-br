@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24f5e486d49dca8290c9063625132f673bf79c3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 17f040b9bb64c2192bc6b376f5d0397ee5438071
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944953"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747748"
 ---
 # <a name="toolbox-components-tab"></a>Caixa de Ferramentas, guia Componentes
 
-Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes do .NET Framework incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou os componentes de terceiros a essa guia.
+Exibe os componentes que podem ser adicionados a designers do Visual Basic e C# do Windows Forms. Além dos componentes .NET incluídos no Visual Studio, como os componentes <xref:System.Messaging.MessageQueue> e <xref:System.Diagnostics.EventLog>, é possível adicionar seus próprios componentes ou componentes de terceiros a essa guia.
 
 Para exibir essa guia, abra um designer do Windows Forms. Selecione **Modo de Exibição** > **Caixa de Ferramentas**. Em **Caixa de ferramentas**, selecione a guia **Componentes**.
 

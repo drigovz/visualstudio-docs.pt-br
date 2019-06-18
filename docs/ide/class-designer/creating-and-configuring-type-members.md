@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975539"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746936"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -308,7 +308,7 @@ Se você tentar salvar um projeto que contém um tipo cujo arquivo do código-fo
 
 Se um arquivo de código contiver um erro de sintaxe, as formas que exibem o código nesse arquivo serão somente leitura temporariamente até que o erro de sintaxe seja corrigido. As formas nesse estado exibem texto em vermelho e um ícone vermelho que exibe uma dica de ferramenta onde se lê "O arquivo do código-fonte contém um erro de análise".
 
-Um tipo referenciado (como um tipo do .NET Framework), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na superfície de design de Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.
+Um tipo referenciado (como um tipo .NET), que existe sob outro nó do projeto ou sob um nó de assembly referenciado, é indicado na área de design do Designer de Classe como somente leitura. Um tipo local, que existe no projeto que você abriu, é leitura/gravação e sua forma na superfície de design de Designer de Classe é indicada como tal.
 
 Os indexadores são de leitura/gravação no código e na janela **Detalhes da Classe**, mas o nome do indexador é somente leitura.
 

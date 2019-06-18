@@ -17,12 +17,12 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bf42ec3c706282adf2752d21c0c121f89c2ed5f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 87d093a540e3c6fae6a80761a5b945c572bd890d
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557249"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66744778"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Funcionalidades do Dotfuscator
 
@@ -37,7 +37,7 @@ O Dotfuscator Community dá suporte a uma ampla variedades de tipos de assembly 
 ## <a name="intellectual-property-protection"></a>Proteção de propriedade intelectual
 
 O design, o comportamento e a implementação do aplicativo são formas de IP (propriedade intelectual).
-No entanto, os aplicativos criados para o .NET Framework são basicamente manuais abertos; é muito fácil executar engenharia reversa dos assemblies do .NET, [pois eles contêm metadados de alto nível e código intermediário][assemblies].
+No entanto, os aplicativos criados para o .NET são basicamente manuais abertos; é fácil executar a engenharia reversa dos assemblies .NET, [pois eles contêm metadados de alto nível e código intermediário][assemblies].
 
 O Dotfuscator Community inclui a [ofuscação do .NET][obfuscation] básica na forma de [renomeação][renaming].
 A ofuscação do código com o Dotfuscator reduz o risco de acesso não autorizado ao código-fonte por meio de engenharia reversa, já que informações importantes de nomenclatura deixarão de ser públicas.

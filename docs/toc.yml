@@ -226,11 +226,7 @@
             - name: 'Especificar um ícone do aplicativo (Visual Basic, C#)'
               href: ide/how-to-specify-an-application-icon-visual-basic-csharp.md
             - name: Direcionar a uma estrutura
-              items:
-                - name: Visão geral sobre multiplataforma
-                  href: ide/visual-studio-multi-targeting-overview.md
-                - name: Direcionar a uma versão do .NET Framework
-                  href: ide/how-to-target-a-version-of-the-dotnet-framework.md
+              href: ide/visual-studio-multi-targeting-overview.md
             - name: Criar modelos
               items:
                 - name: Criar modelos de projeto e de item
@@ -405,6 +401,10 @@
                       href: ide/reference/remove-unreachable-code.md
                     - name: Renomear
                       href: ide/reference/rename.md
+                    - name: Dividir ou mesclar instruções if
+                      href: ide/reference/split-or-merge-if-statement.md
+                    - name: Sincronizar namespace e nome da pasta
+                      href: ide/reference/sync-namespace-and-folder-name.md
                     - name: Sincronizar o tipo e o nome de arquivo
                       href: ide/reference/sync-type-and-file.md
                     - name: Usar o tipo explícito

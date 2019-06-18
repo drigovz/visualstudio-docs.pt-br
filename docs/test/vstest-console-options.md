@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95ed8806844781bdaab4d97d63cb1b7ef324dd7b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8bf4cea6dcd87b8cf0d2113ac3a245163ba89080
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976249"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746913"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -41,7 +41,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|
 |**/TestAdapterPath:[*caminho*]**|Força o processo *vstest.console.exe* a usar adaptadores de teste personalizados de um caminho especificado (se houver) na execução de teste.<br />Exemplo: `/TestAdapterPath:[pathToCustomAdapters]`|
 |**/Platform:[*tipo de plataforma*]**|Arquitetura da plataforma de destino a ser usada para a execução de teste.<br />Os valores válidos são x86, x64 e ARM.|
-|**/Framework: [*versão do framework*]**|Versão do .NET Framework de destino a ser usada na execução de teste.<br />Os valores válidos são Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
+|**/Framework: [*versão do framework*]**|Versão do .NET de destino a ser usada na execução do teste.<br />Os valores válidos são Framework35, Framework40, Framework45 e FrameworkUap10.<br />Se a estrutura de destino for especificada como **Framework35**, os testes serão executados no "modo de compatibilidade" do CLR 4.0.<br />Exemplo: `/Framework:framework40`|
 |**/TestCaseFilter:[*expressão*]**|Execute testes que correspondam à expressão fornecida.<br /><Expressão\> é do formato <propriedade\>=<valor\>[\|<Expressão\>].<br />Exemplo: `/TestCaseFilter:"Priority=1"`<br />Exemplo: `/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />A opção de linha de comando **/TestCaseFilter** não pode ser usada com a opção de linha de comando **/Tests**. <br />Para obter informações sobre como criar e usar expressões, confira [Filtro TestCase](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).|
 |**/?**|Exibe informações de uso.|
 |**/Logger:[*uri/nome_amigável*]**|Especificar um agente para resultados do teste.<br />Exemplo: Para registrar em log os resultados em um Arquivo de Resultados de Teste do Visual Studio (TRX), use **/Logger:trx**.<br />Exemplo: Para publicar resultados do teste no Team Foundation Server, use TfsPublisher:<br />**/logger:TfsPublisher;**<br />**Collection=<URL do projeto\>;**<br />**BuildName=<nome do build\>;**<br />**TeamProject=<nome do projeto\>;**<br />**[;Platform=<Defaults to "Any CPU">]**<br />**[;Flavor=<Defaults to "Debug">]**<br />**[;RunTitle=<título\>]**|
@@ -53,7 +53,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**/Blame**|Acompanha os testes durante sua execução e, em caso de falha do processo de host de teste, emite os nomes de testes em sua sequência de execução até e incluindo o teste específico que estava em execução no momento da falha. Essa saída facilita o isolamento do teste incorreto e o diagnóstico adicional. [Mais informações](https://github.com/Microsoft/vstest-docs/blob/master/docs/extensions/blame-datacollector.md).|
 |**/Diag:[*nome do arquivo*]**|Grava os logs de rastreamento de diagnóstico no arquivo especificado.|
 |**/ResultsDirectory:[*caminho*]**|O diretório de resultados de teste será criado no caminho especificado, se não existir.<br />Exemplo: `/ResultsDirectory:<pathToResultsDirectory>`|
-|**/ParentProcessId:[*IDProcessoPai*]**|O ID do Processo Pai responsável por iniciar o processo atual.|
+|**/ParentProcessId:[*IDProcessoPai*]**|ID do Processo Pai responsável por iniciar o processo atual.|
 |**/Port:[*porta*]**|A porta para a conexão de soquete e recebimento das mensagens do evento.|
 |**/Collect:[*NomeAmigável ColetorDados*]**|Habilita o coletor de dados para a execução de teste. [Mais informações](https://aka.ms/vstest-collect).|
 

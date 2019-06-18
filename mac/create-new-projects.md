@@ -3,40 +3,53 @@ title: Criando novos Projetos e Soluções
 description: Este artigo descreve como criar projetos e soluções no Visual Studio para Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 04/02/2019
+ms.date: 05/23/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 045d92365501b888e56ce4ae397331e597b5b33a
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62983603"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820748"
 ---
-# <a name="creating-new-projects-and-solutions"></a>Criando novos Projetos e Soluções
+# <a name="creating-a-new-project"></a>Criando um novo projeto
 
-## <a name="creating-new-projects-and-solutions-from-a-template"></a>Criando novos Projetos e Soluções com base em um modelo
+## <a name="opening-the-project-creation-dialog"></a>Como abrir a caixa de diálogo de criação do projeto
 
-Soluções podem ser criadas a qualquer momento usando um modelo predefinido. Começando com o Visual Studio 2019 para Mac, escolha **Novo** da janela de início. Como alternativa, navegue até  **Arquivo > Nova Solução**. Selecione as plataformas necessárias e, em seguida, o modelo necessário:
+Há várias maneiras de criar um projeto no Visual Studio para Mac. Quando você abrir o Visual Studio para Mac pela primeira vez, a tela de boas-vindas será mostrada. Aqui, você pode escolher **Novo**, que o levará para a tela de criação do projeto.
 
-![Criar novas Soluções](media/projects-and-solutions-image0.png)
+> [!TIP]
+> Além disso, na tela de boas-vindas, você também pode abrir e pesquisar projetos e soluções recentes. Abra também os projetos recentes acessando a barra de menus e escolhendo **Arquivo > Soluções Recentes**
 
-Isso criará uma solução que pode conter um ou vários projetos, dependendo do tipo de modelo escolhido.
+![Tela de boas-vindas com criar um projeto](media/first-run-project.png)
 
-É possível navegar pelo gerenciador de soluções usando as ações de contexto ou a barra de menus.
+Se o Visual Studio para Mac já estiver aberto com uma solução carregada, crie uma solução acessando a barra de menus e escolhendo **Arquivo > Nova Solução**. A criação de uma solução dessa maneira fechará a solução que já está carregada.
 
-Para adicionar um novo Projeto à solução, clique com o botão direito no nome da Solução e selecione **Adicionar > Adicionar novo projeto** para exibir a caixa de diálogo Novo projeto:
+## <a name="creating-a-new-project-from-a-template"></a>Como criar um projeto com base em um modelo
 
-![Adicionar um novo projeto](media/projects-and-solutions-image4.png)
+A caixa de diálogo **Novo Projeto**, por padrão, mostrará os modelos usados recentemente classificados pelos *usados mais recentemente*.
 
-Esse método para adicionar novos projetos pode ser usado para aproveitar os recursos de compartilhamento de código do Xamarin. Adicionar um Projeto Compartilhado ou um modelo de Biblioteca Portátil a uma Solução existente fornece uma maneira de conter qualquer lógica de plataforma cruzada que pode ser usada em todos os outros projetos em uma solução. Para obter mais informações sobre como compilar aplicativos de plataforma cruzada, consulte o [guia relevante](https://developer.xamarin.com/guides/cross-platform/application_fundamentals/code-sharing/).
+Caso você não deseje usar um modelo recente, escolha um nas categorias à esquerda da caixa de diálogo. Cada categoria contém vários modelos de projeto para sua escolha. Ao clicar em um tipo de projeto, você poderá ver uma descrição no lado direito da tela.
 
-## <a name="opening-recent-solutions"></a>Abrindo soluções recentes.
+![Tela do novo projeto](media/project-creation-screen.png)
 
-A janela de início do Visual Studio exibe uma lista de projetos recentes nos quais você tem trabalhado:
+## <a name="configuring-your-new-project"></a>Como configurar o novo projeto
 
-![Seção de soluções recentes na página inicial](media/create-new-projects-recent.png)
+Depois que você escolher um modelo de projeto, as telas a seguir orientarão você em todas as etapas de configuração necessárias para configurar o projeto; isso pode variar por tipo de projeto.
 
-Você pode filtrar essa lista usando a Caixa de filtro ou remover itens individuais da lista.
+Todos os projetos exigem um novo projeto, juntamente com um local para armazenar os arquivos. Se o projeto fizer parte de uma nova solução, em vez de adicioná-lo a uma solução existente, um nome de solução também será necessário.
+
+Opcionalmente, neste estágio, você também pode configurar opções de controle do código-fonte do Git. A imagem a seguir é um exemplo da etapa de configuração final de um projeto .NET Core:
+
+![Como configurar um novo projeto](media/configure-new-project.png)
+
+## <a name="adding-additional-projects-to-a-solution"></a>Como adicionar projetos adicionais a uma solução
+
+Adicione outros projetos a uma solução clicando com o botão direito do mouse no Painel de Soluções e escolhendo **Adicionar > Adicionar Novo Projeto** ou **Adicionar > Adicionar Projeto Existente**.
+
+A adição de um novo projeto orientará você pela criação do projeto, conforme mostrado em [Como configurar o novo projeto](#configuring-your-new-project).
+
+A opção de adicionar um projeto existente permitirá que você procure um projeto existente no computador e adicione-o à solução.
 
 ## <a name="see-also"></a>Consulte também
 

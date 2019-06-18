@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793378"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747591"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -48,7 +48,7 @@ A seguinte tabela resume os recursos nas propriedades do projeto para o F#:
 |Multiplataforma|Sim||
 |Ícone e manifesto|Não|Disponível por meio das opções da linha de comando do compilador.|
 |Serviços de Cliente ASP.NET|Não||
-|ClickOnce|Não|Use um projeto de cliente em outra linguagem do .NET Framework, se aplicável.|
+|ClickOnce|Não|Use um projeto de cliente em outra linguagem .NET, se aplicável.|
 |Nomenclatura forte|Não|Disponível por meio das opções da linha de comando do compilador.|
 |Publicação e controle de versão de assembly|Não||
 |Análise de código|Não|As ferramentas de análise de código podem ser executadas manualmente ou como parte de um comando pós-build.|
@@ -60,7 +60,7 @@ O **Designer de Projeto** consiste no agrupamento de várias páginas de proprie
 
 |Página do Designer de Projeto|Links relacionados|Descrição|
 | - |-------------|-----------|
-|Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET Framework para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
+|Aplicativo|[Página Aplicativo, Designer de Projeto](reference/application-page-project-designer-csharp.md)|Permite que você especifique configurações e propriedades no nível do aplicativo, como se estivesse criando uma biblioteca ou um arquivo executável, qual é a versão de destino do .NET para o aplicativo e informações sobre o local de armazenamento dos arquivos de recurso usados pelo aplicativo.|
 |Build|[Página de build, Designer de Projeto](reference/build-page-project-designer-csharp.md)|Permite que você controle como o código é compilado.|
 |Compilar Eventos|[Página Eventos de Build, Designer de Projeto](reference/build-events-page-project-designer-csharp.md)|Permite que você especifique os comandos a serem executados antes ou depois de uma compilação.|
 |Depurar|[Página de Depuração, Designer de Projeto](reference/debug-page-project-designer.md)|Permite que você controle como o aplicativo é executado durante a depuração. Isso inclui os comandos a serem usados e o diretório inicial do aplicativo, bem como os modos de depuração especiais que você deseja habilitar, como o código nativo e o SQL.|
@@ -89,7 +89,7 @@ Há suporte para os seguintes recursos dos editores de código e de texto do Vis
 |Alterar recuo|Recua ou desfaz o recuo das linhas selecionadas.|Sim|
 |Recuo inteligente|Recua e desfaz o recuo do cursor automaticamente, de acordo com as regras de escopo do F#.|Sim|
 |[Localizar e substituir texto](finding-and-replacing-text.md)|Permite que você faça pesquisas em um arquivo, um projeto ou uma solução e, potencialmente, altere o texto.|Sim|
-|Ir para definição de API do .NET Framework|Quando o cursor estiver posicionado em uma API do .NET Framework, essa configuração mostrará o código gerado com base nos metadados do .NET Framework.|Não|
+|Ir para definição da API .NET|Quando o cursor estiver posicionado em uma API .NET, essa configuração mostrará o código gerado com base nos metadados .NET.|Não|
 |Ir para definição de API definida pelo usuário|Quando o cursor estiver em uma entidade de programa definida, essa configuração moverá o cursor para o local no código em que a entidade foi definida.|Sim|
 |Ir para a linha|Permite que você vá para uma linha específica em um arquivo, por número de linha.|Sim|
 |Barras de navegação na parte superior do arquivo|Permite que você vá para locais no código, por exemplo, por nome da função.|Sim|

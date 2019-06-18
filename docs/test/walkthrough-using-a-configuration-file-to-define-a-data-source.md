@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa57582a241400cbdfc9115d16326fda8019a5ae
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d6bfb122649f688ece90e981c419325564776215
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432246"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746758"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Passo a passo: Usando um arquivo de configuração para definir uma fonte de dados
 
@@ -71,7 +71,7 @@ O elemento **section** deverá ser parecido com este:
 ```
 
 > [!NOTE]
-> O nome do assembly deve corresponder ao build do Microsoft Visual Studio .NET Framework que você está usando.
+> O nome do assembly precisa corresponder à versão que está sendo usada.
 
 ## <a name="define-connection-strings"></a>Definir cadeias de conexão
 

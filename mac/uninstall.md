@@ -6,20 +6,21 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2093d6d0f6d123bf6d904b225c17714a98c5ee9a
+ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971429"
+ms.lasthandoff: 06/11/2019
+ms.locfileid: "66835889"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalando o Visual Studio para Mac
 
-Há uma série de produtos Xamarin que permitem desenvolver aplicativos de plataforma cruzada, incluindo aplicativos autônomos como o Visual Studio para Mac.
-
-Você pode usar este guia para desinstalar cada produto individualmente ao navegar até a seção pertinente ou pode usar os scripts fornecidos na seção [Script de Desinstalação](#uninstall-script) para desinstalar tudo.
+Você pode usar este guia para desinstalar cada componente do Visual Studio para Mac individualmente navegando até a seção relevante ou usar os scripts fornecidos na seção [Script de Desinstalação](#uninstall-script) para desinstalar tudo.
 
 Se o Xamarin Studio já esteve instalado em seu computador, também poderá ser necessário seguir as instruções do guia de [desinstalação do Xamarin](/xamarin/cross-platform/get-started/installation/uninstalling-xamarin#uninstall-xamarin-studio-on-mac), além das etapas a seguir.
+
+> [!NOTE]
+> Essas informações só removerão o Visual Studio 2019 ou 2017 para Mac do computador. para desinstalar o Visual Studio Code, confira [este problema](https://github.com/Microsoft/vscode/issues/52151) para obter detalhes.
 
 ## <a name="uninstall-script"></a>Scripts de Desinstalação
 
@@ -103,7 +104,7 @@ rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
 rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
-Talvez você queira remover o seguinte diretório que contém vários arquivos e pastas do Xamarin. No entanto, antes de fazer isso, esteja ciente de que esse diretório contém as chaves de assinatura do Android. Para saber mais, consulte a seção **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**:
+Talvez você queira remover o seguinte diretório que contém vários arquivos e pastas do Xamarin. No entanto, antes de fazer isso, esteja ciente de que esse diretório contém as chaves de assinatura do Android. Para saber mais, consulte a seção **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)** :
 
 ```bash
 rm -rf ~/Library/Developer/Xamarin

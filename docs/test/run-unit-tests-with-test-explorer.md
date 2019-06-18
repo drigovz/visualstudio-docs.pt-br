@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f151b722b1425024ac2abe81f6d873bf10b01628
-ms.sourcegitcommit: 0ef51e3517436a85cfb85bf492722d566ce602c4
+ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/20/2019
-ms.locfileid: "65934498"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747774"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -23,7 +23,7 @@ Use o **Gerenciador de Testes** para executar testes de unidade do Visual Studio
 
 O Visual Studio instala as estruturas de teste de unidade da Microsoft para código gerenciado e nativo. No entanto, o **Gerenciador de Testes** também pode executar qualquer estrutura de teste de unidade que implementou um adaptador de Gerenciador de Testes. Para obter mais informações sobre como instalar estruturas de teste de unidade de terceiros, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
 
-O **Gerenciador de Testes** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET Framework, o projeto de teste pode ser escrito em qualquer linguagem que tem como alvo o .NET Framework, independentemente do idioma de código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++. Para obter mais informações, confira [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
+O **Gerenciador de Testes** pode executar testes de vários projetos de teste em uma solução e de classes de teste que fazem parte dos projetos de código de produção. Projetos de teste podem usar estruturas de teste de unidade diferente. Quando o código em teste é escrito para o .NET, o projeto de teste pode ser escrito em qualquer linguagem que também seja direcionada ao .NET, independentemente da linguagem do código de destino. Projetos de código C/C++ nativos devem ser testados usando uma estrutura de teste de unidade C++. Para obter mais informações, confira [Escrever testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md).
 
 ## <a name="run-tests-in-test-explorer"></a>Executar testes de unidade no Gerenciador de Testes
 

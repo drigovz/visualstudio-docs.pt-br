@@ -9,14 +9,14 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3287bef750f25f3eb0b816488779d42d4505d8b9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950041"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66747241"
 ---
-# <a name="how-to-create-a-visual-studio-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento do Visual Studio para o Visualizador de Resultados do Teste de Desempenho Web
+# <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento para o Visualizador de Resultados de Teste de Desempenho Web
 
 Você pode estender a interface do usuário para o **Visualizador de Testes de Desempenho Web** usando os seguintes namespaces:
 
@@ -76,7 +76,7 @@ Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento
 
 10. Desmarque as caixas de seleção restantes.
 
-11. Na página **Escolhendo Informações de “Ajuda Sobre”**, você pode especificar se deseja que as informações sobre o suplemento sejam exibidas em uma caixa de diálogo **Sobre**. Se você quiser que as informações sejam exibidas, marque a caixa de seleção **Sim, desejo que o suplemento ofereça informações da caixa “Sobre”**.
+11. Na página **Escolhendo Informações de “Ajuda Sobre”** , você pode especificar se deseja que as informações sobre o suplemento sejam exibidas em uma caixa de diálogo **Sobre**. Se você quiser que as informações sejam exibidas, marque a caixa de seleção **Sim, desejo que o suplemento ofereça informações da caixa “Sobre”** .
 
      As informações que podem ser adicionadas à caixa de diálogo **Sobre** do Visual Studio incluem o número de versão, os detalhes de suporte, os dados de licenciamento etc.
 
@@ -256,9 +256,9 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó de projeto WebPerfTestResultsViewerControl e selecione **Propriedades**.
 
-2. Selecione a guia **Aplicativo** e, em seguida, escolha a lista suspensa **Estrutura de destino**, selecione **.NET Framework 4** e feche as **Propriedades**.
+2. Selecione a guia **Aplicativo** e, em seguida, escolha a lista suspensa **Estrutura de destino** e selecione **.NET Framework 4** (ou posterior). Feche a janela **Propriedades**.
 
-     Isso é necessário para dar suporte às referências de DLL necessárias para estender o **Visualizador de Testes de Desempenho Web**.
+   Isso é necessário para dar suporte às referências de DLL necessárias para estender o **Visualizador de Testes de Desempenho Web**.
 
 3. No **Gerenciador de Soluções**, no projeto WebPerfTestResultsViewerControl, clique com o botão direito do mouse no nó **Referências** e selecione **Adicionar Referência**.
 
@@ -300,15 +300,11 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
             }
     ```
 
-## <a name="build-the-webperftestresultsvieweraddin-solution"></a>Compilar a solução WebPerfTestResultsViewerAddin
-
-### <a name="to-build-the-solution"></a>Para compilar a solução
+## <a name="build-the-solution"></a>Criar a solução
 
 - No menu **Build**, selecione **Compilar Solução**.
 
 ## <a name="register-the-webperftestresultsvieweraddin-add-in"></a>Registrar o suplemento WebPerfTestResultsViewerAddin
-
-### <a name="to-register-the-add-in-using-the-add-in-manager"></a>Para registrar o suplemento usando o Gerenciador de Suplementos
 
 1. No menu **Ferramentas**, selecione **Gerenciador de Suplementos**.
 
@@ -318,15 +314,13 @@ O suplemento do Visual Studio criado no procedimento anterior referencia um proj
 
 4. Escolha **OK**.
 
-## <a name="run-the-web-performance-test-using-the-build-the-webperftestresultsvieweraddin-add-in"></a>Executar o teste de desempenho Web usando o suplemento WebPerfTestResultsViewerAddin do Build
-
-### <a name="to-run-the-new-vs-add-in-for-the-web-test-results-viewer"></a>Para executar o novo suplemento VS n Visualizador de Testes de Desempenho Web
+## <a name="run-the-web-performance-test-using-the-web-test-results-viewer"></a>Executar o teste de desempenho Web usando o Visualizador de Resultados de Teste na Web
 
 1. Execute seu teste de desempenho na Web e você verá a nova guia do suplemento WebPerfTestResultsViewerAddin chamada Exemplo, exibida no **Visualizador de Testes de Desempenho Web**.
 
 2. Escolha a guia para ver as propriedades apresentadas no DataGridView.
 
-## <a name="net-framework-security"></a>Segurança do .NET Framework
+## <a name="net-security"></a>Segurança do .NET
 
 Para melhorar a segurança impedindo que suplementos mal-intencionados sejam ativados automaticamente, o Visual Studio fornece configurações em uma página de **Opções de Ferramentas** chamada **Segurança de Macros/Suplemento**.
 

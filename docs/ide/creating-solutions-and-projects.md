@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f6bd03a47500c127360afd2d2a6ae6b62ee2e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 74694528f6380896d47b9665d9e617098ef28620
+ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793524"
+ms.lasthandoff: 06/06/2019
+ms.locfileid: "66746863"
 ---
 # <a name="create-solutions-and-projects"></a>Criar soluções e projetos
 
@@ -61,11 +61,11 @@ Se você tem um arquivo que se aplica a vários projetos, como um arquivo Leiame
 
 ## <a name="create-a-net-project-that-targets-a-specific-version-of-the-net-framework"></a>Criar um projeto .NET que direciona uma versão específica do .NET Framework
 
-Ao criar um projeto, você pode determinar uma versão específica do .NET Framework que você deseja que o projeto use.
+Ao criar um projeto .NET Framework, você pode determinar uma versão específica do .NET Framework que deseja usar no projeto. (Ao criar um projeto .NET Core, você não especifica uma versão de estrutura.)
 
 ::: moniker range="vs-2017"
 
-Para especificar uma versão do .NET Framework, escolha o menu suspenso da **Framework** na caixa de diálogo **Novo Projeto**.
+Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na caixa de diálogo **Novo Projeto**.
 
 ![A lista suspensa Estrutura na caixa de diálogo Novo Projeto](./media/vside-newproject-framework.png)
 
@@ -76,7 +76,7 @@ Para especificar uma versão do .NET Framework, escolha o menu suspenso da **Fra
 
 ::: moniker range=">=vs-2019"
 
-Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na página **Criar um novo projeto**.
+Para especificar uma versão do .NET Framework, escolha o menu suspenso **Framework** na página **Criar um projeto**.
 
 ![Seletor de Framework em configurar um novo projeto](media/vs-2019/configure-new-project-framework.png)
 

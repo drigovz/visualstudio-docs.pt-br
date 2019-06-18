@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 9a8fd8ca5081e3353cdbb488da5d43f54275d8da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65848349"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820895"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -23,7 +23,7 @@ O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inici
 
 ::: moniker range="vs-2019"
 
-[![](../media/vs-2019/ide-overview.png "O IDE do Visual Studio")](../media/vs-2019/ide-overview.png#lightbox)
+[![O IDE do Visual Studio 2019](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
 
 ::: moniker-end
 
@@ -174,7 +174,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    A caixa de diálogo **Novo Projeto** mostra vários *modelos* de projeto. Um modelo contém as configurações e os arquivos básicos necessários para um tipo de projeto fornecido.
 
-1. Escolha a categoria de modelo **.NET Core** em **Visual C#** e escolha o modelo **Aplicativo de Console (.NET Core)**. Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
+1. Escolha a categoria de modelo **.NET Core** em **Visual C#** e escolha o modelo **Aplicativo de Console (.NET Core)** . Na caixa de texto **Nome**, digite **HelloWorld** e, em seguida, selecione o botão **OK**.
 
    ![Modelo de aplicativo .NET Core](../media/overview-new-project-dialog.png)
 
@@ -197,7 +197,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](../media/overview-start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/overview-console-window.png)
 
@@ -266,7 +266,7 @@ Vamos nos aprofundar e criar um programa simples.
 
    ![Menu Depurar > Iniciar Sem Depuração](../media/overview-start-without-debugging.png)
 
-   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!**. Agora você tem um aplicativo em execução.
+   O Visual Studio compila o aplicativo e uma janela do console é aberta com a mensagem **Olá, Mundo!** . Agora você tem um aplicativo em execução.
 
    ![Janela do console](../media/vs-2019/overview-console-window.png)
 
@@ -313,7 +313,7 @@ Primeiro, vamos renomear a variável `name`:
 
 ::: moniker range="vs-2017"
 
-3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'**.
+3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'** .
 
    ![Ação de renomeação no Visual Studio](../media/rename-quick-action.png)
 
@@ -325,7 +325,7 @@ Primeiro, vamos renomear a variável `name`:
 
 ::: moniker range=">=vs-2019"
 
-3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'**.
+3. Selecione o ícone de lâmpada para mostrar as [Ações Rápidas](../../ide/quick-actions.md) disponíveis. Selecione **Renomear 'name' como 'username'** .
 
    ![Ação de renomeação no Visual Studio](../media/vs-2019/rename-quick-action.png)
 

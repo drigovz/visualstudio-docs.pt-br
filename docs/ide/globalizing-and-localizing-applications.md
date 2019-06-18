@@ -15,22 +15,41 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc6d0b3fb2eb143cfdc288485ab9e40499b6fccb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 934427c2bfba769968b7aeb364625b71af47eca7
+ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547865"
+ms.lasthandoff: 06/10/2019
+ms.locfileid: "66820875"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>Desenvolver aplicativos localizados e globalizados
 
-O Visual Studio facilita o desenvolvimento para um público internacional, aproveitando os serviços internos do [.NET Framework](/dotnet/standard/globalization-localization/).
+O Visual Studio facilita o desenvolvimento para um público-alvo internacional, aproveitando os serviços internos do [.NET](/dotnet/standard/globalization-localization/).
 
 Por exemplo, o sistema do projeto dos aplicativos Windows Forms pode gerar arquivos de recurso para a cultura de interface do usuário de fallback e para cada cultura de interface do usuário adicional. Ao compilar um projeto no Visual Studio, os arquivos de recursos são compilados do formato XML do Visual Studio (.resx) para um formato binário intermediário (.resources), que são então inseridos em assemblies satélites. Para obter mais informações, consulte [Arquivos de recurso no Visual Studio](/dotnet/framework/resources/creating-resource-files-for-desktop-apps#VSResFiles) e [Criar assemblies satélite para aplicativos da área de trabalho](/dotnet/framework/resources/creating-satellite-assemblies-for-desktop-apps).
 
-Para obter informações sobre como criar aplicativos para idiomas bidirecionais no Visual Studio, confira [Criar aplicativos para árabe e hebraico](creating-applications-in-bi-directional-languages.md).
+## <a name="bidirectional-languages"></a>Linguagens bidirecionais
+
+É possível usar o Visual Studio para criar aplicativos que exibem o texto corretamente em idiomas escritos da direita para a esquerda, incluindo árabe e hebraico. Para alguns recursos, é possível apenas definir as propriedades. Em outros casos, é necessário implementar recursos no código.
+
+> [!NOTE]
+> Para inserir e exibir idiomas bidirecionais, você precisa trabalhar com uma versão do Windows que está configurada com o idioma apropriado. Essa pode ser uma versão em inglês do Windows com o pacote de idioma apropriado instalado, ou a versão localizada do Windows.
+
+### <a name="apps-that-support-bidirectional-languages"></a>Aplicativos que dão suporte a idiomas bidirecionais
+
+- Aplicativos do Windows
+
+   É possível criar aplicativos totalmente bidirecionais que incluem suporte para texto bidirecional, sentido de leitura da direita para a esquerda e espelhamento (reversão do layout de janelas, menus, caixas de diálogo e assim por diante). Com exceção do espelhamento, esses recursos estão disponíveis por padrão ou como configurações de propriedades. Há suporte inerente para o espelhamento em alguns recursos, como caixas de mensagem. No entanto, em outros casos, é necessário implementar o espelhamento no código. Para obter mais informações, confira [Suporte bidirecional para aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/bi-directional-support-for-windows-forms-applications).
+
+- Aplicativos Web
+
+   Os serviços Web dão suporte ao recebimento e ao envio de textos UTF-8 e Unicode, tornando-os adequados para aplicativos que envolvem idiomas bidirecionais. Os aplicativos cliente Web dependem de navegadores para sua interface do usuário e, portanto, o grau de suporte bidirecional em um aplicativo Web depende do nível de suporte do navegador do usuário a essas funcionalidades bidirecionais. No Visual Studio, é possível criar aplicativos com suporte para texto em árabe ou hebraico, sentido de leitura da direita para a esquerda, codificação de arquivos e configurações da cultura local. Para saber mais, confira [Suporte bidirecional para aplicativos Web ASP.NET](https://msdn.microsoft.com/Library/5576f9b1-9b86-41ef-8354-092d366bcd03).
+
+> [!NOTE]
+> Os aplicativos de console não incluem o suporte de texto para idiomas bidirecionais. Esta é uma consequência de como o Windows funciona com aplicativos de console.
 
 ## <a name="see-also"></a>Consulte também
 
+- [Suporte para idiomas bidirecionais no Visual Studio](use-bidirectional-languages.md)
 - [Globalizar e localizar aplicativos .NET](/dotnet/standard/globalization-localization/)
 - [Recursos em Aplicativos .NET](/dotnet/framework/resources/)
