@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e9b0d4c829f2ff6605885a26eec0a3ebd34282dd
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 238fd0b4c79e5fb99c629d82386676ec175a2a17
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66402026"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032798"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -116,8 +116,8 @@ Para usar o benefício de suporte técnico da assinatura do Visual Studio para p
 | Visual Studio Professional (Standard) | VL, Azure, Retail, NFR<sup>2</sup> selecionado                                        | 2 incidentes                                                          |Sim         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 2 incidentes                                             |  Sim         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 2 incidentes                                               | Sim         |
-| Visual Studio Dev Essentials | NA | Não disponível |NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+||
 
 <sup>1</sup> *Inclui: Imagine Premium, BizSpark. Exclui: NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, Imagine Standard, MVP (Most Valuable Professional), RD (Diretor Regional) e MCT Software & Services.*
 

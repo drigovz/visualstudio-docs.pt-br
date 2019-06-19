@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Conheça o benefício de treinamento Skill Me Up – da plataforma Opsgility – incluído com a assinatura selecionada do Visual Studio.
 searchscope: VS Subscriptions
-ms.openlocfilehash: 110ae0871e907a33dce20b059188919f645b4401
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c986eac1c98d2ba7b511cc01f03a823ced496d63
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946982"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032810"
 ---
 # <a name="the-skill-me-up---powered-by-opsgility-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento Skill Me Up – da plataforma Opsgility – nas assinaturas do Visual Studio
 
@@ -39,8 +39,8 @@ Assinaturas selecionadas do Visual Studio incluem até seis meses de acesso ao t
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Nº  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Nº  Disponível apenas para novos assinantes         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              | Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Dev Essentials | NA  | Não disponível | NA  |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+||
 
 *Exclui:  MPN (Microsoft Partner Network), MVP (Most Valuable Professional), RD (Diretor Regional), Microsoft Certified Trainer, BizSpark, Imagine, NFR e FTE*
 

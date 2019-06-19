@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 91f811a169f9cffc9cf175b68a875c2999d3745d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744987"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160060"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
@@ -61,7 +61,7 @@ Para um projeto direcionado ao .NET Core, as versões disponíveis poderão ser 
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente na primeira vez em que a caixa de diálogo é aberta. Se você alterar posteriormente a estrutura de destino do projeto, será necessário selecionar os pré-requisitos manualmente para corresponder à nova estrutura de destino.
 
-Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral do direcionamento de estrutura](../../ide/visual-studio-multi-targeting-overview.md).
+Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../../ide/visual-studio-multi-targeting-overview.md).
 
 **Tipo de saída**
 

@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8866b4a2518c8c4d58f26b625e45a0188498021
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 4503066cab8e7ca324e7c81317999b737c750dd6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746523"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67159947"
 ---
 # <a name="output-window"></a>janela Saída
 
@@ -67,7 +67,7 @@ Determinados recursos e comandos do IDE invocados na [janela Comando](../../ide/
 
 Você também pode programar seus próprios aplicativos para gravar mensagens de diagnóstico em tempo de execução em um painel **Saída**. Para fazer isso, use membros da classe <xref:System.Diagnostics.Debug> ou <xref:System.Diagnostics.Trace> no namespace <xref:System.Diagnostics> da API .NET. Os membros da classe <xref:System.Diagnostics.Debug> exibem a saída quando você compila as configurações de Depuração da solução ou do projeto; os membros da classe <xref:System.Diagnostics.Trace> exibem a saída quando você compila as configurações de Depuração ou de Versão. Para obter mais informações, confira [Mensagens de diagnóstico na Janela de Saída](../../debugger/diagnostic-messages-in-the-output-window.md).
 
-No C++, é possível criar etapas de build e eventos de build personalizados cujos avisos e erros são exibidos e contados no painel de **Saída**. Pressionando **F1** em uma linha de saída, você pode exibir um tópico da Ajuda apropriado. Para obter mais informações, confira [Formatar a saída de uma etapa de build personalizada](/cpp/build/reference/formatting-the-output-of-a-custom-build-step-or-build-event).
+No C++, é possível criar etapas de build e eventos de build personalizados cujos avisos e erros são exibidos e contados no painel de **Saída**. Pressionando **F1** em uma linha de saída, você pode exibir um tópico da Ajuda apropriado. Para obter mais informações, confira [Formatar a saída de uma etapa de build personalizada](/cpp/build/formatting-the-output-of-a-custom-build-step-or-build-event).
 
 ## <a name="scroll-behavior"></a>Comportamento de rolagem
 

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
 searchscope: VS Subscription
-ms.openlocfilehash: 852327a7bcedb93a9ac7d2644ee5e9ab1e182e42
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65805337"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032891"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 
@@ -86,7 +86,6 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Não disponível                                                             |  N/D          |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  N/D           |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              |  N/D          |
-| Visual Studio Dev Essentials | N/D  | Não disponível | N/D |
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 

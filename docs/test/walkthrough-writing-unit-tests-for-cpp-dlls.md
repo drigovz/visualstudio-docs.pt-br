@@ -1,18 +1,18 @@
 ---
 title: 'Como: Escrever testes de unidade para DLLs C++'
-ms.date: 05/01/2019
+ms.date: 06/13/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 427b481da6feca902fda0e3058974034c72fe6f4
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 38d792ad9264c007dab296b65aa330dfa142769e
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226282"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132161"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Como: Escrever testes de unidade para DLLs C++
 
@@ -38,7 +38,7 @@ Este passo a passo descreve como desenvolver uma DLL nativa em C++ usando a meto
 
 1. No menu **Arquivo**, escolha **Novo** > **Projeto**.
 
-     **Visual Studio 2017 e versões anteriores**: Expanda **Instalado** > **Modelos** > **Visual C++** > **Teste**.
+     **Visual Studio 2017 e versões anteriores**: Expanda **Instalado** > **Modelos** > **Visual C++**  > **Teste**.
      **Visual Studio 2019**: Defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa.
 
      Escolha o modelo de **Projeto de Teste de Unidade Nativo** ou qualquer estrutura instalada de sua preferência. Se você escolher outro modelo, como Google Test ou Boost.Test, os princípios básicos são os mesmos, embora alguns detalhes serão diferentes.
@@ -152,13 +152,9 @@ As etapas a seguir mostram como criar um projeto de DLL no Visual Studio 2017.
 
 1. Adicione o projeto de DLL às referências de projeto do projeto de teste:
 
-   1. Abra as propriedades do projeto de teste e escolha **Propriedades Comuns** > **Estrutura e Referências**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nó de projeto de teste e escolha **Adicionar** > **Referência**.
 
-        ![Propriedades de projeto C++ | Estrutura e Referências](../test/media/utecpp08.png)
-
-   2. Escolha **Adicionar Nova Referência**.
-
-        Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.
+   2. Na caixa de diálogo **Adicionar Referência**, selecione o projeto de DLL e escolha **Adicionar**.
 
         ![Propriedades de projeto C++ | Adicionar Nova Referência](../test/media/utecpp09.png)
 

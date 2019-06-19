@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2710295390318dfa2e31b31a6a4aeaf3805b3647
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0c659bdd7eb2eee0d1899eab5d5df850a5206e92
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62947334"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032842"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
 
@@ -52,7 +52,7 @@ A Edição digital está disponível para membros do Visual Studio Dev Essential
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Edição impressa                                             |  Nº  Disponível apenas para novos assinantes         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Edição impressa                                              | Nº  Disponível apenas para novos assinantes         |
 |Visual Studio Enterprise, Visual Studio Professional (nuvem mensal)   | Azure |Não disponível      |  NA         |
-|Visual Studio Dev Essentials| NA |Edição digital       |  Sim|
+||
 
 <sup>1</sup> *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise) e Imagine (Premium).*
 

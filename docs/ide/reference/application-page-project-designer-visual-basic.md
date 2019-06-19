@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e918521a404914c2acc9a8fd6283815b1ee324e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 032bc54d5e904cf23d3e886c7dfeb38aa3ecfd93
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744936"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160067"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 
@@ -64,7 +64,7 @@ Para projetos .NET Framework, o valor padrão corresponde à estrutura de destin
 > [!NOTE]
 > Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.
 
-Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral do direcionamento de estrutura](../../ide/visual-studio-multi-targeting-overview.md).
+Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../../ide/visual-studio-multi-targeting-overview.md).
 
 ### <a name="application-type"></a>Tipo de aplicativo
 

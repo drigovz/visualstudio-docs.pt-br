@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba como ativar a assinatura do WhiteSource Bolt incluída em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ab373a21924aaac1a2a5660ed3032c69f04260e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 773284a163004958dbf89aea871414105792b338
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810897"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67031940"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>WhiteSource Bolt em assinaturas do Visual Studio
 
@@ -78,8 +78,8 @@ Clique no botão verde **Instalar** se você estiver usando o Azure DevOps Servi
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Indisponível                                                           |NA         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                             |  NA         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Não disponível                                              | NA         |
-| Visual Studio Dev Essentials | NA  | Não disponível |NA |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+||
 
 <sup>1</sup> *Inclui:  Microsoft Partner Network (Enterprise).  Exclui: NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Diretor Regional), MCT Software & Services e Microsoft Partner Network (Professional).*
 

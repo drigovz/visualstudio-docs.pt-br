@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre a Conta de Desenvolvedor do Windows incluída em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a497db64345cffe4f87e768a83816489ebd4c21a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aacd9dab6353d3cfde727717c67c400f6e17514f
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978689"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032743"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Conta de Desenvolvedor do Windows nas assinaturas do Visual Studio
 
@@ -55,8 +55,8 @@ Para usar a conta de desenvolvedor do Windows, será necessário configurar uma 
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Incluído                                                            |Sim|
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Não disponível                                            |  NA|
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              |  Não disponível                                            |  NA|
-| Visual Studio Dev Essentials | NA  | Não disponível                                            |  NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
+||
 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, VSIP (Visual Studio Industry Partner), BizSpark e MCT Software & Services Developer. Exclui:  MPN (Microsoft Partner Network), Imagine, MVP (Most Valuable Professional), RD (Diretor Regional) e MCT Software & Services.*
 
