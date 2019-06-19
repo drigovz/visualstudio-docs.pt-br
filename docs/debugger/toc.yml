@@ -38,25 +38,25 @@
   items:
     - name: Navegar pelo código com o depurador
       href: navigating-through-code-with-the-debugger.md
-    - name: Usar pontos de interrupção
+    - name: Código de pausa
       items:
         - name: Usar pontos de interrupção
           href: using-breakpoints.md
         - name: Solucionando problemas de pontos de interrupção
           href: troubleshooting-breakpoints.md
-    - name: Inspecionar dados
+    - name: Inspeção de dados
       items:
-        - name: Inspecionar dados
+        - name: Inspecionar dados nas janelas do depurador
           href: debugger-windows.md
         - name: Inspecionar variáveis
           href: autos-and-locals-windows.md
-        - name: Definir uma inspeção em variáveis
+        - name: Inspecionar variáveis
           items:
             - name: Definir uma inspeção em variáveis
               href: watch-and-quickwatch-windows.md
             - name: Expressões no depurador
               items:
-                - name: Expressões no depurador
+                - name: Usar expressões de depurador
                   href: expressions-in-the-debugger.md
                 - name: Especificadores de formato em C++
                   href: format-specifiers-in-cpp.md
@@ -70,13 +70,13 @@
           href: view-data-values-in-data-tips-in-the-code-editor.md
         - name: Exibir valores de cadeia de caracteres em um visualizador
           href: view-strings-visualizer.md
-        - name: Exibir o código de desmontagem
+        - name: Código de desmontagem
           items:
             - name: Exibir o código de desmontagem
               href: how-to-use-the-disassembly-window.md
             - name: Mover para cima ou para baixo na memória
               href: how-to-page-up-or-down-in-memory.md
-        - name: Exibir os valores do Registro
+        - name: Valores do Registro
           items:
             - name: Exibir os valores do Registro
               href: how-to-use-the-registers-window.md
@@ -90,7 +90,7 @@
           href: memory-windows.md
         - name: Inspecione as propriedades XAML durante a depuração
           href: inspect-xaml-properties-while-debugging.md
-    - name: Exibir a pilha de chamadas
+    - name: Pilha de chamadas
       items:
         - name: Exibir a pilha de chamadas
           href: how-to-use-the-call-stack-window.md
@@ -98,7 +98,7 @@
           href: map-methods-on-the-call-stack-while-debugging-in-visual-studio.md
         - name: Código misto e informações ausentes na janela pilha de chamadas
           href: mixed-code-and-missing-information-in-the-call-stack-window.md
-    - name: Editar o código e continuar a depuração
+    - name: Código de pausa e continuar
       items:
         - name: Editar o código e continuar a depuração
           href: edit-and-continue.md
@@ -108,13 +108,13 @@
           href: how-to-stop-code-changes.md
         - name: Editar e continuar (Visual C++)
           items:
-            - name: Editar e continuar (Visual C++)
+            - name: Editar e continuar para Visual C++
               href: edit-and-continue-visual-cpp.md
             - name: Alterações de código suportadas (C++)
               href: supported-code-changes-cpp.md
         - name: 'Editar e continuar (Visual C#)'
           items:
-            - name: 'Editar e continuar (Visual C#)'
+            - name: 'Editar e continuar para C#'
               href: edit-and-continue-visual-csharp.md
             - name: 'Usar Editar e Continuar (C#)'
               href: how-to-use-edit-and-continue-csharp.md
@@ -122,7 +122,7 @@
               href: supported-code-changes-csharp.md
         - name: Editar e Continuar (Visual Basic)
           items:
-            - name: Editar e Continuar (Visual Basic)
+            - name: Editar e continuar para Visual Basic
               href: edit-and-continue-visual-basic.md
             - name: Aplicar edições no modo de interrupção com Editar e Continuar
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
@@ -132,7 +132,7 @@
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Exibir dados do depurador
       items:
-        - name: Exibir módulos
+        - name: Módulos
           items:
             - name: Exibir módulos
               href: how-to-use-the-modules-window.md
@@ -140,7 +140,7 @@
               href: how-to-find-which-dll-your-program-crashed-in.md
         - name: Exibir documentos de script
           href: how-to-view-script-documents.md
-    - name: Dicas e truques do depurador
+    - name: Dicas e truques
       items:
         - name: Dicas e truques do depurador
           href: debugger-tips-and-tricks.md
@@ -148,7 +148,7 @@
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
         - name: Depuração no tempo de design
           href: walkthrough-debugging-at-design-time.md
-        - name: Depurar usando o depurador Just-In-Time
+        - name: Depurador Just-In-Time
           items:
             - name: Depurar usando o depurador Just-In-Time
               href: debug-using-the-just-in-time-debugger.md
@@ -156,7 +156,7 @@
               href: just-in-time-debugging-in-visual-studio.md
     - name: Configurar a depuração
       items:
-        - name: Gerenciar exceções com o depurador
+        - name: Exceções
           items:
             - name: Gerenciar exceções com o depurador
               href: managing-exceptions-with-the-debugger.md
@@ -164,7 +164,7 @@
               href: continuing-execution-after-an-exception.md
             - name: Examine o código do sistema após uma exceção
               href: how-to-examine-system-code-after-an-exception.md
-            - name: Usar verificações em tempo de execução nativas
+            - name: Verificações em tempo de execução nativas
               items:
                 - name: Usar verificações em tempo de execução nativas
                   href: how-to-use-native-run-time-checks.md
@@ -178,19 +178,19 @@
           href: specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md
         - name: Depurar o código do usuário
           href: just-my-code.md
-        - name: Configurações e preparação do depurador
+        - name: Configurações do depurador
           items:
             - name: Configurações e preparação do depurador
               href: debugger-settings-and-preparation.md
             - name: Configurações de projeto do depurador
               items:
-                - name: Configurações de projeto do depurador
+                - name: Configurações de projeto
                   href: debugger-project-settings.md
                 - name: Especificar as configurações do depurador
                   href: how-to-specify-debugger-settings.md
                 - name: Definir as configurações de depuração e de versão
                   href: how-to-set-debug-and-release-configurations.md
-                - name: Configurações do projeto para uma configuração de depuração do C++
+                - name: Configurações de projeto (C++)
                   items:
                     - name: Configurações do projeto para uma configuração de depuração do C++
                       href: project-settings-for-a-cpp-debug-configuration.md
@@ -202,7 +202,7 @@
                   href: project-settings-for-csharp-debug-configurations.md
                 - name: Definições do projeto para uma configuração de depuração do Visual Basic
                   href: project-settings-for-a-visual-basic-debug-configuration.md
-            - name: Depurar projetos DLL
+            - name: Projetos DLL
               items:
                 - name: Depurar projetos DLL
                   href: debugging-dll-projects.md
@@ -218,17 +218,17 @@
               href: debugging-and-the-hosting-process.md
             - name: Especificar a versão do .NET Framework para depuração
               href: how-to-specify-a-dotnet-framework-version-for-debugging.md
-        - name: Criar exibições personalizadas de dados
+        - name: Modos de exibição personalizados
           items:
             - name: Criar exibições personalizadas de dados
               href: viewing-data-in-the-debugger.md
-            - name: Criar exibições personalizadas dos objetos de C++
+            - name: Exibições personalizadas (C++)
               items:
                 - name: Criar exibições personalizadas dos objetos de C++
                   href: create-custom-views-of-native-objects.md
                 - name: Compatibilidade com o visualizador personalizado do Visual C++
                   href: visual-cpp-custom-visualizer-compatibility.md
-            - name: Criar exibições personalizadas de objetos gerenciados
+            - name: Exibições personalizadas (gerenciadas)
               items:
                 - name: Criar exibições personalizadas de objetos gerenciados
                   href: create-custom-views-of-dot-managed-objects.md
@@ -236,7 +236,7 @@
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Instruir o depurador sobre qual tipo mostrar
                   href: using-debuggertypeproxy-attribute.md
-            - name: Criar visualizadores de dados personalizados
+            - name: Visualizadores personalizados
               items:
                 - name: Criar visualizadores de dados personalizados
                   href: create-custom-visualizers-of-data.md
@@ -276,7 +276,7 @@
           href: configure-the-windows-firewall-for-remote-debugging.md
         - name: Desbloquear o download no Windows Server
           href: remote-debugging-unblock-file-download.md
-        - name: Erros de depuração remota e solução de problemas
+        - name: Referência de erro de depuração remota
           items:
             - name: Erros de depuração remota e solução de problemas
               href: remote-debugging-errors-and-troubleshooting.md
@@ -324,7 +324,7 @@
               href: error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-dotnet-framework-4-or-greater.md
             - name: O computador remoto não aparece em uma caixa de diálogo Conexões Remotas
               href: error-remote-machine-does-not-appear-in-a-remote-connections-dialog.md
-    - name: Depurar aplicativos multi-threaded
+    - name: Depuração de aplicativos multi-threaded
       items:
         - name: Depurar aplicativos multi-threaded
           href: debug-multithreaded-applications-in-visual-studio.md
@@ -332,7 +332,7 @@
           href: get-started-debugging-multithreaded-apps.md
         - name: Ferramentas para depurar processos e threads
           items:
-            - name: Ferramentas para depurar processos e threads
+            - name: Depurar threads e processos
               href: debug-threads-and-processes.md
             - name: Usar a janela Pilhas Paralelas
               href: using-the-parallel-stacks-window.md
@@ -364,7 +364,7 @@
           href: how-to-set-a-thread-name-in-managed-code.md
     - name: IntelliTrace
       items:
-        - name: IntelliTrace
+        - name: Visão geral do IntelliTrace
           href: intellitrace.md
         - name: Exibir instantâneos com o IntelliTrace
           href: view-snapshots-with-intellitrace.md
@@ -376,7 +376,7 @@
           href: historical-debugging.md
         - name: Inspecionar seu aplicativo usando depuração de histórico
           href: historical-debugging-inspect-app.md
-        - name: Diagnosticar problemas após a implantação
+        - name: Após a implantação
           items:
             - name: Diagnosticar problemas após a implantação
               href: diagnose-problems-after-deployment.md
@@ -388,7 +388,7 @@
           href: using-saved-intellitrace-data.md
         - name: Referência API para o extensibilidade do IntelliTrace
           href: api-reference-for-intellitrace-extensibility.md
-    - name: Depurar os serviços do Azure
+    - name: Serviços do Azure
       items:
         - name: Depurar os serviços do Azure
           href: debug-azure-apps.md
@@ -404,17 +404,17 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: Depuração de viagem no tempo de um aplicativo dinâmico de máquina virtual do Azure
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
-    - name: Depurar tipos de aplicativo específicos
+    - name: Tipos de aplicativo
       items:
         - name: Depurar tipos de aplicativo específicos
           href: debugging-applications.md
         - name: Depurar aplicativos de 64 bits
           href: debug-64-bit-applications.md
-        - name: Depurar aplicativos UWP
+        - name: Aplicativos UWP
           items:
             - name: Depurar aplicativos UWP
               href: debugging-windows-store-and-windows-universal-apps.md
-            - name: Iniciar uma sessão de depuração de um aplicativo UWP
+            - name: Iniciar uma sessão de depuração (UWP)
               items:
                 - name: Iniciar uma sessão de depuração de um aplicativo UWP
                   href: start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md
@@ -428,7 +428,7 @@
               href: debug-installed-app-package.md
             - name: Depurar XAML no Blend
               href: debug-xaml-in-blend.md
-            - name: Depurar HTML e CSS
+            - name: HTML e CSS
               items:
                 - name: Depurar HTML e CSS
                   href: quickstart-debug-html-and-css.md
@@ -444,11 +444,11 @@
               href: how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md
             - name: Realizar pré-busca de conteúdo para aplicativos da Microsoft Store
               href: prefetch-content-for-windows-store-apps.md
-        - name: Depurar o código gerenciado
+        - name: Código gerenciado
           items:
             - name: Depurar o código gerenciado
               href: debugging-managed-code.md
-            - name: 'Preparação de depuração: Tipos de projeto C#, F# e Visual Basic'
+            - name: Preparação de depuração
               items:
                 - name: 'Preparação de depuração: Tipos de projeto C#, F# e Visual Basic'
                   href: debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md
@@ -478,7 +478,7 @@
               href: error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md
             - name: Depurar o código-fonte do .NET Framework
               href: how-to-debug-dotnet-framework-source.md
-            - name: Depurar o WPF
+            - name: WPF
               items:
                 - name: Depurar o WPF
                   href: debugging-wpf.md
@@ -488,7 +488,7 @@
                   href: how-to-display-wpf-trace-information.md
             - name: 'Depurar F#'
               href: debugging-f-hash.md
-        - name: Depurar o código nativo
+        - name: Código nativo
           items:
             - name: Depurar o código nativo
               href: debugging-native-code.md
@@ -504,7 +504,7 @@
               href: how-to-debug-inline-assembly-code.md
             - name: Técnicas de depuração do MFC
               href: mfc-debugging-techniques.md
-            - name: Técnicas de depuração do CRT
+            - name: Depuração do CRT
               items:
                 - name: Técnicas de depuração do CRT
                   href: crt-debugging-techniques.md
@@ -516,7 +516,7 @@
                   href: debug-versions-of-heap-allocation-functions.md
                 - name: Detalhes de heap de depuração do CRT
                   href: crt-debug-heap-details.md
-                - name: Gravação da função de gancho de depuração
+                - name: Funções de gancho
                   items:
                     - name: Gravação da função de gancho de depuração
                       href: debug-hook-function-writing.md
@@ -524,7 +524,7 @@
                       href: client-block-hook-functions.md
                     - name: Funções de gancho de alocação
                       items:
-                        - name: Funções de gancho de alocação
+                        - name: Depurar funções de gancho de alocação
                           href: allocation-hook-functions.md
                         - name: Ganchos de alocação e alocações de memória do tempo de execução do C
                           href: allocation-hooks-and-c-run-time-memory-allocations.md
@@ -532,7 +532,7 @@
                       href: report-hook-functions.md
                 - name: Localizar vazamentos de memória com a biblioteca CRT
                   href: finding-memory-leaks-using-the-crt-library.md
-            - name: Perguntas frequentes sobre depuração de código nativo
+            - name: Perguntas frequentes sobre a depuração de código nativo
               items:
                 - name: Perguntas frequentes sobre depuração de código nativo
                   href: debugging-native-code-faqs.md
@@ -556,17 +556,17 @@
                   href: how-can-i-debug-windows-api-functions-q.md
                 - name: Como retornar à função que chamou o MFC em caso de interrupção
                   href: how-to-get-back-to-the-function-that-called-mfc-if-halted.md
-            - name: Depuração de COM e ActiveX
+            - name: COM e ActiveX
               items:
                 - name: Depuração de COM e ActiveX
                   href: com-and-activex-debugging.md
-                - name: Depuração de servidor e contêiner COM
+                - name: Servidor e contêiner COM
                   items:
                     - name: Depuração de servidor e contêiner COM
                       href: com-server-and-container-debugging.md
                     - name: Depurar clientes e servidores COM usando a depuração do RPC
                       href: how-to-debug-com-clients-and-servers-using-rpc-debugging.md
-                - name: Depurar um controle ActiveX
+                - name: Controle ActiveX
                   items:
                     - name: Depurar um controle ActiveX
                       href: how-to-debug-an-activex-control.md
@@ -580,7 +580,7 @@
           href: debugging-gpu-code.md
         - name: Diagnóstico de gráfico
           href: graphics/toc.yml
-        - name: Depurar aplicativos ASP.NET
+        - name: ASP.NET
           items:
             - name: Depurar aplicativos ASP.NET
               href: how-to-enable-debugging-for-aspnet-applications.md
@@ -596,11 +596,11 @@
               href: walkthrough-debugging-a-web-form.md
             - name: Depurar exceções do ASP.NET
               href: how-to-debug-aspnet-exceptions.md
-            - name: 'Depurar aplicativos Web: Erros e solução de problemas'
+            - name: 'Aplicativos Web: Erros e solução de problemas'
               items:
                 - name: 'Depurar aplicativos Web: Erros e solução de problemas'
                   href: debugging-web-applications-errors-and-troubleshooting.md
-                - name: 'Depurar aplicativos Web: Solução de problemas'
+                - name: 'Aplicativos Web: Solução de problemas'
                   items:
                     - name: 'Depurar aplicativos Web: Solução de problemas'
                       href: debugging-web-applications-troubleshooting.md
@@ -618,7 +618,7 @@
                   href: error-the-web-server-has-been-locked-down-and-is-blocking-the-debug-verb.md
                 - name: Tempo limite atingido durante a depuração de serviços Web
                   href: error-timeout-while-debugging-web-services.md
-                - name: Não é possível iniciar a depuração no servidor Web
+                - name: Não é possível iniciar a depuração
                   items:
                     - name: Não é possível iniciar a depuração no servidor Web
                       href: error-unable-to-start-debugging-on-the-web-server.md
@@ -626,7 +626,7 @@
                       href: error-the-web-server-could-not-find-the-requested-resource.md
                     - name: O servidor Web não foi configurado corretamente
                       href: error-the-web-server-is-not-configured-correctly.md
-        - name: Depurar aplicativos Web
+        - name: Aplicativos Web
           items:
             - name: Depurar aplicativos Web
               href: debugging-web-applications.md
@@ -634,19 +634,19 @@
               href: javascript-console-commands.md
             - name: Atalhos de teclado (HTML e JavaScript)
               href: keyboard-shortcuts-html-and-javascript.md
-            - name: Depuração de script do lado do cliente
+            - name: Scripts do lado do cliente
               items:
                 - name: Depuração de script do lado do cliente
                   href: client-side-script-debugging.md
                 - name: Limitações na depuração de script
                   href: limitations-on-script-debugging.md
-                - name: Anexar ao script
+                - name: Anexar (script)
                   items:
                     - name: Anexar ao script
                       href: how-to-attach-to-script.md
                     - name: 'Aviso: Depuração de script desabilitada'
                       href: warning-script-debugging-disabled.md
-        - name: Depurar serviços WCF
+        - name: Serviços WCF
           items:
             - name: Depurar serviços WCF
               href: debugging-wcf-services.md
@@ -656,7 +656,7 @@
               href: how-to-step-into-wcf-services.md
             - name: Depurar um serviço WCF auto-hospedado
               href: how-to-debug-a-self-hosted-wcf-service.md
-    - name: Usar arquivos de despejo
+    - name: Arquivos de despejo
       items:
         - name: Usar arquivos de despejo
           href: using-dump-files.md
@@ -674,7 +674,7 @@
           href: choose-breakpoints-dialog-box.md
         - name: Caixa de diálogo Configurar Firewall para Depuração Remota
           href: configure-firewall-for-remote-debugging-dialog-box.md
-        - name: 'Caixa de diálogo Depuração, Opções'
+        - name: 'Depuração, Opções'
           items:
             - name: 'Caixa de diálogo Depuração, Opções'
               href: debugging-options-dialog-box.md
@@ -700,7 +700,7 @@
           href: symbol-load-information-dialog-box.md
         - name: Caixa de diálogo Quando o Ponto de Interrupção é Atingido
           href: when-breakpoint-is-hit-dialog-box.md
-        - name: Caixas de diálogo Depurando Erros e Aviso
+        - name: Depurando Erros e Aviso
           items:
             - name: Caixas de diálogo Depurando Erros e Aviso
               href: debugging-errors-and-warning-dialog-boxes.md
@@ -756,11 +756,11 @@
               href: mixed-mode-debugging-is-only-supported-when-using-microsoft-dotnet-framework-2-0-or-3-0.md
     - name: SDK de Acesso à Interface de Depuração
       href: debug-interface-access/debug-interface-access-sdk.md
-    - name: Ajuda do Spy++
+    - name: Spy++
       items:
         - name: Ajuda do Spy++
           href: spy-increment-help.md
-        - name: Usando Spy++
+        - name: Guia de Spy++
           items:
             - name: Usando Spy++
               href: using-spy-increment.md
@@ -778,11 +778,11 @@
               href: how-to-change-fonts.md
             - name: Expandir e recolher árvores do Spy++
               href: how-to-expand-and-collapse-spy-increment-trees.md
-        - name: Exibições do Spy++
+        - name: Exibições no Spy++
           items:
             - name: Exibições do Spy++
               href: spy-increment-views.md
-            - name: Exibição de janelas
+            - name: Windows
               items:
                 - name: Exibição de janelas
                   href: windows-view.md
@@ -792,7 +792,7 @@
                   href: how-to-search-for-a-window-in-windows-view.md
                 - name: Como exibir propriedades da janela
                   href: how-to-display-window-properties.md
-            - name: Exibição de mensagens
+            - name: Mensagens
               items:
                 - name: Exibição de mensagens
                   href: messages-view.md
@@ -808,7 +808,7 @@
                   href: message-codes.md
                 - name: Exibir propriedades de mensagem
                   href: how-to-display-message-properties.md
-            - name: Exibição de processos
+            - name: Processos
               items:
                 - name: Exibição de processos
                   href: processes-view.md
@@ -816,7 +816,7 @@
                   href: how-to-search-for-a-process-in-processes-view.md
                 - name: Exibir propriedades do processo
                   href: how-to-display-process-properties.md
-            - name: Modo de Exibição de Threads
+            - name: Threads
               items:
                 - name: Modo de Exibição de Threads
                   href: threads-view.md
@@ -826,11 +826,11 @@
                   href: how-to-display-thread-properties.md
         - name: Referência de Spy++
           items:
-            - name: Referência de Spy++
+            - name: Visão geral da referência de Spy++
               href: spy-increment-reference.md
             - name: Comandos de menu
               items:
-                - name: Comandos de menu
+                - name: Visão geral dos comandos de menu
                   href: menu-commands.md
                 - name: comandos do menu Espionar
                   href: spy-menu-commands.md
@@ -850,7 +850,7 @@
               href: font-dialog-box-microsoft-spy-increment-help.md
             - name: Ferramentas de pesquisa para exibições do Spy++
               items:
-                - name: Ferramentas de pesquisa para exibições do Spy++
+                - name: Visão geral das ferramentas de pesquisa das exibições do Spy++
                   href: search-tools-for-spy-increment-views.md
                 - name: Caixa de diálogo Localizar Janela
                   href: find-window-dialog-box.md
@@ -862,7 +862,7 @@
                   href: process-search-dialog-box.md
                 - name: Caixa de diálogo Pesquisa de Thread
                   href: thread-search-dialog-box.md
-            - name: caixa de diálogo Propriedades da Janela
+            - name: Propriedades da janela
               items:
                 - name: caixa de diálogo Propriedades da Janela
                   href: window-properties-dialog-box.md
@@ -876,7 +876,7 @@
                   href: class-tab-window-properties-dialog-box.md
                 - name: 'Guia Processo, caixa de diálogo Propriedades da Janela'
                   href: process-tab-window-properties-dialog-box.md
-            - name: Caixa de diálogo Opções de Mensagem
+            - name: Opções de mensagem
               items:
                 - name: Caixa de diálogo Opções de Mensagem
                   href: message-options-dialog-box.md
@@ -888,7 +888,7 @@
                   href: output-tab-message-options-dialog-box.md
             - name: Caixa de diálogo Propriedades da Mensagem
               href: message-properties-dialog-box.md
-            - name: Caixa de diálogo Propriedades do Processo
+            - name: Propriedades do processo
               items:
                 - name: Caixa de diálogo Propriedades do Processo
                   href: process-properties-dialog-box.md
@@ -900,7 +900,7 @@
                   href: page-file-tab-process-properties-dialog-box.md
                 - name: 'Guia Espaço, caixa de diálogo Propriedades do Processo'
                   href: space-tab-process-properties-dialog-box.md
-            - name: Caixa de diálogo Propriedades do Thread
+            - name: Propriedades da Thread
               items:
                 - name: Caixa de diálogo Propriedades do Thread
                   href: thread-properties-dialog-box.md
@@ -908,7 +908,7 @@
                   href: general-tab-thread-properties-dialog-box.md
             - name: Outras caixas de diálogo
               items:
-                - name: Outras caixas de diálogo
+                - name: Caixas de diálogo adicionais
                   href: other-dialog-boxes.md
                 - name: Sobre o Microsoft Spy++
                   href: about-microsoft-spy-increment.md
