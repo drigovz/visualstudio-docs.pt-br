@@ -21,6 +21,8 @@
       items:
         - name: Visão geral
           displayName: 'static code analysis, binary analysis'
+          href: static-code-analysis-for-managed-code-overview.md
+        - name: Passo a passo da análise de código estático
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migração
           href: fxcop-analyzers.yml
@@ -36,9 +38,7 @@
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Supressão
           items:
-            - name: Suprimir avisos
-              href: in-source-suppression-overview.md
-            - name: Suprimir avisos de análise de código para código gerenciado
+            - name: Suprimir avisos de análise de código estático para código gerado
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
         - name: Erros do aplicativo de análise de código
           items:
@@ -100,6 +100,18 @@
               href: ca0505.md
             - name: erros de FxCopCmd
               href: fxcopcmd-errors.md
+        - name: Políticas de check-in
+          items:
+            - name: Como criar ou atualizar políticas de check-in
+              href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
+            - name: Implementar políticas de check-in de análise de código
+              href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
+            - name: Impor um código de fácil manutenção
+              href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
+            - name: Sincronizar conjuntos de regras do projeto com a política de check-in
+              href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
+            - name: Compatibilidade de versões
+              href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Analisadores FxCop
       items:
         - name: Visão geral
@@ -135,18 +147,6 @@
           href: how-to-create-a-custom-rule-set.md
         - name: Usar o editor de conjunto de regras
           href: working-in-the-code-analysis-rule-set-editor.md
-    - name: Políticas de check-in
-      items:
-        - name: Como criar ou atualizar políticas de check-in
-          href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-        - name: Implementar políticas de check-in de análise de código
-          href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
-        - name: Impor um código de fácil manutenção
-          href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
-        - name: Sincronizar conjuntos de regras do projeto com a política de check-in
-          href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
-        - name: Compatibilidade de versões
-          href: version-compatibility-for-code-analysis-check-in-policies.md
     - name: Métricas de código
       items:
         - name: Visão geral
@@ -188,6 +188,8 @@
               href: native-recommended-rules-rule-set.md
             - name: Conjunto de regras de segurança para código gerenciado
               href: security-rules-rule-set-for-managed-code.md
+        - name: Suprimir avisos
+          href: in-source-suppression-overview.md
         - name: Avisos de código gerenciado
           items:
             - name: Visão geral
