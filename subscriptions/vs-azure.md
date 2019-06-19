@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba como ativar o benefício Azure incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: c47012e0a06c4e4b44833b0f6727d3c7a79fd13c
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e48430ecfb2632c9ed2cd80341055a75c9d86461
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685917"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67032212"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>Usar o Microsoft Azure nas assinaturas do Visual Studio
 
@@ -30,7 +30,6 @@ Como assinante do Visual Studio, você pode usar o Microsoft Azure sem custo adi
 |              Visual Studio Professional mensal              |        Não disponível        |                                                             |
 |                    Visual Studio Test Pro                    |     Crédito mensal de US$ 50      |                             Sim                             |
 |                        Plataformas MSDN                        |     Crédito mensal de US$ 100     |                             Sim                             |
-|                 Visual Studio Dev Essentials                 | Serviços gratuitos + crédito de US$ 200 | Os serviços gratuitos são permanentes.  O crédito de US $200 só ocorre uma vez. |
 |               Visual Studio Enterprise - NFR\*               |     Crédito mensal de US$150     |                             Sim                             |
 |                Visual Studio Enterprise - FTE                |     Crédito mensal de US$150     |                             Sim                             |
 |     Visual Studio Enterprise ‒ Microsoft Partner Network     |     Crédito mensal de US$150     |                             Sim                             |
