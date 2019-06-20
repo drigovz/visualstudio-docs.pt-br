@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b76ad81a2c075a11ff55dcbd7fbc5e8a4b3fe7
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431847"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67255985"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
@@ -169,7 +169,7 @@ Para o serviço de aplicativo:
     - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
     > [!WARNING]
-    > Qualquer alteração nas configurações do aplicativo iniciará uma reinicialização do aplicativo. Detalhes sobre as configurações do aplicativo podem ser encontrados [aqui](https://docs.microsoft.com/azure/app-service/web-sites-configure#app-settings). 
+    > Qualquer alteração nas configurações do aplicativo iniciará uma reinicialização do aplicativo. Para obter mais informações sobre as configurações do aplicativo, consulte [configurar um aplicativo de serviço de aplicativo no portal do Azure](/azure/app-service/web-sites-configure).
 
 Para o AKS:
 1. Atualizar o Dockerfile para remover as seções correspondentes para o [Visual Studio Snapshot Debugger em imagens do Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
