@@ -1,10 +1,10 @@
 ---
 ms.openlocfilehash: 29aedc73173de34723f0db846a26c82cbde64f41
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846335"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67256560"
 ---
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -20,6 +20,6 @@ ms.locfileid: "65846335"
 
 * Uma assinatura do Azure. Se você ainda não tiver a assinatura, [inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), que inclui US$ 200 de crédito durante 30 dias e 12 meses de serviços populares gratuitos.
 
-* Um projeto ASP.NET Core. Se você ainda não tiver um, siga o [Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core](../../ide/quickstart-aspnet-core.md) ou use **Arquivo** > **Novo Projeto**, selecione **Visual C#** > **.NET Core**; em seguida, selecione **Aplicativo Web ASP.NET Core**. Quando solicitado, selecione o modelo **aplicativo Web (Model-View-Controller)**, verifique se **Sem autenticação** está selecionado e, em seguida, selecione **OK**.
+* Um projeto ASP.NET Core. Se você ainda não tiver um, siga o [Início Rápido: Usar o Visual Studio para criar seu primeiro aplicativo Web ASP.NET Core](../../ide/quickstart-aspnet-core.md) ou use **Arquivo** > **Novo Projeto**, selecione **Visual C#**  >  **.NET Core**; em seguida, selecione **Aplicativo Web ASP.NET Core**. Quando solicitado, selecione o modelo **aplicativo Web (Model-View-Controller)** , verifique se **Sem autenticação** está selecionado e, em seguida, selecione **OK**.
 
 * Certifique-se de criar o projeto usando o comando de menu **Criar > Criar solução** antes de seguir as etapas de implantação.
