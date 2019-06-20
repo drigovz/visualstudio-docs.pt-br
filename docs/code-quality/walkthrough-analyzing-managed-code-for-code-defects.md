@@ -5,23 +5,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - code analysis [Visual Studio]
 - managed code, analyzing
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93bd0fd71fbe8eae90750aa2e7597ee40bba17a2
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 3a2ce9b719f77377abf5b2bebd81b03a2606258b
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715266"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195302"
 ---
-# <a name="walkthrough-analyzing-managed-code-for-code-defects"></a>Passo a passo: Analisando código gerenciado em busca de defeitos de código
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Passo a passo: Use a análise de código estático para encontrar defeitos de código
 
 Neste passo a passo, você irá analisar um projeto gerenciado em busca de defeitos de código usando a ferramenta de análise de código.
 
-Este passo a passo o orienta no processo de usar a análise de código para analisar seus assemblies de código gerenciado .NET quanto à conformidade com as diretrizes de design do .NET.
+Este passo a passo o orienta no processo de usar a análise de código estático para analisar seus assemblies de código gerenciado .NET quanto à conformidade com as diretrizes de design do .NET.
 
 ## <a name="create-a-class-library"></a>Criar uma biblioteca de classes
 
