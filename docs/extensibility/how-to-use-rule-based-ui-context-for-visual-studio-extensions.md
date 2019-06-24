@@ -7,12 +7,12 @@ author: madskristensen
 ms.author: madsk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9136268bf1bfb7ccebf79de035fb19f40223002
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: c3075ca5092dd1b8a69aa4b34c0e507505cf7123
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324706"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309686"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Como: Usar o contexto de interface do usuário baseada em regras para extensões do Visual Studio
 
@@ -140,6 +140,10 @@ Aqui estão os vários tipos de termo que têm suporte:
 |ActiveProjectCapability:\<Expression>|O termo é verdadeiro quando os recursos de projeto ativo correspondem a expressão fornecida. Uma expressão pode ser algo parecido com VB &#124; CSharp.|
 |SolutionHasProjectCapability:\<Expression>|Semelhante ao acima mas termo é verdadeiro quando a solução tem qualquer projeto carregado que corresponde à expressão.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|O termo será true sempre que uma solução tem um projeto que é o tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|
+|ProjectAddedItem:\<pattern>| O termo é verdadeiro quando um arquivo que corresponde o "padrão" é adicionado a um projeto na solução que é aberta.|
+|ActiveProjectOutputType:\<outputType>|O termo é true durante a geração de tipo para o projeto ativo com correspondência exata.  O tipo de saída pode ser um inteiro ou um <xref:Microsoft.VisualStudio.Shell.Interop.__VSPROJOUTPUTTYPE> tipo.|
+|ActiveProjectBuildProperty:\<buildProperty>=\<regex>|O termo é verdadeiro quando o projeto ativo tem a propriedade de build especificado e o valor da propriedade corresponde ao filtro regex fornecido. Consulte a [persistência de dados em arquivos de projeto MSBuild](internals/persisting-data-in-the-msbuild-project-file.md) para obter mais detalhes sobre as propriedades de compilação.|
+|SolutionHasProjectBuildProperty:\<buildProperty>=\<regex>|O termo é verdadeiro quando a solução tem um projeto carregado com a propriedade de build especificado e o valor da propriedade corresponde ao filtro regex fornecido.|
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilidade com a extensão de versão cruzada
 

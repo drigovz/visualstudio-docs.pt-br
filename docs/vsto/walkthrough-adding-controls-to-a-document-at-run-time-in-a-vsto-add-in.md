@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO'
+title: Adicionar controles ao documento em tempo de execução do suplemento do VSTO
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f226f65e493ced3a33dcfe7514633992cce158d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b6ac01f32a14589837d0cb7707cb3d2f8946bd0a
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982415"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328393"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-runtime-in-a-vsto-add-in"></a>Passo a passo: Adicionar controles a um documento em tempo de execução em um suplemento do VSTO
   Você pode adicionar controles para qualquer documento do Microsoft Office Word aberto usando um suplemento do VSTO. Este passo a passo demonstra como usar a faixa de opções para permitir que os usuários adicionar um <xref:Microsoft.Office.Tools.Word.Controls.Button> ou um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento.
@@ -62,7 +62,7 @@ ms.locfileid: "62982415"
 
 1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** .
 
 3. Altere o nome da nova faixa de opções para **MyRibbon**e clique em **Add**.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Armazenar e recuperar valores de datas em intervalos do Excel programaticamente'
+title: Store & recuperar valores de datas em intervalos do Excel programaticamente
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d855ffd91ccdc07a2d69401d7a8611175cc60941
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63419292"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328915"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Como: Armazenar e recuperar valores de datas em intervalos do Excel programaticamente
   Você pode armazenar e recuperar valores em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.
