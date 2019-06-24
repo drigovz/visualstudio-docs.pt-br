@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Criar a primeira personalização no nível de documento para Excel'
+title: Criar a primeira personalização no nível de documento para Excel
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b3f9763fd670495de9ae4ef8b35a282d644ffe4d
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438522"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328384"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Passo a passo: Criar a primeira personalização no nível de documento para Excel
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando uma pasta de trabalho específica é aberta. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.
@@ -73,13 +73,13 @@ ms.locfileid: "63438522"
 
    - *FirstWorkbookCustomization*. xlsx - representa a pasta de trabalho do Excel no projeto. Contém todas as planilhas e gráficos.
 
-   - Sheet1 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a primeira planilha na pasta de trabalho. Para obter mais informações, consulte [item de host da planilha](../vsto/worksheet-host-item.md).
+   - Sheet1 ( *. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a primeira planilha na pasta de trabalho. Para obter mais informações, consulte [item de host da planilha](../vsto/worksheet-host-item.md).
 
-   - Planilha2 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a segunda planilha na pasta de trabalho.
+   - Planilha2 ( *. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a segunda planilha na pasta de trabalho.
 
-   - Sheet3 (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a terceira planilha na pasta de trabalho.
+   - Sheet3 ( *. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-uma planilha que fornece a superfície de design e o código para a terceira planilha na pasta de trabalho.
 
-   - ThisWorkbook (*. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-contém a superfície de design e o código para personalizações no nível de pasta de trabalho. Para obter mais informações, consulte [item de host da pasta de trabalho](../vsto/workbook-host-item.md).
+   - ThisWorkbook ( *. vb* arquivo para o Visual Basic ou *CS* arquivo para o Visual C#)-contém a superfície de design e o código para personalizações no nível de pasta de trabalho. Para obter mais informações, consulte [item de host da pasta de trabalho](../vsto/workbook-host-item.md).
 
      O arquivo de código Sheet1 é aberto automaticamente no designer.
 

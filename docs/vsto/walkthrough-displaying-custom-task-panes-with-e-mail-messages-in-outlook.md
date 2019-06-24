@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook'
+title: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fa86c07ba964ca918c7ad225d5152b31a2e1d9ae
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440880"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328343"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este passo a passo demonstra como exibir uma instância exclusiva de cada mensagem de email que é criado ou aberto um painel de tarefas personalizado. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de opções de cada mensagem de email.
@@ -90,7 +90,7 @@ ms.locfileid: "63440880"
 
 1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)** .
 
 3. Altere o nome da nova faixa de opções para **ManageTaskPaneRibbon**e clique em **Add**.
 
