@@ -1,18 +1,14 @@
 ---
 title: Publicar WebApplicationVM | Microsoft Docs
 description: Saiba como implantar um aplicativo Web para uma máquina virtual. Se os recursos necessários não existirem, este script criará tais recursos em sua assinatura do Azure.
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: de4cec95-f73f-44d9-babd-9f47f2633cdb
-ms.prod: visual-studio-dev15
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/11/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/11/2016
+ms.author: ghogen
 ms.openlocfilehash: 8b4b7a05de87ab8b70046b51fe9f256f05d3aee5
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
@@ -25,7 +21,7 @@ Implanta um aplicativo Web em uma máquina virtual. Se os recursos necessários 
 
 ```
 Publish-WebApplicationVM
--Configuration <configuration>
+–Configuration <configuration>
 -SubscriptionName <subscriptionName>
 -WebDeployPackage <packageName>
 -VMPassword @{Name = "name"; Password = "password")
@@ -122,7 +118,7 @@ O arquivo de configuração JSON especifica os detalhes daquilo que está para s
         "cloudService": {
             "name": "myvmname",
             "affinityGroup": "",
-            "location": "China North",
+            "location": "West US",
             "virtualNetwork": "",
             "subnet": "",
             "availabilitySet": "",
@@ -184,6 +180,3 @@ O arquivo de configuração JSON especifica os detalhes daquilo que está para s
 ```
 
 Você pode editar o arquivo de configuração do JSON para alterar o que é provisionado. Uma máquina virtual e um serviço de nuvem são necessários, mas a seção de banco de dados é opcional.
-
-
-<!-- Update_Description: update metedata properties -->
