@@ -1,0 +1,46 @@
+---
+title: 'Como: Limpar a pilha de desfazer | Microsoft Docs'
+ms.date: 11/04/2016
+ms.topic: conceptual
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - clear undo stack
+ms.assetid: 2200d2d4-7f58-401c-87fc-ddd32d368193
+author: madskristensen
+ms.author: madsk
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 442c362a3d9c65cd75a4f3f5446228630f9cb5b1
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66344615"
+---
+# <a name="how-to-clear-the-undo-stack"></a>Como: Limpar a pilha de desfazer
+O procedimento a seguir explica como limpar a pilha de desfazer.
+
+## <a name="to-clear-the-undo-stack"></a>Para limpar a pilha de desfazer
+
+1. Para limpar o uso da pilha de desfazer a [IOleUndoManager::DiscardFrom](/windows/desktop/api/ocidl/nf-ocidl-ioleundomanager-discardfrom) método. Este é um exemplo disso:
+
+    ```
+    HRESULT CCmdWindow::ClearUndoStack()
+    {
+      HRESULT hr = S_OK;
+
+      if (m_pUndoMgr == NULL)
+        {
+        IfFailGo(m_pTextLines->GetUndoManager(&m_pUndoMgr));
+        ASSERT(m_pUndoMgr != NULL, "",;);
+        }
+
+      IfFailGo(m_pUndoMgr->DiscardFrom(NULL));
+
+    Error:
+      return hr;
+    }
+    ```
+
+## <a name="see-also"></a>Consulte também
+- [Como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)
