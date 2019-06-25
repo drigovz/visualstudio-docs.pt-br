@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 366244285892820039a5a0f7950a709d170b4527
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3831cbc484fde7c61dbe1baf5ecd9ab07556a7f5
+ms.sourcegitcommit: 34807a6b6105ae7839adde8ff994c85182ad3aff
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66352036"
+ms.lasthandoff: 06/24/2019
+ms.locfileid: "67342422"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como: Usar assistentes com modelos de projeto
 
@@ -68,7 +68,7 @@ Este procedimento mostra como criar um assistente personalizado que abre um form
 
 3. Adicione o assembly como um ativo para o projeto do VSIX. Abra o *vsixmanifest* do arquivo e selecione o **ativos** guia. No **adicionar novo ativo** janela, para **tipo** selecionar **Microsoft.VisualStudio.Assembly**, para **origem** selecione **um projeto na solução atual**e para **Project** selecionar **MyProjectWizard**.
 
-4. Adicione as seguintes referências ao projeto de VSIX. (No **Gerenciador de soluções**, sob o nó de projeto VSIX, selecione **referências**, clique com botão direito e selecione **Add Reference**.) No **adicionar referência** caixa de diálogo, no **Framework** guia, localize o **System. Windows Forms** assembly e selecioná-lo. Agora, selecione a **extensões** guia. Localizar o **EnvDTE** assembly e selecioná-lo. Encontre também a **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selecioná-lo. Clique em **OK**.
+4. Adicione as seguintes referências ao projeto de VSIX. (No **Gerenciador de soluções**, sob o nó de projeto VSIX, selecione **referências**, clique com botão direito e selecione **Add Reference**.) No **adicionar referência** caixa de diálogo, no **Framework** guia, localize o **System. Windows Forms** assembly e selecioná-lo. Também Encontre e selecione os **System** e **System. Drawing** assemblies. Agora, selecione a **extensões** guia. Localizar o **EnvDTE** assembly e selecioná-lo. Encontre também a **Microsoft.VisualStudio.TemplateWizardInterface** assembly e selecioná-lo. Clique em **OK**.
 
 5. Adicione uma classe para a implementação do Assistente para o projeto do VSIX. (No **Gerenciador de soluções**, clique com botão direito no nó do projeto VSIX e selecione **adicionar**, em seguida, **Novo Item**, em seguida, **classe**.) Nomeie a classe **WizardImplementation**.
 
@@ -157,7 +157,7 @@ Este procedimento mostra como criar um assistente personalizado que abre um form
 
    - Um <xref:System.Object> matriz que contém um conjunto de parâmetros passados para o assistente pelo Visual Studio.
 
-     Este exemplo adiciona um valor de parâmetro de formulário de entrada do usuário para o <xref:System.Collections.Generic.Dictionary%602> parâmetro. Todas as instâncias da `$custommessage$` parâmetro no projeto será substituído pelo texto inserido pelo usuário. Adicione os seguintes assemblies ao seu projeto: **Sistema** e **System. Drawing**.
+     Este exemplo adiciona um valor de parâmetro de formulário de entrada do usuário para o <xref:System.Collections.Generic.Dictionary%602> parâmetro. Todas as instâncias da `$custommessage$` parâmetro no projeto será substituído pelo texto inserido pelo usuário.
 
 7. Agora, crie o **UserInputForm**. No *WizardImplementation.cs* do arquivo, adicione o seguinte código após o final do `WizardImplementation` classe.
 
