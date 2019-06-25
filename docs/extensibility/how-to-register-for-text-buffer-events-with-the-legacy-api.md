@@ -1,0 +1,38 @@
+---
+title: 'Como: Registre-se para eventos de Buffer de texto com a API herdada | Microsoft Docs'
+ms.date: 11/04/2016
+ms.topic: conceptual
+helpviewer_keywords:
+- editors [Visual Studio SDK], legacy - register for text buffer events
+ms.assetid: 5fc00ced-882c-4b48-b46c-1fa5a2469f94
+author: madskristensen
+ms.author: madsk
+manager: jillfra
+ms.workload:
+- vssdk
+ms.openlocfilehash: 10f1dbbc50535c1b0fd297f99c359ea8b0511c68
+ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.translationtype: MT
+ms.contentlocale: pt-BR
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66321457"
+---
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: Registre-se para eventos de buffer de texto com a API herdada
+Se você estiver acessando o buffer de texto usando a API herdada, você deve se registrar para eventos de buffer de texto, conforme mostrado no procedimento a seguir.
+
+## <a name="to-advise-text-buffer-events"></a>Para eventos de buffer de texto de aviso
+
+1. De um ponteiro para uma das interfaces na <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>, chame `QueryInterface` de um ponteiro para <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer>.
+
+2. Chamar o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer.FindConnectionPoint%2A> método e passar a ID de interface de eventos para o qual você deseja registrar.
+
+     Por exemplo, se você deseja registrar para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLinesEvents>, em seguida, passar uma ID de IID_IVsTextLinesEvents de interface.
+
+     O buffer de texto retorna um ponteiro para o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint> interface para o objeto de ponto de conexão apropriado.
+
+3. Usando esse ponteiro, chame o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Advise%2A> método, passando um ponteiro para sua implementação de interface de eventos para o qual você deseja registrar, por exemplo, o `IVsTextLinesEvents` interface.
+
+     O ambiente retorna um cookie que você pode usar para interromper a escuta eventos chamando o <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPoint.Unadvise%2A> método.
+
+## <a name="see-also"></a>Consulte também
+- [Eventos de buffer de texto na API herdada](../extensibility/text-buffer-events-in-the-legacy-api.md)

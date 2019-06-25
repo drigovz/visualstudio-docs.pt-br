@@ -1,18 +1,16 @@
 ---
 title: Construindo cadeias de caracteres de filtro para o designer de tabela | Microsoft Docs
 description: Construindo cadeias de caracteres de filtro para o designer de tabela
-services: visual-studio-online
 author: ghogen
-manager: douge
+manager: jillfra
 assetId: a1a10ea1-687a-4ee1-a952-6b24c2fe1a22
-ms.prod: visual-studio-dev15
+ms.prod: visual-studio-dev14
 ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
-origin.date: 11/18/2016
-ms.date: 09/10/2018
-ms.author: v-junlch
+ms.date: 11/18/2016
+ms.author: ghogen
 ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
@@ -43,9 +41,9 @@ Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade
 
 Ao construir uma cadeia de caracteres de filtro, as regras a seguir são importantes:
 
-- Use os operadores lógicos para comparar uma propriedade a um valor. Observe que não é possível comparar uma propriedade a um valor dinâmico; um lado da expressão deve ser uma constante.
-- Todas as partes da cadeia de caracteres de filtro diferenciam maiúsculas de minúsculas.
-- O valor da constante deve ser do mesmo tipo de dados como a propriedade para que o filtro retorne resultados válidos. Para obter informações sobre tipos de propriedades com suporte, consulte [Noções básicas sobre o modelo de dados do serviço Tabela](http://go.microsoft.com/fwlink/p/?LinkId=400448).
+* Use os operadores lógicos para comparar uma propriedade a um valor. Observe que não é possível comparar uma propriedade a um valor dinâmico; um lado da expressão deve ser uma constante.
+* Todas as partes da cadeia de caracteres de filtro diferenciam maiúsculas de minúsculas.
+* O valor da constante deve ser do mesmo tipo de dados como a propriedade para que o filtro retorne resultados válidos. Para obter informações sobre tipos de propriedades com suporte, consulte [Noções básicas sobre o modelo de dados do serviço Tabela](http://go.microsoft.com/fwlink/p/?LinkId=400448).
 
 ## <a name="filtering-on-string-properties"></a>Filtrando nas propriedades de cadeia de caracteres
 Ao filtrar nas propriedades de cadeia de caracteres, coloque a constante de cadeia de caracteres entre aspas simples.
@@ -94,5 +92,3 @@ Para filtrar um valor DateTime, especifique a palavra-chave **datetime** , segui
 O exemplo a seguir retorna entidades nas quais a propriedade CustomerSince é igual a 10 de julho de 2008:
 
     CustomerSince eq datetime'2008-07-10T00:00:00Z'
-
-<!-- Update_Description: update metedata properties -->
