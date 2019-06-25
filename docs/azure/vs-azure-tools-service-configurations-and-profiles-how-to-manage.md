@@ -4,8 +4,6 @@ description: Saiba como trabalhar com arquivos de configuração de perfis e con
 author: ghogen
 manager: jillfra
 assetId: 7da8c551-fb06-4057-b5c7-c77f4b39d803
-ms.prod: visual-studio-dev14
-ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
@@ -33,28 +31,28 @@ Você também pode abrir a caixa de diálogo **Gerenciar Configurações** das p
 
 ### <a name="to-add-a-service-configuration"></a>Para adicionar uma configuração de serviço
 1. No Gerenciador de Soluções, abra o menu de atalho do projeto do Azure e selecione **Gerenciar Configurações**.
-   
+
     A caixa de diálogo **Gerenciar Configurações de Serviço** é exibida.
 2. Para adicionar uma configuração de serviço, você deve criar uma cópia de uma configuração existente. Para fazer isso, escolha a configuração que você deseja copiar na lista Nome e selecione **Criar cópia**.
 3. (Opcional) Para atribuir um nome diferente à configuração de serviço, escolha a nova configuração de serviço na lista Nome e selecione **Renomear**. Na caixa de texto **Nome**, digite o nome que você deseja usar para essa configuração de serviço e selecione **OK**.
-   
+
     Um novo arquivo de configuração de serviço chamado ServiceConfiguration.[Novo nome].cscfg é adicionado ao projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-delete-a-service-configuration"></a>Para excluir uma configuração de serviço
 1. No Gerenciador de Soluções, abra o menu de atalho do projeto do Azure e selecione **Gerenciar Configurações**.
-   
+
     A caixa de diálogo **Gerenciar Configurações de Serviço** é exibida.
 2. Para excluir uma configuração de serviço, escolha a configuração que você deseja excluir na lista **Nome** e selecione **Remover**. Aparece uma caixa de diálogo para confirmar que você deseja excluir esta configuração.
 3. Selecione **Excluir**.
-   
+
      O arquivo de configuração de serviço é removido do projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-rename-a-service-configuration"></a>Para renomear uma configuração de serviço
 1. No Gerenciador de Soluções, abra o menu de atalho do projeto do Azure e selecione **Gerenciar Configurações**.
-   
+
     A caixa de diálogo **Gerenciar Configurações de Serviço** é exibida.
 2. Para renomear uma configuração de serviço, escolha a nova configuração de serviço na lista **Nome** e selecione **Renomear**. Na caixa de texto **Nome**, digite o nome que você deseja usar para essa configuração de serviço e selecione **OK**.
-   
+
     O nome do arquivo de configuração de serviço é modificado no projeto do Azure no Gerenciador de Soluções.
 
 ### <a name="to-change-a-service-configuration"></a>Para alterar uma configuração de serviço
@@ -68,16 +66,16 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
 ### <a name="to-add-a-profile"></a>Para adicionar um perfil
 1. Abra o menu de atalho do projeto do Azure e selecione **Publicar**.
 2. Ao lado da lista **Perfil de destino**, selecione o botão **Salvar Perfil**, como mostra a ilustração a seguir. Isso cria um perfil para você.
-   
+
     ![Criar um novo perfil](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/create-new-profile.png)
 3. Depois que o perfil for criado, selecione **<Gerenciar...>** na lista **Perfil de destino**.
-   
+
     A caixa de diálogo **Gerenciar perfis** é exibida, como mostra a ilustração a seguir.
-   
+
     ![Caixa de Diálogo Gerenciar Perfis](./media/vs-azure-tools-service-configurations-and-profiles-how-to-manage/manage-profiles.png)
 4. Na lista **Nome**, escolha um perfil e selecione **Criar Cópia**.
 5. Escolha o botão **Fechar** .
-   
+
     O novo perfil aparece na lista Perfil de destino.
 6. Na lista **Perfil de destino** , selecione o perfil que você acabou de criar. As configurações do Assistente de Publicação são preenchidas com as opções do perfil selecionado.
 7. Selecione os botões **Anterior** e **Próximo** para exibir cada página do Assistente de Publicação e personalize as configurações desse perfil. Confira [Assistente de Publicação de Aplicativo do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623085) .

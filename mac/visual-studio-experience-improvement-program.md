@@ -30,7 +30,7 @@ O VSCEIP está ativado por padrão. É possível desligá-lo ou ativá-lo novame
 
     ![Selecione um botão de opção para refletir a sua preferência de participação](media/visual-studio-experience-improvement-program-image1.png)
 
-[!INCLUDE [GDPR-related guidance](../../docs/misc/includes/gdpr-hybrid-note.md)]
+[!INCLUDE [GDPR-related guidance](../docs/misc/includes/gdpr-hybrid-note.md)]
 
 ## <a name="see-also"></a>Consulte também
 
