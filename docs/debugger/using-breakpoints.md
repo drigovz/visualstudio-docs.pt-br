@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: c2bf6a62bde77ce49c7723e435bc34c3cad74702
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65614520"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365393"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.
@@ -49,7 +49,7 @@ Pontos de interrupção são uma das técnicas de depuração mais importantes n
 
  Para definir um ponto de interrupção no código-fonte, clique na margem da extrema esquerda ao lado de uma linha de código. Você também pode selecionar a linha e pressione **F9**, selecione **Debug** > **alternar ponto de interrupção**, ou clique com botão direito e selecione **depontodeinterrupção**  >  **Inserir ponto de interrupção**. O ponto de interrupção aparece como um ponto vermelho na margem esquerda.
 
-No C# código, o ponto de interrupção e linhas de execução atual são realçadas automaticamente. Para C++ código, você pode ativar o realce de ponto de interrupção e linhas atuais, selecionando **ferramentas** (ou **depurar**) > **opções**  >  **Depuração** >  **realçar a linha de origem inteira para pontos de interrupção e a instrução atual (C++ somente)**.
+No C# código, o ponto de interrupção e linhas de execução atual são realçadas automaticamente. Para C++ código, você pode ativar o realce de ponto de interrupção e linhas atuais, selecionando **ferramentas** (ou **depurar**) > **opções**  >  **Depuração** >  **realçar a linha de origem inteira para pontos de interrupção e a instrução atual (C++ somente)** .
 
  ![Defina um ponto de interrupção](../debugger/media/basicbreakpoint.png "básico ponto de interrupção")
 
@@ -144,9 +144,9 @@ Para visualmente rastrear pontos de interrupção durante a execução de códig
 
 4. Adicione o seguinte para o **nome da função** caixa e selecione **C++** idioma.
 
-    ```C++
-    ((my_class *) 0xcccccccc)->my_method
-    ```
+   ```cpp
+   ((my_class *) 0xcccccccc)->my_method
+   ```
 
 ::: moniker range=">= vs-2019"
 
@@ -167,7 +167,7 @@ Pontos de interrupção de dados no .NET Core não funcionarão para:
 - Propriedades que não são expansível na dica de ferramenta, locais, Autos, ou a janela de Observação
 - Variáveis estáticas
 - Classes com o atributo DebuggerTypeProxy
-- Campos dentro de structs 
+- Campos dentro de structs
 
 ::: moniker-end
 
@@ -189,11 +189,12 @@ Pontos de interrupção não funcionam nas seguintes condições:
 - Um processo que não estiver sendo depurado grava na localização da memória.
 - A localização de memória é compartilhada entre dois ou mais processos.
 - O local da memória é atualizado no kernel. Por exemplo, se a memória é passada para o Windows de 32 bits `ReadFile` função, a memória será atualizada de modo kernel, portanto, o depurador não quebre na atualização.
+- Em que a expressão de inspeção é maior que 4 bytes em hardware de 32 bits e 8 bytes em hardware de 64 bits. Essa é uma limitação de x86 arquitetura.
 
->[!NOTE]
->- Pontos de interrupção de dados dependem de endereços de memória específica. O endereço de uma variável muda de uma sessão de depuração para o próximo, para que os pontos de interrupção de dados são automaticamente desabilitados no final de cada sessão de depuração.
+> [!NOTE]
+> - Pontos de interrupção de dados dependem de endereços de memória específica. O endereço de uma variável muda de uma sessão de depuração para o próximo, para que os pontos de interrupção de dados são automaticamente desabilitados no final de cada sessão de depuração.
 >
->- Se você definir um ponto de interrupção de dados em uma variável local, o ponto de interrupção permanece habilitado quando a função terminar, mas o endereço de memória não é mais aplicável, portanto, o comportamento do ponto de interrupção é imprevisível. Se você definir um ponto de interrupção de dados em uma variável local, você deve excluir ou desabilitar o ponto de interrupção antes do fim da função.
+> - Se você definir um ponto de interrupção de dados em uma variável local, o ponto de interrupção permanece habilitado quando a função terminar, mas o endereço de memória não é mais aplicável, portanto, o comportamento do ponto de interrupção é imprevisível. Se você definir um ponto de interrupção de dados em uma variável local, você deve excluir ou desabilitar o ponto de interrupção antes do fim da função.
 
 ## <a name="BKMK_Specify_advanced_properties_of_a_breakpoint_"></a> Gerenciar pontos de interrupção na janela de Pontos de Interrupção
 
@@ -273,7 +274,7 @@ Quando você seleciona **expressão condicional**, você pode escolher entre dua
 
 3. Adicionar um novo ponto de interrupção no ponto em que você deseja investigar; Por exemplo, quando o objeto deve ser adicionado à coleção. Clique com o botão direito do mouse no ponto de interrupção e selecione **Condições**.
 
-4. Use a ID de objeto na **expressão condicional** campo. Por exemplo, se a variável `item` é o objeto a ser adicionado à coleção, selecione **for verdadeira** e digite **item = = $\<n >**, onde \<n > é o número de ID de objeto .
+4. Use a ID de objeto na **expressão condicional** campo. Por exemplo, se a variável `item` é o objeto a ser adicionado à coleção, selecione **for verdadeira** e digite **item = = $\<n >** , onde \<n > é o número de ID de objeto .
 
    Execução será interrompida no ponto quando esse objeto deve ser adicionado à coleção.
 
