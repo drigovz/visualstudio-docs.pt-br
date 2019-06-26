@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9e58b9af583c6183a12f611bcc527443bc9bd30a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 237c6215971cbbac5dec25fd81c995cf87ed57c6
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968195"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67261728"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>Refatorar para converter LINQ em uma instrução foreach
 
@@ -31,14 +31,14 @@ Esta refatoração aplica-se a:
    > [!NOTE]
    > Esta refatoração só pode ser usada para converter consultas LINQ expressas com a sintaxe de consulta e não a sintaxe do método.
 
-1. Pressione **Ctrl**+**.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
+1. Pressione **Ctrl**+ **.** ou clique no ícone de chave de fenda ![ícone de chave de fenda](../media/screwdriver-icon.png) na margem do arquivo de código.
 
    ![Menu de ações rápidas para conversão de LINQ em foreach](media/convert-linq-to-foreach.png)
 
-1. Selecione **Converter em 'foreach'**. Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
+1. Selecione **Converter em 'foreach'** . Ou selecione **Visualizar alterações** para abrir a caixa de diálogo [Visualizar alterações](../../ide/preview-changes.md) e, em seguida, selecione **Aplicar**.
 
 > [!NOTE]
-> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para a variação de iteração do loop `foreach`. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código específicas são configuradas no nível do computador em **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Estilo de Código** > **Geral** > **\'preferências de var**, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-code-style-settings-reference.md#implicit-and-explicit-types). Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
+> Para C#, o código gerado por essas refatorações usa um tipo de explícito ou [var](/dotnet/csharp/language-reference/keywords/var) para a variação de iteração do loop `foreach`. O tipo no código gerado, explícito ou implícito, depende das configurações de estilo de código em escopo. Essas configurações de estilo de código específicas são configuradas no nível do computador em **Ferramentas** > **Opções** > **Editor de Texto** > **C#**  > **Estilo de Código** > **Geral** >  **\'preferências de var**, ou no nível da solução em um arquivo [EditorConfig](../../ide/editorconfig-language-conventions.md#implicit-and-explicit-types). Se você alterar uma configuração de estilo do código em **Opções**, abra o arquivo de código para que as alterações entrem em vigor.
 
 ## <a name="see-also"></a>Consulte também
 
