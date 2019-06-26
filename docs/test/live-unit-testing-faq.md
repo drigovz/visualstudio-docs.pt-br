@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1e5f88acccd9ccbcd880b8403edb0eb40f97ad2e
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714488"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67258127"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -197,15 +197,6 @@ Os testes que dependem desses valores poderão falhar quando executados pelo Liv
 A solução poderá ser compilada mesmo que você não esteja fazendo edições se o processo de build da solução gerar um código-fonte que faz parte da própria solução e os arquivos de destino do build não tiverem entradas e saídas apropriadas especificadas. Os destinos devem receber uma lista de entradas e saídas para que o MSBuild possa executar as verificações atualizadas apropriadas e determinar se um novo build é necessário.
 
 O Live Unit Testing inicia um build sempre que detecta uma alteração nos arquivos de origem. Como o build da solução gera arquivos de origem, o Live Unit Testing entrará em um loop infinito de build. Se, no entanto, as entradas e as saídas do destino forem verificadas quando o Live Unit Testing iniciar o segundo build (depois de detectar os arquivos de origem recém-gerados do build anterior), ele interromperá o loop de build, pois as verificações de entradas e saídas indicarão que tudo está atualizado.  
-
-## <a name="lightweight-solution-load"></a>Carga de solução leve
-
-**Como o Live Unit Testing funciona com o recurso Carga de Solução Leve?**
-
-No momento, o Live Unit Testing não funciona bem com o recurso de carga de solução leve. Ele funciona somente depois que pelo menos um dos projetos de teste é carregado. Até lá, ele não funcionará, porque o Live Unit Testing depende de que, pelo menos, um dos projetos de teste que referenciam um adaptador de teste (MSTest, xUnit ou NUnit) seja carregado.
-
-> [!NOTE]
-> A carga de solução leve não está mais disponível no Visual Studio 2017 versão 15.5 e posterior. No Visual Studio 2017 versão 15.5 e posteriores, grandes soluções que contêm código gerenciado são carregadas mais rápido do que anteriormente, mesmo sem carga de solução leve.
 
 ## <a name="new-process-coverage"></a>Nova cobertura de processo
 
