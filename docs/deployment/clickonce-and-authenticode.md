@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ebef342338430404f9506779c2b1e5312462178
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eecf482d5ae90894e66e790423b514cc349701f8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62900542"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399025"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 *Authenticode* é uma tecnologia da Microsoft que usa criptografia padrão do setor para assinar código do aplicativo com certificados digitais que verificam a autenticidade do Editor do aplicativo. Por meio de Authenticode para implantação de aplicativo, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] reduz o risco de um cavalo de Troia. Um cavalo de Troia é um vírus ou outro programa prejudicial que um terceiro mal-intencionado deturpe como um programa legítimo proveniente de uma fonte confiável e estabelecida. Assinatura [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações com um certificado digital é uma etapa opcional para verificar que os assemblies e arquivos não são alterados.
@@ -33,7 +33,7 @@ ms.locfileid: "62900542"
 ## <a name="authenticode-and-code-signing"></a>Authenticode e assinatura de código
  Um *certificado digital* é um arquivo que contém um pública/privada par de chaves criptográficas, juntamente com metadados que descrevem o publicador para quem o certificado foi emitido e a agência que emitiu o certificado.
 
- Há vários tipos de certificados Authenticode. Cada um deles está configurado para diferentes tipos de assinatura. Para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, você deve ter um certificado Authenticode que é válido para assinatura de código. Se você tentar entrar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo com outro tipo de certificado, tais como um certificado digital de email, ele não funcionará. Para obter mais informações, consulte [Introdução à assinatura de código](http://go.microsoft.com/fwlink/?LinkId=179452).
+ Há vários tipos de certificados Authenticode. Cada um deles está configurado para diferentes tipos de assinatura. Para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos, você deve ter um certificado Authenticode que é válido para assinatura de código. Se você tentar entrar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo com outro tipo de certificado, tais como um certificado digital de email, ele não funcionará. Para obter mais informações, consulte [Introdução à assinatura de código](https://docs.microsoft.com/windows/desktop/seccrypto/cryptography-tools).
 
  Você pode obter um certificado de assinatura de código em uma destas três maneiras:
 
