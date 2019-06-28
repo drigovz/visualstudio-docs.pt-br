@@ -8,18 +8,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d6f14dbe79e9ba0f2a8642c61a0682b25aa703f0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eace6e7f3d970de5aa0ab0e74530d3182af0e177
+ms.sourcegitcommit: 16d8ffc624adb716753412a22d586eae68a29ba2
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62567151"
+ms.lasthandoff: 06/27/2019
+ms.locfileid: "67412293"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Ferramentas do Entity Framework no Visual Studio
 
 Entity Framework é uma tecnologia de mapeamento relacional de objeto que permite aos desenvolvedores de .NET trabalhar com dados relacionais usando objetos específicos de domínio. Elimina a necessidade da maioria do código de acesso a dados que os desenvolvedores geralmente precisam gravar. O Entity Framework é o mapeamento relacional de objeto recomendado (ORM) tecnologia para novos aplicativos do .NET de modelagem.
 
-Ferramentas do Entity Framework são projetadas para ajudá-lo a criar aplicativos do Entity Framework (EF). A documentação completa do Entity Framework está aqui: [EF Core e EF 6](/ef/).
+Ferramentas do Entity Framework são projetadas para ajudá-lo a criar aplicativos do Entity Framework (EF). A documentação completa do Entity Framework está aqui: [Overview - EF 6](/ef/ef6/).
+
+  > [!NOTE]
+  > As ferramentas do Entity Framework descritas nesta página são usadas para gerar *. edmx* arquivos, que não têm suporte no EF Core. Para gerar um modelo do EF Core de um banco de dados existente, consulte [engenharia reversa – EF Core](/ef/core/managing-schemas/scaffolding). Para obter mais informações sobre as diferenças entre o EF 6 e o EF Core, consulte [comparar EF 6 e o EF Core](/ef/efcore-and-ef6/).
 
 Com ferramentas do Entity Framework, você pode criar uma *modelo conceitual* de uma já existente de banco de dados e, em seguida, graficamente visualizar e editar seu modelo conceitual. Ou, você pode criar graficamente um modelo conceitual primeiro e, em seguida, gerar um banco de dados que dá suporte a seu modelo. Em ambos os casos, você pode atualizar automaticamente seu modelo quando subjacente alterações de banco de dados e gerar automaticamente o código da camada de objeto para o seu aplicativo. Geração de banco de dados e geração de código da camada de objeto são personalizáveis.
 
