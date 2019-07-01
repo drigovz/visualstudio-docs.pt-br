@@ -30,5 +30,15 @@
           href: view-and-diagnose-containers.md
         - name: Configurar Ferramentas de Contêiner
           href: container-tools-configure.md
+        - name: Executar testes de unidade
+          href: container-unit-testing.md
+    - name: Conceitos
+      items:
+        - name: Construção de aplicativos em contêiner
+          href: container-build.md
     - name: Solução de problemas
       href: troubleshooting-docker-errors.md
+    - name: Referência
+      items:
+        - name: Propriedades do MSBuild para projetos de contêiner
+          href: container-msbuild-properties.md
