@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424298"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493665"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -170,11 +170,11 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
  ![Caso de uso mostrando muitos para muitos multiplicidade](../modeling/media/uml-ucguidemulti2.png "UML_UCGuideMulti2")  
   
-- Para que vários atores da mesma classe podem fazer parte de uma única ocorrência de um caso de uso de estado, configure a multiplicidade do final de ator da associação para **1...\\***.  
+- Para que vários atores da mesma classe podem fazer parte de uma única ocorrência de um caso de uso de estado, configure a multiplicidade do final de ator da associação a ser **1...\*** .  
   
    Na ilustração, um ou mais restaurantes podem levar parte do atendimento a mesma ordem refeição.  
   
-- Para mostrar que cada ator pode participar ao mesmo tempo em várias ocorrências de um caso de uso, configure a multiplicidade no final da associação para caso use **\\***.  
+- Para mostrar que cada ator pode participar ao mesmo tempo em várias ocorrências de um caso de uso, configure a multiplicidade no final da associação para caso use **\*** .  
   
    Na ilustração, cada restaurante pode trabalhar em suprir mais de uma ordem por vez.  
   
@@ -190,11 +190,11 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
    - **1** afirmar que exatamente uma instância dessa função participa de cada link.  
   
-   - **1...\\** * para o estado que participam de uma ou mais instâncias dessa função em cada link.  
+   - **1...\***  para o estado que participam de uma ou mais instâncias dessa função em cada link.  
   
    - **entre 0 e 1** declarar que a participação é opcional.  
   
-   - **\\** * para o estado que participam de zero ou mais instâncias dessa função no link.  
+   - **\*** para o estado que participam de zero ou mais instâncias dessa função no link.  
   
 > [!NOTE]
 > Muitas equipes não coloque informações de multiplicidade em diagramas de caso de uso, deixando as multiplicidades no valor padrão de 1. Em vez disso, eles fornecem as informações nas descrições separadas dos casos de uso. Nesse caso, todas as multiplicidades nos diagramas de caso de uso serão ocultadas.  
