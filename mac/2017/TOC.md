@@ -5,6 +5,7 @@
 ## [Instalar e usar por trás de um firewall ou proxy](/visualstudio/mac/install-behind-a-firewall-or-proxy-server)
 ## [Instalar uma versão prévia](/visualstudio/mac/install-preview)
 ## [Atualizar](/visualstudio/mac/update)
+## [Atualizar o Visual Studio 2019 para Mac](/visualstudio/mac/update-vsmac-8.0)
 ## [Desinstalar](/visualstudio/mac/uninstall)
 
 # [Contas de Usuário](/visualstudio/mac/user-accounts)
