@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6260233d564421ce3fc32c9700c4430989a4f53b
+ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933197"
+ms.lasthandoff: 07/01/2019
+ms.locfileid: "67493731"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -167,7 +167,7 @@ Para adicionar um controlador, faça o seguinte:
     }
     ```
 
-3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...**.
+3. Adicione a dependência `Microsoft.AspNetCore.Mvc` ao projeto clicando com o botão direito do mouse na pasta **Dependência** e selecionando **Adicionar Pacote...** .
 
 4. Use a caixa de Pesquisa para procurar `Microsoft.AspNetCore.Mvc` na biblioteca de NuGet e selecione **Adicionar Pacote**. A instalação pode levar alguns minutos e pode ser solicitado que você aceite várias licenças para as dependências necessárias:
 
@@ -234,7 +234,7 @@ Conclua todas as quatro etapas para garantir que o .NET Core seja devidamente in
 
 Este guia forneceu uma introdução ao ASP.NET Core. Ele descreve o que é, quando usá-lo e forneceu as informações sobre como usá-lo no Visual Studio para Mac.
 Para obter mais informações sobre as próximas etapas a partir daqui, consulte os seguintes guias:
-- Documentos do [ASP.NET Core](/aspnet/core/?view=aspnetcore-2.1#build-web-ui-and-web-apis-using-aspnet-core-mvc).
+- Documentos do [ASP.NET Core](/aspnet/core/#build-web-apis-and-web-ui-using-aspnet-core-mvc).
 - [Criando serviços de back-end para aplicativos móveis nativos](/aspnet/core/mobile/native-mobile-backend), que mostra como criar um serviço REST usando o ASP.NET Core para um aplicativo Xamarin.Forms.
 - [Laboratório prático do ASP.NET Core](https://github.com/Microsoft/vs4mac-labs/tree/master/Web/Getting-Started).
 
