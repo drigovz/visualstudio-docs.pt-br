@@ -8,12 +8,12 @@ metadata:
   description: Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha, para qualquer plataforma ou dispositivo.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: bac03cb71b4c925ecb7f5fd8f1ed69466f4bd114
-  ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
+  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 06/07/2019
-  ms.locfileid: "66462858"
+  ms.lasthandoff: 07/01/2019
+  ms.locfileid: "67493713"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -161,21 +161,48 @@ additionalContent:
   - title: Cargas de trabalho
     items:
     - title: Web e nuvem
-      summary: "[Desenvolvimento para a Web](/aspnet/) </br>\n[Gerenciamento e desenvolvimento do Azure](azure/index.yml) </br>\n[Python](python/index.yml) </br>\n[Node.js](javascript/index.yml) </br>\n[Armazenamento de dados e processamento](data-tools/index.md) </br>\n[Ciência de dados](python/data-science-and-analytical-applications-workload.md) </br>\n[Desenvolvimento para Office/Sharepoint](https://developer.microsoft.com/office/docs) \n"
+      links:
+      - text: Desenvolvimento para a Web
+        url: /aspnet/
+      - text: Gerenciamento e desenvolvimento do Azure
+        url: /visualstudio/azure
+      - text: Python
+        url: /visualstudio/python
+      - text: Node.js
+        url: /visualstudio/javascript
+      - text: Armazenamento de dados e processamento
+        url: data-tools/index.md
+      - text: Ciência de dados
+        url: python/data-science-and-analytical-applications-workload.md
+      - text: Desenvolvimento para Office/Sharepoint
+        url: https://developer.microsoft.com/office/docs
     - title: Windows
-      summary: >
-        [Desenvolvimento de área de trabalho do .NET](/dotnet/framework/develop-client-apps) </br>
-
-        [Desenvolvimento na plataforma universal do Windows](cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md) </br>
-
-        [Desenvolvimento para Windows com C++](/cpp/windows/desktop-applications-visual-cpp)
+      links:
+      - text: Desenvolvimento de área de trabalho do .NET
+        url: /dotnet/framework/develop-client-apps
+      - text: Desenvolvimento na plataforma universal do Windows
+        url: cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md
+      - text: Desenvolvimento para Windows com C++
+        url: /cpp/windows/desktop-applications-visual-cpp
     - title: Celular e jogos
-      summary: "[Desenvolvimento móvel com .NET (Xamarin)](/xamarin/) </br>\n[Desenvolvimento de jogos com Unity](cross-platform/visual-studio-tools-for-unity.md) </br>\n[Desenvolvimento móvel com JavaScript](/visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017) (somente Visual Studio 2017 e 2015) </br>\n[Desenvolvimento móvel com C++](/visualstudio/cross-platform/) </br>\n[Desenvolvimento de jogos com C++](/windows/uwp/gaming/e2e) \n"
+      links:
+      - text: Desenvolvimento mobile com .NET (Xamarin)
+        url: /xamarin/
+      - text: Desenvolvimento de jogos com Unity
+        url: cross-platform/visual-studio-tools-for-unity.md
+      - text: Desenvolvimento móvel com JavaScript
+        url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
+        note: (Visual Studio 2017 and 2015 only)
+      - text: Desenvolvimento móvel com C++
+        url: /visualstudio/cross-platform/
+      - text: Desenvolvimento de jogos com C++
+        url: /windows/uwp/gaming/e2e
     - title: Outros conjuntos de ferramentas
-      summary: >
-        [Desenvolvimento de extensões do Visual Studio](extensibility/index.md) </br>
-
-        [Desenvolvimento para Linux com C++](/cpp/linux/) </br>
-
-        [Desenvolvimento entre plataformas do .NET Core](/dotnet/core/)
+      links:
+      - text: Desenvolvimento de extensões do Visual Studio
+        url: extensibility/index.md
+      - text: Desenvolvimento de Linux com C++
+        url: /cpp/linux/
+      - text: Desenvolvimento de plataforma cruzada do .NET Core
+        url: /dotnet/core/
   footer: '[Blogs](https://devblogs.microsoft.com/visualstudio/) - [Twitter](https://twitter.com/VisualStudio) - [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio) - [Relatório de Problemas](ide/talk-to-us.md) - [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html)'
