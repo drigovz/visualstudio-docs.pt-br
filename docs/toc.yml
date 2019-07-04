@@ -1204,6 +1204,15 @@
         - name: Estados da ferramenta Relatar um problema e perguntas frequentes
           displayName: Developer Community
           href: ide/report-a-problem.md
+        - name: Criar minidespejos para um processo do Visual Studio com todas as pilhas de chamadas
+          displayName: Create minidumps with call stacks
+          href: ide/report-a-problem-minidumps.md
+        - name: Criar logs para problemas do MSBuild
+          displayName: Create logs for MSBuild problems
+          href: ide/msbuild-logs.md
+        - name: Coletar um rastreamento ETL com PerfView
+          displayName: ETL trace with PerfView
+          href: ide/report-a-problem-perfview.md
     - name: Sugerir uma funcionalidade para o Visual Studio
       href: ide/suggest-a-feature.md
     - name: Privacidade de dados da Comunidade de Desenvolvedores
