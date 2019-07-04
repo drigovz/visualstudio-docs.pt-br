@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 9302ae3119bceb466e3d681036753bd8237cbeae
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: d375dfc4a53015f57546f7cbfcc8b940fa81bd0b
+ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316334"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67559752"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Atualizar modelos de Item para Visual Studio 2017 e projeto personalizados
 
@@ -180,9 +180,9 @@ Mostramos os pontos da diferença entre o Visual Studio 2015 e Visual Studio 201
 
 Algumas extensões baseadas em MSI implantar modelos em locais de modelo comuns, como os diretórios a seguir:
 
-- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates >**
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\\< ProjectTemplates/ItemTemplates\>**
 
-- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates >**
+- **\<Diretório de instalação do Visual Studio > \Common7\IDE\Extensions\\< ExtensionName\>\\< Project/ItemTemplates\>**
 
 Se sua extensão executa uma implantação baseada em MSI, você precisa gerar o manifesto do modelo manualmente e certifique-se de que ele seja incluído na configuração da extensão. Compare os exemplos de vstman listados acima e o [modelo de manifesto do esquema de referência do Visual Studio](../extensibility/visual-studio-template-manifest-schema-reference.md).
 

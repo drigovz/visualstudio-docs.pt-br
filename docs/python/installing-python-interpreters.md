@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e3cfe5e54e4893ffa0bed6e3be1bf142fdda60be
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 16c8773e87784c43b4203b6837fb7c58ba5adce5
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747153"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043488"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -29,7 +29,7 @@ Você também pode instalar manualmente qualquer um dos interpretadores listados
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> O Visual Studio dá suporte a todas as versões oficiais compatíveis do Python, conforme especificado pela [Python Software Foundation](https://devguide.python.org/#status-of-python-branches). Especificamente, as versões 2.7, 3.5, 3.6 e 3.7.
+> O Visual Studio dá suporte ao Python versão 2.7, bem como à versão 3.5 e posterior. Embora seja possível usar o Visual Studio para editar código escrito em outras versões do Python, essas versões não são oficialmente aceitas, e recursos como o IntelliSense e a depuração podem não funcionar.
 ::: moniker-end
 
 Para o **Visual Studio 2015 e versões anteriores**, é necessário instalar manualmente um dos interpretadores.
@@ -40,7 +40,7 @@ Se o Visual Studio não detectar um ambiente instalado, consulte [Identificar ma
 
 O Visual Studio mostra todos os ambientes conhecidos na janela [**Ambientes do Python**](managing-python-environments-in-visual-studio.md#the-python-environments-window) e detecta automaticamente as atualizações para os interpretadores existentes.
 
-| Interpretador | Descrição |
+| Interpretador | DESCRIÇÃO |
 | --- | --- |
 | [CPython](https://www.python.org/) | O interpretador “nativo” e mais usado, disponível em versões de 32 e 64 bits (o recomendado é 32 bits). Inclui os últimos recursos de linguagem, a compatibilidade máxima com pacotes do Python, suporte de depuração completo e interoperabilidade com o [IPython](https://ipython.org/). Confira também:  [Devo usar o Python 2 ou 3?](https://wiki,python.org/moin/Python2orPython3). Observe que o Visual Studio 2015 e os anteriores não dão suporte ao Python 3.6 ou posteriores e podem gerar erros, como **Python versão 3.6 sem suporte**. Use o Python 3.5 ou anteriores. |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Uma implementação do .NET do Python, disponível em versões de 32 e 64 bits, que fornece interoperabilidade do C#/F#/Visual Basic, acesso às APIs do .NET, depuração padrão do Python (mas não a depuração de modo misto do C++) e a depuração mista do IronPython/C#. No entanto, o IronPython não dá suporte a ambientes virtuais. |

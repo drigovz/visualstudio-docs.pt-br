@@ -5,12 +5,12 @@ author: asb3993
 ms.author: amburns
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: fb70966dd24c4d22d473b552297a60ddebdce106
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
+ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836175"
+ms.lasthandoff: 06/19/2019
+ms.locfileid: "67253805"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac 
 
@@ -59,7 +59,7 @@ Este laboratório destina-se a desenvolvedores que estão familiarizados com o C
 
     ![](media/netcore-image4.png)
 
-3. Por convenção, a classe **HomeController** manipula todas as solicitações de entrada que começam com **/Home**. O método **Index** manipula solicitações para a raiz do diretório (como http://site.com/Home) e outros métodos manipulam as solicitações para seu caminho nomeado baseado em convenção, como **About()** manipula solicitações para **http://site.com/Home/About** . Obviamente, isso tudo é configurável. Um aspecto notável é que o **HomeController** é o controlador padrão em um novo projeto e, portanto, as solicitações para a raiz do site ( **http://site.com** ) passarão pelo **Index()** do **HomeController**, assim como as solicitações para **http://site.com/Home** ou **http://site.com/Home/Index** .
+3. Por convenção, a classe **HomeController** manipula todas as solicitações de entrada que começam com **/Home**. O método **Index** manipula solicitações para a raiz do diretório (como `http://site.com/Home`) e outros métodos manipulam as solicitações para seu caminho nomeado baseado em convenção, como **About()** manipula solicitações para `http://site.com/Home/About`. Obviamente, isso tudo é configurável. Um aspecto notável é que o **HomeController** é o controlador padrão em um novo projeto e, portanto, as solicitações para a raiz do site (`http://site.com`) passarão pelo **Index()** do **HomeController**, assim como as solicitações para `http://site.com/Home` ou `http://site.com/Home/Index`.
 
     ![](media/netcore-image5.png)
 

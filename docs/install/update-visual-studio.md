@@ -2,7 +2,7 @@
 title: Atualizar o Visual Studio
 titleSuffix: ''
 description: Saiba como atualizar o Visual Studio para a versão mais recente, passo a passo.
-ms.date: 03/30/2019
+ms.date: 06/19/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1fbc0bf5412888f246a1f396b146780013b6c6
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: dc87d6e7c6115a915d2bb7fc9f3d187e1a4d8e7d
+ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263061"
+ms.lasthandoff: 06/20/2019
+ms.locfileid: "67290651"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>Atualizar o Visual Studio para a versão mais recente
 
@@ -28,7 +28,7 @@ ms.locfileid: "66263061"
 
 Recomendamos que você atualize para a [versão mais recente](/visualstudio/releasenotes/vs2017-relnotes/) do Visual Studio 2017 para que você sempre tenha os recursos, as correções e os aprimoramentos mais atualizados.
 
-E se você quiser experimentar a próxima versão, considere a possibilidade de baixar também a [versão Release Candidate](/visualstudio/releases/2019/release-notes/) do Visual Studio 2019.
+E, se quiser experimentar a nossa versão mais recente, baixe e instale o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019).
 
 > [!IMPORTANT]
 > Faça logon com uma conta que tenha permissões administrativas para instalar, atualizar ou modificar o Visual Studio. Para obter mais informações, consulte [Permissões de usuário e Visual Studio](../ide/user-permissions-and-visual-studio.md).
@@ -94,7 +94,7 @@ Como nas versões anteriores do Visual Studio, você pode usar o instalador do V
    > [!NOTE]
    > Em um computador com Windows 10, você poderá encontrar o instalador na letra **V** como o **Instalador do Visual Studio**, ou na letra **M** como o **Instalador do Microsoft Visual Studio**.
 
-1. Na página **Produto** no instalador, procure a edição do Visual Studio instalada.
+1. Na página **Produto** no instalador, procure a edição do Visual Studio instalada anteriormente.
 
 1. Se uma atualização estiver disponível, você verá um botão **Atualizar**. (Pode levar alguns segundos para o instalador determinar se uma atualização está disponível.)
 
@@ -150,7 +150,7 @@ Se você optar por ignorar uma notificação, o Visual Studio parará de mostrá
    > [!NOTE]
    > Em um computador com Windows 10, você poderá encontrar o instalador na letra **V** como o **Instalador do Visual Studio**, ou na letra **M** como o **Instalador do Microsoft Visual Studio**.
 
-1. Na página **Produto** no instalador, procure a edição do Visual Studio instalada.
+1. Na página **Produto** no instalador, procure a edição do Visual Studio instalada anteriormente.
 
 1. Se uma atualização estiver disponível, você verá um botão **Atualizar**. (Pode levar alguns segundos para o instalador determinar se uma atualização está disponível.)
 
@@ -164,13 +164,15 @@ Se você optar por ignorar uma notificação, o Visual Studio parará de mostrá
 
 Recomendamos que você atualize para a [versão mais recente](/visualstudio/releases/2019/release-notes/) do Visual Studio 2019 para que você sempre tenha os recursos, as correções e os aprimoramentos mais atualizados.
 
+E, se você ainda não tiver instalado o Visual Studio 2019, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
 > [!IMPORTANT]
 > Faça logon com uma conta que tenha permissões administrativas para instalar, atualizar ou modificar o Visual Studio. Para obter mais informações, consulte [Permissões de usuário e Visual Studio](../ide/user-permissions-and-visual-studio.md).
 >
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Atualizar o Visual Studio para Mac](/visualstudio/mac/update).
 
-Eis aqui como atualizar o Visual&nbsp;Studio&nbsp;2019&nbsp;Preview ou o Visual&nbsp;Studio&nbsp;2019&nbsp;RC.
+Veja como atualizar o Visual&nbsp;Studio&nbsp;2019.
 
 ## <a name="use-the-visual-studio-installer"></a>Usar o instalador do Visual Studio
 
@@ -182,7 +184,7 @@ Eis aqui como atualizar o Visual&nbsp;Studio&nbsp;2019&nbsp;Preview ou o Visual&
 
 1. No instalador, procure a edição do Visual Studio instalada por você.
 
-   Por exemplo, se você tiver instalado o Visual&nbsp;Studio Community&nbsp;2019&nbsp;RC e existir uma atualização para ele, uma mensagem de **Atualização disponível** aparecerá no instalador.
+   Por exemplo, se você tiver instalado o Visual&nbsp;Studio Community&nbsp;2019 e existir uma atualização para ele, uma mensagem de **Atualização disponível** aparecerá no instalador.
 
      ![Selecione a edição do Visual Studio 2019 que você deseja atualizar](media/vs2019-update-visual-studio-community-rc.png "Selecione a edição do Visual Studio 2019 que você deseja atualizar")
 
@@ -202,7 +204,7 @@ Você pode verificar se há uma atualização e, em seguida, instalá-la usando 
 
 1. No menu **Iniciar** do Windows, abra o **Visual Studio 2019**.
 
-    ![Abrir o Visual Studio 2019 RC](media/vs2019-visual-studio-rc.png "Abrir o Visual Studio 2019 no Windows")
+    ![Abrir o Visual Studio 2019](media/vs2019-visual-studio-rc.png "Abrir o Visual Studio 2019 no Windows")
 
 1. Em **Começar**, escolha qualquer opção para abrir o IDE.
 
@@ -262,7 +264,9 @@ Você pode verificar se há uma atualização e, em seguida, instalá-la usando 
 
 ## <a name="see-also"></a>Consulte também
 
+* [Instalar versões do Visual Studio lado a lado](install-visual-studio-versions-side-by-side.md)
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
+* [Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md)
 * [Atualizar o Visual Studio para Mac](/visualstudio/mac/update)
 * [Modificar o Visual Studio](modify-visual-studio.md)
 * [Desinstalar o Visual Studio](uninstall-visual-studio.md)

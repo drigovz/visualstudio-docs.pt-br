@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df3eb6577c72aa421f2a22d93b3109f63548cc96
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b0d49223d61e3c72f2726b89de99ba9c092ddefe
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793475"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195258"
 ---
 # <a name="find-references-in-your-code"></a>Localizar referências no seu código
 
@@ -26,7 +26,7 @@ Os resultados serão exibidos em uma janela de ferramentas chamada **\<referênc
 - Copie o item referenciado selecionado ao selecionar o botão **Copiar**.
 - Escolha os botões para acessar o local anterior ou seguinte na lista. Também é possível pressionar as teclas **F8** e **Shift + F8** para fazer isso.
 - Remova todos os filtros nos resultados retornados, escolhendo o botão **Limpar Todos os Filtros**.
-- Altere a forma em que os itens retornados são agrupados escolhendo uma configuração na caixa de listagem suspensa **Agrupar por:**.
+- Altere a forma em que os itens retornados são agrupados escolhendo uma configuração na caixa de listagem suspensa **Agrupar por:** .
 - Mantenha a janela de resultados da pesquisa atual ao escolher o botão **Manter Resultados**. Ao selecionar este botão, os resultados da pesquisa atual ficam nessa janela, e novos resultados da pesquisa são exibidos em uma nova janela de ferramentas.
 - Pesquisar cadeias de caracteres nos resultados da pesquisa inserindo texto na caixa de texto **Pesquisar Localizar Todas as Referências**.
 
@@ -48,7 +48,7 @@ Por padrão, as referências são agrupadas por projetos, depois por definição
 **Definição** e **Projeto** são dois agrupamentos padrão usados, mas é possível adicionar outros ao escolher o comando **Agrupamento** no menu do clique com o botão direito ou de contexto do item selecionado. Pode ser útil adicionar mais agrupamentos se sua solução tem muitos arquivos e caminhos.
 
 ## <a name="filter-by-reference-type-in-net"></a>Filtrar por tipo de referência no .NET
-No C# ou Visual Basic, a janela Localizar Referências tem uma coluna de tipo em que ela lista o tipo de referência encontrada. Esta coluna pode ser usada para filtrar por tipo de referência, clicando no ícone de filtro que aparece ao passar o mouse sobre o cabeçalho da coluna. As referências podem ser filtradas por leitura, gravação, referência e NameOnly.
+No C# ou Visual Basic, a janela Localizar Referências tem uma coluna de tipo em que ela lista o tipo de referência encontrada. Esta coluna pode ser usada para filtrar por tipo de referência, clicando no ícone de filtro que aparece ao passar o mouse sobre o cabeçalho da coluna. As referências podem ser filtradas por Leitura, Gravação, Referência, Nome, Namespace e Tipo.
 
 ![Encontrar a coluna Tipo da janela Referências ](../ide/media/vside_findallreferencesKind.png)
 

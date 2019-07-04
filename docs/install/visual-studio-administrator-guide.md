@@ -2,7 +2,7 @@
 title: Guia do administrador do Visual Studio
 titleSuffix: ''
 description: Saiba mais sobre como implantar o Visual Studio em um ambiente corporativo.
-ms.date: 05/22/2019
+ms.date: 06/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 61b3a2dfae667bac7c3a6a62682cdbd5b1a5feb4
-ms.sourcegitcommit: cd21b38eefdea2cdefb53e68e7a30b868e78dd6b
+ms.openlocfilehash: 9a586a0ab0d6b7a3ab34ef581e2ba6f5348232c2
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/22/2019
-ms.locfileid: "66037506"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328789"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do administrador do Visual Studio
 
@@ -40,7 +40,7 @@ Antes de implantar o Visual Studio em sua organização, há algumas decisões a
 
 * Decida sobre suas necessidades de manutenção.
 
-  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para obter mais informações, consulte a seção ***Opções de suporte para clientes Enterprise e Professional*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers).
+  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para saber mais, confira a seção ***Opções de suporte para clientes Enterprise e Professional*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers), bem como a página [Como atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md).
 
   Se planeja aplicar atualizações de manutenção juntamente com atualizações de recursos cumulativas, você pode escolher as partes mais recentes.
 
@@ -62,7 +62,7 @@ Antes de implantar o Visual Studio em sua organização, há algumas decisões a
 
 * Decida sobre suas necessidades de manutenção.
 
-  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para obter mais informações, consulte a seção ***Suporte para versões mais antigas do Visual Studio*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio).
+  Se sua empresa precisa ficar em um conjunto de recursos por mais tempo, mas ainda deseja atualizações de manutenção regulares, você deve planejar usar uma linha de base de manutenção. Para saber mais, confira a seção ***Suporte para versões mais antigas do Visual Studio*** da página [Ciclo de vida e manutenção de produtos Visual Studio](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio) bem como a página [Como atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção](update-servicing-baseline.md).
 
   Se planeja aplicar atualizações de manutenção juntamente com atualizações de recursos cumulativas, você pode escolher as partes mais recentes.
 

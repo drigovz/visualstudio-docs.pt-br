@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: ecd26aeae5e0a236bf776477ab3dca0e528e8200
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
+ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226088"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132171"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
@@ -46,7 +46,7 @@ ms.locfileid: "65226088"
 
   2. Escolha **Propriedades de Configuração** > **Geral**.
 
-  3. Defina **Tipo de Configuração** como **Biblioteca Estática (.lib)**.
+  3. Defina **Tipo de Configuração** como **Biblioteca Estática (.lib)** .
 
   Continue com o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).
 
@@ -64,21 +64,19 @@ ms.locfileid: "65226088"
 
       ::: moniker range="vs-2017"
 
-      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++**.
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++** .
 
       ::: moniker-end
 
-  2. No **Gerenciador de Soluções**, no menu de atalho do projeto de teste, selecione **Referências**. A janela **Propriedades** do projeto é aberta.
+  1. No **Gerenciador de Soluções**, clique com o botão direito do mouse no projeto de teste e escolha **Adicionar** > **Referência**.
 
-  3. Selecione **Propriedades Comuns** > **Estrutura e Referências** e, em seguida, escolha o botão **Adicionar Nova Referência**.
-
-  4. Selecione **Projetos**e o projeto a ser testado.
+  1. Selecione **Projetos**e o projeto a ser testado.
 
        Escolha o botão **Adicionar**.
 
-  5. Nas propriedades do projeto de teste, adicione o local do projeto em teste a Incluir Diretórios.
+  1. Nas propriedades do projeto de teste, adicione o local do projeto em teste a Incluir Diretórios.
 
-       Escolha **Propriedades de Configuração** > **Diretórios VC++** > **Incluir Diretórios**.
+       Escolha **Propriedades de Configuração** > **Diretórios VC++**  > **Incluir Diretórios**.
 
        Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
@@ -98,7 +96,7 @@ ms.locfileid: "65226088"
       
       ::: moniker range="vs-2017"
 
-      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++**.
+      1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++** .
 
       ::: moniker-end
 
@@ -112,7 +110,7 @@ ms.locfileid: "65226088"
 
        Escolha **Editar**e adicione o caminho do diretório dos arquivos **.obj** ou **.lib**. O caminho fica geralmente dentro da pasta de compilação do projeto em teste.
 
-  5. Escolha **Propriedades de Configuração** > **Diretórios VC++** > **Incluir Diretórios**.
+  5. Escolha **Propriedades de Configuração** > **Diretórios VC++**  > **Incluir Diretórios**.
 
        Escolha **Editar**e adicione o diretório de cabeçalho do projeto que está sendo testado.
 
@@ -124,7 +122,7 @@ ms.locfileid: "65226088"
 
    1. No **Gerenciador de Soluções**, no menu de atalho do projeto em teste, escolha **Propriedades**. A janela **Propriedades** do projeto é aberta.
 
-   2. Escolha **Propriedades de Configuração** > **Diretórios VC++**.
+   2. Escolha **Propriedades de Configuração** > **Diretórios VC++** .
 
    3. Edite os diretórios Incluir e Biblioteca:
 
@@ -135,7 +133,7 @@ ms.locfileid: "65226088"
 
 2. Adicione um arquivo de teste de unidade C++:
 
-   - No **Gerenciador de Soluções**, no menu de atalho do projeto, escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++**.
+   - No **Gerenciador de Soluções**, no menu de atalho do projeto, escolha **Adicionar** > **Novo Item** > **Teste de Unidade C++** .
 
    Acesse [Escrever os testes de unidade](#addTests).
 
