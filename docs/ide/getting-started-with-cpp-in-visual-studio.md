@@ -11,12 +11,12 @@ dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 375879e6a6aba93b702c65412328458a9a5568ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a132787a5af0aca9b42775931b343b89710ce91b
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62962693"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043399"
 ---
 # <a name="get-started-with-c-in-visual-studio"></a>Introdução ao C++ no Visual Studio
 
@@ -70,7 +70,7 @@ O Visual Studio usa os *projetos* para organizar o código em um aplicativo e as
 
    ![Use a caixa de diálogo Novo projeto para criar o projeto de aplicativo](../ide/media/get-started-cpp-new-project-dialog.png)
 
-   A caixa de diálogo pode ter opções diferentes, dependendo das cargas de trabalho do Visual Studio e dos componentes que você instalou. Se você não vir os modelos de projeto do Visual C++, execute o Instalador do Visual Studio novamente e instale a carga de trabalho **Desenvolvimento para a área de trabalho com C++**. Você pode fazer isso diretamente da caixa de diálogo **Novo Projeto**. Para iniciar o instalador, escolha o link **Abrir Instalador do Visual Studio** na caixa de diálogo.
+   A caixa de diálogo pode ter opções diferentes, dependendo das cargas de trabalho do Visual Studio e dos componentes que você instalou. Se você não vir os modelos de projeto do Visual C++, execute o Instalador do Visual Studio novamente e instale a carga de trabalho **Desenvolvimento para a área de trabalho com C++** . Você pode fazer isso diretamente da caixa de diálogo **Novo Projeto**. Para iniciar o instalador, escolha o link **Abrir Instalador do Visual Studio** na caixa de diálogo.
 
 1. Escolha o botão **OK** para criar sua solução e projeto de aplicativo.
 
@@ -98,7 +98,7 @@ Em seguida, adicione o código para exibir a palavra “Hello” na janela do co
 
    ![Erro na janela Lista de Erros](../ide/media/get-started-cpp-error-list.png)
 
-   Uma declaração está ausente em seu código para [std::cout](/cpp/standard-library/iostream), que está no arquivo de cabeçalho *\<iostream>*.
+   Uma declaração está ausente em seu código para [std::cout](/cpp/standard-library/iostream), que está no arquivo de cabeçalho *\<iostream>* .
 
 1. Para incluir o cabeçalho *iostream*, digite este código após `#include "stdafx.h"`:
 
@@ -177,4 +177,4 @@ Parabéns por concluir este guia de início rápido!
 
 - [Usando o IDE do Visual Studio para desenvolvimento de área de trabalho do C++](/cpp/ide/using-the-visual-studio-ide-for-cpp-desktop-development)
 - [Passo a passo: Criar um aplicativo simples com o C# ou o Visual Basic](../get-started/csharp/tutorial-wpf.md)
-- [Dicas de produtividade para o Visual Studio](../ide/productivity-tips-for-visual-studio.md)
+- [Recursos de produtividade no Visual Studio](../ide/productivity-features.md)

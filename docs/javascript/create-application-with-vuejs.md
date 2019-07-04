@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: a5c903b0aa82f3711bdbe1fd7925829fbdc06c9a
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: a83e19f808a3f3ab7e1bf9f4fb58f5ddd7a218b7
+ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226049"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "67033134"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
 
@@ -43,7 +43,7 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
     Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
 * Para criar o projeto ASP.NET Core, é necessário ter instaladas as cargas de trabalho de desenvolvimento do ASP.NET e para a Web e de desenvolvimento multiplataforma do .NET Core.
 
@@ -169,7 +169,15 @@ Essas etapas exigem a vue-cli 3.0 que, atualmente, está em versão beta.
 
 #### <a name="build-with-vue-cli-30"></a>Compilar com a vue-cli 3.0
 
-Um problema desconhecido com a vue-cli 3.0 impede a automatização do processo de build. Cada vez que tentar atualizar a pasta wwwroot, será preciso executar o comando `npm run build` na pasta do aplicativo cliente.
+Um problema desconhecido com a vue-cli 3.0 pode impedir a automatização do processo de build. Cada vez que tentar atualizar a pasta wwwroot, será preciso executar o comando `npm run build` na pasta do aplicativo cliente.
+
+Como alternativa, você pode compilar o projeto vue-cli 3.0 como um evento pré-build usando as propriedades de projeto ASP.NET. Clique com o botão direito no projeto, escolha **Propriedades** e inclua os seguintes comandos na guia **Compilar**, na caixa de texto **Linha de comando do evento de pré-build**.
+
+``` cmd
+cd ./client-app
+npm run build
+cd ../
+```
 
 ## <a name="limitations"></a>Limitações
 

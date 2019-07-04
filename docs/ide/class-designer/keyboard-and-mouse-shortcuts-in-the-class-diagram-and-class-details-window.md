@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a867986f26037473f5a45341f8d454b560c586ff
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37c56a14e5ac4358be53baa41094c23253608bbb
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975054"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043030"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window"></a>Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe
 
@@ -28,7 +28,7 @@ ms.locfileid: "62975054"
 
 As seguintes ações do mouse têm suporte em diagramas de classe:
 
-|Combinação do mouse|Contexto|Descrição|
+|Combinação do mouse|Contexto|DESCRIÇÃO|
 | - |-------------|-----------------|
 |Clicar duas vezes|Elementos de forma|Abre o editor de códigos.|
 |Clicar duas vezes|Conector de pirulito|Expande/recolhe o pirulito.|
@@ -56,7 +56,7 @@ Usando um mouse, é possível alterar a aparência da janela **Detalhes da Class
 
 As seguintes ações do teclado têm suporte em diagramas de classe:
 
-|Chave|Contexto|Descrição|
+|Chave|Contexto|DESCRIÇÃO|
 |---------|-------------|-----------------|
 |**Teclas de direção**|Dentro das formas de tipo|Navegação em estilo de árvore pelo conteúdo da forma (há suporte para o encapsulamento da forma). As teclas para a esquerda e para a direita expandem/recolhem o item atual se ele for expansível e navegam até o pai se ele não for (consulte a navegação do modo de exibição em árvore para ver o comportamento detalhado).|
 |**Teclas de direção**|Formas de nível superior|Mover formas no diagrama.|
@@ -103,3 +103,6 @@ Usar as chaves a seguir para navegar na janela **Detalhes da Classe**:
 ## <a name="see-also"></a>Consulte também
 
 - [Criar e configurar membros de tipo](creating-and-configuring-type-members.md)
+- [Como usar exclusivamente o teclado](../reference/how-to-use-the-keyboard-exclusively.md)
+- [Atalhos de teclado padrão no Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md)
+- [Atalhos de teclado no Blend](../../designers/keyboard-shortcuts-in-blend.md)

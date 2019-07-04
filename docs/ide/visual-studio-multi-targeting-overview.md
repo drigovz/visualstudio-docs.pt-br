@@ -11,20 +11,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cb7af190ac7fc5d4d5ce547029689f6c902a6e4f
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b652c603cd98f9c9ec9366a225971485def187b6
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747637"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160153"
 ---
 # <a name="framework-targeting-overview"></a>Visão geral do direcionamento de estrutura
 
-No Visual Studio, é possível especificar a versão do .NET que você deseja que o projeto tenha como destino. Para que os aplicativos .NET Framework sejam executados em outro computador, a versão da estrutura de destino do aplicativo precisa ser compatível com a versão da estrutura instalada no computador.
+No Visual Studio, é possível especificar a versão do .NET que você deseja que o projeto tenha como destino. O direcionamento de estrutura ajuda a garantir que o aplicativo use apenas a funcionalidade disponível na versão da estrutura especificada. Para que os aplicativos .NET Framework sejam executados em outro computador, a versão da estrutura de destino do aplicativo precisa ser compatível com a versão da estrutura instalada no computador.
+
+Uma solução do Visual Studio pode conter projetos destinados a diferentes versões do .NET.
 
 Para obter mais informações sobre estruturas de destino, confira [Estruturas de destino](/dotnet/standard/frameworks).
-
-Crie também uma solução que contém projetos direcionados a versões diferentes do .NET. O direcionamento de estrutura ajuda a garantir que o aplicativo use apenas a funcionalidade disponível na versão da estrutura especificada.
 
 > [!TIP]
 > Também é possível definir aplicativos como destino para plataformas diferentes. Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md).
@@ -79,13 +79,40 @@ Ao criar um projeto .NET Framework, selecione a versão do .NET Framework de des
 
 ::: moniker-end
 
-Em um projeto existente, é possível alterar a versão do .NET de destino na caixa de diálogo das propriedades do projeto. Para obter mais informações, confira [Como: Definir uma versão do .NET como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+## <a name="change-the-target-framework"></a>Alterar a estrutura de destino
+
+Em um projeto existente do Visual Basic, C# ou F#, você altera a versão do .NET de destino na caixa de diálogo das propriedades do projeto. Para saber mais sobre como alterar a versão de destino de projetos do C++, confira [Como modificar a estrutura de destino e o conjunto de ferramentas da plataforma](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset).
+
+1. No **Gerenciador de Soluções**, abra o menu de contexto do projeto que você deseja alterar e, em seguida, escolha **Propriedades**.
+
+1. Na coluna esquerda da janela **Propriedades**, escolha a guia **Aplicativo**.
+
+   ![Guia Aplicativo das propriedades do projeto](../ide/media/vs_slnexplorer_properties_applicationtab.png)
+
+   > [!NOTE]
+   > Depois de criar um aplicativo UWP, você não poderá alterar a versão de destino do Windows ou do .NET.
+
+1. Na lista **Estrutura de Destino**, escolha a versão desejada.
+
+1. Na caixa de diálogo de verificação exibida, escolha o botão **Sim**.
+
+   O projeto é descarregado. Quando ele é recarregado, ele é direcionado à versão do .NET recém-escolhida.
+
+> [!NOTE]
+> Se o código contiver referências a outra versão do .NET que não seja a que você o direcionou, poderão ser exibidas mensagens de erro quando você compilar ou executar o código. Para resolver esses erros, modifique as referências. Confira [Solução de problemas de erros de direcionamento do .NET](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md).
+
+> [!TIP]
+> Dependendo da estrutura de destino, ele pode ser representado das seguintes maneiras no arquivo de projeto:
+>
+> - Para um aplicativo .NET Core: `<TargetFramework>netcoreapp2.1</TargetFramework>`
+> - Para um aplicativo .NET Standard: `<TargetFramework>netstandard2.0</TargetFramework>`
+> - Para um aplicativo .NET Framework: `<TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>`
 
 ## <a name="resolve-system-and-user-assembly-references"></a>Resolver referências de assembly do sistema e do usuário
 
 Para definir uma versão do .NET como destino, é necessário primeiro instalar as referências de assembly apropriadas. Baixe pacotes de desenvolvedor para diferentes versões do .NET na página de [downloads do .NET](https://www.microsoft.com/net/download/windows).
 
-Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência. Para obter mais informações, confira [Como: Definir uma versão de estrutura como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Para projetos .NET Framework, a caixa de diálogo **Adicionar Referência** desabilita os assemblies do sistema que não pertencem à versão do .NET Framework de destino, de modo que eles não possam ser adicionados a um projeto acidentalmente. (Assemblies do sistema são arquivos *.dll* incluídos em uma versão do .NET Framework.) As referências que pertencem a uma versão de estrutura posterior à versão de destino não serão resolvidas e os controles que dependem dessa referência não poderão ser adicionados. Se você desejar habilitar essa referência, redefina o destino do .NET Framework do projeto para um que inclua a referência.
 
 Para obter mais informações sobre referências de assembly, consulte [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 

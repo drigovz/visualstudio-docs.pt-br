@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ef4f8974f448ad9e2e81d4f1ba98aa02ed9da354
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0a875ea2690a2932a10ff3a16364dd9d362a7642
+ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581926"
+ms.lasthandoff: 06/22/2019
+ms.locfileid: "67328837"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -86,7 +86,7 @@ Ao digitar [override](/dotnet/csharp/language-reference/keywords/override) e, em
 
 ### <a name="ai-enhanced-intellisense"></a>IntelliSense aprimorado com a inteligência artificial
 
-Você pode instalar uma [extensão do IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) experimental para Visual Studio, a qual fornece listas de conclusão do IntelliSense aprimoradas com a inteligência artificial. Essa extensão prevê a API mais provavelmente correta a ser usada, em vez de apenas apresentar uma lista de membros em ordem alfabética. Ele usa os seus padrões e contexto de código atuais para fornecer a lista dinâmica.
+O [Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio) fornece listas de conclusão do IntelliSense aprimoradas com inteligência artificial. O IntelliCode prevê a API mais provavelmente correta a ser usada, em vez de apenas apresentar uma lista de membros em ordem alfabética. Ele usa os seus padrões e contexto de código atuais para fornecer a lista dinâmica.
 
 ## <a name="automatic-code-generation"></a>Geração automática de código
 
@@ -124,7 +124,7 @@ Um sublinhado vermelho ondulado é exibido em cada identificador indefinido. Ao 
 
 - Clique no identificador indefinido. Uma lâmpada de erro de **Ações Rápidas** é exibida abaixo do identificador. Clique na lâmpada de erro.
 
-- Clique no identificador indefinido e, em seguida, pressione **Ctrl**+**.** (**Ctrl** + ponto).
+- Clique no identificador indefinido e, em seguida, pressione **Ctrl**+ **.** (**Ctrl** + ponto).
 
 - Clique com o botão direito do mouse no identificador indefinido e, em seguida, clique em **Ações Rápidas e Refatorações**.
 
@@ -158,7 +158,7 @@ Se você pressionar a tecla **Tab**, o IntelliSense concluirá a instrução par
 Se você pressionar a **Guia**, o IntelliSense criará um stub de um método com a assinatura correta e colocará o cursor no corpo do manipulador de eventos.
 
 > [!NOTE]
-> Use o comando **Navegação Regressiva** no menu **Exibir** (**Ctrl**+**-**) para retornar à declaração de vínculo de evento.
+> Use o comando **Navegação Regressiva** no menu **Exibir** (**Ctrl**+ **-** ) para retornar à declaração de vínculo de evento.
 
 ## <a name="see-also"></a>Consulte também
 

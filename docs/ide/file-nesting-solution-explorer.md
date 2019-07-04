@@ -8,12 +8,12 @@ helpviewer_keywords:
 author: angelosp
 ms.author: angelpe
 manager: jillfra
-ms.openlocfilehash: b40d943e2e05f380b5c8111db39c9cf13c8b3bf8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 0ec16c23a3ed16f555bb1a3af952b422f4aceb35
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432265"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309793"
 ---
 # <a name="file-nesting-in-solution-explorer"></a>Aninhamento de arquivos no Gerenciador de Soluções
 
@@ -86,19 +86,42 @@ Esse provedor funciona da mesma maneira que o provedor **extensionToExtension**,
 
 ### <a name="the-addedextension-provider"></a>O provedor addedExtension
 
-Esse provedor aninha arquivos com uma extensão adicional no arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida ao final do nome de arquivo completo. Considere o exemplo a seguir:
+Esse provedor aninha arquivos com uma extensão adicional no arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida ao final do nome de arquivo completo.
+
+Considere o exemplo a seguir:
 
 ![Regras de exemplo de addedExtension](media/filenesting_addedextension.png) ![Efeito de exemplo de addedExtension](media/filenesting_addedextension_effect.png)
 
 * *file.html.css* é aninhado em *file.html* devido à regra de **addedExtension**
 
+> [!NOTE]
+> Você não especifica nenhuma extensão de arquivo para a regra `addedExtension`; ela automaticamente se aplica a todas as extensões de arquivo. Ou seja, qualquer arquivo com o mesmo nome e extensão que outro arquivo mais uma extensão adicional no final é aninhado no outro arquivo. Você não pode limitar o efeito desse provedor apenas as extensões de arquivo específicas.
+
 ### <a name="the-pathsegment-provider"></a>O provedor pathSegment
 
-Esse provedor aninha arquivos com uma extensão adicional em um arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida no meio do nome de arquivo completo. Considere o exemplo a seguir:
+Esse provedor aninha arquivos com uma extensão adicional em um arquivo sem uma extensão adicional. A extensão adicional só pode ser exibida no meio do nome de arquivo completo.
+
+Considere o exemplo a seguir:
 
 ![Regras de exemplo de pathSegment](media/filenesting_pathsegment.png) ![Efeito de exemplo de pathSegment](media/filenesting_pathsegment_effect.png)
 
 * *jquery.min.js* é aninhado em *jquery.js* devido à regra de **pathSegment**
+
+> [!NOTE]
+> - Se você não especificar nenhuma extensão de arquivo para a regra `pathSegment`; ela se aplica a todas as extensões de arquivo. Ou seja, qualquer arquivo com o mesmo nome e extensão que outro arquivo mais uma extensão adicional no meio é aninhado no outro arquivo.
+> - Você pode limitar o efeito da regra `pathSegment` às extensões de arquivo específicas, especificando-as da seguinte maneira:
+>    ```
+>    "pathSegment": {
+>       "add": {
+>         ".*": [
+>           ".js",
+>           ".css",
+>           ".html",
+>           ".htm"
+>         ]
+>       }
+>    }
+>    ```
 
 ### <a name="the-allextensions-provider"></a>O provedor allExtensions
 

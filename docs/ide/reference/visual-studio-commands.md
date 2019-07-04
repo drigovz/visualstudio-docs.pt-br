@@ -12,20 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5730238ec899aa4e34c8ed548f49625b33d432d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 294ca45123faf1625b6f09a638ddc089a31d85cc
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789364"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043588"
 ---
 # <a name="visual-studio-commands"></a>Comandos do Visual Studio
 
-Os comandos do Visual Studio permitem invocar um comando na janela **Comando**, janela **Imediato** ou na caixa **Localizar/Comando**. Em cada caso, o sinal maior que (`>`) é usado para indicar que um comando deve ser seguido em vez de uma operação de pesquisa ou de depuração.
+Você pode inserir comandos do Visual Studio na janela **Comando**, na janela **Imediato** ou na caixa **Localizar/Comando**. Em cada caso, o sinal maior que (`>`) indica que um comando é seguido, em vez de uma operação de pesquisa ou depuração.
 
-É possível encontrar uma lista completa de comandos e sua sintaxe na caixa de diálogo **Teclado, Opções de Ambiente**.
+É possível encontrar uma lista completa de comandos e sua sintaxe na página **Teclado** em **Ferramentas** > **Opções** > **Ambiente**.
 
-O caractere de escape para comandos do Visual Studio é um caractere de circunflexo (^), que significa que o caractere imediatamente depois dele é interpretado literalmente, em vez de interpretado como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo,
+Em versões localizadas do IDE, os nomes de comando podem ser inseridos na linguagem nativa do IDE ou em inglês. Por exemplo, é possível digitar `File.NewFile` ou `Fichier.NouveauFichier` no IDE francês para executar o mesmo comando.
+
+Muitos comandos têm aliases. Para obter uma lista de aliases de comando, confira [Aliases de comando](../../ide/reference/visual-studio-command-aliases.md). Para obter atalhos de teclado de comando, confira [Atalhos de teclado padrão no Visual Studio](../default-keyboard-shortcuts-in-visual-studio.md).
+
+## <a name="escape-character"></a>Caractere de escape
+
+O caractere de escape para comandos do Visual Studio é um acento circunflexo (^). O caractere de escape significa que o caractere imediatamente a seguir é interpretado literalmente, e não como um caractere de controle. Isso pode ser usado para inserir aspas retas ("), espaços, barras iniciais, acentos circunflexos ou quaisquer outros caracteres literais em um parâmetro ou valor de opção, com a exceção de nomes de opção. Por exemplo:
 
 ```
 >Edit.Find ^^t /regex
@@ -33,13 +39,11 @@ O caractere de escape para comandos do Visual Studio é um caractere de circunfl
 
 Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado.
 
-Em versões localizadas do IDE, os nomes de comando podem ser inseridos na linguagem nativa do IDE ou em inglês. Por exemplo, é possível digitar `File.NewFile` ou `Fichier.NouveauFichier` no IDE francês para executar o mesmo comando.
+## <a name="commands-with-arguments"></a>Comandos com argumentos
 
-Muitos comandos têm aliases. Para obter uma lista de aliases de comando, consulte [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md).
+Os seguintes comandos usam argumentos ou opções:
 
-Os comandos a seguir têm argumentos e/ou opções.
-
-| Nome do comando | Descrição |
+| Nome do comando | DESCRIÇÃO |
 | - | - |
 | [Add Existing Item](../../ide/reference/add-existing-item-command.md) | Adiciona um arquivo existente à solução atual e abre-o. |
 | [Add Existing Project](../../ide/reference/add-existing-project-command.md) | Adiciona um projeto existente à solução atual. |

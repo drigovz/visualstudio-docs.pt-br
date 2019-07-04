@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7edb17ec3cefd87263ea367b3b012a391d77d6d
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 79bebcdaaf2d970f019da12141275358120ac70e
+ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747330"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67043406"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar o código usando o comando Inspecionar Definição (Alt + F12)
 
@@ -86,4 +86,4 @@ Você pode usar estes atalhos de teclado com a janela **Inspecionar Definição*
 
 - [Navegar pelo código](../ide/navigating-code.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
-- [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)
+- [Recursos de produtividade no Visual Studio](../ide/productivity-features.md)

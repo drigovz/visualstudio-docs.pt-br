@@ -6,12 +6,12 @@ ms.author: amburns
 ms.date: 04/13/2019
 ms.technology: vs-ide-install
 ms.assetid: 31AF914A-C66B-4CD3-9429-39695E0E94AE
-ms.openlocfilehash: 2b89ea7155b27f9c5b54dae38d4e823895fad705
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 554633b2fc5d47d9cc4824ff9d8bf2febfbcd1f8
+ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783299"
+ms.lasthandoff: 06/21/2019
+ms.locfileid: "67309625"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>Solução de problemas: Atualizador tem erros de recuperação de informações
 
@@ -23,3 +23,4 @@ Em raras ocasiões, você poderá ver a mensagem de erro "Erro ao recuperar info
 - Se você continuar a ver essa mensagem de erro, também é possível tentar atualizar usando o instalador se o **.dmg** ainda estiver no seu computador ou baixe-o em [visualstudio.com](https://visualstudio.microsoft.com/vs/mac/)
     - O instalador atualizará todos os componentes instalados em seu computador.
     - Ao executar novamente o instalador, você também poderá instalar os componentes ausentes que não instalou anteriormente.
+- Você também pode tentar limpar arquivos baixados em cache, excluindo o arquivo localizado em `~/Library/Caches/VisualStudio/7.0/TempDownload/index.xml`.

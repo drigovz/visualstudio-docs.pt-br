@@ -6,7 +6,7 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 06/06/2019
+ms.date: 06/26/2019
 ms.topic: reference
 helpviewer_keywords: ''
 ms.custom: seodec18
@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d801dab9acb2148503392de12dfcf028de692eb8
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: c4bfb7e44016d80b305ad39ed50170c1c081f082
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746286"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67399031"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -31,6 +31,11 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.1.4 | Versão | 25 de junho de 2019 | 16.1.29020.237 |
+| 16.2.0 | Versão Prévia 3 | 25 de junho de 2019 | 16.2.29021.104 |
+| 16.1.3 | Versão | 11 de junho de 2019 | 16.1.29009.5 |
+| 16.2.0 | Preview 2 | 11 de junho de 2019 | 16.2.29006.145 |
+| 16.0.5 | Versão | 11 de junho de 2019 | 16.0.28803.514 |
 | 16.1.2 | Versão | 5 de junho de 2019 | 16.1.29001.49 |
 | 16.1.1 | Versão | 24 de maio de 2019 | 16.1.28922.388 |
 | 16.1.0 | Versão | 21 de maio de 2019 | 16.1.28917.181 |
@@ -77,6 +82,8 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.13 | Versão | 11 de junho de 2019 | 15.9.28307.718 |
+| 15.0.24 | Versão | 11 de junho de 2019 | 15.0.26228.88 |
 | 15.9.12 | Versão | 14 de maio de 2019 | 15.9.28307.665 |
 | 15.0.23 | Versão | 14 de maio de 2019 | 15.0.26228.85 |
 | 15.9.11 | Versão | 2 de abril de 2019 | 15.9.28307.586 |

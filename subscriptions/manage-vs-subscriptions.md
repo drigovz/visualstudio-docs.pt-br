@@ -1,18 +1,18 @@
 ---
 title: Gerenciar assinaturas do Visual Studio
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 06/24/2019
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 2739578bb170d32b61246bb01236e621c8b7df8b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d03dbd24b6fd8f00248e0c0d653359f9995da0d
+ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62833918"
+ms.lasthandoff: 06/25/2019
+ms.locfileid: "67365433"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -125,6 +125,12 @@ Você pode alterar facilmente as informações de contato e as preferências em 
    > [!div class="mx-imgBorder"]
    > ![Editar informações de perfil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
+### <a name="setting-communications-preferences"></a>Definir preferências de comunicação
+Se você quiser receber atualizações periódicas sobre sua assinatura e seus benefícios, incluindo o boletim mensal de Assinaturas do Visual Studio, [atualize suas preferências](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), marcando a caixa de Assinaturas do Visual Studio no seu perfil do Visual Studio. Você pode alterar essas preferências e cancelar a assinatura a qualquer momento. 
+
+   > [!div class="mx-imgBorder"]
+   > ![Definir preferências](_img/manage-vs-subscriptions/change-prefs.png)
+   
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular minha assinatura a assinaturas existentes do Azure DevOps Services ou do Azure
 
 Se entrar em sua assinatura usando uma MSA (conta Microsoft) pessoal e tiver uma assinatura que inclui o Azure DevOps Services ou o Microsoft Azure usando uma conta corporativa ou de estudante gerenciada pelo Azure, você poderá vincular as duas assinaturas. Ela é chamada de "conta alternativa" e permite usar sua MSA para entrar na assinatura e continuar tendo acesso aos recursos existentes do Azure, do Azure DevOps Services ou do IDE associados à sua conta corporativa ou de estudante.

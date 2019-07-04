@@ -13,20 +13,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13463f38b963ff29ed6fc57fba3eac7865da70ba
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 32335f010db2d030d64ae1319f3cc893526a30e0
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820935"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160049"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
-Para obter mais informações sobre acessibilidade de teclado, confira [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como: Usar exclusivamente o teclado](../ide/reference/how-to-use-the-keyboard-exclusively.md).
+Você pode acessar uma variedade de [comandos](reference/visual-studio-commands.md) e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Essa página lista os atalhos de comando padrão para o perfil **Geral**, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível [identificar o atalho](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md) de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
 
-Você pode acessar uma variedade de comandos e janelas no Visual Studio escolhendo o atalho de teclado apropriado. Esta página lista os atalhos padrão para o perfil **Geral**, que você pode ter escolhido quando instalou o Visual Studio. Não importa qual o perfil escolhido, é possível identificar o atalho de um comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e escolhendo **Teclado**. Também é possível personalizar seus atalhos atribuindo um atalho diferente a qualquer comando.
+Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, confira:
 
-Para obter uma lista dos atalhos de teclado comuns e outras informações sobre produtividade, confira [Atalhos de teclado padrão para comandos usados com frequência no Visual Studio](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md), [Dicas de teclado](../ide/tips-and-tricks-for-visual-studio.md) e [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md).
+- [Atalhos de teclado para comandos usados com frequência](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)
+- [Dicas de teclado](../ide/productivity-shortcuts.md)
+- [Dicas de produtividade](../ide/productivity-features.md).
+
+Para saber mais sobre acessibilidade no Visual Studio, confira [Dicas e truques de acessibilidade](../ide/reference/accessibility-tips-and-tricks.md) e [Como Usar exclusivamente o teclado](../ide/reference/how-to-use-the-keyboard-exclusively.md).
 
 |||||
 |-|-|-|-|
@@ -785,6 +789,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
+| Edit.ContractSelection | **Shift+Alt+-** (apenas não C++) |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
@@ -797,6 +802,8 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
+| Edit.ExpandSelection | **Shift+Alt+=** (apenas não C++) |
+| Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |
 | Edit.GotoAll | **Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+,** |
@@ -1150,5 +1157,4 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 
 ## <a name="see-also"></a>Consulte também
 
-- [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons)
-- [Usando o IntelliSense](../ide/using-intellisense.md)
+- [Comandos do Visual Studio](reference/visual-studio-commands.md)

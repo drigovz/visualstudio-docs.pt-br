@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 885dee2ca04060042e804ff964636d16e6a725ee
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 32bc3b0a06b7bfb8c012239b256460ad832ac3a1
+ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745810"
+ms.lasthandoff: 06/17/2019
+ms.locfileid: "67160165"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de Referências
 
@@ -92,7 +92,7 @@ Alguns componentes na lista podem não ser exibidos, dependendo da versão de es
 
 - Um componente que usa uma versão de estrutura recente é incompatível com um projeto direcionado a uma versão anterior.
 
-   Para obter informações sobre como alterar a versão da estrutura de destino de um projeto, confira [Como: Definir uma versão de estrutura como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+   Para saber mais sobre como alterar a versão da estrutura de destino de um projeto, confira [Visão geral de destino da estrutura](visual-studio-multi-targeting-overview.md).
 
 - Um componente que usa o .NET Framework 4 é incompatível com um projeto direcionado ao .NET Framework 4.5.
 

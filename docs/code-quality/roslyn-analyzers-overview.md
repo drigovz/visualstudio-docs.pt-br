@@ -11,18 +11,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: befbb09d347043ae304702618506d193344e23ba
+ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825451"
+ms.lasthandoff: 06/18/2019
+ms.locfileid: "67195242"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Visão geral dos analisadores do .NET Compiler Platform
 
-Os analisadores da .NET Compiler Platform ("Roslyn") analisam seu código quanto a estilo, qualidade e facilidade de manutenção, design e outras questões. O Visual Studio inclui um conjunto interno de analisadores que analisam o código C# e Visual Basic durante a digitação. Configure as preferências para esses analisadores internos na página [Opções do editor de texto](../ide/code-styles-and-quick-actions.md) ou em um [arquivo .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Instale outros analisadores como uma extensão do Visual Studio ou como um pacote NuGet.
+Os analisadores da .NET Compiler Platform ("Roslyn") analisam seu código quanto a estilo, qualidade e facilidade de manutenção, design e outras questões. O Visual Studio inclui um conjunto interno de analisadores que analisam o código C# e Visual Basic durante a digitação. Configure as preferências para esses analisadores internos na página [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Instale outros analisadores como uma extensão do Visual Studio ou como um pacote NuGet.
 
-Se um analisador encontrar violações de regra, elas serão relatadas no editor de códigos como uma *linha ondulada* embaixo do código transgressor e na janela **Lista de Erros**.
+Se um analisador encontrar violações de regra, elas serão relatadas no editor de códigos (como uma *linha ondulada* embaixo do código transgressor) e na janela **Lista de Erros**.
 
 Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de código* associadas que podem ser aplicadas para corrigir o problema. Cada diagnóstico do analisador inserido no Visual Studio tem uma correção de código associada. As correções de código são mostradas no menu do ícone de lâmpada, juntamente com outros tipos de [Ações rápidas](../ide/quick-actions.md). Para saber mais sobre essas correções de código, confira [Ações rápidas comuns](../ide/common-quick-actions.md).
 
@@ -32,7 +32,7 @@ Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de 
 
 Os Analisadores do .NET Compiler Platform ("Roslyn") substituirão eventualmente a [análise de código estático](../code-quality/code-analysis-for-managed-code-overview.md) por código gerenciado. Muitas das regras de análise de código estático já foram reescritas como diagnóstico de analisador do Roslyn.
 
-Como violações de regra de análise de código estático, as violações de analisador do Roslyn são exibidas na **Lista de Erros**. Além disso, as violações de analisador do Roslyn também são mostradas no editor de códigos, como *linhas onduladas* embaixo do código incorreto. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A captura de tela a seguir mostra três violações&mdash;uma vermelha, uma verde e uma cinza:
+Como violações de regra de análise de código estático, as violações de analisador do Roslyn são exibidas na **Lista de Erros**. Além disso, as violações de analisador do Roslyn também são mostradas no editor de códigos, como *linhas onduladas* abaixo do código transgressor. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A captura de tela a seguir mostra três violações&mdash;uma vermelha, uma verde e uma cinza:
 
 ![Linhas onduladas no editor de códigos](media/diagnostics-severity-colors.png)
 
@@ -79,6 +79,14 @@ A captura de tela a seguir mostra a saída de build da linha de comando da cria�
 ### <a name="rule-severity"></a>Gravidade da regra
 
 Não é possível definir a gravidade das regras de analisadores que foram instalados como uma extensão do Visual Studio. Para configurar a [gravidade da regra](../code-quality/use-roslyn-analyzers.md#rule-severity), instale os analisadores como um pacote NuGet.
+
+### <a name="categories"></a>Categorias
+
+Veja a seguir os diferentes tipos de analisador que ajudam a analisar seu código. 
+
+- Analisadores recomendados pela Microsoft: [Analisadores FxCop](../code-quality/fxcop-analyzers.yml)
+- Analisadores de IDE do Visual Studio: [EditorConfig](../ide/code-styles-and-code-cleanup.md)
+- Analisadores de terceiros: [StyleCop](https://www.nuget.org/packages/StyleCop.Analyzers/), [Roslynator](https://www.nuget.org/packages/Roslynator/), [XUnit Analyzers](https://www.nuget.org/packages/xunit.analyzers/), [Sonar Analyzer](https://www.nuget.org/packages/SonarAnalyzer.CSharp/)
 
 ## <a name="next-steps"></a>Próximas etapas
 
