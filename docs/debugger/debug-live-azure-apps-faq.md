@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 315b24d384a1e3576af6590923c0e546785918ae
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 813f06f55b6ae8f03a8d5a8e452ca05c4fe2054c
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67255985"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586849"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Perguntas frequentes sobre depuração de instantâneo no Visual Studio
 
@@ -70,92 +70,91 @@ Para o AKS:
 
 Para o dimensionamento de máquinas virtuais de máquina virtual/conjuntos de remover os pools de NAT de entrada e de KeyVaults de extensão, certificados, do depurador remoto da seguinte maneira:
 
-1. Remover extensão de depurador remoto  
+1. Remover extensão de depurador remoto
 
-   Há várias maneiras para desabilitar o depurador remoto para máquinas virtuais e conjuntos de dimensionamento de máquina virtual:  
+   Há várias maneiras para desabilitar o depurador remoto para máquinas virtuais e conjuntos de dimensionamento de máquina virtual:
 
-      - Desabilitar o depurador remoto por meio do Gerenciador de nuvem  
+      - Desabilitar o depurador remoto por meio do Gerenciador de nuvem
 
-         - Cloud Explorer > seu recurso de máquina virtual > Desabilitar depuração (desabilitar a depuração não existe para definir no Cloud Explorer de dimensionamento de máquinas virtuais).  
+         - Cloud Explorer > seu recurso de máquina virtual > Desabilitar depuração (desabilitar a depuração não existe para definir no Cloud Explorer de dimensionamento de máquinas virtuais).
 
+      - Desabilitar o depurador remoto com Scripts/Cmdlets do PowerShell
 
-      - Desabilitar o depurador remoto com Scripts/Cmdlets do PowerShell  
+         Para a máquina virtual:
 
-         Para a máquina virtual:  
-
+         ```powershell
+         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
          ```
-         Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-         ```
 
-         Para conjuntos de dimensionamento de máquina virtual:  
-         ```
-         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName  
-         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name  
-         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension  
+         Para conjuntos de dimensionamento de máquina virtual:
+
+         ```powershell
+         $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+         $extension = $vmss.VirtualMachineProfile.ExtensionProfile.Extensions | Where {$_.Name.StartsWith('VsDebuggerService')} | Select -ExpandProperty Name
+         Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name $extension
          ```
 
       - Desabilitar o depurador remoto por meio do portal do Azure
-         - Portal do Azure > seu dimensionamento de máquinas virtuais/máquina virtual define folha de recursos > extensões  
-         - Desinstalar a extensão Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger  
-
+         - Portal do Azure > seu dimensionamento de máquinas virtuais/máquina virtual define folha de recursos > extensões
+         - Desinstalar a extensão Microsoft.VisualStudio.Azure.RemoteDebug.VSRemoteDebugger
 
          > [!NOTE]
          > Conjuntos de dimensionamento de máquina virtual - o portal não permite remover as portas DebuggerListener. Você precisará usar o Azure PowerShell. Veja mais detalhes a seguir.
-  
+
 2. Remover certificados e o Cofre de chaves do Azure
 
-   Ao instalar a extensão de depurador remoto para máquinas virtuais ou conjuntos de dimensionamento de máquina virtual, os certificados de cliente e servidor são criados para autenticar o cliente do VS com a máquina Virtual do Azure/recursos de conjuntos de dimensionamento de máquina virtual.  
+   Ao instalar a extensão de depurador remoto para máquinas virtuais ou conjuntos de dimensionamento de máquina virtual, os certificados de cliente e servidor são criados para autenticar o cliente do VS com a máquina Virtual do Azure/recursos de conjuntos de dimensionamento de máquina virtual.
 
-   - O certificado do cliente  
+   - O certificado do cliente
 
-      Esse certificado é um certificado autoassinado, localizado em Cert: / CurrentUser/My /  
+      Esse certificado é um certificado autoassinado, localizado em Cert: / CurrentUser/My /
 
       ```
-      Thumbprint                                Subject  
-      ----------                                -------  
+      Thumbprint                                Subject
+      ----------                                -------
 
-      1234123412341234123412341234123412341234  CN=ResourceName  
+      1234123412341234123412341234123412341234  CN=ResourceName
       ```
 
       Uma maneira de remover este certificado de sua máquina é por meio do PowerShell
 
-      ```
-      $ResourceName = 'ResourceName' # from above  
-      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item  
+      ```powershell
+      $ResourceName = 'ResourceName' # from above
+      Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.Subject -match $ResourceName} | Remove-Item
       ```
 
    - O certificado do servidor
-      - A impressão digital certificado de servidor correspondente é implantada como um segredo do Cofre de chaves do Azure. VS tentará localizar ou criar um cofre de chaves com o prefixo MSVSAZ * na região correspondente à máquina virtual ou o recurso de conjuntos de dimensionamento de máquina virtual. Conjuntos de dimensionamento de máquina virtual ou máquina virtual de todos os recursos implantados para essa região, portanto, compartilharão o mesmo Cofre de chaves.  
-      - Para excluir o segredo de impressão digital do certificado de servidor, acesse o portal do Azure e encontre o KeyVault MSVSAZ * na mesma região que está hospedando o seu recurso. Excluir o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`  
-      - Você também precisará excluir o segredo do servidor do seu recurso por meio do PowerShell.  
+      - A impressão digital certificado de servidor correspondente é implantada como um segredo do Cofre de chaves do Azure. VS tentará localizar ou criar um cofre de chaves com o prefixo MSVSAZ * na região correspondente à máquina virtual ou o recurso de conjuntos de dimensionamento de máquina virtual. Conjuntos de dimensionamento de máquina virtual ou máquina virtual de todos os recursos implantados para essa região, portanto, compartilharão o mesmo Cofre de chaves.
+      - Para excluir o segredo de impressão digital do certificado de servidor, acesse o portal do Azure e encontre o KeyVault MSVSAZ * na mesma região que está hospedando o seu recurso. Excluir o segredo que deve ser rotulado `remotedebugcert<<ResourceName>>`
+      - Você também precisará excluir o segredo do servidor do seu recurso por meio do PowerShell.
 
-      Para máquinas virtuais:  
+      Para máquinas virtuais:
 
+      ```powershell
+      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVM -ResourceGroupName $rgName -VM $vm
       ```
-      $vm.OSProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVM -ResourceGroupName $rgName -VM $vm  
-      ```
-                        
-      Para conjuntos de dimensionamento de máquina virtual:  
 
-      ```
-      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()  
-      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss  
-      ```
-                        
-3. Remova todos os pools de NAT de entrada DebuggerListener (escala de máquina virtual definido apenas)  
+      Para conjuntos de dimensionamento de máquina virtual:
 
-   O depurador remoto apresenta DebuggerListener pools de NAT de entrada que são aplicados ao balanceador de carga do seu conjunto de dimensionamento.  
+      ```powershell
+      $vmss.VirtualMachineProfile.OsProfile.Secrets[0].VaultCertificates.Clear()
+      Update-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName -VirtualMachineScaleSet $vmss
+      ```
 
-   ```
-   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools  
-   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-                
-   if ($LoadBalancerName)  
+3. Remova todos os pools de NAT de entrada DebuggerListener (escala de máquina virtual definido apenas)
+
+   O depurador remoto apresenta DebuggerListener pools de NAT de entrada que são aplicados ao balanceador de carga do seu conjunto de dimensionamento.
+
+   ```powershell
+   $inboundNatPools = $vmss.VirtualMachineProfile.NetworkProfile.NetworkInterfaceConfigurations.IpConfigurations.LoadBalancerInboundNatPools
+   $inboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+
+   if ($LoadBalancerName)
    {
-      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName  
-      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null  
-      Set-AzLoadBalancer -LoadBalancer $lb  
+      $lb = Get-AzLoadBalancer -ResourceGroupName $ResourceGroup -name $LoadBalancerName
+      $lb.FrontendIpConfigurations[0].InboundNatPools.RemoveAll({ param($pool) $pool.Id.Contains('inboundNatPools/DebuggerListenerNatPool-') }) | Out-Null
+      Set-AzLoadBalancer -LoadBalancer $lb
    }
    ```
 
@@ -164,12 +163,12 @@ Para o dimensionamento de máquinas virtuais de máquina virtual/conjuntos de re
 Para o serviço de aplicativo:
 1. Desabilite o depurador de instantâneo por meio do portal do Azure para seu serviço de aplicativo.
 2. Portal do Azure > sua folha de recursos do serviço de aplicativo > *as configurações do aplicativo*
-3. Exclua as seguintes configurações de aplicativo no portal do Azure e salvar suas alterações. 
-    - INSTRUMENTATIONENGINE_EXTENSION_VERSION
-    - SNAPSHOTDEBUGGER_EXTENSION_VERSION
+3. Exclua as seguintes configurações de aplicativo no portal do Azure e salvar suas alterações.
+   - INSTRUMENTATIONENGINE_EXTENSION_VERSION
+   - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-    > [!WARNING]
-    > Qualquer alteração nas configurações do aplicativo iniciará uma reinicialização do aplicativo. Para obter mais informações sobre as configurações do aplicativo, consulte [configurar um aplicativo de serviço de aplicativo no portal do Azure](/azure/app-service/web-sites-configure).
+   > [!WARNING]
+   > Qualquer alteração nas configurações do aplicativo iniciará uma reinicialização do aplicativo. Para obter mais informações sobre as configurações do aplicativo, consulte [configurar um aplicativo de serviço de aplicativo no portal do Azure](/azure/app-service/web-sites-configure).
 
 Para o AKS:
 1. Atualizar o Dockerfile para remover as seções correspondentes para o [Visual Studio Snapshot Debugger em imagens do Docker](https://github.com/Microsoft/vssnapshotdebugger-docker).
@@ -184,16 +183,18 @@ Há várias maneiras para desabilitar o depurador de instantâneo:
 
 - Cmdlets do PowerShell da [Az PowerShell](https://docs.microsoft.com/powershell/azure/overview)
 
-    Máquina virtual:
-    ```
-        Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings 
-    ```
-    
-    Conjuntos de dimensionamento de máquina virtual:
-    ```
-        $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
-        Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
-    ```
+   Máquina virtual:
+
+   ```powershell
+      Remove-AzVMExtension -ResourceGroupName $rgName -VMName $vmName -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
+
+   Conjuntos de dimensionamento de máquina virtual:
+
+   ```powershell
+      $vmss = Get-AzVmss -ResourceGroupName $rgName -VMScaleSetName $vmssName
+      Remove-AzVmssExtension -VirtualMachineScaleSet $vmss -Name Microsoft.Insights.VMDiagnosticsSettings
+   ```
 
 ## <a name="see-also"></a>Consulte também
 
