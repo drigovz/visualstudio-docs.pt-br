@@ -3,21 +3,23 @@ title: Controle de Versão do Team Foundation (TFVC)
 description: Conexão do Visual Studio para Mac ao Team Foundation Server/Azure DevOps com o Controle de Versão do Team Foundation (TFVC).
 author: conceptdev
 ms.author: crdun
-ms.date: 04/28/2019
+ms.date: 06/25/2019
 ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: c21658b6381405c05e5b0fedbb72e33f8ed72a83
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 04a251621af1086c15bafa15b7a9fe01f8dab5a8
+ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745548"
+ms.lasthandoff: 06/26/2019
+ms.locfileid: "67398977"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
 > [!NOTE]
 > Para obter a melhor experiência de controle de versão no macOS, recomendamos o uso do Git em vez do Controle de Versão do Team Foundation (TFVC). O Git é suportado no Visual Studio para Mac e é a opção padrão para repositórios hospedados no Team Foundation Server (TFS)/Azure DevOps. Para saber mais sobre como usar o Git com o TFS/Azure DevOps, confira o artigo [Configurar um Repositório Git](/visualstudio/mac/set-up-git-repository).
+> 
+> Se a versão prévia da extensão do TFVC para o Visual Studio para Mac foi usada anteriormente, ela não é mais compatível no Visual Studio 2019 para Mac.
 
 O Azure Repos fornece dois modelos de controle de versão: [Git](/azure/devops/repos/git/?view=azure-devops), um sistema de controle de versão distribuído, e [Controle de Versão do Team Foundation](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC), um sistema de controle de versão centralizado.
 
@@ -25,7 +27,6 @@ O Visual Studio para Mac fornece suporte completo para repositórios Git, mas re
 
 * [Usar o Visual Studio Code e a extensão Azure Repos para uma interface gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Conectar-se ao seu repositório usando o cliente de linha de comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
-* [Conectar-se ao TFVC usando a extensão Controle de Versão do Team Foundation (sem suporte) para o Visual Studio para Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
 O restante deste artigo explica as opções listadas acima.
 
@@ -105,169 +106,6 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 Para aprender mais sobre os comandos mencionados aqui, ou outros, você pode usar o seguinte comando do Terminal:
 
 `tf help`
-
-## <a name="connect-to-tfvc-using-the-team-foundation-version-control-extension"></a>Conectar-se ao TFVC usando a extensão de Controle de Versão do Team Foundation
-
-> [!NOTE]
-> Para obter a melhor experiência de controle de versão no macOS, recomendamos o uso do Git em vez do Controle de Versão do Team Foundation (TFVC). O Git é suportado no Visual Studio para Mac e é a opção padrão para repositórios hospedados no Team Foundation Server (TFS)/Azure DevOps. Para saber mais sobre como usar o Git com o TFS/Azure DevOps, confira o artigo [Configurar um Repositório Git](/visualstudio/mac/set-up-git-repository).
-
-Na galeria da extensão do Visual Studio para Mac, há uma extensão de Controle de Versão do Team Foundation que oferece suporte limitado para se conectar ao TFVC. A extensão não é compatível e tem vários problemas conhecidos, portanto, sua experiência pode variar ao usá-la.
-
-Para instalar a extensão, inicie o Visual Studio para Mac e escolha o menu **Visual Studio > Extensões**. Na guia **Galeria**, selecione **Controle de Versão > Controle de Versão do Team Foundation para TFS e Azure DevOps** e clique em **Instalar...** :
-
-![Gerenciador de extensões](media/tfvc-install.png)
-
-Siga os prompts para instalar a extensão. Depois de instalá-la, reinicie o IDE.
-
-### <a name="updating-the-extension"></a>Atualizando a extensão
-
-Periodicamente, são feitas atualizações na extensão do TFVC. Para acessar as atualizações, escolha **Visual Studio > Extensões...** no menu e selecione a guia **Atualizações**. Selecione a extensão na lista e pressione o botão **Atualizar**:
-
-Pressione **Instalar** na próxima caixa de diálogo para desinstalar o pacote antigo e instalar um novo.
-
-### <a name="using-the-extension"></a>Usar a extensão
-
-Depois de instalar a extensão, selecione o item de menu **Controle de Versão > TFS/Azure DevOps > Abrir do Repositório Remoto...** .
-
-![Item de menu para abrir a extensão](media/tfvc-source-control-explorer-devops.png)
-
-Escolha o VSTS ou o Team Foundation Server para começar e pressione **Continuar**:
-
-![Conectar a um servidor](media/tfvc-choose-server-type-devops.png)
-
-#### <a name="azure-repos-authentication"></a>Autenticação do Azure Repos
-
-Quando você seleciona um projeto que está hospedado no Azure Repos, é solicitado que você insira os detalhes da conta Microsoft:
-
-![Conectar-se com o Azure Repos](media/tfvc-vsts-login.png)
-
-#### <a name="tfs-authentication"></a>Autenticação do TFS
-
-Para conectar-se ao TFS, insira os detalhes do servidor e suas credenciais da conta. Insira um domínio para usar a autenticação NTLM, caso contrário, deixe em branco para usar a autenticação básica. Selecione **Adicionar Servidor**:
-
-![Entrar em um servidor TFS](media/tfvc-login.png)
-
-### <a name="selecting-a-project"></a>Selecionando um projeto
-
-Depois que você se autenticar com êxito, será exibida uma lista de repositórios associados à conta na caixa de diálogo **Abrir do Controle do Código-Fonte**:
-
-![Caixa de diálogo Abrir do Controle do Código-Fonte com projetos exibidos](media/tfvc-vsts-projects.png)
-
-Essa caixa de diálogo é organizada com os seguintes nós:
-
-- Organização ou coleção do Azure DevOps – Exibe todas as organizações conectadas à conta Microsoft com que você fez logon.
-- Projetos – Em cada organização ou coleção, você pode ter um número de projetos. Um projeto é onde o código-fonte, os itens de trabalho e os builds automatizados são hospedados.
-
-Neste ponto, você pode pesquisar e filtrar pelo nome de um projeto ou de uma organização.
-
-#### <a name="adding-a-new-server"></a>Adicionando um novo servidor
-
-Para adicionar um novo servidor à lista, pressione o botão **Adicionar Host** na caixa de diálogo **Abrir do Controle do Código-Fonte**:
-
-![Botão de adição realçado para adicionar o novo servidor à lista](media/tfvc-add-new-server.png)
-
-Selecione o provedor na lista e insira suas credenciais:
-
-![Caixa de diálogo mostrando a opção de provedor de controle do código-fonte](media/tfvc-add-new-creds-devops.png)
-
-### <a name="creating-a-new-workspace"></a>Criando um novo workspace
-
-Para começar a trabalhar com um projeto, você precisa ter um _workspace_. Se você ainda não tem um workspace, crie um na caixa de combinação **Workspace** na caixa de diálogo **Abrir do Controle do Código-Fonte**:
-
-![Opção da caixa de combinação Criar workspace](media/tfvc-create-new-workspace.png)
-
-Defina o nome e o caminho local para seu novo workspace e selecione **Criar Workspace**:
-
-![Inserindo um nome e um caminho local para o novo workspace](media/tfvc-local-workspace.png)
-
-### <a name="using-the-source-code-explorer"></a>Usando o Source Code Explorer
-
-Depois de criar um workspace e mapear o projeto, você poderá começar a trabalhar com o _Source Code Explorer_.
-
-Para abrir o Source Code Explorer, selecione o item de menu **Controle de Versão > TFS/Azure DevOps > Source Control Explorer**.
-
-O Source Code Explorer permite que você navegue em todos os projetos mapeados e em seus arquivos e pastas. Ele também permite que você execute todas as ações básicas de controle do código-fonte, como:
-
-- Obter a versão mais recente
-- Obter uma versão específica
-- Fazer check-out e check-out de arquivos
-- Bloquear e desbloquear arquivos
-- Adicionar, excluir e renomear arquivos
-- Exibir histórico
-- Comparar alterações.
-
-Muitas dessas ações estão disponíveis por meio de ações de contexto no projeto:
-
-![Ações de menu de contexto para um projeto](media/tfvc-sourcecode-actions.png)
-
-### <a name="managing-workspaces"></a>Gerenciando workspaces
-
-Se você ainda não criou um espaço de trabalho, conforme descrito na seção [Criando um espaço de trabalho](#creating-a-new-workspace), o Source Code Explorer estará vazio:
-
-![Source Code Explorer vazio](media/tfvc-setup-empty-sce.png)
-
-Para configurar seu projeto remoto com um workspace local, use as seguintes etapas:
-
-1. Selecione o **Servidor** na caixa de combinação.
-1. Observe que não há "nenhum workspace" e o caminho local está como "Não Mapeado". Selecione o link **Não Mapeado** para exibir a caixa de diálogo **Criar Workspace**.
-1. Forneça um nome para o workspace e, em seguida, clique em **Adicionar Pasta de Trabalho** para mapear o projeto para uma pasta local no seu computador:
-
-    ![Caixa de diálogo Criar Workspace, mostrando as opções padrão](media/tfvc-workspace1.png)
-
-1. Selecione a pasta "$" para mapear todos os projetos em seu servidor para o mesmo espaço de trabalho ou selecione um projeto individual e clique em **OK**:
-
-    ![Navegue para a caixa de diálogo de pasta mostrando todos os projetos](media/tfvc-workspace2.png)
-
-1. Selecione o local em seu computador local para onde deseja mapear os projetos e clique em **Selecionar Pasta**.
-1. Confirme os detalhes do novo workspace pressionando **OK**
-
-    ![Caixa de diálogo Criar Workspace, com a pasta de trabalho adicionada](media/tfvc-workspace3.png)
-
-Depois que o workspace for configurado, ele poderá ser alterado ou removido clicando no botão **Gerenciar Workspaces** no Source Code Explorer.
-
-![Gerenciar Workspaces](media/tfvc-workspace4.png)
-
-## <a name="troubleshooting-and-known-issues"></a>Solução de problemas e problemas conhecidos
-
-#### <a name="problems-using-basic-authentication"></a>Problemas no uso da autenticação básica
-
-As opções a seguir podem ser usadas para a autenticação no servidor:
-
-- OAuth
-- Basic
-- NTLM
-
-Para usar a autenticação Básica é necessário habilitar **Credenciais de autenticação alternativas** no Azure DevOps Services, seguindo as etapas abaixo:
-
-1. Entre na sua organização Azure DevOps como proprietário (https:\//dev.azure.com/{organization}/{project}).
-
-2. Na barra de ferramentas da organização, selecione o ícone de engrenagem e escolha **Política**:
-
-    ![Opção de configurações de política selecionada](media/tfvc-auth2.png)
-
-3. Examine as configurações de conexão do aplicativo. Altere essas configurações, com base em suas políticas de segurança:
-
-    ![Opção de configurações de política selecionada](media/tfvc-auth.png)
-
-#### <a name="i-do-not-see-anything-in-tfvc"></a>Não vejo nada no TFVC
-
-Para definir o TFVC (Controle de Versão do Team Foundation) no computador de desenvolvimento, você **precisa** criar um workspace, conforme a descrição na seção [Gerenciando workspaces](#managing-workspaces).
-
-No Source Control Explorer, pressione o botão **Gerenciar Workspaces**. Siga as etapas para mapear o projeto para uma pasta no computador de desenvolvimento.
-
-#### <a name="i-do-not-see-any--all-of-my-projects"></a>Não vejo um/nenhum dos meus projetos
-
-Após a autenticação, você deverá ver a lista de projetos. Por padrão, apenas os projetos do TFS são mostrados. Para ver outros tipos de projetos, marque a caixa "Ver todos os projetos".
-
-Tenha em mente que os projetos que estão no servidor não serão exibidos se você não tiver os privilégios corretos.
-
-##### <a name="i-am-getting-the-error-cannot-create-the-workspace-please-try-again"></a>Estou recebendo o erro "Não é possível criar o workspace. Tente novamente"
-
-Ao tentar [criar um workspace](#creating-a-new-workspace), verifique se as seguintes condições são atendidas:
-
-- Nenhum uso de caracteres inválidos no nome do workspace.
-- O nome deve ter menos de 64 caracteres.
-- O caminho local não pode ser usado por outros workspaces.
 
 ### <a name="see-also"></a>Consulte também
 

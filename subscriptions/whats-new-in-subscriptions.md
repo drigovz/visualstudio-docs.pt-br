@@ -2,64 +2,45 @@
 title: Novidades nas assinaturas do Visual Studio
 description: Saiba mais sobre os recursos novos e atualizados que você pode usar para gerenciar assinaturas do Visual Studio.
 ms.custom: ''
-ms.date: 06/25/2018
+ms.date: 06/27/2019
 searchscope: VS Subscription
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 647009d7e01cc821bdf4fa6a573e6caa73cb7794
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
+ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67259491"
+ms.lasthandoff: 06/28/2019
+ms.locfileid: "67465116"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
-Nós atualizamos o pacote de benefícios da Assinatura com frequência para torná-lo mais útil para você. Continue lendo para saber mais sobre os recursos mais recentes, classificados trimestralmente.
+Nós atualizamos o pacote de benefícios da Assinatura com frequência para torná-lo mais útil para você. Também vamos fazer aprimoramentos para os nossos assinantes e portais de gerenciamento de assinaturas a fim de fornecer a melhor experiência possível.  Continue a ler para saber mais sobre os recursos mais recentes, classificados trimestralmente.
 
-## <a name="2018-q2-april-june"></a>T2 2018 (abril a junho)
+## <a name="2019-q1-january-march"></a>T1 2019 (janeiro a março)
 
-Aqui está uma recapitulação rápida das novidades no segundo trimestre.
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Uso Máximo adicionado ao [Portal de administração de assinaturas](https://manage.visualstuido.com)
+Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. Isso pode ajudá-lo a entender o uso da assinatura atual e a planejar compras futuras. 
 
-### <a name="cloud-administrators"></a>Administradores de nuvem
+  > [!div class="mx-imgBorder"]
+  > ![Menu Uso Máximo](_img/maximum-usage/maximum-usage-menu.png)
 
-Adicionamos a nova funcionalidade para administradores de nuvem que facilita o gerenciamento de assinaturas de nuvem:
+Você também pode ver um histórico de suas atribuições, incluindo suas compras e atribuições.   
 
-* [**Atribuições em massa**](/visualstudio/subscriptions/assign-license#bulk-assignments): adicione e carregue vários assinantes, em massa.
+Para obter mais informações, veja nosso artigo sobre [uso máximo](maximum-usage.md). 
 
-  ![Adicionar vários usuários usando o botão Adicionar em Massa](media/bulk-add-multiple-subscribers.png)
+## <a name="2019-q2-april-june"></a>2º trimestre de 2019 (abril a junho)
 
-* [**Exportar**](/visualstudio/subscriptions/exporting-subscriptions): exporte uma lista de usuários e os detalhes de suas atribuições. Uma lista como essa é útil para acompanhar as datas de atribuições e de vencimento.
+### <a name="visual-studio-with-github-enterprise-subscriptions"></a>Assinaturas Visual Studio com o GitHub Enterprise
+Na conferência //build em maio, a Microsoft anunciou que os clientes do Contrato Enterprise agora podem adquirir assinaturas do Visual Studio que incluem o GitHub Enterprise.  Essa é uma maneira fácil de adquirir assinaturas do Visual Studio e do GitHub Enterprise por preço único mais baixo.  
 
-   ![Exportar uma lista de assinantes para o Excel usando o botão Exportar](media/export-subscriber-list-to-csv.png)
+O GitHub Enterprise está disponível com as assinaturas do Visual Studio Enterprise e do Visual Studio Professional adquiridas por meio de Contratos Enterprise. Também há uma oferta de upgrade que permite que você adicione o GitHub Enterprise mesmo se seu Contrato Enterprise não seja renovado.
 
-* [**Editar em massa**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-using-bulk-edit): edite as informações de assinatura de vários assinantes, em massa.
+Para saber mais sobre os benefícios, as opções e os preços, acesse https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
 
-  ![Editar vários usuários usando o botão Editar em Massa](media/bulk-edit-multiple-subscribers.png)
-
-* Explore os novos campos que estão disponíveis na [experiência **Adicionar Assinatura**](assign-license.md):
-
-  * **Email de notificação**: se sua organização não estiver usando o Azure AD e você desejar usar um email diferente para receber notificações que não seja o email de entrada, você poderá adicioná-lo.
-
-    ![Adicionar um novo endereço de email de notificação](media/add-new-subscriber-notification-email.png)
-
-  * **Opções de comunicação**: escolha o idioma que você deseja usar para enviar emails de atribuição.
-
-    ![Alterar o idioma a ser usado para o envio de emails de notificação](media/change-subscriber-communication-preference.png)
-
-  * **Adicionar referência**: adicione anotações de referência para as assinaturas que você gerencia.
-
-    ![Adicionar suas próprias anotações de referência a cada assinatura](media/add-subscriber-reference-notes.png)
-
-* [**Reenviar email de atribuição**](resend-assignment-email.md): envie um email de notificação novamente para qualquer pessoa em sua lista de assinantes, quantas vezes desejar.
-
-  ![Reenviar o email de ativação para qualquer usuário ou para vários usuários sempre que você desejar](media/resend-subscriber-activation-emails.png)
-
-* [**Filtrar**](search-license.md): organize e filtre seus dados de assinante para atender melhor às suas necessidades.
-
-  ![Filtrar os dados de assinante, como com base nos campos disponíveis](media/filter-subscriber-data.png)
+Se sua organização já tiver assinaturas do Visual Studio com o GitHub Enterprise, você pode saber mais sobre [gerenciar assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md) em nossa documentação.  
 
 E, por agora, é isso aí!
 
