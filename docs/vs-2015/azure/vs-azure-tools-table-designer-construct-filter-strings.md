@@ -11,18 +11,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: ab38ffd1f94e6c8c432d25d8408a0209e4f96e30
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 50e9093ded8aafaed93f6a5063631108cb2a9a89
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961918"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624170"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>Construindo cadeias de caracteres de filtro para o designer de tabela
 ## <a name="overview"></a>Visão geral
 Para filtrar dados em uma tabela do Azure que é exibida no **Table Designer**do Visual Studio, construa uma cadeia de caracteres de filtro e insira no campo de filtro. A sintaxe de cadeia de caracteres de filtro é definida pelo WCF Data Services e é semelhante a uma cláusula SQL WHERE, mas é enviada para o serviço Tabela por meio de uma solicitação HTTP. O **Designer de tabela** lida com a codificação correta para você, portanto para filtrar um valor da propriedade desejada, você só precisa digitar o nome da propriedade, operador de comparação, valor dos critérios e, opcionalmente, o operador booliano no campo de filtro. Não é necessário incluir a opção de consulta $filter como você faria se estivesse criando uma URL para consultar a tabela por meio de [Referência de API de REST de serviços de armazenamento](http://go.microsoft.com/fwlink/p/?LinkId=400447).
 
-O WCF Data Services é baseado no [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro (**$filter**), consulte a [Especificação de convenções de URI do OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
+O WCF Data Services é baseado no [Open Data Protocol](http://go.microsoft.com/fwlink/p/?LinkId=214805) (OData). Para obter detalhes sobre a opção de consulta de sistema do filtro ( **$filter**), consulte a [Especificação de convenções de URI do OData](http://go.microsoft.com/fwlink/p/?LinkId=214806).
 
 ## <a name="comparison-operators"></a>Operadores de comparação
 Os seguintes operadores lógicos têm suporte para todos os tipos de propriedade:
@@ -50,45 +50,63 @@ Ao filtrar nas propriedades de cadeia de caracteres, coloque a constante de cade
 
 O exemplo a seguir filtra as propriedades **PartitionKey** e **RowKey**; propriedades adicionais não chave também podem ser adicionadas à cadeia de caracteres de filtro:
 
-    PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
+PartitionKey eq 'Partition1' and RowKey eq '00001'
+```
 
 Você pode colocar cada expressão de filtro entre parênteses, embora não seja necessário:
 
-    (PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
+(PartitionKey eq 'Partition1') and (RowKey eq '00001')
+```
 
 Observe que o serviço Tabela não dá suporte a consultas de curingas e eles também não têm suporte no Designer de tabela. No entanto, você pode executar correspondência de prefixo usando os operadores de comparação no prefixo desejado. O exemplo a seguir retorna as entidades com a propriedade LastName começando com a letra 'A':
 
-    LastName ge 'A' and LastName lt 'B'
+```
+LastName ge 'A' and LastName lt 'B'
+```
 
 ## <a name="filtering-on-numeric-properties"></a>Filtrando em propriedades numéricas
 Para filtrar um número inteiro ou um número de ponto flutuante, especifique o número sem aspas.
 
 Este exemplo retorna todas as entidades com uma propriedade Idade cujo valor é maior que 30:
 
-    Age gt 30
+```
+Age gt 30
+```
 
 Este exemplo retorna todas as entidades com uma propriedade AmountDue cujo valor é menor ou igual a 100,25:
 
-    AmountDue le 100.25
+```
+AmountDue le 100.25
+```
 
 ## <a name="filtering-on-boolean-properties"></a>Filtrando em Propriedades Boolianas
 Para filtrar um valou o booliano, especifique **true** ou o **false** sem aspas.
 
 O exemplo a seguir retorna todas as entidades em que a propriedade IsActive é definida como **true**:
 
-    IsActive eq true
+```
+IsActive eq true
+```
 
 Você também pode escrever essa expressão de filtro sem o operador lógico. No exemplo a seguir, o serviço Tabela também retornará todas as entidades nas quais IsActive é **true**:
 
-    IsActive
+```
+IsActive
+```
 
 Para retornar todas as entidades nas quais IsActive for false, você pode usar o operador não:
 
-    not IsActive
+```
+not IsActive
+```
 
 ## <a name="filtering-on-datetime-properties"></a>Filtrando em Propriedades DateTime
 Para filtrar um valor DateTime, especifique a palavra-chave **datetime** , seguida pela constante de data/hora entre aspas. A constante de data/hora deve estar no formato UTC combinado, conforme descrito em [Formatando valores de propriedade DateTime](http://go.microsoft.com/fwlink/p/?LinkId=400449).
 
 O exemplo a seguir retorna entidades nas quais a propriedade CustomerSince é igual a 10 de julho de 2008:
 
-    CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
+CustomerSince eq datetime'2008-07-10T00:00:00Z'
+```
