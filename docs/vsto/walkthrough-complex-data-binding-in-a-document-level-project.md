@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 026dc77573bbedce7882f9b3cceab049ef1066e4
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981670"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692350"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados complexos em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados complexos em um projeto de nível de documento. Você pode vincular várias células em uma planilha do Microsoft Office Excel para os campos no banco de dados Northwind do SQL Server.
@@ -174,7 +174,7 @@ ms.locfileid: "62981670"
 
 1. Selecione uma célula dentro do objeto de lista.
 
-    Uma nova linha aparece na parte inferior da lista, com um asterisco (**\\***) na primeira célula da nova linha.
+    Uma nova linha aparece na parte inferior da lista, com um asterisco ( **\*** ) na primeira célula da nova linha.
 
 2. Adicione as seguintes informações na linha vazia.
 
