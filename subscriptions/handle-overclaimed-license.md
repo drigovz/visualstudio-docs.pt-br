@@ -7,12 +7,12 @@ ms.date: 02/13/2018
 ms.topic: conceptual
 description: Saiba como os administradores podem resolver o excesso de assinaturas solicitadas
 searchscope: VS Subscription
-ms.openlocfilehash: 6217dcd3cef9a65db3e45ba76f57167f47535671
-ms.sourcegitcommit: bd519d1da375e374016f94a44c295d3253f61a8c
+ms.openlocfilehash: 06da8c460e9660857b0f03062bde5bd983bd176d
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/30/2019
-ms.locfileid: "64945135"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586999"
 ---
 # <a name="overallocated-subscriptions"></a>Assinaturas superalocadas
 
@@ -43,8 +43,8 @@ Se sua organização tiver um EA (Contrato Enterprise), os administradores poder
 >
 > É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja uma assinatura correspondente do Visual Studio com o GitHub atribuída no portal de gerenciamento para permanecer em conformidade com os requisitos de licenciamento para este assinatura.
 
-
 Saiba mais sobre como gerenciar [Assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md).
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.

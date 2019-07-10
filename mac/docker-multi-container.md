@@ -1,15 +1,15 @@
 ---
 title: Tutorial – Criar um aplicativo de vários contêineres com o Docker Compose
 description: Saiba como gerenciar mais de um contêiner e se comunicar entre eles no Visual Studio para Mac
-author: bytesguy
-ms.author: adhartle
+author: asb3993
+ms.author: amburns
 ms.date: 06/17/2019
-ms.openlocfilehash: df130e86de7f35c43459a70a12c0e9cfafbbe3a4
-ms.sourcegitcommit: fd5a5b057df3d733f5224c305096907989811f85
+ms.openlocfilehash: 7570788b50a83d9a74657408d4f38fbce21bd1c3
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/18/2019
-ms.locfileid: "67196101"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691714"
 ---
 # <a name="create-a-multi-container-app-with-docker-compose"></a>Criar um aplicativo de vários contêineres com o Docker Compose
 
@@ -82,14 +82,14 @@ Agora temos dois projetos ASP.NET em nossa solução e ambos estão configurados
    ```
 
 1. No arquivo *Index.cshtml*, adicione uma linha para exibir `ViewData["Message"]` de modo que o arquivo se pareça com o seguinte código:
-    
+
       ```cshtml
       @page
       @model IndexModel
       @{
           ViewData["Title"] = "Home page";
       }
-    
+
       <div class="text-center">
           <h1 class="display-4">Welcome</h1>
           <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
@@ -98,7 +98,7 @@ Agora temos dois projetos ASP.NET em nossa solução e ambos estão configurados
       ```
 
 1. Agora, no projeto de API Web, adicione código ao controlador Valores para personalizar a mensagem retornada pela API para a chamada que você adicionou de *webfrontend*:
-    
+
       ```csharp
         // GET api/values/5
         [HttpGet("{id}")]
@@ -107,6 +107,7 @@ Agora temos dois projetos ASP.NET em nossa solução e ambos estão configurados
             return "webapi (with value " + id + ")";
         }
       ```
+
 1. Defina o projeto `docker-compose` como o projeto de inicialização e vá para **Executar > Iniciar Depuração**. Se tudo estiver configurado corretamente, você verá a mensagem "Olá do webfrontend e webapi (com o valor 1).":
 
 ![Execução da solução de vários contêineres do Docker](media/docker-multicontainer-debug.png)

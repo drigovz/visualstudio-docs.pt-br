@@ -1,18 +1,18 @@
 ---
 title: Introdução ao Azure Functions
 description: Usando o Azure Functions no Visual Studio para Mac.
-author: conceptdev
-ms.author: crdun
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985095"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692821"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -81,7 +81,7 @@ Com o suporte para Azure Functions no Visual Studio para Mac, você pode testar 
 
 Modelos de função permitem que você crie rapidamente novas funções usando os gatilhos e modelos mais comuns. Para criar outro tipo de função, faça o seguinte:
 
-1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...**:
+1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...** :
 
     ![Ação de contexto para adicionar nova função](media/azure-functions-addnew.png)
 
@@ -100,7 +100,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
 4. Na caixa de diálogo **Criar novo Serviço de Aplicativo**, insira as configurações:  ![Opção de menu Publicar no Azure](media/azure-functions-image7.png)
 
-    |Configuração  |Descrição  |
+    |Configuração  |DESCRIÇÃO  |
     |---------|---------|
     |**Nome do Serviço de Aplicativo**|Um nome exclusivo que identifica seu novo aplicativo de funções.|
     |**Assinatura**|A assinatura do Azure a usar.|

@@ -1,16 +1,16 @@
 ---
 title: Adicionando e removendo itens de projeto
 description: Este documento descreve como adicionar e remover itens de projeto no Visual Studio para Mac
-author: conceptdev
-ms.author: crdun
+author: heiligerdankgesang
+ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4071689D-1C21-42D7-8963-550E7BCB4B67
-ms.openlocfilehash: dc37b3a376b99c39d4216ba0ae2b05d707d11484
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 94bb56fba0b90f29c291bc2c4b95976810dd21c6
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985411"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692954"
 ---
 # <a name="adding-and-removing-project-items"></a>Adicionando e removendo itens de projeto
 
@@ -24,7 +24,7 @@ Isso exibe a caixa de diálogo Novo Arquivo, que fornece modelos de arquivos com
 
 ## <a name="adding-existing-files"></a>Adicionar arquivos existentes
 
-Você pode adicionar arquivos existentes ao seu projeto clicando com o botão direito do mouse no nó do Projeto e selecionando **Adicionar > Adicionar arquivos...**. Outra maneira de adicionar uma pasta inteira é selecionar **Adicionar > Adicionar pasta existente...**. Isso exibe o navegador de arquivos para permitir que você pesquise o item necessário a ser adicionado no seu sistema.
+Você pode adicionar arquivos existentes ao seu projeto clicando com o botão direito do mouse no nó do Projeto e selecionando **Adicionar > Adicionar arquivos...** . Outra maneira de adicionar uma pasta inteira é selecionar **Adicionar > Adicionar pasta existente...** . Isso exibe o navegador de arquivos para permitir que você pesquise o item necessário a ser adicionado no seu sistema.
 
 ## <a name="removing-items"></a>Removendo itens
 

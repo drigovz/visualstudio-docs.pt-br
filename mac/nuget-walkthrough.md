@@ -1,17 +1,17 @@
 ---
 title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto Xamarin. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
-author: conceptdev
-ms.author: crdun
+author: jmatthiesen
+ms.author: jomatthi
 ms.date: 04/24/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 7ac4a10160a1273dd7766e880dfcf7f06bf64668
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 356a99e3bdbc1608bdebc160c3a10878d3194a40
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820615"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691394"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Incluir um pacote NuGet em seu projeto
 
@@ -77,9 +77,9 @@ Clique com o botão direito do mouse em **Pacotes** para acessar o menu de conte
 
 ![Menu Pacotes](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Adicionar Pacotes NuGet** – abre a janela para adicionar mais pacotes ao projeto.
-*   **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
-*   **Restaurar** – Baixa todos os pacotes ausentes (sem atualizar os pacotes existentes para as versões mais recentes).
+* **Adicionar Pacotes NuGet** – abre a janela para adicionar mais pacotes ao projeto.
+* **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.
+* **Restaurar** – Baixa todos os pacotes ausentes (sem atualizar os pacotes existentes para as versões mais recentes).
 
 As opções Atualizar e Restaurar também estão disponíveis no nível da Solução, afetando todos os projetos na solução.
 
