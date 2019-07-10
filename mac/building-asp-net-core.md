@@ -1,26 +1,24 @@
 ---
 title: Como criar aplicativos ASP.NET Core no Visual Studio para Mac
 description: Este artigo descreve como começar a usar o ASP.NET no Visual Studio para Mac, incluindo como instalar e com criar um novo projeto.
-author: asb3993
-ms.author: amburns
+author: sayedihashimi
+ms.author: sayedha
 ms.date: 05/30/2019
 ms.assetid: 771C2F8E-46BC-4280-AFE8-ED9D5C7790CE
-ms.openlocfilehash: 4e38378c22c6920e471b72d990d61d9b4ebd3d7f
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: f0a2e8433877b3eb61228a886280707f3b4a37fe
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67253805"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67693138"
 ---
 # <a name="building-aspnet-core-applications-in-visual-studio-for-mac"></a>Como criar aplicativos ASP.NET Core no Visual Studio para Mac 
-
 
 O ASP.NET Core é uma estrutura open-source e multiplataforma para a criação de aplicativos modernos, conectados à Internet e baseados em nuvem, como serviços e aplicativos Web, aplicativos IoT e back-ends móveis. Os aplicativos ASP.NET Core podem ser executados nos tempos de execução do [.NET Core](https://www.microsoft.com/net/core/platform) ou do .NET Framework. Ele foi projetado para fornecer uma estrutura de desenvolvimento otimizada para aplicativos que são implantados na nuvem ou executados localmente. Ele consiste em componentes modulares com sobrecarga mínima, para que você mantenha a flexibilidade durante a construção de suas soluções. Você pode desenvolver e executar aplicativos ASP.NET Core de multiplataforma no Windows, Mac e Linux. O ASP.NET Core é um software livre no [GitHub](https://github.com/aspnet/home).
 
 Neste laboratório, você criará e explorar um aplicativo ASP.NET Core com o Visual Studio para Mac.
 
 ## <a name="objectives"></a>Objetivos
-
 
 > [!div class="checklist"]
 > * Criar um aplicativo Web ASP.NET Core

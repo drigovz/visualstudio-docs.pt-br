@@ -1,17 +1,17 @@
 ---
 title: Código de refatoração
 description: Como refinar código usando o Visual Studio para Mac e ações rápidas.
-author: conceptdev
-ms.author: crdun
+author: cobey
+ms.author: cobey
 ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a87b87f3a14462daec1e069fe222164818d2a19
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62937774"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67691292"
 ---
 # <a name="refactoring"></a>Refatoração
 
@@ -42,7 +42,7 @@ As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o có
 * Aplicar uma refatoração (por exemplo, embutir uma variável temporária)
 * Gerar um código (por exemplo, introduzir uma variável local)
 
-Agora, as correções rápidas podem ser aplicadas usando os ícones de lâmpada ![ícone de lâmpada](media/quick-actions-light-bulb-icon.png) ou chave de fenda ![ícone chave de fenda](media/quick-actions-screwdriver-icon.png) ou pressionando **Opção (⌥)**+**Enter** quando o cursor estiver em uma linha de código em que a ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
+Agora, as correções rápidas podem ser aplicadas usando os ícones de lâmpada ![ícone de lâmpada](media/quick-actions-light-bulb-icon.png) ou chave de fenda ![ícone chave de fenda](media/quick-actions-screwdriver-icon.png) ou pressionando **Opção (⌥)** +**Enter** quando o cursor estiver em uma linha de código em que a ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
 
 Para qualquer idioma, terceiros podem oferecer diagnósticos e sugestões personalizados, por exemplo, como parte de um SDK, e as lâmpadas do Visual Studio são acesas de acordo com essas regras.
 
@@ -57,7 +57,7 @@ O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicaç
 
 - Lâmpadas e chaves de fenda são exibidas na margem esquerda do editor quando você move o cursor para uma linha de código para o qual uma Ação Rápida está disponível.
 
-- Pressione **Opção (⌥)**+**Enter** em qualquer lugar em uma linha para ver uma lista de Ações Rápidas e refatorações disponíveis.
+- Pressione **Opção (⌥)** +**Enter** em qualquer lugar em uma linha para ver uma lista de Ações Rápidas e refatorações disponíveis.
 
 ![Exibir itens de contexto](media/refactoring-context-action.png)
 

@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 3ca6fd7461ac928751192a18b00f255d7bad2a30
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 0c3bc28131a6e8f341e5fac52ed10725e6a7a40c
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260613"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624130"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>Como: Migrar e publicar um aplicativo Web em um serviço de nuvem do Azure usando o Visual Studio
 
@@ -75,13 +75,13 @@ Todos os tipos de aplicativo podem ser iniciados em um navegador conectado ao de
 
 A tabela a seguir fornece detalhes sobre como iniciar o aplicativo no Azure:
 
-   | Tipo de aplicativo Web | em execução no Azure |
-   | --- | --- | --- |
-   | Aplicativo Web do ASP.NET<br/>(incluindo MVC 2, MVC 3, MVC 4) | Selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. |
-   | Aplicativo Web ASP.NET vazio | Caso tenha uma página `.aspx` padrão em seu aplicativo, selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. Para navegar para uma página diferente, insira uma URL do formulário a seguir em um navegador: `<deployment_url>/<page_name>.aspx` |
-   | Aplicativo Silverlight<br/>Aplicativo de negócios Silverlight<br/>Aplicativo de navegação Silverlight | Navegue até a página específica do seu aplicativo usando o seguinte formato de URL: `<deployment_url>/<page_name>.aspx` |
-    Aplicativo de serviço WCF<br/>Aplicativo de Serviço de Fluxo de Trabalho do WCF | Defina o arquivo `.svc` como a página inicial do seu projeto de Serviço WCF. Depois navegue até `<deployment_url>/<service_file>.svc` |
-   | Entidades dinâmicas do ASP.NET<br/>Dados dinâmicos ASP.NET Linq to SQL | Atualize a cadeia de conexão conforme descrito na próxima seção. Depois navegue até `<deployment_url>/<page_name>.aspx`. Para Linq em SQL, você deve usar um banco de dados SQL do Azure. |
+| Tipo de aplicativo Web | em execução no Azure |
+| --- | --- |
+| Aplicativo Web do ASP.NET<br/>(incluindo MVC 2, MVC 3, MVC 4) | Selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. |
+| Aplicativo Web ASP.NET vazio | Caso tenha uma página `.aspx` padrão em seu aplicativo, selecione a URL na guia **Implantação** para o **Log de Atividades do Azure**. Para navegar para uma página diferente, insira uma URL do formulário a seguir em um navegador: `<deployment_url>/<page_name>.aspx` |
+| Aplicativo Silverlight<br/>Aplicativo de negócios Silverlight<br/>Aplicativo de navegação Silverlight | Navegue até a página específica do seu aplicativo usando o seguinte formato de URL: `<deployment_url>/<page_name>.aspx` |
+| Aplicativo de serviço WCF<br/>Aplicativo de Serviço de Fluxo de Trabalho do WCF | Defina o arquivo `.svc` como a página inicial do seu projeto de Serviço WCF. Depois navegue até `<deployment_url>/<service_file>.svc` |
+| Entidades dinâmicas do ASP.NET<br/>Dados dinâmicos ASP.NET Linq to SQL | Atualize a cadeia de conexão conforme descrito na próxima seção. Depois navegue até `<deployment_url>/<page_name>.aspx`. Para Linq em SQL, você deve usar um banco de dados SQL do Azure. |
 
 ## <a name="update-a-connection-string-for-aspnet-dynamic-entities"></a>Atualizar uma cadeia de conexão para Entidades dinâmicas do ASP.NET
 

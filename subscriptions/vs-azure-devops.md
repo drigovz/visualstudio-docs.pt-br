@@ -7,12 +7,12 @@ ms.date: 09/19/2018
 ms.topic: conceptual
 description: Saiba como você pode usar o Azure DevOps enquanto assinante do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 99f2ca88f5cc5c543f546ff71a8f414f44adf177
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: ece1a09f900cad499082d3bf41a7d9f0a97a09ac
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032222"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586904"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Benefícios do Azure DevOps para assinantes do Visual Studio
 
@@ -35,8 +35,6 @@ Quando você entra no Azure DevOps com a mesma identidade usada para ativar sua 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), MVP (Most Valuable Professional), RD (Diretor Regional), VSIP (Visual Studio Industry Partner), Microsoft Partner Network (Enterprise), BizSpark e MCT Software & Services Developer. Exclui: MCT Software & Services e Imagine.*
 
 <sup>2</sup>  *Inclui 2 GB sem custos*
-
-
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.

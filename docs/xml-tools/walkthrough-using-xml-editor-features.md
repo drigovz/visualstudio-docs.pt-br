@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5e443cf23b8726161a4252e6cef3b77f5d3c37bb
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808485"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624190"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor XML
 
@@ -30,11 +30,11 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
+3. Na janela de propriedades do documento, clique no botão Procurar ( **...** ) sobre o **esquemas** campo.
 
      O **esquemas XSD** caixa de diálogo é exibida.
 
-4. Clique em **Adicionar**.
+4. Clique em **Adicionar** .
 
      O **abrir esquema XSD** caixa de diálogo é exibida.
 
@@ -58,7 +58,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
     - **funcionário** para adicionar o elemento raiz.
 
-2. Selecione **<!-** para adicionar um nó de comentário e pressione **Enter**.
+2. Selecione  **&lt;! –** para adicionar um nó de comentário e pressione **Enter**.
 
      O editor insere uma marca de fim do comentário e colocar o cursor entre o início e marcas de comentário final.
 
@@ -70,7 +70,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 5. Tipo `>` para a marca de fechamento.
 
-6. O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. O **dica de ferramenta** exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'ID'**.
+6. O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. O **dica de ferramenta** exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'ID'** .
 
 7. Tipo de `<` e selecione **ID** da lista de membros. Digite `>`.
 
@@ -86,7 +86,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 10. Retornar para o arquivo XML e substitua os **abc** texto com **123**.
 
-     A linha ondulada e **dica de ferramenta** são desmarcados no valor do elemento ID. O **dica de ferramenta** para o final do funcionário marca agora exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'Data de admissão'**.
+     A linha ondulada e **dica de ferramenta** são desmarcados no valor do elemento ID. O **dica de ferramenta** para o final do funcionário marca agora exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'Data de admissão'** .
 
 11. Coloque o cursor após a marca de fim de ID, digite `<`, selecione **data de admissão** na lista de membro e, em seguida, digite `>`.
 
@@ -106,7 +106,7 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 1. Dos **arquivo** menu, selecione **Salvar como**.
 
-     O **salvar arquivo como** caixa de diálogo é exibida. O nome de arquivo padrão é *"XMLFile1"*.
+     O **salvar arquivo como** caixa de diálogo é exibida. O nome de arquivo padrão é *"XMLFile1"* .
 
 2. Insira o nome do arquivo e o local para o documento XML e clique em **salvar**.
 

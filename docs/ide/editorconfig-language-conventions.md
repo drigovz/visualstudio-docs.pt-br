@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 2dcd0af308da3f16af461dd4b61aae3e31af0236
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 90c080b62be8f3aba128b26aafe9d2b6e30446f5
+ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67262799"
+ms.lasthandoff: 07/05/2019
+ms.locfileid: "67586793"
 ---
 # <a name="language-conventions"></a>Convenções de linguagem
 
@@ -970,7 +970,7 @@ As regras de estilo nesta seção são aplicáveis somente á linguagem C#.
    - csharp\_style\_pattern\_local\_over\_anonymous_function
 - [Preferências da verificação de "null"](#null-checking-preferences)
    - csharp\_style\_throw_expression
-    - csharp\_style\_conditional\_delegate_call
+   - csharp\_style\_conditional\_delegate_call
 - [Preferências de bloco de código](#code-block-preferences)
    - csharp\_prefer_braces
 
