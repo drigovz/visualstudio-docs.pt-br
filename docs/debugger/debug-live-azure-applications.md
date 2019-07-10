@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: f3dbd175ef5575375c314b942fedff9f77403265
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: af3f393aea8d1ecddaf021c896839d663b7d4028
+ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62860380"
+ms.lasthandoff: 07/09/2019
+ms.locfileid: "67692107"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos do Azure ASP.NET dinâmicos usando o Depurador de Instantâneos
 
@@ -63,19 +63,19 @@ Neste tutorial, você irá:
 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-2. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione o Serviço de Aplicativo do Azure em que seu projeto está implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar**.
+2. Escolha **Depurar > Anexar Depurador de Instantâneos...** . Selecione o Serviço de Aplicativo do Azure em que seu projeto está implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar**.
 
-      ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
+   ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Selecionar recurso do Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
+   ![Selecionar recurso do Azure](../debugger/media/snapshot-select-azure-resource-appservices.png)
 
 ::: moniker-end
 
-  > [!IMPORTANT]
-  > Na primeira vez que você selecionar **Anexar o Depurador de Instantâneos**, será solicitado a instalar a extensão de site do Depurador de Instantâneos em seu Serviço de Aplicativo do Azure. Essa instalação requer uma reinicialização do Serviço de Aplicativo do Azure.
+   > [!IMPORTANT]
+   > Na primeira vez que você selecionar **Anexar o Depurador de Instantâneos**, será solicitado a instalar a extensão de site do Depurador de Instantâneos em seu Serviço de Aplicativo do Azure. Essa instalação requer uma reinicialização do Serviço de Aplicativo do Azure.
 
-  > [!NOTE]
-  > A extensão de site do Application Insights também dá suporte à depuração de instantâneos. Se você encontrar uma mensagem de erro "extensão de site desatualizada", veja [dicas de solução de problemas e problemas conhecidos da depuração de instantâneos](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
+   > [!NOTE]
+   > A extensão de site do Application Insights também dá suporte à depuração de instantâneos. Se você encontrar uma mensagem de erro "extensão de site desatualizada", veja [dicas de solução de problemas e problemas conhecidos da depuração de instantâneos](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
 
    O Visual Studio agora está no modo de depuração de instantâneos.
    ![Modo de depuração de instantâneo](../debugger/media/snapshot-message.png)
