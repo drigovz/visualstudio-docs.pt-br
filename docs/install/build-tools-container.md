@@ -13,12 +13,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce2fe1d40c0aeddf12a898919150a32c0c77d72e
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 1c7d4b2cb910a6e6ee55ecb783fe124958d251e2
+ms.sourcegitcommit: 3cc73e74921a9ceb622542e0e263abeebc455c00
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177625"
+ms.lasthandoff: 07/08/2019
+ms.locfileid: "67624111"
 ---
 # <a name="install-build-tools-into-a-container"></a>Instalar Ferramentas de Build em um contêiner
 
@@ -28,101 +28,13 @@ Os [contêineres](https://www.docker.com/what-container) são uma ótima maneira
 
 Se as Ferramentas de Build do Visual Studio não têm o que você precisa para compilar o código-fonte, estas etapas podem ser usadas em outros produtos do Visual Studio. Vale ressaltar, no entanto, que os contêineres do Windows não têm suporte para uma interface do usuário interativo, então, todos os comandos devem ser automatizados.
 
-## <a name="overview"></a>Visão geral
+## <a name="before-you-begin"></a>Antes de começar
 
-Por meio do [Docker](https://www.docker.com/what-docker), é possível criar uma imagem da qual pode-se criar contêineres que compilam o código-fonte. O Dockerfile de exemplo instala as Ferramentas de Build do Visual Studio mais recentes e outros programas úteis, geralmente utilizados para compilar código-fonte. É possível modificar ainda mais o Dockerfile para incluir outras ferramentas e scripts para executar testes, publicar saída de build e muito mais.
+É esperada alguma familiaridade com o [Docker](https://www.docker.com/what-docker) abaixo. Se você ainda não estiver familiarizado com a execução do Docker no Windows, leia como [instalar e configurar o mecanismo do Docker no Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon).
 
-Se o Docker para Windows já estiver instalado, pule para a etapa 3.
+A imagem de base abaixo é uma amostra e pode não funcionar no seu sistema. Leia [Compatibilidade da versão do contêiner do Windows ](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para determinar qual imagem de base você deve usar para o seu ambiente.
 
-## <a name="step-1-enable-hyper-v"></a>Etapa 1. Habilitar o Hyper-V
-
-O Hyper-V não está habilitado por padrão. Ele deve ser habilitado para inicializar o Docker para Windows, pois, atualmente, apenas o isolamento de Hyper-V tem suporte no Windows 10.
-
-* [Habilitar o Hyper-V no Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v)
-* [Habilitar o Hyper-V no Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/get-started/install-the-hyper-v-role-on-windows-server)
-
-> [!NOTE]
-> A virtualização deve ser habilitada no computador. Normalmente, ela está habilitada por padrão; no entanto, se a instalação do Hyper-V falhar, consulte a documentação do sistema para saber como habilitar a virtualização.
-
-## <a name="step-2-install-docker-for-windows"></a>Etapa 2. Instalar o Docker para Windows
-
-Se você usa o Windows 10, é possível baixar e instalar a [Docker Community Edition](https://docs.docker.com/docker-for-windows/install). Se você usa o Windows Server 2016, siga as [instruções para instalar o Docker Enterprise Edition](https://docs.docker.com/install/windows/docker-ee).
-
-## <a name="step-3-switch-to-windows-containers"></a>Etapa 3. Alternar para os contêineres do Windows
-
-Só é possível instalar as Ferramentas de Build no Windows, o que requer [alternar para contêineres do Windows](https://docs.docker.com/docker-for-windows/#getting-started-with-windows-containers). Os contêineres do Windows no Windows 10 têm suporte somente para o [isolamento do Hyper-V](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/hyperv-container), enquanto os contêineres do Windows no Windows Server 2016 oferecem suporte para Hyper-V e isolamento de processo.
-
-## <a name="step-4-expand-maximum-container-disk-size"></a>Etapa 4. Expandir o tamanho de disco máximo do contêiner
-
-As Ferramentas de Build do Visual Studio e, em grande medida, o Visual Studio, exigem muito espaço em disco para todas as ferramentas que são instaladas. Embora o Dockerfile de exemplo desabilite o cache do pacote, o tamanho do disco das imagens de contêiner deve ser aumentado para acomodar o espaço necessário. No Windows, atualmente, é possível aumentar o tamanho do disco somente alterando a configuração do Docker.
-
-**No Windows 10**:
-
-1. [Clique com o botão direito do mouse no ícone do Docker for Windows](https://docs.docker.com/docker-for-windows/#docker-settings) na bandeja do sistema e clique em **Configurações**.
-
-1. [Clique na seção Daemon](https://docs.docker.com/docker-for-windows/#docker-daemon).
-
-1. [Alterne o botão de **Básico**](https://docs.docker.com/docker-for-windows/#edit-the-daemon-configuration-file) para **Avançado**.
-
-1. Adicione a seguinte propriedade de matriz JSON para aumentar o espaço em disco para 127 GB, mais do que o suficiente para Ferramentas de Build com espaço para expansão.
-
-   ```json
-   {
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Essa propriedade é adicionada a qualquer coisa que você já tiver. Por exemplo, com essas alterações aplicadas ao arquivo de configuração daemon padrão, agora você verá:
-
-   ```json
-   {
-     "registry-mirrors": [],
-     "insecure-registries": [],
-     "debug": true,
-     "experimental": true,
-     "storage-opts": [
-       "size=127G"
-     ]
-   }
-   ```
-
-   Confira [Mecanismo do Docker no Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) para obter mais dicas e opções de configuração.
-
-1. Clique em **Aplicar**.
-
-**No Windows Server 2016**:
-
-1. Interrompa o serviço de "docker":
-
-   ```shell
-   sc.exe stop docker
-   ```
-
-1. Em um prompt de comandos com privilégios elevados, edite "%ProgramData%\Docker\config\daemon.json" ou o que você especificou para `dockerd --config-file`.
-
-1. Adicione a seguinte propriedade de matriz JSON para aumentar o espaço em disco para 127 GB, mais do que o suficiente para Ferramentas de Build com espaço para expansão.
-
-   ```json
-   {
-     "storage-opts": [
-       "size=120G"
-     ]
-   }
-   ```
-
-   Essa propriedade é adicionada a qualquer coisa que você já tiver. Confira [Mecanismo do Docker no Windows](https://docs.microsoft.com/virtualization/windowscontainers/manage-docker/configure-docker-daemon) para obter mais dicas e opções de configuração.
- 
-1. Salve e feche o arquivo.
-
-1. Inicie o serviço de "docker":
-
-   ```shell
-   sc.exe start docker
-   ```
-
-## <a name="step-5-create-and-build-the-dockerfile"></a>Etapa 5. Criar e compilar o Dockerfile
+## <a name="create-and-build-the-dockerfile"></a>Criar e compilar o Dockerfile
 
 Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do arquivo é simplesmente "Dockerfile", ele será reconhecido por padrão.
 
@@ -177,9 +89,9 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ```
 
    > [!WARNING]
-   > Se você basear sua imagem diretamente no microsoft/windowsservercore ou mcr.microsoft.com/windows/servercore (confira [Microsoft distribui o catálogo de contêiner](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/)), pode ser que o .NET Framework não seja instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Observe também que as imagens marcadas com a versão 4.7.1 ou posterior podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
+   > Se você basear sua imagem diretamente no microsoft/windowsservercore ou mcr.microsoft.com/windows/servercore (confira [Microsoft distribui o catálogo de contêiner](https://azure.microsoft.com/blog/microsoft-syndicates-container-catalog/)), pode ser que o .NET Framework não seja instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.2](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Além disso, as imagens marcadas com a versão 4.7.2 ou posterior podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
    >
-   > O Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) não será instalado corretamente no mcr\.microsoft\.com\/windows\/servercore:1809 ou posterior. Nenhum erro é exibido.
+   > O Visual Studio 2017 versão 15.8 ou anterior (qualquer produto) não será instalado corretamente no mcr.microsoft.com/windows/servercore:1809 ou posterior. Nenhum erro é exibido.
    >
    > Confira [Compatibilidade da versão de contêiner do Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
 
@@ -217,7 +129,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
    ```
 
    > [!WARNING]
-   > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. Observe também que as imagens marcadas com a versão 4.7.1 ou posterior podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
+   > Se você basear sua imagem diretamente no microsoft/windowsservercore, o .NET Framework poderá não ser instalado corretamente e nenhum erro de instalação será indicado. Código gerenciado não poderá ser executado depois que a instalação for concluída. Em vez disso, baseie a imagem no [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) ou posterior. As imagens marcadas com a versão 4.8 ou posterior também podem usar o PowerShell como o `SHELL` padrão, o que causará uma falha nas instruções `RUN` e `ENTRYPOINT`.
    >
    > Confira [Compatibilidade da versão de contêiner do Windows](https://docs.microsoft.com/virtualization/windowscontainers/deploy-containers/version-compatibility) para ver quais versões do sistema operacional do contêiner são compatíveis em quais versões do sistema operacional host e os [Problemas conhecidos de contêineres](build-tools-container-issues.md) para se informar a respeito.
 
@@ -249,7 +161,7 @@ Salve o Dockerfile de exemplo a seguir em um novo arquivo no disco. Se o nome do
 
    ::: moniker-end
 
-## <a name="step-6-using-the-built-image"></a>Etapa 6. Usar a imagem criada
+## <a name="using-the-built-image"></a>Usar a imagem criada
 
 Agora que a imagem foi criada, é possível executá-la em um contêiner para fazer builds interativos e automatizados. O exemplo usa o Prompt de Comando do Desenvolvedor, assim, PATH e outras variáveis de ambiente já estão configuradas.
 

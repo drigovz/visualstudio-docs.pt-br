@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 05/22/2019
+ms.date: 06/29/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df082d8cf67a5c0eb4c6ecd5c017480c63a6b27
-ms.sourcegitcommit: 7eb2fb21805d92f085126f3a820ac274f2216b4e
+ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/22/2019
-ms.locfileid: "67328823"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552873"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -41,8 +41,8 @@ Para obter uma lista completa de todas as novidades incluídas nesta versão, co
 
 ## <a name="develop"></a>Desenvolver
 
-Economize tempo com os novos recursos.
-<br><br>
+Veja o vídeo a seguir para saber mais sobre como economizar tempo com novos recursos. <br><br>*Duração do vídeo: 3 minutos*
+
 > [!VIDEO https://www.youtube.com/embed/n5sJ4EewKGk]
 
 ### <a name="improved-search"></a>Pesquisa aprimorada
@@ -104,8 +104,8 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 
 ## <a name="collaborate"></a>Colaboração
 
-Trabalhe em equipe para resolver problemas.
-<br><br>
+Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Duração do vídeo: 4,22 minutos*
+
 > [!VIDEO https://www.youtube.com/embed/dKLJsiK1QU8]
 
 ### <a name="cloud-first-workflow"></a>Fluxo de trabalho na nuvem
@@ -142,8 +142,8 @@ Para obter mais informações, consulte a postagem no blog [Revisões de código
 
 ## <a name="debug"></a>Depurar
 
-Concentração com direcionamento preciso.
-<br><br>
+Veja o vídeo a seguir para saber mais sobre como zerar com a segmentação precisa enquanto depura. <br><br>*Duração do vídeo: 3,54 minutos*
+
 > [!VIDEO https://www.youtube.com/embed/hr72Fs8n_9c]
 
 ### <a name="performance-gains"></a>Benefícios no desempenho
