@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 21486fb42f689fbdd5876353a0d99b8f818cf817
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9953a1c58ea6ddd13ca0555959ed621905ba710a
+ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974404"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67552877"
 ---
 # <a name="known-issues-for-containers"></a>Problemas conhecidos de contêineres
 
@@ -53,6 +53,7 @@ Estes problemas conhecidos ocorrem quando as Ferramentas de Build do Visual Stud
 Os problemas conhecidos a seguir podem ocorrer ao usar o contêiner das Ferramentas de Build. Para ver se os problemas foram corrigidos ou se há outros problemas conhecidos, visite https://developercommunity.visualstudio.com.
 
 * O IntelliTrace pode não funcionar em [alguns cenários](https://github.com/Microsoft/vstest/issues/940) dentro de um contêiner.
+* Em versões mais antigas do Docker for Windows, o tamanho da imagem de contêiner padrão é de apenas 20 GB e não cabe nas Ferramentas de Criação. Siga as [instruções para alterar o tamanho da imagem](https://docs.microsoft.com/virtualization/windowscontainers/manage-containers/container-storage#image-size) para 127 GB ou mais.
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
