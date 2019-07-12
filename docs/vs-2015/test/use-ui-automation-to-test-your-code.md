@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 329b3abc06cbe212215b8e4981aacb79f668e6c4
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65695313"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825536"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar automação de interface do usuário para testar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -297,23 +297,23 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - **Editor de Códigos:**
 
-    - adicione manualmente códigos dos controles ao teste, como descrito na seção [Codificar ações e propriedades de controle de IU](#actions) deste tópico.
+  - adicione manualmente códigos dos controles ao teste, como descrito na seção [Codificar ações e propriedades de controle de IU](#actions) deste tópico.
 
-    - Depois de criar um teste de IU codificado, você poderá modificá-lo para ser controlado por dados. Para obter mais informações, consulte [Criar um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md).
+  - Depois de criar um teste de IU codificado, você poderá modificá-lo para ser controlado por dados. Para obter mais informações, consulte [Criar um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md).
 
-    - Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para isso, adicione o método UITestControl.WaitForControlXXX() apropriado. Para obter uma lista completa dos métodos disponíveis, consulte [Como fazer Testes de IU Codificados Aguardarem Eventos Específicos Durante a Reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obter um exemplo de teste de IU codificado que aguarde a habilitação de um controle usando o método WaitForControlEnabled, confira [Passo a passo: criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
+  - Na reprodução de um teste de IU codificado, é possível instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Para isso, adicione o método UITestControl.WaitForControlXXX() apropriado. Para obter uma lista completa dos métodos disponíveis, consulte [Como fazer Testes de IU Codificados Aguardarem Eventos Específicos Durante a Reprodução](../test/making-coded-ui-tests-wait-for-specific-events-during-playback.md). Para obter um exemplo de teste de IU codificado que aguarde a habilitação de um controle usando o método WaitForControlEnabled, confira [Passo a passo: criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md).
 
-    - Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10. Para obter mais informações, consulte [Usar Controles HTML5 em Testes de IU Codificados](../test/using-html5-controls-in-coded-ui-tests.md).
+  - Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluídos no Internet Explorer 9 e no Internet Explorer 10. Para obter mais informações, consulte [Usar Controles HTML5 em Testes de IU Codificados](../test/using-html5-controls-in-coded-ui-tests.md).
 
-    - **Diretrizes de codificação do teste de IU codificado:**
+  - **Diretrizes de codificação do teste de IU codificado:**
 
-        - [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
+    - [Anatomia de um teste de IU codificado](../test/anatomy-of-a-coded-ui-test.md)
 
-        - [Melhores práticas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
+    - [Melhores práticas para testes de IU codificados](../test/best-practices-for-coded-ui-tests.md)
 
-        - [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)
+    - [Testando um aplicativo grande com vários mapas de interface do usuário](../test/testing-a-large-application-with-multiple-ui-maps.md)
 
-        - [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+    - [Configurações e plataformas com suporte para testes de IU codificados e gravações das ações](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
 
 ### <a name="generatedCode"></a> O Código Gerado
  Quando você escolhe **Gerar Código**, diversas partes do código são criadas:

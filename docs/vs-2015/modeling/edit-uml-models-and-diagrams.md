@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 446e6eb6231ff4d744f22bd3d1ba4fa6dcca6525
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442974"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823186"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -164,7 +164,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
      \- ou -  
   
-- Sobre o **Designers de arquitetura** barra de ferramentas, clique no sinal de adição (**+**) ou sinal de subtração (**-**), ou escolha um nível de zoom.  
+- Sobre o **Designers de arquitetura** barra de ferramentas, clique no sinal de adição ( **+** ) ou sinal de subtração ( **-** ), ou escolha um nível de zoom.  
   
 ## <a name="Searching"></a> Pesquisando em um diagrama  
  A função Localizar rápido encontrará itens em um diagrama. Você deve definir **xaminar:** à **documento atual**.  
@@ -294,9 +294,9 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
   
 - Clique com botão direito do elemento ou em **Gerenciador de modelos UML** ou em um diagrama e clique **excluir do modelo**.  
   
-    - O elemento é excluído de todos os diagramas no qual ele aparece.  
-  
-    - Todo relacionamento que termina nesse elemento também é excluído do modelo.  
+  - O elemento é excluído de todos os diagramas no qual ele aparece.  
+
+  - Todo relacionamento que termina nesse elemento também é excluído do modelo.  
   
 #### <a name="to-delete-a-relationship-from-the-model"></a>Para excluir uma relação do modelo  
   

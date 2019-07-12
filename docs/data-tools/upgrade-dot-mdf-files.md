@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 334898fe9bb6ec5a7dcd84e081f99994e18ccb89
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b2b6029002e62f5b13f5fc40bc24f817364c148
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62565154"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821668"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 
@@ -95,9 +95,9 @@ Você também pode modificar uma conexão do SQL Server Express para usar o Loca
 
 - No Visual Studio, abra o projeto sem atualizá-lo.
 
-    - Para executar o projeto, selecione a **F5** chave.
+  - Para executar o projeto, selecione a **F5** chave.
 
-    - Para editar o banco de dados, abra o *. mdf* arquivo no **Gerenciador de soluções**e expanda o nó no **Gerenciador de servidores** para trabalhar com seu banco de dados.
+  - Para editar o banco de dados, abra o *. mdf* arquivo no **Gerenciador de soluções**e expanda o nó no **Gerenciador de servidores** para trabalhar com seu banco de dados.
 
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para tornar o SQL Server Express o mecanismo de banco de dados padrão
 

@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 631c6daf808e08b9c7da9147116464a4140b076f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 77de4fea82e05f539c89a75178d93f985e5a0fb3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65683542"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823853"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,30 +55,30 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
  Defina o modo de interação como sendo gestos de aperto e zoom com dois dedos.  
   
 - ![Destino do simulador dois dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
-  
-    - O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.  
-  
-    - Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
-  
-    - Gire a roda do mouse para trás ou para a frente a fim de alterar a distância simulada dos dois dedos antes de apertar ou aplicar zoom.  
-  
+
+  - O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.  
+
+  - Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
+
+  - Gire a roda do mouse para trás ou para a frente a fim de alterar a distância simulada dos dois dedos antes de apertar ou aplicar zoom.  
+
 - ![Aperto, zoom e girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
-  
-    - Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de ampliar a exibição (aperto).  
-  
-    - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de reduzir a exibição (zoom).  
+
+  - Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de ampliar a exibição (aperto).  
+
+  - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de reduzir a exibição (zoom).  
   
 ## <a name="object-rotation"></a>Rotação de objeto  
  O **rotação da emulação de toque** botão define o modo de interação para gestos de rotação usando dois dedos.  
   
 - Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
   
-    - Gire a roda do mouse para trás ou para frente para alterar a orientação simulada dos dois dedos antes de girar o objeto.  
-  
+  - Gire a roda do mouse para trás ou para frente para alterar a orientação simulada dos dois dedos antes de girar o objeto.  
+
 - Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de girar o objeto no sentido anti-horário. Conforme você gira a roda do mouse, um dos dois ícones de alvo gira em torno do outro para indicar o tamanho relativo da rotação.  
-  
-    - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
-  
+
+  - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
+
 ## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar o modo Sempre visível  
  Você pode configurar a janela do simulador para ficar sempre por cima das outras janelas. O **alternar janela superior** botão habilita ou desabilita a **sempre visível** modo da janela do simulador.  
   

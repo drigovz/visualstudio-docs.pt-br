@@ -14,12 +14,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7527cb029374ae8246c827b057800b751c377d12
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 098aa9499dd4c1073377ed6aa5e8fa2a6fb37ca8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66327831"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823881"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guia de teste para plug-ins de controle do código-fonte
 Esta seção fornece diretrizes para testar o plug-in com o controle de origem [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. É fornecida uma visão geral abrangente das áreas mais comuns de testes, bem como algumas das áreas mais complexas que podem ser um problemas. Esta visão geral não deve ser uma lista completa de casos de teste.
@@ -53,43 +53,43 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
 
 - [Área de teste 1: adicionar e abrir do controle do código-fonte](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    - Caso 1a: Adicionar solução ao controle do código-fonte
+  - Caso 1a: Adicionar solução ao controle do código-fonte
 
-    - Caso 1b: Abrir solução do controle de origem
+  - Caso 1b: Abrir solução do controle de origem
 
-    - Caso 1c: Adicionar solução de controle de origem
+  - Caso 1c: Adicionar solução de controle de origem
 
 - [Área de teste 2: obter do controle do código-fonte](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
 - [Área de teste 3: fazer e desfazer check-out](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    - Caso 3: Fazer Check-Out / desfazer check-out
+  - Caso 3: Fazer Check-Out / desfazer check-out
 
-    - Caso 3a: Fazer Check-Out
+  - Caso 3a: Fazer Check-Out
 
-    - Caso 3b: Check-out desconectado
+  - Caso 3b: Check-out desconectado
 
-    - Caso 3c: Editar consulta/consulta salvar (QEQS)
+  - Caso 3c: Editar consulta/consulta salvar (QEQS)
 
-    - 3d de caso: Check-out silenciosa
+  - 3d de caso: Check-out silenciosa
 
-    - Caso 3e: Desfazer check-out
+  - Caso 3e: Desfazer check-out
 
 - [Área de teste 4: fazer check-in](../../extensibility/internals/test-area-4-check-in.md)
 
-    - Caso 4a: Itens modificados
+  - Caso 4a: Itens modificados
 
-    - Caso 4b: Adicionando arquivos
+  - Caso 4b: Adicionando arquivos
 
-    - Caso 4c: Adicionando projetos
+  - Caso 4c: Adicionando projetos
 
 - [Área de teste 5: alterar controle do código-fonte](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    - Caso 5a: associar
+  - Caso 5a: associar
 
-    - Caso 5b: desassociar
+  - Caso 5b: desassociar
 
-    - Caso 5c: Reassociar
+  - Caso 5c: Reassociar
 
 - [Área de teste 6: excluir](../../extensibility/internals/test-area-6-delete.md)
 
@@ -97,9 +97,9 @@ Esta seção fornece diretrizes para testar o plug-in com o controle de origem [
 
 - [Área de teste 8: alternância de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    - 8a case: Alterações automáticas
+  - 8a case: Alterações automáticas
 
-    - 8b case: Alteração de solução
+  - 8b case: Alteração de solução
 
 ## <a name="see-also"></a>Consulte também
 - [Plug-ins de controle do código-fonte](../../extensibility/source-control-plug-ins.md)

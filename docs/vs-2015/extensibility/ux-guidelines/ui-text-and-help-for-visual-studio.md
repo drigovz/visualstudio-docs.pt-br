@@ -8,12 +8,12 @@ ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c2fa6b0ddf0e7596f5345a3c36290fa931d3bb4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ea4f2b49838340fcee41bc9c41ef94558e44825e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079000"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823619"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto da interface do usuário e a Ajuda do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -193,11 +193,11 @@ ms.locfileid: "60079000"
 
 - Algumas perguntas se perguntar ao construir uma mensagem de erro:
 
-    - O usuário pode descobrir como resolver o problema com este erro sozinho?
+  - O usuário pode descobrir como resolver o problema com este erro sozinho?
 
-    - O usuário usa o mesmo vocabulário que esse erro?
+  - O usuário usa o mesmo vocabulário que esse erro?
 
-    - É esse erro ambigious ou compartilhados em várias situações? Nesse caso, como você orientar os usuários para a solução que precisam?
+  - É esse erro ambigious ou compartilhados em várias situações? Nesse caso, como você orientar os usuários para a solução que precisam?
 
 #### <a name="build-errors"></a>Erros de build
  Como o Visual Studio é uma ferramenta de desenvolvimento de software, muitos de seus componentes têm uma compilação, convertendo, codificação ou etapa para converter o trabalho do desenvolvedor em formato binário. Essas conversões podem causar erros quando o compilador não pode processar arquivos criados incorretamente ou quando as opções do compilador não foram definidas corretamente.

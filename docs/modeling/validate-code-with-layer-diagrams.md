@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e21c3699d796d6037d3b8ca0e744e792b9810b6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62971349"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824533"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Validar o código com diagramas de dependência
 
@@ -66,8 +66,8 @@ Validação de dependência ocorre em tempo real e erros são exibidos imediatam
 
 * Para habilitar análise completa da solução ao usar a validação de dependência dinâmica, abra as configurações de opções da barra de ouro que aparece na **Error List**.
 
-   - Você poderá ignorar permanentemente a barra de ouro, se você não estiver interessado em ver todos os problemas de arquiteturas em sua solução.
-   - Se você não habilitar a análise de solução completa, a análise é feita apenas para os arquivos que está sendo editados.
+  - Você poderá ignorar permanentemente a barra de ouro, se você não estiver interessado em ver todos os problemas de arquiteturas em sua solução.
+  - Se você não habilitar a análise de solução completa, a análise é feita apenas para os arquivos que está sendo editados.
 
 * Ao atualizar projetos para habilitar a validação em tempo real, uma caixa de diálogo mostra o andamento da conversão.
 

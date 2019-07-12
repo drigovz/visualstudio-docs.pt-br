@@ -11,12 +11,12 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76f66d11a824a756b262460ebd4e7af78e88f766
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 19f22fc56881287cfb501143aaa4397f9a035d78
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038167"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821645"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,23 +39,23 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
   
 - [Metadados de item](#BKMK_ItemMetadata)  
   
-    - [Referenciando metadados de item em um arquivo de projeto](#BKMK_ReferencingItemMetadata)  
-  
-    - [Metadados de itens conhecidos](#BKMK_WellKnownItemMetadata)  
-  
-    - [Transformando os tipos de item ao usar metadados](#BKMK_Transforming)  
+  - [Referenciando metadados de item em um arquivo de projeto](#BKMK_ReferencingItemMetadata)  
+
+  - [Metadados de itens conhecidos](#BKMK_WellKnownItemMetadata)  
+
+  - [Transformando os tipos de item ao usar metadados](#BKMK_Transforming)  
   
 - [Definições de item](#BKMK_ItemDefinitions)  
   
 - [Atributos de itens em um ItemGroup de um destino](#BKMK_AttributesWithinTargets)  
   
-    - [Remover atributo](#BKMK_RemoveAttribute)  
-  
-    - [Atributo KeepMetadata](#BKMK_KeepMetadata)  
-  
-    - [Atributo RemoveMetadata](#BKMK_RemoveMetadata)  
-  
-    - [Atributo KeepDuplicates](#BKMK_KeepDuplicates)  
+  - [Remover atributo](#BKMK_RemoveAttribute)  
+
+  - [Atributo KeepMetadata](#BKMK_KeepMetadata)  
+
+  - [Atributo RemoveMetadata](#BKMK_RemoveMetadata)  
+
+  - [Atributo KeepDuplicates](#BKMK_KeepDuplicates)  
   
 ## <a name="BKMK_Creating1"></a> Criando itens em um arquivo de projeto  
  Os itens são declarados no arquivo de projeto como elementos filho de um elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). O nome do elemento filho é o tipo do item. O atributo `Include` do elemento especifica os itens (arquivos) a serem incluídos com esse tipo de item. Por exemplo, o XML a seguir cria um tipo de item chamado `Compile`, que inclui dois arquivos.  

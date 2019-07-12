@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2fbdc27ba7a3ae69494bf8129e4c870f325fe621
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407774"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824431"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Depuração remota do ASP.NET Core no IIS no Azure no Visual Studio
 
@@ -63,7 +63,7 @@ Não há suporte para depuração entre dois computadores conectados por meio de
     No Visual Studio de 2019, digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **asp.net**, escolha **modelos**, em seguida, escolha **criar novo aplicativo Web do ASP.NET Core** . Na caixa de diálogo que aparece, nomeie o projeto **MyASPApp**e, em seguida, escolha **criar**. Em seguida, escolha **aplicativo Web (Model-View-Controller)** e, em seguida, escolha **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    No Visual Studio 2017, escolha **arquivo > Novo > projeto**, em seguida, selecione **Visual C# > Web > aplicativo Web ASP.NET Core**. Na seção de modelos do ASP.NET Core, selecione **aplicativo Web (Model-View-Controller)**. Certifique-se de que o ASP.NET Core 2.1 é selecionado, que **Habilitar suporte ao Docker** não está selecionado e que **autenticação** está definido como **sem autenticação**. Nomeie o projeto **MyASPApp**.
+    No Visual Studio 2017, escolha **arquivo > Novo > projeto**, em seguida, selecione **Visual C# > Web > aplicativo Web ASP.NET Core**. Na seção de modelos do ASP.NET Core, selecione **aplicativo Web (Model-View-Controller)** . Certifique-se de que o ASP.NET Core 2.1 é selecionado, que **Habilitar suporte ao Docker** não está selecionado e que **autenticação** está definido como **sem autenticação**. Nomeie o projeto **MyASPApp**.
     ::: moniker-end
 
 1. Abra o arquivo About.cshtml.cs e defina um ponto de interrupção na `OnGet` método (em modelos mais antigos, abra HomeController.cs em vez disso e defina o ponto de interrupção `About()` método).
@@ -108,9 +108,9 @@ Este artigo inclui etapas sobre como configurar uma configuração básica do II
 
 * Se você deseja obter ajuda para certificar-se de que seu aplicativo é configurado, implantado e executando corretamente no IIS para que você possa depurar, siga as etapas neste tópico.
 
-    * Antes de começar, siga as etapas descritas em [instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal).
+  * Antes de começar, siga as etapas descritas em [instalar e executar o IIS](/azure/virtual-machines/windows/quick-create-portal).
 
-    * Quando você abre a porta 80 no grupo de segurança de rede, também abrir o [corrigir porta](#bkmk_openports) para o depurador remoto (4024 ou 4022). Dessa forma, você não precisará abri-lo mais tarde.
+  * Quando você abre a porta 80 no grupo de segurança de rede, também abrir o [corrigir porta](#bkmk_openports) para o depurador remoto (4024 ou 4022). Dessa forma, você não precisará abri-lo mais tarde.
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>Atualizar configurações de segurança do navegador no Windows Server
 
@@ -251,7 +251,7 @@ Baixe a versão das ferramentas remotas que corresponde à sua versão do Visual
 
 7. Clique em **Anexar**.
 
-8. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >**.
+8. Abra o site do computador remoto. Em um navegador, vá para **http://\<nome do computador remoto >** .
 
     Você deve ver a página da web ASP.NET.
 9. No aplicativo ASP.NET em execução, clique no link para o **sobre** página.

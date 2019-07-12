@@ -16,12 +16,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1c6183eece2799d99907cd5f5ec9489a268542
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6fc02c11a4ebceea431fc06a1bd1cfdb1063097d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117649"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823533"
 ---
 # <a name="supported-code-changes-c"></a>Alterações de código suportadas (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,17 +57,17 @@ Editar e Continuar trata a maioria dos tipos de alterações de código dentro d
   
 - Depurando código LINQ em determinadas circunstâncias. Para obter mais informações, consulte [Depurando LINQ](../debugger/debugging-linq.md).  
   
-    - Capturando uma variável que não havia sido capturada antes.  
-  
-    - Alterando o tipo de expressão de consulta (por exemplo, selecione um = > selecione Novo {um = um};)  
-  
-    - Removendo um `where` que contém uma instrução ativa.  
-  
-    - Removendo um `let` que contém uma instrução ativa.  
-  
-    - Removendo um `join` que contém uma instrução ativa.  
-  
-    - Removendo um `orderby` que contém uma instrução ativa.  
+  - Capturando uma variável que não havia sido capturada antes.  
+
+  - Alterando o tipo de expressão de consulta (por exemplo, selecione um = > selecione Novo {um = um};)  
+
+  - Removendo um `where` que contém uma instrução ativa.  
+
+  - Removendo um `let` que contém uma instrução ativa.  
+
+  - Removendo um `join` que contém uma instrução ativa.  
+
+  - Removendo um `orderby` que contém uma instrução ativa.  
   
 - Depuração de modo misto (nativo/gerenciado).  
   

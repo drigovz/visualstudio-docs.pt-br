@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: daf5251aa32f4101bfba21d053d72abceef1eb15
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a103777005718a54d271d2f94cb0e5cf0b094ce6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440851"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826140"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>Passo a passo: Inserir dados em uma pasta de trabalho em um servidor
   Este passo a passo demonstra como inserir dados em um conjunto de dados é armazenado em cache em uma pasta de trabalho do Microsoft Office Excel sem iniciar o Excel usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -54,9 +54,9 @@ ms.locfileid: "63440851"
 
 - Acesso a uma instância em execução do Microsoft SQL Server ou Microsoft SQL Server Express que tem o banco de dados de exemplo AdventureWorksLT anexado a ele. Você pode baixar o banco de dados AdventureWorksLT a [site da CodePlex](http://go.microsoft.com/fwlink/?linkid=87843). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+  - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-class-library-project-that-defines-a-dataset"></a>Criar um projeto de biblioteca de classe que define um conjunto de dados
  Para usar o mesmo conjunto de dados em um projeto de pasta de trabalho do Excel e um aplicativo de console, você deve definir o conjunto de dados em um assembly separado que é referenciado por ambos esses projetos. Para este passo a passo, defina o conjunto de dados em um projeto de biblioteca de classe.
@@ -104,7 +104,7 @@ ms.locfileid: "63440851"
 
 6. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
-7. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **produto (SalesLT)**.
+7. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **produto (SalesLT)** .
 
 8. Clique em **Finalizar**.
 

@@ -12,20 +12,20 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fbb2f118d903eae2124e705f14c7aa7b51bf9c4d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403253"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821837"
 ---
-# <a name="accessing-stored-font-and-color-settings"></a>Acessando configurações de cor e a fonte armazenada
+# <a name="accessing-stored-font-and-color-settings"></a>Acessando as configurações de cores e fontes armazenadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) armazena configurações modificadas para fontes e cores no registro. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface para acessar essas configurações.  
   
 ## <a name="to-initiate-state-persistence-of-fonts-and-colors"></a>Para iniciar a persistência de estado de fontes e cores  
- Informações de fonte e cor são armazenadas por categoria no seguinte local do registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\  *\<CategoryGUID >*], onde  *\<CategoryGUID >* é a GUID da categoria.  
+ Informações de fonte e cor são armazenadas por categoria no seguinte local do registro: [HKCU\SOFTWARE\Microsoft \Visual Studio\\ *\<versão do Visual Studio >* \FontAndColors\\  *\<CategoryGUID >* ], onde  *\<CategoryGUID >* é a GUID da categoria.  
   
  Portanto, para iniciar a persistência, um VSPackage deve:  
   
@@ -35,16 +35,16 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento int
   
 - Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir uma categoria a ser mantido usando o GUID da categoria e um sinalizador de modo como argumentos.  
   
-     O modo especificado pela `fFlags` argumento, é construído a partir de valores no <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumeração. Esse modo de controles:  
-  
-    - As configurações que podem ser acessadas por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
-  
-    - Todas as configurações ou apenas aqueles que modificam os usuários e que são recuperáveis por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
-  
-    - A maneira de propagar as alterações às configurações do usuário.  
-  
-    - O formato dos valores de cor que são usados.  
-  
+  O modo especificado pela `fFlags` argumento, é construído a partir de valores no <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumeração. Esse modo de controles:  
+
+  - As configurações que podem ser acessadas por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+
+  - Todas as configurações ou apenas aqueles que modificam os usuários e que são recuperáveis por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+
+  - A maneira de propagar as alterações às configurações do usuário.  
+
+  - O formato dos valores de cor que são usados.  
+
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>A persistência de estado de uso de fontes e cores  
  Persistência de fontes e cores envolve:  
   

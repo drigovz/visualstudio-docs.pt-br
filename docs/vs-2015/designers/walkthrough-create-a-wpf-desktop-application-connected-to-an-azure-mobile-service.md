@@ -9,14 +9,14 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ac6e9a890c8009e493341b4bcda87f1e3e162d90
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65693543"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824555"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um Aplicativo de área de trabalho do WPF conectado a um Serviço Móvel do Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente um aplicativo de área de trabalho moderno que usa um serviço móvel do Azure para armazenar e fornecer dados.  
@@ -28,9 +28,9 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
   
 - Uma conta ativa do Microsoft Azure.  
   
-    - Você pode se inscrever para uma conta de avaliação gratuita [aqui](https://azure.microsoft.com/pricing/free-trial/).  
-  
-    - Você pode ativar os [benefícios de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Sua assinatura do MSDN fornece a você créditos mensais que podem ser usados para serviços pagos do Azure.  
+  - Você pode se inscrever para uma conta de avaliação gratuita [aqui](https://azure.microsoft.com/pricing/free-trial/).  
+
+  - Você pode ativar os [benefícios de assinante do MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Sua assinatura do MSDN fornece a você créditos mensais que podem ser usados para serviços pagos do Azure.  
   
 ## <a name="create-a-project-and-add-references"></a>Criar um projeto e adicionar referências  
  A primeira etapa é criar um projeto WPF e adicionar um pacote NuGet que permita conexão com os serviços móveis do Azure.  

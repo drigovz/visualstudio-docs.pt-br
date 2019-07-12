@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4922b791ea3ad7ab58c231342e11b5c175d4895
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 795cc62ca88f7ede87e978d910d397e0ce6e2ad7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430355"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825979"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Passo a passo: Estender um tipo de item de projeto do SharePoint
   Você pode usar o **modelo de conectividade de dados corporativos** item de projeto para criar um modelo para o serviço de conectividade de dados comerciais (BDC) no SharePoint. Por padrão, quando você cria um modelo usando esse item de projeto, os dados no modelo não são exibidos aos usuários. Você também deve criar uma lista externa no SharePoint para permitir que os usuários exibam os dados.
@@ -28,9 +28,9 @@ ms.locfileid: "63430355"
 
 - Criando uma extensão do Visual Studio que executa duas tarefas principais:
 
-    - Ele gera uma lista externa que exibe os dados em um modelo BDC. A extensão usa o modelo de objeto para o sistema de projeto do SharePoint para gerar uma *Elements. XML* arquivo que define a lista. Ele também adiciona o arquivo ao projeto para que ele é implantado junto com o modelo BDC.
+  - Ele gera uma lista externa que exibe os dados em um modelo BDC. A extensão usa o modelo de objeto para o sistema de projeto do SharePoint para gerar uma *Elements. XML* arquivo que define a lista. Ele também adiciona o arquivo ao projeto para que ele é implantado junto com o modelo BDC.
 
-    - Ele adiciona um item de menu de atalho para o **modelo de conectividade de dados corporativos** itens de projeto do **Gerenciador de soluções**. Os desenvolvedores podem clicar neste item de menu para gerar uma lista externa para o modelo BDC.
+  - Ele adiciona um item de menu de atalho para o **modelo de conectividade de dados corporativos** itens de projeto do **Gerenciador de soluções**. Os desenvolvedores podem clicar neste item de menu para gerar uma lista externa para o modelo BDC.
 
 - Criando um pacote de extensão VSIX (Visual Studio) para implantar o assembly de extensão.
 

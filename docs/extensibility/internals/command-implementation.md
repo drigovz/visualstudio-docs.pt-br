@@ -10,12 +10,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c307f54deff676ce1add8c745e9d92f1bb3fd657
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: fbd0a9a1886bc1f8743ac8919bcc9cb39559dd19
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66342196"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824936"
 ---
 # <a name="command-implementation"></a>Implementação do comando
 Para implementar um comando em um VSPackage, você deve executar as seguintes tarefas:
@@ -67,23 +67,23 @@ if ( null != mcs )
 
 - Se sua implementação de qualquer um dos métodos reconhece o GUID e o comando e, em seguida, o método deve definir o campo de sinalizadores de comando de cada comando (na `prgCmds` parâmetro) usando os seguintes <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> sinalizadores:
 
-    - `OLECMDF_SUPPORTED`: Há suporte para o comando.
+  - `OLECMDF_SUPPORTED`: Há suporte para o comando.
 
-    - `OLECMDF_INVISIBLE`: O comando não deve estar visível.
+  - `OLECMDF_INVISIBLE`: O comando não deve estar visível.
 
-    - `OLECMDF_LATCHED`: O comando é ativado e parece ter sido marcada.
+  - `OLECMDF_LATCHED`: O comando é ativado e parece ter sido marcada.
 
-    - `OLECMDF_ENABLED`: O comando é habilitado.
+  - `OLECMDF_ENABLED`: O comando é habilitado.
 
-    - `OLECMDF_DEFHIDEONCTXTMENU`: O comando deve ser ocultado, se ele for exibido em um menu de atalho.
+  - `OLECMDF_DEFHIDEONCTXTMENU`: O comando deve ser ocultado, se ele for exibido em um menu de atalho.
 
-    - `OLECMDF_NINCHED`: O comando é um controlador de menu e não está habilitado, mas sua lista do menu suspenso não está vazia e ainda está disponível. (Esse sinalizador é raramente usado.)
+  - `OLECMDF_NINCHED`: O comando é um controlador de menu e não está habilitado, mas sua lista do menu suspenso não está vazia e ainda está disponível. (Esse sinalizador é raramente usado.)
 
 - Se o comando tiver sido definido na *. VSCT* do arquivo com o `TextChanges` sinalizador, defina os seguintes parâmetros:
 
-    - Defina as `rgwz` elemento do `pCmdText` parâmetro para o novo texto do comando.
+  - Defina as `rgwz` elemento do `pCmdText` parâmetro para o novo texto do comando.
 
-    - Defina as `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.
+  - Defina as `cwActual` elemento do `pCmdText` parâmetro para o tamanho da cadeia de caracteres de comando.
 
 Além disso, certifique-se de que o contexto atual não é uma função de automação, a menos que o comando é projetado especificamente para lidar com funções de automação.
 

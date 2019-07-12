@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
-ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.openlocfilehash: 3ace83b86b3b1772cd111a36b5f011d023189501
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65476587"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824514"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 
@@ -355,11 +355,11 @@ Um diagrama de classe tem os seguintes recursos principais:
 
 - Tipos como classes, interfaces e enumerações:
 
-    - Um *classe* é a definição de objetos que compartilham características estruturais ou comportamentais específicas.
+  - Um *classe* é a definição de objetos que compartilham características estruturais ou comportamentais específicas.
 
-    - Uma *interface* define uma parte do comportamento externamente visível de um objeto.
+  - Uma *interface* define uma parte do comportamento externamente visível de um objeto.
 
-    - Uma *enumeração* é um classificador que contém uma lista de valores literais.
+  - Uma *enumeração* é um classificador que contém uma lista de valores literais.
 
 - *Atributos* são valores de um determinado tipo que descrevem cada instância de um *classificador*. Um classificador é um nome geral para tipos, componentes, casos de uso e até atores.
 

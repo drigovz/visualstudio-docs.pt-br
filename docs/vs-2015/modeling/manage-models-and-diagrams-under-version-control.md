@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55142e000a22b6e45543c6fc14594a12c93f4f92
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 76e8c92707279979cec6406bd1bcd5ad44a1f315
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680298"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825792"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gerenciar modelos e diagramas com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
   
 - Cada diagrama é armazenado em dois arquivos. Por exemplo, um diagrama de classe tem:  
   
-    - **DiagramName.classdiagram** -se esse arquivo é excluído ou corrompido, o diagrama será perdido, mas as classes e as associações que ele mostrava ainda estarão no modelo e podem ser vistas no Gerenciador de modelos UML.  
-  
-    - **DiagramName.classdiagram.layout** -se esse arquivo é excluído, as formas ainda aparecerão o diagrama, mas eles perderão seus tamanhos e posições. Cada arquivo de layout é subsidiário a um arquivo de diagrama. Para vê-lo, clique em [+] ao lado do arquivo de diagrama no Gerenciador de soluções.  
+  - **DiagramName.classdiagram** -se esse arquivo é excluído ou corrompido, o diagrama será perdido, mas as classes e as associações que ele mostrava ainda estarão no modelo e podem ser vistas no Gerenciador de modelos UML.  
+
+  - **DiagramName.classdiagram.layout** -se esse arquivo é excluído, as formas ainda aparecerão o diagrama, mas eles perderão seus tamanhos e posições. Cada arquivo de layout é subsidiário a um arquivo de diagrama. Para vê-lo, clique em [+] ao lado do arquivo de diagrama no Gerenciador de soluções.  
   
 > [!NOTE]
 > É importante manter a consistência entre os arquivos. Por exemplo, se você usar o controle de origem para reverter as alterações em um arquivo. UML, você deve reverter as alterações correspondentes na. * diagram e. layout arquivos ao mesmo tempo. Elementos representados em um. \*arquivo de diagrama será perdido se eles não forem também representados em um arquivo. UML.  
@@ -55,9 +55,9 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
   
 - Para ajudar a garantir que você altere somente o pacote que você está trabalhando:  
   
-    - Defina as **LinkedPackage** propriedade de uma classe, componente ou diagrama de caso de uso UML.  
-  
-    - No Gerenciador de modelos UML, arraste uma atividade ou interação para seu pacote assim que você criou. Esse elemento será exibido no Gerenciador de modelos UML quando você cria o primeiro nó no diagrama de sequência ou atividade.  
+  - Defina as **LinkedPackage** propriedade de uma classe, componente ou diagrama de caso de uso UML.  
+
+  - No Gerenciador de modelos UML, arraste uma atividade ou interação para seu pacote assim que você criou. Esse elemento será exibido no Gerenciador de modelos UML quando você cria o primeiro nó no diagrama de sequência ou atividade.  
   
 - Para ajudar a manter o controle de pacotes, renomeie os arquivos de pacote para refletir os nomes de pacote real.  
   

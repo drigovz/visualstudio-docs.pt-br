@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe17c72463d58cb4e1ac0a76d904416559ed224b
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 54218fd5c351b400ce9744620987f50d35e0558f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690546"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825391"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Como: Adicionar um manipulador do tipo "arrastar e soltar"
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "65690546"
   
 - As duas primeiras seções descrevem métodos alternativos para definir um manipulador de gestos:  
   
-    - [Definindo manipuladores de gestos substituindo métodos ShapeElement&lt;1](#overrideShapeElement). Os métodos `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e outros podem ser substituídos.  
-  
-    - [Definindo manipuladores de gestos usando MEF](#MEF). Use esse método se desejar permitir a desenvolvedores terceiros definir seus próprios manipuladores à DSL. Usuários podem escolher instalar as extensões de terceiros após instalar a DSL.  
+  - [Definindo manipuladores de gestos substituindo métodos ShapeElement&lt;1](#overrideShapeElement). Os métodos `OnDragDrop`, `OnDoubleClick`, `OnDragOver` e outros podem ser substituídos.  
+
+  - [Definindo manipuladores de gestos usando MEF](#MEF). Use esse método se desejar permitir a desenvolvedores terceiros definir seus próprios manipuladores à DSL. Usuários podem escolher instalar as extensões de terceiros após instalar a DSL.  
   
 - [Como decodificar o Item arrastado](#extracting). Elementos podem ser arrastados de qualquer janela ou da área de trabalho, bem como de uma DSL.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7488bb8b54751c7780cb9751309d227e5d5cb758
-ms.sourcegitcommit: 25570fb5fb197318a96d45160eaf7def60d49b2b
+ms.openlocfilehash: 4b209fad02cdcb3da230143a2c13ff4eaa648d76
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/30/2019
-ms.locfileid: "66401090"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825628"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Passo a passo: Criar uma etapa de implantação para projetos do SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.
@@ -29,9 +29,9 @@ ms.locfileid: "66401090"
 
 - Criando uma extensão do Visual Studio que executa duas tarefas principais:
 
-    - A extensão define uma etapa de implantação para atualizar soluções do SharePoint.
+  - A extensão define uma etapa de implantação para atualizar soluções do SharePoint.
 
-    - A extensão cria uma extensão de projeto que define uma nova configuração de implantação, que é um conjunto de etapas de implantação que são executadas para um determinado projeto. A nova configuração de implantação inclui a etapa de implantação personalizada e várias etapas de implantação interna.
+  - A extensão cria uma extensão de projeto que define uma nova configuração de implantação, que é um conjunto de etapas de implantação que são executadas para um determinado projeto. A nova configuração de implantação inclui a etapa de implantação personalizada e várias etapas de implantação interna.
 
 - Crie dois comandos do SharePoint personalizados que chama o assembly de extensão. Comandos do SharePoint são métodos que podem ser chamados por assemblies de extensão para usar APIs no modelo de objeto de servidor para o SharePoint. Para obter mais informações, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 

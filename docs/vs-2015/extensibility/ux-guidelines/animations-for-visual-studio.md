@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: c07fb0887ae01ec917b39f5d7537d5a78fb5a4c6
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077245"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825351"
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "60077245"
 
 - **Medição de tempo e a velocidade são importantes** para garantir que as transições de se sentir rápida e natural:
 
-    - Concluir a transição animada no meio de um segundo (500 milissegundos).
+  - Concluir a transição animada no meio de um segundo (500 milissegundos).
 
-    - As animações que podem ocorrer com frequência precisam ser rápido o suficiente para que eles não interrupção o fluxo de trabalho do usuário.
+  - As animações que podem ocorrer com frequência precisam ser rápido o suficiente para que eles não interrupção o fluxo de trabalho do usuário.
 
-    - Animações não devem ser tão rápido ou brusca que é difícil de entender, mas não tão lento que ele faz um impaciente a transição concluir.
+  - Animações não devem ser tão rápido ou brusca que é difícil de entender, mas não tão lento que ele faz um impaciente a transição concluir.
 
-    - Use o tempo de variável para enfatizar a importância. Por exemplo, ao navegar por meio de uma sequência de itens em um diagrama de classe, acelerar por transições entre os itens e mais lento para se concentrar em itens importantes.
+  - Use o tempo de variável para enfatizar a importância. Por exemplo, ao navegar por meio de uma sequência de itens em um diagrama de classe, acelerar por transições entre os itens e mais lento para se concentrar em itens importantes.
 
 - **Usar a atenuação de não-linear gradual** de um estado para outro, dando uma ideia do movimento calmo e natural
 
@@ -49,13 +49,13 @@ ms.locfileid: "60077245"
 
 - **Ao mostrar o progresso ou status** através de animação:
 
-    - Pare mostrando a movimentação de progresso quando o processo subjacente não está avançando.
+  - Pare mostrando a movimentação de progresso quando o processo subjacente não está avançando.
 
-    - Distingue os processos indeterminados de processos de determinada.
+  - Distingue os processos indeterminados de processos de determinada.
 
-    - Certifique-se de que uma animação tem a identificação de estados de conclusão e falha.
+  - Certifique-se de que uma animação tem a identificação de estados de conclusão e falha.
 
-    - Minimize o uso de animações do efeito que mostram o status e certifique-se de que eles têm um valor real, fornecendo informações adicionais de uso real. Os exemplos incluem emergências e alterações de status transitório
+  - Minimize o uso de animações do efeito que mostram o status e certifique-se de que eles têm um valor real, fornecendo informações adicionais de uso real. Os exemplos incluem emergências e alterações de status transitório
 
 #### <a name="do-not"></a>Não:
 
