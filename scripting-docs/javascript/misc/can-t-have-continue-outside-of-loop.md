@@ -14,12 +14,12 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 804c23c45379a10d91c2888ac321c18f2067a1e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946609"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825700"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Não é possível ter 'continue' fora do loop
 Você tentou usar o **continuar** instrução fora de um loop. O **continuar** instrução pode ser usada somente dentro do corpo de r:  
@@ -36,13 +36,13 @@ Você tentou usar o **continuar** instrução fora de um loop. O **continuar** i
   
 - Verifique se o **continuar** instrução aparece dentro do corpo de r:  
   
-    - `do-while` executar um loop,  
-  
-    - `while` executar um loop,  
-  
-    - **para** loop,  
-  
-    - **para/no** loop.  
+  - `do-while` executar um loop,  
+
+  - `while` executar um loop,  
+
+  - **para** loop,  
+
+  - **para/no** loop.  
   
 ## <a name="see-also"></a>Consulte também  
  [Instrução continue](../../javascript/reference/continue-statement-javascript.md)   

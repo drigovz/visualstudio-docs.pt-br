@@ -23,12 +23,12 @@ caps.latest.revision: 54
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5169f59ec12482fd35e09d4eb226277b7fb01455
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 48b9bbc596e97215654ff48c72298242a47f603e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704542"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825466"
 ---
 # <a name="javascript-memory"></a>Memória JavaScript
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
      Para obter mais informações sobre essas opções, consulte [Executar aplicativos pelo Visual Studio](../debugger/run-store-apps-from-visual-studio.md).  
   
-3. Na barra de menus, escolha **Depurar**, **Criador de Perfil de Desempenho...**.  
+3. Na barra de menus, escolha **Depurar**, **Criador de Perfil de Desempenho...** .  
   
      Por padrão, o projeto de inicialização atual é analisado. Se desejar alterar o destino da análise, escolha **Alterar Destino**.  
   
@@ -253,7 +253,7 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
   Todas as três exibições mostram os tipos de valores semelhantes, incluindo:  
   
-- **Identificador(es)**. Nome que melhor identifica o objeto. Por exemplo, para elementos HTML, os detalhes do instantâneo mostram o valor do atributo ID, se um for usado.  
+- **Identificador(es)** . Nome que melhor identifica o objeto. Por exemplo, para elementos HTML, os detalhes do instantâneo mostram o valor do atributo ID, se um for usado.  
   
 - **Tipo**. Tipo de objeto (por exemplo, elemento de link HTML ou elemento div).  
   
@@ -282,14 +282,14 @@ O analisador de memória do JavaScript está disponível no Visual Studio para a
   
   Para filtrar informações de comparação entre os instantâneos, escolha um dos filtros de **Escopo** na parte superior das exibições de comparação.  
   
-- **Objetos restantes do instantâneo nº\<<number>**. Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.  
+- **Objetos restantes do instantâneo nº\<<number>** . Esse filtro mostra o diferencial entre os objetos adicionados ao heap e removidos do heap em comparação com o instantâneo de linha de base e o instantâneo anterior. Por exemplo, se o resumo de instantâneo mostrar +205 / -195 na contagem de objetos, esse filtro mostrará a você os 10 objetos que foram adicionados, mas não removidos.  
   
   > [!TIP]
   > Para mostrar as informações mais úteis nesse filtro, siga as etapas descritas em [Isolar uma perda de memória](#Isolate).  
   
-- **Objetos adicionados entre os instantâneos nº\<number> e nº \<number>**. Esse filtro mostra todos os objetos adicionados ao heap desde o instantâneo anterior.  
+- **Objetos adicionados entre os instantâneos nº\<number> e nº \<number>** . Esse filtro mostra todos os objetos adicionados ao heap desde o instantâneo anterior.  
   
-- **Todos os objetos no instantâneo nº \<number>**. Essa configuração de filtro não descarta objetos no heap.  
+- **Todos os objetos no instantâneo nº \<number>** . Essa configuração de filtro não descarta objetos no heap.  
   
   Para mostrar referências de objetos que não correspondem ao filtro de **Escopo** atual, selecione **Mostrar referências sem correspondência** na lista de configurações ![Lista suspensa de configurações no analisador de memória](../profiling/media/js-mem-settings.png "JS_Mem_Settings") no canto superior direito do painel. Se habilitar esta configuração, as referências não coincidentes são exibidas em cinza.  
   
@@ -382,11 +382,11 @@ if (performance && performance.mark) {
   
 - Procurar os objetos retidos acidentalmente na memória depois que o usuário navegar para uma nova página, que é uma causa comum de problemas de memória. Por exemplo:  
   
-    - o uso incorreto da função [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) pode causar esse problema.  
-  
-    - Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
-  
-    - Você pode precisar remover um ou mais ouvintes de eventos. Para obter mais informações, consulte [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md).  
+  - o uso incorreto da função [URL.CreateObjectUrl](https://msdn.microsoft.com/library/windows/apps/hh453196.aspx) pode causar esse problema.  
+
+  - Alguns objetos podem oferecer um método `dispose` e recomendações para o uso. Por exemplo, você deve chamar `dispose` em uma [WinJS.Binding.List](https://msdn.microsoft.com/library/windows/apps/Hh700774.aspx) caso chame o método `createFiltered` da lista e, depois, navegue para outra página.  
+
+  - Você pode precisar remover um ou mais ouvintes de eventos. Para obter mais informações, consulte [Exibir ouvintes de eventos DOM](../debugger/view-dom-event-listeners.md).  
   
 - Assista à última parte [deste vídeo](http://channel9.msdn.com/Events/Build/2013/3-316) da conferência Build 2013 sobre o analisador de memória de JavaScript.  
   
@@ -394,11 +394,11 @@ if (performance && performance.mark) {
   
 - Considere temporariamente modificar o código para isolar problemas. Por exemplo, é possível:  
   
-    - Usar os comandos para o Memory Analyzer, `console.takeSnapshot` e `performance.mark`. (Consulte [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands).)  
-  
-         É possível usar esses comandos como auxílio para isolar os problemas que você não pode isolar manualmente obtendo um instantâneo de heap.  
-  
-    - Crie um objeto de teste e controle-o nas exibições do analisador de memória do JavaScript, por exemplo, na exibição Tipos. Por exemplo, você pode anexar um objeto muito grande a outro objeto para ver se um objeto ou um elemento específico foi coletado como lixo.  
-  
-## <a name="see-also"></a>Consulte também  
+  - Usar os comandos para o Memory Analyzer, `console.takeSnapshot` e `performance.mark`. (Consulte [Associar o código-fonte com os dados de uso de memória](#JSConsoleCommands).)  
+
+    É possível usar esses comandos como auxílio para isolar os problemas que você não pode isolar manualmente obtendo um instantâneo de heap.  
+
+  - Crie um objeto de teste e controle-o nas exibições do analisador de memória do JavaScript, por exemplo, na exibição Tipos. Por exemplo, você pode anexar um objeto muito grande a outro objeto para ver se um objeto ou um elemento específico foi coletado como lixo.  
+
+## <a name="see-also"></a>Veja também  
  [Passo a passo: localizar uma perda de memória (JavaScript)](../profiling/walkthrough-find-a-memory-leak-javascript.md)

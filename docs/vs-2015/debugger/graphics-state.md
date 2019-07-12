@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fe97461800d6f6e6eb285dd7eddb610ab2f5b5ac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 87972fe12cb8be78b89261d0aaaa272d9e2d5a14
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63420066"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825573"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,12 +38,12 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
 ##### <a name="to-change-the-state-view"></a>Para alterar a exibição de estado  
   
 - Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.  
-  
-    - **Mostrar exibição de estado de recebimento de API**  
-  
-    - **Mostrar exibição de estado lógico**  
-  
-    - **Mostrar modo de exibição de estado fixos**  
+
+  - **Mostrar exibição de estado de recebimento de API**  
+
+  - **Mostrar exibição de estado lógico**  
+
+  - **Mostrar modo de exibição de estado fixos**  
   
 > [!IMPORTANT]
 > Você deve fixar estado na **API mostrar o estado de entrada** ou **estado lógico mostram** modos de exibição para que ele seja exibido no **fixado Mostrar modo de exibição de estado**.  

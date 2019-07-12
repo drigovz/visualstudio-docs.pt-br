@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c5713adc98a0b6ed3f57e604e2e1874b3d95f0a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ed6e544378089222cb69c491b0cd473544e05220
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65678859"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825659"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configurações sincronizadas no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 
 - As seguintes opções nas páginas **Ferramentas &#124; Opções**:
 
-    - **Tema** e configurações de uso de maiúsculas da barra de menus, na página de opções **Ambiente**, **Geral**
+  - **Tema** e configurações de uso de maiúsculas da barra de menus, na página de opções **Ambiente**, **Geral**
 
-    - Todas as configurações da página de opções **Ambiente**, **Fontes e Cores**
+  - Todas as configurações da página de opções **Ambiente**, **Fontes e Cores**
 
-    - Todos os atalhos de teclado, na página de opções **Ambiente**, **Teclado**
+  - Todos os atalhos de teclado, na página de opções **Ambiente**, **Teclado**
 
-    - Todas as configurações da página de opções **Ambiente, Guias e Janelas**
+  - Todas as configurações da página de opções **Ambiente, Guias e Janelas**
 
-    - Todas as configurações da página de opções **Ambiente**, **Inicialização**
+  - Todas as configurações da página de opções **Ambiente**, **Inicialização**
 
-    - Todas as configurações das páginas de opções **Editor de Texto**
+  - Todas as configurações das páginas de opções **Editor de Texto**
 
 - Todas as configurações das páginas de opções Designer XAML
 
@@ -57,5 +57,5 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
 > [!WARNING]
 > As configurações não são sincronizadas entre o Visual Studio 2013 e o Visual Studio 2015. Quando você abre o Visual Studio 2015 pela primeira vez, suas configurações do Visual Studio 2013 são migradas, mas não é possível migrá-las de volta ao Visual Studo 2013.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a41c0c48eea4b766a9166922b2a89dfa1740e8bd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e8078ad03661e8430158106aa2d0d40f844eb6c3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697619"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824833"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
   
 1. Se você estiver executando o aplicativo no Visual Studio, na barra de ferramentas **Padrão**, na lista **Iniciar Depuração**, escolha um destino de implantação, como um dos emuladores do Windows Phone, **Computador Local**, **Simulador** ou **Computador Remoto**.  
   
-2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** .  
   
      Se desejar alterar o destino da análise para o criador de perfil, escolha **Alterar Destino**.  
   
@@ -193,7 +193,7 @@ if (performance.mark && performance.measure) {
 - Um evento de navegação, que ocorre quando você navega para outra página. Uma dica de ferramenta para o evento mostra a URL da página de destino.  
   
 ### <a name="CPUUtilization"></a> Exibir a utilização da CPU  
- O gráfico de utilização da CPU permite identificar períodos em que há uma atividade excessiva da CPU. Ele fornece informações sobre o consumo médio do aplicativo na CPU durante um período. As informações são codificadas por cores para representar as seguintes categorias específicas: **Carregamento**, **Script**, **coleta de lixo (GC)**, **Estilo**, **Renderização** e **Decodificação de imagem**. Para obter mais informações sobre essas categorias, consulte [Referência de eventos do criador de perfil](#ProfilerEvents) mais adiante, neste tópico.  
+ O gráfico de utilização da CPU permite identificar períodos em que há uma atividade excessiva da CPU. Ele fornece informações sobre o consumo médio do aplicativo na CPU durante um período. As informações são codificadas por cores para representar as seguintes categorias específicas: **Carregamento**, **Script**, **coleta de lixo (GC)** , **Estilo**, **Renderização** e **Decodificação de imagem**. Para obter mais informações sobre essas categorias, consulte [Referência de eventos do criador de perfil](#ProfilerEvents) mais adiante, neste tópico.  
   
  O gráfico da utilização da CPU mostra a quantidade de tempo gasto em todos os threads de aplicativo, combinando valores de utilização da CPU para uma ou mais CPUs em um único valor de porcentagem. O valor da utilização da CPU poderá exceder 100 por cento quando mais de uma CPU estiver sendo usada.  
   
@@ -259,9 +259,9 @@ if (performance.mark && performance.measure) {
   
 - Exibir a hora de início, a duração, e a hora de término aproximadas para um evento no modo de exibição de linha do tempo e de grade. O gráfico dos detalhes da linha do tempo pode mostrar períodos que variam de 30 milissegundos a 30 segundos no modo de exibição de grade, dependendo do estado do zoom. Para valores de duração:  
   
-    - Os tempos inclusivos representam a duração do evento incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece primeiro.  
-  
-    - Os tempos exclusivos representam a duração do evento não incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece entre parênteses.  
+  - Os tempos inclusivos representam a duração do evento incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece primeiro.  
+
+  - Os tempos exclusivos representam a duração do evento não incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece entre parênteses.  
   
 - Expanda um evento na hierarquia para exibir os filhos do evento. Os filhos do evento são outros eventos que são gerados pelo evento pai. Por exemplo, um evento DOM pode ter ouvintes de evento que aparecem como filhos. Um ouvinte de eventos pode ter outros eventos resultantes dele, como um evento de layout.  
   
@@ -269,13 +269,13 @@ if (performance.mark && performance.measure) {
   
 - Veja detalhes para cada evento no painel de detalhes (painel direito). As propriedades variam de acordo com o evento específico, como mostram os exemplos a seguir:  
   
-    - Para temporizadores, ouvintes de evento (eventos DOM) e retornos de chamada do quadro de animação, a propriedade **Callback function** fornece um link para o local do código-fonte juntamente com o nome do manipulador de eventos ou função de retorno de chamada.  
-  
-    - Para timers, ouvintes de eventos (eventos DOM), eventos de layout e retornos de chamada de quadro de animação, um resumo codificado por cores do evento selecionado e todos os seus filhos aparecem na seção **Resumo do tempo inclusivo** (o anel codificado por cor). Cada fatia codificada por cor da imagem representa um tipo de evento. As dicas de ferramenta fornecem o nome do tipo de evento.  
-  
-    > [!TIP]
-    > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.  
-  
+  - Para temporizadores, ouvintes de evento (eventos DOM) e retornos de chamada do quadro de animação, a propriedade **Callback function** fornece um link para o local do código-fonte juntamente com o nome do manipulador de eventos ou função de retorno de chamada.  
+
+  - Para timers, ouvintes de eventos (eventos DOM), eventos de layout e retornos de chamada de quadro de animação, um resumo codificado por cores do evento selecionado e todos os seus filhos aparecem na seção **Resumo do tempo inclusivo** (o anel codificado por cor). Cada fatia codificada por cor da imagem representa um tipo de evento. As dicas de ferramenta fornecem o nome do tipo de evento.  
+
+  > [!TIP]
+  > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.  
+
 ### <a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo  
  Você pode filtrar a exibição nos detalhes da linha do tempo para um evento particular selecionando **Filtrar para evento** no menu de contexto de um evento específico. Quando você escolhe essa opção, a linha do tempo e a exibição de grade têm como escopo o evento selecionado A seleção no gráfico de uso da CPU também tem como escopo o evento especial.  
   
@@ -362,5 +362,5 @@ if (performance.mark && performance.measure) {
   
 - Para obter informações sobre o modelo e desempenho de execução de código de thread único, consulte [Executando código](https://msdn.microsoft.com/library/windows/apps/hh781217.aspx).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Analisar o desempenho do aplicativo](https://msdn.microsoft.com/library/58acb30b-8428-41a6-b195-b0fdedb89575)
