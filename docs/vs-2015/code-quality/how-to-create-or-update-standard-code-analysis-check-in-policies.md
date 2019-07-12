@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 47e7c2b6e02aab3b6b1df0c54ba91668bbb2673c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436843"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825812"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como: Criar ou atualizar políticas de check-in de análise de código padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Você pode exigir que a análise de código ser executado em todos os projetos d
   
 - Dos **executar este conjunto de regras** lista, use um dos seguintes métodos:  
   
-    - Selecione um conjunto de regras padrão do Microsoft.  
-  
-    - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle do código-fonte... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:  
-  
-    - **$/** `TeamProjectName` **/** `VersionControlPath`  
-  
-    - Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in personalizadas implementando para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+  - Selecione um conjunto de regras padrão do Microsoft.  
+
+  - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle do código-fonte... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:  
+
+  - **$/** `TeamProjectName` **/** `VersionControlPath`  
+
+  - Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in personalizadas implementando para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando e usando políticas de check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

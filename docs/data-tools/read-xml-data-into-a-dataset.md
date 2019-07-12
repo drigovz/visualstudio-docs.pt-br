@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: fa0472ae7ad7200ead372057f1dd778c077f764e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 573196ebc0a0719cf736f1299eebae4eb6dcdb73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566209"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821925"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 
@@ -119,9 +119,9 @@ A interface do usuário para esse aplicativo consiste no seguinte:
 
 - Dois <xref:System.Windows.Forms.Button> controles.
 
-    - Um botão lê o arquivo XML para o conjunto de dados e exibe-o no <xref:System.Windows.Forms.DataGridView> controle.
+  - Um botão lê o arquivo XML para o conjunto de dados e exibe-o no <xref:System.Windows.Forms.DataGridView> controle.
 
-    - Um segundo botão extrai o esquema do conjunto de dados e por meio de um <xref:System.IO.StringWriter> exibe-o no <xref:System.Windows.Forms.TextBox> controle.
+  - Um segundo botão extrai o esquema do conjunto de dados e por meio de um <xref:System.IO.StringWriter> exibe-o no <xref:System.Windows.Forms.TextBox> controle.
 
 ### <a name="to-add-controls-to-the-form"></a>Para adicionar controles ao formulário
 

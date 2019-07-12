@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ee5e18054b6da35a3098b851d1585c70b6bc3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d5cb4bf5788e1d30933a807e2e97e064118fc076
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583770"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823402"
 ---
 # <a name="limitations-of-windows-forms-controls-on-office-documents"></a>Limitações de controles de Windows Forms em documentos do Office
 
@@ -41,24 +41,24 @@ Há uma série de métodos e propriedades de controles de formulários do Window
 
 - Não há suporte para propriedades de controles do Excel:
 
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
 
 - Não há suporte para métodos e propriedades de controles do Word:
 
-    - <xref:System.Windows.Forms.Control.Hide%2A>
-    - <xref:System.Windows.Forms.Control.Show%2A>
-    - <xref:System.Windows.Forms.Control.Anchor>
-    - <xref:System.Windows.Forms.Control.Dock>
-    - <xref:System.Windows.Forms.Control.Location>
-    - <xref:System.Windows.Forms.Control.TabIndex>
-    - <xref:System.Windows.Forms.Control.TabStop>
-    - <xref:System.Windows.Forms.Control.TopLevelControl>
-    - <xref:System.Windows.Forms.Control.Visible>
+  - <xref:System.Windows.Forms.Control.Hide%2A>
+  - <xref:System.Windows.Forms.Control.Show%2A>
+  - <xref:System.Windows.Forms.Control.Anchor>
+  - <xref:System.Windows.Forms.Control.Dock>
+  - <xref:System.Windows.Forms.Control.Location>
+  - <xref:System.Windows.Forms.Control.TabIndex>
+  - <xref:System.Windows.Forms.Control.TabStop>
+  - <xref:System.Windows.Forms.Control.TopLevelControl>
+  - <xref:System.Windows.Forms.Control.Visible>
 
 Você também não é possível definir a <xref:System.Windows.Forms.Control.Left> ou <xref:System.Windows.Forms.Control.Top> propriedade dos controles de formulários do Windows que estão de acordo com o texto em um documento do Word. Controles dos Windows Forms são adicionados em conformidade com o texto nos seguintes casos:
 

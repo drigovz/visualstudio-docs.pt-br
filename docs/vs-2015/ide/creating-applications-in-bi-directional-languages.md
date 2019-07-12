@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05300d33ae10cd899a40bf95596ea4eb19dea49d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 622af2c5f15187f6e04b53b4f0ba433c91f85a07
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701191"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826189"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Criando aplicativos em idiomas bidirecionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ ms.locfileid: "65701191"
   
 - **Ordem de leitura da direita para a esquerda** Por padrão, os controles de entrada de texto usados no Visual Studio usam o sentido de leitura da esquerda para a direita. Na maioria dos casos, é possível usar gestos do Windows padrão para mudar o sentido de leitura. Por exemplo, é possível pressionar Ctrl+Shift Direita para mudar para a janela Propriedades para dar suporte ao sentido de leitura da direita para a esquerda em valores da propriedade.  
   
-     No entanto, não há suporte ao sentido de leitura da direita para a esquerda em nenhum lugar do Visual Studio. As exceções incluem:  
-  
-    - Caixas de seleção, listas suspensas e outros controles em caixas de diálogo do Visual Studio sempre usam o sentido de leitura da esquerda para a direita.  
-  
-    - O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. É possível inserir texto em um idioma bidirecional, mas o sentido de leitura sempre será da esquerda para a direita.  
+  No entanto, não há suporte ao sentido de leitura da direita para a esquerda em nenhum lugar do Visual Studio. As exceções incluem:  
+
+  - Caixas de seleção, listas suspensas e outros controles em caixas de diálogo do Visual Studio sempre usam o sentido de leitura da esquerda para a direita.  
+
+  - O editor de código (e o editor de texto) não dão suporte ao sentido de leitura da direita para a esquerda. É possível inserir texto em um idioma bidirecional, mas o sentido de leitura sempre será da esquerda para a direita.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Nomeando itens usando um texto em árabe ou hebraico  
  É possível usar um texto em árabe ou hebraico para atribuir nomes a pastas, variáveis ou outros objetos. Ao trabalhar com o árabe, é possível usar qualquer caractere árabe, incluindo Kashida e Sinais Diacríticos.  

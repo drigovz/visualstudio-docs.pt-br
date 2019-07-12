@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7132fae3623e1ad10fb35d2b903935cdbffee12d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: d4b5ad6ca824e6c7091c6c508b51c2d51501b2fd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676715"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821521"
 ---
 # <a name="use-roslyn-analyzers"></a>Usar os analisadores de Roslyn
 
@@ -110,40 +110,40 @@ Há várias maneiras de suprimir as violações de regra:
 
 - Dos **analisar** menu
 
-   Selecione **Analyze** > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais existentes. Isso é às vezes, chamado "linha de base".
+  Selecione **Analyze** > **executar análise de código e suprimir problemas ativos** na barra de menus para suprimir todas as violações atuais existentes. Isso é às vezes, chamado "linha de base".
 
 - De **Gerenciador de soluções**
 
-   Para suprimir uma violação na **Gerenciador de soluções**, defina a gravidade da regra como **None**.
+  Para suprimir uma violação na **Gerenciador de soluções**, defina a gravidade da regra como **None**.
 
 - Do **editor de conjunto de regras**
 
-   Para suprimir uma violação do editor de conjunto de regras, desmarque a caixa ao lado de seu nome ou definir **ação** à **None**.
+  Para suprimir uma violação do editor de conjunto de regras, desmarque a caixa ao lado de seu nome ou definir **ação** à **None**.
 
 - Do **editor de códigos**
 
-   Para suprimir uma violação do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+ **.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAXXXX** > **no código-fonte/no arquivo de supressão**.
+  Para suprimir uma violação do editor de códigos, coloque o cursor na linha de código com a violação e pressione **Ctrl**+ **.** Para abrir o **ações rápidas** menu. Selecione **suprimir CAXXXX** > **no código-fonte/no arquivo de supressão**.
 
-   ![Suprimir o diagnóstico no menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
+  ![Suprimir o diagnóstico no menu de ações rápidas](media/suppress-diagnostic-from-editor.png)
 
 - Do **lista de erros**
 
-   Você pode suprimir um ou vários diagnósticos do **lista de erros** selecionar aqueles que você deseja suprimir, e, em seguida, clicando com botão direito e selecionando **suprimir** > **Source/In em Arquivo de supressão**.
+  Você pode suprimir um ou vários diagnósticos do **lista de erros** selecionar aqueles que você deseja suprimir, e, em seguida, clicando com botão direito e selecionando **suprimir** > **Source/In em Arquivo de supressão**.
 
-   - Se você suprimir **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do C# [aviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable Aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
+  - Se você suprimir **no código-fonte**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do C# [aviso #pragma](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable Aviso](/dotnet/visual-basic/language-reference/directives/directives) diretiva é adicionada ao código-fonte.
 
-      ![Visualização de adição de aviso #pragma no arquivo de código](media/pragma-warning-preview.png)
+    ![Visualização de adição de aviso #pragma no arquivo de código](media/pragma-warning-preview.png)
 
-   - Se você selecionar **no arquivo de supressão**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que é adicionado ao arquivo supressões globais.
+  - Se você selecionar **no arquivo de supressão**, o **visualizar alterações** caixa de diálogo é aberta e mostra uma visualização do <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> atributo que é adicionado ao arquivo supressões globais.
 
-      ![Visualização de adicionar o atributo SuppressMessage ao arquivo de supressão](media/preview-changes-in-suppression-file.png)
+    ![Visualização de adicionar o atributo SuppressMessage ao arquivo de supressão](media/preview-changes-in-suppression-file.png)
 
-   No **visualizar alterações** caixa de diálogo, selecione **aplicar**.
+  No **visualizar alterações** caixa de diálogo, selecione **aplicar**.
 
-   > [!NOTE]
-   > Se você não vir as **suprimir** opção de menu na **Gerenciador de soluções**, provavelmente, a violação é proveniente de compilação e análise em tempo real não. O **Error List** exibe diagnóstico ou regra violações, tanto em tempo de análise de código e compilação. Como o diagnóstico de compilação pode ser obsoleto, por exemplo, se você editou o código para corrigir a violação, mas ainda não tiver recriado, você não pode suprimir estes diagnósticos a partir de **lista de erros**. Diagnóstico de análise em tempo real ou o IntelliSense, estão sempre atualizado com fontes atuais e pode ser suprimido do **Error List**. Para excluir *construir* alternar o diagnóstico da sua seleção, o **lista de erros** filtro de origem do **compilação + IntelliSense** para **Intellisense apenas**. Em seguida, selecione os diagnósticos que você deseja suprimir e prossiga conforme descrito anteriormente.
-   >
-   > ![Filtro de origem de lista de erros no Visual Studio](media/error-list-filter.png)
+  > [!NOTE]
+  > Se você não vir as **suprimir** opção de menu na **Gerenciador de soluções**, provavelmente, a violação é proveniente de compilação e análise em tempo real não. O **Error List** exibe diagnóstico ou regra violações, tanto em tempo de análise de código e compilação. Como o diagnóstico de compilação pode ser obsoleto, por exemplo, se você editou o código para corrigir a violação, mas ainda não tiver recriado, você não pode suprimir estes diagnósticos a partir de **lista de erros**. Diagnóstico de análise em tempo real ou o IntelliSense, estão sempre atualizado com fontes atuais e pode ser suprimido do **Error List**. Para excluir *construir* alternar o diagnóstico da sua seleção, o **lista de erros** filtro de origem do **compilação + IntelliSense** para **Intellisense apenas**. Em seguida, selecione os diagnósticos que você deseja suprimir e prossiga conforme descrito anteriormente.
+  >
+  > ![Filtro de origem de lista de erros no Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Uso de linha de comando
 

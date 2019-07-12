@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2eb167a323371c3503429f56bc1537a95f3f86b7
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432580"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822087"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
   
 1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar o sombreador e selecione **Adicionar**, **Novo Item**.  
   
-2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)**.  
+2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)** .  
   
 3. Especifique o **Nome** do arquivo de modelo e a **Localização** em que deseja que ele seja criado.  
   
@@ -93,17 +93,17 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
   
 - Veja como:  
   
-    - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.  
-  
-    - Para remover um nó do grafo, selecione-o e pressione Delete.  
-  
-    - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.  
-  
-    - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.  
-  
-    - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.  
-  
-    - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.  
+  - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.  
+
+  - Para remover um nó do grafo, selecione-o e pressione Delete.  
+
+  - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.  
+
+  - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.  
+
+  - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.  
+
+  - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.  
   
 ### <a name="previewing-shaders"></a>Visualizando sombreadores  
  Para ajudá-lo a entender como um sombreador aparecerá em seu aplicativo, você pode configurar como seu efeito é visualizado. Para aproximar o seu aplicativo, você pode escolher uma das várias formas para renderizar, configurar texturas e outros parâmetros de material, habilitar animação dos efeitos com base em tempo e examinar a visualização de ângulos diferentes.  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f5fe47d8575c47756cce8fd1580ced5f3036766
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63399953"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64785726"
 ---
 # <a name="idiasymbolgetisltcg"></a>IDiaSymbol::get_isLTCG
 Recupera um sinalizador que especifica se o [Compiland](../../debugger/debug-interface-access/compiland.md) foi vinculada com a opção de vinculador [/LTCG (geração de código Link-time)](/cpp/build/reference/ltcg-link-time-code-generation), que auxilia na otimização de todo o programa. Essa opção se aplica apenas ao código gerenciado.

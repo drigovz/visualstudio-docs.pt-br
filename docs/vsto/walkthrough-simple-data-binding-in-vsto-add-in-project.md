@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b6cf1e800c785f73ebb11e09f11b617fe42aa32
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: eccab4b899f3af22d54952d4eb9e8f990932afa4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981070"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825213"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>Passo a passo: Associação de dados simples no projeto de suplemento do VSTO
 
@@ -47,9 +47,9 @@ Você precisa dos seguintes componentes para concluir esta instrução passo a p
 
 - Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+  - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
 
@@ -83,7 +83,7 @@ Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao s
 
 5. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
-6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **cliente (SalesLT)**.
+6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **cliente (SalesLT)** .
 
 7. Clique em **Finalizar**.
 

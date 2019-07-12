@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1c84cfcde4a5ffac1e1563a4d2b141bd6240b772
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430332"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821995"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estender o Gerenciador de servidores para exibir web parts
   No Visual Studio, você pode usar o **conexões do SharePoint** nó do **Gerenciador de servidores** para componentes de exibição nos sites do SharePoint. No entanto, **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste passo a passo, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada uma conectada site do SharePoint.
@@ -29,9 +29,9 @@ ms.locfileid: "63430332"
 
 - Criando uma extensão do Visual Studio que estende **Gerenciador de servidores** das seguintes maneiras:
 
-    - Adiciona a extensão de um **Galeria de Web Parts** nó em cada nó do site do SharePoint no **Gerenciador de servidores**. Esse novo nó contém nós filho que representam cada Web Part na Galeria de Web Parts no site.
+  - Adiciona a extensão de um **Galeria de Web Parts** nó em cada nó do site do SharePoint no **Gerenciador de servidores**. Esse novo nó contém nós filho que representam cada Web Part na Galeria de Web Parts no site.
 
-    - A extensão define um novo tipo de nó que representa uma instância de Web Part. Esse novo tipo de nó é a base para os nós filho sob a nova **Galeria de Web Parts** nó. O novo tipo de nó de Web Part exibe informações de **propriedades** janela sobre a Web Part que ele representa. O tipo de nó também inclui um item de menu de atalho personalizado que você pode usar como ponto de partida para executar outras tarefas relacionadas à Web Part.
+  - A extensão define um novo tipo de nó que representa uma instância de Web Part. Esse novo tipo de nó é a base para os nós filho sob a nova **Galeria de Web Parts** nó. O novo tipo de nó de Web Part exibe informações de **propriedades** janela sobre a Web Part que ele representa. O tipo de nó também inclui um item de menu de atalho personalizado que você pode usar como ponto de partida para executar outras tarefas relacionadas à Web Part.
 
 - Crie dois comandos do SharePoint personalizados que chama o assembly de extensão. Comandos do SharePoint são métodos que podem ser chamados por assemblies de extensão para usar APIs no modelo de objeto de servidor para o SharePoint. Neste passo a passo, você deve criar comandos que recuperam informações de Web Part do site do SharePoint local no computador de desenvolvimento. Para obter mais informações, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
 
@@ -338,7 +338,7 @@ ms.locfileid: "63430332"
 
     2. No **Adicionar Conexão do SharePoint** diálogo caixa, digite a URL do site do SharePoint ao qual você deseja se conectar e, em seguida, escolha o **Okey** botão.
 
-         Para especificar o site do SharePoint no computador de desenvolvimento, insira **http://localhost**.
+         Para especificar o site do SharePoint no computador de desenvolvimento, insira **http://localhost** .
 
 3. Expanda o nó de conexão de site (que exibe a URL do seu site) e, em seguida, expanda um nó do site filho (por exemplo, **Site de equipe**).
 

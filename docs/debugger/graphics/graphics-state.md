@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a07e198c6ff4e432f708ac1751e69bbef77a22c4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388624"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823766"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entender o estado dos gráficos que está ativo no momento do evento atual, como uma chamada de desenho.
@@ -36,11 +36,11 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
 
 - Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.
 
-    - **Mostrar exibição de estado de recebimento de API**
+  - **Mostrar exibição de estado de recebimento de API**
 
-    - **Mostrar exibição de estado lógico**
+  - **Mostrar exibição de estado lógico**
 
-    - **Mostrar modo de exibição de estado fixos**
+  - **Mostrar modo de exibição de estado fixos**
 
 > [!IMPORTANT]
 > Você deve fixar estado na **API mostrar o estado de entrada** ou **estado lógico mostram** modos de exibição para que ele seja exibido no **fixado Mostrar modo de exibição de estado**.

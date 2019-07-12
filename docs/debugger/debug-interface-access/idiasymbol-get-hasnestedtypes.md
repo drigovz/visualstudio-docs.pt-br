@@ -1,54 +1,52 @@
 ---
 title: IDiaSymbol::get_hasNestedTypes | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-debug
-ms.topic: reference
+ms.date: 11/04/2016
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - IDiaSymbol::get_hasNestedTypes method
 ms.assetid: 1a8306bd-10dd-40a9-81fc-01f71c348484
-caps.latest.revision: 11
-author: MikeJo5000
+author: mikejo5000
 ms.author: mikejo
 manager: jillfra
+ms.workload:
+- multiple
 ms.openlocfilehash: 61073f5630e5da7edeb761774e4ba8b4c341a8cd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63401407"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "64796577"
 ---
 # <a name="idiasymbolgethasnestedtypes"></a>IDiaSymbol::get_hasNestedTypes
-[!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
+Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário aninhou definições de tipo.
 
-Recupera um sinalizador que especifica se o tipo de dados definido pelo usuário aninhou definições de tipo.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT get_hasNestedTypes (   
-   BOOL* pRetVal  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pRetVal`  
- [out] Retorna `TRUE` se o tipo de dados definido pelo usuário aninhou definições de tipo; caso contrário, retornará `FALSE`.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  
-  
+## <a name="syntax"></a>Sintaxe
+
+```C++
+HRESULT get_hasNestedTypes ( 
+   BOOL* pRetVal
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pRetVal`
+
+[out] Retorna `TRUE` se o tipo de dados definido pelo usuário aninhou definições de tipo; caso contrário, retornará `FALSE`.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
+
 > [!NOTE]
-> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.  
-  
-## <a name="requirements"></a>Requisitos  
-  
-|Requisito|Descrição|  
-|-----------------|-----------------|  
-|Cabeçalho:|dia2.h|  
-|Versão:|DIA SDK v7.0|  
-  
-## <a name="see-also"></a>Consulte também  
- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+
+## <a name="requirements"></a>Requisitos
+
+|Requisito|Descrição|
+|-----------------|-----------------|
+|Cabeçalho:|dia2.h|
+|Versão:|DIA SDK v7.0|
+
+## <a name="see-also"></a>Consulte também
+- [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md)

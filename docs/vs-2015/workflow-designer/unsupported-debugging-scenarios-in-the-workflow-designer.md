@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b3b47264190afcc75431a55ad6b8b4512f26ea0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d931325bd9e323fdf8fa31848a5c2671b5382543
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62858182"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825230"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>Cenários sem suporte de depuração no Designer de Fluxo de Trabalho
 Designer de Fluxo de Trabalho em [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] adicionou muitos novos recursos, mas ainda há alguns cenários de depuração que não oferece suporte. Este documento detalha Designer de Fluxo de Trabalho sem suporte a depuração cenários.  
@@ -41,16 +41,16 @@ Designer de Fluxo de Trabalho em [!INCLUDE[netfx40_short](../includes/netfx40-sh
   
 - A janela ou o menu de atalho do ponto de interrupção não suportam as seguintes colunas ou opções para depuração de fluxo de trabalho:  
   
-    - Condição  
-  
-    - Contagem de acertos  
-  
-    - Quando atingido  
-  
-    - Função  
-  
-    - Dados  
-  
-    - Processo  
-  
-    - Vá para a desmontagem
+  - Condição  
+
+  - Contagem de acertos  
+
+  - Quando atingido  
+
+  - Função  
+
+  - Dados  
+
+  - Processo  
+
+  - Vá para a desmontagem

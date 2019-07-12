@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f510568c977579fa3e48d57db548040d16dcb574
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335486"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824324"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -394,11 +394,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Títulos maiores (fonte de ambiente x 155% ou maior) podem ser coloridos para essas finalidades:
 
-    - Para fornecer o apelo visual a assinatura de IU do Visual Studio
+  - Para fornecer o apelo visual a assinatura de IU do Visual Studio
 
-    - Para chamar a atenção para uma área específica
+  - Para chamar a atenção para uma área específica
 
-    - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
+  - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
 
 - Cor nos títulos deve utilizar o Visual Studio marca cores existentes, principalmente a principal roxa, #FF68217A.
 

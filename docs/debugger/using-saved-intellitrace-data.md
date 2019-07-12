@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de8e6cfa6ec99f42879043b873736102fd291176
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: b9217031866a53e229cb03838b1be835019b62ba
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746146"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825607"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>Usando dados salvos do IntelliTrace (C#, Visual Basic, C++)
 
@@ -56,11 +56,11 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
 
 - Se o arquivo .iTrace estiver anexado a um item de trabalho do Team Foundation Server, siga estas etapas no item de trabalho:
 
-    - Em **Todos os Links**, localize o arquivo .iTrace. Abra-o.
+  - Em **Todos os Links**, localize o arquivo .iTrace. Abra-o.
 
-         \- ou -
+    \- ou -
 
-    - Em **Etapas de Reprodução**, escolha o link **IntelliTrace**.
+  - Em **Etapas de Reprodução**, escolha o link **IntelliTrace**.
 
 > [!TIP]
 > Se você fechou o arquivo IntelliTrace durante a depuração, poderá reabri-lo facilmente. Vá para o menu **Depurar**, escolha **IntelliTrace**, **Mostrar Resumo do Log**. Você também pode escolher **Mostrar Resumo do Log** na janela **IntelliTrace**. Isso só estará disponível durante a depuração com o IntelliTrace.

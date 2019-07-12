@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b93518a6ca5fa6464bf8f2e72f11cfa90b4dd4dd
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433346"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825586"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
 
 - O `UI` projeto contém um exemplo de funcionamento de um controle de formulário associado a DSL. No entanto, ele não funcionará quando você alterou a definição de DSL. O `UI` projeto contém:  
 
-    - Uma classe de formulários do Windows chamada `ModelViewControl`.  
+  - Uma classe de formulários do Windows chamada `ModelViewControl`.  
 
-    - Um arquivo chamado `DataBinding.cs` que contém uma definição parcial adicional de `ModelViewControl`. Para ver seu conteúdo, no **Gerenciador de soluções**, abra o menu de atalho para o arquivo e escolha **Exibir código**.  
+  - Um arquivo chamado `DataBinding.cs` que contém uma definição parcial adicional de `ModelViewControl`. Para ver seu conteúdo, no **Gerenciador de soluções**, abra o menu de atalho para o arquivo e escolha **Exibir código**.  
 
 ### <a name="about-the-ui-project"></a>Sobre o projeto de interface do usuário  
  Quando você atualiza o arquivo de definição de DSL para definir seu próprios DSL, você terá de atualizar o controle no `UI` projeto para exibir sua DSL. Ao contrário de `Dsl` e `DslPackage` projetos, o exemplo `UI` projeto não for gerado de `DslDefinitionl.dsl`. Você pode adicionar arquivos. TT para gerar o código se desejar, embora que não seja abordada neste passo a passo.  
@@ -241,7 +241,7 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
 
 1. Na exibição de design de FarmControl.cs, selecione um campo simples, como nome, tamanho ou IsOrganic.  
 
-2. Na janela Propriedades, expanda **DataBindings** e abra **(Avançado)**.  
+2. Na janela Propriedades, expanda **DataBindings** e abra **(Avançado)** .  
 
      No **formatação e associação avançada** caixa de diálogo, em **modo de atualização de fonte de dados**, escolha **OnPropertyChanged**.  
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c470d5d4001238c9a803f0b6598fbedf9d346bc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62936897"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824206"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 
@@ -107,9 +107,9 @@ Para descrever as alterações que você planeja fazer em seu sistema ou a arqui
 |Excluir uma dependência que não deve existir|Clique a dependência e, em seguida, pressione **excluir**.|
 |Alterar ou restringir a direção de uma dependência|Defina suas **direção** propriedade.|
 |Criar novas dependências|Use o **dependência** e **dependência bidirecional** ferramentas.<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique no **ponteiro** ferramenta ou pressione a **ESC** chave.|
-|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces da camada **dependências de Namespace proibido** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces da camada **Namespaces proibidos** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|
-|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace da camada **Namespaces obrigatórios** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces da camada **dependências de Namespace proibido** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces da camada **Namespaces proibidos** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|
+|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace da camada **Namespaces obrigatórios** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|
 
 ### <a name="Improving"></a> Melhorar a estrutura do código
 
@@ -141,7 +141,7 @@ Para ajudar a identificar as camadas e dependências ou discuti-las com os membr
 
 - Altere as cores de camadas e dependências.
 
-    - Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.
+  - Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.
 
 ## <a name="Validate"></a> Valide o código no diagrama
 

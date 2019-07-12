@@ -24,12 +24,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 835843d2328d9d17ac899fc12c97251b7e6b4659
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: da41524fcb231ea399dbbd2a2904afd935e5c4f8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65685328"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824251"
 ---
 # <a name="how-to-use-the-threads-window"></a>Como: Usar a janela Threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,11 +72,11 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - Execute uma das seguintes etapas:  
   
-    - Clique duas vezes em qualquer thread.  
-  
-    - Um thread com o botão direito e clique em **alternar para Thread**.  
-  
-         A seta amarela é exibida ao lado do novo thread ativo. O contorno cinza de uma seta identifica o thread onde a execução interrompe no depurador.  
+  - Clique duas vezes em qualquer thread.  
+
+  - Um thread com o botão direito e clique em **alternar para Thread**.  
+
+    A seta amarela é exibida ao lado do novo thread ativo. O contorno cinza de uma seta identifica o thread onde a execução interrompe no depurador.  
   
 ## <a name="grouping-and-sorting-threads"></a>Agrupando e classificando threads  
  Quando você agrupa threads, um título aparece na tabela para cada grupo. O título contém uma descrição do grupo, como “Thread de trabalho” ou “Threads sem sinalização” e um controle de árvore. Os threads de membro de cada grupo aparecem no cabeçalho do grupo. Se você quiser ocultar os threads de membro para um grupo, poderá usar o controle de árvore para recolher o grupo.  
@@ -116,11 +116,11 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
   
 - Na barra de ferramentas na parte superior da janela **Threads**, vá para a caixa **Pesquisar** e:  
   
-    - Digite uma cadeia de caracteres de pesquisa e pressione ENTER.  
-  
-         \- ou -  
-  
-    - Clique na lista suspensa ao lado de **pesquisa** caixa e selecione uma cadeia de caracteres de pesquisa de uma pesquisa anterior.  
+  - Digite uma cadeia de caracteres de pesquisa e pressione ENTER.  
+
+    \- ou -  
+
+  - Clique na lista suspensa ao lado de **pesquisa** caixa e selecione uma cadeia de caracteres de pesquisa de uma pesquisa anterior.  
   
 - (Opcional) Para incluir a pilha de chamadas inteira na pesquisa, selecione **Pesquisar Pilha de Chamadas**.  
   

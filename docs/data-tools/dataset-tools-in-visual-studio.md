@@ -47,12 +47,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5cd6cf11bce8b3b60a41b8306afed081a4ac5472
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: ead32426585ecd4962ccc869f470021c5d0976fe
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66715217"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821365"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 
@@ -75,13 +75,13 @@ O Visual Studio fornece ferramentas para simplificar o trabalho com conjuntos de
 
 - Use o **Assistente de configuração TableAdapter** para especificar a consulta ou procedimento armazenado que preenche o conjunto de dados e quais operações de banco de dados (update, delete e assim por diante) para implementar. Para saber mais, consulte estes tópicos:
 
-    - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
+  - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
 
-    - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
+  - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
 
-    - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+  - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
 - Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] Habilita [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
 

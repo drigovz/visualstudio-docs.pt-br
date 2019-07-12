@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e995d9cfd37c625c03df0b607a9dd5184bec5d08
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eea71ffe2b449e0ee5aff893efd05e12e4ecae73
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441462"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824926"
 ---
 # <a name="extending-javascript-intellisense"></a>Estendendo JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ O recurso de extensibilidade JavaScript IntelliSense permite que você personali
   
  O mecanismo de descoberta automática permite que o serviço de linguagem localizar automaticamente extensões que seguem a convenção de nomenclatura de arquivo *libraryname*. intellisense.js e que estão localizados no mesmo diretório que a biblioteca que se aplica a extensão. Por exemplo, uma extensão válida para a biblioteca jQuery seria jQuery.intellisense.js. Extensões do jQuery mais restritiva, você pode usar nomes de arquivo, como jQuery-1.7.1.intellisense.js (uma extensão específica da versão) ou jQuery.ui.intellisense.js (uma extensão para uma biblioteca jQuery com escopo). A versão mais restritiva da extensão será usada se mais de uma extensão for encontrada para uma determinada biblioteca.  
   
- Se você quiser usar a extensão para todos os arquivos de projeto JavaScript, você pode em vez disso, optar por adicionar a extensão a um grupo de referência. Há vários tipos de grupos de referência, aqueles que incluem referências implícitas e aquelas que incluem referências de trabalho dedicada. Para adicionar uma extensão, você normalmente precisa adicionar o arquivo como um grupo de referência implícita, tanto **implícitas (Windows)**, **implícito (Web)**. Referências implícitas estão no escopo de cada arquivo. js aberto no Editor de código. Quando você usa esse método, você precisará adicionar a extensão e o arquivo que a extensão é complementar.  
+ Se você quiser usar a extensão para todos os arquivos de projeto JavaScript, você pode em vez disso, optar por adicionar a extensão a um grupo de referência. Há vários tipos de grupos de referência, aqueles que incluem referências implícitas e aquelas que incluem referências de trabalho dedicada. Para adicionar uma extensão, você normalmente precisa adicionar o arquivo como um grupo de referência implícita, tanto **implícitas (Windows)** , **implícito (Web)** . Referências implícitas estão no escopo de cada arquivo. js aberto no Editor de código. Quando você usa esse método, você precisará adicionar a extensão e o arquivo que a extensão é complementar.  
   
  Use o **IntelliSense** página do **opções** caixa de diálogo para adicionar uma extensão como um grupo de referência. Você pode acessar o **IntelliSense** página escolhendo **ferramentas**, **opções** na barra de menus e, em seguida, escolhendo **Editor de texto**, **JavaScript**, **IntelliSense**, **referências**. Para obter mais informações sobre grupos de referência, consulte [JavaScript IntelliSense](../ide/javascript-intellisense.md) e [opções, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).  
   
@@ -147,9 +147,9 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `paramComments`. Retorna uma matriz que representa o comentário para cada parâmetro na função. Os membros da matriz incluem:  
   
-    - `name`. Retorna uma cadeia de caracteres que representa o nome do parâmetro.  
-  
-    - `comment`. Retorna uma cadeia de caracteres que contém o comentário do parâmetro.  
+  - `name`. Retorna uma cadeia de caracteres que representa o nome do parâmetro.  
+
+  - `comment`. Retorna uma cadeia de caracteres que contém o comentário do parâmetro.  
   
 ### <a name="FunctionHelp"></a> functionHelp propriedade  
  Retorna a Ajuda para a função. Essa propriedade está disponível para o `signaturehelp` objeto de evento.  
@@ -162,47 +162,47 @@ intellisense.addEventListener('statementcompletion', function (event) {
   
 - `signatures`. Leitura/gravação. Obtém ou define a matriz de assinaturas de função. Cada elemento na matriz é um `signature` objeto. Alguns `signature` propriedades, tais como `locid`, correspondem aos comuns [comentários da documentação XML](../ide/xml-documentation-comments-javascript.md) atributos.  
   
-     Os membros do `signature` objeto incluem:  
-  
-    - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve a função.  
-  
+  Os membros do `signature` objeto incluem:  
+
+  - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve a função.  
+
+  - `locid`. Leitura/gravação. Retorna um identificador de cadeia de caracteres que contém informações sobre a função de localização.  
+
+  - `helpKeyword`. Leitura/gravação. Retorna uma cadeia de caracteres que contém a palavra-chave ajuda.  
+
+  - `externalFile`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o arquivo que contém a ID do membro.  
+
+  - `externalid`. Leitura/gravação. Retorna uma cadeia de caracteres que representa a ID de membro da função.  
+
+  - `params`. Leitura/gravação. Obtém ou define a matriz de parâmetros para a função. Cada elemento na matriz de parâmetros é um `parameter` que tem propriedades que correspondem aos seguintes atributos do objeto de [ \<param >](../ide/param-javascript.md) elemento:  
+
+    - `name`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o nome do parâmetro.  
+
+    - `type`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o tipo de parâmetro.  
+
+    - `elementType`. Leitura/gravação. Se o tipo for `Array`, retorna uma cadeia de caracteres que representa o tipo dos elementos na matriz.  
+
+    - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve o parâmetro.  
+
     - `locid`. Leitura/gravação. Retorna um identificador de cadeia de caracteres que contém informações sobre a função de localização.  
-  
+
+    - `optional`. Leitura/gravação. Retorna uma cadeia de caracteres que indica se o parâmetro é opcional. `true` indica que o parâmetro é opcional; `false` indica que ele não está.  
+
+  - `returnValue`. Leitura/gravação. Obtém ou define um objeto de valor de retorno com propriedades que correspondem aos seguintes atributos do [ \<retorna >](../ide/returns-javascript.md) elemento:  
+
+    - `type`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o tipo de retorno.  
+
+    - `elementType`. Leitura/gravação. Se o tipo for `Array`, retorna uma cadeia de caracteres que representa o tipo dos elementos na matriz.  
+
+    - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve o valor de retorno.  
+
+    - `locid`. Leitura/gravação. Retorna um identificador de cadeia de caracteres que contém informações sobre a função de localização.  
+
     - `helpKeyword`. Leitura/gravação. Retorna uma cadeia de caracteres que contém a palavra-chave ajuda.  
-  
+
     - `externalFile`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o arquivo que contém a ID do membro.  
-  
+
     - `externalid`. Leitura/gravação. Retorna uma cadeia de caracteres que representa a ID de membro da função.  
-  
-    - `params`. Leitura/gravação. Obtém ou define a matriz de parâmetros para a função. Cada elemento na matriz de parâmetros é um `parameter` que tem propriedades que correspondem aos seguintes atributos do objeto de [ \<param >](../ide/param-javascript.md) elemento:  
-  
-        - `name`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o nome do parâmetro.  
-  
-        - `type`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o tipo de parâmetro.  
-  
-        - `elementType`. Leitura/gravação. Se o tipo for `Array`, retorna uma cadeia de caracteres que representa o tipo dos elementos na matriz.  
-  
-        - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve o parâmetro.  
-  
-        - `locid`. Leitura/gravação. Retorna um identificador de cadeia de caracteres que contém informações sobre a função de localização.  
-  
-        - `optional`. Leitura/gravação. Retorna uma cadeia de caracteres que indica se o parâmetro é opcional. `true` indica que o parâmetro é opcional; `false` indica que ele não está.  
-  
-    - `returnValue`. Leitura/gravação. Obtém ou define um objeto de valor de retorno com propriedades que correspondem aos seguintes atributos do [ \<retorna >](../ide/returns-javascript.md) elemento:  
-  
-        - `type`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o tipo de retorno.  
-  
-        - `elementType`. Leitura/gravação. Se o tipo for `Array`, retorna uma cadeia de caracteres que representa o tipo dos elementos na matriz.  
-  
-        - `description`. Leitura/gravação. Retorna uma cadeia de caracteres que descreve o valor de retorno.  
-  
-        - `locid`. Leitura/gravação. Retorna um identificador de cadeia de caracteres que contém informações sobre a função de localização.  
-  
-        - `helpKeyword`. Leitura/gravação. Retorna uma cadeia de caracteres que contém a palavra-chave ajuda.  
-  
-        - `externalFile`. Leitura/gravação. Retorna uma cadeia de caracteres que representa o arquivo que contém a ID do membro.  
-  
-        - `externalid`. Leitura/gravação. Retorna uma cadeia de caracteres que representa a ID de membro da função.  
   
 ### <a name="ParentObject"></a> parentObject propriedade  
  Retorna o objeto pai de uma função de membro. Por exemplo, para `document.getElementByID`, `parentObject` retorna o `document` objeto. Essa propriedade está disponível para o `signaturehelp` objeto de evento.  

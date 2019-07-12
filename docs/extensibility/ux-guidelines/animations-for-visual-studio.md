@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a99ddbe8bf1b98ce6f2fabc32b9597cd02a704e
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 3f113bf8d9a77e8569126a6f0c7d96f1fe4f0eea
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66337029"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825240"
 ---
 # <a name="animations-for-visual-studio"></a>Animações para Visual Studio
 ## <a name="animation-fundamentals"></a>Conceitos básicos de animação
@@ -25,13 +25,13 @@ Siga estas regras para garantir que os estilos de animação consistente e fáci
 
 - **Medição de tempo e a velocidade são importantes** para garantir que as transições de se sentir rápida e natural:
 
-    - Concluir a transição animada no meio de um segundo (500 milissegundos).
+  - Concluir a transição animada no meio de um segundo (500 milissegundos).
 
-    - As animações que podem ocorrer com frequência precisam ser rápido o suficiente para que eles não interrupção o fluxo de trabalho do usuário. Assista a animação em um loop e ajustar o tempo até que ele parece a coisa certo.
+  - As animações que podem ocorrer com frequência precisam ser rápido o suficiente para que eles não interrupção o fluxo de trabalho do usuário. Assista a animação em um loop e ajustar o tempo até que ele parece a coisa certo.
 
-    - Animações não devem ser tão rápido ou brusca que é difícil de entender, mas não tão lento que ele faz um impaciente a transição concluir.
+  - Animações não devem ser tão rápido ou brusca que é difícil de entender, mas não tão lento que ele faz um impaciente a transição concluir.
 
-    - Use o tempo de variável para enfatizar a importância. Por exemplo, ao navegar por meio de uma sequência de itens em um diagrama de classe, acelerar por transições entre os itens e mais lento para se concentrar em itens importantes.
+  - Use o tempo de variável para enfatizar a importância. Por exemplo, ao navegar por meio de uma sequência de itens em um diagrama de classe, acelerar por transições entre os itens e mais lento para se concentrar em itens importantes.
 
 - **Usar a atenuação de não-linear gradual** de um estado para outro, dando uma ideia do movimento calmo e natural.
 
@@ -47,13 +47,13 @@ Siga estas regras para garantir que os estilos de animação consistente e fáci
 
 - **Ao mostrar o progresso ou status** através de animação:
 
-    - Pare de mostrar com que o movimento de progresso quando o processo subjacente não está avançando.
+  - Pare de mostrar com que o movimento de progresso quando o processo subjacente não está avançando.
 
-    - Distingue os processos indeterminados de processos de determinada.
+  - Distingue os processos indeterminados de processos de determinada.
 
-    - Certifique-se de que uma animação tem a identificação de estados de conclusão e falha.
+  - Certifique-se de que uma animação tem a identificação de estados de conclusão e falha.
 
-    - Minimize o uso de animações do efeito que mostram o status e certifique-se de que eles têm um valor real, fornecendo informações adicionais de uso real. Os exemplos incluem emergências e alterações de status transitório
+  - Minimize o uso de animações do efeito que mostram o status e certifique-se de que eles têm um valor real, fornecendo informações adicionais de uso real. Os exemplos incluem emergências e alterações de status transitório
 
 #### <a name="animation-donts"></a>Não faça a animação:
 

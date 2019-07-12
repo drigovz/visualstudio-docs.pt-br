@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa310539b3a36d78137f336b8fea8f40a5d459ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 10affe50b3410fa013205313f4087aaabb7c4769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430408"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825797"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>Passo a passo: Criar uma extensão de projeto do SharePoint
   Este passo a passo ilustra como criar uma extensão para projetos do SharePoint. Você pode usar uma extensão de projeto para responder a eventos de nível de projeto, como quando um projeto é adicionado, excluído ou renomeado. Você também pode adicionar propriedades personalizadas ou responder quando um valor da propriedade muda. Diferentemente de extensões de item de projeto, as extensões de projeto não podem ser associadas um tipo específico de projeto do SharePoint. Quando você cria uma extensão de projeto, a extensão carrega quando qualquer tipo de projeto do SharePoint é aberto no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -30,11 +30,11 @@ ms.locfileid: "63430408"
 
 - Criando um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] extensão para projetos do SharePoint que faz o seguinte:
 
-    - Adiciona uma propriedade de projeto personalizados para a janela Propriedades. A propriedade se aplica a qualquer projeto do SharePoint.
+  - Adiciona uma propriedade de projeto personalizados para a janela Propriedades. A propriedade se aplica a qualquer projeto do SharePoint.
 
-    - Usa o modelo de objeto de projeto do SharePoint para adicionar uma pasta mapeada para um projeto.
+  - Usa o modelo de objeto de projeto do SharePoint para adicionar uma pasta mapeada para um projeto.
 
-    - Usa o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o modelo de objeto de automação DTE () para excluir uma pasta mapeada do projeto.
+  - Usa o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o modelo de objeto de automação DTE () para excluir uma pasta mapeada do projeto.
 
 - Criando um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] assembly de extensão da propriedade de projeto de implantação do pacote VSIX (extensão).
 

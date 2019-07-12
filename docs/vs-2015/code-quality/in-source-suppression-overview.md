@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cb2b23dcc01d90bc4365c7d5673e6232229b8d3e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63426610"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825997"
 ---
 # <a name="in-source-suppression-overview"></a>Visão geral de supressão na origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Supressão do código-fonte é a capacidade para suprimir ou ignorar violações
 > Você não tem manualmente código esses atributos por conta própria. Para obter mais informações, confira [Como: Suprimir Avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). O item de menu não está disponível para código C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage  
- Quando você com o botão direito em um aviso de análise de código a **lista de erros** e, em seguida, clique em **suprimir mensagem (NS)**, um **SuppressMessage** atributo é adicionado em seu código ou para o arquivo de supressões globais do projeto.  
+ Quando você com o botão direito em um aviso de análise de código a **lista de erros** e, em seguida, clique em **suprimir mensagem (NS)** , um **SuppressMessage** atributo é adicionado em seu código ou para o arquivo de supressões globais do projeto.  
   
  O **SuppressMessage** atributo tem o seguinte formato:  
   
@@ -64,15 +64,15 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
 - **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:  
   
-    - Módulo  
-  
-    - Namespace  
-  
-    - Recurso  
-  
-    - Tipo  
-  
-    - Membro  
+  - Módulo  
+
+  - Namespace  
+
+  - Recurso  
+
+  - Tipo  
+
+  - Membro  
   
 - **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado de item.  
   

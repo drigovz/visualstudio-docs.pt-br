@@ -9,12 +9,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 589f5eddb2b1e2a8fd61eea2a205f12d2d9c0742
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 0cc62384f2a413362f53ed0626031501e163d6a4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66321364"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823814"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Alterações na extensibilidade do Visual Studio 2017
 
@@ -63,35 +63,35 @@ A maioria dos assemblies de núcleo do Visual Studio não são mais instalados n
 
 * Assemblies que só foram instalados no GAC:
 
-   Agora, esses assemblies são instalados sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Essas pastas são parte dos caminhos de investigação do processo do Visual Studio.
+  Agora, esses assemblies são instalados sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *\Common7\IDE\PrivateAssemblies [INSTALLDIR]* . Essas pastas são parte dos caminhos de investigação do processo do Visual Studio.
 
 * Assemblies que foram instalados em um caminho de investigação não e no GAC:
 
-   * A cópia no GAC foi removida da instalação.
-   * Um *pkgdef* arquivo foi adicionado ao especificar uma entrada de base de código para o assembly.
+  * A cópia no GAC foi removida da instalação.
+  * Um *pkgdef* arquivo foi adicionado ao especificar uma entrada de base de código para o assembly.
 
-      Por exemplo:
+    Por exemplo:
 
-      ```xml
-      [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
-      "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
-      "publicKeyToken"="Public Key Token"
-      "culture"="neutral"
-      "version"=15.0.0.0
-      ```
+    ```
+    [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]
+    "name"="AssemblyName" "codeBase"="$PackageFolder$\AssemblyName.dll"
+    "publicKeyToken"="Public Key Token"
+    "culture"="neutral"
+    "version"=15.0.0.0
+    ```
 
-      Em tempo de execução, o subsistema do Visual Studio pkgdef mescla essas entradas no arquivo de configuração de tempo de execução do processo do Visual Studio (sob *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementos. Essa é a maneira recomendada para permitir que o processo do Visual Studio encontrar o assembly, porque ele evita a pesquisa por meio de caminhos de investigação.
+    Em tempo de execução, o subsistema do Visual Studio pkgdef mescla essas entradas no arquivo de configuração de tempo de execução do processo do Visual Studio (sob *[VSAPPDATA]\devenv.exe.config*) como [ `<codeBase>` ](/dotnet/framework/configure-apps/file-schema/runtime/codebase-element) elementos. Essa é a maneira recomendada para permitir que o processo do Visual Studio encontrar o assembly, porque ele evita a pesquisa por meio de caminhos de investigação.
 
 ### <a name="reacting-to-this-breaking-change"></a>Reagir a essa alteração interruptiva
 
 * Se sua extensão está em execução dentro do processo do Visual Studio:
 
-   * Seu código será capaz de localizar assemblies de núcleo do Visual Studio.
-   * Considere o uso de um *pkgdef* arquivo para especificar um caminho para os assemblies, se necessário.
+  * Seu código será capaz de localizar assemblies de núcleo do Visual Studio.
+  * Considere o uso de um *pkgdef* arquivo para especificar um caminho para os assemblies, se necessário.
 
 * Se sua extensão está em execução fora do processo do Visual Studio:
 
-   Considere procurando assemblies de núcleo do Visual Studio sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*usando o resolvedor de assembly ou arquivo de configuração.
+  Considere procurando assemblies de núcleo do Visual Studio sob <em>[INSTALLDIR] \Common7\IDE\*, * [INSTALLDIR] \Common7\IDE\PublicAssemblies</em> ou *[INSTALLDIR] \Common7\IDE\PrivateAssemblies*usando o resolvedor de assembly ou arquivo de configuração.
 
 ## <a name="change-reduce-registry-impact"></a>Alteração: Reduzir o impacto do registro
 
