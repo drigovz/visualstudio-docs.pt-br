@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bcd102d8717b455a402bceb98e7ce85a2907e3bb
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: dfebb3ce5293e7594827a17b30261403b0f3ae9a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65694989"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821305"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Solucionar problemas de implantação de solução do Office
   Este tópico contém informações sobre como resolver problemas comuns que você pode encontrar ao implantar soluções do Office.
@@ -73,9 +73,12 @@ ms.locfileid: "65694989"
 
 2. Sobre o **Application** , escolha **informações de Assembly**.
 
-3. No primeiro **versão do Assembly** , digite um asterisco (\*) e, em seguida, escolha o **Okey** botão.
+3. Defina o número de revisão, o terceiro campo, do **versão do Assembly**, para um caractere curinga (\*). Por exemplo, "1.0. *".  Em seguida, escolha o **Okey** botão.
 
    Depois de alterar a versão do assembly, você pode continuar a assinar o assembly com um nome forte e Fusion carregará a versão mais recente da personalização.
+
+ [!NOTE]
+> Começando com o Visual Studio 2017, se você tentar usar caracteres curinga em um erro de build de versão do Assembly ocorrerá.  Isso ocorre porque os caracteres curinga na versão do assembly interromperá o recurso de MSBuild determinística. Você será instruído a remover os caracteres curinga de versão do assembly, ou desabilite o determinismo.  Para saber mais sobre o recurso determinístico, consulte: [Propriedades de projeto comuns do MSBuild](../msbuild/common-msbuild-project-properties.md) e [personalizar seu build](../msbuild/customize-your-build.md)
 
 ## <a name="installation-fails-when-the-uri-has-characters-that-arent-us-ascii"></a>A instalação falha quando o URI tem caracteres que não são de US-ASCII
  Quando você publica uma solução do Office em um local HTTP/HTTPS/FTP, o caminho não pode ter quaisquer caracteres Unicode que não estão em US-ASCII. Esses caracteres podem causar um comportamento inconsistente no programa de instalação. Use caracteres US-ASCII para o caminho de instalação.

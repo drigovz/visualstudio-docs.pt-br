@@ -8,12 +8,12 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ede8844b34473e1c900bd6af040cac99ceee1514
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075812"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824062"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ internal partial class WebConfigModificationWindow : DialogWindow
 
  (Substitua `Microsoft.VisualStudio.Shell.11.0` com a versão atual da dll MPF.)
 
- Para exibir a caixa de diálogo, chame "**ShowModal()**" na classe pela **ShowDialog()**. **ShowModal()** define o estado modal correto no shell, garante que a caixa de diálogo é centralizada na janela pai e assim por diante.
+ Para exibir a caixa de diálogo, chame "**ShowModal()** " na classe pela **ShowDialog()** . **ShowModal()** define o estado modal correto no shell, garante que a caixa de diálogo é centralizada na janela pai e assim por diante.
 
  O código é da seguinte maneira:
 
@@ -417,11 +417,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 - Títulos maiores (fonte de ambiente x 155% ou maior) podem ser coloridos para essas finalidades:
 
-    - Para fornecer o apelo visual a assinatura de IU do Visual Studio
+  - Para fornecer o apelo visual a assinatura de IU do Visual Studio
 
-    - Para chamar a atenção para uma área específica
+  - Para chamar a atenção para uma área específica
 
-    - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
+  - Para oferecer alívio de cor do texto padrão ambiente/preto a cinza-escuro
 
 - Cor nos títulos deve utilizar o Visual Studio marca cores existentes, principalmente a principal roxa, #FF68217A.
 

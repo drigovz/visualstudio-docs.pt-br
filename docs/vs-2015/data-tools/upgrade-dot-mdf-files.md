@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 169bf374b5c7ee34f75743e363d56c3737000cbc
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424915"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823452"
 ---
 # <a name="upgrade-mdf-files"></a>Atualizar arquivos .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,9 +104,9 @@ Este tópico descreve as opções para atualizar seu arquivo de banco de dados (
   
 - No Visual Studio, abra o projeto sem atualizá-lo.  
   
-    - Para executar o projeto, selecione a tecla F5.  
-  
-    - Para editar o banco de dados, abra o arquivo. mdf na **Gerenciador de soluções**e expanda o nó no **Gerenciador de servidores** para trabalhar com seu banco de dados.  
+  - Para executar o projeto, selecione a tecla F5.  
+
+  - Para editar o banco de dados, abra o arquivo. mdf na **Gerenciador de soluções**e expanda o nó no **Gerenciador de servidores** para trabalhar com seu banco de dados.  
   
 ### <a name="to-make-sql-server-express-the-default-database-engine"></a>Para tornar o SQL Server Express o mecanismo de banco de dados padrão  
   

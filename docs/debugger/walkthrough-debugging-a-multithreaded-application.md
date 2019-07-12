@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4f65bd7a904f30f132f654b6dd718532d9d0e66e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63406934"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821582"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Exibir threads no depurador do Visual Studio usando a janela de Threads (C#, Visual Basic, C++)
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando. Para obter orientação passo a passo sobre como usar o **Threads** janela, consulte [passo a passo: Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
@@ -101,9 +101,9 @@ Uma seta amarela indica o thread atual (e o local do ponteiro de execução). Um
 
 - Siga as etapas a seguir:
 
-    - Clique duas vezes em qualquer thread.
+  - Clique duas vezes em qualquer thread.
 
-    - Um thread com o botão direito e selecione **alternar para Thread**.
+  - Um thread com o botão direito e selecione **alternar para Thread**.
 
 ## <a name="group-and-sort-threads"></a>Agrupar e classificar threads
  Quando você agrupa threads, um título aparece na tabela para cada grupo. O título contém uma descrição do grupo, como **Thread de Trabalho** ou **Threads Sem Sinalização** e um controle de árvore. Os threads de membro de cada grupo aparecem no cabeçalho do grupo. Se você quiser ocultar os threads de membro de um grupo, use o controle de árvore para recolher o grupo.

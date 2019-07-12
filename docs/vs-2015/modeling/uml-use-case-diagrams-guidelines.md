@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3fe11a4d92ecc95f5835fc8a8c654b2aac3d235
-ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+ms.openlocfilehash: fc5dbc6b483313d169a80dc66550dce80a147c96
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/01/2019
-ms.locfileid: "67493665"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823834"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,13 +88,13 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
     - Os atores representam classes de usuários, as organizações e sistemas externos que interagem com o seu sistema.  
   
-    - Renomeie-os. Por exemplo: **Agência de cartão de crédito do cliente, restaurante.**  
+    - Renomeie-os. Por exemplo:  **Agência de cartão de crédito do cliente, restaurante.**  
   
 3. Arraste **casos de uso** Toolbox para os sistemas apropriados.  
   
     - Casos de uso representam as atividades que os atores executam com a Ajuda do seu sistema.  
   
-    - Renomeie-os usando títulos que entende os atores em si. Não use títulos que estão relacionados ao seu código. Por exemplo: **Solicitar a refeição, pague refeição, entregar refeição**.  
+    - Renomeie-os usando títulos que entende os atores em si. Não use títulos que estão relacionados ao seu código. Por exemplo:  **Solicitar a refeição, pague refeição, entregar refeição**.  
   
     - Começar com transações principais, como **Meal Order**, deixando até posteriores interações menores, como **selecione o Item de Menu**.  
   
@@ -115,13 +115,13 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
   
 - Crie **atores** para representar as classes de pessoas, as organizações, outros sistemas, software ou dispositivos que interagem com seu sistema ou subsistema.  
   
-    - Para saber como desenhar atores e outros elementos, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
-  
-    - Para cada conjunto distinto de metas, identifique os atores por seu tipo ou função, mesmo que as pessoas físicas ou entidades podem ser o mesmo. Por exemplo, o restaurante e clientes são atores separados, mesmo que um funcionário do restaurante, às vezes, pode ser um cliente.  
+  - Para saber como desenhar atores e outros elementos, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+
+  - Para cada conjunto distinto de metas, identifique os atores por seu tipo ou função, mesmo que as pessoas físicas ou entidades podem ser o mesmo. Por exemplo, o restaurante e clientes são atores separados, mesmo que um funcionário do restaurante, às vezes, pode ser um cliente.  
   
 - Crie **casos de uso** para cada um dos objetivos de cada ator procura obter com o sistema.  
   
-    - Nomear e descrever os casos de uso em palavras que o ator entenderia, em vez de termos de implementação.  
+  - Nomear e descrever os casos de uso em palavras que o ator entenderia, em vez de termos de implementação.  
   
 - Use **associações** vincular atores a casos de uso.  
   

@@ -8,12 +8,12 @@ ms.author: madsk
 manager: justinclareburt
 ms.workload:
 - willbrown
-ms.openlocfilehash: 4680adaf23abd01e72901c9a470633addbf0d924
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 392a0157522f5baa8e8736d52c940b31c0a44cde
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66324896"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826038"
 ---
 # <a name="how-to-make-extensions-compatible-with-visual-studio-2017-and-visual-studio-2015"></a>Como: Fazer com que as extensões compatíveis com o Visual Studio 2017 e Visual Studio 2015
 
@@ -57,8 +57,8 @@ Se o projeto contiver uma *Project. JSON* arquivo:
 * Anote as referências no *Project. JSON*.
 * Dos **Gerenciador de soluções**, exclua o *Project. JSON* arquivo do projeto. Isso exclui as *Project. JSON* de arquivo e o remove do projeto.
 * Adicione que as referências de NuGet novamente para o projeto:
-    * Clique com botão direito no **Solution** e escolha **gerenciar pacotes NuGet para solução**.
-    * Visual Studio cria automaticamente o *Packages. config* arquivo para você.
+  * Clique com botão direito no **Solution** e escolha **gerenciar pacotes NuGet para solução**.
+  * Visual Studio cria automaticamente o *Packages. config* arquivo para você.
 
 > [!NOTE]
 > Se seu projeto continha pacotes EnvDTE, eles talvez precise ser adicionados com o botão direito clicando em **referências** selecionando **adicionar referência** e adicionar a referência apropriada. Usar pacotes do NuGet pode criar erros ao tentar compilar seu projeto.

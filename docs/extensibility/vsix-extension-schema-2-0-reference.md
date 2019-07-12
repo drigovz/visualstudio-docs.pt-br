@@ -11,12 +11,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c6672fea1f3998f46c171ab7e9164291e12588f
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 17d989f3d417866a0bf5dd31099b2f93c9b6e957
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66322859"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826265"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.
@@ -45,13 +45,13 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 
 - `<Identity>` -Define as informações de identificação para esse pacote e inclui os seguintes atributos:
 
-    - `Id` -Este atributo deve ser uma ID exclusiva para o pacote escolhido por seu autor. O nome deve ser qualificado da mesma forma que os tipos CLR são ajudaria: Company.Product.Feature.Name. O `Id` atributo é limitado a 100 caracteres.
+  - `Id` -Este atributo deve ser uma ID exclusiva para o pacote escolhido por seu autor. O nome deve ser qualificado da mesma forma que os tipos CLR são ajudaria: Company.Product.Feature.Name. O `Id` atributo é limitado a 100 caracteres.
 
-    - `Version` -Define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major.Minor.Build.Revision (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.
+  - `Version` -Define a versão deste pacote e seu conteúdo. Esse atributo segue o formato de controle de versão do assembly CLR: Major.Minor.Build.Revision (1.2.40308.00). Um pacote com um maior número de versão é considerado atualizações do pacote e pode ser instalado em relação à versão instalada existente.
 
-    - `Language` -Este atributo é o idioma padrão para o pacote e corresponde aos dados textuais neste manifesto. Esse atributo segue a convenção de código de localidade do CLR para assemblies de recurso, por exemplo: en-us, en, fr-fr. Você pode especificar `neutral` para declarar uma extensão com neutralidade de idioma que será executado em qualquer versão do Visual Studio. O valor padrão é `neutral`.
+  - `Language` -Este atributo é o idioma padrão para o pacote e corresponde aos dados textuais neste manifesto. Esse atributo segue a convenção de código de localidade do CLR para assemblies de recurso, por exemplo: en-us, en, fr-fr. Você pode especificar `neutral` para declarar uma extensão com neutralidade de idioma que será executado em qualquer versão do Visual Studio. O valor padrão é `neutral`.
 
-    - `Publisher` -Este atributo identifica o editor desse pacote, uma empresa ou um nome individual. O `Publisher` atributo é limitado a 100 caracteres.
+  - `Publisher` -Este atributo identifica o editor desse pacote, uma empresa ou um nome individual. O `Publisher` atributo é limitado a 100 caracteres.
 
 - `<DisplayName>` -Este elemento Especifica o nome amigável do pacote que é exibido na UI do Gerenciador de extensões. O `DisplayName` conteúdo é limitado a 50 caracteres.
 
@@ -80,9 +80,9 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 
 - `Scope` -Este atributo pode ter o valor "Global" ou "ProductExtension":
 
-    - "Global" Especifica que a instalação não é vinculada a um SKU específico. Por exemplo, esse valor é usado quando um SDK de extensão está instalado.
+  - "Global" Especifica que a instalação não é vinculada a um SKU específico. Por exemplo, esse valor é usado quando um SDK de extensão está instalado.
 
-    - "ProductExtension" Especifica que uma extensão VSIX tradicional (versão 1.0) no escopo individuais SKUs do Visual Studio está instalada. Este é o valor padrão.
+  - "ProductExtension" Especifica que uma extensão VSIX tradicional (versão 1.0) no escopo individuais SKUs do Visual Studio está instalada. Este é o valor padrão.
 
 - `AllUsers` -Esse atributo opcional especifica se este pacote será instalado para todos os usuários. Por padrão, esse atributo é false, que especifica que o pacote não por usuário. (Quando você definir esse valor como true, o usuário de instalação deve elevar para o nível de privilégio administrativo para instalar o VSIX resultante.
 
@@ -94,71 +94,71 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 
 - `<InstallationTarget>` -Esse elemento controla o local em que o instalador do VSIX instala o pacote. Se o valor da `Scope` atributo é "ProductExtension" o pacote deve ter como destino uma SKU, que tem instalado um arquivo de manifesto como parte de seu conteúdo para anunciar sua disponibilidade para extensões. O `<InstallationTarget>` elemento tem os seguintes atributos quando o `Scope` atributo tem explícito ou valor padrão "ProductExtension":
 
-    - `Id` -Este atributo identifica o pacote.  O atributo segue a convenção de namespace: Company.Product.Feature.Name. O `Id` atributo pode conter apenas caracteres alfanuméricos e é limitado a 100 caracteres. Valores esperados:
+  - `Id` -Este atributo identifica o pacote.  O atributo segue a convenção de namespace: Company.Product.Feature.Name. O `Id` atributo pode conter apenas caracteres alfanuméricos e é limitado a 100 caracteres. Valores esperados:
 
-        - Microsoft.VisualStudio.IntegratedShell
+    - Microsoft.VisualStudio.IntegratedShell
 
-        - Microsoft.VisualStudio.Pro
+    - Microsoft.VisualStudio.Pro
 
-        - Microsoft.VisualStudio.Premium
+    - Microsoft.VisualStudio.Premium
 
-        - Microsoft.VisualStudio.Ultimate
+    - Microsoft.VisualStudio.Ultimate
 
-        - Microsoft.VisualStudio.VWDExpress
+    - Microsoft.VisualStudio.VWDExpress
 
-        - Microsoft.VisualStudio.VPDExpress
+    - Microsoft.VisualStudio.VPDExpress
 
-        - Microsoft.VisualStudio.VSWinExpress
+    - Microsoft.VisualStudio.VSWinExpress
 
-        - Microsoft.VisualStudio.VSLS
+    - Microsoft.VisualStudio.VSLS
 
-        - My.Shell.App
+    - My.Shell.App
 
-    - `Version` -Este atributo especifica um intervalo de versão com as versões com suporte mínimas e máxima deste SKU. Um pacote pode detalhar as versões dos SKUs que ele suporta. A notação de intervalo de versão é [11.0-10.0], onde
+  - `Version` -Este atributo especifica um intervalo de versão com as versões com suporte mínimas e máxima deste SKU. Um pacote pode detalhar as versões dos SKUs que ele suporta. A notação de intervalo de versão é [11.0-10.0], onde
 
-        - [-versão mínima inclusivo.
+    - [-versão mínima inclusivo.
 
-        - ]-versão máximo inclusivo.
+    - ]-versão máximo inclusivo.
 
-        - (-versão mínima exclusivo.
+    - (-versão mínima exclusivo.
 
-        - ) – a versão máxima exclusivo.
+    - ) – a versão máxima exclusivo.
 
-        - Única versão # - somente a versão especificada.
+    - Única versão # - somente a versão especificada.
 
-        > [!IMPORTANT]
-        > A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.
+    > [!IMPORTANT]
+    > A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.
 
-        Números de versão do Visual Studio 2017 podem ser encontrados em [Visual Studio números de compilação e datas de lançamento](../install/visual-studio-build-numbers-and-release-dates.md).
+    Números de versão do Visual Studio 2017 podem ser encontrados em [Visual Studio números de compilação e datas de lançamento](../install/visual-studio-build-numbers-and-release-dates.md).
 
-        Ao expressar a versão para versões do Visual Studio 2017, a versão secundária deve ser sempre **0**. Por exemplo, o Visual Studio 2017 versão 15.3.26730.0 deve ser expresso como [15.0.26730.0,16.0). Isso só é necessário para o Visual Studio 2017 e números de versão posteriores.
+    Ao expressar a versão para versões do Visual Studio 2017, a versão secundária deve ser sempre **0**. Por exemplo, o Visual Studio 2017 versão 15.3.26730.0 deve ser expresso como [15.0.26730.0,16.0). Isso só é necessário para o Visual Studio 2017 e números de versão posteriores.
 
-    - `AnyAttribute*` -O `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.
+  - `AnyAttribute*` -O `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.
 
 ### <a name="dependencies-element"></a>Elemento de dependências
  Esse elemento contém uma lista de dependências que declara este pacote. Se todas as dependências forem especificadas, esses pacotes (identificado por suas `Id`) deve ter sido instalado antes.
 
 - `<Dependency>` elemento – esse elemento filho tem os seguintes atributos:
 
-    - `Id` -Este atributo deve ser uma ID exclusiva para o pacote dependente. Esse valor de identidade deve corresponder a `<Metadata><Identity>Id` atributo de um pacote que este pacote é dependente. O `Id` atributo segue a convenção de namespace: Company.Product.Feature.Name. O atributo pode conter apenas caracteres alfanuméricos e é limitado a 100 caracteres.
+  - `Id` -Este atributo deve ser uma ID exclusiva para o pacote dependente. Esse valor de identidade deve corresponder a `<Metadata><Identity>Id` atributo de um pacote que este pacote é dependente. O `Id` atributo segue a convenção de namespace: Company.Product.Feature.Name. O atributo pode conter apenas caracteres alfanuméricos e é limitado a 100 caracteres.
 
-    - `Version` -Este atributo especifica um intervalo de versão com as versões com suporte mínimas e máxima deste SKU. Um pacote pode detalhar as versões dos SKUs que ele suporta. A notação de intervalo de versão é [12.0, 13.0], onde:
+  - `Version` -Este atributo especifica um intervalo de versão com as versões com suporte mínimas e máxima deste SKU. Um pacote pode detalhar as versões dos SKUs que ele suporta. A notação de intervalo de versão é [12.0, 13.0], onde:
 
-        - [-versão mínima inclusivo.
+    - [-versão mínima inclusivo.
 
-        - ]-versão máximo inclusivo.
+    - ]-versão máximo inclusivo.
 
-        - (-versão mínima exclusivo.
+    - (-versão mínima exclusivo.
 
-        - ) – a versão máxima exclusivo.
+    - ) – a versão máxima exclusivo.
 
-        - Única versão # - somente a versão especificada.
+    - Única versão # - somente a versão especificada.
 
-    - `DisplayName` -Esse atributo é o nome de exibição do pacote dependente, que é usado em elementos de interface do usuário, como caixas de diálogo e mensagens de erro. O atributo é opcional, a menos que o pacote dependente é instalado por MSI.
+  - `DisplayName` -Esse atributo é o nome de exibição do pacote dependente, que é usado em elementos de interface do usuário, como caixas de diálogo e mensagens de erro. O atributo é opcional, a menos que o pacote dependente é instalado por MSI.
 
-    - `Location` -Esse atributo opcional especifica o caminho relativo dentro neste VSIX para um pacote VSIX aninhado ou uma URL para o local de download para a dependência. Este atributo é usado para ajudar o usuário localize o pacote de pré-requisito.
+  - `Location` -Esse atributo opcional especifica o caminho relativo dentro neste VSIX para um pacote VSIX aninhado ou uma URL para o local de download para a dependência. Este atributo é usado para ajudar o usuário localize o pacote de pré-requisito.
 
-    - `AnyAttribute*` -O `Dependency` elemento aceita um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.
+  - `AnyAttribute*` -O `Dependency` elemento aceita um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.
 
 ### <a name="assets-element"></a>Elemento de ativos
  Esse elemento contém uma lista de `<Asset>` marcas para cada elemento de extensão ou o conteúdo exposto por este pacote.
@@ -189,11 +189,11 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
 
   - `AnyAttribute*` -Um conjunto em aberto de atributos que é exposto em tempo de execução como um dicionário de par nome-valor.
 
-     `<AnyElement>*` -Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.
+    `<AnyElement>*` -Qualquer conteúdo estruturado é permitido entre um `<Asset>` começa e termina a marca. Todos os elementos são expostos como uma lista de objetos XmlElement. Extensões VSIX podem definir metadados estruturados de tipo específico no arquivo de manifesto e enumerá-los em tempo de execução.
 
 ### <a name="sample-manifest"></a>Exemplo de manifesto
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>

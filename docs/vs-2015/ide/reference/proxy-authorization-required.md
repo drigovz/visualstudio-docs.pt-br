@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520c31f671aee05663a5471aca05cfe06313b168
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: f2de40c520bca0ea04f50ec782fec2dda531172e
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65847027"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67822062"
 ---
 # <a name="proxy-authorization-required"></a>Autorização de proxy necessária
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Para corrigir esse erro, tente uma ou mais das seguintes etapas:
 
 - Se a etapa acima não resolver o problema, pode ser porque o servidor proxy não solicita credenciais para endereços http://go.microsoft.com, mas sim para endereços *.visualStudio.com. Para esses servidores, você precisará adicionar as seguintes URLs à lista de permissões para desbloquear todos os cenários de entrar no Visual Studio:
 
-    - *.windows.net
+  - *.windows.net
 
-    - *.microsoftonline.com
+  - *.microsoftonline.com
 
-    - *.visualstudio.com
+  - *.visualstudio.com
 
-    - *.microsoft.com
+  - *.microsoft.com
 
-    - *.live.com
+  - *.live.com
 
 - Você pode remover o http://go.microsoft.com de endereços da lista de permissões para que a caixa de diálogo de autenticação de proxy apareça para ambos o http://go.microsoft.com endereço e os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
 

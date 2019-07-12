@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 50eedfe849de2a0fe82ee337d26a8b66a15d6764
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432642"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826155"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Como: Pausar e retomar a coleta dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
   
 - Na página de sessão de criação de perfil:  
   
-    - Escolha **Pause a coleta** para suspender a coleta de dados.  
-  
-    - Escolha **Retomar a coleta** para reiniciar a coleta de dados depois que ela está em pausa.  
-  
-    - Escolha **Pare a criação de perfil** para encerrar a sessão de criação de perfil e gerar relatórios.  
+  - Escolha **Pause a coleta** para suspender a coleta de dados.  
+
+  - Escolha **Retomar a coleta** para reiniciar a coleta de dados depois que ela está em pausa.  
+
+  - Escolha **Pare a criação de perfil** para encerrar a sessão de criação de perfil e gerar relatórios.  
   
 ## <a name="see-also"></a>Consulte também  
  [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  

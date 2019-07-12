@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ecf0e87a954afc2577c5e374bd22ac9da024be
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 918368ff9ce8f9d0363d3ae0cba85e55dc361086
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335396"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824601"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação à consistência incluem:
@@ -226,7 +226,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 
 - **Sempre** tentar criar um indicador que resume as informações que ele disponibiliza. Recomenda-se fornecer uma contagem do número de itens de dados disponíveis (por exemplo, "3 referências", em vez de simplesmente "Referências") ou pensar em alguma outra maneira para resumir os dados.
 
-    - Em casos em que os dados para um indicador não podem sempre ser computados e exibidos, considere imediatamente fornecendo comentários progressivo, como os valores são computados. Por exemplo, considere animando alterações que refletem as atualizações dos dados disponíveis, semelhantes à forma como o bloco dinâmico de email no Windows Phone é atualizada conforme o número de aumentos de emails não lidos.
+  - Em casos em que os dados para um indicador não podem sempre ser computados e exibidos, considere imediatamente fornecendo comentários progressivo, como os valores são computados. Por exemplo, considere animando alterações que refletem as atualizações dos dados disponíveis, semelhantes à forma como o bloco dinâmico de email no Windows Phone é atualizada conforme o número de aumentos de emails não lidos.
 
 - **Nunca** adicionar indicadores mais do que um usuário pode realizar razoavelmente para uma determinada parte do conteúdo. Indicadores de ambientes devem ser útil sem exigir qualquer interação do usuário. Indicadores de perdem seu ambiente se precisarem de estouro e outros controles de gerenciamento para colocá-los em modo de exibição.
 
@@ -235,11 +235,11 @@ Padrões compostos combinam elementos de design e interação em configurações
 
 - **Sempre** exigem que o usuário executar alguma gesto explícito para abrir o conteúdo adicional. Gestos abertos comuns incluem:
 
-    - **Passe o mouse:** dicas de ferramenta ou conteúdo informativo não interativo
+  - **Passe o mouse:** dicas de ferramenta ou conteúdo informativo não interativo
 
-    - **Comando explícito:** apresentador embutido
+  - **Comando explícito:** apresentador embutido
 
-    - **Clique duas vezes o indicador de ambiente:** Janela pop-up do CodeLens
+  - **Clique duas vezes o indicador de ambiente:** Janela pop-up do CodeLens
 
 - **Sempre** ignorar o conteúdo de detalhes, sempre que o usuário pressiona a tecla Esc.
 

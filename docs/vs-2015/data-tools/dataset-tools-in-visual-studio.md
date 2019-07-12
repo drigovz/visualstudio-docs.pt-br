@@ -53,12 +53,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df415b9ad56e8e9b740da57709d039737f1bd24a
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: e53a31a274a356d5686c3225ed2635e6c61231c2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65697914"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824705"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,13 +81,13 @@ ms.locfileid: "65697914"
 
 - Use o **Assistente de configuração TableAdapter** para especificar a consulta ou procedimento armazenado que preencherá o conjunto de dados e quais operações de banco de dados (update, delete e assim por diante) para implementar. Para saber mais, consulte estes tópicos:
 
-    - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+  - [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
+  - [Editar dados em conjuntos de dados](../data-tools/edit-data-in-datasets.md)
 
-    - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
+  - [Validando dados em conjuntos de dados](../data-tools/validate-data-in-datasets.md)
 
-    - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
+  - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
 
 - Consultar e pesquisar os dados no conjunto de dados. Para obter mais informações, consulte [conjuntos de dados de consulta](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] Habilita [LINQ (consulta integrada à linguagem)](https://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sobre os dados em um <xref:System.Data.DataSet> objeto. Para obter mais informações, consulte [LINQ to DataSet](https://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 

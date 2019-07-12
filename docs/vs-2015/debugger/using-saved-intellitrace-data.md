@@ -16,12 +16,12 @@ caps.latest.revision: 112
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3681523595c6e4db50a2a05a7a325decc065cfc5
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b1e22447581deee70c133dfdb4c42df6630e26ad
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65684384"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823455"
 ---
 # <a name="using-saved-intellitrace-data"></a>Usando os dados salvos do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,11 +59,11 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
   
 - Se o arquivo .iTrace estiver anexado a um item de trabalho do Team Foundation Server, siga estas etapas no item de trabalho:  
   
-    - Em **Todos os Links**, localize o arquivo .iTrace. Abra-o.  
-  
-         \- ou -  
-  
-    - Em **Etapas de Reprodução**, escolha o link **IntelliTrace**.  
+  - Em **Todos os Links**, localize o arquivo .iTrace. Abra-o.  
+
+        \- or -  
+
+  - Em **Etapas de Reprodução**, escolha o link **IntelliTrace**.  
   
 > [!TIP]
 > Se você fechou o arquivo IntelliTrace durante a depuração, poderá reabri-lo facilmente. Vá para o menu **Depurar**, escolha **IntelliTrace**, **Mostrar Resumo do Log**. Você também pode escolher **Mostrar Resumo do Log** na janela **IntelliTrace**. Isso só estará disponível durante a depuração com o IntelliTrace.  
@@ -85,7 +85,7 @@ Vá para os pontos específicos da execução do aplicativo quando você iniciar
   
 - Escolha um cabeçalho de coluna para classificar dados.  
   
-- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos (**:**) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula (**;**) para adicionar outro valor de coluna e de pesquisa.  
+- Use a caixa de pesquisa para filtrar dados. A pesquisa de texto sem formatação funciona em todas as colunas, exceto nas colunas de tempo. Você também pode filtrar pesquisas para uma coluna específica com um filtro por coluna. Digite o nome da coluna sem espaços, dois-pontos ( **:** ) e o valor de pesquisa. Depois disso, use um ponto-e-vírgula ( **;** ) para adicionar outro valor de coluna e de pesquisa.  
   
      Por exemplo, para localizar os eventos de desempenho que tenham a palavra "lento" na coluna **Descrição**, digite:  
   

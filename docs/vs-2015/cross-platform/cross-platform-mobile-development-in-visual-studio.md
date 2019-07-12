@@ -8,12 +8,12 @@ ms.assetid: 8202717a-e990-45cf-b092-438651ccb38a
 caps.latest.revision: 66
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 51edddcbac3815c450b2b0db7166fc7d5c593dbd
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 19d651e6b55fd5d18ece318e20aa7db67cf57fee
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698759"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824185"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Desenvolvimento Móvel Multiplataforma no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ ms.locfileid: "65698759"
 
 - [Compilar um aplicativo para o Android, iOS e Windows (.NET Framework)](#NET)
 
-    - [Ter o Android, iOS e Windows como destino por meio de uma única base de código](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
+  - [Ter o Android, iOS e Windows como destino por meio de uma única base de código](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#AndroidHTML)
 
-    - [Ter dispositivos Windows 10 como destino](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
+  - [Ter dispositivos Windows 10 como destino](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#WindowsHTML)
 
 - [Compilar um aplicativo para o Android, iOS e Windows (HTML/JavaScript)](#HTML)
 
@@ -54,7 +54,7 @@ ms.locfileid: "65698759"
 |[Saiba mais sobre o Emulador do Visual Studio para Android](http://www.visualstudio.com/explore/msft-android-emulator-vs) (VisualStudio.com)|
 
 ### <a name="AndroidHTML"></a> Ter o Android, iOS e Windows como destino por meio de uma única base de código
- É possível criar aplicativos nativos para Android, iOS e Windows usando o C# ou o F# (no momento, não há suporte para o Visual Basic).  Para começar, instale o Visual Studio 2015, selecione a opção **Personalizado** do instalador e marque a caixa em **Desenvolvimento Móvel Multiplataforma > C#/.NET (Xamarin)**. Você também pode começar com o [Instalador do Xamarin](https://www.xamarin.com/download), que é necessário para instalar o Xamarin para Visual Studio 2013.
+ É possível criar aplicativos nativos para Android, iOS e Windows usando o C# ou o F# (no momento, não há suporte para o Visual Basic).  Para começar, instale o Visual Studio 2015, selecione a opção **Personalizado** do instalador e marque a caixa em **Desenvolvimento Móvel Multiplataforma > C#/.NET (Xamarin)** . Você também pode começar com o [Instalador do Xamarin](https://www.xamarin.com/download), que é necessário para instalar o Xamarin para Visual Studio 2013.
 
  Se você já tiver o Visual Studio 2015 instalado, execute o instalador por meio do **Painel de Controle > Programas e Recursos** e selecione a mesma opção **Personalizado** para o Xamarin acima.
 
@@ -107,7 +107,7 @@ ms.locfileid: "65698759"
 
  Para começar, instale o Visual Studio 2015 e escolha o recurso **HTML/JavaScript (Apache Cordova)** durante a instalação. Se você estiver usando o Visual Studio 2013, instale a extensão Ferramentas do Visual Studio para Apache Cordova. De qualquer forma, as ferramentas do Cordova instalam automaticamente todos os softwares de terceiros necessários para criar seu aplicativo multiplataforma.
 
- Depois de instalar a extensão, abra o Visual Studio e crie um projeto **Aplicativo em Branco (Apache Cordova)**. Em seguida, é possível desenvolver seu aplicativo usando o JavaScript ou o Typescript. Também é possível adicionar plug-ins para estender a funcionalidade do aplicativo e as APIs de plug-ins são exibidas no IntelliSense à medida que o código é escrito.
+ Depois de instalar a extensão, abra o Visual Studio e crie um projeto **Aplicativo em Branco (Apache Cordova)** . Em seguida, é possível desenvolver seu aplicativo usando o JavaScript ou o Typescript. Também é possível adicionar plug-ins para estender a funcionalidade do aplicativo e as APIs de plug-ins são exibidas no IntelliSense à medida que o código é escrito.
 
  Quando estiver pronto para executar o aplicativo e executar o código em etapas, escolha um emulador, como o emulador Apache Ripple ou o Emulador do Visual Studio (Android ou Windows Phone), um navegador ou um dispositivo que você conectou diretamente ao computador. Em seguida, inicie o aplicativo. Se você estiver desenvolvendo seu aplicativo em um computador Windows, poderá até mesmo executá-lo nele. Todas essas opções são criadas no Visual Studio como parte das Ferramentas do Visual Studio para Apache Cordova.
 
@@ -124,7 +124,7 @@ ms.locfileid: "65698759"
 
  Primeiro, instale o Visual Studio 2015 e as ferramentas do Visual C++ para Desenvolvimento Móvel Multiplataforma. Em seguida, é possível criar um aplicativo de atividade nativa para o Android ou um aplicativo que se destina ao Windows. Modelos C++ que se destinam ao iOS ainda não estão disponíveis. É possível ter o Android e o Windows como destino na mesma solução, se desejar e, em seguida, compartilhar o código entre eles usando uma biblioteca compartilhada estática ou dinâmica multiplataforma.
 
- Se você precisar criar um aplicativo para o Android que precisa de algum tipo de manipulação avançada de elementos gráficos, como um jogo, poderá usar o C++ para fazer isso. Comece com o projeto **Aplicativo de Atividade Nativa (Android)**. Este projeto tem suporte completo na cadeia de ferramentas Clang.
+ Se você precisar criar um aplicativo para o Android que precisa de algum tipo de manipulação avançada de elementos gráficos, como um jogo, poderá usar o C++ para fazer isso. Comece com o projeto **Aplicativo de Atividade Nativa (Android)** . Este projeto tem suporte completo na cadeia de ferramentas Clang.
 
  ![Modelo de projeto de atividade nativa](../cross-platform/media/cross-plat-cpp-native.png "Cross-Plat_CPP_Native")
 

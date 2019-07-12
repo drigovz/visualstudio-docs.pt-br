@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc05ccbf78069b6c9d155274b471100a4966a10
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 9ab0d9ae382f9410418a98fea606eebbb236b157
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65692238"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823323"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,9 +52,9 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
 - Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:  
   
-    - Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.  
-  
-    - Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.  
+  - Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.  
+
+  - Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.  
   
 - Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.  
   

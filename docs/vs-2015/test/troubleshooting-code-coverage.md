@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dda5f0f9d613a2e6704b0f8b1f688c76a759752
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 926c9f329ccea8e38c60d4ca05cb1542df725414
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705901"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825873"
 ---
 # <a name="troubleshooting-code-coverage"></a>Solução de problemas de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,11 +113,11 @@ A ferramenta de análise da cobertura de código no Visual Studio coleta dados p
   
 - **Erro na expressão regular**  
   
-     Cada cadeia de caracteres no arquivo é uma expressão regular. Revise cada um em busca de erros e, em especial, procure:  
-  
-    - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`  
-  
-    - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`  
+  Cada cadeia de caracteres no arquivo é uma expressão regular. Revise cada um em busca de erros e, em especial, procure:  
+
+  - Parênteses incompatíveis (...) ou parênteses sem escape \\(…\\). Se quiser corresponder um parêntese na cadeia de pesquisa, você deverá usar o escape. Por exemplo, para realizar a correspondência de uma função, use: `.*MyFunction\(double\)`  
+
+  - Asterisco ou sinal de adição no início de uma expressão. Para comparar qualquer cadeia de caracteres, use um ponto seguido de um asterisco: `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Arquivo .runsettings personalizado com exclusões incorretas  
  Análise  

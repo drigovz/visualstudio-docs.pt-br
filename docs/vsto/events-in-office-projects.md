@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e822ae5f50436a2f1b0b4863b7e6cf3a7d5d0963
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441832"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826064"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office automaticamente gera vários manipuladores de eventos. Os manipuladores de eventos para personalizações no nível de documento são ligeiramente diferentes de manipuladores de eventos para suplementos do VSTO.
@@ -56,13 +56,13 @@ ms.locfileid: "63441832"
 
 - Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
 
-    - `Sheet1_Startup`
+  - `Sheet1_Startup`
 
-    - `Sheet2_Startup`
+  - `Sheet2_Startup`
 
-    - `Sheet3_Startup`
+  - `Sheet3_Startup`
 
-    - `ThisWorkbook_Startup`
+  - `ThisWorkbook_Startup`
 
 ### <a name="shutdown-event"></a>Evento de encerramento
  O **desligamento** é gerado para cada um dos itens de host (documento ou planilha) quando o que seu código é carregado no domínio do aplicativo está prestes a ser descarregado. É a última coisa a ser chamado na classe conforme ele descarrega.
@@ -73,13 +73,13 @@ ms.locfileid: "63441832"
 
 - Para projetos do Microsoft Office Excel, os manipuladores de eventos têm os seguintes nomes:
 
-    - `Sheet1_Shutdown`
+  - `Sheet1_Shutdown`
 
-    - `Sheet2_Shutdown`
+  - `Sheet2_Shutdown`
 
-    - `Sheet3_Shutdown`
+  - `Sheet3_Shutdown`
 
-    - `ThisWorkbook_Shutdown`
+  - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
 > Não remover programaticamente os controles durante o **desligamento** manipulador de eventos do documento. Os elementos de interface do usuário do documento não estão mais disponíveis quando o **desligamento** evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como **BeforeClose** ou **BeforeSave**.

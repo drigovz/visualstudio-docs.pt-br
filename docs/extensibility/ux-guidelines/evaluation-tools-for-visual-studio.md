@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77e6dca01f728ae4a5a3f0a5f12f50ab581948c6
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 00668fdebdbc8fc6a26c30a8762aa6f03d6e2769
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66335391"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824558"
 ---
 # <a name="evaluation-tools-for-visual-studio"></a>Ferramentas de avaliação para o Visual Studio
 ## <a name="craftsmanship-checklist-for-visual-studio"></a>Lista de verificação de habilidade para Visual Studio
@@ -49,11 +49,11 @@ ms.locfileid: "66335391"
 
 - Verifique se que os links de comando que inicie a interface do usuário para capturar a entrada do usuário, comandos e botões terminar com um sinal de reticências **[...]** .
 
-     Exemplos:
+  Exemplos:
 
-    - Um **[avançadas...]**  botão em uma caixa de diálogo.
+  - Um **[avançadas...]**  botão em uma caixa de diálogo.
 
-    - As opções de comando no menu Ferramentas (**Ferramentas > Opções**) não deve obter um sinal de reticências, como iniciar a caixa de diálogo em si é a intenção do comando.
+  - As opções de comando no menu Ferramentas (**Ferramentas > Opções**) não deve obter um sinal de reticências, como iniciar a caixa de diálogo em si é a intenção do comando.
 
 - Verifique se a interface do usuário não contém nenhum abreviações, exceto para os termos de padrão da indústria. Por exemplo, nem o HTML nem o TCP/IP precisa ser escrito, embora devem OOM (memória insuficiente) e a PII (informações de identificação pessoal).
 
@@ -145,9 +145,9 @@ ms.locfileid: "66335391"
 
 - Se o campo é um campo obrigatório que deve ser identificado como tal, verifique se:
 
-    - o plano de fundo definido como `Environment.ControlEditRequiredBackground` e primeiro plano é definido como `Environment.ControlEditRequiredHintText`
+  - o plano de fundo definido como `Environment.ControlEditRequiredBackground` e primeiro plano é definido como `Environment.ControlEditRequiredHintText`
 
-    - há texto de dica no controle que aparece como **"\<necessárias >"**
+  - há texto de dica no controle que aparece como **"\<necessárias >"**
 
 #### <a name="button-controls"></a>Controles de botão
 
@@ -169,11 +169,11 @@ ms.locfileid: "66335391"
 
 - Verifique se as cores do VS usadas são:
 
-    - `Environment.ControlLinkText`
+  - `Environment.ControlLinkText`
 
-    - `Environment.ControlLinkTextHover`
+  - `Environment.ControlLinkTextHover`
 
-    - `Environment.ControlLinkTextPressed`
+  - `Environment.ControlLinkTextPressed`
 
 - Verifique se que hiperlinks aparecem em azuis com nenhum sublinhado, a menos que o inserido em um parágrafo.
 

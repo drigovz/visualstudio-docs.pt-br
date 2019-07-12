@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2143b67297ba2e4bd2751054b789274595505cb3
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: b2026c61d05425f0f0d48a9fb722c62f760fcba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431890"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825519"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 
@@ -79,11 +79,11 @@ Por padrão, os atalhos de teclado padrão para edição de texto do Visual Basi
 
 - O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.
 
-   - Recortar
-   - Copiar
-   - Colar
-   - Selecionar Tudo
-   - Desfazer
-   - Refazer
+  - Recortar
+  - Copiar
+  - Colar
+  - Selecionar Tudo
+  - Desfazer
+  - Refazer
 
 - Para remapear atalhos de teclado para comandos de edição de expressão dentro do Designer de fluxo de trabalho no Visual Studio, edite os atalhos no escopo do Designer de fluxo de trabalho. As alterações feitas no escopo do Editor de texto não são aplicadas automaticamente ao Designer de fluxo de trabalho. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).

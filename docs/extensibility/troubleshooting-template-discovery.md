@@ -7,12 +7,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0b6af3e24d4e563ebbbcf0a233d85a1cd038cb3
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b3c5558079772a8ddc4c4826ba68d1866c220ba2
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66316362"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823978"
 ---
 # <a name="troubleshooting-template-installation"></a>Instalação do modelo de solução de problemas
 
@@ -59,9 +59,9 @@ O arquivo de log contém as seguintes colunas:
 
 - **FullPathToTemplate**, que tem os seguintes valores:
 
-    - 1 para implantação baseada em manifesto
+  - 1 para implantação baseada em manifesto
 
-    - 0 para implantação baseada em disco
+  - 0 para implantação baseada em disco
 
 - **TemplateFileName**
 

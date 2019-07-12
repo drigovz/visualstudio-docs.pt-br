@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7917bdd3b7a94af605b2626016c9a9a725fa2b29
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: cb4066d9728dd633492b05e4cc872dbdd8a91b5c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66310788"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823586"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Texto da interface do usuário e a Ajuda do Visual Studio
 ## <a name="BKMK_UITextAndTerminology"></a> Terminologia e o texto de interface do usuário
@@ -191,11 +191,11 @@ ms.locfileid: "66310788"
 
 - Algumas perguntas se perguntar ao construir uma mensagem de erro:
 
-    - O usuário pode descobrir como resolver o problema com este erro sozinho?
+  - O usuário pode descobrir como resolver o problema com este erro sozinho?
 
-    - O usuário usa o mesmo vocabulário que esse erro?
+  - O usuário usa o mesmo vocabulário que esse erro?
 
-    - É esse erro ambigious ou compartilhados em várias situações? Nesse caso, como você orientar os usuários para a solução que precisam?
+  - É esse erro ambigious ou compartilhados em várias situações? Nesse caso, como você orientar os usuários para a solução que precisam?
 
 #### <a name="build-errors"></a>Erros de build
  Como o Visual Studio é uma ferramenta de desenvolvimento de software, muitos de seus componentes têm uma compilação, convertendo, codificação ou etapa para converter o trabalho do desenvolvedor em formato binário. Essas conversões podem causar erros quando o compilador não pode processar arquivos criados incorretamente ou quando as opções do compilador não foram definidas corretamente.

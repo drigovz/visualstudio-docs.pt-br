@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 546713cd77ca1477984120f9ef9a245c1c780eaf
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62981627"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824129"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Passo a passo: Associação de dados complexos no projeto do suplemento do VSTO
   Você pode associar dados a controles de host e controles de formulários do Windows em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a uma planilha do Microsoft Office Excel e ligar os controles a dados em tempo de execução.
@@ -43,9 +43,9 @@ ms.locfileid: "62981627"
 
 - Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+  - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+  - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
  A primeira etapa é criar um projeto de suplemento do VSTO do Excel.
@@ -75,7 +75,7 @@ ms.locfileid: "62981627"
 
 5. No **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** , clique em **próxima**.
 
-6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **endereço (SalesLT)**.
+6. No **Choose Your Database Objects** página, expanda **tabelas** e selecione **endereço (SalesLT)** .
 
 7. Clique em **Finalizar**.
 
