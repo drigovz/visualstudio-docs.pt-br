@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4108e478e9e77a5ed5699b39dfae44884a6befd3
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065175"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826173"
 ---
 # <a name="property-functions"></a>Funções de propriedade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,13 +29,13 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
 - [Sintaxe da função de propriedade](#BKMK_Syntax)  
   
-    - [Funções de propriedade de cadeia de caracteres](#BKMK_String)  
-  
-    - [Funções de propriedade estática](#BKMK_Static)  
-  
-    - [Chamando métodos de instância em propriedades estáticas](#BKMK_InstanceMethods)  
-  
-    - [Funções de Propriedade de MSBuild](#BKMK_PropertyFunctions)  
+  - [Funções de propriedade de cadeia de caracteres](#BKMK_String)  
+
+  - [Funções de propriedade estática](#BKMK_Static)  
+
+  - [Chamando métodos de instância em propriedades estáticas](#BKMK_InstanceMethods)  
+
+  - [Funções de Propriedade de MSBuild](#BKMK_PropertyFunctions)  
   
 - [Funções de propriedade aninhadas](#BKMK_Nested)  
   
@@ -188,7 +188,7 @@ Nas versões .NET Framework 4 e 4.5, as funções de propriedade podem ser usada
   
  Aqui está uma lista de funções da propriedade MSBuild:  
   
-|Assinatura da função|Descrição|  
+|Assinatura da função|DESCRIÇÃO|  
 |------------------------|-----------------|  
 |double Add(double a, double b)|Adicionar dois duplos.|  
 |long Add(long a, long b)|Adicionar dois longos.|  
@@ -332,6 +332,6 @@ Output:
 -->  
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [Propriedades do MSBuild](msbuild-properties1.md)   
 [Visão geral do MSBuild](msbuild.md)

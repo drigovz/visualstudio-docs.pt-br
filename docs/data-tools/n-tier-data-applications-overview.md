@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 995328205e99117f68050833853ada76f06eb4c8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62566442"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821895"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 *N camadas* aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Aplicativos de n camadas também chamados de "aplicativos distribuídos" e "aplicativos multicamados", separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Quando você desenvolve aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.
@@ -49,11 +49,11 @@ O *camada intermediária* é a camada que a camada de apresentação e os camada
 
 - Componentes de acesso a dados e lógica, como o seguinte:
 
-    - [TableAdapters](create-and-configure-tableadapters.md) e [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+  - [TableAdapters](create-and-configure-tableadapters.md) e [DataAdapters e DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    - Objeto de representações de dados, como [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes de entidade.
+  - Objeto de representações de dados, como [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes de entidade.
 
-    - Serviços de aplicativo comuns, como autenticação, autorização e personalização.
+  - Serviços de aplicativo comuns, como autenticação, autorização e personalização.
 
 A ilustração a seguir mostra os recursos e tecnologias que estão disponíveis no Visual Studio e onde eles podem caber na camada intermediária de um aplicativo de n camadas.
 

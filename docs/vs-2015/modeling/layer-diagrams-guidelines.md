@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4a4b607adcd4aab4c5b70f02cb28f06219c7d655
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440990"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823700"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,9 +101,9 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
 |Excluir uma dependência que não deve existir|Clique a dependência e, em seguida, pressione **excluir**.|  
 |Alterar ou restringir a direção de uma dependência|Defina suas **direção** propriedade.|  
 |Criar novas dependências|Use o **dependência** e **dependência bidirecional** ferramentas.<br /><br /> Para desenhar várias dependências, clique duas vezes na ferramenta. Quando tiver terminado, clique no **ponteiro** ferramenta ou pressione a **ESC** chave.|  
-|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces da camada **dependências de Namespace proibido** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|  
-|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces da camada **Namespaces proibidos** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|  
-|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace da camada **Namespaces obrigatórios** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|  
+|Especificar que os artefatos associados a uma camada não dependem dos namespaces especificados|Digite os namespaces da camada **dependências de Namespace proibido** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|  
+|Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces da camada **Namespaces proibidos** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|  
+|Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace da camada **Namespaces obrigatórios** propriedade. Use um ponto e vírgula ( **;** ) para separar os namespaces.|  
   
 ### <a name="Improving"></a> Melhorar a estrutura do código  
  Alterações de refatoração foram os aprimoramentos que não afetam o comportamento do aplicativo, mas ajudam a tornar o código mais fácil de alterar e estender no futuro. Código bem estruturado tem um design que seja fácil de abstrair a um diagrama de camada.  
@@ -134,7 +134,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
   
 - Altere as cores de camadas e dependências.  
   
-    - Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.  
+  - Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.  
   
 ## <a name="Validate"></a> Valide o código no diagrama  
  Quando você tiver editado o diagrama, você pode validá-la com o código manualmente a qualquer momento ou automaticamente toda vez que você executar uma compilação local ou [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].  

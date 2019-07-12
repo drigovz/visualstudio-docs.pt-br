@@ -14,12 +14,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 39fd588a51771aae79d22d2d7f0a02a648184c05
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825809"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67821579"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
 
@@ -67,17 +67,17 @@ As propriedades do atributo incluem:
 
 - **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Com suporte [escopos](xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope) incluem o seguinte:
 
-   - `module`
+  - `module`
 
-   - `resource`
+  - `resource`
 
-   - `type`
+  - `type`
 
-   - `member`
+  - `member`
 
-   - `namespace` -Este escopo suprime os avisos em relação ao namespace em si. Ele não suprime avisos em relação aos tipos no namespace.
+  - `namespace` -Este escopo suprime os avisos em relação ao namespace em si. Ele não suprime avisos em relação aos tipos no namespace.
 
-   - `namespaceanddescendants` -(Novo para o Visual Studio de 2019) nesse escopo suprime os avisos em um namespace e todos os seus descendentes símbolos. O `namespaceanddescendants` valor só é válida para os analisadores do Roslyn e é ignorado por análise estática de binária, com base no FxCop.
+  - `namespaceanddescendants` -(Novo para o Visual Studio de 2019) nesse escopo suprime os avisos em um namespace e todos os seus descendentes símbolos. O `namespaceanddescendants` valor só é válida para os analisadores do Roslyn e é ignorado por análise estática de binária, com base no FxCop.
 
 - **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado do item.
 

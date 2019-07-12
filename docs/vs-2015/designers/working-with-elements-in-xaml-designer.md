@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 1ecb5981a8111f3fca013d3b5f115155ac7baf89
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65690025"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824856"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 - No Designer XAML, siga um destes procedimentos:  
   
-    - Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).  
-  
-    - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.  
-  
-    - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
+  - Clique duas vezes em um elemento na **Caixa de Ferramentas** (ou selecione um elemento na Caixa de Ferramentas e pressione Enter).  
+
+  - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.  
+
+  - Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Retângulo](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)) e desenhe um elemento no painel ativo.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Alterando a ordem das camadas de elementos  
  Quando houver dois elementos na prancheta do XAML Designer, um dos elementos será exibido na frente do outro na ordem de camadas. No final da lista de elementos da janela Estrutura de Tópicos de Documento se encontra o elemento mais à frente (exceto quando a propriedade **ZIndex** estiver definida para um elemento). Quando você inserir um elemento em uma página, formulário ou contêiner de layout, o elemento será automaticamente colocado na frente de outros elementos no elemento de contêiner ativo. Para alterar a ordem dos elementos, você pode usar os comandos **Ordem** ou arrastar os elementos na árvore de objetos na janela Estrutura de Tópicos de Documento.  
@@ -121,5 +121,5 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
   
 - Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento, selecione **Layout**, **Redefinir** *PropertyName*, em que *PropertyName* é a propriedade que você deseja redefinir (ou escolha **Layout**, **Redefinir Tudo** para redefinir todas as propriedades de layout para o elemento).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)
