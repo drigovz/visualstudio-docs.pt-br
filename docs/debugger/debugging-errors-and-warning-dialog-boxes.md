@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ad1208f9c3e36ff4f73b633efc9de180a09457
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852101"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852218"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
@@ -37,6 +37,8 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
  [Caixa de diálogo Não É Possível Alterar o Valor](../debugger/cannot-change-value-dialog-box.md)
 
  [O depurador não pode exibir o código-fonte ou a desmontagem](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
+ 
+ [Serviços em execução fora da memória do depurador](../debugger/error-debugger-services-no-memory.md)
 
  [Caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md)
 
