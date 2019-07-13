@@ -1,6 +1,6 @@
 ---
 title: Anotando parâmetros de função e valores de retorno
-ms.date: 11/04/2016
+ms.date: 07/11/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -119,18 +119,21 @@ f1_keywords:
 - _Outref_result_bytebuffer_
 - _Result_nullonfailure_
 - _Ret_null_
+- _Scanf_format_string_
+- _Scanf_s_format_string_
+- _Printf_format_string_
 ms.assetid: 82826a3d-0c81-421c-8ffe-4072555dca3a
 author: mikeblome
 ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 1a33a29261a8a776ec570026fbc3ab575f712929
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63388555"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852175"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve os usos comuns de anotações para parâmetros de função simples — escalares e ponteiros para estruturas e classes — e a maioria dos tipos de buffers.  Este artigo também mostra padrões comuns de uso para anotações. Para anotações adicionais que estão relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md)
@@ -285,6 +288,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
      Um ponteiro para uma matriz terminada em nulo para o qual a expressão `p`  -  `_Curr_` (ou seja, `p` menos `_Curr_`) é definido pelo padrão da linguagem apropriado.  Os elementos anteriores ao `p` não precisa ser válido no estado de pré-lançamento e deve ser válido no pós estado de.
 
 ## <a name="optional-pointer-parameters"></a>Parâmetros opcionais de ponteiro
+
  Quando uma anotação de parâmetro de ponteiro inclui `_opt_`, ele indica que o parâmetro pode ser nulo. Caso contrário, a anotação executa a mesma versão que não inclua `_opt_`. Aqui está uma lista da `_opt_` variantes de anotações de parâmetro de ponteiro:
 
 ||||
@@ -384,6 +388,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
    O ponteiro retornado aponta para um buffer válido se a função for bem-sucedida, ou nulo se a função falhar. Essa anotação é para um parâmetro de referência.
 
 ## <a name="output-reference-parameters"></a>Parâmetros de referência de saída
+
  Um uso comum do parâmetro de referência é para parâmetros de saída.  Para parâmetros de referência de saída simples — por exemplo, `int&`—`_Out_` fornece a semântica correta.  No entanto, quando o valor de saída é um ponteiro — por exemplo `int *&`— as anotações equivalentes de ponteiro, como `_Outptr_ int **` não fornecem a semântica correta.  Para expressar concisa a semântica de referência de parâmetros de saída para tipos de ponteiro, use essas anotações de composição:
 
  **Descrições e anotações**
@@ -445,13 +450,62 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
      Resultado deve ser válido no pós-estado de, mas pode ser nulo no estado de postagem. Aponta para um buffer válido de `s` bytes de elementos válidos.
 
 ## <a name="return-values"></a>Valores de Retorno
+
  O valor de retorno de uma função é semelhante a um `_Out_` parâmetro, mas é um nível diferente de de-reference, e você não deve considerar o conceito do ponteiro para o resultado.  Para obter as seguintes anotações, o valor retornado é o objeto anotado — um escalar, um ponteiro para uma estrutura ou um ponteiro para um buffer. Essas anotações têm a mesma semântica correspondente `_Out_` anotação.
 
 |||
 |-|-|
 |`_Ret_z_`<br /><br /> `_Ret_writes_(s)`<br /><br /> `_Ret_writes_bytes_(s)`<br /><br /> `_Ret_writes_z_(s)`<br /><br /> `_Ret_writes_to_(s,c)`<br /><br /> `_Ret_writes_maybenull_(s)`<br /><br /> `_Ret_writes_to_maybenull_(s)`<br /><br /> `_Ret_writes_maybenull_z_(s)`|`_Ret_maybenull_`<br /><br /> `_Ret_maybenull_z_`<br /><br /> `_Ret_null_`<br /><br /> `_Ret_notnull_`<br /><br /> `_Ret_writes_bytes_to_`<br /><br /> `_Ret_writes_bytes_maybenull_`<br /><br /> `_Ret_writes_bytes_to_maybenull_`|
 
+## <a name="format-string-parameters"></a>Parâmetros de cadeia de caracteres de formato
+
+- `_Printf_format_string_` Indica que o parâmetro é uma cadeia de caracteres de formato para uso em um `printf` expressão.
+
+     **Exemplo**
+
+    ```cpp
+    int MyPrintF(_Printf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwprintf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_format_string_` Indica que o parâmetro é uma cadeia de caracteres de formato para uso em um `scanf` expressão.
+
+     **Exemplo**
+
+    ```cpp
+    int MyScanF(_Scanf_format_string_ const wchar_t* format, ...)
+    {
+           va_list args;
+           va_start(args, format);
+           int ret = vwscanf(format, args);
+           va_end(args);
+           return ret;
+    }
+    ```
+
+- `_Scanf_s_format_string_` Indica que o parâmetro é uma cadeia de caracteres de formato para uso em um `scanf_s` expressão.
+
+     **Exemplo**
+
+    ```cpp
+    int MyScanF_s(_Scanf_s_format_string_ const wchar_t* format, ...)
+    {
+           va_list args; 
+           va_start(args, format);
+           int ret = vwscanf_s(format, args);
+           va_end(args); 
+           return ret;
+    }
+    ```
+
 ## <a name="other-common-annotations"></a>Outras anotações comuns
+
  **Descrições e anotações**
 
 - `_In_range_(low, hi)`
@@ -490,6 +544,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
      `min(pM->nSize, sizeof(MyStruct))`
 
 ## <a name="related-resources"></a>Recursos relacionados
+
  [Blog da equipe de análise de código](http://go.microsoft.com/fwlink/?LinkId=251197)
 
 ## <a name="see-also"></a>Consulte também

@@ -15,10 +15,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa2aa4b3055ff49f59da329ea828e0dbcfc8ec05
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/12/2019
 ms.locfileid: "62419930"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
@@ -63,7 +63,7 @@ Contém a ferramenta de análise de código que você pode optar por executar em
  Regras de Utilização  
  Habilita ou desabilita as regras de uso. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Avisos de análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-warnings.md)   
  [Visão geral da análise de código para código gerenciado](../../code-quality/code-analysis-for-managed-code-overview.md)   
  [Passo a passo: analisando código gerenciado em busca de defeitos de código](../../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)
