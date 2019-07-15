@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 310e13e781997fd3a6431e4257918f8e61b9420d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439732"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823576"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,15 +208,15 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
  Você pode especificar como os itens em um buffer são armazenados, definindo as propriedades do nó de objeto:  
   
 - Defina as **ordenação** propriedade:  
-  
-    - **Não ordenada** para especificar uma ordem aleatória ou não especificada. (Padrão.)  
-  
-    - **Ordenado** para especificar uma ordem de acordo com uma chave específica.  
-  
-    - **PEPS** para especificar uma ordem do primeiro a entrar, primeiro a sair.  
-  
-    - **UEPS** para especificar uma ordem de último a entrar, primeiro a sair.  
-  
+
+  - **Não ordenada** para especificar uma ordem aleatória ou não especificada. (Padrão.)  
+
+  - **Ordenado** para especificar uma ordem de acordo com uma chave específica.  
+
+  - **PEPS** para especificar uma ordem do primeiro a entrar, primeiro a sair.  
+
+  - **UEPS** para especificar uma ordem de último a entrar, primeiro a sair.  
+
 - Defina as **limite superior** propriedade para especificar o número máximo de objetos que podem ser contidos no buffer. O padrão é *. Isso significa que não há nenhum limite.  
   
 ### <a name="describing-data-flow-with-input-and-output-pins"></a>Descrevendo o fluxo de dados com entrada e os pinos de saída  
@@ -317,7 +317,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
   
 - Você pode definir as **é síncrona** propriedade da ação para indicar se sua atividade aguarda a conclusão da operação.  
   
-    - Se você definir **síncrona é** como false, você está indicando que o fluxo pode continuar para a próxima ação antes da operação de chamada é concluída. Você não deve definir a saída de fluem de pins ou dados de saída da ação.  
+  - Se você definir **síncrona é** como false, você está indicando que o fluxo pode continuar para a próxima ação antes da operação de chamada é concluída. Você não deve definir a saída de fluem de pins ou dados de saída da ação.  
   
 ## <a name="Concurrent"></a> Fluxos simultâneos  
  Você pode usar o **nó de bifurcação** e o **nó ingressar** para descrever dois ou mais threads de atividades que podem ser executadas ao mesmo tempo.  
@@ -408,7 +408,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
   
 1. Crie um novo diagrama de atividade na qual descrever o fluxo de transformação ou a seleção.  
   
-   - Na **Gerenciador de soluções**, clique em seu projeto, aponte para **Add**, clique em **Novo Item**e, em seguida, clique em **diagrama de atividade**. Dê um nome apropriado para o fluxo de transformação ou seleção de diagrama. Clique em **Adicionar**.  
+   - Na **Gerenciador de soluções**, clique em seu projeto, aponte para **Add**, clique em **Novo Item**e, em seguida, clique em **diagrama de atividade**. Dê um nome apropriado para o fluxo de transformação ou seleção de diagrama. Clique em **Adicionar** .  
   
 2. No novo diagrama:  
   

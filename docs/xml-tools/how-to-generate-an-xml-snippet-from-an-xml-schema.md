@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e3795bbe8a200b868687cdb8da053bc078b7f14c
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63001916"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825759"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um trecho XML a partir de um esquema XML
 
@@ -25,11 +25,11 @@ Este recurso está disponível somente nos elementos. As seguintes regras també
 
 - O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos
 
-    - `<Account`
+  - `<Account`
 
-    - `<Account>`
+  - `<Account>`
 
-    - `<Account></Account>`
+  - `<Account></Account>`
 
 - O cursor deve ser localizado imediatamente à direita do nome do elemento.
 
@@ -56,11 +56,11 @@ Os valores padrão são gerados e observados como valores editáveis. Se o esque
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
+3. Na janela de propriedades do documento, clique no botão Procurar ( **...** ) sobre o **esquemas** campo.
 
      O **esquemas XSD** caixa de diálogo é exibida.
 
-4. Clique em **Adicionar**.
+4. Clique em **Adicionar** .
 
      O **abrir esquema XSD** caixa de diálogo é exibida.
 
