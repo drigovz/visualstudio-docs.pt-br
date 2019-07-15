@@ -710,6 +710,8 @@
               href: cannot-change-value-dialog-box.md
             - name: O depurador não pode exibir o código-fonte ou a desmontagem
               href: debugger-cannot-display-source-code-or-disassembly.md
+            - name: Memória insuficiente para os serviços do depurador
+              href: error-debugger-services-no-memory.md
             - name: Caixa de diálogo Executável para Sessão de Depuração
               href: executable-for-debugging-session-dialog-box.md
             - name: Caixa de diálogo Editar e Continuar (C++)
