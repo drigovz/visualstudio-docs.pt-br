@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094771"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156338"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Como: Aplicar um sombreador a um modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
   
    ![Cena 3D que mostra o efeito de cor básico](../designers/media/digit-3d-model-effect.png "Digit-3D-Model-Effect")  
   
-   Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências (**...** ).  
+   Depois de aplicar um sombreador a um modelo, você pode abri-lo no Designer de Sombreador selecionando o modelo e, em seguida, na janela **Propriedades**, na propriedade **(Avançado)** do grupo de propriedades **Efeito**, escolha o botão de reticências ( **...** ).  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   

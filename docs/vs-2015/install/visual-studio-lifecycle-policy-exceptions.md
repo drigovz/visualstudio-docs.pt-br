@@ -10,11 +10,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: b17693523c75dc434fdda258c07a9b17ecfda1b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180243"
 ---
 # <a name="visual-studio-lifecycle-policy-exceptions"></a>Exceções da política de ciclo de vida do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,4 +49,4 @@ O Visual Studio inclui um conjunto de compiladores, linguagens, tempos de execu�
 |[Windows 7](http://support.microsoft.com/lifecycle/?c2=14019)|SDK do Windows 7|  
 |[Windows 8](http://support.microsoft.com/lifecycle/?c2=16796)|SDK do Windows 8|  
 |[Windows 8.1](http://support.microsoft.com/lifecycle/search/default.aspx?sort=PN&alpha=windows%208.1&Filter=FilterNO)|SDK do Windows 8.1<br /><br /> Windows Library para JavaScript (WinJS)|  
-|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />Consulte também [Política de ciclo de vida online](http://support.microsoft.com/gp/OSSLpolicy)|SDK de Serviços Móveis do Microsoft Azure<br /><br /> Ferramentas dos Serviços Móveis do Microsoft Azure|
+|[Microsoft Azure](http://support.microsoft.com/gp/azure-cloud-lifecycle-faq)<br /><br /> <br />> Consulte também: [Política de ciclo de vida online](http://support.microsoft.com/gp/OSSLpolicy)|SDK de Serviços Móveis do Microsoft Azure<br /><br /> Ferramentas dos Serviços Móveis do Microsoft Azure|

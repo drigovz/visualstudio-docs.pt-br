@@ -12,13 +12,13 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1af78bd58c42cf1312e36621011802e908c9e919
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186391"
 ---
-# <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
+# <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando um VSPackage registra uma janela de ferramentas, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro de janela da ferramenta, consulte [ferramenta Windows no registro](../extensibility/tool-windows-in-the-registry.md)  
@@ -40,7 +40,7 @@ HKEY_LOCAL_MACHINE\
 |Nome|Tipo|Dados|Descrição|  
 |----------|----------|----------|-----------------|  
 |Nome|REG_SZ|"O nome curto aqui"|Um nome curto que descreve a janela da ferramenta. Usado apenas para referência no registro.|  
-|Float|REG_SZ|"X1,Y1,X2,Y2"|Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela.|  
+|Float|REG_SZ|"X1, Y1, X2, Y2"|Quatro valores separados por vírgula. X1, Y1 é a coordenada do canto superior esquerdo da janela de ferramentas. X2, Y2 é a coordenada do canto inferior direito. Todos os valores estão em coordenadas da tela.|  
 |Estilo|REG_SZ|"MDI"<br /><br /> "Float"<br /><br /> "Vinculado"<br /><br /> "Com guias"<br /><br /> "AlwaysFloat"|Uma palavra-chave especificando inicial exibem o estado da janela de ferramenta.<br /><br /> "MDI" = encaixado com janela MDI.<br /><br /> "Flutuar" = flutuante.<br /><br /> "Vinculado" = vinculado a outra janela (especificada na entrada de janela).<br /><br /> "Com guias" = combinada com outra janela de ferramenta.<br /><br /> "AlwaysFloat" = não pode ser encaixada.<br /><br /> Para obter mais informações, consulte a seção comentários abaixo.|  
 |Janela|REG_SZ|*\<GUID>*|O GUID de uma janela para o qual a janela de ferramentas pode ser vinculada ou com guias. O GUID pode pertencer a uma das suas próprias janelas ou uma das janelas no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] IDE.|  
 |{1&gt;Orientação&lt;1}|REG_SZ|"Esquerda"<br /><br /> "Right"<br /><br /> "Top"<br /><br /> "Inferior"|Consulte a seção de comentários abaixo.|  

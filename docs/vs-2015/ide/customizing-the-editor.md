@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 54e2e44650179cafb4fd4cc9169ac27810bbdf91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68183341"
 ---
 # <a name="customizing-the-editor"></a>Personalizando o editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ ms.locfileid: "54804813"
 ## <a name="in-this-section"></a>Nesta seção  
  Estes tópicos explicam como ajustar a aparência e comportamento do editor de texto e de código.  
   
- [Como alterar maiúsculas e minúsculas no texto no editor](../ide/how-to-change-text-case-in-the-editor.md)  
+ [Como: Alterar maiúsculas e minúsculas do texto no editor](../ide/how-to-change-text-case-in-the-editor.md)  
  Explica como alterar a capitalização do texto no seu código.  
   
- [Como gerenciar janelas do editor](../ide/how-to-manage-editor-windows.md)  
+ [Como: Gerenciar janelas do editor](../ide/how-to-manage-editor-windows.md)  
  Mostra como manipular as janelas do editor.  
   
- [Como gerenciar modos do editor](../ide/how-to-manage-editor-modes.md)  
+ [Como: Gerenciar modos do editor](../ide/how-to-manage-editor-modes.md)  
  Explica como usar o modo de tela inteira e espaço virtual.  
   
 ## <a name="see-also"></a>Consulte também  

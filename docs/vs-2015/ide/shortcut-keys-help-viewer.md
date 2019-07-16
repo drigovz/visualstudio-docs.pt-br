@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d69bbe2145648c1bdb993cb6a4e45b26ae602b2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203496"
 ---
 # <a name="shortcut-keys-help-viewer"></a>Teclas de atalho (Visualizador da Ajuda)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

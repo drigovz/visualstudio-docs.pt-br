@@ -19,11 +19,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 3139cb337428dfc0c14e5bae47e682ce169bc81d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159133"
 ---
 # <a name="how-to-specify-the-location-where-end-users-will-install-from"></a>Como: Especificar o local de onde os usuários finais instalarão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo
   
 2. Clique o **publicar** guia.  
   
-3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato http://www.microsoft.com/ApplicationName, ou um caminho UNC usando o formato \\\Server\ApplicationName.  
+3. No campo URL de instalação, insira o local de instalação usando uma URL totalmente qualificada usando o formato http://www.microsoft.com/ApplicationName , ou um caminho UNC usando o formato \\ \Server\ApplicationName.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Especifique onde o Visual Studio copiará os arquivos](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   

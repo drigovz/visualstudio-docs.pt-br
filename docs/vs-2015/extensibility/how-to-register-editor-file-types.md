@@ -11,13 +11,13 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204114"
 ---
-# <a name="how-to-register-editor-file-types"></a>Como: Tipos de arquivo do Editor de registro
+# <a name="how-to-register-editor-file-types"></a>Como: Registrar tipos de arquivos do Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A maneira mais fácil de registrar tipos de arquivo do editor é usando os atributos de registro fornecidos como parte do [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] pacote framework (MPF) classes gerenciadas. Se você estiver implementando seu pacote no formato nativo [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], você também pode escrever um script de registro que registra seu editor e aos ramais associados.  

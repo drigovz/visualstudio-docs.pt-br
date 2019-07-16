@@ -18,13 +18,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 63d9dd0844cb3e7422f8d78a0ee2e3cb4e0b1fab
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196062"
 ---
-# <a name="installing-database-systems-tools-and-samples"></a>Instalando sistemas de banco de dados, ferramentas e exemplos
+# <a name="installing-database-systems-tools-and-samples"></a>Instalando sistemas, ferramentas e exemplos de banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O próprio Visual Studio não inclui quaisquer sistemas de banco de dados diferentes daqueles usados internamente. Para desenvolver um aplicativo conectado por dados no Visual Studio, você normalmente instala o sistema de banco de dados em seu computador de desenvolvimento local e, em seguida, implantar o aplicativo e o banco de dados em um ambiente de produção quando estiverem prontas. Para o sistema de banco de dados para ser acessado em aplicativos .NET e para ser visível nas janelas de ferramentas de dados do Visual Studio, ele deve ter um provedor de dados do ADO.NET. Um provedor especificamente deve oferecer suporte a Entity Framework se você planeja usar os modelos de dados de entidade em seu aplicativo .NET.     Muitos provedores são oferecidos por meio do Gerenciador de pacotes NuGet ou por meio da Galeria do Visual Studio.  

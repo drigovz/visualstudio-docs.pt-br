@@ -22,11 +22,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0157b1ade2c38a2c10920b9674d7c9a58ac036b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156527"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>Ocorreu um erro de DCOM durante a tentativa de contatar o computador remoto. O acesso foi negado.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Depuração remota usa DCOM para se comunicar entre os computadores locais e rem
   
 - O depurador está definido como **modo de compatibilidade nativa** ou **modo de compatibilidade gerenciado** check-in a **Ferramentas / opções / depuração** página  
   
-- Você está depurando C++ gerenciado (C + + / CLI) código.  
+- Você está depurando gerenciado C++ (C++/CLI) código.  
   
 - No Visual Studio 2013, quando **habilitar nativo editar e continuar** check-in a **Ferramentas / opções / depuração** página  
   

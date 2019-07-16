@@ -16,13 +16,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203434"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Como: Especificar o binário a iniciar
+# <a name="how-to-specify-the-binary-to-start"></a>Como: Especificar o binário para iniciar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.  

@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 49b13b8406dc96e8e7ebe5e79e26c5da02e8a53a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68205441"
 ---
-# <a name="how-to-debug-net-framework-source"></a>Como: Depurar o código-fonte do .NET Framework
+# <a name="how-to-debug-net-framework-source"></a>Como: Depurar a origem do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A versão mais recente do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fornece novos recursos para [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] depuração. Para depurar [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] fonte, você deve ter acesso aos símbolos de depuração para o código. Você também precisará habilitar a depuração de [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] código-fonte.  

@@ -582,12 +582,14 @@
             - name: Projetar aplicativos internacionais
               displayName: Globalization localization world-ready
               href: ide/globalizing-and-localizing-applications.md
-    - name: Acessar dados...
+    - name: Acessar dados >>
       displayName: Data connections
       href: data-tools/accessing-data-in-visual-studio.md
-    - name: Criar interfaces do usuário...
+    - name: Criar interfaces do usuário >>
       displayName: XAML designer
       href: designers/designing-user-interfaces.md
+    - name: Desenvolver aplicativos com o Designer de Fluxo de Trabalho >>
+      href: workflow-designer/developing-applications-with-the-workflow-designer.md
     - name: Compilar e criar
       items:
         - name: Visão geral
@@ -636,9 +638,9 @@
               href: ide/how-to-configure-projects-to-target-platforms.md
             - name: Configurar projetos para se destinarem a várias plataformas
               href: ide/how-to-configure-projects-to-target-multiple-platforms.md
-        - name: MSBuild...
+        - name: MSBuild >>
           href: msbuild/msbuild.md
-        - name: Azure Pipelines e TFS...
+        - name: Azure Pipelines e TFS >>
           displayName: VSTS Azure DevOps CI/CD Continuous integration delivery
           href: /azure/devops/pipelines/index?view=vsts
         - name: Especificar eventos de build (Visual Basic)
@@ -649,23 +651,23 @@
           href: ide/configuring-warnings-in-visual-basic.md
         - name: 'Passo a passo: Criar um ambiente de build de vários computadores'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
-    - name: Depurar...
+    - name: Depurar >>
       href: debugger/index.md
-    - name: Testar...
+    - name: Testar >>
       displayName: Unit testing
       href: test/improve-code-quality.md
-    - name: Medir o desempenho...
+    - name: Medir o desempenho >>
       displayName: Profiling
       href: profiling/index.md
-    - name: Analisar a qualidade do código...
+    - name: Analisar a qualidade do código >>
       displayName: Code analysis FxCop Analyzers
       href: code-quality/index.md
-    - name: Implantar...
+    - name: Implantar >>
       href: deployment/index.md
-    - name: Estender o Visual Studio...
+    - name: Estender o Visual Studio >>
       displayName: Visual Studio SDK
       href: extensibility/visual-studio-sdk.md
-    - name: Analisar e modelar a arquitetura...
+    - name: Analisar e modelar arquitetura >>
       href: modeling/analyze-and-model-your-architecture.md
     - name: Dicas e truques
       items:

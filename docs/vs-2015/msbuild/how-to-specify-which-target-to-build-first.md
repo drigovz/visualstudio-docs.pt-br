@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 7d7d47746aed2e663eb1fa25e3bb9ca2c6bed2c9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178331"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Como: Especificar qual destino será compilado primeiro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,4 +77,4 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
 ## <a name="see-also"></a>Consulte também
   [MSBuild](msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
- [Como: Limpar um Build](../msbuild/how-to-clean-a-build.md)
+ [Como: limpar um build](../msbuild/how-to-clean-a-build.md)

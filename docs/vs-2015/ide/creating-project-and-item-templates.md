@@ -19,11 +19,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bfcfadf13074c3fc1dc82fce51f449453ca03b11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201906"
 ---
 # <a name="creating-project-and-item-templates"></a>Criando modelos de projeto e de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Modelos de projeto e de item do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] for
   
  Esses modelos fornecem um ponto de partida para que os usuários comecem a criar projetos ou expandam projetos atuais. Os modelos de projeto fornecem os arquivos que são necessários para um tipo de projeto específico, incluem referências de assembly padrão e definem opções de compilador e propriedades de projeto padrão. Os modelos de item podem variar em complexidade, de apenas um arquivo vazio que tem a extensão de nome de arquivo correta a um item com vários arquivos que contém, por exemplo, arquivos de código-fonte com código de stub, arquivos de informações do designer e recursos inseridos.  
   
- Além dos modelos instalados nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**, você pode criar seus próprios modelos ou baixar e usar modelos criados pela comunidade. Para obter mais informações, consulte [Como criar modelos de projeto](../ide/how-to-create-project-templates.md) e [Como criar modelos de item](../ide/how-to-create-item-templates.md).  
+ Além dos modelos instalados nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**, você pode criar seus próprios modelos ou baixar e usar modelos criados pela comunidade. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md) e [como: Criar modelos de Item](../ide/how-to-create-item-templates.md).  
   
 ## <a name="contents-of-a-template"></a>Conteúdo de um modelo  
  Todos os projetos de item e modelo, sejam eles instalados com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou criados por você, funcionam usando os mesmos princípios e têm conteúdo semelhante. Todos os modelos contêm os seguintes itens:  
@@ -44,14 +44,14 @@ Modelos de projeto e de item do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] for
   
 - Um arquivo .vstemplate. Esse arquivo contém os metadados que fornecem ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] as informações necessárias para exibir o modelo nas caixas de seleção **Novo Projeto** e **Adicionar Novo Item** e criar um projeto ou item com base no modelo. Para obter mais informações sobre arquivos .vstemplate, consulte [Parâmetros de modelo](../ide/template-parameters.md).  
   
-  Quando esses arquivos são compactados em um arquivo .zip e colocados na pasta correta, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] os exibe automaticamente. Modelos de projeto aparecem na seção **Meus Modelos** da caixa de diálogo **Novo Projeto** e modelos de item são exibidos na caixa de diálogo **Adicionar Novo Item**. Para obter mais informações sobre as pastas de modelos, consulte [Como localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+  Quando esses arquivos são compactados em um arquivo .zip e colocados na pasta correta, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] os exibe automaticamente. Modelos de projeto aparecem na seção **Meus Modelos** da caixa de diálogo **Novo Projeto** e modelos de item são exibidos na caixa de diálogo **Adicionar Novo Item**. Para obter mais informações sobre pastas de modelo, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="starter-kits"></a>Kits de Início  
- Kits de início são modelos avançados que podem ser compartilhados com outros membros da comunidade. Um kit de início inclui exemplos de código que são compilados, documentação e outros recursos para ajudar os usuários a aprenderem novas ferramentas e técnicas de programação enquanto que compilam aplicativos úteis e reais. Os conteúdos e procedimentos básicos dos Kits de início são idênticos aos dos modelos. Para obter mais informações, consulte [Como criar kits de início](../ide/how-to-create-starter-kits.md).  
+ Kits de início são modelos avançados que podem ser compartilhados com outros membros da comunidade. Um kit de início inclui exemplos de código que são compilados, documentação e outros recursos para ajudar os usuários a aprenderem novas ferramentas e técnicas de programação enquanto que compilam aplicativos úteis e reais. Os conteúdos e procedimentos básicos dos Kits de início são idênticos aos dos modelos. Para obter mais informações, confira [Como: Criar Kits de início](../ide/how-to-create-starter-kits.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)   
- [Como criar modelos de item](../ide/how-to-create-item-templates.md)   
+ [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)   
+ [Como: Criar modelos de Item](../ide/how-to-create-item-templates.md)   
  [Parâmetros de modelo](../ide/template-parameters.md)   
  [Personalizando modelos](../ide/customizing-project-and-item-templates.md)   
- [Como criar kits de início](../ide/how-to-create-starter-kits.md)
+ [Como: Criar kits de início](../ide/how-to-create-starter-kits.md)

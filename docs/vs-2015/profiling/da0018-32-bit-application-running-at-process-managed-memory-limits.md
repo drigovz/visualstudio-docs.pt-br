@@ -1,5 +1,5 @@
 ---
-title: 'DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
+title: 'DA0018: Aplicativo de 32 bits em execução em limites de memória gerenciada do processo | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,13 +14,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6418a39d7e53a3edaa48b3cd003d35d95cba386e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54773281"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194954"
 ---
-# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: aplicativo de 32 bits em execução em limites de memória gerenciada do processo
+# <a name="da0018-32-bit-application-running-at-process-managed-memory-limits"></a>DA0018: Aplicativo de 32 bits em execução nos limites de memória gerenciada por processo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0018 |  
