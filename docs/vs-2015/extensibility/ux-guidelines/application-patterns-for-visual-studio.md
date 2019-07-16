@@ -9,11 +9,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177137"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,9 +111,9 @@ ms.locfileid: "60040985"
 |**hierarquia**|Estrutura de Tópicos do Documento|A estrutura hierárquica do documento ativo.|
 |**Grade**|Propriedades|Uma grade que exibe uma lista das propriedades do objeto selecionado, junto com os seletores de valor para editar essas propriedades.|
 |**Grade**|Lista de Tarefas|Uma grade que permite ao usuário criar/editar/excluir tarefas e comentários.|
-|**Content**|Help|Uma janela que permite aos usuários acesso a vários métodos de obtenção de Ajuda, de "Como faço para?" vídeos para os fóruns do MSDN.|
-|**Content**|Ajuda dinâmica|Uma janela de ferramenta que exibe links para tópicos aplicáveis à seleção atual da Ajuda.|
-|**Content**|Pesquisador de Objetos|Um conjunto de quadros de duas colunas com uma lista de componentes de objeto hierárquica no painel esquerdo e o objeto propriedades e métodos na coluna à direita.|
+|**Conteúdo**|Ajuda|Uma janela que permite aos usuários acesso a vários métodos de obtenção de Ajuda, de "Como faço para?" vídeos para os fóruns do MSDN.|
+|**Conteúdo**|Ajuda dinâmica|Uma janela de ferramenta que exibe links para tópicos aplicáveis à seleção atual da Ajuda.|
+|**Conteúdo**|Pesquisador de Objetos|Um conjunto de quadros de duas colunas com uma lista de componentes de objeto hierárquica no painel esquerdo e o objeto propriedades e métodos na coluna à direita.|
 |**Caixa de diálogo**|Localização, localização avançada|Uma caixa de diálogo que permite ao usuário localizar ou localizar e substituir em arquivos diversos dentro da solução.|
 |**Outros**|Caixa de Ferramentas|A janela da ferramenta usada para armazenar os elementos que serão removidos em superfícies de design, fornecendo uma origem de arrasto consistente para todos os designers.|
 |**Outros**|Start Page|Portal do usuário para o Visual Studio, com acesso a feeds de notícias do desenvolvedor, Ajuda do Visual Studio e projetos recentes. Os usuários também podem criar páginas iniciais personalizadas, copiando o arquivo de StartPage do diretório de arquivos de programa "Common7\IDE\StartPages\" Visual Studio para a pasta StartPages no diretório de documentos do Visual Studio e, em seguida, ou editando o XAML manualmente ou para abri-lo no Visual Studio ou outro editor de código.|
@@ -389,7 +389,7 @@ ms.locfileid: "60040985"
 |-----------------|-----------------------|
 |OK|Enter|
 |Cancelar|ESC|
-|Help|F1|
+|Ajuda|F1|
 
 #### <a name="imagery"></a>Imagens
  Use imagens com moderação nas caixas de diálogo. Não use ícones grandes nas caixas de diálogo simplesmente para usar o espaço. Use imagens apenas se eles são uma parte importante de transmitir a mensagem para o usuário, como ícones de aviso ou animações de status.
@@ -485,7 +485,7 @@ ms.locfileid: "60040985"
 |-------------------|-------------|-----------------|
 |![Ícone de "sem soltar" do mouse](../../extensibility/ux-guidelines/media/0706-01-mousenodrop.png "0706 01_MouseNoDrop")|Nenhum menu|Item não pode ser solto no local especificado.|
 |![Ícone de "cópia" de mouse](../../extensibility/ux-guidelines/media/0706-02-mousecopy.png "0706 02_MouseCopy")|Copiar|Item será copiado para o local de destino.|
-|![Mouse "move" icon](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706-03_MouseMove")|Mover|Item será movido para o local de destino.|
+|![Ícone de mouse "Mover"](../../extensibility/ux-guidelines/media/0706-03-mousemove.png "0706 03_MouseMove")|Mover|Item será movido para o local de destino.|
 |![Ícone de "add reference" mouse](../../extensibility/ux-guidelines/media/0706-04-mouseaddref.png "0706 04_MouseAddRef")|Adicionar referência|Uma referência para o item selecionado será adicionada ao local de destino.|
 
 #### <a name="reference-based-projects"></a>Projetos de referência
@@ -495,27 +495,27 @@ ms.locfileid: "60040985"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Link|
 |Nenhum modificador|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Nenhum modificador|Source|Referência de exclusões ao item original|Retém o item original|
+|Nenhum modificador|Origem|Referência de exclusões ao item original|Retém o item original|
 |Nenhum modificador|Resultado|**DROPEFFECT_MOVE** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Shift+Drag|Ação|Mover|Nenhum menu|
-|Shift+Drag|Destino|Adiciona a referência ao item original|Nenhum menu|
-|Shift+Drag|Source|Referência de exclusões ao item original|Nenhum menu|
-|Shift+Drag|Resultado|**DROPEFFECT_MOVE** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
-|Ctrl+Drag|Ação|Copiar|Nenhum menu|
-|Ctrl+Drag|Destino|Adiciona a referência ao item original|Nenhum menu|
-|Ctrl+Drag|Source|Mantém a referência ao item original|Nenhum menu|
-|Ctrl+Drag|Resultado|**DROPEFFECT_COPY** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
-|Ctrl+Shift+Drag|Ação|Link|Link|
-|Ctrl+Shift+Drag|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Ctrl+Shift+Drag|Source|Mantém a referência ao item original|Retém o item original|
-|Ctrl+Shift+Drag|Resultado|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Ctrl+Shift+Drag|Observação|Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer.||
+|SHIFT + arrastar|Ação|Mover|Nenhum menu|
+|SHIFT + arrastar|Destino|Adiciona a referência ao item original|Nenhum menu|
+|SHIFT + arrastar|Origem|Referência de exclusões ao item original|Nenhum menu|
+|SHIFT + arrastar|Resultado|**DROPEFFECT_MOVE** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
+|CTRL + arrastar|Ação|Copiar|Nenhum menu|
+|CTRL + arrastar|Destino|Adiciona a referência ao item original|Nenhum menu|
+|CTRL + arrastar|Origem|Mantém a referência ao item original|Nenhum menu|
+|CTRL + arrastar|Resultado|**DROPEFFECT_COPY** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
+|Ctrl + Shift + arrastar|Ação|Link|Link|
+|Ctrl + Shift + arrastar|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
+|Ctrl + Shift + arrastar|Origem|Mantém a referência ao item original|Retém o item original|
+|Ctrl + Shift + arrastar|Resultado|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
+|Ctrl + Shift + arrastar|Observação|Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer.||
 |Recortar/colar|Ação|Mover|Link|
 |Recortar/colar|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Recortar/colar|Source|Mantém a referência ao item original|Retém o item original|
+|Recortar/colar|Origem|Mantém a referência ao item original|Retém o item original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Link|
-|Copiar/colar|Source|Adiciona a referência ao item original|Adiciona a referência ao item original|
+|Copiar/colar|Origem|Adiciona a referência ao item original|Adiciona a referência ao item original|
 |Copiar/colar|Resultado|Mantém a referência ao item original|Retém o item original|
 |Copiar/colar|Ação|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 
@@ -526,24 +526,24 @@ ms.locfileid: "60040985"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Nenhum modificador|Source|Referência de exclusões ao item original|Referência de exclusões ao item original|
+|Nenhum modificador|Origem|Referência de exclusões ao item original|Referência de exclusões ao item original|
 |Nenhum modificador|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Shift+Drag|Ação|Mover|Mover|
-|Shift+Drag|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Shift+Drag|Source|Referência de exclusões ao item original|Exclui o item do local original|
-|Shift+Drag|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Ctrl+Drag|Ação|Copiar|Copiar|
-|Ctrl+Drag|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Ctrl+Drag|Source|Mantém a referência ao item original|Mantém a referência ao item original|
-|Ctrl+Drag|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Ctrl+Shift+Drag||Nenhum menu|Nenhum menu|
+|SHIFT + arrastar|Ação|Mover|Mover|
+|SHIFT + arrastar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
+|SHIFT + arrastar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|SHIFT + arrastar|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
+|CTRL + arrastar|Ação|Copiar|Copiar|
+|CTRL + arrastar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
+|CTRL + arrastar|Origem|Mantém a referência ao item original|Mantém a referência ao item original|
+|CTRL + arrastar|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
+|Ctrl + Shift + arrastar||Nenhum menu|Nenhum menu|
 |Recortar/colar|Ação|Mover|Mover|
 |Recortar/colar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Recortar/colar|Source|Referência de exclusões ao item original|Exclui o item do local original|
+|Recortar/colar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item é excluído do local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Copiar|
 |Copiar/colar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Copiar/colar|Source|Retém o item original|Retém o item original|
+|Copiar/colar|Origem|Retém o item original|Retém o item original|
 |Copiar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no armazenamento de ins local original|
 
 #### <a name="mixed-target-projects"></a>Projetos de destino misto
@@ -553,27 +553,27 @@ ms.locfileid: "60040985"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Nenhum modificador|Source|Referência de exclusões ao item original|Referência de exclusões ao item original|
+|Nenhum modificador|Origem|Referência de exclusões ao item original|Referência de exclusões ao item original|
 |Nenhum modificador|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item será excluído do local original no armazenamento|
-|Shift+Drag|Ação|Mover|Mover|
-|Shift+Drag|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Shift+Drag|Source|Referência de exclusões ao item original|Exclui o item do local original|
-|Shift+Drag|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item será excluído do local original no armazenamento|
-|Ctrl+Drag|Ação|Copiar|Copiar|
-|Ctrl+Drag|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Ctrl+Drag|Source|Mantém a referência ao item original|Retém o item original|
-|Ctrl+Drag|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
-|Ctrl+Shift+Drag|Ação|Link|Link|
-|Ctrl+Shift+Drag|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original do código-fonte|
-|Ctrl+Shift+Drag|Source|Mantém a referência ao item original|Retém o item original|
-|Ctrl+Shift+Drag|Resultado|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
+|SHIFT + arrastar|Ação|Mover|Mover|
+|SHIFT + arrastar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
+|SHIFT + arrastar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|SHIFT + arrastar|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item será excluído do local original no armazenamento|
+|CTRL + arrastar|Ação|Copiar|Copiar|
+|CTRL + arrastar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
+|CTRL + arrastar|Origem|Mantém a referência ao item original|Retém o item original|
+|CTRL + arrastar|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
+|Ctrl + Shift + arrastar|Ação|Link|Link|
+|Ctrl + Shift + arrastar|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original do código-fonte|
+|Ctrl + Shift + arrastar|Origem|Mantém a referência ao item original|Retém o item original|
+|Ctrl + Shift + arrastar|Resultado|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Recortar/colar|Ação|Mover|Mover|
 |Recortar/colar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Recortar/colar|Source|Referência de exclusões ao item original|Exclui o item do local original|
+|Recortar/colar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item é excluído do local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Copiar|
 |Copiar/colar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Copiar/colar|Source|Retém o item original|Retém o item original|
+|Copiar/colar|Origem|Retém o item original|Retém o item original|
 |Copiar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 
  Esses detalhes devem ser levados em consideração ao implementar o arrastar para o **Gerenciador de soluções**:

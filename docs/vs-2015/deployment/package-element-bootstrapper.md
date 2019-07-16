@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 62c19953d1c4d82c0040e728fc2c2645c68589c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157689"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Pacote&gt; elemento (Bootstrapper)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -150,7 +150,7 @@ O `Package` é o elemento XML de nível superior dentro de um arquivo de pacote.
 |---------------|-----------------|  
 |`Culture`|Necessário. Define a cultura para esse pacote, que determina o idioma a ser usado. Esse atributo é uma chave para o `Strings` elemento, que lista as cadeias de caracteres específicas da cultura para nomes de produtos e as mensagens de erro durante a instalação.|  
 |`Name`|Necessário. O nome do pacote exibido ao desenvolvedor de dentro de uma ferramenta como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Esse atributo é uma chave para o `Strings` elemento, que deve conter um `String` elemento com o `Name` e `Culture` propriedades definidas para corresponder a `Name` e `Culture` propriedades de `Package`.|  
-|`LicenseAgreement`|Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser texto sem formatação (. txt) ou Rich Text Format. (.rtf)|  
+|`LicenseAgreement`|Opcional. Especifica o nome do arquivo no pacote de distribuição que contém o contrato de licença de usuário final (EULA).  Esse arquivo pode ser texto sem formatação (. txt) ou Rich Text Format. (. rtf)|  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um arquivo de pacote completo para redistribuir o [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].  

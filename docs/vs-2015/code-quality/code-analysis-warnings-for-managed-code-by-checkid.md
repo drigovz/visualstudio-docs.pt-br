@@ -260,11 +260,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 91dcea4d9d16a6e846a66e4a5590dedfdc62b90f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201476"
 ---
 # <a name="code-analysis-warnings-for-managed-code-by-checkid"></a>Avisos da análise de código para código gerenciado por CheckId
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -440,7 +440,7 @@ A tabela a seguir lista avisos de análise de código para código gerenciado pe
 |CA2118|[CA2118: Revise o uso de SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md)|SuppressUnmanagedCodeSecurityAttribute altera o comportamento do sistema de segurança padrão para membros que executem código não gerenciado que usa interoperabilidade COM ou invocação do sistema operacional. Esse atributo é usado principalmente para aumentar o desempenho; no entanto, os ganhos de desempenho acompanham riscos de segurança significativos.|  
 |CA2119|[CA2119: Métodos para lacrar que atendam a interfaces privadas](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Um tipo público herdável fornece uma implementação de método substituível de uma interface (Friend no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]) interna. Para corrigir uma violação dessa regra, evite que o método seja substituído fora do assembly.|  
 |CA2120|[CA2120: Construtores de serialização segura](../code-quality/ca2120-secure-serialization-constructors.md)|Esse tipo tem um construtor que utiliza um objeto System.Runtime.Serialization.SerializationInfo e um objeto System.Runtime.Serialization.StreamingContext (a assinatura do construtor de serialização). Esse construtor não é protegido por uma verificação de segurança, mas um ou mais dos construtores regulares no tipo são protegidos.|  
-|CA2121|[CA2121: Construtores estáticos devem ser privados](../code-quality/ca2121-static-constructors-should-be-private.md)|O sistema chama o construtor estático antes que a primeira instância do tipo seja criada ou que outros membros estáticos sejam referenciados. Se não for privado, um construtor estático poderá ser chamado por um código diferente do sistema. Dependendo das operações realizadas no construtor, isso pode causar um comportamento inesperado.|  
+|CA2121|[CA2121: Construtores estáticos devem ser particulares](../code-quality/ca2121-static-constructors-should-be-private.md)|O sistema chama o construtor estático antes que a primeira instância do tipo seja criada ou que outros membros estáticos sejam referenciados. Se não for privado, um construtor estático poderá ser chamado por um código diferente do sistema. Dependendo das operações realizadas no construtor, isso pode causar um comportamento inesperado.|  
 |CA2122|[CA2122: Não expor indiretamente métodos com demandas de link](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Um membro público ou protegido tem exigências de vínculo e é chamado por um membro que não realiza nenhuma verificação de segurança. Uma exigência de vínculo verifica as permissões apenas do chamador imediato.|  
 |CA2123|[CA2123: As demandas de link de substituição devem ser idênticas à base](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|Esta regra compara um método ao método de base, que é uma interface ou um método virtual em outro tipo e, em seguida, compara as exigências de vínculo em cada um. Se essa regra for violada, um chamador mal-intencionado poderá ignorar a exigência de vínculo apenas chamando o método não seguro.|  
 |CA2124|[CA2124: Encapsulamento vulnerável, por fim, cláusulas em tentativa externa](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Um método público ou protegido contém um bloco try/finally. O bloco finally aparentemente redefine o estado de segurança não está incluído em um bloco finally.|  

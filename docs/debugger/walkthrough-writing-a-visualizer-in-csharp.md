@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4e99e0d3e8f212b2fdab52188b8c765610d9ac2f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901193"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890918"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Passo a passo: Escrevendo um visualizador em C\#
 Este passo a passo mostra como escrever um visualizador simples usando C#. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres não é especialmente útil em si mesmo, mas mostra as etapas básicas a seguir para criar visualizadores mais úteis para outros tipos de dados.
@@ -38,10 +38,10 @@ Siga as tarefas a seguir para criar um visualizador.
 1. Crie um novo projeto de biblioteca de classes.
 
     ::: moniker range=">=vs-2019"
-    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **biblioteca de classes**, escolha **modelos**, em seguida, escolha **criar uma nova biblioteca de classes (.NET Standard)**. Na caixa de diálogo que aparece, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Tipo de **Ctrl + Q** para abrir a caixa de pesquisa, digite **biblioteca de classes**, escolha **modelos**, em seguida, escolha **criar uma nova biblioteca de classes (.NET Standard)** . Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo **Visual C#** , escolha **.NET Standard**e, em seguida, no painel central, escolha **biblioteca de classes (. NET Standard)**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo do **novo projeto** caixa de diálogo **Visual C#** , escolha **.NET Standard**e, em seguida, no painel central, escolha **biblioteca de classes (. NET Standard)** .
     ::: moniker-end
 
 2. Digite um nome apropriado para a biblioteca de classes, como `MyFirstVisualizer`e, em seguida, clique em **Create** ou **Okey**.
@@ -170,10 +170,10 @@ Siga as tarefas a seguir para criar um visualizador.
 1. No Gerenciador de soluções, clique com botão direito a solução, escolha **Add**e, em seguida, clique em **novo projeto**.
 
     ::: moniker range=">=vs-2019"
-    Na caixa de pesquisa, digite **aplicativo de console**, escolha **modelos**, em seguida, escolha **criar um novo aplicativo de Console (.NET Framework)**. Na caixa de diálogo que aparece, escolha **Criar**.
+    Na caixa de pesquisa, digite **aplicativo de console**, escolha **modelos**, em seguida, escolha **criar um novo aplicativo de Console (.NET Framework)** . Na caixa de diálogo que aparece, escolha **Criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
-    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#**, escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)**.
+    Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C#** , escolha **Área de Trabalho do Windows** e, em seguida, no painel central, escolha **Aplicativo de Console (.NET Framework)** .
     ::: moniker-end
 
 2. Digite um nome apropriado para a biblioteca de classes, como `MyTestConsole`e, em seguida, clique em **Create** ou **Okey**.
@@ -202,7 +202,8 @@ Siga as tarefas a seguir para criar um visualizador.
 
 2. Edite o nome de Program.cs para algo mais significativo, por exemplo, TestConsole.cs.
 
-    **Observação** [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classe em TestConsole.cs para corresponder ao novo nome de arquivo.
+    > [!NOTE]
+    > O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] automaticamente altera a declaração de classes em TestConsole.cs para corresponder ao novo nome do arquivo.
 
 3. Em TestConsole.cs, adicione o seguinte código às instruções `using`:
 
@@ -241,7 +242,7 @@ Primeiro, você precisará criar um novo projeto de biblioteca de classes.
 
 1. No menu **Arquivo**, escolha **Novo > Projeto**.
 
-2. No **novo projeto** caixa de diálogo **Visual c#**, selecione **.NET Standard**.
+2. No **novo projeto** caixa de diálogo **Visual c#** , selecione **.NET Standard**.
 
 3. No painel central, escolha **biblioteca de classes**.
 
@@ -257,7 +258,7 @@ Primeiro, você precisará criar um novo projeto de biblioteca de classes.
 
 2. No menu de atalho, escolha **Adicionar** e clique em **Novo Item**.
 
-3. No **Adicionar Novo Item** caixa de diálogo **itens do Visual c#**, selecione **Visualizador de depurador**.
+3. No **Adicionar Novo Item** caixa de diálogo **itens do Visual c#** , selecione **Visualizador de depurador**.
 
 4. Na caixa **Nome**, digite um nome apropriado, por exemplo, SecondVisualizer.cs.
 

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f4d300651731b38b9b86421d36d9de169dc6464d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188786"
 ---
 # <a name="create-jsdoc-comments-for-javascript-intellisense"></a>Criar comentários JSDoc para JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ O IntelliSense no Visual Studio exibe informações que você adiciona um script
 |  Marcação de JSDoc   |                       Sintaxe                        |                                                     Observações                                                      |
 |--------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
 | @deprecated  |              @deprecated *description*              |                                   Especifica um método ou função preterida.                                   |
-| @description |             @description *description*              |                              Especifica a descrição de uma função ou método.                               |
+| @description |             @description *description*              |                              Especifica a descrição de uma função ou um método.                               |
 |    @param    | @param {*type*} *parameterName*<em>description</em> | Especifica informações de um parâmetro em uma função ou método.<br /><br /> TypeScript também dá suporte a @paramTag. |
 |  @property   |          @property {*type*} *propertyName*          |   Especifica as informações, incluindo uma descrição, para um campo ou um membro que é definido em um objeto.    |
 |   @returns   |                  @returns {*type*}                  |           Especifica um valor de retorno.<br /><br /> Para o TypeScript, use @returnType em vez de @returns.           |

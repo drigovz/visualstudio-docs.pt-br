@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 829c7a0193ce2742959f677e95dd4a499997cf5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923507"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68149836"
 ---
 # <a name="idiasymbolgetacceleratorpointertags"></a>IDiaSymbol::get_acceleratorPointerTags
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ HRESULT get_acceleratorPointerTags(
  [in] O tamanho da matriz de saída `pPointerTags`.  
   
  `pcnt`  
- [out] A contagem de marcas de ponteiro accelerator na função de stub do acelerador de C++ AMP.  
+ [out] A contagem de marcas de ponteiro de acelerador no C++ função de stub do acelerador de AMP.  
   
  `pPointerTags`  
- [out] Um `DWORD` ponteiro de matriz é preenchido com os valores de marca de ponteiro accelerator na função de stub do acelerador de C++ AMP.  
+ [out] Um `DWORD` ponteiro de matriz é preenchido com os valores de marca de ponteiro acelerador no C++ função de stub do acelerador de AMP.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  

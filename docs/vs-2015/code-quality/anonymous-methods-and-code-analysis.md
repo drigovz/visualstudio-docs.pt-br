@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b8b3f64a0b5f70067367e98d7e1d1471fc670099
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157057"
 ---
 # <a name="anonymous-methods-and-code-analysis"></a>Métodos anônimos e análise de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ class Class
   
  Uma classe pode conter um método anônimo embutido que atribui um valor a um campo que tem vários construtores. Nesse caso, avisos e as métricas estão associadas a todos os construtores, a menos que esse construtor encadeia outro construtor na mesma classe.  
   
- Por exemplo, na classe, todos os avisos que são encontrados na declaração de **anonymousMethod** deve ser gerado em relação a **Class(int)** e **Class(string)** mas não em relação ao **Class ()**.  
+ Por exemplo, na classe, todos os avisos que são encontrados na declaração de **anonymousMethod** deve ser gerado em relação a **Class(int)** e **Class(string)** mas não em relação ao **Class ()** .  
   
 ```vb  
   

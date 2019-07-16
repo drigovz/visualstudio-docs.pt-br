@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142475"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Substituir equals ao sobrecarregar operador equals
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58923154"
 ## <a name="rule-description"></a>Descrição da Regra
  O operador de igualdade se destina a ser uma forma conveniente sintaticamente para acessar a funcionalidade do <xref:System.Object.Equals%2A> método. Se você implementar o operador de igualdade, sua lógica deve ser idêntica de <xref:System.Object.Equals%2A>.
 
- O compilador C# emite um aviso se seu código viola essa regra.
+ O compilador c# emite um aviso se seu código viola essa regra.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, você deve remover a implementação do operador de igualdade ou substituir <xref:System.Object.Equals%2A> e ter os dois métodos retornam os mesmos valores. Se o operador de igualdade não introduz um comportamento inconsistente, você poderá corrigir a violação, fornecendo uma implementação de <xref:System.Object.Equals%2A> que chama o <xref:System.Object.Equals%2A> método na classe base.
@@ -62,8 +62,8 @@ ms.locfileid: "58923154"
 
  Este exemplo gerencia a seguinte saída.
 
- **a = (1,1 [0]) e b = (2,2 [1]) são iguais? No**
-**a == b ? Não**
+ **a = (1,1 [0]) e b = (2,2 [1]) são iguais? Não**
+**um = = b? Não**
 **a1 e a são iguais? Sim**
 **a1 = = um? Sim**
 **b e bcopy são iguais? Não**
@@ -80,8 +80,8 @@ ms.locfileid: "58923154"
 
  Este exemplo gerencia a seguinte saída.
 
- **a = (1,1) e b = (2,2) são iguais? No**
-**a == b ? Não**
+ **a = (1,1) e b = (2,2) são iguais? Não**
+**um = = b? Não**
 **a1 e a são iguais? Sim**
 **a1 = = um? Sim**
 **b e bcopy são iguais? Sim**

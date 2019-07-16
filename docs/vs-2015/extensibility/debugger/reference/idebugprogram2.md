@@ -13,11 +13,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 372c119b6a841d7d4b349e85548914f7641b53d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148639"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ IDebugProgram2 : IUnknown
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Grava um despejo de um arquivo.|  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -77,8 +77,8 @@ IDebugProgram2 : IUnknown
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
  [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)   
  [Avançar](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)   
- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [Anexar](../../../extensibility/debugger/reference/idebugengine2-attach.md)   
  [DestroyProgram](../../../extensibility/debugger/reference/idebugengine2-destroyprogram.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [Attach_V7](../../../extensibility/debugger/reference/idebugprogramnode2-attach-v7.md)

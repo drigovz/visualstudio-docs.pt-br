@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201851"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Como: Criar modelos de Item multiarquivos
+# <a name="how-to-create-multi-file-item-templates"></a>Como: Criar modelos de itens multiarquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item é composto por vários arquivos. Por exemplo, um modelo de item do Windows Forms para Visual Basic exige os três arquivos a seguir:  
@@ -53,7 +53,7 @@ Os modelos de item podem especificar apenas um item, mas, algumas vezes, o item 
   
      Quando um item derivado deste modelo for adicionado a um projeto, os nomes de arquivo serão baseados no nome que o usuário digitou na caixa de diálogo **Adicionar Novo Item**.  
   
-3. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Os arquivos selecionados são compactados em um arquivo .zip.  
+3. Selecione os arquivos a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)** . Os arquivos selecionados são compactados em um arquivo .zip.  
   
 4. Coloque o arquivo .zip no local do modelo de item do usuário. Por padrão, o diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ItemTemplates\\. Para obter mais informações, confira [Como: Localizar e organizar modelos](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
