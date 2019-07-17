@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cc0cdb635c90275289f96c55ae68976ffc5edc9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8217a6aa349a31921ed454e76ddea306785dea9d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62569674"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825900"
 ---
 # <a name="compare-properties-and-items"></a>Comparar propriedades e itens
 Itens e propriedades do MSBuild são usados para passar informações para tarefas, avaliar condições e armazenar os valores que podem ser referenciadas em todo o arquivo de projeto.
@@ -93,15 +93,15 @@ No entanto, essa não é a história completa. Quando uma propriedade, definiç�
 
 - Durante a fase de avaliação de um build:
 
-    - As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.
+  - As propriedades são definidas e modificadas na ordem em que são exibidas. As funções de propriedade são executadas. Os valores da propriedade na forma $(PropertyName) são expandidos dentro de expressões. O valor da propriedade é definido como a expressão expandida.
 
-    - As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.
+  - As definições de itens são realizadas e modificadas na ordem em que são exibidas. As funções da propriedade já foram expandidas dentro das expressões. Os valores de metadados são definidos como as expressões expandidas.
 
-    - Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.
+  - Os tipos de item são definidos e modificados na ordem em que são exibidos. Os valores de item na forma @(ItemType) são expandidos. As transformações de item também são expandidas. As funções e valores de propriedade já foram expandidos dentro das expressões. Os valores da lista de itens e de metadados são definidos como as expressões expandidas.
 
 - Durante a fase de execução de um build:
 
-    - As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.
+  - As propriedades e os itens definidos dentro dos destinos são avaliados em conjunto na ordem em que são exibidos. As funções de propriedade são executadas e os valores da propriedade são expandidos dentro das expressões. Os valores e as transformações de item também são expandidas. Os valores da propriedade, de tipo de item e de metadados são definidos como as expressões expandidas.
 
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Efeitos sutis da ordem de avaliação
 Na fase de avaliação de um build, a avaliação da propriedade precede a avaliação do item. No entanto, as propriedades podem ter valores que parecem depender de valores de item. Considere o script a seguir.

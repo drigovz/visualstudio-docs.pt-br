@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f6e96325edd3a17a09437e093590cc02a55504a5
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777633"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825823"
 ---
 # <a name="xsd-task"></a>tarefa XSD
 Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera arquivos de classe ou de esquema com base em uma origem.
@@ -44,15 +44,15 @@ Encapsula a ferramenta de definição de esquema XML (*xsd.exe*), a qual gera ar
 
 - **GenerateFromSchema**
 
-     Parâmetro **String** opcional.
+  Parâmetro **String** opcional.
 
-     Especifica os tipos gerados com base no esquema especificado.
+  Especifica os tipos gerados com base no esquema especificado.
 
-     Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.
+  Especifique um dos valores a seguir, cada um dos quais correspondente a uma opção XSD.
 
-    - **classes** - **/classes**
+  - **classes** -  **/classes**
 
-    - **dataset** - **/dataset**
+  - **dataset** -  **/dataset**
 
 - **Linguagem**
 

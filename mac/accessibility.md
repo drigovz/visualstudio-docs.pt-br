@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 383f9fb46341eec78fa2daa59bba31dde89ac437
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62985278"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824442"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
@@ -62,9 +62,9 @@ Os comandos de VoiceOver aparecem neste guia como **VO + *tecla***, em que **VO*
 Para navegar na interface de usuário do Visual Studio para Mac, use as seguintes combinações de teclas:
 
 - **VO + Direita/Esquerda**: navegar entre os elementos da interface do usuário
-    - O VoiceOver anunciará o rótulo e o tipo de controle e explicará como interagir com ele.
+  - O VoiceOver anunciará o rótulo e o tipo de controle e explicará como interagir com ele.
 - **VO + Shift + Para baixo/Para cima**: entra/sai de um elemento
-    - Depois de entrar no elemento, você pode usar **VO + Esquerda/Direita** para navegar pelos elementos dentro dele.
+  - Depois de entrar no elemento, você pode usar **VO + Esquerda/Direita** para navegar pelos elementos dentro dele.
 - **VO + Barra de espaço**: selecionar/interagir com um controle
 - **VO + M**: interagir com a barra de menus do Visual Studio para Mac
 

@@ -3,17 +3,17 @@ title: Pesquisar tópicos (Help Viewer)
 ms.date: 11/02/2017
 ms.topic: conceptual
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 52818e4f676d6ae9f4c02f26ad8e354b206cb2b8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824273"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824988"
 ---
 # <a name="how-to-search-for-topics"></a>Como: Pesquisar tópicos
 
@@ -44,7 +44,7 @@ Você pode criar pesquisas mais direcionadas, que retornam somente os tópicos m
 
 A tabela a seguir inclui algumas regras básicas e diretrizes para o desenvolvimento de consultas de pesquisa na ajuda.
 
-|Sintaxe|Descrição|
+|Sintaxe|DESCRIÇÃO|
 |------------|-----------------|
 |Diferenciação de maiúsculas e minúsculas|As pesquisas não diferenciam maiúsculas de minúsculas. Desenvolva seus critérios de pesquisa usando caracteres em maiúsculas ou em minúsculas. Por exemplo, "OLE" e "ole" retornam os mesmos resultados.|
 |Combinações de caracteres|Não é possível pesquisar somente por letras (a–z) ou números (0–9) individuais. Se você tentar pesquisar determinadas palavras reservadas, como "e", "de" e "com", elas serão ignoradas. Para obter mais informações, consulte [Palavras ignoradas em pesquisas](#stopwords) posteriormente neste tópico.|

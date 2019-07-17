@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 03/02/2018
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-searchscope: VS Subscription
-ms.openlocfilehash: ab02b40926225860536b277b22c3f16768a56731
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810525"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250730"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
 
@@ -43,7 +42,7 @@ R: A abordagem mais fácil para determinar se você tem os privilégios corretos
 Você precisa selecionar uma assinatura do Azure (que é uma conta de cobrança) em uma lista apresentada de assinaturas do Azure que estão vinculadas ao seu logon no momento.
 Como o nome da assinatura do Azure assume como padrão o tipo de conta de cobrança ("Pago Conforme o Uso", "Contrato Enterprise", etc.), geralmente fica claro se a assinatura do Azure faz parte do Contrato Enterprise.
 
-Outro método é tentar visitar o [Azure Enterprise Portal](http://ea.azure.com).  Se você conseguir acessá-lo com êxito, significará que você já tem a função de admin corporativo ou de proprietário da conta. Somente os proprietários da conta podem configurar novas contas de cobrança do Azure em um Contrato Enterprise. Se você não conseguir acessar o Azure Enterprise Portal, descubra na sua organização quem é o admin corporativo e solicite que ele o adicione como proprietário da conta no Azure Enterprise Portal.  Se não for possível encontrar essa pessoa, [envie um tíquete de suporte](https://aka.ms/AzureEntSupport) e solicite as informações de contato.  É necessário o nome da sua organização e o número de registro do Contrato Enterprise para o tíquete de suporte.
+Outro método é tentar visitar o [Azure Enterprise Portal](https://ea.azure.com).  Se você conseguir acessá-lo com êxito, significará que você já tem a função de admin corporativo ou de proprietário da conta. Somente os proprietários da conta podem configurar novas contas de cobrança do Azure em um Contrato Enterprise. Se você não conseguir acessar o Azure Enterprise Portal, descubra na sua organização quem é o admin corporativo e solicite que ele o adicione como proprietário da conta no Azure Enterprise Portal.  Se não for possível encontrar essa pessoa, [envie um tíquete de suporte](https://aka.ms/AzureEntSupport) e solicite as informações de contato.  É necessário o nome da sua organização e o número de registro do Contrato Enterprise para o tíquete de suporte.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar os fundos do compromisso monetário do Azure de meu Contrato Enterprise para comprar assinaturas na nuvem do Visual Studio?
 

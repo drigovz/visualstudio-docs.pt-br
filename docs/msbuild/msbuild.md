@@ -11,17 +11,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae010fac8978b0669021bc6645449f57da754d0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5ac7cd1ea69bb6b96066da876ab2ce88aabb8a08
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437866"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823496"
 ---
 # <a name="msbuild"></a>MSBuild
 O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] é uma plataforma para a criação de aplicativos. Esse mecanismo, que é também conhecido como MSBuild, fornece um esquema XML para um arquivo de projeto que controla como a plataforma de build processa e compila software. O Visual Studio usa o MSBuild, mas ele não depende do Visual Studio. Ao invocar o *msbuild.exe* no seu arquivo de projeto ou solução, você pode organizar e criar produtos em ambientes em que o Visual Studio não está instalado.
 
- O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio (*.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
+ O Visual Studio usa o MSBuild para carregar e compilar projetos gerenciados. Os arquivos de projeto no Visual Studio ( *.csproj*, *.vbproj*, *.vcxproj* e outros) contêm o código XML do MSBuild que é executado ao compilar um projeto usando o IDE. Os projetos do Visual Studio importam toas as configurações e processos de build necessários para realizar o trabalho de desenvolvimento típico, mas você pode estendê-las ou modificá-las de dentro do Visual Studio ou usando um editor de XML.
 
  Para obter informações sobre o MSBuild para C++, consulte [MSBuild (Visual C++)](/cpp/build/msbuild-visual-cpp).
 
@@ -35,13 +35,13 @@ O [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] �
 
 - Você deseja modificar o sistema de build. Por exemplo, você talvez queira habilitar as seguintes ações:
 
-    - Pré-processar arquivos antes de eles chegarem ao compilador.
+  - Pré-processar arquivos antes de eles chegarem ao compilador.
 
-    - Copiar as saídas de build para um local diferente.
+  - Copiar as saídas de build para um local diferente.
 
-    - Criar arquivos compactados de saídas de build.
+  - Criar arquivos compactados de saídas de build.
 
-    - Realizar uma etapa de pós-processamento. Por exemplo, convém marcar um assembly com uma versão diferente.
+  - Realizar uma etapa de pós-processamento. Por exemplo, convém marcar um assembly com uma versão diferente.
 
 Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode compilar o código no IDE em um computador de desenvolvimento, mas usar uma linha de comando do MSBuild para compilar o código integrado de vários desenvolvedores.
 
@@ -168,7 +168,7 @@ Para obter mais informações, consulte [Multiplataforma](../msbuild/msbuild-mul
 
 ## <a name="see-also"></a>Consulte também
 
-| Título | Descrição |
+| Título | DESCRIÇÃO |
 | - | - |
 | [Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md) | Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto. |
 | [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md) | Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio. |

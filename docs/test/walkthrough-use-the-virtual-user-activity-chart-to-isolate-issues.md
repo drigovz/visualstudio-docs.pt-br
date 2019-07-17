@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6811365023f7030d46bf6c611ecb09a5990a7492
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976213"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825767"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Passo a passo: Usando o Gráfico de Atividade de Usuário Virtual para isolar problemas
 
@@ -30,9 +30,9 @@ O Gráfico de Atividade de Usuário Virtual permite visualizar a atividade de us
 
 - Complete esses procedimentos:
 
-    - [Gravar e executar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
+  - [Gravar e executar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests).
 
-    - [Criar e executar um teste de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+  - [Criar e executar um teste de carga](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Abrir a solução ColorWebApp criada nos passo a passo anteriores
 
@@ -69,7 +69,7 @@ Após a execução do teste de carga e a coleta dos dados de atividade de usuár
 
 3. Na ferramenta **Zoom para o período de tempo** abaixo do **Gráfico de atividade do usuário virtual**, ajuste os controles deslizantes à esquerda e à direita até que ambos estejam próximos ao ícone de violação de limite. Isso altera a escala de tempo no **Gráfico de atividade do usuário virtual**
 
-4. Na **Legenda de detalhes**, marque a caixa de seleção **(Realçar de erros)**. Observe que o usuário virtual que causou a violação de limite está realçado.
+4. Na **Legenda de detalhes**, marque a caixa de seleção **(Realçar de erros)** . Observe que o usuário virtual que causou a violação de limite está realçado.
 
 5. No painel **Filtrar resultados**, desmarque as caixas de seleção **Mostrar resultados bem-sucedidos** e **HttpError**, mas deixe a caixa de seleção **ValidationRuleError** marcada.
 

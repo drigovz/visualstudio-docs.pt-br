@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc2f56df75cd9abadde8474057f762118c6a840a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822964"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826091"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
 
@@ -62,11 +62,11 @@ Interfaces do usuário mudam frequentemente durante o desenvolvimento. Aqui est�
 
 - Se um controle tiver uma asserção inválida:
 
-    - Exclua o método que contém a asserção.
+  - Exclua o método que contém a asserção.
 
-    - Remova a chamada para esse método do método de teste.
+  - Remova a chamada para esse método do método de teste.
 
-    - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
+  - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.
 
 Para obter mais informações de como gravar testes de IU codificados, confira [Usar a automação da interface do usuário para testar seu código](../test/use-ui-automation-to-test-your-code.md).
 

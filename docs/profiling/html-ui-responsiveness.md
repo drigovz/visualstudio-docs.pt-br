@@ -17,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: cc7c049e0b1c5962b831e9084685b205acda38fd
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 8dac5c929289b9a891f7dc5cb1bf803e1abd5b3a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433457"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826110"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>Analisar a capacidade de resposta de interface do usuário HTML em Aplicativos Universais do Windows
 Este tópico descreve como isolar problemas de desempenho nos aplicativos usando o Criador de Perfil de Capacidade de Resposta da Interface do Usuário, uma ferramenta de desempenho disponível para Aplicativos Universais do Windows.
@@ -254,9 +254,9 @@ if (performance.mark && performance.measure) {
 
 - Exibir a hora de início, a duração, e a hora de término aproximadas para um evento no modo de exibição de linha do tempo e de grade. O gráfico dos detalhes da linha do tempo pode mostrar períodos que variam de 30 milissegundos a 30 segundos no modo de exibição de grade, dependendo do estado do zoom. Para valores de duração:
 
-    - Os tempos inclusivos representam a duração do evento incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece primeiro.
+  - Os tempos inclusivos representam a duração do evento incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece primeiro.
 
-    - Os tempos exclusivos representam a duração do evento não incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece entre parênteses.
+  - Os tempos exclusivos representam a duração do evento não incluindo os filhos do evento. No modo de exibição de grade, esse valor aparece entre parênteses.
 
 - Expanda um evento na hierarquia para exibir os filhos do evento. Os filhos do evento são outros eventos que são gerados pelo evento pai. Por exemplo, um evento DOM pode ter ouvintes de evento que aparecem como filhos. Um ouvinte de eventos pode ter outros eventos resultantes dele, como um evento de layout.
 
@@ -264,12 +264,12 @@ if (performance.mark && performance.measure) {
 
 - Veja detalhes para cada evento no painel de detalhes (painel direito). As propriedades variam de acordo com o evento específico, como mostram os exemplos a seguir:
 
-    - Para temporizadores, ouvintes de evento (eventos DOM) e retornos de chamada do quadro de animação, a propriedade **Callback function** fornece um link para o local do código-fonte juntamente com o nome do manipulador de eventos ou função de retorno de chamada.
+  - Para temporizadores, ouvintes de evento (eventos DOM) e retornos de chamada do quadro de animação, a propriedade **Callback function** fornece um link para o local do código-fonte juntamente com o nome do manipulador de eventos ou função de retorno de chamada.
 
-    - Para timers, ouvintes de eventos (eventos DOM), eventos de layout e retornos de chamada de quadro de animação, um resumo codificado por cores do evento selecionado e todos os seus filhos aparecem na seção **Resumo do tempo inclusivo** (o anel codificado por cor). Cada fatia codificada por cor da imagem representa um tipo de evento. As dicas de ferramenta fornecem o nome do tipo de evento.
+  - Para timers, ouvintes de eventos (eventos DOM), eventos de layout e retornos de chamada de quadro de animação, um resumo codificado por cores do evento selecionado e todos os seus filhos aparecem na seção **Resumo do tempo inclusivo** (o anel codificado por cor). Cada fatia codificada por cor da imagem representa um tipo de evento. As dicas de ferramenta fornecem o nome do tipo de evento.
 
-    > [!TIP]
-    > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.
+  > [!TIP]
+  > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.
 
 ### <a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo
  Você pode filtrar a exibição nos detalhes da linha do tempo para um evento particular selecionando **Filtrar para evento** no menu de contexto de um evento específico. Quando você escolhe essa opção, a linha do tempo e a exibição de grade têm como escopo o evento selecionado A seleção no gráfico de uso da CPU também tem como escopo o evento especial.

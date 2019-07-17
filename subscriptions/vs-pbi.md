@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Power BI Pro incluída na assinatura do Visual Studio.
-searchscope: VS Subscription
-ms.openlocfilehash: 75c749d31e28ecdc463b0777744370680309fad7
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: d696a72cc1ab411c9bd01671d9b57e335f751261
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67031977"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824624"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Power BI Pro em assinaturas do Visual Studio
 
@@ -111,9 +110,9 @@ R:  Nº  O benefício do Power BI Pro não pode ser adicionado a locatários do 
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda com o Power BI Pro?
-    - Confira a [documentação online](/power-bi/).
-    - Problemas durante a inscrição?  Confira [Inscrever-se no Power BI como um indivíduo](/power-bi/service-self-service-signup-for-power-bi)
-    - Explore os principais problemas, obtenha ajuda da comunidade ou envie um tíquete de suporte na [página de Suporte](https://powerbi.microsoft.com/support/).
+  - Confira a [documentação online](/power-bi/).
+  - Problemas durante a inscrição?  Confira [Inscrever-se no Power BI como um indivíduo](/power-bi/service-self-service-signup-for-power-bi)
+  - Explore os principais problemas, obtenha ajuda da comunidade ou envie um tíquete de suporte na [página de Suporte](https://powerbi.microsoft.com/support/).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 

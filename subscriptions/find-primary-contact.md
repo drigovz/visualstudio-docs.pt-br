@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/22/2018
 ms.topic: conceptual
 description: Assinaturas do Visual Studio – Localizando o Contato Principal
-searchscope: VS Subscription
-ms.openlocfilehash: 46f36348c9275b47b885d9a7179885b4450502bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0614098743522c1a0c7a78b66aa65fc445d3e67d
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945926"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67783563"
 ---
 # <a name="locating-the-primary-contact-associated-with-visual-studio-subscriptions"></a>Localizando o Contato Principal associado a assinaturas do Visual Studio
 

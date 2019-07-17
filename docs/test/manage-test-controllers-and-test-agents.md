@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 41e15982734731defabd79416c73eef4538f0c04
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788746"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824239"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -114,7 +114,7 @@ Um agente de teste deve ser definido para o estado offline antes de ser removido
 
 O status do agente de teste pode ser qualquer um dos seguintes valores:
 
-|Status|Descrição|
+|Status|DESCRIÇÃO|
 |-|-----------------|
 |Executando teste|Executando testes|
 |Pronto|Disponível para executar testes ou coletar dados e diagnóstico|
@@ -140,7 +140,7 @@ Você pode alterar o status e outras configurações para um agente de teste que
 
 1. Altere as seguintes propriedades do agente de teste conforme necessário:
 
-|Propriedade do agente de teste|Descrição|
+|Propriedade do agente de teste|DESCRIÇÃO|
 |-|-----------------|
 |**Importância**|Usado para distribuir a carga quando você usa agentes de teste com níveis de desempenho diferentes. Por exemplo, um agente de teste com uma importância de 100 recebe duas vezes a carga como um agente de teste com uma importância de 50.|
 |**Troca de IPs**|Usado para configurar a troca de IP. A troca de IP permite que um agente de teste envie solicitações para um servidor usando um intervalo de endereços IP. Isso simula chamadas que venham de computadores cliente diferentes.<br /><br /> A troca de IP será importante se seu teste de carga estiver acessando um Web farm. A maioria de balanceadores de carga estabelece afinidade entre um cliente e um servidor Web específico usando o endereço IP do cliente. Se todas as solicitações estiverem vindo aparentemente de um único cliente, o balanceador de carga não balanceará a carga. Para obter um bom balanceamento de carga no Web farm, verifique se as solicitações vêm de um intervalo de endereços IP. **Observação:**  Você pode especificar um adaptador de rede ou usar **(Todos sem assinatura)** para selecionar automaticamente um que não esteja sendo usado atualmente. <br /><br /> Para usar o recurso de troca de IP, o serviço Visual Studio Test Agent deve ser executado como um usuário do grupo Administradores do computador do agente. Esse usuário é selecionado durante a configuração do agente, mas pode ser alterado modificando-se as propriedades do serviço e reiniciando-o.<br /><br /> Para verificar se a troca de IP está funcionando corretamente, habilite o registro em log IIS no servidor Web, use a funcionalidade de registro em log IIS para verificar se as solicitações vêm dos endereços IP que configurados por você.|
@@ -186,25 +186,25 @@ Ao adicionar funções para seu aplicativo às configurações de teste para Vis
 
 - Não há nenhum agente disponível para a função que deve executar os testes. Seus testes não podem ser executados. Você pode executar uma das seguintes ações e executar novamente seus testes:
 
-    - Você pode esperar um agente para ficar disponível para essa função para executar os testes.
+  - Você pode esperar um agente para ficar disponível para essa função para executar os testes.
 
-    - Se houver qualquer agente que esteja offline que possa ser usado para esta função, você poderá reiniciar o agente para que ele fique disponível.
+  - Se houver qualquer agente que esteja offline que possa ser usado para esta função, você poderá reiniciar o agente para que ele fique disponível.
 
-    - Você pode adicionar outro agente com as propriedades corretas de agente para essa função ao controlador de teste.
+  - Você pode adicionar outro agente com as propriedades corretas de agente para essa função ao controlador de teste.
 
-    - Você pode alterar as propriedades do agente para esta função nas configurações de teste para ativar outros agentes que deseja usar.
+  - Você pode alterar as propriedades do agente para esta função nas configurações de teste para ativar outros agentes que deseja usar.
 
 - Não há nenhum agente disponível para uma ou mais funções que executam adaptadores de dados de diagnóstico. Os testes podem ser executados, mas o adaptador de dados de diagnóstico não pode ser executado. Você pode executar seus testes sem o adaptador de dados de diagnóstico, ou pode executar uma das seguintes ações e executar novamente seus testes:
 
-    - Você pode esperar um agente ficar disponível para essas funções.
+  - Você pode esperar um agente ficar disponível para essas funções.
 
-    - Se houver qualquer agente que esteja offline e que possa ser usado para esta função, você deverá alterar o estado do agente para online de **Administrar Controlador de Teste** no menu **Testar**. Além disso, você poderá ter que reiniciar o agente se ele tiver sido desconectado do controlador.
+  - Se houver qualquer agente que esteja offline e que possa ser usado para esta função, você deverá alterar o estado do agente para online de **Administrar Controlador de Teste** no menu **Testar**. Além disso, você poderá ter que reiniciar o agente se ele tiver sido desconectado do controlador.
 
-    - Certifique-se de que nenhum agente que você possa precisar para esta execução de teste esteja ocupado executando testes. Você pode verificar o status de todos os agentes de **Administrar Controlador de Teste** no menu **Testar**.
+  - Certifique-se de que nenhum agente que você possa precisar para esta execução de teste esteja ocupado executando testes. Você pode verificar o status de todos os agentes de **Administrar Controlador de Teste** no menu **Testar**.
 
-    - Você pode adicionar outro agente com as propriedades corretas de agente para a função ao controlador de teste.
+  - Você pode adicionar outro agente com as propriedades corretas de agente para a função ao controlador de teste.
 
-    - Você pode alterar as propriedades do agente para a função nas configurações de teste para ativar outros agentes que deseja usar.
+  - Você pode alterar as propriedades do agente para a função nas configurações de teste para ativar outros agentes que deseja usar.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Carregar testes de assemblies assinados com atraso
 

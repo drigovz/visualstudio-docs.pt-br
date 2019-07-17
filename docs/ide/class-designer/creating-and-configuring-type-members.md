@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcfab3a14e8dfab6bdfb62b32839ebcbd69d21af
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 811565d6e4189eb04b33ce07fe04718def905922
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746936"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250647"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -122,7 +122,8 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
 4. Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
-     **Observação:** Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
+    > [!NOTE]
+    > Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
 ## <a name="modify-type-members"></a>Modificar membros de tipo
 
@@ -150,7 +151,7 @@ Cada linha de membro exibe os seguintes elementos:
 
 - **Modificador do membro**
 
-     Altere o modificador de visibilidade de um membro para `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected``Friend` (`protected``internal`) ou `Default`.
+     Altere o modificador de visibilidade de um membro para `Public` (`public`), `Private` (`private`), `Friend` (`internal`) `Protected` (`protected`), `Protected Friend` (`protected internal`) ou `Default`.
 
 - **\<adicionar membro>**
 

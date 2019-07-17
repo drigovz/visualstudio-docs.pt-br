@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ff663a7d2a22f152b3a0b9081623766535f9a53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950419"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824807"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -31,19 +31,19 @@ Por padrão, as seguintes configurações são sincronizadas:
 
 - As seguintes opções nas páginas **Ferramentas** > **Opções**:
 
-   - Configurações de tema e de uso de maiúsculas na barra de menus, na página de opções **Ambiente** > **Geral**.
+  - Configurações de tema e de uso de maiúsculas na barra de menus, na página de opções **Ambiente** > **Geral**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Fontes e Cores**.
+  - Todas as configurações da página de opções **Ambiente** > **Fontes e Cores**.
 
-   - Todos os atalhos de teclado da página de opções **Ambiente** > **Teclado**.
+  - Todos os atalhos de teclado da página de opções **Ambiente** > **Teclado**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Guias e Janelas**.
+  - Todas as configurações da página de opções **Ambiente** > **Guias e Janelas**.
 
-   - Todas as configurações da página de opções **Ambiente** > **Inicialização**.
+  - Todas as configurações da página de opções **Ambiente** > **Inicialização**.
 
-   - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-quick-actions.md).
+  - Todas as configurações nas páginas de opção do **Editor de Texto**, por exemplo, [preferências de estilo de código](code-styles-and-code-cleanup.md).
 
-   - Todas as configurações das páginas de opções **Designer XAML**.
+  - Todas as configurações das páginas de opções **Designer XAML**.
 
 ## <a name="turn-off-synchronized-settings-on-a-particular-computer"></a>Desligar configurações sincronizadas em um computador específico
 

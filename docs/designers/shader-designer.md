@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1703d867a529496bb5c524b62ae56ef8d25904b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1377034853907ce0c3585e4672296c1c8747259f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892990"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823861"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 
@@ -52,7 +52,7 @@ Esta seção descreve como adicionar um sombreador DGSL ao seu projeto do Visual
 
 2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto do C++ ao qual deseja adicionar o sombreador e escolha **Adicionar** > **Novo Item**.
 
-3. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)**.
+3. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Visual Shader Graph (.dgsl)** .
 
    > [!NOTE]
    > Se a categoria **Elementos Gráficos** não aparece na caixa de diálogo **Adicionar Novo Item** e você tem o componente **Editores de imagens e modelos 3D** instalado, não há suporte para os itens de gráficos desse tipo de projeto.
@@ -81,7 +81,7 @@ Aqui está a barra de ferramentas **Modo de Designer de Sombreador**:
 
 Esta tabela descreve os itens na barra de ferramentas **Modo do Designer de Sombreador**, que são listados na ordem em que aparecem, da esquerda para a direita:
 
-|Item da barra de ferramentas|Descrição|
+|Item da barra de ferramentas|DESCRIÇÃO|
 |------------------|-----------------|
 |**Selecionar**|Habilita a interação com nós e bordas no grafo. Nesse modo você pode selecionar nós e movê-los ou excluí-los, além de poder estabelecer bordas ou dividi-las.|
 |**Panorâmica**|Habilita a movimentação de um grafo de sombreador em relação ao quadro de janela. Para deslocar, selecione um ponto na superfície de design e movimente-o ao redor.<br /><br /> No modo **Selecionar**, pressione e segure a tecla **Ctrl** para ativar o modo **Panorâmica** temporariamente.|
@@ -109,17 +109,17 @@ Use o modo **Selecionar** para adicionar, remover, reposicionar, conectar e conf
 
 - Veja como:
 
-   - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
+  - Para adicionar um nó ao grafo, selecione-o na **Caixa de Ferramentas** e mova-o para a superfície de design.
 
-   - Para remover um nó do grafo, selecione-o e, em seguida, pressione **Delete**.
+  - Para remover um nó do grafo, selecione-o e, em seguida, pressione **Delete**.
 
-   - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.
+  - Para reposicionar um nó, selecione-o e, em seguida, mova-o para um novo local.
 
-   - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.
+  - Para conectar dois nós, mova um terminal de saída de um nó para um terminal de entrada do outro nó. Somente terminais de tipos compatíveis podem ser conectados. Uma linha entre os terminais mostra a conexão.
 
-   - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.
+  - Para remover uma conexão, no menu de atalho para qualquer um dos terminais conectados, escolha **Quebrar Links**.
 
-   - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.
+  - Para configurar as propriedades de um nó, selecione o nó e, em seguida, na janela **Propriedades**, especifique novos valores para as propriedades.
 
 ### <a name="preview-shaders"></a>Visualizar sombreadores
 
@@ -168,7 +168,7 @@ Para girar a forma, pressione e mantenha pressionada a tecla **Alt** e, em segui
 
 Antes de usar um sombreador em seu aplicativo, você precisa exportá-lo em um formato compatível com o DirectX.
 
-Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho (*.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
+Você pode exportar sombreadores como código-fonte HLSL ou código de bytes do sombreador compilado. O código-fonte HLSL é exportado para um arquivo de texto que tem uma extensão de nome de arquivo *.hlsl*. O código de bytes do sombreador pode ser exportado para um arquivo binário bruto que tenha uma extensão de nome de arquivo *.cso* ou para um arquivo de cabeçalho ( *.h*) C++ que codifique o código de bytes do sombreador em uma matriz.
 
 Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).
 
@@ -182,8 +182,8 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como: E
 |Selecionar tudo|**Ctrl**+**A**|
 |Excluir a seleção atual|**Excluir**|
 |Cancelar a seleção atual|**Escape** (**Esc**)|
-|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> Sinal de adição (**+**)|
-|Reduzir|**Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> Sinal de subtração (**-**)|
+|Ampliar|**Ctrl**+**Botão de rolagem do mouse para frente**<br /><br /> Sinal de adição ( **+** )|
+|Reduzir|**Ctrl**+**Botão de rolagem do mouse para trás**<br /><br /> Sinal de subtração ( **-** )|
 |Deslocar para cima na superfície de design|**Botão de rolagem do mouse para trás**<br /><br /> **PageDown**|
 |Deslocar para baixo na superfície de design|**Botão de rolagem do mouse para frente**<br /><br /> **PageUp**|
 |Deslocar para a esquerda na superfície de design|**Shift**+**Botão de rolagem do mouse para trás**<br /><br /> **Botão de rolagem do mouse para a esquerda**<br /><br /> **Shift**+**PageDown**|
@@ -199,7 +199,7 @@ Para obter mais informações sobre como exportar sombreadores, confira [Como: E
 
 ## <a name="related-topics"></a>Tópicos relacionados
 
-|Título|Descrição|
+|Título|DESCRIÇÃO|
 |-----------|-----------------|
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Fornece uma visão geral das ferramentas do Visual Studio que você pode usar para trabalhar com texturas e imagens, modelos 3D e efeitos de sombreamento.|
 |[Editor de Imagens](../designers/image-editor.md)|Descreve como usar o Editor de Imagens do Visual Studio para trabalhar com texturas e imagens.|

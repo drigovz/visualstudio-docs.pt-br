@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844036"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823821"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
 
@@ -43,15 +43,15 @@ Para alterar a ordem das camadas, siga um destes procedimentos:
 
 - Na janela Estrutura de Tópicos de Documento ou na prancheta, clique com o botão direito do mouse no elemento cuja ordem de camadas você deseja alterar, selecione **Ordem** e clique em uma destas opções:
 
-   - **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.
+  - **Trazer para a Frente** para colocar o elemento na parte da frente da ordem.
 
-   - **Avançar** para avançar o elemento um nível na ordem.
+  - **Avançar** para avançar o elemento um nível na ordem.
 
-   - **Recuar** para recuar o elemento um nível na ordem.
+  - **Recuar** para recuar o elemento um nível na ordem.
 
-   - **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.
+  - **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.
 
-   Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** superior será exibido na frente quando houver sobreposição de elementos.
+  Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** superior será exibido na frente quando houver sobreposição de elementos.
 
 ## <a name="change-the-alignment-of-an-element"></a>Alterar o alinhamento de um elemento
 
