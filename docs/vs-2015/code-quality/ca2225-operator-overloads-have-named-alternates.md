@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: aa90a1e97b563ef549cb3f628fcf9130a364c50a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201612"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Sobrecargas de operador têm alternativas nomeadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "58927497"
 |&|e|&|BitwiseAnd|
 |&=|And=|&=|BitwiseAnd|
 |&#124;|Ou|&#124;|BitwiseOr|
-|&#124;=|Or=|&#124;=|BitwiseOr|
+|&#124;=|Ou =|&#124;=|BitwiseOr|
 |--|N/D|--|Decremento|
 |/|/|/|Divisão|
 |/=|/=|/=|Divisão|
@@ -70,8 +70,8 @@ ms.locfileid: "58927497"
 |* (binário)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
 |~|não|~|OnesComplement|
-|>>|>>|>>|RightShift|
-=|N/D|>>=|RightShift|
+|>>|>>|>>|SHIFT direita|
+=|N/D|>>=|SHIFT direita|
 |-(binário)|-(binário)|-(binário)|Subtração|
 |-=|N/D|-=|Subtração|
 |true|IsTrue|N/D|IsTrue (propriedade)|
@@ -83,7 +83,7 @@ ms.locfileid: "58927497"
 
  A regra também verifica se há operadores de conversão explícita e implícita em um tipo (`SomeType`) através da verificação de métodos chamados `ToSomeType` e `FromSomeType`.
 
- No C#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também estará implicitamente sobrecarregado.
+ No c#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também estará implicitamente sobrecarregado.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, implemente o método alternativo para o operador; Nomeie-o usando o nome alternativo recomendado.

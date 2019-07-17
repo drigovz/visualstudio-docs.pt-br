@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c2e975f75d25e64925c2566c1c311d942e9c3766
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925544"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "68180985"
 ---
 # <a name="idiasymbolgetisacceleratorgroupsharedlocal"></a>IDiaSymbol::get_isAcceleratorGroupSharedLocal
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ HRESULT get_isAcceleratorGroupSharedLocal(
   
 #### <a name="parameters"></a>Parâmetros  
  `pFlag`  
- [out] Um ponteiro para um `BOOL` que indica se o símbolo corresponde a uma variável local de grupo compartilhados no código compilado para um acelerador do C++ AMP. Se `TRUE`, o `get_baseDataSlot` e `get_baseDataOffset` métodos podem ser usados para obter as informações de local de armazenamento para a variável.  
+ [out] Um ponteiro para um `BOOL` que indica se o símbolo corresponde a uma variável local de grupo compartilhados no código compilado para uma C++ acelerador AMP. Se `TRUE`, o `get_baseDataSlot` e `get_baseDataOffset` métodos podem ser usados para obter as informações de local de armazenamento para a variável.  
   
 ## <a name="return-value"></a>Valor de retorno  
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.  

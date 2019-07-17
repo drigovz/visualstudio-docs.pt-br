@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 366ec5de66c3070e30d7d4f98662732a7892437b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148244"
 ---
 # <a name="adding-visual-studio-editor-support-for-other-languages"></a>Adicionando suporte para outras linguagens ao editor do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,13 +74,13 @@ Saiba mais sobre como o editor do Visual Studio dá suporte à leitura e à nave
 
 |Nome da Pasta|Descrição|
 |-----------------|-----------------|
-|\\*\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, **\Matlab**.|
+|\\ *\<nome da linguagem>*|A pasta da linguagem. Substitua *\<nome da linguagem>* pelo nome da linguagem. Por exemplo, **\Matlab**.|
 |\Syntaxes|A pasta da gramática. Contém os arquivos .json da gramática para a linguagem, como **Matlab.json**.|
 |\Snippets|A pasta de snippets. Contém snippets da linguagem.|
 
- No Windows, %userprofile% determina o caminho: c:\Usuários\\*\<nome do usuário >*. Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
+ No Windows, %userprofile% determina o caminho: c:\Usuários\\ *\<nome do usuário >* . Se a pasta de extensões não existir em seu sistema, será necessário criá-la. Se a pasta já existir, ela será oculta.
 
- Para obter detalhes sobre como criar Gramáticas TextMate, consulte [TextMate – Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML (TextMate – Introdução a gramáticas de linguagem: como adicionar realce de sintaxe do código-fonte inserido no HTML)](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle (Observações sobre como criar uma gramática de linguagem e um tema personalizado para um pacote Textmate)](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
+ Para obter detalhes sobre como criar gramáticas TextMate, consulte [TextMate – Introdução a gramáticas de linguagem: Como adicionar o realce de sintaxe do código-fonte inserido em HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) e [Observações sobre como criar uma gramática da linguagem e um tema personalizado para um pacote TextMate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Consulte também
- [Visual Studio 2013 navegue até melhorias](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md) [passo a passo: exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)
+ [Visual Studio 2013 navegue até melhorias](https://blogs.msdn.microsoft.com/mvpawardprogram/2013/10/22/visual-studio-2013-navigate-to-improvements/) [passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md) [passo a passo: exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

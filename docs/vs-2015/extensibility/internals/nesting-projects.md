@@ -14,11 +14,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0e3a0fae42dc7bf1497e3d0d4a9d23f9cab50675
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180427"
 ---
 # <a name="nesting-projects"></a>Aninhando projetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Os desenvolvedores de aplicativos corporativos que usam o seu pacote VS convenie
   
  Aninhamento de projeto não é uma parte intrínseca da [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Você precisa escrever o código para habilitar o aninhamento e subprojeto de aninhamento dentro de projetos filho. O projeto pai é um VSPackage especial, ou o tipo de projeto, criado e registrado com seu próprio GUID que inclui o código que é necessário para implementar o aninhamento de projeto.  
   
- Você pode encontrar um exemplo de projetos aninhados no exemplo de C# Example.Nested projeto.  
+ Você pode encontrar um exemplo de projetos aninhados no exemplo de c# Example.Nested projeto.  
   
 ## <a name="nested-projects-example"></a>Exemplo de projetos aninhados  
  ![Aninhado projetos de solução](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  

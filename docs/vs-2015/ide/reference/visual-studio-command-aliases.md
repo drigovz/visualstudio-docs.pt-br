@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654367"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160889"
 ---
 # <a name="visual-studio-command-aliases"></a>Aliases de comando do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -71,7 +71,7 @@ Aliases fornecem um meio de inserir um comando na caixa **Localizar/Comando** ou
 |[Comando Start](../../ide/reference/start-command.md)|g|Debug.Start|
 |[Comando Go To](../../ide/reference/go-to-command.md)|GotoLn|Edit.GoTo|
 |Ir para Chave|GotoBrace|Edit.GotoBrace|
-|F1Help|Help|Help.F1Help|
+|F1Help|Ajuda|Help.F1Help|
 |Modo Imediato|immed|Tools.ImmediateMode|
 |Inserir Arquivo como Texto|InsertFile|Edit.InsertFileAsText|
 |[Comando List Call Stack](../../ide/reference/list-call-stack-command.md)|kb|Debug.ListCallStack|

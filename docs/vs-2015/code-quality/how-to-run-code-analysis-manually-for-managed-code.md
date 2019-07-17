@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053853"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201339"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Como: Executar análise de código manualmente para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

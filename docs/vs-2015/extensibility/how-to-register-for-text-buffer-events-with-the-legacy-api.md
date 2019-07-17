@@ -11,13 +11,13 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 5f36e8dd780788d241e3c286b1bbbe581311b143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204092"
 ---
-# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: Registre-se para eventos de Buffer de texto com a API herdada
+# <a name="how-to-register-for-text-buffer-events-with-the-legacy-api"></a>Como: Registrar os eventos de buffer de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você estiver acessando o buffer de texto usando a API herdada, você deve se registrar para eventos de buffer de texto, conforme mostrado no procedimento a seguir.  

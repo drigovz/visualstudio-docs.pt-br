@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 38fe76bbdf2fdafa69ca12caf4f131a05f783954
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68143126"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Remover locais não utilizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "58925275"
  As variáveis locais não utilizadas e as atribuições desnecessárias aumentam o tamanho de um assembly e diminuem o desempenho.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do C# que está incluído nas [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
+ Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do c# que está incluído nas [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Suprima um aviso nessa regra se a variável tiver sido emitido de compilador. Também é seguro para suprimir um aviso nessa regra, ou para desabilitar a regra, se o desempenho e manutenção de código não são principais preocupações.

@@ -1,5 +1,5 @@
 ---
-title: 'DA0029: versão da CLR sem suporte | Microsoft Docs'
+title: 'DA0029: Versão da CLR sem suporte | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 532427618f476e1e187d8a1c88749810f9d157c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152659"
 ---
-# <a name="da0029-unsupported-clr-version"></a>DA0029: versão do CLR sem suporte
+# <a name="da0029-unsupported-clr-version"></a>DA0029: Versão de CLR não compatível
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0029 |  

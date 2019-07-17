@@ -9,16 +9,16 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 52bc8a6a0097d255891f4b6111a27bff85091bec
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784481"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890325"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migração de extensibilidade do designer XAML
 
-A partir do Visual Studio 2019 versão 16.1 como uma visualização pública, o designer XAML dá suporte a duas arquiteturas diferentes: a arquitetura de designer de isolamento e a arquitetura de superfície de isolamento mais recente. Essa transição de arquitetura é necessário para dar suporte a tempos de execução de destino que não podem ser hospedados em um processo do .NET Framework. Mover para a arquitetura de isolamento de superfície introduz mudanças significativas para o modelo de extensibilidade de terceiros. Este artigo descreve as alterações.
+No Visual Studio de 2019, o designer XAML dá suporte a duas arquiteturas diferentes: a arquitetura de designer de isolamento e a arquitetura de superfície de isolamento mais recente. Essa transição de arquitetura é necessário para dar suporte a tempos de execução de destino que não podem ser hospedados em um processo do .NET Framework. Mover para a arquitetura de isolamento de superfície introduz mudanças significativas para o modelo de extensibilidade de terceiros. Este artigo descreve essas alterações que estão disponíveis no canal de visualização 16.2 de 2019 do Visual Studio.
 
 **Isolamento de Designer** é usado pelo designer do WPF para projetos destinados ao .NET Framework e dá suporte a *. dll* extensões. Código do usuário, bibliotecas de controle e extensões de terceiros são carregadas em um processo externo (*XDesProc.exe*) junto com o código real do designer e painéis do designer.
 
@@ -47,7 +47,7 @@ Embora as bibliotecas de controle de terceiros são compiladas para o tempo de e
 
 Não permite que o modelo de extensibilidade do isolamento de superfície para que as extensões dependem de bibliotecas de controle real e, portanto, as extensões não podem referenciar tipos da biblioteca de controle. Por exemplo, *MyLibrary.designtools.dll* não deve ter uma dependência na *MyLibrary*.
 
-Essas dependências eram mais comuns ao registrar os metadados para tipos por meio de tabelas de atributo. Tipos de código de extensão que faz referência a biblioteca de controle diretamente por meio [typeof](/dotnet/csharp/language-reference/keywords/typeof) ([GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) no Visual Basic) será substituído nas novas APIs por meio de nomes de tipo com base em cadeia de caracteres:
+Essas dependências eram mais comuns ao registrar os metadados para tipos por meio de tabelas de atributo. Tipos de código de extensão que faz referência a biblioteca de controle diretamente por meio [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) será substituído nas novas APIs por meio de nomes de tipo com base em cadeia de caracteres:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -62,7 +62,7 @@ public class AttributeTableProvider : IProvideAttributeTable
   {
     get
     {
-      AttributeTableBuilder builder = new AttributeTableBuilder();
+      var builder = new AttributeTableBuilder();
       builder.AddCustomAttributes("MyLibrary.MyControl", new DescriptionAttribute(Strings.MyControlDescription);
       builder.AddCustomAttributes("MyLibrary.MyControl", new FeatureAttribute(typeof(MyControlDefaultInitializer));
       return builder.CreateTable();
@@ -96,6 +96,14 @@ End Class
 
 Provedores de recursos são implementados em assemblies de extensão e carregados no processo do Visual Studio. `FeatureAttribute` continuará a fazer referência a tipos de provedor de recurso diretamente, usando [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
+Atualmente, há suporte para os seguintes provedores de recurso:
+
+* `DefaultInitializer`
+* `AdornerProvider`
+* `ContextMenuProvider`
+* `ParentAdapter`
+* `PlacementAdapter`
+
 Porque agora são carregados em um processo diferente de bibliotecas de código e controle o tempo de execução real de provedores de recursos, eles não são mais capazes de acessar objetos de tempo de execução diretamente. Em vez disso, todas essas interações devem ser convertidas para usar as APIs correspondentes com base no modelo. A API de modelo foi atualizado e o acesso ao <xref:System.Type> ou <xref:System.Object> é não está mais disponível ou foi substituído por `TypeIdentifier` e `TypeDefinition`.
 
 `TypeIdentifier` representa uma cadeia de caracteres sem um nome de assembly identificando um tipo. Um `TypeIdenfifier` pode ser resolvido para um `TypeDefinition` para obter informações adicionais sobre o tipo de consulta. `TypeDefinition` instâncias não podem ser armazenados em cache no código de extensão.
@@ -105,7 +113,7 @@ TypeDefinition type = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("MyLibrary.MyControl"));
 TypeDefinition buttonType = ModelFactory.ResolveType(
     item.Context, new TypeIdentifier("System.Windows.Controls.Button"));
-if (type != null && buttonType != type.IsSubclassOf(buttonType))
+if (type?.IsSubclassOf(buttonType) == true)
 {
 }
 ```
@@ -203,6 +211,8 @@ Public Class MyControlDefaultInitializer
     End Sub
 End Class
 ```
+
+Mais exemplos de código estão disponíveis na [xaml-designer-exemplos de extensibilidade](https://github.com/microsoft/xaml-designer-extensibility-samples) repositório.
 
 ## <a name="limited-support-for-designdll-extensions"></a>Suporte limitado para. dll extensões
 

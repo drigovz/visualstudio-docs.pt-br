@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68195494"
 ---
 # <a name="xml-schema-designer-workspace"></a>O workspace do designer de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ O designer de esquema XML (XSD) designer é uma ferramenta gráfico que ajuda vo
   
 - Os marca de agua na página no modo de Início ou a marca de agua no modo em branco do modelo de conteúdo ou no modo de gráfico.  
   
-- Hotkeys: CTRL + 1 para o modo de início, CTRL + 2 para o modo de exibição de gráfico e CTRL + 3 para o modo de exibição do modelo de conteúdo.  
+- Teclas de atalho: CTRL + 1 para o modo de início, CTRL + 2 para o modo de exibição de gráfico e CTRL + 3 para o modo de exibição do modelo de conteúdo.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
