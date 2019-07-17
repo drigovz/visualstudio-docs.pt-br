@@ -12,11 +12,11 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0eae2fd7490269d713beb9950163071dd3ba32f5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160562"
 ---
 # <a name="strings-element"></a>Elemento Strings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** ele
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|linguagem|Opcional. Language=".".|  
+|linguagem|Opcional. Language = ".".|  
   
 ### <a name="child-elements"></a>Elementos filho  
   
@@ -50,7 +50,7 @@ O elemento de cadeias de caracteres deve conter pelo menos um **ButtonText** ele
 |ButtonText|Este campo e os cinco seguintes campos de texto em uma definição de comando permitem que você especifique o texto que aparece em vários menus. Por padrão, o `ButtonText` campo aparece em controladores de menu. O `ButtonText` campo também se tornará o padrão se campos de texto estiverem em branco. O `ButtonText` campo não pode ficar em branco, mesmo se os outros campos de texto forem especificados.|  
 |ToolTipText|O `ToolTipText` campo especifica o texto que aparece na dica de ferramenta para um item de menu.<br /><br /> Se o `ToolTipText` campo fica em branco, o `ButtonText` campo é usado.|  
 |MenuText|O `MenuText` campo especifica o texto que é exibido para um comando se ele estiver no menu principal, uma barra de ferramentas em um menu de atalho ou em um submenu. Se o `MenuText` campo estiver em branco, o ambiente de desenvolvimento integrado (IDE) usa o `ButtonText` campo. O `MenuText` campo também pode ser usado para a localização.<br /><br /> Para menus de atalho, o `MenuText` campo é o nome que é exibido na barra de Menus de atalho, que permite a personalização de menus de atalho no IDE. Portanto, ser específico no qual o nome seu menu de atalho; Por exemplo, use "Menu de atalho do Widget de pacote" em vez de "Atalho".<br /><br /> Se o `MenuText` campo não for especificado, o `ButtonText` campo é usado.|  
-|CommandName|O `CommandName` campo especifica o texto que aparece na categoria de teclado em de **comandos** guia o **personalizar** caixa de diálogo (disponível ao clicar em **personalizar**sobre o **ferramentas** menu).|  
+|commandName|O `CommandName` campo especifica o texto que aparece na categoria de teclado em de **comandos** guia o **personalizar** caixa de diálogo (disponível ao clicar em **personalizar**sobre o **ferramentas** menu).|  
 |CanonicalName|O inglês `CanonicalName` campo especifica o nome do comando no texto em inglês que pode ser inserido em de **comando** janela para executar o item de menu. O IDE elimine qualquer caractere que não é letras, dígitos, sublinhados ou pontos inseridos. Esse texto é concatenado, em seguida, o `ButtonText` campo para definir o comando. Por exemplo, **novo projeto** sobre o **arquivo** menu torna-se o comando, File.NewProject.<br /><br /> Se o inglês `CanonicalName` campo não for especificado, o IDE usa o `ButtonText` campo e faixas todas, exceto letras, dígitos, sublinhados e pontos inseridos. Por exemplo, o texto do botão "& Definir comandos..." se torna DefineCommands, onde o e comercial, o espaço e as reticências são removidos.<br /><br /> Se o `TextChanges` sinalizador for especificado e o texto do comando é alterado, o comando correspondente reconhecido pelo **comando** janela não é alterado; ele permanece a forma canônica do original `ButtonText` ou inglês `CanonicalName` campos.|  
 |LocCanonicalName|O `LocCanonicalName` campo comporta-se identicamente para o inglês `CanonicalName` campo, mas permite que o texto de comando localizada seja especificado. Ambos os campos canônicos podem ser especificados. Como o IDE apenas analisa o texto inserido na **comando** janela e associa-o com um comando, o inglês e o texto de inglês pode ser associado com o mesmo comando.|  
   

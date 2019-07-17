@@ -15,11 +15,11 @@ caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 42ebc9414e3e5bb10f2468ed7f5f4fb4900e4ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177231"
 ---
 # <a name="using-fonts-and-colors"></a>Usando fontes e cores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece suporte ao uso de fonte
   
  Essa abordagem exige um VSPackage implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface e interfaces relacionadas.  
   
- [Como: Acessar as fontes internas e o esquema de cores](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
+ [Como: acessar o esquema interno de cores e fontes](../extensibility/how-to-access-the-built-in-fonts-and-color-scheme.md)  
  Aborda como definir e registrar uma categoria, usando cores e fontes internas e iniciar o uso de cores e fontes fornecidas pelo sistema.  
   
 ## <a name="reference"></a>Referência  

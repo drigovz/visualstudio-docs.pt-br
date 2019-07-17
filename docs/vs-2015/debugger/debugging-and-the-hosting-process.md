@@ -18,11 +18,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 10f3968367b188203671fa6bfff48bc482efe4f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157891"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Depuração e o processo de hospedagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

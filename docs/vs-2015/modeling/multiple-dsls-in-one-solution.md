@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d70794dddc02605c76c1af330a49af4be917c0e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159009"
 ---
 # <a name="multiple-dsls-in-one-solution"></a>Várias DSLs em uma mesma solução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60050134"
   
 1. Crie duas ou mais soluções DSL e um projeto VSIX e adicione todos os projetos a uma única solução.  
   
-   - Para criar um novo projeto VSIX: No **novo projeto** caixa de diálogo, selecione **Visual c#**, **extensibilidade**, **projeto VSIX**.  
+   - Para criar um novo projeto VSIX: No **novo projeto** caixa de diálogo, selecione **Visual c#** , **extensibilidade**, **projeto VSIX**.  
   
    - Crie duas ou mais soluções DSL no diretório da solução VSIX.  
   
@@ -47,7 +47,7 @@ ms.locfileid: "60050134"
   
 2. Combine os manifestos VSIX das DSLs:  
   
-   1. Abra _YourVsixProject_**\source.extension.manifest**.  
+   1. Abra _YourVsixProject_ **\source.extension.manifest**.  
   
    2. Para cada DSL, escolha **adicionar conteúdo** e adicione:  
   
@@ -59,7 +59,7 @@ ms.locfileid: "60050134"
   
 3. Compile a solução.  
   
-   O VSIX resultante instalará as duas DSLs. Você pode testá-las usando F5 ou implantar _YourVsixProject_**\bin\Debug\\\*. VSIX**.  
+   O VSIX resultante instalará as duas DSLs. Você pode testá-las usando F5 ou implantar _YourVsixProject_ **\bin\Debug\\\*. VSIX**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Integrando modelos por meio do Visual Studio Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)   

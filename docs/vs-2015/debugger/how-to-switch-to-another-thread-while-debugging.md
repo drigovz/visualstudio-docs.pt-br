@@ -17,13 +17,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052435"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176514"
 ---
-# <a name="how-to-switch-to-another-thread-while-debugging"></a>Como: Mudar para outro Thread durante a depuração
+# <a name="how-to-switch-to-another-thread-while-debugging"></a>Como: Mudar para outra Thread durante a depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você depura um aplicativo de vários threads, pode usar qualquer dos vários métodos para alternar o contexto do thread com o qual você vem trabalhando para outro thread.  

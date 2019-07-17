@@ -13,11 +13,11 @@ caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152705"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Introdução à extensibilidade do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornece as informações que
   
 - A linguagem de programação do C++  
   
-- ATL COM  
+- COM ATL  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

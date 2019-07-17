@@ -13,11 +13,11 @@ caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cabc32d33b1d68b96ae074a8bceac0f759b67447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68152942"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ IDebugThread2 : IUnknown
  Quando um ponto de interrupção ou exceção ocorre, um evento é enviado ao chamar [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Um dos argumentos para esse método é um `IDebugThread2` interface que representa o thread atual. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) é usado para obter o [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interface para o quadro de pilha atual.  
   
 ## <a name="requirements"></a>Requisitos  
- Header: msdbg.h  
+ Cabeçalho: msdbg.h  
   
  Namespace: Microsoft.VisualStudio.Debugger.Interop  
   
@@ -71,7 +71,7 @@ IDebugThread2 : IUnknown
   
 ## <a name="see-also"></a>Consulte também  
  [Principais Interfaces](../../../extensibility/debugger/reference/core-interfaces.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)   
  [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)   
  [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)   

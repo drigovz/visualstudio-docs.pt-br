@@ -24,13 +24,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 54466cc3561c194199bbad2b35cd00433da2b0f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68149424"
 ---
-# <a name="walkthrough-debugging-at-design-time"></a>Passo a passo: Depuração em tempo de Design
+# <a name="walkthrough-debugging-at-design-time"></a>Passo a passo: Depuração em tempo de design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o Visual Studio **imediato** janela para executar uma função ou sub-rotina enquanto seu aplicativo não está em execução. Se a função ou a sub-rotina contiverem um ponto de interrupção, o Visual Studio interromperá a execução no ponto apropriado. Então, você poderá usar o depurador do Windows para examinar o estado do programa. Esse recurso é chamado de depuração em tempo de design.  

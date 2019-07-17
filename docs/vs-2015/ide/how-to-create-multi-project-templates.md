@@ -14,13 +14,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176686"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos multiprojetos
+# <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando um projeto baseado em um modelo multiprojeto é criado com base na caixa de diálogo **Novo Projeto**, todo projeto no modelo é adicionado à solução.  
@@ -85,7 +85,7 @@ Os modelos de vários projetos atuam como contêineres para dois ou mais projeto
   
 3. Crie um arquivo .vstemplate raiz para conter os metadados do modelo multiprojeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
   
-4. Selecione os arquivos e pastas a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Esses arquivos e pastas estão compactados em um arquivo .zip.  
+4. Selecione os arquivos e pastas a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)** . Esses arquivos e pastas estão compactados em um arquivo .zip.  
   
 5. Coloque o arquivo de modelo .zip no diretório de modelo de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por padrão, esse diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ProjectTemplates\\.  
   
