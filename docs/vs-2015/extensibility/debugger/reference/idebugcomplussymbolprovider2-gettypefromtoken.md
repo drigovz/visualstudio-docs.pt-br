@@ -12,16 +12,16 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1fa5e258390040fc70c0538c929a166984c3a7b0
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
+ms.lasthandoff: 07/17/2019
 ms.locfileid: "62540552"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-Recupera um tipo de dado seu token.  
+Recupera um tipo dado seu token.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -45,22 +45,22 @@ int GetTypeFromToken(
   
 #### <a name="parameters"></a>Parâmetros  
  `appDomain`  
- [in] Identificador do domínio do aplicativo.  
+ no Identificador do domínio do aplicativo.  
   
  `guidModule`  
- [in] Identificador exclusivo do módulo.  
+ no Identificador exclusivo do módulo.  
   
  `tdToken`  
- [in] Token do tipo a ser recuperado.  
+ no Token do tipo a ser recuperado.  
   
  `ppField`  
- [out] Retorna o tipo que é representado pela [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
+ fora Retorna o tipo representado pelo [IDebugField](../../../extensibility/debugger/reference/idebugfield.md).  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+ Se bem-sucedido, retorna `S_OK`; caso contrário, retorna um código de erro.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir mostra como implementar esse método para um **CDebugSymbolProvider** objeto que expõe a [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) interface.  
+ O exemplo a seguir mostra como implementar esse método para um objeto **CDebugSymbolProvider** que expõe a interface [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md) .  
   
 ```cpp#  
 HRESULT CDebugSymbolProvider::GetTypeFromToken(  
