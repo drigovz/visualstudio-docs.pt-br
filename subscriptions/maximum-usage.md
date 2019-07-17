@@ -6,13 +6,12 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-searchscope: VS Subscription
-ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0442671a6cdb24e394e6c2a47c935ae894cca354
+ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965385"
+ms.lasthandoff: 07/16/2019
+ms.locfileid: "68250747"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Como usar o recurso de Uso Máximo para controlar o número de assinaturas atribuídas
 

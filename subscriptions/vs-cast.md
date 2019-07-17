@@ -6,13 +6,12 @@ manager: lank
 ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-searchscope: VS Subscription
-ms.openlocfilehash: 5a6a7024653027f3b813de6a417dc01e07d30084
-ms.sourcegitcommit: 91c7f1b525e0c22d938bc4080ba4ceac2483474f
+ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/12/2019
-ms.locfileid: "67032891"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823676"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
 
@@ -98,8 +97,8 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Precisa de ajuda para usar o CAST Highlight?  Confira estes recursos:
-    - [Enviar uma solicitação de suporte](https://casthighlight.com/support/)
-    - [Guia de introdução (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
+  - [Enviar uma solicitação de suporte](https://casthighlight.com/support/)
+  - [Guia de introdução (PDF)](https://casthighlight.com/Getting-Started-Guide.pdf)
 
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

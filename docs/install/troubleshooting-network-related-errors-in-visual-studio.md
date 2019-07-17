@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 719922f8cfcae78f5c082e838528a77bbd66d073
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: 27364bd028d9fb493da354d3bff7f11efe5f459d
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976226"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825702"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Solução de erros relacionados à rede ao instalar ou usar o Visual Studio
 
@@ -38,15 +38,15 @@ Esse erro geralmente ocorre quando os usuários estão conectados à Internet po
 
 - Se reiniciar o Visual Studio não resolver o problema, talvez o servidor proxy não solicite credencias para endereços http:&#47;&#47;go.microsoft.com, mas solicite para endereços &#42;.visualStudio.microsoft.com. Para esses servidores, considere adicionar as seguintes URLs a uma lista de permissões para desbloquear todos os cenários de conexão no Visual Studio:
 
-    - &#42;.windows.net
+  - &#42;.windows.net
 
-    - &#42;.microsoftonline.com
+  - &#42;.microsoftonline.com
 
-    - &#42;.visualstudio.microsoft.com
+  - &#42;.visualstudio.microsoft.com
 
-    - &#42;.microsoft.com
+  - &#42;.microsoft.com
 
-    - &#42;.live.com
+  - &#42;.live.com
 
 - Caso contrário, você pode remover o endereço de http:&#47;&#47;go.microsoft.com da lista de permissões para que a caixa de diálogo de autenticação de proxy apareça tanto para o endereço http:&#47;&#47;go.microsoft.com quanto para os pontos de extremidade do servidor quando o Visual Studio for reiniciado.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c45f4b374e553115462a010c4a61cc2d4a0a3e9c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 942ae41322d6a08bc8de0c450577f2eccb45772a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978388"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823365"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -64,24 +64,24 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 - Arquivos de log do depurador da Web, caso existam:
 
-   - *%TEMP%\vscode-chrome-debug.txt*
+  - *%TEMP%\vscode-chrome-debug.txt*
 
-   - *%TEMP%\vscode-node-debug2.txt*
+  - *%TEMP%\vscode-node-debug2.txt*
 
-   - *%TEMP%\vscode-edge-debug.txt*
+  - *%TEMP%\vscode-edge-debug.txt*
 
 - Uma captura de tela, caso você escolha incluí-la
 
 - Dados de gravação, caso você escolha incluir gravações, como:
 
-   - Etapas para reproduzir o problema
+  - Etapas para reproduzir o problema
 
-   - Arquivo de rastreamento de ETL
+  - Arquivo de rastreamento de ETL
 
-   - Arquivo de despejo
+  - Arquivo de despejo
 
-    > [!NOTE]
-    > Antes do envio do relatório, você pode excluir os dados de gravação que não deseja enviar.
+  > [!NOTE]
+  > Antes do envio do relatório, você pode excluir os dados de gravação que não deseja enviar.
 
 ## <a name="see-also"></a>Consulte também
 

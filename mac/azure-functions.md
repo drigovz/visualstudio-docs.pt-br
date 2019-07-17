@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: d8312733c92ab2802c9594459d5e855b5600a352
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: ca5c3133e3f03d4e68449156b35d6643c637a11b
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692821"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825550"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -138,14 +138,14 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
 ## <a name="available-function-templates"></a>Modelos de função disponíveis
 
 - **Gatilho do GitHub** – Responda a eventos que ocorrerem em seus repositórios do GitHub. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
-    - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
+  - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
+  - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
 
 - **HTTP** – Dispare a execução de seu código usando uma solicitação HTTP. Há modelos explícitos para os gatilhos HTTP a seguir:
-    - Gatilho Http
-    - Http GET CRUD
-    - Http POST CRUD
-    - Gatilho Http com parâmetros
+  - Gatilho Http
+  - Http GET CRUD
+  - Http POST CRUD
+  - Gatilho Http com parâmetros
 
 - **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
 

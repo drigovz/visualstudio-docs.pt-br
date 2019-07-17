@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 26290a5e70a9f4b0f6eeb8df5727ef4f04662136
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62998207"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890633"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -28,7 +28,7 @@ Para que um pacote de extensão se baseie no Visual Studio para Mac, ele deve te
 A vantagem desse design modular é que o Visual Studio para Mac é extensível – há muitos pontos de extensão que podem servir de base com pacotes de extensão personalizados. Exemplos de pacotes de extensão atuais incluem suporte para C# e F#, ferramentas de depuração e modelos de projeto.
 
 > [!NOTE]
-> **Observação**: Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
+> Se você tiver um projeto do Criador de Suplementos que foi criado antes do Criador de Suplementos 1.2, será necessário migrar seu projeto, conforme descrito nas etapas indicadas [aqui](https://mhut.ch/addinmaker/1.2).
 
 <!---The [Walkthrough](~/extending-visual-studio-mac-walkthrough.md) topic explains how to build an extension package that uses a *Command* to insert the date and time into an open text document.--->
 

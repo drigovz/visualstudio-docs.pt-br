@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como configurar sua conta de Pago Conforme o Uso do Azure.
-searchscope: VS Subscription
-ms.openlocfilehash: 275088d1683c740e51caccb2ad4500dcc2885752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa5cd98b1526f654a4bb2803e5b22dde72cb8fda
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62948210"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784670"
 ---
 # <a name="setting-up-an-azure-devtest-pay-as-you-go-subscription"></a>Configurando uma assinatura Paga Conforme o Uso de Desenvolvimento/Teste do Azure
 Colabore com sua equipe na nuvem.  Crie várias assinaturas Pagas Conforme o Uso de Desenvolvimento e de Teste, permitindo a colaboração com outros assinantes e também o isolamento entre as equipes e os ambientes.  Você recebe taxas por hora com desconto exclusivas para desenvolvimento/teste e direitos de uso de nuvem para seu software de assinatura no Azure.

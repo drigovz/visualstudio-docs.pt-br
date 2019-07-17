@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bdf6f87fbcc412710be6653b83f8b623a6b4d865
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974729"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67826278"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Instalar os certificados necessários para instalação offline do Visual Studio
 
@@ -135,20 +135,20 @@ Se estiver usando o script de implantação do Visual Studio em um ambiente offl
 Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um certificado raiz. A maioria dos sistemas atuais com o Windows Update têm esses certificados já instalados.
 
 * **ManifestSignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
-        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
-        * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+  * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
+    * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
+    * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
-        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
-        * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+  * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
+    * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
+    * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **Vs_installer_opc.SignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
-        * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-        * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+  * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
+    * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
+    * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
 **Atualização**: Para o Visual Studio 2017 versão 15.8 Preview 2 ou posterior, o Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
@@ -157,20 +157,20 @@ Os três arquivos .P12 nesta pasta contêm um certificado intermediário e um ce
 ::: moniker range="vs-2019"
 
 * **ManifestSignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
-        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
-        * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+  * Certificado intermediário: **PCA de Assinatura de Código da Microsoft 2011**
+    * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2011**
+    * Necessário nos sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **ManifestCounterSignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
-        * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
-        * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
+  * Certificado intermediário: **PCA de Carimbo de Data/Hora da Microsoft 2010**
+    * Não obrigatório. Melhora o desempenho em alguns cenários, se estiver presente.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft 2010**
+    * Necessário para os sistemas Windows 7 Service Pack 1 que não têm as atualizações mais recentes do Windows instaladas.
 * **Vs_installer_opc.SignCertificates.p12** contém:
-    * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
-        * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
-    * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
-        * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
+  * Certificado intermediário: **PCA de Assinatura de Código da Microsoft**
+    * Necessário para todos os sistemas. Observe que os sistemas com todas as atualizações aplicadas pelo Windows Update podem não ter esse certificado.
+  * Certificado raiz: **Autoridade de Certificação Raiz da Microsoft**
+    * Necessário. Esse certificado é fornecido com os sistemas que executam o Windows 7 ou posterior.
 
 O Instalador do Visual Studio exige apenas a instalação dos certificados raiz no sistema.
 
@@ -188,7 +188,7 @@ Uma maneira de verificar no sistema de instalação é seguir estas etapas:
   a. Clique em **Arquivo** e selecione **Adicionar/Remover Snap-in**.<br/>
   b. Clique duas vezes em **Certificados**, selecione **Conta do computador** e clique em **Avançar**.<br/>
   c. Selecione **Computador local**, clique em **Concluir** e depois em **OK**.<br/>
-  d. Expanda os **Certificados (computador local)**.<br/>
+  d. Expanda os **Certificados (computador local)** .<br/>
   e. Expanda **Autoridades de Certificação Confiáveis** e selecione **Certificados**.<br/>
     * Verifique os certificados raiz necessários para esta lista.<br/>
 

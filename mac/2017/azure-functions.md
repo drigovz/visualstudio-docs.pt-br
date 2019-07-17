@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6f12a4071a15372da7c71836ae303e40d6858f3f
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62933606"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824419"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -77,7 +77,7 @@ Com o suporte para Azure Functions no Visual Studio para Mac, você pode testar 
 
 Modelos de função permitem que você crie rapidamente novas funções usando os gatilhos e modelos mais comuns. Para criar outro tipo de função, faça o seguinte:
 
-1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...**:
+1. Para adicionar uma nova função, clique com o botão direito do mouse no nome do projeto e selecione **Adicionar > Adicionar Função...** :
 
     ![Ação de contexto para adicionar nova função](media/azure-functions-addnew.png)
 
@@ -96,7 +96,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
 3. Na caixa de diálogo **Publicar no Serviço de Aplicativo do Azure**, você pode selecionar um serviço de aplicativo existente ou crie um novo clicando em **Novo**.
 4. Na caixa de diálogo **Criar novo Serviço de Aplicativo**, insira as configurações:  ![Opção de menu Publicar no Azure](media/azure-functions-image7.png)
 
-    |Configuração  |Descrição  |
+    |Configuração  |DESCRIÇÃO  |
     |---------|---------|
     |**Nome do Serviço de Aplicativo**|Um nome exclusivo que identifica seu novo aplicativo de funções.|
     |**Assinatura**|A assinatura do Azure a usar.|
@@ -140,14 +140,14 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
 ## <a name="available-function-templates"></a>Modelos de função disponíveis
 
 - **Gatilho do GitHub** – Responda a eventos que ocorrerem em seus repositórios do GitHub. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o GitHub](/azure/azure-functions/functions-create-github-webhook-triggered-function)
-    - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
-    - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
+  - Autor de comentários do GitHub – Esta função será executada quando receber um webhook do GitHub para uma solicitação de pull ou emissão e adicionará um comentário.
+  - WebHook do GitHub – Esta função será executada sempre que receber um webhook do GitHub.
 
 - **HTTP** – Dispare a execução de seu código usando uma solicitação HTTP. Há modelos explícitos para os gatilhos HTTP a seguir:
-    - Gatilho Http
-    - Http GET CRUD
-    - Http POST CRUD
-    - Gatilho Http com parâmetros
+  - Gatilho Http
+  - Http GET CRUD
+  - Http POST CRUD
+  - Gatilho Http com parâmetros
 
 - **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
 

@@ -7,11 +7,11 @@ author: gewarren
 manager: jillfra
 ms.topic: include
 ms.openlocfilehash: 2d0d46a39bed9600ccdc0a7f343accf74378b81e
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820895"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "68148389"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 

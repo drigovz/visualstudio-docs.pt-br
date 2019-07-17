@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6249a5ab4a8beef8ff8af766d4bac5a0e110ad66
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65676585"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825520"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>Inspecionar estados anteriores do aplicativo usando o retrocesso do IntelliTrace no Visual Studio (Visual Studio Enterprise)
 
@@ -36,7 +36,7 @@ Neste tutorial, você irá:
 
 1. Abra as configurações **Ferramentas** > **Opções** > **IntelliTrace** e selecione a opção **Eventos e instantâneos do IntelliTrace**.
 
-    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)**.
+    Começando no Visual Studio 2017 Enterprise versão 15.9 Versão prévia 2, essa opção passou a ser **Instantâneos do IntelliTrace (gerenciados e nativos)** .
 
     ![Habilitar o modo de Eventos e Instantâneos do IntelliTrace](../debugger/media/intellitrace-enable-snapshots.png "Habilitar o modo de Eventos e Instantâneos do IntelliTrace")
 
@@ -119,8 +119,8 @@ O impacto no desempenho geral das etapas depende de seu aplicativo. A sobrecarga
 
 * Quando um instantâneo do processo do aplicativo for criado em um aplicativo que usa um arquivo persistente mapeado na memória, o processo com o instantâneo manterá um bloqueio exclusivo no arquivo mapeado em memória (mesmo depois que o processo pai liberar o bloqueio). Outros processos ainda serão capazes de ler, mas não de gravar no arquivo mapeado em memória.
 
-    Solução alternativa:
-    * Elimine todos os instantâneos encerrando a sessão de depuração.
+  Solução alternativa:
+  * Elimine todos os instantâneos encerrando a sessão de depuração.
 
 * Ao depurar um aplicativo cujo processo tenha um grande número de regiões de memória exclusivas, como um aplicativo que carrega um grande número de DLLs, o desempenho das etapas com instantâneos habilitados poderá ser afetado. Esse problema será abordado em uma versão futura do Windows. Se você estiver enfrentando esse problema, contate-nos em stepback@microsoft.com.
 

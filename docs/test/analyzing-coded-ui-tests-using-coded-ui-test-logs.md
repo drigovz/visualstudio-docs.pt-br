@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a485f58e477d56625bc5ac88a014fc730057b97c
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 76aac39d50dc724916bca3d863c71bacf53407d9
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432313"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67824492"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
@@ -42,15 +42,15 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 - Se houver um arquivo *App.config* presente em seu projeto de teste:
 
-    - Abra o arquivo *App.config* no projeto e adicione o seguinte código sob o nó de configuração:
+  - Abra o arquivo *App.config* no projeto e adicione o seguinte código sob o nó de configuração:
 
-      ```xml
-      <system.diagnostics>
-        <switches>
-          <add name="EqtTraceLevel" value="4" />
-        </switches>
-      </system.diagnostics>`
-      ```
+    ```xml
+    <system.diagnostics>
+      <switches>
+        <add name="EqtTraceLevel" value="4" />
+      </switches>
+    </system.diagnostics>`
+    ```
 
 - Habilitar registro em log do próprio código de teste:
 

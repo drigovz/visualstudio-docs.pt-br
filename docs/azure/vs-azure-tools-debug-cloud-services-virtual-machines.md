@@ -10,12 +10,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c29158be17320e8d7f842386a00c44ac86bf5513
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7c3d67bddced5e7d335f019273f8c008da6c8e59
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62550622"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890647"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>Depurando um serviço de nuvem ou máquina virtual do Azure no Visual Studio
 
@@ -39,7 +39,8 @@ O emulador simula o serviço de computação do Azure e o executa no ambiente lo
 
 3. Percorra o aplicativo selecionando os comandos no menu **Depurar** e definindo pontos de interrupção no código. À medida que você percorre o aplicativo no depurador, os painéis são atualizados com o status atual do aplicativo. Quando você interrompe a depuração, a implantação do aplicativo é excluída. Se seu aplicativo incluir uma função Web e você tiver definido a propriedade de ação de Inicialização para iniciar o navegador da Web, o Visual Studio iniciará o aplicativo Web no navegador. Se você alterar o número de instâncias de uma função na configuração do serviço, deverá parar o serviço de nuvem e reiniciar a depuração de modo que você pode depurar essas novas instâncias da função.
 
-    **Observação:** Quando você interrompe a execução ou a depuração do serviço, o emulador de computação local e o emulador de armazenamento não são interrompidos. Também é preciso pará-los explicitamente na área de notificação.
+    > [!NOTE]
+    > Quando você interrompe a execução ou a depuração do serviço, o emulador de computação local e o emulador de armazenamento não são interrompidos. Também é preciso pará-los explicitamente na área de notificação.
 
 ## <a name="debug-a-cloud-service-in-azure"></a>Depurar um perfil de serviço de nuvem no Azure
 
@@ -145,7 +146,8 @@ Os projetos ASP.NET do Visual Studio oferecem uma opção para criar uma máquin
 
     ![Caixa de diálogo Criar projeto da Web do ASP.NET](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746723.png)
 
-    **Observação:** será solicitado que você entre em sua conta do Azure, caso ainda não tenha entrado.
+    > [!NOTE]
+    > será solicitado que você entre em sua conta do Azure, caso ainda não tenha entrado.
 
 3. Selecione as diversas configurações para a máquina virtual e escolha **OK**. Consulte [Máquinas Virtuais](http://go.microsoft.com/fwlink/?LinkId=623033) para obter mais informações.
 

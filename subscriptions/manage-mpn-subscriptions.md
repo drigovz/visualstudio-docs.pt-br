@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 12/11/2017
 ms.topic: conceptual
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-searchscope: VS Subscription
-ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63412396"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67823204"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciando assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 
@@ -61,7 +60,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 - Detalhes sobre [assinaturas do Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) do Microsoft Partner Network
 
 - [Guia do Administrador do Programa para Benefícios de Serviços Online e de Software](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) do Microsoft Partner Network
-    - PG 6 - atribuir funções de contato e assinaturas do Visual Studio ao Action Pack
+  - PG 6 - atribuir funções de contato e assinaturas do Visual Studio ao Action Pack
 
 > [!NOTE]
 > A Função de Contato Técnico é necessária para assinaturas do Visual Studio

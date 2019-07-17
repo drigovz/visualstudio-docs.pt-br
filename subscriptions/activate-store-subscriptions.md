@@ -6,13 +6,12 @@ manager: evelynp
 ms.date: 01/25/2018
 ms.topic: conceptual
 description: Saiba como ativar assinaturas do Visual Studio compradas na Microsoft Store.
-searchscope: VS Subscription
-ms.openlocfilehash: c6916e56e906df4e3d231f1942389e72ade4c9f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f06804d33b55c83c5d2a3e8a3c1fb273c55093f
+ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945883"
+ms.lasthandoff: 07/10/2019
+ms.locfileid: "67784861"
 ---
 # <a name="how-do-i-activate-a-subscription-acquired-from-the-microsoft-store"></a>Como ativar uma assinatura adquirida na Microsoft Store?
 Se você tiver adquirido uma assinatura do Visual Studio por meio da Microsoft Store, as etapas de ativação poderão ser iniciadas na "Página de Confirmação" ou no "Email de Confirmação" de pagamento recebido após a compra.

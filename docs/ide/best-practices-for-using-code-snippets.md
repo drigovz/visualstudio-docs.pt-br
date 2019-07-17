@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f106606ae00c8f22aa5948128afb8f7f27659a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42a6eec4b6478f9a789c81311fdfdec4e664cb8a
+ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975603"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67825953"
 ---
 # <a name="best-practices-for-using-code-snippets"></a>Práticas recomendadas para usar snippets de código
 
@@ -31,7 +31,7 @@ Quando você adaptar locais de arquivo ao seu aplicativo, deverá considerar o s
 
 - Encontrando um local acessível. Os usuários poderão não ter acesso à pasta *Arquivos de Programas do computador*; portanto, armazenar arquivos com os arquivos do aplicativo pode não funcionar.
 
-- Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\*). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
+- Encontrando um local seguro. Não é seguro armazenar arquivos na pasta raiz (*C:\\* ). Para dados de aplicativo, recomendamos a pasta *Dados de Aplicativos*. Para dados individuais do usuário, o aplicativo pode criar um arquivo para cada usuário na pasta *Documentos*.
 
 - Usando um nome de arquivo válido. Você pode usar os controles <xref:System.Windows.Forms.OpenFileDialog> e <xref:System.Windows.Forms.SaveFileDialog> para reduzir a probabilidade de nomes de arquivo inválidos. Lembre-se de que entre o momento em que o usuário seleciona um arquivo e o momento em que o código manipula o arquivo, o arquivo poderá ser excluído. Além disso, o usuário poderá não ter permissões para gravar no arquivo.
 
@@ -61,11 +61,11 @@ Os snippets de código do IntelliSense instalados pelo Visual Studio não são e
 
 - Abra todos os arquivos de snippet baixados no Bloco de notas ou no editor de XML do Visual Studio e examine-os cuidadosamente antes de instalá-los. Procure os seguintes problemas:
 
-    - O snippet de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
+  - O snippet de código poderá danificar o sistema se for executado. Leia atentamente o código-fonte antes de executá-lo.
 
-    - O bloco URL de Ajuda do arquivo de snippet pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
+  - O bloco URL de Ajuda do arquivo de snippet pode conter URLs que executam um arquivo de script mal-intencionado ou exibir um site ofensivo.
 
-    - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
+  - O snippet pode conter referências que são adicionadas silenciosamente ao projeto e podem ser carregadas em qualquer lugar do sistema. Essas referências podem ter sido baixadas no computador em que você baixou o snippet. Depois, o snippet de código pode fazer uma chamada a um método na referência que executa um código mal-intencionado. Para se proteger contra um ataque desse tipo, examine os blocos Importações e Referências do arquivo de snippet.
 
 ## <a name="see-also"></a>Consulte também
 
