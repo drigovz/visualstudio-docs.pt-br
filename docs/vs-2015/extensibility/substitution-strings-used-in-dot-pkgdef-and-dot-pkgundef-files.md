@@ -11,13 +11,13 @@ caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 47434d9d1dfcedeeaea330b1d65645d7a632c6e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160542"
 ---
-# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Usado em cadeias de substituição. Pkgdef e. Arquivos Pkgundef
+# <a name="substitution-strings-used-in-pkgdef-and-pkgundef-files"></a>Cadeias substituição usadas em arquivos .Pkgdef e .Pkgundef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar as cadeias de caracteres de substituição listadas abaixo na. pkgdef e isolado de arquivos. pkgundef definir para o Visual Studio o aplicativo de shell.  
@@ -37,7 +37,7 @@ Você pode usar as cadeias de caracteres de substituição listadas abaixo na. p
 |$RootFolder$|O caminho completo do diretório raiz do aplicativo.|  
 |$RootKey$|A chave do registro raiz para o aplicativo. Por padrão, a raiz é no HKEY_CURRENT_USER\Software\\*CompanyName*\\*ProjectName*\\*VersionNumber* (quando o aplicativo está em execução, _Config é acrescentado a esta chave). Ele é definido pelo valor RegistryRoot na *SolutionName*arquivo. pkgdef.<br /><br /> A cadeia de caracteres de $ $RootKey pode ser usada para recuperar um valor do registro na subchave do aplicativo. Por exemplo, a cadeia de caracteres "$= $RootKey$ \AppIcon$" retornará o valor da entrada AppIcon sob a subchave de raiz do aplicativo.<br /><br /> O analisador processa o arquivo. pkgdef sequencialmente e pode acessar uma entrada de registro na subchave do aplicativo somente se a entrada tiver sido definida anteriormente|  
 |$ShellFolder$|O caminho completo do local em que o Visual Studio foi instalado.|  
-|$System$|A pasta Windows\system32.|  
-|$WINDIR$|A pasta Windows.|  
+|$ $System|A pasta Windows\system32.|  
+|$ $WINDIR|A pasta Windows.|  
   
  Se o analisador não reconhece a cadeia de caracteres de substituição ou não é possível determinar o valor de uma entrada de registro ou uma variável de ambiente, em seguida, ele não executa substituição essa parte da cadeia de caracteres.

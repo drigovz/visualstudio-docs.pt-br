@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156726"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por uma sessão de depuração no Visual Studio (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
   Passe o mouse sobre a variável `a`. Observe o nome, valor, tipo de dados. Passe o mouse sobre a variável `methodTrack`. Novamente, observe o nome, valor, tipo de dados.
 
-  **Examine os valores de variáveis na janela locais.** Sobre o **Debug** , aponte para **Windows**e, em seguida, escolha **locais**. (Teclado: Alt+4).
+  **Examine os valores de variáveis na janela locais.** Sobre o **Debug** , aponte para **Windows**e, em seguida, escolha **locais**. (Teclado: 4 ALT+).
 
   ![Janela locais](../debugger/media/dbg-basics-localswindow.png "DBG_Basics_LocalsWindow")
 
@@ -142,7 +142,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
  **Sair de uma função.** Escolha a tecla F11 para entrar no método Example2_B. Observe que não é muito diferente de Example2_A Example2_B. Para sair do método, escolha **depuração circular** sobre o **depurar** menus (teclado: SHIFT + F11). Observe que o `methodTrack` variável indica que Example2_B foi executado e que o depurador foi retornado para o ponto em que Example2 será retomada.
 
- **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: Shift+F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
 
 ## <a name="BKMK_ConditionCursorVisualize"></a> Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável
  Um ponto de interrupção condicional Especifica uma condição que faz com que o depurador suspender a execução. A condição é especificada por uma expressão de código que pode ser avaliada como true ou false. Por exemplo, você pode usar um ponto de interrupção condicional para examinar o estado do programa em um método chamado com frequência apenas quando uma variável atinge um determinado valor.
@@ -178,7 +178,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
  **Execute até o cursor.** Clique na linha `methodTrack += "->Example3";` e, em seguida, escolha **executar até o Cursor** (teclado: Mover o cursor para a linha; CTRL + F10). O depurador conclui as iterações do loop e então suspende a execução na linha.
 
- **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: Shift+F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
 
 ## <a name="BKMK_EditContinueRecoverExceptions"></a> Editar e continuar, se recuperar de uma exceção
  Em algumas circunstâncias, quando você entrar no código no depurador do Visual Studio, você tem a oportunidade de alterar o valor de variáveis e até mesmo a lógica de instruções. Essa funcionalidade é chamada de editar e continuar.
@@ -210,7 +210,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
  Escolha a tecla F11 para percorrer a instrução que anteriormente gerava uma exceção. Observe que a linha é executada sem erros. Escolha F11 novamente.
 
- **Pare a depuração.** Sobre o **Debug** menu, escolha **parar depuração** (teclado: Shift+F5). Isso encerra a sessão de depuração.
+ **Pare a depuração.** Sobre o **Debug** menu, escolha **parar depuração** (teclado: SHIFT + F5). Isso encerra a sessão de depuração.
 
 ## <a name="see-also"></a>Consulte também
  [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) [gatilho de suspender, continuar e eventos para Windows Store em segundo plano)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md) [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md)

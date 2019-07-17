@@ -7,11 +7,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 0c58b0be10bf10a21b783a48d52806bf769381ee
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204110"
 ---
 # <a name="how-to-provide-an-asynchronous-visual-studio-service"></a>Como: Fornecer um serviço assíncrono do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 ## <a name="using-an-asynchronous-service-in-a-command-handler"></a>Usando um serviço assíncrono em um manipulador de comandos
  Aqui está um exemplo de como usar um serviço assíncrono em um comando de menu. Você pode usar o procedimento mostrado aqui para usar o serviço em outros métodos não assíncronas.
 
-1. Adicione um comando de menu ao seu projeto. (Na **Gerenciador de soluções**, selecione o nó do projeto, clique com botão direito e selecione **Add / Novo Item / extensibilidade personalizada de comando /**.) Nomeie o arquivo de comando **TestAsyncCommand.cs.**
+1. Adicione um comando de menu ao seu projeto. (Na **Gerenciador de soluções**, selecione o nó do projeto, clique com botão direito e selecione **Add / Novo Item / extensibilidade personalizada de comando /** .) Nomeie o arquivo de comando **TestAsyncCommand.cs.**
 
 2. O modelo de comando personalizado adiciona novamente o `Initialize()` método ao arquivo TestAsyncPackage.cs para inicializar o comando. No método Initialize (), copie a linha que inicializa o comando. Ele deve ter esta aparência:
 

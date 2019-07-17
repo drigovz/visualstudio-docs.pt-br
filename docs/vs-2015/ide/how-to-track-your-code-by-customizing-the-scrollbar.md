@@ -10,13 +10,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186241"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como: Acompanhar o código Personalizando a barra de rolagem
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Como: Acompanhar o código personalizando a barra de rolagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quando você está trabalhando com arquivos de código longo, pode ser difícil manter controle de tudo. Você pode personalizar a barra de rolagem da janela de código para ter um panorama geral do que está acontecendo em seu código.  

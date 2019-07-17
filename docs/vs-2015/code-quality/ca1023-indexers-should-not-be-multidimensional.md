@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 2b9cf9cd97dd50577a466ed4d433e0e1dbd5da4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158042"
 ---
 # <a name="ca1023-indexers-should-not-be-multidimensional"></a>CA1023: Indexadores não devem ser multidimensionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

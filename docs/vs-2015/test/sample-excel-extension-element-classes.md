@@ -9,13 +9,13 @@ caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 052ef261270b2cd6e66d71bbbb0c9cc3d12696eb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194897"
 ---
-# <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de exemplo: Classes de elemento
+# <a name="sample-excel-extension-element-classes"></a>Extensão do Excel de exemplo: Classes Element
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 A extensão usa classes derivadas de <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement> e representam o controle de Planilha e o controle de Célula no [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md)].  

@@ -9,11 +9,11 @@ caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68177038"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Dim myColor As Color = ColorTranslator.FromWin32((Integer)win32Color)
 #### <a name="helper-classes-and-methods-for-managed-code"></a>Classes auxiliares e métodos para código gerenciado
  Para código gerenciado, a biblioteca de estrutura de pacote gerenciado do shell (Microsoft.VisualStudio.Shell.12.0.dll) contém algumas classes auxiliares que facilita o uso de cores de tema.
 
- Os métodos auxiliares na **Microsoft.VisualStudio.Shell.VsColors** classe no MPF incluem **GetThemedGDIColor()** e **GetThemedWPFColor()**. Esses métodos auxiliares retornam o valor de cor de uma entrada de tema como Drawing ou Color, a ser usado no WinForms ou UI WPF.
+ Os métodos auxiliares na **Microsoft.VisualStudio.Shell.VsColors** classe no MPF incluem **GetThemedGDIColor()** e **GetThemedWPFColor()** . Esses métodos auxiliares retornam o valor de cor de uma entrada de tema como Drawing ou Color, a ser usado no WinForms ou UI WPF.
 
 ```
 IVsUIShell5 shell5;
@@ -272,7 +272,7 @@ protected override void Dispose(bool disposing)
 ### <a name="system-color-set"></a>Conjunto de cores do sistema
  A tabela no [Blog da equipe WPF: Referência de SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indica o conjunto completo de nomes de cores do sistema e os matizes correspondentes exibidos em cada tema.
 
- Ao aplicar este conjunto limitado de cores para a interface do usuário *espera-se que você perderá detalhes sutis que estavam presentes nos temas "normais"*. Aqui está um exemplo de interface do usuário com as cores cinza sutis que são usadas para distinguir as áreas em uma janela de ferramentas. Quando combinado com a mesma janela exibida no modo de alto contraste, você pode ver que os planos de fundo são o mesmo matiz e as bordas dessas áreas são indicadas pela borda sozinha:
+ Ao aplicar este conjunto limitado de cores para a interface do usuário *espera-se que você perderá detalhes sutis que estavam presentes nos temas "normais"* . Aqui está um exemplo de interface do usuário com as cores cinza sutis que são usadas para distinguir as áreas em uma janela de ferramentas. Quando combinado com a mesma janela exibida no modo de alto contraste, você pode ver que os planos de fundo são o mesmo matiz e as bordas dessas áreas são indicadas pela borda sozinha:
 
  ![Janela propriedades](../../extensibility/ux-guidelines/media/030303-a-propertieswindow.png "030303 a_PropertiesWindow")
 
@@ -302,7 +302,7 @@ protected override void Dispose(bool disposing)
 
 |Cor do sistema|Uso|
 |------------------|-----------|
-|ActiveCaption|-IDE ativa e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão|
+|Legenda ativa|-IDE ativa e glifos de botão de janela rafted no hover e pressione<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de barra de status padrão|
 |ActiveCaptionText|-IDE Active Directory e o windows rafted de primeiro plano da barra de título (texto e glifos)<br />-Em segundo plano e da borda dos botões da janela ativa no hover e pressione|
 |Controle|-Caixa de combinação lista suspensa e pesquisa controle padrão e desabilitado em segundo plano, incluindo o botão suspenso<br />-Plano de fundo do botão de encaixe destino<br />-Plano de fundo de barra de comando<br />-Plano de fundo de janela de ferramenta|
 |ControlDark|-Plano de fundo IDE<br />-Separadores de barra de menu e comando<br />-Borda da barra de comando<br />-Sombras menu<br />-Guia padrão e passe o mouse borda da janela e o separador de ferramenta<br />-De documentos bem fundo do botão de estouro<br />-Borda de glifo de destino dock|
@@ -310,11 +310,11 @@ protected override void Dispose(bool disposing)
 |ControlLight|-Borda de guia ocultar automaticamente<br />-Borda de lista de caixa e a lista suspensa caixa de combinação<br />-Encaixar o plano de fundo de destino e a borda|
 |ControlLightLight|-Borda provisória selecionada, focalizada|
 |ControlText|-Glifo de caixa de combinação suspensa e de caixa de lista<br />-Texto da guia ferramenta cancelou a seleção de janela|
-|GrayText|-Caixa de combinação e da borda do menu suspenso lista desabilitada, o glifo de menu suspenso, texto e texto do item de menu<br />-Texto de menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa|
+|Texto cinza|-Caixa de combinação e da borda do menu suspenso lista desabilitada, o glifo de menu suspenso, texto e texto do item de menu<br />-Texto de menu desabilitado<br />-Texto do cabeçalho pesquisa controle 'Opções de pesquisa'<br />-Separador de seção de controle pesquisa|
 |Realce|-All passe o mouse e pressionado planos de fundo e bordas, exceto a lista suspensa de caixa de combinação documento e o plano de fundo do botão bem overflow da borda do botão<br />-Planos de fundo do item selecionado|
-|HighlightText|-Todas as em foco e colorir pressionado (texto e glifos)<br />-Ferramenta focalizado janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focalizado<br />-Em primeiro plano de guia provisória concentrado e selecionado<br />-Borda do botão de estouro de bem documento em foco e pressione<br />-Borda de ícone selecionado|
+|Texto realçado|-Todas as em foco e colorir pressionado (texto e glifos)<br />-Ferramenta focalizado janela e documento guia janela controle em primeiro plano<br />-Borda de barra de título de janela de ferramenta focalizado<br />-Em primeiro plano de guia provisória concentrado e selecionado<br />-Borda do botão de estouro de bem documento em foco e pressione<br />-Borda de ícone selecionado|
 |HotTrack|-Plano de fundo de thumb barra de rolagem e borda na imprensa<br />-Glifo de seta da barra de rolagem pressionar|
-|InactiveCaption|-IDE inativo e glifos de botão de janela rafted ao focalizar<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado|
+|Legenda inativa|-IDE inativo e glifos de botão de janela rafted ao focalizar<br />-Plano de fundo do título barra do IDE e windows rafted<br />-Plano de fundo de controle de pesquisa desabilitado|
 |InactiveCaptionText|-IDE inativo e primeiro plano o barra de título windows rafted (texto e glifos)<br />-Plano de fundo de botões de janela inativa e a borda ao focalizar<br />-Borda e o plano de fundo de botão de janela ferramenta sem foco<br />-Em primeiro plano de controle de pesquisa desabilitado|
 |Menu|-Tela de fundo de menu lista suspensa<br />-Plano de fundo de marca de seleção marcado e desabilitado|
 |MenuText|-Borda do menu suspenso<br />-A marca de seleção seleção<br />-Glifos menu<br />-Texto do menu drop-down<br />-Borda de ícone selecionado|

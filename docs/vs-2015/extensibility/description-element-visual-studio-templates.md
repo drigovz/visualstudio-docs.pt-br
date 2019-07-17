@@ -11,19 +11,19 @@ caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d60244ea827433678afbd09dd1e8cf1c972595cd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68162111"
 ---
 # <a name="description-element-visual-studio-templates"></a>Elemento de descrição (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica a descrição do modelo como ele aparece em ambos os **novo projeto** ou **Adicionar Novo Item** caixa de diálogo.  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<Descrição >  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -45,7 +45,7 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> ID de um GUID que especifica o pacote do Visual Studio.|  
+|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|  
 |`ID`|Atributo opcional para cenários de usuário avançado.<br /><br /> Especifica a ID de recurso do Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -58,7 +58,7 @@ Especifica a descrição do modelo como ele aparece em ambos os **novo projeto**
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
- É necessário um valor de texto, a menos que o `Package` e `ID` atributos são usados.  
+ É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.  
   
  O texto fornece uma descrição do modelo.  
   

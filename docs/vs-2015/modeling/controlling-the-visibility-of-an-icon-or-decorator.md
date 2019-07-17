@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159620"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Controlando a visibilidade de um ícone ou decorador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,9 +62,9 @@ Um *decorador* é um ícone ou uma linha de texto que aparece em uma forma em um
   
 1. Adicione uma propriedade de domínio calculado para a classe de domínio. No **propriedades** janela, defina os seguintes valores:  
   
-     **IsBrowsable =**`False`**-Isso oculta a propriedade do usuário**  
+     **IsBrowsable =** `False` **-Isso oculta a propriedade do usuário**  
   
-     **Tipo =**`Calculated`**-isso significa que você irá fornecer código que calcula seu valor**  
+     **Tipo =** `Calculated` **-isso significa que você irá fornecer código que calcula seu valor**  
   
      **Nome da** por exemplo **DecoratorControl**  
   

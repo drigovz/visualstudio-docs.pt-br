@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197414"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Criando designers e editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,10 +72,10 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio pode hospedar dif
      Se ele pode ser inserido, você deve criar uma janela de host para o editor externo e, em seguida, chame o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> método e defina o <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valor de enumeração para `DP_External`. Se o editor não pode ser inserido, o IDE criará automaticamente uma janela separada para ele.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Passo a passo: Criar um Editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
+ [Passo a passo: criar um editor personalizado](../extensibility/walkthrough-creating-a-custom-editor.md)  
  Explica como criar um editor personalizado.  
   
- [Passo a passo: Adicionar recursos a um Editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
+ [Passo a passo: adicionar recursos a um editor personalizado](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)  
  Explica como adicionar recursos a um editor personalizado.  
   
  [Inicialização do designer e configuração de metadados](../extensibility/designer-initialization-and-metadata-configuration.md)  

@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191651"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
 1. Abra o projeto no Visual Studio.  
   
-2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** (Tecla de atalho: Alt + F2).  
+2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...** (Tecla de atalho: ALT + F2).  
   
 3. Na página de inicialização de diagnóstico, escolha uma ou mais ferramentas para executar na sessão. São exibidas apenas as ferramentas que são aplicáveis ao tipo de projeto, o sistema operacional e à linguagem de programação. Quando você escolhe uma ferramenta de diagnóstico, as seleções de ferramentas que não podem ser executadas na mesma sessão de diagnóstico são desabilitadas. Veja aqui suas possíveis suas escolhas para um aplicativo Universal do Windows C#:  
   

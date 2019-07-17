@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201333"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como: Gerar dados de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Você pode optar por gerar os resultados de métricas de código de uma soluçã
   
 1. Na **Gerenciador de soluções**, selecione um ou mais projetos.  
   
-2. Clique em **Analyze**e, em seguida, clique em **gerar as métricas de código para projetos selecionado (s)**.  
+2. Clique em **Analyze**e, em seguida, clique em **gerar as métricas de código para projetos selecionado (s)** .  
   
     \- ou -  
   

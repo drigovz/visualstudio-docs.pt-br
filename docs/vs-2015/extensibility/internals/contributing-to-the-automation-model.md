@@ -11,11 +11,11 @@ caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: c84ea078f9b7c1268b765111cc400f6e51b783f1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196989"
 ---
 # <a name="contributing-to-the-automation-model"></a>Contribuindo com o modelo de automação
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Visual Studio fornece um conjunto de interfaces de automação para personalizar
  [Fornecer automação para código](../../extensibility/internals/providing-automation-for-code.md)  
  Explica que a criação de um modelo de automação para o seu código não é necessária. No entanto, um link é fornecido neste tópico que fornece informações criteriosas em modelos de código.  
   
- [Como: Fornecer automação para Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
+ [Como: fornecer automação para o Windows](../../extensibility/internals/how-to-provide-automation-for-windows.md)  
  Explica que fornecer automação é uma boa ideia sempre que você deseja disponibilizar os objetos de automação em uma janela, e o ambiente já não fornecem um objeto de automação prontas para uso. Discute a automação para janelas de ferramentas e janelas de documento.  
   
  [Usar o modelo de automação](../../extensibility/internals/using-the-automation-model.md)  

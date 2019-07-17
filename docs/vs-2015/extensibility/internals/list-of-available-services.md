@@ -12,11 +12,11 @@ caps.latest.revision: 50
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: d67d0300d99cf43165446458414cc2244c6ede0c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203827"
 ---
 # <a name="list-of-available-services"></a>Lista de serviços disponíveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59000040"
 |Serviço|Interface|Visual Studio|Visual Studio 2005|Descrição|  
 |-------------|---------------|-------------------|------------------------|-----------------|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SBindHost>|<xref:Microsoft.VisualStudio.OLE.Interop.IBindHost>|Sim|Sim|Usado pelo VSPackages para obter um <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> interface a partir de um controle ActiveX para facilitar as transferências de dados assíncrona.|  
-|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Não|Sim|Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> C/C++ ID: SID_SDTE|  
+|<xref:Microsoft.VisualStudio.Shell.Interop.SDTE>|<xref:EnvDTE.DTE>|Não|Sim|Obtém o objeto de extensibilidade de tempo de Design (DTE) usado para a automação.<br /><br /> ID DO C/C++: SID_SDTE|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate>|<xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate>|Sim|Sim|Implementado por um designer de formulários para exibir o manipulador de eventos padrão para um controle.|  
 |<xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch>|IDispatch|Sim|Sim|Permite que um VSPackage acessar a interface de automação de VSPackage outro ou de um controle.|  
 |<xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib>|<xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib>|Sim|Sim|Permite que um VSPackage adicionar ou criar uma biblioteca de tipo estendido.|  

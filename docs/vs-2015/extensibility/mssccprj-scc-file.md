@@ -12,11 +12,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68194222"
 ---
 # <a name="mssccprjscc-file"></a>Arquivo MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,23 +44,23 @@ Quando uma solução do Visual Studio ou o projeto é colocado sob controle do c
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração de MSSCCPRJ. Formato de arquivo de SCC  
  A seguir está um exemplo da MSSCCPRJ. Formato de arquivo do SCC (os números de linha são fornecidos apenas como um guia e não devem ser incluídos no corpo do arquivo):  
   
- [Line 1] `SCC = This is a Source Code Control file`  
+ [Linha 1] `SCC = This is a Source Code Control file`  
   
- [Line 2]  
+ [Linha 2]  
   
- [Line 3] `[TestApp.sln]`  
+ [Linha 3] `[TestApp.sln]`  
   
  [Line 4] `SCC_Aux_Path = "\\server\vss\"`  
   
  [Line 5] `SCC_Project_Name = "$/TestApp"`  
   
- [Line 6]  
+ [Linha 6]  
   
- [Line 7] `[TestApp.csproj]`  
+ [Linha 7] `[TestApp.csproj]`  
   
  [Line 8] `SCC_Aux_Path = "\\server\vss\"`  
   
- [Line 9] `SCC_Project_Name = "$/TestApp"`  
+ [Linha 9] `SCC_Project_Name = "$/TestApp"`  
   
  A primeira linha declara a finalidade do arquivo e serve como a assinatura para todos os arquivos desse tipo. Essa linha deve aparecer exatamente como isso em todos os MSSCCPRJ. Arquivos SCC:  
   

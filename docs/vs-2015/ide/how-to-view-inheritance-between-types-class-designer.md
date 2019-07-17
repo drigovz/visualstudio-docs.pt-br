@@ -16,16 +16,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 95fc42cd3d13a0613e865b8a0294c74ca016155c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68178808"
 ---
-# <a name="how-to-view-inheritance-between-types-class-designer"></a>Como exibir herança entre tipos (Designer de Classe)
+# <a name="how-to-view-inheritance-between-types-class-designer"></a>Como: Exibir herança entre tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no Designer de Classe. Para criar uma relação de herança, se não houver uma, entre dois tipos, consulte [Como criar herança entre tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
+Você pode localizar a relação de herança, se ela existir, entre um tipo base e seus tipos derivados em um diagrama de classe no Designer de Classe. Para criar uma relação de herança, se nenhuma existir, entre dois tipos, confira [Como: Criar herança entre tipos (Designer de classe)](../ide/how-to-create-inheritance-between-types-class-designer.md).  
   
 ### <a name="to-find-the-base-type"></a>Para localizar o tipo base  
   
@@ -48,5 +48,5 @@ Você pode localizar a relação de herança, se ela existir, entre um tipo base
    Você pode também clicar com o botão direito do mouse no tipo cujos tipos derivados deseja ver e escolher **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como criar associações entre tipos (Designer de Classe)](../ide/how-to-create-associations-between-types-class-designer.md)   
+ [Como: Criar associações entre tipos (Designer de classe)](../ide/how-to-create-associations-between-types-class-designer.md)   
  [Exibindo tipos e relações (Designer de Classe)](../ide/viewing-types-and-relationships-class-designer.md)

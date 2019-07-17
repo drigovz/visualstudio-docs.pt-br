@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b8769cbb23b2c192fd3db07eca9519661b3e214c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68190365"
 ---
 # <a name="performance-session-properties"></a>Propriedades da sessão de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,16 +40,16 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  Para obter mais informações, consulte:  
   
- [Como escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
+ [Como: Escolher os métodos de coleta](../profiling/how-to-choose-collection-methods.md)  
   
  [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)  
   
- [Como definir opções do nome do arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
+ [Como: Definir opções de nome de arquivo de dados de desempenho](../profiling/how-to-set-performance-data-file-name-options.md)  
   
 ## <a name="launch"></a>Inicializar  
  Essas configurações permitem selecionar em uma lista de binários e especificar a ordem de inicialização dos binários.  
   
- Para obter mais informações, [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)  
+ Para obter mais informações, confira [Como: Especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)  
   
 ## <a name="sampling"></a>Amostragem  
  Essas configurações permitem que você selecione o intervalo de amostragem e do evento quando a amostragem é usada como o método de criação de perfil. Um evento de amostragem é usado para coletar dados de criação de perfil no intervalo especificado. Por exemplo, se o evento de amostragem for ciclos do relógio e o intervalo de amostragem for definido como 10.000.000, então os dados de criação de perfil serão coletados a cada 10 milhões de ciclos do relógio. Os quatro tipos de eventos de amostragem a seguir estão disponíveis:  
@@ -64,12 +64,12 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
 - Eventos de amostragem adicionais podem ser especificados com base nos contadores de desempenho disponíveis  
   
-  Para obter mais informações, consulte [Como escolher os eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
+  Para obter mais informações, confira [Como: Escolher eventos de amostragem](../profiling/how-to-choose-sampling-events.md)  
   
 ## <a name="binary"></a>Binário  
  Essas configurações permitem que você especifique se deseja realocar o binário instrumentado para outro local. Por exemplo, se você está criando o perfil My.DLL e optar por não realocar o binário instrumentado, uma cópia de backup de My.DLL chamada My.Orig.DLL será criada. Posteriormente, My.DLL será modificado inserindo investigações para coletar dados. Se você decidir realocar o binário instrumentado, o binário original não será renomeado e o binário instrumentado é copiado para o local especificado para uso durante a instrumentação.  
   
- Para obter mais informações, [Como especificar o início do binário](../profiling/how-to-specify-the-binary-to-start.md)  
+ Para obter mais informações, confira [Como: Especificar o binário a ser iniciado](../profiling/how-to-specify-the-binary-to-start.md)  
   
 ## <a name="tier-interactions"></a>Interações de Camada  
  Para obter mais informações, consulte [Coletando dados de interação entre camadas](../profiling/collecting-tier-interaction-data.md)  
@@ -79,37 +79,37 @@ Um **Sessão de Desempenho** permite definir as configurações que determinam c
   
  Para obter mais informações, consulte:  
   
- [Como criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
+ [Como: Criar perfil de código JavaScript em páginas da Web](../profiling/how-to-profile-javascript-code-in-web-pages.md)  
   
- [Como especificar comandos pré e pós-instrumentação](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
+ [Como: Especificar comandos pré e pós-instrumento](../profiling/how-to-specify-pre-and-post-instrument-commands.md)  
   
 ## <a name="cpu-counters"></a>Contadores de CPU  
  Essas configurações permitem que você colete dados sobre contadores de desempenho da CPU quando estiver usando o método de criação de perfil de instrumentação. Contadores de desempenho portáteis estão disponíveis independentemente do design ou fabricante da CPU. Eventos de plataforma são específicos para o design e fabricante da CPU. Para obter mais informações sobre contadores de desempenho on-chip, consulte a documentação específica do processador.  
   
- Para obter mais informações, consulte [Como coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
+ Para obter mais informações, confira [Como: Coletar dados do contador de CPU](../profiling/how-to-collect-cpu-counter-data.md)  
   
 ## <a name="windows-events"></a>Eventos do Windows  
  Durante a criação de perfil, você pode coletar dados de provedores de rastreamento de eventos. Você pode exibir os dados usando a opção `/calltrace` da ferramenta de linha de comando VSPerfReport.exe. Para obter mais informações sobre o ETW (Rastreamento de Eventos para Windows), consulte [Sobre o rastreamento de eventos](http://go.microsoft.com/fwlink/?linkid=90752).  
   
  Para obter mais informações, consulte:  
   
- [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
+ [Como: Coletar dados do ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)  
   
  [VSPerfReport](../profiling/vsperfreport.md).  
   
 ## <a name="windows-counters"></a>Contadores do Windows  
  Essa opção permite que você colete dados de contadores do Monitor de Desempenho do Windows. Para coletar esses dados, marque a caixa de seleção rotulada **Coletar contadores de desempenho do Windows**. O intervalo de coleta pode ser definido na caixa **Intervalo de Coleta**. **Categoria do Contador** e **Instância** também podem estar disponíveis. Alguns contadores do Monitor de Desempenho do Windows padrão estão disponíveis.  
   
- Para obter mais informações, consulte [Como coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Para obter mais informações, confira [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
 ## <a name="advanced"></a>Avançado  
  Essas configurações permitem que você adicione opções ao processo de instrumentação especificando uma ou mais opções da ferramenta de criação de perfil da linha de comando [VSInstr](../profiling/vsinstr.md). Você também pode especificar a versão do Common Runtime para análise quando o aplicativo estiver usando mais de uma versão.  
   
  Para obter mais informações, consulte:  
   
- [Como especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
+ [Como: Especificar o tempo de execução do .NET Framework](../profiling/how-to-specify-the-dotnet-framework-runtime.md)  
   
- [Como especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)  
+ [Como: Especificar opções de instrumentação adicionais](../profiling/how-to-specify-additional-instrumentation-options.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   

@@ -22,13 +22,13 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072845"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68161711"
 ---
-# <a name="autos-and-locals-windows"></a>Autos e locais Windows
+# <a name="autos-and-locals-windows"></a>Janelas autos e locais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar / Windows / automóveis**) e o **Locals** janela (durante a depuração,  **CTRL + ALT + V, L**, ou **depurar / Windows / locais**) são muito úteis quando você deseja ver valores de variáveis durante a depuração. O **Locals** janela exibe as variáveis que são definidas no escopo local, que geralmente é a função ou método que está sendo executado. O **automóveis** janela exibe as variáveis usadas ao redor da linha atual (o local em que o depurador é interrompido). Exatamente quais variáveis exibido é diferente em diferentes idiomas. Veja o que as variáveis que aparecem na janela Autos? abaixo.  
@@ -114,7 +114,7 @@ private static int subtractVars(int i, int j)
   
  Defina um ponto de interrupção de int `x = sumVars(a, b) + subtractVars(c, d);` linha.  
   
- Iniciar a depuração e quando a execução é interrompida no primeiro ponto de interrupção, pressione **F10 (Step Over)**. Você deve ver o seguinte a **Autos** janela:  
+ Iniciar a depuração e quando a execução é interrompida no primeiro ponto de interrupção, pressione **F10 (Step Over)** . Você deve ver o seguinte a **Autos** janela:  
   
  ![AutosReturnValueCSharp2](../debugger/media/autosreturnvaluecsharp2.png "AutosReturnValueCSharp2")  
   

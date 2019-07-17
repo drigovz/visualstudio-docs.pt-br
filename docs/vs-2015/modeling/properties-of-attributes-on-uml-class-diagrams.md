@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154859"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriedades de atributos em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Em um diagrama de classe UML, você pode adicionar *atributos* a classes e inter
 |    **É folha**    |    False     |                                                                                                                                                                    Se for true, ele não se destina para permitir que a redefinição desse atributo em tipos derivados.                                                                                                                                                                     |
 |  **É derivado**   |    False     |                                                                                                              Se for true, esse atributo é calculado de outros atributos. Por exemplo, Diagonal, calculado de largura e altura. Os detalhes devem ser escritos **descrição** ou um comentário anexado.                                                                                                              |
 |  **Descrição**  |   (vazio)    |                                                                                                                                                                        Para obter notas gerais, ou para definir restrições nos valores no atributo.                                                                                                                                                                        |
-| **Multiplicidade**  |      1       | **1** -este atributo tem um único valor do tipo especificado.<br /><br /> **entre 0 e 1** -esse atributo pode ter um valor de `null`.<br /><br /> **\\**\* -valor desse atributo é uma coleção de valores.<br /><br /> **1...\\**  \* -valor desse atributo é uma coleção que contém pelo menos um valor.<br /><br /> *n* **..** *m* -valor desse atributo é uma coleção que contenha entre *n* e *m* valores. |
+| **Multiplicidade**  |      1       | **1** -este atributo tem um único valor do tipo especificado.<br /><br /> **entre 0 e 1** -esse atributo pode ter um valor de `null`.<br /><br /> **\\** \* -valor desse atributo é uma coleção de valores.<br /><br /> **1...\\**  \* -valor desse atributo é uma coleção que contém pelo menos um valor.<br /><br /> *n* **..** *m* -valor desse atributo é uma coleção que contenha entre *n* e *m* valores. |
 |  **É ordenada**   |    False     |                                                                                                                                                                    Se for true, a coleção de forma uma lista sequencial. Para **multiplicidade** de mais de 1.                                                                                                                                                                     |
 |   **É exclusivo**   |    False     |                                                                                                                                                                Não se for true, há nenhum valor duplicado na coleção. Para **multiplicidade** de mais de 1.                                                                                                                                                                |
 

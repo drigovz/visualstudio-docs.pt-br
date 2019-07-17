@@ -21,11 +21,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: bddba1170cf675b5bde7ab8deed8cce1e7eb57dd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68196572"
 ---
 # <a name="cppclean-task"></a>Tarefa CPPClean
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Exclui os arquivos temporários criados pelo MSBuild quando projeto do Visual C+
 |          **DoDelete**           |                                                            Parâmetro **Boolean** opcional.<br /><br /> Se `true`, limpará arquivos de build temporários.                                                             |
 | **FilePatternsToDeleteOnClean** |                                            Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de extensões de arquivo dos arquivos a serem limpos.                                             |
 |   **FilesExcludedFromClean**    |                                                    Parâmetro `String` opcional.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de arquivos que não serão limpos.                                                    |
-|       **FoldersToClean**        | Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. Especifique um caminho completo ou relativo. Esse caminho pode conter o símbolo curinga (**\\**\*). |
+|       **FoldersToClean**        | Parâmetro `String` obrigatório.<br /><br /> Especifica uma lista delimitada por ponto e vírgula de diretórios a serem limpos. Especifique um caminho completo ou relativo. Esse caminho pode conter o símbolo curinga ( **\\** \*). |
 
 ## <a name="remarks"></a>Comentários  
 

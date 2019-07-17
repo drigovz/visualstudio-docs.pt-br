@@ -11,13 +11,13 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68203947"
 ---
-# <a name="inside-the-core-editor"></a>Dentro do Editor de núcleo
+# <a name="inside-the-core-editor"></a>Por dentro do Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor principal usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores do editor. No entanto, ele é recomendável que você adapte suas personalizações para o novo editor de API.  
@@ -46,7 +46,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  [Eventos de buffer de texto na API herdada](../extensibility/text-buffer-events-in-the-legacy-api.md)  
  Fornece uma lista das interfaces que são usados para a notificação de eventos do buffer de texto.  
   
- [Como: Registre-se para eventos de Buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
+ [Como: registrar para eventos de buffer de texto com a API herdada](../extensibility/how-to-register-for-text-buffer-events-with-the-legacy-api.md)  
  Descreve como eventos de buffer de texto de aviso.  
   
  [Usando o gerenciador de texto para monitorar as configurações globais](../extensibility/using-the-text-manager-to-monitor-global-settings.md)  
@@ -65,7 +65,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  Descreve a instanciação de um serviço de linguagem para as decorações de código do controle.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
- [Passo a passo: Criar um Editor de núcleo e registrar um tipo de arquivo do Editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
+ [Passo a passo: criar um editor principal e registrar um tipo de arquivo do editor](../extensibility/walkthrough-creating-a-core-editor-and-registering-an-editor-file-type.md)  
  Fornece instruções passo a passo sobre como iniciar o editor principal do código gerenciado.  
   
  [Barra de menu suspenso](../extensibility/drop-down-bar.md)  
@@ -74,8 +74,8 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
  [Usando marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)  
  Explica o conceito de marcadores de texto e como elas são usadas no editor de núcleo e lista as interfaces que são usadas para acessar e gerenciar marcadores de texto.  
   
- [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
+ [Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto e como adicionar um comando personalizado a um menu de atalho.  
   
- [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)  
+ [Como: criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)  
  Fornece instruções passo a passo sobre como criar um marcador de texto personalizado e como fornecer o tipo de marcador, como um serviço.

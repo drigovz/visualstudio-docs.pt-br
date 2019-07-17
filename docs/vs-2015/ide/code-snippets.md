@@ -20,11 +20,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e28ebd46a03983e60ebdd3fc22dd55d85249f710
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188850"
 ---
 # <a name="code-snippets"></a>Snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ finally
   
 ```  
   
- Você pode inserir esse snippet clicando em **Inserir Snippet** no menu de contexto da janela de código, então **Visual C#**, então digite `tryf` e, em seguida, TAB; ou você pode digitar `tryf` e pressionar TAB + TAB.  
+ Você pode inserir esse snippet clicando em **Inserir Snippet** no menu de contexto da janela de código, então **Visual C#** , então digite `tryf` e, em seguida, TAB; ou você pode digitar `tryf` e pressionar TAB + TAB.  
   
  Um exemplo de um snippet “envolver com”: em C++, o atalho `if` pode ser usado como um snippet de inserção ou um snippet “envolver com”. Se você selecionar uma linha de código (por exemplo, `return FALSE;`) e, em seguida, clicar em **Envolver com** e então em **se**, o snippet de código será expandido ao redor da linha:  
   
@@ -86,8 +86,8 @@ End Property
  Você pode adicionar e remover diretórios de snippet com os botões **Adicionar** e **Remover** na caixa de diálogo **Gerenciador de Snippets de Código**. Para adicionar snippets de código individuais, use o botão **Importar**.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: criando um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)   
- [Como distribuir snippets de código](../ide/how-to-distribute-code-snippets.md)   
+ [Passo a passo: Criando um trecho de código](../ide/walkthrough-creating-a-code-snippet.md)   
+ [Como: Distribuir trechos de código](../ide/how-to-distribute-code-snippets.md)   
  [Melhores práticas para usar snippets de código](../ide/best-practices-for-using-code-snippets.md)   
  [Solução de problemas de snippets](../ide/troubleshooting-snippets.md)   
  [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)   

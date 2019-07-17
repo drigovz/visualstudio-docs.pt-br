@@ -12,11 +12,11 @@ caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184182"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Geração de novo projeto: Bastidores, parte um
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ devenv /installvstemplates
   
  \<Caminho de instalação do Visual Studio > \VC#\VCSPackages\1033\csprojui.dll  
   
- Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual c#**.  
+ Para verificar isso, abra o Explorador de arquivos e arraste csprojui.dll no diretório do Visual Studio... A tabela de cadeia de caracteres mostra que o recurso #2345 tem a legenda **Visual c#** .  
   
 ##### <a name="sortpriority"></a>SortPriority  
  Isso determina a posição do nó raiz na **tipos de projeto** árvore.  
@@ -215,4 +215,4 @@ devenv /installvstemplates
     **MyProjectNode** aparece como um nó filho do Visual c# apenas sob o nó do Windows.  
   
 ## <a name="see-also"></a>Consulte também  
- [Nova geração de projeto: Nos bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+ [Geração de novo projeto: bastidores, parte dois](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

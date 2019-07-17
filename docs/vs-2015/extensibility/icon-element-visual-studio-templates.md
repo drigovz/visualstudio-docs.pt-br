@@ -13,20 +13,20 @@ caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 3de31652af7bc3fd2da3c5e67e37df8e9ff120e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927202"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68204000"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Elemento de ícone (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o ícone, o que é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo, para o modelo.  
   
- \<VSTemplate>  
- \<TemplateData>  
- \<Icon>  
+ \<VSTemplate >  
+ \<TemplateData >  
+ \<Ícone >  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -47,7 +47,7 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o �
   
 |Atributo|Descrição|  
 |---------------|-----------------|  
-|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> ID de um GUID que especifica o pacote do Visual Studio.|  
+|`Package`|Atributo opcional para cenários de usuário avançado.<br /><br /> Um GUID que especifica a ID do pacote do Visual Studio.|  
 |`ID`|Atributo opcional para cenários de usuário avançado.<br /><br /> Especifica a ID de recurso do Visual Studio.|  
   
 ### <a name="child-elements"></a>Elementos filho  
@@ -60,7 +60,7 @@ Especifica o caminho e o nome do arquivo do arquivo de imagem que serve como o �
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|Elemento obrigatório.<br /><br /> Categoriza o modelo e define como ele é exibido em qualquer um de **novo projeto** ou o **Adicionar Novo Item** caixa de diálogo.|  
   
 ## <a name="text-value"></a>Valor de texto  
- É necessário um valor de texto, a menos que o `Package` e `ID` atributos são usados.  
+ É necessário um valor de texto, a menos que os atributos `Package` e `ID` sejam usados.  
   
  O texto fornece o nome de arquivo e caminho do ícone de modelo que será exibido na **novo projeto** caixa de diálogo.  
   

@@ -11,11 +11,11 @@ caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 7c1dd3d28b9978b52c95b5ff905d57720ed10f5d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68201965"
 ---
 # <a name="walkthrough-outlining"></a>Passo a passo: Estrutura de tópicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -134,4 +134,4 @@ Você pode implementar recursos de baseada na linguagem, como a estrutura de tó
 4. Deve haver uma região de estrutura de tópicos que inclui a ambas as chaves. Você poderá clicar no sinal de subtração à esquerda da chave de abertura para recolher a região de estrutura de tópicos. Quando a região estiver recolhido, o símbolo de reticências (...) devem aparecer à esquerda de um pop-up que contém o texto e a região recolhida **passe o mouse texto** deve aparecer quando você move o ponteiro sobre o botão de reticências.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Passo a passo: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

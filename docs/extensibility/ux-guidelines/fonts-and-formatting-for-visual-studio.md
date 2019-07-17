@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1241edd105c948f1094948229a91851b7c38bbed
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 8634ab15a10b59fc21de390e0633d6d91793616d
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824324"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891032"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Fontes e formatação para o Visual Studio
 ## <a name="BKMK_TheEnvironmentFont"></a> A fonte de ambiente
@@ -90,7 +90,8 @@ window.ShowModal()
 ### <a name="BKMK_Formatting"></a> Formatação de referência (dimensionamento/negrito)
  Algumas caixas de diálogo exigem um determinado texto em negrito ou um tamanho diferente de fonte de ambiente. Anteriormente, as fontes maiores do que a fonte de ambiente tivesse sido codificadas como "`environment font +2`" ou semelhantes. Usar os trechos de código fornecido, dar suporte a monitores com alto DPI e certifique-se de que o texto de exibição sempre aparece no peso (como Light ou Semilight) e no tamanho correto.
 
-> **Observação: Antes de aplicar formatação, verifique se você estiver seguindo as diretrizes encontradas nas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
+> [!NOTE]
+> Antes de aplicar formatação, verifique se você estiver seguindo as diretrizes encontradas nas [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle). * *
 
  Para dimensionar a fonte de ambiente, defina o estilo do TextBlock ou rótulo conforme indicado. Cada um desses trechos de código, quando usados corretamente, irá gerar a fonte correta, incluindo as variações de tamanho e peso apropriadas.
 
@@ -482,5 +483,5 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 ## <a name="see-also"></a>Consulte também
 
-- [MSDN: Fonts (Windows)](/windows/desktop/uxguide/vis-fonts)
+- [MSDN: Fontes (Windows)](/windows/desktop/uxguide/vis-fonts)
 - [MSDN: Texto da Interface do usuário (Windows)](/windows/desktop/uxguide/text-ui)

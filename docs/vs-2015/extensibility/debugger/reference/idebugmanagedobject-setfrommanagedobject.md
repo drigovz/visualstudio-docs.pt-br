@@ -1,52 +1,51 @@
 ---
 title: IDebugManagedObject::SetFromManagedObject | Microsoft Docs
-ms.date: 11/15/2016
-ms.prod: visual-studio-dev14
-ms.technology: vs-ide-sdk
+ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
 - IDebugManagedObject::SetFromManagedObject
 helpviewer_keywords:
 - IDebugManagedObject::SetFromManagedObject method
 ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
-caps.latest.revision: 10
+author: gregvanl
 ms.author: gregvanl
 manager: jillfra
+ms.workload:
+- vssdk
 ms.openlocfilehash: 5fa81c34f18d6f1d3980da8d53c65f5ef58c05f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929833"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180598"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
-[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
+Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecida como um parâmetro.
 
-Define o valor da instância do objeto de classe de valor da instância da classe de valor fornecida como um parâmetro.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```cpp#  
-HRESULT SetFromManagedObject(   
-   IUnknown* pManagedObject  
-);  
-```  
-  
-```csharp  
-int SetFromManagedObject(  
-   object pManagedObject  
-);  
-```  
-  
-#### <a name="parameters"></a>Parâmetros  
- `pManagedObject`  
- [in] Uma interface que representa o objeto gerenciado que contém o novo valor.  
-  
-## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
-  
-## <a name="remarks"></a>Comentários  
- Esse método é usado para alterar o objeto gerenciado, conforme representado pela [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto.  
-  
-## <a name="see-also"></a>Consulte também  
- [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)
+## <a name="syntax"></a>Sintaxe
+
+```cpp
+HRESULT SetFromManagedObject( 
+   IUnknown* pManagedObject
+);
+```
+
+```csharp
+int SetFromManagedObject(
+   object pManagedObject
+);
+```
+
+#### <a name="parameters"></a>Parâmetros
+ `pManagedObject`
+
+ [in] Uma interface que representa o objeto gerenciado que contém o novo valor.
+
+## <a name="return-value"></a>Valor de retorno
+ Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.
+
+## <a name="remarks"></a>Comentários
+ Esse método é usado para alterar o objeto gerenciado, conforme representado pela [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) objeto.
+
+## <a name="see-also"></a>Consulte também
+- [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

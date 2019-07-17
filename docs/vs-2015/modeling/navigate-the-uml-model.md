@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68158996"
 ---
 # <a name="navigate-the-uml-model"></a>Navegar no modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,8 +74,8 @@ Este tópico apresenta os principais tipos de modelo UML.
   
 |Tipo de atributo|Permite o acesso ao|Mais informações|  
 |--------------------|----------------------------------|----------------------|  
-|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> .IDiagramContext<br /><br /> (em Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|O diagrama atual de foco.|[Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
-|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (in Microsoft.VisualStudio.Modeling.Sdk.[version].dll)|Permite agrupar alterações em transações.|[Vincular atualizações de modelo UML usando transações](../modeling/link-uml-model-updates-by-using-transactions.md)|  
+|Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation<br /><br /> . IDiagramContext<br /><br /> (em Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll)|O diagrama atual de foco.|[Definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md)|  
+|Microsoft.VisualStudio.Modeling.ExtensionEnablement<br /><br /> .ILinkedUndoContext<br /><br /> (em Microsoft.VisualStudio.Modeling.Sdk. . dll de [versão])|Permite agrupar alterações em transações.|[Vincular atualizações de modelo UML usando transações](../modeling/link-uml-model-updates-by-using-transactions.md)|  
 |Microsoft.VisualStudio.Shell. SVsServiceProvider<br /><br /> (em Microsoft.VisualStudio.Shell.Immutable. . dll de [versão])|O host [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. A partir daí, você pode acessar arquivos, projetos e outros aspectos.|[Abrir um modelo UML usando a API do Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md)|  
   
 ### <a name="to-get-the-context"></a>Para obter o contexto  

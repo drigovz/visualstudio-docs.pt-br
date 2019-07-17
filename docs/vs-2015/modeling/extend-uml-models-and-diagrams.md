@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68182866"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
  Para obter mais informações, consulte [gerar arquivos de um modelo UML](../modeling/generate-files-from-a-uml-model.md).  
   
-## <a name="team-foundation-server-integration"></a>Team Foundation Server Integration  
+## <a name="team-foundation-server-integration"></a>Integração do Team Foundation Server  
  Você pode vincular itens de trabalho a elementos de modelo e acessar os itens vinculados de forma programática.  
   
  Os desenvolvedores de ferramentas da Fabrikam escrevem uma ferramenta que gera uma agenda de trabalho para cada projeto de aeroporto. Os itens de trabalho na agenda são vinculados aos elementos de modelo.  
