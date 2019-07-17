@@ -9,19 +9,19 @@ caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 464c427008c739f23431c58bd647aaa3b1f5609d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: HT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184659"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento BuildProjectOnload (Modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Como criar e adicioná-los a uma solução se baseia somente novos projetos. A solução inteira não é criada.  
   
- \<VSTemplate>  
- \<TemplateData>  
+ \<VSTemplate >  
+ \<TemplateData >  
  \<BuildProjectOnLoad>  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -54,7 +54,7 @@ Como criar e adicioná-los a uma solução se baseia somente novos projetos. A s
  `BuildProjectOnLoad` é um elemento opcional. O valor padrão é `false`.  
   
 ## <a name="example"></a>Exemplo  
- O exemplo a seguir ilustra os metadados para um modelo do Visual C#.  
+ O exemplo a seguir ilustra os metadados para um modelo do Visual c#.  
   
 ```  
 <VSTemplate Type="Project" Version="3.0.0"  

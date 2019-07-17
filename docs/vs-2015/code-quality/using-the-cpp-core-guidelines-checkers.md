@@ -10,11 +10,11 @@ author: mikeblome
 ms.author: mblome
 manager: jillfra
 ms.openlocfilehash: c0fb306cb7326464af847f09b319e8e702c76831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68142082"
 ---
 # <a name="using-the-c-core-guidelines-checkers"></a>Usando os verificadores de Diretrizes Principais do C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Diretrizes principais do C++ são um conjunto portátil de diretrizes, regras e 
   
    ![Página de propriedades para configurações de extensões de análise de código](../code-quality/media/cppcorecheck-codeanalysis-extensions.png "CPPCoreCheck_CodeAnalysis_Extensions")  
   
-   Para habilitar ou desabilitar os conjuntos de regra de verificação principal do C++, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Sob **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa próxima ao controle **habilitar a verificação principal do C++ (liberados)** ou **Habilitar verificação principal do C++ (Experimental)**, escolha **Sim** ou **não**. Escolher **Okey** ou **aplicar** para salvar suas alterações.  
+   Para habilitar ou desabilitar os conjuntos de regra de verificação principal do C++, abra o **páginas de propriedade** caixa de diálogo para seu projeto. Sob **propriedades de configuração**, expanda **análise de código**, **extensões**. Na lista suspensa próxima ao controle **habilitar a verificação principal do C++ (liberados)** ou **Habilitar verificação principal do C++ (Experimental)** , escolha **Sim** ou **não**. Escolher **Okey** ou **aplicar** para salvar suas alterações.  
   
 ## <a name="check-types-bounds-and-lifetimes"></a>Verifique os tipos, limites e tempos de vida  
  Atualmente, o pacote de verificação principal do C++ contém verificadores para o [segurança de tipo](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-type), [delimita safety](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-bounds), e [segurança de tempo de vida](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#SS-lifetime) perfis.  
@@ -89,7 +89,7 @@ int main()
   
   **1 >---compilação iniciada: Projeto: CoreCheckExample, configuração: Depurar Win32 –**  
 **----**  
-**1>  CoreCheckExample.cpp**  
+**1 > CoreCheckExample.cpp**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
 **rojects\CoreCheckExample\Debug\CoreCheckExample.exe**  
 **1 > CoreCheckExample.vcxproj -> C:\Users\username\documents\visual studio 2015\P**  
@@ -99,7 +99,7 @@ int main()
 **Ed. sempre inicialize um objeto. (type.5: http://go.microsoft.com/fwlink/p/?Link**  
 **ID=620421)**  
 **c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche**  
-**ckexample\corecheckexample.cpp(7): warning C26485: Expressão 'arr': Sem matriz para**  
+**ckexample\corecheckexample.cpp(7): aviso C26485: Expressão 'arr': Sem matriz para**  
  **ponteiro de decaimento. (bounds.3: http://go.microsoft.com/fwlink/p/?LinkID=620415)**  
 **= = = Compilação: 1 com êxito, 0 com falha, 0 atualizada, 0 ignorado = = =** as diretrizes do C++ Core existem para ajudar você a escrever código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, é fácil suprimi-lo diretamente no código. Você pode usar o `gsl::suppress` atributo para manter a verificação principal do C++ de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil limites escrevendo `[[gsl::suppress(bounds)]]` sem incluir um número específico de regra.  
   

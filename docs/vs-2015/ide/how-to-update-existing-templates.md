@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 26482e844a4850efb1c50b15e51e4153baf1f9ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186263"
 ---
 # <a name="how-to-update-existing-templates"></a>Como: Atualizar modelos existentes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Depois de criar um modelo e compactar os arquivos em um arquivo .zip, modifique 
   
 4. Abra, modifique e salve o arquivo XML .vstemplate para tratar o comportamento atualizado ou novos arquivos. Para obter mais informações sobre o esquema .vstemplate, consulte [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md). Para obter mais informações sobre o que é possível parametrizar nos arquivos de origem, consulte [Parâmetros de modelo](../ide/template-parameters.md)  
   
-5. Selecione os arquivos no seu modelo, clique com o botão direito do mouse, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Os arquivos selecionados são compactados em um arquivo .zip.  
+5. Selecione os arquivos no seu modelo, clique com o botão direito do mouse, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)** . Os arquivos selecionados são compactados em um arquivo .zip.  
   
 6. Coloque o novo arquivo .zip no mesmo diretório do antigo arquivo .zip.  
   

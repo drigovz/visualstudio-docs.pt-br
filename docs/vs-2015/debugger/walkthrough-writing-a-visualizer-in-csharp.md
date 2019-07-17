@@ -17,12 +17,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 190ada55d5f46d159c6765e9af83d672b654313d
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 6b95ac29f3084bf8899249039ffbaa7da8c2294f
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65688164"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890465"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Passo a passo: Escrevendo um visualizador em C\#
 
@@ -39,7 +39,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1. Sobre o **arquivo** menu, escolha **New** e, em seguida, clique em **novo projeto**.
 
-2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.
+2. No **novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#** .
 
 3. No **modelos** , escolha **biblioteca de classes**.
 
@@ -196,7 +196,8 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 2. Edite o nome de Program.cs para algo mais significativo, por exemplo, TestConsole.cs.
 
-    **Observação** [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classe em TestConsole.cs para corresponder ao novo nome de arquivo.
+    > [!NOTE]
+    > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em TestConsole.cs para corresponder ao novo nome do arquivo.
 
 3. Em TestConsole.cs, adicione o seguinte código às instruções `using`:
 
@@ -234,7 +235,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 1. No menu **Arquivo**, escolha **Adicionar** e clique em **Novo Projeto**.
 
-2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#**.
+2. No **adicionar novo projeto** caixa de diálogo **tipo de projeto**s, selecione **Visual c#** .
 
 3. No **modelos** , escolha **biblioteca de classes**.
 

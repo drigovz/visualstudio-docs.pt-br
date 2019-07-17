@@ -13,11 +13,11 @@ caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 07d70bb1d77dc3022b06c4036317e31692307f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68188846"
 ---
 # <a name="registering-a-legacy-language-service"></a>Registrar um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
   
 |Nome|Tipo|Intervalo|Descrição|  
 |----------|----------|-----------|-----------------|  
-|(Padrão)|REG_SZ|ResID|O nome de exibição localizado dessa página de opção. O nome pode ser texto literal ou #`nnn`, onde `nnn` é uma ID de recurso de cadeia de caracteres na DLL do VSPackage especificado satélite.|  
+|(Padrão)|REG_SZ|resID|O nome de exibição localizado dessa página de opção. O nome pode ser texto literal ou #`nnn`, onde `nnn` é uma ID de recurso de cadeia de caracteres na DLL do VSPackage especificado satélite.|  
 |Pacote|REG_SZ|*GUID*|O GUID do VSPackage que implementa essa página de opções.|  
 |Página|REG_SZ|*GUID*|O GUID da página de propriedades para solicitar de VSPackage, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> método. Se essa entrada do registro não estiver presente, a chave do registro descreve um nó, não uma página.|  
   
@@ -140,7 +140,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |----------|----------|-----------|-----------------|  
 |(Padrão)|REG_SZ|""|Não utilizado; Você pode colocar seu nome aqui para obter a documentação.|  
 |DefaultToolboxTab|REG_SZ|""|Nome da guia da caixa de ferramentas para tornar o padrão quando o editor está ativo.|  
-|DisplayName|REG_SZ|ResID|Nome para exibir o **abrir com** caixa de diálogo. O nome é a ID de recurso de cadeia de caracteres ou um nome no formato padrão.|  
+|DisplayName|REG_SZ|resID|Nome para exibir o **abrir com** caixa de diálogo. O nome é a ID de recurso de cadeia de caracteres ou um nome no formato padrão.|  
 |ExcludeDefTextEditor|REG_DWORD|0-1|Usado para o **abrir com** comando de menu. Se você não quiser listar o editor de texto padrão na lista de editores disponíveis para um tipo de arquivo específico, defina esse valor como 1.|  
 |LinkedEditorGUID|REG_SZ|*\<GUID>*|Usado para qualquer serviço de linguagem que pode abrir um arquivo com suporte da página de código. Por exemplo, quando você abre um arquivo. txt usando o **abrir com** de comando, as opções são fornecidas para usar o editor de código fonte com e sem codificação.<br /><br /> O GUID especificado no nome da subchave destina-se a fábrica do editor de página de código; é o GUID vinculado especificado nesta entrada de registro específicas para a fábrica de editor regular. A finalidade desta entrada é que se o IDE não abrir um arquivo usando o editor padrão, o IDE tentará usar o editor de Avançar na lista. Este editor próxima não deve ser a fábrica do editor de página de código porque esta fábrica de editor é basicamente o mesmo que a fábrica do editor que falhou.|  
 |Pacote|REG_SZ|*\<GUID>*|VSPackage GUID para ResID do nome de exibição.|  

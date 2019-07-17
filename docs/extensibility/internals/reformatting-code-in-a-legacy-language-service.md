@@ -11,18 +11,19 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c489fcc3c845ae6421706f7d660083f2e5422e19
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 16130191eb6a4d8b6d7703a05aaf3271f8c739f5
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66341325"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891130"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>Reformatando o código em um serviço de linguagem herdado
 
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] código-fonte pode ser reformatado ao normalizar o uso de espaços em branco e recuos. Isso pode incluir inserindo ou remoção de espaços ou tabulações no início de cada linha, adicionar novas linhas entre as linhas ou substituindo espaços por tabulações ou guias com espaços.
 
->**Observação:** Inserindo ou excluindo os caracteres de nova linha pode afetar o marcadores, como pontos de interrupção e indicadores, mas a adição ou remoção de espaços ou tabulações não afeta marcadores.
+> [!NOTE]
+> Inserindo ou excluindo os caracteres de nova linha pode afetar o marcadores, como pontos de interrupção e indicadores, mas a adição ou remoção de espaços ou tabulações não afeta marcadores.
 
 Os usuários podem iniciar uma operação de reformatação, selecionando **seleção de formato** ou **Formatar documento** do **avançado** menu o **editar**menu. Uma operação de reformatação também pode ser disparada quando um trecho de código ou um determinado caractere é inserido. Por exemplo, quando você digita uma chave de fechamento em c#, tudo entre a chave de abertura correspondente e o colchete de fechamento é recuado automaticamente para o nível adequado.
 

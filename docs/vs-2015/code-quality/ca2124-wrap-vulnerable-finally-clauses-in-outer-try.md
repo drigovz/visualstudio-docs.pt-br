@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 755cce18afcad3fde621fb5a960cc780906afe51
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: de2bd0bfbf60ef717e00daaa668475cb43a9d35c
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63385992"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890935"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Encapsular cláusulas finally vulneráveis em try externo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "63385992"
  Essa regra localiza `try` / `finally` bloqueia no código que tem como alvo as versões 1.0 e 1.1 do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] que podem ser vulneráveis a filtros de exceção mal-intencionados presentes na pilha de chamadas. Se operações confidenciais como representação ocorrerem no bloco try, e uma exceção é lançada, o filtro pode ser executado antes de `finally` bloco. No exemplo de representação, isso significa que o filtro seria executado como o usuário representado. Os filtros são implementável atualmente apenas no Visual Basic.
 
 > [!WARNING]
-> **Observação** nas versões 2.0 e posteriores do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o tempo de execução protege automaticamente um `try` / `catch` /  `finally` bloquear de filtros de exceção mal-intencionados, se ocorrer a redefinição diretamente dentro do método que contém o bloco de exceção.
+> Nas versões 2.0 e posteriores do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], o tempo de execução protege automaticamente um `try` / `catch` /  `finally` bloquear de filtros de exceção mal-intencionados, se a reinicialização ocorrer diretamente dentro do método que contém o bloco de exceção.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Coloque o desencapsulamento `try` / `finally` em um bloco try externo. Consulte o segundo exemplo que segue. Isso força o `finally` seja executado antes do código de filtro.

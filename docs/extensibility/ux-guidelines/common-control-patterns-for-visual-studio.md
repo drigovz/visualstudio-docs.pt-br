@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c96e3798c79fcca03052dc597270312f374f1b33
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: 33becb67adb0453adef111ca2c8fb0d2b2e6edfc
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66312308"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67890967"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 ## <a name="BKMK_CommonControls"></a> Controles comuns
@@ -296,7 +296,8 @@ Diretrizes para usar o botão:
 #### <a name="graphical-buttons"></a>Botões gráficos
 Alguns botões devem sempre usar uma imagem gráfica e nunca inclua texto para conservar o espaço e evitar problemas de localização. Geralmente, eles são usados no seletor de campo e outras listas classificável.
 
-> **Observação:** Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
+> [!NOTE]
+> Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapa de `name` propriedade do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
 
 | Função | Botão |
 | --- | --- |
@@ -383,7 +384,7 @@ Um controle trid é um controle complexo que contém uma exibição de árvore e
 
 - **Seta para a direita:** Expanda um nó. Depois que o nó é expandido, ele deve continuar navegando até a coluna mais próxima à direita. Deve interromper a navegação no final da linha.
 
-- **Tab:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.
+- **Guia:** Navega para a célula mais próxima à direita.  No final da linha, a navegação continua para a próxima linha.
 
 - **Shift + Tab:** Navega para a célula mais próxima à esquerda.  No início da linha, a navegação continua para a célula mais à direita na linha anterior.
 

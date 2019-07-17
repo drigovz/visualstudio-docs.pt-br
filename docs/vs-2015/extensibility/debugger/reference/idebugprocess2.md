@@ -13,11 +13,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 68f1693bbbda9bbf7622c2378799db4a342be7a5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58926820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187972"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ IDebugProcess2 : IUnknown
 |[Desanexar](../../../extensibility/debugger/reference/idebugprocess2-detach.md)|Desanexa o depurador do processo.|  
 |[GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md)|Obtém o identificador de processo do sistema.|  
 |[GetProcessId](../../../extensibility/debugger/reference/idebugprocess2-getprocessid.md)|Obtém um identificador global exclusivo para esse processo.|  
-|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [PRETERIDO]|Obtém o nome da sessão que é o processo de depuração.<br /><br /> [DEPRECATED. DEVE SEMPRE RETORNAR `E_NOTIMPL`.]|  
+|[GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md)<br /><br /> [PRETERIDO]|Obtém o nome da sessão que é o processo de depuração.<br /><br /> [PRETERIDO. DEVE SEMPRE RETORNAR `E_NOTIMPL`.]|  
 |[EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)|Enumera os threads em execução no processo.|  
 |[CauseBreak](../../../extensibility/debugger/reference/idebugprocess2-causebreak.md)|Solicita que o próximo programa executando código em parar este processo.|  
 |[GetPort](../../../extensibility/debugger/reference/idebugprocess2-getport.md)|Obtém a porta que esse processo está sendo executado.|  
@@ -76,7 +76,7 @@ IDebugProcess2 : IUnknown
  [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)   
  [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md)   
  [Avançar](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)   
- [Event](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugportevents2-event.md)   
  [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)   
- [Event](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
+ [Evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)   
  [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

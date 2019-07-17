@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186799"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,7 +91,7 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
     ![Depurar o sombreador de cálculo IntegrateCS. ](../debugger/media/gfx-diag-demo-compute-shader-fluid-step-7.png "gfx_diag_demo_compute_shader_fluid_step_7")  
   
-4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: Shift+F5).  
+4. Para parar a depuração do sombreador de cálculo na **Debug** barra de ferramentas, escolha **parar depuração** (teclado: SHIFT + F5).  
   
 5. Em seguida, selecione o segundo `Dispatch` evento e inicie a depuração do sombreador de cálculo, exatamente como você fez na etapa anterior.  
   

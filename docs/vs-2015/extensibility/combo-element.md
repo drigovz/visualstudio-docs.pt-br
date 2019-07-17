@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: daa89266d653743a743f42e5f0b8e11c954adc1a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184407"
 ---
 # <a name="combo-element"></a>Elemento Combo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Define os comandos que aparecem em uma caixa de combinação. Há quatro tipos d
 |Elemento|Descrição|  
 |-------------|-----------------|  
 |Pai|Opcional. O elemento pai do botão.|  
-|CommandFlag|Necessário. Ver [comando sinalizador elemento](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um botão serão o seguinte.<br /><br /> -CaseSensitive<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> - DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -As teclas de filtragem<br /><br /> - IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
+|CommandFlag|Necessário. Ver [comando sinalizador elemento](../extensibility/command-flag-element.md). Os valores válidos de CommandFlag para um botão serão o seguinte.<br /><br /> -CaseSensitive<br /><br /> -CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> -DynamicVisibility<br /><br /> -As teclas de filtragem<br /><br /> -IconAndText<br /><br /> -NoAutoComplete<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> -StretchHorizontally|  
 |Cadeias de caracteres|Necessário. Ver [cadeias de caracteres de elemento](../extensibility/strings-element.md). Elemento ButtonText filho deve ser definido.|  
 |Anotação|Comentário opcional.|  
   

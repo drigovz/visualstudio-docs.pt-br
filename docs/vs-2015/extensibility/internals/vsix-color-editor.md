@@ -7,11 +7,11 @@ caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68197193"
 ---
 # <a name="vsix-color-editor"></a>Editor de cores do VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar c
   
    **Etapa 1: Determine os nomes de categoria e o token para novos tokens de cor.**  
   
-   Esquema de nomenclatura preferencial para um VSColor é **[Category] [tipo de interface do usuário] [estado]**. Não use a palavra "color" VSColor nomes, pois ela é redundante.  
+   Esquema de nomenclatura preferencial para um VSColor é **[Category] [tipo de interface do usuário] [estado]** . Não use a palavra "color" VSColor nomes, pois ela é redundante.  
   
    Os nomes de categoria fornecem agrupamentos lógicos e devem ser definidos como restrito quanto possível. Por exemplo, o nome de uma janela de ferramenta única pode ser um nome de categoria, mas o nome de uma equipe de unidade ou projeto de toda a empresa não é. Agrupamento de entradas em categorias ajuda a evitar confusão entre as cores com o mesmo nome.  
   
