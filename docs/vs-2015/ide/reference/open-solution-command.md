@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: bb99d359f3858d8e7f15e013ab56719c7ed14995
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199018"
 ---
 # <a name="open-solution-command"></a>Comando Abrir Solução
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ File.OpenSolution filename
 >File.OpenSolution "c:\MySolutions\Test1\Test1.sln"  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   
  [Janela Comando](../../ide/reference/command-window.md)   
  [Caixa Localizar/Comando](../../ide/find-command-box.md)   

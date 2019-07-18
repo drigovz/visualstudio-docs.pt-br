@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 920e7222b3b425cbb13c962ff8c2e1e2fc551bd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68159237"
 ---
 # <a name="resolving-assemblies-at-design-time"></a>Resolvendo assemblies em tempo de design
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,5 +39,5 @@ Quando você adiciona uma referência a um assembly por meio da guia .NET da cai
   
  O pacote de direcionamento que agora é fornecido com o SDK do .NET Framework inclui uma lista de todos os assemblies de tempo de execução nessa versão do Framework, denominada lista de redistribuição (redist). Isso torna impossível para o sistema de build resolver tipos em relação à versão errada do assembly.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

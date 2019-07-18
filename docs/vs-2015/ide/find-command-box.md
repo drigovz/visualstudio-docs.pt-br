@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b8bddc27eb4a59b65796c7837ae4561e5d56a5d5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160670"
 ---
 # <a name="findcommand-box"></a>Localizar/caixa de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,6 +53,6 @@ Localizar/caixa de comando
   
  Um acento circunflexo funciona da mesma forma tanto dentro quanto fora das aspas. Se um acento circunflexo for o último caractere na linha, ele será ignorado.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Janela Comando](../ide/reference/command-window.md)   
  [Localizando e substituindo texto](../ide/finding-and-replacing-text.md)

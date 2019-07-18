@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 756c19da1aeb8878c2d045f4ee471d8449d2a954
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68154808"
 ---
 # <a name="msbuild-tasks"></a>Tarefas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ Uma plataforma de build precisa de capacidade para executar qualquer número de 
 ## <a name="overridden-tasks"></a>Tarefas substituídas  
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] procura por tarefas em vários locais. O primeiro local está em arquivos com a extensão .OverrideTasks armazenados nos diretórios do .NET Framework. As tarefas nesses arquivos substituem quaisquer outras tarefas com os mesmos nomes, incluindo tarefas no arquivo de projeto. O segundo local está nos arquivos com a extensão .Tasks nos diretórios do .NET Framework. Se a tarefa não for encontrada em um desses locais, a tarefa no arquivo de projeto será usada.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [MSBuild](msbuild.md)   
  [Escrevendo tarefas](../msbuild/task-writing.md)   

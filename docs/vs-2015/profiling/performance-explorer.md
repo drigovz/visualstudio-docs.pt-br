@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 251b805367922d032eb90a70a9ba8ae9d8bd01f2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68155500"
 ---
 # <a name="performance-explorer"></a>Performance Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,5 +48,5 @@ As Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
 |**Controle a criação de perfil de com programação:** saiba como usar APIs das Ferramentas de Criação de Perfil nativas e gerenciadas para coletar de dados de controle diretamente do código-fonte.|[APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)|  
 |**Solucionar problemas de criação de perfil**|[Solução de problemas de ferramentas de desempenho](../profiling/troubleshooting-performance-tools-issues.md)|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Ferramentas de Criação de Perfil](../profiling/profiling-tools.md)

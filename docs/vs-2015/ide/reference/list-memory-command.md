@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 884dda624d5405ec017b544afd223be0bebc97e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199164"
 ---
 # <a name="list-memory-command"></a>Comando Listar Memória
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 >Debug.ListMemory /Format:float /Count:30 /Unicode  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)   
  [Comando List Threads](../../ide/reference/list-threads-command.md)   
  [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   

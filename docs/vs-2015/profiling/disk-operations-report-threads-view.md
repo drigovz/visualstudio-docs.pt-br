@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68202440"
 ---
 # <a name="disk-operations-report-threads-view"></a>Relatório de operações de disco (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ O relatório de operações de disco mostra operações de E/S de disco em canai
   
 - A latência de gravação, em milissegundos  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

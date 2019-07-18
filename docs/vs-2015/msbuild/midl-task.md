@@ -28,11 +28,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: c1404ae5fce31eb59d2bb484ce1d97956f4cfefc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68191569"
 ---
 # <a name="midl-task"></a>Tarefa MIDL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Parâmetro **String** opcional.  
   
-     Uma lista de opções de linha de comando. Por exemplo, **"**_/option1 /option2 /option#_". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa MIDL.  
+     Uma lista de opções de linha de comando. Por exemplo, **"** _/option1 /option2 /option#_ ". Use esse parâmetro para especificar opções de linha de comando não representadas por nenhum outro parâmetro da tarefa MIDL.  
   
      Para obter mais informações, consulte “MIDL Command-Line Reference” (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737).  
   
@@ -144,7 +144,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Se `true`, verifica se os valores de enumeração estão em um intervalo permitido.  
   
-     Para obter mais informações, consulte a opção **/error enum** na ajuda da linha de comando (**/?**) do midl.exe.  
+     Para obter mais informações, consulte a opção **/error enum** na ajuda da linha de comando ( **/?** ) do midl.exe.  
   
 - **ErrorCheckRefPointers**  
   
@@ -260,7 +260,7 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
      Parâmetro **String[]** opcional.  
   
-     Especifica um ou mais *defines*, ou seja, um nome e um valor opcional a serem passados para o pré-processador C como se por uma diretiva `#define`. A forma de cada define é *nome[=valor]*.  
+     Especifica um ou mais *defines*, ou seja, um nome e um valor opcional a serem passados para o pré-processador C como se por uma diretiva `#define`. A forma de cada define é *nome[=valor]* .  
   
      Para obter mais informações, consulte a opção **/D** em "MIDL Command-Line Reference" (Referência da linha de comando MIDL) no site do [MSDN](http://go.microsoft.com/fwlink/?LinkId=737). Consulte também o parâmetro **UndefinePreprocessorDefinitions** nessa tabela.  
   
@@ -420,5 +420,5 @@ Encapsula a ferramenta de compilador MIDL (linguagem IDL da Microsoft), midl.exe
   
 ## <a name="remarks"></a>Comentários  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência de tarefas](../msbuild/msbuild-task-reference.md)

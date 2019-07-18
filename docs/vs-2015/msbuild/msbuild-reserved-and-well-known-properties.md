@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 19fa9c35011e42905c1f26ed34da405be61d0aba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649537"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68181084"
 ---
 # <a name="msbuild-reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "59649537"
 ## <a name="reserved-and-well-known-properties"></a>Propriedades reservadas e conhecidas  
  A tabela a seguir descreve as propriedades predefinidas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-|Propriedade|Descrição|Reservadas ou conhecidas|  
+|Propriedade|DESCRIÇÃO|Reservadas ou conhecidas|  
 |--------------|-----------------|-----------------------------|  
 |`MSBuildBinPath`|O caminho absoluto da pasta em que os binários [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que estão sendo usados no momento estão localizados (por exemplo, C:\Windows\Microsoft.Net\Framework\\*versionNumber*). Essa propriedade será útil se você precisar fazer referência a arquivos no diretório [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].<br /><br /> Não inclua a barra invertida final nessa propriedade.|Reservado|  
 |`MSBuildExtensionsPath`|Apresentado no .NET Framework 4: não há diferença entre os valores padrão de `MSBuildExtensionsPath` e `MSBuildExtensionsPath32`. Você pode definir a variável de ambiente `MSBUILDLEGACYEXTENSIONSPATH` como um valor não nulo para habilitar o comportamento do valor padrão de `MSBuildExtensionsPath` em versões anteriores.<br /><br /> No .NET Framework 3.5 e versões anteriores, o valor padrão de `MSBuildExtensionsPath` aponta para o caminho da subpasta MSBuild na pasta \Program Files\ ou \Program Files (x86), dependendo do número de bits do processo atual. Por exemplo, para um processo de 32 bits em um computador de 64 bits, essa propriedade aponta para a pasta \Program Files (x86). Para um processo de 64 bits em um computador de 64 bits, essa propriedade aponta para a pasta \Program Files.<br /><br /> Não inclua a barra invertida final nessa propriedade.<br /><br /> Esse local é um local útil para colocar os arquivos de destino personalizados. Por exemplo, os arquivos de destino poderiam ser instalados em \Program Files\MSBuild\MyFiles\Northwind.targets e importados em arquivos de projeto usando esse código XML:<br /><br /> `<Import Project="$(MSBuildExtensionsPath)\MyFiles\Northwind.targets"/>`|Conhecidas|  
@@ -59,5 +59,5 @@ ms.locfileid: "59649537"
 |`MSBuildToolsPath`|O caminho de instalação da versão [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] associada ao valor de `MSBuildToolsVersion`.<br /><br /> Não inclua a barra invertida final no caminho.<br /><br /> Essa propriedade não pode ser substituída.|Reservado|  
 |`MSBuildToolsVersion`|A versão do Conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que é usado para compilar o projeto.<br /><br /> Observação: um conjunto de ferramentas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] consiste em tarefas, destinos e ferramentas que são usados para compilar um aplicativo. As ferramentas incluem compiladores, tais como csc.exe e vbc.exe. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md) e [Configurações padrão e personalizada do conjunto de ferramentas](../msbuild/standard-and-custom-toolset-configurations.md).|Reservado|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência do MSBuild](../msbuild/msbuild-reference.md) [Propriedades do MSBuild](msbuild-properties1.md)

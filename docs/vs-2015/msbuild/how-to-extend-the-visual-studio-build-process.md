@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68156605"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como estender o processo de build do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por
 
    A tabela a seguir mostra todos os destinos no Microsoft.Common.targets que você pode substituir com segurança.
 
-|Nome de Destino|Descrição|
+|Nome de Destino|DESCRIÇÃO|
 |-----------------|-----------------|
 |`BeforeCompile`, `AfterCompile`|Tarefas inseridas em um desses destinos são executadas antes ou após a conclusão da compilação principal. A maioria das personalizações é realizada em um desses dois destinos.|
 |`BeforeBuild`, `AfterBuild`|Tarefas inseridas em um desses destinos serão executadas antes ou depois de todo o resto no build. **Observação:** os destinos `BeforeBuild` e `AfterBuild` já estão definidos nos comentários no final da maioria dos arquivos de projeto. Isso permite que você adicione facilmente os eventos de pré e pós-build ao arquivo de projeto.|
@@ -119,11 +119,11 @@ O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propriedades “DependsOn” geralmente substituídas
 
-|Nome da Propriedade|Descrição|
+|Nome da Propriedade|DESCRIÇÃO|
 |-------------------|-----------------|
 |`BuildDependsOn`|A propriedade a ser substituída se você quiser inserir destinos personalizados antes ou após o processo inteiro de build.|
 |`CleanDependsOn`|A propriedade a ser substituída você quiser limpar a saída do seu processo de build personalizado.|
 |`CompileDependsOn`|A propriedade a ser substituída se você quiser inserir processos personalizados antes ou após a etapa de compilação.|
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Conceitos do MSBuild](../msbuild/msbuild-concepts.md) [.Arquivos de destino](../msbuild/msbuild-dot-targets-files.md)

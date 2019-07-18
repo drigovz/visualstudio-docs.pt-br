@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77868ea7082c1b9118b70062f19195d94b4ca20a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145553"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Interrompe ou inicia a criação de perfil para todos os processos em uma sessão de criação de perfil de linha de comando.  
   
- {**ProcessOff**&#124;**ProcessOn**}**:**`TID`  
+ {**ProcessOff**&#124;**ProcessOn**} **:** `TID`  
  Interrompe ou inicia a criação de perfil para o processo especificado.  
   
 ## <a name="example"></a>Exemplo  
@@ -71,7 +71,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

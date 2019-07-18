@@ -17,11 +17,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179336"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -113,7 +113,7 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
 2. Na caixa de diálogo **Opções**, abra **Editor de Texto**.  
   
-3. Em **C/C++**, escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.  
+3. Em **C/C++** , escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.  
   
 ## <a name="shortcuts"></a> Atalhos  
  Um *atalho* é um indicador no código que é controlado na **Lista de Tarefas**; ele tem um ícone diferente de um indicador normal. Clique duas vezes no atalho na **Lista de Tarefas** para ir até o local correspondente no código.  
@@ -126,5 +126,5 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
      Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md)

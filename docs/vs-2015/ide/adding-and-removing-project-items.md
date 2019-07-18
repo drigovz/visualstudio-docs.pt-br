@@ -13,17 +13,17 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 503f099de3dda673c4df352d8bfa871d20d51f2a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54783271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148266"
 ---
 # <a name="adding-and-removing-project-items"></a>Adicionando e removendo itens de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível adicionar ou remover projetos e itens de projeto clicando com o botão direito do mouse no nó do projeto ou da solução no **Gerenciador de Soluções** e escolhendo **Adicionar** ou **Remover**. A remoção de um projeto de uma solução ou de um item de um projeto não o exclui do disco nem de um controle do código-fonte, a menos que você selecione a opção para excluí-lo permanentemente.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   
  [Gerenciando propriedades de solução e de projeto](../ide/managing-project-and-solution-properties.md)

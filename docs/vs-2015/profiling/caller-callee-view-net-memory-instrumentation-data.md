@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 355ca018f1bf5192d6eb65b3fc218c8d1076563b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777619"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68176663"
 ---
 # <a name="callercallee-view---net-memory-instrumentation-data"></a>Exibição Chamador/Receptor da Chamada – dados de instrumentação da memória do .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
   
 ## <a name="general"></a>Geral  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Nome da Função**|O nome da função.|  
 |**Endereço da Função**|O endereço da função.|  
@@ -51,7 +51,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
   
 ## <a name="net-memory-allocation-values"></a>Valores de Alocação de Memória do .NET  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Alocações Exclusivas**|–   Para a função atual, o número de objetos que foram criados quando a função estava executando código no corpo da função (isto é, quando a função estava na parte superior da pilha de chamadas). O número não inclui objetos que foram criados em funções que foram chamadas por essa função.<br />–   Para uma função do chamador, o número das alocações exclusivas da função atual que foram geradas por chamadas dessa função do chamador.<br />–   Para uma função do computador chamado, o número de objetos criados por instâncias dessa função que foram chamados pela função atual. Esse número não inclui os objetos alocados por funções criadas pela função do computador chamado.|  
 |**% de Alocações Exclusivas**|O percentual de todos os objetos criados na execução de criação de perfil que eram alocações exclusivas dessa função.|  
@@ -65,7 +65,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 ## <a name="elapsed-inclusive-values"></a>Valores Inclusivos Decorridos  
  Os valores inclusivos decorridos indicam o tempo que uma função ficou na pilha de chamadas. O tempo inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Inclusivo Decorrido**|–   Para a função atual, o tempo gasto na função. O valor inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.<br />–   Para uma função do chamador, a quantidade de tempo inclusivo decorrido do aplicativo da função atual que foi gerado por chamadas dessa função do chamador.<br />-   Para uma função de computador chamado, o tempo gasto nessa função que foi gerado por chamadas da função atual. O valor inclui o tempo gasto em funções filho e em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.|  
 |**% de Tempo Inclusivo Decorrido**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo decorrido dessa função nesse contexto.|  
@@ -76,7 +76,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 ## <a name="elapsed-exclusive-values"></a>Valores Exclusivos Decorridos  
  Valores exclusivos decorridos indicam o tempo durante o qual uma função estava diretamente em execução no topo da pilha de chamadas. O tempo inclui o tempo em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, mas não inclui o tempo gasto em funções filho.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Exclusivo Decorrido**|–   Para a função atual, o tempo gasto na execução do corpo da função. O valor exclui tempo gasto em funções filho, mas inclui chamadas para o sistema operacional, como mudanças de contexto e operações de entrada/saída.<br />–   Para uma função do chamador, a quantidade de tempo exclusivo decorrido do aplicativo da função atual que foi gerado por chamadas dessa função do chamador.<br />-   Para uma função de computador chamado, o tempo gasto nessa função que foi gerado por chamadas da função atual. O valor exclui o tempo gasto em funções filho da função do computador chamado, mas inclui chamadas ao sistema operacional, como mudanças de contexto e operações de entrada/saída.|  
 |**% de Tempo Exclusivo Decorrido**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo decorrido total dessa função nesse contexto.|  
@@ -87,7 +87,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 ## <a name="application-inclusive-values"></a>Valores Inclusivos do Aplicativo  
  Os valores inclusivos do aplicativo indicam o tempo que uma função ficou na pilha de chamadas. O tempo não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto, mas inclui o tempo gasto em funções filho.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Inclusivo do Aplicativo**|–   Para a função atual, o tempo gasto na função e suas funções filho. O valor exclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudanças de contexto.<br />–   Para uma função do chamador, a quantidade de tempo inclusivo do aplicativo da função atual que foi gerado por chamadas dessa função do chamador.<br />–   Para uma função de computador chamado, o tempo gasto nessa função e suas funções filho que foi gerado por chamadas da função atual. O valor não inclui o tempo gasto em chamadas para o sistema operacional, como operações de entrada/saída e de mudança de contexto.|  
 |**% de Tempo Inclusivo do Aplicativo**|O percentual do tempo inclusivo decorrido total da execução da criação de perfil que foi gasto no tempo inclusivo do aplicativo total dessa função nesse contexto.|  
@@ -98,7 +98,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 ## <a name="application-exclusive-values"></a>Valores Exclusivos do Aplicativo  
  Valores exclusivos do aplicativo indicam o tempo gasto na função, excluindo o tempo gasto em funções filho. O tempo indicado também exclui o tempo gasto em chamadas ao sistema operacional, como mudanças de contexto e operações de entrada/saída.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Exclusivo do Aplicativo**|–   Para a função atual, o tempo gasto na execução do corpo da função. O valor não inclui o tempo gasto em funções filho nem inclui chamadas ao sistema operacional, como mudanças de contexto e operações de entrada/saída.<br />–   Para uma função do chamador, a quantidade de tempo exclusivo do aplicativo da função atual que foi gerado por chamadas dessa função do chamador.<br />-   Para uma função de computador chamado, o tempo gasto nessa função que foi gerado por chamadas da função atual. O valor não inclui o tempo gasto em funções filho da função do computador chamado, nem inclui chamadas ao sistema operacional, como mudanças de contexto e operações de entrada/saída.|  
 |**% de Tempo Exclusivo do Aplicativo**|O percentual do tempo exclusivo decorrido total da execução da criação de perfil que foi gasto no tempo exclusivo do aplicativo total dessa função nesse contexto.|  
@@ -106,7 +106,7 @@ O modo de exibição de Chamador/Computador Chamado dos dados de criação de pe
 |**Tempo Exclusivo Máximo do Aplicativo**|O tempo exclusivo máximo do aplicativo de uma chamada para essa função nesse contexto.|  
 |**Tempo Exclusivo Mínimo do Aplicativo**|O tempo exclusivo mínimo do aplicativo de uma chamada para essa função nesse contexto.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição Chamador/Receptor da Chamada – dados de amostragem da memória do .NET](../profiling/caller-callee-view-dotnet-memory-sampling-data.md)   
  [Exibição de chamador/computador chamado – dados de instrumentação](../profiling/caller-callee-view-instrumentation-data.md)   

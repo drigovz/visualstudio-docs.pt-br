@@ -13,11 +13,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652271"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68165455"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Instalar várias versões de idioma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Ao instalar um ou mais pacotes de idioma, você pode executar o Visual Studio 20
 
 - Você pode desinstalar pacotes de idioma usando o modo de manutenção da configuração do Visual Studio. Abra **Painel de Controle**, abra **Programas e Recursos**, escolha sua edição do Visual Studio e, em seguida, escolha **Desinstalar/Alterar**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Microsoft LIPs (Language Interface Packs) e Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
 - [Instalar o Visual Studio](../install/install-visual-studio-2015.md)
