@@ -17,11 +17,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4ea89855a83cdf01255cacc7c8c639c6fcfe1cc4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187074"
 ---
 # <a name="additional-resources-for-msbuild"></a>Recursos adicionais para o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Os sites e fóruns a seguir podem ajudá-lo a encontrar respostas para perguntas
  [Fórum do Visual Studio MSBuild](http://go.microsoft.com/fwlink/?LinkId=48931)  
  Um fórum da comunidade dedicado ao [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)].  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [MSBuild](msbuild.md)   
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)

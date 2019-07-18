@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 6fe9e8d3dbd1e7395287cd7241f1e6145dffca7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078194"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145396"
 ---
 # <a name="using-profiling-methods-to-collect-performance-data-from-the-command-line"></a>Usando métodos da criação de perfil para coletar dados de desempenho a partir da linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ A escolha de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Ferramentas de Criaç�
 ## <a name="BKMK_Adding_tier_interaction_data_to_a_profiling_run"></a> Adicionando dados de interação de camadas a uma execução de criação de perfil  
  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Consulte [Coletando dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)

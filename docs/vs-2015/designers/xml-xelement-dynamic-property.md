@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 368b18e7524e0cff31139de67f8092f9069246bf
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54779542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68148051"
 ---
 # <a name="xml-xelement-dynamic-property"></a>XML (propriedade dinâmica de XElement)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,6 +35,6 @@ elem.Xml
 ## <a name="remarks"></a>Comentários  
  Esta propriedade é equivalente ao método de <xref:System.Xml.Linq.XNode.ToString%28System.Xml.Linq.SaveOptions%29> da classe de <xref:System.Xml.Linq.XNode?displayProperty=fullName> , com o parâmetro de `SaveOptions` definido como <xref:System.Xml.Linq.SaveOptions>.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Propriedades Dinâmicas da Classe XElement](../designers/xelement-class-dynamic-properties.md)   
  [Valor](../designers/value-xelement-dynamic-property.md)

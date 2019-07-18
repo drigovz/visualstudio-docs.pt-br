@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 77e21a280700520b6861dd42e01a4aefa4faa704
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68180197"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn e ProcessOff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  O identificador inteiro do processo para iniciar ou parar. IDs de processo são listados na guia processo do Gerenciador de tarefas do Windows.  
   
 ## <a name="required-subcommands"></a>Subcomandos necessários  
- Nenhuma  
+ Nenhum  
   
 ## <a name="valid-subcommands"></a>Subcomandos válidos  
  **ProcessOn** e **ProcessOff** podem ser especificados em linhas de comando que também contêm os subcomandos a seguir.  
@@ -62,7 +62,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
  **GlobalOff**&#124;**GlobalOn**  
  Interrompe ou inicia a criação de perfil para todos os processos em uma sessão de criação de perfil de linha de comando.  
   
- {**ThreadOff**&#124;**ThreadOn**}**:**`TID`  
+ {**ThreadOff**&#124;**ThreadOn**} **:** `TID`  
  Interrompe ou inicia a criação de perfil para o thread especificado (somente no método de instrumentação).  
   
 ## <a name="example"></a>Exemplo  
@@ -80,7 +80,7 @@ VSPerfCmd /Shutdown
   
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [VSPerfCmd](../profiling/vsperfcmd.md)   
  [Criando perfil de aplicativos autônomos](../profiling/command-line-profiling-of-stand-alone-applications.md)   
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

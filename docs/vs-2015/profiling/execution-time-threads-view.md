@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b4306e030c2f48d87b12ba6338a847dc9e9aa892
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68179035"
 ---
 # <a name="execution-time-threads-view"></a>Tempo de execução (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,6 +31,6 @@ Esses segmentos na linha do tempo de exibição de threads representam o tempo d
   
  Para ver um perfil de amostragem tradicional para todos os segmentos de execução na exibição atual, clique em **Execução** no perfil de linha de tempo visível.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Relatório do perfil de execução](../profiling/execution-profile-report.md)   
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

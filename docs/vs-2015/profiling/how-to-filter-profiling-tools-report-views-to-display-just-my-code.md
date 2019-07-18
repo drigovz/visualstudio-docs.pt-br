@@ -10,11 +10,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f47ddbadc5decaa292d34cd2becbff69e69b51a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68146102"
 ---
 # <a name="how-to-filter-profiling-tools-report-views-to-display-just-my-code"></a>Como filtrar exibições de relatório das ferramentas de criação de perfil para exibir apenas meu código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,5 +37,5 @@ O Visual Studio 2010 Premium fornece filtragem para relatórios de desempenho pa
   
 3. Em **Configurações Gerais**, desmarque a caixa de seleção **Habilitar Apenas Meu Código**.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Personalizando exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)

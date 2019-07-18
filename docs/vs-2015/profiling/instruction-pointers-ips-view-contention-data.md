@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: b27b185e659fc3a1f0adca4379896543a1eb87ea
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187844"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>Exibição de IPs (ponteiros de instrução) – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ O modo de exibição de IPs dos dados de contenção lista dados para as instru�
   
  A tabela a seguir explica os valores das colunas no modo de exibição de Ponteiros de Instrução.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tempo Bloqueado Exclusivo**|O tempo de bloqueio nesta função.|  
 |**% de Tempo Bloqueado Exclusivo**|O percentual de tempo de bloqueio enquanto a instrução era executada.|  
@@ -45,7 +45,7 @@ O modo de exibição de IPs dos dados de contenção lista dados para as instru�
 |**Início da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução começa.|  
 |**Final da Linha de Origem**|O número de linha no arquivo de origem em que esta instrução termina.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Exibição de IPs (ponteiros de instrução)](../profiling/instruction-pointers-ips-view.md)   
  [Exibição de IPs (ponteiros de instrução) – Amostragem](../profiling/instruction-pointers-ips-view-dotnet-memory-sampling-data.md)   

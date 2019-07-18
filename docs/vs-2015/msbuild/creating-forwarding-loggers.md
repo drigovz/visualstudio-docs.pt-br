@@ -13,11 +13,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ecc9bae7176c0d8c0f79452baff87a7a697db459
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68184028"
 ---
 # <a name="creating-forwarding-loggers"></a>Criando agentes de log de encaminhamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Agentes de encaminhamento melhoram a eficiência de log, permitindo que você es
 ## <a name="multi-processor-aware-loggers"></a>Agentes com reconhecimento de multiprocessador  
  Quando você cria um projeto em um sistema com vários processadores, as mensagens de build de cada processador não são intercaladas automaticamente em uma sequência unificada. Em vez disso, você deve estabelecer uma prioridade de agrupamento de mensagens usando a classe <xref:Microsoft.Build.Framework.BuildEventContext> que está anexada a cada mensagem. Para obter mais informações sobre o build de vários processadores, consulte [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   
  [Agentes de Log de Build](../msbuild/build-loggers.md)   
  [Registrando em log em um ambiente multiprocessador](../msbuild/logging-in-a-multi-processor-environment.md)

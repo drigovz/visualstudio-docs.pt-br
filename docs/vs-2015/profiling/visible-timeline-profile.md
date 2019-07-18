@@ -14,16 +14,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 8803d5fcdd8bd1da85cc26977d68f2c96b15563f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68145322"
 ---
 # <a name="visible-timeline-profile"></a>Perfil da linha de tempo visível
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O Perfil da Linha de Tempo Visível para a Exibição de Bloqueio de Thread fornece informações estatísticas e links para relatórios. Conforme você amplia, reduz, rola horizontalmente, oculta ou mostra canais, os números na legenda ativa são alterados para refletir o que está atualmente no modo de exibição. Para exibir um relatório sobre um item na legenda, clique no item.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

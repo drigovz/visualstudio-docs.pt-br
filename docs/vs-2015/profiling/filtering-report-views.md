@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164059"
 ---
 # <a name="filtering-report-views"></a>Filtrando exibições de relatório
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
   
 2. Para cada cláusula que desejar adicionar a um filtro, selecione ou insira valores nos seguintes campos de uma linha.  
   
-    |Campo|Descrição|  
+    |Campo|DESCRIÇÃO|  
     |-----------|-----------------|  
     |**And/Or**|Escolha **And** se essa cláusula e a próxima devem ambas ser verdadeiras para corresponder a um resultado. Escolha **Or** se essa cláusula ou a próxima podem ser verdadeiras para corresponder a um resultado.|  
     |**Campo**|Selecione o campo de relatório para usar na cláusula de filtro da lista de campos de dados exibida.|  
@@ -94,5 +94,5 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
   
 2. Especifique o local e o nome do arquivo do filtro (.vspf) para salvar.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Personalizando exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)

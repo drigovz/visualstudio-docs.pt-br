@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: cc3d606bb890b5f95089bfc7b1e83b2d34cd56ba
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68192610"
 ---
 # <a name="item-element-msbuild"></a>Elemento Item (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
   
 ### <a name="attributes"></a>Atributos  
   
-|Atributo|Descrição|  
+|Atributo|DESCRIÇÃO|  
 |---------------|-----------------|  
 |`Include`|Atributo obrigatório.<br /><br /> O arquivo ou curinga a ser incluído na lista de itens.|  
 |`Exclude`|Atributo opcional.<br /><br /> O arquivo ou curinga a ser excluído da lista de itens.|  
@@ -62,13 +62,13 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
   
 ### <a name="child-elements"></a>Elementos filho  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
 |[ItemMetadata](../msbuild/itemmetadata-element-msbuild.md)|Uma chave de metadados de item definido pelo usuário, que contém o valor de metadados do item. Pode ser que não haja nenhum ou mais de um elemento `ItemMetadata` em um item.|  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
-|Elemento|Descrição|  
+|Elemento|DESCRIÇÃO|  
 |-------------|-----------------|  
 |[ItemGroup](../msbuild/itemgroup-element-msbuild.md)|Elemento grouping para itens.|  
   
@@ -91,7 +91,7 @@ Contém um item definido pelo usuário e seus metadados. Cada item usado em um p
 </ItemGroup>  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Itens](../msbuild/msbuild-items.md)   
  [Propriedades do MSBuild](msbuild-properties1.md)   
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)

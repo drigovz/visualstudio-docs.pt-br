@@ -12,16 +12,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 6d1a6f33bcecbcd607422741442120471e313791
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68163238"
 ---
 # <a name="tabs-and-windows-environment-options-dialog-box"></a>Caixa de diálogo janelas e guias, ambiente, opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Use esta página para definir opções de como janelas com guias se comportam no painel do editor e como as janelas de ferramentas se comportam. Para obter mais informações, consulte [Como organizar e encaixar janelas](../../misc/how-to-arrange-and-dock-windows.md)  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

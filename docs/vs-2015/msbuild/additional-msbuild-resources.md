@@ -600,11 +600,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 5bf30e3267939385a3cca3459390c4c7591909a6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68187099"
 ---
 # <a name="additional-msbuild-resources"></a>Recursos adicionais do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -622,5 +622,5 @@ Se você está tentando resolver um problema e não consegue encontrar as inform
 ## <a name="product-support"></a>Suporte a produto  
  Se ainda tiver dúvidas após tentar os outros recursos, entre em contato com os serviços de suporte da Microsoft acessando o site de [Ajuda e Suporte da Microsoft](http://go.microsoft.com/fwlink/?linkid=1782). Para obter informações sobre o suporte de produto disponível na sua área, consulte [Fale conosco](../ide/talk-to-us.md).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Solução de problemas com erros de direcionamento do .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)

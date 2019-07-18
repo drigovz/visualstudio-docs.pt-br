@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 2f60e8eedeeb7106a7a95a33a4a5cc794194861c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68164564"
 ---
 # <a name="caller--callee-view----contention-data"></a>Modo de Exibição Chamador/Receptor - Dados de Contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Modo de exibição Chamador/Receptor exibe informações de contenção para uma
   
  As **funções que foram chamadas pela função atual** são exibidas na grade inferior e mostram informações de contenção para as funções do receptor (filho) da função selecionada quando a função filho foi chamada pela função atual.  
   
-|Column|Descrição|  
+|Column|DESCRIÇÃO|  
 |------------|-----------------|  
 |**Tipo**|O contexto da função:<br /><br /> -   **0** – a função atual<br />-   **1** – uma função que chama a função atual<br />-   **2** – uma função que é chamada pela função atual<br /><br /> Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Tempo Bloqueado Exclusivo**|-Para a função atual, a hora em que essa função foi impedida de executar o código no corpo da função. Não inclui o tempo bloqueado nas funções chamadas pela função.<br />-Para uma função do chamador, a parte do tempo bloqueado exclusivo da função atual que ocorreram quando essa função de chamada de função atual.<br />-Para uma função do chamador, a hora em que essa função foi impedida de executar seu próprio código quando essa função foi chamada pela função atual. O tempo bloqueado em funções filho chamadas pela função receptor não está incluído.|  
@@ -50,7 +50,7 @@ Modo de exibição Chamador/Receptor exibe informações de contenção para uma
 |**Nome da Função Raiz**|O nome da função atual. Somente em relatórios de linha de comando [VSPerfReport](../profiling/vsperfreport.md).|  
 |**Arquivo de Origem**|O arquivo de origem que contém a definição dessa função.|  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Como personalizar as colunas de exibição do relatório](../profiling/how-to-customize-report-view-columns.md)   
  [Modo de Exibição de Chamador/Receptor](../profiling/caller-callee-view.md)   
  [Exibição de chamador/computador chamado – dados de amostragem](../profiling/caller-callee-view-sampling-data.md)   

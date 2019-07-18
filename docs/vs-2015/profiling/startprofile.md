@@ -12,11 +12,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 994cde18cfe304add796bffa74d2a327e1c63f45
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68199751"
 ---
 # <a name="startprofile"></a>StartProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
   
  Indica o nível de perfil de desempenho que pode ser aplicado a coleta de dados. Os enumeradores seguintes **PROFILE_CONTROL_LEVEL** podem ser usados para indicar um dos três níveis de desempenho aos quais a coleta de dados pode ser aplicada:  
   
-|Enumerador|Descrição|  
+|Enumerador|DESCRIÇÃO|  
 |----------------|-----------------|  
 |PROFILE_GLOBALLEVEL|A configuração de nível global afeta todos os processos e threads na execução da criação de perfil.|  
 |PROFILE_PROCESSLEVEL|Configuração de nível de processo afeta todos os threads que fazem parte do processo especificado.|  
@@ -49,7 +49,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>Valor da propriedade/valor de retorno  
  A função indica êxito ou falha usando a enumeração **PROFILE_COMMAND_STATUS**. O valor de retorno pode ser um dos seguintes:  
   
-|Enumerador|Descrição|  
+|Enumerador|DESCRIÇÃO|  
 |----------------|-----------------|  
 |PROFILE_ERROR_ID_NOEXIST|A ID de elemento de criação de perfil não existe.|  
 |PROFILE_ERROR_LEVEL_NOEXIST|O nível de criação de perfil especificado não existe.|  
@@ -109,5 +109,5 @@ void ExerciseStartProfile()
 }  
 ```  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)

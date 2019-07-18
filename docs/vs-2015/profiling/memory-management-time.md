@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 48cbdd523f4527af84c52366a439a18330e1828c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68157342"
 ---
 # <a name="memory-management-time"></a>Hora de gerenciamento da memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,5 +27,5 @@ Esses segmentos na linha do tempo estão associados os tempos de bloqueio catego
   
  Examine os relatórios de perfil e as pilhas de chamada associados para entender melhor os motivos subjacentes para os bloqueios categorizados como Gerenciamento de Memória.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

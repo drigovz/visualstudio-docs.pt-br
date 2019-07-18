@@ -14,11 +14,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 793b0e49a8e2dcb38b5b2421f09bd2b2ad3d7eed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68160317"
 ---
 # <a name="report-based-on-visible-time-range"></a>Relatório com base no intervalo de tempo visível
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ O modo de exibição de perfil exibe relatórios com base no intervalo de tempo 
   
  Você pode encontrar mais informações sobre os dados nas tabelas aqui.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Nenhuma atividade de thread a ser mostrada](../profiling/no-thread-activity-to-show-threads-view.md)   
  [Relatório do perfil de execução](../profiling/execution-profile-report.md)   
  [Tempo de sincronização](../profiling/synchronization-time.md)   

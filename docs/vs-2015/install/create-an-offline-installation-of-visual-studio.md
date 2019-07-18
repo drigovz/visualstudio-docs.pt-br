@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "68186008"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Esta página descreve como instalar o Visual Studio 2015 quando você não está
 |       Idioma        |                            URL                            |
 |-----------------------|-----------------------------------------------------------|
 | Chinês (simplificado)  | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x804 |
-| Chinês (tradicional) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
+| Chinês (Tradicional) | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x404 |
 |         Tcheco         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x405 |
 |        Alemão         | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x407 |
 |        Inglês        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x409 |
@@ -84,6 +84,6 @@ Esta página descreve como instalar o Visual Studio 2015 quando você não está
 |        Russo        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x419 |
 |        Turco        | http://go.microsoft.com/fwlink/?LinkID=785882&clcid=0x41F |
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Instalar o Visual Studio](install-visual-studio-2015.md)
