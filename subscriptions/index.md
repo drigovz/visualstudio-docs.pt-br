@@ -7,12 +7,12 @@ layout: LandingPage
 Ms.date: 06/25/2018
 Ms.topic: landing-page
 Description: Bem-vindo às Assinaturas do Visual Studio
-ms.openlocfilehash: d5083141fdaaf5eede2cc181c51cd0340575bbb9
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 25337098dded67d28df1cea03a47ec8c28646763
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784383"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315222"
 ---
 # <a name="visual-studio-subscriptions"></a>Assinaturas do Visual Studio
 
@@ -193,7 +193,6 @@ Para tornar sua assinatura ainda mais útil, podemos adicionar e atualizar os be
                             <li><a href="/visualstudio/subscriptions/vs-linkedin-learning">LinkedIn Premium</a> (empresarial, técnico e criativo)</li>
                             <li><a href="/visualstudio/subscriptions/vs-pluralsight">Pluralsight</a> (nuvem, design, dispositivos móveis e dados)</li>
                             <li><a href="/visualstudio/subscriptions/vs-datacamp">Data Camp</a> (ciência de dados e IA)</li>
-                            <li><a href="/visualstudio/subscriptions/vs-opsgility">Treinamento do Opsgility</a> (focado na nuvem)</li>
                             <li><a href="/visualstudio/subscriptions/vs-tech-support">Incidentes de Suporte Técnico Profissional da Microsoft</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-advisory-chat">Chat de Consultoria do Azure</a></li>
                             <li><a href="/visualstudio/subscriptions/vs-azure-community">Comunidade do Azure</a></li>
