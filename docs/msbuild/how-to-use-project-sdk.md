@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55fcc74069ab912a7ec0fb9a6c4996cfd0b9cc36
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 172dfae63fbfb95432a1635490ac703f7bbd9021
+ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977318"
+ms.lasthandoff: 07/12/2019
+ms.locfileid: "67852235"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>Como: Como usar SDKs de projeto do MSBuild
 
@@ -56,7 +56,15 @@ Durante a avaliação do projeto, o [!INCLUDE[vstecmsbuild](../extensibility/int
     </Project>
     ```
 
-    Uma importação implícita é adicionada às partes superior e inferior do projeto, conforme descrito acima.  O formato do atributo `Sdk` é `Name[/Version]`, em que Versão é opcional.  Por exemplo, você pode especificar `My.Custom.Sdk/1.2.3`.
+    Uma importação implícita é adicionada às partes superior e inferior do projeto, conforme descrito acima.
+    
+    Para especificar uma versão do SDK, você poderá anexá-la ao atributo `Sdk`:
+
+    ```xml
+    <Project Sdk="My.Custom.Sdk/1.2.3">
+        ...
+    </Project>
+    ```
 
     > [!NOTE]
     > Isso atualmente é a única maneira com suporte para fazer referência a um projeto do SDK no Visual Studio para Mac.

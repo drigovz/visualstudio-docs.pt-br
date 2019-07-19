@@ -3,17 +3,16 @@ title: Novidades nas assinaturas do Visual Studio
 description: Saiba mais sobre os recursos novos e atualizados que você pode usar para gerenciar assinaturas do Visual Studio.
 ms.custom: ''
 ms.date: 06/27/2019
-searchscope: VS Subscription
 ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: 6984d4aab23817707280af6bce47deee8d79adf7
-ms.sourcegitcommit: 0cd282a7584b9bfd4df7882f8fdf3ad8a270e219
+ms.openlocfilehash: 8dd4063e6250ccf2f54a88f08ef0c6e2b378fe8b
+ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/28/2019
-ms.locfileid: "67465116"
+ms.lasthandoff: 07/15/2019
+ms.locfileid: "67891082"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -21,7 +20,7 @@ Nós atualizamos o pacote de benefícios da Assinatura com frequência para torn
 
 ## <a name="2019-q1-january-march"></a>T1 2019 (janeiro a março)
 
-### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstuidocom"></a>Uso Máximo adicionado ao [Portal de administração de assinaturas](https://manage.visualstuido.com)
+### <a name="maximum-usage-added-to-subscriptions-administration-portalhttpsmanagevisualstudiocom"></a>Uso Máximo adicionado ao [Portal de administração de assinaturas](https://manage.visualstudio.com)
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. Isso pode ajudá-lo a entender o uso da assinatura atual e a planejar compras futuras. 
 
   > [!div class="mx-imgBorder"]
