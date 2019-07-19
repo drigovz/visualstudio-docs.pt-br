@@ -43,7 +43,7 @@ Lista os nomes das atividades de fluxo de trabalho registradas atualmente em seu
 Namespace\
 Exibe a hierarquia do namespace .NET que define a estrutura da atividade.
 
-Nome do assembly
+Nome do assembly\
 Exibe o nome e versão do assembly .NET que contém a atividade.
 
 Directory\
