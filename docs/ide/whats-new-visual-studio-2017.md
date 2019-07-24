@@ -36,14 +36,14 @@ Deseja atualizar de uma versão anterior do Visual Studio? Isto é o que o Visua
 
 Veja uma recapitulação de alto nível das alterações feitas em relação à versão anterior, o Visual Studio 2015:
 
-* **[Princípios básicos redefinidos](#redefined-fundamentals)**. Uma nova experiência de instalação significa que é possível instalar mais rapidamente e instalar o que você deseja quando necessário.
-* **[Desempenho e produtividade](#performance-and-productivity)**. Nosso foco ficou em novos e modernos recursos de desenvolvimento para desktop, dispositivos móveis e nuvem. Além disso, o Visual Studio é iniciado mais rapidamente, é mais dinâmico e usa menos memória do que antes.
-* **[Desenvolvimento de aplicativo na nuvem com o Azure](#cloud-app-development-with-azure)**. Um pacote interno de ferramentas do Azure que permite criar com facilidade aplicativos diretamente em nuvem da plataforma Microsoft Azure. O Visual Studio facilita a configuração, o build, a depuração, o empacotamento e a implantação de aplicativos e serviços no Azure.
-* **[Desenvolvimento de aplicativos do Windows](#windows-app-development)**. Use os modelos da UWP no Visual Studio 2017 para criar um projeto único para todos os dispositivos do Windows 10 &ndash; PC, tablet, smartphone, Xbox, HoloLens, Surface Hub e muito mais.
-* **[Desenvolvimento de aplicativos móveis](#mobile-app-development)**. Inove e obtenha resultados rápidos com o Xamarin, que unifica seus requisitos móveis multiplataforma em uma base de código principal e um conjunto de habilidades.
-* **[Desenvolvimento de multiplataforma](#cross-platform-development)**. Distribua software perfeitamente para qualquer plataforma de destino. Estenda os processos do DevOps para o SQL Server por meio do Redgate Data Tools e automatize com segurança as implantações do banco de dados por meio do Visual Studio. Ou então, use o .NET Core para escrever aplicativos e bibliotecas que são executados sem modificações nos sistemas operacionais Windows, Linux e macOS.
-* **[Desenvolvimento de jogos](#games-development)**. Com o VSTU (Ferramentas do Visual Studio para Unity), é possível usar o Visual Studio para escrever scripts de jogo e editor em C# e, em seguida, usar seu depurador avançado para encontrar e corrigir erros.
-* **[Desenvolvimento de IA](#ai-development)**. Com as Visual Studio Tools for AI, é possível usar as funcionalidades de produtividade do Visual Studio para acelerar a inovação em IA. Crie, teste e implante soluções de Aprendizado Profundo/IA que são integradas com o Azure Machine Learning para obter funcionalidades robustas de experimentação.
+* **[Princípios básicos redefinidos](#redefined-fundamentals)** . Uma nova experiência de instalação significa que é possível instalar mais rapidamente e instalar o que você deseja quando necessário.
+* **[Desempenho e produtividade](#performance-and-productivity)** . Nosso foco ficou em novos e modernos recursos de desenvolvimento para desktop, dispositivos móveis e nuvem. Além disso, o Visual Studio é iniciado mais rapidamente, é mais dinâmico e usa menos memória do que antes.
+* **[Desenvolvimento de aplicativo na nuvem com o Azure](#cloud-app-development-with-azure)** . Um pacote interno de ferramentas do Azure que permite criar com facilidade aplicativos diretamente em nuvem da plataforma Microsoft Azure. O Visual Studio facilita a configuração, o build, a depuração, o empacotamento e a implantação de aplicativos e serviços no Azure.
+* **[Desenvolvimento de aplicativos do Windows](#windows-app-development)** . Use os modelos da UWP no Visual Studio 2017 para criar um projeto único para todos os dispositivos do Windows 10 &ndash; PC, tablet, smartphone, Xbox, HoloLens, Surface Hub e muito mais.
+* **[Desenvolvimento de aplicativos móveis](#mobile-app-development)** . Inove e obtenha resultados rápidos com o Xamarin, que unifica seus requisitos móveis multiplataforma em uma base de código principal e um conjunto de habilidades.
+* **[Desenvolvimento de multiplataforma](#cross-platform-development)** . Distribua software perfeitamente para qualquer plataforma de destino. Estenda os processos do DevOps para o SQL Server por meio do Redgate Data Tools e automatize com segurança as implantações do banco de dados por meio do Visual Studio. Ou então, use o .NET Core para escrever aplicativos e bibliotecas que são executados sem modificações nos sistemas operacionais Windows, Linux e macOS.
+* **[Desenvolvimento de jogos](#games-development)** . Com o VSTU (Ferramentas do Visual Studio para Unity), é possível usar o Visual Studio para escrever scripts de jogo e editor em C# e, em seguida, usar seu depurador avançado para encontrar e corrigir erros.
+* **[Desenvolvimento de IA](#ai-development)** . Com as Visual Studio Tools for AI, é possível usar as funcionalidades de produtividade do Visual Studio para acelerar a inovação em IA. Crie, teste e implante soluções de Aprendizado Profundo/IA que são integradas com o Azure Machine Learning para obter funcionalidades robustas de experimentação.
 
 > [!NOTE]
 > Para obter uma lista completa dos novos recursos e funcionalidades no Visual Studio 2017, consulte as [Notas de versão atuais](/visualstudio/releasenotes/vs2017-relnotes?context=visualstudio/default&contextView=vs-2017). E para ver ofertas futuras de recursos, consulte as [Notas da versão prévia](/visualstudio/releasenotes/vs2017-preview-relnotes?context=visualstudio/default&contextView=vs-2017).
@@ -108,11 +108,11 @@ O Roaming Extension Manager rastreia todas as extensões instaladas, mas você p
 
 Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua lista:
 
-* ![Ícone de Roaming](media/vs2017ide-roamedicon.png) **_Roaming_**: Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
+* ![Ícone de Roaming](media/vs2017ide-roamedicon.png) **_Roaming_** : Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
   (Você pode instalá-las usando o botão **Download**).
-* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png) ** _Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
+* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png)  **_Roaming e Instalado_** : Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
   (Se você decidir que não deseja usar perfil móvel, poderá remover essas extensões usando o botão **Parar Roaming**).
-* ![Ícone de Instalado](media/vs2017ide-installedicon.png) ** _Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
+* ![Ícone de Instalado](media/vs2017ide-installedicon.png)  **_Instalado_** : Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
   (Você pode adicionar extensões à Lista de Roaming usando o botão **Iniciar Roaming**).
 
 Qualquer extensão baixada enquanto você estiver conectado será adicionada à lista como **Roaming e Instalado**. Além disso, a extensão fará parte da lista Roaming, que fornece acesso a ela em qualquer computador.
@@ -178,7 +178,7 @@ Atualizamos a experiência de navegação para ajudá-lo a chegar de um lugar a 
 
 * **Ir para Implementação** (**Ctrl**+**F12**) &ndash; Navegue de qualquer membro ou tipo base até suas várias implementações.
 
-* **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+**,**) &ndash; Navegue diretamente para qualquer declaração de arquivo/tipo/membro/símbolo. É possível filtrar a lista de resultados ou usar a sintaxe de consulta (por exemplo, “f searchTerm” para arquivos, “t searchTerm” para tipos, etc.).
+* **Ir para Todos** (**Ctrl**+**T** ou **Ctrl**+ **,** ) &ndash; Navegue diretamente para qualquer declaração de arquivo/tipo/membro/símbolo. É possível filtrar a lista de resultados ou usar a sintaxe de consulta (por exemplo, “f searchTerm” para arquivos, “t searchTerm” para tipos, etc.).
 
   ![Ir para Todos aprimorado](media/vs2017ide-navigation-go-to.png)
 
@@ -299,7 +299,7 @@ Para obter mais informações, consulte a página [Visual Studio e Xamarin](/xam
 
 ![O Android Emulator da Google em tecnologias Hyper-V](media/xamarin-hyperv-android-emulator.png)
 
-#### <a name="xamarinandroid-designer-split-view-editor"></a>Editor de modo divisão do designer do Xamarin.Android
+#### <a name="xamarinandroid-designer-split-view-editor"></a>Editor de modo divisão do Xamarin.Android Designer
 
 Também uma **novidade do 15.8**: Fizemos melhorias significativas na experiência de designer no Xamarin.Android. Um destaque é o novo editor de modo divisão que permite criar, editar e visualizar seus layouts ao mesmo tempo.
 
@@ -366,8 +366,8 @@ Para obter mais informações, consulte a página [Visual Studio Tools for AI](.
 
 O Visual Studio 2017 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Veja um resumo das atualizações mais importantes que estão em versão prévia experimental:
 
-* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)**, uma nova ferramenta que permite compartilhar uma base de código e seu contexto com um membro da equipe e ter uma colaboração bidirecional instantânea diretamente no Visual Studio. Com o Live Share, um membro da equipe pode ler, navegar, editar e depurar um projeto compartilhado com ele de forma fácil e segura.<br><br>Para saber mais, confira [Live Share FAQ](/visualstudio/liveshare/faq) (Perguntas frequentes sobre o Live Share).<br><br>
-* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)**, uma nova funcionalidade que aprimora o desenvolvimento de software usando IA para oferecer melhores conclusões de código com reconhecimento de contexto, orientar os desenvolvedores na codificação de padrões e estilos da equipe, encontrar problemas de código difíceis de detectar e focar as revisões de código em áreas que realmente importam. <br><br>Para saber mais, confira as [Perguntas Frequentes sobre o Visual Studio IntelliCode](/visualstudio/intellicode/faq).
+* **[Live Share](https://visualstudio.microsoft.com/services/live-share/)** , uma nova ferramenta que permite compartilhar uma base de código e seu contexto com um membro da equipe e ter uma colaboração bidirecional instantânea diretamente no Visual Studio. Com o Live Share, um membro da equipe pode ler, navegar, editar e depurar um projeto compartilhado com ele de forma fácil e segura.<br><br>Para saber mais, confira [Live Share FAQ](/visualstudio/liveshare/faq) (Perguntas frequentes sobre o Live Share).<br><br>
+* **[IntelliCode](https://visualstudio.microsoft.com/services/intellicode/)** , uma nova funcionalidade que aprimora o desenvolvimento de software usando IA para oferecer melhores conclusões de código com reconhecimento de contexto, orientar os desenvolvedores na codificação de padrões e estilos da equipe, encontrar problemas de código difíceis de detectar e focar as revisões de código em áreas que realmente importam. <br><br>Para saber mais, confira as [Perguntas Frequentes sobre o Visual Studio IntelliCode](/visualstudio/intellicode/faq).
 
 Quer saber mais sobre as novidades do Visual Studio 2017? Confira a página [Roteiro do Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 

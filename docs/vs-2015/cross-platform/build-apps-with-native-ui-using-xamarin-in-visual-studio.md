@@ -343,7 +343,7 @@ Depois de concluir as etapas em [Configuração e instalação](../cross-platfor
         android:width="165dp" />
     ```
 
-12. Agora você tem experiência suficiente para criar uma interface do usuário básica usando o designer Android. Você também pode criar uma interface do usuário adicionando marcação diretamente ao arquivo .asxml da página. Para criar o restante da interface do usuário dessa maneira, mude para a exibição Fonte no designer, então cole a seguinte marcação *abaixo* da marca `</RelativeLayout>` (sim, está abaixo da marca... esses elementos não estão contidos no ReleativeLayout).
+12. Agora você tem experiência suficiente para criar uma interface do usuário básica usando o Android Designer. Você também pode criar uma interface do usuário adicionando marcação diretamente ao arquivo .asxml da página. Para criar o restante da interface do usuário dessa maneira, mude para a exibição Fonte no designer, então cole a seguinte marcação *abaixo* da marca `</RelativeLayout>` (sim, está abaixo da marca... esses elementos não estão contidos no ReleativeLayout).
 
     ```xml
     <TextView

@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6eb7af4ead7cd58a0ccf36cbeb2b9fc56e890315
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62857834"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415744"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Depurar Serviços de Kubernetes do Azure dinâmicos usando o Depurador de Instantâneos
 
@@ -35,9 +35,9 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* Depurador de instantâneo para serviços de Kubernetes do Azure só está disponível para o Visual Studio 2019 Enterprise ou superior com o **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
+* Depurador de Instantâneos para os serviços Kubernetess do Azure só está disponível para o Visual Studio 2019 Enterprise ou superior com a **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 
-    Se ainda não estiver instalado, instale [Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/).
+    Se ele ainda não estiver instalado, instale o [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * A coleção de instantâneos está disponível para os seguintes aplicativos Web dos Serviços de Kubernetes do Azure:
   * Aplicativos ASP.NET Core em execução no .NET Core 2.2 ou posterior no Debian 9.
@@ -54,11 +54,14 @@ Neste tutorial, você irá:
     > [!IMPORTANT]
     > Para realizar a depuração de instantâneos, você precisará abrir a *mesma versão do código-fonte* publicado no seu serviço de Kubernetes do Azure.
 
-1. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione o recurso do AKS em que seu aplicativo Web está implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar**.
+1. Escolha **Depurar > Anexar Depurador de Instantâneos...** . Selecione o recurso do AKS em que seu aplicativo Web está implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar**. O Depurador de Instantâneos também dá suporte ao [serviço de Azure app](debug-live-azure-applications.md) e a [VMS (máquinas virtuais) do Azure & conjuntos de dimensionamento de máquinas virtuais](debug-live-azure-virtual-machines.md).
 
-      ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
+    ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
-      ![Selecionar recurso do Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
+    ![Selecionar recurso do Azure](../debugger/media/snapshot-select-azure-resource-aks.png)
+
+    > [!NOTE]
+    > (Visual Studio 2019 versão 16,2 e superior) O Depurador de Instantâneos habilitou o suporte à nuvem do Azure. Verifique se o recurso do Azure e a conta de armazenamento do Azure selecionados são da mesma nuvem. Entre em contato com o administrador do Azure se você tiver dúvidas sobre as configurações de [conformidade do Azure](https://azure.microsoft.com/overview/trusted-cloud/) da sua empresa.
 
 O Visual Studio agora está no modo de depuração de instantâneos.
 
@@ -70,7 +73,7 @@ O Visual Studio agora está no modo de depuração de instantâneos.
 
 ## <a name="set-a-snappoint"></a>Definir um snappoint
 
-1. No editor de códigos, clique na medianiz esquerda ao lado de uma linha de código de seu interesse para definir um snappoint. Verifique se esse é o código que você sabe que será executado.
+1. No editor de código, clique na medianiz à esquerda ao lado de uma linha de código em que você está interessado para definir um snappoint. Verifique se o código que você sabe que será executado.
 
    ![Definir um snappoint](../debugger/media/snapshot-set-snappoint.png)
 
@@ -83,21 +86,21 @@ O Visual Studio agora está no modo de depuração de instantâneos.
 
 ## <a name="take-a-snapshot"></a>Capturar um instantâneo
 
-Quando um snappoint é ativado, ele captura um instantâneo sempre que a linha de código em que o snappoint se encontra é executada. Essa execução pode ser causada por uma solicitação real em seu servidor. Para forçar o snappoint a ser atingido, vá para a exibição de navegador do seu site e realize as ações necessárias que fazem com que o snappoint seja atingido.
+Quando um snappoint é definido, você pode gerar manualmente um instantâneo acessando a exibição do navegador do seu site e executando a linha de código marcada ou aguardando que os usuários gerem um a partir de seu uso do site.
 
 ## <a name="inspect-snapshot-data"></a>Inspecionar dados de instantâneo
 
 1. Quando o snappoint for atingido, um instantâneo será exibido na janela de Ferramentas de Diagnóstico. Para abrir essa janela, escolha **Depurar > Janelas > Mostrar Ferramentas de Diagnóstico**.
 
-   ![Abrir um snappoint](../debugger/media/snapshot-diagsession-window.png)
+    ![Abrir um snappoint](../debugger/media/snapshot-diagsession-window.png)
 
 1. Clique duas vezes o snappoint para abrir o instantâneo no editor de códigos.
 
-   ![Inspecionar dados de instantâneo](../debugger/media/snapshot-inspect-data.png)
+    ![Inspecionar dados de instantâneo](../debugger/media/snapshot-inspect-data.png)
 
-   Nessa exibição, você pode passar o mouse sobre as variáveis para exibir DataTips; use as janelas **Locais**, **Inspeções** e **Pilha de Chamadas** e também avalie expressões.
+    Nessa exibição, você pode passar o mouse sobre as variáveis para exibir DataTips; use as janelas **Locais**, **Inspeções** e **Pilha de Chamadas** e também avalie expressões.
 
-    O site em si ainda fica ativo, e os usuários finais não são afetados. Apenas um instantâneo é capturado por snappoint por padrão: após a captura de um instantâneo, o snappoint é desativado. Se você quiser capturar outro instantâneo no snappoint, poderá ativar o snappoint novamente clicando em **Atualizar Coleção**.
+    O próprio site ainda é ao vivo e os usuários finais não são afetados. Apenas um instantâneo é capturado por snappoint por padrão: após a captura de um instantâneo, o snappoint é desativado. Se você quiser capturar outro instantâneo no snappoint, poderá ativar o snappoint novamente clicando em **Atualizar Coleção**.
 
 Você também pode adicionar mais snappoints ao seu aplicativo e ativá-los com o botão **Atualizar Coleção**.
 
@@ -105,7 +108,7 @@ Você também pode adicionar mais snappoints ao seu aplicativo e ativá-los com 
 
 ## <a name="set-a-conditional-snappoint"></a>Definir um snappoint condicional
 
-Se você tiver dificuldades para recriar um estado específico em seu aplicativo, considere se o uso de um snappoint condicional pode ajudar. Os snappoints condicionais ajudam a evitar a captura de um instantâneo até que o aplicativo entre em um estado desejado, como quando uma variável tem um valor específico que você deseja inspecionar. É possível definir condições usando expressões, filtros ou contagens de ocorrências.
+Se for difícil recriar um estado específico em seu aplicativo, considere usar um snappoint condicional. O snappoints condicional ajuda você a controlar quando obter um instantâneo, como quando uma variável contém um valor específico que você deseja inspecionar. É possível definir condições usando expressões, filtros ou contagens de ocorrências.
 
 #### <a name="to-create-a-conditional-snappoint"></a>Para criar um snappoint condicional
 

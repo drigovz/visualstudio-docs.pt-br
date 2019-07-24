@@ -20,11 +20,11 @@ O suporte de primeira classe para o [Xamarin](/xamarin) permite que você desenv
 
 O Visual Studio para Mac tem seu próprio gerenciador de SDK do Android integrado, permitindo que você acesse os SDKs aos quais deseja que seu aplicativo se destine.
 
-Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu Designer Android, conforme mostrado nesta imagem:
+Para aplicativos Android, o Visual Studio para Mac inclui seu próprio designer, que funciona com arquivos Android `.axml` para construir visualmente interfaces do usuário. O Visual Studio para Mac abrirá esses arquivos no seu Android Designer, conforme mostrado nesta imagem:
 
 ![Designer de Interface do Usuário Android](media/intro-image31.png)
 
-Para saber mais sobre o Designer Android, veja o guia [Visão geral do Designer Xamarin.Android](/xamarin/android/user-interface/android-designer/index).
+Para saber mais sobre o Android Designer, veja o guia [Visão geral do Xamarin.Android Designer](/xamarin/android/user-interface/android-designer/index).
 
 ## <a name="ios"></a>iOS
 
