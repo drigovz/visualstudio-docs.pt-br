@@ -3,15 +3,15 @@ title: Pacote Visual Studio + GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/15/2019
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre o novo pacote Visual Studio + GitHub
-ms.openlocfilehash: 6f14a484c365bcbede89c1cc4ac056a97f9ec013
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783434"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377653"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introdução às assinaturas do Visual Studio com o GitHub Enterprise  
 
@@ -62,15 +62,12 @@ Se você for novo no GitHub, aqui estão alguns recursos que poderão ser úteis
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 ### <a name="q--where-is-my-github-subscription"></a>P:  Onde está minha assinatura do GitHub?
-
 R:  O processo para configurar a assinatura do GitHub pode levar algum tempo.  Se você estiver esperando e nada tiver acontecido, entre em contato com seu administrador do GitHub.  É possível que o administrador ainda esteja trabalhando nisso ou optou por não atribuir uma assinatura do GitHub a você. 
 
 ### <a name="q--how-do-i-reach-my-github-administrator"></a>P:  Como posso entrar em contato com o administrador do GitHub?
-
 R:  Se estiver usando o GitHub Enterprise Server, poderá clicar no link **Suporte** visível na parte inferior do cliente para entrar em contato com seu administrador.
 
 ### <a name="q-do-i-get-the-full-visual-studio-subscription-professional-or-enterprise-or-do-i-just-get-the-ide-with-this-offering"></a>P: Eu recebo a assinatura completa do Visual Studio (Professional ou Enterprise) ou apenas obtenho o IDE com essa oferta?
-
 R:  Junto com uma assinatura do GitHub Enterprise, você recebe uma assinatura completa do Visual Studio.  Você recebe todos os benefícios, como downloads de software, serviços de nuvem, suporte técnico e benefícios de parceiro incluídos nessas assinaturas, exatamente como aconteceria se a assinatura tivesse sido adquirida separadamente.
 
 ## <a name="support-resources"></a>Recursos de suporte
@@ -81,5 +78,4 @@ R:  Junto com uma assinatura do GitHub Enterprise, você recebe uma assinatura c
 - Obtenha [suporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Próximas etapas
-
 Se você for novo no GitHub, confira o [Laboratório de Aprendizagem do GitHub](https://lab.github.com/), que mostra uma série de projetos divertidos e práticos, compartilhando comentários úteis.

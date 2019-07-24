@@ -4,17 +4,17 @@ ms.date: 11/04/2016
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 ms.assetid: 75d38b76-26d6-4f43-bbe7-cbacd7cc81e7
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dc172723005b6781a63b3a3956b12152d73bb0f
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429139"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68415581"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como: Exibir, salvar e configurar arquivos de log de build
 
@@ -50,7 +50,7 @@ Se você compilar qualquer tipo de projeto usando o MSBuild, é possível criar 
 
 3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.
 
-    |Nível de detalhes|Descrição|
+    |Nível de detalhes|DESCRIÇÃO|
     | - |-----------------|
     |**Silencioso**|Exibe apenas um resumo do build.|
     |**Mínima**|Exibe um resumo do build e dos erros, avisos e mensagens categorizadas como altamente importantes.|

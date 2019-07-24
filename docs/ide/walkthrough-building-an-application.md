@@ -3,17 +3,17 @@ title: 'Passo a passo: Criar um aplicativo'
 ms.date: 09/25/2017
 ms.technology: vs-ide-compile
 ms.topic: conceptual
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f767f254119e1f9820c72a12e2aac7b4c141f1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8964fc81b8323b6720d7c6d960449c7a9134658b
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62582854"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416892"
 ---
 # <a name="walkthrough-build-an-application"></a>Passo a passo: Criar um aplicativo
 
@@ -35,13 +35,13 @@ Ao criar uma solução, as configurações de build de depuração e versão e s
 
    ![Menu Compilar, comando do Configuration Manager](../ide/media/buildwalk_configurationmanagerdialogbox.png)
 
-1. Na lista **Configuração da solução ativa**, escolha **\<Nova....\>**.
+1. Na lista **Configuração da solução ativa**, escolha **\<Nova....\>** .
 
 1. Na caixa de diálogo **Nova Configuração da Solução**, dê à nova configuração o nome `Test`, copie as configurações da configuração **Depuração** existente e, em seguida, escolha o botão **OK**.
 
    ![Caixa de diálogo Nova Configuração da Solução](../ide/media/buildwalk_newsolutionconfigdlgbox.png)
 
-1. Na lista **Plataforma da solução ativa**, escolha **\<Nova...\>**.
+1. Na lista **Plataforma da solução ativa**, escolha **\<Nova...\>** .
 
 1. Na caixa de diálogo **Nova Plataforma de Solução**, escolha **x64** e não copie as configurações da plataforma x86.
 
@@ -77,7 +77,7 @@ Em seguida, apresentaremos alguns códigos que fazem com que um aviso seja gerad
 
     OU
 
-    No projeto do Visual Basic, abra o arquivo *ExpenseReportPage.xaml.vb*. No construtor personalizado **Public Sub New...**, adicione o seguinte código: `Dim i`.
+    No projeto do Visual Basic, abra o arquivo *ExpenseReportPage.xaml.vb*. No construtor personalizado **Public Sub New...** , adicione o seguinte código: `Dim i`.
 
 1. Compile a solução.
 

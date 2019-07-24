@@ -3,63 +3,19 @@ title: Gerenciar assinaturas do Visual Studio
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 06/24/2019
+ms.date: 07/17/2019
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: 5d9c5e91f6cd76857bdd5aa4c5398cdde0db41b8
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785092"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68378075"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
 O [Portal do Assinante](https://my.visualstudio.com) do Visual Studio oferece a capacidade de gerenciar todas as suas assinaturas e associações a programas em um único local. Você pode fazer alterações no seu perfil, usar todos os benefícios incluídos nas assinaturas e mudar de assinatura com rapidez e facilidade.
-
-## <a name="signing-in-to-the-portal"></a>Entrando no portal
-
-Bem-vindo à sua assinatura do Visual Studio!  Sua assinatura fornece todos os softwares e benefícios que você precisa para ficar por dentro de tudo sobre código, incluindo software, créditos mensais do Azure, ferramentas de colaboração, privilégios de treinamento, suporte e muito mais. Tudo o que há de mais recente e de melhor na Microsoft. Para usar o portal, você precisará entrar.
-
-### <a name="first-time-access"></a>Primeiro acesso
-
-As etapas para usar sua assinatura pela primeira vez dependem de como você a adquiriu.
-
-#### <a name="microsoft-store"></a>Microsoft Store
-
-Se você tiver comprado uma assinatura do Visual Studio na Microsoft Store, as etapas de ativação poderão ser iniciadas na **Página de confirmação** ou no **Email de confirmação** do pagamento.
-
-1. Na "Página de confirmação" ou no "Email de confirmação", clique em **Clique aqui para entrar**. Você será redirecionado para https://my.visualstudio.com/subscriptions/activate.
-2. Insira o endereço de email que você usará para entrar no Portal do Assinante e clique em **Continuar**.
-3. Dependendo do endereço de email, você poderá ser redirecionado para a página de conexão da Conta da Microsoft ou para a página de conexão da sua empresa/escola.
-4. Insira a senha ou conclua os requisitos de entrada.
-5. Insira a chave do produto (Product Key) fornecida no email de boas-vindas ou na página de confirmação e clique em **Ativar**.
-
-#### <a name="workschool-accounts"></a>Contas corporativas ou de estudante
-
-Se a sua assinatura foi fornecida pela empresa/escola, você terá recebido um email de boas-vindas.
-
-1. Visite o [Portal do Assinante](https://my.visualstudio.com/)
-2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado no email de boas-vindas do assinante. Se você não recebeu o email de boas-vindas, verifique as pastas de lixo eletrônico.
-3. Clique em **Continuar**
-4. Você será redirecionado para sua página de entrada empresarial.
-5. Insira sua senha.
-6. Clique em **Entrar**.
-
-#### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace
-
-Se você tiver comprado uma assinatura de nuvem mensal ou anual no Visual Studio Marketplace, visite o [Portal do Assinante](https://my.visualstudio.com/) e entre com a MSA (Conta da Microsoft) que você forneceu quando comprou a assinatura.
-
-#### <a name="using-a-workschool-account-with-a-microsoft-account-msa"></a>Usando uma conta corporativa ou de estudante com uma MSA (Conta da Microsoft)
-
-Se sua organização tiver um Azure Active Directory, mas você não tiver uma conta do Azure Active Directory, talvez seja necessário usar as opções **pessoais** fornecidas durante o processo de entrada.
-
-1. Acesse o [Portal do Assinante](https://my.visualstudio.com)
-2. Insira o endereço de email ao qual a nova assinatura do Visual Studio foi atribuída. Esse endereço também é identificado na **Carta de boas-vindas** do assinante. (Se você não receber o email de boas-vindas, verifique suas pastas de lixo eletrônico).
-3. Clique em **Continuar**
-4. Você será redirecionado para uma **Página de decisão**.  Selecione **conta corporativa ou de estudante** se a sua assinatura estiver atribuída a uma conta **corporativa ou de estudante** associada a um locatário do AAD (Azure Active Directory). Selecione **Pessoal** se a assinatura estiver associada a um endereço de email **corporativo**, mas também tiver sido convertida em uma MSA (Conta da Microsoft) **pessoal**
-5. Insira sua senha
-6. Clique em **Entrar**
 
 ## <a name="managing-multiple-subscriptions"></a>Gerenciando várias assinaturas
 
@@ -87,7 +43,6 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 ## <a name="renewing-my-subscriptions"></a>Renovando minhas assinaturas
 
 **Assinaturas padrão**
-
 - Microsoft Store: Se você comprou sua assinatura na [Microsoft Store](http://www.microsoft.com/store), você também pode renová-la nela.
 - Licença de volume:  Caso sua empresa compre assinaturas por meio de uma licença de volume, o administrador deverá contatar um revendedor para renovar suas assinaturas.
 
@@ -97,10 +52,8 @@ Na página Benefícios, a assinatura em uso será exibida na faixa azul em desta
 
 - [Imagine](https://imagine.microsoft.com/about)
 - [BizSpark](https://bizspark.microsoft.com/About/Offers)
-- [Microsoft Partner Network](https://partner.microsoft.com/en-us)
-- [Microsoft Certified Trainer](https://www.microsoft.com/en-us/learning/mct-certification.aspx)
-
-**Visual Studio Dev Essentials:**  O Dev Essentials é um programa gratuito, e as associações não expiram.
+- [Microsoft Partner Network](https://partner.microsoft.com)
+- [Microsoft Certified Trainer](https://www.microsoft.com/learning/mct-certification.aspx)
 
 ## <a name="transferring-subscriptions"></a>Transferindo assinaturas
 
@@ -121,8 +74,6 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 4. Ao concluir as alterações, clique em **Salvar**.
 5. Clique no botão **Voltar** do navegador para retornar à página Benefícios.
 
-   > [!div class="mx-imgBorder"]
-   > ![Editar informações de perfil](_img/manage-vs-subscriptions/edit-profile-resized.png)
 
 ### <a name="setting-communications-preferences"></a>Definir preferências de comunicação
 Se você quiser receber atualizações periódicas sobre sua assinatura e seus benefícios, incluindo o boletim mensal de Assinaturas do Visual Studio, [atualize suas preferências](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), marcando a caixa de Assinaturas do Visual Studio no seu perfil do Visual Studio. Você pode alterar essas preferências e cancelar a assinatura a qualquer momento. 
@@ -131,7 +82,6 @@ Se você quiser receber atualizações periódicas sobre sua assinatura e seus b
    > ![Definir preferências](_img/manage-vs-subscriptions/change-prefs.png)
    
 ### <a name="linking-my-subscription-to-existing-azure-devops-services-or-azure-subscriptions"></a>Vincular minha assinatura a assinaturas existentes do Azure DevOps Services ou do Azure
-
 Se entrar em sua assinatura usando uma MSA (conta Microsoft) pessoal e tiver uma assinatura que inclui o Azure DevOps Services ou o Microsoft Azure usando uma conta corporativa ou de estudante gerenciada pelo Azure, você poderá vincular as duas assinaturas. Ela é chamada de "conta alternativa" e permite usar sua MSA para entrar na assinatura e continuar tendo acesso aos recursos existentes do Azure, do Azure DevOps Services ou do IDE associados à sua conta corporativa ou de estudante.
 
 Mesmo que ambas as contas usem o mesmo endereço de email, você precisará adicionar sua conta corporativa ou de estudante como uma alternativa para usar os benefícios nas duas contas.
@@ -143,15 +93,11 @@ Para adicionar uma conta alternativa:
 3. Em **Links Relacionados**, escolha **Adicionar conta alternativa**.
 4. Insira o endereço de email de sua conta corporativa ou de estudante e clique em **Adicionar**.
 
-   > [!div class="mx-imgBorder"]
-   > ![Conta alternativa](_img/manage-vs-subscriptions/alternate-account-resized.png)
-
 Depois de adicionar uma conta alternativa, você poderá atualizá-la ou removê-la a qualquer momento clicando na guia **Assinaturas** e escolhendo a opção apropriada na seção **Links Relacionados**.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 
 ### <a name="q-if-i-do-not-renew-my-subscription-how-long-will-microsoft-keep-my-data"></a>P: Se eu não renovar minha assinatura, por quanto tempo a Microsoft manterá meus dados?
-
 R: Dependendo do canal de compra, a Microsoft mantém os dados do cliente durante diferentes períodos de tempo.
 
 | Canal                                                | Duração (dias) |

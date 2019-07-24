@@ -2,18 +2,21 @@
 title: 'Etapa 6: Nomear os controles de botão'
 ms.date: 11/04/2016
 ms.topic: conceptual
+dev_langs:
+- csharp
+- vb
 ms.assetid: 56b3baa3-651e-4ad4-8942-e334c5c57158
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dbee780f2153003e870dbe0dbbb15b721a009df
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 2051ac669c52480d62ee0d0a79c5a165bff502fc
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442027"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416602"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 Há apenas uma <xref:System.Windows.Forms.PictureBox> em seu formulário. Quando você a adicionou, o IDE a nomeou automaticamente como **pictureBox1**. Há apenas uma <xref:System.Windows.Forms.CheckBox>, que é denominada **checkBox1**. Em breve, você escreverá alguns códigos, e tais códigos se referirão à CheckBox e à PictureBox. Como há apenas um de cada desses controles, você saberá o que significa ver **pictureBox1** ou **checkBox1** em seu código.
@@ -27,7 +30,7 @@ Há apenas uma <xref:System.Windows.Forms.PictureBox> em seu formulário. Quando
 
 ## <a name="to-name-your-button-controls"></a>Para nomear os controles de botão
 
-1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, pressione a tecla **Esc** para cancelar a seleção). Role pela janela **Propriedades**, até ver a propriedade **(Name)**. (A propriedade **(Name)** fica próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **closeButton**, conforme mostrado na imagem a seguir.
+1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, pressione a tecla **Esc** para cancelar a seleção). Role pela janela **Propriedades**, até ver a propriedade **(Name)** . (A propriedade **(Name)** fica próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **closeButton**, conforme mostrado na imagem a seguir.
 
      ![Janela Propriedades com nome closeButton](../ide/media/express_setnameproperty.png)
 Janela **Propriedades** com nome **closeButton**
