@@ -7,7 +7,7 @@
     - name: Sobre o editor de código
       href: tutorial-editor.md
     - name: Sobre projetos e soluções
-      href: tutorial-projects-solutions.md
+      href: ../tutorial-projects-solutions.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
     - name: Mais recursos do Visual Studio
       href: ../../ide/advanced-feature-overview.md?toc=/visualstudio/get-started/csharp/toc.json&bc=/visualstudio/get-started/csharp/breadcrumb/toc.json
 - name: Criar um aplicativo

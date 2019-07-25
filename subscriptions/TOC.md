@@ -18,7 +18,6 @@
 #### [Entrar com contas corporativas ou de estudante](sign-in-work.md)
 #### [Entrar com o GitHub](sign-in-github.md)
 #### [Identidades alternativas](vs-alternate-identity.md)
-#### [Entrar com aliases](aliasing.md)
 #### [Problemas de conexão](sign-in-issues.md)
 #### [Anonimizações de dados do assinante](anonymization.md)
 ### [Visão geral do portal de assinaturas](using-the-subscriber-portal.md)
@@ -60,6 +59,9 @@
 #### [Demonstrações da Internet](internet-demos.md)
 ## Administradores
 ### [Responsabilidades do administrador](admin-responsibilities.md)
+#### [Inventário de pré-produção](admin-inventory.md)
+#### [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
+#### [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
 ### [Licenciamento por Volume](volume-license-admins.md)
 ### Integrar sua organização
 #### [Integração após a migração](post-migration-onboarding.md)
@@ -78,6 +80,7 @@
 #### [Superalocações](handle-overclaimed-license.md)
 #### [Uso máximo](maximum-usage.md)
 #### [Assinaturas expiradas](handle-expired-license.md)
+#### [Assinantes que usam aliases](aliasing.md)
 #### [Assinantes que entram com emails pessoais](personal-email-sign-ins.md)
 ### [Gerenciando o Visual Studio com o GitHub Enterprise](assign-github.md)
 ## Recursos
