@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9bbd0aa8ea3d98077154225fb3a35aec5545ccfa
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: fae6be8932731e5589dbc27f5084bcbc509680c1
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415739"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493313"
 ---
 # <a name="debug-live-aspnet-azure-apps-using-the-snapshot-debugger"></a>Depurar aplicativos do Azure ASP.NET dinâmicos usando o Depurador de Instantâneos
 
@@ -109,7 +109,6 @@ Neste tutorial, você irá:
 ## <a name="take-a-snapshot"></a>Capturar um instantâneo
 
 Quando um snappoint é definido, você pode gerar manualmente um instantâneo acessando a exibição do navegador do seu site e executando a linha de código marcada ou aguardando que os usuários gerem um a partir de seu uso do site.
-
 
 ## <a name="inspect-snapshot-data"></a>Inspecionar dados de instantâneo
 

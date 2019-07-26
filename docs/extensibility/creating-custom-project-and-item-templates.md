@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8fbe1a4decebd68b80e6cbe8728c5de84a44c641
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dff4d3566dcfb4b40f1008eed09371e42459c3a5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377763"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493116"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Criar modelos de item e projeto personalizados
 
@@ -35,7 +35,6 @@ Para cenários de criação de modelo básico, você deve usar o assistente para
      O modelo gera um arquivo de classe, um ícone, um arquivo *. vstemplate* , um arquivo de projeto editável chamado *ProjectTemplate. vbproj* ou *ProjectTemplate. csproj*e alguns arquivos que normalmente são gerados por outros tipos de projeto, como um  *arquivo. resx de recursos* , um arquivo *AssemblyInfo* e um arquivo *. Settings* . Cada arquivo de código contém substituições de parâmetro comuns, quando apropriado.
 
 ![seleção de projeto de modelo de projeto](media/project-template-selection.png)
-
 
 2. Adicione e remova itens do projeto conforme necessário para seu projeto. Não remova o arquivo de projeto editável, o arquivo *AssemblyInfo* ou o arquivo *. vstemplate* .
 
