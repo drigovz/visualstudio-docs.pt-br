@@ -1,5 +1,5 @@
 ---
-title: IDebugArrayObject::GetDimensions | Microsoft Docs
+title: 'IDebugArrayObject:: GetDimensions | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -13,10 +13,10 @@ caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 09902c60f87cfb92d0f0778fcbd106ade4d8dac4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
+ms.lasthandoff: 07/26/2019
 ms.locfileid: "68197783"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
@@ -42,16 +42,16 @@ int GetDimensions(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwCount`  
- [in] O número de dimensões a serem recuperados.  
+ no O número de dimensões a serem recuperadas.  
   
  `dwDimensions`  
- [no, out] Uma matriz que é preenchida com os tamanhos de cada dimensão. `dwCount` Especifica o tamanho máximo da `dwDimensions` matriz.  
+ [entrada, saída] Uma matriz que é preenchida com os tamanhos de cada dimensão. `dwCount`Especifica o tamanho máximo da `dwDimensions` matriz.  
   
 ## <a name="return-value"></a>Valor de retorno  
- Se for bem-sucedido, retornará S_OK; Caso contrário, retornará um código de erro.  
+ Se for bem-sucedido, retornará S_OK; caso contrário, retorna um código de erro.  
   
 ## <a name="remarks"></a>Comentários  
- Uma matriz multidimensional pode ter tamanhos diferentes para cada dimensão. Por exemplo, dada a matriz tridimensional `myarray[3][2][6]`, esse método retorna 3, 2 e 6 no `dwDimensions` parâmetro nessa ordem.  
+ Uma matriz multidimensional pode ter tamanhos diferentes para cada dimensão. Por exemplo, considerando a matriz `myarray[3][2][6]`tridimensional, esse método retornaria 3, 2 e 6 `dwDimensions` no parâmetro nessa ordem.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)
