@@ -54,9 +54,9 @@
       items:
         - name: 'Passo a passo: Criar e executar testes de unidade para código gerenciado'
           href: walkthrough-creating-and-running-unit-tests-for-managed-code.md
-        - name: 'Início Rápido: desenvolvimento orientado por testes com o Gerenciador de Testes'
+        - name: 'Passo a passo: Desenvolvimento controlado por teste'
           href: quick-start-test-driven-development-with-test-explorer.md
-        - name: Usar membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
+        - name: Usar a API do MSTest em testes de unidade
           href: using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md
         - name: Usar as classes assert
           href: using-the-assert-classes.md
@@ -74,11 +74,11 @@
           items:
             - name: Criar um teste de unidade controlado por dados
               href: how-to-create-a-data-driven-unit-test.md
-            - name: 'Passo a passo: usar um arquivo de configuração para definir uma fonte de dados'
+            - name: usar um arquivo de configuração para definir uma fonte de dados
               href: walkthrough-using-a-configuration-file-to-define-a-data-source.md
         - name: Testes de unidade para métodos genéricos
           href: unit-tests-for-generic-methods.md
-        - name: Configurar testes de unidade para usar uma versão anterior do .NET Framework como destino
+        - name: Configurar testes de unidade para usar uma versão anterior do .NET como destino
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
     - name: Testes de unidade para o código C/C++
       items:

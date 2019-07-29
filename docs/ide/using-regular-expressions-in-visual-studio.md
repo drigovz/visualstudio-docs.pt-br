@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b20cf3692cf76f602eb11b0a53a1669c919f1679
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: c4e461fd69e048e406fbe062ff297da9baab3696
+ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043576"
+ms.lasthandoff: 07/19/2019
+ms.locfileid: "68345757"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -29,7 +29,7 @@ O Visual Studio usa [expressões regulares .NET](/dotnet/standard/base-types/reg
 
 ## <a name="regular-expression-examples"></a>Exemplos de expressões regulares
 
-As tabelas a seguir contêm alguns caracteres de expressão regular, operadores, constructos e exemplos de padrão. Para obter uma referência mais completa, confira [Linguagem de expressão regular](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+A tabela a seguir contém alguns caracteres de expressão regular, operadores, constructos e exemplos de padrão. Para obter uma referência mais completa, confira [Linguagem de expressão regular](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 |Finalidade|Expressão|Exemplo|
 |-------------|----------------|-------------|
@@ -45,7 +45,7 @@ As tabelas a seguir contêm alguns caracteres de expressão regular, operadores,
 |Ancorar a cadeia de caracteres de correspondência ao final do arquivo|$|`end$` corresponde a "end" somente quando aparece no final do arquivo.|
 |Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]` corresponde a “ba”, “bb” e “bc”.|
 |Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]` corresponde a “bet” em “between”, “ben” em “beneath” e “bes” em “beside”, mas não a “below”.|
-|Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”.|
+|Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”. Para saber mais, confira [Grupos de captura e padrões de substituição](#capture-groups-and-replacement-patterns). |
 |Invalidar uma correspondência|(?!abc)|`real(?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
 |Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico. Para saber mais, veja [Negative Character Group (Grupo de caracteres negativos)](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corresponde a “bef” em “before”, “beh” em “behind” e “bel” em “below”, mas não a “beneath”.|
 |Encontrar a correspondência da expressão antes ou depois do símbolo|&#124;|`(sponge\|mud) bath` corresponde a “sponge bath” e a “mud bath”.|

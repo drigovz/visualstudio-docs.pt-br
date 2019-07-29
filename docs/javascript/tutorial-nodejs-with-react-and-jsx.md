@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fc45c25dcc9de1cdf1991525401e2d53bd86cdb3
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 563dcd4d91e23c019edf5a777b70453f40091d69
+ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66261998"
+ms.lasthandoff: 07/18/2019
+ms.locfileid: "68315243"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -66,13 +66,13 @@ O webpack empacota arquivos JavaScript para que eles possam ser executados em um
     Se você ainda não instalou o Visual Studio 2017, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/)  para instalá-lo gratuitamente.
     ::: moniker-end
 
-    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
+    Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...** , que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 
     ![Carga de trabalho Node.js no instalador do VS](../ide/media/quickstart-nodejs-workload.png)
 
 * Você precisa ter o tempo de execução do Node.js instalado.
 
-    Este tutorial foi testado com a versão 8.11.2.
+    Este tutorial foi testado com a versão 10.16.0.
 
     Se não o tiver instalado, instale a versão LTS do site do [Node.js](https://nodejs.org/en/download/). Em geral, o Visual Studio detecta automaticamente o tempo de execução do Node.js instalado. Se ele não detectar um tempo de execução instalado, você poderá configurar seu projeto para fazer referência ao tempo de execução instalado na página de propriedades (depois de criar um projeto, clique com botão direito do mouse no nó do projeto e escolha **Propriedades**).
 
@@ -318,7 +318,19 @@ Nas etapas anteriores, você adicionou *webpack-config.js* ao projeto. Em seguid
 
     ![Carregar arquivos modificados](../javascript/media/tutorial-nodejs-react-reload-files.png)
 
-Cada vez que fizer alterações em *app.tsx*, você precisará executar novamente o comando webpack.
+Cada vez que fizer alterações em *app.tsx*, você precisará executar novamente o comando webpack. Para automatizar esta etapa, adicione um script de build para transcompilar o JSX.
+
+## <a name="add-a-build-script-to-transpile-the-jsx"></a>Adicionar um script de build para transcompilar o JSX
+
+Em versões mais recentes do Node.js, é necessário ter um script de build. Em vez de transcompilar o JSX na linha de comando (conforme mostrado na seção anterior), é possível transcompilar o JSX ao compilar com base no Visual Studio.
+
+* Abra *package.json* e adicione a seguinte seção após a seção `dependencies`:
+
+   ```json
+   "scripts": {
+    "build": "webpack-cli app.tsx --config webpack-config.js"
+   }
+   ```
 
 ## <a name="run-the-app"></a>Executar o aplicativo
 
@@ -331,7 +343,7 @@ Cada vez que fizer alterações em *app.tsx*, você precisará executar novament
     ![Selecione o Chrome como destino de depuração](../javascript/media/tutorial-nodejs-react-debug-target.png)
     ::: moniker-end
 
-    Se o Chrome estiver disponível em seu computador, mas não aparecer como uma opção, escolha **Procurar com** na lista suspensa de destinos de depuração e selecione Chrome como o destino padrão de navegador (escolha **Definir como padrão**).
+    Se o Chrome estiver disponível em seu computador, mas não for exibido como uma opção, escolha o **Navegador da Web (browsername)**  > **Google Chrome** na lista suspensa de destino de depuração e selecione Chrome como o destino do navegador padrão.
 
 1. Para executar o aplicativo, pressione **F5** (**Depurar** > **Iniciar Depuração**) ou no botão de seta verde.
 
@@ -378,7 +390,7 @@ Na seção anterior, você anexou o depurador ao código do Node.js do lado do s
     ::: moniker range=">=vs-2019"
 
     > [!NOTE]
-    > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...**> na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
+    > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...** > na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview).
 
     ::: moniker-end
 

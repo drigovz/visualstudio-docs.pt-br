@@ -1,17 +1,17 @@
 ---
 title: Usando o Portal do Assinante – http://my.visualstudio.com | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/04/2018
+ms.author: lank
+manager: lank
+ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
-ms.openlocfilehash: eab622c843a7099b5a75ca953d55666be849b246
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784776"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377923"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Usando o Portal do Assinante – my.visualstudio.com
 
@@ -51,3 +51,6 @@ Além dos benefícios individuais encontrados na categoria de Suporte na página
 ## <a name="marketplacehttpsmarketplacevisualstudiocom"></a>[Marketplace](https://marketplace.visualstudio.com/)
 
 É necessário renovar a assinatura de nuvem do Visual Studio?  Deseja baixar as extensões mais recentes para a família de produtos Visual Studio?  O Marketplace ajuda os usuários a localizar extensões, ferramentas e serviços que tornam o Azure DevOps, Azure DevOps Server e Visual Studio Code ainda melhores. Você pode até se tornar um editor e publicar suas próprias extensões no Marketplace.
+
+## <a name="next-steps"></a>Próximas etapas
+Entre no portal em [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) e confira seus benefícios.  Também é possível saber mais sobre como entrar no portal com sua [MSA](sign-in-msa.md) (Conta Microsoft), sua [conta corporativa ou de estudante](sign-in-work.md) e até mesmo [sua conta do GitHub](sign-in-github.md). 
