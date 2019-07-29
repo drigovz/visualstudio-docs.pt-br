@@ -9,14 +9,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+helpviewer_keywords:
+- add missing usings
+ms.openlocfilehash: d971bcdaca4efdf587c7e441f1b0b28d21388dee
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531623"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416470"
 ---
-# <a name="generate-usings-in-visual-studio"></a>Gerar instruções using no Visual Studio
+# <a name="add-missing-usings-in-visual-studio"></a>Adicionar usos ausentes no Visual Studio
 
 Esta geração de código aplica-se a:
 
@@ -28,7 +30,7 @@ Esta geração de código aplica-se a:
 
 **Por que:** como a Ação rápida adiciona automaticamente as importações necessárias, você não precisa copiar manualmente as instruções `using` que seu código precisa.
 
-## <a name="generate-usings-refactoring"></a>Refatoração de gerar instruções using
+## <a name="add-missing-usings-refactoring"></a>Adicionar a refatoração de usos ausentes
 
 1. Copie o código de um arquivo diferente e cole-o em um novo código sem incluir as instruções `using` necessárias. O erro resultante é acompanhado por uma correção de código que adiciona as instruções `using` ausentes.
 

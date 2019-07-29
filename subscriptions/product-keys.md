@@ -1,17 +1,17 @@
 ---
 title: Usar as chaves de produto | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/20/2019
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
-ms.openlocfilehash: d4874f5b0d429db7102facfe7f4747d68134fca2
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 35dee0a03aa50e40b60d4207dcd6e830c9c27383
+ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785021"
+ms.lasthandoff: 07/22/2019
+ms.locfileid: "68377705"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -42,13 +42,18 @@ Se você tiver solicitado o número máximo de chaves disponíveis para sua assi
 
 Nossa pesquisa mostra que o número de chaves do produto (Product Keys) incluídas na assinatura é suficiente para a maioria dos assinantes. Se precisar de chaves adicionais, você poderá enviar uma solicitação por meio do [Serviço de Atendimento ao Cliente de Assinaturas do Visual Studio](https://visualstudio.microsoft.com/subscriptions/support/), que analisará cada caso individualmente.
 
-## <a name="locating-and-claiming-product-keys"></a>Localizando e solicitando chaves do produto (Product Keys)
-Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
-> [!div class="mx-imgBorder"]
-> ![Obter chave da página de downloads](_img/product-keys/download-get-key.png)
+## <a name="accessing-product-keys"></a>Acessar chaves do produto (Product Key)
+Você deve estar conectado à sua assinatura do Visual Studio para exibir as chaves do produto (Product Keys). As chaves do produto individuais podem ser encontradas ao selecionar o link azul [Obter Chave](https://my.visualstudio.com/downloads) de um produto específico na página **Downloads**, conforme mostrado abaixo.  Se existirem várias chaves para um único produto, serão exibidas observações na coluna Observações do download para ajudar você a identificar qual chave deve ser usada.
 
 Alguns produtos incluem diversas edições do produto em um único download. Nesses casos, a chave do produto (Product Key) informada determina qual edição é instalada.
 Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”, que você pode usar sempre que necessário, uma vez que não é preciso fazer a ativação. Outras chaves devem ser solicitadas ao selecionar o link **Obter Chave** do produto.
+> [!div class="mx-imgBorder"]
+> ![Obter chave da página de downloads](_img/product-keys/download-get-key.png)
+
+Todas as chaves também estão disponíveis agregadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs). Nessa página, é possível encontrar chaves estáticas que funcionam para todos os usuários de um produto, obter chaves personalizadas apenas para seu uso, ver o status de seus limites de reivindicação de chaves e exportar todas as suas chaves do produto (Product Keys). 
+
+> [!div class="mx-imgBorder"]
+> ![Página de Chaves do Produto (Product Keys)](_img/product-keys/product-keys-page.png)
 
 Vários tipos de chave estão disponíveis, de acordo com o produto.
 
@@ -70,46 +75,7 @@ Vários tipos de chave estão disponíveis, de acordo com o produto.
 
 Você pode solicitar uma chave na página de download do produto ou pesquisar a chave que você precisa na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys).
 
-### <a name="claiming-product-keys"></a>Solicitando chaves do produto (Product Keys)
-Somente os assinantes com assinaturas ativas podem baixar produtos e solicitar chaves do produto (Product Keys).  Você poderá exportar as chaves solicitadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys) enquanto a assinatura estiver ativa.
-
-Para solicitar a chave do produto (Product Key):
-1. Entre na sua assinatura do Visual Studio.  Você deve estar conectado para baixar produtos ou solicitar chaves do produto (Product Keys).
-2. Clique na guia [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs).
-3. As chaves do produto (Product Keys) são listadas em ordem alfabética pelo nome do produto.  Você pode rolar para baixo até o nome do produto desejado ou pesquisá-lo usando a barra de pesquisa na parte superior da página.
-   > [!div class="mx-imgBorder"]
-   > ![Procurar a chave do produto (Product Key)](_img/product-keys/visio-product-key-cropped.png)
-
-Neste exemplo, utilizamos a barra de pesquisa para localizar uma chave do produto (Product Key) do Visio 2010.
-Como é possível ver, há várias versões listadas do Visio 2010.  Uma chave já foi solicitada para o Visio Standard 2010 e para o Visio Premium 2010, sendo que há quatro chaves restantes para cada um deles.  Ambas as chaves solicitadas são comerciais e estão exibidas na página.  Observe que é possível registrar uma breve observação sobre as chaves solicitadas na coluna **Observações**.  Você pode usar isso em conjunto com a data na coluna **Solicitada** para manter o controle das chaves já solicitadas.  Por exemplo, você pode fazer observações ao ativar uma instalação do produto usando a chave.
-
-### <a name="exporting-your-claimed-keys"></a>Exportando as chaves solicitadas
-Você pode exportar uma lista de todas as chaves já solicitadas, juntamente com uma grande seleção de chaves estáticas e de outros tipos automaticamente marcadas como “solicitadas” por você.
-
-> [!IMPORTANT]
-> Se sua assinatura expirar, você não poderá mais solicitar novas chaves nem exportar as chaves solicitadas.
-
-Para exportar as chaves, basta clicar no link **Exportar todas as chaves** à extrema direita da página Chaves do Produto (Product Keys).  Um arquivo .xml intitulado KeysExport.xml será criado e você terá a opção de abri-lo ou de salvá-lo.  Você precisará abrir o arquivo com um aplicativo compatível com arquivos .xml.  Por exemplo, você poderá abrir o arquivo como uma pasta de trabalho somente leitura no Excel.
-
-## <a name="internet-demonstrations-via-terminal-services"></a>Demonstrações da Internet por meio dos Serviços de Terminal
-Com uma assinatura do Visual Studio, você pode fornecer aos usuários finais acesso a demonstrações de seus programas na Internet via Serviços de Terminal (Windows Server 2003 ou Windows Server 2008) ou Serviços de Área de Trabalho Remota (Windows Server 2008 R2 e posterior). Dessa forma, até 200 usuários anônimos poderão acessar simultaneamente a demonstração. A demonstração não deverá usar dados de produção. Os assinantes do Visual Studio são licenciados para demonstrar aplicativos aos usuários finais. Essa demonstração de Internet usando o TS (Serviços de Terminal) ou o RDS (Serviços de Área de Trabalho Remota) é o único cenário em que os usuários finais sem uma assinatura do Visual Studio podem interagir com o aplicativo de demonstração enquanto o software é licenciado por meio das assinaturas do Visual Studio.
-
-Trata-se de uma adição aos direitos de Desenvolvimento/Teste, em que os assinantes do Visual Studio podem usar tantas conexões ao TS ou ao RDS que forem necessárias.
-
-### <a name="enabling-rds-access"></a>Habilitando o acesso ao RDS
-Os assinantes do Visual Studio podem aumentar o número de usuários com acesso ao Windows Server por meio do RDS. Para isso, basta inserir a chave do produto (Product Key) fornecida na guia [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs) no [portal do assinante](https://my.visualstudio.com?wt.mc_id=o~msft~docs). Para obter a chave do produto (Product Key), conecte-se à página Chaves do Produto (Product Keys) e role para baixo até a versão do Windows Server que você está executando. Localize “Conexões de <usuário ou dispositivo> dos Serviços de Área de Trabalho Remota do Windows Server <versão> R2” e clique no link **Solicitar Chave**. Se, por exemplo, você estiver usando o RDS no Windows Server 2012 R2 e sua implantação usar CALs de usuário, escolha “Conexões de usuário dos Serviços de Área de Trabalho Remota do Windows Server 2012 (50)”.
-Cinco chaves de cada tipo estão disponíveis para o Windows Server 2008 R2, sendo que cada chave comporta 20 conexões. Quatro chaves de cada tipo são fornecidas para o Windows Server 2012 R2, sendo que cada uma comporta 50 conexões.
-
-#### <a name="to-enable-additional-connections-in-windows-server"></a>Para habilitar as conexões adicionais no Windows Server:
-1. Abra o Gerenciador de Servidores.
-2. Abra a lista de Servidores no painel de navegação à esquerda.
-3. Clique com o botão direito do mouse no servidor de licença e escolha “Instalar Licenças”.
-4. Siga as etapas no assistente.  Ao selecionar o tipo de contrato, escolha “Pacote de Licença (comercial)” e insira a chave do produto (Product Key) obtida no portal do usuário.
-
-Se as seguintes condições forem atendidas, os usuários finais poderão conectar-se para acessar os aplicativos pelo RDS:
-- Os usuários devem ser anônimos (em estado não autenticado).
-- As conexões devem ser feitas pela Internet.
-- Até 200 conexões de usuário podem ser usadas ao mesmo tempo para demonstrações do aplicativo.
-- As chaves do produto (Product Keys) para habilitar as conexões de usuário devem ser obtidas por um assinante do Visual Studio.
-
-Se precisar de instruções sobre como configurar o Licenciamento de Área de Trabalho Remota em seu servidor, consulte [RD Licensing Configuration on Windows Server 2012](http://blogs.technet.com/b/askperf/archive/2013/09/20/rd-licensing-configuration-on-windows-server-2012.aspx) (Configuração do Licenciamento de Área de Trabalho Remota no Windows Server 2012). Se tiver dúvidas, acesse o [fórum dos Serviços de Área de Trabalho Remota da Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
+## <a name="next-steps"></a>Próximas etapas
+Para reivindicar chaves, acesse https://my.visualstudio.com/productkeys.  
+Saiba como [localizar e reivindicar chaves](find-keys.md).
+Também é possível aprender a usar chaves do produto (Product Keys) para dar suporte a [demonstrações da Internet](internet-demos.md).

@@ -1,6 +1,6 @@
 ---
 title: Teste da cobertura do código
-ms.date: 09/18/2018
+ms.date: 07/23/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - code coverage
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a76b40e2a9848b0f80e755d15a9bd6e65fcf51da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973033"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416450"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -47,7 +47,7 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 > [!TIP]
 > - verifique se a otimização do compilador está desativada
 > - se estiver trabalhando com código não gerenciado (nativo), use um build de depuração
-> - verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.
+> - verifique se você está gerando arquivos .pdb (símbolo) para cada assembly
 
 Se você não obtiver os resultados esperados, confira [Solução de problemas da cobertura de código](../test/troubleshooting-code-coverage.md). Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.
 
@@ -55,9 +55,10 @@ Se você não obtiver os resultados esperados, confira [Solução de problemas d
 
 A cobertura de código é contada em *blocos*. Um bloco é uma parte do código com exatamente um ponto de entrada e de saída.  Se o fluxo de controle do programa passar por um bloco durante a execução de teste, esse bloco será considerado coberto. O número de vezes que o bloco é usado não tem efeito sobre o resultado.
 
-Você também pode ter os resultados exibidos em termos de linhas escolhendo **Adicionar/Remover Colunas** no cabeçalho da tabela. Se a execução do teste utilizou todos os blocos de código em qualquer linha de código, isso será contado como uma linha. Onde uma linha contém alguns os blocos de código que foram utilizados e outros não, isso é contado como uma linha parcial.
+Você também pode ter os resultados exibidos em termos de linhas escolhendo **Adicionar/Remover Colunas** no cabeçalho da tabela. Alguns usuários preferem uma contagem de linhas porque as porcentagens correspondem mais aproximadamente ao tamanho dos fragmentos que você vê no código-fonte. Um bloco longo de cálculo contaria como um único bloco mesmo se ocupar muitas linhas.
 
-Alguns usuários preferem uma contagem de linhas porque as porcentagens correspondem mais aproximadamente ao tamanho dos fragmentos que você vê no código-fonte. Um bloco longo de cálculo contaria como um único bloco mesmo se ocupar muitas linhas.
+> [!TIP]
+> Uma linha de código pode conter mais de um bloco de código. Se for o caso e a execução de teste utilizar todos os blocos de código na linha, isso será contado como uma linha. Se alguns blocos de código, mas não todos, na linha forem utilizados, isso será contado como uma linha parcial.
 
 ## <a name="manage-code-coverage-results"></a>Gerenciar resultados da cobertura de código
 

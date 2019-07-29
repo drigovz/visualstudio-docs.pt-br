@@ -1,7 +1,7 @@
 ---
 title: Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 description: Aprenda como atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção.
-ms.date: 05/22/2019
+ms.date: 07/17/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: ''
@@ -12,16 +12,19 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: bf167c46e9b7dd9317278c7ce388977c4cc9428a
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: ca8aaf0af2ad7374137752783b242a40e94f706c
+ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250329"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68300542"
 ---
 # <a name="update-visual-studio-while-on-a-servicing-baseline"></a>Atualizar o Visual Studio enquanto estiver em uma linha de base de manutenção
 
-O Visual Studio de 2019 terá atualizações frequentes durante seu [ciclo de vida do produto](/visualstudio/productinfo/release-rhythm#release-channel-updates). As atualizações incluirão as atualizações de versão secundária (por exemplo, de 16.0 para 16.1) que podem adicionar novos recursos e componentes, e as atualizações de manutenção (por exemplo, de 16.0.4 para 16.0.5) que contêm apenas correções direcionadas para problemas críticos.
+Atualizamos o Visual Studio com frequência durante seu ciclo de vida de produto. Há dois tipos de atualizações: 
+
+* **Atualizações de lançamento secundárias**&mdash;por exemplo, 16.0 a 16.1&mdash;que incluem novos recursos e componentes.  
+* **Atualizações de manutenção**, por exemplo, 16.0.4 a 16.0.5, que incluem apenas correções direcionadas para problemas críticos.
 
 Os administradores do Enterprise podem optar por manter seus clientes em uma linha de base de manutenção. Uma linha de base de manutenção é compatível com as atualizações de manutenção por um ano após o lançamento da próxima linha de base de manutenção.
 
@@ -34,7 +37,7 @@ Para começar a usar uma linha de base de manutenção, baixe um inicializador d
 > [!NOTE]
 > Tenha cuidado ao distinguir entre os inicializadores de versão corrigida e padrão. Os inicializadores padrão são configurados para usar a versão mais recente disponível do Visual Studio. Os inicializadores padrão têm um número no nome do arquivo (por exemplo, vs_enterprise__123456789-123456789.exe) quando eles são baixados de My.VisualStudio.com.
 
-Durante a instalação, os administradores de empresa devem configurar seus clientes para impedir que eles atualizem para a versão mais recente. Você pode configurar os clientes de várias maneiras:
+Durante a instalação, os administradores de empresa devem configurar seus clientes para impedir que eles atualizem para a versão mais recente. Há várias maneiras de fazer isso:
 - [Altere a `channelUri` configuração no arquivo de configuração de resposta](update-servicing-baseline.md#install-a-servicing-baseline-on-a-network) para usar um manifesto do canal na pasta local ou de layout.
 - [Modifique o channelUri executando a linha de comando](update-servicing-baseline.md#install-a-servicing-baseline-via-the-internet) para usar um arquivo inexistente.
 - [Defina políticas no sistema cliente para desabilitar atualizações](update-servicing-baseline.md#use-policy-settings-to-disable-clients-from-updating) para impedir a atualização automática nos clientes.
@@ -59,7 +62,7 @@ Outra opção para controlar as atualizações em um cliente é [desativar as no
 
 Quando uma atualização para uma linha de base de manutenção estiver disponível, os arquivos do inicializador de versão fixa serão disponibilizados para a atualização da manutenção do [My.VisualStudio.com](https://my.visualstudio.com/Downloads?q=visual%20studio%202019%20version%2016.0).
 
-Para os administradores implantando via instalação de layout de rede, o administrador desejará atualizar a [localização do layout](update-a-network-installation-of-visual-studio.md). Os clientes que instalaram do local receberão as notificações de atualização. Se precisar implantar a atualização nos clientes, siga [estas instruções](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Ao modificar o 'response.json' para uma atualização, não adicione cargas de trabalho, componentes ou idiomas adicionais. O gerenciamento dessas configurações deve ser feito como uma implantação 'modificar', depois que o produto foi atualizado.
+Para administradores que implantam usando uma instalação de layout de rede, o administrador deve atualizar a [localização do layout](update-a-network-installation-of-visual-studio.md). Os clientes que instalaram do local receberão as notificações de atualização. Se a atualização precisar ser implantada em clientes, siga [estas instruções](update-a-network-installation-of-visual-studio.md#how-to-deploy-an-update-to-client-machines). Ao modificar o 'response.json' para uma atualização, não adicione cargas de trabalho, componentes ou idiomas adicionais. O gerenciamento dessas configurações deve ser feito como uma implantação 'modificar', depois que o produto foi atualizado.
 
 Para uma instalação baseada na internet, execute o novo instalador de versão fixa com o parâmetro `--channelUri` apontando para um manifesto de canal inexistente no cliente. Se a atualização for implantada no modo silencioso ou passivo, use dois comandos separados:
 

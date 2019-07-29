@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8931e16751355a7f25c9ab88dbcd554bc7cb0ea7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97b1fc79c7b558fc4445b3d2621746e752a4ef71
+ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965568"
+ms.lasthandoff: 07/23/2019
+ms.locfileid: "68416493"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>Saiba mais sobre projetos e soluções usando Visual Basic
 
@@ -73,6 +73,8 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 3. Na página **Criar um novo projeto**, insira **solução em branco** na caixa de pesquisa, selecione o modelo **Solução em Branco** e escolha **Avançar**.
 
+   ![Modelo de Solução em branco no Visual Studio 2019](../media/vs-2019/tutorial-projects-blank-solution-template.png)
+
 4. Nomeie a solução como **QuickSolution** e escolha **Criar**.
 
    A solução aparece no **Gerenciador de Soluções** do lado direito da janela do Visual Studio. Você provavelmente usará o **Gerenciador de Soluções** muitas vezes para navegar pelo conteúdo de seus projetos.
@@ -83,18 +85,43 @@ Vamos iniciar nossa exploração criando uma solução vazia. Depois de se famil
 
 Agora vamos adicionar nosso primeiro projeto à solução. Vamos começar com um projeto vazio e adicionar os itens necessários ao projeto.
 
-1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
+::: moniker range="vs-2017"
+
+1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
 
    A caixa de diálogo **Adicionar Novo Projeto** é aberta.
 
-1. No painel esquerdo, expanda **Visual Basic** e escolha **Área de Trabalho do Windows**. Em seguida, no painel central, selecione o modelo **Projeto Vazio (.NET Framework)**. Nomeie o projeto **QuickDate** e, em seguida, escolha o botão **OK**.
+1. No painel esquerdo, expanda **Visual Basic** e escolha **Área de Trabalho do Windows**. Em seguida, no painel central, selecione o modelo **Projeto Vazio (.NET Framework)** . Nomeie o projeto **QuickDate** e, em seguida, escolha o botão **OK**.
 
    Um projeto chamado QuickDate é exibido abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
 
    > [!NOTE]
    > Se a opção **Visual Basic** não for exibida no painel esquerdo da caixa de diálogo, você precisará instalar a *carga de trabalho* **Desenvolvimento para desktop com .NET** do Visual Studio. O Visual Studio usa a instalação baseada em carga de trabalho para instalar somente os componentes necessários para o tipo de desenvolvimento realizado. Uma maneira fácil de instalar uma nova carga de trabalho é escolher o link **Abrir Instalador do Visual Studio** no canto inferior esquerdo da caixa de diálogo **Adicionar Novo Projeto**. Depois que o Instalador do Visual Studio for iniciado, escolha a carga de trabalho **Desenvolvimento para desktop do .NET** e, em seguida, o botão **Modificar**.
+   >
+   > ![Abrir o link do Instalador do Visual Studio](media/tutorial-projects-open-installer-vb.png)
 
-   ![Abrir o link do Instalador do Visual Studio](media/tutorial-projects-open-installer-vb.png)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** no **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
+
+   Uma caixa de diálogo é aberta com o título **Adicionar um novo projeto**.
+
+1. Insira o texto **vazio** na caixa de pesquisa na parte superior e, em seguida, selecione **Visual Basic** em **Idioma**.
+
+1. Selecione o modelo **Projeto Vazio (.NET Framework)** e, em seguida, **Avançar**.
+
+1. Nomeie o projeto **QuickDate** e, em seguida, escolha **Criar**.
+
+   Um projeto chamado QuickDate é exibido abaixo da solução no **Gerenciador de Soluções**. Atualmente, ele contém um único arquivo chamado *App.config*.
+
+   > [!NOTE]
+   > Se você não vir o modelo **Projeto Vazio (.NET Framework)** , será necessário instalar a **carga de trabalho** do Visual Studio de *desenvolvimento para área de trabalho do .NET*. O Visual Studio usa a instalação baseada em carga de trabalho para instalar somente os componentes necessários para o tipo de desenvolvimento realizado. Uma maneira fácil de instalar uma nova carga de trabalho ao criar um projeto é escolher o link **Instalar mais ferramentas e recursos** no texto que informa **Não encontra o que você está procurando?** . Depois que o Instalador do Visual Studio for iniciado, escolha a carga de trabalho **Desenvolvimento para desktop do .NET** e, em seguida, o botão **Modificar**.
+   >
+   > ![Link do instalador no Visual Studio 2019](../media/vs-2019/tutorial-projects-open-installer.png)
+
+::: moniker-end
 
 ## <a name="add-an-item-to-the-project"></a>Adicionar um item ao projeto
 
@@ -132,13 +159,27 @@ Vamos adicionar um projeto de teste de unidade em nossa solução. Desta vez, co
 
 1. Ao clicar com o botão direito do mouse ou no menu de contexto da **Solução ‘QuickSolution’** do **Gerenciador de Soluções**, escolha **Adicionar** > **Novo Projeto**.
 
-   A caixa de diálogo **Adicionar Novo Projeto** é aberta.
+::: moniker range="Vs-2017"
 
-1. No painel esquerdo, expanda a opção **Visual Basic** e escolha a categoria **Teste**. No painel central, escolha o modelo de projeto **Projeto de Teste de Unidade (.NET Framework)**. Nomeie o projeto **QuickTest** e, em seguida, escolha o botão **OK**.
+2. No painel esquerdo, expanda a opção **Visual Basic** e escolha a categoria **Teste**. No painel central, escolha o modelo de projeto **Projeto de Teste de Unidade (.NET Framework)** . Nomeie o projeto **QuickTest** e escolha **OK**.
 
    Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado *UnitTest1.vb* é aberto no editor.
 
    ![Gerenciador de Soluções do Visual Studio com dois projetos](media/tutorial-projects-solution-explorer-vb.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+2. Na caixa de diálogo **Adicionar um novo projeto**, insira o texto **teste de unidade** na caixa de pesquisa na parte superior e, em seguida, selecione **Visual Basic** em **Idioma**.
+
+3. Escolha o modelo de **Projeto de Teste de Unidade (.NET Framework)** e escolha **Avançar**.
+
+4. Nomeie o projeto **QuickTest** e escolha **Criar**.
+
+   Um segundo projeto é adicionado ao **Gerenciador de Soluções** e um arquivo chamado *UnitTest1.vb* é aberto no editor.
+
+::: moniker-end
 
 ## <a name="add-a-project-reference"></a>Adicionar uma referência ao projeto
 
