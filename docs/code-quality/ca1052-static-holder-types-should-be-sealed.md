@@ -1,6 +1,6 @@
 ---
-title: 'CA1052: Tipos de suporte estático devem ser selados'
-ms.date: 03/11/2019
+title: 'CA1052: Tipos de detentor estáticos devem ser estáticos ou não herdáveis'
+ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
 - StaticHolderTypesShouldBeSealed
@@ -18,49 +18,54 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4886a11d7d207523785b9d568226ae98a9e97b28
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 0a574f7f77277255acf2150c218c3f4db061e75c
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744589"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604771"
 ---
-# <a name="ca1052-static-holder-types-should-be-sealed"></a>CA1052: Tipos de suporte estático devem ser selados
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Tipos de detentor estáticos devem ser estáticos ou não herdáveis
 
 |||
 |-|-|
-|NomeDoTipo|StaticHolderTypesShouldBeSealed|
+|NomeDoTipo|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
 |Categoria|Microsoft.Design|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo não abstrato contém apenas membros estáticos e não é declarado com o [lacrado](/dotnet/csharp/language-reference/keywords/sealed) ([NotInheritable](/dotnet/visual-basic/language-reference/modifiers/notinheritable)) modificador.
+Um tipo não abstrato contém somente membros estáticos (além de um possível construtor padrão) e não é declarado com o modificador [estático](/dotnet/csharp/language-reference/keywords/static) ou [compartilhado](/dotnet/visual-basic/language-reference/modifiers/shared) .
 
-Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-CA1052 regra pressupõe que um tipo que contém apenas membros estáticos não foi projetado para ser herdadas, pois o tipo não fornece nenhuma funcionalidade que pode ser substituída em um tipo derivado. Um tipo que não se destina a ser herdada que deve ser marcado com o `sealed` ou `NotInheritable` modificador para proibir o uso como um tipo base. Essa regra não é disparado para classes abstratas.
+A regra CA1052 pressupõe que um tipo que contém somente membros estáticos não foi projetado para ser herdado, porque o tipo não fornece nenhuma funcionalidade que possa ser substituída em um tipo derivado. Um tipo que não se destina a ser herdado deve ser marcado com `static` o modificador em C# para proibir seu uso como um tipo base. Além disso, seu construtor padrão deve ser removido. No Visual Basic, a classe deve ser convertida em um [módulo](/dotnet/visual-basic/language-reference/statements/module-statement).
+
+Essa regra não é acionada para classes abstratas ou classes que têm uma classe base. No entanto, a regra é acionada para classes que dão suporte a uma interface vazia.
+
+> [!NOTE]
+> Na implementação do FxCop Analyzer dessa regra, ela também abrange a funcionalidade da [regra CA1053](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, marque o tipo como `sealed` ou `NotInheritable`. Se o projeto tem como alvo o .NET Framework 2.0 ou posterior, uma abordagem melhor é marcar o tipo como `static` ou `Shared`. Dessa forma, você não precisa declarar um construtor particular para impedir que a classe que está sendo criado.
+Para corrigir uma violação dessa regra, marque o tipo como `static` e remova o construtor padrão (C#) ou converta-o em um módulo (Visual Basic).
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Suprima um aviso nessa regra somente se o tipo foi projetado para ser herdada. A ausência do `sealed` ou `NotInheritable` modificador sugere que o tipo é útil como um tipo base.
+Suprimir um aviso desta regra somente se o tipo for projetado para ser herdado. A ausência do `static` modificador sugere que o tipo é útil como um tipo base.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não por meio da análise de código estático), poderá configurar em quais partes de sua codebase executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo EditorConfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (Design). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
 
@@ -72,10 +77,12 @@ O exemplo a seguir mostra um tipo que viola a regra:
 
 ## <a name="fix-with-the-static-modifier"></a>Corrigir com o modificador estático
 
-O exemplo a seguir mostra como corrigir uma violação dessa regra, marcando o tipo com o `static` modificador em C#:
+O exemplo a seguir mostra como corrigir uma violação dessa regra marcando o tipo com o `static` modificador em: C#
 
-[!code-csharp[FxCop.Design.StaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1052-static-holder-types-should-be-sealed_2.cs)]
-
-## <a name="related-rules"></a>Regras relacionadas
-
-- [CA1053: Tipos de espaços reservados estáticos não devem ter construtores](../code-quality/ca1053-static-holder-types-should-not-have-constructors.md)
+```csharp
+public static class StaticMembers
+{
+    public static int SomeProperty { get; set; }
+    public static void SomeMethod() { }
+}
+```
