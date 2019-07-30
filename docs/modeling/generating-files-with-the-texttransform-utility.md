@@ -1,6 +1,6 @@
 ---
 title: Gerando arquivos com o utilitário TextTransform
-ms.date: 03/22/2018
+ms.date: 07/26/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55ebaaa05670cdea0685b7d337c7f3b3a9733cb0
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: f224419cd92b760d71045859a13887a83115b987
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493098"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606098"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>Gerar arquivos com o utilitário TextTransform
 
@@ -24,21 +24,37 @@ TextTransform.exe é uma ferramenta de linha de comando que você pode usar para
 > [!NOTE]
 > Se você deseja executar a transformação de texto como parte de um processo de compilação, considere usar a tarefa de transformação de texto do MSBuild. Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md). Em um computador em que o Visual Studio está instalado, você também pode escrever um aplicativo ou extensão do Visual Studio que podem transformar modelos de texto. Para obter mais informações, consulte [modelos de processamento de texto usando um Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).
 
- TextTransform.exe está localizado no seguinte diretório:
+TextTransform.exe está localizado no seguinte diretório:
+ 
+::: moniker range=">=vs-2019"
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
 
-para o Professional edition, ou
+para Professional Edition ou
 
- **\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program Files (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
 
- para o Enterprise edition.
+para Enterprise Edition.
+
+::: moniker-end
+ 
+::: moniker range="vs-2017"
+
+**\Program arquivos (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+
+para Professional Edition ou
+
+**\Program arquivos (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+
+para Enterprise Edition.
 
 Nas versões anteriores do Visual Studio, o arquivo é encontrado no seguinte local:
 
 **\Program arquivos (x86) \Common Files\Microsoft Shared\TextTemplating\{versão}**
 
 onde {version} depende da versão anterior que está instalada.
+
+::: moniker-end
 
 ## <a name="syntax"></a>Sintaxe
 
