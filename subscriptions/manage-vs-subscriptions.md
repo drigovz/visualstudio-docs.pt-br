@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/17/2019
 ms.topic: conceptual
 description: Saiba como aproveitar ao máximo as suas assinaturas do Visual Studio
-ms.openlocfilehash: 553513bf41184389b921f392962f22f26561094f
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: dcbcbc9c11dc5c695a1ca2ed523ad982ff18f5c5
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68378075"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493351"
 ---
 # <a name="managing-subscriptions"></a>Gerenciando assinaturas
 
@@ -73,7 +73,6 @@ Você pode alterar facilmente as informações de contato e as preferências em 
 3. Na guia **Sobre**, você pode alterar o nome, o email, o país/a região, a imagem do perfil e as preferências de contato. Na guia **Preferências**, é possível selecionar suas preferências de idioma, padrões de data e hora, fuso horário e tema da interface do usuário.
 4. Ao concluir as alterações, clique em **Salvar**.
 5. Clique no botão **Voltar** do navegador para retornar à página Benefícios.
-
 
 ### <a name="setting-communications-preferences"></a>Definir preferências de comunicação
 Se você quiser receber atualizações periódicas sobre sua assinatura e seus benefícios, incluindo o boletim mensal de Assinaturas do Visual Studio, [atualize suas preferências](https://app.vsaex.visualstudio.com/me?workflowID=devprogram&tab=edit), marcando a caixa de Assinaturas do Visual Studio no seu perfil do Visual Studio. Você pode alterar essas preferências e cancelar a assinatura a qualquer momento. 

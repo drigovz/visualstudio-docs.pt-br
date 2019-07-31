@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba como usar as chaves do produto (Product Keys) para dar suporte a demonstrações da Internet por meio dos Serviços de Terminal e habilitar o acesso ao RDS
-ms.openlocfilehash: 34fa32f22582ccde69cbc54c86a3442ad92a7c96
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: 19faa64b7eeaebc1b92ca965f686795b31e00e7e
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377974"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493377"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>Demonstrações da Internet por meio dos Serviços de Terminal
 Com uma assinatura do Visual Studio, você pode fornecer aos usuários finais acesso a demonstrações de seus programas na Internet via Serviços de Terminal (Windows Server 2003 ou Windows Server 2008) ou Serviços de Área de Trabalho Remota (Windows Server 2008 R2 e posterior). Dessa forma, até 200 usuários anônimos poderão acessar simultaneamente a demonstração. A demonstração não deverá usar dados de produção. Os assinantes do Visual Studio são licenciados para demonstrar aplicativos aos usuários finais. Essa demonstração de Internet usando o TS (Serviços de Terminal) ou o RDS (Serviços de Área de Trabalho Remota) é o único cenário em que os usuários finais sem uma assinatura do Visual Studio podem interagir com o aplicativo de demonstração enquanto o software é licenciado por meio das assinaturas do Visual Studio.
@@ -38,4 +38,3 @@ Se as seguintes condições forem atendidas, os usuários finais poderão conect
 Se precisar de diretrizes para implantar o RDS, confira a série de blogs em várias partes na **implantação da sessão do RDS (Serviços de Área de Trabalho Remota) 2012** em https://techcommunity.microsoft.com/t5/Ask-The-Performance-Team/bg-p/AskPerf. 
 
 Se tiver dúvidas, acesse o [fórum dos Serviços de Área de Trabalho Remota da Microsoft](https://social.technet.microsoft.com/Forums/windowsserver/home?forum=winserverTS).
-

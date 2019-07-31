@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/23/2019
 ms.topic: conceptual
 description: Saiba mais sobre a responsabilidade dos administradores de gerenciar assinaturas para grandes equipes, bem como para prestadores de serviço externos.
-ms.openlocfilehash: 0f304d4858658c4540e38c6fa250e08c127713ae
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 91e507358084bcb878d2a9afc7aad4fe4a2b869c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68420567"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493347"
 ---
 # <a name="large-teams-and-external-contractors"></a>Equipes grandes e prestadores de serviço externos
 Os administradores de assinaturas do Visual Studio são responsáveis por garantir que cada usuário que interage com software licenciado do Visual Studio seja licenciado adequadamente com sua própria assinatura do Visual Studio.
@@ -39,5 +39,3 @@ Saiba mais as políticas dos administradores:
 - [Inventário do ambiente de pré-produção](admin-inventory.md)
 - [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 - Utilizar o [Uso Máximo](maximum-usage.md) para rastrear os compromissos de compra
-
-
