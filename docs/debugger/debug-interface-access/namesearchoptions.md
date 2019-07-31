@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dbb82946d185e8e5ec81b171f5d9943751eee4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c2b06e8d89405b38afe2b740ce860a78bc46cc
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62855155"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661829"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
-Especifica as opções de pesquisa para nomes de arquivo e símbolos.
+Especifica as opções de pesquisa para nomes de arquivo e símbolo.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -45,15 +45,15 @@ enum NameSearchOptions {
 ## <a name="elements"></a>Elementos
 `nsNone` Nenhuma opção foi especificada.
 
-`nsfCaseSensitive` Aplica-se uma correspondência de nome diferencia maiusculas de minúsculas.
+`nsfCaseSensitive`Aplica uma correspondência de nome que diferencia maiúsculas de minúsculas.
 
-`nsfCaseInsensitive` Aplica-se uma correspondência de nome diferencia maiusculas de minúsculas.
+`nsfCaseInsensitive`Aplica uma correspondência de nome que não diferencia maiúsculas de minúsculas.
 
-`nsfFNameExt` Trata nomes como caminhos e aplica-se uma correspondência de nome de arquivo filename. ext.
+`nsfFNameExt`Trata os nomes como caminhos e aplica uma correspondência de nome filename. ext.
 
-`nsfRegularExpression` Aplica-se uma correspondência de nome diferencia maiusculas de minúsculas usando asteriscos (*) e pontos de interrogação (?) como caracteres curinga.
+`nsfRegularExpression`Aplica uma correspondência de nome que diferencia maiúsculas de minúsculas usando asteriscos (*) e pontos de interrogação (?) como curingas. (Não há suporte para outros caracteres comuns de expressão regular.)
 
-`nsfUndecoratedName` Aplica-se apenas aos símbolos que têm não decorados e nomes decorados.
+`nsfUndecoratedName`Aplica-se somente a símbolos que têm nomes não decorados e decorados.
 
 ## <a name="remarks"></a>Comentários
 Os valores dessa enumeração são passados para os seguintes métodos:
@@ -65,7 +65,7 @@ Os valores dessa enumeração são passados para os seguintes métodos:
 - [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)
 
 ## <a name="requirements"></a>Requisitos
-Cabeçalho: dia2.h
+Cabeçalho: dia2. h
 
 ## <a name="see-also"></a>Consulte também
 - [Enumerações e estruturas](../../debugger/debug-interface-access/enumerations-and-structures.md)
