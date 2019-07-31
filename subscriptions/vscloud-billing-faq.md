@@ -1,24 +1,22 @@
 ---
 title: Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio Enterprise e do Visual Studio Professional
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 03/02/2018
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Perguntas sobre cobrança para assinaturas de nuvem.
-ms.openlocfilehash: 858707358062386191c526810644f110bd7ac58d
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 7241a63d51ecba2dd47995f39e98f8676e949f60
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250730"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606045"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Perguntas frequentes sobre cobrança de assinaturas de nuvem do Visual Studio
-
 [Compare os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/) para entender os benefícios de cada assinatura do Visual Studio, com comparações entre as assinaturas de nuvem e padrão do Visual Studio, detalhes sobre os benefícios do assinante e muito mais.
 
 ## <a name="general-purchasing-questions"></a>Perguntas gerais sobre compras
-
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-using-a-purchase-order"></a>P: Posso comprar assinaturas na nuvem do Visual Studio usando uma Ordem de Compra?
 R: Nº Todas as assinaturas de nuvem do Visual Studio precisam ser compradas usando uma assinatura do Azure. (Considere isso como sua conta de cobrança do Azure.)
 
@@ -31,13 +29,10 @@ Alguns tipos de assinaturas do Azure, incluindo a [avaliação gratuita do Azure
 R: De forma alguma. Se você quiser comprar somente assinaturas de nuvem do Visual Studio por meio do Azure, você poderá fazer isso.
 
 ## <a name="enterprise-agreement-ea-customers"></a>Clientes do EA (Contrato Enterprise)
-
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar um Contrato Enterprise para comprar assinaturas na nuvem do Visual Studio?
-
 R: Sim, é possível. Você precisará ser proprietário ou colaborador de uma assinatura do Azure criada para o EA. Faça suas compras de assinaturas de nuvem do Visual Studio diretamente no Visual Studio Marketplace. Não é possível comprar assinaturas de nuvem do Visual Studio usando uma ordem de compra.
 
 ### <a name="q-how-can-i-tell-whether-i-have-the-necessary-privileges-to-buy-services-in-the-visual-studio-marketplace-through-my-organizations-enterprise-agreement"></a>P: Como posso saber se tenho os privilégios necessários para comprar serviços no Visual Studio Marketplace por meio do Contrato Enterprise de minha organização?
-
 R: A abordagem mais fácil para determinar se você tem os privilégios corretos é clicar no botão **Comprar** de um serviço oferecido no Visual Studio Marketplace.
 Você precisa selecionar uma assinatura do Azure (que é uma conta de cobrança) em uma lista apresentada de assinaturas do Azure que estão vinculadas ao seu logon no momento.
 Como o nome da assinatura do Azure assume como padrão o tipo de conta de cobrança ("Pago Conforme o Uso", "Contrato Enterprise", etc.), geralmente fica claro se a assinatura do Azure faz parte do Contrato Enterprise.
@@ -45,11 +40,9 @@ Como o nome da assinatura do Azure assume como padrão o tipo de conta de cobran
 Outro método é tentar visitar o [Azure Enterprise Portal](https://ea.azure.com).  Se você conseguir acessá-lo com êxito, significará que você já tem a função de admin corporativo ou de proprietário da conta. Somente os proprietários da conta podem configurar novas contas de cobrança do Azure em um Contrato Enterprise. Se você não conseguir acessar o Azure Enterprise Portal, descubra na sua organização quem é o admin corporativo e solicite que ele o adicione como proprietário da conta no Azure Enterprise Portal.  Se não for possível encontrar essa pessoa, [envie um tíquete de suporte](https://aka.ms/AzureEntSupport) e solicite as informações de contato.  É necessário o nome da sua organização e o número de registro do Contrato Enterprise para o tíquete de suporte.
 
 ### <a name="q-can-i-use-the-azure-monetary-commitment-funds-from-my-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>P: Posso usar os fundos do compromisso monetário do Azure de meu Contrato Enterprise para comprar assinaturas na nuvem do Visual Studio?
-
 R: Não, esses fundos pré-pagos não são qualificados para compra de assinaturas na nuvem do Visual Studio. Quando você escolher uma assinatura do Azure criada para o EA para comprar assinaturas de nuvem do Visual Studio, os encargos serão exibidos na sua próxima fatura "excedente". Normalmente, isso ocorre mensalmente, mas devido às regras do histórico de alguns clientes do EA, é possível que uma fatura excedente não seja emitida por vários meses. Consulte um especialista em licenciamento do EA se você precisar saber qual valor de compras adicionais (compras que não são qualificadas para o compromisso monetário do Azure) emitirá uma fatura excedente.
 
 ## <a name="how-charges-are-processed"></a>Como os encargos são processados
-
 ### <a name="q-how-are-monthly-cloud-subscription-charges-processed"></a>P: Como são processados os encargos **mensais** da assinatura na nuvem?
 R: Na primeira compra, é cobrada uma quantidade proporcional para cobrir os dias restantes do mês atual. Por exemplo, se uma compra de 10 assinaturas de nuvem mensais do Visual Studio Professional for feita em 15 de abril, serão cobradas 5 unidades porque resta 50% do mês (15 dias de um mês de 30 dias).
 Em primeiro de maio e a cada mês seguinte até o cancelamento, será cobrado o total de 10 unidades.
@@ -68,7 +61,6 @@ Com as assinaturas de nuvem mensais, os cancelamentos entram em vigor no primeir
 Para assinaturas de nuvem anuais, os cancelamentos entram em vigor no primeiro dia do mês após 12 meses da compra original ou 12 meses do último encargo de renovação anual. Por exemplo, se você comprou uma assinatura na nuvem anual do Visual Studio Professional em 3 de janeiro de 2018, ela permanece ativa até 1º de fevereiro de 2019, quando será renovada automaticamente por mais um ano. Se você cancelar em algum momento entre esse período e primeiro de fevereiro de 2020 a assinatura expirará em primeiro de fevereiro de 2020. Não há nenhum reembolso para cancelamentos durante o ano da assinatura para as assinaturas de nuvem anuais.
 
 ### <a name="q-what-kind-of-volume-discounts-are-available-for-visual-studio-subscriptions"></a>P: Que tipos de desconto por volume estão disponíveis para assinaturas do Visual Studio?
-
 R:  Você recebe um desconto de 5% na sexta assinatura e em todas as assinaturas seguintes *em cada tipo* de assinatura:
 
 * Visual Studio Professional mensal
@@ -84,32 +76,26 @@ Além disso, o desconto aplica-se somente aos encargos em um determinado períod
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
 ## <a name="other-questions"></a>Outras perguntas
-
 ### <a name="q-can-i-use-the-monthly-azure-credits-as-a-visual-studio-subscriber-to-buy-more-visual-studio-cloud-subscriptions"></a>P: Posso usar os créditos mensais do Azure como assinante do Visual Studio para comprar mais assinaturas na nuvem do Visual Studio?
-
 R: Não, você não pode usar seus [créditos mensais do Azure](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/) como assinante do Visual Studio para pagar as compras feitas no Visual Studio Marketplace. Nenhuma compra de assinatura de nuvem do Visual Studio será cobrada em seu cartão de crédito.
 Antes de fazer compras, você precisará [remover seu limite de gastos](https://azure.microsoft.com/pricing/spending-limits/).
 
 ### <a name="q-whats-the-difference-between-annual-and-monthly-cloud-subscriptions"></a>P: Qual é a diferença entre as assinaturas na nuvem anuais e mensais?
-
 R:  As assinaturas na nuvem mensais incluem o Visual Studio mais o uso do Azure DevOps Services e do TFS. As assinaturas de nuvem anuais também têm esse direito e ainda incluem os benefícios do assinante, como o uso do Windows e de outros softwares da Microsoft a serem instalados e executados para desenvolvimento e teste, um crédito mensal do Azure para experimentar os serviços do Azure e fazer desenvolvimento e teste na nuvem, treinamento, suporte e muito mais.
 [Comparar os benefícios e os preços das assinaturas de nuvem](https://visualstudio.microsoft.com/vs/pricing/)
 
 ### <a name="q-do-i-get-new-versions-of-visual-studio-if-i-buy-a-visual-studio-cloud-subscription"></a>P: Obterei novas versões do Visual Studio se eu comprar uma assinatura na nuvem do Visual Studio?
-
 R:  Sim. Quando novas versões são lançadas, você pode baixar e executá-las. Além disso, você também pode continuar a executar as versões anteriores.
 
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>P: Posso comprar assinaturas na nuvem do Visual Studio de meu revendedor de software?
-
 R:  Sim, isso é possível se o seu revendedor participa do programa CSP (Provedor de Soluções na Nuvem). Pergunte isso a ele.
 
-## <a name="buy-cloud-subscriptions-now"></a>Comprar assinaturas de nuvem agora
-
-* [Visual Studio Professional mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
-* [Visual Studio Enterprise mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)
-
 ## <a name="related-resources"></a>Recursos relacionados
+- [Portal de administração de assinaturas do Studio Visual](https://manage.visualstudio.com/)
+- [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
+- [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
 
-* [Portal de administração de assinaturas do Studio Visual](https://manage.visualstudio.com/)
-* [Suporte de assinatura do Visual Studio](https://visualstudio.microsoft.com/vs/support/)
-* [Compra de assinatura de nuvem do Visual Studio para CSPs](vscloud-csp.md)
+## <a name="next-steps"></a>Próximas etapas
+Comprar assinaturas de nuvem agora
+- [Visual Studio Professional mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly)
+- [Visual Studio Enterprise mensal](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly)

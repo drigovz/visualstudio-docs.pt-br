@@ -7,12 +7,12 @@ ms.topic: conceptual
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.openlocfilehash: b6922e5a2b14186afd1f3fa9294bbb24c2e7d649
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
+ms.openlocfilehash: ba6c17aa6aa1f0a89e53be6b8dba7067e1fdc902
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377951"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493392"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Novidades nas assinaturas do Visual Studio
 
@@ -42,5 +42,3 @@ Para saber mais sobre os benefícios, as opções e os preços, acesse https://v
 Se sua organização já tiver assinaturas do Visual Studio com o GitHub Enterprise, você pode saber mais sobre [gerenciar assinaturas do Visual Studio com o GitHub Enterprise](assign-github.md) em nossa documentação.  
 
 E, por agora, é isso aí!
-
-

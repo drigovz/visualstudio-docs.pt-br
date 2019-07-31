@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/11/2019
 ms.topic: conceptual
 description: Como entrar em sua Assinatura do Visual Studio com sua MSA (Conta Microsoft)
-ms.openlocfilehash: 3f90dec91530cbcb559dfb950a8e7d43faf274b2
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 1d144692ad8004037a590a6702d45765cda23a03
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315347"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493076"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>Entrar em suas assinaturas do Visual Studio com sua MSA (Conta Microsoft)
 
@@ -30,7 +30,6 @@ Este artigo fornecerá as etapas para entrar com sua MSA (Conta Microsoft).
 4. Clique em **Entrar**.
 5. Neste ponto, a página "Benefícios" deve ser exibida.
 
-
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q--im-unable-to-sign-in-using-my-msa"></a>P:  Não consigo entrar usando minha MSA.  
 R:  A causa mais comum de problemas de conexão é tentar entrar com uma MSA diferente daquela associada à assinatura.  Se você usa vários endereços de email diferentes, é possível que você esteja tentando entrar com um errado.  Tente entrar com outro endereço.  Se não for bem-sucedido, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
@@ -43,4 +42,4 @@ R:  Muitos usuários têm mais de uma assinatura.  Se você conseguir entrar no 
 Se ainda tiver problemas, você poderá contatar nossa equipe de [suporte de assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) para obter assistência.  
 
 ## <a name="next-steps"></a>Próximas etapas
-Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, os serviços e as ofertas disponíveis para você.  
+Após entrar com êxito no portal de assinaturas, recomendamos acessar a página Benefícios em https://my.visualstudio.com/benefits e explorar as excelentes ferramentas, serviços e ofertas disponíveis para você.  
