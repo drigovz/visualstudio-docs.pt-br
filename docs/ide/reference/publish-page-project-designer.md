@@ -1,25 +1,27 @@
 ---
 title: Página de Publicação, Designer de Projeto
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - Microsoft.VisualStudio.Publish.ClickOnceProvider.Dialog.PropertyPage
 helpviewer_keywords:
 - Project Designer, Publish page
 - Publish page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968884"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461636"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
+
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.
 
  Para acessar a página **Publicar**, selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Publicar**.
@@ -28,9 +30,10 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
 > Algumas das propriedades do ClickOnce descritas aqui também podem ser definidas no **PublishWizard**, disponível no menu **Build** ou clicando no botão **PublishWizard** nesta página.
 
 ## <a name="uielement-list"></a>Lista UIElement
+
  **Local da Pasta de Publicação**
 
- Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar (**...** ) funcionar.
+ Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar ( **...** ) funcionar.
 
  **URL da Pasta de Instalação**
 

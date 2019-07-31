@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03ca4a3b247375f18f3889ae7c63b1405ca942a4
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 68ed41eeecde853459bc9c817d84bd433788084c
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747774"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493308"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -29,7 +29,7 @@ O **Gerenciador de Testes** pode executar testes de vários projetos de teste em
 
 Quando você compila o projeto de teste, os testes são exibidos no Gerenciador de Testes. Se o Gerenciador de Testes não estiver visível, escolha **Teste** no menu do Visual Studio, escolha **Windows** e, em seguida, escolha **Gerenciador de Testes**.
 
-![Gerenciador de Testes de Unidade](../test/media/ute_failedpassednotrunsummary.png)
+![Gerenciador de Testes](../test/media/ute_failedpassednotrunsummary.png)
 
 Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados nos grupos padrão de **Testes com Falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. Você pode alterar a forma como o Gerenciador de Testes agrupa seus testes.
 
@@ -53,7 +53,7 @@ A **barra de aprovação/reprovação** na parte superior da janela do **Gerenci
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 
-|Botão|Descrição|
+|Botão|DESCRIÇÃO|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -100,7 +100,7 @@ Para alterar a maneira como os testes são organizados, escolha a seta para baix
 
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
-|Grupo|Descrição|
+|Grupo|DESCRIÇÃO|
 |-|-----------------|
 |**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|
 |**Resultado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
@@ -115,7 +115,7 @@ Uma característica é geralmente um par de nome/valor de categoria, mas também
 
 Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, você define um par nome/valor de característica no atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. A estrutura de teste também contém essas características predefinidas:
 
-|Característica|Descrição|
+|Característica|DESCRIÇÃO|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
@@ -145,7 +145,7 @@ Para filtrar por um critério diferente:
 > [!NOTE]
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
-|Qualificador|Descrição|
+|Qualificador|DESCRIÇÃO|
 |-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
@@ -228,3 +228,4 @@ Testes podem ser executados do **Gerenciador de Testes** clicando com o botão d
 
 - [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
 - [Executar um teste de unidade como um processo de 64 bits](../test/run-a-unit-test-as-a-64-bit-process.md)
+- [Perguntas Frequentes sobre o Gerenciador de Testes](test-explorer-faq.md)

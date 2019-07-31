@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5b05d6651f865a300a0c065c5e0a275cb29fd309
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790202"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605423"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
@@ -99,7 +99,7 @@ Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode mo
 
 Alguns dos itens de exibição incluem:
 
-|Item de exibição|Descrição|
+|Item de exibição|DESCRIÇÃO|
 |------------------|-----------------|
 |**Texto sem Formatação**|Texto no editor.|
 |**Texto Selecionado**|Texto incluído na seleção atual quando o editor está em foco.|
@@ -253,6 +253,5 @@ Exibe uma amostra do esquema de cores, tamanho e estilo da fonte de **Mostrar co
 
 ## <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)
 - [Caixa de diálogo Opções](../../ide/reference/options-dialog-box-visual-studio.md)
 - [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

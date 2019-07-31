@@ -1,6 +1,7 @@
 ---
 title: Propriedades de arquivo, JavaScript
 ms.date: 06/21/2017
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - javascript.project.property.expandedsdknode.fileversion
@@ -20,19 +21,20 @@ f1_keywords:
 - javascript.project.property.reference.resolvedpath
 - javascript.project.property.reference.version
 ms.assetid: 085913b8-a97b-45f7-85fa-bbb0902f3ee9
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790642"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461840"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
+
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.
 
  É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c03d9d48ca098932a09e42116deb3ba7ee14a623
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: 63a44407c891464f39693a2d69e5a32d22b6e993
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531650"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605695"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Como: Exibir URLs como links no Editor
 
@@ -45,5 +45,4 @@ ms.locfileid: "65531650"
 
 ## <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)
