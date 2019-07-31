@@ -71,8 +71,9 @@
 #### [Vídeo sobre a integração](https://youtu.be/plSu6fpi7UI)
 ### Usar o portal de administração
 #### [Visão geral](using-admin-portal.md)
-#### [Atribuir assinaturas](assign-license.md)
-#### [Reenviar emails de atribuição](resend-assignment-email.md)
+#### Atribuir assinaturas
+##### [Adicionar usuários únicos](assign-license.md)
+##### [Adicionar vários usuários](assign-license-bulk.md)
 #### [Editar assinaturas](edit-license.md)
 #### [Excluir assinaturas](delete-license.md)
 #### [Procurar uma assinatura](search-license.md)
