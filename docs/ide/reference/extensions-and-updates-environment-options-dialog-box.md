@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d7c49cc7946f9fea988c57a4ba782ec93a6294fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9d2ddf174255a7db85e3eb61d71472748287be90
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790844"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605857"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>Caixa de diálogo Opções: Ambiente \> Extensões
 
@@ -36,7 +36,3 @@ Para obter mais informações, consulte [Localizando e usando extensões do Visu
 ## <a name="additional-extension-galleries"></a>Galerias de Extensões Adicionais
 
 Um recurso do Enterprise que habilita o suporte para galerias de extensões proprietárias. Saiba mais em [Galerias privadas](../../extensibility/private-galleries.md).
-
-## <a name="see-also"></a>Consulte também
-
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

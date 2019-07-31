@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ef55b44d57cecadb690637c17c0a35e9cb0659
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: bdf19530461d52523bc581835e14fcaabe0e9a76
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531610"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605436"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como: Gerenciar a quebra automática de linha no editor
 
@@ -55,5 +55,4 @@ Se você estiver familiarizado com a quebra automática de linha no Notepad++, S
 
 ## <a name="see-also"></a>Consulte também
 
-- [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)
 - [Recursos do Editor de Códigos](../../ide/writing-code-in-the-code-and-text-editor.md)

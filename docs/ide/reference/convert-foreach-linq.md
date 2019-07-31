@@ -1,5 +1,6 @@
 ---
 title: Converter um loop foreach em LINQ
+descritpion: Convert any foreach loop that uses an IEnumerable to a LINQ query or a LINQ call form (also known as a LINQ method).
 ms.date: 02/20/2019
 ms.topic: reference
 author: kendrahavens
@@ -9,12 +10,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
+ms.openlocfilehash: baa1f32bb981e6d244555baef2a00d03933cdd6c
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531843"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483714"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Converter um loop foreach em LINQ
 
@@ -37,11 +38,11 @@ Esta refatoração aplica-se a:
 
     ![Exemplo de foreach com IEnumerable](media/convert-foreach-to-LINQ.png)
 
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
    ![Converter em um exemplo de menu LINQ](media/convert-foreach-to-LINQ-codefix.png)
 
-3. Selecione **Converter em LINQ** ou **Converter em Linq (formulário de chamada)**.
+3. Selecione **Converter em LINQ** ou **Converter em Linq (formulário de chamada)** .
 
    ![Exemplo de resultado da consulta LINQ](media/convert-foreach-to-LINQ-result.png)
 

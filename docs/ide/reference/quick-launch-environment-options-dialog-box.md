@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1f5026a014b5adc96f0729d130c4398474d6d413
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969040"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605899"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Caixa de diálogo de início rápido, ambiente, opções
 
@@ -47,7 +47,3 @@ Os resultados da pesquisa do Início Rápido são exibidos em quatro categorias:
 ## <a name="show-previous-results"></a>Mostrar resultados anteriores
 
 Por padrão, o termo de pesquisa que você inserir não persiste entre sessões de pesquisa. A cadeia de caracteres de pesquisa é apagada se você pesquisar um termo, mover o cursor para fora da área de **Início Rápido** e, depois, voltar. Para manter os resultados da pesquisa, acesse a caixa de diálogo **Opções**, escolha **Início Rápido** e, em seguida, marque a caixa de seleção **Mostrar resultados da pesquisa anterior quando o Início Rápido estiver ativado.** . Na próxima vez em que fizer uma pesquisa, deixe a área de Início Rápido e volte, o Início Rápido manterá o termo de pesquisa usado pela última vez e mostrará os resultados da pesquisa.
-
-## <a name="see-also"></a>Consulte também
-
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

@@ -1,6 +1,7 @@
 ---
 title: Página de Assinatura, Designer de Projeto
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vs.AddNewStrongNameKey
@@ -14,82 +15,85 @@ helpviewer_keywords:
 - Project Designer, Signing page
 - Signing page in Project Designer
 ms.assetid: dab3ba13-2f92-4827-92bd-1be3c35bc48b
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0d4fa326d65606fd06d41fc5c697b80a526c1059
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950535"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461289"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
+
 Use a página **Assinatura** do **Designer de Projeto** para assinar os manifestos do aplicativo e de implantação e também para assinar o assembly (assinatura de nome forte).
 
- Observe que a assinatura dos manifestos do aplicativo e de implantação é um processo diferente da assinatura de um assembly, embora ambas as tarefas sejam realizadas na página **Assinatura**.
+Observe que a assinatura dos manifestos do aplicativo e de implantação é um processo diferente da assinatura de um assembly, embora ambas as tarefas sejam realizadas na página **Assinatura**.
 
- Além disso, o armazenamento de informações do arquivo de chave é diferente da assinatura do manifesto e assinatura do assembly. Para a assinatura do manifesto, as informações de chave são armazenadas no banco de dados de armazenamento criptografado do computador e no repositório de certificados do Windows do usuário atual. Para a assinatura do assembly, as informações de chave são armazenadas somente no banco de dados de armazenamento criptografado do computador.
+Além disso, o armazenamento de informações do arquivo de chave é diferente da assinatura do manifesto e assinatura do assembly. Para a assinatura do manifesto, as informações de chave são armazenadas no banco de dados de armazenamento criptografado do computador e no repositório de certificados do Windows do usuário atual. Para a assinatura do assembly, as informações de chave são armazenadas somente no banco de dados de armazenamento criptografado do computador.
 
- Para acessar a página **Assinatura**, selecione um nó do projeto no **Gerenciador de Soluções** e em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Assinatura**.
+Para acessar a página **Assinatura**, selecione um nó do projeto no **Gerenciador de Soluções** e em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Assinatura**.
 
 ## <a name="application-and-deployment-manifest-signing"></a>Assinatura de manifesto do aplicativo e de implantação
- Caixa de seleção **Assinar os manifestos do ClickOnce**
 
- Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, confira [Como: Assinar manifestos de aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).
+Caixa de seleção **Assinar os manifestos do ClickOnce**
 
- Botão **Selecionar do Repositório**
+Marque essa caixa de seleção para assinar os manifestos do aplicativo e de implantação com um par de chaves pública/privada. Para obter mais informações sobre como fazer isso, confira [Como: Assinar manifestos de aplicativo e de implantação](../../ide/how-to-sign-application-and-deployment-manifests.md).
 
- Permite selecionar um certificado existente do repositório de certificados pessoais do usuário atual. É possível selecionar um desses certificados para assinar os manifestos do aplicativo e de implantação.
+Botão **Selecionar do Repositório**
 
- Ao clicar em **Selecionar do Repositório**, a caixa de diálogo **Selecionar um Certificado** é aberta, que lista os certificados do repositório de certificados pessoais que atualmente são válidos (não expirados) e que têm chaves privadas. A finalidade do certificado selecionado deve incluir a assinatura de código.
+Permite selecionar um certificado existente do repositório de certificados pessoais do usuário atual. É possível selecionar um desses certificados para assinar os manifestos do aplicativo e de implantação.
 
- Se você clicar em **exibir propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Saber mais sobre certificados** para exibir informações adicionais da Ajuda.
+Ao clicar em **Selecionar do Repositório**, a caixa de diálogo **Selecionar um Certificado** é aberta, que lista os certificados do repositório de certificados pessoais que atualmente são válidos (não expirados) e que têm chaves privadas. A finalidade do certificado selecionado deve incluir a assinatura de código.
 
- Botão **Selecionar do Arquivo**
+Se você clicar em **exibir propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Saber mais sobre certificados** para exibir informações adicionais da Ajuda.
 
- Permite selecionar um certificado de um arquivo de chave existente.
+Botão **Selecionar do Arquivo**
 
- Ao clicar em **Selecionar do Arquivo**, a caixa de diálogo **Selecionar Arquivo** é aberta, que permite selecionar um arquivo de chave do certificado (.pfx). O arquivo deve ser protegido por senha e não pode já estar localizado no repositório de certificados pessoais.
+Permite selecionar um certificado de um arquivo de chave existente.
 
- Na caixa de diálogo **Inserir senha para abrir o arquivo**, insira uma senha para abrir o arquivo de chave do certificado (.pfx). As informações de senha são armazenadas na lista de contêineres de chaves pessoais e no repositório de certificados pessoais.
+Ao clicar em **Selecionar do Arquivo**, a caixa de diálogo **Selecionar Arquivo** é aberta, que permite selecionar um arquivo de chave do certificado (.pfx). O arquivo deve ser protegido por senha e não pode já estar localizado no repositório de certificados pessoais.
 
- Botão **Criar Certificado de Teste**
+Na caixa de diálogo **Inserir senha para abrir o arquivo**, insira uma senha para abrir o arquivo de chave do certificado (.pfx). As informações de senha são armazenadas na lista de contêineres de chaves pessoais e no repositório de certificados pessoais.
 
- Permite criar um certificado para teste. O certificado de teste é usado para assinar os manifestos do aplicativo e de implantação do ClickOnce.
+Botão **Criar Certificado de Teste**
 
- Ao clicar em **Criar Certificado de Teste**, a caixa de diálogo **Criar Certificado de Teste** é aberta, na qual é possível digitar uma senha para o arquivo de chave de nome forte para o certificado de teste. O arquivo é nomeado *projectname*_TemporaryKey.pfx. Se você clicar em **OK** sem digitar uma senha, o arquivo .pfx não será criptografado com senha.
+Permite criar um certificado para teste. O certificado de teste é usado para assinar os manifestos do aplicativo e de implantação do ClickOnce.
 
- Caixa **URL do servidor de carimbo de data/hora**
+Ao clicar em **Criar Certificado de Teste**, a caixa de diálogo **Criar Certificado de Teste** é aberta, na qual é possível digitar uma senha para o arquivo de chave de nome forte para o certificado de teste. O arquivo é nomeado *projectname*_TemporaryKey.pfx. Se você clicar em **OK** sem digitar uma senha, o arquivo .pfx não será criptografado com senha.
 
- Especifica o endereço de um servidor que gera carimbos de data/hora da assinatura. Ao fornecer um certificado, esse site externo verifica a hora em que o aplicativo foi assinado.
+Caixa **URL do servidor de carimbo de data/hora**
+
+Especifica o endereço de um servidor que gera carimbos de data/hora da assinatura. Ao fornecer um certificado, esse site externo verifica a hora em que o aplicativo foi assinado.
 
 ## <a name="assembly-signing"></a>Assinatura de assembly
- Caixa de seleção **Assinar o assembly**
 
- Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
+Caixa de seleção **Assinar o assembly**
 
- Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do Windows (SDK do Windows) para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
+Marque essa caixa de seleção para assinar o assembly e criar um arquivo de chave de nome forte. Para obter mais informações sobre como assinar um assembly usando o **Designer de Projeto**, confira [Como: Assinar um assembly (Visual Studio)](../managing-assembly-and-manifest-signing.md#how-to-sign-an-assembly-in-visual-studio).
 
- Lista **Escolher um arquivo de chave de nome forte**
+Essa opção usa a ferramenta Al.exe fornecida pelo Software Development Kit do Windows (SDK do Windows) para assinar o assembly. Para obter mais informações sobre os detalhes, confira [Como: Assinar um assembly com um nome forte](/dotnet/framework/app-domains/how-to-sign-an-assembly-with-a-strong-name).
 
- Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.
+Lista **Escolher um arquivo de chave de nome forte**
 
- Selecione **\<Novo...>** para criar um novo arquivo de chave com o qual assinar o assembly. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
+Permite especificar um arquivo de chave novo ou existente de nome forte que é usado para assinar o assembly. Selecione **\<Procurar...>** para selecionar um arquivo de chave existente.
 
- Botão **Alterar Senha**
+Selecione **\<Novo...>** para criar um novo arquivo de chave com o qual assinar o assembly. A caixa de diálogo **Criar Chave de Nome Forte** é exibida, que pode ser usada para especificar um nome de arquivo de chave e proteger o arquivo de chave com uma senha. A senha deve ter, no mínimo, 6 caracteres. Se você especificar uma senha, será criado um arquivo de Troca de Informações Pessoais (.pfx); caso contrário, será criado um arquivo de chave de nome forte (.snk).
 
- Altera a senha do arquivo de chave de Troca de Informações Pessoais (.pfx) usado para assinar o assembly.
+Botão **Alterar Senha**
 
- Ao clicar em **Alterar Senha**, a caixa de diálogo **Alterar Senha de Chave** é aberta. Na caixa de diálogo, **Senha antiga** é a senha atual do arquivo de chave. **Nova senha** deve ter, no mínimo, 6 caracteres. As informações de senha são armazenadas no repositório de certificados do Windows do usuário atual.
+Altera a senha do arquivo de chave de Troca de Informações Pessoais (.pfx) usado para assinar o assembly.
 
- Caixa de seleção **Somente sinal de atraso**
+Ao clicar em **Alterar Senha**, a caixa de diálogo **Alterar Senha de Chave** é aberta. Na caixa de diálogo, **Senha antiga** é a senha atual do arquivo de chave. **Nova senha** deve ter, no mínimo, 6 caracteres. As informações de senha são armazenadas no repositório de certificados do Windows do usuário atual.
 
- Marque essa caixa de seleção para habilitar a assinatura com atraso.
+Caixa de seleção **Somente sinal de atraso**
 
- Observe que um projeto com assinatura com atraso não será executado e não pode ser depurado. No entanto, é possível usar [Sn.exe (Ferramenta de Nome Forte)](/dotnet/framework/tools/sn-exe-strong-name-tool) com a opção `-Vr` para ignorar a verificação durante o desenvolvimento.
+Marque essa caixa de seleção para habilitar a assinatura com atraso.
+
+Observe que um projeto com assinatura com atraso não será executado e não pode ser depurado. No entanto, é possível usar [Sn.exe (Ferramenta de Nome Forte)](/dotnet/framework/tools/sn-exe-strong-name-tool) com a opção `-Vr` para ignorar a verificação durante o desenvolvimento.
 
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.

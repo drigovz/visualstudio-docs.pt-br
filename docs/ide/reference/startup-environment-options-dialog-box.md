@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 27f67c00173db998b32d0a012af55428b87d1eda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e0f14d830c9b0c3d091ffc380f64c128b8b79b83
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950923"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605917"
 ---
 # <a name="options-dialog-box-environment--startup"></a>Caixa de diálogo Opções: Ambiente \> Inicialização
 
@@ -30,7 +30,3 @@ Use esta página para personalizar a página inicial do Visual Studio ou para de
 Use essa página para definir outra ação padrão quando o Visual Studio é iniciado. Na lista **Na inicialização, abrir**, escolha entre **janela Iniciar** (que permite abrir um projeto novo ou existente), **Solução mais recente** ou **Ambiente vazio**.
 
 ::: moniker-end
-
-## <a name="see-also"></a>Consulte também
-
-- [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)

@@ -2,19 +2,19 @@
 title: Snippets de código do Visual C++
 ms.date: 11/04/2016
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
-manager: jillfra
+author: mikeblome
+ms.author: mblome
+manager: markl
 dev_langs:
 - CPP
 ms.workload:
 - cplusplus
-ms.openlocfilehash: de27b201dadb23bb8209ebee24b34386f8fa5127
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c1bcef00116e0c5f09099344926d924113e5982
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581754"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461631"
 ---
 # <a name="visual-c-code-snippets"></a>Snippets de código do Visual C++
 
@@ -24,7 +24,7 @@ Você pode adicionar um snippet de código em um local específico no seu códig
 
 ## <a name="insert-a-code-snippet"></a>Inserir um snippet de código
 
-Para inserir um snippet de código, abra um arquivo de código C++ (*.cpp* ou *.h*), clique em algum lugar dentro do arquivo e siga um destes procedimentos:
+Para inserir um snippet de código, abra um arquivo de código C++ ( *.cpp* ou *.h*), clique em algum lugar dentro do arquivo e siga um destes procedimentos:
 
 - Clique com o botão direito do mouse para obter o menu de contexto e selecione **Inserir Snippet**
 
@@ -64,7 +64,7 @@ Em seguida, você pode substituir o 0 pela condição correta.
 
 ## <a name="where-can-i-find-a-complete-list-of-the-c-code-snippets"></a>Onde posso encontrar uma lista completa dos snippets de código do C++?
 
-Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++**. Na janela abaixo, expanda **Visual C++**. Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
+Você pode encontrar a lista completa de snippets de código do C++ indo até o **Gerenciador de Snippets de Código** (no menu **Ferramentas**) e configurando a **Linguagem** para **Visual C++** . Na janela abaixo, expanda **Visual C++** . Você verá os nomes de todos os snippets de código do C++ em ordem alfabética.
 
 Os nomes da maioria dos snippets de código são auto-explicativos, mas alguns nomes podem ser confusos.
 
@@ -144,7 +144,7 @@ for (int i = length - 1; i >= 0; i--)
 
 ## <a name="the-destructor-snippet-"></a>O snippet de destruidor (~)
 
-O snippet de destruidor (**~**) apresenta comportamento diferente em diferentes contextos. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
+O snippet de destruidor ( **~** ) apresenta comportamento diferente em diferentes contextos. Se você inserir este snippet dentro de uma classe, ele fornecerá um destruidor para essa classe. Por exemplo, considerando o seguinte código:
 
 ```cpp
 class SomeClass {

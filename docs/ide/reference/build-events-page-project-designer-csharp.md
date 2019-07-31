@@ -1,6 +1,7 @@
 ---
 title: Página Eventos de Build, Designer de Projeto (C#)
 ms.date: 11/04/2016
+ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
 - cs.ProjectPropertiesBuildEvents
@@ -10,37 +11,49 @@ helpviewer_keywords:
 - pre-build events
 - post-build events
 ms.assetid: 3fff9ae5-213c-46ea-a660-1d70acb6c922
-author: gewarren
-ms.author: gewarren
+author: ghogen
+ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 25ea62284698de9d57cbcbefa73b950af8c42a6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ba429c116d44a5d79d935fe3a1ad07b6d5f36f79
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790888"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461847"
 ---
 # <a name="build-events-page-project-designer-c"></a>Página Eventos de Build, Designer de Projeto (C#)
+
 Use a página **Eventos de Build** do **Designer de Projeto** para especificar as instruções de configuração de build. Você também pode especificar as condições sob as quais eventos pós-build são executados. Para obter mais informações, confira [Como: Especificar eventos de build (C#)](../../ide/how-to-specify-build-events-csharp.md) e [Como: Especificar eventos de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md).
 
 ## <a name="uielement-list"></a>Lista UIElement
- **Configuração** Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
 
- **Plataforma** Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+**Configuração**
 
- **Linha de comando do evento de pré-build** Especifica os comandos a serem executados antes do início do build. Para digitar comandos longos, clique em **Editar Pré-Build** para exibir a [Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
+Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+**Plataforma**
+
+Esse controle não é editável nesta página. Para obter uma descrição desse controle, consulte [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md).
+
+**Linha de comando do evento de pré-build**
+
+Especifica comandos serem executados antes do início do build. Para digitar comandos longos, clique em **Editar Pré-Build** para exibir a [Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build](../../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
 
- **Linha de comando do evento de pós-build** Especifica os comandos a serem executados após o término do build. Para digitar comandos longos, clique em **Editar Pós-Build** para exibir a **Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build**.
+**Linha de comando de evento de pós-build**
+
+Especifica comandos a serem executados após o fim do build. Para digitar comandos longos, clique em **Editar Pós-Build** para exibir a **Caixa de Diálogo Linha de Comando de Evento de Pré-Build/Evento de Pós-Build**.
 
 > [!NOTE]
 > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
 
- **Executar o evento de pós-build** Especifica as seguintes condições para que o evento de pós-build seja executado, conforme é mostrado na tabela a seguir.
+**Executar o evento de pós-build**
+
+Especifica as condições a seguir para o evento de pós-build ser executado, conforme mostrado na tabela a seguir.
 
 |Opção|Resultado|
 |------------|------------|
