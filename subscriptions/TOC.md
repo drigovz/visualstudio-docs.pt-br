@@ -61,10 +61,8 @@
 ### [Responsabilidades do administrador](admin-responsibilities.md)
 #### [Inventário de pré-produção](admin-inventory.md)
 #### [Gerenciar equipes grandes e prestadores de serviço externos](manage-teams.md)
-#### [Rastrear atribuição de usuário e processar pedidos](assignments-orders.md)
-### [Licenciamento por Volume](volume-license-admins.md)
+#### [Rastrear atribuições de usuário e processar pedidos](assignments-orders.md)
 ### Integrar sua organização
-#### [Integração após a migração](post-migration-onboarding.md)
 #### [Migração de Open e Open License](open-migration.md)
 #### [MPSA](mpsa.md)
 #### [Assinaturas de nuvem](cloud-admin.md)
