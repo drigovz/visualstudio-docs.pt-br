@@ -16,10 +16,10 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
+ms.lasthandoff: 08/02/2019
 ms.locfileid: "65705862"
 ---
 # <a name="convert-dialog-box"></a>Caixa de diálogo Converter
@@ -39,6 +39,6 @@ A caixa de diálogo **Converter** permite selecionar uma ferramenta de conversã
   
 2. Selecione a ferramenta apropriada para seu aplicativo.  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [NOTINBUILD – Como atualizar um projeto do Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Portabilidade, migração e atualização de projetos do Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)
