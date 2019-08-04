@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfee16abf522284471baf4c8dc8b3c47468a032e
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b534e46f4cdef87641207ec13419d4c59d04ed3f
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65701489"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740071"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilando e criando no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ ms.locfileid: "65701489"
 |------------------|--------------|--------------------------|
 |Como usar o IDE|– É possível criar e executar compilações de maneira mais fácil imediatamente.<br />– É possível executar compilações em multiprocessador para projetos C++ e C#.<br />– É possível personalizar alguns aspectos do sistema de build.|[Compilando e limpando projetos e soluções no Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)|
 |Executando uma linha de comando do MSBuild|– É possível criar projetos sem instalar o Visual Studio.<br />– É possível executar compilações em multiprocessador para todos os tipos de projeto.<br />– É possível personalizar a maioria das áreas do sistema de build.|[MSBuild](../msbuild/msbuild.md)|
-|Usando o Build do Team Foundation|–   É possível automatizar seu processo de build. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Também é possível criar projetos em servidores de build compartilhados em vez de no seu computador de desenvolvimento.<br />– É possível especificar rapidamente o código que você deseja compilar, os testes que você deseja executar e outras opções comuns.<br />– É possível modificar o fluxo de trabalho do build e, conforme necessário, criar atividades de build para realizar tarefas profundamente personalizadas.|[Compilar o aplicativo](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)|
+|Usando o Build do Team Foundation|–   É possível automatizar seu processo de build. Por exemplo, será possível criar um ou mais projetos à noite ou sempre que o check-in do código for feito. Também é possível criar projetos em servidores de build compartilhados em vez de no seu computador de desenvolvimento.<br />– É possível especificar rapidamente o código que você deseja compilar, os testes que você deseja executar e outras opções comuns.<br />– É possível modificar o fluxo de trabalho do build e, conforme necessário, criar atividades de build para realizar tarefas profundamente personalizadas.|[Compilar o aplicativo](/azure/devops/pipelines/index)|
 
 ## <a name="building-from-the-ide"></a>Compilando no IDE
- Ao criar um projeto, as configurações de build padrão são definidas para ele e uma configuração de build da solução é atribuída a ele para fornecer contexto para compilações. As configurações da solução definem a maneira como os projetos na solução são criados e implantados. As configurações do projeto são um conjunto de propriedades do projeto exclusivas para um tipo de plataforma e de build (por exemplo, versão Win32). É possível editar essas configurações padrão e é possível criar suas próprias configurações. Para obter mais informações, consulte [Introdução ao Designer de projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [NIB como: Modificar as propriedades do projeto e as definições de configuração](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67).
+ Ao criar um projeto, as configurações de build padrão são definidas para ele e uma configuração de build da solução é atribuída a ele para fornecer contexto para compilações. As configurações da solução definem a maneira como os projetos na solução são criados e implantados. As configurações do projeto são um conjunto de propriedades do projeto exclusivas para um tipo de plataforma e de build (por exemplo, versão Win32). É possível editar essas configurações padrão e é possível criar suas próprias configurações. Para obter mais informações, consulte [introdução ao designer de projeto](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7) e [NIB como: Modifique as propriedades do projeto e](https://msdn.microsoft.com/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)as definições de configuração.
 
  Dentro do IDE, é possível realizar as seguintes tarefas adicionais:
 
@@ -53,4 +53,4 @@ ms.locfileid: "65701489"
 - Melhorar o desempenho do build usando builds paralelas. Para obter mais informações, consulte [Building Multiple Projects in Parallel (Criando vários projetos paralelamente)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou a postagem do blog [Tuning C++ build parallelism (Ajustando o paralelismo de build do C++)](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Consulte também
- [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [Noções básicas sobre configurações de Build](../ide/understanding-build-configurations.md) [Noções básicas sobre plataformas de Build](../ide/understanding-build-platforms.md) [criando (compilando) projetos de Site](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Como: criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md) [entendendo as configurações de Build](../ide/understanding-build-configurations.md) [entendendo as plataformas de Build](../ide/understanding-build-platforms.md) que [criam (compilando) projetos](https://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [de site como: criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md)
