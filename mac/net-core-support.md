@@ -5,25 +5,25 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 06/13/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 05c41988282cb5f6ae643b1abdb05c0b4b0e5c9b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 325489f243e6942cf02df406937f4d19cd21ed0d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461871"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681748"
 ---
 # <a name="net-core-support"></a>Suporte do .NET Core
 
 A tabela a seguir descreve as versões do .NET Core compatíveis com as versões prévias e estáveis do Visual Studio para Mac:
 
-Versão do SDK do .NET Core |Visual Studio para Mac 8.1 (estável) | Visual Studio para Mac 8.2 (estável) | Visual Studio para Mac 8.3 (versão prévia) |
+| Versão do SDK do .NET Core |Visual Studio para Mac 8.1 (estável) | Visual Studio para Mac 8.2 (estável) | Visual Studio para Mac 8.3 (versão prévia) |
 |---------|---------|---------|---------|
 |v2.1.0 - v2.1.5xx | | | |
 |v2.1.600 + |✔︎|✔︎|✔︎|
 |v2.2.1 - v2.2.1xx | | | |
 |v2.2.200 + |✔︎|✔︎|✔︎|
 |v3.0 < Versão Prévia 3 | | | |
-|v3.0 Versão Prévia 3, 4, 5 |✔︎|✔︎|✔︎︎|︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎︎
+|v3.0 Versão Prévia 3, 4, 5 |✔︎|✔︎|✔︎|
 |v3.0 Versão Prévia 6+ | |✔︎|✔︎|
 
 > [!IMPORTANT]

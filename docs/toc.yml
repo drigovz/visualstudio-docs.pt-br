@@ -14,7 +14,7 @@
       href: ide/advanced-feature-overview.md
 - name: Instalação
   items:
-    - name: Instalar o Visual Studio
+    - name: Instalar Visual Studio
       href: install/install-visual-studio.md
     - name: Instalar offline
       items:
@@ -52,7 +52,7 @@
           items:
             - name: Criar uma instalação em rede do Visual Studio
               href: install/create-a-network-installation-of-visual-studio.md
-            - name: Considerações de rede
+            - name: Considerações sobre rede
               items:
                 - name: Instalar e usar o Visual Studio por trás de um firewall ou servidor proxy
                   href: install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md
@@ -88,7 +88,7 @@
               href: install/changed-payloads.md
             - name: Desabilitar ou mover o cache do pacote
               href: install/disable-or-move-the-package-cache.md
-        - name: Gerenciar assinaturas
+        - name: Gerenciar Assinaturas
           items:
             - name: 'Assinaturas do Visual Studio: Visão geral do administrador'
               href: /visualstudio/subscriptions/admin-responsibilities
@@ -133,24 +133,24 @@
           href: install/build-tools-container-issues.md
     - name: Instalar o Help Viewer
       href: help-viewer/installation.md
-- name: Guias de Início Rápido
+- name: Guia de início rápido
   items:
     - name: Orientação do Visual Studio
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
-    - name: 'C++: Criar um aplicativo do console'
+    - name: 'C++: Criar um aplicativo de console'
       href: ide/getting-started-with-cpp-in-visual-studio.md
-    - name: 'Python: Como criar um aplicativo Web'
+    - name: 'Python: Criar um aplicativo Web'
       href: ide/quickstart-python.md
-    - name: 'Node.js: Como criar um aplicativo Web'
+    - name: 'Node.js: Criar um aplicativo Web'
       href: ide/quickstart-nodejs.md
     - name: 'F#: Criar um serviço Web'
       href: ide/quickstart-fsharp.md
-    - name: 'C#: Como criar um aplicativo Web'
+    - name: 'C#: Criar um aplicativo Web'
       href: ide/quickstart-aspnet-core.md
-    - name: 'C#: Criar um aplicativo do console'
+    - name: 'C#: Criar um aplicativo de console'
       href: ide/quickstart-csharp-console.md
-    - name: 'Visual Basic: Criar um aplicativo do console'
+    - name: 'Visual Basic: Criar um aplicativo de console'
       href: ide/quickstart-visual-basic-console.md
 - name: Tutoriais
   items:
@@ -194,8 +194,6 @@
                   href: ide/managing-references-in-a-project.md
                 - name: Adicionar ou remover referências usando o Gerenciador de Referências
                   href: ide/how-to-add-or-remove-references-by-using-the-reference-manager.md
-                - name: Adicionar referências usando o NuGet versus um SDK de extensão
-                  href: ide/adding-references-using-nuget-versus-an-extension-sdk.md
                 - name: Adicionar ou remover namespaces importados (Visual Basic)
                   href: ide/how-to-add-or-remove-imported-namespaces-visual-basic.md
                 - name: Solução de problemas de referências desfeitas
@@ -594,7 +592,7 @@
       href: designers/designing-user-interfaces.md
     - name: Desenvolver aplicativos com o Designer de Fluxo de Trabalho >>
       href: workflow-designer/developing-applications-with-the-workflow-designer.md
-    - name: Compilar e criar
+    - name: Compilação e construção
       items:
         - name: Visão geral
           displayName: Compile build
@@ -726,7 +724,7 @@
               href: ide/how-to-unlock-visual-studio.md
     - name: Desempenho do Visual Studio
       items:
-        - name: Otimizar o desempenho
+        - name: Otimizar desempenho
           href: ide/optimize-visual-studio-performance.md
         - name: Tempo de inicialização
           href: ide/optimize-visual-studio-startup-time.md
@@ -746,7 +744,7 @@
           href: ide/reference/accessibility-products-and-services-from-microsoft.md
 - name: Referência
   items:
-    - name: Atalhos de teclado
+    - name: Atalhos do teclado
       items:
         - name: Comandos populares
           displayName: keyboard shortcuts
@@ -914,7 +912,7 @@
               items:
                 - name: Geral
                   href: ide/reference/options-text-editor-general.md
-                - name: Extensão do arquivo
+                - name: Extensão de arquivo
                   href: ide/reference/options-text-editor-file-extension.md
                 - name: Todas as linguagens
                   items:
@@ -944,11 +942,11 @@
                   items:
                     - name: Avançado
                       href: ide/reference/options-text-editor-c-cpp-advanced.md
-                    - name: Habilitação
+                    - name: Experimental
                       href: ide/reference/options-text-editor-c-cpp-experimental.md
                     - name: Formatação
                       href: ide/reference/options-text-editor-c-cpp-formatting.md
-                    - name: Exibir
+                    - name: Visualizar
                       href: ide/reference/options-text-editor-c-cpp-view.md
                 - name: 'F#'
                   items:
@@ -978,7 +976,7 @@
                       href: ide/reference/options-text-editor-javascript-intellisense.md
                     - name: Linting
                       href: ide/reference/options-text-editor-javascript-linting.md
-                    - name: Projeto
+                    - name: Project
                       href: ide/reference/options-text-editor-javascript-project.md
                 - name: U-SQL
                   items:
@@ -1000,9 +998,9 @@
                       href: ide/reference/options-text-editor-xml-miscellaneous.md
             - name: XAML Designer
               href: ide/reference/xaml-designer.md
-        - name: janela Saída
+        - name: Janela de Saída
           href: ide/reference/output-window.md
-        - name: Propriedades do projeto
+        - name: Propriedades do Projeto
           items:
             - name: Referência
               displayName: Project properties
@@ -1157,7 +1155,7 @@
               href: help-viewer/find-topics-index.md
             - name: Localizar tópicos no sumário
               href: help-viewer/find-topics-toc.md
-            - name: Pesquisar
+            - name: Search
               items:
                 - name: Procurar tópicos
                   href: help-viewer/find-topics.md
@@ -1167,7 +1165,7 @@
           href: help-viewer/customize.md
         - name: Acessibilidade
           href: help-viewer/accessibility-features.md
-        - name: Teclas de Atalho
+        - name: Teclas de atalho
           href: help-viewer/shortcut-keys.md
     - name: Dotfuscator Community
       items:
@@ -1193,7 +1191,7 @@
           href: /visualstudio/productinfo/release-rhythm/
         - name: Visual Studio 2017
           items:
-            - name: Notas de versão atuais
+            - name: Notas sobre a versão atuais
               href: /visualstudio/releasenotes/vs2017-relnotes/
             - name: Notas de versão da versão prévia
               href: /visualstudio/releasenotes/vs2017-preview-relnotes/
@@ -1207,7 +1205,7 @@
               href: /visualstudio/productinfo/vs2017-system-requirements-vs/
         - name: Visual Studio 2019
           items:
-            - name: Notas de versão atuais
+            - name: Notas sobre a versão atuais
               href: /visualstudio/releases/2019/release-notes/
             - name: Notas de versão da versão prévia
               href: /visualstudio/releases/2019/release-notes-preview/
