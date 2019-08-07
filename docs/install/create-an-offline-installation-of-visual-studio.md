@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação offline
 description: Saiba como instalar o Visual Studio offline quando você tiver uma conexão com a Internet não confiável ou largura de banda baixa.
-ms.date: 04/16/2019
+ms.date: 07/24/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: aa728615f74d8422b1e0c7a9cdd531281bc18e32
-ms.sourcegitcommit: 01c3c9dcade5d913bde2c7efa8c931a7b04e6cd0
+ms.openlocfilehash: 616c27f16b4fca9be6f8dab3cdf70fafae52f193
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/25/2019
-ms.locfileid: "67365244"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483515"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -133,8 +133,19 @@ Abra um prompt de comando e use um dos comandos dos exemplos a seguir. Os exempl
     vs_community.exe --layout c:\vslayout --lang en-US
     ```
 
-  > [!NOTE]
-  > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md) para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar.
+::: moniker range="vs-2017"
+
+   > [!NOTE]
+   > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Para obter mais informações, confira [Requisitos do sistema](/visualstudio/productinfo/vs2017-system-requirements-vs/). Para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar, confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+   > [!NOTE]
+   > Um layout completo do Visual Studio exige no mínimo 35 GB de espaço em disco. Para obter mais informações, confira [Requisitos do sistema](/visualstudio/releases/2019/system-requirements/). Para saber mais sobre como criar um layout apenas com os componentes que você deseja instalar, confira [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md).
+
+::: moniker-end
 
 Se você quiser instalar um idioma diferente do inglês, altere `en-US` para uma localidade da [lista de localidades de idioma](#list-of-language-locales). Em seguida, use a [lista de componentes e cargas de trabalho disponíveis](workload-and-component-ids.md) para personalizar ainda mais o cache de instalação.
 

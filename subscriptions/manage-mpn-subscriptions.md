@@ -1,29 +1,25 @@
 ---
 title: Gerenciar as assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network) | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/11/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
-ms.openlocfilehash: ca0865f876cfad10cbd7c6744f938fef839f7d55
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 600d7c651e4e4b4396293e8be60a008a6f6d0bf3
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823204"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605456"
 ---
-# <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciando assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
-
+# <a name="manage-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciar assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
 
 Confira [Assinaturas do Visual Studio oferecidas aos parceiros do MPN (Microsoft Partner Network)](program-mpn.md) para obter detalhes.
 
-## <a name="high-level-assignment-and-access-flow"></a>Fluxo de acesso e atribuição de alto nível
-
-### <a name="microsoft-action-pack-subscribers"></a>Assinantes do Microsoft Action Pack
+## <a name="microsoft-action-pack-subscribers"></a>Assinantes do Microsoft Action Pack
 Assinante do Microsoft Action Pack e assinaturas do Visual Studio
-
 1. O Administrador do Programa fará logon no Centro de Associação de Parceiro
 2. Associar pessoas por meio de **Requisitos e Ativos**
 3. Localizar indivíduos e **atribuir funções**
@@ -41,7 +37,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
     - Email de Contato
 13. Agora a entrada está concluída, e o assinante deve ter acesso aos benefícios
 
-### <a name="competency-partners"></a>Parceiros de Competência
+## <a name="competency-partners"></a>Parceiros de Competência
 1. Selecione **Requisitos e Ativos**
 2. Selecione **Privilégios**
 3. Selecione **Assinaturas do MSDN** (observação: em breve essa opção será renomeada como "Assinaturas do Visual Studio")
@@ -56,15 +52,12 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 9. Agora a entrada está concluída, e o assinante deve ter acesso aos benefícios
 
 ## <a name="resources-and-references"></a>Recursos e referências
-
 - Detalhes sobre [assinaturas do Visual Studio](https://partner.microsoft.com/membership/msdn-subscriptions) do Microsoft Partner Network
-
 - [Guia do Administrador do Programa para Benefícios de Serviços Online e de Software](https://assets.microsoft.com/Program-Administrator-Guide-to-Software-and-Online-Services-Benefits_1.pdf) do Microsoft Partner Network
   - PG 6 - atribuir funções de contato e assinaturas do Visual Studio ao Action Pack
+  > [!NOTE]
+  > A Função de Contato Técnico é necessária para assinaturas do Visual Studio
+  - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
 
-> [!NOTE]
-> A Função de Contato Técnico é necessária para assinaturas do Visual Studio
-> - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
-
-## <a name="need-help"></a>Precisa de ajuda?
+## <a name="next-steps"></a>Próximas etapas
 Assinantes e Administradores de Programa devem trabalhar diretamente com a equipe de suporte do Microsoft Partner Network para resolver quaisquer problemas com o acesso a assinaturas pelos assinantes. Acesse a página [Suporte para Parceiros](https://partner.microsoft.com/support) para obter assistência. (Serão necessárias as credenciais de entrada do MPN).

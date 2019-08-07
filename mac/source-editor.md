@@ -5,12 +5,12 @@ author: cobey
 ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
-ms.openlocfilehash: b8414f50ed420d8fb4b29d4c8a21d3c8dc6cee72
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: d1ea74b4893032252d04ebe5fe5e65ca1eedaeeb
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691973"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493268"
 ---
 # <a name="source-editor"></a>Editor de código-fonte
 
@@ -20,7 +20,7 @@ O editor de código-fonte no Visual Studio para Mac proporciona uma experiência
 
 Este artigo apresenta alguns dos principais recursos do editor de código-fonte e explora como você pode usar o Visual Studio para Mac para ser o mais produtivo possível.
 
-## <a name="the-source-editor-experience"></a>A experiência do Editor de código-fonte
+## <a name="the-source-editor-experience"></a>A experiência do editor de origem
 
 Exibir e mover com eficiência por todo o código faz parte integral do fluxo de trabalho de desenvolvimento. A maneira específica de como você decide exibir e manter o código é uma decisão pessoal, que varia entre os desenvolvedores e geralmente entre projetos.
 
@@ -32,13 +32,13 @@ O dobramento de código facilita a tarefa de gerenciar arquivos de código-fonte
 
 Para habilitar o dobramento de código, navegue para **Visual Studio > Preferências > Editor de Texto > Geral > Dobramento de código**:
 
-![Opções de dobramento de código](media/source-editor-image1.png)
+![Opções de dobramento de código](media/source-neweditor-image1.png)
 
 Esse menu também inclui a opção de dobra #regions e comentários por padrão, exibindo uma dica nomeada, em vez de código.
 
 Para mostrar ou ocultar seções, use o widget de divulgação de informações ao lado de número de linha:
 
-![Mostrar ou ocultar seções no código](media/source-editor-image2.png)
+![Mostrar ou ocultar seções no código](media/source-neweditor-image2.png)
 
 Você também pode mudar entre mostrar e ocultar as dobras usando o item de menu **Exibir > Dobramento > Ativar/Desativar Dobra e Ativar/Desativar Todas as Dobras**:
 
@@ -46,21 +46,19 @@ Você também pode mudar entre mostrar e ocultar as dobras usando o item de menu
 
 Este item de menu também pode ser usado para habilitar ou desabilitar o dobramento de código.
 
-## <a name="white-space"></a>Espaço em branco
+## <a name="word-wrap"></a>Quebra automática de linha
 
-Pode ser necessário que você exiba caracteres invisíveis no código-fonte. É uma maneira visível de garantir que você esteja atendendo aos padrões de codificação e não desperdiçando espaço desnecessariamente. Isso também é útil ao escrever em F#, que depende de linhas recuadas com precisão para avaliar o código.
+A quebra automática de linha pode ajudá-lo a gerenciar espaço ao trabalhar em linhas longas de código ou com espaço de exibição limitado. A quebra automática de linha também pode garantir que a exibição de código contenha o conteúdo completo do seu arquivo de origem, mesmo ao abrir painéis que possam obscurecer a visão ou reduzir a largura da exibição de origem. 
 
-Defina as opções para mostrar o espaço em branco navegando para **Visual Studio > Preferências > Editor de texto > Marcadores e Réguas**. A seleção dessa opção permite configurar _quando_ os caracteres invisíveis serão exibidos: Nunca, Ao Selecionar, Sempre:
+A quebra automática de linha é desabilitada por padrão, mas pode ser habilitada por meio de **Preferências** no Visual Studio para Mac. 
 
-![Mostrar opções de caracteres invisíveis](media/source-editor-image3.png)
+Para habilitar a quebra automática de linha, navegue até o **Visual Studio > Preferências > Editor de Texto > Novo Editor > Quebra Automática de Linha**:
 
-A opção para mostrar guias, espaços e terminações de linha também está disponível:
+![Opções de quebra automática de linha](media/source-neweditor-wordwrap1.png)
 
-![Mostrar guias e espaços](media/source-editor-image4.png)
+Com a quebra automática de linha habilitada, as linhas que excedem a largura do modo de exibição do editor de origem serão automaticamente encapsuladas para a próxima linha no arquivo de origem. Você também pode habilitar uma opção que exibirá um glifo visível ao lado de linhas encapsuladas. Isso permitirá que você diferencie entre as linhas que foram encapsuladas automaticamente e aquelas que você encapsulou manualmente.
 
-Caracteres invisíveis são exibidos como pontos cinza, conforme ilustrado na imagem abaixo:
-
-![espaço em branco exibido](media/source-editor-image22.png)
+![Texto encapsulado com quebra automática de linha habilitada](media/source-neweditor-wordwrap2.png)
 
 ## <a name="ruler"></a>Régua
 

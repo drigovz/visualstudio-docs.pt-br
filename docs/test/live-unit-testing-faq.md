@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1ed80454f6a87047de9e338d26c749d3c27a98ea
-ms.sourcegitcommit: b468d71052a1b8a697f477ab23a3644de139f1e9
+ms.openlocfilehash: 41d5248106b831accf4d71f97aeaeb72fdbc5018
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/19/2019
-ms.locfileid: "67258127"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662016"
 ---
 # <a name="live-unit-testing-frequently-asked-questions"></a>Perguntas frequentes sobre o Live Unit Testing
 
@@ -139,7 +139,7 @@ Há várias diferenças:
 
 - O Live Unit Testing não cria um domínio do aplicativo para executar testes, mas os testes executados por meio da janela **Gerenciador de Testes** criam um domínio do aplicativo.
 
-- O Live Unit Testing executa testes em cada assembly de teste sequencialmente, ao passo que se você executar vários testes na janela **Gerenciador de Testes** e selecionar o botão **Executar Testes em Paralelo**, eles serão executados em paralelo.
+- O Live Unit Testing executa testes em cada assembly de teste sequencialmente; na janela **Gerenciador de Testes**, você pode optar por executar vários testes em paralelo.
 
 - A descoberta e a execução de testes no Live Unit Testing usam a versão 2 do `TestPlatform`, enquanto a janela **Gerenciador de Testes** usa a versão 1. No entanto, você não observará nenhuma diferença na maioria dos casos.
 

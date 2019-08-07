@@ -6,16 +6,16 @@ keywords: ''
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/21/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3a26b0d25b81afe4d0b686676b16f76135295567
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: ba46db88e73b4ef6de5829203eb72e79a40a14b7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68177617"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68484763"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-professional-2019"></a>Editor principal do Visual Studio (incluído no Visual Studio Professional 2019)
 
@@ -63,8 +63,9 @@ Microsoft.VisualStudio.Component.DockerTools | Ferramentas de desenvolvimento de
 Microsoft.VisualStudio.Component.FSharp | Suporte à linguagem F# | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Suporte à linguagem F# para projetos Web | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Necessária
@@ -77,13 +78,13 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Pré-requisitos de desenvolvimento do Azure | 16.0.28625.61 | Necessária
+Microsoft.VisualStudio.ComponentGroup.Azure.Prerequisites | Pré-requisitos de desenvolvimento do Azure | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Ferramentas do Azure WebJobs | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Necessária
-Microsoft.Component.Azure.DataLake.Tools | Ferramentas Azure Data Lake e Stream Analytics | 16.1.28916.169 | Recomendado
+Microsoft.Component.Azure.DataLake.Tools | Ferramentas Azure Data Lake e Stream Analytics | 16.2.28915.88 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
@@ -95,7 +96,6 @@ Microsoft.VisualStudio.Component.Azure.ServiceFabric.Tools | Ferramentas do Serv
 Microsoft.VisualStudio.Component.Azure.Waverton | Principais ferramentas dos Serviços de Nuvem do Azure | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Ferramentas de build dos Serviços de Nuvem do Azure | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.Azure.CloudServices | Ferramentas dos Serviços de Nuvem do Azure | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.Azure.ResourceManager.Tools | Ferramentas do Azure Resource Manager | 16.0.28528.71 | Recomendado
@@ -128,7 +128,7 @@ ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Component.Microsoft.VisualStudio.RazorExtension | Razor Language Services | 16.0.28714.129 | Recomendado
 Component.Microsoft.Web.LibraryManager | Gerenciador de Biblioteca | 16.0.28315.86 | Recomendado
-Microsoft.Component.Azure.DataLake.Tools | Ferramentas Azure Data Lake e Stream Analytics | 16.1.28916.169 | Recomendado
+Microsoft.Component.Azure.DataLake.Tools | Ferramentas Azure Data Lake e Stream Analytics | 16.2.28915.88 | Recomendado
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
@@ -151,7 +151,7 @@ Microsoft.VisualStudio.Component.Common.Azure.Tools | Ferramentas de conectivida
 Microsoft.VisualStudio.Component.DockerTools | Ferramentas de desenvolvimento de contêiner | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Recomendado
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Recomendado
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Recomendado
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Recomendado
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Recomendado
@@ -164,7 +164,7 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Recomendado
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Recomendado
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Recomendado
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Recomendado
@@ -182,27 +182,25 @@ Microsoft.VisualStudio.Component.FSharp.Desktop | Suporte à linguagem F# da ár
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Suporte da linguagem Python | 16.0.28625.61 | Recomendado
-Microsoft.Component.PythonTools.Minicondax64 | Miniconda Python | 16.0.28625.61 | Recomendado
+Microsoft.Component.PythonTools.Minicondax64 | Miniconda Python | 16.2.29003.222 | Recomendado
 Microsoft.Component.PythonTools.Web | Suporte Web do Python | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Ferramentas de conectividade e publicação | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.FSharp.Desktop | Suporte à linguagem F# da área de trabalho | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Recomendado
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Recomendado
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Recomendado
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Recomendado
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Recomendado
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Recomendado
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Recomendado
-Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Ferramentas de desenvolvimento nativo do Python | 16.0.28621.142 | Opcional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Ferramentas de desenvolvimento nativo do Python | 16.2.29020.229 | Opcional
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos e criador de perfil de GPU do DirectX | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – ferramentas de build do C++ para VS 2015 (v14.00) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Ferramentas de criação de perfil do C++ | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK | Tempo de execução C Universal do Windows | 16.0.28315.86 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcional
 
 ## <a name="net-desktop-development"></a>Desenvolvimento de área de trabalho do .NET
 
@@ -219,13 +217,14 @@ Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 
 Microsoft.Net.Component.4.7.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.2 | 16.0.28517.75 | Necessária
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.1.28811.260 | Necessária
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Ferramentas de desenvolvimento de área de trabalho do .NET | 16.0.28621.142 | Necessária
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Ferramentas de desenvolvimento de área de trabalho do .NET | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
@@ -234,8 +233,8 @@ Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Fra
 Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 16.0.28517.75 | Recomendado
+Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.EntityFramework | Ferramentas do Entity Framework 6 | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Component.Dotfuscator | Proteção PreEmptive – Dotfuscator | 16.0.28528.71 | Opcional
 Component.Microsoft.VisualStudio.RazorExtension | Razor Language Services | 16.0.28714.129 | Opcional
 Component.Microsoft.Web.LibraryManager | Gerenciador de Biblioteca | 16.0.28315.86 | Opcional
@@ -260,7 +259,7 @@ Microsoft.VisualStudio.Component.FSharp | Suporte à linguagem F# | 16.0.28315.8
 Microsoft.VisualStudio.Component.FSharp.Desktop | Suporte à linguagem F# da área de trabalho | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Opcional
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Opcional
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Opcional
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Opcional
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Opcional
@@ -269,7 +268,7 @@ Microsoft.VisualStudio.Component.SQL.ADAL | Tempo de execução do SQL ADAL | 16
 Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte do SQL Server | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Opcional
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Opcional
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Opcional
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Opcional
@@ -307,11 +306,9 @@ ID do componente | Nome | Versão | Tipo de dependência
 Component.MDD.Linux | Desenvolvimento do C++ para Linux | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.Windows10SDK | Tempo de execução C Universal do Windows | 16.0.28315.86 | Necessária
-Component.Linux.CMake | Ferramentas CMake do C++ para Linux | 16.1.28916.169 | Recomendado
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Recomendado
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Recomendado
+Component.Linux.CMake | Ferramentas CMake do C++ para Linux | 16.2.29003.222 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Recomendado
-Component.MDD.Linux.GCC.arm | Ferramentas de desenvolvimento inseridas e de IoT | 16.1.28916.169 | Opcional
+Component.MDD.Linux.GCC.arm | Ferramentas de desenvolvimento inseridas e de IoT | 16.2.28915.88 | Opcional
 
 ## <a name="desktop-development-with-c"></a>Desenvolvimento de área de trabalho com o C++
 
@@ -328,33 +325,36 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e V
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Atualização dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.1.28916.169 | Necessária
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.2.29012.281 | Necessária
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
 Microsoft.VisualStudio.Component.Debugger.JustInTime | Depurador Just-In-Time | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos e criador de perfil de GPU do DirectX | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Recomendado
 Microsoft.VisualStudio.Component.VC.ATL | ATL do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.0.28625.61 | Recomendado
+Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.2.29003.222 | Recomendado
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Ferramentas de criação de perfil do C++ | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.VC.TestAdapterForBoostTest | Adaptador de Teste para Boost.Test | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.VC.TestAdapterForGoogleTest | Adaptador de Teste para Google Test | 16.0.28517.75 | Recomendado
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Recomendado
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Recomendado
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Recomendado
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Recomendado
 Component.Incredibuild | IncrediBuild - Aceleração de Build | 16.0.28528.71 | Opcional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Opcional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | Opcional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – ferramentas de build do C++ para VS 2015 (v14.00) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.21) | 16.1.28829.92 | Opcional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilador do Clang para Windows | 16.1.28916.169 | Opcional
+Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.22) | 16.2.29003.222 | Opcional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için C++ Clang Derleyicisi (8.0.0) | 16.2.29019.55 | Opcional
+Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | C++ Clang-cl para ferramentas de build v142 (x64/x86) | 16.2.29109.103 | Opcional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Módulos do C++ para ferramentas de build v142 (x64/x86 – experimental) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – ferramentas de build do C++ para VS 2017 x64/x86 (v14.16) | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK do Windows 10 (10.0.16299.0) | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK do Windows 10 (10.0.17134.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Ferramentas C++ Clang para Windows (8.0.0 – x64/x86) | 16.2.29019.55 | Opcional
 
 ## <a name="game-development-with-c"></a>Desenvolvimento de jogos com C++
 
@@ -368,18 +368,18 @@ ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Atualização dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Necessária
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.Windows10SDK | Tempo de execução C Universal do Windows | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos e criador de perfil de GPU do DirectX | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Ferramentas de criação de perfil do C++ | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Recomendado
-Component.Android.NDK.R16B | NDK do Android (R16B) | 16.1.28916.169 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
+Component.Android.NDK.R16B | NDK do Android (R16B) | 16.2.29116.78 | Opcional
 Component.Android.SDK25.Private | Instalação do SDK do Android (nível da API 25) (instalação local para Desenvolvimento Móvel com C++) | 16.0.28625.61 | Opcional
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Opcional
 Component.Cocos | Cocos | 16.0.28315.86 | Opcional
 Component.Incredibuild | IncrediBuild - Aceleração de Build | 16.0.28528.71 | Opcional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Opcional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | Opcional
 Component.MDD.Android | Ferramentas de desenvolvimento do Android para C++ | 16.0.28517.75 | Opcional
 Component.OpenJDK | OpenJDK (distribuição da Microsoft) | 16.1.28811.260 | Opcional
 Component.Unreal | Instalador do Unreal Engine | 16.1.28810.153 | Opcional
@@ -399,6 +399,7 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e V
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK do Windows 10 (10.0.16299.0) | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK do Windows 10 (10.0.17134.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
 
 ## <a name="mobile-development-with-c"></a>Desenvolvimento móvel com C++
 
@@ -413,15 +414,15 @@ ID do componente | Nome | Versão | Tipo de dependência
 Component.Android.SDK25.Private | Instalação do SDK do Android (nível da API 25) (instalação local para Desenvolvimento Móvel com C++) | 16.0.28625.61 | Necessária
 Component.OpenJDK | OpenJDK (distribuição da Microsoft) | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Necessária
-Component.Android.NDK.R16B | NDK do Android (R16B) | 16.1.28916.169 | Recomendado
+Component.Android.NDK.R16B | NDK do Android (R16B) | 16.2.29116.78 | Recomendado
 Component.Ant | Apache Ant (1.9.3) | 1.9.3.8 | Recomendado
 Component.MDD.Android | Ferramentas de desenvolvimento do Android para C++ | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
-Component.Android.NDK.R16B_3264 | NDK do Android (R16B) (32 bits) | 16.1.28916.169 | Opcional
+Component.Android.NDK.R16B_3264 | NDK do Android (R16B) (32 bits) | 16.2.29116.78 | Opcional
 Component.Google.Android.Emulator.API25.Private | Google Android Emulator (Nível da API 25) (instalação local) | 16.1.28810.153 | Opcional
 Component.HAXM.Private | Intel HAXM (Hardware Accelerated Execution Manager) (instalação local) | 16.0.28528.71 | Opcional
 Component.Incredibuild | IncrediBuild - Aceleração de Build | 16.0.28528.71 | Opcional
-Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.3 | Opcional
+Component.IncredibuildMenu | IncrediBuildMenu | 1.5.0.10 | Opcional
 Component.MDD.IOS | Ferramentas de desenvolvimento do iOS para C++ | 16.0.28517.75 | Opcional
 
 ## <a name="net-core-cross-platform-development"></a>Desenvolvimento de plataforma cruzada do .NET Core
@@ -451,8 +452,9 @@ Microsoft.VisualStudio.Component.DockerTools | Ferramentas de desenvolvimento de
 Microsoft.VisualStudio.Component.FSharp | Suporte à linguagem F# | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Suporte à linguagem F# para projetos Web | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Necessária
@@ -465,23 +467,22 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Necessária
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Ferramentas do Azure WebJobs | 16.0.28714.129 | Recomendado
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Recomendado
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Recomendado
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Ferramentas de Criação do Azure | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas do Azure para .NET | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.Azure.Compute.Emulator | Emulador de Computação do Azure | 16.1.28810.153 | Recomendado
 Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Armazenamento do Azure | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Ferramentas do Azure WebJobs | 16.0.28621.142 | Recomendado
-Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Ferramentas de nuvem de desenvolvimento para a Web | 16.0.28621.142 | Recomendado
+Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Ferramentas de nuvem de desenvolvimento para a Web | 16.2.29003.222 | Recomendado
 Microsoft.Net.Core.Component.SDK.2.2 | Ferramentas de desenvolvimento do .NET Core 2.2 | 16.0.28621.142 | Opcional
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.2 | Ferramentas de desenvolvimento do .NET Core 2.2 | 16.0.28516.191 | Opcional
 Microsoft.NetCore.ComponentGroup.Web.2.2 | Ferramentas de desenvolvimento do .NET Core 2.2 | 16.0.28621.142 | Opcional
@@ -508,14 +509,14 @@ Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolv
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
 Microsoft.NetCore.ComponentGroup.DevelopmentTools.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28516.191 | Necessária
 Microsoft.VisualStudio.Component.FSharp | Suporte à linguagem F# | 16.0.28315.86 | Necessária
-Microsoft.VisualStudio.Component.Merq | Ferramentas internas comuns do Xamarin | 16.0.28625.61 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
+Microsoft.VisualStudio.Component.Merq | Ferramentas internas comuns do Xamarin | 16.2.29012.281 | Necessária
 Microsoft.VisualStudio.Component.MonoDebugger | Depurador mono | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions.TemplateEngine | Mecanismo de modelagem ASP.NET | 16.0.28315.86 | Necessária
-Component.Android.SDK27 | Instalação do SDK do Android (nível 27 da API) | 16.0.28517.75 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
+Component.Android.SDK28 | Instalação do SDK do Android (API nível 28) | 16.2.29003.222 | Recomendado
 
 ## <a name="aspnet-and-web-development"></a>Desenvolvimento do ASP.NET e para a Web
 
@@ -544,8 +545,9 @@ Microsoft.VisualStudio.Component.DockerTools | Ferramentas de desenvolvimento de
 Microsoft.VisualStudio.Component.FSharp | Suporte à linguagem F# | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.FSharp.WebTemplates | Suporte à linguagem F# para projetos Web | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Necessária
@@ -558,17 +560,17 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Necessária
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
 Component.Microsoft.VisualStudio.Web.AzureFunctions | Ferramentas do Azure WebJobs | 16.0.28714.129 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Recomendado
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Recomendado
 Microsoft.VisualStudio.Component.AspNet45 | Recursos avançados do ASP.NET | 16.0.28315.86 | Recomendado
 Microsoft.VisualStudio.Component.Azure.AuthoringTools | Ferramentas de Criação do Azure | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas do Azure para .NET | 16.0.28315.86 | Recomendado
@@ -577,10 +579,9 @@ Microsoft.VisualStudio.Component.Azure.Storage.Emulator | Emulador de Armazename
 Microsoft.VisualStudio.Component.CloudExplorer | Cloud Explorer | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.EntityFramework | Ferramentas do Entity Framework 6 | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.AzureFunctions | Ferramentas do Azure WebJobs | 16.0.28621.142 | Recomendado
-Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Ferramentas de nuvem de desenvolvimento para a Web | 16.0.28621.142 | Recomendado
+Microsoft.VisualStudio.ComponentGroup.Web.CloudTools | Ferramentas de nuvem de desenvolvimento para a Web | 16.2.29003.222 | Recomendado
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.2.SDK | SDK do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.2 | 16.0.28517.75 | Opcional
@@ -610,17 +611,17 @@ Microsoft.VisualStudio.ComponentGroup.IISDevelopment | Suporte ao IIS no tempo d
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.Node.Tools | Ferramentas de desenvolvimento em Node.js | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Necessária
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
 Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Opcional
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Opcional
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Ferramentas de conectividade e publicação | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
 
 ## <a name="officesharepoint-development"></a>Desenvolvimento para Office/SharePoint
 
@@ -643,14 +644,15 @@ Microsoft.Net.Component.4.7.2.TargetingPack | Pacote de direcionamento do .NET F
 Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Necessária
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.1.28811.260 | Necessária
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Necessária
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Necessária
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Ferramentas de conectividade e publicação | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.DockerTools | Ferramentas de desenvolvimento de contêiner | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.IISExpress | IIS Express  | 16.0.28315.86 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.JavaScript.Diagnostics | Diagnóstico do JavaScript | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.ManagedDesktop.Core | Núcleo da carga de trabalho de área de trabalho gerenciada | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Ferramentas de desenvolvimento de área de trabalho do .NET | 16.0.28621.142 | Necessária
+Microsoft.VisualStudio.Component.ManagedDesktop.Prerequisites | Ferramentas de desenvolvimento de área de trabalho do .NET | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.Component.MSODBC.SQL | Driver ODBC do SQL Server | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.MSSQL.CMDLnUtils | Utilitários de linha de comando do SQL Server | 16.0.28707.177 | Necessária
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Necessária
@@ -663,13 +665,12 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.Component.Wcf.Tooling | Windows Communication Foundation | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.Workflow | Windows Workflow Foundation | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Necessária
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.TeamOffice | VSTO (Visual Studio Tools para Office) | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
@@ -697,12 +698,12 @@ ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.Component.PythonTools | Suporte da linguagem Python | 16.0.28625.61 | Necessária
 Component.CPython3.x64 | Python 3 de 64 bits (3.7.3) | 3.7.3 | Recomendado
-Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.182 | Recomendado
-Microsoft.Component.PythonTools.Minicondax64 | Miniconda Python | 16.0.28625.61 | Recomendado
+Component.Microsoft.VisualStudio.LiveShare | Live Share | 1.0.473 | Recomendado
+Microsoft.Component.PythonTools.Minicondax64 | Miniconda Python | 16.2.29003.222 | Recomendado
 Microsoft.Component.PythonTools.Web | Suporte Web do Python | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.Component.Common.Azure.Tools | Ferramentas de conectividade e publicação | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.1.28811.260 | Recomendado
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Recomendado
+Microsoft.VisualStudio.Component.JavaScript.TypeScript | Suporte às linguagens JavaScript e TypeScript | 16.2.29003.222 | Recomendado
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Recomendado
 Microsoft.VisualStudio.Component.WebDeploy | Implantação da Web | 16.0.28517.75 | Recomendado
 Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions | Desenvolvimento do ASP.NET e para a Web | 16.0.28621.142 | Recomendado
 Component.CPython2.x64 | Python 2 de 64 bits (2.7.16) | 2.7.16 | Opcional
@@ -711,8 +712,7 @@ Component.CPython3.x86 | Python 3 de 32 bits (3.7.3) | 3.7.3 | Opcional
 Component.Microsoft.VisualStudio.RazorExtension | Razor Language Services | 16.0.28714.129 | Opcional
 Component.Microsoft.Web.LibraryManager | Gerenciador de Biblioteca | 16.0.28315.86 | Opcional
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Opcional
-Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
-Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Ferramentas de desenvolvimento nativo do Python | 16.0.28621.142 | Opcional
+Microsoft.ComponentGroup.PythonTools.NativeDevelopment | Ferramentas de desenvolvimento nativo do Python | 16.2.29020.229 | Opcional
 Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 | Opcional
@@ -741,13 +741,12 @@ Microsoft.VisualStudio.Component.SQL.DataSources | Fontes de dados para suporte 
 Microsoft.VisualStudio.Component.SQL.LocalDB.Runtime | SQL Server Express 2016 LocalDB | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.SQL.SSDT | Ferramentas de dados do SQL Server | 16.1.28811.260 | Opcional
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – ferramentas de build do C++ para VS 2015 (v14.00) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.DiagnosticTools | Ferramentas de criação de perfil do C++ | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
 Microsoft.VisualStudio.Component.Web | Ferramentas de desenvolvimento do ASP.NET e para a Web | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK | Tempo de execução C Universal do Windows | 16.0.28315.86 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.ComponentGroup.Web | Pré-requisitos de ferramentas de desenvolvimento do ASP.NET e para a Web | 16.1.28812.146 | Opcional
 
 ## <a name="universal-windows-platform-development"></a>Desenvolvimento na Plataforma Universal do Windows
@@ -763,20 +762,19 @@ ID do componente | Nome | Versão | Tipo de dependência
 Microsoft.Component.NetFX.Native | .NET Nativo | 16.0.28315.86 | Necessária
 Microsoft.ComponentGroup.Blend | Blend for Visual Studio | 16.0.28315.86 | Necessária
 Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Framework 4.5 | 16.0.28517.75 | Necessária
-Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Necessária
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Necessária
 Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.Graphics | Editores de imagens e modelos 3D | 16.0.28517.75 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.SQL.CLR | Tipos de dados CLR do SQL Server | 16.0.28315.86 | Necessária
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Necessária
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.ComponentGroup.UWP.NetCoreAndStandard | .NET Native e .NET Standard | 16.0.28516.191 | Necessária
-Microsoft.VisualStudio.ComponentGroup.UWP.Support | Ferramentas da Plataforma Universal do Windows | 16.1.28811.260 | Necessária
-Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Ferramentas da Plataforma Universal do Windows para Xamarin | 16.0.28621.142 | Necessária
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
+Microsoft.VisualStudio.ComponentGroup.UWP.Support | Ferramentas da Plataforma Universal do Windows | 16.2.29003.222 | Necessária
+Microsoft.VisualStudio.ComponentGroup.UWP.Xamarin | Ferramentas da Plataforma Universal do Windows para Xamarin | 16.2.29020.229 | Necessária
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Graphics.Tools | Depurador de gráficos e criador de perfil de GPU do DirectX | 16.0.28625.61 | Opcional
@@ -784,18 +782,18 @@ Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de t
 Microsoft.VisualStudio.Component.UWP.VC.ARM64 | Suporte da Plataforma Universal do Windows do C++ para ferramentas de build v142 (ARM64) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Atualização dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.21) | 16.1.28829.92 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.21) | 16.1.28829.92 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM (v14.16) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.22) | 16.2.29003.222 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.22) | 16.2.29003.222 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM (v14.16) | 16.2.29003.222 | Opcional
 Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM64 (v14.16) | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – ferramentas de build do C++ para VS 2017 x64/x86 (v14.16) | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK do Windows 10 (10.0.16299.0) | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK do Windows 10 (10.0.17134.0) | 16.0.28517.75 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Conectividade de dispositivos USB | 16.0.28320.51 | Opcional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.1.28916.169 | Opcional
-Microsoft.VisualStudio.ComponentGroup.UWP.VC | Ferramentas da Plataforma Universal do Windows do C++ (v142) | 16.1.28811.260 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.IpOverUsb | Conectividade de dispositivos USB | 16.2.29020.229 | Opcional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.2.29012.281 | Opcional
+Microsoft.VisualStudio.ComponentGroup.UWP.VC | Ferramentas da Plataforma Universal do Windows do C++ (v142) | 16.2.29020.229 | Opcional
 Microsoft.VisualStudio.ComponentGroup.UWP.VC.v141 | Ferramentas da Plataforma Universal do Windows do C++ (v141) | 16.1.28810.153 | Opcional
 
 ## <a name="visual-studio-extension-development"></a>Desenvolvimento de extensões do Visual Studio
@@ -813,24 +811,24 @@ Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Fra
 Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 | Necessária
 Microsoft.Net.Component.4.7.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.2 | 16.0.28517.75 | Necessária
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.1.28811.260 | Necessária
+Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Necessária
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.VSSDK | SDK do Visual Studio | 16.0.28315.86 | Necessária
-Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Pré-requisitos para o desenvolvimento de extensões do Visual Studio | 16.0.28621.142 | Necessária
+Microsoft.VisualStudio.ComponentGroup.VisualStudioExtension.Prerequisites | Pré-requisitos para o desenvolvimento de extensões do Visual Studio | 16.2.29012.281 | Necessária
 Microsoft.VisualStudio.Component.DiagnosticTools | Ferramentas de criação de perfil do .NET | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.IntelliCode | IntelliCode | 0.1 | Recomendado
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Recomendado
 Component.Dotfuscator | Proteção PreEmptive – Dotfuscator | 16.0.28528.71 | Opcional
-Microsoft.Component.CodeAnalysis.SDK | SDK da Plataforma do Compilador .NET | 16.0.28625.61 | Opcional
+Microsoft.Component.CodeAnalysis.SDK | SDK da Plataforma do Compilador .NET | 16.2.29003.222 | Opcional
 Microsoft.Component.VC.Runtime.OSSupport | Tempo de execução da Plataforma Universal do Windows do C++ para ferramentas de build v142 | 16.1.28811.260 | Opcional
-Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.1.28917.181 | Opcional
+Microsoft.VisualStudio.Component.AppInsights.Tools | Ferramentas de Análise do Desenvolvedor | 16.2.28917.182 | Opcional
 Microsoft.VisualStudio.Component.ClassDesigner | Designer de Classe | 16.0.28528.71 | Opcional
 Microsoft.VisualStudio.Component.DslTools | SDK de Modelagem | 16.0.28315.86 | Opcional
 Microsoft.VisualStudio.Component.VC.ATL | ATL do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
 
@@ -861,7 +859,7 @@ Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | ATL do C++ v14.20 para fer
 Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | ATL do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | ATL do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.20) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.14.20.MFC | MFC do C++ v14.20 para ferramentas de build v142 (x86 e x64) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.14.20.MFC | MFC do C++ v14.20 para ferramentas de build v142 (x86 e x64) | 16.2.29003.222
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | MFC do C++ v14.20 para ferramentas de build v142 (ARM) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | MFC do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | MFC do C++ v14.20 para ferramentas de build v142 (ARM64) | 16.1.28829.92
@@ -869,6 +867,25 @@ Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | MFC do C++ v14.20 
 Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | MFC do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL | ATL do C++ v14.21 para ferramentas de build v142 (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM | ATL do C++ v14.21 para ferramentas de build v142 (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64 | ATL do C++ v14.21 para ferramentas de build v142 (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.21) | 16.2.29012.281
+Microsoft.VisualStudio.Component.VC.14.21.MFC | MFC do C++ v14.21 para ferramentas de build v142 (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM | MFC do C++ v14.21 para ferramentas de build v142 (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64 | MFC do C++ v14.21 para ferramentas de build v142 (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.21) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ATL do C++ para ferramentas de build v142 (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | ATL do C++ para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ATL do C++ para ferramentas de build v142 (ARM64) | 16.0.28625.61
@@ -880,9 +897,9 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | MFC do C++ para ferramenta
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | MFC do C++ para ferramentas de build v142 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | MFC do C++ para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.Redist.MSM | MSMs dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.21) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.21) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.21)  | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.22) | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.22) | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.22)  | 16.2.29003.222
 Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – bibliotecas com mitigação de Espectro do C++ para VS 2017 ARM (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – bibliotecas com mitigação de Espectro do C++ para VS 2017 ARM64 (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ATL | ATL do C++ para ferramentas de build v141 (x86 e x64) | 16.0.28625.61
@@ -893,7 +910,7 @@ Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | ATL do C++ para fer
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | ATL do C++ para ferramentas de build v141 com Mitigações de Espectro (x86 e x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.CLI.Support | Suporte do C++/CLI para ferramentas de build v141 (14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.MFC | MFC do C++ para ferramentas de build v141 (x86 e x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | MFC do C++ para ferramentas de build v141 (ARM) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | MFC do C++ para ferramentas de build v141 (ARM) | 16.2.28915.88
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | MFC do C++ para ferramentas de build v141 com Mitigações de Espectro (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | MFC do C++ para ferramentas de build v141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | MFC do C++ para ferramentas de build v141 com Mitigações de Espectro (ARM64) | 16.0.28625.61

@@ -1,6 +1,7 @@
 ---
 title: Página Segurança, Designer de Projeto
 ms.date: 11/04/2016
+ms.technology: vs-ide-deployment
 ms.topic: reference
 f1_keywords:
 - vb.ProjectPropertiesSecurity
@@ -8,21 +9,21 @@ f1_keywords:
 helpviewer_keywords:
 - Project Designer, Security page
 - Security page in Project Designer
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2115acae1e77bdacfa926c472940659c549cff65
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945486"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461306"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 
-A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do [!INCLUDE[ndptecclick](../../deployment/includes/ndptecclick_md.md)]. Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
+A página **Segurança** do **Designer de Projeto** é usada para definir configurações de segurança de acesso do código para aplicativos implantados usando a implantação do ClickOnce. Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).
 
  Para acessar a página **Segurança**, clique em um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Segurança**.
 
@@ -65,13 +66,13 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
 
  **Editar XML de Permissões**
 
- Abre o modelo de manifesto do aplicativo (app.manifest) para configurar as permissões para o conjunto de permissões **(Personalizado)**.
+ Abre o modelo de manifesto do aplicativo (app.manifest) para configurar as permissões para o conjunto de permissões **(Personalizado)** .
 
  **Avançado**
 
  Abre o [Caixa de diálogo Configurações de Segurança Avançadas](../../ide/reference/advanced-security-settings-dialog-box.md), que é usada para definir configurações para depurar o aplicativo com permissões restritas. Essas configurações são verificadas durante a depuração, e exceções de permissão indicam que seu aplicativo pode precisar de mais permissões do que as que foram definidas em uma zona.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - <xref:System.Security.Permissions.WebBrowserPermission>
 - <xref:System.Security.Permissions.MediaPermission>

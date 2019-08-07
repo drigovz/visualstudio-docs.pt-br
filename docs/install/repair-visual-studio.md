@@ -2,7 +2,7 @@
 title: Reparar o Visual Studio
 titleSuffix: ''
 description: Saiba como reparar uma instalação do Visual Studio 2017
-ms.date: 03/30/2019
+ms.date: 07/31/2019
 ms.custom: seodec18
 ms.topic: conceptual
 author: TerryGLee
@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3ba5cdf7ba627bc1d6a75368d90da5ce8a726a5e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed6b7050d2162fc4e893db6ec4f429fbe3f8eb4f
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973197"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681347"
 ---
 # <a name="repair-visual-studio"></a>Reparar o Visual Studio
 
@@ -37,7 +37,7 @@ ms.locfileid: "62973197"
 1. Abra o instalador, escolha **Mais** e, em seguida, escolha **Reparar**.
 
     ![Reparar o Visual Studio no instalador do Visual Studio](media/repair-visual-studio.png "Reparar o Visual Studio no Instalador do Visual Studio")
-    
+
    > [!NOTE]
    > Reparar o Visual Studio redefinirá o ambiente. As personalizações locais, como as extensões do usuário instaladas sem elevação, as configurações de usuário e os perfis serão removidos. As configurações sincronizadas, como temas, cores, associações de teclas serão restauradas.
    >
@@ -53,7 +53,7 @@ ms.locfileid: "62973197"
 
      Por exemplo, em um computador que executa o Windows 10, selecione **Iniciar** e, em seguida, role até a letra **I**, onde ele está listado como **Instalador do Visual Studio**.
 
-     ![Abra o Instalador do Visual Studio](media/vs2019-visual-studio-installer.png "Abra o Instalador do Visual Studio")
+     ![Abra o Instalador do Visual Studio](media/vs-2019/vs-installer-windows-start.png "Abra o Instalador do Visual Studio")
 
      > [!NOTE]
      > Também é possível encontrar o Instalador do Visual Studio no seguinte local:

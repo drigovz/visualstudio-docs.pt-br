@@ -1,6 +1,7 @@
 ---
 title: Solucionar problemas e criar logs para problemas do MSBuild
 ms.date: 06/27/2019
+ms.technology: vs-ide-compile
 ms.topic: conceptual
 helpviewer_keywords:
 - msbuild logs"
@@ -14,12 +15,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: c3db56ac7ea60ce88beae6698c974ac91373ed00
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 8e302814571a5f7f37cfe02b2750f57dacb54c25
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518192"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461487"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>Solucionar problemas e criar logs para problemas do MSBuild
 
@@ -116,11 +117,11 @@ Um arquivo Msbuild.binlog será criado no diretório que você executou o MSBuil
 ## <a name="create-a-detailed-log"></a>Criar um log detalhado
 
 1. No menu principal do Visual Studio, acesse **Ferramentas** > **Opções** > **Projetos e soluções** >**Compilar e executar**.
-1. Configure o **Detalhamento de compilação do projeto Msbuild** como **Detalhado** nas duas caixas de combinação. O primeiro controla o detalhamento da compilação na **Janela de Saída** e o segundo controla o detalhamento da compilação no arquivo \<projectname\>.log que é criado no diretório intermediário do cada projeto durante a compilação.
-1. Em um prompt de comando do desenvolvedor do Visual Studio, digite um desses comandos, substituindo o caminho real e os valores de configuração:
+1. Configure o **Detalhamento de compilação do projeto Msbuild** como **Detalhado** nas duas caixas de combinação. O primeiro controla o detalhamento do build na **Janela de Saída** e o segundo controla o detalhamento do build no arquivo \<projectname\>.log que é criado no diretório intermediário de cada projeto durante o build.
+2. Em um prompt de comando do desenvolvedor do Visual Studio, digite um desses comandos, substituindo o caminho real e os valores de configuração:
 
     ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln 
+    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /fl MySolution.sln
     ```
 
     ou

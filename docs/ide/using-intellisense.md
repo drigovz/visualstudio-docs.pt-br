@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 38c621a09c6a000c9e3c7e52caa99569f7e5d781
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 32e62131b2a66052ad4712b434c7b6f2b89065d0
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62821664"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493294"
 ---
 # <a name="intellisense-in-visual-studio"></a>IntelliSense no Visual Studio
 
@@ -70,7 +70,7 @@ Quando você seleciona um membro na caixa **Listar Membros**, as Informações R
 
 Se uma função estiver sobrecarregada, o IntelliSense não poderá exibir informações de todos os formulários da sobrecarga.
 
-É possível invocar desativar as informações rápidas para o código C++ ao navegar em **Ferramentas** > **Opções** > **Editor de Texto** > **C/C++** > **Avançado** e configurar as **Informações Rápidas Automáticas** para `false`.
+É possível invocar desativar as informações rápidas para o código C++ ao navegar em **Ferramentas** > **Opções** > **Editor de Texto** > **C/C++**  > **Avançado** e configurar as **Informações Rápidas Automáticas** para `false`.
 
 ## <a name="complete-word"></a>Completar Palavra
 
@@ -79,6 +79,17 @@ Completar Palavra completa o restante de uma variável, um comando ou um nome de
 ## <a name="intellisense-options"></a>Opções do IntelliSense
 
 As opções do IntelliSense são ativadas por padrão. Para desativá-las, escolha **Ferramentas** > **Opções** > **Editor de Texto** e desmarque a seleção **Informações do parâmetro** ou **Listar membros automaticamente** se você não deseja o recurso Listar Membros.
+
+## <a name="intellisense-icons"></a>Ícones do IntelliSense
+Os ícones no IntelliSense podem transmitir significado adicional com modificadores de ícone. Esses são estrelas, corações e cadeados sobrepostos ao ícone do objeto e que transmitem, respectivamente, os significados de protegido, interno ou privado.
+
+|    Ícone    |    Acessibilidade    |    DESCRIÇÃO    |
+|------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![Modificador de ícone público](../ide/media/intellisensePublicNoModifier.png)       |    Classe pública    |    O acesso não é restrito.   |
+| ![Modificador de ícone protegido](../ide/media/intellisenseProtectedModifier.png)       |    Classe protegida    |    O acesso é limitado à classe que os contém ou aos tipos derivados da classe que os contém.    |
+| ![Modificador de ícone interno protegido](../ide/media/intellisenseProtectedInternalModifier.png)       |    Classe interna protegida    |    O acesso é limitado ao assembly atual ou aos tipos derivados da classe que os contém.    |
+| ![Modificador de ícone interno](../ide/media/intellisenseInternalModifier.png)       |    Classe interna    |    O acesso é limitado ao assembly atual.    |
+|![Modificador de ícone privado](../ide/media/intellisensePrivateModifier.png)        |    Classe privada    |    O acesso é limitado à classe que o contém ou a tipos derivados da classe que o contém no assembly atual. (Disponível desde o C# 7.2.)    |
 
 ## <a name="troubleshoot-intellisense"></a>Solução de problemas do IntelliSense
 

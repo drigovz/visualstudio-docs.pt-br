@@ -42,14 +42,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e15357220c9a9d74d4b08fdd97d4f808ff770b9a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817842"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68606054"
 ---
-# <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
+# <a name="options-dialog-box-text-editor--all-languages"></a>Caixa de diálogo Opções: Editor de texto \> todas as linguagens de programação
 
 Esta caixa de diálogo permite alterar o comportamento padrão do Editor de Código. Essas configurações também se aplicam a outros editores baseados no Editor de código, como o modo de exibição de Fonte do Designer de HTML. Para abrir essa caixa de diálogo, selecione **Opções** no menu **Ferramentas**. Dentro da pasta **Editor de Texto**, expanda a subpasta **Todos os Idiomas** e, em seguida, escolha **Geral**.
 
@@ -124,7 +124,7 @@ Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha n�
 > [!TIP]
 > Para exibir indicadores para espaços, tabulações e fins de linha, e assim distinguir linhas recuadas de linhas totalmente em branco, selecione **Avançado** no menu **Editar** e escolha **Exibir Espaço em Branco**.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Opções, Editor de Texto, Todas as Linguagens, Guias](../../ide/reference/options-text-editor-all-languages-tabs.md)
 - [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)

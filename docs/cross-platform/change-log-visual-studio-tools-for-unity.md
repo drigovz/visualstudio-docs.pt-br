@@ -1,7 +1,7 @@
 ---
 title: Log de alterações (Ferramentas do Visual Studio para Unity, Windows) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/28/2019
+ms.date: 07/29/2019
 ms.technology: vs-unity-tools
 ms.topic: conceptual
 ms.assetid: ea490b7e-fc0d-44b1-858a-a725ce20e396
@@ -10,16 +10,40 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 365476e0e87f5bb8c71041ad8afbdd7db6e6f952
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: d9b89be226ca7cafbfe66a14cd606f50678a013a
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821346"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661951"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Windows)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="4201"></a>4.2.0.1
+
+Lançado em 24 de julho de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Adicionada uma nova opção para criar qualquer tipo de arquivo do Gerenciador de Projetos do Unity.
+  
+  - Melhorar o cache de diagnóstico ao usar builds rápidos para projetos do Unity.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - Corrigido um problema quando a extensão de arquivo não era manipulada por nenhum editor conhecido.
+
+  - Adicionado suporte para extensões personalizadas no Gerenciador de Projetos do Unity.
+
+  - Corrigidas as configurações de salvamento fora da caixa de diálogo principal.
+
+  - Dependência herdada Microsoft.VisualStudio.MPF removida.
 
 ## <a name="4110"></a>4.1.1.0
 

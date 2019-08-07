@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ca83689628f02a8c7a2e0166b390d5b277086c1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f04e999681899bb101dc0aeb70cc6f47094dc1d7
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965525"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483806"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 
@@ -29,15 +29,19 @@ Geralmente, os testes de unidade refletem a estrutura do código que está sendo
 
 2. Na caixa de diálogo **Novo Projeto**, expanda o nó **Instalado**, escolha a linguagem que deseja usar para o projeto de teste e clique em **Testar**.
 
-3. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Nomeie o projeto e selecione **OK**.
+3. Selecione o modelo de projeto para a estrutura de teste que você deseja usar, por exemplo, **Projeto de teste do MSTest** ou **Projeto de teste do NUnit**. Nomeie o projeto e, em seguida, escolha **OK**.
+
+   ![Modelos de projeto de teste no Visual Studio 2017](media/test-project-templates.png)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. Na página **Criar um novo projeto**, digite **teste de unidade** na caixa de pesquisa. Selecione o modelo de **Projeto de Teste de Unidade (.NET Framework)** e clique em **Avançar**.
+2. Na página **Criar um novo projeto**, digite **teste de unidade** na caixa de pesquisa. Selecione o modelo de projeto para a estrutura de teste que você deseja usar, por exemplo, **Projeto de teste do MSTest** ou **Projeto de teste do NUnit** e escolha **Avançar**.
 
-3. Na página **Configurar seu novo projeto**, insira um nome para o projeto e clique em **Criar**.
+   ![Modelos de projeto de teste no Visual Studio 2019](media/vs-2019/test-project-templates.png)
+
+3. Na página **Configurar seu novo projeto**, insira um nome para o projeto e escolha **Criar**.
 
 ::: moniker-end
 

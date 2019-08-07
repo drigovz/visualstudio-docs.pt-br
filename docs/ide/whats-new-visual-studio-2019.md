@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 06/29/2019
+ms.date: 07/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b5387fa61686d85e02c200a0a50cffa9e5aa155
-ms.sourcegitcommit: c7b9ab1bc19d74b635c19b1937e92c590dafd736
+ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
+ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67552873"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68493325"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
-**Atualizado para a [versão 16.1](/visualstudio/releases/2019/release-notes/)**
+**Atualizado para a [versão 16.2](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Baixar o Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -102,6 +102,12 @@ Com o lançamento do Visual Studio 2019, estamos tornando o Visual Studio um apl
 
 Para saber mais, confira a postagem no blog [Better multi-monitor experience with Visual Studio 2019 (Experiência ideal de Vários Monitores com o Visual Studio 2019)](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/).
 
+### <a name="test-explorer"></a>Gerenciador de Testes
+
+**Novidades na 16.2**: Atualizamos o Gerenciador de Testes para fornecer melhor gerenciamento de conjuntos de testes grandes, filtragem mais fácil, comandos mais detectáveis, exibições de lista de reprodução com guias e colunas personalizáveis que permitem ajustar quais informações de testes são exibidas.
+
+   ![Uma captura de tela que mostra os aprimoramentos da interface do usuário no Gerenciador de Testes](media/vs-2019/test-explorer-ui.png)
+
 ## <a name="collaborate"></a>Colaboração
 
 Veja o vídeo a seguir para saber mais sobre como trabalhar em equipe para resolver problemas. <br><br>*Duração do vídeo: 4,22 minutos*
@@ -178,6 +184,12 @@ Adicionamos suporte para direcionamento de aplicativos do ASP.NET (Core e área 
 
 Para saber mais, confira a página [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md) e a postagem no blog [Apresentação da depuração de viagem no tempo para o Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
+### <a name="microsoft-edge-insider-support"></a>Suporte ao Microsoft Edge Insider
+
+**Novidades na 16.2**: Você pode definir um ponto de interrupção no aplicativo JavaScript e iniciar uma sessão de depuração usando o navegador [Microsoft Edge Insider](https://www.microsoftedgeinsider.com/). Ao fazê-lo, o Visual Studio abre uma nova janela do navegador com a depuração habilitada, que você pode então usar para percorrer o aplicativo JavaScript dentro do Visual Studio.
+
+   ![Uma captura de tela que mostra a renderização de código JavaScript em um navegador](media/vs-2019/edge-chromium-breakpoint.png)
+
 ## <a name="whats-next"></a>O que vem a seguir
 
 O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Saiba mais sobre as inovações mais recentes no [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). E para descobrir o que já lançamos até agora na versão prévia, leia as [Notas da versão prévia](/visualstudio/releases/2019/release-notes-preview/).
@@ -194,9 +206,8 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 
 ## <a name="see-also"></a>Consulte também
 
-* [Apresentação do Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [O Visual Studio 2019 para Mac já está disponível](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Notas sobre a versão do Visual Studio 2019 para Mac](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Conferência Microsoft Build 2019](https://www.microsoft.com/build)
 * [Microsoft Connect(); conferência de 2018](https://www.microsoft.com/connectevent)

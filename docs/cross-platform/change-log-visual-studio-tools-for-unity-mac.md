@@ -10,16 +10,110 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e5bc02948d410d465d7ac1be798ff17ebc5daaf9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: ff2bcce9e041ff28393020c48563fe345c4fa076
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821510"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661815"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>Log de alterações (Ferramentas do Visual Studio para Unity, Mac)
 
 Log de alterações de Ferramentas do Visual Studio para Unity.
+
+## <a name="2200"></a>2.2.0.0
+
+Lançado em 25 de julho de 2019
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Avaliação:**
+
+  - corrigida a inspeção com tipos IntPtr.
+
+- **Depurador:**
+
+  - corrigida a manipulação de catchpoints e pontos de interrupção de função.
+
+## <a name="2130"></a>2.1.3.0
+
+Lançado em 9 de julho de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Depurador:**
+
+  - adicionado suporte para captura de subclasses de exceções;
+
+  - adicionado suporte a protocolo MDS 2.51.
+
+- **Integração:**
+
+  - adicionado suporte para arquivos asmdef.
+
+  - Mude para o modo de renomeação quando um arquivo for adicionado de um modelo (para imitar o comportamento do Editor do Unity).
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - corrigida a manipulação de mensagens malformadas durante a comunicação com players do Unity.
+
+- **Avaliação:**
+
+  - corrigida a manipulação de namespaces em expressões.
+
+## <a name="2120"></a>2.1.2.0
+
+Lançado em 2 de julho de 2019
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Avaliação:**
+
+  - corrigido o relatório de erros com expressões não analisáveis.
+
+## <a name="2110"></a>2.1.1.0
+
+Lançado em 27 de junho de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Atualização da API MonoBehaviour para 2019.1.
+
+### <a name="bug-fixes"></a>Correções de bug
+
+- **Integração:**
+
+  - corrigido o desempenho do Gerenciador de Projetos do Unity.
+
+  - Correção de emissão de relatórios de erros e avisos para a saída quando a compilação leve está habilitada.
+
+  - Desempenho de construção leve e fixo.
+
+## <a name="2100"></a>2.1.0.0
+
+Lançado em 20 de junho de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Desabilitada a compilação completa para projetos Unity, em favor de usar os erros e avisos do IntelliSense. Na verdade, o Unity cria uma solução do Visual Studio com projetos de biblioteca de classes que representam o que o Unity está fazendo internamente. Dito isso, o resultado da compilação no Visual Studio nunca é usado ou selecionado pelo Unity quando seu pipeline de compilação é fechado. A criação no Visual Studio está apenas consumindo recursos para nada. Se você precisar de um build completo por ter ferramentas ou uma configuração que dependa disso, poderá desabilitar essa otimização (Configurações/Ferramentas para Unity/Desabilitar o build completo de projetos).
+  
+  - Adicionado suporte para pacotes Unity no UPE. Somente pacotes referenciados (usando manifest.json na pasta Pacotes) e pacotes locais (incorporados na pasta Pacotes) são visíveis.
+
+## <a name="2021"></a>2.0.2.1
+
+Lançamento em 30 de maio de 2019
+
+### <a name="new-features"></a>Novos recursos
+
+- **Integração:**
+
+  - Ícone personalizado adicionado para destinos de execução do Unity.
 
 ## <a name="2020"></a>2.0.2.0
 
@@ -42,6 +136,7 @@ Lançado em 2 de abril de 2019
   - Correção de filtragem de montagem e inspeção de estrutura com quadros vazios.
 
 ## <a name="2011"></a>2.0.1.1
+ 
  Lançado em 26 de março de 2019
 
 ### <a name="bug-fixes"></a>Correções de bug
@@ -87,6 +182,7 @@ Lançado em 5 de março de 2019
   - Removidos namespaces de modelos.
 
 ## <a name="2003"></a>2.0.0.3
+ 
  Lançado em 5 de março de 2019
 
 ### <a name="new-features"></a>Novos recursos

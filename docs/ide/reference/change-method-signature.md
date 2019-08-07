@@ -1,9 +1,10 @@
 ---
-title: Refatorar a assinatura do método
+title: Alterar assinatura do método
+description: Remover ou alterar a ordem dos parâmetros de um método. Clique com o botão direito do mouse no método, selecione Ações Rápidas e Refatorações e selecione Alterar Assinatura.
 ms.date: 01/26/2018
 ms.topic: reference
-author: gewarren
-ms.author: gewarren
+author: mikadumont
+ms.author: midumont
 manager: jillfra
 f1_keywords:
 - vs.csharp.refactoring.remove
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 89af8235f897858094058981df52d6a3fec8a7d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 97c03c798732b5d722b2dc49f3ec7ffa490b4f06
+ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62791083"
+ms.lasthandoff: 08/01/2019
+ms.locfileid: "68711259"
 ---
 # <a name="change-a-method-signature-refactoring"></a>Refatoração Alterar uma assinatura de método
 
@@ -50,7 +51,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+V**.  (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Alterar Assinatura** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Alterar Assinatura** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Remover Parâmetros**.
       - Selecione **Editar > Refatorar > Reordenar Parâmetros**.
@@ -60,7 +61,7 @@ Esta refatoração aplica-se a:
 
    ![Caixa de diálogo Alterar Assinatura](media/changesignature-dialog-cs.png)
 
-   | Botão | Descrição
+   | Botão | DESCRIÇÃO
    | ------ | ---
    | **Para cima/baixo** | Mova o parâmetro selecionado para cima e para baixo na lista
    | **Removerr** | Remova o parâmetro selecionado da lista

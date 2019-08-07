@@ -5,16 +5,16 @@ description: Usar IDs de carga de trabalho e de componente do Visual Studio para
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 05/21/2019
+ms.date: 07/24/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: b4e23aeb5e6d60a36d1f69ffb54ec75aa1770ea4
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 82bf9fb39ff2d86ee749ff6492ed85b39464b8cd
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "68176875"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68484761"
 ---
 ## <a name="azure-development-build-tools"></a>Ferramentas de build de desenvolvimento do Azure
 
@@ -34,7 +34,7 @@ Microsoft.VisualStudio.Component.Azure.ClientLibs | Bibliotecas do Azure para .N
 Microsoft.VisualStudio.Component.Azure.Waverton.BuildTools | Ferramentas de build dos Serviços de Nuvem do Azure | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.DockerTools.BuildTools | Ferramentas de desenvolvimento de contêiner – Ferramentas de Build | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Necessária
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Ferramentas de build de desenvolvimento para a Web | 16.0.28516.191 | Necessária
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
@@ -158,7 +158,7 @@ Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de 
 ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.VisualStudio.Component.Node.Build | Suporte ao MSBuild do Node.js | 16.0.28517.75 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 
 ## <a name="officesharepoint-build-tools"></a>Ferramentas de build do Office/SharePoint
 
@@ -216,13 +216,13 @@ Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.0.28517.75 | N
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
-Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.21) | 16.1.28829.92 | Necessária
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Necessária
+Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.22) | 16.2.29003.222 | Necessária
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Necessária
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Pré-requisitos de build da Plataforma Universal do Windows | 16.1.28811.260 | Necessária
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Recomendado
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK do Windows 10 (10.0.16299.0) | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK do Windows 10 (10.0.17134.0) | 16.0.28517.75 | Opcional
-Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
 
 ## <a name="c-build-tools"></a>Ferramentas de build do C++
 
@@ -238,9 +238,9 @@ Microsoft.VisualStudio.Component.VC.CoreBuildTools | Funcionalidades principais 
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Atualização dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.Windows10SDK | Tempo de execução C Universal do Windows | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Component.TestTools.BuildTools | Recursos principais de ferramentas de teste – Ferramentas de Build | 16.0.28315.86 | Recomendado
-Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.0.28625.61 | Recomendado
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Recomendado
-Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Recomendado
+Microsoft.VisualStudio.Component.VC.CMake.Project | Ferramentas CMake do C++ para Windows | 16.2.29003.222 | Recomendado
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Recomendado
+Microsoft.VisualStudio.Component.Windows10SDK.18362 | SDK do Windows 10 (10.0.18362.0) | 16.1.28829.92 | Recomendado
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Opcional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
@@ -250,14 +250,17 @@ Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de t
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – ferramentas de build do C++ para VS 2015 (v14.00) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATL | ATL do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.22) | 16.2.29003.222 | Opcional
 Microsoft.VisualStudio.Component.VC.CoreIde | Funcionalidades principais do C++ | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Llvm.Clang | Compilador do Clang para Windows | 16.1.28916.169 | Opcional
+Microsoft.VisualStudio.Component.VC.Llvm.Clang | Windows için C++ Clang Derleyicisi (8.0.0) | 16.2.29019.55 | Opcional
+Microsoft.VisualStudio.Component.VC.Llvm.ClangToolset | C++ Clang-cl para ferramentas de build v142 (x64/x86) | 16.2.29109.103 | Opcional
 Microsoft.VisualStudio.Component.VC.Modules.x86.x64 | Módulos do C++ para ferramentas de build v142 (x64/x86 – experimental) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.v141.x86.x64 | MSVC v141 – ferramentas de build do C++ para VS 2017 x64/x86 (v14.16) | 16.1.28829.92 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.16299 | SDK do Windows 10 (10.0.16299.0) | 16.0.28517.75 | Opcional
 Microsoft.VisualStudio.Component.Windows10SDK.17134 | SDK do Windows 10 (10.0.17134.0) | 16.0.28517.75 | Opcional
-Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.1.28916.169 | Opcional
+Microsoft.VisualStudio.Component.Windows10SDK.17763 | SDK do Windows 10 (10.0.17763.0) | 16.0.28517.75 | Opcional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Core | Principais recursos de área de trabalho do C++ | 16.2.29012.281 | Opcional
+Microsoft.VisualStudio.ComponentGroup.NativeDesktop.Llvm.Clang | Ferramentas C++ Clang para Windows (8.0.0 – x64/x86) | 16.2.29019.55 | Opcional
 
 ## <a name="visual-studio-extension-development"></a>Desenvolvimento de extensões do Visual Studio
 
@@ -282,7 +285,7 @@ Component.Dotfuscator | Proteção PreEmptive – Dotfuscator | 16.0.28528.71 | 
 Microsoft.Component.VC.Runtime.OSSupport | Tempo de execução da Plataforma Universal do Windows do C++ para ferramentas de build v142 | 16.1.28811.260 | Opcional
 Microsoft.VisualStudio.Component.VC.ATL | ATL do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATLMFC | MFC do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
-Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.1.28829.92 | Opcional
+Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.22) | 16.2.29003.222 | Opcional
 
 ## <a name="web-development-build-tools"></a>Ferramentas de build de desenvolvimento para a Web
 
@@ -298,7 +301,7 @@ Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 
 Microsoft.Net.Component.4.7.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.2 | 16.0.28517.75 | Necessária
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.1.28811.260 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Necessária
-Microsoft.VisualStudio.Component.TypeScript.3.4 | SDK do TypeScript 3.4 | 16.0.28829.92 | Necessária
+Microsoft.VisualStudio.Component.TypeScript.3.5 | SDK do TypeScript 3.5 | 16.0.29012.281 | Necessária
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Ferramentas de build de desenvolvimento para a Web | 16.0.28516.191 | Necessária
 Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
@@ -343,7 +346,7 @@ Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.1.28829.92 | Necessária
 Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
-Component.Android.SDK27 | Instalação do SDK do Android (nível 27 da API) | 16.0.28517.75 | Opcional
+Component.Android.SDK28 | Instalação do SDK do Android (API nível 28) | 16.2.29003.222 | Opcional
 Component.OpenJDK | OpenJDK (distribuição da Microsoft) | 16.1.28811.260 | Opcional
 
 ## <a name="unaffiliated-components"></a>Componentes não afiliados
@@ -364,7 +367,7 @@ Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64 | ATL do C++ v14.20 para fer
 Microsoft.VisualStudio.Component.VC.14.20.ATL.ARM64.Spectre | ATL do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.ATL.Spectre | ATL do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.20) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.14.20.MFC | MFC do C++ v14.20 para ferramentas de build v142 (x86 e x64) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.14.20.MFC | MFC do C++ v14.20 para ferramentas de build v142 (x86 e x64) | 16.2.29003.222
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM | MFC do C++ v14.20 para ferramentas de build v142 (ARM) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM.Spectre | MFC do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64 | MFC do C++ v14.20 para ferramentas de build v142 (ARM64) | 16.1.28829.92
@@ -372,6 +375,25 @@ Microsoft.VisualStudio.Component.VC.14.20.MFC.ARM64.Spectre | MFC do C++ v14.20 
 Microsoft.VisualStudio.Component.VC.14.20.MFC.Spectre | MFC do C++ v14.20 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.20) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.14.20.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.20) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.14.21.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL | ATL do C++ v14.21 para ferramentas de build v142 (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM | ATL do C++ v14.21 para ferramentas de build v142 (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64 | ATL do C++ v14.21 para ferramentas de build v142 (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.ARM64.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.ATL.Spectre | ATL do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.CLI.Support | Suporte do C++/CLI para ferramentas de build v142 (14.21) | 16.2.29012.281
+Microsoft.VisualStudio.Component.VC.14.21.MFC | MFC do C++ v14.21 para ferramentas de build v142 (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM | MFC do C++ v14.21 para ferramentas de build v142 (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64 | MFC do C++ v14.21 para ferramentas de build v142 (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.ARM64.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.MFC.Spectre | MFC do C++ v14.21 para ferramentas de build v142 com Mitigações de Espectro (x86 e x64) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.21) | 16.2.29019.55
+Microsoft.VisualStudio.Component.VC.14.21.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.21) | 16.2.29019.55
 Microsoft.VisualStudio.Component.VC.ATL.ARM | ATL do C++ para ferramentas de build v142 (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM.Spectre | ATL do C++ para ferramentas de build v142 com Mitigações de Espectro (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.ATL.ARM64 | ATL do C++ para ferramentas de build v142 (ARM64) | 16.0.28625.61
@@ -383,11 +405,11 @@ Microsoft.VisualStudio.Component.VC.MFC.ARM.Spectre | MFC do C++ para ferramenta
 Microsoft.VisualStudio.Component.VC.MFC.ARM64 | MFC do C++ para ferramentas de build v142 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.MFC.ARM64.Spectre | MFC do C++ para ferramentas de build v142 com Mitigações de Espectro (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.Redist.MSM | MSMs dos Pacotes Redistribuíveis do C++ 2019 | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.21) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.21) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.21)  | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.21) | 16.1.28829.92
-Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM (v14.16) | 16.1.28829.92
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM (v14.22) | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.Runtimes.ARM64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 ARM64 (v14.22) | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.Runtimes.x86.x64.Spectre | MSVC v142 – bibliotecas com mitigação de Espectro do C++ para VS 2019 x64/x86 (v14.22)  | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.Tools.ARM64 | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM64 (v14.22) | 16.2.29003.222
+Microsoft.VisualStudio.Component.VC.v141.ARM | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM (v14.16) | 16.2.29003.222
 Microsoft.VisualStudio.Component.VC.v141.ARM.Spectre | MSVC v141 – bibliotecas com mitigação de Espectro do C++ para VS 2017 ARM (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ARM64 | MSVC v141 – ferramentas de build do C++ para VS 2017 ARM64 (v14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.ARM64.Spectre | MSVC v141 – bibliotecas com mitigação de Espectro do C++ para VS 2017 ARM64 (v14.16) | 16.1.28829.92
@@ -399,7 +421,7 @@ Microsoft.VisualStudio.Component.VC.v141.ATL.ARM64.Spectre | ATL do C++ para fer
 Microsoft.VisualStudio.Component.VC.v141.ATL.Spectre | ATL do C++ para ferramentas de build v141 com Mitigações de Espectro (x86 e x64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.CLI.Support | Suporte do C++/CLI para ferramentas de build v141 (14.16) | 16.1.28829.92
 Microsoft.VisualStudio.Component.VC.v141.MFC | MFC do C++ para ferramentas de build v141 (x86 e x64) | 16.0.28625.61
-Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | MFC do C++ para ferramentas de build v141 (ARM) | 16.1.28916.169
+Microsoft.VisualStudio.Component.VC.v141.MFC.ARM | MFC do C++ para ferramentas de build v141 (ARM) | 16.2.28915.88
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM.Spectre | MFC do C++ para ferramentas de build v141 com Mitigações de Espectro (ARM) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64 | MFC do C++ para ferramentas de build v141 (ARM64) | 16.0.28625.61
 Microsoft.VisualStudio.Component.VC.v141.MFC.ARM64.Spectre | MFC do C++ para ferramentas de build v141 com Mitigações de Espectro (ARM64) | 16.0.28625.61

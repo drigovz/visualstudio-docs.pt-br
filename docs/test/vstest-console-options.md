@@ -10,12 +10,12 @@ author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eef81a2075f05acf8ea6ab8b42f77797425a3abd
-ms.sourcegitcommit: 74c5360186731de07828764eb32ea1033a8c2275
+ms.openlocfilehash: 147ec9096be430d0bc81be65fdf68f927c0f3dac
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/03/2019
-ms.locfileid: "67559605"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661936"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>Opções da linha de comando de VSTest.Console.exe
 
@@ -35,7 +35,7 @@ A tabela a seguir lista todas as opções para o *VSTest.Console.exe*, além de 
 |**[*nomes dos arquivos de teste*]**|Executa testes dos arquivos especificados. Separa vários nomes de arquivo de teste com espaços.<br />Exemplos: `mytestproject.dll`, `mytestproject.dll myothertestproject.exe`|
 |**/Settings:[*nome do arquivo*]**|Execute testes com configurações adicionais, como coletores de dados.<br />Exemplo: `/Settings:Local.RunSettings`|
 |**/Tests:[*nome do teste*]**|Executa testes com nomes que contêm os valores fornecidos. Para fornecer vários valores, separe-os por vírgulas.<br />Exemplo: `/Tests:TestMethod1,testMethod2`<br />A opção de linha de comando **/Tests** não pode ser usada com a opção de linha de comando **/TestCaseFilter**.|
-|**/Parallel**|Especifica que os testes sejam executados em paralelo. Por padrão, todos os núcleos disponíveis no computador podem ser usados. O número de núcleos a serem usados pode ser configurado usando um arquivo de configurações.|
+|**/Parallel**|Especifica que os testes sejam executados em paralelo. Por padrão, todos os núcleos disponíveis no computador podem ser usados. Você pode configurar o número de núcleos a serem usados em um arquivo de configurações.|
 |**/Enablecodecoverage**|Permite o adaptador de diagnóstico de dados CodeCoverage na execução de teste.<br />As configurações padrão serão usadas se não forem especificadas usando o arquivo de configurações.|
 |**/InIsolation**|Executa os testes em um processo isolado.<br />Esse isolamento torna o processo *vstest.console.exe* menos suscetível a ser interrompido acidentalmente nos testes. Entretanto, os testes podem ser executados mais lentamente.|
 |**/UseVsixExtensions**|Essa opção faz com que o processo *vstest.console.exe* use ou ignore as extensões VSIX instaladas (se houver) na execução de teste.<br />Essa opção foi preterida. A partir da próxima versão principal do Visual Studio, essa opção poderá ser removida. A migração para o consumo de extensões foi disponibilizada como um pacote NuGet.<br />Exemplo: `/UseVsixExtensions:true`|

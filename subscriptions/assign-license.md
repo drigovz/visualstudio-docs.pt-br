@@ -1,47 +1,39 @@
 ---
 title: Atribuir licenças a assinaturas do Visual Studio | Microsoft Docs
-author: TerryGLee
-ms.author: tglee
-manager: jillfra
-ms.date: 07/16/2018
+author: evanwindom
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: Saiba como os administradores podem atribuir licenças aos assinantes
-ms.openlocfilehash: 6e9eb19ce4f9947f730bcd32be5ddcc931770bde
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 8125c5cbad2ff44dabbf1b0c5014c313d75d2e71
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783548"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68604722"
 ---
-# <a name="assign-licenses-in-the-visual-studio-subscriptions-administrator-portal"></a>Atribuir licenças no portal do administrador de assinaturas do Visual Studio
+# <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>Atribuir licenças no portal de administração de assinaturas do Visual Studio
+Como administrador de assinaturas do Visual Studio, você pode usar o portal de administração para atribuir assinaturas a usuários individuais e grupos de usuários.
 
-Como administrador de assinaturas do Visual Studio, você pode usar o portal do administrador para atribuir assinaturas a usuários individuais e grupos de usuários.
+Para grupos de usuários, você pode atribuir assinaturas a eles uma de cada vez ou usar o recurso [Adição em Massa](assign-license-bulk.md) para carregar listas de assinantes e suas informações de assinatura de forma rápida e fácil.
 
-Para grupos de usuários, você pode atribuir assinaturas a eles uma de cada vez ou usar o recurso **Adição em Massa** para carregar listas de assinantes e suas informações de assinatura de forma rápida e fácil.
-
-## <a name="individual-assignments"></a>Atribuições individuais
-
+## <a name="add-a-single-subscriber"></a>Adicionar um único assinante
 Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um novo usuário para que ele possa acessar os benefícios da assinatura.
 
-1. Entre no [portal do administrador](https://manage.visualstudio.com).
-
+1. Entre no [portal de administração](https://manage.visualstudio.com).
 2. Para atribuir uma licença a único assinante do Visual Studio, na parte superior da tabela, selecione **Adicionar**.
    > [!div class="mx-imgBorder"]
    > ![Adicionar um único assinante](media/add-single-subscriber.png)
-
-3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, este campo terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o nome, o email de conexão e o email de notificação serão populados automaticamente.
+3. Insira as informações do novo assinante nos campos do formulário. Se sua organização estiver usando o Azure Active Directory, o campo **Nome** terá uma função de pesquisa para localizar pessoas no diretório atual, permitindo selecionar o usuário correto nos resultados da pesquisa. Quando você selecionar essa pessoa, o email de conexão e o email de notificação serão populados automaticamente.
    > [!div class="mx-imgBorder"]
-   > ![Adicionar um novo endereço de email de notificação](media/add-new-subscriber-notification-email.png)
+   > ![Detalhes do assinante](_img/assign-license-add/subscriber-details.png)
 
     Caso deseje que esse assinante tenha acesso a downloads de software quando ele entrar no [Portal de Assinaturas do Visual Studio](https://my.visualstudio.com?wt.mc_id=o~msft~docs), deixe a alternância de downloads habilitada na seção **Configurações de Download**. Se optar por desabilitar downloads, o usuário não terá acesso aos downloads de software, mas ainda terá acesso a todos os outros benefícios incluídos na assinatura.
    > [!div class="mx-imgBorder"]
    > ![Acesso aos downloads](media/access-to-downloads.png)
 
-    Caso deseje alterar o idioma no qual o assinante recebe informações, faça isso na seção **Opções de Comunicação**.
-   > [!div class="mx-imgBorder"]
-   > ![Alterar o idioma a ser usado para o envio de emails de notificação](media/change-subscriber-communication-preference.png)
-
-    Caso deseje adicionar suas próprias anotações de referência para a assinatura, faça isso na seção **Adicionar referência**.
+       If you'd like to add your own reference notes to the subscription, you can do so in the **Add reference** section.
    > [!div class="mx-imgBorder"]
    > ![Adicionar suas próprias anotações de referência a cada assinatura](media/add-subscriber-reference-notes.png)
 
@@ -50,44 +42,8 @@ Veja a seguir como atribuir uma licença de assinatura do Visual Studio a um nov
    > ![Escolher o botão Adicionar](media/add-button.png)
 
 4. Depois que você adicionar o assinante, um Email de Atribuição será enviado automaticamente para o novo assinante com mais instruções. É possível enviar o Email de atribuição novamente a qualquer momento selecionando o assinante e clicando no botão **Reenviar** no menu superior.
-   > [!div class="mx-imgBorder"]
-   > ![Reenviar o email de ativação para qualquer usuário ou para vários usuários sempre que você desejar](media/resend-subscriber-activation-emails.png)
 
-## <a name="bulk-assignments"></a>Atribuições em massa
+## <a name="next-steps"></a>Próximas etapas
+- Tem muitos usuários para adicionar?  Saiba como atribuir assinaturas a [vários assinantes](assign-license-bulk.md).
+- Precisa de ajuda?  Contate o [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs).
 
-1. Para adicionar vários assinantes de uma vez, navegue para a guia **Gerenciar Assinantes**. Na faixa de opções na parte superior, clique em **Adição em Massa**.
-   > [!div class="mx-imgBorder"]
-   > ![Adicionar vários assinantes](media/add-multiple-subscribers.png)
-
-2. A atribuição em massa usa um modelo do Microsoft Excel para carregar os assinantes. Na caixa de diálogo Carregar Vários Assinantes, clique em **Baixar** para baixar o modelo.
-   > [!div class="mx-imgBorder"]
-   > ![Baixar o modelo do Excel para carregar vários assinantes](media/download-template-upload-subscribers.png)
-   >
-   > [!NOTE]
-   > Sempre baixe a versão mais recente deste modelo. Se você usar uma versão mais antiga, o upload em massa poderá falhar.
-
-3. Na planilha do Excel, preencha os campos com as informações dos indivíduos aos quais deseja atribuir assinaturas. (*Referência* é um campo opcional.) Salve o arquivo localmente depois que terminar.
-
-   Para que não haja problemas com o upload, observe as seguintes melhores práticas:
-
-    - Verifique se nenhum dos campos do formulário contém vírgulas.
-    - Remova os espaços antes e depois de campos de formulário.
-    - Verifique se os nomes do usuário não contêm espaços extras entre nomes ou sobrenomes de duas partes (por exemplo, se uma pessoa tiver um nome de duas partes, como "Maria Eduarda", ele deverá ser digitado como "MariaEduarda", porque o sistema não cortará o espaço extra).
-
-4. Retorne ao portal de Administração de Assinaturas do Visual Studio. Na caixa de diálogo **Carregar Vários Assinantes**, clique em **Procurar**.
-   > [!div class="mx-imgBorder"]
-   > ![Navegar para o modelo salvo para carregar vários assinantes](media/bulk-add-browse-saved-template.png)
-
-5. Navegue para o arquivo do Excel que você salvou e, em seguida, clique em **OK**.
-   > [!div class="mx-imgBorder"]
-   > ![Carregar o modelo do Excel para carregar vários assinantes](media/bulk-upload-subscribers.png)
-
-    Uma caixa de diálogo de progresso do upload será exibida.
-
-    Se o modelo contiver erros, o upload falhará e os erros serão mostrados para que você possa corrigir o modelo e tentar o upload em massa novamente.
-   > [!div class="mx-imgBorder"]
-   > ![Mensagem de erro em caso de falha no upload de vários assinantes](media/bulk-add-template-failed.png)
-
-    Quando o upload for bem-sucedido, você verá a lista de assinantes e uma mensagem de confirmação.
-   > [!div class="mx-imgBorder"]
-   > ![Mensagem de confirmação em caso de êxito no upload de vários assinantes](media/bulk-add-template-success.png)
