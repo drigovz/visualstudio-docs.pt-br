@@ -1,26 +1,24 @@
 ---
-title: Pacote Visual Studio + GitHub | Microsoft Docs
+title: Pacote Visual Studio + GitHub Enterprise | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 04/23/2019
+ms.date: 07/28/2019
 ms.topic: conceptual
-description: Como gerenciar assinaturas no pacote Visual Studio + GitHub
-ms.openlocfilehash: 875f91f19aee33d290933e6a5455a4dead78d6f0
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+description: Como gerenciar assinaturas no pacote Visual Studio + GitHub Enterprise
+ms.openlocfilehash: 0f297eac1d6b2bc5fe322be305fab7f268f3d041
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783628"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605393"
 ---
-# <a name="managing-visual-studio-subscriptions-with-github-enterprise"></a>Como gerenciar assinaturas do Visual Studio com o GitHub Enterprise
-
+# <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>Gerenciar assinaturas do Visual Studio com o GitHub Enterprise
 Os clientes que têm EA (Contratos Enterprise) com a Microsoft são qualificados para comprar um novo pacote de assinatura que reúne as assinaturas padrão do Visual Studio e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
 
 Quando sua organização compra as Assinaturas do Visual Studio com o GitHub Enterprise, elas são provisionadas e gerenciadas em duas partes.
 
-## <a name="managing-visual-studio-subscriptions"></a>Como gerenciar assinaturas do Visual Studio
-
+## <a name="manage-visual-studio-subscriptions"></a>Gerenciar assinaturas do Visual Studio
 Quando sua organização compra as Assinaturas do Visual Studio com o GitHub Enterprise, a parte do Visual Studio das assinaturas é provisionada imediatamente e as assinaturas são disponibilizadas para atribuição e gerenciamento no portal [Administração de assinaturas](https://manage.visualstudio.com) do Visual Studio. 
 
 Para obter mais informações sobre como gerenciar assinaturas, confira estes tópicos:
@@ -35,8 +33,7 @@ Para obter mais informações sobre como gerenciar assinaturas, confira estes t�
 >
 > É responsabilidade do cliente garantir que, para cada assinatura do GitHub atribuída, haja uma assinatura correspondente do Visual Studio com o GitHub atribuída no portal de gerenciamento para permanecer em conformidade com os requisitos de licenciamento para este assinatura.
 
-## <a name="managing-github-enterprise-subscriptions"></a>Como gerenciar assinaturas do GitHub Enterprise
-
+## <a name="manage-github-enterprise-subscriptions"></a>Gerenciar assinaturas do GitHub Enterprise
 Quando as assinaturas do GitHub Enterprise são compradas, o GitHub faz parceria com os clientes para ajudar a criar e configurar as organizações que acessarão o GitHub e identificarão os administradores.  Esses administradores, em seguida, recebem uma notificação de que já foram configurados como administradores.  
 
 Como esse processo é mais complexo, pode levar vários dias após a compra das assinaturas para que as organizações e os administradores sejam completamente configurados.
@@ -44,7 +41,6 @@ Como esse processo é mais complexo, pode levar vários dias após a compra das 
 O GitHub está disponível no GitHub.com baseado em nuvem ou no GitHub Enterprise Server local.  Os processos para gerenciar as duas versões são diferentes.  A GitHub fornece uma variedade de tópicos de ajuda e guias de administrador para ajudar você a gerenciar assinaturas do GitHub Enterprise.  Fornecemos links para os tópicos selecionados abaixo.  
 
 ### <a name="githubcom"></a>GitHub.com 
-
 Saiba mais sobre como gerenciar o GitHub.com nos tópicos a seguir da [Ajuda do GitHub](https://help.github.com/en).
 - [Lista completa de tópicos de ajuda](https://help.github.com/en)
 - [Como gerenciar associações em sua organização](https://help.github.com/en/articles/managing-membership-in-your-organization)
@@ -56,7 +52,6 @@ Saiba mais sobre como gerenciar o GitHub.com nos tópicos a seguir da [Ajuda do 
 - [Como gerenciar o acesso a repositórios da sua organização](https://help.github.com/en/articles/managing-access-to-your-organizations-repositories)
 
 ### <a name="github-enterprise-server"></a>GitHub Enterprise Server
-
 A Ajuda do GitHub fornece uma variedade de guias de administrador para responder perguntas e dar dicas sobre o gerenciamento da implementação de sua organização no GitHub Enterprise Server.
 
 - [Exibir todos os guias de administrador](https://help.github.com/en/enterprise/2.16/admin)
@@ -70,7 +65,6 @@ A Ajuda do GitHub fornece uma variedade de guias de administrador para responder
 - [Como instalar e configurar o GitHub Enterprise Server](https://help.github.com/en/enterprise/2.16/admin/installation)
 
 ## <a name="support-resources"></a>Recursos de suporte
-
 - Você pode encontrar respostas para perguntas sobre uma ampla variedade de tópicos do GitHub em [Ajuda do GitHub](https://help.github.com/en).
 - Obtenha ajuda de outros usuários do GitHub no [Fórum da comunidade do GitHub](https://github.community/).
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
@@ -78,5 +72,4 @@ A Ajuda do GitHub fornece uma variedade de guias de administrador para responder
 - Obtenha [suporte técnico](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24) para o GitHub Enterprise.   
 
 ## <a name="next-steps"></a>Próximas etapas
-
 Para obter mais informações sobre como gerenciar as Assinaturas do Visual Studio com o GitHub Enterprise, confira o [portal de administração de assinaturas](https://visualstudio.microsoft.com/subscriptions-administration/) do Visual Studio.

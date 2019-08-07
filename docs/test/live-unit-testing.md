@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2cbde88ee12118f9f59271f897e81ec18c24eb4e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786447"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662060"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing com o Visual Studio
 
@@ -145,7 +145,7 @@ Há algumas diferenças entre a execução e atualização automáticas dos resu
 
 - A execução ou depuração de testes na janela Gerenciador de Testes executa binários regulares, ao passo que o Live Unit Testing executa binários instrumentados.
 - O Live Unit Testing não cria um novo domínio de aplicativo para executar testes; em vez disso, ele executa testes no domínio padrão. Os testes executados na janela **Gerenciador de Testes** criam um novo domínio de aplicativo.
-- O Live Unit Testing executa testes em cada assembly de teste sequencialmente. Se você executar vários testes na janela **Gerenciador de Testes** e o botão **Executar Testes em Paralelo** estiver selecionado, os testes serão executados em paralelo.
+- O Live Unit Testing executa testes em cada assembly de teste sequencialmente. Na janela **Gerenciador de Testes**, você pode escolher uma opção para executar vários testes em paralelo.
 
 ## <a name="live-unit-testing-and-large-solutions"></a>Live Unit Testing e soluções grandes
 
@@ -166,7 +166,7 @@ Para selecionar os projetos individuais em testes de unidade, faça o seguinte a
 
 **Excluir testes individuais da janela do editor de códigos**
 
-É possível usar a janela do editor de código para incluir ou excluir métodos de teste individuais. Clique com o botão direito do mouse na assinatura do método de teste na janela do editor de código e selecione **Testes Dinâmicos** > **Incluir [o método selecionado]**, **Testes Dinâmicos** > **Excluir [o método selecionado]** ou **Testes Dinâmicos** > **Excluir todos, exceto [o método selecionado]**, em que "o método selecionado" é o nome do método selecionado na janela de código.
+É possível usar a janela do editor de código para incluir ou excluir métodos de teste individuais. Clique com o botão direito do mouse na assinatura do método de teste na janela do editor de código e selecione **Testes Dinâmicos** > **Incluir [o método selecionado]** , **Testes Dinâmicos** > **Excluir [o método selecionado]** ou **Testes Dinâmicos** > **Excluir todos, exceto [o método selecionado]** , em que "o método selecionado" é o nome do método selecionado na janela de código.
 
 **Excluir testes programaticamente**
 

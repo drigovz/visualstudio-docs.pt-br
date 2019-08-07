@@ -10,18 +10,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 58f83616985556d762ae05a0a97c6263e2e6d7a4
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62892829"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821551"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Passo a passo: Associar dados no Designer XAML
 
-No Designer XAML, você pode definir as propriedades de associação de dados usando o artboard e a janela Propriedades. O exemplo neste passo a passo mostra como associar dados a um controle. Especificamente, o procedimento mostra como criar uma classe simples de carrinho de compras com [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) chamado de `ItemCount` e associar a propriedade `ItemCount` à propriedade **Text** de um controle de [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+No Designer XAML, você pode definir as propriedades de associação de dados usando o artboard e a janela Propriedades. O exemplo neste passo a passo mostra como associar dados a um controle. Especificamente, o procedimento mostra como criar uma classe simples de carrinho de compras com [DependencyProperty](xref:Windows.UI.Xaml.DependencyProperty) chamado de `ItemCount` e associar a propriedade `ItemCount` à propriedade **Text** de um controle de [TextBlock](xref:Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Para criar uma classe para usar como fonte de dados
 
@@ -65,7 +63,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
    End Class
    ```
 
-   Esse código define o valor 0 como a contagem de item padrão usando o objeto [PropertyMetadata](/uwp/api/Windows.UI.Xaml.PropertyMetadata).
+   Esse código define o valor 0 como a contagem de item padrão usando o objeto [PropertyMetadata](xref:Windows.UI.Xaml.PropertyMetadata).
 
 1. No menu **Arquivo**, escolha **Compilar** > **Compilar Solução**.
 
@@ -73,7 +71,7 @@ No Designer XAML, você pode definir as propriedades de associação de dados us
 
 1. No Gerenciador de Soluções, abra o menu de atalho de **MainWindow.xaml** e escolha **Designer de Exibição**.
 
-1. Na caixa de ferramentas, escolha um controle de [Grade](/uwp/api/Windows.UI.Xaml.Controls.Grid) e adicione-o ao formulário.
+1. Na caixa de ferramentas, escolha um controle de [Grade](xref:Windows.UI.Xaml.Controls.Grid) e adicione-o ao formulário.
 
 1. Com `Grid` selecionado, na janela Propriedades, clique no botão **Novo** próximo a propriedade **DataContext**.
 

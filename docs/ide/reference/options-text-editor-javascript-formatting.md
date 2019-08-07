@@ -1,6 +1,7 @@
 ---
 title: Opções, Editor de Texto, JavaScript, Formatação
 ms.date: 10/29/2018
+ms.technology: vs-javascript
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.JavaScript.Formatting.Spacing
@@ -10,29 +11,31 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.General
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Formatting.New_Lines
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
-author: gewarren
-ms.author: gewarren
+author: mikejo5000
+ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e995ec564d0260faac02eb3b4a0237fa9f1f89b4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 957dbd557a15c4c1df6028672f204a06936767c1
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778346"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605992"
 ---
-# <a name="options-text-editor-javascript-formatting"></a>Opções, Editor de Texto, JavaScript, Formatação
-Use a página **Formatação** da caixa de diálogo **Opções** para definir opções para formatar código no Editor de Código. Para acessar essa página, na barra de menus, escolha **Ferramentas**, **Opções** e, em seguida, expanda **Editor de Texto**, **JavaScript**, e **Formatação**.
+# <a name="options-dialog-box-text-editor--javascript--formatting"></a>Caixa de diálogo Opções: Editor de texto \> JavaScript \> Formatação
+
+Use a página **Formatação** da caixa de diálogo **Opções** para definir opções para formatar código no Editor de Código. Para acessar essa página, na barra de menus, escolha **Ferramentas** > **Opções** e expanda **Editor de Texto** > **JavaScript/TypeScript** > **Formatação**.
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>Formatação automática
- Essas opções determinam quando ocorre a formatação na exibição **Fonte**.
+
+Essas opções determinam quando ocorre a formatação na exibição **Fonte**.
 
 ### <a name="uielement-list"></a>Lista UIElement
 
-|Opção|Descrição|
+|Opção|DESCRIÇÃO|
 |------------|-----------------|
 |**Formatar linha completa ao pressionar Enter**|Quando essa opção é selecionada, o Editor de Código formata automaticamente a linha quando você escolhe a tecla Enter.|
 |**Formatar instrução concluída em ;**|Quando essa opção é selecionada, o Editor de Código formata automaticamente a linha quando você escolhe a tecla de ponto-e-vírgula.|
@@ -41,21 +44,23 @@ Use a página **Formatação** da caixa de diálogo **Opções** para definir op
 |**Formatar ao colar**|Quando essa opção é selecionada, o Editor de Código reformata o código quando você o cola no editor. O editor usa as regras de formatação definidas no momento. Se essa opção não estiver selecionada, o editor usará a formatação original do código colado.|
 
 ## <a name="new-lines"></a>Novas Linhas
- Essas opções determinam se o Editor de Código coloca uma chave de abertura para funções e blocos de controle em uma nova linha.
+
+Essas opções determinam se o Editor de Código coloca uma chave de abertura para funções e blocos de controle em uma nova linha.
 
 ### <a name="uielement-list"></a>Lista UIElement
 
-|Opção|Descrição|
+|Opção|DESCRIÇÃO|
 |------------|-----------------|
 |**Colocar chave de abertura em nova linha para funções**|Quando essa opção é selecionada, o Editor de Código move a chave de abertura associada a uma função para uma nova linha.|
 |**Colocar chave de abertura na nova linha para blocos de controle**|Quando essa opção é selecionada, o Editor de Código move a chave de abertura associada a um bloco de controle (por exemplo, os blocos de controle `if` e `while`) para uma nova linha.|
 
 ## <a name="spacing"></a>Espaçamento
- Essas opções determinam como os espaços são inseridos na exibição do **Código-fonte**.
+
+Essas opções determinam como os espaços são inseridos na exibição do **Código-fonte**.
 
 ### <a name="uielement-list"></a>Lista UIElement
 
-|Opção|Descrição|
+|Opção|DESCRIÇÃO|
 |------------|-----------------|
 |**Inserir espaço após delimitador de vírgula**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço depois dos delimitadores de vírgulas.|
 |**Inserir espaço após ponto e vírgula nas instruções "for"**|Quando essa opção é selecionada, o Editor de Código adiciona um espaço depois de cada ponto-e-vírgula na primeira linha de um loop `for`.|

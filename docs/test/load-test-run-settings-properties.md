@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62785891"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662068"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
 
@@ -89,9 +89,10 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Tamanho do pool de conexão do WebTest**|Especifica o número máximo de conexões para fazer entre o agente de teste de carga e o servidor Web. Isso se aplica apenas ao modelo **Pool de conexões**.|
 
 ## <a name="change-run-setting-properties"></a>Alterar as propriedades da configuração de execução
- Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, consulte [ Selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
-### <a name="to-change-run-settings"></a>Para alterar as configurações de execução
+Você pode adicionar mais configurações de execução ao teste de carga com configurações de propriedade diferentes para que possa executar o teste de carga em condições diferentes. Por exemplo, você pode adicionar uma nova configuração de teste e usar uma taxa de amostragem diferente ou especificar uma duração de execução mais longa. Você só pode usar uma configuração de execução de cada vez e deve especificar que configuração de execução usar tornando-a ativa. Para obter um exemplo, consulte [ Selecionar a configuração de execução ativa para um teste de carga](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
+
+Para alterar as configurações de execução:
 
 1. Abra um teste de carga.
 

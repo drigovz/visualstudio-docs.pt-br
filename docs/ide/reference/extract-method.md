@@ -1,5 +1,6 @@
 ---
 title: Extrair um método
+description: Transforme um fragmento de código em seu próprio método selecionando o código e digitando Ctrl + R, Ctrl + M.
 ms.date: 01/26/2018
 ms.topic: reference
 author: gewarren
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fc1e96bed6c3f7fac857262644765d383de37482
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a764fd0d95696866e914ec76a560a49d641acb47
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790965"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483667"
 ---
 # <a name="extract-a-method-refactoring"></a>Refatoração Extrair um método
 
@@ -49,7 +50,7 @@ Esta refatoração aplica-se a:
 
    - **Teclado**
       - Pressione **Ctrl+R**, em seguida, **Ctrl+M**. (Observe que o atalho de teclado pode ser diferente com base no perfil selecionado.)
-      - Pressione **Ctrl**+**.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Método** no pop-up da janela Visualização.
+      - Pressione **Ctrl**+ **.** para disparar o menu **Ações Rápidas e Refatorações** e selecionar **Extrair Método** no pop-up da janela Visualização.
    - **Mouse**
       - Selecione **Editar > Refatorar > Extrair Método**.
       - Clique com o botão direito do mouse no código e selecione **Refatorar > Extrair > Extrair Método**.

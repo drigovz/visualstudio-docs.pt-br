@@ -8,15 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9760dbf4fd2eabb43e88e0b99858eba3e09c8fb5
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747396"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68662045"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
+
+> [!IMPORTANT]
+> Este artigo mostra a maneira antiga de especificar uma estrutura de destino. Os projetos no estilo SDK permitem TargetFrameworks diferentes, como o netstandard. Para obter mais informações, confira [Estruturas de destino](/dotnet/standard/frameworks).
 
 ## <a name="target-framework-and-profile"></a>Perfil e estrutura de destino
  Uma estrutura de destino é a versão específica do .NET Framework na qual o projeto foi criado para ser executado. A especificação de uma estrutura de destino é necessária porque ela habilita funcionalidades do compilador e referências do assembly são exclusivas para essa versão da estrutura.
@@ -41,9 +44,13 @@ Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*,
 
 - O .NET Framework 4.7.1
 
+- O .NET Framework 4.7.2
+
+- O .NET Framework 4.8
+
 As versões do .NET Framework são diferentes entre si na lista de assemblies que cada uma torna disponível para fazer referência. Por exemplo, você não pode compilar aplicativos Windows Presentation Foundation (WPF) a menos que seu projeto seja direcionado para o .NET Framework versão 3.0 ou superior.
 
-A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` no arquivo de projeto. Você pode alterar a estrutura de destino para um projeto usando as páginas de propriedades do projeto no IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Os valores disponíveis para `TargetFrameworkVersion` são `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7` e `v4.7.1`.
+A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` no arquivo de projeto. Você pode alterar a estrutura de destino para um projeto usando as páginas de propriedades do projeto no IDE (ambiente de desenvolvimento integrado) do Visual Studio. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md). Os valores disponíveis para `TargetFrameworkVersion` são `v2.0`, `v3.0`, `v3.5`, `v4.5.2`, `v4.6`, `v4.6.1`, `v4.6.2`, `v4.7`, `v4.7.1`, `v4.7.2` e `v4.8`.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

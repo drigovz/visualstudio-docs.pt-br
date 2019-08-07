@@ -6,20 +6,18 @@ manager: lank
 ms.date: 03/24/2019
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
-ms.openlocfilehash: 7a3205fd29c0eb69e20fee03a2679ab227243058
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 15ef4acf8bd02ec4846f387fdce3a9882585a64a
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68417002"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605483"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Usar o recurso de Uso Máximo para controlar o número de assinaturas atribuídas
-
 Um novo recurso no portal de administração de assinaturas do Visual Studio ajuda a acompanhar quantas assinaturas você adquiriu e atribuiu e identifica o número máximo de assinaturas de cada nível que você atribuiu, no ano passado e por toda a duração dos seus contratos. 
 
 ## <a name="view-your-maximum-usage"></a>Exibir seu uso máximo
 Para ver o número máximo de assinaturas atribuídas para qualquer nível de assinatura e de contrato:
-
 1. Selecione o contrato que você deseja exibir na lista suspensa na parte superior esquerda do portal. (Se você tiver apenas um único contrato, ele já estará selecionado.)
 2. Clique na guia **Uso Máximo**.  
     > [!div class="mx-imgBorder"]
@@ -41,8 +39,7 @@ Por exemplo, na tabela acima, você pode ver que no dia 13/12/2018 havia 123 ass
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
 ### <a name="q-how-is-the-information-in-the-maximum-usage-different-from-the-assignment-information-available-in-the-overview-section-on-the-left-side-of-the-portal"></a>P: Como as informações de uso máximo são diferentes das informações de atribuição disponíveis na seção "Visão geral" no lado esquerdo do portal?
-
-R:  As informações na visão geral mostram as atribuições atuais e as assinaturas disponíveis para cada nível de assinatura.  Isso pode ser muito diferente do número máximo de assinaturas atribuídas para o contrato a qualquer momento.  O recurso de Uso Máximo permite que você veja quando os níveis máximos de atribuição foram atingidos e quais foram esses níveis.  Essa é uma distinção importante, já que a cobrança de assinaturas durante a adequação ("true-up") é baseada no número máximo de assinaturas atribuídas a qualquer momento ao longo do ano. 
+R:  As informações na visão geral mostram as atribuições *atuais* e as assinaturas disponíveis para cada nível de assinatura.  Isso pode ser muito diferente do número máximo de assinaturas atribuídas para o contrato durante o ano atual ou a vida útil do contrato.  O recurso de Uso Máximo permite que você veja quando os níveis máximos de atribuição foram atingidos e quais foram esses níveis.  Essa é uma distinção importante, já que a cobrança de assinaturas durante a adequação ("true-up") é baseada no número máximo de assinaturas atribuídas a qualquer momento ao longo do ano. 
 
 ## <a name="resources"></a>Recursos
 - [White paper de licenciamento do Visual Studio](https://aka.ms/vslicensing)
@@ -50,5 +47,5 @@ R:  As informações na visão geral mostram as atribuições atuais e as assina
 - [Termos de licenciamento por volume](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="next-steps"></a>Próximas etapas
-Se você tiver alguma dúvida sobre atribuições de assinatura ou em outros aspectos do portal de administração, entre em contato com https://visualstudio.microsoft.com/subscriptions/support/ para obter assistência. 
-
+- Se você tiver alguma dúvida sobre atribuições de assinatura ou em outros aspectos do portal de administração, entre em contato com https://visualstudio.microsoft.com/subscriptions/support/ para obter assistência. 
+- Saiba mais sobre o que fazer se você atribuir mais assinaturas que comprou, chamadas de [superalocações](handle-overclaimed-license.md).

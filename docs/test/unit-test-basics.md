@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c51042ee5a154c09245a28645cf2e432ff6e694c
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: c4d129d823c662a96a2186ea24989922d4af7442
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820757"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661971"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -232,14 +232,24 @@ A barra de ferramentas do **Gerenciador de Testes** ajuda você a descobrir, org
 
 Você pode escolher **Executar Tudo** para executar todos os testes ou **Executar** para escolher um subconjunto de testes a serem executados. Depois que você executa um conjunto de testes, um resumo da execução de teste é exibido na parte inferior da janela **Gerenciador de Testes**. Selecione um teste para exibir seus detalhes no painel inferior. Escolha **Abrir Teste** no menu do clique com o botão direito (teclado: **F12**) para exibir o código-fonte do teste selecionado.
 
+::: moniker range="vs-2017"
+
 Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) botão de alternância na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo no menu de configurações da barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.
+
+::: moniker-end
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 
 > [!WARNING]
 > A execução de testes de unidade após cada compilação só tem suporte no Visual Studio Enterprise.
 
-|Botão|Descrição|
+|Botão|DESCRIÇÃO|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -249,7 +259,7 @@ Quando você tiver um grande número de testes, digite **Gerenciador de Testes**
 
 ![Pesquisar categorias de filtro](../test/media/ute_searchfilter.png)
 
-|Botão|Descrição|
+|Botão|DESCRIÇÃO|
 |-|-|
 |![Botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png)|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
 

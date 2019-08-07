@@ -1,23 +1,22 @@
 ---
-title: Editar assinaturas no Portal do administrador | Microsoft Docs
+title: Editar assinaturas no portal do de administração | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 10/03/2017
+ms.author: lank
+manager: lank
+ms.date: 07/28/2019
 ms.topic: conceptual
 description: Saiba como os administradores podem editar atribuições de assinatura.
-ms.openlocfilehash: 7245facbaf966593160bc44dc15bc2fd71622347
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: e55cee74f861973e3cc29e3f19dc9b31a107f437
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67783475"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605668"
 ---
-# <a name="editing-visual-studio-subscription-assignments"></a>Editando atribuições de assinatura do Visual Studio
-
+# <a name="edit-visual-studio-subscription-assignments"></a>Editar atribuições de assinatura do Visual Studio
 Como administrador de assinaturas, você pode fazer alterações nas assinaturas atribuídas às pessoas na organização.  Este artigo descreve os tipos de alterações que você pode fazer e fornece as etapas necessárias.
 
-## <a name="making-changes-to-subscriber-information"></a>Fazendo alterações nas informações do assinante
+## <a name="change-subscriber-information"></a>Alterar informações do assinante
 Você pode editar as informações do assinante para corrigir erros ou para atualizar as informações.
 
 Para editar um assinante, selecione as reticências (...) que aparecem ao lado do endereço de email do assinante ao passar o mouse sobre ele. Será exibida uma lista suspensa.  Selecione **Editar** para modificar os detalhes do assinante. Também é possível clicar duas vezes na linha do assinante na grade para abrir a janela de edição.
@@ -29,8 +28,7 @@ Você pode atualizar o nome, o sobrenome, o país, o idioma e os downloads do as
    > [!NOTE]
    > Se você precisar alterar o nível de assinatura de um assinante, será necessário excluir o usuário do portal e adicioná-lo novamente. Os níveis de assinatura não são editáveis.
 
-## <a name="editing-multiple-subscribers-using-bulk-edit"></a>Editando vários assinantes usando da edição em massa
-
+## <a name="edit-multiple-subscribers-using-bulk-edit"></a>Editar vários assinantes usando a edição em massa
 Você pode editar vários assinantes de uma vez usando o processo de edição em massa. Esse recurso é usado principalmente para organizações que estão passando por alterações de endereço de email corporativo ou quando uma organização decide restringir o acesso a downloads.
 
    > [!IMPORTANT]
@@ -49,3 +47,7 @@ Você pode editar vários assinantes de uma vez usando o processo de edição em
    > ![Editando uma licença – upload do arquivo de edições em massa](_img/edit-license/edit-license-bulk-file-upload1.png)
 
 5. Depois de carregar o arquivo, será exibida uma notificação informando que o upload foi bem-sucedido. Neste ponto, suas edições serão refletidas nas informações do assinante.
+
+## <a name="next-steps"></a>Próximas etapas
+- Para obter ajuda para encontrar uma assinatura específica, confira [Pesquisar por uma assinatura](search-license.md).
+- Precisa criar uma lista de todas as suas assinaturas?  Confira [Exportar assinaturas](exporting-subscriptions.md).

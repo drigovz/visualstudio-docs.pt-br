@@ -1,8 +1,7 @@
 ---
 title: Gravar e depurar XAML usando o Hot recarregamento de XAML
 description: O Hot recarregamento de XAML ou editar e continuar XAML permite que você faça alterações no código XAML durante a execução de aplicativos
-ms.custom: ''
-ms.date: 02/28/2019
+ms.date: 08/05/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - xaml edit and continue
@@ -12,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1b2428024c30b8f96babf0cab6a56c60f52fa57
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 2728f26319b3d395381d60f136fba7d0c20da977
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711217"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822149"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio
 
-O Hot recarregamento XAML do Visual Studio ajuda você a criar sua interface do usuário do aplicativo do WPF ou UWP, permitindo que você faça alterações no código XAML enquanto seu aplicativo está em execução. Esse recurso permite criar e testar incrementalmente o código XAML com o benefício do contexto de dados do aplicativo em execução, o estado de autenticação e outras complexidades do mundo real que são difíceis de simular durante o tempo de design.
+O Hot recarregamento de XAML ajuda você a criar sua interface do usuário do aplicativo do WPF ou UWP, permitindo que você faça alterações no código XAML enquanto seu aplicativo está em execução. A recarga ativa está disponível no Visual Studio e no Blend para Visual Studio. Esse recurso permite criar e testar incrementalmente o código XAML com o benefício do contexto de dados do aplicativo em execução, o estado de autenticação e outras complexidades do mundo real que são difíceis de simular durante o tempo de design.
 
 O Hot recarregamento de XAML é especialmente útil nesses cenários:
 
@@ -35,7 +34,7 @@ O Hot recarregamento de XAML é especialmente útil nesses cenários:
 |Aplicativos universais do Windows (UWP)|Windows 10 e posterior, com o [SDK do Windows 10](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 14393 + |
 
 > [!NOTE]
-> Atualmente, há suporte para o Hot recarregamento XAML do Visual Studio apenas ao executar o aplicativo no Visual Studio com o depurador anexado (**F5** ou **iniciar a depuração**). Você não pode habilitar essa experiência usando *anexar ao processo*.
+> Atualmente, há suporte para o Hot recarregamento XAML do Visual Studio apenas ao executar seu aplicativo no Visual Studio ou Blend para Visual Studio com o depurador anexado (**F5** ou **iniciar a depuração**). Você não pode habilitar essa experiência usando [anexar ao processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 
 ## <a name="known-limitations"></a>Limitações conhecidas
 
@@ -44,7 +43,7 @@ Veja a seguir as limitações conhecidas do Hot recarregamento XAML. Para soluci
 |Limitação|WPF|UWP|Observações|
 |-|-|-|-|
 |Eventos de fiação para controles enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Consulte o erro: *Verifique se o evento falhou*|
-|Criando objetos de recurso em um dicionário de recursos, como aqueles na página/janela do seu aplicativo ou *app. XAML*|Sem suporte|Com suporte|Exemplo: adicionando um ```SolidColorBrush``` a um dicionário de recursos para uso como ```StaticResource```um.</br>Observação: Recursos estáticos, conversores de estilo e outros elementos gravados em um dicionário de recursos podem ser aplicados/usados ao usar o Hot recarregamento de XAML. Somente a criação do recurso não tem suporte.</br> Alterando a propriedade ```Source``` do dicionário de recursos.| 
+|Criando objetos de recurso em um dicionário de recursos, como aqueles na página/janela do seu aplicativo ou *app. XAML*|Sem suporte|Com suporte|Exemplo: adicionando um `SolidColorBrush` a um dicionário de recursos para uso como `StaticResource`um.</br>Observação: Recursos estáticos, conversores de estilo e outros elementos gravados em um dicionário de recursos podem ser aplicados/usados ao usar o Hot recarregamento de XAML. Somente a criação do recurso não tem suporte.</br> Alterando a propriedade `Source` do dicionário de recursos.|
 |Adicionar novos controles, classes, janelas ou outros arquivos ao seu projeto enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Nenhum|
 |Gerenciando pacotes NuGet (adicionando/removendo/atualizando pacotes)|Sem suporte|Sem suporte|Nenhum|
 |Alterando a associação de dados que usa a extensão de marcação {x:Bind}|N/D|Com suporte no Visual Studio 2019 e versões posteriores|Sem suporte no Visual Studio 2017 ou em versões anteriores|

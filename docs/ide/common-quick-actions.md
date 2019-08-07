@@ -1,5 +1,6 @@
 ---
 title: Ações Rápidas comuns
+description: As ações rápidas mais populares para C# e Visual Basic, incluindo correção de palavras-chave ou símbolos grafados incorretamente, resolução de conflitos de mesclagem, remoção de importações necessárias, geração de tipos, introdução de variáveis locais, etc.
 ms.date: 03/28/2018
 ms.topic: reference
 author: gewarren
@@ -10,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f6f8872fa9acb2ca79010a87168c629dcbc3ac6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3364010ad9470d4431e6407e40b6a6b1cc96476a
+ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976510"
+ms.lasthandoff: 07/25/2019
+ms.locfileid: "68483729"
 ---
 # <a name="common-quick-actions"></a>Ações Rápidas comuns
 

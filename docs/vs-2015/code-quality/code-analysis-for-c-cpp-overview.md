@@ -22,12 +22,12 @@ caps.latest.revision: 27
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: fce0fb33f6c536386754b10b11e724a603f0a2a6
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 0a0e744e1eb41cf9da816f2214176b37bfe4c8bf
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698011"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68740227"
 ---
 # <a name="code-analysis-for-cc-overview"></a>Análise de código para visão geral do C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ A ferramenta de análise de código C/C++ fornece informações aos desenvolvedo
  Talvez você queira exigir que todos os check-ins do código-fonte satisfaçam determinadas políticas. Em particular, convém verificar se a análise foi executada como uma etapa do build local mais recente. Para obter mais informações de como habilitar uma política de check-in de análise de código, confira [Criando e usando políticas de check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)  
   
 ## <a name="team-build-integration"></a>Integração ao Team Build  
- Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise de código como uma etapa do processo de build do [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Para obter mais informações, consulte [Compilar o aplicativo](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise de código como uma etapa do processo de build do [!INCLUDE[esprtfs](../includes/esprtfs-md.md)]. Para obter mais informações, consulte [Compilar o aplicativo](/azure/devops/pipelines/index).  
   
 ## <a name="command-line-support"></a>Suporte para linha de comando  
  Além da integração completa com o ambiente de desenvolvimento, os desenvolvedores também podem usar a ferramenta de análise por meio da linha de comando, conforme é mostrado no exemplo a seguir:  

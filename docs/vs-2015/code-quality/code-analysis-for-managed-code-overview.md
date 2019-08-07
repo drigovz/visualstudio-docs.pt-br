@@ -14,12 +14,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5076ea34b1bcbd66239722bc8fb1a3edc4763162
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: b4c22076a5f08b1b8f25722e5c3a5fef27b81b9e
+ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65680614"
+ms.lasthandoff: 08/02/2019
+ms.locfileid: "68739985"
 ---
 # <a name="code-analysis-for-managed-code-overview"></a>Visão geral da análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,8 +63,8 @@ A análise de código gerenciado analisa os assemblies gerenciados e relata info
   Você pode garantir isso especificando políticas de check-in. Para obter mais informações, confira [Melhorando a qualidade do código com políticas de check-in do projeto de equipe](../code-quality/enhancing-code-quality-with-team-project-check-in-policies.md).  
   
 ## <a name="team-build-integration"></a>Integração ao Team Build  
- Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise como parte do processo de build. Para obter mais informações, consulte [Compilar o aplicativo](https://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+ Você pode usar os recursos integrados do sistema de build para executar a ferramenta de análise como parte do processo de build. Para obter mais informações, consulte [Compilar o aplicativo](/azure/devops/pipelines/index).  
   
-## <a name="see-also"></a>Consulte também  
+## <a name="see-also"></a>Veja também  
  [Usando conjuntos de regras para agrupar regras de análise de código](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)   
  [Como: habilitar e desabilitar a análise de código automática](../code-quality/how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md)

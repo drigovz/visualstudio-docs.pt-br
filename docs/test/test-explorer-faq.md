@@ -14,14 +14,25 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 2efecd936dea0d764058b795457e89cdc700d902
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
+ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62429438"
+ms.lasthandoff: 07/30/2019
+ms.locfileid: "68661991"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
+
+::: moniker range=">=vs-2019"
+## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Onde está o agrupamento por características no Visual Studio 2019?
+Esse agrupamento por características foi movido para uma coluna. Com a hierarquia personalizável e de várias camadas no Visual Studio 2019 versão 16.2, pensamos que incluir características como um agrupamento resultou em uma complexidade visual desnecessária. Estamos atentos e receptivos a comentários sobre esse design! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
+
+Por enquanto, você pode clicar com o botão direito do mouse na coluna no Gerenciador de Testes e selecionar Colunas. Marque a coluna Características e ela será exibida no Gerenciador de Testes. Agora você pode filtrar essa coluna por quais características está interessado.
+
+![Exibir a coluna de características](media/vs-2019/trait-column.png)
+![Filtrar a coluna de características](media/vs-2019/trait-column-filter.png)
+
+::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Detecção de testes dinâmica
 

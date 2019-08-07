@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: eefcbefa8b728afa677e7bd04fd538633ae117f0
-ms.sourcegitcommit: 6f7a740750b2cd17ea2275c3d046caebc9782917
+ms.openlocfilehash: 7d0580e04968a01dc8e447a9ee35f2b1c5934ccf
+ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/02/2019
-ms.locfileid: "67518172"
+ms.lasthandoff: 07/24/2019
+ms.locfileid: "68461654"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>Criar minidespejos para um processo do Visual Studio com todas as pilhas de chamadas
 
@@ -40,7 +40,6 @@ Em alguns casos, a Microsoft pode solicitar o minidespejo de um processo em exec
 ## <a name="get-the-call-stacks-from-the-minidump"></a>Obter as pilhas de chamadas do minidespejo
 
 1. Abra o arquivo de despejo no Visual Studio.
-
 1. Vá para **Ferramentas** > **Opções** > **Depuração** > **Símbolo** e verifique se a caixa **Servidores de Símbolos Microsoft** está marcada nos **locais do arquivo de símbolos(.pdb)** .
 1. Abra a janela **Comando** (**Exibição** > **Outras janelas** > **Janela de Comando**)
 1. Digite '~*k'. A janela exibe as pilhas de chamadas de todos os threads.

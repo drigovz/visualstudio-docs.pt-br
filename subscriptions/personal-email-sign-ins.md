@@ -1,25 +1,23 @@
 ---
 title: Emails pessoais exibidos no VLSC
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 01/23/2018
+ms.author: lank
+manager: lank
+ms.date: 07/24/2019
 ms.topic: conceptual
 description: 'As assinaturas do Visual Studio: por que estou vendo endereços do Hotmail ou do Gmail para os assinantes?'
-ms.openlocfilehash: acba6b5c1b5efac80590d02e3c813650962b4892
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: 8418a177e793f0b4fe9a5019d2cf62fa724312ff
+ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250720"
+ms.lasthandoff: 07/29/2019
+ms.locfileid: "68605761"
 ---
 # <a name="visual-studio-subscriptions--why-am-i-seeing-hotmail-or-gmail-addresses-for-my-subscribers"></a>Assinaturas do Visual Studio: por que estão aparecendo endereços do Hotmail ou do Gmail para os assinantes?
-
-À medida que as empresas migram do VLSC (Volume Licensing Service Center) para o novo [Portal de Administração de Assinaturas](https://manage.visualstudio.com) do Visual Studio, os administradores podem ficar surpresos ao descobrir que o "Endereço de Email de Entrada" para alguns assinantes mostra um endereço de email de terceiros, como o Hotmail, Gmail ou Yahoo.  Para saber mais, confira [este vídeo](https://www.youtube.com/watch?v=1op-i1zEMfY&t=0s&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=6).
+Após as empresas migrarem do VLSC (Centro de Serviços de Licenciamento por Volume) para o novo [portal de administração de assinaturas](https://manage.visualstudio.com) do Visual Studio, os administradores ficaram surpresos ao descobrir que o "Endereço de Email de Entrada" para alguns assinantes mostra um endereço de email de terceiros, como o Hotmail, Gmail ou Yahoo.  Para saber mais, confira [este vídeo](https://www.youtube.com/watch?v=J61EYaVN-dQ&list=PLReL099Y5nReJhZ6o8CQFPSBgzGCHX99_&index=6).
 
 ## <a name="cause"></a>Causa
-
-Esse cenário ocorre devido aos processos de entrada que estavam associados à experiência herdada de assinante do MSDN. Os usuários foram migrados do VLSC para o novo portal sem modificações. Os administradores talvez não soubessem que os usuários estavam usando contas pessoais para acessar os benefícios de assinatura. Antes das migrações de assinante do Visual Studio, que foram concluídas em 2016, havia duas ações necessárias para usar com êxito uma assinatura do Visual Studio:
+Esse cenário ocorre devido aos processos de entrada que estavam associados à experiência herdada de assinante do MSDN. Os usuários foram migrados do VLSC para o portal de administração de assinaturas do Visual Studio sem modificações. Os administradores talvez não soubessem que os usuários estavam usando contas pessoais para acessar os benefícios de assinatura. Antes das migrações de assinante do Visual Studio, que foram concluídas em 2016, havia duas ações necessárias para usar com êxito uma assinatura do Visual Studio:
 1. O administrador "atribuiu" a assinatura a um assinante individual, usando o endereço de email corporativo ou de estudante.
 2. O assinante "ativou" a assinatura.
 
@@ -28,10 +26,12 @@ Durante o processo de ativação de assinante: Uma MSA (conta da Microsoft) era 
 > [!NOTE]
 > A nova experiência de assinante em [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) é compatível com os tipos de identidade corporativa/de estudante da conta da Microsoft (MAA).
 
-Por fim, como a migração do administrador obtém dados do VLSC sobre o "Endereço de Email de Entrada" do assinante para popular a nova experiência de gerenciamento de assinante, administradores migrados recentemente podem ver essas contas pessoais anteriormente despercebidas devido a alterações na interface do usuário que tornam essas informações mais visíveis.
+Por fim, como a migração do administrador estava obtendo dados do VLSC sobre o "Endereço de Email de Entrada" do assinante para popular a nova experiência de gerenciamento de assinante, administradores migrados recentemente podem ter visto essas contas pessoais anteriormente despercebidas devido a alterações na interface do usuário que tornaram essas informações mais visíveis.
 
 ## <a name="solution"></a>Solução
+Para corrigir o problema, você precisará editar as informações do assinante para atualizar os endereços de email de entrada.  Podem ser feitas edições em assinantes individuais ou em massa. Para obter mais informações, acesse [Editar assinaturas](edit-license.md).
 
-Para corrigir o problema, você precisará editar as informações do assinante para atualizar os endereços de email de entrada.  Podem ser feitas edições em assinantes individuais ou em massa. Para obter mais informações, acesse [Editar uma assinatura](edit-license.md).
+##  <a name="next-steps"></a>Próximas etapas
+- Se você atualizou os endereços de email de assinantes, convém notificá-los de que as informações de conexão deles foram alteradas.  Você também receberá um email com essas informações atualizadas.
+- Pode ser útil [filtrar a lista de assinantes](search-license.md) em sua organização para procurar por quaisquer endereços de email de entrada que precisem ser alterados.  
 
-Depois de atualizar os endereços de email de assinantes, convém notificá-lo de que as informações de logon foram alteradas.  Você também receberá um email com essas informações atualizadas.

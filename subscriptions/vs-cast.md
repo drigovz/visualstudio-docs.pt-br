@@ -3,24 +3,22 @@ title: O benefício CAST Highlight para as assinaturas do Visual Studio | Micros
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 12/19/2018
+ms.date: 07/30/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício CAST Highlight disponível nas assinaturas do Visual Studio selecionadas
-ms.openlocfilehash: c990682fa107364c181403863d3dbefc5a1f3891
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 50d892c5da4d39ebd2b379a2b16b8c9ca69d061d
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823676"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681202"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>O benefício CAST Highlight nas assinaturas do Visual Studio
-
 Os desenvolvedores precisam de insights críticos sobre seu software ao migrar para a nuvem. Com o CAST Highlight, assinantes do Visual Studio Enterprise podem rapidamente digitalizar seu código-fonte para identificar o nível de preparação de seus aplicativos para a nuvem em uma migração para o Azure, além de poderem monitorar o progresso de seu aplicativo durante e após uma migração.
 
 Assinantes do Visual Studio Enterprise podem obter uma assinatura do CAST Highlight gratuita de um mês, com todas as funcionalidades, para até cinco aplicativos por assinante.
 
 ## <a name="activation-steps"></a>Etapas de ativação
-
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 
 2. Localize o bloco do benefício CAST Highlight na categoria "Ferramentas" e clique em **Obter código**.
@@ -39,9 +37,6 @@ Assinantes do Visual Studio Enterprise podem obter uma assinatura do CAST Highli
    > As ativações do benefício do CAST Highlight são limitadas a dez por organização.  Se as dez ativações da sua organização já tiverem sido consumidas, não será possível ativar o benefício do CAST Highlight e você receberá um email com informações adicionais.
 
 0. Depois de enviar suas informações, você verá uma página de confirmação de recebimento de sua solicitação.
-
-    > [!div class="mx-imgBorder"]
-    > ![Página de agradecimento do CAST Highlight](_img/vs-cast-highlight/vs-cast-highlight-thankyou.png)
 
 0. A equipe da CAST avaliará a sua solicitação e entrará em contato com você para finalizar a criação da sua conta.
 
@@ -78,7 +73,6 @@ Após a aprovação de sua solicitação, você receberá um segundo email confi
    > Não deixe de clicar no link de ativação no email que você receber.  Caso contrário, você não poderá acessar sua assinatura do CAST Highlight. Se o email não estiver na caixa de entrada, não deixe de verificar suas pastas de spam.
 
 ## <a name="eligibility"></a>Qualificação
-
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, | Avaliar 5 aplicativos por 30 dias|  Nº  Disponível apenas para novos assinantes          |
@@ -104,7 +98,6 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
-
 Se você ainda não ativou o benefício do Azure que vem com sua assinatura, visite [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) e clique no bloco do Azure na categoria Ferramentas para configurar sua assinatura do Azure e resgatar seus créditos do Azure.
 
 E não se esqueça de conferir a demonstração, o guia do usuário e vídeos de tutorial mencionados no email de Paulo.
