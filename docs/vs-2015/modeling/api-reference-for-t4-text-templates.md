@@ -1,5 +1,5 @@
 ---
-title: Referência da API para modelos de texto T4 | Microsoft Docs
+title: Referência de API para modelos de texto T4 | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-modeling
@@ -9,22 +9,22 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07881d247034133c83e64b63f82e5c9e25b42c2e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 00be275fe36fd453fd3bd1f6bcf5c0911f7bb380
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68159064"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871888"
 ---
 # <a name="api-reference-for-t4-text-templates"></a>Referência de API para modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-A API de modelagem de texto permite que você invoque e personalize a transformação de [modelos de texto](../modeling/code-generation-and-t4-text-templates.md).  
-  
-## <a name="namespaces"></a>Namespaces  
-  
-|Namespace|Finalidade|  
-|---------------|-------------|  
-|<xref:Microsoft.VisualStudio.TextTemplating>|Contém classes para a funcionalidade de transformação de modelo de texto. O mecanismo de transformação do modelo de texto é integrado ao Visual Studio e transforma arquivos de modelo de texto em arquivos de saída de texto gerado.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.Modeling>|Fornece o texto de recursos de transformação relacionados a modelos UML e linguagens específicas de domínio, como o acesso ao [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus.|  
-|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fornece acesso ao serviço de modelagem de texto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|
+A API de modelagem de texto permite invocar e personalizar a transformação de [modelos de texto](../modeling/code-generation-and-t4-text-templates.md).
+
+## <a name="namespaces"></a>Namespaces
+
+|Namespace|Finalidade|
+|---------------|-------------|
+|<xref:Microsoft.VisualStudio.TextTemplating>|Contém classes para a funcionalidade de transformação de modelo de texto. O mecanismo de transformação de modelo de texto é integrado ao Visual Studio e transforma arquivos de modelo de texto em arquivos de saída de texto gerados.|
+|[Mode](/previous-versions/ee844312(v=vs.140))|Fornece recursos de transformação de texto relacionados a modelos UML e linguagens específicas de domínio, como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o acesso ao ModelBus.|
+|<xref:Microsoft.VisualStudio.TextTemplating.VSHost>|Fornece acesso ao serviço de modelagem de texto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]no.|
