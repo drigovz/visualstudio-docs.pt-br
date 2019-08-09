@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9e2cc2f08032d9281e3c86990201315fb8bf3937
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 54a050fc6d9d585be2613a27ca177dc77af61121
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825536"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871628"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar automação de interface do usuário para testar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -168,7 +168,7 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
 - ![Prerequsite](../test/media/prereq.png "Prereq") É possível adicionar um método de limpeza de teste, identificado por um atributo [TestCleanup], que executa o código no fim de cada método de teste. Por exemplo, o método para fechar o aplicativo poderia ser chamado do método TestCleanup.
 
 ### <a name="VerifyingCodeUsingCUITGenerateAssertions"></a> Validando as propriedades de controles de interface do usuário
- É possível usar o **Construtor de Teste de IU Codificado** para adicionar um controle de interface do usuário ao <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para o teste ou gerar código para um método de validação que usa uma asserção para um controle de interface do usuário.
+ Você pode usar o **Construtor de teste de IU codificado** para adicionar um controle de interface do usuário ao [UIMap](/previous-versions/dd580454(v=vs.140)) para seu teste, ou para gerar código para um método de validação que usa uma asserção para um controle de interface do usuário.
 
  Para gerar asserções para os controles de interface do usuário, escolha a ferramenta **Adicionar Asserções** no Construtor de Teste de IU Codificado e arraste-a até o controle no aplicativo em teste que você deseja verificar se está correto. Quando a caixa contornar o controle, solte o mouse. O código da classe de controle é criado imediatamente no arquivo `UIMap.Designer.cs`.
 
@@ -220,8 +220,8 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
   }
   ```
 
-  *O controle que desejo selecionar perde o foco e desaparece quando tento selecionar a ferramenta Adicionar Asserções no Construtor de Teste de IU Codificado. Como faço para selecionar o controle? * 
-   **Selecionando um controle oculto usando o teclado**
+  *O controle que desejo selecionar perde o foco e desaparece quando tento selecionar a ferramenta Adicionar Asserções no Construtor de Teste de IU Codificado. Como fazer selecionar o controle? Selecionando **um controle oculto usando o teclado** * 
+  
 
   Às vezes, ao [adicionar controles e validar suas propriedades](#VerifyingCodeUsingCUITGenerateAssertions), será necessário usar o teclado. Por exemplo, quando você tenta registrar um teste de IU codificado que usa um controle de menu de contexto, a lista de itens de menu no controle perderá o foco e desaparecerá quando você tentar selecionar a ferramenta Adicionar Asserções no Construtor de Teste de IU Codificado. Isso é demonstrado na ilustração a seguir, em que o menu de contexto no Internet Explorer perderá o foco e desaparecerá se você tentar selecioná-lo usando a ferramenta Adicionar Asserções.
 
@@ -465,14 +465,14 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 - [Estendendo testes de IU codificados e gravações da ação para dar suporte ao Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)
 
-  Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter orientação adicional, consulte [testando para entrega contínua com Visual Studio 2012 – capítulo 5: Automatizar testes do sistema](http://go.microsoft.com/fwlink/?LinkID=255196). Para obter mais informações sobre testes manuais, consulte [&#91;retired&#93; Criar Casos de Testes Manuais por meio do Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obter mais informações sobre testes de sistemas automatizados, consulte [Criar Testes Automatizados por meio do Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
+  Os testes de IU codificados costumam ser usados para automatizar testes manuais. Para obter diretrizes adicionais, [Confira teste para entrega contínua com o Visual Studio 2012 – capítulo 5: Automatizando testes](http://go.microsoft.com/fwlink/?LinkID=255196)do sistema. Para obter mais informações sobre testes manuais, consulte [&#91;retired&#93; Criar Casos de Testes Manuais por meio do Microsoft Test Manager](https://msdn.microsoft.com/library/9989e184-c8e4-444b-998d-a1a5ec94461e). Para obter mais informações sobre testes de sistemas automatizados, consulte [Criar Testes Automatizados por meio do Microsoft Test Manager](https://msdn.microsoft.com/7b5075ee-ddfe-411d-b1d4-94283550a5d0).
 
 ## <a name="external-resources"></a>Recursos externos
 
 ### <a name="guidance"></a>Diretrizes
-- [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)
+- [Teste para entrega contínua com o Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)
 
-- [Testando para entrega contínua com Visual Studio 2012 – capítulo 5: Automatizando testes do sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
+- [Teste para entrega contínua com o Visual Studio 2012 – capítulo 5: Automatizando testes do sistema](http://go.microsoft.com/fwlink/?LinkID=255196)
 
 ### <a name="faq"></a>Perguntas Frequentes
 - [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)
@@ -484,7 +484,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
 
 ## <a name="see-also"></a>Consulte também
 
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
+- [UIMap](/previous-versions/dd580454(v=vs.140))
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Melhorar a qualidade do código](https://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)
 - [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e8d00bf3055d1706b459baaf48d1b8e5dca3f282
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62856388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870495"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 
-Um modelo de texto T4 do Visual Studio normalmente começa com um `template` diretiva, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
+Um modelo de texto T4 do Visual Studio geralmente começa `template` com uma diretiva, que especifica como o modelo deve ser processado. Não deve haver mais de uma diretiva de modelo em um modelo de texto e nos arquivos que ele contenha.
 
-Para obter uma visão geral da gravação de modelos de texto, consulte [gravando um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
+Para obter uma visão geral de como escrever modelos de texto, consulte [escrevendo um modelo de texto T4](../modeling/writing-a-t4-text-template.md).
 
 ## <a name="using-the-template-directive"></a>Usando a diretiva de modelo
 
@@ -72,9 +72,9 @@ Valores válidos:
 
 Se o atributo `debug` for `true`, o arquivo de código intermediário conterá informações que permitem que o depurador identifique mais especificamente a posição em seu modelo onde ocorreu uma quebra ou uma exceção.
 
-Para modelos de tempo de design, o arquivo de código intermediário será gravado para seus **% TEMP %** directory.
+Para modelos de tempo de design, o arquivo de código intermediário será gravado no diretório **% Temp%** .
 
-Para executar um modelo de tempo de design no depurador, salve o modelo de texto, em seguida, abra o menu de atalho do modelo de texto no Gerenciador de soluções e escolha **depurar modelo T4**.
+Para executar um modelo de tempo de design no depurador, salve o modelo de texto, abra o menu de atalho do modelo de texto em Gerenciador de Soluções e escolha **depurar modelo T4**.
 
 ## <a name="hostspecific-attribute"></a>Atributo hostspecific
 
@@ -92,11 +92,11 @@ Valores válidos:
 
 `trueFromBase`
 
-Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.
+Se você definir o valor desse atributo como `true`, uma propriedade chamada `Host` será adicionado à classe gerada pelo modelo de texto. A propriedade é uma referência ao host do mecanismo de transformação e é declarada como [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)). Se você definiu um host personalizado, pode convertê-lo no tipo de host personalizado.
 
-Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. É aplicável às [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Como o tipo dessa propriedade depende do tipo de host, ele só é útil se você estiver gravando um modelo de texto que funciona somente com um host específico. Ele é aplicável a [modelos de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md), mas não [a modelos de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Quando `hostspecific` está `true` e você estiver usando o Visual Studio, você pode converter `this.Host` em IServiceProvider para acessar recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
+Quando `hostspecific` `this.Host` é `true` e você está usando o Visual Studio, você pode converter em IServiceProvider para acessar os recursos do Visual Studio. Você também pode usar `Host.ResolvePath(filename)` para obter o caminho absoluto de um arquivo no projeto. Por exemplo:
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -132,7 +132,7 @@ Valores válidos:
 
 `VB`
 
-O `language` atributo especifica a linguagem ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) a ser usado para o código-fonte em blocos de instrução e expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
+O `language` atributo especifica o idioma ([!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]) a ser usado para o código-fonte nos blocos de instrução e de expressão. O arquivo de código intermediário do qual o resultado é gerado usará essa linguagem. Essa linguagem não está relacionada à linguagem que seu modelo gera, que pode ser qualquer tipo de texto.
 
 Por exemplo:
 
@@ -156,7 +156,7 @@ Você pode especificar se o código do programa de seu modelo pode herdar de out
 
 ### <a name="inheritance-in-a-run-time-preprocessed-text-template"></a>Herança em um modelo de texto de tempo de execução (pré-processado)
 
-Você pode usar a herança entre modelos do texto de tempo de execução para criar um modelo básico que tenha muitas variantes derivadas. Modelos de tempo de execução são aqueles que têm o **Custom Tool** propriedade definida como **TextTemplatingFilePreprocessor**. Um modelo de tempo de execução gerencia o código que você pode chamar em seu aplicativo criar o texto definido no modelo. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Você pode usar a herança entre modelos do texto de tempo de execução para criar um modelo básico que tenha muitas variantes derivadas. Os modelos de tempo de execução são aqueles que têm a propriedade de **ferramenta personalizada** definida como **TextTemplatingFilePreprocessor**. Um modelo de tempo de execução gerencia o código que você pode chamar em seu aplicativo criar o texto definido no modelo. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 Se você não especificar um atributo `inherits`, uma classe base e uma classe derivada serão geradas a partir de seu modelo de texto. Quando você especificar um atributo `inherits`, somente a classe derivada será gerada. Você pode escrever uma classe base manualmente, mas deve fornecer os métodos usados pela classe derivada.
 
@@ -222,7 +222,7 @@ A common central text.
 This is the common footer.
 ```
 
-Você pode criar a base e as classes derivadas em projetos diferentes. Lembre-se de adicionar o assembly ou projeto base às referências do projeto derivado.
+Você pode criar a base e as classes derivadas em projetos diferentes. Lembre-se de adicionar o projeto base ou assembly às referências do projeto derivado.
 
 Você também pode usar uma classe escrita manualmente comum como a classe base. A classe base deve fornecer os métodos usados pela classe derivada.
 
@@ -231,13 +231,13 @@ Você também pode usar uma classe escrita manualmente comum como a classe base.
 
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herança em um modelo de texto de tempo de design
 
-Um modelo de texto de tempo de design é um arquivo para o qual **Custom Tool** é definido como **TextTemplatingFileGenerator**. O modelo gera um arquivo de saída de código ou texto, que faz parte do projeto do Visual Studio. Para gerar o arquivo de saída, primeiro o modelo é convertido em um arquivo de código de programa intermediário, que você normalmente não vê. O atributo `inherits` especifica a classe base para esse código intermediário.
+Um modelo de texto de tempo de design é um arquivo para o qual a **ferramenta personalizada** está definida como **TextTemplatingFileGenerator**. O modelo gera um arquivo de saída de código ou texto, que forma uma parte do seu projeto do Visual Studio. Para gerar o arquivo de saída, primeiro o modelo é convertido em um arquivo de código de programa intermediário, que você normalmente não vê. O atributo `inherits` especifica a classe base para esse código intermediário.
 
 Para um modelo de texto de tempo de design, você pode especificar qualquer classe base que é derivada de <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation?displayProperty=fullName>. Use a diretiva `<#@assembly#>` para carregar o assembly ou projeto que contém a classe base.
 
-Para obter mais informações, consulte ["Herança em modelos de texto" no Blog de Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
+Para obter mais informações, consulte ["herança em modelos de texto" no blog do Gareth Jones](http://go.microsoft.com/fwlink/?LinkId=208373).
 
-## <a name="linepragmas-attribute"></a>Atributo LinePragmas
+## <a name="linepragmas-attribute"></a>atributo linePragmas
 
 Exemplo:
 
@@ -251,9 +251,9 @@ Valores válidos:
 
 Definir esse atributo como false remove as marcas que identificam os números de linha no código gerado. Isso significa que o compilador relatará todos os erros usando os números de linha do código gerado. Isso fornece mais opções de depuração, pois você pode escolher depurar o modelo de texto ou o código gerado.
 
-Esse atributo também pode ajudar se você descobrir que os nomes de arquivo absolutos em pragmas estão causando Ofuscando mesclagens no controle do código fonte.
+Esse atributo também pode ajudar se você estiver encontrando nomes de absolutos em pragmas, causando mesclagens de distração no controle do código-fonte.
 
-## <a name="visibility-attribute"></a>Atributo Visibility
+## <a name="visibility-attribute"></a>atributo de visibilidade
 
 Exemplo:
 

@@ -7,14 +7,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68482f9dcb88bd87c65f749c821f4afe92089a51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c0c1afe7737e17d0f44f8cd1e59b0aa844dfe8fe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62810666"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870537"
 ---
-# <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrando modelos por meio do Visual Studio Modelbus
+# <a name="integrate-models-by-using-visual-studio-modelbus"></a>Integrar modelos usando o Visual Studio ModelBus
 
 Visual Studio ModelBus fornece um método para criar vínculos entre modelos e de outras ferramentas em modelos. Por exemplo, você pode vincular modelos de linguagem específica do domínio (DSL) e modelos UML. É possível criar um conjunto integrado de DSLs.
 
@@ -46,7 +46,7 @@ Para obter informações adicionais e código de exemplo, consulte:
 
 5. Se desejar acessar a DSL a partir de um modelo de texto, é necessário modificar o AdapterManager.tt no novo projeto. Ignore essa etapa se desejar acessar a DSL a partir de outro código como comandos e manipuladores de eventos. Para obter mais informações, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).
 
-   1. Altere a classe base do AdapterManagerBase para <xref:Microsoft.VisualStudio.TextTemplating.Modeling.VsTextTemplatingModelingAdapterManager>.
+   1. Altere a classe base de AdapterManagerBase para [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140)).
 
    2. Próximo ao final do arquivo, insira esse atributo adicional em frente à classe AdapterManager:
 

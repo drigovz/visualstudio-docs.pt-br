@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bbf75bfe218945453d25440c868a95675168631
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 93a62b6fe5493b78a3c18c1adb87761cdb894670
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65705893"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68871554"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 > `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementos Usados Para Teste Controlado por Dados
- Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [How To: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md) e [passo a passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).
+ Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, [consulte Como: Criar um teste](../test/how-to-create-a-data-driven-unit-test.md) de unidade orientado por [dados e passo a passo: Usando um arquivo de configuração para definir uma fonte](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md)de dados.
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataAccessMethod>
 
@@ -106,7 +106,7 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 
 ## <a name="test-configuration-classes"></a>Classes de Configuração de Teste
 
-- <xref:Microsoft.TeamFoundation.TestManagement.Client.ObjectTypes>
+- [ObjectTypes](/previous-versions/visualstudio/visual-studio-2013/dd987428(v=vs.120))
 
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestConfigurationSection>
 
