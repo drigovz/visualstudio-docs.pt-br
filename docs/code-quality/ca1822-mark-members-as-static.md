@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e5ac9aff8741654ee5799724feb09c53f588dafb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796660"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921382"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar membros como estáticos
 
@@ -28,23 +28,23 @@ ms.locfileid: "62796660"
 |NomeDoTipo|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer. Não separável - se você alterar o membro a um membro de instância com o `this` palavra-chave.<br /><br /> Quebrando - se você alterar o membro de um membro de instância para um membro estático e é visível fora do assembly.|
+|Alteração Significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita. Não separável – se você simplesmente alterar o membro para um membro de instância com `this` a palavra-chave.<br /><br /> Quebrando – se você alterar o membro de um membro de instância para um membro estático e ele estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
- Um membro que não acessa os dados de instância não está marcado como estático (compartilhado no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Um membro que não acessa dados de instância não está marcado como estático (compartilhado em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="rule-description"></a>Descrição da regra
- Os membros que não acessam dados da instância ou os métodos da instância de chamada podem ser marcados como estáticos (Shared no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Depois que você marcar os métodos como estáticos, o compilador emitirá sites de chamada não virtuais para esses membros. Emissão de sites de chamada não virtuais impedirá que uma verificação em tempo de execução para cada chamada que certifica-se de que o ponteiro do objeto atual não for nulo. Isso pode alcançar um ganho de desempenho mensurável para código sensível ao desempenho. Em alguns casos, a falha ao acessar a instância do objeto atual representa um problema de exatidão.
+Os membros que não acessam dados da instância ou os métodos da instância de chamada podem ser marcados como estáticos (Shared no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]). Depois que você marcar os métodos como estáticos, o compilador emitirá sites de chamada não virtuais para esses membros. A emissão de sites de chamada não virtuais impedirá uma verificação no tempo de execução para cada chamada, o que garante que o ponteiro do objeto atual seja não nulo. Isso pode obter um alto desempenho mensurável para o código sensível ao desempenho. Em alguns casos, a falha ao acessar a instância do objeto atual representa um problema de correção.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Marque o membro como estático (ou compartilhado no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ou use 'this' / 'Me' no método body, se apropriado.
+Marque o membro como estático (ou compartilhado [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) ou use ' this '/' me ' no corpo do método, se apropriado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra para o código fornecido anteriormente para o qual a correção seria uma alteração significativa.
+É seguro suprimir um aviso dessa regra para o código fornecido anteriormente para o qual a correção seria uma alteração significativa.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1811: Evitar código privado não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
+[CA1811: Evitar código particular não chamado](../code-quality/ca1811-avoid-uncalled-private-code.md)
 
- [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Evitar classes internas não instanciadas](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Remover locais não utilizados](../code-quality/ca1804-remove-unused-locals.md)

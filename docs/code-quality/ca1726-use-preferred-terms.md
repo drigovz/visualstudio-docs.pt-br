@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 469025e5856f284f4d8887b351865a0304e4d35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e4e068fee014d767b7afcdf8183ac6611b299f36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797152"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921582"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726: Usar termos preferenciais
 
@@ -27,15 +27,15 @@ ms.locfileid: "62797152"
 |NomeDoTipo|UsePreferredTerms|
 |CheckId|CA1726|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Interrupção - quando acionado em assemblies<br /><br /> Separação de não - quando disparado em parâmetros de tipo|
+|Alteração Significativa|Quebra-quando acionado em assemblies<br /><br /> Não separável-quando acionado em parâmetros de tipo|
 
 ## <a name="cause"></a>Causa
 
-O nome de um identificador visível externamente inclui um termo para o qual existe um termo preferido, alternativo. Ou, o nome inclui o termo sinalizador ou sinalizadores.
+O nome de um identificador visível externamente inclui um termo para o qual existe um termo preferido, alternativo. Ou, o nome inclui o sinalizador de termo ou sinalizadores.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Esta regra analisa um identificador em tokens. Cada token único e cada combinação contígua de token dupla é comparado com os termos que são criados para a regra e na seção preterido de dicionários personalizados. A tabela a seguir mostra os termos que são incorporados a regra e suas alternativas preferenciais.
+Essa regra analisa um identificador em tokens. Cada único token e uma combinação de token duplo contígua é comparada com os termos criados na regra e na seção preterida de quaisquer dicionários personalizados. A tabela a seguir mostra os termos que são criados na regra e suas alternativas preferenciais.
 
 |Termo obsoleto|Termo preferencial|
 |-------------------|--------------------|
@@ -65,10 +65,10 @@ Esta regra analisa um identificador em tokens. Cada token único e cada combina�
 |`Writeable`|`Writable`|
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, substitua o termo com o termo preferencial de alternativo.
+Para corrigir uma violação dessa regra, substitua o termo pelo termo alternativo preferido.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Suprima um aviso nessa regra somente se o nome do identificador é intencional e se relacionam especificamente a termo original em vez do termo preferencial.
+Suprimir um aviso dessa regra somente se o nome do identificador for intencional e estiver relacionado especificamente ao termo original em vez do termo preferido.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [Avisos de Nomenclatura](../code-quality/naming-warnings.md)
+[Avisos de Nomenclatura](../code-quality/naming-warnings.md)

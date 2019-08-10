@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47faa5e496585940f61f94bb6dfb0b8d9d70f752
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797510"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922786"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Definir localidade para tipos de dados
 
@@ -27,25 +27,25 @@ ms.locfileid: "62797510"
 |-|-|
 |NomeDoTipo|SetLocaleForDataTypes|
 |CheckId|CA1306|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um método ou construtor criado um ou mais <xref:System.Data.DataTable?displayProperty=fullName> ou <xref:System.Data.DataSet?displayProperty=fullName> instâncias e não definir explicitamente a propriedade de localidade (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
+Um método ou Construtor criou uma ou mais <xref:System.Data.DataTable?displayProperty=fullName> instâncias <xref:System.Data.DataSet?displayProperty=fullName> ou e não definiu explicitamente a propriedade locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).
 
 ## <a name="rule-description"></a>Descrição da regra
- A localidade determina os elementos de apresentação específicos da cultura para dados, como a formatação usada para valores numéricos, símbolos de moeda e ordem de classificação. Quando você cria um <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>, você deve definir explicitamente a localidade. Por padrão, a localidade para esses tipos é a cultura atual. Para dados que são armazenados em um arquivo ou banco de dados e são compartilhados globalmente, a localidade normalmente deve ser definida para a cultura invariável (<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>). Quando dados são compartilhados entre culturas, usando a localidade padrão pode causar o conteúdo do <xref:System.Data.DataTable> ou <xref:System.Data.DataSet> ser apresentada ou interpretados incorretamente.
+A localidade determina elementos de apresentação específicos da cultura para dados, como formatação usada para valores numéricos, símbolos de moeda e ordem de classificação. Ao criar um <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>, você deve definir a localidade explicitamente. Por padrão, a localidade para esses tipos é a cultura atual. Para dados que são armazenados em um arquivo ou banco de dado e são compartilhados globalmente, a localidade normalmente deve ser definida como a cultura<xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName>invariável (). Quando os dados são compartilhados entre culturas, o uso da localidade padrão pode fazer com que <xref:System.Data.DataTable> o <xref:System.Data.DataSet> conteúdo do ou seja apresentado ou interpretado incorretamente.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, definir explicitamente a localidade para o <xref:System.Data.DataTable> ou <xref:System.Data.DataSet>.
+Para corrigir uma violação dessa regra, defina explicitamente a localidade para o <xref:System.Data.DataTable> ou. <xref:System.Data.DataSet>
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, quando o aplicativo ou biblioteca é para um público limitado de local, os dados não são compartilhados ou a configuração padrão produz o comportamento desejado em todos os cenários com suporte.
+É seguro suprimir um aviso dessa regra quando a biblioteca ou o aplicativo é para um público local limitado, os dados não são compartilhados ou a configuração padrão gera o comportamento desejado em todos os cenários com suporte.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir cria dois <xref:System.Data.DataTable> instâncias.
+O exemplo a seguir cria <xref:System.Data.DataTable> duas instâncias.
 
- [!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
+[!code-csharp[FxCop.Globalization.DataTable#1](../code-quality/codesnippet/CSharp/ca1306-set-locale-for-data-types_1.cs)]
 
 ## <a name="see-also"></a>Consulte também
 

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d3dc26964a62c952b9c8d18c710e6163bf8ab08
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e2c7e7efe348526661b9de74b3631e6795608b99
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796911"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921342"
 ---
 # <a name="ca1814-prefer-jagged-arrays-over-multidimensional"></a>CA1814: Preferir matrizes denteadas a matrizes multidimensionais
 
@@ -34,19 +34,19 @@ ms.locfileid: "62796911"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um membro é declarado como uma matriz multidimensional.
+Um membro é declarado como uma matriz multidimensional.
 
 ## <a name="rule-description"></a>Descrição da regra
- Uma matriz denteada é uma matriz cujos elementos são matrizes. As matrizes que constituem os elementos podem ter tamanhos diferentes, o que leva a menos espaço desperdiçado para alguns conjuntos de dados.
+Uma matriz denteada é uma matriz cujos elementos são matrizes. As matrizes que constituem os elementos podem ter tamanhos diferentes, o que leva a menos espaço desperdiçado para alguns conjuntos de dados.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, altere a matriz multidimensional para uma matriz denteada.
+Para corrigir uma violação dessa regra, altere a matriz multidimensional para uma matriz denteada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Suprima um aviso nessa regra, se a matriz multidimensional não perde espaço.
+Suprimir um aviso dessa regra se a matriz multidimensional não perder espaço.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra declarações de matrizes denteadas e multidimensionais.
+O exemplo a seguir mostra declarações para matrizes denteadas e multidimensionais.
 
- [!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
- [!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]
+[!code-vb[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/VisualBasic/ca1814-prefer-jagged-arrays-over-multidimensional_1.vb)]
+[!code-csharp[FxCop.Performance.JaggedArrays#1](../code-quality/codesnippet/CSharp/ca1814-prefer-jagged-arrays-over-multidimensional_1.cs)]

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e9491a608087565e84274d47c601b0629737d2f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8422427997db291aa24bc8a8bacfdc59abe35998
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779344"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923071"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir acessadores para argumentos de atributo
 
@@ -31,34 +31,34 @@ ms.locfileid: "62779344"
 |NomeDoTipo|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Em seu construtor, um atributo define argumentos que não têm propriedades correspondentes.
+Em seu construtor, um atributo define argumentos que não têm propriedades correspondentes.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os atributos podem definir argumentos obrigatórios que devem ser especificados quando você aplica o atributo a um destino. Eles também são conhecidos como argumentos posicionais porque são fornecidos a construtores de atributos como parâmetros posicionais. Para cada argumento obrigatório, o atributo também deve fornecer uma propriedade somente leitura correspondente de forma que o valor do argumento possa ser recuperado no tempo de execução. Esta regra verifica que, para cada parâmetro de construtor, você definiu a propriedade correspondente.
+Os atributos podem definir argumentos obrigatórios que devem ser especificados quando você aplica o atributo a um destino. Eles também são conhecidos como argumentos posicionais porque são fornecidos a construtores de atributos como parâmetros posicionais. Para cada argumento obrigatório, o atributo também deve fornecer uma propriedade somente leitura correspondente de forma que o valor do argumento possa ser recuperado no tempo de execução. Essa regra verifica se, para cada parâmetro de construtor, você definiu a propriedade correspondente.
 
- Os atributos também podem definir argumentos opcionais, que também são conhecidos como argumentos nomeados. Esses argumentos são fornecidos a construtores de atributo por nome e devem ter uma propriedade de leitura/gravação correspondente.
+Os atributos também podem definir argumentos opcionais, que também são conhecidos como argumentos nomeados. Esses argumentos são fornecidos a construtores de atributo por nome e devem ter uma propriedade de leitura/gravação correspondente.
 
- Para argumentos obrigatórios e opcionais, as propriedades correspondentes e os parâmetros do construtor devem usar o mesmo nome, mas diferenciam maiusculas de minúsculas. Usem o casing Pascal propriedades maiusculas/minúsculas e maiusculas e minúsculas de concatenação de uso de parâmetros.
+Para argumentos obrigatórios e opcionais, as propriedades correspondentes e os parâmetros do construtor devem usar o mesmo nome, mas com maiúsculas e minúsculas diferentes. As propriedades usam a capitalização de Pascal e os parâmetros usam o camel case.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, adicione uma propriedade somente leitura para cada parâmetro de construtor que não tenha uma.
+Para corrigir uma violação dessa regra, adicione uma propriedade somente leitura para cada parâmetro de construtor que não tenha um.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Suprima um aviso nessa regra, se você não quiser que o valor do argumento obrigatório a ser recuperável.
+Suprimir um aviso dessa regra se você não quiser que o valor do argumento obrigatório seja recuperável.
 
 ## <a name="custom-attributes-example"></a>Exemplo de atributos personalizados
 
-O exemplo a seguir mostra dois atributos que definem um parâmetro (posicional) obrigatório. A primeira implementação do atributo está definida incorretamente. A implementação do segundo está correta.
+O exemplo a seguir mostra dois atributos que definem um parâmetro obrigatório (posicional). A primeira implementação do atributo está definida incorretamente. A segunda implementação está correta.
 
 [!code-csharp[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_1.cs)]
 [!code-vb[FxCop.Design.AttributeAccessors#1](../code-quality/codesnippet/VisualBasic/ca1019-define-accessors-for-attribute-arguments_1.vb)]
 
 ## <a name="positional-and-named-arguments"></a>Argumentos posicionais e nomeados
 
-Argumentos posicionais e nomeados deixar claro para os consumidores da sua biblioteca quais argumentos são obrigatórios para o atributo e quais argumentos são opcionais.
+Os argumentos posicionais e nomeados tornam claro para os consumidores de sua biblioteca quais argumentos são obrigatórios para o atributo e quais argumentos são opcionais.
 
 O exemplo a seguir mostra uma implementação de um atributo que tem argumentos posicionais e nomeados:
 
@@ -69,7 +69,7 @@ O exemplo a seguir mostra como aplicar o atributo personalizado a duas proprieda
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1813: Evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitar atributos sem lacre](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Consulte também
- [Atributos](/dotnet/standard/design-guidelines/attributes)
+[Atributos](/dotnet/standard/design-guidelines/attributes)

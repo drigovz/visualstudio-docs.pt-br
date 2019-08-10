@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e823a58d7a2be45c43305320bd32175de7a3fad6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f734d0cf28a5aec28ebbf635dd384efe176b1774
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545388"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921314"
 ---
 # <a name="ca1900-value-type-fields-should-be-portable"></a>CA1900: Campos de tipo de valor devem ser portáteis
 
@@ -28,16 +28,16 @@ ms.locfileid: "62545388"
 |NomeDoTipo|ValueTypeFieldsShouldBePortable|
 |CheckId|CA1900|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebrando - se o campo pode ser visto de fora do assembly.<br /><br /> Sem quebra - se o campo não está visível fora do assembly.|
+|Alteração Significativa|Quebra-se o campo pode ser visto fora do assembly.<br /><br /> Não separável – se o campo não estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
- Esta regra verifica que estruturas que são declaradas com layout explícito serão corretamente alinhados quando passa por marshaling para código não gerenciado em sistemas operacionais de 64 bits. IA-64 não permite que os acessos à memória desalinhada e o processo falhará se essa violação não for corrigida.
+Essa regra verifica se as estruturas declaradas com layout explícito serão alinhadas corretamente quando marshaled para código não gerenciado em sistemas operacionais de 64 bits. IA-64 não permite acessos de memória não alinhados e o processo falhará se essa violação não for corrigida.
 
 ## <a name="rule-description"></a>Descrição da regra
- Estruturas com layout explícito contendo campos desalinhados podem causar quedas em sistemas operacionais de 64 bits.
+Estruturas com layout explícito que contém campos desalinhados causam falhas em sistemas operacionais de 64 bits.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Todos os campos que são menores do que 8 bytes devem ter os deslocamentos são um múltiplo de seu tamanho e os campos que são 8 bytes ou mais devem ter os deslocamentos são um múltiplo de 8. Outra solução é usar `LayoutKind.Sequential` em vez de `LayoutKind.Explicit`, se razoável.
+Todos os campos menores que 8 bytes devem ter deslocamentos que são múltiplos de seu tamanho e os campos que têm 8 bytes ou mais devem ter deslocamentos que sejam múltiplos de 8. Outra solução é usar `LayoutKind.Sequential` em vez de `LayoutKind.Explicit`, se for razoável.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Esse aviso deve ser suprimido somente se ele ocorrer no erro.
+Esse aviso deve ser suprimido somente se ocorrer um erro.

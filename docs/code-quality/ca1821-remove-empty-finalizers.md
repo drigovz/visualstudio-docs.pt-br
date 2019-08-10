@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16bb2786c4c7b0ca94fe60a9577e4b462d663bfc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9c8c4d4ca04c7a9a21cd1e80e4dc06e8d5a92c2f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545707"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921367"
 ---
 # <a name="ca1821-remove-empty-finalizers"></a>CA1821: Remover finalizadores vazios
 
@@ -27,21 +27,21 @@ ms.locfileid: "62545707"
 |NomeDoTipo|RemoveEmptyFinalizers|
 |CheckId|CA1821|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo implementa um finalizador que está vazia, chama apenas o finalizador do tipo base ou chama somente emitidos condicionalmente métodos.
+Um tipo implementa um finalizador que está vazio, chama apenas o finalizador de tipo base ou chama apenas métodos emitidos condicionalmente.
 
 ## <a name="rule-description"></a>Descrição da regra
- Sempre que possível, evite finalizadores por conta da sobrecarga adicional no desempenho envolvida no acompanhamento do tempo de vida do objeto. O coletor de lixo executará o finalizador antes que ele coleta o objeto. Isso significa que as duas coleções será necessárias para coletar o objeto. Um finalizador vazio incorre essa sobrecarga agregada sem nenhum benefício.
+Sempre que possível, evite finalizadores por conta da sobrecarga adicional no desempenho envolvida no acompanhamento do tempo de vida do objeto. O coletor de lixo executará o finalizador antes de coletar o objeto. Isso significa que duas coleções serão necessárias para coletar o objeto. Um finalizador vazio incorre nessa sobrecarga adicional sem nenhum benefício.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Remova o finalizador vazio. Se um finalizador é necessário para a depuração, coloque o finalizador todo `#if DEBUG / #endif` diretivas.
+Remova o finalizador vazio. Se um finalizador for necessário para a depuração, coloque todo o finalizador `#if DEBUG / #endif` em diretivas.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima uma mensagem a partir dessa regra. Falha ao suprimir a finalização reduz o desempenho e não oferece nenhum benefício.
+Não suprimir uma mensagem dessa regra. Falha ao suprimir a finalização diminui o desempenho e não fornece nenhum benefício.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um finalizador vazio que deve ser removido, um finalizador que deve ser colocado entre `#if DEBUG / #endif` diretivas e um finalizador que usa o `#if DEBUG / #endif` diretivas corretamente.
+O exemplo a seguir mostra um finalizador vazio que deve ser removido, um finalizador que deve ser colocado `#if DEBUG / #endif` entre diretivas e um finalizador que usa as `#if DEBUG / #endif` diretivas corretamente.
 
- [!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]
+[!code-csharp[FxCop.Performance.RemoveEmptyFinalizers#1](../code-quality/codesnippet/CSharp/ca1821-remove-empty-finalizers_1.cs)]

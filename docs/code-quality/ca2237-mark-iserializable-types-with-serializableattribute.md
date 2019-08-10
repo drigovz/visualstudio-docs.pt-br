@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ccc7819de8e79cae86a60fd015e6b8268c2456c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541643"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920106"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Marcar tipos ISerializable com SerializableAttribute
 
@@ -31,37 +31,37 @@ ms.locfileid: "62541643"
 |NomeDoTipo|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo visível externamente implementa o <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface e o tipo não está marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. A regra ignora os tipos derivados cujo tipo base não é serializável.
+Um tipo visível externamente implementa a <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface e o tipo não é marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. A regra ignora tipos derivados cujo tipo base não é serializável.
 
 ## <a name="rule-description"></a>Descrição da regra
- Para serem reconhecidos pelo common language runtime como serializáveis, os tipos devem ser marcados com o <xref:System.SerializableAttribute> mesmo se o tipo usa uma rotina de serialização personalizada por meio da implementação do atributo a <xref:System.Runtime.Serialization.ISerializable> interface.
+Para ser reconhecido pelo Common Language Runtime como serializável, os tipos devem ser marcados com <xref:System.SerializableAttribute> o atributo, mesmo que o tipo use uma rotina <xref:System.Runtime.Serialization.ISerializable> de serialização personalizada por meio da implementação da interface.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, aplicar o <xref:System.SerializableAttribute> para o tipo de atributo.
+Para corrigir uma violação dessa regra, aplique o <xref:System.SerializableAttribute> atributo ao tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra para classes de exceção, porque eles devem ser serializáveis para funcionar corretamente entre domínios de aplicativo.
+Não suprimir um aviso desta regra para classes de exceção porque elas devem ser serializáveis para funcionar corretamente entre domínios de aplicativo.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que viola a regra. Remova o <xref:System.SerializableAttribute> linha satisfazer a regra de atributo.
+O exemplo a seguir mostra um tipo que viola a regra. Remova a marca <xref:System.SerializableAttribute> de comentário da linha de atributo para atender à regra.
 
- [!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
- [!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]
+[!code-vb[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/VisualBasic/ca2237-mark-iserializable-types-with-serializableattribute_1.vb)]
+[!code-csharp[FxCop.Usage.MarkSerializable#1](../code-quality/codesnippet/CSharp/ca2237-mark-iserializable-types-with-serializableattribute_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2236: Chamar métodos da classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
+[CA2236: Chamar métodos de classe base em tipos ISerializable](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)
 
- [CA2240: Implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)
+[CA2240: Implementar ISerializable corretamente](../code-quality/ca2240-implement-iserializable-correctly.md)
 
- [CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)
 
- [CA2238: Implementar métodos de serialização corretamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
+[CA2238: Implementar métodos de serialização corretamente](../code-quality/ca2238-implement-serialization-methods-correctly.md)
 
- [CA2235: Marcar todos os campos não serializáveis](../code-quality/ca2235-mark-all-non-serializable-fields.md)
+[CA2235: Marcar todos os campos não serializáveis](../code-quality/ca2235-mark-all-non-serializable-fields.md)
 
- [CA2239: Fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
+[CA2239: Fornecer métodos de desserialização para campos opcionais](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)
 
- [CA2120: Construtores de serialização segura](../code-quality/ca2120-secure-serialization-constructors.md)
+[CA2120: Construtores de serialização segura](../code-quality/ca2120-secure-serialization-constructors.md)

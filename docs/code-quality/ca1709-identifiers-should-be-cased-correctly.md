@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f692218cd051338a6bd4e83a07d985bb52f907e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546229"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921773"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identificadores devem ter maiúsculas e minúsculas corretas
 
@@ -28,37 +28,42 @@ ms.locfileid: "62546229"
 |NomeDoTipo|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebrando - quando gerado em assemblies, namespaces, tipos, membros e parâmetros.<br /><br /> Sem quebra - quando disparado em parâmetros de tipo genérico.|
+|Alteração Significativa|Quebra-quando gerado em assemblies, namespaces, tipos, membros e parâmetros.<br /><br /> Não separável-quando acionado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
- O nome de um identificador não é maiusculas e minúsculas corretas.
 
- \- ou -
+O nome de um identificador não está em maiúsculas corretamente.
 
- O nome de um identificador contém um acrônimo de duas letras e a segunda letra é minúscula.
+\- ou -
 
- \- ou -
+O nome de um identificador contém um acrônimo de duas letras e a segunda letra é minúscula.
 
- O nome de um identificador contém um acrônimo de três ou mais letras maiusculas.
+\- ou -
+
+O nome de um identificador contém um acrônimo de três ou mais letras maiúsculas.
 
 ## <a name="rule-description"></a>Descrição da regra
- Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Essa consistência reduz a curva de aprendizado necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
 
- Por convenção, os nomes de parâmetro usam concatenação com maiusculas e minúsculas e espaço para nome, tipo e nomes de membro usam Pascal casing. Em um nome em camel case, a primeira letra é minúscula e a primeira letra de qualquer palavras restantes no nome é maiuscula. Exemplos de nomes em camel case `packetSniffer`, `ioFile`, e `fatalErrorCode`. Em um nome padrão Pascal-case, a primeira letra é maiuscula e a primeira letra de qualquer palavras restantes no nome é maiuscula. Exemplos de nomes padrão Pascal-case `PacketSniffer`, `IOFile`, e `FatalErrorCode`.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Essa consistência reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
- Essa regra divide o nome em palavras com base nas maiusculas e minúsculas e verifica todas as palavras duas letras em relação a uma lista de palavras comuns de duas letras, como "In" ou "My". Se uma correspondência não for encontrada, a palavra é considerada um acrônimo. Além disso, esta regra pressupõe que ele encontrou um acrônimo quando o nome contém quatro letras maiusculas em uma linha ou três letras maiusculas em uma linha no final do nome.
+Por convenção, os nomes de parâmetro usam o camel case, e os nomes de namespace, tipo e membro usam a embalagem do Pascal. Em um nome de camel case, a primeira letra é minúscula e a primeira letra de qualquer palavra restante no nome é maiúscula. Exemplos de nomes de camel-case `packetSniffer`são `ioFile`, e `fatalErrorCode`. Em um nome em Pascal, a primeira letra é maiúscula e a primeira letra das palavras restantes no nome é maiúscula. Exemplos de nomes de Pascal-case `PacketSniffer`são `IOFile`, e `FatalErrorCode`.
 
- Por convenção, os acrônimos de duas letras usam todas as letras maiusculas e acrônimos de três ou mais caracteres Pascal casing. Os exemplos a seguir usam esta convenção de nomenclatura: 'DB', 'CR', 'Cpa' e 'Ecma'. Os exemplos a seguir violam a convenção: ' E/s', 'XML' e 'DoD' e para os nomes não parâmetro, 'xp' e 'cpl'.
+Essa regra divide o nome em palavras com base na capitalização e verifica quaisquer palavras de duas letras em uma lista de palavras de duas letras comuns, como "in" ou "My". Se uma correspondência não for encontrada, presume-se que a palavra seja um acrônimo. Além disso, essa regra pressupõe que ela encontrou um acrônimo quando o nome contém quatro letras maiúsculas em uma linha ou três letras maiúsculas em uma linha no final do nome.
 
- 'ID' é de maiusculas e minúsculas especiais para causar uma violação dessa regra. 'Id' não é um acrônimo, mas é uma abreviação para 'identificação'.
+Por convenção, os acrônimos de duas letras usam todas as letras maiúsculas e os acrônimos de três ou mais caracteres usam a capitalização de Pascal. Os exemplos a seguir usam essa Convenção de nomenclatura: ' DB ', ' CR ', ' contador ' e ' ECMA '. Os exemplos a seguir violam a Convenção: ' Io ', ' XML ' e ' DoD ' e para nomes de não parâmetros, ' XP ' e ' CPL '.
+
+' ID ' é especial para causar uma violação dessa regra. ' ID ' não é um acrônimo, mas é uma abreviação para ' identificação '.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Altere o nome, de modo que ele é maiusculas e minúsculas corretas.
+
+Altere o nome para que ele esteja em maiúsculas e minúsculas.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir este aviso se você tiver suas próprias convenções de nomenclatura, ou se o identificador representa um nome apropriado, por exemplo, o nome de uma empresa ou uma tecnologia.
 
- Você também pode adicionar termos específicos, as abreviações e acrônimos que a um dicionário personalizado de análise de código. Termos especificados no dicionário personalizado não fará com que as violações dessa regra. Para obter mais informações, confira [Como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md)
+É seguro suprimir esse aviso se você tiver suas próprias convenções de nomenclatura ou se o identificador representar um nome adequado, por exemplo, o nome de uma empresa ou uma tecnologia.
+
+Você também pode adicionar termos, abreviações e acrônimos específicos a um dicionário personalizado de análise de código. Os termos especificados no dicionário personalizado não causarão violações dessa regra. Para obter mais informações, confira [Como: Personalize o dicionário](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análise de código.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+
+[CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

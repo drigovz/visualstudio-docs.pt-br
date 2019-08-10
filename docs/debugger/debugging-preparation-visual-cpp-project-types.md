@@ -19,17 +19,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 250fa110b43aad38e6fc4323d6214bfb5fc7b5cc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: abc3a8339fffab762c2b6d7a649d3bae8efa76c8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62852105"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925498"
 ---
 # <a name="debugging-preparation-visual-c-project-types"></a>Preparação de depuração: Tipos de projeto do Visual C++
 Esta seção descreve como depurar os tipos de projeto básicos criados pelos modelos de projeto do [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)].
 
- Observe que esses tipos de projeto que criam dll como suas saídas foram agrupados em [depuração de projetos de DLL](../debugger/debugging-dll-projects.md) devido aos recursos comuns eles compartilham.
+ Observe que os tipos de projeto que criam DLLs como sua saída foram agrupados na [depuração de projetos DLL](../debugger/debugging-dll-projects.md) devido aos recursos comuns que eles compartilham.
 
 ## <a name="BKMK_In_this_topic"></a> Neste tópico
  [Configurações de propriedade recomendadas](#BKMK_Recommended_Property_Settings)
@@ -43,15 +43,15 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
   [Aplicativos do Windows Forms (.NET)](#BKMK_Windows_Forms_Applications___NET_)
 
 ## <a name="BKMK_Recommended_Property_Settings"></a> Configurações de propriedade recomendadas
- Certas propriedades devem ser definidas da mesma maneira para todos os cenários não gerenciados de depuração. As tabelas a seguir exibem as configurações de propriedade recomendadas. As configurações não listadas aqui podem variar entre os tipos de projeto não gerenciados diferentes. Para obter mais informações, consulte [configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
+ Certas propriedades devem ser definidas da mesma maneira para todos os cenários não gerenciados de depuração. As tabelas a seguir exibem as configurações de propriedade recomendadas. As configurações não listadas aqui podem variar entre os tipos de projeto não gerenciados diferentes. Para obter mais informações, consulte [configurações de projeto C++ para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
-### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriedades de configuração &#124; C/C++ &#124; nó de otimização
+### <a name="configuration-properties-124-cc-124-optimization-node"></a>Propriedades &#124; de configuração CC++ &#124; /nó de otimização
 
 |Nome da Propriedade|Configuração|
 |-------------------|-------------|
 |**Optimization**|Definido como **Desabilitado (/0d).** O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, habilite essa configuração, mas lembre-se de que o código mostrado na janela **Desmontagem** é gerado da origem otimizada que pode não corresponder ao que é visto em suas janelas de origem. Outros recursos, como depuração, podem não se comportar como esperado.|
 
-### <a name="configuration-properties-124-linker-124-debugging-node"></a>Propriedades de configuração &#124; vinculador &#124; nó de depuração
+### <a name="configuration-properties-124-linker-124-debugging-node"></a>Nó de &#124; &#124; depuração do vinculador de propriedades de configuração
 
 |Nome da Propriedade|Configuração|
 |-------------------|-------------|
@@ -72,7 +72,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
 2. No menu **Depurar**, escolha **Iniciar**.
 
-3. Depuração usando as técnicas discutidas [primeiro, examine o depurador](../debugger/debugger-feature-tour.md).
+3. Depure usando as técnicas discutidas na [primeira olhada no depurador](../debugger/debugger-feature-tour.md).
 
 ### <a name="BKMK_To_manually_set_a_Debug_configuration"></a> Para definir manualmente uma configuração de depuração
 
@@ -84,7 +84,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
 4. Abra o nó **C/C++** e selecione **Geral**.
 
-    Na linha **Depurar**, especifique o tipo de informações de depuração a ser geradas pelo compilador. Você pode escolher valores como **Banco de dados do programa (/Zi)** ou **Banco de dados do programa para edição e continuação (/ZI)**.
+    Na linha **Depurar**, especifique o tipo de informações de depuração a ser geradas pelo compilador. Você pode escolher valores como **Banco de dados do programa (/Zi)** ou **Banco de dados do programa para edição e continuação (/ZI)** .
 
 5. Selecione **Otimização** e, na linha **Otimização**, selecione **Desabilitado (/0d)** na lista suspensa.
 
@@ -92,7 +92,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
 6. Abra o nó **Vinculador** e selecione **Depuração**. Na primeira linha **Gerar**, selecione **Sim (/DEBUG)** na lista suspensa. Sempre defina isso quando você estiver depurando.
 
-   Para obter mais informações, consulte[configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+   Para obter mais informações, consulte[configurações de projeto C++ para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
    [Neste tópico](../debugger/debugging-preparation-visual-cpp-project-types.md#BKMK_In_this_topic)
 
@@ -103,7 +103,7 @@ Esta seção descreve como depurar os tipos de projeto básicos criados pelos mo
 
  Quando você cria um projeto do Windows Forms com o modelo de projeto, o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] cria automaticamente as configurações necessárias para as configurações de depuração e versão. Se necessário, você poderá alterar essas configurações na caixa de diálogo **\<nome do projeto > Páginas de Propriedades**. Para obter mais informações, confira [Configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md).
 
- Para obter mais informações, consulte [configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md).
+ Para obter mais informações, consulte [configurações de projeto C++ para uma configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md).
 
  Outro modo de depurar um aplicativo do Windows Forms 2 é iniciar o aplicativo fora do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e anexar a ele. Para obter mais informações, confira [Anexando a um programa ou a vários programas em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).
 

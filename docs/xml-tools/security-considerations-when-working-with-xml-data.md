@@ -8,32 +8,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9d3c3e8ddffb72b04a9ca2fc0ec4df5eaac150
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5fe4ec69f879478566cce8d077bb66b34da86f3d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62966699"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926770"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>Considerações de segurança ao trabalhar com dados XML
 
-Este tópico discute problemas de segurança que você precisa saber sobre ao trabalhar com o editor XML ou o depurador XSLT.
+Este tópico aborda os problemas de segurança que você precisa saber ao trabalhar com o editor de XML ou o depurador XSLT.
 
 ## <a name="xml-editor"></a>Editor de XML
 
- O editor de XML é baseado no Editor de texto do Visual Studio. Depende de classes de <xref:System.Xml> e de <xref:System.Xml.Xsl> para manipular muitos dos processos XML.
+O editor de XML é baseado no editor de texto do Visual Studio. Depende de classes de <xref:System.Xml> e de <xref:System.Xml.Xsl> para manipular muitos dos processos XML.
 
-- As transformações XSLT são executadas em um domínio de aplicativo. As transformações XSLT *área restrita e*; ou seja, a política de segurança de acesso do código do seu computador é usada para determinar as permissões restritas com base em onde se encontra a folha de estilos XSLT. Por exemplo, folhas de estilos de um local da Internet tem as permissões as mais rígidas, enquanto as folhas de estilos copiaram ao seu disco rígido executado com confiança total.
+- As transformações XSLT são executadas em um domínio de aplicativo. As transformações XSLT estão em *área restrita*; ou seja, a política de segurança de acesso do código do seu computador é usada para determinar as permissões restritas com base em onde a folha de estilos XSLT está localizada. Por exemplo, folhas de estilos de um local da Internet tem as permissões as mais rígidas, enquanto as folhas de estilos copiaram ao seu disco rígido executado com confiança total.
 
 - A classe de <xref:System.Xml.Xsl.XslCompiledTransform> é usado para compilar XSLT a Microsoft intermediate language para aumentar o desempenho durante a execução.
 
-- Os esquemas apontando para um local externo no arquivo de catálogo são baixados automaticamente quando o editor de XML é carregado pela primeira vez. A classe de <xref:System.Xml.Schema.XmlSchemaSet> é usada para criar esquemas. O arquivo de catálogo que é fornecido com o editor de XML não tem links para todos os esquemas externos. O usuário deve adicionar explicitamente uma referência para o esquema externa antes que o editor XML baixar o arquivo de esquema. Baixar HTTP pode ser desabilitado por meio de **diversas opções de ferramentas** página para o editor de XML.
+- Esquemas que apontam para um local externo no arquivo de catálogo são baixados automaticamente quando o editor de XML é carregado pela primeira vez. A classe de <xref:System.Xml.Schema.XmlSchemaSet> é usada para criar esquemas. O arquivo de catálogo fornecido com o editor de XML não tem links para esquemas externos. O usuário precisa adicionar explicitamente uma referência ao esquema externo antes que o editor de XML Baixe o arquivo de esquema. O download de HTTP pode ser desabilitado por meio da página de **Opções de ferramentas diversas** para o editor de XML.
 
-- O editor XML usa o <xref:System.Net> classes para baixar esquemas
+- O editor de XML usa <xref:System.Net> as classes para baixar esquemas
 
 ## <a name="xslt-debugger"></a>Depurador XSLT
 
- O depurador XSLT usa o mecanismo e as classes gerenciadas Visual Studio de depuração de <xref:System.Xml> e do espaço de <xref:System.Xml.Xsl> .
+O depurador XSLT usa o mecanismo e as classes gerenciadas Visual Studio de depuração de <xref:System.Xml> e do espaço de <xref:System.Xml.Xsl> .
 
 - O depurador XSLT executa cada transformação XSLT em um domínio de aplicativo na área restrita. A política de segurança de acesso a código do seu computador é usada para determinar as permissões restritas com base em onde a folha de estilos XSLT é encontrada. Por exemplo, folhas de estilos de um local da Internet tem as permissões as mais rígidas, enquanto as folhas de estilos copiaram ao seu disco rígido executado com confiança total.
 

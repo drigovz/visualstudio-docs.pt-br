@@ -32,90 +32,90 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 68e57a10b9bd36b07a2d4993626604f2a00558ca
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560461"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919576"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
-Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga uma disciplina de bloqueio apropriada e use anotações de SAL.
+Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma disciplina de bloqueio apropriada e use anotações SAL.
 
- Bugs de simultaneidade são notoriamente difíceis de reproduzir, diagnosticar e depurar porque eles são não determinísticas. Raciocínio sobre a intercalação de thread é difícil na melhor das hipóteses e se torna impraticável quando você estiver criando um corpo de código que tem mais de alguns segmentos. Portanto, é uma boa prática seguir uma bloqueio disciplina em seus programas multithread. Por exemplo, como obedecê uma ordem de bloqueio enquanto adquirir vários bloqueios ajuda a evitar deadlocks e adquirir o bloqueio de proteção apropriado antes de acessar um recurso compartilhado ajuda a evitar condições de corrida.
+Os bugs de simultaneidade são notoriamente difíceis de reproduzir, diagnosticar e depurar porque são não determinísticos. O raciocínio da intercalação de threads é difícil na melhor das hipóteses e torna-se impraticável quando você está criando um corpo de código que tem mais de alguns threads. Portanto, é uma boa prática seguir uma disciplina de bloqueio em seus programas multithread. Por exemplo, obedecer a uma ordem de bloqueio ao adquirir vários bloqueios ajuda a evitar deadlocks e adquirir o bloqueio de proteção adequado antes de acessar um recurso compartilhado ajuda a evitar condições de corrida.
 
- Infelizmente, aparentemente simples regras de bloqueio podem ser surpreendentemente difícil seguir a prática. Uma limitação fundamental em compiladores e linguagens de programação de hoje é que eles não suportam diretamente a especificação e análise dos requisitos de simultaneidade. Os programadores precisam contar com comentários de código informal para expressar suas intenções sobre como eles usam bloqueios.
+Infelizmente, as regras de bloqueio aparentemente simples podem ser surpreendentemente difíceis de serem seguidas na prática. Uma limitação fundamental nas linguagens de programação e nos compiladores de hoje é que elas não oferecem suporte direto à especificação e à análise de requisitos de simultaneidade. Os programadores precisam contar com comentários de código informais para expressar suas intenções sobre como eles usam bloqueios.
 
- Anotações de SAL de simultaneidade são projetadas para ajudar você a especificar o bloqueio efeitos colaterais, bloqueio de responsabilidade, guardianship de dados, hierarquia de ordem de bloqueio e outro comportamento esperado de bloqueio. Tornando regras implícitas explícita, anotações de simultaneidade SAL fornecem uma maneira consistente para documentar como seu código usa as regras de bloqueio. Anotações de simultaneidade também aumentam a capacidade de localizar condições de corrida, deadlocks, operações de sincronização não correspondentes e outros erros sutis de simultaneidade das ferramentas de análise de código.
+As anotações de SAL de simultaneidade são projetadas para ajudá-lo a especificar efeitos colaterais de bloqueio, responsabilidade de bloqueio, Data Guardian, hierarquia de ordem de bloqueio e outro comportamento de bloqueio esperado. Ao tornar explícitas as regras implícitas, as anotações de simultaneidade SAL fornecem uma maneira consistente de você documentar como seu código usa regras de bloqueio. As anotações de simultaneidade também aprimoram a capacidade das ferramentas de análise de código de encontrar condições de corrida, deadlocks, operações de sincronização incompatíveis e outros erros sutis de simultaneidade.
 
 ## <a name="general-guidelines"></a>Diretrizes gerais
- Usando anotações, você pode declarar os contratos que são deduzidos por definições de função entre implementações (computadores chamados) e clientes (chamadores) e invariáveis de express e outras propriedades do programa que pode melhoram a análise.
+Usando anotações, você pode declarar os contratos que são implícitos por definições de função entre implementações (chamadas) e clientes (chamadores) e invariáveis expressas e outras propriedades do programa que podem melhorar ainda mais a análise.
 
- SAL dá suporte a muitos tipos diferentes de primitivos de bloqueio — por exemplo, seções críticas, mutexes, bloqueios de rotação e outros objetos de recurso. Anotações de simultaneidade de muitos levar a uma expressão de bloqueio como um parâmetro. Por convenção, um bloqueio é indicado pela expressão de caminho do objeto subjacente de bloqueio.
+O SAL dá suporte a muitos tipos diferentes de primitivos de bloqueio — por exemplo, seções críticas, exclusões mútuas, bloqueios de rotação e outros objetos de recurso. Muitas anotações de simultaneidade usam uma expressão de bloqueio como um parâmetro. Por convenção, um bloqueio é indicado pela expressão de caminho do objeto de bloqueio subjacente.
 
- Algumas regras de propriedade de thread para ter em mente:
+Algumas regras de Propriedade do thread a serem consideradas:
 
-- Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.
+- Bloqueios de rotação são bloqueios sem desconto que têm propriedade de thread clara.
 
-- Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.
+- Mutexes e seções críticas são bloqueios contados que têm propriedade de thread clara.
 
-- Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.
+- Semáforos e eventos são bloqueios contados que não têm propriedade de thread clara.
 
 ## <a name="locking-annotations"></a>Anotações de bloqueio
- A tabela a seguir lista as anotações de bloqueio.
+A tabela a seguir lista as anotações de bloqueio.
 
 |Anotação|Descrição|
 |----------------|-----------------|
-|`_Acquires_exclusive_lock_(expr)`|Anota uma função e indica que na postagem do estado a função incrementa em um a contagem de bloqueio exclusivo do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Acquires_lock_(expr)`|Anota uma função e indica que na postagem do estado a função incrementa em um a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Acquires_nonreentrant_lock_(expr)`|O bloqueio que é nomeado pelo `expr` é adquirido.  Um erro será relatado se o bloqueio já é mantido.|
-|`_Acquires_shared_lock_(expr)`|Anota uma função e indica que na postagem do estado a função incrementa em um a contagem de bloqueio compartilhado do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Create_lock_level_(name)`|Uma instrução que declara o símbolo `name` como um nível de bloqueio para que ele pode ser usado nas anotações `_Has_Lock_level_` e `_Lock_level_order_`.|
-|`_Has_lock_kind_(kind)`|Anota a qualquer objeto para refinar as informações de tipo de um objeto de recurso. Às vezes, um tipo comum é usado para diferentes tipos de recursos e o tipo sobrecarregado não é suficiente para distinguir os requisitos de semânticos entre os vários recursos. Aqui está uma lista de predefinido `kind` parâmetros:<br /><br /> `_Lock_kind_mutex_`<br /> ID de tipo de bloqueio para mutexes.<br /><br /> `_Lock_kind_event_`<br /> ID de tipo de bloqueio para eventos.<br /><br /> `_Lock_kind_semaphore_`<br /> ID de tipo de bloqueio para semáforos.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID de tipo de bloqueio para bloqueios de rotação.<br /><br /> `_Lock_kind_critical_section_`<br /> ID de tipo de bloqueio para seções críticas.|
-|`_Has_lock_level_(name)`|Anota um objeto de bloqueio e concede a ele o nível de bloqueio de `name`.|
-|`_Lock_level_order_(name1, name2)`|Uma instrução que fornece o bloqueio de ordenação entre `name1` e `name2`.|
-|`_Post_same_lock_(expr1, expr2)`|Anota uma função e indica que, na postagem do estado dois bloqueios, `expr1` e `expr2`, são tratados como se eles forem o mesmo objeto de bloqueio.|
-|`_Releases_exclusive_lock_(expr)`|Anota uma função e indica que na postagem do estado decrementa a função por um a contagem de bloqueio exclusivo do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Releases_lock_(expr)`|Anota uma função e indica que na postagem do estado decrementa a função por um a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Releases_nonreentrant_lock_(expr)`|O bloqueio que é nomeado pelo `expr` é liberado. Um erro será relatado se o bloqueio não é mantido no momento.|
-|`_Releases_shared_lock_(expr)`|Anota uma função e indica que na postagem do estado decrementa a função por um a contagem de bloqueio compartilhado do objeto de bloqueio que é nomeado pelo `expr`.|
-|`_Requires_lock_held_(expr)`|Anota uma função e indica que, na versão anterior, estado a contagem de bloqueio do objeto que é nomeado pelo `expr` é pelo menos um.|
-|`_Requires_lock_not_held_(expr)`|Anota uma função e indica que, na versão anterior, estado a contagem de bloqueio do objeto que é nomeado pelo `expr` é zero.|
-|`_Requires_no_locks_held_`|Anota uma função e indica que as contagens de bloqueio de todos os bloqueios que são conhecidos como o verificador de zero.|
-|`_Requires_shared_lock_held_(expr)`|Anota uma função e indica que, na versão anterior, estado a contagem de bloqueio compartilhado do objeto que é nomeado pelo `expr` é pelo menos um.|
-|`_Requires_exclusive_lock_held_(expr)`|Anota uma função e indica que, na versão anterior, estado a contagem de bloqueio exclusivo do objeto que é nomeado pelo `expr` é pelo menos um.|
+|`_Acquires_exclusive_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios exclusiva do objeto de bloqueio `expr`nomeado por.|
+|`_Acquires_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios do objeto de bloqueio `expr`nomeado por.|
+|`_Acquires_nonreentrant_lock_(expr)`|O bloqueio nomeado pelo `expr` é adquirido.  Um erro será relatado se o bloqueio já estiver em retenção.|
+|`_Acquires_shared_lock_(expr)`|Anota uma função e indica que, no estado de post, a função é incrementada por uma contagem de bloqueios compartilhada do objeto de bloqueio `expr`nomeado por.|
+|`_Create_lock_level_(name)`|Uma instrução que declara o símbolo `name` para ser um nível de bloqueio para que ele possa ser usado nas `_Has_Lock_level_` anotações e `_Lock_level_order_`.|
+|`_Has_lock_kind_(kind)`|Anota qualquer objeto para refinar as informações de tipo de um objeto de recurso. Às vezes, um tipo comum é usado para diferentes tipos de recursos e o tipo sobrecarregado não é suficiente para distinguir os requisitos semânticos entre vários recursos. Aqui está uma lista de parâmetros predefinidos `kind` :<br /><br /> `_Lock_kind_mutex_`<br /> ID do tipo de bloqueio para mutexes.<br /><br /> `_Lock_kind_event_`<br /> ID de tipo de bloqueio para eventos.<br /><br /> `_Lock_kind_semaphore_`<br /> ID do tipo de bloqueio para semáforos.<br /><br /> `_Lock_kind_spin_lock_`<br /> ID do tipo de bloqueio para bloqueios de rotação.<br /><br /> `_Lock_kind_critical_section_`<br /> ID do tipo de bloqueio para seções críticas.|
+|`_Has_lock_level_(name)`|Anota um objeto de bloqueio e dá a ele o nível de `name`bloqueio de.|
+|`_Lock_level_order_(name1, name2)`|Uma instrução que fornece a ordem de bloqueio `name1` entre `name2`e.|
+|`_Post_same_lock_(expr1, expr2)`|Anota uma função e indica que, em estado do post, `expr1` os dois bloqueios e `expr2`, são tratados como se fossem o mesmo objeto de bloqueio.|
+|`_Releases_exclusive_lock_(expr)`|Anota uma função e indica que, no estado de post, a função diminui em uma contagem de bloqueios exclusiva do objeto de bloqueio nomeado por `expr`.|
+|`_Releases_lock_(expr)`|Anota uma função e indica que, no estado de post, a função diminui em uma contagem de bloqueios do objeto de bloqueio nomeado por `expr`.|
+|`_Releases_nonreentrant_lock_(expr)`|O bloqueio nomeado por `expr` é liberado. Um erro será relatado se o bloqueio não for mantido no momento.|
+|`_Releases_shared_lock_(expr)`|Anota uma função e indica que, no estado de post, a função diminui em uma contagem de bloqueio compartilhada do objeto de bloqueio nomeado por `expr`.|
+|`_Requires_lock_held_(expr)`|Anota uma função e indica que, em pré-estado, a contagem de bloqueios do objeto nomeado `expr` pelo é pelo menos uma.|
+|`_Requires_lock_not_held_(expr)`|Anota uma função e indica que, em pré-estado, a contagem de bloqueios do objeto nomeado `expr` por é zero.|
+|`_Requires_no_locks_held_`|Anota uma função e indica que as contagens de bloqueios de todos os bloqueios conhecidos pelo verificador são zero.|
+|`_Requires_shared_lock_held_(expr)`|Anota uma função e indica que, em pré-estado, a contagem de bloqueios compartilhada do objeto nomeado `expr` pelo é pelo menos uma.|
+|`_Requires_exclusive_lock_held_(expr)`|Anota uma função e indica que, em pré-estado, a contagem de bloqueios exclusiva do objeto nomeado `expr` pelo é pelo menos uma.|
 
-## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>Intrínsecos SAL para objetos de bloqueio não expostos
- Determinados objetos de bloqueio não são expostos pela implementação das funções de bloqueio associadas.  A tabela a seguir lista variáveis intrínsecas de SAL que permitem anotações em funções que operam nesses objetos de bloqueio não expostos.
+## <a name="sal-intrinsics-for-unexposed-locking-objects"></a>SAL intrínseco para objetos de bloqueio não expostos
+Determinados objetos de bloqueio não são expostos pela implementação das funções de bloqueio associadas.  A tabela a seguir lista as variáveis intrínsecas SAL que habilitam anotações em funções que operam nesses objetos de bloqueio não expostos.
 
 |Anotação|Descrição|
 |----------------|-----------------|
-|`_Global_cancel_spin_lock_`|Descreve o bloqueio de rotação de cancelamento.|
+|`_Global_cancel_spin_lock_`|Descreve o cancelamento do bloqueio de rotação.|
 |`_Global_critical_region_`|Descreve a região crítica.|
-|`_Global_interlock_`|Descreve as operações interconectadas.|
+|`_Global_interlock_`|Descreve operações interbloqueadas.|
 |`_Global_priority_region_`|Descreve a região de prioridade.|
 
-## <a name="shared-data-access-annotations"></a>Anotações de acesso de dados compartilhados
- A tabela a seguir lista as anotações para acesso a dados compartilhados.
+## <a name="shared-data-access-annotations"></a>Anotações de acesso a dados compartilhados
+A tabela a seguir lista as anotações para acesso a dados compartilhados.
 
 |Anotação|Descrição|
 |----------------|-----------------|
-|`_Guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é acessada, a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr` é pelo menos um.|
+|`_Guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é acessada, a contagem de bloqueios do objeto de bloqueio `expr` nomeado pelo é pelo menos uma.|
 |`_Interlocked_`|Anota uma variável e é equivalente a `_Guarded_by_(_Global_interlock_)`.|
-|`_Interlocked_operand_`|O parâmetro de função anotado é o operando de destino de uma das várias funções Interlocked.  Os operandos devem ter propriedades adicionais específicas.|
-|`_Write_guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é modificada, a contagem de bloqueio do objeto de bloqueio que é nomeado pelo `expr` é pelo menos um.|
+|`_Interlocked_operand_`|O parâmetro de função anotada é o operando de destino de uma das várias funções interbloqueadas.  Esses operandos devem ter propriedades adicionais específicas.|
+|`_Write_guarded_by_(expr)`|Anota uma variável e indica que sempre que a variável é modificada, a contagem de bloqueios do objeto de bloqueio nomeado `expr` pelo é pelo menos uma.|
 
-## <a name="smart-lock-and-raii-annotations"></a>Smart Lock e RAII anotações
- Normalmente, fechaduras inteligentes encapsulam bloqueios nativos e gerenciar seu tempo de vida. A tabela a seguir lista as anotações que podem ser usadas com fechaduras inteligentes e RAII padrões com suporte de codificação `move` semântica.
+## <a name="smart-lock-and-raii-annotations"></a>Anotações de Smart Lock e RAII
+Os bloqueios inteligentes normalmente encapsulam bloqueios nativos e gerenciam seu tempo de vida. A tabela a seguir lista as anotações que podem ser usadas com bloqueios inteligentes e padrões de `move` codificação RAII com suporte à semântica.
 
 |Anotação|Descrição|
 |----------------|-----------------|
-|`_Analysis_assume_smart_lock_acquired_`|Informa o analisador de supor que um bloqueio inteligente foi adquirido. Essa anotação espera um tipo de bloqueio de referência como seu parâmetro.|
-|`_Analysis_assume_smart_lock_released_`|Informa ao analisador de supor que um bloqueio inteligente foi liberado. Essa anotação espera um tipo de bloqueio de referência como seu parâmetro.|
-|`_Moves_lock_(target, source)`|Descreve `move constructor` operação que transfere o estado do bloqueio da `source` do objeto para o `target`. O `target` é considerado um objeto construído recentemente, portanto, qualquer estado que tinha antes é perdido e substituído pelo `source` estado. O `source` é também a redefinição para um estado limpo com nenhum destino de contagens ou alias de bloqueio, mas aliases apontando para ele permanecem inalterados.|
-|`_Replaces_lock_(target, source)`|Descreve `move assignment operator` semântica em que o bloqueio de destino é liberado antes de transferir o estado da origem. Isso pode ser considerado como uma combinação de `_Moves_lock_(target, source)` precedido por um `_Releases_lock_(target)`.|
-|`_Swaps_locks_(left, right)`|Descreve o padrão `swap` comportamento que assume que os objetos `left` e `right` seu estado do exchange. O estado trocado inclui bloqueio contagem e o alias de destino, se estiver presente. Aliases que apontam para o `left` e `right` objetos permanecem inalterados.|
-|`_Detaches_lock_(detached, lock)`|Descreve um cenário em que um tipo de wrapper de bloqueio permite desassociação com seu recurso independente. Isso é semelhante a como `std::unique_ptr` funciona com seu ponteiro interno: ele permite que os programadores extrair o ponteiro e deixar seu contêiner de ponteiro inteligente em um estado limpo. Lógica semelhante é compatível com `std::unique_lock` e pode ser implementado nos wrappers de bloqueio personalizado. O bloqueio desanexado manterá seu estado (bloqueio contagem e o alias de destino, se houver), enquanto o wrapper será redefinido para conter zero contagem de bloqueio e nenhum destino de geração de alias, enquanto retém seus próprios aliases. Não há nenhuma operação na contagem de bloqueio (liberar e adquirir). Essa anotação se comporta exatamente como `_Moves_lock_` , exceto que o argumento desanexado deve ser `return` em vez de `this`.|
+|`_Analysis_assume_smart_lock_acquired_`|Instrui o analisador a assumir que um bloqueio inteligente foi adquirido. Esta anotação espera um tipo de bloqueio de referência como seu parâmetro.|
+|`_Analysis_assume_smart_lock_released_`|Instrui o analisador a assumir que um bloqueio inteligente foi liberado. Esta anotação espera um tipo de bloqueio de referência como seu parâmetro.|
+|`_Moves_lock_(target, source)`|Descreve `move constructor` a operação que transfere o `source` estado de bloqueio do `target`objeto para o. O `target` é considerado um objeto recém-criado, portanto, qualquer Estado que tinha antes é perdido e substituído `source` pelo Estado. O `source` também é redefinido para um estado limpo sem contagens de bloqueio ou destino de alias, mas os aliases que apontam para ele permanecem inalterados.|
+|`_Replaces_lock_(target, source)`|Descreve `move assignment operator` a semântica na qual o bloqueio de destino é liberado antes de transferir o estado da origem. Isso pode ser considerado uma combinação de `_Moves_lock_(target, source)` precedida por um. `_Releases_lock_(target)`|
+|`_Swaps_locks_(left, right)`|Descreve o comportamento `swap` padrão que pressupõe que objetos `left` e `right` trocam seu estado. O estado trocado inclui a contagem de bloqueios e o destino de alias, se houver. Os aliases que apontam para `left` os `right` objetos e permanecem inalterados.|
+|`_Detaches_lock_(detached, lock)`|Descreve um cenário no qual um tipo de wrapper de bloqueio permite dissociação com seu recurso contido. Isso é semelhante a como `std::unique_ptr` o funciona com seu ponteiro interno: permite aos programadores extrair o ponteiro e deixar seu contêiner de ponteiro inteligente em um estado limpo. A lógica semelhante é suportada pelo `std::unique_lock` e pode ser implementada em invólucros de bloqueio personalizados. O bloqueio desanexado mantém seu estado (contagem de bloqueios e destino de alias, se houver), enquanto o wrapper é redefinido para conter zero contagem de bloqueios e nenhum destino de alias, enquanto retém seus próprios aliases. Não há nenhuma operação em contagens de bloqueio (liberando e adquirindo). Essa anotação se comporta exatamente como `_Moves_lock_` , exceto que o argumento desanexado deve ser `return` em vez de. `this`|
 
 ## <a name="see-also"></a>Consulte também
 

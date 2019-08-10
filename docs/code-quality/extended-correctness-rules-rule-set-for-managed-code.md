@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19dec66e4f281af37a0ef66a114b9c26b48ce163
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816625"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923993"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção estendido para código gerenciado
-O conjunto de regras de correção estendido Microsoft maximiza os erros de uso de lógica e do framework que são relatados pela análise de código. Ênfase extra é colocado em cenários específicos, como interoperabilidade COM e aplicativos móveis. Você deve considerar incluindo essa regra definir se um desses cenários se aplica ao seu projeto ou para localizar problemas adicionais em seu projeto.
+O conjunto de regras de regras de correção estendida da Microsoft maximiza os erros de uso de lógica e de estrutura que são relatados pela análise de código. A ênfase extra é feita em cenários específicos, como interoperabilidade COM e aplicativos móveis. Você deve considerar a inclusão desse conjunto de regras se um desses cenários se aplicar ao seu projeto ou para encontrar problemas adicionais em seu projeto.
 
- O conjunto de regras de regras de correção estendido da Microsoft inclui as regras que estão em regras de correção básico do Microsoft conjunto. As regras básicas de correção incluem as regras que estão na regra de regras recomendadas do Microsoft mínimo definidas. Para obter mais informações, consulte [conjunto de regras de regras de correção básico para código gerenciado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+O conjunto de regras de regras de correção estendida da Microsoft inclui as regras que estão no conjunto de regras de regras de correção básica da Microsoft. As regras básicas de correção incluem as regras que estão no conjunto de regras do mínimo recomendado pela Microsoft. Para obter mais informações, consulte [regras básicas de exatidão do conjunto de regras para código gerenciado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [regra gerenciada recomendada para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
 
- A tabela a seguir descreve todas as regras no conjunto de regras de regras de correção estendido da Microsoft.
+A tabela a seguir descreve todas as regras no conjunto de regras de regras de correção estendida da Microsoft.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -64,7 +64,7 @@ O conjunto de regras de correção estendido Microsoft maximiza os erros de uso 
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Métodos transparentes devem conter apenas a IL verificável|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|O código transparente não deve referenciar itens críticos de segurança|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem atender a LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem satisfazer LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|

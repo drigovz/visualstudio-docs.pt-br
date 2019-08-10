@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e57607cdfa8790c9b9fd4e692956f7bb823981a
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66744864"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921294"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar apenas a API da estrutura de destino
 
@@ -28,43 +28,43 @@ ms.locfileid: "66744864"
 |NomeDoTipo|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebrando - quando disparado em relação a assinatura de um tipo ou membro visível externamente.<br /><br /> Sem quebra - quando disparado no corpo de um método.|
+|Alteração Significativa|Quebra-quando acionada na assinatura de um membro ou tipo visível externamente.<br /><br /> Não separável – quando disparado no corpo de um método.|
 
 ## <a name="cause"></a>Causa
- Um membro ou tipo está usando um membro ou tipo que foi introduzido em um service pack que não foi incluído com a estrutura de destino do projeto.
+Um membro ou tipo está usando um membro ou tipo que foi introduzido em um service pack que não foi incluído com a estrutura de destino do projeto.
 
 ## <a name="rule-description"></a>Descrição da regra
- Tipos e membros novos foram incluídos no .NET Framework 2.0 Service Pack 1 e 2, o .NET Framework 3.0 Service Pack 1 e 2 e o .NET Framework 3.5 Service Pack 1. Projetos direcionados as versões principais do .NET Framework, inadvertidamente, podem assumir dependências sobre essas novas APIs. Para evitar essa dependência, essa regra é acionada em usos de quaisquer novos membros e tipos que não foram incluídos por padrão com a estrutura de destino do projeto.
+Novos membros e tipos foram incluídos no .NET Framework 2,0 Service Pack 1 e 2, .NET Framework 3,0 Service Pack 1 e 2 e .NET Framework 3,5 Service Pack 1. Os projetos que visam as versões principais do .NET Framework podem usar involuntariamente dependências dessas novas APIs. Para evitar essa dependência, essa regra é acionada em usos de novos membros e tipos que não foram incluídos por padrão com a estrutura de destino do projeto.
 
- **Estrutura de destino e dependências do pacote de serviço**
+**Dependências de estrutura de destino e Service Pack**
 
 |||
 |-|-|
-|Quando é a estrutura de destino|É acionado em usos de membros, introduzidos no|
-|.NET Framework 2.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2|
-|.NET Framework 3.0|.NET Framework 2.0 SP1, .NET Framework 2.0 SP2, .NET Framework 3.0 SP1, .NET Framework 3.0 SP2|
+|Quando a estrutura de destino é|Acionado em usos de membros introduzidos em|
+|.NET Framework 2.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2|
+|.NET Framework 3.0|.NET Framework 2,0 SP1, .NET Framework 2,0 SP2, .NET Framework 3,0 SP1, .NET Framework 3,0 SP2|
 |.NET Framework 3,5|.NET Framework 3,5 SP1|
 |.NET Framework 4|N/D|
 
- Para alterar a estrutura de destino do projeto, consulte [como: Direcionar uma versão do .NET](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+Para alterar a estrutura de destino de um projeto [, consulte Como: Definir uma versão do .NET como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para remover a dependência no service pack, remova todos os usos do novo membro ou tipo. Se essa é uma dependência deliberada, suprimir o aviso ou desative essa regra.
+Para remover a dependência no service pack, remova todos os usos do novo membro ou tipo. Se essa for uma dependência deliberada, suprima o aviso ou desative essa regra.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra, se isso não era uma dependência deliberada sobre o pacote de serviço especificado. Nessa situação, seu aplicativo pode falhar ao executar em sistemas sem este service pack instalado. Suprimir o aviso ou desative essa regra se essa fosse uma dependência deliberada.
+Não omita um aviso dessa regra se essa não fosse uma dependência deliberada no service pack especificado. Nessa situação, seu aplicativo pode falhar ao ser executado em sistemas sem esse service pack instalado. Suprimir o aviso ou desativar essa regra se essa fosse uma dependência deliberada.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra uma classe que usa o tipo DateTimeOffset só está disponível no .NET 2.0 Service Pack 1. Esse exemplo requer que o .NET Framework 2.0 foi selecionada na lista suspensa de estrutura de destino nas propriedades do projeto.
+O exemplo a seguir mostra uma classe que usa o tipo DateTimeOffset que está disponível somente no .NET 2,0 Service Pack 1. Este exemplo requer que .NET Framework 2,0 tenha sido selecionado na lista suspensa estrutura de destino nas propriedades do projeto.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_1.cs)]
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir corrige a violação descrita anteriormente, substituindo os usos do tipo DateTimeOffset com o tipo DateTime.
+O exemplo a seguir corrige a violação descrita anteriormente, substituindo os usos do tipo DateTimeOffset pelo tipo DateTime.
 
- [!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
+[!code-csharp[FxCop.Portability.UseOnlyApiFromTargetedFramework2#1](../code-quality/codesnippet/CSharp/ca1903-use-only-api-from-targeted-framework_2.cs)]
 
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de portabilidade](../code-quality/portability-warnings.md)
-- [Visão geral de destino do Framework](../ide/visual-studio-multi-targeting-overview.md)
+- [Visão geral do direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md)

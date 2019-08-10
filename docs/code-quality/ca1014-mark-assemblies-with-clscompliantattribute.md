@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ea7c0d4b9c1d8edea3c2d96f04114db47f3b0d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779502"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923112"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Marcar assemblies com CLSCompliantAttribute
 
@@ -32,28 +32,28 @@ ms.locfileid: "62779502"
 |NomeDoTipo|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um assembly não tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado a ele.
+Um assembly não tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado a ele.
 
 ## <a name="rule-description"></a>Descrição da regra
- A CLS (Common Language Specification) define restrições de nomenclatura, tipos de dados e regras que assemblies deverão respeitar se forem usados em todas as linguagens de programação. Um bom design determina que todos os assemblies indiquem explicitamente a conformidade com CLS com <xref:System.CLSCompliantAttribute>. Se o atributo não estiver presente em um assembly, o assembly não está em conformidade.
+A CLS (Common Language Specification) define restrições de nomenclatura, tipos de dados e regras que assemblies deverão respeitar se forem usados em todas as linguagens de programação. Um bom design dita que todos os assemblies indicam explicitamente a conformidade <xref:System.CLSCompliantAttribute>com CLS com. Se o atributo não estiver presente em um assembly, o assembly não será compatível.
 
- É possível que um assembly compatível com CLS contêm tipos ou membros que não estão em conformidade de tipo.
+É possível que um assembly em conformidade com CLS contenha tipos ou membros de tipo que não estejam em conformidade.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, adicione o atributo ao assembly. Em vez de todo o assembly como não compatível de marcação, você deve determinar o tipo ou membros de tipo não estão em conformidade e marcam esses elementos como tal. Se possível, você deve fornecer uma alternativa compatível com CLS para membros não compatíveis para que o maior público possível possa acessar toda a funcionalidade do seu assembly.
+Para corrigir uma violação dessa regra, adicione o atributo ao assembly. Em vez de marcar o assembly inteiro como não compatível, você deve determinar quais tipos ou membros de tipo não são compatíveis e marcar esses elementos como tal. Se possível, você deve fornecer uma alternativa em conformidade com CLS para membros não compatíveis para que o público mais amplo possível acesse toda a funcionalidade do seu assembly.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra. Se você não quiser que o assembly esteja em conformidade, aplique o atributo e defina seu valor como `false`.
+Não suprima um aviso nessa regra. Se você não quiser que o assembly esteja em conformidade, aplique o atributo e defina seu valor como `false`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um assembly que tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado que o declara compatíveis com CLS.
+O exemplo a seguir mostra um assembly que tem <xref:System.CLSCompliantAttribute?displayProperty=fullName> o atributo aplicado que declara em conformidade com CLS.
 
- [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
- [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
- [!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
+[!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
+[!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
+[!code-vb[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/VisualBasic/ca1014-mark-assemblies-with-clscompliantattribute_1.vb)]
 
 ## <a name="see-also"></a>Consulte também
 

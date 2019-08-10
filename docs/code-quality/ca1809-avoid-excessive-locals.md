@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ac6947f8424c3b9aa7429ee378b4bb89be73ca
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8d1c2f76258be3b0be6409bffd002fd916883ab2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545235"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921545"
 ---
 # <a name="ca1809-avoid-excessive-locals"></a>CA1809: Evitar locais excessivos
 
@@ -28,19 +28,19 @@ ms.locfileid: "62545235"
 |NomeDoTipo|AvoidExcessiveLocals|
 |CheckId|CA1809|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um membro contiver mais de 64 variáveis locais, algumas das quais podem ser gerado pelo compilador.
+Um membro contém mais de 64 variáveis locais, algumas das quais podem ser geradas pelo compilador.
 
 ## <a name="rule-description"></a>Descrição da regra
- Uma otimização de desempenho comum é armazenar um valor em um registro do processador, em vez de na memória, que é conhecido como *registro* o valor. O common language runtime considera até 64 variáveis locais para enregistration. Variáveis que não seja cancelado são colocadas na pilha e devem ser movidas para um registro antes de manipulação. Para permitir que a chance de que todas as variáveis locais obter cancelado, limite o número de variáveis locais a 64.
+Uma otimização de desempenho comum é armazenar um valor em um registro de processador em vez de na memória, que é conhecido como *registrar* o valor. O Common Language Runtime considera até 64 variáveis locais para o registro. As variáveis que não são registradas são colocadas na pilha e devem ser movidas para um registro antes da manipulação. Para permitir a chance de que todas as variáveis locais sejam registradas, limite o número de variáveis locais a 64.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, Refatore a implementação para usar não mais do que 64 variáveis locais.
+Para corrigir uma violação dessa regra, refatore a implementação para usar no máximo 64 variáveis locais.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro para suprimir um aviso nessa regra, ou para desabilitar a regra, se o desempenho não for um problema.
+É seguro suprimir um aviso dessa regra ou desabilitar a regra, se o desempenho não for um problema.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Remover locais não utilizados](../code-quality/ca1804-remove-unused-locals.md)

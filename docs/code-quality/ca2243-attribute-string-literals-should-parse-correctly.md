@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12007beaffab1e046ae7f359bf2988c02278fd91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f9c0f078c21de023b1f5cfacde0cf122c179adb2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541448"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919899"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243: Literais de cadeias de caracteres de atributo devem ser analisados corretamente
 
@@ -28,36 +28,36 @@ ms.locfileid: "62541448"
 |NomeDoTipo|AttributeStringLiteralsShouldParseCorrectly|
 |CheckId|CA2243|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Parâmetro literal de cadeia de caracteres de um atributo não é analisado corretamente para uma URL, GUID ou versão.
+O parâmetro literal da cadeia de caracteres de um atributo não é analisado corretamente para uma URL, GUID ou versão.
 
 ## <a name="rule-description"></a>Descrição da regra
- Uma vez que os atributos derivados <xref:System.Attribute?displayProperty=fullName>e os atributos são usados em tempo de compilação, somente valores constantes que podem ser passados para seus construtores. Parâmetros de atributo que devem representar URLs, GUIDs e as versões não podem ser digitados como <xref:System.Uri?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>, e <xref:System.Version?displayProperty=fullName>, porque esses tipos não podem ser representados como constantes. Em vez disso, eles devem ser representados por cadeias de caracteres.
+Como os atributos são derivados <xref:System.Attribute?displayProperty=fullName>de, e os atributos são usados no momento da compilação, somente valores constantes podem ser passados para seus construtores. Os parâmetros de atributo que devem representar URLs, GUIDs e versões não podem ser <xref:System.Uri?displayProperty=fullName>digitados como <xref:System.Version?displayProperty=fullName>, <xref:System.Guid?displayProperty=fullName>e, porque esses tipos não podem ser representados como constantes. Em vez disso, eles devem ser representados por cadeias de caracteres.
 
- Como o parâmetro é tipado como uma cadeia de caracteres, é possível que um parâmetro formatado incorretamente pode ser passado em tempo de compilação.
+Como o parâmetro é digitado como uma cadeia de caracteres, é possível que um parâmetro formatado incorretamente possa ser passado no momento da compilação.
 
- Essa regra usa uma heurística de nomenclatura para localizar parâmetros que representam um uniform resource identifier (URI), um identificador de GUID (global exclusivo) ou uma versão e verifica se o valor passado está correto.
+Essa regra usa uma heurística de nomenclatura para localizar parâmetros que representam um URI (Uniform Resource Identifier), um GUID (identificador global exclusivo) ou uma versão e verifica se o valor passado está correto.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Altere a cadeia de caracteres do parâmetro para uma URL, GUID ou versão está formado corretamente.
+Altere a cadeia de caracteres do parâmetro para uma URL, GUID ou versão formada corretamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, se o parâmetro não representar uma URL, GUID ou versão.
+É seguro suprimir um aviso dessa regra se o parâmetro não representar uma URL, GUID ou versão.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra o código para o AssemblyFileVersionAttribute que viola essa regra.
+O exemplo a seguir mostra o código para o AssemblyFileVersionAttribute que viola essa regra.
 
- [!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
+[!code-csharp[FxCop.Usage.AttributeStringLiteralsShouldParseCorrectly#1](../code-quality/codesnippet/CSharp/ca2243-attribute-string-literals-should-parse-correctly_1.cs)]
 
- A regra é acionada pelos seguintes parâmetros:
+A regra é disparada pelos seguintes parâmetros:
 
-- Parâmetros que contêm 'version' e não podem ser analisados para Version.
+- Parâmetros que contêm ' version ' e não podem ser analisados para System. Version.
 
-- Parâmetros que contêm 'guid' e não podem ser analisados para GUID.
+- Parâmetros que contêm ' GUID ' e não podem ser analisados como System. GUID.
 
-- Parâmetros que contêm 'uri', 'urn' ou 'url' e não podem ser analisados para System. URI.
+- Parâmetros que contêm ' URI ', ' urn ' ou ' URL ' e não podem ser analisados para System. Uri.
 
 ## <a name="see-also"></a>Consulte também
 

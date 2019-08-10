@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c58a0a27c11aea2954d4950b742a8928f98732e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df6ab704c2dfdbf8ebdf8eb42f56d8d64600736f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546317"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921821"
 ---
 # <a name="ca1504-review-misleading-field-names"></a>CA1504: Examinar nomes de campo confusos
 
@@ -28,16 +28,16 @@ ms.locfileid: "62546317"
 |NomeDoTipo|ReviewMisleadingFieldNames|
 |CheckId|CA1504|
 |Categoria|Microsoft.Maintainability|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- O nome de um campo de instância começa com "s _" ou o nome de um `static` (`Shared` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) campo começa com "m _".
+O nome de um campo de instância começa com "s_" ou o nome de `static` um`Shared` campo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](in) começa com "M_".
 
 ## <a name="rule-description"></a>Descrição da regra
- Nomes de campo que começam com "s _" são associados a dados estáticos por muitos usuários. Da mesma forma, os nomes de campo que começam com "m _" são associados a dados da instância (membro). Para o código mais fácil manutenção, os nomes devem seguir convenções geralmente usadas.
+Os nomes de campo que começam com "s_" são associados a dados estáticos por muitos usuários. Da mesma forma, os nomes de campo que começam com "M_" são associados a dados de instância (membro). Para um código mais fácil de ser mantido, os nomes devem seguir as convenções geralmente usadas.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, renomeie o campo usando o prefixo apropriado. Como alternativa, tornar o campo concordar com o sufixo atual, adicionando ou removendo o `static` modificador.
+Para corrigir uma violação dessa regra, renomeie o campo usando o prefixo apropriado. Como alternativa, faça com que o campo concorde com o sufixo atual adicionando ou removendo o `static` modificador.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.

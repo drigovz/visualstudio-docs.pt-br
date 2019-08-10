@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9abe71337b5eb09d44ec6a244dc17e656768847a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 79ebba23b26e0967bc29a79e719e02d834a29f1b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541045"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919846"
 ---
 # <a name="ca5122-pinvoke-declarations-should-not-be-safe-critical"></a>CA5122: declarações P/Invoke não devem ser críticas para segurança
 
@@ -25,7 +25,7 @@ ms.locfileid: "62541045"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Uma declaração P/Invoke foi marcada com <xref:System.Security.SecuritySafeCriticalAttribute>:
+Uma declaração P/Invoke foi marcada com <xref:System.Security.SecuritySafeCriticalAttribute>:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers]
@@ -39,13 +39,13 @@ public class C
    }
 ```
 
- Neste exemplo, `C.Beep(...)` foi marcado como um método crítico de segurança.
+Neste exemplo, `C.Beep(...)` foi marcado como um método crítico de segurança.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os métodos são marcados como SecuritySafeCritical quando executam uma operação confidencial de segurança, mas também são seguros para serem usados pelo código transparente. Uma das regras básicas do modelo de transparência de segurança é que o código transparente nunca pode chamar diretamente o código nativo por P/Invoke. Por isso, a marcação de um P/Invoke como crítico de segurança não permitirá que o código transparente o chame, e é enganosa na análise de segurança.
+Os métodos são marcados como SecuritySafeCritical quando executam uma operação confidencial de segurança, mas também são seguros para serem usados pelo código transparente. Uma das regras básicas do modelo de transparência de segurança é que o código transparente nunca pode chamar diretamente o código nativo por P/Invoke. Por isso, a marcação de um P/Invoke como crítico de segurança não permitirá que o código transparente o chame, e é enganosa na análise de segurança.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para tornar P/Invoke disponível para o código transparente, exponha um método wrapper crítico de segurança para ele:
+Para tornar P/Invoke disponível para o código transparente, exponha um método wrapper crítico de segurança para ele:
 
 ```csharp
 [assembly: AllowPartiallyTrustedCallers
@@ -65,4 +65,4 @@ class C
 ```
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.

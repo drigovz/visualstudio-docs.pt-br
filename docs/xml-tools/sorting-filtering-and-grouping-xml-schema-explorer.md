@@ -1,5 +1,5 @@
 ---
-title: Classificação, filtragem e agrupamento em XML Schema Explorer
+title: Classificação, filtragem e agrupamento no XML Schema Explorer
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
@@ -8,30 +8,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740fd46d453a6e6a51285d418374d036d83bc598
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: daa629b4c26abf7b6ce801c30ea6f6fd41fbaa48
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808100"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926726"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>Classificação, filtragem e agrupamento (XML Schema Explorer)
 
-Este tópico descreve as opções que estão disponíveis por meio de **opções de agrupamento, filtragem e classificação** menu a **XML Schema Explorer** barra de ferramentas.
+Este tópico descreve as opções disponíveis por meio do menu **Opções de classificação, filtragem e agrupamento** na barra de ferramentas do **Gerenciador de esquema XML** .
 
 ## <a name="filter-options"></a>Opções de filtro
 
- As seguintes opções de filtro estão disponíveis. Por padrão, o **Mostrar Namespaces** e **Mostrar arquivos do esquema** opções são selecionadas.
+As seguintes opções de filtro estão disponíveis. Por padrão, as opções **Mostrar namespaces** e **Mostrar arquivos de esquema** estão selecionadas.
 
-- **Exibir Namespaces**.
+- **Mostrar namespaces**.
 
-- **Exibir arquivos de esquema**.
+- **Mostrar arquivos de esquema**.
 
-- **Exibir compositores (sequência/escolha/tudo)**.
+- **Mostrar compositores (sequência/escolha/tudo)** .
 
 ## <a name="sorting-options"></a>Opções de classificação
 
- As seguintes opções de classificação estão disponíveis. O padrão é **classificar por tipo**. **Classificar por** opções não se aplicam a arquivos e namespaces.
+As seguintes opções de classificação estão disponíveis. O padrão é **classificar por tipo**. As opções **classificar por** não se aplicam a arquivos e namespaces.
 
 - **Classificar por tipo**.
 
@@ -41,7 +41,7 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ### <a name="sort-by-type"></a>Classificar por Tipo
 
- Quando o **classificar por tipo** opção estiver selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
+Quando a opção **classificar por tipo** é selecionada, os nós globais são classificados na seguinte ordem. Nós são classificados em ordem alfabética dentro de cada grupo.
 
 1. nós de`import` .
 
@@ -63,7 +63,7 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ### <a name="sort-by-name"></a>Classificar por Nome
 
- Quando o **classificar por nome** opção estiver selecionada, os nós globais são classificados na seguinte ordem:
+Quando a opção **classificar por nome** for selecionada, os nós globais serão classificados na seguinte ordem:
 
 1. nós de`import` (em ordem alfabética namespaces).
 
@@ -75,8 +75,8 @@ Este tópico descreve as opções que estão disponíveis por meio de **opções
 
 ### <a name="document-order"></a>Ordem de documento
 
- O **ordem do documento** opção está disponível quando o **Mostrar arquivos do esquema** opção está selecionada. Quando **ordem do documento** for selecionada, os nós globais são exibidos na ordem em que aparecem no arquivo de esquema.
+A opção **ordem de documento** está disponível quando a opção **Mostrar arquivos de esquema** está selecionada. Quando a **ordem do documento** é selecionada, os nós globais são exibidos na ordem em que aparecem no arquivo de esquema.
 
-## <a name="persisting-sortfilter-options"></a>Opções de classificação/filtro persistentes
+## <a name="persisting-sortfilter-options"></a>Persistência das opções de classificação/filtro
 
- A classificação, filtragem, e opções de agrupamento são salvas no Registro para cada usuário, não importa qual a solução ou arquivos estavam aberta quando as configurações foram alteradas.
+A classificação, filtragem, e opções de agrupamento são salvas no Registro para cada usuário, não importa qual a solução ou arquivos estavam aberta quando as configurações foram alteradas.

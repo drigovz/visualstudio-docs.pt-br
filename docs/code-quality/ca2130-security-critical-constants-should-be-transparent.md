@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbe1f5c58b957cf3ed226af7c7b879c7a6dcfc0a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a33b650570981f5496813f575b1ae2413a960026
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796788"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920769"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Constantes críticas de segurança devem ser transparentes
 
@@ -27,18 +27,18 @@ ms.locfileid: "62796788"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um campo constante ou um membro de enumeração é marcado com o <xref:System.Security.SecurityCriticalAttribute>.
+Um campo constante ou um membro de enumeração é marcado com <xref:System.Security.SecurityCriticalAttribute>o.
 
 ## <a name="rule-description"></a>Descrição da regra
- A imposição de transparência não é imposta para valores constantes porque compiladores têm valores constantes internos de modo que nenhuma pesquisa seja necessária no tempo de execução. Os campos constantes devem ter segurança transparente de forma que os revisores de código não pressuponham que o código transparente não pode acessar a constante.
+A imposição de transparência não é imposta para valores constantes porque compiladores têm valores constantes internos de modo que nenhuma pesquisa seja necessária no tempo de execução. Os campos constantes devem ter segurança transparente de forma que os revisores de código não pressuponham que o código transparente não pode acessar a constante.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova o atributo de SecurityCritical do campo ou valor.
+Para corrigir uma violação dessa regra, remova o atributo SecurityCritical do campo ou valor.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- Nos exemplos a seguir, o valor de enumeração `EnumWithCriticalValues.CriticalEnumValue` e a constante `CriticalConstant` disparar esse aviso. Para corrigir os problemas, remova o [`SecurityCritical`] atributo para torná-los segurança transparente.
+Nos exemplos a seguir, o valor `EnumWithCriticalValues.CriticalEnumValue` de enumeração e a constante `CriticalConstant` geram esse aviso. Para corrigir os problemas, remova o atributo`SecurityCritical`[] para torná-los transparente para a segurança.
 
- [!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]
+[!code-csharp[FxCop.Security.CA2130.ConstantsShouldBeTransparent#1](../code-quality/codesnippet/CSharp/ca2130-security-critical-constants-should-be-transparent_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c4216b52fa4a23848a82548c36c34592deacc0b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545453"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921312"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Declarações P/Invoke devem ser portáteis
 
@@ -28,26 +28,26 @@ ms.locfileid: "62545453"
 |NomeDoTipo|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebrando - se o valor de P/Invoke é visível fora do assembly. Não separável - se o valor de P/Invoke não é visível fora do assembly.|
+|Alteração Significativa|Quebrando – se o P/Invoke estiver visível fora do assembly. Não separável – se a P/Invoke não estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
- Essa regra avalia o tamanho de cada parâmetro e o valor retornado de um P/Invoke e verifica se o seu tamanho, quando passa por marshaling para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. A violação dessa regra mais comuns é passar um inteiro de tamanho fixo em que uma variável dependente de plataforma, tamanho de ponteiro é necessária.
+Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke e verifica se o tamanho deles, quando marshaled para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. A violação mais comum dessa regra é passar um inteiro de tamanho fixo onde uma variável de tamanho de ponteiro dependente de plataforma é necessária.
 
 ## <a name="rule-description"></a>Descrição da regra
- Qualquer um dos cenários a seguir viola essa regra ocorre:
+Qualquer um dos seguintes cenários viola essa regra ocorre:
 
-- O valor de retorno ou parâmetro é digitado como um inteiro de tamanho fixo quando ele deve ser digitado como um `IntPtr`.
+- O valor ou o parâmetro de retorno é digitado como um inteiro de tamanho fixo quando deve ser digitado como um `IntPtr`.
 
-- O valor de retorno ou parâmetro é digitado como um `IntPtr` quando ele deve ser digitado como um inteiro de tamanho fixo.
+- O valor ou o parâmetro de retorno é digitado como um `IntPtr` quando deve ser digitado como um inteiro de tamanho fixo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Você pode corrigir essa violação usando `IntPtr` ou `UIntPtr` para representar os identificadores em vez de `Int32` ou `UInt32`.
+Você pode corrigir essa violação `IntPtr` usando ou `UIntPtr` para representar identificadores em vez `Int32` de `UInt32`ou.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Você não deve suprimir esse aviso.
+Você não deve suprimir este aviso.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir demonstra uma violação dessa regra.
+O exemplo a seguir demonstra uma violação dessa regra.
 
 ```csharp
 internal class NativeMethods
@@ -58,7 +58,7 @@ internal class NativeMethods
 }
 ```
 
- Neste exemplo, o `nIconIndex` parâmetro é declarado como um `IntPtr`, que é de 4 bytes de largura em uma plataforma de 32 bits e 8 bytes de largura em uma plataforma de 64 bits. Na declaração não gerenciada que segue, você pode ver que `nIconIndex` é um inteiro sem sinal de 4 bytes em todas as plataformas.
+Neste exemplo, o `nIconIndex` parâmetro é declarado como um `IntPtr`, que tem 4 bytes de largura em uma plataforma de 32 bits e 8 bytes de largura em uma plataforma de 64 bits. Na declaração não gerenciada a seguir, você pode ver que `nIconIndex` é um inteiro não assinado de 4 bytes em todas as plataformas.
 
 ```csharp
 HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
@@ -66,7 +66,7 @@ HICON ExtractIcon(HINSTANCE hInst, LPCTSTR lpszExeFileName,
 ```
 
 ## <a name="example"></a>Exemplo
- Para corrigir a violação, altere a declaração para o seguinte:
+Para corrigir a violação, altere a declaração para o seguinte:
 
 ```csharp
 internal class NativeMethods{
@@ -77,4 +77,4 @@ internal class NativeMethods{
 ```
 
 ## <a name="see-also"></a>Consulte também
- [Avisos de portabilidade](../code-quality/portability-warnings.md)
+[Avisos de portabilidade](../code-quality/portability-warnings.md)

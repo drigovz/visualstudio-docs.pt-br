@@ -8,17 +8,17 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f659a7aa9d078ed5ee2f8685be006aaaa2450fa0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62560045"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919565"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
-O conjunto de regras de correção básico se concentra em erros lógicos e erros comuns do uso de APIs de estrutura. As regras básicas de correção incluem as regras em que o conjunto de regras recomendadas do mínimo. Para obter mais informações, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) você deve incluir este conjunto de regras para expandir a lista de avisos que o mínimo recomendado de relatório de regras.
+O conjunto de regras básicas de regras de correção se concentra em erros lógicos e erros comuns no uso de APIs de estrutura. As regras básicas de correção incluem as regras no conjunto de regras mínimo recomendado. Para obter mais informações, consulte [regras recomendadas gerenciadas regra definida para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) , você deve incluir esse conjunto de regras para expandir na lista de avisos que o mínimo recomendado de regras.
 
- A tabela a seguir descreve todas as regras no conjunto de regras de regras de correção básico da Microsoft.
+A tabela a seguir descreve todas as regras do conjunto de regras de regras de correção básica da Microsoft.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -62,7 +62,7 @@ O conjunto de regras de correção básico se concentra em erros lógicos e erro
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Métodos transparentes devem conter apenas a IL verificável|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|O código transparente não deve referenciar itens críticos de segurança|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem atender a LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem satisfazer LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|

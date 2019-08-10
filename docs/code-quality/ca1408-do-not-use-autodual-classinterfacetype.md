@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c811c7e2b6ba06c716179469c8b038fd26b3b38a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b79483e8703ea297634d0d81d5449c09b58c9fb7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546027"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921977"
 ---
 # <a name="ca1408-do-not-use-autodual-classinterfacetype"></a>CA1408: Não usar AutoDual ClassInterfaceType
 
@@ -30,33 +30,33 @@ ms.locfileid: "62546027"
 |-|-|
 |NomeDoTipo|DoNotUseAutoDualClassInterfaceType|
 |CheckId|CA1408|
-|Categoria|Microsoft.Interoperability|
+|Categoria|Microsoft. Interoperability|
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo visível do modelo de objeto de componente (COM) está marcado com o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo definido como o `AutoDual` valor <xref:System.Runtime.InteropServices.ClassInterfaceType>.
+Um tipo de Component Object Model (com) visível é marcado com <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> o atributo definido como `AutoDual` o valor <xref:System.Runtime.InteropServices.ClassInterfaceType>de.
 
 ## <a name="rule-description"></a>Descrição da regra
- Tipos que usam uma interface dupla permitem que clientes sejam associados a um layout de interface específico. Todas as alterações feitas em uma versão futura do layout do tipo ou de qualquer tipo de base interromperão clientes COM associados à interface. Por padrão, se o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo não for especificado, uma interface somente de expedição é usada.
+Tipos que usam uma interface dupla permitem que clientes sejam associados a um layout de interface específico. Todas as alterações feitas em uma versão futura do layout do tipo ou de qualquer tipo de base interromperão clientes COM associados à interface. Por padrão, se o <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo não for especificado, uma interface somente de expedição será usada.
 
- Marcado como caso contrário, todos os tipos não genéricos públicos são visíveis para COM; todos os tipos genéricos e não públicos são invisíveis a com.&lt;1}
+A menos que marcado de outra forma, todos os tipos públicos não genéricos são visíveis para COM; todos os tipos não públicos e genéricos são invisíveis para COM.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, altere o valor da <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> de atributo para o `None` valor de <xref:System.Runtime.InteropServices.ClassInterfaceType> e definir explicitamente a interface.
+Para corrigir uma violação dessa regra, altere o valor do <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> atributo para o `None` valor de <xref:System.Runtime.InteropServices.ClassInterfaceType> e defina explicitamente a interface.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra, a menos que você tiver certeza de que o layout do tipo e seus tipos base não será alterado em uma versão futura.
+Não suprimir um aviso dessa regra, a menos que tenha certeza de que o layout do tipo e seus tipos base não serão alterados em uma versão futura.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra uma classe que viola a regra e uma nova declaração de classe para usar uma interface explícita.
+O exemplo a seguir mostra uma classe que viola a regra e uma redeclaração da classe para usar uma interface explícita.
 
- [!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
- [!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
+[!code-csharp[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/CSharp/ca1408-do-not-use-autodual-classinterfacetype_1.cs)]
+[!code-vb[FxCop.Interoperability.AutoDual#1](../code-quality/codesnippet/VisualBasic/ca1408-do-not-use-autodual-classinterfacetype_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1403: Tipos de layout automático não devem ser visíveis em COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
+[CA1403: Os tipos de layout automático não devem ser visíveis no COM](../code-quality/ca1403-auto-layout-types-should-not-be-com-visible.md)
 
- [CA1412: Marcar Interfaces ComSource como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
+[CA1412: Marcar interfaces de origem como IDispatch](../code-quality/ca1412-mark-comsource-interfaces-as-idispatch.md)
 
 ## <a name="see-also"></a>Consulte também
 

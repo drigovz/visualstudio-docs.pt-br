@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74b539d9382bf8b5f5fe319ff319cdf6f372340
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 98b75a9f67a24fd8bea1ecc3a8782b6bd9e6b34b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806952"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920602"
 ---
 # <a name="ca2137-transparent-methods-must-contain-only-verifiable-il"></a>CA2137: Métodos transparentes devem conter apenas a IL verificável
 
@@ -27,20 +27,20 @@ ms.locfileid: "62806952"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método contém código não verificável ou retorna um tipo por referência.
+Um método contém código não verificável ou retorna um tipo por referência.
 
 ## <a name="rule-description"></a>Descrição da regra
- Esta regra é acionada em tentativas por código transparente de segurança para executar MSIL (Microsoft Intermediate Language) não verificável. Entretanto, a regra não contém um verificador de IL completo e, em vez disso, usa heurística para capturar a maioria das violações de verificação de MSIL.
+Esta regra é acionada em tentativas por código transparente de segurança para executar MSIL (Microsoft Intermediate Language) não verificável. Entretanto, a regra não contém um verificador de IL completo e, em vez disso, usa heurística para capturar a maioria das violações de verificação de MSIL.
 
- Para ter certeza de que seu código contém apenas verificável MSIL, execute [Peverify.exe (ferramenta PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool) em seu assembly. Execução de PEVerify com o **/ transparente** opção que limita a saída para apenas não verificável métodos transparentes que causaria um erro. Se o / opção transparente não é usada, PEVerify também verifica os métodos críticos que podem conter código não verificável.
+Para ter certeza de que seu código contém apenas MSIL verificável, execute [peverify. exe (ferramenta PEVerify)](/dotnet/framework/tools/peverify-exe-peverify-tool) em seu assembly. Execute PEVerify com a opção **/Transparent** que limita a saída somente a métodos transparentes não verificáveis que poderiam causar um erro. Se a opção/Transparent não for usada, o PEVerify também verificará os métodos críticos que têm permissão para conter código não verificável.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, marque o método com o <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> de atributo, ou remova o código não verificável.
+Para corrigir uma violação dessa regra, marque o método com o <xref:System.Security.SecurityCriticalAttribute> atributo ou <xref:System.Security.SecuritySafeCriticalAttribute> ou remova o código não verificável.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O método neste exemplo usa um código não verificável e deve ser marcado com o <xref:System.Security.SecurityCriticalAttribute> ou <xref:System.Security.SecuritySafeCriticalAttribute> atributo.
+O método neste exemplo usa código não verificável e deve ser marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo ou. <xref:System.Security.SecuritySafeCriticalAttribute>
 
- [!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]
+[!code-csharp[FxCop.Security.CA2137.TransparentMethodsMustBeVerifiable#1](../code-quality/codesnippet/CSharp/ca2137-transparent-methods-must-contain-only-verifiable-il_1.cs)]

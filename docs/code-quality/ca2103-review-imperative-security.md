@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2417266da44c4af38e37eb8e0f67ac13a5a7823e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808224"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921421"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Examinar a segurança imperativa
 
@@ -31,18 +31,18 @@ ms.locfileid: "62808224"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.
+Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.
 
 ## <a name="rule-description"></a>Descrição da regra
- Segurança imperativa usa objetos gerenciados para especificar as permissões e as ações de segurança durante a execução de código, em comparação comparada a segurança declarativa, que usa atributos para armazenar as permissões e as ações nos metadados. Segurança obrigatória é muito flexível, pois você pode definir o estado de um objeto de permissão e selecione as ações de segurança usando as informações que não estão disponíveis até que o tempo de execução. Junto com que a flexibilidade vem o risco de que as informações de tempo de execução que você usa para determinar que o estado de uma permissão não permanece inalteradas desde que a ação está em vigor.
+A segurança imperativa usa objetos gerenciados para especificar permissões e ações de segurança durante a execução do código, em comparação com a segurança declarativa, que usa atributos para armazenar permissões e ações em metadados. A segurança imperativa é muito flexível porque você pode definir o estado de um objeto de permissão e selecionar ações de segurança usando informações que não estão disponíveis até o tempo de execução. Junto com essa flexibilidade vem o risco de que as informações de tempo de execução usadas para determinar o estado de uma permissão não permaneçam inalteradas, desde que a ação esteja em vigor.
 
- Use a segurança declarativa sempre que possível. As solicitações declarativas são mais fáceis de entender.
+Use a segurança declarativa sempre que possível. As demandas declarativas são mais fáceis de entender.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Examine as demandas de segurança obrigatória para certificar-se de que o estado da permissão não se baseia nas informações que podem ser alterados desde que a permissão está sendo usada.
+Examine as demandas de segurança imperativas para garantir que o estado da permissão não dependa de informações que podem ser alteradas desde que a permissão esteja sendo usada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, se a permissão não se baseia na alteração de dados. No entanto, é melhor alterar a demanda imperativa para seu equivalente declarativo.
+É seguro suprimir um aviso dessa regra se a permissão não depender da alteração de dados. No entanto, é melhor alterar a demanda imperativa para seu equivalente declarativo.
 
 ## <a name="see-also"></a>Consulte também
 

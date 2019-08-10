@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd3b17ad3449bebcab57344355f7cc7687ea6b19
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541071"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919871"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Processamento não seguro no design de API, no documento XML e no leitor de texto XML
 
@@ -22,30 +22,30 @@ ms.locfileid: "62541071"
 |NomeDoTipo|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Quando a criação de uma API deriva do XMLDocument e XMLTextReader, lembre-se <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>.  Usando instâncias de DTDProcessing inseguras ao referenciar ou resolvendo origens de entidade externa ou definir os valores inseguros em XML pode levar à divulgação de informações.
+Ao criar uma API derivada de XMLDocument e XMLTextReader, lembre-se <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>de.  Usar instâncias DTDProcessing inseguras ao referenciar ou resolver fontes de entidade externas ou definir valores inseguros no XML pode levar à divulgação de informações.
 
 ## <a name="rule-description"></a>Descrição da regra
- Um *definição de tipo de documento (DTD)* é uma das duas maneiras de um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra procura as propriedades e instâncias onde os dados não confiáveis é aceito para alertar os desenvolvedores sobre o potencial [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ameaças, que podem levar à [negação de serviço (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Essa regra dispara quando:
+Uma *DTD (definição de tipo de documento)* é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) , o que pode levar a ataques [de negação de serviço (dos)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regra é disparada quando:
 
-- <xref:System.Xml.XmlDocument> ou <xref:System.Xml.XmlTextReader> classes usam valores de resolvedor padrão para processamento de DTD.
+- <xref:System.Xml.XmlDocument>ou <xref:System.Xml.XmlTextReader> classes usam valores de resolvedor padrão para processamento de DTD.
 
-- Nenhum construtor for definido para o XmlDocument ou as classes derivadas de XmlTextReader ou nenhum valor seguro é usado para <xref:System.Xml.XmlResolver>.
+- Nenhum construtor é definido para as classes derivadas XmlDocument ou XmlTextReader ou nenhum valor seguro é usado para <xref:System.Xml.XmlResolver>.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-- Capturar e processar todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.
+- Pegue e processe todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.
 
 - Use <xref:System.Xml.XmlSecureResolver>em vez de XmlResolver para restringir os recursos que o XmlTextReader pode acessar.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.
+A menos que você tenha certeza de que a entrada é conhecida por ser de uma fonte confiável, não omita uma regra desse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

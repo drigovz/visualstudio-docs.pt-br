@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e4e7aa59d273242bd8b97fd4f2777b7edcb5990
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806661"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920184"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Os membros devem ser diferentes em algo além de um tipo de retorno
 
@@ -31,19 +31,19 @@ ms.locfileid: "62806661"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Dois membros públicos ou protegidos têm assinaturas que são idênticas, exceto por tipo de retorno.
+Dois membros públicos ou protegidos têm assinaturas que são idênticas, exceto pelo tipo de retorno.
 
 ## <a name="rule-description"></a>Descrição da regra
- Embora o common language runtime permite o uso de tipos de retorno para diferenciar entre membros outrora idênticos, esse recurso não está na especificação da linguagem comum, nem é um recurso comum das linguagens de programação do .NET. Quando os membros diferem somente por tipo de retorno, os desenvolvedores e ferramentas de desenvolvimento podem não distinguir corretamente entre eles.
+Embora o Common Language Runtime permita o uso de tipos de retorno para diferenciar entre outros membros idênticos, esse recurso não está no Common Language Specification, nem é um recurso comum das linguagens de programação do .NET. Quando os membros diferem apenas pelo tipo de retorno, os desenvolvedores e as ferramentas de desenvolvimento podem não distinguir corretamente entre eles.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, altere o design dos membros para que eles são exclusivos com base apenas em seus nomes e tipos de parâmetro ou não exponham os membros.
+Para corrigir uma violação dessa regra, altere o design dos membros para que eles sejam exclusivos com base apenas em seus nomes e tipos de parâmetros, ou não exponha os membros.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir, na Microsoft intermediate language (MSIL), mostra um tipo que viola essa regra. Observe que essa regra não pode ser violada usando c# ou Visual Basic.
+O exemplo a seguir, em MSIL (Microsoft Intermediate Language), mostra um tipo que viola essa regra. Observe que essa regra não pode ser violada usando C# ou Visual Basic.
 
 ```
 .namespace UsageLibrary
