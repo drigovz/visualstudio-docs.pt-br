@@ -8,19 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62571362"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919537"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretriz do design básico para código gerenciado
-Você pode usar as regras de diretrizes de Design básico do Microsoft conjunto de regras para se concentrar em como tornar seu código mais fácil de entender e usar. Você deve incluir essa regra definida se seu projeto incluir código de biblioteca ou se você quiser impor práticas recomendadas para o código que é fácil de manter.
+Você pode usar o conjunto de regras de diretrizes de design básico da Microsoft para se concentrar em tornar seu código mais fácil de entender e usar. Você deve incluir esse conjunto de regras se seu projeto incluir código de biblioteca ou se você quiser impor práticas recomendadas para o código que é fácil de manter.
 
- As regras básicas de diretrizes de Design incluem todas as regras no conjunto de regras de regras de recomendável mínimo da Microsoft. Para obter uma lista das regras de mínima, consulte [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+As regras de diretriz de design básicas incluem todas as regras no conjunto de regras de regras de Recommeded mínimas da Microsoft. Para obter uma lista das regras mínimas, consulte conjunto de regras da [regra recomendada gerenciada para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
 
- A tabela a seguir descreve todas as regras no conjunto de regras de regras de diretrizes de Design básico do Microsoft.
+A tabela a seguir descreve todas as regras do conjunto de regras de regra de diretrizes de design básico da Microsoft.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -64,7 +64,7 @@ Você pode usar as regras de diretrizes de Design básico do Microsoft conjunto 
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Métodos transparentes devem conter apenas a IL verificável|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|O código transparente não deve referenciar itens críticos de segurança|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem atender a LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem satisfazer LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|

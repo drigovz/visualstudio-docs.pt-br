@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a98ec47688f289fadba66401aca9fcee7b602cdc
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779669"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923565"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar manipuladores de eventos corretamente
 
@@ -35,31 +35,31 @@ ms.locfileid: "62779669"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um delegado que manipula um evento público ou protegido não tem a assinatura correta, tipo de retorno, ou nomes de parâmetro.
+Um delegado que manipula um evento público ou protegido não tem a assinatura, o tipo de retorno ou os nomes de parâmetro corretos.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os métodos de manipulador de eventos utilizam dois parâmetros. A primeira é do tipo <xref:System.Object?displayProperty=fullName> e é denominado 'remetente'. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é chamado 'e'. Esses são os dados associados ao evento. Por exemplo, se o evento é gerado sempre que um arquivo é aberto, os dados de evento normalmente contém o nome do arquivo.
+Os métodos de manipulador de eventos utilizam dois parâmetros. O primeiro é do tipo <xref:System.Object?displayProperty=fullName> e é chamado de ' Remetente '. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é denominado ' e '. Esses são os dados associados ao evento. Por exemplo, se o evento for gerado sempre que um arquivo for aberto, os dados do evento normalmente conterá o nome do arquivo.
 
- Métodos do manipulador de eventos não devem retornar um valor. No c# linguagem de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode chamar vários métodos em vários objetos. Se os métodos eram permitidos para retornar um valor, vários valores de retorno ocorreria para cada evento, e apenas o valor do último método que foi invocado estaria disponível.
+Os métodos do manipulador de eventos não devem retornar um valor. Na linguagem C# de programação, isso é indicado pelo tipo `void`de retorno. Um manipulador de eventos pode invocar vários métodos em vários objetos. Se os métodos tivessem permissão para retornar um valor, vários valores de retorno ocorreriam para cada evento, e somente o valor do último método que foi invocado estaria disponível.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, corrija a assinatura, tipo de retorno ou nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.
+Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou os nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um delegado que é adequado para manipulação de eventos. Os métodos que podem ser invocados por este manipulador de eventos está em conformidade com a assinatura que é especificada nas diretrizes de Design. `AlarmEventHandler` é o nome do tipo do delegado. `AlarmEventArgs` deriva da classe base para os dados de evento, <xref:System.EventArgs>, e mantém dados de evento do alarme.
+O exemplo a seguir mostra um delegado que é adequado para manipular eventos. Os métodos que podem ser invocados por esse manipulador de eventos estão em conformidade com a assinatura especificada nas diretrizes de design. `AlarmEventHandler`é o nome do tipo do delegado. `AlarmEventArgs`deriva da classe base para dados de evento, <xref:System.EventArgs>e mantém dados de evento de alarme.
 
- [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
- [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
- [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
+[!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
+[!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
+[!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA2109: Revisar manipuladores de eventos visíveis](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: Examinar os manipuladores de eventos visíveis](../code-quality/ca2109-review-visible-event-handlers.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.EventArgs?displayProperty=fullName>
 - <xref:System.Object?displayProperty=fullName>
-- [Manipulando e acionando eventos](/dotnet/standard/events/index)
+- [Manipulando e gerando eventos](/dotnet/standard/events/index)

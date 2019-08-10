@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f9304fcd86a9b36a729b1436fe16471b449ac0d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d765bfda87fe184256304b86f145f4f02adb7db6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778717"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922635"
 ---
 # <a name="ca1046-do-not-overload-operator-equals-on-reference-types"></a>CA1046: Não sobrecarregar o operador equals em tipos de referência
 
@@ -31,21 +31,21 @@ ms.locfileid: "62778717"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo de referência pública ou público aninhado sobrecarrega o operador de igualdade.
+Um tipo de referência pública pública ou aninhada sobrecarrega o operador de igualdade.
 
 ## <a name="rule-description"></a>Descrição da regra
- Para tipos de referência, a implementação padrão do operador de igualdade está quase sempre correta. Por padrão, duas referências só serão iguais se apontarem para o mesmo objeto.
+Para tipos de referência, a implementação padrão do operador de igualdade está quase sempre correta. Por padrão, duas referências só serão iguais se apontarem para o mesmo objeto.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova a implementação do operador de igualdade.
+Para corrigir uma violação dessa regra, remova a implementação do operador de igualdade.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, quando o tipo de referência se comporta como um tipo de valor interno. Se for significativo para fazer a adição ou subtração em instâncias do tipo, é provavelmente correto implementar o operador de igualdade e suprimir a violação.
+É seguro suprimir um aviso dessa regra quando o tipo de referência se comporta como um tipo de valor interno. Se for significativo fazer adição ou subtração em instâncias do tipo, provavelmente será correto implementar o operador de igualdade e suprimir a violação.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir demonstra o comportamento padrão ao comparar duas referências.
+O exemplo a seguir demonstra o comportamento padrão ao comparar duas referências.
 
- [!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
+[!code-csharp[FxCop.Design.RefTypesNoEqualityOp#1](../code-quality/codesnippet/CSharp/ca1046-do-not-overload-operator-equals-on-reference-types_1.cs)]
 
 ## <a name="example"></a>Exemplo
 
@@ -64,7 +64,7 @@ c and a are == ? Yes
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1013: Sobrecarregar operador equals ao sobrecarregar adicionar e subtrair](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
+[CA1013: Sobrecarga do operador Equals ao sobrecarregar adicionar e subtrair](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)
 
 ## <a name="see-also"></a>Consulte também
 

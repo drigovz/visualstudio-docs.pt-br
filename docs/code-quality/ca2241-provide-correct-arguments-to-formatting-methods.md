@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f9f48f9cba146251aee1a58ffc7a3403ed899c4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541461"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920010"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Fornecer argumentos corretos para métodos de formatação
 
@@ -32,22 +32,22 @@ ms.locfileid: "62541461"
 |NomeDoTipo|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- O `format` argumento passado para um método, como de cadeia de caracteres <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, ou <xref:System.String.Format%2A?displayProperty=fullName> não contém um item de formato que corresponde a cada argumento de objeto, ou vice-versa.
+O `format` argumento de cadeia de caracteres passado para um <xref:System.Console.WriteLine%2A>método <xref:System.Console.Write%2A>como, <xref:System.String.Format%2A?displayProperty=fullName> ou não contém um item de formato que corresponde a cada argumento de objeto, ou vice-versa.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os argumentos para métodos como <xref:System.Console.WriteLine%2A>, <xref:System.Console.Write%2A>, e <xref:System.String.Format%2A> consistem em uma cadeia de formato, seguida por várias <xref:System.Object?displayProperty=fullName> instâncias. A cadeia de caracteres de formato consiste em texto e itens de formato inserido no formato {índice [, alinhamento] [: formatString]}. 'index' é um inteiro baseado em zero que indica qual dos objetos a serem formatados. Se um objeto não tem um índice correspondente na cadeia de caracteres de formato, o objeto será ignorado. Se o objeto especificado por 'index' não existe, um <xref:System.FormatException?displayProperty=fullName> é gerada em tempo de execução.
+Os argumentos para métodos <xref:System.Console.WriteLine%2A>como, <xref:System.Console.Write%2A>e <xref:System.String.Format%2A> consistem em uma cadeia de caracteres de formato seguida <xref:System.Object?displayProperty=fullName> por várias instâncias. A cadeia de caracteres de formato consiste em texto e itens de formato inseridos do formulário, {index [, Alignment] [: formatString]}. ' Index ' é um inteiro de base zero que indica qual dos objetos a serem formatados. Se um objeto não tiver um índice correspondente na cadeia de caracteres de formato, o objeto será ignorado. Se o objeto especificado por ' Index ' não existir, um <xref:System.FormatException?displayProperty=fullName> será lançado no tempo de execução.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, forneça um item de formato para cada argumento de objeto e fornecer um argumento de objeto para cada item de formato.
+Para corrigir uma violação dessa regra, forneça um item de formato para cada argumento de objeto e forneça um argumento de objeto para cada item de formato.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra dois violações da regra.
+O exemplo a seguir mostra duas violações da regra.
 
- [!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
- [!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]
+[!code-vb[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/VisualBasic/ca2241-provide-correct-arguments-to-formatting-methods_1.vb)]
+[!code-csharp[FxCop.Usage.FormattingArguments#1](../code-quality/codesnippet/CSharp/ca2241-provide-correct-arguments-to-formatting-methods_1.cs)]

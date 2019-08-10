@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8239b27cd92f66ae8f74ddb1accd95535bf56f93
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 340d8f0a45506f15cdd9281f7ecda463583c3144
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62542331"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920820"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122: Não expor indiretamente métodos com demandas de link
 
@@ -28,29 +28,29 @@ ms.locfileid: "62542331"
 |NomeDoTipo|DoNotIndirectlyExposeMethodsWithLinkDemands|
 |CheckId|CA2122|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um membro público ou protegido tem um [demandas de Link](/dotnet/framework/misc/link-demands) e é chamado por um membro que não executa nenhuma verificação de segurança.
+Um membro público ou protegido tem uma [demanda de link](/dotnet/framework/misc/link-demands) e é chamado por um membro que não executa nenhuma verificação de segurança.
 
 ## <a name="rule-description"></a>Descrição da regra
- Uma exigência de vínculo verifica as permissões apenas do chamador imediato. Se um membro `X` não faz com que nenhum demandas de segurança de seus chamadores e chamadas de código protegido por uma demanda de link em um chamador sem a permissão necessária pode usar `X` para acessar o membro protegido.
+Uma exigência de vínculo verifica as permissões apenas do chamador imediato. Se um membro `X` não fizer nenhuma demanda de segurança de seus chamadores e chamar o código protegido por uma demanda de link, um chamador sem a permissão `X` necessária poderá usar o para acessar o membro protegido.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Adicionar uma segurança [dados e modelagem](/dotnet/framework/data/index) ou vincular a demanda para o membro para que ele não fornece mais acesso desprotegido para o membro protegido por demanda de link.
+Adicione dados de segurança [e modelagem](/dotnet/framework/data/index) ou demanda de link ao membro para que ele não forneça mais acesso sem segurança ao membro protegido por demanda de link.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Para suprimir com segurança um aviso nessa regra, certifique-se de que seu código não concede seus chamadores acesso a recursos que podem ser usados de forma destrutivas ou operações.
+Para suprimir um aviso dessa regra com segurança, você deve certificar-se de que seu código não concede aos chamadores acesso a operações ou recursos que podem ser usados de maneira destrutiva.
 
 ## <a name="example-1"></a>Exemplo 1
- Os exemplos a seguir mostram uma biblioteca que viola a regra e um aplicativo que demonstra a desvantagem da biblioteca. A biblioteca de exemplo fornece dois métodos que juntos violam a regra. O `EnvironmentSetting` método é protegido por uma demanda de link para acesso irrestrito a variáveis de ambiente. O `DomainInformation` método não faz nenhuma demandas de segurança de seus chamadores antes de chamar `EnvironmentSetting`.
+Os exemplos a seguir mostram uma biblioteca que viola a regra e um aplicativo que demonstra a fraqueza da biblioteca. A biblioteca de exemplo fornece dois métodos que juntos violam a regra. O `EnvironmentSetting` método é protegido por uma demanda de link para acesso irrestrito a variáveis de ambiente. O `DomainInformation` método não faz nenhuma demanda de segurança de seus chamadores antes `EnvironmentSetting`de chamar.
 
- [!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
+[!code-csharp[FxCop.Security.UnsecuredDoNotCall#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_1.cs)]
 
 ## <a name="example-2"></a>Exemplo 2
- O aplicativo a seguir chama o membro da biblioteca não segura.
+O aplicativo a seguir chama o membro da biblioteca não segura.
 
- [!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
+[!code-csharp[FxCop.Security.TestUnsecuredDoNot1#1](../code-quality/codesnippet/CSharp/ca2122-do-not-indirectly-expose-methods-with-link-demands_2.cs)]
 
 Este exemplo gera a seguinte saída:
 

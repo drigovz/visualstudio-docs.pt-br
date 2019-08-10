@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c35a15e9ce1468edd2882396192a27a3fcc2c86
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796787"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920795"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Encapsular cláusulas finally vulneráveis em try externo
 
@@ -28,24 +28,24 @@ ms.locfileid: "62796787"
 |NomeDoTipo|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Nas versões 1.0 e 1.1 do .NET Framework, um método público ou protegido contém um `try` / `catch` / `finally` bloco. O `finally` bloco aparece para redefinir o estado de segurança e não é colocado um `finally` bloco.
+Nas versões 1,0 e 1,1 do .NET Framework, um método público ou protegido `try` contém um / `catch` / `finally` bloco. O `finally` bloco é exibido para redefinir o estado de segurança e não está `finally` incluído em um bloco.
 
 ## <a name="rule-description"></a>Descrição da regra
- Essa regra localiza `try` / `finally` bloqueia no código que tem como alvo as versões 1.0 e 1.1 do .NET Framework que podem ser vulneráveis a filtros de exceção mal-intencionados presentes na pilha de chamadas. Se operações confidenciais como representação ocorrerem no bloco try, e uma exceção é lançada, o filtro pode ser executado antes de `finally` bloco. No exemplo de representação, isso significa que o filtro seria executado como o usuário representado. Os filtros são implementável atualmente apenas no Visual Basic.
+Essa regra localiza `try` / blocos no código que têm como destino as versões 1,0 e 1,1 do .NET Framework que podem estar vulneráveis a filtros de exceção mal-intencionada presentes na pilha de chamadas. `finally` Se operações confidenciais, como a representação ocorrerem no bloco try, e uma exceção for lançada, o filtro poderá ser executado `finally` antes do bloco. Para o exemplo de representação, isso significa que o filtro seria executado como o usuário representado. Atualmente, os filtros são implementados somente em Visual Basic.
 
 > [!NOTE]
-> Nas versões 2.0 e posteriores do .NET Framework, o tempo de execução protege automaticamente um `try` / `catch` /  `finally` bloquear de filtros de exceção mal-intencionados, se a reinicialização ocorrer diretamente dentro do método que contém o bloco de exceção.
+> Nas versões 2,0 e posteriores do .NET Framework, o tempo de execução protege `try` automaticamente um /  / `catch` `finally` bloco de filtros de exceção mal-intencionada, se a redefinição ocorrer diretamente dentro do método que contém o bloco de exceção.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Coloque o desencapsulamento `try` / `finally` em um bloco try externo. Consulte o segundo exemplo que segue. Isso força o `finally` seja executado antes do código de filtro.
+Coloque o desencapsulado `try` / `finally` em um bloco try externo. Consulte o segundo exemplo a seguir. Isso força o `finally` a executar antes do código de filtro.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
-## <a name="pseudo-code-example"></a>Exemplo de pseudocódigo
+## <a name="pseudo-code-example"></a>Exemplo de pseudo-código
 
 ### <a name="description"></a>Descrição
 

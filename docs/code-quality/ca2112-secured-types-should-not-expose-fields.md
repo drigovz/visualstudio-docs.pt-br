@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d46c9fe1b97b5bdfb081150a44aa69363eced53
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 43ef4165823f59045dda8c05b5679fdd3b795114
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808221"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921091"
 ---
 # <a name="ca2112-secured-types-should-not-expose-fields"></a>CA2112: Tipos protegidos não devem expor campos
 
@@ -31,33 +31,33 @@ ms.locfileid: "62808221"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo público ou protegido contém campos públicos e é protegido por um [demandas de Link](/dotnet/framework/misc/link-demands).
+Um tipo público ou protegido contém campos públicos e é protegido por demandas de [link](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descrição da regra
- Se tiver acesso a uma instância de um tipo protegido por uma exigência de vínculo, o código não precisará atender à exigência de vínculo para acessar os campos do tipo.
+Se tiver acesso a uma instância de um tipo protegido por uma exigência de vínculo, o código não precisará atender à exigência de vínculo para acessar os campos do tipo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, tornar os campos não públicos e adicione propriedades públicas nem os métodos que retornam os dados do campo. Verificações de segurança de LinkDemand em tipos de protegem o acesso a métodos e propriedades do tipo. No entanto, a segurança de acesso do código não se aplica aos campos.
+Para corrigir uma violação dessa regra, torne os campos não públicos e adicione propriedades públicas ou métodos que retornam os dados do campo. As verificações de segurança de LinkDemand em tipos protegem o acesso às propriedades e aos métodos do tipo. No entanto, a segurança de acesso ao código não se aplica a campos.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Para problemas de segurança e para um bom design, você deve corrigir violações fazendo não públicos campos públicos. Você pode suprimir um aviso nessa regra, se o campo não mantém informações que devem permanecer protegidas, e você não confiar no conteúdo do campo.
+Para problemas de segurança e para um bom design, você deve corrigir violações tornando os campos públicos não públicos. Você poderá suprimir um aviso dessa regra se o campo não mantiver informações que devem permanecer protegidas e se você não depender do conteúdo do campo.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir é composto de um tipo de biblioteca (`SecuredTypeWithFields`) com os campos não seguros, um tipo (`Distributor`) que pode criar instâncias do tipo biblioteca incorreta passa instâncias de tipos não tem permissão para criá-los e código de aplicativo pode ler os campos de uma instância mesmo que ele não tem a permissão que protege o tipo.
+O exemplo a seguir é composto de um tipo de`SecuredTypeWithFields`biblioteca () com campos não seguros, um tipo`Distributor`() que pode criar instâncias do tipo de biblioteca e as instâncias de passes incorretas para os tipos não têm permissão para criá-las e o código do aplicativo que pode ler os campos de uma instância, embora não tenha a permissão que protege o tipo.
 
- O seguinte código de biblioteca viola a regra.
+O código de biblioteca a seguir viola a regra.
 
- [!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
+[!code-csharp[FxCop.Security.LinkDemandOnField#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_1.cs)]
 
 ## <a name="example-1"></a>Exemplo 1
- O aplicativo não é possível criar uma instância devido à exigência de vínculo que protege o tipo seguro. A classe a seguir permite que o aplicativo para obter uma instância do tipo seguro.
+O aplicativo não pode criar uma instância devido à demanda de link que protege o tipo protegido. A classe a seguir permite que o aplicativo obtenha uma instância do tipo protegido.
 
- [!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
+[!code-csharp[FxCop.Security.LDOnFieldsDistributor#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_2.cs)]
 
 ## <a name="example-2"></a>Exemplo 2
- O aplicativo a seguir ilustra como fazer isso, sem a permissão para acessar os métodos do tipo seguro, o código pode acessar seus campos.
+O aplicativo a seguir ilustra como, sem permissão para acessar métodos de um tipo protegido, o código pode acessar seus campos.
 
- [!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
+[!code-csharp[FxCop.Security.TestLinkDemandOnFields#1](../code-quality/codesnippet/CSharp/ca2112-secured-types-should-not-expose-fields_3.cs)]
 
 Este exemplo gera a seguinte saída:
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c1d2aa6f0889216b39b891b042989f1c8c69692
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5daf51cd8bef4910a327b8e261f15332ad6522da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545978"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921618"
 ---
 # <a name="ca1722-identifiers-should-not-have-incorrect-prefix"></a>CA1722: Identificadores não devem ter um prefixo incorreto
 
@@ -31,20 +31,20 @@ ms.locfileid: "62545978"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um identificador tem um prefixo incorreto.
+Um identificador tem um prefixo incorreto.
 
 ## <a name="rule-description"></a>Descrição da regra
- Por convenção, somente determinados elementos de programação têm nomes que começam com um prefixo específico.
+Por convenção, somente determinados elementos de programação têm nomes que começam com um prefixo específico.
 
- Nomes de tipo não têm um prefixo específico e não devem ser prefixados com um 'c'. Esta regra relata violações para nomes de tipo como 'CMyClass' e não relata violações para nomes de tipo como 'Cache'.
+Os nomes de tipo não têm um prefixo específico e não devem ser prefixados com um ' C'. Essa regra relata violações para nomes de tipo, como ' CMyClass ', e não relata violações para nomes de tipo, como ' cache '.
 
- Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Essa consistência reduz a curva de aprendizado necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Essa consistência reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Remova o prefixo do identificador.
+Remova o prefixo do identificador.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1715: Os identificadores devem ter prefixo correto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)
+[CA1715: Os identificadores devem ter o prefixo correto](../code-quality/ca1715-identifiers-should-have-correct-prefix.md)

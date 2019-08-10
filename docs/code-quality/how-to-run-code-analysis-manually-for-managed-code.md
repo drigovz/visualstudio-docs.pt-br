@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 588f78c600aa7c78894a2e0bdc7f4443f4e86b31
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62815812"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923974"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Como: Executar análise de código manualmente para código gerenciado
-A ferramenta de análise de código fornece informações a você sobre possíveis defeitos no seu código-fonte. Você pode executar a análise de código automaticamente com cada compilação de um projeto de código, e você também pode executar a análise de código manualmente. As regras que são verificadas quando a análise de código é executada são especificadas na página de análise de código das páginas de propriedades do projeto. Para obter mais informações, confira [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
+A ferramenta de análise de código fornece informações sobre possíveis defeitos em seu código-fonte. Você pode executar a análise de código automaticamente com cada compilação de um projeto de código e também pode executar a análise de código manualmente. As regras que são verificadas quando a análise de código é executada são especificadas na página análise de código das páginas de propriedades do projeto. Para obter mais informações, confira [Como: Configure a análise de código para um projeto](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)de código gerenciado.
 
 ### <a name="to-run-code-analysis-manually"></a>Para executar a análise de código manualmente
 
-1. Na **Gerenciador de soluções**, clique no projeto.
+1. Em **Gerenciador de soluções**, clique no projeto.
 
-2. Sobre o **Analyze** menu, clique em **executar análise de código na** *nome do projeto*.
+2. No menu **analisar** , clique em **executar análise de código no** *nome do projeto*.

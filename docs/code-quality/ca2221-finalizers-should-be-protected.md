@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3da7f0da3901511e0f14e48b3ff0500928e3774
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e88f22f25ff0620a88685dee93fd5658c302db74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806622"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920236"
 ---
 # <a name="ca2221-finalizers-should-be-protected"></a>CA2221: Os finalizadores devem ser protegidos
 
@@ -28,22 +28,22 @@ ms.locfileid: "62806622"
 |NomeDoTipo|FinalizersShouldBeProtected|
 |CheckId|CA2221|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um tipo público implementa um finalizador que não especificam o acesso da família (protegido).
+Um tipo público implementa um finalizador que não especifica acesso de família (protegido).
 
 ## <a name="rule-description"></a>Descrição da regra
- Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores c#, Visual Basic e Visual C++.
+Os finalizadores deve usar o modificador de acesso da família. Essa regra é imposta pelos compiladores C#, Visual Basic e Visual. C++
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, altere o finalizador para ser acessível de família.
+Para corrigir uma violação dessa regra, altere o finalizador para ser acessível por família.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- Essa regra não pode ser violada em qualquer linguagem .NET de alto nível; ele pode ser violado se você estiver escrevendo Microsoft Intermediate Language.
+Esta regra não pode ser violada em nenhuma linguagem .NET de alto nível; Ele poderá ser violado se você estiver escrevendo uma linguagem intermediária da Microsoft.
 
 ```
 // =============== CLASS MEMBERS DECLARATION ===================

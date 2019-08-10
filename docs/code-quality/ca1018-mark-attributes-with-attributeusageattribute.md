@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c0aa3fe5c45e34445c49c4b3a5f0abad1e98739
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779331"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923067"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos com AttributeUsageAttribute
 
@@ -34,29 +34,29 @@ ms.locfileid: "62779331"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- O <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo não está presente no atributo personalizado.
+O <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo não está presente no atributo personalizado.
 
 ## <a name="rule-description"></a>Descrição da regra
- Quando você define um atributo personalizado, marcá-la usando <xref:System.AttributeUsageAttribute> para indicar onde no código-fonte do atributo personalizado pode ser aplicado. O significado e o uso desejado de um atributo determinarão seus locais válidos no código. Por exemplo, você pode definir um atributo que identifica a pessoa a quem é responsável por manter e aprimorar a cada tipo em uma biblioteca e responsabilidade sempre é atribuída no nível do tipo. Nesse caso, os compiladores devem habilitar o atributo em classes, enumerações e interfaces, mas não devem habilitá-lo em métodos, eventos ou propriedades. Procedimentos e as políticas organizacionais determinaria se o atributo deve ser habilitado em assemblies.
+Quando você define um atributo personalizado, marque-o usando <xref:System.AttributeUsageAttribute> para indicar onde no código-fonte o atributo personalizado pode ser aplicado. O significado e o uso desejado de um atributo determinarão seus locais válidos no código. Por exemplo, você pode definir um atributo que identifica a pessoa responsável por manter e aprimorar cada tipo em uma biblioteca, e essa responsabilidade sempre é atribuída no nível de tipo. Nesse caso, os compiladores devem habilitar o atributo em classes, enumerações e interfaces, mas não devem habilitá-lo em métodos, eventos ou propriedades. Procedimentos e políticas organizacionais ditariam se o atributo deveria ser habilitado em assemblies.
 
- O <xref:System.AttributeTargets?displayProperty=fullName> enumeração define os destinos que você pode especificar para um atributo personalizado. Se você omitir <xref:System.AttributeUsageAttribute>, o atributo personalizado será válido para todos os destinos, conforme definido pelo `All` valor <xref:System.AttributeTargets> enumeração.
+A <xref:System.AttributeTargets?displayProperty=fullName> enumeração define os destinos que você pode especificar para um atributo personalizado. Se você omitir <xref:System.AttributeUsageAttribute>, seu atributo personalizado será válido para todos os destinos, conforme definido `All` pelo valor de <xref:System.AttributeTargets> enumeração.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, especificar destinos para o atributo usando <xref:System.AttributeUsageAttribute>. Consulte o exemplo a seguir.
+Para corrigir uma violação dessa regra, especifique destinos para o atributo usando <xref:System.AttributeUsageAttribute>. Consulte o exemplo a seguir.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Você deve corrigir uma violação dessa regra, em vez de excluir a mensagem. Mesmo se o atributo herda <xref:System.AttributeUsageAttribute>, o atributo deve estar presente para simplificar a manutenção do código.
+Você deve corrigir uma violação dessa regra em vez de excluir a mensagem. Mesmo que o atributo herde <xref:System.AttributeUsageAttribute>, o atributo deve estar presente para simplificar a manutenção do código.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir define dois atributos. `BadCodeMaintainerAttribute` omite incorretamente a <xref:System.AttributeUsageAttribute> instrução, e `GoodCodeMaintainerAttribute` implementa corretamente o atributo que é descrito anteriormente nesta seção. Observe que a propriedade `DeveloperName` é necessária para a regra de criação [CA1019: Definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) e está incluído para integridade.
+O exemplo a seguir define dois atributos. `BadCodeMaintainerAttribute`omite incorretamente a <xref:System.AttributeUsageAttribute> instrução e `GoodCodeMaintainerAttribute` implementa corretamente o atributo descrito anteriormente nesta seção. Observe que a propriedade `DeveloperName` é exigida pela regra [de design CA1019: Defina acessadores para argumentos](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) de atributo e que estão incluídos para fins de integridade.
 
- [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
- [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
+[!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
+[!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1019: Definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
+[CA1019: Definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
- [CA1813: Evitar atributos não lacrados](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitar atributos sem lacre](../code-quality/ca1813-avoid-unsealed-attributes.md)
 
 ## <a name="see-also"></a>Consulte também
 

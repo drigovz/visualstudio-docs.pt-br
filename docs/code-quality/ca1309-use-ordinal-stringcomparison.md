@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b00accdbdb08e4267bbca2b7e5fab8002f539f1d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c528266c54bbb2f3f0d9420461d700a46b09bd5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546473"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922278"
 ---
 # <a name="ca1309-use-ordinal-stringcomparison"></a>CA1309: Usar StringComparison ordinal
 
@@ -27,23 +27,23 @@ ms.locfileid: "62546473"
 |-|-|
 |NomeDoTipo|UseOrdinalStringComparison|
 |CheckId|CA1309|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Uma operação de comparação de cadeia de caracteres linguística não define o <xref:System.StringComparison> parâmetro a **Ordinal** ou **OrdinalIgnoreCase**.
+Uma operação de comparação de cadeia de caracteres não lingüística não define <xref:System.StringComparison> o parâmetro como **ordinal** ou **OrdinalIgnoreCase**.
 
 ## <a name="rule-description"></a>Descrição da regra
- Muitos de cadeia de caracteres operações, mais importante é que o <xref:System.String.Compare%2A?displayProperty=fullName> e <xref:System.String.Equals%2A?displayProperty=fullName> métodos, agora fornecem uma sobrecarga que aceita um <xref:System.StringComparison?displayProperty=fullName> valor de enumeração como um parâmetro.
+Muitas operações de cadeia de caracteres, <xref:System.String.Compare%2A?displayProperty=fullName> mais <xref:System.String.Equals%2A?displayProperty=fullName> importante, os métodos e, agora fornecem uma <xref:System.StringComparison?displayProperty=fullName> sobrecarga que aceita um valor de enumeração como um parâmetro.
 
- Quando você especificar **StringComparison. ordinal** ou **StringComparison. OrdinalIgnoreCase**, a comparação de cadeia de caracteres é não linguística. Ou seja, os recursos que são específicos para o idioma natural são ignorados quando a comparação decisões são tomadas. Ignorar os recursos de linguagem natural significa que as decisões com base em comparações de byte simples e não em maiusculas e minúsculas ou tabelas de equivalência que são parametrizadas pela cultura. Como resultado, definindo explicitamente o parâmetro como o **StringComparison. ordinal** ou **StringComparison. OrdinalIgnoreCase**, seu código normalmente ganha velocidade, aumenta a exatidão e torna-se mais confiável.
+Quando você especifica **StringComparison. Ordinal** ou **StringComparison. OrdinalIgnoreCase**, a comparação de cadeia de caracteres é não lingüística. Ou seja, os recursos que são específicos para o idioma natural são ignorados quando as decisões de comparação são feitas. Ignorar recursos de linguagem natural significa que as decisões são baseadas em comparações de byte simples e não em maiúsculas ou minúsculas ou tabelas de equivalência que são parametrizadas por cultura. Como resultado, definir explicitamente o parâmetro como **StringComparison. Ordinal** ou **StringComparison. OrdinalIgnoreCase**, seu código geralmente ganha velocidade, aumenta a exatidão e se torna mais confiável.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, altere o método de comparação de cadeia de caracteres para uma sobrecarga que aceita o <xref:System.StringComparison?displayProperty=fullName> enumeração como um parâmetro e especifique **Ordinal** ou **OrdinalIgnoreCase**. Por exemplo, altere `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Para corrigir uma violação dessa regra, altere o método de comparação de cadeia de caracteres para uma sobrecarga <xref:System.StringComparison?displayProperty=fullName> que aceite a enumeração como um parâmetro e especifique o **ordinal** ou **OrdinalIgnoreCase**. Por exemplo, altere `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, quando o aplicativo ou biblioteca destina-se para um público limitado de local, ou quando a semântica da cultura atual deve ser usada.
+É seguro suprimir um aviso dessa regra quando a biblioteca ou o aplicativo se destina a um público local limitado ou quando a semântica da cultura atual deve ser usada.
 
 ## <a name="see-also"></a>Consulte também
 

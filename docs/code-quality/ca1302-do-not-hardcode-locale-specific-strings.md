@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a52add4453276ebf415b47f7f50e74b51a573306
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0b3789b5e786038c2bf1fe5e823a1b0fb4f7a7c9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546501"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922722"
 ---
 # <a name="ca1302-do-not-hardcode-locale-specific-strings"></a>CA1302: Não embutir no código cadeias de caracteres específicas da localidade
 
@@ -30,28 +30,28 @@ ms.locfileid: "62546501"
 |-|-|
 |NomeDoTipo|DoNotHardcodeLocaleSpecificStrings|
 |CheckId|CA1302|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Um método usa uma cadeia de caracteres literal que representa a parte do caminho de determinadas pastas do sistema.
+Um método usa um literal de cadeia de caracteres que representa parte do caminho de determinadas pastas do sistema.
 
 ## <a name="rule-description"></a>Descrição da regra
- O <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumeração contém membros que se referem a pastas especiais do sistema. Os locais dessas pastas podem ter valores diferentes em diferentes sistemas operacionais, o usuário pode alterar alguns dos locais e os locais são localizados. Um exemplo de uma pasta especial é a pasta do sistema, que é "C:\WINDOWS\system32" em [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] mas "C:\WINNT\system32" em [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]. O <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> método retorna os locais que estão associados a <xref:System.Environment.SpecialFolder> enumeração. Os locais que são retornados pelo <xref:System.Environment.GetFolderPath%2A> são localizados e apropriado para o computador em execução no momento.
+A <xref:System.Environment.SpecialFolder?displayProperty=fullName> enumeração contém membros que se referem a pastas especiais do sistema. Os locais dessas pastas podem ter valores diferentes em sistemas operacionais diferentes, o usuário pode alterar alguns dos locais e os locais são localizados. Um exemplo de uma pasta especial é a pasta do sistema, que é "C:\Windows\System32" [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)] em, mas "C:\winnt\system32 [!INCLUDE[win2kfamily](../code-quality/includes/win2kfamily_md.md)]" em. O <xref:System.Environment.GetFolderPath%2A?displayProperty=fullName> método retorna os locais associados <xref:System.Environment.SpecialFolder> à enumeração. Os locais retornados pelo <xref:System.Environment.GetFolderPath%2A> são localizados e apropriados para o computador em execução no momento.
 
- Essa regra cria tokens os caminhos de pasta são recuperados por meio de <xref:System.Environment.GetFolderPath%2A> método nos níveis de diretório separado. Cada literal de cadeia de caracteres é comparadas com os tokens. Se uma correspondência for encontrada, supõe-se que o método é criando uma cadeia de caracteres que aponta para o local do sistema que está associado com o token. Para portabilidade e a possibilidade de localização, use o <xref:System.Environment.GetFolderPath%2A> método para recuperar os locais das pastas especiais do sistema em vez de usar literais de cadeia de caracteres.
+Essa regra cria tokens os caminhos de pasta que são recuperados usando <xref:System.Environment.GetFolderPath%2A> o método em níveis de diretório separados. Cada literal de cadeia de caracteres é comparado aos tokens. Se uma correspondência for encontrada, supõe-se que o método está criando uma cadeia de caracteres que se refere ao local do sistema que está associado ao token. Para portabilidade e possibilidade de localização, <xref:System.Environment.GetFolderPath%2A> use o método para recuperar os locais das pastas especiais do sistema em vez de usar literais de cadeia de caracteres.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, recupere o local usando o <xref:System.Environment.GetFolderPath%2A> método.
+Para corrigir uma violação dessa regra, recupere o local usando o <xref:System.Environment.GetFolderPath%2A> método.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, se o literal de cadeia de caracteres não é usado para se referir a um dos locais de sistema que está associado com o <xref:System.Environment.SpecialFolder> enumeração.
+É seguro suprimir um aviso dessa regra se o literal da cadeia de caracteres não for usado para fazer referência a um dos locais do sistema que está associado <xref:System.Environment.SpecialFolder> à enumeração.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir cria o caminho de pasta de dados de aplicativo comuns, que gera três avisos dessa regra. Em seguida, o exemplo recupera o caminho usando o <xref:System.Environment.GetFolderPath%2A> método.
+O exemplo a seguir cria o caminho da pasta Common Application Data, que gera três avisos dessa regra. Em seguida, o exemplo recupera o caminho usando o <xref:System.Environment.GetFolderPath%2A> método.
 
- [!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
- [!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
+[!code-csharp[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/CSharp/ca1302-do-not-hardcode-locale-specific-strings_1.cs)]
+[!code-vb[FxCop.Globalization.HardcodedLocaleStrings#1](../code-quality/codesnippet/VisualBasic/ca1302-do-not-hardcode-locale-specific-strings_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1303: Não passar literais como parâmetros localizados](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)
+[CA1303: Não passe literais como parâmetros localizados](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)

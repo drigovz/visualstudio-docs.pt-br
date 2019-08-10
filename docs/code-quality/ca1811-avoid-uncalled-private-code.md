@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4a194229ccbe6720f4c8097422691974ab64b7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545466"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921338"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código particular não chamado
 
@@ -28,12 +28,12 @@ ms.locfileid: "62545466"
 |NomeDoTipo|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Membro privado ou interno (nível de assembly) não tem chamadores no assembly, não é invocado pelo common language runtime e não é invocado por um delegado. Os seguintes membros não são verificados por essa regra:
+Um membro privado ou interno (no nível do assembly) não tem chamadores no assembly, não é invocado pelo Common Language Runtime e não é invocado por um delegado. Os seguintes membros não são verificados por esta regra:
 
-- Membros de interface explícita.
+- Membros de interface explícitos.
 
 - Construtores estáticos.
 
@@ -44,17 +44,17 @@ ms.locfileid: "62545466"
 - Membros que são substituições.
 
 ## <a name="rule-description"></a>Descrição da regra
- Essa regra pode relatar falsos positivos se houver pontos de entrada que não são identificados no momento pela lógica de regra. Além disso, um compilador pode emitir código noncallable em um assembly.
+Essa regra pode relatar falsos positivos se ocorrerem pontos de entrada que não estão identificados atualmente pela lógica da regra. Além disso, um compilador pode emitir código não chamável em um assembly.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova o código noncallable ou adicionar código que o chama.
+Para corrigir uma violação dessa regra, remova o código não chamável ou adicione o código que o chama.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra.
+É seguro suprimir um aviso dessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1812: Evite classes internas sem instâncias](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
+[CA1812: Evitar classes internas não instanciadas](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)
 
- [CA1801: Revisar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
+[CA1801: Examinar parâmetros não utilizados](../code-quality/ca1801-review-unused-parameters.md)
 
- [CA1804: Remover locais não usados](../code-quality/ca1804-remove-unused-locals.md)
+[CA1804: Remover locais não utilizados](../code-quality/ca1804-remove-unused-locals.md)

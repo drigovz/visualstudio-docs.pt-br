@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77909627385a7aa2e41f87c23ec41dc8ac0e1a5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806758"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920353"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211: Campos não constantes não devem ser visíveis
 
@@ -34,19 +34,19 @@ ms.locfileid: "62806758"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um campo estático público ou protegido não é constante nem somente leitura.
+Um campo estático ou público protegido não é constante nem é somente leitura.
 
 ## <a name="rule-description"></a>Descrição da regra
- Os campos estáticos que não são constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e exige técnicas de programação avançadas para sincronizar o acesso ao objeto de classe. Como esses são difíceis de habilidades para aprender e mestre e testes de tal objeto apresenta seus próprios desafios, campos estáticos são melhor usados para armazenar dados que não são alterados. Essa regra se aplica às bibliotecas; aplicativos não devem expor todos os campos.
+Os campos estáticos que não são constantes nem somente leitura não são thread-safe. O acesso a esse campo deve ser cuidadosamente controlado e requer técnicas de programação avançadas para sincronizar o acesso ao objeto de classe. Como essas são habilidades difíceis de aprender e dominar e testar tal objeto representa seus próprios desafios, os campos estáticos são mais bem usados para armazenar dados que não são alterados. Esta regra se aplica a bibliotecas; os aplicativos não devem expor nenhum campo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, verifique o campo estático constantes ou somente leitura. Se isso não for possível, recrie o tipo para usar um mecanismo alternativo, como uma propriedade de thread-safe que gerencia o acesso thread-safe para o campo subjacente. Perceba que os problemas, como contenção de bloqueio e deadlocks podem afetar o desempenho e o comportamento da biblioteca.
+Para corrigir uma violação dessa regra, torne a constante de campo estático ou somente leitura. Se isso não for possível, recrie o tipo para usar um mecanismo alternativo, como uma propriedade thread-safe, que gerencia o acesso seguro ao thread para o campo subjacente. Perceba que problemas como contenção de bloqueio e deadlocks podem afetar o desempenho e o comportamento da biblioteca.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- É seguro suprimir um aviso nessa regra, se você estiver desenvolvendo um aplicativo e, portanto, têm controle total sobre o acesso ao tipo que contém o campo estático. Designers de bibliotecas não devem suprimir um aviso nessa regra; campos estáticos de não constante pode fazer usando a biblioteca difícil para os desenvolvedores para usar corretamente.
+É seguro suprimir um aviso dessa regra se você estiver desenvolvendo um aplicativo e, portanto, tiver controle total sobre o acesso ao tipo que contém o campo estático. Os designers de biblioteca não devem suprimir um aviso dessa regra; o uso de campos estáticos não constantes pode tornar o uso da biblioteca difícil para os desenvolvedores usarem corretamente.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que viola essa regra.
+O exemplo a seguir mostra um tipo que viola essa regra.
 
- [!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
- [!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]
+[!code-vb[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/VisualBasic/ca2211-non-constant-fields-should-not-be-visible_1.vb)]
+[!code-csharp[FxCop.Usage.AvoidStaticNonConstants#1](../code-quality/codesnippet/CSharp/ca2211-non-constant-fields-should-not-be-visible_1.cs)]

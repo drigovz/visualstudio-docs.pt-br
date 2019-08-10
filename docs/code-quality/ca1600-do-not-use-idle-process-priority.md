@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1774b3feb2da4939420bf75506892aac6dedd72
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c37affc585653807912d00c1cfe365853fd6260b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797522"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921817"
 ---
 # <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Não usar prioridade de processo ociosa
 
@@ -31,13 +31,13 @@ ms.locfileid: "62797522"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Essa regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.
+Essa regra ocorre quando os processos são definidos `ProcessPriorityClass.Idle`como.
 
 ## <a name="rule-description"></a>Descrição da regra
- Não defina a prioridade do processo como Ocioso. Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando estariam ocioso e, assim, bloquearão em espera.
+Não defina a prioridade do processo como Ocioso. Os processos que `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando, caso contrário, ficarão ociosos e, portanto, bloquearão o modo de espera.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Definir processos `ProcessPriorityClass.BelowNormal`.
+Definir processos como `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e considerações de mobilidade podem ser ignoradas com segurança.
+Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e as considerações de mobilidade podem ser ignoradas com segurança.

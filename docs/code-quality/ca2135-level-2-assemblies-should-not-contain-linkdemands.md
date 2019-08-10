@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcd9032d550e79a47941540408dc6e98a15e33f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d466a508eade835563627a829f937416a24972a0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796712"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920649"
 ---
 # <a name="ca2135-level-2-assemblies-should-not-contain-linkdemands"></a>CA2135: Os assemblies de nível 2 não devem conter LinkDemands
 
@@ -27,18 +27,18 @@ ms.locfileid: "62796712"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Uma classe ou membro de classe está usando um <xref:System.Security.Permissions.SecurityAction> em um aplicativo que está usando segurança de nível 2.
+Um membro de classe ou classe está usando <xref:System.Security.Permissions.SecurityAction> um em um aplicativo que está usando segurança de nível 2.
 
 ## <a name="rule-description"></a>Descrição da regra
- LinkDemands são preteridos no conjunto de regras de segurança nível 2. Em vez de usar LinkDemands para impor a segurança em tempo de compilação just-in-time (JIT), marque os métodos, tipos e campos com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+LinkDemands são preteridos no conjunto de regras de segurança nível 2. Em vez de usar LinkDemands para impor a segurança em tempo de compilação JIT (just-in-time), marque os métodos, os tipos e <xref:System.Security.SecurityCriticalAttribute> os campos com o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova os <xref:System.Security.Permissions.SecurityAction> e marque o tipo ou membro com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+Para corrigir uma violação dessa regra, remova <xref:System.Security.Permissions.SecurityAction> e marque o tipo ou o membro com o <xref:System.Security.SecurityCriticalAttribute> atributo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- No exemplo a seguir, o <xref:System.Security.Permissions.SecurityAction> devem ser removidos e o método marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo.
+No exemplo a seguir, o <xref:System.Security.Permissions.SecurityAction> deve ser removido e o método marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo.
 
- [!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]
+[!code-csharp[FxCop.Security.CA2135.SecurityRuleSetLevel2MethodsShouldNotBeProtectedWithLinkDemands#1](../code-quality/codesnippet/CSharp/ca2135-level-2-assemblies-should-not-contain-linkdemands_1.cs)]

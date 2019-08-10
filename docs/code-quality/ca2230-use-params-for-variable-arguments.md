@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 505aa8cdc1371a3bc288772d77b49eb7a50e9830
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541777"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920152"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parâmetros para argumentos variáveis
 
@@ -31,23 +31,23 @@ ms.locfileid: "62541777"
 |Alteração Significativa|Quebra|
 
 ## <a name="cause"></a>Causa
- Um tipo público ou protegido contém um método público ou protegido que usa o `VarArgs` convenção de chamada.
+Um tipo público ou protegido contém um método público ou protegido que usa a `VarArgs` Convenção de chamada.
 
 ## <a name="rule-description"></a>Descrição da regra
- O `VarArgs` convenção de chamada é usada com determinadas definições de método que levam a um número variável de parâmetros. Um método usando o `VarArgs` convenção de chamada não é Common Language Specification (CLS) em conformidade e pode não estar acessível em linguagens de programação.
+A `VarArgs` Convenção de chamada é usada com determinadas definições de método que usam um número variável de parâmetros. Um método que usa `VarArgs` a Convenção de chamada não é compatível com CLS (Common Language Specification) e pode não estar acessível em linguagens de programação.
 
- No c#, o `VarArgs` convenção de chamada é usada quando a lista de parâmetros do método termina com o `__arglist` palavra-chave. Visual Basic não oferece suporte a `VarArgs` convenção de chamada e Visual C++ permite que seu uso apenas em código não gerenciado que usa a elipse `...` notação.
+No C#, a `VarArgs` Convenção de chamada é usada quando a lista de parâmetros de um método `__arglist` termina com a palavra-chave. Visual Basic não oferece suporte à `VarArgs` Convenção de chamada, e C++ o Visual permite seu uso somente em código não gerenciado que usa a `...` notação de elipse.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra no c#, use o [params](/dotnet/csharp/language-reference/keywords/params) palavra-chave, em vez de `__arglist`.
+Para corrigir uma violação dessa regra no C#, use a palavra-chave [params](/dotnet/csharp/language-reference/keywords/params) em `__arglist`vez de.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra dois métodos, um que viola a regra e um que satisfaz a regra.
+O exemplo a seguir mostra dois métodos, um que viola a regra e outra que satisfaz a regra.
 
- [!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
+[!code-csharp[FxCop.Usage.UseParams#1](../code-quality/codesnippet/CSharp/ca2230-use-params-for-variable-arguments_1.cs)]
 
 ## <a name="see-also"></a>Consulte também
 

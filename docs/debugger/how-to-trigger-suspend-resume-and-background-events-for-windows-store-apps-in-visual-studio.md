@@ -1,5 +1,5 @@
 ---
-title: Disparar eventos de suspender/retomar/plano de fundo durante a depuração de UWP
+title: Disparar eventos de suspensão/retomada/segundo plano ao depurar UWP
 ms.custom: seodec18
 ms.date: 01/16/2018
 ms.topic: conceptual
@@ -15,22 +15,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: aefa6bad31b15445ab4b294f8c2e8a80e320e88c
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66263338"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925468"
 ---
-# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar suspender, continuar e eventos em segundo plano durante a depuração de aplicativos UWP no Visual Studio
+# <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano durante a depuração de aplicativos UWP no Visual Studio
+
 Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Processo)** do Windows controla o estado da execução de seu aplicativo, iniciando, suspendendo, retomando e encerrando o aplicativo em resposta às ações do usuário e ao estado do dispositivo. Quando você está depurando, o Windows desabilita esses eventos de ativação. Este tópico descreve como acionar esses eventos no depurador.
 
- Este tópico também descreve como depurar **Tarefas em segundo plano**. Essas tarefas permitem que você execute certas operações em um processo em segundo plano, mesmo quando o aplicativo não está sendo executado. Você pode usar o depurador para colocar o aplicativo no modo de depuração e depois, sem iniciar a interface de usuário, iniciar e depurar a tarefa em segundo plano.
+Este tópico também descreve como depurar **Tarefas em segundo plano**. As tarefas em segundo plano permitem que você execute determinadas operações em um processo em segundo plano, mesmo quando seu aplicativo não está em execução. Você pode usar o depurador para colocar o aplicativo no modo de depuração e depois, sem iniciar a interface de usuário, iniciar e depurar a tarefa em segundo plano.
 
- Para obter mais informações sobre tarefas de gerenciamento de tempo de vida do processo e em segundo plano, consulte [Iniciar, retomar e multitarefa](/windows/uwp/launch-resume/index).
+Para obter mais informações sobre o gerenciamento de tempo de vida de processos e tarefas em segundo plano, consulte [iniciando, retomando e multitarefa](/windows/uwp/launch-resume/index).
 
 ## <a name="BKMK_Trigger_Process_Lifecycle_Management_events"></a> Disparar eventos de gerenciamento de tempo de vida do processo
- O Windows pode suspender o aplicativo quando o usuário sai dele ou quando o Windows entra em um estado de baixo consumo de energia. Você pode responder ao evento `Suspending` para salvar dados relevantes do aplicativo e do usuário em um armazenamento persistente e para liberar recursos. Quando um aplicativo é retomado do estado **Suspenso**, ele entra no estado **De Execução** e continua de onde estava quando foi suspenso. Você pode responder ao evento `Resuming` para restaurar ou atualizar o estado do aplicativo e recuperar recursos.
+ O Windows pode suspender seu aplicativo quando o usuário sai dele ou quando o Windows entra em um estado de baixa energia. Você pode responder ao evento `Suspending` para salvar dados relevantes do aplicativo e do usuário em um armazenamento persistente e para liberar recursos. Quando um aplicativo é retomado do estado **Suspenso**, ele entra no estado **De Execução** e continua de onde estava quando foi suspenso. Você pode responder ao evento `Resuming` para restaurar ou atualizar o estado do aplicativo e recuperar recursos.
 
  Embora o Windows tente manter o máximo possível de aplicativos suspensos na memória, ele poderá terminar o aplicativo se não houver recursos suficientes para mantê-lo na memória. Um usuário também pode fechar o aplicativo explicitamente. Não há nenhum evento especial para indicar que o usuário fechou um aplicativo.
 
@@ -42,12 +43,12 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
 3. Na barra de ferramentas **Local de Depuração**, escolha o evento que deseja acionar:
 
-     ![Suspender, retomar, encerrar e tarefas em segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Tarefas de suspender, retomar, encerrar e em segundo plano](../debugger/media/dbg_suspendresumebackground.png)
 
-     Observe que **Suspender e Encerrar** fecha o aplicativo e encerra a sessão de depuração.
+     **Suspender e encerrar** fecha o aplicativo e encerra a sessão de depuração.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Disparar tarefas em segundo plano
- Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [que dão suporte a seu aplicativo com tarefas em segundo plano](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Qualquer aplicativo pode registrar uma tarefa em segundo plano para responder a determinados eventos do sistema, mesmo quando o aplicativo não está sendo executado. As tarefas em segundo plano não podem executar o código que atualiza diretamente a interface do usuário; em vez disso, elas mostram informações para o usuário com atualizações de bloco, atualizações de notificação e notificações do sistema. Para obter mais informações, consulte [dando suporte ao seu aplicativo com tarefas em segundo plano](https://msdn.microsoft.com/library/4c7bb148-eb1f-4640-865e-41f627a46e8e).
 
  Você pode disparar os eventos que iniciam as tarefas em segundo plano do aplicativo por meio do depurador.
 
@@ -64,7 +65,7 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
 3. Na lista de eventos na barra de ferramentas **Local de Depuração**, escolha a tarefa em segundo plano que você deseja iniciar.
 
-     ![Suspender, retomar, encerrar e tarefas em segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Tarefas de suspender, retomar, encerrar e em segundo plano](../debugger/media/dbg_suspendresumebackground.png)
 
 ### <a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> Disparar uma tarefa em segundo plano quando o aplicativo não está em execução
 
@@ -72,39 +73,39 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 
 2. Abra a página de propriedades de depuração do projeto de inicialização. No Gerenciador de Soluções, selecione o projeto. No menu **Depurar**, escolha **Propriedades**.
 
-     Para C++ projetos, expanda **propriedades de configuração** e, em seguida, escolha **depuração**.
+     Para C++ projetos, expanda **Propriedades de configuração** e escolha **depuração**.
 
 3. Realize um dos seguintes procedimentos:
 
     - Para projetos em Visual C# e Visual Basic, escolha **Não iniciar, mas depurar meu código quando ele for iniciado**
 
-         ![C&#35;&#47;propriedade de aplicativo de inicialização de depuração VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Propriedade&#35;&#47;do aplicativo inicialização de depuração do C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Para o Visual C++ projetos, escolha **nenhuma** do **Iniciar aplicativo** lista.
+    - Para projetos C++ visuais, escolha **não** na lista **Iniciar aplicativo** .
 
-         ![C&#43;&#43;&#47;propriedade de depuração do aplicativo inicie VB](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![&#43;C&#43;VB&#47;iniciar a propriedade de depuração do aplicativo](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Pressione **F5** para colocar o aplicativo no modo de depuração. Observe que a lista **Processo** na barra de ferramentas **Local de Depuração** exibe o nome do pacote do aplicativo para indicar que você está no modo de depuração.
 
-     ![Lista de processos de tarefa em segundo plano](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")
+     ![Lista de processos da tarefa em segundo plano](../debugger/media/dbg_backgroundtask_processlist.png "DBG_BackgroundTask_ProcessList")
 
 5. Na lista de eventos na barra de ferramentas **Local de Depuração**, escolha a tarefa em segundo plano que você deseja iniciar.
 
-     ![Suspender, retomar, encerrar e tarefas em segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
+     ![Tarefas de suspender, retomar, encerrar e em segundo plano](../debugger/media/dbg_suspendresumebackground.png "DBG_SuspendResumeBackground")
 
 ## <a name="BKMK_Trigger_Process_Lifetime_Management_events_and_background_tasks_from_an_installed_app"></a> Disparar eventos de gerenciamento de tempo de vida do processo e tarefas em segundo plano de um aplicativo instalado
- Use o **depurar pacote do aplicativo instalado** caixa de diálogo para carregar um aplicativo que já está instalado no depurador. Por exemplo, você pode depurar um aplicativo que tenha sido instalado na Microsoft Store ou depurar um aplicativo quando você tem os arquivos de origem para o aplicativo, mas não um projeto do Visual Studio para o aplicativo. O **depurar pacote do aplicativo instalado** caixa de diálogo permite que você inicia um aplicativo no modo de depuração na máquina do Visual Studio ou em um dispositivo remoto, ou para definir o aplicativo seja executado no modo de depuração, mas não iniciá-lo. Para obter mais informações, consulte [depurar pacote de aplicativo instalado](../debugger/debug-installed-app-package.md).
+ Use a caixa de diálogo **depurar pacote do aplicativo instalado** para carregar um aplicativo que já está instalado no depurador. Por exemplo, você pode depurar um aplicativo que foi instalado de Microsoft Store ou depurar um aplicativo quando tiver os arquivos de origem para o aplicativo, mas não um projeto do Visual Studio para o aplicativo. A caixa de diálogo **depurar pacote do aplicativo instalado** permite iniciar um aplicativo no modo de depuração no computador do Visual Studio ou em um dispositivo remoto, ou para definir o aplicativo para ser executado no modo de depuração, mas não iniciá-lo. Para obter mais informações, consulte [depurar um pacote do aplicativo instalado](../debugger/debug-installed-app-package.md).
 
  Após o aplicativo ser carregado no depurador, você poderá executar qualquer um dos procedimentos acima.
 
 ## <a name="BKMK_Diagnosing_background_task_activation_errors"></a> Diagnosticando erros de ativação de tarefa em segundo plano
- Os logs de diagnóstico no Visualizador de Eventos do Windows referentes à infraestrutura em segundo plano contêm informações detalhadas que podem ser usadas para diagnosticar e solucionar erros de tarefas em segundo plano. Para exibir o log:
+ Os logs de diagnóstico no Windows Visualizador de Eventos para a infraestrutura em segundo plano contêm informações detalhadas que você pode usar para diagnosticar e solucionar problemas de erros de tarefas em segundo plano. Para exibir o log:
 
 1. Abra o aplicativo visualizador de eventos.
 
 2. No painel **Ações**, escolha **Exibir** e verifique se **Mostrar logs analíticos e de depuração** está marcado.
 
-3. Sobre o **Visualizador de eventos (Local)** de árvore, expanda os nós **Applications and Services Logs** > **Microsoft** > **Windows**   >  **BackgroundTasksInfrastructure**.
+3. Na árvore **Visualizador de eventos (local)** , expanda os nós **aplicativos e logs** > de serviços**Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.
 
 4. Escolha o log **Diagnóstico**.
 
@@ -112,4 +113,4 @@ Quando você não está depurando, o **PLM (Gerenciamento de Tempo de Vida do Pr
 - [Como testar aplicativos UWP com o Visual Studio](../test/testing-store-apps-with-visual-studio.md)
 - [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
 - [Ciclo de vida do aplicativo](/windows/uwp/launch-resume/app-lifecycle)
-- [Iniciando, retomar e execução multitarefa](/windows/uwp/launch-resume/index)
+- [Inicialização, retomada e multitarefas](/windows/uwp/launch-resume/index)

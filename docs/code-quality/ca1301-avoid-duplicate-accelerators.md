@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f82163b1c377df4c8c7fcbba07672312153dad9b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16cd44f00db13027d737b6a6b496877075ac6fa9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797472"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68922271"
 ---
 # <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar aceleradores duplicados
 
@@ -27,28 +27,28 @@ ms.locfileid: "62797472"
 |-|-|
 |NomeDoTipo|AvoidDuplicateAccelerators|
 |CheckId|CA1301|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
- Estende um tipo <xref:System.Windows.Forms.Control?displayProperty=fullName> e contém duas ou mais controles de nível superior que têm chaves de acesso idêntico que são armazenadas em um arquivo de recurso.
+Um tipo estende <xref:System.Windows.Forms.Control?displayProperty=fullName> e contém dois ou mais controles de nível superior que têm chaves de acesso idênticas que são armazenadas em um arquivo de recurso.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Uma chave de acesso, também conhecido como um acelerador, dá ao teclado acesso a um controle usando o **Alt** chave. Quando vários controles têm a mesma chave de acesso, o comportamento da tecla de acesso não é bem definido. O usuário pode não ser capaz de acessar o controle desejado usando a chave de acesso e um controle diferente daquele que destina-se deve estar habilitado.
+Uma chave de acesso, também conhecida como acelerador, permite o acesso ao teclado para um controle usando a tecla **ALT** . Quando vários controles têm a mesma chave de acesso, o comportamento da tecla de acesso não é bem definido. O usuário pode não conseguir acessar o controle pretendido usando a chave de acesso, e um controle diferente daquele que se destina pode ser habilitado.
 
-A implementação atual desta regra ignora os itens de menu. No entanto, os itens de menu no mesmo submenu não devem ter as chaves de acesso idênticos.
+A implementação atual dessa regra ignora itens de menu. No entanto, os itens de menu no mesmo submenu não devem ter chaves de acesso idênticas.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, defina chaves de acesso exclusivo para todos os controles.
+Para corrigir uma violação dessa regra, defina chaves de acesso exclusivas para todos os controles.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso nessa regra.
+Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um formulário mínimo que contém dois controles que têm chaves de acesso idênticos. As chaves são armazenadas em um arquivo de recurso, que não é exibido. No entanto, seus valores aparecerão no comentado out `checkBox.Text` linhas. O comportamento de aceleradores duplicados pode ser examinado por meio da troca de `checkBox.Text` linhas com suas contrapartes comentadas. No entanto, nesse caso, o exemplo não irá gerar um aviso da regra.
+O exemplo a seguir mostra uma forma mínima que contém dois controles que têm chaves de acesso idênticas. As chaves são armazenadas em um arquivo de recurso, que não é mostrado. No entanto, seus valores aparecem nas `checkBox.Text` linhas comentadas. O comportamento de aceleradores duplicados pode ser examinado pela troca `checkBox.Text` de linhas com suas contrapartes comentadas. No entanto, nesse caso, o exemplo não gerará um aviso da regra.
 
- [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
+[!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 
 ## <a name="see-also"></a>Consulte também
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03948506d928f7d638b21c1fa4bc0a35818ec09a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f55c48583e47a4602f33d69799d1d86a6c9c3e56
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545415"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68921151"
 ---
 # <a name="ca2116-aptca-methods-should-only-call-aptca-methods"></a>CA2116: Métodos APTCA devem chamar somente métodos APTCA
 
@@ -36,38 +36,38 @@ Um método em um assembly com o <xref:System.Security.AllowPartiallyTrustedCalle
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes implicitamente são protegidos por um [demandas de Link](/dotnet/framework/misc/link-demands) para confiança total; apenas totalmente confiável os chamadores podem acessar um assembly de nome forte. Assemblies de nome forte é marcado com o <xref:System.Security.AllowPartiallyTrustedCallersAttribute> atributo (APTCA) não tem essa proteção. O atributo desabilita a demanda de link, fazendo com que o assembly acessível aos chamadores que não têm confiança total, como o código em execução de uma intranet ou da Internet.
+Por padrão, os métodos públicos ou protegidos em assemblies com nomes fortes são implicitamente protegidos por uma [demanda de link](/dotnet/framework/misc/link-demands) para confiança total; somente chamadores totalmente confiáveis podem acessar um assembly de nome forte. Os assemblies de nome forte marcados com <xref:System.Security.AllowPartiallyTrustedCallersAttribute> o atributo (APTCA) não têm essa proteção. O atributo desabilita a demanda de link, tornando o assembly acessível a chamadores que não têm confiança total, como a execução de código de uma intranet ou da Internet.
 
-Quando o atributo APTCA estiver presente em um assembly totalmente confiável e o assembly executar código em outro assembly que não permita chamadores parcialmente confiáveis, será possível uma exploração de segurança. Se dois métodos `M1` e `M2` atendem às condições a seguir, chamadores mal-intencionados podem usar o método `M1` para ignorar a demanda de link de confiança total implícito que protege `M2`:
+Quando o atributo APTCA está presente em um assembly totalmente confiável e o assembly executa o código em outro assembly que não permite chamadores parcialmente confiáveis, uma exploração de segurança é possível. Se dois métodos `M1` e `M2` atenderem às condições a seguir, os chamadores mal-intencionados poderão `M1` usar o método para ignorar a demanda de link de `M2`confiança total implícita que protege:
 
-- `M1` um método público é declarado em um assembly totalmente confiável que tem o atributo APTCA.
+- `M1`é um método público declarado em um assembly totalmente confiável que tem o atributo APTCA.
 
-- `M1` chama um método `M2` fora `M1`do assembly.
+- `M1`chama um método `M2` fora `M1`do assembly.
 
-- `M2`do assembly não tem o atributo APTCA e, portanto, não devem ser executado por, ou em nome dos chamadores parcialmente confiáveis.
+- `M2`o assembly do não tem o atributo APTCA e, portanto, não deve ser executado por ou em nome de chamadores que são parcialmente confiáveis.
 
-Um chamador parcialmente confiável `X` pode chamar o método `M1`, causando `M1` chamar `M2`. Porque `M2` não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é porque `X` não participa de satisfazer a demanda de link que protege `M2` de chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não têm o atributo.
+Um chamador `X` parcialmente confiável pode chamar o `M1`método, `M1` causando a `M2`chamada. Como `M2` o não tem o atributo APTCA, seu chamador imediato (`M1`) deve atender a uma demanda de link para confiança total; `M1` tem confiança total e, portanto, satisfaz essa verificação. O risco de segurança é `X` porque o não participa da demanda de link que protege `M2` contra chamadores não confiáveis. Portanto, os métodos com o atributo APTCA não devem chamar métodos que não tenham o atributo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você demanda dependerá a funcionalidade exposta pelo seu método. Se for possível, proteja o método com uma demanda de confiança total garantir que a funcionalidade subjacente não é exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que efetivamente protege a funcionalidade exposta.
+Se o atributo APCTA for necessário, use uma demanda para proteger o método que chama o assembly de confiança total. As permissões exatas que você exige dependerão da funcionalidade exposta pelo método. Se possível, proteja o método com uma demanda de confiança total para garantir que a funcionalidade subjacente não seja exposta a chamadores parcialmente confiáveis. Se isso não for possível, selecione um conjunto de permissões que proteja efetivamente a funcionalidade exposta.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Para suprimir com segurança um aviso nessa regra, você deve garantir que a funcionalidade exposta pelo seu método não direta ou indiretamente permite chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de forma destrutivas.
+Para suprimir um aviso dessa regra com segurança, você deve garantir que a funcionalidade exposta por seu método não direta ou indiretamente permita que os chamadores acessem informações confidenciais, operações ou recursos que podem ser usados de maneira destrutiva.
 
 ## <a name="example-1"></a>Exemplo 1
- O exemplo a seguir usa dois assemblies e um aplicativo de teste para ilustrar a vulnerabilidade de segurança detectada por essa regra. O primeiro conjunto não tem o atributo APTCA e não deve ser acessível a chamadores parcialmente confiáveis (representado por `M2` na discussão anterior).
+O exemplo a seguir usa dois assemblies e um aplicativo de teste para ilustrar a vulnerabilidade de segurança detectada por essa regra. O primeiro assembly não tem o atributo APTCA e não deve ser acessível a chamadores parcialmente confiáveis (representados pelo `M2` na discussão anterior).
 
- [!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
+[!code-csharp[FxCop.Security.NoAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_1.cs)]
 
 ## <a name="example-2"></a>Exemplo 2
- O segundo conjunto é totalmente confiável e permite que os chamadores parcialmente confiáveis (representado por `M1` na discussão anterior).
+O segundo assembly é totalmente confiável e permite chamadores parcialmente confiáveis (representados `M1` pela na discussão anterior).
 
- [!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
+[!code-csharp[FxCop.Security.YesAptca#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_2.cs)]
 
 ## <a name="example-3"></a>Exemplo 3:
- O aplicativo de teste (representado por `X` na discussão anterior) é parcialmente confiável.
+O aplicativo de teste (representado `X` pela na discussão anterior) é parcialmente confiável.
 
- [!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
+[!code-csharp[FxCop.Security.TestAptcaMethods#1](../code-quality/codesnippet/CSharp/ca2116-aptca-methods-should-only-call-aptca-methods_3.cs)]
 
 Este exemplo gera a seguinte saída:
 
@@ -78,7 +78,7 @@ ClassRequiringFullTrust.DoWork was called.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2117: Os tipos APTCA só devem estender tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
+- [CA2117: Os tipos APTCA só devem estender os tipos base APTCA](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)
 
 ## <a name="see-also"></a>Consulte também
 

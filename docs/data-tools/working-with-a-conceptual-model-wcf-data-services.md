@@ -12,38 +12,38 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7e92885e652c9456503bfa75fbce5640c377b684
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 677e423e456c448204d39a286509fa93aa5c57b8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745343"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925338"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>Trabalhar com um modelo conceitual (WCF Data Services)
 
-Quando você usa um modelo conceitual para descrever os dados em um banco de dados, você pode consultar os dados por meio de seus objetos em vez de precisar converter de e para trás entre um esquema de banco de dados e um modelo de objeto.
+Ao usar um modelo conceitual para descrever os dados em um banco de dado, você pode consultar dados por meio de seus objetos em vez de ter que fazer a conversão entre um esquema de banco de dados e um modelo de objeto.
 
- Você pode usar modelos conceituais com aplicativos do WCF Data Services. Os tópicos a seguir mostram como consultar dados por meio de um modelo conceitual.
+Você pode usar modelos conceituais com WCF Data Services aplicativos. Os tópicos a seguir mostram como consultar dados por meio de um modelo conceitual.
 
 | Tópico | Descrição |
 | - | - |
-| [Como: Executar consultas de serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um aplicativo .NET. |
-| [Como: Resultados de consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
+| [Como: Executar consultas do serviço de dados](/dotnet/framework/data/wcf/how-to-execute-data-service-queries-wcf-data-services) | Mostra como consultar um serviço de dados de um aplicativo .NET. |
+| [Como: Resultados da consulta do projeto](/dotnet/framework/data/wcf/how-to-project-query-results-wcf-data-services) | Mostra como reduzir a quantidade de dados retornados por meio de uma consulta de serviço de dados. |
 
- Quando você usa um modelo conceitual, você pode definir o tipo de dados é válido no idioma que corresponde a seu domínio. Você pode definir dados válidos no modelo, ou você pode adicionar validação para operações que podem ser executadas em um serviço de dados ou de entidade.
+Ao usar um modelo conceitual, você pode definir que tipo de dados é válido no idioma que corresponde ao seu domínio. Você pode definir dados válidos no modelo ou pode adicionar validação às operações que você executa em uma entidade ou serviço de dados.
 
- Os tópicos a seguir mostram como adicionar validação para aplicativos do WCF Data Services.
+Os tópicos a seguir mostram como adicionar validação a aplicativos WCF Data Services.
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Como: Interceptar mensagens de serviço de dados](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Mostra como adicionar validação a uma operação de serviço de dados.|
+|[Como: Interceptar mensagens do serviço de dados](/dotnet/framework/data/wcf/how-to-intercept-data-service-messages-wcf-data-services)|Mostra como adicionar validação a uma operação de serviço de dados.|
 
- Os tópicos a seguir mostram como criar, atualizar e excluir dados, executando operações em entidades.
+ Os tópicos a seguir mostram como criar, atualizar e excluir dados executando operações em entidades.
 
 |Tópico|Descrição|
 |-----------|-----------------|
 |[Como: Adicionar, modificar e excluir entidades](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|Mostra como criar, atualizar e excluir dados de entidade em um serviço de dados.|
-|[Como: Definir relações entre entidades](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Mostra como criar ou alterar as relações em um serviço de dados.|
+|[Como: Definir relações de entidade](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|Mostra como criar ou alterar relações em um serviço de dados.|
 
 ## <a name="see-also"></a>Consulte também
 

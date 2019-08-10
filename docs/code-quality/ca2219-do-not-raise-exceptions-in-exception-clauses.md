@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a644cf3dc934676a14f1c5c59a6582fcd45ae7d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8e949e21530654882cba99a7d9fedad8b5b59b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806648"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68920266"
 ---
 # <a name="ca2219-do-not-raise-exceptions-in-exception-clauses"></a>CA2219: Não acionar exceções em cláusulas de exceção
 
@@ -28,26 +28,26 @@ ms.locfileid: "62806648"
 |NomeDoTipo|DoNotRaiseExceptionsInExceptionClauses|
 |CheckId|CA2219|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separáveis, recentes|
+|Alteração Significativa|Sem interrupção, quebra|
 
 ## <a name="cause"></a>Causa
- Uma exceção é lançada de uma `finally`, filtro ou cláusula de falha.
+Uma exceção é lançada de uma `finally`cláusula, filtro ou falha.
 
 ## <a name="rule-description"></a>Descrição da regra
- Quando uma exceção é gerada em uma cláusula de exceção, ele aumenta muito a dificuldade de depuração.
+Quando uma exceção é gerada em uma cláusula de exceção, aumenta muito a dificuldade de depuração.
 
- Quando uma exceção é acionada em um `finally` ou cláusula de falha, a nova exceção oculta a exceção ativa, se estiver presente. Isso torna o erro original difícil de detectar e depurar.
+Quando uma exceção é gerada em uma `finally` cláusula ou falha, a nova exceção oculta a exceção ativa, se presente. Isso torna o erro original difícil de detectar e depurar.
 
- Quando uma exceção é acionada em uma cláusula de filtro, o tempo de execução silenciosamente captura a exceção e faz com que o filtro seja avaliada como false. Não há nenhuma maneira de saber a diferença entre a avaliação de filtro como false e uma exceção que está sendo lançar de um filtro. Isso torna difícil de detectar e depurar erros na lógica do filtro.
+Quando uma exceção é gerada em uma cláusula de filtro, o tempo de execução captura silenciosamente a exceção e faz com que o filtro seja avaliado como falso. Não há como dizer a diferença entre o filtro avaliando como falso e uma exceção sendo emitida de um filtro. Isso torna difícil detectar e depurar erros na lógica do filtro.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir essa violação dessa regra, não explicitamente gere uma exceção de um `finally`, filtro ou cláusula de falha.
+Para corrigir essa violação dessa regra, não gere explicitamente uma exceção de uma `finally`cláusula, filtro ou falha.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
- Não suprima um aviso para essa regra. Não há nenhum cenário em que uma exceção gerada em uma cláusula de exceção fornece um benefício ao código em execução.
+Não suprimir um aviso para esta regra. Não há cenários sob os quais uma exceção gerada em uma cláusula de exceção fornece um benefício para o código em execução.
 
 ## <a name="related-rules"></a>Regras relacionadas
- [CA1065: Não gerar exceções em locais inesperados](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
+[CA1065: Não gerar exceções em locais inesperados](../code-quality/ca1065-do-not-raise-exceptions-in-unexpected-locations.md)
 
 ## <a name="see-also"></a>Consulte também
- [Avisos de design](../code-quality/design-warnings.md)
+[Avisos de design](../code-quality/design-warnings.md)

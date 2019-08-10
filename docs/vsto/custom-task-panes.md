@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c762fb9777af8ac5e24875e879d2f24d0249e0
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872125"
+ms.locfileid: "68926713"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Os painéis de tarefas são painéis de interface do usuário que normalmente são encaixados em um lado de uma janela em um aplicativo Microsoft Office. Os painéis de tarefas personalizados fornecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar os recursos da solução. Por exemplo, a interface pode conter controles que executam código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -124,7 +124,7 @@ ms.locfileid: "68872125"
 
  Para limpar os recursos usados pelo painel de tarefas enquanto o suplemento do VSTO ainda está em execução, use os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> ou. Esses métodos removem o <xref:Microsoft.Office.Tools.CustomTaskPane> objeto especificado `CustomTaskPanes` da coleção e chamam o <xref:Microsoft.Office.Tools.CustomTaskPane.Dispose%2A> método do objeto.
 
- O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa automaticamente os recursos usados pelo painel de tarefas personalizado quando o suplemento do VSTO é descarregado. Não chame os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> no `ThisAddIn_Shutdown` manipulador de eventos em seu projeto. Esses métodos gerarão um <xref:System.ObjectDisposedException>, pois o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa os recursos usados pelo <xref:Microsoft.Office.Tools.CustomTaskPane> objeto antes `ThisAddIn_Shutdown` de ser chamado. Para obter mais informações `ThisAddIn_Shutdown`sobre o, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md)
+ O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa automaticamente os recursos usados pelo painel de tarefas personalizado quando o suplemento do VSTO é descarregado. Não chame os <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> métodos ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> no `ThisAddIn_Shutdown` manipulador de eventos em seu projeto. Esses métodos gerarão um <xref:System.ObjectDisposedException>, pois o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa os recursos usados pelo <xref:Microsoft.Office.Tools.CustomTaskPane> objeto antes `ThisAddIn_Shutdown` de ser chamado. Para obter mais informações `ThisAddIn_Shutdown`sobre o, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ## <a name="Managing"></a>Gerenciar painéis de tarefas personalizados em várias janelas de aplicativos
  Quando você cria um painel de tarefas personalizado em um aplicativo que usa várias janelas para exibir documentos e outros itens, você precisa executar etapas adicionais para garantir que o painel de tarefas fique visível quando o usuário espera que ele esteja.
