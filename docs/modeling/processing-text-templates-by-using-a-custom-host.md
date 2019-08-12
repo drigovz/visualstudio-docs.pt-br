@@ -10,26 +10,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e72b279d55cbe11f6232ff1f91c8fee443d9c283
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f054bd91f16bb7621d4beebe7631a49cb406132e
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62969313"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870478"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>Processar modelos de texto usando um host personalizado
 
-O *transformação de modelo de texto* processar usa um *modelo de texto* arquivo como entrada e gera um arquivo de texto como saída. Você pode chamar o mecanismo de transformação de texto de uma extensão do Visual Studio ou de um aplicativo autônomo em execução em um computador em que o Visual Studio está instalado. No entanto, você deve fornecer um *host de modelagem de texto*. Essa classe conecta o modelo ao ambiente, localizando recursos, como assemblies e arquivos de inclusão, e resolvendo a saída e as mensagens de erro.
+O processo de *transformação de modelo de texto* usa um arquivo de modelo de *texto* como a entrada e produz um arquivo de texto como a saída. Você pode chamar o mecanismo de transformação de texto de uma extensão do Visual Studio ou de um aplicativo autônomo em execução em um computador no qual o Visual Studio está instalado. No entanto, você deve fornecer um *host de modelagem de texto*. Essa classe conecta o modelo ao ambiente, localizando recursos, como assemblies e arquivos de inclusão, e resolvendo a saída e as mensagens de erro.
 
 > [!TIP]
-> Se você estiver escrevendo um pacote ou a extensão que será executado dentro do Visual Studio, considere usar o serviço de modelagem de texto, em vez de escrever seu próprio host. Para obter mais informações, consulte [invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).
+> Se você estiver escrevendo um pacote ou extensão que será executado no Visual Studio, considere usar o serviço de modelagem de texto, em vez de escrever seu próprio host. Para obter mais informações, consulte [invocando a transformação de texto em uma extensão do vs](../modeling/invoking-text-transformation-in-a-vs-extension.md).
 
 > [!NOTE]
-> Não recomendamos usar transformações de modelo de texto em aplicativos de servidor. Não recomendamos usar transformações de modelo de texto, exceto em um thread único. Isso ocorre porque o mecanismo de modelagem de texto reutiliza um único AppDomain para converter, compilar e executar modelos. O código convertido não foi criado para ser isento de threads. O mecanismo é projetado para processar arquivos em série, pois estão em um projeto do Visual Studio em tempo de design.
+> Não recomendamos usar transformações de modelo de texto em aplicativos de servidor. Não recomendamos usar transformações de modelo de texto, exceto em um thread único. Isso ocorre porque o mecanismo de modelagem de texto reutiliza um único AppDomain para converter, compilar e executar modelos. O código convertido não foi criado para ser isento de threads. O mecanismo foi projetado para processar arquivos em série, pois eles estão em um projeto do Visual Studio em tempo de design.
 >
-> Para aplicativos de tempo de execução, considere o uso de modelos de texto pré-processados: consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+> Para aplicativos de tempo de execução, considere o uso de modelos de texto pré-processados: consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
-Se seu aplicativo usa um conjunto de modelos que são fixos no tempo de compilação, é mais fácil usar modelos de texto pré-processados. Você também pode usar essa abordagem se o aplicativo será executado em um computador em que o Visual Studio não está instalado. Para obter mais informações, consulte [geração de texto de tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+Se seu aplicativo usa um conjunto de modelos que são fixos no tempo de compilação, é mais fácil usar modelos de texto pré-processados. Você também pode usar essa abordagem se seu aplicativo for executado em um computador no qual o Visual Studio não está instalado. Para obter mais informações, consulte [geração de texto em tempo de execução com modelos de texto T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
 ## <a name="execute-a-text-template-in-your-application"></a>Executar um modelo de texto em seu aplicativo
 
@@ -44,19 +44,19 @@ string output = engine.ProcessTemplate(templateString, host);
 
  Seu aplicativo deve localizar e fornecer o modelo, e deve lidar com a saída.
 
- No parâmetro `host`, você deve fornecer uma classe que implementa <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>. Isso é chamado novamente pelo mecanismo.
+ No parâmetro, você deve fornecer uma classe que implemente [ITextTemplatingEngineHost.](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) `host` Isso é chamado novamente pelo mecanismo.
 
  O host deve ser capaz de registrar erros, resolver referências ao assembly e arquivos de inclusão, fornecer um domínio de aplicativo no qual o modelo pode executar e chamar o processador adequado para cada diretiva.
 
- <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> é definido em **Microsoft.VisualStudio.TextTemplating.\*. 0. dll**, e <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> é definida no **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0. dll**.
+ <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>é definido em **Microsoft. VisualStudio. TextTemplating.\*. 0. dll**e [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) é definido em **Microsoft. VisualStudio. TextTemplating. interfaces.\* 0. dll**.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md) mostra como criar um host de modelo de texto personalizado que torna a funcionalidade de modelo de texto disponível fora do Visual Studio.
+ [Passo a passo: A criação de um host](../modeling/walkthrough-creating-a-custom-text-template-host.md) de modelo de texto personalizado mostra como criar um host de modelo de texto personalizado que torna a funcionalidade de modelo de texto disponível fora do Visual Studio.
 
 ## <a name="reference"></a>Referência
- <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost>
+ [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))
 
 ## <a name="related-sections"></a>Seções relacionadas
 
-- [O processo de transformação do modelo de texto](../modeling/the-text-template-transformation-process.md) descreve como a transformação de texto funciona, e que partes você podem personalizar.
-- [Criando processadores de diretiva de modelo de texto de T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md) fornece uma visão geral do texto processadores de diretiva de modelo.
+- [O processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md) descreve como funciona a transformação de texto e quais partes você pode personalizar.
+- A [criação de processadores de diretiva de texto do T4 personalizados](../modeling/creating-custom-t4-text-template-directive-processors.md) fornece uma visão geral dos processadores de diretiva de modelo de texto.
