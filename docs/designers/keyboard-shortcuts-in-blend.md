@@ -1,5 +1,6 @@
 ---
-title: Atalhos de teclado no Blend
+title: Atalhos de teclado
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 3a1b6830-30c2-4a36-bd14-6961f5edf9cb
@@ -8,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38eaaa42ae0869ae26f0a048f69a94684b240c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7dc340b25f5a900c9456f56587e39dede6e0ad2
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62844319"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821743"
 ---
-# <a name="keyboard-shortcuts-in-blend"></a>Atalhos de teclado no Blend
+# <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Atalhos de teclado no Blend para Visual Studio
 
 ## <a name="project-shortcuts"></a>Atalhos de projeto
 
@@ -72,10 +73,10 @@ ms.locfileid: "62844319"
 |Altura de tamanho automática|**Ctrl**+**Shift**+**6**|
 |Agrupar objetos em um painel de layout|**Ctrl**+**G**|
 |Desagrupar objetos|**Ctrl**+**Shift**+**G**|
-|Trazer o objeto selecionado para frente|**Ctrl**+**Shift**+**]**|
-|Trazer para frente|**Ctrl**+**]**|
-|Enviar o objeto selecionado para trás|**Ctrl**+**Shift**+**[**|
-|Recuar|**Ctrl**+**[**|
+|Trazer o objeto selecionado para frente|**Ctrl**+**Shift**+ **]**|
+|Trazer para frente|**Ctrl**+ **]**|
+|Enviar o objeto selecionado para trás|**Ctrl**+**Shift**+ **[**|
+|Recuar|**Ctrl**+ **[**|
 |Criar um controle de usuário com base nos objetos selecionados (WPF)|**F8**|
 |Restringir proporções de objetos|Mantenha a tecla **Shift** pressionada enquanto arrasta o objeto|
 |Girar um objeto em incrementos de 15 graus|Mantenha a tecla **Shift** pressionada enquanto gira o objeto|
@@ -95,8 +96,8 @@ ms.locfileid: "62844319"
 |Para fazer isso|Faça isto|
 |----------------|-------------|
 |Mudar entre os modos de exibição **Design**, **Código** e **Dividir**|**F11**|
-|Aumentar o zoom no artboard|**Ctrl**+**Sinal de igual** (**=**)|
-|Reduzir o zoom no artboard|**Ctrl**+**Sinal de subtração** (**-**)|
+|Aumentar o zoom no artboard|**Ctrl**+**Sinal de igual** ( **=** )|
+|Reduzir o zoom no artboard|**Ctrl**+**Sinal de subtração** ( **-** )|
 |Aumentar ou diminuir o zoom no artboard|Girar o roda do mouse|
 |Mover o artboard para a esquerda ou direita|Tecla **Shift** e girar o botão de rolagem do mouse|
 |Mover o artboard para cima ou baixo|Tecla **Ctrl** e girar o botão de rolagem do mouse|

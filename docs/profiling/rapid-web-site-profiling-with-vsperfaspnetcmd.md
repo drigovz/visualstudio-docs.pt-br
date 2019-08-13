@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 759a1cbf711b4264478c1e7fc44a65b86328ce32
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5f86ae2e14067a645bb39a1c8fdc0421f415a9e6
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431971"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681129"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Criação rápida de perfil de site com VSPerfASPNETCmd
 
@@ -41,6 +41,8 @@ Para criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/inc
 
  **vsperfaspnetcmd**  *websiteUrl*
 
+ Um exemplo de *websiteUrl* hospedado no servidor local pode ser *http://localhost/MySite/default.aspx* . Um exemplo de site externo é *http://www.contoso.com* . Para obter mais informações, confira as URLs de exemplo em [Para criar o perfil de um site sem abrir um projeto no Visual Studio](how-to-collect-performance-data-for-a-web-site.md#to-profile-a-web-site-without-opening-a-project-in-visual-studio).
+
 ## <a name="to-collect-detailed-timing-data-by-using-the-instrumentation-method"></a>Para coletar dados de tempo detalhados usando o método de instrumentação
 
 Use a seguinte linha de comando para coletar dados de tempo detalhados de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente:
@@ -61,14 +63,14 @@ A opção **/Memory** coleta dados sobre a alocação de objetos na memória do 
 
  Você também pode usar a opção **/Trace** para incluir informações detalhadas de tempo com os dados de memória do .NET:
 
- **vsperfaspnetcmd /memory**[**:lifetime**] **/trace**`websiteUrl`
+ **vsperfaspnetcmd /memory**[ **:lifetime**] **/trace**`websiteUrl`
 
 ## <a name="to-collect-tier-interaction-data"></a>Para coletar dados de interação entre camadas
 
 > [!WARNING]
 > Os dados de TIP (criação de perfil de interação de camadas) podem ser coletados usando qualquer edição do Visual Studio. No entanto, os dados de criação de perfil de interação de camadas só podem ser exibidos no Visual Studio Enterprise.
 >
-> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação (**/trace**).
+> Para coletar dados TIP no Windows 8 ou Windows Server 2012, você deve usar a opção de instrumentação ( **/trace**).
 
 Para coletar dados de interação entre camadas com os dados de amostragem:
 
@@ -80,7 +82,7 @@ Para coletar dados de interação entre camadas com os dados de instrumentação
 
 Para coletar dados de interação entre camadas com os dados de memória de .NET:
 
-**vsperfaspnetcmd /memory**[**:lifetime**] **/tip**_websiteUrl_
+**vsperfaspnetcmd /memory**[ **:lifetime**] **/tip**_websiteUrl_
 
 ## <a name="use-the-nowait-option"></a>Use a opção /NoWait
 
@@ -88,7 +90,7 @@ Por padrão, o prompt de comando não retorna após um comando **vsperfaspnetcmd
 
 Para iniciar a criação de perfil:
 
-**vsperfaspnetcmd** [*/Options*] **/nowait**_websiteUrl_
+**vsperfaspnetcmd** [ */Options*] **/nowait**_websiteUrl_
 
 Para encerrar a criação de perfil:
 
@@ -98,7 +100,7 @@ Para encerrar a criação de perfil:
 
 Você pode adicionar qualquer uma das seguintes opções aos comandos listados anteriormente nesta seção, exceto o **vsperfaspnetcmd /shutdown**.
 
-|Opção|Descrição|
+|Opção|DESCRIÇÃO|
 |------------|-----------------|
 |**/Output:** `VspFile`|Por padrão, o arquivo de dados de criação de perfil (.*vsp*) é criado no diretório atual com o nome de arquivo **PerformanceReport.vsp**. Use a opção /output para especificar um local diferente, nome do arquivo diferente ou ambos.|
 |**/PackSymbols:Off**|Por padrão, VsPerfASPNETCmd insere símbolos (nomes de função, de parâmetro e assim por diante) no arquivo .*vsp*. Inserir os símbolos pode tornar o arquivo de dados de criação de perfil muito grande. Se você terá acesso aos arquivos .*pdb* que contêm os símbolos ao analisar os dados, use a opção /packsymbols:off para desabilitar a inserção dos símbolos.|

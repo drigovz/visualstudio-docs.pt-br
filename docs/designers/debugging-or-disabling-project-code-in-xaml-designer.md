@@ -6,18 +6,16 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4f588395284891bab61a575f088931e2fc244bce
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62846008"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822106"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Depurar ou desabilitar o código do projeto no Designer XAML
 
-Em muitos casos, as exceções sem tratamento no Designer **XAML** podem ser causadas quando o código do projeto tenta acessar propriedades ou métodos que retornam valores diferentes ou que funcionam de maneira diferente quando o aplicativo é executado no designer. Você pode resolver essas exceções ao depurar o código do projeto em outra instância do Visual Studio ou impedir exceções temporariamente desabilitando o código do projeto no designer.
+Em muitos casos, as exceções sem tratamento no Designer XAML podem ser causadas quando o código do projeto tenta acessar propriedades ou métodos que retornam valores diferentes ou que funcionam de maneira diferente quando o aplicativo é executado no designer. Você pode resolver essas exceções ao depurar o código do projeto em outra instância do Visual Studio ou impedir exceções temporariamente desabilitando o código do projeto no designer.
 
 O código do projeto inclui:
 
@@ -49,7 +47,7 @@ Quando o código do projeto está desabilitado, o Visual Studio mostra espaços 
 
      ![Instâncias do Designer XAML no TaskManager](../designers/media/xaml_taskmanager.png)
 
-3. No Visual Studio, abra a página XAML que contém o código ou o controle que deseja depurar.
+3. No Visual Studio, abra a página XAML que contém o código ou o controle que você deseja depurar.
 
 4. Abra uma nova instância do Visual Studio e, em seguida, abra uma segunda instância do seu projeto.
 

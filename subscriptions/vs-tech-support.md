@@ -1,20 +1,19 @@
 ---
 title: Benefício do suporte técnico
 author: evanwindom
-ms.author: jaunger
+ms.author: lank
 manager: lank
-ms.date: 2/13/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: 5b5bb690af4223ace46ea090a482df610e298fd6
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67785053"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681590"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
-
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
 
 > [!NOTE]
@@ -26,7 +25,6 @@ O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a re
 **Para enviar uma solicitação de suporte usando o benefício, primeiro você precisa ativá-lo.  Siga as etapas da próxima seção para concluir a ativação.**
 
 ## <a name="how-to-activate-the-benefit"></a>Como ativar o benefício
-
 1. Acesse https://my.visualstudio.com/Benefits, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar**.
     > [!div class="mx-imgBorder"]
     > ![Bloco do benefício do Suporte Técnico](_img/vs-tech-support/vs-tech-support-tile.png)
@@ -43,17 +41,15 @@ O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a re
    > [!div class="mx-imgBorder"]
    > ![Benefício do suporte técnico: encontrar a ID da assinatura](_img/vs-tech-support/vs-tech-support-subID-cropped.png)
 
-4. Depois que o processo for concluído, você receberá um email contendo a **ID do Contrato** e a **ID de Acesso** que você usará ao criar um incidente de suporte.
+4. Depois que o processo for concluído, você receberá um email contendo a **ID do Contrato** e a **ID de Acesso** que você usará ao criar um incidente de suporte.  Ele também fornecerá instruções para enviar incidentes de suporte usando sua nova ID de acesso e a ID de contrato. 
 
 > [!NOTE]
 > Para ativar sua conta de suporte em um idioma diferente de inglês, escolha seu país [nesta lista](https://support.microsoft.com/help/14084/activate-support-contract).
 
 ## <a name="how-to-submit-an-incident-using-your-benefit"></a>Como enviar um incidente usando seu benefício
-
 Depois de configurar a **ID do Contrato** e a **ID de Acesso**, você poderá usá-las para enviar um incidente de Suporte Técnico [online](http://support.microsoft.com/oas/) (entrada necessária), por meio do [portal do Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview) ou ligando para o número de suporte técnico de seu país. Se você enviar seu incidente online, terá a opção de receber uma chamada do analista de Suporte da Microsoft.
 
 ### <a name="already-have-your-contract-id-and-access-id-associated-with-the-account-used-to-sign-in-to-submit-a-tech-support-incident-online"></a>Já tem a ID do Contrato e a ID de Acesso associadas à conta usada na entrada para enviar um incidente de Suporte Técnico online?
-
 Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta que você sabe que está associada à ID do Contrato e à ID de Acesso. O benefício do Plano de Suporte existente associado à sua conta serão exibidos na Etapa 3 do fluxo de trabalho de suporte. Basta selecionar o plano e continuar para enviar seu caso. Você poderá enviar incidentes até o limite indicado no plano ou até a data do término do plano, o que ocorrer primeiro. Depois que os incidentes restantes mostrarem "0" ou se o plano expirar, ele não estará mais ativo.
 
    > [!div class="mx-imgBorder"]
@@ -62,8 +58,7 @@ Ao enviar um incidente online, primeiro você deverá entrar. Entre com a conta 
 ### <a name="using-your-contract-id-and-access-id-when-submitting-an-incident-initial-use"></a>Usando a ID do Contrato e a ID de Acesso ao enviar um incidente (uso inicial)
 
 #### <a name="submitting-an-incident-online"></a>Enviando um incidente online
-
-Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista suspensa, selecione o produto com o qual você precisa de ajuda. Por exemplo, para enviar um incidente para o Visual Studio Enterprise 2017, selecione a família **Ferramentas para Desenvolvedores**, selecione **Visual Studio 2017** como o produto e, em seguida, escolha **Visual Studio Enterprise 2017** como a versão.
+Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista suspensa, selecione o produto com o qual você precisa de ajuda. Por exemplo, para enviar um incidente ao Visual Studio Enterprise 2019, selecione a família **Ferramentas para Desenvolvedores**, selecione **Visual Studio 2019** como o produto e, em seguida, escolha **Visual Studio Enterprise 2019** como a versão.
 
 1. Depois de escolher o produto para o qual precisa de suporte, clique em **Avançar**.
 
@@ -96,11 +91,9 @@ Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista sus
 6. Conclua as etapas restantes (gravidade, informações de contato e análise).   Depois de enviar seu incidente, você verá uma confirmação de que seu incidente foi enviado com êxito e poderá carregar arquivos no caso. Um analista de suporte será atribuído ao seu incidente e contatará você para resolver o problema usando a forma de contato selecionada.
 
 #### <a name="submit-an-incident-by-phone"></a>Enviar um incidente por telefone
-
 Se desejar criar um incidente de suporte por telefone, localize o número de telefone do [Atendimento ao cliente](https://support.microsoft.com/help/13948/global-customer-service-phone-numbers) para seu país. Certifique-se de ter a ID do Contrato e a ID do Acesso disponíveis ao ligar.
 
 #### <a name="submit-an-incident-within-the-azure-portal"></a>Enviar um incidente no Portal do Azure
-
 Para usar o benefício de suporte técnico da assinatura do Visual Studio para problemas relacionados ao Azure, será necessário vincular a ID do Contrato e a ID do Acesso à sua assinatura do Azure.
 
 1. Acesse https://portal.azure.com e entre

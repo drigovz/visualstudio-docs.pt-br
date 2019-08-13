@@ -6,24 +6,22 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1937ab28af9b4c5c09bb12e2938a2aaa907fe8e6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d0401d810f5f97b0306290faff2cfeb1785ba14f
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893578"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821942"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 
 Este artigo descreve os controles e painéis de layout do Designer XAML.
 
-Imagine o local em que deseja que os objetos apareçam em uma página, como imagens, botões e vídeos. Talvez você queira que eles apareçam em linhas e colunas; em uma única linha, vertical ou horizontal; ou em posições fixas.
+Imagine o local em que deseja que os objetos apareçam em uma página&mdash;como imagens, botões e vídeos. Talvez você queira que eles apareçam em linhas e colunas; em uma única linha, vertical ou horizontal; ou em posições fixas.
 
 Depois de pensar como a página pode ser exibida, escolha um painel de layout. Todas as páginas começam com um, porque você precisa de algo ao qual adicionar os objetos. Por padrão, ele é uma **Grade**, mas você pode alterá-lo.
 
-Painéis de layout ajudam a organizar objetos em uma página, mas fazem mais do que isso. Eles ajudam a projetar diferentes tamanhos de tela e resoluções. Quando usuários executam um aplicativo, tudo o que está contido no painel de layout é redimensionado para caber na tela do dispositivo em uso. Claro, se você não quiser que isso aconteça com o layout, será possível substituir esse comportamento em uma parte ou na totalidade do layout. É possível usar propriedades de altura e largura para controlar isso.
+Painéis de layout ajudam a organizar objetos em uma página, mas fazem mais do que isso. Eles ajudam a projetar diferentes tamanhos de tela e resoluções. Quando usuários executam um aplicativo, tudo o que está contido no painel de layout é redimensionado para caber na tela do dispositivo em uso. É claro que, se você não quiser que isso aconteça com o layout, será possível substituir esse comportamento em uma parte ou na totalidade do layout. É possível usar propriedades de altura e largura para controlar isso.
 
 ## <a name="layout-panels"></a>Painéis de layout
 
@@ -41,9 +39,9 @@ Organize objetos em linhas e colunas.
 
 Organize objetos em regiões de grade iguais ou uniformes. Este painel é ótimo para organizar uma lista de imagens.
 
-![Painel de layout UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
-
 (Disponível somente para projetos WPF.)
+
+![Painel de layout UniformGrid](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png)
 
 ### <a name="canvas"></a>Tela
 
@@ -83,7 +81,7 @@ Os controles de layout a seguir são os mais populares, mas existem outros. Voc�
 
 ### <a name="border"></a>Borda
 
-Crie uma borda, uma tela de fundo ou ambos em torno de um objeto. É possível adicionar apenas um objeto a uma **Borda**. Caso deseje aplicar uma borda ou tela de fundo a mais de um objeto, adicione o painel de layout à **Borda**. Em seguida, adicione objetos a esse painel ou controle.
+Crie uma borda, uma tela de fundo ou ambos em torno de um objeto. É possível adicionar apenas um objeto a uma **Borda**. Caso queira aplicar uma borda ou tela de fundo a mais de um objeto, adicione o painel de layout à **Borda**. Em seguida, adicione objetos a esse painel ou controle.
 
 ![Controle de layout de borda](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png)
 

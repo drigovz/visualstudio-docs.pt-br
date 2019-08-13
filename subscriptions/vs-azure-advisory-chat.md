@@ -1,24 +1,22 @@
 ---
 title: Benefício de Chat de Consultoria do Azure em assinaturas do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como tirar proveito do benefício de Chat de Consultoria do Azure incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: d3bdcdff9244a0ddab4f7be4fc030a0d4e189583
-ms.sourcegitcommit: f369ff7e84b0216f01570a486c7be80ca6d0e61a
+ms.openlocfilehash: bd5de6c74260ebdb040d16695a180a2eaed8e361
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/16/2019
-ms.locfileid: "68250835"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681709"
 ---
 # <a name="azure-advisory-chat"></a>Chat de Consultoria do Azure
-
 Obtenha ajuda para começar a usar o Azure em tempo real! Inclui consultoria para serviços de PaaS do Azure.  O benefício de Chat de Consultoria do Azure está disponível em assinaturas do Visual Studio Enterprise Standard e de nuvem anuais.
 
 ## <a name="activation-steps"></a>Etapas de Ativação
-
 É fácil usar o Chat de Consultoria do Azure.
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Localize o bloco de Chat de Consultoria do Azure na seção de Suporte e clique em **Iniciar chat agora**.
@@ -34,7 +32,6 @@ Obtenha ajuda para começar a usar o Azure em tempo real! Inclui consultoria par
     > ![Chat de Consultoria do Azure](_img/vs-azure-advisory/vs-azure-advisory-chat.png)
 
 ## <a name="eligibility"></a>Qualificação
-
 |                                                      Nível de Assinatura                                                      |     Canais      |    Benefício    | Renovável? |
 |------------------------------------------------------------------------------------------------------------------------------|-------------------|---------------|------------|
 |                                      Visual Studio Enterprise (Standard)                                       | VL, Azure, Retail |   Um ano    |    Sim     |
@@ -57,3 +54,6 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 ## <a name="support-resources"></a>Recursos de suporte
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Várias assinaturas do Visual Studio incluem créditos Azure.  Se você ainda não ativou o seu, confira o [Benefício do Azure](vs-azure.md). 

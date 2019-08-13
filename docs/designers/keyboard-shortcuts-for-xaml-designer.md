@@ -1,19 +1,17 @@
 ---
-title: Atalhos de teclado do Designer XAML
+title: Atalhos de teclado do XAML Designer
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 40211cc7-294a-4943-85a4-941ad6418dad
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: 1d0f655fb4b5b2bb23b19f7fcaf5106307c10895
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e9a3260733ce67cde32aa8800b160314cf1ed8bb
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896753"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821784"
 ---
 # <a name="keyboard-shortcuts-for-xaml-designer"></a>Atalhos de teclado do XAML Designer
 
@@ -31,7 +29,7 @@ Esta tabela lista os atalhos que estão disponíveis para trabalhar com elemento
 |Selecione um único elemento|Pressione **Tab** para selecionar os elementos na ordem em que eles são exibidos no documento. (Você também pode selecionar elementos usando as teclas de direção).|
 |Selecionar vários elementos|Pressione e segure a tecla **Shift** enquanto seleciona cada elemento|
 |Selecione vários elementos não adjacentes|Pressione e segure a tecla **Ctrl** enquanto seleciona o primeiro e o último elementos|
-|Mover elementos selecionados|Pressione as teclas de direção (mantenha a tecla **Shift** pressionada para aumentar a distância e mover os elementos a cada pressionamento de tecla.)|
+|Mover elementos selecionados|Pressione as teclas de direção. Mantenha a tecla **Shift** pressionada para aumentar a distância ao mover os elementos a cada pressionamento de tecla.|
 |Gire um objeto em incrementos de 15 graus|Mantenha a tecla **Shift** pressionada enquanto gira o elemento|
 |Remova todos os elementos|Pressione **Ctrl**+**A**|
 |Limpe a seleção de todos os objetos|Pressione **Ctrl**+**Shift**+**A**|

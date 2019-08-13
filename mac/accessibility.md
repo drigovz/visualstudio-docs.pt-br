@@ -5,12 +5,12 @@ author: conceptdev
 ms.author: crdun
 ms.date: 04/17/2019
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
-ms.openlocfilehash: 0ee6ffc7bd1567a86bc361f55e00c52ccecddd61
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 13b8d40a6ab31d7178e95a3896afa1c85c804f6c
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824442"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787635"
 ---
 # <a name="accessibility"></a>Acessibilidade
 
@@ -57,7 +57,7 @@ Definir o **Acesso completo por teclado** para **Todos os controles** permite qu
 
 Para habilitar ou desabilitar o VoiceOver pressione **&#8984; + F5**
 
-Os comandos de VoiceOver aparecem neste guia como **VO + *tecla***, em que **VO** se refere ao modificador definido no aplicativo **VoiceOver Utility**. O modificador padrão é **Ctrl + Alt**. Por exemplo, dependendo do seu modificador de VoiceOver **VO + M** significará **Ctrl + Alt + M**. Para resumir, as teclas de cursor serão referidas como **Esquerda** e **Direita**, etc.
+Os comandos de VoiceOver aparecem neste guia como **VO+_tecla_** , em que **VO** se refere ao modificador definido no aplicativo **VoiceOver Utility**. O modificador padrão é **Ctrl + Alt**. Por exemplo, dependendo do seu modificador de VoiceOver **VO + M** significará **Ctrl + Alt + M**. Para resumir, as teclas de cursor serão referidas como **Esquerda** e **Direita**, etc.
 
 Para navegar na interface de usuário do Visual Studio para Mac, use as seguintes combinações de teclas:
 

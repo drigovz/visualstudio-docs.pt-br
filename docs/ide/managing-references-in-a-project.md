@@ -1,6 +1,6 @@
 ---
 title: Gerenciar referências em um projeto
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57cbff868cfdedb45b1973908ddb250ad09ea19e
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 77b52e66d0278d7e9f8446fe728cca285c8418fa
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747047"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787628"
 ---
 # <a name="manage-references-in-a-project"></a>Gerenciar referências em um projeto
 
@@ -45,6 +45,8 @@ Para adicionar uma referência, clique com o botão direito do mouse no nó **Re
 - componentes COM
 
 - Outros assemblies ou bibliotecas de classes de projetos na mesma solução
+
+- Projetos compartilhados
 
 - Serviços Web XML
 
@@ -109,16 +111,20 @@ Para obter mais informações, confira [Visão geral do direcionamento de estrut
 
 ## <a name="project-to-project-references"></a>Referências de projeto a projeto
 
-Referências projeto a projeto são referências a projetos que contêm assemblies; é possível criá-las usando a guia **Projeto**. O Visual Studio pode encontrar um assembly quando receber um caminho para o projeto.
+Referências projeto a projeto são referências a projetos que contêm assemblies; é possível adicioná-las usando a guia **Projetos** na caixa de diálogo Gerenciador de Referências. O Visual Studio pode encontrar um assembly quando receber um caminho para o projeto.
 
 Quando você tiver um projeto que produz um assembly, será necessário referenciar o projeto e não usar uma referência de arquivo (consulte abaixo). A vantagem de uma referência projeto a projeto é que ela cria uma dependência entre os projetos no sistema de build. O projeto dependente será compilado se ele tiver sido alterado desde a última vez que o projeto de referência foi compilado. Uma referência de arquivo não cria uma dependência de build e, portanto, é possível compilar o projeto de referência sem compilar o projeto dependente, e a referência pode se tornar obsoleta. (Ou seja, o projeto pode referenciar uma versão anteriormente compilada do projeto.) Isso pode resultar na exigência de várias versões de uma única DLL no diretório *bin*, o que não é possível. Quando ocorrer esse conflito, você verá uma mensagem como “Aviso: o 'arquivo' de dependência no projeto 'projeto' não pode ser copiado para o diretório de execução, pois ele substituirá o 'arquivo' de referência”. Para obter mais informações, veja [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md) e [Como: Criar e remover dependências de projeto](../ide/how-to-create-and-remove-project-dependencies.md).
 
 > [!NOTE]
 > Uma referência de arquivo será criada em vez de uma referência projeto a projeto se a versão de destino do .NET Framework de um projeto for a versão 4.5 e a versão de destino do outro projeto for a versão 2, 3, 3.5 ou 4.0.
 
+## <a name="shared-project-references"></a>Referências de projeto compartilhado
+
+Ao contrário da maioria dos outros tipos de projetos, um *projeto compartilhado* não tem nenhuma saída binária. Em vez disso, o código é compilado em cada projeto que faz referência a ele. Os [Projetos Compartilhados](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) permitem gravar códigos comuns que são referência de vários projetos de aplicativos diferentes. O código é compilado como parte de cada projeto de referência e pode incluir diretivas de compilador para ajudar a incorporar a funcionalidade específica da plataforma à base de código compartilhada. Adicione uma referência a um projeto compartilhado na guia **Projetos Compartilhados** da caixa de diálogo Gerenciador de Referências.
+
 ## <a name="file-references"></a>Referências de arquivo
 
-Referências de arquivo são referências diretas a assemblies fora do contexto de um projeto do Visual Studio. Eles são criados usando a guia **Procurar** do **Gerenciador de Referências**. Use uma referência de arquivo quando você tiver apenas um assembly ou componente e não o projeto que o cria como a saída.
+Referências de arquivo são referências diretas a assemblies fora do contexto de um projeto do Visual Studio. Crie-as usando a guia **Procurar** da caixa de diálogo Gerenciador de Referências. Use uma referência de arquivo quando você tiver apenas um assembly ou componente e não o projeto que o cria como a saída.
 
 ## <a name="see-also"></a>Consulte também
 

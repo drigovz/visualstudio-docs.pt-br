@@ -6,14 +6,12 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- uwp
-ms.openlocfilehash: b8654c9a414549c4e1fee4515d359bfce4555df8
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: f80496cb54e8e7f4c99a819ddd3c07fbed5438ca
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67823821"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821517"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
 
@@ -21,7 +19,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 
 ## <a name="add-an-element-to-a-layout"></a>Adicionar um elemento a um layout
 
-*Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](/uwp/api/Windows.UI.Xaml.Controls.Panel). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](/uwp/api/Windows.UI.Xaml.FrameworkElement). Você pode usar vários elementos filho `Panel`, como [Canvas](/uwp/api/Windows.UI.Xaml.Controls.Canvas), [StackPanel](/uwp/api/Windows.UI.Xaml.Controls.StackPanel) e [Grid](/uwp/api/Windows.UI.Xaml.Controls.Grid), para servir como contêineres de layout e posicionar e organizar os elementos em uma página.
+*Layout* é o processo de redimensionar e posicionar elementos em uma interface do usuário. Para posicionar elementos visuais, você deve colocá-los em um layout [Panel](xref:Windows.UI.Xaml.Controls.Panel). Um `Panel` tem uma propriedade filho, que é uma coleção de tipos [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement). Você pode usar vários elementos filho `Panel`, como [Telas](xref:Windows.UI.Xaml.Controls.Canvas), [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) e [Grade](xref:Windows.UI.Xaml.Controls.Grid), para servirem como contêineres de layout e posicionar e organizar os elementos em uma página.
 
 Por padrão, um painel `Grid` é usado como o contêiner de layout de nível superior em uma página ou formulário. Você pode adicionar painéis de layout, controles ou outros elementos dentro do layout de página de nível superior.
 
@@ -31,7 +29,7 @@ Para adicionar um elemento a um layout no Designer XAML, siga um destes procedim
 
 - Arraste um elemento da **Caixa de Ferramentas** para a prancheta.
 
-- Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](/uwp/api/Windows.UI.Xaml.Shapes.Ellipse) ou [Retângulo](/uwp/api/Windows.UI.Xaml.Shapes.Rectangle)) e desenhe um elemento no painel ativo.
+- Na **Caixa de Ferramentas**, selecione uma das ferramentas de desenho (por exemplo, [Elipse](xref:Windows.UI.Xaml.Shapes.Ellipse) ou [Retângulo](xref:Windows.UI.Xaml.Shapes.Rectangle)) e desenhe um elemento no painel ativo.
 
 ## <a name="change-the-layering-order-of-elements"></a>Alterar a ordem das camadas de elementos
 
@@ -51,7 +49,7 @@ Para alterar a ordem das camadas, siga um destes procedimentos:
 
   - **Enviar para Trás** para enviar o elemento para a parte posterior da ordem.
 
-  Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** superior será exibido na frente quando houver sobreposição de elementos.
+- Altere a propriedade **ZIndex** na seção **Layout** na janela Propriedades. Para sobrepor elementos, a propriedade **ZIndex** tem precedência sobre a ordem de elementos mostrada na janela Estrutura de Tópicos de Documento. Um elemento com um valor **ZIndex** superior será exibido na frente quando houver sobreposição de elementos.
 
 ## <a name="change-the-alignment-of-an-element"></a>Alterar o alinhamento de um elemento
 
@@ -88,7 +86,7 @@ Se um adorno de margem estiver aberto, vertical ou horizontalmente, essa margem 
 Quando você abre um adorno de margem, e a margem oposta não está definida, a margem oposta é definida como o valor correto de acordo com o local do elemento na prancheta. Para margens opostas, como as margens **Esquerda** e **Direita**, pelo menos uma propriedade sempre será definida.
 
 > [!IMPORTANT]
-> Elementos colocados dentro de alguns contêineres de layout, como <xref:Windows.UI.Xaml.Controls.Canvas>, não têm adornos de margem. Elementos colocados dentro de um <xref:Windows.UI.Xaml.Controls.StackPanel> têm adornos para as margens esquerda e direita ou para as margens superior e inferior, dependendo da orientação do `StackPanel`.
+> Elementos colocados dentro de alguns contêineres de layout, como [Tela](xref:Windows.UI.Xaml.Controls.Canvas), não têm adornos de margem. Elementos colocados dentro de um [StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel) têm adornos para as margens esquerda e direita ou para as margens superior e inferior, dependendo da orientação do `StackPanel`.
 
 ## <a name="group-and-ungroup-elements"></a>Agrupar e desagrupar elementos
 
@@ -101,7 +99,7 @@ Para agrupar elementos em um novo contêiner de layout:
 2. Clique com o botão direito do mouse nos elementos selecionados, aponte para **Agrupar em** e clique no tipo de contêiner de layout no qual deseja que o grupo resida.
 
     > [!TIP]
-    > Se você selecionar <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar os elementos, os elementos serão colocados em um novo painel de <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se você desagrupar elementos em um desses contêineres de layout, apenas <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> será excluído, e o painel <xref:Windows.UI.Xaml.Controls.Grid> permanecerá. Para excluir o painel `Grid`, desagrupe os elementos novamente.
+    > Se você selecionar [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Borda](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) para agrupar seus elementos, esses elementos serão colocados em um novo painel de [Grade](xref:Windows.UI.Xaml.Controls.Grid) no [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Borda](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer). Se você desagrupar os elementos de um desses contêineres de layout, apenas [Viewbox](xref:Windows.UI.Xaml.Controls.Viewbox), [Borda](xref:Windows.UI.Xaml.Controls.Border) ou [ScrollViewer](xref:Windows.UI.Xaml.Controls.ScrollViewer) será excluído, e o painel [Grade](xref:Windows.UI.Xaml.Controls.Grid) permanecerá. Para excluir o painel `Grid`, desagrupe os elementos novamente.
 
 Para desagrupar elementos e excluir o layout, clique com o botão direito do mouse no grupo que deseja desagrupar e clique em **Desagrupar**. Você também pode agrupar ou desagrupar elementos clicando com o botão direito do mouse em itens selecionados na janela Estrutura de Tópicos de Documento e clicando em **Agrupar em** ou **Desagrupar**.
 
