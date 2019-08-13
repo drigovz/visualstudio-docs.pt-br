@@ -10,22 +10,22 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bc813868f3284ad81849e3a03d864de65d9f54ed
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7ceecffec577528484cd67fd13d3e04f368fb916
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62896890"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68822397"
 ---
 # <a name="work-with-the-python-interactive-window"></a>Trabalhar com a janela Interativa do Python
 
-O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impressão-loop) para cada um dos ambientes do Python, que é uma melhoria do REPL obtido com *python.exe* na linha de comando. A janela **Interativa** (aberta com os comandos de menu **Exibir** > **Outras Janelas Interativas** > **&lt;do ambiente&gt;**) permite que você insira o código Python arbitrário e veja resultados imediatos. Esse modo de codificação ajuda a você aprender e experimentar com APIs e bibliotecas e a desenvolver de forma interativa o código funcional para incluir em seus projetos.
+O Visual Studio fornece uma janela interativa REPL (leitura-avaliação-impressão-loop) para cada um dos ambientes do Python, que é uma melhoria do REPL obtido com *python.exe* na linha de comando. A janela **Interativa** (aberta com os comandos de menu **Exibir** > **Outras Janelas Interativas** >  **&lt;do ambiente&gt;** ) permite que você insira o código Python arbitrário e veja resultados imediatos. Esse modo de codificação ajuda a você aprender e experimentar com APIs e bibliotecas e a desenvolver de forma interativa o código funcional para incluir em seus projetos.
 
 ![Janela interativa do Python](media/interactive-window.png)
 
 O Visual Studio tem diversos modos REPL do Python à sua disposição:
 
-| REPL | Descrição | Edição | Depuração | Imagens |
+| REPL | DESCRIÇÃO | Edição | Depuração | Imagens |
 | --- | --- | --- | --- | --- |
 | Padrão | REPL padrão, que se comunica com o Python diretamente | Edição padrão (várias linhas etc.). | Sim, por meio de `$attach` | Não |
 | Depurar | REPL padrão, que se comunica com o processo depurado do Python | Edição padrão | Somente depuração | Não |
@@ -40,7 +40,7 @@ Para obter um passo a passo detalhado com exemplos, incluindo as interações co
 
 Há várias maneiras de abrir a janela **Interativa** de um ambiente.
 
-Em primeiro lugar, mude para a janela Ambientes do Python (**Exibir** > **Outras Janelas** > **Ambientes do Python** ou **Ctrl**+**K** > **Ctrl**+**`**) e escolha o comando ou botão **Abrir Janela Interativa** para um ambiente escolhido.
+Em primeiro lugar, mude para a janela Ambientes do Python (**Exibir** > **Outras Janelas** > **Ambientes do Python** ou **Ctrl**+**K** > **Ctrl**+ **`** ) e escolha o comando ou botão **Abrir Janela Interativa** para um ambiente escolhido.
 
 ![Link Janela Interativa na janela Ambientes do Python](media/interactive-window-opening.png)
 
@@ -62,18 +62,18 @@ Você pode controlar vários aspectos da janela **Interativa** por meio de **Fer
 
 ## <a name="use-the-interactive-window"></a>Usar a Janela Interativa
 
-Depois de abrir a janela **Interativa**, é possível começar a inserir o código linha por linha no prompt **\>\>\>**. A janela **Interativa** executa cada linha conforme ela é inserida, o que inclui a importação de módulos, definição de variáveis e assim por diante:
+Depois de abrir a janela **Interativa**, é possível começar a inserir o código linha por linha no prompt **\>\>\>** . A janela **Interativa** executa cada linha conforme ela é inserida, o que inclui a importação de módulos, definição de variáveis e assim por diante:
 
 ![Janela interativa do Python](media/interactive-window.png)
 
-A exceção é quando as linhas de código adicionais são necessárias para fazer uma instrução completa, como quando uma instrução `for` termina em dois pontos como mostrado acima. Nesses casos, o prompt de linha muda para **...**, indicando que é necessário inserir linhas adicionais no bloco, conforme mostrado na quarta e quinta linhas do gráfico acima. Ao pressionar **Enter** em uma linha em branco, a janela **Interativa** fecha o bloco e o executa no interpretador.
+A exceção é quando as linhas de código adicionais são necessárias para fazer uma instrução completa, como quando uma instrução `for` termina em dois pontos como mostrado acima. Nesses casos, o prompt de linha muda para **...** , indicando que é necessário inserir linhas adicionais no bloco, conforme mostrado na quarta e quinta linhas do gráfico acima. Ao pressionar **Enter** em uma linha em branco, a janela **Interativa** fecha o bloco e o executa no interpretador.
 
 > [!Tip]
 > A janela **Interativa** é uma melhoria da experiência comum do REPL de linha de comando do Python, recuando automaticamente as instruções que pertencem a um escopo ao redor. Seu histórico (recuperado com a seta para cima) também fornece itens de várias linhas, enquanto o REPL de linha de comando fornece somente linhas individuais.
 
 <a name="meta-commands"></a> A janela **Interativa** também dá suporte a vários metacomandos. Todos os metacomandos começam com `$` e é possível digitar `$help` para obter uma lista dos metacomandos e `$help <command>` para obter detalhes de uso de um comando específico.
 
-| Metacomando | Descrição |
+| Metacomando | DESCRIÇÃO |
 | --- | --- |
 | `$$` | Insere um comentário, que é útil para comentar o código ao longo da sessão. |
 | `$attach` | Anexa o depurador do Visual Studio ao processo da janela REPL para habilitar a depuração. |
@@ -111,7 +111,11 @@ Esse comando é útil para o desenvolvimento de código iterativo ou evolucioná
 
 <!-- After 15.3 is released, you can also press **Undo** after pasting to restore prompts. Press **Undo** a second time to remove the pasted code entirely. -->
 
-Ao usar um arquivo de código como um bloco de rascunho, geralmente você tem um pequeno bloco de código que você deseja enviar de uma só vez. Para agrupar códigos, marque o código como uma *célula de código* adicionando um comentário começando com `#%%` ao início da célula, que termina a anterior. As células de código podem ser recolhidas e expandidas e usar **Ctrl**+**Enter** dentro de uma célula de código envia toda a célula para a janela **Interativa** e passa para a próxima.
+## <a name="work-with-code-cells"></a>Trabalhar com células de código
+
+As células de código podem ser usadas na análise de dados e são compatíveis com diversos editores de texto.
+
+Por exemplo, ao usar um arquivo de código como um bloco de rascunho, geralmente você tem um pequeno bloco de código que você deseja enviar de uma só vez. Para agrupar códigos, marque o código como uma *célula de código* adicionando um comentário começando com `#%%` ao início da célula, que termina a anterior. As células de código podem ser recolhidas e expandidas e usar **Ctrl**+**Enter** dentro de uma célula de código envia toda a célula para a janela **Interativa** e passa para a próxima.
 
 O Visual Studio também detecta células de código começando com comentários como `# In[1]:`, que é o formato que você obtém ao exportar um bloco de anotações do Jupyter como um arquivo do Python. Essa detecção facilita a execução de um bloco de anotações do [Azure Notebooks](https://notebooks.azure.com/) baixando como um arquivo Python, abrindo no Visual Studio e usando **Ctrl**+**Enter** para executar cada célula.
 

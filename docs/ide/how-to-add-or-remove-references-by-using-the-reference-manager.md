@@ -1,6 +1,6 @@
 ---
 title: Adicionar referências no Gerenciador de Referências
-ms.date: 04/11/2018
+ms.date: 08/02/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.ReferenceManager
@@ -21,30 +21,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c20408fc7fc2bc15056c9668c90b5870ecf446
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 584c807670e5e5ba0bc4fa1b381dca30474212e7
+ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825481"
+ms.lasthandoff: 08/05/2019
+ms.locfileid: "68787886"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de Referências
 
-É possível usar a caixa de diálogo **Gerenciador de Referências** para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
+É possível usar a caixa de diálogo Gerenciador de Referências para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se você estiver desenvolvendo um aplicativo .NET, o projeto referenciará *mscorlib.dll* automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.
 
 ## <a name="reference-manager-dialog-box"></a>Caixa de diálogo Gerenciador de Referências
 
-A caixa de diálogo **Gerenciador de Referências** mostra diferentes categorias à esquerda, dependendo do tipo de projeto:
+A caixa de diálogo Gerenciador de Referências mostra diferentes categorias à esquerda, dependendo do tipo de projeto:
 
-- **Assemblies**, com os subgrupos **Estrutura** e **Extensões**.
+- **Assemblies**, com os subgrupos **Estrutura** e **Extensões**
 
-- **COM** lista todos os componentes COM disponíveis para referência.
+- **COM** lista todos os componentes COM disponíveis para referência
 
-- **Solução**, com o subgrupo **Projetos**.
+- **Projetos**
+
+- **Projetos compartilhados**
 
 - **Windows**, com os subgrupos **Core** e **Extensões**. É possível explorar as referências no SDK do Windows ou nos SDKs de extensão usando o **Pesquisador de Objetos**.
 
-- **Procurar**, com o subgrupo **Recente**.
+- **Procurar**, com o subgrupo **Recente**
 
 ## <a name="add-a-reference"></a>Adicionar uma referência
 
@@ -62,7 +64,7 @@ Ao adicionar uma referência manualmente a qualquer namespace EnvDTE (<xref:EnvD
 
 Todos os projetos da área de trabalho contêm uma referência implícita a **mscorlib**. Os projetos do Visual Basic contêm uma referência implícita a <xref:Microsoft.VisualBasic>. Todos os projetos contêm uma referência implícita a **System.Core**, mesmo se ela for removida da lista de referências.
 
-Se um tipo de projeto não der suporte a assemblies, a guia não será exibida na caixa de diálogo **Gerenciador de Referências**.
+Se um tipo de projeto não der suporte a assemblies, a guia não será exibida na caixa de diálogo Gerenciador de Referências.
 
 A guia **Assemblies** consiste em duas subguias:
 
@@ -142,6 +144,10 @@ Um projeto pode referenciar outro projeto direcionado a outra versão de estrutu
 > [!NOTE]
 > Um projeto direcionado ao .NET Framework 4 é incompatível com um projeto direcionado ao .NET Framework 4 Client Profile.
 
+## <a name="shared-projects-tab"></a>Guia Projetos Compartilhados
+
+Adicione uma referência a um projeto compartilhado na guia **Projetos Compartilhados** da caixa de diálogo Gerenciador de Referências. Os [Projetos Compartilhados](/xamarin/cross-platform/app-fundamentals/shared-projects?tabs=windows) permitem gravar códigos comuns que são referência de vários projetos de aplicativos diferentes.
+
 ## <a name="universal-windows-tab"></a>Guia Windows Universal
 
 A guia **Windows Universal** lista todos os SDKs específicos às plataformas na qual sistemas operacionais Windows estão em execução.
@@ -155,28 +161,28 @@ Por padrão, os Projetos de Aplicativo Universal do Windows têm uma referência
 
 **Extensões** lista os SDKs do usuário que estendem a plataforma de destino do Windows.
 
-O SDK é uma coleção de arquivos que o Visual Studio trata como um único componente. Na guia **Extensões**, os SDKs que se aplicam ao projeto do qual a caixa de diálogo **Gerenciador de Referências** foi invocada são listados como entradas únicas. Quando adicionado a um projeto, todo o conteúdo do SDK é consumido pelo Visual Studio de modo que o usuário não precisa realizar ações adicionais para aproveitar os conteúdos do SDK no IntelliSense, na caixa de ferramentas, no designer, no Pesquisador de Objetos, no build, na implantação, depuração nem nos pacotes.
+O SDK é uma coleção de arquivos que o Visual Studio trata como um único componente. Na guia **Extensões**, os SDKs que se aplicam ao projeto do qual a caixa de diálogo Gerenciador de Referências foi invocada são listados como entradas únicas. Quando adicionado a um projeto, todo o conteúdo do SDK é consumido pelo Visual Studio de modo que o usuário não precisa realizar ações adicionais para aproveitar os conteúdos do SDK no IntelliSense, na caixa de ferramentas, no designer, no Pesquisador de Objetos, no build, na implantação, depuração nem nos pacotes.
 
 Para obter informações sobre como exibir o SDK na guia **Extensões**, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).
 
 > [!NOTE]
-> Se um projeto referenciar um SDK que depende de outro SDK, o Visual Studio não consumirá o segundo SDK a menos que você adicione manualmente uma referência ao segundo SDK. Quando um usuário escolhe um SDK na guia **Extensões**, a caixa de diálogo **Gerenciador de Referências** ajuda você a identificar dependências do SDK listando todas as dependências no painel de detalhes.
+> Se um projeto referenciar um SDK que depende de outro SDK, o Visual Studio não consumirá o segundo SDK a menos que você adicione manualmente uma referência ao segundo SDK. Quando um usuário escolhe um SDK na guia **Extensões**, a caixa de diálogo Gerenciador de Referências ajuda a identificar dependências do SDK listando todas as dependências no painel de detalhes.
 
-Se um tipo de projeto não der suporte para extensões, essa guia não será exibida na caixa de diálogo **Gerenciador de Referências**.
+Se um tipo de projeto não der suporte para extensões, essa guia não será exibida na caixa de diálogo Gerenciador de Referências.
 
 ## <a name="com-tab"></a>Guia COM
 
 A guia **COM** lista todos os componentes COM disponíveis para referência. Se você deseja adicionar uma referência a uma DLL COM registrada que contém um manifesto interno, cancele o registro da DLL primeiro. Caso contrário, em vez de adicionar a referência do assembly como uma DLL nativa, o Visual Studio a adicionará como um Controle ActiveX.
 
-Se um tipo de projeto não der suporte ao COM, a guia não será exibida na caixa de diálogo **Gerenciador de Referências**.
+Se um tipo de projeto não der suporte ao COM, a guia não será exibida na caixa de diálogo Gerenciador de Referências.
 
-## <a name="browse-button"></a>Botão Procurar
+## <a name="browse"></a>Procure
 
 É possível usar o botão **Procurar** para procurar um componente no sistema de arquivos.
 
 Um projeto pode referenciar um componente direcionado a outra versão de estrutura. Por exemplo, você pode criar um aplicativo direcionado ao .NET Framework 4.7, mas que referencia um componente direcionado ao .NET Framework 4. Para obter mais informações, confira [Visão geral do direcionamento de estrutura](../ide/visual-studio-multi-targeting-overview.md).
 
-Evite adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo **Gerenciador de Referências** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
+Evite adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa tática pode causar erros de compilação. Em vez disso, use a guia **Solução** da caixa de diálogo Gerenciador de Referências para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).
 
 Não é possível navegar até o SDK e adicioná-lo ao projeto. Você pode apenas procurar um arquivo (por exemplo, um assembly ou um *.winmd*) e adicioná-lo ao seu projeto.
 
@@ -201,7 +207,7 @@ Ao fazer uma referência de arquivo a um WinMD, o layout previsto é que os arqu
 
 ## <a name="search"></a>Pesquisar
 
-A barra de pesquisa na caixa de diálogo **Gerenciador de Referências** opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contenha “Sistema”.
+A barra de pesquisa na caixa de diálogo Gerenciador de Referências opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contenha “Sistema”.
 
 ## <a name="see-also"></a>Consulte também
 

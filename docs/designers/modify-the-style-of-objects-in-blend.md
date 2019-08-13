@@ -1,5 +1,6 @@
 ---
-title: Modificar o estilo de objetos no Blend
+title: Modificar o estilo de objetos
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -7,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 53a2071e17898fc77aba8a5d51dda77ea2927187
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62845106"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821961"
 ---
-# <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
+# <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>Modificar o estilo de objetos no Blend para Visual Studio
 
 A maneira mais fácil de personalizar um objeto é definir as propriedades no painel **Propriedades**.
 
-Se você quiser reutilizar configurações ou grupos de configurações, crie um recurso reutilizável. Pode ser um *estilo*, *modelo*, ou algo simples como uma cor personalizada. Você também pode fazer um controle aparecer diferentemente com base em seu estado. Por exemplo, um botão muda para verde quando o usuário clica nele.
+Se quiser reutilizar configurações ou grupos de configurações, crie um recurso reutilizável. Pode ser um *estilo*, *modelo*, ou algo simples como uma cor personalizada. Você também pode fazer um controle aparecer diferentemente com base em seu estado. Por exemplo, um botão muda para verde quando o usuário clica nele.
 
 ## <a name="brushes-modify-the-appearance-of-an-object"></a>Pincéis: Modificar a aparência de um objeto
 
@@ -46,9 +47,9 @@ Crie um pincel visual a partir de um controle, como um botão. As ilustrações 
 
 Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.
 
-**Você deve usar um estilo?**: Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
+**Você deve usar um estilo?** : Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
 
-**Você deve usar um modelo?**: Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
+**Você deve usar um modelo?** : Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
 
 ### <a name="create-a-template-or-style"></a>Criar um modelo ou estilo
 
@@ -84,11 +85,11 @@ Clique com o botão direito do mouse em um objeto na janela [Objetos e Linha do 
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle
 
-Selecione o controle e, na janela [Propriedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), localize a propriedade **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
+Selecione o controle e, na janela **Propriedades****, localize as propriedades **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
 
-## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Estados visuais: Alterar a aparência de um controle com base em seu estado
+## <a name="visual-states"></a>Estados visuais
 
-Os controles podem ter aparências diferentes com base nas interações do usuário. Por exemplo, você pode fazer um botão ficar verde quando um usuário clica nele, ou pode executar uma animação. Reduza ou aumente o tempo entre estados visuais usando transições.
+Os estados visuais possibilitam alterar a aparência de um controle com base em seu estado. Os controles podem ter aparências diferentes com base nas interações do usuário. Por exemplo, você pode fazer um botão ficar verde quando um usuário clica nele ou pode executar uma animação. Reduza ou aumente o tempo entre estados visuais usando as transições.
 
 ![Mouse sobre o estado](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 

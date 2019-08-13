@@ -1,5 +1,6 @@
 ---
-title: Teclas modificadoras da ferramenta Seleção Direta no Blend
+title: Teclas modificadoras da ferramenta Seleção Direta
+titleSuffix: Blend for Visual Studio
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
@@ -8,14 +9,15 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b606cbc3857ac1b30713e2c78b9c85045bcb42ff
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 088c66e73c912ef6f282b7addb8debcd73b766e5
+ms.sourcegitcommit: 90c3187d804ad7544367829d07ed4b47d3f8a72d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820393"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68821813"
 ---
-# <a name="direct-selection-tool-modifier-keys-in-blend"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend
+# <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Teclas modificadoras da ferramenta Seleção Direta no Blend para Visual Studio
+
 A tabela a seguir lista os atalhos que podem ser usados para modificar a forma de um demarcador existente com a ferramenta **Seleção Direta** ![ferramenta Seleção Direta](../designers/media/6dd6571f-c116-451d-8dd2-1f88b8406362.png). Para adicionar ou remover pontos de um caminho existente ou para unir dois caminhos existentes, use a ferramenta **Caneta**.
 
 |Para realizar esta ação|Faça isto|Ponteiro|
@@ -33,7 +35,6 @@ A tabela a seguir lista os atalhos que podem ser usados para modificar a forma d
 
 ## <a name="see-also"></a>Consulte também
 
-- [Atalhos de teclado e teclas modificadoras](../designers/keyboard-shortcuts-and-modifier-keys-in-blend.md)
 - [Teclas modificadoras da prancheta](../designers/artboard-modifier-keys-in-blend.md)
 - [Teclas modificadoras da ferramenta Caneta](../designers/pen-tool-modifier-keys-in-blend.md)
 - [Desenhar formas e demarcadores](../designers/draw-shapes-and-paths.md)

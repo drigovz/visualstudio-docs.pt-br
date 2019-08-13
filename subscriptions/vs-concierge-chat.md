@@ -1,21 +1,20 @@
 ---
-title: Benefício de Chat de Atendimento da assinatura do Visual Studio | Microsoft Docs
+title: Benefício de Atendimento via Chat da Assinatura do Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre o benefício de Atendimento via Chat incluído nas assinaturas do Visual Studio.
-ms.openlocfilehash: 043ced3654c8bf43feebcc584fb46bb033d96e78
-ms.sourcegitcommit: 208395bc122f8d3dae3f5e5960c42981cc368310
+ms.openlocfilehash: 543fee937437141aa38d53707cb6e5bf84031e94
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/10/2019
-ms.locfileid: "67784617"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681178"
 ---
-# <a name="concierge-chat"></a>Atendimento via Chat
-
-Os serviços de Atendimento via Chat fornecem assistência para a localização de informações sobre produtos e documentação técnica, bem como ajuda para usar os benefícios de assinatura do Visual Studio.
+# <a name="concierge-chat-in-visual-studio-subscriptions"></a>Atendimento via Chat em assinaturas do Visual Studio
+O serviço de Atendimento via Chat fornece assistência para a localização de informações sobre produtos e documentação técnica, bem como ajuda para usar os benefícios de assinatura do Visual Studio.
 
 O serviço está disponível 24/7 e, no momento, é fornecido apenas em inglês (para perguntas que não se refiram a contas, cobrança e assinaturas).
 
@@ -36,7 +35,6 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
     > ![Sessão de Chat de Atendimento](_img/vs-concierge-chat/vs-concierge-chat-session.png)
 
 ## <a name="eligibility"></a>Qualificação
-
 | Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado | Disponível       |  Sim          |
@@ -53,10 +51,15 @@ Obter ajuda por meio do serviço de Atendimento via Chat é muito fácil.
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-
 ### <a name="q--is-the-chat-service-available-in-multiple-languages"></a>P:  O serviço de chat está disponível em vários idiomas?
    R: A assistência com problemas de contas, cobrança e assinaturas está disponível em vários idiomas.  A assistência para localizar informações sobre produtos e documentação técnica está disponível em inglês.
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
 - Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+
+## <a name="next-steps"></a>Próximas etapas
+Para obter mais informações sobre ferramentas e serviços da Microsoft, confira a documentação do:
+- [Azure](/azure/)
+- [Azure DevOps](/azure/devops/)
+- [Visual Studio IDE](/visualstudio/)

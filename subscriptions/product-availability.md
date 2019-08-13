@@ -3,15 +3,15 @@ title: Disponibilidade de produtos para downloads de software em assinaturas do 
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/11/2019
+ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba mais sobre a disponibilidade de produtos em downloads de software para assinaturas do Visual Studio
-ms.openlocfilehash: 8377168808f3d143d3845cddf06e361f113f1642
-ms.sourcegitcommit: 57866dd72fd0e15ce61128df70729b427a2d02eb
+ms.openlocfilehash: 2b6e53ab959d91b269c4235a1438af36eae24e11
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/18/2019
-ms.locfileid: "68315387"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681688"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Disponibilidade de produtos para downloads de software em assinaturas do Visual Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.
@@ -38,4 +38,5 @@ O número e os tipos de downloads dependem do seu nível de assinatura e das sua
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="next-steps"></a>Próximas etapas
-Alguns downloads de software podem exigir uma chave do produto (Product Key) para instalá-los e ativá-los.  Confira nosso artigo de chaves do produto (Product Keys) para obter detalhes sobre como obter e gerenciar suas chaves do produto (Product Keys). 
+- Alguns downloads de software podem exigir uma chave do produto (Product Key) para instalá-los e ativá-los.  Confira nosso artigo sobre [chaves do produto](product-keys.md) para obter detalhes sobre como obter e gerenciar suas chaves do produto. 
+- Etapas para [baixar o software](download-software.md).
