@@ -19,12 +19,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 99f5f8e389e3dfe91252149fb4c3d3c1e59f38b0
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: e6fdf3fa790a29f94a5bf3b40bc0d2ada703bc5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415605"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925768"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Como: Criar e editar configurações
 
@@ -44,7 +44,7 @@ Para abrir a caixa de diálogo do **Configuration Manager**, no **Gerenciador de
 
 Na caixa de diálogo **Configuration Manager** é possível usar a lista suspensa **Configuração da solução ativa** para selecionar uma configuração de build em toda a solução, modificar uma existente ou criar uma nova configuração. É possível usar a lista suspensa **Plataforma da solução ativa** para selecionar a plataforma que a configuração define como destino, modificar uma existente ou adicionar uma nova plataforma. O painel **Contextos do projeto** lista os projetos na solução. Para cada projeto, é possível selecionar configuração e plataforma específicas de projeto, modificar existentes ou criar uma nova configuração ou adicionar uma nova plataforma. Também é possível marcar caixas de seleção que indicam se cada projeto está incluído quando você usa a configuração em toda a solução para compilar ou implantar a solução.
 
- Depois de definir as configurações desejadas, é possível definir as propriedades do projeto adequadas para essas configurações.
+Depois de definir as configurações desejadas, é possível definir as propriedades do projeto adequadas para essas configurações.
 
 ### <a name="set-properties-based-on-configurations"></a>Definir as propriedades com base nas configurações
 
