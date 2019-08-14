@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50b86a32cb055eded71535b84b6b09fd59f78595
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 6883e556cd70adddd45fd442d338e10d1cafa1e2
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605943"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926194"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedades, JavaScript
 
@@ -40,11 +40,11 @@ Use as seguintes opções para selecionar a configuração e a plataforma a exib
 
  **Configuração**
 
- Especifica as definições de configuração a exibir ou modificar. As configurações são **Depurar** (padrão), **Versão**, **Todas as Configurações de** ou uma configuração definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica as definições de configuração a exibir ou modificar. As configurações são **Depurar** (padrão), **Versão**, **Todas as Configurações de** ou uma configuração definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
  **Plataforma**
 
- Especifica as configurações de plataforma a exibir ou modificar. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
+Especifica as configurações de plataforma a exibir ou modificar. As configurações são **Qualquer CPU** (padrão para aplicativos [!INCLUDE[win8_appname_long](../../debugger/includes/win8_appname_long_md.md)]), **x64**, **ARM**, **x86** ou uma plataforma definida pelo usuário. Para obter mais informações, confira [Como: Definir configurações de depuração e versão no Visual Studio](../../debugger/how-to-set-debug-and-release-configurations.md).
 
 ## <a name="general-page"></a>Página geral
 
@@ -55,13 +55,13 @@ Use as seguintes opções para configurar propriedades gerais do projeto.
 
  **Caminho de Saída**
 
- Especifica o local dos arquivos de saída para a configuração do projeto. O caminho é relativo; se você inserir um caminho absoluto, o caminho absoluto será salvo no projeto. O caminho padrão é bin\Debug.
+Especifica o local dos arquivos de saída para a configuração do projeto. O caminho é relativo; se você inserir um caminho absoluto, o caminho absoluto será salvo no projeto. O caminho padrão é bin\Debug.
 
- Quando você usa configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Quando você clica em **Depurar** > **Iniciar Depuração** (ou pressiona **F5**), o build é colocado no local de depuração, independentemente do **Caminho de saída** especificado. No entanto, o comando **Compilar Solução** no menu **Criar** a coloca no local especificado. Para habilitar as configurações de build avançadas, na barra de menus, escolha **Ferramentas** > **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções**, selecione **Geral** e desmarque a caixa de seleção **Mostrar configurações de build avançadas**. Isso lhe dá controle manual sobre todos os valores de configuração e de se uma versão de depuração ou liberação é compilada.
+Quando você usa configurações de build simplificadas, o sistema do projeto determina se é necessário compilar uma versão de depuração ou de liberação. Quando você clica em **Depurar** > **Iniciar Depuração** (ou pressiona **F5**), o build é colocado no local de depuração, independentemente do **Caminho de saída** especificado. No entanto, o comando **Compilar Solução** no menu **Criar** a coloca no local especificado. Para habilitar as configurações de build avançadas, na barra de menus, escolha **Ferramentas** > **Opções**. Na caixa de diálogo **Opções**, expanda **Projetos e Soluções**, selecione **Geral** e desmarque a caixa de seleção **Mostrar configurações de build avançadas**. Isso lhe dá controle manual sobre todos os valores de configuração e de se uma versão de depuração ou liberação é compilada.
 
  **Idioma padrão**
 
- Especifica o idioma padrão para o projeto. A opção de idioma selecionada em **Relógio, Idioma e Região** no Painel de Controle especifica o idioma preferencial do usuário. Ao especificar um idioma padrão para o projeto, certifique-se de que os recursos de idioma padrão especificado sejam usados se o idioma preferencial do usuário não corresponder aos recursos de idioma fornecidos no aplicativo.
+Especifica o idioma padrão para o projeto. A opção de idioma selecionada em **Relógio, Idioma e Região** no Painel de Controle especifica o idioma preferencial do usuário. Ao especificar um idioma padrão para o projeto, certifique-se de que os recursos de idioma padrão especificado sejam usados se o idioma preferencial do usuário não corresponder aos recursos de idioma fornecidos no aplicativo.
 
 ## <a name="debug-page"></a>Página de depuração
 
@@ -72,7 +72,7 @@ Use as seguintes opções para definir propriedades para o comportamento de depu
 
  **Depurador a ser iniciado**
 
- Especifica o host padrão para o depurador.
+Especifica o host padrão para o depurador.
 
 - Selecione **Computador Local** para iniciar o aplicativo no computador de host do Visual Studio. Para obter mais informações, consulte [Executando aplicativos no computador local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 

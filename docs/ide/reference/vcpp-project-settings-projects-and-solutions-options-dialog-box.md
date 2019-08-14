@@ -18,12 +18,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9410806cbb2fa7fc5579fc7c63cee8a6bed56f79
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: c7acd0d8f9c6d15f9f20c42f59c3bd5562884ac3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461557"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918893"
 ---
 # <a name="vc-project-settings-projects-and-solutions-options-dialog-box"></a>Caixa de diálogo Configurações do Projeto do VC++, Projetos e Soluções, Opções
 
@@ -49,11 +49,11 @@ Esta caixa de diálogo permite que você defina o build de C++ e as configuraç�
 
  **Sim**
 
- Lista as variáveis de ambiente no arquivo de log de build. Essa opção específica o eco para todas as variáveis de ambiente, durante os builds dos projetos C++, para o arquivo de log de build.
+Lista as variáveis de ambiente no arquivo de log de build. Essa opção específica o eco para todas as variáveis de ambiente, durante os builds dos projetos C++, para o arquivo de log de build.
 
  **No**
 
- Exclua as variáveis de ambiente do arquivo de log de build.
+Exclua as variáveis de ambiente do arquivo de log de build.
 
 ## <a name="build-timing"></a>Tempo de build
 
@@ -63,7 +63,7 @@ Esta caixa de diálogo permite que você defina o build de C++ e as configuraç�
 
  **No**
 
- Desativa o tempo de build.
+Desativa o tempo de build.
 
 ## <a name="maximum-concurrent-c-compilations"></a>Máximo de compilações simultâneas C++
 

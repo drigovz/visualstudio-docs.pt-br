@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d3cd641a6361a8cf555e722ccd6c42414f5bdbe7
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62822788"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926438"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analisar resultados do teste de carga usando o Analisador de Teste de Carga
 
@@ -37,11 +37,11 @@ Essas tarefas podem ser concluídas se você executar o teste de carga no Visual
 
 ## <a name="differences-between-analyzing-a-running-and-a-completed-load-test"></a>Diferenças entre a análise de um teste de carga em execução e um teste de carga concluído
 
- Quando você executa um teste de carga, o **Analisador de Teste de Carga** aparece em uma guia separada, com o nome do teste de carga e a hora em que o teste foi iniciado (por exemplo, **LoadTest1 [12:40 PM]**). Quando um teste de carga é executado, um conjunto menor de dados do contador de desempenho é mantido na memória. Você pode monitorar esse conjunto de dados quando seu teste de carga é executado. Depois que um teste de carga é concluído, você pode analisar o conjunto de dados completo do banco de dados. Há diferenças em relação a quais dados são exibidos quando um teste de carga é executado e quais dados você pode ver depois que um teste de carga é concluído. Por exemplo, 90% e 95% dos dados de tempo de resposta não são calculados até que o teste de carga seja concluído. Algumas diferenças também ocorrem na funcionalidade das ferramentas que estão disponíveis para analisar os dados.
+Quando você executa um teste de carga, o **Analisador de Teste de Carga** aparece em uma guia separada, com o nome do teste de carga e a hora em que o teste foi iniciado (por exemplo, **LoadTest1 [12:40 PM]** ). Quando um teste de carga é executado, um conjunto menor de dados do contador de desempenho é mantido na memória. Você pode monitorar esse conjunto de dados quando seu teste de carga é executado. Depois que um teste de carga é concluído, você pode analisar o conjunto de dados completo do banco de dados. Há diferenças em relação a quais dados são exibidos quando um teste de carga é executado e quais dados você pode ver depois que um teste de carga é concluído. Por exemplo, 90% e 95% dos dados de tempo de resposta não são calculados até que o teste de carga seja concluído. Algumas diferenças também ocorrem na funcionalidade das ferramentas que estão disponíveis para analisar os dados.
 
- Quando você executa o teste de carga, dois modos de exibição estão disponíveis: O modo de exibição **Grafos** e o modo de exibição **Tabelas**. A exibição **Grafos** permite representar graficamente os contadores de desempenho coletados. A exibição **Tabelas** fornece informações sobre os testes, as páginas, as transações e as solicitações coletadas. Você também obtém uma tabela que lista os erros.
+Quando você executa o teste de carga, dois modos de exibição estão disponíveis: O modo de exibição **Grafos** e o modo de exibição **Tabelas**. A exibição **Grafos** permite representar graficamente os contadores de desempenho coletados. A exibição **Tabelas** fornece informações sobre os testes, as páginas, as transações e as solicitações coletadas. Você também obtém uma tabela que lista os erros.
 
- Por padrão, quando a execução de teste de carga é concluída, a exibição **Resumo** é exibida. Você pode alternar entre as exibições **Resumo**, **Grafos**, **Tabelas** e **Detalhes** usando a barra de ferramentas. O **Analisador de Teste de Carga** pode ser encaixado ou configurado para flutuar usando as técnicas normais de manipulação de janela do Visual Studio. Quando você analisa as execuções de testes de carga concluídas, é possível que haja vários **Analisadores de Teste de Carga** abertos ao mesmo tempo para comparar as diferentes execuções de testes de carga.
+Por padrão, quando a execução de teste de carga é concluída, a exibição **Resumo** é exibida. Você pode alternar entre as exibições **Resumo**, **Grafos**, **Tabelas** e **Detalhes** usando a barra de ferramentas. O **Analisador de Teste de Carga** pode ser encaixado ou configurado para flutuar usando as técnicas normais de manipulação de janela do Visual Studio. Quando você analisa as execuções de testes de carga concluídas, é possível que haja vários **Analisadores de Teste de Carga** abertos ao mesmo tempo para comparar as diferentes execuções de testes de carga.
 
 ## <a name="tasks"></a>Tarefas
 

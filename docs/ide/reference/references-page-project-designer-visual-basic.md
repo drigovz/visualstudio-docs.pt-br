@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c111c3a3b1c97a75d97baa625438052fbcae5a98
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: bbc53a1582a2a4f76de2ea402544137405f5d9f3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66746390"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926142"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -46,41 +46,41 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 
  **Referências**
 
- Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.
+Esta lista mostra todas as referências no projeto, utilizadas ou não utilizadas.
 
  **Adicionar**
 
- Clique neste botão para adicionar uma referência ou uma referência Web à lista **Referências**.
+Clique neste botão para adicionar uma referência ou uma referência Web à lista **Referências**.
 
- Escolha **Referência** para adicionar uma referência ao seu projeto usando a caixa de diálogo Adicionar Referência.
+Escolha **Referência** para adicionar uma referência ao seu projeto usando a caixa de diálogo Adicionar Referência.
 
- Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
+Escolha **Referência Web** para adicionar uma referência Web ao seu projeto usando a caixa de diálogo **Adicionar Referência Web**.
 
  **Removerr**
 
- Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
+Selecione uma ou mais referências na lista **Referências** e clique nesse botão para excluí-las.
 
  **Atualizar Referência Web**
 
- Selecione uma referência Web na lista **Referências** e clique nesse botão para atualizá-la.
+Selecione uma referência Web na lista **Referências** e clique nesse botão para atualizá-la.
 
  **Namespaces importados**
 
- Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
+Você pode digitar seu próprio namespace nesta caixa e clicar em **Adicionar Importação de Usuário** para adicioná-lo à lista de namespaces.
 
- Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
+Você pode criar aliases para namespaces importados pelo usuário. Para fazer isso, digite o alias e o namespace no formato *alias*=*namespace*. Isso é útil se você estiver usando namespaces longos, por exemplo: `Http= MyOrg.ObjectLib.Internet.WebRequestMethods.Http`.
 
  **Adicionar Importação de Usuário**
 
- Clique neste botão para adicionar o namespace especificado na caixa **Namespaces importados** à lista de namespaces importados. O botão fica ativo somente se o namespace especificado ainda não estiver na lista.
+Clique neste botão para adicionar o namespace especificado na caixa **Namespaces importados** à lista de namespaces importados. O botão fica ativo somente se o namespace especificado ainda não estiver na lista.
 
  **Lista de namespaces**
 
- Esta lista mostra todos os namespaces disponíveis. As caixas de seleção dos namespaces incluídos em seu projeto são selecionadas.
+Esta lista mostra todos os namespaces disponíveis. As caixas de seleção dos namespaces incluídos em seu projeto são selecionadas.
 
  **Atualizar Importação de Usuário**
 
- Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:
+Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:
 
 - Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.
 
@@ -88,7 +88,7 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 
 - Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Gerenciando referências em um projeto](../../ide/managing-references-in-a-project.md)
 - [Como: Adicionar ou remover namespaces importados (Visual Basic)](../../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)

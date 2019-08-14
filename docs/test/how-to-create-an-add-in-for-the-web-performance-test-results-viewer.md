@@ -9,12 +9,12 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8548fb33e5a4b9156701e12231324e3f59c88f2
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: e2330f5d1c47c9fc3cc578f286be005710b08f59
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747241"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918195"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>Como: Criar um suplemento para o Visualizador de Resultados de Teste de Desempenho Web
 
@@ -43,9 +43,9 @@ Crie ou abra uma solução de não produção com a qual você poderá fazer exp
 
 Um suplemento é uma DLL compilada executada no IDE (ambiente de desenvolvimento integrado) do Visual Studio. A compilação ajuda a proteger sua propriedade intelectual e melhora o desempenho. Embora você possa criar suplementos manualmente, talvez você ache mais fácil usar o **Assistente de Suplemento**. O assistente cria um suplemento funcional, mas básico, que você poderá executar imediatamente depois de criá-lo. Depois que o **Assistente de Suplemento** gerar o programa básico, você poderá adicionar um código a ele e personalizá-lo.
 
- O **Assistente de Suplemento** permite fornecer um nome de exibição e uma descrição para o suplemento. Ambos serão exibidos no **Gerenciador de Suplementos**. Também é possível fazer o assistente gerar um código que seja adicionado ao menu **Ferramentas** para abrir o suplemento. Você também pode optar por exibir uma caixa de diálogo personalizada **Sobre** para seu suplemento. Quando o assistente terminar, você terá um novo projeto com apenas uma classe que implementa o suplemento. Essa classe é chamada de Conectar.
+O **Assistente de Suplemento** permite fornecer um nome de exibição e uma descrição para o suplemento. Ambos serão exibidos no **Gerenciador de Suplementos**. Também é possível fazer o assistente gerar um código que seja adicionado ao menu **Ferramentas** para abrir o suplemento. Você também pode optar por exibir uma caixa de diálogo personalizada **Sobre** para seu suplemento. Quando o assistente terminar, você terá um novo projeto com apenas uma classe que implementa o suplemento. Essa classe é chamada de Conectar.
 
- Você usará o **Gerenciador de Suplementos** ao final deste artigo.
+Você usará o **Gerenciador de Suplementos** ao final deste artigo.
 
 ### <a name="to-create-an-add-in-by-using-the-add-in-wizard"></a>Para criar um suplemento usando o Assistente de Suplemento
 
@@ -326,9 +326,9 @@ Para melhorar a segurança impedindo que suplementos mal-intencionados sejam ati
 
 Além disso, essa página de opções permite que você especifique as pastas na quais o Visual Studio pesquisa os arquivos de registro *.AddIn*. Isso melhora a segurança, permitindo que você limite os locais em que os arquivos de registro *.AddIn* podem ser lidos. Isso ajuda a impedir que arquivos *.AddIn* mal-intencionados sejam usados acidentalmente.
 
- **Configurações de Segurança do Suplemento**
+**Configurações de Segurança do Suplemento**
 
- As configurações no Visual Studio relacionadas à segurança do suplemento são:
+As configurações no Visual Studio relacionadas à segurança do suplemento são:
 
 - **Permitir carregamento de componentes de Suplemento.** Selecionado por padrão. Quando selecionado, os suplementos têm permissão para serem carregados no Visual Studio. Quando não selecionados, os suplementos são proibidos de serem carregados no Visual Studio.
 

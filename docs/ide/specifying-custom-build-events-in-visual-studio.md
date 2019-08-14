@@ -11,18 +11,18 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8367400df14f9a5e5c846a6df52e1a5fc7b8ec21
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: 620ffa1ea23c2c892e8385bd9e81a07fb640411a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416739"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918905"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
 Ao especificar um evento de build personalizado, é possível executar comandos automaticamente antes do início de um build ou após sua conclusão. Por exemplo, é possível executar um arquivo *.bat* antes do início de um build ou copiar novos arquivos para uma pasta após sua conclusão. Eventos de build serão executados somente se o build atingir com êxito esses pontos no processo de build.
 
- Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
+Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
 - Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
@@ -34,7 +34,7 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
 Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível usar macros para criar eventos de build com mais facilidade. Para obter uma lista das macros disponíveis, confira [Caixa de diálogo da linha de comando do evento de pré-build/evento de pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
- Para obter melhores resultados, siga estas dicas de formatação:
+Para obter melhores resultados, siga estas dicas de formatação:
 
 - Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos *.bat*.
 

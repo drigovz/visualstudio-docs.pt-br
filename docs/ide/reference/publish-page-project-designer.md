@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa33f3adc4fe05bd0df5c24bcb1fa769f93682cc
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 6bbb43408dc12c55b72eb0ca0909d8b261198a5b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461636"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926164"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.
 
- Para acessar a página **Publicar**, selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Publicar**.
+Para acessar a página **Publicar**, selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, no menu **Projeto**, clique em **Propriedades**. Quando o **Designer de Projeto** for exibido, clique na guia **Publicar**.
 
 > [!NOTE]
 > Algumas das propriedades do ClickOnce descritas aqui também podem ser definidas no **PublishWizard**, disponível no menu **Build** ou clicando no botão **PublishWizard** nesta página.
@@ -33,51 +33,51 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
 
  **Local da Pasta de Publicação**
 
- Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar ( **...** ) funcionar.
+Especifica o local em que o aplicativo é publicado. Pode ser um caminho de unidade (`C:\deploy\myapplication`), um compartilhamento de arquivo (`\\server\myapplication`) ou um servidor FTP (`ftp://ftp.microsoft.com/myapplication`). Observe que o texto deve estar presente na caixa **Local de Publicação** para o botão de procurar ( **...** ) funcionar.
 
  **URL da Pasta de Instalação**
 
- Opcional. Especifica um site que os usuários acessam para instalar o aplicativo. Isso é necessário apenas quando ele difere do **Local de Publicação**, por exemplo, quando o aplicativo for publicado em um servidor de preparo.
+Opcional. Especifica um site que os usuários acessam para instalar o aplicativo. Isso é necessário apenas quando ele difere do **Local de Publicação**, por exemplo, quando o aplicativo for publicado em um servidor de preparo.
 
  **Configurações e Modo de Instalação**
 
- Determina se o aplicativo é executado diretamente do **Local de Publicação** (quando **O aplicativo está disponível somente online** está selecionado) ou é instalado e adicionado ao menu **Iniciar** e ao item **Adicionar ou Remover Programas** no **Painel de Controle** (quando **O aplicativo está disponível também offline** é selecionado).
+Determina se o aplicativo é executado diretamente do **Local de Publicação** (quando **O aplicativo está disponível somente online** está selecionado) ou é instalado e adicionado ao menu **Iniciar** e ao item **Adicionar ou Remover Programas** no **Painel de Controle** (quando **O aplicativo está disponível também offline** é selecionado).
 
- Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.
+Para Aplicativos do Navegador da Web WPF, a opção **O aplicativo está disponível também offline** está desabilitada, pois esses aplicativos estão disponíveis somente online.
 
  **Arquivos de Aplicativo**
 
- Abre a caixa de diálogo Arquivos do Aplicativo, que é usada para especificar como e o local em que os arquivos individuais são instalados.
+Abre a caixa de diálogo Arquivos do Aplicativo, que é usada para especificar como e o local em que os arquivos individuais são instalados.
 
  **Pré-requisitos**
 
- Abre a caixa de diálogo de Pré-Requisitos, que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.
+Abre a caixa de diálogo de Pré-Requisitos, que é usada para especificar os componentes de pré-requisito, como o .NET Framework, a serem instalados junto com o aplicativo.
 
  **Atualizações**
 
- Abre a caixa de diálogo Atualizações do Aplicativo, que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.
+Abre a caixa de diálogo Atualizações do Aplicativo, que é usada para especificar o comportamento da atualização para o aplicativo. Não disponível quando **O aplicativo está disponível apenas online** está selecionado.
 
  **Opções**
 
- Abre a caixa de diálogo Opções de Publicação, que é usada para especificar mais opções de publicação avançadas.
+Abre a caixa de diálogo Opções de Publicação, que é usada para especificar mais opções de publicação avançadas.
 
  **Versão da Publicação**
 
- Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.
+Define o número de versão da publicação para o aplicativo; quando o número de versão é alterado, o aplicativo é publicado como uma atualização. Cada parte da versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) pode ter um valor máximo de 65355 (<xref:System.UInt16.MaxValue>), o máximo permitido pelo <xref:System.Version>.
 
- Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.
+Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.
 
  **Incrementar revisão automaticamente a cada publicação**
 
- Opcional. Quando essa opção é selecionada (padrão), a parte de **Revisão** do número de versão de publicação é incrementada em uma unidade toda vez que o aplicativo é publicado. Isso faz o aplicativo ser publicado como uma atualização.
+Opcional. Quando essa opção é selecionada (padrão), a parte de **Revisão** do número de versão de publicação é incrementada em uma unidade toda vez que o aplicativo é publicado. Isso faz o aplicativo ser publicado como uma atualização.
 
  **Assistente de Publicação**
 
- Abre o Assistente de Publicação. Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.
+Abre o Assistente de Publicação. Concluir o Assistente de Publicação tem o mesmo efeito que executar o comando **Publicar** no menu **Build**.
 
  **Publicar Agora**
 
- Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.
+Publica o aplicativo usando as configurações atuais. Equivalente ao botão **Concluir** no **PublishWizard**.
 
 ## <a name="see-also"></a>Consulte também
 

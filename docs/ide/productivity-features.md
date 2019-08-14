@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5116c2a979a45414046f0058d85ccbf0d179e24
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: f351ffefae818beb1f51eaa41fbeea1eab81de16
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67046847"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919471"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Dicas de produtividade para o Visual Studio
 
@@ -46,7 +46,7 @@ Escreva código mais rapidamente usando os seguintes recursos.
 
 ## <a name="navigate-within-your-code"></a>Navegar em seu código
 
- Você pode usar várias técnicas para localizar e mover para locais específicos em seu código com mais rapidez.
+Você pode usar várias técnicas para localizar e mover para locais específicos em seu código com mais rapidez.
 
 - **Usar indicadores em linhas de código**. Você pode usar indicadores para navegar rapidamente para linhas específicas do código em um arquivo.
 

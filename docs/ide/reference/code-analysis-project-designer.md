@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3271befd714f1b07c357426a931d62a7a854cbec
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: 3c31617def66499e29c4c2fc3e2a1804e7446d9c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "66745001"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926254"
 ---
 # <a name="code-analysis-project-designer"></a>Análise de Código, Designer de Projeto
 
@@ -26,41 +26,41 @@ Contém a ferramenta de análise de código que você pode optar por executar em
 
 ## <a name="uielement-list"></a>Lista UIElement
 
- Habilitar a Análise de Código\
- Habilita ou desabilita a análise de código para seu projeto.
+Habilitar a Análise de Código\
+Habilita ou desabilita a análise de código para seu projeto.
 
- Regras de Design\
- Habilita ou desabilita as regras de design. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Design\
+Habilita ou desabilita as regras de design. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Globalização\
- Habilita ou desabilita as regras de globalização. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Globalização\
+Habilita ou desabilita as regras de globalização. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Interoperabilidade\
- Habilita ou desabilita as regras de interoperabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Interoperabilidade\
+Habilita ou desabilita as regras de interoperabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Facilidade de Manutenção\
- Habilita ou desabilita as regras de facilidade de manutenção. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Facilidade de Manutenção\
+Habilita ou desabilita as regras de facilidade de manutenção. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Mobilidade\
- Habilita ou desabilita as regras de mobilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Mobilidade\
+Habilita ou desabilita as regras de mobilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Nomenclatura\
- Habilita ou desabilita as regras de nomenclatura. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Nomenclatura\
+Habilita ou desabilita as regras de nomenclatura. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Desempenho\
- Habilita ou desabilita as regras de desempenho. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Desempenho\
+Habilita ou desabilita as regras de desempenho. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Portabilidade\
- Habilita ou desabilita as regras de portabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Portabilidade\
+Habilita ou desabilita as regras de portabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Confiabilidade\
- Habilita ou desabilita as regras de confiabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Confiabilidade\
+Habilita ou desabilita as regras de confiabilidade. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Segurança\
- Habilita ou desabilita as regras de segurança. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Segurança\
+Habilita ou desabilita as regras de segurança. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
- Regras de Uso\
- Habilita ou desabilita as regras de uso. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
+Regras de Uso\
+Habilita ou desabilita as regras de uso. Você também pode expandir essa entrada para habilitar ou desabilitar regras individuais.
 
 ## <a name="see-also"></a>Consulte também
 

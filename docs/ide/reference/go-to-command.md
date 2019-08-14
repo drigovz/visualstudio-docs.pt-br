@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9bdc1c97d35b79fec40bbaf8994176cfbb27b8e8
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789825"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919225"
 ---
 # <a name="go-to-command"></a>Comando Ir para
 Move o cursor para a linha especificada.
@@ -30,16 +30,15 @@ Edit.GoTo [linenumber]
 ```
 
 ## <a name="arguments"></a>Arguments
- `linenumber`
-
- Opcional. Um inteiro que representa o número da linha para a qual ir.
+`linenumber`\
+Opcional. Um inteiro que representa o número da linha para a qual ir.
 
 ## <a name="remarks"></a>Comentários
- A numeração de linha começa em um. Se o valor de `linenumber` for menor que um, a primeira linha será exibida. Se o valor de `linenumber` for maior que o número da última linha, a última linha será exibida.
+A numeração de linha começa em um. Se o valor de `linenumber` for menor que um, a primeira linha será exibida. Se o valor de `linenumber` for maior que o número da última linha, a última linha será exibida.
 
- Se um valor para `linenumber` não for especificado, a caixa de diálogo **Ir para a Linha** será exibida.
+Se um valor para `linenumber` não for especificado, a caixa de diálogo **Ir para a Linha** será exibida.
 
- O alias para esse comando é GoToLn.
+O alias para esse comando é GoToLn.
 
 ## <a name="example"></a>Exemplo
 
@@ -47,7 +46,7 @@ Edit.GoTo [linenumber]
 >Edit.GoTo 125
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

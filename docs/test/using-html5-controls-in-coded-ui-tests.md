@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: ae861814a7219bfca1d6a074316910d459fc9999
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c7087f08743e58426663734295339d9ca6550a0d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973032"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926579"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 
@@ -20,7 +20,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 [!INCLUDE [coded-ui-test-deprecation](includes/coded-ui-test-deprecation.md)]
 
- **Requisitos**
+**Requisitos**
 
 - Visual Studio Enterprise
 
@@ -47,17 +47,17 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 
 Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioElement) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
- **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
+**Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.
 
- **Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
+**Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.
 
 ## <a name="video-control"></a>Controle de vídeo
- **Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.
+**Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.
 
- ![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
+![Controle do HTML5 vídeo](../test/media/codedui_html5_video.png)
 
 |Ação|Gravando|Código gerado|
 |-|---------------|-|
@@ -70,17 +70,17 @@ Confira [HTMLAudioElement](https://developer.mozilla.org/docs/Web/API/HTMLAudioE
 
 Confira [HTMLVideoElement](https://developer.mozilla.org/docs/Web/HTML/Element/video) para obter uma lista de propriedades às quais você pode adicionar uma declaração.
 
- **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
+**Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.
 
- **Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
+**Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.
 
 > [!NOTE]
 > Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.
 
 ## <a name="progressbar"></a>ProgressBar
- **Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
+**Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle. Para obter mais informações, confira [HTMLProgressElement](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/progress).
 
- ![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png)
+![Controle ProgressBar do HTML5](../test/media/codedui_html5_progressbar.png)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a0b5835333bf8cd41ab653108054e2d3dd4c73e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789794"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919277"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como: Definir opções de acessibilidade do IDE
 
@@ -32,17 +32,17 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, caixas de diálogo e janelas de ferramentas
 
- Por padrão, caixas de diálogo e janelas de ferramentas no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usam o mesmo tamanho da fonte e as mesmas cores do sistema operacional. As configurações de cor do quadro do IDE, das caixas de diálogo, das barras de ferramentas e das janelas de ferramentas são baseadas em um esquema de cores: clara ou escuro. É possível alterar o tema da cor atual na [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md).
+Por padrão, caixas de diálogo e janelas de ferramentas no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usam o mesmo tamanho da fonte e as mesmas cores do sistema operacional. As configurações de cor do quadro do IDE, das caixas de diálogo, das barras de ferramentas e das janelas de ferramentas são baseadas em um esquema de cores: clara ou escuro. É possível alterar o tema da cor atual na [Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md).
 
- Também é possível exibir janelas pop-up no modo de exibição de Código do editor. Essas janelas podem fornecer membros disponíveis no objeto atual e os parâmetros para concluir uma função ou instrução. Essas janelas podem ser úteis se você tiver dificuldades para digitar. No entanto, elas interferem no foco do editor de código, o que pode ser um problema para alguns usuários. É possível desligar essas janelas abrindo a caixa de diálogo Opções e desmarcando **Listar membros automaticamente** e **Informações do parâmetro** no **Editor de Texto**, **Todos os Idiomas**, página **Geral**, na caixa de diálogo **Opções**.
+Também é possível exibir janelas pop-up no modo de exibição de Código do editor. Essas janelas podem fornecer membros disponíveis no objeto atual e os parâmetros para concluir uma função ou instrução. Essas janelas podem ser úteis se você tiver dificuldades para digitar. No entanto, elas interferem no foco do editor de código, o que pode ser um problema para alguns usuários. É possível desligar essas janelas abrindo a caixa de diálogo Opções e desmarcando **Listar membros automaticamente** e **Informações do parâmetro** no **Editor de Texto**, **Todos os Idiomas**, página **Geral**, na caixa de diálogo **Opções**.
 
- É possível reorganizar as janelas no IDE (ambiente de desenvolvimento integrado) para se adequar melhor à maneira como você trabalha. Você pode encaixar, derivar, ocultar ou ocultar automaticamente cada janela de ferramentas.
+É possível reorganizar as janelas no IDE (ambiente de desenvolvimento integrado) para se adequar melhor à maneira como você trabalha. Você pode encaixar, derivar, ocultar ou ocultar automaticamente cada janela de ferramentas.
 
- Para obter mais informações sobre como alterar os layouts das janelas, consulte [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).
+Para obter mais informações sobre como alterar os layouts das janelas, consulte [Personalizando layouts de janela](../../ide/customizing-window-layouts-in-visual-studio.md).
 
 ### <a name="changing-the-size-of-text"></a>Alterando o tamanho do texto
 
- É possível alterar as configurações de janelas de ferramentas baseadas em texto, como as janelas **Comando**, **Imediato** e de **Saída**, no painel **Fontes e Cores** das opções **Ambiente** na caixa de diálogo **Ferramentas**. Quando **[Todas as janelas de ferramentas de texto]** é selecionado na lista suspensa **Mostrar configurações de**, a configuração padrão é listada como **Padrão** nas listas suspensas **Primeiro plano do item** e **Tela de fundo do item**. Também é possível alterar as configurações de como o texto é exibido no editor.
+É possível alterar as configurações de janelas de ferramentas baseadas em texto, como as janelas **Comando**, **Imediato** e de **Saída**, no painel **Fontes e Cores** das opções **Ambiente** na caixa de diálogo **Ferramentas**. Quando **[Todas as janelas de ferramentas de texto]** é selecionado na lista suspensa **Mostrar configurações de**, a configuração padrão é listada como **Padrão** nas listas suspensas **Primeiro plano do item** e **Tela de fundo do item**. Também é possível alterar as configurações de como o texto é exibido no editor.
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para alterar o tamanho do texto em editores e janelas de ferramentas baseadas em texto
 
@@ -54,7 +54,7 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
      Para alterar o tamanho da fonte do texto em um editor, escolha **Editor de Texto**.
 
-     Para alterar o tamanho da fonte do texto em janelas de ferramentas baseadas em texto, escolha **[Todas as janelas de ferramentas de texto]**.
+     Para alterar o tamanho da fonte do texto em janelas de ferramentas baseadas em texto, escolha **[Todas as janelas de ferramentas de texto]** .
 
      Para alterar o tamanho da fonte do texto das Dicas de Ferramentas de um editor, escolha **Dica de Ferramenta do Editor**.
 
@@ -73,7 +73,7 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Alterando as cores usadas no IDE
 
- Você também pode optar por alterar as cores padrão de texto, indicadores de margem, espaços em branco e elementos de código no editor.
+Você também pode optar por alterar as cores padrão de texto, indicadores de margem, espaços em branco e elementos de código no editor.
 
 > [!NOTE]
 > Para usar cores de alto contraste para todas as janelas de aplicativo no sistema operacional, pressione Esquerda <strong>ALT +</strong> Esquerda **SHIFT + PRINT SCREEN**. Se [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] estiver aberto, feche e reabra [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para implementar completamente as cores de alto contraste.
@@ -94,7 +94,7 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 ## <a name="toolbars"></a>Barras de ferramentas
 
- Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você pode adicionar texto a botões da barra de ferramentas.
+Para melhorar a acessibilidade e a usabilidade da barra de ferramentas, você pode adicionar texto a botões da barra de ferramentas.
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Para atribuir texto a botões da barra de ferramentas
 

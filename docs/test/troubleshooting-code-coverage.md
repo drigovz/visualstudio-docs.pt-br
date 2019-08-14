@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc94f3486a4a290dbcdff40303f58b8b42f3f9d9
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825862"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926549"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
@@ -29,7 +29,7 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 ## <a name="possible-reasons-for-seeing-no-results-or-old-results"></a>Possíveis motivos para não ver resultados ou ver resultados anteriores
 
 ### <a name="do-you-have-the-right-edition-of-visual-studio"></a>Você tem a edição certa do Visual Studio?
- Você precisa do Visual Studio Enterprise.
+Você precisa do Visual Studio Enterprise.
 
 ### <a name="no-tests-were-executed"></a>Nenhum teste foi executado
 

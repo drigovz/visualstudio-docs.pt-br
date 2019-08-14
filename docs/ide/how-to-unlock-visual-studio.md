@@ -11,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fe0aa86be242e9a7e7ed8d877944c66247718167
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549189"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926296"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como: Desbloquear o Visual Studio
 
@@ -50,11 +50,11 @@ Para desbloquear o Visual Studio usando uma Assinatura do Visual Studio, uma org
 
 ### <a name="update-stale-licenses"></a>Atualizar licenças obsoletas
 
- Talvez você tenha visto a mensagem a seguir que informa que sua licença ficará obsoleta no Visual Studio. A mensagem diz que "Sua licença ficou obsoleta e deve ser atualizada".
+Talvez você tenha visto a mensagem a seguir que informa que sua licença ficará obsoleta no Visual Studio. A mensagem diz que "Sua licença ficou obsoleta e deve ser atualizada".
 
- ![Mensagem de licença obsoleta do Visual Studio](../ide/media/vs2017_stale-license.png)
+![Mensagem de licença obsoleta do Visual Studio](../ide/media/vs2017_stale-license.png)
 
- Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:
+Essa mensagem indica que embora sua assinatura ainda possa ser válida, o token de licença que o Visual Studio usa para manter sua assinatura atualizada ainda não foi atualizado e se tornou obsoleto devido a um dos motivos a seguir:
 
 - Você não usou o Visual Studio ou não teve uma conexão com a Internet por um longo período.
 - Você saiu do Visual Studio.
@@ -68,7 +68,7 @@ Se você não digitar novamente suas credenciais, o token começará a ficar obs
 
 ### <a name="update-expired-licenses"></a>Atualizar licenças expiradas
 
- Se a sua assinatura tiver expirado completamente e você não tiver mais direitos de acesso ao Visual Studio, será necessário renovar sua assinatura ou adicionar outra conta que tenha uma assinatura. Para obter mais informações sobre a licença que você está usando, acesse **Arquivo** > **Configurações de Conta** e examine as informações de licença no lado direito da caixa de diálogo. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista **Todas as Contas** no lado esquerdo da caixa de diálogo selecionando o link **Adicionar uma conta**.
+Se a sua assinatura tiver expirado completamente e você não tiver mais direitos de acesso ao Visual Studio, será necessário renovar sua assinatura ou adicionar outra conta que tenha uma assinatura. Para obter mais informações sobre a licença que você está usando, acesse **Arquivo** > **Configurações de Conta** e examine as informações de licença no lado direito da caixa de diálogo. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista **Todas as Contas** no lado esquerdo da caixa de diálogo selecionando o link **Adicionar uma conta**.
 
 ## <a name="see-also"></a>Consulte também
 

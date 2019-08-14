@@ -12,26 +12,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: badd1ef796f1854f07043e775923c4d3f1480624
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7a785623ea36fe25833f24f760c29f49ca40b459
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581692"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918663"
 ---
 # <a name="c-code-snippets"></a>Snippets de código C#
 
 Os snippets de código são snippets de código prontos que você pode inserir rapidamente em seu código. Por exemplo, o snippet de código `for` cria um loop `for` vazio. Alguns snippets de código são snippets de código envolvidos, que permite que você selecione linhas de código e, em seguida, escolha um snippet de código que incorpora as linhas de código selecionadas. Por exemplo, quando você seleciona linhas de código e, em seguida, ativa o snippet de código `for`, ele cria um loop `for` com as linhas de código selecionadas dentro do bloco de loop. Os snippets de código podem fazer com que escrever código de programa seja mais rápido, mais fácil e mais confiável.
 
- Você pode inserir um snippet de código no local do cursor ou inserir um snippet de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Snippet de Código é invocada por meio dos comandos **Inserir Snippet de Código** ou **Envolver Com** no menu do **IntelliSense** ou usando os atalhos de teclado **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S**, respectivamente.
+Você pode inserir um snippet de código no local do cursor ou inserir um snippet de código envolvido com o código atualmente selecionado. A Unidade de Inserção de Snippet de Código é invocada por meio dos comandos **Inserir Snippet de Código** ou **Envolver Com** no menu do **IntelliSense** ou usando os atalhos de teclado **Ctrl**+**K**,**X** ou **Ctrl**+**K**,**S**, respectivamente.
 
- A **Unidade de Inserção de Snippet de Código** exibe o nome do snippet de código de todos os snippets de código disponíveis. A Unidade de Inserção de Snippet de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do snippet de código. A Unidade de Inserção de Snippet de Código realça a correspondência mais próxima de um nome de snippet de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Snippet de Código será fechada e o snippet de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no editor de códigos, a Unidade de Inserção de Snippet de Código será ignorada sem inserir um snippet de código.
+A **Unidade de Inserção de Snippet de Código** exibe o nome do snippet de código de todos os snippets de código disponíveis. A Unidade de Inserção de Snippet de Código também inclui uma caixa de diálogo de entrada em que você pode digitar o nome ou parte do nome do snippet de código. A Unidade de Inserção de Snippet de Código realça a correspondência mais próxima de um nome de snippet de código. Ao pressionar **Tab** a qualquer momento, a Unidade de Inserção de Snippet de Código será fechada e o snippet de código selecionado será inserido. Ao pressionar **Esc** ou clicar com o mouse no editor de códigos, a Unidade de Inserção de Snippet de Código será ignorada sem inserir um snippet de código.
 
 ## <a name="default-code-snippets"></a>Snippets de código padrão
 
 Por padrão, os snippets de código a seguir são incluídos no Visual Studio para C#.
 
-|Nome (ou atalho)|Descrição|Locais válidos para inserir o snippet|
+|Nome (ou atalho)|DESCRIÇÃO|Locais válidos para inserir o snippet|
 | - |-----------------| - |
 |#if|Cria uma diretiva [#if](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-if) e uma diretiva [#endif](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endif).|Em qualquer lugar.|
 |#region|Cria uma diretiva [#region](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-region) e uma diretiva [#endregion](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-endregion).|Em qualquer lugar.|

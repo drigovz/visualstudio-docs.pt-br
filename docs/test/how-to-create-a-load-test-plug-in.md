@@ -12,19 +12,19 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71686e160fd808b2df3d399b50206bed2a6869e3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2f8bd3aeab7606e33818bce1324ded83fc333eb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979260"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918118"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>Como: Criar um plug-in de teste de carga
 
 Você pode criar um plug-in de teste de carga para executar o código em momentos diferentes com o teste de carga em execução. Você cria um plug-in para expandir ou modificar a funcionalidade interna do teste de carga. Por exemplo, você pode codificar um plug-in de teste de carga para modificar o padrão do teste de carga com o teste de carga em execução. Para fazer isso, você deve criar uma classe que herde a interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>. Essa classe deve implementar o método <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin.Initialize*> dessa interface. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
 > [!TIP]
-> Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, confira [Como: Criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md)
+> Você também pode criar plug-ins para testes de desempenho na Web. Para obter mais informações, confira [Como: Criar um plug-in de teste de desempenho Web](../test/how-to-create-a-web-performance-test-plug-in.md).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -84,7 +84,7 @@ Você pode criar um plug-in de teste de carga para executar o código em momento
     >
     > **Falha na solicitação: Exceção no evento \<plug-in>: Não foi possível carregar o arquivo ou o assembly '\<Arquivo "Nome do plug-in".dll>, Version=\<n.n.n.n>, Culture=neutral, PublicKeyToken=null' ou uma de suas dependências. O sistema não pode localizar o arquivo especificado.**
     >
-    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)**, mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
+    > Isso acontecerá se você fizer alterações no código de qualquer um de seus plug-ins e criar uma nova versão de DLL **(versão=0.0.0.0)** , mas o plug-in ainda estiver referenciando a versão original do plug-in. Para corrigir esse problema, siga estas etapas:
     >
     > 1. Em seu projeto de teste de carga e desempenho na Web, você verá um aviso em referências. Remova e adicione novamente a referência à DLL do plug-in.
     > 2. Remova o plug-in do teste ou do local apropriado e adicione-o de volta.
