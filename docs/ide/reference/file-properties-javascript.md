@@ -26,27 +26,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6d615a6d805fb9ff63ffd0ac402b115a0e9dc691
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: b27f103b2431914efbd22c119e11221b5814dae4
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461840"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926229"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.
 
- É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
+É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.
 
 ## <a name="file-properties"></a>Propriedades do Arquivo
- Esta seção descreve as propriedades comuns aos arquivos JavaScript.
+Esta seção descreve as propriedades comuns aos arquivos JavaScript.
 
 ### <a name="copy-to-output-directory-property"></a>Propriedade Copiar para Diretório de Saída
- Esta propriedade especifica as condições sob as quais o arquivo de origem selecionado será copiado para o diretório de saída. Selecione **Não copiar** se o arquivo nunca deve ser copiado para o diretório de saída. Selecione **Copiar sempre** se o arquivo sempre deve ser copiado para o diretório de saída. Selecione **Copiar se for mais novo** se o arquivo deve ser copiado somente quando ele for mais recente que um arquivo existente de mesmo nome no diretório de saída.
+Esta propriedade especifica as condições sob as quais o arquivo de origem selecionado será copiado para o diretório de saída. Selecione **Não copiar** se o arquivo nunca deve ser copiado para o diretório de saída. Selecione **Copiar sempre** se o arquivo sempre deve ser copiado para o diretório de saída. Selecione **Copiar se for mais novo** se o arquivo deve ser copiado somente quando ele for mais recente que um arquivo existente de mesmo nome no diretório de saída.
 
 ### <a name="package-action"></a>Ação do Pacote
- A propriedade **Ação do Pacote** indica o que o Visual Studio faz com um arquivo quando um build é executado. A **Ação do Pacote** pode ter um valor dentre vários:
+A propriedade **Ação do Pacote** indica o que o Visual Studio faz com um arquivo quando um build é executado. A **Ação do Pacote** pode ter um valor dentre vários:
 
 - **Nenhum** – O arquivo não está incluído no manifesto do pacote. Um exemplo é um arquivo de texto que contém a documentação, como um arquivo Leiame.
 
@@ -59,40 +59,40 @@ ms.locfileid: "68461840"
 O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.
 
 ### <a name="file-name-property"></a>Propriedade Nome de Arquivo
- Exibe o nome de arquivo como um valor somente leitura. Para renomear o arquivo, é necessário clicar com o botão direito do mouse no Gerenciador de Soluções e selecionar **Renomear**.
+Exibe o nome de arquivo como um valor somente leitura. Para renomear o arquivo, é necessário clicar com o botão direito do mouse no Gerenciador de Soluções e selecionar **Renomear**.
 
 ### <a name="full-path-property"></a>Propriedade do caminho completo
- Exibe o caminho completo no arquivo como um valor somente leitura. Para alterar o caminho do arquivo, é possível arrastar e soltar o arquivo no Gerenciador de Soluções.
+Exibe o caminho completo no arquivo como um valor somente leitura. Para alterar o caminho do arquivo, é possível arrastar e soltar o arquivo no Gerenciador de Soluções.
 
 ## <a name="reference-file-properties"></a>Propriedades do arquivo de referência
- Esta seção descreve as propriedades comuns a arquivos referenciados de um aplicativo UWP compilado com JavaScript. Quando você seleciona uma referência como um arquivo .winmd, uma referência de SDK, uma referência projeto a projeto ou uma referência de assembly no Gerenciador de Soluções, outras propriedades podem ser exibidas na janela Propriedades, de acordo com o tipo de arquivo.
+Esta seção descreve as propriedades comuns a arquivos referenciados de um aplicativo UWP compilado com JavaScript. Quando você seleciona uma referência como um arquivo .winmd, uma referência de SDK, uma referência projeto a projeto ou uma referência de assembly no Gerenciador de Soluções, outras propriedades podem ser exibidas na janela Propriedades, de acordo com o tipo de arquivo.
 
 ### <a name="culture"></a>Cultura
- Exibe o idioma associado à referência.
+Exibe o idioma associado à referência.
 
 ### <a name="file-type"></a>Tipo de arquivo
- Exibe o tipo de arquivo da referência.
+Exibe o tipo de arquivo da referência.
 
 ### <a name="file-version"></a>Versão do arquivo
- Exibe a versão de arquivo da referência.
+Exibe a versão de arquivo da referência.
 
 ### <a name="identity"></a>Identidade
- Exibe a identidade da referência usada no projeto, armazenado no arquivo de projeto.
+Exibe a identidade da referência usada no projeto, armazenado no arquivo de projeto.
 
 ### <a name="package"></a>Pacote
- Exibe o nome do manifesto do pacote associado à referência.
+Exibe o nome do manifesto do pacote associado à referência.
 
 ### <a name="resolved-path"></a>Caminho da resolução
- Exibe o caminho da referência usada no projeto.
+Exibe o caminho da referência usada no projeto.
 
 ### <a name="sdk-path"></a>Caminho do SDK
- Exibe o caminho para o arquivo do SDK referenciado.
+Exibe o caminho para o arquivo do SDK referenciado.
 
 ### <a name="uri"></a>URI
- Exibe o URI que deve ser incluído nos arquivos HTML ou JavaScript do projeto para incluir o arquivo como um arquivo de origem.
+Exibe o URI que deve ser incluído nos arquivos HTML ou JavaScript do projeto para incluir o arquivo como um arquivo de origem.
 
 ### <a name="version"></a>Versão
- Exibe a versão da referência.
+Exibe a versão da referência.
 
 ## <a name="see-also"></a>Consulte também
 
