@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c80c768e153ae9469fe43785480bbe6bb1edeaa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ed24dce0779b9bc7ea9cfd7bedcaa5ca181c68
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777457"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926305"
 ---
 # <a name="blocking-time-profile-report"></a>Relatório de perfil de tempo de bloqueio
 Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilhas de chamadas específicas para cada categoria de bloqueio (por exemplo, "E/S" ou "Sincronização"). O relatório de Preempção lista os processos que admiram preempção do processo atual junto com o número de instâncias de preempção. Para criar o relatório do perfil de bloqueio, a ferramenta coleta chamadas à API de bloqueio e acumula-as em uma árvore de pilhas de chamadas. Dados mostrados nesses relatórios variam pelo intervalo de tempo atual, por threads ocultos e os dois filtros a seguir que podem ser aplicados:
@@ -31,7 +31,7 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 ## <a name="blocking-time-report-columns"></a>Colunas do relatório de tempo de bloqueio
  A tabela a seguir mostra as colunas para cada relatório de tempo de bloqueio.
 
-|Nome da coluna|Descrição|
+|Nome da coluna|DESCRIÇÃO|
 |-----------------|-----------------|
 |**Nome**|O nome da função para cada nível da pilha de chamadas.|
 |**Instâncias**|O número de instâncias da chamada de bloqueio para o período de tempo visível.|
@@ -41,7 +41,7 @@ Os Relatórios de Perfil fornecem dados de tempo de bloqueio agregados para pilh
 |**Detalhes**|O nome totalmente qualificado da função. Isso inclui a contagem de linha, quando disponível.|
 
 ### <a name="synchronization"></a>Sincronização
- O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de sincronização](../profiling/synchronization-time.md)
+ O relatório de sincronização mostra as chamadas responsáveis por segmentos que estão bloqueando na sincronização e os tempos de bloqueio agregados de cada pilha de chamadas. Para obter mais informações, confira [Tempo de sincronização](../profiling/synchronization-time.md).
 
 ### <a name="sleep"></a>Sleep
  O relatório de Suspensão mostra as chamadas responsáveis pelo tempo de bloqueio atribuído ao tempo gasto em suspensão e os tempos de bloqueio agregados de cada pilha de chamadas. Para saber mais, confira [Tempo de suspensão](../profiling/sleep-time.md).

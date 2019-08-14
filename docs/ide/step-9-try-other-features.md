@@ -8,17 +8,17 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 41a3313f6393290a5f55c47653d11dba646dbb1b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 24637ba56c3dfa2d9ce9c7e70452bcdc6788b51b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430983"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918725"
 ---
 # <a name="step-9-try-other-features"></a>Etapa 9: Experimentar outros recursos
 Para aprender mais, tente alterar os ícones e as cores, adicionar um temporizador de jogo e adicionar sons. Para tornar o jogo mais desafiador, tente aumentar o tabuleiro e ajustar o temporizador.
 
- Para baixar uma versão completa do exemplo, veja [Complete Matching Game tutorial sample (Exemplo de tutorial completo de jogo da memória)](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
+Para baixar uma versão completa do exemplo, veja [Complete Matching Game tutorial sample (Exemplo de tutorial completo de jogo da memória)](https://code.msdn.microsoft.com/Complete-Matching-Game-4cffddba).
 
 ## <a name="to-try-other-features"></a>Para testar outros recursos
 

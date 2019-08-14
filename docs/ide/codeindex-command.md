@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d472ec7d35b886dbc2294d2c3172b61d3b1e7702
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd794d647d0af63edd133a65fbaad569e067e21
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62974950"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924087"
 ---
 # <a name="codeindex-command"></a>Comando CodeIndex
 
@@ -47,8 +47,8 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 |**Opção**|**Descrição**|
 |----------------| - |
 |**/indexingStatus**|Mostra o status e a configuração do serviço de indexação de código.|
-|**/setIndexing:**[ on &#124; off &#124; keepupOnly ]|-   **on**: Iniciar indexação de todos os conjuntos de alterações.<br />-   **off**: Interromper indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: Interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações.|
-|**/ignoreList:**[ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: Adicione o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: Remova o arquivo que deseja indexar da lista de arquivos ignorados.<br />-   **removeAll**: Limpe a lista de arquivos ignorados e comece a indexar todos os arquivos.<br />-   **view**: Veja todos os arquivos que não estão sendo indexados.|
+|**/setIndexing:** [ on &#124; off &#124; keepupOnly ]|-   **on**: Iniciar indexação de todos os conjuntos de alterações.<br />-   **off**: Interromper indexação de todos os conjuntos de alterações.<br />-   **keepupOnly**: Interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações.|
+|**/ignoreList:** [ add &#124; remove &#124; removeAll &#124; view ] `ServerPath`<br /><br /> É possível usar o caractere curinga (*) no início, no fim ou em ambas as extremidades do caminho do servidor.|Especifica uma lista de arquivos de código e seus caminhos que você não deseja indexar.<br /><br /> -   **add**: Adicione o arquivo que você não deseja indexar à lista de arquivos ignorados.<br />-   **remove**: Remova o arquivo que deseja indexar da lista de arquivos ignorados.<br />-   **removeAll**: Limpe a lista de arquivos ignorados e comece a indexar todos os arquivos.<br />-   **view**: Veja todos os arquivos que não estão sendo indexados.|
 |**/listLargeFiles [/fileCount:** `FileCount` **/minSize:** `MinSize`]|Mostra o número especificado de arquivos que excede o tamanho especificado em KB. É possível usar a opção **/ignoreList** para excluir esses arquivos da indexação.|
 |**/reindexAll**|Limpe os dados indexados anteriormente e reinicie a indexação.|
 |**/destroyCodeIndex [/noPrompt]**|Exclua o índice de código e remota todos os dados indexados. Não requererá confirmação se você usar a opção **/noPrompt**.|
@@ -62,61 +62,61 @@ TFSConfig CodeIndex /indexingStatus | /setIndexing:[ on | off | keepupOnly ] | /
 > [!NOTE]
 > Os exemplos de empresas, organizações, produtos, nomes de domínio, endereços de email, logotipos, pessoas, lugares e eventos aqui mencionados são fictícios.  Nenhuma associação com nenhuma empresa, organização, produto, nome de domínio, endereço de email, logotipo, pessoa, locais ou eventos reais é intencional nem deve ser inferida.
 
- Para ver o status e a configuração de indexação do código:
+Para ver o status e a configuração de indexação do código:
 
 ```cmd
 TFSConfig CodeIndex /indexingStatus /collectionName:"Fabrikam Website"
 ```
 
- Para iniciar a indexação de todos os conjuntos de alterações:
+Para iniciar a indexação de todos os conjuntos de alterações:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:on /collectionName:"Fabrikam Website"
 ```
 
- Para interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações:
+Para interromper a indexação de conjuntos de alterações criados anteriormente e iniciar indexação apenas para novos conjuntos de alterações:
 
 ```cmd
 TFSConfig CodeIndex /setIndexing:keepupOnly /collectionName:"Fabrikam Website"
 ```
 
- Para encontrar até 50 arquivos maiores que 10 KB:
+Para encontrar até 50 arquivos maiores que 10 KB:
 
 ```cmd
 TFSConfig CodeIndex /listLargeFiles /fileCount:50 /minSize:10 /collectionName:"Fabrikam Website"
 ```
 
- Para excluir um arquivo específico da indexação e adicioná-lo à lista de arquivos ignorados:
+Para excluir um arquivo específico da indexação e adicioná-lo à lista de arquivos ignorados:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:add "$/Fabrikam Website/Catalog.cs" /collectionName:"Fabrikam Website"
 ```
 
- Para ver todos os arquivos que não estão indexados:
+Para ver todos os arquivos que não estão indexados:
 
 ```cmd
 TFSConfig CodeIndex /ignoreList:view
 ```
 
- Para limpar os dados indexados anteriormente e reinicie a indexação:
+Para limpar os dados indexados anteriormente e reinicie a indexação:
 
 ```cmd
 TFSConfig CodeIndex /reindexAll /collectionName:"Fabrikam Website"
 ```
 
- Para salvar todo o histórico de alterações:
+Para salvar todo o histórico de alterações:
 
 ```cmd
 TFSConfig CodeIndex /indexHistoryPeriod:all /collectionName:"Fabrikam Website"
 ```
 
- Para remover o limite de tamanho CodeLens os dados temporários e continuar a indexação independentemente do tamanho de dados temporários:
+Para remover o limite de tamanho CodeLens os dados temporários e continuar a indexação independentemente do tamanho de dados temporários:
 
 ```cmd
 TFSConfig CodeIndex /temporaryDataSizeLimit:disable /collectionName:"Fabrikam Website"
 ```
 
- Para excluir o índice de código com confirmação:
+Para excluir o índice de código com confirmação:
 
 ```cmd
 TFSConfig CodeIndex /destroyCodeIndex /collectionName:"Fabrikam Website"

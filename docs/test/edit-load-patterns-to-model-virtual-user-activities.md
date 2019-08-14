@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5459f1b82dd83905f2672d198f503a741778287b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62784240"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926528"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -32,36 +32,36 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 ### <a name="constant"></a>Constante
 
- O padrão de carga constante é usado para especificar uma carga de usuário não alterada durante o teste de carga. Por exemplo, ao executar um smoke test em um aplicativo Web, você talvez queira definir uma carga leve, constante, de 10 usuários.
+O padrão de carga constante é usado para especificar uma carga de usuário não alterada durante o teste de carga. Por exemplo, ao executar um smoke test em um aplicativo Web, você talvez queira definir uma carga leve, constante, de 10 usuários.
 
 #### <a name="constant-load-pattern-considerations"></a>Considerações sobre o padrão de carga constante
 
- Um padrão de carga de constante é usado para executar a mesma carga de usuário durante a execução de um teste de carga. Tome cuidado ao usar um padrão de carga constante com uma contagem de usuários alta; isso pode gerar uma demanda ilógica e irreal sobre seus servidores no início do teste de carga. Por exemplo, se o seu teste de carga contiver um teste na Web que comece com uma solicitação para uma página inicial e você configurar o teste de carga com uma carga constante de 1.000 usuários, o teste de carga enviará as 1.000 primeiras solicitações para a página inicial o mais rápido possível. Essa pode não ser uma simulação realista de acesso do mundo real ao seu site. Para atenuar isso, considere usar uma etapa de padrão de carga que aumente gradualmente até 1.000 usuários, ou especifique um período de aquecimento nas configurações de execução de testes de carga. Se um período de aquecimento for especificado, o teste de carga aumentará automaticamente a carga gradualmente durante o período de aquecimento. Para saber mais, confira [Configurar atrasos de início do cenário](../test/configure-scenario-start-delays.md).
+Um padrão de carga de constante é usado para executar a mesma carga de usuário durante a execução de um teste de carga. Tome cuidado ao usar um padrão de carga constante com uma contagem de usuários alta; isso pode gerar uma demanda ilógica e irreal sobre seus servidores no início do teste de carga. Por exemplo, se o seu teste de carga contiver um teste na Web que comece com uma solicitação para uma página inicial e você configurar o teste de carga com uma carga constante de 1.000 usuários, o teste de carga enviará as 1.000 primeiras solicitações para a página inicial o mais rápido possível. Essa pode não ser uma simulação realista de acesso do mundo real ao seu site. Para atenuar isso, considere usar uma etapa de padrão de carga que aumente gradualmente até 1.000 usuários, ou especifique um período de aquecimento nas configurações de execução de testes de carga. Se um período de aquecimento for especificado, o teste de carga aumentará automaticamente a carga gradualmente durante o período de aquecimento. Para saber mais, confira [Configurar atrasos de início do cenário](../test/configure-scenario-start-delays.md).
 
 ### <a name="step"></a>Etapa
 
- O padrão de carga em etapa é usado para especificar uma carga do usuário que aumenta com o tempo até uma carga de usuário máxima definida. Para cargas em etapa, você especifica **Contagem inicial de usuários**, **Contagem máxima de usuários**, **Duração da etapa (segundos)** e **Contagem de usuário em etapas**.
+O padrão de carga em etapa é usado para especificar uma carga do usuário que aumenta com o tempo até uma carga de usuário máxima definida. Para cargas em etapa, você especifica **Contagem inicial de usuários**, **Contagem máxima de usuários**, **Duração da etapa (segundos)** e **Contagem de usuário em etapas**.
 
- Por exemplo, uma carga em etapa com uma contagem **Usuário inicial** de um, **Contagem máxima de usuários** de 100, **Duração da etapa (segundos)** de 10 e **Contagem de usuário em etapas** de 1 cria um padrão de carga do usuário que começa em 1, aumenta em 1 a cada 10 segundos até alcançar 100 usuários.
+Por exemplo, uma carga em etapa com uma contagem **Usuário inicial** de um, **Contagem máxima de usuários** de 100, **Duração da etapa (segundos)** de 10 e **Contagem de usuário em etapas** de 1 cria um padrão de carga do usuário que começa em 1, aumenta em 1 a cada 10 segundos até alcançar 100 usuários.
 
 > [!NOTE]
 > Se a duração total do teste for menor que o tempo necessário para passar à carga de usuário máxima, o teste irá parar depois da duração decorrida e não alcançará o destino **Contagem Máxima de Usuários**.
 
- Você pode usar a meta da etapa para aumentar a carga até o servidor atingir um ponto em que o desempenho diminui significativamente. À medida que a carga aumentar, o servidor acabará ficando sem recursos. A carga em etapa é uma boa maneira de determinar o número de usuários em que ela ocorre. Com a carga em etapa, você também precisa monitorar recursos do agente atentamente para ter certeza de que os agentes possam gerar a carga desejada.
+Você pode usar a meta da etapa para aumentar a carga até o servidor atingir um ponto em que o desempenho diminui significativamente. À medida que a carga aumentar, o servidor acabará ficando sem recursos. A carga em etapa é uma boa maneira de determinar o número de usuários em que ela ocorre. Com a carga em etapa, você também precisa monitorar recursos do agente atentamente para ter certeza de que os agentes possam gerar a carga desejada.
 
- Em geral, você deve realizar várias execuções com diferentes durações de etapa e contas de usuário em etapa de forma que possa obter boas medidas para uma determinada carga. Geralmente, as cargas mostram um pico inicial para cada etapa à medida que os usuários são adicionados. Manter a carga nessa taxa permite medir o desempenho do sistema depois que o sistema se recupera do pico inicial.
+Em geral, você deve realizar várias execuções com diferentes durações de etapa e contas de usuário em etapa de forma que possa obter boas medidas para uma determinada carga. Geralmente, as cargas mostram um pico inicial para cada etapa à medida que os usuários são adicionados. Manter a carga nessa taxa permite medir o desempenho do sistema depois que o sistema se recupera do pico inicial.
 
 #### <a name="step-load-pattern-considerations"></a>Considerações sobre o padrão de carga em etapa
 
- O padrão de carga em pode ser usado para aumentar a carga no servidor ou nos servidores à medida que o teste de carga é executado de modo que você possa ver como o desempenho varia à medida que a carga de usuários aumenta. Por exemplo, para ver como será o desempenho do seu servidor ou dos servidores à medida que a carga de usuário aumenta para 2.000 usuários, você pode executar um teste de carga de 10 horas usando um padrão de carga em etapa com as seguintes propriedades:
+O padrão de carga em pode ser usado para aumentar a carga no servidor ou nos servidores à medida que o teste de carga é executado de modo que você possa ver como o desempenho varia à medida que a carga de usuários aumenta. Por exemplo, para ver como será o desempenho do seu servidor ou dos servidores à medida que a carga de usuário aumenta para 2.000 usuários, você pode executar um teste de carga de 10 horas usando um padrão de carga em etapa com as seguintes propriedades:
 
 - **Contagem inicial de usuários**: 100
 
 - **Contagem máxima de usuários**: 2,000
 
-- **Duração da etapa (segundos)**: 1.800
+- **Duração da etapa (segundos)** : 1.800
 
-- **Tempo de rampa de etapa (segundos)**: 20
+- **Tempo de rampa de etapa (segundos)** : 20
 
 - **Contagem de usuários em etapas**: 100
 
@@ -69,7 +69,7 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 ### <a name="goal-based"></a>Baseado em metas
 
- Um padrão de carga baseado em metas se assemelha ao padrão em etapa, mas ajusta a carga de usuário com base nos limites do contador de desempenho em comparação com os ajustes de carga de usuário periódicos. As cargas baseadas em meta são úteis para várias finalidades diferentes:
+Um padrão de carga baseado em metas se assemelha ao padrão em etapa, mas ajusta a carga de usuário com base nos limites do contador de desempenho em comparação com os ajustes de carga de usuário periódicos. As cargas baseadas em meta são úteis para várias finalidades diferentes:
 
 - Maximizando saída dos agentes: meça a métrica limitadora principal no agente para maximizar a saída dos agentes. Normalmente, ela é CPU; porém, também pode ser memória.
 
@@ -93,17 +93,17 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 |Limites de contagem de usuários|Incremento máximo da contagem de usuários|5|
 |Limites de contagem de usuários|Contagem mínima de usuários|1|
 
- Essas configurações fazem o **Analisador de Teste de Carga** ajustar a carga de usuário entre 1 e 100 durante uma execução de teste de forma que o **Contador** para `% Processor Time` do WebServer01 fique entre `70%` e `90%.`
+Essas configurações fazem o **Analisador de Teste de Carga** ajustar a carga de usuário entre 1 e 100 durante uma execução de teste de forma que o **Contador** para `% Processor Time` do WebServer01 fique entre `70%` e `90%.`
 
- O tamanho de cada ajuste de carga do usuário é determinado pelas configurações **Incremento máximo da contagem de usuários** e **Decremento máximo da contagem de usuários**. Os limites de contagem do usuário são definidos pelas propriedades **Contagem máxima de usuários** e **Contagem mínima de usuários**.
+O tamanho de cada ajuste de carga do usuário é determinado pelas configurações **Incremento máximo da contagem de usuários** e **Decremento máximo da contagem de usuários**. Os limites de contagem do usuário são definidos pelas propriedades **Contagem máxima de usuários** e **Contagem mínima de usuários**.
 
 #### <a name="goal-based-load-pattern-considerations"></a>Considerações sobre o padrão de carga baseado em meta
 
- Um padrão de carga baseado em meta é útil quando você deseja determinar o número de usuários compatível com seu sistema antes de atingir certo nível de utilização de recursos. Essa opção funciona melhor quando você já identificou o recurso limitador (ou seja, o gargalo) no seu sistema.
+Um padrão de carga baseado em meta é útil quando você deseja determinar o número de usuários compatível com seu sistema antes de atingir certo nível de utilização de recursos. Essa opção funciona melhor quando você já identificou o recurso limitador (ou seja, o gargalo) no seu sistema.
 
- Por exemplo, suponhamos que você saiba que o recurso limitador em seu sistema é a CPU no servidor de banco de dados e queira ver quantos usuários podem ser compatíveis quando a CPU no servidor de banco de dados está aproximadamente 75 por cento ocupada. Você poderia usar um padrão de carga baseado em meta que tem o objetivo de manter o valor do contador de desempenho "% de tempo do processador" entre 70 e 80 por cento.
+Por exemplo, suponhamos que você saiba que o recurso limitador em seu sistema é a CPU no servidor de banco de dados e queira ver quantos usuários podem ser compatíveis quando a CPU no servidor de banco de dados está aproximadamente 75 por cento ocupada. Você poderia usar um padrão de carga baseado em meta que tem o objetivo de manter o valor do contador de desempenho "% de tempo do processador" entre 70 e 80 por cento.
 
- Algo a ser observado é se algum outro recurso está limitando a produtividade do sistema. Esses recursos podem fazer a meta especificada pelo padrão de carga baseado em meta jamais ser alcançada. Além disso, a carga de usuário continuará crescendo até o valor especificado para a **Contagem máxima de usuários** ser atingida. Como essa não costuma ser a carga desejada, tome cuidado na escolha do contador de desempenho no padrão de carga baseado em meta.
+Algo a ser observado é se algum outro recurso está limitando a produtividade do sistema. Esses recursos podem fazer a meta especificada pelo padrão de carga baseado em meta jamais ser alcançada. Além disso, a carga de usuário continuará crescendo até o valor especificado para a **Contagem máxima de usuários** ser atingida. Como essa não costuma ser a carga desejada, tome cuidado na escolha do contador de desempenho no padrão de carga baseado em meta.
 
 ## <a name="tasks"></a>Tarefas
 
@@ -116,12 +116,12 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 ## <a name="change-the-load-pattern"></a>Alterar o padrão de carga
 
- Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades do padrão de carga associadas a um cenário para níveis que atendam às suas necessidades de teste.
+Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, você poderá usar o **Editor de Teste de Carga** para alterar as propriedades do padrão de carga associadas a um cenário para níveis que atendam às suas necessidades de teste.
 
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
- Um padrão de carga especifica o número de usuários virtuais ativos durante um teste de carga e a taxa em que os novos usuários são adicionados. Você pode escolher um dos três padrões disponíveis: padrão em etapa, constante e baseado em meta. Para saber mais, confira [Especificar o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Um padrão de carga especifica o número de usuários virtuais ativos durante um teste de carga e a taxa em que os novos usuários são adicionados. Você pode escolher um dos três padrões disponíveis: padrão em etapa, constante e baseado em meta. Para saber mais, confira [Especificar o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para obter mais informações, confira [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).

@@ -8,18 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50543a1f0191847beb4f849d56517cd0f12a1f7c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 026916a86609f665fdb8329b9c9eacf147be51e3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408610"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924264"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Como: Criar e modificar os níveis de MIP
 Este documento demonstra como usar o **Editor de Imagens** para gerar e modificar *níveis de MIP* para um nível de detalhe (LoD) de espaço de textura.
 
 ## <a name="generating-mip-levels"></a>Gerando níveis MIP
- *Mapeamento mip* é uma técnica usada para aumentar a velocidade de processamento e reduzir artefatos de suavização em objetos texturizados pré-calculando e armazenando várias cópias de uma textura em tamanhos diferentes. Cada cópia, que é conhecida como um nível de MIP, é metade da largura e altura da cópia anterior. Quando uma textura é processada na superfície de um objeto, o nível de MIP que melhor corresponde à área de espaço de tela da superfície texturizada é escolhido automaticamente. Isso significa que o hardware gráfico não precisa filtrar texturas muito grandes para manter a qualidade visual consistente. Embora o custo de memória de armazenar os níveis de MIP seja 33% maior do que aquele de armazenar a textura original sozinha, os ganhos de desempenho e qualidade de imagem justificam isso.
+*Mapeamento mip* é uma técnica usada para aumentar a velocidade de processamento e reduzir artefatos de suavização em objetos texturizados pré-calculando e armazenando várias cópias de uma textura em tamanhos diferentes. Cada cópia, que é conhecida como um nível de MIP, é metade da largura e altura da cópia anterior. Quando uma textura é processada na superfície de um objeto, o nível de MIP que melhor corresponde à área de espaço de tela da superfície texturizada é escolhido automaticamente. Isso significa que o hardware gráfico não precisa filtrar texturas muito grandes para manter a qualidade visual consistente. Embora o custo de memória de armazenar os níveis de MIP seja 33% maior do que aquele de armazenar a textura original sozinha, os ganhos de desempenho e qualidade de imagem justificam isso.
 
 #### <a name="to-generate-mip-levels"></a>Para gerar os níveis de MIP
 
@@ -30,7 +30,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
      Observe que os botões **Ir Para o Próximo Nível de Mip** e **Ir Para o Nível de Mip Anterior** aparecem agora na barra de ferramentas **Modo do Editor de Imagens**. Se a janela **Propriedades** for exibida, observe também que as propriedades somente leitura **Nível de Mip** e **Contagem de Nível de Mip** agora aparecem nas propriedades da imagem.
 
 ## <a name="modifying-mip-levels"></a>Modificando níveis MIP
- Para obter efeitos especiais ou aumentar a qualidade da imagem em níveis específicos de detalhe, você pode modificar cada nível de MIP individualmente. Por exemplo, você pode dar a um objeto de textura uma aparência diferente em uma distância (uma distância maior corresponde a níveis de MIP menores) ou você pode garantir que texturas que contenham texto ou símbolos permaneçam legíveis mesmo com níveis de MIP menores.
+Para obter efeitos especiais ou aumentar a qualidade da imagem em níveis específicos de detalhe, você pode modificar cada nível de MIP individualmente. Por exemplo, você pode dar a um objeto de textura uma aparência diferente em uma distância (uma distância maior corresponde a níveis de MIP menores) ou você pode garantir que texturas que contenham texto ou símbolos permaneçam legíveis mesmo com níveis de MIP menores.
 
 #### <a name="to-modify-an-individual-mip-level"></a>Para modificar um nível de MIP individual
 

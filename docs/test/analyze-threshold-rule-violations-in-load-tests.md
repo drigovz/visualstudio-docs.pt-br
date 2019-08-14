@@ -15,12 +15,12 @@ ms.assetid: 969ed346-cf2e-4d48-82b3-edb3e075e1c0
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a7cd36fcb144eaa098acc30a7da550b1288684a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 011b010eaad5def8943fd18a84da9fefdb01eff5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823053"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918631"
 ---
 # <a name="analyzing-threshold-rule-violations-in-load-tests-using-the-load-test-analyzer"></a>Analisando violações de regra de limite em testes de carga usando o Analisador de Teste de Carga
 
@@ -32,9 +32,9 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 
 ## <a name="view-threshold-violations-in-the-table"></a>Exibir violações de limite na tabela
 
- A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
+A tabela de violações de limite exibe as primeiras 1.000 violações. A tabela a seguir contém estas colunas:
 
-|Column|Descrição|Visível por padrão|
+|Column|DESCRIÇÃO|Visível por padrão|
 |-|-|-|
 |Hora|O tempo durante o teste de carga em que a violação ocorreu.|Sim|
 |Computador|O nome do computador em teste em que a violação ocorreu. **Observação:**  Isso é importante quando você executa testes de carga em equipamentos.|Sim|
@@ -46,33 +46,33 @@ Se ocorrer qualquer violação, um hiperlink de **violações de limite** aparec
 > [!NOTE]
 > É possível classificar a tabela escolhendo-se os cabeçalhos de coluna.
 
- Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+Para obter mais informações, consulte [Analisar resultados de teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 ## <a name="view-threshold-violations-in-the-counters-panel"></a>Exibir violações de limite no painel Contadores
 
- É possível exibir violações de limite no painel **Contadores**, na árvore que lista os contadores de desempenho para o teste de carga. Os ícones no painel **Contadores** informam violações de limite. O ícone será um dos seguintes:
+É possível exibir violações de limite no painel **Contadores**, na árvore que lista os contadores de desempenho para o teste de carga. Os ícones no painel **Contadores** informam violações de limite. O ícone será um dos seguintes:
 
- O ícone será um dos seguintes:
+O ícone será um dos seguintes:
 
- ![Sem violação de limite](../test/media/icon_ltest_1.gif) Sem violação de limite.
+![Sem violação de limite](../test/media/icon_ltest_1.gif) Sem violação de limite.
 
- ![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif) Uma violação de limite crítica ocorreu no último intervalo.
+![Uma violação de limite crítica no último intervalo](../test/media/icon_ltest_2.gif) Uma violação de limite crítica ocorreu no último intervalo.
 
- ![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif) Uma violação de limite crítica ocorreu em um intervalo anterior.
+![Uma violação de limite crítica em um intervalo anterior](../test/media/icon_ltest_3.gif) Uma violação de limite crítica ocorreu em um intervalo anterior.
 
- ![Uma violação de limite de aviso no último intervalo](../test/media/icon_ltest_4.gif) Uma violação de limite de aviso ocorreu no último intervalo.
+![Uma violação de limite de aviso no último intervalo](../test/media/icon_ltest_4.gif) Uma violação de limite de aviso ocorreu no último intervalo.
 
- ![Uma violação de limite de aviso em um intervalo anterior](../test/media/icon_ltest_5.gif) Uma violação de limite de aviso ocorreu em um intervalo anterior.
+![Uma violação de limite de aviso em um intervalo anterior](../test/media/icon_ltest_5.gif) Uma violação de limite de aviso ocorreu em um intervalo anterior.
 
- Se desejar, as violações de limite também podem ser mostradas no gráfico. O ícone de limite é exibido no gráfico ao lado do ponto de dados onde a violação de limite ocorreu.
+Se desejar, as violações de limite também podem ser mostradas no gráfico. O ícone de limite é exibido no gráfico ao lado do ponto de dados onde a violação de limite ocorreu.
 
- Na árvore de contadores, o ícone de uma violação de limite é propagado do nó de contador específico até o nó raiz. Isso alerta você para uma violação em um contador que pode não estar visível na árvore porque a árvore não foi expandida.
+Na árvore de contadores, o ícone de uma violação de limite é propagado do nó de contador específico até o nó raiz. Isso alerta você para uma violação em um contador que pode não estar visível na árvore porque a árvore não foi expandida.
 
 ## <a name="view-threshold-violations-on-the-graph"></a>Exibir violações de limite no grafo
 
- Você pode ver violações de limite no gráfico De forma semelhante ao painel **Contadores**, os ícones informam as violações de limite no gráfico. Os ícones aparecem no gráfico ao lado do ponto de dados onde a violação de limite ocorreu. Se uma violação de limite ocorrer em um contador que não aparece no gráfico, você poderá adicioná-la ao gráfico arrastando-a do painel **Contadores** para o gráfico.
+Você pode ver violações de limite no gráfico De forma semelhante ao painel **Contadores**, os ícones informam as violações de limite no gráfico. Os ícones aparecem no gráfico ao lado do ponto de dados onde a violação de limite ocorreu. Se uma violação de limite ocorrer em um contador que não aparece no gráfico, você poderá adicioná-la ao gráfico arrastando-a do painel **Contadores** para o gráfico.
 
- Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
+Para obter mais informações, confira [Analisar os resultados do teste de carga na exibição Grafo](../test/analyze-load-test-results-in-the-graphs-view.md).
 
 ## <a name="see-also"></a>Consulte também
 

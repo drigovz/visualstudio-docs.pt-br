@@ -15,12 +15,12 @@ ms.assetid: 4a919cd8-541c-40ee-be3b-352fabc56140
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31bf74aba289e98e76fdd5b9a35d486d207bcc05
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: 8a0c9ca6f195640e3c356e9288300255570b196c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432026"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926463"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -38,7 +38,7 @@ Vários gráficos internos são fornecidos. Você pode usar os gráficos interno
 
 A tabela a seguir lista os gráficos internos que estão disponíveis para analisar resultados de testes de carga.
 
-|Nome do gráfico|Descrição|
+|Nome do gráfico|DESCRIÇÃO|
 |-|-|
 |Indicadores-Chave|Contadores que descrevem aspectos básicos do desempenho de teste, como carga do usuário, taxa de transferência e tempo de resposta.|
 |Tempo de Resposta de Teste|Dados sobre quanto tempo leva a execução de testes.|
@@ -47,20 +47,20 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 |Controlador e Agentes|Informações sobre os computadores nos quais os testes de carga são executados. Isso inclui dados sobre uso da memória, do processador, do disco físico, dos processos.<br /><br /> Por padrão, os contadores Apenas os Mbytes Disponíveis e Tempo de Processador são coletados.|
 |Tempo de Resposta de Transação|O tempo médio de resposta para transações que ocorrem durante o teste de carga.|
 
- Você pode exibir diferentes contadores no gráfico, no tempo de execução e depois que um teste for executado.
+Você pode exibir diferentes contadores no gráfico, no tempo de execução e depois que um teste for executado.
 
 > [!NOTE]
 > Apenas os contadores de desempenho de tempo de resposta podem ser adicionados a um gráfico de tempo de resposta gerado automaticamente.
 
- As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+As informações do contador são exibidas no gráfico e na legenda abaixo dos gráficos. Também é possível ampliar uma seção do gráfico. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
 ## <a name="counters-displayed-in-graphs"></a>Contadores exibidos em grafos
 
- Os gráficos exibem *contadores*. Os contadores referem-se aos dados coletados durante um teste de carga, como testes por segundo ou tempo médio de teste. Para obter mais informações sobre contadores, confira [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
+Os gráficos exibem *contadores*. Os contadores referem-se aos dados coletados durante um teste de carga, como testes por segundo ou tempo médio de teste. Para obter mais informações sobre contadores, confira [Especificando os conjuntos de contadores e as regras de limite para computadores em um teste de carga](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).
 
- A legenda dos contadores que são exibidos nos gráficos mostra várias colunas de dados úteis sobre a execução do teste de carga. Para desativar a exibição de qualquer dado no gráfico, desmarque a caixa de seleção na linha da legenda.
+A legenda dos contadores que são exibidos nos gráficos mostra várias colunas de dados úteis sobre a execução do teste de carga. Para desativar a exibição de qualquer dado no gráfico, desmarque a caixa de seleção na linha da legenda.
 
- A legenda contém as seguintes colunas:
+A legenda contém as seguintes colunas:
 
 |Contador|O nome do contador|
 |-|-|
@@ -87,11 +87,11 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
- [Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
+[Analisar resultados do teste de carga e erros na exibição Tabelas](../test/analyze-load-test-results-and-errors-in-the-tables-view.md)
 
- [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
+[Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md)
 
- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
 ## <a name="see-also"></a>Consulte também
 

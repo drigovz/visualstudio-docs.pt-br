@@ -10,12 +10,12 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: bf305125fceb4c07bb0565fa227e7e88bb90e3a3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63004078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918485"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
 
@@ -251,7 +251,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 ### <a name="q-can-i-re-run-dynamic-parameter-detection-if-my-web-app-gets-modified"></a>P: Posso executar novamente a detecção de parâmetro dinâmico se meu aplicativo Web é modificado?
 
- **R:** Sim, use o seguinte procedimento:
+**R:** Sim, use o seguinte procedimento:
 
 1. Na barra de ferramentas, escolha o botão **Promover parâmetros dinâmicos a parâmetros de teste na Web**.
 
@@ -265,4 +265,4 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Preciso configurar o Visual Studio para detectar parâmetros dinâmicos?
 
- **R:** A configuração padrão do Visual Studio é detectar parâmetros dinâmicos quando você registra um teste de desempenho Web. No entanto, mesmo se houver opções do Visual Studio configuradas para não detectar parâmetros dinâmicos ou se o aplicativo Web testado for modificado com parâmetros dinâmicos adicionais, você ainda poderá executar a detecção de parâmetro dinâmico do Editor de Testes de Desempenho Web.
+**R:** A configuração padrão do Visual Studio é detectar parâmetros dinâmicos quando você registra um teste de desempenho Web. No entanto, mesmo se houver opções do Visual Studio configuradas para não detectar parâmetros dinâmicos ou se o aplicativo Web testado for modificado com parâmetros dinâmicos adicionais, você ainda poderá executar a detecção de parâmetro dinâmico do Editor de Testes de Desempenho Web.

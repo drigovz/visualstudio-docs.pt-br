@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 43153f86ca9ee9a26465ad910b6918aee5292a87
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fd44fdc7e365bd07f25318740fb2dcc04fe0ea9d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62431180"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926451"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis com testes de IU codificados e gravações de ação
 
@@ -68,7 +68,7 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 | Citrix/Serviços de Terminal | Não recomendamos ações de gravação em um servidor Host da Sessão da Área de Trabalho Remota. O gravador não dá suporte à execução de várias instâncias ao mesmo tempo. |
 | PowerBuilder | Suporte parcial.<br /><br /> O suporte é habilitado na acessibilidade de extensões para controles PowerBuilder. |
 
- Para obter informações sobre como criar extensões para dar suporte a outras plataformas, confira [Habilitar testes de IU codificados dos controles](../test/enable-coded-ui-testing-of-your-controls.md) e [Estender testes de IU codificados e gravações de ação](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
+Para obter informações sobre como criar extensões para dar suporte a outras plataformas, confira [Habilitar testes de IU codificados dos controles](../test/enable-coded-ui-testing-of-your-controls.md) e [Estender testes de IU codificados e gravações de ação](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md).
 
 ## <a name="see-also"></a>Consulte também
 

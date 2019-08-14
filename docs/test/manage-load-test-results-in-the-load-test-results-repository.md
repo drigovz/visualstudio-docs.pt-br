@@ -11,12 +11,12 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 37dfd7b0aa8aed1ce94f3d4364c5b61a0957a223
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788847"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926618"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gerenciar resultados do teste de carga no repositório de Resultados do Teste de Carga
 
@@ -33,13 +33,13 @@ O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam 
 
 ## <a name="sql-server-versions"></a>Versões do SQL Server
 
- Para usar testes de carga, você pode usar o LocalDB do SQL Server Express, que é instalado com o Visual Studio. Ele é o servidor de banco de dados padrão para testes de carga (inclusive para a integração do Microsoft Excel). SQL Server Express LocalDB é um modo de execução do SQL Server Express destinado a desenvolvedores de programas. A instalação do SQL Server Express LocalDB copia um conjunto mínimo de arquivos necessários para iniciar o Mecanismo de Banco de Dados do SQL Server.
+Para usar testes de carga, você pode usar o LocalDB do SQL Server Express, que é instalado com o Visual Studio. Ele é o servidor de banco de dados padrão para testes de carga (inclusive para a integração do Microsoft Excel). SQL Server Express LocalDB é um modo de execução do SQL Server Express destinado a desenvolvedores de programas. A instalação do SQL Server Express LocalDB copia um conjunto mínimo de arquivos necessários para iniciar o Mecanismo de Banco de Dados do SQL Server.
 
- Se sua equipe espera ter demandas intensas do banco de dados ou se seus projetos excedem o LocalDB do SQL Server Express, considere a atualização para o SQL Express ou para o SQL Server completo para conseguir um potencial maior de dimensionamento. Se você atualizar o SQL Server, os arquivos MDF e LDF do LocalDB do SQL Server Express serão armazenados na pasta de perfil do usuário. Esses arquivos podem ser usados para importar o banco de dados de teste de carga para o SQL Server Express ou o SQL Server.
+Se sua equipe espera ter demandas intensas do banco de dados ou se seus projetos excedem o LocalDB do SQL Server Express, considere a atualização para o SQL Express ou para o SQL Server completo para conseguir um potencial maior de dimensionamento. Se você atualizar o SQL Server, os arquivos MDF e LDF do LocalDB do SQL Server Express serão armazenados na pasta de perfil do usuário. Esses arquivos podem ser usados para importar o banco de dados de teste de carga para o SQL Server Express ou o SQL Server.
 
 ## <a name="load-test-results-store-considerations"></a>Considerações sobre o repositório de resultados do teste de carga
 
- Quando o Visual Studio Enterprise é instalado, o repositório de resultados de teste de carga é configurado para usar uma instância do SQL Express instalada no computador. O SQL Express está limitado a usar no máximo 4 GB de espaço em disco. Se for executar muitos testes de carga por um longo período, você deverá considerar a configuração do armazenamento de resultados de teste de carga para usar uma instância do produto SQL Server completo, se disponível.
+Quando o Visual Studio Enterprise é instalado, o repositório de resultados de teste de carga é configurado para usar uma instância do SQL Express instalada no computador. O SQL Express está limitado a usar no máximo 4 GB de espaço em disco. Se for executar muitos testes de carga por um longo período, você deverá considerar a configuração do armazenamento de resultados de teste de carga para usar uma instância do produto SQL Server completo, se disponível.
 
 ## <a name="load-test-analyzer-tasks"></a>Tarefas do Analisador de Teste de Carga
 
@@ -52,9 +52,9 @@ O Visual Studio Enterprise fornece conjuntos de contadores nomeados que coletam 
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
 
- [Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
+[Analisar resultados do teste de carga](../test/analyze-load-test-results-using-the-load-test-analyzer.md)
 
- Você pode exibir os resultados de um teste de carga em execução e um teste de carga concluído usando o **Analisador de Teste de Carga**.
+Você pode exibir os resultados de um teste de carga em execução e um teste de carga concluído usando o **Analisador de Teste de Carga**.
 
 ## <a name="see-also"></a>Consulte também
 

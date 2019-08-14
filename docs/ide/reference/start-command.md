@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f7488353cd4c64b0afca27060c364a1f9ddc6f8
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8f455306a87c82c5cd4fe55ccacdbba070b4467c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950433"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926022"
 ---
 # <a name="start-command"></a>Comando Iniciar
 Inicia a depuração do projeto de inicialização.
@@ -30,21 +30,21 @@ Debug.Start [address]
 ```
 
 ## <a name="arguments"></a>Arguments
- `address`
+`address`
 
- Opcional. O endereço no qual o programa suspende a execução, semelhante a um ponto de interrupção no código-fonte. Este argumento é válido apenas no modo de depuração.
+Opcional. O endereço no qual o programa suspende a execução, semelhante a um ponto de interrupção no código-fonte. Este argumento é válido apenas no modo de depuração.
 
 ## <a name="remarks"></a>Comentários
- O comando **Iniciar**, quando executado, executa uma operação RunToCursor para o endereço especificado.
+O comando **Iniciar**, quando executado, executa uma operação RunToCursor para o endereço especificado.
 
 ## <a name="example"></a>Exemplo
- Este exemplo inicia o depurador e ignora todas as exceções que ocorrerem.
+Este exemplo inicia o depurador e ignora todas as exceções que ocorrerem.
 
 ```cmd
 >Debug.Start
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

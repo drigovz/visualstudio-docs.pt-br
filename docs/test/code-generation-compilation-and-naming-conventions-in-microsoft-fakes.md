@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 554fe9c8d8f30c13f667566a76349e237f5ddb0f
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: d9d60db348be719c4fa45243d22ca6b617b72407
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432296"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918459"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Geração de código, compilação e convenções de nomenclatura no Microsoft Fakes
 
@@ -110,9 +110,9 @@ O gerador de código do Fakes gera tipos de shim e tipos de stub que são visív
 [assembly: InternalsVisibleTo("FileSystem.Tests")]
 ```
 
- **Tipos internos em assemblies com nomes fortes**
+**Tipos internos em assemblies com nomes fortes**
 
- Se o assembly com shims tiver um nome forte e você quiser acessar tipos internos do assembly:
+Se o assembly com shims tiver um nome forte e você quiser acessar tipos internos do assembly:
 
 - Ambos seu assembly de teste e o assembly do Fakes devem ter nomes fortes.
 
@@ -179,11 +179,11 @@ De seus projetos de teste de unidade, faça uma referência aos assemblies do Fa
 
 Em um ambiente do Team Build, todas as saídas de build são mescladas em um único diretório. Se vários projetos usarem o Fakes, poderá acontecer que assemblies do Fakes de versões diferentes substituam uns aos outros. Por exemplo, o TestProject1 fakes *mscorlib.dll* do .NET Framework 2.0 e o TestProject2 fakes *mscorlib.dll* para o .NET Framework 4 produziriam um assembly do Fakes *mscorlib.Fakes.dll*.
 
- Para evitar esse problema, o Fakes deve criar automaticamente nomes de assembly do Fakes de versão qualificada para referências que não sejam do projeto ao adicionar os arquivos *.fakes*. Um nome de assembly do Fakes de versão qualificada incorpora um número de versão quando você cria o nome de assembly do Fakes:
+Para evitar esse problema, o Fakes deve criar automaticamente nomes de assembly do Fakes de versão qualificada para referências que não sejam do projeto ao adicionar os arquivos *.fakes*. Um nome de assembly do Fakes de versão qualificada incorpora um número de versão quando você cria o nome de assembly do Fakes:
 
- Dado um assembly MyAssembly e uma versão 1.2.3.4, o nome de assembly do Fakes é MyAssembly.1.2.3.4.Fakes.
+Dado um assembly MyAssembly e uma versão 1.2.3.4, o nome de assembly do Fakes é MyAssembly.1.2.3.4.Fakes.
 
- Você pode alterar ou remover essa versão editando o atributo Version do elemento de Assembly no *.fakes*:
+Você pode alterar ou remover essa versão editando o atributo Version do elemento de Assembly no *.fakes*:
 
 ```xml
 attribute of the Assembly element in the .fakes:
@@ -197,7 +197,7 @@ attribute of the Assembly element in the .fakes:
 
 ### <a name="shim-type-and-stub-type-naming-conventions"></a>Convenções de nomenclatura de tipo de shim e tipo de stub
 
- **Namespaces**
+**Namespaces**
 
 - O sufixo .fakes é adicionado ao namespace.
 

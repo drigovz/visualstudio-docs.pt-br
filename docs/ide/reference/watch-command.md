@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ac779dc902a331a45b600113a11db5364293f74
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788994"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925942"
 ---
 # <a name="watch-command"></a>Comando Inspecionar
 Cria e abre uma instância especificada de uma janela **Inspeção**. Você pode usar uma janela **Inspeção** para calcular os valores de variáveis, expressões e registros, para editar esses valores e para salvar os resultados.
@@ -30,12 +30,13 @@ Debug.Watch[index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
 
- Necessário. O número de instância da janela Inspeção.
+`index`\
+Necessário. O número de instância da janela Inspeção.
 
 ## <a name="remarks"></a>Comentários
- O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
+
+O `index` deve ser um inteiro. Os valores válidos são 1, 2, 3 ou 4.
 
 ## <a name="example"></a>Exemplo
 
@@ -43,7 +44,7 @@ Debug.Watch[index]
 >Debug.Watch1
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Janelas Autos e Locais](../../debugger/autos-and-locals-windows.md)
 - [Definir uma inspeção nas variáveis usando as janelas Inspeção e QuickWatch no Visual Studio](../../debugger/watch-and-quickwatch-windows.md)

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1b7cad6d52dc3fabc182881b99163cf15e1a260c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62973013"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926569"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
 
@@ -43,11 +43,11 @@ Testando seu aplicativo Web com uma variedade de tipos de navegadores da Web, vo
 > [!NOTE]
 > Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.
 
- **Reprodução com o Internet Explorer:** Quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.
+**Reprodução com o Internet Explorer:** Quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.
 
- **Reprodução com navegadores da Web diferentes do Internet Explorer:** Para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.
+**Reprodução com navegadores da Web diferentes do Internet Explorer:** Para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.
 
- Para executar testes em navegadores da web que não sejam o IE, você deve instalar os **componentes Selenium para testes de IU codificados entre navegadores**.
+Para executar testes em navegadores da web que não sejam o IE, você deve instalar os **componentes Selenium para testes de IU codificados entre navegadores**.
 
 ### <a name="install-selenium-components"></a>Instalar componentes do Selenium
 
@@ -120,15 +120,15 @@ Para obter mais informações, confira [Analisar testes de IU codificados usando
 
 ## <a name="video-resources"></a>Recursos em vídeo
 
- [Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
+[Gravar no IE e reproduzir em qualquer lugar](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!183&authkey=!ANqaLtCZbtJrImU)
 
- [Criar testes entre navegadores com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
+[Criar testes entre navegadores com construtor de teste de IU codificado](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!184&authkey=!AKG8CSow_qmeTq8)
 
- [Criar testes entre navegadores de autor usando codificação manual básica sem mapa da IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
+[Criar testes entre navegadores de autor usando codificação manual básica sem mapa da IU](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!186&authkey=!AJaEvxJnsefyAT4)
 
- [Executar testes entre navegadores sequencialmente em vários navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
+[Executar testes entre navegadores sequencialmente em vários navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!187&authkey=!ADI8eCQkxHnpOR8)
 
- [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
+[Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)
 
 ## <a name="see-also"></a>Consulte também
 

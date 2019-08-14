@@ -13,34 +13,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d366ed403eba6fbfab4aec22f4542ee5362962f2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1527d3d44d499028c852cb09e489c1b873b11c45
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540605"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926153"
 ---
 # <a name="my-extensions-page-project-designer-visual-basic"></a>Página Minhas Extensões, Designer de Projeto (Visual Basic)
 Use a página **Minhas Extensões** do **Designer de Projeto** para gerenciar `My` extensões do namespace em seu projeto. Extensões do namespace `My` permitem personalizar o namespace `My` para adicionar seus próprios membros personalizados. Para obter informações sobre a criação de extensões personalizadas do namespace `My`, consulte [Estendendo Meu Namespace no Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace).
 
- Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.
+Para acessar a página **Minhas Extensões**, clique duas vezes em **Meu Projeto** para o nó do projeto no **Gerenciador de Soluções**. Quando o **Designer de Projeto** aparecer, clique na guia **Minhas Extensões**.
 
 ## <a name="uielement-list"></a>Lista UIElement
- As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
+As opções a seguir permitem adicionar ou remover extensões do namespace `My` em seu projeto. Uma extensão do namespace `My` deve ser instalada primeiro como um modelo de item do Visual Studio para estar disponível para ser adicionada. Para obter informações sobre a publicação e a instalação de extensões do namespace `My`, consulte [Empacotando e implantando Minhas Extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions).
 
  **Minhas Extensões do Namespace**
 
- Esta lista mostra todas as extensões do namespace `My` instaladas no projeto.
+Esta lista mostra todas as extensões do namespace `My` instaladas no projeto.
 
  **Adicionar Extensão**
 
- Clique nesse botão para adicionar uma extensão do namespace `My` instalada a seu projeto. Uma lista de todas as possíveis extensões do namespace `My` é exibida. Selecione a extensão do namespace `My` que você deseja adicionar ao seu projeto e clique em **OK** para adicioná-la.
+Clique nesse botão para adicionar uma extensão do namespace `My` instalada a seu projeto. Uma lista de todas as possíveis extensões do namespace `My` é exibida. Selecione a extensão do namespace `My` que você deseja adicionar ao seu projeto e clique em **OK** para adicioná-la.
 
  **Remover Extensão**
 
- Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.
+Selecione uma ou mais referências na lista **Minhas extensões do namespace** e, em seguida, clique nesse botão para remover a extensão do namespace `My` do projeto.
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Estendendo o Meu Namespace em Visual Basic](/dotnet/visual-basic/developing-apps/customizing-extending-my/extending-the-my-namespace)
 - [Empacotando e implantando minhas extensões personalizadas](/dotnet/visual-basic/developing-apps/customizing-extending-my/packaging-and-deploying-custom-my-extensions)

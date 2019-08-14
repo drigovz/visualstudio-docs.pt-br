@@ -13,18 +13,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 72492b984e7f47b87ea326fe8ebcce414ee978ec
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62576777"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926057"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 
 A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em páginas e formulários da Web. Para exibir essa guia, primeiro abra um documento para edição no designer de HTML. No menu **Exibir**, clique em **Caixa de ferramentas** e, em seguida, na guia **HTML** da Caixa de ferramentas.
 
- Para criar uma instância de uma ferramenta na guia **HTML**, clique duas vezes na ferramenta para adicioná-la ao documento no ponto de inserção atual ou selecione a ferramenta e arraste-a para a posição desejada na superfície de edição.
+Para criar uma instância de uma ferramenta na guia **HTML**, clique duas vezes na ferramenta para adicioná-la ao documento no ponto de inserção atual ou selecione a ferramenta e arraste-a para a posição desejada na superfície de edição.
 
 ## <a name="ui-elements"></a>Elementos da interface do usuário
 

@@ -7,34 +7,34 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 56608e5c930dc94afbb9e8e7d78a8e95b8e2f88b
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: f9f17b129b0d5d85abacb0723b57703db74bcbea
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132171"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926660"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>Escrever testes de unidade para DLLs em C++ no Visual Studio
 
- Há várias maneiras de testar o código da DLL, dependendo da exportação das funções que você deseja testar. Escolha uma das seguintes opções:
+Há várias maneiras de testar o código da DLL, dependendo da exportação das funções que você deseja testar. Escolha uma das seguintes opções:
 
- **Os testes de unidade chamam apenas as funções exportadas da DLL:** Adicione um projeto de teste separado, conforme descrito em [Gravar testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md). No projeto de teste, adicione uma referência ao projeto de DLL.
+**Os testes de unidade chamam apenas as funções exportadas da DLL:** Adicione um projeto de teste separado, conforme descrito em [Gravar testes de unidade para C/C++](writing-unit-tests-for-c-cpp.md). No projeto de teste, adicione uma referência ao projeto de DLL.
 
- Vá para o procedimento [Para fazer referência a funções exportadas do projeto de DLL](#projectRef).
+Vá para o procedimento [Para fazer referência a funções exportadas do projeto de DLL](#projectRef).
 
- **A DLL é compilada como um arquivo .exe:** Adicione um projeto de teste separado. Vincule-o ao arquivo de objeto de saída.
+**A DLL é compilada como um arquivo .exe:** Adicione um projeto de teste separado. Vincule-o ao arquivo de objeto de saída.
 
- Vá para o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).
+Vá para o procedimento [Para vincular os testes aos arquivos de biblioteca ou objeto](#objectRef).
 
- **Os testes de unidade chamam funções não membro que não são exportadas da DLL e a DLL pode ser compilada como uma biblioteca estática:** Altere o projeto de DLL para que ele seja compilado em um arquivo *.lib*. Adicione um projeto de teste separado que referencia o projeto em teste.
+**Os testes de unidade chamam funções não membro que não são exportadas da DLL e a DLL pode ser compilada como uma biblioteca estática:** Altere o projeto de DLL para que ele seja compilado em um arquivo *.lib*. Adicione um projeto de teste separado que referencia o projeto em teste.
 
- Essa abordagem tem a vantagem de permitir que seus testes usem membros não exportados, mas mantenham os testes em um projeto separado.
+Essa abordagem tem a vantagem de permitir que seus testes usem membros não exportados, mas mantenham os testes em um projeto separado.
 
- Vá para o procedimento [Para alterar a DLL para uma biblioteca estática](#staticLink).
+Vá para o procedimento [Para alterar a DLL para uma biblioteca estática](#staticLink).
 
- **Os testes de unidade devem chamar funções não membro que não são exportadas e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):** Adicione testes de unidade no mesmo projeto que o código do produto.
+**Os testes de unidade devem chamar funções não membro que não são exportadas e o código precisa ser criado como uma DLL (biblioteca de vínculo dinâmico):** Adicione testes de unidade no mesmo projeto que o código do produto.
 
- Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sameProject).
+Vá para o procedimento [Para adicionar testes de unidade no mesmo projeto](#sameProject).
 
 ## <a name="create-the-tests"></a>Criar os testes
 
@@ -93,7 +93,7 @@ ms.locfileid: "67132171"
       1. No menu **Arquivo**, escolha **Novo** > **Projeto**. Na caixa de diálogo **Adicionar um novo projeto**, defina **Linguagem de programação** como C++ e digite "teste" na caixa de pesquisa. Em seguida, escolha o **Projeto de teste de unidade nativo**.
 
       ::: moniker-end
-      
+
       ::: moniker range="vs-2017"
 
       1. No menu **Arquivo**, escolha **Novo** > **Projeto** > **Visual C++** > **Teste** > **Projeto de teste de unidade C++** .

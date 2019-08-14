@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: dd4ae23899871644f61f3bb903fc2c4ad7880b53
-ms.sourcegitcommit: 9fc8b144d4ed1c46aba87c0b7e1d24454e0eea9d
+ms.openlocfilehash: 1f4a055f62fe76c701858f82b4778f7a3b19fa0a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68493325"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918781"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -65,7 +65,7 @@ Basta invocar as refatorações pressionando **Ctrl+ .** e selecionar a ação d
 
 O [IntelliCode do Visual Studio](/visualstudio/intellicode/) aprimora os esforços de desenvolvimento de software, usando IA (inteligência artificial). O IntelliCode treina em 2.000 projetos de código-fonte aberto no GitHub, sendo cada um com mais de 100 estrelas, para gerar suas recomendações.
 
- ![Animação do IntelliCode no Visual Studio 2019](media/vs-2019/IntelliCode.gif)
+![Animação do IntelliCode no Visual Studio 2019](media/vs-2019/IntelliCode.gif)
 
 Aqui estão algumas maneiras em que o Visual Studio IntelliCode pode ajudar a aumentar sua produtividade:
 

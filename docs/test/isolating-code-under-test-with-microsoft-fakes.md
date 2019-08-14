@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 8dd991af976c9262a6a1af7813c1201f68b36ab8
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
+ms.openlocfilehash: c2f3ec4accc9353923e80017774f5a2b15fe095d
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66431744"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926632"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -245,8 +245,8 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 Você também pode criar shims para instâncias específicas, para construtores e propriedades. Para obter mais informações, confira [Usar shims para isolar o aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).
 
 ## <a name="in-this-section"></a>Nesta seção
- [Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
+[Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md)
 
- [Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
+[Usar shims para isolar seu aplicativo de outros assemblies para teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md)
 
- [Convenções de nomenclatura, geração de código e compilação no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)
+[Convenções de nomenclatura, geração de código e compilação no Microsoft Fakes](../test/code-generation-compilation-and-naming-conventions-in-microsoft-fakes.md)

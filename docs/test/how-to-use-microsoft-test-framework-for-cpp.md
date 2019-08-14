@@ -7,12 +7,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: bcd75724e5124c280d5c3e54bfe870041c432790
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: fd5780479da10da43c270bbf4ffc5a215cb86ad6
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132124"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926683"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Usar o Microsoft Unit Testing Framework para C/C++ no Visual Studio
 
@@ -69,7 +69,7 @@ Use os métodos estáticos na classe [Assert](microsoft-visualstudio-testtools-c
 #define TEST_MY_TRAIT(traitValue) TEST_METHOD_ATTRIBUTE(L"MyTrait", traitValue)
 ```
 
- Para usar a característica definida em seus testes de unidade:
+Para usar a característica definida em seus testes de unidade:
 
 ```cpp
 BEGIN_TEST_METHOD_ATTRIBUTE(Method1)

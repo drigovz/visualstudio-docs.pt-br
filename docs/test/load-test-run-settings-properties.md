@@ -8,12 +8,12 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3755a0ebc0227a62a2a23bc15d88d4d008ab733e
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: 4d50303596cec88bd5463b2ad1df713991c8932c
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662068"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923668"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriedades das configurações de execução de teste de carga
 
@@ -45,7 +45,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Salvar frequência de logs para testes concluídos**|Especifica a frequência com que o log de teste será gravado. O número que indica que um de cada número inserido de testes será salvo no log de teste. Por exemplo, inserindo o valor de dez especifica que o décimo, vigésimo, trigésimo etc. será gravado no log de teste. Definindo o valor como 0 especifica que nenhum log de teste será salvo.|
 |**Salvar log em caso de falha do teste**|Um valor booliano que determina se os logs de teste são salvos se um teste falhar em um teste de carga. O padrão é `True`.<br /><br /> Para obter mais informações, confira [Como: Especificar se as falhas de teste são salvas em logs de teste](../test/how-to-specify-if-test-failures-are-saved-to-test-logs.md)|
 
- Para obter mais informações, confira [Modificar as configurações de log de teste de carga](../test/modify-load-test-logging-settings.md).
+Para obter mais informações, confira [Modificar as configurações de log de teste de carga](../test/modify-load-test-logging-settings.md).
 
 ## <a name="results-properties"></a>Propriedades de resultados
 
@@ -70,7 +70,7 @@ Para obter mais informações, confira [Definir as configurações de execução
 |**Iterações de teste**|Especifica o número total de teste individuais para executar antes que o teste de carga seja concluído. Essa propriedade só se aplica quando a propriedade “Usar iterações de teste” é `True`.|
 |**Usar iterações de teste**|Se Usar iterações de teste for `True`, o teste de carga será executado até que o número de testes individuais concluídos no teste de carga atinja o número especificado de pela propriedade “Iterações de teste”. Nesse caso, as configurações baseadas em tempo, que são Duração do aquecimento, Duração da execução e Duração do desaquecimento, são ignoradas. Se “Usar iterações de teste” for `False`, todas as configurações de tempo se aplicarão, e "Iterações teste” é ignorada.|
 
- Para obter mais informações, confira [Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
+Para obter mais informações, confira [Como: Especificar o número de iterações de teste em uma configuração de execução](../test/how-to-specify-the-number-of-test-iterations-in-a-load-test.md).
 
 ## <a name="timing-properties"></a>Propriedades de tempo
 

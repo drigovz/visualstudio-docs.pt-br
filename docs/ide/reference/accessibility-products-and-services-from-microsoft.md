@@ -19,12 +19,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 81245640c8c73b77dc563c28f1d3d20168203029
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ec9b86958f2e3b3e768b321db17e707dced1d78b
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62793078"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926268"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 
@@ -46,19 +46,19 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 
 ## <a name="windows"></a> Recursos de acessibilidade do Windows
 
- O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="free-step-by-step-tutorials"></a>Tutoriais passo a passo gratuitos
 
- A Microsoft oferece uma série de tutoriais passo a passo que fornecem os procedimentos detalhados para o ajuste das opções de acessibilidade e configurações no seu computador. Essas informações são apresentadas em um formato lado a lado para que você possa aprender a usar o mouse, o teclado ou uma combinação de ambos.
+A Microsoft oferece uma série de tutoriais passo a passo que fornecem os procedimentos detalhados para o ajuste das opções de acessibilidade e configurações no seu computador. Essas informações são apresentadas em um formato lado a lado para que você possa aprender a usar o mouse, o teclado ou uma combinação de ambos.
 
- Para encontrar tutoriais passo a passo de produtos Microsoft, confira o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+Para encontrar tutoriais passo a passo de produtos Microsoft, confira o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
 ### <a name="assistive-technology-products-for-windows"></a>Produtos de tecnologia assistencial para Windows
 
- Há uma ampla variedade de produtos de tecnologia assistencial disponíveis para facilitar o uso de computadores por pessoas com deficiências. É possível pesquisar um catálogo de produtos de tecnologia adaptativa executados no Windows no site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
+Há uma ampla variedade de produtos de tecnologia assistencial disponíveis para facilitar o uso de computadores por pessoas com deficiências. É possível pesquisar um catálogo de produtos de tecnologia adaptativa executados no Windows no site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).
 
- Se você usar a tecnologia assistencial, contate o fornecedor dessa tecnologia antes de atualizar o software ou o hardware para verificar possíveis problemas de compatibilidade.
+Se você usar a tecnologia assistencial, contate o fornecedor dessa tecnologia antes de atualizar o software ou o hardware para verificar possíveis problemas de compatibilidade.
 
 ## <a name="altfortmats"></a> Documentação em formatos alternativos
 

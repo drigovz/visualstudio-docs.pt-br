@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44c66eab323f42ba3aa5392fed657e3afd3a6e5c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2b3ad3b30329d574145ce7de839a3e6c164df2d5
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946824"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919088"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 Exibe uma lista dos threads no programa atual.
@@ -31,12 +31,12 @@ Debug.ListThreads [index]
 ```
 
 ## <a name="arguments"></a>Arguments
- `index`
+`index`
 
- Opcional. Seleciona um thread pelo seu índice para o thread atual.
+Opcional. Seleciona um thread pelo seu índice para o thread atual.
 
 ## <a name="remarks"></a>Comentários
- Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.
+Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.
 
 ## <a name="example"></a>Exemplo
 
@@ -44,7 +44,7 @@ Debug.ListThreads [index]
 >Debug.ListThreads
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)
 - [Comando List Disassembly](../../ide/reference/list-disassembly-command.md)

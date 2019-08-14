@@ -7,20 +7,20 @@ manager: jillfra
 ms.workload:
 - uwp
 author: mikeblome
-ms.openlocfilehash: 723e61f60550230774eb909dfce44d5f91ae7a64
-ms.sourcegitcommit: ab06cde69d862440b4277bcd9bf02e7b50593a1b
+ms.openlocfilehash: 6e0599445ff07227f5075a1a10a8dfdfe50e88f0
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67132190"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925794"
 ---
 # <a name="how-to-test-a-visual-c-dll"></a>Como testar uma DLL do Visual C++
 
 Este tópico descreve uma maneira de criar testes de unidade para uma DLL do C++ para aplicativos UWP (Plataforma Universal do Windows) com o Microsoft Test Framework para C++. A DLL RooterLib demonstra memórias vagas da teoria de limite do cálculo implementando uma função que calcula uma estimativa da raiz quadrada de um determinado número. A DLL, em seguida, pode ser incluída em um aplicativo UWP que mostra a um usuário as coisas divertidas que podem ser feitas com matemática.
 
- Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
+Este tópico demonstra como usar teste de unidade como a primeira etapa do desenvolvimento. Nessa abordagem, primeiramente, você escreve um método de teste que verifique um comportamento específico no sistema que está sendo testado e, em seguida, escreve um código que passe no teste. Ao fazer alterações na ordem dos procedimentos a seguir, é possível reverter essa estratégia para primeiro escrever o código que deseja testar e depois escrever as unidades de teste.
 
- Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obter dicas sobre a estrutura a ser usada.
+Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a .DLL. Consulte [Adicionar teste de unidade de aplicativos C++ existentes](../test/how-to-use-microsoft-test-framework-for-cpp.md) para obter dicas sobre a estrutura a ser usada.
 
 ## <a name="Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade
 

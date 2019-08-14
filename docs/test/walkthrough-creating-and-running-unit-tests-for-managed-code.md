@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: b04a8eabd5b7bdbc5053a30a95609b86b6e61674
-ms.sourcegitcommit: 51dad3e11d7580567673e0d426ab3b0a17584319
+ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/10/2019
-ms.locfileid: "66820934"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926796"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -465,7 +465,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 As melhorias no código de teste levaram a métodos de teste mais robustos e informativos. Porém, o mais importante é que eles também melhoraram o código em teste.
 
 > [!TIP]
-> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)
+> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O **Gerenciador de Testes** também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o **Gerenciador de Testes**. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md).
 
 ## <a name="see-also"></a>Consulte também
 

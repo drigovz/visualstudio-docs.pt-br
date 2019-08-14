@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 16448a53064844f1c75db8b7eaa58c2cf909a968
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62893373"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924251"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Como: Exportar uma textura que tenha o alfa pré-multiplicado
 
@@ -26,7 +26,7 @@ Este documento demonstra essas atividades:
 - Configurando o Pipeline de conteúdo de imagem para gerar alfa pré-multiplicado.
 
 ## <a name="premultiplied-alpha"></a>Alfa pré-multiplicado
- O alfa pré-multiplicado oferece diversas vantagens em relação ao alfa convencional, não multiplicado, porque ele representa melhor a interação real da luz com materiais físicos, separando a contribuição de cor do texel (a cor que ele adiciona à cena) de sua transparência (a quantidade de cor subjacente permitida). Algumas das vantagens de usar alfa pré-multiplicado são:
+O alfa pré-multiplicado oferece diversas vantagens em relação ao alfa convencional, não multiplicado, porque ele representa melhor a interação real da luz com materiais físicos, separando a contribuição de cor do texel (a cor que ele adiciona à cena) de sua transparência (a quantidade de cor subjacente permitida). Algumas das vantagens de usar alfa pré-multiplicado são:
 
 - A combinação com alfa pré-multiplicado é uma operação de associação; o resultado da combinação de várias texturas translúcidas é o mesmo, independentemente da ordem na qual as texturas são mescladas.
 
@@ -42,7 +42,7 @@ Este documento demonstra essas atividades:
 
 2. Configure o arquivo de textura para que ele seja processado pelo Pipeline de conteúdo de imagem. No **Gerenciador de Soluções**, abra o menu de atalho do arquivo de textura e escolha **Propriedades**. Na página **Propriedades de Configuração** > **Geral**, defina a propriedade **Tipo de Item** como **Pipeline de Conteúdo de Imagem**. Verifique se a propriedade **Conteúdo** está definida como **Sim** e se **Excluir do Build** está definido como **Não** e, em seguida, escolha o botão **Aplicar**. A página de propriedades de configuração **Pipeline de Conteúdo de Imagem** é exibida.
 
-3. Configure o Pipeline de conteúdo de imagem para gerar alfa pré-multiplicado. Na página **Propriedades de Configuração** > **Pipeline de Conteúdo de Imagem** > **Geral**, defina a propriedade **Converter para formato alfa pré-multiplicado** como **Sim (/generatepremultipliedalpha)**.
+3. Configure o Pipeline de conteúdo de imagem para gerar alfa pré-multiplicado. Na página **Propriedades de Configuração** > **Pipeline de Conteúdo de Imagem** > **Geral**, defina a propriedade **Converter para formato alfa pré-multiplicado** como **Sim (/generatepremultipliedalpha)** .
 
 4. Escolha o botão **OK**.
 

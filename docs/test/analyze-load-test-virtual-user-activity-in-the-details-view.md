@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a03096e92f2a5da98da2d1850f505c65eb5b6e27
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62823400"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918615"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade do usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
 
@@ -31,19 +31,19 @@ A exibição **Detalhes** mostra o **Gráfico de Atividade do Usuário Virtual**
 > [!NOTE]
 > Antes de executar o teste de carga no qual você deseja usar o **Gráfico de Detalhes da Atividade do Usuário Virtual**, é necessário verificar se a propriedade **Armazenamento de Detalhes de Tempo** está definida como a opção **AllIndividualDetails** usando o Editor de Teste de Desempenho de Carga.
 
- **Painel de legenda de detalhes**
+**Painel de legenda de detalhes**
 
- ![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png)
+![Painel de legenda de detalhes](../test/media/ltest_detailslegend.png)
 
- O painel de legenda de detalhes está visível no **Gráfico de Atividade do Usuário Virtual**. O painel permite filtrar testes, páginas e transações com base em vários critérios diferentes. Por exemplo, você pode remover alguns testes da exibição, ou remover todos os testes com êxito, ou remover testes reprovados com determinadas falhas. Também é possível remover todos os testes que não possuem logs.
+O painel de legenda de detalhes está visível no **Gráfico de Atividade do Usuário Virtual**. O painel permite filtrar testes, páginas e transações com base em vários critérios diferentes. Por exemplo, você pode remover alguns testes da exibição, ou remover todos os testes com êxito, ou remover testes reprovados com determinadas falhas. Também é possível remover todos os testes que não possuem logs.
 
- Você pode realçar testes que falharam, o que exibe todos os testes com falha em vermelho. Também é possível realçar testes que possuem logs de teste. Os testes com logs serão coloridos de verde.
+Você pode realçar testes que falharam, o que exibe todos os testes com falha em vermelho. Também é possível realçar testes que possuem logs de teste. Os testes com logs serão coloridos de verde.
 
- **Painel Filtrar resultados**
+**Painel Filtrar resultados**
 
- ![Painel Filtrar resultados](../test/media/ltest_filterresults.png)
+![Painel Filtrar resultados](../test/media/ltest_filterresults.png)
 
- O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuário Virtual**. Esse painel pode filtrar o seguinte:
+O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuário Virtual**. Esse painel pode filtrar o seguinte:
 
 - **Mostrar apenas os resultados com logs** Exibe apenas resultados de teste com logs de teste associados.
 
