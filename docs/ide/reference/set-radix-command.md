@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b61dff4ebe7486c2e04e4fd3061cd4110feca1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 13341d8cb6a708f4e10f211bd47b79a75e1b6e2a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62952029"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926035"
 ---
 # <a name="set-radix-command"></a>Comando Definir Base
 Define ou retorna a base numérica usada para exibir valores inteiros.
@@ -30,18 +30,18 @@ Debug.SetRadix [10 | 16 | hex | dec]
 ```
 
 ## <a name="arguments"></a>Arguments
- `10` ou `16` ou `hex` ou `dec`
+`10` ou `16` ou `hex` ou `dec`
 
- Opcional. Indica o decimal (10 ou dez) ou hexadecimal (16 ou hexa). Se um argumento for omitido, o valor base atual será retornado.
+Opcional. Indica o decimal (10 ou dez) ou hexadecimal (16 ou hexa). Se um argumento for omitido, o valor base atual será retornado.
 
 ## <a name="example"></a>Exemplo
- Este exemplo define o ambiente para exibir valores inteiros em formato hexadecimal.
+Este exemplo define o ambiente para exibir valores inteiros em formato hexadecimal.
 
 ```cmd
 >Debug.SetRadix hex
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

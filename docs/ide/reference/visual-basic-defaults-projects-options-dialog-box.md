@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aedaf5c31eca900ec1730622dfc7ff6f026a61a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7322ee72509a199e3b4168a0b24083fe463e2457
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789129"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925954"
 ---
 # <a name="visual-basic-defaults-projects-options-dialog-box"></a>Caixa de diálogo Padrões do Visual Basic, Projetos, Opções
 Especifica as configurações padrão para opções de projeto do Visual Basic. Quando um novo projeto é criado, as instruções da opção especificada serão adicionadas ao cabeçalho do projeto no Editor de Códigos. As opções se aplicam a todos os projetos do Visual Basic.
 
- Para acessar essa caixa de diálogo, no menu **Ferramentas**, clique em **Opções**, expanda a pasta **Projetos e Soluções** e clique em **Padrões de VB**.
+Para acessar essa caixa de diálogo, no menu **Ferramentas**, clique em **Opções**, expanda a pasta **Projetos e Soluções** e clique em **Padrões de VB**.
 
  **Opção Explícita**
 
- Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
+Define o padrão do compilador para que declarações explícitas de variáveis sejam necessárias. Por padrão, **Opção Explicit** fica definido como **Ativado**. Para obter mais informações, consulte [/optionexplicit](/dotnet/visual-basic/reference/command-line-compiler/optionexplicit).
 
  **Opção Estrita**
 
- Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
+Define o padrão do compilador para que as conversões de estreitamento explícitas sejam obrigatórias e as associações tardias não sejam permitidas. Por padrão, **Opção Strict** fica definido como **Desativado**. Para obter mais informações, veja [/optionstrict](/dotnet/visual-basic/reference/command-line-compiler/optionstrict).
 
  **Opção Comparar**
 
- Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
+Define o padrão do compilador para comparações de cadeia de caracteres: binário (diferencia maiúsculas de minúsculas) ou texto (não diferencia maiúsculas de minúsculas). Por padrão, **Opção Compare** fica definido como **Binário**. Para obter mais informações, consulte [/optioncompare](/dotnet/visual-basic/reference/command-line-compiler/optioncompare).
 
  **Opção Inferir**
 
- Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
+Define o padrão do compilador para inferência de tipo de variável local. Por padrão, **Opção Infer** é definido como **Ativado** para projetos criados recentemente e como **Desativado** para projetos migrados criados em versões anteriores do Visual Basic. Para obter mais informações, consulte [/optioninfer](/dotnet/visual-basic/reference/command-line-compiler/optioninfer).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Soluções e projetos](../../ide/solutions-and-projects-in-visual-studio.md)

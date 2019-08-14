@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f5f4bb3c6d429fb40d97e748798610e4e46262eb
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62894179"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924503"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Como: Criar um modelo 3D básico
 
@@ -30,13 +30,13 @@ Este artigo demonstra como usar o Editor de Modelo para criar um modelo 3D bási
 - Uso do comando **Triangular**
 
 ## <a name="create-a-basic-3d-model"></a>Criar um modelo 3D básico
- Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelos para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.
+Você pode usar o Editor de Modelo para criar e modificar modelos e cenas 3D para seu jogo ou aplicativo. As etapas a seguir mostram como usar o Editor de Modelos para criar um modelo 3D simplificado de uma casa. Um modelo simplificado pode ser usado como um substituto para ativos de arte final que ainda estão sendo criados, como uma malha para detecção de colisão ou como um modelo de nível baixo de detalhes a ser usado quando o objeto que ele representa está muito longe tirar proveito de uma renderização mais detalhada.
 
- Ao terminar, o modelo deve ter esta aparência:
+Ao terminar, o modelo deve ter esta aparência:
 
- ![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
+![O modelo concluído da casa simplificada](../designers/media/gfx_model_demo_house_final.png)
 
- Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
+Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
 ### <a name="to-create-a-simplified-3d-model-of-a-house"></a>Para criar um modelo 3D simplificado de uma casa
 

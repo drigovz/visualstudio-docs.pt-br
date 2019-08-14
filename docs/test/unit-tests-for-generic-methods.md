@@ -10,12 +10,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a5eac9b88c9afacda48682ecc5a69c7f2db88550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f71767571c6ea041a16eca5a66856c567be72b60
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788385"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925712"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Testes de unidade para métodos genéricos
 
@@ -26,25 +26,25 @@ Você pode gerar testes de unidade para métodos genéricos exatamente como fari
 Quando o Visual Studio gera um teste de unidade para uma classe genérica como `MyList<T>`, ela gera dois métodos: um auxiliar genérico e um método de teste. Se `MyList<T>` tem uma ou mais restrições de tipo, o argumento de tipo deve atender a todas as restrições de tipo. Para certificar-se de que o código genérico em teste funciona conforme o esperado para todas as entradas possíveis, o método de teste chama o método auxiliar genérico com todas as restrições que você deseja testar.
 
 ## <a name="examples"></a>Exemplos
- Os exemplos a seguir ilustram testes de unidade para genéricos:
+Os exemplos a seguir ilustram testes de unidade para genéricos:
 
 - [Editar o código de teste gerado](#EditingGeneratedTestCode). Este exemplo tem duas seções, Código de teste gerado e Código de teste editado. Ele mostra como editar o código de teste bruto gerado de um método genérico em um método de teste útil.
 
 - [Usar uma restrição de tipo](#TypeConstraintNotSatisfied). Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo. Neste exemplo, a restrição de tipo não for atendida.
 
 ### <a name="EditingGeneratedTestCode"></a> Exemplo 1: Editando o código de teste gerado
- O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.
+O código de teste nesta seção testa um método de código em teste chamado `SizeOfLinkedList()`. Esse método retorna um inteiro que especifica o número de nós na lista vinculada.
 
- O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.
+O primeiro exemplo de código, na seção Código de teste gerado, mostra o código de teste não editado como ele foi gerado pelo Visual Studio Enterprise. O segundo exemplo, na seção Código de teste editado, mostra como você poderia fazê-lo testar o funcionamento do método SizeOfLinkedList para dois tipos de dados diferentes, `int` e `char`.
 
- Este código ilustra dois métodos:
+Este código ilustra dois métodos:
 
 - um método auxiliar de teste, `SizeOfLinkedListTestHelper<T>()`. Por padrão, um método auxiliar de teste tem "TestHelper" em seu nome.
 
 - um método de teste, `SizeOfLinkedListTest()`. Cada método de teste é marcado com o atributo TestMethod.
 
 #### <a name="generated-test-code"></a>Código de teste gerado
- O código de teste a seguir foi gerado por meio do método `SizeOfLinkedList()`. Como esse é o teste gerado não editado, ele deve ser modificado para testar corretamente o método SizeOfLinkedList.
+O código de teste a seguir foi gerado por meio do método `SizeOfLinkedList()`. Como esse é o teste gerado não editado, ele deve ser modificado para testar corretamente o método SizeOfLinkedList.
 
 ```csharp
 public void SizeOfLinkedListTestHelper<T>()
@@ -65,13 +65,13 @@ public void SizeOfLinkedListTest()
 }
 ```
 
- No código anterior, o parâmetro de tipo genérico é `GenericParameterHelper`. Considerando que você pode editá-lo para fornecer tipos de dados específicos, conforme mostrado no exemplo a seguir, você poderia executar o teste sem editar essa instrução.
+No código anterior, o parâmetro de tipo genérico é `GenericParameterHelper`. Considerando que você pode editá-lo para fornecer tipos de dados específicos, conforme mostrado no exemplo a seguir, você poderia executar o teste sem editar essa instrução.
 
 #### <a name="edited-test-code"></a>Código de teste editado
- No código a seguir, o método de teste e o método auxiliar de teste foram editados para fazer com que eles testem com êxito o método de código em teste `SizeOfLinkedList()`.
+No código a seguir, o método de teste e o método auxiliar de teste foram editados para fazer com que eles testem com êxito o método de código em teste `SizeOfLinkedList()`.
 
 ##### <a name="test-helper-method"></a>Método auxiliar de teste
- O método auxiliar de teste executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 1 a 5.
+O método auxiliar de teste executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 1 a 5.
 
 1. Crie uma lista vinculada genérica.
 
@@ -84,7 +84,7 @@ public void SizeOfLinkedListTest()
 5. Compare `actual` com `expected` em uma instrução Assert. Se o valor real não for igual ao esperado, o teste falhará.
 
 ##### <a name="test-method"></a>Método de teste
- O método de teste é compilado para o código que é chamado quando você executa o teste chamado SizeOfLinkedListTest. Ele executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 6 e 7.
+O método de teste é compilado para o código que é chamado quando você executa o teste chamado SizeOfLinkedListTest. Ele executa as etapas a seguir, que correspondem às linhas de código rotuladas como etapas 6 e 7.
 
 1. Especifique `<int>` quando você chama o método auxiliar de teste, para verificar se o teste funciona para variáveis `integer`.
 
@@ -118,9 +118,9 @@ public void SizeOfLinkedListTest()
 > Cada vez que o teste SizeOfLinkedListTest é executado, o método TestHelper é chamado duas vezes. A instrução assert deve ser sempre avaliada como true para que o teste seja aprovado. Se o teste falhar, talvez não fique claro se foi a chamada que especificou `<int>` ou a chamada que especificou `<char>` que causou a falha. Para encontrar a resposta, você pode examinar a pilha de chamadas ou definir pontos de interrupção em seu método de teste e, em seguida, depurar durante a execução do teste. Para obter mais informações, confira [Como: Depuração durante a execução de um teste em uma solução do ASP.NET](https://msdn.microsoft.com/Library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).
 
 ### <a name="TypeConstraintNotSatisfied"></a> Exemplo 2: Usando uma restrição de tipo
- Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.
+Este exemplo mostra um teste de unidade para um método genérico que usa uma restrição de tipo não atendida. A primeira seção mostra código do projeto de código em teste. A restrição de tipo está realçada.
 
- A segunda seção mostra código do projeto de teste.
+A segunda seção mostra código do projeto de teste.
 
 #### <a name="code-under-test-project"></a>Projeto de código em teste
 
@@ -158,15 +158,15 @@ namespace ClassLibrary2
 
 Assim como acontece com todos os testes de unidade recém-gerados, você deve adicionar instruções Assert não inconclusivas a esse teste de unidade para fazê-lo retornar resultados úteis. Você não os adiciona ao método marcado com o atributo TestMethod, mas sim ao método "TestHelper", que neste teste é chamado de `DataTestHelper<T>()`.
 
- Neste exemplo, o parâmetro de tipo genérico `T` tem a restrição `where T : Employee`. Essa restrição não foi atendida no método de teste. Portanto, o método `DataTest()` contém uma instrução Assert que alerta você para a necessidade de fornecer a restrição de tipo que foi colocada em `T`. A mensagem desta instrução Assert diz o seguinte: `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
+Neste exemplo, o parâmetro de tipo genérico `T` tem a restrição `where T : Employee`. Essa restrição não foi atendida no método de teste. Portanto, o método `DataTest()` contém uma instrução Assert que alerta você para a necessidade de fornecer a restrição de tipo que foi colocada em `T`. A mensagem desta instrução Assert diz o seguinte: `("No appropriate type parameter is found to satisfies the type constraint(s) of T. " + "Please call DataTestHelper<T>() with appropriate type parameters.");`
 
- Em outras palavras, quando você chama o método `DataTestHelper<T>()` do método de teste, `DataTest()`, você deve passar um parâmetro do tipo `Employee` ou uma classe derivada de `Employee`.
+Em outras palavras, quando você chama o método `DataTestHelper<T>()` do método de teste, `DataTest()`, você deve passar um parâmetro do tipo `Employee` ou uma classe derivada de `Employee`.
 
- `using ClassLibrary2;`
+`using ClassLibrary2;`
 
- `using Microsoft.VisualStudio.TestTools.UnitTesting;`
+`using Microsoft.VisualStudio.TestTools.UnitTesting;`
 
- `namespace TestProject1`
+`namespace TestProject1`
 
 ```csharp
 {
