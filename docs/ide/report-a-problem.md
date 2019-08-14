@@ -9,12 +9,12 @@ ms.author: seiyer
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 840c8af686783a365608c1fe01661569e345add1
-ms.sourcegitcommit: 16bcaca215de75479695738d3c2d703c78c3500e
+ms.openlocfilehash: 519c7f233866bf71bb342d4f740b3e0a90a4ba72
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/21/2019
-ms.locfileid: "67309807"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925992"
 ---
 # <a name="overview-report-a-problem"></a>Visão geral: Relatar um problema
 
@@ -110,7 +110,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 É recomendável usar a pesquisa para garantir que o problema que você está prestes a relatar ainda não tenha sido comunicado. Se você encontrar um item existente que corresponda a seu problema, siga e vote nesse tíquete de problema.
 
- Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
+Forneça todas as informações que você tem para ajudar nossas equipes a reproduzir o que você está enfrentando.  Essas informações incluem etapas de reprodução necessárias, fragmentos de código, capturas de tela, gravações de reprodução, arquivos de log e outros artefatos.  Veja [como relatar um problema no Visual Studio](./how-to-report-a-problem-with-visual-studio.md).
 
 ### <a name="how-is-my-feedback-prioritized"></a>Como meus comentários são priorizados?
 

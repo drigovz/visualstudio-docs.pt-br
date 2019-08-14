@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 889195101123e98207b0b25f05b0aa24355abc95
-ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/09/2019
-ms.locfileid: "65461626"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918366"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Visão geral dos agentes de teste e controladores de teste para executar testes de carga
 
@@ -69,17 +69,17 @@ O controlador de teste fornece uma arquitetura geral para executar testes e incl
 
 O agente de teste é executado como um serviço que escuta solicitações do controlador de teste para iniciar um novo teste. Quando um agente de teste recebe uma solicitação, o serviço do agente de teste inicia um processo no qual executa os testes. Cada agente de teste executa o mesmo teste de carga.
 
- Os agentes de teste recebem um peso do administrador, e a carga é distribuída de acordo com a importância de um agente de teste. Por exemplo, se o agente de teste 1 tiver uma importância 30, o agente de teste 2 tiver uma importância 70 e a carga estiver definida como 1.000 usuários, o agente de teste 1 simulará 300 usuários virtuais, e o agente de teste 2 simulará 700 usuários virtuais. Confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
+Os agentes de teste recebem um peso do administrador, e a carga é distribuída de acordo com a importância de um agente de teste. Por exemplo, se o agente de teste 1 tiver uma importância 30, o agente de teste 2 tiver uma importância 70 e a carga estiver definida como 1.000 usuários, o agente de teste 1 simulará 300 usuários virtuais, e o agente de teste 2 simulará 700 usuários virtuais. Confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
- O agente de teste utiliza um conjunto de testes e um conjunto de parâmetros de simulação como entrada. Um conceito fundamental é que os testes são independentes do computador em que são executados.
+O agente de teste utiliza um conjunto de testes e um conjunto de parâmetros de simulação como entrada. Um conceito fundamental é que os testes são independentes do computador em que são executados.
 
 ## <a name="test-controller-and-test-agent-connection-points"></a>Pontos de conexão entre o controlador de teste e o agente de teste
 
 A ilustração a seguir mostra os pontos de conexão entre o controlador de teste, o agente de teste e o cliente. Ela descreve quais portas são usadas em conexões de entrada e saída, bem como restrições de segurança usadas nessas portas.
 
- ![Portas e segurança do controlador de teste e do agente de teste](./media/test-controller-agent-firewall.png)
+![Portas e segurança do controlador de teste e do agente de teste](./media/test-controller-agent-firewall.png)
 
- Para obter mais informações, confira [Configurar portas para controladores de teste e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md).
+Para obter mais informações, confira [Configurar portas para controladores de teste e agentes de teste](../test/configure-ports-for-test-controllers-and-test-agents.md).
 
 ## <a name="test-controller-and-agent-installation-information"></a>Informações sobre a instalação do controlador e do agente de teste
 

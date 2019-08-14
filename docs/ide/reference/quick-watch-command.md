@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 75afe1cdd0d1755d2953e6b9e6e3e85a089b3303
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62811694"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926135"
 ---
 # <a name="quick-watch-command"></a>Comando Inspeção Rápida
 Exibe o texto selecionado ou especificado no campo Expressão da janela [QuickWatch](../../debugger/watch-and-quickwatch-windows.md). Você pode usar essa caixa de diálogo para calcular o valor atual de uma variável ou expressão reconhecida pelo depurador ou o conteúdo de um registro. Além disso, você pode alterar o valor de qualquer variável não const ou o conteúdo de qualquer registro.
@@ -30,12 +30,13 @@ Debug.QuickWatchq [text]
 ```
 
 ## <a name="arguments"></a>Arguments
- `text`
 
- Opcional. O texto a ser adicionado à caixa de diálogo **Inspeção Rápida**.
+`text`\
+Opcional. O texto a ser adicionado à caixa de diálogo **Inspeção Rápida**.
 
 ## <a name="remarks"></a>Comentários
- Se `text` for omitido, o texto selecionado atualmente ou a palavra no cursor é adicionada à janela Inspeção.
+
+Se `text` for omitido, o texto selecionado atualmente ou a palavra no cursor é adicionada à janela Inspeção.
 
 ## <a name="example"></a>Exemplo
 
@@ -43,7 +44,7 @@ Debug.QuickWatchq [text]
 >Debug.QuickWatch
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Definir uma inspeção nas variáveis usando as janelas Inspeção e QuickWatch no Visual Studio](../../debugger/watch-and-quickwatch-windows.md)
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
