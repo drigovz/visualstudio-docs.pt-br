@@ -1,5 +1,5 @@
 ---
-title: Migração de extensibilidade do Designer XAML
+title: Migração de extensibilidade Designer XAML
 ms.date: 07/09/2019
 ms.topic: conceptual
 author: lutzroeder
@@ -9,45 +9,45 @@ dev_langs:
 - csharp
 - vb
 monikerRange: vs-2019
-ms.openlocfilehash: 4485e9a11cb4770477374deed651fbff2df6df52
-ms.sourcegitcommit: 748d9cd7328a30f8c80ce42198a94a4b5e869f26
+ms.openlocfilehash: 6ffa8888529586e23d6f9762c3ec5b724c708ca5
+ms.sourcegitcommit: ab2c49ce72ccf44b27b5c8852466d15a910453a6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/15/2019
-ms.locfileid: "67890325"
+ms.lasthandoff: 08/14/2019
+ms.locfileid: "69024550"
 ---
 # <a name="xaml-designer-extensibility-migration"></a>Migração de extensibilidade do designer XAML
 
-No Visual Studio de 2019, o designer XAML dá suporte a duas arquiteturas diferentes: a arquitetura de designer de isolamento e a arquitetura de superfície de isolamento mais recente. Essa transição de arquitetura é necessário para dar suporte a tempos de execução de destino que não podem ser hospedados em um processo do .NET Framework. Mover para a arquitetura de isolamento de superfície introduz mudanças significativas para o modelo de extensibilidade de terceiros. Este artigo descreve essas alterações que estão disponíveis no canal de visualização 16.2 de 2019 do Visual Studio.
+No Visual Studio 2019, o designer XAML dá suporte a duas arquiteturas diferentes: a arquitetura de isolamento de designer e a arquitetura de isolamento de superfície mais recente. Essa transição de arquitetura é necessária para dar suporte a tempos de execução de destino que não podem ser hospedados em um processo de .NET Framework. A mudança para a arquitetura de isolamento da superfície introduz alterações significativas no modelo de extensibilidade de terceiros. Este artigo descreve essas alterações, que estão disponíveis no Visual Studio 2019 a partir da versão 16,3.
 
-**Isolamento de Designer** é usado pelo designer do WPF para projetos destinados ao .NET Framework e dá suporte a *. dll* extensões. Código do usuário, bibliotecas de controle e extensões de terceiros são carregadas em um processo externo (*XDesProc.exe*) junto com o código real do designer e painéis do designer.
+O **isolamento de designer** é usado pelo designer do WPF para projetos direcionados ao .NET Framework e oferece suporte a extensões *. Design. dll* . O código do usuário, as bibliotecas de controle e as extensões de terceiros são carregados em um processo externo (*XDesProc. exe*) junto com o código do designer e os painéis de designer reais.
 
-**Isolamento de superfície** é usado pelo designer de UWP. Ele também é usado pelo designer do WPF para projetos destinados ao .NET Core. Superfície isoladamente, as bibliotecas de código e o controle de usuário somente são carregadas em um processo separado, enquanto o designer e seus painéis são carregados no processo do Visual Studio (*DevEnv.exe*). O tempo de execução usado para a execução de bibliotecas de código e o controle de usuário é diferente daquele usado pelo .NET Framework para o designer real e o código de extensibilidade de terceiros.
+O **isolamento de superfície** é usado pelo designer do UWP. Ele também é usado pelo designer do WPF para projetos direcionados ao .NET Core. No isolamento de superfície, somente as bibliotecas de código e controle do usuário são carregadas em um processo separado, enquanto o designer e seus painéis são carregados no processo do Visual Studio (*devenv. exe*). O tempo de execução usado para executar as bibliotecas de código e controle do usuário é diferente daquele usado pelo .NET Framework para o designer real e o código de extensibilidade de terceiros.
 
-![arquitetura de migração de extensibilidade](media/xaml-designer-extensibility-migration-architecture.png)
+![extensibilidade-migração-arquitetura](media/xaml-designer-extensibility-migration-architecture.png)
 
-Devido a essa transição de arquitetura, extensões de terceiros não são carregadas no mesmo processo que as bibliotecas de controle de terceiros. As extensões não podem ter dependências diretas em bibliotecas de controle ou acessar diretamente os objetos de tempo de execução. Extensões que foram previamente gravadas para a arquitetura de designer isolamento usando o *Microsoft.Windows.Extensibility.dll* API deve ser migrada para uma nova abordagem para trabalhar com a arquitetura de isolamento de superfície. Na prática, uma extensão existente precisará ser compilado em relação a novos assemblies de API de extensibilidade. Tipos de acesso para controle de tempo de execução por meio [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou instâncias de tempo de execução devem ser substituídas ou removidas porque as bibliotecas de controle agora são carregadas em um processo diferente.
+Devido a essa transição de arquitetura, as extensões de terceiros não são mais carregadas no mesmo processo que as bibliotecas de controle de terceiros. As extensões não podem mais ter dependências diretas em bibliotecas de controle ou acessar diretamente os objetos de tempo de execução. As extensões que foram escritas anteriormente para a arquitetura de isolamento do designer usando a API *Microsoft. Windows. Extensibility. dll* devem ser migradas para uma nova abordagem para trabalhar com a arquitetura de isolamento da superfície. Na prática, uma extensão existente precisará ser compilada em relação aos novos assemblies da API de extensibilidade. O acesso a tipos de controle em tempo de execução via instâncias [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou runtime deve ser substituído ou removido porque as bibliotecas de controle agora estão carregadas em um processo diferente.
 
 ## <a name="new-extensibility-api-assemblies"></a>Novos assemblies de API de extensibilidade
 
-Os novos assemblies de API de extensibilidade são semelhantes para os assemblies de API de extensibilidade existentes, mas seguem um esquema de nomenclatura diferente para diferenciá-los. Da mesma forma, os nomes de namespace foram alterados para refletir os novos nomes de assembly.
+Os novos assemblies da API de extensibilidade são semelhantes aos assemblies da API de extensibilidade existentes, mas seguem um esquema de nomenclatura diferente para diferenciá-los. Da mesma forma, os nomes de namespace foram alterados para refletir os novos nomes de assembly.
 
-| Isolamento de designer assembly da API            | Assembly de isolamento de superfície API                       |
+| Assembly de API de isolamento de designer            | Assembly de API de isolamento de superfície                       |
 |:------------------------------------------ |:---------------------------------------------------- |
 | Microsoft.Windows.Design.Extensibility.dll | Microsoft.VisualStudio.DesignTools.Extensibility.dll |
 | Microsoft.Windows.Design.Interaction.dll   | Microsoft.VisualStudio.DesignTools.Interaction.dll   |
 
-## <a name="new-file-extension-and-discovery"></a>Descoberta e a nova extensão de arquivo
+## <a name="new-file-extension-and-discovery"></a>Nova extensão de arquivo e descoberta
 
-Em vez de usar o *. dll* extensão, a nova superfície extensões serão descobertas por meio de arquivo a *. designtools.dll* extensão de arquivo. *. dll* e *. designtools.dll* extensões podem existir na mesma *Design* subpasta.
+Em vez de usar a extensão de arquivo *. Design. dll* , novas extensões de superfície serão descobertas usando a extensão de arquivo *. designtools. dll* . *. as extensões. Design. dll* e *. designtools. dll* podem existir na mesma subpasta de *design* .
 
-Embora as bibliotecas de controle de terceiros são compiladas para o tempo de execução real de destino (.NET Core ou UWP), o *. designtools.dll* extensão sempre deve ser compilada como um assembly do .NET Framework.
+Enquanto as bibliotecas de controle de terceiros são compiladas para o tempo de execução de destino real (.NET Core ou UWP), a extensão *. designtools. dll* sempre deve ser compilada como um assembly .NET Framework.
 
-## <a name="decouple-attribute-tables-from-runtime-types"></a>Desacoplar as tabelas de atributos de tipos de tempo de execução
+## <a name="decouple-attribute-tables-from-runtime-types"></a>Desacoplar tabelas de atributos de tipos de tempo de execução
 
-Não permite que o modelo de extensibilidade do isolamento de superfície para que as extensões dependem de bibliotecas de controle real e, portanto, as extensões não podem referenciar tipos da biblioteca de controle. Por exemplo, *MyLibrary.designtools.dll* não deve ter uma dependência na *MyLibrary*.
+O modelo de extensibilidade de isolamento de superfície não permite que as extensões dependam de bibliotecas de controle reais e, portanto, as extensões não podem referenciar tipos da biblioteca de controle. Por exemplo, *MyLibrary. designtools. dll* não deve ter uma dependência em *MyLibrary. dll*.
 
-Essas dependências eram mais comuns ao registrar os metadados para tipos por meio de tabelas de atributo. Tipos de código de extensão que faz referência a biblioteca de controle diretamente por meio [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) será substituído nas novas APIs por meio de nomes de tipo com base em cadeia de caracteres:
+Essas dependências eram mais comuns ao registrar metadados para tipos por meio de tabelas de atributos. O código de extensão que referencia tipos de biblioteca de controle diretamente por meio de [typeof](/dotnet/csharp/language-reference/keywords/typeof) ou [GetType](/dotnet/visual-basic/language-reference/operators/gettype-operator) é substituído nas novas APIs usando nomes de tipo com base em cadeia de caracteres:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Metadata;
@@ -92,11 +92,11 @@ Public Class AttributeTableProvider
 End Class
 ```
 
-## <a name="feature-providers-and-model-api"></a>Provedores de recursos e a API de modelo
+## <a name="feature-providers-and-model-api"></a>Provedores de recursos e API de modelo
 
-Provedores de recursos são implementados em assemblies de extensão e carregados no processo do Visual Studio. `FeatureAttribute` continuará a fazer referência a tipos de provedor de recurso diretamente, usando [typeof](/dotnet/csharp/language-reference/keywords/typeof).
+Os provedores de recursos são implementados em assemblies de extensão e carregados no processo do Visual Studio. `FeatureAttribute`o continuará a referenciar tipos de provedor de recursos diretamente usando [typeof](/dotnet/csharp/language-reference/keywords/typeof).
 
-Atualmente, há suporte para os seguintes provedores de recurso:
+Atualmente, há suporte para os seguintes provedores de recursos:
 
 * `DefaultInitializer`
 * `AdornerProvider`
@@ -104,9 +104,9 @@ Atualmente, há suporte para os seguintes provedores de recurso:
 * `ParentAdapter`
 * `PlacementAdapter`
 
-Porque agora são carregados em um processo diferente de bibliotecas de código e controle o tempo de execução real de provedores de recursos, eles não são mais capazes de acessar objetos de tempo de execução diretamente. Em vez disso, todas essas interações devem ser convertidas para usar as APIs correspondentes com base no modelo. A API de modelo foi atualizado e o acesso ao <xref:System.Type> ou <xref:System.Object> é não está mais disponível ou foi substituído por `TypeIdentifier` e `TypeDefinition`.
+Como os provedores de recursos agora são carregados em um processo diferente do código de tempo de execução real e das bibliotecas de controle, eles não podem mais acessar objetos de tempo de execução diretamente. Em vez disso, todas essas interações devem ser convertidas para usar as APIs baseadas em modelo correspondentes. A API de modelo foi atualizada e o acesso a <xref:System.Type> ou <xref:System.Object> não está mais disponível ou foi substituído por `TypeIdentifier` e `TypeDefinition`.
 
-`TypeIdentifier` representa uma cadeia de caracteres sem um nome de assembly identificando um tipo. Um `TypeIdenfifier` pode ser resolvido para um `TypeDefinition` para obter informações adicionais sobre o tipo de consulta. `TypeDefinition` instâncias não podem ser armazenados em cache no código de extensão.
+`TypeIdentifier`representa uma cadeia de caracteres sem um nome de assembly que identifica um tipo. Um `TypeIdenfifier` pode ser resolvido para um `TypeDefinition` para consultar informações adicionais sobre o tipo. `TypeDefinition`as instâncias não podem ser armazenadas em cache no código de extensão.
 
 ```csharp
 TypeDefinition type = ModelFactory.ResolveType(
@@ -128,13 +128,13 @@ If type?.IsSubclassOf(buttonType) Then
 End If
 ```
 
-APIs removidas do conjunto de API de extensibilidade de isolamento de superfície:
+APIs removidas do conjunto de APIs de extensibilidade de isolamento de superfície:
 
 * `ModelFactory.CreateItem(EditingContext context, object item)`
 * `ViewItem.PlatformObject`
 * `ModelProperty.DefaultValue`
 
-As APIs que usam `TypeIdentifier` em vez de <xref:System.Type>:
+APIs que usam `TypeIdentifier` em vez <xref:System.Type>de:
 
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, Type itemType, CreateOptions options, params object[] arguments)`
@@ -150,12 +150,12 @@ As APIs que usam `TypeIdentifier` em vez de <xref:System.Type>:
 * `ParentAdpater.CanParent(ModelItem parent, Type childType)`
 * `ParentAdapter.RedirectParent(ModelItem parent, Type childType)`
 
-As APIs que usam `TypeIdentifier` em vez de <xref:System.Type> e não há mais suporte a argumentos de construtor:
+As APIs que `TypeIdentifier` usam em <xref:System.Type> vez de e não oferecem mais suporte a argumentos de construtor:
 
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, params object[] arguments)`
 * `ModelFactory.CreateItem(EditingContext context, TypeIdentifier typeIdentifier, CreateOptions options, params object[] arguments)`
 
-As APIs que usam `TypeDefinition` em vez de <xref:System.Type>:
+APIs que usam `TypeDefinition` em vez <xref:System.Type>de:
 
 * `ModelFactory.ResolveType(EditingContext context, TypeIdentifier typeIdentifier)`
 * `ValueTranslationService.GetProperties(Type itemType)`
@@ -173,7 +173,7 @@ As APIs que usam `TypeDefinition` em vez de <xref:System.Type>:
 * `AdapterService.GetAdapter<TAdapterType>(Type itemType)`
 * `AdapterService.GetAdapter(Type adapterType, Type itemType)`
 
-As APIs que usam `ModelItem` em vez de <xref:System.Object>:
+APIs que usam `ModelItem` em vez <xref:System.Object>de:
 
 * `ModelItemCollection.Insert(int index, object value)`
 * `ModelItemCollection.Remove(object value)`
@@ -182,7 +182,12 @@ As APIs que usam `ModelItem` em vez de <xref:System.Object>:
 * `ModelItemDictionary.Remove(object key)`
 * `ModelItemDictionary.TryGetValue(object key, out ModelItem value)`
 
-Conhecido como tipos primitivos `Int32`, `String`, ou `Thickness` pode ser passado para a API do modelo como instâncias do .NET Framework e será convertido para o objeto correspondente no processo de tempo de execução de destino. Por exemplo:
+Além disso `ModelItem` , APIs `SetValue` como o oferecerão suporte apenas a instâncias de tipos primitivos ou tipos de .NET Framework internos que podem ser convertidos para o tempo de execução de destino. Atualmente, há suporte para esses tipos:
+
+* Tipos de .NET Framework primitivos `Byte`: `Char` `Boolean`, `DateTime`, `Double` `Enum` ,,`Guid`,,, ,`Int64`, ,`SByte` , `Int16` `Int32` `Nullable` , `Single`, `String`, `Type`, `UInt16`, `UInt32`, `UInt64`,`Uri`
+* Tipos de .NET Framework do WPF conhecidos (e tipos derivados `Brush`) `Color`: `CompositeTransform`, `CornerRadius`, `Duration`, `EasingFunctionBase` `EasingMode`,, `EllipseGeometry`, `FontFamily`, `GeneralTransform`, `Geometry` ,, , `GradientStopCollection`, `GradientStop`, `GridLength`, `ImageSource`, `InlineCollection`, `Inline`, `KeySpline`, `Material`, `Matrix`, `PathFigureCollection`, `PathFigure`, `PathSegmentCollection`, `PathSegment`, `Path`, `PointCollection`, `Point`, `PropertyPath`, `Rect`, `RepeatBehavior`, `Setter`, `Size`, `StaticResource`, `TextAlignment`, `TextDecorationCollection`, `ThemeResourceExtension`, `Thickness`, `TimeSpan`, `Transform3D`,`TransformCollection`
+
+Por exemplo:
 
 ```csharp
 using Microsoft.VisualStudio.DesignTools.Extensibility.Features;
@@ -212,10 +217,10 @@ Public Class MyControlDefaultInitializer
 End Class
 ```
 
-Mais exemplos de código estão disponíveis na [xaml-designer-exemplos de extensibilidade](https://github.com/microsoft/xaml-designer-extensibility-samples) repositório.
+Mais exemplos de código estão disponíveis no repositório [XAML-designer-Extensibility-Samples](https://github.com/microsoft/xaml-designer-extensibility-samples) .
 
-## <a name="limited-support-for-designdll-extensions"></a>Suporte limitado para. dll extensões
+## <a name="limited-support-for-designdll-extensions"></a>Suporte limitado para extensões. Design. dll
 
-Se houver *. designtools.dll* extensão é descoberta para uma biblioteca de controle, ele é carregado primeiro e descoberta para *. dll* extensões é ignorada.
+Se qualquer extensão *. designtools. dll* for descoberta para uma biblioteca de controle, ela será carregada primeiro e a descoberta para as extensões *. Design. dll* será ignorada.
 
-Se nenhum *. designtools.dll* extensões estiverem presentes, mas um *. dll* extensão for encontrada, o serviço de linguagem XAML tenta carregar esse assembly para extrair as informações da tabela para dar suporte ao atributo editor básico e cenários de Inspetor de propriedade. Esse mecanismo é limitado em escopo. Ele não permite o carregamento de extensões do designer de isolamento para executar os provedores de recursos, mas pode fornecer suporte básico para bibliotecas de controles WPF existentes.
+Se não houver extensões *. designtools. dll* presentes, mas uma extensão *. Design. dll* for encontrada, o serviço XAML Language tentará carregar esse assembly para extrair as informações da tabela de atributos para dar suporte a cenários básicos de editor e de Inspetor de propriedades. Esse mecanismo é limitado no escopo. Ele não permite o carregamento de extensões de isolamento de designer para executar provedores de recursos, mas pode fornecer suporte básico para bibliotecas de controle do WPF existentes.
