@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4157316756e4b180f6fb49082bf60927ddb43707
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 38d92194a5aa2b46a0cb65a1525bc01d9de67b86
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714801"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547362"
 ---
 # <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Tipos não devem estender determinados tipos base
 
@@ -32,7 +32,7 @@ ms.locfileid: "66714801"
 
 ## <a name="cause"></a>Causa
 
-Um tipo estende um dos seguintes tipos de base:
+Um tipo estende um dos seguintes tipos base:
 
 - <xref:System.ApplicationException?displayProperty=fullName>
 - <xref:System.Xml.XmlDocument?displayProperty=fullName>
@@ -43,17 +43,17 @@ Um tipo estende um dos seguintes tipos de base:
 - <xref:System.Collections.SortedList?displayProperty=fullName>
 - <xref:System.Collections.Stack?displayProperty=fullName>
 
-Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-As exceções devem derivar <xref:System.Exception?displayProperty=fullName> ou uma de suas subclasses no <xref:System> namespace.
+<xref:System.Exception?displayProperty=fullName> As<xref:System> exceções devem derivar de ou de uma de suas subclasses no namespace.
 
-Não crie uma subclasse de <xref:System.Xml.XmlDocument> se você deseja criar uma exibição XML de uma fonte de dados ou modelo de objeto subjacente.
+Não crie uma subclasse de <xref:System.Xml.XmlDocument> se desejar criar uma exibição XML de um modelo de objeto subjacente ou fonte de dados.
 
 ### <a name="non-generic-collections"></a>Coleções não genéricas
 
-Usar e/ou estender coleções genéricas, sempre que possível. Não estenda coleções não genéricas no seu código, a menos que você o enviados anteriormente.
+Use e/ou estenda coleções genéricas sempre que possível. Não estenda coleções não genéricas em seu código, a menos que você as tenha enviado anteriormente.
 
 **Exemplos de uso incorreto**
 
@@ -85,14 +85,14 @@ Para corrigir uma violação dessa regra, derive o tipo de um tipo base diferent
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprimir um aviso nessa regra quanto a violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso nessa regra quanto a violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genéricas se o código foi lançado anteriormente.
+Não suprimir um aviso desta regra para violações <xref:System.ApplicationException>. É seguro suprimir um aviso desta regra para violações <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genérica se o código tiver sido liberado anteriormente.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1058.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (Design). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).

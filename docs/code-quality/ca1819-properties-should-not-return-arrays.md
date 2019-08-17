@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2824be0ecc29965abb68519aaa8eb8a83af8e688
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 9fd738b0c16ede4f71c001036546c335d8ca7186
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841376"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547032"
 ---
 # <a name="ca1819-properties-should-not-return-arrays"></a>CA1819: Propriedades não devem retornar matrizes
 
@@ -37,65 +37,65 @@ ms.locfileid: "65841376"
 
 Uma propriedade retorna uma matriz.
 
-Por padrão, essa regra olha apenas para tipos e propriedades visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina as propriedades e tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Matrizes retornadas por propriedades não são protegidos contra gravação, mesmo se a propriedade é somente leitura. Para manter a matriz à prova de adulteração, a propriedade deve retornar uma cópia da matriz. Normalmente, os usuários não entendem as implicações adversas no desempenho de chamar essa propriedade. Especificamente, elas podem usar a propriedade como uma propriedade indexada.
+As matrizes retornadas por propriedades não são protegidas por gravação, mesmo que a propriedade seja somente leitura. Para manter a matriz à prova de adulteração, a propriedade deve retornar uma cópia da matriz. Normalmente, os usuários não entendem as implicações de desempenho adversas de chamar tal propriedade. Especificamente, eles podem usar a propriedade como uma propriedade indexada.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, verifique a propriedade de um método ou altere a propriedade para retornar uma coleção.
+Para corrigir uma violação dessa regra, torne a propriedade um método ou altere a propriedade para retornar uma coleção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Você pode suprimir um aviso de que é gerado para uma propriedade de um atributo que é derivado de <xref:System.Attribute> classe. Atributos podem conter propriedades que retornam matrizes, mas não podem conter propriedades que retornam coleções.
+Você pode suprimir um aviso que é gerado para uma propriedade de um atributo que é derivada da <xref:System.Attribute> classe. Os atributos podem conter propriedades que retornam matrizes, mas não podem conter propriedades que retornem coleções.
 
-Você pode suprimir o aviso se a propriedade for parte de um [o objeto de transferência de dados (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) classe.
+Você pode suprimir o aviso se a propriedade fizer parte de uma classe de [dto (objeto de transferência de dados)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) .
 
-Caso contrário, não suprima um aviso nessa regra.
+Caso contrário, não omita um aviso dessa regra.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1819.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (desempenho). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (desempenho). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example-violation"></a>Violação de exemplo
 
-O exemplo a seguir mostra uma propriedade que viola essa regra:
+O exemplo a seguir mostra uma propriedade que viola esta regra:
 
 [!code-csharp[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_1.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_1.vb)]
 
-Para corrigir uma violação dessa regra, verifique a propriedade de um método ou altere a propriedade para retornar uma coleção em vez de uma matriz.
+Para corrigir uma violação dessa regra, torne a propriedade um método ou altere a propriedade para retornar uma coleção em vez de uma matriz.
 
-### <a name="change-the-property-to-a-method"></a>Altere a propriedade para um método
+### <a name="change-the-property-to-a-method"></a>Alterar a propriedade para um método
 
-O exemplo a seguir corrige a violação, alterando a propriedade a um método:
+O exemplo a seguir corrige a violação alterando a propriedade para um método:
 
 [!code-vb[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_2.vb)]
 [!code-csharp[FxCop.Performance.PropertyArrayFixedMethod#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_2.cs)]
 
-### <a name="change-the-property-to-return-a-collection"></a>Altere a propriedade para retornar uma coleção
+### <a name="change-the-property-to-return-a-collection"></a>Alterar a propriedade para retornar uma coleção
 
-O exemplo a seguir corrige a violação, alterando a propriedade para retornar um <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
+O exemplo a seguir corrige a violação alterando a propriedade para retornar <xref:System.Collections.ObjectModel.ReadOnlyCollection%601?displayProperty=fullName>:
 
 [!code-csharp[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_3.cs)]
 [!code-vb[FxCop.Performance.PropertyArrayFixedCollection#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_3.vb)]
 
-## <a name="allow-users-to-modify-a-property"></a>Permitir que os usuários modificar uma propriedade
+## <a name="allow-users-to-modify-a-property"></a>Permitir que os usuários modifiquem uma propriedade
 
-Você talvez queira permitir que o consumidor da classe modificar uma propriedade. O exemplo a seguir mostra uma propriedade de leitura/gravação que viola essa regra:
+Talvez você queira permitir que o consumidor da classe modifique uma propriedade. O exemplo a seguir mostra uma propriedade de leitura/gravação que viola esta regra:
 
 [!code-csharp[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_4.cs)]
 [!code-vb[FxCop.Performance.PropertyModifyViolation#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_4.vb)]
 
-O exemplo a seguir corrige a violação, alterando a propriedade para retornar um <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
+O exemplo a seguir corrige a violação alterando a propriedade para retornar <xref:System.Collections.ObjectModel.Collection%601?displayProperty=fullName>:
 
 [!code-vb[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/VisualBasic/ca1819-properties-should-not-return-arrays_5.vb)]
 [!code-csharp[FxCop.Performance.PropertyModifyFixed#1](../code-quality/codesnippet/CSharp/ca1819-properties-should-not-return-arrays_5.cs)]

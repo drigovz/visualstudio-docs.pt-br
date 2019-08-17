@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 154d7d36c949ac361f938aa7d8608251c2a9adee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 93fd892baaf54d79c3a2387b8961a2f4c1bb2cdb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841917"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547318"
 ---
 # <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identificadores devem ter um sufixo correto
 
@@ -34,17 +34,17 @@ ms.locfileid: "65841917"
 
 Um identificador não tem o sufixo correto.
 
-Por padrão, essa regra olha apenas identificadores visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina identificadores visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Por convenção, os nomes de tipos que estendem determinados tipos de base ou que implementam determinadas interfaces, ou tipos derivados desses tipos, têm um sufixo que está associado com o tipo base ou interface.
+Por convenção, os nomes de tipos que estendem determinados tipos de base ou que implementam determinadas interfaces, ou tipos derivados desses tipos, têm um sufixo associado ao tipo ou interface base.
 
-Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
-A tabela a seguir lista os tipos base e interfaces que associaram sufixos.
+A tabela a seguir lista os tipos de base e as interfaces que têm sufixos associados.
 
-|Tipo/Interface base|Sufixo|
+|Tipo/interface base|Sufixo|
 |--------------------------|------------|
 |<xref:System.Attribute?displayProperty=fullName>|Atributo|
 |<xref:System.EventArgs?displayProperty=fullName>|EventArgs|
@@ -63,51 +63,51 @@ A tabela a seguir lista os tipos base e interfaces que associaram sufixos.
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condição|
 |Um delegado de manipulador de eventos.|EventHandler|
 
-Tipos que implementam <xref:System.Collections.ICollection> e são um tipo generalizado da estrutura de dados, como um dicionário, pilha ou fila, são permitidos nomes que fornecem informações significativas sobre o uso pretendido do tipo.
+Os tipos que <xref:System.Collections.ICollection> implementam e são um tipo generalizado de estrutura de dados, como um dicionário, uma pilha ou uma fila, são nomes permitidos que fornecem informações significativas sobre o uso pretendido do tipo.
 
-Tipos que implementam <xref:System.Collections.ICollection> e são uma coleção de itens específicos têm nomes que terminam com a palavra 'Collection'. Por exemplo, uma coleção de <xref:System.Collections.Queue> objetos tem o nome 'QueueCollection'. O sufixo 'Collection' significa que os membros da coleção podem ser enumerados usando o `foreach` (`For Each` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrução.
+Os tipos que <xref:System.Collections.ICollection> implementam e são uma coleção de itens específicos têm nomes que terminam com a palavra ' Collection '. Por exemplo, uma coleção de <xref:System.Collections.Queue> objetos teria o nome ' QueueCollection '. O sufixo ' Collection ' significa que os membros da coleção podem ser enumerados usando a `foreach` instrução (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-Tipos que implementam <xref:System.Collections.IDictionary> têm nomes que terminam com a palavra 'Dicionário', mesmo se o tipo também implementa <xref:System.Collections.IEnumerable> ou <xref:System.Collections.ICollection>. As convenções de nomenclatura de sufixo 'Collection' e 'Dicionário' permitem que os usuários distinguir entre os seguintes padrões de enumeração de dois.
+Os tipos que <xref:System.Collections.IDictionary> implementam têm nomes que terminam com a palavra ' Dictionary ', mesmo que <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>tipo também implemente ou. As convenções de nomenclatura de sufixo ' Collection ' e ' Dictionary ' permitem que os usuários diferenciem entre os dois padrões de enumeração a seguir.
 
-Tipos com o sufixo 'Collection' seguem esse padrão de enumeração.
+Os tipos com o sufixo ' Collection ' seguem esse padrão de enumeração.
 
 ```
 foreach(SomeType x in SomeCollection) { }
 ```
 
-Tipos com o sufixo 'Dicionário' seguem esse padrão de enumeração.
+Os tipos com o sufixo ' Dictionary ' seguem esse padrão de enumeração.
 
 ```
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-Um <xref:System.Data.DataSet> objeto consiste em uma coleção de <xref:System.Data.DataTable> objetos, que consistem em coleções de <xref:System.Data.DataColumn?displayProperty=fullName> e <xref:System.Data.DataRow?displayProperty=fullName> objects, entre outros. Essas coleções implementam <xref:System.Collections.ICollection> por meio de base de <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> classe.
+Um <xref:System.Data.DataSet> objeto consiste em uma coleção de <xref:System.Data.DataTable> objetos, <xref:System.Data.DataColumn?displayProperty=fullName> que consistem em coleções e <xref:System.Data.DataRow?displayProperty=fullName> objetos, entre outros. Essas coleções implementam <xref:System.Collections.ICollection> por meio <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> da classe base.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Renomear o tipo, de modo que ele é sufixado com o termo correto.
+Renomeie o tipo para que ele seja sufixado com o termo correto.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso para usar o sufixo 'Collection' se o tipo é uma estrutura de dados generalizado que pode ser estendida ou que conterá um conjunto arbitrário de diversos itens. Nesse caso, um nome que forneça informações significativas sobre a implementação, desempenho ou outras características da estrutura de dados pode fazer sentido (por exemplo, BinaryTree). Em casos em que o tipo representa uma coleção de um tipo específico (por exemplo, StringCollection), não suprima um aviso nessa regra porque o sufixo indica que o tipo pode ser enumerado usando um `foreach` instrução.
+É seguro suprimir um aviso para usar o sufixo ' Collection ' se o tipo for uma estrutura de dados generalizada que pode ser estendida ou que conterá um conjunto arbitrário de itens diferentes. Nesse caso, um nome que fornece informações significativas sobre a implementação, o desempenho ou outras características da estrutura de dados pode fazer sentido (por exemplo, BinaryTree). Nos casos em que o tipo representa uma coleção de um tipo específico (por exemplo, StringCollection), não omita um aviso dessa regra porque o sufixo indica que o tipo pode ser enumerado usando uma `foreach` instrução.
 
-Para outros sufixos, não suprima um aviso nessa regra. O sufixo permite que o uso pretendido seja evidente, o nome de tipo.
+Para outros sufixos, não omita um aviso dessa regra. O sufixo permite que o uso pretendido seja evidente a partir do nome do tipo.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1710.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (nomenclatura). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1711: Identificadores não devem ter sufixo incorreto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: Os identificadores não devem ter um sufixo incorreto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Atributos](/dotnet/standard/design-guidelines/attributes)
-- [Manipulando e acionando eventos](/dotnet/standard/events/index)
+- [Manipulando e gerando eventos](/dotnet/standard/events/index)

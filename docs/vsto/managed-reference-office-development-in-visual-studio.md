@@ -1,6 +1,6 @@
 ---
 title: Referência gerenciada (desenvolvimento do Office no Visual Studio)
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -13,66 +13,65 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f8ff9a196fb459359502e4c9f8599fbdeff3e1ce
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da10833f8340d5308321038bb0500ca8408b40bb
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63438805"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551769"
 ---
 # <a name="managed-reference-office-development-in-visual-studio"></a>Referência gerenciada (desenvolvimento do Office no Visual Studio)
-  Esta seção contém documentação de referência de API para namespaces e tipos que são usados no Office projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Para obter a documentação de referência de API sobre os namespaces e tipos que são usados em projetos do Office destinados ao .NET Framework 3.5, consulte a seguinte seção de referência na documentação do Visual Studio: [ http://go.microsoft.com/fwlink/?LinkId=160658 ](http://go.microsoft.com/fwlink/?LinkId=160658).
+  Esta seção contém documentação de referência de API para namespaces e tipos que são usados em projetos do Office [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] destinados ao [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]ou ao. Para obter a documentação de referência de API sobre os namespaces e tipos que são usados em projetos do Office direcionados para o .NET Framework 3,5, consulte a seção de referência [http://go.microsoft.com/fwlink/?LinkId=160658](http://go.microsoft.com/fwlink/?LinkId=160658)a seguir na documentação do Visual Studio:.
 
-> [!NOTE]
-> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Nesta seção
  <xref:Microsoft.Office.Tools>
 
- Contém classes comuns à programação de soluções do Office. Isso inclui a classe base para suplementos do VSTO, classes para criar painéis de tarefas personalizados nos suplementos do VSTO, classes para a criação de marcas inteligentes em soluções do Excel e Word e classes para criar painéis de ações em personalizações no nível do documento.
+ Contém classes comuns à programação de soluções do Office. Isso inclui a classe base para suplementos do VSTO, classes para a criação de painéis de tarefas personalizados em suplementos do VSTO, classes para a criação de marcas inteligentes em soluções do Excel e do Word e classes para a criação de painéis de ações em personalizações em nível de documento.
 
  <xref:Microsoft.Office.Tools.Excel>
 
- Contém os controles de host e itens de host que podem ser usados em soluções para o Excel.
+ Contém controles de host e itens de host que podem ser usados em soluções para o Excel.
 
  <xref:Microsoft.Office.Tools.Excel.Controls>
 
- Contém controles do Excel e controles de formulários do Windows que podem ser usados em soluções para o Excel.
+ Contém controles do Excel e controles de Windows Forms que podem ser usados em soluções para o Excel.
 
  <xref:Microsoft.Office.Tools.Outlook>
 
- Contém classes usadas pelos suplementos do VSTO para Outlook, incluindo classes que são usadas para criar regiões de formulário personalizadas.
+ Contém classes usadas por suplementos do VSTO para o Outlook, incluindo classes que são usadas para criar regiões de formulário personalizadas.
 
  <xref:Microsoft.Office.Tools.Ribbon>
 
- Contém classes que são usadas para modificar programaticamente as personalizações da faixa de opções criadas usando o designer de faixa de opções.
+ Contém classes que são usadas para modificar programaticamente personalizações da faixa de forma criadas usando o designer de faixa de faixas.
 
  <xref:Microsoft.Office.Tools.Word>
 
- Contém os controles de host e itens de host que podem ser usados em soluções para o Word.
+ Contém controles de host e itens de host que podem ser usados em soluções para o Word.
 
  <xref:Microsoft.Office.Tools.Word.Controls>
 
- Contém controles do Word e controles de formulários do Windows que podem ser usados em soluções para o Word.
+ Contém controles de texto e controles de Windows Forms que podem ser usados em soluções para o Word.
 
  <xref:Microsoft.VisualStudio.Tools.Applications>
 
- Contém o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe e um conjunto de relacionadas as classes de dados armazenados em cache. Essas classes podem ser usadas para modificar alguns aspectos de personalizações no nível do documento em computadores que não têm o Microsoft Office instalado.
+ Contém a <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe e um conjunto de classes de dados em cache relacionadas. Essas classes podem ser usadas para modificar alguns aspectos de personalizações em nível de documento em computadores que não têm o Microsoft Office instalado.
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Deployment>
 
- Contém o <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interface (que você pode implementar para criar um *lançar a ação de implantação* para uma solução do Office), as exceções que podem ser geradas durante a instalação de uma solução do Office e outras APIs que fazem parte do Visual Infraestrutura do Studio.
+ Contém a <xref:Microsoft.VisualStudio.Tools.Applications.Deployment.IAddInPostDeploymentAction> interface (que você pode implementar para criar uma *ação de pós-implantação* para uma solução do Office), exceções que podem ser geradas ao instalar uma solução do Office e outras APIs que fazem parte da infraestrutura do Visual Studio.
 
  <xref:Microsoft.VisualStudio.Tools.Applications.Runtime>
 
- Contém a maioria das exceções que podem ser lançadas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], várias classes que podem ser usado para dados em cache em personalizações no nível de documento e outras APIs que fazem parte da infraestrutura do Visual Studio.
+ Contém a maioria das exceções que podem ser geradas pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], várias classes que podem ser usadas para armazenar dados em cache em personalizações em nível de documento e outras APIs que fazem parte da infraestrutura do Visual Studio.
 
  <xref:Microsoft.VisualStudio.Tools.Office.BuildTasks>
 
- Contém classes de tarefa do MSBuild que são usadas para compilar projetos do Office.
+ Contém as classes de tarefa do MSBuild que são usadas para criar projetos do Office.
 
 ## <a name="see-also"></a>Consulte também
-- [Visual Studio tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md)
-- [Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Visão geral do Visual Studio Tools for Office Runtime](../vsto/visual-studio-tools-for-office-runtime-overview.md)
+- [Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)

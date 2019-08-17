@@ -1,6 +1,6 @@
 ---
 title: assemblies de Interoperabilidade primária do Office
-ms.date: 09/20/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -14,36 +14,38 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447097"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551696"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblies de Interoperabilidade primária do Office
 
 Para usar os recursos de um aplicativo do Microsoft Office a partir de um projeto do Office, você deve usar o PIA (assembly de interoperabilidade primário ) para o aplicativo. O PIA permite que código gerenciado interaja com modelo de objeto baseado em COM de um aplicativo do Microsoft Office.
 
+[!include[Add-ins note](includes/addinsnote.md)]
+
 Quando você cria um novo projeto do Office, o Visual Studio adiciona referências aos PIAs necessários na compilação do projeto. Em alguns cenários, pode ser necessário adicionar referências a PIAs extras (por exemplo, se você quiser usar um recurso do Microsoft Office Word em um projeto do Microsoft Office Excel).
 
 Este tópico descreve os seguintes aspectos de uso de PIAs do Microsoft Office em projetos do Office:
 
-- [Assemblies de interoperabilidade primários separados para criar e executar projetos](#separateassemblies)
+- [Separar assemblies de interoperabilidade primários para compilar e executar projetos](#separateassemblies)
 
-- [Usar recursos de vários aplicativos do Microsoft Office em um único projeto](#usingfeatures)
+- [Usar recursos de vários aplicativos Microsoft Office em um único projeto](#usingfeatures)
 
-- [Lista completa de assemblies de interoperabilidade primários para aplicativos do Microsoft Office](#pialist)
+- [Lista completa de assemblies de interoperabilidade primária para aplicativos Microsoft Office](#pialist)
 
-Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [assemblies de interoperabilidade primários](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Para obter mais informações sobre assemblies de interoperabilidade primária, consulte assemblies de interoperabilidade [primária](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
-## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Assemblies de interoperabilidade primários separados para criar e executar projetos
+## <a name="separate-primary-interop-assemblies-to-build-and-run-projects"></a>Separar assemblies de interoperabilidade primários para compilar e executar projetos
 
 O Visual Studio usa diferentes conjuntos de PIAs no computador de desenvolvimento. Esses diferentes conjuntos de assemblies estão nos seguintes locais:
 
-- Uma pasta no diretório de arquivos de programa
+- Uma pasta no diretório arquivos de programas
 
   Essas cópias de assemblies são usadas ao gravar códigos e compilar projetos. O Visual Studio instala esses assemblies automaticamente.
 
@@ -51,46 +53,46 @@ O Visual Studio usa diferentes conjuntos de PIAs no computador de desenvolviment
 
   Essas cópias de assemblies são usadas durante algumas tarefas de desenvolvimento, tais como ao executar ou depurar projetos. O Visual Studio não instala nem registra esses assemblies. Você deve fazer isso sozinho.
 
-### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Assemblies de interoperabilidade primários no diretório de arquivos de programa
+### <a name="primary-interop-assemblies-in-the-program-files-directory"></a>Assemblies de interoperabilidade primária no diretório arquivos de programas
 
 Quando você instala o Visual Studio, os PIAs são automaticamente instalados em um local no sistema de arquivos, fora do cache de assembly global. Quando você cria um novo projeto, o Visual Studio adiciona automaticamente referências a essas cópias de PIAs ao seu projeto. O Visual Studio usa essas cópias de PIAs, em vez dos assemblies no cache de assembly global, para resolver referências de tipo quando você desenvolve e compila seu projeto.
 
 Essas cópias de PIAs ajudam o Visual Studio a evitar vários problemas de desenvolvimento que podem ocorrer quando diferentes versões de PIAs estão registradas no cache de assembly global.
 
-Começando com o Visual Studio 2017, essas cópias de PIAs são instaladas em locais compartilhados a seguir no computador de desenvolvimento:
+A partir do Visual Studio 2017, essas cópias dos PIAs são instaladas nos seguintes locais compartilhados no computador de desenvolvimento:
 
-- *%ProgramFiles%\Microsoft Studio\Shared\Visual visual Studio Tools for Office\PIA\*
+- *%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\*
 
-- (ou * % ProgramFiles (x86) %\Microsoft Studio\Shared\Visual Visual Studio Tools para Office\PIA\* em sistemas operacionais de 64 bits)
+- (ou *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for\* Office\PIA em sistemas operacionais de 64 bits)
 
 > [!NOTE]
-> Para versões mais antigas do Visual Studio, esses PIAs serão instalados para o Visual Studio Tools para a pasta Office\PIA sob o * a pasta % ProgramFiles % para essa versão do Visual Studio.  
-> Por exemplo: * % ProgramFiles (x86) %\Microsoft 14.0\Visual Studio ferramentas do Visual Studio para Office\PIA\*
+> Para versões mais antigas do Visual Studio, esses PIAs serão instalados no Ferramentas do Visual Studio para a pasta Office\PIA na pasta *% ProgramFiles% para essa versão do Visual Studio.  
+> Por exemplo: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Ferramentas do Visual Studio para Office\PIA\*
 
-### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assemblies de interoperabilidade primários no cache de assembly global
+### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assemblies de interoperabilidade primária no cache de assembly global
 
 Para realizar certas tarefas de desenvolvimento, os PIAs devem ser instalados e registrados no cache de assembly global no computador de desenvolvimento. Normalmente, os PIAs são instalados automaticamente quando você instala o Office no computador de desenvolvimento. Para obter mais informações, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-Os PIAs do Office não são necessários em computadores de usuário final para executar soluções do Office. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
+Os PIAs do Office não são necessários em computadores de usuário final para executar soluções do Office. Para obter mais informações, consulte [design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
 <a name="usingfeatures"></a>
 
-## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Usar recursos de vários aplicativos do Microsoft Office em um único projeto
+## <a name="use-features-of-multiple-microsoft-office-applications-in-a-single-project"></a>Usar recursos de vários aplicativos Microsoft Office em um único projeto
 
 Cada modelo de projeto do Office em Visual Studio é projetado para funcionar com um único aplicativo do Microsoft Office. Para usar recursos em vários aplicativos do Microsoft Office ou usar recursos em um aplicativo ou componente que não tem projeto no Visual Studio, você deve adicionar uma referência aos PIAs necessários.
 
-Na maioria dos casos, você deve adicionar referências aos PIAs são instalados pelo Visual Studio sob o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` directory. Estas versões de assemblies aparecem na **Framework** guia da **Gerenciador de referências** caixa de diálogo. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md).
+Na maioria dos casos, você deve adicionar referências aos pias instalados pelo Visual Studio sob o `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` diretório. Essas versões dos assemblies aparecem na guia **estrutura** da caixa de diálogo **Gerenciador de referências** . Para obter mais informações, confira [Como: Direcione aplicativos do Office por meio de](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)assemblies de interoperabilidade primária.
 
-Se você tiver instalado e registrado os PIAs no cache de assembly global, estas versões de assemblies aparecem na **COM** guia o **Gerenciador de referências** caixa de diálogo. Você deve evitar adicionar referências a essas versões de assemblies, porque alguns problemas de desenvolvimento podem ocorrer ao usá-las. Por exemplo, se você registrou diferentes versões de PIAs no cache de assembly global, seu projeto se associará automaticamente para a versão do assembly que foi registrado por último — mesmo se você especificar uma versão diferente do assembly no  **COM** guia do **Gerenciador de referências** caixa de diálogo.
+Se você tiver instalado e registrado os PIAs no cache de assembly global, essas versões dos assemblies aparecerão na guia **com** da caixa de diálogo **Gerenciador de referências** . Você deve evitar adicionar referências a essas versões de assemblies, porque alguns problemas de desenvolvimento podem ocorrer ao usá-las. Por exemplo, se você tiver registrado versões diferentes dos PIAs no cache de assembly global, seu projeto será automaticamente associado à versão do assembly que foi registrado por último — mesmo se você especificar uma versão diferente do assembly no **com** na caixa de diálogo **Gerenciador de referências** .
 
 > [!NOTE]
-> Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, a referência para o *dll* e *Office* assemblies são adicionados automaticamente quando você adiciona uma referência para o Word, Excel, Outlook, Microsoft Forms ou gráfico assemblies.
+> Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, as referências aos assemblies *Office. dll* e *Microsoft. Vbe. Interop. dll* são adicionadas automaticamente quando você adiciona uma referência aos assemblies do Word, Excel, Outlook, Microsoft Forms ou Graph.
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assemblies de interoperabilidade primários para aplicativos do Microsoft Office
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>Assemblies de interoperabilidade primária para aplicativos Microsoft Office
 
-A tabela a seguir lista os assemblies de interoperabilidade primários que estão disponíveis para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)], [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)].
+A tabela a seguir lista os assemblies de interoperabilidade primários [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] que [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]estão disponíveis para [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)]o e o.
 
 <br/>
 
@@ -110,7 +112,7 @@ A tabela a seguir lista os assemblies de interoperabilidade primários que estã
 |Biblioteca de Objetos do Microsoft Publisher 14.0<br /><br /> Biblioteca de Objetos do Microsoft Publisher 15.0|Microsoft.Office.Interop.Publisher.dll|
 |Biblioteca de Referência de Objetos da Web do Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesigner.dll|
 |Biblioteca de Referência de Objetos de Página do Microsoft SharePoint Designer 14.0|Microsoft.Office.Interop.SharePointDesignerPage.dll|
-|Microsoft Smart Tags 2.0 biblioteca de tipos **Observação:**  As marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
+|Microsoft Smart Tags 2,0 tipo biblioteca de tipos **Observação:**  As marcas inteligentes foram preteridas no [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)] e [!INCLUDE[Word_14_short](../vsto/includes/word-14-short-md.md)].|Microsoft.Office.Interop.SmartTag.dll|
 |Biblioteca de Tipos do Microsoft Visio 14.0<br /><br /> Biblioteca de Tipos do Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.dll|
 |Biblioteca de Tipos Salvar como Web do Microsoft Visio 14.0<br /><br /> Biblioteca de Tipos Salvar como Web do Microsoft Visio 15.0|Microsoft.Office.Interop.Visio.SaveAsWeb.dll|
 |Biblioteca de Tipos de Controle de Desenho do Microsoft Visio 14.0<br /><br /> Biblioteca de Tipos de Controle de Desenho do Microsoft Visio 15.0|Microsoft.Office.Interop.VisOcx.dll|
@@ -119,20 +121,20 @@ A tabela a seguir lista os assemblies de interoperabilidade primários que estã
 
 ### <a name="binding-redirect-assemblies"></a>Assemblies de redirecionamento de associação
 
-Quando você instala e registra os PIAs do Office no cache de assembly global (seja com o Office ou instalando o pacote redistribuível para PIAs), os assemblies de redirecionamento de associação também são instalados apenas no cache de assembly global. Esses assemblies ajudam a garantir que a versão correta dos assemblies de interoperabilidade primários é carregada no tempo de execução.
+Quando você instala e registra os PIAs do Office no cache de assembly global (seja com o Office ou instalando o pacote redistribuível para PIAs), os assemblies de redirecionamento de associação também são instalados apenas no cache de assembly global. Esses assemblies ajudam a garantir que a versão correta dos assemblies de interoperabilidade primários seja carregada em tempo de execução.
 
 Por exemplo, quando uma solução que faz referência ao assembly do [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] é executada em um computador que tem a versão [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] do mesmo assembly de interoperabilidade primário, o assembly de redirecionamento de associação instrui o tempo de execução do [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] para carregar a versão do [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] do assembly de interoperabilidade primário.
 
-Para obter mais informações, confira [Como: Habilitar e desabilitar o redirecionamento de associação automática](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection).
+Para obter mais informações, confira [Como: Habilitar e desabilitar o redirecionamento](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)de associação automática.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Aplicativos do Office de destino por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Como: Direcionar aplicativos do Office por meio de assemblies de interoperabilidade primária](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md)
-- [Soluções InfoPath](../vsto/infopath-solutions.md)
-- [Visão geral de modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)
-- [Soluções PowerPoint](../vsto/powerpoint-solutions.md)
+- [Soluções do InfoPath](../vsto/infopath-solutions.md)
+- [Visão geral do modelo de objeto do Outlook](../vsto/outlook-object-model-overview.md)
+- [Soluções do PowerPoint](../vsto/powerpoint-solutions.md)
 - [Soluções de projeto](../vsto/project-solutions.md)
 - [Visão geral do modelo de objeto do Visio](../vsto/visio-object-model-overview.md)
 - [Visão geral do modelo de objeto do Word](../vsto/word-object-model-overview.md)
-- [Referência geral &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Referência &#40;geral desenvolvimento do Office no Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

@@ -1,6 +1,6 @@
 ---
 title: Soluções do PowerPoint
-ms.date: 02/02/2017
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d2c85a4af986c62d3e3f3c3a3f4333baa2975ee
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 70968682a8221b88859fd561c9f678aced2911b9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926426"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551475"
 ---
 # <a name="powerpoint-solutions"></a>Soluções do PowerPoint
   O Visual Studio fornece modelos de projeto que você pode usar para criar suplementos do VSTO para Microsoft Office PowerPoint. Você pode usar os suplementos do VSTO para automatizar o PowerPoint, estender recursos do PowerPoint ou personalizar a interface do usuário do PowerPoint.
@@ -31,8 +31,7 @@ ms.locfileid: "68926426"
 
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
-> [!NOTE]
-> Interessado em desenvolver soluções que estendam a experiência do Office em [várias plataformas](https://dev.office.com/add-in-availability)? Confira o novo [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Os suplementos do Office têm uma pequena superfície em comparação com os suplementos e soluções do VSTO, e você pode criá-los usando praticamente qualquer tecnologia de programação da Web, como HTML5, JavaScript, CSS3 e XML.
+[!include[Add-ins note](includes/addinsnote.md)]
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") Para ver uma demonstração de vídeo relacionada [, consulte Como fazer: Criar um suplemento para o Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 
