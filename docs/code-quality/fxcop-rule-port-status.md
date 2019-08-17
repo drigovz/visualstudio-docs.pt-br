@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e635f2cbbeda67c4fbed760eb7e57dfcf140d15
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68604873"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551063"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
-Se você usou anteriormente a análise de código estático em uma versão anterior do Visual Studio, talvez esteja imaginando quais dessas regras estão disponíveis na implementação atual como analisadores do [FxCop](install-fxcop-analyzers.md). Esta página lista as regras que são portadas, bem como aquelas que não foram portadas e se há planos para portá-las.
+Se você usou anteriormente a análise de código estático no Visual Studio, talvez esteja imaginando quais dessas regras estão disponíveis na implementação atual como analisadores do [FxCop](install-fxcop-analyzers.md). Esta página lista as regras que são portadas, bem como aquelas que não foram portadas e se há planos para portá-las.
 
 ## <a name="ported-rules"></a>Regras portadas
 
@@ -208,7 +208,7 @@ O conjunto de regras que não foram modeladas para analisadores de [FxCop](insta
 
 ### <a name="rules-that-may-be-ported"></a>Regras que podem ser portadas
 
-As regras de análise de código estático do FxCop a seguir ainda não foram implementadas como analisadores, mas ainda podem ser. Isso pode ser devido a um motivo técnico de bloqueio ou simplesmente que a regra é de prioridade mais baixa. Para obter mais informações sobre o status de porta de cada regra, clique no link na coluna **problema de rastreamento** .
+As seguintes regras de análise herdada do FxCop ainda não foram implementadas como analisadores, mas ainda podem ser. Isso pode ser devido a um motivo técnico de bloqueio ou simplesmente que a regra é de prioridade mais baixa. Para obter mais informações sobre o status de porta de cada regra, clique no link na coluna **problema de rastreamento** .
 
 ID da regra | Problema de acompanhamento
 --- | ---
@@ -271,7 +271,7 @@ ID da regra | Problema de acompanhamento
 
 ### <a name="deprecated-rules"></a>Regras preteridas
 
-As seguintes regras de análise de código estático do FxCop foram preteridas e não serão implementadas como analisadores. Para obter mais informações, você pode pesquisar por ID de regra (por exemplo, **CA1009**) na [página de problemas do GitHub Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
+As seguintes regras de análise herdada do FxCop foram preteridas e não serão implementadas como analisadores. Para obter mais informações, você pode pesquisar por ID de regra (por exemplo, **CA1009**) na [página de problemas do GitHub Roslyn-Analyzers](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port).
 
 - [CA1009](ca1009-declare-event-handlers-correctly.md)
 - [CA1020](ca1020-avoid-namespaces-with-few-types.md)

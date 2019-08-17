@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c77678b1f09b1cf51a63f260252ddeaf9321fd5
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842080"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547561"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Não declarar campos de instância visíveis
 
@@ -32,43 +32,43 @@ ms.locfileid: "65842080"
 
 ## <a name="cause"></a>Causa
 
-Um tipo tem um campo de instância não privado.
+Um tipo tem um campo de instância não privada.
 
-Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O principal uso de um campo deve ser um como um detalhe da implementação. Os campos devem ser `private` ou `internal` e devem ser expostos por meio de propriedades. Ele é tão fácil acessar uma propriedade que ela acessar um campo, e o código nos acessadores de uma propriedade pode alterar como os recursos do tipo expandem sem introduzir alterações significativas. Propriedades que retornam apenas o valor de um campo privado ou interno são otimizadas para executar no mesmo nível de acesso a um campo; muito pouco ganho de desempenho está associado com o uso de campos visíveis externamente em Propriedades.
+O principal uso de um campo deve ser um como um detalhe da implementação. Os campos devem `private` ser `internal` ou devem ser expostos usando propriedades. É tão fácil acessar uma propriedade quanto é acessar um campo, e o código nos acessadores de uma propriedade pode ser alterado à medida que os recursos do tipo se expandem sem introduzir alterações significativas. As propriedades que retornam apenas o valor de um campo privado ou interno são otimizadas para serem executadas em par com o acesso a um campo; um pequeno lucro de desempenho está associado ao uso de campos externos visíveis em Propriedades.
 
-Refere-se visível externamente ao `public`, `protected`, e `protected internal` (`Public`, `Protected`, e `Protected Friend` no Visual Basic) níveis de acessibilidade.
+Externamente visível refere- `public`se aos níveis `protected internal` de`Public`acessibilidade `Protected`, `protected`, `Protected Friend` e (, e em Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, tornar o campo `private` ou `internal` e expô-lo por meio de uma propriedade visível externamente.
+Para corrigir uma violação dessa regra, torne o campo `private` ou `internal` Expor-o usando uma propriedade externamente visível.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra. Campos visíveis externamente não fornecem todos os benefícios que não estão disponíveis para as propriedades. Além disso, os campos públicos não podem ser protegidos por [demandas de Link](/dotnet/framework/misc/link-demands). Consulte [CA2112: Tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md).
+Não suprima um aviso nessa regra. Os campos visíveis externamente não fornecem nenhum benefício que não esteja disponível para propriedades. Além disso, os campos públicos não podem ser protegidos por demandas de [link](/dotnet/framework/misc/link-demands). Consulte [CA2112: Os tipos protegidos não devem expor](../code-quality/ca2112-secured-types-should-not-expose-fields.md)campos.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (Design). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um tipo (`BadPublicInstanceFields`) que viola essa regra. `GoodPublicInstanceFields` mostra o código corrigido.
+O exemplo a seguir mostra um tipo`BadPublicInstanceFields`() que viola essa regra. `GoodPublicInstanceFields`mostra o código corrigido.
 
 [!code-csharp[FxCop.Design.TypesPublicInstanceFields#1](../code-quality/codesnippet/CSharp/ca1051-do-not-declare-visible-instance-fields_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2112: Tipos seguros não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
+- [CA2112: Tipos protegidos não devem expor campos](../code-quality/ca2112-secured-types-should-not-expose-fields.md)
 
 ## <a name="see-also"></a>Consulte também
 

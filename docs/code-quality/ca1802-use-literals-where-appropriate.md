@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: dfa50fc6007c2313191b430e9ed5445e7fd72a88
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841560"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547060"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Usar literais quando apropriado
 
@@ -31,43 +31,43 @@ ms.locfileid: "65841560"
 |NomeDoTipo|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um campo é declarado `static` e `readonly` (`Shared` e `ReadOnly` no Visual Basic) e é inicializada com um valor computável no tempo de compilação.
+Um campo é declarado `static` e `readonly` (`Shared` e `ReadOnly` em Visual Basic) e é inicializado com um valor que é computáveis no momento da compilação.
 
-Por padrão, essa regra olha apenas para campos visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os campos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O valor de um `static readonly` campo é calculado em tempo de execução quando o construtor estático para o tipo declarativo é chamado. Se o `static readonly` campo é inicializado quando ela é declarada e um construtor estático não é declarado explicitamente, o compilador emite um construtor estático para inicializar o campo.
+O valor de um `static readonly` campo é calculado em tempo de execução quando o construtor estático para o tipo declarativo é chamado. Se o `static readonly` campo for inicializado quando for declarado e um construtor estático não for declarado explicitamente, o compilador emitirá um construtor estático para inicializar o campo.
 
-O valor de uma `const` campo é calculado em tempo de compilação e armazenado nos metadados, o que aumenta o desempenho de tempo de execução quando ele é comparado com um `static readonly` campo.
+O valor de um `const` campo é calculado no momento da compilação e armazenado nos metadados, o que aumenta o desempenho do tempo de execução quando ele `static readonly` é comparado a um campo.
 
-Como o valor atribuído ao campo de destino é computável no tempo de compilação, altere a declaração para um `const` campo para que o valor é calculado em tempo de compilação em vez de em tempo de execução.
+Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para `const` um campo para que o valor seja calculado no momento da compilação em vez de em tempo de execução.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, substitua os `static` e `readonly` modificadores com o `const` modificador.
+Para corrigir uma violação dessa regra, substitua os `static` modificadores e `readonly` pelo `const` modificador.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, ou desabilitar a regra, se o desempenho não for uma preocupação.
+É seguro suprimir um aviso dessa regra ou desabilitar a regra, se o desempenho não for preocupante.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1802.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (desempenho). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (desempenho). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um tipo `UseReadOnly`, que viola a regra e um tipo, `UseConstant`, que satisfaz a regra.
+O exemplo a seguir mostra um tipo `UseReadOnly`,, que viola a regra e um tipo, `UseConstant`, que satisfazem a regra.
 
 [!code-vb[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/VisualBasic/ca1802-use-literals-where-appropriate_1.vb)]
 [!code-csharp[FxCop.Performance.UseLiterals#1](../code-quality/codesnippet/CSharp/ca1802-use-literals-where-appropriate_1.cs)]

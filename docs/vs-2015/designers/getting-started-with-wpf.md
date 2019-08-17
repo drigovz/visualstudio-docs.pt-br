@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3e2d314455b8b392c4e2f830101dae76c40e2865
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 3ee37aa03f69a14c5536b61d45df0d3d3785e791
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65704432"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551889"
 ---
 # <a name="getting-started-with-wpf"></a>Introdução ao WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,5 +34,5 @@ O Windows Presentation Foundation (WPF) é uma estrutura de interface do usuári
 ## <a name="see-also"></a>Consulte também  
  [Biblioteca de classes (WPF)](https://msdn.microsoft.com/library/ms753307\(v=vs.100\).aspx)   
  [Visão geral do desenvolvimento de aplicativos](https://msdn.microsoft.com/library/bb613549\(v=vs.100\).aspx)   
- [Central de desenvolvedores do .NET Framework](http://go.microsoft.com/fwlink/?LinkId=187437)   
+ [Central de desenvolvedores do .NET Framework](https://dotnet.microsoft.com/)   
  [Criar modernos aplicativos da área de trabalho com o Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

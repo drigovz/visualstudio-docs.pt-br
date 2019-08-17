@@ -9,21 +9,21 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eeb6f4842bab5586cdea1db8ae2d2dd914c88b3c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d746756bdbb6af5fa9d8758ffb984907e371b119
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825358"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550821"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referência do conjunto de regras da análise de código
 
-Quando você configura a análise de código estático para projetos de código gerenciado no Visual Studio, você pode escolher entre uma lista dos internas *conjuntos de regra*. Você pode usar um desses conjuntos de regra interna, ou você pode [personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para atender às suas necessidades de projeto.
+Quando você configura a análise herdada para projetos de código gerenciado no Visual Studio, pode escolher em uma lista de *conjuntos de regras*internos. Você pode usar um desses conjuntos de regra interna, ou você pode [personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para atender às suas necessidades de projeto.
 
 Os tópicos nesta seção descrevem a regra interna conjuntos e as regras (ou avisos) que eles contêm.
 
 > [!NOTE]
-> Os conjuntos de regras nesta seção referem-se à análise de código estático. Para obter informações sobre conjuntos de regras disponíveis para os pacotes de analisador Roslyn, consulte [usar conjuntos de regras com analisadores de Roslyn](analyzer-rule-sets.md).
+> Os conjuntos de regras nesta seção pertencem à análise herdada. Para obter informações sobre conjuntos de regras disponíveis para pacotes do Code Analyzer, consulte [usar conjuntos de regras com analisadores de código](analyzer-rule-sets.md).
 
 - [Conjunto de regras Todas as Regras](all-rules-rule-set.md)
 - [Conjunto de regras básicas de correção para código gerenciado](basic-correctness-rules-rule-set-for-managed-code.md)

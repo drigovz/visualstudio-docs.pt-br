@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bf16a9edf25132aa8b58702f01563b8d7ccf109a
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 44028caf027191846fa653db06abbe4027fdde8d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841500"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547094"
 ---
 # <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nomes de propriedades não devem corresponder a métodos get
 
@@ -35,40 +35,40 @@ ms.locfileid: "65841500"
 
 ## <a name="cause"></a>Causa
 
-O nome de um membro começa com 'Get' e, caso contrário, corresponde ao nome de uma propriedade. Por exemplo, um tipo que contém um método chamado 'GetColor' e uma propriedade chamada 'Color' causar uma violação de regra.
+O nome de um membro começa com ' Get ' e, caso contrário, corresponde ao nome de uma propriedade. Por exemplo, um tipo que contém um método chamado ' GetColor ' e uma propriedade com o nome ' color ' causa uma violação de regra.
 
-Por padrão, essa regra olha apenas para membros visíveis externamente e propriedades, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina Membros e propriedades visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
 Métodos "Get" e propriedades devem ter nomes que diferenciem claramente a função.
 
-Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Essa consistência reduz o tempo necessário para conhecer uma nova biblioteca de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Essa consistência reduz o tempo necessário para aprender uma nova biblioteca de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Altere o nome para que ele não coincide com o nome de um método que é prefixado com 'Get'.
+Altere o nome para que ele não corresponda ao nome de um método que tenha o prefixo ' Get '.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
 Não suprima um aviso nessa regra.
 
 > [!NOTE]
-> Esse aviso pode ser excluído se o método "Get" é causado pela implementação de interface IExtenderProvider.
+> Esse aviso poderá ser excluído se o método "Get" for causado pela implementação da interface E IExtenderProviderUnk.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1721.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (nomenclatura). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir contém um método e propriedade que violam essa regra.
+O exemplo a seguir contém um método e uma propriedade que violam essa regra.
 
 [!code-csharp[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/CSharp/ca1721-property-names-should-not-match-get-methods_1.cs)]
 [!code-vb[FxCop.Naming.GetMethod#1](../code-quality/codesnippet/VisualBasic/ca1721-property-names-should-not-match-get-methods_1.vb)]

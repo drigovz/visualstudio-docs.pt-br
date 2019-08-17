@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe62c830b7cd3454adbde8b1d3081af11ef1a6b
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: b0d5afd33ffb73c47b0f373f70c56166dbfced6d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841644"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547131"
 ---
 # <a name="ca1725-parameter-names-should-match-base-declaration"></a>CA1725: Nomes de parâmetros devem corresponder à declaração base
 
@@ -32,9 +32,9 @@ ms.locfileid: "65841644"
 
 ## <a name="cause"></a>Causa
 
-O nome de um parâmetro em uma substituição de método não coincide com o nome do parâmetro na declaração de base do método ou o nome do parâmetro na declaração de interface do método.
+O nome de um parâmetro em uma substituição de método não corresponde ao nome do parâmetro na declaração base do método ou ao nome do parâmetro na declaração da interface do método.
 
-Por padrão, essa regra olha apenas para métodos externamente visíveis, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os métodos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -42,18 +42,18 @@ A nomenclatura consistente dos parâmetros em uma hierarquia de substituição a
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, renomeie o parâmetro para corresponder à declaração base. A correção é uma alteração significativa para os métodos visíveis.
+Para corrigir uma violação dessa regra, renomeie o parâmetro para corresponder à declaração base. A correção é uma alteração significativa para métodos visíveis COM.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra, exceto para os métodos visíveis nas bibliotecas que foram enviados anteriormente.
+Não suprimir um aviso dessa regra, exceto para métodos visíveis COM em bibliotecas que foram enviadas anteriormente.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1725.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (nomenclatura). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e6a9b03ce2552e50ebfca8f9e6e2823dee794c20
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 2f427bcdf4ec4e88dcc2842699d738dae7e8e09d
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841772"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69546912"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Sobrecargas de operador têm alternativas nomeadas
 
@@ -28,19 +28,19 @@ ms.locfileid: "65841772"
 |NomeDoTipo|OperatorOverloadsHaveNamedAlternates|
 |CheckId|CA2225|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração Significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
 Uma sobrecarga de operador foi detectada e o método alternativo nomeado esperado não foi encontrado.
 
-Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Sobrecarga de operador permite o uso de símbolos para representar os cálculos para um tipo. Por exemplo, um tipo que sobrecarrega o símbolo de adição (+) para adição normalmente teria um membro alternativo nomeado 'Adicionar'. O membro alternativo nomeado fornece acesso para a mesma funcionalidade que o operador e é fornecido para os desenvolvedores que programem em linguagens que não dão suporte a operadores sobrecarregados.
+A sobrecarga de operador permite o uso de símbolos para representar computações para um tipo. Por exemplo, um tipo que sobrecarrega o símbolo de mais (+) para adição normalmente teria um membro alternativo chamado ' Add '. O membro alternativo nomeado fornece acesso à mesma funcionalidade que o operador e é fornecido para desenvolvedores que programam em idiomas que não dão suporte a operadores sobrecarregados.
 
-Esta regra examina os operadores listados na tabela a seguir.
+Essa regra examina os operadores listados na tabela a seguir.
 
 |C#|Visual Basic|C++|Nome alternativo|
 |---------|------------------|-----------|--------------------|
@@ -48,8 +48,8 @@ Esta regra examina os operadores listados na tabela a seguir.
 |+=|+=|+=|Adicionar|
 |&|e|&|BitwiseAnd|
 |&=|And=|&=|BitwiseAnd|
-|&#124;|Ou|&#124;|BitwiseOr|
-|&#124;=|Or=|&#124;=|BitwiseOr|
+|&#124;|Ou|&#124;|Operadora|
+|&#124;=|Ou =|&#124;=|Operadora|
 |--|N/D|--|Decremento|
 |/|/|/|Divisão|
 |/=|/=|/=|Divisão|
@@ -65,9 +65,9 @@ Esta regra examina os operadores listados na tabela a seguir.
 |<|<|<|Comparar|
 |<=|<=|\<=|Comparar|
 |&&|N/D|&&|LogicalAnd|
-|&#124;&#124;|N/D|&#124;&#124;|LogicalOr|
+|&#124;&#124;|N/D|&#124;&#124;|Operador lógico|
 |!|N/D|!|LogicalNot|
-|%|Mod|%|Mod ou restante|
+|%|Mod|%|Mod ou resto|
 |%=|N/D|%=|Mod|
 |* (binário)|*|*|Multiplicar|
 |*=|N/D|*=|Multiplicar|
@@ -76,16 +76,16 @@ Esta regra examina os operadores listados na tabela a seguir.
 =|N/D|>>=|RightShift|
 |-(binário)|-(binário)|-(binário)|Subtração|
 |-=|N/D|-=|Subtração|
-|true|IsTrue|N/D|IsTrue (propriedade)|
+|true|True|N/D|IsTrue (Propriedade)|
 |-(unário)|N/D|-|Negar|
-|+ (unário)|N/D|+|sinal de adição|
-|false|IsFalse|False|IsTrue (propriedade)|
+|+ (unário)|N/D|+|Acrescido|
+|false|IsFalse|False|IsTrue (Propriedade)|
 
-N/d = = não pode ser sobrecarregado no idioma selecionado.
+N/A = = não pode ser sobrecarregado no idioma selecionado.
 
-A regra também verifica se há operadores de conversão explícita e implícita em um tipo (`SomeType`) através da verificação de métodos chamados `ToSomeType` e `FromSomeType`.
+A regra também verifica os operadores de conversão implícitos e explícitos`SomeType`em um tipo () verificando `FromSomeType`os métodos chamados `ToSomeType` e.
 
-No c#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também estará implicitamente sobrecarregado.
+No C#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também é implicitamente sobrecarregado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -93,28 +93,28 @@ Para corrigir uma violação dessa regra, implemente o método alternativo para 
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra, se você estiver implementando uma biblioteca compartilhada. Aplicativos podem ignorar um aviso nessa regra.
+Não omita um aviso dessa regra se você estiver implementando uma biblioteca compartilhada. Os aplicativos podem ignorar um aviso dessa regra.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca2225.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (uso). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (uso). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir define uma estrutura que viola essa regra. Para corrigir o exemplo, adicione um público `Add(int x, int y)` método à estrutura.
+O exemplo a seguir define uma estrutura que viola essa regra. Para corrigir o exemplo, adicione um método `Add(int x, int y)` público à estrutura.
 
 [!code-csharp[FxCop.Usage.OperatorOverloadsHaveNamedAlternates#1](../code-quality/codesnippet/CSharp/ca2225-operator-overloads-have-named-alternates_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1046: Não sobrecarregar operador equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+- [CA1046: Não sobrecarregar o operador Equals em tipos de referência](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 - [CA2226: Os operadores devem ter sobrecargas simétricas](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
-- [CA2224: Substituir equals ao sobrecarregar operador equals](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
-- [CA2218: Substituir GetHashCode em igualdades de substituição](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+- [CA2224: Substituir Equals no operador de sobrecarga igual a](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)
+- [CA2218: Substituir GetHashCode ao substituir Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 - [CA2231: o operador de sobrecarga é igual ao substituir ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)

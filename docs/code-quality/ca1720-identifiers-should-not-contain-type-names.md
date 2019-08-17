@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c596ddfa36beec696c275ea13b662ceebf8bde2c
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a35bec2395ccec649443df71e87904c71bf635d8
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841793"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547104"
 ---
 # <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identificadores não devem conter nomes de tipos
 
@@ -36,15 +36,15 @@ O nome de um parâmetro em um membro contém um nome de tipo de dados.
 
 - ou -
 
-O nome de um membro contém um nome de tipo de dados específicos de idioma.
+O nome de um membro contém um nome de tipo de dados específico a um idioma.
 
-Por padrão, essa regra olha apenas para membros visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina membros externos visíveis, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Nomes de parâmetros e membros são melhor usados para se comunicar seu significado que to descrevem seu tipo, que deve ser fornecido pelas ferramentas de desenvolvimento. Para nomes de membros, se um nome de tipo de dados deve ser usado, usam um nome independente de linguagem em vez de um idioma específico. Por exemplo, em vez do C# nome do tipo `int`, use o nome do tipo de dados independente de idioma, `Int32`.
+Os nomes de parâmetros e membros são mais usados para comunicar seu significado do que descrever seu tipo, que deve ser fornecido pelas ferramentas de desenvolvimento. Para nomes de membros, se um nome de tipo de dados precisar ser usado, use um nome independente de idioma em vez de um idioma específico. Por exemplo, em vez do C# nome `int`do tipo, use o nome do tipo de dados independente `Int32`de idioma,.
 
-Cada token discreto no nome do parâmetro ou membro é verificado em relação os seguintes nomes de tipo de dados específicos de idioma no diferenciando maiusculas de minúsculas:
+Cada token discreto no nome do parâmetro ou membro é verificado em relação aos seguintes nomes de tipo de dados específicos de idioma em uma maneira que não diferencia maiúsculas de minúsculas:
 
 - Bool
 - WChar
@@ -64,10 +64,10 @@ Cada token discreto no nome do parâmetro ou membro é verificado em relação o
 - Float32
 - Float64
 
-Além disso, os nomes de um parâmetro também são verificados em relação os seguintes nomes de tipo de dados independente de linguagem diferenciando maiusculas de minúsculas:
+Além disso, os nomes de um parâmetro também são verificados em relação aos seguintes nomes de tipos de dados independentes de idioma de maneira não diferencia maiúsculas de minúsculas:
 
-- Objeto
-- obj
+- Object
+- Obj
 - Boolean
 - Char
 - Cadeia de Caracteres
@@ -81,7 +81,7 @@ Além disso, os nomes de um parâmetro também são verificados em relação os 
 - Int64
 - UInt64
 - IntPtr
-- Ptr
+- PTR
 - Ponteiro
 - UInptr
 - UPtr
@@ -93,31 +93,31 @@ Além disso, os nomes de um parâmetro também são verificados em relação os 
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-**Se disparado em relação a um parâmetro:**
+**Se for acionado em um parâmetro:**
 
-Substitua o identificador de tipo de dados no nome do parâmetro com um termo que melhor descreve seu significado ou um termo mais genérico, como 'value'.
+Substitua o identificador de tipo de dados no nome do parâmetro por um termo que melhor descreva seu significado ou um termo mais genérico, como ' value '.
 
-**Se disparado em relação a um membro:**
+**Se for acionado em relação a um membro:**
 
-Substitua o identificador de tipo de dados específicos de idioma no nome do membro com um termo que melhor descreve seu significado, um equivalente independente da linguagem ou um termo mais genérico, como 'value'.
+Substitua o identificador de tipo de dados específico do idioma no nome do membro por um termo que melhor descreva seu significado, um equivalente independente de idioma ou um termo mais genérico, como ' value '.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Uso ocasional de nomes de parâmetro e de membros com base no tipo pode ser apropriado. No entanto, para novos desenvolvimentos, nenhum conhecidos ocorrem de cenários em que você deve suprimir um aviso nessa regra. Para bibliotecas que foram enviados anteriormente, você pode ter que suprimir um aviso nessa regra.
+O uso ocasional do parâmetro baseado em tipo e dos nomes de membros pode ser apropriado. No entanto, para o novo desenvolvimento, nenhum cenário conhecido ocorre onde você deve suprimir um aviso dessa regra. Para bibliotecas que foram enviadas anteriormente, talvez seja necessário suprimir um aviso dessa regra.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1720.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (nomenclatura). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (nomenclatura). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 - [CA1707: Identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719: Nomes de parâmetro não devem corresponder aos nomes de membro](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1719: Nomes de parâmetros não devem corresponder a nomes de membros](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

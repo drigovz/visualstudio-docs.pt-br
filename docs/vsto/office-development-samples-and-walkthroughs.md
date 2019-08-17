@@ -1,6 +1,6 @@
 ---
-title: Instruções passo a passo e exemplos de desenvolvimento do office
-ms.date: 02/02/2017
+title: Exemplos e orientações de desenvolvimento do Office
+ms.date: 08/14/2019
 ms.topic: conceptual
 dev_langs:
 - VB
@@ -20,40 +20,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5ba918ef2d2bdbc35f7e46b6b8553037d3e5d281
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a9a8e71395190647fa7a908949a186c511b24610
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447110"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551674"
 ---
-# <a name="office-development-samples-and-walkthroughs"></a>Instruções passo a passo e exemplos de desenvolvimento do office
-  Esta seção contém exemplos de aplicativos, exemplo de código e orientações passo a passo que ilustram a sintaxe, estrutura e técnicas usadas para criar soluções do Microsoft Office.
+# <a name="office-development-samples-and-walkthroughs"></a>Exemplos e orientações de desenvolvimento do Office
+  Esta seção contém aplicativos de exemplo, código de exemplo e instruções passo a passo que ilustram a sintaxe, a estrutura e as técnicas usadas para criar Microsoft Office soluções.
 
- O código de exemplo destina-se para fins de instrução e não deve ser usado em soluções implantadas sem modificações. Em particular, segurança deve ser levada em consideração maior.
+ O código de exemplo destina-se a fins de instrução e não deve ser usado em soluções implantadas sem modificações. Em particular, a segurança deve ser levada em consideração em mais tempo.
 
- Para obter informações sobre como proteger aplicativos, consulte [soluções do Office Secure](../vsto/securing-office-solutions.md).
+ Para obter informações sobre como proteger aplicativos, consulte [proteger soluções do Office](../vsto/securing-office-solutions.md).
 
-> [!NOTE]
-> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+[!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="in-this-section"></a>Nesta seção
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Exemplos de desenvolvimento do Office](../vsto/office-development-samples.md)|Fornece links para aplicativos de exemplo que ilustram o uso de desenvolvimento do Office e SharePoint no Visual Studio.|
-|[Instruções passo a passo usando o Word](../vsto/walkthroughs-using-word.md)|Lista os guias passo a passo que fornecem uma introdução para as ferramentas de desenvolvimento do Office no Visual Studio e ajudam a ilustrar como você pode integrar o Word em aplicativos comerciais do Office.|
-|[Instruções passo a passo usando o Excel](../vsto/walkthroughs-using-excel.md)|Lista os guias passo a passo que fornecem uma introdução para as ferramentas de desenvolvimento do Office no Visual Studio e ajudam a ilustrar como você pode integrar o Excel em aplicativos comerciais do Office.|
-|[Dados em instruções passo a passo de soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)|Lista os guias passo a passo que ilustram como trabalhar com dados em suas soluções.|
-|[Instruções passo a passo personalização de interface do usuário do Office](../vsto/office-ui-customization-walkthroughs.md)|Lista os guias passo a passo que ilustram como você pode personalizar a interface do usuário (UI) de aplicativos do Microsoft Office.|
-|[Instruções passo a passo de implantação e segurança](../vsto/security-and-deployment-walkthroughs.md)|Lista os guias passo a passo que ilustram como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução.|
+|[Exemplos de desenvolvimento do Office](../vsto/office-development-samples.md)|Fornece links para aplicativos de exemplo que ilustram o uso do desenvolvimento do Office e do SharePoint no Visual Studio.|
+|[Passo a passos usando o Word](../vsto/walkthroughs-using-word.md)|Lista guias passo a passo que fornecem uma introdução às ferramentas de desenvolvimento do Office no Visual Studio e ajudam a ilustrar como você pode integrar o Word ao Office Business Applications.|
+|[Passo a passos usando o Excel](../vsto/walkthroughs-using-excel.md)|Lista guias passo a passo que fornecem uma introdução às ferramentas de desenvolvimento do Office no Visual Studio e ajudam a ilustrar como você pode integrar o Excel ao Office Business Applications.|
+|[Orientações sobre os dados nas soluções do Office](../vsto/data-in-office-solutions-walkthroughs.md)|Lista guias passo a passo que ilustram como trabalhar com dados em suas soluções.|
+|[Passo a passos de personalização da interface do usuário do Office](../vsto/office-ui-customization-walkthroughs.md)|Lista guias passo a passo que ilustram como você pode personalizar a interface do usuário de aplicativos Microsoft Office.|
+|[Orientações de segurança e implantação](../vsto/security-and-deployment-walkthroughs.md)|Lista guias passo a passo que ilustram como você pode definir a política de segurança para permitir que sua solução seja executada e como você pode implantar sua solução.|
 
 ## <a name="related-sections"></a>Seções relacionadas
 
 |Tópico|Descrição|
 |-----------|-----------------|
-|[Introdução ao &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primários do Office e o que há de novo no desenvolvimento do Office.|
-|[Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica como o código gerenciado trabalho de soluções do Office da perspectiva do desenvolvedor e o usuário final e inclui informações sobre como gerenciado código funciona com aplicativos e documentos do Office.|
-|[Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)|Lista as perguntas frequentes sobre a programação com o desenvolvimento do Office no Visual Studio e fornece links para tópicos que podem ajudar a resolver problemas comuns.|
-|[Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)|Fornece links para informações sobre como criar soluções do Microsoft Office e a função dos assemblies em sua solução.|
-|[Visão geral do painel de ações](../vsto/actions-pane-overview.md)|Fornece uma visão geral do painel de tarefas de nível de documento, denominado painel de ações.|
+|[Introdução &#40;ao desenvolvimento do Office no Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)|Fornece links para informações sobre instalação, modelos de projeto, assemblies de interoperabilidade primária do Office e o que há de novo no desenvolvimento do Office.|
+|[Arquitetura de soluções do Office no Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)|Explica como as soluções de código gerenciado do Office funcionam a partir da perspectiva do desenvolvedor e do usuário final e inclui informações sobre como o código gerenciado funciona com documentos e aplicativos do Office.|
+|[Tarefas comuns na programação do Office](../vsto/common-tasks-in-office-programming.md)|Lista perguntas frequentes sobre programação com o desenvolvimento do Office no Visual Studio e fornece links para tópicos que podem ajudar a resolver problemas comuns.|
+|[Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)|Fornece links para informações sobre como criar Microsoft Office soluções e sobre a função de assemblies em sua solução.|
+|[Visão geral do painel Ações](../vsto/actions-pane-overview.md)|Fornece uma visão geral do painel de tarefas em nível de documento chamado painel Ações.|

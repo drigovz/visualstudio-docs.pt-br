@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 25e798dac05213d8f66fe7ba3c7a737a71f6030e
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 491923cb46100e9239b889024ade00022318b6cd
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65842235"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69547698"
 ---
 # <a name="ca1040-avoid-empty-interfaces"></a>CA1040: Evitar interfaces vazias
 
@@ -36,33 +36,33 @@ ms.locfileid: "65842235"
 
 ## <a name="cause"></a>Causa
 
-A interface não declarar membros ou implementar duas ou mais interfaces.
+A interface não declara nenhum membro ou implementa duas ou mais interfaces.
 
-Por padrão, essa regra olha apenas interfaces visíveis externamente, mas isso é [configurável](#configurability).
+Por padrão, essa regra só examina interfaces visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
 As interfaces definem os membros que fornecem um contrato de comportamento ou de uso. A funcionalidade descrita pela interface pode ser adotada por qualquer tipo, independentemente de onde o tipo seja exibido na hierarquia de herança. Um tipo implementa uma interface fornecendo implementações para os membros da interface. Uma interface vazia não define nenhum membro. Portanto, ele não define um contrato que pode ser implementado.
 
-Se seu design incluir vazio devem implementar interfaces tipos, você provavelmente está usando uma interface como um marcador ou uma maneira de identificar um grupo de tipos. Se essa identificação ocorrerá em tempo de execução, a maneira correta de fazer isso é usar um atributo personalizado. Use a presença ou ausência do atributo, ou as propriedades do atributo, para identificar os tipos de destino. Se a identificação deve ocorrer no tempo de compilação, é aceitável usar uma interface vazia.
+Se o design incluir interfaces vazias que devem ser implementadas pelos tipos, você provavelmente está usando uma interface como um marcador ou uma maneira de identificar um grupo de tipos. Se essa identificação ocorrer em tempo de execução, a maneira correta de fazer isso é usar um atributo personalizado. Use a presença ou a ausência do atributo, ou as propriedades do atributo, para identificar os tipos de destino. Se a identificação deve ocorrer no momento da compilação, é aceitável usar uma interface vazia.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Remova a interface ou adicionar membros a ela. Se a interface vazia estiver sendo usado para rotular um conjunto de tipos, substitua a interface com um atributo personalizado.
+Remova a interface ou adicione membros a ela. Se a interface vazia estiver sendo usada para rotular um conjunto de tipos, substitua a interface por um atributo personalizado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, quando a interface é usada para identificar um conjunto de tipos em tempo de compilação.
+É seguro suprimir um aviso dessa regra quando a interface é usada para identificar um conjunto de tipos no momento da compilação.
 
-## <a name="configurability"></a>Capacidade de configuração
+## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra de [analisadores FxCop](install-fxcop-analyzers.md) (e não por meio de análise de código estático), você pode configurar quais partes da sua base de código para executar essa regra, com base na sua acessibilidade. Por exemplo, para especificar que a regra deve ser executado apenas em relação a superfície de API não público, adicione o seguinte par de chave-valor para um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1040.api_surface = private, internal
 ```
 
-Você pode configurar essa opção para apenas essa regra, para todas as regras ou para todas as regras nessa categoria (Design). Para obter mais informações, consulte [analisadores FxCop configurar](configure-fxcop-analyzers.md).
+Você pode configurar essa opção apenas para essa regra, para todas as regras ou para todas as regras nesta categoria (Design). Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="example"></a>Exemplo
 

@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0152ae9f76ea1318f717c41a70d3d46351c9021a
-ms.sourcegitcommit: 2bbcba305fd0f8800fd3d9aa16f7647ee27f3a4b
+ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68300619"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551150"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurar analisadores do FxCop
 
-Os [analisadores do FxCop](install-fxcop-analyzers.md) consistem nas regras mais importantes do "FxCop" da análise de código estático, convertidas em analisadores Roslyn. Você pode configurar analisadores de código do FxCop de duas maneiras:
+Os [analisadores do FxCop](install-fxcop-analyzers.md) consistem nas regras mais importantes do "FxCop" da análise herdada, convertidas em analisadores de código baseados em .net Compiler Platform. Você pode configurar analisadores de código do FxCop de duas maneiras:
 
 - Com um [conjunto de regras](#fxcop-analyzer-rule-sets), que permite habilitar ou desabilitar a regra e definir a severidade para violações de regra individuais.
 
 - A partir da versão 2.6.3 do pacote NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) , por meio de um [arquivo. editorconfig](#editorconfig-file). As [opções configuráveis](fxcop-analyzer-options.md) permitem refinar as partes da base de código a serem analisadas.
 
 > [!TIP]
-> Para obter informações sobre as diferenças entre análise de código estático do FxCop e analisadores do FxCop, consulte [FAQ sobre analisadores do FxCop](fxcop-analyzers-faq.md).
+> Para obter informações sobre as diferenças entre análise herdada e analisadores de FxCop, consulte [FAQ sobre analisadores do FxCop](fxcop-analyzers-faq.md).
 
 ## <a name="fxcop-analyzer-rule-sets"></a>Conjuntos de regras do FxCop Analyzer
 
@@ -42,7 +42,7 @@ O pacote NuGet do FxCop Analyzer inclui conjuntos de regras predefinidos para as
 - segurança
 - uso
 
-Para obter mais informações, consulte [conjuntos de regras para analisadores Roslyn](analyzer-rule-sets.md).
+Para obter mais informações, consulte [conjuntos de regras para analisadores de código](analyzer-rule-sets.md).
 
 ## <a name="editorconfig-file"></a>Arquivo EditorConfig
 
@@ -90,7 +90,7 @@ Você pode compartilhar um arquivo. editorconfig para a configuração do analis
 4. Recarregue o projeto.
 
 > [!NOTE]
-> Você não pode configurar regras do FxCop herdadas (análise de código estático FxCop) usando um arquivo. editorconfig.
+> Não é possível configurar regras do FxCop herdadas usando um arquivo. editorconfig.
 
 ## <a name="option-scopes"></a>Escopos de opção
 
