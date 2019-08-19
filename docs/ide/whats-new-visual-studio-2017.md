@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4fd3bde36b81dde254f3447d46bd05ffc41c6cde
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583272"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925905"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -60,7 +60,7 @@ A alteração mais importante que você verá ao instalar o Visual Studio é a s
 
 Escolha as cargas de trabalho de que você precisa e altere-as quando necessário.
 
- ![Caixa de diálogo de instalação do Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
+![Caixa de diálogo de instalação do Visual Studio 2017](../install/media/install-visual-studio-enterprise.png)
 
 E você também tem opções para ajustar sua instalação:
 
@@ -262,7 +262,7 @@ Para obter mais informações, consulte [Debug live ASP.NET apps using snappoint
 
 A UWP (Plataforma Universal do Windows) é a plataforma de aplicativo do Windows 10. Você pode desenvolver aplicativos para a UWP com apenas um conjunto de APIs, um pacote do aplicativo e um repositório para alcançar todos os dispositivos do Windows 10 &ndash; PC, tablet, smartphone, Xbox, HoloLens, Surface Hub e muito mais. A UWP é compatível com diferentes tamanhos de telas e com uma variedade de modelos de interação, seja uma entrada por toque, um teclado, um controlador de jogos ou uma caneta. No núcleo dos aplicativos da UWP está a ideia de que os usuários desejam que suas experiências sejam móveis em TODOS os dispositivos, e de que eles querem usar o dispositivo mais conveniente ou produtivo para a tarefa em questão.
 
- ![Plataforma Universal do Windows](../cross-platform/media/uwp_coreextensions.png)
+![Plataforma Universal do Windows](../cross-platform/media/uwp_coreextensions.png)
 
 Escolha sua linguagem de desenvolvimento preferencial&mdash;entre C#, Visual Basic, C++ ou JavaScript&mdash;para criar um aplicativo da Plataforma Universal do Windows para dispositivos do Windows 10. O Visual Studio 2017 fornece um modelo de aplicativo da UWP para cada idioma, permitindo que você crie um projeto único para todos os dispositivos. Quando seu trabalho for concluído, você poderá produzir um pacote do aplicativo e enviá-lo à Microsoft Store pelo Visual Studio para divulgar seu aplicativo aos clientes em qualquer dispositivo do Windows 10.
 
@@ -377,11 +377,11 @@ E não se esqueça de conferir nossa versão mais recente, [Visual Studio de 201
 
 Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
 
-Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre as opções de suporte ao produto, confira a página [Fale conosco](talk-to-us.md).
+Se quiser sugerir melhorias para o Visual Studio ou saber mais sobre as opções de suporte ao produto, confira a página [Enviar comentários](feedback-options.md).
 
 ### <a name="report-a-problem"></a>Relatar um problema
 
- Às vezes, uma mensagem não é suficiente para transmitir o impacto total de um problema que você encontrou. Se você tiver um travamento, uma falha ou outro problema de desempenho, será possível compartilhar facilmente conosco as etapas de reprodução e os arquivos de suporte (como capturas de tela e arquivos de despejo de heap e rastreamento) usando a ferramenta **Relatar um Problema**. Para obter mais informações sobre como usar essa ferramenta, consulte a página [Como relatar um problema](how-to-report-a-problem-with-visual-studio.md).
+Às vezes, uma mensagem não é suficiente para transmitir o impacto total de um problema que você encontrou. Se você tiver um travamento, uma falha ou outro problema de desempenho, será possível compartilhar facilmente conosco as etapas de reprodução e os arquivos de suporte (como capturas de tela e arquivos de despejo de heap e rastreamento) usando a ferramenta **Relatar um Problema**. Para obter mais informações sobre como usar essa ferramenta, consulte a página [Como relatar um problema](how-to-report-a-problem-with-visual-studio.md).
 
 ## <a name="see-also"></a>Consulte também
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ebe64bf1e3034230a9697fef0c072fc89ef282
-ms.sourcegitcommit: 3e74ec49a54e5c3da7631f4466128cdf4384af6b
+ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/01/2019
-ms.locfileid: "68711415"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918177"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -169,7 +169,7 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 |**Class**|Agrupa testes pela classe contida.|
 ::: moniker-end
 
-### <a name="group-by-traits"></a>Agrupar por características
+### <a name="traits"></a>Características
 
 Uma característica é geralmente um par de nome/valor de categoria, mas também pode ser uma única categoria. Características podem ser atribuídas aos métodos que são identificados como um método de teste pela estrutura de teste de unidade. Uma estrutura de teste de unidade pode definir categorias de característica. Você pode adicionar valores para as categorias de característica para definir seus próprios pares de nome/valor de categoria. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.
 
@@ -187,7 +187,7 @@ Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, voc�
 
 **Características na Estrutura de Teste da Unidade Microsoft para C++**
 
- Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-microsoft-test-framework-for-cpp.md).
+Consulte [Como usar o Microsoft Unit Testing Framework para C++](how-to-use-microsoft-test-framework-for-cpp.md).
 
 ## <a name="create-custom-playlists"></a>Criar playlists personalizadas
 
@@ -215,7 +215,7 @@ A playlist é aberta em uma nova guia do Gerenciador de Testes. Você pode usar 
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**. 
+**Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
 
 **Para abrir uma playlist**, escolha o ícone da playlist na barra de ferramentas do Visual Studio e selecione no menu um arquivo de playlist salvo anteriormente.
 ::: moniker-end
@@ -229,7 +229,7 @@ Os [grupos](#test-explorer-groups) também estão disponíveis como colunas no G
 
 ### <a name="filter-sort-and-rearrange-test-columns"></a>Filtrar, classificar e reorganizar colunas de testes
 
-É possível filtrar, classificar e reorganizar as colunas. 
+É possível filtrar, classificar e reorganizar as colunas.
 * Para filtrar para características específicas, clique no ícone de filtro na parte superior da coluna Características.
 
   ![Filtro de coluna](../test/media/vs-2019/test-explorer-filter-column-16-2.png)
@@ -302,7 +302,7 @@ Para diagnosticar por que um método de teste está demorando para ser executado
 
 ### <a name="analyze-unit-test-code-coverage"></a>Analisar a cobertura de código de teste de unidade
 
-Você pode determinar a quantidade de seu código de produto que realmente está sendo testado por seus testes de unidade usando a ferramenta de cobertura de código do Visual Studio. Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução.
+É possível determinar a quantidade do código de produto que realmente está sendo testada por seus testes de unidade com a ferramenta de cobertura de código do Visual Studio que está disponível na edição Enterprise do Visual Studio. Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução.
 
 Para executar a cobertura de código para métodos de teste em uma solução:
 
@@ -331,6 +331,8 @@ Testes podem ser executados do **Gerenciador de Testes** clicando com o botão d
 |-|------------------------|
 |TestExplorer.DebugAllTestsInContext|**Ctrl**+**R**, **Ctrl**+**T**|
 |TestExplorer.RunAllTestsInContext|**Ctrl**+**R**, **T**|
+|TestExplorer.RunAllTests|**Ctrl**+**R**, **A**|
+|TestExplorer.RepeatLastRun|**Ctrl**+**R**, **L**|
 
 > [!NOTE]
 > Não é possível executar um teste em uma classe abstrata, porque os testes são apenas definidos nas classes abstratas e não instanciados. Para executar testes em classes abstratas, crie uma classe que deriva da classe abstrata.

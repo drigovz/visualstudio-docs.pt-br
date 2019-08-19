@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 203952f712fb3b28b93d570f99e6d36f56b5f2b5
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63428123"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870283"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
 
@@ -37,7 +37,7 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
  Para o código nativo, as APIs do criador de perfil do Visual Studio estão em *VSPerf.dll*. O arquivo de cabeçalho, *VSPerf.h*, e a biblioteca de importação, *VSPerf.lib*, estão localizados no diretório *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK*.  Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK*
  ::: moniker-end
 
- Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.
+ Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para saber mais, confira [Profiler](/previous-versions/ms242704(v=vs.140)).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Este passo a passo pressupõe que a escolha do ambiente de desenvolvimento está configurada para dar suporte à depuração e amostragem. Os tópicos a seguir fornecem uma visão geral desses pré-requisitos:
@@ -170,7 +170,7 @@ DataCollection.CurrentId);
 
 ## <a name="see-also"></a>Consulte também
 
-- <xref:Microsoft.VisualStudio.Profiler>
+- [Criador de perfil](/previous-versions/ms242704(v=vs.140))
 - [Referência da API do criador de perfil do Visual Studio (nativo)](../profiling/visual-studio-profiler-api-reference-native.md)
 - [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Criar perfil da linha de comando](../profiling/using-the-profiling-tools-from-the-command-line.md)

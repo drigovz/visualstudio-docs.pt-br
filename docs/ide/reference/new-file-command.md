@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d6707d2e9ed8e001762939cb08ffee58f1c1cdc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d7a71a6d313ce12a40cd5c30470f53b1e2a1b69e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950904"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919122"
 ---
 # <a name="new-file-command"></a>Comando Novo Arquivo
 Cria um novo arquivo e abre-o. O arquivo aparece na pasta Arquivos Diversos.
@@ -30,45 +30,43 @@ File.NewFile [filename] [/t:templatename] [/editor:editorname]
 ```
 
 ## <a name="arguments"></a>Arguments
- `filename`
+`filename`
 
- Opcional. Nome para o arquivo. Se nenhum nome for fornecido, será fornecido um nome padrão. Se nenhum nome de modelo for listado, será criado um arquivo de texto.
+Opcional. Nome para o arquivo. Se nenhum nome for fornecido, será fornecido um nome padrão. Se nenhum nome de modelo for listado, será criado um arquivo de texto.
 
 ## <a name="switches"></a>Opções
- /t:`templatename`
+/t:`templatename`\
+Opcional. Especifica o tipo de arquivo a ser criado.
 
- Opcional. Especifica o tipo de arquivo a ser criado.
+A sintaxe do argumento /t:`templatename` espelha as informações encontradas na Caixa de Diálogo Novo Arquivo. Insira o nome da categoria seguido por uma barra invertida (`\`) e o nome do modelo e coloque toda a cadeia de caracteres entre aspas.
 
- A sintaxe do argumento /t:`templatename` espelha as informações encontradas na Caixa de Diálogo Novo Arquivo. Insira o nome da categoria seguido por uma barra invertida (`\`) e o nome do modelo e coloque toda a cadeia de caracteres entre aspas.
-
- Por exemplo, para criar um novo arquivo de origem [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], você inseriria o seguinte para o argumento /t:`templatename`.
+Por exemplo, para criar um novo arquivo de origem [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)], você inseriria o seguinte para o argumento /t:`templatename`.
 
 ```cmd
 /t:"Visual C++\C++ File (.cpp)"
 ```
 
- O exemplo acima indica que o modelo de Arquivo C++ está localizado na categoria no Visual C++ na caixa de diálogo **Novo Arquivo**.
+O exemplo acima indica que o modelo de Arquivo C++ está localizado na categoria no Visual C++ na caixa de diálogo **Novo Arquivo**.
 
- /e:`editorname`
+/e:`editorname`\
+Opcional. Nome do editor no qual o arquivo será aberto. Se o argumento for especificado, mas nenhum nome de editor for fornecido, a caixa de diálogo **Abrir com** será exibida.
 
- Opcional. Nome do editor no qual o arquivo será aberto. Se o argumento for especificado, mas nenhum nome de editor for fornecido, a caixa de diálogo **Abrir com** será exibida.
+A sintaxe do argumento /e:`editorname` usa os nomes de editor como eles são exibidos na Caixa de Diálogo Abrir com, entre aspas.
 
- A sintaxe do argumento /e:`editorname` usa os nomes de editor como eles são exibidos na Caixa de Diálogo Abrir com, entre aspas.
-
- Por exemplo, para abrir um arquivo no editor de código-fonte, insira o seguinte para o argumento /e:`editorname`.
+Por exemplo, para abrir um arquivo no editor de código-fonte, insira o seguinte para o argumento /e:`editorname`.
 
 ```cmd
 /e:"Source Code (text) Editor"
 ```
 
 ## <a name="example"></a>Exemplo
- Este exemplo cria uma nova página da Web "test1.htm" e abre-a no editor de código-fonte.
+Este exemplo cria uma nova página da Web "test1.htm" e abre-a no editor de código-fonte.
 
 ```cmd
 >File.NewFile test1 /t:"General\HTML Page" /e:"Source Code (text) Editor"
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)
 - [Janela Comando](../../ide/reference/command-window.md)

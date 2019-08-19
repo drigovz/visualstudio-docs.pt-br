@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 15888341bf3cc7a4e9f4739ed37283e11c5ce75e
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: a81c1869bf7587aa30dbc02f0e9aec4c97776e5f
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67821400"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68918038"
 ---
 # <a name="installation"></a>Instalação
 
@@ -37,14 +37,14 @@ Você pode fazer o download das ferramentas do [Visual Studio Marketplace](https
 
 ## <a name="prepare-your-local-machine"></a>Preparar seu computador local
 
-Antes de começar a treinar os modelos de aprendizagem profunda em seu computador local, verifique se você tem os pré-requisitos aplicáveis instalados. Isso inclui garantir que você tenha os drivers e as bibliotecas mais recentes para sua GPU NVIDIA (se tiver uma). Verifique também se tem o Python e suas bibliotecas instalados, como NumPy e SciPy, bem como as estruturas de aprendizagem profunda corretas, como o CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer, que você planeja usar em seu projeto.
+Antes de começar a treinar os modelos de aprendizagem profunda em seu computador local, verifique se você tem os pré-requisitos aplicáveis instalados. Isso inclui garantir que você tenha os drivers e as bibliotecas mais recentes para sua GPU NVIDIA (se tiver uma). Verifique também se o Python e suas bibliotecas estão instalados, como NumPy e SciPy, bem como as estruturas de aprendizado profundo corretas que você planeja usar em seu projeto, como CNTK (Microsoft Cognitive Toolkit), TensorFlow, Caffe2, MXNet, Keras, Theano, PyTorch e Chainer.
 
 > [!NOTE]
 > Nas subseções a seguir, a introdução aos software foi extraída de suas páginas iniciais.
 
 ### <a name="nvidia-gpu-driver"></a>Driver da GPU NVIDIA
 
-As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem cartões GPU NVIDIA, clique [aqui](http://www.nvidia.com/Download/index.aspx) ou tente atualizar o sistema operacional para instalar o driver mais recente.
+As estruturas de aprendizagem profunda aproveitam-se da GPU NVIDIA para permitir que computadores aprendam com velocidade, precisão e escala, em direção à verdadeira inteligência artificial. Se o computador tem placas GPU da NVIDIA, confira [Downloads de drivers NVIDIA](http://www.nvidia.com/Download/index.aspx) ou tente uma atualização do sistema operacional para instalar o driver mais recente.
 
 ### <a name="cuda"></a>CUDA
 
@@ -137,11 +137,11 @@ O [Microsoft Cognitive Toolkit](https://cntk.ai) é um kit de ferramentas unific
 > [!NOTE]
 > Atualmente, não há suporte para macOS no CNTK.
 
-Para instalar o pacote em Python no CNTK, veja [como instalar o CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine)
+Para instalar o pacote do CNTK em Python, confira [Como instalar o CNTK](https://docs.microsoft.com/cognitive-toolkit/Setup-CNTK-on-your-machine).
 
 ### <a name="tensorflow"></a>TensorFlow
 
-O [TensorFlow](https://www.tensorflow.org/) é uma biblioteca de software livre para computação numérica que usa grafos de fluxo de dados. Para saber mais detalhes sobre a instalação, clique [aqui](https://www.tensorflow.org/install/).
+O [TensorFlow](https://www.tensorflow.org/) é uma biblioteca de software livre para computação numérica que usa gráficos de fluxo de dados. Para saber mais detalhes sobre a instalação, clique [aqui](https://www.tensorflow.org/install/).
 
 > [!NOTE]
 > A partir da versão 1.2, o TensorFlow não terá mais suporte de GPU para macOS.
@@ -174,7 +174,7 @@ Para instalar o MXNet, execute o seguinte comando em um terminal:
 
 ### <a name="keras"></a>Keras
 
-A [Keras](https://keras.io/) é uma API de redes neurais de alto nível escrita em Python, que pode ser executada sobre o CNTK, o TensorFlow ou o Theano. Ela foi desenvolvida com foco em habilitar uma experimentação rápida. Conseguir passar da ideia para o resultado com o mínimo de atraso é fundamental para uma boa pesquisa.
+[Keras](https://keras.io/) é uma API de redes neurais de alto nível escrita em Python, que pode ser executada sobre o CNTK, o TensorFlow ou o Theano. Ela foi desenvolvida com foco em habilitar uma experimentação rápida. Conseguir passar da ideia para o resultado com o mínimo de atraso é fundamental para uma boa pesquisa.
 
 Para instalar a Keras, execute o seguinte comando em um terminal:
 
@@ -239,7 +239,7 @@ pip3.5 install torchvision
 
 ### <a name="chainer"></a>Chainer
 
-O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele oferece APIs de diferenciação automática baseadas na **abordagem definida pela execução** (conhecida também como grafos computacionais dinâmicos), bem como as APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
+O [Chainer](https://chainer.org/) é uma estrutura de aprendizagem profunda baseada em Python que tem como foco a flexibilidade. Ele fornece APIs de diferenciação automática com base na abordagem de definição por execução (também conhecida como gráficos computacionais dinâmicos), além de APIs de alto nível orientadas a objeto para criar e treinar redes neurais.
 
 Para habilitar o suporte para CUDA, instale o [CuPy](https://github.com/cupy/cupy):
 

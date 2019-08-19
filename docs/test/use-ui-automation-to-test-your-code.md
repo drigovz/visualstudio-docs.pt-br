@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fcf217f2826bf618db2288107fafeff091e6a2bd
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: b0bda0d52a50ef3f92d8cecc4156922779f2af5e
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824700"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926651"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>Use o teste de IU codificado para testar seu código
 
@@ -158,7 +158,7 @@ Se não quiser iniciar e parar o aplicativo, o navegador ou o banco de dados sep
 
 ## <a name="validate-the-properties-of-ui-controls"></a>Validar as propriedades de controles de IU
 
-É possível usar o **Construtor de Teste de IU Codificado** para adicionar um controle de interface do usuário ao <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> para o teste ou gerar código para um método de validação que usa uma asserção para um controle de interface do usuário.
+Use o **Construtor de Teste de Interface do Usuário Codificado** para adicionar um controle de interface do usuário ao [UIMap](/previous-versions/dd580454(v=vs.140)) para o teste, ou gerar código para um método de validação que usa uma declaração para um controle de interface do usuário.
 
 Para gerar declarações para os controles de interface do usuário, escolha a ferramenta **Adicionar Declarações** no **Construtor de Teste de IU Codificado** e arraste-a até o controle no aplicativo em teste que você deseja verificar se está correto. Quando a caixa contornar o controle, solte o mouse. O código da classe de controle é criado imediatamente no arquivo *UIMap.Designer.cs*.
 
@@ -402,10 +402,10 @@ Para obter e definir valores de propriedade específicas de controle de interfac
 
 Com controles que derivam de <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl>, como [HtmlList](xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls.HtmlList) ou [WinComboBox](xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls.WinComboBox), você pode obter ou definir os valores de propriedade diretamente. O código a seguir mostra alguns exemplos:
 
- ```csharp
- int i = myHtmlList.ItemCount;
- myWinCheckBox.Checked = true;
- ```
+```csharp
+int i = myHtmlList.ItemCount;
+myWinCheckBox.Checked = true;
+```
 
 ### <a name="to-get-properties-from-ui-test-controls"></a>Para obter propriedades de controles de teste de IU
 
@@ -455,7 +455,6 @@ Os testes de IU codificados costumam ser usados para automatizar testes manuais.
 
 - [Gravar e reproduzir testes manuais](/azure/devops/test/mtm/record-play-back-manual-tests?view=vsts)
 - [Xamarin.UITest](/appcenter/test-cloud/uitest/)
-- <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Passo a passo: Criar, editar e manter um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
 - [Criar um teste de IU codificado para testar um aplicativo UWP](test-uwp-app-with-coded-ui-test.md)

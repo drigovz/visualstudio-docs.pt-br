@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: aa8ffe308f8a1181ed18af52ba7537c46007de94
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: b235576f21b63a7be4170f36abf58bed9fab9df3
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66317644"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68923873"
 ---
 # <a name="build-an-opengl-es-application-on-android-and-ios"></a>Criar um aplicativo OpenGL ES no Android e iOS
 
@@ -25,7 +25,7 @@ Você pode criar soluções e projetos do Visual Studio para aplicativos iOS e A
 
 ## <a name="requirements"></a>Requisitos
 
-Antes de criar um aplicativo OpenGL ES para iOS e Android, verifique se todos os requisitos do sistema foram atendidos. Se este não for o caso, instale a carga de trabalho do Desenvolvimento Móvel com C++ no Instalador do Visual Studio. Para criar para iOS, inclua as ferramentas opcionais de desenvolvimento de iOS para C++. Para criar para Android, instale as ferramentas de desenvolvimento do Android para C++ e as ferramentas de terceiros necessárias: Android NDK, Apache Ant, Google Android Emulator e Intel Hardware Accelerated Execution Manager. Em seguida, configure o Intel HAXM e o Android Emulator para serem executados no seu sistema. Para saber mais e obter instruções detalhadas, confira [Instalar o Visual C++ para desenvolvimento móvel de plataforma cruzada](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar e testar o aplicativo iOS, você precisará de um computador Mac configurado de acordo com as instruções de instalação. Para saber mais sobre como configurar para desenvolvimento do iOS, confira [Instalar e configurar ferramentas para compilar usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)
+Antes de criar um aplicativo OpenGL ES para iOS e Android, verifique se todos os requisitos do sistema foram atendidos. Se este não for o caso, instale a carga de trabalho do Desenvolvimento Móvel com C++ no Instalador do Visual Studio. Para criar para iOS, inclua as ferramentas opcionais de desenvolvimento de iOS para C++. Para criar para Android, instale as ferramentas de desenvolvimento do Android para C++ e as ferramentas de terceiros necessárias: Android NDK, Apache Ant, Google Android Emulator e Intel Hardware Accelerated Execution Manager. Em seguida, configure o Intel HAXM e o Android Emulator para serem executados no seu sistema. Para saber mais e obter instruções detalhadas, confira [Instalar o Visual C++ para desenvolvimento móvel de plataforma cruzada](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md). Para compilar e testar o aplicativo iOS, você precisará de um computador Mac configurado de acordo com as instruções de instalação. Para saber mais sobre como configurar para desenvolvimento no iOS, confira [Instalar e configurar ferramentas para criação usando o iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md).
 
 ## <a name="create-a-new-opengles-application-project"></a>Criar um projeto de aplicativo OpenGLES
 
@@ -158,7 +158,7 @@ Para implantar um aplicativo iOS em um dispositivo iOS, você também deve confi
 1. Escolha o seu dispositivo iOS na barra de ferramentas para executar o aplicativo no seu dispositivo conectado ao seu Mac. Se o aplicativo não iniciar, verifique se o dispositivo dá permissão para que o aplicativo implantado seja executado no dispositivo. Essa permissão pode ser definida acessando **Configurações** > **Geral** > **Gerenciamento de Dispositivo** no dispositivo. Selecione sua conta de Aplicativo de Desenvolvedor, insira sua conta e verifique o aplicativo. Tente executar o aplicativo novamente no Visual Studio.
 
    ![Aplicativo iOS no dispositivo iOS](../cross-platform/media/cppmdd-opengles-iosdevice.png "CPPMDD_OpenGLES_iOSDevice")
-   
+
    Quando seu aplicativo tiver sido iniciado, você poderá definir pontos de interrupção e usar o depurador do Visual Studio para examinar locais, consultar a pilha de chamadas e inspecionar os valores.
 
    ![Depurador no ponto de interrupção no aplicativo iOS](../cross-platform/media/cppmdd_opengles_iosdebug.png "CPPMDD_OpenGLES_iOSDebug")

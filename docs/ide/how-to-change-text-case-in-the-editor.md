@@ -11,27 +11,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 92e4e5e90e7b808e50f30c3a1d6527cdb7cfb4c2
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 5f01b16971c85a07923783e97f08a8b91512eef6
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605822"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870785"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>Como: Alterar maiúsculas e minúsculas do texto no editor
 
 É possível usar comandos de menu ou atalhos de teclado para converter o padrão de maiúsculas e minúsculas do texto selecionado e deixar todas as letras maiúsculas ou todas as letras minúsculas.
 
 > [!NOTE]
-> As caixas de diálogo e comandos de menu que você vir poderão ser diferentes daqueles descritos neste artigo, que se baseiam nas configurações de desenvolvimento **Gerais**. Para alterar suas configurações de desenvolvimento, escolha **Ferramentas** > **Configurações de Importação e de Exportação** e **Redefinir todas as configurações**.
+> As caixas de diálogo e comandos de menu exibidos podem ser diferentes daqueles descritos neste artigo, que se baseiam nas configurações de ambiente **gerais**. Para alterar suas configurações de ambiente, escolha **Ferramentas** > **Importar e Exportar Configurações** e **Redefinir todas as configurações**.
 
 ## <a name="to-change-text-case"></a>Para alterar a grafia em maiúsculas ou minúsculas do texto
 
 1. Selecione o texto que deseja converter.
 
-2. Para converter o texto e deixar todas as letras maiúsculas, escolha **Editar** > **Avançado** > **Colocar em maiúsculas** ou pressione **Ctrl**+**Shift**+**U**.
+2. Para converter o texto e deixar todas as letras maiúsculas, escolha **Editar** > **Avançado** > **Colocar em Maiúsculas** ou pressione **Ctrl**+**Shift**+**U**.
 
-   Para converter o texto e deixar todas as letras minúsculas, escolha **Editar** > **Avançado** > **Colocar em minúsculas** ou pressione **Ctrl**+**U**.
+   Para converter o texto e deixar todas as letras minúsculas, escolha **Editar** > **Avançado** > **Colocar em Minúsculas** ou pressione **Ctrl**+**U**. (Se você tem a carga de trabalho de desenvolvimento do C++ instalada, essa associação de teclas pode ser usada por um comando diferente.)
 
 > [!TIP]
 > Para reverter para a formatação anterior antes dessa alteração, selecione **Desfazer** no menu **Editar**.

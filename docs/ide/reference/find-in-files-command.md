@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5549bd0047b38ef8f0dff5fa420d4b5ce0ae4ce9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2877057f32ba6553a2cdcefbbc1bb7a8bf2884da
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790255"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919248"
 ---
 # <a name="find-in-files-command"></a>Comando Localizar nos Arquivos
 Pesquise arquivos usando um subconjunto das opções disponíveis na guia **Localizar nos Arquivos** da janela **Localizar e Substituir**.
@@ -32,45 +32,59 @@ Edit.FindinFiles findwhat [/case] [/ext:extensions]
 ```
 
 ## <a name="arguments"></a>Arguments
- `findwhat` Necessário. O texto a ser correspondido.
+
+`findwhat`\
+Necessário. O texto a ser correspondido.
 
 ## <a name="switches"></a>Opções
- /case ou /c Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
+/case ou /c\
+Opcional. As correspondências ocorrerão somente se os caracteres maiúsculos e minúsculos corresponderem exatamente aos especificados no argumento `findwhat`.
 
- /ext: `extensions` Opcional. Especifica as extensões de arquivo para os arquivos a serem pesquisados. Se não forem especificadas, a extensão anterior será usada, caso uma tenha sido inserida.
+/ext: `extensions`\
+Opcional. Especifica as extensões de arquivo para os arquivos a serem pesquisados. Se não forem especificadas, a extensão anterior será usada, caso uma tenha sido inserida.
 
- /lookin: `searchpath` Opcional. Diretório a pesquisar. Se o caminho contiver espaços, coloque todo o caminho entre aspas.
+/lookin: `searchpath`\
+Opcional. Diretório a pesquisar. Se o caminho contiver espaços, coloque todo o caminho entre aspas.
 
- /names ou /n Opcional. Exibe uma lista de nomes de arquivos que contêm correspondências.
+/names ou /n\
+Opcional. Exibe uma lista de nomes de arquivos que contêm correspondências.
 
- /options ou /t Opcional. Exibe uma lista das configurações atuais da opção de localização e não realiza uma pesquisa.
+/options ou /t\
+Opcional. Exibe uma lista das configurações atuais da opção de localização e não realiza uma pesquisa.
 
- /regex ou /r Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações que representam padrões de texto, em vez de caracteres literais. Para obter uma lista completa de caracteres de expressão regular, consulte [Expressões Regulares](../../ide/using-regular-expressions-in-visual-studio.md).
+/regex ou /r\
+Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações que representam padrões de texto, em vez de caracteres literais. Para obter uma lista completa de caracteres de expressão regular, consulte [Expressões Regulares](../../ide/using-regular-expressions-in-visual-studio.md).
 
- /reset ou /e Opcional. Retorna as opções de localização para suas configurações padrão e não realiza uma pesquisa.
+/reset ou /e\
+Opcional. Retorna as opções de localização para suas configurações padrão e não realiza uma pesquisa.
 
- /stop Opcional. Interromperá a operação de pesquisa atual se houver uma em andamento. Pesquisar ignorará todos os outros argumentos quando `/stop` tiver sido especificado. Por exemplo, para interromper a pesquisa atual, você digitaria o seguinte:
+/stop\
+Opcional. Interromperá a operação de pesquisa atual se houver uma em andamento. Pesquisar ignorará todos os outros argumentos quando `/stop` tiver sido especificado. Por exemplo, para interromper a pesquisa atual, você digitaria o seguinte:
 
 ```cmd
 >Edit.FindinFiles /stop
 ```
 
- /sub ou /s Opcional. Procura as subpastas dentro do diretório especificado no argumento /lookin:`searchpath`.
+/sub ou /s\
+Opcional. Procura as subpastas dentro do diretório especificado no argumento /lookin:`searchpath`.
 
- /text2 ou /2 Opcional. Exibe os resultados da pesquisa na janela Localizar Resultados 2.
+/text2 ou /2\
+Opcional. Exibe os resultados da pesquisa na janela Localizar Resultados 2.
 
- /wild ou /l Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações para representar um caractere ou uma sequência de caracteres.
+/wild ou /l\
+Opcional. Usa caracteres especiais predefinidos no argumento `findwhat` como notações para representar um caractere ou uma sequência de caracteres.
 
- /word ou /w Opcional. Pesquisa somente palavras inteiras.
+/word ou /w\
+Opcional. Pesquisa somente palavras inteiras.
 
 ## <a name="example"></a>Exemplo
- Este exemplo procura btnCancel em todos os arquivos .cls localizados na pasta "Meus Projetos do Visual Studio" e exibe as informações de correspondência na Janela Localizar Resultados 2.
+Este exemplo procura btnCancel em todos os arquivos .cls localizados na pasta "Meus Projetos do Visual Studio" e exibe as informações de correspondência na Janela Localizar Resultados 2.
 
 ```cmd
 >Edit.FindinFiles btnCancel /lookin:"c:/My Visual Studio Projects" /ext:*.cls /text2
 ```
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 
 - [Localizar em Arquivos](../../ide/find-in-files.md)
 - [Janela Comando](../../ide/reference/command-window.md)
