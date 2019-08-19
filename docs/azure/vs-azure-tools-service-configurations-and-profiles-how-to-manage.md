@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 353b98ae0ab186a4ff665566a8f3b7600db66274
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b91e2df31ae0e188d0d1e0e3076ab410bf8c2296
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62568987"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68919829"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>Como gerenciar perfis e configurações de serviço
 ## <a name="overview"></a>Visão geral
@@ -96,4 +96,4 @@ Quando você executa o assistente pela primeira vez, um perfil padrão é criado
 5. (Opcional) Selecione **Publicar** para publicar o serviço de nuvem usando as novas configurações. Se você não deseja publicar seu serviço de nuvem no momento e você fecha o Assistente de Publicação, o Visual Studio pergunta se você deseja salvar as alterações feitas ao perfil.
 
 ## <a name="next-steps"></a>Próximas etapas
-Para obter informações sobre como configurar outras partes do seu projeto do Azure do Visual Studio, consulte [Configurando um projeto do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075)
+Para saber como configurar outras partes do projeto do Azure no Visual Studio, confira [Configurar um projeto do Azure](http://go.microsoft.com/fwlink/p/?LinkID=623075).

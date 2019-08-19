@@ -10,9 +10,9 @@
 #### [Visual Studio com o GitHub Enterprise](access-github.md)
 #### Microsoft Partner Network
 ##### [Assinaturas para parceiros](program-mpn.md)
-##### [Gerenciar assinaturas para o MPN](manage-mpn-subscriptions.md)
+##### [Gerenciar assinaturas do MPN](manage-mpn-subscriptions.md)
 #### [Microsoft para startups](program-startups.md)
-### Entrando 
+### Entrar 
 #### [Ativar assinaturas de varejo](activate-store-subscriptions.md)
 #### [Entrar com contas Microsoft](sign-in-msa.md)
 #### [Entrar com contas corporativas ou de estudante](sign-in-work.md)
@@ -21,7 +21,7 @@
 #### [Problemas de conexão](sign-in-issues.md)
 #### [Anonimizações de dados do assinante](anonymization.md)
 ### [Visão geral do portal de assinaturas](using-the-subscriber-portal.md)
-### [Gerenciamento de assinaturas](manage-vs-subscriptions.md)
+### [Gerenciar as suas assinaturas](manage-vs-subscriptions.md)
 ### Benefícios
 #### Ferramentas
 ##### [Crédito Azure](vs-azure.md)

@@ -9,34 +9,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bb9daee86fec058fca68740eaea3b9436e5570d6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a73991702455fab54baf868499634e1a4f5bbf48
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62778535"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870752"
 ---
-# <a name="options-text-editor-f-code-fixes"></a>Opções, Editor de Texto, F#, Correções de Código
+# <a name="options-text-editor--f--code-fixes"></a>Opções: Editor de Texto > F# > Correções de Código
 
-Use a página de opções **Correções de Código** para especificar as configurações que podem ajudar a identificar erros de código e oferecer soluções. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **F#** > **Correções de Código**.
+Use a página de opções Correções de Código para especificar as configurações que podem ajudar a identificar erros de código e oferecer soluções. Para acessar essa página de opções, escolha **Ferramentas** > **Opções** e, em seguida, **Editor de Texto** > **F#**  > **Correções de Código**.
 
 ## <a name="code-fixes"></a>Correções de Código
 
 - **Simplificar nomes (remover qualificadores desnecessários)**
 
-   Se essa caixa de seleção estiver marcada, os nomes totalmente qualificados serão simplificados quando as qualificações não forem necessárias, por exemplo, para um membro de um namespace usado com frequência.
+  Se essa caixa de seleção estiver marcada, os nomes totalmente qualificados serão simplificados quando as qualificações não forem necessárias, por exemplo, para um membro de um namespace usado com frequência.
 
 - **Sempre colocar instruções abertas no nível superior**
 
-   Se essa caixa de seleção estiver marcada e você digitar uma instrução aberta no código, ela será colocada no nível superior.
+  Se essa caixa de seleção estiver marcada e você digitar uma instrução `open` no código, ela será colocada no nível superior.
 
 - **Remover instruções abertas não utilizadas**
 
-   Se essa caixa de seleção estiver marcada, as instruções abertas no arquivo atual que não são usadas serão removidas.
+  Se esta caixa de controle estiver selecionada, os documentos serão analisados ​​para localizar instruções `open` não utilizadas e será exibida uma lâmpada de [Ação Rápida](../quick-actions.md) com uma ação para remover todas as instruções `open` não utilizadas.
 
 - **Analisar e sugerir correções para valores não usados**
 
-   Se essa caixa de seleção for selecionada, a ferramenta reconhecerá um valor que não está sendo usado no código. Depois, se você passar o mouse sobre o valor não usado, ele recomendará maneiras de uso do valor.
+  Se essa caixa de seleção for selecionada, a ferramenta reconhecerá um valor que não está sendo usado no código. Depois, se você passar o mouse sobre o valor não usado, ele recomendará maneiras de uso do valor.
 
 ## <a name="see-also"></a>Consulte também
 

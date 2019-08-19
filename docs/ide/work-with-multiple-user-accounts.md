@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a49f7fe74977495c3e2a99e7311d4349ccd67bd
-ms.sourcegitcommit: 0f5f7955076238742f2071d286ad8e896f3a6cad
+ms.openlocfilehash: a68b22b5a4fedb7d3548ac3aceda7c4dc109bebe
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/25/2019
-ms.locfileid: "68483545"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870865"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 
@@ -33,7 +33,7 @@ Entre no Visual Studio com uma conta da Microsoft ou uma conta organizacional. V
 
 ### <a name="access-your-azure-account-in-server-explorer"></a>Acessar sua conta do Azure no Gerenciador de Servidores
 
-Pressione **Ctrl**+**Alt**+**S** para abrir o **Gerenciador de Servidores**. Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
+Para abrir o Gerenciador de Servidores, escolha **Exibir** > **Gerenciador de Servidores** (ou, se você está usando as [configurações de ambiente](../ide/environment-settings.md) "Geral", pressione **Ctrl**+**Alt**+**S**). Expanda o nó **Azure** e observe que ele contém os recursos disponíveis na conta do Azure associada à conta que você usou para entrar no Visual Studio. Ele é semelhante à seguinte imagem:
 
 ![Gerenciador de Servidores com o nó do Azure expandido](../ide/media/work-with-multiple-user-accounts/server-explorer.png)
 

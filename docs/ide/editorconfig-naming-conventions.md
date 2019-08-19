@@ -1,6 +1,6 @@
 ---
 title: Convenções de nomenclatura do .NET para arquivos EditorConfig
-ms.date: 11/20/2017
+ms.date: 08/07/2019
 ms.topic: reference
 helpviewer_keywords:
 - naming conventions [EditorConfig]
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 048fb4474caae6b7cc81a8c62061e879e7556c58
-ms.sourcegitcommit: 8562a337cc9f674c756a4a0b2c7e288ebd61b51e
+ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/19/2019
-ms.locfileid: "68345696"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957422"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -165,7 +165,8 @@ A tabela a seguir mostra os valores de gravidade permitidos e o que eles signifi
 
 Severidade | Efeito
 ------------ | -------------
-nenhuma ou silenciosa | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
+nenhum | A regra foi completamente suprimida.
+refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
 sugestão | Quando esse estilo não estiver sendo seguido, mostre-o para o usuário como uma sugestão, como pontos subjacentes nos dois primeiros caracteres. Isso não terá nenhum efeito em tempo de compilação.
 warning | Quando esse estilo não estiver sendo seguido, mostre um aviso do compilador na **Lista de Erros**.
 error | Quando esse estilo não estiver sendo seguido, mostre um erro do compilador na **Lista de Erros**.

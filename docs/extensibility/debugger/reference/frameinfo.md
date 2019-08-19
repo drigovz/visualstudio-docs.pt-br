@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1209036bced88cffb3681be0ceedd28942714419
-ms.sourcegitcommit: 40d612240dc5bea418cd27fdacdf85ea177e2df3
+ms.openlocfilehash: eb6a4a9f7408e5bcd03da464bfbc8ade3fa39e7e
+ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66344456"
+ms.lasthandoff: 07/31/2019
+ms.locfileid: "68681092"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 Descreve um quadro de pilha.
@@ -65,49 +65,49 @@ public struct FRAMEINFO {
 
 ## <a name="members"></a>Membros
 `m_dwValidFields`\
-Uma combinação de sinalizadores do [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) enumeração que especifica quais campos são preenchidos.
+Uma combinação de sinalizadores da enumeração [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) que especifica quais campos são preenchidos.
 
 `m_bstrFuncName`\
-O nome da função associado com o quadro de pilhas.
+O nome da função associada ao registro de ativação.
 
 `m_bstrReturnType`\
-O tipo de retorno associado com o quadro de pilha.
+O tipo de retorno associado ao registro de ativação.
 
 `m_bstrArgs`\
-Os argumentos para a função associada com o quadro de pilhas.
+Os argumentos para a função associada ao registro de ativação.
 
 `m_bstrLanguage`\
 O idioma no qual a função é implementada.
 
 `m_bstrModule`\
-O nome do módulo associado com o quadro de pilhas.
+O nome do módulo associado ao quadro da pilha.
 
 `m_addrMin`\
 O endereço de pilha física mínimo.
 
 `m_addrMAX`\
-O endereço físico máximo da pilha.
+O endereço de pilha física máximo.
 
 `m_pFrame`\
-O [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa esse quadro de pilha.
+O objeto [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) que representa esse quadro de pilhas.
 
-`m_pFrame`\
-O [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) objeto que representa o módulo que contém esse quadro de pilhas.
-
-`m_fHasDebugInfo`\
-Diferente de zero (`TRUE`) se houver informações de depuração em determinado quadro.
+`m_pModule`\
+O objeto [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) que representa o módulo que contém esse quadro de pilhas.
 
 `m_fHasDebugInfo`\
-Diferente de zero (`TRUE`) se o registro de ativação está associado com o código que não é mais válido.
+Diferente de zero (`TRUE`) se houver informações de depuração no quadro determinado.
 
-`m_fHasDebugInfo`\
-Diferente de zero (`TRUE`) se o quadro de pilha é anotado pelo Gerenciador de depuração de sessão (SDM).
+`m_fStaleCode`\
+Diferente de zero (`TRUE`) se o registro de ativação estiver associado a um código que não é mais válido.
+
+`m_fAnnotatedFrame`\
+Diferente de zero (`TRUE`) se o registro de ativação for anotado pelo SDM (Gerenciador de depuração de sessão).
 
 ## <a name="remarks"></a>Comentários
-Essa estrutura é passada para o [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) método a ser preenchido. Essa estrutura também está contida em uma lista que está contida na [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface que, por sua vez, é retornado de uma chamada para o [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) método.
+Essa estrutura é passada para o método [GetInfo](../../../extensibility/debugger/reference/idebugstackframe2-getinfo.md) a ser preenchido. Essa estrutura também está contida em uma lista contida na interface [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) que, por sua vez, é retornada de uma chamada para o método [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) .
 
 ## <a name="requirements"></a>Requisitos
-Header: msdbg.h
+Cabeçalho: msdbg. h
 
 Namespace: Microsoft.VisualStudio.Debugger.Interop
 

@@ -3,16 +3,22 @@ title: Entrando no Visual Studio para Mac
 description: Como centrar entrar no Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 04/02/2019
+ms.date: 08/08/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: d3ef047d018d5069cd362af1becfe7c6d778bde7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
+ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692004"
+ms.lasthandoff: 08/12/2019
+ms.locfileid: "68957364"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Entrar no Visual Studio para Mac
+
+Para [ativar sua assinatura](enable-subscription.md), basta fazer login no Visual Studio para Mac. Ao baixar o Visual Studio para Mac, você sempre obtém a edição Community por padrão. Se você tem uma [licença Professional ou Enterprise](https://visualstudio.microsoft.com/vs/compare/), faça login na primeira execução para desbloquear quaisquer recursos adicionais. Além disso, você obtém o seguinte:
+
+* **Acesso ao programa Visual Studio Dev Essentials**: este programa inclui ofertas de software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
+
+* **Conexão automática ao Azure** no IDE sem solicitar credenciais da mesma conta novamente.
 
 Quando você iniciar o Visual Studio para Mac pela primeira vez, será necessário entrar usando uma conta da Microsoft. Use uma conta da Microsoft conectada à licença que você deseja usar. Se você não tiver uma conta da Microsoft, consulte [Como faço para criar uma conta](https://support.microsoft.com/instantanswers/d18cc497-d839-cf50-dea8-f99c95f2bd16/sign-up-for-a-microsoft-account).
 
@@ -20,7 +26,8 @@ Se você optar por não entrar imediatamente, poderá usar uma cópia de avalia�
 
 ## <a name="how-to-sign-in-to-visual-studio-for-mac"></a>Como centrar entrar no Visual Studio para Mac
 
-Verifique se você está conectado à Internet antes de entrar no Visual Studio para Mac. As assinaturas só podem ser ativadas online.
+> [!TIP]
+> Verifique se você está conectado à Internet antes de entrar no Visual Studio para Mac. > As assinaturas só podem ser ativadas online. Se você não está conectado, escolha "Fazer isso mais tarde" e faça login pelo menu quando se conectar.
 
 Para entrar no Visual Studio para Mac, faça o seguinte:
 
@@ -32,11 +39,11 @@ Para entrar no Visual Studio para Mac, faça o seguinte:
 
     ![Caixa de diálogo de credenciais da Microsoft](media/signing-in-image13.png)
 
-    Você não poderá usar as credenciais do Xamarin para entrar no Visual Studio para Mac.
-
 3. Depois de fazer logon, você verá a janela de início do Visual Studio 2019 para Mac. Desse ponto, é possível abrir ou criar um projeto:
 
     ![Você entrou com sucesso](media/signing-in-image14.png)
+
+Como alternativa, use o item de menu **Visual Studio > Entrar...** para entrar e sair a qualquer momento.
 
 ## <a name="adding-multiple-user-accounts"></a>Adicionar várias contas de usuário
 
@@ -45,6 +52,14 @@ O Visual Studio para Mac dá suporte à adição de várias contas a sua conta d
 Para adicionar contas de usuário adicionais, escolha o menu **Visual Studio > Conta...** do Visual Studio para Mac. Clique no botão **Adicionar...** para inserir credenciais de conta adicionais.
 
 ![Gerenciar contas](media/signing-in-image15.png)
+
+## <a name="view-or-change-your-profile-information"></a>Exibir ou alterar as informações do perfil
+
+1. Acesse **Visual Studio > Conta…** e selecione o botão **Meu perfil**.
+
+2. Na janela do navegador, escolha **Editar perfil** e altere as configurações desejadas.
+
+3. Quando terminar, escolha **Salvar alterações**.
 
 ## <a name="see-also"></a>Consulte também
 

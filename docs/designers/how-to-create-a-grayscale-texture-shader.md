@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82e72152fbbd879dc6a1388318b0fc5523f1a918
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4a8e0295864986ad5cfae2f304f5b0f802f2fb12
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62897625"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68924312"
 ---
 # <a name="how-to-create-a-grayscale-texture-shader"></a>Como: Criar um sombreador de textura em escala de cinza
 
@@ -45,7 +45,7 @@ A ilustração a seguir mostra o grafo de sombreador concluído e uma visualiza�
 
 ![Grafo de sombreador e uma versão prévia de seu efeito](../designers/media/digit-grayscale-effect.png)
 
-Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para obter mais informações sobre a visualização de sombreadores no Designer de Sombreador, consulte [Designer de Sombreador](../designers/shader-designer.md)
+Determinadas formas podem fornecer melhores visualizações para alguns sombreadores. Para saber mais sobre a visualização de sombreadores no Designer de Sombreador, confira [Designer de Sombreador](../designers/shader-designer.md).
 
 ## <a name="see-also"></a>Consulte também
 

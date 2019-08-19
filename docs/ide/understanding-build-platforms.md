@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a2c95a460f7e3003db5cdec67e5bf142295719a
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: dbe00e53942827c96831889339f82d2f5e4dff7a
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416935"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68925825"
 ---
 # <a name="understand-build-platforms"></a>Noções básicas sobre plataformas de build
 
@@ -30,9 +30,11 @@ Você pode armazenar versões diferentes de propriedades de solução e de proje
 
 ## <a name="in-this-section"></a>Nesta seção
 
- [Como: configurar projetos a serem direcionados a plataformas](../ide/how-to-configure-projects-to-target-platforms.md) Explica como configurar um projeto para direcionar a uma plataforma específica.
+[Como: configurar projetos destinados a plataformas](../ide/how-to-configure-projects-to-target-platforms.md)\
+Explica como configurar um projeto para se destinar a uma plataforma específica.
 
- [Como: configurar projetos a serem direcionados a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md) Explica como configurar um projeto para direcionar a várias plataformas.
+[Como: configurar projetos destinados a várias plataformas](../ide/how-to-configure-projects-to-target-multiple-platforms.md)\
+Explica como configurar um projeto para se destinar a várias plataformas.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2d97ea90963f70d3a06c669f08473bab27fa08bd
+ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62996235"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68870338"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Como: Usar o SDK de marcadores do visualizador de simultaneidade
 Este tópico mostra como usar o SDK da Visualização Simultânea para criar intervalos e gravar sinalizadores, mensagens e alertas.
@@ -24,17 +24,14 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 2. Adicione uma instrução `include` e uma instrução `using` para o SDK.
 
-    ```C++
-
+    ```cpp
     #include <cvmarkersobj.h>
     using namespace Concurrency::diagnostic;
-
     ```
 
 3. Adicione o código para criar três intervalos na série de marcador padrão e gravar um sinalizador, uma mensagem e um alerta, um para cada intervalo. Os métodos para gravar sinalizadores, mensagens e alertas são membros da classe [marker_series](../profiling/marker-series-class.md). O construtor para a classe [span](../profiling/span-class.md) requer um objeto `marker_series`, de modo que cada intervalo seja associado a uma série de marcador específica. Um `span` termina quando ele é excluído.
 
-    ```C++
-
+    ```cpp
     marker_series series;
     span *flagSpan = new span(series, 1, _T("flag span"));
     series.write_flag(_T("Here is the flag."));
@@ -47,7 +44,6 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
     span *alertSpan = new span(series, 3, _T("alert span"));
     series.write_flag(_T("Here is the alert."));
     delete alertSpan;
-
     ```
 
 4. Na barra de menus, escolha **Analisar**, **Visualização Simultânea**, **Iniciar com Projeto Atual** para executar o aplicativo e exibir a Visualização Simultânea. A ilustração a seguir mostra os três intervalos e os três marcadores na Visualização Simultânea.
@@ -56,8 +52,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 5. Adicione código para criar a série de marcador personalizada adicional chamando o construtor para `marker_series` que aceita um nome de cadeia de caracteres para uma série de marcadores.
 
-    ```C++
-
+    ```cpp
     marker_series flagSeries(_T("flag series"));
     span *flagSeriesSpan = new span(flagSeries, 1, _T("flag span"));
     flagSeries.write_flag(1, _T("flag"));
@@ -71,7 +66,6 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
     // Sleep to even out the display in the Concurrency Visualizer.
     Sleep(50);
     delete messageSeriesSpan;
-
     ```
 
 6. Inicie o projeto atual para exibir Visualização Simultânea. As duas séries de marcador aparecem em suas próprias pistas na Exibição de Threads. A ilustração a seguir mostra os dois novos intervalos.
@@ -84,19 +78,17 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
 2. Adicione uma instrução `using` ou `Imports` ao SDK.
 
-    ```VB
+    ```vb
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
-
     ```
 
     ```csharp
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3. Adicione o código para criar três intervalos na série de marcador padrão e gravar um sinalizador, uma mensagem e um alerta, um para cada intervalo. Crie um objeto <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> chamando o método estático `EnterSpan`. Para escrever a série padrão, use os métodos estáticos de escrita da classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
+3. Adicione o código para criar três intervalos na série de marcador padrão e gravar um sinalizador, uma mensagem e um alerta, um para cada intervalo. Você cria um objeto [Span](/previous-versions/hh694189(v=vs.140)) chamando o método estático `EnterSpan`. Para escrever a série padrão, use os métodos estáticos de escrita da classe [Marcadores](/previous-versions/hh694099(v=vs.140)).
 
-    ```VB
-
+    ```vb
     Dim flagSpan As Span = Markers.EnterSpan("flag span")
     Markers.WriteFlag("Here is the flag.")
     flagSpan.Leave()
@@ -112,11 +104,9 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
     System.Threading.Thread.Sleep(1)
     Markers.WriteAlert("Here is an alert")
     alertSpan.Leave()
-
     ```
 
     ```csharp
-
     Span flagSpan = Markers.EnterSpan("flag span");
     Markers.WriteFlag("Here is the flag.");
     flagSpan.Leave();
@@ -138,7 +128,7 @@ Este tópico mostra como usar o SDK da Visualização Simultânea para criar int
 
      ![Visualização Simultânea com marcadores e alertas](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5. Adicione código para criar a série de marcador do cliente usando o método estático <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. O classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contém métodos para criar spans e escrever sinalizadores, mensagens e alertas.
+5. Adicione código para criar a série de marcador do cliente usando o método estático [CreateMarkerSeries](/previous-versions/hh694171(v=vs.140)). A classe [MarkerSeries](/previous-versions/hh694127(v=vs.140)) contém métodos para criar spans e escrever sinalizadores, mensagens e alertas.
 
     ```VB
 

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: cc7bbf08ac2d020ac058eaa75791e5b733ceab04
+ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445745"
+ms.lasthandoff: 08/09/2019
+ms.locfileid: "68926399"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma do MSBuild
 Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework e em qualquer uma das várias plataformas de sistema. Por exemplo, você pode compilar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado no .NET Framework 4.5 em uma plataforma de 64 bits.
@@ -40,7 +40,7 @@ Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualqu
  Um conjunto de ferramentas juntos coleta as ferramentas, tarefas e destinos que são usados para criar o aplicativo. Um conjunto de ferramentas inclui compiladores como *csc.exe* e *vbc.exe*, o arquivo de destino comum (*microsoft.common.targets*) e o arquivo de tarefas comum (*microsoft.common.tasks*). O 4.5 o conjunto de ferramentas pode ser usado para o destino .NET Framework versões 2.0, 3.0, 3.5, 4 e 4.5. No entanto, o Conjunto de ferramentas 2.0 só pode ser usado para direcionar o .NET Framework versão 2.0. Para obter mais informações, consulte [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 ## <a name="reference-assemblies"></a>Assemblies de referência
- Os assemblies de referência especificados no Conjunto de ferramentas ajudam a projetar e a compilar um aplicativo. Esses assemblies de referência não apenas habilitar uma compilação de destino específico, mas também restringem componentes e recursos no IDE do Visual Studio para aqueles que são compatíveis com o destino. Para saber mais, confira [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md)
+ Os assemblies de referência especificados no Conjunto de ferramentas ajudam a projetar e a compilar um aplicativo. Esses assemblies de referência não apenas habilitar uma compilação de destino específico, mas também restringem componentes e recursos no IDE do Visual Studio para aqueles que são compatíveis com o destino. Para saber mais, confira [Resolver assemblies em tempo de design](../msbuild/resolving-assemblies-at-design-time.md).
 
 ## <a name="configure-targets-and-tasks"></a>Configurar destinos e tarefas
  Você pode configurar destinos do MSBuild e tarefas para execução fora de processo com o MSBuild para que você pode direcionar contextos são consideravelmente diferentes daquele que você estiver executando em.  Por exemplo, você pode direcionar um aplicativo do .NET Framework 2.0 de 32 bits, enquanto o computador de desenvolvimento é executada em uma plataforma de 64 bits com o .NET Framework 4.5. Para saber mais, confira [Configurar destinos e tarefas](../msbuild/configuring-targets-and-tasks.md).
