@@ -1,10 +1,10 @@
 - name: Documentação da análise de código
   href: index.md
-- name: Análise de código para código gerenciado
+- name: Analisar o código gerenciado
   items:
     - name: Visão geral
       href: code-analysis-for-managed-code-overview.md
-    - name: Analisadores da Roslyn (análise de código-fonte)
+    - name: Análise de código
       items:
         - name: Visão geral
           displayName: 'roslyn analyzers, source analysis'
@@ -17,32 +17,32 @@
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Perguntas frequentes
           href: analyzers-faq.md
-    - name: Analisadores binários (análise de código estático)
+    - name: Análise herdada
       items:
         - name: Visão geral
           displayName: 'static code analysis, binary analysis'
           href: static-code-analysis-for-managed-code-overview.md
-        - name: Passo a passo da análise de código estático
+        - name: Passo a passo da análise herdada
           href: walkthrough-analyzing-managed-code-for-code-defects.md
         - name: Migração
           href: fxcop-analyzers.yml
-        - name: Executar análise de código manualmente
+        - name: Executar análise herdada manualmente
           href: how-to-run-code-analysis-manually-for-managed-code.md
         - name: Configuração
           items:
-            - name: Configurar a análise de código para analisadores binários
+            - name: Configurar análise herdada
               href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Habilitar análise de código automática
+            - name: Habilitar análise de código herdado automático
               href: how-to-enable-and-disable-automatic-code-analysis-for-managed-code.md
-            - name: Personalizar o dicionário de análise de código
+            - name: Personalizar o dicionário de análise de código herdado
               href: how-to-customize-the-code-analysis-dictionary.md
         - name: Supressão
           items:
-            - name: Suprimir avisos de análise de código estático para código gerado
+            - name: Suprimir avisos de análise herdada para código gerenciado
               href: how-to-suppress-code-analysis-warnings-for-generated-code.md
-        - name: Erros do aplicativo de análise de código
+        - name: Erros do aplicativo de análise herdada
           items:
-            - name: Erros da política de análise de código
+            - name: Erros da política de análise herdada
               href: code-analysis-policy-errors.md
             - name: Visão geral
               href: code-analysis-application-errors.md
@@ -104,7 +104,7 @@
           items:
             - name: Como criar ou atualizar políticas de check-in
               href: how-to-create-or-update-standard-code-analysis-check-in-policies.md
-            - name: Implementar políticas de check-in de análise de código
+            - name: Implementar políticas de check-in de análise herdada
               href: implementing-custom-code-analysis-check-in-policies-for-managed-code.md
             - name: Impor um código de fácil manutenção
               href: how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy.md
@@ -127,7 +127,7 @@
               href: fxcop-analyzer-options.md
         - name: Perguntas frequentes
           href: fxcop-analyzers-faq.md
-    - name: Migrar da análise estática aos analisadores FxCop
+    - name: Migrar da análise herdada aos analisadores FxCop
       items:
         - name: Visão geral
           href: fxcop-analyzers.yml
@@ -698,6 +698,10 @@
                   href: ca5378.md
                 - name: 'CA5386: Evitar codificar o valor SecurityProtocolType'
                   href: ca5386.md
+                - name: 'CA5397: Não usar valores de SslProtocols preteridos'
+                  href: ca5397.md
+                - name: 'CA5398: Evitar valores de SslProtocols fixos'
+                  href: ca5398.md
             - name: Avisos de uso
               items:
                 - name: Visão geral
@@ -791,7 +795,7 @@
                   href: ca2243-attribute-string-literals-should-parse-correctly.md
             - name: Suspensão automática de recursos
               href: automatic-feature-suspension.md
-- name: Análise de código para C/C++
+- name: Analisar código C/C++
   items:
     - name: Visão geral
       displayName: C++ code analysis
