@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62d11a73d8e8e4510269f73cfb83d946b6ff864b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ec1bdaf421e3976872a3460dc22fecd24b4386b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923993"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585114"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção estendido para código gerenciado
+
 O conjunto de regras de regras de correção estendida da Microsoft maximiza os erros de uso de lógica e de estrutura que são relatados pela análise de código. A ênfase extra é feita em cenários específicos, como interoperabilidade COM e aplicativos móveis. Você deve considerar a inclusão desse conjunto de regras se um desses cenários se aplicar ao seu projeto ou para encontrar problemas adicionais em seu projeto.
 
-O conjunto de regras de regras de correção estendida da Microsoft inclui as regras que estão no conjunto de regras de regras de correção básica da Microsoft. As regras básicas de correção incluem as regras que estão no conjunto de regras do mínimo recomendado pela Microsoft. Para obter mais informações, consulte [regras básicas de exatidão do conjunto de regras para código gerenciado](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) e [regra gerenciada recomendada para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+O conjunto de regras de regras de correção estendida da Microsoft inclui as regras que estão no conjunto de regras [regras de exatidão básicas](../code-quality/basic-correctness-rules-rule-set-for-managed-code.md) , que contém as regras que estão no conjunto de regras [gerenciadas recomendadas](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
 A tabela a seguir descreve todas as regras no conjunto de regras de regras de correção estendida da Microsoft.
 

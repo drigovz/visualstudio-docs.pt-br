@@ -8,15 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b358821705c87767fcb05f45f06b83e8b1e60049
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 77a0878ff3e359a4cca5c52a2ea8118273bbf2a2
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820655"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585252"
 ---
 # <a name="native-minimum-rules-rule-set"></a>Conjunto de regras mínimas nativo
-O Microsoft Native mínimo regras enfocam os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.
+
+As regras mínimas nativas da Microsoft concentram-se nos problemas mais críticos no código nativo, incluindo falhas de segurança e falhas do aplicativo.
+
+Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para projetos nativos.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -68,7 +71,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|
-|[C6527](../code-quality/c6527.md)|Anotação inválida: Propriedade 'NeedsRelease' não pode ser usada em valores do tipo void|
+|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade ' NeedsRelease ' não pode ser usada em valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|
 |[C6551](../code-quality/c6551.md)|Especificação de tamanho inválido: expressão não analisável|
@@ -89,13 +92,13 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Sucesso\_ ou \_nos\_falha\_ usado em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_Êxito\_ ou \_emcaso\_de falha\_ usada em um contexto ilegal|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|O \_uso\_decl\_anotações\_ anotação deve ser usada para fazer referência, sem modificações, uma declaração prévia.|
+|[C28213](../code-quality/c28213.md)|A \_\_anotação usar\_as anotações de decl deve ser usada para fazer referência, sem modificação, de uma declaração anterior.\_|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -137,7 +140,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro\_valor\_ é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_o\_valor\_ da macro é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
@@ -145,7 +148,7 @@ O Microsoft Native mínimo regras enfocam os problemas mais críticos do código
 |[C28286](../code-quality/c28286.md)|Para função, erro de sintaxe perto do fim|
 |[C28287](../code-quality/c28287.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)|
 |[C28288](../code-quality/c28288.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)|
-|[C28289](../code-quality/c28289.md)|Para a função: ReadableTo ou WritableTo não tinha uma especificação de limite como um parâmetro|
+|[C28289](../code-quality/c28289.md)|Para a função: Legível ou Gravávelto não tinha uma especificação de limite como parâmetro|
 |[C28290](../code-quality/c28290.md)|a anotação para função contém mais Externos que o número real de parâmetros|
 |[C28291](../code-quality/c28291.md)|pós null/notnull em deref nível 0 não tem sentido para a função.|
 |[C28300](../code-quality/c28300.md)|Operandos da expressão de tipos incompatíveis para o operador|

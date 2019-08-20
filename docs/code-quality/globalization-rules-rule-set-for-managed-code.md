@@ -8,21 +8,22 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 28199eb9fa09e2096939ffa8e678eb9812a61b1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ffba6b69e1f67b369f3d99c1b54a88448df8a41b
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62816394"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69584986"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>Conjunto de regras de globalização para código gerenciado
-Você pode usar as regras de globalização da Microsoft conjunto de regras para se concentrar em problemas que podem impedir que os dados em seu aplicativo apareça corretamente em diferentes idiomas, localidades e culturas. Você deve incluir essa regra definida se seu aplicativo for localizado, globalizado, ou ambos.
+
+Use o conjunto de regras Microsoft Globalization Rules para se concentrar em problemas que podem impedir que os dados em seu aplicativo sejam exibidos corretamente em diferentes idiomas, localidades e culturas. Você deve incluir esse conjunto de regras se seu aplicativo for localizado, globalizado ou ambos.
 
 |Regra|Descrição|
 |----------|-----------------|
 |[CA1300](../code-quality/ca1300-specify-messageboxoptions.md)|Especificar MessageBoxOptions|
 |[CA1301](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Evitar aceleradores duplicados|
-|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Não embutir no código cadeias de caracteres específicas da localidade|
+|[CA1302](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|Não codificar Cadeias de caracteres específicas de localidade|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Não passar literais como parâmetros localizados|
 |[CA1304](../code-quality/ca1304-specify-cultureinfo.md)|Especificar CultureInfo|
 |[CA1305](../code-quality/ca1305-specify-iformatprovider.md)|Especificar IFormatProvider|
