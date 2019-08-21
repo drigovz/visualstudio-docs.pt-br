@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cf5b486e8298b6438b774481a839c0f6433cdbed
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: b2270caa0cf7db230fa030cb620d51f1677d9dec
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65975898"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585068"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretrizes do design estendido para código gerenciado
 
-O conjunto de regras de regras de diretrizes de Design estendido Microsoft expande as regras de diretrizes de design básico para maximizar os problemas de usabilidade e facilidade de manutenção que são relatados. Ênfase extra é colocado em diretrizes de nomenclatura. Você deve considerar incluindo essa regra definida se seu projeto incluir código de biblioteca ou se você quiser impor os mais altos padrões para escrever código que é fácil de manter.
+O conjunto de regras da regra de diretrizes de design estendido da Microsoft expande as regras básicas de diretriz de design para maximizar os problemas de usabilidade e manutenção relatados. A ênfase extra é feita nas diretrizes de nomenclatura. Você deve considerar a inclusão desse conjunto de regras se seu projeto incluir código de biblioteca ou se você quiser impor os padrões mais altos para escrever código que seja fácil de manter.
 
-As regras de diretrizes de Design estendido incluem todas as regras de diretrizes de Design básica da Microsoft. As regras básicas de diretrizes de Design incluem todas as regras da Microsoft mínimo recomendado. Para obter mais informações, consulte [conjunto de regras de regras básicas de diretrizes de Design para código gerenciado](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) e [gerenciados recomendado conjunto de regras para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md)
+As regras de diretriz de design estendido incluem todas as regras no conjunto de regras [básicas de diretriz de diretrizes de design](../code-quality/basic-design-guideline-rules-rule-set-for-managed-code.md) , que inclui as regras no conjunto de regras gerenciadas [recomendadas](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) .
 
-A tabela a seguir descreve todas as regras no conjunto de regras de regras de diretrizes de Design estendido Microsoft.
+A tabela a seguir descreve todas as regras no conjunto de regras de regra de diretrizes de design estendido da Microsoft.
 
 |Regra|Descrição|
 |----------|-----------------|
@@ -65,7 +65,7 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de di
 |[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Métodos transparentes devem conter apenas a IL verificável|
 |[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
 |[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|O código transparente não deve referenciar itens críticos de segurança|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem atender a LinkDemands|
+|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem satisfazer LinkDemands|
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
