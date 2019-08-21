@@ -162,31 +162,31 @@
           items:
             - name: Visão geral
               href: rule-set-reference.md
-            - name: Todo o conjunto de regras
+            - name: Todas as regras
               href: all-rules-rule-set.md
-            - name: Conjunto de regras de correção básico para código gerenciado
+            - name: Regras básicas de correção
               href: basic-correctness-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras de diretriz do design básico para código gerenciado
+            - name: Regras básicas de diretriz de design
               href: basic-design-guideline-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras de correção estendido para código gerenciado
+            - name: Regras estendidas de correção
               href: extended-correctness-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras de diretrizes do design estendido para código gerenciado
+            - name: Regras estendidas de diretrizes de design
               href: extended-design-guidelines-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras de globalização para código gerenciado
+            - name: Regras de Globalização
               href: globalization-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras mínimas gerenciado para código gerenciado
+            - name: Regras mínimas gerenciadas
               href: managed-minimum-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras recomendadas gerenciado para código gerenciado
+            - name: Regras gerenciadas recomendadas
               href: managed-recommended-rules-rule-set-for-managed-code.md
-            - name: Conjunto de regras mínimas misto
+            - name: Regras mistas mínimas
               href: mixed-minimum-rules-rule-set.md
-            - name: Conjunto de regras recomendadas misto
+            - name: Regras mistas recomendadas
               href: mixed-recommended-rules-rule-set.md
-            - name: Conjunto de regras mínimas nativo
+            - name: Regras nativas mínimas
               href: native-minimum-rules-rule-set.md
-            - name: Conjunto de regras recomendadas nativo
+            - name: Regras nativas recomendadas
               href: native-recommended-rules-rule-set.md
-            - name: Conjunto de regras de segurança para código gerenciado
+            - name: Regras de Segurança
               href: security-rules-rule-set-for-managed-code.md
         - name: Suprimir avisos
           href: in-source-suppression-overview.md
