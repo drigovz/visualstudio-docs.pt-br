@@ -414,6 +414,8 @@
                       href: ide/reference/use-block-body-lambda.md
                     - name: 'Parâmetros, variáveis e atribuições de valor não usados'
                       href: ide/reference/unused-values-parameters.md
+                    - name: Encapsular e alinhar cadeias de chamadas
+                      href: ide/reference/wrap-and-align-call-chains.md
                     - name: 'Encapsular, recuar e alinhar parâmetros'
                       href: ide/reference/wrap-align-indent-parameters.md
                 - name: 'Passo a passo: Gerar código por meio do uso'
