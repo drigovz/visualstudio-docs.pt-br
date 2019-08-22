@@ -350,8 +350,6 @@
                     - name: Visão geral
                       displayName: refactoring
                       href: ide/refactoring-in-visual-studio.md
-                    - name: Adicionar verificações de nulo para todos os parâmetros
-                      href: ide/reference/add-null-checks-for-all-parameters.md
                     - name: Alterar assinatura do método
                       href: ide/reference/change-method-signature.md
                     - name: Converter tipo anônimo em classe
