@@ -1,9 +1,9 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: Migrar de análise binária (FxCop) para análise de código-fonte (analisadores FxCop)
+title: Migrar da análise binária (FxCop) para a análise de origem (analisadores do FxCop)
 metadata:
   title: Documentação de migração do FxCop
-  description: Saiba como mover de análise binária herdado (FxCop) para análise (analisadores FxCop) de origem quando você analisar o código.
+  description: Saiba como mover da análise binária herdada (FxCop) para a análise de origem (analisadores do FxCop) ao analisar o código.
   ms.date: 07/11/2019
   ms.prod: visual-studio-dev16
   ms.technology: vs-ide-code-analysis
@@ -14,10 +14,10 @@ metadata:
   author: gewarren
   manager: jillfra
 abstract:
-  description: Saiba como analisar código pela primeira vez ou migrar de análise binária (FxCop) para a nova maneira de análise de código gerenciado usando a análise de código-fonte (analisadores FxCop).
+  description: Saiba como analisar o código pela primeira vez ou como migrar do FxCop (análise binária) para a nova maneira de analisar o código gerenciado usando a análise de origem (analisadores do FxCop).
   aside:
     image:
-      alt: Logotipo de tarefas de gerenciamento comuns
+      alt: Logotipo de tarefas comuns de gerenciamento
       height: 133
       width: 48
       src: 'https://docs.microsoft.com/media/illustrations/bcs-partner-advanced-management-settings-8.svg'
@@ -25,8 +25,8 @@ abstract:
 sections:
   - title: Perguntas frequentes
     items:
-      - html: Obtenha respostas para algumas <a href="fxcop-analyzers-faq.md">perguntas frequentes</a> sobre as diferenças entre análise binária do FxCop e análise de código-fonte usando analisadores FxCop.
-  - title: Se você estiver familiarizado com a análise de código...
+      - html: Obtenha respostas para algumas <a href="fxcop-analyzers-faq.md">perguntas</a> frequentes sobre as diferenças entre análise binária do FxCop e análise de origem usando analisadores do FxCop.
+  - title: Se você for novo na análise de código...
     items:
       - type: list
         style: cards
@@ -37,51 +37,51 @@ sections:
             html: <p>Saiba quais são os analisadores.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Visão geral de analisadores
+            title: Visão geral dos analisadores
           - href: install-roslyn-analyzers.md
-            html: <p>Saiba como instalar analisadores como um pacote do NuGet ou uma extensão do Visual Studio.</p>
+            html: <p>Saiba como instalar os analisadores como um pacote NuGet ou uma extensão do Visual Studio.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Instalar analisadores
           - href: use-roslyn-analyzers.md
-            html: '<p>Saiba como usar os analisadores e suprimir violações para C# ou código do Visual Basic.</p>'
+            html: '<p>Saiba como usar analisadores e suprimir violações para C# ou Visual Basic código.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_config-tools.svg'
-            title: Definir a gravidade da regra e suprimir erros
+            title: Definir a severidade da regra e suprimir erros
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: <p>Saiba como usar os analisadores da linha de comando.</p>
+            html: <p>Saiba como usar os analisadores na linha de comando.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Uso de linha de comando
-  - title: Se você estiver usando a análise binária (FxCop)...
+            title: Uso da linha de comando
+  - title: Se você estiver usando a análise de binários (FxCop)...
     items:
       - type: list
         style: cards
         className: cardsM
         columns: 2
         items:
-          - href: 'roslyn-analyzers-overview.md#roslyn-analyzers-vs-static-code-analysis'
-            html: <p>Aprenda as diferenças entre a análise de binário (FxCop) e análise de código-fonte (analisadores FxCop).</p>
+          - href: 'roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis'
+            html: <p>Aprenda as diferenças entre análise binária (FxCop) e análise de origem (analisadores de FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_learn-about.svg'
-            title: Qual é a diferença?
+            title: O que é diferente?
           - href: install-fxcop-analyzers.md
-            html: <p>Saiba como instalar o pacote de analisador do FxCop.</p>
+            html: <p>Saiba como instalar o pacote do FxCop Analyzer.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_setup.svg'
             title: Instalar analisadores do FxCop
           - href: fxcop-rule-port-status.md
-            html: <p>Lista as regras de análise binária (FxCop) que foram portadas para análise de código-fonte (analisadores FxCop).</p>
+            html: <p>Lista as regras de análise binária (FxCop) que foram transportadas para análise de origem (analisadores de FxCop).</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_upgrade.svg'
-            title: Regras de porta e unported License
+            title: Regras portadas e não portadas
           - href: 'use-roslyn-analyzers.md#command-line-usage'
-            html: '<p>Se você normalmente pode executar a análise de código da linha de comando, saiba como usar os analisadores da linha de comando.</p>'
+            html: '<p>Se você normalmente executa a análise de código na linha de comando, saiba como usar os analisadores da linha de comando.</p>'
             image:
               src: 'https://docs.microsoft.com/media/common/i_cligeneric.svg'
-            title: Uso de linha de comando
+            title: Uso da linha de comando
           - href: analyzer-rule-sets.md
-            html: <p>Saiba mais sobre conjuntos de regras do pacote de analisador.</p>
+            html: <p>Saiba mais sobre os conjuntos de regras do pacote do Analyzer.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
             title: Conjuntos de regras
@@ -93,12 +93,12 @@ sections:
         columns: 2
         items:
           - href: code-analysis-for-c-cpp-overview.md
-            html: <p>Saiba como executar a análise de código em código C++ nativo. Análise de código C++ gerenciado foi preterido.</p>
+            html: <p>Saiba como executar a análise de código em C++ código nativo. A análise do C++ código gerenciado foi preterida.</p>
             image:
               src: 'https://docs.microsoft.com/media/logos/logo_Cplusplus.svg'
             title: Análise de código C++
           - href: code-metrics-values.md
-            html: <p>Saiba como obter métricas de código. A experiência do usuário para as métricas de código permanece inalterada.</p>
+            html: <p>Saiba como obter métricas de código. A experiência do usuário para métricas de código permanece inalterada.</p>
             image:
               src: 'https://docs.microsoft.com/media/common/i_data-collection.svg'
             title: Métricas de código
