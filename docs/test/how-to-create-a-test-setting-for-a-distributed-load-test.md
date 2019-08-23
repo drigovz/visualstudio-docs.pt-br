@@ -8,14 +8,14 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0f947d8a4994c8a515a707f34a07065358194e09
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950187"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490681"
 ---
-# <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como: Criar uma configuração de teste para um teste de carga distribuída
+# <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>Como: criar um arquivo de configurações do teste para um teste de carga distribuído
 
 Defina *configurações de teste* para seus testes de carga para que você possa distribuir esses testes entre vários computadores usando agentes e controladores de teste. Também é possível definir configurações de teste para usar *adaptadores de dados de diagnóstico*, que especificam os tipos de dados que você deseja coletar ou como afetar os computadores de teste quando você executa testes de carga com o Visual Studio.
 
@@ -33,15 +33,13 @@ As configurações de teste do Visual Studio são armazenadas em um arquivo. As 
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
-Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste.**
+Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste. **
 
 O controlador de teste terá agentes que podem ser usados para cada função nas configurações de teste. Para obter mais informações sobre controladores e agentes de teste, confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
 Siga estas etapas para criar e remover configurações de teste em sua solução para testes de carga que você pretende executar do Visual Studio.
 
-## <a name="create-a-test-setting-for-a-distributed-load-test"></a>Criar uma configuração de teste para um teste de carga distribuída
-
-### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Para adicionar configurações de teste para um teste de carga distribuído
+## <a name="create-a-test-settings-file"></a>Criar um arquivo de configurações do teste
 
 1. Na **Gerenciador de Soluções**, clique com o botão direito do mouse em **Itens da Solução**, aponte para **Adicionar** e, em seguida, escolha **Novo Item**.
 
@@ -55,15 +53,9 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      O novo arquivo de configurações de teste é exibido no **Gerenciador de Soluções**, na pasta **Itens da Solução**.
 
-    > [!NOTE]
-    > A lista de configurações de teste que o Visual Studio Enterprise exibe é derivada da lista de arquivos de configurações de teste na pasta **Itens de Solução**. Por exemplo, os arquivos de configurações de teste da pasta **Itens da Solução** são exibidos quando você usa a opção **Selecionar Configurações de Teste Ativo** no menu **Testar**. Isso significa que se você mover um arquivo de configurações de teste para outro local na sua hierarquia de solução, ele não poderá mais ser usado como uma configuração de teste no ambiente de desenvolvimento integrado do Visual Studio.
-
 5. A caixa de diálogo **Configurações de Teste** é exibida. A página **Geral** está selecionada.
 
      Agora você pode editar e salvar valores das configurações de teste.
-
-    > [!NOTE]
-    > Cada configuração de teste que você cria é listada como uma escolha para as opções **Selecionar Configurações de Teste Ativo** e **Editar Configurações de Teste** no menu **Teste**.
 
 6. Em **Nome**, digite o nome das configurações de teste.
 
@@ -154,9 +146,9 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      A página **Scripts de Instalação e Limpeza** é exibida.
 
-    1. Digite o local do arquivo de script em **Script de instalação** ou escolha as reticências (**…**) para localizar o script de instalação.
+    1. Digite o local do arquivo de script em **Script de instalação** ou escolha as reticências ( **…** ) para localizar o script de instalação.
 
-    2. Digite o local do arquivo de script em **Script de limpeza** ou escolha as reticências (**…**) para localizar o script de limpeza.
+    2. Digite o local do arquivo de script em **Script de limpeza** ou escolha as reticências ( **…** ) para localizar o script de limpeza.
 
 24. Para executar testes usando um host diferente, escolha **Hosts**.
 
@@ -182,14 +174,11 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
 28. Para salvar as configurações de teste, escolha **Salvar como**. Digite o nome do arquivo que você deseja em **Nome do objeto**.
 
-    > [!NOTE]
-    > Se você deve alterar suas configurações de teste, escolha **Testar** e então escolha **Editar Configurações de Teste** e aponte para as configurações de teste criadas.
-
-### <a name="to-remove-a-test-settings-from-your-solution"></a>Para excluir configurações de teste de sua solução
+## <a name="remove-a-test-settings-file-from-your-solution"></a>Remover um arquivo de configurações do teste da solução
 
 Na pasta **Itens da Solução** no **Gerenciador de Soluções**, clique com o botão direito do mouse nas configurações de teste que deseja remover e, em seguida, escolha **Remover**.
 
-O arquivo de configurações de teste é removido de sua solução. Essa alteração é refletida na lista de opções de **Selecionar Configurações de Teste Ativo** e **Editar Configurações de Teste** no menu **Teste**.
+O arquivo de configurações de teste é removido de sua solução.
 
 ## <a name="see-also"></a>Consulte também
 
