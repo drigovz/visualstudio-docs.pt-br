@@ -11,14 +11,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: cae7a02c774773d08c287dde7df59ff62fdbec58
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: 2d4a9bfca972f9c57688b19bd872b31ee5997f76
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533350"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69550769"
 ---
-# <a name="overview-of-net-compiler-platform-analyzers"></a>Visão geral dos analisadores do .NET Compiler Platform
+# <a name="overview-of-net-compiler-platform-code-analyzers"></a>Visão geral dos analisadores de código do .NET Compiler Platform
 
 Os analisadores da .NET Compiler Platform ("Roslyn") analisam seu código quanto a estilo, qualidade e facilidade de manutenção, design e outras questões. O Visual Studio inclui um conjunto interno de analisadores que analisam o código C# e Visual Basic durante a digitação. Configure as preferências para esses analisadores internos na página [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) ou em um [arquivo .editorconfig](../ide/editorconfig-code-style-settings-reference.md). Instale outros analisadores como uma extensão do Visual Studio ou como um pacote NuGet.
 
@@ -28,33 +28,33 @@ Muitas regras do analisador ou *diagnósticos* têm uma ou mais *correções de 
 
 ![Violação do analisador e correção de código de Ação Rápida](../code-quality/media/built-in-analyzer-code-fix.png)
 
-## <a name="roslyn-analyzers-vs-static-code-analysis"></a>Analisadores do Roslyn vs. análise de código estático
+## <a name="net-compiler-platform-based-analysis-versus-legacy-analysis"></a>Análise baseada no .NET Compiler Platform versus análise herdada
 
-Os Analisadores do .NET Compiler Platform ("Roslyn") substituirão eventualmente a [análise de código estático](../code-quality/code-analysis-for-managed-code-overview.md) por código gerenciado. Muitas das regras de análise de código estático já foram reescritas como diagnóstico de analisador do Roslyn.
+Eventualmente, a análise de código do "Roslyn" (.NET Compiler Platform) substituirá a [análise herdada](../code-quality/code-analysis-for-managed-code-overview.md) por códigos gerenciados. Muitas das regras de análise herdada já foram reescritas como analisadores de código baseados no .NET Compiler Platform.
 
-Como violações de regra de análise de código estático, as violações de analisador do Roslyn são exibidas na **Lista de Erros**. Além disso, as violações de analisador do Roslyn também são mostradas no editor de códigos, como *linhas onduladas* abaixo do código transgressor. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A captura de tela a seguir mostra três violações&mdash;uma vermelha, uma verde e uma cinza:
+Assim como as violações de regras das análises herdadas, as violações de análise de código baseadas no .NET Compiler Platform aparecem na janela da Lista de Erros do Visual Studio. Além disso, as violações de análise de código baseadas no .NET Compiler Platform também são mostradas no editor de códigos como *linhas onduladas* abaixo do código com a vioalção. A cor da linha ondulada depende da [configuração de gravidade](../code-quality/use-roslyn-analyzers.md#rule-severity) da regra. A captura de tela a seguir mostra três violações&mdash;uma vermelha, uma verde e uma cinza:
 
 ![Linhas onduladas no editor de códigos](media/diagnostics-severity-colors.png)
 
-Os analisadores do Roslyn analisam código em tempo de build, como análise de código estático, se habilitada, mas também em tempo real conforme você digita. Se você habilitar [análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), os analisadores do Roslyn também fornecerão análise em tempo de design dos arquivos de código que não estão abertos no editor.
+Os analisadores de código baseados do .NET Compiler Platform analisam código em tempo de build, como a análise herdada, se habilitada, mas também em tempo real, à medida que você digita. Se você habilitar a [análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), os analisadores de código também fornecerão análise em tempo de design dos arquivos de código que não estão abertos no editor.
 
 > [!TIP]
-> Erros e avisos de tempo de build de analisadores do Roslyn serão mostrados apenas se os analisadores estiverem instalados como um pacote NuGet.
+> Erros e avisos de tempo de build dos analisadores de código serão mostrados apenas se os analisadores estiverem instalados como um pacote NuGet.
 
-Os analisadores do Roslyn não só comunicam os mesmos tipos de problemas que a análise de código estático, mas também facilitam a correção de uma ou todas as ocorrências da violação no seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, elas são implementadas como [Ações rápidas](../ide/quick-actions.md). Nem todos os diagnósticos do analisador têm uma correção de código associada.
+Os analisadores de código baseados no .NET Compiler Platform não só comunicam os mesmos tipos de problemas que a análise herdada, mas também facilitam a correção de uma ou todas as ocorrências da violação em seu arquivo ou projeto. Essas ações são denominadas *correções de código*. As correções de código são específicas do IDE; no Visual Studio, elas são implementadas como [Ações rápidas](../ide/quick-actions.md). Nem todos os diagnósticos do analisador têm uma correção de código associada.
 
 > [!NOTE]
-> As seguintes opções da interface do usuário se aplicam somente à análise de código estático:
+> As seguintes opções da interface do usuário se aplicam somente à análise herdada:
 >
 > - A opção de menu **Analisar** > **Executar Análise de Código**.
-> - As caixas de seleção **Habilitar análise de código no build** e **Suprimir resultados do código gerado** na guia **Análise de Código** das páginas de propriedades de um projeto (essas opções não têm efeito nos analisadores do Roslyn).
+> - As caixas de seleção **Habilitar análise de código no build** e **Suprimir resultados do código gerado** na guia **Análise de código** das páginas de propriedades de um projeto.
 
-Para diferenciar entre as violações de analisadores do Roslyn e análise de código estático na **Lista de Erros**, examine a coluna **Ferramenta**. Se o valor Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções**, por exemplo **Microsoft.CodeQuality.Analyzers**, a violação será proveniente de um analisador do Roslyn. Caso contrário, a violação será proveniente da análise de código estático.
+Para diferenciar entre as violações dos analisadores de código e da análise herdada na janela da Lista de Erros, examine a coluna **Ferramenta**. Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
 
 ![Coluna Ferramenta na Lista de Erros](media/code-analysis-tool-in-error-list.png)
 
 > [!TIP]
-> A propriedade msbuild **RunCodeAnalysis** em um arquivo de projeto se aplica somente à análise de código estático. Se você instalar analisadores, defina **RunCodeAnalysis** como **false** no seu arquivo de projeto para evitar que a análise de código estático seja executada após a compilação.
+> A propriedade **RunCodeAnalysis** do msbuild em um arquivo de projeto se aplica somente à análise herdada. Se você instalar analisadores, defina **RunCodeAnalysis** como **false** no arquivo de projeto para evitar que a análise herdada seja executada após o build.
 >
 > ```xml
 > <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -91,13 +91,13 @@ Veja a seguir os diferentes tipos de analisador que ajudam a analisar o código:
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Instalar Analisadores do Roslyn no Visual Studio](../code-quality/install-roslyn-analyzers.md)
+> [Instalar analisadores de código no Visual Studio](../code-quality/install-roslyn-analyzers.md)
 
 > [!div class="nextstepaction"]
-> [Usar Analisadores do Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Usar analisadores de código no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
-- [Escrever seu próprio analisador do Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
+- [Gravar seu próprio analisador de código](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [SDK do .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)

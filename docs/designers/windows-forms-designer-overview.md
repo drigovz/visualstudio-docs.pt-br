@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8280a60f1d265336d427079bdef6612b42ed4330
-ms.sourcegitcommit: 6b0503ed8d25454d6e39a8e606910b3fa58cf1d2
+ms.openlocfilehash: 0df8b7ec5955f472d716af2850d2ab0b776c6552
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "68981632"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585336"
 ---
 # <a name="windows-forms-designer-overview"></a>Visão geral do Designer de Formulários do Windows
 
@@ -39,7 +39,7 @@ Usando o designer, é possível:
 
 - [Visão geral do Windows Forms](/dotnet/framework/winforms/windows-forms-overview)
 - [Controles do Windows Forms](/dotnet/framework/winforms/controls/)
-- [Acessibilidade para controles do Windows Forms](/dotnet/framework/winforms/controls/providing-accessibility-information-for-controls-on-a-windows-form)
 - [Entrada do usuário no Windows Forms](/dotnet/framework/winforms/user-input-in-windows-forms)
 - [Associação de dados no Windows Forms](/dotnet/framework/winforms/windows-forms-data-binding)
 - [Aprimorar aplicativos do Windows Forms](/dotnet/framework/winforms/advanced/)
+- <xref:System.Windows.Forms?displayProperty=fullName> Referência de API

@@ -1,6 +1,6 @@
 ---
 title: Perguntas Frequentes sobre o Gerenciador de Testes
-ms.date: 11/07/2018
+ms.date: 08/14/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Test Explorer
@@ -14,16 +14,16 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: 0dda73a4bbea2813131cc0695655eed7ea3409ca
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
+ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661991"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551866"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
-
 ::: moniker range=">=vs-2019"
+
 ## <a name="where-is-group-by-traits-in-visual-studio-2019"></a>Onde está o agrupamento por características no Visual Studio 2019?
 Esse agrupamento por características foi movido para uma coluna. Com a hierarquia personalizável e de várias camadas no Visual Studio 2019 versão 16.2, pensamos que incluir características como um agrupamento resultou em uma complexidade visual desnecessária. Estamos atentos e receptivos a comentários sobre esse design! https://developercommunity.visualstudio.com/content/problem/588029/no-longer-able-to-group-by-trait-in-test-explorer.html
 
@@ -31,38 +31,43 @@ Por enquanto, você pode clicar com o botão direito do mouse na coluna no Geren
 
 ![Exibir a coluna de características](media/vs-2019/trait-column.png)
 ![Filtrar a coluna de características](media/vs-2019/trait-column-filter.png)
-
 ::: moniker-end
 
 ## <a name="dynamic-test-discovery"></a>Detecção de testes dinâmica
 
 **O Gerenciador de Testes não está detectando meus testes definidos dinamicamente. (Por exemplo, teorias, adaptadores personalizados, características personalizadas, #ifdefs, etc.) Como faço para descobrir estes testes?**
 
-Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Teste**.
-
+::: moniker range=">=vs-2019"
+Crie seu projeto para executar a descoberta baseada em assembly.
+::: moniker-end
+::: moniker range="vs-2017"
+Compile o projeto e verifique se a descoberta baseada em assembly está ativada em **Ferramentas** > **Opções** > **Testar**.
+::: moniker-end
 A [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824) é a detecção de testes baseada na origem. Ela não consegue detectar testes que usam teorias, adaptadores personalizados, características personalizadas, instruções `#ifdef`, entre outros, porque esses itens são definidos em tempo de execução. Um build é necessário para que esses testes sejam localizados com precisão. No Visual Studio 2017 versão 15.6 e posteriores, a descoberta baseada em assembly (o detector tradicional) é executada somente depois dos builds. Essa configuração significa que a detecção de testes em tempo real localiza o máximo de testes possível enquanto você está editando e a descoberta baseada em assembly permite que os testes definidos dinamicamente apareçam após um build. A detecção de testes em tempo real melhora a capacidade de resposta, mas ainda permite que você obtenha resultados completos e precisos após um build.
 
 ## <a name="test-explorer--plus-symbol"></a>Sinal de "+" (adição) do Gerenciador de Testes
 
 **O que significa o "+" (sinal de adição) exibido na linha superior do Gerenciador de Testes?**
 
-O '+' (sinal de adição) indica que mais testes poderão ser detectados após um build se a detecção baseada em assembly estiver ativada. Esse símbolo será exibido quando forem detectados testes definidos dinamicamente no projeto.
+O símbolo '+' (sinal de adição) indica que mais testes poderão ser descobertos após um build quando a descoberta baseada em assembly for executada. Esse símbolo será exibido quando forem detectados testes definidos dinamicamente no projeto.
 
 ![Linha de resumo do sinal de adição](media/testex-plussymbol.png)
 
+::: moniker range="vs-2017"
 ## <a name="assembly-based-discovery"></a>Descoberta baseada em assembly
 
 **A descoberta baseada em assembly não está mais funcionando no meu projeto. Como faço para ativá-la novamente?**
 
-Acesse **Ferramentas** > **Opções** > **Teste** e marque a caixa **Adicionalmente, descobrir testes de assemblies compilados após builds.**
+Acesse **Ferramentas** > **Opções** > **Testar** e marque a caixa **Adicionalmente, detectar testes de assemblies compilados após builds.**
 
 ![Opção baseada em assembly](media/testex-toolsoptions.png)
+::: moniker-end
 
 ## <a name="real-time-test-discovery"></a>Detecção de testes em tempo real
 
 **Agora os testes são exibidos no Gerenciador de Testes enquanto digito, sem a necessidade de compilar o projeto. O que mudou?**
 
-Esse recurso é chamado de [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira a Pergunta frequente nº 1.
+Esse recurso é chamado de [Detecção de testes em tempo real](https://go.microsoft.com/fwlink/?linkid=862824). Ele usa um analisador Roslyn para encontrar testes e popular o Gerenciador de Testes em tempo real, sem exigir que você compile o projeto. Para obter mais informações sobre o comportamento da detecção de testes para testes definidos dinamicamente, como teorias ou características personalizadas, confira [Detecção de testes dinâmica](#dynamic-test-discovery).
 
 ## <a name="real-time-test-discovery-compatibility"></a>Compatibilidade da detecção de testes em tempo real
 
@@ -92,7 +97,7 @@ O modo de exibição de hierarquia classifica os testes em ordem alfabética e n
 
 ## <a name="test-explorer-hierarchy-view"></a>Modo de exibição da hierarquia do Gerenciador de Testes
 
-**No modo de exibição de hierarquia, há ícones passados, com falha, ignorados e não executados ao lado dos agrupamentos Projeto, Namespace e Classe. O que esses ícones significam?**
+**Na exibição de hierarquia, há ícones para testes aprovados, com falha, ignorados e não executados, ao lado dos agrupamentos do nó pai. O que esses ícones significam?**
 
 Os ícones ao lado dos agrupamentos Projeto, Namespace e Classe mostram o estado dos testes nesse agrupamento. Consulte a tabela a seguir.
 
@@ -110,6 +115,7 @@ O filtro do caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes**
 
 No Visual Studio 2019, serão removidas algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente. Elas foram marcadas como "preteridas" no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, muito poucas extensões haviam encontrado essas APIs e criado uma dependência delas. Elas incluem `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se essa alteração afetar sua extensão, fale conosco enviando um bug na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com).
 
+::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Referência ao NuGet do adaptador de teste
 
 **No Visual Studio 2017, versão 15.8, meus testes são detectados, mas não são executados**.
@@ -124,6 +130,7 @@ Em vez de usar extensões do adaptador de teste, os projetos são solicitados a 
 > Se estiver usando o Adaptador de teste NUnit 2 e não puder migrar para o adaptador de teste NUnit 3, você poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15.8 em **Ferramentas** > **Opções** > **Teste**.
 
 ![Comportamento do Adaptador do Gerenciador de Testes nas opções de ferramentas](media/testex-adapterbehavior.png)
+::: moniker-end
 
 ## <a name="uwp-testcontainer-was-not-found"></a>O TestContainer do UWP não foi encontrado
 

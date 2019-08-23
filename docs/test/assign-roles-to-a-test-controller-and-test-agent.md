@@ -12,16 +12,16 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb62e668d7077e1be96ff7a282628b76b426898f
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: dc7936041746872fdf30ce3159506d93c378376d
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177799"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490597"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>Atribuir funções a um controlador de teste e a um agente de teste
 
-Este passo a passo demonstra como criar e definir uma configuração de teste que usa um controlador de teste e um agente de teste para distribuir testes em vários computadores usando o Visual Studio. Além disso, esta explicação passo a passo demonstra como adicionar adaptadores de diagnóstico e dados à configuração de teste.
+Este artigo demonstra como criar e definir uma configuração de teste que usa um controlador de teste e um agente de teste para distribuir testes em vários computadores usando o Visual Studio. Ele também demonstra como adicionar adaptadores de diagnóstico e de dados à configuração de teste.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -49,10 +49,7 @@ Este passo a passo demonstra como criar e definir uma configuração de teste qu
 
      Agora você pode editar e salvar valores das configurações de teste.
 
-    > [!NOTE]
-    > Cada configuração de teste que você cria é listada como uma escolha para as opções **Selecionar Configurações de Teste Ativo** e **Editar Configurações de Teste** no menu **Teste**.
-
-5. Em **Nome**, digite o nome para as configurações de teste.
+5. Em **Nome**, digite o nome das configurações de teste.
 
 6. Em **Descrição**, digite **Configurações de teste distribuído**.
 
@@ -98,7 +95,17 @@ Este passo a passo demonstra como criar e definir uma configuração de teste qu
 
 7. Escolha **Fechar**.
 
-8. No menu Teste, escolha **Selecionar configurações de teste ativo** e, em seguida, selecione **TestSettingDistributedTestWalkthrough.testsettings**.
+::: moniker range="vs-2017"
+
+8. No menu Teste, escolha **Selecionar Arquivo de Configurações do Teste** e, em seguida, selecione *TestSettingDistributedTestWalkthrough.testsettings*.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+8. No **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Navegue até o arquivo *TestSettingDistributedTestWalkthrough.testsettings* e selecione-o.
+
+::: moniker-end
 
 9. Execute o teste normalmente.
 

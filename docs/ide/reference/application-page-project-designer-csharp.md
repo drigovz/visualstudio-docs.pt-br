@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 897c3a82f5add84ad343c100b93fd8a4d2663610
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
+ms.openlocfilehash: 04a130528edbe8ab3aae0a24d69315b934b19d54
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160060"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551434"
 ---
 # <a name="application-page-project-designer-c"></a>Página Aplicativo, Designer de Projeto (C#)
 
@@ -105,6 +105,8 @@ Define o arquivo *.ico* que você deseja usar como seu ícone do programa. Cliqu
 
 Para acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.ApplicationIcon%2A>.
 
+Para obter informações sobre como criar um ícone, confira [Editor de imagens para ícones](/cpp/windows/image-editor-for-icons).
+
 **Manifesto**
 
 Seleciona uma opção de geração de manifesto quando o aplicativo é executado no Windows Vista no UAC (Controle de Conta de Usuário). Essa opção pode ter os seguintes valores:
@@ -120,3 +122,5 @@ Seleciona uma opção de geração de manifesto quando o aplicativo é executado
 Selecione esse botão de opção quando você estiver fornecendo um arquivo de recurso para o projeto. Selecionar essa opção desabilita as opções **Ícone** e **Manifesto**.
 
 Insira um nome de caminho ou use o botão Procurar ( **...** ) para adicionar um arquivo de recurso Win32 ao projeto.
+
+Para obter mais informações, confira [Criar arquivos de recurso para aplicativos .NET](/dotnet/framework/resources/creating-resource-files-for-desktop-apps).
