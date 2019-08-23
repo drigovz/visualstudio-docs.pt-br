@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 8749cd7757796a1b716b1ac9db086d3155f94694
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
+ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62965539"
+ms.lasthandoff: 08/15/2019
+ms.locfileid: "69490622"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -30,18 +30,38 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 1. Adicione um arquivo de configurações de execução à sua solução. Na **Gerenciador de Soluções**, no menu de atalho da solução, escolha **Adicionar** > **Novo Item** e selecione **arquivo XML**. Salve o arquivo com um nome como *CodeCoverage.runsettings*.
 
-1. Adicione o conteúdo do arquivo de exemplo no final deste artigo e personalize-o de acordo com suas necessidades, conforme descrito nas seções a seguir.
+2. Adicione o conteúdo do arquivo de exemplo no final deste artigo e personalize-o de acordo com suas necessidades, conforme descrito nas seções a seguir.
 
-1. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+::: moniker range="vs-2017"
+
+3. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Para selecionar o arquivo de configurações de execução, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+
+::: moniker-end
 
    Quando você seleciona **Analisar Cobertura de Código**, as informações de configuração são lidas no arquivo de configurações de execução.
 
    > [!TIP]
    > Os resultados da cobertura de código e a coloração de código anteriores não são ocultados automaticamente quando você executa testes ou atualiza o código.
 
-Para ativar ou desativar as configurações personalizadas, desmarque ou selecione o arquivo no menu **Teste** > **Configurações de Teste**.
+::: moniker range="vs-2017"
+
+Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Teste** > **Configurações do Teste**.
 
 ![Menu de configurações de teste com o arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Configurações** do **Gerenciador de Testes**.
+
+::: moniker-end
 
 ### <a name="specify-symbol-search-paths"></a>Especificar caminhos de pesquisa de símbolo
 
@@ -89,7 +109,7 @@ Se **Incluir** estiver vazio, o processamento de cobertura de código incluirá 
 
 Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são o mesmo que curingas. Em particular:
 
-- **.\\** * corresponde a uma cadeia de quaisquer caracteres
+- **.\*** corresponde a uma cadeia de quaisquer caracteres
 
 - **\\.** corresponde a um ponto ".")
 
