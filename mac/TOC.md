@@ -31,6 +31,7 @@
 # Editor de Código-fonte
 ## [Recursos do Editor](source-editor.md)
 ## [Refatoração](refactoring.md)
+## [IntelliSense](intellisense.md)
 ## [Comentários](comments.md)
 ## [Comportamento do Editor](editor-behavior.md)
 ## [Comentários da Tarefa](task-comments.md)
