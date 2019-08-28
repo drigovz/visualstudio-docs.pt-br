@@ -76,7 +76,7 @@ Para obter uma lista completa de atalhos de comando, confira [Atalhos de teclado
 |Modo de sugestão do IntelliSense|**Ctrl**+**Alt**+**Espaço** (Ativar/desativar)|
 |Forçar a exibição do IntelliSense|**Ctrl**+**J**|
 |Ações Rápidas|**Ctrl**+ **.**|
-|Seletor de trechos|**Ctrl**+**K**,**X** ou **?** ,**Guia** (Visual Basic)|
+|Seletor de snippets|**Ctrl**+**K**,**X** ou **?** ,**Guia** (Visual Basic)|
 |Envolver com|**Ctrl**+**K**,**S**|
 |Mostrar Informações Rápidas|**Ctrl**+**K**,**I**|
 |Navegar para|**Ctrl**+ **,**|

@@ -37,7 +37,7 @@ Marque uma caixa de seleção para habilitar **Informações Rápidas** ou **Int
 
 - **Colocar snippets de código em listas de preenchimento**
 
-   Quando essa opção estiver selecionada, o IntelliSense incluirá trechos de código na lista de conclusão.
+   Quando essa opção estiver selecionada, o IntelliSense incluirá snippets de código na lista de conclusão.
 
 ## <a name="selection-in-completion-list"></a>Seleção em listas de conclusão
 

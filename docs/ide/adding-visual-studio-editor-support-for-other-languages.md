@@ -66,7 +66,7 @@ Todos esses tipos de arquivo terão os recursos descritos anteriormente, mesmo s
 
 ## <a name="add-support-for-non-supported-languages"></a>Adicionar suporte para linguagens sem suporte
 
-O Visual Studio 2015 oferece suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web &mdash; um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho criando um modelo de pacote TextMate para trechos e gramáticas de linguagem.
+O Visual Studio 2015 oferece suporte a linguagens no editor usando [Gramáticas TextMate](https://manual.macromates.com/en/language_grammars). Se a sua linguagem de programação favorita não tiver suporte no editor do Visual Studio, em primeiro lugar, pesquise na Web &mdash; um pacote TextMate para a linguagem já pode existir. No entanto, se você não encontrar um, poderá adicionar suporte a ela sozinho criando um modelo de pacote TextMate para snippets e gramáticas de linguagem.
 
 Adicione novas Gramáticas TextMate para o Visual Studio na seguinte pasta:
 

@@ -22,7 +22,7 @@ No momento, o Serviço R Remoto para Linux está empacotado como rtvs-daemon. O 
 
 Depois de configurar o computador remoto, as etapas a seguir conectam as RTVS (Ferramentas do R para Visual Studio) a este serviço:
 
-1. Selecione **Ferramentas do R** > **Windows** > **Espaços de trabalho** para abrir a janela **Espaços de trabalho**.
+1. Selecione **Ferramentas do R** > **Windows** > **Workspaces** para abrir a janela **Workspaces**.
 1. Selecione **Adicionar Conexão**.
 1. Dê um nome à conexão e forneça sua URL, como `https://localhost:5444` (Subsistema Windows para Linux) ou `https://public-ip:5444` (contêiner do Azure). Selecione **Salvar** quando concluir.
 1. Selecione o ícone de conexão ou clique duas vezes no item de conexão.
@@ -99,7 +99,7 @@ Em cada caso, o computador remoto deve ter uma dos seguintes interpretadores do 
 
 #### <a name="configure-the-vm"></a>Configurar a VM
 
-1. Na seção **Rede** da VM, adicione 5444 como uma porta de entrada permitida. Para usar uma porta diferente, altere a configuração no arquivo de configuração do daemon das RTVS (*/etc/rtvs/rtvsd.config.json*).
+1. Na seção **Rede** da VM, adicione 5444 como uma porta de entrada permitida. Para usar uma porta diferente, altere a configuração no arquivo de configuração do daemon das RTVS ( */etc/rtvs/rtvsd.config.json*).
 1. (Opcional) Definir um nome DNS; também é possível usar o endereço IP.
 1. Conecte-se à VM usando um cliente SSH, como o PuTTY para WIndows.
 1. Siga as instruções para um [Computador Ubuntu físico](#physical-ubuntu-computer) acima.

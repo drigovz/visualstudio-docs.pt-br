@@ -72,7 +72,7 @@ Por fim, para autenticar com seu ambiente TFS/Azure DevOps, você precisará cri
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>Usar o TEE-CLC para se conectar ao seu repositório
 
-Para se conectar ao seu código-fonte, primeiro você precisa criar um espaço de trabalho usando o comando `tf workspace`. Por exemplo, os seguintes comandos se conectam a uma Organização no Azure DevOps Services chamada "MyOrganization": 
+Para se conectar ao seu código-fonte, primeiro você precisa criar um workspace usando o comando `tf workspace`. Por exemplo, os seguintes comandos se conectam a uma Organização no Azure DevOps Services chamada "MyOrganization": 
 
 ```bash
 export TF_AUTO_SAVE_CREDENTIALS=1
@@ -95,7 +95,7 @@ tf get
 
 ### <a name="committing-changes-using-the-tee-clc"></a>Confirmar as alterações usando o TEE-CLC
 
-Depois de fazer alterações em seus arquivos no Visual Studio para Mac, você pode voltar ao Terminal para verificar suas edições. O comando `tf add` é usado para adicionar arquivos à lista de alterações pendentes a serem registradas e o comando `tf checkin` executa a entrada real no servidor. O comando `checkin` inclui parâmetros para adicionar um comentário ou associar um item de trabalho relacionado. No trecho de código a seguir, todos os arquivos em uma pasta `WebApp.Services` são adicionados, recursivamente, ao check-in. Em seguida, o código é verificado com um comentário e associado a um item de trabalho com a ID "42".
+Depois de fazer alterações em seus arquivos no Visual Studio para Mac, você pode voltar ao Terminal para verificar suas edições. O comando `tf add` é usado para adicionar arquivos à lista de alterações pendentes a serem registradas e o comando `tf checkin` executa a entrada real no servidor. O comando `checkin` inclui parâmetros para adicionar um comentário ou associar um item de trabalho relacionado. No snippet de código a seguir, todos os arquivos em uma pasta `WebApp.Services` são adicionados, recursivamente, ao check-in. Em seguida, o código é verificado com um comentário e associado a um item de trabalho com a ID "42".
 
 ```bash
 cd WebApp.Services

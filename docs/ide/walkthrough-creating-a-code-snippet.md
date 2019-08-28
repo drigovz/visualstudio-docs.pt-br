@@ -78,7 +78,7 @@ O seguinte XML é o modelo básico de snippet:
    ```
    
    > [!NOTE]
-   > Não é possível especificar como as linhas de código na seção **CDATA** de um trecho de código devem ser recuadas ou formatadas. Após a inserção, o serviço de linguagem formata automaticamente o código inserido. 
+   > Não é possível especificar como as linhas de código na seção **CDATA** de um snippet de código devem ser recuadas ou formatadas. Após a inserção, o serviço de linguagem formata automaticamente o código inserido. 
 
 5. Salve o snippet como *SquareRoot.snippet* (salve-o em qualquer lugar).
 

@@ -37,9 +37,9 @@ Para abrir uma segunda solução junto com a primeira solução, use as seguinte
 
     ![Captura de tela do Visual Studio para Mac, com o arquivo .sln e Opções realçados](media/open-multiple-solutions-image3.png)
 
-4. Desmarque a caixa **Fechar área de trabalho atual**:
+4. Desmarque a caixa **Fechar workspace atual**:
 
-    ![Captura de tela da caixa de diálogo Opções, com a caixa Fechar área de trabalho atual desmarcada](media/open-multiple-solutions-image1.png)
+    ![Captura de tela da caixa de diálogo Opções, com a caixa Fechar workspace atual desmarcada](media/open-multiple-solutions-image1.png)
 
 5. Selecione **Abrir** para abrir a segunda solução no Painel de Soluções.
 
