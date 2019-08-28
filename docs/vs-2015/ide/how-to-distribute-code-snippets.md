@@ -96,7 +96,7 @@ Você pode simplesmente fornecer seus snippets de código a seus amigos e fazer 
   
 4. Teste o snippet. Na instância experimental, abra um projeto do Visual Basic e abra um dos arquivos de código. Coloque o cursor em algum lugar no código, clique com o botão direito do mouse e, no menu de contexto, selecione **Inserir Snippet**.  
   
-5. Você deve ver HelloWorldVB como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir trecho de código: HellowWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa HelloWorldVB. Você deve ver a seguinte linha adicionada ao arquivo:  
+5. Você deve ver HelloWorldVB como uma das pastas. Clique duas vezes nesse item. Você deve ver um pop-up **Inserir snippet: HellowWorldVB >** que tem uma lista suspensa **HelloWorldVB**. Clique na lista suspensa HelloWorldVB. Você deve ver a seguinte linha adicionada ao arquivo:  
   
     ```vb  
     Console.WriteLine("Hello, World!")  

@@ -19,7 +19,7 @@ ms.locfileid: "62428203"
 ---
 # <a name="how-to-use-surround-with-code-snippets"></a>Como: Usar snippets de código surround-with
 
-Os procedimentos a seguir descrevem como usar snippets de código surround-with. Trechos de código Surround-with estão disponíveis de três maneiras: por um atalho de teclado, pelo menu **Editar** e pelo menu do clique com o botão direito ou menu de contexto.
+Os procedimentos a seguir descrevem como usar snippets de código surround-with. Snippets de código Surround-with estão disponíveis de três maneiras: por um atalho de teclado, pelo menu **Editar** e pelo menu do clique com o botão direito ou menu de contexto.
 
 ## <a name="to-use-surround-with-code-snippets-through-keyboard-shortcut"></a>Para usar snippets de código surround-with por meio do atalho de teclado
 

@@ -95,7 +95,7 @@ Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o 
 |-|-|
 |Fechar tudo|**⇧⌘W**|
 |Fechar arquivo|**⌘W**|
-|Fechar espaço de trabalho|**⌥⌘W**|
+|Fechar workspace|**⌥⌘W**|
 |Novo arquivo|**⌘N**|
 |Nova solução|**⇧⌘N**|
 |Abrir|**⌘O**|
