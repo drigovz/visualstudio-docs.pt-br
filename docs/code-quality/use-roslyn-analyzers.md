@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6362d3f14065aaf9661e85266753642e4201ca48
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 5c5af5c98be92e52c356e0f20eaf437f66878690
+ms.sourcegitcommit: 8a699df154464387f327691dce507d7c3d0e2aab
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69548045"
+ms.lasthandoff: 08/27/2019
+ms.locfileid: "70060438"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -62,6 +62,18 @@ Para alterar o conjunto de regras ativo para um projeto, navegue até a guia **a
 
 Você pode configurar a severidade de regras do analisador ou *diagnóstico*, se [instalar os analisadores](../code-quality/install-roslyn-analyzers.md) como um pacote NuGet. A tabela a seguir mostra as opções de gravidade para diagnóstico:
 
+
+::: moniker range="vs-2019"
+|Severidade|Comportamento de tempo de compilação|Comportamento do editor|
+|-|-|-|
+|Erro|As violações aparecem como *erros* na **lista de erros** e na saída da compilação da linha de comando e causam a falha das compilações.|O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem.|
+|Aviso|As violações aparecem como *avisos* no **lista de erros** e na saída da compilação da linha de comando, mas não causam a falha das compilações.|O código incorreto é sublinhado com um ondulado verde e marcado por uma pequena caixa verde na barra de rolagem.|
+|Sugestão|As violações aparecem como *mensagens* no **lista de erros**, e não em uma saída de compilação de linha de comando.|O código incorreto é sublinhado com um ondulado cinza e marcado por uma pequena caixa cinza na barra de rolagem.|
+|Mudo|Não visível para o usuário.|Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE.|
+|Nenhum|Suprimido completamente.|Suprimido completamente.|
+::: moniker-end
+
+::: moniker range="< vs-2019"
 |Severidade|Comportamento de tempo de compilação|Comportamento do editor|
 |-|-|-|
 |Erro|As violações aparecem como *erros* na **lista de erros** e na saída da compilação da linha de comando e causam a falha das compilações.|O código incorreto é sublinhado com um ondulado vermelho e marcado por uma pequena caixa vermelha na barra de rolagem.|
@@ -69,6 +81,7 @@ Você pode configurar a severidade de regras do analisador ou *diagnóstico*, se
 |Info|As violações aparecem como *mensagens* no **lista de erros**, e não em uma saída de compilação de linha de comando.|O código incorreto é sublinhado com um ondulado cinza e marcado por uma pequena caixa cinza na barra de rolagem.|
 |Hidden|Não visível para o usuário.|Não visível para o usuário. No entanto, o diagnóstico é reportado para o mecanismo de diagnóstico do IDE.|
 |Nenhum|Suprimido completamente.|Suprimido completamente.|
+::: moniker-end
 
 Além disso, você pode "redefinir" a severidade de uma regra definindo-a como **padrão**. Cada diagnóstico tem uma severidade padrão que pode ser vista na janela **Propriedades** .
 
