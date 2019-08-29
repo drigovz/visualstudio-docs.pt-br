@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f567e07ea085844672f04194e4a4ffc5a9318e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: 6f670449be9b416d1c54bc83379bae4a6733d932
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67824807"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976720"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>Sincronizar as configurações do Visual Studio em vários computadores
 
@@ -71,7 +71,7 @@ Se você tiver instalações lado a lado do Visual Studio e desejar usar a local
 
 1. Atualizar para o Visual Studio 2017 versão 15.3 ou posterior.
 
-2. Use o assistente de **configurações de Importação\Exportação** para exportar todas as configurações existentes para um local fora da pasta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
+2. Use o **Assistente para Importar e Exportar Configurações** para exportar todas as configurações existentes para uma localização fora da pasta *%localappdata%\Microsoft\VisualStudio\15.0_xxxxxxxx*.
 
 3. Abra o **Prompt de Comando do Desenvolvedor para VS 2017** e execute `devenv /resetuserdata`.
 
@@ -84,6 +84,10 @@ Se você tiver instalações lado a lado do Visual Studio e desejar usar a local
 Algumas configurações, como o layout da janela de ferramentas, não são compartilhadas entre diferentes instalações lado a lado do Visual Studio. O arquivo *CurrentSettings.vssettings* em *%userprofile%\Documents\Visual Studio 2019\Settings* é uma pasta específica da instalação semelhante a *%localappdata%\Microsoft\VisualStudio\16.0_xxxxxxxx\Settings*.
 
 ::: moniker-end
+
+## <a name="reset-synchronized-settings"></a>Restaurar as configurações sincronizadas
+
+Para restaurar todas as configurações para os padrões, entre no Visual Studio e, em seguida, selecione **Ferramentas** > **Importar e Exportar Configurações** para abrir o **Assistente para Importar e Exportar Configurações**. Selecione **Restaurar todas as configurações** e siga as etapas restantes do assistente.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37d31f76a448933bb3809cd609ebd355c8e0a04b
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: 31d829a668a2c9690333315c30904623187fe51d
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605955"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976752"
 ---
 # <a name="options-dialog-box-projects-and-solutions--general"></a>Caixa de diálogo Opções: Projetos e Soluções \> Geral
 
@@ -70,11 +70,31 @@ Quando selecionada, o Visual Studio exibe uma caixa de mensagem de confirmação
 
 ## <a name="reopen-documents-on-solution-load"></a>Reabrir documentos no carregamento da solução
 
-**Introduzido no Visual Studio 2017 versão 15.8**
-
 Quando selecionada, os documentos que foram deixados abertos na última vez em que a solução foi fechada são abertos automaticamente quando a solução é aberta.
 
 Reabrir certos tipos de arquivos ou designers pode atrasar o carregamento da solução. Desmarque essa opção para [melhorar o desempenho do carregamento da solução](../../ide/visual-studio-performance-tips-and-tricks.md#disable-automatic-file-restore) se você não quiser restaurar o contexto de anterior da solução.
+
+::: moniker range=">=vs-2019"
+
+## <a name="restore-solution-explorer-project-hierarchy-state-on-solution-load"></a>Restaurar o estado da hierarquia do projeto do Gerenciador de Soluções após o carregamento da solução
+
+Quando selecionada, essa opção restaura o estado dos nós no Gerenciador de Soluções com relação a se eles foram expandidos ou recolhidos na última vez em que a solução foi aberta. Desmarque essa opção para diminuir o tempo de carregamento de soluções grandes.
+
+> [!TIP]
+> Se você desabilitar essa opção, uma maneira fácil de navegar até o documento ativo no Gerenciador de Soluções será selecionar a opção **Sincronizar com Documento Ativo** na barra de ferramentas do **Gerenciador de Soluções**.
+>
+> ![Sincronizar com documento ativo no Gerenciador de Soluções](media/sync-active-document.png)
+
+## <a name="open-sdk-style-project-files-with-double-click-or-the-enter-key"></a>Abrir arquivos de projeto no estilo do SDK com o clique duplo ou a tecla Enter
+
+Quando essa opção é selecionada e você clica duas vezes em um nó de projeto no estilo do SDK no Gerenciador de Soluções ou seleciona-o e pressiona **Enter**, o arquivo de projeto (por exemplo, arquivo \*.csproj) é aberto como XML no editor. Quando essa opção é desmarcada, clicar duas vezes em um nó de projeto no estilo do SDK no Gerenciador de Soluções ou selecioná-lo e pressionar **Enter** tem o efeito de expandir ou recolher apenas o nó.
+
+Se você não tiver essa opção selecionada e desejar editar um arquivo de projeto no estilo do SDK, clique com o botão direito do mouse no nó do projeto no Gerenciador de Soluções e selecione **Editar Arquivo de Projeto**. Para outros tipos de projeto, é necessário primeiro descarregar o projeto antes de editá-lo no Visual Studio.
+
+> [!TIP]
+> Um *projeto no estilo do SDK* ou um [SDK do projeto](../../msbuild/how-to-use-project-sdk.md) tem um formato de arquivo de projeto mais novo e simplificado que foi introduzido no MSBuild 15.0. Um projeto no estilo do SDK contém um atributo `Sdk` no elemento `Project`, por exemplo, `<Project Sdk="Microsoft.NET.Sdk">`. O Visual Studio cria um projeto no estilo do SDK quando você cria um projeto .NET Core com base em um dos modelos do Visual Studio, por exemplo.
+
+::: moniker-end
 
 ## <a name="see-also"></a>Consulte também
 

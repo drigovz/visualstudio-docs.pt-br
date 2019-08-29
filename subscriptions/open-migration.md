@@ -1,20 +1,20 @@
 ---
-title: Gerenciamento de pedidos Open e Open License | Microsoft Docs
+title: Parceiros que gerenciam assinaturas do Visual Studio para os clientes | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
-ms.date: 07/23/2019
+ms.date: 08/21/2019
 ms.topic: conceptual
-description: Saiba mais sobre o gerenciamento de pedidos de assinaturas usando os programas Open e Open License.
-ms.openlocfilehash: ecbd5c4b861683742ec8b9e3d9fca571932ae887
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+description: Saiba como os parceiros gerenciam as assinaturas do Visual Studio para seus clientes.
+ms.openlocfilehash: 8a1e0bcaac4cc66f0c1682010102a657c47e770b
+ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605830"
+ms.lasthandoff: 08/23/2019
+ms.locfileid: "70000908"
 ---
-# <a name="open-and-open-license-management-for-new-orders"></a>Gerenciamento Open e Open License para novos pedidos
-Para gerenciar assinaturas no [portal de administração de assinaturas do Visual Studio](https://manage.visualstudio.com), há algumas etapas que os parceiros e clientes precisarão seguir. O processo será:
+# <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>Parceiros que gerenciam assinaturas em nome dos clientes
+Para gerenciar assinaturas no [Portal de Administração de Assinaturas do Visual Studio](https://manage.visualstudio.com), há algumas etapas que os parceiros e os clientes precisarão seguir. O processo será:
 - Os parceiros farão um novo pedido em nome de um cliente, inserindo o endereço de email empresarial do cliente.
 - O cliente receberá uma notificação convidando-o a atribuir administradores e acessar as respectivas assinaturas no [Portal de administração de assinaturas do Visual Studio](https://manage.visualstudio.com).
 - Para gerenciarem assinaturas em nome dos clientes, os parceiros precisarão se registrar no portal de administração. As diversas maneiras de obter acesso estão listadas abaixo (semelhante ao processo de adicionar–abrir).
@@ -38,6 +38,7 @@ Isso se aplica a novos Parceiros fazendo novos pedidos de Open License, mas que 
 
 > [!NOTE]
 > O cliente receberá um email de notificação informando que um Parceiro foi adicionado ao Open License. Ele pode optar por remover o acesso do Parceiro.
+
 
 ## <a name="new-partners-visiting-the-visual-studio-subscriptions-administration-portal-directly"></a>Novos parceiros visitando o portal de administração de assinaturas do Visual Studio diretamente
 Esse cenário se aplica a novos parceiros que já fizeram novos pedidos de Open License, mas que ainda não se registraram no [VLSC](https://www.microsoft.com/Licensing/servicecenter/default.aspx) e vão diretamente para o [portal de administração de assinaturas do Visual Studio](https://manage.visualstudio.com).  Siga estas etapas:

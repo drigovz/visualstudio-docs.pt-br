@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a25fbffa21a7caeab1cf5910e1da95d7fba09e5
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
+ms.openlocfilehash: f6aa9cb62bc0ae956a85acd75d1a9615a2283133
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416450"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976773"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -36,7 +36,12 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 
 ## <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Para analisar a cobertura de código em testes de unidade no Gerenciador de Testes
 
+::: moniker range="vs-2017"
 1. No menu **Teste**, escolha **Analisar Cobertura de Código**.
+::: moniker-end
+::: moniker range=">=vs-2019"
+1. No **Gerenciador de Testes**, selecione **Analisar Cobertura de Código** no menu **Executar**.
+::: moniker-end
 
 2. Para ver quais linhas foram executadas, escolha o ![Ícone Mostrar Coloração de Cobertura de Código](../test/media/codecoverage-showcoloringicon.png) **Mostrar Coloração de Cobertura de Código**.
 

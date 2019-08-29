@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01ccad0c1cdcde27d1d43b832ce7e4ca4da7b716
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
+ms.openlocfilehash: 5c3456ab48822873fb51ad8614ff9a6dd5f07598
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461596"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976709"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 
@@ -47,7 +47,7 @@ Para obter informações sobre como criar arquivos de chave, veja [Como: Como cr
      A caixa de diálogo **Selecionar um Certificado** é exibida e mostra o conteúdo do repositório de certificados do Windows.
 
     > [!TIP]
-    > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Certificados** para exibir informações adicionais de ajuda.
+    > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado e opções adicionais. Clique em **Certificados** para exibir mais informações de ajuda.
 
 3. Selecione o certificado que você deseja usar para assinar os manifestos.
 
@@ -68,7 +68,10 @@ Para obter informações sobre como criar arquivos de chave, veja [Como: Como cr
 
      A caixa de diálogo **Inserir senha para abrir o arquivo** é exibida. (Se o arquivo *.pfx* já estiver armazenado no repositório de certificados do Windows ou não for protegido por senha, você não precisará inserir uma senha.)
 
-4. Insira a senha para acessar o arquivo de chave e pressione **Enter**.
+4. Insira a senha para acessar o arquivo de chave e, em seguida, selecione **Enter**.
+
+> [!NOTE]
+> O arquivo *.pfx* não pode incluir informações de encadeamento de certificados. Caso contrário, ocorrerá o seguinte erro de importação: **Não é possível localizar o certificado e a chave privada para descriptografia**.
 
 ## <a name="sign-using-a-test-certificate"></a>Assinar usando um certificado de teste
 

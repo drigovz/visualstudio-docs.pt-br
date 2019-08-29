@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e439ab3ca22fdb26992164c3927269a0f58a1f3b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490715"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891349"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -209,7 +209,7 @@ Para saber mais sobre as estruturas de testes de unidade da Microsoft, confira u
 
 ## <a name="set-timeouts-for-unit-tests"></a>Definir tempos limite para testes de unidade
 
-Para definir um tempo limite em um método de teste individual:
+Se estiver usando a estrutura do MSTest, use o <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TimeoutAttribute> para definir um tempo limite em um método de teste individual:
 
 ```csharp
 [TestMethod]

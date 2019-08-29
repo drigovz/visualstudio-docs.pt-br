@@ -1,18 +1,18 @@
 ---
 title: Personalizando análise de cobertura de código
-ms.date: 11/04/2016
+ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5bd7fa0bcff67573e61d40a2172e17620910a421
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
+ms.openlocfilehash: e78487628a7604245d59f44220b91be73249e7fb
+ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490622"
+ms.lasthandoff: 08/22/2019
+ms.locfileid: "69976766"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -34,13 +34,13 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 ::: moniker range="vs-2017"
 
-3. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Para selecionar o arquivo de configurações de execução, no menu **Testar**, escolha **Testar Configurações** > **Selecionar Arquivo de Configurações do Teste**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Para especificar um arquivo de configurações de execução para executar testes usando a linha de comando ou em um fluxo de trabalho de build, confira [Configurar testes de unidade usando um arquivo *.runsettings*](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#specify-a-run-settings-file).
+3. Para selecionar o arquivo de configurações de execução, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -53,7 +53,7 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Teste** > **Configurações do Teste**.
 
-![Menu de configurações de teste com o arquivo de configurações personalizadas](../test/media/codecoverage-settingsfile.png)
+![Menu de configurações do teste com o arquivo de configurações personalizadas no Visual Studio 2017](../test/media/codecoverage-settingsfile.png)
 
 ::: moniker-end
 
@@ -65,7 +65,7 @@ Para ativar ou desativar as configurações personalizadas, marque ou desmarque 
 
 ### <a name="specify-symbol-search-paths"></a>Especificar caminhos de pesquisa de símbolo
 
-A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assemblies. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários e a cobertura de código funciona automaticamente. Mas, em alguns casos, você pode incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos *.pdb* podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo *.runsettings*.
+A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assemblies. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários e a cobertura de código funciona automaticamente. Em alguns casos, o ideal é incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos *.pdb* podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo *.runsettings*.
 
 ```xml
 <SymbolSearchPaths>
@@ -90,7 +90,7 @@ Você pode excluir os assemblies especificados da análise de cobertura de códi
 </ModulePaths>
 ```
 
-Como alternativa, você pode especificar que assemblies devem ser incluídos. Esta abordagem tem a desvantagem de que, ao adicionar mais assemblies à solução, você tem que se lembrar de adicioná-los à lista:
+Como alternativa, você pode especificar que assemblies devem ser incluídos. Essa abordagem apresenta a desvantagem de, ao adicionar mais assemblies à solução, precisar se lembrar de adicioná-los à lista:
 
 ```xml
 <ModulePaths>
@@ -101,17 +101,15 @@ Como alternativa, você pode especificar que assemblies devem ser incluídos. Es
 </ModulePaths>
 ```
 
-Se **Incluir** estiver vazio, o processamento de cobertura de código incluirá todos os assemblies que são carregados e para os quais os arquivos *.pdb* podem ser encontrados. A cobertura de código não inclui itens que correspondem a uma cláusula em uma lista **Excluir**.
-
-**Incluir** é processado antes de **Excluir**.
+Se **Incluir** estiver vazio, o processamento da cobertura de código incluirá todos os assemblies carregados e para os quais os arquivos *.pdb* possam ser encontrados. A cobertura de código não inclui itens que correspondem a uma cláusula em uma lista **Excluir**. **Incluir** é processado antes de **Excluir**.
 
 ### <a name="regular-expressions"></a>Expressões regulares
 
-Os nós de inclusão e exclusão usam expressões regulares. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). As expressões regulares não são o mesmo que curingas. Em particular:
+Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Alguns exemplos incluem:
 
 - **.\*** corresponde a uma cadeia de quaisquer caracteres
 
-- **\\.** corresponde a um ponto ".")
+- **\\.** corresponde a um ponto "."
 
 - **\\(   \\)** corresponde a parênteses "(  )"
 
@@ -153,7 +151,10 @@ Por exemplo:
 
 - **Source** – corresponde aos elementos pelo nome do caminho do arquivo de origem no qual eles são definidos.
 
-- **Attribute** – corresponde aos elementos aos quais um atributo específico está anexado. Especifique o nome completo do atributo e inclua "Attribute" no final do nome.
+- **Attribute** – corresponde aos elementos aos quais um atributo específico está anexado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
+
+  > [!TIP]
+  > Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>.
 
 - **Function** – corresponde a procedimentos, funções ou métodos pelo nome totalmente qualificado. Para corresponder a um nome de função, a expressão regular precisa corresponder ao nome totalmente qualificado da função, incluindo o namespace, o nome de classe, o nome do método e a lista de parâmetros. Por exemplo:
 
@@ -243,9 +244,8 @@ Included items must then not match any entries in the exclude list to remain inc
                 <!-- Don't forget "Attribute" at the end of the name -->
                 <Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>
                 <Attribute>^System\.Diagnostics\.DebuggerNonUserCodeAttribute$</Attribute>
-                <Attribute>^System\.Runtime\.CompilerServices.CompilerGeneratedAttribute$</Attribute>
-                <Attribute>^System\.CodeDom\.Compiler.GeneratedCodeAttribute$</Attribute>
-                <Attribute>^System\.Diagnostics\.CodeAnalysis.ExcludeFromCodeCoverageAttribute$</Attribute>
+                <Attribute>^System\.CodeDom\.Compiler\.GeneratedCodeAttribute$</Attribute>
+                <Attribute>^System\.Diagnostics\.CodeAnalysis\.ExcludeFromCodeCoverageAttribute$</Attribute>
               </Exclude>
             </Attributes>
 
