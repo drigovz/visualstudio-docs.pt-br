@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a3839a28ce0c37c5ccf43ca1f8ddba1ecd52365
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918177"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891330"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -96,7 +96,7 @@ Para executar os testes de unidade após cada build local, abra o ícone de conf
 
 ## <a name="view-test-results"></a>Exibir resultados do teste
 
-Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos **Testes com falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. O painel de detalhes na parte inferior do Gerenciador de Testes exibe um resumo da execução de teste.
+Conforme você executa, grava e executa novamente os testes, o Gerenciador de Testes exibe os resultados em grupos **Testes com falha**, **Testes Aprovados**, **Testes Ignorados** e **Testes Não Executados**. O painel de detalhes na parte inferior ou lateral do Gerenciador de Testes exibe um resumo da execução de teste.
 
 ### <a name="view-test-details"></a>Exibir detalhes do teste
 
@@ -181,7 +181,7 @@ Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, voc�
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
-|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|O atributo TestCategory permite que você forneça uma categoria sem um valor. Uma categoria definida pelo atributo TestCategory também pode ser a categoria de um atributo TestProperty.|
+|<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute>|O atributo TestCategory permite que você forneça uma categoria sem um valor.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>|O atributo TestProperty permite que você defina o par de categoria/valor da característica.|
 
 
@@ -215,7 +215,7 @@ A playlist é aberta em uma nova guia do Gerenciador de Testes. Você pode usar 
 
 ![A playlist é aberta em uma guia separada do Gerenciador de Testes](../test/media/vs-2019/test-explorer-playlist-tab-16-2.png)
 
-**Para adicionar testes a uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
+**Para criar uma lista de reprodução**, escolha um ou mais testes no Gerenciador de Testes. No menu de clique com o botão direito, escolha **Adicionar à Playlist** > **Nova Playlist**.
 
 **Para abrir uma playlist**, escolha o ícone da playlist na barra de ferramentas do Visual Studio e selecione no menu um arquivo de playlist salvo anteriormente.
 ::: moniker-end
@@ -236,7 +236,7 @@ Os [grupos](#test-explorer-groups) também estão disponíveis como colunas no G
 
 * Para alterar a ordem das colunas, clique no cabeçalho de uma coluna e arraste-o para a esquerda ou para a direita.
 
-* Para classificar uma coluna, clique no cabeçalho dessa coluna. Nem todas as colunas podem ser classificadas.
+* Para classificar uma coluna, clique no cabeçalho dessa coluna. Nem todas as colunas podem ser classificadas. Faça também a classificação por uma coluna secundária mantendo a tecla **Shift** pressionada e clicando em um cabeçalho de coluna adicional.
 
   ![Classificação de coluna](../test/media/vs-2019/test-explorer-sort-column-16-2.png)
 ::: moniker-end
@@ -253,7 +253,7 @@ Para filtrar por um critério diferente:
 
 2. Escolha um novo critério.
 
-3. Insira o valor do filtro entre aspas.
+3. Insira o valor do filtro entre aspas. Caso deseje pesquisar uma correspondência exata na cadeia de caracteres em vez de uma correspondência que contenha um dos nomes, use um sinal de igual (=) em vez dos dois-pontos (:).
 
 ::: moniker range="vs-2017"
 ![Filtrar testes no Gerenciador de Testes](../test/media/ute_filtertestlist.png)
@@ -265,15 +265,28 @@ Para filtrar por um critério diferente:
 > [!NOTE]
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
+::: moniker range="vs-2017"
 |Qualificador|DESCRIÇÃO|
 |-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
 |**Mensagem de erro**|Procura nas mensagens de erro definidas pelo usuário retornadas por falhas para encontrar correspondências.|
 |**Caminho do arquivo**|Procura o nome de arquivo totalmente qualificado dos arquivos de origem do teste para encontrar correspondências.|
-|**Nome Totalmente Qualificado**|Procura o nome de arquivo totalmente qualificado dos namespaces de teste, classes e métodos para encontrar correspondências.|
+|**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
 |**Saída**|Procura as mensagens de erro definidas pelo usuário que são gravadas para a saída padrão (stdout) ou erro padrão (stderr). A sintaxe para especificar mensagens de saúde é definida pela estrutura de teste de unidade.|
 |**Resultado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+::: moniker-end
+::: moniker range=">=vs-2019"
+|Qualificador|DESCRIÇÃO|
+|-|-----------------|
+|**Estado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
+|**Nome Totalmente Qualificado**|Pesquisa o nome totalmente qualificado de namespaces de teste, classes e métodos para encontrar correspondências.|
+|**Projeto**|Procura os nomes de projeto de teste para correspondências.|
+|**Estrutura de destino**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
+|**Namespace**|Pesquisa os namespaces de teste para encontrar correspondências.|
+|**Class**|Pesquisa os nomes de classes de teste para encontrar correspondências.|
+::: moniker-end
 
 Para excluir um subconjunto dos resultados de um filtro, use a seguinte sintaxe:
 

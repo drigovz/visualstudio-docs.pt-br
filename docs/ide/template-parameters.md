@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62950336"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891262"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 
@@ -47,7 +47,7 @@ Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados por qualquer modelo:
 
-|Parâmetro|Descrição|
+|Parâmetro|DESCRIÇÃO|
 |---------------|-----------------|
 |clrversion|Versão atual do CLR (Common Language Runtime).|
 |ext_*|Adicione o prefixo `ext_` a qualquer parâmetro para se referir às variáveis do modelo pai. Por exemplo, `ext_safeprojectname`.|
@@ -57,7 +57,8 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |projectname|O nome fornecido pelo usuário quando o projeto foi criado.|
 |registeredorganization|O valor da chave do Registro de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|O namespace raiz do projeto atual. Esse parâmetro se aplica somente a modelos de item.|
-|safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e espaços removidos.|
+|safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
+|safeitemrootname|Mesmo que `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
 |hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
 |SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|

@@ -5,48 +5,32 @@ ms.author: lank
 manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
-description: Inscreva-se para receber a assinatura do MSDN Magazine incluída na assinatura do Visual Studio.
-ms.openlocfilehash: 0cc6757a77536a7bd8073418be8729802e8aaaae
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+description: A MSDN Magazine está sendo desativada
+ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
+ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681573"
+ms.lasthandoff: 08/21/2019
+ms.locfileid: "69891251"
 ---
-# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio
-Cobertura abrangente das tecnologias da Microsoft para soluções práticas para problemas do mundo real.  Dependendo da sua assinatura, você terá direito à revista impressa ou ao acesso antecipado à versão digital.
+# <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio foi descontinuado
 
-## <a name="activation-steps"></a>Etapas de ativação
-1. Para assinantes da MSDN Magazine, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
-2. Localize o bloco MSDN Magazine na seção de Desenvolvimento Profissional e clique em **Acessar**.
-3. Na página do MSDN Magazine, escolha seu tipo de assinatura preferencial.  Você pode escolher a edição digital gratuita, independentemente de onde você mora.  A versão impressa está disponível gratuitamente para residentes dos EUA.  Para endereços fora dos EUA são aplicados encargos de frete.
-   > [!div class="mx-imgBorder"]
-   > ![Assinaturas do benefício MSDN Magazine](_img/vs-msdn/vs-msdn-subs-page-resized.png)
-4. Forneça as informações de contato solicitadas e clique em **Enviar**.  (A versão da revista selecionada aparecerá na seção Assinatura da Revista.  Se você tiver escolhido a edição impressa, na primeira opção estará escrito **Sim!  Quero receber um ano (12 exemplares) da MSDN Magazine gratuitamente**.)
-   > [!div class="mx-imgBorder"]
-   > ![Perfil do benefício MSDN Magazine](_img/vs-msdn/vs-msdn-profile.png)
-5. E isso é tudo.  Dependendo da versão da revista escolhida, você começará a receber revistas impressas ou emails com links para as versões online mais recentes com a próxima edição.  Aproveite!
+Recentemente, a MSDN Magazine anunciou que publicará sua última edição em novembro de 2019.  A alteração foi anunciada em uma [postagem no blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) em msdn.microsoft.com em agosto de 2019.  
 
-## <a name="eligibility"></a>Qualificação
-| Nível de Assinatura                                                 |     Canais                                            | Benefício                                                          | Renovável?    |
-|--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise (Standard)   | VL, Azure, Retail, NFR<sup>1</sup> selecionado |Edição impressa       |  Nº  Disponível apenas para novos assinantes          |
-| Visual Studio Professional (Standard) | VL, Azure, Retail                                       | Edição impressa                                                            |Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | Edição impressa                                             |  Nº  Disponível apenas para novos assinantes         |
-| Plataformas MSDN (Padrão)                                          | VL, Retail                                              | Edição impressa                                              | Nº  Disponível apenas para novos assinantes         |
-|Visual Studio Enterprise, Visual Studio Professional (nuvem mensal)   | Azure |Não disponível      |  NA         |
-||
+## <a name="the-announcement"></a>O comunicado
+Este é um trecho do comunicado em msdn.microsoft.com:
 
-<sup>1</sup> *Edição impressa:  NFR (Proibida a revenda), VSIP (Visual Studio Industry Partner), FTE, Microsoft Partner Network (Enterprise) e Imagine (Premium).*
+    "Dear reader,
 
-*Edição digital: MCT Software & Services, MVP (Most Valuable Professional), RD (Diretor Regional).*
+    After more than three decades providing technical guidance to the community of Microsoft developers, MSDN Magazine will publish its last issue in November. All previous issues will be archived and available online.
 
-*Exclui:  Imagine (Standard), BizSpark e MCT Software & Services Developer*
+    MSDN Magazine originally started as two separate magazines, Microsoft Systems Journal and Microsoft Internet Developer, which consolidated into MSDN Magazine in 2000. Our first issue that year was entirely devoted to the Windows operating environment. How far have we all come since then? As Microsoft products and services expanded exponentially over the years, MSDN Magazine has gone through its own evolution, as well. We realized that it is time to retire MSDN Magazine and to carry on its work through Web channels like docs.microsoft.com.
 
-> [!NOTE]
-> A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
+    Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
-Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
+## <a name="frequently-asked-questions"></a>Perguntas frequentes
+### <a name="q-how-does-the-refund-process-work"></a>P: Como funciona o processo de reembolso?
+R: Os reembolsos serão enviados para o endereço registrado para a sua assinatura. Em caso de dúvidas sobre reembolsos, contate a **1105 Media**.  As informações completas de contato da 1105 Media estão disponíveis na [postagem no blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) em msdn.microsoft.com.  
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
