@@ -28,12 +28,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8641a677ae36ad5a3c1f0f4344fc5c12b8798d7d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 061204de382e95349e141e3321aa033fcf9ccdbc
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445148"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180077"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 
@@ -51,7 +51,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 ::: moniker range="vs-2019"
 
-- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
+- [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
   Consulte:
 
-- [Vídeo: Depurar visualmente com a integração do depurador mapa de códigos (Channel 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
+- [Vídeo: Depurar visualmente com a integração do depurador do mapa de código (canal 9)](http://go.microsoft.com/fwlink/?LinkId=293418)
 
 - [Mapear a pilha de chamadas](#MapStack)
 
@@ -79,7 +79,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 1. Inicie a depuração. (Teclado: **F5**)
 
-2. Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, escolha **mapa de código**. (Teclado: **Ctrl** + **Shift** + **`**)
+2. Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, escolha **mapa de código**. (Teclado: **Ctrl** + **Shift** +  **`** )
 
      ![Escolha o mapa de código para iniciar a pilha de chamadas de mapeamento](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -156,7 +156,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
    Alterar o mapeamento não afeta o código de forma alguma. Sinta-se à vontade para renomear, mover ou remover qualquer item no mapa.
 
-- **O que significa esta mensagem: "O diagrama pode ser baseado em uma versão mais antiga do código"?**
+- **O que significa essa mensagem: "O diagrama pode ser baseado em uma versão mais antiga do código"?**
 
    O código pode ter sido alterado depois que você alterou o mapa pela última vez. Por exemplo, uma chamada no mapa pode não existir mais no código. Feche a mensagem e tente recriar a solução antes de atualizar o mapa outra vez.
 
@@ -178,7 +178,7 @@ Crie um mapa de códigos para rastrear visualmente a pilha de chamadas durante a
 
 - **Como posso impedir que o mapa de adicionar novas pilhas de chamadas automaticamente?**
 
-   Escolher ![botão &#45; pilha de chamadas de mostrar no mapa de códigos automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl** + **Shift** + **`**.
+   Escolher ![botão &#45; pilha de chamadas de mostrar no mapa de códigos automaticamente](../debugger/media/debuggermap_automaticupdateicon.gif) na barra de ferramentas do mapa. Para adicionar manualmente a pilha de chamadas atual ao mapa, pressione **Ctrl** + **Shift** +  **`** .
 
    O mapa continuará realçando as pilhas de chamadas existentes no mapa enquanto você estiver depurando.
 
