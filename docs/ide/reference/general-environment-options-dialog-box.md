@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4024209ac0c1b2766b67984710b8349c6d66d91
-ms.sourcegitcommit: ce1ab8a25c66a83e60eab80ed8e1596fe66dd85c
+ms.openlocfilehash: eb1dbbcc4adf8305aad119ac8a4cb223e0f89902
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/29/2019
-ms.locfileid: "68605450"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180275"
 ---
 # <a name="options-dialog-box-environment--general"></a>Caixa de diálogo Opções: Ambiente \> Geral
 
@@ -62,7 +62,7 @@ Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se
 ::: moniker range="vs-2017"
 
 > [!TIP]
-> O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. É recomendável **ativar** essa configuração se o Visual Studio ficar desfocado no monitor. Considere atualizar para o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), que melhorou significativamente a nitidez de exibição por ser um aplicativo com suporte a pontos por polegada por monitor.
+> O Windows 10 tem uma configuração que diz **Permitir que o Windows tente corrigir aplicativos para que eles não fiquem desfocados**. É recomendável **ativar** essa configuração se o Visual Studio ficar desfocado no monitor. Considere atualizar para o [Visual Studio 2019](https://visualstudio.microsoft.com/downloads), que melhorou significativamente a nitidez de exibição por ser um aplicativo com suporte a pontos por polegada por monitor.
 
 ::: moniker-end
 
