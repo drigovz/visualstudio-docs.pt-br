@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c137b6bd8a38ac606a547ce961c4f040e60c6d87
-ms.sourcegitcommit: 9753c7544cec852ca5efd0834e0956d9e53a5734
+ms.openlocfilehash: 24bbfd276b30444742b329f30c346ac1857c2cc9
+ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/13/2019
-ms.locfileid: "67043356"
+ms.lasthandoff: 08/29/2019
+ms.locfileid: "70154962"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Trabalhar com Python no Visual Studio no Windows
 
@@ -157,7 +157,7 @@ Para saber mais:
 
 As bibliotecas do Azure para Python simplificam o consumo de serviços do Azure em aplicativos do Windows, do Mac OS X e do Linux. Você pode usá-las para criar e gerenciar recursos do Azure, bem como para se conectar aos serviços do Azure. 
 
-Para obter mais informações, confira [SDK do Azure para Python](/python/azure/?view=azure-python) e [Bibliotecas do Azure para Python](/python/azure/python-sdk-azure-overview?view=azure-python).
+Para obter mais informações, confira [SDK do Azure para Python](/azure/python/) e [Bibliotecas do Azure para Python](/azure/python/python-sdk-azure-overview).
 
 ## <a name="questions-and-answers"></a>Perguntas e respostas
 

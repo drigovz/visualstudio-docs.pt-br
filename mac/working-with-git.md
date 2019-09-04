@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: b047222f67d75bbc092a731c8de1ca1ba6d94cf7
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
+ms.openlocfilehash: 767c08505877391d71ca085097a0464d516f4f24
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67692159"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108021"
 ---
 # <a name="working-with-git"></a>Trabalhando com Git
 
@@ -59,7 +59,7 @@ Elas permitem executar as seguintes ações:
 
 ## <a name="switching-branches"></a>Alternar os branches
 
-Por padrão, o primeiro branch criado em um repositório é conhecido como o branch **Mestre** . Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
+Por padrão, o primeiro branch criado em um repositório é conhecida como o branch **Mestre**. Tecnicamente não há nada diferente entre o branch mestre e os demais, porém o branch mestre é aquele que geralmente é considerado “dinâmico” ou “produção” pelas equipes de desenvolvimento.
 
 Uma linha independente de desenvolvimento pode ser criada derivando-a do Mestre (ou de qualquer outro branch). Isso fornece uma nova versão pontual do branch mestre, permitindo desenvolvimento independentemente de qual deles é “dinâmico”. É comum usar branches dessa forma para recursos no desenvolvimento de software
 

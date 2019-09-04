@@ -4,15 +4,14 @@ description: Usando o Azure Functions no Visual Studio para Mac.
 author: conceptdev
 ms.author: crdun
 ms.date: 05/06/2018
-ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1a2dd0f797d362edf5d75f798ff4578cc3c2b50c
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934287"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108004"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
 
@@ -226,7 +225,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
     "generatedBy":"Microsoft.NET.Sdk.Functions-1.0.13",
     ```
 
-1. No final da primeira associação (após a linha **"name": "req"**), adicione as propriedades abaixo. Não deixe de incluir uma vírgula na linha anterior. Essa propriedade substitui a raiz padrão, de forma que agora os parâmetros **int** serão extraídos do caminho e colocados nos parâmetros de método chamados **x** e **y**.
+1. No final da primeira associação (após a linha **"name": "req"** ), adicione as propriedades abaixo. Não deixe de incluir uma vírgula na linha anterior. Essa propriedade substitui a raiz padrão, de forma que agora os parâmetros **int** serão extraídos do caminho e colocados nos parâmetros de método chamados **x** e **y**.
 
     ```json
     "direction": "in",
@@ -243,7 +242,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
     }
     ```
 
-1. Atualize também a propriedade **entryPoint** na parte inferior do arquivo para usar um método chamado **"Add2"**, como mostrado abaixo. Isso ilustra que o caminho **api/Adder...** pode ser mapeado para um método apropriado com qualquer nome (**Add2** aqui).
+1. Atualize também a propriedade **entryPoint** na parte inferior do arquivo para usar um método chamado **"Add2"** , como mostrado abaixo. Isso ilustra que o caminho **api/Adder...** pode ser mapeado para um método apropriado com qualquer nome (**Add2** aqui).
 
     ```json
     "entryPoint": "<project-name>.<function-class-name>.Add2"
@@ -299,7 +298,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![URL para funções Http](media/azure-functions-lab-image31.png)
 
-1. Retorne para a janela do navegador e navegue até **http://localhost:7071/api/Adder/3/5**.
+1. Retorne para a janela do navegador e navegue até **http://localhost:7071/api/Adder/3/5** .
 
 1. Dessa vez, o método funciona mais uma vez, obtendo os parâmetros do caminho e produzindo uma soma.
 
@@ -348,7 +347,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
 
 1. Pressione **F5** para criar e executar o projeto.
 
-1. Na guia do navegador, navegue até **http://localhost:7071/api/Process/4/6**. Isso colocará outra mensagem na fila, o que deve fazer com que outra linha seja adicionada à tabela.
+1. Na guia do navegador, navegue até **http://localhost:7071/api/Process/4/6** . Isso colocará outra mensagem na fila, o que deve fazer com que outra linha seja adicionada à tabela.
 
 1. Retorne ao **Terminal** e observe a solicitação de entrada de **4 + 6**.
 
@@ -381,11 +380,11 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
 
 1. Pressione **F5** para criar e executar o projeto.
 
-1. Na guia do navegador, atualize a URL em **http://localhost:7071/api/Process/4/6**. Como a linha da tabela para este registro existe, ela deve ser retornada imediatamente em erros. Como não há uma saída HTTP, você pode ver a saída no Terminal.
+1. Na guia do navegador, atualize a URL em **http://localhost:7071/api/Process/4/6** . Como a linha da tabela para este registro existe, ela deve ser retornada imediatamente em erros. Como não há uma saída HTTP, você pode ver a saída no Terminal.
 
     ![Saída do Terminal mostrando que a linha da tabela já existe](media/azure-functions-lab-image33.png)
 
-1. Atualize a URL para refletir uma combinação que ainda não foi testada, como **http://localhost:7071/api/Process/5/7**. Observe a mensagem no Terminal, que indica que a linha da tabela não foi encontrada (conforme esperado).
+1. Atualize a URL para refletir uma combinação que ainda não foi testada, como **http://localhost:7071/api/Process/5/7** . Observe a mensagem no Terminal, que indica que a linha da tabela não foi encontrada (conforme esperado).
 
     ![Saída do Terminal mostrando novo processo](media/azure-functions-lab-image34.png)
 

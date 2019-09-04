@@ -4,15 +4,14 @@ description: Conexão do Visual Studio para Mac ao Team Foundation Server/Azure 
 author: conceptdev
 ms.author: crdun
 ms.date: 06/25/2019
-ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
-ms.openlocfilehash: 52b40f8dbf24dd1e712bd0481e36f39cfcc1fc7d
-ms.sourcegitcommit: 9d3529e40438ca45dcb0b31742c4cd5a89daa61e
+ms.openlocfilehash: fa269285cf11df848f842524e0d3d496a67b7469
+ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/26/2019
-ms.locfileid: "67398995"
+ms.lasthandoff: 08/28/2019
+ms.locfileid: "70108229"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -218,7 +217,7 @@ Para configurar seu projeto remoto com um workspace local, use as seguintes etap
 
     ![Caixa de diálogo Criar Workspace, mostrando as opções padrão](media/tfvc-workspace1.png)
 
-1. Selecione a pasta "$" para mapear todos os projetos em seu servidor para o mesmo espaço de trabalho ou selecione um projeto individual e clique em **OK**:
+1. Selecione a pasta &quot;$&quot; para mapear todos os projetos em seu servidor para o mesmo workspace ou selecione um projeto individual e clique em **OK**:
 
     ![Navegue para a caixa de diálogo de pasta mostrando todos os projetos](media/tfvc-workspace2.png)
 
