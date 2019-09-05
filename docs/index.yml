@@ -8,12 +8,12 @@ metadata:
   description: Saiba como usar o Visual Studio para desenvolver aplicativos, serviços e ferramentas na linguagem de sua escolha, para qualquer plataforma ou dispositivo.
   ms.topic: hub-page
   monikerRange: '>=vs-2017'
-  ms.openlocfilehash: b24bc5b3e1427a6f3675398e05a639b45c376571
-  ms.sourcegitcommit: d2b234e0a4a875c3cba09321cdf246842670d872
+  ms.openlocfilehash: 22c6d731d3c7bfaefb6ee0d89d7bae088d86c035
+  ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
   ms.translationtype: HT
   ms.contentlocale: pt-BR
-  ms.lasthandoff: 07/01/2019
-  ms.locfileid: "67493713"
+  ms.lasthandoff: 09/03/2019
+  ms.locfileid: "70222668"
 highlightedContent:
   items:
   - title: Instalação e configuração
@@ -135,7 +135,7 @@ additionalContent:
       summary: Execute testes em seus projetos.
       url: test/improve-code-quality.md
     - title: Implantar
-      summary: Compartilhe seus aplicativos usando a implantação da Web, InstallShield e a integração contínua e muito mais.
+      summary: Compartilhe seus aplicativos e seu código usando a Implantação da Web, InstallShield, NuGet, Integração Contínua e mais.
       url: deployment/index.md
     - title: Controle de versão
       summary: Compartilhe código usando tecnologias de controle de versão, como Git e TFVC.
@@ -150,7 +150,7 @@ additionalContent:
       summary: Adicione sua própria funcionalidade ao IDE do Visual Studio para melhorar sua experiência de desenvolvimento.
       url: extensibility/index.md
     - title: Dados
-      summary: Crie aplicativos de dados que se conectem a qualquer banco de dados ou serviço e em praticamente qualquer lugar, no local ou na nuvem.
+      summary: Crie aplicativos de dados que se conectem a qualquer banco de dados ou serviço e em qualquer lugar – no local ou na nuvem.
       url: data-tools/accessing-data-in-visual-studio.md
     - title: Colaboração
       summary: Compartilhar, editar e depurar o código em um ambiente de colaboração em tempo real.
@@ -192,7 +192,7 @@ additionalContent:
         url: cross-platform/visual-studio-tools-for-unity.md
       - text: Desenvolvimento móvel com JavaScript
         url: /visualstudio/cross-platform/tools-for-cordova/?view=toolsforcordova-2017
-        note: (Visual Studio 2017 and 2015 only)
+        note: (apenas Visual Studio 2017 e 2015)
       - text: Desenvolvimento móvel com C++
         url: /visualstudio/cross-platform/
       - text: Desenvolvimento de jogos com C++
