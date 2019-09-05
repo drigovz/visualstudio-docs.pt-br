@@ -17,20 +17,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 38a243c965199e75622ceff43e742424d3e4977a
-ms.sourcegitcommit: 92a04c57ac0a49f304fa2ea5043436f30068c3cd
+ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
+ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/21/2019
-ms.locfileid: "65976209"
+ms.lasthandoff: 08/30/2019
+ms.locfileid: "70180008"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar a uma "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio e os Serviços do Azure.
 
-* **[Instalar o Visual Studio](#install-visual-studio)**: Essas tabelas incluem as URLs de domínio a adicionar a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
+* **[Instalar o Visual Studio](#install-visual-studio)** : Essas tabelas incluem as URLs de domínio a adicionar a uma lista de permissões para que você tenha acesso a todos os componentes e cargas de trabalho desejados.
 
-* **[Usar o Visual Studio e os Serviços do Azure](#use-visual-studio-and-azure-services)**: Essa tabela inclui as URLs de domínio a adicionar a uma lista de permissões e as portas e os protocolos a serem abertos, para que você tenha acesso a todas as funcionalidades e serviços desejados.
+* **[Usar o Visual Studio e os Serviços do Azure](#use-visual-studio-and-azure-services)** : Essa tabela inclui as URLs de domínio a adicionar a uma lista de permissões e as portas e os protocolos a serem abertos, para que você tenha acesso a todas as funcionalidades e serviços desejados.
 
 > [!NOTE]
 > Este artigo foi escrito para o Visual Studio no Windows, mas determinadas informações também são aplicáveis à [instalação do Visual Studio para Mac](/visualstudio/mac/install-behind-a-firewall-or-proxy-server) por trás de um firewall ou de um servidor proxy.
@@ -83,7 +83,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o Visual Studio ou Serviços do Azure por trás de um firewall ou servidor proxy, aqui estão as URLs que devem ser adicionadas a uma lista de permissões e as portas e protocolos que talvez você deseje abrir.
 
-| Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | Descrição |
+| Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | DESCRIÇÃO |
 | - | - | - | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
 | Start Page | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
@@ -101,7 +101,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | NuGet<br><br>Pacote NuGet<br> descoberta | Api.nuget.org <br>www.nuget.org <br>Nuget.org<br><br>crl3.digicert.com <br>crl4.digicert.com <br>ocsp.digicert.com <br>cacerts.digicert.com | HTTPS<br><br>http/s | 443<br><br>80/443<br> | Usada para verificar pacotes NuGet assinados.<br><br>Necessária para pesquisar versões e pacotes NuGet |
 | Informações do repositório GitHub | api.github.com | HTTPS | 443 | Necessária para obter informações adicionais sobre pacotes de Bower |
 | Linters da Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | HTTP | 80 | |
-| Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
+| Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
 | Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Novo <br>Python <br> projeto <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br>Usada para resolver os seguintes novos modelos de projeto do Python para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
 | Web do Office <br>add-in <br> Manifest <br>Verificação <br>Serviço | verificationservice.osi.office.net | HTTPS | 443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>e do Office | sharepoint.com | HTTPS | 443 | Usada para publicar e testar o SharePoint e os Suplementos do Office para o SharePoint Online |
@@ -122,7 +122,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | HTTPS | 443 | Usada para exibir, enviar, executar e gerenciar trabalhos ASA <br><br> Usada para navegar em clusters HDI e enviar, diagnosticar e depurar trabalhos HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPS | 443 | Usada para compilar, enviar, exibir, diagnosticar e depurar os trabalhos, usada para navegar em arquivos ADLS, usada para carregar e baixar arquivos |
 | Empacotar serviço | [conta].visualstudio.com <br/> [conta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | O \*.npmjs.org, \*.nuget.org e \*.nodejs.org só são necessários para determinados cenários de tarefas de build (por exemplo: Instalador de Ferramenta do NuGet, Instalador de Ferramenta do Node) ou se você pretende usar upstreams públicos com seus Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
-| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com | | | Usado para conectar-se ao Azure DevOps Services |
+| Azure DevOps Services | \*.vsassets.io <br/> static2.sharepointonline.com <br/> dev.azure.com | | | Usado para conectar-se ao Azure DevOps Services |
 | | | | | |
 
 ## <a name="troubleshoot-network-related-errors"></a>Solucionar problemas de erros relacionados à rede
