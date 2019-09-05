@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f494674acdf8b272029ad02a762897b379212ae4
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
-ms.translationtype: HT
+ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
+ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533354"
+ms.lasthandoff: 09/03/2019
+ms.locfileid: "70222617"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
@@ -96,6 +96,13 @@ No Visual Studio, você pode criar pacotes de aplicativos para implantação na 
 - **Área de Trabalho do Windows**: Realize a implantação na Microsoft Store usando a Ponte de Desktop no Visual Studio 2017 versão 15.4 e posterior. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
 
     ![Ponte de Desktop](../deployment/media/feature-tour-desktop-bridge.png)
+
+## <a name="deploy-net-packages-to-nugetorg"></a>Implantar pacotes .NET no NuGet.org
+
+Para implantar código em "pacotes" que contenham código compilado (como as DLLs) e outro conteúdo necessário para projetos que consumam esses pacotes, você pode usar o Visual Studio para criar o pacote NuGet e uma ferramenta de CLI tool para emitir o comando final de implantação.
+
+- [Criar e publicar um pacote do .NET Standard](/nuget/quickstart/create-and-publish-a-package-using-visual-studio)
+- [Criar e publicar um pacote do .NET Framework](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework)
 
 ## <a name="deploy-to-a-device-uwp"></a>Implantar em um dispositivo (UWP)
 
