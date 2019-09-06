@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/21/2019
 ms.topic: conceptual
 description: Saiba como contatar o administrador da assinatura para obter assistência em caso de dúvidas ou problemas.
-ms.openlocfilehash: cc6ce20d97531cca7c6b08d82ba949fb19e6bddc
-ms.sourcegitcommit: c90a998716b3dfa614dedc61a1bea515364efbec
-ms.translationtype: HT
+ms.openlocfilehash: a1769140db7800798c91d583f835e3cad8488397
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/23/2019
-ms.locfileid: "70000966"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293532"
 ---
 # <a name="get-assistance-from-your-subscriptions-adminstrator"></a>Obter assistência do administrador de assinaturas
 Caso sua assinatura do Visual Studio seja fornecida pelo trabalho ou pela escola, provavelmente, ela foi atribuída a você por um administrador de assinaturas ou "administrador".  Os administradores podem atribuir ou remover assinaturas, alterar endereços de email de credenciais, determinar se você tem a capacidade de baixar software e executar outras funções relacionadas à sua assinatura.
@@ -27,6 +27,9 @@ Considerando o porte e a complexidade de muitas organizações, você pode não 
 4. Insira a mensagem para o administrador.
 5. Caso deseje receber uma cópia da mensagem enviada ao administrador, clique na caixa de seleção **Enviar-me uma cópia**. 
 6. Por fim, clique em **Enviar**.
+
+> [!NOTE]
+> **Superadministradores:**  Para definir o endereço de email para o qual as solicitações "contatar meu administrador" são enviadas, especifique esse endereço nas [preferências de contrato](admin-prefs.md#contact-email-address).
 
 ## <a name="resources"></a>Recursos
 - [Suporte à administração e às assinaturas do Visual Studio](https://visualstudio.microsoft.com/support/support-overview-vs)
