@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 08/20/2019
+ms.date: 09/04/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d9d67ce7365a60bd744e0237d95b41f9dea2c641
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: e498e5667a7467c1621b10549cb1f67e6583a05b
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891313"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383725"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,7 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.0 | Versão Prévia 3 | 4 de setembro de 2019 | 16.3.29230.61 |
 | 16.2.3 | Versão | 20 de agosto de 2019 | 16.2.29215.179 |
 | 16.2.2 | Versão | 13 de agosto de 2019 | 16.2.29209.62 |
 | 16.3.0 | Preview 2 | 13 de agosto de 2019 | 16.3.29209.152 |
@@ -186,7 +187,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.5.1 | Versão | 7 de dezembro de 2017 | 15.0.27130.2003 |
 | 15.6.0 Versão Prévia 1 | Visualizar | 7 de dezembro de 2017 | 15.6.27205.0 |
 | 15.0.7 | Versão | 6 de dezembro de 2017 | 15.0.26228.18 |
-| 15.5 | Versão | 4 de dezembro de 2017 | 15.0.27130.0 |
+| 15.5.0 | Versão | 4 de dezembro de 2017 | 15.0.27130.0 |
 | 15.5.0 Versão Prévia 5 | Visualizar | 30 de novembro de 2017 | 15.0.27128.1 |
 | 15.4.5 | Versão | 27 de novembro de 2017 | 15.0.27004.2010 |
 | 15.5.0 Versão Prévia 4 | Visualizar | 14 de novembro de 2017 | 15.0.27110.0 |
@@ -198,7 +199,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.5.0 Versão Prévia 2 | Visualizar | 23 de outubro de 2017 | 15.0.27019.1 |
 | 15.4.1 | Versão | 19 de outubro de 2017 | 15.0.27004.2005 |
 | 15.5 Versão prévia 1 | Visualizar | 11 de outubro de 2017 | 15.0.27009.1 |
-| 15.4 | Versão | 9 de outubro de 2017 | 15.0.27004.2002 |
+| 15.4.0 | Versão | 9 de outubro de 2017 | 15.0.27004.2002 |
 | 15.4 Versão prévia 6 | Visualizar | 9 de outubro de 2017| 15.0.27004.20002 |
 | 15.4 Versão prévia 5 | Visualizar | 6 de outubro de 2017 | 15.0.27004.2000 |
 | 15.4 Versão prévia 4 | Visualizar | 2 de outubro de 2017 | 15.0.26929.2 |
@@ -214,7 +215,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.3.1 Versão prévia 1 | Visualizar | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.3.1  | Versão | 18 de agosto de 2017 | 15.0.26730.08 |
 | 15.4 Versão prévia 1 | Visualizar | 24 de agosto de 2017 | 15.0.26823.1 |
-| 15.3 | Versão | 14 de agosto de 2017 | 15.0.26730.3 |
+| 15.3.0 | Versão | 14 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 Versão prévia 7.1 | Visualizar | 11 de agosto de 2017 | 15.0.26730.3 |
 | 15.3 Versão prévia 7 | Visualizar | 1 de agosto de 2017 | 15.0.26730.0 |
 | 15.3 Versão prévia 6 | Visualizar | 26 de julho de 2017 | 15.0.26724.1 |
@@ -232,14 +233,14 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 | 15.2.1  | Versão | 12 de maio de 2017 | 15.0.26430.6 |
 | 15.3 Versão prévia 1.1 | Visualizar | 11 de maio de 2017 | 15.0.26510.0 |
 | 15.3 Versão prévia 1 | Visualizar | 10 de maio de 2017 | 15.0.26507.0 |
-| 15.2 | Versão | 10 de maio de 2017 | 15.0.26430.4 |
+| 15.2.0 | Versão | 10 de maio de 2017 | 15.0.26430.4 |
 | 15.2 Versão prévia 4 | Visualizar | 3 de maio de 2017 | 15.0.26430.1 |
 | 15.2 Versão prévia 3 | Visualizar | 26 de abril de 2017 | 15.0.26424.2 |
 | 15.2 Versão prévia 2 | Visualizar | 20 de abril de 2017 | 15.0.26419.1 |
 | 15.2 Versão prévia 1 | Visualizar | 17 de abril de 2017 | 15.0.26412.1 |
 | 15.1.2  | Versão | 17 de abril de 2017 | 15.0.26403.7 |
 | 15.1.1 | Versão | 10 de abril de 2017 | 15.0.26403.3 |
-| 15.1 | Versão | 5 de abril de 2017 | 15.0.26403.0 |
+| 15.1.0 | Versão | 5 de abril de 2017 | 15.0.26403.0 |
 | 15.0.3  | Versão | 31 de março de 2017 | 15.0.26228.12 |
 | 15.0.2 | Versão | 28 de março de 2017 | 15.0.26228.10 |
 | 15.1 Versão prévia 3 | Visualizar | 27 de março de 2017 | 15.0.26323.1 |

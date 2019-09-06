@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6d9fd531016a4ac5784f927641a181ac05e4c9ae
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+ms.openlocfilehash: de92c3f1f0d0e29d1ba2dfaf5d536a42e636be2c
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68661862"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383747"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>Gerenciar pacotes de npm no Visual Studio
 
@@ -31,7 +31,10 @@ O Visual Studio facilita a interação com o npm e emite comandos do npm diretam
 Esses recursos funcionam juntos e são sincronizados com o sistema de projeto e o arquivo *package.json* no projeto.
 
 > [!Important]
-> O NPM espera a pasta *node_modules* e o arquivo *package.json* na raiz do projeto. Se a estrutura de pastas do aplicativo for diferente, você poderá [abrir o projeto como uma pasta](npm-package-management.md) ou então atualizar sua estrutura de pastas se desejar gerenciar pacotes npm usando o Visual Studio.
+> O NPM espera a pasta *node_modules* e o arquivo *package.json* na raiz do projeto. Se a estrutura de pastas do aplicativo for diferente, você deverá atualizar sua estrutura de pastas se quiser gerenciar pacotes NPM usando o Visual Studio.
+
+> [!NOTE]
+> Para projetos NPM existentes, use o modelo **de solução de código do node. js existente** .
 
 ## <a name="npmInstallWindow"></a> Instalar os pacotes usando o Gerenciador de Soluções
 

@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e102636793c306a4e8141294ad2573b57f03e889
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: ac150e20b505a5ef4446e77761790a6111fb6c10
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180008"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293508"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -43,7 +43,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 #### <a name="microsoft-domains"></a>Domínios da Microsoft
 
-| Domain | Finalidade |
+| Domínio | Finalidade |
 | - | - |
 | go.microsoft.com | Resolução da URL de instalação |
 | aka.ms | Resolução da URL de instalação |
@@ -63,7 +63,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 #### <a name="non-microsoft-domains"></a>Domínios que não são da Microsoft
 
-| Domain | Instala essas cargas de trabalho |
+| Domínio | Instala essas cargas de trabalho |
 | - | - |
 | archive.apache.org | Desenvolvimento móvel com JavaScript (Cordova) |
 | cocos2d-x.org | Desenvolvimento de jogos com C++ (Cocos) |
@@ -83,7 +83,7 @@ Como o Instalador do Visual Studio baixa arquivos de vários domínios e seus se
 
 Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o Visual Studio ou Serviços do Azure por trás de um firewall ou servidor proxy, aqui estão as URLs que devem ser adicionadas a uma lista de permissões e as portas e protocolos que talvez você deseje abrir.
 
-| Cenário ou serviço | Ponto de extremidade DNS | Protocolo | Porta | DESCRIÇÃO |
+| Cenário ou serviço | Ponto de extremidade DNS | Protocol | Porta | Descrição |
 | - | - | - | - | - |
 | URL<br>resolução | go.microsoft.com<br><br>aka.ms | | | Usada para reduzir as URLs, que, em seguida, resolvem em URLs mais longas |
 | Start Page | vsstartpage.blob.core.windows.net | | 443 | Usada para exibir as Novidades do Desenvolvedor mostradas na página inicial (somente Visual Studio 2017) |
@@ -118,7 +118,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Explorador de nuvem | 1. &#60;ponto de extremidade do cluster&#62; <br>Service Fabric <br>2. &#60;ponto de extremidade de gerenciamento&#62;<br>General Cloud Exp <br>3. &#60;ponto de extremidade do grafo&#62;<br>General Cloud Exp<br>4. &#60;ponto de extremidade da conta de armazenamento&#62;<br>Nós de Armazenamento <br>5. &#60;Azure portal URLs&#62;<br>Exp. de nuvem geral <br>6. &#60;pontos de extremidade do key vault&#62; <br>Nós de VM do Azure Resource Manager<br>7. &#60;Endereço de IP pública do cluster&#62;<br>Depuração remota do Service Fabric e Rastreamentos de ETW | <br>1. https<br>2. https<br>3. https<br>4. https<br>5. https<br>6. https<br>7: tcp | 1. 19080<br>2. 443 <br>3. 443 <br>4. 443 <br>5. 443 <br>6. 443 <br>7. dinâmica | 1. Exemplo: test12.eastus.cloudapp.com<br>2. Recupera as assinaturas e recupera/gerencia recursos do Azure<br>3. Recupera assinaturas do Azure Stack<br>4. Gerencia recursos de armazenamento (exemplo: mystorageaccount.blob.core.windows.net)<br>5. Opção do menu de contexto “Abrir no Portal” (Abre um recurso no Portal do Azure)<br>6. Cria e usa cofres de chaves para a depuração de VM (exemplo: myvault.vault.azure.net) <br><br>7. Aloca dinamicamente o bloco de portas com base no número de nós no cluster e as portas disponíveis. <br><br>Um bloco de portas tentará obter três vezes o número dos nós com um mínimo de 10 portas.<br><br>Para rastreamentos de Streaming, é feita uma tentativa para obter o bloco de portas de 810. Se qualquer um dos blocos de portas já estiver em uso, será feita uma tentativa de obter o próximo bloco e assim por diante. (O balanceador de carga está vazio, então as portas de 810 provavelmente serão usadas) <br><br>Da mesma forma para depuração, quatro conjuntos de blocos de portas são reservados: <br>- connectorPort: 30398, <br>- forwarderPort: 31398, <br>- forwarderPortx86: 31399,<br>- fileUploadPort: 32398<br> |
 | Serviços de Nuvem | 1. RDP<br><br>2. core.windows.net <br><br>3. management.azure.com<br> management.core.windows.net <br><br>4. &#42;.blob.core.windows.net <br>&#42;.queue.core.windows.net<br>&#42;.table.core.windows.net <br><br>5. portal.azure.com <br><br>6. &#60;serviço de nuvem do usuário&#62;.cloudapp.net <br> &#60;VM do usuário&#62;.&#60;região&#62;.azure.com | 1. rdp <br><br> 2. https <br><br> 3. https <br><br> 4. https <br><br> 5. https <br><br>6. tcp | 1. 3389 <br><br> 2. 443 <br><br> 3. 443 <br><br>4. 443 <br><br>5. 443 <br><br> 6. a) 30398 <br> 6. b) 30400 <br> 6. c) 31398 <br> 6. d) 31400 <br> 6. e) 32398 <br> 6. f) 32400 | 1.  Área de Trabalho Remota com VM de Serviços de Nuvem <br><br> 2.  Componente de conta de armazenamento da configuração de diagnóstico privada <br><br> 3.  Portal do Azure <br><br> 4. Gerenciador de Servidores – Armazenamento do Azure &#42; é a conta de armazenamento nomeada do usuário  <br><br> 5.  Links para abrir o portal &#47; Baixar o certificado de assinatura &#47; Publicar arquivos de configurações <br><br>6. a) Porta local do conector para depuração remota para serviço de nuvem e VM<br> 6. b) Porta pública do conector para depuração remota para serviço de nuvem e VM <br> 6. c) Porta local do encaminhador para depuração remota para serviço de nuvem e VM <br> 6. d) Porta pública do encaminhador para depuração remota para serviço de nuvem e VM  <br> 6. e) Porta local do carregador de arquivos para depuração remota para serviço de nuvem e VM <br> 6. f) Porta pública do carregador de arquivos para depuração remota para serviço de nuvem e VM |
 | Service Fabric | 1. <br>ocs.Microsoft.com<br>aka.ms <br>go.microsoft.com <br><br>2. <br>vssftools.blob.core.windows.net <br>Vault.azure.com <br>Portal.azure.com <br><br> 3. &#42; vault.azure.net<br><br> 4. <br>app.vsaex.visualstudio.com<br>&#42; .vsspsext.visualstudio.com<br>clouds.vsrm.visualstudio.com <br>clouds.visualstudio.com<br>app.vssps.visualstudio.com <br>&#42; .visualstudio.com | HTTPS | 443 | 1. Documentação <br><br> 2. Criar o recurso de cluster <br><br>3. O &#42; é o nome do Azure Key Vault (Exemplo: test11220180112110108.vault.azure.net  <br><br>  4. O &#42; é dinâmico (Exemplo: vsspsextprodch1su1.vsspsext.visualstudio.com) |
-| Instantâneo <br>Depurador | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependente da versão do Visual Studio) | 1. Consultar arquivo .json para o tamanho do SKU do serviço de aplicativo <br>2. Várias chamadas do RM do Azure <br>3. Chamada de aquecimento do site por meio de  <br>4. Ponto de extremidade Kudu do Serviço de Aplicativo de destino do cliente <br>5. Consultar versão da Extensão de Site publicada em nuget.org <br>6. Canal de depuração remota |
+| Instantâneo <br>Depurador | 1. go.microsoft.com <br>2. management.azure.com <br> 3. &#42;azurewebsites.net <br> 4. &#42;scm.azurewebsites.net<br>5. api.nuget.org/v3/index.json <br>6. msvsmon (. exe) | 1. https <br>2. https  <br>3. http <br>4. https <br>5. https <br>6. Concord <br> | 1. 443<br> 2. 443<br>3. 80  <br>4. 443<br> 5. 443<br> 6. 4022 (dependente da versão do Visual Studio) | 1. Consultar arquivo .json para o tamanho do SKU do serviço de aplicativo <br>2. Várias chamadas do RM do Azure <br>3. Chamada de aquecimento do site por meio de  <br>4. Ponto de extremidade Kudu do Serviço de Aplicativo de destino do cliente <br>5. Consultar versão da Extensão de Site publicada em nuget.org <br>6. Canal de depuração remota |
 | Azure Stream Analytics <br><br>HDInsight | Management.azure.com | HTTPS | 443 | Usada para exibir, enviar, executar e gerenciar trabalhos ASA <br><br> Usada para navegar em clusters HDI e enviar, diagnosticar e depurar trabalhos HDI |
 | Azure Data Lake | &#42;.azuredatalakestore.net <br>&#42;.azuredatalakeanalytics.net | HTTPS | 443 | Usada para compilar, enviar, exibir, diagnosticar e depurar os trabalhos, usada para navegar em arquivos ADLS, usada para carregar e baixar arquivos |
 | Empacotar serviço | [conta].visualstudio.com <br/> [conta].\*.visualstudio.com <br/> \*.blob.core.windows.net <br/> registry.npmjs.org </br> nodejs.org <br/> dist.nuget.org <br/> nuget.org | HTTPS | 443 | O \*.npmjs.org, \*.nuget.org e \*.nodejs.org só são necessários para determinados cenários de tarefas de build (por exemplo: Instalador de Ferramenta do NuGet, Instalador de Ferramenta do Node) ou se você pretende usar upstreams públicos com seus Feeds. Os outros três domínios são necessários para a funcionalidade principal do serviço de empacotamento. |
