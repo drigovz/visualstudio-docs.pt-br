@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 author: gewarren
-ms.openlocfilehash: 2c7a81eefc48626a57d15f99579e151390b52fb9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: 4b9e30d70aa90645d05d3bf7b530056feec752ca
+ms.sourcegitcommit: 9f11537a721e69879a612979a1aca98f40bb4d4d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926796"
+ms.lasthandoff: 09/05/2019
+ms.locfileid: "70383716"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>Passo a passo: Criar e executar testes de unidade para código gerenciado
 
@@ -429,7 +429,7 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 ### <a name="retest-rewrite-and-reanalyze"></a>Testar, gravar e analisar novamente
 
-Suponha que haja um bug no método em teste e que o método `Debit` ainda não gerou uma <xref:System.ArgumentOutOfRangeException>. Desconsidere a geração da mensagem correta com a exceção. Atualmente, o método de teste não lida com esse caso. Se o valor `debitAmount` for válido (ou seja, menor que o saldo mas maior que zero), nenhuma exceção será capturada e, portanto, a declaração nunca será acionada. Ainda assim, o método de teste é aprovado. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
+Suponha que haja um bug no método em teste e que o método `Debit` ainda não gerou uma <xref:System.ArgumentOutOfRangeException>. Desconsidere a geração da mensagem correta com a exceção. Atualmente, o método de teste não lida com esse caso. Se o `debitAmount` valor for válido (ou seja, menor que o saldo e maior que zero), nenhuma exceção será detectada, portanto, o Assert nunca é acionado. Ainda assim, o método de teste é aprovado. Isso não é bom, pois você deseja que o método de teste falhe se nenhuma exceção é gerada.
 
 Esse é um bug no método de teste. Para resolver o problema, adicione uma declaração <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> ao final do método de teste para lidar com o caso em que nenhuma exceção é gerada.
 

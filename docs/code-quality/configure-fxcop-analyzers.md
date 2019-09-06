@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d5fb41648a2cd2dbd844bfb0fa426fa704042f
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 68c175a55c9e60e870a5466a831aaae50d62dced
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551150"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293442"
 ---
 # <a name="configure-fxcop-analyzers"></a>Configurar analisadores do FxCop
 
@@ -46,7 +46,10 @@ Para obter mais informações, consulte [conjuntos de regras para analisadores d
 
 ## <a name="editorconfig-file"></a>Arquivo EditorConfig
 
-Você pode configurar regras do analisador adicionando pares chave-valor a um arquivo [. editorconfig](https://editorconfig.org) . Um arquivo de configuração pode ser [específico para um projeto](#per-project-configuration) ou pode ser [compartilhado](#shared-configuration) entre dois ou mais projetos.
+Você pode configurar as regras do FxCop Analyzer adicionando pares de chave-valor a um arquivo [. editorconfig](https://editorconfig.org) . Um arquivo de configuração pode ser [específico para um projeto](#per-project-configuration) ou pode ser [compartilhado](#shared-configuration) entre dois ou mais projetos.
+
+> [!NOTE]
+> Não é possível configurar regras do FxCop herdadas usando um arquivo. editorconfig.
 
 ### <a name="per-project-configuration"></a>Configuração por projeto
 
@@ -61,7 +64,7 @@ Atualmente, não há suporte hierárquico para "combinar" arquivos. editorconfig
 
 ### <a name="shared-configuration"></a>Configuração compartilhada
 
-Você pode compartilhar um arquivo. editorconfig para a configuração do analisador entre dois ou mais projetos, mas requer algumas etapas adicionais.
+Você pode compartilhar um arquivo. editorconfig para a configuração do FxCop Analyzer entre dois ou mais projetos, mas ele requer algumas etapas adicionais.
 
 1. Salve o arquivo *. editorconfig* em um local comum.
 
@@ -90,7 +93,7 @@ Você pode compartilhar um arquivo. editorconfig para a configuração do analis
 4. Recarregue o projeto.
 
 > [!NOTE]
-> Não é possível configurar regras do FxCop herdadas usando um arquivo. editorconfig.
+> O local de compartilhamento arbitrário do arquivo EditorConfig descrito aqui se aplica somente à configuração de analisadores do FxCop. Para outras configurações, como recuo e estilo de código, o arquivo EditorConfig sempre deve ser colocado na pasta do projeto ou em uma pasta pai.
 
 ## <a name="option-scopes"></a>Escopos de opção
 

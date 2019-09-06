@@ -1,6 +1,6 @@
 ---
 title: Usar expressões regulares
-ms.date: 03/26/2018
+ms.date: 06/12/2019
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 755554b73fc80df151550f36e1846e07db70bcd8
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
-ms.translationtype: HT
+ms.openlocfilehash: aaea2e8a2c4fbbead563bd9565cf84466e00c75c
+ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222736"
+ms.lasthandoff: 09/04/2019
+ms.locfileid: "70293431"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Usar expressões regulares no Visual Studio
 
@@ -33,35 +33,35 @@ A tabela a seguir contém alguns caracteres de expressão regular, operadores, c
 
 |Finalidade|Expressão|Exemplo|
 |-------------|----------------|-------------|
-|Encontrar a correspondência de um único caractere (exceto uma quebra de linha). Para saber mais, veja [Qualquer caractere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o` corresponde a “aro” em “around” e “abo” em “about”, mas a não “acro” em “across”.|
+|Encontrar a correspondência de um único caractere (exceto uma quebra de linha). Para saber mais, veja [Qualquer caractere](/dotnet/standard/base-types/character-classes-in-regular-expressions#any-character-).|.|`a.o`corresponde a "toa" em "redor" e "Abo" em "sobre", mas não "quivos" em "em"|
 |Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis). Para saber mais, confira [Corresponder a zero ou mais vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-).|*|`a*r` corresponde a “r” em “rack”, “ar” em “ark” e “aar” em “aardvark”|
 |Corresponder qualquer caractere zero ou mais vezes (curinga \*)|.*|`c.*e` corresponde a "cke" em "racket", "comme" em "comment" e "code" em "code"|
-|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis). Para saber mais, confira [Corresponder a uma ou mais vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d` corresponde a "eed" em "feeder", mas não a "ed".|
-|Encontrar a correspondência de um caractere uma ou mais vezes (Curinga ?)|.+|`e.+e` corresponde a “eede” em “feeder”, mas não a “ee”.|
-|Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis). Para saber mais, confira [Corresponder a zero ou mais vezes (correspondência lenta)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e` corresponde a “ee” em “feeder”, mas não a “eede”.|
-|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis). Para saber mais, confira [Corresponder a uma ou mais vezes (correspondência lenta)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e` corresponde a “ente” e “erprise” em “enterprise”, mas não à palavra inteira “enterprise”.|
-|Ancorar a cadeia de caracteres de correspondência ao [início de uma linha ou uma cadeia de caracteres](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car` corresponde à palavra “car” somente quando ela aparece no início de uma linha.|
-|Ancorar a cadeia de caracteres de correspondência ao [final de uma linha](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$` corresponde a “end” somente quando aparece no final de uma linha.|
-|Ancorar a cadeia de caracteres de correspondência ao final do arquivo|$|`end$` corresponde a "end" somente quando aparece no final do arquivo.|
-|Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]` corresponde a “ba”, “bb” e “bc”.|
-|Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]` corresponde a “bet” em “between”, “ben” em “beneath” e “bes” em “beside”, mas não a “below”.|
+|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do máximo de caracteres possíveis). Para saber mais, confira [Corresponder a uma ou mais vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-).|+|`e.+d`corresponde a "eed" no "feeder", mas não em "Ed"|
+|Encontrar a correspondência de um caractere uma ou mais vezes (Curinga ?)|.+|`e.+e`corresponde a "EEDE" no "feeder", mas não em "ee"|
+|Encontrar a correspondência de zero ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis). Para saber mais, confira [Corresponder a zero ou mais vezes (correspondência lenta)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-zero-or-more-times-lazy-match-).|*?|`e.*?e`corresponde a "ee" no "feeder", mas não em "EEDE"|
+|Encontrar a correspondência de uma ou mais ocorrências da expressão anterior (encontrar a correspondência do mínimo de caracteres possíveis). Para saber mais, confira [Corresponder a uma ou mais vezes (correspondência lenta)](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-one-or-more-times-lazy-match-).|+?|`e.+?e`corresponde a "Insira" e "erprise" em "Enterprise", mas não a palavra inteira "Enterprise"|
+|Ancorar a cadeia de caracteres de correspondência ao [início de uma linha ou uma cadeia de caracteres](/dotnet/standard/base-types/anchors-in-regular-expressions#start-of-string-or-line-)|^|`^car`corresponde à palavra "Car" somente quando aparece no início de uma linha|
+|Ancorar a cadeia de caracteres de correspondência ao [final de uma linha](/dotnet/standard/base-types/anchors-in-regular-expressions#end-of-string-or-line-)|\r?$|`end\r?$`corresponde a "End" somente quando aparece no final de uma linha|
+|Ancorar a cadeia de caracteres de correspondência ao final do arquivo|$|`end$`corresponde a "End" somente quando ele aparece no final do arquivo|
+|Encontrar a correspondência de um único caractere em um conjunto|[abc]|`b[abc]`corresponde a "BA", "BB" e "BC"|
+|Encontrar a correspondência de um caractere em um intervalo de caracteres|[a-f]|`be[n-t]`corresponde a "aposta" em "between", "Ben" em "abaixo" e "BES" em "ao lado", mas não "abaixo"|
 |Capturar e numerar implicitamente a expressão contida entre parênteses|()|`([a-z])X\1` corresponde a “aXa” e “bXb”, mas não a “aXb”. “\1” se refere ao primeiro grupo de expressão “[a-z]”. Para saber mais, confira [Grupos de captura e padrões de substituição](#capture-groups-and-replacement-patterns). |
 |Invalidar uma correspondência|(?!abc)|`real(?!ity)` corresponde a “real” em “realty” e “really”, mas não a “reality”. Também encontra o segundo “real” (mas não o primeiro “real”) em “realityreal”.|
-|Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico. Para saber mais, veja [Negative Character Group (Grupo de caracteres negativos)](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]` corresponde a “bef” em “before”, “beh” em “behind” e “bel” em “below”, mas não a “beneath”.|
-|Encontrar a correspondência da expressão antes ou depois do símbolo|&#124;|`(sponge|mud) bath` corresponde a “sponge bath” e a “mud bath”.|
-|[Escapar o caractere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) após a barra invertida| \\ |`\^` corresponde ao caractere ^.|
-|Especificar o número de ocorrências do caractere ou do grupo anterior. Para saber mais, confira [Corresponder a exatamente n vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, em que “n” é o número de ocorrências|`x(ab){2}x` corresponde a “xababx”, e `x(ab){2,3}x` corresponde a “xababx” e “xabababx”, mas não a “xababababx”.|
-|[Corresponder ao texto em uma categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para saber mais sobre classes de caracteres Unicode, confira [Propriedades de caractere do Padrão Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, em que "X" é o número Unicode.|`\p{Lu}` corresponde a “T” e “D” em “Thomas Doe”.|
-|[Encontrar a correspondência de um limite de palavra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin` corresponde a “in” em “inside”, mas não em “pintor”.|
-|Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha)|\r?\n|`End\r?\nBegin` corresponde a “End” e “Begin” somente quando “End” é a última cadeia de caracteres em uma linha e “Begin” é a primeira cadeia de caracteres na próxima linha.|
-|Encontrar a correspondência de qualquer [caractere de palavra](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd` corresponde a “add” e “a1d”, mas não a “a d”.|
-|Encontrar a correspondência de um [caractere de espaço em branco](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface` corresponde à frase “Public Interface”.|
-|Encontrar a correspondência de qualquer [caractere de dígito decimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d` corresponde a “3” em “3456”, “2” em “23” e “1” em “1”.|
-|Encontrar a correspondência de um caractere Unicode|\uXXXX em que XXXX especifica o valor do caractere Unicode.|`\u0065` corresponde ao caractere “e”.|
-|Encontrar a correspondência de um identificador|\b[\_\w-[0-9]][\_\w]*\b|Corresponde a "type1", mas não a "&type1" nem "#define".|
-|Encontrar a correspondência de uma cadeia de caracteres entre aspas|((\\".+?\\")&#124;('.+?'))|Encontrar a correspondência de uma cadeia de caracteres entre aspas simples ou duplas.|
-|Encontrar a correspondência de um número hexadecimal|\b0[xX]([0-9a-fA-F]+\)\b|Corresponde a “0xc67f”, mas não a “0xc67g”.|
-|Encontrar a correspondência de inteiros e decimais|\b[0-9]*\\.\*[0-9]+\b|Encontrar a correspondência de “1.333”.|
+|Encontrar a correspondência de um caractere que não está em um conjunto de caracteres específico. Para saber mais, veja [Negative Character Group (Grupo de caracteres negativos)](/dotnet/standard/base-types/character-classes-in-regular-expressions#negative-character-group-).|[^abc]|`be[^n-t]`corresponde a "BEF" em "antes", "beh" em "atrás" e "rótulo" em "abaixo", mas não "abaixo"|
+|Encontrar a correspondência da expressão antes ou depois do símbolo|&#124;|`(sponge|mud) bath`corresponde a "banho de esponja" e "lama banho"|
+|[Escapar o caractere](/dotnet/standard/base-types/character-escapes-in-regular-expressions) após a barra invertida| \\ |`\^`corresponde ao caractere ^|
+|Especificar o número de ocorrências do caractere ou do grupo anterior. Para saber mais, confira [Corresponder a exatamente n vezes](/dotnet/standard/base-types/quantifiers-in-regular-expressions#match-exactly-n-times-n).|{n}, em que “n” é o número de ocorrências|`x(ab){2}x`corresponde a "xababx"<br/>`x(ab){2,3}x`corresponde a "xababx" e "xabababx", mas não a "xababababx"|
+|[Corresponder ao texto em uma categoria Unicode](/dotnet/standard/base-types/character-classes-in-regular-expressions#unicode-category-or-unicode-block-p). Para saber mais sobre classes de caracteres Unicode, confira [Propriedades de caractere do Padrão Unicode 5.2](http://www.unicode.org/versions/Unicode5.2.0/ch04.pdf).|\p{X}, em que "X" é o número Unicode.|`\p{Lu}`corresponde a "T" e "D" em "Thomas Doe"|
+|[Encontrar a correspondência de um limite de palavra](/dotnet/standard/base-types/anchors-in-regular-expressions#word-boundary-b)|\b (fora de uma classe de caractere, `\b` especifica um limite de palavra e, dentro de uma classe de caractere, `\b` especifica um backspace.)|`\bin`corresponde a "in" em "Inside", mas não "fixar"|
+|Encontrar a correspondência de uma quebra de linha (isto é, um retorno de carro seguido por uma nova linha)|\r?\n|`End\r?\nBegin`corresponde a "End" e "Begin" somente quando "End" é a última cadeia de caracteres em uma linha e "Begin" é a primeira cadeia de caracteres na linha seguinte|
+|Encontrar a correspondência de qualquer [caractere de palavra](/dotnet/standard/base-types/character-classes-in-regular-expressions#word-character-w)|\w|`a\wd`corresponde a "Add" e "A1D", mas não a "a d"|
+|Encontrar a correspondência de um [caractere de espaço em branco](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)|\s|`Public\sInterface`corresponde à frase "interface pública"|
+|Encontrar a correspondência de qualquer [caractere de dígito decimal](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)|\d|`\d`corresponde a "3" em "3456", "2" em 23 "e" 1 "em" 1 "|
+|Encontrar a correspondência de um caractere Unicode|\uXXXX em que XXXX especifica o valor do caractere Unicode.|`\u0065`corresponde ao caractere "e"|
+|Encontrar a correspondência de um identificador|\b[\_\w-[0-9]][\_\w]*\b|Corresponde a "type1", mas não a "& type1" ou "#define"|
+|Encontrar a correspondência de uma cadeia de caracteres entre aspas|((\\".+?\\")&#124;('.+?'))|Corresponde a qualquer cadeia de caracteres dentro de aspas simples ou duplas|
+|Encontrar a correspondência de um número hexadecimal|\b0[xX]([0-9a-fA-F]+\)\b|Corresponde a "0xc67f", mas não a "0xc67g"|
+|Encontrar a correspondência de inteiros e decimais|\b[0-9]*\\.\*[0-9]+\b|Corresponde a "1,333"|
 
 > [!TIP]
 > Em sistemas operacionais Windows, a maioria das linhas termina em “\r\n” (um retorno de carro seguido por uma nova linha). Esses caracteres não são visíveis, mas estão presentes no editor e são passados para o serviço de expressão regular do .NET.
