@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5dd8a4b2d0b32a8c52f75dee6fd765a7ea6ec9a
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 455ab619f293981c5ebd3afba6336c63f2fe7f49
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547561"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766065"
 ---
 # <a name="ca1051-do-not-declare-visible-instance-fields"></a>CA1051: Não declarar campos de instância visíveis
 
@@ -38,9 +38,11 @@ Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O principal uso de um campo deve ser um como um detalhe da implementação. Os campos devem `private` ser `internal` ou devem ser expostos usando propriedades. É tão fácil acessar uma propriedade quanto é acessar um campo, e o código nos acessadores de uma propriedade pode ser alterado à medida que os recursos do tipo se expandem sem introduzir alterações significativas. As propriedades que retornam apenas o valor de um campo privado ou interno são otimizadas para serem executadas em par com o acesso a um campo; um pequeno lucro de desempenho está associado ao uso de campos externos visíveis em Propriedades.
+O principal uso de um campo deve ser um como um detalhe da implementação. Os campos devem `private` ser `internal` ou devem ser expostos usando propriedades. É tão fácil acessar uma propriedade quanto é acessar um campo, e o código nos acessadores de uma propriedade pode ser alterado à medida que os recursos do tipo se expandem sem introduzir alterações significativas.
 
-Externamente visível refere- `public`se aos níveis `protected internal` de`Public`acessibilidade `Protected`, `protected`, `Protected Friend` e (, e em Visual Basic).
+As propriedades que retornam apenas o valor de um campo privado ou interno são otimizadas para serem executadas em par com o acesso a um campo; o lucro de desempenho do uso de campos visíveis externamente em vez de propriedades é mínimo. *Externamente visível* refere- `public`se aos níveis `protected internal` de`Public`acessibilidade `Protected`, `protected`, `Protected Friend` e (, e em Visual Basic).
+
+Além disso, os campos públicos não podem ser protegidos por [demandas de link](/dotnet/framework/misc/link-demands). Para obter mais informações, [consulte CA2112: Os tipos protegidos não devem expor](../code-quality/ca2112-secured-types-should-not-expose-fields.md)campos. (As demandas de link não são aplicáveis a aplicativos .NET Core.)
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -48,11 +50,16 @@ Para corrigir uma violação dessa regra, torne o campo `private` ou `internal` 
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra. Os campos visíveis externamente não fornecem nenhum benefício que não esteja disponível para propriedades. Além disso, os campos públicos não podem ser protegidos por demandas de [link](/dotnet/framework/misc/link-demands). Consulte [CA2112: Os tipos protegidos não devem expor](../code-quality/ca2112-secured-types-should-not-expose-fields.md)campos.
+Apenas suprimir este aviso se você tiver certeza de que os consumidores precisam de acesso direto ao campo. Para a maioria dos aplicativos, os campos expostos não fornecem benefícios de desempenho ou de manutenção em relação às propriedades.
+
+Os consumidores podem precisar de acesso ao campo nas seguintes situações:
+
+- em ASP.NET Web Forms controles de conteúdo
+- Quando a plataforma de destino usa `ref` para modificar campos, como estruturas MVVM (Model-View-ViewModel) para WPF e UWP
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1051.api_surface = private, internal
