@@ -10,14 +10,14 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90035e99c13484bd1b49e59350489ed1090b5f4e
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 2fbc9d95a6e334c3dcd788c4b686a222c417b0df
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891262"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766106"
 ---
-# <a name="template-parameters"></a>Parâmetros de modelo
+# <a name="template-parameters"></a>Parâmetros do modelo
 
 Você poderá substituir os valores do modelo quando for criada uma instância dele. Para configurar essa funcionalidade, use *parâmetros de modelo*. Os parâmetros de modelo podem ser usados para substituir valores, como nomes de classes e namespaces, no modelo. O assistente de modelo que é executado em segundo plano quando um usuário adiciona um novo item ou projeto substitui esses parâmetros.
 
@@ -47,7 +47,7 @@ Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:
 
 A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados por qualquer modelo:
 
-|Parâmetro|DESCRIÇÃO|
+|Parâmetro|Descrição|
 |---------------|-----------------|
 |clrversion|Versão atual do CLR (Common Language Runtime).|
 |ext_*|Adicione o prefixo `ext_` a qualquer parâmetro para se referir às variáveis do modelo pai. Por exemplo, `ext_safeprojectname`.|
@@ -60,8 +60,8 @@ A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados
 |safeitemname|O mesmo que `itemname`, mas com todos os caracteres desprotegidos e os espaços substituídos por caracteres de sublinhado.|
 |safeitemrootname|Mesmo que `safeitemname`.|
 |safeprojectname|O nome fornecido pelo usuário quando o projeto foi criado, mas com todos os caracteres desprotegidos e espaços removidos.|
-|hora|A hora atual no formato DD/MM/AAAA 00:00:00.|
-|SpecificSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `SpecificSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `SpecificSolutionName` estará em branco.|
+|time|A hora atual no formato DD/MM/AAAA 00:00:00.|
+|specifiedSolutionName|O nome da solução. Quando "criar diretório da solução" estiver marcado, `specifiedSolutionName` terá o nome da solução. Quando "criar diretório da solução" não estiver marcado, `specifiedSolutionName` estará em branco.|
 |userdomain|O domínio do usuário atual.|
 |username|O nome de usuário atual.|
 |webnamespace|O nome do site atual. Este parâmetro é usado no modelo de formulário da Web para garantir nomes de classe exclusivos. Se o site estiver no diretório raiz do servidor Web, esse parâmetro de modelo será resolvido para o diretório raiz do servidor Web.|

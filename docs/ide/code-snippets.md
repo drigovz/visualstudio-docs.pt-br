@@ -17,12 +17,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 98dadaed75cf16ae6ae35da9d6589355a63bd35c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 89de993337ecd214c7771faf17b24f90fa5e0110
+ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975225"
+ms.lasthandoff: 09/06/2019
+ms.locfileid: "70766249"
 ---
 # <a name="code-snippets"></a>Snippets de código
 
@@ -31,7 +31,7 @@ Snippets de código são pequenos blocos de código reutilizável que podem ser 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Snippet de código (Visual Studio para Mac)](/visualstudio/mac/snippets).
 
-Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para exibir todos os snippets instalados disponíveis para uma linguagem, abra o **Gerenciador de Snippets de Código** no menu **Ferramentas** do Visual Studio e escolha a linguagem no menu suspenso na parte superior.
+Os snippets de código estão disponíveis para uma variedade de linguagens, incluindo C#, C++, Visual Basic, XML e T-SQL, entre outras. Para exibir todos os trechos de código instalados disponíveis para um idioma, abra o **Gerenciador de trechos de códigos** no menu **ferramentas** (ou pressione **Ctrl**+**K**, **Ctrl**+**B**) e escolha o idioma do menu suspenso na parte superior.
 
 ![Caixa de diálogo Gerenciador de Snippets de Código](media/code-snippets-manager.png)
 
@@ -41,7 +41,7 @@ Em geral, os snippets de código podem ser acessados das seguintes maneiras:
 
 - No menu de contexto ou clicando com o botão direito do mouse no editor de códigos, escolha **Trecho** > **Inserir Snippet de Código**
 
-- Usando o teclado, pressione **Ctrl**+**K**+**X**
+- No teclado, pressione **Ctrl**+**K**,**Ctrl**+**X**
 
 ## <a name="expansion-snippets-and-surround-with-snippets"></a>Snippets de expansão e snippets de “envolver com”
 
