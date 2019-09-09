@@ -8,29 +8,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a7990f5e9fa1893d8813b1307ab6a0a7fee46be
-ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.openlocfilehash: 6ee4e3df94e46b4d3cc996a23fc1e40401195e21
+ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/14/2019
-ms.locfileid: "65613563"
+ms.lasthandoff: 08/16/2019
+ms.locfileid: "69551126"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Como: Suprimir avisos de análise de código para código gerenciado
 
-Código gerado inclui o código que é adicionado ao seu projeto por compiladores de código gerenciado ou ferramentas de terceiros. Você talvez queira ver as violações de regra que detecta de análise de código no código gerado. No entanto, desde que você não pode exibir e manter o código que contém as violações, talvez não queira vê-los.
+O código gerado inclui o código que é adicionado ao seu projeto por compiladores de código gerenciado ou por ferramentas de terceiros. Talvez você queira ver as violações de regra que a análise de código descobre no código gerado. No entanto, como não é possível exibir e manter o código que contém as violações, talvez você não queira vê-las.
 
-O **Suprimir resultados do código gerado** caixa de seleção na página de propriedades de análise de código, de um projeto permite que você selecione se deseja mostrar código avisos da análise do código gerado por uma ferramenta de terceiros.
-
-> [!NOTE]
-> Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.
-
-### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir avisos para código gerado em um projeto
-
-1. Clique com botão direito no projeto no **Gerenciador de soluções** e, em seguida, clique em **propriedades**.
-
-2. Escolha o **análise de código** guia.
-
-3. Selecione o **Suprimir resultados do código gerado** caixa de seleção.
+A caixa de seleção **suprimir resultados do código gerado** na página de propriedades análise de código de um projeto permite que você selecione se deseja mostrar avisos de análise de código do código gerado por uma ferramenta de terceiros.
 
 > [!NOTE]
-> Você só pode suprimir avisos da análise de código estático. No momento, você não pode suprimir avisos da análise de código do [analisadores](roslyn-analyzers-overview.md).
+> Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte de um formulário ou de um modelo.
+
+### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir avisos de código gerado em um projeto
+
+1. Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e clique em **Propriedades**.
+
+2. Escolha a guia **análise de código** .
+
+3. Marque a caixa de seleção **suprimir resultados do código gerado** .
+
+> [!NOTE]
+> Você só pode suprimir avisos da análise herdada. No momento, não é possível suprimir avisos de análise de código de [analisadores](roslyn-analyzers-overview.md).

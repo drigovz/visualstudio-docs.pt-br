@@ -8,17 +8,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 92b0d6b96adf75acc0b695466dca342f8dca59fa
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919537"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585090"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretriz do design básico para código gerenciado
+
 Você pode usar o conjunto de regras de diretrizes de design básico da Microsoft para se concentrar em tornar seu código mais fácil de entender e usar. Você deve incluir esse conjunto de regras se seu projeto incluir código de biblioteca ou se você quiser impor práticas recomendadas para o código que é fácil de manter.
 
-As regras de diretriz de design básicas incluem todas as regras no conjunto de regras de regras de Recommeded mínimas da Microsoft. Para obter uma lista das regras mínimas, consulte conjunto de regras da [regra recomendada gerenciada para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md).
+As regras básicas de diretriz de design incluem todas as regras do conjunto de regras de regra [recomendadas gerenciadas](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 A tabela a seguir descreve todas as regras do conjunto de regras de regra de diretrizes de design básico da Microsoft.
 

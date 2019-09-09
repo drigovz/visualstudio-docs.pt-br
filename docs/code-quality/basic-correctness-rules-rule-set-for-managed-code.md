@@ -8,15 +8,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: ce48ece2801096b2b657df41bcaa0a744e67bd45
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
+ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919565"
+ms.lasthandoff: 08/19/2019
+ms.locfileid: "69585006"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
-O conjunto de regras básicas de regras de correção se concentra em erros lógicos e erros comuns no uso de APIs de estrutura. As regras básicas de correção incluem as regras no conjunto de regras mínimo recomendado. Para obter mais informações, consulte [regras recomendadas gerenciadas regra definida para código gerenciado](../code-quality/managed-recommended-rules-rule-set-for-managed-code.md) , você deve incluir esse conjunto de regras para expandir na lista de avisos que o mínimo recomendado de regras.
+
+O conjunto de regras básicas de regras de correção se concentra em erros lógicos e erros comuns no uso de APIs de estrutura. As regras básicas de correção incluem as regras no conjunto de regras de regra [recomendadas gerenciadas](managed-recommended-rules-rule-set-for-managed-code.md) .
 
 A tabela a seguir descreve todas as regras do conjunto de regras de regras de correção básica da Microsoft.
 
