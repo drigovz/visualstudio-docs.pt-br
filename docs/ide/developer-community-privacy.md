@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86578a300da8ea1cdb739db4d1c02505a6d97180
-ms.sourcegitcommit: 9e5e8b6e9a3b6614723e71cc23bb434fe4218c9c
-ms.translationtype: HT
+ms.openlocfilehash: 447a06d64691af1d77a634179631ce7822b6d43d
+ms.sourcegitcommit: 78e2637e4fbfadd4509b55276816b64f5c24c606
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/20/2019
-ms.locfileid: "69634860"
+ms.lasthandoff: 09/10/2019
+ms.locfileid: "70864693"
 ---
 # <a name="developer-community-data-privacy"></a>Privacidade de dados da Comunidade de Desenvolvedores
 
@@ -68,8 +68,14 @@ Quando a ação **Relatar um problema** é iniciada com o Visual Studio, nós co
 
 - Logs do Python, caso existam
 
-- Uma captura de tela, caso você escolha incluí-la
+- Windows Forms logs, se existirem
 
+> [!NOTE]
+> Os arquivos de log são enviados à Microsoft somente quando você fornece permissão enviando o relatório de problema com o qual eles são incluídos. Você pode ver quais arquivos estão incluídos na etapa ' Resumo ' da janela ' relatar um problema ' (consulte a captura de tela incluída nesta nota). Os logs coletados são armazenados na pasta% Temp% e são limpos regularmente e após cada carregamento. Se você não quiser incluir um log em seu relatório de problema, exclua o arquivo da pasta% Temp% antes de enviar o relatório.  
+  > ![Relatar um problema-Resumo dos logs coletados](media/report-a-problem-logs-collected.png)
+
+- Uma captura de tela, caso você escolha incluí-la
+  
 - Dados de gravação, caso você escolha incluir gravações, como:
 
   - Etapas para reproduzir o problema
