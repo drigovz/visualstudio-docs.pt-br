@@ -116,9 +116,9 @@
             - name: Visão geral
               displayName: Tutorial 1 Picture viewer
               href: ../ide/tutorial-1-create-a-picture-viewer.md
-            - name: 'Etapa 1: Criar um projeto de aplicativo do Windows Forms'
+            - name: 'Etapa 1: Crie um projeto de aplicativo do Windows Forms'
               href: ../ide/step-1-create-a-windows-forms-application-project.md
-            - name: 'Etapa 2: Executar o programa'
+            - name: 'Etapa 2: Executar seu aplicativo'
               href: ../ide/step-2-run-your-program.md
             - name: 'Etapa 3: Definir as propriedades do formulário'
               href: ../ide/step-3-set-your-form-properties.md
@@ -136,7 +136,7 @@
               href: ../ide/step-9-review-comment-and-test-your-code.md
             - name: 'Etapa 10: Escrever código para botões adicionais e uma caixa de seleção'
               href: ../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md
-            - name: 'Etapa 11: Executar o programa e experimentar outros recursos'
+            - name: 'Etapa 11: Execute seu aplicativo e experimente outros recursos'
               href: ../ide/step-11-run-your-program-and-try-other-features.md
         - name: 'Tutorial 2: Criar um teste de matemática temporizado (C#)'
           items:
