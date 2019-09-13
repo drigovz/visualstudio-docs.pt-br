@@ -2,7 +2,7 @@
 title: Usar parâmetros de linha de comando para instalar o Visual Studio
 titleSuffix: ''
 description: Saiba como usar parâmetros de linha de comando para controlar ou personalizar sua instalação do Visual Studio.
-ms.date: 03/30/2019
+ms.date: 09/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8e999df4fc1269025c9adc038c1a17dd586a3081
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951325"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913238"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 
@@ -32,7 +32,7 @@ Ao instalar o Visual Studio por meio de um prompt de comando, é possível usar 
 - Automatizar o processo de instalação.
 - Criar um cache (layout) dos arquivos de instalação para uso posterior.
 
-As opções de linha de comando são usadas em conjunto com o bootstrapper de instalação, que é o arquivo pequeno (aproximadamente 1MB) que inicia o processo de download. O bootstrapper é o primeiro executável iniciado quando você baixa do site do Visual Studio. Use os links a seguir para obter um link direto para o bootstrapper de versão mais recente para a edição do produto que você está instalando:
+As opções de linha de comando são usadas em conjunto com o bootstrapper de instalação, que é o arquivo pequeno (1 MB) que inicia o processo de download. O bootstrapper é o primeiro executável iniciado quando você baixa do site do Visual Studio. Use os links a seguir para obter um link direto para o bootstrapper de versão mais recente para a edição do produto que você está instalando:
 
 ::: moniker range="vs-2017"
 
@@ -56,7 +56,7 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 
 > Syntax: `vs_enterprise.exe [command] <options>...`
 
-(Substitua `vs_enterprise.exe` conforme apropriado de acordo com a edição do produto que você está instalando.)
+Substitua `vs_enterprise.exe` conforme apropriado para a edição do produto que você está instalando. (Como alternativa, você pode usar `vs_installer.exe`.)
 
 >[!TIP]
 > Confira mais exemplos de como usar a linha de comando para instalar o Visual Studio na página [Exemplos de parâmetros de linha de comando](command-line-parameter-examples.md).
@@ -112,7 +112,7 @@ As opções de linha de comando são usadas em conjunto com o bootstrapper de in
 | **Opções de instalação avançadas** | **Descrição** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Opcional**: A ID do canal para a instância a ser instalada. Isso é necessário para o comando de instalação, ignorado para outros comandos se `--installPath` está especificado. |
-| `--channelUri <uri>` | **Opcional**: O URI do manifesto do canal. Se as atualizações não forem desejadas, `--channelUri` poderá apontar para um arquivo inexistente. por exemplo, --channelUri C:\doesntExist.chman. Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
+| `--channelUri <uri>` | **Opcional**: O URI do manifesto do canal. Se as atualizações não forem desejadas, `--channelUri` o poderá apontar para um arquivo não existente (por exemplo,--channelUri C:\doesntExist.chman). Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--installChannelUri <uri>` | **Opcional**: O URI do manifesto do canal a ser usado para a instalação. O URI especificado por `--channelUri` (que deve ser especificado quando `--installChannelUri` for especificado) é usado para detectar atualizações. Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--installCatalogUri <uri>` | **Opcional**: O URI do manifesto do catálogo a ser usado para a instalação. Se especificado, o gerente de canal tenta baixar o manifesto do catálogo desse URI antes de usar o URI no manifesto do canal de instalação. Esse parâmetro é usado para dar suporte a instalação offline, em que o cache de layout será criado com o catálogo de produtos que já foi baixado. Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--productId <id>` | **Opcional** A ID do produto para a instância que será instalada. Isso será populado previamente em condições normais de instalação. |
@@ -154,14 +154,7 @@ Confira uma lista de IDs de componente e de carga de trabalho classificadas por 
 
 Dependendo do resultado da operação, a variável de ambiente `%ERRORLEVEL%` será definida como um dos valores a seguir:
 
-| **Valor** | **Result** |
-| --------- | ---------- |
-| 0 | A operação foi concluída com êxito |
-| 1602 | A operação foi cancelada |
-| 3010 | A operação foi concluída com êxito, mas a instalação requer a reinicialização antes de ser usada |
-| 5004 | A operação foi cancelada |
-| 5007 | A operação foi bloqueada – o computador não atende aos requisitos |
-| Outros | Condição de falha ocorreu. Verifique os logs para obter mais informações |
+[!INCLUDE[install-error-codes-md](includes/install-error-codes-md.md)]
 
 Cada operação gera vários arquivos de log no diretório `%TEMP%` que indicam o progresso da instalação. Classifique a pasta por data e procure arquivos começando com `dd_bootstrapper`, `dd_client` e `dd_setup` para o bootstrapper, o aplicativo instalador e o mecanismo de instalação, respectivamente.
 

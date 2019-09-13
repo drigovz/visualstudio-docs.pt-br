@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794244bcdb814f78338a119d27ec0b0299023e59
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293505"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887970"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -71,14 +71,14 @@ Guia ***Form1.cs*** *com C# código*
    > [!IMPORTANT]
    > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
-   Você está olhando para o código `showButton_Click()` chamado (Alternativamente `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa seu programa e escolhe o controle – nesse caso, o botão **Mostrar uma imagem**.
+   Você está olhando para o código `showButton_Click()` chamado (Alternativamente `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
 
 1. Escolha a guia **Designer de formulários do Windows** novamente (**Form1.cs [Design]** ) e, em seguida, abra o arquivo de código para o botão **limpar imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.
 
 1. Para adicionar mais um método, abra o arquivo de código para o controle **CheckBox** no **Designer de Formulários do Windows** para fazer o IDE adicionar um método `checkBox1_CheckedChanged()`. Esse método é chamado sempre que o usuário seleciona ou desmarca a caixa de seleção.
 
    > [!TIP]
-   > Ao trabalhar em um programa, você geralmente se movimenta entre o editor de códigos e o **Designer de Formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir o **Designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **View** > **Designer**.
+   > Ao trabalhar em um aplicativo, você geralmente se move entre o editor de código e **Designer de formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir o **Designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **View** > **Designer**.
 
     A seguir temos o novo código que você vê no editor de códigos.
 
@@ -86,7 +86,7 @@ Guia ***Form1.cs*** *com C# código*
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
-    Os cinco métodos que você adicionou são chamados *manipuladores de eventos* porque seu programa os chama sempre que um evento (como um usuário que escolhe um botão ou que seleciona uma caixa) acontece.
+    Os cinco métodos que você adicionou são chamados de *manipuladores de eventos*, porque seu aplicativo os chama sempre que um evento (como um usuário escolhendo um botão ou uma caixa) acontece.
 
     Ao exibir o código para um controle no IDE em tempo de design, o Visual Studio adiciona um método manipulador de eventos para o controle se um não estiver presente. Por exemplo, quando você clica duas vezes em um botão, o IDE adiciona um manipulador de eventos para seu evento <xref:System.Windows.Forms.Control.Click> (que é chamado sempre que o usuário escolhe o botão). Quando você clica duas vezes em uma caixa de seleção, o IDE adiciona um manipulador de eventos para o evento <xref:System.Windows.Forms.CheckBox.CheckedChanged> (que é chamado sempre que o usuário seleciona ou desmarca a caixa).
 
@@ -100,7 +100,7 @@ Guia ***Form1.cs*** *com C# código*
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 7: Adicionar componentes de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 7: Adicione componentes de caixa de diálogo](../ide/step-7-add-dialog-components-to-your-form.md)ao formulário.**
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 

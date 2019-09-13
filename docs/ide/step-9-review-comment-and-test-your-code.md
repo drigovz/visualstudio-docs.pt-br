@@ -16,18 +16,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f9f5c6f3aff6338feb0de16a44d3b7d02d0c3b9
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293642"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887938"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Examinar, comentar e testar o código
 
-Em seguida, adicione um comentário ao seu código. Um comentário é uma observação que não modifica a maneira que o programa se comporta. Facilita para alguém que esteja lendo o código para entender o que ele faz. Recomendamos que você tenha o hábito de adicionar comentários ao seu código.
+Em seguida, adicione um comentário ao seu código. Um comentário é uma observação que não altera a maneira como o aplicativo se comporta. Facilita para alguém que esteja lendo o código para entender o que ele faz. Recomendamos que você tenha o hábito de adicionar comentários ao seu código.
 
-No C#, duas barras "//" (//) marcam uma linha como um comentário. No Visual Basic, aspas simples (') são usadas para marcar uma linha como um comentário. Após adicionar um comentário, teste seu programa. É uma prática recomendável executar e testar seu código com frequência enquanto trabalha em seus projetos e, portanto, você pode capturar e corrigir os problemas no início, antes que o código fique mais complicado. Isso é chamado de *teste iterativo*.
+No C#, duas barras "//" (//) marcam uma linha como um comentário. No Visual Basic, aspas simples (') são usadas para marcar uma linha como um comentário. Depois de adicionar um comentário, você testará seu aplicativo. É uma prática recomendável executar e testar seu código com frequência enquanto trabalha em seus projetos e, portanto, você pode capturar e corrigir os problemas no início, antes que o código fique mais complicado. Isso é chamado de *teste iterativo*.
 
 Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, já pode carregar uma imagem. Antes de adicionar um comentário ao seu código e testá-lo, leva tempo para examinar os conceitos de código, pois você usará esses conceitos frequentemente:
 
@@ -64,7 +64,7 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
      
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
-    O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa o programa para abrir a caixa de diálogo **Abrir Arquivo** e, se o usuário escolher um arquivo e o botão **OK**, carregue o arquivo na **PictureBox**.
+    O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma `if` instrução é como você diz ao seu aplicativo, "Marque esta coisa e, se for verdadeira, execute estas ações". Nesse caso, você informa ao aplicativo para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em **PictureBox**.
 
     > [!TIP]
     > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.
@@ -73,22 +73,22 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
     >
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla **Tab**. Muitos snippets aparecem na janela **IntelliSense** e é por isso que você escolhe a tecla **Tab** duas vezes: primeiro para marcar o snippet na janela do **IntelliSense** e, depois, para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)
 
-1. Antes de executar o programa, salve o programa escolhendo o botão de barra de ferramentas **salvar tudo** , que deve ser semelhante à captura de tela a seguir.
+1. Antes de executar o aplicativo, salve o aplicativo escolhendo o botão de barra de ferramentas **salvar tudo** , que deve ser semelhante à captura de tela a seguir.
 
      ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br>
 ***Salvar tudo*** *botão*
 
-     Como alternativa, para salvar o programa, escolha **arquivo** > **salvar tudo** na barra de menus (ou pressione **Ctrl**+**Shift**+**S**). É uma prática recomendada salvar no início e com frequência.
+     Como alternativa, para salvar seu aplicativo, escolha **arquivo** > **salvar tudo** na barra de menus (ou pressione **Ctrl**+**Shift**+**S**). É uma prática recomendada salvar no início e com frequência.
 
      Quando estiver em execução, seu programa deverá ser semelhante à imagem a seguir.
 
      ![Visualizador de imagem](../ide/media/express_pictureviewerdonerun.png)<br>***Visualizador de imagem***
 
-## <a name="to-test-your-program"></a>Para testar o programa
+## <a name="to-test-your-app"></a>Para testar seu aplicativo
 
 1. Escolha a tecla **F5** ou escolha o botão da barra de ferramentas **Iniciar Depuração**.
 
-1. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de *Meus Documentos*, dentro da pasta *My Pictures\Sample Pictures*.
+1. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o aplicativo abre uma caixa de diálogo **Abrir arquivo** . Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de *Meus Documentos*, dentro da pasta *My Pictures\Sample Pictures*.
 
     > [!TIP]
     > Se você não vir imagens na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro **Todos os arquivos (*.\*)** está marcado na lista suspensa no canto inferior direito da caixa de diálogo.
@@ -99,7 +99,7 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para ir para a próxima etapa do tutorial, **consulte [Step 10: Escreva o código para botões adicionais e uma caixa](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md)** de seleção.
 
 - Para retornar à etapa anterior do tutorial, confira [Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 

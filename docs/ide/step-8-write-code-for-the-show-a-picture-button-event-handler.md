@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab10700e984f50089a3e66b6b89f449d963fd208
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 26bfd4d74580fecd15b1891895e5ae28a18f3296
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293549"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887960"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem
 
 Nesta etapa, você faz com que o botão **mostrar uma imagem** funcione da seguinte maneira:
 
-- Quando um usuário escolher esse botão, o programa abrirá uma caixa de diálogo <xref:System.Windows.Forms.OpenFileDialog>.
+- Quando um usuário escolhe esse botão, o aplicativo abre uma <xref:System.Windows.Forms.OpenFileDialog> caixa.
 
-- Se um usuário abrir um arquivo de imagem, o programa mostrará essa imagem em <xref:System.Windows.Forms.PictureBox>.
+- Se um usuário abrir um arquivo de imagem, o aplicativo mostrará a imagem <xref:System.Windows.Forms.PictureBox>no.
 
 O IDE tem uma ferramenta poderosa chamada IntelliSense que ajuda você a gravar código. À medida que você digita o código, o IDE abre uma caixa com as conclusões sugeridas para palavras parciais que você inserir.
 
@@ -69,7 +69,7 @@ Em seguida, use o IntelliSense para inserir mais código para abrir uma caixa de
  1. Ao usar um método em um controle ou em um componente (conhecido como *chamando um método*), é necessário adicionar parênteses. Assim, insira a abertura e fechamento parênteses imediatamente após o "g" em `ShowDialog`: `()` Agora, ele deve ser semelhante a "openFileDialog1.ShowDialog()".
 
     > [!NOTE]
-    > Os métodos são uma parte importante de qualquer programa, e este tutorial mostrou várias maneiras de usar métodos. É possível chamar o método de um componente para pedir que ele faça algo, da mesma forma como você chamou o método `ShowDialog()` do componente **OpenFileDialog**. Você pode criar seus próprios métodos para fazer seu programa executar ações, como aquela que você está compilando agora, chamado método `showButton_Click()`, que abre um caixa de diálogo e uma imagem quando um usuário escolhe um botão.
+    > Os métodos são uma parte importante de qualquer aplicativo, e este tutorial mostrou várias maneiras de usar métodos. É possível chamar o método de um componente para pedir que ele faça algo, da mesma forma como você chamou o método `ShowDialog()` do componente **OpenFileDialog**. Você pode criar seus próprios métodos para fazer com que seu aplicativo faça coisas, como aquela que você está criando agora, `showButton_Click()` chamado de método, que abre uma caixa de diálogo e uma imagem quando um usuário escolhe um botão.
 
  1. Para C#, adicione um espaço e, em seguida, adicione dois sinais`==`de igual (). Para o Visual Basic, adicione um espaço e, em seguida, use um único sinal de igual (`=`). (C# e Visual Basic usar diferentes operadores de igualdade.)
 
@@ -102,7 +102,7 @@ Em seguida, use o IntelliSense para inserir mais código para abrir uma caixa de
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 9: Examinar, comentar e testar o código](../ide/step-9-review-comment-and-test-your-code.md).
+* Para ir para a próxima etapa do tutorial, **consulte [a etapa 9: Revise, comente e teste seu código](../ide/step-9-review-comment-and-test-your-code.md).**
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 7: Adicionar componentes de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md).
 

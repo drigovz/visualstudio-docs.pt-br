@@ -1,6 +1,6 @@
 ---
-title: 'Etapa 11: Executar o programa e experimentar outros recursos'
-ms.date: 08/30/2019
+title: 'Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos'
+ms.date: 09/11/2019
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
 ms.prod: visual-studio-windows
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5486aa4d2effa3feb03b31bace7a9cfc86fd9925
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 672156f9c1274189e904c79eb74a0c01e10f3a60
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293602"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913126"
 ---
-# <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: Executar o programa e experimentar outros recursos
+# <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>Etapa 11: Execute o aplicativo visualizador de imagens e tente outros recursos
 
-O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de <xref:System.Windows.Forms.PictureBox>. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.
+Seu aplicativo visualizador de imagens foi concluído e está pronto para ser executado. Você pode executar seu aplicativo e definir a cor do plano de <xref:System.Windows.Forms.PictureBox>fundo do. Para saber mais, tente melhorar o aplicativo alterando a cor do formulário, personalizando os botões e a caixa de seleção e alterando as propriedades do formulário.
 
-## <a name="how-to-run-your-program-and-set-the-background-color"></a>Como executar o programa e definir a cor do plano de fundo
+## <a name="how-to-run-your-app-and-set-the-background-color"></a>Como executar seu aplicativo e definir a cor do plano de fundo
 
 1. Selecione **F5** ou, na barra de menus, selecione **Depurar** > **Iniciar Depuração**.
 
@@ -38,7 +38,7 @@ O programa é concluído e pronto para ser executado. Você pode executar o prog
     > [!NOTE]
     > Você pode carregar uma imagem da Internet colando sua URL na caixa de diálogo **Abrir Arquivo**. Tente localizar uma imagem com um plano de fundo transparente, para que sua cor do plano de fundo seja exibida.
 
-1. Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, sai do programa escolhendo o botão **Fechar**.
+1. Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, saia do aplicativo escolhendo o botão **fechar** .
 
 ## <a name="try-other-features"></a>Experimentar outros recursos
 
@@ -48,7 +48,7 @@ O programa é concluído e pronto para ser executado. Você pode executar o prog
 
 * Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
 
-* Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça o programa abrir a caixa de diálogo **Abrir Arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **Esc**.
+* Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça com que o aplicativo Abra a caixa de diálogo **Abrir arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **ESC**.
 
 ## <a name="next-steps"></a>Próximas etapas
 

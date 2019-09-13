@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 123a843676a7562478710bf607f62c92743c462d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 1cf71ca26a26aecceb605c0483499bc0b0e24d30
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293577"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913156"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 
@@ -31,7 +31,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 1. Escolha qualquer outro lugar dentro do formulário **Form1** para selecioná-lo. Examine a janela **Propriedades**, que agora deve mostrar as propriedades do formulário. Os formulários têm várias propriedades. Por exemplo, você pode definir a cor de primeiro plano e do plano de fundo, o texto do título que aparece na parte superior do formulário, o tamanho do formulário e outras propriedades.
 
    > [!NOTE]
-   > Se a janela **Propriedades** não for exibida, interrompa seu programa escolhendo o botão quadrado **Parar Depuração** na barra de ferramentas ou apenas feche a janela. Se o programa for interrompido e você ainda não conseguir ver a janela **Propriedades**, na barra de menus, escolha **Exibir** > **Janela Propriedades**.
+   > Se a janela **Propriedades** não aparecer, pare seu aplicativo escolhendo o botão de **parada** quadrada de depuração na barra de ferramentas ou apenas feche a janela. Se o aplicativo for interrompido e você ainda não vir a janela **Propriedades** , na barra de menus, escolha **Exibir** > **janela de propriedades**.
 
 1. Depois que o formulário for selecionado, localize a propriedade de **Texto** na janela **Propriedades**. Dependendo de como a lista estiver classificada, talvez seja necessário rolar para baixo. Escolha **Texto**, digite **Visualizador de Imagens** e escolha **Enter**.  Seu formulário agora deve ter o **Visualizador de imagens** de texto em sua barra de título e a janela **Propriedades** deve ser semelhante à captura de tela a seguir.
 
@@ -50,7 +50,7 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 
 1. Examine a janela **Propriedades** e observe que a propriedade **Tamanho** foi alterada. A propriedade **Tamanho** é alterada a cada vez que você redimensiona o formulário. Tente arrastar a alça do formulário para redimensioná-la para um tamanho de aproximadamente **550, 350** (não é preciso ser exato), o que deve funcionar bem para este projeto. Como alternativa, é possível inserir os valores diretamente na propriedade **Tamanho** e, em seguida, pressionar a tecla **Enter**.
 
-1. Executar o programa novamente. Lembre-se de que você pode usar qualquer um dos métodos a seguir para executar seu programa.
+1. Execute o aplicativo novamente. Lembre-se de que você pode usar qualquer um dos métodos a seguir para executar seu aplicativo.
 
    - Pressione a tecla **F5**.
 
@@ -61,9 +61,9 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
      ***Iniciar Depuração*** *botão da barra de ferramentas*
 
-     Assim como antes, o IDE compila e executa o programa e uma janela aparece.
+     Assim como antes, o IDE cria e executa seu aplicativo e uma janela é exibida.
 
-1. Antes de seguir para a próxima etapa, interrompa o programa, pois a IDE não permitirá que você altere seu programa quando executar. Lembre-se de que você pode usar qualquer um dos métodos a seguir para parar seu programa.
+1. Antes de ir para a próxima etapa, pare seu aplicativo, pois o IDE não permitirá que você altere seu aplicativo enquanto ele estiver em execução. Lembre-se de que você pode usar qualquer um dos métodos a seguir para interromper seu aplicativo.
 
    - Na barra de ferramentas, clique no botão **Parar Depuração**.
 
@@ -75,9 +75,9 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 4: Deite seu formulário com um controle](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md)** TableLayoutPanel.
 
-* Para retornar à etapa anterior do tutorial, confira [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).
+* Para retornar à etapa anterior do tutorial, confira [Etapa 2: Execute o aplicativo](../ide/step-2-run-your-program.md)Visualizador de imagens.
 
 ## <a name="see-also"></a>Consulte também
 

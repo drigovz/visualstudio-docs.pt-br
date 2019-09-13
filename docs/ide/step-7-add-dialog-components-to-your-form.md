@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58721610a493283ff0bed8fca9cf6e6f6d668c4d
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 402d24ae90c6a7523398b21bfc77eb1b30bdf04f
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293473"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887877"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Etapa 7: Adicionar componentes de diálogo ao formulário
 
-Para habilitar seu programa a abrir arquivos de imagem e escolher uma cor da tela de fundo, nesta etapa, você adiciona um componente <xref:System.Windows.Forms.OpenFileDialog> e um componente <xref:System.Windows.Forms.ColorDialog> ao seu formulário.
+Para habilitar seu aplicativo a abrir arquivos de imagem e escolher uma cor de plano de fundo, nesta etapa, <xref:System.Windows.Forms.OpenFileDialog> você adiciona um <xref:System.Windows.Forms.ColorDialog> componente e um componente ao formulário.
 
 Um componente é como um controle de certas maneiras. Use a **Caixa de Ferramentas** para adicionar um componente ao seu formulário e ajuste suas propriedades usando a janela **Propriedades**. Mas, diferentemente de um controle, adicionar um componente ao seu formulário não adiciona um item visível que o usuário possa ver no formulário. Em vez disso, fornece determinados comportamentos que você pode disparar com código. É um componente que abre uma caixa de diálogo **Abrir Arquivo**.
 
@@ -54,7 +54,7 @@ Um componente é como um controle de certas maneiras. Use a **Caixa de Ferrament
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 8: Escreva o código para o manipulador](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md)** de eventos do botão Mostrar uma imagem.
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 6: Nomear os controles de botão](../ide/step-6-name-your-button-controls.md).
 

@@ -12,19 +12,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f8046ba598873329e6aa9fcea344504f15b4dbc
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
+ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68680582"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887757"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Diga ao depurador o que mostrar usando o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas da variável do depurador. Esse atributo pode ser aplicado a tipos, delegados, propriedades, campos e assemblies. Se aplicado a um tipo base, o atributo também se aplicará a uma subclasse.
 
 O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). O texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
 
-Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do `{<typeName>}`padrão. Portanto, se você tiver substituído o `ToString()` método, o depurador usará o método substituído em vez do`{<typeName>}`padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o `DebuggerDisplay` atributo terá precedência sobre o `ToString()` método substituído.
+Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do `{<typeName>}`padrão. Portanto, se você tiver substituído o `ToString()` método, o depurador usará o método substituído em vez do`{<typeName>}`padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o `DebuggerDisplay` atributo terá precedência sobre o `ToString()` método substituído. O `DebuggerDisplay` atributo também tem precedência sobre o `ToString()` método substituído em uma subclasse.
 
 Se o depurador avaliar essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
 

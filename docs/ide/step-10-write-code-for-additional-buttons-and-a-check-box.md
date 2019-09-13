@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 281c98ca52b6dd18ee726e3191d47d6755fd8326
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 9763026a4ef1c219bcb9f5b5270ac5d3b48e2e14
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293615"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887873"
 ---
 # <a name="step-10-write-code-for-additional-buttons-and-a-check-box"></a>Etapa 10: Escrever código para botões adicionais e uma caixa de seleção
 
@@ -30,7 +30,7 @@ Agora você está pronto para concluir os outros quatro métodos. Você pode cop
 Este código adiciona funcionalidades aos botões que você adicionou anteriormente. Sem esse código, os botões não fazem nada. Os botões usam o código em seus eventos de <xref:System.Windows.Forms.Control.Click> (e na caixa de seleção usa o evento de <xref:System.Windows.Forms.CheckBox.CheckedChanged>) para fazer coisas diferentes quando você ativa os controles. Por exemplo, o `clearButton_Click` evento ( `ClearButton_Click`ou), que é ativado quando você escolhe o botão **limpar imagem** , apaga a imagem atual definindo sua propriedade **Image** como **NULL** (ou, **Nothing**). Cada evento no código inclui comentários que explicam o que o código faz.
 
 > [!TIP]
-> Como uma melhor prática: Sempre comente o seu código. Os comentários são informações para uma pessoa ler e vale a pena tornar seu código mais legível. Todo em uma linha de comentário será ignorado pelo programa. No C#, você comenta uma linha digitando duas barras no início (//) e, no Visual Basic você comenta uma linha, começando com uma aspa simples (').
+> Como uma melhor prática: Sempre comente o seu código. Os comentários são informações para uma pessoa ler e vale a pena tornar seu código mais legível. Tudo em uma linha de comentário é ignorado pelo aplicativo. No C#, você comenta uma linha digitando duas barras no início (//) e, no Visual Basic você comenta uma linha, começando com uma aspa simples (').
 
 ## <a name="how-to-write-code-for-additional-buttons-and-a-check-box"></a>Como escrever código para botões adicionais e uma caixa de seleção
 
@@ -44,7 +44,7 @@ Adicione o seguinte código ao seu arquivo de código **Form1** (*Form1.cs* ou *
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 11: Executar o programa e experimentar outros recursos](../ide/step-11-run-your-program-and-try-other-features.md).
+* Para ir para a próxima etapa do tutorial, **consulte [a etapa 11: Execute seu aplicativo e tente outros recursos](../ide/step-11-run-your-program-and-try-other-features.md).**
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 9: Examinar, comentar e testar o código](../ide/step-9-review-comment-and-test-your-code.md).
 

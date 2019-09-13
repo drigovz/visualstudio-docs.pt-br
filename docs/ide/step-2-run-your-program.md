@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 2: Executar o programa'
+title: 'Etapa 2: Executar o aplicativo visualizador de imagens'
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 12ae2a50b114c34f72f4e25ec52db40fc77943d3
-ms.sourcegitcommit: bd4e45f1697a8fbfdbc0a7c6b531c8f7b9fb8a48
+ms.openlocfilehash: a6c7e90f8113f5fa03da907db5dbb8f374a564e7
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/09/2019
-ms.locfileid: "70808791"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887925"
 ---
-# <a name="step-2-run-your-pictureviewer-app"></a>Etapa 2: Executar seu aplicativo PictureViewer
+# <a name="step-2-run-your-picture-viewer-app"></a>Etapa 2: Executar o aplicativo visualizador de imagens
 
-Ao criar um projeto de aplicativo Windows Forms, você realmente cria um programa que executa o. Neste tutorial, seu aplicativo *PictureViewer* ainda&mdash;não faz muito, embora seja. Por enquanto, ele apenas exibe uma janela vazia que mostra o **Form1** na barra de título.
+Ao criar um projeto de aplicativo Windows Forms, você realmente cria um programa que executa o. Neste tutorial, seu aplicativo visualizador de imagens ainda&mdash;não faz muito, embora seja. Por enquanto, ele exibe uma janela vazia que mostra o **Form1** na barra de título.
 
-Veja como executar seu programa. 
+Veja como executar seu aplicativo. 
 
 1. Escolha um dos seguintes métodos:
 
@@ -37,17 +37,17 @@ Veja como executar seu programa.
       ![Botão de barra de ferramentas Iniciar Depuração](../ide/media/express_icondebug.png)<br>
       ***Iniciar Depuração*** *botão da barra de ferramentas*
 
-1. O Visual Studio executa o seu programa e uma janela chamada **Form1** aparece. A captura de tela a seguir mostra o programa que você acabou de criar. O programa está em execução e, em breve, você vai adicioná-lo.
+1. O Visual Studio executa seu aplicativo e uma janela chamada **Form1** é exibida. A captura de tela a seguir mostra o aplicativo que você acabou de criar. O aplicativo está em execução e, em breve, você adicionará a ele.
 
-     ![Programa de aplicativo do Windows Form em execução](../ide/media/express_firstrun.png)<br>
-***Windows Forms*** *programa de aplicativo, executando*
+     ![Windows Forms aplicativo em execução](../ide/media/express_firstrun.png)<br>
+***Windows Forms aplicativo***, *em execução*
 
-1. Volte para o IDE (ambiente de desenvolvimento integrado) do Visual Studio e, em seguida, examine a nova barra de ferramentas. Outros botões aparecem na barra de ferramentas quando você executa um programa. Esses botões permitem fazer coisas como parar e iniciar seu programa, e ajudam você a rastrear erros (bugs) que ele pode ter. Para este exemplo, estamos usando-o para iniciar e parar o programa.
+1. Volte para o IDE (ambiente de desenvolvimento integrado) do Visual Studio e, em seguida, examine a nova barra de ferramentas. Botões adicionais aparecem na barra de ferramentas quando você executa um aplicativo. Esses botões permitem que você faça coisas como parar e iniciar seu aplicativo e ajudá-lo a rastrear quaisquer erros (bugs) que possa ter. Para este exemplo, estamos usando-o para iniciar e parar o aplicativo.
 
      ![Barra de ferramentas de depuração](../ide/media/express_debugtoolbar.png)<br>
 ***Depuração*** *barra de ferramentas*
 
-1. Use um dos seguintes métodos para interromper o programa:
+1. Use um dos seguintes métodos para interromper seu aplicativo:
 
     - Na barra de ferramentas, clique no botão **Parar Depuração**.
 
@@ -58,13 +58,13 @@ Veja como executar seu programa.
     - Clique no botão **X** no canto superior da janela **Form1**.
 
     > [!NOTE]
-    > Quando você executa o programa de dentro do IDE, ele é chamado de depuração porque você normalmente faz isso para localizar e corrigir bugs (erros) no programa. Embora esse programa seja pequeno e ainda não faça realmente nada, ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
+    > Quando você executa seu aplicativo de dentro do IDE, ele é chamado de depuração porque você normalmente faz isso para localizar e corrigir bugs (erros) no aplicativo. Embora esse aplicativo seja pequeno e realmente não faça nada, ele ainda é um programa real. Você segue o mesmo procedimento para executar e depurar outros programas. Para saber mais sobre depuração, confira [Introdução ao depurador](../debugger/debugger-feature-tour.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 3: Defina as propriedades](../ide/step-3-set-your-form-properties.md)** do formulário.
 
-* Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto de aplicativo do Windows Forms](../ide/step-1-create-a-windows-forms-application-project.md).
+* Para retornar à etapa anterior do tutorial, confira [Etapa 1: Crie um projeto](../ide/step-1-create-a-windows-forms-application-project.md)de aplicativo Windows Forms.
 
 ## <a name="see-also"></a>Consulte também
 

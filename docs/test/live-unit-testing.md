@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe1affaad05d2c20a27fb0e315fc1d3b263f22b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: e4ace476a2454c7f6735f19cd07f222d6c06564e
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923744"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913332"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing com o Visual Studio
 
@@ -177,6 +177,12 @@ Você também pode usar os atributos a seguir para excluir métodos individuais 
 - Para xUnit: `[Trait("Category", "SkipWhenLiveUnitTesting")]`
 - Para NUnit: `[Category("SkipWhenLiveUnitTesting")]`
 - Para MSTest: `[TestCategory("SkipWhenLiveUnitTesting")]`
+
+Você também pode excluir um assembly inteiro de testes de Live Unit Testing:
+
+- Para xUnit: `[assembly: AssemblyTrait("Category", "SkipWhenLiveUnitTesting")]`
+- Para NUnit: `[assembly: Category("SkipWhenLiveUnitTesting")]`
+- Para MSTest: `[assembly: TestCategory("SkipWhenLiveUnitTesting")]`
 
 ## <a name="see-also"></a>Consulte também
 
