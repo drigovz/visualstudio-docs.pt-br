@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53bd2139d5b81ed743cdfd92fe76cb575dcc6487
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
+ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547893"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70929774"
 ---
 # <a name="code-analysis-faq"></a>Perguntas frequentes sobre análise de código
 
@@ -24,7 +24,7 @@ Esta página contém respostas para algumas perguntas frequentes sobre a anális
 
 **P**: Devo usar a análise de código ou EditorConfig para verificar o estilo de código?
 
-**R**: A análise de código e os arquivos. editorconfig funcionam lado a lado. Quando você define estilos [de código em um arquivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig também podem ser usados para configurar alguns pacotes do analisador de terceiros, como analisadores de [FxCop](configure-fxcop-analyzers.md).
+**R**: A análise de código e os arquivos. editorconfig funcionam lado a lado. Quando você define estilos [de código em um arquivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig também podem ser usados para configurar alguns pacotes do NuGet Analyzer, como [analisadores do FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig versus conjuntos de regras
 
@@ -32,7 +32,7 @@ Esta página contém respostas para algumas perguntas frequentes sobre a anális
 
 **R**: Os conjuntos de regras e arquivos. editorconfig são maneiras mutuamente exclusivas de configurar analisadores. Eles podem coexistir. Os [conjuntos de regras](analyzer-rule-sets.md) permitem habilitar e desabilitar regras e definir sua gravidade. Os arquivos EditorConfig oferecem outras maneiras de configurar regras. Para analisadores do FxCop, os arquivos. editorconfig permitem que você [Defina quais tipos de código analisar](fxcop-analyzer-options.md). Para os analisadores que são criados no Visual Studio, os arquivos. editorconfig permitem que você [defina os estilos de código preferenciais](../ide/editorconfig-code-style-settings-reference.md) para uma codebase.
 
-Além dos conjuntos de regras e arquivos. editorconfig, alguns analisadores de terceiros são configurados por meio do uso de arquivos de texto marcados como [arquivos adicionais](../ide/build-actions.md#build-action-values) para os compiladores do e do C# vb.
+Além dos conjuntos de regras e arquivos. editorconfig, alguns analisadores são configurados por meio do uso de arquivos de texto marcados como C# [arquivos adicionais](../ide/build-actions.md#build-action-values) para os compiladores do e do VB.
 
 > [!NOTE]
 > Os arquivos EditorConfig não podem ser usados para configurar a análise herdada, enquanto os conjuntos de regras podem.
@@ -41,7 +41,7 @@ Além dos conjuntos de regras e arquivos. editorconfig, alguns analisadores de t
 
 **P**: A análise de código baseada em .NET Compiler Platform funciona em compilações de CI (integração contínua)?
 
-**R**: Sim. Para analisadores que são instalados a partir de um pacote NuGet, essas regras são impostas [no momento da compilação](roslyn-analyzers-overview.md#build-errors), incluindo durante uma compilação de CI. Os analisadores usados em compilações de CI respeitam a configuração de regra de ambos os [conjuntos de regras](analyzer-rule-sets.md) e [arquivos. editorconfig](configure-fxcop-analyzers.md). Atualmente, os analisadores de código que são criados no Visual Studio não estão disponíveis como um pacote NuGet e, portanto, essas regras não são impostas em uma compilação de CI.
+**R**: Sim. Para analisadores que são instalados a partir de um pacote NuGet, essas regras são [impostas no momento da compilação](roslyn-analyzers-overview.md#build-errors), incluindo durante uma compilação de CI. Os analisadores usados em compilações de CI respeitam a configuração de regra de ambos os [conjuntos de regras](analyzer-rule-sets.md) e [arquivos. editorconfig](configure-fxcop-analyzers.md). Atualmente, os analisadores de código que são criados no Visual Studio não estão disponíveis como um pacote NuGet e, portanto, essas regras não são impostas em uma compilação de CI.
 
 ## <a name="ide-analyzers-versus-stylecop"></a>Analisadores IDE versus StyleCop
 

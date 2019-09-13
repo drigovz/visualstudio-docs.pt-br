@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00874c8fd7ded67c380de1166d7e9753a3bd3c24
-ms.sourcegitcommit: 044bb54cb4552c8f4651feb11d62e52726117e75
-ms.translationtype: HT
+ms.openlocfilehash: 33ef3c31acd39798df84c39fff82faba063fdaa9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/30/2019
-ms.locfileid: "68662045"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913227"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
@@ -58,7 +58,10 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 
  Um *perfil de destino* é um subconjunto de uma estrutura de destino. Por exemplo, o .NET Framework 4 Client Profile não inclui referências aos assemblies do MSBuild.
 
- O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE. Para obter mais informações, confira [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).
+ > [!NOTE]
+ > Os perfis de destino se aplicam somente a [bibliotecas de classes portáteis](/dotnet/standard/cross-platform/cross-platform-development-with-the-portable-class-library).
+
+ O perfil de destino é especificada na propriedade `TargetFrameworkProfile` em um arquivo de projeto. Você pode alterar o perfil de destino usando o controle de estrutura de destino nas páginas de propriedades do projeto no IDE.
 
 ```xml
 <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>

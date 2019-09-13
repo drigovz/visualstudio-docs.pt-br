@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a0bc67968b7248494a087f06037f72152b53300
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 3595705030e2e969f99455700ab70f36bf22274a
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293629"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70887989"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 
@@ -93,7 +93,7 @@ Nesta etapa, você adiciona um controle <xref:System.Windows.Forms.TableLayoutPa
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 5: Adicione controles ao seu formulário](../ide/step-5-add-controls-to-your-form.md).**
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 3: Definir as propriedades do formulário](../ide/step-3-set-your-form-properties.md).
 

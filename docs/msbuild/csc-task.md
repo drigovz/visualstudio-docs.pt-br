@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39287eb2b1aec27dcb0c08c40875ce579b3a6bea
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 9df54befff79b82703cb363fea92536285c68232
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745792"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888021"
 ---
 # <a name="csc-task"></a>tarefa Csc
 Encapsula *csc.exe* e produz executáveis (arquivos *.exe*), bibliotecas de vínculo dinâmico (arquivos *.dll*) ou módulos de código (arquivos *.netmodule*). Para obter mais informações sobre o *csc.exe*, confira [Opções do compilador C#](/dotnet/csharp/language-reference/compiler-options/index).
@@ -42,7 +42,7 @@ A tabela a seguir descreve os parâmetros da tarefa `Csc`.
 | `CodePage` | Parâmetro `Int32` opcional.<br /><br /> Especifica a página de código a ser usada para todos os arquivos de código-fonte na compilação. Para obter mais informações, confira [-codepage (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/codepage-compiler-option). |
 | `DebugType` | Parâmetro `String` opcional.<br /><br /> Especifica o tipo de depuração. `DebugType` pode ser `full` ou `pdbonly`. O padrão é `full`, o que permite que um depurador seja anexado a um programa em execução. Especificar `pdbonly` habilita a depuração de código-fonte quando o programa é iniciado no depurador, mas apenas exibe o assembler quando o programa em execução está anexado ao depurador.<br /><br /> Esse parâmetro substitui o parâmetro `EmitDebugInformation`.<br /><br /> Para obter mais informações, confira [-debug (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option). |
 | `DefineConstants` | Parâmetro `String` opcional.<br /><br /> Define símbolos do pré-processador. Para obter mais informações, confira [-define (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/define-compiler-option). |
-| `DelaySign` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, especificará que você deseja um assembly totalmente com sinal. Se for `false`, especificará que você apenas deseja colocar a chave pública no assembly.<br /><br /> Esse parâmetro não terá nenhum efeito a menos que seja usado com o parâmetro `KeyFile` ou `KeyContainer`.<br /><br /> Para obter mais informações, confira [-delaysign (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
+| `DelaySign` | Parâmetro `Boolean` opcional.<br /><br /> Se for `true`, especificará que você apenas deseja colocar a chave pública no assembly. Se `false`, especifica que você deseja um assembly totalmente assinado<br /><br /> Esse parâmetro não terá nenhum efeito a menos que seja usado com o parâmetro `KeyFile` ou `KeyContainer`.<br /><br /> Para obter mais informações, confira [-delaysign (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/delaysign-compiler-option). |
 | `Deterministic` | Parâmetro `Boolean` opcional.<br/><br/> Se ele for `true`, fará com que o compilador gere um assembly cujo conteúdo binário é idêntico entre compilações caso as entradas sejam idênticas.<br/><br/>Para obter mais informações, confira [-deterministic (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option). |
 | `DisabledWarnings` | Parâmetro `String` opcional.<br /><br /> Especifica a lista de avisos a ser desabilitada. Para obter mais informações, confira [-nowarn (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option). |
 | `DocumentationFile` | Parâmetro `String` opcional.<br /><br /> Processa comentários de documentação para um arquivo XML. Para obter mais informações, confira [-doc (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option). |

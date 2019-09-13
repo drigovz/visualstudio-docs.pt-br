@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 1: Criar um projeto de aplicativo do Windows Forms'
+title: 'Etapa 1: Crie um projeto de aplicativo do Windows Forms'
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -13,16 +13,16 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc2b21edcae4cd825ade551b92f98853da8f2516
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 65339eabcffdf0f333036442ea8473ecf8c8f06e
+ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293652"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70888017"
 ---
-# <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: Crie um projeto de aplicativo do Windows Forms
 
-Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de aplicativo do Windows Forms.
+Quando você cria um visualizador de imagens, a primeira etapa é criar um projeto de aplicativo Windows Forms.
 
 ::: moniker range="vs-2017"
 
@@ -70,9 +70,9 @@ Ao criar um visualizador de imagens, a primeira etapa é criar um projeto de apl
 
 ::: moniker-end
 
-O Visual Studio cria uma solução para seu programa. Uma solução atua como um recipiente para todos os projetos e arquivos necessários pelo seu programa. Esses termos serão explicados em mais detalhes posteriormente neste tutorial.
+O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como um contêiner para todos os projetos e arquivos necessários para seu aplicativo. Esses termos serão explicados em mais detalhes posteriormente neste tutorial.
 
-## <a name="about-the-windows-forms-application-project"></a>Sobre o projeto para o aplicativo do Windows Forms
+## <a name="about-the-windows-forms-app-project"></a>Sobre o projeto de aplicativo Windows Forms
 
 1. O ambiente de desenvolvimento contém três janelas: uma janela principal, o **Gerenciador de Soluções** e a janela **Propriedades**.
 
@@ -96,7 +96,7 @@ O Visual Studio cria uma solução para seu programa. Uma solução atua como um
 
     * **Janela do Gerenciador de Soluções** Nesta janela, você pode exibir e navegar em todos os itens na solução.
 
-       Se você escolher um arquivo, o conteúdo da janela **Propriedades** será alterado. Se você abrir um arquivo de código (que termina em *. cs* em C# e *. vb* no Visual Basic), o arquivo de código ou um designer para o arquivo de código será exibido. Um designer é uma superfície visual na qual você pode adicionar controles, como botões e listas. Para formulários do Visual Studio, o designer é chamado no **Designer de Formulários do Windows**.
+    Se você escolher um arquivo, o conteúdo da janela **Propriedades** será alterado. Se você abrir um arquivo de código (que termina em *. cs* em C# e *. vb* no Visual Basic), o arquivo de código ou um designer para o arquivo de código será exibido. Um designer é uma superfície visual na qual você pode adicionar controles, como botões e listas. Para formulários do Visual Studio, o designer é chamado no **Designer de Formulários do Windows**.
 
     * **Janela Propriedades** Nessa janela, você pode alterar as propriedades dos itens escolhidos nas outras janelas. Por exemplo, se você escolher o Form1, você poderá alterar o título configurando a propriedade **Text** e você poderá alterar a cor da tela de fundo configurando a propriedade **Backcolor**.
 
@@ -114,7 +114,7 @@ O Visual Studio cria uma solução para seu programa. Uma solução atua como um
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).
+* Para ir para a próxima etapa do tutorial, **consulte [etapa 2: Execute seu aplicativo](../ide/step-2-run-your-program.md).**
 
 * Para retornar ao tópico de visão geral, confira [Tutorial 1: Criar um visualizador de imagens](../ide/tutorial-1-create-a-picture-viewer.md).
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66b0a22fcef06f69f5c8adfa2afa0b6fdadc9f01
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5ff85034d7185e68a43ed8b4c70f68787414ddd9
+ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293559"
+ms.lasthandoff: 09/11/2019
+ms.locfileid: "70913169"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 
@@ -85,7 +85,7 @@ Nessa etapa, você adiciona controles como um controle <xref:System.Windows.Form
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-* Para ir para a próxima etapa do tutorial, confira [Etapa 6: Nomear os controles de botão](../ide/step-6-name-your-button-controls.md).
+* Para ir para a próxima etapa do tutorial, **consulte [Step 6: Nomeie os controles](../ide/step-6-name-your-button-controls.md)** de botão.
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
