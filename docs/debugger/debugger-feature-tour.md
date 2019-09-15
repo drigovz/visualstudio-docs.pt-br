@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c37466ea3f37bca80933cdc069d40f84099790
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
-ms.translationtype: HT
+ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65679760"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987785"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -115,6 +115,16 @@ Clique no botão **Reiniciar** ![Reiniciar Aplicativo](../debugger/media/dbg-tou
 Ao pressionar **Reiniciar**, você economiza tempo em comparação com a opção de parar o aplicativo e reiniciar o depurador. O depurador é pausado no primeiro ponto de interrupção que é encontrado pela execução do código.
 
 Se você quiser parar o depurador e voltar para o editor de código, poderá pressionar a o botão de parada ![Parar Depuração](../debugger/media/dbg-tour-stop-debugging.png "Parar Depuração") vermelho em vez de **Reiniciar**.
+
+## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>Editar seu código e continuar a depuraçãoC#(, VB C++,, XAML)
+
+Na maioria dos idiomas com suporte no Visual Studio, você pode editar seu código no meio de uma sessão de depuração e continuar a depuração. Para usar esse recurso, clique em seu código com o cursor enquanto estiver em pausa no depurador, faça edições e pressione **F5**, **F10**ou **F11** para continuar a depuração.
+
+![Editar e continuar a depuração](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
+
+Para obter mais informações sobre como usar o recurso e as limitações de recursos, consulte [Editar e continuar](../debugger/edit-and-continue.md).
+
+Para modificar o código XAML durante uma sessão de depuração, consulte [gravar e depurar o código XAML em execução com o Hot recarregamento de XAML](xaml-hot-reload.md).
 
 ## <a name="inspect-variables-with-data-tips"></a>Inspecionar variáveis com dicas de dados
 

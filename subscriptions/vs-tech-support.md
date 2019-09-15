@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/29/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
-ms.openlocfilehash: 705ec75afc2ba870b5e596f63e27fae92fbedf58
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 6474cf3322b878055053eaaf1f1943ebc546b206
+ms.sourcegitcommit: 02acadb912faced7eaffe27c2c19104bf0428bcd
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681590"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70936902"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a resolver problemas de interrupção/reparo em **ambientes de não produção** para os produtos que ainda estão na fase de suporte base do [ciclo de vida de suporte](https://support.microsoft.com/lifecycle/search). As assinaturas de nuvem anual e padrão do Visual Studio Enterprise recebem quatro incidentes, enquanto as assinaturas de nuvem anual e padrão do Visual Studio Professional recebem dois incidentes, por até 1 ano a contar da ativação do benefício. A ativação do benefício precisa ocorrer enquanto a assinatura é atual.
@@ -23,6 +23,13 @@ O benefício de Suporte Técnico em assinaturas do Visual Studio destina-se a re
 > Nem todas as assinaturas de um determinado nível são elegíveis para receber incidentes de suporte. As assinaturas adquiridas por meio do FTE, do NFR, do MPN, do MCT e de outros programas não recebem incidentes de suporte. Se sua assinatura não for elegível para receber os incidentes de suporte técnico, o bloco Suporte Técnico não aparecerá em seus benefícios disponíveis.
 
 **Para enviar uma solicitação de suporte usando o benefício, primeiro você precisa ativá-lo.  Siga as etapas da próxima seção para concluir a ativação.**
+
+## <a name="supported-products"></a>Produtos com suporte 
+Ferramentas para Desenvolvedores como o IDE do Visual Studio e o Azure DevOps Server receberão suporte básico e estendido por meio de assinaturas do Visual Studio.
+
+Os produtos sem desenvolvedores (como SQL, Windows, SharePoint) baixados das assinaturas do Visual Studio são elegíveis apenas para suporte base. Esses produtos são licenciados apenas para ambientes de desenvolvimento para projetar, desenvolver, testar ou demonstrar aplicativos. Esses produtos não são licenciados para ambientes de produção.
+
+Descrições de nível de produto-expanda os **planos de suporte não disponíveis** se você vir o plano de suporte não pode ser usado para suporte no produto especificado (código: 8). Seu contrato de suporte não pode ser usado para a versão do produto que você selecionou.
 
 ## <a name="how-to-activate-the-benefit"></a>Como ativar o benefício
 1. Acesse https://my.visualstudio.com/Benefits, role a página para baixo até a seção Suporte e, no bloco Suporte Técnico, clique em **Conversar para ativar**.
@@ -75,7 +82,7 @@ Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista sus
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar Contrato](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
-4. Insira a **ID de Acesso** e a **ID do Contrato**.  Clique em **Adicionar**.
+4. Insira a **ID de Acesso** e a **ID do Contrato**.  Clique em **Adicionar** .
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar ID do Contrato](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

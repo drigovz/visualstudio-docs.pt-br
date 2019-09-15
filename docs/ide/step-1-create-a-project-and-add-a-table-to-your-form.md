@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64ebd8469eb763af9565609dd680ba1e256ed6c5
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 3b57164938f8256743f314d1c302a24547f6074d
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501152"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987805"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 
@@ -122,9 +122,9 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
    > [!NOTE]
    > Se você colar muitas vezes, o IDE adicionará uma nova linha ao TableLayoutPanel para que ele tenha um local para adicionar seu novo controle de rótulo. Isso pode ser desfeito. Para remover a nova célula, escolha as teclas **Ctrl**+**Z** ou, na barra de menus, escolha **Editar** > **Desfazer**.
 
-    Agora seu formulário é apresentado. Ele deve se parecer com a imagem a seguir.
+    Agora seu formulário é apresentado. Ele deve ser semelhante à imagem a seguir.
 
-    ![Formulário inicial do jogo da memória](../ide/media/express_tut4step1.png)<br/>   Formulário inicial do jogo da memória
+    ![Formulário inicial do jogo da memória](../ide/media/express_tut4step1.png)<br/>*Formulário inicial do jogo da memória*
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 

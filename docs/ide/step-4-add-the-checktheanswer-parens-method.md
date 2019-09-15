@@ -1,7 +1,12 @@
 ---
 title: 'Etapa 4: Adicionar o método CheckTheAnswer()'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,20 +16,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c691b1db57fa1a00ad33441e36ff0f7f79716f11
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 8c40150c3fbcd07abfad4a10155722750cbe4849
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416516"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987697"
 ---
 # <a name="step-4-add-the-checktheanswer-method"></a>Etapa 4: Adicionar o método CheckTheAnswer()
+
 Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswer()`, que determina se as respostas para os problemas de matemática estão corretas. Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
 > [!NOTE]
-> Se você estiver seguindo o Visual Basic, você usará a palavra-chave de `Function` em vez da palavra-chave comum de `Sub` porque esse método retorna um valor. É realmente simples: um sub não retorna um valor, mas uma função sim.
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-whether-the-answers-are-correct"></a>Para verificar se as respostas estão corretas
+
+> [!NOTE]
+> Se você estiver seguindo o Visual Basic, você usará a palavra-chave de `Function` em vez da palavra-chave comum de `Sub` porque esse método retorna um valor. É realmente simples: um sub não retorna um valor, mas uma função sim.
 
 1. Adicione o método `CheckTheAnswer()`.
 
@@ -32,6 +43,9 @@ Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswe
 
      [!code-vb[VbExpressTutorial3Step4#8](../ide/codesnippet/VisualBasic/step-4-add-the-checktheanswer-parens-method_1.vb)]
      [!code-csharp[VbExpressTutorial3Step4#8](../ide/codesnippet/CSharp/step-4-add-the-checktheanswer-parens-method_1.cs)]
+
+     > [!IMPORTANT]
+     > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Em seguida, verifique a resposta atualizando o código no método do manipulador de eventos <xref:System.Windows.Forms.Timer.Tick> do timer para chamar o novo método `CheckTheAnswer()`.
 
@@ -51,6 +65,6 @@ Na primeira parte deste tutorial, você irá escrever um método, `CheckTheAnswe
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md).
+- Para ir para a próxima etapa do tutorial, **consulte [Step 5: Adicione manipuladores de eventos de entrada para os](../ide/step-5-add-enter-event-handlers-for-the-numericupdown-controls.md)controles**NumericUpDown.
 
 - Para retornar à etapa anterior do tutorial, confira [Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
