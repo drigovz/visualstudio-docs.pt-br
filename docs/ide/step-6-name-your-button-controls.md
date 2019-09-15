@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc843cceea35d196e3f9719a0690764611865600
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887970"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987911"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -52,7 +52,7 @@ Você pode verificar os nomes escolhendo a lista suspensa seletora de controle n
 Guia ***Form1.cs*** *com C# código*
 
     > [!NOTE]
-    > A guia Form1.cs pode exibir o **botão** de **exibição como em** vez disso.
+    > Sua Form1.cs da guia Form1. vb pode exibir o **botão** de **exibição como em** vez disso.
 
 1. Foco nesta parte do código.
 
@@ -85,6 +85,9 @@ Guia ***Form1.cs*** *com C# código*
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
     
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
+
+    > [!NOTE]
+    > Seu código pode não exibir manipuladores de eventos em letras "camelCase". 
 
     Os cinco métodos que você adicionou são chamados de *manipuladores de eventos*, porque seu aplicativo os chama sempre que um evento (como um usuário escolhendo um botão ou uma caixa) acontece.
 

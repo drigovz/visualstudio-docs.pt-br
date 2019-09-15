@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0c7f3695be87f6cb4081b3aa02fc7a129869a4c
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 51bda0a85735bf2b1dae5044b9e4ab8e5384f8ae
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293689"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987872"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutorial 2: Criar um teste de matemática temporizado
 
@@ -31,7 +31,7 @@ Neste tutorial, você cria um teste no qual o tomador de teste deve responder a 
 
 - Execute operações aritméticas básicas no código.
 
-Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com números diferentes:
+Quando você terminar, seu teste será semelhante à captura de tela a seguir, exceto com números diferentes:
 
 ![Teste de matemática com quatro problemas](../ide/media/express_finishedquiz.png)
 
@@ -40,7 +40,7 @@ Quando você terminar, seu teste ficará parecido com a imagem a seguir, mas com
 Para baixar uma versão concluída do teste, veja [Exemplo de tutorial de teste completo de matemática](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 > [!NOTE]
-> O Visual C# e o Visual Basic são abordados neste tutorial, por isso, concentre-se nas informações específicas da linguagem de programação que você está usando.
+> Este tutorial aborda as C# Visual Basic e, portanto, concentre-se nas informações específicas para a linguagem de programação que você está usando.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

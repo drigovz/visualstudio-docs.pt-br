@@ -1,7 +1,12 @@
 ---
 title: 'Etapa 2: Criar um problema de adição aleatório'
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
+- csharp
+- vb
 dev_langs:
 - csharp
 - vb
@@ -11,18 +16,21 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b83edaec6b81c3a2c5699184c62dbd70d71913
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416879"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987708"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
+
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para criar um problema aleatório de adição
 
@@ -36,6 +44,9 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      [!code-csharp[VbExpressTutorial3Step2#1](../ide/codesnippet/CSharp/step-2-create-a-random-addition-problem_1.cs)]
      [!code-vb[VbExpressTutorial3Step2#1](../ide/codesnippet/VisualBasic/step-2-create-a-random-addition-problem_1.vb)]
+
+   > [!IMPORTANT]
+   > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      Você adicionou um objeto Random ao seu formulário e nomeou o objeto **randomizer**.
 
@@ -60,7 +71,8 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
      Quando você digita o ponto (.) após `randomizer` no código, uma janela do IntelliSense é aberta e mostra todos os métodos do objeto Random que você pode chamar. Por exemplo, o IntelliSense lista o método `Next()`, como segue.
 
-     ![Próximo método](../ide/media/express_randomwhite.png) Próximo método
+     ![Próximo método](../ide/media/express_randomwhite.png)<br/>
+*Próximo método*
 
      Quando você inseri um ponto depois de um objeto, o IntelliSense exibe uma lista de membros do objeto, como propriedades, métodos e eventos.
 
@@ -87,14 +99,15 @@ Na segunda parte deste tutorial, você deixa o teste desafiador adicionando prob
 
 8. Salve seu código, execute-o e então escolha o botão **Iniciar**.
 
-     Um problema aleatório de adição aparece, conforme mostra a ilustração a seguir.
+     Um problema de adição aleatória é exibido, conforme mostrado na captura de tela a seguir.
 
-     ![Problema aleatório de adição](../ide/media/express_additionproblem.png) Problema aleatório de adição
+     ![Problema aleatório de adição](../ide/media/express_additionproblem.png)<br/>
+*Problema aleatório de adição*
 
      Na próxima etapa do tutorial, você adicionará o resultado.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 3: Adicionar um temporizador de contagem regressiva](../ide/step-3-add-a-countdown-timer.md).
+- Para ir para a próxima etapa do tutorial, **consulte [Step 3: Adicione um temporizador](../ide/step-3-add-a-countdown-timer.md)** de contagem regressiva.
 
 - Para retornar à etapa anterior do tutorial, confira [Etapa 1: Criar um projeto e adicionar rótulos ao formulário](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

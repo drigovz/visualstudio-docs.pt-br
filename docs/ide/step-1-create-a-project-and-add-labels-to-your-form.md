@@ -1,28 +1,33 @@
 ---
 title: 'Etapa 1: Criar um projeto e adicionar rótulos ao formulário'
 ms.date: 05/31/2019
-ms.topic: conceptual
+ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
+ms.devlang:
+- csharp
+- vb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c04e0700a9913548b33e1ef3e9092f774cddc77
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: 88ec1c96bea4ebbe3465a489354d90fbbe906858
+ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66501143"
+ms.lasthandoff: 09/14/2019
+ms.locfileid: "70987949"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 
 Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e adiciona rótulos, um botão, e outros controles a um formulário. Você também define as propriedades para cada controle adicionado. O projeto conterá o formulário, controles e (posteriormente neste tutorial) o código. O botão inicia o teste, os rótulos mostram os problemas do teste e outros controles mostram as respostas dos teste e o tempo permanece para concluir o teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-project-for-a-form"></a>Para criar um projeto para um formulário
 
@@ -102,7 +107,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 7. Escolha o sinal de mais ( **+** ) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
 
-     É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.
+     Você pode alterar várias propriedades de fonte, como mostra a captura de tela a seguir.
 
      ![Tamanho da fonte de exibição na janela Propriedades](../ide/media/express_setfontsize.png)
 
@@ -150,7 +155,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 16. Altere o valor da propriedade **(Name)** do controle NumericUpDown para **sum**.
 
-     Você criou a primeira linha, como mostra a imagem a seguir.
+     Você criou a primeira linha, conforme mostrado na ilustração a seguir.
 
      ![A primeira linha do teste de matemática](../ide/media/express_firstrow.png)
 
@@ -200,7 +205,7 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 7. Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.
 
-     O formulário deve parecer com a ilustração a seguir.
+     O formulário deve ser semelhante à captura de tela a seguir.
 
      ![Formulário inicial do teste de matemática](../ide/media/express_formlaidout.png)
 
@@ -208,6 +213,6 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para a próxima etapa do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para ir para a próxima etapa do tutorial, **consulte [etapa 2: Crie um problema](../ide/step-2-create-a-random-addition-problem.md)** de adição aleatória.
 
 - Para retornar ao tópico de visão geral, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
