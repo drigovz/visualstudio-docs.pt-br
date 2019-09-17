@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b739e3a786d3765721b562538148f044416d38d4
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987911"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012600"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -52,7 +52,7 @@ Você pode verificar os nomes escolhendo a lista suspensa seletora de controle n
 Guia ***Form1.cs*** *com C# código*
 
     > [!NOTE]
-    > Sua Form1.cs da guia Form1. vb pode exibir o **botão** de **exibição como em** vez disso.
+    > A guia Form1.cs ou Form1. vb pode exibir o **botão** de **exibição como em** vez disso.
 
 1. Foco nesta parte do código.
 

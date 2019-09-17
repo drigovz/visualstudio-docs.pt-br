@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b5591d9c05ee0449b9ff77729d73722c18e4d3a
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987662"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012613"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio
 
@@ -66,5 +66,5 @@ Você pode se deparar com os seguintes erros ao usar o Hot recarregamento de XAM
 
 ## <a name="see-also"></a>Consulte também
 
-[Solução de problemas do XAML-recarregamento](xaml-hot-reload-troubleshooting.md)
-dinâmico[de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Solucionando problemas de recarregamento dinâmico de XAML](xaml-hot-reload-troubleshooting.md)
+* [Hot recarregamento de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
