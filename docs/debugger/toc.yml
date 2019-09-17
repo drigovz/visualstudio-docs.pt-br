@@ -126,8 +126,12 @@
               href: edit-and-continue-visual-basic.md
             - name: Aplicar edições no modo de interrupção com Editar e Continuar
               href: how-to-apply-edits-in-break-mode-with-edit-and-continue.md
-        - name: Gravar e depurar executando código XAML
-          href: xaml-hot-reload.md
+        - name: Recarga Dinâmica de XAML
+          items:
+            - name: Gravar e depurar executando código XAML
+              href: xaml-hot-reload.md
+            - name: Solução de problemas de Recarga Dinâmica de XAML
+              href: xaml-hot-reload-troubleshooting.md
         - name: 'Não há suporte para Editar e Continuar em F#'
           href: edit-and-continue-not-supported-for-f-hash.md
     - name: Exibir dados do depurador
