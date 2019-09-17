@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: bcdef95935c0522c8b93a972d7f44fbd7632c53b
+ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809884"
+ms.lasthandoff: 09/16/2019
+ms.locfileid: "71012616"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
@@ -39,7 +39,7 @@ O arquivo *rproject.rproj* mantém determinadas configurações do projeto espec
 
 | Propriedade | Padrão | Descrição |
 | --- | --- | --- |
-| Versão | 1.0 | A versão das Ferramentas do R para Visual Studio usadas para criar o projeto. |
+| Version | 1.0 | A versão das Ferramentas do R para Visual Studio usadas para criar o projeto. |
 | RestoreWorkspace | Padrão | Carregar automaticamente as variáveis do Workspace anteriores do arquivo `.RData` no diretório do projeto. |
 | SaveWorkspace | Padrão | Salvar as variáveis de workspace atual no arquivo `.RData` no diretório do projeto ao fechar um projeto. |
 | AlwaysSaveHistory | Padrão | Salvar o histórico da janela interativa atual no arquivo `.RHistory` no diretório do projeto ao fechar um projeto. |
@@ -48,7 +48,7 @@ O arquivo *rproject.rproj* mantém determinadas configurações do projeto espec
 | NumSpacesForTab | 2 | O número de espaços a serem inseridos se UseSpacesForTab for Sim. |
 | Codificando | UTF-8 | A codificação padrão para arquivos `.R`. |
 | RnwWeave | Sweave | Pacote a ser usado ao introduzir um arquivo Rnw. |
-| LaTeX | pdfLaTeX | Biblioteca a ser usada ao converter RMarkdwon em PDF. |
+| LaTeX | pdfLaTeX | Biblioteca a ser usada ao converter RMarkdown em PDF. |
 
 ### <a name="converting-a-folder-of-files-to-an-r-project"></a>Converter uma pasta de arquivos em um projeto R
 
@@ -61,7 +61,7 @@ Se você tem uma pasta existente de arquivos *.R* que deseja gerenciar em um pro
 
 ## <a name="project-properties"></a>Propriedades de projeto
 
-Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)**. A janela aberta exibe propriedades do projeto:
+Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)** . A janela aberta exibe propriedades do projeto:
 
 | Tabulação | Propriedade | Descrição |
 | --- | --- | --- |
@@ -70,7 +70,7 @@ Para abrir as páginas de propriedades do projeto, clique com o botão direito d
 | | Caminho do projeto remoto | Caminho para um workspace remoto. |
 | | Transferir arquivos em execução | Indica se os arquivos do projeto, sujeitos ao filtro em **Arquivos para transferir**, devem ser copiados para um workspace remoto com cada execução. |
 | | Arquivos para transferir | Nomes de arquivo e curingas que indicam os arquivos específicos para copiar em um workspace remoto se **Transferir arquivos em execução** estiver selecionado. |
-| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou **.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. |
+| Configurações | (Arquivo Settings.R) | As configurações do projeto do R vêm dos arquivos *Settings.R* ou * *.Settings.R* que estão localizados dentro do projeto. Se não houver nenhum arquivo de configurações, você poderá adicionar variáveis e salvar a página e, em seguida, um arquivo padrão *Settings.R* será criado para você. Também é possível adicionar o arquivo de configurações ao projeto por meio do comando de menu **Arquivo** > **Adicionar Novo Item**. <br/> As configurações são armazenadas como código R e o arquivo pode ser obtido antes da execução de outros módulos, portanto, pré-populando o ambiente com configurações predefinidas. |
 
 ## <a name="r-specific-project-commands"></a>Comandos de projeto específico do R
 
@@ -99,7 +99,7 @@ As RTVS incluem vários modelos para tipos de arquivo específicos. Você pode a
 | Documentação do R | Um arquivo de documentação do R genérico que contém apenas os campos nome, alias e título. |
 | Documentação do R (função) | Um arquivo de documentação do R que contém vários campos com comentários para descrever uma função. |
 | Documentação do R (conjunto de dados) | Um arquivo de documentação do R que contém vários campos com comentários para descrever um conjunto de dados. |
-| Consulta SQL | E um arquivo *.sql* vazio. Veja [Trabalhar com o SQL Server e R](integrating-sql-server-with-r.md). |
+| Consulta SQL | Um arquivo *. SQL* vazio. Veja [Trabalhar com o SQL Server e R](integrating-sql-server-with-r.md). |
 | Procedimento armazenado com R | Um arquivo R com uma consulta SQL filho e um arquivo de modelo de procedimento armazenado filho. Veja [Trabalhar com o SQL Server e R](integrating-sql-server-with-r.md). |
 
 ## <a name="use-multiple-project-types-in-visual-studio"></a>Usar vários tipos de projeto no Visual Studio
