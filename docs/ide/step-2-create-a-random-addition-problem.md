@@ -8,28 +8,28 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 6461c4cf-f2aa-4bf5-91ed-06820a4f893d
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1eee0c161de486740b7576b184f869bffd7fb98
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 941cc454220848d95ed2bf161fa4709868a6ac74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987708"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079600"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Etapa 2: Criar um problema de adição aleatório
 
 Na segunda parte deste tutorial, você deixa o teste desafiador adicionando problemas de matemática baseados em números aleatórios. Você também cria um método que nomeado como `StartTheQuiz()` e que preenche os problemas e inicia o timer de contagem regressiva. Posteriormente neste tutorial, você adicionará problemas de subtração, multiplicação, e de divisão.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-create-a-random-addition-problem"></a>Para criar um problema aleatório de adição

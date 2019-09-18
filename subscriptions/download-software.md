@@ -6,18 +6,18 @@ manager: lank
 ms.date: 07/18/2019
 ms.topic: conceptual
 description: Saiba como localizar e baixar títulos de software da Microsoft em assinaturas do Visual Studio
-ms.openlocfilehash: 1386add84ef86b5bf4c255d176b86d5fd9f294f6
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 003d27e1c8344c6c4cb22a69e06efc94238bb622
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377858"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095401"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>Baixar títulos de software em assinaturas do Visual Studio
 Dependendo da assinatura do Visual Studio que você tem, uma ampla variedade de títulos de software da Microsoft pode estar disponível para você.  Este artigo descreverá como localizar e baixar o software de que você precisa para aproveitar o máximo de sua assinatura. 
 
 > [!NOTE]
-> Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura do Visual Studio Professional e uma assinatura do Visual Studio Test Professional associadas à mesma ID de conexão, os downloads mostrados serão os incluídos na assinatura do Professional, mesmo que você esteja exibindo os benefícios do Dev Essentials no momento.
+> Somente os downloads incluídos na sua assinatura são exibidos na página [Downloads](https://my.visualstudio.com/downloads/featured).  Se você tiver mais de uma assinatura ou associação ao programa, os downloads mostrados serão referentes a **assinatura mais alta** que você tiver, mesmo que você esteja exibindo uma assinatura diferente no momento.  Por exemplo, se você tiver uma assinatura Visual Studio Enterprise e uma assinatura de Visual Studio Professional associadas à mesma ID de entrada, os downloads mostrados serão os incluídos na assinatura do Enterprise, mesmo que você esteja exibindo no momento seus benefícios de assinatura profissional.
 
 ## <a name="how-do-i-find-downloads-in-the-subscriber-portal"></a>Como fazer para localizar downloads no portal do assinante?
 Ao visitar a página [Downloads](https://my.visualstudio.com/downloads/featured?wt.mc_id=o~msft~docs), você verá os downloads populares organizados em grupos por tipo de produto.  Você pode selecionar um dos downloads populares mostrados ou pesquisar qualquer produto usando a barra de pesquisa na parte superior da página.

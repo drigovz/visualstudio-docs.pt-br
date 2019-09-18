@@ -14,12 +14,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jillfra
-ms.openlocfilehash: a37cdea4206dafe657dc8cf8adbbcf98ce18afc9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: 1f51b8d3e75d7db19e1b92e909638cee99303c48
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551866"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079616"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Perguntas frequentes sobre o Gerenciador de Testes do Visual Studio
 ::: moniker range=">=vs-2019"
@@ -115,7 +115,6 @@ O filtro do caminho de arquivo na caixa de pesquisa do **Gerenciador de Testes**
 
 No Visual Studio 2019, serão removidas algumas APIs de janela de teste que foram marcadas como públicas anteriormente, mas nunca foram documentadas oficialmente. Elas foram marcadas como "preteridas" no Visual Studio 2017 para fornecer um aviso antecipado aos mantenedores de extensão. Para o nosso conhecimento, muito poucas extensões haviam encontrado essas APIs e criado uma dependência delas. Elas incluem `IGroupByProvider`, `IGroupByProvider<T>`, `KeyComparer`, `ISearchFilter`, `ISearchFilterToken`, `ISearchToken` e `SearchFilterTokenType`. Se essa alteração afetar sua extensão, fale conosco enviando um bug na [Comunidade de Desenvolvedores](https://developercommunity.visualstudio.com).
 
-::: moniker range="vs-2017"
 ## <a name="test-adapter-nuget-reference"></a>Referência ao NuGet do adaptador de teste
 
 **No Visual Studio 2017, versão 15.8, meus testes são detectados, mas não são executados**.
@@ -126,6 +125,7 @@ O **projeto de teste{} não faz referência a nenhum adaptador do NuGet do .NET.
 
 Em vez de usar extensões do adaptador de teste, os projetos são solicitados a usar os pacotes do adaptador de teste do NuGet. Esse requisito melhora bastante o desempenho e causa menos problemas com a integração contínua. Leia mais sobre a substituição da extensão do adaptador de teste do .NET nas [notas de versão](/visualstudio/releasenotes/vs2017-relnotes-v15.8#testadapterextension).
 
+::: moniker range="vs-2017"
 > [!NOTE]
 > Se estiver usando o Adaptador de teste NUnit 2 e não puder migrar para o adaptador de teste NUnit 3, você poderá desativar esse novo comportamento de descoberta no Visual Studio versão 15.8 em **Ferramentas** > **Opções** > **Teste**.
 

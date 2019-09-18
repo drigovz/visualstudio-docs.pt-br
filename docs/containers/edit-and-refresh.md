@@ -1,20 +1,20 @@
 ---
 title: Depurar aplicativos em um contêiner do Docker local | Microsoft Docs
 description: Saiba como modificar um aplicativo que está sendo executado em um contêiner do Docker local, atualize o contêiner por meio de editar e atualizar e, em seguida, defina pontos de interrupção de depuração.
+ms.author: ghogen
 author: ghogen
 manager: jillfra
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: conceptual
 ms.workload: multiple
 ms.date: 07/25/2019
-ms.author: ghogen
 ms.technology: vs-azure
-ms.openlocfilehash: d7a7fa83fe0976ee1e08c6c614a11f783178a285
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
+ms.openlocfilehash: 5af092bbcb987f45b10121f37d40eaa5466c3da5
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70312014"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062180"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>Depurar aplicativos em um contêiner do Docker local
 
@@ -48,14 +48,14 @@ Os contêineres do Docker estão disponíveis para projetos .NET Framework e .NE
 [!INCLUDE [create-aspnet5-app](../azure/includes/create-aspnet5-app.md)]
 ::: moniker-end
 ::: moniker range=">= vs-2019"
-[! INCLUIR [Create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)
+[!INCLUDE [create-aspnet5-app-2019](../azure/includes/vs-2019/create-aspnet5-app-2019.md)]
 ::: moniker-end
 
 ### <a name="edit-your-code-and-refresh"></a>Editar seu código e atualizar
 
 Para iterar alterações rapidamente, você pode iniciar o aplicativo em um contêiner. Em seguida, continue a fazer alterações, exibindo-as como você faria com IIS Express.
 
-1. Defina a **configuração da solução** como **depurar**. Em seguida, pressione CTRL + F5 para criar a imagem do Docker e executá-la localmente.
+1. Defina a **configuração da solução** como **depurar**. Em seguida, pressione **Ctrl**+**F5** para criar a imagem do Docker e executá-la localmente.
 
     Quando a imagem de contêiner é criada e executada em um contêiner do Docker, o Visual Studio inicia o aplicativo Web no navegador padrão.
 

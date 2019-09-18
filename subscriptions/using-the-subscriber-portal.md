@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre a gama completa de benefícios disponíveis para você no portal de assinaturas do Visual Studio
-ms.openlocfilehash: 8ac16b09077935fc1b45d2b04acd895107096459
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+ms.openlocfilehash: 5ca5d3a2dcdf04e54159c746b93368b7d56be0da
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377923"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095310"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>Usando o Portal do Assinante – my.visualstudio.com
 
@@ -21,8 +21,8 @@ O uso do portal requer que você entre com a identidade associada à a assinatur
 
 O portal está organizado em seis páginas.  Cada página fornece acesso a diferentes produtos ou serviços incluídos na assinatura.  As seis páginas são Benefícios, Downloads, Chaves do Produto, Assinaturas, Suporte e Marketplace.
 
-## <a name="benefitshttpsmyvisualstudiocombenefitswtmcidomsftdocs"></a>[Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
-As ferramentas e os serviços incluídos na assinatura são exibidos como "blocos" na página Benefícios.  Nem todos os benefícios são incluídos em todas as assinaturas. Os blocos são agrupados em três categorias:  Ferramentas, Desenvolvimento Profissional e Suporte.  Se estiver usando o Visual Studio Dev Essentials, você verá também uma categoria chamada Em Destaque, que pode conter benefícios selecionados das outras três categorias.
+## <a name="benefitshttpsmyvisualstudiocombenefitswtmc_idomsftdocs"></a>[Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)
+As ferramentas e os serviços incluídos na assinatura são exibidos como "blocos" na página Benefícios.  Nem todos os benefícios são incluídos em todas as assinaturas. Os blocos são agrupados em três categorias:  Ferramentas, Desenvolvimento Profissional e Suporte.  
 
 ### <a name="tools"></a>Ferramentas
 Na categoria Ferramentas, você encontrará as principais ferramentas de desenvolvimento, como o IDE do Visual Studio, o Azure DevOps, bem como ferramentas fornecidas por nossos parceiros.  Você também verá serviços como o App Center do Visual Studio e do Azure.
@@ -33,15 +33,15 @@ Essa categoria contém benefícios, como treinamento online da Microsoft e de no
 ### <a name="support"></a>Suporte
 Tem alguma pergunta sobre o Azure?  Obtenha ajuda da Comunidade Azure por meio de fóruns ou aproveite o Chat de Consultoria do Azure (visualização).  O Atendimento via Chat está disponível para ajudá-lo a encontrar documentação técnica e informações de produtos, bem como dúvidas relacionadas à assinatura.  Assinaturas selecionadas também incluem Suporte Técnico baseado em incidentes para ajudá-lo a resolver problemas de uma ampla variedade de produtos Microsoft em execução em ambientes de desenvolvimento/teste.
 
-## <a name="downloadshttpsmyvisualstudiocomdownloadswtmcidomsftdocs"></a>[Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
+## <a name="downloadshttpsmyvisualstudiocomdownloadswtmc_idomsftdocs"></a>[Downloads](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs)
 Dependendo da assinatura ou do programa, você tem acesso a downloads de software que vão desde atualizações e patches até uma abrangente biblioteca de produtos, bem como versões mais antigas para testar os aplicativos em uma ampla variedade de cenários.
 
 Para que seja simples para assinantes que têm várias assinaturas associadas a uma única conta, quando acessar a página Downloads, você verá os downloads disponíveis para a assinatura mais alta que possui.  Dessa forma, você pode ver todos os downloads, independentemente da assinatura que está usando no momento.
 
-## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmcidomsftdocs"></a>[Chaves do Produto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
+## <a name="product-keyshttpsmyvisualstudiocomproductkeyswtmc_idomsftdocs"></a>[Chaves do Produto](https://my.visualstudio.com/productkeys?wt.mc_id=o~msft~docs)
 Acesse a página Chaves do Produto para obter as chaves para instalar e ativar produtos e ver quais chaves você já solicitou.  Você pode até exportar uma lista de todas as chaves, para fins de proteção.
 
-## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmcidomsftdocs"></a>[Assinaturas](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
+## <a name="subscriptionshttpsmyvisualstudiocomsubscriptionswtmc_idomsftdocs"></a>[Assinaturas](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)
 A página Assinaturas fornece os recursos para ver quais assinaturas você possui, mudar de assinatura, renová-las e ativar novas assinaturas. Você também pode associar as assinaturas que acessa usando a Conta Microsoft a uma conta alternativa que já está associada a recursos existentes do IDE do Visual Studio, ao Azure DevOps ou ao Azure.
 
 ## <a name="support"></a>Suporte

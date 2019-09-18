@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: db84490c5e3067012ec37643996bd3c0a4874abc
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: 397f65639b6ac277aa6975964ba8317adea58a49
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012600"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062846"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -64,7 +64,7 @@ Guia ***Form1.cs*** *com C# código*
 
     ```vb
         Private Sub showButton_Click() Handles showButton.Click
-    
+
     End Sub
     ```
 
@@ -83,11 +83,11 @@ Guia ***Form1.cs*** *com C# código*
     A seguir temos o novo código que você vê no editor de códigos.
 
     [!code-csharp[VbExpressTutorial1Step6_#2](../ide/codesnippet/CSharp/step-6-name-your-button-controls_2.cs)]
-    
+
     [!code-vb[VbExpressTutorial1Step6_#2](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_2.vb)]
 
     > [!NOTE]
-    > Seu código pode não exibir manipuladores de eventos em letras "camelCase". 
+    > Seu código pode não exibir manipuladores de eventos em letras "camelCase".
 
     Os cinco métodos que você adicionou são chamados de *manipuladores de eventos*, porque seu aplicativo os chama sempre que um evento (como um usuário escolhendo um botão ou uma caixa) acontece.
 

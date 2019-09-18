@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f9c0f4913c80e1cf2f2fee24dbed5ad910ca75
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 2edc0e1e63a716f5e2e649660a9b0333ec8bc923
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887788"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079359"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 
@@ -71,7 +71,7 @@ Para obter informações sobre como criar arquivos de chave, veja [Como: Como cr
 4. Insira a senha para acessar o arquivo de chave e, em seguida, selecione **Enter**.
 
 > [!NOTE]
-> O arquivo *.pfx* não pode incluir informações de encadeamento de certificados. Caso contrário, ocorrerá o seguinte erro de importação: **Não é possível localizar o certificado e a chave privada para descriptografia**. Para remover as informações de encadeamento de certificado, você pode usar *certmgr. msc* e [desabilitar a opção](/previous-versions/aa730868(v=vs.80)?redirectedfrom=MSDN#rsvssign_topic3) para **incluir todos os certificados** ao exportar o arquivo *. pfx.
+> O arquivo *.pfx* não pode incluir informações de encadeamento de certificados. Caso contrário, ocorrerá o seguinte erro de importação: **Não é possível localizar o certificado e a chave privada para descriptografia**. Para remover as informações de encadeamento de certificado, você pode usar *certmgr. msc* e [desabilitar a opção](/previous-versions/aa730868(v=vs.80)) para **incluir todos os certificados** ao exportar o arquivo *. pfx.
 
 ## <a name="sign-using-a-test-certificate"></a>Assinar usando um certificado de teste
 

@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f4b8272494e4d1bdef1f073cf602a6c2397445
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 86f9cd4d5b0f7af2c543c2fdcea8864d092d2971
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887938"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062436"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Examinar, comentar e testar o código
 
@@ -61,7 +61,7 @@ Você acabou de criar algo que funciona e que, embora ainda não esteja pronto, 
     > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
 
      [!code-csharp[VbExpressTutorial1Step9_10#1](../ide/codesnippet/CSharp/step-9-review-comment-and-test-your-code_1.cs)]
-     
+
      [!code-vb[VbExpressTutorial1Step9_10#1](../ide/codesnippet/VisualBasic/step-9-review-comment-and-test-your-code_1.vb)]
 
     O manipulador de eventos do botão **showButton** <xref:System.Windows.Forms.Control.Click> foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma `if` instrução é como você diz ao seu aplicativo, "Marque esta coisa e, se for verdadeira, execute estas ações". Nesse caso, você informa ao aplicativo para abrir a caixa de diálogo **Abrir arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK** , carregará esse arquivo em **PictureBox**.

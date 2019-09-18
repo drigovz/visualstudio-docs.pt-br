@@ -1,22 +1,27 @@
 ---
 title: 'Etapa 8: Adicionar um método para verificar se o jogador ganhou'
 ms.date: 11/04/2016
-ms.topic: conceptual
-dev_langs:
+ms.topic: tutorial
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.devlang:
 - csharp
 - vb
+dev_langs:
+- CSharp
+- VB
 ms.assetid: 6e317f6e-ba4c-4306-8924-300b0c2f65c6
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9daa4d939eb1cd5c03d3811337f258fc3ef3c70c
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: b22f55c2f2e620c2ac1ff7110125e2422aa5e492
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68415625"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079351"
 ---
 # <a name="step-8-add-a-method-to-verify-whether-the-player-won"></a>Etapa 8: Adicionar um método para verificar se o jogador ganhou
 Você criou um jogo divertido, mas ele precisa de um item adicional para ser finalizado. O jogo deve terminar quando os jogadores ganham, de modo que você precisa adicionar um método `CheckForWinner()` para verificar se o jogador ganhou.

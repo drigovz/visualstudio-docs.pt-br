@@ -10,20 +10,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6d891001bbb46e01049c2c8d71bb25372bb8c29
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551063"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062410"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
-Se você usou anteriormente a análise de código estático no Visual Studio, talvez esteja imaginando quais dessas regras estão disponíveis na implementação atual como analisadores do [FxCop](install-fxcop-analyzers.md). Esta página lista as regras que são portadas, bem como aquelas que não foram portadas e se há planos para portá-las.
+Se você usou anteriormente a análise de código estático no Visual Studio, talvez esteja imaginando quais dessas regras estão disponíveis na implementação atual como [analisadores do FxCop](install-fxcop-analyzers.md). Esta página lista as regras que são portadas, bem como aquelas que não foram portadas e se há planos para portá-las.
 
 ## <a name="ported-rules"></a>Regras portadas
 
-A [página de documentação gerada automaticamente](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) no repositório Roslyn-Analyzers tem a lista mais atualizada de regras que foram modeladas para analisadores do FxCop. Essa página também tem informações adicionais, como se a regra está habilitada por padrão e se tem uma correção de *código*associada. (As correções de[código](../ide/quick-actions.md) são correções de um único clique disponíveis no menu de ícones de lâmpada no Visual Studio.)
+A [página de documentação gerada automaticamente](https://github.com/dotnet/roslyn-analyzers/blob/master/src/Microsoft.CodeAnalysis.FxCopAnalyzers/Microsoft.CodeAnalysis.FxCopAnalyzers.md) no repositório Roslyn-Analyzers tem a lista mais atualizada de regras que foram modeladas para analisadores do FxCop. Essa página também tem informações adicionais, como se a regra está habilitada por padrão e se tem uma correção de *código*associada. (As[correções de código](../ide/quick-actions.md) são correções de um único clique disponíveis no menu de ícones de lâmpada no Visual Studio.)
 
 A partir da data desta página, a lista de regras do FxCop que foram modeladas para [analisadores de FxCop](install-fxcop-analyzers.md) inclui:
 
@@ -69,7 +69,7 @@ ID da regra | Título
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Não acionar exceções em locais inesperados
 CA1066 | O {0} tipo deve implementar\<IEquatable T > porque ele substitui Equals
 CA1067 | Substituir Object. Equals (Object) ao implementar\<IEquatable T >
-CA1068 | Os parâmetros de CancellationToken devem vir por último
+[CA1068](ca1068.md) | Os parâmetros de CancellationToken devem vir por último
 CA1200 | Evite usar marcas cref com um prefixo
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Não passar literais como parâmetros localizados
 [CA1304](ca1304-specify-cultureinfo.md) | Especificar CultureInfo
@@ -193,7 +193,7 @@ CA5369 | Usar XmlReader para desserializar
 CA5370 | Usar XmlReader para validar o leitor
 CA5371 | Usar XmlReader para leitura de esquema
 CA5372 | Usar XmlReader para XPathDocument
-CA5373 | Não usar função de derivação de chave obsoleta
+CA5373 | Não usar a função de derivação de chave obsoleta
 CA5374 | Não usar XslTransform
 CA5375 | Não usar assinatura de acesso compartilhado da conta
 CA5376 | Usar SharedAccessProtocol HttpsOnly
@@ -204,7 +204,7 @@ CA9999 | Incompatibilidade de versão do analisador
 
 ## <a name="unported-rules"></a>Regras não portadas
 
-O conjunto de regras que não foram modeladas para analisadores de [FxCop](install-fxcop-analyzers.md) consiste em regras que ainda não estão, mas que ainda [podem ser portadas](#rules-that-may-be-ported), e aquelas que foram preteridas e [não serão portadas](#deprecated-rules).
+O conjunto de regras que não foram modeladas para [analisadores de FxCop](install-fxcop-analyzers.md) consiste em regras que ainda não estão, mas que ainda [podem ser portadas](#rules-that-may-be-ported), e aquelas que foram preteridas e [não serão portadas](#deprecated-rules).
 
 ### <a name="rules-that-may-be-ported"></a>Regras que podem ser portadas
 
