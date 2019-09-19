@@ -23,16 +23,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf78e17d4d804c94392da045a90c98869319d185
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.openlocfilehash: 02e8beae03dc2828d81b80813325300fe31b3cea
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70222617"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128153"
 ---
 # <a name="first-look-at-deployment-in-visual-studio"></a>Introdução à implantação no Visual Studio
 
-Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (Muitos tipos de aplicativo são compatíveis com outras ferramentas de implantação como implantação de linha de comando ou o NuGet, as quais não são descritas aqui).
+Ao implantar um aplicativo, serviço ou componente, você o distribui para instalação em outros computadores, dispositivos, servidores ou na nuvem. Você escolhe o método apropriado no Visual Studio para o tipo de implantação que deseja. (Muitos tipos de aplicativos dão suporte a outras ferramentas de implantação, como a implantação de linha de comando que não são descritas aqui.)
 
 Confira os guias de Início Rápido e Tutoriais para obter instruções passo a passo de implantação. Para uma visão geral sobre as opções de implantação, confira [Quais opções de publicação são adequadas para mim?](deploying-applications-services-and-components-resources.md#what-publishing-options-are-right-for-me).
 
@@ -44,7 +44,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
     ![Escolha Publicar](../deployment/media/quickstart-publish.png)
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em uma pasta usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++a/CLI, consulte [implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, paraC++C/, consulte [implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-azure"></a>Publicar no Azure
 
@@ -83,7 +83,7 @@ A implantação em uma pasta local é normalmente usada para teste ou para inici
 
     Você também pode implantar aplicativos e serviços ASP.NET de várias outras maneiras. Para obter mais informações, confira [Implantando aplicativos e serviços Web ASP.NET](http://www.asp.net/aspnet/overview/deployment).
 
-- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++/CLR, confira [Implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, para C/C++, confira [Implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
+- **Área de Trabalho do Windows** Você pode publicar um aplicativo de área de trabalho do Windows em um servidor Web ou em um compartilhamento de arquivo de rede usando a implantação ClickOnce. Os usuários podem, então, instalar o aplicativo com um único clique. Para obter mais informações, confira [Implantar um aplicativo da área de trabalho usando o ClickOnce](how-to-publish-a-clickonce-application-using-the-publish-wizard.md) (C# e Visual Basic). Para C++a/CLI, consulte [implantar um aplicativo nativo usando o ClickOnce](/cpp/windows/clickonce-deployment-for-visual-cpp-applications) ou, paraC++C/, consulte [implantar um aplicativo nativo usando um projeto de instalação](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project).
 
 ## <a name="publish-to-microsoft-store"></a>Publicar na Microsoft Store
 
@@ -93,9 +93,9 @@ No Visual Studio, você pode criar pacotes de aplicativos para implantação na 
 
     ![Criar um pacote de aplicativo](../deployment/media/feature-tour-create-app-package.jpg)
 
-- **Área de Trabalho do Windows**: Realize a implantação na Microsoft Store usando a Ponte de Desktop no Visual Studio 2017 versão 15.4 e posterior. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, confira [Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)](/windows/uwp/porting/desktop-to-uwp-packaging-dot-net).
+- **Área de Trabalho do Windows**: Você pode implantar no Microsoft Store a partir do Visual Studio 2017 versão 15,4. Para fazer isso, comece criando um Projeto de Empacotamento de Aplicativos do Windows. Para obter mais informações, consulte [empacotar um aplicativo de área de trabalho para Microsoft Store](/windows/msix/desktop/desktop-to-uwp-packaging-dot-net).
 
-    ![Ponte de Desktop](../deployment/media/feature-tour-desktop-bridge.png)
+    ![Empacotar um aplicativo de área de trabalho](../deployment/media/feature-tour-desktop-bridge.png)
 
 ## <a name="deploy-net-packages-to-nugetorg"></a>Implantar pacotes .NET no NuGet.org
 

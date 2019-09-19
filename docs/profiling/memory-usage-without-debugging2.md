@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 16b46d47ec5850a79d78667671c7eb671d859f3e
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62830602"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128230"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
@@ -121,7 +121,7 @@ Muitos tipos em aplicativos não são muito interessantes para os desenvolvedore
 
  ![Links para o relatório de instantâneos em um painel de instantâneo](../profiling/media/memuse_snapshotview_snapshotdetailslinks.png "Links para o relatório de instantâneos em um painel de instantâneo")
 
-Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado**. O link do tamanho classifica o relatório pela coluna **Tamanho Inclusivo (Bytes)**. O link de classifica o relatório pela coluna **Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
+Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado**. O link do tamanho classifica o relatório pela coluna **Tamanho Inclusivo (Bytes)** . O link de classifica o relatório pela coluna **Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
 
 ### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árvore de Heap Gerenciado (relatórios de detalhes do instantâneo)
  A árvore **Heap Gerenciado** lista os tipos de objetos que são mantidos na memória. Expanda um nome do tipo para exibir as dez maiores instâncias do tipo, classificadas por tamanho. Selecione um tipo ou instância para exibir as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
@@ -164,7 +164,7 @@ A árvore de **Tipos Referenciados** em um relatório de detalhes do instantâne
 
 Um relatório de diferenças de instantâneos mostra as alterações entre um instantâneo primário e o instantâneo anterior. Para abrir um relatório de diferenças, selecione um dos links de diferenças em um painel de instantâneo.
 
-Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado** no relatório. O link do tamanho classifica o relatório pela coluna **Diferenças de Tamanho Inclusivo (Bytes)**. O link de objetos classifica o relatório pela coluna **Diferença de Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
+Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado** no relatório. O link do tamanho classifica o relatório pela coluna **Diferenças de Tamanho Inclusivo (Bytes)** . O link de objetos classifica o relatório pela coluna **Diferença de Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
 
  ![Links para o relatório de diferenças em um painel de instantâneo](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links para o relatório de diferenças em um painel de instantâneo")
 
@@ -201,7 +201,7 @@ A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos
 
 ![Tipos referenciados em um relatório de diferenças](../profiling/media/memuse_snapshotdiff_referencedtypes.png "Tipos referenciados em um relatório de diferenças")
 
-Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâneos tem as seguintes colunas. Uma árvore de **Objetos Referenciados** tem as colunas **Instância**, **Tamanho (Bytes)**, **Tamanho Inclusivo (Bytes)** e **Módulo**.
+Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâneos tem as seguintes colunas. Uma árvore de **Objetos Referenciados** tem as colunas **Instância**, **Tamanho (Bytes)** , **Tamanho Inclusivo (Bytes)** e **Módulo**.
 
 |||
 |-|-|
@@ -216,7 +216,7 @@ Uma árvore **Tipos Referenciados** em um relatório de diferenças de instantâ
 
 ## <a name="see-also"></a>Consulte também
 - [Memória JavaScript](../profiling/javascript-memory.md)
-- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
 - [Melhores práticas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Diagnosing memory issues with the new Memory Usage Tool in Visual Studio](http://go.microsoft.com/fwlink/p/?LinkId=394706) (Diagnosticando problemas de memória com a nova Ferramenta de Uso de Memória no Visual Studio)

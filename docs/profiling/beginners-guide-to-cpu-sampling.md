@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 91b175eec9d17624f2b7225d1aac428926310734
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440277"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128225"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guia do iniciante para amostragem de CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar dados de **Amostragem**.
@@ -127,5 +127,5 @@ Você pode usar as ferramentas de criação de perfil do Visual Studio para anal
 - [Gerenciador de Desempenho](../profiling/performance-explorer.md)
 - [Introdução](../profiling/getting-started-with-performance-tools.md)
 - [Visões gerais](../profiling/overviews-performance-tools.md)
-- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
