@@ -139,7 +139,7 @@
       displayName: Feature tour
       href: ide/quickstart-ide-orientation.md
     - name: 'C++: Criar um aplicativo do console'
-      href: ide/getting-started-with-cpp-in-visual-studio.md
+      href: /cpp/get-started/tutorial-console-cpp
     - name: 'Python: Como criar um aplicativo Web'
       href: ide/quickstart-python.md
     - name: 'Node.js: Como criar um aplicativo Web'
@@ -767,7 +767,7 @@
           href: ide/reference/add-new-item-command.md
         - name: Comando Alias
           href: ide/reference/alias-command.md
-        - name: Comando Avaliar Instrução
+        - name: comando Avaliar Instrução
           href: ide/reference/evaluate-statement-command.md
         - name: Comando Localizar
           href: ide/reference/find-command.md
