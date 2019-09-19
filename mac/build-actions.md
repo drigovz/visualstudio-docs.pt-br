@@ -3,31 +3,47 @@ title: Ações de Build
 description: Este artigo descreve as diferentes ações de build que podem ser usadas para projetos em C#
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 05/06/2018
+ms.date: 09/18/2019
 ms.assetid: 5399BCB1-E317-4C7B-87B1-C531E985DE6E
-ms.openlocfilehash: 54e341b4e5961623f41963bb90c2e5d60b110cf4
-ms.sourcegitcommit: 7fbfb2a1d43ce72545096c635df2b04496b0be71
-ms.translationtype: HT
+ms.openlocfilehash: 5a0d7c6646fac83ef70fbe2aa7384dcee992d726
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/09/2019
-ms.locfileid: "67691205"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128441"
 ---
 # <a name="build-actions"></a>Ações de Build
 
-Todos os arquivos em um projeto do Visual Studio para Mac têm uma ação de build. Ele controla o que acontece com o arquivo durante um build. Esse comportamento pode ser definido clicando com o botão direito do mouse em qualquer arquivo e navegando até **Ação de Build**, conforme ilustrado abaixo:
+Todos os arquivos em um projeto do Visual Studio para Mac têm uma ação de build. A ação de compilação controla o que acontece com o arquivo durante uma compilação. 
+
+>[!NOTE]
+>Este tópico se aplica ao Visual Studio para Mac. Para o Visual Studio no Windows, consulte [ações de compilação](/visualstudio/ide/build-actions).
+
+## <a name="set-a-build-action"></a>Definir uma ação de build
+
+Para definir uma ação de compilação para um arquivo em Visual Studio para Mac, você pode clicar com o botão direito do mouse em qualquer arquivo e navegar até a **ação de Build**, conforme ilustrado abaixo:
 
 ![Selecionando ação Compilar build no Gerenciador de Soluções](media/projects-and-solutions-image1.png)
 
-Algumas das ações de build comuns para projetos C# são:
+As ações de compilação para esse arquivo serão mostradas no menu suspenso. 
 
-* **None** – O arquivo não faz parte do build de nenhuma forma, sendo incluído no projeto para fácil acesso no IDE.
-* **Compile** – O arquivo será passado para o compilador C# como um arquivo de origem.
-* **EmbeddedResource** – O arquivo será passado para o compilador C# como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.
-* **Content** – Para projetos ASP.NET, esses arquivos serão incluídos como parte do site quando ele for implantado. Para projetos Xamarin.iOS e Xamarin.Mac, eles estarão incluídos no lote de aplicativo.
+## <a name="build-action-values"></a>Valores de ação de build
 
-É possível selecionar mais de um arquivo no Gerenciador de Soluções, permitindo que você defina a ação de build para vários arquivos ao mesmo tempo.
+Algumas das ações comuns de compilação para projetos que você pode criar no Visual Studio para Mac incluem:
 
-Além disso, há ações de build para projetos específicos. Projetos Xamarin.iOS têm a ação de build **BundleResource**, que adiciona o arquivo como parte do pacote de aplicativo. Informações sobre as ações de build específicas do Xamarin.Android podem ser encontradas no guia de [processo de build](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+|Ação de compilação | Tipos de projeto | Descrição |
+|--|--|--|
+| **Compile** | qualquer | O arquivo é passado para o C# compilador como um arquivo de origem.|
+| **Disputa** | .NET, Xamarin | Para projetos ASP.NET, esses arquivos são incluídos como parte do site quando ele for implantado. Para projetos Xamarin.iOS e Xamarin.Mac, eles estarão incluídos no lote de aplicativo.|
+| **Embedded Resource** | .NET | O arquivo é passado para o C# compilador como um recurso a ser inserido no assembly. O [Assembly.GetManifestResourceStream](https://docs.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream), do namespace `System.Reflection`, pode ser usado para ler o arquivo do assembly.|
+| **Nenhum** | qualquer | O arquivo não faz parte da compilação de nenhuma forma e é incluído no projeto para facilitar o acesso do IDE. Esse valor pode ser usado para arquivos de documentação como "Leiame", por exemplo.|
+
+> [!NOTE]
+> Ações adicionais de build podem ser definidas por tipos de projeto específicos, portanto, a lista de ações de build depende do tipo de projeto, e podem aparecer valores que não estão nessa lista.  
+
+Projetos Xamarin.iOS têm a ação de build **BundleResource**, que adiciona o arquivo como parte do pacote de aplicativo. Informações sobre as ações de build específicas do Xamarin.Android podem ser encontradas no guia de [processo de build](/xamarin/android/deploy-test/building-apps/build-process#Build_Actions).
+
+Também é possível selecionar mais de um arquivo no Gerenciador de soluções, permitindo que você defina a ação de compilação para muitos arquivos ao mesmo tempo.
 
 ## <a name="see-also"></a>Consulte também
 

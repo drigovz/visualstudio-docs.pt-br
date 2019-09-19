@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 97ed8dda2ea5d338bc7d60be845fafad6a30b47f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a368a9b8f6d25753993a2cc10ea9ca94734d6709
+ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62777500"
+ms.lasthandoff: 09/19/2019
+ms.locfileid: "71128285"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>Analisar o consumo de recursos e a Atividade de Thread de Interface do Usuário (XAML)
 
@@ -66,7 +66,7 @@ Depois de coletar os dados para a criação de perfil, você pode usar estas eta
 
 1. Exiba as informações nos grafos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.
 
-2. Usando as informações nos grafos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)**, examine os detalhes na exibição **Detalhes da linha do tempo** para localizar as possíveis causas de qualquer aparente falta de capacidade de resposta.
+2. Usando as informações nos grafos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)** , examine os detalhes na exibição **Detalhes da linha do tempo** para localizar as possíveis causas de qualquer aparente falta de capacidade de resposta.
 
 ### <a name="BKMK_Report_scenarios_categories_and_events"></a> Cenários, categorias e eventos de relatório
 
@@ -126,5 +126,5 @@ Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filt
 - [Blog da equipe do WPF: Nova ferramenta de análise de desempenho da interface do usuário para aplicativos WPF](https://blogs.msdn.microsoft.com/wpf/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications/)
 - [Melhores práticas de desempenho para aplicativos UWP em C++, C# e Visual Basic](/previous-versions/windows/apps/hh750313\(v\=win.10\))
 - [Otimizar o desempenho do aplicativo WPF](/dotnet/framework/wpf/advanced/optimizing-wpf-application-performance)
-- [Criação de perfis no Visual Studio](../profiling/index.md)
+- [Criação de perfis no Visual Studio](../profiling/index.yml)
 - [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md)
