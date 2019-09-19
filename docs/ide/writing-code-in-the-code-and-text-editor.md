@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531664"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095286"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
@@ -90,6 +90,6 @@ Para conferir opções do editor específicas ao JavaScript, confira [Opções d
 
 - [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)
-- [Introdução ao C++ no Visual Studio](../ide/getting-started-with-cpp-in-visual-studio.md)
+- [Introdução ao C++ no Visual Studio](/cpp/get-started/tutorial-console-cpp)
 - [Introdução ao C# e ao ASP.NET no Visual Studio](../get-started/csharp/tutorial-aspnet-core.md)
 - [Introdução ao Python no Visual Studio](../ide/quickstart-python.md)

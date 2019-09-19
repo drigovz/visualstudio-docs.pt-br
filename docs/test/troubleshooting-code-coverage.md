@@ -7,18 +7,18 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 7aef839027639770e60292210aaddf998c97fce0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: abd5075d04f26b9795695bfcd4fcd387e1a15d24
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926549"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079587"
 ---
 # <a name="troubleshoot-code-coverage"></a>Solução de problemas de cobertura de código
 
 A ferramenta de análise da cobertura de código no Visual Studio coleta dados para assemblies nativos e gerenciados (arquivos *.dll* ou *.exe*). No entanto, em alguns casos, a janela **Resultados da Cobertura de Código** exibe um erro semelhante a "Resultados vazios gerados: ..." Há várias razões pelas quais você pode obter resultados vazios. Este artigo ajuda você a resolver esses problemas.
 
-## <a name="what-you-should-see"></a>O que você deve ver
+## <a name="what-you-should-see"></a>O que você deverá ver
 
 Se você escolher um comando **Analisar Cobertura de Código** no menu **Teste** e se o build e os testes forem executados com êxito, você deverá ver uma lista de resultados na janela **Cobertura de Código**. Você talvez tenha que expandir os itens para ver os detalhes.
 
@@ -56,6 +56,8 @@ Explicação – O mecanismo de cobertura de código exige que todo assembly ten
 O arquivo *.pdb* precisa ser gerado do mesmo build dos arquivos *.dll* ou *.exe*.
 
 Resolução – Garanta que as configurações de build gerem o arquivo *.pdb*. Se os arquivos *.pdb* não forem atualizados quando o projeto for compilado, abra as propriedades do projeto, selecione a página **Build**, escolha **Avançado** e inspecione **Informações de Depuração**.
+
+Para C++ projetos, verifique se os arquivos. pdb gerados têm informações de depuração completas. Abra as propriedades do projeto e verifique se a**depuração** > do **vinculador** > de**geração de informações** de depuração está definida para **gerar informações de depuração otimizadas para compartilhamento e publicação (/debug: Full)** .
 
 Se os arquivos *.pdb* e *.dll* ou *.exe* estiverem em locais diferentes, copie o arquivo *.pdb* para o mesmo diretório. Também é possível configurar o mecanismo de cobertura de código para pesquisar arquivos *.pdb* em outro local. Para obter mais informações, confira [Personalizar a análise de cobertura de código](../test/customizing-code-coverage-analysis.md).
 

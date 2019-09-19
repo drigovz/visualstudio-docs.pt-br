@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae41d9ac30567a32780af422c3af1e2b0d6a63ae
-ms.sourcegitcommit: b761a4a457646d04adfda510c8837734ee4d8f17
+ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/12/2019
-ms.locfileid: "70929774"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062174"
 ---
 # <a name="code-analysis-faq"></a>Perguntas frequentes sobre análise de código
 
@@ -24,15 +24,15 @@ Esta página contém respostas para algumas perguntas frequentes sobre a anális
 
 **P**: Devo usar a análise de código ou EditorConfig para verificar o estilo de código?
 
-**R**: A análise de código e os arquivos. editorconfig funcionam lado a lado. Quando você define estilos [de código em um arquivo. editorconfig](../ide/editorconfig-code-style-settings-reference.md) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig também podem ser usados para configurar alguns pacotes do NuGet Analyzer, como [analisadores do FxCop](configure-fxcop-analyzers.md).
+**R**: A análise de código e os arquivos EditorConfig funcionam lado a lado. Quando você define estilos [de código em um arquivo EditorConfig](../ide/editorconfig-code-style-settings-reference.md) ou na página de [Opções do editor de texto](../ide/code-styles-and-code-cleanup.md) , na verdade está configurando os analisadores de código que são criados no Visual Studio. Os arquivos EditorConfig também podem ser usados para configurar alguns pacotes do NuGet Analyzer, como [analisadores do FxCop](configure-fxcop-analyzers.md).
 
 ## <a name="editorconfig-versus-rule-sets"></a>EditorConfig versus conjuntos de regras
 
-**P**: Devo configurar meus analisadores usando um conjunto de regras ou um arquivo. editorconfig?
+**P**: Devo configurar meus analisadores usando um conjunto de regras ou um arquivo EditorConfig?
 
-**R**: Os conjuntos de regras e arquivos. editorconfig são maneiras mutuamente exclusivas de configurar analisadores. Eles podem coexistir. Os [conjuntos de regras](analyzer-rule-sets.md) permitem habilitar e desabilitar regras e definir sua gravidade. Os arquivos EditorConfig oferecem outras maneiras de configurar regras. Para analisadores do FxCop, os arquivos. editorconfig permitem que você [Defina quais tipos de código analisar](fxcop-analyzer-options.md). Para os analisadores que são criados no Visual Studio, os arquivos. editorconfig permitem que você [defina os estilos de código preferenciais](../ide/editorconfig-code-style-settings-reference.md) para uma codebase.
+**R**: Os conjuntos de regras e os arquivos EditorConfig podem coexistir e podem ser usados para configurar analisadores. Os [conjuntos de regras](analyzer-rule-sets.md) permitem habilitar e desabilitar regras e definir sua gravidade. Os arquivos EditorConfig oferecem outras maneiras de configurar regras. Para analisadores do FxCop, os arquivos EditorConfig permitem que você [Defina quais tipos de código analisar](fxcop-analyzer-options.md). Para analisadores de estilo de código que são criados no Visual Studio, os arquivos EditorConfig permitem que você [defina os estilos de código preferenciais](../ide/editorconfig-code-style-settings-reference.md) para uma codebase.
 
-Além dos conjuntos de regras e arquivos. editorconfig, alguns analisadores são configurados por meio do uso de arquivos de texto marcados como C# [arquivos adicionais](../ide/build-actions.md#build-action-values) para os compiladores do e do VB.
+Além dos conjuntos de regras e arquivos EditorConfig, alguns analisadores são configurados por meio do uso de arquivos de texto marcados como C# [arquivos adicionais](../ide/build-actions.md#build-action-values) para os compiladores do e do VB.
 
 > [!NOTE]
 > Os arquivos EditorConfig não podem ser usados para configurar a análise herdada, enquanto os conjuntos de regras podem.

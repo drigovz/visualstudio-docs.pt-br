@@ -8,28 +8,28 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6756000cc2db853589d98c21abab7db452d55af9
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 67c2b34bf37f5f1b0ea7fb5222c6fcb8655fcc74
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987887"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079562"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
 
 Na terceira parte deste tutorial, você adicionará um timer de contagem regressiva para controlar o número de segundos restantes até o término do teste.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-countdown-timer"></a>Para adicionar um timer de contagem regressiva

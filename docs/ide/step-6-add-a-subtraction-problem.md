@@ -8,20 +8,20 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da2b509c0f5291296861da6a13b13e625a67c727
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 1c15bc7b3f1312d588699758d9be3e969d2db052
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987923"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079391"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>Etapa 6: Adicionar um problema de subtração
 Na sexta parte deste tutorial, você adicionará um problema de subtração e aprenderá a executar as seguintes tarefas:
@@ -35,8 +35,8 @@ Na sexta parte deste tutorial, você adicionará um problema de subtração e ap
 - Atualize o manipulador de eventos de escala do temporizador <xref:System.Windows.Forms.Timer.Tick> de modo que ele preencha a resposta correta quando o tempo de execução se esgotar.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-add-a-subtraction-problem"></a>Para adicionar um problema de subtração

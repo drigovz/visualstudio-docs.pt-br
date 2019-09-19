@@ -1,7 +1,7 @@
 ---
 title: Solução de problemas de instalação ou de atualização
 description: Às vezes, as coisas podem dar errado. Se a instalação ou atualização do Visual Studio falhar, esta página poderá ajudar.
-ms.date: 03/30/2019
+ms.date: 09/13/2019
 ms.custom: seodec18
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ce451ecdeb6d196e6520acffb9a6c76add36f5bf
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: f9612d9943c425a91bb3d01ea3bb5b1e37f270d3
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913250"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062808"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Solução de problemas de instalação e atualização do Visual Studio
 
@@ -114,12 +114,14 @@ Se nenhuma das etapas anteriores ajudá-lo a instalar ou a atualizar o Visual St
 
 ## <a name="offline-installations"></a>Instalações offline
 
-Vejamos uma tabela de problemas conhecidos e algumas soluções alternativas que podem ajudar durante a instalação a partir de um layout local.
+Aqui está uma tabela de problemas conhecidos e algumas soluções alternativas que podem ajudá-lo quando você cria uma [instalação offline](create-an-offline-installation-of-visual-studio.md) e, em seguida, instala de um layout local.
 
 | Problema       | Item                   | Solução |
 | ----------- | ---------------------- | -------- |
 | Os usuários não têm acesso aos arquivos. | permissões (ACLs) | Lembre-se de ajustar as permissões (ACLs) para que elas concedam acesso de Leitura aos outros usuários *antes* de você compartilhar a instalação offline. |
 | Falha na instalação de novas cargas de trabalho, novos componentes ou idiomas.  | `--layout`  | Verifique se você tem acesso à Internet se estiver instalando com base em um layout parcial e selecione as cargas de trabalho, os componentes ou idiomas que não foram baixado anteriormente nesse layout parcial. |
+
+Para obter mais informações sobre como resolver problemas com uma [instalação de rede](create-a-network-installation-of-visual-studio.md), consulte [solucionar erros relacionados à rede ao instalar ou usar o Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md).
 
 ## <a name="installation-logs"></a>Logs de instalação
 

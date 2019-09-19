@@ -16,20 +16,20 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 718a24b5afbd1196fdb1fb382cc45197975a0242
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 9566e5bb8bd5be3c1a44ff79690fb1f8107b40f9
+ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987898"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71079462"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>Etapa 5: Adicionar manipuladores de eventos de inserção aos controles NumericUpDown
 
 Na quinta parte deste tutorial, você adicionará manipuladores de eventos <xref:System.Windows.Forms.Control.Enter> para facilitar a inserção de respostas aos problemas do teste. Esse código selecionará e desmarcará o valor atual em cada controle <xref:System.Windows.Forms.NumericUpDown> para que o comprador de teste o escolha e comece a inserir um valor diferente.
 
 > [!NOTE]
-> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. 
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md). 
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-verify-the-default-behavior"></a>Para verificar o comportamento padrão

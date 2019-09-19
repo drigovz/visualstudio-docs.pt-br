@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c0f867179fd78ecb753a9b66cfbdb8479e16c3b
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 803bd02b43b290cba4a3afe7bc7040e0dee1e2eb
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913263"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095337"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
@@ -71,4 +71,4 @@ Para iniciar o tutorial, comece com **a [etapa 1: Crie um projeto](../ide/step-1
 
 * [Mais C# tutoriais](/visualstudio/get-started/csharp/)
 * [Tutoriais de Visual Basic](/visualstudio/get-started/visual-basic/)
-* [C++tutorial](../ide/getting-started-with-cpp-in-visual-studio.md)
+* [C++tutorial](/cpp/get-started/tutorial-console-cpp)

@@ -20,12 +20,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ac40a7e7d62417d2d89302304501fb2b3ecd34f4
-ms.sourcegitcommit: 9c07ae6fb18204ea080c8248994a683fa12e5c82
+ms.openlocfilehash: 5d83086720a94c23d0ceb3f07d9398a7d5256f68
+ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/04/2019
-ms.locfileid: "70293714"
+ms.lasthandoff: 09/18/2019
+ms.locfileid: "71095362"
 ---
 # <a name="install-visual-studio"></a>Instalar o Visual Studio
 
@@ -236,7 +236,7 @@ Para obter mais informações, consulte a página [Selecionar locais de instala�
 
 3. Selecione um tipo de projeto.
 
-   Por exemplo, para [compilar um aplicativo em C++](../ide/getting-started-with-cpp-in-visual-studio.md), escolha **Instalado**, expanda **Visual C++** e, em seguida, escolha o tipo de projeto C++ que deseja compilar.
+   Por exemplo, para [compilar um aplicativo em C++](/cpp/get-started/tutorial-console-cpp), escolha **Instalado**, expanda **Visual C++** e, em seguida, escolha o tipo de projeto C++ que deseja compilar.
 
    Para [compilar um aplicativo em C#](../get-started/csharp/tutorial-console.md), escolha **Instalado**, expanda **Visual C#** e, em seguida, escolha o tipo de projeto C# que deseja compilar.
 

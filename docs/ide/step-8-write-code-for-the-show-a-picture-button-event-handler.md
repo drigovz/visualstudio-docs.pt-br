@@ -9,19 +9,19 @@ ms.devlang:
 - csharp
 - vb
 dev_langs:
-- csharp
-- vb
+- CSharp
+- VB
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5502101bb2e199830b68c0fe0b929608a427ed
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 744fd81fe8121936def42277b442d8e54ea88786
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987937"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062863"
 ---
 # <a name="step-8-write-code-for-the-show-a-picture-button-event-handler"></a>Etapa 8: Escrever o código do manipulador de eventos do botão Mostrar uma Imagem
 
@@ -44,7 +44,7 @@ O IntelliSense tenta determinar o que você deseja fazer em seguida e salta auto
     ![IntelliSense com o código do Visual C&#35;](../ide/media/express_ifintellisense.png)
 
     > [!NOTE]
-    > Seu código pode não exibir manipuladores de eventos em letras "camelCase". 
+    > Seu código pode não exibir manipuladores de eventos em letras "camelCase".
 
 1. A janela do **IntelliSense** deve realçar a palavra `if`. (Se não estiver, digite um `f` em minúsculas, e ela realçará.) Observe como uma caixa de *dica de ferramenta* ao lado da janela do **IntelliSense** aparece com a descrição, **trecho de código para instrução If**. (No Visual Basic, a dica de ferramenta também indica que este é um snippet, mas com palavras ligeiramente diferentes.) Use esse snippet de código e pressione a tecla **Tab** para inserir `if` em seu código. Em seguida, pressione a tecla **Tab** novamente para usar o snippet `if`. (Se você pressionou outro item e sua janela do **IntelliSense** desapareceu, apague `i` e o digite novamente, e a janela do **IntelliSense** será reaberta).
 
