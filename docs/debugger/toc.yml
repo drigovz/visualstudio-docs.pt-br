@@ -42,6 +42,8 @@
       items:
         - name: Usar pontos de interrupção
           href: using-breakpoints.md
+        - name: Usar tracepoints
+          href: using-tracepoints.md
         - name: Solucionando problemas de pontos de interrupção
           href: troubleshooting-breakpoints.md
     - name: Inspeção de dados
