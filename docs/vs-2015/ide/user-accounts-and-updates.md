@@ -9,15 +9,19 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e955eaacd2f290558c5d786439373a9cc8febb35
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4ecd7a4d237a53a19286790346f790b82b981f60
+ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68158280"
+ms.lasthandoff: 09/17/2019
+ms.locfileid: "71062873"
 ---
 # <a name="user-accounts-and-updates"></a>Contas de usuário e atualizações
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
+
+> [!WARNING]
+> O Visual Studio 2015 não pode acessar recursos configurados para acesso condicional. Para trabalhar com esses recursos, atualize para o Visual Studio 2017 ou posterior.
 
 O próprio Visual Studio é um ambiente conectado. Ao se conectar, você habilita o acesso a todos os serviços associados à sua conta de usuário, bem como todas as contas que estão vinculadas a essa conta. As configurações da conta usam perfis móveis sempre que você usa o Visual Studio. É possível configurar níveis de permissões em uma instância específica do Visual Studio para usuários individuais. Além disso, o Visual Studio informa quando um componente da instalação, como um SDK, tinha uma atualização disponível.  
   
@@ -31,5 +35,6 @@ O próprio Visual Studio é um ambiente conectado. Ao se conectar, você habilit
 |[Como Desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md)|Descreve como desbloquear o Visual Studio em vários cenários.|  
 |[Notificações](../ide/visual-studio-notifications.md)|Descreve como o Visual Studio o notifica quando os componentes, como SDKs, ou o próprio Visual Studio, têm uma atualização disponível.|  
   
-## <a name="see-also"></a>Veja também  
- [Visual Studio IDE](../ide/visual-studio-ide.md)
+## <a name="see-also"></a>Consulte também
+
+- [Visual Studio IDE](../ide/visual-studio-ide.md)
