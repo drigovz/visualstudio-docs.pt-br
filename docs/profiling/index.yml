@@ -1,0 +1,60 @@
+### YamlMime:Landing
+title: Meça o desempenho do aplicativo no Visual Studio
+summary: Ferramentas de diagnóstico e criação de perfil ajudam você a diagnosticar o uso de memória e de CPU, além de outros problemas no aplicativo. Com essas ferramentas, você pode acumular dados de desempenho enquanto executa o aplicativo.
+metadata:
+  title: Meça o desempenho no Visual Studio
+  description: Saiba como usar o Visual Studio para medir o desempenho usando ferramentas de criação de perfil.
+  ms.topic: landing-page
+  author: mikejo5000
+  ms.author: mikejo
+  manager: jillfra
+  ms.date: 09/17/2019
+  ms.openlocfilehash: fcb3e40870d6f916cf754368359a90215ce1b665
+  ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 09/19/2019
+  ms.locfileid: "71130615"
+landingContent:
+- title: Sobre a criação de perfil
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Introdução às ferramentas de criação de perfil
+      url: profiling-feature-tour.md
+  - linkListType: concept
+    links:
+    - text: Maneiras de executar ferramentas de criação de perfil
+      url: running-profiling-tools-with-or-without-the-debugger.md
+- title: Introdução
+  linkLists:
+  - linkListType: quickstart
+    links:
+    - text: Analisar o uso da CPU (C#, Visual Basic)
+      url: quickstart-cpu-usage-managed.md
+    - text: Analisar o uso da CPU (C++)
+      url: quickstart-cpu-usage-native.md
+    - text: Analisar o uso da CPU (ASP.NET)
+      url: quickstart-cpu-usage-aspnet.md
+  - linkListType: tutorial
+    links:
+    - text: Introdução à análise de uso da CPU
+      url: beginners-guide-to-performance-profiling.md
+    - text: Introdução à medição de uso de memória
+      url: beginners-guide-to-performance-profiling.md
+- title: Mais ferramentas de desempenho
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: PerfTips
+      url: perftips.md
+    - text: Analisar o consumo de recursos (XAML)
+      url: application-timeline.md
+    - text: Analisar o uso de GPU (Direct3D)
+      url: gpu-usage.md
+    - text: Analisar o uso de rede (UWP)
+      url: network-usage.md
+    - text: Analisar o uso da energia (UWP)
+      url: analyze-energy-use-in-store-apps.md
+    - text: Gerenciador de Desempenho (herdado)
+      url: performance-explorer.md
