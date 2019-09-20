@@ -1,7 +1,7 @@
 ---
 title: Janela de modo de exibição de classe, hierarquia de chamada, pesquisador de objetos, definição de código
-ms.date: 05/18/2018
-ms.topic: conceptual
+ms.date: 09/19/2019
+ms.topic: reference
 f1_keywords:
 - vs.documentoutline.window
 - vs.objectbrowser
@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 685915d963e506d86c81a6bc4f7fc62998a0f7d9
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: 616f62110dbaa18d53b4ecc3cade7737f551e5f9
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747707"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150122"
 ---
 # <a name="view-the-structure-of-code-using-different-tool-windows"></a>Exibir a estrutura do código usando janelas de ferramentas diferentes
 
@@ -68,18 +68,17 @@ O botão **Configurações do Modo de Exibição de Classe** na barra de ferrame
 |||
 |-|-|
 |**Mostrar Tipos Base**|Tipos base são exibidos.|
-|**Mostrar Tipos Derivados**|Tipos derivados são exibidos.|
+|**Mostrar referências de projeto**|As referências de projeto são exibidas.|
 |**Mostrar Tipos e Membros Ocultos**|Tipos e membros ocultos (que não devem ser usados por clientes) são exibidos em texto cinza claro.|
 |**Mostrar Membros Públicos**|Membros públicos são exibidos.|
 |**Mostrar Membros Protegidos**|Membros protegidos são exibidos.|
 |**Mostrar Membros Particulares**|Membros particulares são exibidos.|
 |**Mostrar Outros Membros**|Outros tipos de membros são exibidos, incluindo membros internos (ou Amigos no Visual Basic).|
 |**Mostrar Membros Herdados**|Membros herdados são exibidos.|
-|**Mostrar Métodos de Extensão**|Métodos de extensão são exibidos.|
 
 ### <a name="class-view-shortcut-menu"></a>Menu de atalho do Modo de Exibição de Classe
 
-O menu de atalho no **Modo de Exibição de Classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
+O menu de atalho (ou clique com o botão direito do mouse) no **modo de exibição de classe** pode conter os seguintes comandos, dependendo do tipo de projeto selecionado:
 
 |||
 |-|-|
@@ -157,7 +156,6 @@ Usar o botão **Configurações do Pesquisador de Objetos** na barra de ferramen
 |**Exibir Namespaces**|Exibe namespaces em vez de contêineres físicos, no painel esquerdo. Namespaces armazenados em vários contêineres físicos são mesclados.|
 |**Exibir Contêineres**|Exibe contêineres físicos em vez de namespaces, no painel esquerdo. As configurações **Exibir Namespaces** e **Exibir Contêineres** são mutuamente exclusivas.|
 |**Mostrar Tipos Base**|Exibe tipos de base.|
-|**Mostrar Tipos Derivados**|Exibe tipos derivados.|
 |**Mostrar Tipos e Membros Ocultos**|Exibe tipos e membros ocultos (que não devem ser usados por clientes) em texto cinza claro.|
 |**Mostrar Membros Públicos**|Exibe membros públicos.|
 |**Mostrar Membros Protegidos**|Exibe membros protegidos.|
@@ -168,7 +166,7 @@ Usar o botão **Configurações do Pesquisador de Objetos** na barra de ferramen
 
 ### <a name="object-browser-shortcut-menu-commands"></a>Comandos do menu de atalho do Pesquisador de Objetos
 
-O menu de atalho no **Pesquisador de Objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
+O menu de atalho (ou clique com o botão direito do mouse) no **pesquisador de objetos** pode conter os seguintes comandos, dependendo do tipo de item selecionado:
 
 |||
 |-|-|
@@ -197,7 +195,7 @@ Embora essa janela seja somente leitura, você pode definir pontos de interrupç
 
 ### <a name="code-definition-shortcut-menu"></a>Menu de atalho de Definição de Código
 
-O menu de atalho na Janela de **Definição de Código** pode conter os seguintes comandos:
+O menu de atalho (ou clique com o botão direito do mouse) na janela de **definição de código** pode conter os seguintes comandos:
 
 |||
 |-|-|
