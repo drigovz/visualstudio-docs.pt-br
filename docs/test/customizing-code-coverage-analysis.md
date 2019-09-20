@@ -9,7 +9,7 @@ ms.workload:
 author: gewarren
 ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
 ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 09/19/2019
 ms.locfileid: "71118678"
