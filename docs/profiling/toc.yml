@@ -1,5 +1,5 @@
 - name: Documentação de criação de perfil
-  href: index.md
+  href: index.yml
 - name: Visão geral
   href: profiling-overview.md
 - name: Guias de Início Rápido
