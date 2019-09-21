@@ -19,91 +19,91 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8486ebede9db2ab6b052c1fed789883ceaf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0ba899e922e98817462b06a1693525ab1ae69e20
+ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928558"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71159909"
 ---
 # <a name="how-to-manage-updates-for-a-clickonce-application"></a>Como: Gerenciar atualizações para um aplicativo ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos podem procurar atualizações automaticamente ou por meio de programação. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como executar verificações de atualização, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]os aplicativos podem verificar se há atualizações automaticamente ou programaticamente. Como desenvolvedor, você tem muita flexibilidade para especificar quando e como as verificações de atualização são executadas, se as atualizações são obrigatórias e onde o aplicativo deve verificar se há atualizações.
 
- Você pode configurar o aplicativo para verificar se há atualizações automaticamente antes do início do aplicativo ou em intervalos definidos depois que o aplicativo é iniciado. Além disso, você pode especificar a versão mínima necessária; ou seja, uma atualização é instalada, se a versão do usuário é menor do que a versão necessária.
+ Você pode configurar o aplicativo para verificar se há atualizações automaticamente antes do início do aplicativo ou em intervalos definidos após o início do aplicativo. Além disso, você pode especificar uma versão mínima necessária; ou seja, uma atualização será instalada se a versão do usuário for menor do que a versão necessária.
 
- Você pode configurar o aplicativo para verificar se há atualizações por meio de programação com base em um evento, como uma solicitação de usuário. O procedimento "para verificar se há atualizações por meio de programação" neste tópico mostra como você escreveria o código que usa o <xref:System.Deployment.Application.ApplicationDeployment> classe para verificar se há atualizações com base em um evento.
+ Você pode configurar o aplicativo para verificar se há atualizações programaticamente com base em um evento, como uma solicitação de usuário. O procedimento "para verificar se há atualizações programaticamente" neste tópico mostra como você escreveria um código <xref:System.Deployment.Application.ApplicationDeployment> que usa a classe para verificar se há atualizações com base em um evento.
 
- Você também pode implantar seu aplicativo de um local e atualizá-lo a partir de outro. Consulte o procedimento "para especificar um local de atualização diferente."
+ Você também pode implantar seu aplicativo de um local e atualizá-lo de outro. Consulte o procedimento "para especificar um local de atualização diferente".
 
  Para obter mais informações, confira [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
- Comportamento de atualização é gerenciado na **atualizações do aplicativo** caixa de diálogo, disponível na **publicar** página do **Designer de projeto.**
+ O comportamento da atualização é gerenciado na caixa de diálogo **atualizações do aplicativo** , disponível na página **publicar** do **Designer de projeto.**
 
 ### <a name="to-check-for-updates-before-the-application-starts"></a>Para verificar se há atualizações antes de iniciar o aplicativo
 
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2. Clique o **publicar** guia.
+2. Clique na guia **publicar** .
 
-3. Clique o **atualizações** para abrir o **atualizações de aplicativo** caixa de diálogo.
+3. Clique no botão **atualizações** para abrir a caixa de diálogo **atualizações do aplicativo** .
 
-4. No **atualizações do aplicativo** diálogo caixa, certifique-se de que o **o aplicativo deve verificar se há atualizações** caixa de seleção está selecionada.
+4. Na caixa de diálogo **atualizações do aplicativo** , verifique se a caixa de seleção **o aplicativo deve verificar** se há atualizações está marcada.
 
-5. No **escolha quando o aplicativo deve verificar atualizações** seção, selecione **antes de iniciar o aplicativo**. Isso garante que os usuários conectados à rede sempre executarem o aplicativo com as atualizações mais recentes.
+5. Na seção **escolher quando o aplicativo deve verificar se há atualizações** , selecione **antes de o aplicativo ser iniciado**. Isso garante que os usuários conectados à rede sempre executem o aplicativo com as atualizações mais recentes.
 
 ### <a name="to-check-for-updates-in-the-background-after-the-application-starts"></a>Para verificar atualizações em segundo plano, depois que o aplicativo é iniciado
 
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2. Clique o **publicar** guia.
+2. Clique na guia **publicar** .
 
-3. Clique o **atualizações** para abrir o **atualizações de aplicativo** caixa de diálogo.
+3. Clique no botão **atualizações** para abrir a caixa de diálogo **atualizações do aplicativo** .
 
-4. No **atualizações do aplicativo** diálogo caixa, certifique-se de que a caixa de seleção **o aplicativo deve verificar por atualizações** está selecionado.
+4. Na caixa de diálogo **atualizações do aplicativo** , verifique se a caixa de seleção **o aplicativo deve verificar** se há atualizações está selecionada.
 
-5. No **escolha quando o aplicativo deve verificar para a seção de atualizações**, selecione **depois que o aplicativo é iniciado**. O aplicativo será iniciado mais rapidamente, dessa forma e, em seguida, ele será verificar se há atualizações em segundo plano e apenas notificar o usuário quando uma atualização está disponível. Uma vez instalado, as atualizações não entrarão em vigor até que o aplicativo for reiniciado.
+5. Na **seção escolher quando o aplicativo deve verificar se há atualizações**, selecione **depois que o aplicativo for iniciado**. O aplicativo será iniciado mais rapidamente dessa maneira e, em seguida, verificará se há atualizações em segundo plano e somente notificará o usuário quando uma atualização estiver disponível. Uma vez instaladas, as atualizações não terão efeito até que o aplicativo seja reiniciado.
 
-6. No **especifique a frequência com que o aplicativo deve verificar se há atualizações** seção, selecione **Verifique sempre que o aplicativo é executado** (o padrão) ou **verificar cada** e insira um intervalo de tempo e número.
+6. Na seção **especificar com que frequência o aplicativo deve verificar se há atualizações** , selecione **verificar sempre que o aplicativo for executado** (o padrão) ou **verificar a cada** e insira um número e um intervalo de tempo.
 
-### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Para especificar a versão mínima necessária para o aplicativo
-
-1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
-
-2. Clique o **publicar** guia.
-
-3. Clique o **atualizações** para abrir o **atualizações de aplicativo** caixa de diálogo.
-
-4. No **atualizações do aplicativo** diálogo caixa, certifique-se de que o **o aplicativo deve verificar se há atualizações** caixa de seleção está selecionada.
-
-5. Selecione o **especificar uma versão mínima necessária para este aplicativo** caixa de seleção e, em seguida, insira **principais**, **secundárias**, **Build**e  **Revisão** números para o aplicativo.
-
-### <a name="to-specify-a-different-update-location"></a>Para especificar um local de atualização diferentes
+### <a name="to-specify-a-minimum-required-version-for-the-application"></a>Para especificar uma versão mínima necessária para o aplicativo
 
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2. Clique o **publicar** guia.
+2. Clique na guia **publicar** .
 
-3. Clique o **atualizações** para abrir o **atualizações de aplicativo** caixa de diálogo.
+3. Clique no botão **atualizações** para abrir a caixa de diálogo **atualizações do aplicativo** .
 
-4. No **atualizações do aplicativo** diálogo caixa, certifique-se de que o **o aplicativo deve verificar se há atualizações** caixa de seleção está selecionada.
+4. Na caixa de diálogo **atualizações do aplicativo** , verifique se a caixa de seleção **o aplicativo deve verificar** se há atualizações está marcada.
 
-5. No **atualizar local** , insira o local de atualização com uma URL totalmente qualificada, usando o formato *http://Hostname/ApplicationName*, ou um caminho UNC usando o formato  *\\\Server\ ApplicationName*, ou clique em de **procurar** botão para procurar o local de atualização.
+5. Marque a caixa de seleção **especificar uma versão mínima necessária para este aplicativo** e insira os números **principal**, **secundário**, de **compilação**e de **revisão** para o aplicativo.
 
-### <a name="to-check-for-updates-programmatically"></a>Para verificar atualizações programaticamente
+### <a name="to-specify-a-different-update-location"></a>Para especificar um local de atualização diferente
 
 1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2. Clique o **publicar** guia.
+2. Clique na guia **publicar** .
 
-3. Clique o **atualizações** para abrir o **atualizações de aplicativo** caixa de diálogo.
+3. Clique no botão **atualizações** para abrir a caixa de diálogo **atualizações do aplicativo** .
 
-4. No **atualizações do aplicativo** diálogo caixa, certifique-se de que o **o aplicativo deve verificar por atualizações** caixa de seleção está desmarcada. (Opcionalmente, você pode selecionar essa caixa de seleção para verificar por atualizações por meio de programação e também permitem que o tempo de execução do ClickOnce verificar se há atualizações automaticamente.)
+4. Na caixa de diálogo **atualizações do aplicativo** , verifique se a caixa de seleção **o aplicativo deve verificar** se há atualizações está marcada.
 
-5. No **atualizar local** , insira o local de atualização com uma URL totalmente qualificada, usando o formato *http://Hostname/ApplicationName*, ou um caminho UNC usando o formato  *\\\Server\ ApplicationName*, ou clique em de **procurar** botão para procurar o local de atualização. O local de atualização é onde o aplicativo irá procurar uma versão atualizada de si mesmo.
+5. No campo **local de atualização** , insira o local de atualização com uma URL totalmente qualificada, usando *http://Hostname/ApplicationName* o formato ou um caminho UNC usando o formato  *\\ \Server\ApplicationName*, ou clique no botão **procurar** para procurar o local de atualização.
 
-6. Crie um botão, o item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários irá selecionar para verificar se há atualizações. Manipulador de eventos do item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de código do Visual Basic e Visual c# para esse tipo de método em [como: Verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md).
+### <a name="to-check-for-updates-programmatically"></a>Para verificar se há atualizações programaticamente
 
-7. Crie seu aplicativo.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+
+2. Clique na guia **publicar** .
+
+3. Clique no botão **atualizações** para abrir a caixa de diálogo **atualizações do aplicativo** .
+
+4. Na caixa de diálogo **atualizações do aplicativo** , verifique se a caixa de seleção **o aplicativo deve verificar** se há atualizações está desmarcada. (Opcionalmente, você pode marcar essa caixa de seleção para verificar se há atualizações programaticamente e também permitir que o tempo de execução do ClickOnce faça atualizações automaticamente.)
+
+5. No campo **local de atualização** , insira o local de atualização com uma URL totalmente qualificada, usando *http://Hostname/ApplicationName* o formato ou um caminho UNC usando o formato  *\\ \Server\ApplicationName*, ou clique no botão **procurar** para procurar o local de atualização. O local de atualização é onde o aplicativo procurará uma versão atualizada de si mesmo.
+
+6. Crie um botão, um item de menu ou outro item de interface do usuário em um formulário do Windows que os usuários selecionarão para verificar se há atualizações. Do manipulador de eventos desse item, chame um método para verificar e instalar atualizações. Você pode encontrar um exemplo de Visual Basic e código C# Visual para tal método em [como: Verifique se há atualizações de aplicativos programaticamente usando](../deployment/how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api.md)a API de implantação do ClickOnce.
+
+7. Compile seu aplicativo.
 
 ## <a name="see-also"></a>Consulte também
 - <xref:System.Deployment.Application.ApplicationDeployment>

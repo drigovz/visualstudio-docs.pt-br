@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 0395e2d6e54e737af9a98d8c24b8ea29eff7577a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
-ms.translationtype: HT
+ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118678"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150117"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -63,7 +63,7 @@ Para ativar ou desativar as configurações personalizadas, marque ou desmarque 
 
 ::: moniker-end
 
-### <a name="specify-symbol-search-paths"></a>Especificar caminhos de pesquisa de símbolo
+## <a name="symbol-search-paths"></a>Caminhos de pesquisa de símbolo
 
 A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assemblies. Para assemblies compilados por sua solução, os arquivos de símbolos estão geralmente presentes nos arquivos binários e a cobertura de código funciona automaticamente. Em alguns casos, o ideal é incluir os assemblies referenciados na análise de cobertura de código. Nesses casos, os arquivos *.pdb* podem não estar adjacentes aos binários, mas você pode especificar o caminho de pesquisa de símbolos no arquivo *.runsettings*.
 
@@ -77,9 +77,11 @@ A cobertura de código exige arquivos de símbolo (arquivos *.pdb*) para assembl
 > [!NOTE]
 > A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Portanto, considere copiar os arquivos *.pdb* no mesmo local que os arquivos binários ( *.dll* e *.exe*).
 
-### <a name="exclude-and-include"></a>Excluir e incluir
+## <a name="include-or-exclude-assemblies-and-members"></a>Incluir ou excluir assemblies e membros
 
-Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:
+Você pode incluir ou excluir assemblies ou tipos específicos e membros da análise de cobertura de código. Se a seção **include** estiver vazia ou omitida, todos os assemblies carregados e que tiverem arquivos PDB associados serão incluídos. Se um assembly ou membro corresponder a uma cláusula na seção **Exclude** , ele será excluído da cobertura de código. A seção **Exclude** tem precedência sobre a seção **include** : se um assembly estiver listado em **include** e **Exclude**, ele não será incluído na cobertura de código.
+
+Por exemplo, o XML a seguir exclui um único assembly especificando seu nome:
 
 ```xml
 <ModulePaths>
@@ -90,7 +92,7 @@ Você pode excluir os assemblies especificados da análise de cobertura de códi
 </ModulePaths>
 ```
 
-Como alternativa, você pode especificar que assemblies devem ser incluídos. Essa abordagem apresenta a desvantagem de, ao adicionar mais assemblies à solução, precisar se lembrar de adicioná-los à lista:
+O exemplo a seguir especifica que apenas um único assembly deve ser incluído na cobertura de código:
 
 ```xml
 <ModulePaths>
@@ -101,11 +103,20 @@ Como alternativa, você pode especificar que assemblies devem ser incluídos. Es
 </ModulePaths>
 ```
 
-Se **Incluir** estiver vazio, o processamento da cobertura de código incluirá todos os assemblies carregados e para os quais os arquivos *.pdb* possam ser encontrados. A cobertura de código não inclui itens que correspondem a uma cláusula em uma lista **Excluir**. **Incluir** é processado antes de **Excluir**.
+A tabela a seguir mostra as várias maneiras pelas quais os assemblies e membros podem ser combinados para inclusão ou exclusão da cobertura de código.
+
+| Elemento XML | O que ele corresponde |
+| - | - |
+| ModulePath | Corresponde aos assemblies especificados pelo nome do assembly ou pelo caminho do arquivo. |
+| CompanyName | Faz a correspondência de assemblies pelo atributo **Company** . |
+| PublicKeyToken | Faz a correspondência de assemblies assinados pelo token de chave pública. |
+| Origem | Faz a correspondência de elementos pelo nome do caminho do arquivo de origem no qual eles são definidos. |
+| Atributo | Corresponde aos elementos que têm o atributo especificado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.<br/><br/>Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>. |
+| Função | Faz a correspondência de procedimentos, funções ou métodos por nome totalmente qualificado, incluindo a lista de parâmetros. Você também pode corresponder a parte do nome usando uma [expressão regular](#regular-expressions).<br/><br/>Exemplos:<br/><br/>`Fabrikam.Math.LocalMath.SquareRoot(double);` (C#)<br/><br/>`Fabrikam::Math::LocalMath::SquareRoot(double)`(C++) |
 
 ### <a name="regular-expressions"></a>Expressões regulares
 
-Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Para obter mais informações, confira [Usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md). Alguns exemplos são:
+Os nós de inclusão e exclusão usam expressões regulares, que não são iguais aos curingas. Todas as correspondências não diferenciam maiúsculas de minúsculas. Alguns exemplos são:
 
 - **.\*** corresponde a uma cadeia de quaisquer caracteres
 
@@ -119,9 +130,7 @@ Os nós de inclusão e exclusão usam expressões regulares, que não são iguai
 
 - **$** corresponde ao final da cadeia de caracteres
 
-Todas as correspondências não diferenciam maiúsculas de minúsculas.
-
-Por exemplo:
+O XML a seguir mostra como incluir e excluir assemblies específicos usando expressões regulares:
 
 ```xml
 <ModulePaths>
@@ -138,48 +147,27 @@ Por exemplo:
 </ModulePaths>
 ```
 
+O XML a seguir mostra como incluir e excluir funções específicas usando expressões regulares:
+
+```xml
+<Functions>
+  <Include>
+    <!-- Include methods in the Fabrikam namespace: -->
+    <Function>^Fabrikam\..*</Function>
+    <!-- Include all methods named EqualTo: -->
+    <Function>.*\.EqualTo\(.*</Function>
+  </Include>
+  <Exclude>
+    <!-- Exclude methods in a class or namespace named UnitTest: -->
+    <Function>.*\.UnitTest\..*</Function>
+  </Exclude>
+</Functions>
+```
+
 > [!WARNING]
 > Se houver um erro em uma expressão regular, como um parêntese sem correspondência ou sem escape, a análise de cobertura de código não será executada.
 
-### <a name="other-ways-to-include-or-exclude-elements"></a>Outras maneiras de incluir ou excluir elementos
-
-- **ModulePath** – corresponde aos assemblies especificados pelo caminho de arquivo do assembly.
-
-- **CompanyName** – corresponde aos assemblies pelo atributo **Company**.
-
-- **PublicKeyToken**– correspondências aos assemblies assinados pelo token de chave pública.
-
-- **Source** – corresponde aos elementos pelo nome do caminho do arquivo de origem no qual eles são definidos.
-
-- **Attribute** – corresponde aos elementos aos quais um atributo específico está anexado. Especifique o nome completo do atributo, por exemplo, `<Attribute>^System\.Diagnostics\.DebuggerHiddenAttribute$</Attribute>`.
-
-  > [!TIP]
-  > Se você excluir o atributo <xref:System.Runtime.CompilerServices.CompilerGeneratedAttribute>, o código que usa recursos de linguagem, como `async`, `await`, `yield return` e as propriedades implementadas automaticamente serão excluídas da análise de cobertura de código. Para excluir o código verdadeiramente gerado, exclua apenas o atributo <xref:System.CodeDom.Compiler.GeneratedCodeAttribute>.
-
-- **Function** – corresponde a procedimentos, funções ou métodos pelo nome totalmente qualificado. Para corresponder a um nome de função, a expressão regular precisa corresponder ao nome totalmente qualificado da função, incluindo o namespace, o nome de classe, o nome do método e a lista de parâmetros. Por exemplo:
-
-   ```csharp
-   Fabrikam.Math.LocalMath.SquareRoot(double);
-   ```
-
-   ```cpp
-   Fabrikam::Math::LocalMath::SquareRoot(double)
-   ```
-
-   ```xml
-   <Functions>
-     <Include>
-       <!-- Include methods in the Fabrikam namespace: -->
-       <Function>^Fabrikam\..*</Function>
-       <!-- Include all methods named EqualTo: -->
-       <Function>.*\.EqualTo\(.*</Function>
-     </Include>
-     <Exclude>
-       <!-- Exclude methods in a class or namespace named UnitTest: -->
-       <Function>.*\.UnitTest\..*</Function>
-     </Exclude>
-   </Functions>
-   ```
+Para obter mais informações sobre expressões regulares, consulte [usar expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
 ## <a name="sample-runsettings-file"></a>Arquivo .runsettings de exemplo
 

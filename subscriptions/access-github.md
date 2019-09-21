@@ -1,21 +1,21 @@
 ---
-title: Pacote Visual Studio + GitHub | Microsoft Docs
+title: Visual Studio + oferta do GitHub | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
-description: Saiba mais sobre o novo pacote Visual Studio + GitHub
-ms.openlocfilehash: 1d7b55a32c796747d50fac8dae14d6af2f847c46
-ms.sourcegitcommit: 485881e6ba872c7b28a7b17ceaede845e5bea4fe
-ms.translationtype: HT
+description: Saiba mais sobre a nova oferta do Visual Studio + GitHub
+ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
+ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/22/2019
-ms.locfileid: "68377653"
+ms.lasthandoff: 09/20/2019
+ms.locfileid: "71150087"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introdução às assinaturas do Visual Studio com o GitHub Enterprise  
 
-Os clientes que têm EA (Contratos Enterprise) com a Microsoft são qualificados para comprar um novo pacote de assinatura que reúne as assinaturas padrão do Visual Studio e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
+Os clientes que têm o EA (Enterprise Agreements) com a Microsoft estão qualificados a comprar uma nova oferta de assinatura que reúne as assinaturas do Visual Studio Standard e o GitHub Enterprise. É uma maneira fácil e econômica para os assinantes do Visual Studio adquirirem o GitHub Enterprise. 
 
 - Inove em escala com o Visual Studio e o GitHub obtendo, com segurança, código de software livre, comunidade e melhores práticas em seu IDE e fluxos de trabalho.
 - Use as melhores ferramentas de desenvolvimento e serviços para desenvolvedores com o conjunto mais abrangente de recursos para criar, implantar e gerenciar ótimos aplicativos. 
@@ -28,7 +28,7 @@ Se sua organização estiver assinando um novo EA ou renovando um existente, as 
 - Visual Studio Enterprise com GitHub Enterprise
 - Visual Studio Professional com GitHub Enterprise
 
-Se sua organização tiver um EA que ainda não pode ser renovado, você poderá comprar o SKU "Step-up" para adicionar o GitHub Enterprise às assinaturas existentes do Visual Studio Enterprise ou do Visual Studio Professional.  Em seguida, quando seu contrato for renovado, você poderá comprar o pacote.
+Se sua organização tiver um EA que ainda não pode ser renovado, você poderá comprar o SKU "Step-up" para adicionar o GitHub Enterprise às assinaturas existentes do Visual Studio Enterprise ou do Visual Studio Professional. Em seguida, quando seu contrato renova, você pode comprar a oferta.
 
 Os SKUs existentes para o Visual Studio Enterprise, o Visual Studio Professional e o GitHub Enterprise também continuarão disponíveis separadamente. 
 
@@ -40,7 +40,7 @@ As assinaturas Visual Studio + GitHub Enterprise são atribuídas em duas partes
 1. A assinatura do Visual Studio (Enterprise ou Professional)
 2. A assinatura do GitHub Enterprise
 
-Quando sua organização compra as assinaturas, elas são atribuídas por administradores.  As assinaturas do Visual Studio e do GitHub Enterprise são atribuídas separadamente.  
+Quando sua organização compra as assinaturas, elas são atribuídas por administradores. As assinaturas do Visual Studio e do GitHub Enterprise são atribuídas separadamente.  
 
 Se houver uma assinatura do Visual Studio + GitHub atribuída, você receberá um email avisando que o administrador de assinatura do Visual Studio atribuiu uma assinatura a você.  Nesse ponto, você poderá ver isso em https://my.visualstudio.com/subscriptions.  
 
