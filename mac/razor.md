@@ -6,37 +6,34 @@ ms.author: sayedha
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
-ms.openlocfilehash: 964b949d20d63a4564615fef0e719b85ae41762d
-ms.sourcegitcommit: 53bc4c11b82882ab658e34c65ae374060f823531
+ms.openlocfilehash: 791182255448db01a1c43796da72bedeec9f2f96
+ms.sourcegitcommit: 9a227faafdd0bad6f017ace607dc61eb56b32d72
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71128375"
+ms.lasthandoff: 09/21/2019
+ms.locfileid: "71175438"
 ---
 # <a name="create-razor-web-apps"></a>Criar aplicativos Web Razor
 
 Este guia oferece uma introdução à criação de seu primeiro aplicativo Web Razor. Para obter diretrizes mais detalhadas, consulte [introdução ao Razor pages no ASP.NET Core](https://docs.microsoft.com/aspnet/core/razor-pages/index).
 
-O Visual Studio para Mac oferece suporte à edição de Razor, inclusive IntelliSense e realce de sintaxe em arquivos *.cshtml*.
+O Visual Studio para Mac oferece suporte à edição de Razor, inclusive IntelliSense e realce de sintaxe em arquivos *.cshtml*. Novo no Visual Studio 2019 para Mac 8.3 + é a capacidade de ter o IntelliSense com reconhecimento de contexto dentro de um arquivo Razor, para que você receba o IntelliSense que corresponda ao idioma que você está editando no momento em um documento.
 
-![Edição de Razor no Visual Studio para Mac](media/razor-editor.png)
+![Edição de Razor no Visual Studio para Mac](media/razor-2019.png)
 
 ## <a name="creating-a-new-razor-project"></a>Como criar um novo projeto do Razor
 
 1. Na tela de boas-vindas, selecione **novo** para criar um novo projeto:
 
-     ![Novo projeto do Visual Studio para Mac](media/razor-new.png)
-
+   ![Novo projeto do Visual Studio para Mac](media/razor-new.png)
 1. Na caixa de diálogo **novo projeto** , vá para**aplicativo Web** do**aplicativo** >  **.NET Core** > e selecione **Avançar**:
 
-     ![Modelo de projeto do Razor](media/razor-new-project1.png)
-
+   ![Modelo de projeto do Razor](media/razor-new-project1.png)
 1. Selecione a estrutura de destino do .NET Core (recomendamos a versão 2,2 ou posterior) e, em seguida, selecione **Avançar**. Escolha um nome para seu projeto e adicione o suporte do git, se necessário. Selecione **criar** para criar o projeto.
 
-     ![Nome do projeto do Razor](media/razor-new-project2.png)
+   ![Nome do projeto do Razor](media/razor-new-project2.png)
 
    Visual Studio para Mac abre seu projeto na janela de layout de código.
-
 1. Execute o projeto sem depuração usando **Command + Option + F5**.
 
    O Visual Studio inicia o [Kestrel](https://docs.microsoft.com/aspnet/core/fundamentals/servers/kestrel), abre um `https://localhost:5001`navegador para e exibe seu primeiro aplicativo Web Razor.
