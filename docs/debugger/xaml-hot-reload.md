@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aedc785a86966cf6425dfe35c5925efc9b78a509
-ms.sourcegitcommit: b02c40c1ba193e38b5ace14590a6d57590d3270f
+ms.openlocfilehash: ff5e70d4ec2831df18ce1b100e70730e2978201e
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/16/2019
-ms.locfileid: "71012613"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186562"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio
 
@@ -38,7 +38,7 @@ O Hot recarregamento de XAML é especialmente útil nesses cenários:
 
 A ilustração a seguir mostra o uso da árvore visual ao vivo para abrir o código-fonte e, em seguida, o recarregamento de XAML para alterar o texto do botão e a cor do botão.
 
-![Recarga quente de XAML](../debugger/media/xaml-hot-reload-using.gif)
+![Recarga Dinâmica de XAML](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
 > Atualmente, há suporte para o Hot recarregamento XAML do Visual Studio apenas ao executar seu aplicativo no Visual Studio ou Blend para Visual Studio com o depurador anexado (**F5** ou **iniciar a depuração**). Não é possível habilitar essa experiência usando [anexar ao processo](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) , a menos que você [defina manualmente uma variável de ambiente](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process).
@@ -68,3 +68,4 @@ Você pode se deparar com os seguintes erros ao usar o Hot recarregamento de XAM
 
 * [Solucionando problemas de recarregamento dinâmico de XAML](xaml-hot-reload-troubleshooting.md)
 * [Hot recarregamento de XAML para Xamarin. Forms](/xamarin/xamarin-forms/xaml/hot-reload)
+* [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

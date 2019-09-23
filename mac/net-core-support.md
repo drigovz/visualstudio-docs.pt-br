@@ -5,31 +5,33 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 08/20/2019
 ms.assetid: 8B8CEBE8-00DA-4AD1-8193-77F58B57F244
-ms.openlocfilehash: 5939978b7e823f4430fec2f9a73d593b0a15d9ed
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 98451c728b15344b116f275ca6a40fd902f33f0f
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70108055"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186804"
 ---
 # <a name="net-core-support"></a>Suporte do .NET Core
 
 A tabela a seguir descreve as versões do .NET Core compatíveis com as versões prévias e estáveis do Visual Studio para Mac:
 
-| Versão do SDK do .NET Core |Visual Studio para Mac 8.1 (estável) | Visual Studio para Mac 8.2 (estável) | Visual Studio para Mac 8.3 (versão prévia) |
+| Versão do SDK do .NET Core |Visual Studio para Mac 8.1 (estável) | Visual Studio para Mac 8.2 (estável) | Visual Studio para Mac 8,3 (estável) |
 |---------|---------|---------|---------|
 |v2.1.0 - v2.1.5xx | | | |
 |v2.1.600 + |✔︎|✔︎|✔︎|
 |v2.2.1 - v2.2.1xx | | | |
 |v2.2.200 + |✔︎|✔︎|✔︎|
-|v3.0 < Versão Prévia 3 | | | |
-|v3.0 Versão Prévia 3, 4, 5 |✔︎|✔︎|✔︎|
-|v3.0 Versão Prévia 6, 7 | |✔︎|✔︎|
-|v3.0 Versão Prévia 8+ | | |✔︎|
+|3\.0 | | |✔︎|
+
+> [!IMPORTANT]
+> Não há suporte para versões de visualização do SDK do .NET Core, atualize para a versão lançada. Ao instalar o Visual Studio para Mac 8,3, a versão de lançamento do .NET Core v 3.0 será instalada.
 
 > [!IMPORTANT]
 > Se você estava usando o .NET Core v2.2.1xx com o Visual Studio para Mac 8.0, será necessário atualizar manualmente para uma versão compatível do .NET Core, conforme listado na tabela acima. É recomendável a versão [2.1.700](https://dotnet.microsoft.com/download/dotnet-core/2.1) ou [2.2.300](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 
+* O .NET Core v 3.0 é instalado por padrão para 8,3.
 * O .NET Core v2.1.701 (v2.1.700 para 8.1) é instalado por padrão com o instalador.
 * Para baixar qualquer outra versão do .NET Core, visite a [página dotnet](https://dotnet.microsoft.com/download/dotnet-core).
+* Ao usar o .NET Core 3,0 C# , a versão 8 será usada por padrão. C#7,3 é o padrão ao usar o .NET Core 2. x. Consulte [ C# controle de versão de idioma](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version) para obter mais informações.
 * Para saber mais sobre como instalar uma versão prévia do Visual Studio para Mac, confira o guia [Instalar uma versão prévia](https://docs.microsoft.com/visualstudio/mac/install-preview).

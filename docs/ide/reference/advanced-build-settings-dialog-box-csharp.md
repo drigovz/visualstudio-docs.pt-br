@@ -1,6 +1,6 @@
 ---
 title: Caixa de diálogo Configurações de Build Avançadas (C#)
-ms.date: 06/20/2017
+ms.date: 08/05/2019
 ms.technology: vs-ide-compile
 ms.topic: reference
 f1_keywords:
@@ -13,16 +13,16 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 306cecc6bdc194e0022c056ac0a87e2ab063d20b
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: c4a1c902047b76ef3b29814d10cfc112ab9c7274
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461890"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186793"
 ---
-# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações de Build Avançadas (C#)
+# <a name="advanced-build-settings-dialog-box-c"></a>Caixa de diálogo Configurações avançadas deC#compilação ()
 
-Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Essa caixa de diálogo se aplica somente a projetos [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
+Use a caixa de diálogo **Configurações de Build Avançadas** do **Designer de Projeto** para especificar as propriedades de configuração de build avançadas do projeto. Esta caixa de diálogo aplica C# -se somente a projetos.
 
 ## <a name="general"></a>Geral
 
@@ -30,19 +30,19 @@ As opções a seguir permitem definir configurações gerais avançadas.
 
 **Versão da Linguagem**
 
-Especifica a versão da linguagem a ser usada. O conjunto de recursos é diferente em cada versão e, portanto, essa opção pode ser usada para forçar o compilador a permitir somente um subconjunto dos recursos implementados ou permitir somente os recursos compatíveis com um padrão existente. Essa configuração tem as seguintes opções:
+::: moniker range=">=vs-2019"
 
-- **default**
+Links para [/langversion (C# opções de compilador)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option), que fornece informações sobre como uma versão de idioma padrão é escolhida com base na estrutura de destino de um projeto.
 
-   Define a versão atual como destino.
+::: moniker-end
 
-- **ISO-1** e **ISO-2**
+::: moniker range="vs-2017"
 
-   Define como destino os recursos padrão ISO-1 e ISO-2, respectivamente.
+Especifica a versão da linguagem a ser usada. O conjunto de recursos é diferente em cada versão e, portanto, essa opção pode ser usada para forçar o compilador a permitir somente um subconjunto dos recursos implementados ou permitir somente os recursos compatíveis com um padrão existente.
 
-- **C# [número de versão]**
+O valor padrão é C# 7,0.
 
-   Define como destino uma versão específica do C#. Para obter mais informações, consulte [/langversion (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/langversion-compiler-option).
+::: moniker-end
 
 **Relatório de erros do compilador interno**
 
@@ -94,7 +94,7 @@ Especifica o tamanho das seções no arquivo de saída. Os valores válidos são
 
 Especifica o endereço básico preferencial no qual uma DLL será carregada. O endereço básico padrão de uma DLL é definido pelo Common Language Runtime do .NET Framework. Para obter mais informações, consulte [/baseaddress (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/baseaddress-compiler-option).
 
-## <a name="see-also"></a>Veja também
+## <a name="see-also"></a>Consulte também
 
-- [Opções do compilador de C#](/dotnet/csharp/language-reference/compiler-options/index)
-- [Página de Build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)
+- [Opções do compilador do C#](/dotnet/csharp/language-reference/compiler-options/index)
+- [Página de build, Designer de Projeto (C#)](../../ide/reference/build-page-project-designer-csharp.md)

@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b18f5763d68487e7642f5632c05516d2f1bd9e2
-ms.sourcegitcommit: aeb1a1135dd789551e15aa5124099a5fe3f0f32b
-ms.translationtype: HT
+ms.openlocfilehash: d1b4ff448f04ff6f683fac06cbc0b31797edf587
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/04/2019
-ms.locfileid: "66500947"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186583"
 ---
 # <a name="rename-a-code-symbol-refactoring"></a>Refatoração Renomear um símbolo de código
 
@@ -70,6 +70,10 @@ Esta refatoração aplica-se a:
 
 ## <a name="remarks"></a>Comentários
 
+- A partir do Visual Studio 2019 versão 16,3, quando você renomeia um tipo que corresponde ao nome do arquivo no qual ele está, uma caixa de seleção é exibida para permitir que você renomeie o arquivo ao mesmo tempo. Essa opção é exibida quando você renomeia uma classe, interface ou enumeração. Não há suporte para essa opção em tipos parciais com várias definições.
+
+   ![Renomear animação com arquivo-C#](media/rename-with-file-animated-cs.gif)
+   
 - Se você escolher um nome que já exista, o que causaria um conflito, a caixa **Renomear** o avisará.
 
    ![Conflito de renomeação](media/rename-conflict-cs.png)

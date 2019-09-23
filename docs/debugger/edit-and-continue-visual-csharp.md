@@ -1,5 +1,5 @@
 ---
-title: Editar e continuar (Visual c#) | Microsoft Docs
+title: Editar e continuar (Visual C#) | Microsoft Docs
 ms.date: 10/11/2017
 ms.topic: conceptual
 dev_langs:
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 972ad0d772eee9b876f43bc3e2fcd032d4b7e0ab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 665e778fc0881ac05e165c85700d15285622c762
+ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851013"
+ms.lasthandoff: 09/23/2019
+ms.locfileid: "71186364"
 ---
 # <a name="edit-and-continue-visual-c"></a>Editar e continuar (Visual C#)
  Com a função Editar e Continuar no C#, é possível fazer alterações em seu código no modo de interrupção durante a depuração. As alterações podem ser aplicadas sem precisar interromper e reiniciar a sessão de depuração. No modo de execução, o editor de origem é somente leitura.
 
- Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [Supported Code Changes (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md).
+ Editar e Continuar dá suporte à maioria das alterações que você talvez queira fazer durante uma sessão de depuração, mas há algumas exceções. Para obter mais informações, consulte [alterações de códigoC# com suporte (e Visual Basic)](../debugger/supported-code-changes-csharp.md).
 
- Editar e continuar é suportada em UWP em x86 e x64 aplicativos destinados ao .NET Framework 4.6 e Windows 10 desktops ou versões posteriores (.NET Framework é apenas uma versão de área de trabalho).
+ Editar e continuar tem suporte no UWP no Windows 10 e aplicativos x86 e x64 direcionados para a área de trabalho .NET Framework 4,6 ou versões posteriores (o .NET Framework é apenas uma versão da área de trabalho).
 
  > [!NOTE]
- > Plataformas e aplicativos sem suporte incluem o ASP.NET 5, o Silverlight 5 e o Windows 8.1.
+ > Aplicativos e plataformas sem suporte incluem ASP.NET 5, Silverlight 5 e Windows 8.1.
 
  Quando Editar e Continuar estiver habilitado, as alterações com suporte são aplicadas automaticamente quando você usa um comando de execução do depurador, tal como **Continuar**, **Etapa** ou **Definir Próxima Instrução**, ou executa uma avaliação de função em uma janela de depuração.
 
@@ -40,4 +40,5 @@ ms.locfileid: "62851013"
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Usar Editar e Continuar (C#)](../debugger/how-to-use-edit-and-continue-csharp.md)
-- [Alterações de código suportadas (c# e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Alterações de código comC# suporte (e Visual Basic)](../debugger/supported-code-changes-csharp.md)
+- [Escrever e depurar o código XAML em execução com o Hot recarregamento de XAML no Visual Studio](../debugger/xaml-hot-reload.md)
