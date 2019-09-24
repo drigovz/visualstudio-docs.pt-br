@@ -1,5 +1,5 @@
 - name: Documentação de implantação
-  href: index.md
+  href: index.yml
 - name: Visão geral
   items:
     - name: Visão geral da implantação
@@ -22,8 +22,8 @@
       items:
         - name: Implantar um aplicativo .NET Core com a ferramenta de publicação
           href: /dotnet/core/deploying/deploy-with-vs
-        - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Implantar um aplicativo da área de trabalho usando o ClickOnce
           href: how-to-publish-a-clickonce-application-using-the-publish-wizard.md
         - name: Compilar aplicativos ClickOnce usando a linha de comando
@@ -38,14 +38,12 @@
           href: tutorial-import-publish-settings-azure.md
         - name: Implantação contínua do ASP.NET Core no Azure com o Git
           href: /aspnet/core/publishing/azure-continuous-deployment
-        - name: Publicar no Kubernetes com ferramentas do Visual Studio para Kubernetes
-          href: ../containers/tutorial-kubernetes-tools.md?toc=/visualstudio/deployment/toc.json
     - name: C++
       items:
         - name: Implantar um aplicativo C/C++
           href: /cpp/ide/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project
-        - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store (Ponte de Desktop)
-          href: /windows/uwp/porting/desktop-to-uwp-packaging-dot-net
+        - name: Empacotar um aplicativo da área de trabalho para a Microsoft Store
+          href: /windows/msix/desktop/desktop-to-uwp-packaging-dot-net
         - name: Implantar um aplicativo C++/CLR usando ClickOnce...
           href: /cpp/ide/clickonce-deployment-for-visual-cpp-applications
     - name: UWP
