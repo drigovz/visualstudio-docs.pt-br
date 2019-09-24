@@ -57,7 +57,7 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 2. Após a execução dos testes, para ver quais linhas ![foram executadas, escolha Mostrar o ícone](../test/media/codecoverage-showcoloringicon.png) de colorização de cobertura de código **Mostrar cores de cobertura de código** na janela resultados da cobertura de **código** . Por padrão, o código coberto por testes é realçado em azul claro.
 
    > [!TIP]
-   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas** > **Opções** > **fontes e cores** > **do**ambiente** > Mostrar configurações para: Editor de Texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
+   > Para alterar as cores ou usar a face em negrito, escolha **ferramentas** > **Opções** > **fontes e cores** > **do ambiente** > **Mostrar configurações para: Editor de Texto**. Em **Exibir itens**, ajuste as configurações para os itens de "cobertura", por exemplo, **área de cobertura não**coberta.
    >
    > ![Fontes e cores de cobertura de código](media/vs-2019/coverage-fonts-and-colors.png)
 
