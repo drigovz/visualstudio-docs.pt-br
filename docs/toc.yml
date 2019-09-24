@@ -654,7 +654,7 @@
         - name: 'Passo a passo: Criar um ambiente de build de vários computadores'
           href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
     - name: Depurar >>
-      href: debugger/index.md
+      href: debugger/index.yml
     - name: Testar >>
       displayName: Unit testing
       href: test/improve-code-quality.md
