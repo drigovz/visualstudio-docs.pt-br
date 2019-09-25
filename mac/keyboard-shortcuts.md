@@ -5,18 +5,18 @@ ms.date: 03/14/2019
 author: asb3993
 ms.author: amburns
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
-ms.openlocfilehash: bb0d92496412792643ae67745afae2fec51fca90
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: 3e6ae24ea9e9a5dea263c2449a9b23b6027f7a96
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872086"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211313"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Atalhos de teclado padrão no Visual Studio para Mac
 
 Confira mais informações sobre acessibilidade de teclado em [Como usar a navegação por teclado](~/accessibility.md#how-to-use-keyboard-navigation).
 
-Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão do esquema de associação de teclas do **Visual Studio**. Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Também é possível personalizar os atalhos para um comando usando o item de menu **Visual Studio para Mac** > **Preferências** e selecionando **Ambiente** > **Associações de teclas** na janela **Preferências**.
+Você pode acessar uma variedade de comandos no Visual Studio para Mac usando o atalho de teclado apropriado. Este documento lista os atalhos padrão para o esquema de associação de chave **Visual Studio para Mac** . Confira mais informações sobre como alterar o esquema de associação de teclas em [Personalizar o IDE](~/customizing-the-ide.md#key-bindings). Também é possível personalizar os atalhos para um comando usando o item de menu **Visual Studio para Mac** > **Preferências** e selecionando **Ambiente** > **Associações de teclas** na janela **Preferências**.
 
 > [!TIP]
 > Os atalhos de teclado exibidos neste documento e as preferências de associação de teclas no Visual Studio para Mac são apresentados usando os símbolos mais usados no macOS. Se não tiver certeza de um símbolo, confira a [Tabela de pesquisa de símbolos de teclas do macOS](#macos-key-symbols-lookup).

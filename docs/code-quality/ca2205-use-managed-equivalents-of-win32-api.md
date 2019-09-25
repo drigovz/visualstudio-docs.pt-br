@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 99d53296ad72aef1910a39299be64c7cb03dd49a
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 6481bbcca68c7471e4f25c7629e3b55fa407d175
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714722"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231713"
 ---
 # <a name="ca2205-use-managed-equivalents-of-win32-api"></a>CA2205: Usar equivalentes gerenciados da API do Win32
 
@@ -31,35 +31,35 @@ ms.locfileid: "66714722"
 |NomeDoTipo|UseManagedEquivalentsOfWin32Api|
 |CheckId|CA2205|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Uma invocação de plataforma método é definido e existe um método com a funcionalidade equivalente no .NET.
+Um método de invocação de plataforma é definido e um método com a funcionalidade equivalente existe no .NET.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Uma plataforma de invocação de método é usado para chamar uma função DLL não gerenciada e é definida usando o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo, ou o `Declare` palavra-chave no Visual Basic. Método de invocação de uma plataforma definida incorretamente pode resultar em exceções de tempo de execução devido a problemas como uma função equivocado, com defeito de mapeamento de tipos de dados de valor de parâmetro e retorno e especificações de campo incorreto, como a convenção de chamada e o caractere Defina. Se estiver disponível, é mais simples e menos propenso a chamar o método gerenciado equivalente que to definir e chamar o método não gerenciado diretamente. Chamando uma plataforma de invocar o método também podem levar a problemas de segurança adicionais que precisam ser resolvidos.
+Um método de invocação de plataforma é usado para chamar uma função DLL não gerenciada e é <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> definido usando o atributo `Declare` ou a palavra-chave em Visual Basic. Um método de invocação de plataforma definido incorretamente pode levar a exceções de tempo de execução devido a problemas como uma função de nome incorreta, mapeamento com falha de parâmetros e tipos de dados de valor de retorno, e especificações de campo incorretas, como a Convenção de chamada e o caractere Definição. Se disponível, é mais simples e menos propenso a erros chamar o método equivalente gerenciado do que definir e chamar o método não gerenciado diretamente. Chamar um método de plataforma Invoke também pode levar a problemas de segurança adicionais que precisam ser resolvidos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, substitua a chamada para a função não gerenciada por uma chamada para seu equivalente gerenciado.
+Para corrigir uma violação dessa regra, substitua a chamada à função não gerenciada por uma chamada para seu equivalente gerenciado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Suprima um aviso nessa regra, se o método de substituição sugerida não fornece a funcionalidade necessária.
+Suprimir um aviso dessa regra se o método de substituição sugerido não fornecer a funcionalidade necessária.
 
 ## <a name="example"></a>Exemplo
 
-A exemplo a seguir mostra uma plataforma de invocação de definição do método que viola a regra. Além disso, as chamadas para a plataforma de invocação de método e o método gerenciado equivalente são mostrados.
+O exemplo a seguir mostra uma definição de método de invocação de plataforma que viola a regra. Além disso, as chamadas para o método de invocação de plataforma e o método gerenciado equivalente são mostradas.
 
 [!code-csharp[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/CSharp/ca2205-use-managed-equivalents-of-win32-api_1.cs)]
 [!code-vb[FxCop.Usage.ManagedEquivalents#1](../code-quality/codesnippet/VisualBasic/ca2205-use-managed-equivalents-of-win32-api_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1404: Chamar GetLastError logo depois de P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
+- [CA1404: Chamar GetLastError imediatamente após P/Invoke](../code-quality/ca1404-call-getlasterror-immediately-after-p-invoke.md)
 - [CA1060: Mover P/Invokes para a classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
-- [CA1400: Pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+- [CA1400: Os pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 - [CA1401: P/Invokes não devem ser visíveis](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
-- [CA2101: Especificar marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+- [CA2101: Especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)

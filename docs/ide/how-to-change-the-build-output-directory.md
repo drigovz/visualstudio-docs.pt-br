@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e006be2099d5132ce7445f1e8fe74b0f2752c260
-ms.sourcegitcommit: 59e5758036223ee866f3de5e3c0ab2b6dbae97b6
-ms.translationtype: HT
+ms.openlocfilehash: 493de227174b60b4834c2732ddbf16a5586fa49e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68416785"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238180"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como: Alterar o diretório de saída do build
 
@@ -43,6 +43,15 @@ Você pode especificar o local de saída gerado pelo seu projeto por configuraç
    Digite o caminho para o qual gerar a saída (absoluto ou relativo para o diretório raiz do projeto), ou escolha **Procurar** para, em vez disso, navegar até essa pasta.
 
    ![Propriedade de caminho de saída para um projeto C# do Visual Studio](media/output-path.png)
+   
+   > [!NOTE]
+   > Alguns projetos incluirão, por padrão, a estrutura e o tempo de execução no caminho de compilação. Para alterar isso, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções**, selecione **Editar arquivo de projeto**e adicione o seguinte:
+   > ```xml
+   > <PropertyGroup>
+   >   <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+   >   <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+   > </PropertyGroup>
+   > ```
 
 > [!TIP]
 > Se a saída não está sendo gerada para o local que especificou, verifique se você está compilando a configuração correspondente (por exemplo, **Depuração** ou **Versão**), selecionando-a na barra de menus do Visual Studio.

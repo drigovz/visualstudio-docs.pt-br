@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf5bb8320a8876582cc325ecf973c83593777193
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ab0f6aaae97a510b0521e10ad607a86988c345a3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920503"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232089"
 ---
 # <a name="ca2142-transparent-code-should-not-be-protected-with-linkdemands"></a>CA2142: O código transparente não deve ser protegido com LinkDemands
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920503"
 |NomeDoTipo|TransparentMethodsShouldNotBeProtectedWithLinkDemands|
 |CheckId|CA2142|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um método transparente requer uma <xref:System.Security.Permissions.SecurityAction> ou outras demandas de segurança.

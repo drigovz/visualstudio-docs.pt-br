@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d63f4509872cc117ae03ff3a668d38a6efb07ef9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c737a30569ab4cd59931a3fca0e500ebe96e62de
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541816"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230975"
 ---
 # <a name="ca2222-do-not-decrease-inherited-member-visibility"></a>CA2222: Não diminuir a visibilidade dos membros herdados
 
@@ -31,19 +31,19 @@ ms.locfileid: "62541816"
 |NomeDoTipo|DoNotDecreaseInheritedMemberVisibility|
 |CheckId|CA2222|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um método privado em um tipo não selado tem uma assinatura que é idêntica a um método público declarado em um tipo base. O método particular não é final.
+Um método particular em um tipo sem lacre tem uma assinatura que é idêntica a um método público declarado em um tipo base. O método particular não é final.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Não altere o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método. Se o membro é privado e o tipo é sem lacre, a herança de tipos pode chamar a implementação de pública último do método na hierarquia de herança. Se você precisar alterar o modificador de acesso, o método deve ser marcado como final ou seu tipo deve ser lacrado para impedir que o método que está sendo substituído.
+Não altere o modificador de acesso para membros herdados. A alteração de um membro herdado para particular não impede que os chamadores acessem a implementação da classe base do método. Se o membro for tornado privado e o tipo não for lacrado, a herança de tipos poderá chamar a última implementação pública do método na hierarquia de herança. Se você precisar alterar o modificador de acesso, o método deverá ser marcado como final ou seu tipo deve ser lacrado para impedir que o método seja substituído.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, altere o acesso para ser não privado. Como alternativa, se sua linguagem de programação der suporte a ele, você pode tornar o método final.
+Para corrigir uma violação dessa regra, altere o acesso para não privado. Como alternativa, se a linguagem de programação oferecer suporte a ela, você poderá tornar o método final.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

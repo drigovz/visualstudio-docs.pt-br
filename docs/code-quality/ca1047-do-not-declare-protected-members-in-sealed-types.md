@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ab7cf2c5a4f17966ed5b4da30657e05a4683738
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922641"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235701"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Não declarar membros protegidos em tipos selados
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922641"
 |NomeDoTipo|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um tipo público é `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.

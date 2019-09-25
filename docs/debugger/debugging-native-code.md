@@ -20,45 +20,45 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 5a7cf0b150c45037941010bf7e611f4bc21252c7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8115d16b64096af343adb918ba4855d9655d4df0
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851900"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211149"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
-A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para conhecer a mecânica de como usar o depurador do Visual Studio, consulte [primeiro, examine o depurador](../debugger/debugger-feature-tour.md)).
+A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para obter a mecânica de uso do depurador do Visual Studio, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md)).
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: Depurar o código otimizado](../debugger/how-to-debug-optimized-code.md) dá dicas para depurar o código otimizado, especificamente, por que depurar uma versão não otimizada do programa, as configurações padrão de otimização para configurações de depuração e versão e dicas para localizar bugs que apenas aparecem no código otimizado (ativação de otimização em uma configuração de build de depuração).
+ [Como: Depurar código](../debugger/how-to-debug-optimized-code.md) otimizado dá dicas para depurar código otimizado, especificamente, por que você deve depurar uma versão não otimizada do seu programa, configurações de otimização padrão para configurações de depuração e versão e dicas para localizar bugs que apenas aparecem no código otimizado (ativando a otimização em uma configuração de compilação de depuração).
 
- [DebugBreak e debugbreak](../debugger/debugbreak-and-debugbreak.md) descreve o Win32 `DebugBreak` de função e fornece um link para seu tópico de referência no SDK da plataforma. Também descreve o `__debugbreak` intrínseco.
+ [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md) Descreve a função `DebugBreak` do Win32 e fornece um link para seu tópico de referência no Platform SDK. Também descreve o `__debugbreak` intrínseco.
 
- [C /C++ asserções](../debugger/c-cpp-assertions.md) discute as instruções de declaração, como eles funcionam, os benefícios de usá-las (capturando erros lógicos, verificando resultados de uma operação e testando condições de erro), sua interação com `_DEBUG`e os tipos de asserções com suporte no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+ [C/C++ asserções](../debugger/c-cpp-assertions.md) discute instruções de asserção, como elas funcionam, os benefícios de usá-las (capturar erros lógicos, verificar os resultados de uma operação e testar condições de erro), `_DEBUG`sua interação com e os tipos de asserções com suporte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]no.
 
- [Como: Depurar código Assembly embutido](../debugger/how-to-debug-inline-assembly-code.md) fornece instruções curtas sobre como usar a janela de desmontagem para exibir as instruções de assembly e a janela registros para exibir conteúdo do registro e fornece links para tópicos sobre essas janelas.
+ [Como: Depurar o código](../debugger/how-to-debug-inline-assembly-code.md) de assembly embutido fornece instruções curtas sobre como usar a janela de desmontagem para exibir as instruções do assembly e a janela de registros para exibir o conteúdo do registro e fornece links para tópicos sobre essas janelas.
 
- [Técnicas de depuração MFC](../debugger/mfc-debugging-techniques.md) Links para técnicas de depuração para programas MFC, incluindo: afxDebugBreak, a macro TRACE, detecção de memória perdas no MFC, MFC, asserções e reduzindo o tamanho da depuração do MFC se baseia.
+ [Técnicas de depuração do MFC](../debugger/mfc-debugging-techniques.md) Vincula você à depuração de técnicas para programas MFC, incluindo: afxDebugBreak, a macro TRACE, detectar vazamentos de memória no MFC, asserções do MFC e reduzir o tamanho das compilações de depuração do MFC.
 
- [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md) Links para técnicas de depuração para a biblioteca de tempo de execução C, incluindo o uso da biblioteca de depuração do CRT, macros para relatórios, as diferenças entre malloc e malloc_dbg, escrevendo funções de gancho de depuração e o heap de depuração do CRT.
+ [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md) Vincula você a técnicas de depuração para a biblioteca de tempo de execução C, incluindo o uso da biblioteca de depuração CRT, macros para relatórios, diferenças entre malloc e _malloc_dbg, gravação de funções de gancho de depuração e heap de depuração CRT.
 
- [Perguntas frequentes de código nativo de depuração](../debugger/debugging-native-code-faqs.md) fornece respostas para perguntas frequentes sobre a depuração Visual C++ programas
+ [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md) Fornece respostas para perguntas frequentes sobre a depuração C++ de programas visuais
 
- [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md) fornece informações sobre aplicativos COM e ActiveX, inclusive ferramentas que você pode usar para COM e ActiveX a depuração.
+ [Depuração com e ActiveX](../debugger/com-and-activex-debugging.md) Fornece informações sobre depuração de aplicativos COM e ActiveX, incluindo ferramentas que você pode usar para depuração COM e ActiveX.
 
- [Como: Depurar código injetado](../debugger/how-to-debug-injected-code.md) fornece orientação sobre como depurar código que usa atributos. As instruções incluem como ativar a Anotação de Origem, como exibir o código injetado e como exibir o código de desmontagem no ponto de execução atual.
+ [Como: Depurar código](../debugger/how-to-debug-injected-code.md) injetado fornece orientação sobre o código de depuração que usa atributos. As instruções incluem como ativar a Anotação de Origem, como exibir o código injetado e como exibir o código de desmontagem no ponto de execução atual.
 
- [Passo a passo: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) descreve como usar o **tarefas paralelas** e **pilhas paralelas** janelas para depurar um aplicativo paralelo.
+ [Passo a passo: A depuração de um](../debugger/walkthrough-debugging-a-parallel-application.md) aplicativo paralelo descreve como usar as janelas de ferramenta **tarefas paralelas** e de **pilhas paralelas** para depurar um aplicativo paralelo.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [O Visual C++ tipos de projeto](../debugger/debugging-preparation-visual-cpp-project-types.md) fornece links para tópicos que descrevem como depurar os tipos de projeto nativos criados pelo Visual C++ modelos de projeto.
+ [Tipos C++ de projeto Visual](../debugger/debugging-preparation-visual-cpp-project-types.md) fornece links para tópicos que descrevem como depurar os tipos de projeto nativos criados pelos modelos C++ de projeto Visual.
 
- [Depurando projetos de DLL](../debugger/debugging-dll-projects.md) fornece informações sobre como depurar DLLs nativas e gerenciadas.
+ [Depuração de projetos de dll](../debugger/debugging-dll-projects.md) Fornece informações sobre como depurar DLLs nativas e gerenciadas.
 
- [Primeiro, examine o depurador](../debugger/debugger-feature-tour.md) fornece links para as maiores seções da documentação de depuração. A informação inclui: novidades no depurador, configurações e preparação, pontos de interrupção, tratamentos de exceção, edição e continuação, depuração de código gerenciado, depuração de código nativo, depuração de SQL e referências à interface do usuário.
+ [Primeira olhada no depurador](../debugger/debugger-feature-tour.md) Fornece links para as seções maiores da documentação de depuração. A informação inclui: novidades no depurador, configurações e preparação, pontos de interrupção, tratamentos de exceção, edição e continuação, depuração de código gerenciado, depuração de código nativo, depuração de SQL e referências à interface do usuário.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Segurança do depurador](../debugger/debugger-security.md)
-- [Depurando no Visual Studio](../debugger/index.md)
+- [Depurando no Visual Studio](../debugger/index.yml)

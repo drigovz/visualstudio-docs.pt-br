@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6d4776f6bcbf89e95301bd2c7ef4f6f6b5680d9
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2539cef9e6b2fe20513943f686aeaa1ff7a79013
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714350"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235100"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304: Especificar CultureInfo
 
@@ -27,12 +27,12 @@ ms.locfileid: "66714350"
 |-|-|
 |NomeDoTipo|SpecifyCultureInfo|
 |CheckId|CA1304|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um método ou construtor chama um membro que tem uma sobrecarga que aceita uma <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parâmetro e o método ou construtor não chama a sobrecarga que utiliza o <xref:System.Globalization.CultureInfo> parâmetro. Essa regra ignora as chamadas para os seguintes métodos:
+Um método ou construtor chama um membro que tem uma sobrecarga que aceita um <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> parâmetro e o método ou construtor não chama a sobrecarga que usa o <xref:System.Globalization.CultureInfo> parâmetro. Essa regra ignora as chamadas para os seguintes métodos:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -40,36 +40,36 @@ Um método ou construtor chama um membro que tem uma sobrecarga que aceita uma <
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando um <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider?displayProperty=nameWithType> objeto não for fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, a cultura padrão de escolha de membros do .NET e formatação com base em suposições que podem não estar corretas para seu código. Para garantir que o código funciona conforme o esperado para seus cenários, você deve fornecer informações específicas da cultura acordo com as diretrizes a seguir:
+Quando um <xref:System.Globalization.CultureInfo> objeto <xref:System.IFormatProvider?displayProperty=nameWithType> ou não é fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, os membros do .NET escolhem a cultura e a formatação padrão com base nas suposições que podem não estar corretas para o seu código. Para garantir que o código funcione conforme o esperado para seus cenários, você deve fornecer informações específicas de cultura de acordo com as seguintes diretrizes:
 
-- Se o valor será exibido ao usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
+- Se o valor for exibido para o usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
-- Se o valor será armazenado e acessado pelo software, ou seja, mantidos em um arquivo ou banco de dados, use a cultura invariável. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
+- Se o valor for armazenado e acessado pelo software, ou seja, persistido em um arquivo ou banco de dados, use a cultura invariável. Consulte <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=nameWithType>.
 
-- Se você não souber o destino do valor, ter o consumidor de dados ou provedor de especificar a cultura.
+- Se você não souber o destino do valor, faça com que o consumidor ou o provedor de dados especifique a cultura.
 
-Mesmo se o comportamento padrão do membro sobrecarregado é apropriado para suas necessidades, é melhor chamar explicitamente a sobrecarga de específicas da cultura para que seu código seja autodocumentados e mais fácil manutenção.
+Mesmo que o comportamento padrão do membro sobrecarregado seja apropriado para suas necessidades, é melhor chamar explicitamente a sobrecarga específica da cultura para que seu código seja autodocumentado e mais facilmente mantido.
 
 > [!NOTE]
-> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType> é usado apenas para recuperar os recursos localizados por meio de uma instância da <xref:System.Resources.ResourceManager?displayProperty=nameWithType> classe.
+> <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=nameWithType>é usado somente para recuperar recursos localizados usando uma instância da <xref:System.Resources.ResourceManager?displayProperty=nameWithType> classe.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use a sobrecarga que utiliza um <xref:System.Globalization.CultureInfo> argumento.
+Para corrigir uma violação dessa regra, use a sobrecarga que usa um <xref:System.Globalization.CultureInfo> argumento.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, quando você tiver certeza de que a cultura padrão é a escolha correta e manutenção de código não é uma prioridade de desenvolvimento importantes.
+É seguro suprimir um aviso dessa regra quando estiver certo de que a cultura padrão é a opção correta e onde a manutenção do código não é uma prioridade de desenvolvimento importante.
 
 ## <a name="example-showing-how-to-fix-violations"></a>Exemplo mostrando como corrigir violações
 
-No exemplo a seguir, `BadMethod` faz com que as duas violações dessa regra. `GoodMethod` corrige a primeira violação, passando a cultura invariável para <xref:System.String.Compare%2A?displayProperty=nameWithType>e corrige a violação de segundo, passando a cultura atual como <xref:System.String.ToLower%2A?displayProperty=nameWithType> porque `string3` é exibida ao usuário.
+No exemplo a seguir, `BadMethod` causa duas violações dessa regra. `GoodMethod`corrige a primeira violação passando a cultura invariável para <xref:System.String.Compare%2A?displayProperty=nameWithType>e corrige a segunda violação passando a cultura atual para <xref:System.String.ToLower%2A?displayProperty=nameWithType> porque `string3` é exibido para o usuário.
 
 [!code-csharp[FxCop.Globalization.CultureInfo#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_1.cs)]
 
-## <a name="example-showing-formatted-output"></a>Saída formatada de mostrando exemplo
+## <a name="example-showing-formatted-output"></a>Exemplo mostrando saída formatada
 
-O exemplo a seguir mostra o efeito da cultura atual em padrão <xref:System.IFormatProvider> que é selecionada pelo <xref:System.DateTime> tipo.
+O exemplo a seguir mostra o efeito da cultura atual no padrão <xref:System.IFormatProvider> selecionado <xref:System.DateTime> pelo tipo.
 
 [!code-csharp[FxCop.Globalization.IFormatProvider#1](../code-quality/codesnippet/CSharp/ca1304-specify-cultureinfo_2.cs)]
 

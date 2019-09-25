@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b292c58e666c11130fb25f67c234bfd2282fe463
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922250"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234913"
 ---
 # <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Deve haver pontos de entrada P/Invoke
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922250"
 |NomeDoTipo|PInvokeEntryPointsShouldExist|
 |CheckId|CA1400|
 |Categoria|Microsoft. Interoperability|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um método público ou protegido é marcado com o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Não foi possível localizar a biblioteca não gerenciada ou não foi possível comparar o método a uma função na biblioteca. Se a regra não puder localizar o nome do método exatamente como foi especificado, ele procurará as versões ANSI ou de caracteres largos do método, sufixando o nome do método com ' A ' ou ' W '. Se nenhuma correspondência for encontrada, a regra tentará localizar uma função usando o formato de nome __stdcall (_MyMethod@12, em que 12 representa o comprimento dos argumentos). Se nenhuma correspondência for encontrada e o nome do método começar com ' # ', a regra pesquisará a função como uma referência ordinal em vez de uma referência de nome.

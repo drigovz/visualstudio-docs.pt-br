@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdb8ef315c9702cc10352368aba7202a8f29f7f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3767d361375ce1b3d54281a6850d9ac3b960ece6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920010"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237864"
 ---
 # <a name="ca2241-provide-correct-arguments-to-formatting-methods"></a>CA2241: Fornecer argumentos corretos para métodos de formatação
 
@@ -32,7 +32,7 @@ ms.locfileid: "68920010"
 |NomeDoTipo|ProvideCorrectArgumentsToFormattingMethods|
 |CheckId|CA2241|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 O `format` argumento de cadeia de caracteres passado para um <xref:System.Console.WriteLine%2A>método <xref:System.Console.Write%2A>como, <xref:System.String.Format%2A?displayProperty=fullName> ou não contém um item de formato que corresponde a cada argumento de objeto, ou vice-versa.

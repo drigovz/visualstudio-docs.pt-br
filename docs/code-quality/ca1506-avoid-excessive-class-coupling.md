@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b655609548d3de293abe2adc0ec3fb5c6fcf297b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546102"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234488"
 ---
 # <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar acoplamento de classes excessivo
 
@@ -28,25 +28,25 @@ ms.locfileid: "62546102"
 |NomeDoTipo|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
 |Categoria|Microsoft.Maintainability|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo ou método é acoplado com muitos outros tipos.
+Um tipo ou método é combinado com muitos outros tipos.
 
 ## <a name="rule-description"></a>Descrição da regra
 
 Esta regra mede o acoplamento de classes contando o número de referências de tipo exclusivas que um tipo ou um método contém.
 
-Tipos e métodos que têm um alto grau de acoplamento de classes podem ser difícil de manter. É uma boa prática tem tipos e métodos que apresentam baixo acoplamento e alta coesão.
+Tipos e métodos que têm um alto grau de acoplamento de classe podem ser difíceis de manter. É uma boa prática ter tipos e métodos que apresentam baixo acoplamento e alta coesão.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir essa violação, tente recriar o tipo ou método para reduzir o número de tipos para o qual ele está acoplado.
+Para corrigir essa violação, tente recriar o tipo ou o método para reduzir o número de tipos aos quais ele está acoplado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Exclua esse aviso quando o tipo ou método é considerado sustentável, apesar de seu grande número de dependências em outros tipos.
+Exclua este aviso quando o tipo ou método for considerado passível de manutenção, apesar de seu grande número de dependências em outros tipos.
 
 ## <a name="see-also"></a>Consulte também
 

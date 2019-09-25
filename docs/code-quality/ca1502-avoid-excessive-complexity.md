@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: db4f767aa2ecb31bca3a5530e1b4bbf5ce15729d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797400"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234556"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar complexidade excessiva
 
@@ -32,7 +32,7 @@ ms.locfileid: "62797400"
 |NomeDoTipo|AvoidExcessiveComplexity|
 |CheckId|CA1502|
 |Categoria|Microsoft.Maintainability|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -40,37 +40,37 @@ Um método tem uma complexidade ciclomática excessiva.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-*A complexidade ciclomática* mede o número de caminhos linearmente independentes por meio do método, que é determinado pelo número e pela complexidade das ramificações condicionais. Geralmente, uma complexidade ciclomática baixa indica um método que é fácil de entender, testar e manter. A complexidade ciclomática é calculada a partir de um gráfico de fluxo de controle do método e recebe da seguinte maneira:
+A *complexidade ciclomática* mede o número de caminhos linearmente independentes por meio do método, que é determinado pelo número e pela complexidade de ramificações condicionais. Uma complexidade ciclomática baixa geralmente indica um método que é fácil de entender, testar e manter. A complexidade do ciclomática é calculada a partir de um grafo de fluxo de controle do método e é fornecida da seguinte maneira:
 
-a complexidade ciclomática = o número de bordas - o número de nós + 1
+complexidade ciclomática = o número de bordas – o número de nós + 1
 
-Um *nó* representa um ponto de ramificação de lógica e uma *borda* representa uma linha entre os nós.
+Um *nó* representa um ponto de ramificação lógica e uma *borda* representa uma linha entre nós.
 
-A regra relata uma violação, quando a complexidade ciclomática é a mais de 25.
+A regra relata uma violação quando a complexidade do ciclomática é maior que 25.
 
 Você pode aprender mais sobre as métricas de código em [medir a complexidade do código gerenciado](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, Refatore o método para reduzir sua complexidade ciclomática.
+Para corrigir uma violação dessa regra, refatore o método para reduzir sua complexidade de ciclomática.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra se facilmente não pode ser reduzida a complexidade e o método é fácil de entender, testar e manter. Em particular, um método que contém um grande `switch` (`Select` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) instrução é um candidato para exclusão. O risco de desestabilizar a tarde no ciclo de desenvolvimento ou introduzir uma alteração inesperada no comportamento de tempo de execução no código fornecido anteriormente pode superar os benefícios de facilidade de manutenção de refatorar o código de base de código.
+É seguro suprimir um aviso dessa regra se a complexidade não puder ser facilmente reduzida e o método for fácil de entender, testar e manter. Em particular, um método que contém uma instrução `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) grande é um candidato para exclusão. O risco de desestabilizar a base de código no final do ciclo de desenvolvimento ou introduzir uma alteração inesperada no comportamento de tempo de execução no código fornecido anteriormente pode superar os benefícios de manutenção da refatoração do código.
 
-## <a name="how-cyclomatic-complexity-is-calculated"></a>Como a complexidade ciclomática é calculada
+## <a name="how-cyclomatic-complexity-is-calculated"></a>Como a complexidade do ciclomática é calculada
 
-A complexidade ciclomática é calculada adicionando 1 ao seguinte:
+A complexidade do ciclomática é calculada adicionando 1 ao seguinte:
 
-- Número de ramificações (como `if`, `while`, e `do`)
+- Número de ramificações (como `if`, `while`e `do`)
 
-- Número de `case` instruções em um `switch`
+- Número de `case` instruções em um`switch`
 
 ## <a name="example"></a>Exemplo
 
-Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclomática variados.
+Os exemplos a seguir mostram métodos que têm complexidades ciclomática variáveis.
 
-**Complexidade ciclomática igual a 1**
+**Complexidade ciclomática de 1**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_1.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#1](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_1.vb)]
@@ -94,7 +94,7 @@ Os exemplos a seguir mostram os métodos que possuem as complexidades de ciclom�
 
 ## <a name="example"></a>Exemplo
 
-**Complexidade ciclomática de 8**
+**Ciclomática complexidade de 8**
 
 [!code-cpp[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/CPP/ca1502-avoid-excessive-complexity_4.cpp)]
 [!code-vb[FxCop.Maintainability.AvoidExcessiveComplexity#4](../code-quality/codesnippet/VisualBasic/ca1502-avoid-excessive-complexity_4.vb)]

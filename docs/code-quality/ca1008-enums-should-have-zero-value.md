@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 502033d2adffd640d2af6ee8d36b0c0f3cd71472
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c9b6e48fb82be5a41c420827a32926630bb725ed
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547936"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236498"
 ---
 # <a name="ca1008-enums-should-have-zero-value"></a>CA1008: Enumerações devem ter valor zero
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547936"
 |NomeDoTipo|EnumsShouldHaveZeroValue|
 |CheckId|CA1008|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Sem interrupção – quando você for solicitado a adicionar um valor **None** a uma enumeração sem sinalizador. Quebra-quando você é solicitado a renomear ou remover qualquer valor de enumeração.|
+|Alteração significativa|Sem interrupção – quando você for solicitado a adicionar um valor **None** a uma enumeração sem sinalizador. Quebra-quando você é solicitado a renomear ou remover qualquer valor de enumeração.|
 
 ## <a name="cause"></a>Causa
 
@@ -56,7 +56,7 @@ Não suprimir um aviso dessa regra, exceto para enumerações atribuídas a sina
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1008.api_surface = private, internal

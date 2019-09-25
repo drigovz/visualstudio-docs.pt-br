@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/19/2019
 ms.topic: conceptual
 description: Saiba mais sobre a nova oferta do Visual Studio + GitHub
-ms.openlocfilehash: 6c34ecc37285166135584a98453a1e92393073ab
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 09168bffbdb8caf9e6366335f5d08f5bf81573f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150087"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238142"
 ---
 # <a name="introducing-visual-studio-subscriptions-with-github-enterprise"></a>Introdução às assinaturas do Visual Studio com o GitHub Enterprise  
 
@@ -32,7 +32,7 @@ Se sua organização tiver um EA que ainda não pode ser renovado, você poderá
 
 Os SKUs existentes para o Visual Studio Enterprise, o Visual Studio Professional e o GitHub Enterprise também continuarão disponíveis separadamente. 
 
-Para saber mais sobre os benefícios, as opções e os preços, acesse https://visualstudio.microsoft.com/subscriptions/visual-studio-github. 
+Para saber mais sobre os benefícios e as opções https://visualstudio.microsoft.com/subscriptions/visual-studio-github, visite. 
 
 ## <a name="getting-your-subscriptions"></a>Como obter suas assinaturas
 

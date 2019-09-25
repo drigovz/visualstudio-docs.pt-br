@@ -1,5 +1,5 @@
 ---
-title: O que há de novo no depurador no Visual Studio 2017 | Microsoft Docs
+title: O que há de novo para o depurador no Visual Studio 2017 | Microsoft Docs
 titleSuffix: ''
 ms.date: 01/22/2018
 ms.topic: conceptual
@@ -20,18 +20,18 @@ manager: jillfra
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 130387fedce065948ebe09ea605e32cf89ad820b
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62901364"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71210597"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Novidades do depurador no Visual Studio 2017
 
-O depurador inclui esses novos recursos:
+O depurador inclui estes novos recursos:
 
-- Novidades na versão 15.5, o **depurador de instantâneo** tira um instantâneo de seus aplicativos em produção quando o código que você está interessado é executado. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
+- Novidade na versão 15,5, o **depurador de instantâneos** tira um instantâneo dos aplicativos em produção quando o código que você está interessado em executar. Para instruir o depurador a tirar um instantâneo, defina snappoints e logpoints em seu código. O depurador permite ver exatamente o que deu errado sem afetar o tráfego do seu aplicativo de produção. O Depurador de Instantâneo pode ajudar a reduzir drasticamente o tempo que leva para resolver problemas que ocorrem em ambientes de produção.
 
     A coleção de instantâneos está disponível para os seguintes aplicativos Web em execução no Serviço de Aplicativo do Azure:
 
@@ -40,7 +40,7 @@ O depurador inclui esses novos recursos:
 
     Para obter mais informações, confira [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md).
 
-- Novidades na versão 15.5 no Visual Studio Enterprise somente **retrocesso do IntelliTrace** tira um instantâneo do seu aplicativo em cada ponto de interrupção e o depurador automaticamente a eventos de etapa. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
+- Novidade na versão 15,5 somente no Visual Studio Enterprise, o **IntelliTrace faz** um instantâneo automaticamente do seu aplicativo em cada ponto de interrupção e evento de etapa do depurador. Os instantâneos registrados permitem retornar aos pontos de interrupção ou às etapas anteriores e exibir o estado do aplicativo como ele era no passado. O retrocesso do IntelliTrace poderá poupar seu tempo quando você desejar ver o estado do aplicativo anterior, mas não desejar reiniciar a depuração nem recriar o estado do aplicativo desejado.
 
     É possível navegar e exibir instantâneos usando os botões **Voltar** e **Avançar** na barra de ferramentas Depurar. Esses botões navegam pelos eventos exibidos na guia **Eventos** na janela **Ferramentas de Diagnóstico**.
 
@@ -48,7 +48,7 @@ O depurador inclui esses novos recursos:
 
     Para obter mais informações, confira a página [Inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md).
 
-- O **auxiliar de exceção** substitui o Assistente de exceção e aparece em uma caixa de diálogo não modal onde ocorreu o erro. O **auxiliar de exceção** fornece um acesso mais rápido para quaisquer exceções internas, análises adicionais pelo depurador (se disponível) e ter acesso imediato à **configurações de exceção** da exceção. O auxiliar de exceção também podem ser arrastado para um modo de exibição flutuante se ele está bloqueando algo que você precisa ver.
+- O **auxiliar de exceção** substitui o assistente de exceção e aparece em uma caixa de diálogo não modal onde ocorreu o erro. O **auxiliar de exceção** fornece acesso mais rápido a quaisquer exceções internas, análise adicional pelo depurador (se disponível) e acesso imediato às configurações de **exceção** para a exceção. O auxiliar de exceção também pode ser arrastado para uma exibição flutuante se estiver bloqueando algo que você precisa ver.
 
     Por exemplo, uma **NullReferenceException** agora mostra a variável que tem a referência nula (informações extras).
 
@@ -56,21 +56,21 @@ O depurador inclui esses novos recursos:
 
     Para obter mais informações, consulte a postagem de blog [Usando o novo Auxiliar de Exceção no Visual Studio](https://blogs.msdn.microsoft.com/visualstudioalm/2016/03/31/using-the-new-exception-helper-in-visual-studio-15-preview/).
 
-- Agora você pode executar para uma linha de código enquanto está em pausa no depurador, selecionando o **executar para este lugar** ícone de seta verde (você verá o ícone ao passar o mouse sobre uma linha de código). Isso elimina a necessidade de definir pontos de interrupção temporários.
+- Agora você pode executar em uma linha de código enquanto estiver em pausa no depurador, selecionando o ícone de seta **executar execução para aqui** verde (você vê o ícone ao passar o mouse sobre uma linha de código). Isso elimina a necessidade de definir pontos de interrupção temporários.
 
-    ![Depurador do executar com um clique](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
+    ![Execução do depurador para clicar](../debugger/media/dbg-run-to-click.png "DbgRunToClick")
 
-- Você pode definir condições de exceções na **configurações de exceção** caixa de diálogo (você pode fazer isso usando o **Editar condição** ícone na caixa de diálogo Configurações de exceção ou por meio do menu do botão direito do mouse no exceção). Condições com suporte no momento incluem os nomes de módulo para incluir ou excluir da exceção.
+- Você pode definir condições em exceções na caixa de diálogo **configurações de exceção** (você pode fazer isso usando o ícone **Editar condição** na caixa de diálogo Configurações de exceção ou usando o menu de clique com o botão direito do mouse na exceção.) Atualmente, as condições com suporte incluem os nomes de módulo a serem incluídos ou excluídos para a exceção.
 
     ![Condições em uma exceção](../debugger/media/dbg-conditional-exception.png "DbgConditionalException")
 
-- Anexe ao processo, caixa de diálogo inclui um novo recurso de pesquisa que pode ajudá-lo mais rapidamente identificar o que você precisa anexar ao processo.
+- A caixa de diálogo anexar ao processo inclui um novo recurso de pesquisa que pode ajudá-lo a identificar mais rapidamente o processo ao qual você precisa se anexar.
 
-    ![Pesquisar em Anexar ao processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
+    ![Pesquisar em anexo ao processo](../debugger/media/dbg-attach-to-process-search.png "DbgAttachToProcessSearch")
 
-Para obter mais informações sobre esses novos recursos, consulte a [notas de versão do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] ](/visualstudio/releasenotes/vs2017-relnotes).
+Para obter mais informações sobre esses novos recursos, consulte as [notas de [!include[vs_dev15](../misc/includes/vs_dev15_md.md)]versão do ](/visualstudio/releasenotes/vs2017-relnotes).
 
 ## <a name="see-also"></a>Consulte também
 
-- [Depurando no Visual Studio](../debugger/index.md)
+- [Depurando no Visual Studio](../debugger/index.yml)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

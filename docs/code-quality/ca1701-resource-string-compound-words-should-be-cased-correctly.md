@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fdae06137586f11de1a30a73894c46c7fb18fa6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546278"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234355"
 ---
 # <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Palavras compostas de cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas
 
@@ -28,43 +28,43 @@ ms.locfileid: "62546278"
 |NomeDoTipo|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Uma cadeia de caracteres de recurso contém uma palavra composta que não parece ter maiusculas e minúsculas corretamente.
+Uma cadeia de caracteres de recurso contém uma palavra composta que não parece estar em maiúsculas corretamente.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Cada palavra na cadeia de caracteres de recurso é dividida em tokens que são baseados em maiusculas. Cada combinação contígua de dois tokens é verificada pela biblioteca do verificador ortográfico da Microsoft. Se reconhecidas, as palavras produzirão uma violação da regra. São exemplos de palavras compostas que fazem com que uma violação "CheckSum" e "MultiPart", que deve ter maiusculas e minúsculas como "Checksum" e "Multipart", respectivamente. Devido ao uso anterior de comuns, várias exceções são incorporadas a regra e várias palavras únicas são sinalizadas como "Ferramentas" e "Filename", que deve ter a grafia duas palavras distintas. Neste exemplo, "Ferramentas" e "FileName" será sinalizado.
+Cada palavra na cadeia de caracteres de recurso é dividida em tokens baseados em maiúsculas e minúsculas. Cada combinação contígua de dois tokens é verificada pela biblioteca do verificador ortográfico da Microsoft. Se reconhecidas, as palavras produzirão uma violação da regra. Exemplos de palavras compostas que causam uma violação são "CheckSum" e "MultiPart", que devem ser totais como "Checksum" e "multipart", respectivamente. Devido ao uso comum anterior, várias exceções são incorporadas à regra, e várias palavras únicas são sinalizadas, como "Toolbar" e "filename", que devem ser maiúsculas e minúsculas como duas palavras distintas. Neste exemplo, "ToolBar" e "FileName" seriam sinalizados.
 
-Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Altere a palavra para que ele é maiusculas e minúsculas corretas.
+Altere a palavra de forma que ela fique correta.
 
 ## <a name="change-the-dictionary-language"></a>Alterar o idioma do dicionário
 
-Por padrão, a versão em inglês (en) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, você poderá fazê-lo com a adição de um dos seguintes atributos para seus *AssemblyInfo.cs* ou *AssemblyInfo* arquivo:
+Por padrão, a versão em inglês (EN) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, poderá fazê-lo adicionando um dos seguintes atributos ao seu arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* :
 
-- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura, se os recursos estiverem em um assembly satélite.
-- Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar o *cultura neutra* do seu assembly, se os recursos estiverem no mesmo assembly que seu código.
+- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se seus recursos estiverem em um assembly satélite.
+- Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar a *cultura neutra* do assembly se seus recursos estiverem no mesmo assembly que o seu código.
 
 > [!IMPORTANT]
-> Se você definir a cultura como algo diferente de uma cultura com base em inglês, essa regra de análise de código é silenciosamente desabilitada.
+> Se você definir a cultura como algo diferente de uma cultura baseada em inglês, essa regra de análise de código será silenciosamente desabilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se ambas as partes da palavra composta são reconhecidas pelo dicionário de ortografia e a intenção é usar duas palavras.
+É seguro suprimir um aviso dessa regra se ambas as partes da palavra composta forem reconhecidas pelo dicionário ortográfico e a intenção for usar duas palavras.
 
-Você também pode adicionar palavras compostas a um dicionário personalizado para o verificador ortográfico. Palavras no dicionário personalizado não causam violações. Para obter mais informações, confira [Como: Personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
+Você também pode adicionar palavras compostas a um dicionário personalizado para o verificador ortográfico. As palavras no dicionário personalizado não causam violações. Para obter mais informações, confira [Como: Personalize o dicionário](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análise de código.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1702: Palavras compostas devem ter maiusculas e minúsculas corretamente](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: Palavras compostas devem estar em maiúsculas e minúsculas](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Consulte também
 

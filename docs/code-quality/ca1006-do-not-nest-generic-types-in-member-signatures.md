@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 20bee606fd8cd98482a7304e068aaa7cbd5773a7
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 45ff4831875150df02d04553e75cebcab9a9f572
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923233"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236500"
 ---
 # <a name="ca1006-do-not-nest-generic-types-in-member-signatures"></a>CA1006: Não aninhar tipos genéricos em assinaturas de membro
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923233"
 |NomeDoTipo|DoNotNestGenericTypesInMemberSignatures|
 |CheckId|CA1006|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um membro visível externamente tem uma assinatura que contém um argumento de tipo aninhado.

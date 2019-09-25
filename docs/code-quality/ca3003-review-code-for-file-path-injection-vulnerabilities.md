@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b81bd810bac142bdec23074e69bbd3840043c8f6
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: c9e43dcdf1e923cb7bc4a98b17fd0be71b7927eb
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841394"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237408"
 ---
 # <a name="ca3003-review-code-for-file-path-injection-vulnerabilities"></a>CA3003: Examinar código quanto a vulnerabilidades de injeção de caminho
 
@@ -24,43 +24,43 @@ ms.locfileid: "65841394"
 |NomeDoTipo|ReviewCodeForFilePathInjectionVulnerabilities|
 |CheckId|CA3003|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entrada de solicitação HTTP potencialmente não confiável de atingir o caminho de uma operação de arquivo.
+A entrada de solicitação HTTP potencialmente não confiável atinge o caminho de uma operação de arquivo.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis de solicitações da web, lembre-se de usar a entrada controlada pelo usuário ao especificar caminhos para arquivos. Um invasor pode ser capaz de ler um arquivo não intencional, resultando na divulgação de informações de dados confidenciais. Ou, um invasor pode ser capaz de gravar em um arquivo não intencional, resultando em modificação não autorizada de dados confidenciais ou comprometer a segurança do servidor. É uma técnica comum do invasor [percurso de caminho](https://www.owasp.org/index.php/Path_Traversal) para acessar os arquivos fora do diretório desejado.
+Ao trabalhar com entrada não confiável de solicitações da Web, lembre-se de usar a entrada controlada pelo usuário ao especificar caminhos para arquivos. Um invasor pode ser capaz de ler um arquivo indesejado, resultando em divulgação de informações de dados confidenciais. Ou, um invasor pode ser capaz de gravar em um arquivo indesejado, resultando na modificação não autorizada de dados confidenciais ou em comprometer a segurança do servidor. Uma técnica de invasor comum é o [percurso de caminho](https://www.owasp.org/index.php/Path_Traversal) para acessar arquivos fora do diretório desejado.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo um caminho em uma operação de arquivo.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que grava em um arquivo, essa regra não gerará um aviso.
+Essa regra tenta localizar entradas de solicitações HTTP alcançando um caminho em uma operação de arquivo.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que grava em um arquivo, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-- Se possível, limite os caminhos de arquivo com base na entrada do usuário para uma lista segura explicitamente conhecida.  Por exemplo, se seu aplicativo precisa apenas acessar "red.txt", "green.txt" ou "blue.txt", permitir apenas esses valores.
-- Verificar se há nomes de arquivo não confiável e validar o nome está bem-formado.
+- Se possível, limite os caminhos de arquivo com base na entrada do usuário para uma lista segura explicitamente conhecida.  Por exemplo, se seu aplicativo precisar apenas acessar "Red. txt", "Green. txt" ou "Blue. txt", só permita esses valores.
+- Verifique se há nomes de filenão confiáveis e confirme se o nome está bem formado.
 - Use nomes de caminho completos ao especificar caminhos.
-- Evite construções potencialmente perigosas, como variáveis de ambiente path.
-- Só aceitam nomes de arquivo longos e validar o nome longo se o usuário envia nomes curtos.
-- Restringir a entrada do usuário final para caracteres válidos.
-- Rejeite nomes em que o comprimento MAX_PATH foi excedido.
-- A lidar com nomes de arquivo literalmente, sem serem interpretados.
-- Determine se o nome do arquivo representa um arquivo ou um dispositivo.
+- Evite construções potencialmente perigosas, como variáveis de ambiente Path.
+- Aceite somente nomes de filename e valide o nome longo se o usuário enviar nomes curtos.
+- Restringir a entrada do usuário final a caracteres válidos.
+- Rejeite os nomes em que o comprimento de MAX_PATH é excedido.
+- Manipule nomes de fileliteralmente, sem interpretação.
+- Determine se o nome do arquivo representa um ou um dispositivo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você tiver validado a entrada conforme descrito na seção anterior, é okey suprimir este aviso.
+Se você validou a entrada conforme descrito na seção anterior, não há problema em suprimir esse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

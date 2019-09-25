@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d1eb4c2535060f9a110d149e88ac2532e6ad1412
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: f49c9dfdac1d8d8aec8ec32df7374b5ae0a28e92
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921096"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233022"
 ---
 # <a name="ca2101-specify-marshaling-for-pinvoke-string-arguments"></a>CA2101: Especificar marshaling para argumentos de cadeias de caracteres P/Invoke
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921096"
 |NomeDoTipo|SpecifyMarshalingForPInvokeStringArguments|
 |CheckId|CA2101|
 |Categoria|Microsoft. Globalization|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um membro de invocação de plataforma permite chamadores parcialmente confiáveis, tem um parâmetro de cadeia de caracteres e não empacota explicitamente a cadeia de caracteres.

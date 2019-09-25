@@ -18,24 +18,24 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fa8bb0fb7672c177d0543a06fe423ca1d115514
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c6bd788124927de759558392cfe36194632c0996
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62851804"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211104"
 ---
 # <a name="debugging-web-applications"></a>Depurando aplicativos Web
 Esta seção explica como depurar vários tipos de aplicativos Web.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Depuração de Script do lado do cliente](../debugger/client-side-script-debugging.md) aborda testar scripts e scripts do lado do cliente no [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] páginas.
+ [Depuração de script do lado do cliente](../debugger/client-side-script-debugging.md) Discute scripts de teste e scripts do lado do cliente [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] em páginas.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Depurar aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md) descreve as etapas necessárias para habilitar a depuração de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos.
+ [Depurar aplicativos ASP.net](../debugger/how-to-enable-debugging-for-aspnet-applications.md) Descreve as etapas necessárias para habilitar a depuração de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] aplicativos.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando aplicativos Web e script](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Depurando no Visual Studio](../debugger/index.md)
+- [Depurando no Visual Studio](../debugger/index.yml)

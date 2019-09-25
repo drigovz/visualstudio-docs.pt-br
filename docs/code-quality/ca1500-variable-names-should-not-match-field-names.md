@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 740edb9861d2e3e758a36dfc067cb85fe4fc2c7e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62807154"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234566"
 ---
 # <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nomes de variável não devem corresponder a nomes de campo
 
@@ -31,15 +31,15 @@ ms.locfileid: "62807154"
 |NomeDoTipo|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
 |Categoria|Microsoft.Maintainability|
-|Alteração Significativa|Quando disparado em um parâmetro que tem o mesmo nome como um campo:<br /><br /> Sem quebra - se o campo e o método que declara o parâmetro não podem ser vistos fora do assembly, independentemente da alteração feita.<br />-Quebrando - se você alterar o nome do campo e pode ser vistos fora do assembly.<br />-Quebrando - se você alterar o nome do parâmetro e o método que declara que ele pode ser visto de fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome como um campo:<br /><br /> Sem quebra - se o campo não pode ser visto de fora do assembly, independentemente da alteração feita.<br />Sem quebra - se você alterar o nome da variável local e não altere o nome do campo.<br />-Quebrando - se você alterar o nome do campo e ele pode ser visto de fora do assembly.|
+|Alteração significativa|Quando acionado em um parâmetro que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo e o método que declara o parâmetro não puderem ser vistos fora do assembly, independentemente da alteração feita.<br />-Separável-se você alterar o nome do campo e puder ser visto fora do assembly.<br />-Quebra-se você alterar o nome do parâmetro e o método que o declara pode ser visto fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo não puder ser visto fora do assembly, independentemente da alteração feita.<br />-Não separável – se você alterar o nome da variável local e não alterar o nome do campo.<br />-Quebra-se você alterar o nome do campo e ele pode ser visto fora do assembly.|
 
 ## <a name="cause"></a>Causa
 
-Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo de instância do tipo declarativo. Para capturar as variáveis locais que violam a regra, o assembly testado deve ser criado usando as informações de depuração e o arquivo de banco de dados (. PDB) do programa associado deve estar disponível.
+Um método de instância declara um parâmetro ou uma variável local cujo nome corresponde a um campo de instância do tipo declarativo. Para capturar variáveis locais que violam a regra, o assembly testado deve ser criado usando informações de depuração e o arquivo de banco de dados do programa (. pdb) associado deve estar disponível.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando o nome de um campo de instância corresponde a um parâmetro ou um nome de variável local, o campo de instância é acessado usando o `this` (`Me` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) palavra-chave quando dentro do corpo de método. Durante a manutenção de código, é fácil esquecer essa diferença e pressupõem que a variável de parâmetro/local se refere ao campo de instância, o que leva a erros. Isso vale especialmente para corpos de método demorado.
+Quando o nome de um campo de instância corresponde a um parâmetro ou a um nome de variável local, o campo de instância `this` é`Me` acessado usando a palavra-chave (in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) quando está dentro do corpo do método. Ao manter o código, é fácil esquecer essa diferença e assumir que a variável de parâmetro/local se refere ao campo de instância, que leva a erros. Isso é verdadeiro especialmente para corpos de métodos longos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -51,7 +51,7 @@ Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra dois violações da regra.
+O exemplo a seguir mostra duas violações da regra.
 
 [!code-vb[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/VisualBasic/ca1500-variable-names-should-not-match-field-names_1.vb)]
 [!code-csharp[FxCop.Maintainability.VarMatchesField#1](../code-quality/codesnippet/CSharp/ca1500-variable-names-should-not-match-field-names_1.cs)]

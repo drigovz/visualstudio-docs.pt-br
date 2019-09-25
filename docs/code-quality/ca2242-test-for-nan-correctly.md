@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8912cb6eeec8009364936a42d572f4f3d83fae5e
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0e74ec49667a4fe66c399bd15e8b24aa6589ce88
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919914"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237838"
 ---
 # <a name="ca2242-test-for-nan-correctly"></a>CA2242: Testar para NaN corretamente
 
@@ -30,7 +30,7 @@ ms.locfileid: "68919914"
 |NomeDoTipo|TestForNaNCorrectly|
 |CheckId|CA2242|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Uma expressão testa um valor em <xref:System.Single.NaN?displayProperty=fullName> relação <xref:System.Double.NaN?displayProperty=fullName>a ou.

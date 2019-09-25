@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ecc30f3fe16b283c0eb9cc1f369458bb1d7f952
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 3b5bd062ca37ae477f5ab7d52d56fd7e4b4fb71b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920806"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232486"
 ---
 # <a name="ca2123-override-link-demands-should-be-identical-to-base"></a>CA2123: As demandas de link de substituição devem ser idênticas à base
 
@@ -28,10 +28,10 @@ ms.locfileid: "68920806"
 |NomeDoTipo|OverrideLinkDemandsShouldBeIdenticalToBase|
 |CheckId|CA2123|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
-Um método público ou protegido em um tipo público substitui um método ou implementa uma interface e não tem as mesmas demandas de [link](/dotnet/framework/misc/link-demands) que a interface ou o método virtual.
+Um método público ou protegido em um tipo público substitui um método ou implementa uma interface e não tem as mesmas [demandas de link](/dotnet/framework/misc/link-demands) que a interface ou o método virtual.
 
 ## <a name="rule-description"></a>Descrição da regra
 Esta regra compara um método ao método de base, que é uma interface ou um método virtual em outro tipo e, em seguida, compara as exigências de vínculo em cada um. Uma violação será relatada se o método ou o método base tiver uma demanda de link e o outro não.

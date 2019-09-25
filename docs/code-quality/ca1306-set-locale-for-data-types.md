@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 893844741c848bee759f56dd027c9976a21902e8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: aaf16ccd187681be7406fdadbde620a167a40c96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922786"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235022"
 ---
 # <a name="ca1306-set-locale-for-data-types"></a>CA1306: Definir localidade para tipos de dados
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922786"
 |NomeDoTipo|SetLocaleForDataTypes|
 |CheckId|CA1306|
 |Categoria|Microsoft. Globalization|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um método ou Construtor criou uma ou mais <xref:System.Data.DataTable?displayProperty=fullName> instâncias <xref:System.Data.DataSet?displayProperty=fullName> ou e não definiu explicitamente a propriedade locale (<xref:System.Data.DataTable.Locale%2A?displayProperty=fullName> ou <xref:System.Data.DataSet.Locale%2A?displayProperty=fullName>).

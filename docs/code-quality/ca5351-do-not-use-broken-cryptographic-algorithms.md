@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9af307158ecd8d5a1f93ebd1f8575cad5cf51e5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f2729e74e3abf6be2ae5b17a836d920c1376decd
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540853"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236945"
 ---
 # <a name="ca5351-do-not-use-broken-cryptographic-algorithms"></a>CA5351 não use algoritmos de criptografia desfeitos
 
@@ -22,46 +22,46 @@ ms.locfileid: "62540853"
 |NomeDoTipo|DoNotUseBrokenCryptographicAlgorithms|
 |CheckId|CA5351|
 |Categoria|Microsoft.Cryptography|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 > [!NOTE]
-> Esse aviso foi atualizado pela última vez em novembro de 2015.
+> Esse aviso foi atualizado pela última vez em 2015 de novembro.
 
 ## <a name="cause"></a>Causa
 
-Funções de hash, como <xref:System.Security.Cryptography.MD5> e algoritmos de criptografia, como <xref:System.Security.Cryptography.DES> e <xref:System.Security.Cryptography.RC2> pode expor um risco significativo e pode resultar na exposição de informações confidenciais por meio de técnicas de ataque trivial, como ataques de força bruta e colisões de hash.
+Funções de hash, <xref:System.Security.Cryptography.MD5> como e algoritmos de criptografia <xref:System.Security.Cryptography.DES> , como e <xref:System.Security.Cryptography.RC2> podem expor um risco significativo e podem resultar na exposição de informações confidenciais por meio de técnicas de ataque triviais, como ataques de força bruta e colisões de hash.
 
-A lista de algoritmos de criptografia a seguir estão sujeitos a ataques de criptografia conhecidos. O algoritmo de hash criptográfico <xref:System.Security.Cryptography.MD5> está sujeita a ataques de colisão de hash.  Dependendo do uso, uma colisão de hash pode levar a representação, violação ou outros tipos de ataques em sistemas que contam com a saída de criptografia exclusiva de uma função de hash. Os algoritmos de criptografia <xref:System.Security.Cryptography.DES> e <xref:System.Security.Cryptography.RC2> estão sujeitas a ataques de criptografia que pode resultar na divulgação não intencional de dados criptografados.
+A lista de algoritmos criptográficos a seguir está sujeita a ataques criptográficos conhecidos. O algoritmo <xref:System.Security.Cryptography.MD5> de hash criptográfico está sujeito a ataques de colisão de hash.  Dependendo do uso, uma colisão de hash pode levar à representação, violação ou outros tipos de ataques em sistemas que dependem da saída criptográfica exclusiva de uma função de hash. Os algoritmos <xref:System.Security.Cryptography.DES> de <xref:System.Security.Cryptography.RC2> criptografia e estão sujeitos a ataques criptográficos que podem resultar na divulgação não intencional de dados criptografados.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Dividido criptográfico algoritmos não são considerados seguros e seu uso deve ser desencorajado. O algoritmo de hash MD5 é suscetível a ataques conhecidos de colisão, embora a vulnerabilidade específica variará com base no contexto de uso.  Algoritmos de hash usados para garantir a integridade de dados (por exemplo, a assinatura do arquivo ou o certificado digital) são especialmente vulneráveis.  Nesse contexto, os invasores poderiam gerar duas partes separadas de dados, de modo que os dados benignos podem ser substituídos com dados mal-intencionados, sem alterar o valor de hash ou invalidar uma assinatura digital associada.
+Os algoritmos de criptografia desfeitos não são considerados seguros e seu uso deve ser desencorajado. O algoritmo de hash MD5 é suscetível a ataques de colisão conhecidos, embora a vulnerabilidade específica varie de acordo com o contexto de uso.  Os algoritmos de hash usados para garantir a integridade dos dados (por exemplo, assinatura de arquivo ou certificado digital) são particularmente vulneráveis.  Nesse contexto, os invasores poderiam gerar duas partes separadas de dados, de modo que os dados benignos possam ser substituídos por dados mal-intencionados, sem alterar o valor de hash ou invalidar uma assinatura digital associada.
 
-Para os algoritmos de criptografia:
+Para algoritmos de criptografia:
 
-- <xref:System.Security.Cryptography.DES> criptografia contém um pequeno tamanho de chave, que pode ser por força bruta em menos de um dia.
+- <xref:System.Security.Cryptography.DES>a criptografia contém um tamanho de chave pequeno, que pode ser forçado por uma força bruta em menos de um dia.
 
-- <xref:System.Security.Cryptography.RC2> a criptografia é suscetível a um ataque de chave relacionados, em que o invasor localiza matemáticas relações entre todos os valores de chave.
+- <xref:System.Security.Cryptography.RC2>a criptografia é suscetível a um ataque de chave relacionada, em que o invasor encontra relações matemáticas entre todos os valores de chave.
 
-Essa regra dispara quando ele encontra qualquer uma das funções criptográficas acima no código-fonte e gera um aviso ao usuário.
+Essa regra é disparada quando encontra qualquer uma das funções criptográficas acima no código-fonte e gera um aviso ao usuário.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
 Use opções criptograficamente mais fortes:
 
-- Para o MD5, use hashes na [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Para MD5, use hashes na família [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (por exemplo, <xref:System.Security.Cryptography.SHA512> <xref:System.Security.Cryptography.SHA384> <xref:System.Security.Cryptography.SHA256>,,).
 
-- Para DES e RC2, use <xref:System.Security.Cryptography.Aes> criptografia.
+- Para des e RC2, use <xref:System.Security.Cryptography.Aes> criptografia.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra, a menos que é examinada por um especialista em criptografia.
+Não suprimir um aviso desta regra, a menos que ela tenha sido revisada por um especialista em criptografia.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-Os seguintes exemplos de código pseudo ilustram o padrão detectado por essa regra e alternativas possíveis.
+Os exemplos de pseudocódigo a seguir ilustram o padrão detectado por essa regra e possíveis alternativas.
 
-### <a name="md5-hashing-violation"></a>MD5 Violação de hash
+### <a name="md5-hashing-violation"></a>Violação de hash MD5
 
 ```csharp
 using System.Security.Cryptography;
@@ -77,7 +77,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA256.Create();
 ```
 
-### <a name="rc2-encryption-violation"></a>RC2 Violação de criptografia
+### <a name="rc2-encryption-violation"></a>Violação de criptografia RC2
 
 ```csharp
 using System.Security.Cryptography;

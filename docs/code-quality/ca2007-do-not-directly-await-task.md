@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 dev_langs:
 - CSharp
-ms.openlocfilehash: 0d3ab899ad660c637492a4c3d229779481184e95
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: cf07c997f933e6aacf3eff29ae204ecd0bedb036
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546994"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233070"
 ---
 # <a name="ca2007-do-not-directly-await-a-task"></a>CA2007: não aguardar diretamente uma tarefa
 
@@ -26,7 +26,7 @@ ms.locfileid: "69546994"
 |NomeDoTipo|DoNotDirectlyAwaitATaskAnalyzer|
 |CheckId|CA2007|
 |Categoria|Microsoft.Reliability|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -36,7 +36,7 @@ Um método assíncrono [aguarda](/dotnet/csharp/language-reference/keywords/awai
 
 Quando um método assíncrono aguarda uma <xref:System.Threading.Tasks.Task> continuação direta, ocorre no mesmo thread que criou a tarefa. Esse comportamento pode ser dispendioso em termos de desempenho e pode resultar em um deadlock no thread da interface do usuário. Considere chamar <xref:System.Threading.Tasks.Task.ConfigureAwait(System.Boolean)?displayProperty=nameWithType> para sinalizar sua intenção para continuação.
 
-Essa regra foi introduzida com analisadores do [FxCop](install-fxcop-analyzers.md) e não existe na análise do FxCop herdada.
+Essa regra foi introduzida com [analisadores do FxCop](install-fxcop-analyzers.md) e não existe na análise do FxCop herdada.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

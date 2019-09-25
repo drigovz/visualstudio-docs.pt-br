@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b3ba92e154e3091f6ec483ba469c3fe60f50ec61
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 837abb051467135b6332b53b2c59e5016d3adff6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66744814"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233058"
 ---
 # <a name="ca2100-review-sql-queries-for-security-vulnerabilities"></a>CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança
 
@@ -33,23 +33,23 @@ ms.locfileid: "66744814"
 |NomeDoTipo|ReviewSqlQueriesForSecurityVulnerabilities|
 |CheckId|CA2100|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Define um método de <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriedade usando uma cadeia de caracteres que é criada a partir de um argumento de cadeia de caracteres para o método.
+Um método define a <xref:System.Data.IDbCommand.CommandText%2A?displayProperty=fullName> propriedade usando uma cadeia de caracteres que é criada a partir de um argumento de cadeia de caracteres para o método.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. Em um ataque de injeção de SQL, um usuário mal-intencionado fontes de entrada que altera o design de uma consulta em uma tentativa de danificar ou acesso não autorizado a banco de dados subjacente. Técnicas típicas incluem a injeção de uma aspa simples ou apóstrofe, que é o delimitador de literal de cadeia de caracteres SQL; dois traços, o que significa um comentário SQL; e um ponto e vírgula, que indica que um novo comando segue. Se a entrada do usuário deve fazer parte da consulta, use um dos seguintes, listados por ordem de eficiência, reduzir o risco de ataque.
+Esta regra pressupõe que o argumento da cadeia de caracteres contenha a entrada do usuário. Uma cadeia de caracteres de comando SQL criada com base na entrada do usuário é vulnerável a ataques de injeção SQL. Em um ataque de injeção de SQL, um usuário mal-intencionado fornece entrada que altera o design de uma consulta em uma tentativa de danificar ou obter acesso não autorizado ao banco de dados subjacente. As técnicas típicas incluem injeção de uma aspa simples ou apóstrofo, que é o delimitador de cadeia de caracteres literal SQL; dois traços, que representa um comentário SQL; e um ponto e vírgula, que indica que um novo comando segue. Se a entrada do usuário precisar fazer parte da consulta, use um dos itens a seguir, listado em ordem de eficácia, para reduzir o risco de ataque.
 
 - Use um procedimento armazenado.
 
 - Use uma cadeia de caracteres de comando com parâmetros.
 
-- Valide a entrada do usuário para o tipo e o conteúdo antes de compilar a cadeia de caracteres de comando.
+- Valide a entrada do usuário para o tipo e o conteúdo antes de criar a cadeia de caracteres de comando.
 
-Os seguintes tipos de .NET implementam o <xref:System.Data.IDbCommand.CommandText%2A> propriedade ou fornecer construtores que defina a propriedade usando um argumento de cadeia de caracteres.
+Os seguintes tipos .net implementam <xref:System.Data.IDbCommand.CommandText%2A> a propriedade ou fornecem construtores que definem a propriedade usando um argumento de cadeia de caracteres.
 
 - <xref:System.Data.Odbc.OdbcCommand?displayProperty=fullName> e <xref:System.Data.Odbc.OdbcDataAdapter?displayProperty=fullName>
 
@@ -66,7 +66,7 @@ int x = 10;
 string query = "SELECT TOP " + x.ToString() + " FROM Table";
 ```
 
-A regra é violada porque um usuário mal-intencionado pode substituir o método ToString ().
+A regra foi violada porque um usuário mal-intencionado pode substituir o método ToString ().
 
 A regra também é violada quando ToString é usado implicitamente.
 
@@ -81,11 +81,11 @@ Para corrigir uma violação dessa regra, use uma consulta parametrizada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se o texto do comando não contiver qualquer entrada do usuário.
+É seguro suprimir um aviso dessa regra se o texto do comando não contiver nenhuma entrada do usuário.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método `UnsafeQuery`, que viola a regra e um método, `SaferQuery`, que satisfaz a regra usando uma cadeia de caracteres de comando com parâmetros.
+O exemplo a seguir mostra um método `UnsafeQuery`,, que viola a regra e um método, `SaferQuery`que satisfaz a regra usando uma cadeia de caracteres de comando com parâmetros.
 
 [!code-vb[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/VisualBasic/ca2100-review-sql-queries-for-security-vulnerabilities_1.vb)]
 [!code-csharp[FxCop.Security.ReviewSqlQueries#1](../code-quality/codesnippet/CSharp/ca2100-review-sql-queries-for-security-vulnerabilities_1.cs)]

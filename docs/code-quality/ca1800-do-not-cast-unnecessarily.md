@@ -17,12 +17,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 942a9911d0dadbf5f130344735ca9aa504cb71fd
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 85d168e97f422a3965096a334cb2a448406604f9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921591"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233836"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Não converta sem necessidade
 
@@ -31,7 +31,7 @@ ms.locfileid: "68921591"
 |NomeDoTipo|DoNotCastUnnecessarily|
 |CheckId|CA1800|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um método executa conversões duplicadas em um de seus argumentos ou variáveis locais.
@@ -50,7 +50,7 @@ Para corrigir uma violação dessa regra, modifique a implementação do método
 É seguro suprimir um aviso dessa regra ou ignorar completamente a regra, se o desempenho não for uma preocupação.
 
 ## <a name="examples"></a>Exemplos
-O exemplo a seguir mostra um método que viola a regra usando o C# `is` operador. Um segundo método satisfaz a regra, substituindo o `is` operador por um teste em relação ao resultado `as` do operador, o que diminui o número de operações de conversão por iteração de dois para um. Um terceiro método também satisfaz a regra usando `is` with Matching [Pattern](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para criar uma variável do tipo desejado se a conversão de tipo for bem sucedido.
+O exemplo a seguir mostra um método que viola a regra usando o C# `is` operador. Um segundo método satisfaz a regra, substituindo o `is` operador por um teste em relação ao resultado `as` do operador, o que diminui o número de operações de conversão por iteração de dois para um. Um terceiro método também satisfaz a regra usando `is` with [Matching Pattern](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para criar uma variável do tipo desejado se a conversão de tipo for bem sucedido.
 
 [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 

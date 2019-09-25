@@ -7,12 +7,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 478efc77bd1fb14f6241e026cfe280355a90746a
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 27570e282c230d4bec47e70aa1bcdd053b75597c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919450"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236752"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de aproveitar ao máximo a SAL (linguagem de anotação de código-fonte) e evitar alguns problemas comuns.
@@ -238,11 +238,11 @@ Neste exemplo, `_Out_opt_` diz que o ponteiro pode ser nulo como parte da pré-c
 
 ## <a name="see-also"></a>Consulte também
 
-[Usando anotações de sal para reduzir os defeitos de código C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
-[ compreendendo o sal](../code-quality/understanding-sal.md)
-[anotando os parâmetros de função de anotações e os valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)
-[  anotando comportamento da função](../code-quality/annotating-function-behavior.md)
-[Anotando structs e classes](../code-quality/annotating-structs-and-classes.md)
-[Anotando o comportamentode bloqueio](../code-quality/annotating-locking-behavior.md)
-[especificando quando e onde uma anotação aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)
-[funções intrínsecas](../code-quality/intrinsic-functions.md)
+[Usando anotações de SAL para reduzir defeitos de código do C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)  
+[Noções básicas de SAL](../code-quality/understanding-sal.md)  
+[Anotando parâmetros de função e valores de retorno](../code-quality/annotating-function-parameters-and-return-values.md)  
+[Anotando o comportamento da função](../code-quality/annotating-function-behavior.md)  
+[Anotando estruturas e classes](../code-quality/annotating-structs-and-classes.md)  
+[Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)  
+[Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+[Funções intrínsecas](../code-quality/intrinsic-functions.md)  

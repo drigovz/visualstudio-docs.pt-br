@@ -5,16 +5,24 @@ author: therealjohn
 ms.author: johmil
 ms.date: 06/18/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
-ms.openlocfilehash: 4eec080655c0f47823810dfd689fe49a6f7e43eb
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
-ms.translationtype: HT
+ms.openlocfilehash: c8b6bddac92a9ec6b40ba08ebcdc3fe3577b0bc8
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872343"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211477"
 ---
 # <a name="xamarin-mobile-app-development"></a>Desenvolvimento de aplicativos móveis do Xamarin
 
 O suporte de primeira classe para o [Xamarin](/xamarin) permite que você desenvolva experiências nativas avançadas para Android, macOS, iOS, tvOS e watchOS. Os aplicativos de plataforma cruzada Xamarin.Forms o ajudam a compartilhar o código de interface do usuário baseado em XAML entre macOS, iOS e Android sem limitar o acesso à funcionalidade nativa.
+
+## <a name="xamarinforms"></a>Xamarin.Forms
+
+O Hot recarregamento de XAML para Xamarin. Forms é integrado ao Visual Studio para Mac na versão 8,3 e posteriores. Com esse recurso, as alterações habilitadas são refletidas instantaneamente em seu aplicativo em execução sempre que você salvar o arquivo.
+
+O Hot recarregamento de XAML pode ser habilitado marcando a caixa de seleção **habilitar o WebLoad do xamarin** no **Visual Studio > preferências > projetos > Xamarin Hot recarregar**.
+
+Para obter mais informações sobre a recarga a quente, consulte o [Guia de Hot recarregamento de XAML para Xamarin. Forms](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/xaml/hot-reload) na documentação.
 
 ## <a name="android"></a>Android
 

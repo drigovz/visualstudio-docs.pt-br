@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: f71e17eae1e728ab755d048daee2c0d156425964
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
-ms.translationtype: HT
+ms.openlocfilehash: fef50748942aaa800cf1181e4c8f8b8a030f99ee
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747591"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211308"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Desenvolver com o Visual F# no Visual Studio
 
@@ -146,7 +146,7 @@ A seguinte tabela resume os recursos disponíveis ao depurar o código F#:
 |Entrar em|Permite que você avance a execução e passe para qualquer chamada de função.|Sim|
 |Depuração Parcial|Permite que você avance a execução no registro de ativação atual e passe por qualquer chamada de função.|Sim|
 
-Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.md).
+Para obter informações gerais sobre o depurador do Visual Studio, confira [Depuração no Visual Studio](../debugger/index.yml).
 
 ## <a name="additional-tools"></a>Ferramentas adicionais
 

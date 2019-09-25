@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a4b80b8ede1ab2b8d858ed7378f318f2eebe5fa
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 1d001dc306bbb225c4ecc1c0f17bf46619e2d0a7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237257"
 ---
 # <a name="ca3008-review-code-for-xpath-injection-vulnerabilities"></a>CA3008: Examinar código quanto a vulnerabilidades de injeção de XPath
 
@@ -24,39 +24,39 @@ ms.locfileid: "65841532"
 |NomeDoTipo|ReviewCodeForXPathInjectionVulnerabilities|
 |CheckId|CA3008|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis atinge uma consulta XPath.
+A entrada de solicitação HTTP potencialmente não confiável alcança uma consulta XPath.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de ataques de injeção de XPath. Construir consultas de XPath usando entradas não confiáveis pode permitir que um invasor maliciosamente manipular a consulta para retornar um resultado não intencional e, possivelmente, divulgue o conteúdo do XML consultado.
+Ao trabalhar com entrada não confiável, lembre-se de ataques de injeção de XPath. A construção de consultas XPath usando a entrada não confiável pode permitir que um invasor manipule a consulta de forma mal-intencionada para retornar um resultado indesejado e possivelmente divulgar o conteúdo do XML consultado.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo uma expressão XPath.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que executa uma consulta XPath, essa regra não gerará um aviso.
+Essa regra tenta encontrar entrada de solicitações HTTP alcançando uma expressão XPath.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que executa uma consulta XPath, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Algumas abordagens para corrigir as vulnerabilidades de injeção de XPath incluem:
+Algumas abordagens para corrigir vulnerabilidades de injeção de XPath incluem:
 
-- Não construa consultas XPath de entrada do usuário.
-- Valide que a entrada contém apenas um conjunto seguro de caracteres.
+- Não construa consultas XPath da entrada do usuário.
+- Valide se a entrada contém apenas um conjunto de caracteres seguro.
 - Aspas de escape.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você souber que você tiver validado a entrada para ficar seguro, é okey suprimir este aviso.
+Se você souber que validou a entrada para ser seguro, não haverá problema em suprimir esse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2643ff7cb8ce401462be7e5c1e52d5f985896f3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546265"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234317"
 ---
 # <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Cadeias de caracteres de recurso devem ser escritas corretamente
 
@@ -28,7 +28,7 @@ ms.locfileid: "62546265"
 |NomeDoTipo|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -36,28 +36,28 @@ Uma cadeia de caracteres de recurso contém uma ou mais palavras não reconhecid
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Esta regra analisa a cadeia de caracteres de recurso em palavras (criar tokens de palavras compostas) e verifica a ortografia de cada palavra/token. Para obter informações sobre o algoritmo de análise, consulte [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Essa regra analisa a cadeia de caracteres do recurso em palavras (tokening de palavras compostas) e verifica a ortografia de cada palavra/token. Para obter informações sobre o algoritmo de análise, [consulte CA1704: Os identificadores devem ser escritos](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)corretamente.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use palavras completas que estão escritas corretamente ou adicioná-las a um dicionário personalizado. Para obter informações sobre como usar dicionários personalizados, consulte [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
+Para corrigir uma violação dessa regra, use palavras completas que estejam grafadas corretamente ou adicione as palavras a um dicionário personalizado. Para obter informações sobre como usar dicionários personalizados, [consulte CA1704: Os identificadores devem ser escritos](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)corretamente.
 
 ## <a name="change-the-dictionary-language"></a>Alterar o idioma do dicionário
 
-Por padrão, a versão em inglês (en) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, você poderá fazê-lo com a adição de um dos seguintes atributos para seus *AssemblyInfo.cs* ou *AssemblyInfo* arquivo:
+Por padrão, a versão em inglês (EN) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, poderá fazê-lo adicionando um dos seguintes atributos ao seu arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* :
 
-- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura, se os recursos estiverem em um assembly satélite.
-- Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar o *cultura neutra* do seu assembly, se os recursos estiverem no mesmo assembly que seu código.
+- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se seus recursos estiverem em um assembly satélite.
+- Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar a *cultura neutra* do assembly se seus recursos estiverem no mesmo assembly que o seu código.
 
 > [!IMPORTANT]
-> Se você definir a cultura como algo diferente de uma cultura com base em inglês, essa regra de análise de código é silenciosamente desabilitada.
+> Se você definir a cultura como algo diferente de uma cultura baseada em inglês, essa regra de análise de código será silenciosamente desabilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra. Corretamente as palavras escritas de reduzem o tempo necessário para aprender novas bibliotecas de software.
+Não suprima um aviso nessa regra. Palavras escritas corretamente reduzem o tempo necessário para aprender novas bibliotecas de software.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: Literais devem ter grafia correta](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: As palavras compostas da cadeia de recursos devem estar em maiúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: Os identificadores devem ser escritos corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: Os literais devem ser escritos corretamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba13514ca886ab822367bbd61aaebdc8527ec45
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6c5ca98219444515d01baf670489120238cb8dda
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545036"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232339"
 ---
 # <a name="ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors"></a>CA2132: Construtores padrão devem ser pelo menos tão críticos quanto construtores padrão do tipo base
 
@@ -24,28 +24,28 @@ ms.locfileid: "62545036"
 |NomeDoTipo|DefaultConstructorsMustHaveConsistentTransparency|
 |CheckId|CA2132|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 > [!NOTE]
-> Esse aviso só será aplicado ao código que está executando o CoreCLR (a versão do CLR que é específico para aplicativos web do Silverlight).
+> Esse aviso é aplicado somente ao código que está executando o CoreCLR (a versão do CLR que é específica para aplicativos Web do Silverlight).
 
 ## <a name="cause"></a>Causa
 
-O atributo de transparência do construtor padrão de uma classe derivada não é tão crítico quanto a transparência da classe base.
+O atributo Transparency do construtor padrão de uma classe derivada não é tão crítico quanto a transparência da classe base.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Tipos e membros que têm o <xref:System.Security.SecurityCriticalAttribute> não pode ser usado pelo código do aplicativo do Silverlight. Os tipos de segurança crítica e os membros só podem ser usados por código confiável no .NET Framework para a biblioteca de classes do Silverlight. Como uma construção pública ou protegida em uma classe derivada deve ter a mesma transparência maior que sua classe base, uma classe em um aplicativo não pode ser derivada de uma classe marcada como SecurityCritical.
+Tipos e membros que não podem <xref:System.Security.SecurityCriticalAttribute> ser usados pelo código do aplicativo do Silverlight. Os tipos de segurança crítica e os membros só podem ser usados por código confiável no .NET Framework para a biblioteca de classes do Silverlight. Como uma construção pública ou protegida em uma classe derivada deve ter a mesma transparência maior que sua classe base, uma classe em um aplicativo não pode ser derivada de uma classe marcada como SecurityCritical.
 
-Para o código de plataforma do CoreCLR, se um tipo base tem um construtor público ou protegido padrão não transparente, em seguida, o tipo derivado deve obedecer as regras de herança do construtor padrão. O tipo derivado também deve ter um construtor padrão e esse construtor deve ser pelo menos construtor crítica do padrão do tipo base.
+Para o código de plataforma do CoreCLR, se um tipo base tiver um construtor padrão público ou não Transparent protegido, o tipo derivado deverá obedecer às regras de herança de construtor padrão. O tipo derivado também deve ter um construtor padrão e esse construtor deve ser, pelo menos, como construtor padrão crítico do tipo base.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir a violação, remova o tipo ou não derivam de tipo não transparente de segurança.
+Para corrigir a violação, remova o tipo ou não derive do tipo de segurança não transparente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima avisos dessa regra. As violações dessa regra pelo código do aplicativo resultará no CoreCLR se recusando a carregar o tipo com um <xref:System.TypeLoadException>.
+Não suprimir avisos desta regra. As violações dessa regra pelo código do aplicativo resultarão na recusa do CoreCLR para carregar o tipo com um <xref:System.TypeLoadException>.
 
 ### <a name="code"></a>Código
 

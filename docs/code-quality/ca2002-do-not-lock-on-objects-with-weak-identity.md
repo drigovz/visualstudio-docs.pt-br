@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 054f809483cf2a9c4647370e2f69187795c5c203
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc4504e917daeadc93963c6d6870c00515a5065a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545261"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233169"
 ---
 # <a name="ca2002-do-not-lock-on-objects-with-weak-identity"></a>CA2002: Não bloquear objetos com identidade fraca
 
@@ -30,7 +30,7 @@ ms.locfileid: "62545261"
 |NomeDoTipo|DoNotLockOnObjectsWithWeakIdentity|
 |CheckId|CA2002|
 |Categoria|Microsoft.Reliability|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -40,11 +40,11 @@ Um thread tenta adquirir um bloqueio em um objeto que tem uma identidade fraca.
 
 Diz-se que um objeto tem uma identidade fraca quando puder ser acessado diretamente em todos os limites de domínio do aplicativo. Um thread que tente adquirir um bloqueio em um objeto com uma identidade fraca pode ser bloqueado por um segundo thread em um domínio de aplicativo diferente com um bloqueio no mesmo objeto.
 
-Os seguintes tipos tem uma identidade fraca e são sinalizados pela regra:
+Os tipos a seguir têm uma identidade fraca e são sinalizados pela regra:
 
 - <xref:System.String>
 
-- Matrizes de tipos de valor, incluindo [tipos integrais](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipos de ponto flutuante](/dotnet/csharp/language-reference/keywords/floating-point-types-table), e <xref:System.Boolean>.
+- Matrizes de tipos de valor, incluindo [tipos integrais](/dotnet/csharp/language-reference/keywords/integral-types-table), [tipos de ponto flutuante](/dotnet/csharp/language-reference/keywords/floating-point-types-table)e <xref:System.Boolean>.
 
 - <xref:System.MarshalByRefObject>
 
@@ -62,7 +62,7 @@ Os seguintes tipos tem uma identidade fraca e são sinalizados pela regra:
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use um objeto de um tipo que não está na lista na seção de descrição.
+Para corrigir uma violação dessa regra, use um objeto de um tipo que não esteja na lista na seção Descrição.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -83,5 +83,5 @@ O exemplo a seguir mostra alguns bloqueios de objeto que violam a regra.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [bloqueio de instrução (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Instrução Lock (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [Instrução SyncLock (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

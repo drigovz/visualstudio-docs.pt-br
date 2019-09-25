@@ -3,15 +3,15 @@ title: Incluindo um pacote NuGet no projeto
 description: Este documento aborda como incluir um pacote NuGet em um projeto usando Visual Studio para Mac. Ele explica a descoberta e download de um pacote, apresentando também os recursos de integração do IDE.
 author: jmatthiesen
 ms.author: jomatthi
-ms.date: 09/17/2019
+ms.date: 09/18/2019
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: conceptual
-ms.openlocfilehash: 22b2e07509403d8e19e3a3e920d45b064c2e51c0
-ms.sourcegitcommit: 541a0556958201ad6626bc8638406ad02640f764
+ms.openlocfilehash: 55b4691a7adb03d4ee8fd5e05e7bd9d7daa28f13
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71079517"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213692"
 ---
 # <a name="install-and-manage-nuget-packages-in-visual-studio-for-mac"></a>Instalar e gerenciar pacotes NuGet no Visual Studio para Mac
 
@@ -23,17 +23,17 @@ Para obter uma introdução ao uso do NuGet no Visual Studio para Mac [, consult
 
 ## <a name="find-and-install-a-package"></a>Localizar e instalar um pacote
 
-1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta**pacotes** se estiver usando um projeto Xamarin) na **painel de soluções** e selecione **adicionar pacotes**.
+1. Com um projeto aberto no Visual Studio para Mac, clique com o botão direito do mouse na pasta **dependências** (pasta**pacotes** se estiver usando um projeto Xamarin) na **painel de soluções** e selecione **gerenciar pacotes NuGet...** .
 
-    ![Ação de contexto Adicionar novo pacote NuGet](media/nuget-walkthrough-PackagesMenu.png)
+    ![Ação de contexto Adicionar novo pacote NuGet](media/nuget-walkthrough-packages-menu.png)
 
-2. Isso inicia a janela **Adicionar Pacotes**. Verifique se a lista suspensa origem no canto superior esquerdo da caixa de diálogo está definida como `nuget.org`.
+2. Isso inicia a janela **gerenciar pacotes NuGet** . Verifique se a lista suspensa origem no canto superior esquerdo da caixa de diálogo está definida como `nuget.org`.
 
-    ![Listar pacotes NuGet](media/nuget-walkthrough-AddPackages1.png)
+    ![Listar pacotes NuGet](media/nuget-walkthrough-add-packages1.png)
 
 3. Use a caixa de pesquisa no canto superior direito para localizar um pacote específico, como por exemplo `EntityFramework`. Quando você encontrar um pacote que deseja usar, selecione-o e clique no botão **Adicionar pacote** para iniciar a instalação.
 
-    ![Adicionar um pacote NuGet do Azure](media/nuget-walkthrough-AddPackages2.png)
+    ![Adicionar pacote NuGet do EntityFramework](media/nuget-walkthrough-add-packages2.png)
 
 4. Depois que o pacote for baixado, ele será adicionado ao seu projeto. A solução será alterada dependendo do tipo de projeto que você está editando:
 
@@ -43,7 +43,7 @@ Para obter uma introdução ao uso do NuGet no Visual Studio para Mac [, consult
     
     **Projetos do .NET Core**
 
-    As **dependências > nó NuGet** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
+    * As **dependências > nó NuGet** exibe cada pacote NuGet que você baixou. Você pode atualizar ou remover um pacote da lista.
 
 ## <a name="using-nuget-packages"></a>Usando pacotes NuGet
 
@@ -59,11 +59,11 @@ using Newtonsoft.Json;
 
 ## <a name="updating-packages"></a>Atualizando pacotes
 
-As atualizações de pacote podem ser feitas de uma só vez, clicando com o botão direito do mouse no nó de **dependências** (ou no nó **pacotes** para projetos do Xamarin) ou individualmente em cada componente.
+As atualizações de pacote podem ser feitas de uma só vez, clicando com o botão direito do mouse no nó de **dependências** (nó**pacotes** para projetos do Xamarin) ou individualmente em cada pacote. Quando uma nova versão de um pacote NuGet estiver disponível, um ícone de atualização ![aparecerá na seta](media/nuget-walkthrough-update-icon.png)para cima com círculo.
 
-Clique com o botão direito do mouse em **dependências** para acessar o menu de contexto:
+Clique com o botão direito do mouse em **dependências** para acessar o menu de contexto e escolha **Atualizar** para atualizar todos os pacotes:
 
-![Menu Pacotes](media/nuget-walkthrough-PackagesMenu.png)
+![Menu Pacotes](media/nuget-walkthrough-packages-menu-update.png)
 
 * **Gerenciar pacotes NuGet** – abre a janela para adicionar mais pacotes ao projeto.
 * **Atualizar** – Verifica o servidor de origem de cada pacote e baixa as versões mais recentes.

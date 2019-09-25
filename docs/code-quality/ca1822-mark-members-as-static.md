@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f25b74949c734921c313ae2cf00a2d217029e52
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 11f210b9d37f15b3ea92b92112e48eecd3c8b9e1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921382"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233416"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar membros como estáticos
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921382"
 |NomeDoTipo|MarkMembersAsStatic|
 |CheckId|CA1822|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita. Não separável – se você simplesmente alterar o membro para um membro de instância com `this` a palavra-chave.<br /><br /> Quebrando – se você alterar o membro de um membro de instância para um membro estático e ele estiver visível fora do assembly.|
+|Alteração significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita. Não separável – se você simplesmente alterar o membro para um membro de instância com a `this` palavra-chave.<br /><br /> Quebrando – se você alterar o membro de um membro de instância para um membro estático e ele estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
 Um membro que não acessa dados de instância não está marcado como estático (compartilhado em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).

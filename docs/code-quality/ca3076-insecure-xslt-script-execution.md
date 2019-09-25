@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f98b022aef49a4d98ad4864793aa55732f8de6c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1c6c5df0109a8cff3cefcc308ea27077ef0fbe03
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541084"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237072"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076: Execução de script XSLT não seguro
 
@@ -21,31 +21,31 @@ ms.locfileid: "62541084"
 |NomeDoTipo|InsecureXSLTScriptExecution|
 |CheckId|CA3076|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Se você executar maneira insegura extensível folhas de estilos XSLT (linguagem) em aplicativos .NET, o processador pode resolver referências URI não confiáveis que poderiam revelar informações confidenciais para invasores, levando a negação de serviço e entre sites os ataques. Para obter mais informações, consulte [XSLT segurança Considerations(.NET Guide)](/dotnet/standard/data/xml/xslt-security-considerations).
+Se você executar as transformações de linguagem de folhas de estilos extensível (XSLT) em aplicativos .NET de forma insegura, o processador poderá resolver referências de URI não confiáveis que poderiam divulgar informações confidenciais a invasores, levando à negação de serviço e a sites verdadeiros. Para obter mais informações, consulte [considerações de segurança do XSLT (guia. net)](/dotnet/standard/data/xml/xslt-security-considerations).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-**XSLT** é um padrão de World Wide Web Consortium (W3C) para transformar os dados XML. XSLT normalmente é usado para gravar as folhas de estilo para transformar dados XML em outros formatos, como HTML, texto de comprimento fixo, texto separado por vírgula ou outro formato XML. Embora proibidas por padrão, você pode optar por habilitá-la para seu projeto.
+O **XSLT** é um padrão World Wide Web CONSORTIUM (W3C) para transformar dados XML. Normalmente, o XSLT é usado para gravar folhas de estilo para transformar dados XML em outros formatos, como HTML, texto de comprimento fixo, texto separado por vírgula ou um formato XML diferente. Embora seja proibido por padrão, você pode optar por habilitá-lo para seu projeto.
 
-Para garantir que você não estiver expondo uma superfície de ataque, essa regra dispara sempre que o XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recebe a instâncias de combinação inseguro de <xref:System.Xml.Xsl.XsltSettings> e <xref:System.Xml.XmlResolver>, que permite o processamento de script mal-intencionado.
+Para garantir que você não esteja expondo uma superfície de ataque, essa regra é disparada sempre que XslCompiledTransform.<xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> recebe instâncias de combinação não seguras <xref:System.Xml.Xsl.XsltSettings> do <xref:System.Xml.XmlResolver>e, o que permite o processamento de script mal-intencionado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-- Substitua o argumento XsltSettings inseguro XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> ou, com uma instância que desabilitou a execução de script e a função do documento.
+- Substitua o argumento XsltSettings inseguro por XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> ou com uma instância que tenha desabilitado a função de documento e a execução de script.
 
-- Substitua os <xref:System.Xml.XmlResolver> argumento com null ou um <xref:System.Xml.XmlSecureResolver> instância.
+- Substitua o <xref:System.Xml.XmlResolver> argumento por um nulo ou <xref:System.Xml.XmlSecureResolver> uma instância.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.
+A menos que você tenha certeza de que a entrada é conhecida por ser de uma fonte confiável, não omita uma regra desse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violação que usa XsltSettings.TrustedXslt
+### <a name="violation-that-uses-xsltsettingstrustedxslt"></a>Violação que usa XsltSettings. TrustedXslt
 
 ```csharp
 using System.Xml;
@@ -66,7 +66,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solution-that-uses-xsltsettingsdefault"></a>Solução que usa XsltSettings.Default
+### <a name="solution-that-uses-xsltsettingsdefault"></a>Solução que usa XsltSettings. Default
 
 ```csharp
 using System.Xml;
@@ -87,7 +87,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violação de&mdash;documentar a execução de função e o script não está desabilitada
+### <a name="violationmdashdocument-function-and-script-execution-not-disabled"></a>Violação&mdash;de função de documento e execução de script não desabilitada
 
 ```csharp
 using System.Xml;
@@ -112,7 +112,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Solução&mdash;desabilitar a execução de função e script de documento
+### <a name="solutionmdashdisable-document-function-and-script-execution"></a>Solução&mdash;desabilite a execução de script e função de documento
 
 ```csharp
 using System.Xml;
@@ -141,4 +141,4 @@ namespace TestNamespace
 
 ## <a name="see-also"></a>Consulte também
 
-- [Considerações de segurança XSLT (guia do .NET)](/dotnet/standard/data/xml/xslt-security-considerations)
+- [Considerações de segurança XSLT (guia. NET)](/dotnet/standard/data/xml/xslt-security-considerations)

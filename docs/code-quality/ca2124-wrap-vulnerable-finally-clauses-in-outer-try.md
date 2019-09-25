@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c75c7c240f694b18caacefc0f9b1ee07f54faf36
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 0008767f7d37e2c088dad58a328b025f81090ad8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920795"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232446"
 ---
 # <a name="ca2124-wrap-vulnerable-finally-clauses-in-outer-try"></a>CA2124: Encapsular cláusulas finally vulneráveis em try externo
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920795"
 |NomeDoTipo|WrapVulnerableFinallyClausesInOuterTry|
 |CheckId|CA2124|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Nas versões 1,0 e 1,1 do .NET Framework, um método público ou protegido `try` contém um / `catch` / `finally` bloco. O `finally` bloco é exibido para redefinir o estado de segurança e não está `finally` incluído em um bloco.

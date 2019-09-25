@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 09/23/2019
+ms.date: 09/24/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: c2caed210edbed5f17d74ee78a55612aa0afa4cb
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 5871e782ee84e49762d26a925380ad481e3623d1
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186480"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211337"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -107,6 +107,12 @@ Para saber mais, confira a postagem no blog [Better multi-monitor experience wit
 **Novidades na 16.2**: Atualizamos o Gerenciador de Testes para fornecer melhor gerenciamento de conjuntos de testes grandes, filtragem mais fácil, comandos mais detectáveis, exibições de lista de reprodução com guias e colunas personalizáveis que permitem ajustar quais informações de testes são exibidas.
 
    ![Uma captura de tela que mostra os aprimoramentos da interface do usuário no Gerenciador de Testes](media/vs-2019/test-explorer-ui.png)
+
+### <a name="net-core"></a>.NET Core
+
+**Novidades em 16,3**: Incluímos o suporte para o .NET Core 3,0. Entre plataformas,&mdash;software livre e com suporte total da Microsoft. 
+
+Para obter mais informações, consulte a postagem no blog [anunciando o .NET Core 3,0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/) .
 
 ## <a name="collaborate"></a>Colaboração
 

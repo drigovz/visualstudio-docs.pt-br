@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca39cef1fb4f1bf1114673dd96a91a1ac8e105cc
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 68aada736b2a22b623502d8586415dc8024c2622
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68919871"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237060"
 ---
 # <a name="ca3077-insecure-processing-in-api-design-xml-document-and-xml-text-reader"></a>CA3077: Processamento não seguro no design de API, no documento XML e no leitor de texto XML
 
@@ -22,7 +22,7 @@ ms.locfileid: "68919871"
 |NomeDoTipo|InsecureDTDProcessingInAPIDesign|
 |CheckId|CA3077|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Ao criar uma API derivada de XMLDocument e XMLTextReader, lembre-se <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>de.  Usar instâncias DTDProcessing inseguras ao referenciar ou resolver fontes de entidade externas ou definir valores inseguros no XML pode levar à divulgação de informações.

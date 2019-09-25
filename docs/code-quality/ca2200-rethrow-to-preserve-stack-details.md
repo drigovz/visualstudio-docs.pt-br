@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 55c58f098616a5c3c2d6ad72f56e8eda51f689be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5cf7fc6e31b9250392fc3ea447a5b91225640a50
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62796839"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231904"
 ---
 # <a name="ca2200-rethrow-to-preserve-stack-details"></a>CA2200: Relançar para preservar detalhes da pilha
 
@@ -31,19 +31,19 @@ ms.locfileid: "62796839"
 |NomeDoTipo|RethrowToPreserveStackDetails|
 |CheckId|CA2200|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Uma exceção será gerada novamente e a exceção é especificada explicitamente no `throw` instrução.
+Uma exceção é relançada e a exceção é explicitamente especificada na `throw` instrução.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Depois que uma exceção é lançada, a parte das informações de que ele executa é o rastreamento de pilha. O rastreamento de pilha é uma lista de hierarquia de chamada de método que começa com o método que lança a exceção e termina com o método que captura a exceção. Se uma exceção é relançada, especificando a exceção no `throw` instrução, o rastreamento de pilha é reiniciado no método atual e a lista de chamadas de método entre o método original que gerou a exceção e o método atual for perdida. Para manter as informações de rastreamento de pilha original com a exceção, use o `throw` instrução sem especificar a exceção.
+Depois que uma exceção é lançada, parte das informações que ela transporta é o rastreamento de pilha. O rastreamento de pilha é uma lista da hierarquia de chamada de método que começa com o método que gera a exceção e termina com o método que captura a exceção. Se uma exceção for relançada especificando a exceção na `throw` instrução, o rastreamento de pilha será reiniciado no método atual e a lista de chamadas de método entre o método original que gerou a exceção e o método atual será perdido. Para manter as informações de rastreamento da pilha original com a exceção, `throw` use a instrução sem especificar a exceção.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, relançar a exceção sem especificar a exceção explicitamente.
+Para corrigir uma violação dessa regra, relance a exceção sem especificar a exceção explicitamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -51,7 +51,7 @@ Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método `CatchAndRethrowExplicitly`, que viola a regra e um método, `CatchAndRethrowImplicitly`, que satisfaz a regra.
+O exemplo a seguir mostra um método `CatchAndRethrowExplicitly`,, que viola a regra e um método, `CatchAndRethrowImplicitly`que satisfaz a regra.
 
 [!code-csharp[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/CSharp/ca2200-rethrow-to-preserve-stack-details_1.cs)]
 [!code-vb[FxCop.Usage.Rethrow#1](../code-quality/codesnippet/VisualBasic/ca2200-rethrow-to-preserve-stack-details_1.vb)]

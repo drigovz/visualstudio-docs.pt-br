@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c05c0b17bc9866edd7c07874be14578ed4cf884
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922554"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235478"
 ---
 # <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mova P/Invokes para a classe NativeMethods
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922554"
 |NomeDoTipo|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -52,7 +52,7 @@ Essas classes são declaradas`Friend`como `internal` (, em Visual Basic) e decla
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, mova o método para a classe **NativeMethods** apropriada. Para a maioria dos aplicativos, mover P/Invokes para uma nova classe denominada **NativeMethods** é suficiente.
 
-No entanto, se você estiver desenvolvendo bibliotecas para uso em outros aplicativos, considere definir duas outras classes que são chamadas **SafeNativeMethods** e **UnsafeNativeMethods**. Essas classes se assemelham à classe **NativeMethods** ; no entanto, elas são marcadas usando um atributo especial chamado **SuppressUnmanagedCodeSecurityAttribute**. Quando esse atributo é aplicado, o tempo de execução não executa uma movimentação de pilha completa para garantir que todos os chamadores tenham a permissão UnmanagedCode. O tempo de execução normalmente verifica essa permissão na inicialização. Como a verificação não é executada, ela pode melhorar muito o desempenho de chamadas para esses métodos não gerenciados, além de permitir o código que tem permissões limitadas para chamar esses métodos.
+No entanto, se você estiver desenvolvendo bibliotecas para uso em outros aplicativos, considere definir duas outras classes que são chamadas **SafeNativeMethods** e **UnsafeNativeMethods**. Essas classes se assemelham à classe **NativeMethods** ; no entanto, elas são marcadas usando um atributo especial chamado **SuppressUnmanagedCodeSecurityAttribute**. Quando esse atributo é aplicado, o tempo de execução não executa uma movimentação de pilha completa para garantir que todos os chamadores tenham a permissão **UnmanagedCode** . O tempo de execução normalmente verifica essa permissão na inicialização. Como a verificação não é executada, ela pode melhorar muito o desempenho de chamadas para esses métodos não gerenciados, além de permitir o código que tem permissões limitadas para chamar esses métodos.
 
 No entanto, você deve usar esse atributo com muito cuidado. Ela poderá ter implicações de segurança sérias se ela for implementada incorretamente.
 
@@ -70,7 +70,7 @@ O exemplo a seguir declara um método que viola essa regra. Para corrigir a viol
 ## <a name="nativemethods-example"></a>Exemplo de NativeMethods
 
 ### <a name="description"></a>Descrição
-Como a classe **NativeMethods** não deve ser marcada usando **SuppressUnmanagedCodeSecurityAttribute**, P/Invokes que são colocados nela exigirão permissão UnmanagedCode. Como a maioria dos aplicativos é executada a partir do computador local e executada com confiança total, normalmente isso não é um problema. No entanto, se você estiver desenvolvendo bibliotecas reutilizáveis, considere definir uma classe **SafeNativeMethods** ou **UnsafeNativeMethods** .
+Como a classe **NativeMethods** não deve ser marcada usando **SuppressUnmanagedCodeSecurityAttribute**, P/Invokes que são colocados nela exigirão permissão **UnmanagedCode** . Como a maioria dos aplicativos é executada a partir do computador local e executada com confiança total, normalmente isso não é um problema. No entanto, se você estiver desenvolvendo bibliotecas reutilizáveis, considere definir uma classe **SafeNativeMethods** ou **UnsafeNativeMethods** .
 
 O exemplo a seguir mostra um método de **interação. Beep** que encapsula a função **MessageBeep** de user32. dll. O P/Invoke **MessageBeep** é colocado na classe **NativeMethods** .
 
@@ -83,7 +83,7 @@ O exemplo a seguir mostra um método de **interação. Beep** que encapsula a fu
 ### <a name="description"></a>Descrição
 Os métodos P/Invoke que podem ser expostos com segurança a qualquer aplicativo e que não têm nenhum efeito colateral devem ser colocados em uma classe denominada **SafeNativeMethods**. Você não precisa solicitar permissões e não precisa pagar muita atenção para onde elas são chamadas.
 
-O exemplo a seguir mostra uma propriedade **Environment.** semique encapsula a função ObterContagemMarcaEscala de Kernel32. dll.
+O exemplo a seguir mostra uma propriedade **Environment.** semique **encapsula a função ObterContagemMarcaEscala de** Kernel32. dll.
 
 ### <a name="code"></a>Código
 [!code-vb[FxCop.Design.NativeMethodsSafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_3.vb)]
@@ -94,7 +94,7 @@ O exemplo a seguir mostra uma propriedade **Environment.** semique encapsula a f
 ### <a name="description"></a>Descrição
 Métodos P/Invoke que não podem ser chamados com segurança e que podem causar efeitos colaterais devem ser colocados em uma classe denominada **UnsafeNativeMethods**. Esses métodos devem ser verificados rigorosamente para garantir que eles não sejam expostos ao usuário involuntariamente. A regra [CA2118: Examine o uso](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) do SuppressUnmanagedCodeSecurityAttribute pode ajudar com isso. Como alternativa, os métodos devem ter outra permissão exigida em vez de **UnmanagedCode** ao usá-los.
 
-O exemplo a seguir mostra um método **cursor. Hide** que encapsula a função de addcursor de user32. dll.
+O exemplo a seguir mostra um método **cursor. Hide** que encapsula a função de **addcursor** de user32. dll.
 
 ### <a name="code"></a>Código
 [!code-vb[FxCop.Design.NativeMethodsUnsafe#1](../code-quality/codesnippet/VisualBasic/ca1060-move-p-invokes-to-nativemethods-class_4.vb)]

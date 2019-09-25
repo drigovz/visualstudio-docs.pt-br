@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bff3ccdb9120a1964f5c55e2d533406eedf01a88
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4aecd052e86a4c0366a1a43cb985ad50ab8862d8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540840"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236958"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350: Não usar algoritmos de criptografia fracos
 
@@ -22,22 +22,22 @@ ms.locfileid: "62540840"
 |NomeDoTipo|DoNotUseWeakCryptographicAlgorithms|
 |CheckId|CA5350|
 |Categoria|Microsoft.Cryptography|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 > [!NOTE]
-> Esse aviso foi atualizado pela última vez em novembro de 2015.
+> Esse aviso foi atualizado pela última vez em 2015 de novembro.
 
 ## <a name="cause"></a>Causa
 
-Algoritmos de criptografia, como <xref:System.Security.Cryptography.TripleDES> e, como os algoritmos de hash <xref:System.Security.Cryptography.SHA1> e <xref:System.Security.Cryptography.RIPEMD160> são considerados fracos.
+Os algoritmos de <xref:System.Security.Cryptography.TripleDES> criptografia, como e os algoritmos <xref:System.Security.Cryptography.RIPEMD160> de hash <xref:System.Security.Cryptography.SHA1> , como e são considerados fracos.
 
-Esses algoritmos de criptografia não oferecem tanta garantia de segurança como equivalentes mais modernas. Criptografia de algoritmos de hash <xref:System.Security.Cryptography.SHA1> e <xref:System.Security.Cryptography.RIPEMD160> fornecem menos resistência a colisão de mais moderno de algoritmos de hash. O algoritmo de criptografia <xref:System.Security.Cryptography.TripleDES> fornece menos bits de segurança que algoritmos de criptografia mais modernos.
+Esses algoritmos de criptografia não fornecem tanta garantia de segurança quanto as contrapartes mais modernas. Algoritmos <xref:System.Security.Cryptography.SHA1> de hash criptográfico <xref:System.Security.Cryptography.RIPEMD160> e fornecem menos resistência à colisão que os mais modernos algoritmos de hash. O algoritmo <xref:System.Security.Cryptography.TripleDES> de criptografia fornece menos bits de segurança do que mais algoritmos de criptografia modernos.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Algoritmos de criptografia fraca e funções de hash são usadas atualmente por uma série de motivos, mas não deve ser usados para garantir a confidencialidade dos dados que eles protegem.
+Algoritmos de criptografia fracos e funções de hash são usados hoje por vários motivos, mas não devem ser usados para garantir a confidencialidade dos dados que eles protegem.
 
-A regra dispara quando ele localiza o 3DES, SHA1 ou RIPEMD160 algoritmos no código e gera um aviso ao usuário.
+A regra é disparada quando encontra algoritmos 3DES, SHA1 ou RIPEMD160 no código e gera um aviso para o usuário.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -45,15 +45,15 @@ Use opções criptograficamente mais fortes:
 
 - Para criptografia TripleDES, use <xref:System.Security.Cryptography.Aes> criptografia.
 
-- Para funções de hash SHA1 ou RIPEMD160, use os dos [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) família (por exemplo, <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
+- Para funções de hash SHA1 ou RIPEMD160, use aquelas na família [SHA-2](/windows/desktop/SecCrypto/hash-and-signature-algorithms) (por exemplo <xref:System.Security.Cryptography.SHA512>, <xref:System.Security.Cryptography.SHA384>, <xref:System.Security.Cryptography.SHA256>).
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Suprima um aviso nessa regra, quando o nível de proteção necessário para os dados não requer uma garantia de segurança.
+Suprimir um aviso dessa regra quando o nível de proteção necessário para os dados não exigir uma garantia de segurança.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-No momento da redação deste artigo, o exemplo de pseudocódigo a seguir ilustra o padrão de detectadas por essa regra.
+No momento da redação deste artigo, o exemplo de pseudocódigo a seguir ilustra o padrão detectado por essa regra.
 
 ### <a name="sha-1-hashing-violation"></a>Violação de hash SHA-1
 
@@ -71,7 +71,7 @@ using System.Security.Cryptography;
 var hashAlg = SHA256.Create();
 ```
 
-### <a name="ripemd160-hashing-violation"></a>RIPEMD160 Violação de hash
+### <a name="ripemd160-hashing-violation"></a>Violação de hash RIPEMD160
 
 ```csharp
 using System.Security.Cryptography;

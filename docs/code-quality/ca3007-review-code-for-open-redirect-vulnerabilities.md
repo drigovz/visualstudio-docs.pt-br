@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e60d0fad1262138b57f079485bc7455e55c7ec25
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 0226c0e2e66a6543b81cd8ee674a743766b65f3e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841339"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237267"
 ---
 # <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007: Examinar código quanto a vulnerabilidades de redirecionamento aberto
 
@@ -24,41 +24,41 @@ ms.locfileid: "65841339"
 |NomeDoTipo|ReviewCodeForOpenRedirectVulnerabilities|
 |CheckId|CA3007|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis atinge um redirecionamento de resposta HTTP.
+A entrada de solicitação HTTP potencialmente não confiável atinge um redirecionamento de resposta HTTP.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de vulnerabilidades de redirecionamento aberto. Um invasor pode explorar uma vulnerabilidade de redirecionamento aberto para usar seu site para dar a aparência de uma URL legítimos, mas redirecionar um visitante insuspeito um phishing ou outra página da Web mal-intencionadas.
+Ao trabalhar com entrada não confiável, lembre-se de vulnerabilidades de redirecionamento abertas. Um invasor pode explorar uma vulnerabilidade de redirecionamento aberto para usar seu site para dar a aparência de uma URL legítima, mas redirecionar um visitante dessuspeito para um phishing ou outra página da Web mal-intencionada.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo uma URL de redirecionamento HTTP.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que responde com um redirecionamento HTTP, essa regra não gerará um aviso.
+Essa regra tenta localizar entrada de solicitações HTTP que atingem uma URL de redirecionamento HTTP.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que responde com um redirecionamento HTTP, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Algumas abordagens para a correção de vulnerabilidades de redirecionamento aberto incluem:
+Algumas abordagens para corrigir vulnerabilidades de redirecionamento aberto incluem:
 
 - Não permita que os usuários iniciem redirecionamentos.
-- Não permita que os usuários especifiquem a qualquer parte da URL em um cenário de redirecionamento.
-- Restringir redireciona para um predefinido "lista de permissões" de URLs.
+- Não permita que os usuários especifiquem qualquer parte da URL em um cenário de redirecionamento.
+- Restringir redireciona para uma "lista de permissões" predefinida de URLs.
 - Validar URLs de redirecionamento.
-- Se aplicável, considere usar uma página de aviso de isenção quando os usuários estão sendo redirecionados fora do seu site.
+- Se aplicável, considere usar uma página de aviso de isenção de responsabilidade quando os usuários estiverem sendo redirecionados para fora do seu site.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você souber que você tiver validado a entrada para ser restrito a URLs pretendidas, é okey suprimir este aviso.
+Se você souber que validou a entrada para ser restrita às URLs pretendidas, não haverá problema em suprimir esse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

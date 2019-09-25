@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d972198898dd1a4cafa5280c129db38bb3e4982
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 704972127130cc7be991213249ff41212fa40676
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921294"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233264"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903: Usar apenas a API da estrutura de destino
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921294"
 |NomeDoTipo|UseOnlyApiFromTargetedFramework|
 |CheckId|CA1903|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebra-quando acionada na assinatura de um membro ou tipo visível externamente.<br /><br /> Não separável – quando disparado no corpo de um método.|
+|Alteração significativa|Quebra-quando acionada na assinatura de um membro ou tipo visível externamente.<br /><br /> Não separável – quando disparado no corpo de um método.|
 
 ## <a name="cause"></a>Causa
 Um membro ou tipo está usando um membro ou tipo que foi introduzido em um service pack que não foi incluído com a estrutura de destino do projeto.

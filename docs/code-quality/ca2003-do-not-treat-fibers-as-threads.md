@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8faaf3c6557065188c795d75ea9bbe4e78998709
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9f5e4e7eb28207cb37824b23acbbac02b6df380d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806981"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233142"
 ---
 # <a name="ca2003-do-not-treat-fibers-as-threads"></a>CA2003: Não tratar fibras como threads
 
@@ -28,20 +28,20 @@ ms.locfileid: "62806981"
 |NomeDoTipo|DoNotTreatFibersAsThreads|
 |CheckId|CA2003|
 |Categoria|Microsoft.Reliability|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um thread gerenciado está sendo tratado como um thread do Win32.
+Um thread gerenciado está sendo tratado como um Thread Win32.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Não pressuponha que um thread gerenciado é um thread do Win32. é uma fibra. O common language runtime (CLR) executa os threads gerenciados como fibras no contexto de threads reais que são de propriedade de SQL. Esses threads podem ser compartilhados entre AppDomains e até mesmo bancos de dados no processo do SQL Server. Usando gerenciado funciona o armazenamento local de thread, mas não pode usar o armazenamento local de thread não gerenciado ou supor que seu código será executado novamente no thread atual do sistema operacional. Não altere as configurações como a localidade do thread. Não chame CreateCriticalSection ou CreateMutex via P/Invoke porque eles requerem que o thread que entra em um bloqueio também deve sair do bloqueio. Porque o thread que entra em um bloqueio não sair de um bloqueio ao usar fibras, mutexes e seções críticas do Win32 são inúteis no SQL. Com segurança você pode usar a maioria do estado em um gerenciado <xref:System.Threading.Thread> objeto, incluindo o armazenamento local de thread gerenciado e a cultura de interface do usuário do usuário atual do thread. No entanto, para motivos de modelo de programação, você não poderá alterar a cultura atual de um thread quando você usa o SQL. Essa limitação será imposta por meio de uma nova permissão.
+Não presuma que um thread gerenciado seja um Thread Win32; é uma fibra. O Common Language Runtime (CLR) executa threads gerenciados como fibras no contexto de threads reais que são de Propriedade do SQL. Esses threads podem ser compartilhados entre AppDomains e até mesmo bancos de dados no processo de SQL Server. O uso do armazenamento local de threads gerenciados funciona, mas você não pode usar o armazenamento local de thread não gerenciado ou supor que seu código será executado no thread do sistema operacional atual novamente. Não altere as configurações, como a localidade do thread. Não chame CreateCriticalSection ou CreateMutex via P/Invoke porque eles exigem que o thread que entra em um bloqueio também deva sair do bloqueio. Como o thread que entra em um bloqueio não sai de um bloqueio quando você usa fibras, as seções críticas e mutexes do Win32 são inúteis no SQL. Você pode usar com segurança a maior parte do estado em um <xref:System.Threading.Thread> objeto gerenciado, incluindo o armazenamento local de threads gerenciados e a cultura da interface do usuário (IU) atual do thread. No entanto, para fins de modelo de programação, você não poderá alterar a cultura atual de um thread ao usar o SQL. Essa limitação será imposta por meio de uma nova permissão.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Examine o uso de threads e altere seu código adequadamente.
+Examine seu uso de threads e altere seu código de acordo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima essa regra.
+Não suprimir esta regra.
