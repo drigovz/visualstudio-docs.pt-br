@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 35e41301dcf0a1358b6d063ce557212915b5f591
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 986607d7f42f49c99396bbb021c48bad549930c9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841432"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237289"
 ---
 # <a name="ca3006-review-code-for-process-command-injection-vulnerabilities"></a>CA3006: Examinar código quanto a vulnerabilidades de injeção de comando de processo
 
@@ -24,36 +24,36 @@ ms.locfileid: "65841432"
 |NomeDoTipo|ReviewCodeForProcessCommandInjectionVulnerabilities|
 |CheckId|CA3006|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis atinge um comando de processo.
+A entrada de solicitação HTTP potencialmente não confiável atinge um comando de processo.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de ataques de injeção de comando. Um ataque de injeção de comando pode executar comandos mal-intencionados no sistema operacional subjacente, comprometer a segurança e a integridade do seu servidor.
+Ao trabalhar com entrada não confiável, lembre-se dos ataques de injeção de comando. Um ataque de injeção de comando pode executar comandos mal-intencionados no sistema operacional subjacente, comprometendo a segurança e a integridade do servidor.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo um comando de processo.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que inicia um processo, essa regra não gerará um aviso.
+Essa regra tenta localizar entradas de solicitações HTTP que chegam a um comando de processo.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que inicia um processo, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
 - Se possível, evite iniciar processos com base na entrada do usuário.
-- Valide a entrada em relação a um conjunto conhecido de seguro de caracteres e comprimento.
+- Validar a entrada em relação a um conjunto seguro de caracteres e comprimento conhecidos.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você souber que a entrada foi validada ou escape para ficar seguro, é seguro suprimir este aviso.
+Se você souber que a entrada foi validada ou escapada para ser segura, será seguro suprimir esse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

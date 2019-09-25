@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 675206bb58e27110af79c46b1d61e9489f7661f2
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 1838d7e57b841c932d95006d1ff33972dd7a1a1f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766089"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231604"
 ---
 # <a name="ca2213-disposable-fields-should-be-disposed"></a>CA2213: Campos descartáveis devem ser descartados
 
@@ -28,7 +28,7 @@ ms.locfileid: "70766089"
 |NomeDoTipo|DisposableFieldsShouldBeDisposed|
 |CheckId|CA2213|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 

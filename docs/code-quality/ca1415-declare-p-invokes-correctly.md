@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5cc12d5d0a62f8d2530f13fcf860aba4e118ca4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 99274abee2c05a1bd33e34c9eb02cc928c1b54b0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921852"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234621"
 ---
 # <a name="ca1415-declare-pinvokes-correctly"></a>CA1415: Declarar P/Invokes corretamente
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921852"
 |NomeDoTipo|DeclarePInvokesCorrectly|
 |CheckId|CA1415|
 |Categoria|Microsoft. Interoperability|
-|Alteração Significativa|Não separável – se o P/Invoke que declara o parâmetro não puder ser visto fora do assembly. Quebra-se o P/Invoke que declara o parâmetro pode ser visto fora do assembly.|
+|Alteração significativa|Não separável – se o P/Invoke que declara o parâmetro não puder ser visto fora do assembly. Quebra-se o P/Invoke que declara o parâmetro pode ser visto fora do assembly.|
 
 ## <a name="cause"></a>Causa
 Um método de invocação de plataforma está declarado incorretamente.

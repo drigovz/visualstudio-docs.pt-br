@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e8d47b73009e0bd742c989ddc0311644453e5d9
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 22e62a1e3209399be4b10a3ec28db4afdd6f0f20
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921861"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234668"
 ---
 # <a name="ca1414-mark-boolean-pinvoke-arguments-with-marshalas"></a>CA1414: Marcar argumentos P/Invoke boolianos com MarshalAs
 
@@ -32,7 +32,7 @@ ms.locfileid: "68921861"
 |NomeDoTipo|MarkBooleanPInvokeArgumentsWithMarshalAs|
 |CheckId|CA1414|
 |Categoria|Microsoft. Interoperability|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Uma declaração de método de invocação <xref:System.Boolean?displayProperty=fullName> de plataforma inclui um parâmetro ou <xref:System.Runtime.InteropServices.MarshalAsAttribute?displayProperty=fullName> valor de retorno, mas o atributo não é aplicado ao parâmetro ou valor de retorno.

@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b66e28804e85b04b1492a20828c42a9b5efd3cf8
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 42808b3961b18a23f594800f9d0782c908c9b1ba
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841047"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237188"
 ---
 # <a name="ca3012-review-code-for-regex-injection-vulnerabilities"></a>CA3012: Examinar código quanto a vulnerabilidades de injeção de regex
 
@@ -24,40 +24,40 @@ ms.locfileid: "65841047"
 |NomeDoTipo|ReviewCodeForRegexInjectionVulnerabilities|
 |CheckId|CA3012|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis atinge uma expressão regular.
+A entrada de solicitação HTTP potencialmente não confiável atinge uma expressão regular.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de ataques de injeção de regex. Um invasor pode usar a injeção de regex de maneira mal-intencionada modificar uma expressão regular, para tornar o regex corresponderem aos resultados não intencionais ou fazer com que o regex consomem CPU excessiva, resultando em um ataque de negação de serviço.
+Ao trabalhar com entrada não confiável, lembre-se dos ataques de injeção de Regex. Um invasor pode usar a injeção de Regex para modificar uma expressão regular de forma mal-intencionada, para fazer com que o Regex coincida com resultados indesejados ou para fazer com que o Regex consuma CPU excessiva, resultando em um ataque de negação de serviço.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo uma expressão regular.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que cria uma expressão regular, essa regra não gerará um aviso.
+Essa regra tenta localizar entradas de solicitações HTTP que chegam a uma expressão regular.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que cria uma expressão regular, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Algumas mitigações contra injeções de regex incluem:
+Algumas atenuações em relação à injeção de Regex incluem:
 
-- Sempre use uma [corresponde ao tempo limite](/dotnet/standard/base-types/best-practices#use-time-out-values) ao usar expressões regulares.
+- Sempre use um [tempo limite de correspondência](/dotnet/standard/base-types/best-practices#use-time-out-values) ao usar expressões regulares.
 - Evite usar expressões regulares com base na entrada do usuário.
-- Escapar caracteres especiais de entrada do usuário chamando <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> ou outro método.
-- Permitir caracteres de apenas não especial da entrada do usuário.
+- Escapar caracteres especiais da entrada do usuário chamando <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=fullName> ou outro método.
+- Permitir somente caracteres não especiais da entrada do usuário.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Se você souber que você está usando um [corresponde ao tempo limite](/dotnet/standard/base-types/best-practices#use-time-out-values) e a entrada do usuário é livre de caracteres especiais, é okey suprimir este aviso.
+Se você souber que está usando um [tempo limite de correspondência](/dotnet/standard/base-types/best-practices#use-time-out-values) e a entrada do usuário estiver livre de caracteres especiais, não há problema em suprimir esse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a17c5bdc9e21bdf877206b1dc28596c251049455
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 12371c34c846991a0ec41f5e9d9588c5bde8e4d6
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714740"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233592"
 ---
 # <a name="ca1813-avoid-unsealed-attributes"></a>CA1813: Evitar atributos não selados
 
@@ -31,27 +31,27 @@ ms.locfileid: "66714740"
 |NomeDoTipo|AvoidUnsealedAttributes|
 |CheckId|CA1813|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo público herda <xref:System.Attribute?displayProperty=fullName>, não é abstrato e não está lacrado (`NotInheritable` no Visual Basic).
+Um tipo público herda de <xref:System.Attribute?displayProperty=fullName>, não é abstrato e não é lacrado (`NotInheritable` em Visual Basic).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O .NET fornece métodos para recuperar atributos personalizados. Por padrão, esses métodos pesquisam a hierarquia de herança do atributo. Por exemplo, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> procura o tipo de atributo especificado ou qualquer tipo de atributo que estende o tipo de atributo especificado. A validação do atributo elimina a pesquisa por meio da hierarquia de herança e pode melhorar o desempenho.
+O .NET fornece métodos para recuperar atributos personalizados. Por padrão, esses métodos pesquisam a hierarquia de herança do atributo. Por exemplo, <xref:System.Attribute.GetCustomAttribute%2A?displayProperty=fullName> pesquisa o tipo de atributo especificado ou qualquer tipo de atributo que estenda o tipo de atributo especificado. Lacrar o atributo elimina a pesquisa por meio da hierarquia de herança e pode melhorar o desempenho.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, lacre o tipo de atributo ou torná-lo abstrata.
+Para corrigir uma violação dessa regra, lacre o tipo de atributo ou torne-o abstrato.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra. Suprimir somente se você estiver definindo uma hierarquia de atributo e não é possível lacrar o atributo ou torná-lo abstrata.
+É seguro suprimir um aviso dessa regra. Suprime somente se você estiver definindo uma hierarquia de atributo e não puder lacrar o atributo ou torná-lo abstrato.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um atributo personalizado que atende a essa regra.
+O exemplo a seguir mostra um atributo personalizado que satisfaz essa regra.
 
 [!code-csharp[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/CSharp/ca1813-avoid-unsealed-attributes_1.cs)]
 [!code-vb[FxCop.Performance.AttributesSealed#1](../code-quality/codesnippet/VisualBasic/ca1813-avoid-unsealed-attributes_1.vb)]

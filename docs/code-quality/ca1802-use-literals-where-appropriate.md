@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6512f02d13c2eeb441f5b374c4785deffe22a22
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547060"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233797"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Usar literais quando apropriado
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547060"
 |NomeDoTipo|UseLiteralsWhereAppropriate|
 |CheckId|CA1802|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -57,7 +57,7 @@ Para corrigir uma violação dessa regra, substitua os `static` modificadores e 
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1802.api_surface = private, internal

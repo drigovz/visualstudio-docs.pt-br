@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a6ced277aa442450418ce55f4e1db56ad5d8af1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806531"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231310"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Propriedades de coleção devem ser somente leitura
 
@@ -32,31 +32,31 @@ ms.locfileid: "62806531"
 |NomeDoTipo|CollectionPropertiesShouldBeReadOnly|
 |CheckId|CA2227|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Uma propriedade visível externamente de gravável é de um tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Essa regra ignora matrizes, indexadores (propriedades com o nome 'Item') e conjuntos de permissões.
+Uma propriedade gravável externamente visível é de um tipo que implementa <xref:System.Collections.ICollection?displayProperty=fullName>. Essa regra ignora matrizes, indexadores (Propriedades com o nome ' item ') e conjuntos de permissões.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Uma propriedade collection gravável permite que um usuário substituir a coleção com uma coleção completamente diferente. Uma propriedade somente leitura interrompe a coleção seja substituída, mas ainda permite que os membros individuais a ser definido. Se substituir a coleção é uma meta, o padrão de design preferencial é incluir um método para remover todos os elementos da coleção e um método para preencher novamente a coleção. Consulte a <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> métodos do <xref:System.Collections.ArrayList?displayProperty=fullName> classe para obter um exemplo desse padrão.
+Uma propriedade de coleção gravável permite que um usuário substitua a coleção por uma coleção completamente diferente. Uma propriedade somente leitura impede que a coleção seja substituída, mas ainda permite que os membros individuais sejam definidos. Se a substituição da coleção for uma meta, o padrão de design preferencial será incluir um método para remover todos os elementos da coleção e um método para repopular a coleção. Consulte os <xref:System.Collections.ArrayList.Clear%2A> métodos <xref:System.Collections.ArrayList.AddRange%2A> e da <xref:System.Collections.ArrayList?displayProperty=fullName> classe para obter um exemplo desse padrão.
 
-Serialização XML e binária dão suporte a propriedades somente leitura que são coleções. O <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe tem requisitos específicos para os tipos que implementam <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> para ser serializável.
+A serialização binária e XML dão suporte a propriedades somente leitura que são coleções. A <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe tem requisitos específicos para tipos que implementam <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.ICollection> e para serem serializáveis.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, verifique a propriedade somente leitura. Se o design exigir, adicione métodos para limpar e preencher novamente a coleção.
+Para corrigir uma violação dessa regra, torne a propriedade somente leitura. Se o design exigir, adicione métodos para limpar e preencher novamente a coleção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Você pode suprimir o aviso se a propriedade for parte de um [o objeto de transferência de dados (DTO)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) classe.
+Você pode suprimir o aviso se a propriedade fizer parte de uma classe de [dto (objeto de transferência de dados)](/previous-versions/msp-n-p/ff649585(v=pandp.10)) .
 
-Caso contrário, não suprima avisos dessa regra.
+Caso contrário, não omita os avisos desta regra.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um tipo com uma propriedade collection gravável e mostra como a coleção pode ser substituída diretamente. Além disso, ele mostra a maneira preferida de substituição de uma propriedade de coleção somente leitura usando `Clear` e `AddRange` métodos.
+O exemplo a seguir mostra um tipo com uma propriedade de coleção gravável e mostra como a coleção pode ser substituída diretamente. Além disso, ele mostra a maneira preferida de substituir uma propriedade de coleção somente leitura `Clear` usando `AddRange` métodos e.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]

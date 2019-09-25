@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dc7f4a82b9a75e4d189e969712472f06b4019b73
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 38de3597d3693b072fec12f64211af4469851627
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920876"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232535"
 ---
 # <a name="ca2120-secure-serialization-constructors"></a>CA2120: Construtores de serialização seguros
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920876"
 |NomeDoTipo|SecureSerializationConstructors|
 |CheckId|CA2120|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 O tipo implementa a <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface, não é um delegate ou interface, e é declarado em um assembly que permite chamadores parcialmente confiáveis. O tipo tem um construtor que usa um <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto e um <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (a assinatura do construtor de serialização). Esse construtor não é protegido por uma verificação de segurança, mas um ou mais dos construtores regulares no tipo é protegido.

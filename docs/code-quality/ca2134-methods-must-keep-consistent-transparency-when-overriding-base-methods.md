@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ca28f364307d4a2b73235bc6541cb8aa01abd56
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920652"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232285"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Os métodos devem manter uma transparência consistente durante a substituição dos métodos base
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920652"
 |NomeDoTipo|MethodsMustOverrideWithConsistentTransparency|
 |CheckId|CA2134|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Essa regra é acionada quando um método marcado <xref:System.Security.SecurityCriticalAttribute> com o substitui um método que é transparente ou marcado <xref:System.Security.SecuritySafeCriticalAttribute>com. A regra também é acionada quando um método que é transparente ou marcado <xref:System.Security.SecuritySafeCriticalAttribute> com o substitui um método que é marcado <xref:System.Security.SecurityCriticalAttribute>com um.

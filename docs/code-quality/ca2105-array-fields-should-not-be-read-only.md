@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f8a02ae357dbf36cb4d3e4bd21aaad0fed3a320
-ms.sourcegitcommit: 32144a09ed46e7223ef7dcab647a9f73afa2dd55
+ms.openlocfilehash: 7407fcbe035d02992f414027114d69c257f5f390
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/05/2019
-ms.locfileid: "67586579"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232919"
 ---
 # <a name="ca2105-array-fields-should-not-be-read-only"></a>CA2105: Campos de matrizes não devem ser somente leitura
 
@@ -28,7 +28,7 @@ ms.locfileid: "67586579"
 |NomeDoTipo|ArrayFieldsShouldNotBeReadOnly|
 |CheckId|CA2105|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -36,35 +36,35 @@ Um campo público ou protegido que contém uma matriz é declarado como somente 
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando você aplica a `readonly` (`ReadOnly` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) modificador para um campo que contém uma matriz, o campo não pode ser alterado para fazer referência a uma matriz diferente. No entanto, os elementos da matriz que são armazenados em um campo somente leitura podem ser alterados. Código que toma decisões ou realize operações com base nos elementos de uma matriz de somente leitura que podem ser acessados publicamente pode conter uma vulnerabilidade de segurança explorável.
+Quando você aplica o `readonly` modificador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)](`ReadOnly` in) a um campo que contém uma matriz, o campo não pode ser alterado para se referir a uma matriz diferente. No entanto, os elementos da matriz que são armazenados em um campo somente leitura podem ser alterados. O código que toma decisões ou executa operações baseadas nos elementos de uma matriz somente leitura que pode ser acessada publicamente pode conter uma vulnerabilidade de segurança explorável.
 
-Observe que também ter um campo público viola a regra de criação [CA1051: Não declarar campos de instância visíveis](../code-quality/ca1051-do-not-declare-visible-instance-fields.md).
+Observe que ter um campo público também viola a regra [de design CA1051: Não declare campos](../code-quality/ca1051-do-not-declare-visible-instance-fields.md)de instância visíveis.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir a vulnerabilidade de segurança que é identificada por essa regra, não confie no conteúdo de uma matriz de somente leitura que podem ser acessados publicamente. É altamente recomendável que você use um dos procedimentos a seguir:
+Para corrigir a vulnerabilidade de segurança identificada por essa regra, não confie no conteúdo de uma matriz somente leitura que possa ser acessada publicamente. É altamente recomendável que você use um dos seguintes procedimentos:
 
-- Substitua a matriz uma coleção fortemente tipada que não pode ser alterada. Para obter mais informações, consulte <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
+- Substitua a matriz por uma coleção com rigidez de tipos que não pode ser alterada. Para obter mais informações, consulte <xref:System.Collections.ReadOnlyCollectionBase?displayProperty=fullName>.
 
-- Substitua o campo público com um método que retorna um clone de uma matriz privada. Porque seu código não depende do clone, há nenhum risco se os elementos são modificados.
+- Substitua o campo público por um método que retorne um clone de uma matriz privada. Como seu código não depende do clone, não há nenhum perigo se os elementos forem modificados.
 
-Se você escolher a segunda abordagem, não substitua o campo com uma propriedade; propriedades que retornam matrizes negativamente afetam o desempenho. Para obter mais informações, consulte [CA1819: Propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md).
+Se você escolher a segunda abordagem, não substitua o campo por uma propriedade; as propriedades que retornam matrizes afetam negativamente o desempenho. Para obter mais informações, [consulte CA1819: As propriedades não devem retornar](../code-quality/ca1819-properties-should-not-return-arrays.md)matrizes.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-A exclusão de um aviso nessa regra é altamente desaconselhável. Quase nenhum cenário ocorre em que o conteúdo de um campo somente leitura não é importante. Se esse for o caso com seu cenário, remova o `readonly` modificador em vez de excluir a mensagem.
+Não é recomendável a exclusão de um aviso dessa regra. Quase nenhum cenário ocorre quando o conteúdo de um campo somente leitura não é importante. Se esse for o caso com seu cenário, remova o `readonly` modificador em vez de excluir a mensagem.
 
 ## <a name="example-1"></a>Exemplo 1
 
-Este exemplo demonstra os perigos da violação dessa regra. A primeira parte mostra uma biblioteca de exemplo que tem um tipo `MyClassWithReadOnlyArrayField`, que contém dois campos (`grades` e `privateGrades`) que não são seguras. O campo `grades` é público e, portanto, vulnerável a qualquer chamador. O campo `privateGrades` é privado, mas ainda estará vulnerável porque ele é retornado para os chamadores pelo `GetPrivateGrades` método. O `securePrivateGrades` campo é exposto de maneira segura pelo `GetSecurePrivateGrades` método. Ele é declarado como particular siga as práticas de bom design. A segunda parte mostra o código que altera os valores armazenados na `grades` e `privateGrades` membros.
+Este exemplo demonstra os perigos de violar essa regra. A primeira parte mostra uma biblioteca de exemplo que tem um tipo `MyClassWithReadOnlyArrayField`,, que contém dois campos`grades` ( `privateGrades`e) que não são seguros. O campo `grades` é público e, portanto, vulnerável a qualquer chamador. O campo `privateGrades` é privado, mas ainda é vulnerável porque é retornado aos chamadores `GetPrivateGrades` pelo método. O `securePrivateGrades` campo é exposto de forma segura `GetSecurePrivateGrades` pelo método. Ele é declarado como privado para seguir boas práticas de design. A segunda parte mostra o código que altera os valores armazenados `grades` nos `privateGrades` Membros e.
 
-A biblioteca de classes de exemplo é exibido no exemplo a seguir.
+A biblioteca de classes de exemplo aparece no exemplo a seguir.
 
 [!code-csharp[FxCop.Security.ArrayFieldsNotReadOnly#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_1.cs)]
 
 ## <a name="example-2"></a>Exemplo 2
 
-O código a seguir usa a biblioteca de classes de exemplo para ilustrar os problemas de segurança de matriz somente leitura.
+O código a seguir usa a biblioteca de classes de exemplo para ilustrar problemas de segurança de matriz somente leitura.
 
 [!code-csharp[FxCop.Security.TestArrayFieldsRead#1](../code-quality/codesnippet/CSharp/ca2105-array-fields-should-not-be-read-only_2.cs)]
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4557b61afab08c7db05c734c6f2ac927a40edb71
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 9d9e486d4193645335189c475fdd3ca220374d96
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546859"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231433"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operadores devem ter sobrecargas simétricas
 
@@ -28,7 +28,7 @@ ms.locfileid: "69546859"
 |NomeDoTipo|OperatorsShouldHaveSymmetricalOverloads|
 |CheckId|CA2226|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -52,7 +52,7 @@ Não suprima um aviso nessa regra. Se você fizer isso, seu tipo não funcionar�
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca2226.api_surface = private, internal

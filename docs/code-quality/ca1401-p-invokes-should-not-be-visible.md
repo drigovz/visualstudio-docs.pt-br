@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e26daf68e0031358605427b310bb7284d43baf1b
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d4a0a1c001407d947988497c422fdb8e88dd7c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922141"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234889"
 ---
 # <a name="ca1401-pinvokes-should-not-be-visible"></a>CA1401: P/Invokes não devem ser visíveis
 
@@ -31,7 +31,7 @@ ms.locfileid: "68922141"
 |NomeDoTipo|PInvokesShouldNotBeVisible|
 |CheckId|CA1401|
 |Categoria|Microsoft. Interoperability|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um método público ou protegido em um tipo público tem o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo (também implementado `Declare` pela palavra-chave [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]em).

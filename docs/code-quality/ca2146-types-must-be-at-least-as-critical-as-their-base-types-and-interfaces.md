@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a70e999505bd900a7b3d89693ef4f6a1cef9de7d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: ce7870077cb859a25de70c726c78cad1d50270e5
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920419"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231940"
 ---
 # <a name="ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces"></a>CA2146: Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920419"
 |NomeDoTipo|TypesMustBeAtLeastAsCriticalAsBaseTypes|
 |CheckId|CA2146|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um tipo transparente é derivado de um tipo que é marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> ou o <xref:System.Security.SecurityCriticalAttribute>, ou um tipo marcado com o <xref:System.Security.SecuritySafeCriticalAttribute> atributo é derivado de um tipo que é marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo.

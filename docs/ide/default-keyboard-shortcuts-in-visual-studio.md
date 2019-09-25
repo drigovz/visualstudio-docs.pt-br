@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6da512f6322bed074b8009d45e569626afcd996
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 106a2be4797bc3c442006f74bce98e4f1e8c9a5c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766038"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238209"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Atalhos de teclado padrão no Visual Studio
 
@@ -794,7 +794,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.CollapseCurrentRegion | **Ctrl+M, Ctrl+S** |
 | Edit.CollapseTag | **Ctrl+M, Ctrl+T** |
 | Edit.CollapseToDefinitions | **Ctrl+M, Ctrl+O** (letra "O") |
-| Edit.ContractSelection | **Shift+Alt+-** (apenas não C++) |
+| Edit.ContractSelection | **Shift+Alt+-** |
 | Edit.CommentSelection | **Ctrl+K, Ctrl+C** |
 | Edit.CompleteWord | **Ctrl+Espaço**<br /><br /> ou<br /><br /> **Alt+Seta para a direita** |
 | Edit.CopyParameterTip | **Ctrl+Shift+Alt+C** |
@@ -807,7 +807,7 @@ Esses atalhos de teclado são *globais*, o que significa que você pode usá-los
 | Edit.DocumentStartExtend | **Ctrl+Shift+Home** |
 | Edit.ExpandAllOutlining | **Ctrl+M, Ctrl+X** |
 | Edit.ExpandCurrentRegion | **Ctrl+M, Ctrl+E** |
-| Edit.ExpandSelection | **Shift+Alt+=** (apenas não C++) |
+| Edit.ExpandSelection | **Shift+Alt+=** |
 | Edit.ExpandSelectiontoContainingBlock | **Shift+Alt+]** |
 | Edit.FormatDocument | **Ctrl+K, Ctrl+D** |
 | Edit.FormatSelection | **Ctrl+K, Ctrl+F** |

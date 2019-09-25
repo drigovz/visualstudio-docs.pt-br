@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a047ec190652e3559e8bf83fe14834ed95d8a69
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 53d049cad426201a8aaa48662061a4a424116b26
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920106"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237936"
 ---
 # <a name="ca2237-mark-iserializable-types-with-serializableattribute"></a>CA2237: Marcar tipos ISerializable com SerializableAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920106"
 |NomeDoTipo|MarkISerializableTypesWithSerializable|
 |CheckId|CA2237|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um tipo visível externamente implementa a <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface e o tipo não é marcado com o <xref:System.SerializableAttribute?displayProperty=fullName> atributo. A regra ignora tipos derivados cujo tipo base não é serializável.

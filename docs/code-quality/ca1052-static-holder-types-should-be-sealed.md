@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba54b9f87fe8c8cd8bfdc86f39e3121135241e92
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547522"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235626"
 ---
 # <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Tipos de detentor estáticos devem ser estáticos ou não herdáveis
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547522"
 |NomeDoTipo|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -59,7 +59,7 @@ Suprimir um aviso desta regra somente se o tipo for projetado para ser herdado. 
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo EditorConfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo EditorConfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1052.api_surface = private, internal

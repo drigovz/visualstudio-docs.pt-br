@@ -14,34 +14,34 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f81327324de937df57edfb36cae34d613f6298a5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3554a352cb1c32879397e91dba3ce53f31a14bd0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546014"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233851"
 ---
-# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nomes de tipo não devem corresponder a namespaces
+# <a name="ca1724-type-names-should-not-match-namespaces"></a>CA1724: Nomes de tipos não devem corresponder a namespaces
 
 |||
 |-|-|
 |NomeDoTipo|TypeNamesShouldNotMatchNamespaces|
 |CheckId|CA1724|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um nome de tipo corresponde a um nome de namespace referenciado que tenha um ou mais tipos visíveis externamente. A comparação de nome não diferencia maiusculas de minúsculas.
+Um nome de tipo corresponde a um nome de namespace referenciado que tem um ou mais tipos visíveis externamente. A comparação de nomes não diferencia maiúsculas de minúsculas.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Nomes de tipo criados pelo usuário não devem corresponder a nomes de namespaces referenciados que têm tipos visíveis externamente. A violação dessa regra pode reduzir a usabilidade da biblioteca.
+Os nomes de tipos criados pelo usuário não devem corresponder aos nomes dos namespaces referenciados que têm tipos visíveis externamente. A violação dessa regra pode reduzir a usabilidade da sua biblioteca.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Renomear o tipo, de modo que ele não corresponder ao nome de um namespace referenciado que tenha tipos visíveis externamente.
+Renomeie o tipo de modo que ele não corresponda ao nome de um namespace referenciado que tenha tipos visíveis externamente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Para novos desenvolvimentos, nenhum conhecidos ocorrem de cenários em que você deve suprimir um aviso nessa regra. Antes de você suprime o aviso, considere cuidadosamente como os usuários da sua biblioteca talvez estejam confusos pelas nome correspondente. Para o envio de bibliotecas, talvez você precise suprimir um aviso nessa regra.
+Para o novo desenvolvimento, nenhum cenário conhecido ocorre onde você deve suprimir um aviso dessa regra. Antes de suprimir o aviso, considere cuidadosamente como os usuários da biblioteca podem ser confundidos pelo nome correspondente. Para as bibliotecas de envio, talvez seja necessário suprimir um aviso dessa regra.

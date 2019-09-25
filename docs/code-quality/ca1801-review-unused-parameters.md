@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a73ce207d8efb0c6309ba52648c7231f89bc7984
-ms.sourcegitcommit: 0f44ec8ba0263056ad04d2d0dc904ad4206ce8fc
+ms.openlocfilehash: 6de48bf273a5c93afcd14e7bab2c5d4c4c4b5a7c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/06/2019
-ms.locfileid: "70766051"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233825"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Examinar parâmetros não utilizados
 
@@ -29,7 +29,7 @@ ms.locfileid: "70766051"
 |NomeDoTipo|ReviewUnusedParameters|
 |CheckId|CA1801|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita.<br /><br /> Não separável – se você alterar o membro para usar o parâmetro dentro de seu corpo.<br /><br /> Quebrando – se você remover o parâmetro e ele estiver visível fora do assembly.|
+|Alteração significativa|Não separável – se o membro não estiver visível fora do assembly, independentemente da alteração feita.<br /><br /> Não separável – se você alterar o membro para usar o parâmetro dentro de seu corpo.<br /><br /> Quebrando – se você remover o parâmetro e ele estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
 

@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a793f0a359cadc58c262861ee0495f92188d0b7
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547182"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234074"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547182"
 |NomeDoTipo|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra-quando acionado em interfaces.<br /><br /> Não separável-quando gerado em parâmetros de tipo genérico.|
+|Alteração significativa|Quebra-quando acionado em interfaces.<br /><br /> Não separável-quando gerado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
 
@@ -56,7 +56,7 @@ As convenções de nomenclatura fornecem uma aparência comum para as biblioteca
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar quais partes do seu código essa regra analisa. Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar quais partes do seu código essa regra analisa. Para obter mais informações, consulte [Configurar analisadores de FxCop](configure-fxcop-analyzers.md).
 
 ### <a name="single-character-type-parameters"></a>Parâmetros de tipo de caractere único
 

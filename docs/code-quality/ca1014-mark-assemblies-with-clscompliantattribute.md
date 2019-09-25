@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f11a93380f149648ece4ae6d71bc9c2f25df5191
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923112"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236322"
 ---
 # <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Marcar assemblies com CLSCompliantAttribute
 
@@ -32,7 +32,7 @@ ms.locfileid: "68923112"
 |NomeDoTipo|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um assembly não tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado a ele.

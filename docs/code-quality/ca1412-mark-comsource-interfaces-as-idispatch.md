@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e0a7214ce37aa48d69b9261d686960fa0a4c308c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62546343"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234685"
 ---
 # <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Marcar interfaces ComSource como IDispatch
 
@@ -30,20 +30,20 @@ ms.locfileid: "62546343"
 |-|-|
 |NomeDoTipo|MarkComSourceInterfacesAsIDispatch|
 |CheckId|CA1412|
-|Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Quebra|
+|Categoria|Microsoft. Interoperability|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo é marcado com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo e pelo menos uma interface especificada não está marcado com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo definido como o `InterfaceIsDispatch` valor.
+Um tipo é marcado com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo e pelo menos uma interface especificada não é marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo definido como o `InterfaceIsDispatch` valor.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> é usado para identificar as interfaces de evento que uma classe expõe para clientes do modelo de objeto de componente (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes COM do Visual Basic 6 receber notificações de eventos. Por padrão, se uma interface não está marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ele é exposto como uma interface dupla.
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes com Visual Basic 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ela será exposta como uma interface dupla.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, adicionar ou modificar as <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> de atributo para que seu valor é definido como InterfaceIsIDispatch para todas as interfaces que são especificadas com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo.
+Para corrigir uma violação dessa regra, adicione ou modifique o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo para que seu valor seja definido como InterfaceIsIDispatch para todas as interfaces especificadas com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

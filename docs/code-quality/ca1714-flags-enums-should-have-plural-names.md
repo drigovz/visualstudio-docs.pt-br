@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d71200c6c7fbb61e7994119fde5e75f7623fa669
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 79585cd9cae31f46a9506085c9c8faf5b5844d44
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547198"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234086"
 ---
 # <a name="ca1714-flags-enums-should-have-plural-names"></a>CA1714: Enumerações de sinalizador devem ter nomes no plural
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547198"
 |NomeDoTipo|FlagsEnumsShouldHavePluralNames|
 |CheckId|CA1714|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -52,7 +52,7 @@ Torne o nome da enumeração uma palavra plural ou remova o <xref:System.FlagsAt
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1714.api_surface = private, internal

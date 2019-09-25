@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: dcb5937f58088684e7bfc204ab4143434b0684ae
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62779541"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236402"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011: Considerar a passagem de tipos base como parâmetros
 
@@ -32,15 +32,15 @@ ms.locfileid: "62779541"
 |NomeDoTipo|ConsiderPassingBaseTypesAsParameters|
 |CheckId|CA1011|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Uma declaração de método inclui um parâmetro formal que é um tipo derivado e o método chama apenas os membros do tipo base do parâmetro.
+Uma declaração de método inclui um parâmetro formal que é um tipo derivado, e o método chama somente os membros do tipo base do parâmetro.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando um tipo de base é especificado como um parâmetro em uma declaração de método, qualquer tipo derivado do tipo de base pode ser passado como o argumento correspondente ao método. Quando o argumento é usado dentro do corpo do método, o método específico que é executado depende do tipo do argumento. Se a funcionalidade adicional que é fornecida por um tipo derivado não for necessária, o uso do tipo base permite um uso mais amplo do método.
+Quando um tipo de base é especificado como um parâmetro em uma declaração de método, qualquer tipo derivado do tipo de base pode ser passado como o argumento correspondente ao método. Quando o argumento é usado dentro do corpo do método, o método específico que é executado depende do tipo do argumento. Se a funcionalidade adicional fornecida pelo tipo derivado não for necessária, o uso do tipo base permitirá um uso mais amplo do método.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -48,19 +48,19 @@ Para corrigir uma violação dessa regra, altere o tipo do parâmetro para seu t
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra
+É seguro suprimir um aviso dessa regra
 
-- Se o método requer a funcionalidade específica que é fornecida por um tipo derivado
+- Se o método exigir a funcionalidade específica que é fornecida pelo tipo derivado
 
      \- ou -
 
 - para impor que apenas o tipo derivado, ou um tipo mais derivado, é passado para o método.
 
-Nesses casos, o código será mais robusto devido à forte verificação de tipo que é fornecido pelo compilador e tempo de execução.
+Nesses casos, o código será mais robusto devido à verificação de tipo forte que é fornecida pelo compilador e tempo de execução.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método `ManipulateFileStream`, que pode ser usado apenas com um <xref:System.IO.FileStream> objeto, o que viola essa regra. Um segundo método, `ManipulateAnyStream`, satisfaz a regra, substituindo o <xref:System.IO.FileStream> parâmetro usando um <xref:System.IO.Stream>.
+O exemplo a seguir mostra um método `ManipulateFileStream`,, que pode ser usado somente com <xref:System.IO.FileStream> um objeto, que viola essa regra. Um segundo método, `ManipulateAnyStream`, satisfaz a regra substituindo o <xref:System.IO.FileStream> parâmetro por meio de um <xref:System.IO.Stream>.
 
 [!code-csharp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CSharp/ca1011-consider-passing-base-types-as-parameters_1.cs)]
 [!code-cpp[FxCop.Design.ConsiderPassingBaseTypes#1](../code-quality/codesnippet/CPP/ca1011-consider-passing-base-types-as-parameters_1.cpp)]
@@ -68,4 +68,4 @@ O exemplo a seguir mostra um método `ManipulateFileStream`, que pode ser usado 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1059: Os membros não devem expor certos tipos concretos](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)
+[CA1059: Os membros não devem expor determinados tipos concretos](../code-quality/ca1059-members-should-not-expose-certain-concrete-types.md)

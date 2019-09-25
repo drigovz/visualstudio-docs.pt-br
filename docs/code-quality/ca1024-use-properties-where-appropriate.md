@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2763d7dd167ad0027509c44b8f9d43523f03976b
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547787"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236151"
 ---
 # <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usar propriedades quando apropriado
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547787"
 |NomeDoTipo|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -73,7 +73,7 @@ Suprimir um aviso dessa regra se o método atender a pelo menos um dos critério
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1024.api_surface = private, internal

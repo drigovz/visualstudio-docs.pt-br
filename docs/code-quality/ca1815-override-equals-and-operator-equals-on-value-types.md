@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97f56e406d00de1891647c4211d21336f9d1a266
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 413119f7cdf473f3038ae212ac812d1987641bb1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547051"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233540"
 ---
 # <a name="ca1815-override-equals-and-operator-equals-on-value-types"></a>CA1815: Substituir equals e o operador equals em tipos de valor
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547051"
 |NomeDoTipo|OverrideEqualsAndOperatorEqualsOnValueTypes|
 |CheckId|CA1815|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -50,7 +50,7 @@ Para corrigir uma violação dessa regra, forneça uma implementação de <xref:
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1815.api_surface = private, internal

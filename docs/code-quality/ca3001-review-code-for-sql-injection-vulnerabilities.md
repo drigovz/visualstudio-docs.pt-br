@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 603dc08650ca5e54cac3f590f5d32de98e3ae5da
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: bd454ffad1efc9d7df84d88630fe71eebc8ca6fc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841457"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71238116"
 ---
 # <a name="ca3001-review-code-for-sql-injection-vulnerabilities"></a>CA3001: Examinar código quanto a vulnerabilidades de injeção de SQL
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841457"
 |NomeDoTipo|ReviewCodeForSqlInjectionsVulnerabilities|
 |CheckId|CA3001|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis atinge o texto de um comando SQL.
+A entrada de solicitação HTTP potencialmente não confiável atinge o texto de um comando SQL.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis e comandos SQL, lembre-se de ataques de injeção de SQL. Um ataque de injeção de SQL pode executar comandos SQL mal-intencionados, comprometer a segurança e a integridade do seu aplicativo. Técnicas comuns incluem o uso de aspas simples ou apóstrofe para delimitar cadeias de caracteres literais, dois traços para um comentário e um ponto e vírgula para o final de uma instrução. Para obter mais informações, consulte [injeção de SQL](/sql/relational-databases/security/sql-injection).
+Ao trabalhar com comandos de entrada e SQL não confiáveis, lembre-se dos ataques de injeção de SQL. Um ataque de injeção de SQL pode executar comandos SQL mal-intencionados, comprometendo a segurança e a integridade do seu aplicativo. As técnicas típicas incluem usar uma aspa simples ou apóstrofo para delimitar cadeias de caracteres literais, dois traços para um comentário e um ponto-e-vírgula para o final de uma instrução. Para obter mais informações, consulte [injeção de SQL](/sql/relational-databases/security/sql-injection).
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo o texto de um comando SQL.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que executa o comando SQL, essa regra não gerará um aviso.
+Essa regra tenta localizar entradas de solicitações HTTP alcançando o texto de um comando SQL.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que executa o comando SQL, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Use comandos SQL parametrizados ou procedimentos armazenados, com parâmetros que contém as entradas não confiáveis.
+Use comandos SQL com parâmetros ou procedimentos armazenados com parâmetros que contenham a entrada não confiável.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se você souber que a entrada é sempre validada em relação a um conjunto conhecido de seguro de caracteres.
+É seguro suprimir um aviso dessa regra se você souber que a entrada é sempre validada em relação a um conjunto de caracteres seguro conhecido.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

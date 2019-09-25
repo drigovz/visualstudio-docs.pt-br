@@ -13,12 +13,12 @@ ms.workload:
 f1_keywords:
 - CA2311
 - DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder
-ms.openlocfilehash: 2ec13d78e364940fa9c210cf0792e810c8f0f341
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
+ms.openlocfilehash: 8445c6260592bbaf109dd3786111fe64441a4da0
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891174"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237692"
 ---
 # <a name="ca2311-do-not-deserialize-without-first-setting-netdatacontractserializerbinder"></a>CA2311: Não desserializar sem definir primeiro NetDataContractSerializer.Binder
 
@@ -27,7 +27,7 @@ ms.locfileid: "69891174"
 |NomeDoTipo|DoNotDeserializeWithoutFirstSettingNetDataContractSerializerBinder|
 |CheckId|CA2311|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -41,7 +41,7 @@ Essa regra localiza <xref:System.Runtime.Serialization.NetDataContractSerializer
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-- Se possível, use um serializador seguro em vez disso e **não permita que um invasor especifique um tipo arbitrário para**desserializar. Alguns serializadores mais seguros incluem:
+- Se possível, use um serializador seguro em vez disso e **não permita que um invasor especifique um tipo arbitrário para desserializar**. Alguns serializadores mais seguros incluem:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
   - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType>-Nunca use <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se você precisar usar um resolvedor de tipo, restrinja os tipos desserializados a uma lista esperada.

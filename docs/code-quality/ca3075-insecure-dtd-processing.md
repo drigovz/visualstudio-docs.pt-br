@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de817e3aaecbdd1c89cc2174e91126ea39d99d7
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42efb51dfe9c447538fe8f01bdd37c73bf993d8f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541110"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237111"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento de DTD não seguro
 
@@ -22,7 +22,7 @@ ms.locfileid: "62541110"
 |NomeDoTipo|InsecureDTDProcessing|
 |CheckId|CA3075|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -30,54 +30,54 @@ Se você usar instâncias de <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Um *definição de tipo de documento (DTD)* é uma das duas maneiras de um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) Extensible Markup Language (XML) 1.0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra procura as propriedades e instâncias onde os dados não confiáveis é aceito para alertar os desenvolvedores sobre o potencial [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ameaças ou [negação de serviço (DoS)](/dotnet/framework/wcf/feature-details/denial-of-service) ataques. Essa regra dispara quando:
+Uma *DTD (definição de tipo de documento)* é uma das duas maneiras que um analisador XML pode determinar a validade de um documento, conforme definido pelo [World Wide Web Consortium (W3C) linguagem XML (XML) 1,0](http://www.w3.org/TR/2008/REC-xml-20081126/). Essa regra busca Propriedades e instâncias em que os dados não confiáveis são aceitos para avisar os desenvolvedores sobre possíveis ameaças de [divulgação de informações](/dotnet/framework/wcf/feature-details/information-disclosure) ou ataques [de negação de serviço (dos)](/dotnet/framework/wcf/feature-details/denial-of-service) . Esta regra é disparada quando:
 
-- DtdProcessing está habilitada no <xref:System.Xml.XmlReader> instância, que resolve entidades externas de XML usando <xref:System.Xml.XmlUrlResolver>.
+- DtdProcessing está habilitado na <xref:System.Xml.XmlReader> instância, que resolve entidades XML externas usando. <xref:System.Xml.XmlUrlResolver>
 
-- O <xref:System.Xml.XmlNode.InnerXml%2A> está definida no XML.
+- A <xref:System.Xml.XmlNode.InnerXml%2A> Propriedade no XML está definida.
 
-- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> propriedade é definida como a análise.
+- <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A>a propriedade está definida como Parse.
 
-- Não-confiáveis de entrada será processada usando <xref:System.Xml.XmlResolver> em vez de <xref:System.Xml.XmlSecureResolver>.
+- A entrada não confiável é processada <xref:System.Xml.XmlResolver> usando em <xref:System.Xml.XmlSecureResolver>vez de.
 
-- O <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> método é invocado com um carimbo <xref:System.Xml.XmlReaderSettings> nenhuma instância ou em todos.
+- O <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> método é invocado com uma instância <xref:System.Xml.XmlReaderSettings> insegura ou nenhuma instância.
 
-- <xref:System.Xml.XmlReader> é criado com as configurações padrão inseguro ou valores.
+- <xref:System.Xml.XmlReader>é criado com valores ou configurações padrão inseguras.
 
-Cada um desses casos, o resultado é o mesmo: o conteúdo de qualquer um dos compartilhamentos de arquivos sistema ou de rede do computador em que o XML é processado será exposto ao invasor ou processamento de DTD pode ser usado como um vetor DoS.
+Em cada um desses casos, o resultado é o mesmo: o conteúdo do sistema de arquivos ou compartilhamentos de rede do computador onde o XML é processado será exposto ao invasor, ou o processamento de DTD pode ser usado como um vetor de DoS.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-- Capturar e processar todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.
+- Pegue e processe todas as exceções de XmlTextReader corretamente para evitar a divulgação de informações de caminho.
 
 - Use o <xref:System.Xml.XmlSecureResolver> para restringir os recursos que o XmlTextReader pode acessar.
 
-- Não permita que o <xref:System.Xml.XmlReader> para abrir todos os recursos externos definindo o <xref:System.Xml.XmlResolver> propriedade **nulo**.
+- Não permita que o <xref:System.Xml.XmlReader> abra nenhum recurso externo definindo a <xref:System.Xml.XmlResolver> Propriedade como **NULL**.
 
-- Certifique-se de que o <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> é atribuído a propriedade de uma fonte confiável.
+- Certifique-se <xref:System.Data.DataViewManager.DataViewSettingCollectionString%2A?displayProperty=nameWithType> de que a propriedade seja atribuída de uma fonte confiável.
 
-**.NET 3.5 e anterior**
+**.NET 3,5 e anterior**
 
-- Desabilitar o processamento de DTD se você está lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> propriedade para **verdadeiro**.
+- Desabilite o processamento de DTD se você estiver lidando com fontes não confiáveis definindo <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> a propriedade como **true**.
 
-- Classe de XmlTextReader tem uma exigência de herança de confiança total.
+- A classe XmlTextReader tem uma demanda de herança de confiança total.
 
 **.NET 4 e posterior**
 
-- Evite habilitar DtdProcessing se você estiver lidando com fontes não confiáveis, definindo o <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> propriedade para **proibir** ou **ignorar**.
+- Evite habilitar DtdProcessing se você estiver lidando com fontes não confiáveis definindo a <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A?displayProperty=nameWithType> Propriedade como **proibir** ou **ignorar**.
 
-- Certifique-se de que o método Load () usa uma instância de XmlReader em todos os casos de InnerXml.
+- Verifique se o método Load () usa uma instância de XmlReader em todos os casos de InnerXml.
 
 > [!NOTE]
 > Essa regra pode relatar falsos positivos em algumas instâncias de XmlSecureResolver válidas.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.
+A menos que você tenha certeza de que a entrada é conhecida por ser de uma fonte confiável, não omita uma regra desse aviso.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System.IO;
@@ -121,7 +121,7 @@ class TestClass
 }
 ```
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System.Xml;
@@ -209,7 +209,7 @@ public static void TestMethod(string xml)
 }
 ```
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System.IO;
@@ -250,7 +250,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System.Xml;
@@ -287,7 +287,7 @@ namespace TestNamespace
 }
 ```
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System.Xml;

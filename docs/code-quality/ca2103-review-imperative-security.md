@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7acbb9d0127dd2ddb6668e72db8fa88124ec2b3c
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: a2792f1cccad26fe5bb073af800a2fcf0ebcb4b4
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921421"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232978"
 ---
 # <a name="ca2103-review-imperative-security"></a>CA2103: Examinar a segurança imperativa
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921421"
 |NomeDoTipo|ReviewImperativeSecurity|
 |CheckId|CA2103|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um método usa segurança obrigatória e pode construir a permissão usando as informações de estado ou os valores de retorno que podem ser alterados desde que a demanda esteja ativa.

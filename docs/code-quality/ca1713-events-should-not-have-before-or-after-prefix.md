@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee39ffbfd2e73a14fd42d574cef92a24784d1ad4
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 834c0f73a1fdc26f06c62e1c6e3a2d19372a244d
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921667"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234098"
 ---
 # <a name="ca1713-events-should-not-have-before-or-after-prefix"></a>CA1713: Eventos não devem ter o prefixo anterior ou posterior
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921667"
 |NomeDoTipo|EventsShouldNotHaveBeforeOrAfterPrefix|
 |CheckId|CA1713|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 O nome de um evento começa com ' before ' ou ' after '.

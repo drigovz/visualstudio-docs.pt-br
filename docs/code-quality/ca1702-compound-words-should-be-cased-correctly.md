@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f78ea4f44c48d2740df58def03a6335bce6637a2
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545926"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234331"
 ---
 # <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas
 
@@ -28,7 +28,7 @@ ms.locfileid: "62545926"
 |NomeDoTipo|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra quando acionado em assemblies.<br /><br /> Sem quebra - quando disparado em parâmetros de tipo.|
+|Alteração significativa|Quebra-quando acionada em assemblies.<br /><br /> Não separável-quando acionado em parâmetros de tipo.|
 
 ## <a name="cause"></a>Causa
 
@@ -36,17 +36,17 @@ O nome de um identificador contém várias palavras e pelo menos uma das palavra
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O nome do identificador é dividido em palavras que são baseadas em maiusculas. Cada combinação de duas palavras contígua é verificada pela biblioteca do verificador ortográfico da Microsoft. Se ele for reconhecido, o identificador produz uma violação da regra. São exemplos de palavras compostas que fazem com que uma violação "CheckSum" e "MultiPart", que deve ter maiusculas e minúsculas como "Checksum" e "Multipart", respectivamente. Devido ao uso anterior de comuns, várias exceções são incorporadas a regra e várias palavras únicas são sinalizadas, como "Ferramentas" e "Filename", que deve ter a grafia duas palavras distintas (nesse caso, "Ferramentas" e "FileName").
+O nome do identificador é dividido em palavras baseadas em maiúsculas e minúsculas. Cada combinação de duas palavras contígua é verificada pela biblioteca do verificador ortográfico da Microsoft. Se for reconhecido, o identificador produzirá uma violação da regra. Exemplos de palavras compostas que causam uma violação são "CheckSum" e "MultiPart", que devem ser totais como "Checksum" e "multipart", respectivamente. Devido ao uso comum anterior, várias exceções são incorporadas à regra, e várias palavras únicas são sinalizadas, como "barra de ferramentas" e "nome do arquivo", que devem ser maiúsculas e minúsculas (neste caso, "barra de ferramentas" e "nome do arquivo").
 
-Convenções de nomenclatura de fornecem uma aparência comum para bibliotecas que direcionam o common language runtime. Isso reduz a curva de aprendizado que é necessário para novas bibliotecas de software e aumenta a confiança do cliente que a biblioteca foi desenvolvida por alguém que tenha experiência em desenvolvimento de código gerenciado.
+As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Altere o nome, de modo que ele é maiusculas e minúsculas corretas.
+Altere o nome para que ele esteja em maiúsculas e minúsculas.
 
 ## <a name="language"></a>Idioma
 
-O verificador ortográfico verifica atualmente apenas em relação a dicionários de cultura baseada em inglês. Você pode alterar a cultura do seu projeto no arquivo de projeto, adicionando a **CodeAnalysisCulture** elemento.
+Atualmente, o verificador ortográfico verifica apenas os dicionários de cultura baseados em inglês. Você pode alterar a cultura do seu projeto no arquivo de projeto, adicionando o elemento **CodeAnalysisCulture** .
 
 Por exemplo:
 
@@ -57,17 +57,17 @@ Por exemplo:
 ```
 
 > [!IMPORTANT]
-> Se você definir a cultura como algo diferente de uma cultura com base em inglês, essa regra de análise de código é silenciosamente desabilitada.
+> Se você definir a cultura como algo diferente de uma cultura baseada em inglês, essa regra de análise de código será silenciosamente desabilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se ambas as partes da palavra composta são reconhecidas pelo dicionário de ortografia e a intenção é usar duas palavras.
+É seguro suprimir um aviso dessa regra se ambas as partes da palavra composta forem reconhecidas pelo dicionário ortográfico, e a intenção é usar duas palavras.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: Palavras compostas da cadeia de caracteres de recurso devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Identificadores devem ter maiusculas e minúsculas corretamente](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Identificadores devem ser diferentes de maiusculas e minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: As palavras compostas da cadeia de recursos devem estar em maiúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Consulte também
 

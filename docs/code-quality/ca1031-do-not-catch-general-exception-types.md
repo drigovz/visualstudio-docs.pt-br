@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b1610d07e5e38632056df237d284b40b6f101c6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: c1dc1e5ed18ddcd42d42c96f3f853808c58ade48
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922899"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236062"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031: Não capturar tipos de exceção geral
 
@@ -32,7 +32,7 @@ ms.locfileid: "68922899"
 |NomeDoTipo|DoNotCatchGeneralExceptionTypes|
 |CheckId|CA1031|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Uma exceção <xref:System.Exception?displayProperty=fullName> geral, como ou <xref:System.SystemException?displayProperty=fullName> é capturada em `catch` uma instrução `catch()` , ou uma cláusula catch geral, como é usada.

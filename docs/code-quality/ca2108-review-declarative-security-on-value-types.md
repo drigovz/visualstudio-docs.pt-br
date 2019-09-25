@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 37f4cac83c83b47fda5cf9cde85a3e14d857d2bc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4107800a5623de29448a9213184dd44feed2cac9
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62545532"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232813"
 ---
 # <a name="ca2108-review-declarative-security-on-value-types"></a>CA2108: Examinar a segurança declarativa em tipos de valor
 
@@ -28,33 +28,33 @@ ms.locfileid: "62545532"
 |NomeDoTipo|ReviewDeclarativeSecurityOnValueTypes|
 |CheckId|CA2108|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo de valor público ou protegido é protegido por um [dados e modelagem](/dotnet/framework/data/index) ou [demandas de Link](/dotnet/framework/misc/link-demands).
+Um tipo de valor público ou protegido é protegido por um [dados e modelagem](/dotnet/framework/data/index) ou [demandas de link](/dotnet/framework/misc/link-demands).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Tipos de valor são alocados e inicializados por seus construtores padrão antes de executar outros construtores. Se um tipo de valor é protegido por um Demand ou LinkDemand e o chamador não tem permissões que satisfazem a verificação de segurança, qualquer construtor diferente do padrão falhará e será gerada uma exceção de segurança. O tipo de valor não é desalocado; ele é deixado no estado definido pelo seu construtor padrão. Não presuma que um chamador que passa uma instância do tipo de valor tem permissão para criar ou acessar a instância.
+Os tipos de valor são alocados e inicializados por seus construtores padrão antes da execução de outros construtores. Se um tipo de valor for protegido por uma demanda ou LinkDemand e o chamador não tiver permissões que atendam à verificação de segurança, qualquer Construtor diferente do padrão falhará e uma exceção de segurança será lançada. O tipo de valor não é desalocado; Ele é deixado no estado definido por seu construtor padrão. Não assuma que um chamador que passa uma instância do tipo de valor tenha permissão para criar ou acessar a instância.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Você não pode corrigir uma violação dessa regra, a menos que você remover a verificação de segurança do tipo e verificações de segurança de nível de método de uso em seu lugar. Corrigir a violação dessa maneira não impede que os chamadores com permissões inadequadas obtenham as instâncias do tipo de valor. Você deve garantir que uma instância do tipo de valor, em seu estado padrão, não expõe informações confidenciais e não pode ser usada de modo prejudicial.
+Não é possível corrigir uma violação dessa regra, a menos que você remova a verificação de segurança do tipo e use verificações de segurança em nível de método em seu lugar. Corrigir a violação dessa maneira não impede que os chamadores com permissões inadequadas obtenham instâncias do tipo de valor. Você deve garantir que uma instância do tipo Value, em seu estado padrão, não exponha informações confidenciais e não possa ser usada de forma prejudicial.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Você pode suprimir um aviso nessa regra, se qualquer chamador pode obter as instâncias do tipo do valor em seu estado padrão sem apresentando uma ameaça à segurança.
+Você pode suprimir um aviso dessa regra se qualquer chamador puder obter instâncias do tipo de valor em seu estado padrão sem passar uma ameaça à segurança.
 
 ## <a name="example-1"></a>Exemplo 1
 
-O exemplo a seguir mostra uma biblioteca que contém um tipo de valor que viola essa regra. O `StructureManager` tipo pressupõe que um chamador que passa uma instância do tipo de valor tem permissão para criar ou acessar a instância.
+O exemplo a seguir mostra uma biblioteca que contém um tipo de valor que viola essa regra. O `StructureManager` tipo supõe que um chamador que passa uma instância do tipo Value tem permissão para criar ou acessar a instância.
 
 [!code-csharp[FxCop.Security.DemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_1.cs)]
 
 ## <a name="example-2"></a>Exemplo 2
 
-O aplicativo a seguir demonstra a desvantagem da biblioteca.
+O aplicativo a seguir demonstra o ponto fraco da biblioteca.
 
 [!code-csharp[FxCop.Security.TestDemandOnValueType#1](../code-quality/codesnippet/CSharp/ca2108-review-declarative-security-on-value-types_2.cs)]
 

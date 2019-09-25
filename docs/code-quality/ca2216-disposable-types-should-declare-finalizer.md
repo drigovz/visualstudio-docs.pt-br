@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e4baee9f532c0351feeced07ce9403245ccee14a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1616e889b3892aa656692a3e5b0895d4b131b7f1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541865"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231248"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Tipos descartáveis devem declarar o finalizador
 
@@ -28,15 +28,15 @@ ms.locfileid: "62541865"
 |NomeDoTipo|DisposableTypesShouldDeclareFinalizer|
 |CheckId|CA2216|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName>e tem campos que sugerem o uso de recursos não gerenciados, não implementa um finalizador, conforme descrito pelo <xref:System.Object.Finalize%2A?displayProperty=fullName>.
+Um tipo que implementa <xref:System.IDisposable?displayProperty=fullName>e tem campos que sugerem o uso de recursos não gerenciados, não implementa um finalizador conforme descrito pelo. <xref:System.Object.Finalize%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Uma violação dessa regra será relatada se o tipo descartável contém campos dos tipos a seguir:
+Uma violação dessa regra será relatada se o tipo descartável contiver campos dos seguintes tipos:
 
 - <xref:System.IntPtr?displayProperty=fullName>
 
@@ -46,11 +46,11 @@ Uma violação dessa regra será relatada se o tipo descartável contém campos 
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, implemente um finalizador que chama sua <xref:System.IDisposable.Dispose%2A> método.
+Para corrigir uma violação dessa regra, implemente um finalizador que chama seu <xref:System.IDisposable.Dispose%2A> método.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se o tipo não implementa <xref:System.IDisposable> com a finalidade de liberar recursos não gerenciados.
+É seguro suprimir um aviso dessa regra se o tipo não for implementado <xref:System.IDisposable> com a finalidade de liberar recursos não gerenciados.
 
 ## <a name="example"></a>Exemplo
 
@@ -64,7 +64,7 @@ O exemplo a seguir mostra um tipo que viola essa regra.
 
 [CA1816: Chame GC. SuppressFinalize corretamente](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)
 
-[CA1049: Tipos que tenham recursos nativos devem ser descartáveis](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
+[CA1049: Tipos que possuem recursos nativos devem ser descartáveis](../code-quality/ca1049-types-that-own-native-resources-should-be-disposable.md)
 
 ## <a name="see-also"></a>Consulte também
 

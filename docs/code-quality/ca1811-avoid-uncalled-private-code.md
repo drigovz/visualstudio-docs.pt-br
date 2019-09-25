@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c144db920bfa04055c81227e4cc2c230ed2f097d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 92a7542499eceeccbd62ce327b386dc099b726b2
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921338"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233615"
 ---
 # <a name="ca1811-avoid-uncalled-private-code"></a>CA1811: Evitar código particular não chamado
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921338"
 |NomeDoTipo|AvoidUncalledPrivateCode|
 |CheckId|CA1811|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um membro privado ou interno (no nível do assembly) não tem chamadores no assembly, não é invocado pelo Common Language Runtime e não é invocado por um delegado. Os seguintes membros não são verificados por esta regra:

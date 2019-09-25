@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f24881d04599677c5d45c93fc940286f115d593
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68922519"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235470"
 ---
 # <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Membros não devem expor determinados tipos concretos
 
@@ -28,7 +28,7 @@ ms.locfileid: "68922519"
 |NomeDoTipo|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um membro visível externamente é um determinado tipo concreto ou expõe determinados tipos concretos por meio de um de seus parâmetros ou valor de retorno. Atualmente, essa regra relata a exposição dos seguintes tipos concretos:

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 30ee7364ba925eebb18d66fc8ede2b7983d46116
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62798634"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71211375"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Fazer o código funcionar no Visual Studio
 
@@ -98,7 +98,19 @@ As Ações Rápidas podem ser usadas sempre que os analisadores de código deter
 
 ![Texto "Nenhuma ação rápida disponível aqui"](../ide/media/vs_ide_gs_debug_light_bulb_no_options.png)
 
-Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+**.** para verificar se há oportunidades fáceis de refatoração e limpar seu código.
+Com experiência, você poderá usar rapidamente as teclas de direção e **Ctrl**+ **.** para verificar se há oportunidades fáceis de refatoração e limpar seu código.
+
+::: moniker range="vs-2019"
+
+## <a name="run-code-cleanup"></a>Executar limpeza de código
+
+O Visual Studio fornece [formatação sob demanda do arquivo C# de código](code-styles-and-code-cleanup.md#apply-code-styles), incluindo preferências de estilo de código, por meio do botão de **limpeza de código** na parte inferior do editor.
+
+![Botão de Limpeza de código no Visual Studio 2019](media/execute-code-cleanup.png)
+
+Além de Formatar o arquivo em busca de espaços, recuos, et etc, a **limpeza de código** também aplica um conjunto de convenções de estilo de código que você define. Suas preferências para cada estilo de código são lidas no [arquivo EditorConfig](code-styles-and-code-cleanup.md#code-styles-in-editorconfig-files), caso tenha um para o projeto ou das [configurações de estilo de código](code-styles-and-code-cleanup.md#code-styles-in-the-options-dialog-box) na caixa de diálogo **Opções**.
+
+::: moniker-end
 
 ## <a name="debug-your-running-code"></a>Depurar seu código em execução
 
@@ -106,7 +118,7 @@ Agora que você compilou seu código com êxito e fez uma limpeza rápida, execu
 
 ![Janelas Automáticas e Pilha de Chamadas do Visual Studio](../ide/media/vs_ide_gs_debug_autos_and_call_stack.png)
 
-Pare o aplicativo pressionando **Shift**+**F5** ou clicando no botão **Parar**. Se preferir, apenas feche a janela principal do aplicativo (ou a caixa de diálogo da linha de comando).
+Pare o aplicativo pressionando **Shift**+**F5** ou clicando no botão **Parar**. Ou você pode simplesmente fechar a janela principal do aplicativo (ou a caixa de diálogo de linha de comando).
 
 Se seu código for executado perfeitamente e exatamente como esperado, parabéns! No entanto, se ele tiver parado, falhado ou fornecido alguns resultados estranhos, você precisará localizar a origem desses problemas e corrigir os bugs.
 
@@ -157,5 +169,5 @@ Para saber mais sobre testes de unidade no Visual Studio e como eles podem ajud�
 ## <a name="see-also"></a>Consulte também
 
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Saiba mais sobre como usar o depurador](../debugger/index.md)
+- [Saiba mais sobre como usar o depurador](../debugger/index.yml)
 - [Gerar e corrigir um código](../ide/code-generation-in-visual-studio.md)

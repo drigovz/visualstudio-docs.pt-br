@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad0659241e75c862b3d82c64a7e8b2ad3ccada21
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 28d71fbfc10532f7c9420ea7e847ef4c29b88854
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547669"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236072"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usar eventos quando apropriado
 
@@ -28,7 +28,7 @@ ms.locfileid: "69547669"
 |NomeDoTipo|UseEventsWhereAppropriate|
 |CheckId|CA1030|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -37,7 +37,7 @@ Um nome de método começa com um dos seguintes:
 - AddOn
 - RemoveOn
 - Ativar
-- Gera
+- gera
 
 Por padrão, essa regra só examina os métodos visíveis externamente, mas isso é [configurável](#configurability).
 
@@ -57,7 +57,7 @@ Suprimir um aviso dessa regra se o método não funcionar com o modelo de evento
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1030.api_surface = private, internal

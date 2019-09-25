@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 965e0d800bd7c725236d96499d2bf2d441b40412
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: efd30a783f534d76f7f7f3fa18fd181dbe7e98a1
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841098"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237231"
 ---
 # <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010: Examinar código quanto a vulnerabilidades de injeção de XAML
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841098"
 |NomeDoTipo|ReviewCodeForXamlInjectionVulnerabilities|
 |CheckId|CA3010|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Solicitação HTTP potencialmente não confiável de entrada atinge um <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> método de carga.
+A entrada de solicitação HTTP potencialmente não confiável atinge <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> um método de carregamento.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de ataques de injeção de XAML. XAML é uma linguagem de marcação que representa diretamente a instanciação e execução de objetos. Isso significa que os elementos criados em XAML podem interagir com recursos do sistema (por exemplo, acesso e o arquivo de sistema de rede e/s). Se um invasor pode controlar a entrada para um <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> carregar chamada de método, em seguida, o invasor pode executar o código.
+Ao trabalhar com entrada não confiável, lembre-se dos ataques de injeção XAML. XAML é uma linguagem de marcação que representa diretamente a instanciação e execução de objetos. Isso significa que os elementos criados em XAML podem interagir com recursos do sistema (por exemplo, acesso à rede e e/s do sistema de arquivos). Se um invasor puder controlar a entrada para uma <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> chamada de método de carregamento, o invasor poderá executar código.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP que atinja um <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> método de carga.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que carrega a XAML, essa regra não gerará um aviso.
+Essa regra tenta localizar entradas de solicitações HTTP que atingem um <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> método de carregamento.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que carrega o XAML, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Não carregar o XAML não confiável.
+Não carregue XAML não confiável.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima avisos dessa regra.
+Não suprimir avisos desta regra.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

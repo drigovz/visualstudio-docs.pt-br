@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bd269b099095326a260da7613bf3c2c402e864be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 746475e60bbe72c4ebfc51f13d0b2d4d0552ff62
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797698"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235187"
 ---
 # <a name="ca1300-specify-messageboxoptions"></a>CA1300: Especificar MessageBoxOptions
 
@@ -30,28 +30,28 @@ ms.locfileid: "62797698"
 |-|-|
 |NomeDoTipo|SpecifyMessageBoxOptions|
 |CheckId|CA1300|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Globalization|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um método chama uma sobrecarga da <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> método que não utilize um <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumento.
+Um método chama uma sobrecarga do <xref:System.Windows.Forms.MessageBox.Show%2A?displayProperty=fullName> método que não assume um <xref:System.Windows.Forms.MessageBoxOptions?displayProperty=fullName> argumento.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Para exibir uma caixa de mensagem corretamente para as culturas que usam uma ordem de leitura da direita para esquerda, passe o [. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) e [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) campos para o <xref:System.Windows.Forms.MessageBox.Show%2A> método. Examinar o <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> propriedade do controle recipiente para determinar se deve usar uma ordem de leitura da direita para esquerda.
+Para exibir uma caixa de mensagem corretamente para culturas que usam uma ordem de leitura da direita para a esquerda, passe os campos [MessageBoxOptions. RightAlign](<xref:System.Windows.Forms.MessageBoxOptions.RightAlign>) e [MessageBoxOptions. RtlReading](<xref:System.Windows.Forms.MessageBoxOptions.RtlReading>) para o <xref:System.Windows.Forms.MessageBox.Show%2A> método. Examine a <xref:System.Windows.Forms.Control.RightToLeft%2A?displayProperty=fullName> Propriedade do controle recipiente para determinar se deve usar uma ordem de leitura da direita para a esquerda.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, chame uma sobrecarga da <xref:System.Windows.Forms.MessageBox.Show%2A> método que usa um <xref:System.Windows.Forms.MessageBoxOptions> argumento.
+Para corrigir uma violação dessa regra, chame uma sobrecarga do <xref:System.Windows.Forms.MessageBox.Show%2A> método que usa um <xref:System.Windows.Forms.MessageBoxOptions> argumento.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, quando a biblioteca de código não será localizada para uma cultura que usa uma ordem de leitura da direita para esquerda.
+É seguro suprimir um aviso dessa regra quando a biblioteca de códigos não for localizada para uma cultura que usa uma ordem de leitura da direita para a esquerda.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método que exibe uma caixa de mensagem que tem opções que são apropriadas para a ordem de leitura da cultura. Um arquivo de recurso, que não é exibido, é necessário para compilar o exemplo. Siga os comentários no exemplo, para compilar o exemplo sem um arquivo de recurso e testar o recurso da direita para esquerda.
+O exemplo a seguir mostra um método que exibe uma caixa de mensagem que tem opções apropriadas para a ordem de leitura da cultura. Um arquivo de recurso, que não é mostrado, é necessário para criar o exemplo. Siga os comentários no exemplo para criar o exemplo sem um arquivo de recurso e para testar o recurso da direita para a esquerda.
 
 [!code-vb[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/VisualBasic/ca1300-specify-messageboxoptions_1.vb)]
 [!code-csharp[FxCop.Globalization.SpecifyMBOptions#1](../code-quality/codesnippet/CSharp/ca1300-specify-messageboxoptions_1.cs)]

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c3ba027ef2e663870d0af50bc6d2154133f7980c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62797324"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234537"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505: Evitar código de difícil manutenção
 
@@ -28,7 +28,7 @@ ms.locfileid: "62797324"
 |NomeDoTipo|AvoidUnmantainableCode|
 |CheckId|CA1505|
 |Categoria|Microsoft.Maintainability|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -36,19 +36,19 @@ Um tipo ou um método tem um baixo valor de índice de facilidade de manutençã
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O índice de facilidade de manutenção é calculado usando as seguintes métricas: linhas de código, o volume de programa e a complexidade ciclomática. Volume do programa é uma medida da dificuldade de compreensão de um tipo ou método que se baseia no número de operadores e operandos no código. A complexidade ciclomática é uma medida da complexidade estrutural do tipo ou método. Você pode aprender mais sobre as métricas de código em [medir a complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md).
+O índice de manutenção é calculado usando as seguintes métricas: linhas de código, volume de programas e complexidade ciclomática. O volume do programa é uma medida da dificuldade de entender um tipo ou método baseado no número de operadores e operandos no código. A complexidade de ciclomática é uma medida da complexidade estrutural do tipo ou do método. Você pode aprender mais sobre as métricas de código em [medir a complexidade e a manutenção do código gerenciado](../code-quality/code-metrics-values.md).
 
-Um índice de facilidade de manutenção baixa indica que um tipo ou método é provavelmente difícil de manter e seria um bom candidato para refazer o design.
+Um índice de manutenção baixa indica que um tipo ou método provavelmente é difícil de manter e seria um bom candidato para reformular.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir essa violação, recriar o tipo ou método e tente dividi-lo em menores e mais concentrados tipos ou métodos.
+Para corrigir essa violação, Reprojete o tipo ou o método e tente dividi-lo em tipos ou métodos menores e mais focados.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Você pode suprimir esse aviso quando o tipo ou método não pode ser dividido ou é considerado sustentável, apesar de seu tamanho grande.
+Você pode suprimir esse aviso quando o tipo ou método não puder ser dividido ou for considerado passível de manutenção, apesar de seu tamanho grande.
 
 ## <a name="see-also"></a>Consulte também
 
-- [Avisos de facilidade de manutenção](../code-quality/maintainability-warnings.md)
+- [Avisos de manutenção](../code-quality/maintainability-warnings.md)
 - [Medir complexidade e facilidade de manutenção do código gerenciado](../code-quality/code-metrics-values.md)

@@ -19,12 +19,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cc32db1aea9c5514a7548bc889b65463de3de3d5
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714694"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235111"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Não passar literais como parâmetros localizados
 
@@ -32,38 +32,38 @@ ms.locfileid: "66714694"
 |-|-|
 |NomeDoTipo|DoNotPassLiteralsAsLocalizedParameters|
 |CheckId|CA1303|
-|Categoria|Microsoft.Globalization|
-|Alteração Significativa|Não separável|
+|Categoria|Microsoft. Globalization|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um método passa uma cadeia de caracteres literal como um parâmetro a um método ou Construtor de .NET e essa cadeia de caracteres deve ser localizável.
+Um método passa um literal de cadeia de caracteres como um parâmetro para um construtor ou método .NET e essa cadeia de caracteres deve ser localizável.
 
-Esse aviso é acionado quando uma cadeia de caracteres literal é passada como um valor para um parâmetro ou uma propriedade e um ou mais dos casos a seguir forem verdadeira:
+Esse aviso é gerado quando uma cadeia de caracteres literal é passada como um valor para um parâmetro ou propriedade e um ou mais dos seguintes casos é verdadeiro:
 
 - O <xref:System.ComponentModel.LocalizableAttribute> atributo do parâmetro ou da propriedade é definido como true.
 
-- O nome de parâmetro ou a propriedade contém "Text", "Mensagem" ou "Legenda".
+- O nome do parâmetro ou da propriedade contém "texto", "mensagem" ou "legenda".
 
-- O nome do parâmetro de cadeia de caracteres que é passado para um método console. Write ou console. WriteLine é "valor" ou "formato".
+- O nome do parâmetro de cadeia de caracteres que é passado para um método Console. Write ou console. WriteLine é "value" ou "Format".
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Literais de cadeia de caracteres que são inseridos no código-fonte são difíceis de localizar.
+Literais de cadeia de caracteres inseridos no código-fonte são difíceis de localizar.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, substitua a cadeia de caracteres literal com uma cadeia de caracteres recuperada por meio de uma instância da <xref:System.Resources.ResourceManager> classe.
+Para corrigir uma violação dessa regra, substitua o literal da cadeia de caracteres por uma cadeia de caracteres recuperada <xref:System.Resources.ResourceManager> por meio de uma instância da classe.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se a biblioteca de código não será localizada ou se a cadeia de caracteres não é exposta ao usuário final ou um desenvolvedor que usa a biblioteca de código.
+É seguro suprimir um aviso dessa regra se a biblioteca de códigos não for localizada ou se a cadeia de caracteres não for exposta ao usuário final ou a um desenvolvedor usando a biblioteca de códigos.
 
-Os usuários podem eliminar o ruído em relação a métodos que não devem ser passados cadeias de caracteres localizadas, renomeando o parâmetro ou a propriedade ou marcando esses itens como condicional.
+Os usuários podem eliminar ruídos em relação a métodos que não devem passar cadeias de caracteres localizadas renomeando o parâmetro ou a propriedade, ou marcando esses itens como condicionais.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método que lança uma exceção quando qualquer um dos dois argumentos estão fora do intervalo. Para o primeiro argumento, o construtor de exceção é passado uma cadeia de caracteres literal, o que viola essa regra. Para o segundo argumento, o construtor corretamente é passado uma cadeia de caracteres recuperada por meio de um <xref:System.Resources.ResourceManager>.
+O exemplo a seguir mostra um método que gera uma exceção quando qualquer um dos dois argumentos está fora do intervalo. Para o primeiro argumento, o construtor de exceção recebe uma cadeia de caracteres literal, que viola essa regra. Para o segundo argumento, o Construtor passa corretamente uma cadeia de caracteres recuperada <xref:System.Resources.ResourceManager>por meio de um.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]

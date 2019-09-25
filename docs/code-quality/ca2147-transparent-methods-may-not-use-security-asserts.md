@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1b56001f5a083317911edde9282b66758deb1b6
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 8fa5a17e7ec1438f104c9bf2f746df26dd97ed51
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920724"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231964"
 ---
 # <a name="ca2147-transparent-methods-may-not-use-security-asserts"></a>CA2147: Métodos transparentes podem não usar declarações de segurança
 
@@ -29,7 +29,7 @@ ms.locfileid: "68920724"
 |NomeDoTipo|SecurityTransparentCodeShouldNotAssert|
 |CheckId|CA2147|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 O código marcado como <xref:System.Security.SecurityTransparentAttribute> não concedeu permissões suficientes para Assert.

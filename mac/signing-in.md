@@ -3,14 +3,14 @@ title: Entrando no Visual Studio para Mac
 description: Como centrar entrar no Visual Studio para Mac
 author: asb3993
 ms.author: amburns
-ms.date: 08/08/2019
+ms.date: 09/18/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: a3911826314710f5b47fb248e452b4a10b56e2dd
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 7b1e912583cf0ac63307bf1c75912059c39fe427
+ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957364"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71213667"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Entrar no Visual Studio para Mac
 
@@ -29,17 +29,17 @@ Se você optar por não entrar imediatamente, poderá usar uma cópia de avalia�
 > [!TIP]
 > Verifique se você está conectado à Internet antes de entrar no Visual Studio para Mac. > As assinaturas só podem ser ativadas online. Se você não está conectado, escolha "Fazer isso mais tarde" e faça login pelo menu quando se conectar.
 
-Para entrar no Visual Studio para Mac, faça o seguinte:
+Para entrar no Visual Studio para Mac na primeira inicialização, execute as seguintes etapas:
 
 1. Clique no botão **Entrar com a Microsoft** na janela de entrada:
 
-    ![Caixa de diálogo Contas no Visual Studio para Mac](media/signing-in-image12.png)
+    ![Caixa de diálogo Contas no Visual Studio para Mac](media/ide-tour-2019-start-signin.png)
 
 2. Insira suas Credenciais da Microsoft:
 
     ![Caixa de diálogo de credenciais da Microsoft](media/signing-in-image13.png)
 
-3. Depois de fazer logon, você verá a janela de início do Visual Studio 2019 para Mac. Desse ponto, é possível abrir ou criar um projeto:
+4. Depois de fazer logon, você verá uma opção para selecionar atalhos de teclado. Escolha a opção que deseja usar e **continue**. Em seguida, você será solicitado com a janela inicial do Visual Studio 2019 para Mac. Desse ponto, é possível abrir ou criar um projeto:
 
     ![Você entrou com sucesso](media/signing-in-image14.png)
 

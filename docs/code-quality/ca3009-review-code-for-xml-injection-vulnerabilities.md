@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f0b0ba39c8edee9b2b8df608b47a00e6353538f
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: 37ba7e8664c6fa24e302dbebd38643a0c451114c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841063"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237251"
 ---
 # <a name="ca3009-review-code-for-xml-injection-vulnerabilities"></a>CA3009: Examinar código quanto a vulnerabilidades de injeção de XML
 
@@ -24,37 +24,37 @@ ms.locfileid: "65841063"
 |NomeDoTipo|ReviewCodeForXmlInjectionVulnerabilities|
 |CheckId|CA3009|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Entradas de solicitação HTTP potencialmente não confiáveis alcança a saída XML bruta.
+A entrada de solicitação HTTP potencialmente não confiável alcança a saída XML bruta.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de ataques de injeção XML. Um invasor pode usar a injeção de XML para inserir caracteres especiais em um documento XML, tornando o documento inválida XML. Ou, um invasor pode inserir maliciosamente nós XML de sua escolha.
+Ao trabalhar com entrada não confiável, lembre-se de ataques de injeção de XML. Um invasor pode usar a injeção de XML para inserir caracteres especiais em um documento XML, tornando o documento XML inválido. Ou, um invasor poderia inserir maliciosamente nós XML de sua escolha.
 
-Essa regra tenta encontrar a entrada de solicitações HTTP atingindo uma gravação XML bruta.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que grava o XML bruto, essa regra não gerará um aviso.
+Essa regra tenta localizar entrada de solicitações HTTP que atingem uma gravação XML bruta.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que grava XML bruto, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Não gravar o XML bruto. Em vez disso, use métodos ou propriedades que XML codificar sua entrada.
+Não gravar XML bruto. Em vez disso, use métodos ou propriedades que o XML codifique sua entrada.
 
-Ou, codificar o XML de entrada antes de gravar o XML bruto.
+Ou, a entrada de codificação XML antes de gravar XML bruto.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima avisos dessa regra.
+Não suprimir avisos desta regra.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

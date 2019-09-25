@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c9fbb4b8b11b0fce7d3e7530eef80af19b35b73
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
+ms.openlocfilehash: a459be8c8ab028581c850f5b5770a95cb70e3510
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65841025"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237200"
 ---
 # <a name="ca3011-review-code-for-dll-injection-vulnerabilities"></a>CA3011: Examinar código quanto a vulnerabilidades de injeção de DLL
 
@@ -24,35 +24,35 @@ ms.locfileid: "65841025"
 |NomeDoTipo|ReviewCodeForDllInjectionVulnerabilities|
 |CheckId|CA3011|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Solicitação HTTP potencialmente não confiável entrada atinge um método que carrega um assembly.
+A entrada de solicitação HTTP potencialmente não confiável alcança um método que carrega um assembly.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Ao trabalhar com entradas não confiáveis, lembre-se de carregar o código não confiável. Se seu aplicativo web for carregada em código não confiável, um invasor poderá injetar DLLs mal-intencionado no seu processo e executar código mal-intencionado.
+Ao trabalhar com uma entrada não confiável, lembre-se de carregar código não confiável. Se o seu aplicativo Web carregar código não confiável, um invasor poderá injetar DLLs mal-intencionadas em seu processo e executar código mal-intencionado.
 
-Essa regra tenta encontrar a entrada de uma solicitação HTTP que atinja um método que carrega um assembly.
-
-> [!NOTE]
-> Essa regra não é possível acompanhar dados entre assemblies. Por exemplo, se um assembly lê a entrada de solicitação HTTP e, em seguida, passa-o para outro assembly que carrega um assembly, essa regra não gerará um aviso.
+Essa regra tenta localizar a entrada de uma solicitação HTTP que atinge um método que carrega um assembly.
 
 > [!NOTE]
-> Há um limite configurável para o nível de profundidade essa regra analisará o fluxo de dados em chamadas de método. Ver [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
+> Esta regra não pode rastrear dados entre assemblies. Por exemplo, se um assembly lê a entrada da solicitação HTTP e a passa para outro assembly que carrega um assembly, essa regra não produzirá um aviso.
+
+> [!NOTE]
+> Há um limite configurável para o quão profundo essa regra irá analisar o fluxo de dados entre chamadas de método. Consulte [configuração do analisador](https://github.com/dotnet/roslyn-analyzers/blob/master/docs/Analyzer%20Configuration.md#dataflow-analysis) para saber como configurar o limite em um arquivo EditorConfig.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Não carregar as DLLs não confiáveis de entrada do usuário.
+Não carregue DLLs não confiáveis da entrada do usuário.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima avisos dessa regra.
+Não suprimir avisos desta regra.
 
-## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
+## <a name="pseudo-code-examples"></a>Exemplos de pseudocódigo
 
-### <a name="violation"></a>Violação
+### <a name="violation"></a>Infra
 
 ```csharp
 using System;

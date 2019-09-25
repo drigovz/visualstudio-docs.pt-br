@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c0cd59ec30ce45c94ac3422c4271959d74073bff
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: cf2e30956879c0c61bb57d65b89445962f34959a
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920057"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237902"
 ---
 # <a name="ca2239-provide-deserialization-methods-for-optional-fields"></a>CA2239: Fornecer métodos de desserialização para campos opcionais
 
@@ -31,7 +31,7 @@ ms.locfileid: "68920057"
 |NomeDoTipo|ProvideDeserializationMethodsForOptionalFields|
 |CheckId|CA2239|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um tipo tem um campo marcado com o <xref:System.Runtime.Serialization.OptionalFieldAttribute?displayProperty=fullName> atributo e o tipo não fornece métodos de manipulação de eventos de eliminação de serialização.

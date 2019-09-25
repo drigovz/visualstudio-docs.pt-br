@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 864918b7ce394e9f096c6fa9dea9389957983177
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921773"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234157"
 ---
 # <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identificadores devem ter maiúsculas e minúsculas corretas
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921773"
 |NomeDoTipo|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
 |Categoria|Microsoft.Naming|
-|Alteração Significativa|Quebra-quando gerado em assemblies, namespaces, tipos, membros e parâmetros.<br /><br /> Não separável-quando acionado em parâmetros de tipo genérico.|
+|Alteração significativa|Quebra-quando gerado em assemblies, namespaces, tipos, membros e parâmetros.<br /><br /> Não separável-quando acionado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
 

@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40cb2a3674884a9fb4f1449c9afa2e0a2d27050f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: df5c0db4e9e141e5833893bbbb447328eab8851e
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62808554"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233351"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marque assemblies com NeutralResourcesLanguageAttribute
 
@@ -28,43 +28,43 @@ ms.locfileid: "62808554"
 |NomeDoTipo|MarkAssembliesWithNeutralResourcesLanguage|
 |CheckId|CA1824|
 |Categoria|Microsoft.Performance|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um assembly contém um **ResX**-com base em recursos, mas não tem o <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a ele.
+Um assembly contém um recurso baseado em **resx**, mas não tem o <xref:System.Resources.NeutralResourcesLanguageAttribute?displayProperty=fullName> aplicado a ele.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-O <xref:System.Resources.NeutralResourcesLanguageAttribute> atributo informa o Gerenciador de recursos da cultura padrão de um aplicativo. Se os recursos da cultura padrão são inseridos no assembly de principal do aplicativo, e <xref:System.Resources.ResourceManager> tem que recuperar os recursos que pertencem à mesma cultura que a cultura padrão, o <xref:System.Resources.ResourceManager> usa automaticamente os recursos localizados no assembly principal em vez de procurar por um assembly satélite. Isso ignora a investigação de assembly usual, melhora o desempenho da pesquisa para o primeiro recurso de carga e pode reduzir o conjunto de trabalho.
+O <xref:System.Resources.NeutralResourcesLanguageAttribute> atributo informa o Gerenciador de recursos da cultura padrão de um aplicativo. Se os recursos da cultura padrão forem inseridos no assembly principal do aplicativo e <xref:System.Resources.ResourceManager> tiver que recuperar recursos que pertençam à mesma cultura que a cultura padrão, o <xref:System.Resources.ResourceManager> usará automaticamente os recursos localizados no assembly principal em vez de procurar por um assembly satélite. Isso ignora a investigação de assembly usual, melhora o desempenho da pesquisa para o primeiro recurso que você carrega e pode reduzir seu conjunto de trabalho.
 
 > [!TIP]
-> Ver [empacotamento e implantação de recursos](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) para o processo que <xref:System.Resources.ResourceManager> usa para investigar para arquivos de recurso.
+> Consulte [empacotando e implantando recursos](/dotnet/framework/resources/packaging-and-deploying-resources-in-desktop-apps) para o <xref:System.Resources.ResourceManager> processo que o usa para investigar os arquivos de recurso.
 
 ## <a name="fix-violations"></a>Corrigir violações
 
-Para corrigir uma violação dessa regra, adicione o atributo ao assembly e especificar o idioma dos recursos de cultura neutra.
+Para corrigir uma violação dessa regra, adicione o atributo ao assembly e especifique o idioma dos recursos da cultura neutra.
 
 ### <a name="to-specify-the-neutral-language-for-resources"></a>Para especificar o idioma neutro para recursos
 
-1. Na **Gerenciador de soluções**, clique em seu projeto e, em seguida, selecione **propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse em seu projeto e selecione **Propriedades**.
 
-2. Selecione o **Application** guia e, em seguida, selecione **informações de Assembly**.
+2. Selecione a guia **aplicativo** e, em seguida, selecione **informações do assembly**.
 
    > [!NOTE]
-   > Se seu projeto é um projeto .NET Standard ou .NET Core, selecione a **pacote** guia.
+   > Se o seu projeto for um projeto .NET Standard ou .NET Core, selecione a guia **pacote** .
 
-3. Selecione o idioma do **idioma neutro** ou **linguagem de Assembly neutra** lista suspensa.
+3. Selecione o idioma na lista suspensa **idioma neutro** ou **idioma neutro do assembly** .
 
 4. Selecione **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É permitido para suprimir um aviso nessa regra. No entanto, pode prejudicar o desempenho da inicialização.
+É permitido suprimir um aviso dessa regra. No entanto, o desempenho da inicialização pode ser prejudicado.
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.Resources.NeutralResourcesLanguageAttribute>
 - [Recursos em aplicativos da área de trabalho (.NET)](/dotnet/framework/resources/)
-- [CA1703 - cadeias de caracteres de recurso devem ter grafia correta](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
-- [Ca1701 as - cadeia de caracteres de recurso palavras compostas devem ter maiusculas e minúsculas corretamente](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1703-as cadeias de caracteres de recursos devem ser digitadas corretamente](../code-quality/ca1703-resource-strings-should-be-spelled-correctly.md)
+- [CA1701-palavras compostas da cadeia de caracteres de recurso devem estar em algum meio correto](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)

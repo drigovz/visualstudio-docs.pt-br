@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 74484c5f014c9a677c321a0d9fed649f016ea3c9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: b52d98716a774c05ca085e2b7023a5d1faa69baa
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69546875"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71237958"
 ---
 # <a name="ca2234-pass-systemuri-objects-instead-of-strings"></a>CA2234: Passar objetos System.Uri em vez de cadeias de caracteres
 
@@ -32,7 +32,7 @@ ms.locfileid: "69546875"
 |NomeDoTipo|PassSystemUriObjectsInsteadOfStrings|
 |CheckId|CA2234|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -54,7 +54,7 @@ Para corrigir uma violação dessa regra, chame a sobrecarga que usa o <xref:Sys
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca2234.api_surface = private, internal

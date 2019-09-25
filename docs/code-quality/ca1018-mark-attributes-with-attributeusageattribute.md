@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 78917bcd4c67e1da205595bac07c8e0e5947318d
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 82a1ed8610ce84279f5fde3b802d976a3e766d99
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923067"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71236246"
 ---
 # <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos com AttributeUsageAttribute
 
@@ -31,7 +31,7 @@ ms.locfileid: "68923067"
 |NomeDoTipo|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 O <xref:System.AttributeUsageAttribute?displayProperty=fullName> atributo não está presente no atributo personalizado.

@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b99aae681dbe7bbeece557a15d78aed0b3f07f6f
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62806596"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230827"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 
@@ -31,15 +31,15 @@ ms.locfileid: "62806596"
 |NomeDoTipo|OperationsShouldNotOverflow|
 |CheckId|CA2233|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um método executa uma operação aritmética e não valida os operandos com antecedência para evitar estouro.
+Um método executa uma operação aritmética e não valida os operandos com antecedência para evitar o estouro.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Não execute operações aritméticas sem primeiro validar os operandos para certificar-se de que o resultado da operação não está fora do intervalo de valores possíveis para os tipos de dados envolvidos. Dependendo do contexto de execução e os tipos de dados envolvidos, o estouro aritmético pode resultar em qualquer um uma <xref:System.OverflowException?displayProperty=fullName> ou os bits mais significativos do resultado é descartada.
+Não execute operações aritméticas sem primeiro validar os operandos para garantir que o resultado da operação não esteja fora do intervalo de valores possíveis para os tipos de dados envolvidos. Dependendo do contexto de execução e dos tipos de dados envolvidos, o estouro aritmético pode resultar em um <xref:System.OverflowException?displayProperty=fullName> ou nos bits mais significativos do resultado descartados.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -47,16 +47,16 @@ Para corrigir uma violação dessa regra, valide os operandos antes de executar 
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso nessa regra, se os valores possíveis dos operandos nunca fará com que a operação aritmética estourar.
+É seguro suprimir um aviso dessa regra se os valores possíveis dos operandos nunca causarem o estouro da operação aritmética.
 
 ## <a name="example-of-a-violation"></a>Exemplo de uma violação
 
-Um método no exemplo a seguir manipula um inteiro que viola essa regra. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] requer o **remover** opção de estouro de inteiro a ser desabilitado para que isso seja acionado.
+Um método no exemplo a seguir manipula um inteiro que viola essa regra. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]requer que a opção **remover** estouro de inteiro seja desabilitada para que isso seja acionado.
 
 [!code-vb[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_1.vb)]
 [!code-csharp[FxCop.Usage.OperationOverflow#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_1.cs)]
 
-Se o método neste exemplo é passado <xref:System.Int32.MinValue?displayProperty=fullName>, a operação seria estouro negativo. Isso faz com que o bit mais significativo do resultado seja descartada. O código a seguir mostra como isso ocorre.
+Se o método neste exemplo for passado <xref:System.Int32.MinValue?displayProperty=fullName>, a operação fluirá. Isso faz com que o bit mais significativo do resultado seja Descartado. O código a seguir mostra como isso ocorre.
 
 ```csharp
 public static void Main()
@@ -83,30 +83,30 @@ Saída:
 
 ## <a name="fix-with-input-parameter-validation"></a>Corrigir com validação de parâmetro de entrada
 
-O exemplo a seguir corrige a violação anterior ao validar o valor da entrada.
+O exemplo a seguir corrige a violação anterior, validando o valor da entrada.
 
 [!code-csharp[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_2.cs)]
 [!code-vb[FxCop.Usage.OperationOverflowFixed#1](../code-quality/codesnippet/VisualBasic/ca2233-operations-should-not-overflow_2.vb)]
 
 ## <a name="fix-with-a-checked-block"></a>Corrigir com um bloco marcado
 
-O exemplo a seguir corrige a violação anterior ao encapsular a operação em um bloco marcado. Se a operação causa um estouro, um <xref:System.OverflowException?displayProperty=fullName> será lançada.
+O exemplo a seguir corrige a violação anterior, encapsulando a operação em um bloco marcado. Se a operação causar um estouro, um <xref:System.OverflowException?displayProperty=fullName> será gerado.
 
-Não há suporte para blocos marcados no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
+Não há suporte para blocos verificados no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)].
 
 [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../code-quality/codesnippet/CSharp/ca2233-operations-should-not-overflow_3.cs)]
 
-## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar verificado estouro/estouro negativo aritmético
+## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar estouro aritmético/negativo selecionado
 
-Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale a disposição de cada operação de inteiro em um bloco verificado.
+Se você ativar o estouro aritmético/negativo selecionado no C#, será equivalente a encapsular cada operação de inteiro em um bloco marcado.
 
-Para ativar verificado estouro/estouro negativo aritmético em c#:
+Para ativar o estouro aritmético/negativo selecionado em C#:
 
-1. Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
+1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e escolha **Propriedades**.
 
 2. Selecione a guia **Compilar** e clique em **Avançado**.
 
-3. Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
+3. Selecione **verificar estouro aritmético/Subfluxo** e clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 

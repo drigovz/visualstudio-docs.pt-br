@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de64e0271370a3cdcc6f0963dbf06925621b9b65
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 5283c96a484f47fe280a07c5889b8db877db5ffc
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920184"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71230994"
 ---
 # <a name="ca2223-members-should-differ-by-more-than-return-type"></a>CA2223: Os membros devem ser diferentes em algo além de um tipo de retorno
 
@@ -28,7 +28,7 @@ ms.locfileid: "68920184"
 |NomeDoTipo|MembersShouldDifferByMoreThanReturnType|
 |CheckId|CA2223|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Dois membros públicos ou protegidos têm assinaturas que são idênticas, exceto pelo tipo de retorno.

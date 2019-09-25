@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 732b3d683802c50042ee40fee1549a9d247e2470
-ms.sourcegitcommit: 283f2dbce044a18e9f6ac6398f6fc78e074ec1ed
+ms.openlocfilehash: 7a498a01741b86c16a52f790489dc8ce62aad06c
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65804971"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233236"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Descartar objetos antes de perder o escopo
 
@@ -32,53 +32,53 @@ ms.locfileid: "65804971"
 |NomeDoTipo|DisposeObjectsBeforeLosingScope|
 |CheckId|CA2000|
 |Categoria|Microsoft.Reliability|
-|Alteração Significativa|Não são significativas|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um objeto de local de um <xref:System.IDisposable> tipo é criado, mas o objeto não for descartado antes de todas as referências ao objeto estão fora do escopo.
+Um objeto local de um <xref:System.IDisposable> tipo é criado, mas o objeto não é descartado antes que todas as referências ao objeto estejam fora do escopo.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Se um objeto descartável não for explicitamente descartado antes de todas as referências a ele estejam fora do escopo, o objeto será descartado em algum momento indeterminado quando o coletor de lixo execute o finalizador do objeto. Como pode ocorrer um evento excepcional que impedirá que o finalizador do objeto seja executado, o objeto deve ser explicitamente descartado.
+Se um objeto descartável não for explicitamente descartado antes que todas as referências a ele estejam fora do escopo, o objeto será descartado em algum momento indeterminado quando o coletor de lixo executar o finalizador do objeto. Como pode ocorrer um evento excepcional que impedirá que o finalizador do objeto seja executado, o objeto deve ser explicitamente descartado em vez disso.
 
 ### <a name="special-cases"></a>Casos especiais
 
-A regra CA2000 não é acionado para objetos dos seguintes tipos de locais, mesmo se o objeto não for descartado:
+A regra CA2000 não é acionada para objetos locais dos seguintes tipos, mesmo que o objeto não seja descartado:
 
 - <xref:System.IO.Stream?displayProperty=nameWithType>
 - <xref:System.IO.TextReader?displayProperty=nameWithType>
 - <xref:System.IO.TextWriter?displayProperty=nameWithType>
 - <xref:System.Resources.IResourceReader?displayProperty=nameWithType>
 
-Passando um objeto de um desses tipos para um construtor e, em seguida, atribuí-la a um campo indicam um *dispose de transferência de propriedade* para o tipo construído recentemente. Ou seja, o tipo construído recentemente agora é responsável pelo descarte do objeto. Se seu código passa um objeto de um desses tipos para um construtor, nenhuma violação de regra CA2000 ocorre mesmo se o objeto não for descartado antes de todas as referências a ele estão fora do escopo.
+Passar um objeto de um desses tipos para um construtor e, em seguida, atribuí-lo a um campo indica uma *transferência de propriedade de descarte* para o tipo recém-criado. Ou seja, o tipo recém-criado agora é responsável por descartar o objeto. Se o seu código passar um objeto de um desses tipos para um construtor, nenhuma violação da regra CA2000 ocorrerá mesmo que o objeto não seja descartado antes que todas as referências a ele fiquem fora do escopo.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, chame <xref:System.IDisposable.Dispose%2A> no objeto antes de todas as referências a ele estejam fora do escopo.
+Para corrigir uma violação dessa regra, chame <xref:System.IDisposable.Dispose%2A> no objeto antes que todas as referências a ele estejam fora do escopo.
 
-Você pode usar o [ `using` instrução](/dotnet/csharp/language-reference/keywords/using-statement) ([ `Using` ](/dotnet/visual-basic/language-reference/statements/using-statement) no Visual Basic) para encapsular os objetos que implementam <xref:System.IDisposable>. Objetos que são encapsulados em dessa maneira são descartados automaticamente no final do `using` bloco. No entanto, as situações a seguir não devem ou não podem ser tratadas com uma `using` instrução:
+Você pode usar a [ `using` instrução](/dotnet/csharp/language-reference/keywords/using-statement) ([`Using`](/dotnet/visual-basic/language-reference/statements/using-statement) em Visual Basic) para encapsular objetos que <xref:System.IDisposable>implementam. Os objetos que são encapsulados dessa maneira são automaticamente descartados no final `using` do bloco. No entanto, as seguintes situações não devem ou não ser manipuladas com uma `using` instrução:
 
-- Para retornar um objeto descartável, o objeto deve construído em uma `try/finally` bloquear fora de um `using` bloco.
+- Para retornar um objeto descartável, o objeto deve ser construído `try/finally` em um bloco fora `using` de um bloco.
 
 - Não inicializar membros de um objeto descartável no construtor de uma `using` instrução.
 
-- Quando os construtores que são protegidos pelo manipulador de exceção apenas um estão aninhados na [parte de aquisição de um `using` instrução](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), uma falha no construtor externa pode resultar no objeto criado pelo construtor aninhado nunca que está sendo fechado. No exemplo a seguir, uma falha na <xref:System.IO.StreamReader> construtor pode resultar no <xref:System.IO.FileStream> objeto nunca seja fechada. CA2000 sinaliza uma violação da regra nesse caso.
+- Quando os construtores que são protegidos por apenas um manipulador de exceção são aninhados na [parte de aquisição `using` de uma instrução](/dotnet/csharp/language-reference/language-specification/statements#the-using-statement), uma falha no Construtor externo pode fazer com que o objeto criado pelo Construtor aninhado nunca seja fechado. No exemplo a seguir, uma falha no <xref:System.IO.StreamReader> Construtor pode fazer com que o <xref:System.IO.FileStream> objeto nunca seja fechado. CA2000 sinaliza uma violação da regra nesse caso.
 
    ```csharp
    using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))
    { ... }
    ```
 
-- Objetos dinâmicos devem usar um objeto de sombra para implementar o padrão de descarte de <xref:System.IDisposable> objetos.
+- Objetos dinâmicos devem usar um objeto Shadow para implementar o padrão Dispose <xref:System.IDisposable> de objetos.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra, a menos que:
+Não suprimir um aviso desta regra, a menos que:
 
-- Chamei um método em seu objeto que chama `Dispose`, tais como <xref:System.IO.Stream.Close%2A>
+- Você chamou um método em seu objeto que chama `Dispose`, como<xref:System.IO.Stream.Close%2A>
 - O método que gerou o aviso retorna um <xref:System.IDisposable> objeto que encapsula o objeto
-- O método de alocação não tem propriedade dispose; ou seja, a responsabilidade de descartar o objeto é transferida para outro objeto ou wrapper que criou no método e retornado ao chamador
+- O método de alocação não tem a propriedade Dispose; ou seja, a responsabilidade de descartar o objeto é transferida para outro objeto ou wrapper que é criado no método e retornado ao chamador
 
 ## <a name="related-rules"></a>Regras relacionadas
 
@@ -87,19 +87,19 @@ Não suprima um aviso nessa regra, a menos que:
 
 ## <a name="example"></a>Exemplo
 
-Se você estiver implementando um método que retorna um objeto descartável, use um bloco try/finally sem um bloco catch para certificar-se de que o objeto é descartado. Ao usar um bloco try/finally, você pode permitir que exceções a ser gerado no ponto de falha e certifique-se de que o objeto é descartado.
+Se você estiver implementando um método que retorna um objeto descartável, use um bloco try/finally sem um bloco catch para certificar-se de que o objeto foi Descartado. Usando um bloco try/finally, você permite que exceções sejam geradas no ponto de falha e certifique-se de que o objeto seja Descartado.
 
-No método OpenPort1, a chamada para abrir o objeto ISerializable SerialPort ou a chamada ao SomeMethod pode falhar. Um aviso CA2000 é gerado dessa implementação.
+No método OpenPort1, a chamada para abrir o objeto ISerializable SerialPort ou a chamada para SomeMethod pode falhar. Um aviso CA2000 é gerado nessa implementação.
 
-No método OpenPort2, dois objetos de SerialPort são declarado e está definida como null:
+No método OpenPort2, dois objetos SerialPort são declarados e definidos como NULL:
 
-- `tempPort`, que é usado para testar as operações do método tenha êxito.
+- `tempPort`, que é usado para testar se as operações do método são bem-sucedidos.
 
-- `port`, que é usado para o valor retornado do método.
+- `port`, que é usado para o valor de retorno do método.
 
-O `tempPort` é criado e aberto em um `try` bloco e qualquer outro necessários o trabalho é executado no mesmo `try` bloco. No final do `try` bloco, a porta aberta é atribuído para o `port` objeto que será retornado e o `tempPort` objeto é definido como `null`.
+O `tempPort` é construído e aberto em um `try` bloco, e qualquer outro trabalho necessário é executado no mesmo `try` bloco. No final do `try` bloco, a porta aberta é atribuída `port` ao objeto que será retornado e o `tempPort` objeto será definido como `null`.
 
-O `finally` bloco verifica o valor de `tempPort`. Se não for nulo, uma operação no método tiver falhado, e `tempPort` está fechado para certificar-se de que todos os recursos são liberados. O objeto de porta retornada conterá o objeto de SerialPort aberto se as operações do método foi bem-sucedida, ou ele será nulo se uma operação falhou.
+O `finally` bloco verifica o valor de `tempPort`. Se não for NULL, uma operação no método terá falhado e `tempPort` será fechada para garantir que todos os recursos sejam liberados. O objeto de porta retornado conterá o objeto SerialPort aberto se as operações do método tiverem êxito ou serão nulas se uma operação falhar.
 
 ```csharp
 public SerialPort OpenPort1(string portName)
@@ -172,11 +172,11 @@ End Function
 
 ## <a name="example"></a>Exemplo
 
-Por padrão, o compilador do Visual Basic tem todos os operadores aritméticos a verificação de estouro. Portanto, qualquer operação aritmética de Visual Basic pode lançar uma <xref:System.OverflowException>. Isso pode levar a inesperado violações de regras como CA2000. Por exemplo, a seguinte função CreateReader1 produzirá uma violação de CA2000, porque o compilador do Visual Basic está emitindo um instrução para a adição que poderia lançar uma exceção que faria com que o StreamReader para não ser descartado de verificação de estouro.
+Por padrão, o compilador Visual Basic tem todos os operadores aritméticos verificam o estouro. Portanto, qualquer Visual Basic operação aritmética pode gerar um <xref:System.OverflowException>. Isso pode levar a violações inesperadas em regras como CA2000. Por exemplo, a seguinte função CreateReader1 produzirá uma violação de CA2000, pois o compilador de Visual Basic está emitindo uma instrução de verificação de estouro para a adição que poderia gerar uma exceção que faria com que StreamReader não fosse descartado.
 
-Para corrigir isso, você pode desabilitar a emissão de verificações de estouro pelo compilador do Visual Basic em seu projeto ou você pode modificar seu código como a seguinte função CreateReader2.
+Para corrigir isso, você pode desabilitar a emissão de verificações de estouro pelo compilador Visual Basic em seu projeto ou pode modificar seu código como na seguinte função CreateReader2.
 
-Para desabilitar a emissão de verificações de estouro, o nome do projeto no Gerenciador de soluções com o botão direito e, em seguida, clique em **propriedades**. Clique em **Compile**, clique em **opções avançadas de compilação**e, em seguida, marque **remover verificações de estouro de inteiro**.
+Para desabilitar a emissão de verificações de estouro, clique com o botão direito do mouse no nome do projeto em Gerenciador de Soluções e clique em **Propriedades**. Clique em **Compilar**, clique em **Opções de compilação avançadas**e marque **Remover verificações de estouro de inteiro**.
 
 [!code-vb[FxCop.Reliability.CA2000.DisposeObjectsBeforeLosingScope#1](../code-quality/codesnippet/VisualBasic/ca2000-dispose-objects-before-losing-scope-vboverflow_1.vb)]
 

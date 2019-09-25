@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a59346cb70269d4d2b405279fc9ea5573a879b1e
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 8eb881da0a7ed243bda35079f617a314053f2d85
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547009"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231299"
 ---
 # <a name="ca2214-do-not-call-overridable-methods-in-constructors"></a>CA2214: Não chamar métodos substituíveis em construtores
 
@@ -31,7 +31,7 @@ ms.locfileid: "69547009"
 |NomeDoTipo|DoNotCallOverridableMethodsInConstructors|
 |CheckId|CA2214|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Sem interrupção|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
@@ -42,7 +42,7 @@ O construtor de um tipo sem lacre chama um método virtual definido em sua class
 Quando um método virtual é chamado, o tipo real que executa o método não é selecionado até o tempo de execução. Quando um construtor chama um método virtual, é possível que o construtor da instância que invoca o método não tenha sido executado.
 
 > [!NOTE]
-> A implementação de análise herdada dessa regra tem uma mensagem de diagnóstico diferente**de "\[nome do Construtor] contém uma cadeia de chamada que resulta em uma chamada para um método virtual definido pela classe. Examine a seguinte pilha de chamadas para consequências**indesejadas ". A implementação de analisadores do [FxCop](install-fxcop-analyzers.md) dessa regra tem uma mensagem de diagnóstico "**não chamar métodos substituíveis em construtores**".
+> A implementação de análise herdada dessa regra tem uma mensagem de diagnóstico diferente**de "\[nome do Construtor] contém uma cadeia de chamada que resulta em uma chamada para um método virtual definido pela classe. Examine a seguinte pilha de chamadas para consequências**indesejadas ". A implementação de [analisadores do FxCop](install-fxcop-analyzers.md) dessa regra tem uma mensagem de diagnóstico "**não chamar métodos substituíveis em construtores**".
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

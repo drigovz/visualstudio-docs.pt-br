@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a424e3c884d47b7deb848b418fbf0f3344d6c379
-ms.sourcegitcommit: 5483e399f14fb01f528b3b194474778fd6f59fa6
+ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/05/2019
-ms.locfileid: "66714739"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71234742"
 ---
 # <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Métodos de registro COM devem ser correspondidos
 
@@ -30,20 +30,20 @@ ms.locfileid: "66714739"
 |-|-|
 |NomeDoTipo|ComRegistrationMethodsShouldBeMatched|
 |CheckId|CA1410|
-|Categoria|Microsoft.Interoperability|
-|Alteração Significativa|Não são significativas|
+|Categoria|Microsoft. Interoperability|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> de atributo, mas não declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo, ou vice-versa.
+Um tipo declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo, mas não declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo ou vice-versa.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Para clientes do modelo de objeto de componente (COM) criar um tipo .NET, o tipo deve ser registrado pela primeira vez. Se ele estiver disponível, um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo é chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo é chamado durante o processo de cancelamento de registro para reverter as operações do método de registro.
+Para clientes de Component Object Model (COM) para criar um tipo .NET, o tipo deve primeiro ser registrado. Se estiver disponível, um método marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo será chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo é chamado durante o processo de cancelamento de registro para reverter as operações do método de registro.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, adicione o método de cancelamento de registro ou registro correspondente.
+Para corrigir uma violação dessa regra, adicione o registro ou o método de cancelamento de registro correspondente.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -58,10 +58,10 @@ O exemplo a seguir mostra um tipo que viola a regra. O código comentado mostra 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1411: OS métodos de registro não devem ser visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411: Os métodos de registro COM não devem ser visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - <xref:System.Runtime.InteropServices.RegistrationServices?displayProperty=fullName>
-- [Registrar Assemblies com](/dotnet/framework/interop/registering-assemblies-with-com)
+- [Registrar assemblies com com](/dotnet/framework/interop/registering-assemblies-with-com)
 - [Regasm.exe (Ferramenta de Registro de Assembly)](/dotnet/framework/tools/regasm-exe-assembly-registration-tool)

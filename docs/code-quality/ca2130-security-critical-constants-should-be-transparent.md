@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a33b650570981f5496813f575b1ae2413a960026
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 62cf9b6b62dac85251d9fca434b35f0a7c6254c7
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68920769"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71232429"
 ---
 # <a name="ca2130-security-critical-constants-should-be-transparent"></a>CA2130: Constantes críticas de segurança devem ser transparentes
 
@@ -24,7 +24,7 @@ ms.locfileid: "68920769"
 |NomeDoTipo|ConstantsShouldBeTransparent|
 |CheckId|CA2130|
 |Categoria|Microsoft.Security|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um campo constante ou um membro de enumeração é marcado com <xref:System.Security.SecurityCriticalAttribute>o.

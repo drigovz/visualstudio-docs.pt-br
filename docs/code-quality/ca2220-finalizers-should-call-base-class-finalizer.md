@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 034f80c9198ab098070e6642f4a4d96cff1744c5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5af6b7872f0fa05183334e6acd2bc4922f84990
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62541852"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71231169"
 ---
 # <a name="ca2220-finalizers-should-call-base-class-finalizer"></a>CA2220: Os finalizadores devem chamar o finalizador de classe base
 
@@ -28,27 +28,27 @@ ms.locfileid: "62541852"
 |NomeDoTipo|FinalizersShouldCallBaseClassFinalizer|
 |CheckId|CA2220|
 |Categoria|Microsoft.Usage|
-|Alteração Significativa|Não separável|
+|Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo que substitui <xref:System.Object.Finalize%2A?displayProperty=fullName> não chama o <xref:System.Object.Finalize%2A> método na sua classe base.
+Um tipo que substitui <xref:System.Object.Finalize%2A?displayProperty=fullName> não chama o <xref:System.Object.Finalize%2A> método em sua classe base.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar sua classe base <xref:System.Object.Finalize%2A> método de dentro de seus próprios <xref:System.Object.Finalize%2A> método. O compilador c# adiciona a chamada para o finalizador da classe base automaticamente.
+A finalização deve ser propagada em toda a hierarquia de herança. Para garantir isso, os tipos devem chamar seu método <xref:System.Object.Finalize%2A> de classe base de dentro <xref:System.Object.Finalize%2A> de seu próprio método. O C# compilador adiciona automaticamente a chamada ao finalizador de classe base.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, chame o tipo base <xref:System.Object.Finalize%2A> método de sua <xref:System.Object.Finalize%2A> método.
+Para corrigir uma violação dessa regra, chame o método do <xref:System.Object.Finalize%2A> tipo base do seu <xref:System.Object.Finalize%2A> método.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprima um aviso nessa regra. Alguns compiladores que direcionam o common language runtime inserir uma chamada para o finalizador do tipo base em Microsoft intermediate language (MSIL). Se um aviso nessa regra for relatado, o compilador não insere a chamada e você deve adicioná-lo ao seu código.
+Não suprima um aviso nessa regra. Alguns compiladores que se destinam ao Common Language Runtime inserir uma chamada para o finalizador do tipo base na MSIL (Microsoft Intermediate Language). Se um aviso dessa regra for relatado, o compilador não inserirá a chamada e você deverá adicioná-la ao seu código.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo de Visual Basic a seguir mostra um tipo `TypeB` que chama corretamente o <xref:System.Object.Finalize%2A> método na sua classe base.
+O exemplo a seguir Visual Basic mostra um `TypeB` tipo que chama corretamente <xref:System.Object.Finalize%2A> o método em sua classe base.
 
 [!code-vb[FxCop.Usage.IDisposableBaseCalled#1](../code-quality/codesnippet/VisualBasic/ca2220-finalizers-should-call-base-class-finalizer_1.vb)]
 

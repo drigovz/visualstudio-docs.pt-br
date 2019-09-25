@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a45b7061ae9d183ec7ee02a3b733ee9340b3689
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d878572c4391805773a9a711ee88e7b58f507c65
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68921312"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71233289"
 ---
 # <a name="ca1901-pinvoke-declarations-should-be-portable"></a>CA1901: Declarações P/Invoke devem ser portáteis
 
@@ -28,7 +28,7 @@ ms.locfileid: "68921312"
 |NomeDoTipo|PInvokeDeclarationsShouldBePortable|
 |CheckId|CA1901|
 |Categoria|Microsoft.Portability|
-|Alteração Significativa|Quebrando – se o P/Invoke estiver visível fora do assembly. Não separável – se a P/Invoke não estiver visível fora do assembly.|
+|Alteração significativa|Quebrando – se o P/Invoke estiver visível fora do assembly. Não separável – se a P/Invoke não estiver visível fora do assembly.|
 
 ## <a name="cause"></a>Causa
 Essa regra avalia o tamanho de cada parâmetro e o valor de retorno de um P/Invoke e verifica se o tamanho deles, quando marshaled para código não gerenciado em plataformas de 32 bits e 64 bits, está correto. A violação mais comum dessa regra é passar um inteiro de tamanho fixo onde uma variável de tamanho de ponteiro dependente de plataforma é necessária.

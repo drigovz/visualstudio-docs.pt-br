@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d9ff79bc7e276e4070a1df1760c0cfde7ed28b1
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 71e365fa0891e9cb01f7a2860a9c2f13b78072b3
+ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69547330"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71235528"
 ---
 # <a name="ca1056-uri-properties-should-not-be-strings"></a>CA1056: Propriedades de URI não devem ser cadeias de caracteres
 
@@ -32,7 +32,7 @@ ms.locfileid: "69547330"
 |NomeDoTipo|UriPropertiesShouldNotBeStrings|
 |CheckId|CA1056|
 |Categoria|Microsoft.Design|
-|Alteração Significativa|Quebra|
+|Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
@@ -54,7 +54,7 @@ Para corrigir uma violação dessa regra, altere a propriedade para um <xref:Sys
 
 ## <a name="configurability"></a>Configurabilidade
 
-Se você estiver executando essa regra por meio de analisadores do [FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
+Se você estiver executando essa regra por meio de [analisadores do FxCop](install-fxcop-analyzers.md) (e não com a análise herdada), poderá configurar em quais partes de sua base de código executar essa regra, com base em sua acessibilidade. Por exemplo, para especificar que a regra deve ser executada somente na superfície da API não pública, adicione o seguinte par chave-valor a um arquivo. editorconfig em seu projeto:
 
 ```ini
 dotnet_code_quality.ca1056.api_surface = private, internal
