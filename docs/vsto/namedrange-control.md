@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8dd8627c4e9baaa790a5d97a8021220a820356fb
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e2b5b5d246e1033148bc199da6e7d2bdfb7aa9b3
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442445"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254723"
 ---
 # <a name="namedrange-control"></a>Controle NamedRange
   O <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é um intervalo que tem um nome exclusivo, expõe eventos e pode ser associado a dados. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
@@ -30,30 +30,30 @@ ms.locfileid: "63442445"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>Criar o controle
- Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha do Microsoft Office Excel em tempo de design ou em tempo de execução no nível de documento.
+ Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma Microsoft Office planilha do Excel em tempo de design ou em tempo de execução em projetos de nível de documento.
 
- Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
+ Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicione controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md).
 
 > [!NOTE]
-> Por padrão, criados dinamicamente intervalos nomeados não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Por padrão, os intervalos nomeados criados dinamicamente não são mantidos na planilha como controles de host quando a planilha é fechada. Para obter mais informações, consulte [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
- <xref:Microsoft.Office.Tools.Excel.NamedRange> controles somente podem consistir em intervalos de planilhas específicas. <xref:Microsoft.Office.Tools.Excel.NamedRange> controles não podem ter nomes relativos que se aplicam a todas as planilhas, e eles não podem consistir em intervalos que abrangem duas ou mais planilhas em uma pasta de trabalho (intervalos 3D).
+ <xref:Microsoft.Office.Tools.Excel.NamedRange>os controles só podem consistir em intervalos em planilhas específicas. <xref:Microsoft.Office.Tools.Excel.NamedRange>os controles não podem ter nomes relativos que se aplicam a todas as planilhas e não podem consistir em intervalos que abrangem duas ou mais planilhas em uma pasta de trabalho (intervalos 3D).
 
 ## <a name="bind-data-to-the-control"></a>Associar dados ao controle
- Um intervalo nomeado parece ser um bom candidato para a associação de dados complexos, pois ele pode ter muitas células; No entanto, um intervalo é simplesmente uma coleção de células que não pode ser facilmente mapeados para uma determinada coluna de um conjunto de dados. Portanto, <xref:Microsoft.Office.Tools.Excel.NamedRange> controles dão suporte apenas a associação de dados simples. O <xref:Microsoft.Office.Tools.Excel.ListObject> controle pode ser usado para associação de dados complexos. Para obter mais informações, consulte [controle ListObject](../vsto/listobject-control.md).
+ Um intervalo nomeado pareceria ser um bom candidato para associação de dados complexa, pois ele pode ter várias células; no entanto, um intervalo é meramente uma coleção de células que não podem ser facilmente mapeadas para uma coluna específica de um conjunto de dado. Portanto, <xref:Microsoft.Office.Tools.Excel.NamedRange> os controles só oferecem suporte à vinculação de dados simples. O <xref:Microsoft.Office.Tools.Excel.ListObject> controle pode ser usado para associação de dados complexa. Para obter mais informações, consulte o [controle ListObject](../vsto/listobject-control.md).
 
- O <xref:Microsoft.Office.Tools.Excel.NamedRange> controle pode ser associado a uma fonte de dados usando o <xref:System.Windows.Forms.Control.DataBindings%2A> propriedades. A propriedade de associação de dados padrão do <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>.
+ O <xref:Microsoft.Office.Tools.Excel.NamedRange> controle pode ser associado a uma fonte de dados usando <xref:System.Windows.Forms.Control.DataBindings%2A> as propriedades. A propriedade de associação de dados padrão <xref:Microsoft.Office.Tools.Excel.NamedRange> do controle <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A>é.
 
- Se os dados no conjunto de dados associado são atualizados por meio de qualquer mecanismo, o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle reflete as alterações.
+ Se os dados no DataSet associado forem atualizados por meio de qualquer mecanismo, <xref:Microsoft.Office.Tools.Excel.NamedRange> o controle refletirá as alterações.
 
 ## <a name="formatting"></a>Formatação
- Formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Excel.Range> pode ser aplicado a um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. Isso inclui as bordas, fontes, formatos de número e estilos.
+ A formatação que pode ser aplicada a <xref:Microsoft.Office.Interop.Excel.Range> um pode ser aplicada a <xref:Microsoft.Office.Tools.Excel.NamedRange> um controle. Isso inclui bordas, fontes, formatos de número e estilos.
 
-## <a name="rename-the-control"></a>Renomeie o controle
- Quando você adiciona uma <xref:Microsoft.Office.Tools.Excel.NamedRange> controle à sua planilha do **caixa de ferramentas**, Visual Studio gera automaticamente um nome para o controle. Você pode alterar o nome na **propriedades** janela.
+## <a name="rename-the-control"></a>Renomear o controle
+ Quando você adiciona um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle à sua planilha da **caixa de ferramentas**, o Visual Studio gera automaticamente um nome para o controle. Você pode alterar o nome na janela **Propriedades** .
 
 ## <a name="events"></a>Eventos
- Os eventos a seguir estão disponíveis para o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle:
+ Os eventos a seguir estão disponíveis para <xref:Microsoft.Office.Tools.Excel.NamedRange> o controle:
 
 - <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick>
 
@@ -73,13 +73,13 @@ ms.locfileid: "63442445"
 
 ## <a name="see-also"></a>Consulte também
 - [Automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md)
-- [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Como: Adicionar controles NamedRange a planilhas](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [Como: Redimensionar controles NamedRange](../vsto/how-to-resize-namedrange-controls.md)
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [Passo a passo: Programe em eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
+- [Passo a passo: Programar contra eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
 - [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

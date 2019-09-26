@@ -1,5 +1,5 @@
 ---
-title: Personalizar o comportamento de inserção/atualização/exclusão de classes de entidade
+title: Personalizar o comportamento de inserir/atualizar/excluir das classes de entidade
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,73 +11,73 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 189516fe90863d80467dc3070dcc6b44a4a492a0
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: cb6bbde145317d737afdbf819dba8ee53f805f72
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66262901"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252974"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>Passo a passo: Personalizar o comportamento de inserção, atualização e exclusão de classes de entidade
 
-O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece uma superfície de design visual para criar e editar o LINQ para SQL classes (classes de entidade) que são baseadas em objetos em um banco de dados. Usando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), você pode usar a tecnologia LINQ para acessar bancos de dados SQL. Para saber mais, confira [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/).
+As [ferramentas de LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornecem uma superfície de Design Visual para criar e editar LINQ to SQL classes (classes de entidade) que se baseiam em objetos em um banco de dados. Usando [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index), você pode usar a tecnologia LINQ para acessar bancos de dados SQL. Para saber mais, confira [LINQ (consulta integrada à linguagem)](/dotnet/csharp/linq/).
 
-Por padrão, a lógica para executar atualizações é fornecida pelo LINQ to SQL de tempo de execução. O tempo de execução cria padrão `Insert`, `Update`, e `Delete` instruções com base no esquema da tabela (as definições de coluna e informações de chave primária). Quando você não deseja usar o comportamento padrão, poderá configurar o comportamento de atualização e designar procedimentos armazenados específicos para executar as inserções, as atualizações e as exclusões necessárias para trabalhar com os dados no banco de dados. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Além disso, você pode substituir o comportamento de atualização padrão quando o banco de dados exige acesso à tabela por meio dos procedimentos armazenados. Para obter mais informações, consulte [personalizando operações usando procedimentos armazenados](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
+Por padrão, a lógica para executar atualizações é fornecida pelo LINQ to SQL Runtime. O tempo de execução `Insert`cria `Update`instruções padrão `Delete` , e com base no esquema da tabela (as definições de coluna e informações de chave primária). Quando você não deseja usar o comportamento padrão, poderá configurar o comportamento de atualização e designar procedimentos armazenados específicos para executar as inserções, as atualizações e as exclusões necessárias para trabalhar com os dados no banco de dados. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Além disso, você pode substituir o comportamento de atualização padrão quando o banco de dados exige acesso à tabela por meio dos procedimentos armazenados. Para obter mais informações, consulte [Personalizando operações usando procedimentos armazenados](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures).
 
 > [!NOTE]
 > Essa explicação passo a passo exige a disponibilidade dos procedimentos armazenados **InsertCustomer**, **UpdateCustomer** e **DeleteCustomer** para o banco de dados Northwind.
 
-Essa explicação passo a passo fornece as etapas que você deve seguir para substituir o comportamento padrão de tempo de execução LINQ to SQL para salvar dados de volta para um banco de dados usando procedimentos armazenados.
+Este tutorial fornece as etapas que você deve seguir para substituir o comportamento padrão LINQ to SQL tempo de execução para salvar dados de volta em um banco de dado usando procedimentos armazenados.
 
-Durante este passo a passo, você aprenderá a executar as seguintes tarefas:
+Durante este passo a passos, você aprenderá a executar as seguintes tarefas:
 
-- Criar um novo aplicativo Windows Forms e adicione um LINQ para o arquivo SQL a ele.
+- Crie um novo aplicativo Windows Forms e adicione um arquivo de LINQ to SQL a ele.
 
-- Criar uma classe de entidade que é mapeada para o Northwind `Customers` tabela.
+- Crie uma classe de entidade que seja mapeada para a `Customers` tabela Northwind.
 
-- Criar uma fonte de dados de objeto que referencia o LINQ to SQL `Customer` classe.
+- Crie uma fonte de dados de objeto que faça `Customer` referência à classe LINQ to SQL.
 
-- Criar um formulário do Windows que contém um <xref:System.Windows.Forms.DataGridView> que está associado a `Customer` classe.
+- Crie um formulário do Windows que contenha um <xref:System.Windows.Forms.DataGridView> que esteja associado `Customer` à classe.
 
 - Implemente a funcionalidade de salvar para o formulário.
 
-- Crie <xref:System.Data.Linq.DataContext> métodos adicionando procedimentos armazenados para o **Relational Designer**.
+- Crie <xref:System.Data.Linq.DataContext> métodos adicionando procedimentos armazenados ao o **/R Designer**.
 
-- Configurar o `Customer` classe usar procedimentos armazenados para executar inserções, atualizações e exclusões.
+- Configure a `Customer` classe para usar procedimentos armazenados para executar inserções, atualizações e exclusões.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
+Este passo a passos usa SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
 
-1. Se você não tiver o SQL Server Express LocalDB, instalá-lo a partir de [página de download do SQL Server Express](https://www.microsoft.com/sql-server/sql-server-editions-express), ou por meio de **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte do **armazenamento de dados e processamento** carga de trabalho, ou como um componente individual.
+1. Se você não tiver SQL Server Express LocalDB, instale-o na [SQL Server Express página de download](https://www.microsoft.com/sql-server/sql-server-editions-express)ou por meio do **instalador do Visual Studio**. No **instalador do Visual Studio**, você pode instalar o SQL Server Express LocalDB como parte da carga de trabalho de **armazenamento e processamento de dados** ou como um componente individual.
 
-2. Instale o banco de dados de exemplo Northwind, seguindo estas etapas:
+2. Instale o banco de dados de exemplo Northwind seguindo estas etapas:
 
-    1. No Visual Studio, abra o **SQL Server Object Explorer** janela. (**Pesquisador de objetos do SQL Server** é instalado como parte do **armazenamento de dados e processamento** carga de trabalho no **instalador do Visual Studio**.) Expanda o **SQL Server** nó. Clique com botão direito na instância do LocalDB e selecione **nova consulta**.
+    1. No Visual Studio, abra a janela **pesquisador de objetos do SQL Server** . (O**pesquisador de objetos do SQL Server** é instalado como parte da carga de trabalho de **armazenamento e processamento de dados** no **instalador do Visual Studio**.) Expanda o nó **SQL Server** . Clique com o botão direito do mouse na instância do LocalDB e selecione **nova consulta**.
 
-       Abre uma janela do editor de consulta.
+       Uma janela do editor de consultas é aberta.
 
-    2. Cópia de [script Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) na área de transferência. Este script T-SQL cria o banco de dados Northwind do zero e a preenche com dados.
+    2. Copie o [script do Transact-SQL Northwind](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) para a área de transferência. Esse script T-SQL cria o banco de dados Northwind a partir do zero e o preenche com os mesmos.
 
-    3. Cole o script T-SQL no editor de consultas e, em seguida, escolha o **Execute** botão.
+    3. Cole o script T-SQL no editor de consultas e, em seguida, escolha o botão **executar** .
 
-       Após alguns instantes, a consulta termina a execução e o banco de dados Northwind é criado.
+       Após um curto período, a consulta terminará de ser executada e o banco de dados Northwind será criado.
 
 ## <a name="creating-an-application-and-adding-linq-to-sql-classes"></a>Criando um aplicativo e adicionando classes LINQ to SQL
 
-Porque você está trabalhando com LINQ para classes SQL e exibindo os dados em um formulário do Windows, crie um novo aplicativo Windows Forms e adicione um LINQ ao arquivo de Classes do SQL.
+Como você está trabalhando com classes de LINQ to SQL e exibindo os dados em um Windows Form, crie um novo aplicativo de Windows Forms e adicione um arquivo de classes de LINQ to SQL.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Para criar um novo projeto de aplicativo do Windows Forms que contém o LINQ para classes SQL
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>Para criar um novo projeto de aplicativo Windows Forms que contém LINQ to SQL classes
 
-1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
+1. No Visual Studio, no menu **arquivo** , selecione **novo** > **projeto**.
 
-2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda **o C# Visual** ou **Visual Basic** no painel esquerdo e, em seguida, selecione **área de trabalho do Windows**.
 
-3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
+3. No painel central, selecione o tipo de projeto **Windows Forms aplicativo** .
 
-4. Nomeie o projeto **UpdatingWithSProcsWalkthrough**e, em seguida, escolha **Okey**.
+4. Nomeie o projeto **UpdatingWithSProcsWalkthrough**e escolha **OK**.
 
      O projeto de **UpdatingWithSProcsWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.
 
@@ -85,28 +85,28 @@ Porque você está trabalhando com LINQ para classes SQL e exibindo os dados em 
 
 5. Clique no modelo **Classes LINQ to SQL** e digite **Northwind.dbml** na caixa **Nome**.
 
-6.  Clique em **Adicionar**.
+6. Clique em **Adicionar**.
 
-     Um vazio arquivo LINQ to SQL Classes (**dbml**) é adicionado ao projeto e o **Relational Designer** é aberta.
+     Um arquivo de classes de LINQ to SQL vazio (**Northwind. dbml**) é adicionado ao projeto e o **/R Designer** é aberto.
 
-## <a name="create-the-customer-entity-class-and-object-data-source"></a>Criar cliente entidade classe e objeto de fonte de dados
+## <a name="create-the-customer-entity-class-and-object-data-source"></a>Criar a classe de entidade do cliente e a fonte de dados do objeto
 
-Criar LINQ to SQL classes são mapeadas para tabelas de banco de dados arrastando tabelas do **Gerenciador de servidores** ou **Database Explorer** até o **Relational Designer**. O resultado são classes de entidade do LINQ to SQL que mapeiam para as tabelas no banco de dados. Depois de criar classes de entidade, elas podem ser usadas como fontes de dados de objeto assim como outras classes que têm propriedades públicas.
+Crie LINQ to SQL classes que são mapeadas para tabelas de banco de dados arrastando tabelas de **Gerenciador de servidores** ou **Gerenciador de banco de dados** para o o **/R Designer**. O resultado são classes de entidade do LINQ to SQL que mapeiam para as tabelas no banco de dados. Depois de criar classes de entidade, elas podem ser usadas como fontes de dados de objeto assim como outras classes que têm propriedades públicas.
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>Para criar uma classe de entidade Customer e configurar uma fonte de dados com ela
 
-1. Na **Gerenciador de servidores** ou **Database Explorer**, localize o **cliente** tabela na versão do SQL Server do banco de dados de exemplo Northwind.
+1. Em **Gerenciador de servidores** ou **Gerenciador de banco de dados**, localize a tabela **cliente** na versão SQL Server do banco de dados de exemplo Northwind.
 
-2. Arraste o **clientes** nó a partir **Gerenciador de servidores** ou **Database Explorer** para o **Relational Designer* superfície.
+2. Arraste o nó **clientes** do **Gerenciador de servidores** ou **Gerenciador de banco de dados** na superfície **o/R Designer* .
 
      Uma classe de entidade chamada **Customer** é criada. Ela tem propriedades que correspondem às colunas na tabela Customers. A classe de entidade é chamada de **Customer** (e não **Customers**) porque representa um único cliente da tabela Customers.
 
     > [!NOTE]
-    > Esse comportamento de renomeação é chamado de *pluralização*. Ele pode ser ativado ou desativado [caixa de diálogo Opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, confira [Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
+    > Esse comportamento de renomeação é chamado de *pluralização*. Ele pode ser ativado ou desativado na caixa de [diálogo opções](../ide/reference/options-dialog-box-visual-studio.md). Para obter mais informações, confira [Como: Ligar e desligar a pluralização (Designer Relacional de Objetos)](../data-tools/how-to-turn-pluralization-on-and-off-o-r-designer.md).
 
 3. No menu **Compilar**, clique em **Compilar UpdatingwithSProcsWalkthrough** para criar o projeto.
 
-4. Para abrir o **fontes de dados** janela diante de **dados** menu, clique em **Mostrar fontes de dados**.
+4. Para abrir a janela **fontes de dados** , no menu **dados** , clique em **mostrar fontes de dados**.
 
 5. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
@@ -120,7 +120,7 @@ Criar LINQ to SQL classes são mapeadas para tabelas de banco de dados arrastand
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>Criar um DataGridView para exibir os dados do cliente em um formulário do Windows
 
-Crie controles que estão associados às classes de entidade arrastando o LINQ para itens de fonte de dados SQL do **fontes de dados** janela em um formulário do Windows.
+Crie controles associados a classes de entidade arrastando LINQ to SQL itens de fonte de dados da janela **fontes de dados** para um formulário do Windows.
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>Para adicionar controles que estão associados às classes de entidade
 
@@ -133,7 +133,7 @@ Crie controles que estão associados às classes de entidade arrastando o LINQ p
 
 3. Abra o **Form1** no Editor de Códigos.
 
-4. Adicione o seguinte código ao formulário, global para o formulário, fora de qualquer método específico, mas dentro do `Form1` classe:
+4. Adicione o seguinte código ao formulário, global ao formulário, fora de qualquer método específico, mas dentro da `Form1` classe:
 
     ```vb
     Private NorthwindDataContext1 As New NorthwindDataContext
@@ -155,9 +155,9 @@ Crie controles que estão associados às classes de entidade arrastando o LINQ p
         = northwindDataContext1.Customers;
     ```
 
-## <a name="implement-save-functionality"></a>Implementar a funcionalidade de salvar
+## <a name="implement-save-functionality"></a>Implementar funcionalidade de salvamento
 
-Por padrão, o botão de salvar não está habilitado e a funcionalidade de salvar não está implementada. Além disso, o código não será automaticamente adicionado para salvar dados modificados no banco de dados quando os controles associados a dados forem criados para fontes de dados de objeto. Esta seção explica como habilitar o salvamento botão e implementar a funcionalidade de salvar para LINQ para objetos do SQL.
+Por padrão, o botão de salvar não está habilitado e a funcionalidade de salvar não está implementada. Além disso, o código não será automaticamente adicionado para salvar dados modificados no banco de dados quando os controles associados a dados forem criados para fontes de dados de objeto. Esta seção explica como habilitar o botão salvar e implementar a funcionalidade salvar para objetos do LINQ to SQL.
 
 ### <a name="to-implement-save-functionality"></a>Para implementar a funcionalidade de salvar
 
@@ -179,19 +179,19 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
     northwindDataContext1.SubmitChanges();
     ```
 
-## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Substituir o comportamento padrão para realizar atualizações (inserções, atualizações e exclusões)
+## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>Substituir o comportamento padrão para executar atualizações (inserções, atualizações e exclusões)
 
 ### <a name="to-override-the-default-update-behavior"></a>Para substituir o comportamento padrão de atualização
 
-1. Abra o arquivo LINQ to SQL no **Relational Designer**. (Clique duas vezes no arquivo **Northwind.dbml** no **Gerenciador de Soluções**.)
+1. Abra o arquivo LINQ to SQL no **designer do o/R**. (Clique duas vezes no arquivo **Northwind.dbml** no **Gerenciador de Soluções**.)
 
 2. Em **Gerenciador de Servidores**/**Gerenciador de Banco de Dados**, expanda o nó **Procedimentos Armazenados** de bancos de dados Northwind e localize os procedimentos armazenados **InsertCustomers**, **UpdateCustomers** e **DeleteCustomers**.
 
-3. Arraste todos os três procedimentos armazenados para o **Relational Designer**.
+3. Arraste todos os três procedimentos armazenados para o o **/R Designer**.
 
-     Os procedimentos armazenados são adicionados ao painel dos métodos como métodos <xref:System.Data.Linq.DataContext>. Para obter mais informações, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
+     Os procedimentos armazenados são adicionados ao painel dos métodos como métodos <xref:System.Data.Linq.DataContext>. Para obter mais informações, consulte [métodos DataContext (O/R Designer)](../data-tools/datacontext-methods-o-r-designer.md).
 
-4. Selecione o **Customer** classe de entidade na **Relational Designer**.
+4. Selecione a classe de entidade **Customer** no o **/R Designer**.
 
 5. Na janela **Propriedades**, selecione a propriedade **Insert**.
 
@@ -204,7 +204,7 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 9. Clique em **Aplicar** para salvar a configuração para a Classe e o Comportamento selecionados.
 
     > [!NOTE]
-    > Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações é exibida.
+    > Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso que fornece uma oportunidade para aplicar as alterações será exibida.
 
 10. Selecione **Atualizar** na lista **Comportamento**.
 
@@ -232,7 +232,7 @@ Por padrão, o botão de salvar não está habilitado e a funcionalidade de salv
 19. Clique em **OK**.
 
 > [!NOTE]
-> Embora não seja um problema para este passo a passo específica, vale a pena observar que o LINQ to SQL lida com valores gerados por banco de dados automaticamente para a identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e colunas de carimbo de hora durante inserções e atualizações. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: [AutoSync.Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync.OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>), ou [AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
+> Embora não seja um problema para esse passo-a particular, vale a pena observar que LINQ to SQL trata valores gerados pelo banco de dados automaticamente para identidade (incremento automático), ROWGUIDCOL (GUID gerado por banco de dados) e colunas de carimbo de data/hora durante inserções e actualiza. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> definir `true` manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> como e como um dos seguintes: [Sincronização automática. Always](<xref:System.Data.Linq.Mapping.AutoSync.Always>), [AutoSync. OnInsert](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)ou [AutoSync. OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>).
 
 ## <a name="test-the-application"></a>Testar o aplicativo
 
@@ -263,11 +263,11 @@ Execute o aplicativo novamente para verificar se o procedimento armazenado **Upd
 
 ## <a name="next-steps"></a>Próximas etapas
 
-Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após você cria classes LINQ to SQL entidade. Entre algumas das melhorias que você pode fazer neste aplicativo estão:
+Dependendo dos requisitos do aplicativo, há várias etapas que você pode querer executar depois de criar LINQ to SQL classes de entidade. Entre algumas das melhorias que você pode fazer neste aplicativo estão:
 
-- Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [simultaneidade otimista: Visão geral do](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
+- Implementar verificação de simultaneidade durante atualizações. Para obter informações, consulte [simultaneidade otimista: visão geral](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview).
 
-- Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [Introdução a consultas LINQ (c#)](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
+- Adicionar consultas LINQ para filtrar dados. Para obter informações, consulte [introdução às consultas LINQC#()](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries).
 
 ## <a name="see-also"></a>Consulte também
 

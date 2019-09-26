@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: conceptual
 ms.date: 03/20/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 90f90f4e7f085dc4f7ea188833edb3462cbe7e3e
-ms.sourcegitcommit: db30651dc0ce4d0b274479b23a6bd102a5559098
+ms.openlocfilehash: f05eb5d92c0cdaa1242f0d98c3d877eebae27bb1
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/06/2019
-ms.locfileid: "70312171"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253181"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>Como configurar as ferramentas de contêiner do Visual Studio
 
@@ -67,7 +67,7 @@ A tabela a seguir descreve o **projeto único** e as configurações de **Docker
 
 ::: moniker-end
 > [!WARNING]
-> Se o certificado SSL do localhost não for confiável e você marcar a caixa para suprimir a solicitação, as solicitações da Web HTTPS poderão falhar no tempo de execução em seu aplicativo ou serviço. Nesse caso, desmarque a caixa de seleção **Não solicitar**, execute seu projeto e indique a confiança no prompt.
+> Se o certificado SSL do localhost não for confiável e você marcar a caixa para suprimir a solicitação, as solicitações da Web HTTPS poderão falhar em tempo de execução em seu aplicativo ou serviço. Nesse caso, desmarque a caixa de seleção **Não solicitar**, execute seu projeto e indique a confiança no prompt.
 
 ## <a name="next-steps"></a>Próximas etapas
 

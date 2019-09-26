@@ -16,10 +16,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e07e2612e01453115cf4cd6120d92bfd5b0168bd
-ms.sourcegitcommit: fe212f8960d7882a1b0fdae9e22f008996aacf3c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/03/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "70222645"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
@@ -40,7 +40,7 @@ A maioria das janelas do depurador, como os **módulos** e as janelas de **inspe
 
 No modo de interrupção, a execução do aplicativo é suspensa enquanto as funções, variáveis e objetos permanecem na memória. Você pode examinar as posições e os Estados dos elementos para procurar violações ou bugs. Para alguns tipos de projeto, você também pode fazer ajustes no aplicativo enquanto estiver no modo de interrupção. Para ver um vídeo mostrando esses recursos, consulte [introdução com o depurador](https://www.youtube.com/watch?v=FtGCi5j30YU&list=PLReL099Y5nRfw6VNvzMkv0sabT2crbSpK&index=6).
 
-Se você interromper o código que não tem arquivos de origem ou símbolo ( *. pdb*) carregados, o depurador exibirá uma página **arquivos de origem não encontrados** ou **símbolos não encontrados** que pode ajudá-lo a localizar e carregar os arquivos. Confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se você não puder carregar o símbolo ou os arquivos de origem, ainda poderá depurar as instruções do assembly na janela de desmontagem.
+Se você interromper o código que não tem arquivos de origem ou símbolo ( *. pdb*) carregados, o depurador exibirá uma página **arquivos de origem não encontrados** ou **símbolos não encontrados** que pode ajudá-lo a localizar e carregar os arquivos. Confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md). Se você não puder carregar o símbolo ou os arquivos de origem, ainda poderá depurar as instruções do assembly na janela de **desmontagem** .
 
 Você nem sempre precisa iniciar a depuração iniciando um aplicativo no início. Você também pode pressionar **F11** para entrar [no código](#BKMK_Step_into__over__or_out_of_the_code), pressionar **F10** para [passar pelo código](#BKMK_Step_over_Step_out)ou [Executar para uma função ou local específico](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
@@ -90,7 +90,7 @@ Você pode preferir executar diretamente em um local ou uma função específica
 
 ### <a name="run-to-a-breakpoint-in-code"></a>Executar para um ponto de interrupção no código
 
-Para definir um ponto de interrupção simples em seu código, clique na margem esquerda extrema ao lado da linha de código em que você deseja suspender a execução. Você também pode selecionar a linha e pressionar **F9** > , selecionar**ponto de interrupção de alternância**de **depuração** > , ou clicar com o botão direito do mouse e selecionar ponto de interrupção**Inserir ponto**de interrupção. O ponto de interrupção aparece como vermelho na margem esquerda ao lado da linha de código. O depurador suspende a execução logo antes da execução da linha.
+Para definir um ponto de interrupção simples em seu código, clique na margem esquerda extrema ao lado da linha de código em que você deseja suspender a execução. Você também pode selecionar a linha e pressionar **F9**, selecionar**ponto de interrupção de alternância**de **depuração** >  > , ou clicar com o botão direito do mouse **e selecionar ponto de interrupção** **Inserir ponto**de interrupção. O ponto de interrupção aparece como vermelho na margem esquerda ao lado da linha de código. O depurador suspende a execução logo antes da execução da linha.
 
 ![Definir um ponto de interrupção](../debugger/media/dbg_basics_setbreakpoint.png "Definir um ponto de interrupção")
 
@@ -112,7 +112,7 @@ Você pode instruir o depurador a ser executado até atingir uma função especi
 
 Se a função estiver sobrecarregada ou em mais de um namespace, você poderá escolher aquela desejada na janela pontos de **interrupção** .
 
-![Pontos de interrupção de função] sobrecarregados (../debugger/media/dbg_execution_overloadedbreakpoints.png "Pontos de interrupção de função") sobrecarregados
+![Pontos de interrupção de função sobrecarregados](../debugger/media/dbg_execution_overloadedbreakpoints.png "Pontos de interrupção de função sobrecarregados")
 
 **Para selecionar um ponto de interrupção de função da pilha de chamadas**
 
@@ -128,7 +128,7 @@ Para executar o local do cursor, no código-fonte ou na janela **pilha de chamad
 
 ### <a name="run-to-click"></a>Executar com um Clique
 
-Enquanto estiver em pausa no depurador, você pode focalizar uma instrução no código-fonte ou na janela de desmontagem e selecionar o ícone de seta **executar execução para aqui** verde. O uso **de executar para clicar** elimina a necessidade de definir um ponto de interrupção temporário.
+Enquanto estiver em pausa no depurador, você pode focalizar uma instrução no código-fonte ou na janela de **desmontagem** e selecionar o ícone de seta **executar execução para aqui** verde. O uso **de executar para clicar** elimina a necessidade de definir um ponto de interrupção temporário.
 
 ![Executar com um Clique](../debugger/media/dbg-run-to-click.png "Executar com um Clique")
 
@@ -141,11 +141,11 @@ Para interromper a próxima linha de código disponível em um aplicativo em exe
 
 ## <a name="BKMK_Set_the_next_statement_to_execute"></a>Mover o ponteiro para alterar o fluxo de execução
 
-Enquanto o depurador é pausado, uma ponta de seta amarela na margem da janela código- fonte ou desmontagem marca o local da próxima instrução a ser executada. Você pode alterar a próxima instrução a ser executada movendo essa ponta de seta. Você pode ignorar uma parte do código ou retornar a uma linha anterior. Mover o ponteiro é útil para situações como ignorar uma seção de código que contém um bug conhecido.
+Enquanto o depurador é pausado, uma ponta de seta amarela na margem da janela código-fonte ou **desmontagem** marca o local da próxima instrução a ser executada. Você pode alterar a próxima instrução a ser executada movendo essa ponta de seta. Você pode ignorar uma parte do código ou retornar a uma linha anterior. Mover o ponteiro é útil para situações como ignorar uma seção de código que contém um bug conhecido.
 
  ![Mover o ponteiro](../debugger/media/dbg_basics_example3.gif "Mover o ponteiro")
 
-Para alterar a próxima instrução a ser executada, o depurador deve estar no modo de interrupção. Na janela código-fonte ou desmontagem, arraste a ponta de seta amarela para uma linha diferente ou clique com o botão direito do mouse na linha que você deseja executar em seguida e selecione **definir próxima instrução**.
+Para alterar a próxima instrução a ser executada, o depurador deve estar no modo de interrupção. Na janela código-fonte ou **desmontagem** , arraste a ponta de seta amarela para uma linha diferente ou clique com o botão direito do mouse na linha que você deseja executar em seguida e selecione **definir próxima instrução**.
 
 O contador de programa salta diretamente para o novo local e as instruções entre os pontos de execução antigo e novo não são executadas. No entanto, se você mover o ponto de execução para trás, as instruções intermediárias não serão desfeitas.
 

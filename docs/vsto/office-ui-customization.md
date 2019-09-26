@@ -16,23 +16,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 052149783f93c1bf2f394be2fac9f6a51c9c0cf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: e5fd0253c6ca560c58724c8a83e343164b678923
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977908"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254149"
 ---
 # <a name="office-ui-customization"></a>Personalização da interface do usuário do Office
-  Você pode personalizar a interface do usuário (UI) de aplicativos do Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seções a seguir:
+  Você pode personalizar a interface do usuário de aplicativos Microsoft Office usando as ferramentas de desenvolvedor do Office no Visual Studio. Este tópico descreve os recursos de interface do usuário que você pode personalizar nas seguintes seções:
 
-- [Comparação dos recursos de interface do usuário](#Comparison)
+- [Comparação de recursos da interface do usuário](#Comparison)
 
 - [Painéis de ações e painéis de tarefas personalizados](#Actions)
 
-- [Faixa de opções personalizada da interface do usuário](#Ribbon)
+- [Interface do usuário da faixa de para personalizada](#Ribbon)
 
-- [Modo de exibição Backstage](#Backstage)
+- [Modo de exibição de Backstage](#Backstage)
 
 - [Regiões de formulário do Outlook](#FormRegion)
 
@@ -40,68 +40,68 @@ ms.locfileid: "62977908"
 
 - [Menus de atalho](#Shortcut)
 
-## <a name="Comparison"></a> Comparação dos recursos de interface do usuário
- A tabela a seguir compara os principais recursos de interface do usuário que você pode personalizar em projetos do Microsoft Office.
+## <a name="Comparison"></a>Comparação de recursos da interface do usuário
+ A tabela a seguir compara os principais recursos da interface do usuário que você pode personalizar em projetos Microsoft Office.
 
-|Recurso|Tipos de projeto com suporte|Aplicativos com suporte do Microsoft Office|
+|Recurso|Tipos de projeto com suporte|Aplicativos Microsoft Office com suporte|
 |-------------|-----------------------------|---------------------------------------------|
-|Painel de ações|Personalizações no nível de documento|Excel<br /><br /> Palavra|
+|Painel Ações|Personalizações no nível de documento|Excel<br /><br /> Palavra|
 |Painéis de tarefas personalizados|Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Palavra<br /><br /> Excel|
-|Faixa de opções personalizada da interface do usuário|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
-|Modo de exibição Backstage|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
+|Interface do usuário da faixa de para personalizada|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
+|Modo de exibição de Backstage|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)].<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio|
 |Regiões de formulário do Outlook|Suplementos do VSTO|Outlook|
 |Controles em documentos|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> Palavra|
 |Menus de atalho|Personalizações no nível de documento<br /><br /> Suplementos do VSTO|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)]<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Projeto<br /><br /> Palavra<br /><br /> Visio<br /><br /> Excel|
 
-## <a name="Actions"></a> Painéis de ações e painéis de tarefas personalizados
- Painéis de tarefas estão os painéis de interface do usuário que normalmente são encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Quase todos os aplicativos do Microsoft Office incluem painéis de tarefas internas. Um exemplo de um painel de tarefas é o painel de tarefas Ajuda no Word.
+## <a name="Actions"></a>Painéis de ações e painéis de tarefas personalizados
+ Os painéis de tarefas são painéis de interface do usuário que normalmente são encaixados em um lado de uma janela em um aplicativo Microsoft Office. Quase todos os Microsoft Office aplicativos incluem painéis de tarefas internos. Um exemplo de um painel de tarefas é o painel de tarefas ajuda do Word.
 
  As ferramentas de desenvolvimento do Office no Visual Studio fornecem duas maneiras diferentes de personalizar os painéis de tarefas:
 
-- Você pode adicionar um painel de ações para uma personalização no nível de documento. Por padrão, o painel de ações é exibido no lado direito do aplicativo, à direita do documento. No entanto, o painel de ações também pode ser exibido para a esquerda, superior ou inferior do documento.
+- Você pode adicionar um painel ações a uma personalização no nível do documento. Por padrão, o painel Ações é exibido no lado direito do aplicativo, à direita do documento. No entanto, o painel Ações também pode ser exibido à esquerda, à parte superior ou inferior do documento.
 
-- Você pode adicionar um painel de tarefas personalizado para um suplemento do VSTO. Os usuários podem encaixar painéis de tarefas personalizados em diferentes lados da janela do aplicativo, ou pode arrastar painéis de tarefas personalizados em qualquer local na janela.
+- Você pode adicionar um painel de tarefas personalizado a um suplemento do VSTO. Os usuários podem encaixar painéis de tarefas personalizados em diferentes lados da janela do aplicativo, ou podem arrastar painéis de tarefas personalizados para qualquer local na janela.
 
-  Painéis de ações e painéis de tarefas personalizados fornecem funcionalidade hospedando uma variedade de controles para ajudar os usuários com tarefas como a entrada de dados. Em comparação com um grupo de faixa de opções, painéis de ações e painéis de tarefas personalizados fornecem uma área muito maior para incluir o texto e controles.
+  Os painéis de ações e os painéis de tarefas personalizados fornecem funcionalidade hospedando uma variedade de controles para ajudar os usuários com tarefas como entrada de dados. Em comparação com um grupo de faixa de faixas, painéis de ações e painéis de tarefas personalizados fornecem uma área muito maior para incluir texto e controles.
 
-  Para obter mais informações sobre painéis de ações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md). Para obter mais informações sobre painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+  Para obter mais informações sobre os painéis de ações, consulte [visão geral do painel Ações](../vsto/actions-pane-overview.md). Para obter mais informações sobre painéis de tarefas personalizados, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
-## <a name="Ribbon"></a> Faixa de opções personalizada da interface do usuário
- Você pode personalizar a interface do usuário da faixa de opções para expor a funcionalidade que você adicionar a aplicativos do Office. A faixa de opções é uma maneira de organizar os comandos relacionados (na forma de controles) para que eles são mais fáceis de encontrar. Você pode criar seus próprios guias da faixa de opções e grupos para conceder aos usuários acesso à funcionalidade fornecida por você em sua solução. Agora, a maioria dos recursos que foram acessados usando os menus e barras de ferramentas em versões anteriores do Microsoft Office system pode ser acessada por meio da faixa de opções.
+## <a name="Ribbon"></a>Interface do usuário da faixa de para personalizada
+ Você pode personalizar a interface do usuário da faixa de Ribbon para expor a funcionalidade que você adiciona aos aplicativos no Office. A faixa de opção é uma maneira de organizar comandos relacionados (na forma de controles) para que eles sejam mais fáceis de localizar. Você pode criar suas próprias guias e grupos de faixa de e para dar aos usuários acesso à funcionalidade que você fornece em sua solução. A maioria dos recursos que foram acessados usando os menus e as barras de ferramentas em versões anteriores do sistema de Microsoft Office agora pode ser acessada usando a faixa de faixas.
 
- Para obter mais informações, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
+ Para obter mais informações, consulte [visão geral da faixa](../vsto/ribbon-overview.md)de visualização.
 
-## <a name="Backstage"></a> Modo de exibição Backstage
- Em aplicativos do Office, clicando na **arquivo** guia abre o modo de exibição Backstage. O modo de exibição Backstage fornece uma interface do usuário que combina ações e tarefas de nível de arquivo e substitui a funcionalidade semelhante disponível no botão Microsoft Office no 2007 Microsoft Office system. O modo de exibição Backstage é totalmente extensível por meio de XML.
+## <a name="Backstage"></a>Modo de exibição de Backstage
+ Em aplicativos do Office, clicar na guia **arquivo** abre o modo de exibição Backstage. O modo de exibição de Backstage fornece uma interface do usuário que combina tarefas e ações em nível de arquivo e substitui a funcionalidade semelhante disponível no botão de Microsoft Office no sistema de Microsoft Office de 2007. O modo de exibição de Backstage é totalmente extensível usando XML.
 
- Visual Studio não fornece um designer ou APIs para personalizar o modo de exibição Backstage. No entanto, se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML de faixa de opções para personalizar o modo de exibição Backstage. Para obter mais informações sobre **da faixa de opções (XML)** itens, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+ O Visual Studio não fornece um designer ou APIs para personalizar o modo de exibição de Backstage. No entanto, se você adicionar um item de faixa de visualização **(XML)** ao seu projeto do Office, poderá adicionar XML ao arquivo XML da faixa de faixas para personalizar o modo de exibição de Backstage. Para obter mais informações sobre itens de **faixa de faixas (XML)** , consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
- Para obter mais informações sobre como personalizar o modo de exibição Backstage, consulte [Introdução ao modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [personalizar o modo de exibição Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).
+ Para obter mais informações sobre como personalizar o modo de exibição de Backstage, consulte [introdução ao modo de exibição de Backstage do office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182189) e [Personalizar o modo de exibição do Backstage do Office 2010 para desenvolvedores](http://go.microsoft.com/fwlink/?LinkId=182188).
 
-## <a name="FormRegion"></a> Regiões de formulário do Outlook
- Use as regiões do formulário para adicionar funcionalidade personalizada aos formulários padrão do Microsoft Office Outlook. Você pode criar regiões de formulário que estendem qualquer formulário existente com campos adicionais ou controles. Se você criar uma nova região de formulário usando as ferramentas de desenvolvimento do Office no Visual Studio, você pode usar somente os controles de formulários do Windows na região do formulário. Se você importar uma região de formulário que foi projetada no Outlook, você pode usar apenas controles nativos do Outlook.
+## <a name="FormRegion"></a>Regiões de formulário do Outlook
+ Use regiões de formulário para adicionar funcionalidade personalizada a formulários padrão do Microsoft Office Outlook. Você pode criar regiões de formulário que estendam qualquer formulário existente com campos ou controles adicionais. Se você criar uma nova região de formulário usando as ferramentas de desenvolvimento do Office no Visual Studio, poderá usar somente Windows Forms controles na região do formulário. Se você importar uma região de formulário que foi criada no Outlook, poderá usar apenas controles nativos do Outlook.
 
- Você pode criar regiões de formulário que ocupam diferentes áreas da interface do usuário do Outlook. Por exemplo, regiões de formulário adjacentes são exibidas na parte inferior da primeira página de um formulário, e cada região do formulário adjacente é recolhível. Você também pode adicionar uma região de formulário separado que é exibido como uma página de forma completa adicional e que podem aparecer em qualquer formulário padrão existente ou um formulário personalizado.
+ Você pode criar regiões de formulário que ocupem áreas diferentes da interface do usuário do Outlook. Por exemplo, as regiões de formulário adjacentes são exibidas na parte inferior da primeira página de um formulário, e cada região de formulário adjacente é recolhível. Você também pode adicionar uma região de formulário separada que é exibida como uma página de formulário adicional completa e que pode aparecer em qualquer formulário padrão ou personalizado existente.
 
- Para obter mais informações, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
+ Para obter mais informações, consulte [criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md).
 
-## <a name="Controls"></a> Controles em documentos
- Você pode adicionar uma variedade de controles a documentos do Word e planilhas do Excel. Por exemplo, você talvez queira adicionar um controle de seletor de data a um documento para que o usuário possa inserir datas em um formato padrão ou colocar um botão em uma planilha para enviar dados para um banco de dados.
+## <a name="Controls"></a>Controles em documentos
+ Você pode adicionar uma variedade de controles a documentos do Word e planilhas do Excel. Por exemplo, talvez você queira adicionar um controle de seletor de data a um documento para que o usuário possa inserir datas em um formato padrão ou colocar um botão em uma planilha para enviar dados a um banco de dado.
 
- Quando você desenvolve projetos no nível de documento para Excel ou Word, você pode usar o designer do Visual Studio para adicionar controles ao documento ou pasta de trabalho em seu projeto em tempo de design, ou você pode adicionar programaticamente os controles em tempo de execução. Ao desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar controles programaticamente para qualquer documento aberto ou a pasta de trabalho em tempo de execução.
+ Ao desenvolver projetos de nível de documento para Excel ou Word, você pode usar o designer do Visual Studio para adicionar controles ao documento ou pasta de trabalho em seu projeto em tempo de design ou pode adicionar controles programaticamente em tempo de execução. Ao desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar controles programaticamente a qualquer documento ou pasta de trabalho aberta em tempo de execução.
 
- Para obter mais informações, consulte [hospedam itens e visão geral dos controles](../vsto/host-items-and-host-controls-overview.md) e [controles na visão geral de documentos do Office do Windows forms](../vsto/windows-forms-controls-on-office-documents-overview.md).
+ Para obter mais informações, consulte Visão geral de [itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md) e [controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
-## <a name="Shortcut"></a> Menus de atalho
- Um menu de atalho é exibido quando o botão direito do mouse em um documento ou uma janela do aplicativo. Você pode definir um menu de atalho para aparecer após um evento ocorre, como quando um usuário clica um documento, pasta de trabalho ou controle de host. Você pode adicionar um número de comandos de menu diferente ou controles a um menu de atalho. Crie menus de atalho por meio de XML. Se você adicionar um **da faixa de opções (XML)** item ao seu projeto do Office, você pode adicionar o XML para o arquivo XML de faixa de opções para criar menus de atalho. Para obter mais informações sobre como usar XML para criar menus de atalho, consulte [como: Adicionar comandos aos menus de atalho](../vsto/how-to-add-commands-to-shortcut-menus.md).
+## <a name="Shortcut"></a>Menus de atalho
+ Um menu de atalho é exibido quando você clica com o botão direito do mouse em um documento ou em uma janela de aplicativo. Você pode definir um menu de atalho para aparecer depois que um evento ocorrer, como quando um usuário clica com o botão direito do mouse em um documento, pasta de trabalho ou controle de host. Você pode adicionar vários comandos de menu ou controles diferentes a um menu de atalho. Crie menus de atalho usando XML. Se você adicionar um item **da faixa (XML)** ao seu projeto do Office, você poderá adicionar XML ao arquivo XML da faixa de para criar menus de atalho. Para obter mais informações sobre como usar o XML para criar menus [de atalho, consulte Como: Adicione comandos a menus](../vsto/how-to-add-commands-to-shortcut-menus.md)de atalho.
 
 ## <a name="see-also"></a>Consulte também
-- [Visão geral da faixa de opções](../vsto/ribbon-overview.md)
-- [Windows forms a controles em Visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
-- [Visão geral do painel de ações](../vsto/actions-pane-overview.md)
+- [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
+- [Visão geral dos controles do Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Visão geral do painel Ações](../vsto/actions-pane-overview.md)
 - [Criar regiões de formulário do Outlook](../vsto/creating-outlook-form-regions.md)
 - [Painéis de tarefas personalizados](../vsto/custom-task-panes.md)
 - [Usar controles WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md)
-- [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
-- [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Como: Mostrar a guia Desenvolvedor na faixa de faixas](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)
+- [Como: Mostrar erros da interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
 - [Passo a passo: Coletar dados usando um formulário do Windows](../vsto/walkthrough-collecting-data-using-a-windows-form.md)

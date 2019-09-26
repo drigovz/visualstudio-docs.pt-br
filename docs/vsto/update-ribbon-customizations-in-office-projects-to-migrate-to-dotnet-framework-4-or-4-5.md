@@ -1,5 +1,5 @@
 ---
-title: As personalizações da faixa de opções de atualização em projetos do Office migrados para o .NET Framework 4, 4.5
+title: Atualizar personalizações da faixa de das de projetos do Office migradas para o .NET Framework 4, 4,5
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -12,34 +12,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03424ecb477a32ecff31a83d341a6eef178a31e0
-ms.sourcegitcommit: cc5fd59e5dc99181601b7db8b28d7f8a83a36bab
+ms.openlocfilehash: c7d7ab5755f592e57e76dcd68f3dcb9dc2a7eab9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/11/2019
-ms.locfileid: "66836071"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254359"
 ---
-# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualizar personalizações da faixa de opções em projetos do Office que você migrar para o .NET Framework 4 ou o .NET Framework 4.5
-  Se o projeto contém uma personalização da faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** de item de projeto, você deve fazer as seguintes alterações ao seu código de projeto se a estrutura de destino é alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou mais tarde.
+# <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Atualize as personalizações da faixa de na de projetos do Office que você migra para o .NET Framework 4 ou o .NET Framework 4,5
+  Se o seu projeto contiver uma personalização da faixa de opções que foi criada usando o item de projeto **da faixa de opções (Visual Designer)** , você deverá fazer as seguintes alterações no código do projeto [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] se a estrutura de destino for alterada para o ou posterior.
 
-- Modificar o código gerado da faixa de opções.
+- Modifique o código da faixa de Ribbon gerado.
 
-- Modificar qualquer código que cria uma instância de controles da faixa de opções em tempo de execução, manipula os eventos da faixa de opções ou define a posição de um componente de faixa de opções por meio de programação.
+- Modifique qualquer código que instancie os controles da faixa de forma em tempo de execução, lide com os eventos da faixa de forma ou defina a posição de um componente da faixa de uma das
 
-## <a name="update-the-generated-ribbon-code"></a>Atualizar o código gerado da faixa de opções
- Se a estrutura de destino do seu projeto é alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve alterar o código gerado para o item da faixa de opções, executando as etapas a seguir. Os arquivos de código que você precisa atualizar dependem da linguagem de programação e como você criou o projeto:
+## <a name="update-the-generated-ribbon-code"></a>Atualizar o código da faixa de Ribbon gerado
+ Se a estrutura de destino do seu projeto for alterada para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o ou posterior, você deverá alterar o código gerado para o item da faixa de opções executando as etapas a seguir. Os arquivos de código que você precisa atualizar dependem da linguagem de programação e de como você criou o projeto:
 
-- Em projetos do Visual Basic ou em projetos do Visual c# que você criou no [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] execute todas as etapas no arquivo code-behind da faixa de opções (*YourRibbonItem*. Designer.cs ou *YourRibbonItem*. VB). Para ver o arquivo code-behind em projetos do Visual Basic, clique o **Show All Files** botão na **Gerenciador de soluções**.
+- Em projetos Visual Basic, ou em projetos C# visuais que você criou em [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../sharepoint/includes/vs-dev10-long-md.md)] execute todas as etapas no arquivo code-behind da faixa de opções (*YourRibbonItem*. Designer.cs ou *YourRibbonItem*. Designer. vb). Para ver o arquivo code-behind em projetos Visual Basic, clique no botão **Mostrar todos os arquivos** em **Gerenciador de soluções**.
 
-- Em projetos do Visual c# que você criou no Visual Studio 2008 e, em seguida, atualizado para [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], execute as duas primeiras etapas no arquivo de código da faixa de opções (*YourRibbonItem*. cs ou *YourRibbonItem*. vb), e Execute as etapas restantes no arquivo code-behind da faixa de opções.
+- Em projetos C# visuais que você criou no Visual Studio 2008 e, em seguida [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], atualizado para o, execute as duas primeiras etapas no arquivo de código da faixa de nome (*YourRibbonItem*. cs ou *YourRibbonItem*. vb) e execute as etapas restantes no Arquivo de código-behind da faixa de bits.
 
-### <a name="to-change-the-generated-ribbon-code"></a>Para alterar o código gerado da faixa de opções
+### <a name="to-change-the-generated-ribbon-code"></a>Para alterar o código da faixa de Ribbon gerado
 
-1. Modifique a declaração da classe da faixa de opções, de modo que ele deriva <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> em vez de `Microsoft.Office.Tools.Ribbon.OfficeRibbon`.
+1. Modifique a declaração da classe Ribbon para que ela seja derivada de <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> em vez de. `Microsoft.Office.Tools.Ribbon.OfficeRibbon`
 
-2. Modifique o construtor da classe da faixa de opções, conforme mostrado abaixo. Se você tiver adicionado a qualquer um dos seus próprios códigos para o construtor, não altere seu código. Em projetos do Visual Basic, modifique apenas o construtor sem parâmetros. Ignore o outro construtor.
+2. Modifique o construtor da classe Ribbon, conforme mostrado abaixo. Se você tiver adicionado qualquer um de seus próprios códigos ao construtor, não altere seu código. Em projetos Visual Basic, modifique somente o construtor sem parâmetros. Ignore o outro construtor.
 
-     O exemplo de código a seguir mostra o construtor padrão de uma classe de faixa de opções em um projeto que tem como alvo o .NET Framework 3.5.
+     O exemplo de código a seguir mostra o construtor padrão de uma classe da faixa de opções em um projeto que tem como alvo o .NET Framework 3,5.
 
     ```vb
     Public Sub New()
@@ -55,7 +55,7 @@ ms.locfileid: "66836071"
     }
     ```
 
-     O exemplo de código a seguir mostra o construtor padrão de uma classe de faixa de opções em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+     O exemplo de código a seguir mostra o construtor padrão de uma classe da faixa de opções em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] um projeto que tem como destino o ou posterior.
 
     ```vb
     Public Sub New()
@@ -72,12 +72,12 @@ ms.locfileid: "66836071"
     }
     ```
 
-3. No `InitializeComponent` método, modificar qualquer código que constrói um controle de faixa de opções para que o código em vez disso, usa um dos métodos de auxiliar a <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
+3. No método, modifique qualquer código que construa um controle da faixa de forma para que o código use um dos métodos auxiliares <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> do objeto. `InitializeComponent`
 
     > [!NOTE]
-    > Em projetos do Visual c#, você deve expandir a região em que é denominada `Component Designer generated code` para ver o `InitializeComponent` método.
+    > Em projetos C# visuais, você deve expandir a região nomeada `Component Designer generated code` para ver o `InitializeComponent` método.
 
-     Por exemplo, suponha que o arquivo contém a seguinte linha de código que cria uma instância de um <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> denominado `button1` em um projeto que tem como alvo o .NET Framework 3.5.
+     Por exemplo, suponha que o arquivo contém a linha de código a seguir que instancia um <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> nome `button1` em um projeto que se destina ao .NET Framework 3,5.
 
     ```vb
     Me.button1 = New Microsoft.Office.Tools.Ribbon.RibbonButton()
@@ -87,7 +87,7 @@ ms.locfileid: "66836071"
     this.button1 = new Microsoft.Office.Tools.Ribbon.RibbonButton();
     ```
 
-     Em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve usar o código a seguir em vez disso.
+     Em um projeto que tem como [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] alvo o ou posterior, você deve usar o código a seguir em vez disso.
 
     ```vb
     Me.button1 = Me.Factory.CreateRibbonButton()
@@ -97,32 +97,32 @@ ms.locfileid: "66836071"
     this.button1 = this.Factory.CreateRibbonButton();
     ```
 
-     Para obter uma lista completa dos métodos auxiliares para os controles da faixa de opções, consulte [controles de faixa de opções instanciar](#ribboncontrols).
+     Para obter uma lista completa dos métodos auxiliares para os controles da faixa de faixas, consulte [instanciar controles da faixa](#ribboncontrols)de medida.
 
-4. Em projetos do Visual c#, modifique qualquer linha de código na `InitializeComponent` método que usa um <xref:System.EventHandler%601> delegado a ser usado um delegado específico de faixa de opções em vez disso.
+4. Em projetos C# visuais, modifique qualquer linha de código no `InitializeComponent` <xref:System.EventHandler%601> método que usa um delegado para usar um delegado de faixa de uma específico.
 
-     Por exemplo, suponha que o arquivo contém a seguinte linha de código que manipula o <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> eventos em um projeto que tem como alvo o .NET Framework 3.5.
+     Por exemplo, suponha que o arquivo contém a linha de código a seguir que manipula <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> o evento em um projeto que tem como alvo o .NET Framework 3,5.
 
-    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve usar o código a seguir em vez disso.
+    \<CodeContentPlaceHolder > 8</CodeContentPlaceHolder> em um projeto direcionado para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o ou posterior, você deve usar o código a seguir em vez disso.
 
-    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obter uma lista completa dos delegados da faixa de opções, consulte [eventos tratar da faixa de opções](#ribbonevents).
+    \<CodeContentPlaceHolder > 9</CodeContentPlaceHolder> para obter uma lista completa dos delegados da faixa de faixas, consulte [manipular eventos da faixa](#ribbonevents)de lista.
 
-5. Em projetos do Visual Basic, localize o `ThisRibbonCollection` classe no final do arquivo. Modifique a declaração dessa classe para que ele não herde mais da `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
+5. Em projetos Visual Basic, localize a `ThisRibbonCollection` classe no final do arquivo. Modifique a declaração dessa classe para que ela não herde mais de `Microsoft.Office.Tools.Ribbon.RibbonReadOnlyCollection`.
 
-## <a name="ribboncontrols"></a> Criar uma instância de controles da faixa de opções
- Você deve modificar qualquer código que instancia dinamicamente os controles de faixa de opções. Em projetos que direcionam o .NET Framework 3.5, os controles da faixa de opções são classes que você pode instanciar diretamente em determinados cenários. Em projetos que segmentam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou versões posteriores, esses controles são interfaces que você não pode instanciar diretamente. Você deve criar os controles usando métodos que são fornecidos pelo <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
+## <a name="ribboncontrols"></a>Instanciar controles da faixa de faixas
+ Você deve modificar qualquer código que instancie dinamicamente os controles da faixa de forma. Em projetos direcionados para o .NET Framework 3,5, os controles da faixa de tipos são classes que você pode instanciar diretamente em determinados cenários. Em projetos direcionados para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o ou posterior, esses controles são interfaces que você não pode instanciar diretamente. Você deve criar os controles usando métodos que são fornecidos pelo <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
 
  Existem duas maneiras de acessar o objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:
 
-- Usando a propriedade de fábrica da faixa de opções de classe. Use essa abordagem no código na classe Ribbon.
+- Usando a propriedade Factory da classe Ribbon. Use essa abordagem no código na classe Ribbon.
 
-- Usando o método `Globals.Factory.GetRibbonFactory`. Use essa abordagem no código fora da classe Ribbon. Para obter mais informações sobre a classe Globals, consulte [Global de acesso a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).
+- Usando o método `Globals.Factory.GetRibbonFactory`. Use essa abordagem no código fora da classe Ribbon. Para obter mais informações sobre a classe Globals, consulte [acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).
 
-  O exemplo de código a seguir demonstra como criar uma <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> em uma classe de faixa de opções em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+  O exemplo de código a seguir demonstra como criar <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> um em uma classe de faixa de opções em um [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] projeto direcionado para o ou posterior.
 
-\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> a tabela a seguir lista os controles que você pode criar programaticamente e o método a ser usado para criar os controles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+\<CodeContentPlaceHolder > 10</CodeContentPlaceHolder> \<CodeContentPlaceHolder > 11</CodeContentPlaceHolder> a tabela a seguir lista os controles que você pode criar programaticamente e o método a ser usado para criar os controles em projetos direcionados ao [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
-|Controle|Método RibbonFactory para usar na [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
+|Controle|Método RibbonFactory para usar no [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e em projetos posteriores|
 |-------------| - |
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButton%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButtonGroup>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonButtonGroup%2A>|
@@ -142,27 +142,27 @@ ms.locfileid: "66836071"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonTab%2A>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|<xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.CreateRibbonToggleButton%2A>|
 
-## <a name="ribbonevents"></a> Manipular eventos da faixa de opções
- Você deve modificar qualquer código que manipula os eventos de controles da faixa de opções. Em projetos direcionados ao .NET Framework 3.5, esses eventos são manipulados pelo genérica <xref:System.EventHandler%601> delegar. Em projetos que segmentam o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou versões posteriores, esses eventos estão agora controlados pelos outros delegados.
+## <a name="ribbonevents"></a>Manipular eventos da faixa de das
+ Você deve modificar qualquer código que manipule eventos de controles da faixa de faixas. Em projetos que visam o .NET Framework 3,5, esses eventos são tratados pelo delegado <xref:System.EventHandler%601> genérico. Em projetos direcionados para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o ou posterior, esses eventos agora são tratados por outros delegados.
 
- A tabela a seguir lista os eventos da faixa de opções e os delegados que são associados com eles em projetos direcionados a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
+ A tabela a seguir lista os eventos da faixa de opções e os delegados associados a eles em projetos direcionados para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior.
 
-|evento|Delegado a ser usado em [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] e projetos posteriores|
+|evento|Delegar para usar [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] no e projetos posteriores|
 |-----------| - |
-|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage> evento em uma classe gerada da faixa de opções|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
+|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>evento em uma classe de faixa de Ribbon gerada|<xref:Microsoft.Office.Tools.Ribbon.RibbonLoadImageEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.Load>|<xref:Microsoft.Office.Tools.Ribbon.RibbonUIEventHandler>|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonCheckBox.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.SelectionChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox.TextChanged><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ButtonClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.ItemsLoading><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton.Click><br /><br /> <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click>|<xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler>|
 
-## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Definir a posição de um componente de faixa de opções programaticamente
- Você deve modificar qualquer código que define a posição de grupos, tabulações ou controles da faixa de opções. Em projetos direcionados ao .NET Framework 3.5, você pode usar o `AfterOfficeId` e `BeforeOfficeId` métodos estáticos `Microsoft.Office.Tools.Ribbon.RibbonPosition` classe para atribuir o `Position` propriedade de um controle, grupo ou guia. Em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, você deve acessar esses métodos usando o <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> propriedade fornecida pelo <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
+## <a name="set-the-position-of-a-ribbon-component-programmatically"></a>Definir a posição de um componente da faixa de forma programaticamente
+ Você deve modificar qualquer código que defina a posição de grupos de faixas de faixa, guias ou controles. Em projetos que visam o .NET Framework 3,5, você pode usar `AfterOfficeId` os `BeforeOfficeId` métodos e da classe `Microsoft.Office.Tools.Ribbon.RibbonPosition` estática para atribuir a `Position` propriedade de um grupo, guia ou controle. Em projetos direcionados para [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] o ou posterior, você deve acessar esses métodos usando a <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory.RibbonPosition%2A> Propriedade fornecida pelo <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory> objeto.
 
  Existem duas maneiras de acessar o objeto <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>:
 
 - Usando a propriedade `Factory` da classe Ribbon. Use essa abordagem no código na classe Ribbon.
 
-- Usando o método `Globals.Factory.GetRibbonFactory`. Use essa abordagem no código fora da classe Ribbon. Para obter mais informações sobre a classe Globals, consulte [Global de acesso a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).
+- Usando o método `Globals.Factory.GetRibbonFactory`. Use essa abordagem no código fora da classe Ribbon. Para obter mais informações sobre a classe Globals, consulte [acesso global a objetos em projetos do Office](../vsto/global-access-to-objects-in-office-projects.md).
 
-  O exemplo de código a seguir demonstra como definir o `Position` propriedade de uma guia em uma classe de faixa de opções em um projeto que tem como alvo o .NET Framework 3.5.
+  O exemplo de código a seguir demonstra como definir `Position` a propriedade de uma guia em uma classe da faixa de opções em um projeto que tem como alvo o .NET Framework 3,5.
 
 ```vb
 Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")
@@ -172,7 +172,7 @@ Me.tab1.Position = RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = RibbonPosition.AfterOfficeId("TabHome");
 ```
 
- O exemplo de código a seguir demonstra a mesma tarefa em um projeto que tem como alvo o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
+ O exemplo de código a seguir demonstra a mesma tarefa em um projeto que [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]tem como destino o.
 
 ```vb
 Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")

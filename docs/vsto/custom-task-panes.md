@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 766c93bb45380098af984db256d36d1e0948e56f
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 804fbf7e6d9069f6d0fb406e2a5191dcbafbbcee
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926713"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254390"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Os painéis de tarefas são painéis de interface do usuário que normalmente são encaixados em um lado de uma janela em um aplicativo Microsoft Office. Os painéis de tarefas personalizados fornecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar os recursos da solução. Por exemplo, a interface pode conter controles que executam código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -59,7 +59,7 @@ ms.locfileid: "68926713"
    Para obter mais informações, confira [Como: Adicione um painel de tarefas personalizado a um](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)aplicativo.
 
 ### <a name="create-the-user-interface"></a>Criar a interface do usuário
- Todos os painéis de tarefas personalizados criados usando as ferramentas de desenvolvimento do Office no Visual Studio contêm um <xref:System.Windows.Forms.UserControl> objeto. Esse controle de usuário fornece a interface do usuário do seu painel de tarefas personalizado. Você pode criar o controle de usuário em tempo de design ou em Runtime. Se você criar o controle de usuário em tempo de design, poderá usar o Designer de Formulários do Windows para construir a interface do usuário do seu painel de tarefas.
+ Todos os painéis de tarefas personalizados criados usando as ferramentas de desenvolvimento do Office no Visual Studio contêm um <xref:System.Windows.Forms.UserControl> objeto. Esse controle de usuário fornece a interface do usuário do seu painel de tarefas personalizado. Você pode criar o controle de usuário em tempo de design ou em tempo de execução. Se você criar o controle de usuário em tempo de design, poderá usar o Designer de Formulários do Windows para construir a interface do usuário do seu painel de tarefas.
 
 ### <a name="instantiate-the-custom-task-pane"></a>Criar uma instância do painel de tarefas personalizado
  Depois de criar um controle de usuário que contém a interface do usuário do painel de tarefas personalizado, você precisa criar <xref:Microsoft.Office.Tools.CustomTaskPane>uma instância de um. Para fazer isso, passe o controle de usuário para <xref:Microsoft.Office.Tools.CustomTaskPaneCollection> o em seu suplemento do VSTO chamando um <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> dos métodos. Essa coleção é exposta como o `CustomTaskPanes` campo `ThisAddIn` da classe. O exemplo de código a seguir deve ser executado da `ThisAddIn` classe.

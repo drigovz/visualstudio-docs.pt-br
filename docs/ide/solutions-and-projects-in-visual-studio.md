@@ -20,33 +20,32 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42a8dbc2fd9a6fc89b0be62271b048f8275a82b2
-ms.sourcegitcommit: ba5e072c9fedeff625a1332f22dcf3644d019f51
-ms.translationtype: HT
+ms.openlocfilehash: c63bc4b52e47c52096d0aa2d339b3c6dc96d7fe9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/31/2019
-ms.locfileid: "66432205"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251892"
 ---
 # <a name="solutions-and-projects-in-visual-studio"></a>Soluções e projetos no Visual Studio
 
-Este artigo descreve o conceito de um *projeto* e de uma *solução* no Visual Studio. Ele também aborda rapidamente a janela de ferramentas **Gerenciador de Soluções** e como criar um projeto.
+Esta página descreve o conceito de um *projeto* e uma *solução* no Visual Studio. Ele também aborda brevemente a janela de ferramentas de Gerenciador de Soluções e como criar um novo projeto.
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Projetos e soluções no Visual Studio para Mac](/visualstudio/mac/projects-and-solutions).
 
 ## <a name="projects"></a>Projetos
 
-Ao criar um aplicativo, um site, um plug-in, etc. no Visual Studio, você inicia um *projeto*. Logicamente, um projeto contém todos os arquivos de código-fonte, ícones, imagens, arquivos de dados, etc. que são compilados em um executável, biblioteca ou site. Um projeto também contém as configurações de compilador e outros arquivos de configuração que podem ser necessários para diversos serviços ou componentes com os quais seu programa se comunica.
+Ao criar um aplicativo ou site no Visual Studio, você começa com um *projeto*do. Em um sentido lógico, um projeto contém todos os arquivos que são compilados em um executável, biblioteca ou site. Esses arquivos podem incluir código-fonte, ícones, imagens, arquivos de dados e assim por diante. Um projeto também contém as configurações de compilador e outros arquivos de configuração que podem ser necessários para diversos serviços ou componentes com os quais seu programa se comunica.
+
+### <a name="project-file"></a>Arquivo de projeto
+
+O Visual Studio usa o [MSBuild](../msbuild/msbuild.md) para compilar cada projeto em uma solução, e cada projeto contém um arquivo de projeto do MSBuild. A extensão de arquivo reflete o tipo de projeto, por exemplo, C# um projeto (. csproj), um projeto Visual Basic (. vbproj) ou um projeto de banco de dados (. dbproj). O arquivo de projeto é um documento XML que contém todas as informações e instruções de que o MSBuild precisa para criar seu projeto, incluindo conteúdo, requisitos de plataforma, informações de controle de versão, servidor Web ou configurações de servidor de banco de dados e tarefas para executar.
+
+Os arquivos de projeto são baseados no [esquema XML do MSBuild](../msbuild/msbuild-project-file-schema-reference.md). Para examinar o conteúdo dos arquivos de projeto mais recentes do [estilo SDK](../msbuild/how-to-use-project-sdk.md) no Visual Studio, clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **Editar \<ProjectName\>** . Para examinar o conteúdo de .NET Framework e outros projetos desse estilo, primeiro descarregue o projeto (clique com o botão direito do mouse no nó do projeto em **Gerenciador de soluções** e selecione **descarregar projeto**). Em seguida, clique com o botão direito do mouse no projeto e escolha **Editar \<ProjectName\>** .
 
 > [!NOTE]
-> Você não precisa usar soluções ou projetos no Visual Studio para editar, compilar e depurar o código. Você pode simplesmente abrir a pasta que contém os arquivos de origem no Visual Studio e começar a editá-los. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
-
-Um projeto é definido em um arquivo XML com uma extensão, como *.vbproj*, *.csproj* ou *.vcxproj*. Este arquivo contém uma hierarquia de pasta virtual e os caminhos para todos os itens no projeto. Ele também contém as configurações de build.
-
-> [!TIP]
-> Para examinar o conteúdo de um arquivo de projeto no Visual Studio, primeiro descarregue o projeto selecionando o nome do projeto no **Gerenciador de Soluções** e escolhendo **Descarregar Projeto** no menu de contexto ou de clique com o botão direito do mouse. Em seguida, abra o menu de contexto novamente e escolha **Editar \<projectname\>** .
-
-No Visual Studio, o arquivo de projeto é usado pelo **Gerenciador de Soluções** para exibir as configurações e o conteúdo do projeto. Quando você compila seu projeto, o mecanismo do MSBuild consome o arquivo de projeto para criar o executável. Você também pode personalizar os projetos para produzir outros tipos de saída.
+> Você não precisa usar soluções ou projetos no Visual Studio para editar, compilar e depurar código. Você pode simplesmente abrir a pasta que contém os arquivos de origem no Visual Studio e começar a editá-los. Para obter mais informações, consulte [Desenvolver código no Visual Studio sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md).
 
 ## <a name="solutions"></a>Soluções
 
@@ -63,7 +62,7 @@ O Visual Studio usa dois tipos de arquivos ( *.sln* e *.suo*) para armazenar con
 
 A maneira mais fácil de criar um novo projeto é começar de um modelo de projeto para um tipo específico de aplicativo ou site. Um modelo de projeto consiste em um conjunto básico de arquivos de código, arquivos de configuração, ativos e configurações gerados previamente. Esses modelos estão disponíveis na caixa de diálogo em que você cria um projeto (**Arquivo** > **Novo** > **Projeto**). Para saber mais, confira [Criar um novo projeto no Visual Studio](create-new-project.md) e [Criar soluções e projetos](../ide/creating-solutions-and-projects.md).
 
-Se você costuma personalizar seus projetos de uma determinada maneira, é possível criar um modelo de projeto personalizado que possa ser usado para criar novos projetos. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
+Se você geralmente personaliza seus projetos de uma determinada maneira, pode criar um modelo de projeto personalizado que você pode usar para criar novos projetos do. Para obter mais informações, confira [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md).
 
 Quando você cria um novo projeto, ele é salvo por padrão em *%USERPROFILE%\source\repos*. Você pode alterar esse local na configuração **Locais do projeto** em **Ferramentas** > **Opções** > **Projetos e Soluções** > **Locais**. Para obter mais informações, consulte a [página Projetos e Soluções, caixa de diálogo Opções](../ide/reference/projects-and-solutions-options-dialog-box.md).
 

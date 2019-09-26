@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cbade56f80d75e6ab8d735aaf586d45d2dedb42
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 9d2dc3afb69c2febdcd8e59618c43c52ab9294cf
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68926678"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255696"
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel Ações
   Um painel Ações é um painel de tarefas de **ações de documento** personalizável que é anexado a um documento do Word Microsoft Office específico ou Microsoft Office pasta de trabalho do Excel. O painel Ações é hospedado no painel de tarefas do Office junto com outros painéis de tarefas internos, como o painel de tarefas **origem XML** no Excel ou o painel de tarefas **estilos e formatação** no Word. Você pode usar controles de Windows Forms ou controles WPF para criar a interface do usuário do painel Ações.
@@ -40,7 +40,7 @@ ms.locfileid: "68926678"
  [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
  [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
 
- O painel Ações torna-se visível no tempo de execução assim que você adiciona explicitamente um controle a ele. Depois que o painel Ações for exibido, você poderá adicionar ou remover dinamicamente os controles em resposta às ações do usuário. Normalmente, você adiciona o código para exibir o painel Ações no `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para que o painel Ações fique visível quando o usuário abrir o documento pela primeira vez. No entanto, talvez você queira exibir o painel Ações somente em resposta à ação de um usuário no documento. Por exemplo, você pode adicionar o código ao `Click` evento de um controle no documento.
+ O painel ações se torna visível em tempo de execução assim que você adiciona explicitamente um controle a ele. Depois que o painel Ações for exibido, você poderá adicionar ou remover dinamicamente os controles em resposta às ações do usuário. Normalmente, você adiciona o código para exibir o painel Ações no `Startup` manipulador de eventos do `ThisDocument` ou `ThisWorkbook` para que o painel Ações fique visível quando o usuário abrir o documento pela primeira vez. No entanto, talvez você queira exibir o painel Ações somente em resposta à ação de um usuário no documento. Por exemplo, você pode adicionar o código ao `Click` evento de um controle no documento.
 
 ### <a name="add-multiple-controls-to-the-actions-pane"></a>Adicionar vários controles ao painel Ações
  Quando você adiciona vários controles ao painel Ações, deve agrupar os controles em um controle de usuário e, em seguida, adicionar o controle de <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> usuário à propriedade. Esse processo inclui as seguintes etapas:

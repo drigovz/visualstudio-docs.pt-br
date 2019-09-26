@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: d50cbfbd517073544ebd172627d24bd7c3878fa5
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62536245"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254209"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -143,7 +143,7 @@ Geralmente, referências de extensão indicam dependências entre projetos e sã
 
 Uma referência a um arquivo *.pyd* habilita o IntelliSense no módulo gerado. O Visual Studio carrega o arquivo *.pyd* no interpretador do Python e examina seus tipos e suas funções. Ele também tenta analisar as cadeias de caracteres doc em funções para fornecer ajuda da assinatura.
 
-Se, a qualquer momento, o módulo de extensão é atualizado em disco, o Visual Studio analisa o módulo novamente em segundo plano. Essa ação não tem nenhum efeito no comportamento do tempo de execução, mas alguns preenchimentos não estarão disponíveis até que a análise seja concluída.
+Se, a qualquer momento, o módulo de extensão é atualizado em disco, o Visual Studio analisa o módulo novamente em segundo plano. Essa ação não tem efeito sobre o comportamento de tempo de execução, mas algumas conclusões não estão disponíveis até que a análise seja concluída.
 
 Talvez você também precise adicionar um [caminho de pesquisa](search-paths.md) à pasta que contém o módulo.
 
@@ -167,5 +167,8 @@ from System.Windows.Forms import *
 ### <a name="webpi-projects"></a>Projetos do WebPI
 
 É possível adicionar referências a entradas de produto do WebPI para implantação nos Serviços de Nuvem do Microsoft Azure, em que é possível instalar componentes adicionais por meio do feed do WebPI. Por padrão, o feed exibido é específico ao Python e inclui o Django, o CPython e outros componentes básicos. Você também pode selecionar seu próprio feed, conforme mostrado abaixo. Ao publicar no Microsoft Azure, uma tarefa de instalação instala todos os produtos referenciados.
+
+> [!IMPORTANT]
+> Os projetos do WebPI não estão disponíveis no Visual Studio 2017 ou no Visual Studio 2019.
 
 ![Referências do WebPI](media/projects-webPI-components.png)

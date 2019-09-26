@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 292852207a595d34f35a433a86f6554b5e68cf9e
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 93470ebcea306d3cea762d60e061994b2bf27cc8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68872029"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253844"
 ---
 # <a name="program-vsto-add-ins"></a>Programar suplementos do VSTO
   Ao estender um aplicativo Microsoft Office criando um suplemento do VSTO, você escreve o código diretamente `ThisAddIn` na classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host Microsoft Office, personalizar a interface do usuário do aplicativo e expor objetos em seu suplemento do VSTO a outras soluções do Office.

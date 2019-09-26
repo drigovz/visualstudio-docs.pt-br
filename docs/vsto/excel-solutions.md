@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c9af0a0c90d042d5720423150899971ffca8ec9
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 532689afe4e07c3151be6eac923f2b591aa34f46
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551523"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253631"
 ---
 # <a name="excel-solutions"></a>Soluções do Excel
   O Visual Studio fornece modelos de projeto que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Excel. Você pode usar essas soluções para automatizar o Excel, estender recursos do Excel e personalizar a interface do usuário do Excel. Para obter mais informações sobre as diferenças entre as personalizações em nível de documento e os suplementos do VSTO, consulte [visão &#40;geral&#41;do desenvolvimento de soluções do Office VSTO](../vsto/office-solutions-development-overview-vsto.md).
@@ -53,7 +53,7 @@ ms.locfileid: "69551523"
 ## <a name="automating"></a>Automatizar o Excel
  O modelo de objeto do Excel expõe muitos tipos que você pode usar para automatizar o Excel. Por exemplo, você pode criar gráficos programaticamente, Formatar planilhas e definir os valores de intervalos e células. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
 
- Ao desenvolver soluções do Excel no Visual Studio, você também pode usar *itens de host* e controles de *host* em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Excel, <xref:Microsoft.Office.Interop.Excel.Worksheet> como <xref:Microsoft.Office.Interop.Excel.Range> os objetos e. Os objetos estendidos se comportam como os objetos do Excel em que se baseiam, mas adicionam eventos adicionais e recursos de associação de dados aos objetos. Para obter mais informações, consulte automatizar o [Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).
+ Ao desenvolver soluções do Excel no Visual Studio, você também pode usar *itens de host* e controles de *host* em suas soluções. Esses são objetos que estendem determinados objetos comumente usados no modelo de objeto do Excel, <xref:Microsoft.Office.Interop.Excel.Worksheet> como <xref:Microsoft.Office.Interop.Excel.Range> os objetos e. Os objetos estendidos se comportam como os objetos do Excel em que se baseiam, mas adicionam eventos adicionais e recursos de associação de dados aos objetos. Para obter mais informações, consulte [automatizar o Excel usando objetos estendidos](../vsto/automating-excel-by-using-extended-objects.md).
 
 ## <a name="doclevel"></a>Desenvolver personalizações em nível de documento para o Excel
  Uma personalização em nível de documento para Microsoft Office Excel consiste em um assembly associado a uma pasta de trabalho específica. O assembly normalmente estende a pasta de trabalho Personalizando a interface do usuário e automatizando o Excel. Ao contrário de um suplemento do VSTO, que está associado ao próprio Excel, a funcionalidade que você implementa em uma personalização está disponível somente quando a pasta de trabalho associada está aberta no Excel.
@@ -65,7 +65,7 @@ ms.locfileid: "69551523"
 ### <a name="excel-customization-programming-model"></a>Modelo de programação de personalização do Excel
  Quando você cria um projeto de nível de documento para o Excel, o Visual Studio gera várias classes que são a base de `ThisWorkbook`sua `Sheet1`solução `Sheet2`:, `Sheet3`, e. Essas classes representam a pasta de trabalho e planilhas associadas à sua solução e fornecem um ponto de partida para escrever seu código.
 
- Para obter mais informações sobre essas classes geradas e outros recursos que você pode usar em um projeto de nível de documento, consulte programar personalizações em [nível de documento](../vsto/programming-document-level-customizations.md).
+ Para obter mais informações sobre essas classes geradas e outros recursos que você pode usar em um projeto de nível de documento, consulte [programar personalizações em nível de documento](../vsto/programming-document-level-customizations.md).
 
 ## <a name="applevel"></a>Desenvolver suplementos do VSTO para Excel
  Um suplemento do VSTO para Microsoft Office Excel consiste em um assembly que é carregado pelo Excel. O assembly normalmente estende o Excel Personalizando a interface do usuário e automatizando o Excel. Ao contrário de uma personalização em nível de documento, que é associada a uma pasta de trabalho específica, a funcionalidade implementada em um suplemento do VSTO não é restrita a nenhuma pasta de trabalho única.

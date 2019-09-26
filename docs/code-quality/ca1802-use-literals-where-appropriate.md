@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: b8be913ab1f66e82038afce776bc326e5f91c7f2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 435eb5a9fd7e41a69c873df4c728e42551734a37
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233797"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253359"
 ---
 # <a name="ca1802-use-literals-where-appropriate"></a>CA1802: Usar literais quando apropriado
 
@@ -43,9 +43,9 @@ Por padrão, essa regra só examina os campos visíveis externamente, mas isso �
 
 O valor de um `static readonly` campo é calculado em tempo de execução quando o construtor estático para o tipo declarativo é chamado. Se o `static readonly` campo for inicializado quando for declarado e um construtor estático não for declarado explicitamente, o compilador emitirá um construtor estático para inicializar o campo.
 
-O valor de um `const` campo é calculado no momento da compilação e armazenado nos metadados, o que aumenta o desempenho do tempo de execução quando ele `static readonly` é comparado a um campo.
+O valor de um `const` campo é calculado no momento da compilação e armazenado nos metadados, o que aumenta o desempenho em tempo de execução quando ele é comparado `static readonly` a um campo.
 
-Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para `const` um campo para que o valor seja calculado no momento da compilação em vez de em tempo de execução.
+Como o valor atribuído ao campo de destino é computáveis em tempo de compilação, altere a declaração para `const` um campo para que o valor seja computado em tempo de compilação em vez de em tempo de execução.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

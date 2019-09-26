@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: b719c78bd4800121e36346a095c2a4141b7e2de3
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 4c2e9c890b0b676216a02a526cad5380df4ceb57
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186714"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252468"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>Tutorial: Introdução ao C# e ao ASP.NET Core no Visual Studio
 
@@ -170,7 +170,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
     Você pode colocar o conteúdo do site estático, como CSS, imagens e bibliotecas JavaScript, diretamente nos caminhos em que deseja.
 
- 1. O projeto também contém os arquivos de configuração que gerenciam o aplicativo web em tempo de execução. A [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
+ 1. O projeto também contém arquivos de configuração que gerenciam o aplicativo Web em tempo de execução. A [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
 
      ![Arquivos de configuração no Gerenciador de Soluções no Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -273,7 +273,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
     Você pode colocar o conteúdo do site estático, como CSS, imagens e bibliotecas JavaScript, diretamente nos caminhos em que deseja.
 
- 1. O projeto também contém os arquivos de configuração que gerenciam o aplicativo web em tempo de execução. A [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
+ 1. O projeto também contém arquivos de configuração que gerenciam o aplicativo Web em tempo de execução. A [configuração](/aspnet/core/fundamentals/configuration) de aplicativo padrão é armazenada em *appsettings.json*. No entanto, você pode substituir essas configurações usando *appsettings.Development.json*. Expanda o arquivo **appsettings.json** para exibir o arquivo **appsettings.Development.json**.
 
      ![Arquivos de configuração no Gerenciador de Soluções no Visual Studio](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
@@ -304,7 +304,7 @@ Esta solução segue o padrão de design da **Página do Razor**. Ele é diferen
 
 1. Agora, vamos fazer uma alteração no código. Escolha **privacy.cshtml.cs**. Em seguida, limpe as diretivas `using` na parte superior do arquivo usando o seguinte atalho:
 
-   Escolha uma das diretivas `using` esmaecidas, e será exibida a lâmpada [Ações Rápidas](../../ide/quick-actions.md) logo abaixo da seta ou na margem esquerda. Escolha a lâmpada e, em seguida, passe o mouse sobre **remover utilizações desnecessárias**. 
+   Escolha uma das diretivas `using` esmaecidas, e será exibida a lâmpada [Ações Rápidas](../../ide/quick-actions.md) logo abaixo da seta ou na margem esquerda. Escolha a lâmpada e, em seguida, passe o mouse sobre **remover utilizações desnecessárias**.
 
    ![Remover usos desnecessários no arquivo Privacy.cshtml.cs](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 

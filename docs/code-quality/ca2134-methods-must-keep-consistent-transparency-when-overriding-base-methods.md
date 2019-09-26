@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67d1a1c37a1c39e07dd5b8754fef223bfa8ad7a2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 517588826983613c71a74296914b1dfeb3eaa2b4
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71232285"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253309"
 ---
 # <a name="ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods"></a>CA2134: Os métodos devem manter uma transparência consistente durante a substituição dos métodos base
 
@@ -40,7 +40,7 @@ As regras de transparência são impostas quando o código é compilado JIT em v
 Para corrigir uma violação dessa regra, altere a transparência do método que está substituindo um método virtual ou implementando uma interface para corresponder à transparência do método virtual ou da interface.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
-Não suprimir avisos desta regra. As violações dessa regra resultarão em um tempo <xref:System.TypeLoadException> de execução para assemblies que usam transparência de nível 2.
+Não suprimir avisos desta regra. As violações dessa regra resultam em um tempo <xref:System.TypeLoadException> de execução para assemblies que usam transparência de nível 2.
 
 ## <a name="examples"></a>Exemplos
 

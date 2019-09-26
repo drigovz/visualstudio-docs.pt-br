@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab118197c29ef950907839e8c04d6e49a9843f1a
-ms.sourcegitcommit: 6f3cf7a1bfc81a61f9a603461a1c34fd2221f100
-ms.translationtype: HT
+ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/12/2019
-ms.locfileid: "68957422"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71251699"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -184,7 +184,7 @@ As convenções de nomenclatura devem ser ordenadas da mais específica para a m
 
 ::: moniker range=">=vs-2019"
 
-A partir do Visual Studio 2019 versão 16.2, não importa a ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig. Em vez disso, o Visual Studio ordena as regras de nomenclatura automaticamente de acordo com a definição das próprias regras. A [extensão do Serviço de Linguagem do EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo EditorConfig e relatar casos em que a ordenação de regra no arquivo é diferente da que o compilador usará em tempo de execução.
+A partir do Visual Studio 2019 versão 16.2, não importa a ordem na qual as regras de nomenclatura são definidas em um arquivo EditorConfig. Em vez disso, o Visual Studio ordena as regras de nomenclatura automaticamente de acordo com a definição das próprias regras. A [extensão de serviço de linguagem EditorConfig](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.EditorConfig) pode analisar um arquivo EditorConfig e casos de relatório em que a ordenação de regra no arquivo é diferente do que o compilador usará em tempo de execução.
 
 Se você estiver usando uma versão anterior do Visual Studio, as convenções de nomenclatura deverão ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
