@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 0627a96bf100232987ace5a42430310912f97b8c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62537275"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252085"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
-As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), as preferências do usuário e outras informações necessárias em tempo de execução.
+As configurações de aplicativo permitem armazenar informações do aplicativo dinamicamente. As configurações permitem que você armazene informações no computador cliente que não devem ser incluídas no código do aplicativo (por exemplo, uma cadeia de conexão), preferências do usuário e outras informações necessárias em tempo de execução.
 
 As configurações de aplicativo substituem as propriedades dinâmicas usadas em versões anteriores do Visual Studio.
 
