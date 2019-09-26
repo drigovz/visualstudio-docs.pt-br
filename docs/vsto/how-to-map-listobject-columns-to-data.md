@@ -13,54 +13,54 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a37c0f12943d60f67ee0d17b15315ac85af509d5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6e0056687e8ca28af4dbc9032d7bbee0cf976378
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62967879"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253676"
 ---
 # <a name="how-to-map-listobject-columns-to-data"></a>Como: Mapear colunas ListObject para dados
-  Quando você associa um <xref:Microsoft.Office.Tools.Excel.ListObject> o controle para um <xref:System.Data.DataTable>, talvez você não queira exibir todas as colunas em uma lista ou você pode ter determinadas colunas que não estão associadas aos dados. Você pode mapear as colunas que você deseja que apareça na <xref:Microsoft.Office.Tools.Excel.ListObject> quando você chama o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método.
+  Ao associar um <xref:Microsoft.Office.Tools.Excel.ListObject> controle a um <xref:System.Data.DataTable>, talvez você não queira exibir todas as colunas em uma lista ou pode ter determinadas colunas que não estão associadas aos dados. Você pode mapear as colunas que deseja que apareçam <xref:Microsoft.Office.Tools.Excel.ListObject> no quando chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar uma lista no Excel que está conectado a uma lista do SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") Para ver uma demonstração de vídeo relacionada [, consulte Como fazer: Criar uma lista no Excel que está conectada a uma lista do SharePoint? ](http://go.microsoft.com/fwlink/?LinkID=130263).
 
 ## <a name="map-columns"></a>Mapear colunas
 
 ### <a name="to-map-a-data-table-to-columns-in-a-list"></a>Para mapear uma tabela de dados para colunas em uma lista
 
-1. Criar o <xref:System.Data.DataTable> no nível de classe.
+1. Crie o <xref:System.Data.DataTable> no nível de classe.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#16)]
      [!code-vb[Trin_VstcoreHostControlsExcel#16](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#16)]
 
-2. Adicionar colunas de amostra e dados na `Startup` manipulador de eventos do `Sheet1` classe (em um projeto de nível de documento) ou `ThisAddIn` classe (em um projeto de suplemento do VSTO).
+2. Adicione colunas de exemplo e dados no `Startup` manipulador `Sheet1` de eventos da classe (em um projeto de nível de documento) `ThisAddIn` ou classe (em um projeto de suplemento do VSTO).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#17)]
      [!code-vb[Trin_VstcoreHostControlsExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#17)]
 
-3. Chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passar os nomes de coluna na ordem em que elas devem aparecer. O objeto de lista será associado ao recém-criado <xref:System.Data.DataTable>, mas a ordem das colunas no objeto da lista será diferente da ordem em que aparecem no <xref:System.Data.DataTable>.
+3. Chame o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passe os nomes de coluna na ordem em que eles devem aparecer. O objeto de lista será vinculado ao recém-criado <xref:System.Data.DataTable>, mas a ordem das colunas no objeto de lista será diferente da ordem <xref:System.Data.DataTable>em que aparecem no.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#18)]
      [!code-vb[Trin_VstcoreHostControlsExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#18)]
 
-## <a name="specify-unmapped-columns"></a>Especifique as colunas não mapeadas
- Quando você mapear colunas para um <xref:System.Data.DataTable>, você também pode especificar que determinadas colunas não devem ser associadas a dados, passando uma cadeia de caracteres vazia. Uma nova coluna que não está associada a dados é adicionada ao <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
+## <a name="specify-unmapped-columns"></a>Especificar colunas não mapeadas
+ Ao mapear colunas para um <xref:System.Data.DataTable>, você também pode especificar que determinadas colunas não devem ser vinculadas aos dados, passando uma cadeia de caracteres vazia. Uma nova coluna que não está associada a dados é adicionada ao <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
 
 ### <a name="to-specify-an-unmapped-column-when-mapping-listobject-columns"></a>Para especificar uma coluna não mapeada ao mapear colunas ListObject
 
-1. Chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passar os nomes de coluna na ordem em que elas devem aparecer. Use uma cadeia de caracteres vazia para indicar onde uma coluna não mapeada é adicionada; Nesse caso, entre a coluna de título e a última coluna de nome.
+1. Chame o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passe os nomes de coluna na ordem em que eles devem aparecer. Use uma cadeia de caracteres vazia para indicar onde uma coluna não mapeada é adicionada; Nesse caso, entre a coluna Title e a coluna Last Name.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet3.cs#19)]
      [!code-vb[Trin_VstcoreHostControlsExcel#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet3.vb#19)]
 
 ## <a name="compile-the-code"></a>Compilar o código
- Este exemplo de código pressupõe que você tiver uma <xref:Microsoft.Office.Tools.Excel.ListObject> chamado `list1` na planilha em que esse código é exibida.
+ Este exemplo de código pressupõe que você tenha <xref:Microsoft.Office.Tools.Excel.ListObject> um `list1` nome existente na planilha na qual esse código é exibido.
 
 ## <a name="see-also"></a>Consulte também
-- [Estender documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [Estenda documentos do Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Controles em documentos do Office](../vsto/controls-on-office-documents.md)
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [Como: Preencher controles ListObject com dados](../vsto/how-to-fill-listobject-controls-with-data.md)

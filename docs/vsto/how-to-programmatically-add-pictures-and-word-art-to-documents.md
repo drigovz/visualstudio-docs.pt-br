@@ -1,5 +1,5 @@
 ---
-title: Adicionar imagens e Word Art a documentos programaticamente
+title: Adicionar imagens e palavras-chave a documentos de forma programática
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -16,92 +16,92 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 63b1a72a5b332f27b6bd38d25c16ff3a5981b4fa
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
+ms.openlocfilehash: 45b3030875539035f93bd340354e7041028200d2
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177759"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253818"
 ---
-# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Como: Adicionar programaticamente imagens e Word Art a documentos
-  Você pode adicionar imagens e objetos de desenho para seus documentos em tempo de design ou tempo de execução. WordArt permite que você adicione texto decorativo para documentos do Microsoft Office Word. Esses efeitos especiais de texto são objetos que você pode personalizar e inserir no documento de desenho.
+# <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>Como: Adicionar imagens e arte de palavras programaticamente a documentos
+  Você pode adicionar imagens e objetos de desenho a seus documentos em tempo de design ou durante o tempo de execução. O WordArt permite que você adicione texto decorativo a Microsoft Office documentos do Word. Esses efeitos de texto especiais são objetos de desenho que você pode personalizar e inserir em seu documento.
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
 ## <a name="add-a-picture-at-design-time"></a>Adicionar uma imagem em tempo de design
- Se você estiver desenvolvendo uma personalização no nível de documento, você pode adicionar uma imagem ao documento em tempo de design.
+ Se você estiver desenvolvendo uma personalização em nível de documento, poderá adicionar uma imagem ao documento em tempo de design.
 
 ### <a name="to-add-a-picture-to-a-word-document-at-design-time"></a>Para adicionar uma imagem a um documento do Word em tempo de design
 
 1. Coloque o cursor onde você deseja inserir a imagem no documento.
 
-2. Clique o **inserir** guia da faixa de opções.
+2. Clique na guia **Inserir** da faixa de faixas.
 
-3. No **ilustrações** , clique em **imagem**.
+3. No grupo **ilustrações** , clique em **imagem**.
 
-4. No **Insert Picture** caixa de diálogo, navegue até a imagem que você deseja inserir e clique em **inserir**.
+4. Na caixa de diálogo **Inserir imagem** , navegue até a imagem que deseja inserir e clique em **Inserir**.
 
-     A imagem é adicionada ao documento no local atual do cursor.
+     A imagem é adicionada ao documento no local do cursor atual.
 
-## <a name="add-a-picture-at-runtime"></a>Adicionar uma imagem em tempo de execução
- Você pode inserir uma imagem em um documento no local atual do cursor.
+## <a name="add-a-picture-at-run-time"></a>Adicionar uma imagem em tempo de execução
+ Você pode inserir uma imagem em um documento no local do cursor atual.
 
 ### <a name="to-add-a-picture-at-the-cursor-location"></a>Para adicionar uma imagem no local do cursor
 
-1. Chame o <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> método da <xref:Microsoft.Office.Interop.Word.InlineShapes> coleta e passe no nome do arquivo.
+1. Chame o <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> método <xref:Microsoft.Office.Interop.Word.InlineShapes> da coleção e passe o nome do arquivo.
 
      [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
      [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
 
-## <a name="add-wordart-at-design-time"></a>Adicionar WordArt no tempo de design
- Se você estiver desenvolvendo uma personalização no nível de documento, você pode adicionar WordArt ao documento em tempo de design.
+## <a name="add-wordart-at-design-time"></a>Adicionar WordArt em tempo de design
+ Se você estiver desenvolvendo uma personalização em nível de documento, poderá adicionar o WordArt ao documento em tempo de design.
 
-### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Para adicionar o WordArt a um documento do Word em tempo de design
+### <a name="to-add-wordart-to-a-word-document-at-design-time"></a>Para adicionar um WordArt a um documento do Word em tempo de design
 
-1. Coloque o cursor onde você deseja inserir a WordArt no documento.
+1. Coloque o cursor onde você deseja inserir o WordArt no documento.
 
-2. Clique o **inserir** guia da faixa de opções.
+2. Clique na guia **Inserir** da faixa de faixas.
 
-3. No **texto** , clique em **WordArt**e, em seguida, selecione um estilo de WordArt.
+3. No grupo de **texto** , clique em **WordArt**e selecione um estilo de WordArt.
 
-4. Adicione o texto que você deseja que apareça no documento para o **editar texto de WordArt** caixa de diálogo e clique em **Okey**.
+4. Adicione o texto que você deseja que apareça no documento à caixa de diálogo **Editar texto de WordArt** e clique em **OK**.
 
-     O texto é adicionado ao seu documento com o estilo selecionado do WordArt aplicado.
+     O texto é adicionado ao documento com o estilo de WordArt selecionado aplicado.
 
-## <a name="add-wordart-at-runtime"></a>Adicionar WordArt no tempo de execução
- Você pode inserir o WordArt em um documento no local atual do cursor. O procedimento é diferente para personalizações no nível de documento e suplementos do VSTO.
+## <a name="add-wordart-at-run-time"></a>Adicionar WordArt em tempo de execução
+ Você pode inserir o WordArt em um documento no local do cursor atual. O procedimento é diferente para personalizações em nível de documento e suplementos do VSTO.
 
-### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Para adicionar o WordArt no local do cursor em uma personalização no nível de documento
+### <a name="to-add-wordart-at-the-cursor-location-in-a-document-level-customization"></a>Para adicionar um WordArt no local do cursor em uma personalização no nível do documento
 
-1. Obtenha a posição esquerda e superior do local atual do cursor.
+1. Obter a posição esquerda e superior do local do cursor atual.
 
      [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
 
-2. Chame o <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> método da <xref:Microsoft.Office.Interop.Word.Shapes> objeto no documento.
+2. Chame o <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> método <xref:Microsoft.Office.Interop.Word.Shapes> do objeto no documento.
 
      [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
 
-### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>Para adicionar o WordArt no local do cursor em um suplemento do VSTO
+### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>Para adicionar um WordArt no local do cursor em um suplemento do VSTO
 
-1. Obtenha a posição esquerda e superior do local atual do cursor.
+1. Obter a posição esquerda e superior do local do cursor atual.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
 
-2. Chame o <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> método da <xref:Microsoft.Office.Interop.Word.Shapes> objeto do documento ativo (ou outro documento que você especificar).
+2. Chamar o <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> método <xref:Microsoft.Office.Interop.Word.Shapes> do objeto do documento ativo (ou um documento diferente que você especificar).
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
 
 ## <a name="compile-the-code"></a>Compilar o código
 
-- Uma imagem denominada *SamplePicture.jpg* deve existir na unidade C.
+- Uma imagem chamada *SamplePicture. jpg* deve existir na unidade C.
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Abrir documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)
-- [Como: Programaticamente, inserir texto em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
-- [Como: Por meio de programação restaurar seleções após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+- [Como: Abrir os documentos existentes programaticamente](../vsto/how-to-programmatically-open-existing-documents.md)
+- [Como: Inserir texto de forma programática em documentos do Word](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
+- [Como: Restaurar seleções programaticamente após pesquisas](../vsto/how-to-programmatically-restore-selections-after-searches.md)
 - [Como: Salvar documentos programaticamente](../vsto/how-to-programmatically-save-documents.md)
 - [Parâmetros opcionais em soluções do Office](../vsto/optional-parameters-in-office-solutions.md)

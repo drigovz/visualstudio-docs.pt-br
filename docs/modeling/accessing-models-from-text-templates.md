@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7dd7df55f67d486d03048860bf3d20f976a70f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: b9e3b3762b127b1f66b43d6c961054b9cef04048
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68870708"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254114"
 ---
 # <a name="access-models-from-text-templates"></a>Acessar modelos de modelos de texto
 
@@ -63,7 +63,7 @@ Here is a list of elements in the model:
 
 - Para depurar o modelo, adicione `debug="true"` `template` à diretiva. O modelo será aberto em outra instância do Visual Studio se ocorrer uma exceção. Se você quiser dividir o depurador em um ponto específico no código, insira a instrução`System.Diagnostics.Debugger.Break();`
 
-   Para obter mais informações, consulte Depurando [um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).
+   Para obter mais informações, consulte [Depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).
 
 ## <a name="about-the-dsl-directive-processor"></a>Sobre o processador de diretivas DSL
  O modelo pode usar as classes de domínio que você definiu em sua definição de DSL. Isso é trazido por uma diretiva que geralmente aparece próximo ao início do modelo. No exemplo anterior, é o seguinte.
@@ -136,7 +136,7 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 ```
 
 ## <a name="loading-models-dynamically"></a>Carregando modelos dinamicamente
- Se você quiser determinar em tempo de execução quais modelos devem ser carregados, você pode carregar um arquivo de modelo dinamicamente no código do programa, em vez de usar a diretiva específica de DSL.
+ Se você quiser determinar em tempo de execução quais modelos carregar, você pode carregar um arquivo de modelo dinamicamente no código do programa, em vez de usar a diretiva específica de DSL.
 
  No entanto, uma das funções da diretiva específica a DSL é importar o namespace de DSL, para que o código de modelo possa usar as classes de domínio definidas nesse DSL. Como você não está usando a diretiva, você deve adicionar  **\<> de assembly** e  **\<importar >** diretivas para todos os modelos que você pode carregar. Isso é fácil se os modelos diferentes que você pode carregar são todas as instâncias do mesmo DSL.
 

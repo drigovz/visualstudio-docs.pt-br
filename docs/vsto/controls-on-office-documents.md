@@ -16,44 +16,44 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37633d02f4b7a9a140b41058a39369fde7f64002
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 160897a37ff6a8b335479b42a80f4186f176cab6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951150"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254411"
 ---
 # <a name="controls-on-office-documents"></a>Controles em documentos do Office
-  Você pode usar as ferramentas de desenvolvimento do Office no Visual Studio para adicionar controles Windows Forms e *hospedar controles* para documentos do Word e planilhas do Excel. Controles de host são objetos que estendem a vários objetos de (UI) de interface do usuário nos modelos de objeto do Word e Excel.
+  Você pode usar as ferramentas de desenvolvimento do Office no Visual Studio para adicionar Windows Forms controles e *controles de host* a documentos do Word e planilhas do Excel. Os controles de host são objetos que estendem vários objetos de interface do usuário (IU) nos modelos de objeto do Word e do Excel.
 
  [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
- Ao desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar esses controles programaticamente para qualquer documento aberto ou a pasta de trabalho em tempo de execução.
+ Ao desenvolver projetos de suplemento do VSTO para Excel ou Word, você pode adicionar esses controles programaticamente a qualquer documento ou pasta de trabalho aberta em tempo de execução.
 
- Quando você desenvolve projetos no nível de documento para Excel ou Word, você pode adicionar programaticamente esses controles em tempo de execução, ou você pode usar o designer do Visual Studio para adicionar esses controles para o documento ou pasta de trabalho em seu projeto em tempo de design.
+ Ao desenvolver projetos de nível de documento para Excel ou Word, você pode adicionar esses controles programaticamente em tempo de execução, ou pode usar o Visual Studio Designer para adicionar esses controles ao documento ou pasta de trabalho em seu projeto em tempo de design.
 
 ## <a name="in-this-section"></a>Nesta seção
-- [Visão geral dos controles de host e de itens de host](../vsto/host-items-and-host-controls-overview.md)
+- [Visão geral de itens de host e controles de host](../vsto/host-items-and-host-controls-overview.md)
 
- Descreve a funcionalidade de itens de host e controles de host, incluindo a programação em relação a eventos, os controles de associação a dados e como os controles são diferentes dos objetos nativos.
+ Descreve a funcionalidade de itens de host e controles de host, incluindo programação em eventos, associação de controles a dados e como os controles diferem dos objetos nativos.
 
 - [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 
  Descreve os problemas que você pode encontrar ao usar itens de host e controles de host no código.
 
-- [Controles de formulários do Windows na visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [Visão geral dos controles de Windows Forms em documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
- Fornece informações sobre como usar controles de Windows Forms em documentos do Excel e Word e como eles diferem de controles em um formulário do Windows.
+ Fornece informações sobre como usar controles de Windows Forms em documentos do Excel e do Word e como eles diferem dos controles em um formulário do Windows.
 
 - [Adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
- Descreve como adicionar controles dos Windows Forms e controles a documentos do Word e Excel host e descreve as limitações sobre como esses controles persistem no documento.
+ Descreve como adicionar controles de Windows Forms e de host a documentos do Word e do Excel e descreve as limitações sobre como esses controles persistem no documento.
 
 ## <a name="related-sections"></a>Seções relacionadas
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)
 
- Fornece informações sobre diferentes maneiras de personalizar os aplicativos de interface do usuário do Microsoft Office usando o Visual Studio.
+ Fornece informações sobre diferentes maneiras de personalizar a interface do usuário do Microsoft Office aplicativos usando o Visual Studio.
 
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)
 
- Descreve como você pode exibir dados em documentos do Word e Excel, associando os dados a controles de host dentro do documento.
+ Descreve como você pode exibir dados em documentos do Word e do Excel ligando os dados aos controles de host dentro do documento.

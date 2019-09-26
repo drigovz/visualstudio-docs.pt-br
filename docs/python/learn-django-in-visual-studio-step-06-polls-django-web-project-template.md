@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 31f125c11bb364f2650384d8d5894f7f48a9bd3e
-ms.sourcegitcommit: 3cda0d58c5cf1985122b8977b33a171c7359f324
-ms.translationtype: HT
+ms.openlocfilehash: 5e9220df4f9abdb806495e6108fb6039b28e0b7b
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/29/2019
-ms.locfileid: "70154924"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254375"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>Etapa 6: Usar o modelo de projeto Web Votações do Django
 
@@ -112,9 +112,9 @@ class Choice(models.Model):
         return self.text
 ```
 
-Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a Votação no banco de dados; o campo `total_votes` é calculado em tempo de execução.
+Como você pode ver, uma Pesquisa mantém uma descrição em seu campo `text` e uma data de publicação no `pub_date`. Esses campos são os únicos que existem para a pesquisa no banco de dados; o `total_votes` campo é calculado em tempo de execução.
 
-Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O campo `votes_percentage` é calculado em tempo de execução e não foi encontrado no banco de dados.
+Uma Opção está relacionada a uma Pesquisa por meio do campo `poll`, contém uma descrição no `text`e mantém uma contagem para aquela opção no `votes`. O `votes_percentage` campo é calculado em tempo de execução e não é encontrado no banco de dados.
 
 A lista completa de tipos de campo é `CharField` (texto limitado) `TextField` (texto ilimitado), `EmailField`, `URLField`, `DateTimeField`, `IntegerField`, `DecimalField`, `BooleanField`, `ForeignKey` e `ManyToMany`. Cada campo utiliza alguns atributos, como `max_length`. O atributo `blank=True` significa que o campo é opcional; `null=true` significa que um valor é opcional. Também há um atributo `choices` que limita valores a valores em uma matriz de tuplas de valor de dados/valor de exibição. (Veja a [Referência de campo de modelo](https://docs.djangoproject.com/en/2.0/ref/models/fields/) na documentação do Django).
 
@@ -192,7 +192,7 @@ Em geral, o recurso de migração do Django significa que você nunca precisa ge
 
 ### <a name="question-what-happens-if-i-forget-to-run-the-migrate-command-after-making-changes-to-models"></a>Pergunta: O que acontecerá se eu esquecer de executar o comando de migração depois de fazer alterações nos modelos?
 
-Resposta: Se os modelos não corresponderem ao que está no banco de dados, o Django falhará em tempo de execução com as exceções adequadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
+Resposta: Se os modelos não corresponderem ao que há no banco de dados, o Django falhará em tempo de execução com as exceções apropriadas. Por exemplo, se você esquecer de migrar a alteração do modelo mostrada na seção anterior, verá o erro **no such column: app_poll.author**:
 
 ![Erro mostrado quando uma alteração de modelo não tiver sido migrada](media/django/step06-exception-when-forgetting-to-migrate.png).
 

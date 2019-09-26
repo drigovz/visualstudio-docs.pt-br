@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 60aefd40c48dc3789ab84ee5873aa6a53f4ee3fe
-ms.sourcegitcommit: b56dc6fadc6c924beed36bb4c2ccc16cf6bcfa1c
+ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/02/2019
-ms.locfileid: "68740114"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71254050"
 ---
 # <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar a dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a um Microsoft Office documento do Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
@@ -73,7 +73,7 @@ ms.locfileid: "68740114"
 
 6. Na caixa de diálogo **Assistente de adição de referência** , clique em **concluir**.
 
-## <a name="add-a-content-control-and-bind-to-data-at-runtime"></a>Adicionar um controle de conteúdo e associar a dados em tempo de execução
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>Adicionar um controle de conteúdo e associar a dados em tempo de execução
  Em projetos de suplemento do VSTO, você adiciona e associa controles em tempo de execução. Para esta explicação, configure o controle de conteúdo para recuperar dados do serviço Web quando um usuário clicar dentro do controle.
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Para adicionar um controle de conteúdo e associar a dados

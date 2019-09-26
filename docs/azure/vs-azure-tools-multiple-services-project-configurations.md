@@ -9,18 +9,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: dfb58c9eabb135b69033c065fa606511043a2c8b
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
-ms.translationtype: HT
+ms.openlocfilehash: 5314e92065cb29691aca75d424a331d10284a558
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260646"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253427"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>Configurando seu projeto do Azure no Visual Studio para usar várias configurações de serviço
 
 Um projeto de serviço de nuvem do Azure no Visual Studio inclui três arquivos de configuração: `ServiceDefinition.csdef`, `ServiceConfiguration.Local.cscfg` e `ServiceConfiguration.Cloud.cscfg`:
 
-- O `ServiceDefinition.csdef` é implantado no Azure para descrever os requisitos do serviço de nuvem e suas funções, e para fornecer as configurações que se aplicam a todas as instâncias. Essas configurações podem ser lidas em tempo de execução usando a API de tempo de execução de hospedagem de serviços do Azure. Esse arquivo poderá ser atualizado no Azure somente quando o serviço de nuvem for interrompido.
+- O `ServiceDefinition.csdef` é implantado no Azure para descrever os requisitos do serviço de nuvem e suas funções, e para fornecer as configurações que se aplicam a todas as instâncias. As configurações podem ser lidas em tempo de execução usando a API de tempo de execução de Hospedagem de serviço do Azure. Esse arquivo poderá ser atualizado no Azure somente quando o serviço de nuvem for interrompido.
 - O `ServiceConfiguration.Local.cscfg` e o `ServiceConfiguration.Cloud.cscfg` fornecem valores para as configurações no arquivo de definição e especificam o número de instâncias a serem executadas para cada função. O arquivo "Local" contém os valores usados na depuração local; o arquivo "Nuvem" é implantado no Azure como `ServiceConfiguration.cscfg` e fornece as configurações para o ambiente do servidor. Esse arquivo pode ser atualizado enquanto o serviço de nuvem está em execução no Azure.
 
 Os parâmetros de configuração são gerenciados e modificados no Visual Studio usando as páginas de propriedade para a função aplicável (clique com o botão direito na função e selecione **Propriedades** ou clique duas vezes na função). As alterações podem ser definidas para qualquer configuração que seja escolhida na lista suspensa **Configuração do serviço**. As propriedades para funções da Web e de trabalho são semelhantes, exceto onde estiver descrito nas seções a seguir.
@@ -55,7 +55,7 @@ Por padrão, o diagnóstico é habilitado para a função web. A conta de armaze
 
 ## <a name="settings-page"></a>Página Configurações
 
-Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores das suas configurações em tempo de execução usando classes fornecidas pelo [Biblioteca Gerenciada do Azure](http://go.microsoft.com/fwlink?LinkID=171026), especificamente o método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx).
+Na página **Configurações**, você pode adicionar as configurações a uma configuração como pares nome-valor. O código em execução na função pode ler os valores de suas definições de configuração em tempo de execução usando classes fornecidas pela [biblioteca gerenciada do Azure](http://go.microsoft.com/fwlink?LinkID=171026), especificamente, o método [GetConfigurationSettingValue](https://msdn.microsoft.com/library/azure/microsoft.windowsazure.serviceruntime.roleenvironment.getconfigurationsettingvalue.aspx) .
 
 ### <a name="configuring-a-connection-string-for-a-storage-account"></a>Configurando uma cadeia de conexão para uma conta de armazenamento
 

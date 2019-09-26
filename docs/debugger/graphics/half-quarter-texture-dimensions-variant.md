@@ -1,5 +1,5 @@
 ---
-title: Variante de dimensões de textura de metade / um quarto | Microsoft Docs
+title: Variante de dimensões de textura de semestre-trimestre | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 620300d1727adc41d5655bd33dde87ad592bba1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62895619"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252982"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de metade/um quarto nas dimensões de textura
 Reduz as dimensões de textura nas texturas que não são destinos de renderização.
@@ -41,7 +41,7 @@ Reduz as dimensões de textura nas texturas que não são destinos de renderiza�
   Se mapas de mip forem habilitados para a textura, a variante reduz o número de nível de mip de maneira equivalente; um a menos ao redimensionar para a metade ou dois a menos ao redimensionar para um quarto.
 
 ## <a name="example"></a>Exemplo
- Essa variante redimensiona as texturas no tempo de execução antes da chamada para `CreateTexture2D`. Não recomendamos essa abordagem para códigos de produção, pois as texturas em tamanho integral consomem mais espaço em disco e a etapa adicional pode aumentar o tempo de carregamento no aplicativo, especialmente no caso de texturas compactadas, que requerem recursos computacionais significativos para codificação. Ao invés disso, recomendamos que você redimensione as texturas offline usando um editor de imagens ou um processador de imagem que faça parte do seu pipeline de compilação. Essas abordagens reduzem os requisitos de espaço em disco e eliminam a sobrecarga do tempo de execução no aplicativo, além de oferecer mais tempo de processamento para que seja possível manter a melhor qualidade de imagem ao reduzir ou compactar as texturas.
+ Essa variante redimensiona texturas em tempo de execução antes da chamada `CreateTexture2D`para. Não recomendamos essa abordagem para códigos de produção, pois as texturas em tamanho integral consomem mais espaço em disco e a etapa adicional pode aumentar o tempo de carregamento no aplicativo, especialmente no caso de texturas compactadas, que requerem recursos computacionais significativos para codificação. Ao invés disso, recomendamos que você redimensione as texturas offline usando um editor de imagens ou um processador de imagem que faça parte do seu pipeline de compilação. Essas abordagens reduzem os requisitos de espaço em disco e eliminam a sobrecarga do tempo de execução no aplicativo, além de oferecer mais tempo de processamento para que seja possível manter a melhor qualidade de imagem ao reduzir ou compactar as texturas.
 
 ## <a name="see-also"></a>Consulte também
 - [Variante de geração de Mip-map](mip-map-generation-variant.md)

@@ -14,14 +14,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 289062a15c35641d5558409c7643301e346b6e65
-ms.sourcegitcommit: f42b5318c5c93e2b5ecff44f408fab8bcdfb193d
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/22/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69976700"
 ---
 # <a name="nesting-projects"></a>Aninhando projetos
-Os desenvolvedores de aplicativos empresariais que usam o pacote do vs podem, de forma conveniente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agrupar tipos semelhantes de projetos no usando o aninhamento de *projetos*. Por exemplo, o projeto de modelo empresarial usa projetos aninhados para agrupar projetos em categorias. Projetos de fachada de negócios, projetos de interface do usuário da Web e assim por diante são agrupados em uma categoria.
+Os desenvolvedores de aplicativos empresariais que usam o pacote do vs podem, de forma conveniente, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] agrupar tipos semelhantes de projetos no usando o *aninhamento de projetos*. Por exemplo, o projeto de modelo empresarial usa projetos aninhados para agrupar projetos em categorias. Projetos de fachada de negócios, projetos de interface do usuário da Web e assim por diante são agrupados em uma categoria.
 
  Nesse cenário, não há nenhum limite para o número de projetos que o desenvolvedor pode aninhar em cada projeto pai, embora o desenvolvedor possa fornecer limites programaticamente. Esse tipo de agrupamento também pode ser recursivo, caso em que os projetos do mesmo tipo que um projeto filho podem ser aninhados sob o filho para se tornar um subprojeto do filho, que é um subprojeto do pai.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 595b8ea35799effd36e4a8599c61b3ab42efb940
-ms.sourcegitcommit: a1e899248adaf104697fa7dea32a36e69e9cc119
+ms.openlocfilehash: 365037d3eeeec5077d724ca72d43cce5dcbe0ebd
+ms.sourcegitcommit: 528178a304e66c0cb7ab98b493fe3c409f87493a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71159916"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71273355"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>Criar um banco de dados e adicionar tabelas no Visual Studio
 
@@ -68,6 +68,9 @@ Você pode exibir a cadeia de conexão para o arquivo *SampleDatabase. MDF* abri
 
 - Como alternativa, você pode selecionar **Exibir** > **Gerenciador de servidores**, se essa janela ainda não estiver aberta. Abra o janela Propriedades expandindo o nó **conexões de dados** , clicando com o botão direito do mouse em *SampleDatabase. MDF*e, em seguida, selecionando **Propriedades**.
 
+  > [!TIP]
+  > Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
+
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>Criar tabelas e chaves usando Designer de Tabela
 
 Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e algumas linhas de dados de exemplo. Você também criará uma chave estrangeira para especificar como os registros em uma tabela correspondem aos registros na outra tabela.
@@ -75,6 +78,8 @@ Nesta seção, você criará duas tabelas, uma chave primária em cada tabela e 
 ### <a name="create-the-customers-table"></a>Criar a tabela Customers
 
 1. Em **Gerenciador de servidores**, expanda o nó **conexões de dados** e expanda o nó **SampleDatabase. MDF** .
+
+   Se você não puder expandir o nó conexões de dados, ou se a conexão SampleDatabase. MDF não estiver listada, selecione o botão **conectar ao Database** na barra de ferramentas Gerenciador de servidores. Na caixa de diálogo **Adicionar conexão** , certifique-se de que **Microsoft SQL Server arquivo de banco** de dados esteja selecionado em **fonte de dados**e, em seguida, navegue até e selecione o arquivo SampleDatabase. MDF. Conclua a adição da conexão selecionando **OK**.
 
 2. Clique com o botão direito do mouse em **tabelas** e selecione **Adicionar nova tabela**.
 

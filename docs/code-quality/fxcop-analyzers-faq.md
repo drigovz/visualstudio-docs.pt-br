@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4dec35fb978b3c751e07cb6d0612ff5da27c74e5
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 42581e632c08550fce3cd685949401a155a060f6
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551122"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253166"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Perguntas frequentes sobre o FxCop e sobre os analisadores do FxCop
 
@@ -43,7 +43,7 @@ Para executar os analisadores do FxCop, primeiro [instale o pacote NuGet](instal
 
 ## <a name="i-get-warning-ca0507-even-after-ive-installed-the-fxcop-analyzers-nuget-package"></a>Eu recebo aviso CA0507 mesmo depois de instalar o pacote NuGet dos analisadores FxCop
 
-Se você instalou os analisadores FxCop, mas continua recebendo o aviso CA0507 **"Executar análise de código" foi preterido a favor dos analisadores FxCop, que são executados durante o build"** , talvez você precise definir a propriedade do msbuild **RunCodeAnalysis** no arquivo de projeto como **false**. Caso contrário, a análise herdada será executada após cada compilação.
+Se você instalou os analisadores do FxCop, mas continuar a obter o aviso CA0507 **"" executar análise de código "foi preterido em favor dos analisadores do FxCop, que são executados durante a compilação"** , talvez seja necessário definir a Propriedade MSBuild do **RunCodeAnalysis** em seu [projeto arquivo](../ide/solutions-and-projects-in-visual-studio.md#project-file) como **false**. Caso contrário, a análise herdada será executada após cada compilação.
 
 ```xml
 <RunCodeAnalysis>false</RunCodeAnalysis>
@@ -51,7 +51,7 @@ Se você instalou os analisadores FxCop, mas continua recebendo o aviso CA0507 *
 
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quais regras foram transportadas para analisadores de FxCop?
 
-Para obter informações sobre quais regras de análise herdadas foram transportadas para analisadores de [FxCop](install-fxcop-analyzers.md), consulte [status da porta da regra do FxCop](fxcop-rule-port-status.md).
+Para obter informações sobre quais regras de análise herdadas foram transportadas para [analisadores de FxCop](install-fxcop-analyzers.md), consulte [status da porta da regra do FxCop](fxcop-rule-port-status.md).
 
 ## <a name="see-also"></a>Consulte também
 

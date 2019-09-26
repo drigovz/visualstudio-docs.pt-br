@@ -1,5 +1,5 @@
 ---
-title: Visão geral da faixa de opções
+title: Visão geral da faixa de faixas
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -18,95 +18,95 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5067a52fb9d6a0b6d8991b68a2fce8cdbae987c9
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446957"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255934"
 ---
-# <a name="ribbon-overview"></a>Visão geral da faixa de opções
-  A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de encontrar. Comandos são exibidos como controles da faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior da janela do aplicativo. Grupos relacionados são organizados em guias.
+# <a name="ribbon-overview"></a>Visão geral da faixa de faixas
+  A faixa de opção é uma maneira de organizar comandos relacionados para que eles sejam mais fáceis de localizar. Os comandos aparecem como controles na faixa de faixas. Os controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior de uma janela de aplicativo. Os grupos relacionados são organizados em guias.
 
- Agora, a maioria dos recursos que foram acessados por meio de menus e barras de ferramentas em versões anteriores do Microsoft Office system pode ser acessada por meio da faixa de opções. Para obter mais informações, consulte o artigo técnico [visão geral do desenvolvedor da interface do usuário para o 2007 Microsoft Office system](http://go.microsoft.com/fwlink/?LinkID=70860).
+ A maioria dos recursos que foram acessados usando menus e barras de ferramentas em versões anteriores do sistema de Microsoft Office agora pode ser acessada usando a faixa de faixas. Para obter mais informações, consulte o artigo técnico [visão geral do desenvolvedor da interface do usuário para o sistema de Microsoft Office de 2007](http://go.microsoft.com/fwlink/?LinkID=70860).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-## <a name="customize-the-microsoft-office-ribbon"></a>Personalizar a faixa de opções do Microsoft Office
- Para personalizar a faixa de opções, adicione um dos seguintes itens de faixa de opções ao seu projeto do Office:
+## <a name="customize-the-microsoft-office-ribbon"></a>Personalizar a faixa de Microsoft Office
+ Para personalizar a faixa de opções, adicione um dos seguintes itens da faixa para o seu projeto do Office:
 
-- **Faixa de opções (Visual Designer)**
+- **Faixa de visualização (Visual Designer)**
 
-- **Faixa de opções (XML)**
+- **Faixa de Ribbon (XML)**
 
-  Por exemplo, para personalizar a faixa de opções do Excel, adicione um item da faixa de opções para um projeto de suplemento do VSTO do Excel.
+  Por exemplo, para personalizar a faixa de bits do Excel, adicione um item da faixa de medida a um projeto de suplemento do VSTO do Excel.
 
-### <a name="ribbon-visual-designer-item"></a>Item da faixa de opções (Visual Designer)
- O **faixa de opções (Visual Designer)** item fornece ferramentas avançadas que tornam mais fácil para você projetar e desenvolver uma faixa de opções personalizada. Use o **faixa de opções (Visual Designer)** item para personalizar a faixa de opções das seguintes maneiras:
+### <a name="ribbon-visual-designer-item"></a>Item da faixa de visualização (Visual Designer)
+ O item **da faixa de visão (Visual Designer)** fornece ferramentas avançadas que facilitam o design e o desenvolvimento de uma faixa de Ribbon personalizada. Use o item **Ribbon (Visual Designer)** para personalizar a faixa de opções das seguintes maneiras:
 
-- Adicione guias personalizadas ou internas para uma faixa de opções.
+- Adicione guias personalizadas ou internas a uma faixa de faixas.
 
-- Adicione grupos personalizados a uma guia interna ou personalizada.
+- Adicione grupos personalizados a uma guia personalizada ou interna.
 
   > [!NOTE]
-  > Uma guia interna ou grupo é aquele que já existe na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. O **conexões** é um grupo interno sobre o **dados** guia.
+  > Uma guia ou grupo interno é aquele que já existe na faixa de bits de um aplicativo Microsoft Office. Por exemplo, a guia **dados** é uma guia interna no Excel. O grupo de **conexões** é um grupo interno na guia **dados** .
 
 - Adicione controles personalizados a um grupo personalizado.
 
-- Adicione controles personalizados para o modo de exibição Backstage.
+- Adicione controles personalizados à exibição de Backstage.
 
-  Para obter mais informações sobre como personalizar uma faixa de opções usando o **faixa de opções (Visual Designer)** item, consulte [designer de faixa de opções](../vsto/ribbon-designer.md).
+  Para obter mais informações sobre como personalizar uma faixa de faixas usando o item **Ribbon (Visual Designer)** , consulte [Designer de faixa](../vsto/ribbon-designer.md)de das.
 
-### <a name="ribbon-xml-item"></a>Item da faixa de opções (XML)
- Use o **da faixa de opções (XML)** item se você quiser personalizar a faixa de opções de forma que não é compatível com o **faixa de opções (Visual Designer)** item. Use o **da faixa de opções (XML)** item para personalizar a faixa de opções das seguintes maneiras:
+### <a name="ribbon-xml-item"></a>Item da faixa (XML)
+ Use o item **da faixa de opção (XML)** se desejar personalizar a faixa de uma forma que não seja suportada pelo item da faixa de opção **(Visual Designer)** . Use o item **da faixa de opções (XML)** para personalizar o Ribbon das seguintes maneiras:
 
-- Adicione *internos* grupos para uma guia personalizada ou uma guia interna.
+- Adicione grupos *internos* a uma guia personalizada ou a uma guia interna.
 
-- Adicione controles internos para um grupo personalizado.
+- Adicione controles internos a um grupo personalizado.
 
-- Adicione código personalizado para substituir os manipuladores de eventos de controles internos.
+- Adicione um código personalizado para substituir os manipuladores de eventos de controles internos.
 
 - Personalize a barra de ferramentas de acesso rápido.
 
-- Compartilhar uma personalização da faixa de opções entre o suplemento do VSTO usando uma ID de qualificado.
+- Compartilhe uma personalização da faixa de bits entre o suplemento do VSTO usando uma ID qualificada.
 
-  Para obter mais informações sobre como personalizar a faixa de opções usando o **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+  Para obter mais informações sobre como personalizar a faixa de faixas usando o item da faixa de visualização **(XML)** , consulte [XML da faixa](../vsto/ribbon-xml.md)de informações.
 
-## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções
- Se você criar uma faixa de opções usando o Designer de faixa de opções e, em seguida, decidir que deseja personalizar a faixa de opções de maneiras que o **faixa de opções (Visual Designer)** item não dá suporte, você pode exportar a faixa de opções para XML.
+## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Exportar uma faixa de faixas do designer de faixa de das para XML da faixa de das
+ Se você criar uma faixa de opções usando o designer de faixa e, em seguida, decidir que deseja personalizar o Ribbon de maneiras que o item **da faixa de opções (Visual Designer)** não oferece suporte, você poderá exportar a faixa para XML.
 
- Visual Studio cria automaticamente um **da faixa de opções (XML)** de item e preenche o arquivo XML de faixa de opções com elementos e atributos para cada controle na faixa de opções.
+ O Visual Studio cria automaticamente um item **da faixa de visualização (XML)** e popula o arquivo XML da faixa de da Ribbon com elementos e atributos para cada controle na faixa de faixas.
 
- Nem todas as propriedades que estão na **propriedades** janela do Designer da faixa de opções são transferidos para o arquivo XML de faixa de opções.  Por exemplo, o Visual Studio não exporta o valor da **imagem** ou **texto** propriedade. Isso ocorre porque você deve criar um método de retorno de chamada no arquivo de código da faixa de opções do projeto exportado para atribuir uma imagem ou definir o texto de um controle. Visual Studio gera automaticamente os métodos de retorno de chamada como parte do processo de exportação.
+ Nem todas as propriedades que estão na janela **Propriedades** do designer de faixa de faixas são transferidas para o arquivo XML da faixa de faixas.  Por exemplo, o Visual Studio não exporta o valor da **imagem** ou da propriedade de **texto** . Isso ocorre porque você deve criar um método de retorno de chamada no arquivo de código da faixa de medida do projeto exportado para atribuir uma imagem ou definir o texto de um controle. O Visual Studio não gera automaticamente métodos de retorno de chamada como parte do processo de exportação.
 
- Além disso, quaisquer valores de propriedade padrão inalterado não aparecem no arquivo XML de faixa de opções resultante.
+ Além disso, quaisquer valores de propriedade padrão inalterados não aparecem no arquivo XML da faixa de resultados resultante.
 
- Para obter mais informações sobre como exportar a faixa de opções para XML, consulte [como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md).
+ Para obter mais informações sobre como exportar a faixa de visualização para XML [, consulte Como: Exporte uma faixa de faixas do designer de faixa](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)de Ribbon para XML da faixa de faixas.
 
-### <a name="update-the-code"></a>Atualize o código
- Um novo arquivo de código da faixa de opções é adicionado ao **Gerenciador de soluções**. Esse arquivo contém a classe XML da faixa de opções. Você deve criar métodos de retorno de chamada no `Ribbon Callbacks` região dessa classe para manipular ações do usuário, como clicar em um botão. Mover seu código de manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX) modelo de programação. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+### <a name="update-the-code"></a>Atualizar o código
+ Um novo arquivo de código da faixa de medida é adicionado ao **Gerenciador de soluções**. Esse arquivo contém a classe XML da faixa de faixas. Você deve criar métodos de retorno de `Ribbon Callbacks` chamada na região dessa classe para tratar as ações do usuário, como clicar em um botão. Mova seu código dos manipuladores de eventos para esses métodos de retorno de chamada e modifique o código para trabalhar com o modelo de programação do RibbonX (extensibilidade de faixa de medida). Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
- Você também deve adicionar código para o `ThisAddIn`, `ThisWorkbook`, ou `ThisDocument` classe que substitui o `CreateRibbonExtensibilityObject` método e retorna o XML da faixa de opções de classe para o aplicativo do Office.
+ Você também deve adicionar o código à `ThisAddIn`classe `ThisWorkbook`, ou `ThisDocument` que substitui o `CreateRibbonExtensibilityObject` método e retorna a classe XML da faixa de forma para o aplicativo do Office.
 
- Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+ Para obter mais informações, consulte [Ribbon XML](../vsto/ribbon-xml.md).
 
-## <a name="add-multiple-ribbon-items-to-a-project"></a>Adicionar vários itens de faixa de opções para um projeto
- Você pode adicionar mais de um item da faixa de opções para um único projeto. Isso é útil se você quiser executar qualquer uma das seguintes tarefas:
+## <a name="add-multiple-ribbon-items-to-a-project"></a>Adicionar vários itens da faixa de faixas a um projeto
+ Você pode adicionar mais de um item da faixa de faixas a um único projeto. Isso será útil se você quiser executar uma das duas tarefas a seguir:
 
-- Criar faixas de opções do Outlook *inspetores*. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Crie faixas de faixa para *inspetores*do Outlook. Para obter mais informações, consulte [personalizar uma faixa de visualização para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    > Um Inspector é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.
+    > Um inspetor é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.
 
-- Selecione quais da faixa de opções para exibir no tempo de execução.
+- Selecione a faixa de opções a ser exibida em tempo de execução.
 
-### <a name="select-which-ribbons-to-display-at-runtime"></a>Selecione quais faixas de opções para exibir no tempo de execução
- Como um projeto pode conter mais de uma faixa de opções, você pode selecionar quais da faixa de opções para exibir no tempo de execução.
+### <a name="select-which-ribbons-to-display-at-run-time"></a>Selecione quais faixas de opções exibir em tempo de execução
+ Como um projeto pode conter mais de uma faixa de opções, você pode selecionar qual faixa de opções exibir em tempo de execução.
 
- Para selecionar uma faixa de opções para exibir no tempo de execução, substituir os `CreateRibbonExtensibilityObject` método na `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto e o retorno de faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo denominado `myCondition` e retorna a faixa de opções apropriada.
+ Para selecionar uma faixa de opções a ser exibida em tempo de `CreateRibbonExtensibilityObject` execução, substitua `ThisAddin`o `ThisWorkbook`método na `ThisDocument` classe, ou do seu projeto e retorne a faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo `myCondition` chamado e retorna a faixa de opções apropriada.
 
 > [!NOTE]
-> A sintaxe usada neste exemplo retorna uma faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item. A sintaxe para retornar uma faixa de opções é criada usando um **da faixa de opções (XML)** item é um pouco diferente. Para obter mais informações sobre como retornar um **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+> A sintaxe usada neste exemplo retorna uma faixa de faixas que foi criada usando o item da **faixa de visualização (Visual Designer)** . A sintaxe para retornar uma faixa de forma que é criada usando um item **da faixa (XML)** é ligeiramente diferente. Para obter mais informações sobre como retornar um item **da faixa de forma (XML)** , consulte [XML da faixa](../vsto/ribbon-xml.md)de visualização.
 
  Adicione o seguinte código:
 
@@ -117,18 +117,18 @@ ms.locfileid: "63446957"
 
 |Título|Descrição|
 |-----------|-----------------|
-|[Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)|Mostra como personalizar a faixa de opções de um aplicativo do Microsoft Office, adicione uma **faixa de opções (Visual Designer)** ou **da faixa de opções (XML)** item a um projeto do Office.|
-|[Designer de faixa de opções](../vsto/ribbon-designer.md)|Descreve como você pode usar o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.|
-|[Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Mostra como criar uma guia de faixa de opções personalizada usando o Designer de faixa de opções. Você pode usar o Designer de faixa de opções para adicionar e posicionar os controles da guia personalizada.|
-|[Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)|Fornece uma visão geral do modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução.|
-|[Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstra como usar o modelo de objeto da faixa de opções para atualizar os controles em uma faixa de opções, depois que a faixa de opções é carregada no aplicativo do Office.|
-|[Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office Outlook.|
-|[Personalizar uma faixa de opções para InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fornece orientação para personalizar a faixa de opções no Microsoft Office InfoPath.|
-|[Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)|Mostra como mostrar, ocultar e modificar a faixa de opções e permitir que os usuários executar o código de controles em um painel de tarefas personalizado, o painel de ações ou a região de formulário do Outlook.|
-|[Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Mostra como alterar a ordem das guias em uma faixa de opções.|
+|[Como: Introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)|Mostra como personalizar a faixa de visualização de um aplicativo Microsoft Office, adicionar um item **da faixa de Ribbon (designer visual)** ou de **faixa (XML)** a um projeto do Office.|
+|[Designer de faixa de das](../vsto/ribbon-designer.md)|Descreve como você pode usar o designer de faixa de faixas para adicionar guias, grupos e controles personalizados à faixa de faixas de um aplicativo Microsoft Office.|
+|[Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Mostra como criar uma guia de faixa de forma personalizada usando o designer de faixa de faixas. Você pode usar o designer de faixa de faixas para adicionar e posicionar controles na guia personalizado.|
+|[Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)|Fornece uma visão geral do modelo de objeto fortemente tipado que você pode usar para obter e definir as propriedades dos controles da faixa de tipos em tempo de execução.|
+|[Passo a passo: Atualizar os controles em uma faixa de faixas em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|Demonstra como usar o modelo de objeto Ribbon para atualizar os controles em uma faixa de faixas depois que a faixa de faixas é carregada no aplicativo do Office.|
+|[Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)|Fornece orientação para personalizar a faixa de faixas no Microsoft Office Outlook.|
+|[Personalizar uma faixa de faixas para o InfoPath](../vsto/customizing-a-ribbon-for-infopath.md)|Fornece orientação para personalizar a faixa de faixas no Microsoft Office InfoPath.|
+|[Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)|Mostra como mostrar, ocultar e modificar a faixa de faixas e permitir que os usuários executem o código de controles em um painel de tarefas personalizado, no painel ações ou na região de formulário do Outlook.|
+|[Como: Alterar a posição de uma guia na faixa de posições](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|Mostra como alterar a ordem das guias em uma faixa de faixas.|
 |[Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)|Mostra como adicionar grupos e controles a uma guia interna.|
-|[Como: Adicionar controles ao modo de exibição Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Mostra como adicionar controles ao menu que é aberta quando você clica o **arquivo**.|
-|[Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra para adicionar um iniciador da caixa de diálogo a qualquer grupo em uma faixa de opções.|
-|[Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Mostra como personalizar a faixa de opções de maneiras avançadas exportando a faixa de opções do designer para XML da faixa de opções.|
-|[XML da faixa de opções](../vsto/ribbon-xml.md)|Explica como você pode personalizar uma faixa de opções usando XML da faixa de opções.|
-|[Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstra como criar uma guia de faixa de opções personalizada usando o **da faixa de opções (XML)** item.|
+|[Como: Adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)|Mostra como adicionar controles ao menu que é aberto quando você clica no **arquivo**.|
+|[Como: Adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas](../vsto/how-to-add-a-dialog-box-launcher-to-a-ribbon-group.md)|Mostra para adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de faixas.|
+|[Como: Exportar uma faixa de faixas do designer de faixa de das para XML da faixa de das](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)|Mostra como personalizar a faixa de opções de maneiras avançadas exportando a faixa do designer para o XML da faixa.|
+|[XML da faixa de opções](../vsto/ribbon-xml.md)|Explica como você pode personalizar uma faixa de modo usando o XML da faixa de uma.|
+|[Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|Demonstra como criar uma guia de faixa de forma personalizada usando o item da faixa de forma **(XML)** .|

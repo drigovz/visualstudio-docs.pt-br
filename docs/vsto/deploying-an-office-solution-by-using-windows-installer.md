@@ -19,10 +19,10 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20df85952b4e76e60d6e93067c1f1e7838b692cd
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
+ms.lasthandoff: 09/25/2019
 ms.locfileid: "69551723"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implantar uma solução do Office usando o Windows Installer
@@ -137,7 +137,7 @@ Você configura o projeto **OfficeAddInSetup** para incluir a saída do seu proj
 
 4. Na página **arquivos de aplicativo** , escolha o botão **Adicionar saídas de projeto** .
 
-5. Na caixa de diálogo Seletor de **saída do Visual Studio** , marque a caixa de seleção **saída primária** e escolha o botão **OK** .
+5. Na caixa de diálogo **seletor de saída do Visual Studio** , marque a caixa de seleção **saída primária** e escolha o botão **OK** .
 
 ## <a name="AddD"></a>Adicionar os manifestos de implantação e de aplicativo
 
@@ -163,13 +163,13 @@ Em seu aplicativo de instalação, além dos seguintes componentes, inclua todos
 
 ### <a name="add-the-net-framework-4-or-the-net-framework-45-as-a-prerequisite"></a>Adicionar o .NET Framework 4 ou o .NET Framework 4,5 como um pré-requisito
 
-1. Em **Gerenciador de soluções**, expanda o nó do projeto **OfficeAddInSetup** , expanda o nó **especificar dados do aplicativo** e escolha o arquivo redistribuível, que a ilustração a seguir mostra.
+1. Em **Gerenciador de soluções**, expanda o nó do projeto **OfficeAddInSetup** , expanda o nó **especificar dados do aplicativo** e escolha o arquivo **redistribuível** , que a ilustração a seguir mostra.
 
    ![O arquivo redistribuível no Gerenciador de soluções](../vsto/media/installshield-redistributablesfile.png "O arquivo redistribuível no Gerenciador de soluções")
 
 2. Na barra de menus, escolha **Exibir** > **abrir**.
 
-   A página redistribuíveis é aberta.
+   A página **redistribuíveis** é aberta.
 
 3. Na lista de componentes redistribuíveis, marque a caixa de seleção adequada para a versão do .NET Framework de destino da sua solução.
 
@@ -179,7 +179,7 @@ Em seu aplicativo de instalação, além dos seguintes componentes, inclua todos
 
 ### <a name="AddToolsForOffice"></a>Adicionar o tempo de execução das ferramentas do Visual Studio 2010 para Office
 
-A página redistribuíveis contém um item chamado **Microsoft VSTO 2010 Runtime**, mas se refere a uma versão mais antiga do tempo de execução. Portanto, você pode criar manualmente um arquivo de configuração que se refere à versão mais recente. Em seguida, você deve colocar esse arquivo no mesmo diretório que os arquivos de configuração para todos os outros itens que aparecem na página redistribuível.
+A página **redistribuíveis** contém um item chamado **Microsoft VSTO 2010 Runtime**, mas se refere a uma versão mais antiga do tempo de execução. Portanto, você pode criar manualmente um arquivo de configuração que se refere à versão mais recente. Em seguida, você deve colocar esse arquivo no mesmo diretório que os arquivos de configuração para todos os outros itens que aparecem na página **redistribuível** .
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Para adicionar o tempo de execução das ferramentas do Visual Studio 2010 para Office como um pré-requisito
 
@@ -235,7 +235,7 @@ A página redistribuíveis contém um item chamado **Microsoft VSTO 2010 Runtime
 
    Para sistemas operacionais de 64 bits: *% ProgramFiles (x86)% \ 2013LE \\\ SetupPrerequisites*
 
-11. Na página redistribuível do projeto do InstallShield, escolha o botão **Atualizar** para atualizar a lista de componentes redistribuíveis, como mostra a ilustração a seguir.
+11. Na página **redistribuível** do projeto do InstallShield, escolha o botão **Atualizar** para atualizar a lista de componentes redistribuíveis, como mostra a ilustração a seguir.
 
    ![O botão atualizar.](../vsto/media/installshield-refreshbutton.png "O botão atualizar.")
 
@@ -355,7 +355,7 @@ As instalações por usuário exigem apenas um instalador independente do Office
 
    Essa cadeia de caracteres aparece na caixa de diálogo **suplementos de com** no aplicativo do Office. Por padrão, o valor da cadeia de caracteres é a ID do suplemento do VSTO.
 
-12. Abra o menu de atalho para o valor LoadBehavior e escolha **Modificar**.
+12. Abra o menu de atalho para o valor **LoadBehavior** e escolha **Modificar**.
 
    A caixa de diálogo **Editar dados** é exibida.
 
@@ -427,7 +427,7 @@ Para modificar propriedades personalizadas, você cria um programa que remove a 
 
 4. Na página **arquivos de aplicativo** , escolha o botão **Adicionar saídas de projeto** .
 
-   A caixa de diálogo Seletor de **saída do Visual Studio** é exibida.
+   A caixa de diálogo **seletor de saída do Visual Studio** é exibida.
 
 5. No nó **SetExcelDocumentProperties** , marque a caixa de seleção **saída primária** e escolha o botão **OK** .
 
@@ -463,7 +463,7 @@ Para modificar propriedades personalizadas, você cria um programa que remove a 
 
 13. Abra o arquivo de projeto da sua solução no Bloco de Notas. Para projetos Visual Basic, o nome do arquivo é *ExcelWorkbook. vbproj*. Para C# projetos, o nome do arquivo é *ExcelWorkbook. csproj*.
 
-14. No arquivo de projeto, procure o **&lt;&gt;** elemento SolutionId, copie seu valor para a área de transferência e, em seguida, feche o bloco de notas.
+14. No arquivo de projeto, procure o **&lt;elemento SolutionId&gt;** , copie seu valor para a área de transferência e, em seguida, feche o bloco de notas.
 
     Passe esse valor para o aplicativo de console como um parâmetro.
 
@@ -496,7 +496,7 @@ Para modificar propriedades personalizadas, você cria um programa que remove a 
 
 7. Na lista **configuração de solução ativa** , escolha **SingleImage**.
 
-8. Na tabela contextos do **projeto** , na coluna **configuração** do projeto **OfficeAddInSetup** , escolha **SingleImage**e, em seguida, escolha o botão **fechar** .
+8. Na tabela **contextos do projeto** , na coluna **configuração** do projeto **OfficeAddInSetup** , escolha **SingleImage**e, em seguida, escolha o botão **fechar** .
 
 9. Na barra de menus, escolha **Build** > **Compilar OfficeAddInSetup**.
 

@@ -13,46 +13,46 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 438658af3f182ea732d0fefef0f5a5d6ecbefa03
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83bd57c8ffdcb268a560431c74806ddb6544d4e8
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62961586"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71252164"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>Como: Remover extensões de código gerenciado de documentos
-  Você poderá remover programaticamente o assembly de personalização de um documento ou pasta de trabalho que faz parte de uma personalização no nível de documento para o Microsoft Office Word ou Microsoft Office Excel. Os usuários podem, em seguida, abra os documentos e exibir o conteúdo, mas não aparecerá nenhuma interface do usuário personalizada (UI) adicionar aos documentos e seu código não será executado.
+  Você pode remover programaticamente o assembly de personalização de um documento ou pasta de trabalho que faz parte de uma personalização em nível de documento para Microsoft Office Word ou Microsoft Office Excel. Os usuários podem abrir os documentos e exibir o conteúdo, mas qualquer interface do usuário personalizada (IU) que você adicionar aos documentos não será exibida e seu código não será executado.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
- Você pode remover o assembly de personalização, usando uma da `RemoveCustomization` métodos fornecidos pelo [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Qual método você usa depende se você deseja remover a personalização em tempo de execução (ou seja, executando o código na personalização enquanto a palavra documento ou pasta de trabalho do Excel é aberta), ou se você quiser remover a personalização de um documento fechado ou um documento que i s em um servidor que não tenha o Microsoft Office instalado.
+ Você pode remover o assembly de personalização usando um dos `RemoveCustomization` métodos fornecidos [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]pelo. O método usado depende se você deseja remover a personalização em tempo de execução (ou seja, executando o código na personalização enquanto o documento do Word ou a pasta de trabalho do Excel está aberta) ou se deseja remover a personalização de um documento fechado ou de um documento que eu s em um servidor que não tem Microsoft Office instalado.
 
- ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como: Anexar ou desanexar um Assembly do VSTO a partir de um documento do Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
+ ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") Para ver uma demonstração de vídeo relacionada [, consulte Como faço para: Anexar ou desanexar um assembly do VSTO de um documento do Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 
-## <a name="to-remove-the-customization-assembly-at-runtime"></a>Para remover o assembly de personalização em tempo de execução
+## <a name="to-remove-the-customization-assembly-at-run-time"></a>Para remover o assembly de personalização em tempo de execução
 
-1. No seu código de personalização, chame o <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> método (para o Word) ou o <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> método (para Excel). Esse método deve ser chamado somente depois que a personalização não for mais necessário.
+1. No código de personalização, chame o <xref:Microsoft.Office.Tools.Word.Document.RemoveCustomization%2A> método (para Word) ou o <xref:Microsoft.Office.Tools.Excel.Workbook.RemoveCustomization%2A> método (para Excel). Esse método deve ser chamado somente depois que a personalização não for mais necessária.
 
-     Em que você chamar esse método em seu código depende de como sua personalização é usada. Por exemplo, se os clientes usam os recursos da sua personalização até que eles estejam prontos para enviar um documento para outros clientes que precisam apenas o documento em si (não a personalização), você pode fornecer algumas interfaces do usuário que chama `RemoveCustomization` quando o cliente clica nele. Como alternativa, se sua personalização preenche o documento com os dados quando ele é aberto pela primeira vez, mas a personalização não fornece outros recursos que são acessados diretamente por clientes, em seguida, você pode chamar RemoveCustomization assim que a personalização conclui a inicialização do documento.
+     O local em que você chama esse método em seu código depende de como sua personalização é usada. Por exemplo, se os clientes usarem os recursos de personalização até que estejam prontos para enviar o documento para outros clientes que só precisam do próprio documento (não a personalização), você poderá fornecer uma interface do `RemoveCustomization` usuário que chame quando o cliente clicar nele. Como alternativa, se sua personalização popula o documento com dados quando ele é aberto pela primeira vez, mas a personalização não fornece outros recursos que são acessados diretamente pelos clientes, você pode chamar RemoveCustomization assim que sua personalização conclui a inicialização do documento.
 
-## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>Para remover o assembly de personalização de um documento fechado ou um documento em um servidor
+## <a name="to-remove-the-customization-assembly-from-a-closed-document-or-a-document-on-a-server"></a>Para remover o assembly de personalização de um documento fechado ou de um documento em um servidor
 
-1. Em um projeto que não requer o Microsoft Office, como um aplicativo de console ou um projeto do Windows Forms, adicione uma referência para o *ServerDocument* assembly.
+1. Em um projeto que não requer Microsoft Office, como um aplicativo de console ou Windows Forms projeto, adicione uma referência ao assembly *Microsoft. VisualStudio. Tools. Applications. ServerDocument. dll* .
 
-2. Adicione o seguinte **importações** ou **usando** instrução na parte superior do seu arquivo de código.
+2. Adicione as seguintes **importações** ou **use** a instrução na parte superior do seu arquivo de código.
 
      [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
      [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
 
-3. Chamar estático <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> método da <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> de classe e especifique o caminho do documento de solução para o parâmetro.
+3. Chame o método <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> estático <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> da classe e especifique o caminho do documento da solução para o parâmetro.
 
-     O exemplo de código a seguir pressupõe que você está removendo a personalização de um documento chamado *WordDocument1.docx* que está na área de trabalho.
+     O exemplo de código a seguir pressupõe que você está removendo a personalização de um documento chamado *WordDocument1. docx* que está na área de trabalho.
 
      [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
      [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
 
-4. Compile o projeto e executar o aplicativo no computador em que você deseja remover a personalização. O computador deve ter o Visual Studio 2010 Tools para Office runtime instalado.
+4. Compile o projeto e execute o aplicativo no computador em que você deseja remover a personalização. O computador deve ter o tempo de execução do Visual Studio 2010 Tools for Office instalado.
 
 ## <a name="see-also"></a>Consulte também
 - [Gerenciar documentos em um servidor usando a classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [Como: Anexar extensões de código gerenciado para documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
+- [Como: Anexar extensões de código gerenciado a documentos](../vsto/how-to-attach-managed-code-extensions-to-documents.md)

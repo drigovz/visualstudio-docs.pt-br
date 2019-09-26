@@ -1,5 +1,5 @@
 ---
-title: 'Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções'
+title: 'Como: Adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas'
 ms.date: 02/02/2017
 ms.topic: conceptual
 dev_langs:
@@ -13,42 +13,42 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b930348845e04dca089cf153a11cc2a9fd29c880
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62826438"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71255899"
 ---
-# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções
-  Você pode adicionar um iniciador da caixa de diálogo a qualquer grupo de uma faixa de opções. Um iniciador da caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clicam nesse ícone para abrir caixas de diálogo relacionadas ou painéis de tarefas que fornecem mais opções relacionadas ao grupo.
+# <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: Adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas
+  Você pode adicionar um iniciador de caixa de diálogo a qualquer grupo em uma faixa de faixas. Um iniciador de caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clicam nesse ícone para abrir caixas de diálogo ou painéis de tarefas relacionados que fornecem mais opções relacionadas ao grupo.
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Para adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções
+### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Para adicionar um iniciador de caixa de diálogo a um grupo de faixa de faixas
 
-1. Selecione o arquivo de código da faixa de opções (*. vb* ou *. CS* arquivo) em **Gerenciador de soluções**.
+1. Selecione o arquivo de código da faixa de opções (arquivo *. vb* ou *. cs* ) em **Gerenciador de soluções**.
 
-2. Sobre o **modo de exibição** menu, clique em **Designer**.
+2. No menu **Exibir** , clique em **Designer**.
 
-3. No Designer de faixa de opções, nenhum grupo com o botão direito e, em seguida, clique em **adicionar DialogBoxLauncher**.
+3. No designer de faixa de faixas, clique com o botão direito do mouse em qualquer grupo e clique em **Adicionar DialogBoxLauncher**.
 
-     Adicione código para o <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> evento do grupo para abrir uma caixa de diálogo personalizada ou interna.
+     Adicione código ao <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> evento do grupo para abrir uma caixa de diálogo personalizada ou interna.
 
 ## <a name="see-also"></a>Consulte também
-- [Visão geral da faixa de opções](../vsto/ribbon-overview.md)
-- [Acesso a faixa de opções em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
-- [Instruções passo a passo e exemplos de desenvolvimento do office](../vsto/office-development-samples-and-walkthroughs.md)
-- [Designer de faixa de opções](../vsto/ribbon-designer.md)
-- [Visão geral do modelo de objeto da faixa de opções](../vsto/ribbon-object-model-overview.md)
+- [Visão geral da faixa de faixas](../vsto/ribbon-overview.md)
+- [Acessar a faixa de faixas em tempo de execução](../vsto/accessing-the-ribbon-at-run-time.md)
+- [Exemplos e orientações de desenvolvimento do Office](../vsto/office-development-samples-and-walkthroughs.md)
+- [Designer de faixa de das](../vsto/ribbon-designer.md)
+- [Visão geral do modelo de objeto Ribbon](../vsto/ribbon-object-model-overview.md)
 - [XML da faixa de opções](../vsto/ribbon-xml.md)
-- [Como: Exportar uma faixa de opções do Designer de faixa de opções para XML da faixa de opções](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
-- [Como: Alterar a posição de uma guia na faixa de opções](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
+- [Como: Exportar uma faixa de faixas do designer de faixa de das para XML da faixa de das](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)
+- [Como: Alterar a posição de uma guia na faixa de posições](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [Como: Personalizar uma guia interna](../vsto/how-to-customize-a-built-in-tab.md)
-- [Como: Adicionar controles ao modo de exibição backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
-- [Personalizar uma faixa de opções do Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
-- [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md)
-- [Como: Mostrar erros de interface de usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
-- [Passo a passo: Criar uma guia personalizada usando o Designer de faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [Passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
+- [Como: Adicionar controles ao modo de exibição de Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md)
+- [Personalizar uma faixa de faixas para o Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
+- [Como: Introdução à personalização da faixa de faixas](../vsto/how-to-get-started-customizing-the-ribbon.md)
+- [Como: Mostrar erros da interface do usuário do suplemento](../vsto/how-to-show-add-in-user-interface-errors.md)
+- [Passo a passo: Criar uma guia personalizada usando o designer de faixa de faixas](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
+- [Passo a passo: Atualizar os controles em uma faixa de faixas em tempo de execução](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [Passo a passo: Criar uma guia personalizada usando o XML da faixa de uma](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)

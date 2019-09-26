@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c1038d0d7e7d20c28cdd0cb52804461376a4e89
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 385b2d451d8202356d56ab7b1a5fd5158d267f1c
+ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551696"
+ms.lasthandoff: 09/25/2019
+ms.locfileid: "71253746"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblies de Interoperabilidade primária do Office
 
@@ -37,7 +37,7 @@ Este tópico descreve os seguintes aspectos de uso de PIAs do Microsoft Office e
 
 - [Lista completa de assemblies de interoperabilidade primária para aplicativos Microsoft Office](#pialist)
 
-Para obter mais informações sobre assemblies de interoperabilidade primária, consulte assemblies de interoperabilidade [primária](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
+Para obter mais informações sobre assemblies de interoperabilidade primária, consulte [assemblies de interoperabilidade primária](/previous-versions/dotnet/netframework-4.0/aax7sdch(v=vs.100)).
 
 <a name="separateassemblies"></a>
 
@@ -66,7 +66,7 @@ A partir do Visual Studio 2017, essas cópias dos PIAs são instaladas nos segui
 - (ou *% ProgramFiles (x86)% \ Microsoft Visual Studio\Shared\Visual Studio Tools for\* Office\PIA em sistemas operacionais de 64 bits)
 
 > [!NOTE]
-> Para versões mais antigas do Visual Studio, esses PIAs serão instalados no Ferramentas do Visual Studio para a pasta Office\PIA na pasta *% ProgramFiles% para essa versão do Visual Studio.  
+> Para versões mais antigas do Visual Studio, esses PIAs serão instalados no Ferramentas do Visual Studio para a pasta Office\PIA na pasta *% ProgramFiles% para essa versão do Visual Studio.
 > Por exemplo: *% ProgramFiles (x86)% \ Microsoft Visual Studio 14.0 \ Ferramentas do Visual Studio para Office\PIA\*
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>Assemblies de interoperabilidade primária no cache de assembly global
