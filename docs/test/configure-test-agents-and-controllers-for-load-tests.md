@@ -7,19 +7,19 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c10a624d78c1dc362c9d0e5d7c0e58e24efc3cf
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: f7a912ff25e2782490b711d909a64c5d9438ed8f
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68918366"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301699"
 ---
 # <a name="overview-of-test-agents-and-test-controllers-for-running-load-tests"></a>Visão geral dos agentes de teste e controladores de teste para executar testes de carga
 
 O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquinas virtuais ou físicas. Esses computadores devem ser configurados como um único controlador de teste e um ou mais agentes de teste. Você pode usar o controlador de teste e os agentes de teste para gerar mais carga do que um único computador pode gerar sozinho.
 
 > [!NOTE]
-> Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
+> Também é possível usar o teste de carga baseado em nuvem para fornecer máquinas virtuais que gerenciem a carga de muitos usuários que acessam o site ao mesmo tempo. No entanto, não há suporte para o uso do controlador de teste/instalação do Test Agent em máquinas virtuais hospedadas na nuvem. Saiba mais sobre teste de carga baseado em nuvem em [Executar testes de carga usando o Azure Test Plans](/azure/devops/test/load-test/get-started-simple-cloud-load-test?view=vsts).
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 

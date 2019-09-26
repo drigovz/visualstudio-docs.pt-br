@@ -5,24 +5,20 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jillfra
-dev_langs:
-- CSharp
-- VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ccddc3aef24ba14245dc568ca5f369e38ce8eba0
-ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
-ms.translationtype: HT
+ms.openlocfilehash: 3572682fe68d9b0b1bc4adee537de5cd056a8906
+ms.sourcegitcommit: 9a3972eb85de5443ac2bc03964c5a251c39b2921
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/10/2019
-ms.locfileid: "65531644"
+ms.lasthandoff: 09/26/2019
+ms.locfileid: "71301688"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>Converter uma função local em um método
 
 Esta refatoração aplica-se a:
 
 - C#
-- Visual Basic
 
 **O quê:** converter uma função local em um método.
 
@@ -36,7 +32,7 @@ Esta refatoração aplica-se a:
 
     ![Converter uma função local em um exemplo de código de método](media/convert-local-function-to-method.png)
 
-2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
+2. Pressione **Ctrl**+ **.** para acionar o menu **Ações e Refatorações Rápidas**.
 
     ![Converter uma função local em um exemplo de correção de código de método](media/convert-local-function-to-method-codefix.png)
 
