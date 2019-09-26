@@ -1,109 +1,80 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Documentação do IDE do Visual Studio
+summary: Um IDE (ambiente de desenvolvimento integrado) é um aplicativo repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. O IDE do Visual Studio facilita a edição, a depuração, o build e a publicação de seu aplicativo.
 metadata:
-  title: Documentação do Visual Studio | Microsoft Docs
-  description: Tutoriais e artigos conceituais sobre como aprender a usar o Visual Studio.
-  author: ghogen
-  manager: jillfra
+  title: Documentação do IDE do Visual Studio
+  titleSuffix: ''
+  description: Navegue até diferentes páginas que ajudam você a aprender a usar o ambiente de desenvolvimento interativo do Visual Studio.
   ms.prod: visual-studio-windows
-  ms.technology: vs-ide
+  ms.technology: vs-ide-general
   ms.topic: landing-page
-  ms.date: 11/12/2018
-  ms.author: ghogen
-  ms.custom: seodec18
-sections:
-  - title: Introdução ao Visual Studio
-    items:
-      - type: paragraph
-        text: Instalar o IDE (ambiente de desenvolvimento integrado) do Visual Studio e aprender a usá-lo
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 4
-        items:
-          - href: ../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Instalar o Visual Studio
-          - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Fazer um tour pelo IDE do Visual Studio
-          - href: ../ide/whats-new-visual-studio-2017.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Novidades no Visual Studio 2017
-          - href: ../ide/whats-new-visual-studio-2019.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
-            title: Novidades no Visual Studio 2019
-  - title: Tutoriais
-    items:
-      - type: paragraph
-        text: Comece a usar o Visual Studio na linguagem de sua escolha.
-      - type: list
-        style: icon48
-        items:
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
-            text: 'C#'
-            href: /visualstudio/get-started/csharp/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_fsharp.svg'
-            text: 'F#'
-            href: /dotnet/fsharp
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
-            text: Visual Basic
-            href: /visualstudio/get-started/visual-basic/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_cplusplus.svg'
-            text: C++
-            href: /cpp/get-started/tutorial-console-cpp
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_python.svg'
-            text: Python
-            href: /visualstudio/python/
-          - image:
-              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
-            text: JavaScript
-            href: /visualstudio/javascript/
-  - title: Desenvolver aplicativos
-    items:
-      - type: paragraph
-        text: Aprenda mais com tutoriais detalhados sobre como usar o Visual Studio para desenvolver e testar aplicativos
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../ide/index-writing-code.md
-            html: <p>Aproveite ao máximo o editor de códigos do Visual Studio</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: Escrevendo e editando o código
-          - href: ../ide/compiling-and-building-in-visual-studio.md
-            html: <p>Configure o compilador e crie o aplicativo.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Compilar e criar
-          - href: ../debugger/debugger-feature-tour.md
-            html: <p>Execute o aplicativo no depurador para investigar problemas.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Depurar
-          - href: ../test/getting-started-with-unit-testing.md
-            html: <p>Use o Visual Studio para gerenciar testes de unidade e testes de IU codificados.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            title: Teste
-          - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
-            html: <p>Crie um banco de dados SQL usando as ferramentas de design de banco de dados do Visual Studio.</p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-            title: Acessar dados
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 09/24/2019
+  ms.openlocfilehash: 8fd51b6f94ef89f821223076453979b805722e53
+  ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 09/24/2019
+  ms.locfileid: "71238176"
+landingContent:
+- title: Introdução
+  linkLists:
+  - linkListType: download
+    links:
+    - text: Baixe o Visual Studio
+      url: https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=navigation+cta&utm_content=download+vs2019
+  - linkListType: get-started
+    links:
+    - text: Instalar o Visual Studio
+      url: ../install/install-visual-studio.md
+  - linkListType: overview
+    links:
+    - text: Visão geral do Visual Studio
+      url: ../get-started/visual-studio-ide.md
+- title: Usar o Virtual Studio
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Usar o editor de códigos
+      url: ../get-started/tutorial-editor.md
+    - text: Compilar e criar
+      url: ../ide/compiling-and-building-in-visual-studio.md
+    - text: Depurar o código
+      url: ../debugger/debugger-feature-tour.md
+    - text: Gravar testes
+      url: ../test/getting-started-with-unit-testing.md
+    - text: Analisar a qualidade do código
+      url: ../code-quality/roslyn-analyzers-overview.md
+    - text: Publicar um site
+      url: ../deployment/quickstart-deploy-to-a-web-site.md
+    - text: Acessar dados
+      url: ../data-tools/create-a-simple-data-application-by-using-adonet.md
+    - text: Personalizar o IDE
+      url: ../ide/quickstart-personalize-the-ide.md
+    - text: Recursos de produtividade
+      url: ../ide/productivity-features.md
+- title: Desenvolver na linguagem de sua preferência
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: C#
+      url: ../get-started/csharp/tutorial-console.md
+    - text: C++
+      url: /cpp/get-started/tutorial-console-cpp
+    - text: Visual Basic
+      url: ../get-started/visual-basic/tutorial-console.md
+    - text: Python
+      url: ../python/tutorial-working-with-python-in-visual-studio-step-00-installation.md
+    - text: JavaScript
+      url: /visualstudio/javascript/tutorial-nodejs
+    - text: F#
+      url: /dotnet/fsharp/get-started/get-started-visual-studio
+- title: Descubra as novidades
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Novidades no Visual Studio 2019
+      url: ../ide/whats-new-visual-studio-2019.md
+    - text: Novidades no Visual Studio 2017
+      url: ../ide/whats-new-visual-studio-2017.md

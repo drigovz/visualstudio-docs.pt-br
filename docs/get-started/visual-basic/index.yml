@@ -1,100 +1,61 @@
-### YamlMime:YamlDocument
-documentType: LandingData
+### YamlMime:Landing
 title: Tutoriais do Visual Studio | Visual Basic
+summary: Criar aplicativos Visual Basic com o Visual Studio.
 metadata:
-  title: Desenvolvimento em Visual Basic com o Visual Studio | Microsoft Docs
-  description: Tutoriais e artigos conceituais sobre o desenvolvimento de aplicativos em Visual Basic com o Visual Studio.
+  title: Desenvolvimento em Visual Basic com o Visual Studio
+  description: Criar aplicativos Visual Basic usando o Visual Studio.
   ms.custom: seodec18
+  ms.topic: landing-page
+  ms.date: 09/20/2019
+  ms.author: ghogen
   author: ghogen
   manager: jillfra
   ms.prod: visual-studio-windows
   ms.technology: vs-acquisition
-  ms.topic: landing-page
-  ms.date: 10/30/2018
-  ms.author: ghogen
-abstract:
-  description: 'Esta página contém links de tutoriais para iniciantes aprenderem a usar o Visual Studio para usuários do Visual Basic. Para obter a documentação completa do Visual Studio, consulte <a href="/visualstudio/ide/">Visual Studio</a>. Para a documentação da linguagem do Visual Basic, consulte o <a href=/dotnet/visual-basic>Guia do Visual Basic</a>.'
-sections:
-  - title: Introdução
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../../install/install-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
-            title: Instalar o Visual Studio
-          - href: visual-studio-ide.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
-            title: Iniciar um tour guiado
-  - title: Tutoriais sobre Visual Basic
-    items:
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: ../tutorial-open-project-from-repo.md?toc=/visualstudio/get-started/visual-basic/toc.json&bc=/visualstudio/get-started/visual-basic/breadcrumb/toc.json
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_pull-request.svg'
-            title: Abrir código de um repositório
-          - href: tutorial-console.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
-            title: Criar seu primeiro aplicativo em Visual Basic
-          - href: /windows/uwp/get-started/create-a-hello-world-app-xaml-universal?toc=/visualstudio/visual-basic/toc.json&bc=/visualstudio/visual-basic/breadcrumb/toc.json
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
-            title: Criar um aplicativo universal do Windows
-          - href: tutorial-wpf.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_Windows.svg'
-            title: Criar um aplicativo da área de trabalho do Windows
-          - href: /dotnet/visual-basic/developing-apps/programming/
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
-            title: Aprender a usar o Visual Basic
-  - title: Aprender a usar o Visual Studio
-    items:
-      - type: paragraph
-        text: Saiba como usar o Visual Studio para suas tarefas de desenvolvimento.
-      - type: list
-        style: cards
-        className: cardsM
-        columns: 3
-        items:
-          - href: tutorial-editor.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
-            title: Escrever e editar o código
-          - href: ../../ide/compiling-and-building-in-visual-studio.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_build.svg'
-            title: Compilar e criar
-          - href: ../visual-basic/tutorial-debugger.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
-            title: Depurar seu código
-          - href: ../../test/getting-started-with-unit-testing.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_test.svg'
-            title: Testar seu código
-          - href: ../../data-tools/create-a-sql-database-by-using-a-designer.md
-            html: <p></p>
-            image:
-              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
-            title: Acessar dados
+  dev_langs:
+  - VB
+  ms.openlocfilehash: 6e0d373ab1a8fff8271e867171f0cb4900bf0533
+  ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 09/25/2019
+  ms.locfileid: "71253555"
+landingContent:
+- title: Introdução
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Instalar o Visual Studio
+      url: ../../install/install-visual-studio.md
+  - linkListType: get-started
+    links:
+    - text: Iniciar um tour guiado
+      url: visual-studio-ide.md
+- title: Criar aplicativos Visual Basic
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Criar um aplicativo do console
+      url: tutorial-console.md
+    - text: Criar um aplicativo da área de trabalho do Windows
+      url: tutorial-wpf.md
+    - text: Conheça a linguagem Visual Basic
+      url: /dotnet/visual-basic/developing-apps/programming/
+- title: Aprender a usar o Visual Studio
+  linkLists:
+  - linkListType: tutorial
+    links:
+    - text: Abrir código de um repositório
+      url: ../tutorial-open-project-from-repo.md?
+    - text: Escrever e editar o código
+      url: tutorial-editor.md
+    - text: Compilar e criar
+      url: ../../ide/compiling-and-building-in-visual-studio.md
+    - text: Depurar seu código
+      url: ../csharp/tutorial-debugger.md
+    - text: Testar seu código
+      url: ../../test/getting-started-with-unit-testing.md
+  - linkListType: how-to-guide
+    links:
+    - text: Acessar dados
+      url: ../../data-tools/create-a-sql-database-by-using-a-designer.md
