@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: fdb973718e56279e7bfb04c9d412bcd83410223d
-ms.sourcegitcommit: 0e482cfc15f809b564c3de61646f29ecd7bfcba6
+ms.openlocfilehash: 182c9e37764a247ec24b4b477975ccb7b8811c4b
+ms.sourcegitcommit: 4d2620bee4688fb881e09a07ea4a264b99f0743e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/14/2019
-ms.locfileid: "70987746"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71322542"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração
 Você pode obter uma visão em tempo real de seu código XAML em execução com a **árvore visual ao** vivo e o **Gerenciador de propriedades ao vivo**. Essas ferramentas fornecem uma exibição de árvore dos elementos de interface do usuário do seu aplicativo XAML em execução e mostram as propriedades de tempo de execução de qualquer elemento de interface do usuário que você selecionar.
@@ -81,7 +81,10 @@ Agora, abra a janela de **árvore visual ao vivo** (**depuração > árvore visu
 
 Volte para a janela do aplicativo e adicione mais alguns itens. Você deverá ver mais itens da caixa de listagem aparecerem na **árvore visual ao vivo**.
 
-Agora, vamos examinar as propriedades de um dos itens da caixa de listagem. Selecione o primeiro item da caixa de listagem na **árvore visual ao vivo** e clique no ícone **mostrar propriedades** na barra de ferramentas. O **Gerenciador de propriedades ao vivo** deve aparecer. Observe que o campo de **conteúdo** é "Item1" e o campo de **plano de fundo** é **#FFFFFFE0** (amarelo claro). Volte para a **árvore visual ao vivo** e selecione o segundo item da caixa de listagem. O **Gerenciador de propriedades ao vivo** deve mostrar que o campo de **conteúdo** é "Item2" e o campo de **plano de fundo** é **#FFD3D3D3** (cinza claro).
+Agora, vamos examinar as propriedades de um dos itens da caixa de listagem. Selecione o primeiro item da caixa de listagem na **árvore visual ao vivo** e clique no ícone **mostrar propriedades** na barra de ferramentas. O **Gerenciador de propriedades ao vivo** deve aparecer. Observe que o campo de **conteúdo** é "Item1" e o campo de**cor** do **plano de fundo** > é **#FFFFFFE0**. Volte para a **árvore visual ao vivo** e selecione o segundo item da caixa de listagem. O **Gerenciador de propriedades ao vivo** deve mostrar que o campo de **conteúdo** é "Item2" e o campo de**cor** de **plano de fundo** > é **#FFD3D3D3**.
+
+> [!NOTE]
+> Uma borda amarela em torno de uma propriedade no **Gerenciador de propriedades ao vivo** significa que o valor da propriedade é definido por meio `Color = {BindingExpression}`de uma associação, como. Uma borda verde significa que o valor é definido usando um recurso, como `Color = {StaticResource MyBrush}`.
 
 A estrutura real do XAML tem muitos elementos dos quais você provavelmente não está interessado diretamente e, se você não souber o código, poderá ter um tempo rígido para navegar pela árvore e encontrar o que está procurando. Portanto, a **árvore visual ativa** tem algumas maneiras que permitem usar a interface do usuário do aplicativo para ajudá-lo a encontrar o elemento que deseja examinar.
 
