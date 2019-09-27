@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5060b2a3b532de26d78eca4ce16661768748bbd7
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: aff50f5933d540297711e44487c775d93968f0fd
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891349"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342438"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -273,7 +273,7 @@ Se os testes individuais não tiverem dependências que os impeçam de serem exe
 
 ::: moniker range="vs-2017"
 
-|Botão|DESCRIÇÃO|
+|Botão|Descrição|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -299,7 +299,7 @@ Quando houver um grande número de testes, você poderá digitar na caixa de pes
 ![Pesquisar categorias de filtro](../test/media/vs-2019/test-explorer-search-filter-16-2.png)
 ::: moniker-end
 
-|Botão|DESCRIÇÃO|
+|Botão|Descrição|
 |-|-|
 |![Botão de grupo do Gerenciador de Testes](../test/media/ute_groupby_btn.png)|Para agrupar testes por categoria, escolha o botão **Agrupar por**.|
 
@@ -369,7 +369,7 @@ Saiba mais sobre [testes de unidade voltados para dados](../test/how-to-create-a
 
 Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução. A janela **Resultados da Cobertura de Código** exibe o percentual dos blocos de código de produto que foram exercidos por linha, função, classe, namespace e módulo.
 
-Para executar a cobertura de código para métodos de teste em uma solução, escolha **Testes** no menu do Visual Studio e escolha **Analisar cobertura de código**.
+Para executar a cobertura de código para métodos de teste em uma solução, escolha **testar** > **analisar cobertura de código para todos os testes**.
 
 Os resultados da cobertura são exibidos na janela **Resultados da Cobertura de Código**.
 

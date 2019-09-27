@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: a22bdbc30fc222e26c01a10afdd7a666eebcb9f6
-ms.sourcegitcommit: a2df993dc5e11c5131dbfcba686f0028a589068f
+ms.openlocfilehash: 517f3f5911df6c7de1f59232a4e836bcdc84c448
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71150117"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342363"
 ---
 # <a name="customize-code-coverage-analysis"></a>Personalizar a análise de cobertura de código
 
@@ -40,7 +40,7 @@ Para personalizar a cobertura de código, siga estas etapas:
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
+3. Para selecionar o arquivo de configurações de execução, no menu **testar** , escolha **Selecionar arquivo de configurações**. Para especificar um arquivo de configurações de execução para executar testes na linha de comando, confira [Configurar testes de unidade](../test/configure-unit-tests-by-using-a-dot-runsettings-file.md#command-line).
 
 ::: moniker-end
 
@@ -59,7 +59,7 @@ Para ativar ou desativar as configurações personalizadas, marque ou desmarque 
 
 ::: moniker range=">=vs-2019"
 
-Para ativar ou desativar as configurações personalizadas, marque ou desmarque o arquivo no menu **Configurações** do **Gerenciador de Testes**.
+Para desativar e ativar as configurações personalizadas, desmarque ou selecione o arquivo no menu de **teste** .
 
 ::: moniker-end
 
@@ -270,7 +270,7 @@ Included items must then not match any entries in the exclude list to remain inc
             </PublicKeyTokens>
 
             <!-- We recommend you do not change the following values: -->
-            
+
             <!-- Set this to True to collect coverage information for functions marked with the "SecuritySafeCritical" attribute. Instead of writing directly into a memory location from such functions, code coverage inserts a probe that redirects to another function, which in turns writes into memory. -->
             <UseVerifiableInstrumentation>True</UseVerifiableInstrumentation>
             <!-- When set to True, collects coverage information from child processes that are launched with low-level ACLs, for example, UWP apps. -->
