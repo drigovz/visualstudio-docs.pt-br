@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bfe750e8dca68876ac5d894c0ca194f82a42f21
-ms.sourcegitcommit: b593bb889f049fcbdff502c30b73178ed17dbdf0
-ms.translationtype: HT
+ms.openlocfilehash: ca5a80c07cb64cfd638542da4e1deefe7e373b18
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/20/2019
-ms.locfileid: "67291035"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342400"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>Personalizar tarefas de compilação e depuração para desenvolvimento de "Pasta Aberta"
 
@@ -28,7 +28,7 @@ Se a base de código usar ferramentas de compilação personalizadas não reconh
 
 Personalizar sua base de código sem projeto usando os seguintes arquivos *.json*:
 
-|Nome do arquivo|Finalidade|
+|Nome do Arquivo|Finalidade|
 |-|-|
 |*tasks.vs.json*|Especifique os comandos de compilação personalizados e as opções do compilador, além de tarefas arbitrárias (sem relação com a compilação).<br>Acessado por meio do item **Configurar Tarefas** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
 |*launch.vs.json*|Especifica argumentos de linha de comando para depuração.<br>Acessado por meio do item **Configurações de Depuração e Inicialização** no menu do clique com o botão direito no **Gerenciador de Soluções**.|
@@ -256,6 +256,9 @@ Você pode criar tarefas para qualquer arquivo ou pasta especificando seu nome n
    ![Botão Início personalizado](media/customize-start-button.png)
 
    Quando você escolhe **F5**, o depurador é iniciado, e é interrompido em qualquer ponto de interrupção já criado. Todas as janelas conhecidas do depurador ficam disponíveis e funcionais.
+
+   > [!IMPORTANT]
+   > Para obter detalhes adicionais sobre a compilação personalizada e tarefas C++ de depuração em projetos de pasta aberta, consulte [abrir pasta suporte para C++ sistemas de compilação no Visual Studio](/cpp/build/open-folder-projects-cpp).
 
 ### <a name="specify-arguments-for-debugging"></a>Especificar argumentos para depuração
 

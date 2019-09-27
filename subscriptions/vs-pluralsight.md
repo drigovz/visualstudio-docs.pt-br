@@ -6,12 +6,12 @@ manager: lank
 ms.date: 08/02/2019
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do Pluralsight incluída nas assinaturas do Visual Studio selecionadas.
-ms.openlocfilehash: 897790684420c35d173f1d8144f735815ca4034f
-ms.sourcegitcommit: a124076dfd6b4e5aecda4d01984fee7b0c034745
-ms.translationtype: HT
+ms.openlocfilehash: 25a699f0e97f88fefaaf5b62f752ef579c0cd736
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/05/2019
-ms.locfileid: "68787654"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342392"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Benefícios de treinamento do Pluralsight nas assinaturas do Visual Studio
 
@@ -46,9 +46,7 @@ A tabela a seguir fornece detalhes sobre quais benefícios de assinatura do Plur
    > Se sua conta não for elegível para resgatar novas ofertas, o email recebido explicará que houve um problema ao criar sua conta, pois ela não é elegível.  Ele também conterá informações para ajudá-lo a contatar a equipe de suporte do Pluralsight, que poderá responder dúvidas que você possa ter sobre a sua conta.
    
 
-6. Depois que a conta for criada com êxito, o email recebido conterá seu nome de usuário e solicitará que você crie uma senha.  Forneça sua senha, insira-a novamente para confirmá-la e, em seguida, clique em **Fazer logon no Pluralsight**.
-   > [!div class="mx-imgBorder"]
-   > ![Email de boas-vindas do benefício do Pluralsight](_img/vs-pluralsight/vs-pluralsight-welcome-email.png)
+6. Depois que sua conta tiver sido criada com êxito, o email que você receber conterá seu nome de usuário e solicitará que você crie uma senha.  Forneça sua senha, insira-a novamente para confirmá-la e, em seguida, clique em **Fazer logon no Pluralsight**.
 
 7. Insira o nome de usuário fornecido no email de boas-vindas e a senha recém-criada e clique em **Entrar**.
 

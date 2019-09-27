@@ -11,12 +11,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 24bc4c54e455f43aa5fd5fee0ce0d5a44042e497
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 1962a977cb282613405342f225d63140f1854453
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913202"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342420"
 ---
 # <a name="use-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usar a cobertura de código para determinar quanto do código está sendo testado
 
@@ -46,11 +46,11 @@ O recurso de cobertura de código está disponível apenas no Visual Studio Ente
 
 ::: moniker range=">=vs-2019"
 
-1. No **Gerenciador de testes**, selecione **analisar cobertura de código para todos os testes** no menu **executar** .
+1. No menu **testar** , selecione **analisar cobertura de código para todos os testes**.
 
    ![Analisar o menu de cobertura de código no VS 2019](../test/media/vs-2019/analyze-code-coverage.png)
 
-   Se o **Gerenciador de testes** não estiver aberto, abra-o selecionando **testar** > o **Gerenciador de testes**do **Windows** > ou pressione **Ctrl**+**E**,**T**.
+   Você também pode executar a cobertura de código na janela de ferramentas do Gerenciador de testes.
 
 ::: moniker-end
 
@@ -300,7 +300,7 @@ Para executar testes na linha de comando, use *vstest.console.exe*. A cobertura 
 
 Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](vstest-console-options.md).
 
-## <a name="troubleshoot"></a>Solução de problemas
+## <a name="troubleshoot"></a>Solucionar problemas
 
 Se os resultados da cobertura de código não forem exibidos, o artigo [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md) poderá ajudá-lo.
 

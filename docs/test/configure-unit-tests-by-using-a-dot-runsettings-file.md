@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 25d0f49939a42d9a9b8cc56f03ed37ab83aa98f2
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 799d3f23a6b4e269c08bc889461596178e71b4c8
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251822"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342492"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um *.runsettings*
 
@@ -38,11 +38,11 @@ O arquivo será exibido no menu de Configurações do Teste e você poderá marc
 
 ::: moniker range=">=vs-2019"
 
-Para especificar um arquivo de configurações de execução no IDE, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
+Para especificar um arquivo de configurações de execução no IDE, selecione **testar** > **Selecione arquivo de configurações**. Navegue até o arquivo *.runsettings* e selecione-o.
 
-![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2019](media/vs-2019/select-test-settings-file.png)
+![Selecionar o menu do arquivo de configurações do teste no Visual Studio 2019](media/vs-2019/select-settings-file.png)
 
-O arquivo será exibido no menu de Configurações do Gerenciador de Testes e você poderá marcá-lo ou desmarcá-lo. Quando estiver marcado, o arquivo de configurações de execução se aplicará sempre que você selecionar **Analisar Cobertura de Código**.
+O arquivo aparece no menu teste e você pode selecioná-lo ou desselecioná-lo. Quando estiver marcado, o arquivo de configurações de execução se aplicará sempre que você selecionar **Analisar Cobertura de Código**.
 
 ::: moniker-end
 
@@ -97,7 +97,7 @@ Para personalizar os testes usando um arquivo *.runsettings*, siga estas etapas:
 
 ::: moniker range=">=vs-2019"
 
-3. Para selecionar o arquivo de configurações de execução, no **Gerenciador de Testes**, selecione a seta no botão **Configurações** e, em seguida, escolha **Selecionar Arquivo de Configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
+3. Para selecionar o arquivo de configurações de execução, escolha **testar** > **Selecionar arquivo de configurações**. Procure o arquivo *.runsettings* que você criou e, em seguida, selecione **OK**.
 
 ::: moniker-end
 
@@ -118,7 +118,7 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
     <ResultsDirectory>.\TestResults</ResultsDirectory>
 
     <!-- x86 or x64 -->
-    <!-- You can also change it from the test settings menu; choose "Processor Architecture for AnyCPU Projects" -->
+    <!-- You can also change it from the Test menu; choose "Processor Architecture for AnyCPU Projects" -->
     <TargetPlatform>x86</TargetPlatform>
 
     <!-- Framework35 | [Framework40] | Framework45 -->
@@ -157,7 +157,7 @@ O XML a seguir mostra o conteúdo de um arquivo *.runsettings* típico. Cada ele
       <DataCollector uri="datacollector://microsoft/VideoRecorder/1.0" assemblyQualifiedName="Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder.VideoRecorderDataCollector, Microsoft.VisualStudio.TestTools.DataCollection.VideoRecorder, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" friendlyName="Screen and Voice Recorder">
         <!--Video data collector was introduced in Visual Studio 2017 version 15.5 -->
         <Configuration>
-           <!-- Change to "false" to only add video attachments to failed tests -->
+          <!-- Change to "false" to only add video attachments to failed tests -->
           <MediaRecorder sendRecordedMediaForPassedTestCase="true" xmlns="" />
         </Configuration>
       </DataCollector>

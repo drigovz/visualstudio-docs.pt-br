@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d18f510b3b30207079b644e540d8b5db22609f97
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: 27ca8a39d39fcc8b4e5ddca2cbedf72e44c6cc81
+ms.sourcegitcommit: 689ba54ea14257d13031de881f5d4fe937a36f56
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891330"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71342458"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 
@@ -83,7 +83,7 @@ Você pode executar todos os testes na solução, todos os testes em um grupo ou
 
 ### <a name="run-tests-after-every-build"></a>Executar testes depois de cada compilação
 ::: moniker range="vs-2017"
-|Botão|DESCRIÇÃO|
+|Botão|Descrição|
 |-|-|
 |![Executar após o build](../test/media/ute_runafterbuild_btn.png)|Para executar os testes de unidade após cada build local, escolha **Teste** no menu padrão e, em seguida, **Executar Testes após Build** na barra de ferramentas do **Gerenciador de Testes**.|
 
@@ -151,7 +151,7 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 ### <a name="test-explorer-groups"></a>Grupos de Gerenciador de Testes
 
 ::: moniker range="vs-2017"
-|Grupo|DESCRIÇÃO|
+|Grupo|Descrição|
 |-|-----------------|
 |**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|
 |**Resultado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
@@ -159,7 +159,7 @@ Você pode definir seus próprios níveis de hierarquia e de grupo por **Estado*
 |**Projeto**|Agrupa teste por nome dos projetos.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Grupo|DESCRIÇÃO|
+|Grupo|Descrição|
 |-|-----------------|
 |**Duração**|Agrupa testes pelo tempo de execução: **Rápido**, **Médio** e **Lento**.|
 |**Estado**|Agrupa testes pelos resultados da execução: **Testes com Falha**, **Testes Ignorados**, **Testes Aprovados**, **Não Executado**|
@@ -177,7 +177,7 @@ Uma característica é geralmente um par de nome/valor de categoria, mas também
 
 Na estrutura de teste de unidade da Microsoft para aplicativos gerenciados, você define um par nome/valor de característica no atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute>. A estrutura de teste também contém essas características predefinidas:
 
-|Característica|DESCRIÇÃO|
+|Característica|Descrição|
 |-|-----------------|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.OwnerAttribute>|A categoria do proprietário é definida pela estrutura de teste de unidade e exige que você forneça um valor de cadeia de caracteres do proprietário.|
 |<xref:Microsoft.VisualStudio.TestTools.UnitTesting.PriorityAttribute>|A categoria Prioridade é definida pela estrutura de teste de unidade e exige que você forneça um valor inteiro da prioridade.|
@@ -266,7 +266,7 @@ Para filtrar por um critério diferente:
 > As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.
 
 ::: moniker range="vs-2017"
-|Qualificador|DESCRIÇÃO|
+|Qualificador|Descrição|
 |-|-----------------|
 |**Característica**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
 |**Projeto**|Procura os nomes de projeto de teste para correspondências.|
@@ -277,7 +277,7 @@ Para filtrar por um critério diferente:
 |**Resultado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-|Qualificador|DESCRIÇÃO|
+|Qualificador|Descrição|
 |-|-----------------|
 |**Estado**|Pesquisa os nomes de categoria do Gerenciador de Testes em busca de correspondências: **Testes com Falha**, **Testes Ignorados** e **Testes Aprovados**.|
 |**Características**|Procura categoria de característica e valor para correspondência. A sintaxe para especificar valores e categorias de característica é definida pela estrutura de teste de unidade.|
@@ -320,6 +320,7 @@ Para diagnosticar por que um método de teste está demorando para ser executado
 Para executar a cobertura de código para métodos de teste em uma solução:
 
 ::: moniker range="vs-2017"
+
 1. Escolha **Testes** na barra de menus superior e, em seguida, escolha **Analisar cobertura de código**.
 
 2. Escolha um dos seguintes comandos do submenu:
@@ -327,9 +328,13 @@ Para executar a cobertura de código para métodos de teste em uma solução:
     - **Testes selecionados** executa os métodos de teste que você selecionou no Gerenciador de Testes.
 
     - **Todos os testes** executa todos os métodos de teste na solução.
+
 ::: moniker-end
+
 ::: moniker range=">=vs-2019"
-* Clique com o botão direito do mouse no Gerenciador de Testes e selecione **Analisar Cobertura de Código de Testes Selecionados**
+
+* Clique com o botão direito do mouse no Gerenciador de testes e selecione **analisar cobertura de código para testes selecionados**
+
 ::: moniker-end
 
 A janela **Resultados da Cobertura de Código** exibe o percentual dos blocos de código de produto que foram exercidos por linha, função, classe, namespace e módulo.
@@ -338,7 +343,7 @@ Para obter mais informações, confira [Usar a cobertura de código para determi
 
 ## <a name="test-shortcuts"></a>Atalhos de teste
 
-Testes podem ser executados do **Gerenciador de Testes** clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os [Atalhos padrão do Gerenciador de Testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
+Os testes podem ser executados no Gerenciador de testes clicando com o botão direito do mouse no editor de código em um teste e selecionando **Executar teste** ou usando os atalhos padrão do [Gerenciador de testes](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL) no Visual Studio. Alguns dos atalhos são baseados em contexto. Isso significa que eles executam ou depuram testes com base em onde o cursor está no editor de código. Se o cursor estiver dentro de um método de teste, esse método de teste será executado. Se o cursor estiver no nível de classe, todos os testes na classe serão executados. O mesmo vale para o nível do namespace.
 
 |Comandos frequentes| Atalhos de teclado|
 |-|------------------------|
