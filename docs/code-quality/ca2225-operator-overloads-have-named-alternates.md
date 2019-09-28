@@ -12,14 +12,14 @@ ms.assetid: af8f7ab1-63ad-4861-afb9-b7a7a2be15e1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: c027bc4581919f814b4d93eacba77248349fdf8b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+dev_langs:
+- CSharp
+ms.openlocfilehash: b4db3074d334fe32f95c4d1b8446921c4e4d47ba
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231084"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481769"
 ---
 # <a name="ca2225-operator-overloads-have-named-alternates"></a>CA2225: Sobrecargas de operador têm alternativas nomeadas
 
@@ -38,12 +38,16 @@ Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é
 
 ## <a name="rule-description"></a>Descrição da regra
 
-A sobrecarga de operador permite o uso de símbolos para representar computações para um tipo. Por exemplo, um tipo que sobrecarrega o símbolo de mais (+) para adição normalmente teria um membro alternativo chamado ' Add '. O membro alternativo nomeado fornece acesso à mesma funcionalidade que o operador e é fornecido para desenvolvedores que programam em idiomas que não dão suporte a operadores sobrecarregados.
+A sobrecarga de operador permite o uso de símbolos para representar computações para um tipo. Por exemplo, um tipo que sobrecarrega o símbolo de mais `+` para adição normalmente teria um membro alternativo chamado `Add`. O membro alternativo nomeado fornece acesso à mesma funcionalidade que o operador. Ele é fornecido para desenvolvedores que programam em idiomas que não dão suporte a operadores sobrecarregados.
 
-Essa regra examina os operadores listados na tabela a seguir.
+Essa regra examina:
 
-|C#|Visual Basic|C++|Nome alternativo|
-|---------|------------------|-----------|--------------------|
+- Operadores Cast implícitos e explícitos em um tipo verificando métodos chamados `To<typename>` e `From<typename>`.
+
+- Os operadores listados na tabela a seguir:
+
+|C#|Visual Basic|C++|Nome do método alternativo|
+|-|-|-|-|
 |+ (binário)|+|+ (binário)|Adicionar|
 |+=|+=|+=|Adicionar|
 |&|e|&|BitwiseAnd|
@@ -56,14 +60,14 @@ Essa regra examina os operadores listados na tabela a seguir.
 |==|=|==|Igual a|
 |^|Xor|^|Xor|
 |^=|Xor=|^=|Xor|
-|>|>|>|Comparar|
-|>=|>=|>=|Comparar|
+|>|>|>|CompareTo ou Compare|
+|>=|>=|>=|CompareTo ou Compare|
 |++|N/D|++|Incremento|
-|<>|!=|Igual a|
+|!=|<>|!=|Igual a|
 |<<|<<|<<|LeftShift|
 |<<=|<<=|<<=|LeftShift|
-|<|<|<|Comparar|
-|<=|<=|\<=|Comparar|
+|<|<|<|CompareTo ou Compare|
+|<=|<=|\<=|CompareTo ou Compare|
 |&&|N/D|&&|LogicalAnd|
 |&#124;&#124;|N/D|&#124;&#124;|Operador lógico|
 |!|N/D|!|LogicalNot|
@@ -81,15 +85,14 @@ Essa regra examina os operadores listados na tabela a seguir.
 |+ (unário)|N/D|+|Acrescido|
 |false|IsFalse|False|IsTrue (Propriedade)|
 
-N/A = = não pode ser sobrecarregado no idioma selecionado.
+\* N/A significa que o operador não pode ser sobrecarregado no idioma selecionado.
 
-A regra também verifica os operadores de conversão implícitos e explícitos`SomeType`em um tipo () verificando `FromSomeType`os métodos chamados `ToSomeType` e.
-
-No C#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também é implicitamente sobrecarregado.
+> [!NOTE]
+> No C#, quando um operador binário está sobrecarregado, o operador de atribuição correspondente, se houver, também é implicitamente sobrecarregado.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, implemente o método alternativo para o operador; Nomeie-o usando o nome alternativo recomendado.
+Para corrigir uma violação dessa regra, implemente o método alternativo para o operador. Nomeie-o usando o nome alternativo recomendado.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

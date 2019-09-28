@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b9c73def1870e09a43485ddd423ee9d3000bbee
-ms.sourcegitcommit: 2ee11676af4f3fc5729934d52541e9871fb43ee9
-ms.translationtype: HT
+ms.openlocfilehash: ca7df1c087e35fd188461382e4f44de6ab703964
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/17/2019
-ms.locfileid: "65846220"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481966"
 ---
 # <a name="special-characters-to-escape"></a>Caracteres especiais para escape
 Caracteres especiais devem ser de escape somente se tiverem um significado especial no contexto em que eles estiverem sendo usados. Por exemplo, o asterisco (*) é um caractere especial somente nos atributos "Incluir" e "Excluir" de uma definição de item ou em uma chamada para <xref:Microsoft.Build.Tasks.CreateItem>. Em outros casos, o asterisco é tratado como um asterisco literal. Embora você não precise que os asteriscos sejam de escape em todos os arquivos de projeto, fazer isso não é prejudicial.
@@ -40,6 +40,9 @@ Caracteres especiais devem ser de escape somente se tiverem um significado espec
 |;|Ponto e vírgula, separador de lista.|
 |?|Ponto de interrogação, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|
 |*|Asterisco, um caractere curinga ao descrever uma especificação de arquivo na seção Incluir/Excluir de um item.|
+
+> [!NOTE]
+> Em alguns cenários, talvez seja necessário escapar de aspas duplas (") caracteres, como ao usar em uma tarefa `Exec`.
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Fazer escape de caracteres especiais no MSBuild](../msbuild/how-to-escape-special-characters-in-msbuild.md)

@@ -1,19 +1,19 @@
 ---
 title: Escrever testes de unidade para C/C++
 description: Escreva testes de unidade C++ no Visual Studio usando várias estruturas de teste, incluindo Google Test, Boost.Test e CTest.
-ms.date: 05/06/2019
+ms.date: 09/27/2019
 ms.topic: conceptual
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 6c236a8454c9710bedbf080f4d7a09cfff6a7fac
-ms.sourcegitcommit: d4920babfc3d24a3fe1d4bf446ed3fe73b344467
-ms.translationtype: HT
+ms.openlocfilehash: 75244cc728b238a04569875ac01f1c2a3f27d336
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "67160179"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481912"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>Gravar testes de unidade para C/C++ no Visual Studio
 
@@ -86,6 +86,8 @@ Se o código de teste não exportar as funções que você deseja testar, será 
 Em seguida, no arquivo *.cpp* do teste de unidade, adicione uma diretiva `#include` a todos os arquivos de cabeçalho que declaram os tipos e as funções que você deseja testar. Digite `#include "` e, depois, o IntelliSense será ativado para ajudá-lo a escolher. Repita essas etapas nos outros cabeçalhos.
 
 ![Adicionar diretivas de inclusão](media/cpp-add-includes-test-project.png)
+
+Para evitar a necessidade de digitar o caminho completo em cada instrução include no arquivo de origem, você pode adicionar as pastas necessárias no **projeto** > **Propriedades** > **CC++/**  > **geral** > **inclusão adicional Diretórios**.
 
 ### <a name="write-test-methods"></a>Gravar métodos de teste
 
