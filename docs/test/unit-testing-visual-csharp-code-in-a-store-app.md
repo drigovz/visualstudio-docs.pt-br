@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - uwp
 author: gewarren
-ms.openlocfilehash: 359f2f8b078c197f12a6db09858ca7c9da5a621a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: dfb0ed5775e011471ba32d4962b0bf25cfcda2b1
+ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62809621"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481884"
 ---
 # <a name="unit-test-c-code"></a>Executar o teste de unidade de um código C#
 
@@ -167,7 +167,7 @@ Você configurou o teste e os projetos de código, além de ter verificado que p
        {
            double expected = v;
            double actual = rooter.SquareRoot(v*v);
-           double tolerance = ToleranceHelper(expected);
+           double tolerance = expected/1000;
            Assert.AreEqual(expected, actual, tolerance);
        }
    }
