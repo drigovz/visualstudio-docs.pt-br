@@ -47,9 +47,9 @@ Crie um pincel visual a partir de um controle, como um botão. As ilustrações 
 
 Você pode criar uma vez a aparência e o comportamento de um controle uma vez e aplicar esse design a outros controles, para que você não precise mantê-los individualmente.
 
-**Você deve usar um estilo?** : Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
+**Você deve usar um estilo?**: Se você só quiser definir as propriedades padrão (como a cor de um botão), use um *estilo*. É possível modificar um controle, mesmo após aplicar um estilo a ele.
 
-**Você deve usar um modelo?** : Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
+**Você deve usar um modelo?**: Se você quiser alterar a estrutura de um controle, use um *modelo*. Imagine a conversão de um gráfico ou logotipo em um botão. Não é possível modificar um controle depois de aplicar um modelo a ele.
 
 ### <a name="create-a-template-or-style"></a>Criar um modelo ou estilo
 
@@ -85,7 +85,7 @@ Clique com o botão direito do mouse em um objeto na janela [Objetos e Linha do 
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle
 
-Selecione o controle e, na janela **Propriedades****, localize as propriedades **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
+Selecione o controle e, na janela **Propriedades** **, localize as propriedades **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
 
 ## <a name="visual-states"></a>Estados visuais
 

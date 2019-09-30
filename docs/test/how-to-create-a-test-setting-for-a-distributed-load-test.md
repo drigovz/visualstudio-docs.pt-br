@@ -33,7 +33,7 @@ As configurações de teste do Visual Studio são armazenadas em um arquivo. As 
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
-Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste. **
+Ao adicionar um projeto de teste de carga e desempenho na Web a uma solução, um arquivo *Default.testsettings* é criado. O arquivo é automaticamente adicionado à solução na pasta **Itens de Solução**. Este arquivo executa seus testes localmente sem adaptadores de dados de diagnóstico. É possível adicionar ou editar um arquivo *.testsettings* para especificar adaptadores de dados de diagnóstico e controladores de teste *.*
 
 O controlador de teste terá agentes que podem ser usados para cada função nas configurações de teste. Para obter mais informações sobre controladores e agentes de teste, confira [Gerenciar controladores e agentes de teste com o Visual Studio](../test/manage-test-controllers-and-test-agents.md).
 
