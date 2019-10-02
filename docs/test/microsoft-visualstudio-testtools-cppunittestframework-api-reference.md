@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikeblome
-ms.openlocfilehash: fca428a7a810453b3ddcbd9b0d10d6a8f13d0550
-ms.sourcegitcommit: 16175e0cea6af528e9ec76f0b94690faaf1bed30
+ms.openlocfilehash: 327aa6f79f7eda6ecc3f1c0a7b2576a87287b1c0
+ms.sourcegitcommit: 628eb202a1153ebfe69c668f966f821b98b34b34
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/28/2019
-ms.locfileid: "71481852"
+ms.lasthandoff: 10/02/2019
+ms.locfileid: "71720509"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Referência da API Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 
@@ -124,7 +124,7 @@ TEST_METHOD_INITIALIZE(methodName)
 }
 ```
 
-Define *methodName* como um método executado antes de cada método de teste ser executado. `TEST_METHOD_INITIALIZE` só pode ser definido uma vez em uma classe de teste e deve ser definido na classe de teste.
+Define *methodName* como um método executado antes de cada método de teste ser executado. `TEST_METHOD_INITIALIZE` só pode ser definido uma vez em uma classe de teste e deve ser definido no escopo da classe de teste.
 
 ```cpp
 TEST_METHOD_CLEANUP(methodName)

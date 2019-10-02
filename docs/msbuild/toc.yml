@@ -88,7 +88,7 @@
       items:
         - name: Conceitos avançados do MSBuild
           href: msbuild-advanced-concepts.md
-        - name: Envio em lote
+        - name: Separação em lotes
           items:
             - name: Separação em lotes no MSBuild
               href: msbuild-batching.md
@@ -98,7 +98,7 @@
               href: item-metadata-in-target-batching.md
         - name: Transformações do MSBuild
           href: msbuild-transforms.md
-        - name: Integração do Visual Studio
+        - name: Integração com o Visual Studio
           items:
             - name: Integração com o Visual Studio (MSBuild)
               href: visual-studio-integration-msbuild.md
@@ -236,7 +236,7 @@
               href: usingtask-element-msbuild.md
             - name: Elemento When (MSBuild)
               href: when-element-msbuild.md
-        - name: Referência da tarefa
+        - name: Referência de tarefas
           items:
             - name: Referência de tarefas do MSBuild – Visão geral
               href: msbuild-task-reference.md
@@ -292,6 +292,8 @@
               href: taskextension-base-class.md
             - name: Classe ToolTaskExtension (base)
               href: tooltaskextension-base-class.md
+            - name: Diagnosticar falhas de tarefas
+              href: diagnosing-task-failures.md
             - name: Tarefa AL (Assembly Linker)
               href: al-assembly-linker-task.md
             - name: Tarefa AspNetCompiler
