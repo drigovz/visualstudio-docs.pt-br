@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8341a83443855f2fd90d7f5a742251fa54fc4890
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63411005"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962909"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-element-msbuild.md) para o assembly que contém a implementação de tarefas.
@@ -38,6 +38,9 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
     TaskFactory = "ClassName"
     Condition="'String A'=='String B'" />
 ```
+
+> [!NOTE]
+> Ao contrário de propriedades e itens, o *primeiro* elemento `UsingTask` que se aplica a um `TaskName` será usado; para substituir tarefas, você deve definir um novo `UsingTask` *antes* do existente.
 
 ## <a name="attributes-and-elements"></a>Atributos e elementos
  As seções a seguir descrevem atributos, elementos filho e elementos pai.

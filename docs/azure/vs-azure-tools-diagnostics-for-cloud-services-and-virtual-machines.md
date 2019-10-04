@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
-ms.openlocfilehash: 0b212ee44809f925bb4d2d78efc972a4986602a5
-ms.sourcegitcommit: 13ab9a5ab039b070b9cd9251d0b83dd216477203
-ms.translationtype: HT
+ms.openlocfilehash: 911a366aa69cf0a45cb030bb83017895500ad32f
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/23/2019
-ms.locfileid: "66177333"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962975"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurar o diagnóstico para Serviços de Nuvem e máquinas virtuais do Azure
 Quando você precisa solucionar problemas de uma máquina virtual ou serviço de nuvem do Azure, pode usar o Visual Studio para configurar mais facilmente o Diagnóstico do Azure. O diagnóstico captura dados do sistema e dados de log em máquinas virtuais e instâncias de máquinas virtuais que executam o serviço de nuvem. Dados de diagnóstico são transferidos para uma conta de armazenamento que você escolhe. Para obter mais informações sobre o registro em log de diagnóstico no Azure, consulte [Habilitar o registro em log de diagnóstico para aplicativos Web no Serviço de Aplicativo do Azure](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -83,7 +83,7 @@ No Visual Studio, você pode coletar dados de diagnóstico para funções execut
 5. Para exibir a caixa de diálogo **Configuração de diagnóstico**, selecione **Configurar**. Exceto por **Geral** e **Diretórios de log**, cada guia representa uma fonte de dados de diagnóstico que você pode coletar. A guia padrão **Geral** oferece as seguintes opções de coleta de dados de diagnóstico: **Somente erros**, **Todas as informações** e **Plano personalizado**. A opção padrão **Somente erros** usa a menor quantidade de armazenamento porque não transfere avisos nem mensagens de rastreamento. A opção **Todas as informações** transfere a maioria das informações, usa o máximo de armazenamento e, portanto, é a opção mais cara.
 
    > [!NOTE]
-   > Tamanho mínimo com suporte para "Cota de disco em MB" é de 4GB. No entanto, se você estiver coletando os despejos de memória, aumente isso para um valor mais alto, como 10GB.
+   > O tamanho mínimo com suporte para "cota de disco em MB" é 50 MB, e o tamanho padrão é de 4 GB. No entanto, se você estiver coletando os despejos de memória, aumente isso para um valor mais alto, como 10GB.
    >
 
     ![Habilitar a configuração e diagnóstico do Azure](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758144.png)

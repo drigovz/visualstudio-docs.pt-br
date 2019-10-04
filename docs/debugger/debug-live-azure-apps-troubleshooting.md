@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ee8633a9ad58981297f00338cd6c375c5cf721e
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 27df4c097d829a4d28a77b9b1ad96eb389f4096c
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211245"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962939"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Solução de problemas e problemas conhecidos da depuração de instantâneos no Visual Studio
 
-Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou relate um novo problema escolhendo **ajuda** > **enviar comentários** > para**relatar um problema** no Visual Studio.
+Se as etapas descritas neste artigo não resolverem o problema, procure o problema na [comunidade de desenvolvedores](https://developercommunity.visualstudio.com/spaces/8/index.html) ou relate um novo problema escolhendo **ajuda** > **enviar comentários** > **relate um problema** no Visual Studio.
 
 ## <a name="issue-attach-snapshot-debugger-encounters-an-http-status-code-error"></a>Problema: "Attach Depurador de Instantâneos" encontra um erro de código de status HTTP
 
@@ -34,7 +34,7 @@ Esse erro indica que a chamada REST emitida pelo Visual Studio para o Azure usa 
 
 Siga estas etapas:
 
-* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo do **debug** > **Attach depurador de instantâneos...** Azure Resource**Select existente**ou no Cloud Explorer.  >  > 
+* Certifique-se de que sua conta de personalização do Visual Studio tenha permissões para a assinatura do Azure e o recurso ao qual você está anexando. Uma maneira rápida de determinar isso é verificar se o recurso está disponível na caixa de diálogo de **Debug** > **Attach depurador de instantâneos...**  > **recurso do Azure** > **selecione existente**ou no Cloud Explorer.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 ### <a name="403-forbidden"></a>(403) proibido
@@ -54,7 +54,8 @@ Esse erro indica que o site não pôde ser encontrado no servidor.
 Siga estas etapas:
 
 * Verifique se você tem um site implantado e em execução no recurso de serviço de aplicativo ao qual você está anexando.
-* Verifique se o site está disponível em https://\<Resource\>. azurewebsites.net
+* Verifique se o site está disponível em https://@no__t -0resource\>.azurewebsites.net
+* Verifique se o aplicativo Web personalizado em execução correta não retorna um código de status 404 quando acessado em https://@no__t -0resource\>.azurewebsites.net
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
 ### <a name="406-not-acceptable"></a>(406) não aceitável
@@ -63,7 +64,7 @@ Esse erro indica que o servidor não pode responder ao tipo definido no cabeçal
 
 Siga estas etapas:
 
-* Verifique se seu site está disponível em https://\<Resource\>. azurewebsites.net
+* Verifique se seu site está disponível em https://@no__t -0resource\>.azurewebsites.net
 * Verifique se o site não foi migrado para novas instâncias. Depurador de Instantâneos usa a noção de ARRAffinity para rotear solicitações para instâncias específicas que podem produzir esse erro intermitentemente.
 * Se esse erro continuar a persistir, use um dos canais de comentários descritos no início deste artigo.
 
@@ -156,11 +157,11 @@ Siga estas etapas:
 
 O Visual Studio 2019 requer uma versão mais recente do Depurador de Instantâneos extensão de site em seu serviço de Azure App.  Esta versão não é compatível com a versão mais antiga do Depurador de Instantâneos a extensão de site usada pelo Visual Studio 2017.  Você receberá o erro a seguir se tentar anexar o Depurador de Instantâneos no Visual Studio 2019 a um serviço Azure App que foi previamente depurado pelo Depurador de Instantâneos no Visual Studio 2017:
 
-![Depurador de instantâneos de extensão de site incompatível no Visual Studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "Depurador de instantâneos de extensão de site incompatível no Visual Studio 2019")
+![Incompatível depurador de instantâneos extensão do site do visual studio 2019](../debugger/media/snapshot-troubleshooting-incompatible-vs2019.png "incompatível depurador de instantâneos extensão do site Visual Studio 2019")
 
 Por outro lado, se você usar o Visual Studio 2017 para anexar o Depurador de Instantâneos a um serviço de Azure App que foi previamente depurado pelo Depurador de Instantâneos no Visual Studio 2019, você obterá o seguinte erro:
 
-![Depurador de instantâneos de extensão de site incompatível no Visual Studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "Depurador de instantâneos de extensão de site incompatível no Visual Studio 2017")
+![Incompatível depurador de instantâneos extensão do site do visual studio 2017](../debugger/media/snapshot-troubleshooting-incompatible-vs2017.png "incompatível depurador de instantâneos extensão do site Visual Studio 2017")
 
 Para corrigir esse problema, exclua as seguintes configurações de aplicativo no portal do Azure e anexe o Depurador de Instantâneos novamente:
 
@@ -189,7 +190,7 @@ Logs de agente podem ser encontrados nos seguintes locais:
 Logs de instrumentação podem ser encontrados nos seguintes locais:
 
 - Serviços de Aplicativos:
-  - O log de erros é enviado automaticamente para D:\Home\LogFiles\eventlog.xml, os eventos `<Provider Name="Instrumentation Engine" />` são marcados com ou "pontos de interrupção de produção"
+  - O log de erros é enviado automaticamente para o D:\Home\LogFiles\eventlog.xml, os eventos são marcados com `<Provider Name="Instrumentation Engine" />` ou "pontos de interrupção de produção"
 - VM/VMSS:
   - Entre em sua VM e abra o Visualizador de Eventos.
   - Abra o seguinte modo de exibição: *Logs do Windows > aplicativo*.

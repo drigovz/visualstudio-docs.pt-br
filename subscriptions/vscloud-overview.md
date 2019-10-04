@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/28/2019
 ms.topic: conceptual
 description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise mês a mês ou anualmente, sem nenhum contrato de longo prazo.
-ms.openlocfilehash: dea2c32c5737cb5f2798b3d0ebdbd3398e1bc20b
-ms.sourcegitcommit: 5b34052a1c7d86179d7898ed532babb2d9dad4a3
-ms.translationtype: HT
+ms.openlocfilehash: c31a6cb89d34456678c82ce683535005f581376d
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/15/2019
-ms.locfileid: "69490686"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962945"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
 Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Elas são chamadas de **"assinaturas de nuvem"** .
@@ -25,7 +25,7 @@ Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio
 Para que as compras sejam cobradas, você precisa de uma [assinatura do Azure](https://azure.microsoft.com/pricing/purchase-options/). Você pode [inscrever-se](https://portal.azure.com) antes da primeira compra ou durante a primeira compra no Visual Studio Marketplace.
 
 ## <a name="who-can-buy-visual-studio-cloud-subscriptions"></a>Quem pode comprar assinaturas de nuvem do Visual Studio?
-Qualquer pessoa que tenha acesso de [proprietário](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de serviços ou coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-user-as-an-administrator-of-a-subscription) à assinatura do Azure pode comprar assinaturas de nuvem.
+Qualquer pessoa que tenha acesso de [proprietário](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner), [administrador de serviços ou coadministrador](https://docs.microsoft.com/azure/billing/billing-add-change-azure-subscription-administrator#assign-a-subscription-administrator) à assinatura do Azure pode comprar assinaturas de nuvem.
 
 ## <a name="how-to-buy-cloud-subscriptions"></a>Como comprar assinaturas de nuvem
 
