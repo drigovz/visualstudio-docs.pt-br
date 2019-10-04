@@ -5,8 +5,8 @@ ms.date: 10/23/2017
 ms.technology: vs-ide-mobile
 ms.topic: conceptual
 ms.assetid: f76d717c-56ed-4373-8cf9-9bd1a053a4cd
-author: corob
-ms.author: mblome
+author: corob-msft
+ms.author: corob
 manager: jillfra
 f1_keywords:
 - VC.Project.VCConfiguration.OutputDirectory
@@ -15,12 +15,12 @@ f1_keywords:
 - VC.Project.VCConfiguration.ConfigurationType
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: ee398add6b0cca8288d82cd090e1abef07a40d23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: b7fa1b91951e7a3fb145cc26275016037d1b5f2b
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62818967"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950572"
 ---
 # <a name="general-project-properties-android-c-makefile"></a>Propriedades gerais do projeto (Makefile Android C++)
 
@@ -29,4 +29,4 @@ Propriedade | Descrição | Opções
 Diretório de saída | Especifica um caminho relativo para o diretório de arquivo de saída e pode incluir variáveis de ambiente.
 Diretório intermediário | Especifica um caminho relativo para o diretório de arquivo intermediário e pode incluir variáveis de ambiente.
 Arquivo de log de build | Especifica o arquivo de log de build para gravação quando o registro em log de build está habilitado.
-Tipo de configuração | Especifica o tipo de saída gerado por essa configuração. | **Biblioteca Dinâmica (.so)** – Biblioteca Dinâmica (*.so*)<br>**Biblioteca estática (.a)** – Biblioteca estática (*.a*)<br>**Utilitário** – utilitário<br>**Makefile** – makefile<br>
+Tipo de configuração | Especifica o tipo de saída gerado por essa configuração. | **Biblioteca Dinâmica (.so)** – Biblioteca Dinâmica ( *.so*)<br>**Biblioteca estática (.a)** – Biblioteca estática ( *.a*)<br>**Utilitário** – utilitário<br>**Makefile** – makefile<br>

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 08/12/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 06a1c5b637ca2ed9306162ee1960c60d103e5843
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 2178881c6ea0e597aef5e25074e3648162d3f6e9
+ms.sourcegitcommit: 6ae0a289f1654dec63b412bfa22035511a2ef5ad
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185974"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71950647"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose Propriedades de compilação
 
@@ -19,7 +19,7 @@ Além das propriedades que controlam projetos individuais do Docker, descritas e
 
 ## <a name="how-to-set-the-msbuild-properties"></a>Como definir as propriedades do MSBuild
 
-Para definir o valor de uma propriedade, edite o arquivo de projeto. Para propriedades Docker Compose, esse arquivo de projeto é aquele com uma extensão. dcproj, a menos que indicado em contrário na tabela na próxima seção. Por exemplo, suponha que você queira especificar para iniciar o navegador quando iniciar a depuração. Você pode definir a `DockerLaunchAction` Propriedade no arquivo de projeto. dcproj da seguinte maneira.
+Para definir o valor de uma propriedade, edite o arquivo de projeto. Para propriedades Docker Compose, esse arquivo de projeto é aquele com uma extensão. dcproj, a menos que indicado em contrário na tabela na próxima seção. Por exemplo, suponha que você queira especificar para iniciar o navegador quando iniciar a depuração. Você pode definir a propriedade `DockerLaunchAction` no arquivo de projeto. dcproj da seguinte maneira.
 
 ```xml
 <PropertyGroup>
@@ -27,18 +27,18 @@ Para definir o valor de uma propriedade, edite o arquivo de projeto. Para propri
 </PropertyGroup>
 ```
 
-Você pode adicionar a configuração de propriedade a um `PropertyGroup` elemento existente ou, se não houver um, crie um `PropertyGroup` novo elemento.
+Você pode adicionar a configuração de propriedade a um elemento existente `PropertyGroup`, ou se não houver um, crie um novo elemento `PropertyGroup`.
 
 ## <a name="docker-compose-msbuild-properties"></a>Docker Compose Propriedades do MSBuild
 
 A tabela a seguir mostra as propriedades do MSBuild disponíveis para projetos Docker Compose.
 
-| Property name | Local | Descrição | Valor padrão  |
+| Nome da propriedade | Location | Descrição | Valor padrão  |
 |---------------|----------|-------------|----------------|
-|DockerComposeBuildArguments|dcproj|Especifica os parâmetros extras a serem passados para `docker-compose build` o comando. Por exemplo, `--parallel --pull` |
-|DockerComposeDownArguments|dcproj|Especifica os parâmetros extras a serem passados para `docker-compose down` o comando. Por exemplo, `--timeout 500`|-|  
+|DockerComposeBuildArguments|dcproj|Especifica os parâmetros extras a serem passados para o comando `docker-compose build`. Por exemplo, `--parallel --pull` |
+|DockerComposeDownArguments|dcproj|Especifica os parâmetros extras a serem passados para o comando `docker-compose down`. Por exemplo, `--timeout 500`|-|  
 |DockerComposeProjectPath|csproj ou vbproj|O caminho relativo para o arquivo de projeto do Docker-Compose (dcproj). Defina essa propriedade ao publicar o projeto de serviço para localizar as configurações de Build de imagem associadas armazenadas no arquivo Docker-Compose. yml.|-|
-|DockerComposeUpArguments|dcproj|Especifica os parâmetros extras a serem passados para `docker-compose up` o comando. Por exemplo, `--timeout 500`|-|
+|DockerComposeUpArguments|dcproj|Especifica os parâmetros extras a serem passados para o comando `docker-compose up`. Por exemplo, `--timeout 500`|-|
 |DockerLaunchAction| dcproj | Especifica a ação de inicialização a ser executada em F5 ou CTRL + F5.  Os valores permitidos são None, LaunchBrowser e LaunchWCFTestClient|Nenhum|
 |DockerLaunchBrowser| dcproj | Indica se o navegador deve ser iniciado. Ignorado se DockerLaunchAction for especificado. | False |
 |DockerServiceName| dcproj|Se DockerLaunchAction ou DockerLaunchBrowser forem especificados, DockerServiceName será o nome do serviço que deve ser iniciado.  Use essa propriedade para determinar qual dos possíveis projetos que podem ser referenciados por um arquivo Docker-Compose será iniciado.|-|
@@ -46,7 +46,7 @@ A tabela a seguir mostra as propriedades do MSBuild disponíveis para projetos D
 |DockerTargetOS| dcproj | O sistema operacional de destino usado ao criar a imagem do Docker.|-|
 
 > [!NOTE]
-> DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments são novos no Visual Studio 2019 versão 16,3 Preview 3.
+> DockerComposeBuildArguments, DockerComposeDownArguments e DockerComposeUpArguments são novos no Visual Studio 2019 versão 16,3.
 
 ## <a name="docker-compose-file-labels"></a>Docker Compose rótulos de arquivo
 

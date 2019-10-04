@@ -11,12 +11,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f26558a8e8d7e8446e3a992b7555116b5712c364
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
-ms.translationtype: HT
+ms.openlocfilehash: bb88c5b718c0f949825a2542b5a084d4e8ca15b9
+ms.sourcegitcommit: dc12a7cb66124596089f01d3e939027ae562ede9
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68924453"
+ms.lasthandoff: 10/04/2019
+ms.locfileid: "71962957"
 ---
 # <a name="wpf-overview"></a>Visão geral do WPF
 
@@ -428,7 +428,7 @@ Para obter mais informações sobre os tipos de conteúdo compatíveis com vári
 
 ### <a name="triggers"></a>Gatilhos
 
-Embora o objetivo principal da marcação XAML seja implementar a aparência de um aplicativo, você também pode usar XAML para implementar alguns aspectos do comportamento do aplicativo. Um exemplo é o uso de gatilhos para alterar a aparência de um aplicativo com base em interações do usuário. Para obter mais informações, confira [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
+Embora o objetivo principal da marcação XAML seja implementar a aparência de um aplicativo, você também pode usar XAML para implementar alguns aspectos do comportamento do aplicativo. Um exemplo é o uso de gatilhos para alterar a aparência de um aplicativo com base em interações do usuário. Para obter mais informações, consulte [estilos e modelos](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="control-templates"></a>Modelos de controle
 
@@ -545,7 +545,7 @@ Já que esse estilo atinge todos os controles <xref:System.Windows.Controls.Butt
 
 ![Dois botões alaranjados](../designers/media/wpfintrofigure20.png)
 
-Para obter mais informações, confira [Estilo e modelagem](/dotnet/framework/wpf/controls/styling-and-templating).
+Para obter mais informações, consulte [estilos e modelos](/dotnet/desktop-wpf/fundamentals/styles-templates-overview).
 
 ### <a name="resources"></a>Recursos
 
