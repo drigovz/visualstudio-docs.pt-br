@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2689113da88246470032ed658b2472c3845adcd
-ms.sourcegitcommit: 5694c5236fa32ba7f5bc1236a853f725ec7557e9
-ms.translationtype: HT
+ms.openlocfilehash: 3d0b2b0c4cee2a372bccb8ad461ed195fc5519d7
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/31/2019
-ms.locfileid: "68681364"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831860"
 ---
 # <a name="msbuild-task"></a>tarefa MSBuild
 
@@ -33,7 +33,7 @@ Compila projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 
  A tabela a seguir descreve os parâmetros da tarefa `MSBuild`.
 
-| Parâmetro | DESCRIÇÃO |
+| Parâmetro | Descrição |
 |-----------------------------------| - |
 | `BuildInParallel` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, os projetos especificados no parâmetro `Projects` serão criados em paralelo, se possível. O padrão é `false`. |
 | `Projects` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` obrigatório.<br /><br /> Especifica os arquivos de projeto para compilar. |
@@ -47,8 +47,6 @@ Compila projetos [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vst
 | `TargetOutputs` | Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` de saída opcional somente leitura.<br /><br /> Retorna as saídas dos destinos compilados de todos os arquivos de projeto. Somente as saídas de destinos que foram especificados são retornadas, não as saídas que podem existir em destinos dos quais esses destinos dependem.<br /><br /> O parâmetro `TargetOutputs` também contém os metadados a seguir:<br /><br /> -   `MSBuildSourceProjectFile`: O arquivo de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] que contém o destino que defina as saídas.<br />-   `MSBuildSourceTargetName`: O destino que define as saídas. **Observação:**  Para identificar as saídas de cada arquivo de projeto ou destino separadamente, execute a tarefa `MSBuild` separadamente para cada arquivo de projeto ou destino. Se você executar a tarefa `MSBuild` apenas uma vez para compilar todos os arquivos de projeto, as saídas de todos os destinos serão coletadas em uma matriz. |
 | `Targets` | Parâmetro `String` opcional.<br /><br /> Especifica o destino ou destinos para build nos arquivos de projeto. Use uma lista separada por ponto-e-vírgula de nomes de destino. Se nenhum destino for especificado na tarefa `MSBuild`, os destinos padrão especificados nos arquivos de projeto serão compilados. **Observação:**  Os destinos devem ocorrer em todos os arquivos de projeto. Caso contrário, ocorrerá um erro de build. |
 | `ToolsVersion` | Parâmetro `String` opcional.<br /><br /> Especifica o `ToolsVersion` a ser usado ao compilar projetos passados para essa tarefa.<br /><br /> Permite que uma tarefa [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] crie um projeto direcionado a outra versão do .NET Framework do que a especificada no projeto. Os valores válidos são `2.0`, `3.0` e `3.5`. O valor padrão é `3.5`. |
-| `UnloadProjectsOnCompletion` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o projeto será descarregado quando a operação for concluída. |
-| `UseResultsCache` | Parâmetro `Boolean` opcional.<br /><br /> Se `true`, o resultado em cache será retornado, se presente.<br /><br />  Se a tarefa do MSBuild for executada, o resultado será ser armazenado em cache em um escopo <br /><br /> (ProjectFileName, GlobalProperties)[TargetNames]<br /><br /> como uma lista de itens de build |
 
 ## <a name="remarks"></a>Comentários
 
