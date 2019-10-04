@@ -12,12 +12,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 85fe84878dabc1270c60be24b6d6f644b284c045
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 4c3e8313e1357095a9732c9304a695dd3b13b465
+ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253832"
+ms.lasthandoff: 10/03/2019
+ms.locfileid: "71831841"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>Aplicar chaves do produto (Product Keys) durante a implantação do Visual Studio
 
@@ -100,7 +100,7 @@ Se `StorePID.exe` aplicar a chave do produto (Product Key) com êxito, ele retor
 | `PID_ACTION_NOUPGRADE`    | 6    |
 
 > [!NOTE]
-> Quando você executa uma instância virtual do Visual Studio, certifique-se de também virtualizar a pasta AppData local e o registro. Para solucionar problemas de instâncias virtuais, execute *C:\Program Files (x86) \Microsoft Visual\> Studio \ < Version \Common7\IDE\DDConfigCA.exe*.  
+> Quando você executa uma instância virtual do Visual Studio, certifique-se de também virtualizar a pasta AppData local e o registro. Para solucionar problemas de instâncias virtuais, execute `C:\Program Files (x86)\Microsoft Visual Studio\<version>\Common7\IDE\DDConfigCA.exe`.  
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
