@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 517437bb1042d052520019c10899173cbc0bf988
-ms.sourcegitcommit: 44e9b1d9230fcbbd081ee81be9d4be8a485d8502
-ms.translationtype: HT
+ms.openlocfilehash: 5bbca5e46ee83764a6a431ae13829a882b1d859f
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/30/2019
-ms.locfileid: "70180256"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975167"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -58,7 +58,7 @@ Comece criando um novo arquivo e adicionando códigos nele.
 
 ::: moniker-end
 
-2. No menu **Arquivo** na barra de menus, escolha **Novo** > **Arquivo**.
+2. No menu **arquivo** na barra de menus, escolha **novo** **arquivo** >  ou pressione **Ctrl**+**N**.
 
 3. Na caixa de diálogo **Novo Arquivo**, na categoria **Geral**, escolha **Classe do Visual C#** e, então, selecione **Abrir**.
 
@@ -80,7 +80,7 @@ O Visual Studio fornece *snippets de código* úteis que você pode usar para ge
 
    Você verá que a assinatura do método `static void Main()` será adicionada ao arquivo. O método [Main()](/dotnet/csharp/programming-guide/main-and-command-args/) é o ponto de entrada para aplicativos C#.
 
-Os snippets de código disponíveis variam em linguagens de programação diferentes. Examine os snippets de código disponíveis para a linguagem escolhendo **Editar** > **IntelliSense** > **Inserir Snippet** e, em seguida, escolhendo a pasta da linguagem. Para o C#, a lista tem este aspecto:
+Os snippets de código disponíveis variam em linguagens de programação diferentes. Você pode examinar os trechos de código disponíveis para sua linguagem escolhendo **editar** > **IntelliSense** > **inserir trecho** ou pressionar **ctrl**+**K**, **Ctrl**+**X**e, em seguida, escolhendo a pasta de seu idioma. Para o C#, a lista tem este aspecto:
 
 ![Lista de snippet de código de C#](../media/tutorial-code-snippet-list.png)
 

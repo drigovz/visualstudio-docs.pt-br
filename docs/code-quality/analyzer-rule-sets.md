@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da1567dd088ecc060f031e59827ff33024e9e955
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: 313b578743fd734da3354989a8cee16022779242
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71185958"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974704"
 ---
 # <a name="rule-sets-for-analyzer-packages"></a>Conjuntos de regras para pacotes do analisador
 
@@ -36,7 +36,7 @@ Se você estiver migrando da análise "FxCop" herdada para a análise de código
 
 ## <a name="use-analyzer-package-rule-sets"></a>Usar conjuntos de regras de pacote do analisador
 
-Depois de [instalar um pacote do NuGet Analyzer](install-roslyn-analyzers.md), localize o conjunto de regras predefinidas em seu diretório *RuleSets* . Por exemplo, se você referenciou o `Microsoft.CodeAnalysis.FxCopAnalyzers` pacote do analisador, poderá encontrar seu diretório *RuleSets* em *% USERPROFILE%\\. versão\\nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers\< \rulesets\>* . A partir daí, copie um ou mais conjuntos de regras e cole-os no diretório que contém seu projeto do Visual Studio ou diretamente em **Gerenciador de soluções**.
+Depois de [instalar um pacote do NuGet Analyzer](install-roslyn-analyzers.md), localize o conjunto de regras predefinidas em seu diretório *RuleSets* . Por exemplo, se você referenciou o pacote do analisador `Microsoft.CodeAnalysis.FxCopAnalyzers`, poderá encontrar seu diretório *RuleSets* em *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-4 @ no__t-5version @ no__t-6\rulesets*. A partir daí, copie um ou mais conjuntos de regras e cole-os no diretório que contém seu projeto do Visual Studio ou diretamente em **Gerenciador de soluções**.
 
 Você também pode [Personalizar um conjunto de regras predefinidas](how-to-create-a-custom-rule-set.md) para sua preferência. Por exemplo, você pode alterar a severidade de uma ou mais regras para que as violações apareçam como erros ou avisos no **lista de erros**.
 
@@ -46,7 +46,7 @@ O processo de configuração do conjunto de regras ativo é um pouco diferente, 
 
 ### <a name="net-core"></a>.NET Core
 
-Para fazer com que uma regra defina o conjunto de regras ativas para análise no .NET Core ou .NET Standard projetos, adicione manualmente a propriedade **CodeAnalysisRuleSet** ao seu arquivo de projeto. Por exemplo, o trecho de código a `HelloWorld.ruleset` seguir define como o conjunto de regras ativas.
+Para fazer com que uma regra defina o conjunto de regras ativas para análise no .NET Core ou .NET Standard projetos, adicione manualmente a propriedade **CodeAnalysisRuleSet** ao seu arquivo de projeto. Por exemplo, o trecho de código a seguir define `HelloWorld.ruleset` como o conjunto de regras ativo.
 
 ```xml
 <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -57,11 +57,29 @@ Para fazer com que uma regra defina o conjunto de regras ativas para análise no
 
 ### <a name="net-framework"></a>.NET Framework
 
-Para fazer com que uma regra defina o conjunto de regras ativo para análise em projetos .NET Framework, clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e escolha **Propriedades**. Nas páginas de propriedades do projeto, selecione a guia **análise de código** . Em **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto. Agora você só vê violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
+Para fazer com que uma regra defina o conjunto de regras ativas para análise em projetos .NET Framework:
+
+- Clique com o botão direito do mouse no projeto em **Gerenciador de soluções** e escolha **Propriedades**.
+
+- Nas páginas de propriedades do projeto, selecione a guia **análise de código** .
+
+::: moniker range="vs-2017"
+
+- Em **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+- Em **regras ativas**, selecione **procurar**e selecione o conjunto de regras desejado que você copiou para o diretório do projeto.
+
+::: moniker-end
+
+   Agora você só vê violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
 
 ## <a name="available-rule-sets"></a>Conjuntos de regras disponíveis
 
-Os conjuntos de regras de analisador predefinidos incluem três conjuntos de regras que afetam&mdash;todas as regras no pacote um que habilita todos eles, um que desabilita todos eles e um que respeita as configurações padrão de gravidade e habilitação de cada regra:
+Os conjuntos de regras predefinidos do analisador incluem três RuleSets que afetam todas as regras no pacote @ no__t-0one que habilita todos eles, um que desabilita todos eles e um que respeita as configurações de configuração e a gravidade padrão de cada regra:
 
 - AllRulesEnabled.ruleset
 - AllRulesDisabled.ruleset

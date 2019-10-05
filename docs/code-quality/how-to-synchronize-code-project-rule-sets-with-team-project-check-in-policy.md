@@ -1,5 +1,5 @@
 ---
-title: Conjuntos de regras do projeto de sincronização com a política de check-in
+title: Sincronizar conjuntos de regras de projeto com a política de check-in
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,57 +10,65 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80d13afe27eab28c88d2513b6c8be986ab1c960a
-ms.sourcegitcommit: 117ece52507e86c957a5fd4f28d48a0057e1f581
+ms.openlocfilehash: 3a35ba1b9d54507883882fbe62c0533805882560
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/28/2019
-ms.locfileid: "66260847"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975053"
 ---
-# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com uma política de Check-in do projeto de DevOps do Azure
+# <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>Como: Sincronizar conjuntos de regras do projeto de código com uma política de check-in do projeto DevOps do Azure
 
-Você pode sincronizar as configurações de análise de código para projetos de código para a política de check-in para o projeto de DevOps do Azure, especificando um conjunto de regras que contenha pelo menos as regras que são especificadas na regra definida para a política de check-in. O líder de desenvolvimento pode informar o nome e o local da regra definida para a política de check-in. Você pode usar uma das opções a seguir para garantir que a análise de código para o projeto usa o conjunto correto de regras:
+Sincronize as configurações de análise de código para projetos de código para a política de check-in do projeto DevOps do Azure especificando um conjunto de regras que contenha pelo menos as regras especificadas no conjunto de regras para a política de check-in. O líder do desenvolvedor pode informá-lo sobre o nome e o local do conjunto de regras para a política de check-in. Você pode usar uma das seguintes opções para garantir que a análise de código para o projeto Use o conjunto correto de regras:
 
-- Se a política de check-in usa um dos conjuntos de regra interna de Microsoft, abrir a caixa de diálogo Propriedades do projeto de código, exibir a página de análise de código e selecione a regra definida na página de análise de código das configurações de projeto de código. A Microsoft conjuntos de regras padrão são instalados automaticamente com o Visual Studio são definidos como somente leitura e não deve ser editado. Se os conjuntos de regras não são editados, as regras na política e conjuntos de regras locais são garantidas para corresponder.
+- Se a política de check-in usar um dos conjuntos de regras internas da Microsoft, abra a caixa de diálogo Propriedades do projeto de código, exiba a página análise de código e selecione o conjunto de regras. Os conjuntos de regras padrão da Microsoft são instalados automaticamente com o Visual Studio são definidos como somente leitura e não devem ser editados. Se os conjuntos de regras não forem editados, as regras na política e nos conjuntos de regras locais têm a garantia de haver correspondência.
 
-- Se a política de check-in usa um conjunto de regras personalizadas, execute uma operação get no arquivo de conjunto de regras no controle de versão para criar uma cópia local. Em seguida, especifica esse local nas configurações de análise de código para o projeto de código. As regras são garantidas para correspondência se a regra definida para a política de check-in é atualizada.
+- Se a política de check-in usar um conjunto de regras personalizado, execute uma operação get no arquivo de conjunto de regras no controle de versão para criar uma cópia local. Em seguida, especifique o local local nas configurações de análise de código para o projeto de código. As regras têm a garantia de corresponder se o conjunto de regras para a política de check-in for atualizado.
 
-     Se você mapear o local do controle de versão em uma pasta local que está na mesma relação à raiz do projeto de DevOps do Azure como seu projeto de código, o local da regra é definido usando um caminho relativo. O caminho relativo garante que a configuração de projeto de código para análise de código pode ser movida para outros computadores.
+     Se você mapear o local do controle de versão para uma pasta local que esteja na mesma relação com a raiz do projeto DevOps do Azure como seu projeto de código, o local da regra será definido usando um caminho relativo. O caminho relativo garante que a configuração do projeto de código para análise de código possa ser movida para outros computadores.
 
-- Personalize uma cópia da regra definida para a política de check-in para um projeto de código. Certifique-se de que o novo conjunto de regras contém todas as regras na política de check-in e outras regras que você deseja incluir. Certifique-se de que seu conjunto de regras de inclui todas as regras na regra definida para a política de check-in.
+- Personalize uma cópia do conjunto de regras para a política de check-in de um projeto de código. Verifique se o novo conjunto de regras contém todas as regras na política de check-in e quaisquer outras regras que você queira incluir. Você deve verificar se o conjunto de regras inclui todas as regras no conjunto de regras para a política de check-in.
 
-## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar uma regra padrão da Microsoft definido
+## <a name="to-specify-a-microsoft-standard-rule-set"></a>Para especificar um conjunto de regras padrão da Microsoft
 
 1. Na **Gerenciador de soluções**, clique com botão direito no projeto de código e, em seguida, clique em **propriedades**.
 
 2. Clique em **análise de código**.
 
-3. No **executar este conjunto de regras** lista, clique no conjunto de regra de política de check-in.
+::: moniker range="vs-2017"
+
+3. Na lista **executar este conjunto de regras** , selecione o conjunto de regras da política de check-in.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Na lista **regras ativas** , selecione o conjunto de regras de política de check-in.
+
+::: moniker-end
 
 ## <a name="to-specify-a-custom-check-in-policy-rule-set"></a>Para especificar um conjunto de regras de política de check-in personalizado
 
-1. Se necessário, execute uma operação get no arquivo de conjunto de regra que especifica a política de check-in.
+1. Se necessário, execute uma operação get no arquivo de conjunto de regras que especifica a política de check-in.
 
 2. Na **Gerenciador de soluções**, clique com botão direito no projeto de código e, em seguida, clique em **propriedades**.
 
 3. Clique em **análise de código**.
 
-4. No **executar este conjunto de regras** , clique em  **\<procurar... >** .
+::: moniker range="vs-2017"
 
-5. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra de política de check-in.
+4. Na lista **executar este conjunto de regras** , clique em **\<Browse >** .
 
-## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Para criar uma regra personalizada definida para um projeto de código
+::: moniker-end
 
-1. Siga um dos procedimentos neste tópico para selecionar a política de check-in do projeto de DevOps do Azure na página de análise de código da caixa de diálogo de configurações do projeto.
+::: moniker range=">=vs-2019"
 
-2. Clique em **Abrir**.
+4. Na lista **regras ativas** , clique em **\<Browse >** .
 
-3. Adicionar ou remover regras usando o [editor de conjunto de regras](../code-quality/working-in-the-code-analysis-rule-set-editor.md).
+::: moniker-end
 
-4. Salve a regra modificada definido como um arquivo. RuleSet no computador local ou em um caminho UNC.
+5. Na caixa de diálogo **abrir** , especifique o arquivo de conjunto de regras de política de check-in.
 
-5. Abrir a caixa de diálogo Propriedades do projeto de código e exibir o **análise de código** página.
+## <a name="to-create-a-custom-rule-set-for-a-code-project"></a>Para criar um conjunto de regras personalizado para um projeto de código
 
-6. No **executar este conjunto de regras** , clique em  **\<procurar... >** .
-
-7. No **abrir** caixa de diálogo, especifique o arquivo de conjunto de regra.
+Para obter informações sobre como criar um conjunto de regras personalizadas, consulte [Personalizar um conjunto de regras](how-to-create-a-custom-rule-set.md).

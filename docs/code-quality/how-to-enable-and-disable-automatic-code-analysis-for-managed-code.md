@@ -1,37 +1,45 @@
 ---
-title: Habilitar ou desabilitar a análise de código
-ms.date: 10/25/2018
+title: Desabilitar análise de código herdado
+ms.date: 10/04/2019
 ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.workload:
-- dotnet
-ms.openlocfilehash: ec0a8a3f04830115d343fcef611cfbd338163395
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: c00a66a856dccb0ccb488937b935d9150ffc0266
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551041"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975072"
 ---
-# <a name="how-to-enable-and-disable-automatic-code-analysis-for-managed-code"></a>Como: Habilitar e desabilitar a análise automática de código para código gerenciado
+# <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>Como: Habilitar e desabilitar a análise de código binário para código gerenciado
 
-Você pode configurar a análise de código (estático) para ser executada após cada compilação de um projeto de código gerenciado. Você pode definir diferentes propriedades de análise de código para cada configuração de compilação, por exemplo, Debug e Release.
+Você pode configurar a análise de código herdado (análise binária) para ser executada após cada compilação de um projeto de código gerenciado. Você também pode ter configurações diferentes para cada configuração de compilação, por exemplo, Debug e Release.
 
-Este artigo se aplica somente à análise herdada e não à análise de código em tempo real usando [analisadores de código](roslyn-analyzers-overview.md).
+> [!NOTE]
+> A análise herdada não está disponível para tipos de projeto mais novos, como .NET Core e .NET Standard aplicativos. Esses projetos usam [analisadores de código baseados em .net Compiler Platform](roslyn-analyzers-overview.md) para analisar o código, tanto ao vivo quanto ao tempo de compilação. Para obter informações sobre como desabilitar a análise de código-fonte nesses projetos, consulte [como desabilitar a análise de código-fonte](disable-code-analysis.md).
 
-## <a name="to-enable-or-disable-automatic-code-analysis"></a>Para habilitar ou desabilitar a análise automática de código
+Para habilitar ou desabilitar a análise de código herdado:
 
 1. Em **Gerenciador de soluções**, clique com o botão direito do mouse no projeto e escolha **Propriedades**.
 
-1. Na caixa de diálogo Propriedades do projeto, escolha a guia **análise de código** .
+2. Na caixa de diálogo Propriedades do projeto, escolha a guia **análise de código** .
 
-   > [!TIP]
-   > Os tipos de projeto mais recentes, como .NET Core e .NET Standard aplicativos, não têm uma guia de **análise de código** . A análise herdada não está disponível para esses tipos de projeto, mas você pode obter a análise de código ao vivo usando [analisadores de código baseados em .net Compiler Platform](roslyn-analyzers-overview.md). Para suprimir avisos de analisadores de código, consulte a observação no final deste artigo.
+3. Especifique o tipo de compilação na **configuração** e a plataforma de destino na **plataforma**. (Somente projetos padrão Non-.NET Core/. NET.)
 
-1. Especifique o tipo de compilação na **configuração** e a plataforma de destino na **plataforma**.
+::: moniker range="vs-2017"
 
-1. Para habilitar ou desabilitar a análise automática de código, marque ou desmarque a caixa de seleção **Habilitar análise de código na compilação** .
+4. Para habilitar ou desabilitar a análise automática de código, marque ou desmarque a caixa de seleção **Habilitar análise de código na compilação** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+4. Para habilitar ou desabilitar a análise automática de código, marque ou desmarque a caixa de seleção **executar na compilação** na seção **analisadores binários** .
+
+   ![Executar análise de código binário na opção de compilação no Visual Studio](media/run-on-build-binary-analyzers.png)
+
+::: moniker-end
 
 > [!NOTE]
-> A caixa de seleção **Habilitar análise de código na compilação** afeta apenas a análise herdada. Ele não afeta os [analisadores de código baseados em .net Compiler Platform](roslyn-analyzers-overview.md), que sempre são executados no Build se você os instalou como um pacote NuGet. Se você quiser limpar erros do analisador do **lista de erros**, poderá suprimir todas as violações atuais escolhendo **analisar** > **executar análise de código e suprimir problemas ativos** na barra de menus. Para obter mais informações, consulte [suprimir violações](use-roslyn-analyzers.md#suppress-violations).
+> Desabilitar a análise de código binário na compilação não afeta os [analisadores de código baseados em .net Compiler Platform](roslyn-analyzers-overview.md), que sempre são executados no Build se você os instalou como um pacote NuGet. Para obter informações sobre como desabilitar a análise desses analisadores, consulte [como desabilitar a análise de código-fonte](disable-code-analysis.md).
