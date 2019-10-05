@@ -1,6 +1,6 @@
 ---
 title: 'Início Rápido: Análise de código para C/C++'
-description: Executar análise estática no C++ código no Visual Studio para detectar problemas comuns de codificação e defeitos.
+description: Execute a análise estática C++ no código do Visual Studio para detectar problemas comuns de codificação e defeitos.
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,108 +11,108 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 039ffcd1717dba8ec3c76ae1ca4a691d60851ee5
-ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.openlocfilehash: c3132db62de6f2775a739adb82b24c759e4767dc
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/07/2019
-ms.locfileid: "65226085"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71974907"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Início Rápido: Análise de código para C/C++
 
-Você pode melhorar a qualidade do seu aplicativo, executando a análise de código regularmente em código C ou C++. Isso pode ajudá-lo a localizar problemas mais comuns, violações de boa prática de programação ou defeitos que são difíceis de descobrir por meio de testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.
+Você pode melhorar a qualidade do seu aplicativo executando a análise de código regularmente em C C++ ou Code. Isso pode ajudá-lo a encontrar problemas comuns, violações de boa prática de programação ou defeitos que são difíceis de descobrir por meio de testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.
 
 ## <a name="configure-rule-sets-for-a-project"></a>Configurar conjuntos de regras para um projeto
 
-1. Na **Gerenciador de soluções**, abra o menu de atalho para o nome do projeto e, em seguida, escolha **propriedades**.
+1. Em **Gerenciador de soluções**, abra o menu de atalho para o nome do projeto e escolha **Propriedades**.
 
 2. As etapas a seguir são opcionais:
 
-    1. No **Configuration** e **plataforma** listas, escolha a plataforma de destino e a configuração de compilação.
+    1. Nas listas de **configuração** e **plataforma** , escolha a configuração de compilação e a plataforma de destino.
 
     2. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.
 
         > [!NOTE]
-        > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.
+        > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte de um formulário ou de um modelo.
 
-3. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código para C/C++ no Build** caixa de seleção. Você também pode executar a análise de código manualmente abrindo o **Analyze** menu e, em seguida, escolhendo **executar análise de código na** *ProjectName*.
+3. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, marque a caixa de seleção **Habilitar análise de código para CC++ /no Build** . Você também pode executar a análise de código manualmente abrindo o menu **analisar** e, em seguida, escolhendo **executar análise de código no** *ProjectName*.
 
 4. No **executar este conjunto de regras** lista, siga um destes procedimentos:
 
     - Escolha o conjunto de regras que você deseja usar.
 
-    - Escolher  **\<procurar... >** especificar uma regra personalizada existente definida que não está na lista.
+    - Escolha **\<Browse >** para especificar um conjunto de regras personalizadas existente que não esteja na lista.
 
     - Definir um [conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
 
-### <a name="standard-cc-rule-sets"></a>Conjuntos de regras do C/C++ padrão
+### <a name="standard-cc-rule-sets"></a>Conjuntos de regrasC++ /C padrão
 
-O Visual Studio inclui dois conjuntos de regras para código nativo padrão:
+O Visual Studio inclui dois conjuntos padrão de regras para código nativo:
 
 |Conjunto de regras|Descrição|
 |--------------|-----------------|
-|Regras recomendadas mínimas do Microsoft Native|Esse conjunto de regras enfoca os problemas mais críticos do código nativo, inclusive falhas potenciais de segurança e falhas do aplicativo. Você deve incluir este conjunto de regras em qualquer conjunto personalizado que criar para seus projetos nativos.|
-|Regras recomendadas nativo do Microsoft|Esse conjunto de regras abrange uma ampla gama de problemas. Ele inclui todas as regras em Microsoft Native mínimo recomendado regras.|
+|Regras recomendadas mínimas do Microsoft Native|Esse conjunto de regras enfoca os problemas mais críticos em seu código nativo, incluindo falhas potenciais de segurança e falhas do aplicativo. Você deve incluir esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para seus projetos nativos.|
+|Regras nativas recomendadas da Microsoft|Esse conjunto de regras aborda uma ampla gama de problemas. Ele inclui todas as regras nas regras recomendadas do mínimo nativo da Microsoft.|
 
 ## <a name="run-code-analysis"></a>Executar análise de código
 
-Na página de análise de código das páginas de propriedades do projeto, você pode configurar a análise de código para executar cada vez que você compila seu projeto. Você também pode executar a análise de código manualmente.
+Na página análise de código das páginas de propriedades do projeto, você pode configurar a análise de código para ser executada cada vez que criar seu projeto. Você também pode executar a análise de código manualmente.
 
-Para executar análise de código em uma solução:
+Para executar a análise de código em uma solução:
 
 - No menu **Compilar**, escolha **Executar Análise de Código na Solução**.
 
-Para executar análise de código em um projeto:
+Para executar a análise de código em um projeto:
 
-1. No Gerenciador de soluções, escolha o nome do projeto.
+1. Em Gerenciador de Soluções, escolha o nome do projeto.
 
-2. Sobre o **compilar** menu, escolha **executar análise de código na** *nome do projeto*.
+2. No menu **Compilar** , escolha **executar análise de código no** *nome do projeto*.
 
-   A solução ou projeto é compilada e análise de código é executado. Os resultados aparecem na lista de erros.
+   O projeto ou solução é compilado e a análise de código é executada. Os resultados aparecem na Lista de Erros.
 
-## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analisar e resolver avisos da análise de código
+## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analisar e resolver avisos de análise de código
 
-Para analisar um aviso específico, escolha o título do aviso na lista de erros. O aviso se expande para exibir informações adicionais sobre o problema. Quando possível, a análise de código exibe os números de linha e a lógica de análise que levou ao aviso. Para obter informações detalhadas sobre o aviso, incluindo soluções possíveis para o problema, escolha a ID do aviso para exibir o tópico da Ajuda online correspondente.
+Para analisar um aviso específico, escolha o título do aviso no Lista de Erros. O aviso se expande para exibir informações adicionais sobre o problema. Quando possível, a análise de código exibe os números de linha e a lógica de análise que levaram ao aviso. Para obter informações detalhadas sobre o aviso, incluindo possíveis soluções para o problema, escolha a ID de aviso para exibir seu tópico de ajuda online correspondente.
 
 Quando você seleciona um aviso, a linha de código que causou o aviso é realçada no editor de código do Visual Studio.
 
-Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, execute novamente a análise de código para certificar-se de que o aviso não aparece mais na lista de erros e que sua correção não gerou novos avisos.
+Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, execute novamente a análise de código para certificar-se de que o aviso não aparecerá mais na Lista de Erros e que sua correção não gerou nenhum aviso novo.
 
-## <a name="suppress-code-analysis-warnings"></a>Suprimir avisos da análise de código
+## <a name="suppress-code-analysis-warnings"></a>Suprimir avisos de análise de código
 
-Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. Você pode suprimir avisos individuais para que eles não aparecem mais na lista de erros.
+Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. Você pode suprimir avisos individuais para que eles não apareçam mais no Lista de Erros.
 
 Para suprimir um aviso:
 
-1. Se as informações detalhadas não for exibidas, escolha o título do aviso para expandi-lo.
+1. Se as informações detalhadas não forem exibidas, escolha o título do aviso para expandi-la.
 
 2. Escolha o link **Ações** na parte inferior do aviso.
 
-3. Escolher **suprimir mensagem** e, em seguida, escolha **na origem**.
+3. Escolha **suprimir mensagem** e, em seguida, escolha **na fonte**.
 
    Suprimir uma mensagem insere `#pragma warning (disable:[warning ID])` que suprime o aviso para a linha de código.
 
-## <a name="create-work-items-for-code-analysis-warnings"></a>Criar itens de trabalho para o código avisos de análise
+## <a name="create-work-items-for-code-analysis-warnings"></a>Criar itens de trabalho para avisos de análise de código
 
-Você pode usar o recurso de rastreamento de item de trabalho para registrar bugs de dentro do Visual Studio. Para usar esse recurso, você deve se conectar a uma instância do Team Foundation Server.
+Você pode usar o recurso de acompanhamento de item de trabalho para registrar bugs de dentro do Visual Studio. Para usar esse recurso, você deve se conectar a uma instância do Team Foundation Server.
 
-**Para criar um item de trabalho para um ou mais avisos de código C/C++**
+**Para criar um item de trabalho para um ou mais avisosC++ C/Code**
 
-1. Na lista de erros, expanda e selecione os avisos
+1. Na Lista de Erros, expanda e selecione os avisos
 
-2. No menu de atalho para os avisos, escolha **Criar Item de trabalho**e, em seguida, escolha o tipo de item de trabalho.
+2. No menu de atalho para os avisos, escolha **Criar item de trabalho**e, em seguida, escolha o tipo de item de trabalho.
 
-3. Visual Studio cria um único item de trabalho para os avisos selecionados e exibe o item de trabalho em uma janela de documento do IDE.
+3. O Visual Studio cria um único item de trabalho para os avisos selecionados e exibe o item de trabalho em uma janela de documento do IDE.
 
-4. Adicione informações adicionais e, em seguida, escolha **Salvar Item de trabalho**.
+4. Adicione informações adicionais e, em seguida, escolha **salvar item de trabalho**.
 
-## <a name="search-and-filter-code-analysis-results"></a>Pesquisar e filtrar os resultados da análise de código
+## <a name="search-and-filter-code-analysis-results"></a>Pesquisar e filtrar resultados da análise de código
 
 Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.
 
-- **Para filtrar avisos por título ou id do aviso**: Insira a palavra-chave na caixa de pesquisa.
+- **Para filtrar avisos por ID de aviso ou título**: Insira a palavra-chave na caixa de pesquisa.
 
-- **Para filtrar avisos por severidade**: Por padrão, mensagens de análise de código são atribuídas a severidade **aviso**. Você pode atribuir a gravidade de uma ou mais mensagens, como **erro** em uma regra personalizada definida. Sobre o **gravidade** coluna da **lista de erros**, escolha a seta suspensa e, em seguida, o ícone de filtro. Escolher **aviso** ou **erro** para exibir apenas as mensagens que são atribuídas a severidade do respectiva. Escolher **Selecionar tudo** para exibir todas as mensagens.
+- **Para filtrar avisos por severidade**: Por padrão, as mensagens de análise de código recebem uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em um conjunto de regras personalizadas. Na coluna **severidade** da **lista de erros**, escolha a seta suspensa e, em seguida, o ícone de filtro. Escolha **aviso** ou **erro** para exibir apenas as mensagens que recebem a respectiva severidade. Escolha **selecionar tudo** para exibir todas as mensagens.
 
 ## <a name="see-also"></a>Consulte também
 

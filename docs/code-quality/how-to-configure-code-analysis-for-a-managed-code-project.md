@@ -13,21 +13,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a1b09b77eb051d32a3aabb929e9058786215cfb4
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
+ms.openlocfilehash: 86aa308369ef93792126c7f8da5f59f94ef0c02a
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69551056"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975110"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>Como: Configurar análise herdada para código gerenciado
 
 No Visual Studio, você pode escolher em uma lista de conjuntos de [regras](../code-quality/rule-set-reference.md) de análise de código para aplicar a um projeto de código gerenciado. Por padrão, o **Microsoft mínimo recomendado regras** conjunto de regras é selecionado, mas você pode aplicar uma regra diferente, defina se desejado. Conjuntos de regras podem ser aplicados a um ou vários projetos em uma solução.
 
-Para obter informações sobre como configurar um conjunto de regras para aplicativos Web ASP.net, [consulte Como: Configurar a análise de código para um aplicativo](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)Web ASP.net.
-
 > [!NOTE]
-> Este artigo se aplica à análise herdada e não a [analisadores de código baseados em .net Compiler Platform](use-roslyn-analyzers.md), que não executam a análise de código após a compilação.
+> Este artigo se aplica à análise herdada e não a [analisadores de código baseados em .net Compiler Platform](use-roslyn-analyzers.md).
 
 ## <a name="configure-a-rule-set-for-a-net-framework-project"></a>Configurar um conjunto de regras para um projeto .NET Framework
 
@@ -37,20 +35,40 @@ Para obter informações sobre como configurar um conjunto de regras para aplica
 
    - Clique com botão direito no projeto no **Gerenciador de soluções** e selecione **Properties**e, em seguida, selecione o **análise de código** guia.
 
-1. No **Configuration** e **plataforma** listas, selecione a plataforma de destino e a configuração de compilação.
+2. No **Configuration** e **plataforma** listas, selecione a plataforma de destino e a configuração de compilação.
 
-1. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código no Build** caixa de seleção. Você também pode executar a análise de código manualmente selecionando **Analyze** > **executar análise de código** > **executar análise de código em \<projectname >** .
+::: moniker range="vs-2017"
 
-1. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.
+3. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, selecione **Habilitar análise de código na compilação**. Você também pode executar a análise de código manualmente selecionando **Analyze** > **executar análise de código** > **executar análise de código em \<projectname >** .
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+3. Para executar a análise de código toda vez que o projeto é compilado usando a configuração selecionada, selecione **executar na compilação** na seção **analisadores binários** . Você também pode executar a análise de código manualmente selecionando **Analyze** > **executar análise de código** > **executar análise de código em \<projectname >** .
+
+::: moniker-end
+
+4. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.
 
     > [!NOTE]
-    > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo, sem ter que ele é substituído.
+    > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte de um formulário ou modelo e ele não será substituído.
 
-1. No **executar este conjunto de regras** lista, siga um destes procedimentos:
+::: moniker range="vs-2017"
+
+5. No **executar este conjunto de regras** lista, siga um destes procedimentos:
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+5. Na lista **regras ativas** , siga um destes procedimentos:
+
+::: moniker-end
 
     - Selecione o conjunto de regras que você deseja usar.
 
-    - Selecione  **\<procurar... >** localizar o conjunto de uma regra personalizada existente que não está na lista.
+    - Selecione **\<Browse >** para localizar um conjunto de regras personalizadas existente que não esteja na lista.
 
     - Definir um [conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md).
 
@@ -77,4 +95,3 @@ Por padrão, todos os projetos gerenciados de uma solução são atribuídos a *
 ## <a name="see-also"></a>Consulte também
 
 - [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)
-- [Como: Configurar a análise de código para um aplicativo Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md)

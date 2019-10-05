@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d4a9bfca972f9c57688b19bd872b31ee5997f76
-ms.sourcegitcommit: 209ed0fcbb8daa1685e8d6b9a97f3857a4ce1152
-ms.translationtype: HT
+ms.openlocfilehash: af237fbc3ce7bcf098cd47065ed18d1dfd7f20a2
+ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69550769"
+ms.lasthandoff: 10/05/2019
+ms.locfileid: "71975004"
 ---
 # <a name="overview-of-net-compiler-platform-code-analyzers"></a>Visão geral dos analisadores de código do .NET Compiler Platform
 
@@ -36,7 +36,7 @@ Assim como as violações de regras das análises herdadas, as violações de an
 
 ![Linhas onduladas no editor de códigos](media/diagnostics-severity-colors.png)
 
-Os analisadores de código baseados do .NET Compiler Platform analisam código em tempo de build, como a análise herdada, se habilitada, mas também em tempo real, à medida que você digita. Se você habilitar a [análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#to-toggle-full-solution-analysis), os analisadores de código também fornecerão análise em tempo de design dos arquivos de código que não estão abertos no editor.
+Os analisadores de código baseados do .NET Compiler Platform analisam código em tempo de build, como a análise herdada, se habilitada, mas também em tempo real, à medida que você digita. Se você habilitar a [análise de solução completa](../code-quality/how-to-enable-and-disable-full-solution-analysis-for-managed-code.md#toggle-full-solution-analysis), os analisadores de código também fornecerão análise em tempo de design dos arquivos de código que não estão abertos no editor.
 
 > [!TIP]
 > Erros e avisos de tempo de build dos analisadores de código serão mostrados apenas se os analisadores estiverem instalados como um pacote NuGet.
@@ -47,7 +47,7 @@ Os analisadores de código baseados no .NET Compiler Platform não só comunicam
 > As seguintes opções da interface do usuário se aplicam somente à análise herdada:
 >
 > - A opção de menu **Analisar** > **Executar Análise de Código**.
-> - As caixas de seleção **Habilitar análise de código no build** e **Suprimir resultados do código gerado** na guia **Análise de código** das páginas de propriedades de um projeto.
+> - As caixas de seleção **executar em Compilar** e **suprimir resultados de código gerado** na guia **análise de código** das páginas de propriedades de um projeto.
 
 Para diferenciar entre as violações dos analisadores de código e da análise herdada na janela da Lista de Erros, examine a coluna **Ferramenta**. Se o valor da Ferramenta corresponder a um dos assemblies do analisador no **Gerenciador de Soluções** – por exemplo, **Microsoft.CodeQuality.Analyzers** – a violação será proveniente de um analisador de código. Caso contrário, a violação será proveniente da análise herdada.
 
@@ -80,7 +80,7 @@ A captura de tela a seguir mostra a saída de build da linha de comando da cria�
 
 Não é possível definir a gravidade das regras de analisadores que foram instalados como uma extensão do Visual Studio. Para configurar a [gravidade da regra](../code-quality/use-roslyn-analyzers.md#rule-severity), instale os analisadores como um pacote NuGet.
 
-## <a name="categories"></a>Categorias
+## <a name="categories"></a>Categories
 
 Veja a seguir os diferentes tipos de analisador que ajudam a analisar o código:
 
