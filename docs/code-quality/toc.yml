@@ -4,7 +4,8 @@
   items:
     - name: Visão geral
       href: code-analysis-for-managed-code-overview.md
-    - name: Análise de código
+    - name: Análise de código-fonte
+      expanded: true
       items:
         - name: Visão geral
           displayName: 'roslyn analyzers, source analysis'
@@ -13,10 +14,35 @@
           href: install-roslyn-analyzers.md
         - name: Configuração
           href: use-roslyn-analyzers.md
+        - name: Desabilitar análise de código
+          href: disable-code-analysis.md
         - name: Habilitar análise de solução completa
           href: how-to-enable-and-disable-full-solution-analysis-for-managed-code.md
         - name: Perguntas frequentes
           href: analyzers-faq.md
+        - name: Analisadores FxCop
+          items:
+            - name: Visão geral
+              displayName: fxcop analyzers
+              href: fxcop-analyzers.yml
+            - name: Instalação
+              href: install-fxcop-analyzers.md
+            - name: Configuração
+              items:
+                - name: Visão geral
+                  href: configure-fxcop-analyzers.md
+                - name: Opções de escopo
+                  href: fxcop-analyzer-options.md
+                - name: Conjuntos de regras predefinidas
+                  href: analyzer-rule-sets.md
+            - name: Perguntas frequentes
+              href: fxcop-analyzers-faq.md
+        - name: Migrar da análise herdada aos analisadores FxCop
+          items:
+            - name: Visão geral
+              href: fxcop-analyzers.yml
+            - name: Regras portadas
+              href: fxcop-rule-port-status.md
     - name: Análise herdada
       items:
         - name: Visão geral
@@ -112,37 +138,12 @@
               href: how-to-synchronize-code-project-rule-sets-with-team-project-check-in-policy.md
             - name: Compatibilidade de versões
               href: version-compatibility-for-code-analysis-check-in-policies.md
-    - name: Analisadores FxCop
-      items:
-        - name: Visão geral
-          displayName: fxcop analyzers
-          href: fxcop-analyzers.yml
-        - name: Instalação
-          href: install-fxcop-analyzers.md
-        - name: Configuração
-          items:
-            - name: Visão geral
-              href: configure-fxcop-analyzers.md
-            - name: Opções de escopo
-              href: fxcop-analyzer-options.md
-            - name: Conjuntos de regras predefinidas
-              href: analyzer-rule-sets.md
-        - name: Perguntas frequentes
-          href: fxcop-analyzers-faq.md
-    - name: Migrar da análise herdada aos analisadores FxCop
-      items:
-        - name: Visão geral
-          href: fxcop-analyzers.yml
-        - name: Regras portadas
-          href: fxcop-rule-port-status.md
     - name: Conjuntos de regras
       items:
         - name: Visão geral
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Configurar conjuntos de regras
           href: how-to-configure-code-analysis-for-a-managed-code-project.md
-        - name: Configurar análise de código para um aplicativo Web do ASP.NET
-          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Criar um conjunto de regras personalizado
           href: how-to-create-a-custom-rule-set.md
         - name: Usar o editor de conjunto de regras
@@ -558,6 +559,7 @@
             - name: Avisos de segurança
               items:
                 - name: Visão geral
+                  displayName: security warnings
                   href: security-warnings.md
                 - name: 'CA2100: Examinar consultas SQL em busca de vulnerabilidades de segurança'
                   href: ca2100-review-sql-queries-for-security-vulnerabilities.md
