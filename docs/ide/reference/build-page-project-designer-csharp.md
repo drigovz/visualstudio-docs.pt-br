@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 146d98701f144aacf0ff073c3099b2239ebd1872
-ms.sourcegitcommit: 85d66dc9fea3fa49018263064876b15aeb6f9584
-ms.translationtype: HT
+ms.openlocfilehash: 9f121c4a95d719074e3004ee21e0d49d71e4c243
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/24/2019
-ms.locfileid: "68461461"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000215"
 ---
 # <a name="build-page-project-designer-c"></a>Página de Build, Designer de Projeto (C#)
 
@@ -104,17 +104,14 @@ Bloqueia a capacidade do compilador de gerar um ou mais avisos. Separe vários n
 
 As configurações a seguir são usadas para especificar quais avisos são tratados como erros. Selecione uma das opções a seguir para indicar em quais condições um erro é retornado quando o build recebe um aviso. Para obter mais informações, consulte [/warnaserror (opções do compilador C#)](/dotnet/csharp/language-reference/compiler-options/warnaserror-compiler-option).
 
-**Nenhum**
+**None** -não trata avisos como erros.
 
-Não trata nenhum aviso como erro.
+**All** -trata todos os avisos como erros.
 
-**Avisos específicos**
+**Avisos específicos** – trata os avisos especificados como erros. Separe vários números de aviso com uma vírgula ou um ponto-e-vírgula.
 
-Trata os avisos especificados como erros. Separe vários números de aviso com uma vírgula ou um ponto-e-vírgula.
-
-**All**
-
-Trata todos os avisos como erros.
+> [!TIP]
+> Se você não quiser que os avisos de análise de código sejam tratados como erros, consulte [perguntas frequentes sobre análise de código](../../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="output"></a>Saída
 

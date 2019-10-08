@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3dc304d8d6bf844fb9c23f0e92efc5250da91e4d
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 277155bdab713ec12daa380fc2721a31b5d932a2
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975133"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000125"
 ---
 # <a name="frequently-asked-questions-about-fxcop-and-fxcop-analyzers"></a>Perguntas frequentes sobre o FxCop e sobre os analisadores do FxCop
 
@@ -52,6 +52,10 @@ Se você instalou os analisadores do FxCop, mas continuar a obter o aviso CA0507
 ## <a name="which-rules-have-been-ported-to-fxcop-analyzers"></a>Quais regras foram transportadas para analisadores de FxCop?
 
 Para obter informações sobre quais regras de análise herdadas foram transportadas para [analisadores de FxCop](install-fxcop-analyzers.md), consulte [status da porta da regra do FxCop](fxcop-rule-port-status.md).
+
+## <a name="code-analysis-warnings-are-treated-as-errors"></a>Os avisos de análise de código são tratados como erros
+
+Se o seu projeto usar a opção de compilação para tratar avisos como erros, os avisos do FxCop Analyzer poderão aparecer como erros. Para impedir que avisos de análise de código sejam tratados como erros, siga as etapas em [perguntas frequentes sobre análise de código](../code-quality/analyzers-faq.md#treat-warnings-as-errors).
 
 ## <a name="see-also"></a>Consulte também
 

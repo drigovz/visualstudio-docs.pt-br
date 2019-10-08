@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 644c73dea58936773acde98ccc535dfc61979288
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 13da6cd34df3996fe837aee89ce4f379027dd409
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71251699"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72000165"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
@@ -155,7 +155,7 @@ Os valores permitidos para essa propriedade são:
 > [!NOTE]
 > É necessário especificar um estilo de uso de maiúsculas como parte do seu estilo de nomenclatura; caso contrário, o estilo de nomenclatura poderá ser ignorado.
 
-## <a name="severity"></a>Severidade
+## <a name="severity"></a>severity
 
 Para descrever a gravidade de uma violação da sua regra de nomenclatura, especifique uma propriedade no seguinte formato:
 
@@ -163,7 +163,7 @@ Para descrever a gravidade de uma violação da sua regra de nomenclatura, espec
 
 A tabela a seguir mostra os valores de gravidade permitidos e o que eles significam:
 
-Severidade | Efeito
+severity | Efeito
 ------------ | -------------
 nenhum | A regra foi completamente suprimida.
 refatoração ou silencioso | Quando este estilo não estiver sendo seguido, não mostre nada para o usuário; no entanto, o código gerado automaticamente seguirá esse estilo.
@@ -226,7 +226,7 @@ Agora vamos alterar a gravidade da violação para `warning`:
 dotnet_naming_rule.public_members_must_be_capitalized.severity = warning
 ```
 
-Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão embaixo da violação de nome, você verá um rabisco verde e um aviso na **Lista de Erros**:
+Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão sob a violação de nome, verá um rabisco verde e um aviso na Lista de Erros:
 
 ![Aviso de regra de nomenclatura](media/editorconfig-naming-rule-warning.png)
 
