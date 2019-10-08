@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26e48664c40db018df60f2b6d600fab0767a7b72
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 5aec8c26a827a39abdfeacfc0e3d6dea4a62db43
+ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062174"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "71999980"
 ---
 # <a name="code-analysis-faq"></a>Perguntas frequentes sobre análise de código
 
@@ -55,7 +55,32 @@ Além dos conjuntos de regras e arquivos EditorConfig, alguns analisadores são 
 
 **P**: Qual é a diferença entre análise herdada e análise de código baseada em .NET Compiler Platform?
 
-**R**: a análise de código baseada em .net Compiler Platform analisa o código-fonte em tempo real e durante a compilação, enquanto a análise herdada analisa arquivos binários após a conclusão da compilação. Para obter mais informações, consulte [análise baseada em .net Compiler Platform em comparação com](roslyn-analyzers-overview.md#net-compiler-platform-based-analysis-versus-legacy-analysis) as [perguntas frequentes sobre](fxcop-analyzers-faq.md)análise de herança e analisadores de FxCop.
+**R**: a análise de código baseada em .net Compiler Platform analisa o código-fonte em tempo real e durante a compilação, enquanto a análise herdada analisa arquivos binários após a conclusão da compilação. Para obter mais informações, consulte [análise baseada em .net Compiler Platform em comparação com](roslyn-analyzers-overview.md#source-code-analysis-versus-legacy-analysis) as [perguntas frequentes sobre](fxcop-analyzers-faq.md)análise de herança e analisadores de FxCop.
+
+## <a name="treat-warnings-as-errors"></a>Tratar avisos como erros
+
+**P**: Meu projeto usa a opção de compilação para tratar avisos como erros. Depois de migrar da análise herdada para a análise de código-fonte, todos os avisos de análise de código agora aparecem como erros. Como posso evitar isso?
+
+**R**: Para impedir que os avisos de análise de código sejam tratados como erros, siga estas etapas:
+
+  1. Crie um arquivo. props com o seguinte conteúdo:
+
+     ```xml
+     <Project>
+        <PropertyGroup>
+           <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+        </PropertyGroup>
+     </Project>
+     ```
+
+  2. Adicione uma linha a seu arquivo de projeto. csproj ou. vbproj para importar o arquivo. props criado na etapa anterior. Essa linha deve ser colocada antes de qualquer linha que importe os arquivos do FxCop Analyzer. props. Por exemplo, se o arquivo. props for nomeado CodeAnalysis. props:
+
+     ```xml
+     ...
+     <Import Project="..\..\codeanalysis.props" Condition="Exists('..\..\codeanalysis.props')" />
+     <Import Project="..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.FxCopAnalyzers.2.6.5\build\Microsoft.CodeAnalysis.FxCopAnalyzers.props')" />
+     ...
+     ```
 
 ## <a name="see-also"></a>Consulte também
 
