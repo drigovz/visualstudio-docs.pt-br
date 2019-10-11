@@ -2,23 +2,25 @@
 title: Usando conjuntos de regras para especificar as regras do C++ para execução
 ms.date: 04/28/2018
 ms.topic: conceptual
+f1_keywords:
+- vs.codeanalysis.rulesets.native
 author: mikeblome
 ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 061b52a683992bdc2fe5792ab05e00f788434a0f
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
-ms.translationtype: HT
+ms.openlocfilehash: 64421350f74a2fadcb8a4d4845d8aa00a5f5813b
+ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018229"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72163097"
 ---
 # <a name="use-rule-sets-to-specify-the-c-rules-to-run"></a>Usar conjuntos de regras para especificar C++ as regras a serem executadas
 
 No Visual Studio, você pode criar e modificar um *conjunto de regras* personalizadas para atender às necessidades específicas do projeto associadas à análise de código. Os conjuntos de regras padrão são armazenados em `%VSINSTALLDIR%\Team Tools\Static Analysis Tools\Rule Sets`.
 
-**Visual Studio 2017 versão 15,7 e posterior** Você pode criar conjuntos de regras personalizados usando qualquer editor de texto e aplicá-los em compilações de linha de comando, independentemente do sistema de compilação que você está usando. Para obter mais informações, consulte [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
+**Visual Studio 2017 versão 15.7 e posteriores:** Você pode criar conjuntos de regras personalizados usando qualquer editor de texto e aplicá-los em compilações de linha de comando, independentemente do sistema de compilação que você está usando. Para obter mais informações, consulte [/analyze: RuleSet](/cpp/build/reference/analyze-code-analysis).
 
 Para criar um conjunto C++ de regras personalizado no Visual Studio, um CC++ /projeto deve estar aberto no IDE do Visual Studio. Em seguida, abra um conjunto de regras padrão no editor de conjunto de regras e adicione ou remova regras específicas e, opcionalmente, altere a ação que ocorre quando a análise de código determina que uma regra foi violada.
 
@@ -36,7 +38,7 @@ Para criar um novo conjunto de regras personalizadas, salve-o usando um novo nom
 
      \- ou -
 
-   - Escolha **\<Browse >** para especificar um conjunto de regras existente que não esteja na lista.
+   - Escolha **\<Browse... >** especificar um conjunto de regras existente que não esteja na lista.
 
 4. Escolha **abrir** para exibir as regras no editor de conjunto de regras.
 
@@ -50,9 +52,11 @@ Para criar um novo conjunto de regras personalizadas, salve-o usando um novo nom
 
 - Para alterar a ação realizada quando uma regra é violada em uma análise de código, escolha o campo de **ação** para a regra e, em seguida, escolha um dos seguintes valores:
 
-     **Warn** – gera um aviso.
+     **Aviso** -gera um aviso.
 
      **Erro** -gera um erro.
+     
+     **Informações** – gera uma mensagem.
 
      **Nenhum** – desabilita a regra. Essa ação é a mesma que remover a regra do conjunto de regras.
 
