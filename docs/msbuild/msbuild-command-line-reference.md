@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b96d242a8c7af44f47db3ebad5e6af03389a6fc0
-ms.sourcegitcommit: cf8c0fef2b9690595e99ce3802586cdd55fd37c2
-ms.translationtype: HT
+ms.openlocfilehash: 7a23a82afcc484cbbe71bf167ecd0884f399e656
+ms.sourcegitcommit: 3e94d9fb6dc56fa8b23fbacd5d11cf8d6e7e18f1
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/28/2019
-ms.locfileid: "70107359"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72252655"
 ---
 # <a name="msbuild-command-line-reference"></a>Referência de linha de comando do MSBuild
 Ao usar o *MSBuild.exe* para criar um arquivo de solução ou de projeto, inclua várias opções para especificar vários aspectos do processo.
@@ -35,15 +35,15 @@ Cada opção está disponível em dois formulários: -switch e /switch. A docume
 MSBuild.exe [Switches] [ProjectFile]
 ```
 
-## <a name="arguments"></a>Arguments
+## <a name="arguments"></a>Argumentos
 
-|Argumento|DESCRIÇÃO|
+|Argumento|Descrição|
 |--------------|-----------------|
 |`ProjectFile`|Compila os destinos no arquivo de projeto especificado. Se você não especificar um arquivo de projeto, o MSBuild pesquisará uma extensão de nome de arquivo que termina com *proj* no diretório de trabalho atual e usará esse arquivo. Você também pode especificar um arquivo de solução do Visual Studio para esse argumento.|
 
 ## <a name="switches"></a>Opções
 
-|Alternar|Forma abreviada|DESCRIÇÃO|
+|Alternar|Forma abreviada|Descrição|
 |------------|----------------|-----------------|
 |-help|/? ou -h|Exibe informações de uso. O seguinte comando é um exemplo:<br /><br /> `msbuild.exe -?`|
 |-detailedsummary|-ds|Mostra informações detalhadas ao final do log de compilação sobre as configurações que foram criadas e como elas foram agendadas para os nós.|
@@ -64,9 +64,9 @@ MSBuild.exe [Switches] [ProjectFile]
 
 ### <a name="switches-for-loggers"></a>Opções para agentes
 
-|Alternar|Forma abreviada|DESCRIÇÃO|
+|Alternar|Forma abreviada|Descrição|
 |------------|----------------|-----------------|
-|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passa os parâmetros que você especificar para o agente de console, que exibe informações de compilação na janela do console. Você pode especificar os seguintes parâmetros:<br /><br /> -   **PerformanceSummary**. Mostra o tempo gasto em tarefas, destinos e projetos.<br />-   **Summary**. Mostra o resumo de aviso e erro no final.<br />-   **NoSummary**. Não mostra o resumo de aviso e erro no final.<br />-   **ErrorsOnly**. Mostra somente os erros.<br />-   **WarningsOnly**. Mostra somente os avisos.<br />-   **NoItemAndPropertyList**. Não mostra a lista de itens e propriedades que aparecem no início de cada compilação de projeto se o nível de detalhamento é definido como `diagnostic`.<br />-   **ShowCommandLine**. Mostrar `TaskCommandLineEvent` mensagens.<br />-   **ShowTimestamp**. Mostra o carimbo de data/hora como um prefixo em todas as mensagens.<br />-   **ShowEventId**. Mostra a ID de evento para cada evento iniciado e concluído e a mensagem.<br />-   **ForceNoAlign**. Não alinha o texto com o tamanho do buffer de console.<br />-   **DisableConsoleColor**. Usa as cores de console padrão em todas as mensagens de log.<br />-   **DisableMPLogging**. Desabilita o estilo de registro em log do multiprocessador da saída quando executado no modo não multiprocessador.<br />-   **EnableMPLogging**. Habilita o estilo de registro em log do multiprocessador quando executado no modo não multiprocessador. Esse estilo de registro em log fica ativado por padrão.<br />-   **Verbosity**. Substitui a configuração **-verbosity** para esse agente.<br /><br /> Usa um ponto e vírgula ou uma vírgula para separar vários parâmetros, como mostra o exemplo abaixo:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
+|-consoleloggerparameters:<br /><br /> `parameters`|-clp:`parameters`|Passa os parâmetros que você especificar para o agente de console, que exibe informações de compilação na janela do console. Você pode especificar os seguintes parâmetros:<br /><br /> -   **PerformanceSummary**. Mostra o tempo gasto em tarefas, destinos e projetos.<br />-   **Summary**. Mostra o resumo de aviso e erro no final.<br />-   **NoSummary**. Não mostra o resumo de aviso e erro no final.<br />-   **ErrorsOnly**. Mostra somente os erros.<br />-   **WarningsOnly**. Mostra somente os avisos.<br />-   **NoItemAndPropertyList**. Não mostra a lista de itens e propriedades que aparecem no início de cada compilação de projeto se o nível de detalhamento é definido como `diagnostic`.<br />-   **ShowCommandLine**. Mostrar `TaskCommandLineEvent` mensagens.<br />-   **ShowTimestamp**. Mostra o carimbo de data/hora como um prefixo em todas as mensagens.<br />-   **ShowEventId**. Mostra a ID de evento para cada evento iniciado e concluído e a mensagem.<br />-   **ForceNoAlign**. Não alinha o texto com o tamanho do buffer de console.<br />-   **DisableConsoleColor**. Usa as cores de console padrão em todas as mensagens de log.<br />-   **DisableMPLogging**. Desabilita o estilo de registro em log do multiprocessador da saída quando executado no modo não multiprocessador.<br />-   **EnableMPLogging**. Habilita o estilo de registro em log do multiprocessador quando executado no modo não multiprocessador. Esse estilo de registro em log fica ativado por padrão.<br />-   **Verbosity**. Substitui a configuração **-verbosity** para esse agente.<br /><br /> Use um ponto e vírgula para separar vários parâmetros, como mostra o exemplo a seguir:<br /><br /> `-consoleloggerparameters:PerformanceSummary;NoSummary -verbosity:minimal`|
 |-distributedFileLogger|-dfl|A saída da compilação de cada nó do MSBuild para seu próprio arquivo. A localização inicial desses arquivos é o diretório atual. Por padrão, os arquivos são nomeados *MSBuild\<NodeId>.log*. Você pode usar a opção **-fileLoggerParameters** para especificar o local dos arquivos e outros parâmetros do fileLogger.<br /><br /> Se você nomear um arquivo de log usando a opção **-fileLoggerParameters**, o agente distribuído usará esse nome como modelo e acrescentará a ID do nó para esse nome ao criar um arquivo de log para cada nó.|
 |-distributedlogger:<br /><br /> `central logger`*<br /><br /> `forwarding logger`|-dl:`central logger`*`forwarding logger`|Registra eventos do MSBuild, anexando uma instância do agente diferente a cada nó. Para especificar vários agentes, especifique cada um separadamente.<br /><br /> Você pode usar a sintaxe do agente para especificar um agente. Para obter a sintaxe do agente, confira a opção **-logger** abaixo.<br /><br /> Os exemplos abaixo mostram como usar o essa opção:<br /><br /> `-dl:XMLLogger,MyLogger,Version=1.0.2,Culture=neutral`<br /><br /> `-dl:MyLogger,C:\My.dll*ForwardingLogger,C:\Logger.dll`|
 |-fileLogger<br /><br /> *[number]*|-fl[`number`]|Registra a saída da compilação para um único arquivo no diretório atual. Se você não especificar `number`, o arquivo de saída será denominado *msbuild.log*. Se você especificar `number`, o arquivo de saída será nomeado *msbuild\<n>.log*, em que \<n> é `number`. `Number` pode ser um dígito de 1 a 9.<br /><br /> Você pode usar a opção **-fileLoggerParameters** para especificar o local do arquivo e outros parâmetros do fileLogger.|
