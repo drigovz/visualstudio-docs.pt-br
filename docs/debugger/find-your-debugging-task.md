@@ -1,5 +1,5 @@
 ---
-title: Localizar sua tarefa de depuração
+title: Encontre sua tarefa de depuração
 description: Identificar o recurso do depurador que ajudará você a depurar seu aplicativo
 ms.custom: ''
 ms.date: 10/01/2019
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8d971792fb55789fb6dcd7e0d90829ac723ba6
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817520"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018771"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Localizar sua tarefa de depuração no Visual Studio
 
@@ -34,7 +34,10 @@ Tente um ponto de interrupção condicional para controlar onde e quando um pont
 
 ### <a name="pause-code-only-when-a-specific-objects-property-or-value-changes"></a>Pausar o código somente quando a propriedade ou o valor de um objeto específico for alterado
 
-Para C++, defina um [ponto de interrupção de dados](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). Para aplicativos que usam o .NET Core 3, você também pode definir um [ponto de interrupção de dados](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+Para C++, defina um [ponto de interrupção de dados](using-breakpoints.md#BKMK_set_a_data_breakpoint_native_cplusplus). 
+::: moniker range=">= vs-2019"
+Para aplicativos que usam o .NET Core 3, você também pode definir um [ponto de interrupção de dados](using-breakpoints.md#BKMK_set_a_data_breakpoint_managed).
+::: moniker-end
 
 Caso contrário, C# para F# e somente, você pode [rastrear uma ID de objeto com um ponto de interrupção condicional](using-breakpoints.md#using-object-ids-in-breakpoint-conditions-c-and-f).
 

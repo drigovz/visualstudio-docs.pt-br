@@ -2,7 +2,7 @@
 title: Usar parâmetros de linha de comando para instalar o Visual Studio
 titleSuffix: ''
 description: Saiba como usar parâmetros de linha de comando para controlar ou personalizar sua instalação do Visual Studio.
-ms.date: 09/11/2019
+ms.date: 10/07/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1f9e5d1dadd9caf95b8e6cb8e5fec70daf984ac9
-ms.sourcegitcommit: b60a00ac3165364ee0e53f7f6faef8e9fe59ec4a
+ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70913238"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018807"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 
@@ -32,23 +32,30 @@ Ao instalar o Visual Studio por meio de um prompt de comando, é possível usar 
 - Automatizar o processo de instalação.
 - Criar um cache (layout) dos arquivos de instalação para uso posterior.
 
-As opções de linha de comando são usadas em conjunto com o bootstrapper de instalação, que é o arquivo pequeno (1 MB) que inicia o processo de download. O bootstrapper é o primeiro executável iniciado quando você baixa do site do Visual Studio. Use os links a seguir para obter um link direto para o bootstrapper de versão mais recente para a edição do produto que você está instalando:
+As opções de linha de comando são usadas em conjunto com o bootstrapper de instalação, que é o arquivo pequeno (1 MB) que inicia o processo de download. O bootstrapper é o primeiro executável iniciado quando você baixa do site do Visual Studio.
 
 ::: moniker range="vs-2017"
 
-- [Visual Studio 2017 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Visual Studio 2017 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
-- [Comunidade do Visual Studio 2017](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2017)
+Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [**versões anteriores do Visual Studio**](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
+
+Use os links a seguir para obter um link direto para o bootstrapper de versão mais recente para a edição do produto que você está instalando:
 
 - [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 - [Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=link+cta&utm_content=download+commandline+parameters+vs2019+rc)
 
 ::: moniker-end
+
+
+O arquivo bootstrapper deve corresponder ou ser semelhante a um dos seguintes:
+
+* vs_enterprise.exe
+* vs_professional.exe
+* vs_community.exe
 
 ## <a name="command-line-parameters"></a>Parâmetros de linha de comando
 
@@ -112,7 +119,7 @@ Substitua `vs_enterprise.exe` conforme apropriado para a edição do produto que
 | **Opções de instalação avançadas** | **Descrição** |
 | ----------------------- | --------------- |
 | `--channelId <id>` | **Opcional**: A ID do canal para a instância a ser instalada. Isso é necessário para o comando de instalação, ignorado para outros comandos se `--installPath` está especificado. |
-| `--channelUri <uri>` | **Opcional**: O URI do manifesto do canal. Se as atualizações não forem desejadas, `--channelUri` o poderá apontar para um arquivo não existente (por exemplo,--channelUri C:\doesntExist.chman). Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
+| `--channelUri <uri>` | **Opcional**: O URI do manifesto do canal. Se as atualizações não forem desejadas, `--channelUri` poderá apontar para um arquivo não existente (por exemplo,--channelUri C:\doesntExist.chman). Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--installChannelUri <uri>` | **Opcional**: O URI do manifesto do canal a ser usado para a instalação. O URI especificado por `--channelUri` (que deve ser especificado quando `--installChannelUri` for especificado) é usado para detectar atualizações. Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--installCatalogUri <uri>` | **Opcional**: O URI do manifesto do catálogo a ser usado para a instalação. Se especificado, o gerente de canal tenta baixar o manifesto do catálogo desse URI antes de usar o URI no manifesto do canal de instalação. Esse parâmetro é usado para dar suporte a instalação offline, em que o cache de layout será criado com o catálogo de produtos que já foi baixado. Isso pode ser usado para o comando de instalação e é ignorado para outros comandos. |
 | `--productId <id>` | **Opcional** A ID do produto para a instância que será instalada. Isso será populado previamente em condições normais de instalação. |

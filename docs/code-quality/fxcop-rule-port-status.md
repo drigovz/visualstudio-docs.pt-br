@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07a5130edd534008b4343ab439bf20bf63bc3cde
-ms.sourcegitcommit: 2db01751deeee7b2bdb1db25419ea6706e6fcdf8
+ms.openlocfilehash: 04a4738181c579617711150da4eb99e08aeb039c
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/17/2019
-ms.locfileid: "71062410"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018429"
 ---
 # <a name="fxcop-rule-port-status"></a>Status da porta de regra do FxCop
 
@@ -67,10 +67,10 @@ ID da regra | Título
 [CA1063](ca1063-implement-idisposable-correctly.md) | Implementar IDisposable corretamente
 [CA1064](ca1064-exceptions-should-be-public.md) | Exceções devem ser públicas
 [CA1065](ca1065-do-not-raise-exceptions-in-unexpected-locations.md) | Não acionar exceções em locais inesperados
-CA1066 | O {0} tipo deve implementar\<IEquatable T > porque ele substitui Equals
-CA1067 | Substituir Object. Equals (Object) ao implementar\<IEquatable T >
-[CA1068](ca1068.md) | Os parâmetros de CancellationToken devem vir por último
-CA1200 | Evite usar marcas cref com um prefixo
+CA1066 | O tipo {0} deve implementar o IEquatable @ no__t-1T > porque ele substitui Equals
+CA1067 | Substituir Object. Equals (Object) ao implementar IEquatable @ no__t-0T >
+[CA1068](ca1068.md) | Os parâmetros CancellationToken devem vir por último
+CA1200 | Evitar o uso de marcas cref com um prefixo
 [CA1303](ca1303-do-not-pass-literals-as-localized-parameters.md) | Não passar literais como parâmetros localizados
 [CA1304](ca1304-specify-cultureinfo.md) | Especificar CultureInfo
 [CA1305](ca1305-specify-iformatprovider.md) | Especificar IFormatProvider
@@ -149,28 +149,28 @@ CA2010 | Sempre consumir o valor retornado pelos métodos marcados com PreserveS
 [CA2242](ca2242-test-for-nan-correctly.md) | Testar para NaN corretamente
 [CA2243](ca2243-attribute-string-literals-should-parse-correctly.md) | Literais de cadeias de caracteres de atributo devem ser analisados corretamente
 CA2244 | Não duplicar inicializações de elemento indexado
-[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md) | Não usar o desserializador BinaryFormatter não seguro
-[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md) | Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder
-[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md) | Verificar se o BinaryFormatter.Binder está definido antes de chamar BinaryFormatter.Deserialize
-[CA2305](ca2305-do-not-use-insecure-deserializer-losformatter.md) | Não usar o desserializador inseguro LosFormatter
-[CA2310](ca2310-do-not-use-insecure-deserializer-netdatacontractserializer.md) | Não usar o desserializador inseguro NetDataContractSerializer
-[CA2311](ca2311-do-not-deserialize-without-first-setting-netdatacontractserializer-binder.md) | Não desserializar sem definir primeiro NetDataContractSerializer.Binder
-[CA2312](ca2312-ensure-netdatacontractserializer-binder-is-set-before-deserializing.md) | Verificar se NetDataContractSerializer.Binder foi definido antes de desserializar
-[CA2315](ca2315-do-not-use-insecure-deserializer-objectstateformatter.md) | Não usar o desserializador inseguro ObjectStateFormatter
+[CA2300](ca2300.md) | Não usar o desserializador BinaryFormatter não seguro
+[CA2301](ca2301.md) | Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder
+[CA2302](ca2302.md) | Verificar se o BinaryFormatter.Binder está definido antes de chamar BinaryFormatter.Deserialize
+[CA2305](ca2305.md) | Não usar o desserializador inseguro LosFormatter
+[CA2310](ca2310.md) | Não usar o desserializador inseguro NetDataContractSerializer
+[CA2311](ca2311.md) | Não desserializar sem definir primeiro NetDataContractSerializer.Binder
+[CA2312](ca2312.md) | Verificar se NetDataContractSerializer.Binder foi definido antes de desserializar
+[CA2315](ca2315.md) | Não usar o desserializador inseguro ObjectStateFormatter
 [CA2321](ca2321.md) | Não desserializar com JavaScriptSerializer usando um SimpleTypeResolver
 [CA2322](ca2322.md) | Garantir que o JavaScriptSerializer não seja inicializado com SimpleTypeResolver antes de desserializar
-[CA3001](ca3001-review-code-for-sql-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de SQL
-[CA3002](ca3002-review-code-for-xss-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de XSS
-[CA3003](ca3003-review-code-for-file-path-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de caminho
-[CA3004](ca3004-review-code-for-information-disclosure-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de divulgação de informações
-[CA3005](ca3005-review-code-for-ldap-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de LDAP
-[CA3006](ca3006-review-code-for-process-command-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de comando de processo
-[CA3007](ca3007-review-code-for-open-redirect-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de redirecionamento aberto
-[CA3008](ca3008-review-code-for-xpath-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de XPath
-[CA3009](ca3009-review-code-for-xml-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de XML
-[CA3010](ca3010-review-code-for-xaml-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de XAML
-[CA3011](ca3011-review-code-for-dll-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de DLL
-[CA3012](ca3012-review-code-for-regex-injection-vulnerabilities.md) | Examinar código quanto a vulnerabilidades de injeção de regex
+[CA3001](ca3001.md) | Examinar código quanto a vulnerabilidades de injeção de SQL
+[CA3002](ca3002.md) | Examinar código quanto a vulnerabilidades de XSS
+[CA3003](ca3003.md) | Examinar código quanto a vulnerabilidades de injeção de caminho
+[CA3004](ca3004.md) | Examinar código quanto a vulnerabilidades de divulgação de informações
+[CA3005](ca3005.md) | Examinar código quanto a vulnerabilidades de injeção de LDAP
+[CA3006](ca3006.md) | Examinar código quanto a vulnerabilidades de injeção de comando de processo
+[CA3007](ca3007.md) | Examinar código quanto a vulnerabilidades de redirecionamento aberto
+[CA3008](ca3008.md) | Examinar código quanto a vulnerabilidades de injeção de XPath
+[CA3009](ca3009.md) | Examinar código quanto a vulnerabilidades de injeção de XML
+[CA3010](ca3010.md) | Examinar código quanto a vulnerabilidades de injeção de XAML
+[CA3011](ca3011.md) | Examinar código quanto a vulnerabilidades de injeção de DLL
+[CA3012](ca3012.md) | Examinar código quanto a vulnerabilidades de injeção de regex
 CA3061 | Não adicionar esquema por URL
 [CA3075](ca3075-insecure-dtd-processing.md) | Processamento DTD não seguro em XML
 [CA3076](ca3076-insecure-xslt-script-execution.md) | Processamento de script XSLT inseguro.
