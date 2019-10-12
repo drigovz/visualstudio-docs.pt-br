@@ -7,18 +7,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 27d254ac50b8127ab5cef9ba4cf914d14c0cfba5
-ms.sourcegitcommit: 88f576ac32af31613c1a10c1548275e1ce029f4f
+ms.openlocfilehash: c6eb32357998f0867b00a5ef0e9119c3c357ed1b
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/23/2019
-ms.locfileid: "71186391"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172740"
 ---
 # <a name="rule-scope-options-for-fxcop-analyzers"></a>Opções de escopo da regra para analisadores do FxCop
 
 Algumas regras do analisador do FxCop permitem refinar a quais partes de sua base de código elas devem ser aplicadas. Esta página lista as opções de configuração de escopo disponíveis, seus valores permitidos e as regras às quais elas podem ser aplicadas. Para usar essas opções, especifique-as em um [arquivo EditorConfig](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
 Essas opções de configuração estão disponíveis a partir da versão 2.6.3 do pacote NuGet [Microsoft. CodeAnalysis. FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) .
+
+> [!TIP]
+> Para ver a lista completa de opções disponíveis para uma determinada versão do pacote FxCopAnalyzers, examine o arquivo *Configuration.MD do analisador* na pasta de *documentação* do pacote. O arquivo está localizado em *% USERPROFILE% \\. nuget\packages\microsoft.CodeAnalysis.fxcopanalyzers @ no__t-2 @ no__t-3version @ no__t-4\documentation\Analyzer Configuration.MD*. Esse arquivo de documentação de configuração está incluído em cada versão do pacote, a partir da versão 2.6.5. Veja um exemplo de como uma opção é documentada no arquivo *Configuration.MD do analisador* :
+>
+> Nome da opção: `sufficient_IterationCount_for_weak_KDF_algorithm` @ no__t-1
+> Valores de opção: valores integrais \
+> Valor padrão: Específico para cada regra configurável (' 100000 ' por padrão para a maioria das regras) \
+> Exemplo: `dotnet_code_quality.CA5387.sufficient_IterationCount_for_weak_KDF_algorithm = 100000`
 
 ## <a name="api_surface"></a>api_surface
 
@@ -33,19 +41,19 @@ Essas opções de configuração estão disponíveis a partir da versão 2.6.3 d
 | Se os métodos assíncronos que não retornam um valor devem ser ignorados | `true`<br/>`false` | `false` | [CA2007](ca2007-do-not-directly-await-task.md) |
 
 > [!NOTE]
-> Na versão 2.6.3 e anteriores do pacote do analisador, essa opção foi `skip_async_void_methods`nomeada.
+> Na versão 2.6.3 e anteriores do pacote do analisador, essa opção foi denominada `skip_async_void_methods`.
 
 ## <a name="exclude_single_letter_type_parameters"></a>exclude_single_letter_type_parameters
 
 | Descrição | Valores permitidos | Valor padrão | Regras configuráveis |
 | - | - | - | - |
-| Se os [parâmetros de tipo](/dotnet/csharp/programming-guide/generics/generic-type-parameters) de caractere único devem ser excluídos da regra, por `S` exemplo, em`Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
+| Se os [parâmetros de tipo](/dotnet/csharp/programming-guide/generics/generic-type-parameters) de caractere único devem ser excluídos da regra, por exemplo, `S` em `Collection<S>` | `true`<br/>`false` | `false` | [CA1715](ca1715-identifiers-should-have-correct-prefix.md) |
 
 > [!NOTE]
-> Na versão 2.6.3 e anteriores do pacote do analisador, essa opção foi `allow_single_letter_type_parameters`nomeada.
+> Na versão 2.6.3 e anteriores do pacote do analisador, essa opção foi denominada `allow_single_letter_type_parameters`.
 
 ## <a name="output_kind"></a>output_kind
 
 | Descrição | Valores permitidos | Valor padrão | Regras configuráveis |
 | - | - | - | - |
-| Especifica que o código em um projeto que gera esse tipo de assembly deve ser analisado | Um ou mais campos da <xref:Microsoft.CodeAnalysis.OutputKind> enumeração<br/><br/>Separe vários valores com uma vírgula (,) | Todos os tipos de saída | [CA2007](ca2007-do-not-directly-await-task.md) |
+| Especifica que o código em um projeto que gera esse tipo de assembly deve ser analisado | Um ou mais campos da enumeração <xref:Microsoft.CodeAnalysis.OutputKind><br/><br/>Separe vários valores com uma vírgula (,) | Todos os tipos de saída | [CA2007](ca2007-do-not-directly-await-task.md) |

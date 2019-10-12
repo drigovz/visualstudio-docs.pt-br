@@ -7,24 +7,24 @@ helpviewer_keywords:
 ms.assetid: f1429463-136e-41ed-8a75-a8dbf0b4fd89
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc6c7c1dbc5009129e9e793f3b8eea1f7927b2bb
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62540788"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018457"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Referência de verificador das diretrizes principais do C++
 
-Esta seção lista avisos de verificação de diretrizes de principal do C++. Para obter informações sobre análise de código, consulte [/Analyze (análise de código)](/cpp/build/reference/analyze-code-analysis) e [início rápido: Análise de código para C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).
+Esta seção lista avisos de verificação de diretrizes de principal do C++. Para obter informações sobre a análise de código, consulte [/Analyze (análise de código)](/cpp/build/reference/analyze-code-analysis) e [Quick Start: Análise de código para CC++/](../code-quality/quick-start-code-analysis-for-c-cpp.md).
 
 > [!NOTE]
 > Alguns avisos pertencem a mais de um grupo, e nem todos os avisos têm um tópico de referência completa.
 
-## <a name="ownerpointer-group"></a>Grupo OWNER_POINTER
+## <a name="owner_pointer-group"></a>Grupo OWNER_POINTER
 
 [C26402 DONT_HEAP_ALLOCATE_MOVABLE_RESULT](C26402.md) retornar um objeto com escopo em vez de um heap alocado se ele tiver um construtor de movimentação. Ver [diretrizes principais do C++ R.3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
@@ -44,7 +44,7 @@ Esta seção lista avisos de verificação de diretrizes de principal do C++. Pa
 
 [C26431 DONT_TEST_NOTNULL](C26431.md) o tipo da expressão '% expr % s' já está gsl:: Not_Null. Não teste-o para nullness. Ver [diretrizes principais do C++ F.23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
-## <a name="rawpointer-group"></a>RAW_POINTER Group
+## <a name="raw_pointer-group"></a>RAW_POINTER Group
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md) não atribua o resultado de uma alocação ou uma chamada de função com um proprietário\<T > retornam o valor a um ponteiro bruto; use proprietário\<T > em vez disso. Ver [diretrizes principais do C++ I.11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
@@ -65,9 +65,9 @@ Esta seção lista avisos de verificação de diretrizes de principal do C++. Pa
 [C26481 NO_POINTER_ARITHMETIC](C26481.md) não use aritmética de ponteiro. Use o span. Ver [Bounds.1 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md).
-Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Expressão '% expr% ': Nenhuma matriz para o ponteiro decaimento. Ver [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
-## <a name="uniquepointer-group"></a>UNIQUE_POINTER Group
+## <a name="unique_pointer-group"></a>UNIQUE_POINTER Group
 
 [C26410 NO_REF_TO_CONST_UNIQUE_PTR](C26410.md) o parâmetro '% parâmetro %' é uma referência ao `const` ponteiro exclusivo, use const T * ou const T & em vez disso. Ver [diretrizes principais do C++ R.32](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-uniqueptrparam).
 
@@ -77,7 +77,7 @@ Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de 
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md) '% % do símbolo' do parâmetro de ponteiro inteligente é usado somente para acessar o ponteiro independente. Use T * ou T & em vez disso. Ver [diretrizes principais do C++ R.30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
-## <a name="sharedpointer-group"></a>SHARED_POINTER Group
+## <a name="shared_pointer-group"></a>SHARED_POINTER Group
 
 [C26414 RESET_LOCAL_SMART_PTR](C26414.md) mover, copiar, reatribua ou redefina um ponteiro inteligente local '% % do símbolo'. Ver [diretrizes principais do C++ R.5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
@@ -95,21 +95,21 @@ Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de 
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md) inicializador Global acessa um objeto externo '% Símbolo %'. Ver [diretrizes principais do C++ I.22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
-[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Evite sem nome objetos com construção e destruição personalizadas. Consulte [ES.84: Não (tente) declare uma variável local sem nome](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26444 NO_UNNAMED_RAII_OBJECTS](c26444.md) Evite sem nome objetos com construção e destruição personalizadas. Consulte [ES. 84: Não (tente) declarar uma variável local sem nome @ no__t-0.
 
 ## <a name="class-group"></a>Grupo de classe
 
 [C26432 DEFINE_OR_DELETE_SPECIAL_OPS](C26432.md) se você definir ou excluir qualquer operação padrão no tipo '% % do símbolo', definir ou excluir todos eles. Ver [diretrizes principais do C++ 21](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c21-if-you-define-or-delete-any-default-operation-define-or-delete-them-all).
 
-[C26433 OVERRIDE_EXPLICITLY](c26433.md) função '% % do símbolo' deve ser marcada com "override". Consulte [C.128: Funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
+[C26433 OVERRIDE_EXPLICITLY](c26433.md) função '% % do símbolo' deve ser marcada com "override". Consulte [C. 128: As funções virtuais devem especificar exatamente uma das @ no__t-0, Override ou final.
 
 [C26434 DONT_HIDE_METHODS](C26434.md) função '% symbol_1% ' oculta uma função não virtual '% symbol_2% '. Ver [diretrizes principais do C++ C.128](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c128-virtual-functions-should-specify-exactly-one-of-virtual-override-or-final).
 
-[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) a função '% % do símbolo' deve especificar exatamente um dos 'virtual', 'override' ou 'final'. Consulte [C.128: Funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) a função '% % do símbolo' deve especificar exatamente um dos 'virtual', 'override' ou 'final'. Consulte [C. 128: As funções virtuais devem especificar exatamente uma das @ no__t-0, Override ou final.
 
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) o tipo '% % do símbolo' com uma função virtual precisa de qualquer um dos destruidor não virtual protegido ou virtual público. Ver [diretrizes principais do C++ C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) substituindo destruidor não deve usar especificadores 'virtuais' ou 'override' explícita. Consulte [C.128: Funções virtuais devem especificar exatamente um dos virtual, substituição, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
+[C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) substituindo destruidor não deve usar especificadores 'virtuais' ou 'override' explícita. Consulte [C. 128: As funções virtuais devem especificar exatamente uma das @ no__t-0, Override ou final.
 
 ## <a name="type-group"></a>TIPO de grupo
 
@@ -126,7 +126,7 @@ Expressão '% expr %': Sem matriz para ponteiro de decaimento. Ver [Bounds.3 de 
 [C26440 DECLARE_NOEXCEPT](C26440.md) a função '% % do símbolo' pode ser declarada `noexcept`. Ver [diretrizes principais do C++ F.6](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
 
 [C26447 DONT_THROW_IN_NOEXCEPT](c26447.md) a função é declarada **noexcept** , mas chama uma função que pode gerar exceções.
-Consulte [diretrizes principais do C++:  F.6: Se sua função pode lançar, declarar noexcept](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f6-if-your-function-may-not-throw-declare-it-noexcept).
+Consulte as diretrizes principaisC++ do [:  F. 6: Se sua função não puder ser lançada, declare-a noexcept @ no__t-0.
 
 ## <a name="concurrency-group"></a>Grupo de SIMULTANEIDADE
 
@@ -136,7 +136,7 @@ Consulte [diretrizes principais do C++:  F.6: Se sua função pode lançar, decl
 
 [C26460 USE_CONST_REFERENCE_ARGUMENTS](c26460.md) o argumento de referência '% % do argumento' para a função '% % de função' pode ser marcado como `const`. Ver [con.3 de diretrizes de núcleo do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
-[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): O argumento de ponteiro '% % do argumento' para a função '% % de função' pode ser marcado como um ponteiro para `const`. Ver [con.3 de diretrizes de núcleo do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
+[C26461 USE_CONST_POINTER_ARGUMENTS](c26461.md): O argumento de ponteiro '% Argument% ' para a função '% function% ' pode ser marcado como um ponteiro para `const`. Ver [con.3 de diretrizes de núcleo do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rconst-ref).
 
 [C26462 USE_CONST_POINTER_FOR_VARIABLE](c26462.md) o valor apontado por '% variable %' é atribuído somente uma vez, marcá-la como um ponteiro para `const`. Ver [con.4 de diretrizes de núcleo do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
@@ -180,7 +180,7 @@ Consulte [diretrizes principais do C++:  F.6: Se sua função pode lançar, decl
 
 ## <a name="bounds-group"></a>Grupo de limites
 
-[C26446 USE_GSL_AT](c26446.md) preferir usar `gsl::at()` em vez do operador subscrito desmarcado. Consulte [diretrizes principais do C++:  Bounds.4: Não use funções de biblioteca padrão e tipos que não são limites verificados](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) preferir usar `gsl::at()` em vez do operador subscrito desmarcado. Consulte as diretrizes principaisC++ do [:  Limites. 4: Não use funções e tipos de biblioteca padrão que não estejam associados-verificado @ no__t-0.
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md).
 Não use aritmética de ponteiro. Use o span. Consulte [Bounds.1 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
@@ -189,19 +189,19 @@ Não use aritmética de ponteiro. Use o span. Consulte [Bounds.1 de diretrizes p
 
 [C26483 STATIC_INDEX_OUT_OF_RANGE](c26483.md) valor % value % está fora dos limites (0, % acoplado %) da variável '% variable %'. Somente indexe em matrizes que usam expressões de constante que estão dentro dos limites da matriz. Consulte [Bounds.2 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
-[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '%expr%': Sem matriz para ponteiro de decaimento. Consulte [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+[C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md) Expression '%expr%': Nenhuma matriz para o ponteiro decaimento. Consulte [Bounds.3 de diretrizes principais do C++](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 ## <a name="gsl-group"></a>Grupo de GSL
 
 [C26445 NO_SPAN_REF](c26445.md) uma referência ao `gsl::span` ou `std::string_view` pode ser uma indicação de um problema de tempo de vida.
-Consulte [gsl de diretrizes principais do C++: Modos de exibição](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views)
+Consulte as diretrizes principaisC++ do [ GSL. View: Exibições @ no__t-0
 
-[C26446 USE_GSL_AT](c26446.md) preferir usar `gsl::at()` em vez do operador subscrito desmarcado. Consulte [diretrizes principais do C++:  Bounds.4: Não use funções de biblioteca padrão e tipos que não são limites verificados](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
+[C26446 USE_GSL_AT](c26446.md) preferir usar `gsl::at()` em vez do operador subscrito desmarcado. Consulte as diretrizes principaisC++ do [:  Limites. 4: Não use funções e tipos de biblioteca padrão que não estejam associados-verificado @ no__t-0.
 
-[C26448 USE_GSL_FINALLY](c26448.md) considere o uso de `gsl::finally` se destina-se a ação final. Consulte [diretrizes principais do C++:  GSL.util: Utilitários](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-utilities).
+[C26448 USE_GSL_FINALLY](c26448.md) Considere o uso de `gsl::finally` se a ação final for pretendida. Consulte as diretrizes principaisC++ do [:  GSL.util: Utilitários @ no__t-0.
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
- `gsl::span` ou `std::string_view` criado a partir de um temporário será inválido quando o temporário for invalidado. Consulte [diretrizes principais do C++: GSL.view: Modos de exibição](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
+ `gsl::span` ou `std::string_view` criado a partir de um temporário será inválido quando o temporário for invalidado. Consulte as diretrizes principaisC++ do [: GSL. exibição: Exibições @ no__t-0.
 
 ## <a name="deprecated-warnings"></a>Avisos preteridos
 

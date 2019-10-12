@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c50eadf9c26eaca4c5495dfbc55a1b266aecdb90
-ms.sourcegitcommit: 7825d4163e52d724e59f6c0da209af5fbef673f7
+ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
+ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72000006"
+ms.lasthandoff: 10/09/2019
+ms.locfileid: "72172812"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -138,7 +138,7 @@ O Visual Studio fornece uma maneira conveniente de configurar a severidade de um
 
 ![Arquivo de conjunto de regras no Gerenciador de Soluções](media/ruleset-in-solution-explorer.png)
 
-1. Abra o arquivo do [conjunto de regras](analyzer-rule-sets.md) ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse do nó **referências** > **analisadores** ou selecionando **abrir** noPágina de propriedades de análise de código do projeto.
+1. Abra o arquivo do conjunto de regras ativo clicando duas vezes nele em **Gerenciador de soluções**, selecionando **abrir conjunto de regras ativas** no menu do botão direito do mouse do nó **referências** > **analisadores** ou selecionando **abrir** no **código** Página de propriedades de análise do projeto.
 
    Se esta for a primeira vez que você está editando o conjunto de regras, o Visual Studio fará uma cópia do arquivo de conjunto de regras padrão, nomeá-lo *\<projectname >. RuleSet*e o adicionará ao seu projeto. Esse conjunto de regras personalizadas também se torna o conjunto de regras ativo para seu projeto.
 

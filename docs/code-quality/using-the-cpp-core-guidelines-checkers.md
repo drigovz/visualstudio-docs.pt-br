@@ -4,15 +4,15 @@ ms.date: 08/14/2018
 ms.topic: conceptual
 author: mikeblome
 ms.author: mblome
-manager: wpickett
+manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 9be0d47bd9779fea2fa0eae2aedfe428ce2c84b0
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
+ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68923760"
+ms.lasthandoff: 10/07/2019
+ms.locfileid: "72018406"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usar os verificadores de Diretrizes Principais do C++
 
@@ -73,14 +73,14 @@ c:\users\username\documents\visual studio 2015\projects\corecheckexample\coreche
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
 ```
 
-As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o `gsl::suppress` atributo para manter C++ a verificação principal detectando e relatando qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites `[[gsl::suppress(bounds)]]` escrevendo sem incluir um número de regra específico.
+As C++ diretrizes básicas estão lá para ajudá-lo a escrever um código melhor e mais seguro. No entanto, se você tiver uma instância em que uma regra ou um perfil não deve ser aplicado, será fácil suprimir diretamente no código. Você pode usar o atributo `gsl::suppress` para manter C++ a verificação principal de detectar e relatar qualquer violação de uma regra no bloco de código a seguir. Você pode marcar instruções individuais para suprimir regras específicas. Você pode até mesmo suprimir todo o perfil de limites gravando `[[gsl::suppress(bounds)]]` sem incluir um número de regra específico.
 
 ## <a name="supported-rule-sets"></a>Conjuntos de regras com suporte
 À medida que novas regras são adicionadas ao verificador de diretrizes C++ principais, o número de avisos produzidos para código pré-existente pode aumentar. Você pode usar conjuntos de regras predefinidos para filtrar quais tipos de regras habilitar.
 Os tópicos de referência para a maioria das regras estão sob a [referência de verificação principal do Visual C++ Studio](code-analysis-for-cpp-corecheck.md).
 
 A partir do Visual Studio 2017 versão 15,3, os conjuntos de regras com suporte são:
-- **As regras de ponteiro do proprietário** impõem [verificações de gerenciamento\<de recursos relacionadas ao C++ proprietário T > das diretrizes básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
+- **As regras de ponteiro do proprietário** impõem [verificações de gerenciamento de recursos relacionadas ao proprietário @ no__t C++ -2T > das diretrizes básicas](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#r-resource-management).
 
 - **As regras const** impõem [verificações relacionadas a C++ const das principais diretrizes](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con-constants-and-immutability).
 
@@ -95,9 +95,9 @@ A partir do Visual Studio 2017 versão 15,3, os conjuntos de regras com suporte 
 **Visual Studio 2017 versão 15.5**:
 
 - **Regras de classe** Algumas regras que se concentram no uso adequado de funções de membro especiais e especificações virtuais. Esse é um subconjunto de verificações recomendadas para [classes e hierarquias de classe](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-class).
-- **Regras** de simultaneidade Uma única regra, que captura objetos de proteção declarados incorretamente. Para obter mais informações, consulte [diretrizes relacionadas à simultaneidade](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
+- **Regras de simultaneidade** Uma única regra, que captura objetos de proteção declarados incorretamente. Para obter mais informações, consulte [diretrizes relacionadas à simultaneidade](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-concurrency).
 - **Regras de declaração** Algumas regras das [diretrizes de interfaces](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-interfaces) que se concentram em como as variáveis globais são declaradas.
-- **Regras de função** Duas verificações que ajudam na adoção do `noexcept` especificador. Esta é uma parte das diretrizes para o [design e a implementação da função Clear](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
+- **Regras de função** Duas verificações que ajudam na adoção do especificador `noexcept`. Esta é uma parte das diretrizes para o [design e a implementação da função Clear](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-functions).
 - **Regras de ponteiro compartilhado** Como parte da imposição de diretrizes de [Gerenciamento de recursos](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#S-resource) , adicionamos algumas regras específicas para como ponteiros compartilhados são passados para funções ou usados localmente.
 - **Regras de estilo** Uma verificação simples, mas importante, que banimentos o uso de [goto](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Res-goto). Esta é a primeira etapa para melhorar o estilo de codificação e o uso de expressões e C++instruções no.
 
@@ -163,18 +163,18 @@ Em vez de #pragmas, você pode usar opções de linha de comando na página de p
 
 3. Na janela **Opções adicionais** , adicione `/wd26400`.
 
-Você pode usar a opção de linha de comando para desabilitar temporariamente toda a análise de código de um `/analyze-`arquivo, especificando. Isso produz o aviso *D9025 substituindo '/ANALYZE ' por '/ANALYZE-'* , que lembra você para reabilitar a análise de código mais tarde.
+Você pode usar a opção de linha de comando para desabilitar temporariamente toda a análise de código de um arquivo especificando `/analyze-`. Isso produz o aviso *D9025 substituindo '/ANALYZE ' por '/ANALYZE-'* , que lembra você para reabilitar a análise de código mais tarde.
 
 ## <a name="corecheck_per_file"></a>Habilitar o C++ verificador de diretrizes principais em arquivos de projeto específicos
 
 Às vezes, pode ser útil fazer uma análise de código focada e ainda usar o IDE do Visual Studio. O cenário de exemplo a seguir pode ser usado para projetos grandes para economizar tempo de compilação e para facilitar o filtro de resultados:
 
-1. No Shell de comando, defina `esp.extension` as `esp.annotationbuildlevel` variáveis de ambiente e.
+1. No Shell de comando, defina as variáveis de ambiente `esp.extension` e `esp.annotationbuildlevel`.
 2. Para herdar essas variáveis, abra o Visual Studio no Shell de comando.
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilite a análise de código, escolha os conjuntos de regras apropriados, mas não habilite as extensões de análise de código.
 5. Vá para o arquivo que você deseja analisar com o C++ verificador de diretrizes principais e abra suas propriedades.
-6. Escolha **as opçõesC++de linha C/\Command** e adicione`/analyze:plugin EspXEngine.dll`
+6. Escolha **as opçõesC++de linha C/\Command** e adicione `/analyze:plugin EspXEngine.dll`
 7. Desabilite o uso do cabeçalho pré-compilado (**cabeçalhos C/C++\Precompiled**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas do cabeçalho pré-compilado (PCH); Se o PCH for compilado com opções de projeto padrão, ele não será compatível.
 8. Recompile o projeto. As verificações PREfast comuns devem ser executadas em todos os arquivos. Como o C++ verificador de diretrizes principais não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
@@ -195,7 +195,7 @@ O PREfast (verificador de análise de código) nativo é integrado ao ambiente d
 
 Certifique-se de adicionar essas propriedades antes da importação do arquivo Microsoft. cpp. targets. Você pode escolher conjuntos de regras específicos ou criar um conjunto de regras personalizado ou usar o conjunto de regras padrão que inclui outras verificações PREfast.
 
-Você pode executar o C++ verificador principal somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#corecheck_per_file), mas usando arquivos MSBuild. As variáveis de ambiente podem ser definidas usando o `BuildMacro` item:
+Você pode executar o C++ verificador principal somente em arquivos especificados usando a mesma abordagem [descrita anteriormente](#corecheck_per_file), mas usando arquivos MSBuild. As variáveis de ambiente podem ser definidas usando o item `BuildMacro`:
 
 ```xml
 <ItemGroup>
@@ -223,15 +223,15 @@ Se você usar um sistema de compilação que não dependa do MSBuild, ainda pode
 Você precisa definir algumas variáveis de ambiente e usar opções de linha de comando apropriadas para o compilador. É melhor trabalhar no ambiente "prompt de comando de ferramentas nativas" para que você não precise procurar caminhos específicos para o compilador, incluir diretórios, etc.
 
 1. **Variáveis de ambiente**
-   - `set esp.extensions=cppcorecheck.dll`Isso informa o mecanismo para carregar o C++ módulo de diretrizes principais.
-   - `set esp.annotationbuildlevel=ignore`Isso desabilita a lógica que processa anotações SAL. As anotações não afetam a análise de código C++ no verificador de diretrizes principais, mas seu processamento leva tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendável.
-   - `set caexcludepath=%include%`É altamente recomendável que você desabilite os avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
+   - `set esp.extensions=cppcorecheck.dll` diz ao mecanismo para carregar o C++ módulo de diretrizes básicas.
+   - `set esp.annotationbuildlevel=ignore` desabilita a lógica que processa anotações SAL. As anotações não afetam a análise de código C++ no verificador de diretrizes principais, mas seu processamento leva tempo (às vezes, muito tempo). Essa configuração é opcional, mas altamente recomendável.
+   - `set caexcludepath=%include%` é altamente recomendável que você desabilite os avisos que são acionados em cabeçalhos padrão. Você pode adicionar mais caminhos aqui, por exemplo, o caminho para os cabeçalhos comuns em seu projeto.
 2. **Opções de linha de comando**
-   - `/analyze`Habilita a análise de código (Considere também usar/analyze: Only e/analyze: Quiet).
-   - `/analyze:plugin EspXEngine.dll`Essa opção carrega o mecanismo de extensões de análise de código no PREfast. Esse mecanismo, por sua vez, carrega C++ o principal verificador de diretrizes.
+   - `/analyze` habilita a análise de código (Considere também usar/analyze: Only e/analyze: Quiet).
+   - `/analyze:plugin EspXEngine.dll` essa opção carrega o mecanismo de extensões de análise de código no PREfast. Esse mecanismo, por sua vez, carrega C++ o principal verificador de diretrizes.
 
 ## <a name="use-the-guideline-support-library"></a>Usar a biblioteca de suporte de diretrizes
-A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um `T*, length` par de parâmetros `span<T>` pelo tipo. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de código-fonte aberto, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
+A biblioteca de suporte a diretrizes foi projetada para ajudá-lo a seguir as principais diretrizes. O GSL inclui definições que permitem que você substitua construções propensas a erros com alternativas mais seguras. Por exemplo, você pode substituir um par `T*, length` de parâmetros pelo tipo `span<T>`. O GSL está disponível em [http://www.nuget.org/packages/Microsoft.Gsl](http://www.nuget.org/packages/Microsoft.Gsl). A biblioteca é de código-fonte aberto, para que você possa exibir as fontes, fazer comentários ou contribuir. O projeto pode ser encontrado em [https://github.com/Microsoft/GSL](https://github.com/Microsoft/GSL).
 
 ## <a name="vs2015_corecheck"></a>Use as C++ diretrizes de verificação principal nos projetos do Visual Studio 2015
 
