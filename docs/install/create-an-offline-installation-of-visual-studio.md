@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação offline
 description: Saiba como instalar o Visual Studio offline quando você tiver uma conexão com a Internet não confiável ou largura de banda baixa.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 28351407e80c723c0b60640b7e56177c85c2a476
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 3a39f1b89cd8a0e0bbf27742688bcaec3da6f912
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018835"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289630"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -79,7 +79,7 @@ Veja como.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde a um dos seguintes.
+Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
 
 | Edição | Filename |
 |-------------|-----------------------|
@@ -102,6 +102,9 @@ Comece baixando o bootstrapper do Visual Studio para sua edição do Visual Stud
 | Ferramentas de Build do Visual Studio   | [vs_buildtools. exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 ::: moniker-end
+
+>[!TIP]
+>Se você tiver baixado anteriormente um arquivo bootstrapper e quiser verificar sua versão, veja como fazer isso. No Windows, abra o explorador de arquivos, clique com o botão direito do mouse no arquivo bootstrapper, escolha **Propriedades**, escolha a guia **detalhes** e, em seguida, exiba o número de **versão do produto** . Para corresponder esse número a uma versão do Visual Studio, consulte a página [números de compilação e datas de lançamento do Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ### <a name="step-2---create-a-local-install-cache"></a>Etapa 2 – Criar um cache local de instalação
 

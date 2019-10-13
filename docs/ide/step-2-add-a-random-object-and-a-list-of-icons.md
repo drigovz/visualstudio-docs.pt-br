@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31058afee1dc9fc0c9f24c773b9bdc3e5d1fb49a
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 9d335ba9f85688264882a0cb5fd59946c8c2df7b
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118945"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289702"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>Etapa 2: Adicionar um objeto aleatório e uma lista de ícones
 Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Cada símbolo é adicionado a duas células aleatórias no TableLayoutPanel do formulário. Para isso, use duas instruções `new` para criar dois objetos. A primeira é um objeto <xref:System.Random>, como o usado no jogo de enigmas de matemática. Ele é usado nesse código para escolher aleatoriamente células no TableLayoutPanel. O segundo objeto, que pode ser novo para você, é um objeto <xref:System.Collections.Generic.List%601>, que é usado para armazenar os símbolos escolhidos aleatoriamente.
@@ -34,7 +34,10 @@ Nesta etapa, você cria um conjunto de símbolos correspondentes para o jogo. Ca
      [!code-csharp[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/CSharp/step-2-add-a-random-object-and-a-list-of-icons_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#1](../ide/codesnippet/VisualBasic/step-2-add-a-random-object-and-a-list-of-icons_1.vb)]
 
-     Se você estiver usando o Visual C#, certifique-se de colocar o código após a chave da abertura e logo após a declaração de classe (`public partial class Form1 : Form`). Se estiver usando o Visual Basic, coloque o código logo depois da declaração de classe (`Public Class Form1`).
+      > [!IMPORTANT]
+      > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>controle de linguagem ![Programming para docs. Microsoft. com @ no__t-1
+
+      Se você estiver usando C#o, certifique-se de colocar o código após a chave de abertura e logo após a declaração de classe (`public partial class Form1 : Form`). Se estiver usando o Visual Basic, coloque o código logo depois da declaração de classe (`Public Class Form1`).
 
 3. Ao adicionar o objeto de lista, observe a janela do **IntelliSense** que é aberta. Veja a seguir um exemplo do Visual C#, mas texto semelhante aparece quando você adiciona uma lista no Visual Basic.
 

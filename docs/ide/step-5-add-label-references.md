@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a076c4475b9e65d59aec08eac1774728b42cd77c
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 0fdcecbdac0a866bd5c6a15a78d8c0ba2a33051a
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118981"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289671"
 ---
 # <a name="step-5-add-label-references"></a>Etapa 5: Adicionar referências de rótulo
 O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualmente, o programa mostra todos os rótulos escolhidos pelo jogador. Mas isso será alterado. Depois que o primeiro rótulo é escolhido, o programa deve mostrar o ícone do rótulo. Depois que o segundo rótulo é escolhido, o programa deve exibir ambos os ícones por um breve momento e depois ocultá-los novamente. Agora seu programa rastreará qual controle de rótulo será escolhido primeiro e qual será escolhido em segundo usando *variáveis de referência*.
@@ -29,6 +29,9 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
 
      [!code-vb[VbExpressTutorial4Step5#5](../ide/codesnippet/VisualBasic/step-5-add-label-references_1.vb)]
      [!code-csharp[VbExpressTutorial4Step5#5](../ide/codesnippet/CSharp/step-5-add-label-references_1.cs)]
+
+     > [!IMPORTANT]
+     > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>controle de linguagem ![Programming para docs. Microsoft. com @ no__t-1
 
      Essas variáveis de referência parecem semelhantes às instruções que você usou anteriormente para adicionar objetos (como os objetos <xref:System.Windows.Forms.Timer>, <xref:System.Collections.Generic.List%601> e <xref:System.Random>) ao formulário. No entanto, essas instruções não fazem com que os dois controles de rótulo extras apareçam no formulário, pois a palavra-chave `new` não foi usada em nenhuma das duas instruções. Sem a palavra-chave `new`, nenhum objeto é criado. É por isso que `firstClicked` e `secondClicked` são chamadas de variáveis de referência: Elas apenas acompanham (ou se referem a) os objetos de rótulo.
 
@@ -43,7 +46,7 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
 
 4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está rastreando o primeiro rótulo que o jogador escolheu, de modo que `firstClicked` não é igual a `null` no Visual C# ou `Nothing` no Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Desse modo, somente o primeiro ícone que é escolhido torna-se preto e os outros ícones ficam invisíveis, conforme mostrado na imagem a seguir.
 
-     ![Jogo da memória mostrando um ícone](../ide/media/express_tut4step5.png)
+     ![Jogo da memória mostrando um ícone](../ide/media/express_tut4step5.png)<br/>
 **Jogo da memória** mostrando um ícone
 
      Essa situação será corrigida na primeira etapa do tutorial adicionando um controle **Temporizador**.
