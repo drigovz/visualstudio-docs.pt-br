@@ -2,7 +2,7 @@
 title: Usar parâmetros de linha de comando para instalar o Visual Studio
 titleSuffix: ''
 description: Saiba como usar parâmetros de linha de comando para controlar ou personalizar sua instalação do Visual Studio.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 306928b7a28465923ae0a5e2cc7773094458594e
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 0043cabf5a134d5891b66f5dbd2ae77360d206fb
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018807"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289573"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>Usar parâmetros de linha de comando para instalar o Visual Studio
 
@@ -56,6 +56,9 @@ O arquivo bootstrapper deve corresponder ou ser semelhante a um dos seguintes:
 * vs_enterprise.exe
 * vs_professional.exe
 * vs_community.exe
+
+>[!TIP]
+>Se você tiver baixado anteriormente um arquivo bootstrapper e quiser verificar sua versão, veja como fazer isso. No Windows, abra o explorador de arquivos, clique com o botão direito do mouse no arquivo bootstrapper, escolha **Propriedades**, escolha a guia **detalhes** e, em seguida, exiba o número de **versão do produto** . Para corresponder esse número a uma versão do Visual Studio, consulte a página [números de compilação e datas de lançamento do Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="command-line-parameters"></a>Parâmetros de linha de comando
 

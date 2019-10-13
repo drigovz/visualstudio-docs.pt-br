@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação baseada em rede
 description: Saiba como criar um ponto de instalação de rede para implantar o Visual Studio em uma empresa.
-ms.date: 10/07/2019
+ms.date: 10/11/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b297e99c3fbaaabed178930dfad1ac13d5ab1cd8
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 521b29f87db6379a011a0b46dfd1405b374ab9ba
+ms.sourcegitcommit: a5a54b147e772dc39e519da74ec41a0c25d99628
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018884"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72289646"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -39,7 +39,7 @@ Baixe um arquivo bootstrapper para a edição do Visual Studio que você deseja.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde a um dos seguintes.
+Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
 
 | Edição | Filename |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Outros bootstrapper com suporte incluem **vs_feedbackclient. exe**, **vs_teamexp
 
 ::: moniker range="vs-2019"
 
-O executável de instalação &mdash; ou para ser mais específico, um arquivo bootstrapper &mdash; deverá corresponder a um dos listados a seguir.
+Seu executável de instalação @ no__t-0or para ser mais específico, um arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
 
 |Edição | Download|
 |-------------|-----------------------|
@@ -64,6 +64,9 @@ O executável de instalação &mdash; ou para ser mais específico, um arquivo b
 Outros bootstrapper com suporte incluem [vs_teamexplorer. exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent. exe](https://aka.ms/vs/16/release/vs_testagent.exe)e [vs_testcontroller. exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
 
 ::: moniker-end
+
+>[!TIP]
+>Se você tiver baixado anteriormente um arquivo bootstrapper e quiser verificar sua versão, veja como fazer isso. No Windows, abra o explorador de arquivos, clique com o botão direito do mouse no arquivo bootstrapper, escolha **Propriedades**, escolha a guia **detalhes** e, em seguida, exiba o número de **versão do produto** . Para corresponder esse número a uma versão do Visual Studio, consulte a página [números de compilação e datas de lançamento do Visual Studio](visual-studio-build-numbers-and-release-dates.md) .
 
 ## <a name="create-an-offline-installation-folder"></a>Criar uma pasta de instalação offline
 
