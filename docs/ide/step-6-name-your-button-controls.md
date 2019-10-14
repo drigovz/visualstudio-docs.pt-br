@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ce9f55dd54dbe85f64226c1ca7f0b4f75b1cdfc
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118698"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306218"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -33,7 +33,7 @@ Há quatro botões no formulário e o IDE os nomeou **button1**, **button2**, **
 
 1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, pressione a tecla **Esc** para cancelar a seleção). Role pela janela **Propriedades**, até ver a propriedade **(Name)** . (A propriedade **(Name)** fica próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **botãoFechar**, conforme mostrado na captura de tela a seguir.
 
-    ![A janela Propriedades com nome de closeButton](../ide/media/express_setnameproperty.png)<br>***Propriedades*** do *janela com* ***botãoFechar*** *nome* do
+    ![A janela Propriedades com nome de closeButton](../ide/media/express_setnameproperty.png)<br>*Janela de propriedades com nome de* ***botãoFechar***
 
     > [!NOTE]
     > Tente alterar o nome do botão para **fechar o botão**, com um espaço entre as palavras "fechar" e "botão". Quando você fizer isso, o IDE exibirá uma mensagem de erro: "O valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.
@@ -65,17 +65,16 @@ Guia ***Form1.cs*** *com C# código*
     End Sub
     ```
 
-   > [!IMPORTANT]
-   > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
 
-   Você está olhando para o código `showButton_Click()` chamado (Alternativamente `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
+   Você está vendo o código chamado `showButton_Click()` (como alternativa, `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
 
 1. Escolha a guia **Designer de formulários do Windows** novamente (**Form1.cs [Design]** ) e, em seguida, abra o arquivo de código para o botão **limpar imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.
 
 1. Para adicionar mais um método, abra o arquivo de código para o controle **CheckBox** no **Designer de Formulários do Windows** para fazer o IDE adicionar um método `checkBox1_CheckedChanged()`. Esse método é chamado sempre que o usuário seleciona ou desmarca a caixa de seleção.
 
    > [!TIP]
-   > Ao trabalhar em um aplicativo, você geralmente se move entre o editor de código e **Designer de formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir o **Designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **View** > **Designer**.
+   > Ao trabalhar em um aplicativo, você geralmente se move entre o editor de código e **Designer de formulários do Windows**. O IDE torna fácil a navegação no projeto. Use **Gerenciador de soluções** para abrir **o designer de formulários do Windows** clicando duas vezes em *Form1.cs* no C# ou *Form1. vb* no Visual Basic, ou na barra de menus, escolha **Exibir** > **Designer**.
 
     A seguir temos o novo código que você vê no editor de códigos.
 
@@ -94,17 +93,17 @@ Guia ***Form1.cs*** *com C# código*
 
     Os nomes são importantes quando você cria programas e métodos (incluindo manipuladores de eventos) podem ter qualquer nome que você desejar. Quando você adiciona um manipulador de eventos com o IDE, cria um nome com base no nome do controle e do evento que está sendo tratado.
 
-    Por exemplo, o evento Click de um botão chamado de o **Button** é chamado `showButton_Click()` de método de manipulador `ShowButton_Click()`de eventos (como alternativa). Além disso, os parênteses de abertura e fechamento `()` são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos.
+    Por exemplo, o evento de clique para um botão chamado " **DefaultButton** " é chamado de método de manipulador de eventos `showButton_Click()` (Alternativamente, `ShowButton_Click()`). Além disso, os parênteses de abertura e fechamento `()` são adicionados geralmente após o nome do método para indicar que os métodos estão sendo discutidos.
 
     Se você decidir que deseja alterar um nome de variável de código, clique com o botão direito do mouse na variável no código e então escolha **Refatorar** > **Renomear**. Todas as instâncias desta variável no código são renomeadas. Para obter mais informações, consulte [renomear refatoração](../ide/reference/rename.md).
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, **consulte [Step 7: Adicione componentes de caixa de diálogo](../ide/step-7-add-dialog-components-to-your-form.md)ao formulário.**
+* Para ir para a próxima etapa do tutorial, consulte ** @ no__t-1Step 7: Adicione componentes de caixa de diálogo ao formulário @ no__t-0 @ no__t-1.
 
 * Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 
 ## <a name="see-also"></a>Consulte também
 
-* [Tutorial 2: Criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutorial 3: Criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: Criar um teste de matemática cronometrado @ no__t-0
+* [Tutorial 3: Criar um jogo correspondente @ no__t-0

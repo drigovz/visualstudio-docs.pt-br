@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e30894ec98dd1db4de0b724082467a681a0fa696
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 9cb4ac65442d9dbcb384ee3765f6fa827e3fa5d8
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62970676"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306153"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006: Substituir Equals() por tipos de valor
 
@@ -27,7 +27,7 @@ ms.locfileid: "62970676"
 |ID de regra|DA0006|
 |Categoria|Uso do .NET Framework|
 |Métodos de Criação de Perfil|Amostragem|
-|Mensagem|Substituir Equals e operador de igualdade em tipos de valor.|
+|Message|Substituir Equals e operador de igualdade em tipos de valor.|
 |Tipo de mensagens|Aviso|
 
 ## <a name="cause"></a>Causa
@@ -39,4 +39,4 @@ ms.locfileid: "62970676"
  Para obter mais informações sobre como substituir Equals e os operadores de igualdade, consulte [Diretrizes para Implementação de Equals e o Operador de Igualdade (= =)](http://go.microsoft.com/fwlink/?LinkId=177818).
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
- Para obter um exemplo de implementação de Equals e operadores de igualdade, confira a regra de análise de código [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)
+ Para obter um exemplo de implementação de Equals e operadores de igualdade, confira a regra de análise de código [CA1815: Substituir equals e operador equals em tipos de valor](../code-quality/ca1815.md)

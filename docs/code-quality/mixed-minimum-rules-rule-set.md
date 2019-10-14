@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a83a9619084feb3346f5fe421530227a2cca7f9
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: ed996aa19f9fda1310dccc117f8abfb6efa29e1f
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585299"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305537"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Conjunto de regras mínimas misto
 
@@ -21,7 +21,7 @@ As regras mínimas mistas da Microsoft concentram-se C++ nos problemas mais crí
 
 Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você C++ criar para seus projetos que dão suporte ao Common Language Runtime.
 
-|Regra|Descrição|
+|Regra|{1&gt;Descrição&lt;1}|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Uso de memória não inicializada|
 |[C6011](../code-quality/c6011.md)|Desreferenciando ponteiro nulo|
@@ -86,13 +86,13 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28182](../code-quality/c28182.md)|Desreferenciando ponteiro nulo. O ponteiro contém o mesmo valor NULO que outro ponteiro tinha.|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Êxito\_ ou \_emcaso\_de falha\_ usada em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 ou \_On @ no__t-3failure @ no__t-4 usado em um contexto inválido|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|A \_\_anotação usar\_as anotações de decl deve ser usada para fazer referência, sem modificação, de uma declaração anterior.\_|
+|[C28213](../code-quality/c28213.md)|A anotação \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve ser usada para fazer referência, sem modificação, uma declaração anterior.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -134,7 +134,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_o\_valor\_ da macro é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro @ no__t-1value @ no__t-2 é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
@@ -154,6 +154,6 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28350](../code-quality/c28350.md)|A anotação descreve uma situação que não é aplicável condicionalmente.|
 |[C28351](../code-quality/c28351.md)|A anotação descreve onde um valor dinâmico (uma variável) não pode ser usado na condição.|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
+|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
 |[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
 |[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|

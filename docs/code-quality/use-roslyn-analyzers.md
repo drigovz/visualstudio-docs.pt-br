@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c7d0aa4da7e672db06675c65e008d1f71f8bc7
-ms.sourcegitcommit: b23d73c86ec7720c4cd9a58050860bc559623a3d
+ms.openlocfilehash: 81c1c200ba9ab0a50381192b34bad5e9b221fb29
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72172812"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305674"
 ---
 # <a name="use-code-analyzers"></a>Usar analisadores de código
 
@@ -93,7 +93,7 @@ Definir a severidade de uma regra em um arquivo EditorConfig tem precedência so
 
 1. Se você ainda não tiver um arquivo EditorConfig para seu projeto, [adicione um](../ide/create-portable-custom-editor-options.md#add-an-editorconfig-file-to-a-project).
 
-2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](ca1822-mark-members-as-static.md) como `error` para C# arquivos, a entrada tem a seguinte aparência:
+2. Adicione uma entrada para cada regra que você deseja configurar na extensão de arquivo correspondente. Por exemplo, para definir a severidade de [CA1822](ca1822.md) como `error` para C# arquivos, a entrada tem a seguinte aparência:
 
    ```ini
    [*.cs]

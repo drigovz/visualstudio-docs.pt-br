@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 5cb5631da1bcf455874d459a69216b45062a5754
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c53fe96163a3913c024eefeb5deb8a47df691e1f
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236215"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72306138"
 ---
 # <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir acessadores para argumentos de atributo
 
@@ -69,7 +69,7 @@ O exemplo a seguir mostra como aplicar o atributo personalizado a duas proprieda
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1813: Evitar atributos sem lacre](../code-quality/ca1813-avoid-unsealed-attributes.md)
+[CA1813: Evitar atributos não lacrados @ no__t-0
 
 ## <a name="see-also"></a>Consulte também
 [Atributos](/dotnet/standard/design-guidelines/attributes)
