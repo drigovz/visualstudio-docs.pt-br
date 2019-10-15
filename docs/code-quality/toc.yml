@@ -493,37 +493,43 @@
                   displayName: performance warnings
                   href: performance-warnings.md
                 - name: 'CA1800: Não converta sem necessidade'
-                  href: ca1800-do-not-cast-unnecessarily.md
+                  href: ca1800.md
+                - name: 'CA1801: Examinar parâmetros não utilizados'
+                  href: ca1801.md
                 - name: 'CA1802: Usar literais quando apropriado'
-                  href: ca1802-use-literals-where-appropriate.md
+                  href: ca1802.md
                 - name: 'CA1804: Remover locais não utilizados'
-                  href: ca1804-remove-unused-locals.md
+                  href: ca1804.md
+                - name: 'CA1806: Não ignorar resultados do método'
+                  href: ca1806.md
                 - name: 'CA1809: Evitar locais excessivos'
-                  href: ca1809-avoid-excessive-locals.md
+                  href: ca1809.md
                 - name: 'CA1810: Inicializar campos estáticos de tipo de referência em linha'
-                  href: ca1810-initialize-reference-type-static-fields-inline.md
+                  href: ca1810.md
                 - name: 'CA1811: Evitar código particular não chamado'
-                  href: ca1811-avoid-uncalled-private-code.md
+                  href: ca1811.md
                 - name: 'CA1812: Evitar classes internas sem instâncias'
-                  href: ca1812-avoid-uninstantiated-internal-classes.md
+                  href: ca1812.md
                 - name: 'CA1813: Evitar atributos não selados'
-                  href: ca1813-avoid-unsealed-attributes.md
+                  href: ca1813.md
                 - name: 'CA1814: Preferir matrizes denteadas a matrizes multidimensionais'
-                  href: ca1814-prefer-jagged-arrays-over-multidimensional.md
+                  href: ca1814.md
                 - name: 'CA1815: Substituir equals e o operador equals em tipos de valor'
-                  href: ca1815-override-equals-and-operator-equals-on-value-types.md
+                  href: ca1815.md
+                - name: 'CA1816: Chamar GC.SuppressFinalize corretamente'
+                  href: ca1816.md
                 - name: 'CA1819: Propriedades não devem retornar matrizes'
-                  href: ca1819-properties-should-not-return-arrays.md
+                  href: ca1819.md
                 - name: 'CA1820: Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres'
-                  href: ca1820-test-for-empty-strings-using-string-length.md
+                  href: ca1820.md
                 - name: 'CA1821: Remover finalizadores vazios'
-                  href: ca1821-remove-empty-finalizers.md
+                  href: ca1821.md
                 - name: 'CA1822: Marcar membros como estáticos'
-                  href: ca1822-mark-members-as-static.md
+                  href: ca1822.md
                 - name: 'CA1823: Evitar campos particulares não utilizados'
-                  href: ca1823-avoid-unused-private-fields.md
+                  href: ca1823.md
                 - name: 'CA1824: Marque assemblies com NeutralResourcesLanguageAttribute'
-                  href: ca1824-mark-assemblies-with-neutralresourceslanguageattribute.md
+                  href: ca1824.md
                 - name: 'CA1825: Evitar alocações de matriz de comprimento zero'
                   href: ca1825.md
             - name: Avisos de portabilidade
@@ -751,11 +757,11 @@
                   displayName: usage warnings
                   href: usage-warnings.md
                 - name: 'CA1801: Examinar parâmetros não utilizados'
-                  href: ca1801-review-unused-parameters.md
+                  href: ca1801.md
                 - name: 'CA1806: Não ignorar resultados do método'
-                  href: ca1806-do-not-ignore-method-results.md
+                  href: ca1806.md
                 - name: 'CA1816: Chamar GC.SuppressFinalize corretamente'
-                  href: ca1816-call-gc-suppressfinalize-correctly.md
+                  href: ca1816.md
                 - name: 'CA2200: Relançar para preservar detalhes da pilha'
                   href: ca2200-rethrow-to-preserve-stack-details.md
                 - name: 'CA2201: Não acionar tipos de exceção reservados'
