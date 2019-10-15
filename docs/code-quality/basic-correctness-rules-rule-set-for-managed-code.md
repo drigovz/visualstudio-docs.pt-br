@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a76d1c5d2268c0119fc6822167537b500371cdb5
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 6f895506d27c98daf9d69be1a2ea4db5fbe158b7
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585006"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305468"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção básico para código gerenciado
 
@@ -21,7 +21,7 @@ O conjunto de regras básicas de regras de correção se concentra em erros lóg
 
 A tabela a seguir descreve todas as regras do conjunto de regras de regras de correção básica da Microsoft.
 
-|Regra|Descrição|
+|Regra|{1&gt;Descrição&lt;1}|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar manipuladores de eventos corretamente|
@@ -40,7 +40,7 @@ A tabela a seguir descreve todas as regras do conjunto de regras de regras de co
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Tipos base de tipo visível no COM devem ser visíveis no COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Métodos de registro COM devem ser correspondidos|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar P/Invokes corretamente|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
+|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campos de tipo de valor devem ser portáteis|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Declarações P/Invoke devem ser portáteis|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Não bloquear objetos com identidade fraca|
@@ -89,10 +89,10 @@ A tabela a seguir descreve todas as regras do conjunto de regras de regras de co
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Sobrecarregar o operador equals na sobrecarga de adição e subtração|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Não passar literais como parâmetros localizados|
 |[CA1308](../code-quality/ca1308-normalize-strings-to-uppercase.md)|Normalizar cadeias de caracteres em maiúsculas|
-|[CA1806](../code-quality/ca1806-do-not-ignore-method-results.md)|Não ignorar resultados do método|
-|[CA1816](../code-quality/ca1816-call-gc-suppressfinalize-correctly.md)|Chamar GC.SuppressFinalize corretamente|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Propriedades não devem retornar matrizes|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres|
+|[CA1806](../code-quality/ca1806.md)|Não ignorar resultados do método|
+|[CA1816](../code-quality/ca1816.md)|Chamar GC.SuppressFinalize corretamente|
+|[CA1819](../code-quality/ca1819.md)|Propriedades não devem retornar matrizes|
+|[CA1820](../code-quality/ca1820.md)|Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres|
 |[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usar apenas a API da estrutura de destino|
 |[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Remover as chamadas a GC.KeepAlive|
 |[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Usar SafeHandle para encapsular recursos nativos|

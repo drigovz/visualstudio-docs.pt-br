@@ -7,20 +7,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4401417aba2055e7b2189db6bf33503668c2a658
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585323"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305600"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de regras recomendadas misto
 
-As regras recomendadas mistas da Microsoft concentram-se nos problemas mais C++ comuns e críticos em seus projetos que dão suporte ao Common Language Runtime, incluindo possíveis falhas de segurança, falhas do aplicativo e outros erros importantes de lógica e design. Esse conjunto de regras inclui todas as regras no conjunto de regras de [regras](mixed-minimum-rules-rule-set.md) de mínimos mistos.
+As regras recomendadas mistas da Microsoft concentram-se nos problemas mais C++ comuns e críticos em seus projetos que dão suporte ao Common Language Runtime, incluindo possíveis falhas de segurança, falhas do aplicativo e outros erros importantes de lógica e design. Esse conjunto de regras inclui todas as regras no conjunto de regras de [regras de mínimos mistos](mixed-minimum-rules-rule-set.md) .
 
 Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você C++ criar para seus projetos que dão suporte ao Common Language Runtime.
 
-|Regra|Descrição|
+|Regra|{1&gt;Descrição&lt;1}|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Uso de memória não inicializada|
 |[C6011](../code-quality/c6011.md)|Desreferenciando ponteiro nulo|
@@ -151,7 +151,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28020](../code-quality/c28020.md)|A expressão não é verdadeira nesta chamada|
 |[C28021](../code-quality/c28021.md)|O parâmetro que está sendo anotado deve ser um ponteiro|
 |[C28022](../code-quality/c28022.md)|As classes de função nessa função não correspondem às classes de função no typedef usado para defini-la.|
-|[C28023](../code-quality/c28023.md)|A função que está sendo atribuída ou passada deve \_ter\_uma\_ anotação de classe de função para pelo menos uma das classes|
+|[C28023](../code-quality/c28023.md)|A função que está sendo atribuída ou passada deve ter uma anotação \_Function @ no__t-1class @ no__t-2 para pelo menos uma das classes|
 |[C28024](../code-quality/c28024.md)|O ponteiro de função que está sendo atribuído é anotado com a classe de função, que não está contida na lista de classe (s) de função.|
 |[C28039](../code-quality/c28039.md)|O tipo de parâmetro real deve corresponder exatamente ao tipo|
 |[C28112](../code-quality/c28112.md)|Uma variável que é acessada por meio de uma função Interlocked sempre deve ser acessada por meio de uma função Interlocked.|
@@ -169,14 +169,14 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28196](../code-quality/c28196.md)|O requisito não é atendido. (A expressão não é avaliada como true.)|
 |[C28202](../code-quality/c28202.md)|Referência inválida para membro não estático|
 |[C28203](../code-quality/c28203.md)|Referência ambígua ao membro de classe.|
-|[C28205](../code-quality/c28205.md)|\_Êxito\_ ou \_emcaso\_de falha\_ usada em um contexto ilegal|
+|[C28205](../code-quality/c28205.md)|\_Success @ no__t-1 ou \_On @ no__t-3failure @ no__t-4 usado em um contexto inválido|
 |[C28206](../code-quality/c28206.md)|O operando da esquerda aponta para um struct, use '->'|
 |[C28207](../code-quality/c28207.md)|O operando da esquerda é um struct, use '.'|
 |[C28209](../code-quality/c28209.md)|A declaração de Symbol tem uma declaração conflitante|
 |[C28210](../code-quality/c28210.md)|Anotações para o contexto __on_failure não devem estar no pré-contexto explícito|
 |[C28211](../code-quality/c28211.md)|Nome esperado do contexto estático para SAL_context|
 |[C28212](../code-quality/c28212.md)|Expressão de ponteiro esperada para anotação|
-|[C28213](../code-quality/c28213.md)|A \_\_anotação usar\_as anotações de decl deve ser usada para fazer referência, sem modificação, de uma declaração anterior.\_|
+|[C28213](../code-quality/c28213.md)|A anotação \_Use @ no__t-1decl @ no__t-2annotations @ no__t-3 deve ser usada para fazer referência, sem modificação, uma declaração anterior.|
 |[C28214](../code-quality/c28214.md)|Os nomes do parâmetro de atributo devem ser p1...p9|
 |[C28215](../code-quality/c28215.md)|O typefix não pode ser aplicado a um parâmetro que já tem um typefix|
 |[C28216](../code-quality/c28216.md)|A anotação checkReturn se aplica apenas a pós-condições para o parâmetro da função específica.|
@@ -219,7 +219,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28267](../code-quality/c28267.md)|Foi encontrado um erro de sintaxe nas anotações da função.|
 |[C28272](../code-quality/c28272.md)|A anotação para função, parâmetro quando examinar for inconsistente com a declaração da função|
 |[C28273](../code-quality/c28273.md)|Para função, os indícios são inconsistentes com a declaração da função|
-|[C28275](../code-quality/c28275.md)|O parâmetro para \_o\_valor\_ da macro é nulo|
+|[C28275](../code-quality/c28275.md)|O parâmetro para \_Macro @ no__t-1value @ no__t-2 é nulo|
 |[C28279](../code-quality/c28279.md)|Para símbolo, um 'início' foi encontrado sem um 'fim' correspondente|
 |[C28280](../code-quality/c28280.md)|Para símbolo, um 'fim' foi encontrado sem um 'início' correspondente|
 |[C28282](../code-quality/c28282.md)|Cadeias de caracteres de formato devem estar em pré-condições|
@@ -257,7 +257,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Tipos base de tipo visível no COM devem ser visíveis no COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Métodos de registro COM devem ser correspondidos|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar P/Invokes corretamente|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
+|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campos de tipo de valor devem ser portáteis|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Declarações P/Invoke devem ser portáteis|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Não bloquear objetos com identidade fraca|

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: d51796f7575e3dd5766655661927dfd520935c02
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: 90464052d0ba4f02b6b971adbacda8a29f3b0b2c
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585090"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305454"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Conjunto de regras de diretriz do design básico para código gerenciado
 
@@ -23,7 +23,7 @@ As regras básicas de diretriz de design incluem todas as regras do conjunto de 
 
 A tabela a seguir descreve todas as regras do conjunto de regras de regra de diretrizes de design básico da Microsoft.
 
-|Regra|Descrição|
+|Regra|{1&gt;Descrição&lt;1}|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar manipuladores de eventos corretamente|
@@ -42,7 +42,7 @@ A tabela a seguir descreve todas as regras do conjunto de regras de regra de dir
 |[CA1405](../code-quality/ca1405-com-visible-type-base-types-should-be-com-visible.md)|Tipos base de tipo visível no COM devem ser visíveis no COM|
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Métodos de registro COM devem ser correspondidos|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar P/Invokes corretamente|
-|[CA1821](../code-quality/ca1821-remove-empty-finalizers.md)|Remover finalizadores vazios|
+|[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
 |[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campos de tipo de valor devem ser portáteis|
 |[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Declarações P/Invoke devem ser portáteis|
 |[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Não bloquear objetos com identidade fraca|
@@ -138,19 +138,19 @@ A tabela a seguir descreve todas as regras do conjunto de regras de regra de dir
 |[CA1502](../code-quality/ca1502-avoid-excessive-complexity.md)|Evitar complexidade excessiva|
 |[CA1708](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)|Identificadores devem ser diferentes em algo além das maiúsculas e minúsculas|
 |[CA1716](../code-quality/ca1716-identifiers-should-not-match-keywords.md)|Identificadores não devem corresponder a palavras-chave|
-|[CA1801](../code-quality/ca1801-review-unused-parameters.md)|Examinar parâmetros não utilizados|
-|[CA1804](../code-quality/ca1804-remove-unused-locals.md)|Remover locais não utilizados|
-|[CA1809](../code-quality/ca1809-avoid-excessive-locals.md)|Evitar locais excessivos|
-|[CA1810](../code-quality/ca1810-initialize-reference-type-static-fields-inline.md)|Inicializar campos estáticos de tipo de referência em linha|
-|[CA1811](../code-quality/ca1811-avoid-uncalled-private-code.md)|Evitar código particular não chamado|
-|[CA1812](../code-quality/ca1812-avoid-uninstantiated-internal-classes.md)|Evitar classes internas sem instâncias|
-|[CA1813](../code-quality/ca1813-avoid-unsealed-attributes.md)|Evitar atributos não selados|
-|[CA1814](../code-quality/ca1814-prefer-jagged-arrays-over-multidimensional.md)|Preferir matrizes denteadas a matrizes multidimensionais|
-|[CA1815](../code-quality/ca1815-override-equals-and-operator-equals-on-value-types.md)|Substituir equals e o operador equals em tipos de valor|
-|[CA1819](../code-quality/ca1819-properties-should-not-return-arrays.md)|Propriedades não devem retornar matrizes|
-|[CA1820](../code-quality/ca1820-test-for-empty-strings-using-string-length.md)|Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres|
-|[CA1822](../code-quality/ca1822-mark-members-as-static.md)|Marcar membros como estáticos|
-|[CA1823](../code-quality/ca1823-avoid-unused-private-fields.md)|Evitar campos particulares não utilizados|
+|[CA1801](../code-quality/ca1801.md)|Examinar parâmetros não utilizados|
+|[CA1804](../code-quality/ca1804.md)|Remover locais não utilizados|
+|[CA1809](../code-quality/ca1809.md)|Evitar locais excessivos|
+|[CA1810](../code-quality/ca1810.md)|Inicializar campos estáticos de tipo de referência em linha|
+|[CA1811](../code-quality/ca1811.md)|Evitar código particular não chamado|
+|[CA1812](../code-quality/ca1812.md)|Evitar classes internas sem instâncias|
+|[CA1813](../code-quality/ca1813.md)|Evitar atributos não selados|
+|[CA1814](../code-quality/ca1814.md)|Preferir matrizes denteadas a matrizes multidimensionais|
+|[CA1815](../code-quality/ca1815.md)|Substituir equals e o operador equals em tipos de valor|
+|[CA1819](../code-quality/ca1819.md)|Propriedades não devem retornar matrizes|
+|[CA1820](../code-quality/ca1820.md)|Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres|
+|[CA1822](../code-quality/ca1822.md)|Marcar membros como estáticos|
+|[CA1823](../code-quality/ca1823.md)|Evitar campos particulares não utilizados|
 |[CA2201](../code-quality/ca2201-do-not-raise-reserved-exception-types.md)|Não acionar tipos de exceção reservados|
 |[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Usar equivalentes gerenciados da API do Win32|
 |[CA2208](../code-quality/ca2208-instantiate-argument-exceptions-correctly.md)|Criar instância de exceções de argumento corretamente|

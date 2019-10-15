@@ -18,12 +18,12 @@ dev_langs:
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d097a67c9a62a6847ff6ab0bb882257c082ca6f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: be864812cc7355f80700bd3e270178c9626d4180
+ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71231310"
+ms.lasthandoff: 10/14/2019
+ms.locfileid: "72305901"
 ---
 # <a name="ca2227-collection-properties-should-be-read-only"></a>CA2227: Propriedades de coleção devem ser somente leitura
 
@@ -40,9 +40,9 @@ Uma propriedade gravável externamente visível é de um tipo que implementa <xr
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Uma propriedade de coleção gravável permite que um usuário substitua a coleção por uma coleção completamente diferente. Uma propriedade somente leitura impede que a coleção seja substituída, mas ainda permite que os membros individuais sejam definidos. Se a substituição da coleção for uma meta, o padrão de design preferencial será incluir um método para remover todos os elementos da coleção e um método para repopular a coleção. Consulte os <xref:System.Collections.ArrayList.Clear%2A> métodos <xref:System.Collections.ArrayList.AddRange%2A> e da <xref:System.Collections.ArrayList?displayProperty=fullName> classe para obter um exemplo desse padrão.
+Uma propriedade de coleção gravável permite que um usuário substitua a coleção por uma coleção completamente diferente. Uma propriedade somente leitura impede que a coleção seja substituída, mas ainda permite que os membros individuais sejam definidos. Se a substituição da coleção for uma meta, o padrão de design preferencial será incluir um método para remover todos os elementos da coleção e um método para repopular a coleção. Consulte os métodos <xref:System.Collections.ArrayList.Clear%2A> e <xref:System.Collections.ArrayList.AddRange%2A> da classe <xref:System.Collections.ArrayList?displayProperty=fullName> para obter um exemplo desse padrão.
 
-A serialização binária e XML dão suporte a propriedades somente leitura que são coleções. A <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> classe tem requisitos específicos para tipos que implementam <xref:System.Collections.IEnumerable?displayProperty=fullName> <xref:System.Collections.ICollection> e para serem serializáveis.
+A serialização binária e XML dão suporte a propriedades somente leitura que são coleções. A classe <xref:System.Xml.Serialization.XmlSerializer?displayProperty=fullName> tem requisitos específicos para tipos que implementam <xref:System.Collections.ICollection> e <xref:System.Collections.IEnumerable?displayProperty=fullName> para serem serializáveis.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -56,7 +56,7 @@ Caso contrário, não omita os avisos desta regra.
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um tipo com uma propriedade de coleção gravável e mostra como a coleção pode ser substituída diretamente. Além disso, ele mostra a maneira preferida de substituir uma propriedade de coleção somente leitura `Clear` usando `AddRange` métodos e.
+O exemplo a seguir mostra um tipo com uma propriedade de coleção gravável e mostra como a coleção pode ser substituída diretamente. Além disso, ele mostra a maneira preferida de substituir uma propriedade de coleção somente leitura usando os métodos `Clear` e `AddRange`.
 
 [!code-csharp[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/CSharp/ca2227-collection-properties-should-be-read-only_1.cs)]
 [!code-vb[FxCop.Usage.PropertiesReturningCollections#1](../code-quality/codesnippet/VisualBasic/ca2227-collection-properties-should-be-read-only_1.vb)]
@@ -64,4 +64,4 @@ O exemplo a seguir mostra um tipo com uma propriedade de coleção gravável e m
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1819: Propriedades não devem retornar matrizes](../code-quality/ca1819-properties-should-not-return-arrays.md)
+- [CA1819: Propriedades não devem retornar matrizes @ no__t-0
