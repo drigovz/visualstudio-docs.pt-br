@@ -44,8 +44,6 @@
       items:
         - name: Usar pontos de interrupção
           href: using-breakpoints.md
-        - name: Usar tracepoints
-          href: using-tracepoints.md
         - name: Solucionando problemas de pontos de interrupção
           href: troubleshooting-breakpoints.md
     - name: Inspeção de dados
@@ -138,6 +136,8 @@
               href: xaml-hot-reload-troubleshooting.md
         - name: 'Não há suporte para Editar e Continuar em F#'
           href: edit-and-continue-not-supported-for-f-hash.md
+    - name: Registrar na Janela de Saída
+      href: using-tracepoints.md
     - name: Exibir dados do depurador
       items:
         - name: Módulos
@@ -238,7 +238,7 @@
                   href: visual-cpp-custom-visualizer-compatibility.md
             - name: Exibições personalizadas (gerenciadas)
               items:
-                - name: Criar exibições personalizadas dos objetos
+                - name: Criar exibições personalizadas de objetos gerenciados
                   href: create-custom-views-of-dot-managed-objects.md
                 - name: Instruir o depurador sobre o que mostrar
                   href: using-the-debuggerdisplay-attribute.md
