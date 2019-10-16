@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 402817ace34f12fb7659b7251cbe755d036ebc4b
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: cee7b855256f352c9ac9ed39994191f4a9e6d946
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71118637"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72314215"
 ---
 # <a name="step-8-customize-the-quiz"></a>Etapa 8: Personalizar o teste
 
@@ -26,7 +26,7 @@ Na última parte do tutorial, você explorará algumas maneiras de personalizar 
 
 > [!NOTE]
 > Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica.
-> - Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+> - Para obter uma visão geral do tutorial, confira [Tutorial 2: criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 > - Para baixar uma versão completa do código, consulte [exemplo de tutorial de teste de matemática completo](https://code.msdn.microsoft.com/Complete-Math-Quiz-8581813c).
 
 ## <a name="to-customize-the-quiz"></a>Para personalizar o teste
@@ -41,8 +41,7 @@ Na última parte do tutorial, você explorará algumas maneiras de personalizar 
   timeLabel.BackColor = Color.Red
   ```
 
-  > [!IMPORTANT]
-  > Use o controle linguagem de programação no canto superior direito desta página para exibir o trecho C# de código ou o trecho de código de Visual Basic.<br><br>![Controle de linguagem de programação para Docs.Microsoft.com](../ide/media/docs-programming-language-control.png)
+  [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
   Redefina a cor quando o teste acabar.
 
@@ -50,6 +49,6 @@ Na última parte do tutorial, você explorará algumas maneiras de personalizar 
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
-- Para ir para o próximo tutorial, consulte  **[o tutorial 3: Crie um jogo](../ide/tutorial-3-create-a-matching-game.md)** correspondente.
+- Para ir para o próximo tutorial, consulte **[tutorial 3: criar um jogo de correspondência](../ide/tutorial-3-create-a-matching-game.md)** .
 
-- Para retornar à etapa anterior do tutorial, confira [Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).
+- Para retornar à etapa anterior do tutorial, veja [Etapa 7: Adicionar problemas de multiplicação e divisão](../ide/step-7-add-multiplication-and-division-problems.md).

@@ -12,24 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fbe3ff31d00945ef462c5c20eb1c4b33c250f97
-ms.sourcegitcommit: 4dfe098ac0df294aad63e6b384d6575980798ca3
+ms.openlocfilehash: 866ad705f16e9eabb097e9c0c9064d2c379ebf9f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/11/2019
-ms.locfileid: "70887757"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349630"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Diga ao depurador o que mostrar usando o atributo DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
+
 O <xref:System.Diagnostics.DebuggerDisplayAttribute> controla como um objeto, propriedade ou campo é exibido nas janelas da variável do depurador. Esse atributo pode ser aplicado a tipos, delegados, propriedades, campos e assemblies. Se aplicado a um tipo base, o atributo também se aplicará a uma subclasse.
 
 O atributo `DebuggerDisplay` tem um único argumento, que é uma cadeia de caracteres a ser exibida na coluna de valor para instâncias do tipo. Essa cadeia de caracteres pode conter chaves (`{` e `}`). O texto dentro de um par de chaves é avaliado como um campo, propriedade ou método.
 
-Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do `{<typeName>}`padrão. Portanto, se você tiver substituído o `ToString()` método, o depurador usará o método substituído em vez do`{<typeName>}`padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o `DebuggerDisplay` atributo terá precedência sobre o `ToString()` método substituído. O `DebuggerDisplay` atributo também tem precedência sobre o `ToString()` método substituído em uma subclasse.
+Se uma classe tiver um método `ToString()` substituído, o depurador usará o método substituído em vez do @no__t padrão-1. Portanto, se você tiver substituído o método `ToString()`, o depurador usará o método substituído em vez do @ no__t-1 padrão, e você não precisará usar `DebuggerDisplay`. Se você usar ambos, o atributo `DebuggerDisplay` terá precedência sobre o método substituído `ToString()`. O atributo `DebuggerDisplay` também tem precedência sobre o método substituído `ToString()` em uma subclasse.
 
-Se o depurador avaliar essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
+Se o depurador avalia essa chamada implícita `ToString()` depende de uma configuração de usuário na caixa de diálogo **ferramentas/opções/depuração** . O Visual Basic não implementa esta avaliação de `ToString()` implícita.
 
 > [!IMPORTANT]
-> Se a caixa de seleção **Mostrar estrutura bruta de objetos em variáveis do Windows** estiver marcada na caixa de diálogo **ferramentas/opts/Debugging** , `DebuggerDisplay` o atributo será ignorado.
+> Se a caixa de seleção **Mostrar estrutura bruta de objetos em variáveis do Windows** estiver marcada na caixa de diálogo **ferramentas/opts/Debugging** , o atributo `DebuggerDisplay` será ignorado.
 
 > [!NOTE]
 > Para código nativo, esse atributo tem suporte apenas no C++código/CLI.
@@ -39,7 +40,7 @@ A tabela a seguir mostra alguns usos possíveis do atributo `DebuggerDisplay` e 
 |Atributo|Saída aparecendo na coluna Valor|
 |---------------| - |
 |`[DebuggerDisplay("x = {x} y = {y}")]`<br /><br /> Usado em um tipo com campos `x` e `y`.|`x = 5 y = 18`|
-|`[DebuggerDisplay("String value is {getString()}")]`A sintaxe de parâmetro pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|
+|A sintaxe do parâmetro `[DebuggerDisplay("String value is {getString()}")]`pode variar entre linguagens. Em virtude disso, use com cuidado.|`String value is [5, 6, 6]`|
 
 `DebuggerDisplay` também pode aceitar parâmetros nomeados.
 
@@ -95,7 +96,7 @@ O sufixo ", NQ" informa o avaliador de expressão para remover as aspas ao exibi
 ## <a name="example"></a>Exemplo
 O exemplo de código a seguir mostra como usar `DebuggerDisplay` junto com `DebuggerBrowseable` e `DebuggerTypeProxy`. Quando exibido em uma janela variáveis de depurador, como, por exemplo, a janela **Inspeção**, ele produz uma expansão semelhante ao seguinte:
 
-|**Nome**|**Valor**|**Tipo**|
+|**Nome**|**Value**|**Tipo**|
 |--------------|---------------|--------------|
 |Chave|"three"|object {string}|
 |Valor|3|object {int}|

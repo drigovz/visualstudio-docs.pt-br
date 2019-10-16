@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2602ad4c8f6ea3b5ca8d2b6f57c4148964b17a6c
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 994f8151b209d58617a23edbb4bba38836570710
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305600"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349534"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>Conjunto de regras recomendadas misto
 
@@ -20,7 +20,7 @@ As regras recomendadas mistas da Microsoft concentram-se nos problemas mais C++ 
 
 Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você C++ criar para seus projetos que dão suporte ao Common Language Runtime.
 
-|Regra|{1&gt;Descrição&lt;1}|
+|Regra|Descrição|
 |----------|-----------------|
 |[C6001](../code-quality/c6001.md)|Uso de memória não inicializada|
 |[C6011](../code-quality/c6011.md)|Desreferenciando ponteiro nulo|
@@ -127,7 +127,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C6518](../code-quality/c6518.md)|Tamanho gravável em buffer não gravável|
 |[C6522](../code-quality/c6522.md)|Tipo de cadeia de caracteres de tamanho inválido|
 |[C6525](../code-quality/c6525.md)|Local inatingível da cadeia de caracteres inválido|
-|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade ' NeedsRelease ' não pode ser usada em valores de tipo void|
+|[C6527](../code-quality/c6527.md)|Anotação inválida: A propriedade 'NeedsRelease' não pode ser utilizada em valores de tipo void|
 |[C6530](../code-quality/c6530.md)|Estilo de cadeia de caracteres de formato não reconhecido|
 |[C6540](../code-quality/c6540.md)|O uso de anotações de atributo nesta função irá invalidar todas as anotações __declspec existentes na função|
 |[C6551](../code-quality/c6551.md)|Especificação de tamanho inválido: expressão não analisável|
@@ -227,7 +227,7 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[C28286](../code-quality/c28286.md)|Para função, erro de sintaxe perto do fim|
 |[C28287](../code-quality/c28287.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro não reconhecido)|
 |[C28288](../code-quality/c28288.md)|Para função, Erro de sintaxe na anotação \_At\_() (nome de parâmetro inválido)|
-|[C28289](../code-quality/c28289.md)|Para a função: Legível ou Gravávelto não tinha uma especificação de limite como parâmetro|
+|[C28289](../code-quality/c28289.md)|Para função: ReadableTo ou WritableTo não tinha uma especificação de limite como parâmetro|
 |[C28290](../code-quality/c28290.md)|a anotação para função contém mais Externos que o número real de parâmetros|
 |[C28291](../code-quality/c28291.md)|pós null/notnull em deref nível 0 não tem sentido para a função.|
 |[C28300](../code-quality/c28300.md)|Operandos da expressão de tipos incompatíveis para o operador|
@@ -284,21 +284,21 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Relançar para preservar detalhes da pilha|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Não descartar objetos várias vezes|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Inicializar campos estáticos de tipo de valor em linha|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Não marcar componentes atendidos com WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Não chamar métodos substituíveis em construtores|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Tipos descartáveis devem declarar o finalizador|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Os finalizadores devem chamar o finalizador de classe base|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implementar construtores de serialização|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Marcar pontos de entrada do Windows Forms com STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos os campos não serializáveis|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Chamar métodos da classe base em tipos ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar tipos ISerializable com SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialização corretamente|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable corretamente|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Fornecer argumentos corretos para métodos de formatação|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Testar para NaN corretamente|
+|[CA2200](../code-quality/ca2200.md)|Relançar para preservar detalhes da pilha|
+|[CA2202](../code-quality/ca2202.md)|Não descartar objetos várias vezes|
+|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor em linha|
+|[CA2212](../code-quality/ca2212.md)|Não marcar componentes atendidos com WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
+|[CA2214](../code-quality/ca2214.md)|Não chamar métodos substituíveis em construtores|
+|[CA2216](../code-quality/ca2216.md)|Tipos descartáveis devem declarar o finalizador|
+|[CA2220](../code-quality/ca2220.md)|Os finalizadores devem chamar o finalizador de classe base|
+|[CA2229](../code-quality/ca2229.md)|Implementar construtores de serialização|
+|[CA2231](../code-quality/ca2231.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Marcar pontos de entrada do Windows Forms com STAThread|
+|[CA2235](../code-quality/ca2235.md)|Marcar todos os campos não serializáveis|
+|[CA2236](../code-quality/ca2236.md)|Chamar métodos da classe base em tipos ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Marcar tipos ISerializable com SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialização corretamente|
+|[CA2240](../code-quality/ca2240.md)|Implementar ISerializable corretamente|
+|[CA2241](../code-quality/ca2241.md)|Fornecer argumentos corretos para métodos de formatação|
+|[CA2242](../code-quality/ca2242.md)|Testar para NaN corretamente|

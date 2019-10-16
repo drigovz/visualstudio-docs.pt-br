@@ -10,14 +10,14 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 74a772bbe915227bca001f9370980cbc7d3212a5
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71974881"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349476"
 ---
-# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Passo a passo: Usar a análise de código estático para encontrar defeitos de código
+# <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Walkthrough: usar a análise de código estático para encontrar defeitos de código
 
 Neste tutorial, você analisará um projeto gerenciado para defeitos de código usando a análise de código herdada.
 
@@ -93,27 +93,27 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
 1. Use as seguintes dicas para corrigir os avisos:
 
-   [CA1014: Marcar assemblies com CLSCompliantAttribute @ no__t-0: Adicione o código `[assembly: CLSCompliant(true)]` ao final do arquivo AssemblyInfo.cs.
+   [CA1014: Marcar assemblies com o CLSCompliantAttribute](../code-quality/ca1014-mark-assemblies-with-clscompliantattribute.md): Adicione o código `[assembly: CLSCompliant(true)]` ao final do arquivo AssemblyInfo.cs.
 
-   [CA1032: Implementar construtores de exceção padrão @ no__t-0: Adicione o Construtor `public demo (String s) : base(s) { }` à classe `demo`.
+   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Adicione o Construtor `public demo (String s) : base(s) { }` à classe `demo`.
 
-   [CA1032: Implementar construtores de exceção padrão @ no__t-0: Adicione o Construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo`.
+   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Adicione o Construtor `public demo (String s, Exception e) : base(s, e) { }` à classe `demo`.
 
-   [CA1032: Implementar construtores de exceção padrão @ no__t-0: Adicione o Construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à demonstração da classe. Você também precisará adicionar uma instrução `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
+   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Adicione o Construtor `protected demo (SerializationInfo info, StreamingContext context) : base(info, context) { }` à demonstração da classe. Você também precisará adicionar uma instrução `using` para <xref:System.Runtime.Serialization?displayProperty=fullName>.
 
-   [CA1032: Implementar construtores de exceção padrão @ no__t-0: Adicione o Construtor `public demo () : base() { }` à classe `demo`.
+   [CA1032: Implementar construtores de exceção padrão](../code-quality/ca1032-implement-standard-exception-constructors.md): Adicione o Construtor `public demo () : base() { }` à classe `demo`.
 
-   [CA1709: Os identificadores devem estar em maiúsculas e minúsculas em @ no__t-0: Altere a capitalização do namespace `testCode` para `TestCode`.
+   [CA1709: os identificadores devem estar em maiúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)/minúsculas: altere a capitalização do namespace `testCode` para `TestCode`.
 
-   [CA1709: Os identificadores devem estar em maiúsculas e minúsculas em @ no__t-0: Altere o nome do membro para `Demo`.
+   [CA1709: os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): altere o nome do membro para `Demo`.
 
-   [CA1709: Os identificadores devem estar em maiúsculas e minúsculas em @ no__t-0: Altere o nome do membro para `Item`.
+   [CA1709: os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md): altere o nome do membro para `Item`.
 
-   [CA1710: Os identificadores devem ter o sufixo correto @ no__t-0: Altere o nome da classe e seus construtores para `DemoException`.
+   [CA1710: os identificadores devem ter o sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md): altere o nome da classe e seus construtores para `DemoException`.
 
-   [CA2237: Marque os tipos ISerializable com SerializableAttribute @ no__t-0: Adicione o atributo `[Serializable ()]` à classe `demo`.
+   [CA2237: marcar tipos ISerializable com SerializableAttribute](../code-quality/ca2237.md): Adicione o atributo `[Serializable ()]` à classe `demo`.
 
-   [CA2210: Assemblies devem ter nomes fortes válidos @ no__t-0: Assinar ' CodeAnalysisManagedDemo ' com uma chave de nome forte:
+   [CA2210: assemblies devem ter nomes fortes válidos](../code-quality/ca2210.md): assinar ' CodeAnalysisManagedDemo ' com uma chave de nome forte:
 
    1. No menu **projeto** , escolha **CodeAnalysisManagedDemo Propriedades**.
 
@@ -156,7 +156,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
    }
    ```
 
-1. Recompile o projeto.
+1. Recompilar o projeto.
 
 ## <a name="exclude-code-analysis-warnings"></a>Excluir avisos de análise de código
 
@@ -166,7 +166,7 @@ Este artigo orienta você pelo processo de uso da análise herdada para analisar
 
     1. No menu do clique com o botão direito do mouse (menu de contexto), escolha **suprimir** > **no arquivo de supressão**.
 
-1. Recompile o projeto.
+1. Recompilar o projeto.
 
      O projeto é compilado sem avisos ou erros.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21ce539296f02599a1f8afa0344413fb556eea45
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: a4667fc630d86691d95e9dc9cd205b29f7b0f525
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018771"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349703"
 ---
 # <a name="find-your-debugging-task-in-visual-studio"></a>Localizar sua tarefa de depuração no Visual Studio
 
@@ -65,6 +65,12 @@ Se você quiser pausar e depurar o código ao examinar o fluxo de execução ou 
 
 Você pode fazer isso [definindo um ponto de interrupção na janela de desmontagem](using-breakpoints.md#BKMK_Set_a_breakpoint_from_debugger_windows).
 
+## <a name="execute-code"></a>Executar código
+
+### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Conheça os comandos para percorrer seu código durante a depuração
+
+Para obter mais informações, consulte [navegar pelo código com o depurador](navigating-through-code-with-the-debugger.md).
+
 ## <a name="inspect-data"></a>Inspecionar dados
 
 ### <a name="check-the-value-of-variables-while-running-your-app"></a>Verificar o valor das variáveis ao executar seu aplicativo
@@ -79,19 +85,7 @@ Defina uma inspeção na variável. Para obter mais informações, consulte [def
 
 Abra o [Visualizador de cadeia de caracteres](view-strings-visualizer.md) interno durante a depuração.
 
-## <a name="additional-tasks"></a>Tarefas adicionais
-
-### <a name="learn-the-commands-to-step-through-your-code-while-debugging"></a>Conheça os comandos para percorrer seu código durante a depuração
-
-Para obter mais informações, consulte [navegar pelo código com o depurador](navigating-through-code-with-the-debugger.md).
-
-### <a name="edit-code-during-a-debugging-session"></a>Editar código durante uma sessão de depuração
-
-Use [Editar e continuar](edit-and-continue.md). Para o XAML, use o [Hot recarregamento de XAML](xaml-hot-reload.md).
-
-### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Enviar mensagens para a janela de saída sem modificar o código
-
-Definir um tracepoint. Para obter mais informações, consulte [usando tracepoints](using-tracepoints.md).
+## <a name="configure-debugging"></a>Configurar a depuração
 
 ### <a name="customize-information-shown-in-the-debugger"></a>Personalizar as informações mostradas no depurador
 
@@ -102,6 +96,16 @@ Para o C++nativo, use a [estrutura NatVis](create-custom-views-of-native-objects
 ### <a name="configure-debugger-settings"></a>Definir configurações do depurador
 
 Para configurar opções do depurador e configurações do projeto do depurador, consulte [configurações e preparação do depurador](debugger-settings-and-preparation.md).
+
+## <a name="additional-tasks"></a>Tarefas adicionais
+
+### <a name="edit-code-during-a-debugging-session"></a>Editar código durante uma sessão de depuração
+
+Use [Editar e continuar](edit-and-continue.md). Para o XAML, use o [Hot recarregamento de XAML](xaml-hot-reload.md).
+
+### <a name="send-messages-to-the-output-window-without-modifying-code"></a>Enviar mensagens para a janela de saída sem modificar o código
+
+Definir um tracepoint. Para obter mais informações, consulte [usando tracepoints](using-tracepoints.md).
 
 ### <a name="debug-on-remote-machines"></a>Depurar em computadores remotos
 

@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 22bc479ccd29a9eaf76e50f630061699856502ea
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: ff8c43e42d63208c1119f1f545697a57173fdd7a
+ms.sourcegitcommit: 98b02f87c7aa1f5eb7f0d1c86bfa36efa8580c57
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306218"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72313973"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 
@@ -31,12 +31,12 @@ Há quatro botões no formulário e o IDE os nomeou **button1**, **button2**, **
 
 ## <a name="to-name-your-button-controls"></a>Para nomear os controles de botão
 
-1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, pressione a tecla **Esc** para cancelar a seleção). Role pela janela **Propriedades**, até ver a propriedade **(Name)** . (A propriedade **(Name)** fica próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **botãoFechar**, conforme mostrado na captura de tela a seguir.
+1. No formulário, clique no botão **Fechar**. (Se você ainda tiver todos os botões selecionados, escolha a tecla **ESC** para cancelar a seleção.) Role na janela **Propriedades** até ver a propriedade **(Name)** . (A propriedade **(Name)** é próxima à parte superior quando as propriedades são alfabéticas.) Altere o nome para **botãoFechar**, conforme mostrado na captura de tela a seguir.
 
     ![A janela Propriedades com nome de closeButton](../ide/media/express_setnameproperty.png)<br>*Janela de propriedades com nome de* ***botãoFechar***
 
     > [!NOTE]
-    > Tente alterar o nome do botão para **fechar o botão**, com um espaço entre as palavras "fechar" e "botão". Quando você fizer isso, o IDE exibirá uma mensagem de erro: "O valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.
+    > Tente alterar o nome do botão para **fechar o botão**, com um espaço entre as palavras "fechar" e "botão". Quando você fizer isso, o IDE exibirá uma mensagem de erro: "o valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.
 
 1. Renomeie os outros três botões para **backgroundButton**, **clearButton** e **showButton**.
 Você pode verificar os nomes escolhendo a lista suspensa seletora de controle na janela **Propriedades**. Os nomes dos novos botões aparecem.
@@ -65,7 +65,7 @@ Guia ***Form1.cs*** *com C# código*
     End Sub
     ```
 
-   [!INCLUDE [devlang-control](./includes/devlang-control.md)]
+   [!INCLUDE [devlang-control-csharp-vb](./includes/devlang-control-csharp-vb.md)]
 
    Você está vendo o código chamado `showButton_Click()` (como alternativa, `ShowButton_Click()`). O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa o aplicativo e escolhe o controle, nesse caso, o botão **mostrar uma imagem** .
 
@@ -99,11 +99,11 @@ Guia ***Form1.cs*** *com C# código*
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, consulte ** @ no__t-1Step 7: Adicione componentes de caixa de diálogo ao formulário @ no__t-0 @ no__t-1.
+* Para ir para a próxima etapa do tutorial, consulte **[etapa 7: adicionar componentes da caixa de diálogo ao formulário](../ide/step-7-add-dialog-components-to-your-form.md)** .
 
-* Para retornar à etapa anterior do tutorial, confira [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
+* Para retornar à etapa anterior do tutorial, veja [Etapa 5: Adicionar controles ao formulário](../ide/step-5-add-controls-to-your-form.md).
 
 ## <a name="see-also"></a>Consulte também
 
-* [Tutorial 2: Criar um teste de matemática cronometrado @ no__t-0
-* [Tutorial 3: Criar um jogo correspondente @ no__t-0
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1703: Cadeias de caracteres de recurso devem ser escritas corretamente'
+title: 'CA1703: as cadeias de caracteres do recurso devem ter a ortografia correta'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edd3945953a07b10aee5c2690a25aafe446e2c10
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c37e07d6259c4229999ff7d4068400c788369e86
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234317"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348966"
 ---
-# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: Cadeias de caracteres de recurso devem ser escritas corretamente
+# <a name="ca1703-resource-strings-should-be-spelled-correctly"></a>CA1703: as cadeias de caracteres do recurso devem ter a ortografia correta
 
 |||
 |-|-|
 |NomeDoTipo|ResourceStringsShouldBeSpelledCorrectly|
 |CheckId|CA1703|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -36,17 +36,17 @@ Uma cadeia de caracteres de recurso contém uma ou mais palavras não reconhecid
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Essa regra analisa a cadeia de caracteres do recurso em palavras (tokening de palavras compostas) e verifica a ortografia de cada palavra/token. Para obter informações sobre o algoritmo de análise, [consulte CA1704: Os identificadores devem ser escritos](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)corretamente.
+Essa regra analisa a cadeia de caracteres do recurso em palavras (tokening de palavras compostas) e verifica a ortografia de cada palavra/token. Para obter informações sobre o algoritmo de análise, consulte [CA1704: identificadores devem ser escritos corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use palavras completas que estejam grafadas corretamente ou adicione as palavras a um dicionário personalizado. Para obter informações sobre como usar dicionários personalizados, [consulte CA1704: Os identificadores devem ser escritos](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)corretamente.
+Para corrigir uma violação dessa regra, use palavras completas que estejam grafadas corretamente ou adicione as palavras a um dicionário personalizado. Para obter informações sobre como usar dicionários personalizados, consulte [CA1704: os identificadores devem ser escritos corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).
 
 ## <a name="change-the-dictionary-language"></a>Alterar o idioma do dicionário
 
 Por padrão, a versão em inglês (EN) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, poderá fazê-lo adicionando um dos seguintes atributos ao seu arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* :
 
-- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se seus recursos estiverem em um assembly satélite.
+- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se os recursos estiverem em um assembly satélite.
 - Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar a *cultura neutra* do assembly se seus recursos estiverem no mesmo assembly que o seu código.
 
 > [!IMPORTANT]
@@ -58,6 +58,6 @@ Não suprima um aviso nessa regra. Palavras escritas corretamente reduzem o temp
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: As palavras compostas da cadeia de recursos devem estar em maiúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1704: Os identificadores devem ser escritos corretamente](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
-- [CA2204: Os literais devem ser escritos corretamente](../code-quality/ca2204-literals-should-be-spelled-correctly.md)
+- [CA1701: as palavras compostas da cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1704: os identificadores devem ter a ortografia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md)
+- [CA2204: os literais devem ter a ortografia correta](../code-quality/ca2204.md)

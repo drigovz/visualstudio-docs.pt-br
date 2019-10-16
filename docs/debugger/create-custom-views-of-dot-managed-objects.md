@@ -1,5 +1,5 @@
 ---
-title: Criar exibições personalizadas de objetos | Microsoft Docs
+title: Criar exibições personalizadas de objetos gerenciados | Microsoft Docs
 ms.date: 01/08/2019
 ms.topic: conceptual
 f1_keywords:
@@ -23,14 +23,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36e875bc8101bc8a1b0eb1bec6671c76e3b0c9b2
-ms.sourcegitcommit: 8a3545329a58e446672181cfed2083f850e1ad14
+ms.openlocfilehash: 4649ac11daa062089d2916a5d5d0a331e4d74272
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814291"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349454"
 ---
-# <a name="create-custom-views-of-objects-c-visual-basic-f-ccli"></a>Criar exibições personalizadas de objetosC#(, Visual Basic F#, C++,/CLI)
+# <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>Criar exibições personalizadas de objetos gerenciados (C#, F#Visual Basic C++,,/CLI)
 Você pode personalizar o modo como o Visual Studio exibe tipos de dados nas janelas variáveis do depurador.
 
 ## <a name="attributes"></a>Atributos
@@ -41,7 +41,7 @@ No código .NET Framework 2,0, Visual Basic não oferece suporte ao atributo Deb
 
 ## <a name="visualizers"></a>Visualizadores
 
-Você pode escrever um visualizador para exibir qualquer tipo de dados gerenciados. Para obter mais informações, confira [Como: Escrever um visualizador](/visualstudio/debugger/create-custom-visualizers-of-data).
+Você pode escrever um visualizador para exibir qualquer tipo de dados gerenciados. Para obter mais informações, consulte [How to: Write a Visualizer](/visualstudio/debugger/create-custom-visualizers-of-data).
 
 > [!NOTE]
 > Para C++ o código, você pode adicionar expansões de tipo de dados personalizadas usando a estrutura Natvis, conforme descrito em [criar exibições personalizadas de C++ objetos no depurador](/visualstudio/debugger/create-custom-views-of-native-objects).

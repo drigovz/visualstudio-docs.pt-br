@@ -1,5 +1,5 @@
 ---
-title: 'CA1404: Chamar GetLastError imediatamente após P-Invoke'
+title: 'CA1404: chame GetLastError imediatamente após o P-Invoke'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ab789e578dd8603f604cdb00aa5d236250d13670
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6529adafa7384bf8b51444dd2cc81b9952b6b57c
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235050"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349014"
 ---
-# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: Chamar GetLastError imediatamente após P/Invoke
+# <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404: chamar GetLastError logo depois de P/Invoke
 
 |||
 |-|-|
@@ -35,12 +35,12 @@ ms.locfileid: "71235050"
 
 ## <a name="cause"></a>Causa
 
-É feita uma chamada ao <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> método ou à função Win32 `GetLastError` equivalente, e a chamada que vem imediatamente antes não é para um método de invocação de plataforma.
+É feita uma chamada ao método <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A?displayProperty=fullName> ou à função equivalente do Win32 `GetLastError`, e a chamada que vem imediatamente antes não é para um método de invocação de plataforma.
 
 ## <a name="rule-description"></a>Descrição da regra
-Um método de invocação de plataforma acessa código não gerenciado e é definido usando a `Declare` palavra- [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] chave in <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> ou o atributo. Geralmente, após a falha, as funções não gerenciadas chamam `SetLastError` a função do Win32 para definir um código de erro associado à falha. O chamador da função com falha chama a função `GetLastError` do Win32 para recuperar o código de erro e determinar a causa da falha. O código de erro é mantido por thread e é substituído pela próxima chamada para `SetLastError`. Depois de uma chamada para um método de invocação de plataforma com falha, o código gerenciado pode recuperar <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> o código de erro chamando o método. Como o código de erro pode ser substituído por chamadas internas de outros métodos de biblioteca de classes gerenciadas <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> , o `GetLastError` método ou deve ser chamado imediatamente após a chamada de método de invocação de plataforma.
+Um método de invocação de plataforma acessa código não gerenciado e é definido usando a palavra-chave `Declare` no atributo [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ou <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>. Geralmente, após a falha, as funções não gerenciadas chamam a função Win32 `SetLastError` para definir um código de erro associado à falha. O chamador da função com falha chama a função Win32 `GetLastError` para recuperar o código de erro e determinar a causa da falha. O código de erro é mantido por thread e é substituído pela próxima chamada para `SetLastError`. Depois de uma chamada para um método de invocação de plataforma com falha, o código gerenciado pode recuperar o código de erro chamando o método <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Como o código de erro pode ser substituído por chamadas internas de outros métodos de biblioteca de classes gerenciadas, o método `GetLastError` ou <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> deve ser chamado imediatamente após a chamada de método de invocação de plataforma.
 
-A regra ignora chamadas para os seguintes membros gerenciados quando eles ocorrem entre a chamada para o método de invocação de plataforma e <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>a chamada para. Esses membros não alteram o código de erro e são úteis para determinar o sucesso de algumas chamadas de método de invocação de plataforma.
+A regra ignora chamadas para os seguintes membros gerenciados quando eles ocorrem entre a chamada para o método de invocação de plataforma e a chamada para <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Esses membros não alteram o código de erro e são úteis para determinar o sucesso de algumas chamadas de método de invocação de plataforma.
 
 - <xref:System.IntPtr.Zero?displayProperty=fullName>
 
@@ -54,7 +54,7 @@ A regra ignora chamadas para os seguintes membros gerenciados quando eles ocorre
 Para corrigir uma violação dessa regra, mova a chamada para <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> para que ela imediatamente siga a chamada para o método de invocação de plataforma.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
-É seguro suprimir um aviso dessa regra se o código entre a chamada de método da plataforma Invoke e a <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> chamada do método não puder explicitamente ou implicitamente fazer com que o código de erro seja alterado.
+É seguro suprimir um aviso dessa regra se o código entre a chamada de método de invocação de plataforma e a chamada do método <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> não puder explicitamente ou implicitamente fazer com que o código de erro seja alterado.
 
 ## <a name="example"></a>Exemplo
 O exemplo a seguir mostra um método que viola a regra e um método que satisfaz a regra.
@@ -63,12 +63,12 @@ O exemplo a seguir mostra um método que viola a regra e um método que satisfaz
 [!code-csharp[FxCop.Interoperability.LastErrorPInvoke#1](../code-quality/codesnippet/CSharp/ca1404-call-getlasterror-immediately-after-p-invoke_1.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1060: Mover P/Invokes para a classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
+[CA1060: mover P/Invokes para a classe NativeMethods](../code-quality/ca1060-move-p-invokes-to-nativemethods-class.md)
 
-[CA1400: Os pontos de entrada P/Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
+[CA1400: os pontos de entrada de P-Invoke devem existir](../code-quality/ca1400-p-invoke-entry-points-should-exist.md)
 
-[CA1401: P/Invokes não devem ser visíveis](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
+[CA1401: os P/Invokes não devem estar visíveis](../code-quality/ca1401-p-invokes-should-not-be-visible.md)
 
-[CA2101: Especificar o marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
+[CA2101: especificar marshaling para argumentos de cadeia de caracteres P/Invoke](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)
 
-[CA2205: Usar equivalentes gerenciados da API do Win32](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)
+[CA2205: usar equivalentes gerenciados da API do Win32](../code-quality/ca2205.md)

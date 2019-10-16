@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d2f123301eb2dd4df662891f2a9248b0cac7173
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 96a0b43e6d300d3db425cb7a926d0196566d178b
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305867"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349634"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção estendido para código gerenciado
 
@@ -23,7 +23,7 @@ O conjunto de regras de regras de correção estendida da Microsoft inclui as re
 
 A tabela a seguir descreve todas as regras no conjunto de regras de regras de correção estendida da Microsoft.
 
-|Regra|{1&gt;Descrição&lt;1}|
+|Regra|Descrição|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar manipuladores de eventos corretamente|
@@ -69,24 +69,24 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Relançar para preservar detalhes da pilha|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Não descartar objetos várias vezes|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Inicializar campos estáticos de tipo de valor em linha|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Não marcar componentes atendidos com WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Não chamar métodos substituíveis em construtores|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Tipos descartáveis devem declarar o finalizador|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Os finalizadores devem chamar o finalizador de classe base|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implementar construtores de serialização|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Marcar pontos de entrada do Windows Forms com STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos os campos não serializáveis|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Chamar métodos da classe base em tipos ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar tipos ISerializable com SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialização corretamente|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable corretamente|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Fornecer argumentos corretos para métodos de formatação|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Testar para NaN corretamente|
+|[CA2200](../code-quality/ca2200.md)|Relançar para preservar detalhes da pilha|
+|[CA2202](../code-quality/ca2202.md)|Não descartar objetos várias vezes|
+|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor em linha|
+|[CA2212](../code-quality/ca2212.md)|Não marcar componentes atendidos com WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
+|[CA2214](../code-quality/ca2214.md)|Não chamar métodos substituíveis em construtores|
+|[CA2216](../code-quality/ca2216.md)|Tipos descartáveis devem declarar o finalizador|
+|[CA2220](../code-quality/ca2220.md)|Os finalizadores devem chamar o finalizador de classe base|
+|[CA2229](../code-quality/ca2229.md)|Implementar construtores de serialização|
+|[CA2231](../code-quality/ca2231.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Marcar pontos de entrada do Windows Forms com STAThread|
+|[CA2235](../code-quality/ca2235.md)|Marcar todos os campos não serializáveis|
+|[CA2236](../code-quality/ca2236.md)|Chamar métodos da classe base em tipos ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Marcar tipos ISerializable com SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialização corretamente|
+|[CA2240](../code-quality/ca2240.md)|Implementar ISerializable corretamente|
+|[CA2241](../code-quality/ca2241.md)|Fornecer argumentos corretos para métodos de formatação|
+|[CA2242](../code-quality/ca2242.md)|Testar para NaN corretamente|
 |[CA1008](../code-quality/ca1008-enums-should-have-zero-value.md)|Enumerações devem ter valor zero|
 |[CA1013](../code-quality/ca1013-overload-operator-equals-on-overloading-add-and-subtract.md)|Sobrecarregar o operador equals na sobrecarga de adição e subtração|
 |[CA1303](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Não passar literais como parâmetros localizados|
@@ -107,15 +107,15 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Construtores de serialização seguros|
 |[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|Construtores estáticos devem ser particulares|
 |[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|Constantes críticas de segurança devem ser transparentes|
-|[CA2205](../code-quality/ca2205-use-managed-equivalents-of-win32-api.md)|Usar equivalentes gerenciados da API do Win32|
-|[CA2215](../code-quality/ca2215-dispose-methods-should-call-base-class-dispose.md)|Métodos Dispose devem chamar o descarte da classe base|
-|[CA2221](../code-quality/ca2221-finalizers-should-be-protected.md)|Os finalizadores devem ser protegidos|
-|[CA2222](../code-quality/ca2222-do-not-decrease-inherited-member-visibility.md)|Não diminuir a visibilidade dos membros herdados|
-|[CA2223](../code-quality/ca2223-members-should-differ-by-more-than-return-type.md)|Os membros devem ser diferentes em algo além de um tipo de retorno|
-|[CA2224](../code-quality/ca2224-override-equals-on-overloading-operator-equals.md)|Substituir equals ao sobrecarregar operador equals|
-|[CA2226](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)|Operadores devem ter sobrecargas simétricas|
-|[CA2227](../code-quality/ca2227-collection-properties-should-be-read-only.md)|Propriedades de coleção devem ser somente leitura|
-|[CA2239](../code-quality/ca2239-provide-deserialization-methods-for-optional-fields.md)|Fornecer métodos de desserialização para campos opcionais|
+|[CA2205](../code-quality/ca2205.md)|Usar equivalentes gerenciados da API do Win32|
+|[CA2215](../code-quality/ca2215.md)|Métodos Dispose devem chamar o descarte da classe base|
+|[CA2221](../code-quality/ca2221.md)|Os finalizadores devem ser protegidos|
+|[CA2222](../code-quality/ca2222.md)|Não diminuir a visibilidade dos membros herdados|
+|[CA2223](../code-quality/ca2223.md)|Os membros devem ser diferentes em algo além de um tipo de retorno|
+|[CA2224](../code-quality/ca2224.md)|Substituir equals ao sobrecarregar operador equals|
+|[CA2226](../code-quality/ca2226.md)|Operadores devem ter sobrecargas simétricas|
+|[CA2227](../code-quality/ca2227.md)|Propriedades de coleção devem ser somente leitura|
+|[CA2239](../code-quality/ca2239.md)|Fornecer métodos de desserialização para campos opcionais|
 |[CA1032](../code-quality/ca1032-implement-standard-exception-constructors.md)|Implementar construtores de exceção padrão|
 |[CA1054](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)|Parâmetros de URI não devem ser cadeias de caracteres|
 |[CA1055](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)|Valores de retorno de URI não devem ser cadeias de caracteres|
@@ -142,14 +142,14 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|Métodos transparentes não devem usar demandas de segurança|
 |[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|O código transparente não deve carregar assemblies de matrizes de bytes|
 |[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|Métodos transparentes não devem ser decorados com o SuppressUnmanagedCodeSecurityAttribute|
-|[CA2204](../code-quality/ca2204-literals-should-be-spelled-correctly.md)|Literais devem ser escritos corretamente|
-|[CA2211](../code-quality/ca2211-non-constant-fields-should-not-be-visible.md)|Campos não constantes não devem ser visíveis|
-|[CA2217](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)|Não marcar enumerações com FlagsAttribute|
-|[CA2218](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)|Substituir GetHashCode ao substituir Equals|
-|[CA2219](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)|Não acionar exceções em cláusulas de exceção|
-|[CA2225](../code-quality/ca2225-operator-overloads-have-named-alternates.md)|Sobrecargas de operador têm alternativas nomeadas|
-|[CA2228](../code-quality/ca2228-do-not-ship-unreleased-resource-formats.md)|Não fornecer formatos de recurso não lançados|
-|[CA2230](../code-quality/ca2230-use-params-for-variable-arguments.md)|Usar parâmetros para argumentos variáveis|
-|[CA2233](../code-quality/ca2233-operations-should-not-overflow.md)|As operações não devem estourar|
-|[CA2234](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)|Passar objetos System.Uri em vez de cadeias de caracteres|
-|[CA2243](../code-quality/ca2243-attribute-string-literals-should-parse-correctly.md)|Literais de cadeias de caracteres de atributo devem ser analisados corretamente|
+|[CA2204](../code-quality/ca2204.md)|Literais devem ser escritos corretamente|
+|[CA2211](../code-quality/ca2211.md)|Campos não constantes não devem ser visíveis|
+|[CA2217](../code-quality/ca2217.md)|Não marcar enumerações com FlagsAttribute|
+|[CA2218](../code-quality/ca2218.md)|Substituir GetHashCode ao substituir Equals|
+|[CA2219](../code-quality/ca2219.md)|Não acionar exceções em cláusulas de exceção|
+|[CA2225](../code-quality/ca2225.md)|Sobrecargas de operador têm alternativas nomeadas|
+|[CA2228](../code-quality/ca2228.md)|Não fornecer formatos de recurso não lançados|
+|[CA2230](../code-quality/ca2230.md)|Usar parâmetros para argumentos variáveis|
+|[CA2233](../code-quality/ca2233.md)|As operações não devem estourar|
+|[CA2234](../code-quality/ca2234.md)|Passar objetos System.Uri em vez de cadeias de caracteres|
+|[CA2243](../code-quality/ca2243.md)|Literais de cadeias de caracteres de atributo devem ser analisados corretamente|
