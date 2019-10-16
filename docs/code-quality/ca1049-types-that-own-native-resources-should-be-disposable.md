@@ -1,5 +1,5 @@
 ---
-title: 'CA1049: Tipos com recursos nativos devem ser descartáveis'
+title: 'CA1049: tipos que tenham recursos nativos devem ser descartáveis'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 03b8d222fc2349022ef324c9905279677fc86849
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306123"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349097"
 ---
-# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: Tipos com recursos nativos devem ser descartáveis
+# <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: tipos que tenham recursos nativos devem ser descartáveis
 
 |||
 |-|-|
 |NomeDoTipo|TypesThatOwnNativeResourcesShouldBeDisposable|
 |CheckId|CA1049|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -56,13 +56,13 @@ O exemplo a seguir mostra um tipo que implementa <xref:System.IDisposable> para 
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA2115: Chame GC. KeepAlive ao usar recursos nativos @ no__t-0
+[CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
 
-[CA1816: Chame GC. SuppressFinalize corretamente @ no__t-0
+[CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816.md)
 
-[CA2216: Tipos descartáveis devem declarar finalizador @ no__t-0
+[CA2216: os tipos descartáveis devem declarar o finalizador](../code-quality/ca2216.md)
 
-[CA1001: os tipos com campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
+[CA1001: tipos que têm campos descartáveis devem ser descartáveis](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)
 
 ## <a name="see-also"></a>Consulte também
 

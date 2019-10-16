@@ -1,5 +1,5 @@
 ---
-title: 'CA1054: Parâmetros de URI não devem ser cadeias de caracteres'
+title: 'CA1054: os parâmetros de URI não devem ser cadeias de caracteres'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,35 +18,35 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 49788b900eb8aed9fac6e4da4844377bae67efbf
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5f4efbec200b90614a5d78a4b04b2ebd32588cb5
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235551"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349082"
 ---
-# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: Parâmetros de URI não devem ser cadeias de caracteres
+# <a name="ca1054-uri-parameters-should-not-be-strings"></a>CA1054: os parâmetros de URI não devem ser cadeias de caracteres
 
 |||
 |-|-|
 |NomeDoTipo|UriParametersShouldNotBeStrings|
 |CheckId|CA1054|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo declara um método com um parâmetro de cadeia de caracteres cujo nome contém "URI", "URI", "urn", "urn", "URL" ou "URL" e o tipo não declara uma sobrecarga correspondente que usa um <xref:System.Uri?displayProperty=fullName> parâmetro.
+Um tipo declara um método com um parâmetro de cadeia de caracteres cujo nome contém "URI", "URI", "urn", "urn", "URL" ou "URL" e o tipo não declara uma sobrecarga correspondente que usa um parâmetro <xref:System.Uri?displayProperty=fullName>.
 
 Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Essa regra divide o nome do parâmetro em tokens com base na Convenção do camel case e verifica se cada token é igual a "URI", "URI", "urn", "urn", "URL" ou "URL". Se houver uma correspondência, a regra assumirá que o parâmetro representa um URI (Uniform Resource Identifier). Uma representação de cadeia de caracteres de um URI está propensa a erros de análise e de codificação, e pode resultar em vulnerabilidades de segurança. Se um método usa uma representação de cadeia de caracteres de um URI, deve ser fornecida uma sobrecarga correspondente que usa uma <xref:System.Uri> instância da classe, que fornece esses serviços de maneira segura e segura.
+Essa regra divide o nome do parâmetro em tokens com base na Convenção do camel case e verifica se cada token é igual a "URI", "URI", "urn", "urn", "URL" ou "URL". Se houver uma correspondência, a regra assumirá que o parâmetro representa um URI (Uniform Resource Identifier). Uma representação de cadeia de caracteres de um URI está propensa a erros de análise e de codificação, e pode resultar em vulnerabilidades de segurança. Se um método usa uma representação de cadeia de caracteres de um URI, deve ser fornecida uma sobrecarga correspondente que usa uma instância da classe <xref:System.Uri>, que fornece esses serviços de maneira segura e segura.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, altere o parâmetro para um <xref:System.Uri> tipo; essa é uma alteração significativa. Como alternativa, forneça uma sobrecarga do método que usa um <xref:System.Uri> parâmetro; essa é uma alteração não significativa.
+Para corrigir uma violação dessa regra, altere o parâmetro para um tipo <xref:System.Uri>; Essa é uma alteração significativa. Como alternativa, forneça uma sobrecarga do método que usa um parâmetro <xref:System.Uri>; Essa é uma alteração sem interrupção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -64,7 +64,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um tipo `ErrorProne`,, que viola essa regra e um tipo, `SaferWay`, que satisfaz a regra.
+O exemplo a seguir mostra um tipo, `ErrorProne`, que viola essa regra e um tipo, `SaferWay`, que satisfaz a regra.
 
 [!code-csharp[FxCop.Design.UriNotString#1](../code-quality/codesnippet/CSharp/ca1054-uri-parameters-should-not-be-strings_1.cs)]
 [!code-vb[FxCop.Design.UriNotString#1](../code-quality/codesnippet/VisualBasic/ca1054-uri-parameters-should-not-be-strings_1.vb)]
@@ -72,7 +72,7 @@ O exemplo a seguir mostra um tipo `ErrorProne`,, que viola essa regra e um tipo,
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1056: As propriedades de URI não devem ser cadeias de caracteres](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
-- [CA1055: Os valores de retorno de URI não devem ser cadeias de caracteres](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
-- [CA2234: Passar objetos System. Uri em vez de cadeias de caracteres](../code-quality/ca2234-pass-system-uri-objects-instead-of-strings.md)
-- [CA1057: Sobrecargas de URI de cadeia de caracteres chamam sobrecargas de System. URI](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)
+- [CA1056: as propriedades de URI não devem ser cadeias de caracteres](../code-quality/ca1056-uri-properties-should-not-be-strings.md)
+- [CA1055: os valores de retorno de URI não devem ser cadeias de caracteres](../code-quality/ca1055-uri-return-values-should-not-be-strings.md)
+- [CA2234: passar objetos System.Uri em vez de cadeias de caracteres](../code-quality/ca2234.md)
+- [CA1057: as sobrecargas de URI da cadeia de caracteres chamam sobrecargas System.Uri](../code-quality/ca1057-string-uri-overloads-call-system-uri-overloads.md)

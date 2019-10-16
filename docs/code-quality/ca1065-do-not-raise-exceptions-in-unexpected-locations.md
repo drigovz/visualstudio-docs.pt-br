@@ -1,5 +1,5 @@
 ---
-title: 'CA1065: Não acionar exceções em locais inesperados'
+title: 'CA1065: não acione exceções em locais inesperados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 257100be0eb2766ef413854795c934b230e29370
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b45e98fde35e8be3296ce1c6916f61ef7b76a306
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235242"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349025"
 ---
-# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Não acionar exceções em locais inesperados
+# <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: não acione exceções em locais inesperados
 
 |||
 |-|-|
 |NomeDoTipo|DoNotRaiseExceptionsInUnexpectedLocations|
 |CheckId|CA1065|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -66,13 +66,13 @@ As propriedades são basicamente campos inteligentes. Portanto, eles devem se co
 
 As seguintes exceções podem ser geradas de um método Get de propriedade:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e todos os derivativos ( <xref:System.ObjectDisposedException?displayProperty=fullName>incluindo)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivativos (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e todos os derivativos
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivativos
 
-- <xref:System.ArgumentException?displayProperty=fullName>(somente de Get indexado)
+- <xref:System.ArgumentException?displayProperty=fullName> (somente de Get indexado)
 
-- <xref:System.Collections.Generic.KeyNotFoundException>(somente de Get indexado)
+- <xref:System.Collections.Generic.KeyNotFoundException> (somente de Get indexado)
 
 ### <a name="event-accessor-methods"></a>Métodos de acessadores de eventos
 
@@ -80,11 +80,11 @@ Os acessadores de evento devem ser operações simples que não lançam exceçõ
 
 As seguintes exceções podem ser geradas de um acessador de eventos:
 
-- <xref:System.InvalidOperationException?displayProperty=fullName>e todos os derivativos ( <xref:System.ObjectDisposedException?displayProperty=fullName>incluindo)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivativos (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
-- <xref:System.NotSupportedException?displayProperty=fullName>e todos os derivativos
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivativos
 
-- <xref:System.ArgumentException>e derivativos
+- <xref:System.ArgumentException> e derivativos
 
 ### <a name="equals-methods"></a>Métodos iguais
 
@@ -94,7 +94,7 @@ Os métodos **iguais** a seguir não devem gerar exceções:
 
 - <xref:System.IEquatable%601.Equals%2A>
 
-Um método **Equals** deve `true` retornar `false` ou em vez de lançar uma exceção. Por exemplo, se Equals for passado dois tipos incompatíveis, ele deverá retornar `false` apenas em vez de <xref:System.ArgumentException>lançar um.
+Um método **Equals** deve retornar `true` ou `false` em vez de lançar uma exceção. Por exemplo, se Equals for passado dois tipos incompatíveis, ele deverá simplesmente retornar `false` em vez de lançar um <xref:System.ArgumentException>.
 
 ### <a name="gethashcode-methods"></a>Métodos GetHashCode
 
@@ -122,13 +122,13 @@ Lançar uma exceção de um finalizador faz com que o CLR fail fast, que destró
 
 ### <a name="dispose-methods"></a>Métodos Dispose
 
-Um <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método não deve gerar uma exceção. Dispose é geralmente chamado como parte da lógica de limpeza em uma `finally` cláusula. Portanto, lançar explicitamente uma exceção de Dispose força o usuário a adicionar manipulação de exceção dentro `finally` da cláusula.
+Um método <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> não deve gerar uma exceção. Dispose é geralmente chamado de parte da lógica de limpeza em uma cláusula `finally`. Portanto, lançar explicitamente uma exceção de Dispose força o usuário a adicionar manipulação de exceção dentro da cláusula `finally`.
 
 O caminho do código **Dispose (false)** nunca deve gerar exceções, pois Dispose quase sempre é chamado de um finalizador.
 
 ### <a name="equality-operators--"></a>Operadores de igualdade (= =,! =)
 
-Como os métodos Equals, operadores de igualdade `true` devem `false`retornar ou e e não devem gerar exceções.
+Como os métodos Equals, os operadores de igualdade devem retornar `true` ou `false` e não devem gerar exceções.
 
 ### <a name="implicit-cast-operators"></a>Operadores de conversão implícita
 
@@ -146,7 +146,7 @@ Se a violação foi causada por uma declaração de exceção em vez de uma exce
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA2219: Não gerar exceções nas cláusulas de exceção](../code-quality/ca2219-do-not-raise-exceptions-in-exception-clauses.md)
+- [CA2219: não acionar exceções em cláusulas de exceção](../code-quality/ca2219.md)
 
 ## <a name="see-also"></a>Consulte também
 

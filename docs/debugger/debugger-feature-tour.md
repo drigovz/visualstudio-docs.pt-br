@@ -12,16 +12,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 249b8aa88b11643ed0b353df25bef3a054ef5e55
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 06665aa6a30d67e27f654e92029dcbd3d2aea2ef
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987785"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349743"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
-Este tópico apresenta as ferramentas de depurador fornecidas pelo Visual Studio. No contexto do Visual Studio, quando você *depura seu aplicativo*, significa que você está executando o aplicativo com o depurador anexado (ou seja, no modo de depurador). Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer o código e examinar os valores armazenados em variáveis, definir inspeções em variáveis para ver quando os valores mudam, examinar o caminho de execução do código e assim por diante. Se esta é sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste tópico.
+Este tópico apresenta as ferramentas de depurador fornecidas pelo Visual Studio. No contexto do Visual Studio, quando você *depura seu aplicativo*, significa que você está executando o aplicativo com o depurador anexado (ou seja, no modo de depurador). Quando você faz isso, o depurador fornece várias maneiras de mostrar o que o código está fazendo enquanto é executado. Você pode percorrer seu código e examinar os valores armazenados em variáveis, pode definir inspeções em variáveis para ver quando os valores são alterados, você pode examinar o caminho de execução do seu código, et al. Se esta for a primeira vez que você tentou depurar o código, talvez queira ler a [depuração de iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes de passar por este tópico.
 
 Os recursos descritos aqui são aplicáveis a C#, C++, Visual Basic, JavaScript e a outras linguagens compatíveis com o Visual Studio (exceto quando indicado).
 
@@ -47,7 +47,7 @@ Para iniciar seu aplicativo com o depurador anexado, pressione **F11** (**Depura
 
 A seta amarela representa a instrução na qual o depurador ficou em pausa, que também suspende a execução do aplicativo no mesmo ponto (essa instrução ainda não foi executada).
 
-F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Também vamos mostrar algumas outras opções para percorrer o código com mais rapidez). Por padrão, o depurador ignora as partes do código que não são do usuário (se quiser saber mais detalhes, confira [Apenas Meu Código](../debugger/just-my-code.md)).
+F11 é uma boa maneira de examinar o fluxo de execução com o máximo de detalhes. (Para mover-se mais rapidamente pelo código, mostraremos algumas outras opções também.) Por padrão, o depurador ignora o código que não é do usuário (se você quiser obter mais detalhes, consulte [apenas meu código](../debugger/just-my-code.md)).
 
 >[!NOTE]
 > No código gerenciado, você verá uma caixa de diálogo perguntando se deseja ser notificado quando passar automaticamente por propriedades e operadores (comportamento padrão). Se você quiser alterar a configuração depois, desabilite a configuração **Passar por propriedades e operadores** no menu **Ferramentas > Opções** em **Depuração**.
@@ -183,7 +183,7 @@ A janela **Pilha de Chamadas** mostra a ordem em que os métodos e as funções 
 
 Você pode clicar duas vezes em uma linha de código para examinar esse código-fonte. Isso também altera o escopo atual que está sendo inspecionado pelo depurador. Isso não avança o depurador.
 
-Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como Examinar a pilha de chamadas](../debugger/how-to-use-the-call-stack-window.md).
+Você também pode usar os menus acessados ao clicar com o botão direito do mouse na janela **Pilha de Chamadas** para fazer outras coisas. Por exemplo, você pode inserir pontos de interrupção em funções especificas, reiniciar o aplicativo usando **Executar até o Cursor** e examinar o código-fonte. Confira [Como examinar a Pilha de Chamadas](../debugger/how-to-use-the-call-stack-window.md).
 
 ## <a name="exception"></a> Examinar uma exceção
 
@@ -201,6 +201,14 @@ O Auxiliar de Exceção é um ótimo recurso que pode ajudá-lo a depurar erros.
 > O Auxiliar de Exceção substituiu o Assistente de Exceção do [!include[vs_dev15](../misc/includes/vs_dev15_md.md)].
 
 Expanda o nó **Configurações de Exceção** para ver mais opções de como lidar com esse tipo de exceção, mas você não precisa alterar nada neste tour!
+
+## <a name="configure-debugging"></a>Configurar a depuração
+
+Você pode configurar seu projeto para compilar como uma [configuração de depuração ou versão](../debugger/how-to-set-debug-and-release-configurations.md), configurar as propriedades do projeto para depuração ou definir [as configurações gerais](../debugger/how-to-specify-debugger-settings.md) para depuração. Além disso, você pode configurar o depurador para exibir informações personalizadas usando recursos como o atributo [DebuggerDisplay](using-the-debuggerdisplay-attribute.md) ou, para C/C++, a [estrutura NatVis](create-custom-views-of-native-objects.md).
+
+As propriedades de depuração são específicas para cada tipo de projeto. Por exemplo, você pode especificar um argumento para passar ao aplicativo ao iniciá-lo. Você pode acessar as propriedades específicas do projeto clicando com o botão direito do mouse no projeto em Gerenciador de Soluções e selecionando **Propriedades**. As propriedades de depuração normalmente aparecem na guia **Compilar** ou **depurar** , dependendo do tipo de projeto específico.
+
+![](../debugger/media/dbg-tour-project-properties.png "Propriedades do") projeto Propriedades do projeto
 
 ## <a name="debug-live-aspnet-apps-in-azure-app-service"></a>Depurar aplicativos ASP.NET dinâmicos no Serviço de Aplicativo do Azure
 

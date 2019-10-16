@@ -1,5 +1,5 @@
 ---
-title: 'CA1717: Apenas enumerações FlagsAttribute devem ter nomes no plural'
+title: 'CA1717: apenas enums FlagsAttribute devem ter nomes plurais'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b352d8f49cb92f70b449427179229fd882dbc9ce
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 113df599f793e92c41b7aa6b8a8f52a4c188982a
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234056"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72348908"
 ---
-# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: Apenas enumerações FlagsAttribute devem ter nomes no plural
+# <a name="ca1717-only-flagsattribute-enums-should-have-plural-names"></a>CA1717: apenas enums FlagsAttribute devem ter nomes plurais
 
 |||
 |-|-|
 |NomeDoTipo|OnlyFlagsEnumsShouldHavePluralNames|
 |CheckId|CA1717|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-O nome de uma enumeração termina em uma palavra plural e a enumeração não é marcada com o <xref:System.FlagsAttribute?displayProperty=fullName> atributo.
+O nome de uma enumeração termina em uma palavra plural e a enumeração não é marcada com o atributo <xref:System.FlagsAttribute?displayProperty=fullName>.
 
 Por padrão, essa regra só examina enumerações visíveis externamente, mas isso é [configurável](#configurability).
 
@@ -40,7 +40,7 @@ Por padrão, essa regra só examina enumerações visíveis externamente, mas is
 
 As convenções de nomenclatura ditam que um nome no plural para uma enumeração indica que mais de um valor da enumeração pode ser especificado simultaneamente. O <xref:System.FlagsAttribute> informa aos compiladores que a enumeração deve ser tratada como um campo de bits que permite operações bit a bit na enumeração.
 
-Se apenas um valor de uma enumeração puder ser especificado por vez, o nome da enumeração deverá ser uma palavra singular. Por exemplo, uma enumeração que define os dias da semana pode ser destinada a uso em um aplicativo em que você pode especificar vários dias. Essa enumeração deve ter <xref:System.FlagsAttribute> e pode ser chamada ' Days '. Uma enumeração semelhante que permite que apenas um único dia seja especificado não teria o atributo e poderia ser chamada ' Day '.
+Se apenas um valor de uma enumeração puder ser especificado por vez, o nome da enumeração deverá ser uma palavra singular. Por exemplo, uma enumeração que define os dias da semana pode ser destinada a uso em um aplicativo em que você pode especificar vários dias. Essa enumeração deve ter o <xref:System.FlagsAttribute> e pode ser chamada de ' Days '. Uma enumeração semelhante que permite que apenas um único dia seja especificado não teria o atributo e poderia ser chamada ' Day '.
 
 As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz o tempo necessário para aprender uma nova biblioteca de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
@@ -64,9 +64,9 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1714: Enumerações de sinalizadores devem ter nomes no plural](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
-- [CA1027: Marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
-- [CA2217: Não marcar enums com FlagsAttribute](../code-quality/ca2217-do-not-mark-enums-with-flagsattribute.md)
+- [CA1714: enums de sinalizadores devem ter nomes plurais](../code-quality/ca1714-flags-enums-should-have-plural-names.md)
+- [CA1027: marcar enums com FlagsAttribute](../code-quality/ca1027-mark-enums-with-flagsattribute.md)
+- [CA2217: não marcar enums com FlagsAttribute](../code-quality/ca2217.md)
 
 ## <a name="see-also"></a>Consulte também
 

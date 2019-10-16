@@ -170,8 +170,8 @@
   items:
     - name: Desenvolver
       items:
-        - name: 'Índice: Usar o IDE para escrever código'
-          href: ide/index-writing-code.md
+        - name: Introdução
+          href: ide/index-writing-code.yml
         - name: Mover-se no IDE
           href: ide/how-to-move-around-in-the-visual-studio-ide.md
         - name: Soluções e projetos

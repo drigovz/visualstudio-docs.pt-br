@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4a4257327e8f1346ce99ce44aad9bcf4f6a466cd
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 2c0b5fb735309e87dab31631d088f14ac9fa9d41
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72305643"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349528"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>Conjunto de regras recomendadas gerenciado para código gerenciado
 
@@ -21,7 +21,7 @@ Use a regra de regras recomendadas gerenciadas pela Microsoft para se concentrar
 
 Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que você criar para seus projetos.
 
-|Regra|{1&gt;Descrição&lt;1}|
+|Regra|Descrição|
 |----------|-----------------|
 |[CA1001](../code-quality/ca1001-types-that-own-disposable-fields-should-be-disposable.md)|Tipos com campos descartáveis devem ser descartáveis|
 |[CA1009](../code-quality/ca1009-declare-event-handlers-correctly.md)|Declarar manipuladores de eventos corretamente|
@@ -67,21 +67,21 @@ Inclua esse conjunto de regras em qualquer conjunto personalizado de regras que 
 |[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
 |[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
-|[CA2200](../code-quality/ca2200-rethrow-to-preserve-stack-details.md)|Relançar para preservar detalhes da pilha|
-|[CA2202](../code-quality/ca2202-do-not-dispose-objects-multiple-times.md)|Não descartar objetos várias vezes|
-|[CA2207](../code-quality/ca2207-initialize-value-type-static-fields-inline.md)|Inicializar campos estáticos de tipo de valor em linha|
-|[CA2212](../code-quality/ca2212-do-not-mark-serviced-components-with-webmethod.md)|Não marcar componentes atendidos com WebMethod|
-|[CA2213](../code-quality/ca2213-disposable-fields-should-be-disposed.md)|Campos descartáveis devem ser descartados|
-|[CA2214](../code-quality/ca2214-do-not-call-overridable-methods-in-constructors.md)|Não chamar métodos substituíveis em construtores|
-|[CA2216](../code-quality/ca2216-disposable-types-should-declare-finalizer.md)|Tipos descartáveis devem declarar o finalizador|
-|[CA2220](../code-quality/ca2220-finalizers-should-call-base-class-finalizer.md)|Os finalizadores devem chamar o finalizador de classe base|
-|[CA2229](../code-quality/ca2229-implement-serialization-constructors.md)|Implementar construtores de serialização|
-|[CA2231](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
-|[CA2232](../code-quality/ca2232-mark-windows-forms-entry-points-with-stathread.md)|Marcar pontos de entrada do Windows Forms com STAThread|
-|[CA2235](../code-quality/ca2235-mark-all-non-serializable-fields.md)|Marcar todos os campos não serializáveis|
-|[CA2236](../code-quality/ca2236-call-base-class-methods-on-iserializable-types.md)|Chamar métodos da classe base em tipos ISerializable|
-|[CA2237](../code-quality/ca2237-mark-iserializable-types-with-serializableattribute.md)|Marcar tipos ISerializable com SerializableAttribute|
-|[CA2238](../code-quality/ca2238-implement-serialization-methods-correctly.md)|Implementar métodos de serialização corretamente|
-|[CA2240](../code-quality/ca2240-implement-iserializable-correctly.md)|Implementar ISerializable corretamente|
-|[CA2241](../code-quality/ca2241-provide-correct-arguments-to-formatting-methods.md)|Fornecer argumentos corretos para métodos de formatação|
-|[CA2242](../code-quality/ca2242-test-for-nan-correctly.md)|Testar para NaN corretamente|
+|[CA2200](../code-quality/ca2200.md)|Relançar para preservar detalhes da pilha|
+|[CA2202](../code-quality/ca2202.md)|Não descartar objetos várias vezes|
+|[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor em linha|
+|[CA2212](../code-quality/ca2212.md)|Não marcar componentes atendidos com WebMethod|
+|[CA2213](../code-quality/ca2213.md)|Campos descartáveis devem ser descartados|
+|[CA2214](../code-quality/ca2214.md)|Não chamar métodos substituíveis em construtores|
+|[CA2216](../code-quality/ca2216.md)|Tipos descartáveis devem declarar o finalizador|
+|[CA2220](../code-quality/ca2220.md)|Os finalizadores devem chamar o finalizador de classe base|
+|[CA2229](../code-quality/ca2229.md)|Implementar construtores de serialização|
+|[CA2231](../code-quality/ca2231.md)|Sobrecarregar operador equals ao substituir ValueType.Equals|
+|[CA2232](../code-quality/ca2232.md)|Marcar pontos de entrada do Windows Forms com STAThread|
+|[CA2235](../code-quality/ca2235.md)|Marcar todos os campos não serializáveis|
+|[CA2236](../code-quality/ca2236.md)|Chamar métodos da classe base em tipos ISerializable|
+|[CA2237](../code-quality/ca2237.md)|Marcar tipos ISerializable com SerializableAttribute|
+|[CA2238](../code-quality/ca2238.md)|Implementar métodos de serialização corretamente|
+|[CA2240](../code-quality/ca2240.md)|Implementar ISerializable corretamente|
+|[CA2241](../code-quality/ca2241.md)|Fornecer argumentos corretos para métodos de formatação|
+|[CA2242](../code-quality/ca2242.md)|Testar para NaN corretamente|

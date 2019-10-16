@@ -1,5 +1,5 @@
 ---
-title: 'CA1032: Implementar construtores de exceção padrão'
+title: 'CA1032: implementar construtores de exceção padrão'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,25 +14,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06fdc566abd9bd16758f224f8a9fe805cddb2c61
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c39ca1d1a1edd9ac2182a3d6d55896c41c189030
+ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236057"
+ms.lasthandoff: 10/15/2019
+ms.locfileid: "72349106"
 ---
-# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: Implementar construtores de exceção padrão
+# <a name="ca1032-implement-standard-exception-constructors"></a>CA1032: implementar construtores de exceção padrão
 
 |||
 |-|-|
 |NomeDoTipo|ImplementStandardExceptionConstructors|
 |CheckId|CA1032|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo se <xref:System.Exception?displayProperty=fullName> estende, mas não declara todos os construtores necessários.
+Um tipo estende <xref:System.Exception?displayProperty=fullName>, mas não declara todos os construtores necessários.
 
 ## <a name="rule-description"></a>Descrição da regra
 
@@ -50,7 +50,7 @@ Além disso, se você estiver executando análise de FxCop herdada em oposição
 
 Deixar de fornecer o conjunto completo de construtores pode dificultar o tratamento correto das exceções. Por exemplo, o construtor que tem a assinatura `NewException(string, Exception)` é usado para criar exceções que são causadas por outras exceções. Sem esse construtor, você não pode criar e lançar uma instância de sua exceção personalizada que contém uma exceção interna (aninhada), que é o código gerenciado que deve ser feito nessa situação.
 
-Os três primeiros construtores de exceção são públicos por convenção. O quarto construtor é protegido em classes sem lacre e privado em classes lacradas. Para obter mais informações, [consulte CA2229: Implementar construtores](../code-quality/ca2229-implement-serialization-constructors.md)de serialização.
+Os três primeiros construtores de exceção são públicos por convenção. O quarto construtor é protegido em classes sem lacre e privado em classes lacradas. Para obter mais informações, consulte [CA2229: implemente construtores de serialização](../code-quality/ca2229.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -58,7 +58,7 @@ Para corrigir uma violação dessa regra, adicione os construtores ausentes à e
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso dessa regra quando a violação é causada pelo uso de um nível de acesso diferente para os construtores públicos. Além disso, não há problema em suprimir o aviso `NewException(SerializationInfo, StreamingContext)` para o Construtor se você estiver criando uma PCL (biblioteca de classes portátil).
+É seguro suprimir um aviso dessa regra quando a violação é causada pelo uso de um nível de acesso diferente para os construtores públicos. Além disso, não há problema em suprimir o aviso para o Construtor `NewException(SerializationInfo, StreamingContext)` se você estiver criando uma PCL (biblioteca de classes portátil).
 
 ## <a name="example"></a>Exemplo
 
@@ -68,4 +68,4 @@ O exemplo a seguir contém um tipo de exceção que viola essa regra e um tipo d
 
 ## <a name="see-also"></a>Consulte também
 
-[CA2229: implementar construtores de serialização](../code-quality/ca2229-implement-serialization-constructors.md)
+[CA2229: implementar construtores de serialização](../code-quality/ca2229.md)
