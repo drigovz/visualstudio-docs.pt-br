@@ -5,19 +5,19 @@ description: Uma lista com as versões lançadas e números de build do Visual S
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 10/10/2019
+ms.date: 10/15/2019
 ms.topic: reference
 ms.custom: seodec18
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3f11387de78601df68894479b7a51b6ba7d8b51c
-ms.sourcegitcommit: 21b80f7b5403c04ee69f19a394e46bf922f06d7d
+ms.openlocfilehash: 9f845c3b743c5f0ea9ccfc5f57026b7ff46268e1
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/11/2019
-ms.locfileid: "72279539"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380989"
 ---
 # <a name="visual-studio-build-numbers-and-release-dates"></a>Números de build e datas de lançamento do Visual Studio
 
@@ -29,6 +29,9 @@ A tabela a seguir lista os números de build e as datas de lançamento do Visual
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 16.3.5 | Versão | 15 de outubro de 2019 | 16.3.29411.108 |
+| 16.4.0 | Preview 2 | 15 de outubro de 2019 | 16.4.29411.138 |
+| 16.0.9 | Versão | 15 de outubro de 2019 | 16.0.28803.598 |
 | 16.3.4 | Versão | 10 de outubro de 2019 | 16.3.29409.12 |
 | 16.3.3 | Versão | 8 de outubro de 2019 | 16.3.29403.142 |
 | 16.3.2 | Versão | 1º de outubro de 2019 | 16.3.29326.143 |
@@ -102,6 +105,7 @@ A tabela a seguir relaciona os números de build e as datas de lançamento do Vi
 
 | **Versão**| **Canal** | **Data de lançamento** | **Versão do build** |
 | ---------------------- | ----------- | ---------------- | ----------------- |
+| 15.9.17 | Versão | 15 de outubro de 2019 | 15.9.28307.905 |
 | 15.9.16 | Versão | 10 de setembro de 2019 | 15.9.28307.858 |
 | 15.0.27 | Versão | 10 de setembro de 2019 | 15.0.26228.98 |
 | 15.9.15 | Versão | 13 de agosto de 2019 | 15.9.28307.812 |
