@@ -1,5 +1,5 @@
 ---
-title: 'CA1047: Não declarar membros protegidos em tipos selados'
+title: 'CA1047: não declarar membros protegidos em tipos lacrados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,24 +17,24 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3114ea004c425567ae479343e0449d2cbc3aa669
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b55da06cdaee07e0d5c30dc6c5220ef2d50f8d0b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235701"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449108"
 ---
-# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Não declarar membros protegidos em tipos selados
+# <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: não declarar membros protegidos em tipos lacrados
 
 |||
 |-|-|
 |NomeDoTipo|DoNotDeclareProtectedMembersInSealedTypes|
 |CheckId|CA1047|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
-Um tipo público é `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
+Um tipo público é `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para os métodos <xref:System.Object.Finalize%2A>, que devem seguir esse padrão.
 
 ## <a name="rule-description"></a>Descrição da regra
 Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo lacrado, o que significa que métodos protegidos em tipos lacrados não podem ser chamados.

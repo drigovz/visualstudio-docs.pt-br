@@ -1,5 +1,5 @@
 ---
-title: 'CA1708: Identificadores devem ser diferentes em algo além das maiúsculas e minúsculas'
+title: 'CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7203f7f287ebb5b71ecad6e6ad4a861d63e5cf08
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8110533573aaeb9b8c32d224cc03d6ca238e0e8e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234221"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439853"
 ---
-# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: Identificadores devem ser diferentes em algo além das maiúsculas e minúsculas
+# <a name="ca1708-identifiers-should-differ-by-more-than-case"></a>CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldDifferByMoreThanCase|
 |CheckId|CA1708|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -68,4 +68,4 @@ O exemplo a seguir demonstra uma violação dessa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)

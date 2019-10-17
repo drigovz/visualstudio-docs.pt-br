@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d7b4a993af3a473ada7b4884001e372d9f444403
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 41099f0803d6432736e051a1a6ef61c7a6e85160
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349064"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446591"
 ---
 # <a name="ca1055-uri-return-values-should-not-be-strings"></a>CA1055: os valores de retorno de URI não devem ser cadeias de caracteres
 

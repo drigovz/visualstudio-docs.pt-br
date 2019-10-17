@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b52bb573b9a98c5a797f67cdbd4608f8b8636da
-ms.sourcegitcommit: 39a04f42d23597b70053686d7e927ba78f38a9a8
+ms.openlocfilehash: 33d8d97a5d036a2bd931bfa951fea2715569830a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/05/2019
-ms.locfileid: "71975094"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448991"
 ---
 # <a name="customize-a-rule-set"></a>Personalizar um conjunto de regras
 
@@ -51,7 +51,7 @@ Para criar um conjunto de regras personalizado, você pode abrir um conjunto de 
 4. Selecione **abrir** para exibir as regras no editor de conjunto de regras.
 
 > [!NOTE]
-> Se você tiver um projeto .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . Siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativo](analyzer-rule-sets.md). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
+> Se você tiver um projeto do .NET Core ou .NET Standard, o processo será um pouco diferente porque não há nenhuma guia de propriedade de **análise de código** . siga as etapas para [copiar um conjunto de regras predefinidas para seu projeto e defini-lo como o conjunto de regras ativas](analyzer-rule-sets.md). Depois de copiar um conjunto de regras, você pode [editá-lo no editor de conjunto de regras do Visual Studio](working-in-the-code-analysis-rule-set-editor.md) abrindo-o em **Gerenciador de soluções**.
 
 ## <a name="create-a-new-rule-set"></a>Criar um novo conjunto de regras
 
@@ -111,7 +111,7 @@ Você pode criar um novo arquivo de conjunto de regras a partir da caixa de diá
 
 - Se a mesma regra estiver listada duas ou mais vezes em um conjunto de regras com a *mesma* gravidade, você poderá ver o seguinte aviso no **lista de erros**:
 
-   **CA0063 : Falha ao carregar o arquivo de conjunto de regras ' \[your]. RuleSet ' ou um de seus arquivos de conjunto de regras dependentes. O arquivo não está em conformidade com o esquema do conjunto de regras.**
+   **CA0063: falha ao carregar o arquivo de conjunto de regras ' \[your]. RuleSet ' ou um de seus arquivos de conjunto de regras dependentes. O arquivo não está em conformidade com o esquema do conjunto de regras.**
 
 - Se o conjunto de regras incluir uma regra filho definida usando uma marca **include** , e os conjuntos de regras filho e Parent listarem a mesma regra, mas com severidades diferentes, a severidade no conjunto de regras pai terá precedência. Por exemplo:
 
@@ -147,5 +147,5 @@ Agora que você tem um conjunto de regras, a próxima etapa é personalizar as r
 
 ## <a name="see-also"></a>Consulte também
 
-- [Como: Configurar a análise de código para um projeto de código gerenciado @ no__t-0
+- [Como configurar a análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [Referência do conjunto de regras de análise de código](../code-quality/rule-set-reference.md)

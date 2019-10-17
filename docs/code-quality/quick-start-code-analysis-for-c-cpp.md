@@ -1,5 +1,5 @@
 ---
-title: 'Início Rápido: Análise de código para C/C++'
+title: 'Início Rápido: análise de código para C/C++'
 description: Execute a análise estática C++ no código do Visual Studio para detectar problemas comuns de codificação e defeitos.
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2c68bb94a66be2c9fc1da4365cb77adf8d1330a1
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 4beaff14e896eae15d4ce68acf35331d03203246
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163019"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445638"
 ---
-# <a name="quickstart-code-analysis-for-cc"></a>Início Rápido: Análise de código para C/C++
+# <a name="quickstart-code-analysis-for-cc"></a>Início Rápido: análise de código para C/C++
 
 Você pode melhorar a qualidade do seu aplicativo executando a análise de código regularmente em C C++ ou Code. Isso pode ajudá-lo a encontrar problemas comuns, violações de boa prática de programação ou defeitos que são difíceis de descobrir por meio de testes. Os avisos da análise de código diferem dos erros e avisos do compilador porque a análise de código procura por padrões de código específicos que são válidos, mas que ainda podem criar problemas para você ou outras pessoas que usam seu código.
 
@@ -28,7 +28,7 @@ Você pode melhorar a qualidade do seu aplicativo executando a análise de códi
 
 2. Opcionalmente, nas listas de **configuração** e **plataforma** , escolha a configuração de compilação e a plataforma de destino.
 
-3. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código no Build** caixa de seleção. Você também pode executar a análise de código manualmente abrindo o menu **analisar** e, em seguida, escolhendo **executar análise de código no** *ProjectName* ou **executar análise de código no arquivo**.
+3. Para executar a análise de código toda vez que o projeto for criado usando a configuração selecionada, marque a caixa de seleção **Habilitar análise de código na compilação** . Você também pode executar a análise de código manualmente abrindo o menu **analisar** e, em seguida, escolhendo **executar análise de código no** *ProjectName* ou **executar análise de código no arquivo**.
 
 4. Escolha o [conjunto de regras](../code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run.md) que você deseja usar ou crie um [conjunto de regras personalizado](../code-quality/how-to-create-a-custom-rule-set.md). Se estiver usando LLVM/Clang-CL, consulte [usando Clang-organizar no Visual Studio](../code-quality/clang-tidy.md) para configurar as opções de análise de Clang.
 
@@ -105,7 +105,7 @@ Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos e
 
 - **Para filtrar avisos por ID de aviso ou título**: Insira a palavra-chave na caixa de pesquisa.
 
-- **Para filtrar avisos por severidade**: Por padrão, as mensagens de análise de código recebem uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em um conjunto de regras personalizadas. Na coluna **severidade** da **lista de erros**, escolha a seta suspensa e, em seguida, o ícone de filtro. Escolha **aviso** ou **erro** para exibir apenas as mensagens que recebem a respectiva severidade. Escolha **selecionar tudo** para exibir todas as mensagens.
+- **Para filtrar avisos por severidade**: por padrão, as mensagens de análise de código recebem uma severidade de **aviso**. Você pode atribuir a severidade de uma ou mais mensagens como **erro** em um conjunto de regras personalizadas. Na coluna **severidade** da **lista de erros**, escolha a seta suspensa e, em seguida, o ícone de filtro. Escolha **aviso** ou **erro** para exibir apenas as mensagens que recebem a respectiva severidade. Escolha **selecionar tudo** para exibir todas as mensagens.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1048: Não declarar membros virtuais em tipos selados'
+title: 'CA1048: não declarar membros virtuais em tipos lacrados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,24 +14,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be0e1b4865b19930f8ddf7163a36b71123bb3a55
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d0b4e930af332c5486bca5ef6b93cef8e2376f31
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235695"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446610"
 ---
-# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: Não declarar membros virtuais em tipos selados
+# <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048: não declarar membros virtuais em tipos lacrados
 
 |||
 |-|-|
 |NomeDoTipo|DoNotDeclareVirtualMembersInSealedTypes|
 |CheckId|CA1048|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
-Um tipo público é lacrado e declara um método que é ambos `virtual` (`Overridable` em Visual Basic) e não final. Essa regra não relata violações para tipos delegados, que devem seguir esse padrão.
+Um tipo público é lacrado e declara um método que é `virtual` (`Overridable` em Visual Basic) e não final. Essa regra não relata violações para tipos delegados, que devem seguir esse padrão.
 
 ## <a name="rule-description"></a>Descrição da regra
 Os tipos declaram métodos como virtuais de forma que a herança de tipos possa substituir a implementação do método virtual. Por definição, você não pode herdar de um tipo lacrado, tornando um método virtual em um tipo lacrado sem sentido.

@@ -1,5 +1,5 @@
 ---
-title: 'CA1058: Tipos não devem estender determinados tipos base'
+title: 'CA1058: os tipos não devem estender determinados tipos base'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1ffbb393700647f12c455c8d1307a77548f2d1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8bec913e5352c0028859f03ebda7c5f112db654f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446548"
 ---
-# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: Tipos não devem estender determinados tipos base
+# <a name="ca1058-types-should-not-extend-certain-base-types"></a>CA1058: os tipos não devem estender determinados tipos base
 
 |||
 |-|-|
 |NomeDoTipo|TypesShouldNotExtendCertainBaseTypes|
 |CheckId|CA1058|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -47,7 +47,7 @@ Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é
 
 ## <a name="rule-description"></a>Descrição da regra
 
-<xref:System.Exception?displayProperty=fullName> As<xref:System> exceções devem derivar de ou de uma de suas subclasses no namespace.
+As exceções devem derivar de <xref:System.Exception?displayProperty=fullName> ou uma de suas subclasses no namespace <xref:System>.
 
 Não crie uma subclasse de <xref:System.Xml.XmlDocument> se desejar criar uma exibição XML de um modelo de objeto subjacente ou fonte de dados.
 
@@ -85,7 +85,7 @@ Para corrigir uma violação dessa regra, derive o tipo de um tipo base diferent
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Não suprimir um aviso desta regra para violações <xref:System.ApplicationException>. É seguro suprimir um aviso desta regra para violações <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genérica se o código tiver sido liberado anteriormente.
+Não suprimir um aviso desta regra para violações sobre <xref:System.ApplicationException>. É seguro suprimir um aviso dessa regra em busca de violações sobre <xref:System.Xml.XmlDocument>. É seguro suprimir um aviso sobre uma coleção não genérica se o código tiver sido liberado anteriormente.
 
 ## <a name="configurability"></a>Configurabilidade
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1025: Substituir argumentos repetitivos por matriz de parâmetros'
+title: 'CA1025: substituir argumentos repetitivos por matriz de parâmetros'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f65d64dd4e881c41b17cd7cb9dc072a6fe800766
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a6b6c45a8a56cab3927355fc4f03c541bcffc1cf
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236140"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446677"
 ---
-# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: Substituir argumentos repetitivos por matriz de parâmetros
+# <a name="ca1025-replace-repetitive-arguments-with-params-array"></a>CA1025: substituir argumentos repetitivos por matriz de parâmetros
 
 |||
 |-|-|
 |NomeDoTipo|ReplaceRepetitiveArgumentsWithParamsArray|
 |CheckId|CA1025|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um método público ou protegido em um tipo público tem mais de três parâmetros, e seus últimos três parâmetros são do mesmo tipo.
 
 ## <a name="rule-description"></a>Descrição da regra
-Use uma matriz de parâmetros em vez de argumentos repetidos quando o número exato de argumentos for desconhecido e os argumentos da variável forem do mesmo tipo, ou podem ser passados como o mesmo tipo. Por exemplo, o <xref:System.Console.WriteLine%2A> método fornece uma sobrecarga de finalidade geral que usa uma matriz de parâmetros para aceitar qualquer número <xref:System.Object> de argumentos.
+Use uma matriz de parâmetros em vez de argumentos repetidos quando o número exato de argumentos for desconhecido e os argumentos da variável forem do mesmo tipo, ou podem ser passados como o mesmo tipo. Por exemplo, o método <xref:System.Console.WriteLine%2A> fornece uma sobrecarga de finalidade geral que usa uma matriz de parâmetros para aceitar qualquer número de argumentos <xref:System.Object>.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, substitua os argumentos repetidos por uma matriz de parâmetros.

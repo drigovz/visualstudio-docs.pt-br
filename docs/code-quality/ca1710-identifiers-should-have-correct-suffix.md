@@ -1,5 +1,5 @@
 ---
-title: 'CA1710: Identificadores devem ter um sufixo correto'
+title: 'CA1710: os identificadores devem ter o sufixo correto'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c67c614c4ece8f1925f4133f749a1c5747fe31
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: d52b9dd3eaf6312ece4939d3bdf1b64574bc21da
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234163"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439834"
 ---
-# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: Identificadores devem ter um sufixo correto
+# <a name="ca1710-identifiers-should-have-correct-suffix"></a>CA1710: os identificadores devem ter o sufixo correto
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldHaveCorrectSuffix|
 |CheckId|CA1710|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -63,11 +63,11 @@ A tabela a seguir lista os tipos de base e as interfaces que têm sufixos associ
 |<xref:System.Security.Policy.IMembershipCondition?displayProperty=fullName>|Condição|
 |Um delegado de manipulador de eventos.|EventHandler|
 
-Os tipos que <xref:System.Collections.ICollection> implementam e são um tipo generalizado de estrutura de dados, como um dicionário, uma pilha ou uma fila, são nomes permitidos que fornecem informações significativas sobre o uso pretendido do tipo.
+Os tipos que implementam <xref:System.Collections.ICollection> e são um tipo generalizado de estrutura de dados, como um dicionário, uma pilha ou uma fila, são nomes permitidos que fornecem informações significativas sobre o uso pretendido do tipo.
 
-Os tipos que <xref:System.Collections.ICollection> implementam e são uma coleção de itens específicos têm nomes que terminam com a palavra ' Collection '. Por exemplo, uma coleção de <xref:System.Collections.Queue> objetos teria o nome ' QueueCollection '. O sufixo ' Collection ' significa que os membros da coleção podem ser enumerados usando a `foreach` instrução (`For Each` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Tipos que implementam <xref:System.Collections.ICollection> e são uma coleção de itens específicos têm nomes que terminam com a palavra ' Collection '. Por exemplo, uma coleção de objetos <xref:System.Collections.Queue> teria o nome ' QueueCollection '. O sufixo ' Collection ' significa que os membros da coleção podem ser enumerados usando a instrução `foreach` (`For Each` na [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
-Os tipos que <xref:System.Collections.IDictionary> implementam têm nomes que terminam com a palavra ' Dictionary ', mesmo que <xref:System.Collections.IEnumerable> o <xref:System.Collections.ICollection>tipo também implemente ou. As convenções de nomenclatura de sufixo ' Collection ' e ' Dictionary ' permitem que os usuários diferenciem entre os dois padrões de enumeração a seguir.
+Os tipos que implementam <xref:System.Collections.IDictionary> têm nomes que terminam com a palavra ' Dictionary ', mesmo que o tipo também implemente <xref:System.Collections.IEnumerable> ou <xref:System.Collections.ICollection>. As convenções de nomenclatura de sufixo ' Collection ' e ' Dictionary ' permitem que os usuários diferenciem entre os dois padrões de enumeração a seguir.
 
 Os tipos com o sufixo ' Collection ' seguem esse padrão de enumeração.
 
@@ -81,7 +81,7 @@ Os tipos com o sufixo ' Dictionary ' seguem esse padrão de enumeração.
 foreach(SomeType x in SomeDictionary.Values) { }
 ```
 
-Um <xref:System.Data.DataSet> objeto consiste em uma coleção de <xref:System.Data.DataTable> objetos, <xref:System.Data.DataColumn?displayProperty=fullName> que consistem em coleções e <xref:System.Data.DataRow?displayProperty=fullName> objetos, entre outros. Essas coleções implementam <xref:System.Collections.ICollection> por meio <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName> da classe base.
+Um objeto <xref:System.Data.DataSet> consiste em uma coleção de objetos <xref:System.Data.DataTable>, que consistem em coleções de objetos <xref:System.Data.DataColumn?displayProperty=fullName> e <xref:System.Data.DataRow?displayProperty=fullName>, entre outros. Essas coleções implementam <xref:System.Collections.ICollection> por meio da classe base <xref:System.Data.InternalDataCollectionBase?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -89,7 +89,7 @@ Renomeie o tipo para que ele seja sufixado com o termo correto.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso para usar o sufixo ' Collection ' se o tipo for uma estrutura de dados generalizada que pode ser estendida ou que conterá um conjunto arbitrário de itens diferentes. Nesse caso, um nome que fornece informações significativas sobre a implementação, o desempenho ou outras características da estrutura de dados pode fazer sentido (por exemplo, BinaryTree). Nos casos em que o tipo representa uma coleção de um tipo específico (por exemplo, StringCollection), não omita um aviso dessa regra porque o sufixo indica que o tipo pode ser enumerado usando uma `foreach` instrução.
+É seguro suprimir um aviso para usar o sufixo ' Collection ' se o tipo for uma estrutura de dados generalizada que pode ser estendida ou que conterá um conjunto arbitrário de itens diferentes. Nesse caso, um nome que fornece informações significativas sobre a implementação, o desempenho ou outras características da estrutura de dados pode fazer sentido (por exemplo, BinaryTree). Nos casos em que o tipo representa uma coleção de um tipo específico (por exemplo, StringCollection), não suprime um aviso dessa regra porque o sufixo indica que o tipo pode ser enumerado usando uma instrução `foreach`.
 
 Para outros sufixos, não omita um aviso dessa regra. O sufixo permite que o uso pretendido seja evidente a partir do nome do tipo.
 
@@ -105,7 +105,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1711: Os identificadores não devem ter um sufixo incorreto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
+[CA1711: os identificadores não devem ter sufixo incorreto](../code-quality/ca1711-identifiers-should-not-have-incorrect-suffix.md)
 
 ## <a name="see-also"></a>Consulte também
 

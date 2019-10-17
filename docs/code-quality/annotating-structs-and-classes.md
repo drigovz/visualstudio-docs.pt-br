@@ -24,12 +24,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cff36760a84821a33dcdb1ee4cc6842cd40aee0
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ac3d6225bc765ec404784589d2faa06f155265ab
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015974"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446287"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 
@@ -45,7 +45,7 @@ Você pode anotar os membros de struct e de classe usando anotações que agem c
 
      Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size`.
 
-- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`,         `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
+- `_Field_size_part_(size, count)`, `_Field_size_part_opt_(size, count)`, `_Field_size_bytes_part_(size, count)`, `_Field_size_bytes_part_opt_(size, count)`
 
      Um campo que tem um tamanho gravável em elementos (ou bytes) conforme especificado por `size` e o `count` desses elementos (bytes) que são legíveis.
 

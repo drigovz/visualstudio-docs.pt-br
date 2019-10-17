@@ -1,5 +1,5 @@
 ---
-title: 'CA1502: Evitar complexidade excessiva'
+title: 'CA1502: evitar complexidade excessiva'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f26faf16cc8a9a8235596aef68e5af5c3b4401e
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 8eaaaa8b810e79b2bd1a4da0ab1d9887c8a46380
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71253299"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440120"
 ---
-# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: Evitar complexidade excessiva
+# <a name="ca1502-avoid-excessive-complexity"></a>CA1502: evitar complexidade excessiva
 
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveComplexity|
 |CheckId|CA1502|
-|Categoria|Microsoft.Maintainability|
+|Categoria|Microsoft. Maintainabilidade|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -56,15 +56,15 @@ Para corrigir uma violação dessa regra, refatore o método para reduzir sua co
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso dessa regra se a complexidade não puder ser facilmente reduzida e o método for fácil de entender, testar e manter. Em particular, um método que contém uma instrução `switch` (`Select` in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) grande é um candidato para exclusão. O risco de desestabilizar a base de código no final do ciclo de desenvolvimento ou introduzir uma alteração inesperada no comportamento de tempo de execução no código fornecido anteriormente pode superar os benefícios de manutenção da refatoração do código.
+É seguro suprimir um aviso dessa regra se a complexidade não puder ser facilmente reduzida e o método for fácil de entender, testar e manter. Em particular, um método que contém uma instrução grande `switch` (`Select` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) é um candidato para exclusão. O risco de desestabilizar a base de código no final do ciclo de desenvolvimento ou introduzir uma alteração inesperada no comportamento de tempo de execução no código fornecido anteriormente pode superar os benefícios de manutenção da refatoração do código.
 
 ## <a name="how-cyclomatic-complexity-is-calculated"></a>Como a complexidade do ciclomática é calculada
 
 A complexidade do ciclomática é calculada adicionando 1 ao seguinte:
 
-- Número de ramificações (como `if`, `while`e `do`)
+- Número de ramificações (como `if`, `while` e `do`)
 
-- Número de `case` instruções em um`switch`
+- Número de instruções `case` em um `switch`
 
 ## <a name="example"></a>Exemplo
 
@@ -102,7 +102,7 @@ Os exemplos a seguir mostram métodos que têm complexidades ciclomática variá
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1501: Evitar herança excessiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
+[CA1501: evitar herança excessiva](../code-quality/ca1501-avoid-excessive-inheritance.md)
 
 ## <a name="see-also"></a>Consulte também
 

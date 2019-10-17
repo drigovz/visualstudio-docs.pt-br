@@ -1,5 +1,5 @@
 ---
-title: 'CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas'
+title: 'CA1702: palavras compostas devem ter maiúsculas e minúsculas corretas'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5480d3dde926dfe31b018a5cd0b1ea6a5813063b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: ea3285bfd5769a2bd37363d5a9eb6179b9cef563
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234331"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72439906"
 ---
-# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: Palavras compostas devem ter maiúsculas e minúsculas corretas
+# <a name="ca1702-compound-words-should-be-cased-correctly"></a>CA1702: palavras compostas devem ter maiúsculas e minúsculas corretas
 
 |||
 |-|-|
 |NomeDoTipo|CompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1702|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra-quando acionada em assemblies.<br /><br /> Não separável-quando acionado em parâmetros de tipo.|
 
 ## <a name="cause"></a>Causa
@@ -65,9 +65,9 @@ Por exemplo:
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1701: As palavras compostas da cadeia de recursos devem estar em maiúsculas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
-- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1701: as palavras compostas da cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas](../code-quality/ca1701-resource-string-compound-words-should-be-cased-correctly.md)
+- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Consulte também
 

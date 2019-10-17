@@ -1,5 +1,5 @@
 ---
-title: 'CA1711: Identificadores não devem ter um sufixo incorreto'
+title: 'CA1711: os identificadores não devem ter sufixo incorreto'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e04487a9bfcd8ef9a0e9a15bc76a93b221f9ce1
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1a2ae438091c55c9e0e6b14350ca2527907ab33c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234140"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443914"
 ---
-# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: Identificadores não devem ter um sufixo incorreto
+# <a name="ca1711-identifiers-should-not-have-incorrect-suffix"></a>CA1711: os identificadores não devem ter sufixo incorreto
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldNotHaveIncorrectSuffix|
 |CheckId|CA1711|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -61,9 +61,9 @@ Além disso, os seguintes sufixos **não** devem ser usados:
 
 - `Enum`
 
-- `Impl`(use `Core` em vez disso)
+- `Impl` (use `Core` em vez disso)
 
-- `Ex`ou sufixo semelhante para distingui-lo de uma versão anterior do mesmo tipo
+- `Ex` ou sufixo semelhante para distingui-lo de uma versão anterior do mesmo tipo
 
 As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Isso reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
@@ -87,7 +87,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1710: Os identificadores devem ter o sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
+- [CA1710: os identificadores devem ter o sufixo correto](../code-quality/ca1710-identifiers-should-have-correct-suffix.md)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,6 +1,6 @@
 ---
 title: Anotando parâmetros de função e valores de retorno
-ms.date: 07/11/2019
+ms.date: 10/15/2019
 ms.topic: conceptual
 f1_keywords:
 - _Outptr_opt_result_bytebuffer_to_
@@ -128,12 +128,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 1001b37509432a7ae95a565d90d972d2043fdeab
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ca1e66defbce50a9119e817155bcc2a98d01af9d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72016014"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72442401"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve usos típicos de anotações para parâmetros de função simples – escalares e ponteiros para estruturas e classes – e a maioria dos tipos de buffers.  Este artigo também mostra padrões de uso comuns para anotações. Para anotações adicionais relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md).
@@ -200,34 +200,6 @@ Para as anotações na tabela a seguir, quando um parâmetro de ponteiro está s
      `_Inout_updates_bytes_(s)`
 
      Um ponteiro para uma matriz, que é lido e gravado na função.  É do tamanho `s`, e é válido em pré e após o estado.
-
-     A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
-
-- `_Inout_updates_z_(s)`
-
-     Um ponteiro para uma matriz terminada em nulo e tem um tamanho conhecido. Os elementos acima do terminador nulo — que devem estar presentes — devem ser válidos em pré e após o estado.  O valor no pós-Estado é presumido que seja diferente do valor no pré-estado; Isso inclui o local do terminador nulo. Se o tamanho for conhecido em bytes, dimensione `s` pelo tamanho do elemento.
-
-- `_Out_writes_to_(s,c)`
-
-     `_Out_writes_bytes_to_(s,c)`
-
-     `_Out_writes_all_(s)`
-
-     `_Out_writes_bytes_all_(s)`
-
-     Um ponteiro para uma matriz de elementos `s`.  Os elementos não precisam ser válidos em pré-estado.  No pós-Estado, os elementos até o elemento `c`-ésimo devem ser válidos.  Se o tamanho for conhecido em bytes, dimensione `s` e `c` pelo tamanho do elemento ou use a variante `_bytes_`, que é definida como:
-
-     `_Out_writes_to_(_Old_(s), _Old_(s))    _Out_writes_bytes_to_(_Old_(s), _Old_(s))`
-
-     Em outras palavras, todos os elementos que existem no buffer até `s` no pré-estado são válidos no pós-Estado.  Por exemplo:
-
-     `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`
-
-- `_Inout_updates_to_(s,c)`
-
-     `_Inout_updates_bytes_to_(s,c)`
-
-     Um ponteiro para uma matriz, que é lido e gravado pela função.  É do tamanho @no__t elementos-0, todos os quais devem ser válidos em pré-estado e os elementos `c` devem ser válidos no pós-Estado.
 
      A variante `_bytes_` fornece o tamanho em bytes em vez de elementos. Use-o somente quando o tamanho não puder ser expresso como elementos.  Por exemplo, as cadeias de caracteres `char` usarão a variante `_bytes_` somente se uma função semelhante que usa `wchar_t` faria.
 

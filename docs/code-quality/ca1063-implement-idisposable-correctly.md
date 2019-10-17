@@ -1,5 +1,5 @@
 ---
-title: 'CA1063: Implementar IDisposable corretamente'
+title: 'CA1063: implementar IDisposable corretamente'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -16,49 +16,49 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b29c9ed644c223488261333e79f17229bd4b7a3
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 0fd4ba8d5dd5568dc7fca50ed61739b490bdcba7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235296"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440609"
 ---
-# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: Implementar IDisposable corretamente
+# <a name="ca1063-implement-idisposable-correctly"></a>CA1063: implementar IDisposable corretamente
 
 |||
 |-|-|
 |NomeDoTipo|ImplementIDisposableCorrectly|
 |CheckId|CA1063|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-A <xref:System.IDisposable?displayProperty=nameWithType> interface não está implementada corretamente. Os motivos possíveis para isso incluem:
+A interface <xref:System.IDisposable?displayProperty=nameWithType> não está implementada corretamente. Os motivos possíveis para isso incluem:
 
-- <xref:System.IDisposable>é reimplementado na classe.
+- <xref:System.IDisposable> é reimplementado na classe.
 
-- `Finalize`é substituído novamente.
+- `Finalize` é substituído novamente.
 
-- `Dispose()`é substituído.
+- `Dispose()` é substituído.
 
-- O `Dispose()` método não é público, [lacrado](/dotnet/csharp/language-reference/keywords/sealed)ou chamado **Dispose**.
+- O método `Dispose()` não é público, [lacrado](/dotnet/csharp/language-reference/keywords/sealed)ou chamado **Dispose**.
 
-- `Dispose(bool)`Não é protegido, virtual ou não lacrado.
+- `Dispose(bool)` não é protegido, virtual ou não lacrado.
 
-- Em tipos sem lacre, `Dispose()` é necessário chamar. `Dispose(true)`
+- Em tipos sem lacre, `Dispose()` deve chamar `Dispose(true)`.
 
-- Para tipos sem lacre, a `Finalize` implementação não chama um ou ambos `Dispose(bool)` ou o finalizador de classe base.
+- Para tipos sem lacre, a implementação `Finalize` não chama um ou ambos os `Dispose(bool)` ou o finalizador de classe base.
 
 A violação de qualquer um desses padrões dispara CA1063 de aviso.
 
-Todo tipo sem lacre que declara e implementa a <xref:System.IDisposable> interface deve fornecer seu próprio `protected virtual void Dispose(bool)` método. `Dispose()`deve chamar `Dispose(true)`, e o finalizador deve chamar `Dispose(false)`. Se você criar um tipo sem lacre que declare e implemente a <xref:System.IDisposable> interface, deverá defini `Dispose(bool)` -la e chamá-la. Para obter mais informações, consulte [limpar recursos não gerenciados (guia .net)](/dotnet/standard/garbage-collection/unmanaged) e [padrão Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
+Todo tipo sem lacre que declara e implementa a interface <xref:System.IDisposable> deve fornecer seu próprio método `protected virtual void Dispose(bool)`. `Dispose()` deve chamar `Dispose(true)`, e o finalizador deve chamar `Dispose(false)`. Se você criar um tipo sem lacre que declare e implemente a interface <xref:System.IDisposable>, deverá definir `Dispose(bool)` e chamá-lo. Para obter mais informações, consulte [limpar recursos não gerenciados (guia .net)](/dotnet/standard/garbage-collection/unmanaged) e [padrão Dispose](/dotnet/standard/design-guidelines/dispose-pattern).
 
 Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Todos <xref:System.IDisposable> os tipos devem implementar o [padrão Dispose](/dotnet/standard/design-guidelines/dispose-pattern) corretamente.
+Todos os tipos <xref:System.IDisposable> devem implementar o [padrão Dispose](/dotnet/standard/design-guidelines/dispose-pattern) corretamente.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -76,11 +76,11 @@ Examine seu código e determine quais das seguintes resoluções corrigirão ess
 
 - Certifique-se de que Dispose (bool) seja declarado como protegido, virtual e não lacrado.
 
-- Modifique Dispose () para que ele chame Dispose (true) e, em <xref:System.GC.SuppressFinalize%2A> seguida, chame na instância do`this`objeto atual `Me` (ou em Visual Basic) e, em seguida, retorna.
+- Modifique Dispose () para que ele chame Dispose (true) e, em seguida, chame <xref:System.GC.SuppressFinalize%2A> na instância de objeto atual (`this` ou `Me` em Visual Basic) e, em seguida, retorna.
 
 - Modifique o finalizador para que ele chame Dispose (false) e, em seguida, retorne.
 
-- Se você criar um tipo sem lacre que declare e implemente a <xref:System.IDisposable> interface, certifique-se de que a implementação de <xref:System.IDisposable> segue o padrão descrito anteriormente nesta seção.
+- Se você criar um tipo sem lacre que declare e implemente a interface <xref:System.IDisposable>, certifique-se de que a implementação de <xref:System.IDisposable> segue o padrão descrito anteriormente nesta seção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

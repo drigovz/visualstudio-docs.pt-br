@@ -1,5 +1,5 @@
 ---
-title: 'CA1403: Tipos de layout automático não devem ser visíveis no COM'
+title: 'CA1403: os tipos de layout automático não devem ser visíveis em COM'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e590514247444d32d0d9a31b2bbc409434cf53c
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 8329c51e58478e1902f64232f4f2546418639e34
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234829"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440527"
 ---
-# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Tipos de layout automático não devem ser visíveis no COM
+# <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: os tipos de layout automático não devem ser visíveis em COM
 
 |||
 |-|-|
@@ -35,17 +35,17 @@ ms.locfileid: "71234829"
 
 ## <a name="cause"></a>Causa
 
-Um tipo de valor visível Component Object Model (com) é marcado com <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> o atributo definido <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>como.
+Um tipo de valor visível Component Object Model (COM) é marcado com o atributo <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=fullName> definido como <xref:System.Runtime.InteropServices.LayoutKind.Auto?displayProperty=fullName>.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-<xref:System.Runtime.InteropServices.LayoutKind>os tipos de layout são gerenciados pelo Common Language Runtime. O layout desses tipos pode ser alterado entre as versões do .NET, o que interrompe os clientes COM que esperam um layout específico. Se o <xref:System.Runtime.InteropServices.StructLayoutAttribute> atributo não for especificado, os C#compiladores, Visual Basic C++ e especificam [LayoutKind. auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
+os tipos de layout <xref:System.Runtime.InteropServices.LayoutKind> são gerenciados pelo Common Language Runtime. O layout desses tipos pode ser alterado entre as versões do .NET, o que interrompe os clientes COM que esperam um layout específico. Se o atributo <xref:System.Runtime.InteropServices.StructLayoutAttribute> não for especificado, o C#, Visual Basic e C++ compiladores especificam [LayoutKind. auto](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
 
 A menos que marcado de outra forma, todos os tipos públicos e não genéricos são visíveis para COM, e todos os tipos não públicos e genéricos são invisíveis para COM. No entanto, para reduzir os falsos positivos, essa regra requer que a visibilidade de COM do tipo seja explicitamente declarada. O assembly contentor deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> definido como `false` e o tipo deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute> definido como `true`.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, altere o valor do <xref:System.Runtime.InteropServices.StructLayoutAttribute> atributo para [LayoutKind. Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) ou [LayoutKind. Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)ou torne o tipo invisível para com.
+Para corrigir uma violação dessa regra, altere o valor do atributo <xref:System.Runtime.InteropServices.StructLayoutAttribute> para [LayoutKind. Explicit](<xref:System.Runtime.InteropServices.LayoutKind.Explicit>) ou [LayoutKind. Sequential](<xref:System.Runtime.InteropServices.LayoutKind.Sequential>)ou torne o tipo invisível para com.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -60,7 +60,7 @@ O exemplo a seguir mostra um tipo que viola a regra e um tipo que satisfaz a reg
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1408: Não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Consulte também
 

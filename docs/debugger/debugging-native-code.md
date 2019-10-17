@@ -20,39 +20,39 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8115d16b64096af343adb918ba4855d9655d4df0
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: e51918122834dd6b50952b9cc81a1d24a6477dd0
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211149"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431771"
 ---
 # <a name="debugging-native-code"></a>Depurando código nativo
 A seção aborda alguns problemas comuns de depuração e técnicas para aplicativos nativos. As técnicas abordadas nesta seção são de alto nível. Para obter a mecânica de uso do depurador do Visual Studio, consulte [primeira olhada no depurador](../debugger/debugger-feature-tour.md)).
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: Depurar código](../debugger/how-to-debug-optimized-code.md) otimizado dá dicas para depurar código otimizado, especificamente, por que você deve depurar uma versão não otimizada do seu programa, configurações de otimização padrão para configurações de depuração e versão e dicas para localizar bugs que apenas aparecem no código otimizado (ativando a otimização em uma configuração de compilação de depuração).
+ [Como: depurar código otimizado](../debugger/how-to-debug-optimized-code.md) Fornece dicas para depurar código otimizado, especificamente, por que você deve depurar uma versão não otimizada do seu programa, configurações de otimização padrão para configurações de depuração e versão e dicas para localizar bugs que aparecem apenas no código otimizado (ativando otimização em uma configuração de compilação de depuração).
 
- [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md) Descreve a função `DebugBreak` do Win32 e fornece um link para seu tópico de referência no Platform SDK. Também descreve o `__debugbreak` intrínseco.
+ [DebugBreak e __debugbreak](../debugger/debugbreak-and-debugbreak.md) Descreve a função Win32 `DebugBreak` e fornece um link para seu tópico de referência no Platform SDK. Também descreve o `__debugbreak` intrínseco.
 
- [C/C++ asserções](../debugger/c-cpp-assertions.md) discute instruções de asserção, como elas funcionam, os benefícios de usá-las (capturar erros lógicos, verificar os resultados de uma operação e testar condições de erro), `_DEBUG`sua interação com e os tipos de asserções com suporte [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]no.
+ [C/C++ asserções](../debugger/c-cpp-assertions.md) Discute instruções de asserção, como elas funcionam, os benefícios de usá-las (capturar erros lógicos, verificar os resultados de uma operação e testar condições de erro), sua interação com `_DEBUG` e os tipos de asserções com suporte no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
- [Como: Depurar o código](../debugger/how-to-debug-inline-assembly-code.md) de assembly embutido fornece instruções curtas sobre como usar a janela de desmontagem para exibir as instruções do assembly e a janela de registros para exibir o conteúdo do registro e fornece links para tópicos sobre essas janelas.
+ [Como: depurar código de assembly embutido](../debugger/how-to-debug-inline-assembly-code.md) Fornece instruções curtas sobre como usar a janela de desmontagem para exibir as instruções do assembly e a janela de registros para exibir o conteúdo do registro e fornece links para tópicos relacionados a essas janelas.
 
  [Técnicas de depuração do MFC](../debugger/mfc-debugging-techniques.md) Vincula você à depuração de técnicas para programas MFC, incluindo: afxDebugBreak, a macro TRACE, detectar vazamentos de memória no MFC, asserções do MFC e reduzir o tamanho das compilações de depuração do MFC.
 
  [Técnicas de depuração CRT](../debugger/crt-debugging-techniques.md) Vincula você a técnicas de depuração para a biblioteca de tempo de execução C, incluindo o uso da biblioteca de depuração CRT, macros para relatórios, diferenças entre malloc e _malloc_dbg, gravação de funções de gancho de depuração e heap de depuração CRT.
 
- [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md) Fornece respostas para perguntas frequentes sobre a depuração C++ de programas visuais
+ [Perguntas frequentes sobre depuração de código nativo](../debugger/debugging-native-code-faqs.md) Fornece respostas para perguntas frequentes sobre programas C++ de depuração
 
  [Depuração com e ActiveX](../debugger/com-and-activex-debugging.md) Fornece informações sobre depuração de aplicativos COM e ActiveX, incluindo ferramentas que você pode usar para depuração COM e ActiveX.
 
- [Como: Depurar código](../debugger/how-to-debug-injected-code.md) injetado fornece orientação sobre o código de depuração que usa atributos. As instruções incluem como ativar a Anotação de Origem, como exibir o código injetado e como exibir o código de desmontagem no ponto de execução atual.
+ [Como: depurar código injetado](../debugger/how-to-debug-injected-code.md) Fornece orientação sobre o código de depuração que usa atributos. As instruções incluem como ativar a Anotação de Origem, como exibir o código injetado e como exibir o código de desmontagem no ponto de execução atual.
 
- [Passo a passo: A depuração de um](../debugger/walkthrough-debugging-a-parallel-application.md) aplicativo paralelo descreve como usar as janelas de ferramenta **tarefas paralelas** e de **pilhas paralelas** para depurar um aplicativo paralelo.
+ [Walkthrough: Depurando um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md) Descreve como usar as janelas de ferramentas de **tarefas paralelas** e de **pilhas paralelas** para depurar um aplicativo paralelo.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Tipos C++ de projeto Visual](../debugger/debugging-preparation-visual-cpp-project-types.md) fornece links para tópicos que descrevem como depurar os tipos de projeto nativos criados pelos modelos C++ de projeto Visual.
+ [Preparar para depurar C++ projetos](../debugger/debugging-preparation-visual-cpp-project-types.md) fornece links para tópicos que descrevem como depurar os tipos de projeto nativos criados pelos modelos C++ de projeto.
 
  [Depuração de projetos de dll](../debugger/debugging-dll-projects.md) Fornece informações sobre como depurar DLLs nativas e gerenciadas.
 

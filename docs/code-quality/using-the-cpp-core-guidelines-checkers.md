@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 dev_langs:
 - CPP
-ms.openlocfilehash: 57c8d6daf75987bfb5c6a6642b89f198693a5dce
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: fee4478f52cd107d2173919617aca8acd07234eb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72018406"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445646"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usar os verificadores de Diretrizes Principais do C++
 
@@ -55,11 +55,11 @@ int main()
 
 Este exemplo demonstra alguns dos avisos que as regras de C++ verificação principais podem encontrar:
 
-- C26494 é o tipo de regra. 5: Sempre inicialize um objeto.
+- C26494 é o tipo de regra. 5: sempre inicializar um objeto.
 
-- C26485 são limites de regra. 3: Nenhum decaimento de matriz para ponteiro.
+- C26485 é associado à regra. 3: nenhum decaimento de matriz para ponteiro.
 
-- C26481 são limites de regra. 1: Não use aritmética de ponteiro. Use `span` em seu lugar.
+- C26481 são limites de regra. 1: não use aritmética de ponteiro. Use `span` em seu lugar.
 
 Se os C++ conjuntos de regras de análise de código de verificação principal estiverem instalados e habilitados quando você compilar esse código, os dois primeiros avisos serão gerados, mas o terceiro será suprimido. Aqui está a saída da compilação do código de exemplo:
 
@@ -176,7 +176,7 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 5. Vá para o arquivo que você deseja analisar com o C++ verificador de diretrizes principais e abra suas propriedades.
 6. Escolha **as opçõesC++de linha C/\Command** e adicione `/analyze:plugin EspXEngine.dll`
 7. Desabilite o uso do cabeçalho pré-compilado (**cabeçalhos C/C++\Precompiled**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas do cabeçalho pré-compilado (PCH); Se o PCH for compilado com opções de projeto padrão, ele não será compatível.
-8. Recompile o projeto. As verificações PREfast comuns devem ser executadas em todos os arquivos. Como o C++ verificador de diretrizes principais não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
+8. Recompilar o projeto. As verificações PREfast comuns devem ser executadas em todos os arquivos. Como o C++ verificador de diretrizes principais não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de C++ diretrizes principais fora do Visual Studio
 

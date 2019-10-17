@@ -1,5 +1,5 @@
 ---
-title: Depurando erros e caixas de diálogo de aviso | Microsoft Docs
+title: Erros de depuração e caixas de diálogo de aviso | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e13d6d323264136c6cab4c753ba53d40acd5a628
-ms.sourcegitcommit: da4079f5b6ec884baf3108cbd0519d20cb64c70b
+ms.openlocfilehash: f261eac1c3cbc73bb12323c089ae88f4ffc6b120
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/12/2019
-ms.locfileid: "67852218"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431683"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Caixas de diálogo Depurando Erros e Avisos
 Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao depurar o aplicativo.
@@ -38,7 +38,7 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [O depurador não pode exibir o código-fonte ou a desmontagem](../debugger/debugger-cannot-display-source-code-or-disassembly.md)
  
- [Serviços em execução fora da memória do depurador](../debugger/error-debugger-services-no-memory.md)
+ [Os serviços do depurador estão ficando sem memória](../debugger/error-debugger-services-no-memory.md)
 
  [Caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md)
 
@@ -56,10 +56,10 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Não é possível se conectar ao computador](../debugger/error-unable-to-connect-to-the-machine-name-the-machine-cannot-be-found-on-the-network.md)
 
- [Erro: Não é possível depurar porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
+ [Erro: a depuração não é possível porque um depurador de kernel está habilitado no sistema](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Depurando Script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
+ [Depurando script e Web: erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md)
 
  [Erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)
 
@@ -67,6 +67,6 @@ Veja abaixo as caixas de diálogo de erros e avisos que você pode encontrar ao 
 
  [Solução de problemas de instalação de depuração de SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s7ahaxtd(v=vs.100))
 
- [Perguntas frequentes de depuração do Visual C++](../debugger/debugging-native-code-faqs.md)
+ [Perguntas frequentes de depuração de código nativo](../debugger/debugging-native-code-faqs.md)
 
  [Segurança do depurador](../debugger/debugger-security.md)

@@ -32,12 +32,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: 976a66901ae60bd6edc053d5acbb516aa87c1a7c
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: 2460ca1c76eb43bdff89c87c880f405cdce12b48
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015996"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446318"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithread, sempre siga uma disciplina de bloqueio apropriada e use anotações SAL.

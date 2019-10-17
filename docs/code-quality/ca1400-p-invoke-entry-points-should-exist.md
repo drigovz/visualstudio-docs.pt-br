@@ -1,5 +1,5 @@
 ---
-title: 'CA1400: Pontos de entrada P-Invoke devem existir'
+title: 'CA1400: os pontos de entrada de P-Invoke devem existir'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5503f00995a4720207ea0ea9c29201d379e70adb
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6c1ae3ad7fc53379b7c13aec04af464dcb14877f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234913"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444289"
 ---
-# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: Deve haver pontos de entrada P/Invoke
+# <a name="ca1400-pinvoke-entry-points-should-exist"></a>CA1400: os pontos de entrada P/Invoke devem existir
 
 |||
 |-|-|
@@ -37,13 +37,13 @@ Um método público ou protegido é marcado com o <xref:System.Runtime.InteropSe
 Nenhuma verificação de tempo de compilação está disponível para garantir que os métodos marcados com <xref:System.Runtime.InteropServices.DllImportAttribute> estejam localizados na DLL não gerenciada referenciada. Se nenhuma função com o nome especificado estiver na biblioteca ou os argumentos para o método não corresponderem aos argumentos da função, o Common Language Runtime gerará uma exceção.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Para corrigir uma violação dessa regra, corrija o método que tem o <xref:System.Runtime.InteropServices.DllImportAttribute> atributo. Verifique se a biblioteca não gerenciada existe e se está no mesmo diretório que o assembly que contém o método. Se a biblioteca estiver presente e corretamente referenciada, verifique se o nome do método, o tipo de retorno e a assinatura do argumento correspondem à função da biblioteca.
+Para corrigir uma violação dessa regra, corrija o método que tem o atributo <xref:System.Runtime.InteropServices.DllImportAttribute>. Verifique se a biblioteca não gerenciada existe e se está no mesmo diretório que o assembly que contém o método. Se a biblioteca estiver presente e corretamente referenciada, verifique se o nome do método, o tipo de retorno e a assinatura do argumento correspondem à função da biblioteca.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 Não suprimir um aviso dessa regra quando a biblioteca não gerenciada estiver no mesmo diretório que o assembly gerenciado que faz referência a ela. Pode ser seguro suprimir um aviso dessa regra no caso em que a biblioteca não gerenciada não pôde ser localizada.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra um tipo que viola a regra. Nenhuma função nomeada `DoSomethingUnmanaged` ocorre no Kernel32. dll.
+O exemplo a seguir mostra um tipo que viola a regra. Nenhuma função chamada `DoSomethingUnmanaged` ocorre em Kernel32. dll.
 
 [!code-csharp[FxCop.Interoperability.DLLExists#1](../code-quality/codesnippet/CSharp/ca1400-p-invoke-entry-points-should-exist_1.cs)]
 

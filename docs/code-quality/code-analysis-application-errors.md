@@ -13,47 +13,47 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bf1985e63fef0f567cb3a765915f5c6f73cdc59
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: 3f06ca7d37cb7653ebbe50cea201bf6dbbdee8e9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66745207"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72445873"
 ---
-# <a name="code-analysis-application-errors"></a>Erros de aplicativo de análise de código
+# <a name="code-analysis-application-errors"></a>Erros do aplicativo de análise de código
 
-Esta seção é uma referência das mensagens de erro que são gerados pela ferramenta de análise de código gerenciado.
+Esta seção é uma referência das mensagens de erro geradas pela ferramenta de análise de código gerenciado.
 
 ## <a name="in-this-section"></a>Nesta seção
 
 |||
 |-|-|
-|[CA0001](ca0001.md)|Uma exceção foi gerada dentro da ferramenta de análise de código gerenciado que não indica uma condição de erro esperado.|
+|[CA0001](ca0001.md)|Uma exceção foi gerada na ferramenta de análise de código gerenciado que não indica uma condição de erro esperada.|
 |[CA0051](ca0051.md)|Nenhuma regra foi selecionada.|
-|[CA0052](ca0052.md)|Nenhum destino foi selecionado para analisar.|
-|[CA0053](ca0053.md)|Não foi possível carregar o assembly de regras.|
-|[CA0054](ca0054.md)|Um assembly de regra personalizada tem os recursos XML inválidos.|
-|[CA0055](ca0055.md)|Não foi possível carregar o arquivo:\<caminho >|
-|[CA0056](ca0056.md)|Um arquivo de projeto tem uma versão incorreta do que a ferramenta de análise.|
-|[CA0057](ca0057.md)|Violações não podem ser mapeadas para o conjunto atual de destinos e as regras.|
+|[CA0052](ca0052.md)|Nenhum destino foi selecionado para análise.|
+|[CA0053](ca0053.md)|Não foi possível carregar o assembly da regra.|
+|[CA0054](ca0054.md)|Um assembly de regra personalizado tem recursos XML inválidos.|
+|[CA0055](ca0055.md)|Não foi possível carregar o arquivo: \<path >|
+|[CA0056](ca0056.md)|Um arquivo de projeto tem uma versão incorreta da ferramenta de análise.|
+|[CA0057](ca0057.md)|As violações não podem ser mapeadas para o conjunto atual de destinos e regras.|
 |[CA0058](ca0058.md)|Não é possível carregar assemblies referenciados.|
-|[CA0059](ca0059.md)|Erro de linha de comando.|
+|[CA0059](ca0059.md)|Erro de opção de linha de comando.|
 |[CA0060](ca0060.md)|Não é possível carregar assemblies referenciados indiretamente.|
-|[CA0061](ca0061.md)|A regra '*RuleId*' não pôde ser encontrado.|
-|[CA0062](ca0062.md)|A regra '*RuleId*'referenciada no conjunto de regras'*RuleSetName*' não pôde ser encontrado.|
+|[CA0061](ca0061.md)|Não foi possível encontrar a regra '*RuleId*'.|
+|[CA0062](ca0062.md)|A regra '*RuleId*' referenciada no conjunto de regras '*RuleSetName*' não pôde ser encontrada.|
 |[CA0063](ca0063.md)|Falha ao carregar o arquivo de conjunto de regras ou um de seus arquivos de conjunto de regras dependentes.|
-|[CA0064](ca0064.md)|Nenhuma análise foi executada porque o conjunto de regras especificado não contém quaisquer regras FxCop.|
-|[CA0065](ca0065.md)|Construção de metadados sem suporte: Tipo '*TypeName*'contém uma propriedade e um campo com o mesmo nome'*PropertyFieldName*'|
-|[CA0066](ca0066.md)|O valor '*VersionID*' fornecido para o **/targetframeworkversion** não é uma versão reconhecida.|
+|[CA0064](ca0064.md)|Nenhuma análise foi executada porque o conjunto de regras especificado não continha nenhuma regra do FxCop.|
+|[CA0065](ca0065.md)|Construção de metadados sem suporte: o tipo '*TypeName*' contém uma propriedade e um campo com o mesmo nome '*PropertyFieldName*'|
+|[CA0066](ca0066.md)|O valor '*VersionId*' fornecido para o **/TargetFrameworkVersion** não é uma versão reconhecida.|
 |[CA0067](ca0067.md)|Diretório não encontrado.|
-|[CA0068](ca0068.md)|Depurar informações não foi possível encontrar assembly de destino *'AssemblyName'* .|
-|[CA0069](ca0069.md)|Usando a plataforma alternativa. *FrameworkVersion1* não pôde ser encontrado. Usando o *FrameworkVersion2* em vez disso. Para obter melhores resultados de análise, certifique-se de que a versão do framework correto está instalada.|
-|[CA0070](ca0070.md)|Não é possível carregar o assembly ou tipo devido a permissões de segurança.|
+|[CA0068](ca0068.md)|Não foi possível encontrar informações de depuração para o assembly de destino *' AssemblyName '* .|
+|[CA0069](ca0069.md)|Usando a plataforma alternativa. *FrameworkVersion1* não pôde ser encontrado. Usando *FrameworkVersion2* em vez disso. Para obter melhores resultados de análise, verifique se a versão correta da estrutura está instalada.|
+|[CA0070](ca0070.md)|Não é possível carregar o assembly ou o tipo devido a permissões de segurança.|
 |[CA0501](ca0501.md)|Não é possível ler o relatório de saída.|
 |[CA0502](ca0502.md)|Idioma sem suporte.|
-|[CA0503](ca0503.md)|A propriedade foi preterida. Use a propriedade substituta|
-|[CA0504](ca0504.md)|Diretório de regra foi ignorado porque não existe|
-|[CA0505](ca0505.md)|A propriedade foi preterida. Use a propriedade substituta|
+|[CA0503](ca0503.md)|A propriedade foi preterida. Usar a propriedade substituta|
+|[CA0504](ca0504.md)|O diretório de regras foi ignorado porque não existe|
+|[CA0505](ca0505.md)|A propriedade foi preterida. Usar a propriedade substituta|
 |[Erros de FxCopCmd](fxcopcmd-errors.md)|Erros de análise de código gerenciado.|
 
 ## <a name="related-sections"></a>Seções relacionadas

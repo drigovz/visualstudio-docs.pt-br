@@ -11,16 +11,16 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 15e0b45fd77096ba2227391736aad5c895014d1c
-ms.sourcegitcommit: 0554b59a2a251661e56824fb9cd6e9b1f326cef1
+ms.openlocfilehash: 7b2de511b0d24df9c4e156ccef37ff053005af98
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71831867"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450437"
 ---
-# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
+# <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: usar a janela interativa REPL
 
-**Etapa anterior: [Escrever e executar o código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Etapa anterior: [Gravar e executar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 
@@ -54,7 +54,7 @@ A janela **Interativa** do Visual Studio para Python oferece uma experiência av
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. Selecione as instruções de função `import`, `from` e `make_dot_string` no arquivo *. py* , clique com o botão direito do mouse e selecione **Enviar para interativo** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Agora selecione a função `make_dot_string` e repita o mesmo comando, que executa novamente esse fragmento de código. Como o código define uma função, é possível testar essa função rapidamente chamando-a algumas vezes:
+1. Selecione as instruções de função `import`, `from` e `make_dot_string` no arquivo *. py* , clique com o botão direito do mouse e selecione **Enviar para interativo** (ou pressione **Ctrl**+**Enter**). O fragmento de código será imediatamente colado na janela **Interativa** e executado. Como o código definiu uma função, você pode testar rapidamente essa função chamando-a algumas vezes:
 
     ![Enviando o código para a janela interativa e testando-o](media/vs-getting-started-python-14-interactive4.png)
 

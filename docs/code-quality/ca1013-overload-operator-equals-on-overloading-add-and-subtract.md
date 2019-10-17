@@ -1,5 +1,5 @@
 ---
-title: 'CA1013: Sobrecarregar o operador equals na sobrecarga de adição e subtração'
+title: 'CA1013: sobrecarregar igualdades de operador em add e subtract de sobrecarga'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -21,27 +21,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb5fd5c0e68b5dcffc212af03294d94d04d2abe
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 575afd3609da0e8f362408f8a1550303ec03cf3f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236340"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446724"
 ---
-# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: Sobrecarregar o operador equals na sobrecarga de adição e subtração
+# <a name="ca1013-overload-operator-equals-on-overloading-add-and-subtract"></a>CA1013: sobrecarregar igualdades de operador em add e subtract de sobrecarga
 
 |||
 |-|-|
 |NomeDoTipo|OverloadOperatorEqualsOnOverloadingAddAndSubtract|
 |CheckId|CA1013|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um tipo público ou protegido implementa os operadores de adição ou subtração sem implementar o operador de igualdade.
 
 ## <a name="rule-description"></a>Descrição da regra
-Quando as instâncias de um tipo podem ser combinadas usando operações como adição e subtração, você quase sempre deve definir igualdade para retornar `true` para duas instâncias que tenham os mesmos valores de constituintes.
+Quando instâncias de um tipo podem ser combinadas usando operações como adição e subtração, você quase sempre deve definir igualdade para retornar `true` para quaisquer duas instâncias que tenham os mesmos valores de constituintes.
 
 Você não pode usar o operador de igualdade padrão em uma implementação sobrecarregada do operador de igualdade. Isso causará um estouro de pilha. Para implementar o operador de igualdade, use o método Object. Equals em sua implementação. Consulte o exemplo a seguir.
 
@@ -66,7 +66,7 @@ Para corrigir uma violação dessa regra, implemente o operador de igualdade par
 É seguro suprimir um aviso dessa regra quando a implementação padrão do operador de igualdade fornece o comportamento correto para o tipo.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir define um tipo`BadAddableType`() que viola essa regra. Esse tipo deve implementar o operador de igualdade para fazer com que as duas instâncias que têm os mesmos `true` valores de campo sejam testadas para igualdade. O tipo `GoodAddableType` mostra a implementação corrigida. Observe que esse tipo também implementa o operador de desigualdade e substitui <xref:System.Object.Equals%2A> o para atender a outras regras. Uma implementação completa também implementaria <xref:System.Object.GetHashCode%2A>.
+O exemplo a seguir define um tipo (`BadAddableType`) que viola essa regra. Esse tipo deve implementar o operador de igualdade para fazer com que as duas instâncias que têm os mesmos valores de campo testem `true` para igualdade. O tipo `GoodAddableType` mostra a implementação corrigida. Observe que esse tipo também implementa o operador de desigualdade e substitui <xref:System.Object.Equals%2A> para atender a outras regras. Uma implementação completa também implementará <xref:System.Object.GetHashCode%2A>.
 
 [!code-csharp[FxCop.Design.AddAndSubtract#1](../code-quality/codesnippet/CSharp/ca1013-overload-operator-equals-on-overloading-add-and-subtract_1.cs)]
 

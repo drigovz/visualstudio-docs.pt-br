@@ -1,5 +1,5 @@
 ---
-title: 'CA1410: Métodos de registro COM devem ser correspondidos'
+title: 'CA1410: os métodos de registro COM devem ser correspondentes'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: bca9e06c861ab2bcaceead8bf8ee195b64e45c83
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c7c7c20ece08bc5167887727e423a3f7cdf7ee19
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234742"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440198"
 ---
-# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: Métodos de registro COM devem ser correspondidos
+# <a name="ca1410-com-registration-methods-should-be-matched"></a>CA1410: os métodos de registro COM devem ser correspondentes
 
 |||
 |-|-|
@@ -35,11 +35,11 @@ ms.locfileid: "71234742"
 
 ## <a name="cause"></a>Causa
 
-Um tipo declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo, mas não declara um método que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo ou vice-versa.
+Um tipo declara um método que é marcado com o atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName>, mas não declara um método que é marcado com o atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>, ou vice-versa.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Para clientes de Component Object Model (COM) para criar um tipo .NET, o tipo deve primeiro ser registrado. Se estiver disponível, um método marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> atributo será chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributo é chamado durante o processo de cancelamento de registro para reverter as operações do método de registro.
+Para clientes de Component Object Model (COM) para criar um tipo .NET, o tipo deve primeiro ser registrado. Se estiver disponível, um método marcado com o atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> será chamado durante o processo de registro para executar o código especificado pelo usuário. Um método correspondente que é marcado com o atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> é chamado durante o processo de cancelamento de registro para inverter as operações do método de registro.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -58,7 +58,7 @@ O exemplo a seguir mostra um tipo que viola a regra. O código comentado mostra 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1411: Os métodos de registro COM não devem ser visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
+[CA1411: os métodos de registro COM não devem estar visíveis](../code-quality/ca1411-com-registration-methods-should-not-be-visible.md)
 
 ## <a name="see-also"></a>Consulte também
 

@@ -1,5 +1,5 @@
 ---
-title: 'Como: Definir as propriedades de análise de código para projetos C/C++'
+title: Como definir propriedades de análise de código para projetos do C/C++
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,14 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 4c27300244998765d13d485d617c17c5032bad7b
-ms.sourcegitcommit: e95dd8cedcd180e0bce6a75c86cf861757918290
+ms.openlocfilehash: 27f3d68d28b8d1799c52fcf83c6a00dc5f81f48a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/09/2019
-ms.locfileid: "72163042"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448909"
 ---
-# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como: Definir as propriedades de análise de código para projetos C/C++
+# <a name="how-to-set-code-analysis-properties-for-cc-projects"></a>Como definir propriedades de análise de código para projetos do C/C++
 
 Você pode configurar quais regras a ferramenta de análise de código usa para analisar o código em cada configuração do seu projeto. Além disso, você pode direcionar a análise de código para suprimir avisos do código que foi gerado e adicionado ao seu projeto por uma ferramenta de terceiros.
 

@@ -1,5 +1,5 @@
 ---
-title: 'CA1411: Métodos de registro COM não devem ser visíveis'
+title: 'CA1411: os métodos de registro COM não devem estar visíveis'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e9582fb6bbdbda8aefbb60e2c69d16380eec3dff
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: b39e16b2a94a22582b9f369e647676541fa4220d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234751"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440177"
 ---
-# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: Métodos de registro COM não devem ser visíveis
+# <a name="ca1411-com-registration-methods-should-not-be-visible"></a>CA1411: os métodos de registro COM não devem estar visíveis
 
 |||
 |-|-|
@@ -35,13 +35,13 @@ ms.locfileid: "71234751"
 
 ## <a name="cause"></a>Causa
 
-Um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo é visível externamente.
+Um método que é marcado com o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou o atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> é visível externamente.
 
 ## <a name="rule-description"></a>Descrição da regra
-Quando um assembly é registrado com Component Object Model (COM), as entradas são adicionadas ao registro para cada tipo visível COM no assembly. Os métodos que são marcados com <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> os <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> atributos e são chamados durante os processos de registro e cancelamento de registro, respectivamente, para executar o código de usuário específico para o registro/cancelamento de registro desses tipos. Esse código não deve ser chamado fora desses processos.
+Quando um assembly é registrado com Component Object Model (COM), as entradas são adicionadas ao registro para cada tipo visível COM no assembly. Os métodos que são marcados com os atributos <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> e <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> são chamados durante os processos de registro e cancelamento de registro, respectivamente, para executar o código de usuário específico ao registro/cancelamento de registro desses tipos. Esse código não deve ser chamado fora desses processos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Para corrigir uma violação dessa regra, altere a acessibilidade do método `private` para ou `internal` (`Friend` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
+Para corrigir uma violação dessa regra, altere a acessibilidade do método para `private` ou `internal` (`Friend` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 Não suprima um aviso nessa regra.
@@ -53,7 +53,7 @@ O exemplo a seguir mostra dois métodos que violam a regra.
 [!code-vb[FxCop.Interoperability.ComRegistration2#1](../code-quality/codesnippet/VisualBasic/ca1411-com-registration-methods-should-not-be-visible_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1410: Os métodos de registro COM devem ser correspondidos](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
+[CA1410: os métodos de registro COM devem ser correspondentes](../code-quality/ca1410-com-registration-methods-should-be-matched.md)
 
 ## <a name="see-also"></a>Consulte também
 

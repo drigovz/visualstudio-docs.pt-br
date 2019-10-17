@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0222dab568ce421c3bd87474b956c82aab4d2683
-ms.sourcegitcommit: b83fefa8177c5554cbe2c59c4d102cbc534f7cc6
+ms.openlocfilehash: da0d70af989d759df94eb2d22606ad90373936ad
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/19/2019
-ms.locfileid: "69585247"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448840"
 ---
 # <a name="code-analysis-rule-set-reference"></a>Referência do conjunto de regras da análise de código
 
@@ -23,9 +23,9 @@ Quando você configura a análise herdada para projetos de código gerenciado no
 > [!NOTE]
 > Os conjuntos de regras nesta seção pertencem à análise herdada. Para obter informações sobre conjuntos de regras disponíveis para pacotes do Code Analyzer, consulte [usar conjuntos de regras com analisadores de código](analyzer-rule-sets.md).
 
-Você pode usar um desses conjuntos de regra interna, ou você pode [personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para atender às suas necessidades de projeto. Se você incluir vários conjuntos de regras que contêm a mesma regra em um conjunto de regras personalizadas, essa regra aparecerá apenas uma vez no conjunto de regras personalizadas.
+Você pode usar um desses conjuntos de regras internos ou pode [Personalizar um conjunto de regras](../code-quality/how-to-create-a-custom-rule-set.md) para se adequar aos requisitos do projeto. Se você incluir vários conjuntos de regras que contêm a mesma regra em um conjunto de regras personalizadas, essa regra aparecerá apenas uma vez no conjunto de regras personalizadas.
 
-Os tópicos nesta seção descrevem a regra interna conjuntos e as regras (ou avisos) que eles contêm.
+Os tópicos nesta seção descrevem os conjuntos de regras internos e as regras (ou avisos) que eles contêm.
 
 | Conjunto de regras | Regras incluídas |
 | - | - |

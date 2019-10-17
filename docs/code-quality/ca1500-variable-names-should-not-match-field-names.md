@@ -1,5 +1,5 @@
 ---
-title: 'CA1500: Nomes de variável não devem corresponder a nomes de campo'
+title: 'CA1500: os nomes de variável não devem corresponder aos nomes de campo'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: fbc3fbeac6d01b718af2022a09bddb92e9c7c2c6
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 3f7e8b0021fc3c318389aa3d6d3f53391b71351f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234566"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443971"
 ---
-# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: Nomes de variável não devem corresponder a nomes de campo
+# <a name="ca1500-variable-names-should-not-match-field-names"></a>CA1500: os nomes de variável não devem corresponder aos nomes de campo
 
 |||
 |-|-|
 |NomeDoTipo|VariableNamesShouldNotMatchFieldNames|
 |CheckId|CA1500|
-|Categoria|Microsoft.Maintainability|
+|Categoria|Microsoft. Maintainabilidade|
 |Alteração significativa|Quando acionado em um parâmetro que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo e o método que declara o parâmetro não puderem ser vistos fora do assembly, independentemente da alteração feita.<br />-Separável-se você alterar o nome do campo e puder ser visto fora do assembly.<br />-Quebra-se você alterar o nome do parâmetro e o método que o declara pode ser visto fora do assembly.<br /><br /> Quando acionado em uma variável local que tem o mesmo nome de um campo:<br /><br /> -Não separável – se o campo não puder ser visto fora do assembly, independentemente da alteração feita.<br />-Não separável – se você alterar o nome da variável local e não alterar o nome do campo.<br />-Quebra-se você alterar o nome do campo e ele pode ser visto fora do assembly.|
 
 ## <a name="cause"></a>Causa
@@ -39,7 +39,7 @@ Um método de instância declara um parâmetro ou uma variável local cujo nome 
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando o nome de um campo de instância corresponde a um parâmetro ou a um nome de variável local, o campo de instância `this` é`Me` acessado usando a palavra-chave (in [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) quando está dentro do corpo do método. Ao manter o código, é fácil esquecer essa diferença e assumir que a variável de parâmetro/local se refere ao campo de instância, que leva a erros. Isso é verdadeiro especialmente para corpos de métodos longos.
+Quando o nome de um campo de instância corresponde a um parâmetro ou a um nome de variável local, o campo de instância é acessado usando a palavra-chave `this` (`Me` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]) quando estiver dentro do corpo do método. Ao manter o código, é fácil esquecer essa diferença e assumir que a variável de parâmetro/local se refere ao campo de instância, que leva a erros. Isso é verdadeiro especialmente para corpos de métodos longos.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

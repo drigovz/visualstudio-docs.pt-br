@@ -1,5 +1,5 @@
 ---
-title: 'CA1412: Marcar interfaces ComSource como IDispatch'
+title: 'CA1412: marcar interfaces ComSource como IDispatch'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: caaae787d5e4801f3fc3b8d881b386595fb2eca4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 227cc5c47a2001cd6c3b71718ae2a29032bed71c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234685"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444204"
 ---
-# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: Marcar interfaces ComSource como IDispatch
+# <a name="ca1412-mark-comsource-interfaces-as-idispatch"></a>CA1412: marcar interfaces ComSource como IDispatch
 
 |||
 |-|-|
@@ -35,15 +35,15 @@ ms.locfileid: "71234685"
 
 ## <a name="cause"></a>Causa
 
-Um tipo é marcado com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo e pelo menos uma interface especificada não é marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo definido como o `InterfaceIsDispatch` valor.
+Um tipo é marcado com o atributo <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> e pelo menos uma interface especificada não é marcada com o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> definido como o valor `InterfaceIsDispatch`.
 
 ## <a name="rule-description"></a>Descrição da regra
 
-<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que clientes com Visual Basic 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo, ela será exposta como uma interface dupla.
+<xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> é usado para identificar as interfaces de evento que uma classe expõe para clientes Component Object Model (COM). Essas interfaces devem ser expostas como `InterfaceIsIDispatch` para permitir que Visual Basic COM clientes COM 6 recebam notificações de eventos. Por padrão, se uma interface não estiver marcada com o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute>, ela será exposta como uma interface dupla.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, adicione ou modifique o <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> atributo para que seu valor seja definido como InterfaceIsIDispatch para todas as interfaces especificadas com o <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute> atributo.
+Para corrigir uma violação dessa regra, adicione ou modifique o atributo <xref:System.Runtime.InteropServices.InterfaceTypeAttribute> para que seu valor seja definido como InterfaceIsIDispatch para todas as interfaces especificadas com o atributo <xref:System.Runtime.InteropServices.ComSourceInterfacesAttribute>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -58,7 +58,7 @@ O exemplo a seguir mostra uma classe em que uma das interfaces viola a regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1408: Não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
+[CA1408: não usar AutoDual ClassInterfaceType](../code-quality/ca1408-do-not-use-autodual-classinterfacetype.md)
 
 ## <a name="see-also"></a>Consulte também
 

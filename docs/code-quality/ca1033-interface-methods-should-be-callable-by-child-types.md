@@ -1,5 +1,5 @@
 ---
-title: 'CA1033: Métodos de interface devem ser chamados por tipos filho'
+title: 'CA1033: os métodos de interface devem ser chamáveis por tipos filho'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,29 +14,29 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0ed38a713f9e9a2ab95ad7e1062c6d5d9ab541d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bc9cd160afa9b882ebb979b6000d2ab277143abe
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236101"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449258"
 ---
-# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: Métodos de interface devem ser chamados por tipos filho
+# <a name="ca1033-interface-methods-should-be-callable-by-child-types"></a>CA1033: os métodos de interface devem ser chamáveis por tipos filho
 
 |||
 |-|-|
 |NomeDoTipo|InterfaceMethodsShouldBeCallableByChildTypes|
 |CheckId|CA1033|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 Um tipo visível externamente sem lacre fornece uma implementação de método explícita de uma interface pública e não fornece um método visível externamente alternativo com o mesmo nome.
 
 ## <a name="rule-description"></a>Descrição da regra
-Considere um tipo base que implementa explicitamente um método de interface pública. Um tipo que deriva do tipo base pode acessar o método de interface herdado somente por meio de uma referência à instância atual`this` ( C#em) que é convertida para a interface. Se o tipo derivado reimplementar (explicitamente) o método de interface herdado, a implementação base não poderá mais ser acessada. A chamada por meio da referência de instância atual invocará a implementação derivada; Isso causa recursão e um estouro de pilha eventual.
+Considere um tipo base que implementa explicitamente um método de interface pública. Um tipo que deriva do tipo base pode acessar o método de interface herdado somente por meio de uma referência à instância atual (`this` C#em) que é convertida na interface. Se o tipo derivado reimplementar (explicitamente) o método de interface herdado, a implementação base não poderá mais ser acessada. A chamada por meio da referência de instância atual invocará a implementação derivada; Isso causa recursão e um estouro de pilha eventual.
 
-Essa regra não relata uma violação para uma implementação explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando um método ou `System.IDisposable.Dispose(Boolean)` visível `Close()` externamente é fornecido.
+Essa regra não relata uma violação para uma implementação explícita de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> quando um método `Close()` ou `System.IDisposable.Dispose(Boolean)` visível externamente é fornecido.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, implemente um novo método que expõe a mesma funcionalidade e que seja visível para tipos derivados ou altere para uma implementação não explícita. Se uma alteração significativa for aceitável, uma alternativa é tornar o tipo lacrado.
@@ -45,7 +45,7 @@ Para corrigir uma violação dessa regra, implemente um novo método que expõe 
 É seguro suprimir um aviso dessa regra se for fornecido um método externo visível que tenha a mesma funcionalidade, mas um nome diferente do método implementado explicitamente.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra um tipo `ViolatingBase`,, que viola a regra e um tipo, `FixedBase`, que mostra uma correção para a violação.
+O exemplo a seguir mostra um tipo, `ViolatingBase`, que viola a regra e um tipo, `FixedBase`, que mostra uma correção para a violação.
 
 [!code-csharp[FxCop.Design.ExplicitMethodImplementations#1](../code-quality/codesnippet/CSharp/ca1033-interface-methods-should-be-callable-by-child-types_1.cs)]
 

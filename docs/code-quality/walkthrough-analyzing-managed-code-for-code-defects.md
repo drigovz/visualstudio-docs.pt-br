@@ -10,12 +10,12 @@ ms.author: midumont
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ced3448863d7236dc309dad3bb101cdead4837e
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: 79855f6915bbb0ed15bfd09f99fab0403290f09e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349476"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448725"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>Walkthrough: usar a análise de código estático para encontrar defeitos de código
 

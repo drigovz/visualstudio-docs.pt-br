@@ -1,5 +1,5 @@
 ---
-title: 'CA1506: Evitar acoplamento de classes excessivo'
+title: 'CA1506: evitar acoplamento de classes excessivo'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1721fd52c00c5b312c88f19d48b668b12d28f050
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c13e1ee9a0336cb6b91ab763f4fabb28ab9cb7c8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234488"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440038"
 ---
-# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: Evitar acoplamento de classes excessivo
+# <a name="ca1506-avoid-excessive-class-coupling"></a>CA1506: evitar acoplamento de classes excessivo
 
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveClassCoupling|
 |CheckId|CA1506|
-|Categoria|Microsoft.Maintainability|
+|Categoria|Microsoft. Maintainabilidade|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa

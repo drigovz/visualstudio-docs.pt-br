@@ -1,5 +1,5 @@
 ---
-title: 'CA1600: Não usar prioridade de processo ociosa'
+title: 'CA1600: não usar a prioridade de processo ociosa'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,30 +14,30 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 686929471ee8b6b5d1896f61bcbcd97a59135462
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2075918672452e222ba4becae915712ba20ff0d0
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234373"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440019"
 ---
-# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: Não usar prioridade de processo ociosa
+# <a name="ca1600-do-not-use-idle-process-priority"></a>CA1600: não usar a prioridade de processo ociosa
 
 |||
 |-|-|
 |NomeDoTipo|DoNotUseIdleProcessPriority|
 |CheckId|CA1600|
-|Categoria|Microsoft.Mobility|
+|Categoria|Microsoft. Mobility|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
-Essa regra ocorre quando os processos são definidos `ProcessPriorityClass.Idle`como.
+Essa regra ocorre quando os processos são definidos como `ProcessPriorityClass.Idle`.
 
 ## <a name="rule-description"></a>Descrição da regra
-Não defina a prioridade do processo como Ocioso. Os processos que `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando, caso contrário, ficarão ociosos e, portanto, bloquearão o modo de espera.
+Não defina a prioridade do processo como Ocioso. Os processos que têm `System.Diagnostics.ProcessPriorityClass.Idle` ocuparão a CPU quando ele estaria ocioso e, portanto, bloquearão o modo de espera.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Definir processos como `ProcessPriorityClass.BelowNormal`.
+Defina processos como `ProcessPriorityClass.BelowNormal`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 Essa regra deve ser suprimida somente quando a prioridade de processo ociosa é necessária e as considerações de mobilidade podem ser ignoradas com segurança.
