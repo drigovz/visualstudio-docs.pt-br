@@ -7,12 +7,12 @@ ms.author: mblome
 manager: markl
 ms.workload:
 - multiple
-ms.openlocfilehash: cd5e07f1e9ce83f36e6ecfbae148c84d18f40ff1
-ms.sourcegitcommit: 535ef05b1e553f0fc66082cd2e0998817eb2a56a
+ms.openlocfilehash: ccb18a704c2e8a2c185d3751483736631b0bba68
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/07/2019
-ms.locfileid: "72015940"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448637"
 ---
 # <a name="best-practices-and-examples-sal"></a>Práticas recomendadas e exemplos (SAL)
 Aqui estão algumas maneiras de aproveitar ao máximo a SAL (linguagem de anotação de código-fonte) e evitar alguns problemas comuns.
@@ -245,4 +245,4 @@ Neste exemplo, `_Out_opt_` indica que o ponteiro pode ser nulo como parte da pr�
 [Anotando estruturas e classes](../code-quality/annotating-structs-and-classes.md)  
 [Anotando o comportamento de bloqueio](../code-quality/annotating-locking-behavior.md)  
 [Especificando quando e onde uma anotação se aplica](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
-[Funções intrínsecas](../code-quality/intrinsic-functions.md)  
+[Funções intrínsecas](../code-quality/intrinsic-functions.md)

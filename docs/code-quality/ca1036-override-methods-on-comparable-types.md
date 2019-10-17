@@ -1,5 +1,5 @@
 ---
-title: 'CA1036: Substituir métodos em tipos comparáveis'
+title: 'CA1036: substituir métodos em tipos comparáveis'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,31 +14,31 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be340314afe36f3a930474f345715965f566b2d4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: cf0fe86332093c9ac760418f311f16f090db5c9a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236000"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449279"
 ---
-# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Substituir métodos em tipos comparáveis
+# <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: substituir métodos em tipos comparáveis
 
 |||
 |-|-|
 |NomeDoTipo|OverrideMethodsOnComparableTypes|
 |CheckId|CA1036|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
 
-Um tipo implementa a <xref:System.IComparable?displayProperty=fullName> interface e não substitui <xref:System.Object.Equals%2A?displayProperty=fullName> ou não sobrecarrega o operador específico do idioma para igualdade, desigualdade, menor que ou maior que. A regra não relatará uma violação se o tipo herdar apenas uma implementação da interface.
+Um tipo implementa a interface <xref:System.IComparable?displayProperty=fullName> e não substitui <xref:System.Object.Equals%2A?displayProperty=fullName> ou não sobrecarrega o operador específico do idioma para igualdade, desigualdade, menor que ou maior que. A regra não relatará uma violação se o tipo herdar apenas uma implementação da interface.
 
 Por padrão, essa regra só examina os tipos público e protegido, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Tipos que definem uma ordem de classificação personalizada <xref:System.IComparable> implementam a interface. O <xref:System.IComparable.CompareTo%2A> método retorna um valor inteiro que indica a ordem de classificação correta para duas instâncias do tipo. Essa regra identifica os tipos que definem uma ordem de classificação. Definir uma ordem de classificação implica que o significado comum de igualdade, desigualdade, menor que e maior que não se aplica. Quando você fornece uma implementação do <xref:System.IComparable>, normalmente também deve substituir <xref:System.Object.Equals%2A> para que ele retorne valores consistentes com <xref:System.IComparable.CompareTo%2A>o. Se você substituir <xref:System.Object.Equals%2A> e estiver codificando em uma linguagem que dá suporte a sobrecargas de operador, também deverá fornecer operadores que <xref:System.Object.Equals%2A>são consistentes com o.
+Tipos que definem uma ordem de classificação personalizada implementam a interface <xref:System.IComparable>. O método <xref:System.IComparable.CompareTo%2A> retorna um valor inteiro que indica a ordem de classificação correta para duas instâncias do tipo. Essa regra identifica os tipos que definem uma ordem de classificação. Definir uma ordem de classificação implica que o significado comum de igualdade, desigualdade, menor que e maior que não se aplica. Quando você fornece uma implementação de <xref:System.IComparable>, normalmente também deve substituir <xref:System.Object.Equals%2A> para que ele retorne valores consistentes com <xref:System.IComparable.CompareTo%2A>. Se você substituir <xref:System.Object.Equals%2A> e estiver codificando em uma linguagem que dá suporte a sobrecargas de operador, também deverá fornecer operadores que são consistentes com <xref:System.Object.Equals%2A>.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -60,7 +60,7 @@ No C#, os tokens que são usados para representar esses operadores são os segui
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-É seguro suprimir um aviso da regra CA1036 quando a violação é causada por operadores ausentes e sua linguagem de programação não dá suporte à sobrecarga de operador, como é o caso com Visual Basic. Se você determinar que a implementação dos operadores não faz sentido no contexto do aplicativo, também será seguro suprimir um aviso dessa regra quando ele for acionado em operadores de igualdade diferentes de op_Equality. No entanto, você deve sempre substituir op_Equality e o operador = = se <xref:System.Object.Equals%2A?displayProperty=nameWithType>substituir.
+É seguro suprimir um aviso da regra CA1036 quando a violação é causada por operadores ausentes e sua linguagem de programação não dá suporte à sobrecarga de operador, como é o caso com Visual Basic. Se você determinar que a implementação dos operadores não faz sentido no contexto do aplicativo, também será seguro suprimir um aviso dessa regra quando ele for acionado em operadores de igualdade diferentes de op_Equality. No entanto, você deve sempre substituir op_Equality e o operador = = se substituir <xref:System.Object.Equals%2A?displayProperty=nameWithType>.
 
 ## <a name="configurability"></a>Configurabilidade
 
@@ -74,11 +74,11 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="examples"></a>Exemplos
 
-O código a seguir contém um tipo que implementa <xref:System.IComparable>corretamente. Os comentários de código identificam os métodos que atendem a várias <xref:System.Object.Equals%2A> regras relacionadas <xref:System.IComparable> ao e à interface.
+O código a seguir contém um tipo que implementa corretamente <xref:System.IComparable>. Os comentários de código identificam os métodos que atendem a várias regras relacionadas a <xref:System.Object.Equals%2A> e à interface <xref:System.IComparable>.
 
 [!code-csharp[FxCop.Design.IComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_1.cs)]
 
-O código de aplicativo a seguir testa o comportamento <xref:System.IComparable> da implementação que foi mostrada anteriormente.
+O código de aplicativo a seguir testa o comportamento da implementação <xref:System.IComparable> que foi mostrada anteriormente.
 
 [!code-csharp[FxCop.Design.TestIComparable#1](../code-quality/codesnippet/CSharp/ca1036-override-methods-on-comparable-types_2.cs)]
 

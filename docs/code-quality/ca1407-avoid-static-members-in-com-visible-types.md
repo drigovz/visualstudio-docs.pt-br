@@ -1,5 +1,5 @@
 ---
-title: 'CA1407: Evitar membros estáticos em tipos visíveis no COM'
+title: 'CA1407: evitar membros estáticos em tipos visíveis COM'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57450f80a8c630e2186de8804f8bb88974564e46
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ea59bee887948fcb9fe293af338f49bfb9f8dfc
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234879"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444213"
 ---
-# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: Evitar membros estáticos em tipos visíveis no COM
+# <a name="ca1407-avoid-static-members-in-com-visible-types"></a>CA1407: evitar membros estáticos em tipos visíveis COM
 
 |||
 |-|-|
@@ -31,16 +31,16 @@ ms.locfileid: "71234879"
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
-Um tipo marcado especificamente como visível para Component Object Model (com) contém um `public``static` método.
+Um tipo marcado especificamente como visível para Component Object Model (COM) contém um método `public``static`.
 
 ## <a name="rule-description"></a>Descrição da regra
-COM não oferece suporte `static` a métodos.
+COM não oferece suporte a métodos `static`.
 
-Essa regra ignora os acessadores de propriedade e evento, métodos de sobrecarga de operador ou métodos que são marcados usando o <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> atributo ou o <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName> atributo.
+Essa regra ignora os acessadores de propriedade e evento, métodos de sobrecarga de operador ou métodos que são marcados usando o atributo <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute?displayProperty=fullName> ou o atributo <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute?displayProperty=fullName>.
 
 Por padrão, os itens a seguir são visíveis para COM: assemblies, tipos públicos, membros de instância pública em tipos públicos e todos os membros de tipos de valor público.
 
-Para que essa regra ocorra, um <xref:System.Runtime.InteropServices.ComVisibleAttribute> nível de assembly deve ser `false` definido como e a classe `true`- <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definida como, como mostra o código a seguir.
+Para que essa regra ocorra, um nível de assembly <xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definido como `false` e a classe-<xref:System.Runtime.InteropServices.ComVisibleAttribute> deve ser definida como `true`, como mostra o código a seguir.
 
 ```csharp
 using System;
@@ -60,15 +60,15 @@ namespace Samples
 ```
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Para corrigir uma violação dessa regra, altere o design para usar um método de instância que forneça a mesma funcionalidade que o `static` método.
+Para corrigir uma violação dessa regra, altere o design para usar um método de instância que forneça a mesma funcionalidade que o método `static`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
-É seguro suprimir um aviso dessa regra se um cliente com não precisar de acesso à funcionalidade fornecida pelo `static` método.
+É seguro suprimir um aviso dessa regra se um cliente COM não precisar de acesso à funcionalidade fornecida pelo método `static`.
 
 ## <a name="example-violation"></a>Violação de exemplo
 
 ### <a name="description"></a>Descrição
-O exemplo a seguir mostra `static` um método que viola essa regra.
+O exemplo a seguir mostra um método `static` que viola essa regra.
 
 ### <a name="code"></a>Código
 [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersViolation#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_1.cs)]
@@ -79,19 +79,19 @@ Neste exemplo, o método **book. FromPages** não pode ser chamado de com.
 ## <a name="example-fix"></a>Correção de exemplo
 
 ### <a name="description"></a>Descrição
-Para corrigir a violação no exemplo anterior, você pode alterar o método para um método de instância, mas isso não faz sentido nessa instância. Uma solução melhor é aplicar `ComVisible(false)` explicitamente ao método para deixá-lo claro para outros desenvolvedores que o método não pode ser visto do com.
+Para corrigir a violação no exemplo anterior, você pode alterar o método para um método de instância, mas isso não faz sentido nessa instância. Uma solução melhor é aplicar explicitamente `ComVisible(false)` ao método para deixá-lo claro para outros desenvolvedores que o método não pode ser visto do COM.
 
-O exemplo a seguir <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> aplica-se ao método.
+O exemplo a seguir aplica <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ao método.
 
 ### <a name="code"></a>Código
 [!code-csharp[FxCop.Interoperability.ComVisibleStaticMembersFixed#1](../code-quality/codesnippet/CSharp/ca1407-avoid-static-members-in-com-visible-types_2.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1017: Marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
-[CA1406: Evite argumentos Int64 para clientes Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
+[CA1406: evitar argumentos Int64 para clientes do Visual Basic 6](../code-quality/ca1406-avoid-int64-arguments-for-visual-basic-6-clients.md)
 
-[CA1413: Evitar campos não públicos em tipos de valores visíveis COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
+[CA1413: evitar campos não públicos em tipos de valor visíveis em COM](../code-quality/ca1413-avoid-non-public-fields-in-com-visible-value-types.md)
 
 ## <a name="see-also"></a>Consulte também
 [Interoperação com código não gerenciado](/dotnet/framework/interop/index)

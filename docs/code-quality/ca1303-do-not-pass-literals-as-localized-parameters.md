@@ -1,5 +1,5 @@
 ---
-title: 'CA1303: Não passar literais como parâmetros localizados'
+title: 'CA1303: não passar literais como parâmetros localizados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,14 +19,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 2700dc2ade7ba901f15f67045e3170e2bbb40ff8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 443fec0c9f20148d775a734137941cd7c78da889
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235111"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444400"
 ---
-# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: Não passar literais como parâmetros localizados
+# <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303: não passar literais como parâmetros localizados
 
 |||
 |-|-|
@@ -41,7 +41,7 @@ Um método passa um literal de cadeia de caracteres como um parâmetro para um c
 
 Esse aviso é gerado quando uma cadeia de caracteres literal é passada como um valor para um parâmetro ou propriedade e um ou mais dos seguintes casos é verdadeiro:
 
-- O <xref:System.ComponentModel.LocalizableAttribute> atributo do parâmetro ou da propriedade é definido como true.
+- O atributo <xref:System.ComponentModel.LocalizableAttribute> do parâmetro ou da propriedade é definido como true.
 
 - O nome do parâmetro ou da propriedade contém "texto", "mensagem" ou "legenda".
 
@@ -53,7 +53,7 @@ Literais de cadeia de caracteres inseridos no código-fonte são difíceis de lo
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, substitua o literal da cadeia de caracteres por uma cadeia de caracteres recuperada <xref:System.Resources.ResourceManager> por meio de uma instância da classe.
+Para corrigir uma violação dessa regra, substitua o literal da cadeia de caracteres por uma cadeia de caracteres recuperada por meio de uma instância da classe <xref:System.Resources.ResourceManager>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -63,7 +63,7 @@ Os usuários podem eliminar ruídos em relação a métodos que não devem passa
 
 ## <a name="example"></a>Exemplo
 
-O exemplo a seguir mostra um método que gera uma exceção quando qualquer um dos dois argumentos está fora do intervalo. Para o primeiro argumento, o construtor de exceção recebe uma cadeia de caracteres literal, que viola essa regra. Para o segundo argumento, o Construtor passa corretamente uma cadeia de caracteres recuperada <xref:System.Resources.ResourceManager>por meio de um.
+O exemplo a seguir mostra um método que gera uma exceção quando qualquer um dos dois argumentos está fora do intervalo. Para o primeiro argumento, o construtor de exceção recebe uma cadeia de caracteres literal, que viola essa regra. Para o segundo argumento, o Construtor passa corretamente uma cadeia de caracteres recuperada por meio de um <xref:System.Resources.ResourceManager>.
 
 [!code-cpp[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/CPP/ca1303-do-not-pass-literals-as-localized-parameters_1.cpp)]
 [!code-vb[FxCop.Globalization.DoNotPassLiterals#1](../code-quality/codesnippet/VisualBasic/ca1303-do-not-pass-literals-as-localized-parameters_1.vb)]

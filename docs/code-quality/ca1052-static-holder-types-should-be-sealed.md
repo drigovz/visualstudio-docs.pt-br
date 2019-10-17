@@ -1,5 +1,5 @@
 ---
-title: 'CA1052: Tipos de detentor estáticos devem ser estáticos ou não herdáveis'
+title: 'CA1052: tipos de detentor estáticos devem ser estáticos ou não herdáveis'
 ms.date: 07/25/2019
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 757b6b46e0c0892f5eb4c868b15654b29cd51c0e
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7fb332a293e30bfba38e1487576d5a28b1a3be36
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235626"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446606"
 ---
-# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: Tipos de detentor estáticos devem ser estáticos ou não herdáveis
+# <a name="ca1052-static-holder-types-should-be-static-or-notinheritable"></a>CA1052: tipos de detentor estáticos devem ser estáticos ou não herdáveis
 
 |||
 |-|-|
 |NomeDoTipo|StaticHolderTypesAnalyzer|
 |CheckId|CA1052|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -42,7 +42,7 @@ Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é
 
 ## <a name="rule-description"></a>Descrição da regra
 
-A regra CA1052 pressupõe que um tipo que contém somente membros estáticos não foi projetado para ser herdado, porque o tipo não fornece nenhuma funcionalidade que possa ser substituída em um tipo derivado. Um tipo que não se destina a ser herdado deve ser marcado com `static` o modificador em C# para proibir seu uso como um tipo base. Além disso, seu construtor padrão deve ser removido. No Visual Basic, a classe deve ser convertida em um [módulo](/dotnet/visual-basic/language-reference/statements/module-statement).
+A regra CA1052 pressupõe que um tipo que contém somente membros estáticos não foi projetado para ser herdado, porque o tipo não fornece nenhuma funcionalidade que possa ser substituída em um tipo derivado. Um tipo que não se destina a ser herdado deve ser marcado com o modificador @no__t- C# 0 em para proibir seu uso como um tipo base. Além disso, seu construtor padrão deve ser removido. No Visual Basic, a classe deve ser convertida em um [módulo](/dotnet/visual-basic/language-reference/statements/module-statement).
 
 Essa regra não é acionada para classes abstratas ou classes que têm uma classe base. No entanto, a regra é acionada para classes que dão suporte a uma interface vazia.
 
@@ -55,7 +55,7 @@ Para corrigir uma violação dessa regra, marque o tipo como `static` e remova o
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-Suprimir um aviso desta regra somente se o tipo for projetado para ser herdado. A ausência do `static` modificador sugere que o tipo é útil como um tipo base.
+Suprimir um aviso desta regra somente se o tipo for projetado para ser herdado. A ausência do modificador `static` sugere que o tipo é útil como um tipo base.
 
 ## <a name="configurability"></a>Configurabilidade
 
@@ -77,7 +77,7 @@ O exemplo a seguir mostra um tipo que viola a regra:
 
 ## <a name="fix-with-the-static-modifier"></a>Corrigir com o modificador estático
 
-O exemplo a seguir mostra como corrigir uma violação dessa regra marcando o tipo com o `static` modificador em: C#
+O exemplo a seguir mostra como corrigir uma violação dessa regra marcando o tipo com o modificador `static` em C#:
 
 ```csharp
 public static class StaticMembers

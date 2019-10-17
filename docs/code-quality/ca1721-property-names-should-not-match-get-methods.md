@@ -1,5 +1,5 @@
 ---
-title: 'CA1721: Nomes de propriedades não devem corresponder a métodos get'
+title: 'CA1721: os nomes de propriedade não devem corresponder a métodos get'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 805ceb7abf7096df29894a23be6c8e7b1f6bd5b2
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 719f5ffe3cd3fd7a897aeaff270a1e32661ae590
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233901"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72438943"
 ---
-# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: Nomes de propriedades não devem corresponder a métodos get
+# <a name="ca1721-property-names-should-not-match-get-methods"></a>CA1721: os nomes de propriedade não devem corresponder a métodos get
 
 |||
 |-|-|
 |NomeDoTipo|PropertyNamesShouldNotMatchGetMethods|
 |CheckId|CA1721|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -75,4 +75,4 @@ O exemplo a seguir contém um método e uma propriedade que violam essa regra.
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1024: Usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)
+- [CA1024: usar propriedades quando apropriado](../code-quality/ca1024-use-properties-where-appropriate.md)

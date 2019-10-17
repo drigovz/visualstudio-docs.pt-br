@@ -1,5 +1,5 @@
 ---
-title: 'CA1701: Palavras compostas de cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas'
+title: 'CA1701: as palavras compostas da cadeia de caracteres do recurso devem ter maiúsculas e minúsculas corretas'
 ms.date: 03/28/2018
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed5ae8c0845755fe626e7e801f500389f9263cf5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c5d7aa3c29ca8ba82f6c50b070c5210cf10d1884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234355"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443934"
 ---
-# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: Palavras compostas de cadeia de caracteres de recurso devem ter maiúsculas e minúsculas corretas
+# <a name="ca1701-resource-string-compound-words-should-be-cased-correctly"></a>CA1701: as palavras compostas da cadeia de caracteres do recurso devem ter maiúsculas e minúsculas corretas
 
 |||
 |-|-|
 |NomeDoTipo|ResourceStringCompoundWordsShouldBeCasedCorrectly|
 |CheckId|CA1701|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -48,7 +48,7 @@ Altere a palavra de forma que ela fique correta.
 
 Por padrão, a versão em inglês (EN) do verificador ortográfico é usada. Se você quiser alterar o idioma do verificador ortográfico, poderá fazê-lo adicionando um dos seguintes atributos ao seu arquivo *AssemblyInfo.cs* ou *AssemblyInfo. vb* :
 
-- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se seus recursos estiverem em um assembly satélite.
+- Use <xref:System.Reflection.AssemblyCultureAttribute> para especificar a cultura se os recursos estiverem em um assembly satélite.
 - Use <xref:System.Resources.NeutralResourcesLanguageAttribute> para especificar a *cultura neutra* do assembly se seus recursos estiverem no mesmo assembly que o seu código.
 
 > [!IMPORTANT]
@@ -58,13 +58,13 @@ Por padrão, a versão em inglês (EN) do verificador ortográfico é usada. Se 
 
 É seguro suprimir um aviso dessa regra se ambas as partes da palavra composta forem reconhecidas pelo dicionário ortográfico e a intenção for usar duas palavras.
 
-Você também pode adicionar palavras compostas a um dicionário personalizado para o verificador ortográfico. As palavras no dicionário personalizado não causam violações. Para obter mais informações, confira [Como: Personalize o dicionário](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análise de código.
+Você também pode adicionar palavras compostas a um dicionário personalizado para o verificador ortográfico. As palavras no dicionário personalizado não causam violações. Para obter mais informações, consulte [como: personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1702: Palavras compostas devem estar em maiúsculas e minúsculas](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
-- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1702: palavras compostas devem ter maiúsculas e minúsculas corretas](../code-quality/ca1702-compound-words-should-be-cased-correctly.md)
+- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
 
 ## <a name="see-also"></a>Consulte também
 
