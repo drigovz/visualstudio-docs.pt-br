@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar verificações de tempo de execução nativas | Microsoft Docs'
+title: 'Como: usar verificações nativas em tempo de execução | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aeebdd8a86cb8ca6ffc1358a8558654d1e4d0b92
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 3cef755721a9c5b917b080fa10f1819055a18ed7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211032"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72430561"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
-No Visual C++, você pode usar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para capturar erros comuns de tempo de execução, como:
+# <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
+Em um projeto do C++ Visual Studio, você pode usar [runtime_checks](/cpp/preprocessor/runtime-checks) nativas para capturar erros comuns de tempo de execução, como:
 
 - Dano do ponteiro de pilha.
 

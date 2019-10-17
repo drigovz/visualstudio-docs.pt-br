@@ -14,29 +14,29 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 74a43a0c601fa8a96c8737644bf5bd0261f59796
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 75d984617b56525e640a74aa4badd6f520c0b892
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71254050"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381313"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Passo a passo: Associar a dados de um serviço em um projeto de suplemento do VSTO
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>Walkthrough: associar dados de um serviço em um projeto de suplemento do VSTO
   Você pode associar dados a controles de host em projetos de suplemento do VSTO. Este tutorial demonstra como adicionar controles a um Microsoft Office documento do Word, associar os controles aos dados recuperados do serviço de conteúdo do MSDN e responder a eventos em tempo de execução.
 
  **Aplica-se a:** As informações neste tópico se aplicam a projetos de nível de aplicativo para o Word 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).
 
  Esta explicação passo a passo ilustra as seguintes tarefas:
 
-- Adicionar um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle a um documento em tempo de execução.
+- Adicionar um controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a um documento em tempo de execução.
 
-- Ligação do <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle a dados de um serviço Web.
+- Associar o controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> a dados de um serviço Web.
 
-- Respondendo ao <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> evento de um <xref:Microsoft.Office.Tools.Word.RichTextContentControl> controle.
+- Respondendo ao evento <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> de um controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl>.
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>Pré-requisitos
+## <a name="prerequisites"></a>Prerequisites
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
 - [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
@@ -50,9 +50,9 @@ ms.locfileid: "71254050"
 
 1. Crie um projeto de suplemento do VSTO do Word com o nome **MTPS Content Service**, usando Visual Basic ou C#.
 
-     Para obter mais informações, confira [Como: Crie projetos do Office no Visual](../vsto/how-to-create-office-projects-in-visual-studio.md)Studio.
+     Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-     O Visual Studio abre `ThisAddIn.vb` o `ThisAddIn.cs` arquivo ou e adiciona o projeto a **Gerenciador de soluções**.
+     O Visual Studio abre o arquivo `ThisAddIn.vb` ou `ThisAddIn.cs` e adiciona o projeto a **Gerenciador de soluções**.
 
 ## <a name="add-a-web-service"></a>Adicionar um serviço Web
  Para esta explicação, use um serviço Web chamado serviço de conteúdo MTPS. Esse serviço Web retorna informações de um artigo do MSDN especificado na forma de uma cadeia de caracteres XML ou texto sem formatação. Uma etapa posterior mostra como exibir as informações retornadas em um controle de conteúdo.
@@ -65,7 +65,7 @@ ms.locfileid: "71254050"
 
 3. No campo **endereço** , digite a seguinte URL:
 
-     **http:\//Services.msdn.Microsoft.com/ContentServices/ContentService.asmx**
+   `http://services.msdn.microsoft.com/ContentServices/ContentService.asmx`
 
 4. Clique em **ir**.
 
@@ -78,7 +78,7 @@ ms.locfileid: "71254050"
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>Para adicionar um controle de conteúdo e associar a dados
 
-1. `ThisAddIn` Na classe, declare as variáveis para o serviço de conteúdo MTPS, o controle de conteúdo e a associação de dados.
+1. Na classe `ThisAddIn`, declare as variáveis para o serviço de conteúdo MTPS, o controle de conteúdo e a associação de dados.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#2)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#2](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#2)]
@@ -98,13 +98,13 @@ ms.locfileid: "71254050"
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#5)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#5](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#5)]
 
-5. Chame os `AddRichTextControlAtRange` métodos `InitializeServiceObjects` e do `ThisAddIn_Startup` método. Para C# programadores, adicione um manipulador de eventos.
+5. Chame os métodos `AddRichTextControlAtRange` e `InitializeServiceObjects` do método `ThisAddIn_Startup`. Para C# programadores, adicione um manipulador de eventos.
 
      [!code-csharp[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs#3)]
      [!code-vb[Trin_WordAddIn_BindingDataToContentControl#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb#3)]
 
 ## <a name="test-the-add-in"></a>Testar o suplemento
- Quando você abre o Word, <xref:Microsoft.Office.Tools.Word.RichTextContentControl> o controle é exibido. O texto no controle é alterado quando você clica dentro dele.
+ Quando você abre o Word, o controle <xref:Microsoft.Office.Tools.Word.RichTextContentControl> é exibido. O texto no controle é alterado quando você clica dentro dele.
 
 ### <a name="to-test-the-vsto-add-in"></a>Para testar o suplemento do VSTO
 

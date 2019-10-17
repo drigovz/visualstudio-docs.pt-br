@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 8f5f650860c520f5fbe62ff49bbbb6190e163af8
-ms.sourcegitcommit: 5216c15e9f24d1d5db9ebe204ee0e7ad08705347
+ms.openlocfilehash: d15a176fb378159407589af0b720d8310de8e29c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68925468"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450407"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>Como disparar eventos de suspensão, retomada e segundo plano durante a depuração de aplicativos UWP no Visual Studio
 
@@ -79,11 +79,11 @@ Para obter mais informações sobre o gerenciamento de tempo de vida de processo
 
     - Para projetos em Visual C# e Visual Basic, escolha **Não iniciar, mas depurar meu código quando ele for iniciado**
 
-         ![Propriedade&#35;&#47;do aplicativo inicialização de depuração do C VB](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![Propriedade&#35;&#47;do aplicativo inicialização de depuração do C vb](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
 
-    - Para projetos C++ visuais, escolha **não** na lista **Iniciar aplicativo** .
+    - Para C++ projetos, escolha **não** na lista **Iniciar aplicativo** .
 
-         ![&#43;C&#43;VB&#47;iniciar a propriedade de depuração do aplicativo](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
+         ![&#43;&#43;C&#47;VB iniciar a propriedade de depuração do aplicativo](../debugger/media/dbg_cppjs_dontlaunchapp.png "DBG_CppJs_DontLaunchApp")
 
 4. Pressione **F5** para colocar o aplicativo no modo de depuração. Observe que a lista **Processo** na barra de ferramentas **Local de Depuração** exibe o nome do pacote do aplicativo para indicar que você está no modo de depuração.
 
@@ -105,7 +105,7 @@ Para obter mais informações sobre o gerenciamento de tempo de vida de processo
 
 2. No painel **Ações**, escolha **Exibir** e verifique se **Mostrar logs analíticos e de depuração** está marcado.
 
-3. Na árvore **Visualizador de eventos (local)** , expanda os nós **aplicativos e logs** > de serviços**Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.
+3. Na árvore **Visualizador de eventos (local)** , expanda os nós **aplicativos e Logs de serviços**@no__t-**2 Microsoft** > **Windows** > **BackgroundTasksInfrastructure**.
 
 4. Escolha o log **Diagnóstico**.
 
