@@ -1,5 +1,5 @@
 ---
-title: 'CA1305: Especificar IFormatProvider'
+title: 'CA1305: especificar IFormatProvider'
 ms.date: 06/30/2018
 ms.topic: reference
 f1_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f6c8fd44749de43d86bf8037df0130ad682321
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 5a759b6eefe92b4168684b098b4025f589893b4b
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235041"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444420"
 ---
-# <a name="ca1305-specify-iformatprovider"></a>CA1305: Especificar IFormatProvider
+# <a name="ca1305-specify-iformatprovider"></a>CA1305: especificar IFormatProvider
 
 |||
 |-|-|
@@ -34,9 +34,9 @@ ms.locfileid: "71235041"
 
 ## <a name="cause"></a>Causa
 
-Um método ou construtor chama um ou mais membros que têm sobrecargas que aceitam <xref:System.IFormatProvider?displayProperty=fullName> um parâmetro e o método ou construtor não chama a sobrecarga que usa o <xref:System.IFormatProvider> parâmetro.
+Um método ou construtor chama um ou mais membros que têm sobrecargas que aceitam um parâmetro <xref:System.IFormatProvider?displayProperty=fullName> e o método ou construtor não chama a sobrecarga que usa o parâmetro <xref:System.IFormatProvider>.
 
-Essa regra ignora as chamadas para métodos .net documentados como ignorando o <xref:System.IFormatProvider> parâmetro. A regra também ignora os seguintes métodos:
+Essa regra ignora as chamadas para métodos .NET documentados como ignorando o parâmetro <xref:System.IFormatProvider>. A regra também ignora os seguintes métodos:
 
 - <xref:System.Activator.CreateInstance%2A?displayProperty=nameWithType>
 - <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=nameWithType>
@@ -44,7 +44,7 @@ Essa regra ignora as chamadas para métodos .net documentados como ignorando o <
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando um <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> objeto <xref:System.IFormatProvider> ou não é fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, os membros do .NET escolhem a cultura e a formatação padrão com base nas suposições que podem não estar corretas para o seu código. Para garantir que o código funcione conforme o esperado para seus cenários, você deve fornecer informações específicas de cultura de acordo com as seguintes diretrizes:
+Quando um objeto <xref:System.Globalization.CultureInfo?displayProperty=nameWithType> ou <xref:System.IFormatProvider> não é fornecido, o valor padrão fornecido pelo membro sobrecarregado pode não ter o efeito desejado em todas as localidades. Além disso, os membros do .NET escolhem a cultura e a formatação padrão com base nas suposições que podem não estar corretas para o seu código. Para garantir que o código funcione conforme o esperado para seus cenários, você deve fornecer informações específicas de cultura de acordo com as seguintes diretrizes:
 
 - Se o valor for exibido para o usuário, use a cultura atual. Consulte <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>.
 
@@ -56,7 +56,7 @@ Mesmo que o comportamento padrão do membro sobrecarregado seja apropriado para 
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, use a sobrecarga que usa um <xref:System.IFormatProvider> argumento. Ou use uma [ C# cadeia de caracteres interpolada](/dotnet/csharp/tutorials/string-interpolation) e passe-a <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> para o método.
+Para corrigir uma violação dessa regra, use a sobrecarga que usa um argumento <xref:System.IFormatProvider>. Ou use uma [ C# cadeia de caracteres interpolada](/dotnet/csharp/tutorials/string-interpolation) e passe-a para o método <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType>.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -64,7 +64,7 @@ Para corrigir uma violação dessa regra, use a sobrecarga que usa um <xref:Syst
 
 ## <a name="example"></a>Exemplo
 
-No código a seguir, a `example1` cadeia de caracteres viola a regra CA1305. A `example2` cadeia de caracteres satisfaz a regra CA1305 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>passando, que <xref:System.IFormatProvider>implementa, <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>para. A `example3` cadeia de caracteres satisfaz a regra CA1305 ao passar uma cadeia de <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>caracteres interpolada para.
+No código a seguir, a cadeia de caracteres `example1` viola a regra CA1305. A cadeia de caracteres `example2` satisfaz a regra CA1305 passando <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType>, que implementa <xref:System.IFormatProvider>, para <xref:System.String.Format(System.IFormatProvider,System.String,System.Object)?displayProperty=nameWithType>. A cadeia de caracteres `example3` satisfaz a regra CA1305, passando uma cadeia de caracteres interpolada para <xref:System.FormattableString.Invariant%2A?displayProperty=fullName]>.
 
 ```csharp
 string name = "Georgette";
@@ -81,7 +81,7 @@ string example3 = FormattableString.Invariant($"Hello {name}");
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1304: Especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
+- [CA1304: especificar CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)
 
 ## <a name="see-also"></a>Consulte também
 

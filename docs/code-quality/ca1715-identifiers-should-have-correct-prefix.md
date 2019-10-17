@@ -1,5 +1,5 @@
 ---
-title: 'CA1715: Identificadores devem ter um prefixo correto'
+title: 'CA1715: os identificadores devem ter o prefixo correto'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7323fd044675eda2f528788ffc40943d071bf12b
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 875e0b4052cdc7287b264899620d4e083ac6b153
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234074"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443880"
 ---
-# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
+# <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: os identificadores devem ter o prefixo correto
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldHaveCorrectPrefix|
 |CheckId|CA1715|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra-quando acionado em interfaces.<br /><br /> Não separável-quando gerado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
 
 O nome de uma interface não começa com um ' I ' maiúsculo.
 
-- ou -
+\- ou -
 
 O nome de um [parâmetro de tipo genérico](/dotnet/csharp/programming-guide/generics/generic-type-parameters) em um tipo ou método não começa com uma letra maiúscula ' T'.
 
@@ -71,7 +71,7 @@ dotnet_code_quality.CA2007.allow_single_letter_type_parameters = true
 ```
 
 > [!NOTE]
-> Essa regra nunca é acionada para um parâmetro `T`de tipo chamado, `Collection<T>`por exemplo,.
+> Essa regra nunca é acionada para um parâmetro de tipo chamado `T`, por exemplo, `Collection<T>`.
 
 ### <a name="api-surface"></a>Superfície de API
 
@@ -121,4 +121,4 @@ O trecho de código a seguir corrige a violação anterior, prefixando o parâme
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1722: Os identificadores não devem ter um prefixo incorreto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)
+- [CA1722: os identificadores não devem ter prefixo incorreto](../code-quality/ca1722-identifiers-should-not-have-incorrect-prefix.md)

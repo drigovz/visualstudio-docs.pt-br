@@ -13,100 +13,100 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 126360a5cbc39653405d83362ae150edba401fb8
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62825065"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72448697"
 ---
-# <a name="use-the-code-metrics-results-window"></a>Use a janela de resultados de métricas de código
+# <a name="use-the-code-metrics-results-window"></a>Usar a janela de resultados de métricas de código
 
-O **resultados de métricas de código** janela exibe os dados que são gerados pela análise de métricas de código. Para obter mais informações sobre valores de dados de métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
+A janela **resultados de métricas de código** exibe os dados gerados pela análise de métricas de código. Para obter mais informações sobre valores de dados de métricas de código, consulte [valores de métricas de código](../code-quality/code-metrics-values.md).
 
 ## <a name="display-code-metrics-results"></a>Exibir resultados de métricas de código
 
-O **resultados de métricas de código** janela é exibida automaticamente quando você gera resultados de métricas de código. Você também pode exibir a janela a qualquer momento.
+A janela **resultados de métricas de código** é exibida automaticamente quando você gera resultados de métricas de código. Você também pode exibir a janela a qualquer momento.
 
-Você pode exibir a janela de resultados de métricas de código usando uma das sequências de menu a seguir:
+Você pode exibir a janela de resultados de métricas de código usando uma das seguintes sequências de menu:
 
-- Sobre o **Analyze** menu, escolha **Windows** > **resultados de métricas de código**.
+- No menu **analisar** , escolha**resultados de métricas de código**do **Windows** > .
 
-- Sobre o **modo de exibição** menu, escolha **Other Windows** > **resultados de métricas de código**.
+- No menu **Exibir** , escolha outros**resultados de métricas de código**do **Windows** > .
 
-O **resultados de métricas de código** janela é aberta, mesmo se ele não contém nenhum resultado.
+A janela **resultados de métricas de código** é aberta, mesmo que não contenha nenhum resultado.
 
-### <a name="to-view-code-metrics-details"></a>Para exibir os detalhes das métricas de código
+### <a name="to-view-code-metrics-details"></a>Para exibir detalhes de métricas de código
 
-Se os resultados de métricas de código foram gerados, expanda a árvore na **hierarquia** coluna.
+Se os resultados de métricas de código tiverem sido gerados, expanda a árvore na coluna **hierarquia** .
 
 ## <a name="filter-code-metrics-results"></a>Filtrar resultados de métricas de código
 
-Você pode filtrar os resultados que são exibidos na **resultados de métricas de código** janela usando a barra de ferramentas na parte superior. Por exemplo, você talvez queira ver apenas os resultados que tem um índice de facilidade de manutenção abaixo 65.
+Você pode filtrar os resultados que são exibidos na janela **resultados de métricas de código** usando a barra de ferramentas na parte superior. Por exemplo, talvez você queira ver apenas os resultados que têm um índice de manutenção abaixo de 65.
 
-O **filtro** caixa suspensa contém os nomes das colunas de resultados. Quando um filtro é definido, ele é adicionado à parte inferior da lista junto com um recuo. A lista pode conter os últimos 10 filtros que foram definidos.
+A caixa suspensa **filtro** contém os nomes das colunas de resultados. Quando um filtro é definido, ele é adicionado à parte inferior da lista, junto com um recuo. A lista pode conter os 10 últimos filtros que foram definidos.
 
 ### <a name="to-filter-the-code-metrics-results"></a>Para filtrar os resultados de métricas de código
 
-1. Dos **filtro** , selecione o nome da coluna.
+1. Na lista **filtro** , selecione o nome da coluna.
 
-2. Na **Min**, digite o valor mínimo a ser exibido.
+2. Em **mín**., digite o valor mínimo a ser exibido.
 
-3. Na **máx**, digite o valor máximo a ser exibido.
+3. Em **máximo**, digite o valor máximo a ser exibido.
 
-4. Clique o **Aplicar filtro** botão.
+4. Clique no botão **aplicar filtro** .
 
-5. Para ver os detalhes do resultado, expanda a árvore de hierarquia.
+5. Para ver os detalhes do resultado, expanda a árvore hierarquia.
 
-## <a name="add-remove-and-rearrange-data-columns"></a>Adicionar, remover e reorganizar as colunas de dados
+## <a name="add-remove-and-rearrange-data-columns"></a>Adicionar, remover e reorganizar colunas de dados
 
-Você pode adicionar ou remover de colunas de resultados de **resultados de métricas de código** janela. Além disso, você pode reorganizar as colunas de resultados para que eles apareçam na ordem em que você deseja.
+Você pode adicionar ou remover colunas de resultados da janela **resultados de métricas de código** . Além disso, você pode reorganizar as colunas de resultados para que elas apareçam na ordem desejada.
 
 ### <a name="add-or-remove-a-column"></a>Adicionar ou remover uma coluna
 
-1. Clique o **Adicionar/remover colunas** botão, ou qualquer cabeçalho de coluna com o botão direito e, em seguida, clique em **Adicionar/remover colunas**.
+1. Clique no botão **Adicionar/remover colunas** ou clique com o botão direito do mouse em qualquer título de coluna e clique em **Adicionar/remover colunas**.
 
-1. No **Adicionar/remover colunas** caixa de diálogo, marque ou desmarque a caixa de seleção para a coluna que você deseja adicionar ou remover e, em seguida, escolha **Okey**.
+1. Na caixa de diálogo **Adicionar/remover colunas** , marque ou desmarque a caixa de seleção da coluna que você deseja adicionar ou remover e, em seguida, escolha **OK**.
 
 ### <a name="rearrange-columns"></a>Reorganizar colunas
 
-1. Clique o **Adicionar/remover colunas** botão.
+1. Clique no botão **Adicionar/remover colunas** .
 
-1. No **Adicionar/remover colunas** caixa de diálogo, selecione a coluna que você deseja mover e, em seguida, escolha a seta para cima ou seta para baixo.
+1. Na caixa de diálogo **Adicionar/remover colunas** , selecione a coluna que você deseja mover e escolha a seta para cima ou para baixo.
 
-1. Quando a coluna é posicionada onde você deseja, escolha **Okey**.
+1. Quando a coluna estiver posicionada onde você desejar, escolha **OK**.
 
-## <a name="copy-data-to-the-clipboard-or-excel"></a>Copiar dados para o Excel ou área de transferência
+## <a name="copy-data-to-the-clipboard-or-excel"></a>Copiar dados para a área de transferência ou Excel
 
-Você pode selecionar e copiar uma linha de dados de métricas de código selecionada para a área de transferência como uma cadeia de caracteres de texto que contém uma linha para o nome e valor de cada coluna de dados. Você também pode clicar **abrir seleção no Microsoft Excel** para exportar todos os resultados de métricas de código para uma planilha do Excel.
+Você pode selecionar e copiar uma linha selecionada de dados de métricas de código para a área de transferência como uma cadeia de texto que contém uma linha para o nome e o valor de cada coluna de dados. Você também pode clicar em **abrir seleção no Microsoft Excel** para exportar todos os resultados de métricas de código para uma planilha do Excel.
 
-## <a name="create-a-work-item-based-on-code-metric-results"></a>Criar um item de trabalho com base nos resultados de métricas de código
+## <a name="create-a-work-item-based-on-code-metric-results"></a>Criar um item de trabalho com base nos resultados da métrica de código
 
-Você pode criar uma [Azure quadros](/azure/devops/boards/index?view=vsts) resulta de item de trabalho que se baseia na **resultados de métricas de código** janela. Quando o item de trabalho é criado, o Visual Studio entra automaticamente em um título a **Title** dados de métricas de campo e o código sob o **histórico** guia.
+Você pode criar um [Azure boards](/azure/devops/boards/index?view=vsts) item de trabalho com base nos resultados na janela **resultados da métrica de código** . Quando o item de trabalho é criado, o Visual Studio insere automaticamente um título no campo **título** e dados de métricas de código na guia **histórico** .
 
-Para obter mais informações sobre os quadros de Azure itens de trabalho, consulte [itens de trabalho](/azure/devops/boards/work-items/index?view=vsts).
+Para obter mais informações sobre Azure Boards itens de trabalho, consulte [itens de trabalho](/azure/devops/boards/work-items/index?view=vsts).
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Para criar um item de trabalho com base em um resultado
 
-1. Clique com botão direito o resultado.
+1. Clique com o botão direito do mouse no resultado.
 
-2. Aponte para **Criar Item de trabalho**e, em seguida, clique no tipo de item de trabalho que você deseja criar (**Bug**, **tarefa**e assim por diante).
+2. Aponte para **Criar item de trabalho**e clique no tipo de item de trabalho que você deseja criar (**bug**, **tarefa**e assim por diante).
 
-3. Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
+3. Preencha o formulário de item de trabalho preenchendo todos os campos obrigatórios.
 
-4. Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
+4. No menu **arquivo** , clique em **salvar tudo** para salvar o item de trabalho.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Para criar um bug com base em um resultado
 
 1. Clique no resultado para selecioná-lo.
 
-2. Clique o **Criar Item de trabalho** botão.
+2. Clique no botão **Criar item de trabalho** .
 
-3. Conclua o formulário de item de trabalho ao preencher todos os campos obrigatórios.
+3. Preencha o formulário de item de trabalho preenchendo todos os campos obrigatórios.
 
-4. Sobre o **arquivo** menu, clique em **Salvar tudo** para salvar o item de trabalho.
+4. No menu **arquivo** , clique em **salvar tudo** para salvar o item de trabalho.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Valores de métricas de código](../code-quality/code-metrics-values.md)
-- [Como: Gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)
+- [Como gerar dados de métricas de código](../code-quality/how-to-generate-code-metrics-data.md)

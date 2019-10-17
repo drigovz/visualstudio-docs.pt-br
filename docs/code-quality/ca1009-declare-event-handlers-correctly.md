@@ -1,5 +1,5 @@
 ---
-title: 'CA1009: Declarar manipuladores de eventos corretamente'
+title: 'CA1009: declarar manipuladores de eventos corretamente'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,20 +18,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e923730213ca31a4429d8547fdaaf980692f9a96
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: a7a91388c6f75043c92a053da3f5a8fb22ae82b9
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236486"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446876"
 ---
-# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar manipuladores de eventos corretamente
+# <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: declarar manipuladores de eventos corretamente
 
 |||
 |-|-|
 |NomeDoTipo|DeclareEventHandlersCorrectly|
 |CheckId|CA1009|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -40,7 +40,7 @@ Um delegado que manipula um evento público ou protegido não tem a assinatura, 
 ## <a name="rule-description"></a>Descrição da regra
 Os métodos de manipulador de eventos utilizam dois parâmetros. O primeiro é do tipo <xref:System.Object?displayProperty=fullName> e é chamado de ' Remetente '. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é denominado ' e '. Esses são os dados associados ao evento. Por exemplo, se o evento for gerado sempre que um arquivo for aberto, os dados do evento normalmente conterá o nome do arquivo.
 
-Os métodos do manipulador de eventos não devem retornar um valor. Na linguagem C# de programação, isso é indicado pelo tipo `void`de retorno. Um manipulador de eventos pode invocar vários métodos em vários objetos. Se os métodos tivessem permissão para retornar um valor, vários valores de retorno ocorreriam para cada evento, e somente o valor do último método que foi invocado estaria disponível.
+Os métodos do manipulador de eventos não devem retornar um valor. Na linguagem C# de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode invocar vários métodos em vários objetos. Se os métodos tivessem permissão para retornar um valor, vários valores de retorno ocorreriam para cada evento, e somente o valor do último método que foi invocado estaria disponível.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorno ou os nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.
@@ -49,14 +49,14 @@ Para corrigir uma violação dessa regra, corrija a assinatura, o tipo de retorn
 Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra um delegado que é adequado para manipular eventos. Os métodos que podem ser invocados por esse manipulador de eventos estão em conformidade com a assinatura especificada nas diretrizes de design. `AlarmEventHandler`é o nome do tipo do delegado. `AlarmEventArgs`deriva da classe base para dados de evento, <xref:System.EventArgs>e mantém dados de evento de alarme.
+O exemplo a seguir mostra um delegado que é adequado para manipular eventos. Os métodos que podem ser invocados por esse manipulador de eventos estão em conformidade com a assinatura especificada nas diretrizes de design. `AlarmEventHandler` é o nome do tipo do delegado. `AlarmEventArgs` deriva da classe base para dados de evento, <xref:System.EventArgs> e mantém os dados do evento de alarme.
 
 [!code-cpp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CPP/ca1009-declare-event-handlers-correctly_1.cpp)]
 [!code-csharp[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/CSharp/ca1009-declare-event-handlers-correctly_1.cs)]
 [!code-vb[FxCop.Design.EventsTwoParams#1](../code-quality/codesnippet/VisualBasic/ca1009-declare-event-handlers-correctly_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA2109: Examinar os manipuladores de eventos visíveis](../code-quality/ca2109-review-visible-event-handlers.md)
+[CA2109: examinar manipuladores de eventos visíveis](../code-quality/ca2109.md)
 
 ## <a name="see-also"></a>Consulte também
 

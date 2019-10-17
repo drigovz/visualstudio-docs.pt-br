@@ -1,5 +1,5 @@
 ---
-title: 'CA1000: Não declarar membros estáticos em tipos genéricos'
+title: 'CA1000: não declarar membros estáticos em tipos genéricos'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,31 +17,31 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc33c51af7d596fb9c784b76f8cc2f255ddf5a5
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 54bc6eab1806ce6174c60e996427ec1f7cdee335
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236711"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72432108"
 ---
-# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: Não declarar membros estáticos em tipos genéricos
+# <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000: não declarar membros estáticos em tipos genéricos
 
 |||
 |-|-|
 |NomeDoTipo|DoNotDeclareStaticMembersOnGenericTypes|
 |CheckId|CA1000|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
-Um tipo genérico contém um `static` membro`Shared` (no Visual Basic).
+Um tipo genérico contém um membro `static` (`Shared` no Visual Basic).
 
 Por padrão, essa regra só examina os tipos visíveis externamente, mas isso é [configurável](#configurability).
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Quando um `static` membro de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. A sintaxe para especificar o argumento de tipo nesses dois casos é diferente e facilmente confundida, uma vez que as seguintes chamadas demonstram:
+Quando um membro `static` de um tipo genérico é chamado, o argumento de tipo deve ser especificado para o tipo. Quando um membro de instância genérico que não dá suporte à inferência é chamado, o argumento de tipo deve ser especificado para o membro. A sintaxe para especificar o argumento de tipo nesses dois casos é diferente e facilmente confundida, uma vez que as seguintes chamadas demonstram:
 
 ```vb
 ' Shared method in a generic type.
@@ -59,7 +59,7 @@ GenericType<int>.StaticMethod();
 someObject.GenericMethod<int>();
 ```
 
-Em geral, ambas as declarações anteriores devem ser evitadas para que o argumento de tipo não precise ser especificado quando o membro for chamado. Isso resulta em uma sintaxe para chamar Membros em genéricos que não é diferente da sintaxe para não genéricos. Para obter mais informações, [consulte CA1004: Os métodos genéricos devem fornecer o](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)parâmetro de tipo.
+Em geral, ambas as declarações anteriores devem ser evitadas para que o argumento de tipo não precise ser especificado quando o membro for chamado. Isso resulta em uma sintaxe para chamar Membros em genéricos que não é diferente da sintaxe para não genéricos. Para obter mais informações, consulte [CA1004: métodos genéricos devem fornecer o parâmetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -81,13 +81,13 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1005: Evitar parâmetros excessivos em tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
-- [CA1010: As coleções devem implementar a interface genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
-- [CA1002: Não expor listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
-- [CA1006: Não aninhe tipos genéricos em assinaturas de membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
-- [CA1004: Métodos genéricos devem fornecer parâmetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
-- [CA1003: Usar instâncias de manipulador de eventos genéricas](../code-quality/ca1003-use-generic-event-handler-instances.md)
-- [CA1007: Usar genéricos quando apropriado](../code-quality/ca1007-use-generics-where-appropriate.md)
+- [CA1005: evitar parâmetros excessivos em tipos genéricos](../code-quality/ca1005-avoid-excessive-parameters-on-generic-types.md)
+- [CA1010: as coleções devem implementar a interface genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+- [CA1002: não expor listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
+- [CA1006: não aninhar tipos genéricos em assinaturas de membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+- [CA1004: os métodos genéricos devem fornecer o parâmetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+- [CA1003: usar instâncias do manipulador de eventos genéricos](../code-quality/ca1003-use-generic-event-handler-instances.md)
+- [CA1007: usar genéricos quando apropriado](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Consulte também
 

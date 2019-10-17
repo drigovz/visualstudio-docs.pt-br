@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96a0b43e6d300d3db425cb7a926d0196566d178b
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: bc279f0ae9e0420810e12c21f5f7cf29de0d15e7
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349634"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449161"
 ---
 # <a name="extended-correctness-rules-rule-set-for-managed-code"></a>Conjunto de regras de correção estendido para código gerenciado
 
@@ -43,32 +43,32 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA1410](../code-quality/ca1410-com-registration-methods-should-be-matched.md)|Métodos de registro COM devem ser correspondidos|
 |[CA1415](../code-quality/ca1415-declare-p-invokes-correctly.md)|Declarar P/Invokes corretamente|
 |[CA1821](../code-quality/ca1821.md)|Remover finalizadores vazios|
-|[CA1900](../code-quality/ca1900-value-type-fields-should-be-portable.md)|Campos de tipo de valor devem ser portáteis|
-|[CA1901](../code-quality/ca1901-p-invoke-declarations-should-be-portable.md)|Declarações P/Invoke devem ser portáteis|
-|[CA2002](../code-quality/ca2002-do-not-lock-on-objects-with-weak-identity.md)|Não bloquear objetos com identidade fraca|
-|[CA2100](../code-quality/ca2100-review-sql-queries-for-security-vulnerabilities.md)|Examinar consultas SQL em busca de vulnerabilidades de segurança|
-|[CA2101](../code-quality/ca2101-specify-marshaling-for-p-invoke-string-arguments.md)|Especificar marshaling para argumentos de cadeias de caracteres P/Invoke|
-|[CA2108](../code-quality/ca2108-review-declarative-security-on-value-types.md)|Examinar a segurança declarativa em tipos de valor|
-|[CA2111](../code-quality/ca2111-pointers-should-not-be-visible.md)|Ponteiros não devem ser visíveis|
-|[CA2112](../code-quality/ca2112-secured-types-should-not-expose-fields.md)|Tipos protegidos não devem expor campos|
-|[CA2114](../code-quality/ca2114-method-security-should-be-a-superset-of-type.md)|A segurança do método deve ser um superconjunto do tipo|
-|[CA2116](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)|Métodos APTCA devem chamar somente métodos APTCA|
-|[CA2117](../code-quality/ca2117-aptca-types-should-only-extend-aptca-base-types.md)|Tipos APTCA devem estender somente tipos base APTCA|
-|[CA2122](../code-quality/ca2122-do-not-indirectly-expose-methods-with-link-demands.md)|Não expor indiretamente métodos com demandas de link|
-|[CA2123](../code-quality/ca2123-override-link-demands-should-be-identical-to-base.md)|As demandas de link de substituição devem ser idênticas à base|
-|[CA2124](../code-quality/ca2124-wrap-vulnerable-finally-clauses-in-outer-try.md)|Encapsular cláusulas finally vulneráveis em try externo|
-|[CA2126](../code-quality/ca2126-type-link-demands-require-inheritance-demands.md)|As demandas de link de tipo exigem demandas de herança|
-|[CA2131](../code-quality/ca2131-security-critical-types-may-not-participate-in-type-equivalence.md)|Tipos críticos de segurança podem não participar da equivalência de tipo|
-|[CA2132](../code-quality/ca2132-default-constructors-must-be-at-least-as-critical-as-base-type-default-constructors.md)|Construtores padrão devem ser pelo menos tão críticos quanto construtores padrão do tipo base|
-|[CA2133](../code-quality/ca2133-delegates-must-bind-to-methods-with-consistent-transparency.md)|Representantes devem ser associados a métodos com transparência consistente|
-|[CA2134](../code-quality/ca2134-methods-must-keep-consistent-transparency-when-overriding-base-methods.md)|Os métodos devem manter uma transparência consistente durante a substituição dos métodos base|
-|[CA2137](../code-quality/ca2137-transparent-methods-must-contain-only-verifiable-il.md)|Métodos transparentes devem conter apenas a IL verificável|
-|[CA2138](../code-quality/ca2138-transparent-methods-must-not-call-methods-with-the-suppressunmanagedcodesecurity-attribute.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
-|[CA2140](../code-quality/ca2140-transparent-code-must-not-reference-security-critical-items.md)|O código transparente não deve referenciar itens críticos de segurança|
-|[CA2141](../code-quality/ca2141-transparent-methods-must-not-satisfy-linkdemands.md)|Métodos transparentes não devem satisfazer LinkDemands|
-|[CA2146](../code-quality/ca2146-types-must-be-at-least-as-critical-as-their-base-types-and-interfaces.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
-|[CA2147](../code-quality/ca2147-transparent-methods-may-not-use-security-asserts.md)|Métodos transparentes podem não usar declarações de segurança|
-|[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Métodos transparentes não devem chamar código nativo|
+|[CA1900](../code-quality/ca1900.md)|Campos de tipo de valor devem ser portáteis|
+|[CA1901](../code-quality/ca1901.md)|Declarações P/Invoke devem ser portáteis|
+|[CA2002](../code-quality/ca2002.md)|Não bloquear objetos com identidade fraca|
+|[CA2100](../code-quality/ca2100.md)|Examinar consultas SQL em busca de vulnerabilidades de segurança|
+|[CA2101](../code-quality/ca2101.md)|Especificar marshaling para argumentos de cadeias de caracteres P/Invoke|
+|[CA2108](../code-quality/ca2108.md)|Examinar a segurança declarativa em tipos de valor|
+|[CA2111](../code-quality/ca2111.md)|Ponteiros não devem ser visíveis|
+|[CA2112](../code-quality/ca2112.md)|Tipos protegidos não devem expor campos|
+|[CA2114](../code-quality/ca2114.md)|A segurança do método deve ser um superconjunto do tipo|
+|[CA2116](../code-quality/ca2116.md)|Métodos APTCA devem chamar somente métodos APTCA|
+|[CA2117](../code-quality/ca2117.md)|Tipos APTCA devem estender somente tipos base APTCA|
+|[CA2122](../code-quality/ca2122.md)|Não expor indiretamente métodos com demandas de link|
+|[CA2123](../code-quality/ca2123.md)|As demandas de link de substituição devem ser idênticas à base|
+|[CA2124](../code-quality/ca2124.md)|Encapsular cláusulas finally vulneráveis em try externo|
+|[CA2126](../code-quality/ca2126.md)|As demandas de link de tipo exigem demandas de herança|
+|[CA2131](../code-quality/ca2131.md)|Tipos críticos de segurança podem não participar da equivalência de tipo|
+|[CA2132](../code-quality/ca2132.md)|Construtores padrão devem ser pelo menos tão críticos quanto construtores padrão do tipo base|
+|[CA2133](../code-quality/ca2133.md)|Representantes devem ser associados a métodos com transparência consistente|
+|[CA2134](../code-quality/ca2134.md)|Os métodos devem manter uma transparência consistente durante a substituição dos métodos base|
+|[CA2137](../code-quality/ca2137.md)|Métodos transparentes devem conter apenas a IL verificável|
+|[CA2138](../code-quality/ca2138.md)|Métodos transparentes não devem chamar métodos com o atributo SuppressUnmanagedCodeSecurity|
+|[CA2140](../code-quality/ca2140.md)|O código transparente não deve referenciar itens críticos de segurança|
+|[CA2141](../code-quality/ca2141.md)|Métodos transparentes não devem satisfazer LinkDemands|
+|[CA2146](../code-quality/ca2146.md)|Os tipos devem ser pelo menos tão críticos quanto seus tipos base e interfaces|
+|[CA2147](../code-quality/ca2147.md)|Métodos transparentes podem não usar declarações de segurança|
+|[CA2149](../code-quality/ca2149.md)|Métodos transparentes não devem chamar código nativo|
 |[CA2200](../code-quality/ca2200.md)|Relançar para preservar detalhes da pilha|
 |[CA2202](../code-quality/ca2202.md)|Não descartar objetos várias vezes|
 |[CA2207](../code-quality/ca2207.md)|Inicializar campos estáticos de tipo de valor em linha|
@@ -95,18 +95,18 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA1816](../code-quality/ca1816.md)|Chamar GC.SuppressFinalize corretamente|
 |[CA1819](../code-quality/ca1819.md)|Propriedades não devem retornar matrizes|
 |[CA1820](../code-quality/ca1820.md)|Testar para verificar se há cadeias de caracteres vazias usando o tamanho da cadeia de caracteres|
-|[CA1903](../code-quality/ca1903-use-only-api-from-targeted-framework.md)|Usar apenas a API da estrutura de destino|
-|[CA2004](../code-quality/ca2004-remove-calls-to-gc-keepalive.md)|Remover as chamadas a GC.KeepAlive|
-|[CA2006](../code-quality/ca2006-use-safehandle-to-encapsulate-native-resources.md)|Usar SafeHandle para encapsular recursos nativos|
-|[CA2102](../code-quality/ca2102-catch-non-clscompliant-exceptions-in-general-handlers.md)|Capturar exceções não CLSCompliant em manipuladores gerais|
-|[CA2104](../code-quality/ca2104-do-not-declare-read-only-mutable-reference-types.md)|Não declarar tipos de referência mutáveis somente leitura|
-|[CA2105](../code-quality/ca2105-array-fields-should-not-be-read-only.md)|Campos de matrizes não devem ser somente leitura|
-|[CA2106](../code-quality/ca2106-secure-asserts.md)|Declarações seguras|
-|[CA2115](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)|Chamar GC.KeepAlive ao usar recursos nativos|
-|[CA2119](../code-quality/ca2119-seal-methods-that-satisfy-private-interfaces.md)|Selar métodos que atendem a interfaces particulares|
-|[CA2120](../code-quality/ca2120-secure-serialization-constructors.md)|Construtores de serialização seguros|
-|[CA2121](../code-quality/ca2121-static-constructors-should-be-private.md)|Construtores estáticos devem ser particulares|
-|[CA2130](../code-quality/ca2130-security-critical-constants-should-be-transparent.md)|Constantes críticas de segurança devem ser transparentes|
+|[CA1903](../code-quality/ca1903.md)|Usar apenas a API da estrutura de destino|
+|[CA2004](../code-quality/ca2004.md)|Remover as chamadas a GC.KeepAlive|
+|[CA2006](../code-quality/ca2006.md)|Usar SafeHandle para encapsular recursos nativos|
+|[CA2102](../code-quality/ca2102.md)|Capturar exceções não CLSCompliant em manipuladores gerais|
+|[CA2104](../code-quality/ca2104.md)|Não declarar tipos de referência mutáveis somente leitura|
+|[CA2105](../code-quality/ca2105.md)|Campos de matrizes não devem ser somente leitura|
+|[CA2106](../code-quality/ca2106.md)|Declarações seguras|
+|[CA2115](../code-quality/ca2115.md)|Chamar GC.KeepAlive ao usar recursos nativos|
+|[CA2119](../code-quality/ca2119.md)|Selar métodos que atendem a interfaces particulares|
+|[CA2120](../code-quality/ca2120.md)|Construtores de serialização seguros|
+|[CA2121](../code-quality/ca2121.md)|Construtores estáticos devem ser particulares|
+|[CA2130](../code-quality/ca2130.md)|Constantes críticas de segurança devem ser transparentes|
 |[CA2205](../code-quality/ca2205.md)|Usar equivalentes gerenciados da API do Win32|
 |[CA2215](../code-quality/ca2215.md)|Métodos Dispose devem chamar o descarte da classe base|
 |[CA2221](../code-quality/ca2221.md)|Os finalizadores devem ser protegidos|
@@ -133,15 +133,15 @@ A tabela a seguir descreve todas as regras no conjunto de regras de regras de co
 |[CA1600](../code-quality/ca1600-do-not-use-idle-process-priority.md)|Não usar prioridade de processo ociosa|
 |[CA1601](../code-quality/ca1601-do-not-use-timers-that-prevent-power-state-changes.md)|Não usar temporizadores que impedem alterações no estado de energia|
 |[CA1824](../code-quality/ca1824.md)|Marque assemblies com NeutralResourcesLanguageAttribute|
-|[CA2001](../code-quality/ca2001-avoid-calling-problematic-methods.md)|Evitar chamar métodos problemáticos|
-|[CA2003](../code-quality/ca2003-do-not-treat-fibers-as-threads.md)|Não tratar fibras como threads|
-|[CA2135](../code-quality/ca2135-level-2-assemblies-should-not-contain-linkdemands.md)|Os assemblies de nível 2 não devem conter LinkDemands|
-|[CA2136](../code-quality/ca2136-members-should-not-have-conflicting-transparency-annotations.md)|Membros não devem ter anotações de transparência conflitantes|
-|[CA2139](../code-quality/ca2139-transparent-methods-may-not-use-the-handleprocesscorruptingexceptions-attribute.md)|Métodos transparentes podem não usar o atributo HandleProcessCorruptingExceptions|
-|[CA2142](../code-quality/ca2142-transparent-code-should-not-be-protected-with-linkdemands.md)|O código transparente não deve ser protegido com LinkDemands|
-|[CA2143](../code-quality/ca2143-transparent-methods-should-not-use-security-demands.md)|Métodos transparentes não devem usar demandas de segurança|
-|[CA2144](../code-quality/ca2144-transparent-code-should-not-load-assemblies-from-byte-arrays.md)|O código transparente não deve carregar assemblies de matrizes de bytes|
-|[CA2145](../code-quality/ca2145-transparent-methods-should-not-be-decorated-with-the-suppressunmanagedcodesecurityattribute.md)|Métodos transparentes não devem ser decorados com o SuppressUnmanagedCodeSecurityAttribute|
+|[CA2001](../code-quality/ca2001.md)|Evitar chamar métodos problemáticos|
+|[CA2003](../code-quality/ca2003.md)|Não tratar fibras como threads|
+|[CA2135](../code-quality/ca2135.md)|Os assemblies de nível 2 não devem conter LinkDemands|
+|[CA2136](../code-quality/ca2136.md)|Membros não devem ter anotações de transparência conflitantes|
+|[CA2139](../code-quality/ca2139.md)|Métodos transparentes podem não usar o atributo HandleProcessCorruptingExceptions|
+|[CA2142](../code-quality/ca2142.md)|O código transparente não deve ser protegido com LinkDemands|
+|[CA2143](../code-quality/ca2143.md)|Métodos transparentes não devem usar demandas de segurança|
+|[CA2144](../code-quality/ca2144.md)|O código transparente não deve carregar assemblies de matrizes de bytes|
+|[CA2145](../code-quality/ca2145.md)|Métodos transparentes não devem ser decorados com o SuppressUnmanagedCodeSecurityAttribute|
 |[CA2204](../code-quality/ca2204.md)|Literais devem ser escritos corretamente|
 |[CA2211](../code-quality/ca2211.md)|Campos não constantes não devem ser visíveis|
 |[CA2217](../code-quality/ca2217.md)|Não marcar enumerações com FlagsAttribute|

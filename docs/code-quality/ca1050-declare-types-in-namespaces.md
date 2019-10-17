@@ -1,5 +1,5 @@
 ---
-title: 'CA1050: Declarar tipos em namespaces'
+title: 'CA1050: declarar tipos em namespaces'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8127c68cfe7eb541b8adea8affad99027e0c1fe7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 4d7b132a2840afcc581dda8d341f0193c27f0ef2
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235747"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449193"
 ---
-# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: Declarar tipos em namespaces
+# <a name="ca1050-declare-types-in-namespaces"></a>CA1050: declarar tipos em namespaces
 
 |||
 |-|-|
 |NomeDoTipo|DeclareTypesInNamespaces|
 |CheckId|CA1050|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -52,7 +52,7 @@ O exemplo a seguir mostra uma biblioteca que tem um tipo incorretamente declarad
 [!code-vb[FxCop.Design.TypesLiveInNamespaces#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_1.vb)]
 
 ## <a name="example"></a>Exemplo
-O aplicativo a seguir usa a biblioteca que foi definida anteriormente. Observe que o tipo declarado fora de um namespace é criado quando o nome `Test` não é qualificado por um namespace. Observe também que `Goodspace`, para acessar `Test` o tipo, o nome do namespace é necessário.
+O aplicativo a seguir usa a biblioteca que foi definida anteriormente. Observe que o tipo declarado fora de um namespace é criado quando o nome `Test` não é qualificado por um namespace. Observe também que, para acessar o tipo `Test` em `Goodspace`, o nome do namespace é necessário.
 
 [!code-csharp[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/CSharp/ca1050-declare-types-in-namespaces_2.cs)]
 [!code-vb[FxCop.Design.TestTypesLive#1](../code-quality/codesnippet/VisualBasic/ca1050-declare-types-in-namespaces_2.vb)]

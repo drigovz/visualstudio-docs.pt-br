@@ -1,5 +1,5 @@
 ---
-title: 'CA1021: Evitar parâmetros out'
+title: 'CA1021: evitar parâmetros de saída'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,33 +14,33 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e333e53fea1b965b250bdc97924e93728d55805a
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2b07c987bdaa2d037c8c6dc95a37d5e77069dea5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236177"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449343"
 ---
-# <a name="ca1021-avoid-out-parameters"></a>CA1021: Evitar parâmetros out
+# <a name="ca1021-avoid-out-parameters"></a>CA1021: evitar parâmetros de saída
 
 |||
 |-|-|
 |NomeDoTipo|AvoidOutParameters|
 |CheckId|CA1021|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
-Um método público ou protegido em um tipo público tem um `out` parâmetro.
+Um método público ou protegido em um tipo público tem um parâmetro `out`.
 
 ## <a name="rule-description"></a>Descrição da regra
-Passar tipos por referência (usando `out` ou `ref`) requer experiência com ponteiros, compreendendo como tipos de valor e tipos de referência diferem e manipulando métodos com vários valores de retorno. Além disso, a diferença `out` entre `ref` os parâmetros e não é amplamente compreendida.
+A passagem de tipos por referência (usando `out` ou `ref`) requer experiência com ponteiros, compreendendo como tipos de valor e tipos de referência diferem e manipulando métodos com vários valores de retorno. Além disso, a diferença entre os parâmetros `out` e `ref` não é amplamente compreendida.
 
 Quando um tipo de referência é passado "por referência", o método pretende usar o parâmetro para retornar uma instância diferente do objeto. Passar um tipo de referência por referência também é conhecido como usar um ponteiro duplo, um ponteiro para um ponteiro ou um indireção duplo. Usando a Convenção de chamada padrão, que é Pass "por valor", um parâmetro que usa um tipo de referência já recebe um ponteiro para o objeto. O ponteiro, não o objeto ao qual ele aponta, é passado por valor. A passagem por valor significa que o método não pode alterar o ponteiro para que ele aponte para uma nova instância do tipo de referência. No entanto, ele pode alterar o conteúdo do objeto para o qual ele aponta. Para a maioria dos aplicativos, isso é suficiente e produz o comportamento desejado.
 
-Se um método precisar retornar uma instância diferente, use o valor de retorno do método para fazer isso. Consulte a <xref:System.String?displayProperty=fullName> classe de uma variedade de métodos que operam em cadeias de caracteres e retornam uma nova instância de uma cadeia de caracteres. Quando esse modelo é usado, o chamador deve decidir se o objeto original é preservado.
+Se um método precisar retornar uma instância diferente, use o valor de retorno do método para fazer isso. Consulte a classe <xref:System.String?displayProperty=fullName> para obter uma variedade de métodos que operam em cadeias de caracteres e retornam uma nova instância de uma cadeia. Quando esse modelo é usado, o chamador deve decidir se o objeto original é preservado.
 
-Embora os valores de retorno sejam comuns e usados intensamente, `out` a `ref` aplicação e os parâmetros corretos exigem design intermediário e habilidades de codificação. Os arquitetos de biblioteca que projetam um público geral não devem esperar que os `out` usuários `ref` façam o mestre de trabalho com os parâmetros ou.
+Embora os valores de retorno sejam comuns e muito usados, o aplicativo correto dos parâmetros `out` e `ref` exige habilidades de design e codificação intermediárias. Os arquitetos de biblioteca que projetam um público geral não devem esperar que os usuários façam o mestre de trabalho com parâmetros `out` ou `ref`.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra causada por um tipo de valor, faça com que o método retorne o objeto como seu valor de retorno. Se o método deve retornar vários valores, recrie-o para retornar uma única instância de um objeto que contém os valores.
@@ -51,17 +51,17 @@ Para corrigir uma violação dessa regra causada por um tipo de referência, ver
 É seguro suprimir um aviso dessa regra. No entanto, esse design pode causar problemas de usabilidade.
 
 ## <a name="example"></a>Exemplo
-A biblioteca a seguir mostra duas implementações de uma classe que gera respostas para os comentários de um usuário. A primeira implementação (`BadRefAndOut`) força o usuário da biblioteca a gerenciar três valores de retorno. A segunda implementação (`RedesignedRefAndOut`) simplifica a experiência do usuário retornando uma instância de uma classe de contêiner`ReplyData`() que gerencia os dados como uma única unidade.
+A biblioteca a seguir mostra duas implementações de uma classe que gera respostas para os comentários de um usuário. A primeira implementação (`BadRefAndOut`) força o usuário da biblioteca a gerenciar três valores de retorno. A segunda implementação (`RedesignedRefAndOut`) simplifica a experiência do usuário retornando uma instância de uma classe de contêiner (`ReplyData`) que gerencia os dados como uma única unidade.
 
 [!code-csharp[FxCop.Design.NoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_1.cs)]
 
 ## <a name="example"></a>Exemplo
-O aplicativo a seguir ilustra a experiência do usuário. A chamada para a biblioteca remodelada (`UseTheSimplifiedClass` método) é mais simples, e as informações retornadas pelo método são facilmente gerenciadas. A saída dos dois métodos é idêntica.
+O aplicativo a seguir ilustra a experiência do usuário. A chamada para a biblioteca remodelada (método `UseTheSimplifiedClass`) é mais simples e as informações retornadas pelo método são facilmente gerenciadas. A saída dos dois métodos é idêntica.
 
 [!code-csharp[FxCop.Design.TestNoRefOrOut#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_2.cs)]
 
 ## <a name="example"></a>Exemplo
-A biblioteca de exemplo a seguir `ref` ilustra como os parâmetros para tipos de referência são usados e mostra uma maneira melhor de implementar essa funcionalidade.
+A biblioteca de exemplo a seguir ilustra como `ref` parâmetros para tipos de referência são usados e mostra uma maneira melhor de implementar essa funcionalidade.
 
 [!code-csharp[FxCop.Design.RefByRefNo#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_3.cs)]
 
@@ -86,10 +86,10 @@ Passing by return value:
 ## <a name="try-pattern-methods"></a>Experimente os métodos de padrão
 
 ### <a name="description"></a>Descrição
-Métodos que implementam o <xref:System.Int32.TryParse%2A?displayProperty=fullName>padrão **tentar\<algo >** , como, não geram essa violação. O exemplo a seguir mostra uma estrutura (tipo de valor) que <xref:System.Int32.TryParse%2A?displayProperty=fullName> implementa o método.
+Métodos que implementam o padrão de **> try @ no__t-1Something** , como <xref:System.Int32.TryParse%2A?displayProperty=fullName>, não geram essa violação. O exemplo a seguir mostra uma estrutura (tipo de valor) que implementa o método <xref:System.Int32.TryParse%2A?displayProperty=fullName>.
 
 ### <a name="code"></a>Código
 [!code-csharp[FxCop.Design.TryPattern#1](../code-quality/codesnippet/CSharp/ca1021-avoid-out-parameters_5.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1045: Não passar tipos por referência](../code-quality/ca1045-do-not-pass-types-by-reference.md)
+[CA1045: não passar tipos por referência](../code-quality/ca1045-do-not-pass-types-by-reference.md)

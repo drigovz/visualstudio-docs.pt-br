@@ -18,16 +18,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be22786a78c16dc9ffa05aba38075e4762485d2d
-ms.sourcegitcommit: 9cfd3ef6c65f671a26322320818212a1ed5955fe
+ms.openlocfilehash: ddfc17d4f9bcb1f4f2585aa91319f06be6936e6f
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68533318"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72431460"
 ---
-# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação de depuração: Projetos de consoleC#( C++,, Visual Basic F#,)
+# <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>Preparação da depuração: projetos deC#console C++(,, F#Visual Basic,)
 
-A preparação para depurar um projeto de console é semelhante à preparação para depurar um projeto do Windows, com algumas considerações adicionais, como definir argumentos de linha de comando e como pausar o aplicativo para depuração. Para obter mais informações, consulte [Windows Forms aplicativos](../debugger/debugging-preparation-windows-forms-applications.md)e [preparação da depuração: Aplicativos de Windows Forms (.NET](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:
+A preparação para depurar um projeto de console é semelhante à preparação para depurar um projeto do Windows, com algumas considerações adicionais, como definir argumentos de linha de comando e como pausar o aplicativo para depuração. Para obter mais informações, consulte [aplicativos do Windows Forms](../debugger/debugging-preparation-windows-forms-applications.md), e [preparação de depuração:  Aplicativos do Windows Forms (.NET)](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100)). Devido à semelhança de todos os aplicativos do console, este tópico abrange os seguintes tipos de projeto:
 
 - C#, Visual Basic e F# aplicativo de console
 
@@ -49,7 +49,7 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 
 - Defina um ponto de interrupção em seu código e inicie seu aplicativo.
 
-- Inicie seu aplicativo usando **F10** (**depurar depuração** >  **) ou** **F11** (**depurar** > **etapa em**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
+- Inicie seu aplicativo usando **F10** (**debug** > **Step Over**) ou **F11** (**debug** > **Step Into**) e, em seguida, navegue pelo código usando outras opções, como **Executar para clicar em**.
 
 - No editor de código, clique com o botão direito do mouse em uma linha e selecione **executar até o cursor**.
 
@@ -60,7 +60,7 @@ Como todas as propriedades do projeto, esses argumentos persistem entre sessões
 ## <a name="see-also"></a>Consulte também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
-- [Tipos de projeto do Visual C++](../debugger/debugging-preparation-visual-cpp-project-types.md)
+- [Preparar para depurar C++ projetos](../debugger/debugging-preparation-visual-cpp-project-types.md)
 - [Tipos de projeto C#, F# e Visual Basic](../debugger/debugging-preparation-csharp-f-hash-and-visual-basic-project-types.md)
 - [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md)
 - [Segurança do depurador](../debugger/debugger-security.md)

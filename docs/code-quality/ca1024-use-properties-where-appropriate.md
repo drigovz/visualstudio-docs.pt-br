@@ -1,5 +1,5 @@
 ---
-title: 'CA1024: Usar propriedades quando apropriado'
+title: 'CA1024: usar propriedades quando apropriado'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: d312618c80abb6a4ce6e1a2676903d85867f4989
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 2ba4a7a16675bf6da0aa465a515b73c907aa80ac
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236151"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449301"
 ---
-# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: Usar propriedades quando apropriado
+# <a name="ca1024-use-properties-where-appropriate"></a>CA1024: usar propriedades quando apropriado
 
 |||
 |-|-|
 |NomeDoTipo|UsePropertiesWhereAppropriate|
 |CheckId|CA1024|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -85,7 +85,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 Um motivo pelo qual os programadores evitam o uso de uma propriedade é porque não querem que o depurador a expanda para ele. Por exemplo, a propriedade pode envolver a alocação de um objeto grande ou a chamada de P/Invoke, mas pode não ter realmente nenhum efeito colateral observável.
 
-Você pode impedir que o depurador expanda Propriedades de AutoExpandir <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>aplicando. O exemplo a seguir mostra esse atributo sendo aplicado a uma propriedade de instância.
+Você pode impedir que o depurador expanda Propriedades de AutoExpandir aplicando <xref:System.Diagnostics.DebuggerBrowsableAttribute?displayProperty=fullName>. O exemplo a seguir mostra esse atributo sendo aplicado a uma propriedade de instância.
 
 ```vb
 Imports System

@@ -1,5 +1,5 @@
 ---
-title: 'CA1005: Evitar parâmetros excessivos em tipos genéricos'
+title: 'CA1005: evitar parâmetros excessivos em tipos genéricos'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 34f9b8a79e38bdb9b6b097588697e2cd6c3545f7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 77f913a2dc31ee77445ee90b417f1a7d1cf23b8d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236601"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449353"
 ---
-# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: Evitar parâmetros excessivos em tipos genéricos
+# <a name="ca1005-avoid-excessive-parameters-on-generic-types"></a>CA1005: evitar parâmetros excessivos em tipos genéricos
 
 |||
 |-|-|
 |NomeDoTipo|AvoidExcessiveParametersOnGenericTypes|
 |CheckId|CA1005|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 Um tipo genérico visível externamente tem mais de dois parâmetros de tipo.
 
 ## <a name="rule-description"></a>Descrição da regra
-Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. Normalmente, isso é óbvio com um parâmetro de tipo, `List<T>`como em, e em determinados casos com dois parâmetros de tipo `Dictionary<TKey, TValue>`, como em. Se houver mais de dois parâmetros de tipo, a dificuldade se tornará muito grande para a maioria dos `TooManyTypeParameters<T, K, V>` usuários ( `TooManyTypeParameters(Of T, K, V)` por [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]exemplo, no C# ou no).
+Quanto mais parâmetros de tipo um tipo genérico contiver, mais difícil será saber e lembrar-se do que cada parâmetro de tipo representa. Normalmente, é óbvio com um parâmetro de tipo, como em `List<T>` e, em certos casos, com dois parâmetros de tipo, como em `Dictionary<TKey, TValue>`. Se houver mais de dois parâmetros de tipo, a dificuldade se tornará muito grande para a maioria dos usuários (por exemplo C# , `TooManyTypeParameters<T, K, V>` em ou `TooManyTypeParameters(Of T, K, V)` em [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, altere o design para não usar mais do que dois parâmetros de tipo.
@@ -43,19 +43,19 @@ Para corrigir uma violação dessa regra, altere o design para não usar mais do
 Não suprimir um aviso dessa regra, a menos que o design absolutamente exija mais do que dois parâmetros de tipo. Fornecer genéricos em uma sintaxe que seja fácil de entender e usar reduz o tempo necessário para aprender e aumentar a taxa de adoção de novas bibliotecas.
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1010: As coleções devem implementar a interface genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
+[CA1010: as coleções devem implementar a interface genérica](../code-quality/ca1010-collections-should-implement-generic-interface.md)
 
-[CA1000: Não declarar membros estáticos em tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
+[CA1000: não declarar membros estáticos em tipos genéricos](../code-quality/ca1000-do-not-declare-static-members-on-generic-types.md)
 
-[CA1002: Não expor listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
+[CA1002: não expor listas genéricas](../code-quality/ca1002-do-not-expose-generic-lists.md)
 
-[CA1006: Não aninhe tipos genéricos em assinaturas de membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
+[CA1006: não aninhar tipos genéricos em assinaturas de membro](../code-quality/ca1006-do-not-nest-generic-types-in-member-signatures.md)
 
-[CA1004: Métodos genéricos devem fornecer parâmetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
+[CA1004: os métodos genéricos devem fornecer o parâmetro de tipo](../code-quality/ca1004-generic-methods-should-provide-type-parameter.md)
 
-[CA1003: Usar instâncias de manipulador de eventos genéricas](../code-quality/ca1003-use-generic-event-handler-instances.md)
+[CA1003: usar instâncias do manipulador de eventos genéricos](../code-quality/ca1003-use-generic-event-handler-instances.md)
 
-[CA1007: Usar genéricos quando apropriado](../code-quality/ca1007-use-generics-where-appropriate.md)
+[CA1007: usar genéricos quando apropriado](../code-quality/ca1007-use-generics-where-appropriate.md)
 
 ## <a name="see-also"></a>Consulte também
 [Genéricos](/dotnet/csharp/programming-guide/generics/index)

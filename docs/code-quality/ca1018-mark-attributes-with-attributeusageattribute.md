@@ -1,5 +1,5 @@
 ---
-title: 'CA1018: Marcar atributos com AttributeUsageAttribute'
+title: 'CA1018: marcar atributos com AttributeUsageAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 133ee073398817c037af95e2009c5acc98e1e5a2
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 041555ed8036c145963f00295365fb204f1879dd
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306128"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72446757"
 ---
-# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: Marcar atributos com AttributeUsageAttribute
+# <a name="ca1018-mark-attributes-with-attributeusageattribute"></a>CA1018: marcar atributos com AttributeUsageAttribute
 
 |||
 |-|-|
 |NomeDoTipo|MarkAttributesWithAttributeUsage|
 |CheckId|CA1018|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -48,15 +48,15 @@ Para corrigir uma violação dessa regra, especifique destinos para o atributo u
 Você deve corrigir uma violação dessa regra em vez de excluir a mensagem. Mesmo que o atributo herde <xref:System.AttributeUsageAttribute>, o atributo deve estar presente para simplificar a manutenção do código.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir define dois atributos. `BadCodeMaintainerAttribute` omite incorretamente a instrução <xref:System.AttributeUsageAttribute> e `GoodCodeMaintainerAttribute` implementa corretamente o atributo descrito anteriormente nesta seção. Observe que a propriedade `DeveloperName` é exigida pela regra de design [CA1019: Defina os acessadores para os argumentos de atributo @ no__t-0 e estão incluídos para fins de integridade.
+O exemplo a seguir define dois atributos. `BadCodeMaintainerAttribute` omite incorretamente a instrução <xref:System.AttributeUsageAttribute> e `GoodCodeMaintainerAttribute` implementa corretamente o atributo descrito anteriormente nesta seção. Observe que a propriedade `DeveloperName` é exigida pela regra de design [CA1019: definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md) e está incluído para fins de integridade.
 
 [!code-csharp[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/CSharp/ca1018-mark-attributes-with-attributeusageattribute_1.cs)]
 [!code-vb[FxCop.Design.AttributeUsage#1](../code-quality/codesnippet/VisualBasic/ca1018-mark-attributes-with-attributeusageattribute_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1019: Definir acessadores para argumentos de atributo @ no__t-0
+[CA1019: definir acessadores para argumentos de atributo](../code-quality/ca1019-define-accessors-for-attribute-arguments.md)
 
-[CA1813: Evitar atributos não lacrados @ no__t-0
+[CA1813: evitar atributos não lacrados](../code-quality/ca1813.md)
 
 ## <a name="see-also"></a>Consulte também
 

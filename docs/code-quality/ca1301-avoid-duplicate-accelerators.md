@@ -1,5 +1,5 @@
 ---
-title: 'CA1301: Evitar aceleradores duplicados'
+title: 'CA1301: evitar aceleradores duplicados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f50be12f4d601161ec20659bbb6b710e5a7cf24
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 1970eefee70fa14179c77566f23f213f09026646
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235172"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444388"
 ---
-# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: Evitar aceleradores duplicados
+# <a name="ca1301-avoid-duplicate-accelerators"></a>CA1301: evitar aceleradores duplicados
 
 |||
 |-|-|
@@ -46,7 +46,7 @@ Para corrigir uma violação dessa regra, defina chaves de acesso exclusivas par
 Não suprima um aviso nessa regra.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra uma forma mínima que contém dois controles que têm chaves de acesso idênticas. As chaves são armazenadas em um arquivo de recurso, que não é mostrado. No entanto, seus valores aparecem nas `checkBox.Text` linhas comentadas. O comportamento de aceleradores duplicados pode ser examinado pela troca `checkBox.Text` de linhas com suas contrapartes comentadas. No entanto, nesse caso, o exemplo não gerará um aviso da regra.
+O exemplo a seguir mostra uma forma mínima que contém dois controles que têm chaves de acesso idênticas. As chaves são armazenadas em um arquivo de recurso, que não é mostrado. No entanto, seus valores aparecem nas linhas comentadas `checkBox.Text`. O comportamento de aceleradores duplicados pode ser examinado por meio da troca de linhas `checkBox.Text` com suas contrapartes comentadas. No entanto, nesse caso, o exemplo não gerará um aviso da regra.
 
 [!code-csharp[FxCop.Globalization.AvoidDuplicateAccels#1](../code-quality/codesnippet/CSharp/ca1301-avoid-duplicate-accelerators_1.cs)]
 

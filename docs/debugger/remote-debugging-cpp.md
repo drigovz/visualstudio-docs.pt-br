@@ -1,5 +1,5 @@
 ---
-title: Depuração remota de um C++ projeto Visual | Microsoft Docs
+title: Depurar remotamente um C++ projeto | Microsoft Docs
 ms.custom: remotedebugging
 ms.date: 08/14/2018
 ms.topic: conceptual
@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 81a5ebba2d14a0e091b3b0bcd78a066ef50ed759
-ms.sourcegitcommit: ea182703e922c74725045afc251bcebac305068a
+ms.openlocfilehash: 2b9cd6f120d5699464c9e7311721898a727bf47e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71211115"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72450432"
 ---
-# <a name="remote-debugging-a-visual-c-project-in-visual-studio"></a>Depuração remota de um C++ projeto Visual no Visual Studio
+# <a name="remote-debugging-a-c-project-in-visual-studio"></a>Depuração remota de C++ um projeto no Visual Studio
 Para depurar um aplicativo do Visual Studio em um computador diferente, instale e execute as ferramentas remotas no computador em que você implantará seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, implante e execute seu aplicativo.
 
 ![Componentes do depurador remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -52,7 +52,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 > [!NOTE]
 > Se você precisar adicionar permissões para usuários adicionais, altere o modo de autenticação ou o número da porta para o depurador remoto, consulte [Configurar o depurador remoto](../debugger/remote-debugging.md#configure_msvsmon).
 
-## <a name="remote_cplusplus"></a>Depuração remota de um C++ projeto Visual
+## <a name="remote_cplusplus"></a>Depuração remota de C++ um projeto
  No procedimento a seguir, o nome e o caminho do projeto são C:\remotetemp\MyMfc e o nome do computador remoto é **MJO-DL**.
 
 1. Crie um aplicativo MFC chamado **mymfc.**
@@ -91,7 +91,7 @@ O depurador remoto tem suporte no Windows 7 e em versões mais recentes (não de
 
 10. Se solicitado, insira as credenciais de rede para se conectar ao computador remoto.
 
-     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta <strong>MJO-DL\name@something.com</strong>de usuário válido, como, junto com a senha correta.
+     As credenciais necessárias são específicas para a configuração de segurança da sua rede. Por exemplo, em um computador de domínio, você pode escolher um certificado de segurança ou inserir seu nome de domínio e senha. Em um computador que não seja de domínio, você pode inserir o nome do computador e um nome de conta de usuário válido, como <strong>MJO-DL\name@something.com</strong>, juntamente com a senha correta.
 
 11. No computador do Visual Studio, você deve ver que a execução é interrompida no ponto de interrupção.
 

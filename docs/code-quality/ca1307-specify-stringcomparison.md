@@ -1,5 +1,5 @@
 ---
-title: 'CA1307: Especificar StringComparison'
+title: 'CA1307: especificar StringComparison'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e352eea1b7fcf82cb948315affeae6e30690a4aa
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: e3b3d979910883f6be9f542ec581ecbda0f91deb
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234966"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444377"
 ---
-# <a name="ca1307-specify-stringcomparison"></a>CA1307: Especificar StringComparison
+# <a name="ca1307-specify-stringcomparison"></a>CA1307: especificar StringComparison
 
 |||
 |-|-|
@@ -31,15 +31,15 @@ ms.locfileid: "71234966"
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
-Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método <xref:System.StringComparison> que não define um parâmetro.
+Uma operação de comparação de cadeia de caracteres usa uma sobrecarga de método que não define um parâmetro <xref:System.StringComparison>.
 
 ## <a name="rule-description"></a>Descrição da regra
-Muitas operações de cadeia de caracteres, <xref:System.String.Compare%2A> os <xref:System.String.Equals%2A> métodos e mais importantes, fornecem uma sobrecarga <xref:System.StringComparison> que aceita um valor de enumeração como um parâmetro.
+Muitas operações de cadeia de caracteres, mais importantes os métodos <xref:System.String.Compare%2A> e <xref:System.String.Equals%2A>, fornecem uma sobrecarga que aceita um valor de enumeração <xref:System.StringComparison> como um parâmetro.
 
-Sempre que existe uma sobrecarga que usa <xref:System.StringComparison> um parâmetro, ela deve ser usada em vez de uma sobrecarga que não usa esse parâmetro. Ao definir explicitamente esse parâmetro, seu código costuma ser mais claro e mais fácil de manter.
+Sempre que existe uma sobrecarga que usa um parâmetro <xref:System.StringComparison>, ela deve ser usada em vez de uma sobrecarga que não usa esse parâmetro. Ao definir explicitamente esse parâmetro, seu código costuma ser mais claro e mais fácil de manter.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Para corrigir uma violação dessa regra, altere os métodos de comparação de cadeia de caracteres para sobrecargas que aceitam a <xref:System.StringComparison> enumeração como um parâmetro. Por exemplo: alterar `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.
+Para corrigir uma violação dessa regra, altere os métodos de comparação de cadeia de caracteres para sobrecargas que aceitem a enumeração <xref:System.StringComparison> como um parâmetro. Por exemplo: altere `String.Compare(str1, str2)` para `String.Compare(str1, str2, StringComparison.Ordinal)`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 É seguro suprimir um aviso dessa regra quando a biblioteca ou o aplicativo for destinado a um público local limitado e, portanto, não será localizado.
@@ -47,4 +47,4 @@ Para corrigir uma violação dessa regra, altere os métodos de comparação de 
 ## <a name="see-also"></a>Consulte também
 
 - [Avisos de globalização](../code-quality/globalization-warnings.md)
-- [CA1309: Usar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)
+- [CA1309: usar StringComparison ordinal](../code-quality/ca1309-use-ordinal-stringcomparison.md)

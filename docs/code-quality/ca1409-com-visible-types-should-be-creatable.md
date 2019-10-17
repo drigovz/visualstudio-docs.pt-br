@@ -1,5 +1,5 @@
 ---
-title: 'CA1409: Tipos visíveis no COM devem poder ser criados'
+title: 'CA1409: os tipos visíveis Com devem ser criáveis'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 54630b7fba69ef96a2c08486e535ae45d8e614b8
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 402ce13b55921045f8e06d99bbe6b1e3918e457a
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234761"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440285"
 ---
-# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: Tipos visíveis no COM devem poder ser criados
+# <a name="ca1409-com-visible-types-should-be-creatable"></a>CA1409: os tipos visíveis Com devem ser criáveis
 
 |||
 |-|-|
@@ -41,13 +41,13 @@ A regra ignora os tipos derivados de <xref:System.Delegate?displayProperty=fullN
 Por padrão, os itens a seguir são visíveis para COM: assemblies, tipos públicos, membros de instância pública em tipos públicos e todos os membros de tipos de valor público.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
-Para corrigir uma violação dessa regra, adicione um construtor público padrão ou remova o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> do tipo.
+Para corrigir uma violação dessa regra, adicione um construtor padrão público ou remova o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> do tipo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 É seguro suprimir um aviso dessa regra se outras maneiras forem fornecidas para criar e passar o objeto para o cliente COM.
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1017: Marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
+[CA1017: marcar assemblies com ComVisibleAttribute](../code-quality/ca1017-mark-assemblies-with-comvisibleattribute.md)
 
 ## <a name="see-also"></a>Consulte também
 

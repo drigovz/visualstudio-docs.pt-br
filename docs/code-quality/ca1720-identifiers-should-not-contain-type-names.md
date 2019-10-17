@@ -1,5 +1,5 @@
 ---
-title: 'CA1720: Identificadores não devem conter nomes de tipos'
+title: 'CA1720: os identificadores não devem conter nomes de tipo'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -14,27 +14,27 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a2677c2ef5342b795bb684f3ab06bc7cf5195cf7
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 64fd1aee2a778c72a81f82a0d435ce37d408c9a5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71233889"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443791"
 ---
-# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: Identificadores não devem conter nomes de tipos
+# <a name="ca1720-identifiers-should-not-contain-type-names"></a>CA1720: os identificadores não devem conter nomes de tipo
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldNotContainTypeNames|
 |CheckId|CA1720|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
 
 O nome de um parâmetro em um membro contém um nome de tipo de dados.
 
-- ou -
+\- ou -
 
 O nome de um membro contém um nome de tipo de dados específico a um idioma.
 
@@ -42,7 +42,7 @@ Por padrão, essa regra só examina membros externos visíveis, mas isso é [con
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Os nomes de parâmetros e membros são mais usados para comunicar seu significado do que descrever seu tipo, que deve ser fornecido pelas ferramentas de desenvolvimento. Para nomes de membros, se um nome de tipo de dados precisar ser usado, use um nome independente de idioma em vez de um idioma específico. Por exemplo, em vez do C# nome `int`do tipo, use o nome do tipo de dados independente `Int32`de idioma,.
+Os nomes de parâmetros e membros são mais usados para comunicar seu significado do que descrever seu tipo, que deve ser fornecido pelas ferramentas de desenvolvimento. Para nomes de membros, se um nome de tipo de dados precisar ser usado, use um nome independente de idioma em vez de um idioma específico. Por exemplo, em vez do C# nome do tipo `int`, use o nome do tipo de dados independente de linguagem, `Int32`.
 
 Cada token discreto no nome do parâmetro ou membro é verificado em relação aos seguintes nomes de tipo de dados específicos de idioma em uma maneira que não diferencia maiúsculas de minúsculas:
 
@@ -68,7 +68,7 @@ Além disso, os nomes de um parâmetro também são verificados em relação aos
 
 - Objeto
 - Obj
-- Boolean
+- Booleano
 - Char
 - Cadeia de Caracteres
 - SByte
@@ -89,7 +89,7 @@ Além disso, os nomes de um parâmetro também são verificados em relação aos
 - Simples
 - Duplo
 - Decimal
-- Guid
+- GUID
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
@@ -117,7 +117,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-- [CA1709: Os identificadores devem estar em maiúsculas e minúsculas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
-- [CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
-- [CA1707: Identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
-- [CA1719: Nomes de parâmetros não devem corresponder a nomes de membros](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)
+- [CA1709: os identificadores devem ter maiúsculas e minúsculas corretas](../code-quality/ca1709-identifiers-should-be-cased-correctly.md)
+- [CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+- [CA1707: os identificadores não devem conter sublinhados](../code-quality/ca1707-identifiers-should-not-contain-underscores.md)
+- [CA1719: os nomes de parâmetro não devem corresponder aos nomes de membro](../code-quality/ca1719-parameter-names-should-not-match-member-names.md)

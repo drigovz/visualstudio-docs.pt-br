@@ -1,5 +1,5 @@
 ---
-title: 'CA1044: Propriedades não devem ser somente gravação'
+title: 'CA1044: as propriedades não devem ser somente leitura'
 ms.date: 03/11/2019
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 0fb424627d88ede6c0677b8c45de4aab487ae498
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6a3eb46adbf0eabc18adb423209c09b6e1a63c18
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235813"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449204"
 ---
-# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: Propriedades não devem ser somente gravação
+# <a name="ca1044-properties-should-not-be-write-only"></a>CA1044: as propriedades não devem ser somente leitura
 
 |||
 |-|-|
 |NomeDoTipo|PropertiesShouldNotBeWriteOnly|
 |CheckId|CA1044|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -63,7 +63,7 @@ Você pode configurar essa opção apenas para essa regra, para todas as regras 
 
 ## <a name="example"></a>Exemplo
 
-No exemplo a seguir, `BadClassWithWriteOnlyProperty` é um tipo com uma propriedade somente gravação. `GoodClassWithReadWriteProperty`contém o código corrigido.
+No exemplo a seguir, `BadClassWithWriteOnlyProperty` é um tipo com uma propriedade somente gravação. `GoodClassWithReadWriteProperty` contém o código corrigido.
 
 [!code-vb[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/VisualBasic/ca1044-properties-should-not-be-write-only_1.vb)]
 [!code-csharp[FxCop.Design.PropertiesNotWriteOnly#1](../code-quality/codesnippet/CSharp/ca1044-properties-should-not-be-write-only_1.cs)]

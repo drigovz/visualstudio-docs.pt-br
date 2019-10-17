@@ -1,5 +1,5 @@
 ---
-title: 'CA1709: Identificadores devem ter maiúsculas e minúsculas corretas'
+title: 'CA1709: os identificadores do recurso devem ter maiúsculas e minúsculas corretas'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff614d9fdc4b250bd91abf24908b33d71a182df
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: bbc066709fc5f90944b91130c1ef57a5120b1844
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234157"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72443947"
 ---
-# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: Identificadores devem ter maiúsculas e minúsculas corretas
+# <a name="ca1709-identifiers-should-be-cased-correctly"></a>CA1709: os identificadores do recurso devem ter maiúsculas e minúsculas corretas
 
 |||
 |-|-|
 |NomeDoTipo|IdentifiersShouldBeCasedCorrectly|
 |CheckId|CA1709|
-|Categoria|Microsoft.Naming|
+|Categoria|Microsoft. Naming|
 |Alteração significativa|Quebra-quando gerado em assemblies, namespaces, tipos, membros e parâmetros.<br /><br /> Não separável-quando acionado em parâmetros de tipo genérico.|
 
 ## <a name="cause"></a>Causa
@@ -46,7 +46,7 @@ O nome de um identificador contém um acrônimo de três ou mais letras maiúscu
 
 As convenções de nomenclatura fornecem uma aparência comum para as bibliotecas direcionadas ao Common Language Runtime. Essa consistência reduz a curva de aprendizado necessária para novas bibliotecas de software e aumenta a confiança do cliente de que a biblioteca foi desenvolvida por alguém que tenha experiência no desenvolvimento de código gerenciado.
 
-Por convenção, os nomes de parâmetro usam o camel case, e os nomes de namespace, tipo e membro usam a embalagem do Pascal. Em um nome de camel case, a primeira letra é minúscula e a primeira letra de qualquer palavra restante no nome é maiúscula. Exemplos de nomes de camel-case `packetSniffer`são `ioFile`, e `fatalErrorCode`. Em um nome em Pascal, a primeira letra é maiúscula e a primeira letra das palavras restantes no nome é maiúscula. Exemplos de nomes de Pascal-case `PacketSniffer`são `IOFile`, e `FatalErrorCode`.
+Por convenção, os nomes de parâmetro usam o camel case, e os nomes de namespace, tipo e membro usam a embalagem do Pascal. Em um nome de camel case, a primeira letra é minúscula e a primeira letra de qualquer palavra restante no nome é maiúscula. Exemplos de nomes de camel-case são `packetSniffer`, `ioFile` e `fatalErrorCode`. Em um nome em Pascal, a primeira letra é maiúscula e a primeira letra das palavras restantes no nome é maiúscula. Exemplos de nomes em Pascal-case são `PacketSniffer`, `IOFile` e `FatalErrorCode`.
 
 Essa regra divide o nome em palavras com base na capitalização e verifica quaisquer palavras de duas letras em uma lista de palavras de duas letras comuns, como "in" ou "My". Se uma correspondência não for encontrada, presume-se que a palavra seja um acrônimo. Além disso, essa regra pressupõe que ela encontrou um acrônimo quando o nome contém quatro letras maiúsculas em uma linha ou três letras maiúsculas em uma linha no final do nome.
 
@@ -62,8 +62,8 @@ Altere o nome para que ele esteja em maiúsculas e minúsculas.
 
 É seguro suprimir esse aviso se você tiver suas próprias convenções de nomenclatura ou se o identificador representar um nome adequado, por exemplo, o nome de uma empresa ou uma tecnologia.
 
-Você também pode adicionar termos, abreviações e acrônimos específicos a um dicionário personalizado de análise de código. Os termos especificados no dicionário personalizado não causarão violações dessa regra. Para obter mais informações, confira [Como: Personalize o dicionário](../code-quality/how-to-customize-the-code-analysis-dictionary.md)de análise de código.
+Você também pode adicionar termos, abreviações e acrônimos específicos a um dicionário personalizado de análise de código. Os termos especificados no dicionário personalizado não causarão violações dessa regra. Para obter mais informações, consulte [como: personalizar o dicionário de análise de código](../code-quality/how-to-customize-the-code-analysis-dictionary.md).
 
 ## <a name="related-rules"></a>Regras relacionadas
 
-[CA1708: Os identificadores devem ser diferentes em mais do que caso](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)
+[CA1708: os identificadores devem ser diferentes além de maiúsculas de minúsculas](../code-quality/ca1708-identifiers-should-differ-by-more-than-case.md)

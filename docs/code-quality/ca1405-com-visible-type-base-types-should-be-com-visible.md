@@ -1,5 +1,5 @@
 ---
-title: 'CA1405: Tipos base de tipo visível no COM devem ser visíveis no COM'
+title: 'CA1405: os tipos base de tipo visível em COM devem ser visíveis em COM'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4e5c4ed258bcc88fedbb6d015fed576d326a0f
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 7faa295f4aba9e547254eb9c554d113e0aed084d
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71234964"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72444264"
 ---
-# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: Tipos base de tipo visível no COM devem ser visíveis no COM
+# <a name="ca1405-com-visible-type-base-types-should-be-com-visible"></a>CA1405: os tipos base de tipo visível em COM devem ser visíveis em COM
 
 |||
 |-|-|
@@ -37,7 +37,7 @@ ms.locfileid: "71234964"
 Um tipo visível Component Object Model (COM) deriva de um tipo que não é visível COM.
 
 ## <a name="rule-description"></a>Descrição da regra
-Quando um tipo visível COM adiciona membros em uma nova versão, ele deve obedecer a diretrizes estritas para evitar a interrupção de clientes COM que se associam à versão atual. Um tipo invisível para COM pressupõe que ele não precisa seguir essas regras de controle de versão COM ao adicionar novos membros. No entanto, se um tipo visível com for derivado do tipo invisível com e expor uma interface de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> classe <xref:System.Runtime.InteropServices.ClassInterfaceType> de ou (o padrão), todos os membros públicos do tipo base (a menos que eles estejam especificamente marcados como com invisível, o que seria redundante) são expostos a COM. Se o tipo base adicionar novos membros em uma versão subsequente, todos os clientes COM que se associarem à interface de classe do tipo derivado poderão ser interrompidos. Tipos visíveis COM devem derivar somente de tipos visíveis COM para reduzir a chance de quebrar clientes COM.
+Quando um tipo visível COM adiciona membros em uma nova versão, ele deve obedecer a diretrizes estritas para evitar a interrupção de clientes COM que se associam à versão atual. Um tipo invisível para COM pressupõe que ele não precisa seguir essas regras de controle de versão COM ao adicionar novos membros. No entanto, se um tipo visível COM for derivado do tipo invisível COM e expõe uma interface de classe de <xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName> ou <xref:System.Runtime.InteropServices.ClassInterfaceType> (o padrão), todos os membros públicos do tipo base (a menos que estejam explicitamente marcados como COM invisível, que seriam redundantes) serão expostos a Interfaces. Se o tipo base adicionar novos membros em uma versão subsequente, todos os clientes COM que se associarem à interface de classe do tipo derivado poderão ser interrompidos. Tipos visíveis COM devem derivar somente de tipos visíveis COM para reduzir a chance de quebrar clientes COM.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, torne os tipos base COM visíveis ou o tipo derivado COM invisível.

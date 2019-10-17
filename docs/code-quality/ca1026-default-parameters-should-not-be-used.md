@@ -1,5 +1,5 @@
 ---
-title: 'CA1026: Parâmetros padrão não devem ser usados'
+title: 'CA1026: parâmetros padrão não devem ser usados'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 62de7654083f3fd64f95401f95e5ee593effb27d
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
-ms.translationtype: MT
+ms.openlocfilehash: 7bf388af2b39c9a10b58645f274a03739d60f23e
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236124"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72449281"
 ---
-# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: Parâmetros padrão não devem ser usados
+# <a name="ca1026-default-parameters-should-not-be-used"></a>CA1026: parâmetros padrão não devem ser usados
 
 |||
 |-|-|
 |NomeDoTipo|DefaultParametersShouldNotBeUsed|
 |CheckId|CA1026|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -50,7 +50,7 @@ O exemplo a seguir mostra um método que usa parâmetros padrão e os métodos s
 [!code-vb[FxCop.Design.DefaultParameters#1](../code-quality/codesnippet/VisualBasic/ca1026-default-parameters-should-not-be-used_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1025: Substituir argumentos repetitivos por matriz params](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
+[CA1025: substituir argumentos repetitivos por matriz de parâmetros](../code-quality/ca1025-replace-repetitive-arguments-with-params-array.md)
 
 ## <a name="see-also"></a>Consulte também
 [Componentes de independência de linguagem e componentes independentes da linguagem](/dotnet/standard/language-independence-and-language-independent-components)
