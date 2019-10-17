@@ -1,0 +1,55 @@
+### YamlMime:Landing
+title: Documentação das ferramentas XAML
+summary: O Visual Studio oferece várias ferramentas para você criar aplicativos baseados em XAML. Isso inclui o editor e designer de XAML, além de recursos de depuração.
+metadata:
+  title: Documentação das ferramentas XAML
+  description: Navegue por diferentes páginas para aprender a usar as ferramentas XAML no Visual Studio.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-designers
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/10/2019
+  ms.openlocfilehash: fe889d55ac2b2a6eab99b8d6abdc5193c981725d
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450603"
+landingContent:
+- title: Saiba mais sobre XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visão geral do XAML
+      url: xaml-overview.md
+- title: Usar o Designer XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Projetar XAML no Visual Studio e no Blend
+      url: designing-xaml-in-visual-studio.md
+    - text: Sobre o Designer XAML
+      url: creating-a-ui-by-using-xaml-designer-in-visual-studio.md
+- title: Depurar XAML
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Gravar e depurar executando código XAML
+      url: xaml-hot-reload.md
+    - text: Depurar XAML no Blend
+      url: debug-xaml-in-blend.md
+    - text: Depurar aplicativos do WPF
+      url: ../debugger/debugging-wpf.md?toc=/visualstudio/debugger/toc.json&bc=/visualstudio/debugger/breadcrumb/toc.json
+    - text: Depurar aplicativos UWP
+      url: ../debugger/debugging-windows-store-and-windows-universal-apps.md
+- title: Desenvolver aplicativos do WPF
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Visão geral do WPF
+      url: ../designers/introduction-to-wpf.md
+  - linkListType: get-started
+    links:
+    - text: Introdução ao WPF no Visual Studio
+      url: ../designers/getting-started-with-wpf.md
