@@ -1,0 +1,61 @@
+### YamlMime:Landing
+title: Análise de código no Visual Studio
+summary: O Visual Studio fornece várias ferramentas diferentes para analisar e melhorar a qualidade do código.
+metadata:
+  title: Analisadores de código
+  description: Saiba como o Visual Studio ajuda a analisar a qualidade do código.
+  ms.prod: visual-studio-windows
+  ms.technology: vs-ide-general
+  ms.topic: landing-page
+  author: gewarren
+  ms.author: gewarren
+  ms.date: 10/15/2019
+  ms.openlocfilehash: eb7be803a8c9751550f46880cfd485dac2850527
+  ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+  ms.translationtype: HT
+  ms.contentlocale: pt-BR
+  ms.lasthandoff: 10/16/2019
+  ms.locfileid: "72450583"
+landingContent:
+- title: Analisar código C e C++
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Analisar código C e C++
+      url: code-analysis-for-c-cpp-overview.md
+  - linkListType: reference
+    links:
+    - text: Avisos da análise de código C++
+      url: code-analysis-for-c-cpp-warnings.md
+- title: Analisar a qualidade do código gerenciado
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Análise de código-fonte
+      url: roslyn-analyzers-overview.md
+    - text: Análise herdada
+      url: static-code-analysis-for-managed-code-overview.md
+  - linkListType: concept
+    links:
+    - text: Perguntas frequentes
+      url: analyzers-faq.md
+  - linkListType: how-to-guide
+    links:
+    - text: Instalar analisadores do FxCop
+      url: install-fxcop-analyzers.md
+  - linkListType: reference
+    links:
+    - text: Avisos da análise de código gerenciado
+      url: code-analysis-for-managed-code-warnings.md
+- title: Analisar o estilo de código gerenciado
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Analisar o estilo de código
+      url: ../ide/create-portable-custom-editor-options.md
+- title: Medir a complexidade do código
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Métricas de código
+      url: code-metrics-values.md
