@@ -10,16 +10,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d2540b0c725860ea9a21f32d1d01074cf39380f
-ms.sourcegitcommit: 6993bcb0d2b0067b1b7b7899bfba52c31c70b7e7
+ms.openlocfilehash: 7dbb14a7ea6b3271c7608f3bbb49dd30aa605b66
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71095286"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72380970"
 ---
 # <a name="features-of-the-code-editor"></a>Recursos do editor de código
 
-O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com snippets de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio, consulte [Editar o código](https://visualstudio.microsoft.com/vs/features/ide/) para obter uma visão geral rápida.
+O editor do Visual Studio fornece muitos recursos que facilitam escrever e gerenciar seu código e texto. Você pode expandir e recolher blocos de código diferentes usando a estrutura de tópicos. Você pode aprender mais sobre o código através do IntelliSense, do **Pesquisador de Objetos** e da Hierarquia de Chamada. Você pode localizar o código usando recursos como **Navegar Para**, **Ir para Definição** e **Localizar Todas as Referências**. Você pode inserir blocos de código com snippets de código e pode gerar código usando recursos como o **Gerar do uso**. Se você nunca usou o editor do Visual Studio antes, consulte [saiba como usar o editor de código](../get-started/tutorial-editor.md).
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Editor de código-fonte (Visual Studio para Mac)](/visualstudio/mac/source-editor).
@@ -60,11 +60,11 @@ Você pode encontrar uma série de recursos avançados no menu **Editar** > **Av
 |Colocar em Minúsculas|Alterar todos os caracteres na seleção para minúsculos ou se não houver nenhuma seleção, altera o caractere no ponto de inserção para minúsculo. Atalho: **Ctrl**+**U**.|
 |Mover linhas selecionadas para cima|Move a linha selecionada uma linha para cima. Atalho: **Alt**+**Seta para Cima**.|
 |Mover Linhas Selecionadas para Baixo|Move a linha selecionada uma linha para baixo. Atalho: **Alt**+**Seta para Baixo**.|
-|Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+ **\\**|
+|Excluir Espaço em Branco Horizontal|Exclui tabulações ou espaços ao final da linha atual. Atalho: **ctrl**+**K**, **Ctrl**+ **\\**|
 |Exibir Espaço em Branco|Exibe espaços como pontos elevados e tabulações como setas. O final de um arquivo é exibido como um glifo retangular. Se **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **Quebra automática de linha** > **Mostrar glifos visíveis para quebra automática de linha** estiver selecionado, esse glifo também será exibido.|
 |Quebra automática de linha|Faz com que todas as linhas em um documento sejam visíveis na janela de código. Você pode ativar e desativar a quebra automática de linha nas configurações **Todas as Linguagens do Editor de Texto** (**Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens**).|
-|Comentar Seleção|Adiciona caracteres de comentários na seleção ou na linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+**C**|
-|Remover Comentários da Seleção|Remove caracteres de comentários da seleção ou da linha atual. Atalho: **Ctrl**+**K**, **Ctrl**+**U**|
+|Comentar Seleção|Adiciona caracteres de comentários na seleção ou na linha atual. Atalho: **ctrl**+**K**, **Ctrl**+**C**|
+|Remover Comentários da Seleção|Remove caracteres de comentários da seleção ou da linha atual. Atalho: **ctrl**+**K**, **Ctrl**+**U**|
 |Aumentar recuo de linha|Adiciona uma tabulação (ou os espaços equivalentes) nas linhas selecionadas ou na linha atual.|
 |Diminuir recuo de linha|Remove uma tabulação (ou os espaços equivalentes) das linhas selecionadas ou da linha atual.|
 |Selecionar Marca|Em um documento que contém marcas (por exemplo, XML ou HTML), seleciona a marca.|

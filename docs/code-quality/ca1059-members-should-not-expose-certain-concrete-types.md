@@ -1,5 +1,5 @@
 ---
-title: 'CA1059: Membros não devem expor determinados tipos concretos'
+title: 'CA1059: os membros não devem expor determinados tipos concretos'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,20 +14,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 97ee4e11ceb3380c204d00203b9e81397a39e362
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 06b7d6f9f3a04f518beeb49af1985185255f2e46
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235470"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440799"
 ---
-# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: Membros não devem expor determinados tipos concretos
+# <a name="ca1059-members-should-not-expose-certain-concrete-types"></a>CA1059: os membros não devem expor determinados tipos concretos
 
 |||
 |-|-|
 |NomeDoTipo|MembersShouldNotExposeCertainConcreteTypes|
 |CheckId|CA1059|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -42,7 +42,7 @@ A tabela a seguir lista os tipos concretos direcionados e suas substituições s
 
 |Tipo concreto|Substituição|
 |-------------------|-----------------|
-|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName>.<br /><br /> O uso da interface dissocia o membro de uma implementação específica de uma fonte de dados XML.|
+|<xref:System.Xml.XPath.XPathDocument>|<xref:System.Xml.XPath.IXPathNavigable?displayProperty=fullName><br /><br /> O uso da interface dissocia o membro de uma implementação específica de uma fonte de dados XML.|
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, altere o tipo concreto para a interface sugerida.
@@ -51,4 +51,4 @@ Para corrigir uma violação dessa regra, altere o tipo concreto para a interfac
 É seguro suprimir uma mensagem dessa regra se a funcionalidade específica fornecida pelo tipo concreto for necessária.
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1011: Considere passar tipos base como parâmetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)
+[CA1011: considere passar os tipos base como parâmetros](../code-quality/ca1011-consider-passing-base-types-as-parameters.md)

@@ -1,5 +1,5 @@
 ---
-title: 'CA1017: Marcar assemblies com ComVisibleAttribute'
+title: 'CA1017: marcar assemblies com ComVisibleAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 073332738a01cb299b2b185c6fca20131222f981
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: daf9da821178e9e17ed5f0693d4d268b04ca337c
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236265"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441616"
 ---
-# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: Marcar assemblies com ComVisibleAttribute
+# <a name="ca1017-mark-assemblies-with-comvisibleattribute"></a>CA1017: marcar assemblies com ComVisibleAttribute
 
 |||
 |-|-|
 |NomeDoTipo|MarkAssembliesWithComVisible|
 |CheckId|CA1017|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
-Um assembly não tem o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> atributo aplicado a ele.
+Um assembly não tem o atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> aplicado a ele.
 
 ## <a name="rule-description"></a>Descrição da regra
-O <xref:System.Runtime.InteropServices.ComVisibleAttribute> atributo determina como os clientes com acessam o código gerenciado. Um bom design determina que os assemblies indiquem explicitamente a visibilidade de COM. A visibilidade COM pode ser definida para um assembly inteiro e, em seguida, substituída para tipos individuais e membros de tipo. Se o atributo não estiver presente, o conteúdo do assembly será visível para clientes COM.
+O atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> determina como os clientes COM acessam o código gerenciado. Um bom design determina que os assemblies indiquem explicitamente a visibilidade de COM. A visibilidade COM pode ser definida para um assembly inteiro e, em seguida, substituída para tipos individuais e membros de tipo. Se o atributo não estiver presente, o conteúdo do assembly será visível para clientes COM.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, adicione o atributo ao assembly. Se você não quiser que o assembly fique visível para clientes COM, aplique o atributo e defina seu valor como `false`.
@@ -47,7 +47,7 @@ Para corrigir uma violação dessa regra, adicione o atributo ao assembly. Se vo
 Não suprima um aviso nessa regra. Se você quiser que o assembly fique visível, aplique o atributo e defina seu valor como `true`.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra um assembly que tem <xref:System.Runtime.InteropServices.ComVisibleAttribute> o atributo aplicado para impedir que ele seja visível para clientes com.
+O exemplo a seguir mostra um assembly que tem o atributo <xref:System.Runtime.InteropServices.ComVisibleAttribute> aplicado para impedir que ele seja visível para clientes COM.
 
 [!code-cpp[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/CPP/ca1017-mark-assemblies-with-comvisibleattribute_1.cpp)]
 [!code-vb[FxCop.Design.AssembliesCom#1](../code-quality/codesnippet/VisualBasic/ca1017-mark-assemblies-with-comvisibleattribute_1.vb)]

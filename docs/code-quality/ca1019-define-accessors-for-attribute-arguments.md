@@ -1,5 +1,5 @@
 ---
-title: 'CA1019: Definir acessadores para argumentos de atributo'
+title: 'CA1019: definir acessadores para argumentos de atributo'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c53fe96163a3913c024eefeb5deb8a47df691e1f
-ms.sourcegitcommit: 034c503ae04e22cf840ccb9770bffd012e40fb2d
+ms.openlocfilehash: 96e001287efa743e21deff85c00d945f9f6bb9ee
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306138"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441596"
 ---
-# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: Definir acessadores para argumentos de atributo
+# <a name="ca1019-define-accessors-for-attribute-arguments"></a>CA1019: definir acessadores para argumentos de atributo
 
 |||
 |-|-|
 |NomeDoTipo|DefineAccessorsForAttributeArguments|
 |CheckId|CA1019|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -69,7 +69,7 @@ O exemplo a seguir mostra como aplicar o atributo personalizado a duas proprieda
 [!code-csharp[FxCop.Design.AttributeAccessorsNamedApplied#1](../code-quality/codesnippet/CSharp/ca1019-define-accessors-for-attribute-arguments_3.cs)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA1813: Evitar atributos não lacrados @ no__t-0
+[CA1813: evitar atributos não lacrados](../code-quality/ca1813.md)
 
 ## <a name="see-also"></a>Consulte também
 [Atributos](/dotnet/standard/design-guidelines/attributes)

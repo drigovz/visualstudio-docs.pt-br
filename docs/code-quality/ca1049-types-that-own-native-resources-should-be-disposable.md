@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - cplusplus
-ms.openlocfilehash: a39d1e03da062f3030571820e98898d5122d495f
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: c685e0d12ebb8f76d61687dd138e90c51a9cc8f5
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349097"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440830"
 ---
 # <a name="ca1049-types-that-own-native-resources-should-be-disposable"></a>CA1049: tipos que tenham recursos nativos devem ser descartáveis
 
@@ -56,7 +56,7 @@ O exemplo a seguir mostra um tipo que implementa <xref:System.IDisposable> para 
 [!code-vb[FxCop.Design.UnmanagedResources#1](../code-quality/codesnippet/VisualBasic/ca1049-types-that-own-native-resources-should-be-disposable_1.vb)]
 
 ## <a name="related-rules"></a>Regras relacionadas
-[CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115-call-gc-keepalive-when-using-native-resources.md)
+[CA2115: chamar GC.KeepAlive durante o uso de recursos nativos](../code-quality/ca2115.md)
 
 [CA1816: chamar GC.SuppressFinalize corretamente](../code-quality/ca1816.md)
 

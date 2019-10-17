@@ -1,5 +1,5 @@
 ---
-title: 'CA1062: Validar argumentos de métodos públicos'
+title: 'CA1062: validar argumentos de métodos públicos'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 8106a4c0244cbd79e88a2bdc50e04ea74627dab4
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: 6019956d37d420b72275223148c2a3468a820884
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235331"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440714"
 ---
-# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: Validar argumentos de métodos públicos
+# <a name="ca1062-validate-arguments-of-public-methods"></a>CA1062: validar argumentos de métodos públicos
 
 |||
 |-|-|
 |NomeDoTipo|ValidateArgumentsOfPublicMethods|
 |CheckId|CA1062|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
@@ -39,13 +39,13 @@ Um método visível externamente faz referência a um de seus argumentos de refe
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Todos os argumentos de referência que são passados para métodos externos visíveis devem ser verificados em relação `null`a. Se apropriado, acione um <xref:System.ArgumentNullException> quando o argumento for `null`.
+Todos os argumentos de referência que são passados para métodos externos visíveis devem ser verificados em relação a `null`. Se apropriado, lança um <xref:System.ArgumentNullException> quando o argumento é `null`.
 
-Se um método puder ser chamado de um assembly desconhecido porque é declarado público ou protegido, você deve validar todos os parâmetros do método. Se o método for projetado para ser chamado somente por assemblies conhecidos, você deverá tornar o método interno e aplicar o <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> atributo ao assembly que contém o método.
+Se um método puder ser chamado de um assembly desconhecido porque é declarado público ou protegido, você deve validar todos os parâmetros do método. Se o método for projetado para ser chamado somente por assemblies conhecidos, você deverá tornar o método interno e aplicar o atributo <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute> ao assembly que contém o método.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, valide cada argumento de referência em `null`relação a.
+Para corrigir uma violação dessa regra, valide cada argumento de referência em relação a `null`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
@@ -76,7 +76,7 @@ namespace DesignLibrary
         {
             if (input == null)
             {
-                throw new ArgumentNullException("input");
+                throw new ArgumentNullException(nameof(input));
             }
             if (input.Length != 0)
             {
@@ -107,7 +107,7 @@ Namespace DesignLibrary
         Sub Validate(ByVal input As String)
 
             If input Is Nothing Then
-                Throw New ArgumentNullException("input")
+                Throw New ArgumentNullException(NameOf(input))
             End If
 
             If input.Length <> 0 Then
@@ -123,9 +123,9 @@ End Namespace
 
 ## <a name="example"></a>Exemplo
 
-Os construtores de cópia que populam campos ou propriedades que são objetos de referência também podem violar a regra CA1062. A violação ocorre porque o objeto copiado que é passado para o construtor de cópia `null` pode`Nothing` ser (em Visual Basic). Para resolver a violação, use um método estático (compartilhado no Visual Basic) para verificar se o objeto copiado não é nulo.
+Os construtores de cópia que populam campos ou propriedades que são objetos de referência também podem violar a regra CA1062. A violação ocorre porque o objeto copiado que é passado para o construtor de cópia pode ser `null` (`Nothing` em Visual Basic). Para resolver a violação, use um método estático (compartilhado no Visual Basic) para verificar se o objeto copiado não é nulo.
 
-No exemplo de `Person` classe a seguir, `other` o objeto que é passado para `Person` o construtor de cópia `null`pode ser.
+No exemplo de classe `Person` a seguir, o objeto `other` que é passado para o construtor de cópia `Person` pode ser `null`.
 
 ```csharp
 public class Person
@@ -150,7 +150,7 @@ public class Person
 
 ## <a name="example"></a>Exemplo
 
-No exemplo revisado `Person` a seguir `other` , o objeto que é passado para o construtor de cópia é `PassThroughNonNull` verificado primeiro para nulo no método.
+No exemplo a seguir revisado `Person`, o objeto `other` que é passado para o construtor de cópia é verificado primeiro para nulo no método `PassThroughNonNull`.
 
 ```csharp
 public class Person
@@ -175,7 +175,7 @@ public class Person
     private static Person PassThroughNonNull(Person person)
     {
         if (person == null)
-            throw new ArgumentNullException("person");
+            throw new ArgumentNullException(nameof(person));
         return person;
     }
 }

@@ -1,5 +1,5 @@
 ---
-title: 'CA1060: Mover P/Invokes para a classe NativeMethods'
+title: 'CA1060: mova os P-Invokes para a classe NativeMethods'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,20 +17,20 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: cfa705654a5cc4122e5ee554fe050722d7883970
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: da4713c32e4e9313a55ea2944bf4990a0b9c29c3
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71235478"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72440814"
 ---
-# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: Mova P/Invokes para a classe NativeMethods
+# <a name="ca1060-move-pinvokes-to-nativemethods-class"></a>CA1060: mover P/Invokes para a classe NativeMethods
 
 |||
 |-|-|
 |NomeDoTipo|MovePInvokesToNativeMethodsClass|
 |CheckId|CA1060|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Quebra|
 
 ## <a name="cause"></a>Causa
@@ -39,15 +39,15 @@ Um método usa serviços de invocação de plataforma para acessar código não 
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Métodos de invocação de plataforma, como aqueles que são marcados usando o <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> atributo ou métodos que são definidos usando a `Declare` palavra-chave no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], acessam código não gerenciado. Esses métodos devem estar em uma das seguintes classes:
+Os métodos de invocação de plataforma, como os que são marcados usando o atributo <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName> ou os métodos que são definidos usando a palavra-chave `Declare` no [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], acessam o código não gerenciado. Esses métodos devem estar em uma das seguintes classes:
 
 - **NativeMethods** -essa classe não suprime as movimentações de pilha para a permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> não deve ser aplicado a esta classe.) Essa classe é para métodos que podem ser usados em qualquer lugar, pois uma movimentação de pilha será executada.
 
-- **SafeNativeMethods** -essa classe suprime as movimentações de pilha para a permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicado a esta classe.) Essa classe é para métodos que são seguros para qualquer pessoa chamar. Os chamadores desses métodos não são necessários para executar uma revisão de segurança completa para garantir que o uso seja seguro, pois os métodos são inofensivos para qualquer chamador.
+- **SafeNativeMethods** -essa classe suprime as movimentações de pilha para a permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicado a essa classe.) Essa classe é para métodos que são seguros para qualquer pessoa chamar. Os chamadores desses métodos não são necessários para executar uma revisão de segurança completa para garantir que o uso seja seguro, pois os métodos são inofensivos para qualquer chamador.
 
-- **UnsafeNativeMethods** -essa classe suprime as movimentações de pilha para a permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicado a esta classe.) Essa classe é para métodos que são potencialmente perigosos. Qualquer chamador desses métodos deve executar uma revisão de segurança completa para garantir que o uso seja seguro, pois nenhuma movimentação de pilha será executada.
+- **UnsafeNativeMethods** -essa classe suprime as movimentações de pilha para a permissão de código não gerenciado. (<xref:System.Security.SuppressUnmanagedCodeSecurityAttribute?displayProperty=fullName> é aplicado a essa classe.) Essa classe é para métodos que são potencialmente perigosos. Qualquer chamador desses métodos deve executar uma revisão de segurança completa para garantir que o uso seja seguro, pois nenhuma movimentação de pilha será executada.
 
-Essas classes são declaradas`Friend`como `internal` (, em Visual Basic) e declaram um Construtor privado para impedir que novas instâncias sejam criadas. Os métodos nessas classes devem ser `static` e `internal` (`Shared` e `Friend` em Visual Basic).
+Essas classes são declaradas como `internal` (`Friend`, em Visual Basic) e declaram um Construtor privado para impedir que novas instâncias sejam criadas. Os métodos nessas classes devem ser `static` e `internal` (`Shared` e `Friend` em Visual Basic).
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 Para corrigir uma violação dessa regra, mova o método para a classe **NativeMethods** apropriada. Para a maioria dos aplicativos, mover P/Invokes para uma nova classe denominada **NativeMethods** é suficiente.
@@ -92,7 +92,7 @@ O exemplo a seguir mostra uma propriedade **Environment.** semique **encapsula a
 ## <a name="unsafenativemethods-example"></a>Exemplo de UnsafeNativeMethods
 
 ### <a name="description"></a>Descrição
-Métodos P/Invoke que não podem ser chamados com segurança e que podem causar efeitos colaterais devem ser colocados em uma classe denominada **UnsafeNativeMethods**. Esses métodos devem ser verificados rigorosamente para garantir que eles não sejam expostos ao usuário involuntariamente. A regra [CA2118: Examine o uso](../code-quality/ca2118-review-suppressunmanagedcodesecurityattribute-usage.md) do SuppressUnmanagedCodeSecurityAttribute pode ajudar com isso. Como alternativa, os métodos devem ter outra permissão exigida em vez de **UnmanagedCode** ao usá-los.
+Métodos P/Invoke que não podem ser chamados com segurança e que podem causar efeitos colaterais devem ser colocados em uma classe denominada **UnsafeNativeMethods**. Esses métodos devem ser verificados rigorosamente para garantir que eles não sejam expostos ao usuário involuntariamente. A regra [CA2118: examinar o uso do SuppressUnmanagedCodeSecurityAttribute](../code-quality/ca2118.md) pode ajudar com isso. Como alternativa, os métodos devem ter outra permissão exigida em vez de **UnmanagedCode** ao usá-los.
 
 O exemplo a seguir mostra um método **cursor. Hide** que encapsula a função de **addcursor** de user32. dll.
 

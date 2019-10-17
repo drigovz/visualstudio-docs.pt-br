@@ -1,5 +1,5 @@
 ---
-title: 'Como: Interceptar um clique em uma forma ou um decorador'
+title: Como interceptar um clique em uma forma ou um decorador
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,18 +9,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3e3295476b9a9d35768963baa05829a560fc9291
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445180"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381494"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como: Interceptar um clique em uma forma ou um decorador
-Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrasta, e outros gestos e fazer com que o elemento de responder.
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como interceptar um clique em uma forma ou um decorador
+Os procedimentos a seguir demonstram como interceptar um clique em uma forma ou um decorador de ícone. Você pode interceptar cliques, cliques duplos, arrastar e outros gestos e fazer com que o elemento responda.
 
 ## <a name="to-intercept-clicks-on-shapes"></a>Para interceptar cliques em formas
- No projeto Dsl, em um arquivo de código separado dos arquivos de código gerado, escreva uma definição de classe parcial para a classe shape. Substituir `OnDoubleClick()` ou um dos outros métodos que tem um nome que começa com `On...`. Por exemplo:
+ No projeto DSL, em um arquivo de código separado dos arquivos de código gerados, escreva uma definição de classe parcial para a classe Shape. Substitua `OnDoubleClick()` ou um dos outros métodos que tem um nome que começa com `On...`. Por exemplo:
 
 ```csharp
 public partial class MyShape // change
@@ -34,20 +34,20 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
-> Definir `e.Handled` para `true`, a menos que você deseja que o evento a ser passado para a forma ou diagrama de recipiente.
+> Defina `e.Handled` como `true`, a menos que você queira que o evento seja passado para a forma ou o diagrama que o contém.
 
-## <a name="to-intercept-clicks-on-decorators"></a>Para interceptar cliques de decoradores
- Os decoradores de imagem são executados em uma instância da classe ImageField, que tem um método OnDoubleClick. Se você escrever uma subclasse ImageField, você pode interceptar os cliques. Os campos são configurados no método InitializeShapeFields. Portanto, você deve alterar esse método para instanciar sua subclasse em vez do ImageField regular. O método InitializeShapeFields é no código gerado da classe shape. Você pode substituir a classe shape, se você definir seu `Generates Double Derived` propriedade conforme descrito no procedimento a seguir.
+## <a name="to-intercept-clicks-on-decorators"></a>Para interceptar cliques em decoradores
+ Os decoradores de imagem são transportados em uma instância da classe ImageField, que tem um método OnDoubleClick. Você pode interceptar os cliques se escrever uma subclasse ImageField. Os campos são configurados no método InitializeShapeFields. Portanto, você deve alterar esse método para instanciar sua subclasse em vez do ImageField regular. O método InitializeShapeFields está no código gerado da classe Shape. Você pode substituir a classe Shape se definir sua propriedade `Generates Double Derived`, conforme descrito no procedimento a seguir.
 
- Embora InitializeShapeFields é um método de instância, ele é chamado apenas uma vez para cada classe. Portanto, apenas uma instância de ClickableImageField existe para cada campo em cada classe, não uma instância para cada forma no diagrama. Quando o usuário clica duas vezes em uma instância, você deve identificar qual instância foi atingida, como demonstra o código no exemplo.
+ Embora InitializeShapeFields seja um método de instância, ele é chamado apenas uma vez para cada classe. Portanto, apenas uma instância de ClickableImageField existe para cada campo em cada classe, não uma instância para cada forma no diagrama. Quando o usuário clica duas vezes em uma instância, você deve identificar qual instância foi atingida, como demonstra o código no exemplo.
 
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Para interceptar um clique em um decorador de ícone
 
-1. Abra ou crie uma solução DSL.
+1. Abra ou crie uma solução de DSL.
 
-2. Escolha ou crie uma forma que tem um decorador de ícone e mapeá-la para uma classe de domínio.
+2. Escolha ou crie uma forma que tenha um decorador de ícone e mapeie-a para uma classe de domínio.
 
-3. Em um arquivo de código separado dos arquivos no `GeneratedCode` pasta, crie a nova subclasse de ImageField:
+3. Em um arquivo de código separado dos arquivos na pasta `GeneratedCode`, crie a nova subclasse de ImageField:
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -83,9 +83,9 @@ public partial class MyShape // change
     }
     ```
 
-     Você deve definir Handled como verdadeiro se você não quiser que o evento a ser passado para a forma do recipiente.
+     Você deve definir Handled como true se não quiser que o evento seja passado para a forma que a contém.
 
-4. Substitua o método de InitializeShapeFields em sua forma classs adicionando a seguinte definição de classe parcial.
+4. Substitua o método InitializeShapeFields em sua classe Shape adicionando a seguinte definição de classe parcial.
 
     ```csharp
     public partial class MyShape // change
@@ -114,36 +114,36 @@ public partial class MyShape // change
 
 1. Criar e executar a solução.
 
-2. Clique duas vezes no ícone em uma instância da forma. A mensagem de teste deve aparecer.
+2. Clique duas vezes no ícone em uma instância da forma. Sua mensagem de teste deve aparecer.
 
-## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptando clica e arrasta em listas de CompartmentShape
- O exemplo a seguir permite que os usuários reordenar os itens em uma forma de compartimento, arrastando-os. Para executar este código:
+## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptação de cliques e arraste em listas de CompartmentShape
+ O exemplo a seguir permite que os usuários reordenem itens em uma forma de compartimento arrastando-os. Para executar este código:
 
-1. Criar uma nova solução DSL usando o **diagramas de classe** modelo de solução.
+1. Crie uma nova solução DSL usando o modelo de solução **diagramas de classe** .
 
-    Você também pode trabalhar com uma solução que contém as formas do compartimento de sua preferência. Esse código supõe que há uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados em itens da lista de compartimento.
+    Você também pode trabalhar com uma solução própria que contém formas de compartimento. Esse código pressupõe que haja uma relação de incorporação entre os elementos de modelo representados pela forma e os elementos representados nos itens da lista de compartimentos.
 
-2. Defina as **gera derivado duplo** propriedade da forma do compartimento.
+2. Define a propriedade **derivada dupla** da forma de compartimento.
 
-3. Adicione este código em um arquivo a **Dsl** projeto.
+3. Adicione este código em um arquivo no projeto **DSL** .
 
-4. Ajuste os nomes de classe e a forma de domínio nesse código para corresponder ao seu próprio DSL.
+4. Ajuste a classe de domínio e os nomes de forma neste código para que correspondam à sua própria DSL.
 
    Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.
 
-- Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.
+- Um conjunto de manipuladores de eventos de mouse é anexado a cada instância de compartimento quando ele é criado.
 
-- O `ClassShape.MouseDown` evento armazena o item atual.
+- O evento `ClassShape.MouseDown` armazena o item atual.
 
-- Quando o mouse se move o item atual, fora de uma instância de MouseAction é criada, que define o cursor e captura o mouse até ele ser liberado.
+- Quando o mouse sai do item atual, uma instância de MouseAction é criada, o que define o cursor e captura o mouse até que ele seja liberado.
 
-     Para evitar interferência com outras ações do mouse, como selecionar o texto de um item, o MouseAction não é criado até que o mouse deixou o item original.
+     Para evitar interferir com outras ações do mouse, como selecionar o texto de um item, o MouseAction não é criado até que o mouse tenha deixado o item original.
 
-     Uma alternativa para criar um MouseAction seria simplesmente escutar MouseUp. No entanto, isso não funcionaria corretamente se o usuário libera o mouse depois arrastá-lo fora do compartimento. O MouseAction é capaz de executar a ação apropriada, independentemente de onde o mouse é liberado.
+     Uma alternativa para criar um MouseAction seria simplesmente escutar o MouseUp. No entanto, isso não funcionará corretamente se o usuário liberar o mouse depois de arrastá-lo para fora do compartimento. O MouseAction é capaz de executar a ação apropriada, independentemente de onde o mouse é liberado.
 
-- Quando o mouse é liberado, MouseAction.MouseUp reorganiza a ordem dos links entre os elementos de modelo.
+- Quando o mouse é liberado, o MouseAction. MouseUp reorganiza a ordem dos links entre os elementos do modelo.
 
-- A alteração da ordem de função é acionada uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.
+- A alteração da ordem de função dispara uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

@@ -17,19 +17,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: 8764ccc5a662a40559b6b7ab4f19cdff0e2d555e
+ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62547669"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72381326"
 ---
-# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como: Mover-se no IDE do Visual Studio
+# <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no IDE do Visual Studio
 
 O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa mover de uma janela para outra e de um arquivo para outro de várias maneiras diferentes, dependendo dos requisitos do projeto ou de preferência. Você pode optar por percorrer os arquivos abertos no editor ou percorrer todas as janelas de ferramentas ativas no IDE. Você também pode mudar diretamente para qualquer arquivo aberto no editor, independentemente da ordem em que ele foi acessado pela última vez. Esses recursos podem ajudar a aumentar sua produtividade ao trabalhar no IDE.
 
 > [!NOTE]
-> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito neste artigo, dependendo de suas configurações ativas ou da edição. Este artigo foi escrito considerando configurações **Gerais**. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++**, escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito neste artigo, dependendo de suas configurações ativas ou da edição. Este artigo foi escrito considerando configurações **Gerais**. Para alterar as configurações, por exemplo, para configurações **Gerais** ou do **Visual C++** , escolha **Ferramentas** > **Importar e Exportar Configurações** e, em seguida, escolha **Redefinir todas as configurações**.
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
 
@@ -43,9 +43,9 @@ Navegar para Trás e Navegar para Frente percorre os arquivos abertos no editor 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Para percorrer os arquivos abertos por ordem de uso
 
-- Para ativar os documentos abertos na ordem em que foram utilizados mais recentemente, pressione **CTRL**+**-**.
+- Para ativar documentos abertos na ordem em que foram tocadas recentemente, pressione **Ctrl**+ **-** (hífen).
 
-- Para ativar os documentos abertos na ordem inversa, pressione **CTRL**+**SHIFT**+**-**.
+- Para ativar documentos abertos na ordem inversa, pressione **Ctrl**+**Shift**+ **-** (hífen).
 
     > [!NOTE]
     > As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.

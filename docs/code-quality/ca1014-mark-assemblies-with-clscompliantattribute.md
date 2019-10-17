@@ -1,5 +1,5 @@
 ---
-title: 'CA1014: Marcar assemblies com CLSCompliantAttribute'
+title: 'CA1014: marcar assemblies com CLSCompliantAttribute'
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,27 +18,27 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 387eb464959fba522e31f9586998335cb306d844
-ms.sourcegitcommit: 0c2523d975d48926dd2b35bcd2d32a8ae14c06d8
+ms.openlocfilehash: c615015fac5e8e9b60425679e116b8c7680ea637
+ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71236322"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72441648"
 ---
-# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: Marcar assemblies com CLSCompliantAttribute
+# <a name="ca1014-mark-assemblies-with-clscompliantattribute"></a>CA1014: marcar assemblies com CLSCompliantAttribute
 
 |||
 |-|-|
 |NomeDoTipo|MarkAssembliesWithClsCompliant|
 |CheckId|CA1014|
-|Categoria|Microsoft.Design|
+|Categoria|Microsoft. Design|
 |Alteração significativa|Sem interrupção|
 
 ## <a name="cause"></a>Causa
-Um assembly não tem o <xref:System.CLSCompliantAttribute?displayProperty=fullName> atributo aplicado a ele.
+Um assembly não tem o atributo <xref:System.CLSCompliantAttribute?displayProperty=fullName> aplicado a ele.
 
 ## <a name="rule-description"></a>Descrição da regra
-A CLS (Common Language Specification) define restrições de nomenclatura, tipos de dados e regras que assemblies deverão respeitar se forem usados em todas as linguagens de programação. Um bom design dita que todos os assemblies indicam explicitamente a conformidade <xref:System.CLSCompliantAttribute>com CLS com. Se o atributo não estiver presente em um assembly, o assembly não será compatível.
+A CLS (Common Language Specification) define restrições de nomenclatura, tipos de dados e regras que assemblies deverão respeitar se forem usados em todas as linguagens de programação. Um bom design dita que todos os assemblies indicam explicitamente a conformidade com CLS com <xref:System.CLSCompliantAttribute>. Se o atributo não estiver presente em um assembly, o assembly não será compatível.
 
 É possível que um assembly em conformidade com CLS contenha tipos ou membros de tipo que não estejam em conformidade.
 
@@ -46,10 +46,10 @@ A CLS (Common Language Specification) define restrições de nomenclatura, tipos
 Para corrigir uma violação dessa regra, adicione o atributo ao assembly. Em vez de marcar o assembly inteiro como não compatível, você deve determinar quais tipos ou membros de tipo não são compatíveis e marcar esses elementos como tal. Se possível, você deve fornecer uma alternativa em conformidade com CLS para membros não compatíveis para que o público mais amplo possível acesse toda a funcionalidade do seu assembly.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
-Não suprima um aviso nessa regra. Se você não quiser que o assembly esteja em conformidade, aplique o atributo e defina seu valor como `false`.
+Não suprima um aviso nessa regra. Se você não quiser que o assembly seja compatível, aplique o atributo e defina seu valor como `false`.
 
 ## <a name="example"></a>Exemplo
-O exemplo a seguir mostra um assembly que tem <xref:System.CLSCompliantAttribute?displayProperty=fullName> o atributo aplicado que declara em conformidade com CLS.
+O exemplo a seguir mostra um assembly que tem o atributo <xref:System.CLSCompliantAttribute?displayProperty=fullName> aplicado que declara em conformidade com CLS.
 
 [!code-csharp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CSharp/ca1014-mark-assemblies-with-clscompliantattribute_1.cs)]
 [!code-cpp[FxCop.Design.AssembliesCls#1](../code-quality/codesnippet/CPP/ca1014-mark-assemblies-with-clscompliantattribute_1.cpp)]
