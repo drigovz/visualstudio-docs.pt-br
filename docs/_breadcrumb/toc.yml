@@ -28,9 +28,6 @@
         - name: Implantação
           tocHref: /visualstudio/deployment/
           topicHref: /visualstudio/deployment/deploying-applications-services-and-components
-        - name: Designers
-          tocHref: /visualstudio/designers/
-          topicHref: /visualstudio/designers/designing-user-interfaces
         - name: Extensibilidade
           tocHref: /visualstudio/extensibility/
           topicHref: /visualstudio/extensibility/index
@@ -85,6 +82,9 @@
         - name: Designer de Fluxo de Trabalho
           tocHref: /visualstudio/workflow-designer/
           topicHref: /visualstudio/workflow-designer/developing-applications-with-the-workflow-designer
+        - name: Ferramentas XAML
+          tocHref: /visualstudio/xaml-tools/
+          topicHref: /visualstudio/xaml-tools/
         - name: Ferramentas XML
           tocHref: /visualstudio/xml-tools/
           topicHref: /visualstudio/xml-tools/xml-tools-in-visual-studio
