@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2268d71f9119cc36bdb18161a62fbe930a37b2ff
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: b9c8b60914e814ab6957ee9ec9307b12d9c3d1ba
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381088"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516887"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Criar uma instalação offline do Visual Studio
 
@@ -79,7 +79,7 @@ Veja como.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
+O executável da instalação &mdash;or ser mais específico, o arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
 
 | Edição | Filename |
 |-------------|-----------------------|
@@ -164,9 +164,9 @@ Se você quiser instalar um idioma diferente do inglês, altere `en-US` para uma
 > Ao executar de um cache local de instalação, usaremos as versões locais de cada um desses arquivos. Porém, se durante a instalação você selecionar componentes que não estão no cache, tentaremos baixá-los da Internet.
 
 ::: moniker range="vs-2019"
-
-> Para instalações e atualizações com o 16,1 e posterior, se você receber um erro com "um produto correspondente aos seguintes parâmetros não pode ser encontrado" em sistemas offline, use a opção--noweb com 16.3.5 ou posterior.
-
+> [!IMPORTANT]
+> Para instalações offline, se você receber uma mensagem de erro informando "um produto correspondente aos seguintes parâmetros não pode ser encontrado", verifique se você está usando o comutador `--noweb` com a versão 16.3.5 ou posterior.
+>
 ::: moniker-end
 
 Para garantir que você instale somente os arquivos que baixou, use as mesmas opções de linha de comando que usou para criar o cache de layout. Por exemplo, se você tiver criado um cache de layout com o seguinte comando:

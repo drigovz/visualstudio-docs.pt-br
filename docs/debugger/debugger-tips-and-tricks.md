@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c1efea7340425090adbdd1c9bc865c4a056d42
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 92d1c327c168bfd2881ad014b7f9ab87f771b95d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "70987758"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536071"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprenda dicas e truques de produtividade para o depurador no Visual Studio
 
@@ -86,7 +86,7 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "Createobjectid")
 
-4. Você deve ver **$** mais um número na janela **locais** . Essa variável é a ID do objeto.
+4. Você deve ver um **$** mais um número na janela **locais** . Essa variável é a ID do objeto.
 
 5. Clique com o botão direito do mouse na variável ID de objeto e escolha **Adicionar inspeção**.
 
@@ -100,13 +100,13 @@ Para exibir valores de retorno para suas funções, examine as funções que apa
 
 Além disso, você pode inserir funções na janela **imediata** para exibir valores de retorno. (Abra-o usando **Debug > Windows > Immediate**.)
 
-![Janela imediata](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
+![Janela Imediata](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-Você também pode usar o [pseudovariables](../debugger/pseudovariables.md) na janela **Watch** e **Immediate** , `$ReturnValue`como.
+Você também pode usar o [pseudovariables](../debugger/pseudovariables.md) na janela **Watch** e **Immediate** , como `$ReturnValue`.
 
 ## <a name="string_visualizer"></a>Inspecionar cadeias de caracteres em um visualizador
 
-Ao trabalhar com cadeias de caracteres, pode ser útil exibir toda a cadeia de caracteres formatada. Para exibir uma cadeia de caracteres de texto sem formatação, XML, HTML ou JSON, clique no ícone do(../debugger/media/dbg-tips-visualizer-icon.png "Visualizador") de ![VisualizerIcon]ícone de lupa ao passar o mouse sobre uma variável que contém um valor de cadeia de caracteres.
+Ao trabalhar com cadeias de caracteres, pode ser útil exibir toda a cadeia de caracteres formatada. Para exibir uma cadeia de caracteres de texto sem formatação, XML, HTML ou JSON, clique no ícone de lupa ![VisualizerIcon](../debugger/media/dbg-tips-visualizer-icon.png "Ícone do Visualizador") ao passar o mouse sobre uma variável que contém um valor de cadeia de caracteres.
 
 ![Abrir um visualizador de cadeia de caracteres](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
@@ -118,9 +118,9 @@ Para alguns outros tipos, como objetos DataSet e DataTable que aparecem nas jane
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Dividir em código em exceções manipuladas
 
-O depurador divide seu código em exceções sem tratamento. No entanto, exceções manipuladas (como exceções que ocorrem `try/catch` dentro de um bloco) também podem ser uma fonte de bugs e você talvez queira investigar quando elas ocorrem. Você pode configurar o depurador para dividir o código para exceções manipuladas também, Configurando opções na caixa de diálogo **configurações de exceção** . Abra essa caixa de diálogo escolhendo **depurar > configurações de exceção do Windows >** .
+O depurador divide seu código em exceções sem tratamento. No entanto, exceções manipuladas (como exceções que ocorrem em um bloco de `try/catch`) também podem ser uma fonte de bugs e você talvez queira investigar quando elas ocorrem. Você pode configurar o depurador para dividir o código para exceções manipuladas também, Configurando opções na caixa de diálogo **configurações de exceção** . Abra essa caixa de diálogo escolhendo **depurar > configurações de exceção do Windows >** .
 
-A caixa de diálogo **configurações de exceção** permite que você informe o depurador para dividir o código em exceções específicas. Na ilustração abaixo, o depurador interromperá seu código sempre que `System.NullReferenceException` ocorrer. Para obter mais informações, consulte [Gerenciando exceções](../debugger/managing-exceptions-with-the-debugger.md).
+A caixa de diálogo **configurações de exceção** permite que você informe o depurador para dividir o código em exceções específicas. Na ilustração abaixo, o depurador divide seu código sempre que um `System.NullReferenceException` ocorre. Para obter mais informações, consulte [Gerenciando exceções](../debugger/managing-exceptions-with-the-debugger.md).
 
 ![Caixa de diálogo Configurações de exceção](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
@@ -132,7 +132,7 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 
 1. Durante a depuração, clique no botão **Mostrar threads no código-fonte** ![Mostrar threads na fonte](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") na barra de ferramentas **depurar** .
 
-2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um marcador de *thread* ícone de ![thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se assemelha a dois threads de tecido. O marcador de thread indica que um thread está parado nesse local.
+2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá um ![marcador de thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") com ícone de *marcador de thread* que se assemelha a dois threads de tecido. O marcador de thread indica que um thread está parado nesse local.
 
     Observe que um marcador de thread pode ser parcialmente escondido por um ponto de interrupção.
 
@@ -142,7 +142,7 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 
 ## <a name="examine-payloads-for-web-services-and-network-resources-uwp"></a>Examinar as cargas para serviços Web e recursos de rede (UWP)
 
-Em aplicativos UWP, você pode analisar as operações de rede executadas `Windows.Web.Http` usando a API. Você pode usar essa ferramenta para ajudar a depurar os serviços Web e os recursos de rede. Para usar a ferramenta, selecione **depurar > criador de perfil de desempenho**. Selecione **rede**e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
+Em aplicativos UWP, você pode analisar as operações de rede executadas usando a API `Windows.Web.Http`. Você pode usar essa ferramenta para ajudar a depurar os serviços Web e os recursos de rede. Para usar a ferramenta, selecione **depurar > criador de perfil de desempenho**. Selecione **rede**e, em seguida, escolha **Iniciar**. No aplicativo, percorra o cenário que usa `Windows.Web.Http` e escolha **Parar coleta** para gerar o relatório.
 
 ![Ferramenta de criação de perfil de uso de rede](../profiling/media/prof-tour-network-usage.png "NetworkUsageProfTool")
 
@@ -156,7 +156,7 @@ Para obter mais informações, consulte [Uso de rede](../profiling/network-usage
 
 Para anexar ao seu aplicativo em execução, o depurador carrega arquivos de símbolo (. pdb) gerados para exatamente a mesma compilação do aplicativo que você está tentando depurar. Em alguns cenários, um pouco de conhecimento dos arquivos de símbolo pode ser útil. Você pode examinar como o Visual Studio carrega arquivos de símbolo usando a janela **módulos** .
 
-Abra a janela **módulos** durante a depuração selecionando **depurar > módulos do Windows >** . A janela **módulos** pode informar quais módulos o depurador está tratando como código do usuário, ou [*meu código*](../debugger/just-my-code.md), e o status de carregamento do símbolo do módulo. Na maioria dos cenários, o depurador localiza automaticamente arquivos de símbolo para o código do usuário, mas se você quiser entrar (ou depurar) o código do .NET Framework, código do sistema ou código de biblioteca de terceiros, etapas adicionais serão necessárias para obter os arquivos de símbolo corretos.
+Abra a janela **módulos** durante a depuração selecionando **depurar > módulos do Windows >** . A janela **módulos** pode informar quais módulos o depurador está tratando como código do usuário, ou [*meu código*](../debugger/just-my-code.md), e o status de carregamento do símbolo do módulo. Na maioria dos cenários, o depurador localiza automaticamente arquivos de símbolo para o código do usuário, mas se você quiser entrar (ou depurar) código .NET, código do sistema ou código de biblioteca de terceiros, etapas adicionais serão necessárias para obter os arquivos de símbolo corretos.
 
 ![Exibir informações de símbolo na janela módulos](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 

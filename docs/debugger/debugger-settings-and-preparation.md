@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee8794fd94a50f51b7293fee025f2eb1abdf6db5
-ms.sourcegitcommit: 1507baf3a336bbb6511d4c3ce73653674831501b
+ms.openlocfilehash: d6603ca7ffc39ecc819fb2e54024776760ccfa60
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72349736"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536059"
 ---
 # <a name="debugger-settings-and-preparation"></a>Preparação e configurações do depurador
 Essa seção descreve as configurações de propriedade relacionadas ao depurador, e a preparação necessária para depurar seu programa com o depurador do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Se você criar seu programa no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] usando os modelos de projeto, essas configurações serão definidas corretamente para você na configuração de depuração.
@@ -44,7 +44,7 @@ Essa seção descreve as configurações de propriedade relacionadas ao depurado
 
  [Depurar aplicativos de 64 bits](../debugger/debug-64-bit-applications.md) Descreve como depurar aplicativos de 64 bits.
 
- [Como especificar uma versão .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Descreve como definir uma chave do registro para indicar ao depurador qual versão usar.
+ [Como especificar uma versão mais antiga de .NET Framework para depuração](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md) Descreve como definir uma chave do registro para indicar ao depurador qual versão usar.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)

@@ -1,5 +1,5 @@
 ---
-title: Especifique uma versão do .NET Framework para depuração | Microsoft Docs
+title: Especificar uma versão de .NET Framework para depuração | Microsoft Docs
 ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -17,22 +17,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: bfe17100fcdcb0d475a7467233caa51ba7895225
-ms.sourcegitcommit: 12f2851c8c9bd36a6ab00bf90a020c620b364076
+ms.openlocfilehash: d612c3f0a542fe30e9241b43c1df5d82a09832fd
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 06/06/2019
-ms.locfileid: "66747482"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535967"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Como: Especificar uma versão do .NET Framework para depuração (C#, Visual Basic, F#)
+# <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>Especificar uma versão de .NET Framework mais antiga paraC#depuração (, F#Visual Basic,)
 
-O depurador do Visual Studio dá suporte a versões mais antigas do Microsoft .NET Framework, bem como a versão atual de depuração. Se você iniciar um aplicativo do Visual Studio, o depurador sempre poderá identificar a versão correta do .NET Framework para o aplicativo que você está depurando. No entanto, se o aplicativo já está em execução e você iniciar a depuração usando **anexar a**, o depurador pode não ser capaz de identificar uma versão mais antiga do .NET Framework. Se isso ocorrer, você receberá uma mensagem de erro, que indica
+O depurador do Visual Studio dá suporte à depuração de versões mais antigas do Microsoft .NET Framework, bem como à versão atual. Se você iniciar um aplicativo do Visual Studio, o depurador poderá sempre identificar a versão correta do .NET Framework para o aplicativo que você está depurando. No entanto, se o aplicativo já estiver em execução e você iniciar a depuração usando **Attach to**, o depurador poderá nem sempre ser capaz de identificar uma versão mais antiga do .NET Framework. Se isso ocorrer, você receberá uma mensagem de erro, que indica
 
 ``` cmd
 The debugger has made an incorrect assumption about the .NET Framework version your application is going to use.
 ```
 
-Nos raros casos em que esse erro aparecer, você pode definir uma chave do registro para indicar ao depurador a qual versão usar.
+Nos casos raros em que esse erro aparece, você pode definir uma chave do registro para indicar ao depurador qual versão usar.
 
 ### <a name="to-specify-a-net-framework-version-for-debugging"></a>Para especificar uma versão do .NET Framework para depuração
 
@@ -52,7 +52,7 @@ Nos raros casos em que esse erro aparecer, você pode definir uma chave do regis
 
 5. Depois de navegar até {449EC4CC-30D2-4032-9256-EE18EB41B62B}, examine a coluna **Nome** e localize a chave CLRVersionForDebugging.
 
-   1. Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o novo valor de cadeia de caracteres, clique em **renomeie**e o tipo `CLRVersionForDebugging`.
+   1. Se a chave não existir, clique com o botão direito do mouse em {449EC4CC-30D2-4032-9256-EE18EB41B62B} e clique em **Novo Valor de Cadeia de Caracteres**. Clique com o botão direito do mouse no novo valor de cadeia de caracteres, clique em **renomear**e digite `CLRVersionForDebugging`.
 
 6. Clique duas vezes em **CLRVersionForDebugging**.
 
@@ -62,7 +62,7 @@ Nos raros casos em que esse erro aparecer, você pode definir uma chave do regis
 
 9. Feche o **Editor de Registro**.
 
-     Se você ainda receber uma mensagem de erro quando começar a depuração, verifique se inseriu o número de versão corretamente no Registro. Também verifique se que você está usando uma versão do .NET Framework com suporte pelo Visual Studio. O depurador é compatível com a versão atual e a anterior do .NET Framework, mas não é compatível com versões futuras.
+     Se você ainda receber uma mensagem de erro quando começar a depuração, verifique se inseriu o número de versão corretamente no Registro. Verifique também se você está usando uma versão do .NET Framework com suporte pelo Visual Studio. O depurador é compatível com a versão atual e a anterior do .NET Framework, mas não é compatível com versões futuras.
 
 ## <a name="see-also"></a>Consulte também
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)

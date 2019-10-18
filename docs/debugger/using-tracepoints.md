@@ -9,12 +9,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 7680b305fad6f8ea1d7961ec5a70ddafd578c77d
-ms.sourcegitcommit: e98db44f3a33529b0ba188d24390efd09e548191
+ms.openlocfilehash: 263657213f1720eaca7a0462bb31585adaacf9bb
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/25/2019
-ms.locfileid: "71095261"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516396"
 ---
 # <a name="use-tracepoints-in-the-visual-studio-debugger"></a>Usar tracepoints no depurador do Visual Studio
 
@@ -22,7 +22,7 @@ Os Tracepoints permitem registrar informações na janela de saída em condiçõ
 
 ## <a name="let39s-take-an-example"></a>Vamos&#39;pegar um exemplo
 
-O programa de exemplo a seguir é `for` um loop simples com uma variável de contador que aumenta em uma cada vez que o loop executa outra iteração.
+O programa de exemplo a seguir é um loop de `for` simples com uma variável de contador que aumenta em uma cada vez que o loop executa outra iteração.
 
 ![Exemplo de contador](../debugger/media/counterexample.png "Exemplo de contador")
 
@@ -47,25 +47,25 @@ Você pode definir tracepoints especificando uma cadeia de caracteres de saída 
 
 5. Insira a mensagem que você deseja fazer logon na caixa de texto **mostrar uma mensagem na janela de saída** (para obter detalhes, consulte as seções posteriores neste artigo).
 
-   O tracepoint agora está definido. Pressione o &quot;botão&quot; fechar se tudo o que você deseja fazer é registrar algumas informações no janela de saída.
+   O tracepoint agora está definido. Pressione o botão &quot;Close &quot; se tudo o que você deseja fazer é registrar algumas informações no Janela de Saída.
 
 6. Se você quiser adicionar condições que determinam se a mensagem é exibida, marque a caixa de seleção **condições** .
 
    ![Caixa condições verificadas](../debugger/media/checkedconditionsbox.png "Caixa condições verificadas")
 
-   Você tem três opções para condições: **Expressão condicional**, **filtro**e **contagem de acesso**.
+   Você tem três opções de condições: **expressão condicional**, **filtro**e **contagem de acesso**.
 
 ## <a name="actions-menu"></a>Menu de ações
 
 Esse menu permite que você registre uma mensagem na janela de saída. Digite as cadeias de caracteres que você deseja gerar na caixa de mensagem (não há aspas necessárias). Se você quiser exibir valores de variáveis, certifique-se de colocá-los entre chaves.
 
-Por exemplo, se você quiser exibir o valor da `counter` variável no console de saída, digite {Counter} na caixa de texto da mensagem.
+Por exemplo, se você quiser exibir o valor da variável `counter` no console de saída, digite {Counter} na caixa de texto da mensagem.
 
 ![Mensagem de saída do contador](../debugger/media/counteroutputmessage.png "Mensagem de saída do contador")
 
 Se você clicar em **fechar** e depurar o programa (**F5**), você verá a seguinte saída na janela saída.
 
-![Mensagem de ações em janela de saída](../debugger/media/actionsmessageinoutputwindow.png "Mensagem de ações em janela de saída")
+![Mensagem de ações em Janela de Saída](../debugger/media/actionsmessageinoutputwindow.png "Mensagem de ações em Janela de Saída")
 
 Você também pode usar palavras-chave especiais para exibir informações mais específicas. Insira a palavra-chave exatamente como mostrado abaixo (use um "$" na frente de cada palavra-chave e todas as maiúsculas para a palavra-chave em si).
 
@@ -88,11 +88,11 @@ As condições permitem filtrar as mensagens de saída, para que elas sejam exib
 ### <a name="conditional-expression"></a>Expressão condicional
 Para uma expressão condicional, uma mensagem de saída é exibida somente quando determinadas condições são atendidas.
 
-Para expressões condicionais, você pode definir o tracepoint para gerar uma mensagem quando uma determinada condição for verdadeira ou quando ela for alterada. Por exemplo, se você quiser apenas exibir o valor do contador durante iterações iguais do `for` loop, você poderá selecionar a opção **é verdadeiro** e digitar `i%2 == 0` a caixa de texto da mensagem.
+Para expressões condicionais, você pode definir o tracepoint para gerar uma mensagem quando uma determinada condição for verdadeira ou quando ela for alterada. Por exemplo, se você quiser apenas exibir o valor do contador durante iterações iguais do loop de `for`, você poderá selecionar a opção **is true** e digitar `i%2 == 0` na caixa de texto da mensagem.
 
-A ![expressão condicional é verdadeira] A (../debugger/media/conditionalexpressionistrue.png "expressão condicional é verdadeira")
+![A expressão condicional é verdadeira](../debugger/media/conditionalexpressionistrue.png "A expressão condicional é verdadeira")
 
-Se você quiser imprimir o valor do contador quando a iteração do `for` loop for alterada, selecione a opção **quando alterado** e digite `i` na caixa de texto da mensagem.
+Se você quiser imprimir o valor do contador quando a iteração do loop de `for` for alterada, selecione a opção **quando alterado** e digite `i` na caixa de texto da mensagem.
 
 ![Expressão condicional quando alterada](../debugger/media/conditionalexpressionwhenchanged.png "Expressão condicional quando alterada")
 
@@ -101,7 +101,7 @@ O comportamento da opção **quando alterado** é diferente para linguagens de p
 - Para código nativo, o depurador não considera a primeira avaliação da condição como uma alteração, portanto, não atinge o tracepoint na primeira avaliação.
 - Para código gerenciado, o depurador atinge o tracepoint na primeira avaliação depois **que a alteração** é selecionada.
 
-Para obter uma visão mais abrangente das expressões válidas que você pode usar ao definir condições, consulte [expressões no depurador](expressions-in-the-debugger.md)
+Para obter uma visão mais abrangente das expressões válidas que você pode usar ao definir condições, consulte [expressões no depurador](expressions-in-the-debugger.md).
 
 ### <a name="hit-count"></a>Contagem de acesso
 Uma condição de contagem de ocorrências permite que você envie a saída somente depois que a linha de código em que o tracepoint está definido tiver executado um número especificado de vezes.
@@ -123,7 +123,7 @@ Lista de expressões de filtro:
 - ThreadId = valor
 - ThreadName = "nome"
 
-Coloque as cadeias de caracteres (como nomes) entre aspas duplas. Os valores podem ser inseridos sem aspas. Você pode combinar cláusulas usando `&` (`AND`), `||` (`OR`), `!` (`NOT`), entre parênteses.
+Coloque as cadeias de caracteres (como nomes) entre aspas duplas. Os valores podem ser inseridos sem aspas. Você pode combinar cláusulas usando `&` (`AND`), `||` (`OR`), `!` (`NOT`) e parênteses.
 
 ## <a name="considerations"></a>Considerações
 
@@ -131,7 +131,9 @@ Embora os tracepoints destinam-se a tornar a depuração uma experiência mais l
 
 Às vezes, quando você inspeciona uma propriedade ou atributo de um objeto, seu valor pode ser alterado. Isso não é um bug causado pelo próprio recurso tracepoint, mas vale a pena mencionar que o uso de tracepoints para inspecionar objetos não evita essas modificações acidentais.
 
-A maneira como as expressões são avaliadas na caixa de mensagem de **ação** pode ser diferente da linguagem que você está usando no momento para desenvolvimento. Por exemplo, para gerar uma cadeia de caracteres, não é necessário encapsular uma mensagem entre aspas mesmo que você normalmente use `Debug.WriteLine()` ou `console.log()`. Além disso, a sintaxe de chave`{ }`() para expressões de saída também pode ser diferente da Convenção de saída de valores em sua linguagem de desenvolvimento. (No entanto, o conteúdo dentro das chaves (`{ }`) ainda deve ser escrito usando a sintaxe da linguagem de desenvolvimento.
+A maneira como as expressões são avaliadas na caixa de mensagem de **ação** pode ser diferente da linguagem que você está usando no momento para desenvolvimento. Por exemplo, para gerar uma cadeia de caracteres, não é necessário encapsular uma mensagem entre aspas mesmo se você normalmente usa `Debug.WriteLine()` ou `console.log()`. Além disso, a sintaxe de chave (`{ }`) para expressões de saída também pode ser diferente da Convenção de saída de valores em sua linguagem de desenvolvimento. (No entanto, o conteúdo entre chaves (`{ }`) ainda deve ser escrito usando a sintaxe da linguagem de desenvolvimento.
+
+Se você estiver tentando depurar um aplicativo ao vivo e procurando um recurso semelhante, confira nosso recurso logpoint na Depurador de Instantâneos. O depurador de instantâneo é uma ferramenta usada para investigar problemas em aplicativos de produção. O Logpoints também permite que você envie mensagens para o Janela de Saída sem precisar modificar o código-fonte e não afete o aplicativo em execução. Para obter mais informações, consulte [Depurar aplicativo dinâmico do Azure](../debugger/debug-live-azure-applications.md).
 
 ## <a name="see-also"></a>Consulte também
 
@@ -140,3 +142,4 @@ A maneira como as expressões são avaliadas na caixa de mensagem de **ação** 
 - [Primeira olhada na depuração](../debugger/debugger-feature-tour.md)
 - [Expressões no depurador](expressions-in-the-debugger.md)
 - [Usar pontos de interrupção](../debugger/using-breakpoints.md)
+- [Depurar aplicativos dinâmicos do Azure](../debugger/debug-live-azure-applications.md)
