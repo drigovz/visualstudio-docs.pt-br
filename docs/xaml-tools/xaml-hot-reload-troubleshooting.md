@@ -12,12 +12,12 @@ manager: jillfra
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 020577cfe692d5d306a555e763d08807ab191074
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
+ms.openlocfilehash: 40be42871bac0a138d15b11b86f34419f2a6c67d
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72450936"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72535295"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>Solução de problemas de Recarga Dinâmica de XAML
 
@@ -46,6 +46,9 @@ Se essas opções forem selecionadas, vá para árvore visual dinâmica (**depur
 ## <a name="verify-that-you-use-start-debugging-rather-than-attach-to-process"></a>Verifique se você usa iniciar depuração em vez de anexar ao processo
 
 O Hot recarregamento de XAML requer que a variável de ambiente `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` seja definida como 1 no momento em que o aplicativo é iniciado. O Visual Studio define isso automaticamente como parte da **depuração** > **Iniciar** o comando de depuração (ou **F5**). Se você quiser usar o Hot recarregamento de XAML com o comando **Debug** > **attach para Process** , em vez disso, defina a variável de ambiente por conta própria.
+
+> [!NOTE]
+> Para definir uma variável de ambiente, procure "variável de ambiente" e escolha **Editar as variáveis de ambiente do sistema**. Na caixa de diálogo que é aberta, escolha **variáveis de ambiente**, em seguida, adicione-a como uma variável de usuário e defina o valor como `1`. Para limpar, remova a variável quando terminar a depuração.
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>Verifique se as propriedades do MSBuild estão corretas
 
