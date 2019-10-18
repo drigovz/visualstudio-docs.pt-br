@@ -6,12 +6,12 @@ manager: lank
 ms.date: 07/30/2019
 ms.topic: conceptual
 description: A MSDN Magazine está sendo desativada
-ms.openlocfilehash: 8addfcf6c32b8c7d01223ff1ae6bb4cc4b32562c
-ms.sourcegitcommit: 673b9364fc9a96b027662dcb4cf5d61cab60ef11
-ms.translationtype: HT
+ms.openlocfilehash: de9d81369d1a616b2511ec553d41a077b2edb359
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/21/2019
-ms.locfileid: "69891251"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516842"
 ---
 # <a name="the-msdn-magazine-benefit-in-visual-studio-subscriptions-has-been-discontinued"></a>O benefício MSDN Magazine nas assinaturas do Visual Studio foi descontinuado
 
@@ -29,8 +29,8 @@ Este é um trecho do comunicado em msdn.microsoft.com:
     Subscribers of MSDN Magazine who have paid for their subscriptions will receive a pro-rated refund, based on time remaining on their subscription. The refund checks will be mailed out to those subscribers after the November issue has published."
 
 ## <a name="frequently-asked-questions"></a>Perguntas frequentes
-### <a name="q-how-does-the-refund-process-work"></a>P: Como funciona o processo de reembolso?
-R: Os reembolsos serão enviados para o endereço registrado para a sua assinatura. Em caso de dúvidas sobre reembolsos, contate a **1105 Media**.  As informações completas de contato da 1105 Media estão disponíveis na [postagem no blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) em msdn.microsoft.com.  
+### <a name="q-how-does-the-refund-process-work"></a>P: como funciona o processo de reembolso?
+R: os reembolsos serão enviados para o endereço no arquivo para sua assinatura. Em caso de dúvidas sobre reembolsos, contate a **1105 Media**.  As informações completas de contato da 1105 Media estão disponíveis na [postagem no blog](https://msdn.microsoft.com/magazine/mt833502.aspx?) em msdn.microsoft.com.  
 
 ## <a name="support-resources"></a>Recursos de suporte
 - Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
@@ -38,6 +38,7 @@ R: Os reembolsos serão enviados para o endereço registrado para a sua assinatu
 
 ## <a name="next-steps"></a>Próximas etapas
 Confira mais oportunidades de desenvolvimento profissional em sua assinatura:
+- [CODE Magazine](vs-code-magazine.md)
 - [Pluralsight](vs-pluralsight.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)
 - [DataCamp](vs-datacamp.md)

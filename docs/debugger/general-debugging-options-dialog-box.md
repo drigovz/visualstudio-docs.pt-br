@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d3fa7ae62c19a7af45188bab08ce9b3144032b7d
-ms.sourcegitcommit: 485ffaedb1ade71490f11cf05962add1718945cc
-ms.translationtype: MT
+ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
+ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72435714"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72536038"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -99,7 +99,7 @@ Nas condições 2 e 3, às vezes, a exceção é capturada pelo código gerencia
 
 **Suprimir a otimização JIT na carga do módulo (somente gerenciado)** : desabilita a otimização JIT do código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código"). Para obter mais informações, consulte [otimização e depuração JIT](../debugger/jit-optimization-and-debugging.md).
 
-**Habilitar depuração de JavaScript para ASP.net (Chrome, Edge e IE)** : habilita o depurador de script para aplicativos ASP.net. Na primeira utilização no Chrome, talvez seja necessário entrar no navegador para habilitar as extensões do Chrome que você instalou. Desabilite esta opção para reverter para o comportamento herdado.
+**Habilitar depuração de JavaScript para ASP.net (Chrome, Microsoft Edge e IE)** : habilita o depurador de script para aplicativos ASP.net. Na primeira utilização no Chrome, talvez seja necessário entrar no navegador para habilitar as extensões do Chrome que você instalou. Desabilite esta opção para reverter para o comportamento herdado.
 
 **Habilitar ferramentas para desenvolvedores de borda para aplicativos de JavaScript UWP (experimental)** : habilita as ferramentas de desenvolvedor para aplicativos de JavaScript UWP no Microsoft Edge.
 
@@ -117,7 +117,7 @@ Para ver quais símbolos estão disponíveis na tabela de exportação de uma dl
 
 **Usar modo de compatibilidade gerenciado**: substitui o mecanismo de depuração padrão por uma versão herdada para habilitar estes cenários:
 
-- Você está usando um idioma .NET Framework diferente de C#, Visual Basic ou F# que fornece seu próprio avaliador de expressão (isso C++inclui/CLI).
+- Você está usando uma linguagem .NET diferente de C#, Visual Basic ou F# que fornece seu próprio avaliador de expressão (isso C++inclui/CLI).
 
 - Você deseja habilitar editar e continuar para projetos C++ durante a depuração de modo misto.
 

@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: da4da0a106d37b081e0a7c57fe905048f3314174
-ms.sourcegitcommit: e82baa50bf5a65858c410882c2e86a552c2c1921
+ms.openlocfilehash: fcc4a3d3d99deab62971c40b26c9a4252367438f
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72381084"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516328"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -39,7 +39,7 @@ Baixe um arquivo bootstrapper para a edição do Visual Studio que você deseja.
 
 Para obter um bootstrapper para o Visual Studio 2017, consulte a página de download de [versões anteriores do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/) para obter detalhes sobre como fazer isso.
 
-Seu executável de instalação @ no__t-0or para ser mais específico, o arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
+O executável da instalação &mdash;or ser mais específico, o arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
 
 | Edição | Filename |
 |-------------|-----------------------|
@@ -53,7 +53,7 @@ Outros bootstrapper com suporte incluem **vs_feedbackclient. exe**, **vs_teamexp
 
 ::: moniker range="vs-2019"
 
-Seu executável de instalação @ no__t-0or para ser mais específico, um arquivo bootstrapper @ no__t-1should corresponde ou é semelhante a um dos seguintes.
+O executável da instalação &mdash;or ser mais específico, um arquivo bootstrapper &mdash;should corresponder ou ser semelhante a um dos seguintes.
 
 |Edição | Baixar|
 |-------------|-----------------------|
@@ -229,9 +229,9 @@ Os administradores podem implantar o Visual Studio em estações de trabalho cli
 >
 
 ::: moniker range="vs-2019"
-
-> Para instalações offline, se você receber uma mensagem de erro dizendo "um projeto correspondente aos seguintes parâmetros não pode ser encontrado", certifique-se de estar usando a opção--noweb com a versão 16.3.5 ou posterior.
-
+> [!IMPORTANT]
+> Para instalações offline, se você receber uma mensagem de erro informando "um produto correspondente aos seguintes parâmetros não pode ser encontrado", verifique se você está usando o comutador `--noweb` com a versão 16.3.5 ou posterior.
+>
 ::: moniker-end
 
 Quando você instala com base em um layout, o conteúdo instalado é adquirido do layout. No entanto, se você selecionar um componente que não está no layout, ele será adquirido da Internet.  Se você quiser impedir que a instalação do Visual Studio baixe qualquer conteúdo que está ausente em seu layout, use a opção `--noWeb`. Se `--noWeb` for usado e o layout não tiver qualquer conteúdo selecionado a ser instalado, a configuração falhará.

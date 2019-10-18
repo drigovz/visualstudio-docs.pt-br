@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 1: Crie um projeto de aplicativo do Windows Forms'
+title: 'Etapa 1: criar um projeto de aplicativo Windows Forms'
 ms.date: 08/30/2019
 ms.assetid: 16ac2422-e720-4e3a-b511-bc2a54201a86
 ms.topic: tutorial
@@ -10,14 +10,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be7b9bd67ed88b9f59ed279211bf15c96ae59569
-ms.sourcegitcommit: 6eed0372976c0167b9a6d42ba443f9a474b8bb91
+ms.openlocfilehash: 897c4ba0bfa46e73115f8288770d088346498dee
+ms.sourcegitcommit: 6244689e742e551e7b6933959bd42df56928ece3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 09/19/2019
-ms.locfileid: "71119013"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72516702"
 ---
-# <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: Crie um projeto de aplicativo do Windows Forms
+# <a name="step-1-create-a-windows-forms-app-project"></a>Etapa 1: criar um projeto de aplicativo Windows Forms
 
 Quando você cria um visualizador de imagens, a primeira etapa é criar um projeto de aplicativo Windows Forms.
 
@@ -50,7 +50,7 @@ Quando você cria um visualizador de imagens, a primeira etapa é criar um proje
 
    Depois de aplicar o filtro de **tipo de projeto** , escolha o modelo **aplicativo de Windows Forms (.NET Framework)** para C# ou Visual Basic e, em seguida, escolha **Avançar**.
 
-   ![Escolha o C# modelo para o aplicativo Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
+   ![Escolha o modelo C# ou Visual Basic para o aplicativo Windows Forms (.NET Framework)](./media/create-new-project-search-winforms-filtered.png)
 
    > [!NOTE]
    > Se você não vir o modelo de **.NET Framework (Windows Forms app)** , poderá instalá-lo na janela **criar um novo projeto** . Na mensagem **Não encontrou o que precisa?** , escolha o link **Instalar mais ferramentas e recursos**.
@@ -73,7 +73,7 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
 
 1. O ambiente de desenvolvimento contém três janelas: uma janela principal, o **Gerenciador de Soluções** e a janela **Propriedades**.
 
-     Se qualquer uma dessas janelas estiver ausente, você poderá restaurar o layout de janela padrão. Na barra de menus, escolha **janela** > **Redefinir layout da janela**.
+     Se qualquer uma dessas janelas estiver ausente, você poderá restaurar o layout de janela padrão. Na barra de menus, escolha **janela**  > **Redefinir layout da janela**.
 
      Você também pode exibir janelas usando os comandos de menu. Na barra de menus, escolha **Modo de Exibição** > **Janela Propriedades** ou **Gerenciador de Soluções**.
 
@@ -105,17 +105,17 @@ O Visual Studio cria uma solução para seu aplicativo. Uma solução atua como 
      Como alternativa, escolha o botão **salvar tudo** na barra de ferramentas, que mostra a imagem a seguir.
 
      ![Botão de barra de ferramentas Salvar Todos](../ide/media/express_iconsaveall.png)<br/>
-     ***Salvar tudo*** *botão da barra de ferramentas*
+     Botão ***salvar todas as*** *barras de ferramentas*
 
      O Visual Studio preenche automaticamente o nome da pasta e o nome do projeto e, em seguida, salva o projeto na sua pasta de projeto.
 
 ## <a name="next-steps"></a>Próximas etapas
 
-* Para ir para a próxima etapa do tutorial, **consulte [etapa 2: Execute seu aplicativo](../ide/step-2-run-your-program.md).**
+* Para ir para a próxima etapa do tutorial, consulte **[etapa 2: executar seu aplicativo](../ide/step-2-run-your-program.md)** .
 
-* Para retornar ao tópico de visão geral, confira [Tutorial 1: Criar um visualizador de imagens](../ide/tutorial-1-create-a-picture-viewer.md).
+* Para retornar ao tópico de visão geral, veja [Tutorial 1: Criar um visualizador de imagens](../ide/tutorial-1-create-a-picture-viewer.md).
 
 ## <a name="see-also"></a>Consulte também
 
-* [Tutorial 2: Criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
-* [Tutorial 3: Criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)
+* [Tutorial 2: criar um teste de matemática cronometrado](tutorial-2-create-a-timed-math-quiz.md)
+* [Tutorial 3: criar um jogo de correspondência](tutorial-3-create-a-matching-game.md)
