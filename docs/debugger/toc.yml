@@ -239,7 +239,7 @@
             - name: Exibições personalizadas (gerenciadas)
               items:
                 - name: Criar exibições personalizadas de objetos gerenciados
-                  href: create-custom-views-of-dot-managed-objects.md
+                  href: create-custom-views-of-managed-objects.md
                 - name: Instruir o depurador sobre o que mostrar
                   href: using-the-debuggerdisplay-attribute.md
                 - name: Instruir o depurador sobre qual tipo mostrar
