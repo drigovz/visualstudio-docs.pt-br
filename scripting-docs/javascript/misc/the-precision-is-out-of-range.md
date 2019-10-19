@@ -14,15 +14,15 @@ ms.assetid: c16760ac-fc08-49d7-8878-9bc434b3c080
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 92a6e7fc6433f120c053303421feb5e8d58bd1c1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 364794472cbf17643cebbd926cd3fda6e93be1f9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63006182"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577277"
 ---
 # <a name="the-precision-is-out-of-range"></a>A precisão está fora do intervalo
-Você tentou passar um argumento inválido para a função **Number.prototype.toPrecision**. O argumento **toPrecision** deve estar entre 1 e 21 (inclusivo).  
+Tentativa de passar um argumento inválido para o número da função **. prototype. toPrecision**. O argumento para **toPrecision** deve estar entre 1 e 21 (inclusivo).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   

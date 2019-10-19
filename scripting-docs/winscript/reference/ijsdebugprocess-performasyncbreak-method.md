@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugprocess:: Performasyncbreak | Microsoft Docs'
+title: 'IJsDebugProcess: método erformAsyncBreak de:P | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5a4fdb70341744c764779d406372bbd55418fd29
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3320c59097dec5229030a3f15252d907562c67e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557979"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577330"
 ---
 # <a name="ijsdebugprocessperformasyncbreak-method"></a>Método IJsDebugProcess::PerformAsyncBreak
-Coloca o mecanismo de script no modo de interrupção, fazendo com que ele quebrar na próxima instrução de script.  
+Coloca o mecanismo de script no modo de interrupção, fazendo com que ele seja interrompido na próxima instrução de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -35,12 +35,12 @@ HRESULT PerformAsyncBreak(
   
 #### <a name="parameters"></a>Parâmetros  
  `threadId`  
- [in] A ID do thread.  
+ no A ID do thread.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

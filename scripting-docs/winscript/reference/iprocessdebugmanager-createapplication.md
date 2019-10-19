@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::CreateApplication | Microsoft Docs
+title: 'IProcessDebugManager:: createapplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10d7f2246b327393a810170f5b133f2885186c3a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5be4c67168a43ec405a6d4ed857b9772fdddd1e9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944800"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577109"
 ---
 # <a name="iprocessdebugmanagercreateapplication"></a>IProcessDebugManager::CreateApplication
 Cria um novo objeto de aplicativo de depuração para este aplicativo.  
@@ -37,9 +37,9 @@ HRESULT CreateApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppda`  
- [out] O objeto de aplicativo de depuração para este aplicativo.  
+ fora O objeto de aplicativo de depuração para este aplicativo.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,8 +47,8 @@ HRESULT CreateApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O objeto criado por esse método não tem nome e não é adicionado à execução lista de aplicativos. Use o `IProcessDebugManager::AddApplication` para adicionar o aplicativo de depuração para a lista de aplicativos.  
+ O objeto criado por esse método não tem nome e não é adicionado à lista de aplicativos em execução. Use o `IProcessDebugManager::AddApplication` para adicionar o aplicativo de depuração à lista de aplicativos.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   
+ @No__t_1 de [interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)  
  [IProcessDebugManager::AddApplication](../../winscript/reference/iprocessdebugmanager-addapplication.md)

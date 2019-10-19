@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication110::AsynchronousCallInMainThread | Microsoft Docs
+title: 'IDebugApplication110:: AsynchronousCallInMainThread | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,18 +13,18 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1b5e52d65a5fd70c4ec7de9ced9a0175940d93f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 04c1a2962662d0046c6b9d323a287d580ee0f3e6
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446408"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577401"
 ---
 # <a name="idebugapplication110asynchronouscallinmainthread"></a>IDebugApplication110::AsynchronousCallInMainThread
 Faz uma chamada assíncrona no thread principal.  
   
 > [!IMPORTANT]
-> [Interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> A [interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v 11.0 e superior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -34,7 +34,7 @@ HRESULT AsynchronousCallInMainThread([in] IDebugThreadCall* pptc, [in] DWORD_PTR
   
 #### <a name="parameters"></a>Parâmetros  
  `pptc`  
- O [IDebugThreadCall Interface](../../winscript/reference/idebugthreadcall-interface.md) objeto a ser chamado.  
+ O objeto de [interface IDebugThreadCall](../../winscript/reference/idebugthreadcall-interface.md) a ser chamado.  
   
  `dwParam1`  
  O primeiro parâmetro da chamada.  
