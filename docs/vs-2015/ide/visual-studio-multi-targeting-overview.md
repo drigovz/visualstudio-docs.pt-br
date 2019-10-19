@@ -11,15 +11,15 @@ helpviewer_keywords:
 - multitargeting [Visual Studio]
 ms.assetid: b1702c33-0672-4ebc-b779-2b324d6ea880
 caps.latest.revision: 39
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 12018ef5e4c20e436cc250ca9630ccc4bd942a0f
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: ba7566e4a6bdffc5e7075bc138832097415a7129
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698159"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667107"
 ---
 # <a name="visual-studio-multi-targeting-overview"></a>Visão geral de multissegmentação do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,7 +78,7 @@ Nesta versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], é possível espe
 ## <a name="enabling-linq"></a>Habilitando o LINQ
  Ao definir o .NET Framework 3.5 ou posterior como destino, uma referência ao System.Core e uma importação no nível do projeto para System.Linq (somente no Visual Basic) são adicionadas automaticamente. Se você desejar usar recursos do LINQ, também será necessário ativar a Opção Infer (somente no Visual Basic). A referência e a importação serão removidas automaticamente se você alterar o destino para uma versão anterior do .NET Framework. Para obter mais informações, consulte [Como criar um projeto do LINQ](https://msdn.microsoft.com/library/a929e653-09a3-44be-881f-68ca33f192b2).
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
 [Multiplataforma](../msbuild/msbuild-multitargeting-overview.md)
 [.NET Framework Multi-Targeting para projetos Web ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)
 [Requisitos de sistema e de compatibilidade de plataforma](/visualstudio/productinfo/vs2015-compatibility-vs)

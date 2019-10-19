@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Choose Toolbox Items dialog box, WPF Components tab
 ms.assetid: 6ce1d178-88c0-4295-8915-59fdeedabb11
 caps.latest.revision: 17
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 3f17ac56038c5f6c1d4de026546410ece438e375
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 5c7967635d8e5d64907587fcd1a9b4d84a31d569
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68869924"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660922"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher Itens da Caixa de Ferramentas, Componentes WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe 
 
 - Não atualize corretamente ao alterar a configuração de solução de Depuração para Versão ou de Versão para Depuração. Isso ocorre porque a referência não é uma referência de projeto, mas refere-se ao assembly no disco. Se o controle fizer parte da solução atual, ao alterar de Depuração para Versão, o projeto continuará referenciando a versão de Depuração do controle.
 
-  Além disso, se os metadados de tempo de design forem aplicados ao controle personalizado e esses metadados especificarem que o [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) está `false`definido como, o controle não aparecerá na caixa de ferramentas.
+  Além disso, se os metadados de tempo de design forem aplicados ao controle personalizado e esses metadados especificarem que [ToolboxBrowsableAttribute](/previous-versions/visualstudio/visual-studio-2010/bb547991(v=vs.100)) está definido como `false`, o controle não aparecerá na caixa de ferramentas.
 
   É possível referenciar os controles diretamente no modo de exibição XAML, mapeando o namespace e o assembly do controle. Para obter mais informações, consulte [Como importar um namespace no XAML](https://msdn.microsoft.com/6cda7c7a-369c-47dd-9c2d-13a35dcf737c).
 
