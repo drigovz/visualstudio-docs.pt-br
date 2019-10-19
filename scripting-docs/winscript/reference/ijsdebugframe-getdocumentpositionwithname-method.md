@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugframe:: Getdocumentpositionwithname | Microsoft Docs'
+title: 'Método IJsDebugFrame:: GetDocumentPositionWithName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4d3b909f3a3ebc672bf6d0a014b519de685b1677
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b818ca4dc1ec4402973026668972507861c86f22
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558145"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575118"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithname-method"></a>Método IJsDebugFrame::GetDocumentPositionWithName
-Retorna a posição atual deste quadro de pilha dentro do documento de nível de usuário.  
+Retorna a posição atual deste quadro de pilhas no documento de nível de usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pDocumentName`  
- [out] Para scripts estáticos, uma URL para o documento. Para scripts dinâmicos, um nome contendo o tipo de script (por exemplo, o código de avaliação, o código de função etc.) será retornado.  
+ fora Para scripts estáticos, uma URL para o documento. Para scripts dinâmicos, um nome que contém o tipo de script (por exemplo, código de avaliação, código de função etc.) é retornado.  
   
  `pLine`  
- [out] posição de linha de base 1 dentro do documento.  
+ [fora] posição de linha baseada em 1 dentro do documento.  
   
  `pColumn`  
- [out] posição de linha de base 1 dentro do documento.  
+ [fora] posição de linha baseada em 1 dentro do documento.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

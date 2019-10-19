@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugCodeContexts::Clone | Microsoft Docs
+title: 'IEnumDebugCodeContexts:: clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a08c65a7be5ed0b6394ef5e0aab284a03a52a240
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9ccb3515beaf1398807053465eb771e025b25e58
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62951448"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573015"
 ---
 # <a name="ienumdebugcodecontextsclone"></a>IEnumDebugCodeContexts::Clone
 Cria um enumerador que contém o mesmo estado que o enumerador atual.  
@@ -37,9 +37,9 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppescc`  
- [out] Retorna o `IEnumDebugCodeContexts` interface do clone do enumerador.  
+ fora Retorna a interface `IEnumDebugCodeContexts` do clone do enumerador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

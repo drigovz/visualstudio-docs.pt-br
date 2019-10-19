@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b9ddd9fb24aa83a6027d6d705de6a748a96b2e28
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 737d1c5d4279a0a727f79326749dbf14a2fcd4c7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979104"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574314"
 ---
-# <a name="idebugpropertyenumtypeall-interface"></a>Interface IDebugPropertyEnumType_All
-O `IDebugPropertyEnumType` interfaces são definidas para que cada um dos seus IIDs pode ser passada como um filtro para `IDebugProperty::EnumMembers` ao solicitar o enumerador apropriado.  
+# <a name="idebugpropertyenumtype_all-interface"></a>Interface IDebugPropertyEnumType_All
+As interfaces de `IDebugPropertyEnumType` são definidas de forma que cada um de seus IIDs possa ser passado como um filtro para `IDebugProperty::EnumMembers` ao solicitar o enumerador apropriado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -33,13 +33,13 @@ O `IDebugPropertyEnumType` interfaces são definidas para que cada um dos seus I
 IDebugPropertyEnumType_All : IUnknown  
 ```  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Retorna uma cadeia de caracteres de texto que descreve o nome|  
+|[IDebugPropertyEnumType_All::GetName](../../winscript/reference/idebugpropertyenumtype-all-getname.md)|Retorna uma cadeia de texto que descreve o nome|  
   
- As seguintes interfaces herdam `IDebugPropertyEnumType_All`, e nenhum outro método adicional de ter.  
+ As interfaces a seguir herdam de `IDebugPropertyEnumType_All` e não têm nenhum método adicional.  
   
 ```cpp
 IDebugPropertyEnumType_Arguments : IDebugPropertyEnumType_All   

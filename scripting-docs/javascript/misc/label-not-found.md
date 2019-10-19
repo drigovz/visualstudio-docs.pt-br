@@ -14,24 +14,24 @@ ms.assetid: 79e32926-b03f-457b-997c-2bb2ec8a1ec5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 72b63c699b09081e843f36daeec3fcc556ebaf4a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 4acfb93808a588ed7efb4e256627f816e26a0137
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63007367"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573778"
 ---
 # <a name="label-not-found"></a>Rótulo não encontrado
-Você fez uma referência a um rótulo que não existe. Rótulos pode ser usado para marcar os blocos de código, mas em um escopo especificado, deve ser exclusivos.  
+Você fez uma referência a um rótulo que não existe. Os rótulos podem ser usados para marcar blocos de código, mas dentro de um escopo especificado, devem ser exclusivos.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Verifique se que você não digitou errado o nome do rótulo.  
+- Verifique se você não errau o nome do rótulo.  
   
-- Certifique-se de que todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (Isso inclui as definições de encaminhamento).  
+- Verifique se todas as referências de rótulo são feitas para rótulos que foram definidos no escopo atual (isso inclui as definições de encaminhamento).  
   
 ## <a name="see-also"></a>Consulte também  
- [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)   
- [Instrução switch](../../javascript/reference/switch-statement-javascript.md)   
+ [Instrução rotulada](../../javascript/reference/labeled-statement-javascript.md)    
+ [instrução switch](../../javascript/reference/switch-statement-javascript.md)    
  [Instrução break](../../javascript/reference/break-statement-javascript.md)   
  [Instrução continue](../../javascript/reference/continue-statement-javascript.md)

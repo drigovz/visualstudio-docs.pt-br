@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugprocess:: Createstackwalker | Microsoft Docs'
+title: 'Método IJsDebugProcess:: CreateStackWalker | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cb084b665467ae023bb885ee0de221f0409a0160
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70f5d4885abba3d891526723d3ca1f174549c348
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62557727"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573835"
 ---
 # <a name="ijsdebugprocesscreatestackwalker-method"></a>Método IJsDebugProcess::CreateStackWalker
-Método de fábrica para movimentador de pilhas.  
+Método de fábrica para o Stack Walker.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,18 +36,18 @@ HRESULT CreateStackWalker(
   
 #### <a name="parameters"></a>Parâmetros  
  `threadId`  
- [in] A ID do thread.  
+ no A ID do thread.  
   
  `ppStackWalker`  
- [out] O novo objeto de movimentador de pilha.  
+ fora O novo objeto Stack Walker.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retornará E_JsDEBUG_UNKNOWN_THREAD se o thread não tiver JavaScript nele. Esse método só pode ser chamado enquanto o processo de destino é interrompido.  
+ Retorna E_JsDEBUG_UNKNOWN_THREAD se o thread não tiver um JavaScript nele. Esse método só pode ser chamado enquanto o processo de destino é interrompido.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugProcess](../../winscript/reference/ijsdebugprocess-interface.md)

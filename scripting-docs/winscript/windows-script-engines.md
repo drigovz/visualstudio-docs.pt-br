@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 94fca3befc13e32e6e2859c7b1ef6330af7b812f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415992"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72568949"
 ---
 # <a name="windows-script-engines"></a>Mecanismos de script do Windows
 Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE COM que dá suporte às interfaces a seguir.  
@@ -28,7 +28,7 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 |Interface|Descrição|  
 |[IActiveScript](../winscript/reference/iactivescript.md)|Fornece a capacidade de script básico. A implementação dessa interface é necessária.|  
 |[IActiveScriptParse](../winscript/reference/iactivescriptparse.md)|Fornece a capacidade de adicionar texto de script, avaliar expressões e assim por diante. A implementação dessa interface é opcional. No entanto, se ela não for implementada, o mecanismo de script deverá implementar uma das interfaces IPersist* para carregar um script.|  
-|IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: Dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: Dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: Dá suporte ao atributo PARAM= na marca OBJECT.|  
+|IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: dá suporte ao atributo PARAM= na marca OBJECT.|  
   
 > [!NOTE]
 > É possível que o mecanismo de script nunca seja chamado para salvar ou restaurar um estado de script por meio de `IPersist*`. Em vez disso, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) é usado chamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script em branco, em seguida, miniscripts são adicionados e conectados aos eventos com [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e o código geral é adicionado com [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). No entanto, um mecanismo de script deve implementar totalmente pelo menos uma interface `IPersist*` (preferencialmente `IPersistStreamInit`), pois outros aplicativos de host podem tentar utilizá-las.  
@@ -68,7 +68,7 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 ## <a name="scripting-engine-threading"></a>Threading de mecanismo de script  
  Já que um mecanismo do Windows Script pode ser usado em muitos ambientes, é importante manter o seu modelo de execução o mais flexível possível. Por exemplo, um host baseado em servidor talvez precise preservar um design multi-threaded enquanto usa o Windows Script de forma eficiente. Ao mesmo tempo, um host que não usa threading, como um aplicativo típico, não deve ser sobrecarregado com gerenciamento de threading. O Windows Script atinge esse equilíbrio, restringindo as maneiras pelas quais um mecanismo de script de threading livre pode retornar a chamada para o host, liberando os hosts dessa carga.  
   
- Mecanismos de script usados nos servidores normalmente são implementados como objetos de thread livre. Isso significa que métodos na interface [IActiveScript](../winscript/reference/iactivescript.md) e respectivas interfaces associadas podem ser chamados de qualquer thread no processo, sem marshaling. (Infelizmente, isso também significa que o mecanismo de script deve ser implementado como um servidor em processo, porque o OLE não dá suporte a marshaling entre processos de objetos de thread livre.) A sincronização é responsabilidade do mecanismo de script. Para mecanismos de script que não são reentrantes internamente ou para modelos de idioma que não são multi-threaded, a sincronização pode ser tão simples quanto serializar o acesso ao mecanismo de script com um mutex. É claro que certos métodos, tais como [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), não devem ser serializados dessa forma, de modo que um script travado possa ser encerrado de outro thread.  
+ Mecanismos de script usados nos servidores normalmente são implementados como objetos de thread livre. Isso significa que métodos na interface [IActiveScript](../winscript/reference/iactivescript.md) e respectivas interfaces associadas podem ser chamados de qualquer thread no processo, sem marshaling. (Infelizmente, isso também significa que o mecanismo de script deve ser implementado como um servidor em processo, porque o OLE atualmente não dá suporte ao marshaling entre processos de objetos de thread livre.) A sincronização é responsabilidade do mecanismo de script. Para mecanismos de script que não são reentrantes internamente ou para modelos de idioma que não são multi-threaded, a sincronização pode ser tão simples quanto serializar o acesso ao mecanismo de script com um mutex. É claro que certos métodos, tais como [IActiveScript::InterruptScriptThread](../winscript/reference/iactivescript-interruptscriptthread.md), não devem ser serializados dessa forma, de modo que um script travado possa ser encerrado de outro thread.  
   
  O fato de que [IActiveScript](../winscript/reference/iactivescript.md) é normalmente de thread livre geralmente implica que a interface [IActiveScriptSite](../winscript/reference/iactivescriptsite.md) e o modelo de objeto do host também devem ser de thread livre. Isso tornaria a implementação do host difícil, especialmente no caso comum em que o host é um aplicativo de thread único baseado em Windows com controles ActiveX de thread único ou modelo-apartamento em seu modelo de objeto. Por esse motivo, as restrições a seguir são colocadas sobre o uso do mecanismo de script de [IActiveScriptSite](../winscript/reference/iactivescriptsite.md):  
   

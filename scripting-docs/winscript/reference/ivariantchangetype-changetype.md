@@ -1,5 +1,5 @@
 ---
-title: IVariantChangeType::ChangeType | Microsoft Docs
+title: 'IVariantChangeType:: ChangeType | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 81ed0a8502e9b0cfc53725621d477d34ee5010ea
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 406d5d8486b3016f0105b7bd8bf231db0e1e9613
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62945627"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571774"
 ---
 # <a name="ivariantchangetypechangetype"></a>IVariantChangeType::ChangeType
-Usa um valor variant e cria uma nova variante com um tipo especificado.  
+Usa um valor Variant e cria uma nova variante com um tipo especificado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,18 +40,18 @@ HRESULT ChangeType(
   
 #### <a name="parameters"></a>Parâmetros  
  `pvarDst`  
- [no, out] Uma variante para conter o valor representado pelo `pvarSrc`, mas com o tipo especificado pelo `vtNew`.  
+ [entrada, saída] Uma variante para conter o valor representado por `pvarSrc`, mas com o tipo especificado por `vtNew`.  
   
  `pvarSrc`  
- [in] Um valor variant para mudar para um novo tipo.  
+ no Um valor Variant a ser alterado em um novo tipo.  
   
  `lcid`  
- [in] O contexto de localidade a ser usada ao converter os argumentos para ou de cadeias de caracteres.  
+ no O contexto de localidade a ser usado ao converter os argumentos de ou para cadeias de caracteres.  
   
  `vtNew`  
- [in] Especifica o tipo para `pvarDst` para se tornar.  
+ no Especifica o tipo para `pvarDst` se tornar.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -59,7 +59,7 @@ HRESULT ChangeType(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- O `pvarDst` e `pvarSrc` os argumentos podem ser iguais, caso em que o valor original é substituído. Esse método passa `pvarDst` para o `VariantClear` função e, consequentemente, `pvarDst` deve ser inicializado como um valor válido.  
+ Os argumentos `pvarDst` e `pvarSrc` podem ser iguais; nesse caso, o valor original é substituído. Esse método passa `pvarDst` para a função `VariantClear` e, consequentemente, `pvarDst` deve ser inicializado com um valor válido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IVariantChangeType](../../winscript/reference/ivariantchangetype-interface.md)

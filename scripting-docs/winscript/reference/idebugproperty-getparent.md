@@ -1,5 +1,5 @@
 ---
-title: IDebugProperty::GetParent | Microsoft Docs
+title: 'IDebugProperty:: GetParent | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2aeac5e23ec38aa79e5ff5057847429ac97dbb23
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5ca05935ea3565cb8e6237c36ed60b412bdcd418
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62979130"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72562354"
 ---
 # <a name="idebugpropertygetparent"></a>IDebugProperty::GetParent
-Obtém a propriedade pai de uma propriedade.  
+Obtém a propriedade Parent de uma propriedade.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,10 +37,10 @@ HRESULT GetParent (
   
 #### <a name="parameters"></a>Parâmetros  
  `ppParent`  
- [out] Retorna o `IDebugProperty` interface que representa o pai da propriedade.  
+ fora Retorna a interface `IDebugProperty` que representa o pai da propriedade.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente `S_OK`.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna um `HRESULT` válido, geralmente `S_OK`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)

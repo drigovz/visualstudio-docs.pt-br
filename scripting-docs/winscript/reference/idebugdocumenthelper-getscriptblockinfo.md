@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::GetScriptBlockInfo | Microsoft Docs
+title: 'IDebugDocumentHelper:: GetScriptBlockInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1984cdc19beb883dd7ee82f58497b11a8d781b0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5a92aa00d7997ceccc583c88a070f6fbc7d4359d
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62549709"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576092"
 ---
 # <a name="idebugdocumenthelpergetscriptblockinfo"></a>IDebugDocumentHelper::GetScriptBlockInfo
 Recupera o intervalo de caracteres e o mecanismo de script correspondente a um bloco de script.  
@@ -40,18 +40,18 @@ HRESULT GetScriptBlockInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `dwSourceContext`  
- [in] O contexto de origem para o bloco de script.  
+ no O contexto de origem do bloco de script.  
   
  `ppasd`  
- [out] O mecanismo de script para este bloco de script.  
+ fora O mecanismo de script para este bloco de script.  
   
  `piCharPos`  
- [out] Local do início do bloco de script.  
+ fora Local do início do bloco de script.  
   
  `cChars`  
- [out] Número de caracteres no bloco de script.  
+ fora Número de caracteres no bloco de script.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

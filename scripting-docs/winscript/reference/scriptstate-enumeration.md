@@ -1,5 +1,5 @@
 ---
-title: Enumeração SCRIPTSTATE | Microsoft Docs
+title: Enumeração de SCRIPTstate | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6a05c5e73d26a8daa9e46c317422d85d1c40be
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 10dd6366e2d0783ec2e9d6bdadc001e9f999901e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840155"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575679"
 ---
 # <a name="scriptstate-enumeration"></a>Enumeração SCRIPTSTATE
-Especifica o estado de um mecanismo de script. Essa enumeração é usada pelo [IActiveScript::GetScriptState](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: Setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) , e [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) métodos.  
+Especifica o estado de um mecanismo de script. Essa enumeração é usada pelos métodos [IActiveScript:: Getscriptstate](../../winscript/reference/iactivescript-getscriptstate.md) , [IActiveScript:: setscriptstate](../../winscript/reference/iactivescript-setscriptstate.md) e [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -44,12 +44,12 @@ typedef enum tagSCRIPTSTATE {
   
 |||  
 |-|-|  
-|SCRIPTSTATE_UNINITIALIZED|Script foi criado, mas ainda não foi inicializada usando um `IPersist*` interface e [IActiveScript:: Setscriptsite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
-|SCRIPTSTATE_INITIALIZED|Script tenha sido inicializado, mas não está em execução (conectar-se a outros objetos ou eventos de coletor) ou executar qualquer código. Código pode ser consultado para execução chamando o [iactivescriptparse:: Parsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) método.|  
-|SCRIPTSTATE_STARTED|Script pode executar o código, mas ainda não é coleta os eventos de objetos adicionados pela [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) método.|  
-|SCRIPTSTATE_CONNECTED|Script é carregado e conectado para eventos de coletor.|  
-|SCRIPTSTATE_DISCONNECTED|Script é carregado e tem um estado de tempo de execução, mas fica temporariamente desconectado de eventos de coletor.|  
-|SCRIPTSTATE_CLOSED|Script foi fechado. O mecanismo de script não funciona e retorna erros para a maioria dos métodos.|  
+|SCRIPTSTATE_UNINITIALIZED|O script acabou de ser criado, mas ainda não foi inicializado usando uma interface `IPersist*` e [IActiveScript:: SetScriptSite](../../winscript/reference/iactivescript-setscriptsite.md) .|  
+|SCRIPTSTATE_INITIALIZED|O script foi inicializado, mas não está em execução (conectando-se a outros objetos ou eventos de coletor) ou executando qualquer código. O código pode ser consultado para execução chamando o método [IActiveScriptParse::P arsescripttext](../../winscript/reference/iactivescriptparse-parsescripttext.md) .|  
+|SCRIPTSTATE_STARTED|O script pode executar código, mas ainda não está coletando os eventos de objetos adicionados pelo método [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .|  
+|SCRIPTSTATE_CONNECTED|O script é carregado e conectado para eventos de coletor.|  
+|SCRIPTSTATE_DISCONNECTED|O script é carregado e tem um estado de execução de tempo de execução, mas está temporariamente desconectado dos eventos de coletor.|  
+|SCRIPTSTATE_CLOSED|O script foi fechado. O mecanismo de script não funciona e retorna erros para a maioria dos métodos.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e códigos de erro do script ativo](../../winscript/reference/active-script-constants-enumerations-and-error-codes.md)

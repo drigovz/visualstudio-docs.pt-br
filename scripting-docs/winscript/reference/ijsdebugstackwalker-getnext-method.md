@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugstackwalker:: GetNext | Microsoft Docs'
+title: 'Método IJsDebugStackWalker:: GetNext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ba8931a01f3afe05f791f4d89da60a9354868215
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa667402b46a3404c31dfe26307a5893c68ffcc0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977868"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574026"
 ---
 # <a name="ijsdebugstackwalkergetnext-method"></a>Método IJsDebugStackWalker::GetNext
 Obtém o próximo quadro.  
@@ -35,15 +35,15 @@ HRESULT GetNext(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppFrame`  
- [out] Objeto que representa o quadro de pilhas.  
+ fora Objeto que representa o quadro de pilha.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retornará E_JsDEBUG_OUTSIDE_OF_VM quando não há nenhum quadro de pilha mais a serem enumerados  
+ Retorna E_JsDEBUG_OUTSIDE_OF_VM quando não há mais quadros de pilha a serem enumerados  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugStackWalker](../../winscript/reference/ijsdebugstackwalker-interface.md)

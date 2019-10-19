@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationThread::SetNextStatement | Microsoft Docs
+title: 'IRemoteDebugApplicationThread:: SetNextStatement | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c4b19322a15e92adcf2609c479af6b21e2078bd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 71e690d0e5b7567aabc88aabde907b67517f12aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62788134"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575514"
 ---
 # <a name="iremotedebugapplicationthreadsetnextstatement"></a>IRemoteDebugApplicationThread::SetNextStatement
-Execução de força mais próximo possível para o contexto de código fornecido, continue no contexto do quadro especificado.  
+Força a execução a continuar o mais próximo possível do contexto de código fornecido, no contexto do determinado quadro.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT SetNextStatement(
   
 #### <a name="parameters"></a>Parâmetros  
  `pStackFrame`  
- [in] O objeto de quadro de pilha. Esse argumento pode ser NULL, o que implica que o quadro de pilhas atual deve ser usado.  
+ no O objeto de quadro de pilha. Esse argumento pode ser nulo, o que implica que o quadro de pilhas atual deve ser usado.  
   
  `pCodeContext`  
- [in] O contexto de código. Esse argumento pode ser NULL, o que implica que o contexto de código atual deve ser usado.  
+ no O contexto do código. Esse argumento pode ser nulo, o que implica que o contexto do código atual deve ser usado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,7 +51,7 @@ HRESULT SetNextStatement(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método força a execução continue mais próximo possível para o contexto de código especificado pelo `pCodeContext`, no contexto do quadro especificado pela `pStackFrame`. Um desses argumentos podem ser `NULL`, que representa o quadro atual ou o contexto.  
+ Esse método força a execução a continuar o mais próximo possível do contexto de código especificado por `pCodeContext`, no contexto do quadro especificado por `pStackFrame`. Qualquer um desses argumentos pode ser `NULL`, representando o quadro ou contexto atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationThread](../../winscript/reference/iremotedebugapplicationthread-interface.md)

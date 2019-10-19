@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::GetChild | Microsoft Docs
+title: 'IScriptNode:: GetChild | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 78b5c84c6ed9b3de9593f0d6ff02df93a0e9ba77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 27ddde527be1ea4148e4166581ab2cb1a71d15f7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787124"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573560"
 ---
 # <a name="iscriptnodegetchild"></a>IScriptNode::GetChild
 Retorna o filho que está no índice especificado no nó.  
@@ -38,16 +38,16 @@ HRESULT GetChild(
   
 #### <a name="parameters"></a>Parâmetros  
  `isn`  
- [in] O índice do filho no pai.  
+ no O índice do filho no pai.  
   
  `ppsn`  
- [out] O endereço de uma variável que recebe um ponteiro para o `IScriptNode` interface da instância filho.  
+ fora O endereço de uma variável que recebe um ponteiro para a interface de `IScriptNode` da instância filho.  
   
- Para `IScriptNode` objetos que representam uma página da Web, este parâmetro retorna um objeto que contém um bloco de script.  
+ Para `IScriptNode` objetos que representam uma página da Web, esse parâmetro retorna um objeto que contém um bloco de script.  
   
  Para `IScriptEntry` objetos que especificam um bloco de script, esse parâmetro retorna um objeto que especifica uma função.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,7 +55,7 @@ HRESULT GetChild(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Para `IScriptEntry` objetos que especificam um objeto de função e para `IScriptScriptlet` objetos, esse método falhar porque não existem entradas filho.  
+ Para `IScriptEntry` objetos que especificam um objeto de função e para `IScriptScriptlet` objetos, esse método falha porque não há entradas filhas.  
   
 ## <a name="see-also"></a>Consulte também  
  [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)

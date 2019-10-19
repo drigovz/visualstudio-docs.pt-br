@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl2::PrepareProfilerStop | Microsoft Docs
+title: IActiveScriptProfilerControl2::P repareProfilerStop | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -13,15 +13,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 11a32f36ec6eddcc06faa77e093f19e8df503fa4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24d4d73e0263882ad028ea66d3fac5e24f3af9ba
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968757"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571437"
 ---
 # <a name="iactivescriptprofilercontrol2prepareprofilerstop"></a>IActiveScriptProfilerControl2::PrepareProfilerStop
-Notifica o criador de perfil que você pretende parar criação de perfil em todos os mecanismos de script aplicáveis. Usando esse método, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] estiver em execução quando você interrompe a criação de perfil.  
+Notifica o criador de perfil de que você vai parar a criação de perfil em todos os mecanismos de script aplicáveis. Usando esse método, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] estiver em execução quando você parar a criação de perfil.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -30,21 +30,21 @@ HRESULT PrepareProfilerStop();
 ```  
   
 #### <a name="parameters"></a>Parâmetros  
- O método não leva nenhum parâmetro.  
+ O método não pega nenhum parâmetro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um HRESULT. Os valores possíveis são:  
   
 |Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|O método foi bem-sucedido.|  
 |`E_FAIL`|Não foi possível iniciar a criação de perfil.|  
-|`S_FALSE`|Criação de perfil foi interrompida quando um script não estava em execução.|  
-|`ACTIVPROF_E_PROFILER_ABSENT`|Criação de perfil não está habilitada.|  
+|`S_FALSE`|A criação de perfil foi interrompida quando um script não estava em execução.|  
+|`ACTIVPROF_E_PROFILER_ABSENT`|A criação de perfil não está habilitada.|  
   
 ## <a name="remarks"></a>Comentários  
- Chamar `IActiveScriptProfilerControl2::PrepareProfilerStop` garante que os eventos para as funções na pilha de chamadas são enviados. Esse método deve ser chamado antes de interromper a criação de perfil em qualquer mecanismo de script que está na guia atual. O método pode ser chamado para qualquer mecanismo de script.  
+ Chamar `IActiveScriptProfilerControl2::PrepareProfilerStop` garante que os eventos para funções na pilha de chamadas sejam enviados. Esse método deve ser chamado antes de você parar a criação de perfil em qualquer mecanismo de script que esteja na guia atual. O método pode ser chamado para qualquer mecanismo de script.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)   
+ [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md)    
  [Interface IActiveScriptProfilerControl2](../../winscript/reference/iactivescriptprofilercontrol2-interface.md)

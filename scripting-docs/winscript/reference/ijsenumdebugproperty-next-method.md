@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsenumdebugproperty:: Next | Microsoft Docs'
+title: 'Método IJsEnumDebugProperty:: Next | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3ec6a1dded8c24de06a5746261a19b6609a97ada
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 48c4506d783093395b2d88b7a71d56e3a89d24e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977533"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573986"
 ---
 # <a name="ijsenumdebugpropertynext-method"></a>Método IJsEnumDebugProperty::Next
-Lê propriedades para este objeto.  
+Lê as propriedades deste objeto.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,18 +37,18 @@ HRESULT Next(
   
 #### <a name="parameters"></a>Parâmetros  
  `count`  
- [in] O número de propriedades a serem lidas.  
+ no O número de propriedades a serem lidas.  
   
  `ppDebugProperty`  
- [out] Objeto que representa o navegador de propriedade.  
+ fora Objeto que representa o navegador de propriedades.  
   
  `pActualCount`  
- [out] O número real de propriedades do objeto.  
+ fora O número real de propriedades do objeto.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsEnumDebugProperty](../../winscript/reference/ijsenumdebugproperty-interface.md)

@@ -13,22 +13,22 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3691a874121c00dcccc69958eb5746a2c1d78122
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1ee680a3d00c6736549b03ce8fee5593a7a8c5af
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992023"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575904"
 ---
 # <a name="iactivescriptsitewindow"></a>IActiveScriptSiteWindow
-Essa interface é implementada por hosts que dão suporte a uma interface do usuário no mesmo objeto como [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Hosts que não dão suporte a uma interface do usuário, como servidores, não implementaria o `IActiveScriptSiteWindow` interface. O mecanismo de script acessa essa interface chamando `QueryInterface` de `IActiveScriptSite`.  
+Essa interface é implementada por hosts que dão suporte a uma interface do usuário no mesmo objeto que [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md) . Os hosts que não dão suporte a uma interface do usuário, como servidores, não implementarão a interface `IActiveScriptSiteWindow`. O mecanismo de script acessa essa interface chamando `QueryInterface` de `IActiveScriptSite`.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
 |[IActiveScriptSiteWindow::GetWindow](../../winscript/reference/iactivescriptsitewindow-getwindow.md)|Recupera o identificador de janela que pode atuar como o proprietário de uma janela pop-up que o mecanismo de script deve exibir.|  
-|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Faz com que o host habilitar ou desabilitar a janela principal, bem como todas as caixas de diálogo sem janela restrita.|  
+|[IActiveScriptSiteWindow::EnableModeless](../../winscript/reference/iactivescriptsitewindow-enablemodeless.md)|Faz com que o host habilite ou desabilite sua janela principal, bem como qualquer caixa de diálogo sem janela restrita.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Interfaces de script ativo](../../winscript/reference/active-script-interfaces.md)

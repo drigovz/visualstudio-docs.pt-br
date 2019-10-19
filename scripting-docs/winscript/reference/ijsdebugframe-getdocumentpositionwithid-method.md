@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugframe:: Getdocumentpositionwithid | Microsoft Docs'
+title: 'Método IJsDebugFrame:: GetDocumentPositionWithId | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 741fe323e787c57f5f05a25461eae87c98dba70f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f35f6fb84db95950fe83d571c9f5e5e7db9de1e8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558132"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573855"
 ---
 # <a name="ijsdebugframegetdocumentpositionwithid-method"></a>Método IJsDebugFrame::GetDocumentPositionWithId
-Retorna a posição atual deste quadro de pilha dentro do documento de nível de usuário.  
+Retorna a posição atual deste quadro de pilhas no documento de nível de usuário.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,18 +37,18 @@ HRESULT GetDocumentPositionWithId(
   
 #### <a name="parameters"></a>Parâmetros  
  `pDocumentId`  
- [out] ID exclusiva para um documento de origem (ponteiro para o IDebugDocumentText).  
+ fora ID exclusiva de um documento de origem (ponteiro para o IDebugDocumentText).  
   
  `pCharacterOffset`  
- [out] O deslocamento de caracteres baseado em zero do início do script.  
+ fora O deslocamento de caractere baseado em zero a partir do início do script.  
   
  `pStatementCharCount`  
- [out] O comprimento da instrução atual, que começa em * pCharacterOffset, em caracteres.  
+ fora O comprimento da instrução atual, que começa em * pCharacterOffset, em caracteres.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugFrame](../../winscript/reference/ijsdebugframe-interface.md)

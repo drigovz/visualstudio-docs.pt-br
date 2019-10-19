@@ -1,5 +1,5 @@
 ---
-title: Não é possível ter 'continue' fora do loop | Microsoft Docs
+title: Não é possível ter ' continue ' fora do loop | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,37 +14,37 @@ ms.assetid: d2d95259-b2bc-4069-9876-60c30ad600a3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 804c23c45379a10d91c2888ac321c18f2067a1e4
-ms.sourcegitcommit: 75807551ea14c5a37aa07dd93a170b02fc67bc8c
+ms.openlocfilehash: e19c85baf8576d1c1db411146c80a53c6a819cdb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 07/11/2019
-ms.locfileid: "67825700"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572372"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Não é possível ter 'continue' fora do loop
-Você tentou usar o **continuar** instrução fora de um loop. O **continuar** instrução pode ser usada somente dentro do corpo de r:  
+Você tentou usar a instrução **continue** fora de um loop. A instrução **continue** pode ser usada somente dentro do corpo de um:  
   
-- `do-while` executar um loop,  
+- loop de `do-while`,  
   
-- `while` executar um loop,  
+- loop de `while`,  
   
-- **para** loop,  
+- loop **for** ,  
   
-- **para/no** loop.  
+- loop **for/in** .  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Verifique se o **continuar** instrução aparece dentro do corpo de r:  
+- Certifique-se de que a instrução **continue** apareça no corpo de um:  
   
-  - `do-while` executar um loop,  
+  - loop de `do-while`,  
 
-  - `while` executar um loop,  
+  - loop de `while`,  
 
-  - **para** loop,  
+  - loop **for** ,  
 
-  - **para/no** loop.  
+  - loop **for/in** .  
   
 ## <a name="see-also"></a>Consulte também  
- [Instrução continue](../../javascript/reference/continue-statement-javascript.md)   
- [Controlando o fluxo de programa](../../javascript/controlling-program-flow-javascript.md)   
+ [instrução continue](../../javascript/reference/continue-statement-javascript.md)    
+ [Controlando o fluxo do programa](../../javascript/controlling-program-flow-javascript.md)    
  [Solucionar problemas com scripts](../../javascript/advanced/troubleshooting-your-scripts-javascript.md)

@@ -1,5 +1,5 @@
 ---
-title: IScriptNode::Alive | Microsoft Docs
+title: 'IScriptNode:: Alive | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da0a55d26b5ab643670ba7ed51e576eeb89d8b98
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b7e0216824506ee942b42a42d5c3c4475f63f9e2
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62787167"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573625"
 ---
 # <a name="iscriptnodealive"></a>IScriptNode::Alive
 Indica se um objeto ainda está ativo.  
@@ -36,7 +36,7 @@ HRESULT Alive();
 #### <a name="parameters"></a>Parâmetros  
  O método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -44,7 +44,7 @@ HRESULT Alive();
 |`S_OK`|O nó de script ainda está ativo.|  
   
 ## <a name="remarks"></a>Comentários  
- Se o objeto não estiver ativo, o modelo de objeto de componente (COM) retornará um erro do proxy marshaling de chamadas para esse método.  
+ Se o objeto não estiver ativo, Component Object Model (COM) retornará um erro do proxy de marshaling para chamadas para esse método.  
   
 ## <a name="see-also"></a>Consulte também  
  [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)

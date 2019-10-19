@@ -1,5 +1,5 @@
 ---
-title: Matriz ou argumentos esperado do objeto | Microsoft Docs
+title: Objeto de matriz ou argumentos esperado | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,21 +14,21 @@ ms.assetid: 22b83e2f-8916-46db-8d8c-50c8481b7c90
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 403972bfc7a8f6c061713dba4138ef6ccb08444a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6140dc9ef151577346dd2d5d321f1f2f5fc7de33
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62817983"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576030"
 ---
 # <a name="array-or-arguments-object-expected"></a>Objeto de matriz ou argumentos esperado
-Você não forneceu uma matriz como um argumento. Esse erro se aplica para o **Function.prototype.apply** somente no método. Se especificado, o segundo argumento para essa função deve ser um `Array` objeto ou uma **argumentos** objeto.  
+Você não forneceu uma matriz como um argumento. Esse erro se aplica somente ao método **Function. prototype. Apply** . Se especificado, o segundo argumento para essa função deve ser um objeto `Array` ou um objeto **arguments** .  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Especifique um `Array` ou um **argumentos** objeto como o segundo argumento.  
+- Especifique um `Array` ou um objeto **arguments** como o segundo argumento.  
   
 ## <a name="see-also"></a>Consulte também  
- [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)   
- [Método Apply (Function)](../../javascript/reference/apply-method-function-javascript.md)   
+ [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)    
+ [método Apply (função)](../../javascript/reference/apply-method-function-javascript.md)    
  [Funções](../../javascript/functions-javascript.md)

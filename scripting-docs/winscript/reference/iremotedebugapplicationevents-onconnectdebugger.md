@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplicationEvents::OnConnectDebugger | Microsoft Docs
+title: 'IRemoteDebugApplicationEvents:: OnConnectDebugger | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d720df480133e10b1556939531d5d9a8427d23f3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: f36199ec50e39daea6e3ec1dcc4f126e1416073b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62943659"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575625"
 ---
 # <a name="iremotedebugapplicationeventsonconnectdebugger"></a>IRemoteDebugApplicationEvents::OnConnectDebugger
-Lida com uma depurador conecte-se o evento.  
+Manipula um evento de conexão do depurador.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT OnConnectDebugger(
   
 #### <a name="parameters"></a>Parâmetros  
  `pad`  
- [in] O depurador conectado recentemente.  
+ no O depurador conectado recentemente.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT OnConnectDebugger(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método trata o depurador conecte-se o evento.  
+ Esse método manipula o evento de conexão do depurador.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IRemoteDebugApplicationEvents](../../winscript/reference/iremotedebugapplicationevents-interface.md)

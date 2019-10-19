@@ -1,5 +1,5 @@
 ---
-title: IScriptScriptlet::SetEventName | Microsoft Docs
+title: 'IScriptScriptlet:: seteventname | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a6bfa0bd69673ec8bbfc65f7f171dfbb933c7a68
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5283646838f02cdc1c5ab27f63fd237d698fc6ed
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62786718"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571898"
 ---
 # <a name="iscriptscriptletseteventname"></a>IScriptScriptlet::SetEventName
-Define o nome do evento que está associado com o scriptlet.  
+Define o nome do evento que está associado ao scriptlet.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,9 +37,9 @@ HRESULT SetEventName(
   
 #### <a name="parameters"></a>Parâmetros  
  `psz`  
- [in] Um buffer que contém o nome do evento que está associado com o `IScriptScriptlet` objeto.  
+ no Um buffer que contém o nome do evento que está associado ao objeto `IScriptScriptlet`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

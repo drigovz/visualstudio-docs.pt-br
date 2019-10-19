@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd90cb5eb55143a4a1916dfcee3f108ba7afb759
-ms.sourcegitcommit: 08c144d290da373df841f04fc799e3133540a541
-ms.translationtype: HT
+ms.openlocfilehash: bbd99d260ba61d9e3ae9e877ecc1cefb1a22892e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72536038"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72569070"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -95,7 +95,7 @@ Nas condições 2 e 3, às vezes, a exceção é capturada pelo código gerencia
 
 **Redirecionar todo o texto da janela de saída para a janela imediata**: envia todas as mensagens do depurador que normalmente apareceriam na janela de **saída** para a janela **imediata** .
 
-**Mostrar estrutura bruta de objetos em janelas de variáveis**: desativa todas as personalizações de exibição de estrutura de objeto. Para obter mais informações sobre as personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md).
+**Mostrar estrutura bruta de objetos em janelas de variáveis**: desativa todas as personalizações de exibição de estrutura de objeto. Para obter mais informações sobre as personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-managed-objects.md).
 
 **Suprimir a otimização JIT na carga do módulo (somente gerenciado)** : desabilita a otimização JIT do código gerenciado quando um módulo é carregado e JIT é compilado enquanto o depurador é anexado. Desativar a otimização pode facilitar a depuração de alguns problemas, embora às custas de desempenho. Se você estiver usando Apenas Meu Código, a supressão da otimização de JIT poderá fazer com que código que não seja do usuário apareça como código do usuário ("Meu Código"). Para obter mais informações, consulte [otimização e depuração JIT](../debugger/jit-optimization-and-debugging.md).
 

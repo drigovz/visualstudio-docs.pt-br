@@ -13,14 +13,14 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f34121ca50ae2467addb29809e7a3792063642ec
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1dd0bbf08b6ddfdcfbffa494fdda9842004839b0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62840116"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572996"
 ---
-# <a name="sourcetextattr-enumeration"></a>Enumeração SOURCE_TEXT_ATTR
+# <a name="source_text_attr-enumeration"></a>Enumeração SOURCE_TEXT_ATTR
 Descrevem os atributos de um único caractere de texto de origem.  
   
 ## <a name="syntax"></a>Sintaxe  
@@ -33,22 +33,22 @@ enum enum_SOURCE_TEXT_ATTR{    SOURCETEXT_ATTR_KEYWORD    = 0x0001,    SOURCETEX
   
 |Membro|Valor|Descrição|  
 |------------|-----------|-----------------|  
-|SOURCETEXT_ATTR_KEYWORD|0x0001|O caractere é parte de uma palavra-chave language, por exemplo, a palavra-chave VBScript `While`.|  
+|SOURCETEXT_ATTR_KEYWORD|0x0001|O caractere é parte de uma palavra-chave de linguagem, por exemplo, a palavra-chave VBScript `While`.|  
 |SOURCETEXT_ATTR_COMMENT|0x0002|O caractere é parte de um bloco de comentário.|  
-|SOURCETEXT_ATTR_NONSOURCE|0x0004|O caractere não é parte do texto de origem de linguagem compilada. Por exemplo, o HTML ao redor de um bloco de script.|  
-|SOURCETEXT_ATTR_OPERATOR|0x0008|O caractere é parte de um operador de linguagem. Por exemplo:, o operador aritmético **+**.|  
-|SOURCETEXT_ATTR_NUMBER|0x0010|O caractere é parte de uma constante numérica da linguagem.  Por exemplo, a constante 3,14159.|  
-|SOURCETEXT_ATTR_STRING|0x0020|O caractere é parte de uma constante de cadeia de caracteres de idioma. Por exemplo, a cadeia de caracteres "Hello World".|  
+|SOURCETEXT_ATTR_NONSOURCE|0x0004|O caractere não faz parte do texto de origem da linguagem compilada. Por exemplo, o HTML em torno de um bloco de script.|  
+|SOURCETEXT_ATTR_OPERATOR|0x0008|O caractere é parte de um operador de linguagem. Por exemplo:, o operador aritmético **+** .|  
+|SOURCETEXT_ATTR_NUMBER|0x0010|O caractere é parte de uma constante numérica de idioma.  Por exemplo, a constante 3,14159.|  
+|SOURCETEXT_ATTR_STRING|0x0020|O caractere é parte de uma constante de cadeia de caracteres de linguagem. Por exemplo, a cadeia de caracteres "Olá, Mundo".|  
 |SOURCETEXT_ATTR_FUNCTION_START|0x0040|O caractere indica o início de um bloco de função|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, o `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes`, e `IActiveScriptDebug::GetScriptTextAttributes` métodos retornam um atributo de texto por caractere, a menos que:  
+ Normalmente, os métodos `IDebugDocumentHost::GetScriptTextAttributes`, `IActiveScriptDebug::GetScriptletTextAttributes` e `IActiveScriptDebug::GetScriptTextAttributes` retornam um atributo de texto por caractere, a menos que:  
   
-- O sinalizador GETATTRTYPE_DEPSCAN for definido, caso em que o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
+- O sinalizador GETATTRTYPE_DEPSCAN é definido; nesse caso, o método pode retornar os sinalizadores SOURCETEXT_ATTR_IDENTIFIER e SOURCETEXT_ATTR_MEMBERLOOKUP,  
   
-- O sinalizador GETATTRFLAG_THIS for definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
+- O sinalizador GETATTRFLAG_THIS é definido; nesse caso, o método pode retornar o sinalizador SOURCETEXT_ATTR_THIS,  
   
-- O sinalizador GETATTRFLAG_HUMANTEXT está definido, caso em que o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
+- O sinalizador GETATTRFLAG_HUMANTEXT é definido; nesse caso, o método pode retornar o sinalizador SOURCETEXT_ATTR_HUMANTEXT.  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugExpression::QueryIsComplete | Microsoft Docs
+title: 'IDebugExpression:: QueryIsComplete | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0c74ff962585d4295ea4c2d21a1ee31fdfc817af
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c260ac5c02052f11f70e479588d65b71b4971267
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946310"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571970"
 ---
 # <a name="idebugexpressionqueryiscomplete"></a>IDebugExpression::QueryIsComplete
-Determina se a operação for concluída.  
+Determina se a operação foi concluída.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,16 +36,16 @@ HRESULT QueryIsComplete();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
-|`S_OK`|O método foi bem-sucedido e a operação for concluída.|  
+|`S_OK`|O método foi bem-sucedido e a operação foi concluída.|  
 |`S_FALSE`|A operação ainda está pendente.|  
   
 ## <a name="remarks"></a>Comentários  
- Este método determina se a operação for concluída.  
+ Esse método determina se a operação foi concluída.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugExpression](../../winscript/reference/idebugexpression-interface.md)

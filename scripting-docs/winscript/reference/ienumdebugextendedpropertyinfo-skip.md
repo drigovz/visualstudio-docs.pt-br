@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExtendedPropertyInfo::Skip | Microsoft Docs
+title: 'IEnumDebugExtendedPropertyInfo:: Skip | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 87913f15f8799be0ad3f6616eeea53a8a627e3d0
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8e5c187f3484154a2758b67300c98d4cb9fc9023
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963449"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574235"
 ---
 # <a name="ienumdebugextendedpropertyinfoskip"></a>IEnumDebugExtendedPropertyInfo::Skip
-Ignora um número especificado de `ExtendedDebugPropertyInfo` estruturas em uma sequência de enumeração.  
+Ignora um número especificado de estruturas de `ExtendedDebugPropertyInfo` em uma sequência de enumeração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -37,11 +37,11 @@ HRESULT Skip(
   
 #### <a name="parameters"></a>Parâmetros  
  `celt`  
- [in] O número de `ExtendedDebugPropertyInfo` estruturas na sequência de enumeração para ignorar.  
+ no O número de estruturas de `ExtendedDebugPropertyInfo` na sequência de enumeração a serem ignoradas.  
   
-## <a name="return-value"></a>Valor de retorno  
- Retorna um válidas `HRESULT`, normalmente `S_OK`. Retorna `S_FALSE` e define o ponteiro do elemento atual até o final da enumeração se `celt` é maior que o número de elementos à esquerda no enumerador.  
+## <a name="return-value"></a>Valor retornado  
+ Retorna um `HRESULT` válido, geralmente `S_OK`. Retorna `S_FALSE` e define o ponteiro do elemento atual como o final da enumeração se `celt` for maior que o número de elementos restantes no enumerador.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)   
+ @No__t_1 de [interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
  [Estrutura ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)

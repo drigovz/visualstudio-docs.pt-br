@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptStats::GetStat | Microsoft Docs
+title: 'IActiveScriptStats:: getstat | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8befb3da4e4b6f060a5f58aedec3604afe70aefb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 096f1cf5b9bf8b5533bd5c36d33f014c747ff9aa
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992010"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72574345"
 ---
 # <a name="iactivescriptstatsgetstat"></a>IActiveScriptStats::GetStat
 Retorna uma das estatísticas de script padrão.  
@@ -39,20 +39,20 @@ HRESULT GetStat(
   
 #### <a name="parameters"></a>Parâmetros  
  `stid`  
- [in] Especifica qual estatística para retornar. Deve ser o valor:  
+ no Especifica qual estatística retornar. Deve ser o valor:  
   
 |Constante|Valor|Descrição|  
 |--------------|-----------|-----------------|  
-|SCRIPTSTAT_STATEMENT_COUNT|1|Retorne o número de instruções executadas desde que o script iniciado ou que as estatísticas foram redefinidas.|  
+|SCRIPTSTAT_STATEMENT_COUNT|1|Retorna o número de instruções executadas desde que o script foi iniciado ou as estatísticas foram redefinidas.|  
   
  `pluHi`  
- [out] Os 32 bits altos de um inteiro sem sinal de 64 bits que representa a estatística.  
+ fora Os bits de 32 altos de um inteiro sem sinal de 64 bits que representa a estatística.  
   
  `pluLo`  
- [out] Os 32 bits baixos de um inteiro sem sinal de 64 bits que representa a estatística.  
+ fora Os bits de 32 baixos de um inteiro sem sinal de 64 bits que representa a estatística.  
   
-## <a name="return-value"></a>Valor de retorno  
- O método retorna um `HRESULT`. Os valores possíveis incluem, mas não são limitados aos valores na tabela a seguir.  
+## <a name="return-value"></a>Valor retornado  
+ O método retorna um `HRESULT`. Os valores possíveis incluem, mas não se limitam aos valores na tabela a seguir.  
   
 |Valor|Descrição|  
 |-----------|-----------------|  
@@ -62,5 +62,5 @@ HRESULT GetStat(
  Esse método retorna uma das estatísticas de script padrão.  
   
 ## <a name="see-also"></a>Consulte também  
- [IActiveScriptStats::GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)   
+ [IActiveScriptStats:: GetStatEx](../../winscript/reference/iactivescriptstats-getstatex.md)    
  [IActiveScriptStats Interface](../../winscript/reference/iactivescriptstats-interface.md)

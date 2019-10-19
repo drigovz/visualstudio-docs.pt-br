@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::OnScriptTerminate | Microsoft Docs
+title: 'IActiveScriptSite:: OnScriptTerminate | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 664f974b26a2cae0d1e16d37dc3bc66e95993d6f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a715b39b07df4183d4ec542a1dd82b4229d1f41e
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992649"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570207"
 ---
 # <a name="iactivescriptsiteonscriptterminate"></a>IActiveScriptSite::OnScriptTerminate
-Informa ao host que o script tiver concluído a execução.  
+Informa ao host que o script concluiu a execução.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,16 +38,16 @@ HRESULT OnScriptTerminate(
   
 #### <a name="parameters"></a>Parâmetros  
  `pvarResult`  
- [in] Endereço de uma variável que contém o resultado do script, ou `NULL` se o script não produziu nenhum resultado.  
+ no Endereço de uma variável que contém o resultado do script ou `NULL` se o script não produziu nenhum resultado.  
   
  `pexcepinfo`  
- [in] Endereço de um `EXCEPINFO` estrutura que contém informações de exceção geradas quando o script é encerrado, ou `NULL` se nenhuma exceção foi gerada.  
+ no Endereço de uma estrutura de `EXCEPINFO` que contém informações de exceção geradas quando o script foi encerrado ou `NULL` se nenhuma exceção foi gerada.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna `S_OK` se houver êxito.  
   
 ## <a name="remarks"></a>Comentários  
- O mecanismo de script chama esse método antes de chamar o [IActiveScriptSite::OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) método com o sinalizador SCRIPTSTATE_INITIALIZED definido, é concluído. Esse método pode ser usado para retornar o status de conclusão e os resultados para o host. Observe que muitas linguagens de script, que são baseadas em eventos de coletor do host, têm períodos de vida que são definidos pelo host. Nesse caso, esse método nunca pode ser chamado.  
+ O mecanismo de script chama esse método antes da chamada para o método [IActiveScriptSite:: OnStateChange](../../winscript/reference/iactivescriptsite-onstatechange.md) , com o sinalizador SCRIPTSTATE_INITIALIZED definido, é concluído. Esse método pode ser usado para retornar o status de conclusão e os resultados para o host. Observe que muitas linguagens de script, que se baseiam em eventos de coletor do host, têm estendes que são definidas pelo host. Nesse caso, esse método nunca pode ser chamado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

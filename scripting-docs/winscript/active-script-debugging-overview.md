@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31fb3f5bf88b0caf179a43d02358bb6a9f1a2831
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a8c06477b7cd9d069e416cfd7d86a8cd0cb7bfd5
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62975784"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572274"
 ---
 # <a name="active-script-debugging-overview"></a>Visão geral de depuração de script ativo
 As interfaces de depuração de script ativo permitem a depuração com neutralidade de idioma e de host e dão suporte a uma ampla variedade de ambientes de desenvolvimento.  

@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextExternalAuthor::GetFileName | Microsoft Docs
+title: 'IDebugDocumentTextExternalAuthor:: GetFileName | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: edb988751b8a0c0e6450e1fa216a474df2e8c59d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c07752d357a261fbc4800c3217a63d3de9489d55
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978908"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575983"
 ---
 # <a name="idebugdocumenttextexternalauthorgetfilename"></a>IDebugDocumentTextExternalAuthor::GetFileName
 Retorna o nome do documento sem informações de caminho.  
@@ -37,9 +37,9 @@ HRESULT GetFileName(
   
 #### <a name="parameters"></a>Parâmetros  
  `pbstrShortName`  
- [out] Cadeia de caracteres que contém o nome curto do documento.  
+ fora Cadeia de caracteres que contém o nome curto do documento.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,7 +47,7 @@ HRESULT GetFileName(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método retorna o nome do documento sem informações de caminho. O nome curto é usado normalmente em caixas de diálogo.  
+ Esse método retorna o nome do documento sem informações de caminho. O nome curto normalmente é usado em caixas de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentTextExternalAuthor Interface](../../winscript/reference/idebugdocumenttextexternalauthor-interface.md)

@@ -11,35 +11,35 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e8f64f187638af7f9ab4bf6b80e88fe6992c78e6
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9ae520dcb36e00dfaba8702db6294a5a47484b0a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386083"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571718"
 ---
 # <a name="iactivescriptprofilercallback-interface"></a>Interface IActiveScriptProfilerCallback
-Fornece métodos que são usados pelo mecanismo de script para notificar um objeto do criador de perfil quando eventos ocorrerem. Essa interface é implementada pelo objeto do criador de perfil.  
+Fornece métodos que são usados pelo mecanismo de script para notificar um objeto de criador de perfil quando ocorrem eventos. Essa interface é implementada pelo objeto Profiler.  
   
 ## <a name="methods"></a>Métodos  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|Chamado para inicializar o objeto do criador de perfil sempre que a criação de perfil é iniciada em um mecanismo de script.|  
-|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|Chamado para liberar e liberar o objeto de criador de perfil sempre que a criação de perfil é interrompida em um mecanismo de script.|  
-|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|Notifica o criador de perfil para o script compilado do objeto que o script do mecanismo.|  
-|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|Notifica o criador de perfil de objeto do mecanismo de script encontrou uma função ao compilar um script.|  
-|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|Notifica o objeto de criador de perfil que o mecanismo de script está prestes a executar uma chamada de função não é uma chamada no modelo de objeto de documento (DOM).|  
-|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|Notifica o criador de perfil de objeto que o mecanismo de script terminar de executar uma função chamada que não é uma chamada no DOM.|  
+|[IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md)|Chamado para inicializar o objeto Profiler sempre que a criação de perfil é iniciada em um mecanismo de script.|  
+|[IActiveScriptProfilerCallback::Shutdown](../../winscript/reference/iactivescriptprofilercallback-shutdown.md)|Chamado para liberar e liberar o objeto Profiler sempre que a criação de perfil for interrompida em um mecanismo de script.|  
+|[IActiveScriptProfilerCallback::ScriptCompiled](../../winscript/reference/iactivescriptprofilercallback-scriptcompiled.md)|Notifica o objeto Profiler que o mecanismo de script compilou o script.|  
+|[IActiveScriptProfilerCallback::FunctionCompiled](../../winscript/reference/iactivescriptprofilercallback-functioncompiled.md)|Notifica o objeto Profiler que o mecanismo de script encontrou uma função ao compilar um script.|  
+|[IActiveScriptProfilerCallback::OnFunctionEnter](../../winscript/reference/iactivescriptprofilercallback-onfunctionenter.md)|Notifica o objeto Profiler que o mecanismo de script está prestes a executar uma chamada de função que não é uma chamada para o Modelo de Objeto do Documento (DOM).|  
+|[IActiveScriptProfilerCallback::OnFunctionExit](../../winscript/reference/iactivescriptprofilercallback-onfunctionexit.md)|Notifica o objeto Profiler de que o mecanismo de script concluiu a execução de uma chamada de função que não é uma chamada para o DOM.|  
   
 ## <a name="remarks"></a>Comentários  
- Notificação de chamadas de função no modelo de objeto de documento (DOM) é fornecida pelos [Interface IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md).  
+ A notificação de chamadas de função para o Modelo de Objeto do Documento (DOM) é fornecida pela [interface IActiveScriptProfilerCallback2](../../winscript/reference/iactivescriptprofilercallback2-interface.md).  
   
 > [!NOTE]
-> Para adicionar a capacidade de iniciar e parar a criação de perfil quando um script é executado, chame os métodos a seguir. Usando esses métodos, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] estiver em execução quando você iniciar ou parar a criação de perfil.  
+> Para adicionar a capacidade de iniciar e parar a criação de perfil quando um script estiver em execução, chame os métodos a seguir. Usando esses métodos, você pode obter a pilha de chamadas completa se [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] estiver em execução quando você iniciar ou parar a criação de perfil.  
 > 
-> - Chame [IActiveScriptProfilerControl2::CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar o criador de perfil que você tiver iniciado a criação de perfil.  
->   - Chame [IActiveScriptProfilerControl2::PrepareProfilerStop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar o criador de perfil que você irá parar em breve de criação de perfil.  
+> - Chame [IActiveScriptProfilerControl2:: CompleteProfilerStart](../../winscript/reference/iactivescriptprofilercontrol2-completeprofilerstart.md) para notificar o criador de perfil de que você iniciou a criação de perfis.  
+>   - Chame [IActiveScriptProfilerControl2::P repareprofilerstop](../../winscript/reference/iactivescriptprofilercontrol2-prepareprofilerstop.md) para notificar o criador de perfil de que você irá parar em breve a criação de perfil.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interfaces do criador de perfil de script ativo](../../winscript/reference/active-script-profiler-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptProfilerControl::StartProfiling | Microsoft Docs
+title: 'IActiveScriptProfilerControl:: StartProfiling | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 780886e4ca21abbe11580992244cee0d6a28b134
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: cfc59dd43ac3eed433f92af2cdd0aefe40392c4a
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62993131"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72571571"
 ---
 # <a name="iactivescriptprofilercontrolstartprofiling"></a>IActiveScriptProfilerControl::StartProfiling
-Inicia a criação de perfil no mecanismo de script. O mecanismo de script cria uma instância do objeto criador de perfil, fazendo uma chamada para [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
+Inicia a criação de perfil no mecanismo de script. O mecanismo de script cria uma instância do objeto Profiler fazendo uma chamada para [CoCreateInstance](https://docs.microsoft.com/windows/desktop/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,21 +36,21 @@ HRESULT StartProfiling(
   
 #### <a name="parameters"></a>Parâmetros  
  `clsidProfilerObject`  
- [in] Identificador de classe (CLSID) do objeto criador de perfil a ser criado.  
+ no Identificador de classe (CLSID) do objeto do criador de perfil a ser criado.  
   
  `dwEventMask`  
- [in] Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos no [enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
+ no Um bitmask de 4 bytes que especifica os tipos de eventos. Os bits são definidos na [Enumeração PROFILER_EVENT_MASK](../../winscript/reference/profiler-event-mask-enumeration.md).  
   
  `dwContext`  
- [in] Um valor de 4 bytes que é passado para o objeto de criador de perfil.  
+ no Um valor de 4 bytes que é passado para o objeto Profiler.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um HRESULT. Os valores possíveis são:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|O método foi bem-sucedido.|  
-|`ACTIVPROF_E_PROFILER_PRESENT`|Criação de perfil já está habilitada.|  
+|`ACTIVPROF_E_PROFILER_PRESENT`|A criação de perfil já está habilitada.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IActiveScriptProfilerControl](../../winscript/reference/iactivescriptprofilercontrol-interface.md)

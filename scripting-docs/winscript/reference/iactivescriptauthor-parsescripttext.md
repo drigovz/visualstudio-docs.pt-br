@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::ParseScriptText | Microsoft Docs
+title: IActiveScriptAuthor::P arseScriptText | Microsoft Docs
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fe6870f3b19c5727fdbea0418b8373b990cb671a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 90d5ab0fa700ed29b5fb37b1c48617cedec871b9
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955051"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576147"
 ---
 # <a name="iactivescriptauthorparsescripttext"></a>IActiveScriptAuthor::ParseScriptText
-Analisa o texto do script, adiciona o texto para o mecanismo de criação de script e cria um `IScriptEntry` objeto que corresponde ao bloco de script.  
+Analisa o texto do script, adiciona o texto ao mecanismo de criação de scripts e cria um `IScriptEntry` objeto que corresponde ao bloco de script.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -41,21 +41,21 @@ HRESULT ParseScriptText(
   
 #### <a name="parameters"></a>Parâmetros  
  `pszCode`  
- [in] O texto do script para analisar.  
+ no O texto do script a ser analisado.  
   
  `pszItemName`  
- [in] O endereço do buffer que contém o nome do item associado com o bloco de script.  
+ no O endereço de buffer que contém o nome do item associado ao bloco de script.  
   
  `pszDelimiter`  
- [in] O endereço do delimitador de fim do bloco de script. Quando `pszCode` é analisado de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples), para detectar o fim do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para identificar o fim do bloco de script.  
+ no O endereço do delimitador de bloco de fim do script. Quando `pszCode` é analisada a partir de um fluxo de texto, o host normalmente usa um delimitador (como duas aspas simples) para detectar o final do bloco de script. Defina esse parâmetro como NULL se não houver nenhum delimitador para identificar o final do bloco de script.  
   
  `dwCookie`  
- [in] Um valor definido pelo aplicativo que está associado com o novo `IScriptEntry` objeto.  
+ no Um valor definido pelo aplicativo que está associado ao novo objeto `IScriptEntry`.  
   
  `dwFlags`  
- [in] Não usado.  
+ no Não usado.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  

@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptSite::GetItemInfo | Microsoft Docs
+title: 'IActiveScriptSite:: GetItemInfo | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 997245f8e4fd43ac2162587f07e4c8711af7caac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3c0458f42466a264c30a440b1b14a028a2457f12
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62992745"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570921"
 ---
 # <a name="iactivescriptsitegetiteminfo"></a>IActiveScriptSite::GetItemInfo
-Permite que o mecanismo de script obter informações sobre um item adicionado com o [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) método.  
+Permite que o mecanismo de script Obtenha informações sobre um item adicionado com o método [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -40,26 +40,26 @@ HRESULT GetItemInfo(
   
 #### <a name="parameters"></a>Parâmetros  
  `pstrName`  
- [in] O nome associado ao item, conforme especificado na [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) método.  
+ no O nome associado ao item, conforme especificado no método [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
  `dwReturnMask`  
- [in] Uma máscara de bits que especifica quais informações sobre o item devem ser retornadas. O mecanismo de script deve solicitar a quantidade mínima de informações possíveis porque alguns dos parâmetros de retorno (por exemplo, `ITypeInfo`) pode levar um tempo considerável para carregar ou gerar. Pode ser uma combinação dos seguintes valores:  
+ no Uma máscara de bits que especifica quais informações sobre o item devem ser retornadas. O mecanismo de script deve solicitar a quantidade mínima de informações possíveis porque alguns dos parâmetros de retorno (por exemplo, `ITypeInfo`) podem levar um tempo considerável para carregar ou gerar. Pode ser uma combinação dos seguintes valores:  
   
 |Valor|Significado|  
 |-----------|-------------|  
-|SCRIPTINFO_IUNKNOWN|Retorna o `IUnknown` interface para este item.|  
-|SCRIPTINFO_ITYPEINFO|Retorna o `ITypeInfo` interface para este item.|  
+|SCRIPTINFO_IUNKNOWN|Retorna a interface `IUnknown` para este item.|  
+|SCRIPTINFO_ITYPEINFO|Retorna a interface `ITypeInfo` para este item.|  
   
  `ppunkItem`  
- [out] Endereço de uma variável que recebe um ponteiro para o `IUnknown` interface associada com o item determinado. O mecanismo de script pode usar o `IUnknown::QueryInterface` método para obter o `IDispatch` interface para o item. Esse parâmetro recebe um valor nulo se `dwReturnMask` não inclui o valor SCRIPTINFO_IUNKNOWN. Além disso, ele recebe um valor nulo se não houver nenhum objeto associado com o nome do item; Esse mecanismo é usado para criar uma classe simples, quando o item nomeado foi adicionado com o sinalizador SCRIPTITEM_CODEONLY definido [Addnameditem](../../winscript/reference/iactivescript-addnameditem.md) método.  
+ fora Endereço de uma variável que recebe um ponteiro para a interface de `IUnknown` associada ao item especificado. O mecanismo de script pode usar o método `IUnknown::QueryInterface` para obter a interface `IDispatch` para o item. Esse parâmetro receberá NULL se `dwReturnMask` não incluir o valor SCRIPTINFO_IUNKNOWN. Além disso, ele receberá NULL se não houver nenhum objeto associado ao nome do item; Esse mecanismo é usado para criar uma classe simples quando o item nomeado foi adicionado com o sinalizador SCRIPTITEM_CODEONLY definido no método [IActiveScript:: AddNamedItem](../../winscript/reference/iactivescript-addnameditem.md) .  
   
  `ppTypeInfo`  
- [out] Endereço de uma variável que recebe um ponteiro para o `ITypeInfo` interface associado ao item. Esse parâmetro recebe um valor nulo se `dwReturnMask` não inclui o valor SCRIPTINFO_ITYPEINFO, ou se as informações de tipo não estão disponíveis para este item. Se as informações de tipo não estão disponíveis, o objeto não é possível obter eventos e associação de nome precisa ser realizada com o `IDispatch::GetIDsOfNames` método. Observe que o `ITypeInfo` interface recuperado descreve coclass do item (TKIND_COCLASS) porque o objeto pode dar suporte a várias interfaces e interfaces de evento. Se o item oferece suporte a `IProvideMultipleTypeInfo` interface, o `ITypeInfo` interface recuperado é o mesmo que o índice zero `ITypeInfo` que seria obtido usando o `IProvideMultipleTypeInfo::GetInfoOfIndex` método.  
+ fora Endereço de uma variável que recebe um ponteiro para a interface `ITypeInfo` associada ao item. Esse parâmetro receberá NULL se `dwReturnMask` não incluir o valor SCRIPTINFO_ITYPEINFO ou se as informações de tipo não estiverem disponíveis para este item. Se as informações de tipo não estiverem disponíveis, o objeto não poderá eventos de origem e a associação de nome deverá ser realizada com o método `IDispatch::GetIDsOfNames`. Observe que a interface `ITypeInfo` recuperada descreve a coclasse do item (TKIND_COCLASS) porque o objeto pode dar suporte a várias interfaces e interfaces de evento. Se o item der suporte à interface `IProvideMultipleTypeInfo`, a interface `ITypeInfo` recuperada será a mesma que a `ITypeInfo` de índice zero que seria obtida usando o método `IProvideMultipleTypeInfo::GetInfoOfIndex`.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Retorna um dos seguintes valores:  
   
-|Valor de retorno|Significado|  
+|Valor retornado|Significado|  
 |------------------|-------------|  
 |`S_OK`|Êxito.|  
 |`E_INVALIDARG`|Um argumento era inválido.|  
@@ -67,7 +67,7 @@ HRESULT GetItemInfo(
 |`TYPE_E_ELEMENTNOTFOUND`|Um item do nome especificado não foi encontrado.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método recupera apenas as informações indicadas pelo `dwReturnMask` parâmetro; Isso melhora o desempenho. Por exemplo, se um `ITypeInfo` interface não é necessária para um item, ele simplesmente não é especificado em `dwReturnMask`.  
+ Esse método recupera apenas as informações indicadas pelo parâmetro `dwReturnMask`; Isso melhora o desempenho. Por exemplo, se uma interface de `ITypeInfo` não for necessária para um item, ela simplesmente não será especificada em `dwReturnMask`.  
   
 ## <a name="see-also"></a>Consulte também  
  [IActiveScriptSite](../../winscript/reference/iactivescriptsite.md)

@@ -1,5 +1,5 @@
 ---
-title: IDebugApplication::StartDebugSession | Microsoft Docs
+title: 'IDebugApplication:: StartDebugSession | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a42fe61d67eedbe6f69350c7b5ec17726f43486e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a7fd27ec86485d39ee9f13997c1a2db7175afcde
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62990689"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72570988"
 ---
 # <a name="idebugapplicationstartdebugsession"></a>IDebugApplication::StartDebugSession
-Inicia o ambiente de desenvolvimento integrado (IDE) do depurador padrão e anexa a uma sessão de depuração para este aplicativo, se um já não está anexado.  
+Inicia o IDE (ambiente de desenvolvimento integrado) do depurador padrão e anexa uma sessão de depuração a esse aplicativo, se ainda não estiver anexado.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +36,7 @@ HRESULT StartDebugSession();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -44,7 +44,7 @@ HRESULT StartDebugSession();
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método é usado para implementar a depuração just-in-time.  
+ Esse método é usado para implementar a depuração Just-in-time.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md)

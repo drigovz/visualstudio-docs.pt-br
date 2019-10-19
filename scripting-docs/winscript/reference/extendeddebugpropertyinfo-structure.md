@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1fe0eef00d2bf064a8a002925f4ba5607d36f31c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 09f3c5a219fca9ec9b881e2ae8363aae4d48e03f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955168"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575829"
 ---
 # <a name="extendeddebugpropertyinfo-structure"></a>Estrutura ExtendedDebugPropertyInfo
-Estende o `DebugPropertyInfo` estrutura com membros adicionais para caracterizar a propriedade estendida.  
+Estende a estrutura de `DebugPropertyInfo` com membros adicionais para caracterizar a propriedade estendida.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -63,19 +63,19 @@ typedef struct ExtendedDebugPropertyInfo{
  O nome completo da propriedade.  
   
  `dwAttrib`  
- Uma enumeração que especifica os sinalizadores para os atributos de propriedade de depuração.  
+ Uma enumeração que especifica os sinalizadores para os atributos da propriedade de depuração.  
   
  `pDebugProp`  
  `IDebugProperty` objeto correspondente a este `ExtendedDebugPropertyInfo`.  
   
  `nDISPID`  
- A id de expedição.  
+ A ID de expedição.  
   
  `nType`  
  O tipo de propriedade estendida.  
   
  `varValue`  
- O valor da propriedade estendida se ele pode se ajustar na VARIANTE.  
+ O valor da propriedade estendida se ele puder caber em VARIANT.  
   
  `plbValue`  
  Os bytes de dados reais do valor da propriedade.  
@@ -84,8 +84,8 @@ typedef struct ExtendedDebugPropertyInfo{
  `IDebugExtendedProperty` objeto correspondente a este `ExtendedDebugPropertyInfo`.  
   
 ## <a name="see-also"></a>Consulte também  
- [Estrutura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)   
- [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)   
- [Interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)   
- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)   
+ @No__t_1 [estrutura DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
+ @No__t_1 de [interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+ @No__t_1 de [interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
+ @No__t_1 [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
  [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)

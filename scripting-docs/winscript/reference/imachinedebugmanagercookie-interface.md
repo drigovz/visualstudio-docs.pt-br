@@ -13,30 +13,30 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fdc02498360f2e3900012166474c5d1e35abd6ee
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6b39c286f389c99187b0f3250fc68af92ff5dcc8
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62977676"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72573881"
 ---
 # <a name="imachinedebugmanagercookie-interface"></a>Interface IMachineDebugManagerCookie
-Semelhante do `IMachineDebugManager` interface, o `IMachineDebugManagerCookie` interface dá suporte a cookies de depuração.  
+Semelhante à interface `IMachineDebugManager`, a interface `IMachineDebugManagerCookie` dá suporte a cookies de depuração.  
   
- Essa interface (juntamente com o `IDebugCookie` interface) que scripts sejam executados em um processo do depurador de script sem a necessidade de que o depurador manter o controle desses scripts.  
+ Essa interface (juntamente com a interface `IDebugCookie`) permite que os scripts sejam executados em um processo do depurador de script sem exigir que o depurador acompanhe esses scripts.  
   
- Um depurador de script chama o `IDebugCookie::SetDebugCookie` método sobre o processo de depuração PDM (Gerenciador de). Em seguida, o PDM envia esse cookie junto com qualquer solicitação para adicionar ou remover um aplicativo de script para ou da máquina depurar Manager (MDM), usando os métodos do `IMachineDebugManagerCookie` interface. O MDM notifica cada depurador da alteração, exceto aquele que tem esse cookie.  
+ Um depurador de script chama o método `IDebugCookie::SetDebugCookie` no Gerenciador de depuração de processo (PDM). Em seguida, o PDM envia esse cookie junto com qualquer solicitação para adicionar ou remover um aplicativo de script de ou para o MDM (Gerenciador de depuração de máquina), usando os métodos da interface `IMachineDebugManagerCookie`. Em seguida, o MDM notifica todos os depuradores da alteração, exceto para aquele que tem esse cookie.  
   
- Além dos métodos herdados de `IUnknown`, o `IMachineDebugManagerCookie` interface expõe os métodos a seguir.  
+ Além dos métodos herdados de `IUnknown`, a interface `IMachineDebugManagerCookie` expõe os métodos a seguir.  
   
-## <a name="methods-in-vtable-order"></a>Métodos na ordem de Vtable  
+## <a name="methods-in-vtable-order"></a>Métodos em ordem vtable  
   
 |Método|Descrição|  
 |------------|-----------------|  
-|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Adiciona um aplicativo para a execução lista de aplicativos.|  
+|[IMachineDebugManagerCookie::AddApplication](../../winscript/reference/imachinedebugmanagercookie-addapplication.md)|Adiciona um aplicativo à lista de aplicativos em execução.|  
 |[IMachineDebugManagerCookie::EnumApplications](../../winscript/reference/imachinedebugmanagercookie-enumapplications.md)|Retorna um enumerador da lista atual de aplicativos em execução.|  
-|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Remove um aplicativo de execução de lista de aplicativos.|  
+|[IMachineDebugManagerCookie::RemoveApplication](../../winscript/reference/imachinedebugmanagercookie-removeapplication.md)|Remove um aplicativo da lista de aplicativos em execução.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)   
+ @No__t_1 de [interface IMachineDebugManager](../../winscript/reference/imachinedebugmanager-interface.md)  
  [Interface IDebugCookie](../../winscript/reference/idebugcookie-interface.md)

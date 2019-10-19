@@ -17,12 +17,12 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5ee258602c47951f4731dc1378542cc83d57d72b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 401eb759523ed1a33d24c3a298db0b3de2b7d5a7
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955205"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72575872"
 ---
 # <a name="documentnametype-enumeration"></a>Enumeração DOCUMENTNAMETYPE
 Descreve os tipos para se obter um documento.  
@@ -46,7 +46,7 @@ DOCUMENTNAMETYPE_UNIQUE_TITLE,} DOCUMENTNAMETYPE;
 |DOCUMENTNAMETYPE_TITLE|Obtém o nome como ele aparece na barra de título do visualizador.|  
 |DOCUMENTNAMETYPE_FILE_TAIL|Obtém o nome do arquivo sem um caminho.|  
 |DOCUMENTNAMETYPE_URL|Obtém a URL do documento.|  
-|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtém o título acrescentado com a enumeração para identificação.|  
+|DOCUMENTNAMETYPE_UNIQUE_TITLE|Obtém o título anexado à enumeração para identificação.|  
   
 ## <a name="see-also"></a>Consulte também  
  [Constantes, enumerações e estruturas de depurador do script ativo](../../winscript/reference/active-script-debugger-constants-enumerations-and-structures.md)

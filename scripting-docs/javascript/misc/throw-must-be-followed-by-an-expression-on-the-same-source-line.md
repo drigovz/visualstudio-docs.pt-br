@@ -14,15 +14,15 @@ ms.assetid: b03b7747-01a1-40c6-af80-a1dd70bc5781
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8854acb3d1992283899c4ff095f5d754c05f55a1
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63005926"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572754"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>O lançamento deve ser seguido por uma expressão na mesma linha de origem
-Você usou o `throw` palavra-chave, mas não seguiu-lo com uma expressão na mesma linha de código-fonte. Um `throw` instrução consiste em duas partes: o `throw` palavra-chave, seguido pela expressão seja lançada. Por exemplo:  
+Você usou a palavra-chave `throw`, mas não a segue com uma expressão na mesma linha de origem. Uma instrução `throw` consiste em duas partes: a palavra-chave `throw`, seguida pela expressão a ser gerada. Por exemplo:  
   
 ```JavaScript  
 if (denominator == 0) {  
@@ -30,13 +30,13 @@ if (denominator == 0) {
 }  
 ```  
   
- Não é possível dividir esses dois componentes.  
+ Você não pode dividir esses dois componentes.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Certifique-se de que o `throw` palavra-chave e a expressão a ser gerada aparece na mesma linha.  
+- Certifique-se de que a palavra-chave `throw` e a expressão a ser gerada apareçam na mesma linha.  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto Error](../../javascript/reference/error-object-javascript.md)   
- [Instrução throw](../../javascript/reference/throw-statement-javascript.md)   
+ @No__t_1 de [objeto de erro](../../javascript/reference/error-object-javascript.md)  
+ [instrução throw](../../javascript/reference/throw-statement-javascript.md)    
  [Instrução try...catch...finally](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)

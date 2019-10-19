@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentTextEvents::onInsertText | Microsoft Docs
+title: 'IDebugDocumentTextEvents:: onInsertText | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4f7f40178d64aaf654850ea54fafee65bc0a1c51
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c926caf8ff99cf183e41b2caf825aa828fb60de4
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62946720"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72572914"
 ---
 # <a name="idebugdocumenttexteventsoninserttext"></a>IDebugDocumentTextEvents::onInsertText
 Indica que o novo texto foi adicionado ao documento.  
@@ -38,12 +38,12 @@ HRESULT onInsertText(
   
 #### <a name="parameters"></a>Parâmetros  
  `cCharacterPosition`  
- [in] A posição do caractere em que o novo texto foi inserido.  
+ no A posição do caractere onde o novo texto foi inserido.  
   
  `cNumToInsert`  
- [in] O número de caracteres que foram inseridos.  
+ no O número de caracteres que foram inseridos.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,8 +51,8 @@ HRESULT onInsertText(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método normalmente é chamado por um host que carrega progressivamente conteúdo, como um navegador da Web.  
+ Esse método é normalmente chamado por um host que carrega conteúdo progressivamente, como um navegador da Web.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)   
+ @No__t_1 de [interface IDebugDocumentTextEvents](../../winscript/reference/idebugdocumenttextevents-interface.md)  
  [IDebugDocumentTextEvents::onRemoveText](../../winscript/reference/idebugdocumenttextevents-onremovetext.md)
