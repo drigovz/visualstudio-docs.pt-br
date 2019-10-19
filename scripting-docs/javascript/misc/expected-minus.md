@@ -14,20 +14,20 @@ ms.assetid: a31d161a-4a51-43a9-9d65-d8b765ce3c19
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 42283773fc68c08ec3734937d2895c9613a6893f
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934893"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577561"
 ---
 # <a name="expected--"></a>Esperado '-'
-Você tentou criar uma expressão regular literal, mas não incluiu uma das barras "/" (/). Assim como literais de cadeia de caracteres são gravados como caracteres dentro de um par de aspas, literais de expressões regulares são expressos como caracteres dentro de um par de caracteres de barra (/).  
+Você tentou criar um literal de expressão regular, mas não incluiu uma das barras (/). Assim como os literais de cadeia de caracteres são gravados como caracteres dentro de um par de aspas, os literais de expressão regular são expressos como caracteres dentro de um par de caracteres de barra (/).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Inserir uma barra invertida terminação para marcar o final da expressão regular.  
+- Insira uma barra de terminação para marcar o final da expressão regular.  
   
 ## <a name="see-also"></a>Consulte também  
- [Objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)   
+ @No__t_1 de [objeto de expressão regular](../../javascript/reference/regular-expression-object-javascript.md)  
  [Sintaxe de expressão regular (JavaScript)](https://msdn.microsoft.com/library/1400241x)

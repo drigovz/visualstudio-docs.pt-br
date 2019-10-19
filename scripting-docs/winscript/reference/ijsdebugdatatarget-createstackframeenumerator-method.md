@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebugdatatarget:: Createstackframeenumerator | Microsoft Docs'
+title: 'Método IJsDebugDataTarget:: CreateStackFrameEnumerator | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,15 +15,15 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 59d58f0256a326d3922e280818176a43ef4aa5ae
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583074"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577624"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>Método IJsDebugDataTarget::CreateStackFrameEnumerator
-Cria um enumerador para quadros de pilha.  
+Cria um enumerador para os quadros de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,15 +36,15 @@ HRESULT CreateStackFrameEnumerator(
   
 #### <a name="parameters"></a>Parâmetros  
  `threadId`  
- [in] Thread em execução no processo de destino.  
+ no Thread em execução no processo de destino.  
   
  `ppEnumerator`  
- [out] O enumerador para quadros de pilha.  
+ fora O enumerador para os quadros de ativação.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebugDataTarget](../../winscript/reference/ijsdebugdatatarget-interface.md)

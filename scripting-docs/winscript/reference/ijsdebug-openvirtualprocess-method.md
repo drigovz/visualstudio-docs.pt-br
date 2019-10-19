@@ -1,5 +1,5 @@
 ---
-title: 'Método ijsdebug:: Openvirtualprocess | Microsoft Docs'
+title: 'Método IJsDebug:: OpenVirtualProcess | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 97a055bf1550d74dc6b86d93ffdb9ca406afb43d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3de39beb28a68ec3b8e0d76b17a7e914a464ecfe
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62583588"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577742"
 ---
 # <a name="ijsdebugopenvirtualprocess-method"></a>Método IJsDebug::OpenVirtualProcess
 Método de fábrica usado para criar um novo objeto de processo virtual.  
@@ -38,24 +38,24 @@ HRESULT OpenVirtualProcess(
   
 #### <a name="parameters"></a>Parâmetros  
  `processId`  
- [in] Id do processo para anexar o depurador.  
+ no ID do processo para o qual anexar o depurador.  
   
  `runtimeJsBaseAddress`  
- [in] O endereço básico no qual o tempo de execução do JavaScript carregado no processo de destino.  
+ no O endereço base no qual o tempo de execução do JavaScript foi carregado no processo de destino.  
   
  `pDataTarget`  
- [in] Interface fornecido para consultar o estado do processo do depurador.  
+ no Interface fornecida pelo depurador para consultar o estado do processo.  
   
  `ppProcess`  
- [out] Novo objeto de processo de depuração  
+ fora Novo objeto de processo de depuração  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
   
 ## <a name="remarks"></a>Comentários  
- Retornará E_JsDEBUG_MISMATCHED_RUNTIME se Jscript9diag e Jscript9 não corresponderem.  
+ Retorna E_JsDEBUG_MISMATCHED_RUNTIME se Jscript9diag e Jscript9 não correspondem.  
   
 ## <a name="requirements"></a>Requisitos  
- **Cabeçalho:** jscript9diag.h  
+ **Cabeçalho:** jscript9diag. h  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IJsDebug](../../winscript/reference/ijsdebug-interface.md)

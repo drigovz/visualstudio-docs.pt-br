@@ -1,5 +1,5 @@
 ---
-title: IApplicationDebugger::onClose | Microsoft Docs
+title: 'IApplicationDebugger:: fechamento | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5e749c51769bd3344e144836937492fbb0a8fb58
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e31b2a77effc729f0e7df1e36116ee554446093
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62991217"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577880"
 ---
 # <a name="iapplicationdebuggeronclose"></a>IApplicationDebugger::onClose
-Manipula um evento de fechamento de aplicativos de depuração.  
+Manipula um evento de fechamento de aplicativo de depuração.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -36,7 +36,7 @@ HRESULT onClose();
 #### <a name="parameters"></a>Parâmetros  
  Esse método não usa parâmetros.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -47,5 +47,5 @@ HRESULT onClose();
  Esse método é chamado quando `IDebugApplication::Close` é chamado.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)   
+ @No__t_1 de [interface IApplicationDebugger](../../winscript/reference/iapplicationdebugger-interface.md)  
  [IDebugApplication::Close](../../winscript/reference/idebugapplication-close.md)

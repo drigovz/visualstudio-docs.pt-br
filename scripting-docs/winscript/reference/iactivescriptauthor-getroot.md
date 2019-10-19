@@ -1,5 +1,5 @@
 ---
-title: IActiveScriptAuthor::GetRoot | Microsoft Docs
+title: 'IActiveScriptAuthor:: GetRoot | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6cdb3246ccae2eabb34696162f67e82a60374550
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: ca2aab154d56cd98c3c2acede61f86f725ce9c1b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955101"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576182"
 ---
 # <a name="iactivescriptauthorgetroot"></a>IActiveScriptAuthor::GetRoot
 Retorna o `IScriptNode` raiz da árvore de script do autor.  
@@ -37,9 +37,9 @@ HRESULT GetRoot(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppsp`  
- [out] O endereço de uma variável que recebe um ponteiro para o `IScriptNode` interface do nó raiz.  
+ fora O endereço de uma variável que recebe um ponteiro para a interface `IScriptNode` do nó raiz.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -49,5 +49,5 @@ HRESULT GetRoot(
 ## <a name="remarks"></a>Comentários  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)   
+ @No__t_1 de [interface IActiveScriptAuthor](../../winscript/reference/iactivescriptauthor-interface.md)  
  [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)

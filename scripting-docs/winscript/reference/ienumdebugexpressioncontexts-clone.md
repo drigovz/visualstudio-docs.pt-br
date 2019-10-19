@@ -1,5 +1,5 @@
 ---
-title: IEnumDebugExpressionContexts::Clone | Microsoft Docs
+title: 'IEnumDebugExpressionContexts:: clone | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0579ec43d46698f4ba1ba40a9bc7610263cc996
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 70e11ec9af8859b0e1d4ecd10bd52c8c573de930
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62963527"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577166"
 ---
 # <a name="ienumdebugexpressioncontextsclone"></a>IEnumDebugExpressionContexts::Clone
 Cria um enumerador que contém o mesmo estado que o enumerador atual.  
@@ -37,9 +37,9 @@ HRESULT Clone(
   
 #### <a name="parameters"></a>Parâmetros  
  `ppedec`  
- [out] Retorna o `IEnumDebugExpressionContexts` interface do clone do enumerador.  
+ fora Retorna a interface `IEnumDebugExpressionContexts` do clone do enumerador.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
