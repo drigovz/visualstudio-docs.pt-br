@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetLanguageString | Microsoft Docs
+title: 'IDebugStackFrame:: getlanguagestring | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: cab0c0ab317754305ca2440748dd680e31750d8a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 83abb038cd8bc018d84cd0c5ddd2a413f8a02248
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934659"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576755"
 ---
 # <a name="idebugstackframegetlanguagestring"></a>IDebugStackFrame::GetLanguageString
-Retorna uma descrição curta ou longa textual da linguagem.  
+Retorna uma descrição textual curta ou longa do idioma.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT GetLanguageString(
   
 #### <a name="parameters"></a>Parâmetros  
  `fLong`  
- [in] Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma breve descrição.  
+ no Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma breve descrição.  
   
  `pbstrLanguage`  
- [out] A descrição da linguagem.  
+ fora A descrição do idioma.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,7 +51,7 @@ HRESULT GetLanguageString(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, se `fLong` é `FALSE`, esse método fornece apenas o nome do idioma associado ao quadro de pilha. Quando `fLong` é `TRUE`, esse método pode fornecer uma descrição completa do produto.  
+ Normalmente, se `fLong` for `FALSE`, esse método fornecerá apenas o nome do idioma associado ao quadro de pilha. Quando `fLong` é `TRUE`, esse método pode fornecer uma descrição completa do produto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: Esperado identificador (JavaScript) | Microsoft Docs
+title: Identificador esperado (JavaScript) | Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,27 +14,27 @@ ms.assetid: 92eaa97f-7084-4618-9608-768b51a0600b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7e60975e8f356e749e5e32adb2e773526ab63141
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8555ddde52602f5761be40cfcc752abd12697deb
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934972"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577288"
 ---
 # <a name="expected-identifier-javascript"></a>Identificador esperado (JavaScript)
-Você usou algo diferente de um identificador em um contexto em que era necessário. Um identificador pode ser:  
+Você usou algo diferente de um identificador em um contexto em que um era necessário. Um identificador pode ser:  
   
-- uma variável  
+- uma variável,  
   
-- uma propriedade  
+- uma propriedade,  
   
-- uma matriz  
+- uma matriz,  
   
 - ou um nome de função.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-- Altere a expressão para que um identificador aparece à esquerda do sinal de igual.  
+- Altere a expressão para que um identificador apareça à esquerda do sinal de igual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando matrizes](../../javascript/advanced/using-arrays-javascript.md)

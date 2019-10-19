@@ -1,5 +1,5 @@
 ---
-title: IDebugDocumentHelper::CreateDebugDocumentContext | Microsoft Docs
+title: 'IDebugDocumentHelper:: CreateDebugDocumentContext | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8b2dddfc76f2bbc3e629b2d48febb6b582a3a779
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 24a039b5c4de410e67dc2dfb2859e1f4cc8b1739
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62783165"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576998"
 ---
 # <a name="idebugdocumenthelpercreatedebugdocumentcontext"></a>IDebugDocumentHelper::CreateDebugDocumentContext
 Cria um novo contexto de documento de depuração.  
@@ -39,15 +39,15 @@ HRESULT CreateDebugDocumentContext(
   
 #### <a name="parameters"></a>Parâmetros  
  `iCharPos`  
- [in] Local do início do conteúdo do documento de depuração.  
+ no Local do início do conteúdo do documento de depuração.  
   
  `cChars`  
- [in] Número de caracteres no contexto.  
+ no Número de caracteres no contexto.  
   
  `ppddc`  
- [out] O novo contexto de documento de depuração.  
+ fora O novo contexto do documento de depuração.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,7 +55,7 @@ HRESULT CreateDebugDocumentContext(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método permite que o host criar um novo contexto de documento de depuração.  
+ Esse método permite que o host crie um novo contexto de documento de depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [IDebugDocumentHelper Interface](../../winscript/reference/idebugdocumenthelper-interface.md)

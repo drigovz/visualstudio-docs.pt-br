@@ -1,5 +1,5 @@
 ---
-title: IDebugStackFrame::GetDescriptionString | Microsoft Docs
+title: 'IDebugStackFrame:: getdescriptionstring | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f870c6dbc654f8465d201c53443228153ce4a68b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7eb29574d240a02073721046cec65bdf483b3eb0
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62934610"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576739"
 ---
 # <a name="idebugstackframegetdescriptionstring"></a>IDebugStackFrame::GetDescriptionString
-Retorna uma descrição curta ou longa textual do quadro de pilha.  
+Retorna uma descrição textual curta ou longa do quadro de pilha.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT GetDescriptionString(
   
 #### <a name="parameters"></a>Parâmetros  
  `fLong`  
- [in] Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma breve descrição.  
+ no Sinalizador, onde `TRUE` retorna uma descrição longa e `FALSE` retorna uma breve descrição.  
   
  `pbstrDescription`  
- [out] A descrição do quadro de pilha.  
+ fora A descrição do quadro da pilha.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,7 +51,7 @@ HRESULT GetDescriptionString(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Normalmente, se `fLong` é `FALSE`, esse método fornece apenas o nome da função associada com o quadro de pilhas. Quando `fLong` é `TRUE`, esse método também pode fornecer os parâmetros de função e outras informações relevantes.  
+ Normalmente, se `fLong` for `FALSE`, esse método fornecerá apenas o nome da função associada ao quadro de pilha. Quando `fLong` é `TRUE`, esse método também pode fornecer os parâmetros de função e outras informações relevantes.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugStackFrame](../../winscript/reference/idebugstackframe-interface.md)

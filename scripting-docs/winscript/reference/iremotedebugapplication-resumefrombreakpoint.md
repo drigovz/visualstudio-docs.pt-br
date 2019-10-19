@@ -1,5 +1,5 @@
 ---
-title: IRemoteDebugApplication::ResumeFromBreakPoint | Microsoft Docs
+title: 'IRemoteDebugApplication:: ResumeFromBreakPoint | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5844381188cb03c99ab0a44ed9b9e0fdbab67e6e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7fead9c14efbe73bd006a5ff3e1cfb10ad40404b
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944167"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72577456"
 ---
 # <a name="iremotedebugapplicationresumefrombreakpoint"></a>IRemoteDebugApplication::ResumeFromBreakPoint
 Continua um aplicativo que está atualmente em um ponto de interrupção.  
@@ -39,15 +39,15 @@ HRESULT ResumeFromBreakPoint(
   
 #### <a name="parameters"></a>Parâmetros  
  `prptFocus`  
- [in] Para depurar modos, o thread que deve ser afetado pelo modo de depuração.  
+ no Para modos de depuração, o thread que deve ser afetado pelo modo de revisão.  
   
  `bra`  
- [in] A ação a ser tomada ao retomar o aplicativo.  
+ no A ação a ser tomada na retomada do aplicativo.  
   
  `era`  
- [in] A ação a ser tomada no caso em que o aplicativo é interrompido devido a um erro.  
+ no A ação a ser tomada no caso em que o aplicativo foi interrompido devido a um erro.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -55,9 +55,9 @@ HRESULT ResumeFromBreakPoint(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método continua a um aplicativo que está atualmente em um ponto de interrupção.  
+ Esse método continua um aplicativo que está atualmente em um ponto de interrupção.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)   
- [Enumeração BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)   
+ @No__t_1 de [interface IRemoteDebugApplication](../../winscript/reference/iremotedebugapplication-interface.md)  
+ @No__t_1 de [Enumeração BREAKRESUMEACTION](../../winscript/reference/breakresumeaction-enumeration.md)  
  [ERRORRESUMEACTION Enumeration](../../winscript/reference/errorresumeaction-enumeration.md)

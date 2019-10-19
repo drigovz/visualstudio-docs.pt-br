@@ -1,5 +1,5 @@
 ---
-title: IProcessDebugManager::AddApplication | Microsoft Docs
+title: 'IProcessDebugManager:: AddApplication | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/18/2017
 ms.reviewer: ''
@@ -17,15 +17,15 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 206baa92ae8d2803b2b07f4966565755a1785d61
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 47ad8132b9b51efa5f5c2f260e48441e5da64c42
+ms.sourcegitcommit: 184e2ff0ff514fb980724fa4b51e0cda753d4c6e
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62944969"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72576808"
 ---
 # <a name="iprocessdebugmanageraddapplication"></a>IProcessDebugManager::AddApplication
-Adiciona um aplicativo à lista do Gerenciador de depuração de máquina dos aplicativos em execução.  
+Adiciona um aplicativo à lista de aplicativos em execução do Machine Debug Manager.  
   
 ## <a name="syntax"></a>Sintaxe  
   
@@ -38,12 +38,12 @@ HRESULT AddApplication(
   
 #### <a name="parameters"></a>Parâmetros  
  `pda`  
- [in] O aplicativo de depuração para adicionar à lista de aplicativos em execução.  
+ no O aplicativo de depuração a ser adicionado à lista de aplicativos em execução.  
   
  `pdwAppCookie`  
- [out] Um cookie que é usado para remover o aplicativo do Gerenciador de depuração de máquina.  
+ fora Um cookie que é usado para remover o aplicativo do Machine Debug Manager.  
   
-## <a name="return-value"></a>Valor de retorno  
+## <a name="return-value"></a>Valor retornado  
  O método retorna um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  
   
 |Valor|Descrição|  
@@ -51,8 +51,8 @@ HRESULT AddApplication(
 |`S_OK`|O método foi bem-sucedido.|  
   
 ## <a name="remarks"></a>Comentários  
- Esse método adiciona um aplicativo para a execução a lista de aplicativos no Gerenciador de depuração do computador.  
+ Esse método adiciona um aplicativo à lista de aplicativos em execução no Machine Debug Manager.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)   
+ @No__t_1 de [interface IProcessDebugManager](../../winscript/reference/iprocessdebugmanager-interface.md)  
  [IProcessDebugManager::RemoveApplication](../../winscript/reference/iprocessdebugmanager-removeapplication.md)
