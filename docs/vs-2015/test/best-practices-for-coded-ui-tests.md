@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests, best practices
 ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1a631823ce39e5655bba611f90c2869e8dff1d8f
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 2dffebeaa0349c149e319d20794f8b065baa5647
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871668"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660681"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
 
 - No aplicativo em teste, use nomes significativos ao criar os controles de interface do usuário. Isso confere mais significado e usabilidade aos nomes de controle gerados automaticamente.
 
-- Se você estiver criando asserções codificando com a API, crie um método para cada asserção na parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) que está no `UIMap.cs` arquivo. Chame esse método do seu método de teste para executar a asserção.
+- Se você estiver criando asserções codificando com a API, crie um método para cada asserção na parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) que está no arquivo `UIMap.cs`. Chame esse método do seu método de teste para executar a asserção.
 
 - Se estiver codificando diretamente com a API, use as propriedades e métodos nas classes geradas no arquivo `UIMap.Designer.cs` do código o tanto quanto for possível. Essas classes tornarão o trabalho mais fácil e confiável e aumentarão a produtividade.
 

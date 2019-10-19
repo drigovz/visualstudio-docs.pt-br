@@ -8,14 +8,14 @@ helpviewer_keywords:
 - coded UI tests
 ms.assetid: 9c5d82fc-3fb7-4bb1-a9ac-ac1fa3a4b500
 caps.latest.revision: 25
-ms.author: gewarren
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 1af269201649f9372d9c0b2d5b273ddd358fe1e1
-ms.sourcegitcommit: 2da366ba9ad124366f6502927ecc720985fc2f9e
+ms.openlocfilehash: 305c0b33b52c54e7d241b4e86e974d25e58d1e51
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68871706"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72660704"
 ---
 # <a name="anatomy-of-a-coded-ui-test"></a>Anatomia de um teste de IU codificado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ using MouseButtons = System.Windows.Forms.MouseButtons;
  O namespace <xref:Microsoft.VisualStudio.TestTools.UITesting.WinControls> é incluído para uma interface do usuário do Windows. Para uma interface do usuário de página da Web, o namespace seria <xref:Microsoft.VisualStudio.TestTools.UITesting.HtmlControls>; para uma interface do usuário do Windows Presentation Foundation, o namespace seria <xref:Microsoft.VisualStudio.TestTools.UITesting.WpfControls>.
 
 #### <a name="UIMapClass"></a> Classe UIMap
- A próxima seção do arquivo é a classe [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ A seção seguinte do arquivo é a classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ```
 [GeneratedCode("Coded UITest Builder", "10.0.21221.0")]
@@ -79,7 +79,7 @@ public void VerifyTotal()
 public void CleanUp()
 ```
 
- Essa parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) também inclui o código gerado para cada propriedade exigida pelos métodos.
+ Esta parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) também inclui o código gerado para cada propriedade que é exigido pelos métodos.
 
 ```
 public virtual LaunchCalculatorParams LaunchCalculatorParams
@@ -190,9 +190,9 @@ public class AddItemsParams
  Por padrão, esse arquivo contém uma classe `UIMap` parcial que não tem métodos ou propriedades.
 
 #### <a name="uimap-class"></a>Classe UIMap
- É aí que você pode criar código personalizado para estender a funcionalidade da classe [UIMap](/previous-versions/dd580454(v=vs.140)) . O código que você cria neste arquivo não será regenerado pelo **Construtor de Teste de IU Codificado** toda vez que um teste for modificado.
+ É nesta classe que você pode criar código personalizado para estender a funcionalidade da classe [UIMap](/previous-versions/dd580454(v=vs.140)). O código que você cria neste arquivo não será regenerado pelo **Construtor de Teste de IU Codificado** toda vez que um teste for modificado.
 
- Todas as partes do [UIMap](/previous-versions/dd580454(v=vs.140)) podem usar os métodos e as propriedades de qualquer outra parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)) .
+ Todas as partes da [UIMap](/previous-versions/dd580454(v=vs.140)) podem usar os métodos e as propriedades de qualquer outra parte da classe [UIMap](/previous-versions/dd580454(v=vs.140)).
 
 ### <a name="CodedUITestCS"></a> CodedUITest1.cs
  Esse arquivo é gerado pelo **Construtor de Teste de IU Codificado**, mas não será recriado sempre que o teste for modificado, de modo que você pode modificar o código nesse arquivo. O nome do arquivo é gerado do nome que você especificou para o teste quando você o criou.

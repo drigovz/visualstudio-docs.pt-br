@@ -12,44 +12,38 @@ helpviewer_keywords:
 - Debug.ListThreads command
 ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 caps.latest.revision: 19
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: 90aff3fb3d3cbb596708bde1db8ff171198a5a60
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: fc11479901785b19235e0962d3ae90e552e5b33b
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "68199114"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72671134"
 ---
 # <a name="list-threads-command"></a>Comando Listar Threads
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Exibe uma lista dos threads no programa atual.  
-  
-## <a name="syntax"></a>Sintaxe  
-  
-```  
-Debug.ListThreads [index]  
-```  
-  
-## <a name="arguments"></a>Arguments  
- `index`  
- Opcional. Seleciona um thread pelo seu índice para o thread atual.  
-  
-## <a name="remarks"></a>Comentários  
- Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.  
-  
-## <a name="example"></a>Exemplo  
-  
-```  
->Debug.ListThreads   
-```  
-  
-## <a name="see-also"></a>Veja também  
- [Comando List Call Stack](../../ide/reference/list-call-stack-command.md)   
- [Comando Listar Desmontagem](../../ide/reference/list-disassembly-command.md)   
- [Comandos do Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Janela Comando](../../ide/reference/command-window.md)   
- [Caixa Localizar/Comando](../../ide/find-command-box.md)   
- [Aliases de comando do Visual Studio](../../ide/reference/visual-studio-command-aliases.md)
+Exibe uma lista dos threads no programa atual.
+
+## <a name="syntax"></a>Sintaxe
+
+```
+Debug.ListThreads [index]
+```
+
+## <a name="arguments"></a>Arguments
+ `index` Opcional. Seleciona um thread pelo seu índice para o thread atual.
+
+## <a name="remarks"></a>Comentários
+ Quando especificado, o argumento `index` marca o thread indicado como o thread atual. Um asterisco (*) é exibido na lista ao lado do thread atual.
+
+## <a name="example"></a>Exemplo
+
+```
+>Debug.ListThreads
+```
+
+## <a name="see-also"></a>Veja também
+ [Lista](../../ide/reference/list-call-stack-command.md) de comandos da pilha de chamadas lista de [desmontagem comando](../../ide/reference/list-disassembly-command.md) [do Visual Studio comandos](../../ide/reference/visual-studio-commands.md) da [janela](../../ide/reference/command-window.md) de comando [Localizar/comandos caixa de comando](../../ide/find-command-box.md) do [Visual Studio alias do comando](../../ide/reference/visual-studio-command-aliases.md)

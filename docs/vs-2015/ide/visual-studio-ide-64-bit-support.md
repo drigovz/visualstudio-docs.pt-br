@@ -10,15 +10,15 @@ helpviewer_keywords:
 - 64-bit programming [C++]
 ms.assetid: b08ff3ad-c6fd-468f-94d5-01a61aab6833
 caps.latest.revision: 18
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
-ms.openlocfilehash: c83c4623854fd8f7605096d218de69460fc8a919
-ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.openlocfilehash: 7d457af78a23d03b4d87de6dd226cf55e8a191f8
+ms.sourcegitcommit: a8e8f4bd5d508da34bbe9f2d4d9fa94da0539de0
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 05/15/2019
-ms.locfileid: "65698172"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72667113"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Suporte de 64 bits IDE do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,5 +46,5 @@ ms.locfileid: "65698172"
 
 - [Usando arquivos de despejo](../debugger/using-dump-files.md)
 
-## <a name="see-also"></a>Consulte também
+## <a name="see-also"></a>Veja também
  [Como configurar projetos para se destinarem a plataformas](../ide/how-to-configure-projects-to-target-platforms.md)
