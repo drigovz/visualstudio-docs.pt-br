@@ -16,16 +16,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 521092c26ba585381aa094f6b1b348365300bc10
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7b61147467ff27ec8b69e1a2fddfcd00138065fa
+ms.sourcegitcommit: 8a96a65676fd7a2a03b0803d7eceae65f3fa142b
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62906999"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72589051"
 ---
-# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar JavaScript usando o console no Visual Studio
+# <a name="debug-javascript-using-the-console-in-visual-studio"></a>Depurar o JavaScript usando o console no Visual Studio
 
-Você pode usar a janela do Console do JavaScript para interagir e depurar aplicativos UWP criados usando JavaScript. Esses recursos têm suporte para aplicativos UWP e aplicativos criados usando ferramentas do Visual Studio para Apache Cordova. Para a referência de comandos do console, consulte [comandos do JavaScript Console](../debugger/javascript-console-commands.md).
+Você pode usar a janela do console do JavaScript para interagir com e depurar aplicativos UWP criados usando JavaScript. Esses recursos têm suporte para aplicativos UWP e aplicativos criados usando Ferramentas do Visual Studio para Apache Cordova. Para a referência de comando do console, consulte [comandos do console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017).
 
 A janela Console do JavaScript permite que você:
 
@@ -39,28 +39,28 @@ A janela Console do JavaScript permite que você:
 
 - Exiba erros e exceções de JavaScript, além de exceções de DOM (Document Object Model) e do Tempo de Execução do Windows.
 
-- Realizar outras tarefas, como limpar a tela. Ver [comandos do JavaScript Console](../debugger/javascript-console-commands.md) para a lista completa de comandos.
+- Realizar outras tarefas, como limpar a tela. Consulte [comandos do console do JavaScript](../debugger/javascript-console-commands.md?view=vs-2017) para obter a lista completa de comandos.
 
 > [!TIP]
-> Se a janela do Console do JavaScript estiver fechada, escolha **Debug**> **Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.
+> Se a janela do console do JavaScript estiver fechada, escolha **depurar** >  o console do**Windows**  > **JavaScript** para abri-lo novamente. A janela só aparece durante uma sessão de depuração de script.
 
-Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outro recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração de JavaScript consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
+Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outros recursos de depuração de JavaScript, como usar o explorador do DOM e definir pontos de interrupção, consulte [início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps).
 
 ## <a name="InteractiveConsole"></a> Depurar usando a janela Console do JavaScript
 As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar interativamente um erro de codificação JavaScript.
 
 > [!NOTE]
-> O aplicativo de exemplo é um aplicativo UWP. No entanto, os recursos de console descritos aqui também se aplicam a aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.
+> O aplicativo de exemplo aqui é um aplicativo UWP. No entanto, os recursos de console descritos aqui também se aplicam a aplicativos criados usando Ferramentas do Visual Studio para Apache Cordova.
 
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar o código JavaScript no aplicativo FlipView
 
-1. Crie uma nova solução no Visual Studio escolhendo **arquivo** > **novo projeto**.
+1. Crie uma nova solução no Visual Studio escolhendo **arquivo**  > **novo projeto**.
 
-2. Escolher **JavaScript** > **Windows Universal**e, em seguida, escolha **WinJS App**.
+2. Escolha **JavaScript**  > **Windows universal**e, em seguida, escolha **aplicativo WinJS**.
 
-3. Digite um nome para o projeto, como `FlipViewApp`e escolha **Okey** para criar o aplicativo.
+3. Digite um nome para o projeto, como `FlipViewApp`, e escolha **OK** para criar o aplicativo.
 
-4. No elemento de corpo de index. HTML, substitua o código HTML existente por este código:
+4. No elemento BODY de index. html, substitua o código HTML existente por este código:
 
     ```html
     <div id="flipTemplate" data-win-control="WinJS.Binding.Template"
@@ -136,19 +136,19 @@ As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar intera
     })();
     ```
 
-7. Se um destino de depuração não estiver selecionado, escolha **computador Local** na lista suspensa lista ao lado de **dispositivo** botão o **depurar** barra de ferramentas:
+7. Se um destino de depuração ainda não estiver selecionado, escolha **computador local** na lista suspensa ao lado do botão **dispositivo** na barra de ferramentas **depurar** :
 
-    ![Lista de destino de depuração Select](../debugger/media/js_select_target.png "JS_Select_Target")
+    ![Selecionar lista de destino de depuração](../debugger/media/js_select_target.png "JS_Select_Target")
 
 8. Pressione F5 para iniciar o depurador.
 
     O aplicativo será executado, mas não haverá imagens. Erros APPHOST na janela Console do JavaScript indicam que não há imagens.
 
-9. Com o `FlipView` aplicativo em execução, o tipo `Data.items` no prompt de entrada da janela do console (ao lado de ">>" símbolo) e pressione Enter.
+9. Com o aplicativo `FlipView` em execução, digite `Data.items` no prompt de entrada da janela do console (ao lado do símbolo "> >") e pressione Enter.
 
     Um visualizador para o objeto `items` aparece na janela do console. Isso indica que foi criada uma instância do objeto `items` e está disponível no contexto do script atual. Na janela do console, você pode clicar nos nós de um objeto para ver os valores de propriedade (ou usar as teclas de direção). Se você clicar na seta para baixo do objeto `items._data`, como mostra esta ilustração, verá que suas referências da origem das imagens estão incorretas, como esperado. As imagens padrão (logo.png) ainda estão presentes no objeto e há imagens ausentes intercaladas com as imagens esperadas.
 
-    ![Janela do Console do JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
+    ![Janela do console do JavaScript](../debugger/media/js_console_window.png "JS_Console_Window")
 
     Note também que há muito mais itens no objeto `items._data` do que o esperado.
 
@@ -165,7 +165,7 @@ As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar intera
      Copie e cole esse código no aviso de entrada do console JavaScript.
 
     > [!TIP]
-    > Quando você cola um código de várias linhas no prompt de entrada do Console do JavaScript, o prompt de entrada do console alterna automaticamente para o modo de várias linhas. Você pode pressionar Ctrl+Alt+M para ativar e desativar o modo de várias linhas. Para executar um script no modo de várias linhas, pressione Ctrl+Enter ou escolha o símbolo de seta no canto inferior direito da janela. Para obter mais informações, consulte [modo de linha única e modo multilinha na janela do Console do JavaScript](#SinglelineMultilineMode).
+    > Quando você cola um código de várias linhas no prompt de entrada do Console do JavaScript, o prompt de entrada do console alterna automaticamente para o modo de várias linhas. Você pode pressionar Ctrl+Alt+M para ativar e desativar o modo de várias linhas. Para executar um script no modo de várias linhas, pressione Ctrl+Enter ou escolha o símbolo de seta no canto inferior direito da janela. Para obter mais informações, consulte modo de [linha única e modo multilinha na janela do console do JavaScript](#SinglelineMultilineMode).
 
 12. Corrija as chamadas de função `push` no prompt, substituindo `pages.push` por `Data.items.setAt`. O código corrigido deve ter esta aparência:
 
@@ -182,15 +182,15 @@ As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar intera
 
 14. Pressione Ctrl+Alt+M para alternar o prompt de entrada do console para modo de linha única e escolha **Limpar entrada** (o “X" vermelho) para excluir o código do prompt de entrada.
 
-15. Tipo `Data.items.length = 3` no prompt e pressione Enter. Isso remove os elementos extrínsecos aos dados.
+15. Digite `Data.items.length = 3` no prompt e pressione Enter. Isso remove os elementos extrínsecos aos dados.
 
-16. O aplicativo novamente, e você verá que as imagens corretas estão em correto `FlipView` páginas.
+16. Verifique o aplicativo novamente e você verá que as imagens corretas estão nas páginas de `FlipView` corretas.
 
 17. No Explorador de DOMs, você pode ver o elemento DIV atualizado e pode navegar na subárvore para localizar os elementos IMG esperados.
 
-18. Parar a depuração, escolhendo **Debug** > **parar depuração** ou pressionar Shift + F5 e, em seguida, corrija o código-fonte.
+18. Pare a depuração escolhendo **Debug**  > **parar a depuração** ou pressionando Shift + F5 e, em seguida, corrija o código-fonte.
 
-    Para a página Default. HTML completa que contém código de exemplo corrigido, consulte [código de exemplo depurar HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).
+    Para a página padrão. html completa que contém o código de exemplo corrigido, consulte [depurar HTML, CSS e código de exemplo JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md).
 
 ## <a name="InteractiveDebuggingBreakMode"></a> Depuração interativa e modo de interrupção
 Você pode usar pontos de interrupção e fazer step-into do código enquanto está usando ferramentas de depuração JavaScript como a janela Console do JavaScript. Quando um programa que está sendo executado no depurador encontra um ponto de interrupção, o depurador suspende temporariamente a execução do programa. Quando a execução é suspensa, o programa alterna do modo de execução para o modo de interrupção. Você pode retomar a execução a qualquer momento.
@@ -199,25 +199,25 @@ Quando um programa está no modo de interrupção, você pode usar a janela Cons
 
 #### <a name="to-set-a-breakpoint-and-debug-the-app"></a>Para definir um ponto de interrupção e depurar o aplicativo
 
-1. No arquivo default. HTML da `FlipView` aplicativo que você criou anteriormente, abra o menu de atalho para o `updateImages()` de função e, em seguida, escolha **ponto de interrupção** > **Inserir ponto de interrupção**.
+1. No arquivo default. html do aplicativo `FlipView` que você criou anteriormente, abra o menu de atalho para a função `updateImages()` e escolha **ponto de interrupção**  > **Inserir ponto de interrupção**.
 
-2. Escolha **computador Local** na lista suspensa lista ao lado de **iniciar depuração** botão o **depurar** barra de ferramentas.
+2. Escolha **computador local** na lista suspensa ao lado do botão **Iniciar Depuração** na barra de ferramentas **depurar** .
 
-3. Escolher **Debug** > **iniciar depuração**, ou pressione F5.
+3. Escolha **depurar**  > **Iniciar Depuração**ou pressione F5.
 
     O aplicativo entra no modo de interrupção quando a execução atinge a função `updateImages()`, e a linha atual de execução do programa é realçada em amarelo.
 
-    ![Usando o modo de interrupção com o Console do JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
+    ![Usando o modo de interrupção com o console do JavaScript](../debugger/media/js_breakmode.png "JS_BreakMode")
 
     Você pode alterar os valores das variáveis para afetar imediatamente o estado do programa sem finalizar a sessão de depuração atual.
 
-4. Tipo `updateImages` no prompt e pressione Enter. Será exibido um visualizador para a função na janela do console.
+4. Digite `updateImages` no prompt e pressione Enter. Será exibido um visualizador para a função na janela do console.
 
 5. Selecione a função na janela do console para mostrar a implementação da função.
 
     A ilustração a seguir mostra a janela do console nesse ponto.
 
-    ![A janela do Console do JavaScript mostrando um visualizador](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
+    ![Janela do console do JavaScript mostrando um visualizador](../debugger/media/js_console_function_visualizer.png "JS_Console_Function_Visualizer")
 
 6. Copie uma linha da função da janela de saída para o prompt de entrada e altere o valor de índice para 3:
 
@@ -245,16 +245,16 @@ A janela Console do JavaScript permite que você interaja com um único contexto
 
 A ilustração a seguir mostra a lista de destino na janela Console do JavaScript.
 
-![Destino de seleção na janela do console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
+![Seleção de destino na janela do console do JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
 Você também pode alternar o contexto de execução usando o comando `cd`, mas você precisa saber o nome do outro contexto de execução e a referência que será usada deve estar no escopo. A lista **Destino** fornece um acesso melhor a outros contextos de execução.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos no Visual Studio](/visualstudio/debugger/debugging-windows-store-and-windows-universal-apps)
-- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md)
+- [Comandos do Console JavaScript](../debugger/javascript-console-commands.md?view=vs-2017)
 - [Atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md)
-- [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md)
+- [Atalhos de teclado](../debugger/keyboard-shortcuts-html-and-javascript.md?view=vs-2017)
 - [Depurar código de exemplo em HTML, CSS e JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)
-- [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
+- [Guia de início rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)
 - [Depurar um controle WebView](../debugger/debug-a-webview-control.md)
 - [Suporte ao produto e acessibilidade](https://visualstudio.microsoft.com/vs/support/)
